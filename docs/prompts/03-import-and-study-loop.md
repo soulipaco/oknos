@@ -8,9 +8,13 @@ My earlier project is at `C:\Users\you\Desktop\Greek_Helper`. Its app-ready data
 
 Build an importer that turns that data into a private content pack in our format.
 
-- The vocabulary (around 3,200 entries) is the most valuable part. Bring it in with lesson and page provenance, and flag entries that look like OCR damage instead of importing them silently.
-- The practice items came out of OCR heuristics and many are not usable as they are. Do not pass them through. Import only what can be checked automatically and reads cleanly; put the rest aside as raw material for the coach to rebuild in phase 4. Show me the numbers: how many imported, how many set aside, and a sample of each so I can judge the cut.
-- Audio and transcripts: import them if the spec includes listening in the first version; otherwise leave a clear note on what would be needed.
+`docs/SPEC.md` §10 records what phase 1 found in that folder. Start from it, and re-measure rather than trust it.
+
+- The vocabulary (about 3,200 entries) is the most valuable part. It comes from four generic word-list PDFs, not from the textbook lessons. Bring it in with document and page provenance. Fold polytonic OCR characters to monotonic, dedupe, and flag entries that look like OCR damage instead of importing them silently. Gender and articles are missing. Enrich them as the spec says, and ask me before downloading any dictionary data.
+- The lesson skeleton (themes, grammar, vocabulary and functions per lesson) imports as-is, without the absolute paths.
+- The practice and review items have no answers and are OCR-noisy. Do not pass any of them through as exercises. Put them in the pack's `raw/` folder as source prompts for the coach to rebuild in phase 4. Show me the numbers: how many are kept as raw, how many are dropped, and a sample of each.
+- Audio: import the MP3s that actually exist, linked to their transcripts and flagged for review. The transcripts refer to many files that are missing; list them in the import report.
+- Listen to a few Piper `el_GR` samples of A2 sentences and tell me whether the quality is good enough for listening passages (spec §9). If Piper is not good enough, use the edge-tts fallback, following exactly the rules in spec §9.
 
 Make the importer general enough that someone else can point it at their own material with a small mapping, and document that in a short guide. Other people will have other books.
 
@@ -18,7 +22,10 @@ Make the importer general enough that someone else can point it at their own mat
 
 Now that there are thousands of items, the app has to decide what to show. Build:
 
-- **Spaced repetition** for vocabulary and for any item answered wrongly, with scheduling state stored per item. Use an established algorithm and say which one and why.
+- **Spaced repetition** for vocabulary and for any item answered wrongly, with scheduling state stored per item. The spec chose SM-2; change that only with a reason.
+- **The remaining v1 exercise types** from the spec (`match`, `gap_bank`, `categorise`, listening variants), the on-screen Greek keyboard, and accent-tolerant checking.
+- **A verb track.** Verbs are my own stated gap. Build `form` items for the most common A1–A2 verbs (present, aorist, future; the main irregulars) and give them a daily slot in the session. Write them yourself as an open pack.
+- `table_fill` (needed for B1) can wait until phase 5 if time runs short.
 - **A daily session** assembled automatically: reviews that are due, a small amount of new material, and a varied mix of exercise types, sized to the time budget in my profile. One click to start. Stopping halfway loses nothing.
 - **A home screen** that answers three questions at a glance: what should I do now, how consistent have I been, and what am I weakest at. I work with dashboards for a living, so honest numbers about my own learning are a motivator for me; make them accurate and avoid decorative gamification.
 - **Lookup while studying**: any Greek word in an exercise can be tapped to see its meaning if we have it, and tapping counts as a signal that I did not know it.

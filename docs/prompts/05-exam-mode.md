@@ -13,7 +13,15 @@ Before building, check the official sources again for the current format, dates 
 - **A plan to the exam date.** The coach works backwards from the date and my weekly time budget to a week-by-week plan, shows whether the target is realistic, and re-plans at each check-in from what actually happened. If I am behind, it says so plainly and tells me what to drop.
 - **Exam technique.** Short, practical guidance per section: how the task works, how to spend the time, typical traps.
 
-Also cover the level gap: my imported material ends at A2. Use the exam's published syllabus or level descriptors to list what B1 adds in grammar, vocabulary domains and task difficulty, and have the coach schedule that material through the plan.
+The spec tracks two exams, and the data decides which to book. Build both blueprints:
+- `exams/b1-keg.json` (Ελληνομάθεια B1). Pass rule: at least 60% in each of the four skills.
+- `exams/a2ltr.json` (A2 plus history and culture for long-term residence). Pass rule: at least 50/100 and half marks in four of the five units. Read its speaking format from the 2026A oral paper and record it in the spec.
+
+Readiness must apply each real pass rule, side by side. The coach can download the official past papers and listening MP3s into `content/private/` for mock exams, after asking me.
+
+Cover the level gap to B1. Use the ΚΕΓ structure table and level descriptors to list what B1 adds over A2 in grammar, vocabulary domains, text length (150-word writing tasks) and task types (`table_fill`, note-taking), and have the coach schedule that material through the plan. Build a history and culture pack from the official syllabus text only when the plan points at an A2-LTR session. Keep the downloaded syllabus in `content/private/` and write the items in your own words.
+
+The plan must use the real dates in `learner/coach/watch.json` and say plainly which session is realistic.
 
 ## Verify
 

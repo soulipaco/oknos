@@ -7,10 +7,12 @@ The point of this phase is to prove the risky parts early: that installation rea
 ## Build
 
 - The project scaffold as specified: the local server, the SQLite database created on first run inside `learner/`, and the no-build front end served by the same process.
-- One small **original** content pack in `content/open/`, written by you, at beginner level, using two or three exercise types from the spec. Twenty to thirty items is enough. Record its licence in the manifest.
+- One small **original** content pack in `content/open/`, written by you, at beginner level, using two or three exercise types from the spec (`vocab`, `mcq`, `true_false`). Twenty to thirty items is enough. Make it the "Words you already know" pack from the spec (Greek–Turkish shared words, with English translations too). Record its licence (CC BY-SA 4.0) in the manifest.
+- UI strings in English and Turkish from the start (`web/i18n/`), switchable on the home screen.
+- `LICENSE` (MIT) for the code and a licence note for `content/open/` (CC BY-SA 4.0).
 - One study session in the browser: the learner starts it with a single click, answers items, gets immediate right/wrong feedback, and sees a short summary at the end. Every attempt is recorded.
 - One start command that launches the server and opens the browser, working the same way on Windows, macOS and Linux.
-- A setup section in `AGENTS.md` for the "set this up for me" case: check for the one prerequisite, install it if missing, start the app, confirm it responds, and tell the learner in plain words how to open it next time. Write it for a learner who cannot read an error message, so the agent must verify each step itself.
+- The `setup` skill, as the spec lays out: canonical in `.agents/skills/setup/SKILL.md`, plus the Claude Code pointer in `.claude/skills/setup/SKILL.md` and a test that the two agree. Also a one-line entry in `AGENTS.md`. It covers the "set this up for me" case, including the desktop shortcut: check for the one prerequisite, install it if missing, start the app, confirm it responds, and tell the learner in plain words how to open it next time. Write it for a learner who cannot read an error message, so the agent must verify each step itself.
 - A minimal health check the agent can run to confirm an install is good, and a few tests around answer checking and attempt recording.
 
 The interface should already feel calm and pleasant, with Greek text large and well set. It is a place I am supposed to want to return to, so do not ship a developer-looking page even at this stage.
