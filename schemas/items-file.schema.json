@@ -1,0 +1,1425 @@
+{
+  "$defs": {
+    "CategoriseItem": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "skill": {
+          "enum": [
+            "vocab",
+            "grammar",
+            "history",
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "title": "Skill",
+          "type": "string"
+        },
+        "level": {
+          "enum": [
+            "A1",
+            "A2",
+            "B1"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "exam_task": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exam Task"
+        },
+        "topics": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "rubric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "stimulus": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Stimulus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "explain": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "status": {
+          "default": "ok",
+          "enum": [
+            "ok",
+            "needs_review"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "type": {
+          "const": "categorise",
+          "title": "Type",
+          "type": "string"
+        },
+        "prompt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "categories": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "title": "Categories",
+          "type": "array"
+        },
+        "items": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "title": "Items",
+          "type": "array"
+        },
+        "answer": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Answer",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "skill",
+        "level",
+        "type",
+        "categories",
+        "items",
+        "answer"
+      ],
+      "title": "CategoriseItem",
+      "type": "object"
+    },
+    "Cue": {
+      "additionalProperties": false,
+      "properties": {
+        "lemma": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lemma"
+        },
+        "person": {
+          "anyOf": [
+            {
+              "enum": [
+                "1sg",
+                "2sg",
+                "3sg",
+                "1pl",
+                "2pl",
+                "3pl"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Person"
+        },
+        "tense": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tense"
+        },
+        "case": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Case"
+        },
+        "number": {
+          "anyOf": [
+            {
+              "enum": [
+                "sg",
+                "pl"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Number"
+        }
+      },
+      "title": "Cue",
+      "type": "object"
+    },
+    "Example": {
+      "additionalProperties": false,
+      "properties": {
+        "el": {
+          "title": "El",
+          "type": "string"
+        },
+        "en": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "En"
+        },
+        "tr": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tr"
+        }
+      },
+      "required": [
+        "el"
+      ],
+      "title": "Example",
+      "type": "object"
+    },
+    "FormItem": {
+      "additionalProperties": false,
+      "description": "Produce one word form in context, typed or chosen (SPEC §4.4).",
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "skill": {
+          "enum": [
+            "vocab",
+            "grammar",
+            "history",
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "title": "Skill",
+          "type": "string"
+        },
+        "level": {
+          "enum": [
+            "A1",
+            "A2",
+            "B1"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "exam_task": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exam Task"
+        },
+        "topics": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "rubric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "stimulus": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Stimulus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "explain": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "status": {
+          "default": "ok",
+          "enum": [
+            "ok",
+            "needs_review"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "type": {
+          "const": "form",
+          "title": "Type",
+          "type": "string"
+        },
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "cue": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Cue"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "answer": {
+          "additionalProperties": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "title": "Answer",
+          "type": "object"
+        },
+        "options": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Options"
+        },
+        "grammar": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Grammar",
+          "type": "array"
+        },
+        "translation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id",
+        "skill",
+        "level",
+        "type",
+        "text",
+        "answer"
+      ],
+      "title": "FormItem",
+      "type": "object"
+    },
+    "GapBankItem": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "skill": {
+          "enum": [
+            "vocab",
+            "grammar",
+            "history",
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "title": "Skill",
+          "type": "string"
+        },
+        "level": {
+          "enum": [
+            "A1",
+            "A2",
+            "B1"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "exam_task": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exam Task"
+        },
+        "topics": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "rubric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "stimulus": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Stimulus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "explain": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "status": {
+          "default": "ok",
+          "enum": [
+            "ok",
+            "needs_review"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "type": {
+          "const": "gap_bank",
+          "title": "Type",
+          "type": "string"
+        },
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "bank": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "title": "Bank",
+          "type": "array"
+        },
+        "answer": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Answer",
+          "type": "object"
+        },
+        "translation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id",
+        "skill",
+        "level",
+        "type",
+        "text",
+        "bank",
+        "answer"
+      ],
+      "title": "GapBankItem",
+      "type": "object"
+    },
+    "MatchItem": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "skill": {
+          "enum": [
+            "vocab",
+            "grammar",
+            "history",
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "title": "Skill",
+          "type": "string"
+        },
+        "level": {
+          "enum": [
+            "A1",
+            "A2",
+            "B1"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "exam_task": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exam Task"
+        },
+        "topics": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "rubric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "stimulus": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Stimulus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "explain": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "status": {
+          "default": "ok",
+          "enum": [
+            "ok",
+            "needs_review"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "type": {
+          "const": "match",
+          "title": "Type",
+          "type": "string"
+        },
+        "prompt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "left": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "title": "Left",
+          "type": "array"
+        },
+        "right": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "title": "Right",
+          "type": "array"
+        },
+        "answer": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Answer",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "skill",
+        "level",
+        "type",
+        "left",
+        "right",
+        "answer"
+      ],
+      "title": "MatchItem",
+      "type": "object"
+    },
+    "McqItem": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "skill": {
+          "enum": [
+            "vocab",
+            "grammar",
+            "history",
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "title": "Skill",
+          "type": "string"
+        },
+        "level": {
+          "enum": [
+            "A1",
+            "A2",
+            "B1"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "exam_task": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exam Task"
+        },
+        "topics": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "rubric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "stimulus": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Stimulus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "explain": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "status": {
+          "default": "ok",
+          "enum": [
+            "ok",
+            "needs_review"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "type": {
+          "const": "mcq",
+          "title": "Type",
+          "type": "string"
+        },
+        "prompt": {
+          "$ref": "#/$defs/Text"
+        },
+        "options": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 6,
+          "minItems": 2,
+          "title": "Options",
+          "type": "array"
+        },
+        "answer": {
+          "title": "Answer",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "skill",
+        "level",
+        "type",
+        "prompt",
+        "options",
+        "answer"
+      ],
+      "title": "McqItem",
+      "type": "object"
+    },
+    "Statement": {
+      "additionalProperties": false,
+      "properties": {
+        "el": {
+          "title": "El",
+          "type": "string"
+        },
+        "en": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "En"
+        },
+        "tr": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tr"
+        },
+        "answer": {
+          "title": "Answer",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "el",
+        "answer"
+      ],
+      "title": "Statement",
+      "type": "object"
+    },
+    "Stimulus": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Text"
+        },
+        "audio": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Audio"
+        },
+        "tts": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tts"
+        },
+        "plays": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Plays"
+        }
+      },
+      "title": "Stimulus",
+      "type": "object"
+    },
+    "Text": {
+      "additionalProperties": false,
+      "description": "A piece of text with optional translations.",
+      "properties": {
+        "el": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "El"
+        },
+        "en": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "En"
+        },
+        "tr": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tr"
+        }
+      },
+      "title": "Text",
+      "type": "object"
+    },
+    "TrueFalseItem": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "skill": {
+          "enum": [
+            "vocab",
+            "grammar",
+            "history",
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "title": "Skill",
+          "type": "string"
+        },
+        "level": {
+          "enum": [
+            "A1",
+            "A2",
+            "B1"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "exam_task": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exam Task"
+        },
+        "topics": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "rubric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "stimulus": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Stimulus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "explain": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "status": {
+          "default": "ok",
+          "enum": [
+            "ok",
+            "needs_review"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "type": {
+          "const": "true_false",
+          "title": "Type",
+          "type": "string"
+        },
+        "statements": {
+          "items": {
+            "$ref": "#/$defs/Statement"
+          },
+          "minItems": 1,
+          "title": "Statements",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "skill",
+        "level",
+        "type",
+        "statements"
+      ],
+      "title": "TrueFalseItem",
+      "type": "object"
+    },
+    "VocabItem": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "skill": {
+          "enum": [
+            "vocab",
+            "grammar",
+            "history",
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "title": "Skill",
+          "type": "string"
+        },
+        "level": {
+          "enum": [
+            "A1",
+            "A2",
+            "B1"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "exam_task": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exam Task"
+        },
+        "topics": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "rubric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "stimulus": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Stimulus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "explain": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "status": {
+          "default": "ok",
+          "enum": [
+            "ok",
+            "needs_review"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "type": {
+          "const": "vocab",
+          "title": "Type",
+          "type": "string"
+        },
+        "el": {
+          "minLength": 1,
+          "title": "El",
+          "type": "string"
+        },
+        "lemma": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lemma"
+        },
+        "pos": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pos"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "enum": [
+                "m",
+                "f",
+                "n"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Gender"
+        },
+        "en": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "En"
+        },
+        "tr": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tr"
+        },
+        "example": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Example"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id",
+        "skill",
+        "level",
+        "type",
+        "el"
+      ],
+      "title": "VocabItem",
+      "type": "object"
+    }
+  },
+  "items": {
+    "discriminator": {
+      "mapping": {
+        "categorise": "#/$defs/CategoriseItem",
+        "form": "#/$defs/FormItem",
+        "gap_bank": "#/$defs/GapBankItem",
+        "match": "#/$defs/MatchItem",
+        "mcq": "#/$defs/McqItem",
+        "true_false": "#/$defs/TrueFalseItem",
+        "vocab": "#/$defs/VocabItem"
+      },
+      "propertyName": "type"
+    },
+    "oneOf": [
+      {
+        "$ref": "#/$defs/VocabItem"
+      },
+      {
+        "$ref": "#/$defs/FormItem"
+      },
+      {
+        "$ref": "#/$defs/McqItem"
+      },
+      {
+        "$ref": "#/$defs/TrueFalseItem"
+      },
+      {
+        "$ref": "#/$defs/MatchItem"
+      },
+      {
+        "$ref": "#/$defs/GapBankItem"
+      },
+      {
+        "$ref": "#/$defs/CategoriseItem"
+      }
+    ]
+  },
+  "type": "array"
+}

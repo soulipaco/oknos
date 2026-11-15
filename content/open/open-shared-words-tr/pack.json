@@ -1,0 +1,10 @@
+{
+  "id": "open-shared-words-tr",
+  "title": {"en": "Words you already know", "tr": "Zaten bildiğin kelimeler"},
+  "version": 1,
+  "levels": ["A1"],
+  "visibility": "open",
+  "licence": "CC-BY-SA-4.0",
+  "source": "Original, written for Greek Coach",
+  "exam_blueprints": ["a2ltr"]
+}

@@ -1,0 +1,130 @@
+{
+  "$defs": {
+    "Text": {
+      "additionalProperties": false,
+      "description": "A piece of text with optional translations.",
+      "properties": {
+        "el": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "El"
+        },
+        "en": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "En"
+        },
+        "tr": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tr"
+        }
+      },
+      "title": "Text",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "minLength": 1,
+      "title": "Id",
+      "type": "string"
+    },
+    "title": {
+      "$ref": "#/$defs/Text"
+    },
+    "version": {
+      "title": "Version",
+      "type": "integer"
+    },
+    "levels": {
+      "items": {
+        "enum": [
+          "A1",
+          "A2",
+          "B1"
+        ],
+        "type": "string"
+      },
+      "title": "Levels",
+      "type": "array"
+    },
+    "visibility": {
+      "enum": [
+        "open",
+        "private",
+        "generated"
+      ],
+      "title": "Visibility",
+      "type": "string"
+    },
+    "licence": {
+      "title": "Licence",
+      "type": "string"
+    },
+    "source": {
+      "title": "Source",
+      "type": "string"
+    },
+    "exam_blueprints": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Exam Blueprints",
+      "type": "array"
+    },
+    "for_ui_lang": {
+      "anyOf": [
+        {
+          "items": {
+            "enum": [
+              "en",
+              "tr"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "For Ui Lang"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "version",
+    "levels",
+    "visibility",
+    "licence",
+    "source"
+  ],
+  "title": "Manifest",
+  "type": "object"
+}

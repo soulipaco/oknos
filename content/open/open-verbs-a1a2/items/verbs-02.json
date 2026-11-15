@@ -1,0 +1,2387 @@
+[
+ {
+  "id": "f-pino-future-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εγώ) {1} καφέ.",
+  "cue": {
+   "lemma": "πίνω",
+   "person": "1sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα πιω"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα πιω",
+    "ήπια",
+    "πίνω",
+    "θα πιεις"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow I will drink coffee."
+  },
+  "explain": {
+   "en": "πίνω (drink), future, εγώ: θα πιω",
+   "tr": "πίνω (içmek), gelecek zaman, εγώ: θα πιω"
+  }
+ },
+ {
+  "id": "f-meno-future-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσείς) {1} στο σπίτι.",
+  "cue": {
+   "lemma": "μένω",
+   "person": "2pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα μείνετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα μείνετε",
+    "μείνατε",
+    "μένετε",
+    "θα μείνω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow you (pl.) will stay at home."
+  },
+  "explain": {
+   "en": "μένω (stay), future, εσείς: θα μείνετε",
+   "tr": "μένω (kalmak), gelecek zaman, εσείς: θα μείνετε"
+  }
+ },
+ {
+  "id": "f-meno-future-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσύ) {1} στο σπίτι.",
+  "cue": {
+   "lemma": "μένω",
+   "person": "2sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα μείνεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα μείνεις",
+    "έμεινες",
+    "μένεις",
+    "θα μείνω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow you will stay at home."
+  },
+  "explain": {
+   "en": "μένω (stay), future, εσύ: θα μείνεις",
+   "tr": "μένω (kalmak), gelecek zaman, εσύ: θα μείνεις"
+  }
+ },
+ {
+  "id": "f-doyleyo-future-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο τα παιδιά {1} μέχρι αργά.",
+  "cue": {
+   "lemma": "δουλεύω",
+   "person": "3pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα δουλέψουν",
+    "θα δουλέψουνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα δουλέψουν",
+    "δουλέψαν",
+    "δουλεύουν",
+    "θα δουλέψω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow the children will work until late."
+  },
+  "explain": {
+   "en": "δουλεύω (work), future, αυτοί: θα δουλέψουν",
+   "tr": "δουλεύω (çalışmak), gelecek zaman, αυτοί: θα δουλέψουν"
+  }
+ },
+ {
+  "id": "f-doyleyo-future-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο ο Νίκος {1} μέχρι αργά.",
+  "cue": {
+   "lemma": "δουλεύω",
+   "person": "3sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα δουλέψει"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα δουλέψει",
+    "δούλεψε",
+    "δουλεύει",
+    "θα δουλέψω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow Nikos will work until late."
+  },
+  "explain": {
+   "en": "δουλεύω (work), future, αυτός: θα δουλέψει",
+   "tr": "δουλεύω (çalışmak), gelecek zaman, αυτός: θα δουλέψει"
+  }
+ },
+ {
+  "id": "f-milao-future-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εγώ) {1} ελληνικά.",
+  "cue": {
+   "lemma": "μιλάω",
+   "person": "1sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα μιλήσω"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα μιλήσω",
+    "μίλησα",
+    "μιλάω",
+    "θα μιλήσεις"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_b"
+  ],
+  "translation": {
+   "en": "Tomorrow I will speak Greek."
+  },
+  "explain": {
+   "en": "μιλάω (speak), future, εγώ: θα μιλήσω",
+   "tr": "μιλάω (konuşmak), gelecek zaman, εγώ: θα μιλήσω"
+  }
+ },
+ {
+  "id": "f-milao-future-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εμείς) {1} ελληνικά.",
+  "cue": {
+   "lemma": "μιλάω",
+   "person": "1pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα μιλήσουμε",
+    "θα μιλήσομε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα μιλήσουμε",
+    "μιλήσαμε",
+    "μιλάμε",
+    "θα μιλήσω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_b"
+  ],
+  "translation": {
+   "en": "Tomorrow we will speak Greek."
+  },
+  "explain": {
+   "en": "μιλάω (speak), future, εμείς: θα μιλήσουμε",
+   "tr": "μιλάω (konuşmak), gelecek zaman, εμείς: θα μιλήσουμε"
+  }
+ },
+ {
+  "id": "f-leo-future-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσύ) {1} την αλήθεια.",
+  "cue": {
+   "lemma": "λέω",
+   "person": "2sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα πεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα πεις",
+    "είπες",
+    "λέγεις",
+    "θα πω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow you will say the truth."
+  },
+  "explain": {
+   "en": "λέω (say), future, εσύ: θα πεις",
+   "tr": "λέω (söylemek), gelecek zaman, εσύ: θα πεις"
+  }
+ },
+ {
+  "id": "f-leo-future-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσείς) {1} την αλήθεια.",
+  "cue": {
+   "lemma": "λέω",
+   "person": "2pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα πείτε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα πείτε",
+    "είπατε",
+    "λέτε",
+    "θα πω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow you (pl.) will say the truth."
+  },
+  "explain": {
+   "en": "λέω (say), future, εσείς: θα πείτε",
+   "tr": "λέω (söylemek), gelecek zaman, εσείς: θα πείτε"
+  }
+ },
+ {
+  "id": "f-vlepo-present-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εγώ) {1} τον Γιώργο.",
+  "cue": {
+   "lemma": "βλέπω",
+   "person": "1sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "βλέπω"
+   ]
+  },
+  "options": {
+   "1": [
+    "βλέπω",
+    "θα ιδώ",
+    "είδα",
+    "βλέπεις"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day I see Giorgos."
+  },
+  "explain": {
+   "en": "βλέπω (see), present, εγώ: βλέπω",
+   "tr": "βλέπω (görmek), şimdiki/geniş zaman, εγώ: βλέπω"
+  }
+ },
+ {
+  "id": "f-vlepo-present-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εμείς) {1} τον Γιώργο.",
+  "cue": {
+   "lemma": "βλέπω",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "βλέπουμε",
+    "βλέπομε"
+   ]
+  },
+  "options": {
+   "1": [
+    "βλέπουμε",
+    "θα δούμε",
+    "είδαμε",
+    "βλέπω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day we see Giorgos."
+  },
+  "explain": {
+   "en": "βλέπω (see), present, εμείς: βλέπουμε",
+   "tr": "βλέπω (görmek), şimdiki/geniş zaman, εμείς: βλέπουμε"
+  }
+ },
+ {
+  "id": "f-pairno-present-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσύ) {1} το λεωφορείο.",
+  "cue": {
+   "lemma": "παίρνω",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "παίρνεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "παίρνεις",
+    "θα πάρεις",
+    "πήρες",
+    "παίρνω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day you take the bus."
+  },
+  "explain": {
+   "en": "παίρνω (take), present, εσύ: παίρνεις",
+   "tr": "παίρνω (almak), şimdiki/geniş zaman, εσύ: παίρνεις"
+  }
+ },
+ {
+  "id": "f-pairno-present-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσείς) {1} το λεωφορείο.",
+  "cue": {
+   "lemma": "παίρνω",
+   "person": "2pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "παίρνετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "παίρνετε",
+    "θα πάρετε",
+    "πήρατε",
+    "παίρνω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day you (pl.) take the bus."
+  },
+  "explain": {
+   "en": "παίρνω (take), present, εσείς: παίρνετε",
+   "tr": "παίρνω (almak), şimdiki/geniş zaman, εσείς: παίρνετε"
+  }
+ },
+ {
+  "id": "f-agorazo-present-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα ο Νίκος {1} ψωμί.",
+  "cue": {
+   "lemma": "αγοράζω",
+   "person": "3sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "αγοράζει"
+   ]
+  },
+  "options": {
+   "1": [
+    "αγοράζει",
+    "θα αγοράσει",
+    "αγόρασε",
+    "αγοράζω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day Nikos buys bread."
+  },
+  "explain": {
+   "en": "αγοράζω (buy), present, αυτός: αγοράζει",
+   "tr": "αγοράζω (satın almak), şimdiki/geniş zaman, αυτός: αγοράζει"
+  }
+ },
+ {
+  "id": "f-agorazo-present-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα τα παιδιά {1} ψωμί.",
+  "cue": {
+   "lemma": "αγοράζω",
+   "person": "3pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "αγοράζουν",
+    "αγοράζουνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "αγοράζουν",
+    "θα αγοράσουν",
+    "αγοράσαν",
+    "αγοράζω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day the children buy bread."
+  },
+  "explain": {
+   "en": "αγοράζω (buy), present, αυτοί: αγοράζουν",
+   "tr": "αγοράζω (satın almak), şimdiki/geniş zaman, αυτοί: αγοράζουν"
+  }
+ },
+ {
+  "id": "f-plirono-present-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εμείς) {1} τον λογαριασμό.",
+  "cue": {
+   "lemma": "πληρώνω",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "πληρώνουμε",
+    "πληρώνομε"
+   ]
+  },
+  "options": {
+   "1": [
+    "πληρώνουμε",
+    "θα πληρώσουμε",
+    "πληρώσαμε",
+    "πληρώνω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day we pay the bill."
+  },
+  "explain": {
+   "en": "πληρώνω (pay), present, εμείς: πληρώνουμε",
+   "tr": "πληρώνω (ödemek), şimdiki/geniş zaman, εμείς: πληρώνουμε"
+  }
+ },
+ {
+  "id": "f-plirono-present-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εγώ) {1} τον λογαριασμό.",
+  "cue": {
+   "lemma": "πληρώνω",
+   "person": "1sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "πληρώνω"
+   ]
+  },
+  "options": {
+   "1": [
+    "πληρώνω",
+    "θα πληρώσω",
+    "πλήρωσα",
+    "πληρώνεις"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day I pay the bill."
+  },
+  "explain": {
+   "en": "πληρώνω (pay), present, εγώ: πληρώνω",
+   "tr": "πληρώνω (ödemek), şimdiki/geniş zaman, εγώ: πληρώνω"
+  }
+ },
+ {
+  "id": "f-xero-present-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσείς) {1} την απάντηση.",
+  "cue": {
+   "lemma": "ξέρω",
+   "person": "2pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "ξέρετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ξέρετε",
+    "θα ξέρετε",
+    "ξέρατε",
+    "ξέρω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day you (pl.) know the answer."
+  },
+  "explain": {
+   "en": "ξέρω (know), present, εσείς: ξέρετε",
+   "tr": "ξέρω (bilmek), şimdiki/geniş zaman, εσείς: ξέρετε"
+  }
+ },
+ {
+  "id": "f-xero-present-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσύ) {1} την απάντηση.",
+  "cue": {
+   "lemma": "ξέρω",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "ξέρεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "ξέρεις",
+    "θα ξέρεις",
+    "ήξερες",
+    "ξέρω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day you know the answer."
+  },
+  "explain": {
+   "en": "ξέρω (know), present, εσύ: ξέρεις",
+   "tr": "ξέρω (bilmek), şimdiki/geniş zaman, εσύ: ξέρεις"
+  }
+ },
+ {
+  "id": "f-dino-present-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα τα παιδιά {1} ψωμί στον σκύλο.",
+  "cue": {
+   "lemma": "δίνω",
+   "person": "3pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "δίνουν",
+    "δίνουνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "δίνουν",
+    "θα δώσουν",
+    "δώσαν",
+    "δίνω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day the children give bread to the dog."
+  },
+  "explain": {
+   "en": "δίνω (give), present, αυτοί: δίνουν",
+   "tr": "δίνω (vermek), şimdiki/geniş zaman, αυτοί: δίνουν"
+  }
+ },
+ {
+  "id": "f-dino-present-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα ο Νίκος {1} ψωμί στον σκύλο.",
+  "cue": {
+   "lemma": "δίνω",
+   "person": "3sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "δίνει"
+   ]
+  },
+  "options": {
+   "1": [
+    "δίνει",
+    "θα δώσει",
+    "έδωσε",
+    "δίνω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day Nikos gives bread to the dog."
+  },
+  "explain": {
+   "en": "δίνω (give), present, αυτός: δίνει",
+   "tr": "δίνω (vermek), şimdiki/geniş zaman, αυτός: δίνει"
+  }
+ },
+ {
+  "id": "f-vlepo-aorist-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εσύ) {1} τον Γιώργο.",
+  "cue": {
+   "lemma": "βλέπω",
+   "person": "2sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "είδες"
+   ]
+  },
+  "options": {
+   "1": [
+    "είδες",
+    "θα ιδείς",
+    "βλέπεις",
+    "είδα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday you saw Giorgos."
+  },
+  "explain": {
+   "en": "βλέπω (see), aorist, εσύ: είδες",
+   "tr": "βλέπω (görmek), geçmiş zaman (aorist), εσύ: είδες"
+  }
+ },
+ {
+  "id": "f-vlepo-aorist-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εσείς) {1} τον Γιώργο.",
+  "cue": {
+   "lemma": "βλέπω",
+   "person": "2pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "είδατε"
+   ]
+  },
+  "options": {
+   "1": [
+    "είδατε",
+    "θα δείτε",
+    "βλέπετε",
+    "είδα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday you (pl.) saw Giorgos."
+  },
+  "explain": {
+   "en": "βλέπω (see), aorist, εσείς: είδατε",
+   "tr": "βλέπω (görmek), geçmiş zaman (aorist), εσείς: είδατε"
+  }
+ },
+ {
+  "id": "f-pairno-aorist-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες ο Νίκος {1} το λεωφορείο.",
+  "cue": {
+   "lemma": "παίρνω",
+   "person": "3sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "πήρε"
+   ]
+  },
+  "options": {
+   "1": [
+    "πήρε",
+    "θα πάρει",
+    "παίρνει",
+    "πήρα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday Nikos took the bus."
+  },
+  "explain": {
+   "en": "παίρνω (take), aorist, αυτός: πήρε",
+   "tr": "παίρνω (almak), geçmiş zaman (aorist), αυτός: πήρε"
+  }
+ },
+ {
+  "id": "f-pairno-aorist-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες τα παιδιά {1} το λεωφορείο.",
+  "cue": {
+   "lemma": "παίρνω",
+   "person": "3pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "πήραν",
+    "πήρανε"
+   ]
+  },
+  "options": {
+   "1": [
+    "πήραν",
+    "θα πάρουν",
+    "παίρνουν",
+    "πήρα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday the children took the bus."
+  },
+  "explain": {
+   "en": "παίρνω (take), aorist, αυτοί: πήραν",
+   "tr": "παίρνω (almak), geçmiş zaman (aorist), αυτοί: πήραν"
+  }
+ },
+ {
+  "id": "f-agorazo-aorist-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εμείς) {1} ψωμί.",
+  "cue": {
+   "lemma": "αγοράζω",
+   "person": "1pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "αγοράσαμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "αγοράσαμε",
+    "θα αγοράσουμε",
+    "αγοράζουμε",
+    "αγόρασα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday we bought bread."
+  },
+  "explain": {
+   "en": "αγοράζω (buy), aorist, εμείς: αγοράσαμε",
+   "tr": "αγοράζω (satın almak), geçmiş zaman (aorist), εμείς: αγοράσαμε"
+  }
+ },
+ {
+  "id": "f-agorazo-aorist-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εγώ) {1} ψωμί.",
+  "cue": {
+   "lemma": "αγοράζω",
+   "person": "1sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "αγόρασα"
+   ]
+  },
+  "options": {
+   "1": [
+    "αγόρασα",
+    "θα αγοράσω",
+    "αγοράζω",
+    "αγόρασες"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday I bought bread."
+  },
+  "explain": {
+   "en": "αγοράζω (buy), aorist, εγώ: αγόρασα",
+   "tr": "αγοράζω (satın almak), geçmiş zaman (aorist), εγώ: αγόρασα"
+  }
+ },
+ {
+  "id": "f-plirono-aorist-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εσείς) {1} τον λογαριασμό.",
+  "cue": {
+   "lemma": "πληρώνω",
+   "person": "2pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "πληρώσατε"
+   ]
+  },
+  "options": {
+   "1": [
+    "πληρώσατε",
+    "θα πληρώσετε",
+    "πληρώνετε",
+    "πλήρωσα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday you (pl.) paid the bill."
+  },
+  "explain": {
+   "en": "πληρώνω (pay), aorist, εσείς: πληρώσατε",
+   "tr": "πληρώνω (ödemek), geçmiş zaman (aorist), εσείς: πληρώσατε"
+  }
+ },
+ {
+  "id": "f-plirono-aorist-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εσύ) {1} τον λογαριασμό.",
+  "cue": {
+   "lemma": "πληρώνω",
+   "person": "2sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "πλήρωσες"
+   ]
+  },
+  "options": {
+   "1": [
+    "πλήρωσες",
+    "θα πληρώσεις",
+    "πληρώνεις",
+    "πλήρωσα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday you paid the bill."
+  },
+  "explain": {
+   "en": "πληρώνω (pay), aorist, εσύ: πλήρωσες",
+   "tr": "πληρώνω (ödemek), geçmiş zaman (aorist), εσύ: πλήρωσες"
+  }
+ },
+ {
+  "id": "f-xero-imperfect-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες τα παιδιά {1} την απάντηση.",
+  "cue": {
+   "lemma": "ξέρω",
+   "person": "3pl",
+   "tense": "imperfect"
+  },
+  "answer": {
+   "1": [
+    "ξέραν",
+    "ήξεραν",
+    "ξέρανε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ξέραν",
+    "θα ξέρουν",
+    "ξέρουν",
+    "ήξερα"
+   ]
+  },
+  "grammar": [
+   "verb.imperfect",
+   "verb.imperfect.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday the children knew the answer."
+  },
+  "explain": {
+   "en": "ξέρω (know), imperfect, αυτοί: ξέραν",
+   "tr": "ξέρω (bilmek), geçmiş zaman (sürekli), αυτοί: ξέραν"
+  }
+ },
+ {
+  "id": "f-xero-imperfect-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες ο Νίκος {1} την απάντηση.",
+  "cue": {
+   "lemma": "ξέρω",
+   "person": "3sg",
+   "tense": "imperfect"
+  },
+  "answer": {
+   "1": [
+    "ήξερε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ήξερε",
+    "θα ξέρει",
+    "ξέρει",
+    "ήξερα"
+   ]
+  },
+  "grammar": [
+   "verb.imperfect",
+   "verb.imperfect.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday Nikos knew the answer."
+  },
+  "explain": {
+   "en": "ξέρω (know), imperfect, αυτός: ήξερε",
+   "tr": "ξέρω (bilmek), geçmiş zaman (sürekli), αυτός: ήξερε"
+  }
+ },
+ {
+  "id": "f-dino-aorist-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εγώ) {1} ψωμί στον σκύλο.",
+  "cue": {
+   "lemma": "δίνω",
+   "person": "1sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "έδωσα",
+    "έδωκα"
+   ]
+  },
+  "options": {
+   "1": [
+    "έδωσα",
+    "θα δώσω",
+    "δίνω",
+    "έδωσες"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday I gave bread to the dog."
+  },
+  "explain": {
+   "en": "δίνω (give), aorist, εγώ: έδωσα",
+   "tr": "δίνω (vermek), geçmiş zaman (aorist), εγώ: έδωσα"
+  }
+ },
+ {
+  "id": "f-dino-aorist-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εμείς) {1} ψωμί στον σκύλο.",
+  "cue": {
+   "lemma": "δίνω",
+   "person": "1pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "δώσαμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "δώσαμε",
+    "θα δώσουμε",
+    "δίνουμε",
+    "έδωσα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday we gave bread to the dog."
+  },
+  "explain": {
+   "en": "δίνω (give), aorist, εμείς: δώσαμε",
+   "tr": "δίνω (vermek), geçmiş zaman (aorist), εμείς: δώσαμε"
+  }
+ },
+ {
+  "id": "f-vlepo-future-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο ο Νίκος {1} τον Γιώργο.",
+  "cue": {
+   "lemma": "βλέπω",
+   "person": "3sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα ιδεί",
+    "θα δει"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα ιδεί",
+    "είδε",
+    "βλέπει",
+    "θα ιδώ"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow Nikos will see Giorgos."
+  },
+  "explain": {
+   "en": "βλέπω (see), future, αυτός: θα ιδεί",
+   "tr": "βλέπω (görmek), gelecek zaman, αυτός: θα ιδεί"
+  }
+ },
+ {
+  "id": "f-vlepo-future-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο τα παιδιά {1} τον Γιώργο.",
+  "cue": {
+   "lemma": "βλέπω",
+   "person": "3pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα δούνε",
+    "θα ιδούν",
+    "θα ιδούνε",
+    "θα δουν"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα δούνε",
+    "είδαν",
+    "βλέπουν",
+    "θα ιδώ"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow the children will see Giorgos."
+  },
+  "explain": {
+   "en": "βλέπω (see), future, αυτοί: θα δούνε",
+   "tr": "βλέπω (görmek), gelecek zaman, αυτοί: θα δούνε"
+  }
+ },
+ {
+  "id": "f-pairno-future-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εμείς) {1} το λεωφορείο.",
+  "cue": {
+   "lemma": "παίρνω",
+   "person": "1pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα πάρουμε",
+    "θα πάρομε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα πάρουμε",
+    "πήραμε",
+    "παίρνουμε",
+    "θα πάρω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow we will take the bus."
+  },
+  "explain": {
+   "en": "παίρνω (take), future, εμείς: θα πάρουμε",
+   "tr": "παίρνω (almak), gelecek zaman, εμείς: θα πάρουμε"
+  }
+ },
+ {
+  "id": "f-pairno-future-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εγώ) {1} το λεωφορείο.",
+  "cue": {
+   "lemma": "παίρνω",
+   "person": "1sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα πάρω"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα πάρω",
+    "πήρα",
+    "παίρνω",
+    "θα πάρεις"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow I will take the bus."
+  },
+  "explain": {
+   "en": "παίρνω (take), future, εγώ: θα πάρω",
+   "tr": "παίρνω (almak), gelecek zaman, εγώ: θα πάρω"
+  }
+ },
+ {
+  "id": "f-agorazo-future-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσείς) {1} ψωμί.",
+  "cue": {
+   "lemma": "αγοράζω",
+   "person": "2pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα αγοράσετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα αγοράσετε",
+    "αγοράσατε",
+    "αγοράζετε",
+    "θα αγοράσω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow you (pl.) will buy bread."
+  },
+  "explain": {
+   "en": "αγοράζω (buy), future, εσείς: θα αγοράσετε",
+   "tr": "αγοράζω (satın almak), gelecek zaman, εσείς: θα αγοράσετε"
+  }
+ },
+ {
+  "id": "f-agorazo-future-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσύ) {1} ψωμί.",
+  "cue": {
+   "lemma": "αγοράζω",
+   "person": "2sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα αγοράσεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα αγοράσεις",
+    "αγόρασες",
+    "αγοράζεις",
+    "θα αγοράσω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow you will buy bread."
+  },
+  "explain": {
+   "en": "αγοράζω (buy), future, εσύ: θα αγοράσεις",
+   "tr": "αγοράζω (satın almak), gelecek zaman, εσύ: θα αγοράσεις"
+  }
+ },
+ {
+  "id": "f-plirono-future-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο τα παιδιά {1} τον λογαριασμό.",
+  "cue": {
+   "lemma": "πληρώνω",
+   "person": "3pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα πληρώσουν",
+    "θα πληρώσουνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα πληρώσουν",
+    "πλήρωσαν",
+    "πληρώνουν",
+    "θα πληρώσω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow the children will pay the bill."
+  },
+  "explain": {
+   "en": "πληρώνω (pay), future, αυτοί: θα πληρώσουν",
+   "tr": "πληρώνω (ödemek), gelecek zaman, αυτοί: θα πληρώσουν"
+  }
+ },
+ {
+  "id": "f-plirono-future-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο ο Νίκος {1} τον λογαριασμό.",
+  "cue": {
+   "lemma": "πληρώνω",
+   "person": "3sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα πληρώσει"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα πληρώσει",
+    "πλήρωσε",
+    "πληρώνει",
+    "θα πληρώσω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow Nikos will pay the bill."
+  },
+  "explain": {
+   "en": "πληρώνω (pay), future, αυτός: θα πληρώσει",
+   "tr": "πληρώνω (ödemek), gelecek zaman, αυτός: θα πληρώσει"
+  }
+ },
+ {
+  "id": "f-xero-future-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εγώ) {1} την απάντηση.",
+  "cue": {
+   "lemma": "ξέρω",
+   "person": "1sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα ξέρω"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα ξέρω",
+    "ήξερα",
+    "ξέρω",
+    "θα ξέρεις"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow I will know the answer."
+  },
+  "explain": {
+   "en": "ξέρω (know), future, εγώ: θα ξέρω",
+   "tr": "ξέρω (bilmek), gelecek zaman, εγώ: θα ξέρω"
+  }
+ },
+ {
+  "id": "f-xero-future-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εμείς) {1} την απάντηση.",
+  "cue": {
+   "lemma": "ξέρω",
+   "person": "1pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα ξέρουμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα ξέρουμε",
+    "ξέραμε",
+    "ξέρουμε",
+    "θα ξέρω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow we will know the answer."
+  },
+  "explain": {
+   "en": "ξέρω (know), future, εμείς: θα ξέρουμε",
+   "tr": "ξέρω (bilmek), gelecek zaman, εμείς: θα ξέρουμε"
+  }
+ },
+ {
+  "id": "f-dino-future-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσύ) {1} ψωμί στον σκύλο.",
+  "cue": {
+   "lemma": "δίνω",
+   "person": "2sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα δώσεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα δώσεις",
+    "έδωσες",
+    "δίνεις",
+    "θα δώσω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow you will give bread to the dog."
+  },
+  "explain": {
+   "en": "δίνω (give), future, εσύ: θα δώσεις",
+   "tr": "δίνω (vermek), gelecek zaman, εσύ: θα δώσεις"
+  }
+ },
+ {
+  "id": "f-dino-future-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσείς) {1} ψωμί στον σκύλο.",
+  "cue": {
+   "lemma": "δίνω",
+   "person": "2pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα δώσετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα δώσετε",
+    "δώσατε",
+    "δίνετε",
+    "θα δώσω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow you (pl.) will give bread to the dog."
+  },
+  "explain": {
+   "en": "δίνω (give), future, εσείς: θα δώσετε",
+   "tr": "δίνω (vermek), gelecek zaman, εσείς: θα δώσετε"
+  }
+ },
+ {
+  "id": "f-vrisko-present-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εγώ) {1} τα κλειδιά.",
+  "cue": {
+   "lemma": "βρίσκω",
+   "person": "1sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "βρίσκω"
+   ]
+  },
+  "options": {
+   "1": [
+    "βρίσκω",
+    "θα εύρω",
+    "ηύρα",
+    "βρίσκεις"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day I find the keys."
+  },
+  "explain": {
+   "en": "βρίσκω (find), present, εγώ: βρίσκω",
+   "tr": "βρίσκω (bulmak), şimdiki/geniş zaman, εγώ: βρίσκω"
+  }
+ },
+ {
+  "id": "f-vrisko-present-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εμείς) {1} τα κλειδιά.",
+  "cue": {
+   "lemma": "βρίσκω",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "βρίσκουμε",
+    "βρίσκομε"
+   ]
+  },
+  "options": {
+   "1": [
+    "βρίσκουμε",
+    "θα βρούμε",
+    "ηύραμε",
+    "βρίσκω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day we find the keys."
+  },
+  "explain": {
+   "en": "βρίσκω (find), present, εμείς: βρίσκουμε",
+   "tr": "βρίσκω (bulmak), şimdiki/geniş zaman, εμείς: βρίσκουμε"
+  }
+ },
+ {
+  "id": "f-diavazo-present-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσύ) {1} την εφημερίδα.",
+  "cue": {
+   "lemma": "διαβάζω",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "διαβάζεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "διαβάζεις",
+    "θα διαβάσεις",
+    "διάβασες",
+    "διαβάζω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day you read the newspaper."
+  },
+  "explain": {
+   "en": "διαβάζω (read), present, εσύ: διαβάζεις",
+   "tr": "διαβάζω (okumak), şimdiki/geniş zaman, εσύ: διαβάζεις"
+  }
+ },
+ {
+  "id": "f-diavazo-present-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσείς) {1} την εφημερίδα.",
+  "cue": {
+   "lemma": "διαβάζω",
+   "person": "2pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "διαβάζετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "διαβάζετε",
+    "θα διαβάσετε",
+    "διαβάσατε",
+    "διαβάζω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day you (pl.) read the newspaper."
+  },
+  "explain": {
+   "en": "διαβάζω (read), present, εσείς: διαβάζετε",
+   "tr": "διαβάζω (okumak), şimdiki/geniş zaman, εσείς: διαβάζετε"
+  }
+ },
+ {
+  "id": "f-grafo-present-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα ο Νίκος {1} ένα γράμμα.",
+  "cue": {
+   "lemma": "γράφω",
+   "person": "3sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "γράφει"
+   ]
+  },
+  "options": {
+   "1": [
+    "γράφει",
+    "θα γράψει",
+    "έγραψε",
+    "γράφω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day Nikos writes a letter."
+  },
+  "explain": {
+   "en": "γράφω (write), present, αυτός: γράφει",
+   "tr": "γράφω (yazmak), şimdiki/geniş zaman, αυτός: γράφει"
+  }
+ },
+ {
+  "id": "f-grafo-present-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα τα παιδιά {1} ένα γράμμα.",
+  "cue": {
+   "lemma": "γράφω",
+   "person": "3pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "γράφουν",
+    "γράφουνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "γράφουν",
+    "θα γράψουν",
+    "γράψαν",
+    "γράφω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day the children write a letter."
+  },
+  "explain": {
+   "en": "γράφω (write), present, αυτοί: γράφουν",
+   "tr": "γράφω (yazmak), şimdiki/geniş zaman, αυτοί: γράφουν"
+  }
+ },
+ {
+  "id": "f-akoyo-present-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εμείς) {1} μουσική.",
+  "cue": {
+   "lemma": "ακούω",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "ακούμε",
+    "ακούομε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ακούμε",
+    "θα ακούσουμε",
+    "ακούσαμε",
+    "ακούω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day we listen to music."
+  },
+  "explain": {
+   "en": "ακούω (listen to), present, εμείς: ακούμε",
+   "tr": "ακούω (dinlemek), şimdiki/geniş zaman, εμείς: ακούμε"
+  }
+ },
+ {
+  "id": "f-akoyo-present-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εγώ) {1} μουσική.",
+  "cue": {
+   "lemma": "ακούω",
+   "person": "1sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "ακούω"
+   ]
+  },
+  "options": {
+   "1": [
+    "ακούω",
+    "θα ακούσω",
+    "άκουσα",
+    "ακούς"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day I listen to music."
+  },
+  "explain": {
+   "en": "ακούω (listen to), present, εγώ: ακούω",
+   "tr": "ακούω (dinlemek), şimdiki/geniş zaman, εγώ: ακούω"
+  }
+ },
+ {
+  "id": "f-rotao-present-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσείς) {1} τον γιατρό.",
+  "cue": {
+   "lemma": "ρωτάω",
+   "person": "2pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "ρωτάτε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ρωτάτε",
+    "θα ρωτήσετε",
+    "ρωτήσατε",
+    "ρωτάω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_b"
+  ],
+  "translation": {
+   "en": "Every day you (pl.) ask the doctor."
+  },
+  "explain": {
+   "en": "ρωτάω (ask), present, εσείς: ρωτάτε",
+   "tr": "ρωτάω (sormak), şimdiki/geniş zaman, εσείς: ρωτάτε"
+  }
+ },
+ {
+  "id": "f-rotao-present-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσύ) {1} τον γιατρό.",
+  "cue": {
+   "lemma": "ρωτάω",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "ρωτάς"
+   ]
+  },
+  "options": {
+   "1": [
+    "ρωτάς",
+    "θα ρωτήσεις",
+    "ρώτησες",
+    "ρωτάω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_b"
+  ],
+  "translation": {
+   "en": "Every day you ask the doctor."
+  },
+  "explain": {
+   "en": "ρωτάω (ask), present, εσύ: ρωτάς",
+   "tr": "ρωτάω (sormak), şimdiki/geniş zaman, εσύ: ρωτάς"
+  }
+ },
+ {
+  "id": "f-mpaino-present-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα τα παιδιά {1} στο μετρό.",
+  "cue": {
+   "lemma": "μπαίνω",
+   "person": "3pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "μπαίνουν",
+    "μπαίνουνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "μπαίνουν",
+    "θα μπούνε",
+    "μπήκαν",
+    "μπαίνω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day the children get into the metro."
+  },
+  "explain": {
+   "en": "μπαίνω (get into), present, αυτοί: μπαίνουν",
+   "tr": "μπαίνω (girmek), şimdiki/geniş zaman, αυτοί: μπαίνουν"
+  }
+ },
+ {
+  "id": "f-mpaino-present-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα ο Νίκος {1} στο μετρό.",
+  "cue": {
+   "lemma": "μπαίνω",
+   "person": "3sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "μπαίνει"
+   ]
+  },
+  "options": {
+   "1": [
+    "μπαίνει",
+    "θα μπει",
+    "μπήκε",
+    "μπαίνω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day Nikos gets into the metro."
+  },
+  "explain": {
+   "en": "μπαίνω (get into), present, αυτός: μπαίνει",
+   "tr": "μπαίνω (girmek), şimdiki/geniş zaman, αυτός: μπαίνει"
+  }
+ },
+ {
+  "id": "f-vrisko-aorist-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εσύ) {1} τα κλειδιά.",
+  "cue": {
+   "lemma": "βρίσκω",
+   "person": "2sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "ηύρες",
+    "βρήκες"
+   ]
+  },
+  "options": {
+   "1": [
+    "ηύρες",
+    "θα εύρεις",
+    "βρίσκεις",
+    "ηύρα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday you found the keys."
+  },
+  "explain": {
+   "en": "βρίσκω (find), aorist, εσύ: ηύρες",
+   "tr": "βρίσκω (bulmak), geçmiş zaman (aorist), εσύ: ηύρες"
+  }
+ },
+ {
+  "id": "f-vrisko-aorist-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εσείς) {1} τα κλειδιά.",
+  "cue": {
+   "lemma": "βρίσκω",
+   "person": "2pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "ηύρατε",
+    "βρήκατε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ηύρατε",
+    "θα βρείτε",
+    "βρίσκετε",
+    "ηύρα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday you (pl.) found the keys."
+  },
+  "explain": {
+   "en": "βρίσκω (find), aorist, εσείς: ηύρατε",
+   "tr": "βρίσκω (bulmak), geçmiş zaman (aorist), εσείς: ηύρατε"
+  }
+ },
+ {
+  "id": "f-diavazo-aorist-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες ο Νίκος {1} την εφημερίδα.",
+  "cue": {
+   "lemma": "διαβάζω",
+   "person": "3sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "διάβασε"
+   ]
+  },
+  "options": {
+   "1": [
+    "διάβασε",
+    "θα διαβάσει",
+    "διαβάζει",
+    "διάβασα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday Nikos read the newspaper."
+  },
+  "explain": {
+   "en": "διαβάζω (read), aorist, αυτός: διάβασε",
+   "tr": "διαβάζω (okumak), geçmiş zaman (aorist), αυτός: διάβασε"
+  }
+ }
+]

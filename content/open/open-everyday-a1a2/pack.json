@@ -1,0 +1,10 @@
+{
+  "id": "open-everyday-a1a2",
+  "title": {"en": "Everyday Greek in exam format", "tr": "Sınav formatında günlük Yunanca", "el": "Καθημερινά ελληνικά σε μορφή εξετάσεων"},
+  "version": 1,
+  "levels": ["A1", "A2"],
+  "visibility": "open",
+  "licence": "CC-BY-SA-4.0",
+  "source": "Original, written for Greek Coach. Task formats follow the public A2 exam structure; no exam text is copied.",
+  "exam_blueprints": ["a2ltr", "b1-keg"]
+}

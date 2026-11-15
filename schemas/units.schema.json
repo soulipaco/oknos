@@ -1,0 +1,104 @@
+{
+  "$defs": {
+    "Unit": {
+      "additionalProperties": false,
+      "description": "One lesson of a course outline (a private pack's units.json).",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "order": {
+          "title": "Order",
+          "type": "integer"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "theme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Theme"
+        },
+        "pages": {
+          "anyOf": [
+            {
+              "items": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pages"
+        },
+        "is_review": {
+          "default": false,
+          "title": "Is Review",
+          "type": "boolean"
+        },
+        "review_range": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Review Range",
+          "type": "array"
+        },
+        "functions": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Functions",
+          "type": "array"
+        },
+        "grammar": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Grammar",
+          "type": "array"
+        },
+        "vocabulary": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Vocabulary",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "order",
+        "title"
+      ],
+      "title": "Unit",
+      "type": "object"
+    }
+  },
+  "items": {
+    "$ref": "#/$defs/Unit"
+  },
+  "type": "array"
+}

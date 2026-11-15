@@ -196,6 +196,8 @@ learner/generated/<pack-id>/   gitignored: written by the coach for this learner
   items/*.json                 each file is a JSON array of items; split however is convenient
   audio/*.mp3|*.wav|*.ogg      optional, referenced by items
   raw/*.json                   optional, private packs only: source material that is not shown as exercises
+  units.json                   optional: the course outline (lessons with theme, functions, grammar, vocabulary)
+  overlays/tr.json             optional, imported packs: Turkish meanings written by the coach, applied on (re-)import
 ```
 
 The app loads every pack in all three roots at start-up and on a "reload content" request from the coach. An invalid item is skipped and logged, never fatal. `uv run greek-coach validate <path>` checks a pack and prints problems in plain language; the coach runs it after every write.
@@ -258,7 +260,7 @@ Greek text is NFC-normalised UTF-8 and monotonic. Final sigma is `ς`. Translati
  "explain": {"en": "πηγαίνω has an irregular past: πήγα, πήγες, πήγε…", "tr": "πηγαίνω fiilinin geçmiş zamanı düzensizdir: πήγα, πήγες, πήγε…"}}
 ```
 
-`answer` lists every accepted form, so variants such as επτά/εφτά both count.
+`answer` lists every accepted form, so variants such as επτά/εφτά both count. `options` (optional) is an object of choices per gap, e.g. `{"1": ["πήγα", "πάω", "θα πάω", "πήγες"]}`. The app offers the choices while the form is new and asks for it typed once it has been answered right. `translation` (optional, also on `gap_bank`) is the whole sentence in `en`/`tr`, shown on request and after answering.
 
 **`mcq`**: one question, 3–4 options, exactly one correct.
 
@@ -402,6 +404,24 @@ Migrations are numbered SQL files applied at start-up, so an older database upgr
 
 **Scheduler:** SM-2-style spaced repetition (Anki's lineage), implemented in about 50 lines in the repo with no dependency. It was chosen because it is well understood and explainable on a dashboard. The state columns are generic enough to move to FSRS later.
 
+Phase 3, as built (`src/greek_coach/scheduler.py`). SM-2 was kept; nothing seen so far argues for FSRS.
+- **What is scheduled.** Every `vocab` and `form` item enters the schedule the first time it is seen. Verbs are the learner's stated gap, so they are scheduled like words. Any other item enters the first time it is answered wrongly.
+- **Quality** comes from the attempt, never from self-grading:
+  - wrong, or any part wrong: 1, a lapse, so it is due tomorrow;
+  - right after a word lookup, or right with an accent note: 3;
+  - right: 4;
+  - right in under half the expected time: 5.
+- **Intervals:** 1 day, 6 days, then the interval times the ease. An item with an interval of 21 days or more counts as "known" on the home screen.
+- **Lookups.** Tapping a word that a vocab item explains makes that item due today, with its ease lowered by 0.15. An unseen word joins today's reviews.
+- **The daily session** has four segments, sized with the learner's own median seconds per card type (defaults: 20 s for a card, 30 s for a form, 90 s for a task):
+  1. due reviews, most overdue first, at most 25;
+  2. a verb slot of 4 forms, due ones first;
+  3. one task in exam format, wrong-and-due first, weakest skill first;
+  4. 5–12 new words.
+  New words come from coach-generated packs first. After that, open packs and the learner's own book take turns: A1 first, then words that appear in the earliest unit of the book.
+- **Stopping and resuming.** A daily session left early is resumed by the same button. Once it is finished, the button offers five more minutes.
+- **Practice sessions.** `?practice=<pack/item>,…` (or `POST /api/session` with `kind: "practice"`) opens a session with chosen items, for the coach and for checking content.
+
 ### 5.2 How the coach reads the data
 
 The coach does not parse SQLite by hand. `uv run greek-coach report [--since 14d]` prints one JSON document covering:
@@ -519,6 +539,22 @@ Every step is checked by the agent before it reports success. The person is neve
 
   This is the one documented exception to the local-only guardrail.
 
+**Phase-3 listening test (2026-11-16).** Eight A2 sentences were rendered by each voice, transcribed locally with faster-whisper `small`, and compared with the text by character error rate (CER). The digits and the word "ασανσέρ" inflate every voice's score equally.
+
+| Voice | Licence | Mean CER | Notes |
+|---|---|---|---|
+| edge-tts `el-GR-AthinaNeural` (online, Microsoft) | Microsoft service | 0.08 | Natural. Nearly all of its error is the digits in sentences 2 and 4; without them it is about 0.02. Tested 2026-11-16, after the maintainer switched it on. |
+| Microsoft Stefanos (Windows, offline) | Windows voice | 0.06 | Robotic but correct. This is the baseline for what whisper can hear. |
+| Piper `el_GR-joy-medium` | **CC BY-NC 4.0** (non-commercial) | 0.14 | Usable, but the licence does not fit CC BY-SA packs. |
+| Piper `el_GR-rapunzelina-low` | CC0 | 0.30 | One sentence fully garbled ("Καλημέρα" became babble); others with wrong consonants. |
+
+**Verdict: Piper is not good enough for listening passages.** Its only openly licensed Greek voice garbles sentences, which confirms the reported risk. So, per the rules above, **edge-tts is the approved generator.** It stays off until the learner says yes, recorded as `"edge_tts_ok": true` in `profile.json`; the coach asks once, then sets it. The maintainer said yes on 2026-11-16. The open pack's six listening passages were then generated with it, with retries, because the free service sometimes answers with no audio.
+- Until then the coach uses the local Stefanos voice. It is offline and robotic, but whisper understood it best of all.
+- `scripts/make_audio.py --engine edge|windows|piper --pack <id>` writes `learner/audio/<pack>/<item>.<ext>` for every `stimulus.tts` passage of eight words or more.
+- The app plays that file instead of the browser voice. It works on a phone, which has no Greek voice.
+- Generated audio is never tracked: it is derived content, and the licences of TTS output are not CC BY-SA. Open packs carry `tts` text, not audio files.
+- The edge engine refuses packs under `learner/`.
+
 **Official listening audio.** The 2022, 2024 and 2026A A2-LTR listening recordings are published as MP3s. The coach can download them into `content/private/` (after asking) for mock exams.
 
 **Speaking.**
@@ -554,6 +590,23 @@ What the phase-3 importer must do:
 
 Output goes only to `content/private/greek-helper/` with `licence: "private, commercial source"`.
 
+**Phase-3 re-measurement and result (2026-11-16)**, from `uv run greek-coach import greek-helper --source …`:
+- **Vocabulary:** 3,289 rows (3,195 plus 94 that Greek_Helper had already set aside).
+  - 56 OCR-split words were joined again with the dictionary (υπογ ράφω → υπογράφω).
+  - 113 entries were flagged and kept out (99 header junk, 14 mixed script, 5 truncated; some carry two flags).
+  - 528 duplicates were merged.
+  - The result is **2,648 vocab items**: A1 1,053, A2 809, B1 786.
+  - 1,250 nouns have an article from Wiktionary; 173 do not.
+  - 407 words are linked to the first unit of the book that uses them.
+  - 1,053 A1 words have a Turkish meaning from the coach overlay, marked unverified (60 are listed as doubtful).
+- **Exercises:** the full texts come from `data/processed/exercises/exercise_items.json`; the app file only holds previews.
+  - Of 2,158 items, 1,697 were kept in `raw/` as source prompts, all folded to monotonic.
+  - 461 were dropped: 448 exact duplicates and 13 too short.
+  - Kept by kind: 1,256 exercises, 328 answer keys, 69 tests, 38 revision items, 6 listening tests.
+- **Audio:** 46 MP3s were copied and flagged `needs_review`; 85 transcripts have no audio file, all listed in the report.
+- **Course outline:** the 25 lessons are in `units.json`, without paths.
+- The importer is general: a small mapping file per source (`docs/IMPORTING.md`).
+
 ---
 
 ## 11. Technical decisions (made for the maintainer, one line each; all approved 2026-11-15)
@@ -568,13 +621,28 @@ Each is still shown to him when it is set up, and a non-maintainer learner is st
 
 - **Stack as designed:** Python with uv, FastAPI and uvicorn, SQLite through the stdlib `sqlite3`, and plain HTML/CSS/JS modules with no build step. The pack schema is defined with pydantic (it comes with FastAPI) and exported as JSON Schema to `schemas/` for agents.
 - **Repo layout:** `src/greek_coach/` (server, db, packs, checking, scheduler, session, cli), `web/` (static, with `i18n/en.json` and `i18n/tr.json`), `content/`, `exams/`, `schemas/`, `scripts/`, `tests/`, `.agents/skills/`, `.claude/skills/`.
-- **CLI:** `greek-coach start | health | report | validate | backup`.
+- **CLI:** `greek-coach start | stop | health | report | validate | backup | shortcut`.
+  - Phase 2 added `stop` and `shortcut`. With `shortcut` the agent never hand-writes OS launcher files.
+  - `start` runs the server as a background process with no window, waits for `/health`, opens the browser and returns. A desktop double-click therefore behaves the same on every OS. `start --foreground` is for development.
+  - `stop` finds the process through the pid that `/health` reports.
 - **Optional dependency groups** for things only the coach needs, installed on demand: `audio` (piper-tts) and `speech` (faster-whisper). The base install stays small.
 - **Port:** 8642 on 127.0.0.1, falling back to the next free port. The chosen port is written to `learner/.port` so the shortcut and the agent can find it. A second start opens the browser on the running instance instead of failing.
 - **i18n:** UI strings live in JSON files. Content translations are per item. Turkish is a first-class language, not an afterthought.
 - **On-screen Greek keyboard** in the app, because the friend will not have a Greek keyboard layout, and adding one is a system setting the agent should not touch.
 - **Licences:** **MIT** for the code; **CC BY-SA 4.0** for original content packs. BY-SA was chosen so the packs can legally incorporate Wiktionary-derived data. The `LICENSE` files are added in phase 2.
 - **Harness support:** Claude Code and Codex, both tested in phase 6. Copilot reads `AGENTS.md` and may work, but it is not tested.
+
+Phase 3 additions (2026-11-16):
+- **Importer:** `greek-coach import <mapping> --source <folder>`, with mappings in `src/greek_coach/importer/mappings/`. It refuses any output folder outside `content/private/` and `learner/generated/`.
+- **Dictionary enrichment:** the kaikki.org Greek JSONL (Wiktionary, CC BY-SA) is downloaded once, with the learner's OK, into `.cache/greek-coach/` (gitignored). The importer reads a small index built from it; the app never needs it.
+- **Verb pack:** `content/open/open-verbs-a1a2` is generated by `scripts/build_verb_pack.py`. The sentences are original; the forms come from Wiktionary's conjugation tables.
+- **Answer typing:** the on-screen keyboard follows the standard Greek layout. Latin letters typed on a physical keyboard, pasted, or typed on a phone become Greek as they arrive, and `;` before a vowel adds the accent.
+- **Tests never see private content:** the test fixture limits content to `content/open/`.
+- **New endpoints:**
+  - `POST /api/lookup`, `POST /api/flag` and `POST /api/reload`, the last for the coach after writing a pack;
+  - `GET /packs/<id>/audio/<file>` and `GET /audio-cache/<pack>/<item>`, both with path traversal blocked.
+- **JSON Schemas** for agents: `greek-coach schema` writes them to `schemas/`.
+- **`table_fill` waits for phase 5**, as the phase-3 prompt allows.
 
 ## 12. Challenges to the design, and what changed
 

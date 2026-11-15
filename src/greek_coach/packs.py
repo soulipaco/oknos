@@ -1,0 +1,434 @@
+"""Content packs: schema, loading and validation (docs/SPEC.md §4).
+
+A pack is a folder with a pack.json manifest and items/*.json files, each a JSON
+array of items. Invalid items are skipped and reported, never fatal.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import logging
+import re
+import sqlite3
+import unicodedata
+from dataclasses import dataclass, field
+from pathlib import Path
+from typing import Annotated, Any, Literal, Union
+
+from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, ValidationError, model_validator
+
+from greek_coach import db, paths
+
+log = logging.getLogger("greek_coach.packs")
+
+OPEN_LICENCES = {"CC-BY-SA-4.0", "CC-BY-4.0", "CC0-1.0", "MIT"}
+SUPPORTED_TYPES = {"vocab", "form", "mcq", "true_false", "match", "gap_bank", "categorise"}
+# Types the spec defines that later phases build. Items of these types are skipped quietly.
+LATER_TYPES = {"table_fill", "write", "speak"}
+GAP_RE = re.compile(r"\{(\w+)\}")
+
+Skill = Literal["vocab", "grammar", "history", "listening", "reading", "writing", "speaking"]
+Level = Literal["A1", "A2", "B1"]
+
+
+class Strict(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+
+class Text(Strict):
+    """A piece of text with optional translations."""
+
+    el: str | None = None
+    en: str | None = None
+    tr: str | None = None
+
+
+class Example(Strict):
+    el: str
+    en: str | None = None
+    tr: str | None = None
+
+
+class Stimulus(Strict):
+    text: str | None = None
+    audio: str | None = None
+    tts: str | None = None
+    plays: int | None = None
+
+
+class BaseItem(Strict):
+    id: str = Field(min_length=1)
+    skill: Skill
+    level: Level
+    exam_task: str | None = None
+    topics: list[str] = []
+    rubric: Text | None = None
+    stimulus: Stimulus | None = None
+    explain: Text | None = None
+    source: dict[str, Any] | None = None
+    status: Literal["ok", "needs_review"] = "ok"
+
+
+class VocabItem(BaseItem):
+    type: Literal["vocab"]
+    el: str = Field(min_length=1)
+    lemma: str | None = None
+    pos: str | None = None
+    gender: Literal["m", "f", "n"] | None = None
+    en: str | None = None
+    tr: str | None = None
+    example: Example | None = None
+
+    @model_validator(mode="after")
+    def _needs_a_meaning(self) -> "VocabItem":
+        if not (self.en or self.tr):
+            raise ValueError("a vocab item needs at least an English (en) or Turkish (tr) meaning")
+        return self
+
+
+class McqItem(BaseItem):
+    type: Literal["mcq"]
+    prompt: Text
+    options: list[str] = Field(min_length=2, max_length=6)
+    answer: int
+
+    @model_validator(mode="after")
+    def _answer_in_range(self) -> "McqItem":
+        if not 0 <= self.answer < len(self.options):
+            raise ValueError(f"answer {self.answer} is not one of the option positions 0..{len(self.options) - 1}")
+        if len(set(self.options)) != len(self.options):
+            raise ValueError("two options have the same text")
+        return self
+
+
+class Statement(Strict):
+    el: str
+    en: str | None = None
+    tr: str | None = None
+    answer: bool
+
+
+class TrueFalseItem(BaseItem):
+    type: Literal["true_false"]
+    statements: list[Statement] = Field(min_length=1)
+
+
+class Cue(Strict):
+    lemma: str | None = None
+    person: Literal["1sg", "2sg", "3sg", "1pl", "2pl", "3pl"] | None = None
+    tense: str | None = None
+    case: str | None = None
+    number: Literal["sg", "pl"] | None = None
+
+
+class FormItem(BaseItem):
+    """Produce one word form in context, typed or chosen (SPEC §4.4)."""
+
+    type: Literal["form"]
+    text: str = Field(min_length=1)
+    cue: Cue | None = None
+    answer: dict[str, list[str]]
+    options: dict[str, list[str]] | None = None
+    grammar: list[str] = []
+    translation: Text | None = None
+
+    @model_validator(mode="after")
+    def _gaps_match(self) -> "FormItem":
+        gaps = GAP_RE.findall(self.text)
+        if not gaps:
+            raise ValueError("the text needs at least one gap such as {1}")
+        if sorted(gaps) != sorted(self.answer):
+            raise ValueError(f"the gaps in the text {sorted(gaps)} do not match the answer keys {sorted(self.answer)}")
+        if any(not forms for forms in self.answer.values()):
+            raise ValueError("every gap needs at least one accepted form")
+        for gap, opts in (self.options or {}).items():
+            if gap not in self.answer:
+                raise ValueError(f"options are given for gap {gap}, which is not in the text")
+            if not set(self.answer[gap]) & set(opts):
+                raise ValueError(f"none of the options for gap {gap} is an accepted answer")
+            if len(set(opts)) != len(opts):
+                raise ValueError(f"two options for gap {gap} have the same text")
+        return self
+
+
+class MatchItem(BaseItem):
+    type: Literal["match"]
+    prompt: Text | None = None
+    left: list[str] = Field(min_length=2)
+    right: list[str] = Field(min_length=2)
+    answer: list[int]
+
+    @model_validator(mode="after")
+    def _answer_shape(self) -> "MatchItem":
+        if len(self.answer) != len(self.left):
+            raise ValueError(f"answer needs one right-hand position for each of the {len(self.left)} left items")
+        if any(not 0 <= a < len(self.right) for a in self.answer):
+            raise ValueError(f"every answer must be a right-hand position 0..{len(self.right) - 1}")
+        if len(set(self.answer)) != len(self.answer):
+            raise ValueError("two left items point to the same right item")
+        if len(set(self.right)) != len(self.right) or len(set(self.left)) != len(self.left):
+            raise ValueError("two entries on the same side have the same text")
+        return self
+
+
+class GapBankItem(BaseItem):
+    type: Literal["gap_bank"]
+    text: str = Field(min_length=1)
+    bank: list[str] = Field(min_length=2)
+    answer: dict[str, str]
+    translation: Text | None = None
+
+    @model_validator(mode="after")
+    def _gaps_match(self) -> "GapBankItem":
+        gaps = GAP_RE.findall(self.text)
+        if not gaps or sorted(gaps) != sorted(self.answer):
+            raise ValueError(f"the gaps in the text {sorted(gaps)} do not match the answer keys {sorted(self.answer)}")
+        if len(set(self.bank)) != len(self.bank):
+            raise ValueError("the word bank has the same word twice")
+        missing = [w for w in self.answer.values() if w not in self.bank]
+        if missing:
+            raise ValueError(f"these answers are not in the word bank: {missing}")
+        if len(set(self.answer.values())) != len(self.answer):
+            raise ValueError("two gaps have the same answer; each bank word may be used once")
+        return self
+
+
+class CategoriseItem(BaseItem):
+    type: Literal["categorise"]
+    prompt: Text | None = None
+    categories: list[str] = Field(min_length=2)
+    items: list[str] = Field(min_length=2)
+    answer: list[int]
+
+    @model_validator(mode="after")
+    def _answer_shape(self) -> "CategoriseItem":
+        if len(self.answer) != len(self.items):
+            raise ValueError(f"answer needs one category position for each of the {len(self.items)} items")
+        if any(not 0 <= a < len(self.categories) for a in self.answer):
+            raise ValueError(f"every answer must be a category position 0..{len(self.categories) - 1}")
+        return self
+
+
+ITEM_CLASSES = (VocabItem, FormItem, McqItem, TrueFalseItem, MatchItem, GapBankItem, CategoriseItem)
+SELECTION_TASKS = (McqItem, TrueFalseItem, MatchItem, GapBankItem, CategoriseItem)
+Item = Annotated[
+    Union[VocabItem, FormItem, McqItem, TrueFalseItem, MatchItem, GapBankItem, CategoriseItem],
+    Field(discriminator="type"),
+]
+_item_adapter: TypeAdapter[Item] = TypeAdapter(Item)
+
+
+class Manifest(Strict):
+    id: str = Field(min_length=1)
+    title: Text
+    version: int
+    levels: list[Level]
+    visibility: Literal["open", "private", "generated"]
+    licence: str
+    source: str
+    exam_blueprints: list[str] = []
+    for_ui_lang: list[Literal["en", "tr"]] | None = None
+
+
+class Unit(Strict):
+    """One lesson of a course outline (a private pack's units.json)."""
+
+    id: str
+    order: int
+    title: str
+    theme: str | None = None
+    pages: list[int | None] | None = None
+    is_review: bool = False
+    review_range: list[str] = []
+    functions: list[str] = []
+    grammar: list[str] = []
+    vocabulary: list[str] = []
+
+
+_units_adapter = TypeAdapter(list[Unit])
+
+
+@dataclass
+class Pack:
+    manifest: Manifest
+    path: Path
+    items: dict[str, Item] = field(default_factory=dict)
+    units: list[Unit] = field(default_factory=list)
+
+    @property
+    def id(self) -> str:
+        return self.manifest.id
+
+
+@dataclass
+class Catalog:
+    packs: list[Pack] = field(default_factory=list)
+    items: dict[str, tuple[Pack, Item]] = field(default_factory=dict)  # item_key -> (pack, item)
+    problems: list[str] = field(default_factory=list)
+    skipped_later_types: int = 0
+
+
+def _nfc(value: Any) -> Any:
+    if isinstance(value, str):
+        return unicodedata.normalize("NFC", value)
+    if isinstance(value, list):
+        return [_nfc(v) for v in value]
+    if isinstance(value, dict):
+        return {k: _nfc(v) for k, v in value.items()}
+    return value
+
+
+def _describe(error: ValidationError) -> str:
+    parts = []
+    for e in error.errors():
+        where = ".".join(str(x) for x in e["loc"] if not str(x).startswith(tuple(c.__name__ for c in ITEM_CLASSES)) and str(x) not in {c.__name__ for c in ITEM_CLASSES})
+        msg = e["msg"].removeprefix("Value error, ")
+        parts.append(f"{where}: {msg}" if where else msg)
+    return "; ".join(parts)
+
+
+def _read_json(path: Path) -> Any:
+    # utf-8-sig tolerates a BOM, which some Windows editors add.
+    return json.loads(path.read_text(encoding="utf-8-sig"))
+
+
+def load_pack(pack_dir: Path, expected_visibility: str | None = None) -> tuple[Pack | None, list[str], int]:
+    """Load one pack folder. Returns (pack or None, problems, count of later-phase items skipped)."""
+    problems: list[str] = []
+    later = 0
+    name = pack_dir.name
+    manifest_file = pack_dir / "pack.json"
+    try:
+        manifest = Manifest.model_validate(_nfc(_read_json(manifest_file)))
+    except FileNotFoundError:
+        return None, [f"{name}: there is no pack.json"], 0
+    except json.JSONDecodeError as e:
+        return None, [f"{name}/pack.json is not valid JSON (line {e.lineno}): {e.msg}"], 0
+    except ValidationError as e:
+        return None, [f"{name}/pack.json: {_describe(e)}"], 0
+
+    if expected_visibility and manifest.visibility != expected_visibility:
+        problems.append(
+            f"{name}: pack.json says visibility '{manifest.visibility}' but the pack is in the "
+            f"'{expected_visibility}' folder; the pack was not loaded"
+        )
+        return None, problems, 0
+    if manifest.visibility == "open" and manifest.licence not in OPEN_LICENCES:
+        problems.append(f"{name}: open packs need an open licence, not '{manifest.licence}'; the pack was not loaded")
+        return None, problems, 0
+
+    pack = Pack(manifest=manifest, path=pack_dir)
+    units_file = pack_dir / "units.json"
+    if units_file.is_file():
+        try:
+            pack.units = _units_adapter.validate_python(_nfc(_read_json(units_file)))
+        except (json.JSONDecodeError, ValidationError) as e:
+            problems.append(f"{name}/units.json could not be read ({e.__class__.__name__}); the course outline was skipped")
+    item_files = sorted((pack_dir / "items").glob("*.json"))
+    if not item_files:
+        problems.append(f"{name}: there are no item files in items/")
+    for item_file in item_files:
+        rel = f"{name}/items/{item_file.name}"
+        try:
+            raw = _read_json(item_file)
+        except json.JSONDecodeError as e:
+            problems.append(f"{rel} is not valid JSON (line {e.lineno}): {e.msg}; the whole file was skipped")
+            continue
+        if not isinstance(raw, list):
+            problems.append(f"{rel} must contain a JSON array of items; the whole file was skipped")
+            continue
+        for n, entry in enumerate(raw, start=1):
+            label = f"{rel} item {n}" + (f" ('{entry.get('id')}')" if isinstance(entry, dict) and entry.get("id") else "")
+            if not isinstance(entry, dict):
+                problems.append(f"{label}: is not an object; skipped")
+                continue
+            kind = entry.get("type")
+            if kind in LATER_TYPES:
+                later += 1
+                continue
+            if kind not in SUPPORTED_TYPES:
+                problems.append(f"{label}: unknown type '{kind}'; skipped")
+                continue
+            try:
+                item = _item_adapter.validate_python(_nfc(entry))
+            except ValidationError as e:
+                problems.append(f"{label}: {_describe(e)}; skipped")
+                continue
+            if item.id in pack.items:
+                problems.append(f"{label}: the id '{item.id}' is used twice in this pack; the second one was skipped")
+                continue
+            pack.items[item.id] = item
+    return pack, problems, later
+
+
+def load_all() -> Catalog:
+    catalog = Catalog()
+    seen_ids: set[str] = set()
+    for visibility, root in paths.content_roots():
+        if not root.is_dir():
+            continue
+        for pack_dir in sorted(p for p in root.iterdir() if p.is_dir()):
+            pack, problems, later = load_pack(pack_dir, visibility)
+            catalog.problems.extend(problems)
+            catalog.skipped_later_types += later
+            if pack is None:
+                continue
+            if pack.id in seen_ids:
+                catalog.problems.append(f"{pack_dir}: the pack id '{pack.id}' is already used by another pack; skipped")
+                continue
+            seen_ids.add(pack.id)
+            catalog.packs.append(pack)
+            for item_id, item in pack.items.items():
+                catalog.items[f"{pack.id}/{item_id}"] = (pack, item)
+    for problem in catalog.problems:
+        log.warning("content: %s", problem)
+    return catalog
+
+
+def content_hash(item: Item) -> str:
+    data = json.dumps(item.model_dump(mode="json"), ensure_ascii=False, sort_keys=True)
+    return hashlib.sha256(data.encode("utf-8")).hexdigest()[:16]
+
+
+def sync_items(conn: sqlite3.Connection, catalog: Catalog) -> None:
+    """Record every loaded item in the items table; mark vanished ones retired."""
+    ts = db.now()
+    with conn:
+        for key, (pack, item) in catalog.items.items():
+            conn.execute(
+                """
+                INSERT INTO items(item_key, pack_id, type, skill, exam_task, level, content_hash, first_seen_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                ON CONFLICT(item_key) DO UPDATE SET
+                    type=excluded.type, skill=excluded.skill, exam_task=excluded.exam_task,
+                    level=excluded.level, content_hash=excluded.content_hash, retired_at=NULL
+                """,
+                (key, pack.id, item.type, item.skill, item.exam_task, item.level, content_hash(item), ts),
+            )
+        known = set(catalog.items)
+        for row in conn.execute("SELECT item_key FROM items WHERE retired_at IS NULL").fetchall():
+            if row["item_key"] not in known:
+                conn.execute("UPDATE items SET retired_at=? WHERE item_key=?", (ts, row["item_key"]))
+
+
+def servable(catalog: Catalog, ui_lang: str) -> list[tuple[str, Pack, Item]]:
+    out = []
+    for key, (pack, item) in catalog.items.items():
+        if item.status != "ok":
+            continue
+        langs = pack.manifest.for_ui_lang
+        if langs and ui_lang not in langs:
+            continue
+        out.append((key, pack, item))
+    return out
+
+
+def json_schemas() -> dict[str, dict]:
+    """JSON Schemas for agents writing content (schemas/, SPEC §11)."""
+    return {
+        "pack": Manifest.model_json_schema(),
+        "item": TypeAdapter(Item).json_schema(),
+        "items-file": TypeAdapter(list[Item]).json_schema(),
+        "units": _units_adapter.json_schema(),
+    }

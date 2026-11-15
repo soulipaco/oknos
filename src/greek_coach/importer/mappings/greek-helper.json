@@ -1,0 +1,53 @@
+{
+  "pack": {
+    "id": "greek-helper",
+    "title": {"en": "My earlier course material", "tr": "Önceki kurs materyalim"},
+    "levels": ["A1", "A2", "B1"],
+    "licence": "private, commercial source",
+    "source": "Imported from the learner's earlier Greek_Helper project (OCR of a commercial A1–A2 textbook and four word-list PDFs)"
+  },
+  "vocabulary": {
+    "file": "data/app/vocabulary.json",
+    "lists": ["items", "review_items"],
+    "fields": {"id": "id", "greek": "greek", "en": "english", "pos": "part_of_speech", "level": "level", "doc": "source.doc", "page": "source.page"},
+    "levels": {"Beginner": "A1", "Elementary": "A1", "Pre-intermediate": "A2", "Intermediate": "B1"},
+    "pos": {"n": "noun", "v": "verb", "adj": "adj", "adv": "adv", "phr v": "phrase", "prep": "prep"}
+  },
+  "pages": {
+    "file": "data/app/source_pages.jsonl",
+    "fields": {"unit": "lesson_id", "text": "text", "page": "printed_page"}
+  },
+  "units": {
+    "file": "data/app/lessons.json",
+    "list": "items",
+    "fields": {
+      "id": "id", "order": "order", "title": "title", "theme": "theme",
+      "page_start": "printed_page_start", "page_end": "printed_page_end",
+      "is_review": "is_review", "review_range": "review_range",
+      "functions": "communicative_functions", "grammar": "grammar_focus", "vocabulary": "vocabulary_focus"
+    }
+  },
+  "raw": [
+    {
+      "name": "exercises",
+      "file": "data/processed/exercises/exercise_items.json",
+      "list": "items",
+      "fields": {
+        "id": "id", "text": "prompt_or_source_text", "unit": "lesson_id", "page": "printed_page",
+        "doc": "source_path", "marker": "marker", "type": "type", "skill": "skill", "flags": "quality_flags"
+      },
+      "kind_rules": [
+        {"field": "answer_key_or_solution", "equals": true, "kind": "answer_key"},
+        {"field": "source_kind", "equals": "extra_solutions", "kind": "answer_key"},
+        {"field": "source_kind", "equals": "extra_test", "kind": "test"},
+        {"field": "source_kind", "equals": "extra_review", "kind": "revision"},
+        {"field": "source_kind", "equals": "extra_listening_comprehension", "kind": "listening_test"}
+      ],
+      "default_kind": "exercise"
+    }
+  ],
+  "audio": {
+    "dir": "data/raw/legacy/mp3s",
+    "transcripts": "data/raw/legacy/01_Existed/All_Mp3s_Json.json"
+  }
+}

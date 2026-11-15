@@ -1,0 +1,45 @@
+[
+  {"id": "l-nikos-time", "type": "mcq", "skill": "listening", "exam_task": "a2ltr.listening.mcq", "level": "A1", "topics": ["daily"],
+   "rubric": {"el": "Ακούστε και διαλέξτε τη σωστή απάντηση.", "en": "Listen and choose the right answer.", "tr": "Dinleyin ve doğru cevabı seçin."},
+   "stimulus": {"tts": "Γεια σου, Μαρία. Είμαι ο Νίκος. Θα έρθω στις έξι, όχι στις πέντε.", "plays": 2},
+   "prompt": {"el": "Τι ώρα θα έρθει ο Νίκος;", "en": "What time will Nikos come?", "tr": "Nikos saat kaçta gelecek?"},
+   "options": ["Στις πέντε.", "Στις έξι.", "Στις επτά."],
+   "answer": 1},
+
+  {"id": "l-bakery", "type": "mcq", "skill": "listening", "exam_task": "a2ltr.listening.mcq", "level": "A1", "topics": ["shop"],
+   "rubric": {"el": "Ακούστε και διαλέξτε τη σωστή απάντηση.", "en": "Listen and choose the right answer.", "tr": "Dinleyin ve doğru cevabı seçin."},
+   "stimulus": {"tts": "Καλημέρα. Θα ήθελα δύο ψωμιά και μια τυρόπιτα, παρακαλώ. Πόσο κάνουν;", "plays": 2},
+   "prompt": {"el": "Τι θέλει ο πελάτης;", "en": "What does the customer want?", "tr": "Müşteri ne istiyor?"},
+   "options": ["Ένα ψωμί και δύο τυρόπιτες.", "Δύο ψωμιά και μια τυρόπιτα.", "Δύο καφέδες και ένα νερό."],
+   "answer": 1},
+
+  {"id": "l-message-doctor", "type": "gap_bank", "skill": "listening", "exam_task": "a2ltr.listening.fill", "level": "A2", "topics": ["health"],
+   "rubric": {"el": "Ακούστε το μήνυμα και συμπληρώστε τις πληροφορίες. Μία λέξη περισσεύει.", "en": "Listen to the message and fill in the information. One word is not needed.", "tr": "Mesajı dinleyin ve bilgileri tamamlayın. Bir kelime fazladır."},
+   "stimulus": {"tts": "Καλημέρα σας, εδώ είναι το ιατρείο του γιατρού Αλεξίου. Το ραντεβού σας δεν είναι την Τρίτη. Είναι την Πέμπτη, στις δέκα το πρωί. Παρακαλώ φέρτε μαζί τις εξετάσεις σας. Ευχαριστώ.", "plays": 2},
+   "text": "Ημέρα ραντεβού: {1}. Ώρα: {2} το πρωί. Να φέρω: τις {3}.",
+   "bank": ["Πέμπτη", "δέκα", "εξετάσεις", "Τρίτη"],
+   "answer": {"1": "Πέμπτη", "2": "δέκα", "3": "εξετάσεις"}},
+
+  {"id": "l-places", "type": "categorise", "skill": "listening", "exam_task": "a2ltr.listening.places", "level": "A2", "topics": ["neighbourhood"],
+   "rubric": {"el": "Ακούστε τις φράσεις. Πού γίνεται κάθε διάλογος;", "en": "Listen to the phrases. Where does each dialogue happen?", "tr": "İfadeleri dinleyin. Her diyalog nerede geçiyor?"},
+   "stimulus": {"tts": "Ένα. Ένα εισιτήριο για τον Πειραιά, παρακαλώ. Δύο. Θέλω να στείλω αυτό το δέμα στη Γερμανία. Τρία. Ένα κιλό ντομάτες και μισό κιλό ελιές.", "plays": 2},
+   "categories": ["στο ταχυδρομείο", "στη λαϊκή", "στον σταθμό"],
+   "items": ["Διάλογος 1", "Διάλογος 2", "Διάλογος 3"],
+   "answer": [2, 0, 1]},
+
+  {"id": "l-weekend-plan", "type": "true_false", "skill": "listening", "exam_task": "a2ltr.listening.mcq", "level": "A2", "topics": ["daily"],
+   "rubric": {"el": "Ακούστε τον διάλογο δύο φορές. Σημειώστε ΣΩΣΤΟ ή ΛΑΘΟΣ.", "en": "Listen to the dialogue twice. Mark TRUE or FALSE.", "tr": "Diyaloğu iki kez dinleyin. DOĞRU veya YANLIŞ işaretleyin."},
+   "stimulus": {"tts": "— Γιώργο, τι θα κάνεις το Σάββατο; — Το πρωί θα πάω στη λαϊκή με τη μητέρα μου. Το απόγευμα θα δω ποδόσφαιρο με τους φίλους μου. — Θέλεις να πάμε σινεμά το βράδυ; — Ναι, ωραία ιδέα! Στις εννιά;", "plays": 2},
+   "statements": [
+     {"el": "Ο Γιώργος θα πάει στη λαϊκή το απόγευμα.", "en": "Giorgos will go to the street market in the afternoon.", "tr": "Giorgos öğleden sonra pazara gidecek.", "answer": false},
+     {"el": "Ο Γιώργος θα δει ποδόσφαιρο με φίλους.", "en": "Giorgos will watch football with friends.", "tr": "Giorgos arkadaşlarıyla futbol izleyecek.", "answer": true},
+     {"el": "Θα πάνε σινεμά το βράδυ.", "en": "They will go to the cinema in the evening.", "tr": "Akşam sinemaya gidecekler.", "answer": true}
+   ]},
+
+  {"id": "l-station", "type": "mcq", "skill": "listening", "exam_task": "a2ltr.listening.mcq", "level": "A2", "topics": ["transport"],
+   "rubric": {"el": "Ακούστε την ανακοίνωση και διαλέξτε τη σωστή απάντηση.", "en": "Listen to the announcement and choose the right answer.", "tr": "Anonsu dinleyin ve doğru cevabı seçin."},
+   "stimulus": {"tts": "Προσοχή, παρακαλώ. Το τρένο για τη Θεσσαλονίκη θα φύγει με καθυστέρηση είκοσι λεπτών, από την πλατφόρμα τρία.", "plays": 2},
+   "prompt": {"el": "Τι συμβαίνει με το τρένο;", "en": "What is happening with the train?", "tr": "Trenle ilgili ne oluyor?"},
+   "options": ["Δεν θα φύγει σήμερα.", "Θα φύγει είκοσι λεπτά αργότερα.", "Θα φύγει από την πλατφόρμα δύο."],
+   "answer": 1}
+]

@@ -1,0 +1,515 @@
+[
+ {
+  "id": "f-taxideyo-future-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσείς) {1} στην Κρήτη.",
+  "cue": {
+   "lemma": "ταξιδεύω",
+   "person": "2pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα ταξιδέψετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα ταξιδέψετε",
+    "ταξιδέψατε",
+    "ταξιδεύετε",
+    "θα ταξιδέψω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow you (pl.) will travel to Crete."
+  },
+  "explain": {
+   "en": "ταξιδεύω (travel), future, εσείς: θα ταξιδέψετε",
+   "tr": "ταξιδεύω (seyahat etmek), gelecek zaman, εσείς: θα ταξιδέψετε"
+  }
+ },
+ {
+  "id": "f-poylao-present-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εγώ) {1} φρούτα στη λαϊκή.",
+  "cue": {
+   "lemma": "πουλάω",
+   "person": "1sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "πουλώ",
+    "πουλάω"
+   ]
+  },
+  "options": {
+   "1": [
+    "πουλώ",
+    "θα πουλήσω",
+    "πούλησα",
+    "πουλάς"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_b"
+  ],
+  "translation": {
+   "en": "Every day I sell fruit at the street market."
+  },
+  "explain": {
+   "en": "πουλάω (sell), present, εγώ: πουλώ",
+   "tr": "πουλάω (satmak), şimdiki/geniş zaman, εγώ: πουλώ"
+  }
+ },
+ {
+  "id": "f-poylao-present-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εμείς) {1} φρούτα στη λαϊκή.",
+  "cue": {
+   "lemma": "πουλάω",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "πουλάμε",
+    "πουλούμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "πουλάμε",
+    "θα πουλήσουμε",
+    "πουλήσαμε",
+    "πουλώ"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_b"
+  ],
+  "translation": {
+   "en": "Every day we sell fruit at the street market."
+  },
+  "explain": {
+   "en": "πουλάω (sell), present, εμείς: πουλάμε",
+   "tr": "πουλάω (satmak), şimdiki/geniş zaman, εμείς: πουλάμε"
+  }
+ },
+ {
+  "id": "f-niotho-present-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσύ) {1} καλά.",
+  "cue": {
+   "lemma": "νιώθω",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "νιώθεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "νιώθεις",
+    "θα νιώσεις",
+    "ένιωσες",
+    "νιώθω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day you feel well."
+  },
+  "explain": {
+   "en": "νιώθω (feel), present, εσύ: νιώθεις",
+   "tr": "νιώθω (hissetmek), şimdiki/geniş zaman, εσύ: νιώθεις"
+  }
+ },
+ {
+  "id": "f-niotho-present-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσείς) {1} καλά.",
+  "cue": {
+   "lemma": "νιώθω",
+   "person": "2pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "νιώθετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "νιώθετε",
+    "θα νιώσετε",
+    "νιώσατε",
+    "νιώθω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day you (pl.) feel well."
+  },
+  "explain": {
+   "en": "νιώθω (feel), present, εσείς: νιώθετε",
+   "tr": "νιώθω (hissetmek), şimdiki/geniş zaman, εσείς: νιώθετε"
+  }
+ },
+ {
+  "id": "f-poylao-aorist-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εσύ) {1} φρούτα στη λαϊκή.",
+  "cue": {
+   "lemma": "πουλάω",
+   "person": "2sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "πούλησες"
+   ]
+  },
+  "options": {
+   "1": [
+    "πούλησες",
+    "θα πουλήσεις",
+    "πουλάς",
+    "πούλησα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_b"
+  ],
+  "translation": {
+   "en": "Yesterday you sold fruit at the street market."
+  },
+  "explain": {
+   "en": "πουλάω (sell), aorist, εσύ: πούλησες",
+   "tr": "πουλάω (satmak), geçmiş zaman (aorist), εσύ: πούλησες"
+  }
+ },
+ {
+  "id": "f-poylao-aorist-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εσείς) {1} φρούτα στη λαϊκή.",
+  "cue": {
+   "lemma": "πουλάω",
+   "person": "2pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "πουλήσατε"
+   ]
+  },
+  "options": {
+   "1": [
+    "πουλήσατε",
+    "θα πουλήσετε",
+    "πουλάτε",
+    "πούλησα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_b"
+  ],
+  "translation": {
+   "en": "Yesterday you (pl.) sold fruit at the street market."
+  },
+  "explain": {
+   "en": "πουλάω (sell), aorist, εσείς: πουλήσατε",
+   "tr": "πουλάω (satmak), geçmiş zaman (aorist), εσείς: πουλήσατε"
+  }
+ },
+ {
+  "id": "f-niotho-aorist-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες ο Νίκος {1} καλά.",
+  "cue": {
+   "lemma": "νιώθω",
+   "person": "3sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "ένιωσε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ένιωσε",
+    "θα νιώσει",
+    "νιώθει",
+    "ένιωσα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday Nikos felt well."
+  },
+  "explain": {
+   "en": "νιώθω (feel), aorist, αυτός: ένιωσε",
+   "tr": "νιώθω (hissetmek), geçmiş zaman (aorist), αυτός: ένιωσε"
+  }
+ },
+ {
+  "id": "f-niotho-aorist-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες τα παιδιά {1} καλά.",
+  "cue": {
+   "lemma": "νιώθω",
+   "person": "3pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "νιώσαν",
+    "ένιωσαν",
+    "νιώσανε"
+   ]
+  },
+  "options": {
+   "1": [
+    "νιώσαν",
+    "θα νιώσουν",
+    "νιώθουν",
+    "ένιωσα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday the children felt well."
+  },
+  "explain": {
+   "en": "νιώθω (feel), aorist, αυτοί: νιώσαν",
+   "tr": "νιώθω (hissetmek), geçmiş zaman (aorist), αυτοί: νιώσαν"
+  }
+ },
+ {
+  "id": "f-poylao-future-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο ο Νίκος {1} φρούτα στη λαϊκή.",
+  "cue": {
+   "lemma": "πουλάω",
+   "person": "3sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα πουλήσει"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα πουλήσει",
+    "πούλησε",
+    "πουλά",
+    "θα πουλήσω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_b"
+  ],
+  "translation": {
+   "en": "Tomorrow Nikos will sell fruit at the street market."
+  },
+  "explain": {
+   "en": "πουλάω (sell), future, αυτός: θα πουλήσει",
+   "tr": "πουλάω (satmak), gelecek zaman, αυτός: θα πουλήσει"
+  }
+ },
+ {
+  "id": "f-poylao-future-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο τα παιδιά {1} φρούτα στη λαϊκή.",
+  "cue": {
+   "lemma": "πουλάω",
+   "person": "3pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα πουλήσουν",
+    "θα πουλήσουνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα πουλήσουν",
+    "πουλήσαν",
+    "πουλάν",
+    "θα πουλήσω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_b"
+  ],
+  "translation": {
+   "en": "Tomorrow the children will sell fruit at the street market."
+  },
+  "explain": {
+   "en": "πουλάω (sell), future, αυτοί: θα πουλήσουν",
+   "tr": "πουλάω (satmak), gelecek zaman, αυτοί: θα πουλήσουν"
+  }
+ },
+ {
+  "id": "f-niotho-future-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εμείς) {1} καλά.",
+  "cue": {
+   "lemma": "νιώθω",
+   "person": "1pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα νιώσουμε",
+    "θα νιώσομε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα νιώσουμε",
+    "νιώσαμε",
+    "νιώθουμε",
+    "θα νιώσω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow we will feel well."
+  },
+  "explain": {
+   "en": "νιώθω (feel), future, εμείς: θα νιώσουμε",
+   "tr": "νιώθω (hissetmek), gelecek zaman, εμείς: θα νιώσουμε"
+  }
+ },
+ {
+  "id": "f-niotho-future-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εγώ) {1} καλά.",
+  "cue": {
+   "lemma": "νιώθω",
+   "person": "1sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα νιώσω"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα νιώσω",
+    "ένιωσα",
+    "νιώθω",
+    "θα νιώσεις"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow I will feel well."
+  },
+  "explain": {
+   "en": "νιώθω (feel), future, εγώ: θα νιώσω",
+   "tr": "νιώθω (hissetmek), gelecek zaman, εγώ: θα νιώσω"
+  }
+ }
+]

@@ -1,0 +1,2395 @@
+[
+ {
+  "id": "f-kleino-present-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα τα παιδιά {1} την πόρτα.",
+  "cue": {
+   "lemma": "κλείνω",
+   "person": "3pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "κλείνουν",
+    "κλείνουνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "κλείνουν",
+    "θα κλείσουν",
+    "κλείσαν",
+    "κλείνεις"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day the children close the door."
+  },
+  "explain": {
+   "en": "κλείνω (close), present, αυτοί: κλείνουν",
+   "tr": "κλείνω (kapatmak), şimdiki/geniş zaman, αυτοί: κλείνουν"
+  }
+ },
+ {
+  "id": "f-ferno-present-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εμείς) {1} γλυκά.",
+  "cue": {
+   "lemma": "φέρνω",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "φέρνουμε",
+    "φέρνομε"
+   ]
+  },
+  "options": {
+   "1": [
+    "φέρνουμε",
+    "θα φέρουμε",
+    "φέραμε",
+    "φέρνω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day we bring sweets."
+  },
+  "explain": {
+   "en": "φέρνω (bring), present, εμείς: φέρνουμε",
+   "tr": "φέρνω (getirmek), şimdiki/geniş zaman, εμείς: φέρνουμε"
+  }
+ },
+ {
+  "id": "f-ferno-present-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εγώ) {1} γλυκά.",
+  "cue": {
+   "lemma": "φέρνω",
+   "person": "1sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "φέρνω"
+   ]
+  },
+  "options": {
+   "1": [
+    "φέρνω",
+    "θα φέρω",
+    "έφερα",
+    "φέρνεις"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day I bring sweets."
+  },
+  "explain": {
+   "en": "φέρνω (bring), present, εγώ: φέρνω",
+   "tr": "φέρνω (getirmek), şimdiki/geniş zaman, εγώ: φέρνω"
+  }
+ },
+ {
+  "id": "f-stelno-present-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσείς) {1} ένα μήνυμα.",
+  "cue": {
+   "lemma": "στέλνω",
+   "person": "2pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "στέλνετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "στέλνετε",
+    "θα στείλετε",
+    "στείλατε",
+    "στέλνω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day you (pl.) send a message."
+  },
+  "explain": {
+   "en": "στέλνω (send), present, εσείς: στέλνετε",
+   "tr": "στέλνω (göndermek), şimdiki/geniş zaman, εσείς: στέλνετε"
+  }
+ },
+ {
+  "id": "f-stelno-present-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσύ) {1} ένα μήνυμα.",
+  "cue": {
+   "lemma": "στέλνω",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "στέλνεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "στέλνεις",
+    "θα στείλεις",
+    "έστειλες",
+    "στέλνω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day you send a message."
+  },
+  "explain": {
+   "en": "στέλνω (send), present, εσύ: στέλνεις",
+   "tr": "στέλνω (göndermek), şimdiki/geniş zaman, εσύ: στέλνεις"
+  }
+ },
+ {
+  "id": "f-anevaino-present-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα τα παιδιά {1} στον τρίτο όροφο.",
+  "cue": {
+   "lemma": "ανεβαίνω",
+   "person": "3pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "ανεβαίνουν",
+    "ανεβαίνουνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ανεβαίνουν",
+    "θα ανέβουν",
+    "ανέβηκαν",
+    "ανεβαίνω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day the children go up to the third floor."
+  },
+  "explain": {
+   "en": "ανεβαίνω (go up), present, αυτοί: ανεβαίνουν",
+   "tr": "ανεβαίνω (yukarı çıkmak), şimdiki/geniş zaman, αυτοί: ανεβαίνουν"
+  }
+ },
+ {
+  "id": "f-anevaino-present-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα ο Νίκος {1} στον τρίτο όροφο.",
+  "cue": {
+   "lemma": "ανεβαίνω",
+   "person": "3sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "ανεβαίνει"
+   ]
+  },
+  "options": {
+   "1": [
+    "ανεβαίνει",
+    "θα ανέβει",
+    "ανέβηκε",
+    "ανεβαίνω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day Nikos goes up to the third floor."
+  },
+  "explain": {
+   "en": "ανεβαίνω (go up), present, αυτός: ανεβαίνει",
+   "tr": "ανεβαίνω (yukarı çıkmak), şimdiki/geniş zaman, αυτός: ανεβαίνει"
+  }
+ },
+ {
+  "id": "f-anoigo-aorist-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες ο Νίκος {1} το παράθυρο.",
+  "cue": {
+   "lemma": "ανοίγω",
+   "person": "3sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "άνοιξε"
+   ]
+  },
+  "options": {
+   "1": [
+    "άνοιξε",
+    "θα ανοίξει",
+    "ανοίγει",
+    "άνοιξα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday Nikos opened the window."
+  },
+  "explain": {
+   "en": "ανοίγω (open), aorist, αυτός: άνοιξε",
+   "tr": "ανοίγω (açmak), geçmiş zaman (aorist), αυτός: άνοιξε"
+  }
+ },
+ {
+  "id": "f-anoigo-aorist-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες τα παιδιά {1} το παράθυρο.",
+  "cue": {
+   "lemma": "ανοίγω",
+   "person": "3pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "άνοιξαν",
+    "ανοίξαν",
+    "ανοίξανε"
+   ]
+  },
+  "options": {
+   "1": [
+    "άνοιξαν",
+    "θα ανοίξουν",
+    "ανοίγουν",
+    "άνοιξα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday the children opened the window."
+  },
+  "explain": {
+   "en": "ανοίγω (open), aorist, αυτοί: άνοιξαν",
+   "tr": "ανοίγω (açmak), geçmiş zaman (aorist), αυτοί: άνοιξαν"
+  }
+ },
+ {
+  "id": "f-kleino-aorist-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εμείς) {1} την πόρτα.",
+  "cue": {
+   "lemma": "κλείνω",
+   "person": "1pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "κλείσαμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "κλείσαμε",
+    "θα κλείσουμε",
+    "κλείνουμε",
+    "έκλεισα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday we closed the door."
+  },
+  "explain": {
+   "en": "κλείνω (close), aorist, εμείς: κλείσαμε",
+   "tr": "κλείνω (kapatmak), geçmiş zaman (aorist), εμείς: κλείσαμε"
+  }
+ },
+ {
+  "id": "f-kleino-aorist-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εγώ) {1} την πόρτα.",
+  "cue": {
+   "lemma": "κλείνω",
+   "person": "1sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "έκλεισα"
+   ]
+  },
+  "options": {
+   "1": [
+    "έκλεισα",
+    "θα κλείσω",
+    "έκλεισες",
+    "έκλεισε"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday I closed the door."
+  },
+  "explain": {
+   "en": "κλείνω (close), aorist, εγώ: έκλεισα",
+   "tr": "κλείνω (kapatmak), geçmiş zaman (aorist), εγώ: έκλεισα"
+  }
+ },
+ {
+  "id": "f-ferno-aorist-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εσείς) {1} γλυκά.",
+  "cue": {
+   "lemma": "φέρνω",
+   "person": "2pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "φέρατε"
+   ]
+  },
+  "options": {
+   "1": [
+    "φέρατε",
+    "θα φέρετε",
+    "φέρνετε",
+    "έφερα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday you (pl.) brought sweets."
+  },
+  "explain": {
+   "en": "φέρνω (bring), aorist, εσείς: φέρατε",
+   "tr": "φέρνω (getirmek), geçmiş zaman (aorist), εσείς: φέρατε"
+  }
+ },
+ {
+  "id": "f-ferno-aorist-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εσύ) {1} γλυκά.",
+  "cue": {
+   "lemma": "φέρνω",
+   "person": "2sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "έφερες"
+   ]
+  },
+  "options": {
+   "1": [
+    "έφερες",
+    "θα φέρεις",
+    "φέρνεις",
+    "έφερα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday you brought sweets."
+  },
+  "explain": {
+   "en": "φέρνω (bring), aorist, εσύ: έφερες",
+   "tr": "φέρνω (getirmek), geçmiş zaman (aorist), εσύ: έφερες"
+  }
+ },
+ {
+  "id": "f-stelno-aorist-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες τα παιδιά {1} ένα μήνυμα.",
+  "cue": {
+   "lemma": "στέλνω",
+   "person": "3pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "στείλαν",
+    "έστειλαν",
+    "στείλανε"
+   ]
+  },
+  "options": {
+   "1": [
+    "στείλαν",
+    "θα στείλουν",
+    "στέλνουν",
+    "έστειλα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday the children sent a message."
+  },
+  "explain": {
+   "en": "στέλνω (send), aorist, αυτοί: στείλαν",
+   "tr": "στέλνω (göndermek), geçmiş zaman (aorist), αυτοί: στείλαν"
+  }
+ },
+ {
+  "id": "f-stelno-aorist-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες ο Νίκος {1} ένα μήνυμα.",
+  "cue": {
+   "lemma": "στέλνω",
+   "person": "3sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "έστειλε"
+   ]
+  },
+  "options": {
+   "1": [
+    "έστειλε",
+    "θα στείλει",
+    "στέλνει",
+    "έστειλα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday Nikos sent a message."
+  },
+  "explain": {
+   "en": "στέλνω (send), aorist, αυτός: έστειλε",
+   "tr": "στέλνω (göndermek), geçmiş zaman (aorist), αυτός: έστειλε"
+  }
+ },
+ {
+  "id": "f-anevaino-aorist-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εγώ) {1} στον τρίτο όροφο.",
+  "cue": {
+   "lemma": "ανεβαίνω",
+   "person": "1sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "ανέβηκα"
+   ]
+  },
+  "options": {
+   "1": [
+    "ανέβηκα",
+    "θα ανέβω",
+    "ανεβαίνω",
+    "ανέβηκες"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday I went up to the third floor."
+  },
+  "explain": {
+   "en": "ανεβαίνω (go up), aorist, εγώ: ανέβηκα",
+   "tr": "ανεβαίνω (yukarı çıkmak), geçmiş zaman (aorist), εγώ: ανέβηκα"
+  }
+ },
+ {
+  "id": "f-anevaino-aorist-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εμείς) {1} στον τρίτο όροφο.",
+  "cue": {
+   "lemma": "ανεβαίνω",
+   "person": "1pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "ανεβήκαμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ανεβήκαμε",
+    "θα ανέβουμε",
+    "ανεβαίνουμε",
+    "ανέβηκα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday we went up to the third floor."
+  },
+  "explain": {
+   "en": "ανεβαίνω (go up), aorist, εμείς: ανεβήκαμε",
+   "tr": "ανεβαίνω (yukarı çıkmak), geçmiş zaman (aorist), εμείς: ανεβήκαμε"
+  }
+ },
+ {
+  "id": "f-anoigo-future-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εμείς) {1} το παράθυρο.",
+  "cue": {
+   "lemma": "ανοίγω",
+   "person": "1pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα ανοίξουμε",
+    "θα ανοίξομε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα ανοίξουμε",
+    "ανοίξαμε",
+    "ανοίγουμε",
+    "θα ανοίξω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow we will open the window."
+  },
+  "explain": {
+   "en": "ανοίγω (open), future, εμείς: θα ανοίξουμε",
+   "tr": "ανοίγω (açmak), gelecek zaman, εμείς: θα ανοίξουμε"
+  }
+ },
+ {
+  "id": "f-anoigo-future-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εγώ) {1} το παράθυρο.",
+  "cue": {
+   "lemma": "ανοίγω",
+   "person": "1sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα ανοίξω"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα ανοίξω",
+    "άνοιξα",
+    "ανοίγω",
+    "θα ανοίξεις"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow I will open the window."
+  },
+  "explain": {
+   "en": "ανοίγω (open), future, εγώ: θα ανοίξω",
+   "tr": "ανοίγω (açmak), gelecek zaman, εγώ: θα ανοίξω"
+  }
+ },
+ {
+  "id": "f-kleino-future-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσείς) {1} την πόρτα.",
+  "cue": {
+   "lemma": "κλείνω",
+   "person": "2pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα κλείσετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα κλείσετε",
+    "κλείσατε",
+    "κλείνετε",
+    "θα κλείσω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow you (pl.) will close the door."
+  },
+  "explain": {
+   "en": "κλείνω (close), future, εσείς: θα κλείσετε",
+   "tr": "κλείνω (kapatmak), gelecek zaman, εσείς: θα κλείσετε"
+  }
+ },
+ {
+  "id": "f-kleino-future-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσύ) {1} την πόρτα.",
+  "cue": {
+   "lemma": "κλείνω",
+   "person": "2sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα κλείσεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα κλείσεις",
+    "έκλεισες",
+    "κλείνεις",
+    "θα κλείσω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow you will close the door."
+  },
+  "explain": {
+   "en": "κλείνω (close), future, εσύ: θα κλείσεις",
+   "tr": "κλείνω (kapatmak), gelecek zaman, εσύ: θα κλείσεις"
+  }
+ },
+ {
+  "id": "f-ferno-future-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο τα παιδιά {1} γλυκά.",
+  "cue": {
+   "lemma": "φέρνω",
+   "person": "3pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα φέρουν",
+    "θα φέρουνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα φέρουν",
+    "φέραν",
+    "φέρνουν",
+    "θα φέρω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow the children will bring sweets."
+  },
+  "explain": {
+   "en": "φέρνω (bring), future, αυτοί: θα φέρουν",
+   "tr": "φέρνω (getirmek), gelecek zaman, αυτοί: θα φέρουν"
+  }
+ },
+ {
+  "id": "f-ferno-future-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο ο Νίκος {1} γλυκά.",
+  "cue": {
+   "lemma": "φέρνω",
+   "person": "3sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα φέρει"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα φέρει",
+    "έφερε",
+    "φέρνει",
+    "θα φέρω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow Nikos will bring sweets."
+  },
+  "explain": {
+   "en": "φέρνω (bring), future, αυτός: θα φέρει",
+   "tr": "φέρνω (getirmek), gelecek zaman, αυτός: θα φέρει"
+  }
+ },
+ {
+  "id": "f-stelno-future-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εγώ) {1} ένα μήνυμα.",
+  "cue": {
+   "lemma": "στέλνω",
+   "person": "1sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα στείλω"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα στείλω",
+    "έστειλα",
+    "στέλνω",
+    "θα στείλεις"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow I will send a message."
+  },
+  "explain": {
+   "en": "στέλνω (send), future, εγώ: θα στείλω",
+   "tr": "στέλνω (göndermek), gelecek zaman, εγώ: θα στείλω"
+  }
+ },
+ {
+  "id": "f-stelno-future-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εμείς) {1} ένα μήνυμα.",
+  "cue": {
+   "lemma": "στέλνω",
+   "person": "1pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα στείλουμε",
+    "θα στείλομε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα στείλουμε",
+    "στείλαμε",
+    "στέλνουμε",
+    "θα στείλω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow we will send a message."
+  },
+  "explain": {
+   "en": "στέλνω (send), future, εμείς: θα στείλουμε",
+   "tr": "στέλνω (göndermek), gelecek zaman, εμείς: θα στείλουμε"
+  }
+ },
+ {
+  "id": "f-anevaino-future-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσύ) {1} στον τρίτο όροφο.",
+  "cue": {
+   "lemma": "ανεβαίνω",
+   "person": "2sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα ανέβεις",
+    "θα ανεβείς"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα ανέβεις",
+    "ανέβηκες",
+    "ανεβαίνεις",
+    "θα ανέβω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow you will go up to the third floor."
+  },
+  "explain": {
+   "en": "ανεβαίνω (go up), future, εσύ: θα ανέβεις",
+   "tr": "ανεβαίνω (yukarı çıkmak), gelecek zaman, εσύ: θα ανέβεις"
+  }
+ },
+ {
+  "id": "f-anevaino-future-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσείς) {1} στον τρίτο όροφο.",
+  "cue": {
+   "lemma": "ανεβαίνω",
+   "person": "2pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα ανέβετε",
+    "θα ανεβείτε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα ανέβετε",
+    "ανεβήκατε",
+    "ανεβαίνετε",
+    "θα ανέβω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow you (pl.) will go up to the third floor."
+  },
+  "explain": {
+   "en": "ανεβαίνω (go up), future, εσείς: θα ανέβετε",
+   "tr": "ανεβαίνω (yukarı çıkmak), gelecek zaman, εσείς: θα ανέβετε"
+  }
+ },
+ {
+  "id": "f-katevaino-present-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εγώ) {1} στην παραλία.",
+  "cue": {
+   "lemma": "κατεβαίνω",
+   "person": "1sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "κατεβαίνω"
+   ]
+  },
+  "options": {
+   "1": [
+    "κατεβαίνω",
+    "θα κατέβω",
+    "κατέβηκα",
+    "κατεβαίνεις"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day I go down to the beach."
+  },
+  "explain": {
+   "en": "κατεβαίνω (go down), present, εγώ: κατεβαίνω",
+   "tr": "κατεβαίνω (aşağı inmek), şimdiki/geniş zaman, εγώ: κατεβαίνω"
+  }
+ },
+ {
+  "id": "f-katevaino-present-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εμείς) {1} στην παραλία.",
+  "cue": {
+   "lemma": "κατεβαίνω",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "κατεβαίνουμε",
+    "κατεβαίνομε"
+   ]
+  },
+  "options": {
+   "1": [
+    "κατεβαίνουμε",
+    "θα κατέβουμε",
+    "κατεβήκαμε",
+    "κατεβαίνω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day we go down to the beach."
+  },
+  "explain": {
+   "en": "κατεβαίνω (go down), present, εμείς: κατεβαίνουμε",
+   "tr": "κατεβαίνω (aşağı inmek), şimdiki/geniş zaman, εμείς: κατεβαίνουμε"
+  }
+ },
+ {
+  "id": "f-thymamai-present-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσύ) {1} τη διεύθυνση.",
+  "cue": {
+   "lemma": "θυμάμαι",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "θυμάσαι"
+   ]
+  },
+  "options": {
+   "1": [
+    "θυμάσαι",
+    "θα θυμηθείς",
+    "θυμήθηκες",
+    "θυμάται"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.deponent"
+  ],
+  "translation": {
+   "en": "Every day you remember the address."
+  },
+  "explain": {
+   "en": "θυμάμαι (remember), present, εσύ: θυμάσαι",
+   "tr": "θυμάμαι (hatırlamak), şimdiki/geniş zaman, εσύ: θυμάσαι"
+  }
+ },
+ {
+  "id": "f-thymamai-present-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσείς) {1} τη διεύθυνση.",
+  "cue": {
+   "lemma": "θυμάμαι",
+   "person": "2pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "θυμάστε",
+    "θυμόσαστε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θυμάστε",
+    "θα θυμηθείτε",
+    "θυμηθήκατε",
+    "θυμάσαι"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.deponent"
+  ],
+  "translation": {
+   "en": "Every day you (pl.) remember the address."
+  },
+  "explain": {
+   "en": "θυμάμαι (remember), present, εσείς: θυμάστε",
+   "tr": "θυμάμαι (hatırlamak), şimdiki/geniş zaman, εσείς: θυμάστε"
+  }
+ },
+ {
+  "id": "f-chreiazomai-present-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα ο Νίκος {1} βοήθεια.",
+  "cue": {
+   "lemma": "χρειάζομαι",
+   "person": "3sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "χρειάζεται"
+   ]
+  },
+  "options": {
+   "1": [
+    "χρειάζεται",
+    "θα χρειασθεί",
+    "χρειάστηκε",
+    "χρειάζομαι"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.deponent"
+  ],
+  "translation": {
+   "en": "Every day Nikos needs help."
+  },
+  "explain": {
+   "en": "χρειάζομαι (need), present, αυτός: χρειάζεται",
+   "tr": "χρειάζομαι (ihtiyaç duymak), şimdiki/geniş zaman, αυτός: χρειάζεται"
+  }
+ },
+ {
+  "id": "f-chreiazomai-present-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα τα παιδιά {1} βοήθεια.",
+  "cue": {
+   "lemma": "χρειάζομαι",
+   "person": "3pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "χρειάζονται"
+   ]
+  },
+  "options": {
+   "1": [
+    "χρειάζονται",
+    "θα χρειασθούν",
+    "χρειάσθηκαν",
+    "χρειάζομαι"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.deponent"
+  ],
+  "translation": {
+   "en": "Every day the children need help."
+  },
+  "explain": {
+   "en": "χρειάζομαι (need), present, αυτοί: χρειάζονται",
+   "tr": "χρειάζομαι (ihtiyaç duymak), şimdiki/geniş zaman, αυτοί: χρειάζονται"
+  }
+ },
+ {
+  "id": "f-archizo-present-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσείς) {1} τη δουλειά.",
+  "cue": {
+   "lemma": "αρχίζω",
+   "person": "2pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "αρχίζετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "αρχίζετε",
+    "θα αρχίσετε",
+    "αρχίσατε",
+    "αρχίζω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day you (pl.) start work."
+  },
+  "explain": {
+   "en": "αρχίζω (start), present, εσείς: αρχίζετε",
+   "tr": "αρχίζω (başlamak), şimdiki/geniş zaman, εσείς: αρχίζετε"
+  }
+ },
+ {
+  "id": "f-archizo-present-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα (εσύ) {1} τη δουλειά.",
+  "cue": {
+   "lemma": "αρχίζω",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "αρχίζεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "αρχίζεις",
+    "θα αρχίσεις",
+    "άρχισες",
+    "αρχίζω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day you start work."
+  },
+  "explain": {
+   "en": "αρχίζω (start), present, εσύ: αρχίζεις",
+   "tr": "αρχίζω (başlamak), şimdiki/geniş zaman, εσύ: αρχίζεις"
+  }
+ },
+ {
+  "id": "f-taxideyo-present-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα τα παιδιά {1} στην Κρήτη.",
+  "cue": {
+   "lemma": "ταξιδεύω",
+   "person": "3pl",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "ταξιδεύουν",
+    "ταξιδεύουνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ταξιδεύουν",
+    "θα ταξιδέψουν",
+    "ταξίδεψαν",
+    "ταξιδεύω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day the children travel to Crete."
+  },
+  "explain": {
+   "en": "ταξιδεύω (travel), present, αυτοί: ταξιδεύουν",
+   "tr": "ταξιδεύω (seyahat etmek), şimdiki/geniş zaman, αυτοί: ταξιδεύουν"
+  }
+ },
+ {
+  "id": "f-taxideyo-present-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Κάθε μέρα ο Νίκος {1} στην Κρήτη.",
+  "cue": {
+   "lemma": "ταξιδεύω",
+   "person": "3sg",
+   "tense": "present"
+  },
+  "answer": {
+   "1": [
+    "ταξιδεύει"
+   ]
+  },
+  "options": {
+   "1": [
+    "ταξιδεύει",
+    "θα ταξιδέψει",
+    "ταξίδεψε",
+    "ταξιδεύω"
+   ]
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Every day Nikos travels to Crete."
+  },
+  "explain": {
+   "en": "ταξιδεύω (travel), present, αυτός: ταξιδεύει",
+   "tr": "ταξιδεύω (seyahat etmek), şimdiki/geniş zaman, αυτός: ταξιδεύει"
+  }
+ },
+ {
+  "id": "f-katevaino-aorist-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εσύ) {1} στην παραλία.",
+  "cue": {
+   "lemma": "κατεβαίνω",
+   "person": "2sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "κατέβηκες"
+   ]
+  },
+  "options": {
+   "1": [
+    "κατέβηκες",
+    "θα κατέβεις",
+    "κατεβαίνεις",
+    "κατέβηκα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday you went down to the beach."
+  },
+  "explain": {
+   "en": "κατεβαίνω (go down), aorist, εσύ: κατέβηκες",
+   "tr": "κατεβαίνω (aşağı inmek), geçmiş zaman (aorist), εσύ: κατέβηκες"
+  }
+ },
+ {
+  "id": "f-katevaino-aorist-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εσείς) {1} στην παραλία.",
+  "cue": {
+   "lemma": "κατεβαίνω",
+   "person": "2pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "κατεβήκατε"
+   ]
+  },
+  "options": {
+   "1": [
+    "κατεβήκατε",
+    "θα κατέβετε",
+    "κατεβαίνετε",
+    "κατέβηκα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday you (pl.) went down to the beach."
+  },
+  "explain": {
+   "en": "κατεβαίνω (go down), aorist, εσείς: κατεβήκατε",
+   "tr": "κατεβαίνω (aşağı inmek), geçmiş zaman (aorist), εσείς: κατεβήκατε"
+  }
+ },
+ {
+  "id": "f-thymamai-aorist-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες ο Νίκος {1} τη διεύθυνση.",
+  "cue": {
+   "lemma": "θυμάμαι",
+   "person": "3sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "θυμήθηκε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θυμήθηκε",
+    "θα θυμηθεί",
+    "θυμάται",
+    "θυμήθηκα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.deponent"
+  ],
+  "translation": {
+   "en": "Yesterday Nikos remembered the address."
+  },
+  "explain": {
+   "en": "θυμάμαι (remember), aorist, αυτός: θυμήθηκε",
+   "tr": "θυμάμαι (hatırlamak), geçmiş zaman (aorist), αυτός: θυμήθηκε"
+  }
+ },
+ {
+  "id": "f-thymamai-aorist-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες τα παιδιά {1} τη διεύθυνση.",
+  "cue": {
+   "lemma": "θυμάμαι",
+   "person": "3pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "θυμήθηκαν",
+    "θυμηθήκαν",
+    "θυμηθήκανε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θυμήθηκαν",
+    "θα θυμηθούν",
+    "θυμόνται",
+    "θυμήθηκα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.deponent"
+  ],
+  "translation": {
+   "en": "Yesterday the children remembered the address."
+  },
+  "explain": {
+   "en": "θυμάμαι (remember), aorist, αυτοί: θυμήθηκαν",
+   "tr": "θυμάμαι (hatırlamak), geçmiş zaman (aorist), αυτοί: θυμήθηκαν"
+  }
+ },
+ {
+  "id": "f-chreiazomai-aorist-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εμείς) {1} βοήθεια.",
+  "cue": {
+   "lemma": "χρειάζομαι",
+   "person": "1pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "χρειασθήκαμε",
+    "χρειαστήκαμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "χρειασθήκαμε",
+    "θα χρειασθούμε",
+    "χρειαζόμαστε",
+    "χρειάσθηκα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.deponent"
+  ],
+  "translation": {
+   "en": "Yesterday we needed help."
+  },
+  "explain": {
+   "en": "χρειάζομαι (need), aorist, εμείς: χρειασθήκαμε",
+   "tr": "χρειάζομαι (ihtiyaç duymak), geçmiş zaman (aorist), εμείς: χρειασθήκαμε"
+  }
+ },
+ {
+  "id": "f-chreiazomai-aorist-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εγώ) {1} βοήθεια.",
+  "cue": {
+   "lemma": "χρειάζομαι",
+   "person": "1sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "χρειάσθηκα",
+    "χρειάστηκα"
+   ]
+  },
+  "options": {
+   "1": [
+    "χρειάσθηκα",
+    "θα χρειασθώ",
+    "χρειάζομαι",
+    "χρειάσθηκες"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.aorist.irregular",
+   "verb.deponent"
+  ],
+  "translation": {
+   "en": "Yesterday I needed help."
+  },
+  "explain": {
+   "en": "χρειάζομαι (need), aorist, εγώ: χρειάσθηκα",
+   "tr": "χρειάζομαι (ihtiyaç duymak), geçmiş zaman (aorist), εγώ: χρειάσθηκα"
+  }
+ },
+ {
+  "id": "f-tilefono-aorist-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εσείς) {1} στη μητέρα μου.",
+  "cue": {
+   "lemma": "τηλεφωνώ",
+   "person": "2pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "τηλεφωνήσατε"
+   ]
+  },
+  "options": {
+   "1": [
+    "τηλεφωνήσατε",
+    "θα τηλεφωνήσετε",
+    "τηλεφώνησα",
+    "τηλεφώνησες"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_b"
+  ],
+  "translation": {
+   "en": "Yesterday you (pl.) phoned my mother."
+  },
+  "explain": {
+   "en": "τηλεφωνώ (phone), aorist, εσείς: τηλεφωνήσατε",
+   "tr": "τηλεφωνώ (telefon etmek), geçmiş zaman (aorist), εσείς: τηλεφωνήσατε"
+  }
+ },
+ {
+  "id": "f-tilefono-aorist-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εσύ) {1} στη μητέρα μου.",
+  "cue": {
+   "lemma": "τηλεφωνώ",
+   "person": "2sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "τηλεφώνησες"
+   ]
+  },
+  "options": {
+   "1": [
+    "τηλεφώνησες",
+    "θα τηλεφωνήσεις",
+    "τηλεφώνησα",
+    "τηλεφώνησε"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_b"
+  ],
+  "translation": {
+   "en": "Yesterday you phoned my mother."
+  },
+  "explain": {
+   "en": "τηλεφωνώ (phone), aorist, εσύ: τηλεφώνησες",
+   "tr": "τηλεφωνώ (telefon etmek), geçmiş zaman (aorist), εσύ: τηλεφώνησες"
+  }
+ },
+ {
+  "id": "f-archizo-aorist-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες τα παιδιά {1} τη δουλειά.",
+  "cue": {
+   "lemma": "αρχίζω",
+   "person": "3pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "άρχισαν",
+    "αρχίσαν",
+    "αρχίσανε"
+   ]
+  },
+  "options": {
+   "1": [
+    "άρχισαν",
+    "θα αρχίσουν",
+    "αρχίζουν",
+    "άρχισα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday the children started work."
+  },
+  "explain": {
+   "en": "αρχίζω (start), aorist, αυτοί: άρχισαν",
+   "tr": "αρχίζω (başlamak), geçmiş zaman (aorist), αυτοί: άρχισαν"
+  }
+ },
+ {
+  "id": "f-archizo-aorist-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες ο Νίκος {1} τη δουλειά.",
+  "cue": {
+   "lemma": "αρχίζω",
+   "person": "3sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "άρχισε"
+   ]
+  },
+  "options": {
+   "1": [
+    "άρχισε",
+    "θα αρχίσει",
+    "αρχίζει",
+    "άρχισα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday Nikos started work."
+  },
+  "explain": {
+   "en": "αρχίζω (start), aorist, αυτός: άρχισε",
+   "tr": "αρχίζω (başlamak), geçmiş zaman (aorist), αυτός: άρχισε"
+  }
+ },
+ {
+  "id": "f-taxideyo-aorist-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εγώ) {1} στην Κρήτη.",
+  "cue": {
+   "lemma": "ταξιδεύω",
+   "person": "1sg",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "ταξίδεψα"
+   ]
+  },
+  "options": {
+   "1": [
+    "ταξίδεψα",
+    "θα ταξιδέψω",
+    "ταξιδεύω",
+    "ταξίδεψες"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday I travelled to Crete."
+  },
+  "explain": {
+   "en": "ταξιδεύω (travel), aorist, εγώ: ταξίδεψα",
+   "tr": "ταξιδεύω (seyahat etmek), geçmiş zaman (aorist), εγώ: ταξίδεψα"
+  }
+ },
+ {
+  "id": "f-taxideyo-aorist-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Χθες (εμείς) {1} στην Κρήτη.",
+  "cue": {
+   "lemma": "ταξιδεύω",
+   "person": "1pl",
+   "tense": "aorist"
+  },
+  "answer": {
+   "1": [
+    "ταξιδέψαμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ταξιδέψαμε",
+    "θα ταξιδέψουμε",
+    "ταξιδεύουμε",
+    "ταξίδεψα"
+   ]
+  },
+  "grammar": [
+   "verb.aorist",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Yesterday we travelled to Crete."
+  },
+  "explain": {
+   "en": "ταξιδεύω (travel), aorist, εμείς: ταξιδέψαμε",
+   "tr": "ταξιδεύω (seyahat etmek), geçmiş zaman (aorist), εμείς: ταξιδέψαμε"
+  }
+ },
+ {
+  "id": "f-katevaino-future-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο ο Νίκος {1} στην παραλία.",
+  "cue": {
+   "lemma": "κατεβαίνω",
+   "person": "3sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα κατέβει",
+    "θα κατεβεί"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα κατέβει",
+    "κατέβηκε",
+    "κατεβαίνει",
+    "θα κατέβω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow Nikos will go down to the beach."
+  },
+  "explain": {
+   "en": "κατεβαίνω (go down), future, αυτός: θα κατέβει",
+   "tr": "κατεβαίνω (aşağı inmek), gelecek zaman, αυτός: θα κατέβει"
+  }
+ },
+ {
+  "id": "f-katevaino-future-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο τα παιδιά {1} στην παραλία.",
+  "cue": {
+   "lemma": "κατεβαίνω",
+   "person": "3pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα κατέβουν",
+    "θα κατεβούν",
+    "θα κατεβούνε",
+    "θα κατέβουνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα κατέβουν",
+    "κατέβηκαν",
+    "κατεβαίνουν",
+    "θα κατέβω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow the children will go down to the beach."
+  },
+  "explain": {
+   "en": "κατεβαίνω (go down), future, αυτοί: θα κατέβουν",
+   "tr": "κατεβαίνω (aşağı inmek), gelecek zaman, αυτοί: θα κατέβουν"
+  }
+ },
+ {
+  "id": "f-thymamai-future-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εμείς) {1} τη διεύθυνση.",
+  "cue": {
+   "lemma": "θυμάμαι",
+   "person": "1pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα θυμηθούμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα θυμηθούμε",
+    "θυμηθήκαμε",
+    "θα θυμηθώ",
+    "θα θυμηθείς"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.deponent"
+  ],
+  "translation": {
+   "en": "Tomorrow we will remember the address."
+  },
+  "explain": {
+   "en": "θυμάμαι (remember), future, εμείς: θα θυμηθούμε",
+   "tr": "θυμάμαι (hatırlamak), gelecek zaman, εμείς: θα θυμηθούμε"
+  }
+ },
+ {
+  "id": "f-thymamai-future-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εγώ) {1} τη διεύθυνση.",
+  "cue": {
+   "lemma": "θυμάμαι",
+   "person": "1sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα θυμηθώ"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα θυμηθώ",
+    "θυμήθηκα",
+    "θα θυμηθείς",
+    "θα θυμηθεί"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.deponent"
+  ],
+  "translation": {
+   "en": "Tomorrow I will remember the address."
+  },
+  "explain": {
+   "en": "θυμάμαι (remember), future, εγώ: θα θυμηθώ",
+   "tr": "θυμάμαι (hatırlamak), gelecek zaman, εγώ: θα θυμηθώ"
+  }
+ },
+ {
+  "id": "f-chreiazomai-future-2pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσείς) {1} βοήθεια.",
+  "cue": {
+   "lemma": "χρειάζομαι",
+   "person": "2pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα χρειασθείτε",
+    "θα χρειαστείτε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα χρειασθείτε",
+    "χρειασθήκατε",
+    "χρειάζεστε",
+    "θα χρειασθώ"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.deponent"
+  ],
+  "translation": {
+   "en": "Tomorrow you (pl.) will need help."
+  },
+  "explain": {
+   "en": "χρειάζομαι (need), future, εσείς: θα χρειασθείτε",
+   "tr": "χρειάζομαι (ihtiyaç duymak), gelecek zaman, εσείς: θα χρειασθείτε"
+  }
+ },
+ {
+  "id": "f-chreiazomai-future-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσύ) {1} βοήθεια.",
+  "cue": {
+   "lemma": "χρειάζομαι",
+   "person": "2sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα χρειασθείς",
+    "θα χρειαστείς"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα χρειασθείς",
+    "χρειάσθηκες",
+    "χρειάζεσαι",
+    "θα χρειασθώ"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.future.irregular",
+   "verb.deponent"
+  ],
+  "translation": {
+   "en": "Tomorrow you will need help."
+  },
+  "explain": {
+   "en": "χρειάζομαι (need), future, εσύ: θα χρειασθείς",
+   "tr": "χρειάζομαι (ihtiyaç duymak), gelecek zaman, εσύ: θα χρειασθείς"
+  }
+ },
+ {
+  "id": "f-tilefono-future-3pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο τα παιδιά {1} στη μητέρα μου.",
+  "cue": {
+   "lemma": "τηλεφωνώ",
+   "person": "3pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα τηλεφωνήσουν",
+    "θα τηλεφωνήσουνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα τηλεφωνήσουν",
+    "τηλεφωνήσαν",
+    "τηλεφωνάν",
+    "θα τηλεφωνήσω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_b"
+  ],
+  "translation": {
+   "en": "Tomorrow the children will phone my mother."
+  },
+  "explain": {
+   "en": "τηλεφωνώ (phone), future, αυτοί: θα τηλεφωνήσουν",
+   "tr": "τηλεφωνώ (telefon etmek), gelecek zaman, αυτοί: θα τηλεφωνήσουν"
+  }
+ },
+ {
+  "id": "f-tilefono-future-3sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο ο Νίκος {1} στη μητέρα μου.",
+  "cue": {
+   "lemma": "τηλεφωνώ",
+   "person": "3sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα τηλεφωνήσει"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα τηλεφωνήσει",
+    "τηλεφώνησε",
+    "θα τηλεφωνήσω",
+    "θα τηλεφωνήσεις"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_b"
+  ],
+  "translation": {
+   "en": "Tomorrow Nikos will phone my mother."
+  },
+  "explain": {
+   "en": "τηλεφωνώ (phone), future, αυτός: θα τηλεφωνήσει",
+   "tr": "τηλεφωνώ (telefon etmek), gelecek zaman, αυτός: θα τηλεφωνήσει"
+  }
+ },
+ {
+  "id": "f-archizo-future-1sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εγώ) {1} τη δουλειά.",
+  "cue": {
+   "lemma": "αρχίζω",
+   "person": "1sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα αρχίσω"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα αρχίσω",
+    "άρχισα",
+    "αρχίζω",
+    "θα αρχίσεις"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow I will start work."
+  },
+  "explain": {
+   "en": "αρχίζω (start), future, εγώ: θα αρχίσω",
+   "tr": "αρχίζω (başlamak), gelecek zaman, εγώ: θα αρχίσω"
+  }
+ },
+ {
+  "id": "f-archizo-future-1pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εμείς) {1} τη δουλειά.",
+  "cue": {
+   "lemma": "αρχίζω",
+   "person": "1pl",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα αρχίσουμε",
+    "θα αρχίσομε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα αρχίσουμε",
+    "αρχίσαμε",
+    "αρχίζουμε",
+    "θα αρχίσω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow we will start work."
+  },
+  "explain": {
+   "en": "αρχίζω (start), future, εμείς: θα αρχίσουμε",
+   "tr": "αρχίζω (başlamak), gelecek zaman, εμείς: θα αρχίσουμε"
+  }
+ },
+ {
+  "id": "f-taxideyo-future-2sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "verbs"
+  ],
+  "text": "Αύριο (εσύ) {1} στην Κρήτη.",
+  "cue": {
+   "lemma": "ταξιδεύω",
+   "person": "2sg",
+   "tense": "future"
+  },
+  "answer": {
+   "1": [
+    "θα ταξιδέψεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα ταξιδέψεις",
+    "ταξίδεψες",
+    "ταξιδεύεις",
+    "θα ταξιδέψω"
+   ]
+  },
+  "grammar": [
+   "verb.future",
+   "verb.class_a"
+  ],
+  "translation": {
+   "en": "Tomorrow you will travel to Crete."
+  },
+  "explain": {
+   "en": "ταξιδεύω (travel), future, εσύ: θα ταξιδέψεις",
+   "tr": "ταξιδεύω (seyahat etmek), gelecek zaman, εσύ: θα ταξιδέψεις"
+  }
+ }
+]

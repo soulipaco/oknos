@@ -1,0 +1,20 @@
+{
+  "id": "open-verbs-a1a2",
+  "title": {
+    "en": "Everyday verbs",
+    "tr": "Günlük fiiller",
+    "el": "Καθημερινά ρήματα"
+  },
+  "version": 1,
+  "levels": [
+    "A1",
+    "A2"
+  ],
+  "visibility": "open",
+  "licence": "CC-BY-SA-4.0",
+  "source": "Original sentences written for Greek Coach. Verb forms checked against the English Wiktionary's Greek conjugation tables (CC BY-SA 4.0, https://en.wiktionary.org, via kaikki.org).",
+  "exam_blueprints": [
+    "a2ltr",
+    "b1-keg"
+  ]
+}

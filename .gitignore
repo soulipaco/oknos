@@ -14,3 +14,12 @@ __pycache__/
 Thumbs.db
 .vscode/
 .idea/
+
+# Tooling
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+
+# Downloaded reference data (dictionary dumps, voice models). Never tracked.
+.cache/

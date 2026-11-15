@@ -1,0 +1,93 @@
+[
+  {"id": "v-kafes", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["cafe", "food"],
+   "el": "ο καφές", "lemma": "καφές", "pos": "noun", "gender": "m", "en": "coffee", "tr": "kahve",
+   "example": {"el": "Θέλω έναν καφέ, παρακαλώ.", "en": "I'd like a coffee, please.", "tr": "Bir kahve istiyorum, lütfen."}},
+
+  {"id": "v-tsai", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["cafe", "food"],
+   "el": "το τσάι", "lemma": "τσάι", "pos": "noun", "gender": "n", "en": "tea", "tr": "çay",
+   "example": {"el": "Το τσάι είναι πολύ ζεστό.", "en": "The tea is very hot.", "tr": "Çay çok sıcak."}},
+
+  {"id": "v-flitzani", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["kitchen"],
+   "el": "το φλιτζάνι", "lemma": "φλιτζάνι", "pos": "noun", "gender": "n", "en": "cup", "tr": "fincan",
+   "example": {"el": "Το φλιτζάνι είναι στο τραπέζι.", "en": "The cup is on the table.", "tr": "Fincan masanın üstünde."}},
+
+  {"id": "v-tapsi", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["kitchen"],
+   "el": "το ταψί", "lemma": "ταψί", "pos": "noun", "gender": "n", "en": "baking tray", "tr": "tepsi",
+   "example": {"el": "Βάζω τις πατάτες στο ταψί.", "en": "I put the potatoes in the baking tray.", "tr": "Patatesleri tepsiye koyuyorum."}},
+
+  {"id": "v-bakalis", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["neighbourhood", "shopping"],
+   "el": "ο μπακάλης", "lemma": "μπακάλης", "pos": "noun", "gender": "m", "en": "grocer", "tr": "bakkal",
+   "example": {"el": "Ο μπακάλης έχει φρέσκο ψωμί.", "en": "The grocer has fresh bread.", "tr": "Bakkalda taze ekmek var."}},
+
+  {"id": "v-xasapis", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["neighbourhood", "shopping"],
+   "el": "ο χασάπης", "lemma": "χασάπης", "pos": "noun", "gender": "m", "en": "butcher", "tr": "kasap",
+   "example": {"el": "Αγοράζω κρέας από τον χασάπη.", "en": "I buy meat from the butcher.", "tr": "Kasaptan et alıyorum."}},
+
+  {"id": "v-pazari", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["shopping"],
+   "el": "το παζάρι", "lemma": "παζάρι", "pos": "noun", "gender": "n", "en": "bazaar, market", "tr": "pazar",
+   "example": {"el": "Στο παζάρι έχει πολύ κόσμο.", "en": "The bazaar is very crowded.", "tr": "Pazarda çok kalabalık var."}},
+
+  {"id": "v-xali", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["home"],
+   "el": "το χαλί", "lemma": "χαλί", "pos": "noun", "gender": "n", "en": "rug, carpet", "tr": "halı",
+   "example": {"el": "Το χαλί είναι κόκκινο.", "en": "The rug is red.", "tr": "Halı kırmızı."}},
+
+  {"id": "v-tavani", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["home"],
+   "el": "το ταβάνι", "lemma": "ταβάνι", "pos": "noun", "gender": "n", "en": "ceiling", "tr": "tavan",
+   "example": {"el": "Το ταβάνι είναι ψηλό.", "en": "The ceiling is high.", "tr": "Tavan yüksek."}},
+
+  {"id": "v-balkoni", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["home"],
+   "el": "το μπαλκόνι", "lemma": "μπαλκόνι", "pos": "noun", "gender": "n", "en": "balcony", "tr": "balkon",
+   "example": {"el": "Πίνουμε καφέ στο μπαλκόνι.", "en": "We drink coffee on the balcony.", "tr": "Balkonda kahve içiyoruz."}},
+
+  {"id": "v-tzami", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["home"],
+   "el": "το τζάμι", "lemma": "τζάμι", "pos": "noun", "gender": "n", "en": "window pane, glass", "tr": "cam",
+   "example": {"el": "Το τζάμι είναι σπασμένο.", "en": "The window pane is broken.", "tr": "Cam kırık."}},
+
+  {"id": "v-sokaki", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["neighbourhood"],
+   "el": "το σοκάκι", "lemma": "σοκάκι", "pos": "noun", "gender": "n", "en": "alley, side street", "tr": "sokak",
+   "example": {"el": "Μένω σε ένα ήσυχο σοκάκι.", "en": "I live in a quiet side street.", "tr": "Sessiz bir sokakta oturuyorum."}},
+
+  {"id": "v-kefi", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["feelings"],
+   "el": "το κέφι", "lemma": "κέφι", "pos": "noun", "gender": "n", "en": "good mood, high spirits", "tr": "keyif",
+   "example": {"el": "Σήμερα έχω κέφι.", "en": "I'm in a good mood today.", "tr": "Bugün keyfim yerinde."}},
+
+  {"id": "v-belas", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["feelings"],
+   "el": "ο μπελάς", "lemma": "μπελάς", "pos": "noun", "gender": "m", "en": "trouble, hassle", "tr": "bela",
+   "example": {"el": "Δεν θέλω μπελάδες.", "en": "I don't want any trouble.", "tr": "Bela istemiyorum."}},
+
+  {"id": "v-kavgas", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["neighbourhood", "feelings"],
+   "el": "ο καβγάς", "lemma": "καβγάς", "pos": "noun", "gender": "m", "en": "quarrel, fight", "tr": "kavga",
+   "example": {"el": "Οι γείτονες κάνουν καβγά.", "en": "The neighbours are having a fight.", "tr": "Komşular kavga ediyor."}},
+
+  {"id": "v-giaourti", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["food"],
+   "el": "το γιαούρτι", "lemma": "γιαούρτι", "pos": "noun", "gender": "n", "en": "yoghurt", "tr": "yoğurt",
+   "example": {"el": "Τρώω γιαούρτι με μέλι.", "en": "I eat yoghurt with honey.", "tr": "Ballı yoğurt yiyorum."}},
+
+  {"id": "v-kimas", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["food", "shopping"],
+   "el": "ο κιμάς", "lemma": "κιμάς", "pos": "noun", "gender": "m", "en": "minced meat, mince", "tr": "kıyma",
+   "example": {"el": "Ο κιμάς είναι φρέσκος.", "en": "The mince is fresh.", "tr": "Kıyma taze."}},
+
+  {"id": "v-keftes", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["food"],
+   "el": "ο κεφτές", "lemma": "κεφτές", "pos": "noun", "gender": "m", "en": "meatball", "tr": "köfte",
+   "example": {"el": "Η γιαγιά κάνει κεφτέδες.", "en": "Grandma is making meatballs.", "tr": "Büyükannem köfte yapıyor."}},
+
+  {"id": "v-mezes", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["food", "cafe"],
+   "el": "ο μεζές", "lemma": "μεζές", "pos": "noun", "gender": "m", "en": "meze, small dish", "tr": "meze",
+   "example": {"el": "Παραγγέλνουμε δύο μεζέδες.", "en": "We order two mezes.", "tr": "İki meze sipariş ediyoruz."}},
+
+  {"id": "v-xalvas", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["food"],
+   "el": "ο χαλβάς", "lemma": "χαλβάς", "pos": "noun", "gender": "m", "en": "halva", "tr": "helva",
+   "example": {"el": "Ο χαλβάς είναι γλυκός.", "en": "Halva is sweet.", "tr": "Helva tatlı."}},
+
+  {"id": "v-ntomata", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["food", "shopping"],
+   "el": "η ντομάτα", "lemma": "ντομάτα", "pos": "noun", "gender": "f", "en": "tomato", "tr": "domates",
+   "example": {"el": "Θέλω ένα κιλό ντομάτες.", "en": "I'd like a kilo of tomatoes.", "tr": "Bir kilo domates istiyorum."}},
+
+  {"id": "v-bogia", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["home"],
+   "el": "η μπογιά", "lemma": "μπογιά", "pos": "noun", "gender": "f", "en": "paint", "tr": "boya",
+   "example": {"el": "Η μπογιά στον τοίχο είναι καινούργια.", "en": "The paint on the wall is new.", "tr": "Duvardaki boya yeni."}},
+
+  {"id": "v-tsepi", "type": "vocab", "skill": "vocab", "level": "A1", "topics": ["everyday"],
+   "el": "η τσέπη", "lemma": "τσέπη", "pos": "noun", "gender": "f", "en": "pocket", "tr": "cep",
+   "example": {"el": "Το κλειδί είναι στην τσέπη μου.", "en": "The key is in my pocket.", "tr": "Anahtar cebimde."}}
+]

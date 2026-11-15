@@ -1,0 +1,44 @@
+[
+  {"id": "q-kimas-where", "type": "mcq", "skill": "vocab", "level": "A1", "topics": ["shopping"],
+   "rubric": {"el": "Διαλέξτε τη σωστή απάντηση.", "en": "Choose the correct answer.", "tr": "Doğru cevabı seçin."},
+   "prompt": {"el": "Πού αγοράζουμε κιμά;", "en": "Where do we buy mince?", "tr": "Kıymayı nereden alırız?"},
+   "options": ["Από το ταβάνι.", "Από τον χασάπη.", "Από το φλιτζάνι."],
+   "answer": 1,
+   "explain": {"en": "ο χασάπης is the butcher (kasap): he sells meat and mince.", "tr": "ο χασάπης kasap demek: et ve kıyma satar."}},
+
+  {"id": "q-flitzani-drink", "type": "mcq", "skill": "vocab", "level": "A1", "topics": ["cafe"],
+   "rubric": {"el": "Διαλέξτε τη σωστή απάντηση.", "en": "Choose the correct answer.", "tr": "Doğru cevabı seçin."},
+   "prompt": {"el": "Τι πίνουμε από το φλιτζάνι;", "en": "What do we drink from the cup?", "tr": "Fincandan ne içeriz?"},
+   "options": ["Χαλί.", "Κεφτέδες.", "Καφέ."],
+   "answer": 2,
+   "explain": {"en": "After πίνουμε (we drink), καφές becomes καφέ: Πίνουμε καφέ.", "tr": "πίνουμε (içeriz) fiilinden sonra καφές, καφέ olur: Πίνουμε καφέ."}},
+
+  {"id": "q-xali-where", "type": "mcq", "skill": "vocab", "level": "A1", "topics": ["home"],
+   "rubric": {"el": "Διαλέξτε τη σωστή απάντηση.", "en": "Choose the correct answer.", "tr": "Doğru cevabı seçin."},
+   "prompt": {"el": "Πού είναι το χαλί;", "en": "Where is the rug?", "tr": "Halı nerede?"},
+   "options": ["Στο πάτωμα.", "Στο ταβάνι.", "Στο ταψί."],
+   "answer": 0,
+   "explain": {"en": "το πάτωμα is the floor. A rug lies on the floor, not on the ceiling (ταβάνι).", "tr": "το πάτωμα yer, zemin demek. Halı yerde durur, tavanda (ταβάνι) değil."}},
+
+  {"id": "r-bakaliko-notice", "type": "true_false", "skill": "reading", "exam_task": "a2ltr.reading.notices_tf", "level": "A1",
+   "topics": ["neighbourhood", "shopping"],
+   "rubric": {"el": "Σημειώστε ΣΩΣΤΟ ή ΛΑΘΟΣ.", "en": "Mark TRUE or FALSE.", "tr": "DOĞRU veya YANLIŞ işaretleyin."},
+   "stimulus": {"text": "Μπακάλικο «Ο Γιώργος»\nΔευτέρα – Σάββατο: 7:00 – 21:00\nΚυριακή: κλειστό\nΈχουμε φρέσκο γιαούρτι κάθε μέρα!"},
+   "statements": [
+     {"el": "Το μπακάλικο είναι ανοιχτό την Κυριακή.", "en": "The grocery shop is open on Sunday.", "tr": "Bakkal pazar günü açık.", "answer": false},
+     {"el": "Το μπακάλικο ανοίγει στις 7:00.", "en": "The shop opens at 7:00.", "tr": "Bakkal saat 7:00'de açılıyor.", "answer": true},
+     {"el": "Το γιαούρτι είναι φρέσκο.", "en": "The yoghurt is fresh.", "tr": "Yoğurt taze.", "answer": true}
+   ],
+   "explain": {"en": "το μπακάλικο is the grocer's shop; ο μπακάλης is the grocer. Κυριακή = Sunday, κλειστό = closed.", "tr": "το μπακάλικο bakkal dükkânı, ο μπακάλης bakkalın kendisi. Κυριακή = pazar günü, κλειστό = kapalı."}},
+
+  {"id": "r-taverna-menu", "type": "true_false", "skill": "reading", "exam_task": "a2ltr.reading.notices_tf", "level": "A1",
+   "topics": ["food", "cafe"],
+   "rubric": {"el": "Σημειώστε ΣΩΣΤΟ ή ΛΑΘΟΣ.", "en": "Mark TRUE or FALSE.", "tr": "DOĞRU veya YANLIŞ işaretleyin."},
+   "stimulus": {"text": "Ταβέρνα «Το Σοκάκι»\nΚεφτέδες: 7 €\nΜεζέδες: από 4 €\nΧαλβάς: 3 €\nΚαφές ή τσάι: 2 €"},
+   "statements": [
+     {"el": "Οι κεφτέδες κοστίζουν 7 ευρώ.", "en": "The meatballs cost 7 euros.", "tr": "Köftenin fiyatı 7 avro.", "answer": true},
+     {"el": "Ο χαλβάς κοστίζει 7 ευρώ.", "en": "The halva costs 7 euros.", "tr": "Helvanın fiyatı 7 avro.", "answer": false},
+     {"el": "Στην ταβέρνα έχει τσάι.", "en": "The taverna has tea.", "tr": "Tavernada çay var.", "answer": true}
+   ],
+   "explain": {"en": "κοστίζει = it costs, κοστίζουν = they cost. The halva costs 3 €.", "tr": "κοστίζει = fiyatı … (tekil), κοστίζουν = fiyatları … (çoğul). Helva 3 €."}}
+]
