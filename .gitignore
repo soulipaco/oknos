@@ -1,0 +1,16 @@
+# Learner data: progress, attempts, coach notes. Never tracked.
+learner/
+
+# Private content packs: textbook OCR, scans, publisher audio, course handouts.
+content/private/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
