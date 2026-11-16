@@ -1,4 +1,5 @@
-"""Command line: greek-coach start | stop | health | validate | import | schema | shortcut."""
+"""Command line: greek-coach start | stop | health | report | validate | reload | import | raw | schema |
+shortcut | transcribe | run | schedule."""
 
 from __future__ import annotations
 
@@ -254,31 +255,62 @@ def cmd_health(args) -> int:
     return 0 if ok else 1
 
 
+def _is_learner_folder(path: Path) -> bool:
+    return not (path / "pack.json").exists() and any(
+        (path / name).exists() for name in ("profile.json", "generated", "coach", "greek-coach.db"))
+
+
 def cmd_validate(args) -> int:
-    from greek_coach import packs
+    from greek_coach import coachfiles, lint, packs
 
     target = Path(args.path).resolve()
+    learner_files: list[str] | None = None
+    expected: str | None = None
+    if target.is_dir() and _is_learner_folder(target):
+        learner_files = coachfiles.validate_learner(target)
+        target = target / "generated"
+        expected = "generated"
+    else:
+        for visibility, root in paths.content_roots():
+            if root.resolve() in target.parents or root.resolve() == target:
+                expected = visibility
     if (target / "pack.json").exists():
         pack_dirs = [target]
     elif target.is_dir():
         pack_dirs = sorted(p for p in target.iterdir() if (p / "pack.json").exists())
     else:
         pack_dirs = []
-    if not pack_dirs:
+    if not pack_dirs and learner_files is None:
         print(f"No pack found at {target} (a pack is a folder with a pack.json).")
         return 1
-    expected = None
-    for visibility, root in paths.content_roots():
-        if root.resolve() in target.parents or root.resolve() == target:
-            expected = visibility
     bad = False
+    known = None
     for pack_dir in pack_dirs:
         pack, problems, later = packs.load_pack(pack_dir, expected)
+        greek_problems, notes = lint.lint_pack(pack_dir)
+        problems = problems + greek_problems
         if pack:
             print(f"{pack.id}: {len(pack.items)} item(s) loaded" + (f", {later} of a type built in a later phase" if later else ""))
+            if pack.manifest.visibility == "generated" and not args.quick:
+                if known is None:
+                    known = lint.known_words(packs.load_all(), exclude_pack=pack.id)
+                unfamiliar = lint.unfamiliar_words(pack, known)
+                if unfamiliar:
+                    notes.append("words no other content uses (check spelling and level): "
+                                 + ", ".join(unfamiliar[:40])
+                                 + (f" and {len(unfamiliar) - 40} more" if len(unfamiliar) > 40 else ""))
         for problem in problems:
             print(f"  problem: {problem}")
+        for note in notes[: args.notes]:
+            print(f"  note: {note}")
+        if len(notes) > args.notes:
+            print(f"  ({len(notes) - args.notes} more notes; use --notes {len(notes)} to see them)")
         bad = bad or bool(problems) or pack is None
+    if learner_files is not None:
+        print("coach files: " + ("all valid" if not learner_files else f"{len(learner_files)} problem(s)"))
+        for problem in learner_files:
+            print(f"  problem: {problem}")
+        bad = bad or bool(learner_files)
     print("Some problems need fixing." if bad else "Everything is valid.")
     return 1 if bad else 0
 
@@ -316,6 +348,137 @@ def cmd_import(args) -> int:
         print(f"The pack loads cleanly: {len(pack.items) if pack else 0} items.")
     print(f"Read {out / 'IMPORT_REPORT.md'} for the details. If the app is running, it picks this up on the next restart or content reload.")
     return 0 if not problems else 2
+
+
+def cmd_report(args) -> int:
+    from greek_coach import packs, report
+
+    try:
+        days = report.parse_days(args.since)
+    except ValueError as e:
+        print(f"--since: {e}", file=sys.stderr)
+        return 2
+    paths.ensure_learner_dir()
+    conn = db.open_db()
+    try:
+        catalog = packs.load_all()
+        packs.sync_items(conn, catalog)
+        data = report.build(conn, catalog, days=days, with_words=args.words)
+    finally:
+        conn.close()
+    port = running_port()
+    data["app_url"] = _url(port) if port else None
+    print(json.dumps(data, ensure_ascii=False, indent=1 if args.pretty else None))
+    return 0
+
+
+def cmd_raw(args) -> int:
+    root = paths.CONTENT_DIR / "private" / args.pack
+    raw_file = root / "raw" / "exercises.json"
+    if not raw_file.is_file():
+        print(f"There is no raw/exercises.json in content/private/{args.pack}.")
+        return 1
+    entries = json.loads(raw_file.read_text(encoding="utf-8"))
+    units = json.loads((root / "units.json").read_text(encoding="utf-8")) if (root / "units.json").is_file() else []
+    if args.list_units:
+        counts: dict = {}
+        for e in entries:
+            counts[e.get("unit")] = counts.get(e.get("unit"), 0) + 1
+        out = [{"unit": u.get("id"), "title": u.get("title"), "theme": u.get("theme"),
+                "raw_entries": counts.get(u.get("id"), 0)} for u in units]
+        out.append({"unit": None, "raw_entries": counts.get(None, 0), "note": "not linked to a lesson (extras, answer keys)"})
+        print(json.dumps(out, ensure_ascii=False, indent=1))
+        return 0
+    lo = hi = None
+    if args.pages:
+        a, _, b = args.pages.partition("-")
+        lo, hi = int(a), int(b or a)
+    picked = []
+    for e in entries:
+        if args.unit and e.get("unit") != args.unit:
+            continue
+        if args.kind and e.get("kind") != args.kind:
+            continue
+        if lo is not None and not (lo <= (e.get("page") or -1) <= hi):
+            continue
+        if args.search and args.search.lower() not in (e.get("text") or "").lower():
+            continue
+        picked.append({k: e.get(k) for k in ("id", "unit", "page", "doc", "marker", "kind", "instruction", "text", "flags")})
+    unit = next((u for u in units if u.get("id") == args.unit), None)
+    print(json.dumps({"unit": unit, "count": len(picked), "shown": min(len(picked), args.limit),
+                      "entries": picked[: args.limit]}, ensure_ascii=False, indent=1))
+    return 0
+
+
+def cmd_transcribe(args) -> int:
+    from greek_coach import transcribe
+
+    conn = db.open_db()
+    try:
+        ids = [int(x) for x in args.ids.split(",")] if args.ids else None
+        done = transcribe.transcribe(conn, args.model, ids, allow_download=args.download)
+    except transcribe.MissingDependency as e:
+        print(str(e))
+        return 1
+    finally:
+        conn.close()
+    if not done:
+        print("No recordings are waiting for a transcript.")
+    for d in done:
+        print(f"submission {d['submission_id']}: {d['text'] or '(nothing heard)'}")
+    return 0
+
+
+def cmd_reload(args) -> int:
+    """Tell the running app to load new content and coach files (the coach runs this after writing)."""
+    port = running_port()
+    if not port:
+        print("Greek Coach is not running. It loads the new content by itself the next time it starts.")
+        return 0
+    req = urllib.request.Request(f"{_url(port)}api/reload", data=b"{}", method="POST",
+                                 headers={"Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            info = json.loads(resp.read().decode("utf-8"))
+    except Exception as e:
+        print(f"The app did not answer the reload: {e}", file=sys.stderr)
+        return 1
+    print(f"Reloaded: {info['packs']} packs, {info['items']} items. The app is at {_url(port)}")
+    for problem in info.get("problems", []):
+        print(f"  content note: {problem}")
+    return 0
+
+
+def cmd_run(args) -> int:
+    from greek_coach import scheduling
+
+    ok, detail = scheduling.run(args.skill, args.agent)
+    print(f"{args.skill}: {'ok' if ok else 'failed'} ({detail})")
+    return 0 if ok else 1
+
+
+def cmd_schedule(args) -> int:
+    from greek_coach import scheduling
+
+    try:
+        if args.action == "add":
+            if not args.skill:
+                print("Say which skill to schedule: daily-prep or watch.")
+                return 2
+            every = args.every or ("week" if args.skill == "watch" else "day")
+            print(scheduling.add(args.skill, every, args.at, args.day, args.agent))
+        elif args.action == "remove":
+            if not args.skill:
+                print("Say which skill to unschedule: daily-prep or watch.")
+                return 2
+            print(scheduling.remove(args.skill))
+        else:
+            for line in scheduling.describe():
+                print(line)
+    except (ValueError, RuntimeError, OSError) as e:
+        print(f"Could not change the schedule: {e}", file=sys.stderr)
+        return 1
+    return 0
 
 
 def cmd_schema(args) -> int:
@@ -362,9 +525,50 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--json", action="store_true", help="print the result as JSON")
     p.set_defaults(func=cmd_health)
 
-    p = sub.add_parser("validate", help="check a content pack and explain any problems")
-    p.add_argument("path")
+    p = sub.add_parser("validate", help="check a content pack (or a learner folder) and explain any problems")
+    p.add_argument("path", help="a pack folder, a folder of packs, or a learner folder (checks the coach files too)")
+    p.add_argument("--notes", type=int, default=15, help="how many notes to print per pack (default 15)")
+    p.add_argument("--quick", action="store_true", help="skip the unfamiliar-words check")
     p.set_defaults(func=cmd_validate)
+
+    p = sub.add_parser("report", help="print the learner's progress as JSON, for the coach")
+    p.add_argument("--since", default="14d", help="the window, e.g. 14d or 3w (default 14d)")
+    p.add_argument("--words", action="store_true", help="also list every word the learner has met")
+    p.add_argument("--pretty", action="store_true", help="indent the JSON")
+    p.set_defaults(func=cmd_report)
+
+    p = sub.add_parser("raw", help="show raw imported exercises of a private pack, for rebuilding")
+    p.add_argument("pack", help="the private pack id, e.g. greek-helper")
+    p.add_argument("--unit", default=None, help="a unit id from units.json, e.g. lesson-05")
+    p.add_argument("--kind", default=None, help="exercise, answer_key, test, revision or listening_test")
+    p.add_argument("--pages", default=None, help="a page or page range, e.g. 66-70")
+    p.add_argument("--search", default=None, help="only entries whose text contains this")
+    p.add_argument("--limit", type=int, default=60)
+    p.add_argument("--list-units", action="store_true", help="list the units and how many raw entries each has")
+    p.set_defaults(func=cmd_raw)
+
+    p = sub.add_parser("transcribe", help="transcribe speaking recordings locally (run as: uv run --group speech ...)")
+    p.add_argument("--model", default="small", help="faster-whisper model size (default small)")
+    p.add_argument("--ids", default=None, help="only these submission ids, comma-separated (re-transcribes them)")
+    p.add_argument("--download", action="store_true", help="allow downloading the model (ask the learner first)")
+    p.set_defaults(func=cmd_transcribe)
+
+    p = sub.add_parser("reload", help="make the running app load new content and coach files")
+    p.set_defaults(func=cmd_reload)
+
+    p = sub.add_parser("run", help="run a coach skill headless with the learner's agent, and log the outcome")
+    p.add_argument("skill", choices=["daily-prep", "watch"])
+    p.add_argument("--agent", choices=["claude", "codex"], default=None)
+    p.set_defaults(func=cmd_run)
+
+    p = sub.add_parser("schedule", help="list, add or remove scheduled coach runs (ask the learner first)")
+    p.add_argument("action", choices=["list", "add", "remove"])
+    p.add_argument("skill", nargs="?", choices=["daily-prep", "watch"])
+    p.add_argument("--every", choices=["day", "week"], default=None)
+    p.add_argument("--at", default="05:00", help="time of day, HH:MM (default 05:00)")
+    p.add_argument("--day", default="SUN", choices=["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"])
+    p.add_argument("--agent", choices=["claude", "codex"], default="claude")
+    p.set_defaults(func=cmd_schedule)
 
     p = sub.add_parser("import", help="import someone's own material as a private content pack")
     p.add_argument("mapping", help="a mapping file, or the name of a built-in one (greek-helper)")

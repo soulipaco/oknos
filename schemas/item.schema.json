@@ -910,6 +910,157 @@
       "title": "McqItem",
       "type": "object"
     },
+    "SpeakItem": {
+      "additionalProperties": false,
+      "description": "A speaking card: record, play back, compare with the model answer. Never scored.",
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "skill": {
+          "enum": [
+            "vocab",
+            "grammar",
+            "history",
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "title": "Skill",
+          "type": "string"
+        },
+        "level": {
+          "enum": [
+            "A1",
+            "A2",
+            "B1"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "exam_task": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exam Task"
+        },
+        "topics": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "rubric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "stimulus": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Stimulus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "explain": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "status": {
+          "default": "ok",
+          "enum": [
+            "ok",
+            "needs_review"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "type": {
+          "const": "speak",
+          "title": "Type",
+          "type": "string"
+        },
+        "prompt": {
+          "$ref": "#/$defs/Text"
+        },
+        "seconds": {
+          "default": 60,
+          "maximum": 600,
+          "minimum": 10,
+          "title": "Seconds",
+          "type": "integer"
+        },
+        "model": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "useful": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Useful",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "skill",
+        "level",
+        "type",
+        "prompt"
+      ],
+      "title": "SpeakItem",
+      "type": "object"
+    },
     "Statement": {
       "additionalProperties": false,
       "properties": {
@@ -1382,6 +1533,156 @@
       ],
       "title": "VocabItem",
       "type": "object"
+    },
+    "WriteItem": {
+      "additionalProperties": false,
+      "description": "A writing prompt in exam format. The app saves the text; the coach marks it (SPEC §4.4).",
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "skill": {
+          "enum": [
+            "vocab",
+            "grammar",
+            "history",
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "title": "Skill",
+          "type": "string"
+        },
+        "level": {
+          "enum": [
+            "A1",
+            "A2",
+            "B1"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "exam_task": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exam Task"
+        },
+        "topics": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "rubric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "stimulus": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Stimulus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "explain": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "status": {
+          "default": "ok",
+          "enum": [
+            "ok",
+            "needs_review"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "type": {
+          "const": "write",
+          "title": "Type",
+          "type": "string"
+        },
+        "prompt": {
+          "$ref": "#/$defs/Text"
+        },
+        "words": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "title": "Words",
+          "type": "array"
+        },
+        "must_include": {
+          "default": [],
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "$ref": "#/$defs/Text"
+              }
+            ]
+          },
+          "title": "Must Include",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "skill",
+        "level",
+        "type",
+        "prompt",
+        "words"
+      ],
+      "title": "WriteItem",
+      "type": "object"
     }
   },
   "discriminator": {
@@ -1391,8 +1692,10 @@
       "gap_bank": "#/$defs/GapBankItem",
       "match": "#/$defs/MatchItem",
       "mcq": "#/$defs/McqItem",
+      "speak": "#/$defs/SpeakItem",
       "true_false": "#/$defs/TrueFalseItem",
-      "vocab": "#/$defs/VocabItem"
+      "vocab": "#/$defs/VocabItem",
+      "write": "#/$defs/WriteItem"
     },
     "propertyName": "type"
   },
@@ -1417,6 +1720,12 @@
     },
     {
       "$ref": "#/$defs/CategoriseItem"
+    },
+    {
+      "$ref": "#/$defs/WriteItem"
+    },
+    {
+      "$ref": "#/$defs/SpeakItem"
     }
   ]
 }

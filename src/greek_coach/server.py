@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import logging
 import mimetypes
+import secrets
 from typing import Any, Literal
 
 from fastapi import FastAPI, HTTPException, Request
@@ -12,9 +13,9 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from greek_coach import db, health, lookup, packs, paths, scheduler, session
+from greek_coach import coachfiles, db, health, lookup, packs, paths, scheduler, session
 from greek_coach.checking import CheckError, check
-from greek_coach.packs import FormItem, VocabItem
+from greek_coach.packs import OPEN_TASKS, FormItem, SpeakItem, VocabItem, WriteItem
 
 log = logging.getLogger("greek_coach.server")
 
@@ -25,6 +26,9 @@ mimetypes.add_type("application/json", ".json")
 
 UI_LANGS = ("en", "tr")
 DEFAULT_MINUTES = 10
+RECORDING_MAX_BYTES = 20_000_000
+RECORDING_TYPES = {"audio/webm": ".webm", "audio/ogg": ".ogg", "audio/mp4": ".m4a", "audio/mpeg": ".mp3",
+                   "audio/wav": ".wav", "audio/x-wav": ".wav"}
 
 
 def read_profile() -> dict:
@@ -87,12 +91,29 @@ class AttemptIn(BaseModel):
     lookups: int = 0
 
 
+def _sync_coach_files() -> None:
+    """Take in what the coach wrote (feedback, flag verdicts). Never fatal."""
+    try:
+        conn = db.open_db()
+        try:
+            coachfiles.sync(conn)
+        finally:
+            conn.close()
+    except Exception:  # a broken coach file must never take the app down
+        log.exception("could not read the coach's files")
+
+
+def _word_count(text: str) -> int:
+    return len([w for w in text.split() if any(c.isalnum() for c in w)])
+
+
 def create_app() -> FastAPI:
     paths.ensure_learner_dir()
     conn = db.open_db()
     catalog = packs.load_all()
     packs.sync_items(conn, catalog)
     conn.close()
+    _sync_coach_files()
 
     app = FastAPI(title="Greek Coach", docs_url=None, redoc_url=None, openapi_url=None)
     app.state.catalog = catalog
@@ -107,6 +128,7 @@ def create_app() -> FastAPI:
             c.close()
         app.state.catalog = fresh
         app.state.lookup = lookup.Index(fresh)
+        _sync_coach_files()
         return fresh
 
     @app.middleware("http")
@@ -123,18 +145,43 @@ def create_app() -> FastAPI:
     def home():
         profile = read_profile()
         lang = _lang(profile)
+        _sync_coach_files()
         conn = db.open_db()
         try:
             stats = session.home_stats(conn, app.state.catalog, lang)
+            coach = coach_block(conn)
         finally:
             conn.close()
         return {
+            "coach": coach,
             "ui_lang": profile.get("ui_lang") if profile.get("ui_lang") in UI_LANGS else None,
             "minutes": _minutes(profile),
             "packs": [{"id": p.id, "title": p.manifest.title.model_dump(), "items": len(p.items)}
                       for p in app.state.catalog.packs],
             "stats": stats,
             "today": db.today().isoformat(),
+        }
+
+    def coach_block(conn) -> dict:
+        today = db.today()
+        ready = conn.execute("SELECT id, kind FROM submissions WHERE status='marked' AND feedback_seen_at IS NULL "
+                             "ORDER BY id DESC").fetchall()
+        waiting = conn.execute("SELECT COUNT(*) FROM submissions WHERE status='new'").fetchone()[0]
+        total = conn.execute("SELECT COUNT(*) FROM submissions").fetchone()[0]
+        try:
+            problems = coachfiles.run_problems()
+            dates = coachfiles.next_dates(today)
+            message = coachfiles.message_for_home(today)
+        except Exception:
+            log.exception("coach files")
+            problems, dates, message = [], None, None
+        return {
+            "message": message,
+            "dates": dates,
+            "feedback_ready": [{"id": r["id"], "kind": r["kind"]} for r in ready],
+            "submissions_waiting": waiting,
+            "submissions_total": total,
+            "run_problems": problems,
         }
 
     @app.post("/api/profile")
@@ -154,6 +201,8 @@ def create_app() -> FastAPI:
         profile = read_profile()
         lang = body.ui_lang or _lang(profile)
         minutes = _minutes(profile) if body.kind == "daily" else 5
+        if body.kind == "daily":
+            minutes = coachfiles.restart_minutes(db.today()) or minutes  # the coach asked for a small restart
         conn = db.open_db()
         try:
             if body.kind == "practice":
@@ -176,6 +225,11 @@ def create_app() -> FastAPI:
         except CheckError as e:
             raise HTTPException(422, str(e))
         record = {"card": {k: v for k, v in body.card.items() if k != "item_key"}, "response": body.response}
+        recording = None
+        if isinstance(item, SpeakItem) and body.response.get("recording"):
+            recording = _recording_file(body.response["recording"])
+            if recording is None:
+                raise HTTPException(422, "that recording was not uploaded")
         expected = session.DEFAULT_SECONDS[session.card_class(item)]
         quick = body.latency_ms is not None and body.latency_ms < expected * 1000 * 0.5
         conn = db.open_db()
@@ -195,7 +249,7 @@ def create_app() -> FastAPI:
                         db.now(),
                         json.dumps(record, ensure_ascii=False),
                         result.score,
-                        int(result.correct),
+                        None if result.correct is None else int(result.correct),
                         body.latency_ms,
                         max(0, body.lookups),
                         body.audio_plays,
@@ -206,13 +260,19 @@ def create_app() -> FastAPI:
                     "UPDATE sessions SET items_done=(SELECT COUNT(*) FROM attempts WHERE session_id=?) WHERE id=?",
                     (body.session_id, body.session_id),
                 )
-                state = scheduler.record(conn, body.item_key, item.type, result.correct, result.score,
-                                         lookups=max(0, body.lookups), accent_note=bool(result.accent_note),
-                                         quick=quick)
+                state = None
+                submission_id = None
+                if isinstance(item, OPEN_TASKS):
+                    submission_id = _save_submission(conn, item, body, cur.lastrowid, recording)
+                else:
+                    state = scheduler.record(conn, body.item_key, item.type, result.correct, result.score,
+                                             lookups=max(0, body.lookups), accent_note=bool(result.accent_note),
+                                             quick=quick)
         finally:
             conn.close()
         out: dict[str, Any] = {
             "attempt_id": cur.lastrowid,
+            "submission_id": submission_id,
             "score": result.score,
             "correct": result.correct,
             "answer": result.answer,
@@ -225,6 +285,105 @@ def create_app() -> FastAPI:
             out["example"] = item.example.model_dump()
         if isinstance(item, FormItem) and item.translation:
             out["translation"] = item.translation.model_dump()
+        return out
+
+    def _recording_file(name: str):
+        base = coachfiles.recordings_dir().resolve()
+        target = (paths.learner_dir() / name).resolve()
+        if base in target.parents and target.is_file():
+            return target
+        return None
+
+    def _save_submission(conn, item, body: AttemptIn, attempt_id: int, recording) -> int | None:
+        if body.response.get("skipped"):
+            return None
+        if isinstance(item, WriteItem):
+            text = body.response["text"].strip()
+            cur = conn.execute(
+                "INSERT INTO submissions(item_key, session_id, attempt_id, ts, kind, text, word_count) "
+                "VALUES (?, ?, ?, ?, 'writing', ?, ?)",
+                (body.item_key, body.session_id, attempt_id, db.now(), text, _word_count(text)))
+            return cur.lastrowid
+        if recording is None:
+            return None  # spoke aloud without recording: counted as done, nothing to mark
+        cur = conn.execute(
+            "INSERT INTO submissions(item_key, session_id, attempt_id, ts, kind) VALUES (?, ?, ?, ?, 'speaking')",
+            (body.item_key, body.session_id, attempt_id, db.now()))
+        sid = cur.lastrowid
+        final = recording.with_name(f"{sid}{recording.suffix}")
+        recording.replace(final)
+        conn.execute("UPDATE submissions SET recording_path=? WHERE id=?",
+                     (final.relative_to(paths.learner_dir()).as_posix(), sid))
+        return sid
+
+    @app.post("/api/recording")
+    async def upload_recording(request: Request):
+        """A speaking recording, sent as the raw request body (no form encoding)."""
+        kind = (request.headers.get("content-type") or "").split(";")[0].strip().lower()
+        ext = RECORDING_TYPES.get(kind)
+        if ext is None:
+            raise HTTPException(415, f"unsupported audio type {kind!r}")
+        data = await request.body()
+        if not data:
+            raise HTTPException(422, "the recording is empty")
+        if len(data) > RECORDING_MAX_BYTES:
+            raise HTTPException(413, "the recording is too long")
+        folder = coachfiles.recordings_dir()
+        folder.mkdir(parents=True, exist_ok=True)
+        name = f"upload-{db.today().isoformat()}-{secrets.token_hex(4)}{ext}"
+        (folder / name).write_bytes(data)
+        return {"recording": f"recordings/{name}"}
+
+    @app.api_route("/recordings/{name}", methods=["GET", "HEAD"])
+    def get_recording(name: str):
+        target = _recording_file(f"recordings/{name}")
+        if target is None:
+            raise HTTPException(404, "no such recording")
+        return FileResponse(target)
+
+    def _submission_json(r, full: bool) -> dict:
+        entry = app.state.catalog.items.get(r["item_key"])
+        item = entry[1] if entry else None
+        out = {"id": r["id"], "kind": r["kind"], "ts": r["ts"], "item_key": r["item_key"], "status": r["status"],
+               "word_count": r["word_count"], "seen": bool(r["feedback_seen_at"]),
+               "prompt": item.prompt.model_dump() if isinstance(item, (WriteItem, SpeakItem)) else None}
+        if full:
+            out["text"] = r["text"]
+            out["recording"] = f"/{r['recording_path']}" if r["recording_path"] else None
+            if isinstance(item, WriteItem):
+                out["words"] = item.words
+            if isinstance(item, SpeakItem) and item.model:
+                out["model"] = item.model.model_dump()
+            fb = coachfiles.feedback(r["id"])
+            out["feedback"] = fb.model_dump() if fb else None
+            tr = coachfiles.transcript(r["id"])
+            out["transcript"] = tr.get("text") if tr else None
+        return out
+
+    @app.get("/api/submissions")
+    def list_submissions():
+        _sync_coach_files()
+        conn = db.open_db()
+        try:
+            rows = conn.execute("SELECT * FROM submissions ORDER BY id DESC LIMIT 100").fetchall()
+        finally:
+            conn.close()
+        return {"submissions": [_submission_json(r, False) for r in rows]}
+
+    @app.get("/api/submissions/{submission_id}")
+    def get_submission(submission_id: int):
+        _sync_coach_files()
+        conn = db.open_db()
+        try:
+            r = conn.execute("SELECT * FROM submissions WHERE id=?", (submission_id,)).fetchone()
+            if r is None:
+                raise HTTPException(404, "no such submission")
+            out = _submission_json(r, True)
+            if out["feedback"] and not r["feedback_seen_at"]:
+                with conn:
+                    conn.execute("UPDATE submissions SET feedback_seen_at=? WHERE id=?", (db.now(), submission_id))
+        finally:
+            conn.close()
         return out
 
     @app.post("/api/session/{session_id}/end")

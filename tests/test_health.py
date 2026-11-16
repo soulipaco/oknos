@@ -7,15 +7,15 @@ def test_health_endpoint(client):
     assert r["ok"] is True
     assert r["greek_roundtrip"] is True
     assert r["greek_sample"] == db.GREEK_SAMPLE
-    assert r["schema_version"] == 2
+    assert r["schema_version"] == 3
     assert r["items"] >= 20
     assert isinstance(r["pid"], int)
 
 
 def test_migrations_are_idempotent(learner):
     conn = db.connect()
-    assert db.migrate(conn) == 2
-    assert db.migrate(conn) == 2
+    assert db.migrate(conn) == 3
+    assert db.migrate(conn) == 3
     tables = {r[0] for r in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")}
     assert {"meta", "items", "sessions", "attempts", "review_state", "lookups", "flags"} <= tables
 

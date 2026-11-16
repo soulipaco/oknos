@@ -61,6 +61,10 @@ def _answer(card, item, right: bool):
             g = sorted(ans)[0]
             ans[g] = next(w for w in item.bank if w != item.answer[g])
         return {"answers": ans}
+    if t == "write":
+        return {"text": "Αγαπητέ κύριε, το ασανσέρ δεν λειτουργεί."} if right else {"skipped": True}
+    if t == "speak":
+        return {"done": True} if right else {"skipped": True}
     raise AssertionError(t)
 
 
@@ -77,9 +81,11 @@ def _day(conn, catalog, day: date, rng: random.Random, wrong_rate: float, minute
             conn.execute(
                 "INSERT INTO attempts(session_id, item_key, ts, response_json, score, correct, latency_ms) "
                 "VALUES (?, ?, ?, '{}', ?, ?, 15000)",
-                (s["session_id"], card["item_key"], db.now(), result.score, int(result.correct)))
-            scheduler.record(conn, card["item_key"], item.type, result.correct, result.score)
-        if not result.correct:
+                (s["session_id"], card["item_key"], db.now(), result.score,
+                 None if result.correct is None else int(result.correct)))
+            if result.correct is not None:
+                scheduler.record(conn, card["item_key"], item.type, result.correct, result.score)
+        if result.correct is False:
             wrong.add(card["item_key"])
     session.end(conn, s["session_id"])
     return s["cards"], wrong

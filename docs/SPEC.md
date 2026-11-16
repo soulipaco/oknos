@@ -376,11 +376,14 @@ learner/
     plan.json             week-by-week plan (phase 5)
     watch.json            exam and course dates found by the watch skill {checked_at, entries:[{what, date, registration, source_url, changed}]}
     tutor-log/<date>.md   short summary of each tutor chat: new words, recurring errors
+    resolved-flags.json   the coach's ruling on flagged items (fixed / retired / kept); the app applies it
+    schedule.json         written by `greek-coach schedule`: which skills run when, with which agent
     runs.log              one line per scheduled run (time, skill, ok/failed), so a silent failure shows up
   feedback/<submission-id>.json   writing or speaking feedback the app shows next to the original
-  generated/<pack-id>/    coach-written packs
-  inbox/                  learner drops handouts, photos, letters, notes; anything to "capture"
-  recordings/<id>.webm    speaking recordings
+  generated/<pack-id>/    coach-written packs (coach-practice, coach-capture, coach-writing, coach-tutor)
+  inbox/                  learner drops handouts, photos, letters, notes; anything to "capture" (processed: inbox/done/)
+  recordings/<id>.webm    speaking recordings; <id>.json is the local transcript
+  logs/runs/              the output of each scheduled run
   backups/                zip copies made by the backup command
 ```
 
@@ -397,7 +400,7 @@ Copying the folder to another machine must keep working, so the database stores 
 | `review_state` | item_key PK, due_at, interval_days, ease, reps, lapses, last_score | app (scheduler) |
 | `lookups` | id, ts, item_key, word | app |
 | `flags` | id, ts, item_key, reason (`wrong`, `confusing`, `audio`), note, resolved_at, resolution | app; the coach resolves |
-| `submissions` | id, item_key, ts, kind (`writing`, `speaking`), text, recording_path, word_count, status (`new`, `marked`), feedback_path | app; the coach marks |
+| `submissions` | id, item_key, session_id, attempt_id, ts, kind (`writing`, `speaking`), text, recording_path, word_count, status (`new`, `marked`), feedback_path, feedback_seen_at | app; the coach marks by writing `feedback/<id>.json`, and the app sets `marked` when it sees the file |
 | `mock_runs` | id, blueprint, started_at, finished_at, unit_scores_json, status | app (phase 5) |
 
 Migrations are numbered SQL files applied at start-up, so an older database upgrades itself (phase 6 tests this).
@@ -433,6 +436,19 @@ The coach does not parse SQLite by hand. `uv run greek-coach report [--since 14d
 
 This is the stable contract between app and agent. The coach writes only files (packs, feedback, notes, message, plan, profile), never the database.
 
+Phase 4, as built (`src/greek_coach/report.py`, `report_version: 1`):
+- **More fields:**
+  - `recent_wrong`: what was answered against what was right;
+  - `covered`: words by level, verb lemmas and tenses, book units met; with `--words`, every word met;
+  - accuracy per `grammar` tag;
+  - `generated_stock`: unseen coach items per pack;
+  - `inbox`;
+  - `coach`: last check-in, watch age, tutor logs, scheduled runs and problems;
+  - `profile_missing`, `learner_dir` and `app_url`.
+- **Readiness is `null` until phase 5.**
+- **The coach files** (message, watch, feedback, flag resolutions, schedule, profile) are pydantic models in `coachfiles.py`. `greek-coach validate <learner folder>` checks them. The app reads them leniently: a broken file is skipped and logged, never fatal.
+- **Their formats** are documented for agents in `docs/COACHING.md` §7.
+
 ---
 
 ## 6. Coach commands (agent skills)
@@ -462,6 +478,21 @@ The learner never has to know skill names. Plain sentences ("set this up", "coac
 - Scheduled runs use the learner's subscription. A run that fails leaves yesterday's content in place and a line in `runs.log`, which the next check-in reports.
 
 Quality rule for everything the coach generates: validate against the schema, re-read each item for exactly one defensible answer, stay within the learner's level and covered material, and mark anything doubtful as `needs_review` instead of shipping it.
+
+Phase 4, as built:
+- **Profile.** The `profile` row of the table is part of `coach`: on a first run it asks the profile questions.
+- **Speaking feedback** is part of `mark`.
+- **The shared rules** live in `docs/COACHING.md`, which every coach skill reads first:
+  - who the learner is and the tone;
+  - how to read the report and where to write;
+  - the Greek-correctness checklist;
+  - personal data;
+  - the file formats;
+  - the exam writing criteria.
+- **`validate` adds a Greek lint** for every pack:
+  - **problems:** Latin look-alike letters inside Greek words, polytonic characters, non-NFC text, final-sigma errors;
+  - **notes:** missing accents and, for coach packs, words that no other content uses.
+- **Flagged items.** Items flagged `wrong` or `confusing` stay out of sessions until the coach rules on them in `coach/resolved-flags.json`.
 
 ---
 
@@ -643,6 +674,35 @@ Phase 3 additions (2026-11-16):
   - `GET /packs/<id>/audio/<file>` and `GET /audio-cache/<pack>/<item>`, both with path traversal blocked.
 - **JSON Schemas** for agents: `greek-coach schema` writes them to `schemas/`.
 - **`table_fill` waits for phase 5**, as the phase-3 prompt allows.
+
+Phase 4 additions (2026-11-16):
+- **The coach changes things through files.** The app takes them in on start, on `/api/reload` and on `/api/home`:
+  - a feedback file marks a submission as done;
+  - `resolved-flags.json` closes flags.
+
+  `report` stays read-only.
+- **Coach packs.** One long-lived pack per purpose in `learner/generated/` (`coach-practice`, `coach-capture`, `coach-writing`, `coach-tutor`). Each run adds `items/<date>-<what>.json`, with item ids that start with the date.
+- **Rebuilt textbook items** go into the private pack as `items/rebuilt-<unit>.json`. The importer only replaces `vocab-*.json`, so a re-import keeps them.
+- **Writing and speaking in the session.**
+  - Once a week (no submission in 7 days, a budget of at least 10 minutes, not on a day back after a gap), the exam-task slot holds a `write` card, counted as 6 minutes.
+  - On another day it holds a `speak` card, counted as 2 minutes.
+  - Both can be skipped; a skipped card comes back the next day.
+- **Coach items first.** They come first in the verb and task segments as well as in new words, so a check-in shows in the next session.
+- **After 3 or more days away,** the first session back caps reviews at 15 and new words at 3. The coach can also shrink the next sessions with `restart` in `message.json`.
+- **Recordings.** They are uploaded as the raw request body (`POST /api/recording`), so no multipart dependency is needed. They are saved as `recordings/<submission-id>.<ext>` and served from `/recordings/<file>`, with path traversal blocked.
+- **Transcription:** faster-whisper `small` (about 0.5 GB, int8 on CPU), in the optional `speech` group, with the model cached in `.cache/greek-coach/whisper/`. Transcripts go to `recordings/<id>.json`.
+  - The group pins `av>=16,<17`: faster-whisper 1.2 crashes with av 17 and later (`metadata_errors`).
+  - Tested on a 17-second recording made with the offline Greek voice. The transcript kept the learner's errors (`σε το πάρκο`, `Χθες πηγαίνω`) and misheard only a place name.
+- **Scheduled runs:**
+  - `greek-coach run <skill>` runs `claude -p` with a fixed tool allow-list (or `codex exec --full-auto`), writes its output to `learner/logs/runs/`, and always appends to `coach/runs.log`;
+  - `greek-coach schedule add|list|remove` writes the OS entry (Windows `schtasks` with `pythonw`, launchd, cron) and `coach/schedule.json`;
+  - the home screen shows a failed run, or one missing for two periods;
+  - the agent is found on PATH or in its installer's default folder (`~/.local/bin`, the npm folder), because a scheduled task's PATH often lacks them;
+  - **the command-line agent must be signed in.** On the maintainer's machine `claude -p` answered "Not logged in" although the desktop app is signed in. The run records that line, the home screen shows the failure, and the `daily-prep` skill tells the learner how to sign in once.
+- **Exam watch sources** live in `exams/watch-sources.json` until phase 5 writes the blueprints.
+- **Writing criteria:** the ΚΕΓ A2 and B1 holistic writing scales, out of 25 with 15 to pass, were verified on 2026-11-16 and summarised in `docs/COACHING.md` §10. The A2-LTR writing criteria were not found; the coach marks those tasks out of 10 and labels the score unverified.
+- **New commands:** `greek-coach reload`, so the coach can refresh the running app on any OS, and `greek-coach raw`.
+- **Open content:** `open-everyday-a1a2` gained 2 `write` prompts and 2 `speak` cards, so the weekly slot works without a coach.
 
 ## 12. Challenges to the design, and what changed
 

@@ -15,7 +15,7 @@ Everything is optional except the pack name. Use the parts you have.
 | `vocabulary` | JSON lists of words with a Greek field and a meaning (`en` and/or `tr`), optionally part of speech, level, document and page | `vocab` items, deduplicated, with provenance |
 | `pages` | The running text of a book (`.json` or `.jsonl`), with the unit each page belongs to | links each word to the first unit that uses it (`topics: ["unit:<id>"]`), so new words follow the book |
 | `units` | The course outline: one entry per lesson with title, theme, functions, grammar, vocabulary | `units.json` in the pack |
-| `raw` | Exercises, tests and answer keys, usually OCR | `raw/<name>.json`: **source prompts, never shown as exercises.** In phase 4 the coach rebuilds them into checkable items. |
+| `raw` | Exercises, tests and answer keys, usually OCR | `raw/<name>.json`: **source prompts, never shown as exercises.** The coach rebuilds them, one lesson at a time, into checkable items in `items/rebuilt-<unit>.json` (say "turn lesson 5 into exercises"; see `.agents/skills/rebuild-imported/SKILL.md`). `greek-coach raw <pack> --unit <id>` shows them. |
 | `audio` | A folder of audio files, and optionally a file of transcripts | files copied to `audio/`; `raw/audio.json` links each file to its transcript and flags it `needs_review`; missing files are listed |
 
 ## 2. Write a mapping

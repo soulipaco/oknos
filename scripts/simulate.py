@@ -1,11 +1,17 @@
 """Simulate weeks of use with shifted dates, to see the scheduler and the home numbers behave.
 
     uv run python scripts/simulate.py [--days 14] [--skip 9,10,11,12] [--wrong 0.25] [--seed 1]
+    uv run python scripts/simulate.py --days 21 --recent --learner-dir <folder>   # keep a realistic history
 
-Runs in a throwaway learner folder (the real learner/ is never touched), on all the content
-this checkout has, including private packs. Each simulated day builds the daily session,
+Runs in a throwaway learner folder by default (the real learner/ is never touched), on all the
+content this checkout has, including private packs. Each simulated day builds the daily session,
 answers it (right or wrong at random, with a few word lookups), and prints one line.
 At the end it cross-checks the home-screen numbers against a hand count from the database.
+
+With --learner-dir and --recent, the simulated days end yesterday, so the result can be used
+to try the coach on a learner with a few weeks of history: the aorist is made a weak spot
+(--weak-aorist), and two items get flagged. Writing and speaking cards are skipped; submit
+those through the app.
 """
 
 from __future__ import annotations
@@ -29,11 +35,19 @@ def main() -> int:
     ap.add_argument("--days", type=int, default=14)
     ap.add_argument("--skip", default="9,10,11,12", help="day numbers (0-based) with no practice")
     ap.add_argument("--wrong", type=float, default=0.25, help="share of answers given wrongly")
+    ap.add_argument("--weak-aorist", type=float, default=None, help="wrong rate for aorist verb forms (a weak spot)")
     ap.add_argument("--seed", type=int, default=1)
     ap.add_argument("--minutes", type=int, default=10)
+    ap.add_argument("--learner-dir", default=None, help="use (and keep) this learner folder instead of a temporary one")
+    ap.add_argument("--recent", action="store_true", help="end the simulated days yesterday instead of in March 2026")
+    ap.add_argument("--flags", action="store_true", help="flag two items along the way, as a learner would")
     args = ap.parse_args()
-    tmp = tempfile.mkdtemp(prefix="greek-coach-sim-")
-    os.environ["GREEK_COACH_LEARNER_DIR"] = tmp
+    if args.learner_dir:
+        Path(args.learner_dir).mkdir(parents=True, exist_ok=True)
+        os.environ["GREEK_COACH_LEARNER_DIR"] = str(Path(args.learner_dir).resolve())
+    else:
+        os.environ["GREEK_COACH_LEARNER_DIR"] = tempfile.mkdtemp(prefix="greek-coach-sim-")
+    tmp = os.environ["GREEK_COACH_LEARNER_DIR"]
 
     from greek_coach import db, packs, scheduler, session
     from greek_coach.checking import check
@@ -45,11 +59,12 @@ def main() -> int:
     packs.sync_items(conn, catalog)
     rng = random.Random(args.seed)
     skip = {int(x) for x in args.skip.split(",") if x.strip()}
-    start = date(2026, 3, 2)
+    start = date.today() - timedelta(days=args.days) if args.recent else date(2026, 3, 2)
     print(f"learner folder: {tmp}")
     print(f"content: {len(catalog.packs)} packs, {len(catalog.items)} items\n")
     print("day        cards  review verbs task new | wrong  back-from-yesterday | due tomorrow")
     wrong_before: set[str] = set()
+    flag_days = {3: "confusing", 8: "wrong"} if args.flags else {}
     for n in range(args.days):
         day = start + timedelta(days=n)
         if n in skip:
@@ -60,21 +75,36 @@ def main() -> int:
         seg = Counter(c["segment"] for c in s["cards"])
         keys = {c["item_key"] for c in s["cards"]}
         wrong: set[str] = set()
-        for card in s["cards"]:
+        for i, card in enumerate(s["cards"]):
+            db.set_clock(lambda d=day, i=i: datetime(d.year, d.month, d.day, 8, 0) + timedelta(seconds=20 * i))
             item = catalog.items[card["item_key"]][1]
-            right = rng.random() >= args.wrong
-            result = check(item, card, _answer(card, item, right))
+            rate = args.wrong
+            if args.weak_aorist is not None and item.type == "form" and item.cue and item.cue.tense == "aorist":
+                rate = args.weak_aorist
+            right = rng.random() >= rate
+            response = _answer(card, item, right) if item.type not in ("write", "speak") else {"skipped": True}
+            result = check(item, card, response)
             lookups = 1 if rng.random() < 0.05 else 0
             with conn:
                 conn.execute(
                     "INSERT INTO attempts(session_id, item_key, ts, response_json, score, correct, latency_ms, lookups) "
                     "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-                    (s["session_id"], card["item_key"], db.now(), json.dumps({"card": card}, ensure_ascii=False),
-                     result.score, int(result.correct),
+                    (s["session_id"], card["item_key"], db.now(),
+                     json.dumps({"card": card, "response": response}, ensure_ascii=False),
+                     result.score, None if result.correct is None else int(result.correct),
                      rng.randint(6000, 30000), lookups))
-                scheduler.record(conn, card["item_key"], item.type, result.correct, result.score, lookups=lookups)
-            if not result.correct:
+                if result.correct is not None:
+                    scheduler.record(conn, card["item_key"], item.type, result.correct, result.score, lookups=lookups)
+                if lookups and item.type == "vocab":
+                    conn.execute("INSERT INTO lookups(ts, item_key, word, found) VALUES (?, ?, ?, ?)",
+                                 (db.now(), None, item.el.split()[-1], card["item_key"]))
+            if result.correct is False:
                 wrong.add(card["item_key"])
+        if n in flag_days:
+            pick = next((c for c in s["cards"] if c["type"] != "vocab" or flag_days[n] == "confusing"), s["cards"][0])
+            with conn:
+                conn.execute("INSERT INTO flags(ts, item_key, reason, note) VALUES (?, ?, ?, ?)",
+                             (db.now(), pick["item_key"], flag_days[n], "simulated flag"))
         session.end(conn, s["session_id"])
         srs_wrong = {k for k in wrong_before if catalog.items[k][1].type in ("vocab", "form")}
         back = f"{len(srs_wrong & keys)}/{len(srs_wrong)}" if srs_wrong else "-"

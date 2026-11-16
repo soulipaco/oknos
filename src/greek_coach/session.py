@@ -19,12 +19,13 @@ import random
 import sqlite3
 import statistics
 from collections import defaultdict
-from datetime import timedelta
+from datetime import date, timedelta
 from typing import Any
 
-from greek_coach import db, scheduler
+from greek_coach import coachfiles, db, scheduler
 from greek_coach.checking import meaning
 from greek_coach.packs import (
+    OPEN_TASKS,
     SELECTION_TASKS,
     Catalog,
     CategoriseItem,
@@ -33,17 +34,26 @@ from greek_coach.packs import (
     MatchItem,
     McqItem,
     Pack,
+    SpeakItem,
     TrueFalseItem,
     VocabItem,
+    WriteItem,
     servable,
 )
 
-DEFAULT_SECONDS = {"vocab": 20, "form": 30, "task": 90}
+DEFAULT_SECONDS = {"vocab": 20, "form": 30, "task": 90, "write": 360, "speak": 120}
 SECONDS_RANGE = {"vocab": (8, 45), "form": (12, 75), "task": (40, 300)}
 REVIEW_CAP = 25
 NEW_MIN, NEW_MAX = 5, 12
+# After this many days without practice, the first session back is lighter (SPEC §2).
+AWAY_DAYS = 3
+AWAY_REVIEW_CAP, AWAY_NEW = 15, 3
+OPEN_TASK_EVERY_DAYS = 7  # a writing prompt once a week, and a speaking card once a week
+OPEN_TASK_MIN_MINUTES = 10
+SUPPRESSING_FLAGS = ("wrong", "confusing")
 VERB_SLOT = 4
 VERB_SLOT_MAX = 8
+COACH_VERB_SHARE = 3  # unseen coach-written forms per day, even when old forms are due
 OPTIONS_PER_CARD = 4
 EVIDENCE_MIN = 10  # attempts before an area's accuracy is shown
 PACK_RANK = {"generated": 0, "open": 1, "private": 2}
@@ -56,6 +66,10 @@ def card_class(item) -> str:
         return "vocab"
     if isinstance(item, FormItem):
         return "form"
+    if isinstance(item, WriteItem):
+        return "write"
+    if isinstance(item, SpeakItem):
+        return "speak"
     return "task"
 
 
@@ -73,6 +87,9 @@ def seconds_per_card(conn: sqlite3.Connection, catalog: Catalog) -> dict[str, fl
             samples[card_class(entry[1])].append(r["latency_ms"] / 1000)
     out = {}
     for kind, default in DEFAULT_SECONDS.items():
+        if kind not in SECONDS_RANGE:  # writing and speaking: a fixed allowance
+            out[kind] = default
+            continue
         values = samples.get(kind, [])
         lo, hi = SECONDS_RANGE[kind]
         # Feedback reading adds a few seconds on top of answering.
@@ -179,6 +196,15 @@ def task_card(item_key: str, item, rng: random.Random) -> dict:
         card["prompt"] = _text(item.prompt)
         card["categories"] = item.categories
         card["items"] = item.items
+    elif isinstance(item, WriteItem):
+        card["prompt"] = _text(item.prompt)
+        card["words"] = item.words
+        card["must_include"] = [{"en": m} if isinstance(m, str) else m.model_dump() for m in item.must_include]
+    elif isinstance(item, SpeakItem):
+        card["prompt"] = _text(item.prompt)
+        card["seconds"] = item.seconds
+        card["model"] = _text(item.model)
+        card["useful"] = item.useful
     return card
 
 
@@ -202,6 +228,48 @@ def skill_accuracy(conn: sqlite3.Connection, catalog: Catalog, days: int = 30) -
         if entry and isinstance(entry[1], SELECTION_TASKS):
             acc[entry[1].skill].append(r["correct"])
     return {k: (sum(v) / len(v), len(v)) for k, v in acc.items()}
+
+
+def flagged_keys(conn: sqlite3.Connection) -> set[str]:
+    """Items with an open "wrong" or "confusing" flag. They stay out of daily sessions until the
+    coach has looked at them (its verdicts are in coach/resolved-flags.json)."""
+    resolved = coachfiles.resolved_flag_ids()
+    marks = ",".join("?" * len(SUPPRESSING_FLAGS))
+    rows = conn.execute(f"SELECT id, item_key FROM flags WHERE resolved_at IS NULL AND reason IN ({marks})",
+                        SUPPRESSING_FLAGS)
+    return {r["item_key"] for r in rows if r["id"] not in resolved}
+
+
+def days_away(conn: sqlite3.Connection) -> int | None:
+    """Days since the last practice before today: 0 if there was practice today, None if never."""
+    today = db.today().isoformat()
+    if conn.execute("SELECT 1 FROM attempts WHERE substr(ts, 1, 10) = ? LIMIT 1", (today,)).fetchone():
+        return 0
+    last = conn.execute("SELECT MAX(substr(ts, 1, 10)) FROM attempts").fetchone()[0]
+    return (db.today() - date.fromisoformat(last)).days if last else None
+
+
+OPEN_TASK_SKIP_WAIT_DAYS = 3  # a skipped writing or speaking card comes back after this many days
+
+
+def _open_task_due(conn: sqlite3.Connection, kind: str) -> bool:
+    """A writing (or speaking) card is due when none was submitted in the last week and none was
+    offered in the last few days (so skipping it does not take the exam-task slot every day), and
+    no writing or speaking card at all was offered yesterday or today."""
+    today = db.today()
+    since = (today - timedelta(days=OPEN_TASK_EVERY_DAYS - 1)).isoformat()
+    if conn.execute("SELECT 1 FROM submissions WHERE kind=? AND substr(ts, 1, 10) >= ? LIMIT 1",
+                    ("writing" if kind == "write" else "speaking", since)).fetchone():
+        return False
+    offered = lambda types, days: conn.execute(  # noqa: E731
+        f"SELECT 1 FROM attempts a JOIN items i USING(item_key) WHERE i.type IN ({','.join('?' * len(types))}) "
+        "AND substr(a.ts, 1, 10) >= ? LIMIT 1",
+        (*types, (today - timedelta(days=days - 1)).isoformat())).fetchone() is not None
+    return not offered((kind,), OPEN_TASK_SKIP_WAIT_DAYS) and not offered(("write", "speak"), 2)
+
+
+def _gen_first(entry) -> int:
+    return PACK_RANK.get(entry[1].manifest.visibility, 3)
 
 
 def _unit_rank(pack: Pack) -> dict[str, int]:
@@ -237,11 +305,17 @@ def plan(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int,
     today = db.today()
     states = scheduler.all_states(conn)
     last = _last_attempts(conn)
-    items = servable(catalog, ui_lang)
+    flagged = flagged_keys(conn)
+    items = [(k, p, i) for k, p, i in servable(catalog, ui_lang) if k not in flagged]
     by_key = {k: (p, i) for k, p, i in items}
     words = [(k, p, i) for k, p, i in items if isinstance(i, VocabItem)]
-    forms = [(k, p, i) for k, p, i in items if isinstance(i, FormItem)]
+    # Coach-written items come first in every segment, so a check-in shows up in the next session.
+    forms = sorted(((k, p, i) for k, p, i in items if isinstance(i, FormItem)), key=_gen_first)
     tasks = [(k, p, i) for k, p, i in items if isinstance(i, SELECTION_TASKS)]
+    open_tasks = [(k, p, i) for k, p, i in items if isinstance(i, OPEN_TASKS)]
+    away = days_away(conn) if kind == "daily" else None
+    returning = away is not None and away >= AWAY_DAYS
+    review_cap = AWAY_REVIEW_CAP if returning else REVIEW_CAP
     secs = seconds_per_card(conn, catalog)
     budget = max(1, minutes) * 60
     distract = Distractors(words)
@@ -257,9 +331,10 @@ def plan(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int,
 
     def task_key(entry):
         k, _, item = entry
-        tier = 0 if is_due(k) else 1 if k not in last else 2
+        fresh_coach = k not in last and entry[1].manifest.visibility == "generated"
+        tier = 0 if is_due(k) or fresh_coach else 1 if k not in last else 2
         acc = accuracy.get(item.skill, (0.5, 0))[0]
-        return (tier, round(acc, 1), last.get(k, ("", None))[0], rng.random())
+        return (tier, _gen_first(entry), round(acc, 1), last.get(k, ("", None))[0], rng.random())
 
     chosen_tasks = []
     for t in sorted(tasks, key=task_key):
@@ -268,21 +343,37 @@ def plan(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int,
         if any(c[2].skill == t[2].skill for c in chosen_tasks) and len({x[2].skill for x in tasks}) > 1:
             continue  # two different skills when there are two tasks
         chosen_tasks.append(t)
+
+    # Once a week the exam-task slot holds a writing prompt, and on another day a speaking card.
+    open_card = None
+    if kind == "daily" and minutes >= OPEN_TASK_MIN_MINUTES and not returning:
+        for cls, name in ((WriteItem, "write"), (SpeakItem, "speak")):
+            pool = [t for t in open_tasks if isinstance(t[2], cls)]
+            if pool and _open_task_due(conn, name):
+                pool.sort(key=lambda t: (t[0] in last, _gen_first(t), last.get(t[0], ("", None))[0], rng.random()))
+                open_card = pool[0]
+                break
+    if open_card:
+        chosen_tasks = chosen_tasks[1:]
+        budget -= secs[card_class(open_card[2])]
     budget -= len(chosen_tasks) * secs["task"]
 
     # Verbs: due forms, then new ones in pack order, a fixed daily slot.
     due_forms = [k for k in due_keys if isinstance(by_key[k][1], FormItem)]
     new_forms = [k for k, _, _ in forms if k not in states]
-    verb_keys = due_forms[:VERB_SLOT_MAX]
+    # Unseen coach forms get a share of the slot even when old forms are due, so what the check-in
+    # wrote shows up the next day instead of waiting behind the review backlog.
+    coach_new = [k for k in new_forms if by_key[k][0].manifest.visibility == "generated"][:COACH_VERB_SHARE]
+    verb_keys = due_forms[: VERB_SLOT_MAX - len(coach_new)] + coach_new
     n_verbs = max(VERB_SLOT if minutes >= 8 else 2, len(verb_keys)) if forms else 0
-    verb_keys += new_forms[: max(0, n_verbs - len(verb_keys))]
+    verb_keys += [k for k in new_forms if k not in verb_keys][: max(0, n_verbs - len(verb_keys))]
     if extra and not verb_keys:
         verb_keys = [k for k, _, _ in sorted(forms, key=lambda f: states[f[0]].due_at if f[0] in states else "")][:2]
     budget -= len(verb_keys) * secs["form"]
 
     # Reviews: due vocab (and due tasks beyond the task slot), most overdue first, capped.
     review_keys = [k for k in due_keys if isinstance(by_key[k][1], VocabItem)]
-    review_keys = review_keys[: min(REVIEW_CAP, max(0, int(budget // secs["vocab"])))]
+    review_keys = review_keys[: min(review_cap, max(0, int(budget // secs["vocab"])))]
     if extra:  # "5 more minutes": the soonest-due learning cards, ahead of time
         upcoming = sorted((s for k, s in states.items() if k in by_key and isinstance(by_key[k][1], VocabItem)
                            and k not in review_keys), key=lambda s: (s.due_at, s.ease))
@@ -290,10 +381,10 @@ def plan(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int,
     budget -= len(review_keys) * secs["vocab"]
 
     # New words: a few every day, more on a light day.
-    new_cap = NEW_MAX if len(review_keys) < 10 else NEW_MIN
+    new_cap = AWAY_NEW if returning else NEW_MAX if len(review_keys) < 10 else NEW_MIN
     n_new = max(0, min(new_cap, int(budget // secs["vocab"])))
     if kind == "daily" and n_new == 0 and not review_keys:
-        n_new = NEW_MIN
+        n_new = AWAY_NEW if returning else NEW_MIN
     new_keys = [k for k, _, _ in new_word_order([w for w in words if w[0] not in states])][:n_new]
 
     cards: list[dict] = []
@@ -305,6 +396,8 @@ def plan(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int,
         cards.append({**form_card(k, by_key[k][1], states.get(k), rng), "segment": "verbs"})
     for k, _, item in chosen_tasks:
         cards.append({**task_card(k, item, rng), "segment": "task"})
+    if open_card:
+        cards.append({**task_card(open_card[0], open_card[2], rng), "segment": "task"})
     for k in new_keys:
         pack, item = by_key[k]
         cards.append({**vocab_card(k, pack, item, ui_lang, "el_meaning", distract, rng, None), "segment": "new"})
@@ -385,7 +478,7 @@ def practice(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, keys: lis
             card = form_card(k, item, states.get(k), rng)
         else:
             card = task_card(k, item, rng)
-        cards.append({**card, "segment": "task" if card_class(item) == "task" else "review"})
+        cards.append({**card, "segment": "review" if card_class(item) in ("vocab", "form") else "task"})
     with conn:
         cur = conn.execute(
             "INSERT INTO sessions(started_at, kind, planned_minutes, items_planned, plan_json) VALUES (?, 'practice', NULL, ?, ?)",
@@ -426,6 +519,10 @@ def summary(conn: sqlite3.Connection, catalog: Catalog, session_id: int, ui_lang
     ).fetchall()
     by_area: dict[str, dict[str, int]] = {}
     missed: list[dict[str, str]] = []
+    every = attempts
+    # Writing and speaking are marked later by the coach, so they do not count towards accuracy.
+    written = conn.execute("SELECT COUNT(*) FROM submissions WHERE session_id=?", (session_id,)).fetchone()[0]
+    attempts = [a for a in every if a["correct"] is not None]
     for a in attempts:
         entry = catalog.items.get(a["item_key"])
         area = _area(entry[1]) if entry else "other"
@@ -446,7 +543,7 @@ def summary(conn: sqlite3.Connection, catalog: Catalog, session_id: int, ui_lang
                 missed.append(word)
     done = len(attempts)
     right = sum(1 for a in attempts if a["correct"])
-    seconds = sum(min(a["latency_ms"] or 0, 120_000) for a in attempts) / 1000
+    seconds = sum(min(a["latency_ms"] or 0, 600_000 if a["correct"] is None else 120_000) for a in every) / 1000
     tomorrow = (db.today() + timedelta(days=1)).isoformat()
     due_tomorrow = conn.execute("SELECT COUNT(*) FROM review_state WHERE due_at <= ?", (tomorrow,)).fetchone()[0]
     return {
@@ -455,7 +552,8 @@ def summary(conn: sqlite3.Connection, catalog: Catalog, session_id: int, ui_lang
         "done": done,
         "right": right,
         "accuracy": round(right / done, 3) if done else None,
-        "minutes": max(1, round(seconds / 60)) if done else 0,
+        "minutes": max(1, round(seconds / 60)) if every else 0,
+        "written": written,
         "by_area": by_area,
         "missed": missed,
         "due_tomorrow": min(due_tomorrow, REVIEW_CAP),

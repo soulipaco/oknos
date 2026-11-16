@@ -216,14 +216,19 @@ function accentLast(input, table) {
   }
 }
 
-function greekInput(onEnter, label) {
-  const input = h("input", {
-    class: "typed el", lang: "el", type: "text", autocomplete: "off", autocapitalize: "off",
-    spellcheck: "false", "aria-label": label || t("type_answer"),
-  });
+function greekInput(onEnter, label, { multiline = false } = {}) {
+  const input = multiline
+    ? h("textarea", { class: "typed el long", lang: "el", rows: "7", autocomplete: "off", autocapitalize: "sentences",
+        spellcheck: "false", "aria-label": label || t("type_answer") })
+    : h("input", {
+        class: "typed el", lang: "el", type: "text", autocomplete: "off", autocapitalize: "off",
+        spellcheck: "false", "aria-label": label || t("type_answer"),
+      });
+  input.convert = true;
   // Latin letters become Greek as they arrive (keyboard, paste or phone), using the standard
   // Greek layout; ";" before a vowel puts the accent on it, as on a Greek keyboard.
   input.addEventListener("input", () => {
+    if (!input.convert) return;
     const pos = input.selectionStart ?? input.value.length;
     const before = input.value.slice(0, pos);
     const convert = (text) => text
@@ -241,6 +246,7 @@ function greekInput(onEnter, label) {
     }
   });
   input.addEventListener("keydown", (e) => {
+    if (multiline) return;
     if (e.key === "Enter" && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); onEnter(); }
   });
   const key = (label, onclick, cls = "") => h("button", { type: "button", class: `k ${cls}`, tabindex: "-1",
@@ -256,8 +262,10 @@ function greekInput(onEnter, label) {
         if (s > 0) {
           input.value = input.value.slice(0, s - 1) + input.value.slice(input.selectionEnd ?? s);
           input.selectionStart = input.selectionEnd = s - 1;
+          input.dispatchEvent(new Event("input"));
         }
-      }, "wide")));
+      }, "wide"),
+      multiline ? key("↵", () => insertAtCursor(input, "\n"), "wide") : null));
   return { input, board };
 }
 
@@ -289,12 +297,18 @@ function wordmark() {
 
 function areaName(area) {
   if (area === "vocab") return t("area_vocab");
-  if (area.startsWith("verbs.")) return t("area_verbs", { tense: t(`tense_${area.slice(6)}`) });
+  if (area.startsWith("verbs.")) return t("area_verbs", { tense: tenseName(area.slice(6)) });
   if (area.startsWith("skill.")) return t(`skill_${area.slice(6)}`);
   return area;
 }
 
 function pct(x) { return Math.round(x * 100); }
+
+function tenseName(tense) {
+  // Coach-written items may use tenses the UI has no label for; show the name rather than a key.
+  const key = `tense_${tense}`;
+  return key in state.strings ? t(key) : String(tense).replace(/_/g, " ");
+}
 
 function todayLine(stats) {
   const parts = [];
@@ -352,6 +366,48 @@ function standing(stats) {
     stats.lookups_30 ? h("p", { class: "muted small" }, t("lookups_line", { n: stats.lookups_30 })) : null);
 }
 
+function fmtDate(iso) {
+  if (!iso) return "";
+  const d = new Date(`${iso.slice(0, 10)}T12:00:00`);
+  return d.toLocaleDateString(state.lang === "tr" ? "tr-TR" : "en-GB", { day: "numeric", month: "long", year: "numeric" });
+}
+
+function coachPanel(coach) {
+  // What the coach left for the learner: its note, feedback ready, exam dates, and run problems.
+  if (!coach) return null;
+  const blocks = [];
+  for (const p of coach.run_problems || []) {
+    blocks.push(h("p", { class: "warn" }, t(p.problem === "failed" ? "run_failed" : "run_missing",
+      { skill: p.skill, date: fmtDate(p.since) })));
+  }
+  if (coach.message) {
+    const text = coach.message[state.lang] || coach.message.en || coach.message.tr;
+    blocks.push(h("div", { class: "coach-note" },
+      h("p", {}, text), h("p", { class: "muted small" }, t("coach_note_from", { date: fmtDate(coach.message.date) }))));
+  }
+  if (coach.feedback_ready?.length) {
+    const first = coach.feedback_ready[0];
+    blocks.push(h("button", { class: "secondary feedback-ready", type: "button", onclick: () => renderSubmission(first.id) },
+      t(first.kind === "speaking" ? "feedback_ready_speaking" : "feedback_ready_writing")));
+  }
+  for (const e of coach.dates?.entries || []) {
+    const what = (state.lang === "tr" && e.what_tr) || e.what;
+    const reg = e.registration;
+    const today = state.home.today;
+    let line;
+    if (reg?.opens && reg.opens > today) line = t("date_reg_opens", { what, date: fmtDate(reg.opens) });
+    else if (reg?.closes && reg.closes >= today) line = t("date_reg_closes", { what, date: fmtDate(reg.closes) });
+    else line = t("date_next", { what, date: fmtDate(e.date) });
+    blocks.push(h("p", { class: "date-line" }, line));
+  }
+  const links = [h("span", { class: "muted small" }, t("tutor_line"))];
+  if (coach.submissions_total) {
+    links.push(h("button", { class: "link-button small", type: "button", onclick: renderWriting }, t("your_writing")));
+  }
+  blocks.push(h("p", { class: "coach-links" }, ...links));
+  return h("section", { class: "panel coach" }, ...blocks);
+}
+
 async function renderHome() {
   state.session = null;
   state.card = null;
@@ -376,6 +432,7 @@ async function renderHome() {
         onclick: () => startSession(status === "done" ? "extra" : "daily") }, startLabel),
       h("p", { class: "counts muted" }, first ? t("home_first") : todayLine(stats)),
     ),
+    coachPanel(state.home.coach),
     ...(first ? [] : [consistencyGrid(stats), standing(stats)]),
   );
   document.getElementById("start").focus();
@@ -538,7 +595,7 @@ RENDERERS.form = (card) => {
   const cue = card.cue || {};
   const cueLine = h("p", { class: "cue" },
     cue.lemma ? h("span", { class: "el cue-lemma", lang: "el" }, cue.lemma) : null,
-    cue.tense ? h("span", { class: "chip" }, t(`tense_${cue.tense}`)) : null,
+    cue.tense ? h("span", { class: "chip" }, tenseName(cue.tense)) : null,
     cue.person ? h("span", { class: "chip" }, t(`person_${cue.person}`)) : null);
   const parts = card.text.split(/(\{\w+\})/);
   const inputs = {};
@@ -723,12 +780,132 @@ RENDERERS.categorise = (card) => {
     h("div", { class: "cat-list" }, rows), row, h("div", { class: "slot" }));
 };
 
+function countWords(text) {
+  return text.split(/\s+/).filter(w => /[\p{L}\p{N}]/u.test(w)).length;
+}
+
+function openTaskPrompt(card) {
+  const prompt = greekText(card.prompt.el, { tag: "p", cls: "prompt-greek" });
+  return h("div", { class: "question" }, ...translatable(prompt, tr(card.prompt)));
+}
+
+function skipButton() {
+  return h("button", { class: "link-button", type: "button", onclick: () => submit({ skipped: true }, { skipped: true }) },
+    t("skip_today"));
+}
+
+RENDERERS.write = (card) => {
+  const [lo, hi] = card.words;
+  const { input, board } = greekInput(() => {}, t("write_label"), { multiline: true });
+  const counter = h("p", { class: "muted small word-count" }, t("word_count", { n: 0, lo, hi }));
+  const save = h("button", { class: "primary", type: "button", disabled: true,
+    onclick: () => submit({ text: input.value }, { typed: input }) }, t("write_save"));
+  input.addEventListener("input", () => {
+    const n = countWords(input.value);
+    counter.textContent = t("word_count", { n, lo, hi });
+    counter.classList.toggle("ok", n >= lo && n <= hi);
+    save.disabled = n === 0;
+  });
+  const convert = h("input", { type: "checkbox", checked: true, onchange: (e) => { input.convert = e.target.checked; } });
+  const checklist = card.must_include?.length
+    ? h("div", { class: "must" }, h("p", { class: "small" }, t("write_include")),
+        h("ul", {}, card.must_include.map(m => h("li", {}, tr(m) || m.el || ""))))
+    : null;
+  return h("article", { class: "card write" }, rubricLine(card.rubric), openTaskPrompt(card), checklist,
+    h("div", { class: "typed-wrap" }, input), counter, board,
+    h("label", { class: "small muted convert" }, convert, t("write_convert")),
+    h("div", { class: "actions check-row" }, save, skipButton()), h("div", { class: "slot" }));
+};
+
+RENDERERS.speak = (card) => {
+  const note = h("p", { class: "muted small" }, t("speak_hint", { seconds: card.seconds }));
+  const player = h("audio", { controls: true, hidden: true });
+  const recordBtn = h("button", { class: "primary", type: "button" }, `● ${t("speak_record")}`);
+  const useBtn = h("button", { class: "primary", type: "button", hidden: true }, t("speak_use"));
+  const aloud = h("button", { class: "secondary", type: "button", onclick: () => submit({ done: true }, {}) }, t("speak_aloud"));
+  let recorder = null;
+  let chunks = [];
+  let blob = null;
+  let timer = null;
+  const stop = () => { if (recorder && recorder.state === "recording") recorder.stop(); };
+  recordBtn.addEventListener("click", async () => {
+    if (recorder && recorder.state === "recording") return stop();
+    if (!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder) {
+      note.textContent = t("speak_no_mic");
+      return;
+    }
+    let stream;
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    } catch {
+      note.textContent = t("speak_no_mic");
+      return;
+    }
+    const type = ["audio/webm;codecs=opus", "audio/webm", "audio/ogg", "audio/mp4"].find(x => MediaRecorder.isTypeSupported(x));
+    recorder = new MediaRecorder(stream, type ? { mimeType: type } : {});
+    chunks = [];
+    recorder.ondataavailable = (e) => { if (e.data.size) chunks.push(e.data); };
+    recorder.onstop = () => {
+      clearTimeout(timer);
+      stream.getTracks().forEach(tr => tr.stop());
+      blob = new Blob(chunks, { type: (recorder.mimeType || "audio/webm").split(";")[0] });
+      player.src = URL.createObjectURL(blob);
+      player.hidden = false;
+      useBtn.hidden = false;
+      recordBtn.textContent = `● ${t("speak_again")}`;
+      note.textContent = t("speak_listen_back");
+    };
+    recorder.start();
+    recordBtn.textContent = `■ ${t("speak_stop")}`;
+    note.textContent = t("speak_recording");
+    timer = setTimeout(stop, card.seconds * 2000);
+  });
+  useBtn.addEventListener("click", async () => {
+    if (!blob) return;
+    useBtn.disabled = true;
+    try {
+      const res = await fetch("/api/recording", { method: "POST", headers: { "Content-Type": blob.type || "audio/webm" }, body: blob });
+      if (!res.ok) throw new Error(String(res.status));
+      const { recording } = await res.json();
+      submit({ recording }, {});
+    } catch { useBtn.disabled = false; note.textContent = t("error"); }
+  });
+  const useful = card.useful?.length
+    ? h("div", { class: "useful" }, h("p", { class: "small" }, t("speak_useful")),
+        h("ul", {}, card.useful.map(u => h("li", {}, greekText(u, { cls: "el" })))))
+    : null;
+  return h("article", { class: "card speak-card" }, rubricLine(card.rubric), openTaskPrompt(card), useful, note,
+    h("div", { class: "actions" }, recordBtn, useBtn), player,
+    h("div", { class: "actions check-row" }, aloud, skipButton()), h("div", { class: "slot" }));
+};
+
+function openTaskFeedback(card, result, ui) {
+  // Writing and speaking are not marked by the app: the coach marks them later.
+  const parts = [];
+  if (ui.skipped) {
+    parts.push(h("p", {}, t("skipped_line")));
+  } else if (card.type === "write") {
+    parts.push(h("p", { class: "verdict" }, t("write_saved")), h("p", {}, t("write_saved_line")));
+  } else {
+    parts.push(h("p", { class: "verdict" }, t("speak_done")));
+    if (result.submission_id) parts.push(h("p", {}, t("speak_saved_line")));
+    if (card.model?.el) {
+      parts.push(h("p", { class: "small" }, t("speak_model")),
+        h("div", { class: "example" }, speakButton(card.model.el, true),
+          h("div", {}, greekText(card.model.el, { tag: "p", cls: "el" }),
+            tr(card.model) ? h("p", { class: "translation" }, tr(card.model)) : null)));
+    }
+  }
+  return parts;
+}
+
 async function submit(response, ui = {}) {
   const c = state.card;
   if (!c || c.answered) return;
   c.answered = true;
   closePopover();
-  app.querySelectorAll(".option, .tf button, .check-row .primary, input.typed, .keyboard .k").forEach(b => { b.disabled = true; });
+  app.querySelectorAll(".option, .tf button, .check-row button, .typed, .keyboard .k, .speak-card .actions button")
+    .forEach(b => { b.disabled = true; });
   let result;
   try {
     result = await api("/api/attempt", {
@@ -749,6 +926,16 @@ function showFeedback(result, ui) {
   const slot = app.querySelector(".slot");
   const parts = [];
   if (state.card.revealTranscript) state.card.revealTranscript();
+
+  if (card.type === "write" || card.type === "speak") {
+    app.querySelector(".check-row")?.remove();
+    const last = state.session.index >= state.session.cards.length - 1;
+    const next = h("button", { class: "primary", type: "button", id: "next", onclick: nextCard }, last ? t("finish") : t("next"));
+    slot.replaceChildren(h("div", { class: "feedback neutral", role: "status" }, ...openTaskFeedback(card, result, ui)),
+      h("div", { class: "actions" }, next));
+    next.focus();
+    return;
+  }
 
   if (card.type === "vocab" && card.direction === "meaning_el_typed") {
     ui.typed?.classList.add(result.correct ? "right" : "wrong");
@@ -847,8 +1034,11 @@ async function finishSession() {
 
 function renderSummary(sum) {
   const lines = [];
-  if (!sum.done) {
+  if (sum.written) lines.push(h("p", { class: "line" }, t("summary_written")));
+  if (!sum.done && !sum.written) {
     lines.push(h("p", { class: "line" }, t("summary_none")));
+  } else if (!sum.done) {
+    /* only writing or speaking this time */
   } else {
     lines.push(h("p", { class: "line" }, t("summary_line", { done: sum.done, minutes: sum.minutes, pct: Math.round(sum.accuracy * 100) })));
     for (const [area, v] of Object.entries(sum.by_area)) {
@@ -876,11 +1066,100 @@ function renderSummary(sum) {
   done.focus();
 }
 
+// ---------- writing and speaking, with the coach's feedback ----------
+
+function wordDiff(before, after) {
+  // Word-level longest common subsequence: which words of each text the other one lacks.
+  const a = before.split(/(\s+)/).filter(Boolean);
+  const b = after.split(/(\s+)/).filter(Boolean);
+  const key = (w) => w.toLowerCase().replace(/[.,;:!?«»"'()·]/g, "");
+  const n = a.length, m = b.length;
+  const L = Array.from({ length: n + 1 }, () => new Uint16Array(m + 1));
+  for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--) {
+    L[i][j] = key(a[i]) === key(b[j]) ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+  }
+  const keepA = new Set(), keepB = new Set();
+  for (let i = 0, j = 0; i < n && j < m;) {
+    if (key(a[i]) === key(b[j])) { keepA.add(i); keepB.add(j); i++; j++; }
+    else if (L[i + 1][j] >= L[i][j + 1]) i++;
+    else j++;
+  }
+  const render = (tokens, keep, cls) => h("p", { class: "el diff", lang: "el" },
+    tokens.map((tok, i) => /^\s+$/.test(tok) ? tok : keep.has(i) ? tok : h("mark", { class: cls }, tok)));
+  return [render(a, keepA, "del"), render(b, keepB, "ins")];
+}
+
+function topbarBack(onBack) {
+  return h("header", { class: "topbar" }, wordmark(),
+    h("button", { class: "link-button", type: "button", onclick: onBack }, t("back")));
+}
+
+async function renderWriting() {
+  closePopover();
+  let res;
+  try { res = await api("/api/submissions"); } catch { return showError(); }
+  const rows = res.submissions.map(s => h("li", {},
+    h("button", { class: "sub-row", type: "button", onclick: () => renderSubmission(s.id) },
+      h("span", { class: "muted small" }, `${fmtDate(s.ts)} · ${t(s.kind === "speaking" ? "kind_speaking" : "kind_writing")}`),
+      h("span", { class: "el", lang: "el" }, (s.prompt?.el || "").slice(0, 90) + ((s.prompt?.el || "").length > 90 ? "…" : "")),
+      h("span", { class: `badge ${s.status}` }, s.status === "marked" ? t("status_marked") : t("status_waiting")))));
+  app.replaceChildren(topbarBack(renderHome),
+    h("section", { class: "summary writing" }, h("h1", {}, t("your_writing")),
+      rows.length ? h("ul", { class: "sub-list" }, rows) : h("p", { class: "muted" }, t("no_writing"))));
+}
+
+async function renderSubmission(id) {
+  closePopover();
+  let s;
+  try { s = await api(`/api/submissions/${id}`); } catch { return showError(); }
+  const fb = s.feedback;
+  const blocks = [h("h1", {}, t(s.kind === "speaking" ? "kind_speaking" : "kind_writing")),
+    h("p", { class: "muted small" }, fmtDate(s.ts) + (s.word_count ? ` · ${t("words_n", { n: s.word_count })}` : "")),
+    s.prompt?.el ? h("div", { class: "rubric" }, ...translatable(greekText(s.prompt.el, { tag: "p", cls: "el" }), tr(s.prompt))) : null];
+  if (!fb) blocks.push(h("p", { class: "coach-note" }, t("feedback_waiting")));
+  if (fb?.summary) blocks.push(h("div", { class: "coach-note" }, h("p", {}, fb.summary)));
+  if (fb?.score && fb.score.points != null) {
+    const sc = fb.score;
+    blocks.push(h("div", { class: "score" },
+      h("p", { class: "score-line" }, t("score_line", { points: sc.points, out_of: sc.out_of ?? "?", exam: sc.exam === "b1-keg" ? "B1" : sc.exam === "a2ltr" ? "A2" : (sc.exam || "") })),
+      sc.criteria?.length ? h("table", { class: "criteria" }, sc.criteria.map(c => h("tr", {},
+        h("td", {}, c.name), h("td", { class: "num" }, c.points != null ? `${c.points}/${c.out_of ?? "?"}` : ""),
+        h("td", { class: "muted small" }, c.comment || "")))) : null,
+      h("p", { class: "muted small" }, t(sc.unverified ? "score_estimate_unverified" : "score_estimate"))));
+  }
+  if (s.kind === "writing") {
+    if (fb?.corrected) {
+      const [orig, corr] = wordDiff(s.text || "", fb.corrected);
+      blocks.push(h("div", { class: "side-by-side" },
+        h("div", {}, h("h2", {}, t("you_wrote")), orig),
+        h("div", {}, h("h2", {}, t("corrected")), corr, speakButton(fb.corrected, true))));
+    } else {
+      blocks.push(h("h2", {}, t("you_wrote")), h("p", { class: "el diff", lang: "el" }, s.text || ""));
+    }
+  } else {
+    if (s.recording) blocks.push(h("audio", { controls: true, src: s.recording }));
+    const heard = fb?.heard ?? s.transcript;
+    if (heard != null) blocks.push(h("h2", {}, t("heard")), h("p", { class: "el diff", lang: "el" }, heard || "…"));
+    if (fb?.corrected) blocks.push(h("h2", {}, t("better")), h("div", { class: "example" }, speakButton(fb.corrected, true), greekText(fb.corrected, { tag: "p", cls: "el" })));
+    if (s.model?.el) blocks.push(h("h2", {}, t("speak_model")), h("div", { class: "example" }, speakButton(s.model.el, true), greekText(s.model.el, { tag: "p", cls: "el" })));
+  }
+  if (fb?.errors?.length) {
+    blocks.push(h("h2", {}, t("errors_title")), h("ol", { class: "errors" }, fb.errors.map(e => h("li", {},
+      h("p", {}, h("del", { class: "el", lang: "el" }, e.original), " → ", h("strong", { class: "el", lang: "el" }, e.fix)),
+      h("p", { class: "muted" }, e.why)))));
+  }
+  if (fb?.exercises?.length) {
+    blocks.push(h("div", { class: "actions" }, h("button", { class: "secondary", type: "button",
+      onclick: () => startSession("practice", fb.exercises) }, t("practise_these", { n: fb.exercises.length }))));
+  }
+  app.replaceChildren(topbarBack(renderWriting), h("section", { class: "summary writing" }, ...blocks));
+}
+
 // ---------- keyboard shortcuts ----------
 
 document.addEventListener("keydown", (e) => {
   if (!state.card || e.altKey || e.ctrlKey || e.metaKey) return;
-  if (e.target.matches?.("input")) return;
+  if (e.target.matches?.("input, textarea")) return;
   if (!state.card.answered && /^[1-9]$/.test(e.key)) {
     const b = app.querySelector(`.option[data-index="${Number(e.key) - 1}"]`);
     if (b && !b.disabled) { e.preventDefault(); b.click(); }
@@ -900,7 +1179,10 @@ document.addEventListener("keydown", (e) => {
   } catch { /* renderHome reports it */ }
   await loadStrings(lang);
   // ?practice=pack/item,pack/item opens a practice session of those items (used by the coach).
-  const practice = new URLSearchParams(location.search).get("practice");
+  const params = new URLSearchParams(location.search);
+  const practice = params.get("practice");
   if (practice) return startSession("practice", practice.split(",").filter(Boolean));
+  // ?submission=12 opens a piece of writing with its feedback (the coach links to it).
+  if (/^\d+$/.test(params.get("submission") || "")) return renderSubmission(Number(params.get("submission")));
   renderHome();
 })();

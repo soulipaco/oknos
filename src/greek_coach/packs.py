@@ -23,9 +23,9 @@ from greek_coach import db, paths
 log = logging.getLogger("greek_coach.packs")
 
 OPEN_LICENCES = {"CC-BY-SA-4.0", "CC-BY-4.0", "CC0-1.0", "MIT"}
-SUPPORTED_TYPES = {"vocab", "form", "mcq", "true_false", "match", "gap_bank", "categorise"}
+SUPPORTED_TYPES = {"vocab", "form", "mcq", "true_false", "match", "gap_bank", "categorise", "write", "speak"}
 # Types the spec defines that later phases build. Items of these types are skipped quietly.
-LATER_TYPES = {"table_fill", "write", "speak"}
+LATER_TYPES = {"table_fill"}
 GAP_RE = re.compile(r"\{(\w+)\}")
 
 Skill = Literal["vocab", "grammar", "history", "listening", "reading", "writing", "speaking"]
@@ -210,10 +210,46 @@ class CategoriseItem(BaseItem):
         return self
 
 
-ITEM_CLASSES = (VocabItem, FormItem, McqItem, TrueFalseItem, MatchItem, GapBankItem, CategoriseItem)
+class WriteItem(BaseItem):
+    """A writing prompt in exam format. The app saves the text; the coach marks it (SPEC §4.4)."""
+
+    type: Literal["write"]
+    prompt: Text
+    words: list[int] = Field(min_length=2, max_length=2)
+    must_include: list[str | Text] = []
+
+    @model_validator(mode="after")
+    def _shape(self) -> "WriteItem":
+        if not self.prompt.el:
+            raise ValueError("a writing prompt needs the Greek task text in prompt.el")
+        lo, hi = self.words
+        if not 0 < lo <= hi:
+            raise ValueError("words must be [minimum, maximum] with 0 < minimum <= maximum")
+        return self
+
+
+class SpeakItem(BaseItem):
+    """A speaking card: record, play back, compare with the model answer. Never scored."""
+
+    type: Literal["speak"]
+    prompt: Text
+    seconds: int = Field(default=60, ge=10, le=600)
+    model: Text | None = None
+    useful: list[str] = []
+
+    @model_validator(mode="after")
+    def _shape(self) -> "SpeakItem":
+        if not self.prompt.el:
+            raise ValueError("a speaking card needs the Greek task text in prompt.el")
+        return self
+
+
+ITEM_CLASSES = (VocabItem, FormItem, McqItem, TrueFalseItem, MatchItem, GapBankItem, CategoriseItem,
+                WriteItem, SpeakItem)
 SELECTION_TASKS = (McqItem, TrueFalseItem, MatchItem, GapBankItem, CategoriseItem)
+OPEN_TASKS = (WriteItem, SpeakItem)
 Item = Annotated[
-    Union[VocabItem, FormItem, McqItem, TrueFalseItem, MatchItem, GapBankItem, CategoriseItem],
+    Union[VocabItem, FormItem, McqItem, TrueFalseItem, MatchItem, GapBankItem, CategoriseItem, WriteItem, SpeakItem],
     Field(discriminator="type"),
 ]
 _item_adapter: TypeAdapter[Item] = TypeAdapter(Item)

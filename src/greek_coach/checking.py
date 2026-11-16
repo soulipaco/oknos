@@ -18,8 +18,10 @@ from greek_coach.packs import (
     Item,
     MatchItem,
     McqItem,
+    SpeakItem,
     TrueFalseItem,
     VocabItem,
+    WriteItem,
 )
 
 # el_meaning: Greek shown, pick the meaning. meaning_el: meaning shown, pick the Greek.
@@ -33,8 +35,8 @@ class CheckError(ValueError):
 
 @dataclass
 class Result:
-    score: float
-    correct: bool
+    score: float | None  # None for write and speak, which the coach marks later
+    correct: bool | None
     answer: Any  # what the right answer was, for feedback
     parts: list[bool] = field(default_factory=list)
     accent_note: str | None = None
@@ -156,5 +158,23 @@ def check(item: Item, card: dict[str, Any], response: dict[str, Any]) -> Result:
             raise CheckError(f"a gap_bank answer needs an 'answers' object with the gaps {sorted(item.answer)}")
         parts = [isinstance(answers[g], str) and _same(answers[g], item.answer[g]) for g in gap_order(item.answer)]
         return _per_part(parts, item.answer)
+
+    if isinstance(item, WriteItem):
+        if response.get("skipped") is True:
+            return Result(score=None, correct=None, answer=None)
+        text = response.get("text")
+        if not isinstance(text, str) or not text.strip():
+            raise CheckError("a writing answer needs a non-empty 'text' string")
+        if len(text) > 5000:
+            raise CheckError("the text is too long (more than 5000 characters)")
+        return Result(score=None, correct=None, answer=None)
+
+    if isinstance(item, SpeakItem):
+        if response.get("skipped") is True:
+            return Result(score=None, correct=None, answer=None)
+        recording = response.get("recording")
+        if recording is not None and not isinstance(recording, str):
+            raise CheckError("a speaking answer's 'recording' must be the name the upload returned")
+        return Result(score=None, correct=None, answer=None)
 
     raise CheckError(f"items of type {item.type!r} cannot be checked yet")

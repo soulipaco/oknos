@@ -1,0 +1,36 @@
+{
+  "about": "Official pages the watch skill checks for exam dates, registration windows and course intakes (docs/SPEC.md §4.5, §6). Phase 5 moves the exam entries into the blueprints exams/<id>.json; the course entry stays here.",
+  "sources": [
+    {
+      "id": "b1-keg",
+      "kind": "exam",
+      "what": "Ελληνομάθεια B1 (Centre for the Greek Language)",
+      "what_tr": "Ελληνομάθεια B1 (Yunan Dili Merkezi)",
+      "urls": [
+        "https://www.greek-language.gr/certification/",
+        "https://www.greek-language.gr/certification/news/show.html?id=94"
+      ],
+      "look_for": "The next May and October exam dates for B1, and the registration window (opens / closes). The May session is for all levels; the October session is B1 and in Greece only."
+    },
+    {
+      "id": "a2ltr",
+      "kind": "exam",
+      "what": "A2 + history exam for long-term residence (Ministry of Education)",
+      "what_tr": "Uzun süreli oturum için A2 + tarih sınavı (Eğitim Bakanlığı)",
+      "urls": [
+        "https://www.gsvetlly.minedu.gov.gr/ellinomatheia"
+      ],
+      "look_for": "A new call (προκήρυξη) for the next session: exam date, application window, fee and number of places. Sessions are announced late and places are capped, so any new call is news."
+    },
+    {
+      "id": "uoa-course",
+      "kind": "course",
+      "what": "University of Athens Modern Greek courses (an evening course after 17:00)",
+      "what_tr": "Atina Üniversitesi Modern Yunanca kursları (17:00'den sonra bir akşam kursu)",
+      "urls": [
+        "https://en.greekcourses.uoa.gr/program_of_courses"
+      ],
+      "look_for": "Any course whose classes start after 17:00 (the learner's condition), with its start date and registration deadline. Courses that do not fit the hours are not news; mention them only if nothing fits for a long time."
+    }
+  ]
+}
