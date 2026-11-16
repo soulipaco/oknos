@@ -394,3 +394,61 @@ mark.ins { background: var(--good-soft); color: inherit; }
 @media (max-width: 560px) {
   .side-by-side { grid-template-columns: 1fr; }
 }
+
+/* ---------- table_fill ---------- */
+.table-wrap { overflow-x: auto; margin: 8px 0; }
+.fill-table { border-collapse: collapse; width: 100%; font-size: 16px; }
+.fill-table th, .fill-table td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: middle; }
+.fill-table thead th { background: var(--paper); }
+.fill-table tbody th { font-weight: 500; background: var(--paper); }
+.fill-table td.given { color: var(--muted); }
+.fill-table .cell-input { width: 100%; min-width: 6em; font-size: 16px; padding: 6px 8px; }
+.fill-table .fix { display: block; font-size: 14px; color: var(--good); }
+
+/* ---------- exam readiness ---------- */
+.panel-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 4px; }
+.panel-head h2 { margin: 0; }
+.exam-switch button { min-width: 3.2em; }
+.rbar { position: relative; display: block; height: 12px; border-radius: 6px; background: var(--line); }
+.rbar.no_evidence { opacity: .45; background: repeating-linear-gradient(45deg, var(--line), var(--line) 4px, transparent 4px, transparent 8px); }
+.rbar .range { position: absolute; top: 0; bottom: 0; border-radius: 6px; background: var(--accent-soft); border: 1px solid var(--accent); }
+.rbar.above .range { background: var(--good-soft); border-color: var(--good); }
+.rbar.below .range { background: var(--bad-soft); border-color: var(--bad); }
+.rbar .est { position: absolute; top: -2px; width: 4px; height: 16px; margin-left: -2px; border-radius: 2px; background: var(--ink); }
+.rbar .passline { position: absolute; top: -4px; bottom: -4px; width: 2px; margin-left: -1px; background: var(--ink); opacity: .7; }
+.exam-card h2 { text-transform: none; letter-spacing: 0; font-size: 20px; color: var(--ink); }
+.exam-unit { border-top: 1px solid var(--line); padding: 10px 0 4px; }
+.exam-unit p { margin: 4px 0; }
+.verdict-line { font-weight: 600; }
+.verdict-line.pass { color: var(--good); }
+.verdict-line.fail { color: var(--bad); }
+.chip.state-above { background: var(--good-soft); }
+.chip.state-below { background: var(--bad-soft); }
+.chip.state-no_evidence { background: transparent; border: 1px dashed var(--line); color: var(--muted); }
+details.coverage, details.technique { margin: 6px 0; }
+details summary { cursor: pointer; color: var(--accent); }
+details.technique summary { color: var(--ink); font-weight: 500; }
+.plan-verdict { font-weight: 600; }
+.plan-verdict.no { color: var(--bad); }
+.plan-verdict.yes { color: var(--good); }
+.plan-weeks { padding-left: 0; list-style: none; display: grid; gap: 10px; }
+.plan-weeks li { border-left: 3px solid var(--line); padding: 2px 0 2px 12px; }
+.plan-weeks li.current { border-left-color: var(--accent); }
+.plan-weeks p { margin: 2px 0; }
+.plan-week-head { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.facts { padding-left: 18px; }
+.facts li { margin: 4px 0; }
+.mock-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; border-top: 1px solid var(--line); padding: 10px 0; }
+.mock-row p { margin: 2px 0; }
+.mock-sections { padding-left: 0; list-style: none; }
+.mock-sec { display: flex; justify-content: space-between; align-items: center; gap: 12px; border-bottom: 1px solid var(--line); padding: 10px 0; }
+.mock-sec p { margin: 2px 0; }
+.mock-clock { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 18px; padding: 2px 10px; border-radius: 8px; background: var(--accent-soft); }
+.mock-clock.low { background: var(--bad-soft); color: var(--bad); }
+.mock-nav { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 4px; }
+.mock-nav .qn { min-width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); }
+.mock-nav .qn.done { background: var(--accent-soft); border-color: var(--accent); }
+.mock-nav .qn.current { outline: 2px solid var(--accent); outline-offset: 1px; font-weight: 600; }
+.mock-foot { justify-content: space-between; margin-top: 12px; }
+.saved-note { color: var(--accent); }
+.option.chosen { border-color: var(--accent); background: var(--accent-soft); }

@@ -2,21 +2,25 @@
 
 A local-first Greek learning companion that your coding agent installs, runs and personalises for you. It is for people living in Greece who need to pass a language certification exam and have struggled to stay interested in studying.
 
-> **Status: the coach (phase 4).** The app runs a daily session on its own; your agent is the coach.
+> **Status: exam mode (phase 5).** The app runs a daily session on its own, tells you honestly whether you would pass today, and runs timed mock exams; your agent is the coach.
 > - **The app:**
 >   - one button starts a session sized to your time: reviews, verbs, one exam-format task and new words;
 >   - once a week the session includes a writing prompt or a speaking card in exam format;
 >   - spaced repetition (SM-2), tap any Greek word for its meaning, flag an item that looks wrong;
 >   - an on-screen Greek keyboard;
->   - honest numbers on the home screen, with no streaks or badges.
+>   - honest numbers on the home screen, with no streaks or badges;
+>   - **"would you pass today?"** per exam section, for Ελληνομάθεια B1 and for the A2 + history exam for long-term residence, each against its real pass rule. Where there is too little evidence it says so instead of guessing;
+>   - **timed mock exams** in the real format, section by section, and a plan to the exam date with the next four weeks.
 > - **The coach** (open your agent and say one word):
 >   - **"coach"**: how it is going, your 2–3 weakest areas, feedback on your writing, and next week's exercises already in the app;
 >   - **"tutor"**: a short chat in Greek, a role-play or "correct this";
 >   - **"today in class we did…"**, or a photo of a letter in `learner/inbox/`: practice built from it;
->   - **"any exam dates?"**: the official pages are checked and the next dates go on the home screen.
-> - **Content:** three open packs, plus your own material if you import it privately.
+>   - **"any exam dates?"**: the official pages are checked and the next dates go on the home screen;
+>   - **"make me a plan"**: a week-by-week plan to a real, announced session, which says plainly whether it is realistic and what to drop if you fall behind;
+>   - **"give me a mock exam"**: a full mock in the exam's format, marked afterwards.
+> - **Content:** four open packs (including B1 practice), plus your own material if you import it privately.
 >
-> Exam readiness and mock exams come in phase 5 (see `docs/prompts/`).
+> Next: phase 6, a test on a stranger's machine (see `docs/prompts/`).
 
 ## Get started
 
@@ -59,13 +63,16 @@ uv run greek-coach reload                # make the running app pick up new cont
 uv run greek-coach raw greek-helper --unit lesson-05    # raw imported exercises, for rebuilding
 uv run --group speech greek-coach transcribe            # local transcription of speaking recordings
 uv run greek-coach schedule list|add|remove             # scheduled coach runs (asks the learner first)
-uv run python scripts/simulate.py        # simulated weeks of use: scheduler and home numbers
+uv run python scripts/simulate.py        # simulated weeks of use: scheduler, home and readiness numbers
+GREEK_COACH_MOCK_SPEED=30 uv run greek-coach start --foreground   # development: mock-exam time runs 30x faster
 uv run pytest
 ```
 
 How the code is laid out:
 - `src/greek_coach/`: the FastAPI server, SQLite, pack loading, answer checking, the scheduler (`scheduler.py`), sessions, word lookup, the importer (`importer/`) and the CLI.
-  - The coach's side: `report.py` (what the coach reads), `coachfiles.py` (the files it writes), `lint.py` (Greek checks), `scheduling.py` and `transcribe.py`.
+  - The coach's side: `report.py` (what the coach reads), `coachfiles.py` (the files it writes), `lint.py` (Greek and exam-tag checks), `scheduling.py` and `transcribe.py`.
+  - Exam mode: `exams.py` (blueprints and pass rules), `readiness.py`, `mock.py` and `plan.py`.
+- `exams/`: the exam blueprints, facts about the two public exams with links to the official sources.
 - `web/`: plain HTML/CSS/JS with no build step, plus `i18n/` for the English and Turkish UI strings.
 - `content/open/`: the tracked content packs. `content/private/` (gitignored) holds imported material.
 - `scripts/`: the verb-pack builder, the listening-audio generator and the simulation.

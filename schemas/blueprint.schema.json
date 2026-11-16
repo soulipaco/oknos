@@ -1,0 +1,480 @@
+{
+  "$defs": {
+    "Beyond": {
+      "additionalProperties": false,
+      "description": "Something the higher level adds over the lower one (B1 over A2), for coverage and the plan.",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "area": {
+          "enum": [
+            "grammar",
+            "linking",
+            "vocabulary",
+            "text",
+            "task_type",
+            "spelling"
+          ],
+          "title": "Area",
+          "type": "string"
+        },
+        "title": {
+          "$ref": "#/$defs/Text"
+        },
+        "match": {
+          "$ref": "#/$defs/Match",
+          "default": {
+            "grammar": [],
+            "topics": [],
+            "exam_tasks": []
+          }
+        }
+      },
+      "required": [
+        "id",
+        "area",
+        "title"
+      ],
+      "title": "Beyond",
+      "type": "object"
+    },
+    "Lines": {
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "items": {
+            "type": "string"
+          },
+          "title": "En",
+          "type": "array"
+        },
+        "tr": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Tr",
+          "type": "array"
+        }
+      },
+      "required": [
+        "en"
+      ],
+      "title": "Lines",
+      "type": "object"
+    },
+    "Match": {
+      "additionalProperties": false,
+      "properties": {
+        "grammar": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Grammar",
+          "type": "array"
+        },
+        "topics": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "exam_tasks": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Exam Tasks",
+          "type": "array"
+        }
+      },
+      "title": "Match",
+      "type": "object"
+    },
+    "PassRule": {
+      "additionalProperties": false,
+      "properties": {
+        "min_total": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Min Total"
+        },
+        "unit_min_share": {
+          "exclusiveMinimum": 0,
+          "maximum": 1,
+          "title": "Unit Min Share",
+          "type": "number"
+        },
+        "units_needed": {
+          "minimum": 1,
+          "title": "Units Needed",
+          "type": "integer"
+        },
+        "text": {
+          "$ref": "#/$defs/Text"
+        }
+      },
+      "required": [
+        "unit_min_share",
+        "units_needed",
+        "text"
+      ],
+      "title": "PassRule",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "what": {
+          "title": "What",
+          "type": "string"
+        },
+        "checked": {
+          "title": "Checked",
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "what",
+        "checked"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "TaskSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "$ref": "#/$defs/Text"
+        },
+        "types": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Types",
+          "type": "array"
+        },
+        "questions": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Questions"
+        },
+        "points": {
+          "exclusiveMinimum": 0,
+          "title": "Points",
+          "type": "number"
+        },
+        "points_verified": {
+          "default": true,
+          "title": "Points Verified",
+          "type": "boolean"
+        },
+        "words": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Words"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "types",
+        "points"
+      ],
+      "title": "TaskSpec",
+      "type": "object"
+    },
+    "Text": {
+      "additionalProperties": false,
+      "properties": {
+        "el": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "El"
+        },
+        "en": {
+          "title": "En",
+          "type": "string"
+        },
+        "tr": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tr"
+        }
+      },
+      "required": [
+        "en"
+      ],
+      "title": "Text",
+      "type": "object"
+    },
+    "UnitSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "skill": {
+          "enum": [
+            "history",
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "title": "Skill",
+          "type": "string"
+        },
+        "title": {
+          "$ref": "#/$defs/Text"
+        },
+        "points": {
+          "exclusiveMinimum": 0,
+          "title": "Points",
+          "type": "number"
+        },
+        "minutes": {
+          "exclusiveMinimum": 0,
+          "title": "Minutes",
+          "type": "integer"
+        },
+        "marked_by": {
+          "enum": [
+            "app",
+            "coach"
+          ],
+          "title": "Marked By",
+          "type": "string"
+        },
+        "tasks": {
+          "items": {
+            "$ref": "#/$defs/TaskSpec"
+          },
+          "minItems": 1,
+          "title": "Tasks",
+          "type": "array"
+        },
+        "technique": {
+          "$ref": "#/$defs/Lines"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id",
+        "skill",
+        "title",
+        "points",
+        "minutes",
+        "marked_by",
+        "tasks",
+        "technique"
+      ],
+      "title": "UnitSpec",
+      "type": "object"
+    },
+    "WatchSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "what": {
+          "title": "What",
+          "type": "string"
+        },
+        "what_tr": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "What Tr"
+        },
+        "urls": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Urls",
+          "type": "array"
+        },
+        "look_for": {
+          "title": "Look For",
+          "type": "string"
+        }
+      },
+      "required": [
+        "what",
+        "urls",
+        "look_for"
+      ],
+      "title": "WatchSpec",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "title": {
+      "$ref": "#/$defs/Text"
+    },
+    "short": {
+      "title": "Short",
+      "type": "string"
+    },
+    "level": {
+      "enum": [
+        "A1",
+        "A2",
+        "B1"
+      ],
+      "title": "Level",
+      "type": "string"
+    },
+    "task_prefix": {
+      "title": "Task Prefix",
+      "type": "string"
+    },
+    "checked_at": {
+      "title": "Checked At",
+      "type": "string"
+    },
+    "total_points": {
+      "title": "Total Points",
+      "type": "number"
+    },
+    "hours_estimate": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "title": "Hours Estimate",
+      "type": "array"
+    },
+    "pass_rule": {
+      "$ref": "#/$defs/PassRule"
+    },
+    "units": {
+      "items": {
+        "$ref": "#/$defs/UnitSpec"
+      },
+      "minItems": 1,
+      "title": "Units",
+      "type": "array"
+    },
+    "sessions_note": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Text"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "sources": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Source"
+      },
+      "title": "Sources",
+      "type": "array"
+    },
+    "watch": {
+      "$ref": "#/$defs/WatchSpec"
+    },
+    "beyond_a2": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Beyond"
+      },
+      "title": "Beyond A2",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "short",
+    "level",
+    "task_prefix",
+    "checked_at",
+    "total_points",
+    "hours_estimate",
+    "pass_rule",
+    "units",
+    "watch"
+  ],
+  "title": "Blueprint",
+  "type": "object"
+}

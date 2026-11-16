@@ -1,0 +1,206 @@
+{
+  "id": "b1-keg",
+  "title": {
+    "el": "Πιστοποιητικό Ελληνομάθειας, επίπεδο Β1 (Κέντρο Ελληνικής Γλώσσας)",
+    "en": "Ελληνομάθεια B1 (Centre for the Greek Language)",
+    "tr": "Ελληνομάθεια B1 (Yunan Dili Merkezi)"
+  },
+  "short": "B1",
+  "level": "B1",
+  "task_prefix": "b1keg",
+  "checked_at": "2026-11-16",
+  "total_points": 100,
+  "hours_estimate": [180, 250],
+  "pass_rule": {
+    "min_total": null,
+    "unit_min_share": 0.6,
+    "units_needed": 4,
+    "text": {
+      "el": "Για να πετύχει ο υποψήφιος, πρέπει να συγκεντρώσει τουλάχιστον το 60% της βαθμολογίας της κάθε δεξιότητας.",
+      "en": "At least 60% (15 of 25) in each of the four skills. Failing one skill fails the whole exam; there is no overall total.",
+      "tr": "Dört becerinin her birinde en az %60 (25 üzerinden 15). Tek bir beceriden kalmak bütün sınavdan kalmak demektir; toplam puan kuralı yoktur."
+    }
+  },
+  "sessions_note": {
+    "en": "Every May for all levels (in Greece and abroad), plus an October session for B1 in Greece only. Reading and listening are marked by machine from a shaded answer sheet since October 2026.",
+    "tr": "Her yıl mayısta tüm seviyeler için (Yunanistan'da ve yurt dışında), ayrıca yalnızca Yunanistan'da B1 için bir ekim oturumu. Ekim 2026'dan beri okuma ve dinleme, işaretlenen cevap kâğıdından makineyle değerlendiriliyor."
+  },
+  "units": [
+    {
+      "id": "reading",
+      "skill": "reading",
+      "title": {"el": "Κατανόηση γραπτού λόγου", "en": "Reading", "tr": "Okuma"},
+      "points": 25,
+      "minutes": 40,
+      "marked_by": "app",
+      "tasks": [
+        {"id": "b1keg.reading.match", "title": {"en": "Matching sentences or sections", "tr": "Cümle veya bölüm eşleştirme"},
+         "types": ["match"], "questions": 6, "points": 6},
+        {"id": "b1keg.reading.compare", "title": {"en": "Comparison: complete a table", "tr": "Karşılaştırma: tabloyu doldurun"},
+         "types": ["table_fill"], "questions": 12, "points": 6},
+        {"id": "b1keg.reading.tf", "title": {"en": "True or false", "tr": "Doğru veya yanlış"},
+         "types": ["true_false"], "questions": 6, "points": 6},
+        {"id": "b1keg.reading.gapbank", "title": {"en": "Gap fill from a word bank", "tr": "Kelime listesinden boşluk doldurma"},
+         "types": ["gap_bank"], "questions": 7, "points": 7}
+      ],
+      "technique": {
+        "en": [
+          "Four tasks in 40 minutes: about ten minutes each.",
+          "In the table task, look for names and numbers first, then fill the rows. Each cell is half a point.",
+          "Matching and the gap fill have spare options: use each one once and cross it out.",
+          "Only the answer sheet is marked. Transfer each answer as you go, not in the last minute."
+        ],
+        "tr": [
+          "40 dakikada dört görev: her biri için yaklaşık on dakika.",
+          "Tablo görevinde önce isimleri ve sayıları bulun, sonra satırları doldurun. Her hücre yarım puandır.",
+          "Eşleştirme ve boşluk doldurmada fazla seçenekler var: her birini bir kez kullanın ve üstünü çizin.",
+          "Yalnızca cevap kâğıdı değerlendirilir. Cevapları son dakikada değil, ilerledikçe aktarın."
+        ]
+      }
+    },
+    {
+      "id": "listening",
+      "skill": "listening",
+      "title": {"el": "Κατανόηση προφορικού λόγου", "en": "Listening", "tr": "Dinleme"},
+      "points": 25,
+      "minutes": 25,
+      "marked_by": "app",
+      "tasks": [
+        {"id": "b1keg.listening.notes", "title": {"en": "Take notes from a monologue or interview", "tr": "Bir konuşmadan veya röportajdan not alın"},
+         "types": ["table_fill"], "questions": 12, "points": 12},
+        {"id": "b1keg.listening.compare", "title": {"en": "Comparison: complete a table from a discussion", "tr": "Karşılaştırma: bir tartışmadan tabloyu doldurun"},
+         "types": ["table_fill"], "questions": 13, "points": 13}
+      ],
+      "technique": {
+        "en": [
+          "Read the note and table headings before the recording. They tell you what kind of word each gap needs: a day, a price, a job.",
+          "Notes are one to three words, in lower-case letters, not sentences.",
+          "Each recording is heard twice: fill what you can the first time, and only the gaps the second time.",
+          "The second recording is a discussion between two or three people. Keep track of who says what."
+        ],
+        "tr": [
+          "Kayıttan önce not ve tablo başlıklarını okuyun. Her boşluğun ne tür bir kelime istediğini söylerler: gün, fiyat, meslek.",
+          "Notlar bir ila üç kelimedir, küçük harfle yazılır, cümle değildir.",
+          "Her kayıt iki kez dinlenir: ilkinde yapabildiğinizi doldurun, ikincisinde yalnızca boşlukları.",
+          "İkinci kayıt iki üç kişi arasında bir tartışmadır. Kimin ne söylediğini takip edin."
+        ]
+      }
+    },
+    {
+      "id": "writing",
+      "skill": "writing",
+      "title": {"el": "Παραγωγή γραπτού λόγου", "en": "Writing", "tr": "Yazma"},
+      "points": 25,
+      "minutes": 55,
+      "marked_by": "coach",
+      "tasks": [
+        {"id": "b1keg.writing.friendly", "title": {"en": "A friendly letter, notice or advert (150 words)", "tr": "Arkadaşça mektup, duyuru veya ilan (150 kelime)"},
+         "types": ["write"], "questions": 1, "points": 12, "words": [130, 170]},
+        {"id": "b1keg.writing.formal", "title": {"en": "A formal text: a request, an application or a complaint with reasons (150 words)", "tr": "Resmî metin: gerekçeli istek, başvuru veya şikâyet (150 kelime)"},
+         "types": ["write"], "questions": 1, "points": 13, "words": [130, 170]}
+      ],
+      "technique": {
+        "en": [
+          "About 25 minutes per text, and 5 minutes to check. Part B is worth 13 points, part A 12.",
+          "Plan paragraphs: an opening, two body paragraphs, a closing. Link them: επειδή, ενώ, αν και, γι' αυτό, επίσης.",
+          "Match the register: friendly (εσύ) for part A, formal (εσείς, Αξιότιμε κύριε) for part B.",
+          "About 150 words each. A text that is clearly short drops a band. Never sign with your real name."
+        ],
+        "tr": [
+          "Metin başına yaklaşık 25 dakika, kontrol için 5 dakika. B bölümü 13, A bölümü 12 puan.",
+          "Paragrafları planlayın: giriş, iki gelişme paragrafı, kapanış. Bağlayın: επειδή, ενώ, αν και, γι' αυτό, επίσης.",
+          "Üsluba uyun: A bölümünde arkadaşça (εσύ), B bölümünde resmî (εσείς, Αξιότιμε κύριε).",
+          "Her biri yaklaşık 150 kelime. Belirgin biçimde kısa bir metin bir bant düşer. Asla gerçek adınızla imzalamayın."
+        ]
+      },
+      "note": {
+        "en": "ΚΕΓ marks writing holistically out of 25 (docs/COACHING.md §10). The coach's score is an estimate against that scale.",
+        "tr": "ΚΕΓ yazmayı 25 üzerinden bütüncül olarak değerlendirir (docs/COACHING.md §10). Koçun puanı bu ölçeğe göre bir tahmindir."
+      }
+    },
+    {
+      "id": "speaking",
+      "skill": "speaking",
+      "title": {"el": "Παραγωγή προφορικού λόγου", "en": "Speaking", "tr": "Konuşma"},
+      "points": 25,
+      "minutes": 12,
+      "marked_by": "coach",
+      "tasks": [
+        {"id": "b1keg.speaking.warmup", "title": {"en": "Warm-up questions", "tr": "Isınma soruları"},
+         "types": ["speak"], "questions": 1, "points": 7, "points_verified": false},
+        {"id": "b1keg.speaking.monologue", "title": {"en": "Monologue: a photo or a topic, with reasons", "tr": "Tek başına konuşma: gerekçeli fotoğraf veya konu"},
+         "types": ["speak"], "questions": 1, "points": 9, "points_verified": false},
+        {"id": "b1keg.speaking.roleplay", "title": {"en": "Role-play with argument", "tr": "Tartışmalı canlandırma"},
+         "types": ["speak"], "questions": 1, "points": 9, "points_verified": false}
+      ],
+      "technique": {
+        "en": [
+          "Part A is a warm-up: short, natural answers about yourself.",
+          "Part B: with a photo, say what feelings it shows and why. Νομίζω ότι είναι χαρούμενοι, επειδή …",
+          "Part C is a role-play with argument: agree, disagree and give a reason. Συμφωνώ, αλλά … / Δεν νομίζω, γιατί …",
+          "You get about two minutes to read the role card, and no other preparation time."
+        ],
+        "tr": [
+          "A bölümü ısınmadır: kendinizle ilgili kısa, doğal cevaplar.",
+          "B bölümü: fotoğrafta hangi duyguların göründüğünü ve nedenini söyleyin. Νομίζω ότι είναι χαρούμενοι, επειδή …",
+          "C bölümü tartışmalı bir canlandırmadır: katılın, karşı çıkın ve gerekçe verin. Συμφωνώ, αλλά … / Δεν νομίζω, γιατί …",
+          "Rol kartını okumak için yaklaşık iki dakikanız var; başka hazırlık süresi yok."
+        ]
+      },
+      "note": {
+        "en": "The split of the 25 points between the parts is not published. The app does not score speaking; the coach's mark is an estimate.",
+        "tr": "25 puanın bölümlere dağılımı yayımlanmamış. Uygulama konuşmayı puanlamaz; koçun notu bir tahmindir."
+      }
+    }
+  ],
+  "sources": [
+    {"url": "https://www.greek-language.gr/certification/sites/greeklanguage.gr.certification/files/b1_0.pdf", "what": "ΚΕΓ B1 structure table: tasks, items, points, text lengths", "checked": "2026-11-16"},
+    {"url": "https://www.greek-language.gr/certification/sites/greeklanguage.gr.certification/files/odigos_ell_2022.pdf", "what": "ΚΕΓ exam guide: timings, the pass rule (p. 22), teaching hours (p. 26)", "checked": "2026-11-16"},
+    {"url": "https://www.greek-language.gr/certification/sites/greeklanguage.gr.certification/files/kritiria_gia_tin_axiologisi_paragogis_graptoy_logoy_epipedoy_v1.pdf", "what": "B1 writing criteria (holistic, out of 25), with the grammar footnotes", "checked": "2026-11-16"},
+    {"url": "https://www.greek-language.gr/certification/node/99.html", "what": "B1 level descriptor", "checked": "2026-11-16"},
+    {"url": "https://www.greek-language.gr/certification/node/142.html", "what": "B1 sample papers (two series, one MP3, no answer keys)", "checked": "2026-11-16"},
+    {"url": "https://www.greek-language.gr/certification/node/15.html", "what": "Exam dates and registration windows", "checked": "2026-11-16"},
+    {"url": "https://www.greek-language.gr/certification/news/show.html?id=97", "what": "Machine marking of reading and listening from an answer sheet, from October 2026", "checked": "2026-11-16"}
+  ],
+  "watch": {
+    "what": "Ελληνομάθεια B1 (Centre for the Greek Language)",
+    "what_tr": "Ελληνομάθεια B1 (Yunan Dili Merkezi)",
+    "urls": [
+      "https://www.greek-language.gr/certification/node/15.html",
+      "https://www.greek-language.gr/certification/news/index.html"
+    ],
+    "look_for": "The next May and October exam dates for B1, and the registration window (opens / closes). The May session is for all levels; the October session is B1 and in Greece only."
+  },
+  "beyond_a2": [
+    {"id": "grammar.passive", "area": "grammar", "title": {"en": "The passive voice in present, past and future", "tr": "Edilgen çatı: şimdiki, geçmiş ve gelecek zaman"},
+     "match": {"grammar": ["verb.passive"]}},
+    {"id": "grammar.reported", "area": "grammar", "title": {"en": "Reported speech (είπε ότι …)", "tr": "Dolaylı anlatım (είπε ότι …)"},
+     "match": {"grammar": ["syntax.reported"]}},
+    {"id": "grammar.conditional", "area": "grammar", "title": {"en": "Conditionals: αν + present/future", "tr": "Koşul cümleleri: αν + şimdiki/gelecek zaman"},
+     "match": {"grammar": ["syntax.conditional"]}},
+    {"id": "grammar.clauses", "area": "grammar", "title": {"en": "Concessive, relative and time clauses", "tr": "Karşıtlık, ilgi ve zaman yan cümleleri"},
+     "match": {"grammar": ["syntax.clause"]}},
+    {"id": "grammar.comparative", "area": "grammar", "title": {"en": "Comparatives (πιο … από)", "tr": "Karşılaştırma (πιο … από)"},
+     "match": {"grammar": ["adj.comparative"]}},
+    {"id": "grammar.genitive", "area": "grammar", "title": {"en": "The genitive case", "tr": "İyelik hâli (genitif)"},
+     "match": {"grammar": ["noun.genitive", "case.genitive"]}},
+    {"id": "grammar.subjunctive", "area": "grammar", "title": {"en": "Subjunctive (να …) and imperative", "tr": "Dilek kipi (να …) ve emir kipi"},
+     "match": {"grammar": ["verb.subjunctive", "verb.imperative"]}},
+    {"id": "linking.b1", "area": "linking", "title": {"en": "Linking words: ενώ, επειδή, αν και, καθώς, είτε … είτε", "tr": "Bağlaçlar: ενώ, επειδή, αν και, καθώς, είτε … είτε"},
+     "match": {"grammar": ["syntax.linking"], "topics": ["linking"]}},
+    {"id": "vocab.opinion", "area": "vocabulary", "title": {"en": "Opinion and feelings (νομίζω, πιστεύω, χαίρομαι, λυπάμαι)", "tr": "Görüş ve duygular (νομίζω, πιστεύω, χαίρομαι, λυπάμαι)"},
+     "match": {"topics": ["opinion", "feelings"]}},
+    {"id": "vocab.domains", "area": "vocabulary", "title": {"en": "Public services, health, work, education", "tr": "Kamu hizmetleri, sağlık, iş, eğitim"},
+     "match": {"topics": ["office", "health", "work", "education", "public_services"]}},
+    {"id": "text.writing150", "area": "text", "title": {"en": "Writing 150-word texts", "tr": "150 kelimelik metin yazmak"},
+     "match": {"exam_tasks": ["b1keg.writing.friendly", "b1keg.writing.formal"]}},
+    {"id": "text.reading200", "area": "text", "title": {"en": "Reading 150–200-word texts, including literary ones", "tr": "Edebî metinler dahil 150–200 kelimelik metinler okumak"},
+     "match": {"exam_tasks": ["b1keg.reading.match", "b1keg.reading.tf", "b1keg.reading.gapbank"]}},
+    {"id": "task.table", "area": "task_type", "title": {"en": "Table comparison (reading and listening)", "tr": "Tablo karşılaştırma (okuma ve dinleme)"},
+     "match": {"exam_tasks": ["b1keg.reading.compare", "b1keg.listening.compare"]}},
+    {"id": "task.notes", "area": "task_type", "title": {"en": "Note-taking from a recording", "tr": "Bir kayıttan not almak"},
+     "match": {"exam_tasks": ["b1keg.listening.notes"]}},
+    {"id": "spelling.b1", "area": "spelling", "title": {"en": "Spelling: final -ν, έλεγα/έτρωγα, φτ/φθ", "tr": "Yazım: sondaki -ν, έλεγα/έτρωγα, φτ/φθ"},
+     "match": {"grammar": ["spelling"]}}
+  ]
+}

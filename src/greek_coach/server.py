@@ -13,7 +13,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from greek_coach import coachfiles, db, health, lookup, packs, paths, scheduler, session
+from greek_coach import coachfiles, db, exams, health, lookup, mock, packs, paths, plan, readiness, scheduler, session
 from greek_coach.checking import CheckError, check
 from greek_coach.packs import OPEN_TASKS, FormItem, SpeakItem, VocabItem, WriteItem
 
@@ -79,6 +79,15 @@ class LookupIn(BaseModel):
     word: str
     item_key: str | None = None
     ui_lang: Literal["en", "tr"] | None = None
+
+
+class MockAnswerIn(BaseModel):
+    item_key: str
+    response: dict[str, Any]
+
+
+class MockCloseIn(BaseModel):
+    by: Literal["learner", "time"] = "learner"
 
 
 class AttemptIn(BaseModel):
@@ -150,10 +159,18 @@ def create_app() -> FastAPI:
         try:
             stats = session.home_stats(conn, app.state.catalog, lang)
             coach = coach_block(conn)
+            try:
+                mock.expire(conn, app.state.catalog)
+                ready_brief = {k: _brief(v) for k, v in readiness.all_readiness(conn, app.state.catalog).items()}
+            except Exception:  # the home screen must open even if readiness breaks
+                log.exception("readiness")
+                ready_brief = None
         finally:
             conn.close()
         return {
             "coach": coach,
+            "readiness": ready_brief,
+            "target_exam": profile.get("target_exam"),
             "ui_lang": profile.get("ui_lang") if profile.get("ui_lang") in UI_LANGS else None,
             "minutes": _minutes(profile),
             "packs": [{"id": p.id, "title": p.manifest.title.model_dump(), "items": len(p.items)}
@@ -161,6 +178,11 @@ def create_app() -> FastAPI:
             "stats": stats,
             "today": db.today().isoformat(),
         }
+
+    def _brief(r: dict) -> dict:
+        return {"exam": r["exam"], "short": r["short"], "verdict": r["verdict"]["state"],
+                "units": [{k: u[k] for k in ("unit", "points", "pass_line", "state", "estimate", "low", "high",
+                                             "evidence", "evidence_needed")} for u in r["units"]]}
 
     def coach_block(conn) -> dict:
         today = db.today()
@@ -398,6 +420,101 @@ def create_app() -> FastAPI:
         if result is None:
             raise HTTPException(404, f"unknown session {session_id}")
         return result
+
+    # ---------- exam mode ----------
+
+    @app.get("/api/exam")
+    def exam_view():
+        """Everything the exam screen shows: readiness against both pass rules, coverage, the
+        plan with planned against done, the next dates, mocks and exam technique."""
+        profile = read_profile()
+        lang = _lang(profile)
+        _sync_coach_files()
+        conn = db.open_db()
+        try:
+            mock.expire(conn, app.state.catalog)
+            ready = readiness.all_readiness(conn, app.state.catalog)
+            cover = readiness.all_coverage(conn, app.state.catalog, lang)
+            progress = plan.progress(conn, app.state.catalog)
+            pinputs = plan.inputs(conn, profile, ready)
+            mocks = {"defined": mock.definitions(app.state.catalog), "runs": mock.runs(conn, app.state.catalog)}
+        finally:
+            conn.close()
+        bps = exams.load_blueprints()
+        return {
+            "today": db.today().isoformat(),
+            "target_exam": profile.get("target_exam"),
+            "exams": [{"id": bp.id, "short": bp.short, "title": bp.title.model_dump(), "level": bp.level,
+                       "checked_at": bp.checked_at, "pass_rule": bp.pass_rule.model_dump(),
+                       "sessions_note": bp.sessions_note.model_dump() if bp.sessions_note else None,
+                       "units": [{"id": u.id, "title": u.title.model_dump(), "points": u.points, "minutes": u.minutes,
+                                  "marked_by": u.marked_by, "technique": u.technique.model_dump(),
+                                  "note": u.note.model_dump() if u.note else None,
+                                  "tasks": [{"id": t.id, "title": t.title.model_dump(), "points": t.points,
+                                             "questions": t.questions, "points_verified": t.points_verified}
+                                            for t in u.tasks]} for u in bp.units],
+                       "readiness": ready.get(bp.id), "coverage": cover.get(bp.id)} for bp in bps.values()],
+            "plan": progress,
+            "plan_inputs": {k: pinputs[k] for k in ("budget_minutes_week", "pace", "candidates",
+                                                     "exams_without_announced_date", "watch_checked_at")},
+            "dates": coachfiles.next_dates(db.today(), limit=4),
+            "mocks": mocks,
+        }
+
+    def _mock_call(fn):
+        conn = db.open_db()
+        try:
+            return fn(conn)
+        except mock.MockError as e:
+            raise HTTPException(409, str(e))
+        finally:
+            conn.close()
+
+    @app.post("/api/mocks/{mock_id}/start")
+    def mock_start(mock_id: str):
+        return _mock_call(lambda conn: mock.run_view(conn, app.state.catalog,
+                                                     mock.start_run(conn, app.state.catalog, mock_id)))
+
+    @app.get("/api/mock-runs/{run_id}")
+    def mock_run(run_id: int):
+        _sync_coach_files()
+        return _mock_call(lambda conn: mock.run_view(conn, app.state.catalog, run_id))
+
+    @app.post("/api/mock-runs/{run_id}/sections/{unit}")
+    def mock_section_start(run_id: int, unit: str):
+        def go(conn):
+            mock.expire(conn, app.state.catalog)
+            sid = mock.start_section(conn, app.state.catalog, run_id, unit, _lang(read_profile()))
+            return mock.section_view(conn, sid)
+        return _mock_call(go)
+
+    @app.get("/api/mock-sections/{section_id}")
+    def mock_section(section_id: int):
+        def go(conn):
+            mock.expire(conn, app.state.catalog)
+            return mock.section_view(conn, section_id)
+        return _mock_call(go)
+
+    @app.post("/api/mock-sections/{section_id}/answer")
+    def mock_answer(section_id: int, body: MockAnswerIn):
+        return _mock_call(lambda conn: mock.save_answer(conn, app.state.catalog, section_id, body.item_key, body.response))
+
+    @app.post("/api/mock-sections/{section_id}/close")
+    def mock_close(section_id: int, body: MockCloseIn):
+        def go(conn):
+            # This section first, as the page says (handed in, or its clock reached 0); then any
+            # other section that ran out with nobody there.
+            mock.close_section(conn, app.state.catalog, section_id, body.by)
+            mock.expire(conn, app.state.catalog)
+            return mock.section_view(conn, section_id)
+        return _mock_call(go)
+
+    @app.post("/api/mock-runs/{run_id}/abandon")
+    def mock_abandon(run_id: int):
+        def go(conn):
+            mock.abandon(conn, app.state.catalog, run_id)
+            return mock.run_view(conn, app.state.catalog, run_id)
+        return _mock_call(go)
 
     @app.post("/api/lookup")
     def do_lookup(body: LookupIn):

@@ -60,6 +60,17 @@ From `accuracy`, `recent_wrong`, `hardest`, `lookups` and `activity`, work out:
   - Look inside `recent_wrong` for the pattern. Is it always the same verb, always the accent, always choosing the English meaning of a similar-looking word?
 - **How much to prepare.** Use COACHING §5.4, `generated_stock` (do not pile up unseen items) and `days_since_last_practice` (after a gap: fewer items, and a `restart` in the message).
 
+**The exam.**
+
+- **Readiness** (`readiness`): read the verdict and the unit states for both exams.
+  - Mention a unit's number only when it is not `no_evidence`. Say "not enough practice yet to say" otherwise. Never round up an estimate or hide its range.
+- **The plan:** re-plan every time, with `.agents/skills/plan/SKILL.md` (its §4 covers re-planning).
+  - If there is no `coach/plan.json` yet and the profile has a goal, make the first one.
+  - If the plan calls for a mock this week, or a session is 2–3 weeks away, offer one (the `mock-exam` skill).
+- **A finished mock** in `mocks.runs` with unmarked writing or speaking: mark it first (the `mark` skill). It is the best evidence there is.
+
+Let the current plan week's `focus` and `beyond_a2` steer what you prepare in step 5.
+
 ## 5. Prepare the exercises
 
 1. Write **10–30 items** to `learner/generated/coach-practice/items/<today>-checkin.json`, aimed at those weak areas and built from their life (COACHING §5).
@@ -79,6 +90,7 @@ From `accuracy`, `recent_wrong`, `hardest`, `lookups` and `activity`, work out:
 - feedback that is ready: "your e-mail to the building manager: about 6/10, the main thing is…", with the link `<app_url>?submission=<id>`;
 - flags you resolved: one line each;
 - what you prepared: "12 exercises on the past tense and on the tax office are in your next sessions";
+- the plan in one line: the realistic session (or "none announced yet"), and if they are behind, what to drop;
 - anything new from `watch`, in one line;
 - one offer at most, for example "if you have 10 minutes, say 'tutor' and we'll practise talking to your landlord".
 

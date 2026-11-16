@@ -2,7 +2,7 @@
 
 Status: **agreed (2026-11-15).** The maintainer accepted the exam strategy in §1.4. Where this file and `docs/DESIGN.md` disagree, this file wins.
 
-Exam facts were checked against official sources on **2026-11-15**. Each claim below is marked as **verified** (seen in an official source on that date) or **unverified** (taken from a secondary source or from memory, and still to be checked). Phase 5 checks all of them again.
+Exam facts were checked against official sources on **2026-11-15** and again in phase 5 on **2026-11-16**. Each claim below is marked as **verified** (seen in an official source) or **unverified** (taken from a secondary source or from memory, and still to be checked). The structured, machine-readable version of §1.2–§1.3 is in the blueprints `exams/a2ltr.json` and `exams/b1-keg.json` (§4.5); when they disagree with this text, fix both.
 
 ---
 
@@ -36,19 +36,24 @@ Sources:
 | Who runs it | General Secretariat (ΓΓΕΕΚΔΒΜ), Ministry of Education, with the Centre for the Greek Language | Centre for the Greek Language (ΚΕΓ), Thessaloniki | Ministry of the Interior |
 | What it is for | Long-term residence only | Long-term residence, and widely accepted elsewhere (jobs, universities) | Naturalisation. It also satisfies long-term residence. |
 | Sections | 5 units of 20 points each: history & culture, listening, reading, writing, speaking | 4 skills of 25 points each: reading, listening, writing, speaking | Knowledge questions (geography, history, culture, institutions), reading, writing, listening, speaking |
-| Timings | History 25 min, listening 25 min, reading 30 min, writing 40 min, then a separate speaking test | Reading 40 min, listening 25 min, writing 55 min (2 h written in total), speaking about 12 min per pair | About 150 min written. Listening and speaking about 15 min each (unverified). |
-| Pass mark | At least 50/100 **and** at least 50% in 4 of the 5 units, so one weak unit is survivable. History-only candidates: 10/20. | **At least 60% in each of the four skills.** Failing one skill fails the whole exam. (Verified in the [ΚΕΓ exam guide, 2022](https://www.greek-language.gr/certification/sites/greeklanguage.gr.certification/files/odigos_ell_2022.pdf).) | At least 20 on knowledge, at least 40 on language, at least 70 overall |
-| Teaching hours, ΚΕΓ estimate | A2 needs about 120–180 h | B1 needs about 180–250 h | — |
-| How often | Usually twice a year: May 2026 took place, earlier years were May/Oct or May/Nov. **No 2027 date announced yet.** | Once a year in May, plus an October session (in Greece only) for B1. **May 2027: registration 1 Feb – 14 Mar 2027, B1 written exam Thu 13 May 2027.** | Twice a year, about May and November. Procurement for Nov 2026 and Apr 2027 is published. |
-| Fee | €50, or €20 for history only (2024 call). Places are capped (2,300 in 2024) and allocated by order of application. | Unverified | A fee applies; the amount is unverified |
-| Past papers | Official papers, answer keys and audio for 2010–2026, plus the history syllabus | Official sample papers on the ΚΕΓ site | Official published question bank (the language part alone is 400+ pages) |
+| Timings | History 25 min, listening 25 min, reading 30 min, writing 40 min, then a separate speaking test of 12 min per pair | Reading 40 min, listening 25 min, writing 55 min (2 h written in total), speaking about 12 min per pair | About 150 min written. Listening and speaking about 15 min each (unverified). |
+| Pass mark | At least 50/100 **and** at least 50% in 4 of the 5 units, so one weak unit is survivable. History-only candidates: 10/20. (Verified, [ΚΥΑ 140304/Κ1, art. 12](https://gsvetlly.minedu.gov.gr/publications/docs2023/KYA_ELLINOMATHIAS_2021.pdf).) | **At least 60% in each of the four skills.** Failing one skill fails the whole exam. There is no overall-total rule; the certificate shows Καλώς / Λίαν καλώς / Άριστα. (Verified in the [ΚΕΓ exam guide](https://www.greek-language.gr/certification/sites/greeklanguage.gr.certification/files/odigos_ell_2022.pdf), p. 22.) | At least 20 on knowledge, at least 40 on language, at least 70 overall |
+| Teaching hours, ΚΕΓ estimate | A2 needs about 120–180 h | B1 needs about 180–250 h (verified, guide p. 26) | — |
+| How often | The ΚΥΑ says twice a year, April and October (art. 9 §3), but in practice sessions are irregular: the last two were the second half of 2024 and **23 May 2026** (applications 9–20 Apr 2026). **No 2026B or 2027 call as of 2026-11-16.** | May every year for all levels, plus an October session for B1 in Greece only (the last one was Fri 23 Oct 2026). **May 2027: registration 1 Feb – 14 Mar 2027, B1 written exam Thu 13 May 2027** (verified, [ΚΕΓ node/15](https://www.greek-language.gr/certification/node/15.html)). Nothing later is announced. | Twice a year, about May and November. Procurement for Nov 2026 and Apr 2027 is published. |
+| Fee | €50, or €20 for history only (verified, ΚΥΑ art. 9 §4 and the 2026 call). Places are capped (**1,000** in 2026A) and allocated by order of application. | Unverified (the fee table could not be read reliably) | A fee applies; the amount is unverified |
+| Past papers | Official papers, answer keys and audio for 2022, 2024 and 2026A in the current format (older ones in earlier formats), plus the history syllabus | Two undated sample series on the ΚΕΓ site, with one MP3 and no answer keys | Official published question bank (the language part alone is 400+ pages) |
 
 Verified: the A2-LTR structure and points, from the [2026A written paper](https://www.gsvetlly.minedu.gov.gr/ellinomatheia) and the exam page. The B1 structure, from the [ΚΕΓ B1 structure table](https://www.greek-language.gr/certification/node/119.html). The [May 2027 registration dates](https://www.greek-language.gr/certification/news/show.html?id=94). The ΠΕΓΠ sections and pass marks, from [mitos.gov.gr](https://mitos.gov.gr/index.php/%CE%94%CE%94:%CE%95%CE%BE%CE%B5%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82_%CE%B1%CF%80%CF%8C%CE%BA%CF%84%CE%B7%CF%83%CE%B7%CF%82_%CE%A0%CE%B9%CF%83%CF%84%CE%BF%CF%80%CE%BF%CE%B9%CE%B7%CF%84%CE%B9%CE%BA%CE%BF%CF%8D_%CE%95%CF%80%CE%AC%CF%81%CE%BA%CE%B5%CE%B9%CE%B1%CF%82_%CE%93%CE%BD%CF%8E%CF%83%CE%B5%CF%89%CE%BD_%CE%B3%CE%B9%CE%B1_%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%BF%CE%B3%CF%81%CE%AC%CF%86%CE%B7%CF%83%CE%B7).
 
-Unverified, still to check:
-- The B1 date of 13 May 2027 comes from a Ministry of Foreign Affairs copy of the ΚΕΓ schedule.
-- The A2-LTR fee and cap come from a 2024 news report of the official call ([alfavita](https://www.alfavita.gr/ekpaideysi/446349_pote-tha-diexahthoyn-oi-exetaseis-pistopoiisis-ellinikis-glossas-gia-polites)).
-- A2-LTR speaking parts and timing. Phase 5 reads them from the 2026A oral paper.
+Re-checked on 2026-11-16 (phase 5):
+- The B1 date of 13 May 2027 and the registration window are now verified on ΚΕΓ's own page.
+- The A2-LTR fee is verified; the cap of 2,300 from a 2024 news report was wrong for 2026A, which had 1,000 places.
+- A2-LTR speaking is read from the 2026A oral paper (§1.3).
+- From October 2026, ΚΕΓ marks B1 reading and listening by machine from a shaded answer sheet; only the answer sheet counts ([news id=97](https://www.greek-language.gr/certification/news/show.html?id=97)).
+
+Still unverified:
+- The 2024 amendment of the A2-LTR decision (ΚΥΑ 25047/Κ1/2024, Β' 1776): its link on the official site returns 404, so any change it made is unread.
+- The split of the speaking points into parts, for both exams. No marking criteria are published for A2-LTR writing or speaking.
 
 ### 1.3 The A2-LTR exam in detail (from the 2026A paper)
 
@@ -58,7 +63,41 @@ Unverified, still to check:
 | Listening | 20 | 25 min | Voice message: fill in the missing information from options, with distractors (5 pts) | Dialogue heard twice: multiple choice (10 pts) | Six short dialogues: pick the place where each happens, with distractors (5 pts) |
 | Reading | 20 | 30 min | Gapped text with a word bank and distractors (6 pts) | Ten public notices (pharmacy hours, offices…): 14 true/false statements (14 pts) | — |
 | Writing | 20 | 40 min | Semi-formal e-mail, 40–60 words, with required content points (10 pts) | Friendly e-mail or invitation, 40–60 words (10 pts) | — |
-| Speaking | 20 | separate | Recorded test with examiners, including a short role-play between candidates (details unverified) | | |
+| Speaking | 20 | 12 min per pair | Personal questions from the examiner (name, origin, how long in Greece, home, free time, family, languages) | A pair of photos on one theme: 1 minute to look, then describe them and answer comparison and opinion questions | Role-play between the two candidates, from A and B cards (a phone call, advice, an office, a shop, a family disagreement) |
+
+Speaking is held by two assessors and recorded (ΚΥΑ art. 8, 12). The 2026A oral paper has one question set, 5 picture sets and 5 role-plays. **How the 20 points split between the parts, and the criteria, are not published** (verified absent, 2026-11-16). The writing criteria are not published either; when the two markers differ by more than 6 points, the Scientific Committee re-marks.
+
+### 1.3b The B1 exam in detail (ΚΕΓ structure table and guide, verified 2026-11-16)
+
+| Skill | Points | Time | Tasks |
+|---|---|---|---|
+| Reading | 25 | 40 min | 1. Matching, 6 items (6 pts) · 2. **Table comparison**, 12 × 0.5 (6 pts) · 3. True/false, 6 (6 pts) · 4. Gap fill from a bank with 6 distractors, 7 (7 pts). Texts of 150–200 words, authentic and fairly formal, including a literary extract. |
+| Listening | 25 | 25 min | 1. **Notes** from a 300-word monologue or interview, 12 (12 pts) · 2. **Table comparison** from a 2–3-person discussion of 350–400 words, 13 (13 pts). Each recording is heard twice; notes are written in lower case. |
+| Writing | 25 | 55 min | A. A friendly letter, notice or advert, **150 words** (12 pts) · B. A formal text (information, a request for permission with reasons, a complaint with reasons), **150 words** (13 pts). Marked holistically out of 25 (`docs/COACHING.md` §10). |
+| Speaking | 25 | about 12 min per pair | A. Warm-up questions · B. A monologue (for a photo: the feelings it shows, with reasons) · C. A role-play between the candidates "with a fair amount of argument". No preparation time except about 2 minutes for the role card. Per-part points unverified. |
+
+**What B1 adds over A2.** Sources: the ΚΕΓ A2 and B1 structure tables, the level descriptors ([A2](https://www.greek-language.gr/certification/node/98.html), [B1](https://www.greek-language.gr/certification/node/99.html)) and the B1 writing criteria footnotes.
+
+- **Texts.** Reading texts grow from 120–140 to 150–200 words. Writing grows from 2 × 80–100 words in 45 min to **2 × 150 words in 55 min**.
+- **Task types.** Table comparison and note-taking (`table_fill`) are new. Listening becomes two long recordings instead of four short ones.
+- **Grammar:**
+  - the passive voice in present, imperfect, future and aorist;
+  - reported speech;
+  - first-type conditionals;
+  - concessive, relative and adverbial clauses;
+  - periphrastic comparatives;
+  - the genitive;
+  - the subjunctive and the perfective imperative;
+  - impersonal verbs.
+- **Linking words:** ενώ, επειδή, αν και, καθώς, ότι/πως, δηλαδή, ίσως, ή…ή, είτε…είτε, ούτε…ούτε.
+- **Vocabulary and functions:**
+  - verbs of opinion and feeling (νομίζω, πιστεύω, χαίρομαι, λυπάμαι);
+  - giving and asking for advice and permission, justifying an opinion;
+  - formal letters: a job application, a complaint, the landlord, a hotel;
+  - domains: public services, health, work, education, shopping, leisure.
+- **Spelling:** final ‑ν, the άνω τελεία, ‑γ‑ in έλεγα/έτρωγα, and the φτ/φθ and χτ/χθ variants.
+
+The B1 blueprint lists these as `beyond_a2` entries, so coverage and the plan can track them.
 
 Two things about this exam shape the app:
 
@@ -75,7 +114,7 @@ The facts that bear on the choice:
 - **Availability favours B1 in practice.** The maintainer's experience is that A2-LTR sessions open rarely, and the record agrees: dates are announced late, places are capped, and there is no 2027 date yet. B1 has a fixed national calendar (May, plus October in Greece) and is offered at many accredited exam centres (universities, language schools), so it is easier to get a seat.
   - Only the Centre for the Greek Language's certificate counts under the law (art. 160 §1δ cites π.δ. 363/1998). Other institutes act as exam centres for that same exam; they do not issue their own certificates.
 - **B1's pass rule is harsher.** It needs at least 60% in *every* skill. A2-LTR needs 50 overall and lets one unit be weak.
-- **The starting point matters most.** The learner currently reads Greek letters slowly and plans 20 minutes a day. That is about 2.3 hours a week, or 10 a month. ΚΕΓ's rough estimate is 120–180 teaching hours for A2 and 180–250 for B1. On the app alone, that puts A2 about 12–18 months away and B1 about 18–24 months away. An evening course at 6 h/week roughly triples the pace. That would make A2 by mid-2027 and B1 by late 2027 plausible.
+- **The starting point matters most.** The learner currently reads Greek letters slowly and plans 20 minutes a day. That is about 2.3 hours a week, or 10 a month, if every day; on weekdays only it is about 1.7 hours a week. ΚΕΓ's rough estimate is 120–180 teaching hours for A2 and 180–250 for B1. On the app alone, that puts A2 about 12–18 months away and B1 about 18–24 months away. An evening course at 6 h/week roughly triples the pace. That would make A2 by mid-2027 and B1 by late 2027 plausible.
 - **May 2027 B1 is not realistic from here without a course.** The app will say so in numbers rather than let the learner find out at the exam.
 
 **Decision: version 1 ships both blueprints, `b1-keg` and `a2ltr`.** The learning path is the same for the first months, since A2 is on the way to B1. The readiness screen shows the learner's standing against both pass rules. The plan picks the first realistic session of either and re-plans as dates are announced. The learner decides what to book.
@@ -115,7 +154,8 @@ What the maintainer has told us so far (2026-11-15):
 - **AI:** wants to *use* the subscription he pays for. That means a chat tutor in Greek, fresh content every day, feedback on speaking, and agent work that runs on a schedule.
 - **Devices:** laptop and phone.
 - **Course:** wants the University of Athens programme ([program of courses](https://en.greekcourses.uoa.gr/program_of_courses)). Thought the next enrolment was around May, so planned to cover A1–A2 alone until then and treat the course as extra.
-  - **Correction from the research:** registration is still open for the **6-month course, 1 Dec 2026 – 14 May 2027**, at 8 h/week or 15 h/week. A **3-month course** runs **22 Feb – 14 May 2027** at 15 h/week. The online A1/A2 courses also take a second-semester intake in March 2027.
+  - **Correction from the research (2026-11-15):** registration seemed open for the **6-month course, 1 Dec 2026 – 14 May 2027**, at 8 h/week or 15 h/week. A **3-month course** runs **22 Feb – 14 May 2027** at 15 h/week. The online A1/A2 courses also take a second-semester intake in March 2027.
+  - **Re-checked in phase 5 (2026-11-16):** the 8 h/week 6-month course does meet in the evening, 17:00–21:00, but its registration closed on 11 Nov 2026. The online A1 and A2 courses start on 1 Mar 2027, with registration 15–23 Feb 2027 and evening slots after 20:30 (in `learner/coach/watch.json`).
   - The 8-month and citizenship courses are closed.
   - A placement test is held before each course, a teaching hour is 45 minutes, and the minimum class size is 15. Fees and textbook are not listed on the page.
   - **The maintainer's answer:** he will enrol in the first course that fits, but **it must be after 17:00**. None of the currently open courses fits on dates or hours. So the course page is watched (§6, `watch`), and the class side of `capture` is built but not on the critical path.
@@ -356,6 +396,27 @@ Greek text is NFC-normalised UTF-8 and monotonic. Final sigma is `ς`. Translati
 
 These are facts about a public exam: units, points, times, task ids with type and point value, pass rule, and source links with the date they were checked. Each blueprint also has a `watch` list: the official pages where dates and registration windows are announced, which the `watch` skill checks. Phase 5 writes `exams/a2ltr.json` from §1.3 and `exams/b1-keg.json` from the ΚΕΓ structure table and exam guide. Official papers are never copied into the repo; the coach can download them into `content/private/official-a2ltr/` for the learner, after asking.
 
+Phase 5, as built (`src/greek_coach/exams.py`, validated on load and exported by `greek-coach schema`):
+
+- **Top level:** `id`, `title`, `short` ("A2+", "B1"), `level`, `task_prefix` (`a2ltr`, `b1keg`), `checked_at`, `total_points`, `hours_estimate` (ΚΕΓ teaching hours, cumulative), `sessions_note`, `sources`, `watch` and, for B1, `beyond_a2`.
+- **`pass_rule`:** `{min_total, unit_min_share, units_needed, text}`.
+  - B1: `{null, 0.6, 4}`.
+  - A2-LTR: `{50, 0.5, 4}` (4 of 5 units).
+  - `exams.passes()` applies it.
+- **`units[]`:** `id`, `skill`, `points`, `minutes`, `marked_by` (`app` or `coach`), `technique` (short practical advice, en/tr), `note` and `tasks[]`.
+  - Each task has `id`, `title`, `types` (the item types that train it), `questions`, `points`, `points_verified` (false for the unpublished speaking split) and `words`.
+  - The loader checks that task points add up to the unit and units to the total.
+- **`beyond_a2[]`:** what B1 adds over A2 (§1.3b), each with a `match` rule (grammar tag prefixes, topics, exam tasks) so coverage can count it.
+- **Tagging** (§1.5): `validate` checks that an item's `exam_task` exists, that its `type` is one the task uses and that its `skill` is the unit's. An item below the exam's level trains the format but is not readiness evidence.
+- **`exams/watch-sources.json`** now holds only the course page; the exam pages moved into the blueprints.
+
+### 4.7 `table_fill` (phase 5, as built)
+
+- **Format:** `columns`, `rows`, an `answer` grid where each cell is a list of accepted strings (or one string), or `null` for a cell that is not asked, plus an optional `given` grid shown in those cells.
+- **Checking:** each asked cell is typed and checked like `form`, accent-tolerant, with a leading article optional. The response is `{"answers": [...]}`, one string per asked cell, in reading order.
+- **Note-taking** (B1 listening 1) is a one-column table.
+- **Audio:** `stimulus` gained `start`/`end` (seconds), so one official recording can serve the separate parts of a rebuilt paper. The browser plays only that range.
+
 ### 4.6 Answer checking (deterministic, in the app)
 
 - Selection types: exact index or value match. `true_false`, `match`, `gap_bank`, `categorise` and `table_fill` score per sub-answer. An item's score is the fraction correct; it counts as "correct" for scheduling only if everything is right.
@@ -401,7 +462,8 @@ Copying the folder to another machine must keep working, so the database stores 
 | `lookups` | id, ts, item_key, word | app |
 | `flags` | id, ts, item_key, reason (`wrong`, `confusing`, `audio`), note, resolved_at, resolution | app; the coach resolves |
 | `submissions` | id, item_key, session_id, attempt_id, ts, kind (`writing`, `speaking`), text, recording_path, word_count, status (`new`, `marked`), feedback_path, feedback_seen_at | app; the coach marks by writing `feedback/<id>.json`, and the app sets `marked` when it sees the file |
-| `mock_runs` | id, blueprint, started_at, finished_at, unit_scores_json, status | app (phase 5) |
+| `mock_runs` | id, blueprint, mock_id, started_at, finished_at, status (`running`, `finished`, `abandoned`), unit_scores_json | app (phase 5, migration 0004) |
+| `mock_sections` | id, run_id, unit, session_id (kind `mock`), started_at, ends_at, closed_at, closed_by (`learner`, `time`, `time_away`), answers_json (drafts), last_saved_at, result_json | app (phase 5) |
 
 Migrations are numbered SQL files applied at start-up, so an older database upgrades itself (phase 6 tests this).
 
@@ -436,6 +498,26 @@ The coach does not parse SQLite by hand. `uv run greek-coach report [--since 14d
 
 This is the stable contract between app and agent. The coach writes only files (packs, feedback, notes, message, plan, profile), never the database.
 
+### 5.3 Readiness (phase 5, as built: `src/greek_coach/readiness.py`)
+
+The maintainer books an exam from this, so false confidence is worse than no estimate. Per exam, per unit:
+
+- **Evidence is the first attempt at each item tagged for that exam, at its level or above**, in the last 90 days, at most the 20 most recent per task.
+  - A repeat of an item measures memory of it, so it never counts.
+  - A2 practice is not B1 evidence.
+  - Mock answers are first attempts too, and are counted as timed.
+- **Writing and speaking** count only the coach's feedback scores (`score.exam`, `score.task`, `points/out_of`). The app never scores them.
+- **Per task:** the mean item score (share of sub-answers right) with a Wilson 80% interval, where n is the number of items, not sub-answers.
+  - Unit points are Σ task points × share.
+  - The low and high ends add the task ends, which is conservative.
+  - A task with no evidence spans its whole range, and its share in the point estimate is assumed from the unit's other tasks (shown as assumed).
+- **No number** is shown when a unit has fewer than 6 first attempts (2 coach marks for writing and speaking), or a task worth ≥25% of the unit has none.
+- **States:** `above` (low end ≥ pass line), `below` (high end < pass line), `unclear`, `no_evidence`.
+- **The exam verdict** applies the real rule to every unit's low end (`pass`) and high end (`fail`); otherwise `unclear`. A unit with no evidence counts as 0 for the low end and full marks for the high end.
+- **Coverage** per task: items available, tried, and unseen at level. It also covers untagged general practice and B1's `beyond_a2`.
+
+The report gains `readiness`, `readiness_rules`, `coverage`, `plan_inputs`, `plan_progress` and `mocks` (`report_version: 2`).
+
 Phase 4, as built (`src/greek_coach/report.py`, `report_version: 1`):
 - **More fields:**
   - `recent_wrong`: what was answered against what was right;
@@ -468,8 +550,8 @@ The learner never has to know skill names. Plain sentences ("set this up", "coac
 | `watch` | scheduled weekly, or in check-in if older than 7 days, or "any exam dates?" | the `watch` URLs in the blueprints and the course page | `coach/watch.json`. The app shows the next date or registration window on the home screen, and the coach mentions changes in plain words. | 4 |
 | `rebuild-imported` | "turn lesson 5 into exercises" | `content/private/*/raw/` | clean, checkable items in the private pack, `status: ok` only after self-check | 4 |
 | `import-material` | "import my old project / this book" | the source folder plus a mapping | a private pack plus an import report with counts | 3 |
-| `plan` | inside check-in, or "make me a plan" | profile (target session, minutes/week), `report`, blueprint | `coach/plan.json`, plus an honest one-line verdict on whether the target is realistic | 5 |
-| `mock-exam` | "give me a mock exam" | blueprint, generated and private items | a mock pack in `generated/`; after the run, marks the writing and records the result | 5 |
+| `plan` | inside check-in, or "make me a plan" | profile (minutes, days_per_week), `report` (`plan_inputs`, `plan_progress`, readiness), blueprints, `watch.json` | `coach/plan.json`, plus an honest one-line verdict on whether the target is realistic; re-plans each check-in and says what to drop when behind | 5 |
+| `mock-exam` | "give me a mock exam" | blueprint, generated and private items (official papers in `content/private/official-a2ltr/`) | items in `generated/coach-mock/` (or a private pack for official papers) and `coach/mocks/<id>.json`; after the run, marks the writing and speaking | 5 |
 | `update`, `backup` | "update the app", "back up my progress" | git, `learner/` | `git pull` + `uv sync` + migration check; a zip in `learner/backups/` | 6 |
 
 **Scheduling** is set up by `setup` or on request, and only after the learner says yes, because it is standing configuration on their machine.
@@ -673,7 +755,7 @@ Phase 3 additions (2026-11-16):
   - `POST /api/lookup`, `POST /api/flag` and `POST /api/reload`, the last for the coach after writing a pack;
   - `GET /packs/<id>/audio/<file>` and `GET /audio-cache/<pack>/<item>`, both with path traversal blocked.
 - **JSON Schemas** for agents: `greek-coach schema` writes them to `schemas/`.
-- **`table_fill` waits for phase 5**, as the phase-3 prompt allows.
+- **`table_fill` waited for phase 5**, as the phase-3 prompt allows (built in phase 5, §4.7).
 
 Phase 4 additions (2026-11-16):
 - **The coach changes things through files.** The app takes them in on start, on `/api/reload` and on `/api/home`:
@@ -699,7 +781,7 @@ Phase 4 additions (2026-11-16):
   - the home screen shows a failed run, or one missing for two periods;
   - the agent is found on PATH or in its installer's default folder (`~/.local/bin`, the npm folder), because a scheduled task's PATH often lacks them;
   - **the command-line agent must be signed in.** On the maintainer's machine `claude -p` answered "Not logged in" although the desktop app is signed in. The run records that line, the home screen shows the failure, and the `daily-prep` skill tells the learner how to sign in once.
-- **Exam watch sources** live in `exams/watch-sources.json` until phase 5 writes the blueprints.
+- **Exam watch sources** lived in `exams/watch-sources.json` until phase 5 moved them into the blueprints.
 - **Writing criteria:** the ΚΕΓ A2 and B1 holistic writing scales, out of 25 with 15 to pass, were verified on 2026-11-16 and summarised in `docs/COACHING.md` §10. The A2-LTR writing criteria were not found; the coach marks those tasks out of 10 and labels the score unverified.
 - **New commands:** `greek-coach reload`, so the coach can refresh the running app on any OS, and `greek-coach raw`.
 - **Open content:** `open-everyday-a1a2` gained 2 `write` prompts and 2 `speak` cards, so the weekly slot works without a coach.
@@ -713,3 +795,24 @@ Phase 4 additions (2026-11-16):
 5. **Selection-first exercise design and an on-screen keyboard**, because typing Greek is a barrier the design did not mention.
 6. **The old vocabulary is not the textbook's.** The design assumed it mirrored the lessons. It is still useful, but it needs gender enrichment and does not follow the course order.
 7. **More agent, same independence.** The design treated the agent as an occasional coach. The maintainer wants to use the subscription fully, so the tutor, daily prep, speaking feedback and watch are added. The rule that the app works without an agent running is unchanged.
+
+## 13. Phase 5 additions (2026-11-16)
+
+- **Mock exams** (`src/greek_coach/mock.py`, migration 0004):
+  - The coach defines a mock as `learner/coach/mocks/<id>.json`: a blueprint and, per unit, the items in paper order.
+  - The app times each section with the blueprint's minutes, on the server's clock. Answers are saved as drafts, and there is no feedback until hand-in. The learner can go back and change answers within a section.
+  - **An interrupted section keeps its clock running, as in the exam** (the maintainer's choice, 2026-11-16). Coming back in time resumes with the time left and the saved answers. Coming back late finds the section closed with what was saved (`time_away`), and the readiness screen says so.
+  - On closing, each answered item becomes a normal attempt in a `mock` session, so it feeds readiness and the review schedule.
+  - Points follow the blueprint: task points × the share of its questions right; an unanswered item counts as wrong.
+  - Items of a mock not yet taken stay out of daily sessions, so the mock is a first sight.
+  - `GREEK_COACH_MOCK_SPEED` (development only) makes mock time pass faster, for checking the timing.
+- **Speaking in a mock:** one `speak` card per exam part, recorded in the browser. The coach marks each recording with an estimated score on that part's scale, labelled unverified because neither exam publishes its speaking criteria. Without a recording the part is not scored.
+- **The plan** (`coach/plan.json`, `src/greek_coach/plan.py`):
+  - The report's `plan_inputs` gives the candidate sessions from `watch.json`, the weeks left, the real pace (minutes per week over 4 weeks) against the budget (`profile.minutes × profile.days_per_week`), the hours practised, ΚΕΓ's hour guide and a crude realism hint.
+  - `plan_progress` checks planned against done for each past week.
+  - The exam screen shows the verdict, the current week and the next four weeks.
+  - The daily session's exam-task slot prefers the current plan week's focus units.
+- **The exam screen** (`?exam`): both exams side by side, each unit's estimate as a range against the pass line or "not enough evidence", the evidence behind it, coverage, the B1 additions, technique, the plan, the dates and the mocks. The home screen shows one bar per unit of the selected exam.
+- **Official A2-LTR papers** (approved 2026-11-16): downloaded into `content/private/official-a2ltr/`, never tracked. They are rebuilt into private items by the `mock-exam` skill.
+- **Open content:** `open-b1-bridge` (B1 tasks including `table_fill`, two 150-word writing prompts, two speaking cards and B1 grammar forms). Mis-tagged open items were retagged to the blueprint task ids.
+

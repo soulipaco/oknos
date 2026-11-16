@@ -21,7 +21,7 @@
                     {"en": "the day and time", "tr": "gün ve saat"},
                     {"en": "what to bring", "tr": "ne getireceği"}]},
 
-  {"id": "s-neighbourhood", "type": "speak", "skill": "speaking", "exam_task": "a2ltr.speaking.monologue", "level": "A2", "topics": ["neighbourhood"],
+  {"id": "s-neighbourhood", "type": "speak", "skill": "speaking", "exam_task": "a2ltr.speaking.personal", "level": "A2", "topics": ["neighbourhood"],
    "rubric": {"el": "Μιλήστε για περίπου ένα λεπτό.", "en": "Speak for about one minute.", "tr": "Yaklaşık bir dakika konuşun."},
    "prompt": {"el": "Μιλήστε για τη γειτονιά σας: πού μένετε, τι σας αρέσει και τι δεν σας αρέσει.",
               "en": "Talk about your neighbourhood: where you live, what you like and what you don't like.",
@@ -32,7 +32,7 @@
              "tr": "Merkeze yakın bir mahallede oturuyorum. Seviyorum çünkü güzel bir meydanı ve bir sürü dükkânı var. Trafiği ve kolayca park yeri bulamamayı sevmiyorum."},
    "useful": ["Μένω σε…", "Μου αρέσει γιατί…", "Δεν μου αρέσει…", "Κοντά στο σπίτι μου έχει…"]},
 
-  {"id": "s-my-day", "type": "speak", "skill": "speaking", "exam_task": "a2ltr.speaking.monologue", "level": "A2", "topics": ["work", "daily-life"],
+  {"id": "s-my-day", "type": "speak", "skill": "speaking", "exam_task": "a2ltr.speaking.personal", "level": "A2", "topics": ["work", "daily-life"],
    "rubric": {"el": "Μιλήστε για περίπου ένα λεπτό.", "en": "Speak for about one minute.", "tr": "Yaklaşık bir dakika konuşun."},
    "prompt": {"el": "Μιλήστε για μια συνηθισμένη μέρα σας: τι ώρα ξυπνάτε, τι κάνετε στη δουλειά και τι κάνετε το βράδυ.",
               "en": "Talk about an ordinary day: what time you get up, what you do at work and what you do in the evening.",

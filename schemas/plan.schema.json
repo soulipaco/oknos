@@ -1,0 +1,302 @@
+{
+  "$defs": {
+    "PlanOption": {
+      "additionalProperties": false,
+      "properties": {
+        "exam": {
+          "title": "Exam",
+          "type": "string"
+        },
+        "session": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Session"
+        },
+        "realistic": {
+          "enum": [
+            "yes",
+            "tight",
+            "no",
+            "unknown"
+          ],
+          "title": "Realistic",
+          "type": "string"
+        },
+        "why": {
+          "$ref": "#/$defs/Words"
+        }
+      },
+      "required": [
+        "exam",
+        "realistic",
+        "why"
+      ],
+      "title": "PlanOption",
+      "type": "object"
+    },
+    "PlanTarget": {
+      "additionalProperties": false,
+      "properties": {
+        "exam": {
+          "title": "Exam",
+          "type": "string"
+        },
+        "session": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Session"
+        },
+        "registration_closes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Registration Closes"
+        },
+        "source_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Url"
+        }
+      },
+      "required": [
+        "exam"
+      ],
+      "title": "PlanTarget",
+      "type": "object"
+    },
+    "PlanVerdict": {
+      "additionalProperties": false,
+      "properties": {
+        "realistic": {
+          "enum": [
+            "yes",
+            "tight",
+            "no",
+            "unknown"
+          ],
+          "title": "Realistic",
+          "type": "string"
+        },
+        "en": {
+          "title": "En",
+          "type": "string"
+        },
+        "tr": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tr"
+        }
+      },
+      "required": [
+        "realistic",
+        "en"
+      ],
+      "title": "PlanVerdict",
+      "type": "object"
+    },
+    "PlanWeek": {
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "title": "Start",
+          "type": "string"
+        },
+        "minutes": {
+          "maximum": 3000,
+          "minimum": 0,
+          "title": "Minutes",
+          "type": "integer"
+        },
+        "focus": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Focus",
+          "type": "array"
+        },
+        "content": {
+          "$ref": "#/$defs/Words"
+        },
+        "beyond_a2": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Beyond A2",
+          "type": "array"
+        },
+        "checkpoint": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Words"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "mock": {
+          "default": false,
+          "title": "Mock",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "start",
+        "minutes",
+        "content"
+      ],
+      "title": "PlanWeek",
+      "type": "object"
+    },
+    "Words": {
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "title": "En",
+          "type": "string"
+        },
+        "tr": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tr"
+        }
+      },
+      "required": [
+        "en"
+      ],
+      "title": "Words",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "made_at": {
+      "title": "Made At",
+      "type": "string"
+    },
+    "exam": {
+      "title": "Exam",
+      "type": "string"
+    },
+    "target": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/PlanTarget"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "budget_minutes_week": {
+      "maximum": 3000,
+      "minimum": 0,
+      "title": "Budget Minutes Week",
+      "type": "integer"
+    },
+    "pace_minutes_week": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Pace Minutes Week"
+    },
+    "verdict": {
+      "$ref": "#/$defs/PlanVerdict"
+    },
+    "options": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/PlanOption"
+      },
+      "title": "Options",
+      "type": "array"
+    },
+    "behind": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Words"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "drop": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Words"
+      },
+      "title": "Drop",
+      "type": "array"
+    },
+    "weeks": {
+      "items": {
+        "$ref": "#/$defs/PlanWeek"
+      },
+      "minItems": 1,
+      "title": "Weeks",
+      "type": "array"
+    }
+  },
+  "required": [
+    "made_at",
+    "exam",
+    "budget_minutes_week",
+    "verdict",
+    "weeks"
+  ],
+  "title": "Plan",
+  "type": "object"
+}

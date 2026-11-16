@@ -133,6 +133,16 @@ def main() -> int:
     area = next(a for a in stats["areas"] if a["area"] == "vocab")
     assert area["n"] == len(vocab) and abs(area["accuracy"] - sum(r[0] for r in vocab) / len(vocab)) < 1e-3
     print("\ncross-check: grid, vocabulary accuracy and counts match the attempts table.")
+
+    # Readiness per exam unit (SPEC §5.3): what the exam screen would show on the last day.
+    from greek_coach import readiness
+    print("\nreadiness (first attempts only, last 90 days):")
+    for exam, r in readiness.all_readiness(conn, catalog).items():
+        print(f"  {exam}: verdict {r['verdict']['state']}")
+        for u in r["units"]:
+            nums = (f"{u['estimate']} [{u['low']}-{u['high']}] of {u['points']}, line {u['pass_line']}"
+                    if u["estimate"] is not None else f"no number ({u['reason']})")
+            print(f"    {u['unit']:<10} {u['state']:<12} n={u['evidence']:<3} {nums}")
     return 0
 
 

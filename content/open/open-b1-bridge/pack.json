@@ -1,0 +1,10 @@
+{
+  "id": "open-b1-bridge",
+  "title": {"en": "Towards B1: exam-format tasks", "tr": "B1'e doğru: sınav formatında görevler", "el": "Προς το Β1: ασκήσεις σε μορφή εξετάσεων"},
+  "version": 1,
+  "levels": ["B1"],
+  "visibility": "open",
+  "licence": "CC-BY-SA-4.0",
+  "source": "Original, written for Greek Coach. Task formats follow the public ΚΕΓ B1 exam structure; no exam text is copied.",
+  "exam_blueprints": ["b1-keg"]
+}

@@ -13,10 +13,10 @@ from datetime import date, timedelta
 from pathlib import Path
 from typing import Any
 
-from greek_coach import coachfiles, db, paths, scheduler, session
+from greek_coach import coachfiles, db, mock, paths, plan, readiness, scheduler, session
 from greek_coach.packs import Catalog, FormItem, SELECTION_TASKS, SpeakItem, VocabItem, WriteItem
 
-REPORT_VERSION = 1
+REPORT_VERSION = 2
 PROFILE_QUESTIONS = ("ui_lang", "minutes", "goal", "target_exam", "interests")
 
 
@@ -135,7 +135,7 @@ def _right_answer(item, card: dict) -> Any:
         return {"text": item.text, "answer": item.answer, "cue": item.cue.model_dump(exclude_none=True) if item.cue else None}
     data = item.model_dump(mode="json", exclude_defaults=True)
     return {k: data[k] for k in ("prompt", "options", "answer", "statements", "left", "right", "bank", "text",
-                                  "categories", "items") if k in data}
+                                  "categories", "items", "columns", "rows") if k in data}
 
 
 def hardest(conn: sqlite3.Connection, catalog: Catalog, limit: int = 15) -> list[dict]:
@@ -274,9 +274,16 @@ def coach_state(today: date) -> dict:
     }
 
 
+def mocks_state(conn: sqlite3.Connection, catalog: Catalog) -> dict:
+    mock.expire(conn, catalog)
+    return {"defined": mock.definitions(catalog), "runs": mock.runs(conn, catalog, limit=10),
+            "reserved_items": len(mock.reserved_keys(conn))}
+
+
 def build(conn: sqlite3.Connection, catalog: Catalog, days: int = 14, with_words: bool = False) -> dict:
     today = db.today()
     profile = _read_profile()
+    ready = readiness.all_readiness(conn, catalog)
     return {
         "report_version": REPORT_VERSION,
         "generated_at": db.now(),
@@ -297,8 +304,14 @@ def build(conn: sqlite3.Connection, catalog: Catalog, days: int = 14, with_words
         "generated_stock": generated_stock(conn, catalog),
         "inbox": inbox(),
         "coach": coach_state(today),
-        "readiness": None,
-        "readiness_note": "Readiness per exam unit arrives in phase 5 (blueprints). Use accuracy.skill and accuracy.exam_task until then.",
+        "readiness": ready,
+        "readiness_rules": {"first_attempts_only": True, "window_days": readiness.EVIDENCE_DAYS,
+                            "per_task_max": readiness.PER_TASK_MAX, "unit_min": readiness.UNIT_MIN,
+                            "coach_min": readiness.COACH_MIN, "interval": "Wilson 80%, n = items"},
+        "coverage": readiness.all_coverage(conn, catalog, profile.get("ui_lang") or "en"),
+        "plan_inputs": plan.inputs(conn, profile, ready),
+        "plan_progress": plan.progress(conn, catalog),
+        "mocks": mocks_state(conn, catalog),
         "content": {"packs": [{"id": p.id, "visibility": p.manifest.visibility, "items": len(p.items)} for p in catalog.packs],
                     "problems": catalog.problems[:20]},
     }

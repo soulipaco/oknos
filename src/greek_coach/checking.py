@@ -19,6 +19,7 @@ from greek_coach.packs import (
     MatchItem,
     McqItem,
     SpeakItem,
+    TableFillItem,
     TrueFalseItem,
     VocabItem,
     WriteItem,
@@ -158,6 +159,18 @@ def check(item: Item, card: dict[str, Any], response: dict[str, Any]) -> Result:
             raise CheckError(f"a gap_bank answer needs an 'answers' object with the gaps {sorted(item.answer)}")
         parts = [isinstance(answers[g], str) and _same(answers[g], item.answer[g]) for g in gap_order(item.answer)]
         return _per_part(parts, item.answer)
+
+    if isinstance(item, TableFillItem):
+        cells = item.cells()
+        answers = response.get("answers")
+        if not isinstance(answers, list) or len(answers) != len(cells):
+            raise CheckError(f"a table_fill answer needs 'answers', a list of {len(cells)} cell texts in reading order")
+        parts, note = [], None
+        for given, (_, _, accepted) in zip(answers, cells):
+            typed = check_typed(given if isinstance(given, str) else "", accepted, article_optional=True)
+            parts.append(typed.ok)
+            note = note or typed.accent_note
+        return _per_part(parts, [accepted[0] for _, _, accepted in cells], note)
 
     if isinstance(item, WriteItem):
         if response.get("skipped") is True:

@@ -151,3 +151,45 @@ def unfamiliar_words(pack, known: set[str]) -> list[str]:
                     continue
                 seen.setdefault(f, w)
     return sorted(seen.values())
+
+
+# ---------- exam-task tags (coverage, SPEC §1.5) ----------
+
+TASK_ITEM_TYPES = {"mcq", "true_false", "match", "gap_bank", "categorise", "table_fill", "write", "speak"}
+LEVEL_RANK = {"A1": 0, "A2": 1, "B1": 2}
+
+
+def lint_tags(pack) -> tuple[list[str], list[str]]:
+    """An exam_task must name a blueprint task that this item's type and skill can train.
+
+    Problems: an unknown task id, a type the task does not use, a skill that is not the
+    task's unit. Notes: an item below the exam's level (it is practice, not evidence for
+    readiness), and, in coach packs, task-type items with no exam_task at all.
+    """
+    from greek_coach import exams
+
+    tasks = exams.all_task_ids()
+    problems: list[str] = []
+    notes: list[str] = []
+    untagged = []
+    for item_id, item in pack.items.items():
+        tag = item.exam_task
+        if not tag:
+            if item.type in TASK_ITEM_TYPES and item.skill not in ("vocab", "grammar"):
+                untagged.append(item_id)
+            continue
+        entry = tasks.get(tag)
+        if entry is None:
+            known = ", ".join(sorted(t for t in tasks if t.split(".")[:2] == tag.split(".")[:2])) or "see exams/*.json"
+            problems.append(f"{item_id}: exam_task '{tag}' is not a task in any blueprint (this unit has: {known})")
+            continue
+        bp, unit, task = entry
+        if item.type not in task.types:
+            problems.append(f"{item_id}: exam_task '{tag}' is trained by {task.types}, not by a '{item.type}' item")
+        if item.skill != unit.skill:
+            problems.append(f"{item_id}: exam_task '{tag}' is a {unit.skill} task, but the item's skill is '{item.skill}'")
+        if LEVEL_RANK.get(item.level, 0) < LEVEL_RANK[bp.level]:
+            notes.append(f"{item_id}: level {item.level} is below {bp.short}; it trains {tag} but does not count as readiness evidence")
+    if untagged and pack.manifest.visibility == "generated":
+        notes.append("task items without exam_task (they count only as general practice): " + ", ".join(untagged[:15]))
+    return problems, notes

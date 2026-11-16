@@ -61,6 +61,11 @@ def _answer(card, item, right: bool):
             g = sorted(ans)[0]
             ans[g] = next(w for w in item.bank if w != item.answer[g])
         return {"answers": ans}
+    if t == "table_fill":
+        cells = [acc[0] for _, _, acc in item.cells()]
+        if not right:
+            cells[0] = "λάθος"
+        return {"answers": cells}
     if t == "write":
         return {"text": "Αγαπητέ κύριε, το ασανσέρ δεν λειτουργεί."} if right else {"skipped": True}
     if t == "speak":

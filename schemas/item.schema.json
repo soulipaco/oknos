@@ -1154,9 +1154,234 @@
           ],
           "default": null,
           "title": "Plays"
+        },
+        "start": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Start"
+        },
+        "end": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "End"
         }
       },
       "title": "Stimulus",
+      "type": "object"
+    },
+    "TableFillItem": {
+      "additionalProperties": false,
+      "description": "Complete the cells of a table from a text or recording (SPEC §4.4). Note-taking is a\none-column table. Each cell lists its accepted answers; a null cell is given (shown filled).",
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "skill": {
+          "enum": [
+            "vocab",
+            "grammar",
+            "history",
+            "listening",
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "title": "Skill",
+          "type": "string"
+        },
+        "level": {
+          "enum": [
+            "A1",
+            "A2",
+            "B1"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "exam_task": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exam Task"
+        },
+        "topics": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "rubric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "stimulus": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Stimulus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "explain": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "status": {
+          "default": "ok",
+          "enum": [
+            "ok",
+            "needs_review"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "type": {
+          "const": "table_fill",
+          "title": "Type",
+          "type": "string"
+        },
+        "prompt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "columns": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Columns",
+          "type": "array"
+        },
+        "rows": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Rows",
+          "type": "array"
+        },
+        "answer": {
+          "items": {
+            "items": {
+              "anyOf": [
+                {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "title": "Answer",
+          "type": "array"
+        },
+        "given": {
+          "anyOf": [
+            {
+              "items": {
+                "items": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "type": "array"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Given"
+        }
+      },
+      "required": [
+        "id",
+        "skill",
+        "level",
+        "type",
+        "columns",
+        "rows",
+        "answer"
+      ],
+      "title": "TableFillItem",
       "type": "object"
     },
     "Text": {
@@ -1693,6 +1918,7 @@
       "match": "#/$defs/MatchItem",
       "mcq": "#/$defs/McqItem",
       "speak": "#/$defs/SpeakItem",
+      "table_fill": "#/$defs/TableFillItem",
       "true_false": "#/$defs/TrueFalseItem",
       "vocab": "#/$defs/VocabItem",
       "write": "#/$defs/WriteItem"
@@ -1720,6 +1946,9 @@
     },
     {
       "$ref": "#/$defs/CategoriseItem"
+    },
+    {
+      "$ref": "#/$defs/TableFillItem"
     },
     {
       "$ref": "#/$defs/WriteItem"

@@ -1,0 +1,43 @@
+[
+  {"id": "r-b1-compare-courses", "type": "table_fill", "skill": "reading", "exam_task": "b1keg.reading.compare", "level": "B1", "topics": ["education", "neighbourhood"],
+   "rubric": {"el": "Διαβάστε το κείμενο και συμπληρώστε τον πίνακα.", "en": "Read the text and complete the table.", "tr": "Metni okuyun ve tabloyu doldurun."},
+   "stimulus": {"text": "Αν ψάχνετε απογευματινό τμήμα ελληνικών, στη γειτονιά μας λειτουργούν δύο κέντρα. Το κέντρο «Λέξη» κάνει μαθήματα κάθε Δευτέρα και Τετάρτη. Τα μαθήματα αρχίζουν στις έξι το απόγευμα και κρατούν δύο ώρες. Κοστίζει 80 ευρώ τον μήνα και τα τμήματα έχουν το πολύ δέκα μαθητές. Το βιβλίο δεν περιλαμβάνεται στην τιμή· το αγοράζετε μόνοι σας από το βιβλιοπωλείο της γωνίας. Το «Λέξη» δεν κάνει διαδικτυακά μαθήματα. Το «Αλφάβητο», από την άλλη, έχει μαθήματα Τρίτη και Πέμπτη, από τις επτά ως τις εννιά. Είναι λίγο πιο ακριβό, 95 ευρώ τον μήνα, αλλά η τιμή περιλαμβάνει το βιβλίο και ένα διαδικτυακό μάθημα την εβδομάδα. Τα τμήματα εκεί είναι μεγαλύτερα, με δεκαπέντε μαθητές. Και τα δύο κέντρα κάνουν δωρεάν τεστ επιπέδου πριν από την εγγραφή."},
+   "columns": ["«Λέξη»", "«Αλφάβητο»"],
+   "rows": ["Ώρα έναρξης", "Τιμή τον μήνα (€)", "Μαθητές ανά τμήμα", "Βιβλίο στην τιμή (ναι/όχι)", "Διαδικτυακό μάθημα (ναι/όχι)"],
+   "answer": [
+     [["18:00", "18.00", "6", "6:00", "έξι", "στις έξι"], ["19:00", "19.00", "7", "7:00", "επτά", "εφτά", "στις επτά", "στις εφτά"]],
+     [["80"], ["95"]],
+     [["10", "δέκα"], ["15", "δεκαπέντε"]],
+     [["όχι"], ["ναι"]],
+     [["όχι"], ["ναι"]]
+   ],
+   "explain": {"en": "«από την άλλη» (on the other hand) introduces the second centre. «περιλαμβάνει» means includes.", "tr": "«από την άλλη» (öte yandan) ikinci merkezi tanıtır. «περιλαμβάνει» 'içerir' demektir."}},
+
+  {"id": "r-b1-tf-winter", "type": "true_false", "skill": "reading", "exam_task": "b1keg.reading.tf", "level": "B1", "topics": ["housing", "neighbourhood", "feelings"],
+   "rubric": {"el": "Διαβάστε το κείμενο και σημειώστε ΣΩΣΤΟ ή ΛΑΘΟΣ.", "en": "Read the text and mark TRUE or FALSE.", "tr": "Metni okuyun ve DOĞRU veya YANLIŞ işaretleyin."},
+   "stimulus": {"text": "Ο πρώτος μου χειμώνας στην Αθήνα ήταν πιο κρύος απ' όσο περίμενα. Είχα φέρει από την πατρίδα μου μόνο ένα λεπτό μπουφάν, γιατί όλοι μου έλεγαν ότι στην Ελλάδα έχει πάντα ήλιο. Το διαμέρισμα που νοίκιαζα ήταν παλιό και η θέρμανση άναβε μόνο δύο ώρες το βράδυ, επειδή ο διαχειριστής ήθελε να κάνει οικονομία στο πετρέλαιο. Τα πρωινά ξυπνούσα τρέμοντας και έπινα τον καφέ μου με το παλτό. Ένα Σάββατο η γειτόνισσα από τον δεύτερο όροφο, η κυρία Ρούλα, με είδε στη σκάλα και κατάλαβε αμέσως. Την άλλη μέρα χτύπησε την πόρτα μου με μια ηλεκτρική σόμπα και μια κουβέρτα που είχε πλέξει η ίδια. «Δεν τη χρειάζομαι πια», μου είπε, «τα παιδιά μου μένουν στη Θεσσαλονίκη». Από τότε πίνουμε καφέ μαζί κάθε Κυριακή, και τα ελληνικά μου έγιναν πολύ καλύτερα χάρη σε εκείνη."},
+   "statements": [
+     {"el": "Ο αφηγητής περίμενε έναν πιο ζεστό χειμώνα.", "en": "The narrator expected a warmer winter.", "tr": "Anlatıcı daha sıcak bir kış bekliyordu.", "answer": true},
+     {"el": "Ο αφηγητής έφερε μαζί του πολλά χοντρά ρούχα.", "en": "The narrator brought a lot of warm clothes.", "tr": "Anlatıcı yanında çok kalın giysi getirdi.", "answer": false},
+     {"el": "Η θέρμανση στο διαμέρισμα λειτουργούσε όλη τη νύχτα.", "en": "The heating in the flat worked all night.", "tr": "Dairedeki kalorifer bütün gece çalışıyordu.", "answer": false},
+     {"el": "Η κυρία Ρούλα έδωσε στον αφηγητή μια σόμπα και μια κουβέρτα.", "en": "Mrs Roula gave the narrator a heater and a blanket.", "tr": "Roula Hanım anlatıcıya bir soba ve bir battaniye verdi.", "answer": true},
+     {"el": "Τα παιδιά της κυρίας Ρούλας μένουν στην Αθήνα.", "en": "Mrs Roula's children live in Athens.", "tr": "Roula Hanım'ın çocukları Atina'da yaşıyor.", "answer": false},
+     {"el": "Χάρη στην κυρία Ρούλα, ο αφηγητής μιλάει τώρα καλύτερα ελληνικά.", "en": "Thanks to Mrs Roula, the narrator now speaks better Greek.", "tr": "Roula Hanım sayesinde anlatıcı artık daha iyi Yunanca konuşuyor.", "answer": true}
+   ]},
+
+  {"id": "r-b1-gaps-library", "type": "gap_bank", "skill": "reading", "exam_task": "b1keg.reading.gapbank", "level": "B1", "topics": ["neighbourhood", "education", "public_services"],
+   "rubric": {"el": "Συμπληρώστε τα κενά με τις λέξεις της λίστας. Τρεις λέξεις περισσεύουν.", "en": "Fill the gaps with words from the list. Three words are not needed.", "tr": "Boşlukları listedeki kelimelerle doldurun. Üç kelime fazladır."},
+   "text": "Η δημοτική βιβλιοθήκη της γειτονιάς μας άνοιξε ξανά μετά από δύο χρόνια {1}. Το κτίριο είναι πια πιο φωτεινό και έχει έναν μεγάλο χώρο για παιδιά. Οι κάτοικοι μπορούν να δανείζονται έως πέντε βιβλία για τρεις {2}, ενώ η κάρτα μέλους είναι {3} για όλους. Η βιβλιοθήκη οργανώνει επίσης μαθήματα ελληνικών για {4}, δύο φορές την εβδομάδα, το απόγευμα. Όπως μας είπε η υπεύθυνη, κυρία Αλεξίου, τα τμήματα γέμισαν {5}, γι' αυτό σκοπεύουν να ανοίξουν και δεύτερο. Όσοι θέλουν να {6} μπορούν να συμπληρώσουν μια αίτηση στο γραφείο του ισογείου. Τέλος, κάθε πρώτη Κυριακή του μήνα, συγγραφείς από την περιοχή θα {7} τα νέα τους βιβλία.",
+   "bank": ["εργασιών", "εβδομάδες", "δωρεάν", "ενήλικες", "αμέσως", "εγγραφούν", "παρουσιάζουν", "κλειστό", "γράφτηκε", "δανείζει"],
+   "answer": {"1": "εργασιών", "2": "εβδομάδες", "3": "δωρεάν", "4": "ενήλικες", "5": "αμέσως", "6": "εγγραφούν", "7": "παρουσιάζουν"},
+   "translation": {"en": "The municipal library of our neighbourhood reopened after two years of works. … Residents can borrow up to five books for three weeks, while the membership card is free for everyone. The library also runs Greek lessons for adults … the classes filled up at once … Those who want to enrol can fill in a form … local writers will present their new books.",
+                   "tr": "Mahallemizin belediye kütüphanesi iki yıllık çalışmadan sonra yeniden açıldı. … Sakinler üç haftalığına beş kitaba kadar ödünç alabiliyor, üyelik kartı ise herkes için ücretsiz. Kütüphane yetişkinler için Yunanca dersleri de düzenliyor … sınıflar hemen doldu … Kaydolmak isteyenler bir başvuru doldurabilir … bölgedeki yazarlar yeni kitaplarını tanıtacak."},
+   "explain": {"en": "Look at the grammar around each gap: after «για τρεις» a feminine plural noun, after «θα» or «να» a verb, after «είναι» a word that fits «η κάρτα».", "tr": "Her boşluğun çevresindeki dilbilgisine bakın: «για τρεις»ten sonra dişil çoğul bir isim, «θα» veya «να»dan sonra bir fiil, «είναι»den sonra «η κάρτα»ya uyan bir kelime."}},
+
+  {"id": "r-b1-match-ads", "type": "match", "skill": "reading", "exam_task": "b1keg.reading.match", "level": "B1", "topics": ["work", "neighbourhood"],
+   "rubric": {"el": "Ποια αγγελία ταιριάζει σε κάθε άτομο; Δύο αγγελίες περισσεύουν.", "en": "Which advert suits each person? Two adverts are not needed.", "tr": "Hangi ilan hangi kişiye uyuyor? İki ilan fazladır."},
+   "left": ["Ο Μιχάλης ψάχνει δουλειά για τα Σαββατοκύριακα.", "Η Σοφία θέλει να κάνει γυμναστική πριν από τη δουλειά.", "Ο Αχμέτ θέλει να βελτιώσει τα ελληνικά του.", "Η Λίνα χρειάζεται κάποιον να προσέχει τον σκύλο της τον Αύγουστο.", "Ο κύριος Πέτρου θέλει να πουλήσει το παλιό του ποδήλατο."],
+   "right": ["Γυμναστήριο «Ενέργεια»: ανοιχτό από τις έξι το πρωί, ειδική τιμή για πρωινά προγράμματα.", "Ζητείται σερβιτόρος για Σάββατο και Κυριακή σε καφετέρια της πλατείας.", "Αγοράζουμε μεταχειρισμένα ποδήλατα σε καλή κατάσταση. Πληρωμή αμέσως.", "Φοιτήτρια αναλαμβάνει να φροντίζει ζώα όσο λείπετε σε διακοπές.", "Δωρεάν μαθήματα ελληνικών για μετανάστες, κάθε Τρίτη απόγευμα στο δημαρχείο.", "Μαθήματα μαγειρικής για αρχάριους, κάθε Πέμπτη βράδυ.", "Πωλείται καινούργιο ποδήλατο βουνού σε τιμή ευκαιρίας."],
+   "answer": [1, 0, 4, 3, 2],
+   "explain": {"en": "Mr Petrou wants to sell, so he needs the shop that buys (Αγοράζουμε), not the advert that sells (Πωλείται).", "tr": "Petrou Bey satmak istiyor; bu yüzden satan ilana (Πωλείται) değil, satın alan dükkâna (Αγοράζουμε) ihtiyacı var."}}
+]

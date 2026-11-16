@@ -290,6 +290,9 @@ def cmd_validate(args) -> int:
         greek_problems, notes = lint.lint_pack(pack_dir)
         problems = problems + greek_problems
         if pack:
+            tag_problems, tag_notes = lint.lint_tags(pack)
+            problems += tag_problems
+            notes += tag_notes
             print(f"{pack.id}: {len(pack.items)} item(s) loaded" + (f", {later} of a type built in a later phase" if later else ""))
             if pack.manifest.visibility == "generated" and not args.quick:
                 if known is None:
@@ -482,11 +485,13 @@ def cmd_schedule(args) -> int:
 
 
 def cmd_schema(args) -> int:
-    from greek_coach import packs
+    from greek_coach import coachfiles, exams, packs
 
     out = paths.REPO_ROOT / "schemas"
     out.mkdir(exist_ok=True)
-    for name, schema in packs.json_schemas().items():
+    schemas = {**packs.json_schemas(), "blueprint": exams.json_schema(),
+               "plan": coachfiles.Plan.model_json_schema(), "mock": coachfiles.MockDef.model_json_schema()}
+    for name, schema in schemas.items():
         (out / f"{name}.schema.json").write_text(json.dumps(schema, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"wrote schemas/{name}.schema.json")
     return 0

@@ -76,15 +76,15 @@ def test_invalid_items_are_skipped_not_fatal(tmp_path):
         good,
         {"id": "no-meaning", "type": "vocab", "skill": "vocab", "level": "A1", "el": "το ταξί"},
         {"id": "bad-answer", "type": "mcq", "skill": "vocab", "level": "A1", "prompt": {"el": "?"}, "options": ["α", "β"], "answer": 5},
-        {"id": "later", "type": "table_fill", "skill": "reading", "level": "B1"},
+        {"id": "bad-table", "type": "table_fill", "skill": "reading", "level": "B1"},
         {"id": "typo", "type": "vocab", "skill": "vocab", "level": "A1", "el": "ο φίλος", "en": "friend", "colour": "x"},
         {"id": "ok", "type": "vocab", "skill": "vocab", "level": "A1", "el": "το ταξί", "en": "taxi"},
         "not an object",
     ])
     pack, problems, later = packs.load_pack(tmp_path / "p", "private")
     assert list(pack.items) == ["ok"]
-    assert later == 1
-    assert len(problems) == 5
+    assert later == 0
+    assert len(problems) == 6
     assert any("meaning" in p for p in problems)
     assert any("used twice" in p for p in problems)
 

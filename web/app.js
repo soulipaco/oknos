@@ -9,6 +9,7 @@ const state = {
   home: null,
   session: null,   // {session_id, cards, index, total, done}
   card: null,      // per-card UI state
+  mock: null,      // a mock-exam section in progress: {section_id, cards, answers, deadline, ...}
 };
 
 // ---------- small helpers ----------
@@ -167,9 +168,10 @@ document.addEventListener("keydown", (e) => {
   if (w && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); lookupWord(w); }
 });
 
-function translatable(greekEl, translation) {
-  // A Greek line with a "Translate" toggle underneath it.
-  if (!translation) return [greekEl];
+function translatable(greekEl, translation, { rubric = false } = {}) {
+  // A Greek line with a "Translate" toggle underneath it. In a mock exam only the rubric can be
+  // translated: a translation of the text or the statements would give answers away.
+  if (!translation || (state.mock && !rubric)) return [greekEl];
   const line = h("div", { class: "translation", hidden: true }, translation);
   const toggle = h("button", { class: "link-button small", type: "button" }, t("translate"));
   toggle.addEventListener("click", () => {
@@ -409,6 +411,8 @@ function coachPanel(coach) {
 }
 
 async function renderHome() {
+  clearInterval(state.mock?.timer);
+  state.mock = null;
   state.session = null;
   state.card = null;
   closePopover();
@@ -433,6 +437,7 @@ async function renderHome() {
       h("p", { class: "counts muted" }, first ? t("home_first") : todayLine(stats)),
     ),
     coachPanel(state.home.coach),
+    examPanel(state.home),
     ...(first ? [] : [consistencyGrid(stats), standing(stats)]),
   );
   document.getElementById("start").focus();
@@ -493,6 +498,11 @@ function renderCard() {
   const card = s.cards[s.index];
   state.card = { data: card, answered: false, started: performance.now(), audioPlays: 0, lookups: 0, tf: [], picks: {} };
   const body = (RENDERERS[card.type] || RENDERERS.mcq)(card);
+  if (state.mock) {
+    app.replaceChildren(...mockFrame(body));
+    mockRestore(card, body);
+    return;
+  }
   body.prepend(flagButton());
   app.replaceChildren(...sessionFrame(body));
   if (s.index === 0 && (state.home?.stats?.answers_total ?? 0) < 10) {
@@ -515,11 +525,11 @@ function optionList(options, greek, onPick) {
 
 function rubricLine(rubric) {
   if (!rubric?.el) return null;
-  return h("div", { class: "rubric" }, ...translatable(greekText(rubric.el, { cls: "el" }), tr(rubric)));
+  return h("div", { class: "rubric" }, ...translatable(greekText(rubric.el, { cls: "el" }), tr(rubric), { rubric: true }));
 }
 
 function checkRow(onCheck) {
-  const btn = h("button", { class: "primary", type: "button", disabled: true, onclick: onCheck }, t("check"));
+  const btn = h("button", { class: "primary", type: "button", disabled: true, onclick: onCheck }, state.mock ? t("mock_save") : t("check"));
   return [h("div", { class: "actions check-row" }, btn), btn];
 }
 
@@ -528,18 +538,26 @@ function listenBlock(card) {
   const st = card.stimulus;
   if (!st || !(st.audio || st.tts)) return null;
   const limit = st.plays || 2;
-  let used = 0;
+  // In a mock, items that share one recording (one dialogue, several questions) share its plays.
+  const playKey = st.audio ? `${st.audio}|${st.start || 0}` : card.item_key;
+  let used = state.mock ? (state.mock.plays[playKey] || 0) : 0;
   let audio = null;
-  const status = h("span", { class: "muted small" }, t("plays_left", { n: limit }));
-  const play = h("button", { class: "primary listen", type: "button" }, `▶ ${t("play")}`);
+  const status = h("span", { class: "muted small" }, t("plays_left", { n: Math.max(0, limit - used) }));
+  const play = h("button", { class: "primary listen", type: "button", disabled: used >= limit }, `▶ ${t("play")}`);
   const sources = [];
   if (st.audio) sources.push(`/packs/${encodeURIComponent(packOf(card.item_key))}/${st.audio.split("/").map(encodeURIComponent).join("/")}`);
   sources.push(`/audio-cache/${encodeURIComponent(packOf(card.item_key))}/${encodeURIComponent(idOf(card.item_key))}`);
+  const start = st.start || 0;
   async function getAudio() {
     for (const src of sources) {
       try {
         const r = await fetch(src, { method: "HEAD" });
-        if (r.ok) return new Audio(src);
+        if (r.ok) {
+          const a = new Audio(src);
+          // Only part of the file (one part of an exam recording): stop at `end`.
+          if (st.end) a.addEventListener("timeupdate", () => { if (a.currentTime >= st.end) a.pause(); });
+          return a;
+        }
       } catch { /* try the next */ }
     }
     return null;
@@ -547,9 +565,10 @@ function listenBlock(card) {
   play.addEventListener("click", async () => {
     if (used >= limit && !state.card.answered) return;
     if (audio === null) audio = (await getAudio()) || false;
-    if (audio) { audio.currentTime = 0; audio.play(); state.card.audioPlays += 1; }
+    if (audio) { audio.currentTime = start; audio.play(); state.card.audioPlays += 1; }
     else if (!speak(st.tts, 0.85)) { status.textContent = t("no_voice"); return; }
     used += 1;
+    if (state.mock) state.mock.plays[playKey] = used;
     if (!state.card.answered) {
       status.textContent = t("plays_left", { n: Math.max(0, limit - used) });
       if (used >= limit) play.disabled = true;
@@ -700,7 +719,7 @@ RENDERERS.match = (card) => {
     });
   };
   paint();
-  return h("article", { class: "card" }, rubricLine(card.rubric),
+  return h("article", { class: "card" }, rubricLine(card.rubric), stimulusBlock(card),
     card.prompt?.el ? greekText(card.prompt.el, { tag: "p", cls: "prompt-greek" }) : null,
     h("div", { class: "match" }, h("div", { class: "col" }, leftEls), h("div", { class: "col" }, rightEls)),
     row, h("div", { class: "slot" }));
@@ -780,6 +799,49 @@ RENDERERS.categorise = (card) => {
     h("div", { class: "cat-list" }, rows), row, h("div", { class: "slot" }));
 };
 
+RENDERERS.table_fill = (card) => {
+  // A table with typed cells (B1 comparison and note-taking). Each cell has its own Greek
+  // keyboard, shown while that cell has the focus.
+  const inputs = [];
+  const boards = [];
+  const send = () => {
+    if (inputs.some(i => !i.value.trim())) return;
+    submit({ answers: inputs.map(i => i.value) }, { tableInputs: inputs });
+  };
+  const [row, checkBtn] = checkRow(send);
+  const refresh = () => { checkBtn.disabled = inputs.some(i => !i.value.trim()); };
+  const head = h("tr", {}, h("th", {}), card.columns.map(c => h("th", { lang: "el" }, greekText(c))));
+  const body = card.rows.map((label, i) => h("tr", {},
+    h("th", { scope: "row", lang: "el" }, greekText(label)),
+    card.columns.map((_, j) => {
+      if (!card.cells[i][j]) return h("td", { class: "given el", lang: "el" }, card.given?.[i]?.[j] ?? "");
+      const { input, board } = greekInput(() => {
+        const next = inputs[inputs.indexOf(input) + 1];
+        if (next) next.focus(); else send();
+      }, `${label} · ${card.columns[j]}`);
+      input.classList.add("cell-input");
+      input.addEventListener("input", refresh);
+      input.addEventListener("focus", () => boards.forEach(b => { b.hidden = b !== board; }));
+      board.hidden = true;
+      inputs.push(input);
+      boards.push(board);
+      return h("td", {}, input);
+    })));
+  state.card.paintTable = (answer, parts) => {
+    inputs.forEach((input, k) => {
+      input.classList.add(parts[k] ? "right" : "wrong");
+      if (!parts[k]) input.after(h("span", { class: "fix el", lang: "el" }, `→ ${answer[k]}`));
+    });
+    boards.forEach(b => { b.hidden = true; });
+  };
+  if (boards[0]) boards[0].hidden = false;
+  return h("article", { class: "card" }, rubricLine(card.rubric), stimulusBlock(card),
+    card.prompt?.el ? greekText(card.prompt.el, { tag: "p", cls: "prompt-greek" }) : null,
+    h("div", { class: "table-wrap" }, h("table", { class: "fill-table" }, h("thead", {}, head), h("tbody", {}, body))),
+    h("p", { class: "muted small" }, t("table_hint")),
+    ...boards, row, h("div", { class: "slot" }));
+};
+
 function countWords(text) {
   return text.split(/\s+/).filter(w => /[\p{L}\p{N}]/u.test(w)).length;
 }
@@ -790,6 +852,7 @@ function openTaskPrompt(card) {
 }
 
 function skipButton() {
+  if (state.mock) return null;
   return h("button", { class: "link-button", type: "button", onclick: () => submit({ skipped: true }, { skipped: true }) },
     t("skip_today"));
 }
@@ -800,6 +863,14 @@ RENDERERS.write = (card) => {
   const counter = h("p", { class: "muted small word-count" }, t("word_count", { n: 0, lo, hi }));
   const save = h("button", { class: "primary", type: "button", disabled: true,
     onclick: () => submit({ text: input.value }, { typed: input }) }, t("write_save"));
+  if (state.mock) {
+    // In a mock, the text is saved as a draft while it is written, so an interruption loses nothing.
+    let timer = null;
+    input.addEventListener("input", () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => { if (input.value.trim()) mockSave({ text: input.value }, { quiet: true }); }, 1500);
+    });
+  }
   input.addEventListener("input", () => {
     const n = countWords(input.value);
     counter.textContent = t("word_count", { n, lo, hi });
@@ -901,6 +972,7 @@ function openTaskFeedback(card, result, ui) {
 
 async function submit(response, ui = {}) {
   const c = state.card;
+  if (state.mock) return mockSave(response, ui);
   if (!c || c.answered) return;
   c.answered = true;
   closePopover();
@@ -985,6 +1057,7 @@ function showFeedback(result, ui) {
     if (card.type === "match") state.card.paintMatch(result.answer, result.parts);
     if (card.type === "gap_bank") state.card.paintGaps(result.answer, result.parts);
     if (card.type === "categorise") state.card.paintCats(result.answer, result.parts);
+    if (card.type === "table_fill") state.card.paintTable(result.answer, result.parts);
     parts.push(h("p", {}, t("parts_score", { right: result.parts.filter(Boolean).length, total: result.parts.length })));
   }
   app.querySelector(".check-row")?.remove();
@@ -1155,6 +1228,389 @@ async function renderSubmission(id) {
   app.replaceChildren(topbarBack(renderWriting), h("section", { class: "summary writing" }, ...blocks));
 }
 
+// ---------- exam readiness ----------
+
+const UNIT_KEYS = { history: "unit_history", listening: "unit_listening", reading: "unit_reading", writing: "unit_writing", speaking: "unit_speaking" };
+const unitName = (u) => t(UNIT_KEYS[u] || u);
+const num = (x) => (x === null || x === undefined ? "–" : (Math.round(x * 10) / 10).toLocaleString(state.lang === "tr" ? "tr-TR" : "en-GB"));
+let homeExam = null;
+
+function chosenExam(ids) {
+  try { const saved = localStorage.getItem("gc-exam"); if (ids.includes(saved)) return saved; } catch { /* private mode */ }
+  const target = state.home?.target_exam;
+  return ids.includes(target) ? target : ids.includes("b1-keg") ? "b1-keg" : ids[0];
+}
+
+function readinessBar(u) {
+  // The scale is the unit's points; the pass line is marked; the estimate is a range, not a dot.
+  const pct = (x) => `${Math.max(0, Math.min(100, (x / u.points) * 100))}%`;
+  const bar = h("span", { class: `rbar ${u.state}` },
+    h("span", { class: "passline", style: `left:${pct(u.pass_line)}`, title: t("pass_line", { n: num(u.pass_line) }) }));
+  if (u.state !== "no_evidence") {
+    bar.append(h("span", { class: "range", style: `left:${pct(u.low)};width:calc(${pct(u.high)} - ${pct(u.low)})` }),
+      h("span", { class: "est", style: `left:${pct(u.estimate)}` }));
+  }
+  return bar;
+}
+
+function unitLine(u) {
+  if (u.state === "no_evidence") {
+    return u.marked_by === "coach" && u.evidence === 0 ? t("r_not_scored")
+      : u.reason === "major_task_missing" ? t("r_task_missing")
+      : t("r_not_enough", { n: u.evidence, need: u.evidence_needed });
+  }
+  return t("r_estimate", { est: num(u.estimate), low: num(u.low), high: num(u.high), points: num(u.points), line: num(u.pass_line) });
+}
+
+function verdictText(v, short) {
+  // The verdict, then which units decide it: below the line, too close, or without evidence.
+  const parts = [t(`verdict_${v.state}`, { exam: short })];
+  if (v.state === "no_evidence") return parts[0];
+  const list = (units) => (units || []).map(unitName).join(", ");
+  if (v.below?.length) parts.push(t("verdict_below", { units: list(v.below) }));
+  if (v.unclear?.length) parts.push(t("verdict_close", { units: list(v.unclear) }));
+  if (v.no_evidence?.length) parts.push(t("verdict_none", { units: list(v.no_evidence) }));
+  return parts.join(" ");
+}
+
+function examPanel(home) {
+  const brief = home.readiness;
+  if (!brief) return null;
+  const ids = Object.keys(brief);
+  homeExam = homeExam && ids.includes(homeExam) ? homeExam : chosenExam(ids);
+  const r = brief[homeExam];
+  const sw = h("div", { class: "lang-switch exam-switch", role: "group", "aria-label": t("exam") },
+    ...ids.map(id => h("button", { type: "button", "aria-pressed": String(id === homeExam), onclick: () => {
+      homeExam = id;
+      try { localStorage.setItem("gc-exam", id); } catch { /* fine */ }
+      renderHome();
+    } }, brief[id].short)));
+  const rows = r.units.map(u => h("div", { class: "area runit" },
+    h("span", { class: "area-name" }, unitName(u.unit)), readinessBar(u),
+    h("span", { class: "area-num small" }, u.state === "no_evidence" ? t("r_short_none") : `${num(u.estimate)}/${num(u.points)}`)));
+  return h("section", { class: "panel" },
+    h("div", { class: "panel-head" }, h("h2", {}, t("exam_today")), sw),
+    h("p", { class: "weakest" }, verdictText({ state: r.verdict, ...Object.fromEntries(["below", "unclear", "no_evidence"].map(st => [st, r.units.filter(u => u.state === st).map(u => u.unit)])) }, r.short)),
+    h("div", { class: "areas" }, rows),
+    h("p", {}, h("button", { class: "link-button", type: "button", onclick: renderExam }, t("exam_open"))));
+}
+
+function techniqueBlock(u) {
+  const lines = (state.lang === "tr" && u.technique.tr?.length ? u.technique.tr : u.technique.en);
+  return h("details", { class: "technique" }, h("summary", {}, `${unitName(u.id)} · ${t("minutes_n", { n: u.minutes })} · ${num(u.points)} ${t("points")}`),
+    h("ul", {}, lines.map(l => h("li", {}, l))), u.note ? h("p", { class: "muted small" }, tr(u.note)) : null);
+}
+
+function planSection(data) {
+  const p = data.plan;
+  const blocks = [h("h2", {}, t("plan_title"))];
+  if (!p) {
+    blocks.push(h("p", { class: "muted" }, t("plan_none")));
+  } else {
+    blocks.push(h("p", { class: `plan-verdict ${p.verdict.realistic}` }, (state.lang === "tr" && p.verdict.tr) || p.verdict.en));
+    if (p.stale) blocks.push(h("p", { class: "warn" }, t("plan_stale", { date: fmtDate(p.made_at) })));
+    if (p.short_weeks) blocks.push(h("p", { class: "warn" }, t("plan_behind", { n: p.short_weeks })));
+    const cur = p.weeks_so_far.find(w => w.state === "current");
+    const show = [...(cur ? [cur] : []), ...p.next_weeks].slice(0, 5);
+    blocks.push(h("ol", { class: "plan-weeks" }, show.map(w => h("li", { class: w.state || "next" },
+      h("div", { class: "plan-week-head" }, h("strong", {}, t("week_of", { date: fmtDate(w.start) })),
+        h("span", { class: "muted small" }, w.state === "current" ? t("plan_done_so_far", { done: Math.round(w.done_minutes), planned: w.minutes }) : t("plan_minutes", { n: w.minutes }))),
+      h("p", {}, tr(w.content)),
+      w.focus?.length ? h("p", { class: "muted small" }, w.focus.map(f => f === "foundations" ? t("foundations") : unitName(f)).join(" · ")) : null,
+      w.checkpoint ? h("p", { class: "small" }, `✓ ${tr(w.checkpoint)}`) : null))));
+    const past = p.weeks_so_far.filter(w => w.state !== "current").slice(-4);
+    if (past.length) {
+      blocks.push(h("p", { class: "muted small" }, t("plan_past"), " ",
+        past.map(w => `${fmtDate(w.start)}: ${Math.round(w.done_minutes)}/${w.minutes} min`).join(" · ")));
+    }
+  }
+  const pi = data.plan_inputs;
+  const facts = pi.candidates.map(c => h("li", {}, t("candidate_line", {
+    exam: data.exams.find(e => e.id === c.exam)?.short || c.exam, date: fmtDate(c.date), weeks: Math.round(c.weeks_left),
+    closes: c.registration_closes ? fmtDate(c.registration_closes) : "–", hours: Math.round(c.hours_at_pace),
+    need: `${c.hours_needed[0]}–${c.hours_needed[1]}` })));
+  for (const id of pi.exams_without_announced_date) {
+    facts.push(h("li", {}, t("candidate_none", { exam: data.exams.find(e => e.id === id)?.short || id })));
+  }
+  blocks.push(h("h3", {}, t("dates_title")), h("ul", { class: "facts" }, facts),
+    h("p", { class: "muted small" }, t("pace_line", { pace: pi.pace.minutes_week == null ? "–" : Math.round(pi.pace.minutes_week),
+      budget: pi.budget_minutes_week ?? "–", hours: num(pi.pace.hours_total) })));
+  return h("section", { class: "panel" }, ...blocks);
+}
+
+function mocksSection(data) {
+  const blocks = [h("h2", {}, t("mocks_title"))];
+  const defs = data.mocks.defined;
+  const runs = data.mocks.runs;
+  if (!defs.length) blocks.push(h("p", { class: "muted" }, t("mocks_none")));
+  for (const d of defs) {
+    const run = runs.find(r => r.mock_id === d.id && r.status === "running");
+    const done = runs.find(r => r.mock_id === d.id && r.status !== "running");
+    const exam = data.exams.find(e => e.id === d.blueprint);
+    blocks.push(h("div", { class: "mock-row" },
+      h("div", {}, h("strong", {}, tr(d.title) || `${exam?.short || d.blueprint} · ${fmtDate(d.created)}`),
+        h("p", { class: "muted small" }, d.sections.map(s => `${unitName(s.unit)} ${s.minutes}′`).join(" · ")),
+        d.problems.length ? h("p", { class: "warn small" }, d.problems.join("; ")) : null),
+      d.ok && !done ? h("button", { class: run ? "primary" : "secondary", type: "button", onclick: async () => {
+        try { const r = await api(`/api/mocks/${encodeURIComponent(d.id)}/start`, {}); renderMockRun(r.run_id); } catch { showError(); }
+      } }, run ? t("mock_continue") : t("mock_start")) : null));
+  }
+  const past = runs.filter(r => r.status !== "running");
+  if (past.length) {
+    blocks.push(h("h3", {}, t("mock_results")), h("ul", { class: "facts" }, past.map(r => h("li", {},
+      h("button", { class: "link-button", type: "button", onclick: () => renderMockRun(r.run_id) },
+        `${data.exams.find(e => e.id === r.blueprint)?.short || r.blueprint} · ${fmtDate(r.started_at)}: ${num(r.total)}/${num(r.total_out_of)}`
+        + (r.would_pass === true ? ` · ${t("mock_pass")}` : r.would_pass === false ? ` · ${t("mock_fail")}` : ""))))));
+  }
+  return h("section", { class: "panel" }, ...blocks);
+}
+
+async function renderExam() {
+  closePopover();
+  state.mock = null;
+  let data;
+  try { data = await api("/api/exam"); } catch { return showError(); }
+  const examCards = data.exams.map(e => {
+    const r = e.readiness;
+    const rows = r.units.map(u => {
+      const spec = e.units.find(x => x.id === u.unit);
+      const cov = e.coverage.tasks.filter(c => c.unit === u.unit);
+      const mockLine = u.mock ? t("r_mock", { date: fmtDate(u.mock.date), points: num(u.mock.points), out_of: num(u.mock.out_of) })
+        + (u.mock.closed_by === "time_away" ? ` · ${t("r_mock_away")}` : u.mock.unanswered ? ` · ${t("r_mock_unanswered", { n: u.mock.unanswered })}` : "")
+        : t("r_untimed");
+      return h("div", { class: `exam-unit ${u.state}` },
+        h("div", { class: "area runit" }, h("span", { class: "area-name" }, unitName(u.unit)), readinessBar(u),
+          h("span", { class: `chip state-${u.state}` }, t(`state_${u.state}`))),
+        h("p", { class: "small" }, unitLine(u)),
+        h("p", { class: "muted small" }, u.state === "no_evidence" ? "" : t("r_evidence", { n: u.evidence, timed: u.timed, date: u.last ? fmtDate(u.last) : "–" }), " ", mockLine),
+        h("details", { class: "coverage" }, h("summary", { class: "small" }, t("coverage_title")),
+          h("ul", { class: "small" }, cov.map(c => {
+            const task = spec.tasks.find(x => x.id === c.id);
+            return h("li", {}, `${tr(task.title)}: `, t("coverage_line", { tried: c.tried, available: c.available, unseen: c.unseen_at_level }),
+              task.points_verified ? "" : ` (${t("points_unverified")})`);
+          }))));
+    });
+    const beyond = e.coverage.beyond_a2.length
+      ? h("details", { class: "coverage" }, h("summary", { class: "small" }, t("beyond_title")),
+          h("ul", { class: "small" }, e.coverage.beyond_a2.map(b => h("li", { class: b.tried ? "" : "muted" },
+            `${tr(b.title)}: `, b.tried ? t("beyond_tried", { n: b.tried, of: b.available }) : b.available ? t("beyond_unseen", { n: b.available }) : t("beyond_nothing")))))
+      : null;
+    return h("section", { class: "panel exam-card" },
+      h("h2", {}, e.short, h("span", { class: "muted small" }, ` · ${tr(e.title)}`)),
+      h("p", { class: `verdict-line ${r.verdict.state}` }, verdictText(r.verdict, e.short)),
+      h("p", { class: "muted small" }, tr(e.pass_rule.text)),
+      ...rows,
+      beyond,
+      h("details", { class: "coverage" }, h("summary", { class: "small" }, t("technique_title")), e.units.map(techniqueBlock)),
+      e.sessions_note ? h("p", { class: "muted small" }, tr(e.sessions_note)) : null,
+      h("p", { class: "muted small" }, t("checked_on", { date: fmtDate(e.checked_at) })));
+  });
+  app.replaceChildren(topbarBack(renderHome),
+    h("section", { class: "summary" }, h("h1", {}, t("exam_title")), h("p", { class: "muted" }, t("exam_honest"))),
+    ...examCards, planSection(data), mocksSection(data),
+    h("p", { class: "muted small" }, t("exam_legal")));
+}
+
+// ---------- mock exams ----------
+
+async function renderMockRun(runId) {
+  closePopover();
+  state.mock = null;
+  let run;
+  try { run = await api(`/api/mock-runs/${runId}`); } catch { return showError(); }
+  let exam = null;
+  try { exam = (await api("/api/exam")).exams.find(e => e.id === run.blueprint); } catch { /* names only */ }
+  const open = run.sections.find(s => s.state === "open");
+  const rows = run.sections.map(s => {
+    const res = s.result;
+    let status;
+    if (s.state === "not_started") status = t("mock_not_started", { minutes: s.minutes });
+    else if (s.state === "open") status = t("mock_open");
+    else if (res?.points != null) status = t("mock_points_line", { points: num(res.points), out_of: num(res.out_of), line: num(s.pass_line) });
+    else if (res?.status === "waiting_for_coach") status = t("mock_waiting");
+    else status = t("mock_not_scored");
+    const notes = [];
+    if (s.closed_by === "time") notes.push(t("mock_closed_time"));
+    if (s.closed_by === "time_away") notes.push(t("mock_closed_away"));
+    if (res?.unanswered) notes.push(t("r_mock_unanswered", { n: res.unanswered }));
+    if (res?.not_recorded) notes.push(t("mock_not_recorded", { n: res.not_recorded }));
+    const can = run.status === "running" && (s.state === "open" || (s.state === "not_started" && !open));
+    return h("li", { class: `mock-sec ${s.state}` },
+      h("div", {}, h("strong", {}, unitName(s.unit)), h("p", { class: "small" }, status),
+        notes.length ? h("p", { class: "muted small" }, notes.join(" · ")) : null),
+      can ? h("button", { class: "primary", type: "button", onclick: () => s.state === "open" ? openMockSection(s.section_id) : mockIntro(run, s, exam) },
+        s.state === "open" ? t("mock_continue") : t("mock_start_section")) : null);
+  });
+  const total = run.would_pass === null
+    ? t(run.verdict_note === "unscored_parts_decide" ? "mock_total_undecided" : "mock_total_partial",
+        { points: num(run.total), out_of: num(run.total_out_of) })
+    : t(run.would_pass ? "mock_total_pass" : "mock_total_fail", { points: num(run.total), out_of: num(run.total_out_of) });
+  app.replaceChildren(topbarBack(renderExam),
+    h("section", { class: "summary" }, h("h1", {}, `${exam?.short || run.blueprint} · ${t("mock")}`),
+      h("p", { class: "muted" }, t(run.status === "running" ? "mock_run_line" : "mock_run_done")),
+      h("ol", { class: "mock-sections" }, rows),
+      h("p", { class: "line" }, total),
+      run.status === "running" ? h("p", {}, h("button", { class: "link-button small", type: "button", onclick: async () => {
+        if (!confirm(t("mock_abandon_confirm"))) return;
+        await api(`/api/mock-runs/${run.run_id}/abandon`, {}).catch(() => {});
+        renderMockRun(run.run_id);
+      } }, t("mock_abandon"))) : null));
+}
+
+function mockIntro(run, s, exam) {
+  // Before the clock starts: how long, what the tasks are, and the technique for this section.
+  const unit = exam?.units.find(u => u.id === s.unit);
+  const lines = unit ? ((state.lang === "tr" && unit.technique.tr?.length) ? unit.technique.tr : unit.technique.en) : [];
+  const start = h("button", { class: "start", type: "button", onclick: async () => {
+    start.disabled = true;
+    try {
+      const view = await api(`/api/mock-runs/${run.run_id}/sections/${encodeURIComponent(s.unit)}`, {});
+      enterMockSection(view);
+    } catch { showError(); }
+  } }, t("mock_begin", { minutes: s.minutes }));
+  app.replaceChildren(topbarBack(() => renderMockRun(run.run_id)),
+    h("section", { class: "summary" }, h("h1", {}, unitName(s.unit)),
+      h("p", { class: "line" }, t("mock_intro", { minutes: s.minutes, items: s.items, points: num(s.points) })),
+      unit ? h("ul", {}, unit.tasks.map(tk => h("li", {}, `${tr(tk.title)} · ${num(tk.points)} ${t("points")}`))) : null,
+      lines.length ? h("div", { class: "coach-note" }, h("p", { class: "small" }, h("strong", {}, t("technique_title"))),
+        h("ul", { class: "small" }, lines.map(l => h("li", {}, l)))) : null,
+      h("p", { class: "muted small" }, t("mock_rules")),
+      start));
+}
+
+async function openMockSection(sectionId) {
+  let view;
+  try { view = await api(`/api/mock-sections/${sectionId}`); } catch { return showError(); }
+  enterMockSection(view);
+}
+
+function enterMockSection(view) {
+  if (view.closed) return mockSectionResult(view);
+  clearInterval(state.mock?.timer);
+  state.mock = { ...view, index: 0, plays: {}, deadline: performance.now() + view.remaining_seconds * 1000 / 1, timer: null };
+  // The server's clock decides; this countdown only shows it (and hands the section in at 0).
+  state.mock.timer = setInterval(tickMock, 500);
+  state.session = { session_id: view.session_id, cards: view.cards, index: 0, total: view.cards.length, done: 0 };
+  renderCard();
+}
+
+function fmtClock(sec) {
+  const s = Math.ceil(sec);
+  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+}
+
+function tickMock() {
+  if (!state.mock) return;
+  // With a speeded-up clock (development), real seconds count for `speed` exam seconds.
+  const left = Math.max(0, (state.mock.deadline - performance.now()) / 1000);
+  const el = document.getElementById("mock-clock");
+  if (el) {
+    el.textContent = fmtClock(left * (state.mock.speed || 1));
+    el.classList.toggle("low", left * (state.mock.speed || 1) < 300);
+  }
+  if (left <= 0) closeMockSection("time");
+}
+
+function mockFrame(body) {
+  const m = state.mock;
+  const nav = h("div", { class: "mock-nav", role: "navigation", "aria-label": t("mock_questions") },
+    m.cards.map((c, i) => h("button", { type: "button", class: `qn${i === m.index ? " current" : ""}${m.answers[c.item_key] ? " done" : ""}`,
+      "aria-label": t("mock_question_n", { n: i + 1 }), onclick: () => gotoMock(i) }, String(i + 1))));
+  const clock = h("span", { id: "mock-clock", class: "mock-clock", role: "timer", "aria-live": "off" },
+    fmtClock(Math.max(0, (m.deadline - performance.now()) / 1000) * (m.speed || 1)));
+  const last = m.index >= m.cards.length - 1;
+  const foot = h("div", { class: "actions mock-foot" },
+    m.index > 0 ? h("button", { class: "secondary", type: "button", onclick: () => gotoMock(m.index - 1) }, t("mock_prev")) : null,
+    !last ? h("button", { class: "secondary", type: "button", onclick: () => gotoMock(m.index + 1) }, t("mock_next")) : null,
+    h("button", { class: "primary", type: "button", onclick: () => {
+      const missing = m.cards.filter(c => !m.answers[c.item_key]).length;
+      if (confirm(missing ? t("mock_hand_in_missing", { n: missing }) : t("mock_hand_in_confirm"))) closeMockSection("learner");
+    } }, t("mock_hand_in")));
+  return [
+    h("header", { class: "topbar" }, h("span", { class: "muted small" }, `${unitName(m.unit)} · ${t("progress", { done: m.index + 1, total: m.cards.length })}`), clock),
+    nav, body, foot,
+  ];
+}
+
+function gotoMock(i) {
+  state.mock.index = i;
+  state.session.index = i;
+  renderCard();
+}
+
+function mockRestore(card, body) {
+  // A saved answer is not shown again as clicks; a line says it is saved, and answering again replaces it.
+  const saved = state.mock.answers[card.item_key];
+  const slot = body.querySelector(".slot");
+  if (!saved) return;
+  if (card.type === "write" && saved.text) {
+    const input = body.querySelector("textarea");
+    if (input) { input.convert = false; input.value = saved.text; input.dispatchEvent(new Event("input")); input.convert = true; }
+  }
+  if (Number.isInteger(saved.choice)) body.querySelector(`.option[data-index="${saved.choice}"]`)?.classList.add("chosen");
+  if (slot) slot.replaceChildren(h("p", { class: "saved-note small" }, t("mock_saved_already")));
+}
+
+async function mockSave(response, ui = {}) {
+  const m = state.mock;
+  const card = state.card.data;
+  try {
+    await api(`/api/mock-sections/${m.section_id}/answer`, { item_key: card.item_key, response });
+  } catch {
+    // 409: time ran out on the server. Show what happened instead of an error.
+    return openMockSection(m.section_id);
+  }
+  m.answers[card.item_key] = response;
+  document.querySelectorAll(".mock-nav .qn")[m.index]?.classList.add("done");
+  if (ui.quiet) return;
+  const slot = app.querySelector(".slot");
+  const last = m.index >= m.cards.length - 1;
+  if (slot) {
+    slot.replaceChildren(h("p", { class: "saved-note small" }, t("mock_saved")),
+      !last ? h("div", { class: "actions" }, h("button", { class: "primary", type: "button", id: "next", onclick: () => gotoMock(m.index + 1) }, t("mock_next"))) : null);
+    document.getElementById("next")?.focus();
+  }
+  if (card.type === "mcq" || card.type === "vocab") {
+    app.querySelectorAll(".option").forEach((b, i) => b.classList.toggle("chosen", i === ui.pickedIndex));
+  }
+}
+
+async function closeMockSection(by) {
+  const m = state.mock;
+  if (!m || m.closing) return;
+  m.closing = true;
+  clearInterval(m.timer);
+  // A writing draft still being typed is saved first.
+  const ta = app.querySelector(".card.write textarea");
+  if (ta && ta.value.trim()) await mockSave({ text: ta.value }, { quiet: true }).catch(() => {});
+  let view;
+  try { view = await api(`/api/mock-sections/${m.section_id}/close`, { by }); } catch { return showError(); }
+  mockSectionResult(view);
+}
+
+function mockSectionResult(view) {
+  clearInterval(state.mock?.timer);
+  state.mock = null;
+  state.session = null;
+  state.card = null;
+  const r = view.result || {};
+  const lines = [];
+  if (view.closed_by === "time") lines.push(h("p", {}, t("mock_closed_time")));
+  if (view.closed_by === "time_away") lines.push(h("p", { class: "warn" }, t("mock_closed_away")));
+  if (r.points != null) lines.push(h("p", { class: "line" }, t("mock_points", { points: num(r.points), out_of: num(r.out_of) })));
+  else if (r.submissions?.length) lines.push(h("p", { class: "line" }, t("mock_waiting")));
+  for (const [id, tk] of Object.entries(r.tasks || {})) {
+    lines.push(h("p", { class: "muted small" }, `${id.split(".").pop()}: ${num(tk.points)}/${num(tk.out_of)}`));
+  }
+  if (r.unanswered) lines.push(h("p", { class: "muted" }, t("r_mock_unanswered", { n: r.unanswered })));
+  if (r.not_recorded) lines.push(h("p", { class: "muted" }, t("mock_not_recorded", { n: r.not_recorded })));
+  const back = h("button", { class: "primary", type: "button", onclick: () => renderMockRun(view.run_id) }, t("mock_back_to_run"));
+  app.replaceChildren(h("header", { class: "topbar" }, wordmark()),
+    h("section", { class: "summary" }, h("h1", {}, `${unitName(view.unit)}: ${t("mock_section_done")}`), ...lines,
+      h("p", { class: "muted small" }, t("mock_review_hint")), h("div", { class: "actions" }, back)));
+  back.focus();
+}
+
 // ---------- keyboard shortcuts ----------
 
 document.addEventListener("keydown", (e) => {
@@ -1184,5 +1640,8 @@ document.addEventListener("keydown", (e) => {
   if (practice) return startSession("practice", practice.split(",").filter(Boolean));
   // ?submission=12 opens a piece of writing with its feedback (the coach links to it).
   if (/^\d+$/.test(params.get("submission") || "")) return renderSubmission(Number(params.get("submission")));
+  // ?exam opens the exam screen; ?mock=<run id> a mock run (the coach links to them).
+  if (params.has("exam")) return renderExam();
+  if (/^\d+$/.test(params.get("mock") || "")) return renderMockRun(Number(params.get("mock")));
   renderHome();
 })();

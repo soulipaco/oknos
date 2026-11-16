@@ -35,6 +35,7 @@ from greek_coach.packs import (
     McqItem,
     Pack,
     SpeakItem,
+    TableFillItem,
     TrueFalseItem,
     VocabItem,
     WriteItem,
@@ -196,6 +197,13 @@ def task_card(item_key: str, item, rng: random.Random) -> dict:
         card["prompt"] = _text(item.prompt)
         card["categories"] = item.categories
         card["items"] = item.items
+    elif isinstance(item, TableFillItem):
+        card["prompt"] = _text(item.prompt)
+        card["columns"] = item.columns
+        card["rows"] = item.rows
+        asked = {(i, j) for i, j, _ in item.cells()}
+        card["cells"] = [[(i, j) in asked for j in range(len(item.columns))] for i in range(len(item.rows))]
+        card["given"] = item.given
     elif isinstance(item, WriteItem):
         card["prompt"] = _text(item.prompt)
         card["words"] = item.words
@@ -238,6 +246,35 @@ def flagged_keys(conn: sqlite3.Connection) -> set[str]:
     rows = conn.execute(f"SELECT id, item_key FROM flags WHERE resolved_at IS NULL AND reason IN ({marks})",
                         SUPPRESSING_FLAGS)
     return {r["item_key"] for r in rows if r["id"] not in resolved}
+
+
+def plan_focus_tasks(today: date) -> set[str]:
+    """The exam tasks of the units the coach's plan puts in focus this week (empty without a plan)."""
+    try:
+        from greek_coach import exams
+
+        plan = coachfiles.plan()
+        if plan is None:
+            return set()
+        monday = (today - timedelta(days=today.weekday())).isoformat()
+        week = next((w for w in plan.weeks if w.start == monday), None)
+        bp = exams.load_blueprints().get(plan.exam)
+        if week is None or bp is None:
+            return set()
+        return {t.id for u in bp.units if u.id in week.focus for t in u.tasks}
+    except Exception:  # a broken plan must never stop the daily session
+        return set()
+
+
+def reserved_for_mocks(conn: sqlite3.Connection) -> set[str]:
+    """Items of a mock exam the learner has not taken yet stay out of daily sessions, so the
+    mock is a first sight of them (and so counts as readiness evidence)."""
+    from greek_coach import mock  # mock builds its cards with this module
+
+    try:
+        return mock.reserved_keys(conn)
+    except Exception:  # a broken mock file must never stop the daily session
+        return set()
 
 
 def days_away(conn: sqlite3.Connection) -> int | None:
@@ -305,7 +342,7 @@ def plan(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int,
     today = db.today()
     states = scheduler.all_states(conn)
     last = _last_attempts(conn)
-    flagged = flagged_keys(conn)
+    flagged = flagged_keys(conn) | reserved_for_mocks(conn)
     items = [(k, p, i) for k, p, i in servable(catalog, ui_lang) if k not in flagged]
     by_key = {k: (p, i) for k, p, i in items}
     words = [(k, p, i) for k, p, i in items if isinstance(i, VocabItem)]
@@ -329,12 +366,15 @@ def plan(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int,
     accuracy = skill_accuracy(conn, catalog)
     n_tasks = 0 if not tasks else (2 if minutes >= 15 else 1 if minutes >= 5 else 0)
 
+    focus = plan_focus_tasks(today)
+
     def task_key(entry):
         k, _, item = entry
         fresh_coach = k not in last and entry[1].manifest.visibility == "generated"
         tier = 0 if is_due(k) or fresh_coach else 1 if k not in last else 2
         acc = accuracy.get(item.skill, (0.5, 0))[0]
-        return (tier, _gen_first(entry), round(acc, 1), last.get(k, ("", None))[0], rng.random())
+        in_focus = 0 if item.exam_task in focus else 1
+        return (tier, in_focus, _gen_first(entry), round(acc, 1), last.get(k, ("", None))[0], rng.random())
 
     chosen_tasks = []
     for t in sorted(tasks, key=task_key):

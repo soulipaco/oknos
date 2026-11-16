@@ -1,0 +1,47 @@
+[
+  {"id": "w-b1-rubbish-complaint", "type": "write", "skill": "writing", "exam_task": "b1keg.writing.formal", "level": "B1", "topics": ["neighbourhood", "public_services"],
+   "rubric": {"el": "Γράψτε ένα κείμενο περίπου 150 λέξεων.", "en": "Write a text of about 150 words.", "tr": "Yaklaşık 150 kelimelik bir metin yazın."},
+   "prompt": {"el": "Στη γειτονιά σας τα σκουπίδια δεν έχουν μαζευτεί εδώ και δέκα μέρες. Γράψτε μια επιστολή στον δήμαρχο. Εξηγήστε το πρόβλημα, πείτε πώς επηρεάζει τους κατοίκους και ζητήστε να γίνει κάτι, με επιχειρήματα. Μην υπογράψετε με το όνομά σας.",
+              "en": "In your neighbourhood the rubbish has not been collected for ten days. Write a letter to the mayor. Explain the problem, say how it affects the residents and ask for action, with reasons. Do not sign with your name.",
+              "tr": "Mahallenizde çöpler on gündür toplanmıyor. Belediye başkanına bir mektup yazın. Sorunu açıklayın, mahalle sakinlerini nasıl etkilediğini söyleyin ve gerekçeleriyle bir şey yapılmasını isteyin. Adınızla imzalamayın."},
+   "words": [130, 170],
+   "must_include": [
+     {"en": "the problem and since when", "tr": "sorun ve ne zamandan beri"},
+     {"en": "how it affects the residents", "tr": "sakinleri nasıl etkilediği"},
+     {"en": "what you ask for, with reasons", "tr": "ne istediğiniz, gerekçeleriyle"},
+     {"en": "a formal opening and closing", "tr": "resmî bir giriş ve kapanış"}
+   ]},
+
+  {"id": "w-b1-advice-friend", "type": "write", "skill": "writing", "exam_task": "b1keg.writing.friendly", "level": "B1", "topics": ["housing", "work"],
+   "rubric": {"el": "Γράψτε ένα κείμενο περίπου 150 λέξεων.", "en": "Write a text of about 150 words.", "tr": "Yaklaşık 150 kelimelik bir metin yazın."},
+   "prompt": {"el": "Ένας φίλος σας θέλει να έρθει να ζήσει στην πόλη σας και σας ζητάει συμβουλές. Γράψτε του ένα e-mail: πού να ψάξει σπίτι, πώς να βρει δουλειά και τι πρέπει να προσέξει τους πρώτους μήνες. Μην υπογράψετε με το όνομά σας.",
+              "en": "A friend wants to come and live in your city and asks for advice. Write them an e-mail: where to look for a home, how to find work and what to watch out for in the first months. Do not sign with your name.",
+              "tr": "Bir arkadaşınız şehrinize gelip yaşamak istiyor ve sizden tavsiye istiyor. Ona bir e-posta yazın: nerede ev araması gerektiği, nasıl iş bulacağı ve ilk aylarda nelere dikkat etmesi gerektiği. Adınızla imzalamayın."},
+   "words": [130, 170],
+   "must_include": [
+     {"en": "where to look for a home, and why", "tr": "nerede ev araması gerektiği ve neden"},
+     {"en": "how to find work", "tr": "nasıl iş bulacağı"},
+     {"en": "one or two warnings for the first months", "tr": "ilk aylar için bir iki uyarı"},
+     {"en": "a friendly opening and closing", "tr": "samimi bir giriş ve kapanış"}
+   ]},
+
+  {"id": "s-b1-city-or-suburb", "type": "speak", "skill": "speaking", "exam_task": "b1keg.speaking.monologue", "level": "B1", "topics": ["housing", "opinion"],
+   "prompt": {"el": "Μερικοί άνθρωποι προτιμούν να ζουν στο κέντρο της πόλης και άλλοι σε ένα ήσυχο προάστιο. Εσείς τι προτιμάτε και γιατί; Δώστε δύο ή τρεις λόγους.",
+              "en": "Some people prefer to live in the city centre and others in a quiet suburb. Which do you prefer, and why? Give two or three reasons.",
+              "tr": "Bazı insanlar şehir merkezinde, bazıları ise sakin bir banliyöde yaşamayı tercih eder. Siz hangisini tercih edersiniz ve neden? İki üç gerekçe verin."},
+   "seconds": 120,
+   "model": {"el": "Εγώ προτιμώ να μένω κοντά στο κέντρο, για δύο λόγους. Πρώτα, επειδή δεν έχω αυτοκίνητο και με το μετρό φτάνω στη δουλειά σε είκοσι λεπτά. Δεύτερον, γιατί μου αρέσει να βγαίνω το βράδυ χωρίς να σκέφτομαι πώς θα γυρίσω. Βέβαια, το κέντρο έχει θόρυβο και τα ενοίκια είναι ακριβά. Αν είχα παιδιά, ίσως θα ήθελα ένα προάστιο με πάρκα, αλλά για την ώρα το κέντρο μού ταιριάζει.",
+             "en": "I prefer to live near the centre, for two reasons. First, because I have no car and by metro I get to work in twenty minutes. Second, because I like going out in the evening without thinking about how I will get home. Of course, the centre is noisy and rents are expensive. If I had children, I might want a suburb with parks, but for now the centre suits me.",
+             "tr": "Ben iki nedenle merkeze yakın oturmayı tercih ediyorum. Birincisi, arabam yok ve metroyla işe yirmi dakikada varıyorum. İkincisi, akşamları eve nasıl döneceğimi düşünmeden dışarı çıkmayı seviyorum. Tabii merkez gürültülü ve kiralar pahalı. Çocuklarım olsaydı belki parklı bir banliyö isterdim, ama şimdilik merkez bana uyuyor."},
+   "useful": ["Προτιμώ … για δύο λόγους.", "Πρώτα … Δεύτερον …", "Βέβαια, …", "Αν είχα …, θα …", "Γι' αυτό …"]},
+
+  {"id": "s-b1-rent-roleplay", "type": "speak", "skill": "speaking", "exam_task": "b1keg.speaking.roleplay", "level": "B1", "topics": ["housing", "opinion"],
+   "prompt": {"el": "Παιχνίδι ρόλων. Είστε ο ενοικιαστής ή η ενοικιάστρια. Ο ιδιοκτήτης σάς λέει ότι θέλει να αυξήσει το ενοίκιο κατά 100 ευρώ από τον επόμενο μήνα. Εσείς δεν συμφωνείτε. Εξηγήστε γιατί και προτείνετε μια λύση. Φανταστείτε τις απαντήσεις του και απαντήστε σε αυτές.",
+              "en": "Role-play. You are the tenant. The landlord says he wants to raise the rent by 100 euros from next month. You do not agree. Explain why and propose a solution. Imagine his answers and respond to them.",
+              "tr": "Canlandırma. Siz kiracısınız. Ev sahibi gelecek aydan itibaren kirayı 100 avro artırmak istediğini söylüyor. Siz katılmıyorsunuz. Nedenini açıklayın ve bir çözüm önerin. Onun cevaplarını hayal edin ve onlara yanıt verin."},
+   "seconds": 120,
+   "model": {"el": "Καταλαβαίνω ότι όλα έχουν ακριβύνει, κύριε Γιάννη, αλλά εκατό ευρώ είναι πολλά για μένα. Μένω εδώ τέσσερα χρόνια και πληρώνω πάντα στην ώρα μου. Επίσης, ο θερμοσίφωνας χάλασε δύο φορές φέτος και τον πλήρωσα εγώ. Δεν νομίζω ότι είναι δίκαιο. Μπορούμε να το συζητήσουμε; Θα μπορούσα να δεχτώ μια αύξηση πενήντα ευρώ, αν φτιάξετε το παράθυρο στην κουζίνα.",
+             "en": "I understand everything has become more expensive, Mr Giannis, but a hundred euros is a lot for me. I have lived here four years and always pay on time. Also, the water heater broke twice this year and I paid for it. I don't think that is fair. Can we discuss it? I could accept a rise of fifty euros if you fix the kitchen window.",
+             "tr": "Her şeyin pahalandığını anlıyorum Giannis Bey, ama yüz avro benim için çok. Burada dört yıldır oturuyorum ve kirayı hep zamanında ödüyorum. Ayrıca şofben bu yıl iki kez bozuldu ve parasını ben ödedim. Bunun adil olduğunu düşünmüyorum. Konuşabilir miyiz? Mutfak penceresini tamir ederseniz elli avroluk bir artışı kabul edebilirim."},
+   "useful": ["Καταλαβαίνω ότι …, αλλά …", "Δεν νομίζω ότι είναι δίκαιο, γιατί …", "Μπορούμε να το συζητήσουμε;", "Θα μπορούσα να δεχτώ … αν …"]}
+]

@@ -1,0 +1,107 @@
+{
+  "$defs": {
+    "MockSection": {
+      "additionalProperties": false,
+      "properties": {
+        "unit": {
+          "title": "Unit",
+          "type": "string"
+        },
+        "items": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Items",
+          "type": "array"
+        }
+      },
+      "required": [
+        "unit",
+        "items"
+      ],
+      "title": "MockSection",
+      "type": "object"
+    },
+    "Words": {
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "title": "En",
+          "type": "string"
+        },
+        "tr": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tr"
+        }
+      },
+      "required": [
+        "en"
+      ],
+      "title": "Words",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$",
+      "title": "Id",
+      "type": "string"
+    },
+    "blueprint": {
+      "title": "Blueprint",
+      "type": "string"
+    },
+    "created": {
+      "title": "Created",
+      "type": "string"
+    },
+    "title": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Words"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "note": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Words"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "sections": {
+      "items": {
+        "$ref": "#/$defs/MockSection"
+      },
+      "minItems": 1,
+      "title": "Sections",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "blueprint",
+    "created",
+    "sections"
+  ],
+  "title": "MockDef",
+  "type": "object"
+}

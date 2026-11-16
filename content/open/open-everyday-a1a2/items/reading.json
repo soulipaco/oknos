@@ -48,25 +48,25 @@
      {"el": "Υπάρχει άλλη στάση κοντά.", "en": "There is another stop nearby.", "tr": "Yakında başka bir durak var.", "answer": true}
    ]},
 
-  {"id": "r-match-questions", "type": "match", "skill": "reading", "exam_task": "b1keg.reading.match", "level": "A1", "topics": ["daily"],
+  {"id": "r-match-questions", "type": "match", "skill": "reading", "level": "A1", "topics": ["daily"],
    "rubric": {"el": "Αντιστοιχίστε τις ερωτήσεις με τις απαντήσεις. Μία απάντηση περισσεύει.", "en": "Match the questions with the answers. One answer is not needed.", "tr": "Soruları cevaplarla eşleştirin. Bir cevap fazladır."},
    "left": ["Πού μένεις;", "Τι δουλειά κάνεις;", "Πόσο κάνει αυτό;", "Τι ώρα είναι;"],
    "right": ["Είμαι μηχανικός.", "Στην Καλλιθέα.", "Πέντε ευρώ.", "Είναι δέκα και μισή.", "Με το μετρό."],
    "answer": [1, 0, 2, 3]},
 
-  {"id": "r-match-shops", "type": "match", "skill": "reading", "exam_task": "b1keg.reading.match", "level": "A1", "topics": ["shop"],
+  {"id": "r-match-shops", "type": "match", "skill": "reading", "level": "A1", "topics": ["shop"],
    "rubric": {"el": "Πού αγοράζετε τι; Αντιστοιχίστε.", "en": "Where do you buy what? Match.", "tr": "Neyi nereden alırsınız? Eşleştirin."},
    "left": ["ψωμί", "φάρμακα", "εφημερίδα", "κρέας"],
    "right": ["στο περίπτερο", "στο φαρμακείο", "στον φούρνο", "στο κρεοπωλείο"],
    "answer": [2, 1, 0, 3]},
 
-  {"id": "r-match-signs", "type": "match", "skill": "reading", "exam_task": "b1keg.reading.match", "level": "A2", "topics": ["office", "transport"],
+  {"id": "r-match-signs", "type": "match", "skill": "reading", "level": "A2", "topics": ["office", "transport"],
    "rubric": {"el": "Τι σημαίνει κάθε πινακίδα; Αντιστοιχίστε. Μία εξήγηση περισσεύει.", "en": "What does each sign mean? Match. One explanation is not needed.", "tr": "Her tabela ne anlama geliyor? Eşleştirin. Bir açıklama fazladır."},
    "left": ["ΕΞΟΔΟΣ", "ΑΠΑΓΟΡΕΥΕΤΑΙ ΤΟ ΚΑΠΝΙΣΜΑ", "ΠΡΟΣΟΧΗ: ΒΡΕΓΜΕΝΟ ΠΑΤΩΜΑ", "ΤΑΜΕΙΟ"],
    "right": ["Εδώ πληρώνετε.", "Από εδώ βγαίνετε.", "Μην καπνίζετε εδώ.", "Μπορεί να γλιστρήσετε.", "Εδώ περιμένετε το ταξί."],
    "answer": [1, 2, 3, 0]},
 
-  {"id": "r-cat-places", "type": "categorise", "skill": "reading", "exam_task": "a2ltr.listening.places", "level": "A1", "topics": ["neighbourhood"],
+  {"id": "r-cat-places", "type": "categorise", "skill": "reading", "level": "A1", "topics": ["neighbourhood"],
    "rubric": {"el": "Πού τα ακούτε συνήθως; Βάλτε κάθε φράση στη σωστή θέση.", "en": "Where do you usually hear these? Put each phrase in the right place.", "tr": "Bunları genellikle nerede duyarsınız? Her ifadeyi doğru yere koyun."},
    "categories": ["στο φαρμακείο", "στο ταξί", "στην ταβέρνα"],
    "items": ["Έχετε κάτι για τον βήχα;", "Στην Ομόνοια, παρακαλώ.", "Τον λογαριασμό, παρακαλώ.", "Χρειάζεστε συνταγή γι' αυτό.", "Σταματήστε εδώ, στη γωνία.", "Μια χωριάτικη σαλάτα, παρακαλώ."],
@@ -84,7 +84,7 @@
    "items": ["Πήγα στη λαϊκή.", "Θα φάμε στην ταβέρνα.", "Πίνω καφέ με γάλα.", "Ήρθαν οι φίλοι μας.", "Θα πάρω το λεωφορείο.", "Δουλεύει μέχρι τις πέντε."],
    "answer": [0, 2, 1, 0, 2, 1]},
 
-  {"id": "r-mcq-landlord", "type": "mcq", "skill": "reading", "exam_task": "a2ltr.reading.mcq", "level": "A2", "topics": ["housing"],
+  {"id": "r-mcq-landlord", "type": "mcq", "skill": "reading", "level": "A2", "topics": ["housing"],
    "stimulus": {"text": "Καλησπέρα κύριε Παπαδόπουλε. Ο θερμοσίφωνας στο μπάνιο δεν δουλεύει από την Κυριακή και δεν έχουμε ζεστό νερό. Μπορεί να έρθει ένας τεχνικός αυτή την εβδομάδα; Είμαι στο σπίτι κάθε μέρα μετά τις πέντε."},
    "prompt": {"el": "Γιατί γράφει ο ενοικιαστής;", "en": "Why is the tenant writing?", "tr": "Kiracı neden yazıyor?"},
    "options": ["Θέλει να πληρώσει το ενοίκιο.", "Δεν έχει ζεστό νερό.", "Θέλει να αλλάξει σπίτι.", "Δεν έχει ρεύμα στην κουζίνα."],

@@ -23,9 +23,10 @@ from greek_coach import db, paths
 log = logging.getLogger("greek_coach.packs")
 
 OPEN_LICENCES = {"CC-BY-SA-4.0", "CC-BY-4.0", "CC0-1.0", "MIT"}
-SUPPORTED_TYPES = {"vocab", "form", "mcq", "true_false", "match", "gap_bank", "categorise", "write", "speak"}
+SUPPORTED_TYPES = {"vocab", "form", "mcq", "true_false", "match", "gap_bank", "categorise", "table_fill",
+                   "write", "speak"}
 # Types the spec defines that later phases build. Items of these types are skipped quietly.
-LATER_TYPES = {"table_fill"}
+LATER_TYPES: set[str] = set()
 GAP_RE = re.compile(r"\{(\w+)\}")
 
 Skill = Literal["vocab", "grammar", "history", "listening", "reading", "writing", "speaking"]
@@ -55,6 +56,18 @@ class Stimulus(Strict):
     audio: str | None = None
     tts: str | None = None
     plays: int | None = None
+    # Play only this part of the audio file (seconds), so one recording of a whole exam paper
+    # can serve its separate parts.
+    start: float | None = Field(default=None, ge=0)
+    end: float | None = Field(default=None, gt=0)
+
+    @model_validator(mode="after")
+    def _range(self) -> "Stimulus":
+        if self.start is not None and self.end is not None and self.end <= self.start:
+            raise ValueError("stimulus.end must be after stimulus.start")
+        if (self.start is not None or self.end is not None) and not self.audio:
+            raise ValueError("stimulus.start/end need an audio file")
+        return self
 
 
 class BaseItem(Strict):
@@ -210,6 +223,47 @@ class CategoriseItem(BaseItem):
         return self
 
 
+class TableFillItem(BaseItem):
+    """Complete the cells of a table from a text or recording (SPEC §4.4). Note-taking is a
+    one-column table. Each cell lists its accepted answers; a null cell is given (shown filled)."""
+
+    type: Literal["table_fill"]
+    prompt: Text | None = None
+    columns: list[str] = Field(min_length=1)
+    rows: list[str] = Field(min_length=1)
+    answer: list[list[list[str] | str | None]]
+    given: list[list[str | None]] | None = None   # text shown in cells that are not asked
+
+    @model_validator(mode="after")
+    def _shape(self) -> "TableFillItem":
+        if len(self.answer) != len(self.rows):
+            raise ValueError(f"answer needs one row for each of the {len(self.rows)} rows")
+        for i, row in enumerate(self.answer):
+            if len(row) != len(self.columns):
+                raise ValueError(f"answer row {i + 1} needs one cell for each of the {len(self.columns)} columns")
+            for cell in row:
+                if isinstance(cell, list) and (not cell or any(not str(c).strip() for c in cell)):
+                    raise ValueError(f"answer row {i + 1}: a cell needs at least one non-empty accepted answer")
+                if isinstance(cell, str) and not cell.strip():
+                    raise ValueError(f"answer row {i + 1}: an empty cell answer; use null for a given cell")
+        if not self.cells():
+            raise ValueError("the table asks for nothing: every cell is null")
+        if self.given is not None:
+            if len(self.given) != len(self.rows) or any(len(r) != len(self.columns) for r in self.given):
+                raise ValueError("given must have the same shape as the table")
+        return self
+
+    def cells(self) -> list[tuple[int, int, list[str]]]:
+        """The asked cells in reading order: (row, column, accepted answers)."""
+        out = []
+        for i, row in enumerate(self.answer):
+            for j, cell in enumerate(row):
+                if cell is None:
+                    continue
+                out.append((i, j, [cell] if isinstance(cell, str) else list(cell)))
+        return out
+
+
 class WriteItem(BaseItem):
     """A writing prompt in exam format. The app saves the text; the coach marks it (SPEC §4.4)."""
 
@@ -245,11 +299,14 @@ class SpeakItem(BaseItem):
 
 
 ITEM_CLASSES = (VocabItem, FormItem, McqItem, TrueFalseItem, MatchItem, GapBankItem, CategoriseItem,
-                WriteItem, SpeakItem)
-SELECTION_TASKS = (McqItem, TrueFalseItem, MatchItem, GapBankItem, CategoriseItem)
+                TableFillItem, WriteItem, SpeakItem)
+# Exam-format tasks the app checks itself (table_fill is typed, but checked like form).
+SELECTION_TASKS = (McqItem, TrueFalseItem, MatchItem, GapBankItem, CategoriseItem, TableFillItem)
 OPEN_TASKS = (WriteItem, SpeakItem)
+TASK_TYPES = SELECTION_TASKS + OPEN_TASKS
 Item = Annotated[
-    Union[VocabItem, FormItem, McqItem, TrueFalseItem, MatchItem, GapBankItem, CategoriseItem, WriteItem, SpeakItem],
+    Union[VocabItem, FormItem, McqItem, TrueFalseItem, MatchItem, GapBankItem, CategoriseItem, TableFillItem,
+          WriteItem, SpeakItem],
     Field(discriminator="type"),
 ]
 _item_adapter: TypeAdapter[Item] = TypeAdapter(Item)

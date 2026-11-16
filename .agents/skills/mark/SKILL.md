@@ -46,6 +46,8 @@ For each piece:
    - then the band.
 
    Put the per-aspect view in `score.criteria`, with short comments in their language. Keep `unverified: true` for A2-LTR. Give a whole or half point, never false precision.
+
+   Set `score.exam` (the blueprint id) and `score.task` (the item's `exam_task`). Score on **that task's scale** in the blueprint: A2-LTR e-mails out of 10, B1 part A out of 12, B1 part B out of 13 (COACHING §10). These scores are the only way writing reaches the readiness screen.
 6. **`summary`**: one or two sentences in their language. Start with what worked, then the one thing to do differently next time.
 7. **Turn recurring errors into practice.** If an error appears for the second time or more, or is a core A2 point, write 3–8 items in `<learner_dir>/generated/coach-writing/items/<today>-sub<id>.json`:
    - `form` items for the form;
@@ -67,8 +69,12 @@ For each piece:
    - `errors`: at most 3 clear grammar or word errors;
    - `corrected`: a better way to say what they said, at their level.
    - No pronunciation score, ever. You may mention one word that was clearly not understood ("I heard 'κάθε' where you probably said 'καφέ'"), framed as what the machine heard.
-   - Leave `score` out unless the task is in exam format. Even then give only the content part.
+   - Leave `score` out unless the task is in exam format (it has an `exam_task`). Then score it on that task's scale in the blueprint, with `score.exam`, `score.task` and `"unverified": true`, because neither exam publishes its speaking criteria. Judge whether they did the task and how much they could say, never pronunciation (COACHING §10).
 4. Validate and reload as for writing.
+
+## Mock exams
+
+Submissions from a mock (the report's `mocks.runs` lists the sections with `waiting_for_coach`) are marked the same way. The scores matter more there: the mock's result and the readiness screen wait for them. Mark them before anything else in the check-in.
 
 ## 4. Tell them
 

@@ -75,6 +75,10 @@ The fields you will use most:
 | `inbox` | Files they dropped in `learner/inbox/`, for `capture`. |
 | `coach` | Your last check-in date, the age of `watch.json`, tutor logs, scheduled-run results and problems. |
 | `app_url` | Where the app is running, or `null`. |
+| `readiness` | Per exam (`a2ltr`, `b1-keg`), per unit: `state` (`above`, `below`, `unclear`, `no_evidence`), the estimate with its low and high ends, the evidence count, and the verdict against the real pass rule. The rules are in `readiness_rules`. Never present a number the report does not give. |
+| `coverage` | Per exam task: items available, tried and unseen at the exam's level; untagged general practice; and for B1, which `beyond_a2` points have been practised. |
+| `plan_inputs`, `plan_progress` | The plan's facts: candidate sessions from `watch.json` with weeks left and hours, the real pace against the budget. Also the current plan's planned against done (§11). |
+| `mocks` | Mock exams defined and taken, with points per section and `would_pass` (§12). |
 
 ## 4. Where to write
 
@@ -84,6 +88,9 @@ The fields you will use most:
 | Material from class or real life | `learner/generated/coach-capture/` |
 | Exercises for recurring writing errors | `learner/generated/coach-writing/` |
 | Review items from a tutor chat | `learner/generated/coach-tutor/` |
+| Mock exam items, and the mock file | `learner/generated/coach-mock/` and `learner/coach/mocks/<id>.json` |
+| Items rebuilt from official past papers, history items | `content/private/official-a2ltr/`, `content/private/a2ltr-history/` (private) |
+| The plan | `learner/coach/plan.json` |
 | Rebuilt textbook exercises | `content/private/<pack>/items/rebuilt-<unit>.json` (gitignored, private) |
 | Feedback, notes, message, profile | the files in section 7 |
 
@@ -134,19 +141,41 @@ Which type to choose:
 | Reading a notice or letter | `true_false` (exam: `a2ltr.reading.notices_tf`), or `gap_bank` (`a2ltr.reading.gapbank`) |
 | Understanding | `mcq` (3–4 options, exactly one right), `match`, `categorise` |
 | Listening | any selection type with `stimulus.tts` (8+ words), and then `make_audio.py` (section 8) |
+| A table to complete, or notes from a recording (B1) | `table_fill`, with `columns`, `rows` and `answer` (one list of accepted strings per cell, `null` for a cell that is given). A one-column table is note-taking. List every accepted spelling: `"18:00"`, `"6"`, `"έξι"`. |
 | Writing in exam format | `write`, with `prompt.el` (+ `en`, `tr`), `words: [min, max]` and `must_include` |
 | Speaking | `speak`, with `prompt.el`, `seconds`, `model.el` (a model answer at their level) and `useful` phrases |
 
-These `exam_task` tags are in use:
+**`exam_task` tags** come from the blueprints, `exams/a2ltr.json` and `exams/b1-keg.json` (`units[].tasks[].id`). Each task lists the item `types` that train it:
 
-- `a2ltr.reading.gapbank`, `a2ltr.reading.notices_tf`;
-- `a2ltr.listening.gapfill`, `a2ltr.listening.mcq`, `a2ltr.listening.places`;
-- `a2ltr.history.match`, `a2ltr.history.mcq`, `a2ltr.history.era`;
-- `a2ltr.writing.email_formal`, `a2ltr.writing.email_friendly`;
-- `a2ltr.speaking.monologue`;
-- `b1keg.reading.*`, `b1keg.writing.*`.
+- **A2-LTR:**
+  - `a2ltr.history.match | mcq | era`;
+  - `a2ltr.listening.fill | mcq | places`;
+  - `a2ltr.reading.gapbank | notices_tf`;
+  - `a2ltr.writing.email_formal | email_friendly`;
+  - `a2ltr.speaking.personal | pictures | roleplay`.
+- **B1:**
+  - `b1keg.reading.match | compare | tf | gapbank` (`compare` is a `table_fill`);
+  - `b1keg.listening.notes | compare` (both `table_fill`);
+  - `b1keg.writing.friendly | formal`;
+  - `b1keg.speaking.warmup | monologue | roleplay`.
 
-Leave `exam_task` out when an item is general practice.
+Rules, which `validate` checks:
+
+- the tag must exist;
+- the item's `type` must be one of the task's `types`, and its `skill` the unit's skill.
+
+**Tag every exam-format item you write.** Readiness counts only tagged items at the exam's level or above, and only the learner's **first** try at each one. An untagged task item is general practice, and an A1 item tagged `a2ltr.*` trains the format without counting as evidence. Leave `exam_task` out of vocabulary and verb items.
+
+For **B1 grammar**, use these `grammar` tags on `form` items, so coverage can track what B1 adds (`beyond_a2` in `exams/b1-keg.json`):
+
+- `verb.passive.<tense>`;
+- `syntax.reported`, `syntax.conditional`, `syntax.clause.<kind>`, `syntax.linking`;
+- `adj.comparative`;
+- `noun.genitive`;
+- `verb.subjunctive`, `verb.imperative`;
+- `spelling`.
+
+The topics `opinion`, `feelings`, `office`, `health`, `work`, `education` and `public_services` mark B1 vocabulary domains.
 
 ### 5.2 The quality rule: the learner cannot tell when you are wrong
 
@@ -342,6 +371,61 @@ Both exams mark writing holistically. Mark against the exam the profile targets.
 **A2 + history exam (A2-LTR):**
 
 - Writing is two tasks of 10 points each (40–60 words). Task 1 is a semi-formal e-mail with required content points; task 2 is a friendly e-mail or invitation (SPEC §1.3, from the 2026A paper).
-- Its official marking criteria were **not found** (checked 2026-11-16). Until phase 5 confirms them, mark each task out of 10 with the same aspects: covering every required point counts most at this level. Set `"unverified": true` in the score.
+- **No official marking criteria are published** (checked again in phase 5, 2026-11-16). The decision only says the Scientific Committee sets a scale, and that two markers' scores more than 6 points apart are re-marked.
+- Mark each task out of 10 with the same aspects as above; covering every required point counts most at this level. Set `"unverified": true` in the score.
+
+**Speaking, both exams.** The parts are in the blueprints (A2-LTR: personal questions, two pictures, a role-play; B1: warm-up, a monologue with reasons, a role-play with argument). How the points split between the parts is **not published** for either exam.
+
+- When a recording is an exam-format part (it has an `exam_task`), you may give `score` with `points` and `out_of` on that task's scale in the blueprint, with `"unverified": true`. The scales:
+  - A2-LTR: `personal` out of 6, `pictures` out of 7, `roleplay` out of 7;
+  - B1: `warmup` out of 7, `monologue` out of 9, `roleplay` out of 9.
+
+  These splits are the app's assumption, since neither exam publishes one.
+- Without official criteria, use four aspects and say so in `criteria`:
+  - whether the task was done (each question or point covered);
+  - how much they could say;
+  - whether it is understandable;
+  - accuracy at the level.
+
+  For A2-LTR writing out of 10, the same split works: task and required points 4, organisation and register 2, vocabulary 2, grammar and spelling 2.
+- A mock speaking part said aloud without a recording has nothing to mark. Leave it: the mock's verdict then counts it as 0 for "would pass" and as full marks for "would not pass", and says when that decides it.
+- Judge whether they did the task, how much they could say, and how understandable it was from the transcript. Never score pronunciation.
+
+**Scores feed readiness.** Set `score.exam` to the blueprint id (`a2ltr` or `b1-keg`) and `score.task` to the item's `exam_task`. Readiness uses `points / out_of` per task, so use the task's own scale: B1 writing part A is out of 12 and part B out of 13. If you think in the holistic /25 scale, convert it. Writing and speaking reach readiness only through these scores.
 
 Whatever the exam, say plainly that the score is an estimate.
+
+## 11. The plan (`coach/plan.json`)
+
+Written by the `plan` skill; the exam screen shows it. Dates come **only** from `coach/watch.json` (`report.plan_inputs.candidates`).
+
+```json
+{"made_at": "2026-11-17", "exam": "b1-keg",
+ "target": {"exam": "b1-keg", "session": "2027-05-13", "registration_closes": "2027-03-14",
+            "source_url": "https://www.greek-language.gr/certification/node/15.html"},
+ "budget_minutes_week": 100, "pace_minutes_week": 35,
+ "verdict": {"realistic": "no", "en": "May 2027 is not realistic: …", "tr": "Mayıs 2027 gerçekçi değil: …"},
+ "options": [{"exam": "a2ltr", "session": null, "realistic": "unknown", "why": {"en": "No session announced.", "tr": "Açıklanmış oturum yok."}}],
+ "behind": {"en": "…", "tr": "…"},
+ "drop": [{"en": "Leave B1 writing until February.", "tr": "B1 yazmayı şubata bırakın."}],
+ "weeks": [{"start": "2026-11-16", "minutes": 60, "focus": ["foundations", "reading"],
+            "content": {"en": "…", "tr": "…"}, "beyond_a2": [], "checkpoint": null, "mock": false}]}
+```
+
+- `target` is null when no realistic session has an announced date. Say so in `verdict`.
+- `realistic` is `yes`, `tight`, `no` or `unknown`.
+- `weeks` start on a Monday and are in date order.
+  - `focus` holds unit ids of `exam`, or `foundations`.
+  - `beyond_a2` holds ids from `exams/b1-keg.json`.
+- The app adds `plan_progress` to the report (planned against done per past week) and shows the next four weeks.
+
+## 12. Mock exams (`coach/mocks/<id>.json`)
+
+Written by the `mock-exam` skill; the format is there. The app:
+
+- times each section with the blueprint's minutes;
+- keeps the mock's items out of daily sessions until it is taken;
+- turns every answer into a normal first attempt (session kind `mock`);
+- scores auto-marked sections against the blueprint points, and waits for your feedback scores (§10) for writing and speaking.
+
+The report shows definitions and runs under `mocks`.

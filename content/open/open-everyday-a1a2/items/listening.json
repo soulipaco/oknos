@@ -27,7 +27,7 @@
    "items": ["Διάλογος 1", "Διάλογος 2", "Διάλογος 3"],
    "answer": [2, 0, 1]},
 
-  {"id": "l-weekend-plan", "type": "true_false", "skill": "listening", "exam_task": "a2ltr.listening.mcq", "level": "A2", "topics": ["daily"],
+  {"id": "l-weekend-plan", "type": "true_false", "skill": "listening", "level": "A2", "topics": ["daily"],
    "rubric": {"el": "Ακούστε τον διάλογο δύο φορές. Σημειώστε ΣΩΣΤΟ ή ΛΑΘΟΣ.", "en": "Listen to the dialogue twice. Mark TRUE or FALSE.", "tr": "Diyaloğu iki kez dinleyin. DOĞRU veya YANLIŞ işaretleyin."},
    "stimulus": {"tts": "— Γιώργο, τι θα κάνεις το Σάββατο; — Το πρωί θα πάω στη λαϊκή με τη μητέρα μου. Το απόγευμα θα δω ποδόσφαιρο με τους φίλους μου. — Θέλεις να πάμε σινεμά το βράδυ; — Ναι, ωραία ιδέα! Στις εννιά;", "plays": 2},
    "statements": [

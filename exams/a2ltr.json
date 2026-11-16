@@ -1,0 +1,201 @@
+{
+  "id": "a2ltr",
+  "title": {
+    "el": "Ειδικό πιστοποιητικό επαρκούς γνώσης της ελληνικής γλώσσας και στοιχείων ελληνικής ιστορίας και πολιτισμού (Α2)",
+    "en": "A2 + history and culture (long-term residence)",
+    "tr": "A2 + tarih ve kültür (uzun süreli oturum)"
+  },
+  "short": "A2+",
+  "level": "A2",
+  "task_prefix": "a2ltr",
+  "checked_at": "2026-11-16",
+  "total_points": 100,
+  "hours_estimate": [120, 180],
+  "pass_rule": {
+    "min_total": 50,
+    "unit_min_share": 0.5,
+    "units_needed": 4,
+    "text": {
+      "el": "Επιτυχής θεωρείται η δοκιμασία εφόσον ο/η υποψήφιος/-α συγκεντρώνει τουλάχιστον 50 μονάδες και εφόσον συγκεντρώνει τουλάχιστον το 50% σε τέσσερις από τις πέντε θεματικές ενότητες.",
+      "en": "At least 50 of 100 points, and at least half the points in four of the five units. One weak unit can be survived.",
+      "tr": "100 puanın en az 50'si ve beş bölümün dördünde puanların en az yarısı. Tek bir zayıf bölüm sınavı kaybettirmez."
+    }
+  },
+  "sessions_note": {
+    "en": "The ministerial decision says twice a year (April and October), but in practice sessions are irregular: the last two were the second half of 2024 and 23 May 2026. Places are capped (1,000 in 2026A) and given in order of application. The fee is €50. The task format here follows the 2026A paper; the 2024 paper differed in some parts (photo ordering in listening, longer e-mails).",
+    "tr": "Bakanlık kararı yılda iki kez (Nisan ve Ekim) diyor, ama oturumlar düzensiz: son ikisi 2024'ün ikinci yarısı ve 23 Mayıs 2026'ydı. Yer sayısı sınırlı (2026A'da 1.000) ve başvuru sırasına göre veriliyor. Ücret 50 €. Buradaki görev biçimi 2026A sınavını izliyor; 2024 sınavı bazı bölümlerde farklıydı (dinlemede fotoğraf sıralama, daha uzun e-postalar)."
+  },
+  "units": [
+    {
+      "id": "history",
+      "skill": "history",
+      "title": {"el": "Ιστορία και πολιτισμός", "en": "History and culture", "tr": "Tarih ve kültür"},
+      "points": 20,
+      "minutes": 25,
+      "marked_by": "app",
+      "tasks": [
+        {"id": "a2ltr.history.match", "title": {"en": "Match the sentence halves", "tr": "Cümle yarılarını eşleştirin"},
+         "types": ["match"], "questions": 10, "points": 5},
+        {"id": "a2ltr.history.mcq", "title": {"en": "Multiple choice", "tr": "Çoktan seçmeli"},
+         "types": ["mcq"], "questions": 10, "points": 10},
+        {"id": "a2ltr.history.era", "title": {"en": "Put people and events in their era", "tr": "Kişileri ve olayları dönemlerine yerleştirin"},
+         "types": ["categorise"], "questions": 10, "points": 5}
+      ],
+      "technique": {
+        "en": [
+          "25 minutes for 30 questions: under a minute each. Do the ones you know first, then come back.",
+          "Fill in every answer. An empty answer scores nothing.",
+          "Era sorting has four boxes: ancient Greece, Byzantium, 1800–1900 and 1900–2000. Decide the century first.",
+          "Everything asked comes from the official history and culture text. It is short, so these are the most predictable points of the exam."
+        ],
+        "tr": [
+          "30 soru için 25 dakika: soru başına bir dakikadan az. Önce bildiklerinizi yapın, sonra geri dönün.",
+          "Her soruyu cevaplayın. Boş bırakılan cevap puan getirmez.",
+          "Dönem sıralamasında dört kutu var: Antik Yunan, Bizans, 1800–1900 ve 1900–2000. Önce yüzyılı belirleyin.",
+          "Sorulan her şey resmî tarih ve kültür metninden gelir. Metin kısa; bu yüzden sınavın en öngörülebilir puanları bunlardır."
+        ]
+      }
+    },
+    {
+      "id": "listening",
+      "skill": "listening",
+      "title": {"el": "Κατανόηση προφορικού λόγου", "en": "Listening", "tr": "Dinleme"},
+      "points": 20,
+      "minutes": 25,
+      "marked_by": "app",
+      "tasks": [
+        {"id": "a2ltr.listening.fill", "title": {"en": "Voice message: fill the gaps from a word bank", "tr": "Sesli mesaj: boşlukları kelime listesinden doldurun"},
+         "types": ["gap_bank"], "questions": 5, "points": 5},
+        {"id": "a2ltr.listening.mcq", "title": {"en": "Dialogue, heard twice: multiple choice", "tr": "İki kez dinlenen diyalog: çoktan seçmeli"},
+         "types": ["mcq"], "questions": 10, "points": 10},
+        {"id": "a2ltr.listening.places", "title": {"en": "Short dialogues: where does each one happen?", "tr": "Kısa diyaloglar: her biri nerede geçiyor?"},
+         "types": ["categorise", "match", "mcq"], "questions": 5, "points": 5}
+      ],
+      "technique": {
+        "en": [
+          "Before each recording, read the questions and underline what each one asks for: a time, a day, a place, a price.",
+          "Parts 1 and 3 have extra options that fit nowhere. Cross out each option as you use it.",
+          "The dialogue in part 2 is played twice: answer on the first hearing, check on the second.",
+          "Numbers and times are the usual trap: έξι and εφτά, μισή and τέταρτο, Τρίτη and Τετάρτη."
+        ],
+        "tr": [
+          "Her kayıttan önce soruları okuyun ve her birinin ne istediğinin altını çizin: saat, gün, yer, fiyat.",
+          "1. ve 3. bölümde hiçbir yere uymayan fazla seçenekler var. Kullandığınız seçeneğin üstünü çizin.",
+          "2. bölümdeki diyalog iki kez çalınır: ilk dinleyişte cevaplayın, ikincide kontrol edin.",
+          "Sayılar ve saatler en sık tuzaktır: έξι ve εφτά, μισή ve τέταρτο, Τρίτη ve Τετάρτη."
+        ]
+      }
+    },
+    {
+      "id": "reading",
+      "skill": "reading",
+      "title": {"el": "Κατανόηση γραπτού λόγου", "en": "Reading", "tr": "Okuma"},
+      "points": 20,
+      "minutes": 30,
+      "marked_by": "app",
+      "tasks": [
+        {"id": "a2ltr.reading.gapbank", "title": {"en": "Gapped text with a word bank", "tr": "Kelime listeli boşluklu metin"},
+         "types": ["gap_bank"], "questions": 6, "points": 6},
+        {"id": "a2ltr.reading.notices_tf", "title": {"en": "Ten public notices: true or false", "tr": "On resmî duyuru: doğru mu yanlış mı"},
+         "types": ["true_false"], "questions": 14, "points": 14}
+      ],
+      "technique": {
+        "en": [
+          "Part 2 is worth 14 of the 20 points. Keep at least 18 minutes for it.",
+          "True or false is decided by the notice alone, not by what is usually true in life.",
+          "In the gap text, the word must fit the grammar (article, ending) as well as the meaning. The bank has spare words.",
+          "Notices are about opening hours, offices, pharmacies and appointments: days of the week and times matter most."
+        ],
+        "tr": [
+          "2. bölüm 20 puanın 14'ü. Ona en az 18 dakika ayırın.",
+          "Doğru ya da yanlış, hayatta genelde doğru olana göre değil, yalnızca duyuruya göre karar verilir.",
+          "Boşluklu metinde kelime anlama olduğu kadar dilbilgisine (tanımlık, ek) de uymalı. Listede fazla kelimeler var.",
+          "Duyurular çalışma saatleri, resmî daireler, eczaneler ve randevularla ilgilidir: en çok günler ve saatler önemlidir."
+        ]
+      }
+    },
+    {
+      "id": "writing",
+      "skill": "writing",
+      "title": {"el": "Παραγωγή γραπτού λόγου", "en": "Writing", "tr": "Yazma"},
+      "points": 20,
+      "minutes": 40,
+      "marked_by": "coach",
+      "tasks": [
+        {"id": "a2ltr.writing.email_formal", "title": {"en": "Semi-formal e-mail with required points", "tr": "İstenen noktaları içeren yarı resmî e-posta"},
+         "types": ["write"], "questions": 1, "points": 10, "words": [40, 60]},
+        {"id": "a2ltr.writing.email_friendly", "title": {"en": "Friendly e-mail or invitation", "tr": "Arkadaşça e-posta veya davet"},
+         "types": ["write"], "questions": 1, "points": 10, "words": [40, 60]}
+      ],
+      "technique": {
+        "en": [
+          "About 20 minutes per e-mail: 3 to plan, 12 to write, 5 to check endings and accents.",
+          "Cover every point the task asks for. At this level a missing point costs more than a grammar mistake.",
+          "Use the opening the task gives, if it gives one (Κύριε / Κυρία, …). Otherwise formal: Αξιότιμε κύριε / Αξιότιμη κυρία … Με εκτίμηση; friendly: Αγαπητή Μαρία or Ελένη μου … Φιλιά. Never sign with your real name.",
+          "Stay within 40–60 words: under 40 looks unfinished, and much more adds mistakes."
+        ],
+        "tr": [
+          "E-posta başına yaklaşık 20 dakika: 3'ü plan, 12'si yazma, 5'i ekleri ve vurguları kontrol.",
+          "Görevin istediği her noktayı yazın. Bu seviyede eksik bir nokta, dilbilgisi hatasından daha pahalıdır.",
+          "Görev bir hitap veriyorsa onu kullanın (Κύριε / Κυρία, …). Yoksa resmî: Αξιότιμε κύριε / Αξιότιμη κυρία … Με εκτίμηση; arkadaşça: Αγαπητή Μαρία veya Ελένη μου … Φιλιά. Asla gerçek adınızla imzalamayın.",
+          "40–60 kelimede kalın: 40'ın altı yarım kalmış görünür, çok fazlası da hata ekler."
+        ]
+      },
+      "note": {
+        "en": "No official marking criteria are published for this exam. The coach marks each e-mail out of 10 and the score is an estimate.",
+        "tr": "Bu sınav için resmî değerlendirme ölçütleri yayımlanmamış. Koç her e-postayı 10 üzerinden puanlar; puan bir tahmindir."
+      }
+    },
+    {
+      "id": "speaking",
+      "skill": "speaking",
+      "title": {"el": "Παραγωγή προφορικού λόγου", "en": "Speaking", "tr": "Konuşma"},
+      "points": 20,
+      "minutes": 12,
+      "marked_by": "coach",
+      "tasks": [
+        {"id": "a2ltr.speaking.personal", "title": {"en": "Questions about yourself", "tr": "Kendinizle ilgili sorular"},
+         "types": ["speak"], "questions": 1, "points": 6, "points_verified": false},
+        {"id": "a2ltr.speaking.pictures", "title": {"en": "Describe and compare two photos", "tr": "İki fotoğrafı anlatın ve karşılaştırın"},
+         "types": ["speak"], "questions": 1, "points": 7, "points_verified": false},
+        {"id": "a2ltr.speaking.roleplay", "title": {"en": "Role-play with the other candidate", "tr": "Diğer adayla canlandırma"},
+         "types": ["speak"], "questions": 1, "points": 7, "points_verified": false}
+      ],
+      "technique": {
+        "en": [
+          "Part 1 is about you. Have two or three sentences ready on where you are from, how long you have been in Greece, your work, family and free time.",
+          "Part 2: you get one minute to look at two photos. Say what you see, then compare: Στη φωτογραφία α … ενώ στη φωτογραφία β …",
+          "Part 3 is a role-play with the other candidate: greet, ask, answer, close. If a word is missing, say it another way instead of stopping.",
+          "It takes 12 minutes per pair, with two examiners, and it is recorded."
+        ],
+        "tr": [
+          "1. bölüm sizinle ilgili. Nerelisiniz, ne zamandır Yunanistan'dasınız, işiniz, aileniz ve boş zamanınız hakkında iki üç cümle hazır olsun.",
+          "2. bölüm: iki fotoğrafa bakmak için bir dakikanız var. Ne gördüğünüzü söyleyin, sonra karşılaştırın: Στη φωτογραφία α … ενώ στη φωτογραφία β …",
+          "3. bölüm diğer adayla bir canlandırmadır: selamlayın, sorun, cevaplayın, bitirin. Bir kelime aklınıza gelmezse durmak yerine başka türlü söyleyin.",
+          "Çift başına 12 dakika sürer, iki sınav görevlisi vardır ve kayıt alınır."
+        ]
+      },
+      "note": {
+        "en": "How the 20 points split between the three parts, and the criteria, are not published. The app does not score speaking; the coach's mark is an estimate.",
+        "tr": "20 puanın üç bölüme nasıl dağıldığı ve ölçütler yayımlanmamış. Uygulama konuşmayı puanlamaz; koçun notu bir tahmindir."
+      }
+    }
+  ],
+  "sources": [
+    {"url": "https://gsvetlly.minedu.gov.gr/publications/docs2023/KYA_ELLINOMATHIAS_2021.pdf", "what": "ΚΥΑ 140304/Κ1 (ΦΕΚ Β' 5125/2021): units, pass rule (art. 12 §2), fee (art. 9 §4), sessions (art. 9 §3)", "checked": "2026-11-16"},
+    {"url": "https://gsvetlly.minedu.gov.gr/publications/docs2023/68Σ246ΝΚΠΔ-80Η.pdf", "what": "Decision for the 2026A session: 23 May 2026, applications 9–20 Apr 2026, 1,000 places", "checked": "2026-11-16"},
+    {"url": "https://gsvetlly.minedu.gov.gr/ellinomatheia", "what": "Exam page: past papers, answer keys and listening MP3s (2022, 2024, 2026A), history and culture syllabus", "checked": "2026-11-16"},
+    {"url": "https://gsvetlly.minedu.gov.gr/publications/ellinomatheia/themata/ΠΡΟΦΟΡΙΚΗ%20ΕΞΕΤΑΣΗ%202026Α.pdf", "what": "2026A oral paper: the speaking format", "checked": "2026-11-16"},
+    {"url": "https://gsvetlly.minedu.gov.gr/publications/ellinomatheia/ylh_ellinikis_istorias_politismou.pdf", "what": "History and culture syllabus text", "checked": "2026-11-16"}
+  ],
+  "watch": {
+    "what": "A2 + history exam for long-term residence (Ministry of Education)",
+    "what_tr": "Uzun süreli oturum için A2 + tarih sınavı (Eğitim Bakanlığı)",
+    "urls": [
+      "https://www.gsvetlly.minedu.gov.gr/ellinomatheia",
+      "https://gsvetlly.minedu.gov.gr/nea-anakoinoseis",
+      "https://ellinomatheia.it.minedu.gov.gr/"
+    ],
+    "look_for": "A new call (προκήρυξη / απόφαση) for the next session: exam date, application window, fee and number of places. Sessions are announced late and places are capped, so any new call is news."
+  }
+}

@@ -21,7 +21,7 @@ Fresh content every day, without the learner having to open you. This skill runs
    - `generated_stock` shows more than about 40 unseen items in coach packs: write nothing new today. It would only pile up. Note it and stop after step 2.
    - The learner has not practised for 3 days or more (`activity.days_since_last_practice`): write at most 5 items. A big pile is the last thing they need.
    - Otherwise write **8–15 items**.
-4. **What to write**, in `<learner_dir>/generated/coach-practice/items/<tomorrow's date>-prep.json`:
+4. **What to write**, in `<learner_dir>/generated/coach-practice/items/<tomorrow's date>-prep.json`. If `coach/plan.json` exists, aim at the current week's `focus` units and its `beyond_a2` points, and tag exam-format items with their `exam_task` (COACHING §5.1):
    - **One news-style reading text at their level** (`true_false` or `gap_bank`, 60–120 words), about something from their life or their city. You may look at today's real Greek news headlines for a topic if you have web access, but **write the text yourself**: original, simple and at their level. Never copy an article.
    - **Verbs** for the weakest `accuracy.grammar` tags or `verbs.*` areas: 3–6 `form` items, in new sentences.
    - **Leftovers**: anything noted in `coach/notes.md` as "to practise" (a class topic, words from a capture or tutor log).

@@ -106,6 +106,7 @@ class WatchEntry(Strict):
     what: str                       # English, e.g. "Ελληνομάθεια B1 written exam, May 2027"
     what_tr: str | None = None
     kind: Literal["exam", "course", "other"] = "exam"
+    exam: str | None = None         # the blueprint id (exams/<id>.json) for an exam entry
     date: str | None = None         # the exam or course start date, if announced
     registration: Window | None = None
     source_url: str
@@ -205,6 +206,7 @@ class Schedule(Strict):
 class Profile(Loose):
     ui_lang: Literal["en", "tr"] | None = None
     minutes: int | None = Field(default=None, ge=1, le=120)
+    days_per_week: int | None = Field(default=None, ge=1, le=7)
     name: str | None = None
     goal: str | None = None
     target_exam: Literal["a2ltr", "b1-keg", "undecided"] | None = None
@@ -214,6 +216,99 @@ class Profile(Loose):
     course: dict[str, Any] | None = None
     edge_tts_ok: bool | None = None
     whisper_ok: bool | None = None
+
+
+# ---------- plan.json ----------
+
+Realistic = Literal["yes", "tight", "no", "unknown"]
+
+
+class Words(Strict):
+    en: str
+    tr: str | None = None
+
+
+class PlanTarget(Strict):
+    exam: str                               # a blueprint id
+    session: str | None = None              # the exam date, from watch.json
+    registration_closes: str | None = None
+    source_url: str | None = None
+
+    _check = field_validator("session", "registration_closes")(lambda cls, v: _date(v))
+
+
+class PlanOption(Strict):
+    exam: str
+    session: str | None = None
+    realistic: Realistic
+    why: Words
+
+    _check = field_validator("session")(lambda cls, v: _date(v))
+
+
+class PlanVerdict(Strict):
+    realistic: Realistic
+    en: str
+    tr: str | None = None
+
+
+class PlanWeek(Strict):
+    start: str                              # the Monday of the week
+    minutes: int = Field(ge=0, le=3000)
+    focus: list[str] = []                   # unit ids of the target exam, or "foundations"
+    content: Words
+    beyond_a2: list[str] = []               # ids from the B1 blueprint's beyond_a2
+    checkpoint: Words | None = None
+    mock: bool = False
+
+    _check = field_validator("start")(lambda cls, v: _date(v))
+
+
+class Plan(Strict):
+    made_at: str
+    exam: str                               # the blueprint the weeks aim at
+    target: PlanTarget | None = None        # None: no realistic announced session yet
+    budget_minutes_week: int = Field(ge=0, le=3000)
+    pace_minutes_week: float | None = None  # what actually happened, last 4 weeks
+    verdict: PlanVerdict
+    options: list[PlanOption] = []
+    behind: Words | None = None             # said plainly when the learner is behind
+    drop: list[Words] = []                  # what to drop to catch up
+    weeks: list[PlanWeek] = Field(min_length=1)
+
+    _check = field_validator("made_at")(lambda cls, v: _date(v))
+
+    @model_validator(mode="after")
+    def _weeks_in_order(self) -> "Plan":
+        starts = [w.start for w in self.weeks]
+        if starts != sorted(starts) or len(set(starts)) != len(starts):
+            raise ValueError("weeks must be in date order, one entry per week")
+        return self
+
+
+# ---------- coach/mocks/<id>.json ----------
+
+class MockSection(Strict):
+    unit: str
+    items: list[str] = Field(min_length=1)  # item keys, in paper order
+
+
+class MockDef(Strict):
+    id: str = Field(pattern=r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
+    blueprint: str
+    created: str
+    title: Words | None = None
+    note: Words | None = None
+    sections: list[MockSection] = Field(min_length=1)
+
+    _check = field_validator("created")(lambda cls, v: _date(v))
+
+    @model_validator(mode="after")
+    def _units_once(self) -> "MockDef":
+        units = [s.unit for s in self.sections]
+        if len(set(units)) != len(units):
+            raise ValueError("each unit may appear only once in a mock")
+        return self
 
 
 # ---------- reading ----------
@@ -240,6 +335,27 @@ def message() -> Message | None:
 
 def watch() -> Watch | None:
     return _load(Watch, coach_dir() / "watch.json")
+
+
+def plan() -> Plan | None:
+    return _load(Plan, coach_dir() / "plan.json")
+
+
+def mocks_dir() -> Path:
+    return coach_dir() / "mocks"
+
+
+def mocks() -> list[MockDef]:
+    """Every valid mock definition (a broken one is logged and skipped)."""
+    folder = mocks_dir()
+    out = []
+    for path in sorted(folder.glob("*.json")) if folder.is_dir() else []:
+        m = _load(MockDef, path)
+        if m and m.id == path.stem:
+            out.append(m)
+        elif m:
+            log.warning("mock %s skipped: its id %s does not match the file name", path.name, m.id)
+    return out
 
 
 def schedule() -> Schedule | None:
@@ -319,6 +435,8 @@ def next_dates(today: date, limit: int = 2) -> dict | None:
     upcoming = []
     for e in w.entries:
         reg = e.registration
+        if e.kind != "exam" and reg and reg.closes and reg.closes < today.isoformat():
+            continue  # a course whose registration has closed is no use on the home screen
         candidates = [d for d in (e.date, reg.opens if reg else None, reg.closes if reg else None) if d]
         future = [d for d in candidates if d >= today.isoformat()]
         if not future:
@@ -392,6 +510,7 @@ FILES = {
     "coach/watch.json": Watch,
     "coach/schedule.json": Schedule,
     "coach/resolved-flags.json": _resolutions,
+    "coach/plan.json": Plan,
     "profile.json": Profile,
 }
 
@@ -418,6 +537,23 @@ def validate_learner(folder: Path) -> list[str]:
 
     for rel, model in FILES.items():
         check(rel, model)
+    for path in sorted((folder / "coach" / "mocks").glob("*.json")):
+        rel = f"coach/mocks/{path.name}"
+        check(rel, MockDef)
+        try:
+            data = read_json(path)
+        except (json.JSONDecodeError, OSError):
+            continue
+        if isinstance(data, dict) and data.get("id") != path.stem:
+            problems.append(f"{rel}: id {data.get('id')!r} does not match the file name")
+        problems.extend(f"{rel}: {p}" for p in _mock_problems(data))
+    plan_data = None
+    try:
+        plan_data = read_json(folder / "coach" / "plan.json") if (folder / "coach" / "plan.json").is_file() else None
+    except (json.JSONDecodeError, OSError):
+        pass
+    if isinstance(plan_data, dict):
+        problems.extend(f"coach/plan.json: {p}" for p in _plan_problems(plan_data))
     for path in sorted((folder / "feedback").glob("*.json")):
         check(f"feedback/{path.name}", Feedback)
         try:
@@ -427,3 +563,58 @@ def validate_learner(folder: Path) -> list[str]:
         except (json.JSONDecodeError, AttributeError, OSError):
             pass
     return problems
+
+
+def _mock_problems(data: Any) -> list[str]:
+    """Checks a mock definition against the blueprints (the model checks the shape)."""
+    from greek_coach import exams
+
+    if not isinstance(data, dict):
+        return []
+    bps = exams.load_blueprints()
+    bp = bps.get(data.get("blueprint"))
+    if bp is None:
+        return [f"blueprint {data.get('blueprint')!r} is not one of {sorted(bps)}"]
+    from greek_coach import packs
+
+    out = []
+    catalog = None
+    for s in data.get("sections") or []:
+        if not isinstance(s, dict):
+            continue
+        unit = bp.unit(s.get("unit"))
+        if unit is None:
+            out.append(f"unit {s.get('unit')!r} is not a unit of {bp.id} ({[u.id for u in bp.units]})")
+            continue
+        catalog = catalog or packs.load_all()
+        tasks = {t.id for t in unit.tasks}
+        for key in s.get("items") or []:
+            entry = catalog.items.get(key)
+            if entry is None:
+                out.append(f"{unit.id}: item {key} was not found (check the pack and id)")
+            elif entry[1].exam_task not in tasks:
+                out.append(f"{unit.id}: item {key} has exam_task {entry[1].exam_task!r}, not a {unit.id} task of {bp.id}")
+    return out
+
+
+def _plan_problems(data: dict) -> list[str]:
+    from greek_coach import exams
+
+    bps = exams.load_blueprints()
+    out = []
+    if data.get("exam") not in bps:
+        out.append(f"exam {data.get('exam')!r} is not one of {sorted(bps)}")
+        return out
+    bp = bps[data["exam"]]
+    units = {u.id for u in bp.units} | {"foundations"}
+    beyond = {b.id for b2 in bps.values() for b in b2.beyond_a2}
+    for i, w in enumerate(data.get("weeks") or []):
+        if not isinstance(w, dict):
+            continue
+        bad = [f for f in w.get("focus") or [] if f not in units]
+        if bad:
+            out.append(f"weeks[{i}].focus: {bad} are not units of {bp.id} (use {sorted(units)})")
+        bad = [b for b in w.get("beyond_a2") or [] if b not in beyond]
+        if bad:
+            out.append(f"weeks[{i}].beyond_a2: {bad} are not in any blueprint's beyond_a2")
+    return out
