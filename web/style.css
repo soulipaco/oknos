@@ -452,3 +452,46 @@ details.technique summary { color: var(--ink); font-weight: 500; }
 .mock-foot { justify-content: space-between; margin-top: 12px; }
 .saved-note { color: var(--accent); }
 .option.chosen { border-color: var(--accent); background: var(--accent-soft); }
+
+/* ---------- course, choice and lists (phase 5b) ---------- */
+.home-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 16px; }
+.nav-tile { padding: 14px 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); font-weight: 600; text-align: left; }
+.nav-tile:hover { border-color: var(--accent); background: var(--accent-soft); }
+.stage-card { display: grid; gap: 6px; width: 100%; text-align: left; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--paper); }
+.stage-card strong { font-size: 18px; }
+.pbar { display: block; height: 10px; border-radius: 6px; background: var(--line); overflow: hidden; }
+.pbar > span { display: block; height: 100%; background: var(--good); }
+.pbar.thin { height: 6px; margin-top: 4px; }
+.map { list-style: none; padding: 0; display: grid; gap: 6px; }
+.map-row { display: grid; grid-template-columns: 24px 1fr auto; gap: 10px; align-items: center; width: 100%; text-align: left; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); }
+.map-row.current { border-color: var(--accent); background: var(--accent-soft); }
+.map-row.locked { opacity: .6; }
+.map-row.done .map-icon { color: var(--good); }
+.map-text { display: grid; gap: 2px; }
+.map-icon { font-size: 18px; text-align: center; }
+.choice-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 10px; }
+.choice { padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); }
+.choice[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.stage-select, .search { width: 100%; padding: 10px 12px; font: inherit; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); margin: 6px 0 10px; }
+.word-list, .lemma-list { list-style: none; padding: 0; }
+.word-row { display: grid; grid-template-columns: auto auto minmax(0, 1fr) minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.stage-panel .word-row, .summary .word-list .word-row:has(> .speak:first-child) { grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr) auto; }
+.word-row.locked { opacity: .55; }
+.word-row .el { font-size: 18px; }
+.lemma-list li { padding: 4px 0; }
+.chip.st-new { background: var(--paper); }
+.chip.st-learning { background: var(--accent-soft); }
+.chip.st-secure, .chip.st-known { background: var(--good-soft); }
+.chip.st-locked { background: transparent; border: 1px dashed var(--line); color: var(--muted); }
+.chip.map-done { background: var(--good-soft); }
+.chip.map-locked { background: transparent; border: 1px dashed var(--line); }
+.sticky-actions { position: sticky; top: 0; background: var(--bg); padding: 6px 0; z-index: 2; }
+details.verb { border-bottom: 1px solid var(--line); padding: 8px 0; }
+details.verb.locked summary { opacity: .6; }
+details.verb summary .el { font-size: 19px; }
+.verb-table { border-collapse: collapse; font-size: 15px; margin: 8px 0; }
+.verb-table th, .verb-table td { border: 1px solid var(--line); padding: 4px 8px; text-align: left; }
+.verb-table td.vf.secure, .verb-table td.vf.known { background: var(--good-soft); }
+.verb-table td.vf.learning { background: var(--accent-soft); }
+.verb-table td.vf.locked { color: var(--muted); }
+.good-line { color: var(--good); font-weight: 600; }

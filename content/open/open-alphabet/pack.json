@@ -1,0 +1,15 @@
+{
+  "id": "open-alphabet",
+  "title": {
+    "en": "Reading Greek: letters and sounds",
+    "tr": "Yunanca okumak: harfler ve sesler",
+    "el": "Διαβάζω ελληνικά"
+  },
+  "version": 1,
+  "levels": [
+    "A1"
+  ],
+  "visibility": "open",
+  "licence": "CC-BY-SA-4.0",
+  "source": "Original, written for Greek Coach."
+}

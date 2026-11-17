@@ -13,7 +13,7 @@ from datetime import date, timedelta
 from pathlib import Path
 from typing import Any
 
-from greek_coach import coachfiles, db, mock, paths, plan, readiness, scheduler, session
+from greek_coach import coachfiles, curriculum, db, mock, paths, plan, readiness, scheduler, session
 from greek_coach.packs import Catalog, FormItem, SELECTION_TASKS, SpeakItem, VocabItem, WriteItem
 
 REPORT_VERSION = 2
@@ -304,6 +304,7 @@ def build(conn: sqlite3.Connection, catalog: Catalog, days: int = 14, with_words
         "generated_stock": generated_stock(conn, catalog),
         "inbox": inbox(),
         "coach": coach_state(today),
+        "curriculum": curriculum.summary(conn, catalog),
         "readiness": ready,
         "readiness_rules": {"first_attempts_only": True, "window_days": readiness.EVIDENCE_DAYS,
                             "per_task_max": readiness.PER_TASK_MAX, "unit_min": readiness.UNIT_MIN,

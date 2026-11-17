@@ -55,6 +55,7 @@ Do these in this order. Each step is short.
 
 From `accuracy`, `recent_wrong`, `hardest`, `lookups` and `activity`, work out:
 
+- **Where they are in the course** (`curriculum.current`): the lesson, how much of it is learned, and what opens next. Say it in one line ("Lesson 3, 37 of 92 learned; lesson 4 opens at 80%").
 - **What is going well.** Find one or two things, with numbers. Compare with your notes from last time if you can: "verbs in the past: 55% two weeks ago, 72% now". If nothing has improved, find something real: they practised on 9 days out of 14, they know 140 words now.
 - **The two or three weakest areas** that have enough evidence (`n` of at least `evidence_min`). Name them concretely, such as "the past tense of irregular verbs (πήγα, ήρθα, είδα)", not "grammar".
   - Look inside `recent_wrong` for the pattern. Is it always the same verb, always the accent, always choosing the English meaning of a similar-looking word?
@@ -73,7 +74,7 @@ Let the current plan week's `focus` and `beyond_a2` steer what you prepare in st
 
 ## 5. Prepare the exercises
 
-1. Write **10–30 items** to `learner/generated/coach-practice/items/<today>-checkin.json`, aimed at those weak areas and built from their life (COACHING §5).
+1. Write **10–30 items** to `learner/generated/coach-practice/items/<today>-checkin.json`, aimed at those weak areas and built from their life (COACHING §5). They are for the **current stage** of the curriculum: tag each with `"stage:<id>"` (COACHING §5.3). For a book lesson, the `rebuild-imported` skill turns that lesson's own exercises into items, which is usually the best material.
    - If they have not done a writing task for a while and no `write` item is unseen, include one `write` prompt in exam format, about something from their life.
 2. **Self-check every item** against COACHING §5.2, then:
    - `uv run greek-coach validate <learner_dir>/generated/coach-practice`; fix every problem and look at every note;

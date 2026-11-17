@@ -1,0 +1,344 @@
+{
+ "id": "open-a1-b1",
+ "title": {
+  "en": "Greek from the first letter",
+  "tr": "İlk harften Yunanca"
+ },
+ "source": "Original, written for Greek Coach (CC BY-SA 4.0). Follows the ΚΕΓ A1, A2 and B1 level descriptors.",
+ "stages": [
+  {
+   "id": "reading",
+   "title": {
+    "en": "Reading Greek",
+    "tr": "Yunanca okumak"
+   },
+   "level": "A1",
+   "theme": {
+    "en": "Letters, letter pairs and syllables; then words you already know",
+    "tr": "Harfler, çift harfler ve heceler; sonra zaten bildiğin kelimeler"
+   },
+   "include": [
+    {
+     "packs": [
+      "open-alphabet"
+     ]
+    },
+    {
+     "packs": [
+      "open-shared-words-tr"
+     ],
+     "types": [
+      "vocab"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Read any Greek word aloud, slowly",
+     "tr": "Her Yunanca kelimeyi yavaşça sesli okumak"
+    }
+   ]
+  },
+  {
+   "id": "first-words",
+   "title": {
+    "en": "First sentences",
+    "tr": "İlk cümleler"
+   },
+   "level": "A1",
+   "theme": {
+    "en": "είμαι and έχω; asking where something is",
+    "tr": "είμαι ve έχω; bir şeyin nerede olduğunu sormak"
+   },
+   "include": [
+    {
+     "lemmas": [
+      "είμαι",
+      "έχω"
+     ],
+     "tenses": [
+      "present"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    },
+    {
+     "items": [
+      "open-shared-words-tr/q-flitzani-drink",
+      "open-shared-words-tr/q-xali-where",
+      "open-shared-words-tr/q-kimas-where"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Say who you are and what you have",
+     "tr": "Kim olduğunu ve neyin olduğunu söylemek"
+    }
+   ]
+  },
+  {
+   "id": "everyday-verbs",
+   "title": {
+    "en": "Everyday verbs",
+    "tr": "Gündelik fiiller"
+   },
+   "level": "A1",
+   "theme": {
+    "en": "The present tense of the commonest verbs",
+    "tr": "En sık fiillerin şimdiki zamanı"
+   },
+   "include": [
+    {
+     "tenses": [
+      "present"
+     ],
+     "grammar": [
+      "verb.class_a"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    },
+    {
+     "items": [
+      "open-everyday-a1a2/r-match-questions",
+      "open-shared-words-tr/r-taverna-menu"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Say what you do every day",
+     "tr": "Her gün ne yaptığını söylemek"
+    }
+   ]
+  },
+  {
+   "id": "more-verbs",
+   "title": {
+    "en": "More verbs",
+    "tr": "Daha çok fiil"
+   },
+   "level": "A1",
+   "theme": {
+    "en": "Verbs like μιλάω, and verbs in -ομαι",
+    "tr": "μιλάω gibi fiiller ve -ομαι ile biten fiiller"
+   },
+   "include": [
+    {
+     "tenses": [
+      "present"
+     ],
+     "grammar": [
+      "verb.class_b"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    },
+    {
+     "tenses": [
+      "present"
+     ],
+     "grammar": [
+      "verb.deponent"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shopping",
+   "title": {
+    "en": "Shops and opening hours",
+    "tr": "Dükkânlar ve çalışma saatleri"
+   },
+   "level": "A1",
+   "theme": {
+    "en": "The kiosk, the bakery, the pharmacy, the supermarket",
+    "tr": "Büfe, fırın, eczane, süpermarket"
+   },
+   "include": [
+    {
+     "items": [
+      "open-everyday-a1a2/l-bakery",
+      "open-everyday-a1a2/r-match-shops",
+      "open-everyday-a1a2/r-gap-pharmacy",
+      "open-everyday-a1a2/r-tf-supermarket",
+      "open-everyday-a1a2/r-cat-food",
+      "open-shared-words-tr/r-bakaliko-notice"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "getting-around",
+   "title": {
+    "en": "Time and getting around",
+    "tr": "Saat ve ulaşım"
+   },
+   "level": "A1",
+   "theme": {
+    "en": "What time, where, how to get there",
+    "tr": "Saat kaç, nerede, nasıl gidilir"
+   },
+   "include": [
+    {
+     "items": [
+      "open-everyday-a1a2/l-nikos-time",
+      "open-everyday-a1a2/r-cat-places"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "review-1",
+   "title": {
+    "en": "Review",
+    "tr": "Tekrar"
+   },
+   "level": "A1",
+   "theme": {
+    "en": "Everything so far",
+    "tr": "Şimdiye kadar her şey"
+   },
+   "review_of": [
+    "reading",
+    "first-words",
+    "everyday-verbs",
+    "more-verbs",
+    "shopping",
+    "getting-around"
+   ]
+  },
+  {
+   "id": "future",
+   "title": {
+    "en": "The future",
+    "tr": "Gelecek zaman"
+   },
+   "level": "A2",
+   "theme": {
+    "en": "θα + verb: plans and appointments",
+    "tr": "θα + fiil: planlar ve randevular"
+   },
+   "include": [
+    {
+     "tenses": [
+      "future"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "past",
+   "title": {
+    "en": "The past",
+    "tr": "Geçmiş zaman"
+   },
+   "level": "A2",
+   "theme": {
+    "en": "What you did yesterday",
+    "tr": "Dün ne yaptığın"
+   },
+   "include": [
+    {
+     "tenses": [
+      "aorist",
+      "imperfect"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    },
+    {
+     "items": [
+      "open-everyday-a1a2/r-cat-time"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a2-life",
+   "title": {
+    "en": "Daily life in Greece",
+    "tr": "Yunanistan'da günlük hayat"
+   },
+   "level": "A2",
+   "theme": {
+    "en": "Notices, the building manager, the doctor, a friend's invitation",
+    "tr": "Duyurular, yönetici, doktor, bir arkadaşın daveti"
+   },
+   "include": [
+    {
+     "packs": [
+      "open-everyday-a1a2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "review-2",
+   "title": {
+    "en": "Review",
+    "tr": "Tekrar"
+   },
+   "level": "A2",
+   "theme": {
+    "en": "The future, the past and daily life",
+    "tr": "Gelecek, geçmiş ve günlük hayat"
+   },
+   "review_of": [
+    "future",
+    "past",
+    "a2-life"
+   ]
+  },
+  {
+   "id": "b1-bridge",
+   "title": {
+    "en": "Towards B1",
+    "tr": "B1'e doğru"
+   },
+   "level": "B1",
+   "theme": {
+    "en": "What B1 adds: passive, reported speech, 150-word texts, tables and notes",
+    "tr": "B1'in ekledikleri: edilgen çatı, dolaylı anlatım, 150 kelimelik metinler, tablo ve not"
+   },
+   "include": [
+    {
+     "packs": [
+      "open-b1-bridge"
+     ]
+    }
+   ]
+  }
+ ],
+ "pools": [
+  {
+   "level": "A1",
+   "from_stage": "everyday-verbs"
+  },
+  {
+   "level": "A2",
+   "from_stage": "a2-life"
+  },
+  {
+   "level": "B1",
+   "from_stage": "b1-bridge"
+  }
+ ]
+}

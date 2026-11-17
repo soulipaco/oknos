@@ -435,7 +435,9 @@ async function renderHome() {
       h("button", { class: status === "done" ? "start secondary-start" : "start", type: "button", id: "start",
         onclick: () => startSession(status === "done" ? "extra" : "daily") }, startLabel),
       h("p", { class: "counts muted" }, first ? t("home_first") : todayLine(stats)),
+      homeNav(),
     ),
+    stagePanel(state.home.curriculum),
     coachPanel(state.home.coach),
     examPanel(state.home),
     ...(first ? [] : [consistencyGrid(stats), standing(stats)]),
@@ -445,14 +447,23 @@ async function renderHome() {
 
 // ---------- session ----------
 
-async function startSession(kind, items = []) {
+async function startSession(kind, items = [], extra = {}) {
   app.replaceChildren(h("div", { class: "center-note" }, t("loading")));
   try {
-    const s = await api("/api/session", { kind, items, ui_lang: state.lang, has_voice: !!greekVoice });
+    const s = await api("/api/session", { kind, items, ui_lang: state.lang, has_voice: !!greekVoice, ...extra });
     if (!s.cards.length) {
       app.replaceChildren(h("header", { class: "topbar" }, wordmark()), h("div", { class: "center-note" }, t("nothing")));
       return;
     }
+    state.session = { ...s, index: 0 };
+    renderCard();
+  } catch { showError(); }
+}
+
+async function startCheck(stageId) {
+  app.replaceChildren(h("div", { class: "center-note" }, t("loading")));
+  try {
+    const s = await api(`/api/curriculum/stages/${encodeURIComponent(stageId)}/check`, {});
     state.session = { ...s, index: 0 };
     renderCard();
   } catch { showError(); }
@@ -1107,6 +1118,10 @@ async function finishSession() {
 
 function renderSummary(sum) {
   const lines = [];
+  if (sum.check) {
+    lines.push(h("p", { class: sum.check.passed ? "line good-line" : "line" },
+      t(sum.check.passed ? "check_passed" : "check_failed", { pct: Math.round(sum.check.score * 100), need: Math.round(sum.check.needed * 100) })));
+  }
   if (sum.written) lines.push(h("p", { class: "line" }, t("summary_written")));
   if (!sum.done && !sum.written) {
     lines.push(h("p", { class: "line" }, t("summary_none")));
@@ -1226,6 +1241,198 @@ async function renderSubmission(id) {
       onclick: () => startSession("practice", fb.exercises) }, t("practise_these", { n: fb.exercises.length }))));
   }
   app.replaceChildren(topbarBack(renderWriting), h("section", { class: "summary writing" }, ...blocks));
+}
+
+
+// ---------- the course: where you are, what you know, what you choose (phase 5b) ----------
+
+const STATUS_KEYS = { new: "st_new", learning: "st_learning", secure: "st_secure", known: "st_known" };
+
+function stageName(st) {
+  return tr(st.title) || st.id;
+}
+
+function homeNav() {
+  const b = (label, fn) => h("button", { class: "nav-tile", type: "button", onclick: fn }, label);
+  return h("nav", { class: "home-nav", "aria-label": t("nav_label") },
+    b(t("nav_practise"), renderPractise), b(t("nav_words"), renderWords),
+    b(t("nav_verbs"), renderVerbs), b(t("nav_map"), renderMap));
+}
+
+function progressBar(done, total, cls = "") {
+  const pct = total ? Math.round((done / total) * 100) : 100;
+  return h("span", { class: `pbar ${cls}`, role: "progressbar", "aria-valuenow": pct, "aria-valuemin": 0, "aria-valuemax": 100 },
+    h("span", { style: `width:${pct}%` }));
+}
+
+function stagePanel(cur) {
+  if (!cur) return null;
+  const st = cur.current;
+  return h("section", { class: "panel stage-panel" },
+    h("div", { class: "panel-head" }, h("h2", {}, t("stage_now")),
+      h("span", { class: "muted small" }, t("stage_count", { n: cur.stages_done + 1, total: cur.stages_total }))),
+    h("button", { class: "stage-card", type: "button", onclick: () => renderStage(st.id) },
+      h("strong", {}, stageName(st)), st.theme ? h("span", { class: "muted" }, tr(st.theme)) : null,
+      progressBar(st.learned, st.core),
+      h("span", { class: "small muted" }, st.core ? t("stage_secure", { n: st.learned, total: st.core }) : t("stage_nothing"))),
+    cur.next ? h("p", { class: "small muted" }, t("stage_next", { name: stageName(cur.next) })) : null);
+}
+
+async function renderMap() {
+  closePopover();
+  let cur;
+  try { cur = await api("/api/curriculum"); } catch { return showError(); }
+  if (!cur.curriculum) return renderHome();
+  const rows = cur.stages.map(st => h("li", {},
+    h("button", { class: `map-row ${st.state}`, type: "button", onclick: () => renderStage(st.id) },
+      h("span", { class: "map-icon", "aria-hidden": "true" }, st.state === "done" ? "✓" : st.state === "current" ? "●" : "○"),
+      h("span", { class: "map-text" }, h("strong", {}, stageName(st)), st.theme ? h("span", { class: "muted small" }, tr(st.theme)) : null,
+        st.state !== "locked" && st.core ? progressBar(st.learned, st.core, "thin") : null),
+      h("span", { class: "muted small" }, t(`map_${st.state}`)))));
+  app.replaceChildren(topbarBack(renderHome),
+    h("section", { class: "summary" }, h("h1", {}, tr(cur.title)),
+      h("p", { class: "muted" }, t("map_line", { pct: Math.round(cur.mastery * 100) })),
+      h("ol", { class: "map" }, rows)));
+}
+
+function statusChip(status) {
+  return h("span", { class: `chip st-${status}` }, t(STATUS_KEYS[status] || status));
+}
+
+async function renderStage(id) {
+  closePopover();
+  let st;
+  try { st = await api(`/api/curriculum/stages/${encodeURIComponent(id)}`); } catch { return showError(); }
+  const words = st.words_list.map(w => h("li", { class: "word-row" },
+    speakButton(w.el, true), greekText(w.el, { cls: "el", tappable: false }), h("span", { class: "muted" }, w.meaning), statusChip(w.status)));
+  const byLemma = {};
+  for (const f of st.forms_list) (byLemma[f.lemma || "?"] ||= []).push(f);
+  const forms = Object.entries(byLemma).map(([lemma, fs]) => h("li", {},
+    h("span", { class: "el", lang: "el" }, lemma), " ",
+    h("span", { class: "muted small" }, `${fs.filter(f => f.status === "secure" || f.status === "known").length}/${fs.length}`)));
+  const actions = [];
+  if (st.state !== "locked") {
+    actions.push(h("button", { class: "primary", type: "button", onclick: () => startSession("choose", [], { what: "all", stage: st.id, minutes: 10 }) }, t("stage_practise")));
+  }
+  if (st.can_check && st.state !== "done") {
+    actions.push(h("button", { class: "secondary", type: "button", onclick: () => startCheck(st.id) }, t("stage_check")));
+  }
+  app.replaceChildren(topbarBack(renderMap),
+    h("section", { class: "summary" },
+      h("h1", {}, stageName(st)), st.theme ? h("p", { class: "muted" }, tr(st.theme)) : null,
+      h("p", {}, h("span", { class: `chip map-${st.state}` }, t(`map_${st.state}`)), " ",
+        st.core ? t("stage_secure", { n: st.learned, total: st.core }) : t("stage_nothing")),
+      st.core ? progressBar(st.learned, st.core) : null,
+      st.core ? h("p", { class: "muted small" }, t("stage_secure_line", { n: st.secure, days: 6 })) : null,
+      st.state === "locked" ? h("p", { class: "muted small" }, t("stage_locked_line")) : null,
+      st.can_do?.length ? h("div", { class: "coach-note" }, h("p", { class: "small" }, h("strong", {}, t("stage_can_do"))),
+        h("ul", { class: "small" }, st.can_do.map(c => h("li", {}, tr(c))))) : null,
+      actions.length ? h("div", { class: "actions" }, actions) : null,
+      st.can_check && st.state !== "done" ? h("p", { class: "muted small" }, t("stage_check_line")) : null,
+      words.length ? [h("h2", {}, t("stage_words", { n: words.length })), h("ul", { class: "word-list" }, words)] : null,
+      forms.length ? [h("h2", {}, t("stage_forms", { n: st.forms_list.length })), h("ul", { class: "lemma-list" }, forms)] : null,
+      st.tasks_list.length ? h("p", { class: "muted" }, t("stage_tasks", { n: st.tasks_list.length, seen: st.tasks_list.filter(x => x.seen).length })) : null,
+      st.extra_words ? h("p", { class: "muted small" }, t("stage_extra", { n: st.extra_words })) : null));
+}
+
+const PRACTISE_CHOICES = ["all", "words", "verbs", "reading", "listening", "writing", "speaking", "review"];
+
+async function renderPractise() {
+  closePopover();
+  let cur;
+  try { cur = await api("/api/curriculum"); } catch { cur = { curriculum: null }; }
+  const pick = { what: "words", stage: "", minutes: 10 };
+  const chips = (values, key, label) => h("div", { class: "choice-row", role: "group", "aria-label": label },
+    values.map(([v, text]) => h("button", { type: "button", class: "choice", "aria-pressed": String(pick[key] === v), onclick: (e) => {
+      pick[key] = v;
+      e.target.parentElement.querySelectorAll(".choice").forEach(b => b.setAttribute("aria-pressed", String(b === e.target)));
+    } }, text)));
+  const reached = (cur.stages || []).filter(st => st.state !== "locked");
+  const stageSelect = h("select", { class: "stage-select", "aria-label": t("pr_stage"), onchange: (e) => { pick.stage = e.target.value; } },
+    h("option", { value: "" }, t("pr_all_reached")), reached.map(st => h("option", { value: st.id }, stageName(st))));
+  const go = h("button", { class: "start", type: "button", onclick: () => startSession("choose", [], { what: pick.what, stage: pick.stage || null, minutes: pick.minutes }) }, t("pr_start"));
+  app.replaceChildren(topbarBack(renderHome),
+    h("section", { class: "summary" }, h("h1", {}, t("pr_title")),
+      h("h2", {}, t("pr_what")), chips(PRACTISE_CHOICES.map(v => [v, t(`pr_${v}`)]), "what", t("pr_what")),
+      cur.curriculum ? [h("h2", {}, t("pr_stage")), stageSelect] : null,
+      h("h2", {}, t("pr_length")), chips([5, 10, 20].map(m => [m, t("minutes_n", { n: m })]), "minutes", t("pr_length")),
+      h("p", { class: "muted small" }, t("pr_line")),
+      go));
+}
+
+async function renderWords() {
+  closePopover();
+  let data;
+  try { data = await api("/api/words"); } catch { return showError(); }
+  const f = { q: "", status: "all", stage: "", upcoming: false, shown: 150 };
+  const selected = new Set();
+  const list = h("ul", { class: "word-list" });
+  const count = h("p", { class: "muted small" });
+  const practise = h("button", { class: "primary", type: "button", disabled: true, onclick: () => startSession("practice", [...selected]) }, t("w_practise", { n: 0 }));
+  const more = h("button", { class: "link-button", type: "button", onclick: () => { f.shown += 300; paint(); } }, t("w_more"));
+  const norm = (x) => x.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+  function paint() {
+    const q = norm(f.q.trim());
+    const rows = data.words.filter(w => (f.upcoming || w.open)
+      && (f.status === "all" || w.status === f.status || (f.status === "secure" && w.status === "known"))
+      && (!f.stage || w.stage === f.stage)
+      && (!q || norm(w.el).includes(q) || norm(w.meaning).includes(q)));
+    count.textContent = t("w_count", { n: rows.length, total: data.words.length });
+    list.replaceChildren(...rows.slice(0, f.shown).map(w => {
+      const box = h("input", { type: "checkbox", "aria-label": w.el, disabled: !w.open, onchange: (e) => {
+        if (e.target.checked) selected.add(w.key); else selected.delete(w.key);
+        practise.disabled = selected.size === 0;
+        practise.textContent = t("w_practise", { n: selected.size });
+      } });
+      box.checked = selected.has(w.key);
+      return h("li", { class: `word-row${w.open ? "" : " locked"}` }, box, speakButton(w.el, true),
+        h("span", { class: "el", lang: "el" }, w.el), h("span", { class: "muted" }, w.meaning),
+        w.open ? statusChip(w.status) : h("span", { class: "chip st-locked" }, t("w_locked")));
+    }));
+    more.hidden = rows.length <= f.shown;
+  }
+  const search = h("input", { class: "search", type: "search", placeholder: t("w_search"), "aria-label": t("w_search"),
+    oninput: (e) => { f.q = e.target.value; f.shown = 150; paint(); } });
+  const statusRow = h("div", { class: "choice-row" }, ["all", "new", "learning", "secure"].map(v =>
+    h("button", { type: "button", class: "choice", "aria-pressed": String(f.status === v), onclick: (e) => {
+      f.status = v; e.target.parentElement.querySelectorAll(".choice").forEach(b => b.setAttribute("aria-pressed", String(b === e.target))); paint();
+    } }, v === "all" ? t("w_all") : t(STATUS_KEYS[v]))));
+  const stageSel = data.stages.length ? h("select", { class: "stage-select", "aria-label": t("pr_stage"), onchange: (e) => { f.stage = e.target.value; paint(); } },
+    h("option", { value: "" }, t("w_every_stage")), data.stages.map(st => h("option", { value: st.id }, tr(st.title)))) : null;
+  const upcoming = h("label", { class: "small muted convert" }, h("input", { type: "checkbox", onchange: (e) => { f.upcoming = e.target.checked; paint(); } }), t("w_upcoming"));
+  app.replaceChildren(topbarBack(renderHome),
+    h("section", { class: "summary" }, h("h1", {}, t("nav_words")), search, statusRow, stageSel, upcoming, count,
+      h("div", { class: "actions sticky-actions" }, practise), list, more));
+  paint();
+}
+
+const PERSONS = ["1sg", "2sg", "3sg", "1pl", "2pl", "3pl"];
+
+async function renderVerbs() {
+  closePopover();
+  let data;
+  try { data = await api("/api/verbs"); } catch { return showError(); }
+  const rows = data.verbs.map(v => {
+    const ORDER = ["present", "future", "aorist", "imperfect", "subjunctive", "imperative", "perfect"];
+    const tenses = [...new Set(v.forms.map(f => f.tense))].sort((x, y) => (ORDER.indexOf(x) + 99) % 99 - (ORDER.indexOf(y) + 99) % 99);
+    const table = h("table", { class: "verb-table" },
+      h("thead", {}, h("tr", {}, h("th", {}), tenses.map(tn => h("th", {}, tenseName(tn))))),
+      h("tbody", {}, PERSONS.filter(pn => v.forms.some(f => f.person === pn)).map(pn => h("tr", {},
+        h("th", { scope: "row" }, t(`person_${pn}`)),
+        tenses.map(tn => {
+          const f = v.forms.find(x => x.person === pn && x.tense === tn);
+          if (!f) return h("td", {});
+          return h("td", { class: `vf ${f.open ? f.status : "locked"}`, lang: "el", title: f.open ? t(STATUS_KEYS[f.status]) : t("w_locked") },
+            f.open ? f.form : "🔒");
+        })))));
+    const practise = v.open ? h("button", { class: "link-button small", type: "button", onclick: () => startSession("choose", [], { what: "verbs", lemma: v.lemma, minutes: 5 }) }, t("v_practise")) : null;
+    return h("details", { class: `verb${v.open ? "" : " locked"}` },
+      h("summary", {}, h("span", { class: "el", lang: "el" }, v.lemma), " ",
+        h("span", { class: "muted small" }, v.open ? t("v_known", { n: v.known, total: v.forms.length }) : t("w_locked"))),
+      h("div", { class: "table-wrap" }, table), practise);
+  });
+  app.replaceChildren(topbarBack(renderHome),
+    h("section", { class: "summary" }, h("h1", {}, t("nav_verbs")), h("p", { class: "muted small" }, t("v_line")), rows));
 }
 
 // ---------- exam readiness ----------

@@ -1,0 +1,288 @@
+{
+  "$defs": {
+    "Pool": {
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "enum": [
+            "A1",
+            "A2",
+            "B1"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "from_stage": {
+          "title": "From Stage",
+          "type": "string"
+        }
+      },
+      "required": [
+        "level",
+        "from_stage"
+      ],
+      "title": "Pool",
+      "type": "object"
+    },
+    "Rule": {
+      "additionalProperties": false,
+      "description": "Matches an item when every constraint given is met (an empty rule matches nothing).",
+      "properties": {
+        "units": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Units",
+          "type": "array"
+        },
+        "packs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Packs",
+          "type": "array"
+        },
+        "items": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Items",
+          "type": "array"
+        },
+        "lemmas": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Lemmas",
+          "type": "array"
+        },
+        "tenses": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Tenses",
+          "type": "array"
+        },
+        "persons": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Persons",
+          "type": "array"
+        },
+        "grammar": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Grammar",
+          "type": "array"
+        },
+        "pos": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Pos",
+          "type": "array"
+        },
+        "types": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Types",
+          "type": "array"
+        },
+        "levels": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Levels",
+          "type": "array"
+        },
+        "topics": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        }
+      },
+      "title": "Rule",
+      "type": "object"
+    },
+    "Stage": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[a-z0-9][a-z0-9_-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "$ref": "#/$defs/Words"
+        },
+        "theme": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Words"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "level": {
+          "enum": [
+            "A1",
+            "A2",
+            "B1"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "review_of": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Review Of",
+          "type": "array"
+        },
+        "include": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Rule"
+          },
+          "title": "Include",
+          "type": "array"
+        },
+        "can_do": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Words"
+          },
+          "title": "Can Do",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "level"
+      ],
+      "title": "Stage",
+      "type": "object"
+    },
+    "Words": {
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "title": "En",
+          "type": "string"
+        },
+        "tr": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tr"
+        },
+        "el": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "El"
+        }
+      },
+      "required": [
+        "en"
+      ],
+      "title": "Words",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "title": {
+      "$ref": "#/$defs/Words"
+    },
+    "source": {
+      "title": "Source",
+      "type": "string"
+    },
+    "for_pack": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "For Pack"
+    },
+    "stages": {
+      "items": {
+        "$ref": "#/$defs/Stage"
+      },
+      "minItems": 1,
+      "title": "Stages",
+      "type": "array"
+    },
+    "pools": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Pool"
+      },
+      "title": "Pools",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "source",
+    "stages"
+  ],
+  "title": "Curriculum",
+  "type": "object"
+}

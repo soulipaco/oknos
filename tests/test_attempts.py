@@ -37,12 +37,14 @@ def test_session_attempt_lands_in_sqlite_with_greek_intact(client, learner):
     assert any("Ͱ" <= ch <= "Ͽ" for ch in stored["card"]["prompt"]), "prompt should be Greek"
 
 
-def test_first_session_new_words_start_with_kafes(client):
+def test_first_session_starts_with_reading(client):
+    # The open curriculum starts with reading: letters first, then words a Turkish speaker knows.
     s = client.post("/api/session", json={"kind": "daily", "ui_lang": "tr"}).json()
     new = [c for c in s["cards"] if c["segment"] == "new"]
-    assert new[0]["item_key"] == "open-shared-words-tr/v-kafes"
-    assert new[0]["prompt"] == "ο καφές"
-    assert "kahve" in new[0]["options"] and len(new[0]["options"]) == 4
+    assert new[0]["item_key"] == "open-alphabet/l-alfa"
+    assert all(c["item_key"].split("/")[0] in ("open-alphabet", "open-shared-words-tr") for c in s["cards"])
+    assert new[0]["prompt"] == "Α α"
+    assert any(o.startswith("a, ") for o in new[0]["options"]) and len(new[0]["options"]) == 4  # sounds, in Turkish
 
 
 def test_server_decides_correctness(client):
@@ -71,7 +73,9 @@ def test_bad_requests_are_rejected(client):
                                              "response": {"choice": 3}}).status_code == 422
 
 
-def test_daily_session_has_all_segments_and_fits_the_budget(client):
+def test_daily_session_has_all_segments_and_fits_the_budget(client, learner):
+    learner.mkdir(parents=True, exist_ok=True)
+    (learner / "profile.json").write_text('{"level": "A2", "curriculum": "off"}', encoding="utf-8")
     daily = client.post("/api/session", json={"kind": "daily"}).json()
     assert daily["minutes"] == 10
     segments = [c["segment"] for c in daily["cards"]]

@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from greek_coach import packs, paths
+from greek_coach import lint, packs, paths
 
 OPEN = paths.CONTENT_DIR / "open"
 OPEN_PACKS = sorted(p for p in OPEN.iterdir() if (p / "pack.json").exists())
@@ -45,10 +45,14 @@ def test_greek_text_is_nfc_monotonic_with_final_sigma(pack_dir):
     medial_sigma_at_end = re.compile(r"σ(?![Ͱ-Ͽἀ-῿])")
     polytonic = re.compile(r"[ἀ-῿]")
     for file in [pack_dir / "pack.json", *sorted((pack_dir / "items").glob("*.json"))]:
-        for s in _strings(json.loads(file.read_text(encoding="utf-8"))):
+        data = json.loads(file.read_text(encoding="utf-8"))
+        # letter-pair cards (τσ) are parts of words, not words, so their `el` may end in σ
+        fragments = {e.get(f) for e in (data if isinstance(data, list) else []) if e.get("pos") in lint.FRAGMENT_POS
+                     for f in ("el", "lemma")}
+        for s in _strings(data):
             assert unicodedata.is_normalized("NFC", s), f"{file.name}: not NFC: {s!r}"
             assert not polytonic.search(s), f"{file.name}: polytonic character in {s!r}"
-            assert not medial_sigma_at_end.search(s), f"{file.name}: σ at the end of a word in {s!r}"
+            assert s in fragments or not medial_sigma_at_end.search(s), f"{file.name}: σ at the end of a word in {s!r}"
 
 
 @pytest.mark.parametrize("pack_dir", OPEN_PACKS, ids=lambda p: p.name)

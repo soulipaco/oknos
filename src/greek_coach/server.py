@@ -13,7 +13,8 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from greek_coach import coachfiles, db, exams, health, lookup, mock, packs, paths, plan, readiness, scheduler, session
+from greek_coach import (coachfiles, curriculum, db, exams, health, lookup, mock, packs, paths, plan, readiness,
+                         scheduler, session)
 from greek_coach.checking import CheckError, check
 from greek_coach.packs import OPEN_TASKS, FormItem, SpeakItem, VocabItem, WriteItem
 
@@ -63,8 +64,13 @@ class ProfileIn(BaseModel):
 
 
 class SessionIn(BaseModel):
-    kind: Literal["daily", "extra", "practice"] = "daily"
+    kind: Literal["daily", "extra", "practice", "choose"] = "daily"
     items: list[str] = []  # practice sessions: these item keys, in this order
+    what: str | None = None    # choose: words, verbs, reading, listening, tasks, writing, speaking, review
+    stage: str | None = None
+    lemma: str | None = None
+    topic: str | None = None
+    minutes: int | None = None
     ui_lang: Literal["en", "tr"] | None = None
     has_voice: bool = False
 
@@ -160,6 +166,16 @@ def create_app() -> FastAPI:
             stats = session.home_stats(conn, app.state.catalog, lang)
             coach = coach_block(conn)
             try:
+                cur = curriculum.summary(conn, app.state.catalog)
+                cur_brief = None
+                if cur is not None:
+                    cur_brief = {k: cur[k] for k in ("curriculum", "title", "current", "stages_done", "stages_total")}
+                    nxt = cur["current"]["order"] + 1
+                    cur_brief["next"] = cur["stages"][nxt] if nxt < len(cur["stages"]) else None
+            except Exception:  # the home screen must open even if the curriculum breaks
+                log.exception("curriculum")
+                cur_brief = None
+            try:
                 mock.expire(conn, app.state.catalog)
                 ready_brief = {k: _brief(v) for k, v in readiness.all_readiness(conn, app.state.catalog).items()}
             except Exception:  # the home screen must open even if readiness breaks
@@ -170,6 +186,7 @@ def create_app() -> FastAPI:
         return {
             "coach": coach,
             "readiness": ready_brief,
+            "curriculum": cur_brief,
             "target_exam": profile.get("target_exam"),
             "ui_lang": profile.get("ui_lang") if profile.get("ui_lang") in UI_LANGS else None,
             "minutes": _minutes(profile),
@@ -227,6 +244,13 @@ def create_app() -> FastAPI:
             minutes = coachfiles.restart_minutes(db.today()) or minutes  # the coach asked for a small restart
         conn = db.open_db()
         try:
+            if body.kind == "choose":
+                try:
+                    return session.chosen(conn, app.state.catalog, lang, body.what or "words",
+                                          max(2, min(60, body.minutes or 10)), body.stage, body.lemma, body.topic,
+                                          has_voice=body.has_voice)
+                except ValueError as e:
+                    raise HTTPException(422, str(e))
             if body.kind == "practice":
                 missing = [k for k in body.items if k not in app.state.catalog.items]
                 if missing or not body.items:
@@ -415,11 +439,65 @@ def create_app() -> FastAPI:
         try:
             session.end(conn, session_id)
             result = session.summary(conn, app.state.catalog, session_id, lang)
+            if result is not None:
+                result["check"] = curriculum.finish_check(conn, session_id)
         finally:
             conn.close()
         if result is None:
             raise HTTPException(404, f"unknown session {session_id}")
         return result
+
+    # ---------- the curriculum and the learner's own lists (phase 5b) ----------
+
+    @app.get("/api/curriculum")
+    def get_curriculum():
+        conn = db.open_db()
+        try:
+            out = curriculum.summary(conn, app.state.catalog)
+        finally:
+            conn.close()
+        return out or {"curriculum": None}
+
+    @app.get("/api/curriculum/stages/{stage_id}")
+    def get_stage(stage_id: str):
+        lang = _lang(read_profile())
+        conn = db.open_db()
+        try:
+            out = session.stage_detail(conn, app.state.catalog, lang, stage_id)
+        finally:
+            conn.close()
+        if out is None:
+            raise HTTPException(404, "no such stage")
+        return out
+
+    @app.post("/api/curriculum/stages/{stage_id}/check")
+    def stage_check(stage_id: str):
+        lang = _lang(read_profile())
+        conn = db.open_db()
+        try:
+            return curriculum.start_check(conn, app.state.catalog, stage_id, lang)
+        except ValueError as e:
+            raise HTTPException(409, str(e))
+        finally:
+            conn.close()
+
+    @app.get("/api/words")
+    def get_words():
+        lang = _lang(read_profile())
+        conn = db.open_db()
+        try:
+            return session.word_list(conn, app.state.catalog, lang)
+        finally:
+            conn.close()
+
+    @app.get("/api/verbs")
+    def get_verbs():
+        lang = _lang(read_profile())
+        conn = db.open_db()
+        try:
+            return session.verb_table(conn, app.state.catalog, lang)
+        finally:
+            conn.close()
 
     # ---------- exam mode ----------
 

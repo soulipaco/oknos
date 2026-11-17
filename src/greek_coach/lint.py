@@ -48,8 +48,11 @@ def _strings(value: Any, path: str = "") -> Iterable[tuple[str, str]]:
             yield from _strings(v, f"{path}.{k}" if path else str(k))
 
 
-def check_text(text: str) -> tuple[list[str], list[str]]:
-    """(problems, notes) for one string."""
+FRAGMENT_POS = {"letter", "digraph", "syllable"}  # reading cards: parts of words, not words
+
+
+def check_text(text: str, fragment: bool = False) -> tuple[list[str], list[str]]:
+    """(problems, notes) for one string. A fragment (a letter pair such as τσ) may end in σ."""
     problems: list[str] = []
     notes: list[str] = []
     if not greek.has_greek(text):
@@ -61,7 +64,7 @@ def check_text(text: str) -> tuple[list[str], list[str]]:
     mixed = [w for w in _MIXED.findall(text) if not w.isascii()]
     if mixed:
         problems.append(f"mixes Latin and Greek letters in {', '.join(sorted(set(mixed))[:5])} (look-alike letters)")
-    if _SIGMA_END.search(text):
+    if _SIGMA_END.search(text) and not fragment:
         bad = [w for w in greek.words(text) if w.endswith("σ") and len(w) > 1]
         problems.append(f"ends a word with σ instead of ς: {', '.join(sorted(set(bad))[:5])}")
     if _FINAL_INSIDE.search(text):
@@ -88,8 +91,9 @@ def lint_items(raw_items: list[Any], label: str) -> tuple[list[str], list[str]]:
         if not isinstance(entry, dict):
             continue
         name = f"{label} item {n}" + (f" ('{entry.get('id')}')" if entry.get("id") else "")
+        fragment_card = entry.get("pos") in FRAGMENT_POS
         for path, text in _strings(entry):
-            p, nt = check_text(text)
+            p, nt = check_text(text, fragment=fragment_card and path == "el")
             problems += [f"{name} {path}: {x}" for x in p]
             notes += [f"{name} {path}: {x}" for x in nt]
     return problems, notes

@@ -137,6 +137,7 @@ def test_old_message_is_hidden(learner):
 # ---------- flags ----------
 
 def test_flagged_items_wait_for_the_coach(client, learner):
+    _write_coach_file(learner, "profile.json", {"level": "A2", "curriculum": "off"})  # mechanics, not order
     _write_gen_pack(learner, [{"id": "2026-11-16-w1", "type": "vocab", "skill": "vocab", "level": "A1",
                                "el": "το ασανσέρ", "en": "lift", "tr": "asansör"}])
     client.post("/api/reload")
@@ -160,6 +161,7 @@ def test_flagged_items_wait_for_the_coach(client, learner):
 # ---------- session planning ----------
 
 def test_coach_items_come_first_in_every_segment(learner):
+    _write_coach_file(learner, "profile.json", {"level": "A2", "curriculum": "off"})  # mechanics, not order
     _write_gen_pack(learner, [
         {"id": "2026-11-16-f1", "type": "form", "skill": "grammar", "level": "A2", "text": "Χθες {1} στο γραφείο.",
          "cue": {"lemma": "πηγαίνω", "person": "1sg", "tense": "aorist"}, "answer": {"1": ["πήγα"]}},
@@ -177,6 +179,7 @@ def test_coach_items_come_first_in_every_segment(learner):
 
 
 def test_weekly_writing_then_speaking(client, learner):
+    _write_coach_file(learner, "profile.json", {"level": "A2", "curriculum": "off"})  # mechanics, not order
     day = date(2026, 4, 6)
     _clock(day)
     s = client.post("/api/session", json={"kind": "daily"}).json()
@@ -194,7 +197,8 @@ def test_weekly_writing_then_speaking(client, learner):
     assert not {"write", "speak"} & {c["type"] for c in cards5}
 
 
-def test_a_skipped_card_waits_three_days(client):
+def test_a_skipped_card_waits_three_days(client, learner):
+    _write_coach_file(learner, "profile.json", {"level": "A2", "curriculum": "off"})  # mechanics, not order
     day = date(2026, 4, 6)
     _clock(day)
     s = client.post("/api/session", json={"kind": "daily"}).json()
@@ -319,6 +323,7 @@ def test_raw_needs_a_private_pack(capsys):
 
 
 def test_coach_forms_get_through_a_verb_backlog(learner):
+    _write_coach_file(learner, "profile.json", {"level": "A2", "curriculum": "off"})  # mechanics, not order
     _write_gen_pack(learner, [
         {"id": f"2026-11-16-f{n}", "type": "form", "skill": "grammar", "level": "A2", "text": "Χθες {1} στη λαϊκή.",
          "cue": {"lemma": "πηγαίνω", "person": "1sg", "tense": "aorist"}, "answer": {"1": ["πήγα"]}} for n in range(5)])

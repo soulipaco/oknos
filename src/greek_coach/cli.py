@@ -485,12 +485,12 @@ def cmd_schedule(args) -> int:
 
 
 def cmd_schema(args) -> int:
-    from greek_coach import coachfiles, exams, packs
+    from greek_coach import coachfiles, curriculum, exams, packs
 
     out = paths.REPO_ROOT / "schemas"
     out.mkdir(exist_ok=True)
     schemas = {**packs.json_schemas(), "blueprint": exams.json_schema(),
-               "plan": coachfiles.Plan.model_json_schema(), "mock": coachfiles.MockDef.model_json_schema()}
+               "plan": coachfiles.Plan.model_json_schema(), "mock": coachfiles.MockDef.model_json_schema(), "curriculum": curriculum.json_schema()}
     for name, schema in schemas.items():
         (out / f"{name}.schema.json").write_text(json.dumps(schema, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"wrote schemas/{name}.schema.json")

@@ -1,6 +1,7 @@
 """Phase 5: blueprints, table_fill, tagging, readiness, mock exams and the plan."""
 
 import json
+import random
 from datetime import date, datetime, timedelta
 
 import pytest
@@ -525,3 +526,32 @@ def test_mock_verdict_counts_unscored_parts_both_ways():
     weak = [sec("history", 2, 20), sec("listening", 3, 20), sec("reading", 4, 20), sec("writing", 3, 20)]
     assert mock._would_pass(a2, m, weak + [sec("speaking", 1, 6)]) == (False, "fail_even_with_unscored_at_full")
     assert mock._would_pass(a2, m, base + [sec("speaking", None, 20, "waiting_for_coach")])[1] == "waiting_for_coach"
+
+
+def test_a_beginner_never_gets_items_above_their_level(learner, catalog):
+    """The maintainer's first real session got B1 passives and a 150-word letter (2026-11-17)."""
+    conn = db.open_db()
+    packs.sync_items(conn, catalog)
+    for day in range(14):
+        _clock(date(2026, 11, 2) + timedelta(days=day))
+        cards = session.plan(conn, catalog, "en", 20)
+        levels = {catalog.items[c["item_key"]][1].level for c in cards}
+        assert levels <= {"A1"}, levels
+        assert not {"write", "speak"} & {c["type"] for c in cards}  # the open prompts are A2 and up
+    _write(learner, "profile.json", {"level": "A2"})
+    _clock(date(2026, 11, 20))
+    levels = {catalog.items[c["item_key"]][1].level for c in session.plan(conn, catalog, "en", 20, kind="extra")}
+    assert "B1" not in levels
+
+
+def test_a_planned_session_drops_locked_cards_on_resume(learner, catalog):
+    _write(learner, "profile.json", {"level": "B1", "curriculum": "off"})
+    conn = db.open_db()
+    packs.sync_items(conn, catalog)
+    _clock(date(2026, 11, 17), 9)
+    first = session.build(conn, catalog, "en", 20, rng=random.Random(0))
+    assert any(c["item_key"].split("/")[0] not in ("open-alphabet", "open-shared-words-tr") for c in first["cards"])
+    _write(learner, "profile.json", {"level": "B1"})  # the curriculum is back on: only its first stage is open
+    again = session.build(conn, catalog, "en", 20)
+    assert again["resumed"]
+    assert {c["item_key"].split("/")[0] for c in again["cards"]} <= {"open-alphabet", "open-shared-words-tr"}

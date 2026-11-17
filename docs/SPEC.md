@@ -498,6 +498,46 @@ The coach does not parse SQLite by hand. `uv run greek-coach report [--since 14d
 
 This is the stable contract between app and agent. The coach writes only files (packs, feedback, notes, message, plan, profile), never the database.
 
+### 5.4 Progression along a curriculum (phase 5b, as built: `src/greek_coach/curriculum.py`)
+
+**The problem it fixes.** The daily session drew from every pack at once, so the maintainer's first session held B1 passives and a 150-word letter before they could read the alphabet. Items now come in course order, simple before hard.
+
+**A curriculum** is an ordered list of stages: `curricula/open-a1-b1.json` (tracked, for a learner without a book) or a book's own `curriculum.json` in its private pack folder. The maintainer's is `content/private/greek-helper/curriculum.json`, built from the book's `units.json`: an intro (reading) stage, then lessons 1–24, then a B1 stage.
+
+- **Which curriculum:** `profile.curriculum` if set; else a book curriculum whose pack is loaded; else the open one. `"curriculum": "off"` turns it off (an advanced learner); `profile.level` then limits the level.
+- **Where an item belongs:**
+  1. a topic `stage:<id>` (what the coach writes);
+  2. the first stage whose `include` rules match it (`units`, `packs`, `items`, a verb's lemma, tense and person, `grammar` tags, `pos`, `types`, `levels`, `topics`);
+  3. otherwise a level pool (unplaced A1 words open from lesson 3, A2 from lesson 13, B1 at the B1 stage);
+  4. otherwise nowhere.
+
+  Generic verb rules apply up to A2 only, so B1 forms wait for the B1 stage.
+- **Done:** a stage is done when 80% of its own words and verb forms are *learned* (answered right the last time), or when the learner passes its *check*. Pool words never count. A review stage counts the stages it reviews.
+  - Done is recorded (`stage_checks`, migration 0005) and stays done. A later mistake brings the item back as a review, not the learner back a lesson.
+  - The current stage is the first one not done.
+- **The check** ("I know this: test me"): up to 20 of the stage's items, 80% to pass, unanswered items counted as wrong. It is open for the current stage and the next one.
+- **The daily session** serves only items of reached stages. New words and forms come from the current stage first, then what is left of earlier stages, then pool extras. Exam tasks, writing and speaking appear only in the stages that hold them. Items placed nowhere never appear in a daily session.
+- **The alphabet:** `content/open/open-alphabet` has 24 letters, 13 letter pairs and the accent, and 30 syllables, as vocab cards: the sound in Turkish and English, the letter's name, an example word. Letters with the same sound are told apart by their name, so there is never a second right answer.
+- **The learner's own screens:**
+  - the **course map**, and a page per stage (its words with status, forms, tasks, "Practise this lesson", the check);
+  - **Choose practice**: a bit of everything, words, verbs, reading, listening, writing, speaking, or my mistakes; from all reached lessons or one; 5, 10 or 20 minutes;
+  - **My words**: search in Greek or the UI language, status and lesson filters, later lessons on request, "practise selected";
+  - **My verbs**: per-verb tables, with forms of later lessons locked.
+- **The report** gains `curriculum`. The coach writes for the current stage and tags items `stage:<id>` (COACHING §5.3).
+
+Simulated first five weeks of a beginner on the book curriculum (`scripts/simulate.py`, 20 min/day, 15% wrong):
+
+| When | Where |
+|---|---|
+| days 1–20 (17 practice days) | Intro (reading): 129 letters, sounds and words |
+| day 21 | Lesson 1 |
+| day 23 | Lesson 2 |
+| days 24–35 | Lesson 3, which holds the present tense of all A-group verbs: 92 words and forms, about 40% learned by day 35 |
+
+The intro is slow on purpose (about 5–12 new cards a day); a learner who already reads can pass its check on day one.
+
+Nothing came from a later stage before an earlier one was done, and no stage reopened.
+
 ### 5.3 Readiness (phase 5, as built: `src/greek_coach/readiness.py`)
 
 The maintainer books an exam from this, so false confidence is worse than no estimate. Per exam, per unit:
@@ -579,6 +619,8 @@ Phase 4, as built:
 ---
 
 ## 7. A ten-minute daily session, screen by screen
+
+> **Changed in phase 5b (2026-11-17).** "One large button, nothing else competes" was wrong for this learner. They could not see their words or choose what to practise, and the session ignored the course order, so B1 forms came before the alphabet. The home screen now also shows the current lesson, and links to "Choose practice", "My words", "My verbs" and the course map; see §5.4 and §12 item 8. The daily button stays the main way in.
 
 1. **Home.** One large button, *"Start today's 10 minutes"* / *"Bugünün 10 dakikası"*. Under it:
    - the coach's note from its last check-in, one or two lines (hidden if older than 14 days);
@@ -794,6 +836,7 @@ Phase 4 additions (2026-11-16):
 4. **Browser speech alone is not enough for listening.** Pre-generated audio is added, made by the coach with a local engine.
 5. **Selection-first exercise design and an on-screen keyboard**, because typing Greek is a barrier the design did not mention.
 6. **The old vocabulary is not the textbook's.** The design assumed it mirrored the lessons. It is still useful, but it needs gender enrichment and does not follow the course order.
+8. **One button → a course the learner can see and steer (phase 5b).** The single "start" button and pack-order sessions gave no agency and no progression. Learning now follows a curriculum, simple before hard (§5.4), and the learner can see their words, verbs and lessons and choose what to practise.
 7. **More agent, same independence.** The design treated the agent as an occasional coach. The maintainer wants to use the subscription fully, so the tutor, daily prep, speaking feedback and watch are added. The rule that the app works without an agent running is unchanged.
 
 ## 13. Phase 5 additions (2026-11-16)

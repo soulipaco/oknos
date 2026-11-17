@@ -15,7 +15,8 @@ They are in `content/private/<pack>/raw/exercises.json`, which is private and gi
 
 **First read `docs/COACHING.md`**, especially §5 (writing items and the quality rule).
 
-## 1. Choose the lesson
+#<!-- phase 5b: rebuilt items carry their lesson's stage tag -->
+# 1. Choose the lesson
 
 - `uv run greek-coach raw <pack> --list-units` lists the lessons with how many raw entries each has. The pack is usually `greek-helper`; `ls content/private` shows the others.
 - If they did not say which lesson, suggest the earliest one they have not rebuilt yet:
@@ -28,7 +29,8 @@ They are in `content/private/<pack>/raw/exercises.json`, which is private and gi
   Use `--limit` and `--pages` for long lessons.
 - **Answer keys** are separate entries (`kind: answer_key`), mostly not linked to a lesson. Search them with words from the exercise: `uv run greek-coach raw <pack> --kind answer_key --search "<a distinctive word>"`. Use one only if it clearly belongs to this exercise.
 
-## 2. Understand each raw exercise
+#<!-- phase 5b: rebuilt items carry their lesson's stage tag -->
+# 2. Understand each raw exercise
 
 For every entry, work out what the original exercise was:
 
@@ -39,7 +41,8 @@ For every entry, work out what the original exercise was:
 
 Repair the OCR in your head: `μετάτο` → `μετά το`, `καιμαθαίνω` → `και μαθαίνω`, `[0:45` → `10:45`. If an exercise depended on a picture or a table that is lost, skip it and say so.
 
-## 3. Rebuild
+#<!-- phase 5b: rebuilt items carry their lesson's stage tag -->
+# 3. Rebuild
 
 Write clean items of the supported types (SPEC §4.4) to `content/private/<pack>/items/rebuilt-<unit>.json`. If the file exists, add to it, and never change ids that already exist.
 
@@ -55,14 +58,16 @@ Write clean items of the supported types (SPEC §4.4) to `content/private/<pack>
   - word lists become `vocab` only if the private pack's vocabulary does not have the word already.
 - **Size:** about 15–40 items per lesson. Quality over coverage.
 
-## 4. Check and load
+#<!-- phase 5b: rebuilt items carry their lesson's stage tag -->
+# 4. Check and load
 
 1. Self-check every item (COACHING §5.2).
 2. Run `uv run greek-coach validate content/private/<pack>` and fix every problem.
 3. Run `uv run greek-coach reload`.
 4. Give them a link to try a few right away: `<app_url>?practice=<pack>/<id>,…` with 4–6 ids.
 
-## 5. Report
+#<!-- phase 5b: rebuilt items carry their lesson's stage tag -->
+# 5. Report
 
 Tell them in two lines:
 
@@ -70,3 +75,8 @@ Tell them in two lines:
 - how many you skipped (pictures, unclear OCR), or marked `needs_review` and why.
 
 Add one line to `coach/notes.md`: the unit, the file, the counts, and what was left out.
+
+## Stages (phase 5b)
+
+Rebuilt items follow the book's curriculum. Give every item the topic `"stage:<lesson id>"` of the lesson it came from, for example `"stage:lesson-05"`, as well as `"unit:<lesson id>"`. The app then serves it only when the learner reaches that lesson. Rebuild lessons in course order, starting with the learner's current stage (`curriculum.current` in the report).
+

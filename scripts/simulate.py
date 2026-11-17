@@ -62,7 +62,8 @@ def main() -> int:
     start = date.today() - timedelta(days=args.days) if args.recent else date(2026, 3, 2)
     print(f"learner folder: {tmp}")
     print(f"content: {len(catalog.packs)} packs, {len(catalog.items)} items\n")
-    print("day        cards  review verbs task new | wrong  back-from-yesterday | due tomorrow")
+    print("day        cards  review verbs task new | wrong  back-from-yesterday | due tomorrow | stage (learned/core)")
+    from greek_coach import curriculum
     wrong_before: set[str] = set()
     flag_days = {3: "confusing", 8: "wrong"} if args.flags else {}
     for n in range(args.days):
@@ -109,8 +110,10 @@ def main() -> int:
         srs_wrong = {k for k in wrong_before if catalog.items[k][1].type in ("vocab", "form")}
         back = f"{len(srs_wrong & keys)}/{len(srs_wrong)}" if srs_wrong else "-"
         due_tomorrow = len(scheduler.due(conn, day + timedelta(days=1)))
+        prog = curriculum.progress(conn, catalog)
+        where = f"{prog.stages[prog.current]['id']} ({prog.stages[prog.current]['learned']}/{prog.stages[prog.current]['core']})" if prog else "-"
         print(f"{day}   {len(s['cards']):5}  {seg['review']:6} {seg['verbs']:5} {seg['task']:4} {seg['new']:3} | "
-              f"{len(wrong):5}  {back:>19} | {due_tomorrow}")
+              f"{len(wrong):5}  {back:>19} | {due_tomorrow:12} | {where}")
         wrong_before = wrong
 
     end = start + timedelta(days=args.days - 1)

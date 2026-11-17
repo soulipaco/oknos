@@ -75,6 +75,7 @@ The fields you will use most:
 | `inbox` | Files they dropped in `learner/inbox/`, for `capture`. |
 | `coach` | Your last check-in date, the age of `watch.json`, tutor logs, scheduled-run results and problems. |
 | `app_url` | Where the app is running, or `null`. |
+| `curriculum` | **Where the learner is in the course**: the curriculum (their book's lessons, or the open course), the `current` stage with its words and forms `learned` of `core`, and every stage's state (`done`, `current`, `locked`). Prepare material for the current stage only (§5.3). |
 | `readiness` | Per exam (`a2ltr`, `b1-keg`), per unit: `state` (`above`, `below`, `unclear`, `no_evidence`), the estimate with its low and high ends, the evidence count, and the verdict against the real pass rule. The rules are in `readiness_rules`. Never present a number the report does not give. |
 | `coverage` | Per exam task: items available, tried and unseen at the exam's level; untagged general practice; and for B1, which `beyond_a2` points have been practised. |
 | `plan_inputs`, `plan_progress` | The plan's facts: candidate sessions from `watch.json` with weeks left and hours, the real pace against the budget. Also the current plan's planned against done (§11). |
@@ -201,6 +202,9 @@ A wrong item teaches a mistake, and they will trust it. So, for **every** item:
 
 ### 5.3 Staying at their level
 
+- **The curriculum decides what comes next** (SPEC §5.4). The app serves only items of stages the learner has reached, and new material from the current stage first. Write for `curriculum.current`: its theme, its grammar (the book's `units.json` for that lesson) and words already met.
+- **Tag every item you write with its stage:** add the topic `"stage:<stage id>"`, for example `"stage:lesson-03"`. An untagged item is placed by the curriculum's rules or by its level, and may then open later than you meant, or never.
+- Writing for a later stage is allowed when the plan asks for it; the item simply waits until the learner gets there.
 - Use `covered` from the report.
 - Base sentences on words they have met, especially words marked `known` or `learning`.
 - Each new item may introduce **at most one or two new words**, and those should be the point of the item, or glossed in `explain`.

@@ -50,6 +50,8 @@ History and culture is added only when an A2-LTR session becomes the target. Say
 
 **Sessions with no date yet** (B1 in October, any A2-LTR session) go into `options` with `session: null` and `realistic: "unknown"`, with a `why` such as "B1 October 2027: not announced; last year it was 23 October."
 
+**The course sets the order.** The weeks follow the curriculum's stages (`curriculum` in the report): the current lesson, then the next ones, never skipping ahead. Estimate a week per ordinary lesson at the real pace, and longer for heavy ones (the book's lesson 3, with the present tense of A-group verbs, has 92 words and forms). Name the stages in `content`, e.g. "Lesson 3 (present tense of A verbs) and starting lesson 4".
+
 ## 3. Write the weeks
 
 Write `<learner_dir>/coach/plan.json` (COACHING §11). Weeks start on Monday; cover at least the next 8 weeks, or up to the session if that is sooner. Each week has:

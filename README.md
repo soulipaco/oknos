@@ -4,7 +4,9 @@ A local-first Greek learning companion that your coding agent installs, runs and
 
 > **Status: exam mode (phase 5).** The app runs a daily session on its own, tells you honestly whether you would pass today, and runs timed mock exams; your agent is the coach.
 > - **The app:**
->   - one button starts a session sized to your time: reviews, verbs, one exam-format task and new words;
+>   - you move through a course in order, simple before hard: reading the alphabet first, then lesson by lesson (your own coursebook's lessons if you imported it), and a lesson opens when the one before it is learned, or when you pass its "test me" check;
+>   - one button starts a session sized to your time: reviews, verbs, one exam-format task and new words from your current lesson;
+>   - or choose yourself: words, verbs, reading, listening, writing, speaking or your mistakes, from any lesson you have reached; see all your words and verb tables;
 >   - once a week the session includes a writing prompt or a speaking card in exam format;
 >   - spaced repetition (SM-2), tap any Greek word for its meaning, flag an item that looks wrong;
 >   - an on-screen Greek keyboard;
@@ -18,7 +20,7 @@ A local-first Greek learning companion that your coding agent installs, runs and
 >   - **"any exam dates?"**: the official pages are checked and the next dates go on the home screen;
 >   - **"make me a plan"**: a week-by-week plan to a real, announced session, which says plainly whether it is realistic and what to drop if you fall behind;
 >   - **"give me a mock exam"**: a full mock in the exam's format, marked afterwards.
-> - **Content:** four open packs (including B1 practice), plus your own material if you import it privately.
+> - **Content:** five open packs (including learning to read Greek, and B1 practice), plus your own material if you import it privately.
 >
 > Next: phase 6, a test on a stranger's machine (see `docs/prompts/`).
 
@@ -72,6 +74,7 @@ How the code is laid out:
 - `src/greek_coach/`: the FastAPI server, SQLite, pack loading, answer checking, the scheduler (`scheduler.py`), sessions, word lookup, the importer (`importer/`) and the CLI.
   - The coach's side: `report.py` (what the coach reads), `coachfiles.py` (the files it writes), `lint.py` (Greek and exam-tag checks), `scheduling.py` and `transcribe.py`.
   - Exam mode: `exams.py` (blueprints and pass rules), `readiness.py`, `mock.py` and `plan.py`.
+  - Progression: `curriculum.py`, with the open course in `curricula/`.
 - `exams/`: the exam blueprints, facts about the two public exams with links to the official sources.
 - `web/`: plain HTML/CSS/JS with no build step, plus `i18n/` for the English and Turkish UI strings.
 - `content/open/`: the tracked content packs. `content/private/` (gitignored) holds imported material.

@@ -1,0 +1,1112 @@
+[
+ {
+  "id": "l-alfa",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Α α",
+  "lemma": "α",
+  "pos": "letter",
+  "en": "a, as in 'car' · άλφα",
+  "tr": "a, 'araba'daki gibi · άλφα",
+  "example": {
+   "el": "το ταξί",
+   "en": "the taxi",
+   "tr": "taksi"
+  }
+ },
+ {
+  "id": "l-vita",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Β β",
+  "lemma": "β",
+  "pos": "letter",
+  "en": "v, as in 'very' · βήτα",
+  "tr": "v, 'vazo'daki gibi · βήτα",
+  "example": {
+   "el": "η βαλίτσα",
+   "en": "the suitcase",
+   "tr": "valiz"
+  }
+ },
+ {
+  "id": "l-gamma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Γ γ",
+  "lemma": "γ",
+  "pos": "letter",
+  "en": "a soft 'gh' from the throat; before e and i sounds, 'y' as in 'yes' · γάμμα",
+  "tr": "boğazdan yumuşak bir 'ğ'; e ve i seslerinden önce 'y' (γεια = ya) · γάμμα",
+  "example": {
+   "el": "το γάλα",
+   "en": "the milk",
+   "tr": "süt"
+  }
+ },
+ {
+  "id": "l-delta",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Δ δ",
+  "lemma": "δ",
+  "pos": "letter",
+  "en": "'th' as in 'this' · δέλτα",
+  "tr": "İngilizce 'this'teki th: dil dişlerin arasında, titreşimli · δέλτα",
+  "example": {
+   "el": "το δώρο",
+   "en": "the present",
+   "tr": "hediye"
+  }
+ },
+ {
+  "id": "l-epsilon",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Ε ε",
+  "lemma": "ε",
+  "pos": "letter",
+  "en": "e, as in 'pet' · έψιλον",
+  "tr": "e, 'ev'deki gibi · έψιλον",
+  "example": {
+   "el": "η Ελλάδα",
+   "en": "Greece",
+   "tr": "Yunanistan"
+  }
+ },
+ {
+  "id": "l-zita",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Ζ ζ",
+  "lemma": "ζ",
+  "pos": "letter",
+  "en": "z, as in 'zoo' · ζήτα",
+  "tr": "z, 'zeytin'deki gibi · ζήτα",
+  "example": {
+   "el": "η ζάχαρη",
+   "en": "the sugar",
+   "tr": "şeker"
+  }
+ },
+ {
+  "id": "l-ita",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Η η",
+  "lemma": "η",
+  "pos": "letter",
+  "en": "i, as in 'machine' (the letter ήτα) · ήτα",
+  "tr": "i, 'iki'deki gibi (ήτα harfi) · ήτα",
+  "example": {
+   "el": "ο ήλιος",
+   "en": "the sun",
+   "tr": "güneş"
+  }
+ },
+ {
+  "id": "l-thita",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Θ θ",
+  "lemma": "θ",
+  "pos": "letter",
+  "en": "'th' as in 'think' · θήτα",
+  "tr": "İngilizce 'think'teki th: titreşimsiz · θήτα",
+  "example": {
+   "el": "το θέατρο",
+   "en": "the theatre",
+   "tr": "tiyatro"
+  }
+ },
+ {
+  "id": "l-giota",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Ι ι",
+  "lemma": "ι",
+  "pos": "letter",
+  "en": "i, as in 'machine' (the letter γιώτα) · γιώτα",
+  "tr": "i (γιώτα harfi) · γιώτα",
+  "example": {
+   "el": "η Ιταλία",
+   "en": "Italy",
+   "tr": "İtalya"
+  }
+ },
+ {
+  "id": "l-kappa",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Κ κ",
+  "lemma": "κ",
+  "pos": "letter",
+  "en": "k · κάππα",
+  "tr": "k · κάππα",
+  "example": {
+   "el": "ο καφές",
+   "en": "the coffee",
+   "tr": "kahve"
+  }
+ },
+ {
+  "id": "l-lamda",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Λ λ",
+  "lemma": "λ",
+  "pos": "letter",
+  "en": "l · λάμδα",
+  "tr": "l · λάμδα",
+  "example": {
+   "el": "το λεμόνι",
+   "en": "the lemon",
+   "tr": "limon"
+  }
+ },
+ {
+  "id": "l-mi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Μ μ",
+  "lemma": "μ",
+  "pos": "letter",
+  "en": "m · μι",
+  "tr": "m · μι",
+  "example": {
+   "el": "η μουσική",
+   "en": "music",
+   "tr": "müzik"
+  }
+ },
+ {
+  "id": "l-ni",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Ν ν",
+  "lemma": "ν",
+  "pos": "letter",
+  "en": "n · νι",
+  "tr": "n · νι",
+  "example": {
+   "el": "το νερό",
+   "en": "the water",
+   "tr": "su"
+  }
+ },
+ {
+  "id": "l-xi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Ξ ξ",
+  "lemma": "ξ",
+  "pos": "letter",
+  "en": "ks, as in 'taxi' · ξι",
+  "tr": "ks, 'taksi'deki gibi · ξι",
+  "example": {
+   "el": "το ταξί",
+   "en": "the taxi",
+   "tr": "taksi"
+  }
+ },
+ {
+  "id": "l-omikron",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Ο ο",
+  "lemma": "ο",
+  "pos": "letter",
+  "en": "o, as in 'not' (the letter όμικρον) · όμικρον",
+  "tr": "o (όμικρον harfi) · όμικρον",
+  "example": {
+   "el": "το όνομα",
+   "en": "the name",
+   "tr": "isim"
+  }
+ },
+ {
+  "id": "l-pi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Π π",
+  "lemma": "π",
+  "pos": "letter",
+  "en": "p · πι",
+  "tr": "p · πι",
+  "example": {
+   "el": "η πατάτα",
+   "en": "the potato",
+   "tr": "patates"
+  }
+ },
+ {
+  "id": "l-ro",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Ρ ρ",
+  "lemma": "ρ",
+  "pos": "letter",
+  "en": "r, rolled · ρο",
+  "tr": "r, Türkçedeki gibi · ρο",
+  "example": {
+   "el": "το ρολόι",
+   "en": "the clock",
+   "tr": "saat"
+  }
+ },
+ {
+  "id": "l-sigma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Σ σ ς",
+  "lemma": "σ",
+  "pos": "letter",
+  "en": "s; written ς at the end of a word · σίγμα",
+  "tr": "s; kelime sonunda ς diye yazılır · σίγμα",
+  "example": {
+   "el": "η σούπα",
+   "en": "the soup",
+   "tr": "çorba"
+  }
+ },
+ {
+  "id": "l-taf",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Τ τ",
+  "lemma": "τ",
+  "pos": "letter",
+  "en": "t · ταυ",
+  "tr": "t · ταυ",
+  "example": {
+   "el": "η τηλεόραση",
+   "en": "the television",
+   "tr": "televizyon"
+  }
+ },
+ {
+  "id": "l-ipsilon",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Υ υ",
+  "lemma": "υ",
+  "pos": "letter",
+  "en": "i, as in 'machine' (the letter ύψιλον) · ύψιλον",
+  "tr": "i (ύψιλον harfi) · ύψιλον",
+  "example": {
+   "el": "ο ύπνος",
+   "en": "sleep",
+   "tr": "uyku"
+  }
+ },
+ {
+  "id": "l-fi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Φ φ",
+  "lemma": "φ",
+  "pos": "letter",
+  "en": "f · φι",
+  "tr": "f · φι",
+  "example": {
+   "el": "η φωτογραφία",
+   "en": "the photo",
+   "tr": "fotoğraf"
+  }
+ },
+ {
+  "id": "l-chi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Χ χ",
+  "lemma": "χ",
+  "pos": "letter",
+  "en": "a throaty 'h', as in German 'Bach' · χι",
+  "tr": "boğazdan, hırıltılı bir h (Almanca 'Bach'taki gibi) · χι",
+  "example": {
+   "el": "το χαλί",
+   "en": "the carpet",
+   "tr": "halı"
+  }
+ },
+ {
+  "id": "l-psi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Ψ ψ",
+  "lemma": "ψ",
+  "pos": "letter",
+  "en": "ps, as in 'lapse' · ψι",
+  "tr": "ps · ψι",
+  "example": {
+   "el": "το ψωμί",
+   "en": "the bread",
+   "tr": "ekmek"
+  }
+ },
+ {
+  "id": "l-omega",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "Ω ω",
+  "lemma": "ω",
+  "pos": "letter",
+  "en": "o, as in 'not' (the letter ωμέγα) · ωμέγα",
+  "tr": "o (ωμέγα harfi) · ωμέγα",
+  "example": {
+   "el": "η ώρα",
+   "en": "the hour",
+   "tr": "saat (zaman)"
+  }
+ },
+ {
+  "id": "d-ou",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "ου",
+  "pos": "digraph",
+  "en": "u, as in 'food'",
+  "tr": "u, 'su'daki gibi",
+  "example": {
+   "el": "η σούπα",
+   "en": "the soup",
+   "tr": "çorba"
+  }
+ },
+ {
+  "id": "d-ai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "αι",
+  "pos": "digraph",
+  "en": "e, as in 'pet' (two letters: αι)",
+  "tr": "e (iki harf: αι)",
+  "example": {
+   "el": "και",
+   "en": "and",
+   "tr": "ve"
+  }
+ },
+ {
+  "id": "d-ei",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "ει",
+  "pos": "digraph",
+  "en": "i (two letters: ει)",
+  "tr": "i (iki harf: ει)",
+  "example": {
+   "el": "είναι",
+   "en": "is",
+   "tr": "-dir"
+  }
+ },
+ {
+  "id": "d-oi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "οι",
+  "pos": "digraph",
+  "en": "i (two letters: οι)",
+  "tr": "i (iki harf: οι)",
+  "example": {
+   "el": "οι φίλοι",
+   "en": "the friends",
+   "tr": "arkadaşlar"
+  }
+ },
+ {
+  "id": "d-af",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "αυ",
+  "pos": "digraph",
+  "en": "av, or af before p, t, k, s, f, th, ch",
+  "tr": "av; p, t, k, s, f, θ, χ önünde af",
+  "example": {
+   "el": "το αυτοκίνητο",
+   "en": "the car",
+   "tr": "araba"
+  }
+ },
+ {
+  "id": "d-ef",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "ευ",
+  "pos": "digraph",
+  "en": "ev, or ef before p, t, k, s, f, th, ch",
+  "tr": "ev; p, t, k, s, f, θ, χ önünde ef",
+  "example": {
+   "el": "ευχαριστώ",
+   "en": "thank you",
+   "tr": "teşekkür ederim"
+  }
+ },
+ {
+  "id": "d-mp",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "μπ",
+  "pos": "digraph",
+  "en": "b at the start of a word, mb in the middle",
+  "tr": "kelime başında b, ortada mb",
+  "example": {
+   "el": "η μπανάνα",
+   "en": "the banana",
+   "tr": "muz"
+  }
+ },
+ {
+  "id": "d-nt",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "ντ",
+  "pos": "digraph",
+  "en": "d at the start of a word, nd in the middle",
+  "tr": "kelime başında d, ortada nd",
+  "example": {
+   "el": "η ντομάτα",
+   "en": "the tomato",
+   "tr": "domates"
+  }
+ },
+ {
+  "id": "d-gk",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "γκ",
+  "pos": "digraph",
+  "en": "g, as in 'go'",
+  "tr": "g, 'gol'deki gibi",
+  "example": {
+   "el": "το γκαράζ",
+   "en": "the garage",
+   "tr": "garaj"
+  }
+ },
+ {
+  "id": "d-gg",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "γγ",
+  "pos": "digraph",
+  "en": "ng, as in 'finger'",
+  "tr": "ng",
+  "example": {
+   "el": "η Αγγλία",
+   "en": "England",
+   "tr": "İngiltere"
+  }
+ },
+ {
+  "id": "d-ts",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "τσ",
+  "pos": "digraph",
+  "en": "ts, as in 'cats'",
+  "tr": "ts",
+  "example": {
+   "el": "το τσάι",
+   "en": "the tea",
+   "tr": "çay"
+  }
+ },
+ {
+  "id": "d-tz",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "τζ",
+  "pos": "digraph",
+  "en": "dz, close to 'j' in 'jam'",
+  "tr": "dz, Türkçe 'c'ye yakın",
+  "example": {
+   "el": "το τζάμι",
+   "en": "the window pane",
+   "tr": "cam"
+  }
+ },
+ {
+  "id": "d-tonos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet"
+  ],
+  "el": "ά έ ή ί ό ύ ώ",
+  "pos": "digraph",
+  "en": "the accent mark: say this syllable louder",
+  "tr": "vurgu işareti: bu heceyi daha güçlü söyleyin",
+  "example": {
+   "el": "ο καφές",
+   "en": "the coffee",
+   "tr": "kahve"
+  }
+ },
+ {
+  "id": "s-ma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "μα",
+  "pos": "syllable",
+  "en": "ma",
+  "tr": "ma"
+ },
+ {
+  "id": "s-me",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "με",
+  "pos": "syllable",
+  "en": "me",
+  "tr": "me"
+ },
+ {
+  "id": "s-mo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "μο",
+  "pos": "syllable",
+  "en": "mo",
+  "tr": "mo"
+ },
+ {
+  "id": "s-mu",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "μου",
+  "pos": "syllable",
+  "en": "mu",
+  "tr": "mu"
+ },
+ {
+  "id": "s-pa",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "πα",
+  "pos": "syllable",
+  "en": "pa",
+  "tr": "pa"
+ },
+ {
+  "id": "s-pi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "πι",
+  "pos": "syllable",
+  "en": "pi",
+  "tr": "pi"
+ },
+ {
+  "id": "s-ka",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "κα",
+  "pos": "syllable",
+  "en": "ka",
+  "tr": "ka"
+ },
+ {
+  "id": "s-ko",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "κο",
+  "pos": "syllable",
+  "en": "ko",
+  "tr": "ko"
+ },
+ {
+  "id": "s-la",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "λα",
+  "pos": "syllable",
+  "en": "la",
+  "tr": "la"
+ },
+ {
+  "id": "s-le",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "λε",
+  "pos": "syllable",
+  "en": "le",
+  "tr": "le"
+ },
+ {
+  "id": "s-na",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "να",
+  "pos": "syllable",
+  "en": "na",
+  "tr": "na"
+ },
+ {
+  "id": "s-ni",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "νι",
+  "pos": "syllable",
+  "en": "ni",
+  "tr": "ni"
+ },
+ {
+  "id": "s-sa",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "σα",
+  "pos": "syllable",
+  "en": "sa",
+  "tr": "sa"
+ },
+ {
+  "id": "s-su",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "σου",
+  "pos": "syllable",
+  "en": "su",
+  "tr": "su"
+ },
+ {
+  "id": "s-ta",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "τα",
+  "pos": "syllable",
+  "en": "ta",
+  "tr": "ta"
+ },
+ {
+  "id": "s-to",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "το",
+  "pos": "syllable",
+  "en": "to",
+  "tr": "to"
+ },
+ {
+  "id": "s-ra",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "ρα",
+  "pos": "syllable",
+  "en": "ra",
+  "tr": "ra"
+ },
+ {
+  "id": "s-ha",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "χα",
+  "pos": "syllable",
+  "en": "ha (throaty)",
+  "tr": "ha (boğazdan)"
+ },
+ {
+  "id": "s-gha",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "γα",
+  "pos": "syllable",
+  "en": "gha",
+  "tr": "ğa (boğazdan)"
+ },
+ {
+  "id": "s-yi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "γι",
+  "pos": "syllable",
+  "en": "yi",
+  "tr": "yi"
+ },
+ {
+  "id": "s-dha",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "δα",
+  "pos": "syllable",
+  "en": "dha, as in 'that'",
+  "tr": "dha (İngilizce 'that' gibi)"
+ },
+ {
+  "id": "s-tha",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "θα",
+  "pos": "syllable",
+  "en": "tha, as in 'thank'",
+  "tr": "tha (İngilizce 'thank' gibi)"
+ },
+ {
+  "id": "s-ba",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "μπα",
+  "pos": "syllable",
+  "en": "ba",
+  "tr": "ba"
+ },
+ {
+  "id": "s-do",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "ντο",
+  "pos": "syllable",
+  "en": "do",
+  "tr": "do"
+ },
+ {
+  "id": "s-tsa",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "τσα",
+  "pos": "syllable",
+  "en": "tsa",
+  "tr": "tsa"
+ },
+ {
+  "id": "s-za",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "ζα",
+  "pos": "syllable",
+  "en": "za",
+  "tr": "za"
+ },
+ {
+  "id": "s-ksa",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "ξα",
+  "pos": "syllable",
+  "en": "ksa",
+  "tr": "ksa"
+ },
+ {
+  "id": "s-psa",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "ψα",
+  "pos": "syllable",
+  "en": "psa",
+  "tr": "psa"
+ },
+ {
+  "id": "s-fa",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "φα",
+  "pos": "syllable",
+  "en": "fa",
+  "tr": "fa"
+ },
+ {
+  "id": "s-va",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "alphabet",
+   "syllables"
+  ],
+  "el": "βα",
+  "pos": "syllable",
+  "en": "va",
+  "tr": "va"
+ }
+]

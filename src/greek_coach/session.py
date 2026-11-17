@@ -22,7 +22,7 @@ from collections import defaultdict
 from datetime import date, timedelta
 from typing import Any
 
-from greek_coach import coachfiles, db, scheduler
+from greek_coach import coachfiles, db, paths, scheduler
 from greek_coach.checking import meaning
 from greek_coach.packs import (
     OPEN_TASKS,
@@ -248,6 +248,47 @@ def flagged_keys(conn: sqlite3.Connection) -> set[str]:
     return {r["item_key"] for r in rows if r["id"] not in resolved}
 
 
+def learner_level() -> str:
+    """The level the learner works at, from profile.json `level` (the coach sets it; A1 if unset).
+
+    Daily sessions never serve an item above it: someone who still reads slowly must not get a
+    B1 passive or a 150-word letter because a pack happens to contain one."""
+    try:
+        level = coachfiles.read_json(paths.profile_path()).get("level")
+    except (FileNotFoundError, ValueError, AttributeError, OSError):
+        level = None
+    return level if level in LEVEL_RANK else "A1"
+
+
+def at_level(item, level: str) -> bool:
+    return LEVEL_RANK.get(item.level, 0) <= LEVEL_RANK[level]
+
+
+def gate(conn: sqlite3.Connection, catalog: Catalog):
+    """What daily sessions may serve: the stages of the curriculum reached so far (docs/SPEC.md
+    §5.4). Returns (allowed(key, item) -> bool, rank(key) -> sort key). Without a curriculum,
+    the learner's level is the limit."""
+    from greek_coach import curriculum  # curriculum imports this module's neighbours
+
+    try:
+        prog = curriculum.progress(conn, catalog, record=True)
+    except Exception:  # a broken curriculum file must never stop the daily session
+        prog = None
+    if prog is None:
+        level = learner_level()
+        return (lambda k, i: at_level(i, level)), (lambda k: (0, 0))
+    current = prog.current
+
+    def rank(k):
+        idx = prog.assigned.get(k)
+        # the current stage first, then what is left of earlier stages, level-pool extras last
+        if k in prog.pooled:
+            return (2, idx if idx is not None else 99)
+        return (0, 0) if idx == current else (1, idx if idx is not None else 99)
+
+    return (lambda k, i: prog.unlocked(k)), rank
+
+
 def plan_focus_tasks(today: date) -> set[str]:
     """The exam tasks of the units the coach's plan puts in focus this week (empty without a plan)."""
     try:
@@ -343,7 +384,8 @@ def plan(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int,
     states = scheduler.all_states(conn)
     last = _last_attempts(conn)
     flagged = flagged_keys(conn) | reserved_for_mocks(conn)
-    items = [(k, p, i) for k, p, i in servable(catalog, ui_lang) if k not in flagged]
+    allowed, stage_rank = gate(conn, catalog)
+    items = [(k, p, i) for k, p, i in servable(catalog, ui_lang) if k not in flagged and allowed(k, i)]
     by_key = {k: (p, i) for k, p, i in items}
     words = [(k, p, i) for k, p, i in items if isinstance(i, VocabItem)]
     # Coach-written items come first in every segment, so a check-in shows up in the next session.
@@ -374,7 +416,7 @@ def plan(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int,
         tier = 0 if is_due(k) or fresh_coach else 1 if k not in last else 2
         acc = accuracy.get(item.skill, (0.5, 0))[0]
         in_focus = 0 if item.exam_task in focus else 1
-        return (tier, in_focus, _gen_first(entry), round(acc, 1), last.get(k, ("", None))[0], rng.random())
+        return (tier, stage_rank(k)[0], in_focus, _gen_first(entry), round(acc, 1), last.get(k, ("", None))[0], rng.random())
 
     chosen_tasks = []
     for t in sorted(tasks, key=task_key):
@@ -400,7 +442,10 @@ def plan(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int,
 
     # Verbs: due forms, then new ones in pack order, a fixed daily slot.
     due_forms = [k for k in due_keys if isinstance(by_key[k][1], FormItem)]
-    new_forms = [k for k, _, _ in forms if k not in states]
+    # New forms: the coach's first, then the easiest level first, then pack order.
+    new_forms = [k for k, _, i in sorted(forms, key=lambda f: (_gen_first(f), stage_rank(f[0]),
+                                                                  LEVEL_RANK.get(f[2].level, 3)))
+                 if k not in states]
     # Unseen coach forms get a share of the slot even when old forms are due, so what the check-in
     # wrote shows up the next day instead of waiting behind the review backlog.
     coach_new = [k for k in new_forms if by_key[k][0].manifest.visibility == "generated"][:COACH_VERB_SHARE]
@@ -425,7 +470,8 @@ def plan(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int,
     n_new = max(0, min(new_cap, int(budget // secs["vocab"])))
     if kind == "daily" and n_new == 0 and not review_keys:
         n_new = AWAY_NEW if returning else NEW_MIN
-    new_keys = [k for k, _, _ in new_word_order([w for w in words if w[0] not in states])][:n_new]
+    unseen_words = new_word_order([w for w in words if w[0] not in states])
+    new_keys = [k for k, _, _ in sorted(unseen_words, key=lambda w: (stage_rank(w[0]), _gen_first(w)))][:n_new]
 
     cards: list[dict] = []
     for k in review_keys:
@@ -475,7 +521,9 @@ def build(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int
     if kind == "daily":
         row = _today_daily(conn)
         if row is not None:
-            left = [c for c in remaining_cards(conn, row) if c["item_key"] in catalog.items]
+            allowed, _ = gate(conn, catalog)
+            left = [c for c in remaining_cards(conn, row)
+                    if c["item_key"] in catalog.items and allowed(c["item_key"], catalog.items[c["item_key"]][1])]
             if any(c["type"] == "vocab" and c.get("lang") != ui_lang for c in left):
                 # The UI language changed since the session was planned: rebuild the word cards.
                 rng = rng or random.Random()
@@ -682,3 +730,172 @@ def home_stats(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str) -> dict
         "words_seen": sum(1 for k in vocab_keys if k in states),
         "words_total": len(vocab_keys),
     }
+
+
+# ---------- practice the learner chooses (phase 5b) ----------
+
+CHOICES = ("all", "words", "verbs", "reading", "listening", "tasks", "writing", "speaking", "review")
+
+
+def chosen(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, what: str, minutes: int = 10,
+           stage: str | None = None, lemma: str | None = None, topic: str | None = None,
+           rng: random.Random | None = None, has_voice: bool = False) -> dict:
+    """A practice session of what the learner picked, from the stages they have reached.
+
+    Due items come first, then ones not seen yet, then the longest unseen. Sized to `minutes`."""
+    from greek_coach import curriculum
+
+    if what not in CHOICES:
+        raise ValueError(f"unknown choice {what!r}")
+    rng = rng or random.Random()
+    allowed, stage_rank = gate(conn, catalog)
+    prog = curriculum.progress(conn, catalog)
+    stage_ids = [s.id for s in prog.curriculum.stages] if prog else []
+    stage_idx = stage_ids.index(stage) if stage in stage_ids else None
+    states = scheduler.all_states(conn)
+    last = _last_attempts(conn)
+    today = db.today().isoformat()
+    secs = seconds_per_card(conn, catalog)
+    reserved = reserved_for_mocks(conn)
+
+    def wanted(k, item) -> bool:
+        if what == "all":
+            ok = not isinstance(item, OPEN_TASKS)
+        elif what == "words":
+            ok = isinstance(item, VocabItem)
+        elif what == "verbs":
+            ok = isinstance(item, FormItem) and (not lemma or bool(item.cue and item.cue.lemma == lemma))
+        elif what in ("reading", "listening"):
+            ok = isinstance(item, SELECTION_TASKS) and item.skill == what
+        elif what == "tasks":
+            ok = isinstance(item, SELECTION_TASKS)
+        elif what == "writing":
+            ok = isinstance(item, WriteItem)
+        elif what == "speaking":
+            ok = isinstance(item, SpeakItem)
+        else:  # review: what was seen and is due, or was wrong the last time
+            ok = k in states and (states[k].due_at <= today or last.get(k, ("", 1))[1] == 0)
+        if not ok:
+            return False
+        if topic and topic not in item.topics:
+            return False
+        if stage_idx is not None and prog.assigned.get(k) != stage_idx:
+            return False
+        return True
+
+    pool = [(k, p, i) for k, p, i in servable(catalog, ui_lang)
+            if allowed(k, i) and k not in reserved and wanted(k, i)]
+    pool.sort(key=lambda e: (0 if e[0] in states and states[e[0]].due_at <= today else 1 if e[0] not in last else 2,
+                             stage_rank(e[0]), last.get(e[0], ("", None))[0], rng.random()))
+    budget = max(1, minutes) * 60
+    words = [(k, p, i) for k, p, i in servable(catalog, ui_lang) if isinstance(i, VocabItem)]
+    distract = Distractors(words)
+    cards = []
+    for k, pack, item in pool:
+        cost = secs.get(card_class(item), 90)
+        if cards and budget - cost < 0:
+            break
+        budget -= cost
+        if isinstance(item, VocabItem):
+            card = vocab_card(k, pack, item, ui_lang, vocab_direction(states.get(k), has_voice, rng), distract, rng,
+                              states.get(k))
+        elif isinstance(item, FormItem):
+            card = form_card(k, item, states.get(k), rng)
+        else:
+            card = task_card(k, item, rng)
+        cards.append({**card, "segment": "review" if card_class(item) in ("vocab", "form") else "task"})
+    with conn:
+        cur = conn.execute(
+            "INSERT INTO sessions(started_at, kind, planned_minutes, items_planned, plan_json) VALUES (?, 'practice', ?, ?, ?)",
+            (db.now(), minutes, len(cards), json.dumps(cards, ensure_ascii=False)))
+    return {"session_id": cur.lastrowid, "kind": "practice", "minutes": minutes, "cards": cards, "resumed": False,
+            "total": len(cards), "done": 0, "available": len(pool)}
+
+
+def status_of(state: scheduler.State | None) -> str:
+    """new (not seen yet), learning, secure (an interval of 6+ days) or known (21+ days)."""
+    if state is None:
+        return "new"
+    if state.interval_days >= scheduler.KNOWN_DAYS:
+        return "known"
+    if state.interval_days >= 6:
+        return "secure"
+    return "learning"
+
+
+def word_list(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str) -> dict:
+    """Every word, with its stage, whether it is open yet, and how well it is known."""
+    from greek_coach import curriculum
+
+    prog = curriculum.progress(conn, catalog)
+    states = scheduler.all_states(conn)
+    allowed, _ = gate(conn, catalog)
+    stages = prog.curriculum.stages if prog else []
+    rows = []
+    for k, p, i in servable(catalog, ui_lang):
+        if not isinstance(i, VocabItem):
+            continue
+        idx = prog.assigned.get(k) if prog else None
+        rows.append({"key": k, "el": i.el, "meaning": meaning(i, ui_lang), "pos": i.pos, "level": i.level,
+                     "stage": stages[idx].id if idx is not None else None, "stage_order": idx,
+                     "open": allowed(k, i), "extra": bool(prog and k in prog.pooled),
+                     "status": status_of(states.get(k)),
+                     "topics": [t for t in i.topics if not t.startswith(("unit:", "stage:"))]})
+    rows.sort(key=lambda r: (r["stage_order"] if r["stage_order"] is not None else 999, r["extra"], r["el"]))
+    return {"words": rows, "stages": [{"id": s.id, "title": s.title.model_dump()} for s in stages]}
+
+
+def verb_table(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str) -> dict:
+    """Every verb with its forms per tense and person, and whether each is open and known."""
+    from greek_coach import curriculum
+
+    prog = curriculum.progress(conn, catalog)
+    states = scheduler.all_states(conn)
+    allowed, _ = gate(conn, catalog)
+    verbs: dict[str, dict] = {}
+    for k, p, i in servable(catalog, ui_lang):
+        if not isinstance(i, FormItem) or not i.cue or not i.cue.lemma:
+            continue
+        v = verbs.setdefault(i.cue.lemma, {"lemma": i.cue.lemma, "forms": [], "first_stage": 999})
+        idx = prog.assigned.get(k) if prog else None
+        if idx is not None:
+            v["first_stage"] = min(v["first_stage"], idx)
+        answer = next(iter(i.answer.values()))[0]
+        v["forms"].append({"key": k, "tense": i.cue.tense, "person": i.cue.person, "form": answer, "text": i.text,
+                           "open": allowed(k, i), "status": status_of(states.get(k))})
+    out = sorted(verbs.values(), key=lambda v: (v["first_stage"], v["lemma"]))
+    for v in out:
+        v["open"] = any(f["open"] for f in v["forms"])
+        v["known"] = sum(1 for f in v["forms"] if f["status"] in ("secure", "known"))
+    return {"verbs": out}
+
+
+def stage_detail(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage_id: str) -> dict | None:
+    from greek_coach import curriculum
+
+    prog = curriculum.progress(conn, catalog)
+    if prog is None or stage_id not in [s.id for s in prog.curriculum.stages]:
+        return None
+    idx = prog.curriculum.index(stage_id)
+    st = prog.stages[idx]
+    states = scheduler.all_states(conn)
+    seen = {r[0] for r in conn.execute("SELECT DISTINCT item_key FROM attempts")}
+    words, forms, tasks = [], [], []
+    for k, v in prog.assigned.items():
+        if v != idx or k in prog.pooled:
+            continue
+        i = catalog.items[k][1]
+        if i.status != "ok":
+            continue
+        if isinstance(i, VocabItem):
+            words.append({"key": k, "el": i.el, "meaning": meaning(i, ui_lang), "status": status_of(states.get(k))})
+        elif isinstance(i, FormItem):
+            forms.append({"key": k, "lemma": i.cue.lemma if i.cue else None, "tense": i.cue.tense if i.cue else None,
+                          "person": i.cue.person if i.cue else None, "form": next(iter(i.answer.values()))[0],
+                          "status": status_of(states.get(k))})
+        else:
+            tasks.append({"key": k, "type": i.type, "skill": i.skill, "exam_task": i.exam_task, "seen": k in seen})
+    spec = prog.curriculum.stages[idx]
+    return {**st, "can_check": idx <= prog.current + 1 and bool(words or forms or tasks),
+            "review_of": spec.review_of, "words_list": words, "forms_list": forms, "tasks_list": tasks,
+            "extra_words": st["extra_from_pool"]}

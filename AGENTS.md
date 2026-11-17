@@ -10,20 +10,27 @@ Greek Coach is an open-source, local-first Greek learning app that is installed,
 
 ## Current state
 
-Phases 1–5 are built; phase 5 is exam mode. Phases 1–4 are committed, and phase 5 is committed only if the maintainer asks. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.
+Phases 1–5 are built and committed, plus phase 5b (a curriculum the learner progresses through, and screens to see and choose what to practise), committed only if the maintainer asks. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.
 
 What works now:
-- **Stack:** uv, FastAPI and SQLite (`learner/greek-coach.db`, migrations `0001`–`0004`), with a no-build front end in `web/`. UI in English and Turkish.
+- **Stack:** uv, FastAPI and SQLite (`learner/greek-coach.db`, migrations `0001`–`0005`), with a no-build front end in `web/`. UI in English and Turkish.
+- **Progression (phase 5b, SPEC §5.4).**
+  - A curriculum orders everything: the maintainer's book lessons (`content/private/greek-helper/curriculum.json`: intro/reading, lessons 1–24, B1) or the open course (`curricula/open-a1-b1.json`).
+  - Daily sessions serve only reached stages, the current one first.
+  - A stage is done at 80% learned, or with a passed "test me" check, and stays done.
+  - Coach items carry the topic `stage:<id>`.
+  - `src/greek_coach/curriculum.py`.
 - **Exam blueprints** (tracked facts): `exams/a2ltr.json` and `exams/b1-keg.json`.
   - Each has units, tasks, points, minutes, the real pass rule, exam technique (en/tr), official sources and the pages `watch` checks.
   - B1 also lists what it adds over A2 (`beyond_a2`).
   - `exams/watch-sources.json` keeps only the course page.
 - **Content.**
-  - Four open packs (CC BY-SA 4.0):
+  - Five open packs (CC BY-SA 4.0):
     - `open-shared-words-tr`;
     - `open-verbs-a1a2`: 253 verb forms, built by `scripts/build_verb_pack.py`;
     - `open-everyday-a1a2`: 23 exam-format tasks, plus 2 writing prompts and 2 speaking cards;
-    - `open-b1-bridge`: 15 B1 items, including `table_fill`, 150-word writing, speaking and passive/conditional forms.
+    - `open-b1-bridge`: 15 B1 items, including `table_fill`, 150-word writing, speaking and passive/conditional forms;
+    - `open-alphabet`: 67 reading cards (letters, letter pairs, the accent, syllables), with sounds in Turkish and English.
 
     Every exam-format item is tagged with a blueprint task (`exam_task`), and `validate` checks the tags.
   - Private material (gitignored, under `content/private/`):
@@ -39,7 +46,11 @@ What works now:
   - Once a week the session holds a writing prompt, and on another day a speaking card.
   - Flagged items, and the items of a mock not yet taken, are held back.
   - After 3 or more days away, the first session back is lighter.
-  - The home screen shows the coach's note, ready feedback, the next exam dates, failed scheduled runs, and one readiness bar per exam unit.
+  - The home screen shows:
+    - the current lesson and its progress;
+    - links to **Choose practice**, **My words**, **My verbs** and the **course map**;
+    - the coach's note, ready feedback, the next exam dates, failed scheduled runs;
+    - one readiness bar per exam unit.
 - **Exam mode** (the exam screen, `?exam`).
   - **Readiness per unit, against each exam's real pass rule** (`src/greek_coach/readiness.py`, SPEC §5.3):
     - evidence is first attempts only, at the exam's level, with a Wilson range;
@@ -66,6 +77,8 @@ What works now:
 
 Known limits:
 - The open content alone gives too few A2/B1 exam-format items for readiness to show numbers in the first weeks. The coach's items and mocks are what make them appear.
+- The open verb pack has about 2 forms per tense per verb, so the verb tables are sparse.
+- The book's lessons have few words linked to them (407 of 2,648). The rest open by level. The book's own exercises per lesson still need rebuilding (`rebuild-imported`, current stage first).
 - The A2-LTR history pack waits until the plan targets an A2-LTR session with an announced date; none is announced. The syllabus PDF needs the learner's yes.
 - Neither exam publishes its speaking points split, and A2-LTR publishes no writing criteria. Those scores are always labelled estimates.
 - The app shows no pictures, so picture-based speaking parts are described in words.
