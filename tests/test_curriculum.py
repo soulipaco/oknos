@@ -168,3 +168,12 @@ def test_curriculum_files_are_valid():
             "id": "x", "title": {"en": "x"}, "source": "t",
             "stages": [{"id": "a", "title": {"en": "a"}, "level": "A1", "review_of": ["b"]},
                        {"id": "b", "title": {"en": "b"}, "level": "A1"}]})
+
+
+def test_the_home_screen_only_counts_what_is_open(learner, catalog):
+    conn = db.open_db()
+    packs.sync_items(conn, catalog)
+    _clock(date(2026, 1, 5))
+    stats = session.home_stats(conn, catalog, "en")
+    assert stats["verbs_new_available"] == 0  # no verbs in the reading stage, so the home line names none
+    assert stats["new_available"] > 0

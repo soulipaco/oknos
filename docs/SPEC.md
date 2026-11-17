@@ -516,7 +516,7 @@ This is the stable contract between app and agent. The coach writes only files (
   - Done is recorded (`stage_checks`, migration 0005) and stays done. A later mistake brings the item back as a review, not the learner back a lesson.
   - The current stage is the first one not done.
 - **The check** ("I know this: test me"): up to 20 of the stage's items, 80% to pass, unanswered items counted as wrong. It is open for the current stage and the next one.
-- **The daily session** serves only items of reached stages. New words and forms come from the current stage first, then what is left of earlier stages, then pool extras. Exam tasks, writing and speaking appear only in the stages that hold them. Items placed nowhere never appear in a daily session.
+- **The daily session** serves only items of reached stages. New words and forms come from the current stage first, then what is left of earlier stages, then pool extras. Exam tasks, writing and speaking appear only in the stages that hold them. Items placed nowhere never appear in a daily session. A plan of today's that holds cards of a stage not reached is stale: it is closed and today is planned afresh; the answers already given stay.
 - **The alphabet:** `content/open/open-alphabet` has 24 letters, 13 letter pairs and the accent, and 30 syllables, as vocab cards: the sound in Turkish and English, the letter's name, an example word. Letters with the same sound are told apart by their name, so there is never a second right answer.
 - **The learner's own screens:**
   - the **course map**, and a page per stage (its words with status, forms, tasks, "Practise this lesson", the check);

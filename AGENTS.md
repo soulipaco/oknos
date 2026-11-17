@@ -10,13 +10,13 @@ Greek Coach is an open-source, local-first Greek learning app that is installed,
 
 ## Current state
 
-Phases 1–5 are built and committed, plus phase 5b (a curriculum the learner progresses through, and screens to see and choose what to practise), committed only if the maintainer asks. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.
+Phases 1–5 and 5b are built and committed. Phase 5b is a curriculum the learner progresses through, plus screens to see and choose what to practise. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.
 
 What works now:
 - **Stack:** uv, FastAPI and SQLite (`learner/greek-coach.db`, migrations `0001`–`0005`), with a no-build front end in `web/`. UI in English and Turkish.
 - **Progression (phase 5b, SPEC §5.4).**
   - A curriculum orders everything: the maintainer's book lessons (`content/private/greek-helper/curriculum.json`: intro/reading, lessons 1–24, B1) or the open course (`curricula/open-a1-b1.json`).
-  - Daily sessions serve only reached stages, the current one first.
+  - Daily sessions serve only reached stages, the current one first. A plan of today's that holds cards of a stage not reached (made before the curriculum, or under another one) is replaced, not resumed.
   - A stage is done at 80% learned, or with a passed "test me" check, and stays done.
   - Coach items carry the topic `stage:<id>`.
   - `src/greek_coach/curriculum.py`.

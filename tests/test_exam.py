@@ -544,7 +544,7 @@ def test_a_beginner_never_gets_items_above_their_level(learner, catalog):
     assert "B1" not in levels
 
 
-def test_a_planned_session_drops_locked_cards_on_resume(learner, catalog):
+def test_a_stale_planned_session_is_replaced_not_resumed(learner, catalog):
     _write(learner, "profile.json", {"level": "B1", "curriculum": "off"})
     conn = db.open_db()
     packs.sync_items(conn, catalog)
@@ -552,6 +552,8 @@ def test_a_planned_session_drops_locked_cards_on_resume(learner, catalog):
     first = session.build(conn, catalog, "en", 20, rng=random.Random(0))
     assert any(c["item_key"].split("/")[0] not in ("open-alphabet", "open-shared-words-tr") for c in first["cards"])
     _write(learner, "profile.json", {"level": "B1"})  # the curriculum is back on: only its first stage is open
+    assert session.today_status(conn, catalog)["state"] == "fresh"
     again = session.build(conn, catalog, "en", 20)
-    assert again["resumed"]
+    assert not again["resumed"] and again["kind"] == "daily" and again["session_id"] != first["session_id"]
     assert {c["item_key"].split("/")[0] for c in again["cards"]} <= {"open-alphabet", "open-shared-words-tr"}
+    assert session.today_status(conn, catalog)["state"] == "resume"  # the fresh plan is the one resumed now

@@ -506,12 +506,26 @@ def remaining_cards(conn: sqlite3.Connection, row: sqlite3.Row) -> list[dict]:
     return [c for c in json.loads(row["plan_json"]) if c["item_key"] not in done]
 
 
-def today_status(conn: sqlite3.Connection) -> dict:
-    """'fresh' (no session today), 'resume' (cards left), or 'done'."""
+def _open_leftovers(conn: sqlite3.Connection, catalog: Catalog, row: sqlite3.Row) -> list[dict] | None:
+    """Today's unanswered cards, or None when the plan is stale: it holds cards of a lesson not
+    reached (planned before the curriculum, or under another one). A stale plan is replaced by a
+    fresh session; the answers already given stay."""
+    allowed, _ = gate(conn, catalog)
+    left = remaining_cards(conn, row)
+    if any(c["item_key"] not in catalog.items or not allowed(c["item_key"], catalog.items[c["item_key"]][1])
+           for c in left):
+        return None
+    return left
+
+
+def today_status(conn: sqlite3.Connection, catalog: Catalog | None = None) -> dict:
+    """'fresh' (no session today, or a stale one), 'resume' (cards left), or 'done'."""
     row = _today_daily(conn)
     if row is None:
         return {"state": "fresh"}
-    left = remaining_cards(conn, row)
+    left = remaining_cards(conn, row) if catalog is None else _open_leftovers(conn, catalog, row)
+    if left is None:
+        return {"state": "fresh"}
     planned = len(json.loads(row["plan_json"])) if row["plan_json"] else row["items_planned"] or 0
     return {"state": "resume" if left else "done", "left": len(left), "planned": planned, "session_id": row["id"]}
 
@@ -520,10 +534,11 @@ def build(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int
           rng: random.Random | None = None, has_voice: bool = False) -> dict:
     if kind == "daily":
         row = _today_daily(conn)
-        if row is not None:
-            allowed, _ = gate(conn, catalog)
-            left = [c for c in remaining_cards(conn, row)
-                    if c["item_key"] in catalog.items and allowed(c["item_key"], catalog.items[c["item_key"]][1])]
+        left = _open_leftovers(conn, catalog, row) if row is not None else None
+        if row is not None and left is None:  # a stale plan: close it and plan today afresh
+            with conn:
+                conn.execute("UPDATE sessions SET ended_at=COALESCE(ended_at, ?) WHERE id=?", (db.now(), row["id"]))
+        if left is not None:
             if any(c["type"] == "vocab" and c.get("lang") != ui_lang for c in left):
                 # The UI language changed since the session was planned: rebuild the word cards.
                 rng = rng or random.Random()
@@ -710,14 +725,20 @@ def home_stats(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str) -> dict
 
     total = conn.execute("SELECT COUNT(*) FROM attempts").fetchone()[0]
     today_n = conn.execute("SELECT COUNT(*) FROM attempts WHERE substr(ts, 1, 10)=?", (today.isoformat(),)).fetchone()[0]
-    new_available = sum(1 for k in vocab_keys if k not in states)
+    # only what a daily session may serve now: the lessons reached so far (SPEC §5.4)
+    allowed, _ = gate(conn, catalog)
+
+    def open_new(keys):
+        return sum(1 for k in keys if k not in states and k in catalog.items and allowed(k, catalog.items[k][1]))
+
+    new_available = open_new(vocab_keys)
     return {
         "answers_total": total,
         "answers_today": today_n,
-        "today": today_status(conn),
+        "today": today_status(conn, catalog),
         "due": {"vocab": due_vocab, "vocab_shown": min(due_vocab, REVIEW_CAP), "verbs": due_forms, "tasks": due_tasks},
         "new_available": new_available,
-        "verbs_new_available": sum(1 for k in form_keys if k not in states),
+        "verbs_new_available": open_new(form_keys),
         "words": counts(vocab_keys),
         "verbs": counts(form_keys),
         "grid": grid,
