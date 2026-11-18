@@ -19,8 +19,9 @@
   color-scheme: light dark;
 }
 
+/* Dark colours: from the system setting unless the learner chose light, or chosen (phase 5c). */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #151a1e;
     --surface: #1d242a;
     --ink: #ece6dc;
@@ -37,6 +38,25 @@
     --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
   }
 }
+
+:root[data-theme="dark"] {
+  --bg: #151a1e;
+  --surface: #1d242a;
+  --ink: #ece6dc;
+  --muted: #a1a9ae;
+  --line: #2e373d;
+  --accent: #80b4da;
+  --accent-ink: #10171c;
+  --accent-soft: #213240;
+  --good: #a7c879;
+  --good-soft: #243021;
+  --bad: #e59b85;
+  --bad-soft: #3b2622;
+  --paper: #232a2f;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+  color-scheme: dark;
+}
+:root[data-theme="light"] { color-scheme: light; }
 
 * { box-sizing: border-box; }
 
@@ -495,3 +515,87 @@ details.verb summary .el { font-size: 19px; }
 .verb-table td.vf.learning { background: var(--accent-soft); }
 .verb-table td.vf.locked { color: var(--muted); }
 .good-line { color: var(--good); font-weight: 600; }
+
+/* ---------- phase 5c: top actions, theme, home ---------- */
+.top-actions { display: flex; align-items: center; gap: 8px; }
+.theme-switch {
+  width: 34px; height: 34px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
+  color: var(--muted); font-size: 16px; line-height: 1; display: inline-grid; place-items: center;
+}
+.theme-switch:hover { color: var(--ink); border-color: var(--accent); }
+.home .link-button { align-self: center; }
+.home > .muted.small { max-width: 34em; align-self: center; margin: 4px 0 0; }
+.chapter-line { margin: 10px 0 0; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.progress-fold > summary { cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; }
+.progress-fold > summary::-webkit-details-marker { display: none; }
+.progress-fold > summary::after { content: "▾"; color: var(--muted); }
+.progress-fold[open] > summary::after { content: "▴"; }
+.progress-fold > summary h2 { margin: 0; }
+.progress-fold > section { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
+.map-marks { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+.mark-chip { padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+.mark-chip.on { background: var(--good-soft); border-color: transparent; color: var(--ink); }
+
+/* ---------- phase 5c: learn card ---------- */
+.learn-card { text-align: center; }
+.learn-meaning { font-size: clamp(24px, 6vw, 30px); margin: 0 0 18px; }
+.learn-example { text-align: left; max-width: 30em; margin: 0 auto 8px; padding: 12px 14px; border-radius: 10px; background: var(--paper); }
+.learn-example .example { margin-top: 4px; }
+.learn-card .actions { justify-content: center; }
+
+/* ---------- phase 5c: the chapter reader ---------- */
+.reader-top { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 8px 0; }
+.reader-progress { position: sticky; top: 56px; z-index: 5; height: 3px; background: var(--line); border-radius: 3px; overflow: hidden; margin-bottom: 8px; }
+.reader-progress > span { display: block; height: 100%; background: var(--accent); transition: width .3s ease; }
+.reader { max-width: 38rem; margin: 0 auto; width: 100%; font-size: 18px; line-height: 1.7; }
+.reader .kicker { color: var(--muted); font-size: 14px; letter-spacing: .03em; text-transform: uppercase; margin: 28px 0 6px; }
+.ch-title { font-size: clamp(30px, 7vw, 40px); line-height: 1.2; margin: 0 0 18px; font-weight: 600; }
+.ch-contents { font-size: 15px; color: var(--muted); margin-bottom: 10px; }
+.ch-contents summary { cursor: pointer; }
+.ch-contents ol { margin: 6px 0 0; padding-left: 22px; }
+.ch-contents a { color: inherit; }
+.ch-sec { padding: 22px 0 10px; border-top: 1px solid var(--line); scroll-margin-top: 72px; }
+.ch-sec-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.ch-sec-head h2 { font-size: 22px; margin: 0 0 8px; }
+.ch-flag { opacity: .45; }
+.ch-sec:hover .ch-flag, .ch-flag:focus-visible { opacity: 1; }
+.ch-prose p { margin: 0 0 12px; }
+.reader .el, .reader [lang="el"] { font-family: var(--font-greek); }
+.inline-el { font-size: 1.05em; color: var(--accent); }
+.ch-dialogue { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; margin: 8px 0 16px; }
+.ch-dialogue .setting { color: var(--muted); font-style: italic; margin: 0 0 8px; }
+.ch-tools { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; flex-wrap: wrap; }
+.small-btn { padding: 6px 14px; font-size: 15px; }
+.ch-line { display: grid; grid-template-columns: 6.5em minmax(0, 1fr); gap: 4px 12px; padding: 8px 0; border-top: 1px dashed var(--line); }
+.ch-line:first-of-type { border-top: 0; }
+.ch-line .who { color: var(--muted); font-size: 15px; padding-top: 3px; overflow-wrap: anywhere; }
+.said-el { display: flex; align-items: flex-start; gap: 8px; }
+.said-el .el { font-size: 20px; line-height: 1.5; }
+.said .translation, .ch-examples .translation { margin: 2px 0 0; }
+.ch-table { margin: 8px 0 18px; }
+.ch-table figcaption { font-weight: 600; margin-bottom: 6px; }
+.ch-table table { border-collapse: collapse; width: 100%; background: var(--surface); border-radius: 10px; overflow: hidden; }
+.ch-table th, .ch-table td { padding: 8px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.ch-table thead th { background: var(--accent-soft); font-size: 15px; }
+.ch-table tbody th { font-weight: 400; }
+.ch-table td .el { font-size: 19px; }
+.ch-examples { list-style: none; padding: 0; margin: 6px 0 16px; }
+.ch-examples li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.ch-examples li:last-child { border-bottom: 0; }
+.ch-words { margin: 4px 0 12px; }
+.ch-tip { border-radius: 12px; padding: 12px 16px; margin: 10px 0 14px; background: var(--accent-soft); }
+.ch-tip.tr_bridge { background: var(--good-soft); }
+.ch-tip.mistake { background: var(--bad-soft); }
+.ch-tip .tip-label { font-size: 13px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; margin: 0 0 4px; }
+.ch-tip p { margin: 0 0 6px; }
+.ch-check { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; margin: 10px 0 16px; text-align: center; }
+.ch-check .card { box-shadow: none; border: 0; padding: 4px 0 0; text-align: left; }
+.ch-check .check-title { font-weight: 600; margin: 0 0 10px; }
+.ch-end { text-align: center; padding: 34px 0 20px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px; }
+.ch-end .actions { justify-content: center; }
+@media (max-width: 520px) {
+  .reader { font-size: 17px; }
+  .ch-line { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .ch-line .who { padding: 0; font-size: 13px; }
+  .ch-table th, .ch-table td { padding: 6px 8px; }
+}

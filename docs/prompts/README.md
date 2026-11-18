@@ -9,6 +9,7 @@ Each file is one prompt for one fresh agent session, run from the repo root. Pas
 | 3 | `03-import-and-study-loop.md` | Your old A1–A2 material imported privately; a daily session worth opening. |
 | 4 | `04-coach.md` | The agent acts as coach: check-in, after-class, writing feedback. |
 | 5 | `05-exam-mode.md` | Readiness per exam skill, mock exams, a plan to the exam date. |
+| 5c | `05c-book.md` | A chapter to read before each stage's practice; new words taught before they are tested; the chapter-writing procedure. |
 | 6 | `06-friend-test.md` | Proof that a stranger's machine can install it. |
 
 How to use them:

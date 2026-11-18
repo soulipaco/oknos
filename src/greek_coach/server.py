@@ -75,6 +75,26 @@ class SessionIn(BaseModel):
     has_voice: bool = False
 
 
+class ChapterProgressIn(BaseModel):
+    section: int | None = None
+    finished: bool = False
+
+
+class ChapterChecksIn(BaseModel):
+    items: list[str] = []
+
+
+class ChapterPracticeIn(BaseModel):
+    minutes: int | None = None
+    has_voice: bool = False
+
+
+class ChapterFlagIn(BaseModel):
+    section: int
+    reason: Literal["wrong", "confusing", "audio"] = "wrong"
+    note: str | None = None
+
+
 class FlagIn(BaseModel):
     item_key: str
     reason: Literal["wrong", "confusing", "audio"] = "wrong"
@@ -168,6 +188,8 @@ def create_app() -> FastAPI:
             try:
                 cur = curriculum.summary(conn, app.state.catalog)
                 cur_brief = None
+                next_action = curriculum.next_action(curriculum.progress(conn, app.state.catalog),
+                                                     stats["today"]["state"], stats["due"]["vocab"])
                 if cur is not None:
                     cur_brief = {k: cur[k] for k in ("curriculum", "title", "current", "stages_done", "stages_total")}
                     nxt = cur["current"]["order"] + 1
@@ -175,6 +197,7 @@ def create_app() -> FastAPI:
             except Exception:  # the home screen must open even if the curriculum breaks
                 log.exception("curriculum")
                 cur_brief = None
+                next_action = {"kind": "daily", "stage": None, "then": None}
             try:
                 mock.expire(conn, app.state.catalog)
                 ready_brief = {k: _brief(v) for k, v in readiness.all_readiness(conn, app.state.catalog).items()}
@@ -187,6 +210,7 @@ def create_app() -> FastAPI:
             "coach": coach,
             "readiness": ready_brief,
             "curriculum": cur_brief,
+            "next_action": next_action,
             "target_exam": profile.get("target_exam"),
             "ui_lang": profile.get("ui_lang") if profile.get("ui_lang") in UI_LANGS else None,
             "minutes": _minutes(profile),
@@ -480,6 +504,80 @@ def create_app() -> FastAPI:
             raise HTTPException(409, str(e))
         finally:
             conn.close()
+
+    # ---------- chapters: read first, then practise (phase 5c) ----------
+
+    def _chapter_or_404(conn, stage_id: str):
+        cur = curriculum.active(app.state.catalog)
+        ch = app.state.catalog.chapter(cur.id, stage_id) if cur else None
+        if ch is None:
+            raise HTTPException(404, "this stage has no chapter")
+        return cur, ch
+
+    @app.get("/api/chapters/{stage_id}")
+    def get_chapter(stage_id: str):
+        lang = _lang(read_profile())
+        conn = db.open_db()
+        try:
+            cur = curriculum.active(app.state.catalog)
+            ch = app.state.catalog.chapter(cur.id, stage_id) if cur else None
+            if ch is not None and stage_id in [s.id for s in cur.stages]:
+                curriculum.mark_read(conn, cur.id, stage_id, ch.version)  # opened
+            out = session.chapter_view(conn, app.state.catalog, lang, stage_id)
+        finally:
+            conn.close()
+        if out is None:
+            raise HTTPException(404, "this stage has no chapter")
+        return out
+
+    @app.post("/api/chapters/{stage_id}/progress")
+    def chapter_progress(stage_id: str, body: ChapterProgressIn):
+        conn = db.open_db()
+        try:
+            cur, ch = _chapter_or_404(conn, stage_id)
+            if body.section is not None and not 0 <= body.section < len(ch.sections):
+                raise HTTPException(422, "no such section")
+            return curriculum.mark_read(conn, cur.id, stage_id, ch.version, body.section, body.finished)
+        finally:
+            conn.close()
+
+    @app.post("/api/chapters/{stage_id}/checks")
+    def chapter_checks(stage_id: str, body: ChapterChecksIn):
+        lang = _lang(read_profile())
+        conn = db.open_db()
+        try:
+            return session.chapter_checks(conn, app.state.catalog, lang, stage_id, body.items)
+        except ValueError as e:
+            raise HTTPException(404, str(e))
+        finally:
+            conn.close()
+
+    @app.post("/api/chapters/{stage_id}/practice")
+    def chapter_practice(stage_id: str, body: ChapterPracticeIn):
+        lang = _lang(read_profile())
+        conn = db.open_db()
+        try:
+            return session.chapter_practice(conn, app.state.catalog, lang, stage_id,
+                                            max(2, min(60, body.minutes or _minutes(read_profile()))), body.has_voice)
+        except ValueError as e:
+            raise HTTPException(404, str(e))
+        finally:
+            conn.close()
+
+    @app.post("/api/chapters/{stage_id}/flag")
+    def chapter_flag(stage_id: str, body: ChapterFlagIn):
+        conn = db.open_db()
+        try:
+            cur, ch = _chapter_or_404(conn, stage_id)
+            if not 0 <= body.section < len(ch.sections):
+                raise HTTPException(422, "no such section")
+            with conn:
+                row = conn.execute("INSERT INTO flags(ts, item_key, reason, note) VALUES (?, ?, ?, ?)",
+                                   (db.now(), f"chapter:{cur.id}/{stage_id}#{body.section}", body.reason,
+                                    (body.note or "")[:500] or None))
+        finally:
+            conn.close()
+        return {"flag_id": row.lastrowid}
 
     @app.get("/api/words")
     def get_words():

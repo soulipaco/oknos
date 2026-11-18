@@ -63,6 +63,9 @@ function showError() {
   app.replaceChildren(h("div", { class: "center-note" }, h("p", {}, t("error"))));
 }
 
+// Where the current card is drawn: the page, or a block inside a chapter (phase 5c).
+const cardRoot = () => state.cardRoot || app;
+
 const packOf = (itemKey) => itemKey.split("/")[0];
 const idOf = (itemKey) => itemKey.split("/").slice(1).join("/");
 
@@ -410,12 +413,24 @@ function coachPanel(coach) {
   return h("section", { class: "panel coach" }, ...blocks);
 }
 
-async function renderHome() {
+function resetScreens() {
   clearInterval(state.mock?.timer);
   state.mock = null;
   state.session = null;
   state.card = null;
+  state.cardRoot = null;
+  state.inline = null;
+  if ("speechSynthesis" in window) speechSynthesis.cancel();
   closePopover();
+  if (location.search.includes("lesson=")) history.replaceState(null, "", location.pathname);
+}
+
+function topActions() {
+  return h("div", { class: "top-actions" }, themeSwitch(), langSwitch());
+}
+
+async function renderHome() {
+  resetScreens();
   try {
     state.home = await api("/api/home");
   } catch { return showError(); }
@@ -425,29 +440,75 @@ async function renderHome() {
   const startLabel = status === "resume" ? t("continue_daily", { left: stats.today.left })
     : status === "done" ? t("more5") : t("start_daily", { minutes });
   const first = stats.answers_total === 0;
+  const na = state.home.next_action || { kind: "daily" };
+  const daily = () => startSession(status === "done" ? "extra" : "daily");
 
+  // One thing to do first (phase 5c): read the current lesson's chapter, or the daily session.
+  let primary;
+  const second = [];
+  if (na.kind === "read") {
+    primary = h("button", { class: "start", type: "button", id: "start", onclick: () => renderChapter(na.stage) },
+      na.opened ? t("na_continue_read", { name: tr(na.title) }) : t("na_read", { name: tr(na.title), minutes: na.minutes }));
+    second.push(h("p", { class: "muted small" }, t("na_read_line")));
+    if (na.then === "daily") second.push(h("button", { class: "link-button", type: "button", onclick: daily }, `${t("na_or_daily")}: ${startLabel}`));
+  } else {
+    primary = h("button", { class: status === "done" ? "start secondary-start" : "start", type: "button", id: "start", onclick: daily }, startLabel);
+    second.push(h("p", { class: "counts muted" }, first ? t("home_first") : todayLine(stats)));
+  }
+  const progressPanels = first ? [] : [consistencyGrid(stats), standing(stats)];
   app.replaceChildren(
-    h("header", { class: "topbar" }, wordmark(), langSwitch()),
+    h("header", { class: "topbar" }, wordmark(), topActions()),
     h("section", { class: "home" },
       h("h1", { class: "greeting", lang: "el" }, hello),
       h("p", { class: "greeting-tr" }, `${helloT} · ${t("tagline")}`),
-      status === "done" ? h("p", { class: "done-today" }, t("done_today")) : null,
-      h("button", { class: status === "done" ? "start secondary-start" : "start", type: "button", id: "start",
-        onclick: () => startSession(status === "done" ? "extra" : "daily") }, startLabel),
-      h("p", { class: "counts muted" }, first ? t("home_first") : todayLine(stats)),
-      homeNav(),
+      status === "done" && na.kind !== "read" ? h("p", { class: "done-today" }, t("done_today")) : null,
+      primary, ...second,
     ),
     stagePanel(state.home.curriculum),
+    homeNav(),
     coachPanel(state.home.coach),
     examPanel(state.home),
-    ...(first ? [] : [consistencyGrid(stats), standing(stats)]),
+    progressPanels.length ? h("details", { class: "panel progress-fold" },
+      h("summary", {}, h("h2", {}, t("progress_title"))), ...progressPanels.map(p => { p.classList.remove("panel"); return p; })) : null,
   );
   document.getElementById("start").focus();
+}
+
+// ---------- theme: system, light or dark (phase 5c) ----------
+
+const THEMES = ["system", "light", "dark"];
+
+function currentTheme() {
+  try { const v = localStorage.getItem("gc-theme"); return THEMES.includes(v) ? v : "system"; } catch { return "system"; }
+}
+
+function applyTheme(theme) {
+  if (theme === "system") delete document.documentElement.dataset.theme;
+  else document.documentElement.dataset.theme = theme;
+}
+
+function themeSwitch() {
+  const b = h("button", { class: "theme-switch", type: "button" });
+  const paint = () => {
+    const th = currentTheme();
+    b.textContent = th === "dark" ? "☾" : th === "light" ? "☀" : "◐";
+    b.title = t(`theme_${th}`);
+    b.setAttribute("aria-label", t(`theme_${th}`));
+  };
+  b.addEventListener("click", () => {
+    const next = THEMES[(THEMES.indexOf(currentTheme()) + 1) % THEMES.length];
+    try { localStorage.setItem("gc-theme", next); } catch { /* the choice lasts this page only */ }
+    applyTheme(next);
+    paint();
+  });
+  paint();
+  return b;
 }
 
 // ---------- session ----------
 
 async function startSession(kind, items = [], extra = {}) {
+  resetScreens();
   app.replaceChildren(h("div", { class: "center-note" }, t("loading")));
   try {
     const s = await api("/api/session", { kind, items, ui_lang: state.lang, has_voice: !!greekVoice, ...extra });
@@ -469,7 +530,7 @@ async function startCheck(stageId) {
   } catch { showError(); }
 }
 
-function sessionFrame(body) {
+function sessionFrame(body, label = null) {
   const s = state.session;
   const card = s.cards[s.index];
   const done = (s.done || 0) + s.index;
@@ -477,7 +538,7 @@ function sessionFrame(body) {
   const pct = Math.round((done / total) * 100);
   return [
     h("header", { class: "topbar" },
-      h("span", { class: "muted small" }, `${t(`segment_${card.segment || "review"}`)} · ${t("progress", { done: done + 1, total })}`),
+      h("span", { class: "muted small" }, `${label || t(`segment_${card.segment || "review"}`)} · ${t("progress", { done: done + 1, total })}`),
       h("button", { class: "link-button", type: "button", onclick: finishSession }, t("enough")),
     ),
     h("div", { class: "progress", role: "progressbar", "aria-valuemin": 0, "aria-valuemax": 100, "aria-valuenow": pct },
@@ -503,10 +564,34 @@ function flagButton() {
 
 const RENDERERS = {};
 
+function renderLearn(card) {
+  // Teach before testing (phase 5c): a word never seen is shown first, ungraded.
+  const L = card.learn;
+  state.card = null;
+  const go = h("button", { class: "primary", type: "button", id: "next", onclick: () => {
+    state.session.learned.add(card.item_key);
+    renderCard();
+  } }, t("learn_go"));
+  const example = L.example ? h("div", { class: "example" }, speakButton(L.example.el, true),
+    h("div", {}, greekText(L.example.el, { tag: "p", cls: "el" }),
+      tr(L.example) ? h("p", { class: "translation" }, tr(L.example)) : null)) : null;
+  const body = h("article", { class: "card learn-card" },
+    h("div", { class: "question" }, h("div", { class: "ask" }, t("learn_title")),
+      h("div", { class: "prompt-row" }, greekText(L.el, { tag: "p", cls: "big-greek", tappable: false }), speakButton(L.el))),
+    h("p", { class: "learn-meaning" }, L.meaning),
+    example ? h("div", { class: "learn-example" }, h("p", { class: "muted small" }, t("learn_example")), example) : null,
+    h("div", { class: "actions" }, go));
+  app.replaceChildren(...sessionFrame(body, t("segment_learn")));
+  setTimeout(() => speak(L.el, 0.85), 200);
+  go.focus();
+}
+
 function renderCard() {
   closePopover();
   const s = state.session;
   const card = s.cards[s.index];
+  s.learned ||= new Set();
+  if (card.learn && !state.mock && s.kind !== "check" && !s.learned.has(card.item_key)) return renderLearn(card);
   state.card = { data: card, answered: false, started: performance.now(), audioPlays: 0, lookups: 0, tf: [], picks: {} };
   const body = (RENDERERS[card.type] || RENDERERS.mcq)(card);
   if (state.mock) {
@@ -987,7 +1072,7 @@ async function submit(response, ui = {}) {
   if (!c || c.answered) return;
   c.answered = true;
   closePopover();
-  app.querySelectorAll(".option, .tf button, .check-row button, .typed, .keyboard .k, .speak-card .actions button")
+  cardRoot().querySelectorAll(".option, .tf button, .check-row button, .typed, .keyboard .k, .speak-card .actions button")
     .forEach(b => { b.disabled = true; });
   let result;
   try {
@@ -1006,14 +1091,14 @@ async function submit(response, ui = {}) {
 
 function showFeedback(result, ui) {
   const card = state.card.data;
-  const slot = app.querySelector(".slot");
+  const slot = cardRoot().querySelector(".slot");
   const parts = [];
   if (state.card.revealTranscript) state.card.revealTranscript();
 
   if (card.type === "write" || card.type === "speak") {
-    app.querySelector(".check-row")?.remove();
+    cardRoot().querySelector(".check-row")?.remove();
     const last = state.session.index >= state.session.cards.length - 1;
-    const next = h("button", { class: "primary", type: "button", id: "next", onclick: nextCard }, last ? t("finish") : t("next"));
+    const next = nextButton(last);
     slot.replaceChildren(h("div", { class: "feedback neutral", role: "status" }, ...openTaskFeedback(card, result, ui)),
       h("div", { class: "actions" }, next));
     next.focus();
@@ -1025,7 +1110,7 @@ function showFeedback(result, ui) {
     if (!result.correct) parts.push(h("p", {}, t("answer_is", { answer: result.answer })));
     parts.push(h("div", { class: "example" }, speakButton(result.answer, true), greekText(result.answer, { cls: "el" })));
   } else if (card.type === "vocab" || card.type === "mcq") {
-    const buttons = [...app.querySelectorAll(".option")];
+    const buttons = [...cardRoot().querySelectorAll(".option")];
     const rightIndex = card.type === "mcq" ? result.answer : card.options.indexOf(result.answer);
     buttons.forEach((b, i) => {
       if (i === rightIndex) b.classList.add("right");
@@ -1043,7 +1128,7 @@ function showFeedback(result, ui) {
       const el = input.el || input;
       el.classList.add(result.parts.length && result.correct ? "right" : "wrong");
     }
-    app.querySelectorAll(".option").forEach((b, i) => {
+    cardRoot().querySelectorAll(".option").forEach((b, i) => {
       const text = b.lastChild.textContent;
       if (Object.values(result.answer).includes(text)) b.classList.add("right");
       else if (i === ui.pickedIndex) b.classList.add("wrong");
@@ -1053,7 +1138,7 @@ function showFeedback(result, ui) {
       greekText(card.text.replace(/\{(\w+)\}/g, (_, g) => result.answer[g]), { tag: "p", cls: "el" })));
     if (!result.correct) parts.push(h("p", {}, t("answer_is", { answer: right })));
   } else if (card.type === "true_false") {
-    app.querySelectorAll(".statement").forEach((row, i) => {
+    cardRoot().querySelectorAll(".statement").forEach((row, i) => {
       const right = result.answer[i];
       row.querySelectorAll(".tf button").forEach(b => {
         const value = b.dataset.value === "true";
@@ -1071,7 +1156,7 @@ function showFeedback(result, ui) {
     if (card.type === "table_fill") state.card.paintTable(result.answer, result.parts);
     parts.push(h("p", {}, t("parts_score", { right: result.parts.filter(Boolean).length, total: result.parts.length })));
   }
-  app.querySelector(".check-row")?.remove();
+  cardRoot().querySelector(".check-row")?.remove();
 
   if (result.accent_note) parts.push(h("p", { class: "accent-note" }, t("accent_note", { word: result.accent_note })));
   if (result.example) {
@@ -1087,12 +1172,20 @@ function showFeedback(result, ui) {
   if (!result.correct && result.next_due) parts.push(h("p", { class: "muted small" }, t("comes_back")));
 
   const last = state.session.index >= state.session.cards.length - 1;
-  const next = h("button", { class: "primary", type: "button", id: "next", onclick: nextCard }, last ? t("finish") : t("next"));
+  const next = nextButton(last);
   slot.replaceChildren(
     h("div", { class: `feedback ${result.correct ? "good" : "bad"}`, role: "status" },
       h("p", { class: "verdict" }, result.correct ? (result.accent_note ? t("right_accent") : t("right")) : t("wrong")), ...parts),
     h("div", { class: "actions" }, next));
   next.focus();
+}
+
+function nextButton(last) {
+  // In a chapter's "try it" block the button stays inside the chapter.
+  if (state.inline) {
+    return h("button", { class: "primary", type: "button", id: "next", onclick: inlineNext }, last ? t("ch_check_back") : t("next"));
+  }
+  return h("button", { class: "primary", type: "button", id: "next", onclick: nextCard }, last ? t("finish") : t("next"));
 }
 
 function nextCard() {
@@ -1275,6 +1368,11 @@ function stagePanel(cur) {
       h("strong", {}, stageName(st)), st.theme ? h("span", { class: "muted" }, tr(st.theme)) : null,
       progressBar(st.learned, st.core),
       h("span", { class: "small muted" }, st.core ? t("stage_secure", { n: st.learned, total: st.core }) : t("stage_nothing"))),
+    st.chapter ? h("p", { class: "chapter-line" },
+      st.chapter.read
+        ? [h("span", { class: "chip map-done" }, `✓ ${t("ch_was_read")}`), " ",
+           h("button", { class: "link-button small", type: "button", onclick: () => renderChapter(st.id) }, t("ch_reread"))]
+        : h("button", { class: "secondary", type: "button", onclick: () => renderChapter(st.id) }, t("ch_read_min", { minutes: st.chapter.minutes }))) : null,
     cur.next ? h("p", { class: "small muted" }, t("stage_next", { name: stageName(cur.next) })) : null);
 }
 
@@ -1287,7 +1385,11 @@ async function renderMap() {
     h("button", { class: `map-row ${st.state}`, type: "button", onclick: () => renderStage(st.id) },
       h("span", { class: "map-icon", "aria-hidden": "true" }, st.state === "done" ? "✓" : st.state === "current" ? "●" : "○"),
       h("span", { class: "map-text" }, h("strong", {}, stageName(st)), st.theme ? h("span", { class: "muted small" }, tr(st.theme)) : null,
-        st.state !== "locked" && st.core ? progressBar(st.learned, st.core, "thin") : null),
+        st.state !== "locked" && st.core ? progressBar(st.learned, st.core, "thin") : null,
+        h("span", { class: "map-marks small" },
+          st.chapter ? h("span", { class: `mark-chip ${st.chapter.read ? "on" : ""}` }, `📖 ${t(st.chapter.read ? "map_read" : "map_to_read")}`) : null,
+          st.core && st.state !== "locked" ? h("span", { class: "mark-chip" }, `${Math.round(st.share * 100)}%`) : null,
+          st.passed_check ? h("span", { class: "mark-chip on" }, `✓ ${t("map_checked")}`) : null)),
       h("span", { class: "muted small" }, t(`map_${st.state}`)))));
   app.replaceChildren(topbarBack(renderHome),
     h("section", { class: "summary" }, h("h1", {}, tr(cur.title)),
@@ -1311,6 +1413,10 @@ async function renderStage(id) {
     h("span", { class: "el", lang: "el" }, lemma), " ",
     h("span", { class: "muted small" }, `${fs.filter(f => f.status === "secure" || f.status === "known").length}/${fs.length}`)));
   const actions = [];
+  if (st.chapter && st.state !== "locked") {
+    actions.push(h("button", { class: st.chapter.read ? "secondary" : "primary", type: "button", onclick: () => renderChapter(st.id) },
+      st.chapter.read ? t("ch_reread") : t("ch_read_min", { minutes: st.chapter.minutes })));
+  }
   if (st.state !== "locked") {
     actions.push(h("button", { class: "primary", type: "button", onclick: () => startSession("choose", [], { what: "all", stage: st.id, minutes: 10 }) }, t("stage_practise")));
   }
@@ -1325,6 +1431,7 @@ async function renderStage(id) {
       st.core ? progressBar(st.learned, st.core) : null,
       st.core ? h("p", { class: "muted small" }, t("stage_secure_line", { n: st.secure, days: 6 })) : null,
       st.state === "locked" ? h("p", { class: "muted small" }, t("stage_locked_line")) : null,
+      st.chapter && !st.chapter.read && st.state !== "locked" ? h("p", { class: "muted small" }, t("stage_read_first")) : null,
       st.can_do?.length ? h("div", { class: "coach-note" }, h("p", { class: "small" }, h("strong", {}, t("stage_can_do"))),
         h("ul", { class: "small" }, st.can_do.map(c => h("li", {}, tr(c))))) : null,
       actions.length ? h("div", { class: "actions" }, actions) : null,
@@ -1433,6 +1540,220 @@ async function renderVerbs() {
   });
   app.replaceChildren(topbarBack(renderHome),
     h("section", { class: "summary" }, h("h1", {}, t("nav_verbs")), h("p", { class: "muted small" }, t("v_line")), rows));
+}
+
+// ---------- the chapter reader: read first, then practise (phase 5c) ----------
+
+function inlineText(text, tag = "p") {
+  // **bold**, *italic*, [[Greek]] (tappable and spoken). Nothing else is markup.
+  const el = h(tag, {});
+  const re = /(\*\*[^*]+\*\*|\*[^*]+\*|\[\[[^\]]+\]\])/g;
+  for (const part of String(text).split(re)) {
+    if (!part) continue;
+    if (part.startsWith("**") && part.endsWith("**")) el.append(h("strong", {}, part.slice(2, -2)));
+    else if (part.startsWith("[[") && part.endsWith("]]")) el.append(greekText(part.slice(2, -2), { cls: "el inline-el" }));
+    else if (part.startsWith("*") && part.endsWith("*") && part.length > 2) el.append(h("em", {}, part.slice(1, -1)));
+    else el.append(document.createTextNode(part));
+  }
+  return el;
+}
+
+function paragraphs(text) {
+  return String(text).split(/\n{2,}|\n/).filter(x => x.trim()).map(x => inlineText(x));
+}
+
+function speakAll(texts) {
+  if (!greekVoice || !texts.length) return;
+  speechSynthesis.cancel();
+  for (const text of texts) {
+    const u = new SpeechSynthesisUtterance(text);
+    u.voice = greekVoice;
+    u.lang = greekVoice.lang;
+    u.rate = 0.85;
+    speechSynthesis.speak(u);
+  }
+}
+
+const CHAPTER_BLOCKS = {
+  prose: (b) => h("div", { class: "ch-prose" }, paragraphs(tr(b))),
+
+  dialogue: (b) => {
+    const lines = b.lines.map(ln => h("div", { class: "ch-line" },
+      h("span", { class: "who", lang: "el" }, ln.who),
+      h("div", { class: "said" },
+        h("div", { class: "said-el" }, greekText(ln.el, { cls: "el" }), speakButton(ln.el, true)),
+        h("p", { class: "translation", hidden: true }, tr(ln)))));
+    const toggle = h("button", { class: "link-button small", type: "button" }, t("ch_show_tr"));
+    toggle.addEventListener("click", () => {
+      const show = toggle.textContent === t("ch_show_tr");
+      lines.forEach(l => { l.querySelector(".translation").hidden = !show; });
+      toggle.textContent = show ? t("ch_hide_tr") : t("ch_show_tr");
+    });
+    const play = h("button", { class: "secondary small-btn", type: "button", onclick: () => speakAll(b.lines.map(l => l.el)) }, `▶ ${t("ch_play_all")}`);
+    play.hidden = !greekVoice;
+    return h("div", { class: "ch-dialogue" },
+      b.setting ? h("p", { class: "setting" }, tr(b.setting)) : null,
+      h("div", { class: "ch-tools" }, play, toggle),
+      lines);
+  },
+
+  table: (b) => h("figure", { class: "ch-table" },
+    b.caption ? h("figcaption", {}, inlineText(tr(b.caption), "span")) : null,
+    h("div", { class: "table-wrap" }, h("table", {},
+      h("thead", {}, h("tr", {}, b.head.map(c => h("th", {}, greekText(c, { tappable: false }))))),
+      h("tbody", {}, b.rows.map(row => h("tr", {}, row.map((c, j) => h(j === 0 ? "th" : "td", j === 0 ? { scope: "row" } : {},
+        greekText(c, { cls: "el" })))))))),
+    b.note ? h("p", { class: "muted small" }, inlineText(tr(b.note), "span")) : null),
+
+  examples: (b) => h("ul", { class: "ch-examples" }, b.items.map(e => h("li", {},
+    h("div", { class: "said-el" }, greekText(e.el, { cls: "el" }), speakButton(e.el, true)),
+    h("p", { class: "translation" }, tr(e)),
+    e.note ? h("p", { class: "muted small" }, inlineText(tr(e.note), "span")) : null))),
+
+  words: (b) => h("ul", { class: "word-list ch-words" }, (b.words || []).map(w => h("li", { class: "word-row" },
+    speakButton(w.el, true), h("span", { class: "el", lang: "el" }, w.el), h("span", { class: "muted" }, w.meaning),
+    statusChip(w.status)))),
+
+  tip: (b) => h("aside", { class: `ch-tip ${b.kind}` }, h("p", { class: "tip-label" }, t(`ch_tip_${b.kind}`)), paragraphs(tr(b))),
+
+  check: (b, ctx) => {
+    const box = h("div", { class: "ch-check" });
+    const idle = () => box.replaceChildren(
+      h("p", { class: "check-title" }, t("ch_check_title", { n: b.items.length })),
+      h("button", { class: "primary", type: "button", onclick: () => startInlineChecks(ctx.stage, b.items, box, idle) }, t("ch_check_start")),
+      h("p", { class: "muted small" }, t("ch_check_note")));
+    if (!b.items.length) return null;
+    idle();
+    return box;
+  },
+};
+
+function sectionFlag(stage, index) {
+  const btn = h("button", { class: "flag ch-flag", type: "button", title: t("ch_flag"), "aria-label": t("ch_flag") }, "⚑");
+  btn.addEventListener("click", async () => {
+    const note = window.prompt(t("ch_flag"));
+    if (note === null) return;
+    try {
+      await api(`/api/chapters/${encodeURIComponent(stage)}/flag`, { section: index, note });
+      btn.textContent = "✓";
+      btn.title = t("ch_flag_thanks");
+      btn.disabled = true;
+    } catch { /* the flag is optional */ }
+  });
+  return btn;
+}
+
+async function renderChapter(stageId) {
+  resetScreens();
+  let ch;
+  try { ch = await api(`/api/chapters/${encodeURIComponent(stageId)}`); } catch {
+    app.replaceChildren(topbarBack(renderHome), h("div", { class: "center-note" }, t("ch_none")));
+    return;
+  }
+  history.replaceState(null, "", `?lesson=${encodeURIComponent(stageId)}`);
+  const seen = new Set(ch.read?.sections || []);
+  const bar = h("span", { style: `width:${Math.round((seen.size / ch.sections.length) * 100)}%` });
+  const ctx = { stage: stageId };
+  const sections = ch.sections.map((sec, i) => h("section", { class: `ch-sec kind-${sec.kind}`, id: `sec-${i}`, "data-i": i },
+    h("div", { class: "ch-sec-head" }, h("h2", {}, sec.title ? tr(sec.title) : t(`ch_kind_${sec.kind}`)), sectionFlag(stageId, i)),
+    sec.blocks.map(b => (CHAPTER_BLOCKS[b.type] || (() => null))(b, ctx))));
+  const contents = h("details", { class: "ch-contents" }, h("summary", {}, t("ch_contents")),
+    h("ol", {}, ch.sections.map((sec, i) => h("li", {}, h("a", { href: `#sec-${i}`, onclick: (e) => {
+      e.preventDefault();
+      document.getElementById(`sec-${i}`)?.scrollIntoView({ behavior: "smooth" });
+    } }, sec.title ? tr(sec.title) : t(`ch_kind_${sec.kind}`))))));
+  const practise = h("button", { class: "start", type: "button", onclick: () => startChapterPractice(stageId) }, t("ch_done_practise"));
+  const end = h("section", { class: "ch-end" },
+    h("p", { class: "muted" }, t("ch_end_line")),
+    practise,
+    h("div", { class: "actions" }, h("button", { class: "link-button", type: "button", onclick: async () => {
+      try { await api(`/api/chapters/${encodeURIComponent(stageId)}/progress`, { finished: true }); } catch { /* fine */ }
+      renderHome();
+    } }, t("ch_later"))),
+    ch.next ? h("p", { class: "muted small" }, t("ch_next", { name: tr(ch.next.title) })) : null);
+  app.replaceChildren(
+    h("header", { class: "topbar reader-top" }, wordmark(),
+      h("div", { class: "top-actions" }, themeSwitch(), h("button", { class: "link-button", type: "button", onclick: renderHome }, t("back")))),
+    h("div", { class: "reader-progress", role: "progressbar", "aria-valuemin": 0, "aria-valuemax": 100 }, bar),
+    h("article", { class: "reader" },
+      h("p", { class: "kicker" }, `${tr(ch.stage_title)} · ${t("ch_meta", { level: ch.level, minutes: ch.minutes })}`),
+      h("h1", { class: "ch-title" }, tr(ch.title)),
+      contents, sections, end));
+  window.scrollTo(0, 0);
+  // A section counts as seen once most of it has been on screen.
+  if ("IntersectionObserver" in window) {
+    const obs = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const i = Number(e.target.dataset.i);
+        obs.unobserve(e.target);
+        if (seen.has(i)) continue;
+        seen.add(i);
+        bar.style.width = `${Math.round((seen.size / ch.sections.length) * 100)}%`;
+        api(`/api/chapters/${encodeURIComponent(stageId)}/progress`, { section: i }).catch(() => {});
+      }
+    }, { threshold: 0.35 });
+    app.querySelectorAll(".ch-sec").forEach(el => obs.observe(el));
+  }
+}
+
+async function startChapterPractice(stageId) {
+  resetScreens();
+  app.replaceChildren(h("div", { class: "center-note" }, t("loading")));
+  try {
+    const s = await api(`/api/chapters/${encodeURIComponent(stageId)}/practice`, { has_voice: !!greekVoice });
+    if (!s.cards.length) {
+      app.replaceChildren(topbarBack(renderHome), h("div", { class: "center-note" }, t("nothing")));
+      return;
+    }
+    state.session = { ...s, index: 0 };
+    renderCard();
+  } catch { showError(); }
+}
+
+// "Try it" inside the chapter: the normal card renderers, drawn into the block.
+
+async function startInlineChecks(stageId, items, box, idle) {
+  if (state.inline) state.inline.idle();
+  if ("speechSynthesis" in window) speechSynthesis.cancel();
+  let s;
+  try { s = await api(`/api/chapters/${encodeURIComponent(stageId)}/checks`, { items }); } catch { return; }
+  state.session = { ...s, index: 0 };
+  state.inline = { box, idle, right: 0 };
+  state.cardRoot = box;
+  renderInlineCard();
+}
+
+function renderInlineCard() {
+  closePopover();
+  const s = state.session;
+  const card = s.cards[s.index];
+  state.card = { data: card, answered: false, started: performance.now(), audioPlays: 0, lookups: 0, tf: [], picks: {} };
+  const body = (RENDERERS[card.type] || RENDERERS.mcq)(card);
+  body.prepend(h("p", { class: "muted small" }, t("ch_check_n", { n: s.index + 1, total: s.cards.length })));
+  state.cardRoot.replaceChildren(body);
+}
+
+async function inlineNext() {
+  const s = state.session;
+  const inline = state.inline;
+  if (!s || !inline) return;
+  if (s.index < s.cards.length - 1) {
+    s.index += 1;
+    renderInlineCard();
+    inline.box.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    return;
+  }
+  state.session = null;
+  state.card = null;
+  state.cardRoot = null;
+  state.inline = null;
+  let sum = null;
+  try { sum = await api(`/api/session/${s.session_id}/end`, {}); } catch { /* the answers are saved already */ }
+  inline.box.replaceChildren(
+    sum && sum.done ? h("p", { class: sum.right === sum.done ? "check-title good-line" : "check-title" },
+      t("ch_check_result", { right: sum.right, total: sum.done })) : null,
+    h("button", { class: "link-button", type: "button", onclick: () => inline.idle() }, t("ch_check_again")));
 }
 
 // ---------- exam readiness ----------
@@ -1824,7 +2145,7 @@ document.addEventListener("keydown", (e) => {
   if (!state.card || e.altKey || e.ctrlKey || e.metaKey) return;
   if (e.target.matches?.("input, textarea")) return;
   if (!state.card.answered && /^[1-9]$/.test(e.key)) {
-    const b = app.querySelector(`.option[data-index="${Number(e.key) - 1}"]`);
+    const b = cardRoot().querySelector(`.option[data-index="${Number(e.key) - 1}"]`);
     if (b && !b.disabled) { e.preventDefault(); b.click(); }
   } else if (state.card.answered && e.key === "Enter") {
     const next = document.getElementById("next");
@@ -1835,6 +2156,7 @@ document.addEventListener("keydown", (e) => {
 // ---------- boot ----------
 
 (async function boot() {
+  applyTheme(currentTheme());
   let lang = navigator.language?.toLowerCase().startsWith("tr") ? "tr" : "en";
   try {
     const home = await api("/api/home");
@@ -1850,5 +2172,7 @@ document.addEventListener("keydown", (e) => {
   // ?exam opens the exam screen; ?mock=<run id> a mock run (the coach links to them).
   if (params.has("exam")) return renderExam();
   if (/^\d+$/.test(params.get("mock") || "")) return renderMockRun(Number(params.get("mock")));
+  // ?lesson=<stage id> opens that stage's chapter.
+  if (params.get("lesson")) return renderChapter(params.get("lesson"));
   renderHome();
 })();

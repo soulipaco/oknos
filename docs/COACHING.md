@@ -80,6 +80,7 @@ The fields you will use most:
 | `coverage` | Per exam task: items available, tried and unseen at the exam's level; untagged general practice; and for B1, which `beyond_a2` points have been practised. |
 | `plan_inputs`, `plan_progress` | The plan's facts: candidate sessions from `watch.json` with weeks left and hours, the real pace against the budget. Also the current plan's planned against done (§11). |
 | `mocks` | Mock exams defined and taken, with points per section and `would_pass` (§12). |
+| `chapters` | Which stages of the active curriculum have a chapter, and when each was opened and finished. A stage with an unread chapter gets none of its new items in daily sessions: if the current stage's chapter is unread, say so in your note ("read Lesson 3 first"). New chapters are the `write-chapter` skill. |
 
 ## 4. Where to write
 
@@ -239,6 +240,8 @@ Every item in `open_flags` is something the learner said is `wrong`, `confusing`
    - **`kept`**: it is correct. Tell the learner briefly why, because they probably misunderstood something worth knowing.
 3. Add your ruling to `coach/resolved-flags.json` (section 7.4).
 4. At the check-in, tell the learner in one line per flag what you found.
+
+**Chapter flags.** An entry with a `chapter` field instead of `item` is a section of a chapter: it gives `file`, `section` (0-based) and the section's `content`. Fix the chapter file in place: keep the same stage and raise `version` by one. Rule on it in `resolved-flags.json` like any other flag. Never edit a chapter in an open pack; note it for the maintainer instead.
 
 ## 7. Files you write
 

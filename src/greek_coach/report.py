@@ -16,7 +16,7 @@ from typing import Any
 from greek_coach import coachfiles, curriculum, db, mock, paths, plan, readiness, scheduler, session
 from greek_coach.packs import Catalog, FormItem, SELECTION_TASKS, SpeakItem, VocabItem, WriteItem
 
-REPORT_VERSION = 2
+REPORT_VERSION = 3  # 3: chapters (phase 5c)
 PROFILE_QUESTIONS = ("ui_lang", "minutes", "goal", "target_exam", "interests")
 
 
@@ -197,9 +197,51 @@ def open_flags(conn: sqlite3.Connection, catalog: Catalog) -> list[dict]:
     for r in conn.execute("SELECT * FROM flags WHERE resolved_at IS NULL ORDER BY id"):
         if r["id"] in done:
             continue
+        if r["item_key"].startswith("chapter:"):
+            out.append({"flag_id": r["id"], "ts": r["ts"], "reason": r["reason"], "note": r["note"],
+                        "chapter": chapter_flag_target(catalog, r["item_key"])})
+            continue
         out.append({"flag_id": r["id"], "ts": r["ts"], "reason": r["reason"], "note": r["note"],
                     "item": item_summary(catalog, r["item_key"]) or {"key": r["item_key"], "missing": True}})
     return out
+
+
+def chapter_flag_target(catalog: Catalog, key: str) -> dict:
+    """A flag on a chapter section ("chapter:<curriculum>/<stage>#<section>"): the file and the section."""
+    cur_stage, _, section = key[len("chapter:"):].partition("#")
+    cur_id, _, stage = cur_stage.partition("/")
+    entry = catalog.chapters.get((cur_id, stage))
+    out: dict[str, Any] = {"key": key, "curriculum": cur_id, "stage": stage, "section": int(section or 0)}
+    if entry is None:
+        out["missing"] = True
+        return out
+    pack, ch = entry
+    try:
+        out["file"] = str((pack.path / "lessons" / f"{stage}.json").relative_to(paths.REPO_ROOT))
+    except ValueError:
+        out["file"] = str(pack.path / "lessons" / f"{stage}.json")
+    if 0 <= out["section"] < len(ch.sections):
+        out["content"] = ch.sections[out["section"]].model_dump(exclude_defaults=True)
+    return out
+
+
+def chapters_state(conn: sqlite3.Connection, catalog: Catalog) -> dict:
+    """Which stages of the active curriculum have a chapter, and which the learner has read."""
+    cur = curriculum.active(catalog)
+    if cur is None:
+        return {"curriculum": None, "stages": []}
+    reads = curriculum.chapter_reads(conn, cur.id)
+    stages = []
+    for s in cur.stages:
+        ch = catalog.chapter(cur.id, s.id)
+        r = reads.get(s.id)
+        stages.append({"stage": s.id, "chapter": ch is not None,
+                       "version": ch.version if ch else None,
+                       "opened_at": r["opened_at"] if r else None, "finished_at": r["finished_at"] if r else None,
+                       "sections_seen": len(json.loads(r["sections_json"])) if r else 0,
+                       "sections": len(ch.sections) if ch else 0})
+    return {"curriculum": cur.id, "with_chapter": sum(1 for x in stages if x["chapter"]),
+            "read": sum(1 for x in stages if x["finished_at"]), "stages": stages}
 
 
 def submissions(conn: sqlite3.Connection, catalog: Catalog) -> dict:
@@ -305,6 +347,7 @@ def build(conn: sqlite3.Connection, catalog: Catalog, days: int = 14, with_words
         "inbox": inbox(),
         "coach": coach_state(today),
         "curriculum": curriculum.summary(conn, catalog),
+        "chapters": chapters_state(conn, catalog),
         "readiness": ready,
         "readiness_rules": {"first_attempts_only": True, "window_days": readiness.EVIDENCE_DAYS,
                             "per_task_max": readiness.PER_TASK_MAX, "unit_min": readiness.UNIT_MIN,

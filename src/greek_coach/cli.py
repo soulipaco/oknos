@@ -288,12 +288,24 @@ def cmd_validate(args) -> int:
     for pack_dir in pack_dirs:
         pack, problems, later = packs.load_pack(pack_dir, expected)
         greek_problems, notes = lint.lint_pack(pack_dir)
-        problems = problems + greek_problems
+        chapter_greek, chapter_notes = lint.lint_chapter_files(pack_dir)
+        problems = problems + greek_problems + chapter_greek
+        notes += chapter_notes
         if pack:
             tag_problems, tag_notes = lint.lint_tags(pack)
             problems += tag_problems
             notes += tag_notes
-            print(f"{pack.id}: {len(pack.items)} item(s) loaded" + (f", {later} of a type built in a later phase" if later else ""))
+            if pack.chapters:
+                full = packs.load_all()
+                if pack.id not in {p.id for p in full.packs}:  # a pack outside the content folders
+                    full.packs.append(pack)
+                    full.items.update({f"{pack.id}/{i}": (pack, it) for i, it in pack.items.items()})
+                    full.chapters.update({(c.curriculum, c.stage): (pack, c) for c in pack.chapters.values()})
+                ch_problems, ch_notes = lint.chapter_checks(pack, full)
+                problems += ch_problems
+                notes += ch_notes
+            print(f"{pack.id}: {len(pack.items)} item(s) loaded" + (f", {later} of a type built in a later phase" if later else "")
+                  + (f", {len(pack.chapters)} chapter(s)" if pack.chapters else ""))
             if pack.manifest.visibility == "generated" and not args.quick:
                 if known is None:
                     known = lint.known_words(packs.load_all(), exclude_pack=pack.id)

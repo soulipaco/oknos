@@ -178,7 +178,8 @@ def for_blueprint(conn: sqlite3.Connection, catalog: Catalog, bp: exams.Blueprin
     per_task: dict[str, list[dict]] = defaultdict(list)
     for key, task in tagged.items():
         f = firsts.get(key)
-        if f and f["ts"][:10] >= since:
+        # an item first met inside a chapter ("try it") was seen with its explanation: not a cold attempt
+        if f and f["ts"][:10] >= since and f["kind"] != "lesson":
             per_task[task].append({"ts": f["ts"], "share": f["score"], "timed": f["kind"] == "mock"})
     for task, marks in coach_marks(conn, catalog, bp, since).items():
         per_task[task].extend({"ts": m["ts"], "share": m["share"], "timed": m["mock"]} for m in marks)

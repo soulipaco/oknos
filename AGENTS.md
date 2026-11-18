@@ -10,16 +10,25 @@ Greek Coach is an open-source, local-first Greek learning app that is installed,
 
 ## Current state
 
-Phases 1–5 and 5b are built and committed. Phase 5b is a curriculum the learner progresses through, plus screens to see and choose what to practise. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.
+Phases 1–5 and 5b are built and committed. Phase 5b is a curriculum the learner progresses through, plus screens to see and choose what to practise. Phase 5c (the book: a chapter to read before each stage's practice) is built, with the outline and two golden chapters; the drafted chapters wait for the maintainer's yes. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.
 
 What works now:
-- **Stack:** uv, FastAPI and SQLite (`learner/greek-coach.db`, migrations `0001`–`0005`), with a no-build front end in `web/`. UI in English and Turkish.
+- **Stack:** uv, FastAPI and SQLite (`learner/greek-coach.db`, migrations `0001`–`0006`), with a no-build front end in `web/`. UI in English and Turkish.
 - **Progression (phase 5b, SPEC §5.4).**
   - A curriculum orders everything: the maintainer's book lessons (`content/private/greek-helper/curriculum.json`: intro/reading, lessons 1–24, B1) or the open course (`curricula/open-a1-b1.json`).
   - Daily sessions serve only reached stages, the current one first. A plan of today's that holds cards of a stage not reached (made before the curriculum, or under another one) is replaced, not resumed.
   - A stage is done at 80% learned, or with a passed "test me" check, and stays done.
   - Coach items carry the topic `stage:<id>`.
   - `src/greek_coach/curriculum.py`.
+- **The book: read first, then practise (phase 5c, SPEC §4.8, `docs/LESSONS.md`).**
+  - A stage can have a **chapter** (`<pack>/lessons/<stage>.json`, `src/greek_coach/chapters.py`): typed blocks (prose, dialogue, table, examples, words, tip, check) in a fixed section order, with explanations in Turkish and English.
+  - The reader (`?lesson=<stage>`) plays the dialogues, makes every word tappable, and runs the inline "try it" checks. These are a `lesson` session: they train the review schedule but are never exam evidence. It ends with "Done reading — practise this chapter".
+  - **Teach before testing:** a stage's new items enter daily sessions only once its chapter is read (or its check passed). Reviews never wait. A stage without a chapter behaves as before.
+  - A word never seen gets an ungraded **learn card** (meaning, and an example from a chapter) before its first test.
+  - The chapter's `words` block places those words in its stage.
+  - The home screen's first button is the one next action: read the current chapter, or today's session. Light, dark and system themes.
+  - Book chapters (private): `content/private/greek-helper/lessons/`. There is `outline.json` (26 stages, a draft awaiting approval), and golden chapters for `lesson-01` and `lesson-02`, reviewed (`lessons/review/`).
+  - Writing more is the `write-chapter` skill: Sonnet drafts, Opus reviews.
 - **Exam blueprints** (tracked facts): `exams/a2ltr.json` and `exams/b1-keg.json`.
   - Each has units, tasks, points, minutes, the real pass rule, exam technique (en/tr), official sources and the pages `watch` checks.
   - B1 also lists what it adds over A2 (`beyond_a2`).
@@ -63,22 +72,23 @@ What works now:
     - the clock keeps running when interrupted;
     - auto-scored to the blueprint's points.
 - **The coach** (the agent) works only through files:
-  - it reads `greek-coach report` (`report_version` 2: readiness, coverage, plan inputs and progress, mocks);
+  - it reads `greek-coach report` (`report_version` 3: readiness, coverage, plan inputs and progress, mocks, chapters read);
   - it writes packs, `feedback/<id>.json`, `coach/*.json` (including `plan.json` and `mocks/<id>.json`) and notes;
   - the app takes them in.
 
-  The shared rules are in `docs/COACHING.md`. Skills: `coach`, `capture`, `mark`, `tutor`, `daily-prep`, `watch`, `rebuild-imported`, `plan` and `mock-exam`, plus `setup` and `import-material`.
-- **CLI:** `start`, `stop`, `health`, `report`, `validate` (packs, Greek lint, exam tags, learner folder), `reload`, `import`, `raw`, `schema`, `shortcut`, `transcribe`, `run` and `schedule`.
+  The shared rules are in `docs/COACHING.md`. Skills: `coach`, `capture`, `mark`, `tutor`, `daily-prep`, `watch`, `rebuild-imported`, `plan`, `mock-exam` and `write-chapter`, plus `setup` and `import-material`.
+- **CLI:** `start`, `stop`, `health`, `report`, `validate` (packs, chapters, Greek lint, exam tags, learner folder), `reload`, `import`, `raw`, `schema`, `shortcut`, `transcribe`, `run` and `schedule`.
 - **Audio and speech.**
   - Browser voice for words.
   - Listening passages pre-generated with `scripts/make_audio.py`: edge-tts with the learner's yes, for content outside `learner/` only.
   - Speaking recordings transcribed locally with faster-whisper `small` (the `speech` group).
-- **Tests:** `uv run pytest`, which includes a scripted two weeks of use, the phase 4 contracts (`tests/test_coach.py`) and exam mode (`tests/test_exam.py`). `scripts/simulate.py` also prints the readiness per unit.
+- **Tests:** `uv run pytest`, which includes a scripted two weeks of use, the phase 4 contracts (`tests/test_coach.py`) exam mode (`tests/test_exam.py`) and chapters (`tests/test_chapters.py`). `scripts/simulate.py` also prints the readiness per unit.
 
 Known limits:
 - The open content alone gives too few A2/B1 exam-format items for readiness to show numbers in the first weeks. The coach's items and mocks are what make them appear.
 - The open verb pack has about 2 forms per tense per verb, so the verb tables are sparse.
-- The book's lessons have few words linked to them (407 of 2,648). The rest open by level. The book's own exercises per lesson still need rebuilding (`rebuild-imported`, current stage first).
+- The book's lessons have few words linked to them (407 of 2,648). The rest open by level. A chapter fixes this for its stage, since its words block places them. Only lessons 1–2 have chapters so far; the intro and lessons 3–24 still teach nothing before they test.
+- A heavy review day can still leave no room for new words in the daily session. After reading, "Practise this chapter" is the way to the new words.
 - The A2-LTR history pack waits until the plan targets an A2-LTR session with an announced date; none is announced. The syllabus PDF needs the learner's yes.
 - Neither exam publishes its speaking points split, and A2-LTR publishes no writing criteria. Those scores are always labelled estimates.
 - The app shows no pictures, so picture-based speaking parts are described in words.
@@ -89,7 +99,10 @@ Not yet done on the maintainer's machine:
 - No scheduled runs are set up.
 - The `claude` command-line program is not signed in, so `greek-coach run` fails with "Not logged in" until `claude` is run once in a terminal and signed in.
 
-Next: phase 6 in `docs/prompts/` (the friend test).
+Next:
+- the maintainer reads the golden chapters (lessons 1–2) and the outline;
+- then the pilot batch of 3 chapters with `write-chapter`: the intro, lesson-03 and lesson-04, with token use and correction rate reported;
+- then the rest of the book, and the open course's 12 chapters (`content/open/open-book/`) before phase 6 (the friend test).
 
 ## Two kinds of people use this repo
 
@@ -113,6 +126,7 @@ The canonical copy of each skill is in `.agents/skills/<name>/SKILL.md`. `.claud
 - `rebuild-imported`: "turn lesson 5 into exercises". Rebuilds raw OCR exercises into private items. See `.agents/skills/rebuild-imported/SKILL.md`.
 - `plan`: "make me a plan", "when can I take the exam?". A week-by-week plan to a real session from `watch.json` and the real pace, with an honest verdict; re-planned at every check-in. See `.agents/skills/plan/SKILL.md`.
 - `mock-exam`: "give me a mock exam". A timed mock in the real format, then marks its writing and speaking. See `.agents/skills/mock-exam/SKILL.md`.
+- `write-chapter`: "write the chapters for lessons 10–15", "make the outline". The chapters read before each stage's practice: an outline, golden chapters, Sonnet drafts, Opus review. See `.agents/skills/write-chapter/SKILL.md` and `docs/LESSONS.md`.
 
 ## Commands
 

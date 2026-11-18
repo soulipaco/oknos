@@ -72,6 +72,13 @@ def main() -> int:
             print(f"{day}   (no practice)")
             continue
         db.set_clock(lambda d=day: datetime(d.year, d.month, d.day, 8, 0))
+        # Read first (phase 5c): a stage with an unread chapter gets read before the session.
+        action = curriculum.next_action(curriculum.progress(conn, catalog), "fresh", 0)
+        read = ""
+        if action["kind"] == "read":
+            ch = catalog.chapter(curriculum.active(catalog).id, action["stage"])
+            curriculum.mark_read(conn, curriculum.active(catalog).id, action["stage"], ch.version, finished=True)
+            read = f"  (read the chapter of {action['stage']})"
         s = session.build(conn, catalog, "en", args.minutes, rng=rng)
         seg = Counter(c["segment"] for c in s["cards"])
         keys = {c["item_key"] for c in s["cards"]}
@@ -113,7 +120,7 @@ def main() -> int:
         prog = curriculum.progress(conn, catalog)
         where = f"{prog.stages[prog.current]['id']} ({prog.stages[prog.current]['learned']}/{prog.stages[prog.current]['core']})" if prog else "-"
         print(f"{day}   {len(s['cards']):5}  {seg['review']:6} {seg['verbs']:5} {seg['task']:4} {seg['new']:3} | "
-              f"{len(wrong):5}  {back:>19} | {due_tomorrow:12} | {where}")
+              f"{len(wrong):5}  {back:>19} | {due_tomorrow:12} | {where}{read}")
         wrong_before = wrong
 
     end = start + timedelta(days=args.days - 1)

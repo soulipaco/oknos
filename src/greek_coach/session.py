@@ -141,10 +141,48 @@ def vocab_direction(state: scheduler.State | None, has_voice: bool, rng: random.
     return rng.choice(choices)
 
 
+_examples_cache: dict[int, dict[str, dict]] = {}
+
+
+def chapter_examples(catalog: Catalog) -> dict[str, dict]:
+    """Folded Greek word -> the first chapter sentence that uses it ({el, tr, en}), for learn cards."""
+    from greek_coach import greek
+
+    key = id(catalog)
+    if key not in _examples_cache:
+        out: dict[str, dict] = {}
+        for _, ch in catalog.chapters.values():
+            for line in ch.greek_lines():
+                for w in greek.words(line["el"]):
+                    out.setdefault(greek.fold(w), line)
+        if len(_examples_cache) > 4:
+            _examples_cache.clear()
+        _examples_cache[key] = out
+    return _examples_cache[key]
+
+
+def learn_part(item: VocabItem, lang: str, catalog: Catalog | None) -> dict:
+    """What a learn card shows before a word is tested for the first time (phase 5c): the word,
+    its meaning, and an example sentence (the item's own, else one from a chapter)."""
+    from greek_coach import greek
+
+    example = item.example.model_dump() if item.example else None
+    if example is None and catalog is not None:
+        index = chapter_examples(catalog)
+        words = [w for w in greek.words(item.lemma or item.el) if greek.fold(w) not in greek.ARTICLES]
+        for w in sorted(words, key=len, reverse=True):
+            if greek.fold(w) in index:
+                example = index[greek.fold(w)]
+                break
+    return {"el": item.el, "meaning": meaning(item, lang), "gender": item.gender, "pos": item.pos, "example": example}
+
+
 def vocab_card(item_key: str, pack: Pack, item: VocabItem, lang: str, direction: str, distract: Distractors,
-               rng: random.Random, state: scheduler.State | None) -> dict:
+               rng: random.Random, state: scheduler.State | None, catalog: Catalog | None = None) -> dict:
     card = {"item_key": item_key, "type": "vocab", "direction": direction, "lang": lang, "speak": item.el,
             "reps": state.reps if state else 0, "pos": item.pos}
+    if state is None:  # never seen: show it first, then test it (teach before testing)
+        card["learn"] = learn_part(item, lang, catalog)
     if direction in ("el_meaning", "audio_meaning"):
         right = meaning(item, lang)
         card["prompt"] = item.el if direction == "el_meaning" else None
@@ -278,6 +316,9 @@ def gate(conn: sqlite3.Connection, catalog: Catalog):
         level = learner_level()
         return (lambda k, i: at_level(i, level)), (lambda k: (0, 0))
     current = prog.current
+    # Teach before testing (phase 5c): an item seen before is always allowed (a review); a new one
+    # only once its stage's chapter has been read.
+    seen = set(scheduler.all_states(conn))
 
     def rank(k):
         idx = prog.assigned.get(k)
@@ -286,7 +327,7 @@ def gate(conn: sqlite3.Connection, catalog: Catalog):
             return (2, idx if idx is not None else 99)
         return (0, 0) if idx == current else (1, idx if idx is not None else 99)
 
-    return (lambda k, i: prog.unlocked(k)), rank
+    return (lambda k, i: prog.unlocked(k) and (k in seen or prog.introducible(k))), rank
 
 
 def plan_focus_tasks(today: date) -> set[str]:
@@ -486,7 +527,7 @@ def plan(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int,
         cards.append({**task_card(open_card[0], open_card[2], rng), "segment": "task"})
     for k in new_keys:
         pack, item = by_key[k]
-        cards.append({**vocab_card(k, pack, item, ui_lang, "el_meaning", distract, rng, None), "segment": "new"})
+        cards.append({**vocab_card(k, pack, item, ui_lang, "el_meaning", distract, rng, None, catalog), "segment": "new"})
     return cards
 
 
@@ -545,7 +586,7 @@ def build(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int
                 words = [(k, p, i) for k, (p, i) in catalog.items.items() if isinstance(i, VocabItem)]
                 distract, states = Distractors(words), scheduler.all_states(conn)
                 left = [{**vocab_card(c["item_key"], *catalog.items[c["item_key"]], ui_lang, c["direction"], distract, rng,
-                                      states.get(c["item_key"])), "segment": c["segment"]}
+                                      states.get(c["item_key"]), catalog), "segment": c["segment"]}
                         if c["type"] == "vocab" and c.get("lang") != ui_lang else c for c in left]
             if left:
                 with conn:
@@ -565,8 +606,15 @@ def build(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, minutes: int
             "total": len(cards), "done": 0}
 
 
+def _segment(item, state) -> str:
+    """The label of a chosen card: a new word, a review, or an exam-format task."""
+    if card_class(item) not in ("vocab", "form"):
+        return "task"
+    return "new" if state is None and isinstance(item, VocabItem) else "review"
+
+
 def practice(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, keys: list[str],
-             rng: random.Random | None = None) -> dict:
+             rng: random.Random | None = None, kind: str = "practice") -> dict:
     """A session of chosen items (the coach's "practise these", and for checking content)."""
     rng = rng or random.Random()
     states = scheduler.all_states(conn)
@@ -576,18 +624,19 @@ def practice(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, keys: lis
     for k in keys:
         pack, item = catalog.items[k]
         if isinstance(item, VocabItem):
-            card = vocab_card(k, pack, item, ui_lang, vocab_direction(states.get(k), False, rng), distract, rng, states.get(k))
+            card = vocab_card(k, pack, item, ui_lang, vocab_direction(states.get(k), False, rng), distract, rng, states.get(k),
+                              catalog)
         elif isinstance(item, FormItem):
             card = form_card(k, item, states.get(k), rng)
         else:
             card = task_card(k, item, rng)
-        cards.append({**card, "segment": "review" if card_class(item) in ("vocab", "form") else "task"})
+        cards.append({**card, "segment": _segment(item, states.get(k))})
     with conn:
         cur = conn.execute(
-            "INSERT INTO sessions(started_at, kind, planned_minutes, items_planned, plan_json) VALUES (?, 'practice', NULL, ?, ?)",
-            (db.now(), len(cards), json.dumps(cards, ensure_ascii=False)),
+            "INSERT INTO sessions(started_at, kind, planned_minutes, items_planned, plan_json) VALUES (?, ?, NULL, ?, ?)",
+            (db.now(), kind, len(cards), json.dumps(cards, ensure_ascii=False)),
         )
-    return {"session_id": cur.lastrowid, "kind": "practice", "minutes": None, "cards": cards, "resumed": False,
+    return {"session_id": cur.lastrowid, "kind": kind, "minutes": None, "cards": cards, "resumed": False,
             "total": len(cards), "done": 0}
 
 
@@ -819,12 +868,12 @@ def chosen(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, what: str, 
         budget -= cost
         if isinstance(item, VocabItem):
             card = vocab_card(k, pack, item, ui_lang, vocab_direction(states.get(k), has_voice, rng), distract, rng,
-                              states.get(k))
+                              states.get(k), catalog)
         elif isinstance(item, FormItem):
             card = form_card(k, item, states.get(k), rng)
         else:
             card = task_card(k, item, rng)
-        cards.append({**card, "segment": "review" if card_class(item) in ("vocab", "form") else "task"})
+        cards.append({**card, "segment": _segment(item, states.get(k))})
     with conn:
         cur = conn.execute(
             "INSERT INTO sessions(started_at, kind, planned_minutes, items_planned, plan_json) VALUES (?, 'practice', ?, ?, ?)",
@@ -920,3 +969,85 @@ def stage_detail(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage
     return {**st, "can_check": idx <= prog.current + 1 and bool(words or forms or tasks),
             "review_of": spec.review_of, "words_list": words, "forms_list": forms, "tasks_list": tasks,
             "extra_words": st["extra_from_pool"]}
+
+
+# ---------- chapters: read first, then practise (phase 5c) ----------
+
+def chapter_view(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage_id: str) -> dict | None:
+    """A stage's chapter as the reader shows it: the blocks, with words resolved to their item
+    (Greek, meaning, status), and where the learner is in it."""
+    from greek_coach import curriculum
+
+    prog = curriculum.progress(conn, catalog)
+    if prog is None or stage_id not in [s.id for s in prog.curriculum.stages]:
+        return None
+    ch = catalog.chapter(prog.curriculum.id, stage_id)
+    if ch is None:
+        return None
+    states = scheduler.all_states(conn)
+    idx = prog.curriculum.index(stage_id)
+    sections = []
+    for sec in ch.sections:
+        blocks = []
+        for b in sec.blocks:
+            out = b.model_dump()
+            if b.type == "words":
+                out["words"] = []
+                for k in b.items:
+                    entry = catalog.items.get(k)
+                    if entry is None or not isinstance(entry[1], VocabItem):
+                        continue
+                    i = entry[1]
+                    out["words"].append({"key": k, "el": i.el, "meaning": meaning(i, ui_lang), "pos": i.pos,
+                                         "gender": i.gender, "status": status_of(states.get(k)),
+                                         "example": i.example.model_dump() if i.example else None})
+            elif b.type == "check":
+                out["items"] = [k for k in b.items if k in catalog.items and catalog.items[k][1].type not in ("write", "speak")]
+            blocks.append(out)
+        sections.append({"kind": sec.kind, "title": sec.title.model_dump() if sec.title else None, "blocks": blocks})
+    read = curriculum.chapter_reads(conn, prog.curriculum.id).get(stage_id)
+    st = prog.stages[idx]
+    nxt = prog.stages[idx + 1] if idx + 1 < len(prog.stages) else None
+    return {"curriculum": prog.curriculum.id, "stage": stage_id, "stage_title": st["title"], "state": st["state"],
+            "id": ch.id, "version": ch.version, "level": ch.level, "title": ch.title.model_dump(), "minutes": ch.minutes,
+            "sections": sections, "share": st["share"], "learned": st["learned"], "core": st["core"],
+            "read": {"opened_at": read["opened_at"], "finished_at": read["finished_at"],
+                     "sections": json.loads(read["sections_json"])} if read else None,
+            "next": {"id": nxt["id"], "title": nxt["title"], "chapter": bool(nxt["chapter"])} if nxt else None}
+
+
+def chapter_checks(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage_id: str, keys: list[str]) -> dict:
+    """A short session of a chapter's "try it" items, of kind 'lesson': the answers train the
+    review schedule but never count as exam evidence (readiness.for_blueprint)."""
+    from greek_coach import curriculum
+
+    cur = curriculum.active(catalog)
+    ch = catalog.chapter(cur.id, stage_id) if cur else None
+    if ch is None:
+        raise ValueError("this stage has no chapter")
+    allowed = set(ch.check_keys())
+    keys = [k for k in keys if k in allowed and k in catalog.items] or [k for k in ch.check_keys() if k in catalog.items]
+    if not keys:
+        raise ValueError("this chapter has no check items")
+    return practice(conn, catalog, ui_lang, keys, kind="lesson")
+
+
+def chapter_practice(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage_id: str, minutes: int = 10,
+                     has_voice: bool = False) -> dict:
+    """"Done reading — practise this chapter": marks the chapter read, then a session of exactly
+    this stage's items (its words first: the ones the chapter taught)."""
+    from greek_coach import curriculum
+
+    cur = curriculum.active(catalog)
+    ch = catalog.chapter(cur.id, stage_id) if cur else None
+    if ch is None:
+        raise ValueError("this stage has no chapter")
+    curriculum.mark_read(conn, cur.id, stage_id, ch.version, finished=True)
+    out = chosen(conn, catalog, ui_lang, "all", minutes, stage=stage_id, has_voice=has_voice)
+    words = ch.word_keys()
+    order = {k: i for i, k in enumerate(words)}
+    out["cards"].sort(key=lambda c: (0 if c["item_key"] in order else 1, order.get(c["item_key"], 0)))
+    with conn:
+        conn.execute("UPDATE sessions SET plan_json=? WHERE id=?", (json.dumps(out["cards"], ensure_ascii=False), out["session_id"]))
+    out["stage"] = stage_id
+    return out

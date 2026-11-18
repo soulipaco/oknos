@@ -423,6 +423,55 @@ Phase 5, as built (`src/greek_coach/exams.py`, validated on load and exported by
 - Typed answers (vocab recall, `form`, `table_fill` cells): NFC, trim, collapse spaces, lower-case including final-sigma folding. If the answer matches only when accents are ignored, it is **correct, with a note "watch the accent: φαρμακείο"**. A leading article is optional unless the card asks for it.
 - `write` and `speak` are never auto-scored.
 
+### 4.8 Chapters: read first, then practise (phase 5c, as built: `src/greek_coach/chapters.py`, `docs/LESSONS.md`)
+
+**The problem it fixes.** The app tested what it never taught: a new word reached the learner first as a test card, and a stage began with exercises. The maintainer learns by reading. So each stage can now have a chapter to read before its practice.
+
+- **Where:** `<pack>/lessons/<stage id>.json`.
+  - A book's chapters are private.
+  - The open course's go in `content/open/open-book/` (CC BY-SA, original).
+  - Coach-written ones go in `learner/generated/`. A later content root replaces an earlier one for the same `(curriculum, stage)`.
+  - `lessons/outline.json` is the writer's plan, not a chapter.
+- **Format:** `id`, `curriculum`, `stage`, `level`, `title {tr,en}`, `minutes`, `version`, and `sections` in a fixed order:
+  1. `intro`
+  2. `warmup`
+  3. `text`
+  4. `comprehension`
+  5. `grammar`
+  6. `words`
+  7. `tips`
+  8. `try`
+
+  `intro`, `text`, `grammar`, `words` and `try` are required. A section holds typed blocks:
+  - `prose`;
+  - `dialogue`;
+  - `table`;
+  - `examples`;
+  - `words` (vocab item keys);
+  - `tip` (`tr_bridge`, `mistake`, `exam`);
+  - `check` (1–5 item keys, answered inline).
+
+  Every explanation has `tr` and `en`. Inline markup is only `**bold**`, `*italic*` and `[[Greek]]`, rendered by our own code; there is no Markdown dependency.
+- **Placement:** the items of a chapter's `words` and `check` blocks belong to its stage. In order of precedence this comes after a `stage:` tag and before `include` rules (§5.4).
+- **Validation** (`greek-coach validate`):
+  - the schema;
+  - the Greek lint;
+  - references that resolve and are of the right type;
+  - the curriculum and stage exist;
+  - reading time per level, as a note;
+  - Greek words in dialogues and examples that no stage up to this one teaches, as a note. Glosses, table cells and speakers count as taught.
+- **The reader** (`?lesson=<stage>`):
+  - one column, Greek in serif;
+  - dialogues line by line or "play all";
+  - tappable words and hidden translations;
+  - a progress line fed by the sections seen;
+  - a flag per section;
+  - inline checks drawn by the normal card renderers;
+  - at the end, "Done reading — practise this chapter". This marks the chapter read and starts a session of exactly this stage's items, its words first.
+- **Inline checks** are a session of kind `lesson`. They update the review schedule; their attempts are not exam evidence (§5.3).
+- **Data:** migration 0006 `chapter_reads(curriculum, stage, chapter_version, opened_at, finished_at, sections_json)`. The report (`report_version` 3) has `chapters`, and chapter flags (`item_key` `chapter:<curriculum>/<stage>#<section>`) appear in `open_flags` with the file and the section.
+- **Learn cards:** a vocab card for a word with no review state carries `learn`: the word, its meaning and an example, from the item or else the first chapter sentence that uses it. The app shows it ungraded before the test card. It is not shown in mocks or stage checks.
+
 ---
 
 ## 5. Learner data (`learner/`, gitignored)
@@ -507,6 +556,7 @@ This is the stable contract between app and agent. The coach writes only files (
 - **Which curriculum:** `profile.curriculum` if set; else a book curriculum whose pack is loaded; else the open one. `"curriculum": "off"` turns it off (an advanced learner); `profile.level` then limits the level.
 - **Where an item belongs:**
   1. a topic `stage:<id>` (what the coach writes);
+  1b. the words and checks of the stage's chapter (§4.8);
   2. the first stage whose `include` rules match it (`units`, `packs`, `items`, a verb's lemma, tense and person, `grammar` tags, `pos`, `types`, `levels`, `topics`);
   3. otherwise a level pool (unplaced A1 words open from lesson 3, A2 from lesson 13, B1 at the B1 stage);
   4. otherwise nowhere.
@@ -515,6 +565,7 @@ This is the stable contract between app and agent. The coach writes only files (
 - **Done:** a stage is done when 80% of its own words and verb forms are *learned* (answered right the last time), or when the learner passes its *check*. Pool words never count. A review stage counts the stages it reviews.
   - Done is recorded (`stage_checks`, migration 0005) and stays done. A later mistake brings the item back as a review, not the learner back a lesson.
   - The current stage is the first one not done.
+- **Teach before testing (phase 5c).** A stage with a chapter is *taught* once the chapter is finished or its check is passed. Until then, daily sessions and chosen practice show none of its new items. Items already seen (reviews) are never held back, and a stage without a chapter counts as taught. The home screen's first button is then "Read: <lesson>" (`next_action`).
 - **The check** ("I know this: test me"): up to 20 of the stage's items, 80% to pass, unanswered items counted as wrong. It is open for the current stage and the next one.
 - **The daily session** serves only items of reached stages. New words and forms come from the current stage first, then what is left of earlier stages, then pool extras. Exam tasks, writing and speaking appear only in the stages that hold them. Items placed nowhere never appear in a daily session. A plan of today's that holds cards of a stage not reached is stale: it is closed and today is planned afresh; the answers already given stay.
 - **The alphabet:** `content/open/open-alphabet` has 24 letters, 13 letter pairs and the accent, and 30 syllables, as vocab cards: the sound in Turkish and English, the letter's name, an example word. Letters with the same sound are told apart by their name, so there is never a second right answer.
@@ -621,6 +672,8 @@ Phase 4, as built:
 ## 7. A ten-minute daily session, screen by screen
 
 > **Changed in phase 5b (2026-11-17).** "One large button, nothing else competes" was wrong for this learner. They could not see their words or choose what to practise, and the session ignored the course order, so B1 forms came before the alphabet. The home screen now also shows the current lesson, and links to "Choose practice", "My words", "My verbs" and the course map; see §5.4 and §12 item 8. The daily button stays the main way in.
+
+> **Changed in phase 5c (2026-11-19).** The first button is the one next action. When the current lesson has a chapter not yet read, it is "Read: Lesson N (10 min)", and today's session is a quieter link under it. Otherwise it is today's session. The consistency grid and the standing panel are folded into "Your progress". New words get a learn card before their first test (§4.8).
 
 1. **Home.** One large button, *"Start today's 10 minutes"* / *"Bugünün 10 dakikası"*. Under it:
    - the coach's note from its last check-in, one or two lines (hidden if older than 14 days);

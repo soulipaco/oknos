@@ -18,6 +18,7 @@ from typing import Annotated, Any, Literal, Union
 
 from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, ValidationError, model_validator
 
+from greek_coach import chapters as chapters_mod
 from greek_coach import db, paths
 
 log = logging.getLogger("greek_coach.packs")
@@ -348,6 +349,7 @@ class Pack:
     path: Path
     items: dict[str, Item] = field(default_factory=dict)
     units: list[Unit] = field(default_factory=list)
+    chapters: dict[str, "chapters_mod.Chapter"] = field(default_factory=dict)  # stage id -> chapter
 
     @property
     def id(self) -> str:
@@ -360,6 +362,12 @@ class Catalog:
     items: dict[str, tuple[Pack, Item]] = field(default_factory=dict)  # item_key -> (pack, item)
     problems: list[str] = field(default_factory=list)
     skipped_later_types: int = 0
+    # (curriculum id, stage id) -> (pack, chapter); a later content root (the coach's) replaces an earlier one
+    chapters: dict[tuple[str, str], tuple[Pack, "chapters_mod.Chapter"]] = field(default_factory=dict)
+
+    def chapter(self, curriculum: str, stage: str) -> "chapters_mod.Chapter | None":
+        entry = self.chapters.get((curriculum, stage))
+        return entry[1] if entry else None
 
 
 def _nfc(value: Any) -> Any:
@@ -419,7 +427,8 @@ def load_pack(pack_dir: Path, expected_visibility: str | None = None) -> tuple[P
         except (json.JSONDecodeError, ValidationError) as e:
             problems.append(f"{name}/units.json could not be read ({e.__class__.__name__}); the course outline was skipped")
     item_files = sorted((pack_dir / "items").glob("*.json"))
-    if not item_files:
+    chapter_files = chapters_mod.chapter_files(pack_dir)
+    if not item_files and not chapter_files:
         problems.append(f"{name}: there are no item files in items/")
     for item_file in item_files:
         rel = f"{name}/items/{item_file.name}"
@@ -452,7 +461,41 @@ def load_pack(pack_dir: Path, expected_visibility: str | None = None) -> tuple[P
                 problems.append(f"{label}: the id '{item.id}' is used twice in this pack; the second one was skipped")
                 continue
             pack.items[item.id] = item
+    for chapter_file in chapter_files:
+        rel = f"{name}/lessons/{chapter_file.name}"
+        try:
+            chapter = chapters_mod.parse(_nfc(_read_json(chapter_file)))
+        except json.JSONDecodeError as e:
+            problems.append(f"{rel} is not valid JSON (line {e.lineno}): {e.msg}; the chapter was skipped")
+            continue
+        except ValidationError as e:
+            problems.append(f"{rel}: {chapters_mod.describe(e)}; the chapter was skipped")
+            continue
+        if chapter.stage != chapter_file.stem:
+            problems.append(f"{rel}: the file name must be the stage id ('{chapter.stage}.json'); the chapter was skipped")
+            continue
+        pack.chapters[chapter.stage] = chapter
     return pack, problems, later
+
+
+def chapter_ref_problems(catalog: "Catalog") -> list[str]:
+    """Words and check items a chapter names that no loaded pack has. They are left out when the
+    chapter is shown; `validate` reports them as problems."""
+    out = []
+    for (cur, stage), (pack, ch) in catalog.chapters.items():
+        for key in ch.word_keys():
+            entry = catalog.items.get(key)
+            if entry is None:
+                out.append(f"{pack.id}/lessons/{stage}.json: the word '{key}' is not a loaded item")
+            elif entry[1].type != "vocab":
+                out.append(f"{pack.id}/lessons/{stage}.json: '{key}' in a words block is a {entry[1].type} item, not a vocab item")
+        for key in ch.check_keys():
+            entry = catalog.items.get(key)
+            if entry is None:
+                out.append(f"{pack.id}/lessons/{stage}.json: the check item '{key}' is not a loaded item")
+            elif entry[1].type in ("write", "speak"):
+                out.append(f"{pack.id}/lessons/{stage}.json: '{key}' is a {entry[1].type} item; checks must be checkable by the app")
+    return out
 
 
 def load_all() -> Catalog:
@@ -474,6 +517,9 @@ def load_all() -> Catalog:
             catalog.packs.append(pack)
             for item_id, item in pack.items.items():
                 catalog.items[f"{pack.id}/{item_id}"] = (pack, item)
+            for chapter in pack.chapters.values():
+                catalog.chapters[(chapter.curriculum, chapter.stage)] = (pack, chapter)
+    catalog.problems.extend(chapter_ref_problems(catalog))
     for problem in catalog.problems:
         log.warning("content: %s", problem)
     return catalog
@@ -524,4 +570,5 @@ def json_schemas() -> dict[str, dict]:
         "item": TypeAdapter(Item).json_schema(),
         "items-file": TypeAdapter(list[Item]).json_schema(),
         "units": _units_adapter.json_schema(),
+        "chapter": chapters_mod.json_schema(),
     }

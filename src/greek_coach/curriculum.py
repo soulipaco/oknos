@@ -7,6 +7,7 @@ things it builds on.
 
 Where an item belongs, in order of precedence:
   1. a topic tag `stage:<stage id>` (what the coach writes);
+  1b. the words and check items of a stage's chapter (phase 5c: the chapter teaches them);
   2. the first stage whose `include` rules match it (unit tags, packs, items, verb lemma and
      tense, grammar tags, part of speech, type, level, topics);
   3. a level pool: an otherwise unplaced item of level A1 opens at the pool's `from_stage`;
@@ -18,6 +19,10 @@ schedule's job: learned items keep coming back at growing intervals in later sta
 with an interval of SECURE_DAYS or more is shown as "secure". A review
 stage is done when the stages it reviews are secure together. The current stage is the first
 one not done. A stage with no words or forms of its own is done as soon as it is reached.
+
+Teach before testing (phase 5c): a stage that has a chapter is "taught" once the learner has
+finished reading it. Until then its new items stay out of daily sessions; reviews never wait.
+A stage without a chapter counts as taught.
 """
 
 from __future__ import annotations
@@ -209,6 +214,12 @@ def placed(cur: Curriculum, catalog: Catalog) -> tuple[dict[str, int | None], se
     pooled: set[str] = set()
     ids = {s.id: i for i, s in enumerate(cur.stages)}
     pools = {p.level: ids[p.from_stage] for p in cur.pools}
+    by_chapter: dict[str, int] = {}
+    for i, s in enumerate(cur.stages):
+        ch = catalog.chapter(cur.id, s.id)
+        if ch is not None:
+            for k in ch.word_keys() + ch.check_keys():
+                by_chapter.setdefault(k, i)
     out: dict[str, int | None] = {}
     for k, (pack, item) in catalog.items.items():
         idx = None
@@ -216,6 +227,8 @@ def placed(cur: Curriculum, catalog: Catalog) -> tuple[dict[str, int | None], se
             if t.startswith("stage:") and t[6:] in ids:
                 idx = ids[t[6:]]
                 break
+        if idx is None:
+            idx = by_chapter.get(k)
         if idx is None:
             for i, s in enumerate(cur.stages):
                 if any(r.matches(k, pack.id, item) for r in s.include):
@@ -244,6 +257,7 @@ class Progress:
     stages: list[dict] = field(default_factory=list)
     assigned: dict[str, int | None] = field(default_factory=dict)
     pooled: set[str] = field(default_factory=set)
+    taught: set[int] = field(default_factory=set)   # stage indexes whose chapter is read, or that have none
 
     def unlocked(self, key: str) -> bool:
         idx = self.assigned.get(key)
@@ -251,6 +265,38 @@ class Progress:
 
     def stage_of(self, key: str) -> int | None:
         return self.assigned.get(key)
+
+    def introducible(self, key: str) -> bool:
+        """May a daily session show this item for the first time? Its stage is reached and taught."""
+        idx = self.assigned.get(key)
+        return idx is not None and idx <= self.current and idx in self.taught
+
+
+def chapter_reads(conn: sqlite3.Connection, cur_id: str) -> dict[str, sqlite3.Row]:
+    try:
+        return {r["stage"]: r for r in conn.execute("SELECT * FROM chapter_reads WHERE curriculum=?", (cur_id,))}
+    except sqlite3.OperationalError:
+        return {}
+
+
+def mark_read(conn: sqlite3.Connection, cur_id: str, stage: str, version: int, section: int | None = None,
+              finished: bool = False) -> dict:
+    """Record that a chapter was opened, a section of it seen, or the whole of it finished."""
+    row = conn.execute("SELECT * FROM chapter_reads WHERE curriculum=? AND stage=?", (cur_id, stage)).fetchone()
+    seen = json.loads(row["sections_json"]) if row else []
+    if section is not None and section not in seen:
+        seen.append(section)
+    with conn:
+        if row is None:
+            conn.execute("INSERT INTO chapter_reads(curriculum, stage, chapter_version, opened_at, finished_at, sections_json) "
+                         "VALUES (?, ?, ?, ?, ?, ?)", (cur_id, stage, version, db.now(), db.now() if finished else None,
+                                                       json.dumps(seen)))
+        else:
+            conn.execute("UPDATE chapter_reads SET sections_json=?, chapter_version=?, "
+                         "finished_at=COALESCE(finished_at, ?) WHERE curriculum=? AND stage=?",
+                         (json.dumps(seen), version, db.now() if finished else None, cur_id, stage))
+    row = conn.execute("SELECT * FROM chapter_reads WHERE curriculum=? AND stage=?", (cur_id, stage)).fetchone()
+    return {"stage": stage, "opened_at": row["opened_at"], "finished_at": row["finished_at"], "sections": seen}
 
 
 def passed_checks(conn: sqlite3.Connection, cur_id: str) -> set[str]:
@@ -272,6 +318,8 @@ def progress(conn: sqlite3.Connection, catalog: Catalog, cur: Curriculum | None 
     states = scheduler.all_states(conn)
     seen = {r[0] for r in conn.execute("SELECT DISTINCT item_key FROM attempts")}
     passed = passed_checks(conn, cur.id)
+    reads = chapter_reads(conn, cur.id)
+    taught: set[int] = set()
     per: list[dict] = [{"core": [], "other": 0, "pool": 0} for _ in cur.stages]
     for k, idx in assigned.items():
         if idx is None:
@@ -307,7 +355,16 @@ def progress(conn: sqlite3.Connection, catalog: Catalog, cur: Curriculum | None 
                 passed.add(s.id)
             except sqlite3.OperationalError:
                 pass
-        stages.append({"id": s.id, "order": i, "title": s.title.model_dump(), "theme": s.theme.model_dump() if s.theme else None,
+        ch = catalog.chapter(cur.id, s.id)
+        read = reads.get(s.id)
+        # a passed "test me" check also counts: the learner showed they know it without reading
+        if ch is None or (read is not None and read["finished_at"]) or s.id in passed:
+            taught.add(i)
+        chapter = None if ch is None else {
+            "minutes": ch.minutes, "title": ch.title.model_dump(), "read": bool(read and read["finished_at"]),
+            "opened": read is not None, "sections": len(ch.sections),
+            "sections_seen": len(json.loads(read["sections_json"])) if read else 0}
+        stages.append({"id": s.id, "order": i, "chapter": chapter, "title": s.title.model_dump(), "theme": s.theme.model_dump() if s.theme else None,
                        "level": s.level, "unit": s.unit, "review": bool(s.review_of),
                        "words": sum(1 for k in per[i]["core"] if isinstance(catalog.items[k][1], VocabItem)),
                        "forms": sum(1 for k in per[i]["core"] if isinstance(catalog.items[k][1], FormItem)),
@@ -321,7 +378,7 @@ def progress(conn: sqlite3.Connection, catalog: Catalog, cur: Curriculum | None 
     for st in stages:
         st["state"] = "done" if st["order"] < current else "current" if st["order"] == current else "locked"
     # a stage reached but not yet mastered stays "current"; earlier stages may be mastered ahead of time
-    return Progress(curriculum=cur, current=current, stages=stages, assigned=assigned, pooled=pooled)
+    return Progress(curriculum=cur, current=current, stages=stages, assigned=assigned, pooled=pooled, taught=taught)
 
 
 def summary(conn: sqlite3.Connection, catalog: Catalog) -> dict | None:
@@ -332,6 +389,24 @@ def summary(conn: sqlite3.Connection, catalog: Catalog) -> dict | None:
     return {"curriculum": p.curriculum.id, "title": p.curriculum.title.model_dump(), "current": cur,
             "stages_done": p.current, "stages_total": len(p.stages), "stages": p.stages,
             "secure_days": SECURE_DAYS, "mastery": MASTERY}
+
+
+def next_action(p: "Progress | None", today_state: str, due_reviews: int) -> dict:
+    """The one thing the home screen offers first (phase 5c).
+
+    read: the current stage has a chapter not read yet (reading comes before anything new);
+    daily: otherwise, the daily session (reviews and the current stage's new items).
+    `then` is the quieter second option."""
+    if p is not None:
+        st = p.stages[p.current]
+        if st["chapter"] and not st["chapter"]["read"]:
+            return {"kind": "read", "stage": st["id"], "title": st["title"], "minutes": st["chapter"]["minutes"],
+                    "opened": st["chapter"]["opened"],
+                    "then": "daily" if due_reviews and today_state != "done" else None}
+        if st["chapter"]:
+            return {"kind": "daily", "stage": st["id"], "title": st["title"], "share": st["share"],
+                    "then": "practise_stage"}
+    return {"kind": "daily", "stage": None, "then": None}
 
 
 # ---------- stage checks: "I know this lesson, test me" ----------
