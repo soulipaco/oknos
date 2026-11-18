@@ -27,6 +27,8 @@ What works now:
   - A word never seen gets an ungraded **learn card** (meaning, and an example from a chapter) before its first test.
   - The chapter's `words` block places those words in its stage.
   - The home screen's first button is the one next action: read the current chapter, or today's session. Light, dark and system themes.
+  - Navigation: every screen has its own URL (`?book`, `?lesson=<stage>`, `?stage=<id>`, `?practise`, `?words`, `?verbs`, `?exam`, `?writing`, `?submission=<id>`, `?mock=<run id>`), so the browser's back and forward work. An app bar on every screen links Home · Book · Practise · Words · Verbs · Exam.
+  - The **Book** screen (formerly the course map) is the table of contents. Any chapter can be read, also ahead of the lesson, and the reader links to the previous and next chapters.
   - Book chapters (private): `content/private/greek-helper/lessons/`. There is `outline.json` (26 stages, a draft awaiting approval), and golden chapters for `lesson-01` and `lesson-02`, reviewed (`lessons/review/`).
   - Writing more is the `write-chapter` skill: Sonnet drafts, Opus reviews.
 - **Exam blueprints** (tracked facts): `exams/a2ltr.json` and `exams/b1-keg.json`.
@@ -57,7 +59,7 @@ What works now:
   - After 3 or more days away, the first session back is lighter.
   - The home screen shows:
     - the current lesson and its progress;
-    - links to **Choose practice**, **My words**, **My verbs** and the **course map**;
+    - the app bar (Home, Book, Practise, Words, Verbs, Exam) instead of the old link tiles;
     - the coach's note, ready feedback, the next exam dates, failed scheduled runs;
     - one readiness bar per exam unit.
 - **Exam mode** (the exam screen, `?exam`).

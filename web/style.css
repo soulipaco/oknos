@@ -545,7 +545,7 @@ details.verb summary .el { font-size: 19px; }
 
 /* ---------- phase 5c: the chapter reader ---------- */
 .reader-top { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 8px 0; }
-.reader-progress { position: sticky; top: 56px; z-index: 5; height: 3px; background: var(--line); border-radius: 3px; overflow: hidden; margin-bottom: 8px; }
+.reader-progress { position: sticky; top: 0; z-index: 5; height: 4px; background: var(--line); border-radius: 3px; overflow: hidden; margin: 0 0 8px; }
 .reader-progress > span { display: block; height: 100%; background: var(--accent); transition: width .3s ease; }
 .reader { max-width: 38rem; margin: 0 auto; width: 100%; font-size: 18px; line-height: 1.7; }
 .reader .kicker { color: var(--muted); font-size: 14px; letter-spacing: .03em; text-transform: uppercase; margin: 28px 0 6px; }
@@ -598,4 +598,51 @@ details.verb summary .el { font-size: 19px; }
   .ch-line { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .ch-line .who { padding: 0; font-size: 13px; }
   .ch-table th, .ch-table td { padding: 6px 8px; }
+}
+
+/* ---------- navigation: app bar, crumbs, the book index, the chapter pager ---------- */
+.home-link { color: inherit; text-decoration: none; }
+.app-nav {
+  display: flex; gap: 4px; margin: 10px 0 4px; padding: 4px; overflow-x: auto; scrollbar-width: none;
+  border: 1px solid var(--line); border-radius: 999px; background: var(--surface);
+}
+.app-nav::-webkit-scrollbar { display: none; }
+.app-nav a {
+  flex: 0 0 auto; padding: 6px 14px; border-radius: 999px; color: var(--muted); text-decoration: none; font-size: 15px; white-space: nowrap;
+}
+.app-nav a:hover { color: var(--ink); background: var(--accent-soft); }
+.app-nav a.on { background: var(--accent); color: var(--accent-ink); font-weight: 600; }
+.crumb { margin: 10px 0 0; font-size: 15px; }
+.crumb a, .ch-pager a { color: var(--accent); text-decoration: none; }
+.crumb a:hover, .ch-pager a:hover { text-decoration: underline; }
+.book-list { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 8px; }
+.summary li.book-row, .book-row {
+  display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 12px; align-items: center;
+  padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface);
+}
+.book-row.current { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
+.book-num { width: 30px; height: 30px; border-radius: 999px; display: grid; place-items: center; background: var(--paper); color: var(--muted); font-size: 14px; font-weight: 600; }
+.book-row.done .book-num { background: var(--good-soft); color: var(--good); }
+.book-row.current .book-num { background: var(--accent); color: var(--accent-ink); }
+.book-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.book-title { font-weight: 600; color: var(--ink); text-decoration: none; }
+.book-title:hover { text-decoration: underline; }
+.book-chapter { font-size: 15px; }
+.book-read {
+  padding: 8px 14px; border-radius: 999px; background: var(--accent); color: var(--accent-ink); text-decoration: none;
+  font-size: 14px; font-weight: 600; white-space: nowrap;
+}
+.book-read.done { background: var(--good-soft); color: var(--ink); }
+.book-read.none { background: none; padding: 0; font-weight: 400; color: var(--muted); }
+.mark-chip.state-current { border-color: var(--accent); color: var(--accent); }
+.ch-pager { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: start; margin-top: 18px; font-size: 15px; text-align: left; }
+.ch-pager .pager-index { text-align: center; }
+.ch-pager .pager-next { text-align: right; }
+@media (max-width: 520px) {
+  .app-nav { flex-wrap: wrap; justify-content: center; border-radius: 16px; overflow: visible; }
+  .app-nav a { padding: 5px 11px; font-size: 14px; }
+  .summary li.book-row, .book-row { grid-template-columns: 28px minmax(0, 1fr); }
+  .book-row .book-read { grid-column: 2; justify-self: start; }
+  .ch-pager { grid-template-columns: 1fr 1fr; }
+  .ch-pager .pager-index { grid-column: 1 / -1; grid-row: 2; }
 }

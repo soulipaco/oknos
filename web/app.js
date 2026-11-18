@@ -274,6 +274,88 @@ function greekInput(onEnter, label, { multiline = false } = {}) {
   return { input, board };
 }
 
+// ---------- navigation: one URL per screen, an app bar on every screen (phase 5c) ----------
+
+// Screen name -> renderer. The URL is ?<name> or ?<name>=<arg>; the home screen is the bare path.
+const SCREENS = {
+  home: () => renderHome(),
+  book: () => renderBook(),
+  stage: (id) => renderStage(id),
+  lesson: (id) => renderChapter(id),
+  practise: () => renderPractise(),
+  words: () => renderWords(),
+  verbs: () => renderVerbs(),
+  exam: () => renderExam(),
+  writing: () => renderWriting(),
+  submission: (id) => renderSubmission(Number(id)),
+  mock: (id) => renderMockRun(Number(id)),
+};
+const SCREEN_ALIASES = { map: "book" };  // older links
+
+function urlFor(name, arg = null) {
+  if (name === "home") return location.pathname;
+  return `?${name}${arg !== null && arg !== undefined ? `=${encodeURIComponent(arg)}` : ""}`;
+}
+
+function parseRoute() {
+  for (const [k, v] of new URLSearchParams(location.search)) {
+    const name = SCREEN_ALIASES[k] || k;
+    if (name in SCREENS && name !== "home") return { name, arg: v || null };
+  }
+  return { name: "home", arg: null };
+}
+
+function go(name, arg = null, { replace = false } = {}) {
+  // Open a screen and give it its own entry in the browser history.
+  const url = urlFor(name, arg);
+  const here = name === "home" ? location.search === "" : location.search === url;
+  if (replace) history.replaceState({ name, arg }, "", url);
+  else if (!here) history.pushState({ name, arg }, "", url);
+  state.route = { name, arg };
+  return SCREENS[name](arg);
+}
+
+function rerender() {
+  // The same screen again (after a language change, say).
+  const r = state.route || parseRoute();
+  return SCREENS[r.name](r.arg);
+}
+
+window.addEventListener("popstate", () => {
+  if (state.mock?.timer) return rerender();  // a timed section: the back button does not leave it
+  state.route = parseRoute();
+  rerender();
+});
+
+const NAV_ITEMS = [["home", "nav_home"], ["book", "nav_book"], ["practise", "nav_practise_short"],
+                   ["words", "nav_words_short"], ["verbs", "nav_verbs_short"], ["exam", "nav_exam"]];
+
+function navLink(name, label, arg = null, cls = "") {
+  // A real link (it opens in a new tab with a middle click), routed in place on a normal click.
+  return h("a", { href: urlFor(name, arg), class: cls, onclick: (e) => {
+    if (e.ctrlKey || e.metaKey || e.shiftKey || e.button === 1) return;
+    e.preventDefault();
+    go(name, arg);
+  } }, label);
+}
+
+function appBar(active) {
+  // The top of every screen outside a session: the name, theme and language, and the main sections.
+  return [
+    h("header", { class: "topbar" }, navLink("home", wordmark(), null, "home-link"), topActions()),
+    h("nav", { class: "app-nav", "aria-label": t("nav_label") },
+      NAV_ITEMS.map(([name, key]) => {
+        const a = navLink(name, t(key), null, name === active ? "on" : "");
+        if (name === active) a.setAttribute("aria-current", "page");
+        return a;
+      })),
+  ];
+}
+
+function crumb(name, label, arg = null) {
+  return h("p", { class: "crumb" }, navLink(name, `← ${label}`, arg));
+}
+
 // ---------- home ----------
 
 function greeting() {
@@ -291,7 +373,7 @@ function langSwitch() {
           if (state.lang === code) return;
           await loadStrings(code);
           api("/api/profile", { ui_lang: code }).catch(() => {});
-          renderHome();
+          rerender();
         },
       }, label)));
 }
@@ -392,7 +474,7 @@ function coachPanel(coach) {
   }
   if (coach.feedback_ready?.length) {
     const first = coach.feedback_ready[0];
-    blocks.push(h("button", { class: "secondary feedback-ready", type: "button", onclick: () => renderSubmission(first.id) },
+    blocks.push(h("button", { class: "secondary feedback-ready", type: "button", onclick: () => go("submission", first.id) },
       t(first.kind === "speaking" ? "feedback_ready_speaking" : "feedback_ready_writing")));
   }
   for (const e of coach.dates?.entries || []) {
@@ -407,7 +489,7 @@ function coachPanel(coach) {
   }
   const links = [h("span", { class: "muted small" }, t("tutor_line"))];
   if (coach.submissions_total) {
-    links.push(h("button", { class: "link-button small", type: "button", onclick: renderWriting }, t("your_writing")));
+    links.push(navLink("writing", t("your_writing"), null, "link-button small"));
   }
   blocks.push(h("p", { class: "coach-links" }, ...links));
   return h("section", { class: "panel coach" }, ...blocks);
@@ -422,7 +504,6 @@ function resetScreens() {
   state.inline = null;
   if ("speechSynthesis" in window) speechSynthesis.cancel();
   closePopover();
-  if (location.search.includes("lesson=")) history.replaceState(null, "", location.pathname);
 }
 
 function topActions() {
@@ -447,7 +528,7 @@ async function renderHome() {
   let primary;
   const second = [];
   if (na.kind === "read") {
-    primary = h("button", { class: "start", type: "button", id: "start", onclick: () => renderChapter(na.stage) },
+    primary = h("button", { class: "start", type: "button", id: "start", onclick: () => go("lesson", na.stage) },
       na.opened ? t("na_continue_read", { name: tr(na.title) }) : t("na_read", { name: tr(na.title), minutes: na.minutes }));
     second.push(h("p", { class: "muted small" }, t("na_read_line")));
     if (na.then === "daily") second.push(h("button", { class: "link-button", type: "button", onclick: daily }, `${t("na_or_daily")}: ${startLabel}`));
@@ -457,7 +538,7 @@ async function renderHome() {
   }
   const progressPanels = first ? [] : [consistencyGrid(stats), standing(stats)];
   app.replaceChildren(
-    h("header", { class: "topbar" }, wordmark(), topActions()),
+    ...appBar("home"),
     h("section", { class: "home" },
       h("h1", { class: "greeting", lang: "el" }, hello),
       h("p", { class: "greeting-tr" }, `${helloT} · ${t("tagline")}`),
@@ -465,7 +546,6 @@ async function renderHome() {
       primary, ...second,
     ),
     stagePanel(state.home.curriculum),
-    homeNav(),
     coachPanel(state.home.coach),
     examPanel(state.home),
     progressPanels.length ? h("details", { class: "panel progress-fold" },
@@ -1198,7 +1278,7 @@ function nextCard() {
 
 async function finishSession() {
   const s = state.session;
-  if (!s) return renderHome();
+  if (!s) return go("home");
   state.session = null;
   state.card = null;
   closePopover();
@@ -1233,7 +1313,7 @@ function renderSummary(sum) {
     ? [h("h2", {}, t("summary_missed")),
        h("ul", {}, sum.missed.map(w => h("li", {}, greekText(w.el, { cls: "el" }), speakButton(w.el, true), h("span", { class: "muted" }, w.meaning))))]
     : [];
-  const done = h("button", { class: "primary", type: "button", onclick: renderHome }, t("done"));
+  const done = h("button", { class: "primary", type: "button", onclick: () => go("home") }, t("done"));
   app.replaceChildren(
     h("header", { class: "topbar" }, wordmark()),
     h("section", { class: "summary" },
@@ -1280,11 +1360,11 @@ async function renderWriting() {
   let res;
   try { res = await api("/api/submissions"); } catch { return showError(); }
   const rows = res.submissions.map(s => h("li", {},
-    h("button", { class: "sub-row", type: "button", onclick: () => renderSubmission(s.id) },
+    h("button", { class: "sub-row", type: "button", onclick: () => go("submission", s.id) },
       h("span", { class: "muted small" }, `${fmtDate(s.ts)} · ${t(s.kind === "speaking" ? "kind_speaking" : "kind_writing")}`),
       h("span", { class: "el", lang: "el" }, (s.prompt?.el || "").slice(0, 90) + ((s.prompt?.el || "").length > 90 ? "…" : "")),
       h("span", { class: `badge ${s.status}` }, s.status === "marked" ? t("status_marked") : t("status_waiting")))));
-  app.replaceChildren(topbarBack(renderHome),
+  app.replaceChildren(...appBar(null),
     h("section", { class: "summary writing" }, h("h1", {}, t("your_writing")),
       rows.length ? h("ul", { class: "sub-list" }, rows) : h("p", { class: "muted" }, t("no_writing"))));
 }
@@ -1333,7 +1413,7 @@ async function renderSubmission(id) {
     blocks.push(h("div", { class: "actions" }, h("button", { class: "secondary", type: "button",
       onclick: () => startSession("practice", fb.exercises) }, t("practise_these", { n: fb.exercises.length }))));
   }
-  app.replaceChildren(topbarBack(renderWriting), h("section", { class: "summary writing" }, ...blocks));
+  app.replaceChildren(...appBar(null), crumb("writing", t("your_writing")), h("section", { class: "summary writing" }, ...blocks));
 }
 
 
@@ -1343,13 +1423,6 @@ const STATUS_KEYS = { new: "st_new", learning: "st_learning", secure: "st_secure
 
 function stageName(st) {
   return tr(st.title) || st.id;
-}
-
-function homeNav() {
-  const b = (label, fn) => h("button", { class: "nav-tile", type: "button", onclick: fn }, label);
-  return h("nav", { class: "home-nav", "aria-label": t("nav_label") },
-    b(t("nav_practise"), renderPractise), b(t("nav_words"), renderWords),
-    b(t("nav_verbs"), renderVerbs), b(t("nav_map"), renderMap));
 }
 
 function progressBar(done, total, cls = "") {
@@ -1364,37 +1437,50 @@ function stagePanel(cur) {
   return h("section", { class: "panel stage-panel" },
     h("div", { class: "panel-head" }, h("h2", {}, t("stage_now")),
       h("span", { class: "muted small" }, t("stage_count", { n: cur.stages_done + 1, total: cur.stages_total }))),
-    h("button", { class: "stage-card", type: "button", onclick: () => renderStage(st.id) },
+    h("button", { class: "stage-card", type: "button", onclick: () => go("stage", st.id) },
       h("strong", {}, stageName(st)), st.theme ? h("span", { class: "muted" }, tr(st.theme)) : null,
       progressBar(st.learned, st.core),
       h("span", { class: "small muted" }, st.core ? t("stage_secure", { n: st.learned, total: st.core }) : t("stage_nothing"))),
     st.chapter ? h("p", { class: "chapter-line" },
       st.chapter.read
         ? [h("span", { class: "chip map-done" }, `✓ ${t("ch_was_read")}`), " ",
-           h("button", { class: "link-button small", type: "button", onclick: () => renderChapter(st.id) }, t("ch_reread"))]
-        : h("button", { class: "secondary", type: "button", onclick: () => renderChapter(st.id) }, t("ch_read_min", { minutes: st.chapter.minutes }))) : null,
+           h("button", { class: "link-button small", type: "button", onclick: () => go("lesson", st.id) }, t("ch_reread"))]
+        : h("button", { class: "secondary", type: "button", onclick: () => go("lesson", st.id) }, t("ch_read_min", { minutes: st.chapter.minutes }))) : null,
     cur.next ? h("p", { class: "small muted" }, t("stage_next", { name: stageName(cur.next) })) : null);
 }
 
-async function renderMap() {
+async function renderBook() {
+  // The book's table of contents: every lesson, its chapter (readable at any time, also ahead),
+  // and how far its practice has got.
   closePopover();
   let cur;
   try { cur = await api("/api/curriculum"); } catch { return showError(); }
-  if (!cur.curriculum) return renderHome();
-  const rows = cur.stages.map(st => h("li", {},
-    h("button", { class: `map-row ${st.state}`, type: "button", onclick: () => renderStage(st.id) },
-      h("span", { class: "map-icon", "aria-hidden": "true" }, st.state === "done" ? "✓" : st.state === "current" ? "●" : "○"),
-      h("span", { class: "map-text" }, h("strong", {}, stageName(st)), st.theme ? h("span", { class: "muted small" }, tr(st.theme)) : null,
+  if (!cur.curriculum) return go("home", null, { replace: true });
+  const rows = cur.stages.map((st, i) => {
+    const marks = h("span", { class: "map-marks small" },
+      st.core && st.state !== "locked" ? h("span", { class: "mark-chip" }, `${Math.round(st.share * 100)}%`) : null,
+      st.passed_check ? h("span", { class: "mark-chip on" }, `✓ ${t("map_checked")}`) : null,
+      h("span", { class: `mark-chip state-${st.state}` }, t(`map_${st.state}`)));
+    const read = st.chapter
+      ? navLink("lesson", st.chapter.read ? `✓ ${t("ch_reread_short")}` : `📖 ${t("ch_read_short", { minutes: st.chapter.minutes })}`,
+          st.id, `book-read ${st.chapter.read ? "done" : ""}`)
+      : h("span", { class: "book-read none small muted" }, t("ch_not_yet"));
+    return h("li", { class: `book-row ${st.state}` },
+      h("span", { class: "book-num", "aria-hidden": "true" }, st.state === "done" ? "✓" : String(i)),
+      h("div", { class: "book-text" },
+        navLink("stage", stageName(st), st.id, "book-title"),
+        st.chapter ? h("span", { class: "book-chapter" }, tr(st.chapter.title)) : null,
+        st.theme ? h("span", { class: "muted small" }, tr(st.theme)) : null,
         st.state !== "locked" && st.core ? progressBar(st.learned, st.core, "thin") : null,
-        h("span", { class: "map-marks small" },
-          st.chapter ? h("span", { class: `mark-chip ${st.chapter.read ? "on" : ""}` }, `📖 ${t(st.chapter.read ? "map_read" : "map_to_read")}`) : null,
-          st.core && st.state !== "locked" ? h("span", { class: "mark-chip" }, `${Math.round(st.share * 100)}%`) : null,
-          st.passed_check ? h("span", { class: "mark-chip on" }, `✓ ${t("map_checked")}`) : null)),
-      h("span", { class: "muted small" }, t(`map_${st.state}`)))));
-  app.replaceChildren(topbarBack(renderHome),
-    h("section", { class: "summary" }, h("h1", {}, tr(cur.title)),
-      h("p", { class: "muted" }, t("map_line", { pct: Math.round(cur.mastery * 100) })),
-      h("ol", { class: "map" }, rows)));
+        marks),
+      read);
+  });
+  const withChapter = cur.stages.filter(st => st.chapter).length;
+  app.replaceChildren(...appBar("book"),
+    h("section", { class: "summary book" }, h("h1", {}, tr(cur.title)),
+      h("p", { class: "muted" }, t("book_line", { n: withChapter, total: cur.stages.length })),
+      h("p", { class: "muted small" }, t("map_line", { pct: Math.round(cur.mastery * 100) })),
+      h("ol", { class: "book-list" }, rows)));
 }
 
 function statusChip(status) {
@@ -1413,8 +1499,8 @@ async function renderStage(id) {
     h("span", { class: "el", lang: "el" }, lemma), " ",
     h("span", { class: "muted small" }, `${fs.filter(f => f.status === "secure" || f.status === "known").length}/${fs.length}`)));
   const actions = [];
-  if (st.chapter && st.state !== "locked") {
-    actions.push(h("button", { class: st.chapter.read ? "secondary" : "primary", type: "button", onclick: () => renderChapter(st.id) },
+  if (st.chapter) {
+    actions.push(h("button", { class: st.chapter.read ? "secondary" : "primary", type: "button", onclick: () => go("lesson", st.id) },
       st.chapter.read ? t("ch_reread") : t("ch_read_min", { minutes: st.chapter.minutes })));
   }
   if (st.state !== "locked") {
@@ -1423,7 +1509,7 @@ async function renderStage(id) {
   if (st.can_check && st.state !== "done") {
     actions.push(h("button", { class: "secondary", type: "button", onclick: () => startCheck(st.id) }, t("stage_check")));
   }
-  app.replaceChildren(topbarBack(renderMap),
+  app.replaceChildren(...appBar("book"), crumb("book", t("nav_book")),
     h("section", { class: "summary" },
       h("h1", {}, stageName(st)), st.theme ? h("p", { class: "muted" }, tr(st.theme)) : null,
       h("p", {}, h("span", { class: `chip map-${st.state}` }, t(`map_${st.state}`)), " ",
@@ -1458,7 +1544,7 @@ async function renderPractise() {
   const stageSelect = h("select", { class: "stage-select", "aria-label": t("pr_stage"), onchange: (e) => { pick.stage = e.target.value; } },
     h("option", { value: "" }, t("pr_all_reached")), reached.map(st => h("option", { value: st.id }, stageName(st))));
   const go = h("button", { class: "start", type: "button", onclick: () => startSession("choose", [], { what: pick.what, stage: pick.stage || null, minutes: pick.minutes }) }, t("pr_start"));
-  app.replaceChildren(topbarBack(renderHome),
+  app.replaceChildren(...appBar("practise"),
     h("section", { class: "summary" }, h("h1", {}, t("pr_title")),
       h("h2", {}, t("pr_what")), chips(PRACTISE_CHOICES.map(v => [v, t(`pr_${v}`)]), "what", t("pr_what")),
       cur.curriculum ? [h("h2", {}, t("pr_stage")), stageSelect] : null,
@@ -1507,7 +1593,7 @@ async function renderWords() {
   const stageSel = data.stages.length ? h("select", { class: "stage-select", "aria-label": t("pr_stage"), onchange: (e) => { f.stage = e.target.value; paint(); } },
     h("option", { value: "" }, t("w_every_stage")), data.stages.map(st => h("option", { value: st.id }, tr(st.title)))) : null;
   const upcoming = h("label", { class: "small muted convert" }, h("input", { type: "checkbox", onchange: (e) => { f.upcoming = e.target.checked; paint(); } }), t("w_upcoming"));
-  app.replaceChildren(topbarBack(renderHome),
+  app.replaceChildren(...appBar("words"),
     h("section", { class: "summary" }, h("h1", {}, t("nav_words")), search, statusRow, stageSel, upcoming, count,
       h("div", { class: "actions sticky-actions" }, practise), list, more));
   paint();
@@ -1538,7 +1624,7 @@ async function renderVerbs() {
         h("span", { class: "muted small" }, v.open ? t("v_known", { n: v.known, total: v.forms.length }) : t("w_locked"))),
       h("div", { class: "table-wrap" }, table), practise);
   });
-  app.replaceChildren(topbarBack(renderHome),
+  app.replaceChildren(...appBar("verbs"),
     h("section", { class: "summary" }, h("h1", {}, t("nav_verbs")), h("p", { class: "muted small" }, t("v_line")), rows));
 }
 
@@ -1647,10 +1733,9 @@ async function renderChapter(stageId) {
   resetScreens();
   let ch;
   try { ch = await api(`/api/chapters/${encodeURIComponent(stageId)}`); } catch {
-    app.replaceChildren(topbarBack(renderHome), h("div", { class: "center-note" }, t("ch_none")));
+    app.replaceChildren(...appBar("book"), h("div", { class: "center-note" }, t("ch_none")));
     return;
   }
-  history.replaceState(null, "", `?lesson=${encodeURIComponent(stageId)}`);
   const seen = new Set(ch.read?.sections || []);
   const bar = h("span", { style: `width:${Math.round((seen.size / ch.sections.length) * 100)}%` });
   const ctx = { stage: stageId };
@@ -1662,19 +1747,29 @@ async function renderChapter(stageId) {
       e.preventDefault();
       document.getElementById(`sec-${i}`)?.scrollIntoView({ behavior: "smooth" });
     } }, sec.title ? tr(sec.title) : t(`ch_kind_${sec.kind}`))))));
-  const practise = h("button", { class: "start", type: "button", onclick: () => startChapterPractice(stageId) }, t("ch_done_practise"));
+  const markRead = async () => {
+    try { await api(`/api/chapters/${encodeURIComponent(stageId)}/progress`, { finished: true }); } catch { /* fine */ }
+  };
+  // A lesson not reached yet can be read ahead; its practice opens when the learner gets there.
+  const ahead = ch.state === "locked";
   const end = h("section", { class: "ch-end" },
-    h("p", { class: "muted" }, t("ch_end_line")),
-    practise,
-    h("div", { class: "actions" }, h("button", { class: "link-button", type: "button", onclick: async () => {
-      try { await api(`/api/chapters/${encodeURIComponent(stageId)}/progress`, { finished: true }); } catch { /* fine */ }
-      renderHome();
+    h("p", { class: "muted" }, t(ahead ? "ch_end_ahead" : "ch_end_line")),
+    ahead
+      ? h("button", { class: "start", type: "button", onclick: async () => { await markRead(); go(ch.next_chapter ? "lesson" : "book", ch.next_chapter?.id ?? null); } },
+          t(ch.next_chapter ? "ch_done_next" : "ch_done_book"))
+      : h("button", { class: "start", type: "button", onclick: () => startChapterPractice(stageId) }, t("ch_done_practise")),
+    ahead ? null : h("div", { class: "actions" }, h("button", { class: "link-button", type: "button", onclick: async () => {
+      await markRead();
+      go("home");
     } }, t("ch_later"))),
-    ch.next ? h("p", { class: "muted small" }, t("ch_next", { name: tr(ch.next.title) })) : null);
+    h("nav", { class: "ch-pager", "aria-label": t("nav_book") },
+      ch.prev_chapter ? navLink("lesson", `← ${tr(ch.prev_chapter.title)}`, ch.prev_chapter.id, "pager-prev") : h("span", {}),
+      navLink("book", t("nav_book"), null, "pager-index"),
+      ch.next_chapter ? navLink("lesson", `${tr(ch.next_chapter.title)} →`, ch.next_chapter.id, "pager-next") : h("span", {})));
   app.replaceChildren(
-    h("header", { class: "topbar reader-top" }, wordmark(),
-      h("div", { class: "top-actions" }, themeSwitch(), h("button", { class: "link-button", type: "button", onclick: renderHome }, t("back")))),
+    ...appBar("book"),
     h("div", { class: "reader-progress", role: "progressbar", "aria-valuemin": 0, "aria-valuemax": 100 }, bar),
+    crumb("book", t("nav_book")),
     h("article", { class: "reader" },
       h("p", { class: "kicker" }, `${tr(ch.stage_title)} · ${t("ch_meta", { level: ch.level, minutes: ch.minutes })}`),
       h("h1", { class: "ch-title" }, tr(ch.title)),
@@ -1703,7 +1798,7 @@ async function startChapterPractice(stageId) {
   try {
     const s = await api(`/api/chapters/${encodeURIComponent(stageId)}/practice`, { has_voice: !!greekVoice });
     if (!s.cards.length) {
-      app.replaceChildren(topbarBack(renderHome), h("div", { class: "center-note" }, t("nothing")));
+      app.replaceChildren(...appBar(null), h("div", { class: "center-note" }, t("nothing")));
       return;
     }
     state.session = { ...s, index: 0 };
@@ -1811,7 +1906,7 @@ function examPanel(home) {
     ...ids.map(id => h("button", { type: "button", "aria-pressed": String(id === homeExam), onclick: () => {
       homeExam = id;
       try { localStorage.setItem("gc-exam", id); } catch { /* fine */ }
-      renderHome();
+      rerender();
     } }, brief[id].short)));
   const rows = r.units.map(u => h("div", { class: "area runit" },
     h("span", { class: "area-name" }, unitName(u.unit)), readinessBar(u),
@@ -1820,7 +1915,7 @@ function examPanel(home) {
     h("div", { class: "panel-head" }, h("h2", {}, t("exam_today")), sw),
     h("p", { class: "weakest" }, verdictText({ state: r.verdict, ...Object.fromEntries(["below", "unclear", "no_evidence"].map(st => [st, r.units.filter(u => u.state === st).map(u => u.unit)])) }, r.short)),
     h("div", { class: "areas" }, rows),
-    h("p", {}, h("button", { class: "link-button", type: "button", onclick: renderExam }, t("exam_open"))));
+    h("p", {}, navLink("exam", t("exam_open"), null, "link-button")));
 }
 
 function techniqueBlock(u) {
@@ -1886,7 +1981,7 @@ function mocksSection(data) {
   const past = runs.filter(r => r.status !== "running");
   if (past.length) {
     blocks.push(h("h3", {}, t("mock_results")), h("ul", { class: "facts" }, past.map(r => h("li", {},
-      h("button", { class: "link-button", type: "button", onclick: () => renderMockRun(r.run_id) },
+      h("button", { class: "link-button", type: "button", onclick: () => go("mock", r.run_id) },
         `${data.exams.find(e => e.id === r.blueprint)?.short || r.blueprint} · ${fmtDate(r.started_at)}: ${num(r.total)}/${num(r.total_out_of)}`
         + (r.would_pass === true ? ` · ${t("mock_pass")}` : r.would_pass === false ? ` · ${t("mock_fail")}` : ""))))));
   }
@@ -1933,7 +2028,7 @@ async function renderExam() {
       e.sessions_note ? h("p", { class: "muted small" }, tr(e.sessions_note)) : null,
       h("p", { class: "muted small" }, t("checked_on", { date: fmtDate(e.checked_at) })));
   });
-  app.replaceChildren(topbarBack(renderHome),
+  app.replaceChildren(...appBar("exam"),
     h("section", { class: "summary" }, h("h1", {}, t("exam_title")), h("p", { class: "muted" }, t("exam_honest"))),
     ...examCards, planSection(data), mocksSection(data),
     h("p", { class: "muted small" }, t("exam_legal")));
@@ -1973,7 +2068,7 @@ async function renderMockRun(runId) {
     ? t(run.verdict_note === "unscored_parts_decide" ? "mock_total_undecided" : "mock_total_partial",
         { points: num(run.total), out_of: num(run.total_out_of) })
     : t(run.would_pass ? "mock_total_pass" : "mock_total_fail", { points: num(run.total), out_of: num(run.total_out_of) });
-  app.replaceChildren(topbarBack(renderExam),
+  app.replaceChildren(...appBar("exam"), crumb("exam", t("nav_exam")),
     h("section", { class: "summary" }, h("h1", {}, `${exam?.short || run.blueprint} · ${t("mock")}`),
       h("p", { class: "muted" }, t(run.status === "running" ? "mock_run_line" : "mock_run_done")),
       h("ol", { class: "mock-sections" }, rows),
@@ -2167,12 +2262,10 @@ document.addEventListener("keydown", (e) => {
   const params = new URLSearchParams(location.search);
   const practice = params.get("practice");
   if (practice) return startSession("practice", practice.split(",").filter(Boolean));
-  // ?submission=12 opens a piece of writing with its feedback (the coach links to it).
-  if (/^\d+$/.test(params.get("submission") || "")) return renderSubmission(Number(params.get("submission")));
-  // ?exam opens the exam screen; ?mock=<run id> a mock run (the coach links to them).
-  if (params.has("exam")) return renderExam();
-  if (/^\d+$/.test(params.get("mock") || "")) return renderMockRun(Number(params.get("mock")));
-  // ?lesson=<stage id> opens that stage's chapter.
-  if (params.get("lesson")) return renderChapter(params.get("lesson"));
-  renderHome();
+  // Every other screen has its own address: ?book, ?lesson=<stage>, ?stage=<id>, ?practise,
+  // ?words, ?verbs, ?exam, ?writing, ?submission=<id>, ?mock=<run id> (the coach links to them).
+  const r = parseRoute();
+  history.replaceState(r, "", location.search ? urlFor(r.name, r.arg) : location.pathname);
+  state.route = r;
+  rerender();
 })();

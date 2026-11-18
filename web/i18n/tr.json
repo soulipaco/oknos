@@ -345,7 +345,7 @@
   "ch_end_line": "Şimdiki çalışma tam olarak bu bölümde öğrendiklerini kapsar. Yeni kelimeler sana sorulmadan önce gösterilir.",
   "ch_flag": "Burada bir hata var",
   "ch_flag_thanks": "Teşekkürler — koç bakacak.",
-  "ch_contents": "İçindekiler",
+  "ch_contents": "Başlıklar",
   "ch_meta": "{level} · yaklaşık {minutes} dk",
   "ch_next": "Sıradaki: {name}",
   "ch_none": "Bu dersin henüz bir bölümü yok.",
@@ -360,5 +360,18 @@
   "map_read": "okundu",
   "map_to_read": "okunacak",
   "map_checked": "test geçildi",
-  "stage_read_first": "Önce bölümü oku: bu dersin yeni kelimeleri, bölümü okuduktan sonra açılır."
+  "stage_read_first": "Önce bölümü oku: bu dersin yeni kelimeleri, bölümü okuduktan sonra açılır.",
+  "nav_home": "Ana sayfa",
+  "nav_book": "Kitap",
+  "nav_practise_short": "Pratik",
+  "nav_exam": "Sınav",
+  "book_line": "Her ders okunacak bir bölümle başlar: şimdiye kadar {total} dersten {n} tanesinin bölümü yazıldı. Her bölümü, ileridekileri de okuyabilirsin; dersin pratiği o derse gelince açılır.",
+  "ch_read_short": "Oku ({minutes} dk)",
+  "ch_reread_short": "Yeniden oku",
+  "ch_not_yet": "bölüm henüz yok",
+  "ch_end_ahead": "İleriyi okuyorsun: bu ders henüz açılmadı. Okuduğun kaydedildi; derse gelince kelimeleri oturumlarına gelecek.",
+  "ch_done_next": "Okudum — sonraki bölüm",
+  "ch_done_book": "Okudum — kitaba dön",
+  "nav_words_short": "Kelimeler",
+  "nav_verbs_short": "Fiiller"
 }

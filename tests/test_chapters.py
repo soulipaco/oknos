@@ -183,6 +183,7 @@ def test_reading_and_practising_a_chapter_through_the_api(book, client):
     words = next(b for s in ch["sections"] for b in s["blocks"] if b["type"] == "words")["words"]
     assert {w["key"] for w in words} >= {"test-book/tb-word"} and words[0]["status"] == "new"
     assert ch["read"]["opened_at"] and ch["read"]["finished_at"] is None
+    assert ch["prev_chapter"] is None and ch["next_chapter"] is None  # the only chapter: no neighbours
     assert client.post(f"/api/chapters/{STAGE}/progress", json={"section": 1}).json()["sections"] == [1]
     assert client.post(f"/api/chapters/{STAGE}/progress", json={"section": 99}).status_code == 422
 

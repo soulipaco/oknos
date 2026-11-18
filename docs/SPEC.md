@@ -470,6 +470,12 @@ Phase 5, as built (`src/greek_coach/exams.py`, validated on load and exported by
   - at the end, "Done reading — practise this chapter". This marks the chapter read and starts a session of exactly this stage's items, its words first.
 - **Inline checks** are a session of kind `lesson`. They update the review schedule; their attempts are not exam evidence (§5.3).
 - **Data:** migration 0006 `chapter_reads(curriculum, stage, chapter_version, opened_at, finished_at, sections_json)`. The report (`report_version` 3) has `chapters`, and chapter flags (`item_key` `chapter:<curriculum>/<stage>#<section>`) appear in `open_flags` with the file and the section.
+- **Navigation** (changed 2026-11-19, after the maintainer could not reach a chapter from the UI):
+  - Every screen has a URL (`?book`, `?lesson=<stage>`, `?stage=<id>`, `?practise`, `?words`, `?verbs`, `?exam`, `?writing`, `?submission=<id>`, `?mock=<run id>`; the old `?map` still works) and its own history entry, so back and forward work.
+  - The app bar on every screen outside a session links Home, Book, Practise, Words, Verbs and Exam.
+  - The **Book** is the table of contents. Every stage has its chapter's title and a Read button, and any chapter can be read ahead.
+  - A chapter read ahead ends with "Done reading — next chapter" instead of practice, which opens when the stage is reached.
+  - The reader links to the previous and next chapters.
 - **Learn cards:** a vocab card for a word with no review state carries `learn`: the word, its meaning and an example, from the item or else the first chapter sentence that uses it. The app shows it ungraded before the test card. It is not shown in mocks or stage checks.
 
 ---

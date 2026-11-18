@@ -1008,7 +1008,16 @@ def chapter_view(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage
     read = curriculum.chapter_reads(conn, prog.curriculum.id).get(stage_id)
     st = prog.stages[idx]
     nxt = prog.stages[idx + 1] if idx + 1 < len(prog.stages) else None
-    return {"curriculum": prog.curriculum.id, "stage": stage_id, "stage_title": st["title"], "state": st["state"],
+    # the neighbouring chapters, for "previous / next chapter" (stages without one are skipped)
+    with_chapter = [(i, s) for i, s in enumerate(prog.curriculum.stages) if catalog.chapter(prog.curriculum.id, s.id)]
+
+    def brief(i, s):
+        c = catalog.chapter(prog.curriculum.id, s.id)
+        return {"id": s.id, "title": c.title.model_dump(), "stage_title": s.title.model_dump()}
+
+    prev_ch = next((brief(i, s) for i, s in reversed(with_chapter) if i < idx), None)
+    next_ch = next((brief(i, s) for i, s in with_chapter if i > idx), None)
+    return {"prev_chapter": prev_ch, "next_chapter": next_ch,"curriculum": prog.curriculum.id, "stage": stage_id, "stage_title": st["title"], "state": st["state"],
             "id": ch.id, "version": ch.version, "level": ch.level, "title": ch.title.model_dump(), "minutes": ch.minutes,
             "sections": sections, "share": st["share"], "learned": st["learned"], "core": st["core"],
             "read": {"opened_at": read["opened_at"], "finished_at": read["finished_at"],
