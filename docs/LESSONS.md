@@ -59,7 +59,7 @@ The JSON Schema is `schemas/chapter.schema.json` (written by `uv run greek-coach
 |---|---|---|
 | `prose` | `tr`, `en` | Paragraphs split on newlines. Inline: `**bold**`, `*italic*`, `[[Greek]]` (tappable, and it counts as glossed). Nothing else. |
 | `dialogue` | `setting {tr,en}?`, `lines [{who, el, tr, en}]` | At least two lines. `who` is a Greek name or role. Each line can be played; all of them with "Play all". |
-| `table` | `caption {tr,en}?`, `head []`, `rows [[]]`, `note {tr,en}?` | Each row has as many cells as `head`. Cells are Greek, or short labels. |
+| `table` | `caption {tr,en}?`, `head []`, `rows [[]]`, `note {tr,en}?` | Each row has as many cells as `head`. A cell is Greek (a string) or an explanation `{tr, en}`. Never write "Turkish / English" in one string: the reader shows only the UI language's half of a `{tr, en}` cell. |
 | `examples` | `items [{el, tr, en, note {tr,en}?}]` | Short sentences that show the grammar point. |
 | `words` | `items ["<pack>/<id>"]` | Vocab items. **They belong to this stage**: listing a word here places it in the stage, after an explicit `stage:` tag. |
 | `tip` | `kind`, `tr`, `en`, `exam_task?` | `tr_bridge` (what Turkish shares), `mistake` (a typical error), `exam` (how it appears in the exam; name the blueprint task). |
@@ -102,7 +102,7 @@ The JSON Schema is `schemas/chapter.schema.json` (written by `uv run greek-coach
    - A2: 12–15 minutes.
    - B1: up to 20 minutes.
 
-   `minutes` states it, and `validate` checks the estimate.
+   `minutes` states it, and `validate` checks the estimate. The validator accepts 6–16 minutes at A1, so cut words, not examples: a good example is worth more than a sentence of explanation.
 4. **Size.**
    - **Words:** 15–25 per stage.
    - **Items:** 10–20 practice items in `items/chapter-<stage>.json`, besides the words.

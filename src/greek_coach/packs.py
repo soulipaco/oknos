@@ -93,6 +93,9 @@ class VocabItem(BaseItem):
     en: str | None = None
     tr: str | None = None
     example: Example | None = None
+    # What the browser voice reads instead of `el`: a letter card says the letter's name and an
+    # example word ("σίγμα, σούπα"), because a voice reading "Σ σ ς" names three letters.
+    say: str | None = None
 
     @model_validator(mode="after")
     def _needs_a_meaning(self) -> "VocabItem":

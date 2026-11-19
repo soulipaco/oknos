@@ -10,7 +10,7 @@ Greek Coach is an open-source, local-first Greek learning app that is installed,
 
 ## Current state
 
-Phases 1–5 and 5b are built and committed. Phase 5b is a curriculum the learner progresses through, plus screens to see and choose what to practise. Phase 5c (the book: a chapter to read before each stage's practice) is built, with the outline and two golden chapters; the drafted chapters wait for the maintainer's yes. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.
+Phases 1–5 and 5b are built and committed. Phase 5b is a curriculum the learner progresses through, plus screens to see and choose what to practise. Phase 5c (the book: a chapter to read before each stage's practice) is built. The outline and the golden chapters (lessons 1–2) are approved, and the pilot batch (the intro and lessons 3–4: Sonnet drafts, Opus review) is in. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.
 
 What works now:
 - **Stack:** uv, FastAPI and SQLite (`learner/greek-coach.db`, migrations `0001`–`0006`), with a no-build front end in `web/`. UI in English and Turkish.
@@ -29,7 +29,12 @@ What works now:
   - The home screen's first button is the one next action: read the current chapter, or today's session. Light, dark and system themes.
   - Navigation: every screen has its own URL (`?book`, `?lesson=<stage>`, `?stage=<id>`, `?practise`, `?words`, `?verbs`, `?exam`, `?writing`, `?submission=<id>`, `?mock=<run id>`), so the browser's back and forward work. An app bar on every screen links Home · Book · Practise · Words · Verbs · Exam.
   - The **Book** screen (formerly the course map) is the table of contents. Any chapter can be read, also ahead of the lesson, and the reader links to the previous and next chapters.
-  - Book chapters (private): `content/private/greek-helper/lessons/`. There is `outline.json` (26 stages, a draft awaiting approval), and golden chapters for `lesson-01` and `lesson-02`, reviewed (`lessons/review/`).
+  - Book chapters (private): `content/private/greek-helper/lessons/`. `outline.json` (26 stages) is approved. Chapters exist for the intro and lessons 1–4, each reviewed with a note in `lessons/review/`.
+  - **Pilot batch, 2026-11-19:**
+    - Sonnet drafting took about 150–190k tokens per chapter, and the Opus review about 140–165k.
+    - The review made 4–5 Greek fixes and 5–7 teaching fixes per chapter, against 2–3 Greek fixes in each golden chapter (written by Opus).
+    - The errors were in rules and descriptions (final -ν, the vocative, how phone numbers are read, the stress of σπίτι) more than in spelling. The review step is essential.
+  - A table cell can be Greek or `{tr, en}`.
   - Writing more is the `write-chapter` skill: Sonnet drafts, Opus reviews.
 - **Exam blueprints** (tracked facts): `exams/a2ltr.json` and `exams/b1-keg.json`.
   - Each has units, tasks, points, minutes, the real pass rule, exam technique (en/tr), official sources and the pages `watch` checks.
@@ -38,14 +43,14 @@ What works now:
 - **Content.**
   - Five open packs (CC BY-SA 4.0):
     - `open-shared-words-tr`;
-    - `open-verbs-a1a2`: 253 verb forms, built by `scripts/build_verb_pack.py`;
+    - `open-verbs-a1a2`: 253 verb forms, built by `scripts/build_verb_pack.py`. The standard modern form comes first, not an older variant such as θα ιδεί or ηύρες. Each sentence has a Turkish translation (`scripts/verb_pack_tr.json`);
     - `open-everyday-a1a2`: 23 exam-format tasks, plus 2 writing prompts and 2 speaking cards;
     - `open-b1-bridge`: 15 B1 items, including `table_fill`, 150-word writing, speaking and passive/conditional forms;
-    - `open-alphabet`: 67 reading cards (letters, letter pairs, the accent, syllables), with sounds in Turkish and English.
+    - `open-alphabet`: 67 reading cards (letters, letter pairs, the accent, syllables), with sounds in Turkish and English. A letter card's voice reads its `say` text, the letter's name and an example word ("σίγμα. σούπα"), not "Σ σ ς".
 
     Every exam-format item is tagged with a blueprint task (`exam_task`), and `validate` checks the tags.
   - Private material (gitignored, under `content/private/`):
-    - the maintainer's earlier material in `greek-helper`: 2,648 words, 25 units, and 1,697 raw exercise prompts for the coach to rebuild;
+    - the maintainer's earlier material in `greek-helper`: 2,648 words, 25 units, and 1,697 raw exercise prompts for the coach to rebuild. All but one of the words now have a Turkish meaning. Those for A2/B1 were drafted by Sonnet on 2026-11-19, unverified; they are in `overlays/tr.json`, so they survive a re-import;
     - the official A2-LTR papers, keys and MP3s for 2022, 2024 and 2026A in `official-a2ltr/papers/`.
   - Coach-written packs go in `learner/generated/` (gitignored).
 - **Exercise types:**
@@ -81,7 +86,8 @@ What works now:
   The shared rules are in `docs/COACHING.md`. Skills: `coach`, `capture`, `mark`, `tutor`, `daily-prep`, `watch`, `rebuild-imported`, `plan`, `mock-exam` and `write-chapter`, plus `setup` and `import-material`.
 - **CLI:** `start`, `stop`, `health`, `report`, `validate` (packs, chapters, Greek lint, exam tags, learner folder), `reload`, `import`, `raw`, `schema`, `shortcut`, `transcribe`, `run` and `schedule`.
 - **Audio and speech.**
-  - Browser voice for words.
+  - Browser voice for words. A vocab item's optional `say` replaces `el` as what is read.
+- **Tap a word:** the lookup finds exact words, accent-free matches, verb forms and stems. It also finds the phrase a word belongs to (λένε → με λένε …) and about 50 function words (articles, pronouns, prepositions, particles: `src/greek_coach/function_words.json`). A meaning shown in the other UI language because the item has none in this one is tagged EN or TR.
   - Listening passages pre-generated with `scripts/make_audio.py`: edge-tts with the learner's yes, for content outside `learner/` only.
   - Speaking recordings transcribed locally with faster-whisper `small` (the `speech` group).
 - **Tests:** `uv run pytest`, which includes a scripted two weeks of use, the phase 4 contracts (`tests/test_coach.py`) exam mode (`tests/test_exam.py`) and chapters (`tests/test_chapters.py`). `scripts/simulate.py` also prints the readiness per unit.
@@ -89,7 +95,7 @@ What works now:
 Known limits:
 - The open content alone gives too few A2/B1 exam-format items for readiness to show numbers in the first weeks. The coach's items and mocks are what make them appear.
 - The open verb pack has about 2 forms per tense per verb, so the verb tables are sparse.
-- The book's lessons have few words linked to them (407 of 2,648). The rest open by level. A chapter fixes this for its stage, since its words block places them. Only lessons 1–2 have chapters so far; the intro and lessons 3–24 still teach nothing before they test.
+- The book's lessons have few words linked to them (407 of 2,648). The rest open by level. A chapter fixes this for its stage, since its words block places them. The intro and lessons 1–4 have chapters; lessons 5–24 and the B1 stage still teach nothing before they test.
 - A heavy review day can still leave no room for new words in the daily session. After reading, "Practise this chapter" is the way to the new words.
 - The A2-LTR history pack waits until the plan targets an A2-LTR session with an announced date; none is announced. The syllabus PDF needs the learner's yes.
 - Neither exam publishes its speaking points split, and A2-LTR publishes no writing criteria. Those scores are always labelled estimates.
@@ -102,9 +108,9 @@ Not yet done on the maintainer's machine:
 - The `claude` command-line program is not signed in, so `greek-coach run` fails with "Not logged in" until `claude` is run once in a terminal and signed in.
 
 Next:
-- the maintainer reads the golden chapters (lessons 1–2) and the outline;
-- then the pilot batch of 3 chapters with `write-chapter`: the intro, lesson-03 and lesson-04, with token use and correction rate reported;
-- then the rest of the book, and the open course's 12 chapters (`content/open/open-book/`) before phase 6 (the friend test).
+- the maintainer reads the pilot chapters (the intro and lessons 3–4);
+- then the rest of the book with `write-chapter`, a few stages at a time (lessons 5–24, then b1-bridge);
+- then the open course's 12 chapters (`content/open/open-book/`), before phase 6 (the friend test).
 
 ## Two kinds of people use this repo
 

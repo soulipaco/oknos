@@ -245,7 +245,8 @@ def lint_chapter_files(pack_dir: Path) -> tuple[list[str], list[str]]:
             continue  # the loader already reports this
         label = f"{pack_dir.name}/lessons/{f.name}"
         for path, text in _chapter_greek(raw):
-            p, nt = check_text(text)
+            # a letter pair alone in a table cell (τσ, μπ) is a fragment, not a word ending in σ
+            p, nt = check_text(text, fragment=len(text.strip()) <= 3 and " " not in text.strip())
             problems += [f"{label} {path}: {x}" for x in p]
             notes += [f"{label} {path}: {x}" for x in nt]
     return problems, notes

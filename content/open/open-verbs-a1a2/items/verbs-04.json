@@ -23,7 +23,7 @@
    "1": [
     "κλείνουν",
     "θα κλείσουν",
-    "κλείσαν",
+    "έκλεισαν",
     "κλείνεις"
    ]
   },
@@ -32,7 +32,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day the children close the door."
+   "en": "Every day the children close the door.",
+   "tr": "Her gün çocuklar kapıyı kapatıyor."
   },
   "explain": {
    "en": "κλείνω (close), present, αυτοί: κλείνουν",
@@ -72,7 +73,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day we bring sweets."
+   "en": "Every day we bring sweets.",
+   "tr": "Her gün tatlı getiriyoruz."
   },
   "explain": {
    "en": "φέρνω (bring), present, εμείς: φέρνουμε",
@@ -111,7 +113,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day I bring sweets."
+   "en": "Every day I bring sweets.",
+   "tr": "Her gün tatlı getiriyorum."
   },
   "explain": {
    "en": "φέρνω (bring), present, εγώ: φέρνω",
@@ -150,7 +153,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you (pl.) send a message."
+   "en": "Every day you (pl.) send a message.",
+   "tr": "Her gün bir mesaj gönderiyorsunuz."
   },
   "explain": {
    "en": "στέλνω (send), present, εσείς: στέλνετε",
@@ -189,7 +193,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you send a message."
+   "en": "Every day you send a message.",
+   "tr": "Her gün bir mesaj gönderiyorsun."
   },
   "explain": {
    "en": "στέλνω (send), present, εσύ: στέλνεις",
@@ -229,7 +234,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day the children go up to the third floor."
+   "en": "Every day the children go up to the third floor.",
+   "tr": "Her gün çocuklar üçüncü kata çıkıyor."
   },
   "explain": {
    "en": "ανεβαίνω (go up), present, αυτοί: ανεβαίνουν",
@@ -268,7 +274,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day Nikos goes up to the third floor."
+   "en": "Every day Nikos goes up to the third floor.",
+   "tr": "Her gün Nikos üçüncü kata çıkıyor."
   },
   "explain": {
    "en": "ανεβαίνω (go up), present, αυτός: ανεβαίνει",
@@ -307,7 +314,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday Nikos opened the window."
+   "en": "Yesterday Nikos opened the window.",
+   "tr": "Dün Nikos pencereyi açtı."
   },
   "explain": {
    "en": "ανοίγω (open), aorist, αυτός: άνοιξε",
@@ -348,7 +356,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday the children opened the window."
+   "en": "Yesterday the children opened the window.",
+   "tr": "Dün çocuklar pencereyi açtı."
   },
   "explain": {
    "en": "ανοίγω (open), aorist, αυτοί: άνοιξαν",
@@ -387,7 +396,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday we closed the door."
+   "en": "Yesterday we closed the door.",
+   "tr": "Dün kapıyı kapattık."
   },
   "explain": {
    "en": "κλείνω (close), aorist, εμείς: κλείσαμε",
@@ -426,7 +436,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday I closed the door."
+   "en": "Yesterday I closed the door.",
+   "tr": "Dün kapıyı kapattım."
   },
   "explain": {
    "en": "κλείνω (close), aorist, εγώ: έκλεισα",
@@ -466,7 +477,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you (pl.) brought sweets."
+   "en": "Yesterday you (pl.) brought sweets.",
+   "tr": "Dün tatlı getirdiniz."
   },
   "explain": {
    "en": "φέρνω (bring), aorist, εσείς: φέρατε",
@@ -506,7 +518,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you brought sweets."
+   "en": "Yesterday you brought sweets.",
+   "tr": "Dün tatlı getirdin."
   },
   "explain": {
    "en": "φέρνω (bring), aorist, εσύ: έφερες",
@@ -529,14 +542,14 @@
   },
   "answer": {
    "1": [
-    "στείλαν",
     "έστειλαν",
-    "στείλανε"
+    "στείλανε",
+    "στείλαν"
    ]
   },
   "options": {
    "1": [
-    "στείλαν",
+    "έστειλαν",
     "θα στείλουν",
     "στέλνουν",
     "έστειλα"
@@ -548,11 +561,12 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday the children sent a message."
+   "en": "Yesterday the children sent a message.",
+   "tr": "Dün çocuklar bir mesaj gönderdi."
   },
   "explain": {
-   "en": "στέλνω (send), aorist, αυτοί: στείλαν",
-   "tr": "στέλνω (göndermek), geçmiş zaman (aorist), αυτοί: στείλαν"
+   "en": "στέλνω (send), aorist, αυτοί: έστειλαν",
+   "tr": "στέλνω (göndermek), geçmiş zaman (aorist), αυτοί: έστειλαν"
   }
  },
  {
@@ -588,7 +602,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday Nikos sent a message."
+   "en": "Yesterday Nikos sent a message.",
+   "tr": "Dün Nikos bir mesaj gönderdi."
   },
   "explain": {
    "en": "στέλνω (send), aorist, αυτός: έστειλε",
@@ -628,7 +643,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday I went up to the third floor."
+   "en": "Yesterday I went up to the third floor.",
+   "tr": "Dün üçüncü kata çıktım."
   },
   "explain": {
    "en": "ανεβαίνω (go up), aorist, εγώ: ανέβηκα",
@@ -668,7 +684,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday we went up to the third floor."
+   "en": "Yesterday we went up to the third floor.",
+   "tr": "Dün üçüncü kata çıktık."
   },
   "explain": {
    "en": "ανεβαίνω (go up), aorist, εμείς: ανεβήκαμε",
@@ -708,7 +725,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow we will open the window."
+   "en": "Tomorrow we will open the window.",
+   "tr": "Yarın pencereyi açacağız."
   },
   "explain": {
    "en": "ανοίγω (open), future, εμείς: θα ανοίξουμε",
@@ -747,7 +765,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow I will open the window."
+   "en": "Tomorrow I will open the window.",
+   "tr": "Yarın pencereyi açacağım."
   },
   "explain": {
    "en": "ανοίγω (open), future, εγώ: θα ανοίξω",
@@ -786,7 +805,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you (pl.) will close the door."
+   "en": "Tomorrow you (pl.) will close the door.",
+   "tr": "Yarın kapıyı kapatacaksınız."
   },
   "explain": {
    "en": "κλείνω (close), future, εσείς: θα κλείσετε",
@@ -825,7 +845,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you will close the door."
+   "en": "Tomorrow you will close the door.",
+   "tr": "Yarın kapıyı kapatacaksın."
   },
   "explain": {
    "en": "κλείνω (close), future, εσύ: θα κλείσεις",
@@ -855,7 +876,7 @@
   "options": {
    "1": [
     "θα φέρουν",
-    "φέραν",
+    "έφεραν",
     "φέρνουν",
     "θα φέρω"
    ]
@@ -866,7 +887,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow the children will bring sweets."
+   "en": "Tomorrow the children will bring sweets.",
+   "tr": "Yarın çocuklar tatlı getirecek."
   },
   "explain": {
    "en": "φέρνω (bring), future, αυτοί: θα φέρουν",
@@ -906,7 +928,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow Nikos will bring sweets."
+   "en": "Tomorrow Nikos will bring sweets.",
+   "tr": "Yarın Nikos tatlı getirecek."
   },
   "explain": {
    "en": "φέρνω (bring), future, αυτός: θα φέρει",
@@ -946,7 +969,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow I will send a message."
+   "en": "Tomorrow I will send a message.",
+   "tr": "Yarın bir mesaj göndereceğim."
   },
   "explain": {
    "en": "στέλνω (send), future, εγώ: θα στείλω",
@@ -987,7 +1011,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow we will send a message."
+   "en": "Tomorrow we will send a message.",
+   "tr": "Yarın bir mesaj göndereceğiz."
   },
   "explain": {
    "en": "στέλνω (send), future, εμείς: θα στείλουμε",
@@ -1028,7 +1053,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you will go up to the third floor."
+   "en": "Tomorrow you will go up to the third floor.",
+   "tr": "Yarın üçüncü kata çıkacaksın."
   },
   "explain": {
    "en": "ανεβαίνω (go up), future, εσύ: θα ανέβεις",
@@ -1069,7 +1095,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you (pl.) will go up to the third floor."
+   "en": "Tomorrow you (pl.) will go up to the third floor.",
+   "tr": "Yarın üçüncü kata çıkacaksınız."
   },
   "explain": {
    "en": "ανεβαίνω (go up), future, εσείς: θα ανέβετε",
@@ -1108,7 +1135,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day I go down to the beach."
+   "en": "Every day I go down to the beach.",
+   "tr": "Her gün plaja iniyorum."
   },
   "explain": {
    "en": "κατεβαίνω (go down), present, εγώ: κατεβαίνω",
@@ -1148,7 +1176,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day we go down to the beach."
+   "en": "Every day we go down to the beach.",
+   "tr": "Her gün plaja iniyoruz."
   },
   "explain": {
    "en": "κατεβαίνω (go down), present, εμείς: κατεβαίνουμε",
@@ -1187,7 +1216,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Every day you remember the address."
+   "en": "Every day you remember the address.",
+   "tr": "Her gün adresi hatırlıyorsun."
   },
   "explain": {
    "en": "θυμάμαι (remember), present, εσύ: θυμάσαι",
@@ -1227,7 +1257,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Every day you (pl.) remember the address."
+   "en": "Every day you (pl.) remember the address.",
+   "tr": "Her gün adresi hatırlıyorsunuz."
   },
   "explain": {
    "en": "θυμάμαι (remember), present, εσείς: θυμάστε",
@@ -1256,7 +1287,7 @@
   "options": {
    "1": [
     "χρειάζεται",
-    "θα χρειασθεί",
+    "θα χρειαστεί",
     "χρειάστηκε",
     "χρειάζομαι"
    ]
@@ -1266,7 +1297,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Every day Nikos needs help."
+   "en": "Every day Nikos needs help.",
+   "tr": "Her gün Nikos yardıma ihtiyaç duyuyor."
   },
   "explain": {
    "en": "χρειάζομαι (need), present, αυτός: χρειάζεται",
@@ -1295,8 +1327,8 @@
   "options": {
    "1": [
     "χρειάζονται",
-    "θα χρειασθούν",
-    "χρειάσθηκαν",
+    "θα χρειαστούν",
+    "χρειάστηκαν",
     "χρειάζομαι"
    ]
   },
@@ -1305,7 +1337,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Every day the children need help."
+   "en": "Every day the children need help.",
+   "tr": "Her gün çocuklar yardıma ihtiyaç duyuyor."
   },
   "explain": {
    "en": "χρειάζομαι (need), present, αυτοί: χρειάζονται",
@@ -1344,7 +1377,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you (pl.) start work."
+   "en": "Every day you (pl.) start work.",
+   "tr": "Her gün işe başlıyorsunuz."
   },
   "explain": {
    "en": "αρχίζω (start), present, εσείς: αρχίζετε",
@@ -1383,7 +1417,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you start work."
+   "en": "Every day you start work.",
+   "tr": "Her gün işe başlıyorsun."
   },
   "explain": {
    "en": "αρχίζω (start), present, εσύ: αρχίζεις",
@@ -1423,7 +1458,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day the children travel to Crete."
+   "en": "Every day the children travel to Crete.",
+   "tr": "Her gün çocuklar Girit'e seyahat ediyor."
   },
   "explain": {
    "en": "ταξιδεύω (travel), present, αυτοί: ταξιδεύουν",
@@ -1462,7 +1498,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day Nikos travels to Crete."
+   "en": "Every day Nikos travels to Crete.",
+   "tr": "Her gün Nikos Girit'e seyahat ediyor."
   },
   "explain": {
    "en": "ταξιδεύω (travel), present, αυτός: ταξιδεύει",
@@ -1502,7 +1539,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you went down to the beach."
+   "en": "Yesterday you went down to the beach.",
+   "tr": "Dün plaja indin."
   },
   "explain": {
    "en": "κατεβαίνω (go down), aorist, εσύ: κατέβηκες",
@@ -1542,7 +1580,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you (pl.) went down to the beach."
+   "en": "Yesterday you (pl.) went down to the beach.",
+   "tr": "Dün plaja indiniz."
   },
   "explain": {
    "en": "κατεβαίνω (go down), aorist, εσείς: κατεβήκατε",
@@ -1582,7 +1621,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Yesterday Nikos remembered the address."
+   "en": "Yesterday Nikos remembered the address.",
+   "tr": "Dün Nikos adresi hatırladı."
   },
   "explain": {
    "en": "θυμάμαι (remember), aorist, αυτός: θυμήθηκε",
@@ -1624,7 +1664,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Yesterday the children remembered the address."
+   "en": "Yesterday the children remembered the address.",
+   "tr": "Dün çocuklar adresi hatırladı."
   },
   "explain": {
    "en": "θυμάμαι (remember), aorist, αυτοί: θυμήθηκαν",
@@ -1647,16 +1688,16 @@
   },
   "answer": {
    "1": [
-    "χρειασθήκαμε",
-    "χρειαστήκαμε"
+    "χρειαστήκαμε",
+    "χρειασθήκαμε"
    ]
   },
   "options": {
    "1": [
-    "χρειασθήκαμε",
-    "θα χρειασθούμε",
+    "χρειαστήκαμε",
+    "θα χρειαστούμε",
     "χρειαζόμαστε",
-    "χρειάσθηκα"
+    "χρειάστηκα"
    ]
   },
   "grammar": [
@@ -1665,11 +1706,12 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Yesterday we needed help."
+   "en": "Yesterday we needed help.",
+   "tr": "Dün yardıma ihtiyaç duyduk."
   },
   "explain": {
-   "en": "χρειάζομαι (need), aorist, εμείς: χρειασθήκαμε",
-   "tr": "χρειάζομαι (ihtiyaç duymak), geçmiş zaman (aorist), εμείς: χρειασθήκαμε"
+   "en": "χρειάζομαι (need), aorist, εμείς: χρειαστήκαμε",
+   "tr": "χρειάζομαι (ihtiyaç duymak), geçmiş zaman (aorist), εμείς: χρειαστήκαμε"
   }
  },
  {
@@ -1688,16 +1730,16 @@
   },
   "answer": {
    "1": [
-    "χρειάσθηκα",
-    "χρειάστηκα"
+    "χρειάστηκα",
+    "χρειάσθηκα"
    ]
   },
   "options": {
    "1": [
-    "χρειάσθηκα",
-    "θα χρειασθώ",
+    "χρειάστηκα",
+    "θα χρειαστώ",
     "χρειάζομαι",
-    "χρειάσθηκες"
+    "χρειάστηκες"
    ]
   },
   "grammar": [
@@ -1706,11 +1748,12 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Yesterday I needed help."
+   "en": "Yesterday I needed help.",
+   "tr": "Dün yardıma ihtiyaç duydum."
   },
   "explain": {
-   "en": "χρειάζομαι (need), aorist, εγώ: χρειάσθηκα",
-   "tr": "χρειάζομαι (ihtiyaç duymak), geçmiş zaman (aorist), εγώ: χρειάσθηκα"
+   "en": "χρειάζομαι (need), aorist, εγώ: χρειάστηκα",
+   "tr": "χρειάζομαι (ihtiyaç duymak), geçmiş zaman (aorist), εγώ: χρειάστηκα"
   }
  },
  {
@@ -1745,7 +1788,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Yesterday you (pl.) phoned my mother."
+   "en": "Yesterday you (pl.) phoned my mother.",
+   "tr": "Dün annemi aradınız."
   },
   "explain": {
    "en": "τηλεφωνώ (phone), aorist, εσείς: τηλεφωνήσατε",
@@ -1784,7 +1828,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Yesterday you phoned my mother."
+   "en": "Yesterday you phoned my mother.",
+   "tr": "Dün annemi aradın."
   },
   "explain": {
    "en": "τηλεφωνώ (phone), aorist, εσύ: τηλεφώνησες",
@@ -1825,7 +1870,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday the children started work."
+   "en": "Yesterday the children started work.",
+   "tr": "Dün çocuklar işe başladı."
   },
   "explain": {
    "en": "αρχίζω (start), aorist, αυτοί: άρχισαν",
@@ -1864,7 +1910,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday Nikos started work."
+   "en": "Yesterday Nikos started work.",
+   "tr": "Dün Nikos işe başladı."
   },
   "explain": {
    "en": "αρχίζω (start), aorist, αυτός: άρχισε",
@@ -1903,7 +1950,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday I travelled to Crete."
+   "en": "Yesterday I travelled to Crete.",
+   "tr": "Dün Girit'e seyahat ettim."
   },
   "explain": {
    "en": "ταξιδεύω (travel), aorist, εγώ: ταξίδεψα",
@@ -1942,7 +1990,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday we travelled to Crete."
+   "en": "Yesterday we travelled to Crete.",
+   "tr": "Dün Girit'e seyahat ettik."
   },
   "explain": {
    "en": "ταξιδεύω (travel), aorist, εμείς: ταξιδέψαμε",
@@ -1983,7 +2032,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow Nikos will go down to the beach."
+   "en": "Tomorrow Nikos will go down to the beach.",
+   "tr": "Yarın Nikos plaja inecek."
   },
   "explain": {
    "en": "κατεβαίνω (go down), future, αυτός: θα κατέβει",
@@ -2026,7 +2076,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow the children will go down to the beach."
+   "en": "Tomorrow the children will go down to the beach.",
+   "tr": "Yarın çocuklar plaja inecek."
   },
   "explain": {
    "en": "κατεβαίνω (go down), future, αυτοί: θα κατέβουν",
@@ -2066,7 +2117,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Tomorrow we will remember the address."
+   "en": "Tomorrow we will remember the address.",
+   "tr": "Yarın adresi hatırlayacağız."
   },
   "explain": {
    "en": "θυμάμαι (remember), future, εμείς: θα θυμηθούμε",
@@ -2106,7 +2158,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Tomorrow I will remember the address."
+   "en": "Tomorrow I will remember the address.",
+   "tr": "Yarın adresi hatırlayacağım."
   },
   "explain": {
    "en": "θυμάμαι (remember), future, εγώ: θα θυμηθώ",
@@ -2129,16 +2182,16 @@
   },
   "answer": {
    "1": [
-    "θα χρειασθείτε",
-    "θα χρειαστείτε"
+    "θα χρειαστείτε",
+    "θα χρειασθείτε"
    ]
   },
   "options": {
    "1": [
-    "θα χρειασθείτε",
-    "χρειασθήκατε",
+    "θα χρειαστείτε",
+    "χρειαστήκατε",
     "χρειάζεστε",
-    "θα χρειασθώ"
+    "θα χρειαστώ"
    ]
   },
   "grammar": [
@@ -2147,11 +2200,12 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Tomorrow you (pl.) will need help."
+   "en": "Tomorrow you (pl.) will need help.",
+   "tr": "Yarın yardıma ihtiyaç duyacaksınız."
   },
   "explain": {
-   "en": "χρειάζομαι (need), future, εσείς: θα χρειασθείτε",
-   "tr": "χρειάζομαι (ihtiyaç duymak), gelecek zaman, εσείς: θα χρειασθείτε"
+   "en": "χρειάζομαι (need), future, εσείς: θα χρειαστείτε",
+   "tr": "χρειάζομαι (ihtiyaç duymak), gelecek zaman, εσείς: θα χρειαστείτε"
   }
  },
  {
@@ -2170,16 +2224,16 @@
   },
   "answer": {
    "1": [
-    "θα χρειασθείς",
-    "θα χρειαστείς"
+    "θα χρειαστείς",
+    "θα χρειασθείς"
    ]
   },
   "options": {
    "1": [
-    "θα χρειασθείς",
-    "χρειάσθηκες",
+    "θα χρειαστείς",
+    "χρειάστηκες",
     "χρειάζεσαι",
-    "θα χρειασθώ"
+    "θα χρειαστώ"
    ]
   },
   "grammar": [
@@ -2188,11 +2242,12 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Tomorrow you will need help."
+   "en": "Tomorrow you will need help.",
+   "tr": "Yarın yardıma ihtiyaç duyacaksın."
   },
   "explain": {
-   "en": "χρειάζομαι (need), future, εσύ: θα χρειασθείς",
-   "tr": "χρειάζομαι (ihtiyaç duymak), gelecek zaman, εσύ: θα χρειασθείς"
+   "en": "χρειάζομαι (need), future, εσύ: θα χρειαστείς",
+   "tr": "χρειάζομαι (ihtiyaç duymak), gelecek zaman, εσύ: θα χρειαστείς"
   }
  },
  {
@@ -2228,7 +2283,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Tomorrow the children will phone my mother."
+   "en": "Tomorrow the children will phone my mother.",
+   "tr": "Yarın çocuklar annemi arayacak."
   },
   "explain": {
    "en": "τηλεφωνώ (phone), future, αυτοί: θα τηλεφωνήσουν",
@@ -2267,7 +2323,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Tomorrow Nikos will phone my mother."
+   "en": "Tomorrow Nikos will phone my mother.",
+   "tr": "Yarın Nikos annemi arayacak."
   },
   "explain": {
    "en": "τηλεφωνώ (phone), future, αυτός: θα τηλεφωνήσει",
@@ -2306,7 +2363,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow I will start work."
+   "en": "Tomorrow I will start work.",
+   "tr": "Yarın işe başlayacağım."
   },
   "explain": {
    "en": "αρχίζω (start), future, εγώ: θα αρχίσω",
@@ -2346,7 +2404,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow we will start work."
+   "en": "Tomorrow we will start work.",
+   "tr": "Yarın işe başlayacağız."
   },
   "explain": {
    "en": "αρχίζω (start), future, εμείς: θα αρχίσουμε",
@@ -2385,7 +2444,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you will travel to Crete."
+   "en": "Tomorrow you will travel to Crete.",
+   "tr": "Yarın Girit'e seyahat edeceksin."
   },
   "explain": {
    "en": "ταξιδεύω (travel), future, εσύ: θα ταξιδέψεις",

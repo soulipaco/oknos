@@ -373,5 +373,7 @@
   "ch_done_next": "Done reading — next chapter",
   "ch_done_book": "Done reading — back to the book",
   "nav_words_short": "Words",
-  "nav_verbs_short": "Verbs"
+  "nav_verbs_short": "Verbs",
+  "meaning_other_lang": "No English meaning yet; this is the Turkish one.",
+  "lookup_phrase": "This word is part of the phrase above."
 }

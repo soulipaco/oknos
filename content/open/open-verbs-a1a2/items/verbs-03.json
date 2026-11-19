@@ -33,7 +33,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday the children read the newspaper."
+   "en": "Yesterday the children read the newspaper.",
+   "tr": "Dün çocuklar gazeteyi okudu."
   },
   "explain": {
    "en": "διαβάζω (read), aorist, αυτοί: διάβασαν",
@@ -72,7 +73,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday we wrote a letter."
+   "en": "Yesterday we wrote a letter.",
+   "tr": "Dün bir mektup yazdık."
   },
   "explain": {
    "en": "γράφω (write), aorist, εμείς: γράψαμε",
@@ -111,7 +113,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday I wrote a letter."
+   "en": "Yesterday I wrote a letter.",
+   "tr": "Dün bir mektup yazdım."
   },
   "explain": {
    "en": "γράφω (write), aorist, εγώ: έγραψα",
@@ -150,7 +153,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you (pl.) listened to music."
+   "en": "Yesterday you (pl.) listened to music.",
+   "tr": "Dün müzik dinlediniz."
   },
   "explain": {
    "en": "ακούω (listen to), aorist, εσείς: ακούσατε",
@@ -189,7 +193,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you listened to music."
+   "en": "Yesterday you listened to music.",
+   "tr": "Dün müzik dinledin."
   },
   "explain": {
    "en": "ακούω (listen to), aorist, εσύ: άκουσες",
@@ -230,7 +235,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Yesterday the children asked the doctor."
+   "en": "Yesterday the children asked the doctor.",
+   "tr": "Dün çocuklar doktora sordu."
   },
   "explain": {
    "en": "ρωτάω (ask), aorist, αυτοί: ρωτήσαν",
@@ -269,7 +275,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Yesterday Nikos asked the doctor."
+   "en": "Yesterday Nikos asked the doctor.",
+   "tr": "Dün Nikos doktora sordu."
   },
   "explain": {
    "en": "ρωτάω (ask), aorist, αυτός: ρώτησε",
@@ -309,7 +316,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday I got into the metro."
+   "en": "Yesterday I got into the metro.",
+   "tr": "Dün metroya bindim."
   },
   "explain": {
    "en": "μπαίνω (get into), aorist, εγώ: μπήκα",
@@ -349,7 +357,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday we got into the metro."
+   "en": "Yesterday we got into the metro.",
+   "tr": "Dün metroya bindik."
   },
   "explain": {
    "en": "μπαίνω (get into), aorist, εμείς: μπήκαμε",
@@ -372,16 +381,16 @@
   },
   "answer": {
    "1": [
-    "θα εύρει",
-    "θα βρει"
+    "θα βρει",
+    "θα εύρει"
    ]
   },
   "options": {
    "1": [
-    "θα εύρει",
-    "ηύρε",
+    "θα βρει",
+    "βρήκε",
     "βρίσκει",
-    "θα εύρω"
+    "θα βρω"
    ]
   },
   "grammar": [
@@ -390,11 +399,12 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow Nikos will find the keys."
+   "en": "Tomorrow Nikos will find the keys.",
+   "tr": "Yarın Nikos anahtarları bulacak."
   },
   "explain": {
-   "en": "βρίσκω (find), future, αυτός: θα εύρει",
-   "tr": "βρίσκω (bulmak), gelecek zaman, αυτός: θα εύρει"
+   "en": "βρίσκω (find), future, αυτός: θα βρει",
+   "tr": "βρίσκω (bulmak), gelecek zaman, αυτός: θα βρει"
   }
  },
  {
@@ -414,17 +424,17 @@
   "answer": {
    "1": [
     "θα βρούνε",
-    "θα εύρουν",
     "θα βρουν",
+    "θα εύρουν",
     "θα εύρουνε"
    ]
   },
   "options": {
    "1": [
     "θα βρούνε",
-    "ηύραν",
+    "βρήκαν",
     "βρίσκουν",
-    "θα εύρω"
+    "θα βρω"
    ]
   },
   "grammar": [
@@ -433,7 +443,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow the children will find the keys."
+   "en": "Tomorrow the children will find the keys.",
+   "tr": "Yarın çocuklar anahtarları bulacak."
   },
   "explain": {
    "en": "βρίσκω (find), future, αυτοί: θα βρούνε",
@@ -473,7 +484,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow we will read the newspaper."
+   "en": "Tomorrow we will read the newspaper.",
+   "tr": "Yarın gazeteyi okuyacağız."
   },
   "explain": {
    "en": "διαβάζω (read), future, εμείς: θα διαβάσουμε",
@@ -512,7 +524,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow I will read the newspaper."
+   "en": "Tomorrow I will read the newspaper.",
+   "tr": "Yarın gazeteyi okuyacağım."
   },
   "explain": {
    "en": "διαβάζω (read), future, εγώ: θα διαβάσω",
@@ -551,7 +564,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you (pl.) will write a letter."
+   "en": "Tomorrow you (pl.) will write a letter.",
+   "tr": "Yarın bir mektup yazacaksınız."
   },
   "explain": {
    "en": "γράφω (write), future, εσείς: θα γράψετε",
@@ -590,7 +604,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you will write a letter."
+   "en": "Tomorrow you will write a letter.",
+   "tr": "Yarın bir mektup yazacaksın."
   },
   "explain": {
    "en": "γράφω (write), future, εσύ: θα γράψεις",
@@ -630,7 +645,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow the children will listen to music."
+   "en": "Tomorrow the children will listen to music.",
+   "tr": "Yarın çocuklar müzik dinleyecek."
   },
   "explain": {
    "en": "ακούω (listen to), future, αυτοί: θα ακούσουν",
@@ -669,7 +685,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow Nikos will listen to music."
+   "en": "Tomorrow Nikos will listen to music.",
+   "tr": "Yarın Nikos müzik dinleyecek."
   },
   "explain": {
    "en": "ακούω (listen to), future, αυτός: θα ακούσει",
@@ -708,7 +725,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Tomorrow I will ask the doctor."
+   "en": "Tomorrow I will ask the doctor.",
+   "tr": "Yarın doktora soracağım."
   },
   "explain": {
    "en": "ρωτάω (ask), future, εγώ: θα ρωτήσω",
@@ -748,7 +766,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Tomorrow we will ask the doctor."
+   "en": "Tomorrow we will ask the doctor.",
+   "tr": "Yarın doktora soracağız."
   },
   "explain": {
    "en": "ρωτάω (ask), future, εμείς: θα ρωτήσουμε",
@@ -788,7 +807,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you will get into the metro."
+   "en": "Tomorrow you will get into the metro.",
+   "tr": "Yarın metroya bineceksin."
   },
   "explain": {
    "en": "μπαίνω (get into), future, εσύ: θα μπεις",
@@ -828,7 +848,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you (pl.) will get into the metro."
+   "en": "Tomorrow you (pl.) will get into the metro.",
+   "tr": "Yarın metroya bineceksiniz."
   },
   "explain": {
    "en": "μπαίνω (get into), future, εσείς: θα μπείτε",
@@ -867,7 +888,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day I go out with friends."
+   "en": "Every day I go out with friends.",
+   "tr": "Her gün arkadaşlarla birlikte dışarı çıkıyorum."
   },
   "explain": {
    "en": "βγαίνω (go out), present, εγώ: βγαίνω",
@@ -907,7 +929,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day we go out with friends."
+   "en": "Every day we go out with friends.",
+   "tr": "Her gün arkadaşlarla birlikte dışarı çıkıyoruz."
   },
   "explain": {
    "en": "βγαίνω (go out), present, εμείς: βγαίνουμε",
@@ -946,7 +969,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you leave early."
+   "en": "Every day you leave early.",
+   "tr": "Her gün erken ayrılıyorsun."
   },
   "explain": {
    "en": "φεύγω (leave), present, εσύ: φεύγεις",
@@ -985,7 +1009,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you (pl.) leave early."
+   "en": "Every day you (pl.) leave early.",
+   "tr": "Her gün erken ayrılıyorsunuz."
   },
   "explain": {
    "en": "φεύγω (leave), present, εσείς: φεύγετε",
@@ -1025,7 +1050,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Every day Nikos wakes up at seven."
+   "en": "Every day Nikos wakes up at seven.",
+   "tr": "Her gün Nikos saat yedide uyanıyor."
   },
   "explain": {
    "en": "ξυπνάω (wake up), present, αυτός: ξυπνά",
@@ -1067,7 +1093,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Every day the children wake up at seven."
+   "en": "Every day the children wake up at seven.",
+   "tr": "Her gün çocuklar saat yedide uyanıyor."
   },
   "explain": {
    "en": "ξυπνάω (wake up), present, αυτοί: ξυπνάν",
@@ -1106,7 +1133,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you (pl.) understand the teacher."
+   "en": "Every day you (pl.) understand the teacher.",
+   "tr": "Her gün öğretmeni anlıyorsunuz."
   },
   "explain": {
    "en": "καταλαβαίνω (understand), present, εσείς: καταλαβαίνετε",
@@ -1145,7 +1173,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you understand the teacher."
+   "en": "Every day you understand the teacher.",
+   "tr": "Her gün öğretmeni anlıyorsun."
   },
   "explain": {
    "en": "καταλαβαίνω (understand), present, εσύ: καταλαβαίνεις",
@@ -1176,7 +1205,7 @@
    "1": [
     "μαθαίνουν",
     "θα μάθουν",
-    "μάθαν",
+    "έμαθαν",
     "μαθαίνω"
    ]
   },
@@ -1185,7 +1214,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day the children learn new words."
+   "en": "Every day the children learn new words.",
+   "tr": "Her gün çocuklar yeni kelimeler öğreniyor."
   },
   "explain": {
    "en": "μαθαίνω (learn), present, αυτοί: μαθαίνουν",
@@ -1224,7 +1254,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day Nikos learns new words."
+   "en": "Every day Nikos learns new words.",
+   "tr": "Her gün Nikos yeni kelimeler öğreniyor."
   },
   "explain": {
    "en": "μαθαίνω (learn), present, αυτός: μαθαίνει",
@@ -1264,7 +1295,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you went out with friends."
+   "en": "Yesterday you went out with friends.",
+   "tr": "Dün arkadaşlarla birlikte dışarı çıktın."
   },
   "explain": {
    "en": "βγαίνω (go out), aorist, εσύ: βγήκες",
@@ -1304,7 +1336,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you (pl.) went out with friends."
+   "en": "Yesterday you (pl.) went out with friends.",
+   "tr": "Dün arkadaşlarla birlikte dışarı çıktınız."
   },
   "explain": {
    "en": "βγαίνω (go out), aorist, εσείς: βγήκατε",
@@ -1344,7 +1377,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday Nikos left early."
+   "en": "Yesterday Nikos left early.",
+   "tr": "Dün Nikos erken ayrıldı."
   },
   "explain": {
    "en": "φεύγω (leave), aorist, αυτός: έφυγε",
@@ -1367,14 +1401,14 @@
   },
   "answer": {
    "1": [
-    "φύγαν",
     "έφυγαν",
-    "φύγανε"
+    "φύγανε",
+    "φύγαν"
    ]
   },
   "options": {
    "1": [
-    "φύγαν",
+    "έφυγαν",
     "θα φύγουν",
     "φεύγουν",
     "έφυγα"
@@ -1386,11 +1420,12 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday the children left early."
+   "en": "Yesterday the children left early.",
+   "tr": "Dün çocuklar erken ayrıldı."
   },
   "explain": {
-   "en": "φεύγω (leave), aorist, αυτοί: φύγαν",
-   "tr": "φεύγω (ayrılmak), geçmiş zaman (aorist), αυτοί: φύγαν"
+   "en": "φεύγω (leave), aorist, αυτοί: έφυγαν",
+   "tr": "φεύγω (ayrılmak), geçmiş zaman (aorist), αυτοί: έφυγαν"
   }
  },
  {
@@ -1425,7 +1460,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Yesterday we woke up at seven."
+   "en": "Yesterday we woke up at seven.",
+   "tr": "Dün saat yedide uyandık."
   },
   "explain": {
    "en": "ξυπνάω (wake up), aorist, εμείς: ξυπνήσαμε",
@@ -1464,7 +1500,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Yesterday I woke up at seven."
+   "en": "Yesterday I woke up at seven.",
+   "tr": "Dün saat yedide uyandım."
   },
   "explain": {
    "en": "ξυπνάω (wake up), aorist, εγώ: ξύπνησα",
@@ -1504,7 +1541,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Yesterday you (pl.) slept early."
+   "en": "Yesterday you (pl.) slept early.",
+   "tr": "Dün erkenden uyudunuz."
   },
   "explain": {
    "en": "κοιμάμαι (sleep), aorist, εσείς: κοιμηθήκατε",
@@ -1544,7 +1582,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Yesterday you slept early."
+   "en": "Yesterday you slept early.",
+   "tr": "Dün erkenden uyudun."
   },
   "explain": {
    "en": "κοιμάμαι (sleep), aorist, εσύ: κοιμήθηκες",
@@ -1586,7 +1625,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday the children understood the teacher."
+   "en": "Yesterday the children understood the teacher.",
+   "tr": "Dün çocuklar öğretmeni anladı."
   },
   "explain": {
    "en": "καταλαβαίνω (understand), aorist, αυτοί: κατάλαβαν",
@@ -1626,7 +1666,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday Nikos understood the teacher."
+   "en": "Yesterday Nikos understood the teacher.",
+   "tr": "Dün Nikos öğretmeni anladı."
   },
   "explain": {
    "en": "καταλαβαίνω (understand), aorist, αυτός: κατάλαβε",
@@ -1666,7 +1707,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday I learnt new words."
+   "en": "Yesterday I learnt new words.",
+   "tr": "Dün yeni kelimeler öğrendim."
   },
   "explain": {
    "en": "μαθαίνω (learn), aorist, εγώ: έμαθα",
@@ -1706,7 +1748,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday we learnt new words."
+   "en": "Yesterday we learnt new words.",
+   "tr": "Dün yeni kelimeler öğrendik."
   },
   "explain": {
    "en": "μαθαίνω (learn), aorist, εμείς: μάθαμε",
@@ -1746,7 +1789,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow Nikos will go out with friends."
+   "en": "Tomorrow Nikos will go out with friends.",
+   "tr": "Yarın Nikos arkadaşlarla birlikte dışarı çıkacak."
   },
   "explain": {
    "en": "βγαίνω (go out), future, αυτός: θα βγει",
@@ -1787,7 +1831,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow the children will go out with friends."
+   "en": "Tomorrow the children will go out with friends.",
+   "tr": "Yarın çocuklar arkadaşlarla birlikte dışarı çıkacak."
   },
   "explain": {
    "en": "βγαίνω (go out), future, αυτοί: θα βγούνε",
@@ -1828,7 +1873,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow we will leave early."
+   "en": "Tomorrow we will leave early.",
+   "tr": "Yarın erken ayrılacağız."
   },
   "explain": {
    "en": "φεύγω (leave), future, εμείς: θα φύγουμε",
@@ -1868,7 +1914,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow I will leave early."
+   "en": "Tomorrow I will leave early.",
+   "tr": "Yarın erken ayrılacağım."
   },
   "explain": {
    "en": "φεύγω (leave), future, εγώ: θα φύγω",
@@ -1907,7 +1954,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Tomorrow you (pl.) will wake up at seven."
+   "en": "Tomorrow you (pl.) will wake up at seven.",
+   "tr": "Yarın saat yedide uyanacaksınız."
   },
   "explain": {
    "en": "ξυπνάω (wake up), future, εσείς: θα ξυπνήσετε",
@@ -1946,7 +1994,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Tomorrow you will wake up at seven."
+   "en": "Tomorrow you will wake up at seven.",
+   "tr": "Yarın saat yedide uyanacaksın."
   },
   "explain": {
    "en": "ξυπνάω (wake up), future, εσύ: θα ξυπνήσεις",
@@ -1987,7 +2036,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Tomorrow the children will sleep early."
+   "en": "Tomorrow the children will sleep early.",
+   "tr": "Yarın çocuklar erkenden uyuyacak."
   },
   "explain": {
    "en": "κοιμάμαι (sleep), future, αυτοί: θα κοιμηθούν",
@@ -2027,7 +2077,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Tomorrow Nikos will sleep early."
+   "en": "Tomorrow Nikos will sleep early.",
+   "tr": "Yarın Nikos erkenden uyuyacak."
   },
   "explain": {
    "en": "κοιμάμαι (sleep), future, αυτός: θα κοιμηθεί",
@@ -2067,7 +2118,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow I will understand the teacher."
+   "en": "Tomorrow I will understand the teacher.",
+   "tr": "Yarın öğretmeni anlayacağım."
   },
   "explain": {
    "en": "καταλαβαίνω (understand), future, εγώ: θα καταλάβω",
@@ -2108,7 +2160,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow we will understand the teacher."
+   "en": "Tomorrow we will understand the teacher.",
+   "tr": "Yarın öğretmeni anlayacağız."
   },
   "explain": {
    "en": "καταλαβαίνω (understand), future, εμείς: θα καταλάβουμε",
@@ -2148,7 +2201,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you will learn new words."
+   "en": "Tomorrow you will learn new words.",
+   "tr": "Yarın yeni kelimeler öğreneceksin."
   },
   "explain": {
    "en": "μαθαίνω (learn), future, εσύ: θα μάθεις",
@@ -2188,7 +2242,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you (pl.) will learn new words."
+   "en": "Tomorrow you (pl.) will learn new words.",
+   "tr": "Yarın yeni kelimeler öğreneceksiniz."
   },
   "explain": {
    "en": "μαθαίνω (learn), future, εσείς: θα μάθετε",
@@ -2227,7 +2282,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day I wait for the bus."
+   "en": "Every day I wait for the bus.",
+   "tr": "Her gün otobüsü bekliyorum."
   },
   "explain": {
    "en": "περιμένω (wait for), present, εγώ: περιμένω",
@@ -2267,7 +2323,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day we wait for the bus."
+   "en": "Every day we wait for the bus.",
+   "tr": "Her gün otobüsü bekliyoruz."
   },
   "explain": {
    "en": "περιμένω (wait for), present, εμείς: περιμένουμε",
@@ -2306,7 +2363,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you open the window."
+   "en": "Every day you open the window.",
+   "tr": "Her gün pencereyi açıyorsun."
   },
   "explain": {
    "en": "ανοίγω (open), present, εσύ: ανοίγεις",
@@ -2345,7 +2403,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you (pl.) open the window."
+   "en": "Every day you (pl.) open the window.",
+   "tr": "Her gün pencereyi açıyorsunuz."
   },
   "explain": {
    "en": "ανοίγω (open), present, εσείς: ανοίγετε",
@@ -2384,7 +2443,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day Nikos closes the door."
+   "en": "Every day Nikos closes the door.",
+   "tr": "Her gün Nikos kapıyı kapatıyor."
   },
   "explain": {
    "en": "κλείνω (close), present, αυτός: κλείνει",

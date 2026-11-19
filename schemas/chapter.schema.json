@@ -286,7 +286,7 @@
     },
     "Table": {
       "additionalProperties": false,
-      "description": "A grammar paradigm or a word table. Cells are Greek (or short labels).",
+      "description": "A grammar paradigm or a word table. A cell is Greek text (a string), or an explanation in\nboth languages ({tr, en}): the reader shows the one in the UI language.",
       "properties": {
         "type": {
           "const": "table",
@@ -306,7 +306,14 @@
         },
         "head": {
           "items": {
-            "type": "string"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "$ref": "#/$defs/Bi"
+              }
+            ]
           },
           "minItems": 1,
           "title": "Head",
@@ -315,7 +322,14 @@
         "rows": {
           "items": {
             "items": {
-              "type": "string"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "#/$defs/Bi"
+                }
+              ]
             },
             "type": "array"
           },

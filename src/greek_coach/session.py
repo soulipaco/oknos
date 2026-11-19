@@ -23,7 +23,7 @@ from datetime import date, timedelta
 from typing import Any
 
 from greek_coach import coachfiles, db, paths, scheduler
-from greek_coach.checking import meaning
+from greek_coach.checking import meaning, meaning_lang
 from greek_coach.packs import (
     OPEN_TASKS,
     SELECTION_TASKS,
@@ -174,13 +174,14 @@ def learn_part(item: VocabItem, lang: str, catalog: Catalog | None) -> dict:
             if greek.fold(w) in index:
                 example = index[greek.fold(w)]
                 break
-    return {"el": item.el, "meaning": meaning(item, lang), "gender": item.gender, "pos": item.pos, "example": example}
+    return {"el": item.el, "say": item.say, "meaning": meaning(item, lang), "meaning_lang": meaning_lang(item, lang),
+            "gender": item.gender, "pos": item.pos, "example": example}
 
 
 def vocab_card(item_key: str, pack: Pack, item: VocabItem, lang: str, direction: str, distract: Distractors,
                rng: random.Random, state: scheduler.State | None, catalog: Catalog | None = None) -> dict:
-    card = {"item_key": item_key, "type": "vocab", "direction": direction, "lang": lang, "speak": item.el,
-            "reps": state.reps if state else 0, "pos": item.pos}
+    card = {"item_key": item_key, "type": "vocab", "direction": direction, "lang": lang, "speak": item.say or item.el,
+            "el": item.el, "reps": state.reps if state else 0, "pos": item.pos}
     if state is None:  # never seen: show it first, then test it (teach before testing)
         card["learn"] = learn_part(item, lang, catalog)
     if direction in ("el_meaning", "audio_meaning"):
@@ -684,7 +685,7 @@ def summary(conn: sqlite3.Connection, catalog: Catalog, session_id: int, ui_lang
         if entry and not a["correct"]:
             item = entry[1]
             if isinstance(item, VocabItem):
-                word = {"el": item.el, "meaning": meaning(item, ui_lang)}
+                word = {"el": item.el, "say": item.say, "meaning": meaning(item, ui_lang)}
             elif isinstance(item, FormItem):
                 cue = item.cue
                 word = {"el": " / ".join(f[0] for f in item.answer.values()),
@@ -906,7 +907,8 @@ def word_list(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str) -> dict:
         if not isinstance(i, VocabItem):
             continue
         idx = prog.assigned.get(k) if prog else None
-        rows.append({"key": k, "el": i.el, "meaning": meaning(i, ui_lang), "pos": i.pos, "level": i.level,
+        rows.append({"key": k, "el": i.el, "say": i.say, "meaning": meaning(i, ui_lang), "meaning_lang": meaning_lang(i, ui_lang),
+                     "pos": i.pos, "level": i.level,
                      "stage": stages[idx].id if idx is not None else None, "stage_order": idx,
                      "open": allowed(k, i), "extra": bool(prog and k in prog.pooled),
                      "status": status_of(states.get(k)),
@@ -958,7 +960,8 @@ def stage_detail(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage
         if i.status != "ok":
             continue
         if isinstance(i, VocabItem):
-            words.append({"key": k, "el": i.el, "meaning": meaning(i, ui_lang), "status": status_of(states.get(k))})
+            words.append({"key": k, "el": i.el, "say": i.say, "meaning": meaning(i, ui_lang),
+                          "meaning_lang": meaning_lang(i, ui_lang), "status": status_of(states.get(k))})
         elif isinstance(i, FormItem):
             forms.append({"key": k, "lemma": i.cue.lemma if i.cue else None, "tense": i.cue.tense if i.cue else None,
                           "person": i.cue.person if i.cue else None, "form": next(iter(i.answer.values()))[0],
@@ -998,7 +1001,8 @@ def chapter_view(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage
                     if entry is None or not isinstance(entry[1], VocabItem):
                         continue
                     i = entry[1]
-                    out["words"].append({"key": k, "el": i.el, "meaning": meaning(i, ui_lang), "pos": i.pos,
+                    out["words"].append({"key": k, "el": i.el, "say": i.say, "meaning": meaning(i, ui_lang),
+                                         "meaning_lang": meaning_lang(i, ui_lang), "pos": i.pos,
                                          "gender": i.gender, "status": status_of(states.get(k)),
                                          "example": i.example.model_dump() if i.example else None})
             elif b.type == "check":

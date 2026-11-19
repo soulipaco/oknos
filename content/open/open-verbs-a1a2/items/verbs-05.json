@@ -31,7 +31,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you (pl.) will travel to Crete."
+   "en": "Tomorrow you (pl.) will travel to Crete.",
+   "tr": "Yarın Girit'e seyahat edeceksiniz."
   },
   "explain": {
    "en": "ταξιδεύω (travel), future, εσείς: θα ταξιδέψετε",
@@ -71,7 +72,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Every day I sell fruit at the street market."
+   "en": "Every day I sell fruit at the street market.",
+   "tr": "Her gün semt pazarında meyve satıyorum."
   },
   "explain": {
    "en": "πουλάω (sell), present, εγώ: πουλώ",
@@ -111,7 +113,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Every day we sell fruit at the street market."
+   "en": "Every day we sell fruit at the street market.",
+   "tr": "Her gün semt pazarında meyve satıyoruz."
   },
   "explain": {
    "en": "πουλάω (sell), present, εμείς: πουλάμε",
@@ -150,7 +153,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you feel well."
+   "en": "Every day you feel well.",
+   "tr": "Her gün kendini iyi hissediyorsun."
   },
   "explain": {
    "en": "νιώθω (feel), present, εσύ: νιώθεις",
@@ -189,7 +193,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you (pl.) feel well."
+   "en": "Every day you (pl.) feel well.",
+   "tr": "Her gün kendinizi iyi hissediyorsunuz."
   },
   "explain": {
    "en": "νιώθω (feel), present, εσείς: νιώθετε",
@@ -228,7 +233,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Yesterday you sold fruit at the street market."
+   "en": "Yesterday you sold fruit at the street market.",
+   "tr": "Dün semt pazarında meyve sattın."
   },
   "explain": {
    "en": "πουλάω (sell), aorist, εσύ: πούλησες",
@@ -267,7 +273,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Yesterday you (pl.) sold fruit at the street market."
+   "en": "Yesterday you (pl.) sold fruit at the street market.",
+   "tr": "Dün semt pazarında meyve sattınız."
   },
   "explain": {
    "en": "πουλάω (sell), aorist, εσείς: πουλήσατε",
@@ -306,7 +313,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday Nikos felt well."
+   "en": "Yesterday Nikos felt well.",
+   "tr": "Dün Nikos kendini iyi hissetti."
   },
   "explain": {
    "en": "νιώθω (feel), aorist, αυτός: ένιωσε",
@@ -329,14 +337,14 @@
   },
   "answer": {
    "1": [
-    "νιώσαν",
     "ένιωσαν",
-    "νιώσανε"
+    "νιώσανε",
+    "νιώσαν"
    ]
   },
   "options": {
    "1": [
-    "νιώσαν",
+    "ένιωσαν",
     "θα νιώσουν",
     "νιώθουν",
     "ένιωσα"
@@ -347,11 +355,12 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday the children felt well."
+   "en": "Yesterday the children felt well.",
+   "tr": "Dün çocuklar kendilerini iyi hissetti."
   },
   "explain": {
-   "en": "νιώθω (feel), aorist, αυτοί: νιώσαν",
-   "tr": "νιώθω (hissetmek), geçmiş zaman (aorist), αυτοί: νιώσαν"
+   "en": "νιώθω (feel), aorist, αυτοί: ένιωσαν",
+   "tr": "νιώθω (hissetmek), geçmiş zaman (aorist), αυτοί: ένιωσαν"
   }
  },
  {
@@ -386,7 +395,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Tomorrow Nikos will sell fruit at the street market."
+   "en": "Tomorrow Nikos will sell fruit at the street market.",
+   "tr": "Yarın Nikos semt pazarında meyve satacak."
   },
   "explain": {
    "en": "πουλάω (sell), future, αυτός: θα πουλήσει",
@@ -426,7 +436,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Tomorrow the children will sell fruit at the street market."
+   "en": "Tomorrow the children will sell fruit at the street market.",
+   "tr": "Yarın çocuklar semt pazarında meyve satacak."
   },
   "explain": {
    "en": "πουλάω (sell), future, αυτοί: θα πουλήσουν",
@@ -466,7 +477,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow we will feel well."
+   "en": "Tomorrow we will feel well.",
+   "tr": "Yarın kendimizi iyi hissedeceğiz."
   },
   "explain": {
    "en": "νιώθω (feel), future, εμείς: θα νιώσουμε",
@@ -505,7 +517,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow I will feel well."
+   "en": "Tomorrow I will feel well.",
+   "tr": "Yarın kendimi iyi hissedeceğim."
   },
   "explain": {
    "en": "νιώθω (feel), future, εγώ: θα νιώσω",

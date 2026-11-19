@@ -23,7 +23,7 @@ SECTION_ORDER = ("intro", "warmup", "text", "comprehension", "grammar", "words",
 REQUIRED_SECTIONS = ("intro", "text", "grammar", "words", "try")
 WORDS_PER_MINUTE = 110      # explanation text in the learner's language
 GREEK_WORDS_PER_MINUTE = 45  # slow reading of Greek at A1-A2, with the translation
-MINUTES = {"A1": (6, 14), "A2": (8, 18), "B1": (10, 22)}
+MINUTES = {"A1": (6, 16), "A2": (8, 18), "B1": (10, 22)}  # the range validate accepts; LESSONS §4 gives the target
 INLINE_GREEK = re.compile(r"\[\[([^\]]+)\]\]")
 
 
@@ -60,12 +60,13 @@ class Dialogue(Strict):
 
 
 class Table(Strict):
-    """A grammar paradigm or a word table. Cells are Greek (or short labels)."""
+    """A grammar paradigm or a word table. A cell is Greek text (a string), or an explanation in
+    both languages ({tr, en}): the reader shows the one in the UI language."""
 
     type: Literal["table"]
     caption: Bi | None = None
-    head: list[str] = Field(min_length=1)
-    rows: list[list[str]] = Field(min_length=1)
+    head: list[str | Bi] = Field(min_length=1)
+    rows: list[list[str | Bi]] = Field(min_length=1)
     note: Bi | None = None
 
     @model_validator(mode="after")
@@ -179,7 +180,8 @@ class Chapter(Strict):
         return out
 
     def table_cells(self) -> list[str]:
-        return [c for _, _, b in self.blocks() if isinstance(b, Table) for row in [b.head, *b.rows] for c in row]
+        return [c for _, _, b in self.blocks() if isinstance(b, Table) for row in [b.head, *b.rows] for c in row
+                if isinstance(c, str)]
 
     def speakers(self) -> list[str]:
         return [ln.who for _, _, b in self.blocks() if isinstance(b, Dialogue) for ln in b.lines]
@@ -195,7 +197,8 @@ class Chapter(Strict):
             elif isinstance(b, Examples):
                 greek += sum(len(e.el.split()) for e in b.items)
             elif isinstance(b, Table):
-                greek += sum(len(c.split()) for row in b.rows for c in row)
+                greek += sum(len(c.split()) for row in b.rows for c in row if isinstance(c, str))
+                expl += sum(len(getattr(c, lang).split()) for row in b.rows for c in row if isinstance(c, Bi))
             elif isinstance(b, Check):
                 greek += 25 * len(b.items)  # about half a minute per question
         return expl / WORDS_PER_MINUTE + greek / GREEK_WORDS_PER_MINUTE

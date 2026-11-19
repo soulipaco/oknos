@@ -43,6 +43,13 @@ class Result:
     accent_note: str | None = None
 
 
+def meaning_lang(item: VocabItem, lang: str) -> str:
+    """The language meaning() actually returns: the UI language, or the one it fell back to."""
+    if lang in ("en", "tr") and getattr(item, lang, None):
+        return lang
+    return "en" if item.en else "tr"
+
+
 def meaning(item: VocabItem, lang: str) -> str:
     """The item's meaning in the UI language, falling back tr -> en -> the other."""
     value = getattr(item, lang, None) if lang in ("en", "tr") else None

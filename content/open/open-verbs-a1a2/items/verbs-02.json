@@ -32,7 +32,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow I will drink coffee."
+   "en": "Tomorrow I will drink coffee.",
+   "tr": "Yarın kahve içeceğim."
   },
   "explain": {
    "en": "πίνω (drink), future, εγώ: θα πιω",
@@ -72,7 +73,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you (pl.) will stay at home."
+   "en": "Tomorrow you (pl.) will stay at home.",
+   "tr": "Yarın evde kalacaksınız."
   },
   "explain": {
    "en": "μένω (stay), future, εσείς: θα μείνετε",
@@ -112,7 +114,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you will stay at home."
+   "en": "Tomorrow you will stay at home.",
+   "tr": "Yarın evde kalacaksın."
   },
   "explain": {
    "en": "μένω (stay), future, εσύ: θα μείνεις",
@@ -152,7 +155,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow the children will work until late."
+   "en": "Tomorrow the children will work until late.",
+   "tr": "Yarın çocuklar geç saate kadar çalışacak."
   },
   "explain": {
    "en": "δουλεύω (work), future, αυτοί: θα δουλέψουν",
@@ -191,7 +195,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow Nikos will work until late."
+   "en": "Tomorrow Nikos will work until late.",
+   "tr": "Yarın Nikos geç saate kadar çalışacak."
   },
   "explain": {
    "en": "δουλεύω (work), future, αυτός: θα δουλέψει",
@@ -230,7 +235,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Tomorrow I will speak Greek."
+   "en": "Tomorrow I will speak Greek.",
+   "tr": "Yarın Yunanca konuşacağım."
   },
   "explain": {
    "en": "μιλάω (speak), future, εγώ: θα μιλήσω",
@@ -270,7 +276,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Tomorrow we will speak Greek."
+   "en": "Tomorrow we will speak Greek.",
+   "tr": "Yarın Yunanca konuşacağız."
   },
   "explain": {
    "en": "μιλάω (speak), future, εμείς: θα μιλήσουμε",
@@ -310,7 +317,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you will say the truth."
+   "en": "Tomorrow you will say the truth.",
+   "tr": "Yarın doğruyu söyleyeceksin."
   },
   "explain": {
    "en": "λέω (say), future, εσύ: θα πεις",
@@ -350,7 +358,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you (pl.) will say the truth."
+   "en": "Tomorrow you (pl.) will say the truth.",
+   "tr": "Yarın doğruyu söyleyeceksiniz."
   },
   "explain": {
    "en": "λέω (say), future, εσείς: θα πείτε",
@@ -379,7 +388,7 @@
   "options": {
    "1": [
     "βλέπω",
-    "θα ιδώ",
+    "θα δω",
     "είδα",
     "βλέπεις"
    ]
@@ -389,7 +398,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day I see Giorgos."
+   "en": "Every day I see Giorgos.",
+   "tr": "Her gün Yorgos'u görüyorum."
   },
   "explain": {
    "en": "βλέπω (see), present, εγώ: βλέπω",
@@ -429,7 +439,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day we see Giorgos."
+   "en": "Every day we see Giorgos.",
+   "tr": "Her gün Yorgos'u görüyoruz."
   },
   "explain": {
    "en": "βλέπω (see), present, εμείς: βλέπουμε",
@@ -468,7 +479,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you take the bus."
+   "en": "Every day you take the bus.",
+   "tr": "Her gün otobüse biniyorsun."
   },
   "explain": {
    "en": "παίρνω (take), present, εσύ: παίρνεις",
@@ -507,7 +519,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you (pl.) take the bus."
+   "en": "Every day you (pl.) take the bus.",
+   "tr": "Her gün otobüse biniyorsunuz."
   },
   "explain": {
    "en": "παίρνω (take), present, εσείς: παίρνετε",
@@ -546,7 +559,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day Nikos buys bread."
+   "en": "Every day Nikos buys bread.",
+   "tr": "Her gün Nikos ekmek satın alıyor."
   },
   "explain": {
    "en": "αγοράζω (buy), present, αυτός: αγοράζει",
@@ -586,7 +600,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day the children buy bread."
+   "en": "Every day the children buy bread.",
+   "tr": "Her gün çocuklar ekmek satın alıyor."
   },
   "explain": {
    "en": "αγοράζω (buy), present, αυτοί: αγοράζουν",
@@ -626,7 +641,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day we pay the bill."
+   "en": "Every day we pay the bill.",
+   "tr": "Her gün hesabı ödüyoruz."
   },
   "explain": {
    "en": "πληρώνω (pay), present, εμείς: πληρώνουμε",
@@ -665,7 +681,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day I pay the bill."
+   "en": "Every day I pay the bill.",
+   "tr": "Her gün hesabı ödüyorum."
   },
   "explain": {
    "en": "πληρώνω (pay), present, εγώ: πληρώνω",
@@ -704,7 +721,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you (pl.) know the answer."
+   "en": "Every day you (pl.) know the answer.",
+   "tr": "Her gün cevabı biliyorsunuz."
   },
   "explain": {
    "en": "ξέρω (know), present, εσείς: ξέρετε",
@@ -743,7 +761,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you know the answer."
+   "en": "Every day you know the answer.",
+   "tr": "Her gün cevabı biliyorsun."
   },
   "explain": {
    "en": "ξέρω (know), present, εσύ: ξέρεις",
@@ -774,7 +793,7 @@
    "1": [
     "δίνουν",
     "θα δώσουν",
-    "δώσαν",
+    "έδωσαν",
     "δίνω"
    ]
   },
@@ -783,7 +802,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day the children give bread to the dog."
+   "en": "Every day the children give bread to the dog.",
+   "tr": "Her gün çocuklar köpeğe ekmek veriyor."
   },
   "explain": {
    "en": "δίνω (give), present, αυτοί: δίνουν",
@@ -822,7 +842,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day Nikos gives bread to the dog."
+   "en": "Every day Nikos gives bread to the dog.",
+   "tr": "Her gün Nikos köpeğe ekmek veriyor."
   },
   "explain": {
    "en": "δίνω (give), present, αυτός: δίνει",
@@ -851,7 +872,7 @@
   "options": {
    "1": [
     "είδες",
-    "θα ιδείς",
+    "θα δεις",
     "βλέπεις",
     "είδα"
    ]
@@ -862,7 +883,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you saw Giorgos."
+   "en": "Yesterday you saw Giorgos.",
+   "tr": "Dün Yorgos'u gördün."
   },
   "explain": {
    "en": "βλέπω (see), aorist, εσύ: είδες",
@@ -902,7 +924,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you (pl.) saw Giorgos."
+   "en": "Yesterday you (pl.) saw Giorgos.",
+   "tr": "Dün Yorgos'u gördünüz."
   },
   "explain": {
    "en": "βλέπω (see), aorist, εσείς: είδατε",
@@ -942,7 +965,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday Nikos took the bus."
+   "en": "Yesterday Nikos took the bus.",
+   "tr": "Dün Nikos otobüse bindi."
   },
   "explain": {
    "en": "παίρνω (take), aorist, αυτός: πήρε",
@@ -983,7 +1007,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday the children took the bus."
+   "en": "Yesterday the children took the bus.",
+   "tr": "Dün çocuklar otobüse bindi."
   },
   "explain": {
    "en": "παίρνω (take), aorist, αυτοί: πήραν",
@@ -1022,7 +1047,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday we bought bread."
+   "en": "Yesterday we bought bread.",
+   "tr": "Dün ekmek satın aldık."
   },
   "explain": {
    "en": "αγοράζω (buy), aorist, εμείς: αγοράσαμε",
@@ -1061,7 +1087,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday I bought bread."
+   "en": "Yesterday I bought bread.",
+   "tr": "Dün ekmek satın aldım."
   },
   "explain": {
    "en": "αγοράζω (buy), aorist, εγώ: αγόρασα",
@@ -1100,7 +1127,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you (pl.) paid the bill."
+   "en": "Yesterday you (pl.) paid the bill.",
+   "tr": "Dün hesabı ödediniz."
   },
   "explain": {
    "en": "πληρώνω (pay), aorist, εσείς: πληρώσατε",
@@ -1139,7 +1167,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you paid the bill."
+   "en": "Yesterday you paid the bill.",
+   "tr": "Dün hesabı ödedin."
   },
   "explain": {
    "en": "πληρώνω (pay), aorist, εσύ: πλήρωσες",
@@ -1162,14 +1191,14 @@
   },
   "answer": {
    "1": [
-    "ξέραν",
     "ήξεραν",
-    "ξέρανε"
+    "ξέρανε",
+    "ξέραν"
    ]
   },
   "options": {
    "1": [
-    "ξέραν",
+    "ήξεραν",
     "θα ξέρουν",
     "ξέρουν",
     "ήξερα"
@@ -1181,11 +1210,12 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday the children knew the answer."
+   "en": "Yesterday the children knew the answer.",
+   "tr": "Dün çocuklar cevabı biliyordu."
   },
   "explain": {
-   "en": "ξέρω (know), imperfect, αυτοί: ξέραν",
-   "tr": "ξέρω (bilmek), geçmiş zaman (sürekli), αυτοί: ξέραν"
+   "en": "ξέρω (know), imperfect, αυτοί: ήξεραν",
+   "tr": "ξέρω (bilmek), geçmiş zaman (sürekli), αυτοί: ήξεραν"
   }
  },
  {
@@ -1221,7 +1251,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday Nikos knew the answer."
+   "en": "Yesterday Nikos knew the answer.",
+   "tr": "Dün Nikos cevabı biliyordu."
   },
   "explain": {
    "en": "ξέρω (know), imperfect, αυτός: ήξερε",
@@ -1262,7 +1293,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday I gave bread to the dog."
+   "en": "Yesterday I gave bread to the dog.",
+   "tr": "Dün köpeğe ekmek verdim."
   },
   "explain": {
    "en": "δίνω (give), aorist, εγώ: έδωσα",
@@ -1302,7 +1334,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday we gave bread to the dog."
+   "en": "Yesterday we gave bread to the dog.",
+   "tr": "Dün köpeğe ekmek verdik."
   },
   "explain": {
    "en": "δίνω (give), aorist, εμείς: δώσαμε",
@@ -1325,16 +1358,16 @@
   },
   "answer": {
    "1": [
-    "θα ιδεί",
-    "θα δει"
+    "θα δει",
+    "θα ιδεί"
    ]
   },
   "options": {
    "1": [
-    "θα ιδεί",
+    "θα δει",
     "είδε",
     "βλέπει",
-    "θα ιδώ"
+    "θα δω"
    ]
   },
   "grammar": [
@@ -1343,11 +1376,12 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow Nikos will see Giorgos."
+   "en": "Tomorrow Nikos will see Giorgos.",
+   "tr": "Yarın Nikos Yorgos'u görecek."
   },
   "explain": {
-   "en": "βλέπω (see), future, αυτός: θα ιδεί",
-   "tr": "βλέπω (görmek), gelecek zaman, αυτός: θα ιδεί"
+   "en": "βλέπω (see), future, αυτός: θα δει",
+   "tr": "βλέπω (görmek), gelecek zaman, αυτός: θα δει"
   }
  },
  {
@@ -1367,9 +1401,9 @@
   "answer": {
    "1": [
     "θα δούνε",
+    "θα δουν",
     "θα ιδούν",
-    "θα ιδούνε",
-    "θα δουν"
+    "θα ιδούνε"
    ]
   },
   "options": {
@@ -1377,7 +1411,7 @@
     "θα δούνε",
     "είδαν",
     "βλέπουν",
-    "θα ιδώ"
+    "θα δω"
    ]
   },
   "grammar": [
@@ -1386,7 +1420,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow the children will see Giorgos."
+   "en": "Tomorrow the children will see Giorgos.",
+   "tr": "Yarın çocuklar Yorgos'u görecek."
   },
   "explain": {
    "en": "βλέπω (see), future, αυτοί: θα δούνε",
@@ -1427,7 +1462,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow we will take the bus."
+   "en": "Tomorrow we will take the bus.",
+   "tr": "Yarın otobüse bineceğiz."
   },
   "explain": {
    "en": "παίρνω (take), future, εμείς: θα πάρουμε",
@@ -1467,7 +1503,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow I will take the bus."
+   "en": "Tomorrow I will take the bus.",
+   "tr": "Yarın otobüse bineceğim."
   },
   "explain": {
    "en": "παίρνω (take), future, εγώ: θα πάρω",
@@ -1506,7 +1543,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you (pl.) will buy bread."
+   "en": "Tomorrow you (pl.) will buy bread.",
+   "tr": "Yarın ekmek satın alacaksınız."
   },
   "explain": {
    "en": "αγοράζω (buy), future, εσείς: θα αγοράσετε",
@@ -1545,7 +1583,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you will buy bread."
+   "en": "Tomorrow you will buy bread.",
+   "tr": "Yarın ekmek satın alacaksın."
   },
   "explain": {
    "en": "αγοράζω (buy), future, εσύ: θα αγοράσεις",
@@ -1585,7 +1624,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow the children will pay the bill."
+   "en": "Tomorrow the children will pay the bill.",
+   "tr": "Yarın çocuklar hesabı ödeyecek."
   },
   "explain": {
    "en": "πληρώνω (pay), future, αυτοί: θα πληρώσουν",
@@ -1624,7 +1664,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow Nikos will pay the bill."
+   "en": "Tomorrow Nikos will pay the bill.",
+   "tr": "Yarın Nikos hesabı ödeyecek."
   },
   "explain": {
    "en": "πληρώνω (pay), future, αυτός: θα πληρώσει",
@@ -1664,7 +1705,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow I will know the answer."
+   "en": "Tomorrow I will know the answer.",
+   "tr": "Yarın cevabı bileceğim."
   },
   "explain": {
    "en": "ξέρω (know), future, εγώ: θα ξέρω",
@@ -1704,7 +1746,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow we will know the answer."
+   "en": "Tomorrow we will know the answer.",
+   "tr": "Yarın cevabı bileceğiz."
   },
   "explain": {
    "en": "ξέρω (know), future, εμείς: θα ξέρουμε",
@@ -1744,7 +1787,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you will give bread to the dog."
+   "en": "Tomorrow you will give bread to the dog.",
+   "tr": "Yarın köpeğe ekmek vereceksin."
   },
   "explain": {
    "en": "δίνω (give), future, εσύ: θα δώσεις",
@@ -1784,7 +1828,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you (pl.) will give bread to the dog."
+   "en": "Tomorrow you (pl.) will give bread to the dog.",
+   "tr": "Yarın köpeğe ekmek vereceksiniz."
   },
   "explain": {
    "en": "δίνω (give), future, εσείς: θα δώσετε",
@@ -1813,8 +1858,8 @@
   "options": {
    "1": [
     "βρίσκω",
-    "θα εύρω",
-    "ηύρα",
+    "θα βρω",
+    "βρήκα",
     "βρίσκεις"
    ]
   },
@@ -1823,7 +1868,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day I find the keys."
+   "en": "Every day I find the keys.",
+   "tr": "Her gün anahtarları buluyorum."
   },
   "explain": {
    "en": "βρίσκω (find), present, εγώ: βρίσκω",
@@ -1854,7 +1900,7 @@
    "1": [
     "βρίσκουμε",
     "θα βρούμε",
-    "ηύραμε",
+    "βρήκαμε",
     "βρίσκω"
    ]
   },
@@ -1863,7 +1909,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day we find the keys."
+   "en": "Every day we find the keys.",
+   "tr": "Her gün anahtarları buluyoruz."
   },
   "explain": {
    "en": "βρίσκω (find), present, εμείς: βρίσκουμε",
@@ -1902,7 +1949,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you read the newspaper."
+   "en": "Every day you read the newspaper.",
+   "tr": "Her gün gazeteyi okuyorsun."
   },
   "explain": {
    "en": "διαβάζω (read), present, εσύ: διαβάζεις",
@@ -1941,7 +1989,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you (pl.) read the newspaper."
+   "en": "Every day you (pl.) read the newspaper.",
+   "tr": "Her gün gazeteyi okuyorsunuz."
   },
   "explain": {
    "en": "διαβάζω (read), present, εσείς: διαβάζετε",
@@ -1980,7 +2029,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day Nikos writes a letter."
+   "en": "Every day Nikos writes a letter.",
+   "tr": "Her gün Nikos bir mektup yazıyor."
   },
   "explain": {
    "en": "γράφω (write), present, αυτός: γράφει",
@@ -2011,7 +2061,7 @@
    "1": [
     "γράφουν",
     "θα γράψουν",
-    "γράψαν",
+    "έγραψαν",
     "γράφω"
    ]
   },
@@ -2020,7 +2070,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day the children write a letter."
+   "en": "Every day the children write a letter.",
+   "tr": "Her gün çocuklar bir mektup yazıyor."
   },
   "explain": {
    "en": "γράφω (write), present, αυτοί: γράφουν",
@@ -2060,7 +2111,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day we listen to music."
+   "en": "Every day we listen to music.",
+   "tr": "Her gün müzik dinliyoruz."
   },
   "explain": {
    "en": "ακούω (listen to), present, εμείς: ακούμε",
@@ -2099,7 +2151,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day I listen to music."
+   "en": "Every day I listen to music.",
+   "tr": "Her gün müzik dinliyorum."
   },
   "explain": {
    "en": "ακούω (listen to), present, εγώ: ακούω",
@@ -2138,7 +2191,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Every day you (pl.) ask the doctor."
+   "en": "Every day you (pl.) ask the doctor.",
+   "tr": "Her gün doktora soruyorsunuz."
   },
   "explain": {
    "en": "ρωτάω (ask), present, εσείς: ρωτάτε",
@@ -2177,7 +2231,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Every day you ask the doctor."
+   "en": "Every day you ask the doctor.",
+   "tr": "Her gün doktora soruyorsun."
   },
   "explain": {
    "en": "ρωτάω (ask), present, εσύ: ρωτάς",
@@ -2217,7 +2272,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day the children get into the metro."
+   "en": "Every day the children get into the metro.",
+   "tr": "Her gün çocuklar metroya biniyor."
   },
   "explain": {
    "en": "μπαίνω (get into), present, αυτοί: μπαίνουν",
@@ -2256,7 +2312,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day Nikos gets into the metro."
+   "en": "Every day Nikos gets into the metro.",
+   "tr": "Her gün Nikos metroya biniyor."
   },
   "explain": {
    "en": "μπαίνω (get into), present, αυτός: μπαίνει",
@@ -2279,16 +2336,16 @@
   },
   "answer": {
    "1": [
-    "ηύρες",
-    "βρήκες"
+    "βρήκες",
+    "ηύρες"
    ]
   },
   "options": {
    "1": [
-    "ηύρες",
-    "θα εύρεις",
+    "βρήκες",
+    "θα βρεις",
     "βρίσκεις",
-    "ηύρα"
+    "βρήκα"
    ]
   },
   "grammar": [
@@ -2297,11 +2354,12 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you found the keys."
+   "en": "Yesterday you found the keys.",
+   "tr": "Dün anahtarları buldun."
   },
   "explain": {
-   "en": "βρίσκω (find), aorist, εσύ: ηύρες",
-   "tr": "βρίσκω (bulmak), geçmiş zaman (aorist), εσύ: ηύρες"
+   "en": "βρίσκω (find), aorist, εσύ: βρήκες",
+   "tr": "βρίσκω (bulmak), geçmiş zaman (aorist), εσύ: βρήκες"
   }
  },
  {
@@ -2320,16 +2378,16 @@
   },
   "answer": {
    "1": [
-    "ηύρατε",
-    "βρήκατε"
+    "βρήκατε",
+    "ηύρατε"
    ]
   },
   "options": {
    "1": [
-    "ηύρατε",
+    "βρήκατε",
     "θα βρείτε",
     "βρίσκετε",
-    "ηύρα"
+    "βρήκα"
    ]
   },
   "grammar": [
@@ -2338,11 +2396,12 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you (pl.) found the keys."
+   "en": "Yesterday you (pl.) found the keys.",
+   "tr": "Dün anahtarları buldunuz."
   },
   "explain": {
-   "en": "βρίσκω (find), aorist, εσείς: ηύρατε",
-   "tr": "βρίσκω (bulmak), geçmiş zaman (aorist), εσείς: ηύρατε"
+   "en": "βρίσκω (find), aorist, εσείς: βρήκατε",
+   "tr": "βρίσκω (bulmak), geçmiş zaman (aorist), εσείς: βρήκατε"
   }
  },
  {
@@ -2377,7 +2436,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday Nikos read the newspaper."
+   "en": "Yesterday Nikos read the newspaper.",
+   "tr": "Dün Nikos gazeteyi okudu."
   },
   "explain": {
    "en": "διαβάζω (read), aorist, αυτός: διάβασε",

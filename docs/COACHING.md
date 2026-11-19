@@ -179,6 +179,9 @@ For **B1 grammar**, use these `grammar` tags on `form` items, so coverage can tr
 
 The topics `opinion`, `feelings`, `office`, `health`, `work`, `education` and `public_services` mark B1 vocabulary domains.
 
+- **Vocab `say`** (optional): the text the browser voice reads instead of `el`. Use it when `el` is not a word a voice can read: a letter (`Σ σ ς` → `"σίγμα. σούπα"`), a letter pair, or a phrase with a placeholder (`με λένε …` → `"με λένε Νίκο"`).
+- **Every vocab item needs both `tr` and `en`.** A missing one shows the other language in that UI, tagged EN or TR.
+
 ### 5.2 The quality rule: the learner cannot tell when you are wrong
 
 A wrong item teaches a mistake, and they will trust it. So, for **every** item:

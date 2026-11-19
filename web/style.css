@@ -646,3 +646,6 @@ details.verb summary .el { font-size: 19px; }
   .ch-pager { grid-template-columns: 1fr 1fr; }
   .ch-pager .pager-index { grid-column: 1 / -1; grid-row: 2; }
 }
+
+/* a meaning shown in the other language because this word has none in the UI language yet */
+.lang-tag { font-size: 10px; font-weight: 700; letter-spacing: .05em; padding: 1px 5px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); vertical-align: middle; }

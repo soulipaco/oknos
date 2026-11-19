@@ -16,7 +16,8 @@
    "el": "το ταξί",
    "en": "the taxi",
    "tr": "taksi"
-  }
+  },
+  "say": "άλφα. ταξί"
  },
  {
   "id": "l-vita",
@@ -35,7 +36,8 @@
    "el": "η βαλίτσα",
    "en": "the suitcase",
    "tr": "valiz"
-  }
+  },
+  "say": "βήτα. βαλίτσα"
  },
  {
   "id": "l-gamma",
@@ -54,7 +56,8 @@
    "el": "το γάλα",
    "en": "the milk",
    "tr": "süt"
-  }
+  },
+  "say": "γάμα. γάλα"
  },
  {
   "id": "l-delta",
@@ -73,7 +76,8 @@
    "el": "το δώρο",
    "en": "the present",
    "tr": "hediye"
-  }
+  },
+  "say": "δέλτα. δώρο"
  },
  {
   "id": "l-epsilon",
@@ -92,7 +96,8 @@
    "el": "η Ελλάδα",
    "en": "Greece",
    "tr": "Yunanistan"
-  }
+  },
+  "say": "έψιλον. Ελλάδα"
  },
  {
   "id": "l-zita",
@@ -111,7 +116,8 @@
    "el": "η ζάχαρη",
    "en": "the sugar",
    "tr": "şeker"
-  }
+  },
+  "say": "ζήτα. ζάχαρη"
  },
  {
   "id": "l-ita",
@@ -130,7 +136,8 @@
    "el": "ο ήλιος",
    "en": "the sun",
    "tr": "güneş"
-  }
+  },
+  "say": "ήτα. ήλιος"
  },
  {
   "id": "l-thita",
@@ -149,7 +156,8 @@
    "el": "το θέατρο",
    "en": "the theatre",
    "tr": "tiyatro"
-  }
+  },
+  "say": "θήτα. θέατρο"
  },
  {
   "id": "l-giota",
@@ -168,7 +176,8 @@
    "el": "η Ιταλία",
    "en": "Italy",
    "tr": "İtalya"
-  }
+  },
+  "say": "γιώτα. Ιταλία"
  },
  {
   "id": "l-kappa",
@@ -187,7 +196,8 @@
    "el": "ο καφές",
    "en": "the coffee",
    "tr": "kahve"
-  }
+  },
+  "say": "κάππα. καφές"
  },
  {
   "id": "l-lamda",
@@ -206,7 +216,8 @@
    "el": "το λεμόνι",
    "en": "the lemon",
    "tr": "limon"
-  }
+  },
+  "say": "λάμδα. λεμόνι"
  },
  {
   "id": "l-mi",
@@ -225,7 +236,8 @@
    "el": "η μουσική",
    "en": "music",
    "tr": "müzik"
-  }
+  },
+  "say": "μι. μουσική"
  },
  {
   "id": "l-ni",
@@ -244,7 +256,8 @@
    "el": "το νερό",
    "en": "the water",
    "tr": "su"
-  }
+  },
+  "say": "νι. νερό"
  },
  {
   "id": "l-xi",
@@ -263,7 +276,8 @@
    "el": "το ταξί",
    "en": "the taxi",
    "tr": "taksi"
-  }
+  },
+  "say": "ξι. ταξί"
  },
  {
   "id": "l-omikron",
@@ -282,7 +296,8 @@
    "el": "το όνομα",
    "en": "the name",
    "tr": "isim"
-  }
+  },
+  "say": "όμικρον. όνομα"
  },
  {
   "id": "l-pi",
@@ -301,7 +316,8 @@
    "el": "η πατάτα",
    "en": "the potato",
    "tr": "patates"
-  }
+  },
+  "say": "πι. πατάτα"
  },
  {
   "id": "l-ro",
@@ -320,7 +336,8 @@
    "el": "το ρολόι",
    "en": "the clock",
    "tr": "saat"
-  }
+  },
+  "say": "ρο. ρολόι"
  },
  {
   "id": "l-sigma",
@@ -339,7 +356,8 @@
    "el": "η σούπα",
    "en": "the soup",
    "tr": "çorba"
-  }
+  },
+  "say": "σίγμα. σούπα"
  },
  {
   "id": "l-taf",
@@ -358,7 +376,8 @@
    "el": "η τηλεόραση",
    "en": "the television",
    "tr": "televizyon"
-  }
+  },
+  "say": "ταυ. τηλεόραση"
  },
  {
   "id": "l-ipsilon",
@@ -377,7 +396,8 @@
    "el": "ο ύπνος",
    "en": "sleep",
    "tr": "uyku"
-  }
+  },
+  "say": "ύψιλον. ύπνος"
  },
  {
   "id": "l-fi",
@@ -396,7 +416,8 @@
    "el": "η φωτογραφία",
    "en": "the photo",
    "tr": "fotoğraf"
-  }
+  },
+  "say": "φι. φωτογραφία"
  },
  {
   "id": "l-chi",
@@ -415,7 +436,8 @@
    "el": "το χαλί",
    "en": "the carpet",
    "tr": "halı"
-  }
+  },
+  "say": "χι. χαλί"
  },
  {
   "id": "l-psi",
@@ -434,7 +456,8 @@
    "el": "το ψωμί",
    "en": "the bread",
    "tr": "ekmek"
-  }
+  },
+  "say": "ψι. ψωμί"
  },
  {
   "id": "l-omega",
@@ -453,7 +476,8 @@
    "el": "η ώρα",
    "en": "the hour",
    "tr": "saat (zaman)"
-  }
+  },
+  "say": "ωμέγα. ώρα"
  },
  {
   "id": "d-ou",
@@ -471,7 +495,8 @@
    "el": "η σούπα",
    "en": "the soup",
    "tr": "çorba"
-  }
+  },
+  "say": "σούπα"
  },
  {
   "id": "d-ai",
@@ -489,7 +514,8 @@
    "el": "και",
    "en": "and",
    "tr": "ve"
-  }
+  },
+  "say": "και"
  },
  {
   "id": "d-ei",
@@ -507,7 +533,8 @@
    "el": "είναι",
    "en": "is",
    "tr": "-dir"
-  }
+  },
+  "say": "είναι"
  },
  {
   "id": "d-oi",
@@ -525,7 +552,8 @@
    "el": "οι φίλοι",
    "en": "the friends",
    "tr": "arkadaşlar"
-  }
+  },
+  "say": "φίλοι"
  },
  {
   "id": "d-af",
@@ -537,13 +565,14 @@
   ],
   "el": "αυ",
   "pos": "digraph",
-  "en": "av, or af before p, t, k, s, f, th, ch",
-  "tr": "av; p, t, k, s, f, θ, χ önünde af",
+  "en": "av, or af before p, t, k, s, f, th, ch, ks, ps",
+  "tr": "av; p, t, k, s, f, θ, χ, ξ, ψ önünde af",
   "example": {
    "el": "το αυτοκίνητο",
    "en": "the car",
    "tr": "araba"
-  }
+  },
+  "say": "αυτοκίνητο"
  },
  {
   "id": "d-ef",
@@ -555,13 +584,14 @@
   ],
   "el": "ευ",
   "pos": "digraph",
-  "en": "ev, or ef before p, t, k, s, f, th, ch",
-  "tr": "ev; p, t, k, s, f, θ, χ önünde ef",
+  "en": "ev, or ef before p, t, k, s, f, th, ch, ks, ps",
+  "tr": "ev; p, t, k, s, f, θ, χ, ξ, ψ önünde ef",
   "example": {
    "el": "ευχαριστώ",
    "en": "thank you",
    "tr": "teşekkür ederim"
-  }
+  },
+  "say": "ευχαριστώ"
  },
  {
   "id": "d-mp",
@@ -579,7 +609,8 @@
    "el": "η μπανάνα",
    "en": "the banana",
    "tr": "muz"
-  }
+  },
+  "say": "μπανάνα"
  },
  {
   "id": "d-nt",
@@ -597,7 +628,8 @@
    "el": "η ντομάτα",
    "en": "the tomato",
    "tr": "domates"
-  }
+  },
+  "say": "ντομάτα"
  },
  {
   "id": "d-gk",
@@ -615,7 +647,8 @@
    "el": "το γκαράζ",
    "en": "the garage",
    "tr": "garaj"
-  }
+  },
+  "say": "γκαράζ"
  },
  {
   "id": "d-gg",
@@ -633,7 +666,8 @@
    "el": "η Αγγλία",
    "en": "England",
    "tr": "İngiltere"
-  }
+  },
+  "say": "Αγγλία"
  },
  {
   "id": "d-ts",
@@ -651,7 +685,8 @@
    "el": "το τσάι",
    "en": "the tea",
    "tr": "çay"
-  }
+  },
+  "say": "τσάι"
  },
  {
   "id": "d-tz",
@@ -669,7 +704,8 @@
    "el": "το τζάμι",
    "en": "the window pane",
    "tr": "cam"
-  }
+  },
+  "say": "τζάμι"
  },
  {
   "id": "d-tonos",
@@ -687,7 +723,8 @@
    "el": "ο καφές",
    "en": "the coffee",
    "tr": "kahve"
-  }
+  },
+  "say": "καφές"
  },
  {
   "id": "s-ma",

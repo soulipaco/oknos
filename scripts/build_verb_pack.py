@@ -92,13 +92,23 @@ OVERRIDES = {
 }
 
 
+ARCHAIC = ("θα ιδ", "ηύρ", "θα εύρ", "κάμ", "έκαμ", "σθ")
+# Turkish translations of the sentences, by item id (written for this project; CC BY-SA 4.0 with the pack).
+TR_SENTENCES = json.loads((Path(__file__).with_name("verb_pack_tr.json")).read_text(encoding="utf-8"))
+
+
 def preferred(forms: set[str]) -> list[str]:
     """Order accepted variants so the standard modern form comes first (ήρθαν before ήλθανε,
     λένε before λεν, δίνουμε before δίνομε, έδωσα before έδωκα)."""
     def key(f):
         last = f.split(" ")[-1]
+        # a spoken form without the augment (κάναν, ξέραν, φύγαν) goes after the one with it
+        unaugmented = any(greek.fold(o).endswith(greek.fold(f)) and len(o) == len(f) + 1 for o in forms if o != f)
         return (
+            # older or rare stems Wiktionary also lists: θα ιδεί, ηύρες, θα εύρει, έκαμε, θα χρειασθείς
+            any(old in f for old in ARCHAIC),
             "λθ" in f or "δωκ" in f,
+            unaugmented,
             last.endswith(("ουνε", "ανε", "ενε", "ονε")),
             last.endswith("ομε") and not last.endswith("ουμε"),
             not greek.is_accented(last) and greek.syllables(last) >= 1 and any(greek.is_accented(o.split(" ")[-1]) for o in forms),
@@ -181,7 +191,7 @@ def main() -> int:
                         "answer": {"1": forms},
                         "options": {"1": options},
                         "grammar": tags,
-                        "translation": {"en": en},
+                        "translation": {"en": en, "tr": TR_SENTENCES.get(f"f-{ascii_slug}-{real_tense}-{person}")},
                         "explain": {"en": f"{lemma} ({verb_en[0]}), {real_tense}, {PERSON_LABEL[person]}: {forms[0]}",
                                     "tr": f"{lemma} ({verb_tr}), {TENSE_TR[real_tense]}, {PERSON_LABEL[person]}: {forms[0]}"},
                     })

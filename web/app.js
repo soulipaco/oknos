@@ -153,11 +153,14 @@ async function lookupWord(target) {
   if (popover !== box) return;
   const rows = res.entries.length
     ? res.entries.map(e => h("div", { class: "pop-row" },
-        h("span", { class: "el", lang: "el" }, e.el), speakButton(e.el, true),
-        h("span", { class: "pop-meaning" }, e.meaning)))
+        h("span", { class: "el", lang: "el" }, e.el), speakButton(e.say || e.el, true),
+        h("span", { class: "pop-meaning" }, meaningText(e.meaning, e.meaning_lang))))
     : [h("p", { class: "muted" }, t("lookup_none", { word }))];
   if (res.match === "stem") rows.push(h("p", { class: "muted small" }, t("lookup_similar")));
-  box.replaceChildren(h("div", { class: "pop-head" }, h("strong", { lang: "el" }, word), speakButton(word, true)), ...rows);
+  if (res.match === "phrase") rows.push(h("p", { class: "muted small" }, t("lookup_phrase")));
+  box.replaceChildren(h("div", { class: "pop-head" }, h("strong", { lang: "el" }, word),
+    // a single letter or pair (σ, μπ) is read as the card's name and example, not spelled out
+    speakButton((word.length <= 2 && res.entries[0]?.say) || word, true)), ...rows);
 }
 
 document.addEventListener("click", (e) => {
@@ -170,6 +173,12 @@ document.addEventListener("keydown", (e) => {
   const w = e.target.closest?.(".w");
   if (w && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); lookupWord(w); }
 });
+
+function meaningText(text, lang) {
+  // A meaning in the UI language as plain text; one that fell back to the other language says so.
+  if (!lang || lang === state.lang) return text;
+  return h("span", { class: "other-lang", title: t("meaning_other_lang") }, text, " ", h("span", { class: "lang-tag" }, lang.toUpperCase()));
+}
 
 function translatable(greekEl, translation, { rubric = false } = {}) {
   // A Greek line with a "Translate" toggle underneath it. In a mock exam only the rubric can be
@@ -657,12 +666,12 @@ function renderLearn(card) {
       tr(L.example) ? h("p", { class: "translation" }, tr(L.example)) : null)) : null;
   const body = h("article", { class: "card learn-card" },
     h("div", { class: "question" }, h("div", { class: "ask" }, t("learn_title")),
-      h("div", { class: "prompt-row" }, greekText(L.el, { tag: "p", cls: "big-greek", tappable: false }), speakButton(L.el))),
-    h("p", { class: "learn-meaning" }, L.meaning),
+      h("div", { class: "prompt-row" }, greekText(L.el, { tag: "p", cls: "big-greek", tappable: false }), speakButton(L.say || L.el))),
+    h("p", { class: "learn-meaning" }, meaningText(L.meaning, L.meaning_lang)),
     example ? h("div", { class: "learn-example" }, h("p", { class: "muted small" }, t("learn_example")), example) : null,
     h("div", { class: "actions" }, go));
   app.replaceChildren(...sessionFrame(body, t("segment_learn")));
-  setTimeout(() => speak(L.el, 0.85), 200);
+  setTimeout(() => speak(L.say || L.el, 0.85), 200);
   go.focus();
 }
 
@@ -1201,7 +1210,7 @@ function showFeedback(result, ui) {
       parts.push(h("p", {}, t("answer_is", { answer: answerText })));
     }
     if (card.type === "vocab" && card.direction !== "el_meaning") {
-      parts.push(h("div", { class: "example" }, speakButton(card.speak, true), greekText(card.speak, { cls: "el" })));
+      parts.push(h("div", { class: "example" }, speakButton(card.speak, true), greekText(card.el || card.speak, { cls: "el" })));
     }
   } else if (card.type === "form") {
     for (const [g, input] of Object.entries(ui.formInputs || {})) {
@@ -1311,7 +1320,7 @@ function renderSummary(sum) {
   lines.push(h("p", {}, t("summary_tomorrow", { n: sum.due_tomorrow })));
   const missed = sum.missed?.length
     ? [h("h2", {}, t("summary_missed")),
-       h("ul", {}, sum.missed.map(w => h("li", {}, greekText(w.el, { cls: "el" }), speakButton(w.el, true), h("span", { class: "muted" }, w.meaning))))]
+       h("ul", {}, sum.missed.map(w => h("li", {}, greekText(w.el, { cls: "el" }), speakButton(w.say || w.el, true), h("span", { class: "muted" }, w.meaning))))]
     : [];
   const done = h("button", { class: "primary", type: "button", onclick: () => go("home") }, t("done"));
   app.replaceChildren(
@@ -1492,7 +1501,7 @@ async function renderStage(id) {
   let st;
   try { st = await api(`/api/curriculum/stages/${encodeURIComponent(id)}`); } catch { return showError(); }
   const words = st.words_list.map(w => h("li", { class: "word-row" },
-    speakButton(w.el, true), greekText(w.el, { cls: "el", tappable: false }), h("span", { class: "muted" }, w.meaning), statusChip(w.status)));
+    speakButton(w.say || w.el, true), greekText(w.el, { cls: "el", tappable: false }), h("span", { class: "muted" }, meaningText(w.meaning, w.meaning_lang)), statusChip(w.status)));
   const byLemma = {};
   for (const f of st.forms_list) (byLemma[f.lemma || "?"] ||= []).push(f);
   const forms = Object.entries(byLemma).map(([lemma, fs]) => h("li", {},
@@ -1578,8 +1587,8 @@ async function renderWords() {
         practise.textContent = t("w_practise", { n: selected.size });
       } });
       box.checked = selected.has(w.key);
-      return h("li", { class: `word-row${w.open ? "" : " locked"}` }, box, speakButton(w.el, true),
-        h("span", { class: "el", lang: "el" }, w.el), h("span", { class: "muted" }, w.meaning),
+      return h("li", { class: `word-row${w.open ? "" : " locked"}` }, box, speakButton(w.say || w.el, true),
+        h("span", { class: "el", lang: "el" }, w.el), h("span", { class: "muted" }, meaningText(w.meaning, w.meaning_lang)),
         w.open ? statusChip(w.status) : h("span", { class: "chip st-locked" }, t("w_locked")));
     }));
     more.hidden = rows.length <= f.shown;
@@ -1686,9 +1695,10 @@ const CHAPTER_BLOCKS = {
   table: (b) => h("figure", { class: "ch-table" },
     b.caption ? h("figcaption", {}, inlineText(tr(b.caption), "span")) : null,
     h("div", { class: "table-wrap" }, h("table", {},
-      h("thead", {}, h("tr", {}, b.head.map(c => h("th", {}, greekText(c, { tappable: false }))))),
+      // a cell is Greek (a string) or an explanation in both languages ({tr, en})
+      h("thead", {}, h("tr", {}, b.head.map(c => h("th", {}, typeof c === "string" ? greekText(c, { tappable: false }) : inlineText(tr(c), "span"))))),
       h("tbody", {}, b.rows.map(row => h("tr", {}, row.map((c, j) => h(j === 0 ? "th" : "td", j === 0 ? { scope: "row" } : {},
-        greekText(c, { cls: "el" })))))))),
+        typeof c === "string" ? greekText(c, { cls: "el" }) : inlineText(tr(c), "span")))))))),
     b.note ? h("p", { class: "muted small" }, inlineText(tr(b.note), "span")) : null),
 
   examples: (b) => h("ul", { class: "ch-examples" }, b.items.map(e => h("li", {},
@@ -1697,7 +1707,7 @@ const CHAPTER_BLOCKS = {
     e.note ? h("p", { class: "muted small" }, inlineText(tr(e.note), "span")) : null))),
 
   words: (b) => h("ul", { class: "word-list ch-words" }, (b.words || []).map(w => h("li", { class: "word-row" },
-    speakButton(w.el, true), h("span", { class: "el", lang: "el" }, w.el), h("span", { class: "muted" }, w.meaning),
+    speakButton(w.say || w.el, true), h("span", { class: "el", lang: "el" }, w.el), h("span", { class: "muted" }, meaningText(w.meaning, w.meaning_lang)),
     statusChip(w.status)))),
 
   tip: (b) => h("aside", { class: `ch-tip ${b.kind}` }, h("p", { class: "tip-label" }, t(`ch_tip_${b.kind}`)), paragraphs(tr(b))),

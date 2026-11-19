@@ -705,7 +705,9 @@ def create_app() -> FastAPI:
                 )
                 # Tapping a word signals it was not known (unless the match is ambiguous).
                 sure = how in ("exact", "accents") or (how == "stem" and len(entries) == 1)
-                if entries and sure and entries[0].item_key != body.item_key:
+                # only real items have a review schedule (function words such as την are not items)
+                if (entries and sure and entries[0].item_key != body.item_key
+                        and entries[0].item_key in app.state.catalog.items):
                     scheduler.lookup_signal(conn, entries[0].item_key)
         finally:
             conn.close()

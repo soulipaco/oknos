@@ -31,7 +31,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Every day I am at home."
+   "en": "Every day I am at home.",
+   "tr": "Her gün evdeyim."
   },
   "explain": {
    "en": "είμαι (be), present, εγώ: είμαι",
@@ -70,7 +71,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Every day we are at home."
+   "en": "Every day we are at home.",
+   "tr": "Her gün evdeyiz."
   },
   "explain": {
    "en": "είμαι (be), present, εμείς: είμαστε",
@@ -109,7 +111,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you have a lot of work."
+   "en": "Every day you have a lot of work.",
+   "tr": "Her gün çok işin var."
   },
   "explain": {
    "en": "έχω (have), present, εσύ: έχεις",
@@ -148,7 +151,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you (pl.) have a lot of work."
+   "en": "Every day you (pl.) have a lot of work.",
+   "tr": "Her gün çok işiniz var."
   },
   "explain": {
    "en": "έχω (have), present, εσείς: έχετε",
@@ -188,7 +192,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day Nikos goes to the street market."
+   "en": "Every day Nikos goes to the street market.",
+   "tr": "Her gün Nikos semt pazarına gidiyor."
   },
   "explain": {
    "en": "πηγαίνω (go), present, αυτός: πάει",
@@ -230,7 +235,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day the children go to the street market."
+   "en": "Every day the children go to the street market.",
+   "tr": "Her gün çocuklar semt pazarına gidiyor."
   },
   "explain": {
    "en": "πηγαίνω (go), present, αυτοί: πάνε",
@@ -269,7 +275,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Every day we come to the office."
+   "en": "Every day we come to the office.",
+   "tr": "Her gün ofise geliyoruz."
   },
   "explain": {
    "en": "έρχομαι (come), present, εμείς: ερχόμαστε",
@@ -308,7 +315,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Every day I come to the office."
+   "en": "Every day I come to the office.",
+   "tr": "Her gün ofise geliyorum."
   },
   "explain": {
    "en": "έρχομαι (come), present, εγώ: έρχομαι",
@@ -337,8 +345,8 @@
   "options": {
    "1": [
     "κάνετε",
-    "θα κάμετε",
-    "κάματε",
+    "θα κάνετε",
+    "κάνατε",
     "κάνεις"
    ]
   },
@@ -347,7 +355,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you (pl.) do the shopping."
+   "en": "Every day you (pl.) do the shopping.",
+   "tr": "Her gün alışveriş yapıyorsunuz."
   },
   "explain": {
    "en": "κάνω (do), present, εσείς: κάνετε",
@@ -376,8 +385,8 @@
   "options": {
    "1": [
     "κάνεις",
-    "θα κάμεις",
-    "έκαμες",
+    "θα κάνεις",
+    "έκανες",
     "κάνει"
    ]
   },
@@ -386,7 +395,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you do the shopping."
+   "en": "Every day you do the shopping.",
+   "tr": "Her gün alışveriş yapıyorsun."
   },
   "explain": {
    "en": "κάνω (do), present, εσύ: κάνεις",
@@ -425,7 +435,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day Nikos wants a coffee."
+   "en": "Every day Nikos wants a coffee.",
+   "tr": "Her gün Nikos bir kahve istiyor."
   },
   "explain": {
    "en": "θέλω (want), present, αυτός: θέλει",
@@ -466,7 +477,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Yesterday you were at home."
+   "en": "Yesterday you were at home.",
+   "tr": "Dün evdeydin."
   },
   "explain": {
    "en": "είμαι (be), imperfect, εσύ: ήσουν",
@@ -507,7 +519,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Yesterday you (pl.) were at home."
+   "en": "Yesterday you (pl.) were at home.",
+   "tr": "Dün evdeydiniz."
   },
   "explain": {
    "en": "είμαι (be), imperfect, εσείς: ήσασταν",
@@ -547,7 +560,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday Nikos had a lot of work."
+   "en": "Yesterday Nikos had a lot of work.",
+   "tr": "Dün Nikos'un çok işi vardı."
   },
   "explain": {
    "en": "έχω (have), imperfect, αυτός: είχε",
@@ -588,7 +602,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday the children had a lot of work."
+   "en": "Yesterday the children had a lot of work.",
+   "tr": "Dün çocukların çok işi vardı."
   },
   "explain": {
    "en": "έχω (have), imperfect, αυτοί: είχαν",
@@ -628,7 +643,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday we went to the street market."
+   "en": "Yesterday we went to the street market.",
+   "tr": "Dün semt pazarına gittik."
   },
   "explain": {
    "en": "πηγαίνω (go), aorist, εμείς: πήγαμε",
@@ -668,7 +684,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday I went to the street market."
+   "en": "Yesterday I went to the street market.",
+   "tr": "Dün semt pazarına gittim."
   },
   "explain": {
    "en": "πηγαίνω (go), aorist, εγώ: πήγα",
@@ -709,7 +726,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Yesterday you (pl.) came to the office."
+   "en": "Yesterday you (pl.) came to the office.",
+   "tr": "Dün ofise geldiniz."
   },
   "explain": {
    "en": "έρχομαι (come), aorist, εσείς: ήρθατε",
@@ -750,7 +768,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Yesterday you came to the office."
+   "en": "Yesterday you came to the office.",
+   "tr": "Dün ofise geldin."
   },
   "explain": {
    "en": "έρχομαι (come), aorist, εσύ: ήρθες",
@@ -773,18 +792,18 @@
   },
   "answer": {
    "1": [
-    "κάναν",
-    "έκαμαν",
     "έκαναν",
-    "κάνανε"
+    "κάνανε",
+    "κάναν",
+    "έκαμαν"
    ]
   },
   "options": {
    "1": [
-    "κάναν",
-    "θα κάμουν",
+    "έκαναν",
+    "θα κάνουν",
     "κάνουν",
-    "έκαμα"
+    "έκανα"
    ]
   },
   "grammar": [
@@ -793,11 +812,12 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday the children did the shopping."
+   "en": "Yesterday the children did the shopping.",
+   "tr": "Dün çocuklar alışveriş yaptı."
   },
   "explain": {
-   "en": "κάνω (do), aorist, αυτοί: κάναν",
-   "tr": "κάνω (yapmak), geçmiş zaman (aorist), αυτοί: κάναν"
+   "en": "κάνω (do), aorist, αυτοί: έκαναν",
+   "tr": "κάνω (yapmak), geçmiş zaman (aorist), αυτοί: έκαναν"
   }
  },
  {
@@ -816,16 +836,16 @@
   },
   "answer": {
    "1": [
-    "έκαμε",
-    "έκανε"
+    "έκανε",
+    "έκαμε"
    ]
   },
   "options": {
    "1": [
-    "έκαμε",
-    "θα κάμει",
+    "έκανε",
+    "θα κάνει",
     "κάνει",
-    "έκαμα"
+    "έκανα"
    ]
   },
   "grammar": [
@@ -834,11 +854,12 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday Nikos did the shopping."
+   "en": "Yesterday Nikos did the shopping.",
+   "tr": "Dün Nikos alışveriş yaptı."
   },
   "explain": {
-   "en": "κάνω (do), aorist, αυτός: έκαμε",
-   "tr": "κάνω (yapmak), geçmiş zaman (aorist), αυτός: έκαμε"
+   "en": "κάνω (do), aorist, αυτός: έκανε",
+   "tr": "κάνω (yapmak), geçmiş zaman (aorist), αυτός: έκανε"
   }
  },
  {
@@ -873,7 +894,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday I wanted a coffee."
+   "en": "Yesterday I wanted a coffee.",
+   "tr": "Dün bir kahve istiyordum."
   },
   "explain": {
    "en": "θέλω (want), imperfect, εγώ: ήθελα",
@@ -912,7 +934,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday we wanted a coffee."
+   "en": "Yesterday we wanted a coffee.",
+   "tr": "Dün bir kahve istiyorduk."
   },
   "explain": {
    "en": "θέλω (want), imperfect, εμείς: θέλαμε",
@@ -952,7 +975,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Tomorrow Nikos will be at home."
+   "en": "Tomorrow Nikos will be at home.",
+   "tr": "Yarın Nikos evde olacak."
   },
   "explain": {
    "en": "είμαι (be), future, αυτός: θα είναι",
@@ -992,7 +1016,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Tomorrow the children will be at home."
+   "en": "Tomorrow the children will be at home.",
+   "tr": "Yarın çocuklar evde olacak."
   },
   "explain": {
    "en": "είμαι (be), future, αυτοί: θα είναι",
@@ -1032,7 +1057,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow we will have a lot of work."
+   "en": "Tomorrow we will have a lot of work.",
+   "tr": "Yarın çok işimiz olacak."
   },
   "explain": {
    "en": "έχω (have), future, εμείς: θα έχουμε",
@@ -1072,7 +1098,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow I will have a lot of work."
+   "en": "Tomorrow I will have a lot of work.",
+   "tr": "Yarın çok işim olacak."
   },
   "explain": {
    "en": "έχω (have), future, εγώ: θα έχω",
@@ -1112,7 +1139,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you (pl.) will go to the street market."
+   "en": "Tomorrow you (pl.) will go to the street market.",
+   "tr": "Yarın semt pazarına gideceksiniz."
   },
   "explain": {
    "en": "πηγαίνω (go), future, εσείς: θα πάτε",
@@ -1152,7 +1180,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you will go to the street market."
+   "en": "Tomorrow you will go to the street market.",
+   "tr": "Yarın semt pazarına gideceksin."
   },
   "explain": {
    "en": "πηγαίνω (go), future, εσύ: θα πας",
@@ -1195,7 +1224,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Tomorrow the children will come to the office."
+   "en": "Tomorrow the children will come to the office.",
+   "tr": "Yarın çocuklar ofise gelecek."
   },
   "explain": {
    "en": "έρχομαι (come), future, αυτοί: θα έρθουν",
@@ -1236,7 +1266,8 @@
    "verb.deponent"
   ],
   "translation": {
-   "en": "Tomorrow Nikos will come to the office."
+   "en": "Tomorrow Nikos will come to the office.",
+   "tr": "Yarın Nikos ofise gelecek."
   },
   "explain": {
    "en": "έρχομαι (come), future, αυτός: θα έρθει",
@@ -1259,16 +1290,16 @@
   },
   "answer": {
    "1": [
-    "θα κάμω",
-    "θα κάνω"
+    "θα κάνω",
+    "θα κάμω"
    ]
   },
   "options": {
    "1": [
-    "θα κάμω",
-    "έκαμα",
-    "θα κάμεις",
-    "θα κάμει"
+    "θα κάνω",
+    "έκανα",
+    "θα κάνεις",
+    "θα κάνει"
    ]
   },
   "grammar": [
@@ -1277,11 +1308,12 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow I will do the shopping."
+   "en": "Tomorrow I will do the shopping.",
+   "tr": "Yarın alışveriş yapacağım."
   },
   "explain": {
-   "en": "κάνω (do), future, εγώ: θα κάμω",
-   "tr": "κάνω (yapmak), gelecek zaman, εγώ: θα κάμω"
+   "en": "κάνω (do), future, εγώ: θα κάνω",
+   "tr": "κάνω (yapmak), gelecek zaman, εγώ: θα κάνω"
   }
  },
  {
@@ -1300,18 +1332,18 @@
   },
   "answer": {
    "1": [
-    "θα κάμουμε",
     "θα κάνουμε",
-    "θα κάμομε",
-    "θα κάνομε"
+    "θα κάνομε",
+    "θα κάμουμε",
+    "θα κάμομε"
    ]
   },
   "options": {
    "1": [
-    "θα κάμουμε",
-    "κάμαμε",
+    "θα κάνουμε",
+    "κάναμε",
     "κάνουμε",
-    "θα κάμω"
+    "θα κάνω"
    ]
   },
   "grammar": [
@@ -1320,11 +1352,12 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow we will do the shopping."
+   "en": "Tomorrow we will do the shopping.",
+   "tr": "Yarın alışveriş yapacağız."
   },
   "explain": {
-   "en": "κάνω (do), future, εμείς: θα κάμουμε",
-   "tr": "κάνω (yapmak), gelecek zaman, εμείς: θα κάμουμε"
+   "en": "κάνω (do), future, εμείς: θα κάνουμε",
+   "tr": "κάνω (yapmak), gelecek zaman, εμείς: θα κάνουμε"
   }
  },
  {
@@ -1359,7 +1392,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you will want a coffee."
+   "en": "Tomorrow you will want a coffee.",
+   "tr": "Yarın bir kahve isteyeceksin."
   },
   "explain": {
    "en": "θέλω (want), future, εσύ: θα θέλεις",
@@ -1398,7 +1432,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow you (pl.) will want a coffee."
+   "en": "Tomorrow you (pl.) will want a coffee.",
+   "tr": "Yarın bir kahve isteyeceksiniz."
   },
   "explain": {
    "en": "θέλω (want), future, εσείς: θα θέλετε",
@@ -1438,7 +1473,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day I eat souvlaki."
+   "en": "Every day I eat souvlaki.",
+   "tr": "Her gün souvlaki yiyorum."
   },
   "explain": {
    "en": "τρώω (eat), present, εγώ: τρώω",
@@ -1479,7 +1515,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day we eat souvlaki."
+   "en": "Every day we eat souvlaki.",
+   "tr": "Her gün souvlaki yiyoruz."
   },
   "explain": {
    "en": "τρώω (eat), present, εμείς: τρώμε",
@@ -1518,7 +1555,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you drink coffee."
+   "en": "Every day you drink coffee.",
+   "tr": "Her gün kahve içiyorsun."
   },
   "explain": {
    "en": "πίνω (drink), present, εσύ: πίνεις",
@@ -1557,7 +1595,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day you (pl.) drink coffee."
+   "en": "Every day you (pl.) drink coffee.",
+   "tr": "Her gün kahve içiyorsunuz."
   },
   "explain": {
    "en": "πίνω (drink), present, εσείς: πίνετε",
@@ -1596,7 +1635,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day Nikos stays at home."
+   "en": "Every day Nikos stays at home.",
+   "tr": "Her gün Nikos evde kalıyor."
   },
   "explain": {
    "en": "μένω (stay), present, αυτός: μένει",
@@ -1627,7 +1667,7 @@
    "1": [
     "μένουν",
     "θα μείνουν",
-    "μείναν",
+    "έμειναν",
     "μένω"
    ]
   },
@@ -1636,7 +1676,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day the children stay at home."
+   "en": "Every day the children stay at home.",
+   "tr": "Her gün çocuklar evde kalıyor."
   },
   "explain": {
    "en": "μένω (stay), present, αυτοί: μένουν",
@@ -1676,7 +1717,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day we work until late."
+   "en": "Every day we work until late.",
+   "tr": "Her gün geç saate kadar çalışıyoruz."
   },
   "explain": {
    "en": "δουλεύω (work), present, εμείς: δουλεύουμε",
@@ -1715,7 +1757,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day I work until late."
+   "en": "Every day I work until late.",
+   "tr": "Her gün geç saate kadar çalışıyorum."
   },
   "explain": {
    "en": "δουλεύω (work), present, εγώ: δουλεύω",
@@ -1757,7 +1800,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day the children say the truth."
+   "en": "Every day the children say the truth.",
+   "tr": "Her gün çocuklar doğruyu söylüyor."
   },
   "explain": {
    "en": "λέω (say), present, αυτοί: λένε",
@@ -1797,7 +1841,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Every day Nikos says the truth."
+   "en": "Every day Nikos says the truth.",
+   "tr": "Her gün Nikos doğruyu söylüyor."
   },
   "explain": {
    "en": "λέω (say), present, αυτός: λέει",
@@ -1837,7 +1882,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you ate souvlaki."
+   "en": "Yesterday you ate souvlaki.",
+   "tr": "Dün souvlaki yedin."
   },
   "explain": {
    "en": "τρώω (eat), aorist, εσύ: έφαγες",
@@ -1877,7 +1923,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you (pl.) ate souvlaki."
+   "en": "Yesterday you (pl.) ate souvlaki.",
+   "tr": "Dün souvlaki yediniz."
   },
   "explain": {
    "en": "τρώω (eat), aorist, εσείς: φάγατε",
@@ -1917,7 +1964,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday Nikos drank coffee."
+   "en": "Yesterday Nikos drank coffee.",
+   "tr": "Dün Nikos kahve içti."
   },
   "explain": {
    "en": "πίνω (drink), aorist, αυτός: ήπιε",
@@ -1958,7 +2006,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday the children drank coffee."
+   "en": "Yesterday the children drank coffee.",
+   "tr": "Dün çocuklar kahve içti."
   },
   "explain": {
    "en": "πίνω (drink), aorist, αυτοί: ήπιαν",
@@ -1998,7 +2047,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday we stayed at home."
+   "en": "Yesterday we stayed at home.",
+   "tr": "Dün evde kaldık."
   },
   "explain": {
    "en": "μένω (stay), aorist, εμείς: μείναμε",
@@ -2038,7 +2088,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday I stayed at home."
+   "en": "Yesterday I stayed at home.",
+   "tr": "Dün evde kaldım."
   },
   "explain": {
    "en": "μένω (stay), aorist, εγώ: έμεινα",
@@ -2077,7 +2128,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you (pl.) worked until late."
+   "en": "Yesterday you (pl.) worked until late.",
+   "tr": "Dün geç saate kadar çalıştınız."
   },
   "explain": {
    "en": "δουλεύω (work), aorist, εσείς: δουλέψατε",
@@ -2116,7 +2168,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday you worked until late."
+   "en": "Yesterday you worked until late.",
+   "tr": "Dün geç saate kadar çalıştın."
   },
   "explain": {
    "en": "δουλεύω (work), aorist, εσύ: δούλεψες",
@@ -2157,7 +2210,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Yesterday the children spoke Greek."
+   "en": "Yesterday the children spoke Greek.",
+   "tr": "Dün çocuklar Yunanca konuştu."
   },
   "explain": {
    "en": "μιλάω (speak), aorist, αυτοί: μίλησαν",
@@ -2196,7 +2250,8 @@
    "verb.class_b"
   ],
   "translation": {
-   "en": "Yesterday Nikos spoke Greek."
+   "en": "Yesterday Nikos spoke Greek.",
+   "tr": "Dün Nikos Yunanca konuştu."
   },
   "explain": {
    "en": "μιλάω (speak), aorist, αυτός: μίλησε",
@@ -2236,7 +2291,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday I said the truth."
+   "en": "Yesterday I said the truth.",
+   "tr": "Dün doğruyu söyledim."
   },
   "explain": {
    "en": "λέω (say), aorist, εγώ: είπα",
@@ -2276,7 +2332,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Yesterday we said the truth."
+   "en": "Yesterday we said the truth.",
+   "tr": "Dün doğruyu söyledik."
   },
   "explain": {
    "en": "λέω (say), aorist, εμείς: είπαμε",
@@ -2316,7 +2373,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow Nikos will eat souvlaki."
+   "en": "Tomorrow Nikos will eat souvlaki.",
+   "tr": "Yarın Nikos souvlaki yiyecek."
   },
   "explain": {
    "en": "τρώω (eat), future, αυτός: θα φάει",
@@ -2346,7 +2404,7 @@
   "options": {
    "1": [
     "θα φάνε",
-    "φάγαν",
+    "έφαγαν",
     "τρώνε",
     "θα φάω"
    ]
@@ -2357,7 +2415,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow the children will eat souvlaki."
+   "en": "Tomorrow the children will eat souvlaki.",
+   "tr": "Yarın çocuklar souvlaki yiyecek."
   },
   "explain": {
    "en": "τρώω (eat), future, αυτοί: θα φάνε",
@@ -2397,7 +2456,8 @@
    "verb.class_a"
   ],
   "translation": {
-   "en": "Tomorrow we will drink coffee."
+   "en": "Tomorrow we will drink coffee.",
+   "tr": "Yarın kahve içeceğiz."
   },
   "explain": {
    "en": "πίνω (drink), future, εμείς: θα πιούμε",

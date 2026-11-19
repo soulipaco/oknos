@@ -6,8 +6,10 @@ lists, then the same stem with a different ending (καφέ -> καφές, φα�
 
 from __future__ import annotations
 
+import json
 from collections import defaultdict
 from dataclasses import dataclass
+from pathlib import Path
 
 from greek_coach import greek
 from greek_coach.checking import meaning
@@ -41,6 +43,7 @@ class Entry:
     en: str | None
     tr: str | None
     pos: str | None
+    say: str | None = None
 
 
 class Index:
@@ -48,11 +51,13 @@ class Index:
         self.exact: dict[str, list[Entry]] = defaultdict(list)
         self.folded: dict[str, list[Entry]] = defaultdict(list)
         self.stem: dict[str, list[Entry]] = defaultdict(list)
+        self.inside: dict[str, list[Entry]] = defaultdict(list)  # a word -> the phrases that contain it
         lemma_entry: dict[str, Entry] = {}
+        self.function: dict[str, Entry] = {}
         for key, (pack, item) in catalog.items.items():
             if not isinstance(item, VocabItem) or item.status != "ok":
                 continue
-            entry = Entry(key, item.el, item.en, item.tr, item.pos)
+            entry = Entry(key, item.el, item.en, item.tr, item.pos, item.say)
             forms = {item.el, greek.strip_article(item.el)} | ({item.lemma} if item.lemma else set())
             for form in forms:
                 self.exact[greek.norm_answer(form)].append(entry)
@@ -61,6 +66,11 @@ class Index:
             if " " not in greek.strip_article(item.el):
                 for st in _stems(greek.strip_article(item.el)):
                     self.stem[st].append(entry)
+            elif item.pos in ("phrase", None):
+                # "με λένε …": tapping λένε in a dialogue finds the phrase it belongs to
+                for w in greek.words(item.el):
+                    if len(w) >= 3:
+                        self.inside[greek.fold(w)].append(entry)
         # Verb forms from the verb track point at their lemma's vocab entry, when we have one.
         for key, (pack, item) in catalog.items.items():
             if isinstance(item, FormItem) and item.cue and item.cue.lemma:
@@ -72,18 +82,28 @@ class Index:
                         for w in greek.words(form):
                             if w != "θα":
                                 self.folded.setdefault(greek.fold(w), []).append(target)
+        # Articles, pronouns, prepositions and particles: in no pack, but on every line.
+        for row in _function_words():
+            entry = Entry(f"function/{row['el']}", row["el"], row["en"], row["tr"], row.get("pos"))
+            for form in [row["el"], *row.get("forms", [])]:
+                self.function.setdefault(greek.fold(form), entry)
 
     def find(self, word: str) -> tuple[list[Entry], str]:
         word = greek.to_monotonic(word.strip(" .,;:!?«»\"'()·"))
         for table, how, k in ((self.exact, "exact", greek.norm_answer(word)), (self.folded, "accents", greek.fold(word))):
             if table.get(k):
                 return _dedupe(table[k]), how
+        if greek.fold(word) in self.function:
+            return [self.function[greek.fold(word)]], "exact"
         hits: list[Entry] = []
         for st in sorted(_stems(word), key=len, reverse=True):
             hits += self.stem.get(st, [])
             if hits:
                 break
-        return _dedupe(hits), "stem" if hits else "none"
+        if hits:
+            return _dedupe(hits), "stem"
+        inside = self.inside.get(greek.fold(word), [])
+        return _dedupe(inside), "phrase" if inside else "none"
 
 
 def _dedupe(entries: list[Entry]) -> list[Entry]:
@@ -98,9 +118,20 @@ def _dedupe(entries: list[Entry]) -> list[Entry]:
 def as_json(entries: list[Entry], how: str, lang: str) -> dict:
     return {
         "match": how,
-        "entries": [{"item_key": e.item_key, "el": e.el, "pos": e.pos,
-                     "meaning": (e.tr if lang == "tr" and e.tr else None) or e.en or e.tr or ""} for e in entries],
+        "entries": [{"item_key": e.item_key, "el": e.el, "pos": e.pos, "say": e.say,
+                     "meaning": (e.tr if lang == "tr" and e.tr else None) or e.en or e.tr or "",
+                     "meaning_lang": lang if getattr(e, lang, None) else ("en" if e.en else "tr")} for e in entries],
     }
+
+
+FUNCTION_WORDS_FILE = Path(__file__).with_name("function_words.json")
+
+
+def _function_words() -> list[dict]:
+    try:
+        return json.loads(FUNCTION_WORDS_FILE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
 
 
 def meaning_of(item: VocabItem, lang: str) -> str:
