@@ -121,6 +121,7 @@ Not yet done on the maintainer's machine:
 - The `claude` command-line program is not signed in, so `greek-coach run` fails with "Not logged in" until `claude` is run once in a terminal and signed in.
 
 Next:
+- **phase 5d** (`docs/prompts/05d-every-word.md`): every tappable Greek word gets a meaning. On 2026-11-19, 1,038 of 2,527 distinct words found nothing (inflected forms, rubric words such as Διαλέγω, names). The phase also collects the day's other adjustments;
 - the maintainer reads the chapters as the lessons come; the ⚑ flag on a section sends a fix to the coach.
 
 Optional, deferred by the maintainer (2026-11-19):
