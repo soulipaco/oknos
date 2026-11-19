@@ -1,4 +1,4 @@
-# Phase 5d — Every word you can tap has a meaning (and other adjustments)
+# Phase 5d — Every word you can tap has a meaning, no question hidden behind "Translate", and other adjustments
 
 Read `AGENTS.md`, `docs/SPEC.md` §4.8 and `docs/LESSONS.md`. Use plan mode, and show me the plan before writing code.
 
@@ -43,7 +43,13 @@ Every Greek word on screen can be tapped, but many give "no meaning for … in y
 
 Collect the other small adjustments of the day here before starting. Each one is a line: the screen, what is wrong, and what it should do.
 
-- …
+- **A question that can only be answered after pressing "Translate".**
+  - **What happens:** in a check, the Greek of a true/false statement is only a sign («ΣΤΑΣΗ», «ΠΑΡΚΟ»), and the claim to judge ("the ΣΤΑΣΗ sign shows a stop") is only in the hidden translation. Some mcq prompts are only a Greek frame («Θα ήθελα …», «Νίκος: «…»»), and the actual question ("order a medium-sweet Greek coffee politely") is only in the hidden translation.
+  - **Where:** found on 2026-11-19 in `ch00-q-signs`. A scan of statements with at most 2 Greek words and a much longer translation finds 14 such items, all in the book's chapter items: ch00 ×6, ch01 ×1, ch03 ×1, ch04 ×4, ch07 ×1, ch12 ×1.
+  - **What it should do:** never hide the question.
+    - (a) **Content.** Rewrite those items so the Greek carries the claim (true/false: «Η ΣΤΑΣΗ είναι για το λεωφορείο.»). Where the task is genuinely "what do you say in this situation", keep the situation in the UI language, but show it.
+    - (b) **App.** Give items a field for a situation or question in the UI language that is always visible (for example `ask {tr, en}`, shown above the Greek like the rubric), separate from the translation that stays behind "Translate".
+    - (c) **Lint.** `validate` flags a statement or prompt whose Greek has at most 2 words while its translation is much longer, and LESSONS §4 and the review brief say "the Greek must carry the question".
 
 ## Done when
 
