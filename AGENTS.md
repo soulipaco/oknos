@@ -108,8 +108,11 @@ Not yet done on the maintainer's machine:
 - The `claude` command-line program is not signed in, so `greek-coach run` fails with "Not logged in" until `claude` is run once in a terminal and signed in.
 
 Next:
-- the maintainer reads the chapters as the lessons come; the ⚑ flag on a section sends a fix to the coach;
-- then the open course's 12 chapters (`content/open/open-book/`), before phase 6 (the friend test).
+- the maintainer reads the chapters as the lessons come; the ⚑ flag on a section sends a fix to the coach.
+
+Optional, deferred by the maintainer (2026-11-19):
+- phase 6 (the friend test);
+- the open course's 12 chapters (`content/open/open-book/`), which only a learner without the book needs.
 
 ## Two kinds of people use this repo
 
