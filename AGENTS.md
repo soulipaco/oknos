@@ -8,6 +8,19 @@ Greek Coach is an open-source, local-first Greek learning app that is installed,
 2. `docs/prompts/README.md` — the phased build plan. Check which phase is current before starting work.
 3. `docs/SPEC.md` — once it exists (it is produced in phase 1), it overrides `DESIGN.md` where they differ.
 
+## Quick start
+
+The commands used most, from the repo root (all of them are listed under **Commands** below):
+
+```
+uv run greek-coach start      # start the app in the background and open the browser (http://127.0.0.1:8642)
+uv run greek-coach stop       # stop it
+uv run greek-coach stop; uv run greek-coach start   # restart: needed after changes to code (src/, web/)
+uv run greek-coach reload     # take in new or edited content (packs, chapters, coach files) without a restart
+uv run greek-coach health     # check the install
+uv run pytest                 # run the tests
+```
+
 ## Current state
 
 Phases 1–5 and 5b are built and committed. Phase 5b is a curriculum the learner progresses through, plus screens to see and choose what to practise. Phase 5c (the book: a chapter to read before each stage's practice) is built. **All 26 stages of the book curriculum have a chapter**: the intro, lessons 1–24 and the B1 bridge. Each was drafted by Sonnet (lessons 1–2 by Opus), reviewed by Opus, and validated. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.

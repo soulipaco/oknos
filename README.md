@@ -2,7 +2,7 @@
 
 A local-first Greek learning companion that your coding agent installs, runs and personalises for you. It is for people living in Greece who need to pass a language certification exam and have struggled to stay interested in studying.
 
-> **Status: exam mode (phase 5).** The app runs a daily session on its own, tells you honestly whether you would pass today, and runs timed mock exams; your agent is the coach.
+> **Status: the book (phase 5c).** Every lesson starts with a chapter you read (dialogue, grammar explained in Turkish or English, words), and its practice comes after it. The app runs a daily session on its own, tells you honestly whether you would pass today, and runs timed mock exams; your agent is the coach.
 > - **The app:**
 >   - you move through a course in order, simple before hard: reading the alphabet first, then lesson by lesson (your own coursebook's lessons if you imported it), and a lesson opens when the one before it is learned, or when you pass its "test me" check;
 >   - one button starts a session sized to your time: reviews, verbs, one exam-format task and new words from your current lesson;
@@ -22,7 +22,7 @@ A local-first Greek learning companion that your coding agent installs, runs and
 >   - **"give me a mock exam"**: a full mock in the exam's format, marked afterwards.
 > - **Content:** five open packs (including learning to read Greek, and B1 practice), plus your own material if you import it privately.
 >
-> Next: phase 6, a test on a stranger's machine (see `docs/prompts/`).
+> Next (optional): phase 6, a test on a stranger's machine (see `docs/prompts/`).
 
 ## Get started
 
@@ -33,6 +33,17 @@ A local-first Greek learning companion that your coding agent installs, runs and
 After that, double-click **Greek Coach** whenever you want to study. You don't need the agent open for that.
 
 If you already have the code, open the folder in your agent and say "set this up for me". The steps the agent follows are in `.agents/skills/setup/SKILL.md`.
+
+To run it yourself from the repo folder:
+
+```
+uv run greek-coach start      # start the app in the background and open the browser (http://127.0.0.1:8642)
+uv run greek-coach stop       # stop it
+uv run greek-coach stop; uv run greek-coach start   # restart: needed after changes to code (src/, web/)
+uv run greek-coach reload     # take in new or edited content (packs, chapters, coach files) without a restart
+uv run greek-coach health     # check the install
+uv run pytest                 # run the tests
+```
 
 ## The idea
 
