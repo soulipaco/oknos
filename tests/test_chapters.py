@@ -26,7 +26,7 @@ def chapter_data(**over):
                 {"type": "table", "head": ["", "είμαι"], "rows": [["εγώ", "είμαι"], ["εσύ", "είσαι"]]},
                 {"type": "examples", "items": [{"el": "Ο καφές είναι ζεστός.", "tr": "Kahve sıcak.", "en": "The coffee is hot."}]}]},
             {"kind": "words", "blocks": [{"type": "words", "items": [
-                "open-shared-words-tr/v-kafes", "open-shared-words-tr/v-tsai", "test-book/tb-word"]}]},
+                "open-shared-words-tr/v-kafes", "open-shared-words-tr/v-tsai", "test-book/tb-word", "test-book/tb-free"]}]},
             {"kind": "try", "blocks": [{"type": "check", "items": ["open-shared-words-tr/q-kimas-where"]}]},
         ],
     }
@@ -45,7 +45,10 @@ def book(learner, tmp_path):
         "visibility": "private", "licence": "private", "source": "tests"}), encoding="utf-8")
     (pack / "items" / "chapter-first-words.json").write_text(json.dumps([
         {"id": "tb-word", "type": "vocab", "skill": "vocab", "level": "A1", "el": "παρακαλώ", "pos": "phrase",
-         "en": "please", "tr": "lütfen", "topics": [f"stage:{STAGE}"]}], ensure_ascii=False), encoding="utf-8")
+         "en": "please", "tr": "lütfen", "topics": [f"stage:{STAGE}"]},
+        # no tag, and level B1 so no level pool takes it: only the chapter's words block places it
+        {"id": "tb-free", "type": "vocab", "skill": "vocab", "level": "B1", "el": "η ζάχαρη", "pos": "noun", "gender": "f",
+         "en": "sugar", "tr": "şeker"}], ensure_ascii=False), encoding="utf-8")
     (pack / "lessons" / f"{STAGE}.json").write_text(json.dumps(chapter_data(), ensure_ascii=False), encoding="utf-8")
     return pack
 
@@ -61,7 +64,8 @@ def _at_second_stage(conn):
 
 def test_a_good_chapter_parses_and_knows_what_it_refers_to():
     ch = chapters.parse(chapter_data())
-    assert ch.word_keys() == ["open-shared-words-tr/v-kafes", "open-shared-words-tr/v-tsai", "test-book/tb-word"]
+    assert ch.word_keys() == ["open-shared-words-tr/v-kafes", "open-shared-words-tr/v-tsai", "test-book/tb-word",
+                              "test-book/tb-free"]
     assert ch.check_keys() == ["open-shared-words-tr/q-kimas-where"]
     assert [ln["el"] for ln in ch.greek_lines()][:2] == ["Ένας καφές, παρακαλώ.", "Και ένα τσάι."]
     assert "είσαι" in ch.table_cells() and "Νίκος" in ch.speakers()
@@ -105,9 +109,11 @@ def test_the_words_block_places_its_words_in_the_chapter_stage(book, learner):
     cur = curriculum.active(catalog)
     a = curriculum.assignment(cur, catalog)
     idx = cur.index(STAGE)
-    assert a["open-shared-words-tr/v-kafes"] == idx           # was the first stage, by its include rule
+    assert a["test-book/tb-free"] == idx                      # placed nowhere else: the chapter places it
     assert a["open-shared-words-tr/q-kimas-where"] == idx     # a check item belongs to the stage too
-    assert a["open-shared-words-tr/v-flitzani"] == 0          # not in the chapter: unchanged
+    # the first stage's include rule already places this word: a later chapter never pushes it later
+    assert a["open-shared-words-tr/v-kafes"] == 0
+    assert a["open-shared-words-tr/v-flitzani"] == 0
 
 
 def test_new_items_wait_for_the_chapter_but_reviews_do_not(book, learner):
@@ -120,7 +126,7 @@ def test_new_items_wait_for_the_chapter_but_reviews_do_not(book, learner):
     allowed, _ = session.gate(conn, catalog)
     item = lambda k: catalog.items[k][1]  # noqa: E731
     assert not allowed("test-book/tb-word", item("test-book/tb-word"))
-    assert not allowed("open-shared-words-tr/v-kafes", item("open-shared-words-tr/v-kafes"))
+    assert not allowed("test-book/tb-free", item("test-book/tb-free"))
     assert allowed("open-shared-words-tr/v-tsai", item("open-shared-words-tr/v-tsai"))
     assert allowed("open-shared-words-tr/v-flitzani", item("open-shared-words-tr/v-flitzani"))  # a stage with no chapter
     keys = {c["item_key"] for c in session.plan(conn, catalog, "en", 20, rng=random.Random(1))}
@@ -263,3 +269,23 @@ def test_migration_0006_on_an_older_database(tmp_path):
     conn.commit()
     assert db.migrate(conn) == 6
     assert conn.execute("SELECT COUNT(*) FROM chapter_reads").fetchone()[0] == 0
+
+
+def test_a_review_stage_chapter_does_not_move_words(book, learner):
+    catalog = packs.load_all()
+    cur = curriculum.active(catalog)
+    review = next(s for s in cur.stages if s.review_of)
+    data = chapter_data(stage=review.id, id=f"open-a1-b1.{review.id}")
+    data["sections"][3]["blocks"][0]["items"] = ["open-shared-words-tr/v-flitzani"]
+    (book / "lessons" / f"{review.id}.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    catalog = packs.load_all()
+    assert catalog.chapter(cur.id, review.id) is not None
+    assert curriculum.assignment(cur, catalog)["open-shared-words-tr/v-flitzani"] == 0  # stays in its own stage
+
+
+def test_validate_catches_swapped_languages(book):
+    data = chapter_data()
+    data["sections"][0]["blocks"][0] = {"type": "prose", "en": "Bu bölümde bir kahve ısmarlarsın.", "tr": "You order a coffee in this chapter."}
+    (book / "lessons" / f"{STAGE}.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    problems, _ = lint.lint_chapter_files(book)
+    assert any("swapped" in p for p in problems)

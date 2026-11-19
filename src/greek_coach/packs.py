@@ -492,6 +492,8 @@ def chapter_ref_problems(catalog: "Catalog") -> list[str]:
                 out.append(f"{pack.id}/lessons/{stage}.json: the word '{key}' is not a loaded item")
             elif entry[1].type != "vocab":
                 out.append(f"{pack.id}/lessons/{stage}.json: '{key}' in a words block is a {entry[1].type} item, not a vocab item")
+            elif entry[1].status != "ok":
+                out.append(f"{pack.id}/lessons/{stage}.json: the word '{key}' is marked needs_review and is never shown")
         for key in ch.check_keys():
             entry = catalog.items.get(key)
             if entry is None:

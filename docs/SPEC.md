@@ -452,7 +452,7 @@ Phase 5, as built (`src/greek_coach/exams.py`, validated on load and exported by
   - `check` (1–5 item keys, answered inline).
 
   Every explanation has `tr` and `en`. Inline markup is only `**bold**`, `*italic*` and `[[Greek]]`, rendered by our own code; there is no Markdown dependency.
-- **Placement:** the items of a chapter's `words` and `check` blocks belong to its stage. In order of precedence this comes after a `stage:` tag and before `include` rules (§5.4).
+- **Placement:** the items of a chapter's `words` and `check` blocks belong to its stage. A `stage:` tag takes precedence. Otherwise the item goes to the earlier of the chapter's stage and the stage its `include` rule gives (§5.4), so a later chapter never takes a word away from a lesson that already uses it. A review stage's chapter places nothing.
 - **Validation** (`greek-coach validate`):
   - the schema;
   - the Greek lint;

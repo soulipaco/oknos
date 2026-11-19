@@ -7,8 +7,9 @@ things it builds on.
 
 Where an item belongs, in order of precedence:
   1. a topic tag `stage:<stage id>` (what the coach writes);
-  1b. the words and check items of a stage's chapter (phase 5c: the chapter teaches them);
-  2. the first stage whose `include` rules match it (unit tags, packs, items, verb lemma and
+  2. the earlier of: the stage whose chapter lists it (in a words or check block), and the first
+     stage whose `include` rules match it. A chapter may bring an item forward, never push it to
+     a later lesson than the book's own placement (unit tags, packs, items, verb lemma and
      tense, grammar tags, part of speech, type, level, topics);
   3. a level pool: an otherwise unplaced item of level A1 opens at the pool's `from_stage`;
   4. nowhere: it is never served in a daily session (it can still be practised on purpose).
@@ -217,7 +218,8 @@ def placed(cur: Curriculum, catalog: Catalog) -> tuple[dict[str, int | None], se
     by_chapter: dict[str, int] = {}
     for i, s in enumerate(cur.stages):
         ch = catalog.chapter(cur.id, s.id)
-        if ch is not None:
+        # a review stage's chapter revises earlier words: it must not move them out of their lessons
+        if ch is not None and not s.review_of:
             for k in ch.word_keys() + ch.check_keys():
                 by_chapter.setdefault(k, i)
     out: dict[str, int | None] = {}
@@ -228,12 +230,10 @@ def placed(cur: Curriculum, catalog: Catalog) -> tuple[dict[str, int | None], se
                 idx = ids[t[6:]]
                 break
         if idx is None:
-            idx = by_chapter.get(k)
-        if idx is None:
-            for i, s in enumerate(cur.stages):
-                if any(r.matches(k, pack.id, item) for r in s.include):
-                    idx = i
-                    break
+            ruled = next((i for i, s in enumerate(cur.stages) if any(r.matches(k, pack.id, item) for r in s.include)), None)
+            chapter = by_chapter.get(k)
+            # a chapter may bring a word forward, never push it later: an earlier lesson may already use it
+            idx = min((i for i in (chapter, ruled) if i is not None), default=None)
         if idx is None:
             idx = pools.get(item.level)
             if idx is not None:

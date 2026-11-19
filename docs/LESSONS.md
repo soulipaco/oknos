@@ -61,7 +61,7 @@ The JSON Schema is `schemas/chapter.schema.json` (written by `uv run greek-coach
 | `dialogue` | `setting {tr,en}?`, `lines [{who, el, tr, en}]` | At least two lines. `who` is a Greek name or role. Each line can be played; all of them with "Play all". |
 | `table` | `caption {tr,en}?`, `head []`, `rows [[]]`, `note {tr,en}?` | Each row has as many cells as `head`. A cell is Greek (a string) or an explanation `{tr, en}`. Never write "Turkish / English" in one string: the reader shows only the UI language's half of a `{tr, en}` cell. |
 | `examples` | `items [{el, tr, en, note {tr,en}?}]` | Short sentences that show the grammar point. |
-| `words` | `items ["<pack>/<id>"]` | Vocab items. **They belong to this stage**: listing a word here places it in the stage, after an explicit `stage:` tag. |
+| `words` | `items ["<pack>/<id>"]` | Vocab items. Listing a word here places it in this stage, unless a `stage:` tag or an earlier lesson already holds it: a chapter can bring a word forward, never push it later. A review stage's words block places nothing. |
 | `tip` | `kind`, `tr`, `en`, `exam_task?` | `tr_bridge` (what Turkish shares), `mistake` (a typical error), `exam` (how it appears in the exam; name the blueprint task). |
 | `check` | `items ["<pack>/<id>"]` (1–5) | Checkable items (not `write` or `speak`), answered inside the chapter. They train the review schedule but never count as exam evidence. Items named here also belong to the stage. |
 

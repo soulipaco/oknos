@@ -10,7 +10,7 @@ Greek Coach is an open-source, local-first Greek learning app that is installed,
 
 ## Current state
 
-Phases 1–5 and 5b are built and committed. Phase 5b is a curriculum the learner progresses through, plus screens to see and choose what to practise. Phase 5c (the book: a chapter to read before each stage's practice) is built. The outline and the golden chapters (lessons 1–2) are approved, and the pilot batch (the intro and lessons 3–4: Sonnet drafts, Opus review) is in. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.
+Phases 1–5 and 5b are built and committed. Phase 5b is a curriculum the learner progresses through, plus screens to see and choose what to practise. Phase 5c (the book: a chapter to read before each stage's practice) is built. **All 26 stages of the book curriculum have a chapter**: the intro, lessons 1–24 and the B1 bridge. Each was drafted by Sonnet (lessons 1–2 by Opus), reviewed by Opus, and validated. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.
 
 What works now:
 - **Stack:** uv, FastAPI and SQLite (`learner/greek-coach.db`, migrations `0001`–`0006`), with a no-build front end in `web/`. UI in English and Turkish.
@@ -29,7 +29,7 @@ What works now:
   - The home screen's first button is the one next action: read the current chapter, or today's session. Light, dark and system themes.
   - Navigation: every screen has its own URL (`?book`, `?lesson=<stage>`, `?stage=<id>`, `?practise`, `?words`, `?verbs`, `?exam`, `?writing`, `?submission=<id>`, `?mock=<run id>`), so the browser's back and forward work. An app bar on every screen links Home · Book · Practise · Words · Verbs · Exam.
   - The **Book** screen (formerly the course map) is the table of contents. Any chapter can be read, also ahead of the lesson, and the reader links to the previous and next chapters.
-  - Book chapters (private): `content/private/greek-helper/lessons/`. `outline.json` (26 stages) is approved. Chapters exist for the intro and lessons 1–4, each reviewed with a note in `lessons/review/`.
+  - Book chapters (private): `content/private/greek-helper/lessons/`. `outline.json` (26 stages) is approved. All 26 chapters exist, each with a review note in `lessons/review/`. The reviews made 170 Greek fixes and 191 teaching fixes in all, about 7 of each per chapter.
   - **Pilot batch, 2026-11-19:**
     - Sonnet drafting took about 150–190k tokens per chapter, and the Opus review about 140–165k.
     - The review made 4–5 Greek fixes and 5–7 teaching fixes per chapter, against 2–3 Greek fixes in each golden chapter (written by Opus).
@@ -95,7 +95,7 @@ What works now:
 Known limits:
 - The open content alone gives too few A2/B1 exam-format items for readiness to show numbers in the first weeks. The coach's items and mocks are what make them appear.
 - The open verb pack has about 2 forms per tense per verb, so the verb tables are sparse.
-- The book's lessons have few words linked to them (407 of 2,648). The rest open by level. A chapter fixes this for its stage, since its words block places them. The intro and lessons 1–4 have chapters; lessons 5–24 and the B1 stage still teach nothing before they test.
+- The book's lessons have few words linked to them (407 of 2,648). The rest open by level. Each stage's chapter places the words it teaches. A chapter can bring a word forward, never push it to a later lesson. The book's other words still open by level, with no chapter sentence for their learn card.
 - A heavy review day can still leave no room for new words in the daily session. After reading, "Practise this chapter" is the way to the new words.
 - The A2-LTR history pack waits until the plan targets an A2-LTR session with an announced date; none is announced. The syllabus PDF needs the learner's yes.
 - Neither exam publishes its speaking points split, and A2-LTR publishes no writing criteria. Those scores are always labelled estimates.
@@ -108,8 +108,7 @@ Not yet done on the maintainer's machine:
 - The `claude` command-line program is not signed in, so `greek-coach run` fails with "Not logged in" until `claude` is run once in a terminal and signed in.
 
 Next:
-- the maintainer reads the pilot chapters (the intro and lessons 3–4);
-- then the rest of the book with `write-chapter`, a few stages at a time (lessons 5–24, then b1-bridge);
+- the maintainer reads the chapters as the lessons come; the ⚑ flag on a section sends a fix to the coach;
 - then the open course's 12 chapters (`content/open/open-book/`), before phase 6 (the friend test).
 
 ## Two kinds of people use this repo

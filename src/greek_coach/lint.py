@@ -83,6 +83,23 @@ _UNACCENTED_OK = {"μου", "σου", "του", "της", "μας", "σας", "�
                   "στα", "στις", "στους", "στου", "στης", "για", "μια", "δυο", "και", "θα", "να", "τα", "τον", "την"}
 
 
+_TURKISH = re.compile(r"[ığşİŞĞ]|\b(ve|bir|bu|için|değil|ile|ama|çok)\b")
+_ENGLISH = re.compile(r"\b(the|and|you|is|are|of|to|with|this|not)\b", re.I)
+
+
+def language_swaps(value: Any, path: str = "") -> Iterable[str]:
+    """Paths where `tr` holds English and `en` holds Turkish: a generator script that swapped them."""
+    if isinstance(value, dict):
+        t, e = value.get("tr"), value.get("en")
+        if isinstance(t, str) and isinstance(e, str) and _ENGLISH.search(t) and not _TURKISH.search(t) and _TURKISH.search(e):
+            yield path or "(top)"
+        for k, v in value.items():
+            yield from language_swaps(v, f"{path}.{k}" if path else str(k))
+    elif isinstance(value, list):
+        for i, v in enumerate(value):
+            yield from language_swaps(v, f"{path}[{i}]")
+
+
 def lint_items(raw_items: list[Any], label: str) -> tuple[list[str], list[str]]:
     """Lint the raw JSON items of one file (before NFC normalisation, so non-NFC text is caught)."""
     problems: list[str] = []
@@ -92,6 +109,8 @@ def lint_items(raw_items: list[Any], label: str) -> tuple[list[str], list[str]]:
             continue
         name = f"{label} item {n}" + (f" ('{entry.get('id')}')" if entry.get("id") else "")
         fragment_card = entry.get("pos") in FRAGMENT_POS
+        problems += [f"{name} {path}: the tr text looks English and the en text Turkish (swapped?)"
+                     for path in language_swaps(entry)]
         for path, text in _strings(entry):
             p, nt = check_text(text, fragment=fragment_card and path == "el")
             problems += [f"{name} {path}: {x}" for x in p]
@@ -244,6 +263,8 @@ def lint_chapter_files(pack_dir: Path) -> tuple[list[str], list[str]]:
         except (json.JSONDecodeError, OSError):
             continue  # the loader already reports this
         label = f"{pack_dir.name}/lessons/{f.name}"
+        problems += [f"{label} {path}: the tr text looks English and the en text Turkish (swapped?)"
+                     for path in language_swaps(raw)]
         for path, text in _chapter_greek(raw):
             # a letter pair alone in a table cell (τσ, μπ) is a fragment, not a word ending in σ
             p, nt = check_text(text, fragment=len(text.strip()) <= 3 and " " not in text.strip())
