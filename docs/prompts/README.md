@@ -12,6 +12,8 @@ Each file is one prompt for one fresh agent session, run from the repo root. Pas
 | 5c | `05c-book.md` | A chapter to read before each stage's practice; new words taught before they are tested; the chapter-writing procedure. |
 | 5d | `05d-every-word.md` | Every Greek word you can tap has a meaning (forms, rubric words, names); no question hidden behind "Translate"; plus the day's other adjustments. |
 | 6 | `06-friend-test.md` | Proof that a stranger's machine can install it. Optional: deferred by the maintainer on 2026-11-19. |
+| 7 | `07-github.md` | The repo on GitHub, private, with `main` pushed and the tests running in CI; a guard that keeps `learner/` and `content/private/` off it. |
+| 8 | `08-hosting-discovery.md` | Optional, research only: `docs/HOSTING.md`, free ways to use the app away from home (private network, home server, free VPS, free app hosting), and a recommendation. |
 
 How to use them:
 

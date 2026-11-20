@@ -148,6 +148,10 @@ Next:
 Optional, deferred by the maintainer (2026-11-19):
 - phase 6 (the friend test).
 
+On the roadmap (2026-11-20, `docs/prompts/`):
+- phase 7: the repo on GitHub (private), with CI. There is no git remote yet, so nothing can be pushed until it is done;
+- phase 8 (optional): discovery of a free way to use the app away from home, research only.
+
 ## Two kinds of people use this repo
 
 - **The maintainer** develops the app with an agent. Normal engineering conversation.
