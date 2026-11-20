@@ -1,0 +1,155 @@
+{
+  "id": "open-a1-b1.everyday-verbs",
+  "curriculum": "open-a1-b1",
+  "stage": "everyday-verbs",
+  "level": "A1",
+  "title": {"tr": "Her gün ne yapıyorsun? -ω ile biten fiiller", "en": "What do you do every day? Verbs in -ω"},
+  "minutes": 11,
+  "version": 1,
+  "sections": [
+    {"kind": "intro", "blocks": [
+      {"type": "prose",
+       "tr": "Bu bölümde **her gün ne yaptığını** söylemeyi ve başkalarına sormayı öğreneceksin: çalışmak, oturmak, yemek, içmek, okumak.\n\nAnahtar nokta: έχω fiilinin altı sonunu zaten biliyorsun (**-ω, -εις, -ει, -ουμε, -ετε, -ουν**). Yunanca fiillerin çoğu tam olarak böyle çekilir. Yeni bir kural değil, yeni fiiller öğreneceksin.",
+       "en": "In this chapter you learn to say **what you do every day** and to ask others: work, live, eat, drink, read.\n\nThe key point: you already know the six endings of έχω (**-ω, -εις, -ει, -ουμε, -ετε, -ουν**). Most Greek verbs go exactly like that. You are not learning a new rule, just new verbs."}
+    ]},
+    {"kind": "warmup", "blocks": [
+      {"type": "prose",
+       "tr": "Sıradan bir gününü düşün. Sabah ne içersin? Nerede çalışırsın? Akşam ne yaparsın? Bu bölümün sonunda bunların hepsini Yunanca söyleyebileceksin.",
+       "en": "Think of an ordinary day. What do you drink in the morning? Where do you work? What do you do in the evening? By the end of this chapter you can say all of it in Greek."}
+    ]},
+    {"kind": "text", "title": {"tr": "Balkonda kahve", "en": "Coffee on the balcony"}, "blocks": [
+      {"type": "prose",
+       "tr": "Önce dinle, sonra oku. Fiillerin sonlarına dikkat et: *πίνεις*, *πίνω*, *δουλεύει*…",
+       "en": "Listen first, then read. Watch the ends of the verbs: *πίνεις*, *πίνω*, *δουλεύει*…"},
+      {"type": "dialogue",
+       "setting": {"tr": "Pazar sabahı. Zeynep balkonda; Giorgos yandaki balkonda.", "en": "Sunday morning. Zeynep is on her balcony; Giorgos is on the one next door."},
+       "lines": [
+         {"who": "Γιώργος", "el": "Καλημέρα, Ζεϊνέπ! Πίνεις καφέ;", "tr": "Günaydın Zeynep! Kahve mi içiyorsun?", "en": "Morning, Zeynep! Are you having a coffee?"},
+         {"who": "Ζεϊνέπ", "el": "Καλημέρα! Ναι, πίνω καφέ κάθε πρωί. Εσύ;", "tr": "Günaydın! Evet, her sabah kahve içerim. Ya sen?", "en": "Morning! Yes, I have coffee every morning. You?"},
+         {"who": "Γιώργος", "el": "Εγώ πίνω τσάι. Τι δουλειά κάνεις;", "tr": "Ben çay içerim. Ne iş yapıyorsun?", "en": "I drink tea. What do you do for a living?"},
+         {"who": "Ζεϊνέπ", "el": "Δουλεύω σε ένα φαρμακείο. Εσύ πού δουλεύεις;", "tr": "Bir eczanede çalışıyorum. Sen nerede çalışıyorsun?", "en": "I work in a pharmacy. Where do you work?"},
+         {"who": "Γιώργος", "el": "Δουλεύω στο σπίτι. Γράφω για μια εφημερίδα.", "tr": "Evde çalışıyorum. Bir gazeteye yazıyorum.", "en": "I work from home. I write for a newspaper."},
+         {"who": "Ζεϊνέπ", "el": "Και τι κάνεις το βράδυ;", "tr": "Peki akşamları ne yapıyorsun?", "en": "And what do you do in the evenings?"},
+         {"who": "Γιώργος", "el": "Βλέπω φίλους. Εσύ;", "tr": "Arkadaşlarla buluşuyorum. Ya sen?", "en": "I see friends. You?"},
+         {"who": "Ζεϊνέπ", "el": "Το βράδυ μαθαίνω ελληνικά. Διαβάζω, γράφω, ακούω μουσική.", "tr": "Akşamları Yunanca öğreniyorum. Okuyorum, yazıyorum, müzik dinliyorum.", "en": "In the evenings I learn Greek. I read, I write, I listen to music."},
+         {"who": "Γιώργος", "el": "Ελληνική μουσική;", "tr": "Yunan müziği mi?", "en": "Greek music?"},
+         {"who": "Ζεϊνέπ", "el": "Ναι! Δεν ξέρω τι λένε, αλλά είναι ωραία.", "tr": "Evet! Ne dediklerini bilmiyorum ama güzel.", "en": "Yes! I don't know what they're saying, but it's lovely."},
+         {"who": "Γιώργος", "el": "Η μητέρα μου κάνει κεφτέδες απόψε. Θέλεις;", "tr": "Annem bu akşam köfte yapıyor. İster misin?", "en": "My mother is making meatballs tonight. Would you like some?"},
+         {"who": "Ζεϊνέπ", "el": "Ναι, θέλω! Ευχαριστώ, Γιώργο!", "tr": "Evet, isterim! Teşekkürler Giorgos!", "en": "Yes, I would! Thanks, Giorgos!"}
+       ]},
+      {"type": "prose",
+       "tr": "Yeni birkaç kelime: [[φίλους]] \"arkadaşlar(ı)\" (*φίλος* kelimesinin çoğulu), [[ωραία]] \"güzel\", [[η μητέρα μου]] \"annem\", [[απόψε]] \"bu akşam\". [[Τι δουλειά κάνεις;]] şimdilik bir kalıp: \"Ne iş yapıyorsun?\"",
+       "en": "A few new words: [[φίλους]] \"friends\" (the plural of *φίλος*), [[ωραία]] \"lovely, nice\", [[η μητέρα μου]] \"my mother\", [[απόψε]] \"tonight\". [[Τι δουλειά κάνεις;]] is a set phrase for now: \"What do you do for a living?\""},
+      {"type": "dialogue",
+       "setting": {"tr": "Zeynep'in Yunanca kursu için yazdığı kısa metin: \"Benim günüm\".", "en": "The short text Zeynep writes for her Greek course: \"My day\"."},
+       "lines": [
+         {"who": "Ζεϊνέπ", "el": "Με λένε Ζεϊνέπ και μένω στη Θεσσαλονίκη.", "tr": "Adım Zeynep, Selanik'te oturuyorum.", "en": "My name is Zeynep and I live in Thessaloniki."},
+         {"who": "Ζεϊνέπ", "el": "Δουλεύω σε ένα φαρμακείο.", "tr": "Bir eczanede çalışıyorum.", "en": "I work in a pharmacy."},
+         {"who": "Ζεϊνέπ", "el": "Το πρωί πίνω καφέ και διαβάζω εφημερίδα.", "tr": "Sabahları kahve içip gazete okuyorum.", "en": "In the morning I drink coffee and read the paper."},
+         {"who": "Ζεϊνέπ", "el": "Συνήθως τρώω στο σπίτι.", "tr": "Genellikle evde yemek yiyorum.", "en": "I usually eat at home."},
+         {"who": "Ζεϊνέπ", "el": "Το βράδυ μαθαίνω ελληνικά.", "tr": "Akşamları Yunanca öğreniyorum.", "en": "In the evening I learn Greek."},
+         {"who": "Ζεϊνέπ", "el": "Ο Γιώργος, ο γείτονας, δουλεύει στο σπίτι. Κάθε μέρα πίνει τσάι στο μπαλκόνι και γράφει.", "tr": "Komşum Giorgos evde çalışıyor. Her gün balkonda çay içip yazıyor.", "en": "Giorgos, my neighbour, works from home. Every day he drinks tea on the balcony and writes."}
+       ]}
+    ]},
+    {"kind": "comprehension", "blocks": [
+      {"type": "prose", "tr": "Metne göre iki soru.", "en": "Two questions on the text."},
+      {"type": "check", "items": ["open-book/ch03-q-giorgos-work", "open-book/ch03-q-tf"]}
+    ]},
+    {"kind": "grammar", "title": {"tr": "-ω ile biten fiiller: şimdiki zaman", "en": "Verbs in -ω: the present tense"}, "blocks": [
+      {"type": "prose",
+       "tr": "Sözlükte bir fiil hep *ben* biçimiyle durur: **γράφω** \"(ben) yazıyorum\", aynı zamanda \"yazmak\". Kişiyi değiştirmek için sondaki **-ω** ekini atıp altı sondan birini eklersin. Vurgu yerinde kalır.\n\nTürkçede *yaz-ıyorum*, *yaz-ıyorsun* diye fiil köküne ek eklersin. Yunancada da aynısı: **γράφ-ω**, **γράφ-εις**.",
+       "en": "A Greek dictionary lists a verb in its \"I\" form: **γράφω** means \"I write\" and also stands for \"to write\". To change the person, take off the **-ω** and add one of six endings. The stress stays where it is."},
+      {"type": "table",
+       "caption": {"tr": "γράφω ve δουλεύω", "en": "γράφω and δουλεύω"},
+       "head": [{"tr": "kim", "en": "who"}, "γράφω", "δουλεύω", {"tr": "anlamı", "en": "meaning"}],
+       "rows": [
+         ["εγώ", "γράφω", "δουλεύω", {"tr": "yazıyorum, çalışıyorum", "en": "I write, I work"}],
+         ["εσύ", "γράφεις", "δουλεύεις", {"tr": "yazıyorsun…", "en": "you write…"}],
+         ["αυτός, αυτή, αυτό", "γράφει", "δουλεύει", {"tr": "yazıyor…", "en": "he / she / it writes…"}],
+         ["εμείς", "γράφουμε", "δουλεύουμε", {"tr": "yazıyoruz…", "en": "we write…"}],
+         ["εσείς", "γράφετε", "δουλεύετε", {"tr": "yazıyorsunuz…", "en": "you (formal / plural) write…"}],
+         ["αυτοί, αυτές, αυτά", "γράφουν", "δουλεύουν", {"tr": "yazıyorlar…", "en": "they write…"}]
+       ],
+       "note": {"tr": "Aynı sonlar: μένω, πίνω, θέλω, κάνω, διαβάζω, βλέπω, μαθαίνω, ξέρω, πηγαίνω. Hepsi bu tablodaki gibi.",
+                "en": "The same endings: μένω, πίνω, θέλω, κάνω, διαβάζω, βλέπω, μαθαίνω, ξέρω, πηγαίνω. They all go like this table."}},
+      {"type": "prose",
+       "tr": "Üç fiil kısa: **τρώω** (yemek), **λέω** (söylemek), **ακούω** (dinlemek). Sonları biraz kısalır: *τρως*, *λες*, *ακούς*.",
+       "en": "Three verbs are short: **τρώω** (eat), **λέω** (say), **ακούω** (listen). Their endings are a little shorter: *τρως*, *λες*, *ακούς*."},
+      {"type": "table",
+       "caption": {"tr": "Kısa fiiller", "en": "The short verbs"},
+       "head": [{"tr": "kim", "en": "who"}, "τρώω", "λέω", "ακούω"],
+       "rows": [
+         ["εγώ", "τρώω", "λέω", "ακούω"],
+         ["εσύ", "τρως", "λες", "ακούς"],
+         ["αυτός, αυτή, αυτό", "τρώει", "λέει", "ακούει"],
+         ["εμείς", "τρώμε", "λέμε", "ακούμε"],
+         ["εσείς", "τρώτε", "λέτε", "ακούτε"],
+         ["αυτοί, αυτές, αυτά", "τρώνε", "λένε", "ακούν"]
+       ],
+       "note": {"tr": "*Με λένε Ζεϊνέπ* cümlesindeki *λένε* de bu: \"bana Zeynep diyorlar\".",
+                "en": "The *λένε* of *Με λένε Ζεϊνέπ* is this verb: \"they call me Zeynep\"."}},
+      {"type": "examples", "items": [
+        {"el": "Μένω στη Θεσσαλονίκη.", "tr": "Selanik'te oturuyorum.", "en": "I live in Thessaloniki."},
+        {"el": "Πού δουλεύεις;", "tr": "Nerede çalışıyorsun?", "en": "Where do you work?"},
+        {"el": "Ο Γιώργος γράφει για μια εφημερίδα.", "tr": "Giorgos bir gazeteye yazıyor.", "en": "Giorgos writes for a newspaper."},
+        {"el": "Μαθαίνουμε ελληνικά.", "tr": "Yunanca öğreniyoruz.", "en": "We're learning Greek."},
+        {"el": "Τι τρώτε, κυρία Κατερίνα;", "tr": "Ne yiyorsunuz Katerina Hanım?", "en": "What are you eating, Mrs Katerina?"}
+      ]}
+    ]},
+    {"kind": "grammar", "title": {"tr": "δεν ve soru kelimeleri", "en": "δεν and question words"}, "blocks": [
+      {"type": "prose",
+       "tr": "**Olumsuz:** fiilin hemen önüne *δεν*: [[Δεν ξέρω.]] \"Bilmiyorum.\" Türkçedeki *-me/-ma* eki gibi, ama ayrı bir kelime ve fiilden önce geliyor.\n\n**Soru:** cümle aynı kalır; yalnızca sesin sonda yükselir ve sonuna *;* konur. [[Πίνεις καφέ.]] \"Kahve içiyorsun.\" → [[Πίνεις καφέ;]] \"Kahve içiyor musun?\" Türkçedeki *mi* gibi ayrı bir kelime yok.",
+       "en": "**No:** put *δεν* right before the verb: [[Δεν ξέρω.]] \"I don't know.\"\n\n**Questions:** the sentence stays the same; only your voice rises at the end, and you write *;* (the Greek question mark). [[Πίνεις καφέ.]] \"You're drinking coffee.\" → [[Πίνεις καφέ;]] \"Are you drinking coffee?\" There is no separate \"do\"."},
+      {"type": "table",
+       "caption": {"tr": "Soru kelimeleri", "en": "Question words"},
+       "head": [{"tr": "kelime", "en": "word"}, {"tr": "anlamı", "en": "meaning"}, {"tr": "örnek", "en": "example"}],
+       "rows": [
+         ["τι;", {"tr": "ne?", "en": "what?"}, "Τι πίνεις;"],
+         ["πού;", {"tr": "nerede? nereye?", "en": "where?"}, "Πού μένεις;"],
+         ["πότε;", {"tr": "ne zaman?", "en": "when?"}, "Πότε διαβάζεις;"],
+         ["πώς;", {"tr": "nasıl?", "en": "how?"}, "Πώς σε λένε;"]
+       ]},
+      {"type": "examples", "items": [
+        {"el": "Δεν βλέπω το κλειδί.", "tr": "Anahtarı göremiyorum.", "en": "I can't see the key."},
+        {"el": "Δεν τρώμε γιαούρτι.", "tr": "Yoğurt yemeyiz.", "en": "We don't eat yoghurt."},
+        {"el": "Πότε πηγαίνεις στο φαρμακείο;", "tr": "Eczaneye ne zaman gidiyorsun?", "en": "When are you going to the pharmacy?"},
+        {"el": "Τι κάνεις το πρωί;", "tr": "Sabahları ne yapıyorsun?", "en": "What do you do in the morning?"}
+      ]}
+    ]},
+    {"kind": "words", "blocks": [
+      {"type": "prose",
+       "tr": "Bu bölümün kelimeleri: 14 fiil ve günün kelimeleri. Bölümü bitirince oturumlarına gelecekler; fiillerin çekimleri de onlarla birlikte açılacak.",
+       "en": "The words of this chapter: 14 verbs and the words of the day. Once you finish the chapter they come into your sessions, and the verbs' forms open with them."},
+      {"type": "words", "items": [
+        "open-book/ch03-doulevo", "open-book/ch03-meno", "open-book/ch03-pino", "open-book/ch03-troo",
+        "open-book/ch03-thelo", "open-book/ch03-kano", "open-book/ch03-pigaino", "open-book/ch03-diavazo",
+        "open-book/ch03-grafo", "open-book/ch03-akouo", "open-book/ch03-vlepo", "open-book/ch03-mathaino",
+        "open-book/ch03-ksero", "open-book/ch03-leo",
+        "open-book/ch03-douleia", "open-book/ch03-farmakeio", "open-book/ch03-ellinika", "open-book/ch03-mousiki",
+        "open-book/ch03-efimerida", "open-book/ch03-kathe-mera", "open-book/ch03-proi", "open-book/ch03-vradi",
+        "open-book/ch03-synithos", "open-book/ch03-pote"
+      ]}
+    ]},
+    {"kind": "tips", "blocks": [
+      {"type": "tip", "kind": "tr_bridge",
+       "tr": "**Bir zaman, iki anlam.** [[Πίνω καφέ.]] hem \"kahve içiyorum\" (şu an) hem \"kahve içerim\" (her gün) demek. Türkçedeki *-ıyor* ile *-ır* farkını Yunanca şimdiki zaman ayırmaz; hangisi olduğunu *κάθε μέρα*, *τώρα* gibi kelimeler gösterir.",
+       "en": "**One tense, two meanings.** [[Πίνω καφέ.]] is both \"I'm drinking coffee\" (now) and \"I drink coffee\" (every day). Greek has no separate *-ing* form; words like *κάθε μέρα* (every day) tell you which."},
+      {"type": "tip", "kind": "mistake",
+       "tr": "**καφές mı καφέ mı?** Zeynep [[πίνω καφέ]] diyor, *πίνω καφές* değil. Fiilin etkilediği eril isim sondaki -ς'yi düşürür; tıpkı *Με λένε Γιώργο* cümlesindeki gibi. Kuralı alışveriş bölümünde göreceksin; şimdilik kulağına yerleşsin.",
+       "en": "**καφές or καφέ?** Zeynep says [[πίνω καφέ]], not *πίνω καφές*. A masculine noun that is the object of the verb loses its final -ς, just as in *Με λένε Γιώργο*. The rule comes in the shopping chapter; for now, just get used to the sound."},
+      {"type": "tip", "kind": "mistake",
+       "tr": "**πηγαίνω ve πάω.** Günlük konuşmada *πηγαίνω* yerine çoğu zaman kısa **πάω** duyarsın: [[Πάω στο σπίτι.]] \"Eve gidiyorum.\" İkisi de doğru.",
+       "en": "**πηγαίνω and πάω.** In everyday speech you will often hear the short **πάω** instead of *πηγαίνω*: [[Πάω στο σπίτι.]] \"I'm going home.\" Both are right."},
+      {"type": "tip", "kind": "exam", "exam_task": "a2ltr.speaking.personal",
+       "tr": "A2 sözlü sınavında sık gelen bir soru: \"Sıradan bir gününüzü anlatın.\" Zeynep'in metni tam böyle bir cevabın başlangıcı. Kendi gününü 5–6 cümleyle söylemeyi dene: *Το πρωί… Δουλεύω… Το βράδυ…*",
+       "en": "A common A2 speaking question: \"Describe an ordinary day.\" Zeynep's text is the start of exactly that answer. Try saying your own day in 5–6 sentences: *Το πρωί… Δουλεύω… Το βράδυ…*"}
+    ]},
+    {"kind": "try", "blocks": [
+      {"type": "prose",
+       "tr": "Şimdi sen dene. Yanlış yapmak serbest: bunlar sınav hazırlığı hesabına girmez.",
+       "en": "Now you try. Mistakes are fine here: these do not count towards your exam readiness."},
+      {"type": "check", "items": ["open-book/ch03-try-doulevei", "open-book/ch03-try-mathainoume",
+                                  "open-book/ch03-try-tros", "open-book/ch03-try-questions"]}
+    ]}
+  ]
+}

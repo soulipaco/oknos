@@ -1,0 +1,1205 @@
+[
+ {
+  "id": "ch03-doulevo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "δουλεύω",
+  "lemma": "δουλεύω",
+  "pos": "verb",
+  "en": "to work",
+  "tr": "çalışmak",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Δουλεύω σε ένα φαρμακείο.",
+   "en": "I work in a pharmacy.",
+   "tr": "Bir eczanede çalışıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-meno",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "μένω",
+  "lemma": "μένω",
+  "pos": "verb",
+  "en": "to live (somewhere); to stay",
+  "tr": "oturmak, yaşamak; kalmak",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Μένω στη Θεσσαλονίκη.",
+   "en": "I live in Thessaloniki.",
+   "tr": "Selanik'te oturuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-pino",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πίνω",
+  "lemma": "πίνω",
+  "pos": "verb",
+  "en": "to drink",
+  "tr": "içmek",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Πίνω καφέ κάθε πρωί.",
+   "en": "I drink coffee every morning.",
+   "tr": "Her sabah kahve içiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-troo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τρώω",
+  "lemma": "τρώω",
+  "pos": "verb",
+  "en": "to eat",
+  "tr": "yemek, yemek yemek",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Συνήθως τρώω στο σπίτι.",
+   "en": "I usually eat at home.",
+   "tr": "Genellikle evde yemek yiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-thelo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "θέλω",
+  "lemma": "θέλω",
+  "pos": "verb",
+  "en": "to want",
+  "tr": "istemek",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Θέλεις καφέ;",
+   "en": "Do you want a coffee?",
+   "tr": "Kahve ister misin?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-kano",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "κάνω",
+  "lemma": "κάνω",
+  "pos": "verb",
+  "en": "to do; to make",
+  "tr": "yapmak",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Τι κάνεις το βράδυ;",
+   "en": "What do you do in the evening?",
+   "tr": "Akşamları ne yapıyorsun?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-pigaino",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πηγαίνω",
+  "lemma": "πηγαίνω",
+  "pos": "verb",
+  "en": "to go (also: πάω)",
+  "tr": "gitmek (ayrıca: πάω)",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Πηγαίνω στο φαρμακείο.",
+   "en": "I'm going to the pharmacy.",
+   "tr": "Eczaneye gidiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-diavazo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "διαβάζω",
+  "lemma": "διαβάζω",
+  "pos": "verb",
+  "en": "to read; to study",
+  "tr": "okumak; ders çalışmak",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Διαβάζω εφημερίδα κάθε μέρα.",
+   "en": "I read a newspaper every day.",
+   "tr": "Her gün gazete okuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-grafo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "γράφω",
+  "lemma": "γράφω",
+  "pos": "verb",
+  "en": "to write",
+  "tr": "yazmak",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Ο Γιώργος γράφει για μια εφημερίδα.",
+   "en": "Giorgos writes for a newspaper.",
+   "tr": "Giorgos bir gazeteye yazıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-akouo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ακούω",
+  "lemma": "ακούω",
+  "pos": "verb",
+  "en": "to hear; to listen to",
+  "tr": "duymak; dinlemek",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Ακούω μουσική το βράδυ.",
+   "en": "I listen to music in the evening.",
+   "tr": "Akşamları müzik dinliyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-vlepo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "βλέπω",
+  "lemma": "βλέπω",
+  "pos": "verb",
+  "en": "to see; to watch",
+  "tr": "görmek; izlemek",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Δεν βλέπω το κλειδί.",
+   "en": "I can't see the key.",
+   "tr": "Anahtarı göremiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-mathaino",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "μαθαίνω",
+  "lemma": "μαθαίνω",
+  "pos": "verb",
+  "en": "to learn",
+  "tr": "öğrenmek",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Μαθαίνω ελληνικά.",
+   "en": "I'm learning Greek.",
+   "tr": "Yunanca öğreniyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-ksero",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ξέρω",
+  "lemma": "ξέρω",
+  "pos": "verb",
+  "en": "to know",
+  "tr": "bilmek",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Δεν ξέρω πού είναι.",
+   "en": "I don't know where it is.",
+   "tr": "Nerede olduğunu bilmiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-leo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "λέω",
+  "lemma": "λέω",
+  "pos": "verb",
+  "en": "to say; to tell",
+  "tr": "söylemek, demek",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Τι λέει ο Γιώργος;",
+   "en": "What is Giorgos saying?",
+   "tr": "Giorgos ne diyor?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-douleia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η δουλειά",
+  "lemma": "δουλειά",
+  "pos": "noun",
+  "gender": "f",
+  "en": "work; job",
+  "tr": "iş",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Τι δουλειά κάνεις;",
+   "en": "What do you do (for a living)?",
+   "tr": "Ne iş yapıyorsun?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-farmakeio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το φαρμακείο",
+  "lemma": "φαρμακείο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "pharmacy, chemist's",
+  "tr": "eczane",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Το φαρμακείο είναι εκεί.",
+   "en": "The pharmacy is over there.",
+   "tr": "Eczane orada."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-ellinika",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τα ελληνικά",
+  "lemma": "ελληνικά",
+  "pos": "noun",
+  "gender": "n",
+  "en": "Greek (the language)",
+  "tr": "Yunanca",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Μαθαίνω ελληνικά κάθε βράδυ.",
+   "en": "I learn Greek every evening.",
+   "tr": "Her akşam Yunanca öğreniyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-mousiki",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η μουσική",
+  "lemma": "μουσική",
+  "pos": "noun",
+  "gender": "f",
+  "en": "music",
+  "tr": "müzik",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Ακούς ελληνική μουσική;",
+   "en": "Do you listen to Greek music?",
+   "tr": "Yunan müziği dinliyor musun?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-efimerida",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η εφημερίδα",
+  "lemma": "εφημερίδα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "newspaper",
+  "tr": "gazete",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Διαβάζω εφημερίδα το πρωί.",
+   "en": "I read the paper in the morning.",
+   "tr": "Sabahları gazete okuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-kathe-mera",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "κάθε μέρα",
+  "lemma": "κάθε μέρα",
+  "pos": "phrase",
+  "en": "every day",
+  "tr": "her gün",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Πίνω τσάι κάθε μέρα.",
+   "en": "I drink tea every day.",
+   "tr": "Her gün çay içiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-proi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το πρωί",
+  "lemma": "πρωί",
+  "pos": "noun",
+  "gender": "n",
+  "en": "morning; in the morning",
+  "tr": "sabah; sabahleyin",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Το πρωί πίνω καφέ.",
+   "en": "In the morning I drink coffee.",
+   "tr": "Sabahları kahve içiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-vradi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το βράδυ",
+  "lemma": "βράδυ",
+  "pos": "noun",
+  "gender": "n",
+  "en": "evening; in the evening",
+  "tr": "akşam; akşamleyin",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Τι κάνεις το βράδυ;",
+   "en": "What do you do in the evening?",
+   "tr": "Akşamları ne yapıyorsun?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-synithos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "συνήθως",
+  "lemma": "συνήθως",
+  "pos": "adverb",
+  "en": "usually",
+  "tr": "genellikle",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Συνήθως τρώω στο σπίτι.",
+   "en": "I usually eat at home.",
+   "tr": "Genellikle evde yerim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-pote",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πότε;",
+  "pos": "adverb",
+  "en": "when?",
+  "tr": "ne zaman?",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "example": {
+   "el": "Πότε διαβάζεις;",
+   "en": "When do you study?",
+   "tr": "Ne zaman ders çalışıyorsun?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-q-giorgos-work",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πού δουλεύει ο Γιώργος;",
+   "en": "Where does Giorgos work?",
+   "tr": "Giorgos nerede çalışıyor?"
+  },
+  "options": [
+   "Στο σπίτι.",
+   "Σε ένα φαρμακείο.",
+   "Στο μπαλκόνι."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Giorgos: «Δουλεύω στο σπίτι.» It is Zeynep who works in a pharmacy.",
+   "tr": "Giorgos: «Δουλεύω στο σπίτι.» Eczanede çalışan Zeynep."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Ζεϊνέπ πίνει τσάι κάθε πρωί.",
+    "en": "Zeynep drinks tea every morning.",
+    "tr": "Zeynep her sabah çay içiyor.",
+    "answer": false
+   },
+   {
+    "el": "Η Ζεϊνέπ μαθαίνει ελληνικά το βράδυ.",
+    "en": "Zeynep learns Greek in the evening.",
+    "tr": "Zeynep akşamları Yunanca öğreniyor.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "Zeynep drinks coffee in the morning; Giorgos is the one who drinks tea.",
+   "tr": "Zeynep sabahları kahve içiyor; çay içen Giorgos."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-try-doulevei",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "cue": {
+   "lemma": "δουλεύω",
+   "person": "3sg",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Ο Γιώργος {1} στο σπίτι.",
+  "answer": {
+   "1": [
+    "δουλεύει"
+   ]
+  },
+  "options": {
+   "1": [
+    "δουλεύει",
+    "δουλεύεις",
+    "δουλεύουν"
+   ]
+  },
+  "translation": {
+   "en": "Giorgos works at home.",
+   "tr": "Giorgos evde çalışıyor."
+  },
+  "explain": {
+   "en": "One person, not you or me (he) → -ει: δουλεύει.",
+   "tr": "Bir kişi, ben ya da sen değil (o) → -ει: δουλεύει."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-try-mathainoume",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "cue": {
+   "lemma": "μαθαίνω",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Εμείς {1} ελληνικά κάθε βράδυ.",
+  "answer": {
+   "1": [
+    "μαθαίνουμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "μαθαίνουμε",
+    "μαθαίνετε",
+    "μαθαίνω"
+   ]
+  },
+  "translation": {
+   "en": "We learn Greek every evening.",
+   "tr": "Her akşam Yunanca öğreniyoruz."
+  },
+  "explain": {
+   "en": "εμείς (we) → -ουμε.",
+   "tr": "εμείς (biz) → -ουμε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-try-tros",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "cue": {
+   "lemma": "τρώω",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Ζεϊνέπ, πού {1} το βράδυ;",
+  "answer": {
+   "1": [
+    "τρως"
+   ]
+  },
+  "options": {
+   "1": [
+    "τρως",
+    "τρώει",
+    "τρώω"
+   ]
+  },
+  "translation": {
+   "en": "Zeynep, where do you eat in the evening?",
+   "tr": "Zeynep, akşamları nerede yemek yiyorsun?"
+  },
+  "explain": {
+   "en": "τρώω is one of the short verbs: εσύ τρως (not τρώεις).",
+   "tr": "τρώω kısa fiillerden: εσύ τρως (τρώεις değil)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-try-questions",
+  "type": "match",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each question with its answer.",
+   "tr": "Her soruyu cevabıyla eşleştir."
+  },
+  "left": [
+   "Τι πίνεις;",
+   "Πού δουλεύεις;",
+   "Πότε διαβάζεις;",
+   "Πώς σε λένε;"
+  ],
+  "right": [
+   "Τσάι.",
+   "Σε ένα φαρμακείο.",
+   "Το βράδυ.",
+   "Γιώργο."
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "explain": {
+   "en": "τι = what, πού = where, πότε = when, πώς = how.",
+   "tr": "τι = ne, πού = nerede, πότε = ne zaman, πώς = nasıl."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-p-menete",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "cue": {
+   "lemma": "μένω",
+   "person": "2pl",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Πού {1}, κυρία Κατερίνα;",
+  "answer": {
+   "1": [
+    "μένετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "μένετε",
+    "μένεις",
+    "μένει"
+   ]
+  },
+  "translation": {
+   "en": "Where do you live, Mrs Katerina?",
+   "tr": "Nerede oturuyorsunuz Katerina Hanım?"
+  },
+  "explain": {
+   "en": "Formal (κυρία Κατερίνα) → εσείς: μένετε.",
+   "tr": "Resmî (κυρία Κατερίνα) → εσείς: μένετε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-p-pinoun",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "cue": {
+   "lemma": "πίνω",
+   "person": "3pl",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Η Ζεϊνέπ και ο Γιώργος {1} καφέ.",
+  "answer": {
+   "1": [
+    "πίνουν"
+   ]
+  },
+  "options": {
+   "1": [
+    "πίνουν",
+    "πίνει",
+    "πίνουμε"
+   ]
+  },
+  "translation": {
+   "en": "Zeynep and Giorgos drink coffee.",
+   "tr": "Zeynep'le Giorgos kahve içiyor."
+  },
+  "explain": {
+   "en": "Two people (they) → -ουν.",
+   "tr": "İki kişi (onlar) → -ουν."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-p-grafo",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "cue": {
+   "lemma": "γράφω",
+   "person": "1sg",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Εγώ {1} κάθε βράδυ.",
+  "answer": {
+   "1": [
+    "γράφω"
+   ]
+  },
+  "options": {
+   "1": [
+    "γράφω",
+    "γράφει",
+    "γράφουν"
+   ]
+  },
+  "translation": {
+   "en": "I write every evening.",
+   "tr": "Her akşam yazıyorum."
+  },
+  "explain": {
+   "en": "εγώ → -ω.",
+   "tr": "εγώ → -ω."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-p-akous",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "cue": {
+   "lemma": "ακούω",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Γιώργο, {1} μουσική;",
+  "answer": {
+   "1": [
+    "ακούς"
+   ]
+  },
+  "options": {
+   "1": [
+    "ακούς",
+    "ακούει",
+    "ακούτε"
+   ]
+  },
+  "translation": {
+   "en": "Giorgos, are you listening to music?",
+   "tr": "Giorgos, müzik mi dinliyorsun?"
+  },
+  "explain": {
+   "en": "ακούω is a short verb like τρώω: εσύ ακούς.",
+   "tr": "ακούω da τρώω gibi kısa fiil: εσύ ακούς."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-p-kseris",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "cue": {
+   "lemma": "ξέρω",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "{1} πού είναι το κλειδί;",
+  "answer": {
+   "1": [
+    "Ξέρεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "Ξέρεις",
+    "Ξέρει",
+    "Ξέρουμε"
+   ]
+  },
+  "translation": {
+   "en": "Do you know where the key is?",
+   "tr": "Anahtarın nerede olduğunu biliyor musun?"
+  },
+  "explain": {
+   "en": "A question to one friend (εσύ) → -εις.",
+   "tr": "Bir arkadaşa soru (εσύ) → -εις."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-p-lene",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.class_a"
+  ],
+  "cue": {
+   "lemma": "λέω",
+   "person": "3pl",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Τι {1} η Ζεϊνέπ και ο Γιώργος;",
+  "answer": {
+   "1": [
+    "λένε"
+   ]
+  },
+  "options": {
+   "1": [
+    "λένε",
+    "λέει",
+    "λέτε"
+   ]
+  },
+  "translation": {
+   "en": "What are Zeynep and Giorgos saying?",
+   "tr": "Zeynep'le Giorgos ne diyor?"
+  },
+  "explain": {
+   "en": "λέω is short: αυτοί λένε.",
+   "tr": "λέω kısa fiil: αυτοί λένε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-p-den",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "— Βλέπεις τηλεόραση; — Όχι, …",
+   "en": "— Do you watch TV? — No, …",
+   "tr": "— Televizyon izliyor musun? — Hayır, …"
+  },
+  "options": [
+   "δεν βλέπω.",
+   "βλέπω δεν.",
+   "δεν βλέπεις."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "δεν goes before the verb, and the answer is about me: δεν βλέπω.",
+   "tr": "δεν fiilin önüne gelir; cevap benimle ilgili: δεν βλέπω."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch03-p-pote",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:everyday-verbs"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "— … διαβάζεις εφημερίδα; — Το πρωί.",
+   "en": "— … do you read the paper? — In the morning.",
+   "tr": "— … gazete okuyorsun? — Sabahları."
+  },
+  "options": [
+   "Πότε",
+   "Πού",
+   "Τι"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The answer is a time (το πρωί), so the question is πότε (when).",
+   "tr": "Cevap bir zaman (το πρωί); soru da πότε (ne zaman)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "everyday-verbs",
+   "by": "claude-opus"
+  }
+ }
+]

@@ -1,0 +1,386 @@
+{
+  "curriculum": "open-a1-b1",
+  "status": "approved by the maintainer on 2026-11-20",
+  "written": "2026-11-20",
+  "sources": [
+    "curricula/open-a1-b1.json (stages, themes, include rules, can_do)",
+    "the open packs: open-alphabet, open-shared-words-tr, open-verbs-a1a2, open-everyday-a1a2, open-b1-bridge",
+    "exams/a2ltr.json and exams/b1-keg.json (task ids, beyond_a2 for b1-bridge)",
+    "nothing from content/private/: this pack is tracked, CC BY-SA 4.0, original throughout"
+  ],
+  "cast": "One story runs through the book. Zeynep (Ζεϊνέπ), from Izmir, moves to Thessaloniki for work. Her landlady and neighbour is κυρία Κατερίνα; Κατερίνα's son Γιώργος becomes her friend; Σοφία is her colleague at the pharmacy where she works; κύριος Παύλος teaches the evening Greek course; Μάρκο (from Italy) is a classmate. Places: Θεσσαλονίκη, Καλαμαριά, the Λευκός Πύργος, the Χαλκιδική.",
+  "grammar_order_check": "Each stage lists what it may assume and its set phrases. The order is: letters → είμαι/έχω and the gender of nouns (nominative) → verbs in -ω (present) with δεν and question words → verbs in -άω and -ομαι/-άμαι → the accusative singular and the plural → time and σε + article → review → θα + the perfective stem → the aorist (and the one-past verbs ήμουν, είχα, ήθελα, ήξερα) → possessive and object pronouns, μου αρέσει → review → the B1 additions (passive, reported speech, αν). Anything a dialogue needs earlier is named as a set phrase in that stage's entry.",
+  "stages": [
+    {
+      "stage": "reading",
+      "kind": "reading (table-heavy, no grammar beyond spelling)",
+      "level": "A1",
+      "objectives": [
+        "Read any Greek word aloud, slowly, with the stress in the right place",
+        "Recognise the letters that look Latin but sound different (Η, Ρ, Ν, Υ, Χ, Β, Ρ, Ω)",
+        "Read the five spellings of the sound i, and the pairs ου, αι, ει, οι, αυ, ευ, μπ, ντ, γκ, τσ, τζ",
+        "Read words Turkish already shares (καφές, χαλί, ταψί) and the numbers 1-10"
+      ],
+      "grammar": [
+        "spelling and sound: one sound, several spellings (ι, η, υ, ει, οι = i; ο, ω = o; αι, ε = e)",
+        "the accent mark: every word of two or more syllables has one, and it is read louder",
+        "final ς"
+      ],
+      "assumes": [],
+      "set_phrases": [
+        "Γεια σου! Ευχαριστώ. Παρακαλώ. Ναι / Όχι.",
+        "Ένα τσάι, παρακαλώ. (ένα with a neuter noun only; the accusative comes in shopping)"
+      ],
+      "words": [
+        "open-shared-words-tr/v-kafes", "open-shared-words-tr/v-tsai", "open-shared-words-tr/v-flitzani",
+        "open-shared-words-tr/v-xali", "open-shared-words-tr/v-tapsi", "open-shared-words-tr/v-balkoni",
+        "open-shared-words-tr/v-giaourti", "open-shared-words-tr/v-keftes", "open-shared-words-tr/v-mezes",
+        "open-shared-words-tr/v-xalvas", "open-shared-words-tr/v-ntomata", "open-shared-words-tr/v-kefi"
+      ],
+      "new_words": ["γεια σου", "ευχαριστώ", "παρακαλώ", "ένα", "δύο", "τρία", "τέσσερα", "πέντε", "έξι", "επτά/εφτά", "οκτώ/οχτώ", "εννέα/εννιά", "δέκα"],
+      "scenario": {
+        "tr": "Zeynep'in Selanik'teki ilk sabahı. Bir kafenin tahtasını okuyor ve çoğu kelimeyi zaten tanıdığını fark ediyor: καφές, τσάι, γιαούρτι, χαλβάς. Garsona üç kelimelik bir siparişi veriyor.",
+        "en": "Zeynep's first morning in Thessaloniki. She reads a café's board and finds she already knows most words: καφές, τσάι, γιαούρτι, χαλβάς. She gives the waiter a three-word order."
+      },
+      "exam_task": null,
+      "notes": "The other 11 shared words are placed here by the include rule; the chapter lists the ones its text uses. The letter cards of open-alphabet are this stage's drill; the chapter explains the system they drill. Numbers 1-10 are reading practice here and are used from first-words on."
+    },
+    {
+      "stage": "first-words",
+      "kind": "communication (golden chapter, written by Opus)",
+      "level": "A1",
+      "objectives": [
+        "Greet someone, formally and informally, and say your name",
+        "Say where you are from and who you are (είμαι)",
+        "Say what you have and what a place has (έχω, έχει)",
+        "Ask where something is and understand εδώ / εκεί"
+      ],
+      "grammar": [
+        "the present of είμαι, all six persons, with the subject pronouns (usually left out)",
+        "the present of έχω, all six persons; έχει = there is (a flat has a balcony)",
+        "every noun has a gender: ο, η, το (nominative singular only)"
+      ],
+      "assumes": ["reading: the letters, the accent, numbers 1-10, γεια σου, ευχαριστώ, παρακαλώ"],
+      "set_phrases": [
+        "Με λένε … / Πώς σε λένε; / Πώς σας λένε; (λέω comes in everyday-verbs)",
+        "Είμαι από την Τουρκία / από τη Σμύρνη (την/τη after από is the accusative: rule in shopping)",
+        "Γεια σου / Γεια σας as sen / siz",
+        "Στο πάτωμα. (σε + article: rule in getting-around; needed for q-xali-where)"
+      ],
+      "words": ["open-shared-words-tr/v-xali", "open-shared-words-tr/v-balkoni", "open-shared-words-tr/v-flitzani"],
+      "new_words": [
+        "γεια σας", "καλημέρα", "καλησπέρα", "με λένε", "πώς σε λένε;", "χαίρω πολύ", "από πού είσαι;", "είμαι", "έχω",
+        "η Ελλάδα", "η Τουρκία", "το σπίτι", "το δωμάτιο", "η κουζίνα", "το μπάνιο", "το κλειδί", "το τραπέζι",
+        "το πάτωμα", "πού;", "εδώ", "εκεί", "ο γείτονας / η γειτόνισσα", "η κυρία / ο κύριος"
+      ],
+      "scenario": {
+        "tr": "Zeynep yeni dairesine geliyor. Ev sahibi Katerina Hanım (resmî) ona evi gösteriyor: mutfak burada, banyo nerede, balkon var mı. Merdivende Katerina'nın oğlu Giorgos'la (samimi) tanışıyor.",
+        "en": "Zeynep arrives at her new flat. Her landlady, Mrs Katerina (formal), shows her round: here is the kitchen, where is the bathroom, is there a balcony. On the stairs she meets Katerina's son Giorgos (informal)."
+      },
+      "exam_task": "b1keg.speaking.warmup",
+      "included_items": ["open-shared-words-tr/q-flitzani-drink", "open-shared-words-tr/q-xali-where", "open-shared-words-tr/q-kimas-where"],
+      "notes": "q-flitzani-drink uses πίνουμε and q-kimas-where uses αγοράζουμε: the chapter glosses them; verbs in -ω come next stage."
+    },
+    {
+      "stage": "everyday-verbs",
+      "kind": "grammar (golden chapter, written by Opus)",
+      "level": "A1",
+      "objectives": [
+        "Say what you do every day, and ask others",
+        "Conjugate a verb in -ω in the present, all persons",
+        "Say no (δεν) and ask with τι, πού, πότε, πώς"
+      ],
+      "grammar": [
+        "the present of verbs in -ω (γράφω, δουλεύω): -ω, -εις, -ει, -ουμε, -ετε, -ουν; τρώω and λέω as the two short ones (τρως, λες)",
+        "δεν before the verb; questions with τι, πού, πότε, πώς and the Greek question mark ;"
+      ],
+      "assumes": [
+        "reading",
+        "first-words: είμαι, έχω (already the -ω pattern), ο/η/το, με λένε"
+      ],
+      "set_phrases": [
+        "Μένω στη Θεσσαλονίκη / στην Καλαμαριά (σε + article: rule in getting-around)",
+        "Πίνω καφέ / διαβάζω εφημερίδα: an object with no article (the accusative comes in shopping)",
+        "Τι δουλειά κάνεις; Πόσο κάνει αυτό; Τι ώρα είναι; (only as questions to recognise, for r-match-questions)"
+      ],
+      "words": [],
+      "new_words": [
+        "δουλεύω", "μένω", "πίνω", "τρώω", "θέλω", "κάνω", "πηγαίνω", "διαβάζω", "γράφω", "ακούω", "βλέπω", "μαθαίνω",
+        "ξέρω", "λέω", "η δουλειά", "το φαρμακείο", "τα ελληνικά", "η μουσική", "η εφημερίδα", "κάθε μέρα", "το πρωί", "το βράδυ", "συνήθως", "πότε;"
+      ],
+      "scenario": {
+        "tr": "Balkonda kahve: Giorgos, Zeynep'e ne iş yaptığını, nerede çalıştığını, akşamları ne yaptığını soruyor. Sonra Zeynep, Yunanca kursu için kendi gününü anlatan kısa bir metin yazıyor.",
+        "en": "Coffee on the balcony: Giorgos asks Zeynep what she does, where she works, what she does in the evenings. Then Zeynep writes a short text about her day for the Greek course."
+      },
+      "exam_task": "a2ltr.speaking.personal",
+      "included_items": ["open-everyday-a1a2/r-match-questions", "open-shared-words-tr/r-taverna-menu"]
+    },
+    {
+      "stage": "more-verbs",
+      "kind": "grammar",
+      "level": "A1",
+      "objectives": [
+        "Say which languages you speak, and ask someone to speak slowly",
+        "Conjugate μιλάω and its group, and the verbs in -ομαι / -άμαι",
+        "Talk about getting up, sleeping, remembering, needing"
+      ],
+      "grammar": [
+        "the present of verbs in -άω (μιλάω, ρωτάω, ξυπνάω, πουλάω): -άω, -άς, -άει, -άμε, -άτε, -άνε (also -ούν); a tip that some verbs end in -ώ, -είς, -εί (τηλεφωνώ, ευχαριστώ), recognised only",
+        "the present of verbs in -ομαι (έρχομαι, χρειάζομαι) and -άμαι (θυμάμαι, κοιμάμαι): all persons; είμαι as the familiar one of this family"
+      ],
+      "assumes": [
+        "first-words: είμαι, έχω, ο/η/το",
+        "everyday-verbs: verbs in -ω, δεν, question words"
+      ],
+      "set_phrases": [
+        "Πιο σιγά, παρακαλώ. Δεν καταλαβαίνω. (καταλαβαίνω is a -ω verb; listed as a word)",
+        "Τι σημαίνει …; (recognised)",
+        "Ξυπνάω νωρίς / κοιμάμαι αργά (clock times wait for getting-around)"
+      ],
+      "words": [],
+      "new_words": [
+        "μιλάω", "ρωτάω", "ξυπνάω", "πουλάω", "έρχομαι", "χρειάζομαι", "θυμάμαι", "κοιμάμαι", "καταλαβαίνω",
+        "τα τουρκικά", "τα αγγλικά", "λίγο", "καλά", "πολύ", "σιγά", "νωρίς", "αργά", "το μάθημα", "ο δάσκαλος / η δασκάλα", "η λέξη"
+      ],
+      "scenario": {
+        "tr": "Akşam Yunanca kursunun ilk günü. Öğretmen Pavlos Bey (resmî) öğrencilere hangi dilleri konuştuklarını soruyor; İtalyan Marko ile Zeynep kendilerini anlatıyor. Sonra Zeynep, telefonda Katerina Hanım'a dersin nasıl geçtiğini anlatıyor.",
+        "en": "The first evening of the Greek course. The teacher, Mr Pavlos (formal), asks the students which languages they speak; Marko from Italy and Zeynep talk about themselves. Then Zeynep tells Mrs Katerina on the phone how the class went."
+      },
+      "exam_task": "b1keg.speaking.warmup"
+    },
+    {
+      "stage": "shopping",
+      "kind": "communication",
+      "level": "A1",
+      "objectives": [
+        "Ask for something in a shop and ask the price",
+        "Read opening hours on a shop door",
+        "Use the accusative after θέλω, παίρνω, έχετε, and the plural of common nouns"
+      ],
+      "grammar": [
+        "the accusative singular: τον / την / το, έναν / μια / ένα, and the noun's ending (ο καφές → τον καφέ, η ντομάτα → την ντομάτα); explains the την of Είμαι από την Τουρκία",
+        "the plural, nominative and accusative: οι / τα; -ος → -οι, -ας and -ης → -ες, -α and -η → -ες, -ο → -α, -ι → -ια"
+      ],
+      "assumes": [
+        "first-words, everyday-verbs, more-verbs: the present of all three verb families",
+        "reading: numbers 1-10"
+      ],
+      "set_phrases": [
+        "Θα ήθελα … (a polite I'd like; the form is not taught)",
+        "Πόσο κάνει; / Πόσο κάνουν;",
+        "από τις οχτώ ως τις εννιά (opening hours read as numbers; clock time comes in getting-around)"
+      ],
+      "words": ["open-shared-words-tr/v-bakalis", "open-shared-words-tr/v-xasapis", "open-shared-words-tr/v-ntomata", "open-shared-words-tr/v-kimas"],
+      "new_words": [
+        "το ψωμί", "η τυρόπιτα", "το γάλα", "το μήλο", "η πατάτα", "τα φρούτα", "τα λαχανικά", "το κιλό", "το ευρώ",
+        "ο φούρνος", "το περίπτερο", "το σούπερ μάρκετ", "η λαϊκή", "ανοιχτός", "κλειστός",
+        "η Δευτέρα", "η Τρίτη", "η Τετάρτη", "η Πέμπτη", "η Παρασκευή", "το Σάββατο", "η Κυριακή", "παίρνω", "πόσο;"
+      ],
+      "number_table": "a table of 11-20 and the tens to 100, taught by the table (no vocab cards), for prices",
+      "scenario": {
+        "tr": "Cumartesi sabahı: Zeynep fırında ekmek ve peynirli börek (τυρόπιτα) alıyor, sonra semt pazarında (λαϊκή) domates ve elma. Akşam bakkalın kapısındaki çalışma saatlerini okuyor: pazar kapalı.",
+        "en": "Saturday morning: Zeynep buys bread and a cheese pie at the bakery, then tomatoes and apples at the street market. In the evening she reads the opening hours on the grocer's door: closed on Sunday."
+      },
+      "exam_task": "a2ltr.reading.notices_tf",
+      "included_items": ["open-everyday-a1a2/l-bakery", "open-everyday-a1a2/r-match-shops", "open-everyday-a1a2/r-gap-pharmacy", "open-everyday-a1a2/r-tf-supermarket", "open-everyday-a1a2/r-cat-food", "open-shared-words-tr/r-bakaliko-notice"]
+    },
+    {
+      "stage": "getting-around",
+      "kind": "communication",
+      "level": "A1",
+      "objectives": [
+        "Ask and say the time, and when something happens",
+        "Ask the way and understand left, right, straight on",
+        "Say where you go and how: στο κέντρο, με το λεωφορείο"
+      ],
+      "grammar": [
+        "telling the time: Τι ώρα είναι; Είναι δύο. και τέταρτο, και μισή, παρά τέταρτο; στις + number for when (στη μία)",
+        "σε + article = στο / στη(ν) / στον / στα / στις / στους: where you are and where you go; με + article for how (με το μετρό)"
+      ],
+      "assumes": [
+        "shopping: the accusative singular and plural, numbers to 100, the days",
+        "the present of all three verb families"
+      ],
+      "set_phrases": [
+        "Στρίψτε δεξιά. Συνεχίστε ευθεία. (imperatives recognised, not taught)",
+        "Θα έρθω στις έξι. (in the listening item l-nikos-time; θα comes in future)"
+      ],
+      "words": [],
+      "new_words": [
+        "η ώρα", "τι ώρα είναι;", "και μισή", "και τέταρτο", "παρά", "το λεωφορείο", "το μετρό", "το ταξί", "το τρένο",
+        "η στάση", "το εισιτήριο", "ο σταθμός", "ο δρόμος", "η πλατεία", "το κέντρο", "δεξιά", "αριστερά", "ευθεία",
+        "κοντά", "μακριά", "σήμερα", "αύριο", "το απόγευμα"
+      ],
+      "scenario": {
+        "tr": "Zeynep'in ilk iş günü. Durakta bir kadına otobüsün saatini soruyor; eczane Beyaz Kule'ye yakın, nasıl gidileceğini soruyor. Akşam kursa geç kalıyor ve Marko'ya saati soruyor.",
+        "en": "Zeynep's first working day. At the bus stop she asks a woman when the bus comes; the pharmacy is near the White Tower, and she asks the way. In the evening she is late for class and asks Marko the time."
+      },
+      "exam_task": "a2ltr.listening.mcq",
+      "included_items": ["open-everyday-a1a2/l-nikos-time", "open-everyday-a1a2/r-cat-places"]
+    },
+    {
+      "stage": "review-1",
+      "kind": "review (consolidates; introduces nothing new)",
+      "level": "A1",
+      "objectives": [
+        "Use everything from reading to getting-around in one longer conversation",
+        "See the three verb families and the articles side by side"
+      ],
+      "grammar": [
+        "a summary table: γράφω / μιλάω / έρχομαι in the present, side by side",
+        "a summary table: ο / η / το in the nominative and accusative, singular and plural"
+      ],
+      "assumes": ["all A1 stages"],
+      "set_phrases": [],
+      "words": [],
+      "new_words": [],
+      "scenario": {
+        "tr": "Bir cumartesi: Giorgos, Zeynep'i telefonla arıyor; pazarda buluşuyorlar, otobüsle merkeze gidiyorlar, bir tavernada meze ve köfte söylüyorlar.",
+        "en": "A Saturday: Giorgos phones Zeynep; they meet at the street market, take the bus to the centre and order mezes and meatballs at a taverna."
+      },
+      "exam_task": "a2ltr.speaking.roleplay",
+      "notes": "Its words block lists earlier words for revision only (a review stage's words block places nothing). Checks mix all stages."
+    },
+    {
+      "stage": "future",
+      "kind": "grammar",
+      "level": "A2",
+      "objectives": [
+        "Say what you will do, and make plans and appointments",
+        "Form the future: θα + the perfective stem",
+        "Use the same form after θέλω να / μπορώ να"
+      ],
+      "grammar": [
+        "the simple future: θα + perfective stem: -ζω/-νω → -σω (θα αγοράσω, θα πληρώσω), -εύω → -έψω (θα δουλέψω), -φω/-πω → -ψω (θα γράψω), -άω → -ήσω (θα μιλήσω); θα είμαι, θα έχω do not change",
+        "the irregular futures: θα πάω, θα έρθω, θα φάω, θα πιω, θα δω, θα πω, θα πάρω, θα βρω, θα μπω, θα βγω",
+        "θέλω να / μπορώ να + the same form (θέλω να πάω): one short section or a tip"
+      ],
+      "assumes": [
+        "the A1 stages: the present of all verb families, the accusative, the plural, time and σε + article"
+      ],
+      "set_phrases": ["Μπορώ να … (μπορώ is recognised as I can; its forms are listed as a word)"],
+      "words": [],
+      "new_words": [
+        "μπορώ", "φεύγω", "βγαίνω", "ταξιδεύω", "αρχίζω", "τηλεφωνώ", "πληρώνω", "αγοράζω",
+        "μεθαύριο", "η εβδομάδα", "ο μήνας", "το Σαββατοκύριακο", "το ραντεβού", "ο γιατρός / η γιατρός", "η θάλασσα",
+        "η εκδρομή", "μαζί", "ίσως", "επόμενος", "ελεύθερος"
+      ],
+      "scenario": {
+        "tr": "Giorgos, Zeynep'i cumartesi Halkidiki'ye bir günlük geziye çağırıyor. Zeynep'in cumartesi sabahı doktor randevusu var; telefonla randevuyu başka güne alıyor, sonra planı birlikte yapıyorlar.",
+        "en": "Giorgos invites Zeynep on a day trip to Halkidiki on Saturday. Zeynep has a doctor's appointment on Saturday morning; she phones to move it, then they make the plan together."
+      },
+      "exam_task": "a2ltr.speaking.roleplay"
+    },
+    {
+      "stage": "past",
+      "kind": "grammar",
+      "level": "A2",
+      "objectives": [
+        "Say what you did yesterday, last weekend, last year",
+        "Form the aorist of regular verbs and know the common irregular ones",
+        "Use ήμουν, είχα, ήθελα, ήξερα for the past of verbs that have one past"
+      ],
+      "grammar": [
+        "the aorist: the future's stem + -α, -ες, -ε, -αμε, -ατε, -αν; the stress moves to the third syllable from the end and a short verb takes έ- (γράψω → έγραψα, γράψαμε)",
+        "the irregular aorists: πήγα, ήρθα, έφαγα, ήπια, είδα, είπα, πήρα, βρήκα, μπήκα, βγήκα, έκανα, έμεινα, έμαθα, κατάλαβα",
+        "one-past verbs: ήμουν (είμαι), είχα (έχω), ήθελα (θέλω), ήξερα (ξέρω), all persons of ήμουν and είχα"
+      ],
+      "assumes": ["future: the perfective stem (θα γράψω), the irregular futures"],
+      "set_phrases": ["Πώς πέρασες; (περνάω: passed as a set phrase)"],
+      "words": [],
+      "new_words": [
+        "χθες", "προχθές", "πέρσι", "πριν", "μετά", "πρώτα", "τελικά", "το ταξίδι", "η παραλία", "το χωριό",
+        "ο φίλος / η φίλη", "ωραίος", "κουρασμένος", "ο καιρός", "κολυμπάω", "περνάω", "γυρίζω", "μαγειρεύω"
+      ],
+      "scenario": {
+        "tr": "Pazartesi sabahı eczanede iş arkadaşı Sofia, Zeynep'e hafta sonunu soruyor; Zeynep Halkidiki gezisini anlatıyor: erken kalktılar, denize girdiler, bir köyde balık yediler, geç döndüler.",
+        "en": "Monday morning at the pharmacy, Zeynep's colleague Sofia asks about the weekend; Zeynep tells her about the Halkidiki trip: they got up early, swam, ate fish in a village, came back late."
+      },
+      "exam_task": "a2ltr.writing.email_friendly",
+      "included_items": ["open-everyday-a1a2/r-cat-time"]
+    },
+    {
+      "stage": "a2-life",
+      "kind": "communication",
+      "level": "A2",
+      "objectives": [
+        "Read a notice from the building manager and a message from a neighbour",
+        "Phone the doctor's office and say what hurts",
+        "Use my, your, his (το σπίτι μου) and the object pronouns (σε περιμένω, μου αρέσει)"
+      ],
+      "grammar": [
+        "possessive pronouns after the noun: μου, σου, του, της, μας, σας, τους (το κλειδί μου); the stress moves when the noun is stressed on the third syllable from the end (το τηλέφωνό μου)",
+        "object pronouns before the verb: με, σε, τον, την, το, μας, σας, τους (σε περιμένω); μου αρέσει / μου αρέσουν, πονάει το κεφάλι μου"
+      ],
+      "assumes": ["the A1 stages", "future", "past"],
+      "set_phrases": [
+        "Notices speak in the formal imperative (φέρτε, κλείστε, καλέστε): recognised, not taught",
+        "Περαστικά! Χρόνια πολλά!"
+      ],
+      "words": [],
+      "new_words": [
+        "η ανακοίνωση", "ο διαχειριστής", "η πολυκατοικία", "το ασανσέρ", "το ρεύμα", "το νερό", "η επισκευή",
+        "ο θόρυβος", "η συγγνώμη", "το ιατρείο", "πονάω", "ο πυρετός", "το κεφάλι", "η συνταγή", "το φάρμακο",
+        "η ταυτότητα", "τα γενέθλια", "το πάρτι", "καλώ", "μου αρέσει", "περιμένω"
+      ],
+      "scenario": {
+        "tr": "Bir hafta, üç metin: yöneticinin asansördeki duyurusu (perşembe su yok), Zeynep'in ateşlendiği gün doktorun muayenehanesine telefonu, ve Katerina Hanım'ın torununun doğum günü partisine davet mesajı.",
+        "en": "One week, three texts: the building manager's notice in the lift (no water on Thursday), Zeynep's phone call to the doctor's office the day she has a fever, and Mrs Katerina's message inviting her to her grandson's birthday party."
+      },
+      "exam_task": "a2ltr.reading.notices_tf",
+      "notes": "The include rule places the whole open-everyday-a1a2 pack's remaining items here (notices, the landlord e-mail, the doctor's message, writing and speaking cards); the chapter prepares for them without copying them."
+    },
+    {
+      "stage": "review-2",
+      "kind": "review (consolidates; introduces nothing new)",
+      "level": "A2",
+      "objectives": [
+        "Tell what happened and what will happen, in one text",
+        "Write a short friendly e-mail of 40-60 words, the A2 exam's length"
+      ],
+      "grammar": [
+        "a summary table: eight common verbs in the present, the aorist and the future",
+        "a summary table: the pronouns (εγώ / με / μου …)"
+      ],
+      "assumes": ["all stages to a2-life"],
+      "set_phrases": [],
+      "words": [],
+      "new_words": [],
+      "scenario": {
+        "tr": "Zeynep, İzmir'deki Yunanca bilen arkadaşı Elif'e Selanik'teki ilk ayını anlatan bir e-posta yazıyor: neler yaptı, ne değişti, gelecek ay ne yapacak. Elif cevap veriyor.",
+        "en": "Zeynep writes an e-mail to her Greek-speaking friend Elif in Izmir about her first month in Thessaloniki: what she did, what changed, what she will do next month. Elif replies."
+      },
+      "exam_task": "a2ltr.writing.email_friendly"
+    },
+    {
+      "stage": "b1-bridge",
+      "kind": "grammar",
+      "level": "B1",
+      "objectives": [
+        "Understand notices and letters written in the passive",
+        "Report what someone said or asked",
+        "Say what will happen if …, and join sentences into a 150-word text"
+      ],
+      "grammar": [
+        "the passive: present -εται / -ονται (ενοικιάζεται, μαζεύονται), aorist -τηκε / -θηκε (γράφτηκε, στάλθηκε), with από for the doer",
+        "reported speech: είπε ότι …, ρώτησε αν / πού / πότε …, μου είπε να …; the tense stays as it was said",
+        "αν + present or να-form → θα: αν έρθεις νωρίς, θα πάμε μαζί",
+        "linking words for B1 texts: επειδή, γι' αυτό, όμως, ενώ, επίσης, στο τέλος (a tip with the exam's writing task)"
+      ],
+      "assumes": ["all A1 and A2 stages: the present, the aorist and the future of active verbs, the pronouns"],
+      "set_phrases": [],
+      "words": [],
+      "new_words": [
+        "η αίτηση", "το πιστοποιητικό", "ο δήμος", "η εφορία", "ο υπάλληλος / η υπάλληλος", "το έντυπο", "η προθεσμία",
+        "ενημερώνω", "ενοικιάζεται", "πωλείται", "ο κάτοικος", "η βιβλιοθήκη", "έτοιμος", "σύντομα", "επειδή",
+        "γι' αυτό", "όμως", "ενώ", "επίσης", "αν"
+      ],
+      "scenario": {
+        "tr": "Zeynep belediyeye bir belge için başvuruyor. Memur ona ne getirmesi gerektiğini söylüyor; akşam Giorgos'a memurun ne dediğini anlatıyor (dolaylı anlatım). Apartmanın girişinde bir duyuru: \"Το διαμέρισμα 4 ενοικιάζεται\".",
+        "en": "Zeynep applies for a document at the town hall. The clerk tells her what to bring; in the evening she tells Giorgos what the clerk said (reported speech). A notice in the building's entrance: \"Το διαμέρισμα 4 ενοικιάζεται\"."
+      },
+      "exam_task": "b1keg.writing.formal",
+      "notes": "Prepares for the open-b1-bridge items (passive, reported speech, conditional forms, the 150-word writing prompts). B1 allows up to 20 minutes of reading."
+    }
+  ]
+}

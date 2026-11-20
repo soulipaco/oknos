@@ -1,0 +1,768 @@
+{
+  "id": "open-a1-b1.reading",
+  "curriculum": "open-a1-b1",
+  "stage": "reading",
+  "level": "A1",
+  "title": {
+    "tr": "Yunanca okumak: ilk sabah",
+    "en": "Reading Greek: the first morning"
+  },
+  "minutes": 11,
+  "version": 1,
+  "sections": [
+    {
+      "kind": "intro",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümde **Yunanca okumayı** öğreneceksin. İyi haber: Yunanca da Türkçe gibi **yazıldığı gibi okunur**. Sessiz harf yok, sürpriz yok; harfleri ve birkaç ikiliyi öğrenince her kelimeyi yüksek sesle okuyabilirsin.\n\nÜstelik Türkçeden tanıdığın bir sürü kelime var: kahve, çay, yoğurt, helva. Bölümün sonunda 1'den 10'a kadar sayabilecek ve kafede [[Ένα τσάι, παρακαλώ.]] diyebileceksin.",
+          "en": "In this chapter you learn to **read Greek**. The good news: like Turkish, Greek is **read as it is written**. There are no silent letters and no surprises: once you know the letters and a few pairs, you can read any word aloud.\n\nYou also already know many words: coffee, tea, yoghurt, halva. By the end you can count from 1 to 10 and say [[Ένα τσάι, παρακαλώ.]] in a café."
+        }
+      ]
+    },
+    {
+      "kind": "warmup",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bir kafenin tahtasında *kahve*, *çay*, *yoğurt* yazdığını düşün, ama Yunan harfleriyle. Sence kaçını okuyabilirsin? Birazdan göreceksin: çoğunu.",
+          "en": "Imagine a café board that says coffee, tea, yoghurt, but in Greek letters. How many do you think you could read? You are about to find out: most of them."
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "title": {
+        "tr": "Selanik'te ilk sabah",
+        "en": "The first morning in Thessaloniki"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Zeynep Selanik'e yeni geldi. Sabah bir kafeye giriyor. Tahtada şunlar yazıyor: [[καφές]], [[τσάι]], [[γιαούρτι]], [[χαλβάς]], [[κεφτές]], [[μεζές]]. Zeynep gülümsüyor: bunları zaten tanıyor! Önce diyaloğu dinle (▶ Hepsini dinle), sonra yavaşça oku. Çeviriyi en sona bırak.",
+          "en": "Zeynep has just arrived in Thessaloniki. In the morning she steps into a café. The board says: [[καφές]], [[τσάι]], [[γιαούρτι]], [[χαλβάς]], [[κεφτές]], [[μεζές]]. Zeynep smiles: she knows these already! Listen to the dialogue first (▶ Play all), then read it slowly. Leave the translation for last."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Sabah, Selanik'te küçük bir kafe. Zeynep tezgâhta, garson Nikos karşısında.",
+            "en": "Morning, a small café in Thessaloniki. Zeynep is at the counter, the waiter Nikos in front of her."
+          },
+          "lines": [
+            {
+              "who": "Νίκος",
+              "el": "Γεια σου! Παρακαλώ;",
+              "tr": "Merhaba! Buyurun?",
+              "en": "Hi! Can I help you?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Γεια σου! Ένα τσάι, παρακαλώ.",
+              "tr": "Merhaba! Bir çay lütfen.",
+              "en": "Hi! A tea, please."
+            },
+            {
+              "who": "Νίκος",
+              "el": "Ένα τσάι. Και γιαούρτι;",
+              "tr": "Bir çay. Bir de yoğurt?",
+              "en": "One tea. And some yoghurt?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ναι, ένα γιαούρτι. Ευχαριστώ!",
+              "tr": "Evet, bir yoğurt. Teşekkürler!",
+              "en": "Yes, a yoghurt. Thank you!"
+            },
+            {
+              "who": "Νίκος",
+              "el": "Και χαλβάς;",
+              "tr": "Bir de helva?",
+              "en": "And some halva?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Όχι, ευχαριστώ.",
+              "tr": "Hayır, teşekkürler.",
+              "en": "No, thank you."
+            },
+            {
+              "who": "Νίκος",
+              "el": "Ένα τσάι, ένα γιαούρτι. Παρακαλώ!",
+              "tr": "Bir çay, bir yoğurt. Buyurun!",
+              "en": "One tea, one yoghurt. Here you are!"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "Bir not: [[και]] \"ve, bir de\" demek. [[Παρακαλώ]] kelimesi dört iş görür: \"lütfen\", \"rica ederim\", \"buyurun\" ve garsonun sorusu olarak \"buyurun, ne istersiniz?\".",
+          "en": "One note: [[και]] means \"and\". [[Παρακαλώ]] does four jobs: \"please\", \"you're welcome\", \"here you are\", and, as the waiter's question, \"can I help you?\"."
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Diyaloğa göre iki kısa soru.",
+          "en": "Two short questions on the dialogue."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch01-q-order",
+            "open-book/ch01-q-no"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Latin'e benzeyen ama başka okunan harfler",
+        "en": "Letters that look Latin but sound different"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Yunan alfabesi 24 harf. Çoğu Türkçedekiyle aynı ses: κ, λ, μ, π, τ, φ, σ (s). Ama bazıları Latin harflerine benziyor ve **başka** okunuyor. Önce şu tuzakları öğren.",
+          "en": "The Greek alphabet has 24 letters. Many sound just like their Latin look-alikes: κ, λ, μ, π, τ, φ, σ (s). But some look Latin and are read **differently**. Learn these traps first."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Tuzak harfler",
+            "en": "The trap letters"
+          },
+          "head": [
+            {
+              "tr": "harf",
+              "en": "letter"
+            },
+            {
+              "tr": "örnek",
+              "en": "example"
+            },
+            {
+              "tr": "okunuşu",
+              "en": "read as"
+            }
+          ],
+          "rows": [
+            [
+              "Η η",
+              "ήλιος",
+              {
+                "tr": "i (h değil!)",
+                "en": "i, as in machine (not h)"
+              }
+            ],
+            [
+              "Ρ ρ",
+              "ρολόι",
+              {
+                "tr": "r, Türkçedeki gibi (p değil)",
+                "en": "r, rolled (not p)"
+              }
+            ],
+            [
+              "Ν ν",
+              "νερό",
+              {
+                "tr": "n (v değil)",
+                "en": "n (not v)"
+              }
+            ],
+            [
+              "Υ υ",
+              "ύπνος",
+              {
+                "tr": "i (u ya da y değil)",
+                "en": "i (not u or y)"
+              }
+            ],
+            [
+              "Χ χ",
+              "χαλί",
+              {
+                "tr": "boğazdan h (Almanca Bach'taki gibi; x değil)",
+                "en": "a throaty h, as in German Bach (not x)"
+              }
+            ],
+            [
+              "Β β",
+              "βαλίτσα",
+              {
+                "tr": "v (b değil)",
+                "en": "v (not b)"
+              }
+            ],
+            [
+              "Ω ω",
+              "ώρα",
+              {
+                "tr": "o (w değil; ο ile aynı ses)",
+                "en": "o (not w; the same sound as ο)"
+              }
+            ],
+            [
+              "Γ γ",
+              "γάλα",
+              {
+                "tr": "boğazdan yumuşak ğ; e ve i'den önce y",
+                "en": "a soft gh; before e and i sounds, y as in yes"
+              }
+            ],
+            [
+              "Δ δ",
+              "δώρο",
+              {
+                "tr": "İngilizce this'teki th",
+                "en": "th as in this"
+              }
+            ],
+            [
+              "Θ θ",
+              "θέατρο",
+              {
+                "tr": "İngilizce think'teki th",
+                "en": "th as in think"
+              }
+            ]
+          ],
+          "note": {
+            "tr": "Γ, Δ, Θ Türkçede yok; birkaç kez dinleyince oturur. ▶ ile dinle.",
+            "en": "Γ, Δ, Θ have no Turkish equivalent; they come with a little listening. Use ▶."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "χαλί",
+              "tr": "halı: χ boğazdan h.",
+              "en": "rug: χ is the throaty h."
+            },
+            {
+              "el": "ρολόι",
+              "tr": "saat: ro-LO-i; ρ r okunur.",
+              "en": "clock: ro-LO-i; ρ is r."
+            },
+            {
+              "el": "νερό",
+              "tr": "su: ν n.",
+              "en": "water: ν is n."
+            },
+            {
+              "el": "βαλίτσα",
+              "tr": "bavul: β v, ι i, τσ ts.",
+              "en": "suitcase: β is v."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Bir ses, birkaç yazılış",
+        "en": "One sound, several spellings"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Yunancada aynı ses birkaç farklı harfle yazılır. Bunlar eski yazımdan kalma; okurken hepsi aynı ses. Önemli olan bunları tek ses olarak tanımak.",
+          "en": "In Greek one sound can be written in several ways. They are left over from older spelling, but when you read, they all give the same sound. What matters is to recognise each group as a single sound."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Ses ve yazılışları",
+            "en": "Sounds and their spellings"
+          },
+          "head": [
+            {
+              "tr": "ses",
+              "en": "sound"
+            },
+            {
+              "tr": "yazılışlar",
+              "en": "spellings"
+            },
+            {
+              "tr": "örnekler",
+              "en": "examples"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "tr": "i",
+                "en": "i"
+              },
+              "ι · η · υ · ει · οι",
+              "κέφι, ήλιος, ύπνος, είναι, φίλοι"
+            ],
+            [
+              {
+                "tr": "o",
+                "en": "o"
+              },
+              "ο · ω",
+              "όνομα, ώρα"
+            ],
+            [
+              {
+                "tr": "e",
+                "en": "e"
+              },
+              "ε · αι",
+              "Ελλάδα, και"
+            ],
+            [
+              {
+                "tr": "u (su'daki gibi)",
+                "en": "u, as in food"
+              },
+              "ου",
+              "γιαούρτι, σούπα"
+            ],
+            [
+              {
+                "tr": "av / ev; θ, κ, ξ, π, σ, τ, φ, χ, ψ önünde af / ef",
+                "en": "av / ev; af / ef before θ, κ, ξ, π, σ, τ, φ, χ, ψ"
+              },
+              "αυ · ευ",
+              "αυτοκίνητο, ευχαριστώ"
+            ]
+          ],
+          "note": {
+            "tr": "ει, οι, αι, ου, αυ, ευ iki harf ama tek ses (ya da av/ev): ikisini birlikte oku.",
+            "en": "ει, οι, αι, ου, αυ, ευ are two letters but one sound (or av/ev): read them together."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "κέφι",
+              "tr": "keyif: sondaki ι i.",
+              "en": "good mood: the final ι is i."
+            },
+            {
+              "el": "γιαούρτι",
+              "tr": "yoğurt: ου tek ses, u.",
+              "en": "yoghurt: ου is one sound, u."
+            },
+            {
+              "el": "ευχαριστώ",
+              "tr": "teşekkürler: ευ χ'den önce ef olur: ef-ha-ri-STO.",
+              "en": "thank you: ευ before χ is ef: ef-ha-ri-STO."
+            },
+            {
+              "el": "ώρα",
+              "tr": "saat (zaman): ω ile ο aynı ses, o.",
+              "en": "hour: ω is the same sound as ο, o."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "İki harf, tek ses: μπ, ντ, γκ, γγ, τσ, τζ",
+        "en": "Two letters, one sound: μπ, ντ, γκ, γγ, τσ, τζ"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Yunancada b, d ve g sesleri için ayrı harf yok; ikili yazılırlar. Türkçe bilenin burada avantajı var: τσ sesi ç sesine, τζ sesi c sesine yakın (biraz daha yumuşak: ts, dz).",
+          "en": "Greek has no single letters for b, d and g; it writes them as pairs. Turkish speakers have an edge here: τσ is close to ç and τζ to c (a little softer: ts, dz). Read each pair as one sound."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Ünsüz ikilileri",
+            "en": "Consonant pairs"
+          },
+          "head": [
+            {
+              "tr": "ikili",
+              "en": "pair"
+            },
+            {
+              "tr": "ses",
+              "en": "sound"
+            },
+            {
+              "tr": "örnek",
+              "en": "example"
+            }
+          ],
+          "rows": [
+            [
+              "μπ",
+              {
+                "tr": "kelime başında b, ortada mb",
+                "en": "b at the start of a word, mb in the middle"
+              },
+              "μπαλκόνι, μπανάνα"
+            ],
+            [
+              "ντ",
+              {
+                "tr": "kelime başında d, ortada nd",
+                "en": "d at the start of a word, nd in the middle"
+              },
+              "ντομάτα, πέντε"
+            ],
+            [
+              "γκ",
+              {
+                "tr": "g (gol'deki gibi)",
+                "en": "g, as in go"
+              },
+              "γκαράζ"
+            ],
+            [
+              "γγ",
+              {
+                "tr": "ng",
+                "en": "ng, as in finger"
+              },
+              "Αγγλία"
+            ],
+            [
+              "τσ",
+              {
+                "tr": "ts (ç'ye yakın)",
+                "en": "ts, as in cats"
+              },
+              "τσάι"
+            ],
+            [
+              "τζ",
+              {
+                "tr": "dz (c'ye yakın)",
+                "en": "dz, close to j in jam"
+              },
+              "τζάμι"
+            ]
+          ],
+          "note": {
+            "tr": "δ tek başına d değil, İngilizce this'teki th: δέκα. d için ντ yazılır.",
+            "en": "δ on its own is not d but th as in this: δέκα. For d, Greek writes ντ."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "μπαλκόνι",
+              "tr": "balkon: bal-KO-ni; μπ b okunur.",
+              "en": "balcony: bal-KO-ni; μπ is b."
+            },
+            {
+              "el": "ντομάτα",
+              "tr": "domates: ντ başta d.",
+              "en": "tomato: ντ at the start is d."
+            },
+            {
+              "el": "πέντε",
+              "tr": "beş: ντ ortada nd: PEN-de.",
+              "en": "five: ντ in the middle is nd: PEN-de."
+            },
+            {
+              "el": "τσάι",
+              "tr": "çay: τσ ts.",
+              "en": "tea: τσ is ts."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Vurgu işareti ve sondaki ς",
+        "en": "The accent mark and the final ς"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "İki ya da daha çok heceli her kelimede **bir vurgu işareti** (΄) vardır. İşaretin olduğu heceyi **daha güçlü** söylersin. Türkçede vurgu genelde sondadır; Yunancada kelimeden kelimeye değişir, işte bu yüzden işaret şart.",
+          "en": "Every word of two or more syllables has **one accent mark** (΄). You say that syllable **louder**. Turkish stress usually falls near the end; in Greek it moves from word to word, which is why the mark matters."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Vurgulu hece büyük harfle",
+            "en": "The stressed syllable in capitals"
+          },
+          "head": [
+            {
+              "tr": "kelime",
+              "en": "word"
+            },
+            {
+              "tr": "okunuş",
+              "en": "read as"
+            }
+          ],
+          "rows": [
+            [
+              "καφές",
+              {
+                "tr": "ka-FES",
+                "en": "ka-FES"
+              }
+            ],
+            [
+              "κέφι",
+              {
+                "tr": "KE-fi",
+                "en": "KE-fi"
+              }
+            ],
+            [
+              "ντομάτα",
+              {
+                "tr": "do-MA-ta",
+                "en": "do-MA-ta"
+              }
+            ],
+            [
+              "χαλβάς",
+              {
+                "tr": "hal-VAS",
+                "en": "hal-VAS"
+              }
+            ],
+            [
+              "ευχαριστώ",
+              {
+                "tr": "ef-ha-ri-STO",
+                "en": "ef-ha-ri-STO"
+              }
+            ]
+          ],
+          "note": {
+            "tr": "Tek heceli kelimelerde genelde işaret yoktur. İki ünlüden oluşan bir ikilide (αι, ει, οι, ου) vurgu normalde ikinci harfe konur: [[είναι]] I-ne. İşaret ilk harfin üstündeyse ikili bozulur ve iki ses ayrı okunur: [[τσάι]] tsa-i, [[ρολόι]] ro-LO-i. İki nokta da (ϊ) aynı işi görür: [[Ζεϊνέπ]] ze-i-NEP.",
+            "en": "One-syllable words usually have no mark. In a vowel pair (αι, ει, οι, ου) the mark normally sits on the second letter: [[είναι]] EE-ne. If it sits on the first letter, the pair splits into two sounds: [[τσάι]] tsa-ee, [[ρολόι]] ro-LO-ee. Two dots (ϊ) do the same: [[Ζεϊνέπ]] ze-ee-NEP."
+          }
+        },
+        {
+          "type": "prose",
+          "tr": "Bir de **sondaki ς**: σ harfi kelimenin sonunda ς yazılır. Ses aynı, s. Örnekler:",
+          "en": "And the **final ς**: σ is written ς at the end of a word. The sound is the same, s. Examples:"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "καφές",
+              "tr": "kahve: son harf ς, s sesi.",
+              "en": "coffee: the last letter ς is s."
+            },
+            {
+              "el": "χαλβάς",
+              "tr": "helva: hal-VAS; sondaki ς yine s.",
+              "en": "halva: hal-VAS; the final ς is still s."
+            },
+            {
+              "el": "μεζές",
+              "tr": "meze: me-ZES.",
+              "en": "meze: me-ZES."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "words",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümün kelimeleri: üç nezaket sözü ve 1'den 10'a kadar sayılar. ▶ ile dinle. Bölümü bitirince oturumlarına gelecekler; her biri sana sorulmadan önce bir kez gösterilecek.",
+          "en": "The words of this chapter: three polite phrases and the numbers 1 to 10. Listen with ▶. Once you finish the chapter they come into your sessions, and each one is shown to you once before you are asked it."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "1'den 10'a",
+            "en": "One to ten"
+          },
+          "head": [
+            {
+              "tr": "sayı",
+              "en": "number"
+            },
+            {
+              "tr": "Yunanca",
+              "en": "Greek"
+            },
+            {
+              "tr": "okunuş",
+              "en": "read as"
+            }
+          ],
+          "rows": [
+            [
+              "1",
+              "ένα",
+              {
+                "tr": "E-na",
+                "en": "E-na"
+              }
+            ],
+            [
+              "2",
+              "δύο",
+              {
+                "tr": "THİ-o (δ: İngilizce this'teki th)",
+                "en": "THEE-o (δ: th as in this)"
+              }
+            ],
+            [
+              "3",
+              "τρία",
+              {
+                "tr": "TRI-a",
+                "en": "TRI-a"
+              }
+            ],
+            [
+              "4",
+              "τέσσερα",
+              {
+                "tr": "TE-se-ra",
+                "en": "TE-se-ra"
+              }
+            ],
+            [
+              "5",
+              "πέντε",
+              {
+                "tr": "PEN-de",
+                "en": "PEN-de"
+              }
+            ],
+            [
+              "6",
+              "έξι",
+              {
+                "tr": "E-ksi",
+                "en": "E-ksi"
+              }
+            ],
+            [
+              "7",
+              "επτά",
+              {
+                "tr": "ep-TA (günlük: εφτά, ef-TA)",
+                "en": "ep-TA (everyday: εφτά, ef-TA)"
+              }
+            ],
+            [
+              "8",
+              "οκτώ",
+              {
+                "tr": "ok-TO (günlük: οχτώ, oh-TO)",
+                "en": "ok-TO (everyday: οχτώ, oh-TO)"
+              }
+            ],
+            [
+              "9",
+              "εννέα",
+              {
+                "tr": "e-NE-a (günlük: εννιά, e-NYA)",
+                "en": "e-NE-a (everyday: εννιά, e-NYA)"
+              }
+            ],
+            [
+              "10",
+              "δέκα",
+              {
+                "tr": "THE-ka (δ: this'teki th)",
+                "en": "THE-ka (δ: th as in this)"
+              }
+            ]
+          ],
+          "note": {
+            "tr": "Rakamlar bizimkiyle aynı. [[Ένα]] yalnızca nötr bir isimle: [[Ένα τσάι]], [[ένα γιαούρτι]].",
+            "en": "The digits are the same as yours. [[Ένα]] is used here only with a neuter noun: [[Ένα τσάι]], [[ένα γιαούρτι]]."
+          }
+        },
+        {
+          "type": "words",
+          "items": [
+            "open-book/ch01-geia-sou",
+            "open-book/ch01-efcharisto",
+            "open-book/ch01-parakalo",
+            "open-book/ch01-ena",
+            "open-book/ch01-dyo",
+            "open-book/ch01-tria",
+            "open-book/ch01-tessera",
+            "open-book/ch01-pente",
+            "open-book/ch01-exi",
+            "open-book/ch01-epta",
+            "open-book/ch01-okto",
+            "open-book/ch01-ennea",
+            "open-book/ch01-deka",
+            "open-shared-words-tr/v-kafes",
+            "open-shared-words-tr/v-tsai",
+            "open-shared-words-tr/v-giaourti",
+            "open-shared-words-tr/v-xalvas",
+            "open-shared-words-tr/v-keftes",
+            "open-shared-words-tr/v-mezes",
+            "open-shared-words-tr/v-ntomata",
+            "open-shared-words-tr/v-kefi",
+            "open-shared-words-tr/v-xali",
+            "open-shared-words-tr/v-tapsi",
+            "open-shared-words-tr/v-balkoni",
+            "open-shared-words-tr/v-flitzani"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "tips",
+      "blocks": [
+        {
+          "type": "tip",
+          "kind": "tr_bridge",
+          "tr": "**Türkçe bilmek avantaj.** Yunanca da Türkçe gibi okunur: bir harf, bir ses. Üstelik τσ ≈ ç, τζ ≈ c, ου = u, σ = s, ρ yuvarlak r. Ve kafedeki kelimeler zaten senin: [[καφές]], [[ταψί]], [[χαλί]], [[κεφτές]]. Fransızca ya da İngilizce bilene: ει, οι, αι gibi ikililer *ou*, *ai* gibi tek bir ses verir; harf harf okumazsın.",
+          "en": "**Turkish helps.** Greek is read like Turkish, one letter for one sound, and τσ ≈ ç, τζ ≈ c, ου = u, σ = s, ρ is rolled. The café words are already yours: [[καφές]], [[ταψί]], [[χαλί]], [[κεφτές]]. If you know English or French, think of pairs like *ou* or *ai*: ει, οι, αι each give one sound, not two."
+        },
+        {
+          "type": "tip",
+          "kind": "mistake",
+          "tr": "**Η, ν, ρ harflerini Latin harfi gibi okuma.** Η \"h\" değil i; ν \"v\" değil n; ρ \"p\" değil r; β \"b\" değil v. Şüphen olursa ilk tabloya dön. Ve vurgu işaretini unutma: [[καφές]] ka-FES, \"KA-fes\" değil.",
+          "en": "**Don't read Η, ν, ρ as Latin.** Η is not h but i; ν is not v but n; ρ is not p but r; β is not b but v. When in doubt, go back to the first table. And do not forget the accent: [[καφές]] is ka-FES, not KA-fes."
+        }
+      ]
+    },
+    {
+      "kind": "try",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Şimdi sen dene. Yanlış yapmak serbest: bunlar sınav hazırlığı hesabına girmez.",
+          "en": "Now you try. Mistakes are fine here: these do not count towards your exam readiness."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch01-try-v",
+            "open-book/ch01-try-accent-vowel",
+            "open-book/ch01-try-accent",
+            "open-book/ch01-try-tsai",
+            "open-book/ch01-try-pairs"
+          ]
+        }
+      ]
+    }
+  ]
+}

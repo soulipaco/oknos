@@ -1,0 +1,1149 @@
+[
+  {
+    "id": "ch10-anakoinosi",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "η ανακοίνωση",
+    "lemma": "ανακοίνωση",
+    "pos": "noun",
+    "gender": "f",
+    "en": "notice, announcement",
+    "tr": "duyuru",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Η ανακοίνωση είναι στο ασανσέρ.",
+      "en": "The notice is in the lift.",
+      "tr": "Duyuru asansörde."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-diacheiristis",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "ο διαχειριστής",
+    "lemma": "διαχειριστής",
+    "pos": "noun",
+    "gender": "m",
+    "en": "building manager, administrator",
+    "tr": "apartman yöneticisi",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Ο διαχειριστής γράφει μια ανακοίνωση.",
+      "en": "The building manager is writing a notice.",
+      "tr": "Apartman yöneticisi bir duyuru yazıyor."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-polykatoikia",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "η πολυκατοικία",
+    "lemma": "πολυκατοικία",
+    "pos": "noun",
+    "gender": "f",
+    "en": "block of flats",
+    "tr": "apartman",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Μένω σε μια πολυκατοικία στην Καλαμαριά.",
+      "en": "I live in a block of flats in Kalamaria.",
+      "tr": "Kalamaria'da bir apartmanda oturuyorum."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-asanser",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "το ασανσέρ",
+    "lemma": "ασανσέρ",
+    "pos": "noun",
+    "gender": "n",
+    "en": "lift, elevator",
+    "tr": "asansör",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Το ασανσέρ είναι κλειστό σήμερα.",
+      "en": "The lift is out of service today.",
+      "tr": "Asansör bugün kapalı."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-revma",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "το ρεύμα",
+    "lemma": "ρεύμα",
+    "pos": "noun",
+    "gender": "n",
+    "en": "electricity, power",
+    "tr": "elektrik, akım",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Σήμερα δεν έχουμε ρεύμα.",
+      "en": "Today we have no electricity.",
+      "tr": "Bugün elektriğimiz yok."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-nero",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "το νερό",
+    "lemma": "νερό",
+    "pos": "noun",
+    "gender": "n",
+    "en": "water",
+    "tr": "su",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Πίνω πολύ νερό κάθε μέρα.",
+      "en": "I drink a lot of water every day.",
+      "tr": "Her gün çok su içiyorum."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-episkevi",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "η επισκευή",
+    "lemma": "επισκευή",
+    "pos": "noun",
+    "gender": "f",
+    "en": "repair",
+    "tr": "onarım, tamir",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Η επισκευή αρχίζει το πρωί.",
+      "en": "The repair starts in the morning.",
+      "tr": "Onarım sabah başlıyor."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-thorybos",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "ο θόρυβος",
+    "lemma": "θόρυβος",
+    "pos": "noun",
+    "gender": "m",
+    "en": "noise",
+    "tr": "gürültü",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Το βράδυ δεν θέλω θόρυβο.",
+      "en": "In the evening I don't want noise.",
+      "tr": "Akşamları gürültü istemiyorum."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-syngnomi",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "η συγγνώμη",
+    "lemma": "συγγνώμη",
+    "pos": "noun",
+    "gender": "f",
+    "en": "sorry; apology, pardon",
+    "tr": "özür; pardon",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Συγγνώμη, πού είναι η στάση;",
+      "en": "Excuse me, where is the stop?",
+      "tr": "Pardon, durak nerede?"
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-iatreio",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "το ιατρείο",
+    "lemma": "ιατρείο",
+    "pos": "noun",
+    "gender": "n",
+    "en": "doctor's office, surgery",
+    "tr": "muayenehane",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Το ιατρείο είναι κοντά στο κέντρο.",
+      "en": "The doctor's office is near the centre.",
+      "tr": "Muayenehane merkeze yakın."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-ponao",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "πονάω",
+    "lemma": "πονάω",
+    "pos": "verb",
+    "en": "to hurt, to ache",
+    "tr": "ağrımak, acımak",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Πονάει το κεφάλι μου.",
+      "en": "My head hurts.",
+      "tr": "Başım ağrıyor."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-pyretos",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "ο πυρετός",
+    "lemma": "πυρετός",
+    "pos": "noun",
+    "gender": "m",
+    "en": "fever",
+    "tr": "ateş (hastalıkta)",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Έχω πυρετό από χθες.",
+      "en": "I have had a fever since yesterday.",
+      "tr": "Dünden beri ateşim var."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-kefali",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "το κεφάλι",
+    "lemma": "κεφάλι",
+    "pos": "noun",
+    "gender": "n",
+    "en": "head",
+    "tr": "baş, kafa",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Το κεφάλι μου πονάει πολύ.",
+      "en": "My head hurts a lot.",
+      "tr": "Başım çok ağrıyor."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-syntagi",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "η συνταγή",
+    "lemma": "συνταγή",
+    "pos": "noun",
+    "gender": "f",
+    "en": "prescription; recipe",
+    "tr": "reçete; yemek tarifi",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Θέλω μια συνταγή για το φάρμακο.",
+      "en": "I need a prescription for the medicine.",
+      "tr": "İlaç için bir reçete istiyorum."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-farmako",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "το φάρμακο",
+    "lemma": "φάρμακο",
+    "pos": "noun",
+    "gender": "n",
+    "en": "medicine, drug",
+    "tr": "ilaç",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Παίρνω το φάρμακο το πρωί.",
+      "en": "I take the medicine in the morning.",
+      "tr": "İlacı sabah alıyorum."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-taftotita",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "η ταυτότητα",
+    "lemma": "ταυτότητα",
+    "pos": "noun",
+    "gender": "f",
+    "en": "identity card, ID",
+    "tr": "kimlik, nüfus cüzdanı",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Έχω την ταυτότητά μου στο σπίτι.",
+      "en": "I have my ID card at home.",
+      "tr": "Kimliğim evde."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-genethlia",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "τα γενέθλια",
+    "lemma": "γενέθλια",
+    "pos": "noun",
+    "gender": "n",
+    "en": "birthday (always plural)",
+    "tr": "doğum günü (hep çoğul)",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Έχω γενέθλια την Κυριακή.",
+      "en": "My birthday is on Sunday.",
+      "tr": "Doğum günüm pazar günü."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-parti",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "το πάρτι",
+    "lemma": "πάρτι",
+    "pos": "noun",
+    "gender": "n",
+    "en": "party",
+    "tr": "parti",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Το πάρτι αρχίζει στις οκτώ.",
+      "en": "The party starts at eight.",
+      "tr": "Parti sekizde başlıyor."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-kalo",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "καλώ",
+    "lemma": "καλώ",
+    "pos": "verb",
+    "en": "to invite; to call",
+    "tr": "davet etmek; çağırmak",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Καλώ τη Σοφία στο πάρτι.",
+      "en": "I am inviting Sofia to the party.",
+      "tr": "Sofia'yı partiye davet ediyorum."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-mou-aresei",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "μου αρέσει",
+    "lemma": "αρέσω",
+    "pos": "verb",
+    "en": "I like (it) (lit. it is pleasing to me); μου αρέσουν = I like (them)",
+    "tr": "hoşuma gidiyor, hoşlanıyorum; μου αρέσουν = (onlar) hoşuma gidiyor",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Μου αρέσει η μουσική.",
+      "en": "I like music.",
+      "tr": "Müzik hoşuma gidiyor."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-perimeno",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "περιμένω",
+    "lemma": "περιμένω",
+    "pos": "verb",
+    "en": "to wait; to wait for",
+    "tr": "beklemek",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Περιμένω το λεωφορείο στη στάση.",
+      "en": "I am waiting for the bus at the stop.",
+      "tr": "Durakta otobüsü bekliyorum."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-tilefono",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "το τηλέφωνο",
+    "lemma": "τηλέφωνο",
+    "pos": "noun",
+    "gender": "n",
+    "en": "telephone; phone number",
+    "tr": "telefon; telefon numarası",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Το τηλέφωνο είναι στο τραπέζι.",
+      "en": "The phone is on the table.",
+      "tr": "Telefon masanın üstünde."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-onoma",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "το όνομα",
+    "lemma": "όνομα",
+    "pos": "noun",
+    "gender": "n",
+    "en": "name",
+    "tr": "ad, isim",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Το όνομά μου είναι Ζεϊνέπ.",
+      "en": "My name is Zeynep.",
+      "tr": "Adım Zeynep."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-skala",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "η σκάλα",
+    "lemma": "σκάλα",
+    "pos": "noun",
+    "gender": "f",
+    "en": "stairs; staircase (plural: οι σκάλες)",
+    "tr": "merdiven (çoğul: οι σκάλες)",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "example": {
+      "el": "Το ασανσέρ είναι κλειστό, η σκάλα είναι δεξιά.",
+      "en": "The lift is closed, the stairs are on the right.",
+      "tr": "Asansör kapalı, merdiven sağda."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-q-notice",
+    "type": "true_false",
+    "skill": "reading",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Σωστό ή λάθος;",
+      "en": "True or false?",
+      "tr": "Doğru mu, yanlış mı?"
+    },
+    "statements": [
+      {
+        "el": "Την Πέμπτη το ασανσέρ θα είναι κλειστό.",
+        "en": "On Thursday the lift will be closed.",
+        "tr": "Perşembe günü asansör kapalı olacak.",
+        "answer": true
+      },
+      {
+        "el": "Ο διαχειριστής θέλει να χρησιμοποιούμε το ασανσέρ.",
+        "en": "The building manager wants us to use the lift.",
+        "tr": "Yönetici asansörü kullanmamızı istiyor.",
+        "answer": false
+      },
+      {
+        "el": "Η επισκευή αρχίζει το απόγευμα.",
+        "en": "The repair starts in the afternoon.",
+        "tr": "Onarım öğleden sonra başlıyor.",
+        "answer": false
+      }
+    ],
+    "explain": {
+      "en": "The notice: «Το ασανσέρ θα είναι κλειστό» (closed). «Χρησιμοποιήστε τις σκάλες» tells us to use the stairs, not the lift. The repair runs «από τις εννέα το πρωί», so it starts in the morning.",
+      "tr": "Duyuru: «Το ασανσέρ θα είναι κλειστό» (kapalı). «χρησιμοποιήστε τις σκάλες» merdivenleri kullanmamızı söylüyor, asansörü değil. Onarım «από τις εννέα το πρωί» başlıyor, yani sabah."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-q-time",
+    "type": "mcq",
+    "skill": "reading",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right answer.",
+      "tr": "Doğru cevabı seç."
+    },
+    "prompt": {
+      "el": "Τι ώρα είναι το ραντεβού της Ζεϊνέπ;",
+      "en": "What time is Zeynep's appointment?",
+      "tr": "Zeynep'in randevusu saat kaçta?"
+    },
+    "options": [
+      "Στις πέντε και μισή.",
+      "Στις έξι.",
+      "Στις πέντε."
+    ],
+    "answer": 0,
+    "explain": {
+      "en": "The secretary: «Ο γιατρός θα σας δει σήμερα, στις πέντε και μισή.» and at the end «Σας περιμένουμε στις πέντε και μισή.»",
+      "tr": "Sekreter: «Ο γιατρός θα σας δει σήμερα, στις πέντε και μισή.» ve sonunda «Σας περιμένουμε στις πέντε και μισή.»"
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-try-accent",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "pronoun.possessive",
+      "stress"
+    ],
+    "text": "Το {1} μας είναι εκεί.",
+    "answer": {
+      "1": [
+        "τηλέφωνό"
+      ]
+    },
+    "options": {
+      "1": [
+        "τηλέφωνό",
+        "τηλέφωνο",
+        "τηλεφώνο"
+      ]
+    },
+    "translation": {
+      "en": "Our phone is there.",
+      "tr": "Telefonumuz orada."
+    },
+    "explain": {
+      "en": "τηλέφωνο is stressed on the third syllable from the end (τη-ΛΕ-φω-νο). Before μας it gets a second accent on the last syllable: το τηλέφωνό μας.",
+      "tr": "τηλέφωνο sondan üçüncü hecede vurgulu (τη-ΛΕ-φω-νο). μας önünde sonuna ikinci bir vurgu alır: το τηλέφωνό μας."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-try-possess",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "pronoun.possessive"
+    ],
+    "text": "Η Ζεϊνέπ έχει δύο φίλες. Οι φίλες {1} μένουν στη Σμύρνη.",
+    "answer": {
+      "1": [
+        "της"
+      ]
+    },
+    "options": {
+      "1": [
+        "της",
+        "του",
+        "τους",
+        "σου"
+      ]
+    },
+    "translation": {
+      "en": "Zeynep has two friends. Her friends live in Izmir.",
+      "tr": "Zeynep'in iki arkadaşı var. Arkadaşları İzmir'de oturuyor."
+    },
+    "explain": {
+      "en": "The owner is one woman, Zeynep: της (her). του is for a male owner, τους for several owners, σου means \"your\".",
+      "tr": "Sahibi tek bir kadın, Zeynep: της. του erkek sahip içindir, τους birden çok sahip için, σου ise \"senin\" demek."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-try-object",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "pronoun.object"
+    ],
+    "text": "Ο Γιώργος είναι εκεί και {1} βλέπω.",
+    "answer": {
+      "1": [
+        "τον"
+      ]
+    },
+    "options": {
+      "1": [
+        "τον",
+        "την",
+        "το",
+        "τους"
+      ]
+    },
+    "translation": {
+      "en": "Giorgos is over there and I can see him.",
+      "tr": "Giorgos orada ve onu görüyorum."
+    },
+    "explain": {
+      "en": "Giorgos is one man, so the object pronoun is τον, and it goes before the verb: τον βλέπω.",
+      "tr": "Giorgos tek bir erkek, o yüzden nesne zamiri τον; fiilden önce gelir: τον βλέπω."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-try-future-object",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "pronoun.object"
+    ],
+    "text": "Ζεϊνέπ, εγώ είμαι στη στάση. Θα {1} περιμένω εδώ.",
+    "answer": {
+      "1": [
+        "σε"
+      ]
+    },
+    "options": {
+      "1": [
+        "σε",
+        "με",
+        "τον",
+        "την"
+      ]
+    },
+    "translation": {
+      "en": "Zeynep, I am at the stop. I will wait for you here.",
+      "tr": "Zeynep, ben durakta oluyorum. Seni burada bekleyeceğim."
+    },
+    "explain": {
+      "en": "The speaker waits for Zeynep, \"you\": σε. The pronoun stays right before the verb, even after θα: θα σε περιμένω.",
+      "tr": "Konuşan Zeynep'i, yani \"seni\" bekliyor: σε. Zamir θα'dan sonra bile fiilin hemen önünde durur: θα σε περιμένω."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-try-aresei",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "verb.aresei"
+    ],
+    "text": "Μου {1} η μουσική και μου {2} τα μήλα.",
+    "answer": {
+      "1": [
+        "αρέσει"
+      ],
+      "2": [
+        "αρέσουν"
+      ]
+    },
+    "options": {
+      "1": [
+        "αρέσει",
+        "αρέσουν"
+      ],
+      "2": [
+        "αρέσει",
+        "αρέσουν"
+      ]
+    },
+    "translation": {
+      "en": "I like music and I like apples.",
+      "tr": "Müzik hoşuma gidiyor, elmalar da hoşuma gidiyor."
+    },
+    "explain": {
+      "en": "The thing liked is the subject and the verb agrees with it: η μουσική is singular (αρέσει), τα μήλα is plural (αρέσουν).",
+      "tr": "Beğenilen şey özne, fiil onunla uyuşur: η μουσική tekil (αρέσει), τα μήλα çoğul (αρέσουν)."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-p-notice-tf",
+    "type": "true_false",
+    "skill": "reading",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Σημειώστε ΣΩΣΤΟ ή ΛΑΘΟΣ.",
+      "en": "Mark TRUE or FALSE.",
+      "tr": "DOĞRU veya YANLIŞ işaretleyin."
+    },
+    "stimulus": {
+      "text": "Ανακοίνωση: Το ιατρείο Νικολαΐδη θα είναι κλειστό την Παρασκευή το απόγευμα. Για ραντεβού, τηλεφωνήστε τη Δευτέρα. Ευχαριστούμε."
+    },
+    "statements": [
+      {
+        "el": "Το ιατρείο θα είναι κλειστό την Πέμπτη.",
+        "en": "The doctor's office will be closed on Thursday.",
+        "tr": "Muayenehane perşembe günü kapalı olacak.",
+        "answer": false
+      },
+      {
+        "el": "Το ιατρείο θα είναι κλειστό το απόγευμα.",
+        "en": "The doctor's office will be closed in the afternoon.",
+        "tr": "Muayenehane öğleden sonra kapalı olacak.",
+        "answer": true
+      },
+      {
+        "el": "Για ραντεβού τηλεφωνούμε τη Δευτέρα.",
+        "en": "For an appointment we phone on Monday.",
+        "tr": "Randevu için pazartesi günü telefon ediyoruz.",
+        "answer": true
+      }
+    ],
+    "exam_task": "a2ltr.reading.notices_tf",
+    "explain": {
+      "en": "The notice says Friday afternoon («την Παρασκευή το απόγευμα»), not Thursday, and «τηλεφωνήστε τη Δευτέρα» asks you to phone on Monday.",
+      "tr": "Duyuru cuma öğleden sonra diyor («την Παρασκευή το απόγευμα»), perşembe değil; «τηλεφωνήστε τη Δευτέρα» pazartesi aramanı istiyor."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-p-ponaei",
+    "type": "mcq",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right answer.",
+      "tr": "Doğru cevabı seç."
+    },
+    "ask": {
+      "tr": "Doktora başının ağrıdığını söylemek istiyorsun.",
+      "en": "You want to tell the doctor that your head hurts."
+    },
+    "prompt": {
+      "el": "Τι λέω;",
+      "en": "What do I say?",
+      "tr": "Ne söylüyorum?"
+    },
+    "options": [
+      "Πονάει το κεφάλι μου.",
+      "Πονάω το κεφάλι μου.",
+      "Πονάει το κεφάλι μας."
+    ],
+    "answer": 0,
+    "explain": {
+      "en": "The thing that hurts is the subject: πονάει το κεφάλι μου (my head hurts). μας would be \"our\".",
+      "tr": "Ağrıyan şey özne: πονάει το κεφάλι μου (başım ağrıyor). μας \"bizim\" demek olurdu."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-p-match-object",
+    "type": "match",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Αντιστοιχίζω.",
+      "en": "Match each person or thing with the pronoun that replaces it.",
+      "tr": "Her kişiyi ya da şeyi onun yerine geçen zamirle eşleştir."
+    },
+    "left": [
+      "Ο Γιώργος",
+      "Η Σοφία",
+      "Το ταξί",
+      "Οι φίλοι μου"
+    ],
+    "right": [
+      "τον",
+      "την",
+      "το",
+      "τους"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explain": {
+      "en": "Ο Γιώργος (masculine singular) → τον; η Σοφία (feminine singular) → την; το ταξί (neuter singular) → το; οι φίλοι μου (plural) → τους.",
+      "tr": "Ο Γιώργος (eril tekil) → τον; η Σοφία (dişil tekil) → την; το ταξί (nötr tekil) → το; οι φίλοι μου (çoğul) → τους."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-p-aresei-mcq",
+    "type": "mcq",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right answer.",
+      "tr": "Doğru cevabı seç."
+    },
+    "ask": {
+      "tr": "\"Elmaları seviyorum\" demek istiyorsun.",
+      "en": "You want to say \"I like apples\"."
+    },
+    "prompt": {
+      "el": "Ποια πρόταση είναι σωστή;",
+      "en": "Which sentence is right?",
+      "tr": "Hangi cümle doğru?"
+    },
+    "options": [
+      "Μου αρέσουν τα μήλα.",
+      "Μου αρέσει τα μήλα.",
+      "Αρέσω τα μήλα."
+    ],
+    "answer": 0,
+    "explain": {
+      "en": "τα μήλα is plural and is the subject, so the verb is plural: μου αρέσουν τα μήλα.",
+      "tr": "τα μήλα çoğul ve özne, bu yüzden fiil de çoğul: μου αρέσουν τα μήλα."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-p-possess-mcq",
+    "type": "mcq",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right answer.",
+      "tr": "Doğru cevabı seç."
+    },
+    "ask": {
+      "tr": "Zeynep'in annesini anlatıyorsun: \"Annesi İzmir'de oturuyor.\"",
+      "en": "You are talking about Zeynep's mother: \"Her mother lives in Izmir.\""
+    },
+    "prompt": {
+      "el": "Τι λέω;",
+      "en": "What do I say?",
+      "tr": "Ne söylüyorum?"
+    },
+    "options": [
+      "Η μητέρα της μένει στη Σμύρνη.",
+      "Η μητέρα του μένει στη Σμύρνη.",
+      "Η μητέρα τους μένει στη Σμύρνη."
+    ],
+    "answer": 0,
+    "explain": {
+      "en": "The owner is a woman, so της (her). του would be his, τους their.",
+      "tr": "Sahibi bir kadın, o yüzden της. του \"onun (erkek)\", τους \"onların\" demek olurdu."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch10-p-cat-accent",
+    "type": "categorise",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Βάλτε κάθε φράση στη σωστή θέση.",
+      "en": "Put each phrase in the right place.",
+      "tr": "Her ifadeyi doğru yere koy."
+    },
+    "ask": {
+      "tr": "Her ifadede kaç vurgu işareti var: 1 mi, 2 mi?",
+      "en": "How many accent marks does each phrase carry: 1 or 2?"
+    },
+    "categories": [
+      "1",
+      "2"
+    ],
+    "items": [
+      "το κλειδί μου",
+      "το τηλέφωνό μου",
+      "η μητέρα σου",
+      "το όνομά της",
+      "το σπίτι μας",
+      "η ταυτότητά σας"
+    ],
+    "answer": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "explain": {
+      "en": "κλειδί, μητέρα and σπίτι are not stressed on the third syllable from the end, so they keep one accent. τηλέφωνο, όνομα and ταυτότητα are, so they get a second accent: τηλέφωνό, όνομά, ταυτότητά.",
+      "tr": "κλειδί, μητέρα ve σπίτι sondan üçüncü hecede vurgulu değil, tek vurgu kalır. τηλέφωνο, όνομα ve ταυτότητα vurguludur, o yüzden ikinci vurgu alırlar: τηλέφωνό, όνομά, ταυτότητά."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-sonnet"
+    }
+  }
+]

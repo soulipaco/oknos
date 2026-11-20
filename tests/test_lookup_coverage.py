@@ -9,9 +9,9 @@ from greek_coach import chapters, db, lint, lookup, packs, report, session, word
 from greek_coach.packs import TrueFalseItem
 
 
-def test_every_tappable_word_of_the_open_packs_has_a_meaning(catalog):
-    # the open packs alone: a fresh clone has nothing else
-    gaps = wordscan.scan(catalog.packs, lookup.Index(catalog))
+def test_every_tappable_word_of_the_open_packs_has_a_meaning(full_catalog):
+    # the open packs alone, the open book included: a fresh clone has nothing else
+    gaps = wordscan.scan(full_catalog.packs, lookup.Index(full_catalog))
     assert gaps.total > 1000
     missing = {place: sorted(words) for place, words in gaps.missing.items() if words}
     assert not missing, f"tappable words with no meaning (run `greek-coach words content/open --write`): {missing}"
@@ -99,7 +99,7 @@ def test_a_glossary_is_checked(tmp_path, catalog):
     assert how == "exact" and entries[0].tr == "altın tozu"
 
 
-def test_a_question_only_in_the_translation_is_flagged(catalog):
+def test_a_question_only_in_the_translation_is_flagged(catalog, full_catalog):
     hidden = TrueFalseItem.model_validate({
         "id": "signs", "type": "true_false", "skill": "reading", "level": "A1",
         "statements": [{"el": "ΣΤΑΣΗ", "en": "The sign ΣΤΑΣΗ shows a bus stop.", "tr": "ΣΤΑΣΗ bir durak gösterir.",
@@ -119,10 +119,10 @@ def test_a_question_only_in_the_translation_is_flagged(catalog):
     assert "the Greek must carry the question" in lint.hidden_questions(type(pack)(pack.manifest, pack.path, {"signs": hidden}))[0]
     card = session.task_card("x/signs", asked, random.Random(0))
     assert card["ask"]["tr"] == "Bu otobüs durağı tabelası mı?"
-    assert not [n for p in catalog.packs for n in lint.hidden_questions(p)]  # none in the open packs
+    assert not [n for p in full_catalog.packs for n in lint.hidden_questions(p)]  # none in the open packs
 
 
-def test_the_report_counts_the_words_that_find_nothing(learner, catalog):
-    rep = report.build(db.open_db(), catalog)
+def test_the_report_counts_the_words_that_find_nothing(open_book, full_catalog):
+    rep = report.build(db.open_db(), full_catalog)
     tap = rep["tap_a_word"]
     assert rep["report_version"] == 4 and tap["total"] > 1000 and tap["unexplained"] == 0 and tap["share"] == 0

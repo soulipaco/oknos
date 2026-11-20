@@ -14,6 +14,11 @@ Where an item belongs, in order of precedence:
   3. a level pool: an otherwise unplaced item of level A1 opens at the pool's `from_stage`;
   4. nowhere: it is never served in a daily session (it can still be practised on purpose).
 
+Items of another curriculum's book (a pack whose chapters are all for a different curriculum, such
+as the open book under a private book's curriculum) support this one instead: a word this
+curriculum's own packs already have is not served twice, and the rest are extras, at the stage
+`follows` maps their `stage:` tag to, or else in a level pool. They never count towards a stage.
+
 A stage is done when MASTERY of its words and verb forms are learned (answered right the last
 time they came up), or when the learner passed its stage check. Long-term memory is the review
 schedule's job: learned items keep coming back at growing intervals in later stages, and an item
@@ -37,7 +42,7 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, ValidationError, model_validator
 
-from greek_coach import coachfiles, db, paths, scheduler
+from greek_coach import coachfiles, db, greek, paths, scheduler
 from greek_coach.packs import Catalog, FormItem, Item, VocabItem
 
 log = logging.getLogger("greek_coach.curriculum")
@@ -131,6 +136,9 @@ class Curriculum(Strict):
     for_pack: str | None = None      # a book curriculum applies when this (private) pack is loaded
     stages: list[Stage] = Field(min_length=1)
     pools: list[Pool] = []
+    # another curriculum's stages -> this one's: where that curriculum's book items go as extras
+    # here ({"open-a1-b1": {"shopping": "lesson-11"}}); unmapped ones go to the level pools
+    follows: dict[str, dict[str, str]] = {}
 
     @model_validator(mode="after")
     def _consistent(self) -> "Curriculum":
@@ -144,6 +152,10 @@ class Curriculum(Strict):
         for p in self.pools:
             if p.from_stage not in ids:
                 raise ValueError(f"pool {p.level} opens at unknown stage {p.from_stage}")
+        for other, mapping in self.follows.items():
+            bad = sorted(v for v in mapping.values() if v not in ids)
+            if bad:
+                raise ValueError(f"follows.{other} maps to unknown stage(s) {', '.join(bad)}")
         return self
 
     def index(self, stage_id: str) -> int:
@@ -222,8 +234,16 @@ def placed(cur: Curriculum, catalog: Catalog) -> tuple[dict[str, int | None], se
         if ch is not None and not s.review_of:
             for k in ch.word_keys() + ch.check_keys():
                 by_chapter.setdefault(k, i)
+    foreign = foreign_packs(cur, catalog)
+    own_words = {greek.fold(item.el) for pack, item in catalog.items.values()
+                 if pack.id not in foreign and isinstance(item, VocabItem)}
     out: dict[str, int | None] = {}
     for k, (pack, item) in catalog.items.items():
+        if pack.id in foreign:
+            out[k] = _supporting(item, cur, ids, pools, foreign[pack.id], own_words)
+            if out[k] is not None:
+                pooled.add(k)
+            continue
         idx = None
         for t in item.topics:
             if t.startswith("stage:") and t[6:] in ids:
@@ -243,6 +263,30 @@ def placed(cur: Curriculum, catalog: Catalog) -> tuple[dict[str, int | None], se
         _cache.clear()
     _cache[key] = (out, pooled)
     return out, pooled
+
+
+def foreign_packs(cur: Curriculum, catalog: Catalog) -> dict[str, str]:
+    """pack id -> the other curriculum, for packs whose chapters are all written for another one
+    (the open book under a private book's curriculum, or that book under the open one)."""
+    out: dict[str, str] = {}
+    for pack in catalog.packs:
+        curricula = {ch.curriculum for ch in pack.chapters.values()}
+        if curricula and cur.id not in curricula:
+            out[pack.id] = sorted(curricula)[0]
+    return out
+
+
+def _supporting(item: Item, cur: Curriculum, ids: dict[str, int], pools: dict[str, int], other: str,
+                own_words: set[str]) -> int | None:
+    """Where an item of another curriculum's book goes in this one: nowhere if it is a word this
+    curriculum already teaches, else the stage `follows` maps its stage to, else its level pool."""
+    if isinstance(item, VocabItem) and greek.fold(item.el) in own_words:
+        return None
+    stage = next((t[6:] for t in item.topics if t.startswith("stage:")), None)
+    mapped = cur.follows.get(other, {}).get(stage) if stage else None
+    if mapped is not None:
+        return ids[mapped]
+    return pools.get(item.level)
 
 
 def core(item: Item) -> bool:

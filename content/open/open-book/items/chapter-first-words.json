@@ -1,0 +1,1198 @@
+[
+ {
+  "id": "ch02-geia-sas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "γεια σας",
+  "pos": "phrase",
+  "en": "hello; goodbye (formal, or to several people)",
+  "tr": "merhaba; hoşça kalın (resmî ya da birden çok kişiye)",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Γεια σας, κυρία Κατερίνα!",
+   "en": "Goodbye, Mrs Katerina!",
+   "tr": "Hoşça kalın Katerina Hanım!"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-kalimera",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "καλημέρα",
+  "pos": "phrase",
+  "en": "good morning",
+  "tr": "günaydın",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Καλημέρα, Γιώργο!",
+   "en": "Good morning, Giorgos!",
+   "tr": "Günaydın Giorgos!"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-kalispera",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "καλησπέρα",
+  "pos": "phrase",
+  "en": "good evening (when you arrive)",
+  "tr": "iyi akşamlar (bir yere gelince)",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Καλησπέρα σας! Είστε η κυρία Κατερίνα;",
+   "en": "Good evening! Are you Mrs Katerina?",
+   "tr": "İyi akşamlar! Katerina Hanım siz misiniz?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-me-lene",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "με λένε …",
+  "pos": "phrase",
+  "en": "my name is …",
+  "tr": "benim adım …",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Με λένε Ζεϊνέπ.",
+   "en": "My name is Zeynep.",
+   "tr": "Benim adım Zeynep."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-pos-se-lene",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πώς σε λένε;",
+  "pos": "phrase",
+  "en": "what's your name? (informal)",
+  "tr": "adın ne? (samimi)",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Γεια σου! Πώς σε λένε;",
+   "en": "Hi! What's your name?",
+   "tr": "Merhaba! Adın ne?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-pos-sas-lene",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πώς σας λένε;",
+  "pos": "phrase",
+  "en": "what is your name? (formal)",
+  "tr": "adınız ne? (resmî)",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Καλημέρα σας. Πώς σας λένε;",
+   "en": "Good morning. What is your name?",
+   "tr": "Günaydın. Adınız ne?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-chairo-poly",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "χαίρω πολύ",
+  "pos": "phrase",
+  "en": "nice to meet you",
+  "tr": "memnun oldum",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Χαίρω πολύ, Γιώργο!",
+   "en": "Nice to meet you, Giorgos!",
+   "tr": "Memnun oldum Giorgos!"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-apo-pou",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "από πού είσαι;",
+  "pos": "phrase",
+  "en": "where are you from? (formal: από πού είστε;)",
+  "tr": "nerelisin? (resmî: από πού είστε;)",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Χαίρω πολύ. Από πού είσαι;",
+   "en": "Nice to meet you. Where are you from?",
+   "tr": "Memnun oldum. Nerelisin?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-eimai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "είμαι",
+  "lemma": "είμαι",
+  "pos": "verb",
+  "en": "to be (I am)",
+  "tr": "olmak (… -im)",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Είμαι από τη Σμύρνη.",
+   "en": "I am from Izmir.",
+   "tr": "İzmirliyim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-echo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "έχω",
+  "lemma": "έχω",
+  "pos": "verb",
+  "en": "to have (I have)",
+  "tr": "sahip olmak (… -im var)",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Έχω ένα χαλί και ένα φλιτζάνι.",
+   "en": "I have a rug and a cup.",
+   "tr": "Bir halım ve bir fincanım var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-ellada",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η Ελλάδα",
+  "lemma": "Ελλάδα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "Greece",
+  "tr": "Yunanistan",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Ο Γιώργος είναι από την Ελλάδα.",
+   "en": "Giorgos is from Greece.",
+   "tr": "Giorgos Yunanistanlı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-tourkia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η Τουρκία",
+  "lemma": "Τουρκία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "Turkey",
+  "tr": "Türkiye",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Η Ζεϊνέπ είναι από την Τουρκία.",
+   "en": "Zeynep is from Turkey.",
+   "tr": "Zeynep Türkiyeli."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-spiti",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το σπίτι",
+  "lemma": "σπίτι",
+  "pos": "noun",
+  "gender": "n",
+  "en": "house, home; flat",
+  "tr": "ev; daire",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Το σπίτι έχει μπαλκόνι.",
+   "en": "The flat has a balcony.",
+   "tr": "Evin balkonu var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-domatio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το δωμάτιο",
+  "lemma": "δωμάτιο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "room",
+  "tr": "oda",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Το δωμάτιο έχει ένα χαλί.",
+   "en": "The room has a rug.",
+   "tr": "Odada bir halı var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-kouzina",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η κουζίνα",
+  "lemma": "κουζίνα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "kitchen",
+  "tr": "mutfak",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Εδώ είναι η κουζίνα.",
+   "en": "Here is the kitchen.",
+   "tr": "Mutfak burası."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-banio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το μπάνιο",
+  "lemma": "μπάνιο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "bathroom",
+  "tr": "banyo",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Πού είναι το μπάνιο;",
+   "en": "Where is the bathroom?",
+   "tr": "Banyo nerede?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-kleidi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το κλειδί",
+  "lemma": "κλειδί",
+  "pos": "noun",
+  "gender": "n",
+  "en": "key",
+  "tr": "anahtar",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Ορίστε το κλειδί.",
+   "en": "Here is the key.",
+   "tr": "Buyurun, anahtar."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-trapezi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το τραπέζι",
+  "lemma": "τραπέζι",
+  "pos": "noun",
+  "gender": "n",
+  "en": "table",
+  "tr": "masa",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Η κουζίνα έχει ένα τραπέζι.",
+   "en": "The kitchen has a table.",
+   "tr": "Mutfakta bir masa var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-patoma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το πάτωμα",
+  "lemma": "πάτωμα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "floor",
+  "tr": "yer, zemin",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Το χαλί είναι στο πάτωμα.",
+   "en": "The rug is on the floor.",
+   "tr": "Halı yerde."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-pou",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πού;",
+  "pos": "adverb",
+  "en": "where?",
+  "tr": "nerede? nereye?",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Πού είναι η κουζίνα;",
+   "en": "Where is the kitchen?",
+   "tr": "Mutfak nerede?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-edo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εδώ",
+  "pos": "adverb",
+  "en": "here",
+  "tr": "burada; burası",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Το μπάνιο είναι εδώ.",
+   "en": "The bathroom is here.",
+   "tr": "Banyo burada."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-ekei",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εκεί",
+  "pos": "adverb",
+  "en": "there",
+  "tr": "orada; orası",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Το κλειδί είναι εκεί.",
+   "en": "The key is there.",
+   "tr": "Anahtar orada."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-geitonas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο γείτονας",
+  "lemma": "γείτονας",
+  "pos": "noun",
+  "gender": "m",
+  "en": "neighbour (a woman: η γειτόνισσα)",
+  "tr": "komşu (kadın: η γειτόνισσα)",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Ο Γιώργος είναι ο γείτονας.",
+   "en": "Giorgos is the neighbour.",
+   "tr": "Giorgos komşu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-kyria",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η κυρία",
+  "lemma": "κυρία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "Mrs; madam, lady (a man: ο κύριος)",
+  "tr": "hanım; hanımefendi (erkek: ο κύριος, bey)",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Καλημέρα, κυρία Κατερίνα!",
+   "en": "Good morning, Mrs Katerina!",
+   "tr": "Günaydın Katerina Hanım!"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-oriste",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ορίστε",
+  "pos": "phrase",
+  "en": "here you are; yes? (answering)",
+  "tr": "buyurun",
+  "topics": [
+   "stage:first-words"
+  ],
+  "example": {
+   "el": "Ορίστε το κλειδί.",
+   "en": "Here is the key.",
+   "tr": "Buyurun, anahtar."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-q-from",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Από πού είναι η Ζεϊνέπ;",
+   "en": "Where is Zeynep from?",
+   "tr": "Zeynep nereli?"
+  },
+  "options": [
+   "Από τη Σμύρνη.",
+   "Από τη Θεσσαλονίκη.",
+   "Από την Ελλάδα."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Zeynep says: «Είμαι από τη Σμύρνη». Giorgos is the one from Thessaloniki.",
+   "tr": "Zeynep «Είμαι από τη Σμύρνη» diyor. Selanikli olan Giorgos."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-q-flat",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Το σπίτι έχει μπαλκόνι.",
+    "en": "The flat has a balcony.",
+    "tr": "Evin balkonu var.",
+    "answer": true
+   },
+   {
+    "el": "Η Ζεϊνέπ έχει τραπέζι.",
+    "en": "Zeynep has a table.",
+    "tr": "Zeynep'in masası var.",
+    "answer": false
+   }
+  ],
+  "explain": {
+   "en": "Mrs Katerina: «Ναι, έχει μπαλκόνι». Zeynep: «Όχι, δεν έχω» — Giorgos's family has a table for her.",
+   "tr": "Katerina Hanım: «Ναι, έχει μπαλκόνι». Zeynep: «Όχι, δεν έχω»; masa Giorgos'ların."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-try-eimaste",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "grammar": [
+   "verb.present"
+  ],
+  "cue": {
+   "lemma": "είμαι",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Εμείς {1} από την Τουρκία.",
+  "answer": {
+   "1": [
+    "είμαστε"
+   ]
+  },
+  "options": {
+   "1": [
+    "είμαστε",
+    "είστε",
+    "είναι"
+   ]
+  },
+  "translation": {
+   "en": "We are from Turkey.",
+   "tr": "Biz Türkiyeliyiz."
+  },
+  "explain": {
+   "en": "εμείς (we) → είμαστε. είστε is «you» (plural or formal), είναι is «he, she, it, they».",
+   "tr": "εμείς (biz) → είμαστε. είστε «siz», είναι «o, onlar»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-try-echeis",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "grammar": [
+   "verb.present"
+  ],
+  "cue": {
+   "lemma": "έχω",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Γιώργο, {1} κλειδί;",
+  "answer": {
+   "1": [
+    "έχεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "έχεις",
+    "έχει",
+    "έχετε"
+   ]
+  },
+  "translation": {
+   "en": "Giorgos, do you have a key?",
+   "tr": "Giorgos, anahtarın var mı?"
+  },
+  "explain": {
+   "en": "You talk to Giorgos as a friend (εσύ), so: έχεις. έχετε would be formal or plural.",
+   "tr": "Giorgos'la samimisin (εσύ); o halde έχεις. έχετε resmî ya da çoğul olurdu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-try-articles",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "rubric": {
+   "el": "Ο, η ή το; Βάζω κάθε λέξη στη σωστή θέση.",
+   "en": "ο, η or το? Put each word in the right place.",
+   "tr": "ο, η mı to mu? Her kelimeyi doğru yere koy."
+  },
+  "categories": [
+   "ο",
+   "η",
+   "το"
+  ],
+  "items": [
+   "σπίτι",
+   "κουζίνα",
+   "καφές",
+   "μπάνιο",
+   "Ελλάδα",
+   "γείτονας"
+  ],
+  "answer": [
+   2,
+   1,
+   0,
+   2,
+   1,
+   0
+  ],
+  "explain": {
+   "en": "Most nouns in -ος, -ας, -ης, -ές take ο; in -α, -η take η; in -ο, -ι, -μα take το.",
+   "tr": "-ος, -ας, -ης, -ές ile bitenlerin çoğu ο alır; -α, -η ile bitenler η; -ο, -ι, -μα ile bitenler το."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-try-formal",
+  "type": "mcq",
+  "skill": "speaking",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "It is evening. Your new landlady, Mrs Katerina, opens the door. What do you say?",
+   "tr": "Akşam oldu. Yeni ev sahibin Katerina Hanım kapıyı açıyor. Ne dersin?"
+  },
+  "prompt": {
+   "el": "Η κυρία Κατερίνα: «Καλησπέρα!» Εσύ: «…»",
+   "en": "Mrs Katerina: «Good evening!» You: «…»",
+   "tr": "Katerina Hanım: «İyi akşamlar!» Sen: «…»"
+  },
+  "options": [
+   "Καλησπέρα σας!",
+   "Γεια σου, Κατερίνα!",
+   "Καλημέρα!"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "She is an older stranger, so you speak formally: σας. «Καλημέρα» is for the morning.",
+   "tr": "Tanımadığın, senden büyük biri; resmî konuşursun: σας. «Καλημέρα» sabah söylenir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-p-eisai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "grammar": [
+   "verb.present"
+  ],
+  "cue": {
+   "lemma": "είμαι",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Γιώργο, {1} από τη Θεσσαλονίκη;",
+  "answer": {
+   "1": [
+    "είσαι"
+   ]
+  },
+  "options": {
+   "1": [
+    "είσαι",
+    "είστε",
+    "είμαι"
+   ]
+  },
+  "translation": {
+   "en": "Giorgos, are you from Thessaloniki?",
+   "tr": "Giorgos, Selanikli misin?"
+  },
+  "explain": {
+   "en": "To a friend: εσύ είσαι.",
+   "tr": "Bir arkadaşa: εσύ είσαι."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-p-eiste",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "grammar": [
+   "verb.present"
+  ],
+  "cue": {
+   "lemma": "είμαι",
+   "person": "2pl",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Καλησπέρα σας! {1} η κυρία Κατερίνα;",
+  "answer": {
+   "1": [
+    "Είστε"
+   ]
+  },
+  "options": {
+   "1": [
+    "Είστε",
+    "Είσαι",
+    "Είναι"
+   ]
+  },
+  "translation": {
+   "en": "Good evening! Are you Mrs Katerina?",
+   "tr": "İyi akşamlar! Katerina Hanım siz misiniz?"
+  },
+  "explain": {
+   "en": "«Καλησπέρα σας» is formal, so the verb is formal too: είστε.",
+   "tr": "«Καλησπέρα σας» resmî; fiil de resmî olur: είστε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-p-echoume",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "grammar": [
+   "verb.present"
+  ],
+  "cue": {
+   "lemma": "έχω",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Εμείς {1} ένα τραπέζι για σένα.",
+  "answer": {
+   "1": [
+    "έχουμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "έχουμε",
+    "έχετε",
+    "έχουν"
+   ]
+  },
+  "translation": {
+   "en": "We have a table for you.",
+   "tr": "Bizim senin için bir masamız var."
+  },
+  "explain": {
+   "en": "εμείς (we) → έχουμε.",
+   "tr": "εμείς (biz) → έχουμε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-p-echoun",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "grammar": [
+   "verb.present"
+  ],
+  "cue": {
+   "lemma": "έχω",
+   "person": "3pl",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Η κυρία Κατερίνα και ο Γιώργος {1} ένα μπαλκόνι.",
+  "answer": {
+   "1": [
+    "έχουν"
+   ]
+  },
+  "options": {
+   "1": [
+    "έχουν",
+    "έχει",
+    "έχουμε"
+   ]
+  },
+  "translation": {
+   "en": "Mrs Katerina and Giorgos have a balcony.",
+   "tr": "Katerina Hanım'la Giorgos'un bir balkonu var."
+  },
+  "explain": {
+   "en": "Two people (they) → έχουν.",
+   "tr": "İki kişi (onlar) → έχουν."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-p-article-i",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "grammar": [
+   "article.gender"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right article.",
+   "tr": "Doğru artikeli seç."
+  },
+  "text": "Πού είναι {1} κουζίνα;",
+  "answer": {
+   "1": [
+    "η"
+   ]
+  },
+  "options": {
+   "1": [
+    "ο",
+    "η",
+    "το"
+   ]
+  },
+  "translation": {
+   "en": "Where is the kitchen?",
+   "tr": "Mutfak nerede?"
+  },
+  "explain": {
+   "en": "κουζίνα ends in -α: η κουζίνα.",
+   "tr": "κουζίνα -α ile bitiyor: η κουζίνα."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-p-article-to",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "grammar": [
+   "article.gender"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right article.",
+   "tr": "Doğru artikeli seç."
+  },
+  "text": "Ορίστε {1} κλειδί.",
+  "answer": {
+   "1": [
+    "το"
+   ]
+  },
+  "options": {
+   "1": [
+    "ο",
+    "η",
+    "το"
+   ]
+  },
+  "translation": {
+   "en": "Here is the key.",
+   "tr": "Buyurun, anahtar."
+  },
+  "explain": {
+   "en": "κλειδί ends in -ι: το κλειδί.",
+   "tr": "κλειδί -ι ile bitiyor: το κλειδί."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-p-me-lene-giorgo",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "— Πώς σε λένε; — Με λένε …",
+   "en": "— What's your name? — My name is …",
+   "tr": "— Adın ne? — Benim adım …"
+  },
+  "options": [
+   "Γιώργο.",
+   "Γιώργος."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "After «με λένε» a man's name loses its final -ς: Γιώργος → Με λένε Γιώργο.",
+   "tr": "«με λένε»den sonra erkek adı sondaki -ς'yi düşürür: Γιώργος → Με λένε Γιώργο."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ },
+ {
+  "id": "ch02-p-match",
+  "type": "match",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each question with its answer.",
+   "tr": "Her soruyu cevabıyla eşleştir."
+  },
+  "left": [
+   "Πώς σε λένε;",
+   "Από πού είσαι;",
+   "Πού είναι το μπάνιο;",
+   "Έχεις μπαλκόνι;"
+  ],
+  "right": [
+   "Με λένε Ζεϊνέπ.",
+   "Από τη Σμύρνη.",
+   "Εκεί.",
+   "Ναι, έχω."
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus"
+  }
+ }
+]

@@ -1,0 +1,553 @@
+{
+  "id": "open-a1-b1.more-verbs",
+  "curriculum": "open-a1-b1",
+  "stage": "more-verbs",
+  "level": "A1",
+  "title": {
+    "tr": "Hangi dilleri konuşuyorsun? -άω ve -ομαι fiilleri",
+    "en": "Which languages do you speak? Verbs in -άω and -ομαι"
+  },
+  "minutes": 11,
+  "version": 1,
+  "sections": [
+    {
+      "kind": "intro",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümde **hangi dilleri konuştuğunu** söylemeyi ve birinden **daha yavaş konuşmasını** istemeyi öğreneceksin. Ayrıca iki yeni fiil grubuyla tanışacaksın: konuşmak, sormak, uyanmak gibi **-άω** fiilleri; gelmek, hatırlamak, uyumak gibi **-ομαι / -άμαι** fiilleri.\n\nAnahtar nokta: her grubun kendi altı sonu var ve ikisi de tabloyla öğrenilir. İkinci grubu zaten tanıyorsun: **είμαι** (είμαι, είσαι, είναι…) tam bu ailenin fiili.",
+          "en": "In this chapter you learn to say **which languages you speak** and to ask someone to **speak more slowly**. You also meet two new groups of verbs: verbs in **-άω** such as speak, ask, wake up; and verbs in **-ομαι / -άμαι** such as come, remember, sleep.\n\nThe key point: each group has its own six endings, and you learn each from a table. You already know the second group's sound: **είμαι** (είμαι, είσαι, είναι…) belongs to exactly this family."
+        }
+      ]
+    },
+    {
+      "kind": "warmup",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Hangi dilleri konuşuyorsun? Biri yavaş konuşunca daha iyi anlıyor musun? Sabah erken mi kalkarsın, gece geç mi yatarsın? Bu bölümde bunların hepsini Yunanca söyleyeceksin.",
+          "en": "Which languages do you speak? Do you understand better when someone speaks slowly? Do you get up early or go to bed late? In this chapter you will say all of it in Greek."
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "title": {
+        "tr": "Kursun ilk akşamı",
+        "en": "The first evening of the course"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Önce dinle, sonra oku. Fiillerin sonlarına dikkat et: *μιλάω*, *μιλάτε*, *έρχομαι*, *έρχεστε*…",
+          "en": "Listen first, then read. Watch the ends of the verbs: *μιλάω*, *μιλάτε*, *έρχομαι*, *έρχεστε*…"
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Akşam. Yunanca kursunun ilk dersi. Öğretmen Pavlos Bey sınıfa resmî konuşuyor (εσείς).",
+            "en": "Evening. The first Greek class. The teacher, Mr Pavlos, speaks formally to the class (εσείς)."
+          },
+          "lines": [
+            {
+              "who": "Παύλος",
+              "el": "Καλησπέρα! Είμαι ο Παύλος, ο δάσκαλος. Πώς σας λένε;",
+              "tr": "İyi akşamlar! Ben Pavlos, öğretmeniniz. Adınız ne?",
+              "en": "Good evening! I'm Pavlos, the teacher. What are you called?"
+            },
+            {
+              "who": "Μάρκο",
+              "el": "Καλησπέρα, κύριε Παύλο. Με λένε Μάρκο.",
+              "tr": "İyi akşamlar Pavlos Bey. Adım Marko.",
+              "en": "Good evening, Mr Pavlos. My name is Marko."
+            },
+            {
+              "who": "Παύλος",
+              "el": "Από πού έρχεστε, Μάρκο;",
+              "tr": "Nereden geliyorsunuz Marko?",
+              "en": "Where do you come from, Marko?"
+            },
+            {
+              "who": "Μάρκο",
+              "el": "Έρχομαι από την Ιταλία. Μιλάω ιταλικά και αγγλικά. Ελληνικά μιλάω λίγο.",
+              "tr": "İtalya'dan geliyorum. İtalyanca ve İngilizce konuşuyorum. Yunancayı biraz konuşuyorum.",
+              "en": "I come from Italy. I speak Italian and English. Greek I speak a little."
+            },
+            {
+              "who": "Παύλος",
+              "el": "Πολύ καλά! Και εσείς, κυρία;",
+              "tr": "Çok güzel! Ya siz, hanımefendi?",
+              "en": "Very good! And you, madam?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Με λένε Ζεϊνέπ. Έρχομαι από την Τουρκία. Μιλάω τουρκικά και αγγλικά.",
+              "tr": "Adım Zeynep. Türkiye'den geliyorum. Türkçe ve İngilizce konuşuyorum.",
+              "en": "My name is Zeynep. I come from Turkey. I speak Turkish and English."
+            },
+            {
+              "who": "Παύλος",
+              "el": "Ωραία! Στο μάθημα μιλάμε ελληνικά, αλλά εγώ μιλάω σιγά.",
+              "tr": "Güzel! Derste Yunanca konuşuyoruz ama ben yavaş konuşuyorum.",
+              "en": "Lovely! In class we speak Greek, but I speak slowly."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Δεν καταλαβαίνω. Πιο σιγά, παρακαλώ.",
+              "tr": "Anlamıyorum. Daha yavaş, lütfen.",
+              "en": "I don't understand. Slower, please."
+            },
+            {
+              "who": "Παύλος",
+              "el": "Ναι, ναι. Πολύ σιγά!",
+              "tr": "Tamam, tamam. Çok yavaş!",
+              "en": "Yes, yes. Very slowly!"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Τι σημαίνει «μάθημα»;",
+              "tr": "«Μάθημα» ne demek?",
+              "en": "What does «μάθημα» mean?"
+            },
+            {
+              "who": "Παύλος",
+              "el": "Μάθημα; Αυτό εδώ! Εμείς κάνουμε μάθημα.",
+              "tr": "Μάθημα mı? İşte bu! Biz ders yapıyoruz.",
+              "en": "Μάθημα? This, here! We are having a lesson."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Πώς σε λένε; Δεν θυμάμαι.",
+              "tr": "Adın ne? Hatırlamıyorum.",
+              "en": "What are you called? I don't remember."
+            },
+            {
+              "who": "Μάρκο",
+              "el": "Μάρκο! Εσένα;",
+              "tr": "Marko! Ya seninki?",
+              "en": "Marko! And yours?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ζεϊνέπ. Χαίρω πολύ!",
+              "tr": "Zeynep. Memnun oldum!",
+              "en": "Zeynep. Pleased to meet you!"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "Yeni birkaç söz: [[Ιταλία]] \"İtalya\", [[ωραία]] \"güzel, harika\", [[κύριε Παύλο]] \"Pavlos Bey\" (birine seslenirken *κύριος* → *κύριε* olur), [[μάθημα]] \"ders\", [[Πιο σιγά]] \"daha yavaş\" (*πιο* \"daha\"). Adı sorunca \"ya seninki?\" [[Εσένα;]] olur (*με λένε* gibi). Tanıdık bir kalıp da var: Marko ile Zeynep birbirine *sen* diyor (*Πώς σε λένε;*), öğretmenle *siz*. [[Τι σημαίνει …;]] şimdilik bir kalıp: \"… ne demek?\"",
+          "en": "A few new bits: [[Ιταλία]] \"Italy\", [[ωραία]] \"lovely\", [[κύριε Παύλο]] \"Mr Pavlos\" (when you call someone, *κύριος* becomes *κύριε*), [[μάθημα]] \"lesson\", [[Πιο σιγά]] \"more slowly\" (*πιο* \"more\"). After a name, \"and yours?\" is [[Εσένα;]] (it goes with *με λένε*). Note who says what: Marko and Zeynep say *σε* to each other (*Πώς σε λένε;*) and *σας* to the teacher. [[Τι σημαίνει …;]] is a set phrase for now: \"What does … mean?\""
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Ders bitti. Zeynep eve yürürken Katerina Hanım'ı arıyor. İkisi de resmî konuşuyor.",
+            "en": "The class is over. Zeynep phones Mrs Katerina on her way home. Both speak formally."
+          },
+          "lines": [
+            {
+              "who": "Κατερίνα",
+              "el": "Εμπρός;",
+              "tr": "Alo?",
+              "en": "Hello? (on the phone)"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Καλησπέρα, κυρία Κατερίνα. Είμαι η Ζεϊνέπ.",
+              "tr": "İyi akşamlar Katerina Hanım. Ben Zeynep.",
+              "en": "Good evening, Mrs Katerina. It's Zeynep."
+            },
+            {
+              "who": "Κατερίνα",
+              "el": "Καλησπέρα, Ζεϊνέπ! Πώς είναι το μάθημα;",
+              "tr": "İyi akşamlar Zeynep! Ders nasıl?",
+              "en": "Good evening, Zeynep! How is the class?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Πολύ καλά! Ο δάσκαλος μιλάει σιγά και καταλαβαίνω λίγο.",
+              "tr": "Çok iyi! Öğretmen yavaş konuşuyor ve biraz anlıyorum.",
+              "en": "Very well! The teacher speaks slowly and I understand a little."
+            },
+            {
+              "who": "Κατερίνα",
+              "el": "Ωραία! Έχετε φίλους στο μάθημα;",
+              "tr": "Ne güzel! Derste arkadaşlarınız var mı?",
+              "en": "Lovely! Do you have friends in the class?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ναι, ο Μάρκο. Είναι από την Ιταλία. Ρωτάει πολύ!",
+              "tr": "Evet, Marko. İtalyan. Çok soru soruyor!",
+              "en": "Yes, Marko. He is from Italy. He asks a lot of questions!"
+            },
+            {
+              "who": "Κατερίνα",
+              "el": "Έρχεστε στο σπίτι;",
+              "tr": "Eve geliyor musunuz?",
+              "en": "Are you coming home?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ναι, έρχομαι. Χρειάζομαι ένα τσάι!",
+              "tr": "Evet, geliyorum. Bir çaya ihtiyacım var!",
+              "en": "Yes, I'm coming. I need a tea!"
+            },
+            {
+              "who": "Κατερίνα",
+              "el": "Ο Γιώργος πίνει τσάι στο μπαλκόνι. Εγώ κοιμάμαι νωρίς, αλλά ο Γιώργος κοιμάται αργά.",
+              "tr": "Giorgos balkonda çay içiyor. Ben erken yatarım ama Giorgos geç yatar.",
+              "en": "Giorgos is having tea on the balcony. I go to bed early, but Giorgos goes to bed late."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Κι εγώ κοιμάμαι αργά, αλλά ξυπνάω νωρίς!",
+              "tr": "Ben de geç yatıyorum ama erken uyanıyorum!",
+              "en": "I go to bed late too, but I get up early!"
+            },
+            {
+              "who": "Κατερίνα",
+              "el": "Γεια σας, Ζεϊνέπ!",
+              "tr": "Hoşça kalın Zeynep!",
+              "en": "Goodbye, Zeynep!"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Γεια σας, κυρία Κατερίνα!",
+              "tr": "Hoşça kalın Katerina Hanım!",
+              "en": "Goodbye, Mrs Katerina!"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "[[Εμπρός;]] telefonu açarken söylenen \"alo\". *Γεια σας* hem merhaba hem hoşça kalın anlamına gelir.",
+          "en": "[[Εμπρός;]] is how you answer the phone: \"hello\". *Γεια σας* means both hello and goodbye."
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Metne göre iki soru.",
+          "en": "Two questions on the text."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch04-q-languages",
+            "open-book/ch04-q-katerina-sleep"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "-άω ile biten fiiller",
+        "en": "Verbs in -άω"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Metinde *μιλάω*, *μιλάει*, *μιλάμε*, *μιλάτε* gördün. Bu fiillerin sonu **-άω**. Sonları -ω fiillerinin sonlarına benzer ama daha kısa ve **vurgu hep sondaki α üzerinde**: *μιλ-άω, μιλ-άς, μιλ-άει, μιλ-άμε, μιλ-άτε, μιλ-άνε*.\n\nAynı gruptan: **ρωτάω** (sormak), **ξυπνάω** (uyanmak), **πουλάω** (satmak).",
+          "en": "In the text you saw *μιλάω*, *μιλάει*, *μιλάμε*, *μιλάτε*. These verbs end in **-άω**. Their endings look like those of the -ω verbs, but shorter, and **the stress is always on the α of the ending**: *μιλ-άω, μιλ-άς, μιλ-άει, μιλ-άμε, μιλ-άτε, μιλ-άνε*.\n\nSame group: **ρωτάω** (ask), **ξυπνάω** (wake up), **πουλάω** (sell)."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "μιλάω, ρωτάω, ξυπνάω, πουλάω",
+            "en": "μιλάω, ρωτάω, ξυπνάω, πουλάω"
+          },
+          "head": [
+            {
+              "tr": "kim",
+              "en": "who"
+            },
+            "μιλάω",
+            "ρωτάω",
+            "ξυπνάω",
+            "πουλάω"
+          ],
+          "rows": [
+            [
+              "εγώ",
+              "μιλάω",
+              "ρωτάω",
+              "ξυπνάω",
+              "πουλάω"
+            ],
+            [
+              "εσύ",
+              "μιλάς",
+              "ρωτάς",
+              "ξυπνάς",
+              "πουλάς"
+            ],
+            [
+              "αυτός, αυτή, αυτό",
+              "μιλάει",
+              "ρωτάει",
+              "ξυπνάει",
+              "πουλάει"
+            ],
+            [
+              "εμείς",
+              "μιλάμε",
+              "ρωτάμε",
+              "ξυπνάμε",
+              "πουλάμε"
+            ],
+            [
+              "εσείς",
+              "μιλάτε",
+              "ρωτάτε",
+              "ξυπνάτε",
+              "πουλάτε"
+            ],
+            [
+              "αυτοί, αυτές, αυτά",
+              "μιλάνε",
+              "ρωτάνε",
+              "ξυπνάνε",
+              "πουλάνε"
+            ]
+          ],
+          "note": {
+            "tr": "Son kişi için ikinci bir biçim de var: *μιλούν*, *ξυπνούν*. İkisi de doğru; konuşmada çoğu zaman *-άνε* duyarsın.",
+            "en": "The last person has a second form too: *μιλούν*, *ξυπνούν*. Both are right; in speech you mostly hear *-άνε*."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Μιλάτε ελληνικά;",
+              "tr": "Yunanca konuşuyor musunuz?",
+              "en": "Do you speak Greek?"
+            },
+            {
+              "el": "Ο μπακάλης πουλάει γιαούρτι και τσάι.",
+              "tr": "Bakkal yoğurt ve çay satıyor.",
+              "en": "The grocer sells yoghurt and tea."
+            },
+            {
+              "el": "Ξυπνάω νωρίς κάθε πρωί.",
+              "tr": "Her sabah erken uyanırım.",
+              "en": "I wake up early every morning."
+            },
+            {
+              "el": "Δεν μιλάμε τουρκικά στο μάθημα.",
+              "tr": "Derste Türkçe konuşmuyoruz.",
+              "en": "We don't speak Turkish in class."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "**Bir not, sadece tanımak için.** Bazı fiiller **-ώ, -είς, -εί, -ούμε, -είτε, -ούν** ile biter: [[τηλεφωνώ]] \"telefon ediyorum\", *τηλεφωνείς*, *τηλεφωνεί*. *Ευχαριστώ* da böyle: \"ben teşekkür ediyorum\". Bunları şimdi çalışmayacağız; görürsen tanıman yeter.",
+          "en": "**A note, for recognition only.** Some verbs end in **-ώ, -είς, -εί, -ούμε, -είτε, -ούν**: [[τηλεφωνώ]] \"I phone\", *τηλεφωνείς*, *τηλεφωνεί*. *Ευχαριστώ* is one too: \"I thank\". We will not practise these now; if you see one, just recognise it."
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "-ομαι ve -άμαι ile biten fiiller",
+        "en": "Verbs in -ομαι and -άμαι"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu fiiller **-μαι** ile biter. Sonları **είμαι** fiilini hatırlatır (*είμαι, είσαι … είμαστε, είστε*), ama tam aynı değil: \"o\" ve \"onlar\" biçimleri **-ται** ve **-νται** ile biter.\n\n**έρχομαι** (gelmek) ve **χρειάζομαι** (ihtiyacı olmak) *-ομαι* ile biter; **εμείς** biçiminde vurgu bir hece sağa kayar: *έρχομαι → ερχόμαστε*. **θυμάμαι** (hatırlamak) ve **κοιμάμαι** (uyumak) *-άμαι* ile biter; **εμείς** ve **αυτοί** biçimlerinde α yerine ο gelir: *θυμόμαστε, θυμούνται*.",
+          "en": "These verbs end in **-μαι**. Their endings recall **είμαι** (*είμαι, είσαι … είμαστε, είστε*), but are not the same: the \"he/she\" and \"they\" forms end in **-ται** and **-νται**.\n\n**έρχομαι** (come) and **χρειάζομαι** (need) end in *-ομαι*; in the **εμείς** form the stress moves one syllable to the right: *έρχομαι → ερχόμαστε*. **θυμάμαι** (remember) and **κοιμάμαι** (sleep) end in *-άμαι*; in the **εμείς** and **αυτοί** forms the α becomes ο: *θυμόμαστε, θυμούνται*."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "έρχομαι, χρειάζομαι, θυμάμαι, κοιμάμαι",
+            "en": "έρχομαι, χρειάζομαι, θυμάμαι, κοιμάμαι"
+          },
+          "head": [
+            {
+              "tr": "kim",
+              "en": "who"
+            },
+            "έρχομαι",
+            "χρειάζομαι",
+            "θυμάμαι",
+            "κοιμάμαι"
+          ],
+          "rows": [
+            [
+              "εγώ",
+              "έρχομαι",
+              "χρειάζομαι",
+              "θυμάμαι",
+              "κοιμάμαι"
+            ],
+            [
+              "εσύ",
+              "έρχεσαι",
+              "χρειάζεσαι",
+              "θυμάσαι",
+              "κοιμάσαι"
+            ],
+            [
+              "αυτός, αυτή, αυτό",
+              "έρχεται",
+              "χρειάζεται",
+              "θυμάται",
+              "κοιμάται"
+            ],
+            [
+              "εμείς",
+              "ερχόμαστε",
+              "χρειαζόμαστε",
+              "θυμόμαστε",
+              "κοιμόμαστε"
+            ],
+            [
+              "εσείς",
+              "έρχεστε",
+              "χρειάζεστε",
+              "θυμάστε",
+              "κοιμάστε"
+            ],
+            [
+              "αυτοί, αυτές, αυτά",
+              "έρχονται",
+              "χρειάζονται",
+              "θυμούνται",
+              "κοιμούνται"
+            ]
+          ],
+          "note": {
+            "tr": "Kıyasla: είμαι, είσαι, είναι, είμαστε, είστε, είναι. Sonlar aynı havada: -μαι, -σαι, -ται, -μαστε, -στε.",
+            "en": "Compare: είμαι, είσαι, είναι, είμαστε, είστε, είναι. The endings have the same feel: -μαι, -σαι, -ται, -μαστε, -στε."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Ο Μάρκο έρχεται από την Ιταλία.",
+              "tr": "Marko İtalya'dan geliyor.",
+              "en": "Marko comes from Italy."
+            },
+            {
+              "el": "Χρειάζομαι ένα τσάι.",
+              "tr": "Bir çaya ihtiyacım var.",
+              "en": "I need a tea."
+            },
+            {
+              "el": "Θυμάσαι πώς με λένε;",
+              "tr": "Adımı hatırlıyor musun?",
+              "en": "Do you remember what I am called?"
+            },
+            {
+              "el": "Ο Γιώργος κοιμάται αργά.",
+              "tr": "Giorgos geç yatar.",
+              "en": "Giorgos goes to bed late."
+            },
+            {
+              "el": "Ερχόμαστε στο μάθημα κάθε βράδυ.",
+              "tr": "Her akşam derse geliyoruz.",
+              "en": "We come to class every evening."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "words",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümün kelimeleri: 9 fiil, üç dil adı ve günlük küçük kelimeler. Bölümü bitirince oturumlarına gelecekler; fiillerin çekimleri de onlarla birlikte açılacak.",
+          "en": "The words of this chapter: 9 verbs, three language names and small everyday words. Once you finish the chapter they come into your sessions, and the verbs' forms open with them."
+        },
+        {
+          "type": "words",
+          "items": [
+            "open-book/ch04-milao",
+            "open-book/ch04-rotao",
+            "open-book/ch04-xypnao",
+            "open-book/ch04-poulao",
+            "open-book/ch04-erchomai",
+            "open-book/ch04-chreiazomai",
+            "open-book/ch04-thymamai",
+            "open-book/ch04-koimamai",
+            "open-book/ch04-katalavaino",
+            "open-book/ch04-tourkika",
+            "open-book/ch04-agglika",
+            "open-book/ch04-italika",
+            "open-book/ch04-ligo",
+            "open-book/ch04-kala",
+            "open-book/ch04-poly",
+            "open-book/ch04-siga",
+            "open-book/ch04-noris",
+            "open-book/ch04-arga",
+            "open-book/ch04-mathima",
+            "open-book/ch04-daskalos",
+            "open-book/ch04-lexi"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "tips",
+      "blocks": [
+        {
+          "type": "tip",
+          "kind": "tr_bridge",
+          "tr": "**Türkçede böyle bir ayrım yok, ama zor değil.** Türkçede her fiil aynı kişi eklerini alır (gel-iyorum, gel-iyorsun). Yunancada fiillerin birkaç grubu var ve her grubun kendi altı sonu var: *-άω* fiillerinin bir seti, *-ομαι* fiillerinin başka bir seti. İngilizcedeki *I am / you are / he is* gibi: fiilin kendisi değişir. Bir grubun altı sonunu bir kez öğrenirsin, o gruptaki bütün fiiller için işe yarar.",
+          "en": "**Turkish has no such type, but it is not strange.** In English you already say *I am, you are, he is*: the verb itself changes. Greek does this with every verb in these two groups, only more regularly: learn the six endings once and they work for all of them."
+        },
+        {
+          "type": "tip",
+          "kind": "mistake",
+          "tr": "**μιλάω mı μιλώ mu?** İkisi de doğru. Günlük konuşmada **μιλάω** biçimini çok daha sık duyarsın, kitaplarda *μιλώ* da çıkar. Sen *-άω* biçimini kullan. Aynı şey *ξυπνάω / ξυπνώ* için de geçerli.",
+          "en": "**μιλάω or μιλώ?** Both are right. In everyday speech you hear **μιλάω** far more; books also print *μιλώ*. Use the *-άω* form. The same goes for *ξυπνάω / ξυπνώ*."
+        },
+        {
+          "type": "tip",
+          "kind": "mistake",
+          "tr": "**Vurgunun yeri: ερχόμαστε.** *έρχομαι* ama *ερχόμαστε*: \"biz\" biçiminde vurgu bir hece sağa gider (ερ-**χό**-μα-στε). *χρειαζόμαστε* sözü de öyle. *-άμαι* fiillerinde ise vurgu yerinde kalır ama α, ο olur: *θυμάμαι → θυμόμαστε*.",
+          "en": "**Where the stress goes: ερχόμαστε.** It is *έρχομαι* but *ερχόμαστε*: in the \"we\" form the stress goes one syllable to the right (ερ-**χό**-μα-στε), and so does *χρειαζόμαστε*. In the *-άμαι* verbs the stress stays but the α becomes ο: *θυμάμαι → θυμόμαστε*."
+        },
+        {
+          "type": "tip",
+          "kind": "exam",
+          "exam_task": "b1keg.speaking.warmup",
+          "tr": "Sözlü sınavın ısınma bölümünde sınav görevlisi genellikle hangi dilleri konuştuğunu ve Yunancayı ne zamandır öğrendiğini sorar. İlk soruya hazırsın: [[Μιλάω τουρκικά και αγγλικά. Ελληνικά μιλάω λίγο.]] İkincisi (\"ne zamandır öğreniyorsun?\") için henüz kalıp yok; şimdilik [[Μαθαίνω ελληνικά.]] de yeter.",
+          "en": "In the warm-up of the speaking exam the examiner usually asks which languages you speak and how long you have been learning Greek. You are ready for the first question: [[Μιλάω τουρκικά και αγγλικά. Ελληνικά μιλάω λίγο.]] For the second (\"since when?\") there is no pattern yet; for now [[Μαθαίνω ελληνικά.]] is enough."
+        }
+      ]
+    },
+    {
+      "kind": "try",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Şimdi sen dene. Yanlış yapmak serbest: bunlar sınav hazırlığı hesabına girmez.",
+          "en": "Now you try. Mistakes are fine here: these do not count towards your exam readiness."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch04-try-milas",
+            "open-book/ch04-try-erchetai",
+            "open-book/ch04-try-koimomaste",
+            "open-book/ch04-try-slow",
+            "open-book/ch04-try-match"
+          ]
+        }
+      ]
+    }
+  ]
+}

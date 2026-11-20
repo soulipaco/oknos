@@ -1,0 +1,1090 @@
+[
+ {
+  "id": "ch08-mporo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μπορώ",
+  "lemma": "μπορώ",
+  "pos": "verb",
+  "en": "to be able to, can",
+  "tr": "-ebilmek, yapabilmek",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Μπορώ να έρθω το Σάββατο.",
+   "en": "I can come on Saturday.",
+   "tr": "Cumartesi gelebilirim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-fevgo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "φεύγω",
+  "lemma": "φεύγω",
+  "pos": "verb",
+  "en": "to leave, to go away",
+  "tr": "ayrılmak, yola çıkmak",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Φεύγω στις οχτώ.",
+   "en": "I leave at eight.",
+   "tr": "Saat sekizde çıkıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-vgaino",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "βγαίνω",
+  "lemma": "βγαίνω",
+  "pos": "verb",
+  "en": "to go out, to come out",
+  "tr": "dışarı çıkmak",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Το βράδυ βγαίνω με φίλους.",
+   "en": "In the evening I go out with friends.",
+   "tr": "Akşamları arkadaşlarla çıkıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-taxidevo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ταξιδεύω",
+  "lemma": "ταξιδεύω",
+  "pos": "verb",
+  "en": "to travel",
+  "tr": "seyahat etmek",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Ταξιδεύω με το τρένο.",
+   "en": "I travel by train.",
+   "tr": "Trenle seyahat ediyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-archizo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αρχίζω",
+  "lemma": "αρχίζω",
+  "pos": "verb",
+  "en": "to begin, to start",
+  "tr": "başlamak",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Το μάθημα αρχίζει στις έξι.",
+   "en": "The class starts at six.",
+   "tr": "Ders saat altıda başlıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-tilefono",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τηλεφωνώ",
+  "lemma": "τηλεφωνώ",
+  "pos": "verb",
+  "en": "to phone, to call",
+  "tr": "telefon etmek, aramak",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Τηλεφωνώ στη Σοφία.",
+   "en": "I phone Sofia.",
+   "tr": "Sofia'yı arıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-plirono",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πληρώνω",
+  "lemma": "πληρώνω",
+  "pos": "verb",
+  "en": "to pay",
+  "tr": "ödemek",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Πληρώνω δέκα ευρώ.",
+   "en": "I pay ten euros.",
+   "tr": "On avro ödüyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-agorazo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αγοράζω",
+  "lemma": "αγοράζω",
+  "pos": "verb",
+  "en": "to buy",
+  "tr": "satın almak",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Αγοράζω ψωμί και γάλα.",
+   "en": "I buy bread and milk.",
+   "tr": "Ekmek ve süt alıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-methavrio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μεθαύριο",
+  "lemma": "μεθαύριο",
+  "pos": "adverb",
+  "en": "the day after tomorrow",
+  "tr": "öbür gün",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Μεθαύριο έχω ραντεβού.",
+   "en": "The day after tomorrow I have an appointment.",
+   "tr": "Öbür gün randevum var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-evdomada",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η εβδομάδα",
+  "lemma": "εβδομάδα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "week",
+  "tr": "hafta",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Κάθε εβδομάδα πηγαίνω στη λαϊκή.",
+   "en": "Every week I go to the street market.",
+   "tr": "Her hafta semt pazarına gidiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-minas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο μήνας",
+  "lemma": "μήνας",
+  "pos": "noun",
+  "gender": "m",
+  "en": "month",
+  "tr": "ay",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Κάθε μήνα ταξιδεύω στην Τουρκία.",
+   "en": "Every month I travel to Turkey.",
+   "tr": "Her ay Türkiye'ye seyahat ediyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-savvatokyriako",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το Σαββατοκύριακο",
+  "lemma": "Σαββατοκύριακο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "weekend",
+  "tr": "hafta sonu",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Το Σαββατοκύριακο μένω στο σπίτι.",
+   "en": "At the weekend I stay at home.",
+   "tr": "Hafta sonu evde kalıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-rantevou",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ραντεβού",
+  "lemma": "ραντεβού",
+  "pos": "noun",
+  "gender": "n",
+  "en": "appointment, date",
+  "tr": "randevu",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Έχω ραντεβού στις έξι.",
+   "en": "I have an appointment at six.",
+   "tr": "Saat altıda randevum var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-giatros",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο γιατρός",
+  "lemma": "γιατρός",
+  "pos": "noun",
+  "gender": "m",
+  "en": "doctor (η γιατρός for a woman too)",
+  "tr": "doktor",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Ο γιατρός δουλεύει στο κέντρο.",
+   "en": "The doctor works in the centre.",
+   "tr": "Doktor merkezde çalışıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-thalassa",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η θάλασσα",
+  "lemma": "θάλασσα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "sea",
+  "tr": "deniz",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Η θάλασσα είναι κοντά.",
+   "en": "The sea is near.",
+   "tr": "Deniz yakın."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-ekdromi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η εκδρομή",
+  "lemma": "εκδρομή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "trip, excursion",
+  "tr": "gezi, gün gezisi",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Η εκδρομή αρχίζει στις οχτώ.",
+   "en": "The trip starts at eight.",
+   "tr": "Gezi saat sekizde başlıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-mazi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μαζί",
+  "lemma": "μαζί",
+  "pos": "adverb",
+  "en": "together, along",
+  "tr": "birlikte",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Ο Γιώργος και η Ζεϊνέπ πίνουν καφέ μαζί.",
+   "en": "Giorgos and Zeynep drink coffee together.",
+   "tr": "Giorgos ile Zeynep birlikte kahve içiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-isos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ίσως",
+  "lemma": "ίσως",
+  "pos": "adverb",
+  "en": "maybe, perhaps",
+  "tr": "belki",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Ίσως ο Γιώργος είναι στο σπίτι.",
+   "en": "Maybe Giorgos is at home.",
+   "tr": "Belki Giorgos evdedir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-epomenos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "επόμενος",
+  "lemma": "επόμενος",
+  "pos": "adjective",
+  "en": "next",
+  "tr": "sonraki, gelecek",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Η επόμενη στάση είναι η πλατεία.",
+   "en": "The next stop is the square.",
+   "tr": "Sonraki durak meydan."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-eleftheros",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ελεύθερος",
+  "lemma": "ελεύθερος",
+  "pos": "adjective",
+  "en": "free, available",
+  "tr": "boş, müsait",
+  "topics": [
+   "stage:future"
+  ],
+  "example": {
+   "el": "Το τραπέζι είναι ελεύθερο.",
+   "en": "The table is free.",
+   "tr": "Masa boş."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-q-saturday",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Τι έχει η Ζεϊνέπ το Σάββατο το πρωί;",
+   "en": "What does Zeynep have on Saturday morning?",
+   "tr": "Zeynep'in cumartesi sabahı ne var?"
+  },
+  "options": [
+   "Ραντεβού με τον γιατρό.",
+   "Μάθημα ελληνικών.",
+   "Δουλειά στο φαρμακείο."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Zeynep: «Αλλά το Σάββατο το πρωί έχω ραντεβού με τον γιατρό.»",
+   "tr": "Zeynep: «Αλλά το Σάββατο το πρωί έχω ραντεβού με τον γιατρό.»"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Ζεϊνέπ θα πάει στον γιατρό το Σάββατο.",
+    "en": "Zeynep will see the doctor on Saturday.",
+    "tr": "Zeynep cumartesi doktora gidecek.",
+    "answer": false
+   },
+   {
+    "el": "Ο Γιώργος και η Ζεϊνέπ θα πάνε στη Χαλκιδική με το αυτοκίνητο.",
+    "en": "Giorgos and Zeynep will go to Halkidiki by car.",
+    "tr": "Giorgos ile Zeynep Halkidiki'ye arabayla gidecek.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "The new appointment is on Monday at ten: «Θα έρθω τη Δευτέρα στις δέκα.» And Giorgos: «θα πάμε με το αυτοκίνητο».",
+   "tr": "Yeni randevu pazartesi saat onda: «Θα έρθω τη Δευτέρα στις δέκα.» Giorgos da şöyle diyor: «θα πάμε με το αυτοκίνητο»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-q-monday",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πότε θα πάει η Ζεϊνέπ στον γιατρό;",
+   "en": "When will Zeynep see the doctor?",
+   "tr": "Zeynep doktora ne zaman gidecek?"
+  },
+  "options": [
+   "Τη Δευτέρα στις δέκα.",
+   "Την Παρασκευή στις δέκα.",
+   "Το Σάββατο στις εννιά."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The secretary offers Monday at ten, and Zeynep says yes: «Θα έρθω τη Δευτέρα στις δέκα.»",
+   "tr": "Sekreter pazartesi saat onu öneriyor, Zeynep kabul ediyor: «Θα έρθω τη Δευτέρα στις δέκα.»"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-try-agoraso",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "grammar": [
+   "verb.future",
+   "verb.perfective_stem"
+  ],
+  "cue": {
+   "lemma": "αγοράζω",
+   "person": "1sg",
+   "tense": "future"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Αύριο εγώ θα {1} ψωμί στον φούρνο.",
+  "answer": {
+   "1": [
+    "αγοράσω"
+   ]
+  },
+  "options": {
+   "1": [
+    "αγοράσω",
+    "αγοράσεις",
+    "αγοράσουν"
+   ]
+  },
+  "translation": {
+   "en": "Tomorrow I'll buy bread at the bakery.",
+   "tr": "Yarın fırından ekmek alacağım."
+  },
+  "explain": {
+   "en": "-ζω → -σω in the future stem: αγοράζω → αγοράσω. \"I\" ends in -ω.",
+   "tr": "Gelecek kökte -ζω → -σω olur: αγοράζω → αγοράσω. \"Ben\" için son -ω."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-try-taxidepsei",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "grammar": [
+   "verb.future",
+   "verb.perfective_stem"
+  ],
+  "cue": {
+   "lemma": "ταξιδεύω",
+   "person": "3sg",
+   "tense": "future"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Την Παρασκευή ο Γιώργος θα {1} στην Αθήνα.",
+  "answer": {
+   "1": [
+    "ταξιδέψει"
+   ]
+  },
+  "options": {
+   "1": [
+    "ταξιδέψει",
+    "ταξιδέψεις",
+    "ταξιδέσει"
+   ]
+  },
+  "translation": {
+   "en": "On Friday Giorgos will travel to Athens.",
+   "tr": "Cuma günü Giorgos Atina'ya gidecek."
+  },
+  "explain": {
+   "en": "-εύω → -έψω: ταξιδεύω → ταξιδέψω. One person (he) → -ει: ταξιδέψει.",
+   "tr": "-εύω → -έψω: ταξιδεύω → ταξιδέψω. Bir kişi (o) → -ει: ταξιδέψει."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-try-pai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "grammar": [
+   "verb.future",
+   "verb.irregular"
+  ],
+  "cue": {
+   "lemma": "πηγαίνω",
+   "person": "3sg",
+   "tense": "future"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Το Σάββατο η Ζεϊνέπ θα {1} στη Χαλκιδική.",
+  "answer": {
+   "1": [
+    "πάει"
+   ]
+  },
+  "options": {
+   "1": [
+    "πάει",
+    "πάω",
+    "πάνε"
+   ]
+  },
+  "translation": {
+   "en": "On Saturday Zeynep will go to Halkidiki.",
+   "tr": "Cumartesi Zeynep Halkidiki'ye gidecek."
+  },
+  "explain": {
+   "en": "The future of πηγαίνω is θα πάω. One person (she) → -ει: θα πάει.",
+   "tr": "πηγαίνω fiilinin geleceği θα πάω. Bir kişi (o) → -ει: θα πάει."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-try-erthei",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "grammar": [
+   "verb.future",
+   "verb.irregular",
+   "verb.modal"
+  ],
+  "cue": {
+   "lemma": "έρχομαι",
+   "person": "3sg",
+   "tense": "future"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Η Ζεϊνέπ δεν μπορεί να {1} το Σάββατο.",
+  "answer": {
+   "1": [
+    "έρθει"
+   ]
+  },
+  "options": {
+   "1": [
+    "έρθει",
+    "έρθω",
+    "έρθουν"
+   ]
+  },
+  "translation": {
+   "en": "Zeynep can't come on Saturday.",
+   "tr": "Zeynep cumartesi gelemiyor."
+  },
+  "explain": {
+   "en": "After μπορεί να comes the same form as the future, without θα. The subject is one person (she) → έρθει.",
+   "tr": "μπορεί να sözlerinden sonra, θα olmadan, gelecekteki biçim gelir. Özne tek kişi (o) → έρθει."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-try-questions",
+  "type": "match",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each question with its answer.",
+   "tr": "Her soruyu cevabıyla eşleştir."
+  },
+  "left": [
+   "Πότε θα φύγουμε;",
+   "Τι θα φάμε;",
+   "Πώς θα πάμε;",
+   "Πού θα πάμε;"
+  ],
+  "right": [
+   "Στις οχτώ.",
+   "Τυρόπιτες και φρούτα.",
+   "Με το αυτοκίνητο.",
+   "Στη Χαλκιδική."
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "explain": {
+   "en": "πότε = when → a time; τι = what → food; πώς = how → με το αυτοκίνητο; πού = where → στη Χαλκιδική.",
+   "tr": "πότε = ne zaman → saat; τι = ne → yiyecek; πώς = nasıl → με το αυτοκίνητο; πού = nerede/nereye → στη Χαλκιδική."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-sort-stems",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε λέξη στη σωστή θέση.",
+   "en": "Where does each verb's future stem end? Sort the verbs.",
+   "tr": "Her fiilin gelecek kökü nasıl bitiyor? Fiilleri yerleştir."
+  },
+  "categories": [
+   "-σω",
+   "-ψω",
+   "-ήσω"
+  ],
+  "items": [
+   "αγοράζω",
+   "γράφω",
+   "μιλάω",
+   "πληρώνω",
+   "δουλεύω",
+   "τηλεφωνώ"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   0,
+   1,
+   2
+  ],
+  "explain": {
+   "en": "αγοράζω → θα αγοράσω, πληρώνω → θα πληρώσω; γράφω → θα γράψω, δουλεύω → θα δουλέψω; μιλάω → θα μιλήσω, τηλεφωνώ → θα τηλεφωνήσω.",
+   "tr": "αγοράζω → θα αγοράσω, πληρώνω → θα πληρώσω; γράφω → θα γράψω, δουλεύω → θα δουλέψω; μιλάω → θα μιλήσω, τηλεφωνώ → θα τηλεφωνήσω."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-two-gaps",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "grammar": [
+   "verb.future",
+   "verb.irregular"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Το Σάββατο εμείς θα {1} στη θάλασσα και θα {2} τυρόπιτες.",
+  "answer": {
+   "1": [
+    "πάμε"
+   ],
+   "2": [
+    "φάμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "πάμε",
+    "πάω",
+    "πάτε"
+   ],
+   "2": [
+    "φάμε",
+    "φάω",
+    "φάτε"
+   ]
+  },
+  "translation": {
+   "en": "On Saturday we'll go to the sea and we'll eat cheese pies.",
+   "tr": "Cumartesi denize gideceğiz ve peynirli börek yiyeceğiz."
+  },
+  "explain": {
+   "en": "The subject is εμείς (we): θα πάμε, θα φάμε.",
+   "tr": "Özne εμείς (biz): θα πάμε, θα φάμε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-eat-you",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "grammar": [
+   "verb.future",
+   "verb.irregular"
+  ],
+  "cue": {
+   "lemma": "τρώω",
+   "person": "2sg",
+   "tense": "future"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Τι θα {1} εσύ το βράδυ; Εγώ θα φάω τυρόπιτα.",
+  "answer": {
+   "1": [
+    "φας"
+   ]
+  },
+  "options": {
+   "1": [
+    "φας",
+    "φάω",
+    "φάμε"
+   ]
+  },
+  "translation": {
+   "en": "What will you eat in the evening? I'll eat a cheese pie.",
+   "tr": "Sen akşam ne yiyeceksin? Ben peynirli börek yiyeceğim."
+  },
+  "explain": {
+   "en": "The subject is εσύ (you): θα φας.",
+   "tr": "Özne εσύ (sen): θα φας."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-see-future",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "How do you say \"I will see\"?",
+   "tr": "\"Göreceğim\" nasıl denir?"
+  },
+  "prompt": {
+   "el": "βλέπω → θα …",
+   "en": "I see → I will …",
+   "tr": "görüyorum → …-eceğim"
+  },
+  "options": [
+   "θα δω",
+   "θα βλέψω",
+   "θα βλέπσω"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "βλέπω is one of the irregular futures: θα δω. Learn it as it is.",
+   "tr": "βλέπω düzensiz gelecek fiillerinden biri: θα δω. Olduğu gibi öğren."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-day-after",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Σήμερα είναι Τετάρτη. Τι μέρα είναι μεθαύριο;",
+   "en": "Today is Wednesday. What day is it the day after tomorrow?",
+   "tr": "Bugün çarşamba. Öbür gün hangi gün?"
+  },
+  "options": [
+   "Η Παρασκευή.",
+   "Η Πέμπτη.",
+   "Το Σάββατο."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Tomorrow is Thursday, the day after tomorrow (μεθαύριο) is Friday.",
+   "tr": "Yarın perşembe, öbür gün (μεθαύριο) cuma."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch08-match-mporo",
+  "type": "match",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each person with the form of μπορώ.",
+   "tr": "Her kişiyi μπορώ fiilinin biçimiyle eşleştir."
+  },
+  "left": [
+   "εγώ",
+   "εσύ",
+   "εμείς",
+   "αυτοί"
+  ],
+  "right": [
+   "μπορώ",
+   "μπορείς",
+   "μπορούμε",
+   "μπορούν"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "explain": {
+   "en": "-ώ, -είς, -ούμε, -ούν: the ending of μπορώ follows the person.",
+   "tr": "-ώ, -είς, -ούμε, -ούν: μπορώ fiilinin sonu kişiye göre değişir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-sonnet"
+  }
+ }
+]

@@ -1,0 +1,1242 @@
+[
+ {
+  "id": "ch04-milao",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "μιλάω",
+  "lemma": "μιλάω",
+  "pos": "verb",
+  "en": "to speak, to talk",
+  "tr": "konuşmak",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Μιλάω λίγο ελληνικά.",
+   "en": "I speak a little Greek.",
+   "tr": "Biraz Yunanca konuşuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-rotao",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ρωτάω",
+  "lemma": "ρωτάω",
+  "pos": "verb",
+  "en": "to ask",
+  "tr": "sormak",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Ρωτάω: πού είναι το μπάνιο;",
+   "en": "I ask: where is the bathroom?",
+   "tr": "Soruyorum: banyo nerede?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-xypnao",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ξυπνάω",
+  "lemma": "ξυπνάω",
+  "pos": "verb",
+  "en": "to wake up, to get up",
+  "tr": "uyanmak",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Ξυπνάω νωρίς κάθε πρωί.",
+   "en": "I wake up early every morning.",
+   "tr": "Her sabah erken uyanırım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-poulao",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πουλάω",
+  "lemma": "πουλάω",
+  "pos": "verb",
+  "en": "to sell",
+  "tr": "satmak",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Ο μπακάλης πουλάει γιαούρτι.",
+   "en": "The grocer sells yoghurt.",
+   "tr": "Bakkal yoğurt satıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-erchomai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "έρχομαι",
+  "lemma": "έρχομαι",
+  "pos": "verb",
+  "en": "to come",
+  "tr": "gelmek",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Έρχομαι από την Τουρκία.",
+   "en": "I come from Turkey.",
+   "tr": "Türkiye'den geliyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-chreiazomai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "χρειάζομαι",
+  "lemma": "χρειάζομαι",
+  "pos": "verb",
+  "en": "to need",
+  "tr": "ihtiyacı olmak",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Χρειάζομαι ένα κλειδί.",
+   "en": "I need a key.",
+   "tr": "Bir anahtara ihtiyacım var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-thymamai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "θυμάμαι",
+  "lemma": "θυμάμαι",
+  "pos": "verb",
+  "en": "to remember",
+  "tr": "hatırlamak",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Δεν θυμάμαι πώς σε λένε.",
+   "en": "I don't remember what you are called.",
+   "tr": "Adını hatırlamıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-koimamai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "κοιμάμαι",
+  "lemma": "κοιμάμαι",
+  "pos": "verb",
+  "en": "to sleep, to go to sleep",
+  "tr": "uyumak",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Κοιμάμαι αργά.",
+   "en": "I go to bed late.",
+   "tr": "Geç yatarım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-katalavaino",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "καταλαβαίνω",
+  "lemma": "καταλαβαίνω",
+  "pos": "verb",
+  "en": "to understand",
+  "tr": "anlamak",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Καταλαβαίνω λίγο ελληνικά.",
+   "en": "I understand a little Greek.",
+   "tr": "Biraz Yunanca anlıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-tourkika",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τα τουρκικά",
+  "lemma": "τουρκικά",
+  "pos": "noun",
+  "gender": "n",
+  "en": "Turkish (the language)",
+  "tr": "Türkçe",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Μιλάω τουρκικά και αγγλικά.",
+   "en": "I speak Turkish and English.",
+   "tr": "Türkçe ve İngilizce konuşuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-agglika",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τα αγγλικά",
+  "lemma": "αγγλικά",
+  "pos": "noun",
+  "gender": "n",
+  "en": "English (the language)",
+  "tr": "İngilizce",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Ο Γιώργος μιλάει αγγλικά.",
+   "en": "Giorgos speaks English.",
+   "tr": "Giorgos İngilizce konuşuyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-italika",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τα ιταλικά",
+  "lemma": "ιταλικά",
+  "pos": "noun",
+  "gender": "n",
+  "en": "Italian (the language)",
+  "tr": "İtalyanca",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Ο Μάρκο μιλάει ιταλικά.",
+   "en": "Marko speaks Italian.",
+   "tr": "Marko İtalyanca konuşuyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-ligo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "λίγο",
+  "lemma": "λίγο",
+  "pos": "adverb",
+  "en": "a little, a bit",
+  "tr": "biraz",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Πίνω λίγο τσάι.",
+   "en": "I drink a little tea.",
+   "tr": "Biraz çay içiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-kala",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "καλά",
+  "lemma": "καλά",
+  "pos": "adverb",
+  "en": "well, fine",
+  "tr": "iyi",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Η Ζεϊνέπ μιλάει καλά.",
+   "en": "Zeynep speaks well.",
+   "tr": "Zeynep iyi konuşuyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-poly",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πολύ",
+  "lemma": "πολύ",
+  "pos": "adverb",
+  "en": "very, a lot, much",
+  "tr": "çok",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Ο Γιώργος πίνει πολύ καφέ.",
+   "en": "Giorgos drinks a lot of coffee.",
+   "tr": "Giorgos çok kahve içiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-siga",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "σιγά",
+  "lemma": "σιγά",
+  "pos": "adverb",
+  "en": "slowly, quietly",
+  "tr": "yavaş, sessiz",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Πιο σιγά, παρακαλώ.",
+   "en": "Slower, please.",
+   "tr": "Daha yavaş, lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-noris",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "νωρίς",
+  "lemma": "νωρίς",
+  "pos": "adverb",
+  "en": "early",
+  "tr": "erken",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Ο Γιώργος δεν ξυπνάει νωρίς.",
+   "en": "Giorgos doesn't get up early.",
+   "tr": "Giorgos erken kalkmaz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-arga",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "αργά",
+  "lemma": "αργά",
+  "pos": "adverb",
+  "en": "late; slowly",
+  "tr": "geç; yavaş",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Ο Γιώργος κοιμάται αργά.",
+   "en": "Giorgos goes to bed late.",
+   "tr": "Giorgos geç yatar."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-mathima",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το μάθημα",
+  "lemma": "μάθημα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "lesson, class",
+  "tr": "ders",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Το μάθημα είναι το βράδυ.",
+   "en": "The class is in the evening.",
+   "tr": "Ders akşam."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-daskalos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο δάσκαλος",
+  "lemma": "δάσκαλος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "teacher (man); η δασκάλα = teacher (woman)",
+  "tr": "öğretmen (erkek); η δασκάλα = öğretmen (kadın)",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Ο Παύλος είναι ο δάσκαλος.",
+   "en": "Pavlos is the teacher.",
+   "tr": "Pavlos öğretmen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-lexi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η λέξη",
+  "lemma": "λέξη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "word",
+  "tr": "kelime",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "example": {
+   "el": "Η λέξη «καφές» είναι ελληνική.",
+   "en": "The word «καφές» is Greek.",
+   "tr": "«Καφές» kelimesi Yunanca."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-q-languages",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Ο Μάρκο μιλάει ιταλικά και αγγλικά.",
+    "en": "Marko speaks Italian and English.",
+    "tr": "Marko İtalyanca ve İngilizce konuşuyor.",
+    "answer": true
+   },
+   {
+    "el": "Ο Μάρκο έρχεται από την Τουρκία.",
+    "en": "Marko comes from Turkey.",
+    "tr": "Marko Türkiye'den geliyor.",
+    "answer": false
+   },
+   {
+    "el": "Η Ζεϊνέπ μιλάει τουρκικά και αγγλικά.",
+    "en": "Zeynep speaks Turkish and English.",
+    "tr": "Zeynep Türkçe ve İngilizce konuşuyor.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "Marko: «Έρχομαι από την Ιταλία. Μιλάω ιταλικά και αγγλικά.» Zeynep says she speaks Turkish and English.",
+   "tr": "Marko: «Έρχομαι από την Ιταλία. Μιλάω ιταλικά και αγγλικά.» Zeynep de Türkçe ve İngilizce konuştuğunu söylüyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-q-katerina-sleep",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πότε κοιμάται η κυρία Κατερίνα;",
+   "en": "When does Mrs Katerina go to bed?",
+   "tr": "Katerina Hanım ne zaman yatıyor?"
+  },
+  "options": [
+   "Νωρίς.",
+   "Αργά.",
+   "Το πρωί."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Katerina: «Εγώ κοιμάμαι νωρίς». It is Giorgos who goes to bed late.",
+   "tr": "Katerina: «Εγώ κοιμάμαι νωρίς». Geç yatan Giorgos."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-try-milas",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.class_b"
+  ],
+  "cue": {
+   "lemma": "μιλάω",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Εσύ {1} ελληνικά;",
+  "answer": {
+   "1": [
+    "μιλάς"
+   ]
+  },
+  "options": {
+   "1": [
+    "μιλάς",
+    "μιλάει",
+    "μιλάτε"
+   ]
+  },
+  "translation": {
+   "en": "Do you speak Greek?",
+   "tr": "Yunanca konuşuyor musun?"
+  },
+  "explain": {
+   "en": "εσύ (you, one person) → -άς: μιλάς. μιλάει is «he, she»; μιλάτε is «you» (plural, formal).",
+   "tr": "εσύ (sen) → -άς: μιλάς. μιλάει «o», μιλάτε «siz»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-try-erchetai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.deponent"
+  ],
+  "cue": {
+   "lemma": "έρχομαι",
+   "person": "3sg",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Ο Μάρκο {1} από την Ιταλία.",
+  "answer": {
+   "1": [
+    "έρχεται"
+   ]
+  },
+  "options": {
+   "1": [
+    "έρχεται",
+    "έρχομαι",
+    "έρχονται"
+   ]
+  },
+  "translation": {
+   "en": "Marko comes from Italy.",
+   "tr": "Marko İtalya'dan geliyor."
+  },
+  "explain": {
+   "en": "One person (he) → -εται: έρχεται. έρχομαι is «I»; έρχονται is «they».",
+   "tr": "Bir kişi (o) → -εται: έρχεται. έρχομαι «ben», έρχονται «onlar»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-try-koimomaste",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.deponent"
+  ],
+  "cue": {
+   "lemma": "κοιμάμαι",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Εμείς {1} αργά.",
+  "answer": {
+   "1": [
+    "κοιμόμαστε"
+   ]
+  },
+  "options": {
+   "1": [
+    "κοιμόμαστε",
+    "κοιμάστε",
+    "κοιμάμαι"
+   ]
+  },
+  "translation": {
+   "en": "We go to bed late.",
+   "tr": "Biz geç yatarız."
+  },
+  "explain": {
+   "en": "εμείς (we) → -όμαστε, and the stress moves: κοιμόμαστε. κοιμάστε is «you» (plural, formal); κοιμάμαι is «I».",
+   "tr": "εμείς (biz) → -όμαστε ve vurgu kayar: κοιμόμαστε. κοιμάστε «siz», κοιμάμαι «ben»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-try-slow",
+  "type": "mcq",
+  "skill": "speaking",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "The teacher is speaking too fast and you cannot follow. What do you say?",
+   "tr": "Öğretmen çok hızlı konuşuyor, sen de anlamakta zorlanıyorsun. Ne dersin?"
+  },
+  "prompt": {
+   "el": "Ο δάσκαλος μιλάει. Εσύ: «…»",
+   "en": "The teacher is speaking. You: «…»",
+   "tr": "Öğretmen konuşuyor. Sen: «…»"
+  },
+  "options": [
+   "Πιο σιγά, παρακαλώ.",
+   "Χαίρω πολύ.",
+   "Καλημέρα!"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Πιο σιγά, παρακαλώ.» means «slower, please». «Χαίρω πολύ» is for meeting someone.",
+   "tr": "«Πιο σιγά, παρακαλώ.» «daha yavaş, lütfen» demek. «Χαίρω πολύ» biriyle tanışırken söylenir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-try-match",
+  "type": "match",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each person with the verb form.",
+   "tr": "Her kişiyi fiil biçimiyle eşleştir."
+  },
+  "left": [
+   "Εγώ",
+   "Εσύ",
+   "Εμείς"
+  ],
+  "right": [
+   "κοιμάμαι",
+   "κοιμάσαι",
+   "κοιμόμαστε"
+  ],
+  "answer": [
+   0,
+   1,
+   2
+  ],
+  "explain": {
+   "en": "Like είμαι: εγώ → -μαι, εσύ → -σαι, εμείς → -μαστε.",
+   "tr": "Tıpkı είμαι gibi: εγώ → -μαι, εσύ → -σαι, εμείς → -μαστε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-p-milame",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.class_b"
+  ],
+  "cue": {
+   "lemma": "μιλάω",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Εμείς {1} ελληνικά στο μάθημα.",
+  "answer": {
+   "1": [
+    "μιλάμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "μιλάμε",
+    "μιλάτε",
+    "μιλάνε"
+   ]
+  },
+  "translation": {
+   "en": "We speak Greek in class.",
+   "tr": "Derste Yunanca konuşuyoruz."
+  },
+  "explain": {
+   "en": "εμείς (we) → -άμε: μιλάμε.",
+   "tr": "εμείς (biz) → -άμε: μιλάμε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-p-rotaei",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.class_b"
+  ],
+  "cue": {
+   "lemma": "ρωτάω",
+   "person": "3sg",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Ο Μάρκο {1} πολύ.",
+  "answer": {
+   "1": [
+    "ρωτάει"
+   ]
+  },
+  "options": {
+   "1": [
+    "ρωτάει",
+    "ρωτάς",
+    "ρωτάνε"
+   ]
+  },
+  "translation": {
+   "en": "Marko asks a lot.",
+   "tr": "Marko çok soruyor."
+  },
+  "explain": {
+   "en": "One person (he) → -άει: ρωτάει. ρωτάς is «you»; ρωτάνε is «they».",
+   "tr": "Bir kişi (o) → -άει: ρωτάει. ρωτάς «sen», ρωτάνε «onlar»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-p-xypnate",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.class_b"
+  ],
+  "cue": {
+   "lemma": "ξυπνάω",
+   "person": "2pl",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Εσείς {1} νωρίς;",
+  "answer": {
+   "1": [
+    "ξυπνάτε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ξυπνάτε",
+    "ξυπνάμε",
+    "ξυπνάς"
+   ]
+  },
+  "translation": {
+   "en": "Do you (formal) get up early?",
+   "tr": "Siz erken kalkar mısınız?"
+  },
+  "explain": {
+   "en": "εσείς (you, formal or plural) → -άτε: ξυπνάτε.",
+   "tr": "εσείς (siz) → -άτε: ξυπνάτε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-p-poulaei",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.class_b"
+  ],
+  "cue": {
+   "lemma": "πουλάω",
+   "person": "3sg",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Ο μπακάλης {1} τσάι και γιαούρτι.",
+  "answer": {
+   "1": [
+    "πουλάει"
+   ]
+  },
+  "options": {
+   "1": [
+    "πουλάει",
+    "πουλάω",
+    "πουλάμε"
+   ]
+  },
+  "translation": {
+   "en": "The grocer sells tea and yoghurt.",
+   "tr": "Bakkal çay ve yoğurt satıyor."
+  },
+  "explain": {
+   "en": "The grocer is one person (he) → -άει: πουλάει.",
+   "tr": "Bakkal tek kişi (o) → -άει: πουλάει."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-p-thymasai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.deponent"
+  ],
+  "cue": {
+   "lemma": "θυμάμαι",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Εσύ {1} πώς με λένε;",
+  "answer": {
+   "1": [
+    "θυμάσαι"
+   ]
+  },
+  "options": {
+   "1": [
+    "θυμάσαι",
+    "θυμάμαι",
+    "θυμάται"
+   ]
+  },
+  "translation": {
+   "en": "Do you remember what I am called?",
+   "tr": "Adımı hatırlıyor musun?"
+  },
+  "explain": {
+   "en": "εσύ (you) → -σαι: θυμάσαι, like είσαι.",
+   "tr": "εσύ (sen) → -σαι: θυμάσαι, tıpkı είσαι gibi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-p-chreiazetai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.deponent"
+  ],
+  "cue": {
+   "lemma": "χρειάζομαι",
+   "person": "3sg",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Η Ζεϊνέπ {1} ένα τσάι.",
+  "answer": {
+   "1": [
+    "χρειάζεται"
+   ]
+  },
+  "options": {
+   "1": [
+    "χρειάζεται",
+    "χρειάζομαι",
+    "χρειάζεσαι"
+   ]
+  },
+  "translation": {
+   "en": "Zeynep needs a tea.",
+   "tr": "Zeynep'in bir çaya ihtiyacı var."
+  },
+  "explain": {
+   "en": "One person (she) → -εται: χρειάζεται.",
+   "tr": "Bir kişi (o) → -εται: χρειάζεται."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-p-thymomaste",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.deponent"
+  ],
+  "cue": {
+   "lemma": "θυμάμαι",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Εμείς δεν {1} πώς σε λένε.",
+  "answer": {
+   "1": [
+    "θυμόμαστε"
+   ]
+  },
+  "options": {
+   "1": [
+    "θυμόμαστε",
+    "θυμάστε",
+    "θυμούνται"
+   ]
+  },
+  "translation": {
+   "en": "We don't remember what you are called.",
+   "tr": "Senin adını hatırlamıyoruz."
+  },
+  "explain": {
+   "en": "εμείς (we) → -όμαστε: θυμόμαστε.",
+   "tr": "εμείς (biz) → -όμαστε: θυμόμαστε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-p-erchontai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "grammar": [
+   "verb.present",
+   "verb.deponent"
+  ],
+  "cue": {
+   "lemma": "έρχομαι",
+   "person": "3pl",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Ο Μάρκο και η Ζεϊνέπ {1} στο μάθημα.",
+  "answer": {
+   "1": [
+    "έρχονται"
+   ]
+  },
+  "options": {
+   "1": [
+    "έρχονται",
+    "έρχεται",
+    "έρχεστε"
+   ]
+  },
+  "translation": {
+   "en": "Marko and Zeynep come to class.",
+   "tr": "Marko ile Zeynep derse geliyor."
+  },
+  "explain": {
+   "en": "Two people (they) → -ονται: έρχονται.",
+   "tr": "İki kişi (onlar) → -ονται: έρχονται."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch04-p-simainei",
+  "type": "mcq",
+  "skill": "speaking",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "You do not know the word «μάθημα». How do you ask the teacher what it means?",
+   "tr": "«μάθημα» kelimesini bilmiyorsun. Öğretmene ne demek olduğunu nasıl sorarsın?"
+  },
+  "prompt": {
+   "el": "Η λέξη «μάθημα». Εσύ: «…»",
+   "en": "The word «μάθημα». You: «…»",
+   "tr": "«μάθημα» kelimesi. Sen: «…»"
+  },
+  "options": [
+   "Τι σημαίνει «μάθημα»;",
+   "Πώς σε λένε;",
+   "Ένα τσάι, παρακαλώ."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Τι σημαίνει …;» means «what does … mean?».",
+   "tr": "«Τι σημαίνει …;» «… ne demek?» anlamına gelir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-sonnet"
+  }
+ }
+]

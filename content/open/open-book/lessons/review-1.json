@@ -1,0 +1,594 @@
+{
+  "id": "open-a1-b1.review-1",
+  "curriculum": "open-a1-b1",
+  "stage": "review-1",
+  "level": "A1",
+  "title": {
+    "tr": "Bir cumartesi: tekrar",
+    "en": "A Saturday: review"
+  },
+  "minutes": 11,
+  "version": 1,
+  "sections": [
+    {
+      "kind": "intro",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümde **yeni bir şey yok**. İlk altı bölümde öğrendiklerini bir cumartesi boyunca birlikte kullanacaksın: telefon, pazar, otobüs, taverna. Sonunda üç fiil grubunu ve artikelleri yan yana, tek bir tabloda görürsün.\n\nAnahtar nokta: bir fiilin **sonuna** ve bir ismin **artikeline** bakarsan neyin kim olduğunu anlarsın.",
+          "en": "There is **nothing new** in this chapter. You use what you learned in the first six chapters in one Saturday: a phone call, the market, the bus, a taverna. At the end you see the three verb families and the articles side by side, in one table each.\n\nThe key point: look at the **ending** of a verb and the **article** of a noun and you can tell who does what."
+        }
+      ]
+    },
+    {
+      "kind": "warmup",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Hafta sonu en son ne zaman bir arkadaşınla dışarıda yemek yedin? Önce ne yaptınız, nereye gittiniz? Şimdi Zeynep ile Giorgos'un cumartesisine bak.",
+          "en": "When did you last eat out with a friend at the weekend? What did you do first, where did you go? Now look at Zeynep and Giorgos's Saturday."
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "title": {
+        "tr": "Bir cumartesi",
+        "en": "A Saturday"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Önce dinle, sonra oku. Üç sahne var: telefon, pazar ile durak, taverna. Fiillerin sonlarına ve artikellere dikkat et.",
+          "en": "Listen first, then read. There are three scenes: the phone call, the market and the stop, the taverna. Watch the verb endings and the articles."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Cumartesi sabahı, telefonda.",
+            "en": "Saturday morning, on the phone."
+          },
+          "lines": [
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Εμπρός;",
+              "tr": "Alo?",
+              "en": "Hello?"
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Καλημέρα, Ζεϊνέπ! Ο Γιώργος είμαι. Κοιμάσαι;",
+              "tr": "Günaydın Zeynep! Ben Giorgos. Uyuyor musun?",
+              "en": "Morning, Zeynep! It's Giorgos. Are you asleep?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Όχι, ξυπνάω τώρα. Τι ώρα είναι;",
+              "tr": "Hayır, şimdi uyanıyorum. Saat kaç?",
+              "en": "No, I'm just waking up. What time is it?"
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Είναι εννιά και μισή.",
+              "tr": "Dokuz buçuk.",
+              "en": "It's half past nine."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Εννιά και μισή! Το Σάββατο ξυπνάω αργά.",
+              "tr": "Dokuz buçuk! Cumartesi geç kalkarım.",
+              "en": "Half past nine! On Saturdays I wake up late."
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Σήμερα δεν δουλεύω. Γράφω το πρωί, αλλά στις έντεκα πηγαίνω στη λαϊκή. Έρχεσαι;",
+              "tr": "Bugün çalışmıyorum. Sabah yazı yazıyorum ama saat on birde semt pazarına gidiyorum. Geliyor musun?",
+              "en": "I'm not working today. I write in the morning, but at eleven I'm going to the street market. Are you coming?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ναι, έρχομαι! Στις έντεκα στη λαϊκή;",
+              "tr": "Evet, geliyorum! Saat on birde pazarda mı?",
+              "en": "Yes, I'm coming! At eleven at the market?"
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Ναι, στις έντεκα. Γεια!",
+              "tr": "Evet, on birde. Hoşça kal!",
+              "en": "Yes, at eleven. Bye!"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "[[Εμπρός;]] telefonu açarken \"alo?\" demektir. [[Ο Γιώργος είμαι.]] telefonda \"Ben Giorgos\" demek. [[Καλησπέρα]] öğleden sonra da söylenir.",
+          "en": "[[Εμπρός;]] is how you answer the phone: \"hello?\". [[Ο Γιώργος είμαι.]] is \"it's Giorgos\" on the phone. [[Καλησπέρα]] is said from midday on, too."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Semt pazarında, sonra otobüs durağında.",
+            "en": "At the street market, then at the bus stop."
+          },
+          "lines": [
+            {
+              "who": "Γιώργος",
+              "el": "Καλημέρα, Ζεϊνέπ! Τα φρούτα εδώ είναι πολύ καλά.",
+              "tr": "Günaydın Zeynep! Buradaki meyveler çok güzel.",
+              "en": "Morning, Zeynep! The fruit here is very good."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Θέλω μήλα. Πόσο κάνουν, κύριε;",
+              "tr": "Elma istiyorum. Kaç para, efendim?",
+              "en": "I want apples. How much are they, sir?"
+            },
+            {
+              "who": "Στέλιος",
+              "el": "Δύο ευρώ το κιλό.",
+              "tr": "Kilosu iki euro.",
+              "en": "Two euros a kilo."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Θα ήθελα δύο κιλά.",
+              "tr": "İki kilo istiyorum.",
+              "en": "I'd like two kilos."
+            },
+            {
+              "who": "Στέλιος",
+              "el": "Ορίστε. Τέσσερα ευρώ.",
+              "tr": "Buyurun. Dört euro.",
+              "en": "Here you are. Four euros."
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Εγώ παίρνω τρεις ντομάτες. Πόσο κάνουν;",
+              "tr": "Ben üç domates alıyorum. Kaç para?",
+              "en": "I'll take three tomatoes. How much are they?"
+            },
+            {
+              "who": "Στέλιος",
+              "el": "Ένα ευρώ.",
+              "tr": "Bir euro.",
+              "en": "One euro."
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Τι ώρα είναι;",
+              "tr": "Saat kaç?",
+              "en": "What time is it?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Είναι δώδεκα. Πηγαίνουμε στο κέντρο με το λεωφορείο;",
+              "tr": "On iki. Merkeze otobüsle gidiyor muyuz?",
+              "en": "It's twelve. Are we going to the centre by bus?"
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Ναι!",
+              "tr": "Evet!",
+              "en": "Yes!"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Δεν θυμάμαι τον δρόμο. Πού είναι η στάση;",
+              "tr": "Yolu hatırlamıyorum. Durak nerede?",
+              "en": "I don't remember the way. Where is the stop?"
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Εκεί, δεξιά, κοντά στη λαϊκή.",
+              "tr": "Şurada, sağda, pazarın yakınında.",
+              "en": "There, on the right, near the market."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Πόσο κάνει το εισιτήριο;",
+              "tr": "Bilet ne kadar?",
+              "en": "How much is the ticket?"
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Ένα ευρώ και είκοσι λεπτά. Το λεωφορείο έρχεται!",
+              "tr": "Bir euro yirmi sent. Otobüs geliyor!",
+              "en": "One euro twenty. The bus is coming!"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Merkezde bir tavernada. Garson Dimitris.",
+            "en": "At a taverna in the centre. The waiter is Dimitris."
+          },
+          "lines": [
+            {
+              "who": "Δημήτρης",
+              "el": "Καλησπέρα! Τραπέζι για δύο;",
+              "tr": "İyi günler! İki kişilik masa mı?",
+              "en": "Good afternoon! A table for two?"
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Ναι, για δύο.",
+              "tr": "Evet, iki kişilik.",
+              "en": "Yes, for two."
+            },
+            {
+              "who": "Δημήτρης",
+              "el": "Ορίστε ο κατάλογος.",
+              "tr": "Buyurun, menü.",
+              "en": "Here is the menu."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ευχαριστώ. Θα ήθελα κεφτέδες και πατάτες.",
+              "tr": "Teşekkürler. Köfte ve patates istiyorum.",
+              "en": "Thank you. I'd like meatballs and potatoes."
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Εγώ θέλω μεζέδες.",
+              "tr": "Ben meze istiyorum.",
+              "en": "I want mezes."
+            },
+            {
+              "who": "Δημήτρης",
+              "el": "Από πού είστε, κυρία;",
+              "tr": "Nerelisiniz hanımefendi?",
+              "en": "Where are you from, madam?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Είμαι από τη Σμύρνη. Μιλάω ελληνικά, αλλά όχι πολύ καλά.",
+              "tr": "İzmirliyim. Yunanca konuşuyorum ama çok iyi değil.",
+              "en": "I'm from Izmir. I speak Greek, but not very well."
+            },
+            {
+              "who": "Δημήτρης",
+              "el": "Μιλάτε πολύ καλά!",
+              "tr": "Çok iyi konuşuyorsunuz!",
+              "en": "You speak very well!"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ευχαριστώ! Μαθαίνω ελληνικά το βράδυ.",
+              "tr": "Teşekkürler! Akşamları Yunanca öğreniyorum.",
+              "en": "Thank you! I learn Greek in the evenings."
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Τον λογαριασμό, παρακαλώ.",
+              "tr": "Hesap lütfen.",
+              "en": "The bill, please."
+            },
+            {
+              "who": "Δημήτρης",
+              "el": "Είκοσι πέντε ευρώ.",
+              "tr": "Yirmi beş euro.",
+              "en": "Twenty-five euros."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "[[ο κατάλογος]] \"menü\". [[Τραπέζι για δύο;]] \"iki kişilik masa mı?\". [[Τον λογαριασμό, παρακαλώ.]] şimdilik bir kalıp: \"Hesap lütfen.\" Kelime [[ο λογαριασμός]] \"hesap\"; *τον* neden burada, aşağıda göreceksin.",
+          "en": "[[ο κατάλογος]] is \"the menu\". [[Τραπέζι για δύο;]] is \"a table for two?\". [[Τον λογαριασμό, παρακαλώ.]] is a set phrase for now: \"The bill, please.\" The word is [[ο λογαριασμός]] \"the bill\"; you will see below why it is *τον* here."
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Metne göre iki soru.",
+          "en": "Two questions on the text."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch07-q-time",
+            "open-book/ch07-q-tf"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Üç fiil grubu yan yana",
+        "en": "The three verb families side by side"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Fiillerin üç grubunu öğrendin. Hangi grupta olduğunu **sondan** anlarsın: **-ω** (*γράφω*), **-άω** (*μιλάω*) ya da **-ομαι** (*έρχομαι*). Her grubun altı sonu var; bir grubu bilirsen aynı gruptaki bütün fiilleri çekersin.",
+          "en": "You have learned three groups of verbs. The **ending** tells you which group: **-ω** (*γράφω*), **-άω** (*μιλάω*) or **-ομαι** (*έρχομαι*). Each group has six endings; learn them once and they work for every verb in the group."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "γράφω, μιλάω, έρχομαι",
+            "en": "γράφω, μιλάω, έρχομαι"
+          },
+          "head": [
+            {
+              "tr": "kim",
+              "en": "who"
+            },
+            "γράφω",
+            "μιλάω",
+            "έρχομαι"
+          ],
+          "rows": [
+            [
+              "εγώ",
+              "γράφω",
+              "μιλάω",
+              "έρχομαι"
+            ],
+            [
+              "εσύ",
+              "γράφεις",
+              "μιλάς",
+              "έρχεσαι"
+            ],
+            [
+              "αυτός, αυτή, αυτό",
+              "γράφει",
+              "μιλάει",
+              "έρχεται"
+            ],
+            [
+              "εμείς",
+              "γράφουμε",
+              "μιλάμε",
+              "ερχόμαστε"
+            ],
+            [
+              "εσείς",
+              "γράφετε",
+              "μιλάτε",
+              "έρχεστε"
+            ],
+            [
+              "αυτοί, αυτές, αυτά",
+              "γράφουν",
+              "μιλάνε",
+              "έρχονται"
+            ]
+          ],
+          "note": {
+            "tr": "*έρχομαι* fiilinde \"biz\" biçiminde vurgu bir hece sağa gider: *ερχόμαστε*.",
+            "en": "In *έρχομαι* the stress moves one syllable to the right in the \"we\" form: *ερχόμαστε*."
+          }
+        },
+        {
+          "type": "prose",
+          "tr": "Kısa hatırlatmalar. **τρώω**: *τρως, τρώει, τρώμε, τρώτε, τρώνε*. **λέω**: *λες, λέει, λέμε, λέτε, λένε*. **ακούω**: *ακούς, ακούει, ακούμε, ακούτε, ακούν*. **θυμάμαι** (*-άμαι* grubu): *θυμάσαι, θυμάται, θυμόμαστε, θυμάστε, θυμούνται*.",
+          "en": "Quick reminders. **τρώω**: *τρως, τρώει, τρώμε, τρώτε, τρώνε*. **λέω**: *λες, λέει, λέμε, λέτε, λένε*. **ακούω**: *ακούς, ακούει, ακούμε, ακούτε, ακούν*. **θυμάμαι** (the *-άμαι* group): *θυμάσαι, θυμάται, θυμόμαστε, θυμάστε, θυμούνται*."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Κοιμάσαι;",
+              "tr": "Uyuyor musun?",
+              "en": "Are you asleep?"
+            },
+            {
+              "el": "Γράφω το πρωί.",
+              "tr": "Sabahları yazı yazıyorum.",
+              "en": "I write in the morning."
+            },
+            {
+              "el": "Μιλάτε πολύ καλά!",
+              "tr": "Çok iyi konuşuyorsunuz!",
+              "en": "You speak very well!"
+            },
+            {
+              "el": "Το λεωφορείο έρχεται!",
+              "tr": "Otobüs geliyor!",
+              "en": "The bus is coming!"
+            },
+            {
+              "el": "Δεν θυμάμαι τον δρόμο.",
+              "tr": "Yolu hatırlamıyorum.",
+              "en": "I don't remember the way."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "ο, η, το: özne, nesne, tekil, çoğul",
+        "en": "ο, η, το: subject, object, singular, plural"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Dört biçim var: tekil ve çoğul, her biri özne ve nesne. **Nötr** hiç değişmez: özne ve nesne aynı. **Dişilde** yalnızca artikel değişir (*η → την*, *οι → τις*). **Erilde** artikel de isim sonu da değişir. *τον* hep -ν ile yazılır; *την* ünlüden önce ve κ π τ ξ ψ μπ ντ γκ τσ τζ harflerinden önce -ν'yi korur, başka ünsüzden önce düşer: *την ντομάτα*, ama *τη λαϊκή*.",
+          "en": "There are four forms: singular and plural, each as subject and as object. The **neuter** never changes: subject and object are the same. In the **feminine** only the article changes (*η → την*, *οι → τις*). In the **masculine** the article and the ending both change. *τον* always keeps its -ν; *την* keeps it before a vowel and before κ π τ ξ ψ μπ ντ γκ τσ τζ, and drops it before other consonants: *την ντομάτα*, but *τη λαϊκή*."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Artikel ve isim",
+            "en": "Article and noun"
+          },
+          "head": [
+            {
+              "tr": "tür",
+              "en": "type"
+            },
+            {
+              "tr": "tekil, özne",
+              "en": "singular, subject"
+            },
+            {
+              "tr": "tekil, nesne",
+              "en": "singular, object"
+            },
+            {
+              "tr": "çoğul, özne",
+              "en": "plural, subject"
+            },
+            {
+              "tr": "çoğul, nesne",
+              "en": "plural, object"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "tr": "eril",
+                "en": "masculine"
+              },
+              "ο φούρνος",
+              "τον φούρνο",
+              "οι φούρνοι",
+              "τους φούρνους"
+            ],
+            [
+              {
+                "tr": "dişil",
+                "en": "feminine"
+              },
+              "η ντομάτα",
+              "την ντομάτα",
+              "οι ντομάτες",
+              "τις ντομάτες"
+            ],
+            [
+              {
+                "tr": "nötr",
+                "en": "neuter"
+              },
+              "το μήλο",
+              "το μήλο",
+              "τα μήλα",
+              "τα μήλα"
+            ]
+          ],
+          "note": {
+            "tr": "Sayıdan sonra isim çoğul olur: *δύο κιλά*, *τρεις ντομάτες*. -ές ile biten erillerde (*ο καφές*) çoğul özne ile nesne yalnızca artikelle ayrılır: *οι καφέδες*, *τους καφέδες*.",
+            "en": "After a number the noun is plural: *δύο κιλά*, *τρεις ντομάτες*. For masculine nouns in -ές (*ο καφές*) the plural subject and object differ only by the article: *οι καφέδες*, *τους καφέδες*."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Ορίστε ο κατάλογος.",
+              "tr": "Buyurun, menü.",
+              "en": "Here is the menu."
+            },
+            {
+              "el": "Τον λογαριασμό, παρακαλώ.",
+              "tr": "Hesap lütfen.",
+              "en": "The bill, please.",
+              "note": {
+                "tr": "Bir fiil söylenmiyor, ama *τον λογαριασμό* nesne hâlinde: \"hesabı getirin\".",
+                "en": "No verb is said, but *τον λογαριασμό* is in the object form: \"(bring) the bill\"."
+              }
+            },
+            {
+              "el": "Εγώ παίρνω τρεις ντομάτες.",
+              "tr": "Ben üç domates alıyorum.",
+              "en": "I'll take three tomatoes."
+            },
+            {
+              "el": "Τα φρούτα εδώ είναι πολύ καλά.",
+              "tr": "Buradaki meyveler çok güzel.",
+              "en": "The fruit here is very good."
+            },
+            {
+              "el": "Δεν θυμάμαι τον δρόμο.",
+              "tr": "Yolu hatırlamıyorum.",
+              "en": "I don't remember the way."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "words",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümde yeni kelime yok. Aşağıda ilk bölümlerden tekrar etmeye değer 21 kelime var. Bu liste hiçbir kelimeyi yeni bir yere koymaz; kelimeler zaten kendi bölümlerinde açıldı.",
+          "en": "There are no new words in this chapter. Below are 21 words from the earlier chapters that are worth revising. This list places no word anywhere new; each word already opened in its own chapter."
+        },
+        {
+          "type": "words",
+          "items": [
+            "open-book/ch03-pino",
+            "open-book/ch03-doulevo",
+            "open-book/ch03-grafo",
+            "open-book/ch03-troo",
+            "open-book/ch03-thelo",
+            "open-book/ch04-milao",
+            "open-book/ch04-erchomai",
+            "open-book/ch04-thymamai",
+            "open-book/ch04-koimamai",
+            "open-book/ch04-xypnao",
+            "open-book/ch04-poly",
+            "open-book/ch05-perno",
+            "open-book/ch05-poso",
+            "open-book/ch05-kilo",
+            "open-book/ch05-evro",
+            "open-book/ch05-laiki",
+            "open-book/ch05-milo",
+            "open-shared-words-tr/v-ntomata",
+            "open-shared-words-tr/v-mezes",
+            "open-shared-words-tr/v-keftes",
+            "open-book/ch02-pou"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "tips",
+      "blocks": [
+        {
+          "type": "tip",
+          "kind": "mistake",
+          "tr": "**Üç sık hata.**\n**1. καφέ mi καφές mi?** *Πίνω καφέ*, *πίνω καφές* değil: nesne olan erilde -ς düşer (*τον καφέ*). Özne olarak ise kalır: *ο καφές είναι ζεστός*.\n**2. Saat.** \"Saat kaç?\" sorusuna *Είναι δύο* dersin; \"saat kaçta?\" sorusuna *στις δύο*: [[στις έντεκα]] \"saat on birde\".\n**3. είσαι mı είστε mi?** Arkadaşına *Είσαι από τη Σμύρνη;* dersin; garson ya da yabancı biri sana *Είστε από τη Σμύρνη;* der. Resmî \"siz\" hep çoğul biçimdir: *είστε*, *μιλάτε*, *θέλετε*.",
+          "en": "**Three common mistakes.**\n**1. καφέ or καφές?** *Πίνω καφέ*, not *πίνω καφές*: a masculine noun that is the object loses its -ς (*τον καφέ*). As a subject it stays: *ο καφές είναι ζεστός*.\n**2. Telling the time.** \"What time is it?\" is answered *Είναι δύο*; \"at what time?\" is *στις δύο*: [[στις έντεκα]] \"at eleven\".\n**3. είσαι or είστε?** To a friend you say *Είσαι από τη Σμύρνη;*; a waiter or a stranger says *Είστε από τη Σμύρνη;* to you. The formal \"you\" is always the plural form: *είστε*, *μιλάτε*, *θέλετε*."
+        },
+        {
+          "type": "tip",
+          "kind": "exam",
+          "exam_task": "a2ltr.speaking.roleplay",
+          "tr": "A2 sözlü sınavında günlük bir durumda rol yapmak istenir: bir tavernada sipariş vermek, bilet sormak, saati ya da yolu sormak gibi. Bu bölümdeki kalıplar tam buraya yarar: [[Θα ήθελα…]], [[Πόσο κάνει;]], [[Έχετε…;]], [[Τον λογαριασμό, παρακαλώ.]] Önce selamla, sonra isteğini söyle, sonunda teşekkür et. Uzun cümle kurmak zorunda değilsin; kısa ve açık söyle.",
+          "en": "In the A2 speaking exam you may be asked to play a role in an everyday situation: ordering in a taverna, asking about a ticket, the time or the way. The phrases of this chapter fit exactly: [[Θα ήθελα…]], [[Πόσο κάνει;]], [[Έχετε…;]], [[Τον λογαριασμό, παρακαλώ.]] Greet first, then say what you want, and thank at the end. You do not need long sentences; speak short and clear."
+        }
+      ]
+    },
+    {
+      "kind": "try",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Şimdi sen dene. Yanlış yapmak serbest: bunlar sınav hazırlığı hesabına girmez.",
+          "en": "Now you try. Mistakes are fine here: these do not count towards your exam readiness."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch07-try-mitate",
+            "open-book/ch07-try-grafoume",
+            "open-book/ch07-try-ton",
+            "open-book/ch07-try-ntomates",
+            "open-book/ch07-try-time"
+          ]
+        }
+      ]
+    }
+  ]
+}

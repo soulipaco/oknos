@@ -1,0 +1,1142 @@
+[
+ {
+  "id": "ch05-psomi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το ψωμί",
+  "lemma": "ψωμί",
+  "pos": "noun",
+  "gender": "n",
+  "en": "bread",
+  "tr": "ekmek",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Θέλω ένα ψωμί, παρακαλώ.",
+   "en": "I'd like a loaf of bread, please.",
+   "tr": "Bir ekmek istiyorum, lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-tyropita",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η τυρόπιτα",
+  "lemma": "τυρόπιτα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "cheese pie",
+  "tr": "peynirli börek",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Παίρνω μια τυρόπιτα.",
+   "en": "I'll take a cheese pie.",
+   "tr": "Bir peynirli börek alıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-gala",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το γάλα",
+  "lemma": "γάλα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "milk",
+  "tr": "süt",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Το πρωί πίνω γάλα.",
+   "en": "In the morning I drink milk.",
+   "tr": "Sabahları süt içerim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-milo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το μήλο",
+  "lemma": "μήλο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "apple",
+  "tr": "elma",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Θέλω ένα μήλο.",
+   "en": "I'd like an apple.",
+   "tr": "Bir elma istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-patata",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η πατάτα",
+  "lemma": "πατάτα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "potato",
+  "tr": "patates",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Η πατάτα είναι στο τραπέζι.",
+   "en": "The potato is on the table.",
+   "tr": "Patates masanın üstünde."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-fruta",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τα φρούτα",
+  "lemma": "φρούτα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "fruit (plural)",
+  "tr": "meyve (çoğul)",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Τρώω φρούτα κάθε μέρα.",
+   "en": "I eat fruit every day.",
+   "tr": "Her gün meyve yerim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-lachanika",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τα λαχανικά",
+  "lemma": "λαχανικά",
+  "pos": "noun",
+  "gender": "n",
+  "en": "vegetables (plural)",
+  "tr": "sebze (çoğul)",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Τρώω φρούτα και λαχανικά.",
+   "en": "I eat fruit and vegetables.",
+   "tr": "Meyve ve sebze yerim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-kilo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το κιλό",
+  "lemma": "κιλό",
+  "pos": "noun",
+  "gender": "n",
+  "en": "kilo; per kilo",
+  "tr": "kilo",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Θέλω ένα κιλό μήλα.",
+   "en": "I'd like a kilo of apples.",
+   "tr": "Bir kilo elma istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-evro",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το ευρώ",
+  "lemma": "ευρώ",
+  "pos": "noun",
+  "gender": "n",
+  "en": "euro",
+  "tr": "euro",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Το ψωμί είναι ένα ευρώ.",
+   "en": "The bread is one euro.",
+   "tr": "Ekmek bir euro."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-fournos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο φούρνος",
+  "lemma": "φούρνος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "bakery; oven",
+  "tr": "fırın",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Πηγαίνω στον φούρνο το πρωί.",
+   "en": "I go to the bakery in the morning.",
+   "tr": "Sabahları fırına gidiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-periptero",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το περίπτερο",
+  "lemma": "περίπτερο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "kiosk",
+  "tr": "büfe (gazete ve atıştırmalık satan küçük dükkân)",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Παίρνω εφημερίδα από το περίπτερο.",
+   "en": "I buy a newspaper from the kiosk.",
+   "tr": "Büfeden gazete alıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-supermarket",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το σούπερ μάρκετ",
+  "lemma": "σούπερ μάρκετ",
+  "pos": "noun",
+  "gender": "n",
+  "en": "supermarket",
+  "tr": "süpermarket",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Το σούπερ μάρκετ έχει γάλα.",
+   "en": "The supermarket has milk.",
+   "tr": "Süpermarkette süt var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-laiki",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η λαϊκή",
+  "lemma": "λαϊκή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "street market (weekly)",
+  "tr": "semt pazarı",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Στη λαϊκή έχει φρούτα και λαχανικά.",
+   "en": "The street market has fruit and vegetables.",
+   "tr": "Semt pazarında meyve ve sebze var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-anoichtos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ανοιχτός",
+  "lemma": "ανοιχτός",
+  "pos": "adjective",
+  "en": "open",
+  "tr": "açık",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Ο φούρνος είναι ανοιχτός.",
+   "en": "The bakery is open.",
+   "tr": "Fırın açık."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-kleistos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "κλειστός",
+  "lemma": "κλειστός",
+  "pos": "adjective",
+  "en": "closed",
+  "tr": "kapalı",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Το σούπερ μάρκετ είναι κλειστό.",
+   "en": "The supermarket is closed.",
+   "tr": "Süpermarket kapalı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-deftera",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η Δευτέρα",
+  "lemma": "Δευτέρα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "Monday",
+  "tr": "pazartesi",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Τη Δευτέρα δουλεύω.",
+   "en": "On Monday I work.",
+   "tr": "Pazartesi günü çalışıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-triti",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η Τρίτη",
+  "lemma": "Τρίτη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "Tuesday",
+  "tr": "salı",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Την Τρίτη μαθαίνω ελληνικά.",
+   "en": "On Tuesday I learn Greek.",
+   "tr": "Salı günü Yunanca öğreniyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-tetarti",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η Τετάρτη",
+  "lemma": "Τετάρτη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "Wednesday",
+  "tr": "çarşamba",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Την Τετάρτη πηγαίνω στο φαρμακείο.",
+   "en": "On Wednesday I go to the pharmacy.",
+   "tr": "Çarşamba günü eczaneye gidiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-pempti",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η Πέμπτη",
+  "lemma": "Πέμπτη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "Thursday",
+  "tr": "perşembe",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Την Πέμπτη διαβάζω εφημερίδα.",
+   "en": "On Thursday I read a newspaper.",
+   "tr": "Perşembe günü gazete okuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-paraskevi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η Παρασκευή",
+  "lemma": "Παρασκευή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "Friday",
+  "tr": "cuma",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Την Παρασκευή ακούω μουσική.",
+   "en": "On Friday I listen to music.",
+   "tr": "Cuma günü müzik dinliyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-savvato",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το Σάββατο",
+  "lemma": "Σάββατο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "Saturday",
+  "tr": "cumartesi",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Το Σάββατο πηγαίνω στη λαϊκή.",
+   "en": "On Saturday I go to the street market.",
+   "tr": "Cumartesi günü semt pazarına gidiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-kyriaki",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η Κυριακή",
+  "lemma": "Κυριακή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "Sunday",
+  "tr": "pazar",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Την Κυριακή μένω στο σπίτι.",
+   "en": "On Sunday I stay at home.",
+   "tr": "Pazar günü evde kalıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-perno",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "παίρνω",
+  "lemma": "παίρνω",
+  "pos": "verb",
+  "en": "to take; to buy (in a shop)",
+  "tr": "almak",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Παίρνω ένα κιλό μήλα.",
+   "en": "I'll take a kilo of apples.",
+   "tr": "Bir kilo elma alıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-poso",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πόσο;",
+  "lemma": "πόσο",
+  "pos": "adverb",
+  "en": "how much?",
+  "tr": "ne kadar? kaç para?",
+  "topics": [
+   "stage:shopping"
+  ],
+  "example": {
+   "el": "Πόσο κάνει το ψωμί;",
+   "en": "How much is the bread?",
+   "tr": "Ekmek kaç para?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch05-q-bakery",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "explain": {
+   "en": "Zeynep says «Θα ήθελα ένα ψωμί» and then «Ναι, παίρνω μια» (one cheese pie).",
+   "tr": "Zeynep önce «Θα ήθελα ένα ψωμί», sonra «Ναι, παίρνω μια» diyor (bir börek)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  },
+  "prompt": {
+   "el": "Τι παίρνει η Ζεϊνέπ στον φούρνο;",
+   "en": "What does Zeynep buy at the bakery?",
+   "tr": "Zeynep fırında ne alıyor?"
+  },
+  "options": [
+   "Ένα ψωμί και μια τυρόπιτα.",
+   "Δύο ψωμιά και μια τυρόπιτα.",
+   "Ένα ψωμί και δύο τυρόπιτες."
+  ],
+  "answer": 0
+ },
+ {
+  "id": "ch05-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "explain": {
+   "en": "She takes one kilo of tomatoes and two kilos of apples. The apples are one euro a kilo. She says no to potatoes.",
+   "tr": "Bir kilo domates ve iki kilo elma alıyor. Elmanın kilosu bir euro. Patatesi istemiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  },
+  "statements": [
+   {
+    "el": "Η Ζεϊνέπ παίρνει ένα κιλό ντομάτες.",
+    "en": "Zeynep takes a kilo of tomatoes.",
+    "tr": "Zeynep bir kilo domates alıyor.",
+    "answer": true
+   },
+   {
+    "el": "Τα μήλα είναι δύο ευρώ το κιλό.",
+    "en": "The apples are two euros a kilo.",
+    "tr": "Elmanın kilosu iki euro.",
+    "answer": false
+   },
+   {
+    "el": "Η Ζεϊνέπ θέλει και πατάτες.",
+    "en": "Zeynep wants potatoes too.",
+    "tr": "Zeynep patates de istiyor.",
+    "answer": false
+   }
+  ]
+ },
+ {
+  "id": "ch05-try-ton",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "μπακάλης is masculine (ο μπακάλης) and the object of βλέπω → τον μπακάλη.",
+   "tr": "μπακάλης eril (ο μπακάλης) ve βλέπω fiilinin nesnesi → τον μπακάλη."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "article.accusative"
+  ],
+  "text": "Βλέπω {1} μπακάλη.",
+  "answer": {
+   "1": [
+    "τον"
+   ]
+  },
+  "options": {
+   "1": [
+    "τον",
+    "την",
+    "το"
+   ]
+  },
+  "translation": {
+   "en": "I see the grocer.",
+   "tr": "Bakkalı görüyorum."
+  }
+ },
+ {
+  "id": "ch05-try-fournos",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "After τον the noun is the object: -ος becomes -ο → τον φούρνο.",
+   "tr": "τον sözünden sonra isim nesne olur: -ος → -ο, yani τον φούρνο."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "noun.accusative"
+  ],
+  "text": "Βλέπω τον {1}.",
+  "answer": {
+   "1": [
+    "φούρνο"
+   ]
+  },
+  "options": {
+   "1": [
+    "φούρνο",
+    "φούρνος",
+    "φούρνοι"
+   ]
+  },
+  "translation": {
+   "en": "I see the bakery.",
+   "tr": "Fırını görüyorum."
+  }
+ },
+ {
+  "id": "ch05-try-mila",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "Greek puts the noun in the plural after a number: neuter -ο → -α, τρία μήλα.",
+   "tr": "Yunancada sayıdan sonra isim çoğul olur: nötr -ο → -α, τρία μήλα."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "noun.plural"
+  ],
+  "text": "Θέλω τρία {1}.",
+  "answer": {
+   "1": [
+    "μήλα"
+   ]
+  },
+  "options": {
+   "1": [
+    "μήλα",
+    "μήλο"
+   ]
+  },
+  "translation": {
+   "en": "I want three apples.",
+   "tr": "Üç elma istiyorum."
+  }
+ },
+ {
+  "id": "ch05-try-tyropites",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "Feminine -α → -ες in the plural, and τρεις goes with it: τρεις τυρόπιτες.",
+   "tr": "Dişil -α çoğulda -ες olur, yanında τρεις gelir: τρεις τυρόπιτες."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "noun.plural"
+  ],
+  "text": "Έχετε τρεις {1};",
+  "answer": {
+   "1": [
+    "τυρόπιτες"
+   ]
+  },
+  "options": {
+   "1": [
+    "τυρόπιτες",
+    "τυρόπιτα"
+   ]
+  },
+  "translation": {
+   "en": "Do you have three cheese pies?",
+   "tr": "Üç peynirli böreğiniz var mı?"
+  }
+ },
+ {
+  "id": "ch05-try-numbers",
+  "type": "match",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each number word with its digits.",
+   "tr": "Her sayı sözcüğünü rakamıyla eşleştir."
+  },
+  "explain": {
+   "en": "δεκαπέντε = 15 (δέκα + πέντε), τριάντα = 30, πενήντα = 50, εκατό = 100.",
+   "tr": "δεκαπέντε = 15 (δέκα + πέντε), τριάντα = 30, πενήντα = 50, εκατό = 100."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  },
+  "left": [
+   "δεκαπέντε",
+   "τριάντα",
+   "πενήντα",
+   "εκατό"
+  ],
+  "right": [
+   "15",
+   "30",
+   "50",
+   "100"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ {
+  "id": "ch05-p-day",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω τη σειρά.",
+   "en": "Complete the order of the days.",
+   "tr": "Günlerin sırasını tamamla."
+  },
+  "explain": {
+   "en": "The week goes Δευτέρα, Τρίτη, Τετάρτη, Πέμπτη, Παρασκευή.",
+   "tr": "Hafta şöyle gider: Δευτέρα, Τρίτη, Τετάρτη, Πέμπτη, Παρασκευή."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "noun.days"
+  ],
+  "text": "Η Δευτέρα, η Τρίτη, η {1}.",
+  "answer": {
+   "1": [
+    "Τετάρτη"
+   ]
+  },
+  "options": {
+   "1": [
+    "Τετάρτη",
+    "Πέμπτη",
+    "Κυριακή"
+   ]
+  },
+  "translation": {
+   "en": "Monday, Tuesday, Wednesday.",
+   "tr": "Pazartesi, salı, çarşamba."
+  }
+ },
+ {
+  "id": "ch05-p-smyrni",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "Feminine, so not τον or το. Before Σ the -ν drops: τη Σμύρνη (την is for a vowel or κ π τ…).",
+   "tr": "Dişil olduğu için τον ya da το olmaz. Σ harfinden önce -ν düşer: τη Σμύρνη (την ünlüden ya da κ, π, τ… harflerinden önce kalır)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "article.accusative"
+  ],
+  "text": "Η Ζεϊνέπ είναι από {1} Σμύρνη.",
+  "answer": {
+   "1": [
+    "τη"
+   ]
+  },
+  "options": {
+   "1": [
+    "τη",
+    "τον",
+    "το"
+   ]
+  },
+  "translation": {
+   "en": "Zeynep is from Izmir.",
+   "tr": "Zeynep İzmirli."
+  }
+ },
+ {
+  "id": "ch05-p-anoichti",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "η λαϊκή is feminine, so the adjective ends in -ή: ανοιχτή. ο φούρνος → ανοιχτός, το σούπερ μάρκετ → ανοιχτό.",
+   "tr": "η λαϊκή dişil, bu yüzden sıfat -ή ile biter: ανοιχτή. ο φούρνος → ανοιχτός, το σούπερ μάρκετ → ανοιχτό."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "adjective.agreement"
+  ],
+  "text": "Η λαϊκή είναι {1}.",
+  "answer": {
+   "1": [
+    "ανοιχτή"
+   ]
+  },
+  "options": {
+   "1": [
+    "ανοιχτή",
+    "ανοιχτός",
+    "ανοιχτό"
+   ]
+  },
+  "translation": {
+   "en": "The street market is open.",
+   "tr": "Semt pazarı açık."
+  }
+ },
+ {
+  "id": "ch05-p-price",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "explain": {
+   "en": "δυόμισι ευρώ = two and a half euros = 2,50.",
+   "tr": "δυόμισι ευρώ = iki buçuk euro = 2,50."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  },
+  "ask": {
+   "en": "A clerk says this price. Which one is it?",
+   "tr": "Satıcı bu fiyatı söylüyor. Hangisi?"
+  },
+  "prompt": {
+   "el": "Δυόμισι ευρώ.",
+   "en": "Two and a half euros.",
+   "tr": "İki buçuk euro."
+  },
+  "options": [
+   "2,50 €",
+   "2,05 €",
+   "5,20 €"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "ch05-p-cat",
+  "type": "categorise",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Ένα ή δύο; Βάζω κάθε λέξη στη σωστή ομάδα.",
+   "en": "One or two? Put each phrase in the right group.",
+   "tr": "Bir mi iki mi? Her ifadeyi doğru gruba koy."
+  },
+  "explain": {
+   "en": "το and η go with one thing, τα and οι with several.",
+   "tr": "το ve η tek bir şeyle, τα ve οι birkaç şeyle gelir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  },
+  "categories": [
+   "ένα",
+   "δύο"
+  ],
+  "items": [
+   "το ψωμί",
+   "τα ψωμιά",
+   "η ντομάτα",
+   "οι ντομάτες",
+   "το μήλο",
+   "τα μήλα"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ]
+ },
+ {
+  "id": "ch05-p-notice",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Σημειώστε ΣΩΣΤΟ ή ΛΑΘΟΣ.",
+   "en": "Mark TRUE or FALSE.",
+   "tr": "DOĞRU veya YANLIŞ işaretleyin."
+  },
+  "explain": {
+   "en": "Sunday: closed (κλειστά). Saturday: open, 6:00 – 15:00. Monday to Friday until 20:00, eight in the evening.",
+   "tr": "Pazar: kapalı (κλειστά). Cumartesi: açık, 6:00 – 15:00. Pazartesi–cuma 20:00'ye, yani akşam sekize kadar."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-sonnet"
+  },
+  "stimulus": {
+   "text": "Φούρνος «Η Ελένη»\nΔευτέρα – Παρασκευή: 6:00 – 20:00\nΣάββατο: 6:00 – 15:00\nΚυριακή: κλειστά"
+  },
+  "statements": [
+   {
+    "el": "Ο φούρνος είναι ανοιχτός την Κυριακή.",
+    "en": "The bakery is open on Sunday.",
+    "tr": "Fırın pazar günü açık.",
+    "answer": false
+   },
+   {
+    "el": "Ο φούρνος είναι ανοιχτός το Σάββατο.",
+    "en": "The bakery is open on Saturday.",
+    "tr": "Fırın cumartesi açık.",
+    "answer": true
+   },
+   {
+    "el": "Τη Δευτέρα είναι ανοιχτός ως τις οχτώ το βράδυ.",
+    "en": "On Monday it is open until eight in the evening.",
+    "tr": "Pazartesi akşam sekize kadar açık.",
+    "answer": true
+   }
+  ]
+ }
+]

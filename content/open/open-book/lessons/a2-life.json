@@ -1,0 +1,645 @@
+{
+  "id": "open-a1-b1.a2-life",
+  "curriculum": "open-a1-b1",
+  "stage": "a2-life",
+  "level": "A2",
+  "title": {
+    "tr": "Bir hafta apartmanda: duyuru, doktor, davet",
+    "en": "A week in the building: a notice, the doctor, an invitation"
+  },
+  "minutes": 15,
+  "version": 1,
+  "sections": [
+    {
+      "kind": "intro",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümde bir apartman duyurusunu okuyacak, doktor muayenehanesini arayıp **nerenin ağrıdığını** söyleyecek ve komşunun davetine cevap vereceksin. Bunun için iki küçük şey öğreneceksin: **benim, senin, onun** (το σπίτι μου) ve **beni, seni, onu** (σε περιμένω).\n\nAnahtar nokta: *μου, σου, μας, σας* gibi küçük sözcükler Yunancada her yerde karşına çıkar. İsimden sonra gelince \"benim\" anlamı verirler; fiilden önce gelince \"bana\" ya da \"beni\" olurlar.",
+          "en": "In this chapter you read a notice from the building manager, phone the doctor's office and say **what hurts**, and answer a neighbour's invitation. For that you learn two small things: **my, your, his** (το σπίτι μου) and **me, you, him** (σε περιμένω).\n\nThe key point: little words like *μου, σου, μας, σας* turn up everywhere. After a noun they mean \"my, your, our\"; before a verb they mean \"me, you, us\" or \"to me, to you\"."
+        }
+      ]
+    },
+    {
+      "kind": "warmup",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Ateşin çıksa kimi ararsın? Komşun seni doğum günü partisine çağırsa ne dersin?",
+          "en": "Whom do you phone when you have a fever? What do you say when a neighbour invites you to a birthday party?"
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "title": {
+        "tr": "Bir hafta, üç metin",
+        "en": "One week, three texts"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Önce dinle, sonra oku. Küçük sözcüklere dikkat et: *μας, μου, σας, σε*.",
+          "en": "Listen first, then read. Watch the little words: *μας, μου, σας, σε*."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Pazartesi. Zeynep asansörde bir duyuru görüyor. Duyuru resmî dille yazılmış.",
+            "en": "Monday. Zeynep sees a notice in the lift. It is written in the formal style."
+          },
+          "lines": [
+            {
+              "who": "Ο διαχειριστής",
+              "el": "Ανακοίνωση",
+              "tr": "Duyuru",
+              "en": "Notice"
+            },
+            {
+              "who": "Ο διαχειριστής",
+              "el": "Αγαπητοί κάτοικοι,",
+              "tr": "Sevgili sakinler,",
+              "en": "Dear residents,"
+            },
+            {
+              "who": "Ο διαχειριστής",
+              "el": "Την Πέμπτη, από τις εννέα το πρωί ως τις τρεις το απόγευμα, θα γίνει επισκευή στο ασανσέρ μας.",
+              "tr": "Perşembe günü, sabah dokuzdan öğleden sonra üçe kadar asansörümüzde onarım yapılacak.",
+              "en": "On Thursday, from nine in the morning until three in the afternoon, the lift will be repaired."
+            },
+            {
+              "who": "Ο διαχειριστής",
+              "el": "Το ασανσέρ θα είναι κλειστό και για μία ώρα δεν θα έχουμε ρεύμα στην πολυκατοικία.",
+              "tr": "Asansör kapalı olacak ve bir saat boyunca apartmanda elektrik olmayacak.",
+              "en": "The lift will be closed, and for one hour we will have no electricity in the building."
+            },
+            {
+              "who": "Ο διαχειριστής",
+              "el": "Παρακαλούμε, χρησιμοποιήστε τις σκάλες.",
+              "tr": "Lütfen merdivenleri kullanın.",
+              "en": "Please use the stairs."
+            },
+            {
+              "who": "Ο διαχειριστής",
+              "el": "Θα έχουμε λίγο θόρυβο. Ζητάμε συγγνώμη.",
+              "tr": "Biraz gürültü olacak. Özür dileriz.",
+              "en": "There will be some noise. We apologise."
+            },
+            {
+              "who": "Ο διαχειριστής",
+              "el": "Ευχαριστούμε για την κατανόηση.",
+              "tr": "Anlayışınız için teşekkür ederiz.",
+              "en": "Thank you for your understanding."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "Duyurular resmî dille yazılır; bu kalıpları şimdilik **tanıman** yeterli: [[χρησιμοποιήστε]] \"kullanın\", [[Παρακαλούμε]] \"lütfen\", [[Ζητάμε συγγνώμη]] \"özür dileriz\", [[Ευχαριστούμε για την κατανόηση]] \"anlayışınız için teşekkürler\", [[θα γίνει επισκευή]] \"onarım yapılacak\", [[Αγαπητοί κάτοικοι]] \"sevgili sakinler\".",
+          "en": "Notices use the formal style; for now just **recognise** these: [[χρησιμοποιήστε]] \"use\", [[Παρακαλούμε]] \"please\", [[Ζητάμε συγγνώμη]] \"we apologise\", [[Ευχαριστούμε για την κατανόηση]] \"thank you for your understanding\", [[θα γίνει επισκευή]] \"there will be a repair\", [[Αγαπητοί κάτοικοι]] \"dear residents\"."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Çarşamba. Zeynep'in ateşi var ve muayenehaneyi arıyor. Sekreterle resmî konuşuyor (εσείς).",
+            "en": "Wednesday. Zeynep has a fever and phones the doctor's office. She speaks formally to the secretary (εσείς)."
+          },
+          "lines": [
+            {
+              "who": "Γραμματέας",
+              "el": "Ιατρείο Νικολαΐδη, καλημέρα σας.",
+              "tr": "Nikolaidis Muayenehanesi, günaydın.",
+              "en": "Dr Nikolaidis's office, good morning."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Καλημέρα σας. Θέλω ένα ραντεβού, παρακαλώ. Έχω πυρετό και πονάει το κεφάλι μου.",
+              "tr": "Günaydın. Bir randevu istiyorum, lütfen. Ateşim var ve başım ağrıyor.",
+              "en": "Good morning. I would like an appointment, please. I have a fever and my head hurts."
+            },
+            {
+              "who": "Γραμματέας",
+              "el": "Από πότε;",
+              "tr": "Ne zamandan beri?",
+              "en": "Since when?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Από χθες το βράδυ. Παίρνω ένα φάρμακο, αλλά ο πυρετός δεν φεύγει.",
+              "tr": "Dün akşamdan beri. Bir ilaç alıyorum ama ateş düşmüyor.",
+              "en": "Since last night. I am taking a medicine, but the fever does not go away."
+            },
+            {
+              "who": "Γραμματέας",
+              "el": "Ο γιατρός θα σας δει σήμερα, στις πέντε και μισή. Μπορείτε να έρθετε;",
+              "tr": "Doktor sizi bugün saat beş buçukta görecek. Gelebilir misiniz?",
+              "en": "The doctor will see you today, at half past five. Can you come?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ναι, μπορώ. Θέλω και μια συνταγή για το φάρμακο.",
+              "tr": "Evet, gelebilirim. İlaç için bir de reçete istiyorum.",
+              "en": "Yes, I can. I also need a prescription for the medicine."
+            },
+            {
+              "who": "Γραμματέας",
+              "el": "Ωραία. Το όνομά σας, παρακαλώ;",
+              "tr": "Güzel. Adınız, lütfen?",
+              "en": "Fine. Your name, please?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ζεϊνέπ Αϊντίν.",
+              "tr": "Zeynep Aydın.",
+              "en": "Zeynep Aydin."
+            },
+            {
+              "who": "Γραμματέας",
+              "el": "Ευχαριστώ. Φέρτε την ταυτότητά σας. Σας περιμένουμε στις πέντε και μισή.",
+              "tr": "Teşekkürler. Kimliğinizi getirin. Sizi beş buçukta bekliyoruz.",
+              "en": "Thank you. Bring your ID card. We will expect you at half past five."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ευχαριστώ πολύ. Γεια σας!",
+              "tr": "Çok teşekkürler. Hoşça kalın!",
+              "en": "Thank you very much. Goodbye!"
+            },
+            {
+              "who": "Γραμματέας",
+              "el": "Περαστικά!",
+              "tr": "Geçmiş olsun!",
+              "en": "Get well soon!"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "[[Γραμματέας]] \"sekreter\", [[Φέρτε]] \"getirin\", [[Περαστικά!]] \"geçmiş olsun\", [[θα σας δει]] \"sizi görecek\": σας fiilden önce duruyor, birazdan öğreneceksin.",
+          "en": "[[Γραμματέας]] \"secretary\", [[Φέρτε]] \"bring\", [[Περαστικά!]] \"get well soon\", [[θα σας δει]] \"will see you\": σας stands before the verb, as you learn next."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Perşembe akşamı. Katerina Hanım Zeynep'e mesaj yazıyor, Zeynep cevap veriyor (εσύ).",
+            "en": "Thursday evening. Mrs Katerina sends Zeynep a message, and Zeynep replies (εσύ)."
+          },
+          "lines": [
+            {
+              "who": "Κατερίνα",
+              "el": "Καλησπέρα, Ζεϊνέπ! Ο εγγονός μου ο Νίκος έχει γενέθλια το Σάββατο.",
+              "tr": "İyi akşamlar Zeynep! Torunum Nikos'un cumartesi doğum günü var.",
+              "en": "Good evening, Zeynep! My grandson Nikos has his birthday on Saturday."
+            },
+            {
+              "who": "Κατερίνα",
+              "el": "Κάνουμε ένα μικρό πάρτι στο σπίτι μας, στις έξι το απόγευμα. Θέλεις να έρθεις;",
+              "tr": "Evimizde küçük bir parti yapıyoruz, öğleden sonra altıda. Gelmek ister misin?",
+              "en": "We are having a small party at our house, at six in the afternoon. Would you like to come?"
+            },
+            {
+              "who": "Κατερίνα",
+              "el": "Θα είναι εκεί και ο Γιώργος. Σε περιμένουμε!",
+              "tr": "Giorgos da orada olacak. Seni bekliyoruz!",
+              "en": "Giorgos will be there too. We expect you!"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ευχαριστώ πολύ, κυρία Κατερίνα! Θα έρθω στις έξι.",
+              "tr": "Çok teşekkürler Katerina Hanım! Altıda gelirim.",
+              "en": "Thank you so much, Mrs Katerina! I'll come at six."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Μου αρέσουν πολύ οι τυρόπιτές σας!",
+              "tr": "Böreklerinize bayılıyorum!",
+              "en": "I love your cheese pies!"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Και χρόνια πολλά στον εγγονό σας!",
+              "tr": "Torununuza da nice yıllar!",
+              "en": "And happy birthday to your grandson!"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "[[ο εγγονός]] \"torun\", [[έχει γενέθλια]] \"doğum günü var\", [[Σε περιμένουμε!]] \"Seni bekliyoruz!\", [[Χρόνια πολλά!]] \"nice yıllara\" (doğum günü kalıbı).",
+          "en": "[[ο εγγονός]] \"grandson\", [[έχει γενέθλια]] \"has a birthday\", [[Σε περιμένουμε!]] \"We expect you!\", [[Χρόνια πολλά!]] \"happy birthday\" (also for name days)."
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Metinlere göre iki soru.",
+          "en": "Two questions on the texts."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch10-q-notice",
+            "open-book/ch10-q-time"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Benim, senin, onun: το σπίτι μου",
+        "en": "My, your, his: το σπίτι μου"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Yunancada \"benim\" demek için küçük bir sözcüğü isimden **sonra** koyarsın: **το κλειδί μου** \"anahtarım\". Türkçedeki *-im* eki burada ayrı bir sözcük. **Artikel yerinde kalır**: *το σπίτι μου* \"evim\" demek (*σπίτι μου* değil).\n\nİki ayrıntı. **του** erkek sahip için, **της** kadın sahip için \"onun\" demek. İsim **sondan üçüncü hecede** vurguluysa sona **ikinci bir vurgu** gelir: *το τηλέφωνο* + *μου* → **το τηλέφωνό μου**. Dialogdaki *το όνομά σας* ve *την ταυτότητά σας* da böyle. Vurgu sondan ikinci ya da son hecedeyse hiçbir şey değişmez: *το κλειδί μου*, *η μητέρα της*.",
+          "en": "To say \"my\" you put a little word **after** the noun: **το κλειδί μου** \"my key\". The article stays: *το σπίτι μου* means \"my house\" (not *σπίτι μου* alone).\n\nTwo details. **του** is \"his\" and **της** is \"her\". When the noun is stressed on the **third syllable from the end**, it gets a **second accent** on its last syllable: *το τηλέφωνο* + *μου* → **το τηλέφωνό μου**. That is why the dialogue has *το όνομά σας* and *την ταυτότητά σας*. If the stress is on the second-to-last or last syllable, nothing changes: *το κλειδί μου*, *η μητέρα της*."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "İsimden sonra: yedi küçük sözcük",
+            "en": "After the noun: seven little words"
+          },
+          "head": [
+            {
+              "tr": "sözcük",
+              "en": "word"
+            },
+            {
+              "tr": "anlamı",
+              "en": "meaning"
+            },
+            "το κλειδί",
+            "το τηλέφωνο"
+          ],
+          "rows": [
+            [
+              "μου",
+              {
+                "tr": "benim",
+                "en": "my"
+              },
+              "το κλειδί μου",
+              "το τηλέφωνό μου"
+            ],
+            [
+              "σου",
+              {
+                "tr": "senin",
+                "en": "your (one person you know)"
+              },
+              "το κλειδί σου",
+              "το τηλέφωνό σου"
+            ],
+            [
+              "του",
+              {
+                "tr": "onun (erkek)",
+                "en": "his"
+              },
+              "το κλειδί του",
+              "το τηλέφωνό του"
+            ],
+            [
+              "της",
+              {
+                "tr": "onun (kadın)",
+                "en": "her"
+              },
+              "το κλειδί της",
+              "το τηλέφωνό της"
+            ],
+            [
+              "μας",
+              {
+                "tr": "bizim",
+                "en": "our"
+              },
+              "το κλειδί μας",
+              "το τηλέφωνό μας"
+            ],
+            [
+              "σας",
+              {
+                "tr": "sizin",
+                "en": "your (formal, or several people)"
+              },
+              "το κλειδί σας",
+              "το τηλέφωνό σας"
+            ],
+            [
+              "τους",
+              {
+                "tr": "onların",
+                "en": "their"
+              },
+              "το κλειδί τους",
+              "το τηλέφωνό τους"
+            ]
+          ],
+          "note": {
+            "tr": "Çoğulda da aynı: τα κλειδιά μου, τα τηλέφωνά μου. Bu yedi sözcüğün hepsi böyle çalışır.",
+            "en": "The same in the plural: τα κλειδιά μου, τα τηλέφωνά μου. All seven words work this way."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Η μητέρα της μένει στη Σμύρνη.",
+              "tr": "Annesi İzmir'de oturuyor.",
+              "en": "Her mother lives in Izmir."
+            },
+            {
+              "el": "Το σπίτι μας είναι κοντά στο κέντρο.",
+              "tr": "Evimiz merkeze yakın.",
+              "en": "Our house is near the centre."
+            },
+            {
+              "el": "Το τηλέφωνό σου είναι εδώ, στο τραπέζι.",
+              "tr": "Telefonun burada, masanın üstünde.",
+              "en": "Your phone is here, on the table.",
+              "note": {
+                "tr": "İki vurgu: τηλέφωνό σου.",
+                "en": "Two accents: τηλέφωνό σου."
+              }
+            },
+            {
+              "el": "Το αυτοκίνητό τους είναι στο χωριό.",
+              "tr": "Arabaları köyde.",
+              "en": "Their car is in the village.",
+              "note": {
+                "tr": "αυτοκίνητο da sondan üçüncü hecede vurgulu: αυτοκίνητό τους.",
+                "en": "αυτοκίνητο is also stressed on the third syllable from the end: αυτοκίνητό τους."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Beni, seni, onu: σε περιμένω · μου αρέσει",
+        "en": "Me, you, him: σε περιμένω · μου αρέσει"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "\"Seni bekliyorum\" derken küçük sözcük **fiilden önce** gelir: **σε περιμένω**. *τον, την, το, τους, τις, τα* sözcüklerini artikel olarak tanıyorsun; fiilden önce \"onu, onları\" demek olurlar. **θα**, **να** ve **δεν** ile de aynı: küçük sözcük fiilin hemen önünde kalır: *θα σε δω*, *θέλω να τον δω*, *δεν τον ξέρω*.",
+          "en": "To say \"I am waiting for you\" the little word comes **before the verb**: **σε περιμένω**. You know *τον, την, το, τους, τις, τα* as articles; before a verb they mean \"him, her, it, them\". It is the same with **θα**, **να** and **δεν**: the little word stays right in front of the verb: *θα σε δω*, *θέλω να τον δω*, *δεν τον ξέρω*."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Fiilden önce: beni, seni, onu…",
+            "en": "Before the verb: me, you, him…"
+          },
+          "head": [
+            {
+              "tr": "sözcük",
+              "en": "word"
+            },
+            {
+              "tr": "örnek",
+              "en": "example"
+            },
+            {
+              "tr": "anlamı",
+              "en": "meaning"
+            }
+          ],
+          "rows": [
+            [
+              "με",
+              "Με ακούς;",
+              {
+                "tr": "Beni duyuyor musun?",
+                "en": "Can you hear me?"
+              }
+            ],
+            [
+              "σε",
+              "Σε περιμένω.",
+              {
+                "tr": "Seni bekliyorum.",
+                "en": "I am waiting for you."
+              }
+            ],
+            [
+              "τον",
+              "Τον ξέρω.",
+              {
+                "tr": "Onu tanıyorum (bir erkek).",
+                "en": "I know him."
+              }
+            ],
+            [
+              "την",
+              "Την ξέρω.",
+              {
+                "tr": "Onu tanıyorum (bir kadın).",
+                "en": "I know her."
+              }
+            ],
+            [
+              "το",
+              "Το βλέπω.",
+              {
+                "tr": "Onu görüyorum (bir şey).",
+                "en": "I see it."
+              }
+            ],
+            [
+              "μας",
+              "Μας περιμένουν.",
+              {
+                "tr": "Bizi bekliyorlar.",
+                "en": "They are waiting for us."
+              }
+            ],
+            [
+              "σας",
+              "Θα σας δω.",
+              {
+                "tr": "Sizi göreceğim.",
+                "en": "I will see you."
+              }
+            ],
+            [
+              "τους",
+              "Τους ξέρω.",
+              {
+                "tr": "Onları tanıyorum (erkekler).",
+                "en": "I know them (men, or men and women)."
+              }
+            ],
+            [
+              "τις",
+              "Τις ξέρω.",
+              {
+                "tr": "Onları tanıyorum (kadınlar).",
+                "en": "I know them (women)."
+              }
+            ],
+            [
+              "τα",
+              "Τα βλέπω.",
+              {
+                "tr": "Onları görüyorum (şeyler).",
+                "en": "I see them (things)."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Δεν τον ξέρω.",
+              "tr": "Onu tanımıyorum.",
+              "en": "I don't know him."
+            },
+            {
+              "el": "Θα σε δω αύριο.",
+              "tr": "Seni yarın göreceğim.",
+              "en": "I will see you tomorrow."
+            },
+            {
+              "el": "Θέλω να τον δω σήμερα.",
+              "tr": "Onu bugün görmek istiyorum.",
+              "en": "I want to see him today."
+            },
+            {
+              "el": "Την παίρνω τηλέφωνο το βράδυ.",
+              "tr": "Onu akşam arıyorum.",
+              "en": "I phone her in the evening.",
+              "note": {
+                "tr": "παίρνω τηλέφωνο \"telefon etmek\" demek; şimdilik kalıp olarak öğren.",
+                "en": "παίρνω τηλέφωνο means \"to phone\"; learn it as a set phrase for now."
+              }
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "**μου αρέσει** \"hoşuma gidiyor, hoşlanıyorum\" demek. Yunancada beğenilen şey **özne**, sen ise \"bana\" kısmısın: *μου αρέσει η μουσική* \"müzik bana hoş geliyor\". Bu yüzden beğenilen şey çoğulsa fiil de çoğul olur: *μου αρέσουν τα μήλα*. Diğer kişiler: **σου** αρέσει, **του**, **της**, **μας**, **σας**, **τους**.\n\nAynı biçim ağrı için de geçerli: **πονάει το κεφάλι μου** \"başım ağrıyor\". Ağrıyan şey özne (*το κεφάλι*), fiil onunla uyuşur. Dikkat: buradaki *μου* isimden sonra gelen \"benim\" (başım), *μου αρέσει* içindeki *μου* ise \"bana\" demek. Küçük sözcük aynı, iş farklı.",
+          "en": "**μου αρέσει** means \"I like it\" (literally \"it is pleasing to me\"). The thing you like is the **subject**, and you are the \"to me\": *μου αρέσει η μουσική* \"music is pleasing to me\". So when the thing liked is plural, the verb is plural too: *μου αρέσουν τα μήλα*. The other persons: **σου** αρέσει, **του**, **της**, **μας**, **σας**, **τους**.\n\nThe same shape works for pain: **πονάει το κεφάλι μου** \"my head hurts\". The thing that hurts is the subject (*το κεφάλι*) and the verb agrees with it. Note: the *μου* here is the \"my\" after a noun (my head), while the *μου* in *μου αρέσει* means \"to me\". Same little word, two jobs."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Μου αρέσει η μουσική.",
+              "tr": "Müzik hoşuma gidiyor.",
+              "en": "I like music."
+            },
+            {
+              "el": "Μου αρέσουν τα μήλα.",
+              "tr": "Elmalar hoşuma gidiyor.",
+              "en": "I like apples."
+            },
+            {
+              "el": "Σου αρέσει το ψάρι;",
+              "tr": "Balık hoşuna gidiyor mu?",
+              "en": "Do you like fish?"
+            },
+            {
+              "el": "Πονάει το κεφάλι μου.",
+              "tr": "Başım ağrıyor.",
+              "en": "My head hurts."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "words",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Sözcükler üç metinden geliyor. [[τα γενέθλια]] hep çoğul kullanılır.",
+          "en": "The words come from the three texts. [[τα γενέθλια]] is always plural."
+        },
+        {
+          "type": "words",
+          "items": [
+            "open-book/ch10-anakoinosi",
+            "open-book/ch10-diacheiristis",
+            "open-book/ch10-polykatoikia",
+            "open-book/ch10-asanser",
+            "open-book/ch10-revma",
+            "open-book/ch10-nero",
+            "open-book/ch10-episkevi",
+            "open-book/ch10-thorybos",
+            "open-book/ch10-syngnomi",
+            "open-book/ch10-iatreio",
+            "open-book/ch10-ponao",
+            "open-book/ch10-pyretos",
+            "open-book/ch10-kefali",
+            "open-book/ch10-syntagi",
+            "open-book/ch10-farmako",
+            "open-book/ch10-taftotita",
+            "open-book/ch10-genethlia",
+            "open-book/ch10-parti",
+            "open-book/ch10-kalo",
+            "open-book/ch10-mou-aresei",
+            "open-book/ch10-perimeno",
+            "open-book/ch10-tilefono",
+            "open-book/ch10-onoma",
+            "open-book/ch10-skala"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "tips",
+      "blocks": [
+        {
+          "type": "tip",
+          "kind": "tr_bridge",
+          "tr": "**μου αρέσει ≈ hoşuma gidiyor.** İki dilde de beğenilen şey özne, sen ise \"bana\" kısmısın: *Müzik hoşuma gidiyor* = [[Μου αρέσει η μουσική]]. *Bana göre* gibi kalıplarda olduğu gibi, μου \"bana\" demek. Beğenilen şey çoğulsa Yunancada fiil de çoğul olur: [[Μου αρέσουν τα μήλα]].",
+          "en": "**μου αρέσει works like French *ça me plaît* or Spanish *me gusta*.** The thing you like is the subject and you are the \"to me\". English flips it (*I like music*), but Greek says \"music is pleasing to me\": [[Μου αρέσει η μουσική]]. As in Spanish *me gustan*, a plural thing needs a plural verb: [[Μου αρέσουν τα μήλα]]."
+        },
+        {
+          "type": "tip",
+          "kind": "mistake",
+          "tr": "**İkinci vurgu.** *το τηλέφωνο μου* yazma; doğrusu [[το τηλέφωνό μου]]. Aynı şey [[το όνομά σου]], [[το αυτοκίνητό μας]], [[την ταυτότητά σας]] için de geçerli. Yazılı bir görevde bu vurgu eksikse puan kaybedebilirsin.",
+          "en": "**The second accent.** Do not write *το τηλέφωνο μου*; write [[το τηλέφωνό μου]]. The same goes for [[το όνομά σου]], [[το αυτοκίνητό μας]] and [[την ταυτότητά σας]]. A missing accent here can cost you points in a written task."
+        },
+        {
+          "type": "tip",
+          "kind": "exam",
+          "exam_task": "a2ltr.reading.notices_tf",
+          "tr": "A2 okuma sınavının ikinci bölümü 14 puan: duyurular ve her biri için doğru mu yanlış mı. Her duyuruda dört şeyi ara: **kim yazıyor** (ο διαχειριστής, το ιατρείο, ο δήμος), **ne olacak** (επισκευή), **ne zaman** (gün ve saat!) ve **sen ne yapmalısın** (χρησιμοποιήστε τις σκάλες). Doğru ya da yanlış yalnızca duyuruya göre belirlenir.",
+          "en": "The second part of the A2 reading exam is worth 14 points: notices, each with a true-or-false question. In every notice look for four things: **who writes** (ο διαχειριστής, το ιατρείο, ο δήμος), **what happens** (επισκευή), **when** (day and time!) and **what you must do** (χρησιμοποιήστε τις σκάλες). True or false is decided by the notice alone."
+        }
+      ]
+    },
+    {
+      "kind": "try",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Şimdi öğrendiklerini dene.",
+          "en": "Now try what you have learned."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch10-try-accent",
+            "open-book/ch10-try-possess",
+            "open-book/ch10-try-object",
+            "open-book/ch10-try-future-object",
+            "open-book/ch10-try-aresei"
+          ]
+        }
+      ]
+    }
+  ]
+}

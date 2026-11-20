@@ -1,0 +1,14 @@
+{
+  "id": "open-book",
+  "title": {
+    "en": "Greek from the first letter: the book",
+    "tr": "İlk harften Yunanca: kitap",
+    "el": "Ελληνικά από το πρώτο γράμμα"
+  },
+  "version": 1,
+  "levels": ["A1", "A2", "B1"],
+  "visibility": "open",
+  "licence": "CC-BY-SA-4.0",
+  "source": "Original, written for Greek Coach: one chapter per stage of the open course (curricula/open-a1-b1.json), with its words and practice items. No text is taken from any textbook or exam paper.",
+  "exam_blueprints": ["a2ltr", "b1-keg"]
+}

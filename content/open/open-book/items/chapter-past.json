@@ -1,0 +1,1251 @@
+[
+  {
+    "id": "ch09-chthes",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "χθες",
+    "lemma": "χθες",
+    "pos": "adverb",
+    "en": "yesterday",
+    "tr": "dün",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Χθες πήγα στο φαρμακείο.",
+      "en": "Yesterday I went to the pharmacy.",
+      "tr": "Dün eczaneye gittim."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-prochthes",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "προχθές",
+    "lemma": "προχθές",
+    "pos": "adverb",
+    "en": "the day before yesterday",
+    "tr": "evvelsi gün",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Προχθές είδα τον Γιώργο.",
+      "en": "The day before yesterday I saw Giorgos.",
+      "tr": "Evvelsi gün Giorgos'u gördüm."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-persi",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "πέρσι",
+    "lemma": "πέρσι",
+    "pos": "adverb",
+    "en": "last year",
+    "tr": "geçen yıl",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Πέρσι ήμουν στη Σμύρνη.",
+      "en": "Last year I was in Izmir.",
+      "tr": "Geçen yıl İzmir'deydim."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-prin",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "πριν",
+    "lemma": "πριν",
+    "pos": "adverb",
+    "en": "before; ago (πριν από)",
+    "tr": "önce; …önce (πριν από)",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Ήρθα στη Θεσσαλονίκη πριν από ένα μήνα.",
+      "en": "I came to Thessaloniki a month ago.",
+      "tr": "Selanik'e bir ay önce geldim."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-meta",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "μετά",
+    "lemma": "μετά",
+    "pos": "adverb",
+    "en": "after, then, afterwards",
+    "tr": "sonra",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Πρώτα πίνω καφέ, μετά δουλεύω.",
+      "en": "First I have a coffee, then I work.",
+      "tr": "Önce kahve içerim, sonra çalışırım."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-prota",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "πρώτα",
+    "lemma": "πρώτα",
+    "pos": "adverb",
+    "en": "first",
+    "tr": "önce, ilk olarak",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Πρώτα τρώμε, μετά πηγαίνουμε στην παραλία.",
+      "en": "First we eat, then we go to the beach.",
+      "tr": "Önce yemek yeriz, sonra plaja gideriz."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-telika",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "τελικά",
+    "lemma": "τελικά",
+    "pos": "adverb",
+    "en": "in the end, finally",
+    "tr": "sonunda, nihayet",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Τελικά δεν πήγαμε στη θάλασσα.",
+      "en": "In the end we did not go to the sea.",
+      "tr": "Sonunda denize gitmedik."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-taxidi",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "το ταξίδι",
+    "lemma": "ταξίδι",
+    "pos": "noun",
+    "gender": "n",
+    "en": "trip, journey",
+    "tr": "yolculuk, gezi",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Ήταν ένα ωραίο ταξίδι.",
+      "en": "It was a lovely trip.",
+      "tr": "Güzel bir geziydi."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-paralia",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "η παραλία",
+    "lemma": "παραλία",
+    "pos": "noun",
+    "gender": "f",
+    "en": "beach",
+    "tr": "plaj, sahil",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Η παραλία είναι κοντά στο χωριό.",
+      "en": "The beach is near the village.",
+      "tr": "Plaj köyün yakınında."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-chorio",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "το χωριό",
+    "lemma": "χωριό",
+    "pos": "noun",
+    "gender": "n",
+    "en": "village",
+    "tr": "köy",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Το χωριό είναι κοντά στη θάλασσα.",
+      "en": "The village is near the sea.",
+      "tr": "Köy denize yakın."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-filos",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "ο φίλος",
+    "lemma": "φίλος",
+    "pos": "noun",
+    "gender": "m",
+    "en": "friend (male); η φίλη = friend (female)",
+    "tr": "arkadaş (erkek); η φίλη = arkadaş (kadın)",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Ο Γιώργος είναι ο φίλος μου.",
+      "en": "Giorgos is my friend.",
+      "tr": "Giorgos benim arkadaşım."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-oraios",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "ωραίος",
+    "lemma": "ωραίος",
+    "pos": "adjective",
+    "en": "lovely, nice, beautiful (ωραία f, ωραίο n)",
+    "tr": "güzel, hoş (ωραία dişil, ωραίο nötr)",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Ο καιρός ήταν ωραίος.",
+      "en": "The weather was lovely.",
+      "tr": "Hava güzeldi."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-kourasmenos",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "κουρασμένος",
+    "lemma": "κουρασμένος",
+    "pos": "adjective",
+    "en": "tired (κουρασμένη f)",
+    "tr": "yorgun (κουρασμένη dişil)",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Η Ζεϊνέπ ήταν κουρασμένη.",
+      "en": "Zeynep was tired.",
+      "tr": "Zeynep yorgundu."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-kairos",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "ο καιρός",
+    "lemma": "καιρός",
+    "pos": "noun",
+    "gender": "m",
+    "en": "weather",
+    "tr": "hava (hava durumu)",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Σήμερα ο καιρός είναι ωραίος.",
+      "en": "Today the weather is lovely.",
+      "tr": "Bugün hava güzel."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-kolympao",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "κολυμπάω",
+    "lemma": "κολυμπάω",
+    "pos": "verb",
+    "en": "to swim",
+    "tr": "yüzmek",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Κολυμπάω στη θάλασσα κάθε μέρα.",
+      "en": "I swim in the sea every day.",
+      "tr": "Her gün denizde yüzüyorum."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-pernao",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "περνάω",
+    "lemma": "περνάω",
+    "pos": "verb",
+    "en": "to pass; to spend (time)",
+    "tr": "geçmek; (zaman) geçirmek",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Πέρασα ωραία το Σαββατοκύριακο.",
+      "en": "I had a lovely weekend.",
+      "tr": "Hafta sonunu güzel geçirdim."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-gyrizo",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "γυρίζω",
+    "lemma": "γυρίζω",
+    "pos": "verb",
+    "en": "to come back, to return; to turn",
+    "tr": "dönmek, geri gelmek",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Γυρίζω στο σπίτι στις έξι.",
+      "en": "I get back home at six.",
+      "tr": "Saat altıda eve dönüyorum."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-mageirevo",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "μαγειρεύω",
+    "lemma": "μαγειρεύω",
+    "pos": "verb",
+    "en": "to cook",
+    "tr": "yemek pişirmek",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Μαγειρεύω κάθε βράδυ.",
+      "en": "I cook every evening.",
+      "tr": "Her akşam yemek pişiriyorum."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-psari",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "το ψάρι",
+    "lemma": "ψάρι",
+    "pos": "noun",
+    "gender": "n",
+    "en": "fish",
+    "tr": "balık",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Η Ζεϊνέπ τρώει ψάρι στο χωριό.",
+      "en": "Zeynep eats fish in the village.",
+      "tr": "Zeynep köyde balık yiyor."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-aftokinito",
+    "type": "vocab",
+    "skill": "vocab",
+    "level": "A2",
+    "el": "το αυτοκίνητο",
+    "lemma": "αυτοκίνητο",
+    "pos": "noun",
+    "gender": "n",
+    "en": "car",
+    "tr": "araba, otomobil",
+    "topics": [
+      "stage:past"
+    ],
+    "example": {
+      "el": "Ο Γιώργος πηγαίνει στο χωριό με το αυτοκίνητο.",
+      "en": "Giorgos goes to the village by car.",
+      "tr": "Giorgos köye arabayla gidiyor."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-q-transport",
+    "type": "mcq",
+    "skill": "reading",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right answer.",
+      "tr": "Doğru cevabı seç."
+    },
+    "prompt": {
+      "el": "Πώς πήγαν η Ζεϊνέπ και ο Γιώργος στη Χαλκιδική;",
+      "en": "How did Zeynep and Giorgos get to Halkidiki?",
+      "tr": "Zeynep'le Giorgos Halkidiki'ye nasıl gitti?"
+    },
+    "options": [
+      "Με το αυτοκίνητο.",
+      "Με το λεωφορείο.",
+      "Με το τρένο."
+    ],
+    "answer": 0,
+    "explain": {
+      "en": "Zeynep: «Πήγαμε με τον Γιώργο στη Χαλκιδική, με το αυτοκίνητο.»",
+      "tr": "Zeynep: «Πήγαμε με τον Γιώργο στη Χαλκιδική, με το αυτοκίνητο.»"
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-q-tf",
+    "type": "true_false",
+    "skill": "reading",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Σωστό ή λάθος;",
+      "en": "True or false?",
+      "tr": "Doğru mu, yanlış mı?"
+    },
+    "statements": [
+      {
+        "el": "Η Ζεϊνέπ και ο Γιώργος γύρισαν νωρίς.",
+        "en": "Zeynep and Giorgos came back early.",
+        "tr": "Zeynep'le Giorgos erken döndü.",
+        "answer": false
+      },
+      {
+        "el": "Η Σοφία έμεινε στο σπίτι και μαγείρεψε.",
+        "en": "Sofia stayed at home and cooked.",
+        "tr": "Sofia evde kalıp yemek yaptı.",
+        "answer": true
+      }
+    ],
+    "explain": {
+      "en": "Zeynep: «Γυρίσαμε αργά, στις δέκα.» (late, not early). Sofia: «Εγώ έμεινα στο σπίτι και μαγείρεψα.»",
+      "tr": "Zeynep: «Γυρίσαμε αργά, στις δέκα.» (erken değil, geç). Sofia: «Εγώ έμεινα στο σπίτι και μαγείρεψα.»"
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-try-doulepsa",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "verb.aorist"
+    ],
+    "cue": {
+      "lemma": "δουλεύω",
+      "person": "1sg",
+      "tense": "aorist"
+    },
+    "text": "Χθες εγώ {1} στο φαρμακείο.",
+    "answer": {
+      "1": [
+        "δούλεψα"
+      ]
+    },
+    "options": {
+      "1": [
+        "δούλεψα",
+        "δουλεύω",
+        "θα δουλέψω"
+      ]
+    },
+    "translation": {
+      "en": "Yesterday I worked at the pharmacy.",
+      "tr": "Dün eczanede çalıştım."
+    },
+    "explain": {
+      "en": "χθες (yesterday) means it is over: the aorist. The stem is the future's (θα δουλέψω) and the I-ending is -α: δούλεψα. It already has three syllables, so no έ-.",
+      "tr": "χθες (dün) = bitmiş iş: aorist. Kök gelecek zamanınki (θα δουλέψω), ben eki -α: δούλεψα. Zaten üç hece var, έ- gelmez."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-try-kolympisame",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "verb.aorist"
+    ],
+    "cue": {
+      "lemma": "κολυμπάω",
+      "person": "1pl",
+      "tense": "aorist"
+    },
+    "text": "Χθες εμείς {1} στη θάλασσα.",
+    "answer": {
+      "1": [
+        "κολυμπήσαμε"
+      ]
+    },
+    "options": {
+      "1": [
+        "κολυμπήσαμε",
+        "κολύμπησα",
+        "κολυμπάμε"
+      ]
+    },
+    "translation": {
+      "en": "Yesterday we swam in the sea.",
+      "tr": "Dün denize girdik."
+    },
+    "explain": {
+      "en": "εμείς (we) → -αμε, and χθες (yesterday) → aorist: κολυμπήσαμε. κολύμπησα is the I form, κολυμπάμε is the present.",
+      "tr": "εμείς (biz) → -αμε ve χθες (dün) → aorist: κολυμπήσαμε. κολύμπησα ben biçimi, κολυμπάμε şimdiki zaman."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-try-pige",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "verb.aorist",
+      "verb.irregular"
+    ],
+    "cue": {
+      "lemma": "πηγαίνω",
+      "person": "3sg",
+      "tense": "aorist"
+    },
+    "text": "Ο Γιώργος {1} στη Χαλκιδική το Σάββατο.",
+    "answer": {
+      "1": [
+        "πήγε"
+      ]
+    },
+    "options": {
+      "1": [
+        "πήγε",
+        "πήγα",
+        "πήγαν"
+      ]
+    },
+    "translation": {
+      "en": "Giorgos went to Halkidiki on Saturday.",
+      "tr": "Giorgos cumartesi Halkidiki'ye gitti."
+    },
+    "explain": {
+      "en": "One person, he → -ε: πήγε. πήγα is I, πήγαν is they.",
+      "tr": "Tek kişi, o → -ε: πήγε. πήγα ben, πήγαν onlar demek."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-try-imoun",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "verb.imperfect"
+    ],
+    "cue": {
+      "lemma": "είμαι",
+      "person": "1sg",
+      "tense": "imperfect"
+    },
+    "text": "Πέρσι εγώ {1} στη Σμύρνη.",
+    "answer": {
+      "1": [
+        "ήμουν"
+      ]
+    },
+    "options": {
+      "1": [
+        "ήμουν",
+        "ήμασταν",
+        "ήταν"
+      ]
+    },
+    "translation": {
+      "en": "Last year I was in Izmir.",
+      "tr": "Geçen yıl İzmir'deydim."
+    },
+    "explain": {
+      "en": "είμαι has one past: for εγώ it is ήμουν. ήμασταν is we, ήταν is he or they.",
+      "tr": "είμαι fiilinin tek geçmişi var: εγώ için ήμουν. ήμασταν biz, ήταν o ya da onlar demek."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-try-match",
+    "type": "match",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Αντιστοιχίζω.",
+      "en": "Match each present form with its past.",
+      "tr": "Her şimdiki zaman biçimini geçmişiyle eşleştir."
+    },
+    "left": [
+      "τρώω",
+      "βλέπω",
+      "πίνω",
+      "λέω"
+    ],
+    "right": [
+      "έφαγα",
+      "είδα",
+      "ήπια",
+      "είπα"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explain": {
+      "en": "τρώω → έφαγα (eat), βλέπω → είδα (see), πίνω → ήπια (drink), λέω → είπα (say). These pasts must be learned as they are.",
+      "tr": "τρώω → έφαγα (yemek), βλέπω → είδα (görmek), πίνω → ήπια (içmek), λέω → είπα (söylemek). Bu geçmişleri olduğu gibi öğrenmen gerekir."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-p-agorase",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "verb.aorist"
+    ],
+    "cue": {
+      "lemma": "αγοράζω",
+      "person": "3sg",
+      "tense": "aorist"
+    },
+    "text": "Χθες η Ζεϊνέπ {1} ψωμί στον φούρνο.",
+    "answer": {
+      "1": [
+        "αγόρασε"
+      ]
+    },
+    "options": {
+      "1": [
+        "αγόρασε",
+        "αγόρασα",
+        "αγοράσαμε"
+      ]
+    },
+    "translation": {
+      "en": "Yesterday Zeynep bought bread at the bakery.",
+      "tr": "Dün Zeynep fırından ekmek aldı."
+    },
+    "explain": {
+      "en": "Zeynep is one person (she) → -ε: αγόρασε. αγόρασα is I, αγοράσαμε is we.",
+      "tr": "Zeynep tek kişi (o) → -ε: αγόρασε. αγόρασα ben, αγοράσαμε biz demek."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-p-efages",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "verb.aorist",
+      "verb.irregular"
+    ],
+    "cue": {
+      "lemma": "τρώω",
+      "person": "2sg",
+      "tense": "aorist"
+    },
+    "text": "Γιώργο, πού {1} ψάρι το Σάββατο;",
+    "answer": {
+      "1": [
+        "έφαγες"
+      ]
+    },
+    "options": {
+      "1": [
+        "έφαγες",
+        "έφαγα",
+        "φάγαμε"
+      ]
+    },
+    "translation": {
+      "en": "Giorgos, where did you eat fish on Saturday?",
+      "tr": "Giorgos, cumartesi balığı nerede yedin?"
+    },
+    "explain": {
+      "en": "Giorgos is addressed (you, singular) → -ες: έφαγες.",
+      "tr": "Giorgos'a soruluyor (sen) → -ες: έφαγες."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-p-irthate",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "verb.aorist",
+      "verb.irregular"
+    ],
+    "cue": {
+      "lemma": "έρχομαι",
+      "person": "2pl",
+      "tense": "aorist"
+    },
+    "text": "Κυρία Κατερίνα, πότε {1} στη Θεσσαλονίκη;",
+    "answer": {
+      "1": [
+        "ήρθατε"
+      ]
+    },
+    "options": {
+      "1": [
+        "ήρθατε",
+        "ήρθα",
+        "ήρθε"
+      ]
+    },
+    "translation": {
+      "en": "Mrs Katerina, when did you come to Thessaloniki?",
+      "tr": "Katerina Hanım, Selanik'e ne zaman geldiniz?"
+    },
+    "explain": {
+      "en": "Formal (κυρία Κατερίνα) → εσείς: -ατε → ήρθατε.",
+      "tr": "Resmî (κυρία Κατερίνα) → εσείς: -ατε → ήρθατε."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-p-eida",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "verb.aorist",
+      "verb.irregular"
+    ],
+    "cue": {
+      "lemma": "βλέπω",
+      "person": "1sg",
+      "tense": "aorist"
+    },
+    "text": "Προχθές {1} τον Γιώργο στη λαϊκή.",
+    "answer": {
+      "1": [
+        "είδα"
+      ]
+    },
+    "options": {
+      "1": [
+        "είδα",
+        "είδες",
+        "είδε"
+      ]
+    },
+    "translation": {
+      "en": "The day before yesterday I saw Giorgos at the street market.",
+      "tr": "Evvelsi gün Giorgos'u halde gördüm."
+    },
+    "explain": {
+      "en": "Zeynep tells it about herself (I) → είδα.",
+      "tr": "Zeynep kendini anlatıyor (ben) → είδα."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-p-eichame",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "verb.imperfect"
+    ],
+    "cue": {
+      "lemma": "έχω",
+      "person": "1pl",
+      "tense": "imperfect"
+    },
+    "text": "Χθες εμείς {1} μάθημα στις έξι.",
+    "answer": {
+      "1": [
+        "είχαμε"
+      ]
+    },
+    "options": {
+      "1": [
+        "είχαμε",
+        "είχατε",
+        "είχα"
+      ]
+    },
+    "translation": {
+      "en": "Yesterday we had a class at six.",
+      "tr": "Dün saat altıda dersimiz vardı."
+    },
+    "explain": {
+      "en": "έχω has one past. εμείς (we) → είχαμε.",
+      "tr": "έχω fiilinin tek geçmişi var. εμείς (biz) → είχαμε."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-p-imastan",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "verb.imperfect"
+    ],
+    "cue": {
+      "lemma": "είμαι",
+      "person": "1pl",
+      "tense": "imperfect"
+    },
+    "text": "Πέρσι εμείς {1} στη Σμύρνη.",
+    "answer": {
+      "1": [
+        "ήμασταν"
+      ]
+    },
+    "options": {
+      "1": [
+        "ήμασταν",
+        "ήσασταν",
+        "ήταν"
+      ]
+    },
+    "translation": {
+      "en": "Last year we were in Izmir.",
+      "tr": "Geçen yıl biz İzmir'deydik."
+    },
+    "explain": {
+      "en": "εμείς (we) → ήμασταν. ήσασταν is you (plural or formal).",
+      "tr": "εμείς (biz) → ήμασταν. ήσασταν siz demek."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-p-vgika",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "verb.aorist",
+      "verb.irregular"
+    ],
+    "cue": {
+      "lemma": "βγαίνω",
+      "person": "1sg",
+      "tense": "aorist"
+    },
+    "text": "Χθες το βράδυ εγώ {1} με τη Σοφία.",
+    "answer": {
+      "1": [
+        "βγήκα"
+      ]
+    },
+    "options": {
+      "1": [
+        "βγήκα",
+        "βγήκες",
+        "βγήκαμε"
+      ]
+    },
+    "translation": {
+      "en": "Yesterday evening I went out with Sofia.",
+      "tr": "Dün akşam Sofia ile dışarı çıktım."
+    },
+    "explain": {
+      "en": "εγώ (I) → βγήκα. The stress stays on the first syllable.",
+      "tr": "εγώ (ben) → βγήκα. Vurgu ilk hecede kalır."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-p-ekanate",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "grammar": [
+      "verb.aorist",
+      "verb.irregular"
+    ],
+    "cue": {
+      "lemma": "κάνω",
+      "person": "2pl",
+      "tense": "aorist"
+    },
+    "text": "Τι {1} χθες, κυρία Κατερίνα;",
+    "answer": {
+      "1": [
+        "κάνατε"
+      ]
+    },
+    "options": {
+      "1": [
+        "κάνατε",
+        "έκανα",
+        "κάνετε"
+      ]
+    },
+    "translation": {
+      "en": "What did you do yesterday, Mrs Katerina?",
+      "tr": "Dün ne yaptınız Katerina Hanım?"
+    },
+    "explain": {
+      "en": "χθες (yesterday) → aorist, and κυρία Κατερίνα → εσείς: κάνατε. κάνετε is the present.",
+      "tr": "χθες (dün) → aorist, κυρία Κατερίνα → εσείς: κάνατε. κάνετε şimdiki zaman."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-p-pos-perases",
+    "type": "mcq",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right answer.",
+      "tr": "Doğru cevabı seç."
+    },
+    "prompt": {
+      "el": "— Πώς πέρασες το Σαββατοκύριακο; — …",
+      "en": "— How was your weekend? — …",
+      "tr": "— Hafta sonunu nasıl geçirdin? — …"
+    },
+    "options": [
+      "Πέρασα ωραία!",
+      "Θα περάσω ωραία!",
+      "Περνάω ωραία!"
+    ],
+    "answer": 0,
+    "explain": {
+      "en": "The question is about a weekend that is over, so the answer is in the aorist: Πέρασα ωραία!",
+      "tr": "Soru geçmiş bir hafta sonu hakkında; cevap da aoristte: Πέρασα ωραία!"
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  },
+  {
+    "id": "ch09-p-time-word",
+    "type": "mcq",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right answer.",
+      "tr": "Doğru cevabı seç."
+    },
+    "prompt": {
+      "el": "… ήμουν στη Σμύρνη. Τώρα μένω στη Θεσσαλονίκη.",
+      "en": "… I was in Izmir. Now I live in Thessaloniki.",
+      "tr": "… İzmir'deydim. Şimdi Selanik'te oturuyorum."
+    },
+    "options": [
+      "Πέρσι",
+      "Αύριο",
+      "Μεθαύριο"
+    ],
+    "answer": 0,
+    "explain": {
+      "en": "ήμουν is in the past, so the time word is a past one: πέρσι (last year). αύριο and μεθαύριο are in the future.",
+      "tr": "ήμουν geçmiş zaman; zaman sözü de geçmiş olmalı: πέρσι (geçen yıl). αύριο ve μεθαύριο gelecek."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-sonnet"
+    }
+  }
+]

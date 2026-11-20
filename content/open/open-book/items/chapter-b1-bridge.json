@@ -1,0 +1,1348 @@
+[
+ {
+  "id": "ch12-aitisi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "η αίτηση",
+  "lemma": "αίτηση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "application, request (a form you hand in)",
+  "tr": "başvuru, dilekçe",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Η αίτηση είναι στο τραπέζι.",
+   "en": "The application is on the table.",
+   "tr": "Başvuru masanın üstünde."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-pistopoiitiko",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "το πιστοποιητικό",
+  "lemma": "πιστοποιητικό",
+  "pos": "noun",
+  "gender": "n",
+  "en": "certificate (an official document)",
+  "tr": "belge (resmî belge)",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Θέλω ένα πιστοποιητικό.",
+   "en": "I want a certificate.",
+   "tr": "Bir belge istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-dimos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "ο δήμος",
+  "lemma": "δήμος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "town hall; municipality",
+  "tr": "belediye",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Ο δήμος είναι στο κέντρο.",
+   "en": "The town hall is in the centre.",
+   "tr": "Belediye merkezde."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-eforia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "η εφορία",
+  "lemma": "εφορία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "tax office",
+  "tr": "vergi dairesi",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Η εφορία είναι κλειστή το Σάββατο.",
+   "en": "The tax office is closed on Saturday.",
+   "tr": "Vergi dairesi cumartesi kapalı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-ypallilos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "ο υπάλληλος / η υπάλληλος",
+  "lemma": "υπάλληλος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "clerk, employee (η υπάλληλος for a woman)",
+  "tr": "memur, görevli",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Η υπάλληλος είναι πολύ καλή.",
+   "en": "The clerk is very nice.",
+   "tr": "Memur çok iyi biri."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-entypo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "το έντυπο",
+  "lemma": "έντυπο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "form (to fill in)",
+  "tr": "form, basılı evrak",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Το έντυπο είναι εδώ.",
+   "en": "The form is here.",
+   "tr": "Form burada."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-prothesmia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "η προθεσμία",
+  "lemma": "προθεσμία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "deadline",
+  "tr": "son tarih, süre",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Η προθεσμία είναι η Δευτέρα.",
+   "en": "The deadline is Monday.",
+   "tr": "Son tarih pazartesi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-enimerono",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "ενημερώνω",
+  "lemma": "ενημερώνω",
+  "pos": "verb",
+  "en": "to inform, to let (someone) know",
+  "tr": "bilgilendirmek, haber vermek",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Ενημερώνω τον Γιώργο.",
+   "en": "I let Giorgos know.",
+   "tr": "Giorgos'a haber veriyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-enoikiazetai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "ενοικιάζεται",
+  "lemma": "ενοικιάζω",
+  "pos": "verb",
+  "en": "is for rent (on signs); is rented",
+  "tr": "kiralıktır; kiralanır",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Ενοικιάζεται δωμάτιο στην Καλαμαριά.",
+   "en": "Room to let in Kalamaria.",
+   "tr": "Kalamaris'te kiralık oda."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-poleitai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "πωλείται",
+  "lemma": "πωλώ",
+  "pos": "verb",
+  "en": "is for sale (on signs); is sold",
+  "tr": "satılıktır; satılır",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Πωλείται αυτοκίνητο.",
+   "en": "Car for sale.",
+   "tr": "Satılık araba."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-katoikos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "ο κάτοικος",
+  "lemma": "κάτοικος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "resident, inhabitant",
+  "tr": "sakin",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Ο κάτοικος στο διαμέρισμα 4 είναι ο κύριος Παύλος.",
+   "en": "The resident of flat 4 is Mr Pavlos.",
+   "tr": "4 numaralı dairenin sakini Pavlos Bey."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-vivliothiki",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "η βιβλιοθήκη",
+  "lemma": "βιβλιοθήκη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "library",
+  "tr": "kütüphane",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Η βιβλιοθήκη είναι κοντά στην πλατεία.",
+   "en": "The library is near the square.",
+   "tr": "Kütüphane meydanın yakınında."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-etimos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "έτοιμος",
+  "lemma": "έτοιμος",
+  "pos": "adjective",
+  "en": "ready",
+  "tr": "hazır",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Το πιστοποιητικό είναι έτοιμο.",
+   "en": "The certificate is ready.",
+   "tr": "Belge hazır."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-syntoma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "σύντομα",
+  "lemma": "σύντομα",
+  "pos": "adverb",
+  "en": "soon, shortly",
+  "tr": "yakında, kısa sürede",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Θα τηλεφωνήσω σύντομα.",
+   "en": "I will call soon.",
+   "tr": "Yakında arayacağım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-epeidi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "επειδή",
+  "lemma": "επειδή",
+  "pos": "conjunction",
+  "en": "because",
+  "tr": "çünkü, -diği için",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Μένω εδώ, επειδή δουλεύω κοντά.",
+   "en": "I live here because I work nearby.",
+   "tr": "Burada oturuyorum, çünkü yakında çalışıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-gi-afto",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "γι' αυτό",
+  "lemma": "γι' αυτό",
+  "pos": "conjunction",
+  "en": "so, that is why",
+  "tr": "bu yüzden, onun için",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Δουλεύω κοντά, γι' αυτό πηγαίνω με τα πόδια.",
+   "en": "I work nearby, so I walk.",
+   "tr": "Yakında çalışıyorum, bu yüzden yürüyerek gidiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-omos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "όμως",
+  "lemma": "όμως",
+  "pos": "conjunction",
+  "en": "but, however",
+  "tr": "ama, ancak",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Θέλω να έρθω, όμως δουλεύω.",
+   "en": "I want to come, but I'm working.",
+   "tr": "Gelmek istiyorum ama çalışıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-eno",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "ενώ",
+  "lemma": "ενώ",
+  "pos": "conjunction",
+  "en": "while, whereas",
+  "tr": "iken; oysa",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Ενώ η Ζεϊνέπ δουλεύει, ο Γιώργος κοιμάται.",
+   "en": "While Zeynep works, Giorgos sleeps.",
+   "tr": "Zeynep çalışırken Giorgos uyuyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-episis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "επίσης",
+  "lemma": "επίσης",
+  "pos": "adverb",
+  "en": "also, as well",
+  "tr": "ayrıca, de",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Θέλω επίσης ένα έντυπο.",
+   "en": "I also want a form.",
+   "tr": "Bir de form istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-an",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "αν",
+  "lemma": "αν",
+  "pos": "conjunction",
+  "en": "if; whether",
+  "tr": "eğer, -se/-sa",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Αν έχεις χρόνο, θα έρθω.",
+   "en": "If you have time, I will come.",
+   "tr": "Vaktin varsa geleceğim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-diamerisma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "το διαμέρισμα",
+  "lemma": "διαμέρισμα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "flat, apartment",
+  "tr": "daire",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Το διαμέρισμα είναι στην Καλαμαριά.",
+   "en": "The flat is in Kalamaria.",
+   "tr": "Daire Kalamaris'te."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-stelno",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "στέλνω",
+  "lemma": "στέλνω",
+  "pos": "verb",
+  "en": "to send",
+  "tr": "göndermek",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Στέλνω ένα γράμμα στον Γιώργο.",
+   "en": "I send Giorgos a letter.",
+   "tr": "Giorgos'a bir mektup gönderiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-ferno",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "φέρνω",
+  "lemma": "φέρνω",
+  "pos": "verb",
+  "en": "to bring (να φέρω: to bring, once)",
+  "tr": "getirmek (να φέρω: bir kez getirmek)",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Φέρνω το έντυπο αύριο.",
+   "en": "I bring the form tomorrow.",
+   "tr": "Formu yarın getiriyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-q-clerk",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Τι χρειάζεται η Ζεϊνέπ για το πιστοποιητικό;",
+   "en": "What does Zeynep need for the certificate?",
+   "tr": "Zeynep'in belge için neye ihtiyacı var?"
+  },
+  "options": [
+   "Το έντυπο και την ταυτότητά της.",
+   "Το έντυπο και ένα εισιτήριο.",
+   "Την ταυτότητά της και το κλειδί."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The clerk: «Φέρτε την ταυτότητά σας και το έντυπο.» Nothing is said about a ticket or a key.",
+   "tr": "Memur: «Φέρτε την ταυτότητά σας και το έντυπο.» Bilet ya da anahtardan söz edilmiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η προθεσμία για το έντυπο είναι η Παρασκευή.",
+    "en": "The deadline for the form is Friday.",
+    "tr": "Formun son tarihi cuma.",
+    "answer": true
+   },
+   {
+    "el": "Το πιστοποιητικό θα είναι έτοιμο την Παρασκευή.",
+    "en": "The certificate will be ready on Friday.",
+    "tr": "Belge cuma günü hazır olacak.",
+    "answer": false
+   },
+   {
+    "el": "Η υπάλληλος ρώτησε τη Ζεϊνέπ πού μένει.",
+    "en": "The clerk asked Zeynep where she lives.",
+    "tr": "Memur Zeynep'e nerede oturduğunu sordu.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "Friday is the deadline for the form; the certificate will be ready «σε μια εβδομάδα», in a week. The clerk did ask «Πού μένετε;».",
+   "tr": "Cuma, formun son tarihi; belge «σε μια εβδομάδα», yani bir hafta sonra hazır olacak. Memur gerçekten «Πού μένετε;» diye sordu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-try-passive-aorist",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "grammar": [
+   "verb.passive.aorist"
+  ],
+  "cue": {
+   "lemma": "αγοράζομαι",
+   "person": "3sg",
+   "tense": "aorist"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Το εισιτήριο {1} χθες.",
+  "answer": {
+   "1": [
+    "αγοράστηκε"
+   ]
+  },
+  "options": {
+   "1": [
+    "αγοράστηκε",
+    "αγοράζεται",
+    "αγόρασε"
+   ]
+  },
+  "translation": {
+   "en": "The ticket was bought yesterday.",
+   "tr": "Bilet dün alındı."
+  },
+  "explain": {
+   "en": "The ticket does not buy; it is bought. χθες (yesterday) is a finished event: passive aorist, one word: αγοράστηκε. αγοράζεται is the present.",
+   "tr": "Bilet satın almaz, satın alınır. χθες bitmiş bir olay: edilgen geçmiş zaman, tek kelime: αγοράστηκε. αγοράζεται şimdiki zaman."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-try-passive-present",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "grammar": [
+   "verb.passive.present"
+  ],
+  "cue": {
+   "lemma": "ενημερώνομαι",
+   "person": "3pl",
+   "tense": "present"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Οι κάτοικοι {1} από τον διαχειριστή κάθε εβδομάδα.",
+  "answer": {
+   "1": [
+    "ενημερώνονται"
+   ]
+  },
+  "options": {
+   "1": [
+    "ενημερώνονται",
+    "ενημερώνεται",
+    "ενημερώνουν"
+   ]
+  },
+  "translation": {
+   "en": "The residents are informed by the manager every week.",
+   "tr": "Sakinlere her hafta yönetici tarafından haber verilir."
+  },
+  "explain": {
+   "en": "Several residents who receive the action, and a habit (κάθε εβδομάδα): present passive, plural, ενημερώνονται. ενημερώνεται is singular; ενημερώνουν is active.",
+   "tr": "Eylemi alan birden çok kişi ve bir alışkanlık (κάθε εβδομάδα): edilgen şimdiki zaman, çoğul, ενημερώνονται. ενημερώνεται tekil; ενημερώνουν etken."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-try-reported-future",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "grammar": [
+   "syntax.reported"
+  ],
+  "cue": {
+   "lemma": "φέρνω",
+   "person": "3sg",
+   "tense": "future"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Ο διαχειριστής λέει: «Θα φέρω το κλειδί αύριο.» Η Ζεϊνέπ λέει στον Γιώργο: «Ο διαχειριστής είπε ότι {1} το κλειδί αύριο.»",
+  "answer": {
+   "1": [
+    "θα φέρει"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα φέρει",
+    "θα φέρω",
+    "θα φέρεις"
+   ]
+  },
+  "translation": {
+   "en": "The manager says: «I will bring the key tomorrow.» Zeynep tells Giorgos: «The manager said he would bring the key tomorrow.»",
+   "tr": "Yönetici: «Anahtarı yarın getireceğim.» Zeynep Giorgos'a diyor ki: «Yönetici anahtarı yarın getireceğini söyledi.»"
+  },
+  "explain": {
+   "en": "The future stays a future (θα φέρω → θα φέρει), but the person changes: the manager said «I», Zeynep reports «he».",
+   "tr": "Gelecek zaman gelecek kalır (θα φέρω → θα φέρει), ama kişi değişir: yönetici «ben» dedi, Zeynep «o» diye aktarıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-try-reported-question",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "grammar": [
+   "syntax.reported"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Η υπάλληλος ρώτησε: «Πού μένετε;» Η Ζεϊνέπ λέει: «Η υπάλληλος με ρώτησε {1} μένω.»",
+  "answer": {
+   "1": [
+    "πού"
+   ]
+  },
+  "options": {
+   "1": [
+    "πού",
+    "αν",
+    "ότι",
+    "να"
+   ]
+  },
+  "translation": {
+   "en": "The clerk asked: «Where do you live?» Zeynep says: «The clerk asked me where I live.»",
+   "tr": "Memur sordu: «Nerede oturuyorsunuz?» Zeynep diyor ki: «Memur nerede oturduğumu sordu.»"
+  },
+  "explain": {
+   "en": "A question with a question word keeps that word after ρώτησε: πού μένω. αν is for yes/no questions; ότι and να do not follow ρώτησε.",
+   "tr": "Soru sözcüklü bir soru, ρώτησε fiilinden sonra aynı soru sözcüğünü korur: πού μένω. αν evet/hayır soruları için; ότι ve να ρώτησε fiilinden sonra gelmez."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-try-if",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "grammar": [
+   "syntax.conditional"
+  ],
+  "cue": {
+   "lemma": "φέρνω",
+   "person": "2pl",
+   "tense": "subjunctive"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Αν δεν {1} την ταυτότητά σας, δεν θα πάρετε το πιστοποιητικό.",
+  "answer": {
+   "1": [
+    "φέρετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "φέρετε",
+    "θα φέρετε",
+    "φέρτε"
+   ]
+  },
+  "translation": {
+   "en": "If you do not bring your ID card, you will not get the certificate.",
+   "tr": "Kimliğinizi getirmezseniz belgeyi alamazsınız."
+  },
+  "explain": {
+   "en": "After αν a single future event takes the form you know from θέλω να, without θα: αν δεν φέρετε. The θα comes in the second half: δεν θα πάρετε.",
+   "tr": "αν kelimesinden sonra tek bir gelecek olay, θέλω να sözünden tanıdığın biçimi alır ve θα almaz: αν δεν φέρετε. θα ikinci yarıda: δεν θα πάρετε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-p-sign",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "You see this sign on a car. What can you do?",
+   "tr": "Bir arabanın üstünde bu yazıyı görüyorsun. Ne yapabilirsin?"
+  },
+  "prompt": {
+   "el": "Πωλείται αυτοκίνητο.",
+   "en": "Car for sale.",
+   "tr": "Satılık araba."
+  },
+  "options": [
+   "Μπορώ να αγοράσω το αυτοκίνητο.",
+   "Μπορώ να πουλήσω το αυτοκίνητο.",
+   "Μπορώ να μείνω στο αυτοκίνητο."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "πωλείται is the sign for \"is for sale\", from πουλάω. Whoever reads the sign can buy the car.",
+   "tr": "πωλείται, πουλάω fiilinden gelen \"satılıktır\" levhasıdır. Levhayı okuyan arabayı satın alabilir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-p-notice-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Το διαμέρισμα 4 ενοικιάζεται.",
+    "en": "Flat 4 is for rent.",
+    "tr": "4 numaralı daire kiralık.",
+    "answer": true
+   },
+   {
+    "el": "Οι κάτοικοι ενημερώνουν τον διαχειριστή.",
+    "en": "The residents inform the manager.",
+    "tr": "Sakinler yöneticiye haber veriyor.",
+    "answer": false
+   },
+   {
+    "el": "Το ασανσέρ επισκευάστηκε σήμερα.",
+    "en": "The lift was repaired today.",
+    "tr": "Asansör bugün tamir edildi.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "The notice says «Οι κάτοικοι ενημερώνονται από τον διαχειριστή»: the manager informs the residents, not the other way round.",
+   "tr": "Duyuru «Οι κάτοικοι ενημερώνονται από τον διαχειριστή» diyor: yönetici sakinlere haber veriyor, tersi değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-p-note",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Αν η Ζεϊνέπ δεν έχει μάθημα το Σάββατο, τι θα κάνει;",
+   "en": "If Zeynep has no class on Saturday, what will she do?",
+   "tr": "Zeynep'in cumartesi dersi yoksa ne yapacak?"
+  },
+  "options": [
+   "Θα πάει στη βιβλιοθήκη με τον Γιώργο.",
+   "Θα τηλεφωνήσει στον διαχειριστή.",
+   "Θα πάει στο φαρμακείο."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Giorgos' note: «αν έχεις χρόνο το Σάββατο, θα πάμε μαζί στη βιβλιοθήκη». Zeynep answers: «Αν δεν έχω μάθημα, θα έρθω.»",
+   "tr": "Giorgos'un notu: «αν έχεις χρόνο το Σάββατο, θα πάμε μαζί στη βιβλιοθήκη». Zeynep cevap veriyor: «Αν δεν έχω μάθημα, θα έρθω.»"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-p-match-reported",
+  "type": "match",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each pair.",
+   "tr": "Eşleri bul."
+  },
+  "ask": {
+   "en": "Giorgos said the things on the left. Match each with what Zeynep tells later.",
+   "tr": "Soldakileri Giorgos söyledi. Her birini Zeynep'in sonradan aktardığıyla eşleştir."
+  },
+  "left": [
+   "«Μένεις στην Καλαμαριά;»",
+   "«Πού δουλεύεις;»",
+   "«Θα έρθω αύριο.»",
+   "«Είμαι κουρασμένος.»"
+  ],
+  "right": [
+   "Ο Γιώργος με ρώτησε αν μένω στην Καλαμαριά.",
+   "Ο Γιώργος με ρώτησε πού δουλεύω.",
+   "Ο Γιώργος είπε ότι θα έρθει αύριο.",
+   "Ο Γιώργος είπε ότι είναι κουρασμένος."
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "explain": {
+   "en": "A yes/no question → ρώτησε αν. A question word stays: πού. A statement → είπε ότι, with the same tense (θα έρθω → θα έρθει, είμαι → είναι) and the person changed.",
+   "tr": "Evet/hayır sorusu → ρώτησε αν. Soru sözcüğü kalır: πού. Düz cümle → είπε ότι, aynı zamanla (θα έρθω → θα έρθει, είμαι → είναι) ve kişi değişerek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-p-passive-plural",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "grammar": [
+   "verb.passive.aorist"
+  ],
+  "cue": {
+   "lemma": "στέλνομαι",
+   "person": "3pl",
+   "tense": "aorist"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Οι αιτήσεις {1} χθες από τον δήμο.",
+  "answer": {
+   "1": [
+    "στάλθηκαν"
+   ]
+  },
+  "options": {
+   "1": [
+    "στάλθηκαν",
+    "στάλθηκε",
+    "στέλνονται"
+   ]
+  },
+  "translation": {
+   "en": "The applications were sent yesterday by the town hall.",
+   "tr": "Başvurular dün belediye tarafından gönderildi."
+  },
+  "explain": {
+   "en": "Several applications and a finished event (χθες): passive aorist plural, στάλθηκαν. στάλθηκε is singular; στέλνονται is the present.",
+   "tr": "Birden çok başvuru ve bitmiş bir olay (χθες): edilgen geçmiş zaman, çoğul, στάλθηκαν. στάλθηκε tekil; στέλνονται şimdiki zaman."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-p-if-gap",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "grammar": [
+   "syntax.conditional"
+  ],
+  "cue": {
+   "lemma": "βρίσκω",
+   "person": "1sg",
+   "tense": "subjunctive"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Αν {1} εισιτήριο, θα ταξιδέψω αύριο.",
+  "answer": {
+   "1": [
+    "βρω"
+   ]
+  },
+  "options": {
+   "1": [
+    "βρω",
+    "θα βρω",
+    "βρήκα"
+   ]
+  },
+  "translation": {
+   "en": "If I find a ticket, I will travel tomorrow.",
+   "tr": "Bilet bulursam yarın yolculuk yapacağım."
+  },
+  "explain": {
+   "en": "After αν no θα: αν βρω (the form from θα βρω without θα). The result has the θα: θα ταξιδέψω.",
+   "tr": "αν kelimesinden sonra θα gelmez: αν βρω (θα βρω'dan θα atılmış biçim). Sonuç cümlesinde θα var: θα ταξιδέψω."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-p-reported-if",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "grammar": [
+   "syntax.reported"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Ο Γιώργος ρώτησε: «Έχεις χρόνο το Σάββατο;» Η Ζεϊνέπ λέει: «Ο Γιώργος με ρώτησε {1} έχω χρόνο το Σάββατο.»",
+  "answer": {
+   "1": [
+    "αν"
+   ]
+  },
+  "options": {
+   "1": [
+    "αν",
+    "πού",
+    "ότι"
+   ]
+  },
+  "translation": {
+   "en": "Giorgos asked: «Do you have time on Saturday?» Zeynep says: «Giorgos asked me whether I have time on Saturday.»",
+   "tr": "Giorgos sordu: «Cumartesi vaktin var mı?» Zeynep diyor ki: «Giorgos cumartesi vaktim olup olmadığını sordu.»"
+  },
+  "explain": {
+   "en": "A yes/no question is reported with αν (\"if, whether\"). ότι is for statements; πού would ask about a place.",
+   "tr": "Evet/hayır sorusu αν ile aktarılır. ότι düz cümleler içindir; πού bir yer sorardı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-p-link-while",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "grammar": [
+   "syntax.linking"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Η Ζεϊνέπ δουλεύει το πρωί, {1} ο Γιώργος δουλεύει το βράδυ.",
+  "answer": {
+   "1": [
+    "ενώ"
+   ]
+  },
+  "options": {
+   "1": [
+    "ενώ",
+    "επειδή",
+    "γι' αυτό"
+   ]
+  },
+  "translation": {
+   "en": "Zeynep works in the morning, whereas Giorgos works in the evening.",
+   "tr": "Zeynep sabahları çalışırken Giorgos akşamları çalışıyor."
+  },
+  "explain": {
+   "en": "Two things are set side by side: ενώ (while, whereas). There is no reason (επειδή) and no result (γι' αυτό) between them.",
+   "tr": "İki durum yan yana konuyor: ενώ (iken, oysa). Aralarında ne bir neden (επειδή) ne de bir sonuç (γι' αυτό) var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-p-link-but",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "grammar": [
+   "syntax.linking"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Θέλω να έρθω, {1} δουλεύω το Σάββατο.",
+  "answer": {
+   "1": [
+    "όμως"
+   ]
+  },
+  "options": {
+   "1": [
+    "όμως",
+    "γι' αυτό",
+    "αν"
+   ]
+  },
+  "translation": {
+   "en": "I want to come, but I work on Saturday.",
+   "tr": "Gelmek istiyorum ama cumartesi çalışıyorum."
+  },
+  "explain": {
+   "en": "The second half goes against the first: όμως (but, however).",
+   "tr": "İkinci yarı birincinin tersini söylüyor: όμως (ama, ancak)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-p-link-so",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "grammar": [
+   "syntax.linking"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Είμαι πολύ κουρασμένη, {1} πάω στο σπίτι.",
+  "answer": {
+   "1": [
+    "γι' αυτό"
+   ]
+  },
+  "options": {
+   "1": [
+    "γι' αυτό",
+    "όμως",
+    "ενώ"
+   ]
+  },
+  "translation": {
+   "en": "I am very tired, so I am going home.",
+   "tr": "Çok yorgunum, bu yüzden eve gidiyorum."
+  },
+  "explain": {
+   "en": "Going home is the result of being tired: γι' αυτό (so, that is why).",
+   "tr": "Eve gitmek, yorgun olmanın sonucu: γι' αυτό (bu yüzden)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch12-p-link-because",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "grammar": [
+   "syntax.linking"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Πηγαίνω με τα πόδια, {1} το σπίτι μου είναι κοντά.",
+  "answer": {
+   "1": [
+    "επειδή"
+   ]
+  },
+  "options": {
+   "1": [
+    "επειδή",
+    "γι' αυτό",
+    "όμως"
+   ]
+  },
+  "translation": {
+   "en": "I walk because my home is near.",
+   "tr": "Yürüyerek gidiyorum çünkü evim yakın."
+  },
+  "explain": {
+   "en": "The second half gives the reason for the first: επειδή (because).",
+   "tr": "İkinci yarı birincinin nedenini veriyor: επειδή (çünkü)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-sonnet"
+  }
+ }
+]

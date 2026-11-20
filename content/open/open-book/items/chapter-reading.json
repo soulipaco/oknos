@@ -1,0 +1,889 @@
+[
+ {
+  "id": "ch01-geia-sou",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "γεια σου",
+  "pos": "phrase",
+  "en": "hello; goodbye (informal, to one friend)",
+  "tr": "merhaba; hoşça kal (samimi, tek kişiye)",
+  "topics": [
+   "stage:reading"
+  ],
+  "example": {
+   "el": "Γεια σου! Ένα τσάι, παρακαλώ.",
+   "en": "Hi! A tea, please.",
+   "tr": "Merhaba! Bir çay lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-efcharisto",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ευχαριστώ",
+  "pos": "phrase",
+  "en": "thank you",
+  "tr": "teşekkür ederim",
+  "topics": [
+   "stage:reading"
+  ],
+  "example": {
+   "el": "Ναι, ένα γιαούρτι. Ευχαριστώ!",
+   "en": "Yes, a yoghurt. Thank you!",
+   "tr": "Evet, bir yoğurt. Teşekkürler!"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-parakalo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "παρακαλώ",
+  "pos": "phrase",
+  "en": "please; you're welcome; here you are; can I help you?",
+  "tr": "lütfen; rica ederim; buyurun",
+  "topics": [
+   "stage:reading"
+  ],
+  "example": {
+   "el": "Ένα τσάι, παρακαλώ.",
+   "en": "A tea, please.",
+   "tr": "Bir çay lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-ena",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ένα",
+  "pos": "number",
+  "en": "one (with a neuter noun: ένα τσάι)",
+  "tr": "bir (nötr bir isimle: ένα τσάι)",
+  "topics": [
+   "stage:reading"
+  ],
+  "example": {
+   "el": "Ένα γιαούρτι, παρακαλώ.",
+   "en": "A yoghurt, please.",
+   "tr": "Bir yoğurt lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-dyo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "δύο",
+  "pos": "number",
+  "en": "two",
+  "tr": "iki",
+  "topics": [
+   "stage:reading"
+  ],
+  "example": {
+   "el": "Ένα, δύο, τρία.",
+   "en": "One, two, three.",
+   "tr": "Bir, iki, üç."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-tria",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τρία",
+  "pos": "number",
+  "en": "three",
+  "tr": "üç",
+  "topics": [
+   "stage:reading"
+  ],
+  "example": {
+   "el": "Δύο, τρία, τέσσερα.",
+   "en": "Two, three, four.",
+   "tr": "İki, üç, dört."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-tessera",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τέσσερα",
+  "pos": "number",
+  "en": "four",
+  "tr": "dört",
+  "topics": [
+   "stage:reading"
+  ],
+  "example": {
+   "el": "Τρία, τέσσερα, πέντε.",
+   "en": "Three, four, five.",
+   "tr": "Üç, dört, beş."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-pente",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πέντε",
+  "pos": "number",
+  "en": "five",
+  "tr": "beş",
+  "topics": [
+   "stage:reading"
+  ],
+  "example": {
+   "el": "Τέσσερα, πέντε, έξι.",
+   "en": "Four, five, six.",
+   "tr": "Dört, beş, altı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-exi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "έξι",
+  "pos": "number",
+  "en": "six",
+  "tr": "altı",
+  "topics": [
+   "stage:reading"
+  ],
+  "example": {
+   "el": "Πέντε, έξι, επτά.",
+   "en": "Five, six, seven.",
+   "tr": "Beş, altı, yedi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-epta",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "επτά",
+  "pos": "number",
+  "en": "seven (in everyday speech: εφτά)",
+  "tr": "yedi (günlük konuşmada: εφτά)",
+  "topics": [
+   "stage:reading"
+  ],
+  "example": {
+   "el": "Έξι, επτά, οκτώ.",
+   "en": "Six, seven, eight.",
+   "tr": "Altı, yedi, sekiz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-okto",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "οκτώ",
+  "pos": "number",
+  "en": "eight (in everyday speech: οχτώ)",
+  "tr": "sekiz (günlük konuşmada: οχτώ)",
+  "topics": [
+   "stage:reading"
+  ],
+  "example": {
+   "el": "Επτά, οκτώ, εννέα.",
+   "en": "Seven, eight, nine.",
+   "tr": "Yedi, sekiz, dokuz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-ennea",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εννέα",
+  "pos": "number",
+  "en": "nine (in everyday speech: εννιά)",
+  "tr": "dokuz (günlük konuşmada: εννιά)",
+  "topics": [
+   "stage:reading"
+  ],
+  "example": {
+   "el": "Οκτώ, εννέα, δέκα.",
+   "en": "Eight, nine, ten.",
+   "tr": "Sekiz, dokuz, on."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-deka",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "δέκα",
+  "pos": "number",
+  "en": "ten",
+  "tr": "on",
+  "topics": [
+   "stage:reading"
+  ],
+  "example": {
+   "el": "Εννέα, δέκα.",
+   "en": "Nine, ten.",
+   "tr": "Dokuz, on."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-q-order",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "What is the first thing Zeynep orders at the café?",
+   "tr": "Zeynep kafede ilk olarak ne sipariş ediyor?"
+  },
+  "prompt": {
+   "el": "Ένα …, παρακαλώ.",
+   "en": "A …, please.",
+   "tr": "Bir … lütfen."
+  },
+  "options": [
+   "τσάι",
+   "γιαούρτι",
+   "χαλβάς"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "She says «Ένα τσάι, παρακαλώ.» The yoghurt comes second; the halva she refuses.",
+   "tr": "«Ένα τσάι, παρακαλώ.» diyor. Yoğurt ikinci sipariş; helvayı reddediyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-q-no",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "The waiter offers halva. What does Zeynep answer?",
+   "tr": "Garson helva öneriyor. Zeynep ne cevap veriyor?"
+  },
+  "prompt": {
+   "el": "Νίκος: Και χαλβάς;",
+   "en": "Nikos: And halva?",
+   "tr": "Nikos: Bir de helva?"
+  },
+  "options": [
+   "Όχι, ευχαριστώ.",
+   "Ναι, παρακαλώ.",
+   "Γεια σου!"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "She declines politely: «Όχι, ευχαριστώ.»",
+   "tr": "Kibarca reddediyor: «Όχι, ευχαριστώ.»"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-try-v",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "Which word starts with the sound v, as in English very?",
+   "tr": "Hangi kelime v sesiyle başlıyor (Türkçe vazo gibi)?"
+  },
+  "prompt": {
+   "el": "βαλίτσα, μπαλκόνι, φλιτζάνι",
+   "en": "a suitcase, a balcony, a cup",
+   "tr": "bir bavul, bir balkon, bir fincan"
+  },
+  "options": [
+   "βαλίτσα",
+   "μπαλκόνι",
+   "φλιτζάνι"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "β looks like Latin B but is read v. μπ is b, and φ is f.",
+   "tr": "β Latin B'ye benzer ama v okunur. μπ b, φ f sesidir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-try-accent-vowel",
+  "type": "categorise",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε λέξη στη σωστή θέση.",
+   "en": "Put each word in the right place.",
+   "tr": "Her kelimeyi doğru yere koy."
+  },
+  "ask": {
+   "en": "Which vowel sound is under the accent mark?",
+   "tr": "Vurgu işaretinin altındaki ünlü hangi ses?"
+  },
+  "categories": [
+   "i",
+   "e",
+   "o"
+  ],
+  "items": [
+   "ήλιος",
+   "ύπνος",
+   "κέφι",
+   "καφές",
+   "όνομα",
+   "ώρα"
+  ],
+  "answer": [
+   0,
+   0,
+   1,
+   1,
+   2,
+   2
+  ],
+  "explain": {
+   "en": "ή and ύ are both i; έ is e; ό and ώ are both o. Different letters, the same sounds.",
+   "tr": "ή ve ύ ikisi de i; έ e; ό ve ώ ikisi de o. Harfler farklı, sesler aynı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-try-accent",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "The accent mark shows which syllable is louder. How is ντομάτα read?",
+   "tr": "Vurgu işareti hangi hecenin güçlü okunacağını gösterir. ντομάτα nasıl okunur?"
+  },
+  "prompt": {
+   "el": "ντομάτα",
+   "en": "a tomato",
+   "tr": "bir domates"
+  },
+  "options": [
+   "DO-ma-ta",
+   "do-MA-ta",
+   "do-ma-TA"
+  ],
+  "answer": 1,
+  "explain": {
+   "en": "The mark is on ά, in the middle syllable: do-MA-ta.",
+   "tr": "İşaret ά üzerinde, yani ortadaki hecede: do-MA-ta."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-try-tsai",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "How is τσάι read? Look at where the accent is.",
+   "tr": "τσάι nasıl okunur? Vurgu işaretinin yerine bak."
+  },
+  "prompt": {
+   "el": "τσάι",
+   "en": "tea",
+   "tr": "çay"
+  },
+  "options": [
+   "tsa-i",
+   "tse",
+   "tsi"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The accent sits on the α, the first letter of αι, so the pair splits: tsa-i, close to Turkish çay.",
+   "tr": "Vurgu αι ikilisinin ilk harfinde, α üzerinde; bu yüzden ikili bozulur: tsa-i, Türkçedeki çay sözüne yakın."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-try-pairs",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "Which word starts with the sound b, as in banana?",
+   "tr": "Hangi kelime b sesiyle başlıyor (banana gibi)?"
+  },
+  "prompt": {
+   "el": "μπανάνα, βαλίτσα, πέντε",
+   "en": "a banana, a suitcase, five",
+   "tr": "bir muz, bir bavul, beş"
+  },
+  "options": [
+   "μπανάνα",
+   "βαλίτσα",
+   "πέντε"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "At the start of a word μπ is b. β is v, and the ντ of πέντε is nd in the middle.",
+   "tr": "Kelime başında μπ b okunur. β v okunur; πέντε kelimesindeki ντ ise ortada olduğu için nd olur."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-p-match-tr",
+  "type": "match",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each Turkish word with the Greek word.",
+   "tr": "Her Türkçe kelimeyi Yunanca karşılığıyla eşleştir."
+  },
+  "ask": {
+   "en": "Read each Greek word aloud, slowly: Turkish uses the same word.",
+   "tr": "Her Yunanca kelimeyi yavaşça sesli oku: Türkçe de aynı kelimeyi kullanıyor."
+  },
+  "left": [
+   "köfte",
+   "tepsi",
+   "halı",
+   "domates",
+   "balkon",
+   "fincan"
+  ],
+  "right": [
+   "κεφτές",
+   "ταψί",
+   "χαλί",
+   "ντομάτα",
+   "μπαλκόνι",
+   "φλιτζάνι"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-p-match-num",
+  "type": "match",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each number with its Greek word.",
+   "tr": "Her sayıyı Yunanca kelimesiyle eşleştir."
+  },
+  "left": [
+   "3",
+   "5",
+   "6",
+   "10"
+  ],
+  "right": [
+   "τρία",
+   "πέντε",
+   "έξι",
+   "δέκα"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-p-seven",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "Which word means 7 (everyday form)?",
+   "tr": "Hangi kelime 7 demek (günlük biçim)?"
+  },
+  "prompt": {
+   "el": "επτά = …",
+   "en": "seven = …",
+   "tr": "yedi = …"
+  },
+  "options": [
+   "εφτά",
+   "οχτώ",
+   "εννιά"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "επτά is written εφτά in everyday life. οχτώ is 8 and εννιά is 9.",
+   "tr": "επτά günlük hayatta εφτά diye de yazılır. οχτώ 8, εννιά 9'dur."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-p-ou",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "How is ου read in γιαούρτι?",
+   "tr": "γιαούρτι kelimesinde ου nasıl okunur?"
+  },
+  "prompt": {
+   "el": "γιαούρτι",
+   "en": "yoghurt",
+   "tr": "yoğurt"
+  },
+  "options": [
+   "ya-UR-ti",
+   "ya-OR-ti",
+   "ya-o-UR-ti"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "ου is one sound, u: ya-UR-ti, like Turkish yoğurt.",
+   "tr": "ου tek ses, u: ya-UR-ti, Türkçe yoğurt gibi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-p-ef",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "How is ευ read in ευχαριστώ?",
+   "tr": "ευχαριστώ kelimesinde ευ nasıl okunur?"
+  },
+  "prompt": {
+   "el": "ευχαριστώ",
+   "en": "thank you",
+   "tr": "teşekkür ederim"
+  },
+  "options": [
+   "ef",
+   "ev",
+   "e-u"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Before χ (a voiceless sound) ευ is read ef: ef-ha-ri-STO.",
+   "tr": "Sessiz bir sesten (χ) önce ευ ef okunur: ef-ha-ri-STO."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-p-please",
+  "type": "mcq",
+  "skill": "speaking",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "You order tea and want to say please. Which word ends your sentence?",
+   "tr": "Çay sipariş ediyorsun ve lütfen demek istiyorsun. Cümleni hangi kelime bitirir?"
+  },
+  "prompt": {
+   "el": "Ένα τσάι, …",
+   "en": "A tea, …",
+   "tr": "Bir çay, …"
+  },
+  "options": [
+   "παρακαλώ",
+   "ναι",
+   "όχι"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "παρακαλώ is «please»: Ένα τσάι, παρακαλώ.",
+   "tr": "παρακαλώ «lütfen» demek: Ένα τσάι, παρακαλώ."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-p-ts",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "Which word starts with the sound ts, as in cats?",
+   "tr": "Hangi kelime ts sesiyle başlıyor (ç'ye yakın)?"
+  },
+  "prompt": {
+   "el": "τσάι, τζάμι, ζάχαρη",
+   "en": "tea, glass, sugar",
+   "tr": "çay, cam, şeker"
+  },
+  "options": [
+   "τσάι",
+   "τζάμι",
+   "ζάχαρη"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "τσάι begins with ts, τζάμι with dz (like Turkish c), ζάχαρη with z.",
+   "tr": "τσάι ts ile, τζάμι dz ile (Türkçe c'ye yakın), ζάχαρη z ile başlar."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch01-p-next",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "ask": {
+   "en": "Which number comes next?",
+   "tr": "Sırada hangi sayı var?"
+  },
+  "prompt": {
+   "el": "Ένα, δύο, τρία, …",
+   "en": "One, two, three, …",
+   "tr": "Bir, iki, üç, …"
+  },
+  "options": [
+   "τέσσερα",
+   "πέντε",
+   "δέκα"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "After τρία (3) comes τέσσερα (4).",
+   "tr": "τρία (3) sayısından sonra τέσσερα (4) gelir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-sonnet"
+  }
+ }
+]

@@ -614,6 +614,10 @@ This is the stable contract between app and agent. The coach writes only files (
   4. otherwise nowhere.
 
   Generic verb rules apply up to A2 only, so B1 forms wait for the B1 stage.
+- **Another curriculum's book supports this one.** A pack whose chapters are all written for a different curriculum (the open book, `content/open/open-book`, under a private book's curriculum, or the other way round) is not placed by the rules above:
+  - a vocab item whose word this curriculum's own packs already have is placed nowhere, so the learner never meets the same word on two cards;
+  - every other item is an *extra* (like a pool word): at the stage the curriculum's `follows` maps its `stage:` tag to (`"follows": {"open-a1-b1": {"shopping": "lesson-11"}}`), or else in its level pool. A mapping points each open stage at the earliest book lesson by which everything it uses is taught.
+  - Extras train the review schedule and are shown in "Choose practice", but never count towards a stage being done or appear in its check.
 - **Done:** a stage is done when 80% of its own words and verb forms are *learned* (answered right the last time), or when the learner passes its *check*. Pool words never count. A review stage counts the stages it reviews.
   - Done is recorded (`stage_checks`, migration 0005) and stays done. A later mistake brings the item back as a review, not the learner back a lesson.
   - The current stage is the first one not done.

@@ -1,0 +1,1169 @@
+[
+ {
+  "id": "ch06-ora",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η ώρα",
+  "lemma": "ώρα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "hour; time (of day)",
+  "tr": "saat; zaman (saat kaç)",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Η ώρα είναι δύο.",
+   "en": "It's two o'clock.",
+   "tr": "Saat iki."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-ti-ora",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τι ώρα είναι;",
+  "pos": "phrase",
+  "en": "what time is it?",
+  "tr": "saat kaç?",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Γεια σου! Τι ώρα είναι;",
+   "en": "Hi! What time is it?",
+   "tr": "Merhaba! Saat kaç?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-tetarto",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "και τέταρτο",
+  "pos": "phrase",
+  "en": "quarter past",
+  "tr": "çeyrek geçe (… ve çeyrek)",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Είναι τέσσερις και τέταρτο.",
+   "en": "It's a quarter past four.",
+   "tr": "Saat dördü çeyrek geçiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-misi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "και μισή",
+  "pos": "phrase",
+  "en": "half past",
+  "tr": "buçuk (… ve yarım)",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Είναι πέντε και μισή.",
+   "en": "It's half past five.",
+   "tr": "Saat beş buçuk."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-para",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "παρά",
+  "pos": "preposition",
+  "en": "to, minus (before the hour: παρά τέταρτο = quarter to)",
+  "tr": "-e var (saatte: εφτά παρά δέκα = yediye on var)",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Είναι εφτά παρά δέκα.",
+   "en": "It's ten to seven.",
+   "tr": "Saat yediye on var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-leoforeio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το λεωφορείο",
+  "lemma": "λεωφορείο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "bus",
+  "tr": "otobüs",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Το λεωφορείο έρχεται στις οχτώ.",
+   "en": "The bus comes at eight.",
+   "tr": "Otobüs saat sekizde geliyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-metro",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το μετρό",
+  "lemma": "μετρό",
+  "pos": "noun",
+  "gender": "n",
+  "en": "metro, underground",
+  "tr": "metro",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Πηγαίνω στο κέντρο με το μετρό.",
+   "en": "I go to the centre by metro.",
+   "tr": "Merkeze metroyla gidiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-taxi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το ταξί",
+  "lemma": "ταξί",
+  "pos": "noun",
+  "gender": "n",
+  "en": "taxi",
+  "tr": "taksi",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Το ταξί είναι εδώ.",
+   "en": "The taxi is here.",
+   "tr": "Taksi burada."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-treno",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το τρένο",
+  "lemma": "τρένο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "train",
+  "tr": "tren",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Το τρένο έρχεται στις τρεις.",
+   "en": "The train comes at three.",
+   "tr": "Tren saat üçte geliyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-stasi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η στάση",
+  "lemma": "στάση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "(bus) stop",
+  "tr": "durak",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Η στάση είναι εκεί.",
+   "en": "The stop is there.",
+   "tr": "Durak orada."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-eisitirio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το εισιτήριο",
+  "lemma": "εισιτήριο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "ticket",
+  "tr": "bilet",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Παίρνω ένα εισιτήριο, παρακαλώ.",
+   "en": "I'll take a ticket, please.",
+   "tr": "Bir bilet alıyorum, lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-stathmos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο σταθμός",
+  "lemma": "σταθμός",
+  "pos": "noun",
+  "gender": "m",
+  "en": "station",
+  "tr": "istasyon",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Ο σταθμός δεν είναι μακριά.",
+   "en": "The station is not far.",
+   "tr": "İstasyon uzak değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-dromos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο δρόμος",
+  "lemma": "δρόμος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "street, road",
+  "tr": "sokak, yol",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Δεν ξέρω τον δρόμο.",
+   "en": "I don't know the way.",
+   "tr": "Yolu bilmiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-plateia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η πλατεία",
+  "lemma": "πλατεία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "square (in a town)",
+  "tr": "meydan",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Στην πλατεία έχει ένα περίπτερο.",
+   "en": "There is a kiosk on the square.",
+   "tr": "Meydanda bir büfe var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-kentro",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το κέντρο",
+  "lemma": "κέντρο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "centre; city centre",
+  "tr": "merkez; şehir merkezi",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Μένω στο κέντρο.",
+   "en": "I live in the centre.",
+   "tr": "Merkezde oturuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-deksia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "δεξιά",
+  "pos": "adverb",
+  "en": "right; on the right",
+  "tr": "sağ; sağda, sağa",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Το φαρμακείο είναι δεξιά.",
+   "en": "The pharmacy is on the right.",
+   "tr": "Eczane sağda."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-aristera",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "αριστερά",
+  "pos": "adverb",
+  "en": "left; on the left",
+  "tr": "sol; solda, sola",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Η στάση είναι αριστερά.",
+   "en": "The stop is on the left.",
+   "tr": "Durak solda."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-eftheia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ευθεία",
+  "pos": "adverb",
+  "en": "straight on",
+  "tr": "düz; dümdüz",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Πηγαίνετε ευθεία και στρίψτε δεξιά.",
+   "en": "Go straight on and turn right.",
+   "tr": "Dümdüz gidin ve sağa dönün."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-konta",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "κοντά",
+  "pos": "adverb",
+  "en": "near, close",
+  "tr": "yakın",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Το σπίτι είναι κοντά.",
+   "en": "The house is near.",
+   "tr": "Ev yakın."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-makria",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "μακριά",
+  "pos": "adverb",
+  "en": "far",
+  "tr": "uzak",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Ο σταθμός δεν είναι μακριά.",
+   "en": "The station is not far.",
+   "tr": "İstasyon uzak değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-simera",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "σήμερα",
+  "pos": "adverb",
+  "en": "today",
+  "tr": "bugün",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Σήμερα δουλεύω στο φαρμακείο.",
+   "en": "Today I work at the pharmacy.",
+   "tr": "Bugün eczanede çalışıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-avrio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "αύριο",
+  "pos": "adverb",
+  "en": "tomorrow",
+  "tr": "yarın",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Αύριο μένω στο σπίτι.",
+   "en": "Tomorrow I stay at home.",
+   "tr": "Yarın evde kalıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-apogevma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το απόγευμα",
+  "lemma": "απόγευμα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "the afternoon (after noon, until about early evening)",
+  "tr": "öğleden sonra (akşama kadar)",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Έχω μάθημα το απόγευμα.",
+   "en": "I have a lesson in the afternoon.",
+   "tr": "Öğleden sonra dersim var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-me-podia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "με τα πόδια",
+  "pos": "phrase",
+  "en": "on foot",
+  "tr": "yayan, yürüyerek",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "example": {
+   "el": "Πηγαίνω στο φαρμακείο με τα πόδια.",
+   "en": "I go to the pharmacy on foot.",
+   "tr": "Eczaneye yürüyerek gidiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  }
+ },
+ {
+  "id": "ch06-q-paulos",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "explain": {
+   "en": "Marko says «Ο κύριος Παύλος έρχεται στις εφτά και τέταρτο.» The lesson is at seven and it is now ten past seven.",
+   "tr": "Marko «Ο κύριος Παύλος έρχεται στις εφτά και τέταρτο.» diyor. Ders saat yedide, şimdi de yedi on."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  },
+  "prompt": {
+   "el": "Τι ώρα έρχεται ο κύριος Παύλος;",
+   "en": "What time does Mr Pavlos come?",
+   "tr": "Pavlos Bey saat kaçta geliyor?"
+  },
+  "options": [
+   "Στις εφτά.",
+   "Στις εφτά και δέκα.",
+   "Στις εφτά και τέταρτο."
+  ],
+  "answer": 2
+ },
+ {
+  "id": "ch06-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "explain": {
+   "en": "The woman says «Το είκοσι πέντε». The man says the pharmacy is five minutes on foot, not ten. Zeynep gets her ticket at the kiosk («Στο περίπτερο, εκεί»).",
+   "tr": "Kadın «Το είκοσι πέντε» diyor. Adam eczanenin yürüyerek beş dakika olduğunu söylüyor, on değil. Zeynep biletini büfeden alıyor («Στο περίπτερο, εκεί»)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  },
+  "statements": [
+   {
+    "el": "Το είκοσι πέντε πάει στον Λευκό Πύργο.",
+    "en": "Bus 25 goes to the White Tower.",
+    "tr": "Yirmi beş numara Beyaz Kule'ye gidiyor.",
+    "answer": true
+   },
+   {
+    "el": "Το φαρμακείο είναι δέκα λεπτά με τα πόδια.",
+    "en": "The pharmacy is ten minutes on foot.",
+    "tr": "Eczane yürüyerek on dakika.",
+    "answer": false
+   },
+   {
+    "el": "Η Ζεϊνέπ παίρνει εισιτήριο στο περίπτερο.",
+    "en": "Zeynep gets a ticket at the kiosk.",
+    "tr": "Zeynep bileti büfeden alıyor.",
+    "answer": true
+   }
+  ]
+ },
+ {
+  "id": "ch06-try-time",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "explain": {
+   "en": "παρά τέταρτο means a quarter to the next hour: εφτά παρά τέταρτο = 6:45.",
+   "tr": "παρά τέταρτο, bir sonraki saate çeyrek var demek: εφτά παρά τέταρτο = 6:45."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  },
+  "ask": {
+   "en": "Someone tells you the time. Which time is it?",
+   "tr": "Biri sana saati söylüyor. Saat kaç?"
+  },
+  "prompt": {
+   "el": "Είναι εφτά παρά τέταρτο.",
+   "en": "It's a quarter to seven.",
+   "tr": "Saat yediye çeyrek var."
+  },
+  "options": [
+   "6:45",
+   "7:15",
+   "7:45"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "ch06-try-stis",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "ώρες is feminine plural, so σε + τις = στις: στις δύο.",
+   "tr": "ώρες dişil çoğul; σε + τις = στις: στις δύο."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "preposition.se-article"
+  ],
+  "text": "Το μάθημα είναι {1} δύο.",
+  "answer": {
+   "1": [
+    "στις"
+   ]
+  },
+  "options": {
+   "1": [
+    "στις",
+    "στη",
+    "στο"
+   ]
+  },
+  "translation": {
+   "en": "The lesson is at two.",
+   "tr": "Ders saat ikide."
+  }
+ },
+ {
+  "id": "ch06-try-stimia",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "One o'clock is singular (η ώρα): σε + την = στη before μία (the -ν drops before μ). στη μία.",
+   "tr": "Saat bir tekil (η ώρα): σε + την = στη; μ'den önce -ν düşer. στη μία."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "preposition.se-article"
+  ],
+  "text": "Η Σοφία έρχεται {1} μία.",
+  "answer": {
+   "1": [
+    "στη"
+   ]
+  },
+  "options": {
+   "1": [
+    "στη",
+    "στις",
+    "στο"
+   ]
+  },
+  "translation": {
+   "en": "Sofia comes at one.",
+   "tr": "Sofia saat birde geliyor."
+  }
+ },
+ {
+  "id": "ch06-try-sto",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "Θεσσαλονίκη is feminine: σε + τη = στη (the -ν drops before Θ). κέντρο is neuter: στο κέντρο, both for where you are and where you go.",
+   "tr": "Θεσσαλονίκη dişil: σε + τη = στη (Θ'den önce -ν düşer). κέντρο nötr: στο κέντρο; hem bulunduğun yer hem gittiğin yer için."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "preposition.se-article"
+  ],
+  "text": "Η Ζεϊνέπ μένει {1} Θεσσαλονίκη και πηγαίνει {2} κέντρο με το λεωφορείο.",
+  "answer": {
+   "1": [
+    "στη"
+   ],
+   "2": [
+    "στο"
+   ]
+  },
+  "options": {
+   "1": [
+    "στη",
+    "στο",
+    "στον"
+   ],
+   "2": [
+    "στο",
+    "στη",
+    "στον"
+   ]
+  },
+  "translation": {
+   "en": "Zeynep lives in Thessaloniki and goes to the centre by bus.",
+   "tr": "Zeynep Selanik'te oturuyor ve merkeze otobüsle gidiyor."
+  }
+ },
+ {
+  "id": "ch06-try-me",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "How you travel: με + article, written as two words: με το ταξί.",
+   "tr": "Nasıl gittiğini με + artikel ile söylersin, iki ayrı sözcük: με το ταξί."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "preposition.me"
+  ],
+  "text": "Ο Μάρκο πηγαίνει στον σταθμό {1} το ταξί.",
+  "answer": {
+   "1": [
+    "με"
+   ]
+  },
+  "options": {
+   "1": [
+    "με",
+    "σε",
+    "από"
+   ]
+  },
+  "translation": {
+   "en": "Marko goes to the station by taxi.",
+   "tr": "Marko istasyona taksiyle gidiyor."
+  }
+ },
+ {
+  "id": "ch06-p-stin",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "Αθήνα begins with a vowel, so την keeps its -ν: σε + την = στην Αθήνα.",
+   "tr": "Αθήνα ünlüyle başlıyor, bu yüzden την -ν'sini korur: σε + την = στην Αθήνα."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "preposition.se-article"
+  ],
+  "text": "Η Ελένη δουλεύει {1} Αθήνα.",
+  "answer": {
+   "1": [
+    "στην"
+   ]
+  },
+  "options": {
+   "1": [
+    "στην",
+    "στη",
+    "στο"
+   ]
+  },
+  "translation": {
+   "en": "Eleni works in Athens.",
+   "tr": "Eleni Atina'da çalışıyor."
+  }
+ },
+ {
+  "id": "ch06-p-para",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "7:45 is a quarter before eight: οχτώ παρά τέταρτο. «οχτώ και τέταρτο» would be 8:15.",
+   "tr": "7:45, sekize çeyrek var demek: οχτώ παρά τέταρτο. «οχτώ και τέταρτο» 8:15 olurdu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  },
+  "ask": {
+   "en": "The clock shows 7:45.",
+   "tr": "Saat 7:45'i gösteriyor."
+  },
+  "grammar": [
+   "time.para"
+  ],
+  "text": "Είναι οχτώ {1} τέταρτο.",
+  "answer": {
+   "1": [
+    "παρά"
+   ]
+  },
+  "options": {
+   "1": [
+    "παρά",
+    "και",
+    "στις"
+   ]
+  },
+  "translation": {
+   "en": "It's a quarter to eight.",
+   "tr": "Saat sekize çeyrek var."
+  }
+ },
+ {
+  "id": "ch06-p-cat",
+  "type": "categorise",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Πότε; Βάζω κάθε ώρα στη σωστή ομάδα.",
+   "en": "When? Put each time in the right group.",
+   "tr": "Ne zaman? Her saati doğru gruba koy."
+  },
+  "explain": {
+   "en": "Until about noon is το πρωί; the afternoon runs to the early evening (16:00, 17:30); late evening (21:00, 22:30) is το βράδυ.",
+   "tr": "Öğleye kadar το πρωί; öğleden sonra akşam başlayana kadar (16:00, 17:30) το απόγευμα; geç akşam (21:00, 22:30) το βράδυ."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  },
+  "categories": [
+   "το πρωί",
+   "το απόγευμα",
+   "το βράδυ"
+  ],
+  "items": [
+   "8:00",
+   "10:30",
+   "16:00",
+   "17:30",
+   "21:00",
+   "22:30"
+  ],
+  "answer": [
+   0,
+   0,
+   1,
+   1,
+   2,
+   2
+  ]
+ },
+ {
+  "id": "ch06-p-msg",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "explain": {
+   "en": "«στις εννιά παρά τέταρτο» is 8:45, a quarter before nine.",
+   "tr": "«στις εννιά παρά τέταρτο» 8:45'tir, dokuza çeyrek var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  },
+  "stimulus": {
+   "text": "Γεια σου, Ζεϊνέπ! Το πρωί δουλεύω στην πλατεία. Έρχομαι στο φαρμακείο στις εννιά παρά τέταρτο. Σοφία"
+  },
+  "prompt": {
+   "el": "Τι ώρα έρχεται η Σοφία στο φαρμακείο;",
+   "en": "What time does Sofia come to the pharmacy?",
+   "tr": "Sofia eczaneye saat kaçta geliyor?"
+  },
+  "options": [
+   "8:45",
+   "9:15",
+   "9:45"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "ch06-p-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "explain": {
+   "en": "Sofia is at the station («Είμαι στον σταθμό»), she comes by taxi, not by bus, at a quarter past six.",
+   "tr": "Sofia istasyonda («Είμαι στον σταθμό»), otobüsle değil taksiyle geliyor, saat altıyı çeyrek geçe."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  },
+  "stimulus": {
+   "text": "Γεια σου, Ζεϊνέπ! Είμαι στον σταθμό. Έρχομαι στο σπίτι με το ταξί, στις έξι και τέταρτο. Σοφία"
+  },
+  "statements": [
+   {
+    "el": "Η Σοφία είναι στον σταθμό.",
+    "en": "Sofia is at the station.",
+    "tr": "Sofia istasyonda.",
+    "answer": true
+   },
+   {
+    "el": "Η Σοφία έρχεται στο σπίτι με το λεωφορείο.",
+    "en": "Sofia comes home by bus.",
+    "tr": "Sofia eve otobüsle geliyor.",
+    "answer": false
+   },
+   {
+    "el": "Η Σοφία έρχεται στις έξι και τέταρτο.",
+    "en": "Sofia comes at a quarter past six.",
+    "tr": "Sofia altıyı çeyrek geçe geliyor.",
+    "answer": true
+   }
+  ]
+ },
+ {
+  "id": "ch06-p-match",
+  "type": "match",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each sentence with the time.",
+   "tr": "Her cümleyi saatiyle eşleştir."
+  },
+  "explain": {
+   "en": "μία = 1:00, και μισή = half past, παρά τέταρτο = a quarter to, και δέκα = ten past.",
+   "tr": "μία = 1:00, και μισή = buçuk, παρά τέταρτο = çeyrek var, και δέκα = on geçiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  },
+  "left": [
+   "Είναι μία.",
+   "Είναι τρεις και μισή.",
+   "Είναι τέσσερις παρά τέταρτο.",
+   "Είναι πέντε και δέκα."
+  ],
+  "right": [
+   "3:45",
+   "1:00",
+   "5:10",
+   "3:30"
+  ],
+  "answer": [
+   1,
+   3,
+   0,
+   2
+  ]
+ },
+ {
+  "id": "ch06-p-way",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "explain": {
+   "en": "αριστερά = left. The arrow ← points left.",
+   "tr": "αριστερά = sol. ← oku sola gösterir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-sonnet"
+  },
+  "ask": {
+   "en": "A man tells you the way. Which way do you turn?",
+   "tr": "Bir adam sana yolu tarif ediyor. Hangi yöne dönüyorsun?"
+  },
+  "prompt": {
+   "el": "Στρίψτε αριστερά.",
+   "en": "Turn left.",
+   "tr": "Sola dönün."
+  },
+  "options": [
+   "←",
+   "→",
+   "↑"
+  ],
+  "answer": 0
+ }
+]

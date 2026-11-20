@@ -1,5 +1,9 @@
+import shutil
+
 import pytest
 from fastapi.testclient import TestClient
+
+OPEN_BOOK = "open-book"
 
 
 @pytest.fixture(autouse=True)
@@ -11,23 +15,52 @@ def _real_clock():
     db.set_clock(None)
 
 
+@pytest.fixture(scope="session")
+def _open_without_book(tmp_path_factory):
+    """The tracked open packs without the open course's book (one read-only copy per test run)."""
+    from greek_coach import paths
+
+    root = tmp_path_factory.mktemp("content") / "open"
+    root.mkdir()
+    for pack in (paths.CONTENT_DIR / "open").iterdir():
+        if pack.is_dir() and pack.name != OPEN_BOOK:
+            shutil.copytree(pack, root / pack.name)
+    return root
+
+
+def _roots(monkeypatch, open_root, tmp_path, learner_dir):
+    from greek_coach import paths
+
+    monkeypatch.setattr(paths, "content_roots", lambda: [
+        ("open", open_root),
+        ("private", tmp_path / "private"),
+        ("generated", learner_dir / "generated"),
+    ])
+
+
 @pytest.fixture
-def learner(tmp_path, monkeypatch):
+def learner(tmp_path, monkeypatch, _open_without_book):
     """A throwaway learner folder, so tests never touch the real learner/.
 
     Content comes from the tracked open packs only: a private pack on the developer's machine
-    (content/private/) must never change what the tests see.
+    (content/private/) must never change what the tests see. The open course's book
+    (content/open/open-book) is left out too: its chapters gate every stage (read first, then
+    practise), and the session and scheduler tests are about the engine, not about that text.
+    Tests of the book itself use the `open_book` fixture.
     """
-    from greek_coach import paths
-
     path = tmp_path / "learner"
     monkeypatch.setenv("GREEK_COACH_LEARNER_DIR", str(path))
-    monkeypatch.setattr(paths, "content_roots", lambda: [
-        ("open", paths.CONTENT_DIR / "open"),
-        ("private", tmp_path / "private"),
-        ("generated", path / "generated"),
-    ])
+    _roots(monkeypatch, _open_without_book, tmp_path, path)
     return path
+
+
+@pytest.fixture
+def open_book(learner, tmp_path, monkeypatch):
+    """The learner folder with all the tracked open packs, the open book included."""
+    from greek_coach import paths
+
+    _roots(monkeypatch, paths.CONTENT_DIR / "open", tmp_path, learner)
+    return learner
 
 
 @pytest.fixture
@@ -40,6 +73,14 @@ def client(learner):
 
 @pytest.fixture
 def catalog(learner):
+    from greek_coach import packs
+
+    return packs.load_all()
+
+
+@pytest.fixture
+def full_catalog(open_book):
+    """Every tracked open pack, the open book included: what a fresh clone loads."""
     from greek_coach import packs
 
     return packs.load_all()

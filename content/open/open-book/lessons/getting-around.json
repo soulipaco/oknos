@@ -1,0 +1,546 @@
+{
+  "id": "open-a1-b1.getting-around",
+  "curriculum": "open-a1-b1",
+  "stage": "getting-around",
+  "level": "A1",
+  "title": {
+    "tr": "Şehirde yol bulmak: saat, durak, yön",
+    "en": "Getting around: the time, the stop, the way"
+  },
+  "minutes": 12,
+  "version": 1,
+  "sections": [
+    {
+      "kind": "intro",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümde **saati sormayı ve söylemeyi**, **bir şeyin ne zaman olduğunu**, **yol sormayı** ve **nereye nasıl gittiğini** (*στο κέντρο, με το λεωφορείο*) öğreneceksin.\n\nİki yeni şey var: **saat söyleme** (*Είναι δύο και μισή*) ve **σε + artikel** (*στο, στη, στον*). İkincisini aslında ilk bölümden beri *στο πάτωμα* kalıbında duyuyorsun.",
+          "en": "In this chapter you learn to **ask and tell the time**, to say **when** something happens, to **ask the way** and to say **where you go and how**.\n\nTwo new things: **telling the time** (*Είναι δύο και μισή*) and **σε + article** (*στο, στη, στον*), which you have heard since *στο πάτωμα*."
+        }
+      ]
+    },
+    {
+      "kind": "warmup",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Sabah işe ya da okula nasıl gidersin: yürüyerek mi, otobüsle mi? Saat kaçta çıkarsın? Zeynep'in ilk iş gününe bak.",
+          "en": "How do you get to work or school: on foot, by bus? What time do you leave? Here is Zeynep's first working day."
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Önce dinle, sonra oku. Zeynep sabah durakta, sonra Beyaz Kule'nin yanında, akşam da kursta.",
+          "en": "Listen first, then read. Zeynep is at the bus stop in the morning, near the White Tower later, and in class in the evening."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Durakta. Zeynep bir kadına soruyor.",
+            "en": "At the bus stop. Zeynep asks a woman."
+          },
+          "lines": [
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Συγγνώμη, κυρία. Ποιο λεωφορείο πάει στο κέντρο, στον Λευκό Πύργο;",
+              "tr": "Pardon hanımefendi. Hangi otobüs merkeze, Beyaz Kule'ye gidiyor?",
+              "en": "Excuse me, madam. Which bus goes to the centre, to the White Tower?"
+            },
+            {
+              "who": "Κυρία",
+              "el": "Το είκοσι πέντε.",
+              "tr": "Yirmi beş.",
+              "en": "The twenty-five."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Και τι ώρα έρχεται;",
+              "tr": "Peki saat kaçta geliyor?",
+              "en": "And what time does it come?"
+            },
+            {
+              "who": "Κυρία",
+              "el": "Στις οχτώ και δέκα.",
+              "tr": "Sekizi on geçe.",
+              "en": "At ten past eight."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Τι ώρα είναι τώρα;",
+              "tr": "Şimdi saat kaç?",
+              "en": "What time is it now?"
+            },
+            {
+              "who": "Κυρία",
+              "el": "Είναι οχτώ παρά τέταρτο.",
+              "tr": "Sekize çeyrek var.",
+              "en": "It's a quarter to eight."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Πού παίρνω εισιτήριο;",
+              "tr": "Bileti nereden alıyorum?",
+              "en": "Where do I get a ticket?"
+            },
+            {
+              "who": "Κυρία",
+              "el": "Στο περίπτερο, εκεί.",
+              "tr": "Büfeden, şurada.",
+              "en": "At the kiosk, over there."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ευχαριστώ πολύ!",
+              "tr": "Çok teşekkürler!",
+              "en": "Thank you very much!"
+            },
+            {
+              "who": "Κυρία",
+              "el": "Παρακαλώ.",
+              "tr": "Rica ederim.",
+              "en": "You're welcome."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "[[Συγγνώμη]] \"pardon\" (dikkat çekmek için). [[Ποιο]] \"hangi\". [[πάει]] \"gidiyor\": *πηγαίνει* sözünün günlük, kısa biçimi. [[ο Λευκός Πύργος]] \"Beyaz Kule\", Selanik'in sahildeki simgesi. [[Το είκοσι πέντε]]: 25 numaralı otobüs. [[Τι ώρα έρχεται;]] \"saat kaçta geliyor?\"",
+          "en": "[[Συγγνώμη]] \"excuse me\" (to get attention). [[Ποιο]] \"which\". [[πάει]] \"goes\": the short, everyday form of *πηγαίνει*. [[ο Λευκός Πύργος]] is the White Tower, Thessaloniki's landmark on the waterfront. [[Το είκοσι πέντε]]: bus number 25. [[Τι ώρα έρχεται;]] \"what time does it come?\""
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Beyaz Kule'nin yanında. Zeynep eczaneyi arıyor.",
+            "en": "Near the White Tower. Zeynep is looking for the pharmacy."
+          },
+          "lines": [
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Συγγνώμη, κύριε. Πού είναι το φαρμακείο;",
+              "tr": "Pardon beyefendi. Eczane nerede?",
+              "en": "Excuse me, sir. Where is the pharmacy?"
+            },
+            {
+              "who": "Κύριος",
+              "el": "Το φαρμακείο; Είναι κοντά στον Λευκό Πύργο. Συνεχίστε ευθεία.",
+              "tr": "Eczane mi? Beyaz Kule'ye yakın. Dümdüz devam edin.",
+              "en": "The pharmacy? It's near the White Tower. Keep going straight."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Είναι μακριά;",
+              "tr": "Uzak mı?",
+              "en": "Is it far?"
+            },
+            {
+              "who": "Κύριος",
+              "el": "Όχι, είναι πέντε λεπτά με τα πόδια. Στην πλατεία στρίψτε δεξιά.",
+              "tr": "Hayır, yürüyerek beş dakika. Meydanda sağa dönün.",
+              "en": "No, it's five minutes on foot. At the square, turn right."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Δεξιά, όχι αριστερά;",
+              "tr": "Sağa, sola değil mi?",
+              "en": "Right, not left?"
+            },
+            {
+              "who": "Κύριος",
+              "el": "Ναι, δεξιά. Και το φαρμακείο είναι αριστερά.",
+              "tr": "Evet, sağa. Eczane de solda.",
+              "en": "Yes, right. And the pharmacy is on the left."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ευχαριστώ πολύ, κύριε!",
+              "tr": "Çok teşekkürler beyefendi!",
+              "en": "Thank you very much, sir!"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "[[κύριε]] \"beyefendi\" (birine seslenirken). [[Συνεχίστε ευθεία.]] \"Dümdüz devam edin.\" [[Στρίψτε δεξιά.]] \"Sağa dönün.\" Bunlar şimdilik hazır kalıplar: yol tarifinde hep duyacaksın, kuralı öğrenmene gerek yok. [[λεπτά]] \"dakika\" (*το λεπτό* \"dakika\", fiyatta \"sent\").",
+          "en": "[[κύριε]] \"sir\" (when you speak to a man). [[Συνεχίστε ευθεία.]] \"Keep going straight.\" [[Στρίψτε δεξιά.]] \"Turn right.\" These are set phrases for now: you will hear them in every set of directions, and you do not need the rule yet. [[λεπτά]] \"minutes\" (*το λεπτό* is a minute, and in prices a cent)."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Akşam, kursun önünde. Zeynep sınıf arkadaşı Marko'yla karşılaşıyor.",
+            "en": "In the evening, outside class. Zeynep meets her classmate Marko."
+          },
+          "lines": [
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Γεια σου, Μάρκο! Τι ώρα είναι;",
+              "tr": "Merhaba Marko! Saat kaç?",
+              "en": "Hi, Marko! What time is it?"
+            },
+            {
+              "who": "Μάρκο",
+              "el": "Είναι εφτά και δέκα.",
+              "tr": "Yediyi on geçiyor.",
+              "en": "It's ten past seven."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ωχ! Το μάθημα είναι στις εφτά.",
+              "tr": "Ay! Ders saat yedide.",
+              "en": "Oh no! The lesson is at seven."
+            },
+            {
+              "who": "Μάρκο",
+              "el": "Δεν πειράζει. Ο κύριος Παύλος έρχεται στις εφτά και τέταρτο.",
+              "tr": "Önemli değil. Pavlos Bey yediyi çeyrek geçe geliyor.",
+              "en": "Never mind. Mr Pavlos comes at a quarter past seven."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ευτυχώς! Σήμερα δουλεύω το πρωί και το απόγευμα, και το βράδυ έχω μάθημα.",
+              "tr": "Neyse ki! Bugün sabah ve öğleden sonra çalışıyorum, akşam da dersim var.",
+              "en": "Thank goodness! Today I work in the morning and in the afternoon, and in the evening I have a lesson."
+            },
+            {
+              "who": "Μάρκο",
+              "el": "Και αύριο;",
+              "tr": "Ya yarın?",
+              "en": "And tomorrow?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Αύριο μένω στο σπίτι.",
+              "tr": "Yarın evde kalıyorum.",
+              "en": "Tomorrow I stay at home."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "[[Ωχ]] \"ay, eyvah\". [[Δεν πειράζει.]] \"Önemli değil.\" [[Ευτυχώς]] \"neyse ki\".",
+          "en": "[[Ωχ]] \"oh no\". [[Δεν πειράζει.]] \"Never mind.\" [[Ευτυχώς]] \"luckily, thank goodness\"."
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Metne göre iki soru.",
+          "en": "Two questions on the text."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch06-q-paulos",
+            "open-book/ch06-q-tf"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Saat söylemek",
+        "en": "Telling the time"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "**Soru:** *Τι ώρα είναι;* Cevap her zaman *Είναι* ile başlar: *Είναι δύο.* *ώρα* dişil olduğu için 1, 3 ve 4 dişil biçimini alır: **μία, τρεις, τέσσερις**. Diğer sayılar değişmez.\n\n**Dakika:** tam saatten sonra **και** + sayı: *έξι και δέκα*, *έξι και τέταρτο* (çeyrek), *έξι και μισή* (buçuk; *μισή* de dişil). Yarım saati geçince bir sonraki saate bakıp **παρά** (\"eksi\") dersin: *εφτά παρά τέταρτο* (6:45), *εφτά παρά είκοσι* (6:40).\n\n**Ne zaman?** Saat için **στις** + sayı: *στις δύο*. Tek istisna bir: **στη μία**, çünkü *ώρα* tekildir (*σε + την*), diğer saatler ise çoğul gibi gelir (*σε + τις*).\n\nKonuşmada 12 saatlik düzen kullanılır, gerekirse gün dilimi eklenir: **το πρωί** (öğleye kadar), **το απόγευμα** (öğleden sonra), **το βράδυ** (akşam, gece). *Στις έξι το απόγευμα* 18:00'dir; 15:00 *τρεις το απόγευμα* diye söylenir.\n\nShopping bölümündeki kalıp da buydu: [[από τις οχτώ ως τις εννιά]] \"sekizden dokuza kadar\".",
+          "en": "**The question:** *Τι ώρα είναι;* The answer starts with *Είναι*: *Είναι δύο.* *ώρα* is feminine, so 1, 3 and 4 take their feminine forms: **μία, τρεις, τέσσερις**.\n\n**Minutes:** after the hour, **και** + number: *έξι και δέκα*, *έξι και τέταρτο* (quarter past), *έξι και μισή* (half past). After the half hour, count to the next hour with **παρά** (\"to\"): *εφτά παρά τέταρτο* (6:45).\n\n**When?** **στις** + number: *στις δύο*. The one exception: **στη μία**, because one hour is singular (*σε + την*), the others plural (*σε + τις*).\n\nGreeks speak in the 12-hour clock, adding **το πρωί**, **το απόγευμα** or **το βράδυ** when needed: 15:00 is *τρεις το απόγευμα*. That is also the shopping chapter's [[από τις οχτώ ως τις εννιά]]."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Saat nasıl söylenir",
+            "en": "Telling the time"
+          },
+          "head": [
+            {
+              "tr": "saat",
+              "en": "time"
+            },
+            "Τι ώρα είναι;",
+            {
+              "tr": "Πότε?",
+              "en": "When?"
+            }
+          ],
+          "rows": [
+            [
+              "1:00",
+              "Είναι μία.",
+              "στη μία"
+            ],
+            [
+              "2:00",
+              "Είναι δύο.",
+              "στις δύο"
+            ],
+            [
+              "3:00",
+              "Είναι τρεις.",
+              "στις τρεις"
+            ],
+            [
+              "6:00",
+              "Είναι έξι.",
+              "στις έξι"
+            ],
+            [
+              "6:10",
+              "Είναι έξι και δέκα.",
+              "στις έξι και δέκα"
+            ],
+            [
+              "6:15",
+              "Είναι έξι και τέταρτο.",
+              "στις έξι και τέταρτο"
+            ],
+            [
+              "6:30",
+              "Είναι έξι και μισή.",
+              "στις έξι και μισή"
+            ],
+            [
+              "6:40",
+              "Είναι εφτά παρά είκοσι.",
+              "στις εφτά παρά είκοσι"
+            ],
+            [
+              "6:45",
+              "Είναι εφτά παρά τέταρτο.",
+              "στις εφτά παρά τέταρτο"
+            ]
+          ],
+          "note": {
+            "tr": "*μία*, *τρεις*, *τέσσερις*: *ώρα* dişil olduğu için. *δύο*, *πέντε*, *έξι* … değişmez.",
+            "en": "*μία*, *τρεις*, *τέσσερις* agree with *ώρα*, which is feminine. *δύο*, *πέντε*, *έξι* … do not change."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Τι ώρα είναι; – Είναι τρεις και μισή.",
+              "tr": "Saat kaç? – Üç buçuk.",
+              "en": "What time is it? – Half past three."
+            },
+            {
+              "el": "Το μάθημα είναι στις εφτά το βράδυ.",
+              "tr": "Ders akşam yedide.",
+              "en": "The lesson is at seven in the evening."
+            },
+            {
+              "el": "Η Σοφία έρχεται στη μία.",
+              "tr": "Sofia saat birde geliyor.",
+              "en": "Sofia comes at one."
+            },
+            {
+              "el": "Είναι τρεις το απόγευμα.",
+              "tr": "Öğleden sonra saat üç.",
+              "en": "It's three in the afternoon. (15:00)"
+            },
+            {
+              "el": "Δουλεύω από τις εννιά ως τις πέντε.",
+              "tr": "Dokuzdan beşe kadar çalışıyorum.",
+              "en": "I work from nine to five."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "σε + artikel, με + artikel",
+        "en": "σε + article, με + article"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "**σε** (\"-de, -e\") artikelle birleşir: **σε + τον = στον**, **σε + τη(ν) = στη(ν)**, **σε + το = στο**, **σε + τους = στους**, **σε + τις = στις**, **σε + τα = στα**. İlk bölümden beri duyduğun *στο πάτωμα* da buydu.\n\n**Türkçede -de ve -e ayrıdır, Yunancada ikisi de σε:** *Είμαι στο κέντρο* \"merkezdeyim\", *Πηγαίνω στο κέντρο* \"merkeze gidiyorum\". Ayrımı fiil yapar.\n\n**Sondaki -ν:** *στον* hep -ν ile yazılır. *στην*, shopping bölümündeki *την* gibidir: ünlüden ve **κ π τ ξ ψ μπ ντ γκ τσ τζ** harflerinden önce -ν kalır, öteki ünsüzlerden önce düşer: *στην Αθήνα*, *στην Καλαμαριά*, *στην πλατεία*, ama *στη Θεσσαλονίκη*, *στη Σμύρνη*, *στη στάση*.\n\n**Nasıl?** Araç için **με** + artikel: *με το λεωφορείο*, *με το μετρό*, *με το ταξί*, *με το τρένο*. Türkçede \"-le\" eki, Yunancada ayrı bir söz ve artikel. Yürümek için: *με τα πόδια* (kelimesi kelimesine \"ayaklarla\"). *με* kişilerle de \"ile\" demektir: *με τον Μάρκο*.",
+          "en": "**σε** (\"in, at, to\") joins the article: **στον, στη(ν), στο, στους, στις, στα**. That is the *στο πάτωμα* you have heard since the first chapters.\n\n**Greek does not separate \"at\" and \"to\":** *Είμαι στο κέντρο* \"I'm in the centre\", *Πηγαίνω στο κέντρο* \"I'm going to the centre\". The verb tells you which.\n\n**The final -ν:** *στον* always keeps it; *στην* keeps it before a vowel and **κ π τ ξ ψ μπ ντ γκ τσ τζ**, and drops it otherwise: *στην Αθήνα*, *στην πλατεία*, but *στη Θεσσαλονίκη*, *στη στάση*.\n\n**How?** **με** + article: *με το λεωφορείο*, *με το μετρό*, *με το ταξί* (\"by bus\" is \"with the bus\"). On foot: *με τα πόδια*. With a person: *με τον Μάρκο*."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "σε + artikel",
+            "en": "σε + article"
+          },
+          "head": [
+            {
+              "tr": "artikel",
+              "en": "article"
+            },
+            {
+              "tr": "σε + artikel",
+              "en": "σε + article"
+            },
+            {
+              "tr": "örnek",
+              "en": "example"
+            }
+          ],
+          "rows": [
+            [
+              "ο",
+              "στον",
+              "στον σταθμό"
+            ],
+            [
+              "η",
+              "στη(ν)",
+              "στην Αθήνα, στη στάση"
+            ],
+            [
+              "το",
+              "στο",
+              "στο κέντρο"
+            ],
+            [
+              {
+                "tr": "οι (eril çoğul)",
+                "en": "οι (masculine plural)"
+              },
+              "στους",
+              "στους σταθμούς"
+            ],
+            [
+              {
+                "tr": "οι (dişil çoğul)",
+                "en": "οι (feminine plural)"
+              },
+              "στις",
+              "στις στάσεις"
+            ],
+            [
+              "τα",
+              "στα",
+              "στα ελληνικά"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Είμαι στο κέντρο.",
+              "tr": "Merkezdeyim.",
+              "en": "I'm in the centre."
+            },
+            {
+              "el": "Πηγαίνω στο κέντρο.",
+              "tr": "Merkeze gidiyorum.",
+              "en": "I'm going to the centre."
+            },
+            {
+              "el": "Η Ζεϊνέπ μένει στη Θεσσαλονίκη.",
+              "tr": "Zeynep Selanik'te oturuyor.",
+              "en": "Zeynep lives in Thessaloniki."
+            },
+            {
+              "el": "Η Σοφία πηγαίνει στη δουλειά με τα πόδια.",
+              "tr": "Sofia işe yürüyerek gidiyor.",
+              "en": "Sofia walks to work."
+            },
+            {
+              "el": "Πηγαίνω στον σταθμό με το ταξί.",
+              "tr": "İstasyona taksiyle gidiyorum.",
+              "en": "I go to the station by taxi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "words",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümün kelimeleri: saat, ulaşım, yerler, yönler.",
+          "en": "The words of this chapter: time, transport, places, directions."
+        },
+        {
+          "type": "words",
+          "items": [
+            "open-book/ch06-ora",
+            "open-book/ch06-ti-ora",
+            "open-book/ch06-tetarto",
+            "open-book/ch06-misi",
+            "open-book/ch06-para",
+            "open-book/ch06-leoforeio",
+            "open-book/ch06-metro",
+            "open-book/ch06-taxi",
+            "open-book/ch06-treno",
+            "open-book/ch06-stasi",
+            "open-book/ch06-eisitirio",
+            "open-book/ch06-stathmos",
+            "open-book/ch06-dromos",
+            "open-book/ch06-plateia",
+            "open-book/ch06-kentro",
+            "open-book/ch06-deksia",
+            "open-book/ch06-aristera",
+            "open-book/ch06-eftheia",
+            "open-book/ch06-konta",
+            "open-book/ch06-makria",
+            "open-book/ch06-simera",
+            "open-book/ch06-avrio",
+            "open-book/ch06-apogevma",
+            "open-book/ch06-me-podia"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "tips",
+      "blocks": [
+        {
+          "type": "tip",
+          "kind": "tr_bridge",
+          "tr": "**σε hem -de hem -e.** Türkçede *evde* ile *eve* ayrı ekler; Yunancada ikisi de *στο σπίτι*. *Είμαι στο σπίτι* \"evdeyim\", *Πηγαίνω στο σπίτι* \"eve gidiyorum\": fiile bak. Araç için Türkçe ek (*otobüsle*) kullanır, Yunanca *με το λεωφορείο* der.",
+          "en": "**σε is \"at\" and \"to\" in one.** Greek does not separate them: *στο κέντρο* is \"in the centre\" with *είμαι* and \"to the centre\" with *πηγαίνω*. For a vehicle English says \"by bus\"; Greek says *με το λεωφορείο*, with the article."
+        },
+        {
+          "type": "tip",
+          "kind": "mistake",
+          "tr": "**Saatte *στις*, bir saatinde *στη*:** *στις δύο*, *στις τρεις*, ama *στη μία*; *στη δύο* ya da *στις μία* yanlıştır. Ayrıca *Είναι τρεις*, *τρία* değil: *τρία* nötr isimlerle gelir (*τρία μήλα*), *ώρα* dişildir.",
+          "en": "**With a time use *στις*, with one o'clock *στη*:** *στις δύο*, *στις τρεις*, but *στη μία*; *στη δύο* and *στις μία* are wrong. And say *Είναι τρεις*, not *τρία*: *τρία* goes with neuter nouns (*τρία μήλα*), and *ώρα* is feminine."
+        },
+        {
+          "type": "tip",
+          "kind": "exam",
+          "exam_task": "a2ltr.listening.mcq",
+          "tr": "A2 dinleme sınavında kısa bir mesajda **saat** ya da **yer** duyarsın (*στις έξι*, *στον σταθμό*) ve üç seçenekten birini işaretlersin. Çoğu zaman seçeneklerin üçü de mesajda geçer; konuşan birini düzeltir (*στις έξι, όχι στις πέντε*). Düzeltmeden sonraki sayıyı seç. İkinci dinlemede yalnızca saati ve yeri yakala.",
+          "en": "In the A2 listening exam a short message gives a **time** or a **place** (*στις έξι*, *στον σταθμό*) and you choose one of three answers. Often all three options appear in the message, because the speaker corrects something (*στις έξι, όχι στις πέντε*). Choose the number after the correction. On the second listening, catch only the time and the place."
+        }
+      ]
+    },
+    {
+      "kind": "try",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Şimdi sen dene. Yanlış yapmak serbest: bunlar sınav hazırlığı hesabına girmez.",
+          "en": "Now you try. Mistakes are fine here: these do not count towards your exam readiness."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch06-try-time",
+            "open-book/ch06-try-stis",
+            "open-book/ch06-try-stimia",
+            "open-book/ch06-try-sto",
+            "open-book/ch06-try-me"
+          ]
+        }
+      ]
+    }
+  ]
+}

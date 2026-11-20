@@ -275,6 +275,17 @@
       },
       "title": "Pools",
       "type": "array"
+    },
+    "follows": {
+      "additionalProperties": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "type": "object"
+      },
+      "default": {},
+      "title": "Follows",
+      "type": "object"
     }
   },
   "required": [

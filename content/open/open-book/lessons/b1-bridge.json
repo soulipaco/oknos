@@ -1,0 +1,736 @@
+{
+  "id": "open-a1-b1.b1-bridge",
+  "curriculum": "open-a1-b1",
+  "stage": "b1-bridge",
+  "level": "B1",
+  "title": {
+    "tr": "Resmî dairede: edilgen, aktarma ve koşul",
+    "en": "At the office: the passive, reporting and conditions"
+  },
+  "minutes": 20,
+  "version": 1,
+  "sections": [
+    {
+      "kind": "intro",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümde **resmî yazıları** anlamayı öğreneceksin: apartman duyuruları, belediyeden gelen mektuplar, bir memurun söyledikleri. Üç şey yapabileceksin: edilgen cümleleri tanımak (*ενοικιάζεται*, *στάλθηκε*), **başkasının söylediğini ya da sorduğunu aktarmak** (*είπε ότι…*) ve koşul kurmak (*αν… θα…*). Sonunda cümleleri bağlaçlarla birleştirip 150 kelimelik bir metin yazmaya hazır olacaksın.\n\nAnahtar nokta: edilgende işi yapan değil, **işin yapıldığı şey özne olur**. Türkçede de böyle: *yazıldı*, *gönderildi*, *kiralanır*.",
+          "en": "In this chapter you learn to understand **official writing**: building notices, letters from the town hall, what a clerk tells you. You will be able to recognise passive sentences (*ενοικιάζεται*, *στάλθηκε*), to **report what someone said or asked** (*είπε ότι…*) and to build conditions (*αν… θα…*). At the end you are ready to join sentences with linking words and write a 150-word text.\n\nThe key point: in the passive it is **the thing that receives the action that is the subject**, not the one who does it: \"the letter was sent\", \"the flat is let\"."
+        }
+      ]
+    },
+    {
+      "kind": "warmup",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bir devlet dairesinde sıra bekledin mi? Eve gelince arkadaşına *\"dedi ki… sordu…\"* diye anlattın. Bunu şimdi Yunanca yapacaksın.",
+          "en": "Have you ever queued at an office? Afterwards you told a friend: \"she said that… she asked…\". Now you do that in Greek."
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "title": {
+        "tr": "Belediyede, akşam ve duyuru panosu",
+        "en": "At the town hall, in the evening, and on the notice board"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Önce dinle, sonra oku. Üç şeye dikkat et: memurun cümleleri (*Φέρτε…*, *Θα είναι έτοιμο…*), Zeynep'in akşam anlatışı (*Μου είπε ότι…*) ve duyurudaki fiiller (*ενοικιάζεται*).",
+          "en": "Listen first, then read. Watch three things: the clerk's sentences (*Φέρτε…*, *Θα είναι έτοιμο…*), Zeynep's retelling in the evening (*Μου είπε ότι…*) and the verbs on the notice (*ενοικιάζεται*)."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Bir sabah belediyede. Zeynep memura \"siz\" diyor (εσείς).",
+            "en": "A morning at the town hall. Zeynep says \"you\" formally (εσείς) to the clerk."
+          },
+          "lines": [
+            {
+              "who": "Υπάλληλος",
+              "el": "Καλημέρα σας. Παρακαλώ;",
+              "tr": "Günaydın. Buyurun?",
+              "en": "Good morning. Can I help you?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Καλημέρα σας. Θέλω ένα πιστοποιητικό. Τι χρειάζομαι;",
+              "tr": "Günaydın. Bir belge istiyorum. Neye ihtiyacım var?",
+              "en": "Good morning. I would like a certificate. What do I need?"
+            },
+            {
+              "who": "Υπάλληλος",
+              "el": "Χρειάζεστε μια αίτηση. Το έντυπο είναι εδώ. Πού μένετε;",
+              "tr": "Bir başvuru gerekiyor. Form burada. Nerede oturuyorsunuz?",
+              "en": "You need an application. The form is here. Where do you live?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Μένω στην Καλαμαριά.",
+              "tr": "Kalamarya'da oturuyorum.",
+              "en": "I live in Kalamaria."
+            },
+            {
+              "who": "Υπάλληλος",
+              "el": "Δουλεύετε στη Θεσσαλονίκη;",
+              "tr": "Selanik'te mi çalışıyorsunuz?",
+              "en": "Do you work in Thessaloniki?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ναι, δουλεύω σε ένα φαρμακείο.",
+              "tr": "Evet, bir eczanede çalışıyorum.",
+              "en": "Yes, I work in a pharmacy."
+            },
+            {
+              "who": "Υπάλληλος",
+              "el": "Πολύ καλά. Φέρτε την ταυτότητά σας και το έντυπο. Η προθεσμία είναι η Παρασκευή.",
+              "tr": "Çok iyi. Kimliğinizi ve formu getirin. Son tarih cuma.",
+              "en": "Very good. Bring your ID card and the form. The deadline is Friday."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Και πότε θα είναι έτοιμο το πιστοποιητικό;",
+              "tr": "Peki belge ne zaman hazır olacak?",
+              "en": "And when will the certificate be ready?"
+            },
+            {
+              "who": "Υπάλληλος",
+              "el": "Θα είναι έτοιμο σε μια εβδομάδα. Αν δεν φέρετε την ταυτότητά σας, δεν θα πάρετε το πιστοποιητικό.",
+              "tr": "Bir hafta içinde hazır olacak. Kimliğinizi getirmezseniz belgeyi alamazsınız.",
+              "en": "It will be ready in a week. If you do not bring your ID card, you will not get the certificate."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ευχαριστώ πολύ.",
+              "tr": "Çok teşekkürler.",
+              "en": "Thank you very much."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "[[Παρακαλώ;]] burada \"Buyurun, nasıl yardımcı olabilirim?\" anlamında. Memur *εσείς* kullanıyor: *μένετε*, *δουλεύετε*, *χρειάζεστε*. [[Φέρτε]] \"getirin\" demek: resmî bir rica ya da emir, bunu tanıman yeter. [[σε μια εβδομάδα]] \"bir hafta içinde, bir hafta sonra\".",
+          "en": "[[Παρακαλώ;]] here means \"Can I help you?\". The clerk uses *εσείς*: *μένετε*, *δουλεύετε*, *χρειάζεστε*. [[Φέρτε]] means \"bring\": a formal request, you only need to recognise it. [[σε μια εβδομάδα]] is \"in a week\"."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Akşam. Zeynep, Giorgos'a memurun ne dediğini ve ne sorduğunu anlatıyor.",
+            "en": "Evening. Zeynep tells Giorgos what the clerk said and asked."
+          },
+          "lines": [
+            {
+              "who": "Γιώργος",
+              "el": "Γεια σου, Ζεϊνέπ! Πώς πήγε στον δήμο;",
+              "tr": "Merhaba Zeynep! Belediyede nasıl geçti?",
+              "en": "Hi, Zeynep! How did it go at the town hall?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Καλά! Η υπάλληλος ήταν πολύ καλή.",
+              "tr": "İyi! Memur çok iyiydi.",
+              "en": "Fine! The clerk was very nice."
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Τι σου είπε;",
+              "tr": "Sana ne dedi?",
+              "en": "What did she tell you?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Μου είπε ότι χρειάζομαι μια αίτηση. Μου είπε επίσης να φέρω την ταυτότητά μου και το έντυπο.",
+              "tr": "Bir başvuru gerektiğini söyledi. Bir de kimliğimi ve formu getirmemi söyledi.",
+              "en": "She told me I need an application. She also told me to bring my ID card and the form."
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Και πότε θα είναι έτοιμο το πιστοποιητικό;",
+              "tr": "Peki belge ne zaman hazır olacak?",
+              "en": "And when will the certificate be ready?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Είπε ότι θα είναι έτοιμο σε μια εβδομάδα. Με ρώτησε πού μένω και αν δουλεύω στη Θεσσαλονίκη.",
+              "tr": "Bir hafta içinde hazır olacağını söyledi. Nerede oturduğumu ve Selanik'te çalışıp çalışmadığımı sordu.",
+              "en": "She said it will be ready in a week. She asked me where I live and whether I work in Thessaloniki."
+            },
+            {
+              "who": "Γιώργος",
+              "el": "Και τι είπες;",
+              "tr": "Sen ne dedin?",
+              "en": "And what did you say?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Είπα ότι μένω στην Καλαμαριά και ότι δουλεύω σε ένα φαρμακείο.",
+              "tr": "Kalamarya'da oturduğumu ve bir eczanede çalıştığımı söyledim.",
+              "en": "I said that I live in Kalamaria and that I work in a pharmacy."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "Karşılaştır: memur «Πού μένετε;» dedi, Zeynep aktarırken *πού μένω* diyor. \"Siz\" \"ben\" oldu, ama zaman aynı kaldı. [[Πώς πήγε;]] \"Nasıl geçti?\" demek, şimdilik bir kalıp.",
+          "en": "Compare: the clerk said «Πού μένετε;» and Zeynep reports *πού μένω*. \"You\" became \"I\", but the tense stayed. [[Πώς πήγε;]] means \"How did it go?\"; for now it is a set phrase."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Apartmanın girişindeki pano.",
+            "en": "The notice board in the building's entrance."
+          },
+          "lines": [
+            {
+              "who": "Ανακοίνωση",
+              "el": "Το διαμέρισμα 4 ενοικιάζεται. Τηλεφωνήστε στον διαχειριστή.",
+              "tr": "4 numaralı daire kiralık. Yöneticiyi arayın.",
+              "en": "Flat 4 is for rent. Call the manager."
+            },
+            {
+              "who": "Ανακοίνωση",
+              "el": "Το ασανσέρ επισκευάστηκε σήμερα.",
+              "tr": "Asansör bugün tamir edildi.",
+              "en": "The lift was repaired today."
+            },
+            {
+              "who": "Ανακοίνωση",
+              "el": "Οι κάτοικοι ενημερώνονται από τον διαχειριστή.",
+              "tr": "Sakinlere yönetici haber veriyor.",
+              "en": "The residents are informed by the manager."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "Duyuruda üç edilgen fiil var: *ενοικιάζεται* (kiralık), *επισκευάστηκε* (tamir edildi), *ενημερώνονται* (haber veriliyor). [[Τηλεφωνήστε]] \"arayın\" demek: duyurularda hep bu resmî emir biçimi kullanılır, tanıman yeter. [[επισκευάστηκε]] fiili *επισκευάζω* \"tamir etmek\" fiilinin edilgenidir.",
+          "en": "The notice has three passive verbs: *ενοικιάζεται* (is for rent), *επισκευάστηκε* (was repaired), *ενημερώνονται* (are informed). [[Τηλεφωνήστε]] means \"call\": notices always use this formal request form, you only need to recognise it. [[επισκευάστηκε]] is the passive of *επισκευάζω* \"to repair\"."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Giorgos, Zeynep'in kapısının altına bir not bırakıyor; Zeynep notun altına cevap yazıyor.",
+            "en": "Giorgos leaves a note under Zeynep's door; Zeynep writes her answer below it."
+          },
+          "lines": [
+            {
+              "who": "Γιώργος",
+              "el": "Ζεϊνέπ, αν έχεις χρόνο το Σάββατο, θα πάμε μαζί στη βιβλιοθήκη.",
+              "tr": "Zeynep, cumartesi vaktin varsa birlikte kütüphaneye gideriz.",
+              "en": "Zeynep, if you have time on Saturday, we will go to the library together."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ευχαριστώ, Γιώργο! Αν δεν έχω μάθημα, θα έρθω.",
+              "tr": "Teşekkürler Giorgos! Dersim yoksa gelirim.",
+              "en": "Thanks, Giorgos! If I have no class, I will come."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Zeynep, kütüphane kartı için resmî bir mektup yazıyor.",
+            "en": "Zeynep writes a formal letter about a library card."
+          },
+          "lines": [
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Αξιότιμε κύριε,",
+              "tr": "Sayın yetkili,",
+              "en": "Dear Sir,"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Με λένε Ζεϊνέπ και μένω στην Καλαμαριά. Γράφω επειδή θέλω μια κάρτα για τη βιβλιοθήκη.",
+              "tr": "Adım Zeynep, Kalamarya'da oturuyorum. Kütüphane için bir kart istediğim için yazıyorum.",
+              "en": "My name is Zeynep and I live in Kalamaria. I am writing because I would like a library card."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Δουλεύω το πρωί, γι' αυτό μπορώ να έρθω μόνο το απόγευμα. Είναι ανοιχτή η βιβλιοθήκη το απόγευμα;",
+              "tr": "Sabahları çalışıyorum, bu yüzden ancak öğleden sonra gelebilirim. Kütüphane öğleden sonra açık mı?",
+              "en": "I work in the morning, so I can only come in the afternoon. Is the library open in the afternoon?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Επίσης, χρειάζομαι ένα έντυπο; Αν ναι, θα το φέρω την Παρασκευή.",
+              "tr": "Ayrıca bir form gerekiyor mu? Gerekiyorsa cuma günü getiririm.",
+              "en": "Also, do I need a form? If so, I will bring it on Friday."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Τέλος, ευχαριστώ πολύ για την απάντησή σας. Με εκτίμηση, Ζεϊνέπ.",
+              "tr": "Son olarak cevabınız için çok teşekkür ederim. Saygılarımla, Zeynep.",
+              "en": "Finally, thank you very much for your reply. Yours faithfully, Zeynep."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "[[Αξιότιμε κύριε]] resmî mektubun başlangıcı: \"Sayın yetkili\". [[μόνο]] \"yalnızca\". [[Με εκτίμηση]] resmî mektubun sonu: \"Saygılarımla\". [[Τέλος]] \"son olarak\". [[την απάντησή σας]] \"cevabınızı\".",
+          "en": "[[Αξιότιμε κύριε]] opens a formal letter: \"Dear Sir\". [[μόνο]] \"only\". [[Με εκτίμηση]] closes it: \"Yours faithfully\". [[Τέλος]] \"finally\". [[την απάντησή σας]] \"your reply\"."
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Metne göre iki soru.",
+          "en": "Two questions on the text."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch12-q-clerk",
+            "open-book/ch12-q-tf"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Edilgen: ενοικιάζεται, στάλθηκε",
+        "en": "The passive: ενοικιάζεται, στάλθηκε"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Etken cümlede işi yapan özne olur: *Ο διαχειριστής γράφει το έντυπο.* Edilgen cümlede işin yapıldığı şey özne olur: *Το έντυπο γράφεται.* Yani \"form doldurulur\". İşi yapanı söylemek istersen **από** + isim kullanırsın: *από τον διαχειριστή*.\n\n**Şimdiki zaman:** fiil kökünün sonuna **-εται** (bir şey) ya da **-ονται** (birkaç şey) eklenir: *γράφ-εται*, *γράφ-ονται*. Burada 3. kişi yeterli.\n\n**Geçmiş zaman:** tek kelime, **-τηκε / -θηκε** (çoğulda **-τηκαν / -θηκαν**): *γράφτηκε*, *στάλθηκε*. Her fiilin biçimini fiille birlikte öğren; şu kalıplar yardım eder: *-φω → -φτηκε*, *-ζω → -στηκε*, *-νω → -θηκε*. *στέλνω → στάλθηκε* düzensiz.\n\n**πωλείται** (satılık) levhalardaki biçimdir; olduğu gibi öğren.",
+          "en": "In an active sentence the doer is the subject: *Ο διαχειριστής γράφει το έντυπο.* In a passive sentence the thing that receives the action is the subject: *Το έντυπο γράφεται.* \"The form is filled in.\" To name the doer, use **από** + a noun: *από τον διαχειριστή*.\n\n**Present:** add **-εται** (one thing) or **-ονται** (several) to the verb's stem: *γράφ-εται*, *γράφ-ονται*. The third person is enough here.\n\n**Past (aorist):** one word, ending **-τηκε / -θηκε** (plural **-τηκαν / -θηκαν**): *γράφτηκε*, *στάλθηκε*. Learn each verb's form with the verb; these patterns help: *-φω → -φτηκε*, *-ζω → -στηκε*, *-νω → -θηκε*. *στέλνω → στάλθηκε* is irregular.\n\n**πωλείται** (for sale) is the form on signs; learn it as it is."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Etken ve edilgen",
+            "en": "Active and passive"
+          },
+          "head": [
+            {
+              "tr": "etken",
+              "en": "active"
+            },
+            {
+              "tr": "şimdiki, bir şey",
+              "en": "present, one thing"
+            },
+            {
+              "tr": "şimdiki, birkaç şey",
+              "en": "present, several things"
+            },
+            {
+              "tr": "geçmiş (aorist)",
+              "en": "past (aorist)"
+            }
+          ],
+          "rows": [
+            [
+              "γράφω",
+              "γράφεται",
+              "γράφονται",
+              "γράφτηκε"
+            ],
+            [
+              "στέλνω",
+              "στέλνεται",
+              "στέλνονται",
+              "στάλθηκε"
+            ],
+            [
+              "αγοράζω",
+              "αγοράζεται",
+              "αγοράζονται",
+              "αγοράστηκε"
+            ],
+            [
+              "πληρώνω",
+              "πληρώνεται",
+              "πληρώνονται",
+              "πληρώθηκε"
+            ],
+            [
+              "ενημερώνω",
+              "ενημερώνεται",
+              "ενημερώνονται",
+              "ενημερώθηκε"
+            ]
+          ],
+          "note": {
+            "tr": "Aynı kalıp: ενοικιάζω → ενοικιάζεται, επισκευάζω → επισκευάστηκε.",
+            "en": "The same pattern: ενοικιάζω → ενοικιάζεται, επισκευάζω → επισκευάστηκε."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Το πιστοποιητικό στάλθηκε από τον δήμο.",
+              "tr": "Belge belediye tarafından gönderildi.",
+              "en": "The certificate was sent by the town hall."
+            },
+            {
+              "el": "Το εισιτήριο αγοράστηκε χθες.",
+              "tr": "Bilet dün alındı.",
+              "en": "The ticket was bought yesterday."
+            },
+            {
+              "el": "Τα έντυπα γράφονται εδώ.",
+              "tr": "Formlar burada doldurulur.",
+              "en": "The forms are filled in here."
+            },
+            {
+              "el": "Πωλείται αυτοκίνητο.",
+              "tr": "Satılık araba.",
+              "en": "Car for sale."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Aktarma: είπε ότι…, ρώτησε αν…",
+        "en": "Reported speech: είπε ότι…, ρώτησε αν…"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Birinin söylediğini aktarırken dört kalıp var:\n\n**Düz cümle:** *είπε* **ότι** + aynı zaman. «Θα είναι έτοιμο.» → *Είπε ότι θα είναι έτοιμο.* İngilizcedeki *would* kayması Yunancada genellikle yok: gelecek gelecek, şimdiki şimdiki kalır.\n\n**Evet/hayır sorusu:** *ρώτησε* **αν** + soru. «Δουλεύετε εδώ;» → *Με ρώτησε αν δουλεύω εδώ.*\n\n**Soru sözcüklü soru:** *ρώτησε* + aynı soru sözcüğü (*πού*, *πότε*, *τι*). «Πού μένετε;» → *Με ρώτησε πού μένω.* Soru işareti kalkar.\n\n**Rica ya da emir:** *μου είπε* **να** + tamamlanmış (aorist kökü) biçim: *θέλω να* sözünden tanıdığın biçim. «Φέρτε το έντυπο.» → *Μου είπε να φέρω το έντυπο.*\n\nKişiler değişir: memurun «siz» dediği, aktarırken «ben» olur.",
+          "en": "There are four patterns for reporting:\n\n**A statement:** *είπε* **ότι** + the same tense. «Θα είναι έτοιμο.» → *Είπε ότι θα είναι έτοιμο.* The English \"would\" shift is usually absent in Greek: a future stays a future, a present stays a present.\n\n**A yes/no question:** *ρώτησε* **αν** + the question. «Δουλεύετε εδώ;» → *Με ρώτησε αν δουλεύω εδώ.*\n\n**A question with a question word:** *ρώτησε* + the same word (*πού*, *πότε*, *τι*). «Πού μένετε;» → *Με ρώτησε πού μένω.* The question mark goes.\n\n**A request or an order:** *μου είπε* **να** + the perfective form you know from *θέλω να*. «Φέρτε το έντυπο.» → *Μου είπε να φέρω το έντυπο.*\n\nThe persons change: the clerk's \"you\" becomes \"I\" when Zeynep reports."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Memur dedi → Zeynep aktarıyor",
+            "en": "The clerk said → Zeynep reports"
+          },
+          "head": [
+            {
+              "tr": "memur dedi",
+              "en": "the clerk said"
+            },
+            {
+              "tr": "Zeynep aktarıyor",
+              "en": "Zeynep reports"
+            }
+          ],
+          "rows": [
+            [
+              "«Χρειάζεστε μια αίτηση.»",
+              "Είπε ότι χρειάζομαι μια αίτηση."
+            ],
+            [
+              "«Θα είναι έτοιμο σε μια εβδομάδα.»",
+              "Είπε ότι θα είναι έτοιμο σε μια εβδομάδα."
+            ],
+            [
+              "«Δουλεύετε στη Θεσσαλονίκη;»",
+              "Με ρώτησε αν δουλεύω στη Θεσσαλονίκη."
+            ],
+            [
+              "«Πού μένετε;»",
+              "Με ρώτησε πού μένω."
+            ],
+            [
+              "«Φέρτε την ταυτότητά σας.»",
+              "Μου είπε να φέρω την ταυτότητά μου."
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Ο Γιώργος είπε ότι θα έρθει αύριο.",
+              "tr": "Giorgos yarın geleceğini söyledi.",
+              "en": "Giorgos said he would come tomorrow."
+            },
+            {
+              "el": "Η Σοφία με ρώτησε πότε φεύγω.",
+              "tr": "Sofia ne zaman ayrıldığımı sordu.",
+              "en": "Sofia asked me when I am leaving."
+            },
+            {
+              "el": "Ο διαχειριστής μας είπε ότι το ασανσέρ είναι κλειστό.",
+              "tr": "Yönetici bize asansörün kapalı olduğunu söyledi.",
+              "en": "The manager told us that the lift is closed."
+            },
+            {
+              "el": "Η υπάλληλος μου είπε να περιμένω.",
+              "tr": "Memur bana beklememi söyledi.",
+              "en": "The clerk told me to wait."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "αν … θα …",
+        "en": "αν … θα …"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "**αν** \"eğer\" demek. Cümlenin iki yarısı var: *αν* ile kurulan koşul ve *θα* ile kurulan sonuç. Sonuç yarısı gelecek zamandır, yani **θα + tamamlanmış kök**: *θα πάμε*, *θα σου τηλεφωνήσω*.\n\nKoşul cümlesinde *αν* sözünden sonra **θα gelmez**. Fiil iki biçimden birinde olur:\n- **şimdiki zaman**, bir durum için: *αν έχεις χρόνο*;\n- **θέλω να sözünden tanıdığın tamamlanmış biçim**, tek bir olay için: *αν έρθεις*, *αν φύγω*.\n\nOlumsuz için *δεν*: *αν δεν φέρετε*.",
+          "en": "**αν** means \"if\". The sentence has two halves: the *αν* part (the condition) and the *θα* part (the result). The result is a future: **θα + the perfective stem**: *θα πάμε*, *θα σου τηλεφωνήσω*.\n\n**In a condition, αν is never followed by θα.** The verb is in one of two forms:\n- the **present**, for a state: *αν έχεις χρόνο*;\n- the **perfective form you know from θέλω να**, for a single event: *αν έρθεις*, *αν φύγω*.\n\nFor \"not\" use *δεν*: *αν δεν φέρετε*."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Koşul ve sonuç",
+            "en": "Condition and result"
+          },
+          "head": [
+            "αν …",
+            "θα …",
+            {
+              "tr": "αν sözünden sonraki fiil",
+              "en": "the verb after αν"
+            }
+          ],
+          "rows": [
+            [
+              "Αν έχεις χρόνο,",
+              "θα σου τηλεφωνήσω.",
+              {
+                "tr": "şimdiki zaman: bir durum",
+                "en": "present: a state"
+              }
+            ],
+            [
+              "Αν έρθεις νωρίς,",
+              "θα πάμε μαζί.",
+              {
+                "tr": "tamamlanmış biçim: tek olay",
+                "en": "perfective: one event"
+              }
+            ],
+            [
+              "Αν φύγω νωρίς,",
+              "θα πάρω το λεωφορείο.",
+              {
+                "tr": "tamamlanmış biçim: tek olay",
+                "en": "perfective: one event"
+              }
+            ],
+            [
+              "Αν δεν φέρετε την ταυτότητά σας,",
+              "δεν θα πάρετε το πιστοποιητικό.",
+              {
+                "tr": "tamamlanmış biçim, olumsuz",
+                "en": "perfective, negative"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Αν δεν έχω μάθημα, θα έρθω στη βιβλιοθήκη.",
+              "tr": "Dersim yoksa kütüphaneye gelirim.",
+              "en": "If I have no class, I will come to the library."
+            },
+            {
+              "el": "Αν βρω εισιτήριο, θα ταξιδέψω αύριο.",
+              "tr": "Bilet bulursam yarın yolculuk yapacağım.",
+              "en": "If I find a ticket, I will travel tomorrow."
+            },
+            {
+              "el": "Αν είναι ανοιχτό το περίπτερο, θα αγοράσω εφημερίδα.",
+              "tr": "Büfe açıksa gazete alacağım.",
+              "en": "If the kiosk is open, I will buy a newspaper."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Cümleleri bağlamak",
+        "en": "Joining sentences"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "B1 metni kısa cümlelerden oluşan bir liste değil, birbirine bağlı bir metindir. Altı küçük kelime işini görür: nedeni, sonucu, karşıtlığı ya da sırayı gösterirler.",
+          "en": "A B1 text is not a list of short sentences but a text whose parts are joined. Six small words do the job: they show the reason, the result, a contrast or the order."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Bağlaçlar",
+            "en": "Linking words"
+          },
+          "head": [
+            {
+              "tr": "kelime",
+              "en": "word"
+            },
+            {
+              "tr": "anlamı",
+              "en": "meaning"
+            },
+            {
+              "tr": "örnek",
+              "en": "example"
+            }
+          ],
+          "rows": [
+            [
+              "επειδή",
+              {
+                "tr": "çünkü (neden)",
+                "en": "because (reason)"
+              },
+              "Μένω εδώ, επειδή δουλεύω κοντά."
+            ],
+            [
+              "γι' αυτό",
+              {
+                "tr": "bu yüzden (sonuç)",
+                "en": "so (result)"
+              },
+              "Δουλεύω κοντά, γι' αυτό πηγαίνω με τα πόδια."
+            ],
+            [
+              "όμως",
+              {
+                "tr": "ama, ancak (karşıtlık)",
+                "en": "but, however (contrast)"
+              },
+              "Θέλω να έρθω, όμως δουλεύω."
+            ],
+            [
+              "ενώ",
+              {
+                "tr": "iken, oysa (iki durum yan yana)",
+                "en": "while, whereas (two things side by side)"
+              },
+              "Ενώ η Ζεϊνέπ δουλεύει, ο Γιώργος κοιμάται."
+            ],
+            [
+              "επίσης",
+              {
+                "tr": "ayrıca, de",
+                "en": "also"
+              },
+              "Θέλω επίσης ένα έντυπο."
+            ],
+            [
+              "στο τέλος",
+              {
+                "tr": "sonunda",
+                "en": "in the end"
+              },
+              "Στο τέλος πήγα στο σπίτι."
+            ]
+          ],
+          "note": {
+            "tr": "γι' αυτό yazılışı: kesme işareti var, *για αυτό* sözünün kısası.",
+            "en": "Spelling of γι' αυτό: with an apostrophe, short for *για αυτό*."
+          }
+        }
+      ]
+    },
+    {
+      "kind": "words",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümün kelimeleri: resmî daire kelimeleri, iki fiil ve bağlaçlar. Bölümü bitirince oturumlarına gelecekler.",
+          "en": "The words of this chapter: office words, two verbs and the linking words. Once you finish the chapter they come into your sessions."
+        },
+        {
+          "type": "words",
+          "items": [
+            "open-book/ch12-aitisi",
+            "open-book/ch12-pistopoiitiko",
+            "open-book/ch12-dimos",
+            "open-book/ch12-eforia",
+            "open-book/ch12-ypallilos",
+            "open-book/ch12-entypo",
+            "open-book/ch12-prothesmia",
+            "open-book/ch12-enimerono",
+            "open-book/ch12-enoikiazetai",
+            "open-book/ch12-poleitai",
+            "open-book/ch12-katoikos",
+            "open-book/ch12-vivliothiki",
+            "open-book/ch12-etimos",
+            "open-book/ch12-syntoma",
+            "open-book/ch12-epeidi",
+            "open-book/ch12-gi-afto",
+            "open-book/ch12-omos",
+            "open-book/ch12-eno",
+            "open-book/ch12-episis",
+            "open-book/ch12-an",
+            "open-book/ch12-diamerisma",
+            "open-book/ch12-stelno",
+            "open-book/ch12-ferno"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "tips",
+      "blocks": [
+        {
+          "type": "tip",
+          "kind": "tr_bridge",
+          "tr": "**Edilgen Türkçedekiyle aynı mantık.** *γράφτηκε* = *yazıldı*, *στάλθηκε* = *gönderildi*, *πληρώθηκε* = *ödendi*. Türkçede fiile *-il-* ya da *-in-* eklersin; Yunancada fiil değişir ve **tek bir kelime** olur. Aktarmada da benzerlik var: Türkçede *\"cuma günü hazır olacak, dedi\"* gelecek zamanı korur, Yunanca *είπε ότι θα είναι έτοιμο* da öyle.",
+          "en": "**The passive works as in Turkish.** *γράφτηκε* = Turkish *yazıldı*, *στάλθηκε* = *gönderildi*. Turkish adds *-il-* or *-in-* to the verb; Greek changes the verb and it stays **one word**. In reported speech Greek *είπε ότι θα είναι έτοιμο* keeps the future, where English changes it to \"would be\"."
+        },
+        {
+          "type": "tip",
+          "kind": "mistake",
+          "tr": "**Koşulda αν sözünden sonra θα yok.** *Αν θα έρθεις, θα πάμε* yanlış. Doğrusu: *Αν έρθεις, θα πάμε μαζί.* *θα* yalnızca sonuç yarısına girer. Dolaylı soruda ise *αν* \"-ip -mediğini\" demektir ve ardından *θα* gelebilir: [[Με ρώτησε αν θα έρθω.]]",
+          "en": "**No θα after αν in a condition.** *Αν θα έρθεις, θα πάμε* is wrong. Say: *Αν έρθεις, θα πάμε μαζί.* *θα* goes only in the result. In a reported question, though, *αν* means \"whether\" and can take *θα*: [[Με ρώτησε αν θα έρθω.]]"
+        },
+        {
+          "type": "tip",
+          "kind": "mistake",
+          "tr": "**ότι mi, να mı?** Bir bilgiyi aktarırken *ότι*: *Μου είπε ότι χρειάζομαι αίτηση.* Bir rica ya da emri aktarırken *να*: *Μου είπε να φέρω το έντυπο.* İkisini karıştırma.",
+          "en": "**ότι or να?** To report a fact use *ότι*: *Μου είπε ότι χρειάζομαι αίτηση.* To report a request or an order use *να*: *Μου είπε να φέρω το έντυπο.* Do not mix them."
+        },
+        {
+          "type": "tip",
+          "kind": "exam",
+          "exam_task": "b1keg.writing.formal",
+          "tr": "B1 sınavının resmî yazısı yaklaşık 150 kelimedir (sınav planında 130–170) ve bir istek, başvuru ya da şikâyet ister; nedenlerini de söylemelisin. Zeynep'in mektubu iskeleti gösteriyor: (1) *Αξιότιμε κύριε / Αξιότιμη κυρία*, (2) kim olduğun ve neden yazdığın (*επειδή*), (3) bir ya da iki ayrıntı ya da soru (*επίσης*, *όμως*, *γι' αυτό*), (4) *Τέλος* ile teşekkür, (5) *Με εκτίμηση*. Kısa cümleleri arka arkaya dizme; bağlaç kullan.",
+          "en": "The formal text in the B1 exam is about 150 words (the exam plan lists 130–170) and asks for a request, an application or a complaint, with reasons. Zeynep's letter shows the frame: (1) *Αξιότιμε κύριε / Αξιότιμη κυρία*, (2) who you are and why you write (*επειδή*), (3) one or two details or questions (*επίσης*, *όμως*, *γι' αυτό*), (4) thanks, introduced by *Τέλος*, (5) *Με εκτίμηση*. Do not line up short sentences; join them with linking words."
+        }
+      ]
+    },
+    {
+      "kind": "try",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Şimdi sen dene. Yanlış yapmak serbest: bunlar sınav hazırlığı hesabına girmez.",
+          "en": "Now you try. Mistakes are fine here: these do not count towards your exam readiness."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch12-try-passive-aorist",
+            "open-book/ch12-try-passive-present",
+            "open-book/ch12-try-reported-future",
+            "open-book/ch12-try-reported-question",
+            "open-book/ch12-try-if"
+          ]
+        }
+      ]
+    }
+  ]
+}

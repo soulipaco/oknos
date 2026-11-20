@@ -49,6 +49,12 @@ What works now:
     - The errors were in rules and descriptions (final -ν, the vocative, how phone numbers are read, the stress of σπίτι) more than in spelling. The review step is essential.
   - A table cell can be Greek or `{tr, en}`.
   - Writing more is the `write-chapter` skill: Sonnet drafts, Opus reviews.
+  - **The open course's book** (tracked, CC BY-SA 4.0, original): `content/open/open-book/`, one chapter for each of the 12 stages of `curricula/open-a1-b1.json`, written 2026-11-20. A story runs through it: Zeynep from Izmir moves to Thessaloniki.
+    - `first-words` and `everyday-verbs` are the golden chapters (Opus); the other ten were drafted by Sonnet and reviewed by Opus. Each has a review note in `lessons/review/`. The reviews made 14 Greek fixes and 26 teaching fixes in all, about 1 and 2 per chapter.
+    - 398 items: 218 vocab, the rest practice and checks. Its `glossary.json` explains every other word it shows (forms, endings in tables, names); a fresh clone has no unexplained open word.
+    - A fresh clone's learner now starts by reading the `reading` chapter.
+    - Under a book's curriculum the open book supports it (`curriculum.py`, SPEC §5.4): words the book already has are not served twice, and the rest are extras at the lesson the book curriculum's `follows` maps each open stage to. The maintainer's mapping is in `content/private/greek-helper/curriculum.json`.
+    - Tests leave the open book out by default (`tests/conftest.py`): its chapters gate every stage. Tests of the book use the `open_book` / `full_catalog` fixtures (`tests/test_open_book.py`).
 - **Exam blueprints** (tracked facts): `exams/a2ltr.json` and `exams/b1-keg.json`.
   - Each has units, tasks, points, minutes, the real pass rule, exam technique (en/tr), official sources and the pages `watch` checks.
   - B1 also lists what it adds over A2 (`beyond_a2`).
@@ -118,7 +124,7 @@ What works now:
   - the 17 book checks it found are fixed.
   - Listening passages pre-generated with `scripts/make_audio.py`: edge-tts with the learner's yes, for content outside `learner/` only.
   - Speaking recordings transcribed locally with faster-whisper `small` (the `speech` group).
-- **Tests:** `uv run pytest`, which includes a scripted two weeks of use, the phase 4 contracts (`tests/test_coach.py`) exam mode (`tests/test_exam.py`), chapters (`tests/test_chapters.py`) and tap-a-word coverage (`tests/test_lookup_coverage.py`: no open word without a meaning). `scripts/simulate.py` also prints the readiness per unit.
+- **Tests:** `uv run pytest`, which includes a scripted two weeks of use, the phase 4 contracts (`tests/test_coach.py`) exam mode (`tests/test_exam.py`), chapters (`tests/test_chapters.py`), the open book (`tests/test_open_book.py`) and tap-a-word coverage (`tests/test_lookup_coverage.py`: no open word without a meaning). `scripts/simulate.py` also prints the readiness per unit.
 
 Known limits:
 - The open content alone gives too few A2/B1 exam-format items for readiness to show numbers in the first weeks. The coach's items and mocks are what make them appear.
@@ -140,8 +146,7 @@ Next:
 - the maintainer reads the chapters as the lessons come; the ⚑ flag on a section sends a fix to the coach.
 
 Optional, deferred by the maintainer (2026-11-19):
-- phase 6 (the friend test);
-- the open course's 12 chapters (`content/open/open-book/`), which only a learner without the book needs.
+- phase 6 (the friend test).
 
 ## Two kinds of people use this repo
 

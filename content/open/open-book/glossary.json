@@ -1,0 +1,543 @@
+{
+ "source": "Meanings written for this pack; inflected forms mapped to their lemma from the English Wiktionary (https://en.wiktionary.org, via kaikki.org, CC BY-SA 4.0), checked by hand.",
+ "licence": "CC-BY-SA-4.0",
+ "forms": {
+  "αγαπητοί": [
+   "αγαπητός",
+   "Αγαπητός"
+  ],
+  "αγόρασαν": "αγοράζω",
+  "αγοράσατε": "αγοράζω",
+  "αγόρασες": "αγοράζω",
+  "αγοράστηκε": "αγοράζω",
+  "ακούν": "ακούω",
+  "αρέσουν": "αρέσω",
+  "βγεις": "βγαίνω",
+  "βγήκαμε": "βγαίνω",
+  "βγούμε": "βγαίνω",
+  "βγω": "βγαίνω",
+  "βρεις": "βρίσκω",
+  "βρήκα": "βρίσκω",
+  "βρήκαμε": "βρίσκω",
+  "βρούμε": "βρίσκω",
+  "βρω": "βρίσκω",
+  "γράφτηκε": "γράφω",
+  "γράψατε": "γράφω",
+  "γράψω": "γράφω",
+  "γυρίσαμε": "γυρίζω",
+  "γύρισαν": "γυρίζω",
+  "γυρίσατε": "γυρίζω",
+  "δεις": "βλέπω",
+  "δούλεψε": "δουλεύω",
+  "δουλέψω": "δουλεύω",
+  "δούμε": "βλέπω",
+  "έγραψαν": "γράφω",
+  "έγραψε": "γράφω",
+  "έγραψες": "γράφω",
+  "είδαμε": "βλέπω",
+  "είπες": "λέω",
+  "είχατε": "έχω",
+  "είχες": "έχω",
+  "έκανα": "κάνω",
+  "έκανες": "κάνω",
+  "έμαθες": "μαθαίνω",
+  "έμεινε": "μένω",
+  "έμεινες": "μένω",
+  "ενημερώθηκε": "ενημερώνω",
+  "έρθουμε": "έρχομαι",
+  "έρχεσαι": "έρχομαι",
+  "έφαγα": "τρώω",
+  "εφτά": "επτά",
+  "έφυγα": "φεύγω",
+  "έφυγες": "φεύγω",
+  "ήθελαν": "θέλω",
+  "ήθελες": "θέλω",
+  "ήξερα": "ξέρω",
+  "ήξερες": "ξέρω",
+  "ήπια": "πίνω",
+  "ήπιαμε": "πίνω",
+  "ήπιες": "πίνω",
+  "ήρθα": "έρχομαι",
+  "ήρθαμε": "έρχομαι",
+  "θυμάται": "θυμάμαι",
+  "θυμούνται": "θυμάμαι",
+  "κατάλαβα": "καταλαβαίνω",
+  "καταλάβαμε": "καταλαβαίνω",
+  "κατάλαβες": "καταλαβαίνω",
+  "καφέδες": "καφές",
+  "κοιμάσαι": "κοιμάμαι",
+  "κοιμάστε": "κοιμάμαι",
+  "κοιμάται": "κοιμάμαι",
+  "κοιμούνται": "κοιμάμαι",
+  "λέμε": "λέω",
+  "λες": "λέω",
+  "λέτε": "λέω",
+  "μαγείρεψα": "μαγειρεύω",
+  "μαγείρεψε": "μαγειρεύω",
+  "μαγείρεψες": "μαγειρεύω",
+  "μείνουμε": "μένω",
+  "μείνω": "μένω",
+  "μιλάνε": "μιλάω",
+  "μίλησα": "μιλάω",
+  "μιλήσαμε": "μιλάω",
+  "μιλήσατε": "μιλάω",
+  "μίλησες": "μιλάω",
+  "μπακάληδες": "μπακάλης",
+  "μπήκες": "μπαίνω",
+  "μπούμε": "μπαίνω",
+  "μπω": "μπαίνω",
+  "ξυπνάμε": "ξυπνάω",
+  "ξυπνάς": "ξυπνάω",
+  "ξυπνήσω": "ξυπνάω",
+  "πέρασα": "περνάω",
+  "πέρασε": "περνάω",
+  "πέρασες": "περνάω",
+  "πήγαν": "πηγαίνω",
+  "πήγες": "πηγαίνω",
+  "πήρα": "παίρνω",
+  "πήραμε": "παίρνω",
+  "πήρες": "παίρνω",
+  "πιεις": "πίνω",
+  "πληρώθηκε": "πληρώνω",
+  "πληρώσω": "πληρώνω",
+  "πουλάνε": "πουλάω",
+  "πουλάς": "πουλάω",
+  "πουλάτε": "πουλάω",
+  "πούμε": "λέω",
+  "πω": "λέω",
+  "ρωτάμε": "ρωτάω",
+  "ρωτάνε": "ρωτάω",
+  "σένα": "εσένα",
+  "στάλθηκαν": "στέλνω",
+  "ταξιδέψω": "ταξιδεύω",
+  "τηλεφωνήσεις": "τηλεφωνώ",
+  "τηλεφωνήσετε": "τηλεφωνώ",
+  "τηλεφωνήστε": "τηλεφωνώ",
+  "τηλεφωνήσω": "τηλεφωνώ",
+  "τρώνε": "τρώω",
+  "τρώτε": "τρώω",
+  "φάγαμε": "τρώω",
+  "φάω": "τρώω",
+  "φύγαμε": "φεύγω",
+  "φύγατε": "φεύγω",
+  "φύγεις": "φεύγω",
+  "χρειάζεσαι": "χρειάζομαι",
+  "χρειαζόμαστε": "χρειάζομαι",
+  "χρόνο": "χρόνος"
+ },
+ "words": [
+  {
+   "el": "άω",
+   "pos": "ending",
+   "en": "verb ending of the μιλάω group (μιλάω, ρωτάω)",
+   "tr": "μιλάω grubunun fiil eki (μιλάω, ρωτάω)"
+  },
+  {
+   "el": "έντεκα",
+   "pos": "numeral",
+   "en": "eleven",
+   "tr": "on bir"
+  },
+  {
+   "el": "ές",
+   "pos": "ending",
+   "en": "noun ending, masculine (ο καφές)",
+   "tr": "isim eki, eril (ο καφές)"
+  },
+  {
+   "el": "έψω",
+   "pos": "ending",
+   "en": "future/aorist stem ending of -εύω verbs (θα δουλέψω)",
+   "tr": "-εύω fiillerinin gelecek kökü (θα δουλέψω)"
+  },
+  {
+   "el": "ήσω",
+   "pos": "ending",
+   "en": "future/aorist stem ending of -άω verbs (θα μιλήσω)",
+   "tr": "-άω fiillerinin gelecek kökü (θα μιλήσω)"
+  },
+  {
+   "el": "αξιότιμος",
+   "forms": [
+    "Αξιότιμε",
+    "Αξιότιμη"
+   ],
+   "pos": "adj",
+   "en": "honourable; Αξιότιμε κύριε = Dear Sir (formal letter)",
+   "tr": "saygıdeğer; Αξιότιμε κύριε = Sayın Bay / Sayın yetkili (resmî mektup)"
+  },
+  {
+   "el": "απόψε",
+   "pos": "adverb",
+   "en": "tonight, this evening",
+   "tr": "bu akşam, bu gece"
+  },
+  {
+   "el": "ας",
+   "pos": "ending",
+   "en": "noun ending, masculine (ο γείτονας); as a word: let's (ας πάμε)",
+   "tr": "isim eki, eril (ο γείτονας); kelime olarak: hadi (ας πάμε)"
+  },
+  {
+   "el": "ογδόντα",
+   "pos": "numeral",
+   "en": "eighty",
+   "tr": "seksen"
+  },
+  {
+   "el": "η γραμματέας",
+   "forms": [
+    "Γραμματέας"
+   ],
+   "pos": "noun",
+   "en": "secretary, receptionist",
+   "tr": "sekreter"
+  },
+  {
+   "el": "δεκαέξι",
+   "pos": "numeral",
+   "en": "sixteen",
+   "tr": "on altı"
+  },
+  {
+   "el": "δεκαεννέα",
+   "forms": [
+    "δεκαεννιά"
+   ],
+   "pos": "numeral",
+   "en": "nineteen (also δεκαεννιά)",
+   "tr": "on dokuz (ayrıca δεκαεννιά)"
+  },
+  {
+   "el": "δεκαεπτά",
+   "forms": [
+    "δεκαεφτά"
+   ],
+   "pos": "numeral",
+   "en": "seventeen (also δεκαεφτά)",
+   "tr": "on yedi (ayrıca δεκαεφτά)"
+  },
+  {
+   "el": "δεκαοκτώ",
+   "forms": [
+    "δεκαοχτώ"
+   ],
+   "pos": "numeral",
+   "en": "eighteen (also δεκαοχτώ)",
+   "tr": "on sekiz (ayrıca δεκαοχτώ)"
+  },
+  {
+   "el": "δεκαπέντε",
+   "pos": "numeral",
+   "en": "fifteen",
+   "tr": "on beş"
+  },
+  {
+   "el": "δεκατέσσερα",
+   "pos": "numeral",
+   "en": "fourteen (δεκατέσσερις with masculine and feminine nouns)",
+   "tr": "on dört (eril ve dişille δεκατέσσερις)"
+  },
+  {
+   "el": "δεκατρία",
+   "pos": "numeral",
+   "en": "thirteen (δεκατρείς with masculine and feminine nouns)",
+   "tr": "on üç (eril ve dişille δεκατρείς)"
+  },
+  {
+   "el": "δυόμισι",
+   "forms": [
+    "Δυόμισι"
+   ],
+   "pos": "numeral",
+   "en": "two and a half",
+   "tr": "iki buçuk"
+  },
+  {
+   "el": "δώδεκα",
+   "pos": "numeral",
+   "en": "twelve",
+   "tr": "on iki"
+  },
+  {
+   "el": "είκοσι",
+   "pos": "numeral",
+   "en": "twenty",
+   "tr": "yirmi"
+  },
+  {
+   "el": "εβδομήντα",
+   "pos": "numeral",
+   "en": "seventy",
+   "tr": "yetmiş"
+  },
+  {
+   "el": "ο εγγονός",
+   "forms": [
+    "εγγονό",
+    "εγγονός"
+   ],
+   "pos": "noun",
+   "en": "grandson (η εγγονή = granddaughter)",
+   "tr": "torun (erkek); η εγγονή = kız torun"
+  },
+  {
+   "el": "ει",
+   "pos": "ending",
+   "en": "verb ending: he, she, it (έχει, γράφει)",
+   "tr": "fiil eki: o (έχει, γράφει)"
+  },
+  {
+   "el": "εις",
+   "pos": "ending",
+   "en": "verb ending: you, one person (έχεις, γράφεις)",
+   "tr": "fiil eki: sen (έχεις, γράφεις)"
+  },
+  {
+   "el": "εκατό",
+   "pos": "numeral",
+   "en": "a hundred",
+   "tr": "yüz"
+  },
+  {
+   "el": "η εκτίμηση",
+   "pos": "noun",
+   "en": "esteem; Με εκτίμηση = Yours faithfully",
+   "tr": "saygı, takdir; Με εκτίμηση = Saygılarımla"
+  },
+  {
+   "el": "εμπρός",
+   "forms": [
+    "Εμπρός"
+   ],
+   "pos": "interjection",
+   "en": "hello? (answering the phone); forward",
+   "tr": "alo (telefonu açarken); ileri"
+  },
+  {
+   "el": "ενενήντα",
+   "pos": "numeral",
+   "en": "ninety",
+   "tr": "doksan"
+  },
+  {
+   "el": "εξήντα",
+   "pos": "numeral",
+   "en": "sixty",
+   "tr": "altmış"
+  },
+  {
+   "el": "επισκευάζω",
+   "forms": [
+    "επισκευάστηκε"
+   ],
+   "pos": "verb",
+   "en": "to repair (επισκευάστηκε = was repaired)",
+   "tr": "tamir etmek (επισκευάστηκε = tamir edildi)"
+  },
+  {
+   "el": "εσένα",
+   "forms": [
+    "σένα"
+   ],
+   "pos": "pronoun",
+   "en": "you (stressed object: για σένα = for you)",
+   "tr": "seni, sana (vurgulu: για σένα = senin için)"
+  },
+  {
+   "el": "ετε",
+   "pos": "ending",
+   "en": "verb ending: you, formal or several (έχετε, γράφετε)",
+   "tr": "fiil eki: siz (έχετε, γράφετε)"
+  },
+  {
+   "el": "ευτυχώς",
+   "forms": [
+    "Ευτυχώς"
+   ],
+   "pos": "adverb",
+   "en": "luckily, thank goodness",
+   "tr": "neyse ki, çok şükür"
+  },
+  {
+   "el": "εύω",
+   "pos": "ending",
+   "en": "verb ending (δουλεύω, ταξιδεύω); future -έψω",
+   "tr": "fiil eki (δουλεύω, ταξιδεύω); gelecekte -έψω"
+  },
+  {
+   "el": "ο κατάλογος",
+   "forms": [
+    "κατάλογο"
+   ],
+   "pos": "noun",
+   "en": "menu; list",
+   "tr": "menü; liste"
+  },
+  {
+   "el": "λευκός",
+   "forms": [
+    "Λευκός",
+    "Λευκό",
+    "λευκό"
+   ],
+   "pos": "adj",
+   "en": "white (ο Λευκός Πύργος = the White Tower)",
+   "tr": "beyaz (ο Λευκός Πύργος = Beyaz Kule)"
+  },
+  {
+   "el": "μα",
+   "pos": "ending",
+   "en": "noun ending, neuter (το πάτωμα)",
+   "tr": "isim eki, nötr (το πάτωμα)"
+  },
+  {
+   "el": "νω",
+   "pos": "ending",
+   "en": "verb ending (πληρώνω); future often -σω",
+   "tr": "fiil eki (πληρώνω); gelecekte çoğu zaman -σω"
+  },
+  {
+   "el": "πενήντα",
+   "pos": "numeral",
+   "en": "fifty",
+   "tr": "elli"
+  },
+  {
+   "el": "περαστικά",
+   "forms": [
+    "Περαστικά"
+   ],
+   "pos": "phrase",
+   "en": "get well soon",
+   "tr": "geçmiş olsun"
+  },
+  {
+   "el": "ο πύργος",
+   "forms": [
+    "Πύργος",
+    "Πύργο",
+    "πύργο"
+   ],
+   "pos": "noun",
+   "en": "tower (ο Λευκός Πύργος = the White Tower in Thessaloniki)",
+   "tr": "kule (ο Λευκός Πύργος = Selanik'teki Beyaz Kule)"
+  },
+  {
+   "el": "τριάντα",
+   "pos": "numeral",
+   "en": "thirty",
+   "tr": "otuz"
+  },
+  {
+   "el": "ος",
+   "pos": "ending",
+   "en": "noun ending, usually masculine (ο φούρνος)",
+   "tr": "isim eki, genellikle eril (ο φούρνος)"
+  },
+  {
+   "el": "ης",
+   "pos": "ending",
+   "en": "noun ending, masculine (ο μπακάλης)",
+   "tr": "isim eki, eril (ο μπακάλης)"
+  },
+  {
+   "el": "σαράντα",
+   "pos": "numeral",
+   "en": "forty",
+   "tr": "kırk"
+  },
+  {
+   "el": "στρίβω",
+   "forms": [
+    "Στρίψτε",
+    "στρίψτε"
+   ],
+   "pos": "verb",
+   "en": "to turn (στρίψτε δεξιά = turn right)",
+   "tr": "dönmek (στρίψτε δεξιά = sağa dönün)"
+  },
+  {
+   "el": "συγγνώμη",
+   "forms": [
+    "Συγγνώμη"
+   ],
+   "pos": "interjection",
+   "en": "sorry; excuse me",
+   "tr": "pardon, özür dilerim; affedersiniz"
+  },
+  {
+   "el": "συνεχίζω",
+   "forms": [
+    "Συνεχίστε",
+    "συνεχίστε"
+   ],
+   "pos": "verb",
+   "en": "to continue (συνεχίστε ευθεία = go straight on)",
+   "tr": "devam etmek (συνεχίστε ευθεία = dümdüz devam edin)"
+  },
+  {
+   "el": "σω",
+   "pos": "ending",
+   "en": "future stem ending (θα αγοράσω, θα πληρώσω)",
+   "tr": "gelecek kökünün eki (θα αγοράσω, θα πληρώσω)"
+  },
+  {
+   "el": "ουμε",
+   "pos": "ending",
+   "en": "verb ending: we (έχουμε, γράφουμε)",
+   "tr": "fiil eki: biz (έχουμε, γράφουμε)"
+  },
+  {
+   "el": "ουν",
+   "pos": "ending",
+   "en": "verb ending: they (έχουν, γράφουν)",
+   "tr": "fiil eki: onlar (έχουν, γράφουν)"
+  },
+  {
+   "el": "φω",
+   "pos": "ending",
+   "en": "verb ending (γράφω); future -ψω",
+   "tr": "fiil eki (γράφω); gelecekte -ψω"
+  },
+  {
+   "el": "χρησιμοποιώ",
+   "forms": [
+    "χρησιμοποιήστε",
+    "χρησιμοποιούμε"
+   ],
+   "pos": "verb",
+   "en": "to use (χρησιμοποιήστε = please use)",
+   "tr": "kullanmak (χρησιμοποιήστε = kullanın)"
+  },
+  {
+   "el": "ψω",
+   "pos": "ending",
+   "en": "future stem ending (θα γράψω, θα δουλέψω)",
+   "tr": "gelecek kökünün eki (θα γράψω, θα δουλέψω)"
+  },
+  {
+   "el": "ω",
+   "pos": "ending",
+   "en": "verb ending: I (έχω, γράφω)",
+   "tr": "fiil eki: ben (έχω, γράφω)"
+  },
+  {
+   "el": "ωχ",
+   "forms": [
+    "Ωχ"
+   ],
+   "pos": "interjection",
+   "en": "oh no!",
+   "tr": "eyvah! ay!"
+  }
+ ],
+ "names": {
+  "Αϊντίν": "person",
+  "Μανώλης": "person",
+  "Χαλκιδική": "place",
+  "Καλαμαριά": "place",
+  "Νικολαΐδη": "Νικολαΐδης",
+  "Νικολαΐδης": "person"
+ }
+}

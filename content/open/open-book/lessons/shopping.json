@@ -1,0 +1,664 @@
+{
+  "id": "open-a1-b1.shopping",
+  "curriculum": "open-a1-b1",
+  "stage": "shopping",
+  "level": "A1",
+  "title": {
+    "tr": "Alışveriş: fırın, pazar, bakkal",
+    "en": "Shopping: the bakery, the market, the grocer"
+  },
+  "minutes": 13,
+  "version": 1,
+  "sections": [
+    {
+      "kind": "intro",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümde **bir dükkânda bir şey istemeyi**, **fiyatı sormayı** ve **kapıdaki çalışma saatlerini okumayı** öğreneceksin.\n\nİki yeni kural var: **nesne hâli** (*ο καφές* → *τον καφέ*) ve **çoğul** (*δύο μήλα*). Daha önce duyduğun *πίνω καφέ*, *με λένε Γιώργο*, *από την Τουρκία* sözlerinin nedeni de bu.",
+          "en": "In this chapter you learn to **ask for something in a shop**, **ask the price** and **read the opening hours on the door**.\n\nThere are two new rules: the **object form** (*ο καφές* → *τον καφέ*) and the **plural** (*δύο μήλα*). They also explain what you have already heard: *πίνω καφέ*, *με λένε Γιώργο*, *από την Τουρκία*."
+        }
+      ]
+    },
+    {
+      "kind": "warmup",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Ekmeği fırından mı alırsın, marketten mi? Pazar günü dükkânlar açık mı? Zeynep'in cumartesi sabahına bak.",
+          "en": "Bread from a bakery or a supermarket? Are the shops open on Sunday? Here is Zeynep's Saturday morning."
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "title": {
+        "tr": "Cumartesi sabahı",
+        "en": "Saturday morning"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Önce dinle, sonra oku. Zeynep önce fırına, sonra semt pazarına gidiyor.",
+          "en": "Listen first, then read. Zeynep goes to the bakery, then to the street market."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Fırında. Fırıncı Eleni Hanım.",
+            "en": "At the bakery. The baker is Mrs Eleni."
+          },
+          "lines": [
+            {
+              "who": "Ελένη",
+              "el": "Καλημέρα! Ορίστε;",
+              "tr": "Günaydın! Buyurun?",
+              "en": "Good morning! Can I help you?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Καλημέρα. Θα ήθελα ένα ψωμί, παρακαλώ. Πόσο κάνει;",
+              "tr": "Günaydın. Bir ekmek istiyorum lütfen. Ne kadar?",
+              "en": "Morning. I'd like a loaf of bread, please. How much is it?"
+            },
+            {
+              "who": "Ελένη",
+              "el": "Ένα ευρώ.",
+              "tr": "Bir euro.",
+              "en": "One euro."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Έχετε τυρόπιτα;",
+              "tr": "Peynirli böreğiniz var mı?",
+              "en": "Do you have cheese pie?"
+            },
+            {
+              "who": "Ελένη",
+              "el": "Ναι, έχουμε. Θέλετε μια τυρόπιτα;",
+              "tr": "Evet, var. Bir börek ister misiniz?",
+              "en": "Yes, we do. Would you like a cheese pie?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ναι, παίρνω μια. Πόσο κάνει;",
+              "tr": "Evet, bir tane alıyorum. Kaç para?",
+              "en": "Yes, I'll take one. How much is it?"
+            },
+            {
+              "who": "Ελένη",
+              "el": "Δύο ευρώ.",
+              "tr": "İki euro.",
+              "en": "Two euros."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ορίστε τρία ευρώ. Ευχαριστώ!",
+              "tr": "Buyurun, üç euro. Teşekkürler!",
+              "en": "Here's three euros. Thank you!"
+            },
+            {
+              "who": "Ελένη",
+              "el": "Παρακαλώ. Γεια σας!",
+              "tr": "Rica ederim. Hoşça kalın!",
+              "en": "You're welcome. Goodbye!"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "[[Θα ήθελα]] şimdilik bir kalıp: \"... istiyorum\"; *θέλω* fiilinden daha kibar. [[Ορίστε;]] soru olarak \"buyurun, ne istersiniz?\"; [[Ορίστε τρία ευρώ.]] cümlesinde \"buyurun, alın\". [[Πόσο κάνει;]] bir şeyin, [[Πόσο κάνουν;]] birkaç şeyin fiyatını sorar. [[Θέλετε;]] \"ister misiniz?\", [[κιλά]] \"kilolar\".",
+          "en": "[[Θα ήθελα]] is a set phrase for now: \"I'd like …\", more polite than *θέλω*. [[Ορίστε;]] as a question is \"Can I help you?\"; in [[Ορίστε τρία ευρώ.]] it is \"here you are\". [[Πόσο κάνει;]] asks the price of one thing, [[Πόσο κάνουν;]] of several. [[Θέλετε;]] is \"would you like?\", [[κιλά]] is \"kilos\"."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Semt pazarında. Tezgâhta Stelios Bey.",
+            "en": "At the street market. Mr Stelios is at the stall."
+          },
+          "lines": [
+            {
+              "who": "Στέλιος",
+              "el": "Καλημέρα, κυρία! Ντομάτες, μήλα, πατάτες!",
+              "tr": "Günaydın hanımefendi! Domates, elma, patates!",
+              "en": "Morning, madam! Tomatoes, apples, potatoes!"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Καλημέρα! Πόσο κάνουν οι ντομάτες;",
+              "tr": "Günaydın! Domatesler kaç para?",
+              "en": "Morning! How much are the tomatoes?"
+            },
+            {
+              "who": "Στέλιος",
+              "el": "Δύο ευρώ το κιλό.",
+              "tr": "Kilosu iki euro.",
+              "en": "Two euros a kilo."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Παίρνω ένα κιλό. Και τα μήλα; Πόσο κάνουν;",
+              "tr": "Bir kilo alıyorum. Ya elmalar? Kaç para?",
+              "en": "I'll take a kilo. And the apples? How much are they?"
+            },
+            {
+              "who": "Στέλιος",
+              "el": "Ένα ευρώ το κιλό.",
+              "tr": "Kilosu bir euro.",
+              "en": "One euro a kilo."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Θα ήθελα δύο κιλά μήλα.",
+              "tr": "İki kilo elma istiyorum.",
+              "en": "I'd like two kilos of apples."
+            },
+            {
+              "who": "Στέλιος",
+              "el": "Ορίστε. Θέλετε και πατάτες;",
+              "tr": "Buyurun. Patates de ister misiniz?",
+              "en": "Here you are. Would you like potatoes too?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Όχι, ευχαριστώ. Πόσο κάνουν όλα;",
+              "tr": "Hayır, teşekkürler. Hepsi ne kadar?",
+              "en": "No, thank you. How much is it all?"
+            },
+            {
+              "who": "Στέλιος",
+              "el": "Τέσσερα ευρώ.",
+              "tr": "Dört euro.",
+              "en": "Four euros."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "[[Πόσο κάνουν όλα;]] \"Hepsi ne kadar?\" ([[όλα]] \"hepsi\").\n\nAkşam Zeynep bakkalın kapısında bir yazı görüyor. [[το μπακάλικο]] \"bakkal dükkânı\", [[ο μπακάλης]] bakkalın kendisi. Saatler **rakamla** yazılmış: *8:00 – 21:00* [[από τις οχτώ ως τις εννιά]] diye okunur (sabah sekiz, akşam dokuz). [[ως]] \"-e kadar\". Şimdilik bu bir kalıp; saati söylemek sonraki bölümde.",
+          "en": "[[Πόσο κάνουν όλα;]] \"How much is it all?\" ([[όλα]] \"all\").\n\nIn the evening Zeynep sees a notice on the grocer's door. [[το μπακάλικο]] is \"the grocer's shop\", [[ο μπακάλης]] the grocer himself. The hours are in **digits**: *8:00 – 21:00* is read [[από τις οχτώ ως τις εννιά]] (eight in the morning, nine in the evening). [[ως]] means \"until\". A set phrase for now; telling the time comes next chapter."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Μπακάλικο «Ο Νίκος»",
+              "tr": "Bakkal «Niko»",
+              "en": "Grocer's «Nikos»"
+            },
+            {
+              "el": "Δευτέρα – Παρασκευή: 8:00 – 21:00",
+              "tr": "Pazartesi – Cuma: 08.00 – 21.00",
+              "en": "Monday – Friday: 8:00 – 21:00",
+              "note": {
+                "tr": "Okunuşu: [[από τις οχτώ ως τις εννιά]].",
+                "en": "Read as: [[από τις οχτώ ως τις εννιά]]."
+              }
+            },
+            {
+              "el": "Σάββατο: 9:00 – 20:00",
+              "tr": "Cumartesi: 09.00 – 20.00",
+              "en": "Saturday: 9:00 – 20:00",
+              "note": {
+                "tr": "Okunuşu: [[από τις εννιά ως τις οχτώ]] (sabah dokuz, akşam sekiz).",
+                "en": "Read as: [[από τις εννιά ως τις οχτώ]] (nine in the morning, eight in the evening)."
+              }
+            },
+            {
+              "el": "Κυριακή: κλειστό",
+              "tr": "Pazar: kapalı",
+              "en": "Sunday: closed"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "Zeynep kendi kendine: [[Την Κυριακή το μπακάλικο είναι κλειστό. Παίρνω γάλα τώρα.]] ([[τώρα]] \"şimdi\".)",
+          "en": "Zeynep says to herself: [[Την Κυριακή το μπακάλικο είναι κλειστό. Παίρνω γάλα τώρα.]] ([[τώρα]] means \"now\".)"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Metne göre iki soru.",
+          "en": "Two questions on the text."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch05-q-bakery",
+            "open-book/ch05-q-tf"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Nesne hâli: τον, την, το",
+        "en": "The object form: τον, την, το"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Fiilin etkilediği şey (**nesne**) Yunancada ayrı bir biçim alır: **accusative**. Türkçedeki *-i hâli* gibi (*kahveyi*, *ekmeği*), ama ek yok: **artikel** ve **isim sonu** değişir.\n\nBunu zaten biliyorsun: *πίνω καφέ* (*καφές* değil), *με λένε Γιώργο* (*Γιώργος* değil), *από την Τουρκία*: *από* sözünden sonra da bu biçim gelir.\n\nErilde artikel ve isim sonu değişir, dişilde yalnızca artikel; **nötr** hiç değişmez.",
+          "en": "The thing a verb acts on (the **object**) takes its own form in Greek, the **accusative**. Think of English *he* → *him*; in Greek the **article** and the **noun's ending** change.\n\nYou already know it: *πίνω καφέ* (not *καφές*), *με λένε Γιώργο* (not *Γιώργος*), *από την Τουρκία*: *από* is followed by this form too.\n\nIn the masculine both the article and the ending change, in the feminine only the article; the **neuter** never changes."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Özne ve nesne",
+            "en": "Subject and object"
+          },
+          "head": [
+            {
+              "tr": "tür",
+              "en": "type"
+            },
+            {
+              "tr": "özne",
+              "en": "subject"
+            },
+            {
+              "tr": "nesne",
+              "en": "object"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "tr": "eril, -ος",
+                "en": "masculine, -ος"
+              },
+              "ο φούρνος",
+              "τον φούρνο"
+            ],
+            [
+              {
+                "tr": "eril, -ης",
+                "en": "masculine, -ης"
+              },
+              "ο μπακάλης",
+              "τον μπακάλη"
+            ],
+            [
+              {
+                "tr": "eril, -ας",
+                "en": "masculine, -ας"
+              },
+              "ο γείτονας",
+              "τον γείτονα"
+            ],
+            [
+              {
+                "tr": "eril, -ές",
+                "en": "masculine, -ές"
+              },
+              "ο καφές",
+              "τον καφέ"
+            ],
+            [
+              {
+                "tr": "dişil",
+                "en": "feminine"
+              },
+              "η ντομάτα",
+              "την ντομάτα"
+            ],
+            [
+              {
+                "tr": "dişil",
+                "en": "feminine"
+              },
+              "η Σμύρνη",
+              "τη Σμύρνη"
+            ],
+            [
+              {
+                "tr": "nötr",
+                "en": "neuter"
+              },
+              "το ψωμί, το μήλο",
+              "το ψωμί, το μήλο"
+            ]
+          ],
+          "note": {
+            "tr": "Eril isimde son -ς düşer. Dişil isim aynı kalır, yalnızca artikel *η* → *την*/*τη* olur.",
+            "en": "A masculine noun loses its final -ς. A feminine noun stays the same; only the article changes, *η* → *την* / *τη*."
+          }
+        },
+        {
+          "type": "prose",
+          "tr": "**ένας / μια / ένα** (\"bir\") de öyle: yalnızca eril değişir, *ένας* → **έναν**. [[Θέλω έναν καφέ, μια τυρόπιτα, ένα ψωμί.]]\n\n**Sondaki -ν:** *τον* hep -ν ile yazılır. *την* ünlüden ve **κ π τ ξ ψ μπ ντ γκ τσ τζ** harflerinden önce -ν'yi korur, başka ünsüzden önce düşer: *την Κυριακή*, *την ντομάτα*, ama *τη Σμύρνη*, *τη Δευτέρα*.\n\n**Günler:** nesne hâli \"... günü\" demek: [[την Κυριακή]] pazar günü, [[τη Δευτέρα]] pazartesi günü; *το Σάββατο* nötr, değişmez.",
+          "en": "**ένας / μια / ένα** (\"a, one\") do the same: only the masculine changes, *ένας* → **έναν**. [[Θέλω έναν καφέ, μια τυρόπιτα, ένα ψωμί.]]\n\n**The final -ν:** *τον* always keeps it. *την* keeps it before a vowel and before **κ π τ ξ ψ μπ ντ γκ τσ τζ**, and drops it before other consonants: *την Κυριακή*, *την ντομάτα*, but *τη Σμύρνη*, *τη Δευτέρα*.\n\n**Days:** the object form means \"on …\": [[την Κυριακή]] on Sunday, [[τη Δευτέρα]] on Monday; *το Σάββατο* is neuter, so it stays."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Βλέπω τον μπακάλη.",
+              "tr": "Bakkalı görüyorum.",
+              "en": "I see the grocer."
+            },
+            {
+              "el": "Παίρνουμε τον καφέ και την τυρόπιτα.",
+              "tr": "Kahveyi ve böreği alıyoruz.",
+              "en": "We take the coffee and the cheese pie."
+            },
+            {
+              "el": "Είμαι από τη Σμύρνη.",
+              "tr": "İzmirliyim.",
+              "en": "I'm from Izmir."
+            },
+            {
+              "el": "Την Κυριακή το σούπερ μάρκετ είναι κλειστό.",
+              "tr": "Pazar günü süpermarket kapalı.",
+              "en": "On Sunday the supermarket is closed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Çoğul: οι, τα",
+        "en": "The plural: οι, τα"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Çoğulda artikel **ο → οι**, **η → οι**, **το → τα**. Nötrde özne ile nesne tamamen aynı. Dişilde isim aynı kalır, yalnızca artikel değişir: **οι → τις**. Erilde artikel **οι → τους** olur, *-ος* isimlerin sonu da: **-οι → -ους**.\n\nİsim sonları: **-ος → -οι**, **-ας → -ες**, **-α / -η → -ες**, **-ο → -α**, **-ι → -ια** (*ψωμί* → *ψωμιά*: *ια* tek hece okunur, pso-MYA). Türkçeden gelen *-ές* ve *-ης* kelimelerde **-δ-** girer: *καφέδες*, *κεφτέδες*, *μεζέδες*, *μπακάληδες*.",
+          "en": "In the plural the article is **ο → οι**, **η → οι**, **το → τα**. In the neuter, subject and object are exactly the same. In the feminine the noun stays and only the article changes: **οι → τις**. In the masculine the article becomes **τους**, and nouns in *-ος* change too: **-οι → -ους**.\n\nEndings: **-ος → -οι**, **-ας → -ες**, **-α / -η → -ες**, **-ο → -α**, **-ι → -ια** (*ψωμί* → *ψωμιά*: *ια* is one syllable, pso-MYA). Words of Turkish origin in *-ές* and *-ης* add **-δ-**: *καφέδες*, *κεφτέδες*, *μεζέδες*, *μπακάληδες*."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Tekil ve çoğul",
+            "en": "Singular and plural"
+          },
+          "head": [
+            {
+              "tr": "tekil",
+              "en": "singular"
+            },
+            {
+              "tr": "çoğul (özne)",
+              "en": "plural (subject)"
+            },
+            {
+              "tr": "çoğul (nesne)",
+              "en": "plural (object)"
+            }
+          ],
+          "rows": [
+            [
+              "ο φούρνος",
+              "οι φούρνοι",
+              "τους φούρνους"
+            ],
+            [
+              "ο γείτονας",
+              "οι γείτονες",
+              "τους γείτονες"
+            ],
+            [
+              "ο καφές",
+              "οι καφέδες",
+              "τους καφέδες"
+            ],
+            [
+              "ο μπακάλης",
+              "οι μπακάληδες",
+              "τους μπακάληδες"
+            ],
+            [
+              "η ντομάτα",
+              "οι ντομάτες",
+              "τις ντομάτες"
+            ],
+            [
+              "το μήλο",
+              "τα μήλα",
+              "τα μήλα"
+            ],
+            [
+              "το ψωμί",
+              "τα ψωμιά",
+              "τα ψωμιά"
+            ]
+          ],
+          "note": {
+            "tr": "Diğer -ι'li nötrler: *το κλειδί* → *τα κλειδιά*, *το σπίτι* → *τα σπίτια*.",
+            "en": "Other neuters in -ι: *το κλειδί* → *τα κλειδιά*, *το σπίτι* → *τα σπίτια*."
+          }
+        },
+        {
+          "type": "prose",
+          "tr": "**Sayılar:** sayıdan sonra isim **çoğuldur** (Türkçede *iki elma*, tekil!): *δύο μήλα*. [[τρία]] ve [[τέσσερα]] nötrle, [[τρεις]] ve [[τέσσερις]] eril ve dişille gelir: *τρία μήλα*, *τρεις ντομάτες*.",
+          "en": "**Numbers:** after a number the noun is **plural** (Turkish keeps it singular: *iki elma*): *δύο μήλα*. [[τρία]] and [[τέσσερα]] go with neuter nouns, [[τρεις]] and [[τέσσερις]] with masculine and feminine: *τρία μήλα*, *τρεις ντομάτες*."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Οι ντομάτες είναι δύο ευρώ το κιλό.",
+              "tr": "Domateslerin kilosu iki euro.",
+              "en": "The tomatoes are two euros a kilo."
+            },
+            {
+              "el": "Θέλω τρία μήλα και δύο ψωμιά.",
+              "tr": "Üç elma ve iki ekmek istiyorum.",
+              "en": "I want three apples and two loaves of bread."
+            },
+            {
+              "el": "Έχετε τρεις τυρόπιτες;",
+              "tr": "Üç peynirli böreğiniz var mı?",
+              "en": "Do you have three cheese pies?"
+            },
+            {
+              "el": "Οι γείτονες δουλεύουν στο σπίτι.",
+              "tr": "Komşular evde çalışıyor.",
+              "en": "The neighbours work at home."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "words",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümün kelimeleri: alışveriş, haftanın günleri, *παίρνω* ve *πόσο;*.",
+          "en": "The words of this chapter: shopping, the days of the week, *παίρνω* and *πόσο;*."
+        },
+        {
+          "type": "words",
+          "items": [
+            "open-book/ch05-psomi",
+            "open-book/ch05-tyropita",
+            "open-book/ch05-gala",
+            "open-book/ch05-milo",
+            "open-book/ch05-patata",
+            "open-book/ch05-fruta",
+            "open-book/ch05-lachanika",
+            "open-book/ch05-kilo",
+            "open-book/ch05-evro",
+            "open-book/ch05-fournos",
+            "open-book/ch05-periptero",
+            "open-book/ch05-supermarket",
+            "open-book/ch05-laiki",
+            "open-book/ch05-anoichtos",
+            "open-book/ch05-kleistos",
+            "open-book/ch05-deftera",
+            "open-book/ch05-triti",
+            "open-book/ch05-tetarti",
+            "open-book/ch05-pempti",
+            "open-book/ch05-paraskevi",
+            "open-book/ch05-savvato",
+            "open-book/ch05-kyriaki",
+            "open-book/ch05-perno",
+            "open-book/ch05-poso"
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "Fiyatlar için 11–100 arası sayılar kart olarak gelmez; tablodan öğren. **21–99:** onluk + birlik: *είκοσι πέντε* (25).",
+          "en": "For prices you need 11–100. They do not come as cards; learn them from the table. **21–99:** tens + ones: *είκοσι πέντε* (25)."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "11–100",
+            "en": "11–100"
+          },
+          "head": [
+            {
+              "tr": "sayı",
+              "en": "number"
+            },
+            {
+              "tr": "Yunanca",
+              "en": "Greek"
+            },
+            {
+              "tr": "sayı",
+              "en": "number"
+            },
+            {
+              "tr": "Yunanca",
+              "en": "Greek"
+            }
+          ],
+          "rows": [
+            [
+              "11",
+              "έντεκα",
+              "12",
+              "δώδεκα"
+            ],
+            [
+              "13",
+              "δεκατρία",
+              "14",
+              "δεκατέσσερα"
+            ],
+            [
+              "15",
+              "δεκαπέντε",
+              "16",
+              "δεκαέξι"
+            ],
+            [
+              "17",
+              "δεκαεπτά",
+              "18",
+              "δεκαοκτώ"
+            ],
+            [
+              "19",
+              "δεκαεννέα",
+              "20",
+              "είκοσι"
+            ],
+            [
+              "30",
+              "τριάντα",
+              "40",
+              "σαράντα"
+            ],
+            [
+              "50",
+              "πενήντα",
+              "60",
+              "εξήντα"
+            ],
+            [
+              "70",
+              "εβδομήντα",
+              "80",
+              "ογδόντα"
+            ],
+            [
+              "90",
+              "ενενήντα",
+              "100",
+              "εκατό"
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "**Fiyat:** önce euro, sonra [[το λεπτό]] (sent, çoğul *λεπτά*): 2,50 € = [[δύο ευρώ και πενήντα λεπτά]] ya da [[δυόμισι ευρώ]] (iki buçuk euro).",
+          "en": "**A price:** euros first, then [[το λεπτό]] (cent, plural *λεπτά*): €2.50 = [[δύο ευρώ και πενήντα λεπτά]] or [[δυόμισι ευρώ]] (two and a half euros)."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Δύο ευρώ και πενήντα λεπτά.",
+              "tr": "İki euro elli sent.",
+              "en": "Two euros fifty."
+            },
+            {
+              "el": "Είκοσι πέντε ευρώ.",
+              "tr": "Yirmi beş euro.",
+              "en": "Twenty-five euros."
+            },
+            {
+              "el": "Πενήντα λεπτά.",
+              "tr": "Elli sent.",
+              "en": "Fifty cents."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "tips",
+      "blocks": [
+        {
+          "type": "tip",
+          "kind": "tr_bridge",
+          "tr": "**Sayıdan sonra çoğul.** Türkçede *iki ekmek* (tekil); Yunancada *δύο ψωμιά* (çoğul).",
+          "en": "**Plural after a number.** Greek says *δύο ψωμιά*, just like English *two loaves*; a Turkish speaker has to remember it, since Turkish says *iki ekmek*."
+        },
+        {
+          "type": "tip",
+          "kind": "mistake",
+          "tr": "**Sıfat isme uyar:** *ο φούρνος είναι ανοιχτός*, *η λαϊκή είναι ανοιχτή*, *το σούπερ μάρκετ είναι ανοιχτό* (aynısı *κλειστός* için). Kapıda çoğu zaman *κλειστά* görürsün. *στον φούρνο* \"fırında\", *στο κρεοπωλείο* \"kasapta\": *στον* = *σε* + *τον*, kuralı sonraki bölümde göreceksin.",
+          "en": "**Adjectives agree with the noun:** *ο φούρνος είναι ανοιχτός*, *η λαϊκή είναι ανοιχτή*, *το σούπερ μάρκετ είναι ανοιχτό* (same for *κλειστός*). On a door you often see *κλειστά*. *στον φούρνο* \"at the bakery\", *στο κρεοπωλείο* \"at the butcher's\": *στον* = *σε* + *τον*; the rule comes in a later chapter."
+        },
+        {
+          "type": "tip",
+          "kind": "exam",
+          "exam_task": "a2ltr.reading.notices_tf",
+          "tr": "A2 okuma sınavında gün ve saatli bir **tabela ya da ilan** verilir; cümleler doğru mu yanlış mı işaretlersin. Gün adlarına (*Δευτέρα – Παρασκευή* = pazartesi–cuma), *κλειστό* / *κλειστά* sözüne ve saatlere bak. Cevap ilanın içinde; her kelimeyi çevirmen gerekmez.",
+          "en": "In the A2 reading exam you get a **notice or sign** with days and hours and mark statements true or false. Look at the day names (*Δευτέρα – Παρασκευή* = Monday to Friday), at *κλειστό* / *κλειστά*, and at the hours. The answer is in the notice; you do not have to translate every word."
+        }
+      ]
+    },
+    {
+      "kind": "try",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Şimdi sen dene. Yanlış yapmak serbest: bunlar sınav hazırlığı hesabına girmez.",
+          "en": "Now you try. Mistakes are fine here: these do not count towards your exam readiness."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch05-try-ton",
+            "open-book/ch05-try-mila",
+            "open-book/ch05-try-numbers"
+          ]
+        }
+      ]
+    }
+  ]
+}

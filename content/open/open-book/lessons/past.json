@@ -1,0 +1,702 @@
+{
+  "id": "open-a1-b1.past",
+  "curriculum": "open-a1-b1",
+  "stage": "past",
+  "level": "A2",
+  "title": {
+    "tr": "Geçen hafta sonu ne yaptın? Geçmiş zaman",
+    "en": "What did you do last weekend? The past"
+  },
+  "minutes": 14,
+  "version": 1,
+  "sections": [
+    {
+      "kind": "intro",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümde **geçmişte ne yaptığını** anlatmayı öğreneceksin: dün, hafta sonu, geçen yıl. Bunun için Yunancanın bitmiş işleri anlatan geçmiş zamanını (**aorist**) ve en sık kullanılan düzensiz fiilleri öğreneceksin.\n\nAnahtar nokta: gelecek zamandaki kökü zaten biliyorsun. θα **γράψω** \"yazacağım\" → **έγραψα** \"yazdım\". Kök aynı; yalnızca sonlar ve vurgu değişiyor. Yani bir zamanı öğrenince öbürü de elinde.",
+          "en": "In this chapter you learn to say **what you did**: yesterday, last weekend, last year. You learn the aorist, the past tense for finished actions, and the most common irregular verbs.\n\nThe key point: you already know the stem from the future. θα **γράψω** \"I will write\" → **έγραψα** \"I wrote\". The stem is the same; only the endings and the stress change. Learn one tense and you have the other."
+        }
+      ]
+    },
+    {
+      "kind": "warmup",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Geçen hafta sonu ne yaptın? Nereye gittin, ne yedin, kaçta döndün? Bu bölümün sonunda bunları Yunanca anlatabileceksin.",
+          "en": "What did you do last weekend? Where did you go, what did you eat, when did you come home? By the end of this chapter you can tell it in Greek."
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "title": {
+        "tr": "Pazartesi sabahı, eczanede",
+        "en": "Monday morning at the pharmacy"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Önce dinle, sonra oku. Fiillerin sonlarına dikkat et: *πέρασα*, *πήγαμε*, *φύγαμε*, *γυρίσαμε*…",
+          "en": "Listen first, then read. Watch the ends of the verbs: *πέρασα*, *πήγαμε*, *φύγαμε*, *γυρίσαμε*…"
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Pazartesi sabahı, eczane. Zeynep'in iş arkadaşı Sofia onunla senli benli konuşuyor (εσύ).",
+            "en": "Monday morning, the pharmacy. Zeynep's colleague Sofia talks to her informally (εσύ)."
+          },
+          "lines": [
+            {
+              "who": "Σοφία",
+              "el": "Καλημέρα, Ζεϊνέπ! Πώς πέρασες το Σαββατοκύριακο;",
+              "tr": "Günaydın Zeynep! Hafta sonunu nasıl geçirdin?",
+              "en": "Morning, Zeynep! How was your weekend?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Καλημέρα, Σοφία! Πέρασα πολύ ωραία! Πήγαμε με τον Γιώργο στη Χαλκιδική, με το αυτοκίνητο.",
+              "tr": "Günaydın Sofia! Çok güzel geçti! Giorgos'la arabayla Halkidiki'ye gittik.",
+              "en": "Morning, Sofia! It was great! Giorgos and I went to Halkidiki by car."
+            },
+            {
+              "who": "Σοφία",
+              "el": "Α, ωραία! Πότε φύγατε;",
+              "tr": "Ah, ne güzel! Ne zaman yola çıktınız?",
+              "en": "Oh, lovely! When did you leave?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Φύγαμε νωρίς, στις έξι. Ξυπνήσαμε στις πέντε!",
+              "tr": "Erkenden, altıda çıktık. Beşte uyandık!",
+              "en": "Early, at six. We woke up at five!"
+            },
+            {
+              "who": "Σοφία",
+              "el": "Ο καιρός ήταν ωραίος;",
+              "tr": "Hava güzel miydi?",
+              "en": "Was the weather nice?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ναι, ήταν ωραίος. Κολυμπήσαμε στη θάλασσα και μετά φάγαμε ψάρι σε ένα χωριό.",
+              "tr": "Evet, güzeldi. Denize girdik, sonra bir köyde balık yedik.",
+              "en": "Yes, it was. We swam in the sea and then ate fish in a village."
+            },
+            {
+              "who": "Σοφία",
+              "el": "Και πότε γυρίσατε;",
+              "tr": "Peki ne zaman döndünüz?",
+              "en": "And when did you get back?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Γυρίσαμε αργά, στις δέκα. Ήμουν πολύ κουρασμένη!",
+              "tr": "Geç döndük, saat onda. Çok yorgundum!",
+              "en": "Late, at ten. I was so tired!"
+            },
+            {
+              "who": "Σοφία",
+              "el": "Εγώ έμεινα στο σπίτι και μαγείρεψα.",
+              "tr": "Ben evde kaldım, yemek yaptım.",
+              "en": "I stayed at home and cooked."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Και τι μαγείρεψες;",
+              "tr": "Ne pişirdin peki?",
+              "en": "And what did you cook?"
+            },
+            {
+              "who": "Σοφία",
+              "el": "Κεφτέδες!",
+              "tr": "Köfte!",
+              "en": "Meatballs!"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "Yeni birkaç kelime: [[Πώς πέρασες το Σαββατοκύριακο;]] şimdilik bir kalıp: \"Hafta sonunu nasıl geçirdin?\" [[κουρασμένη]] \"yorgun\" (Zeynep kadın olduğu için *-η* ile biter), [[το αυτοκίνητο]] \"araba\", [[το ψάρι]] \"balık\", [[οι κεφτέδες]] \"köfte\" (*ο κεφτές* kelimesinin çoğulu).",
+          "en": "A few new words: [[Πώς πέρασες το Σαββατοκύριακο;]] is a set phrase for now: \"How was your weekend?\" [[κουρασμένη]] \"tired\" (it ends in *-η* because Zeynep is a woman), [[το αυτοκίνητο]] \"car\", [[το ψάρι]] \"fish\", [[οι κεφτέδες]] \"meatballs\" (the plural of *ο κεφτές*)."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Zeynep'in günlüğü: cumartesi.",
+            "en": "Zeynep's diary: Saturday."
+          },
+          "lines": [
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Το Σάββατο πήγαμε στη Χαλκιδική με τον Γιώργο.",
+              "tr": "Cumartesi Giorgos'la Halkidiki'ye gittik.",
+              "en": "On Saturday we went to Halkidiki with Giorgos."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Πρώτα κολυμπήσαμε στην παραλία.",
+              "tr": "Önce plajda yüzdük.",
+              "en": "First we swam at the beach."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Μετά φάγαμε ψάρι σε ένα χωριό και ήπιαμε καφέ στην πλατεία.",
+              "tr": "Sonra bir köyde balık yedik, meydanda kahve içtik.",
+              "en": "Then we ate fish in a village and had coffee in the square."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Γυρίσαμε αργά το βράδυ.",
+              "tr": "Akşam geç döndük.",
+              "en": "We came back late in the evening."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Ήμουν πολύ κουρασμένη, αλλά ήταν ένα ωραίο ταξίδι!",
+              "tr": "Çok yorgundum ama güzel bir geziydi!",
+              "en": "I was very tired, but it was a lovely trip!"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Την Κυριακή έμεινα στο σπίτι.",
+              "tr": "Pazar günü evde kaldım.",
+              "en": "On Sunday I stayed at home."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Metne göre iki soru.",
+          "en": "Two questions on the text."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch09-q-transport",
+            "open-book/ch09-q-tf"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Düzenli fiillerin aoristi",
+        "en": "The aorist of regular verbs"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bitmiş bir olayı anlatmak için aorist kullanılır: *dün yazdım*, *cumartesi gittik*. Yapısı kolay: **gelecek zamandaki kök + altı son**: **-α, -ες, -ε, -αμε, -ατε, -αν**. θα γράψω → *γράψ-* → **έγραψα**.\n\nİki şeye dikkat et. Düzenli fiillerde **vurgu sondan üçüncü hecede** durur. Fiil üç heceye ulaşmıyorsa başına bir **έ-** gelir: *γράψα* yalnızca iki hece, o yüzden **έ**γραψα. Sonu bir hece uzatan biçimlerde (γράψαμε) zaten üç hece var, έ- düşer.",
+          "en": "The aorist tells about a finished event: *I wrote yesterday*, *we went on Saturday*. The recipe is easy: **the stem of the future + six endings**: **-α, -ες, -ε, -αμε, -ατε, -αν**. θα γράψω → *γράψ-* → **έγραψα**.\n\nTwo things to watch. In regular verbs **the stress falls on the third syllable from the end**. When the verb is too short to have a third syllable, it gets an **έ-** in front: *γράψα* has only two syllables, so **έ**γραψα. When the ending adds a syllable (γράψαμε), there are already three and the έ- disappears."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Üç düzenli fiil",
+            "en": "Three regular verbs"
+          },
+          "head": [
+            {
+              "tr": "kim",
+              "en": "who"
+            },
+            "γράφω (θα γράψω)",
+            "αγοράζω (θα αγοράσω)",
+            "μιλάω (θα μιλήσω)"
+          ],
+          "rows": [
+            [
+              "εγώ",
+              "έγραψα",
+              "αγόρασα",
+              "μίλησα"
+            ],
+            [
+              "εσύ",
+              "έγραψες",
+              "αγόρασες",
+              "μίλησες"
+            ],
+            [
+              "αυτός, αυτή, αυτό",
+              "έγραψε",
+              "αγόρασε",
+              "μίλησε"
+            ],
+            [
+              "εμείς",
+              "γράψαμε",
+              "αγοράσαμε",
+              "μιλήσαμε"
+            ],
+            [
+              "εσείς",
+              "γράψατε",
+              "αγοράσατε",
+              "μιλήσατε"
+            ],
+            [
+              "αυτοί, αυτές, αυτά",
+              "έγραψαν",
+              "αγόρασαν",
+              "μίλησαν"
+            ]
+          ],
+          "note": {
+            "tr": "Aynı sonlar: δούλεψα (δουλεύω), πλήρωσα (πληρώνω), ταξίδεψα (ταξιδεύω), γύρισα (γυρίζω), μαγείρεψα (μαγειρεύω).",
+            "en": "Same endings: δούλεψα (δουλεύω), πλήρωσα (πληρώνω), ταξίδεψα (ταξιδεύω), γύρισα (γυρίζω), μαγείρεψα (μαγειρεύω)."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Χθες αγόρασα ψωμί.",
+              "tr": "Dün ekmek aldım.",
+              "en": "Yesterday I bought bread."
+            },
+            {
+              "el": "Ο Γιώργος δούλεψε στο σπίτι.",
+              "tr": "Giorgos evde çalıştı.",
+              "en": "Giorgos worked at home."
+            },
+            {
+              "el": "Πλήρωσα εννέα ευρώ.",
+              "tr": "Dokuz euro ödedim.",
+              "en": "I paid nine euros."
+            },
+            {
+              "el": "Πέρσι ταξίδεψα στην Αθήνα με μια φίλη.",
+              "tr": "Geçen yıl bir arkadaşımla Atina'ya seyahat ettim.",
+              "en": "Last year I travelled to Athens with a friend."
+            },
+            {
+              "el": "Μιλήσαμε ελληνικά.",
+              "tr": "Yunanca konuştuk.",
+              "en": "We spoke Greek."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Düzensiz aoristler",
+        "en": "The irregular aorists"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bazı sık fiillerin aoristi gelecek zamandaki köke benzemez: **πάω → πήγα**. Bunları olduğu gibi öğrenmen gerekir. İyi haber: **sonlar aynı** (-α, -ες, -ε, -αμε, -ατε, -αν).\n\nİki grup var. *έφαγα, έκανα, έμεινα, έμαθα, έφυγα, κατάλαβα* düzenli fiiller gibi davranır: vurgu sondan üçüncü hecede, bu yüzden **έφαγα** ama **φάγαμε**. Öbürlerinde (*πήγα, ήρθα, είδα, ήπια…*) vurgu ilk hecede kalır: **πήγα, πήγαμε**.",
+          "en": "A few very common verbs have an aorist that does not look like the stem of the future: **πάω → πήγα**. You have to learn these as they are. The good news: **the endings are the same** (-α, -ες, -ε, -αμε, -ατε, -αν).\n\nThere are two kinds. *έφαγα, έκανα, έμεινα, έμαθα, έφυγα, κατάλαβα* behave like the regular verbs: the stress is on the third syllable from the end, so **έφαγα** but **φάγαμε**. In the others (*πήγα, ήρθα, είδα, ήπια…*) the stress stays on the first syllable: **πήγα, πήγαμε**."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Sık kullanılan düzensiz aoristler",
+            "en": "Common irregular aorists"
+          },
+          "head": [
+            {
+              "tr": "şimdiki",
+              "en": "present"
+            },
+            "εγώ",
+            "εσύ",
+            "εμείς",
+            {
+              "tr": "anlamı",
+              "en": "meaning"
+            }
+          ],
+          "rows": [
+            [
+              "πάω",
+              "πήγα",
+              "πήγες",
+              "πήγαμε",
+              {
+                "tr": "gittim",
+                "en": "I went"
+              }
+            ],
+            [
+              "έρχομαι",
+              "ήρθα",
+              "ήρθες",
+              "ήρθαμε",
+              {
+                "tr": "geldim",
+                "en": "I came"
+              }
+            ],
+            [
+              "τρώω",
+              "έφαγα",
+              "έφαγες",
+              "φάγαμε",
+              {
+                "tr": "yedim",
+                "en": "I ate"
+              }
+            ],
+            [
+              "πίνω",
+              "ήπια",
+              "ήπιες",
+              "ήπιαμε",
+              {
+                "tr": "içtim",
+                "en": "I drank"
+              }
+            ],
+            [
+              "βλέπω",
+              "είδα",
+              "είδες",
+              "είδαμε",
+              {
+                "tr": "gördüm",
+                "en": "I saw"
+              }
+            ],
+            [
+              "λέω",
+              "είπα",
+              "είπες",
+              "είπαμε",
+              {
+                "tr": "söyledim",
+                "en": "I said"
+              }
+            ],
+            [
+              "παίρνω",
+              "πήρα",
+              "πήρες",
+              "πήραμε",
+              {
+                "tr": "aldım",
+                "en": "I took, I got"
+              }
+            ],
+            [
+              "βρίσκω",
+              "βρήκα",
+              "βρήκες",
+              "βρήκαμε",
+              {
+                "tr": "buldum",
+                "en": "I found"
+              }
+            ],
+            [
+              "μπαίνω",
+              "μπήκα",
+              "μπήκες",
+              "μπήκαμε",
+              {
+                "tr": "girdim",
+                "en": "I went in"
+              }
+            ],
+            [
+              "βγαίνω",
+              "βγήκα",
+              "βγήκες",
+              "βγήκαμε",
+              {
+                "tr": "çıktım",
+                "en": "I went out"
+              }
+            ],
+            [
+              "κάνω",
+              "έκανα",
+              "έκανες",
+              "κάναμε",
+              {
+                "tr": "yaptım",
+                "en": "I did, I made"
+              }
+            ],
+            [
+              "μένω",
+              "έμεινα",
+              "έμεινες",
+              "μείναμε",
+              {
+                "tr": "kaldım",
+                "en": "I stayed"
+              }
+            ],
+            [
+              "μαθαίνω",
+              "έμαθα",
+              "έμαθες",
+              "μάθαμε",
+              {
+                "tr": "öğrendim",
+                "en": "I learned"
+              }
+            ],
+            [
+              "καταλαβαίνω",
+              "κατάλαβα",
+              "κατάλαβες",
+              "καταλάβαμε",
+              {
+                "tr": "anladım",
+                "en": "I understood"
+              }
+            ],
+            [
+              "φεύγω",
+              "έφυγα",
+              "έφυγες",
+              "φύγαμε",
+              {
+                "tr": "ayrıldım, yola çıktım",
+                "en": "I left"
+              }
+            ]
+          ],
+          "note": {
+            "tr": "Diğer kişiler aynı sonlarla: έφαγε, φάγατε, έφαγαν; ήπιε, ήπιατε, ήπιαν.",
+            "en": "The other persons use the same endings: έφαγε, φάγατε, έφαγαν; ήπιε, ήπιατε, ήπιαν."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Πήγαμε στη Χαλκιδική με το αυτοκίνητο.",
+              "tr": "Arabayla Halkidiki'ye gittik.",
+              "en": "We went to Halkidiki by car."
+            },
+            {
+              "el": "Χθες είδα τον Γιώργο στην πλατεία.",
+              "tr": "Dün Giorgos'u meydanda gördüm.",
+              "en": "Yesterday I saw Giorgos in the square."
+            },
+            {
+              "el": "Τι είπες;",
+              "tr": "Ne dedin?",
+              "en": "What did you say?"
+            },
+            {
+              "el": "Ήρθες στο μάθημα;",
+              "tr": "Derse geldin mi?",
+              "en": "Did you come to class?"
+            },
+            {
+              "el": "Έφαγα ψάρι και ήπια καφέ.",
+              "tr": "Balık yedim, kahve içtim.",
+              "en": "I ate fish and drank coffee."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Tek geçmişi olan fiiller",
+        "en": "Verbs with one past"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Dört çok sık fiilin ayrı bir \"bitti\" geçmişi yoktur; **tek bir geçmiş biçimleri** vardır ve her yerde onu kullanırsın: **είμαι → ήμουν** \"idim\", **έχω → είχα** \"vardı\", **θέλω → ήθελα** \"istedim\", **ξέρω → ήξερα** \"biliyordum\". Zeynep'in \"Ήμουν πολύ κουρασμένη!\" cümlesinde olduğu gibi.\n\nBu tabloyu olduğu gibi öğren. Dikkat: *ήταν* hem \"o idi\" hem \"onlar idi\" demek.",
+          "en": "Four very common verbs have no separate \"finished action\" past. They have **one past form** and you use it everywhere: **είμαι → ήμουν** \"I was\", **έχω → είχα** \"I had\", **θέλω → ήθελα** \"I wanted\", **ξέρω → ήξερα** \"I knew\". Just like Zeynep's \"Ήμουν πολύ κουρασμένη!\".\n\nLearn the table as it is. Note: *ήταν* means both \"he/she/it was\" and \"they were\"."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Tek geçmişi olan dört fiil",
+            "en": "Four verbs with one past"
+          },
+          "head": [
+            {
+              "tr": "kim",
+              "en": "who"
+            },
+            "είμαι",
+            "έχω",
+            "θέλω",
+            "ξέρω"
+          ],
+          "rows": [
+            [
+              "εγώ",
+              "ήμουν",
+              "είχα",
+              "ήθελα",
+              "ήξερα"
+            ],
+            [
+              "εσύ",
+              "ήσουν",
+              "είχες",
+              "ήθελες",
+              "ήξερες"
+            ],
+            [
+              "αυτός, αυτή, αυτό",
+              "ήταν",
+              "είχε",
+              "ήθελε",
+              "ήξερε"
+            ],
+            [
+              "εμείς",
+              "ήμασταν",
+              "είχαμε",
+              "θέλαμε",
+              "ξέραμε"
+            ],
+            [
+              "εσείς",
+              "ήσασταν",
+              "είχατε",
+              "θέλατε",
+              "ξέρατε"
+            ],
+            [
+              "αυτοί, αυτές, αυτά",
+              "ήταν",
+              "είχαν",
+              "ήθελαν",
+              "ήξεραν"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Ήμουν κουρασμένη.",
+              "tr": "Yorgundum.",
+              "en": "I was tired."
+            },
+            {
+              "el": "Ο καιρός ήταν ωραίος.",
+              "tr": "Hava güzeldi.",
+              "en": "The weather was lovely."
+            },
+            {
+              "el": "Είχα ραντεβού με τον γιατρό.",
+              "tr": "Doktorla randevum vardı.",
+              "en": "I had an appointment with the doctor."
+            },
+            {
+              "el": "Ήθελα να πάω στη θάλασσα, αλλά είχα δουλειά.",
+              "tr": "Denize gitmek istedim ama işim vardı.",
+              "en": "I wanted to go to the sea, but I had work."
+            },
+            {
+              "el": "Δεν ήξερα πού είναι η παραλία.",
+              "tr": "Plajın nerede olduğunu bilmiyordum.",
+              "en": "I didn't know where the beach was."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "words",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümün kelimeleri: zaman sözleri, gezi kelimeleri ve üç fiil. Bölümü bitirince oturumlarına gelecekler.",
+          "en": "The words of this chapter: time words, words for a trip, and a few verbs. Once you finish the chapter they come into your sessions."
+        },
+        {
+          "type": "words",
+          "items": [
+            "open-book/ch09-chthes",
+            "open-book/ch09-prochthes",
+            "open-book/ch09-persi",
+            "open-book/ch09-prin",
+            "open-book/ch09-meta",
+            "open-book/ch09-prota",
+            "open-book/ch09-telika",
+            "open-book/ch09-taxidi",
+            "open-book/ch09-paralia",
+            "open-book/ch09-chorio",
+            "open-book/ch09-filos",
+            "open-book/ch09-oraios",
+            "open-book/ch09-kourasmenos",
+            "open-book/ch09-kairos",
+            "open-book/ch09-kolympao",
+            "open-book/ch09-pernao",
+            "open-book/ch09-gyrizo",
+            "open-book/ch09-mageirevo",
+            "open-book/ch09-psari",
+            "open-book/ch09-aftokinito"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "tips",
+      "blocks": [
+        {
+          "type": "tip",
+          "kind": "tr_bridge",
+          "tr": "**Aorist ≈ Türkçedeki -dı.** *Yazdım* = [[έγραψα]], *yazdık* = [[γράψαμε]], *gittim* = [[πήγα]]. İkisi de bitmiş, tek bir olayı anlatır. Kök gelecek zamanınki olduğu için θα γράψω ile έγραψα kardeştir: birini öğrenince öbürü de gelir.",
+          "en": "**The aorist ≈ English \"I wrote\".** [[έγραψα]] \"I wrote\", [[γράψαμε]] \"we wrote\", [[πήγα]] \"I went\": one finished event. The stem is the future's, so θα γράψω and έγραψα are a pair: learn one and you have the other."
+        },
+        {
+          "type": "tip",
+          "kind": "mistake",
+          "tr": "**έ- gelir, gider.** [[έγραψα]] ama [[γράψαμε]]: έ-, fiil kısa kalırsa gelir. *έγραψαμε* yazma. Aynı şey [[έφαγα]] / [[φάγαμε]] için de geçerli.",
+          "en": "**The έ- comes and goes.** [[έγραψα]] but [[γράψαμε]]: the έ- is there only when the verb would otherwise be too short. Do not write *έγραψαμε*. The same goes for [[έφαγα]] / [[φάγαμε]]."
+        },
+        {
+          "type": "tip",
+          "kind": "mistake",
+          "tr": "**ήμουν, ήμουνα değil.** Konuşmada [[ήμουνα]] ve [[ήσουνα]] da duyarsın. Yazıda ve sınavda [[ήμουν]], [[ήσουν]] yaz.",
+          "en": "**ήμουν, not ήμουνα, in writing.** In speech you also hear [[ήμουνα]] and [[ήσουνα]]. In writing and in the exam, write [[ήμουν]], [[ήσουν]]."
+        },
+        {
+          "type": "tip",
+          "kind": "exam",
+          "exam_task": "a2ltr.writing.email_friendly",
+          "tr": "A2 yazma sınavında bir arkadaşına kısa bir e-posta yazarsın (yaklaşık 40–60 kelime), örneğin hafta sonunu anlatırsın. Geçmiş zaman tam burada lazım. Model: *Γεια σου, Σοφία! Το Σάββατο πήγα στη Χαλκιδική με τον Γιώργο. Πρώτα κολυμπήσαμε στη θάλασσα. Μετά φάγαμε ψάρι σε ένα χωριό και ήπιαμε καφέ στην πλατεία. Ο καιρός ήταν ωραίος, αλλά γύρισα αργά και ήμουν πολύ κουρασμένη. Εσύ πώς πέρασες; Γεια, Ζεϊνέπ*",
+          "en": "In the A2 writing exam you write a short e-mail to a friend (about 40–60 words), for example about your weekend. This is where you need the past. A model: *Γεια σου, Σοφία! Το Σάββατο πήγα στη Χαλκιδική με τον Γιώργο. Πρώτα κολυμπήσαμε στη θάλασσα. Μετά φάγαμε ψάρι σε ένα χωριό και ήπιαμε καφέ στην πλατεία. Ο καιρός ήταν ωραίος, αλλά γύρισα αργά και ήμουν πολύ κουρασμένη. Εσύ πώς πέρασες; Γεια, Ζεϊνέπ*"
+        }
+      ]
+    },
+    {
+      "kind": "try",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Şimdi sen dene. Yanlış yapmak serbest: bunlar sınav hazırlığı hesabına girmez.",
+          "en": "Now you try. Mistakes are fine here: these do not count towards your exam readiness."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch09-try-doulepsa",
+            "open-book/ch09-try-kolympisame",
+            "open-book/ch09-try-pige",
+            "open-book/ch09-try-imoun",
+            "open-book/ch09-try-match"
+          ]
+        }
+      ]
+    }
+  ]
+}

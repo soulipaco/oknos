@@ -1,0 +1,692 @@
+[
+  {
+    "id": "ch11-q-where",
+    "type": "mcq",
+    "skill": "reading",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right answer.",
+      "tr": "Doğru cevabı seç."
+    },
+    "explain": {
+      "en": "Zeynep: «Το Σάββατο πήγα στη Χαλκιδική με τον Γιώργο.»",
+      "tr": "Zeynep: «Το Σάββατο πήγα στη Χαλκιδική με τον Γιώργο.»"
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "prompt": {
+      "el": "Πού πήγε η Ζεϊνέπ με τον Γιώργο το Σάββατο;",
+      "en": "Where did Zeynep go with Giorgos on Saturday?",
+      "tr": "Zeynep cumartesi Giorgos'la nereye gitti?"
+    },
+    "options": [
+      "Στη Χαλκιδική.",
+      "Στην Αθήνα.",
+      "Στη Σμύρνη."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "ch11-q-tf",
+    "type": "true_false",
+    "skill": "reading",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Σωστό ή λάθος;",
+      "en": "True or false?",
+      "tr": "Doğru mu, yanlış mı?"
+    },
+    "explain": {
+      "en": "Zeynep: «Το Σάββατο πήγα στη Χαλκιδική με τον Γιώργο.» Elif works in Izmir (Σμύρνη), not in Thessaloniki. Elif: «Το επόμενο Σαββατοκύριακο θα έρθω στη Θεσσαλονίκη.» Zeynep: «γυρίσαμε αργά»: they came back late, not early.",
+      "tr": "Zeynep: «Το Σάββατο πήγα στη Χαλκιδική με τον Γιώργο.» Elif İzmir'de (Σμύρνη) çalışıyor, Selanik'te değil. Elif: «Το επόμενο Σαββατοκύριακο θα έρθω στη Θεσσαλονίκη.» Zeynep: «γυρίσαμε αργά»: geç döndüler, erken değil."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "statements": [
+      {
+        "el": "Η Ζεϊνέπ πήγε στη Χαλκιδική με τον Γιώργο.",
+        "en": "Zeynep went to Halkidiki with Giorgos.",
+        "tr": "Zeynep Giorgos'la Halkidiki'ye gitti.",
+        "answer": true
+      },
+      {
+        "el": "Η Ελίφ μένει στη Θεσσαλονίκη.",
+        "en": "Elif lives in Thessaloniki.",
+        "tr": "Elif Selanik'te yaşıyor.",
+        "answer": false
+      },
+      {
+        "el": "Η Ελίφ θέλει να έρθει το επόμενο Σαββατοκύριακο.",
+        "en": "Elif wants to come next weekend.",
+        "tr": "Elif gelecek hafta sonu gelmek istiyor.",
+        "answer": true
+      },
+      {
+        "el": "Η Ζεϊνέπ και ο Γιώργος γύρισαν νωρίς.",
+        "en": "Zeynep and Giorgos came back early.",
+        "tr": "Zeynep'le Giorgos erken döndü.",
+        "answer": false
+      }
+    ]
+  },
+  {
+    "id": "ch11-try-aorist",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "explain": {
+      "en": "πέρσι = last year, so the aorist: ήρθα. θα έρθω is the future; έρχομαι is the present.",
+      "tr": "πέρσι = geçen yıl, yani aorist: ήρθα. θα έρθω gelecek; έρχομαι şimdiki zaman."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "grammar": [
+      "verb.aorist",
+      "verb.aorist.irregular"
+    ],
+    "text": "Πέρσι {1} στη Θεσσαλονίκη.",
+    "answer": {
+      "1": [
+        "ήρθα"
+      ]
+    },
+    "options": {
+      "1": [
+        "ήρθα",
+        "θα έρθω",
+        "έρχομαι"
+      ]
+    },
+    "translation": {
+      "en": "Last year I came to Thessaloniki.",
+      "tr": "Geçen yıl Selanik'e geldim."
+    },
+    "cue": {
+      "lemma": "έρχομαι",
+      "person": "1sg",
+      "tense": "aorist"
+    }
+  },
+  {
+    "id": "ch11-try-future",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "explain": {
+      "en": "After θα comes the future form: θα δω. είδα and είδες are aorist forms and never follow θα.",
+      "tr": "θα'dan sonra gelecek biçimi gelir: θα δω. είδα ve είδες aorist biçimleridir, θα'dan sonra gelmez."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "grammar": [
+      "verb.future",
+      "verb.future.irregular"
+    ],
+    "text": "Αύριο θα {1} τον Γιώργο.",
+    "answer": {
+      "1": [
+        "δω"
+      ]
+    },
+    "options": {
+      "1": [
+        "δω",
+        "είδα",
+        "είδες"
+      ]
+    },
+    "translation": {
+      "en": "Tomorrow I'll see Giorgos.",
+      "tr": "Yarın Giorgos'u göreceğim."
+    },
+    "cue": {
+      "lemma": "βλέπω",
+      "person": "1sg",
+      "tense": "future"
+    }
+  },
+  {
+    "id": "ch11-try-tense",
+    "type": "categorise",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Τι γίνεται χθες και τι αύριο; Βάζω κάθε τύπο στη σωστή ομάδα.",
+      "en": "What happens yesterday and what tomorrow? Put each form in the right group.",
+      "tr": "Hangisi dün, hangisi yarın olur? Her biçimi doğru gruba koy."
+    },
+    "explain": {
+      "en": "ήρθα, πήγα, είδα are aorist: they say what happened (χθες). θα πάω, θα φάω, θα δω say what will happen (αύριο).",
+      "tr": "ήρθα, πήγα, είδα aorist: olanı anlatır (χθες). θα πάω, θα φάω, θα δω olacak olanı anlatır (αύριο)."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "categories": [
+      "χθες",
+      "αύριο"
+    ],
+    "items": [
+      "ήρθα",
+      "θα πάω",
+      "είδα",
+      "θα φάω",
+      "πήγα",
+      "θα δω"
+    ],
+    "answer": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "ch11-try-se",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "explain": {
+      "en": "The object «you» is σε, and it stands before the verb: θα σε δω. σου is «your» or «to you»; εσύ is the subject.",
+      "tr": "Nesne olan «seni» σε'dir ve fiilden önce gelir: θα σε δω. σου «senin» ya da «sana»; εσύ özne."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "grammar": [
+      "pronoun.object"
+    ],
+    "text": "Θα {1} δω αύριο.",
+    "answer": {
+      "1": [
+        "σε"
+      ]
+    },
+    "options": {
+      "1": [
+        "σε",
+        "σου",
+        "εσύ"
+      ]
+    },
+    "translation": {
+      "en": "I'll see you tomorrow (said to a friend).",
+      "tr": "Seni yarın göreceğim (bir arkadaşa)."
+    }
+  },
+  {
+    "id": "ch11-try-mou",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "explain": {
+      "en": "The speaker is one person (εγώ), so «my» is μου, after the noun: το τηλέφωνό μου. σου is «your», μας is «our».",
+      "tr": "Konuşan tek kişi (εγώ), yani «benim» μου, isimden sonra: το τηλέφωνό μου. σου «senin», μας «bizim»."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "grammar": [
+      "pronoun.possessive"
+    ],
+    "text": "Εγώ είμαι η Ζεϊνέπ. Το τηλέφωνό {1} είναι εδώ.",
+    "answer": {
+      "1": [
+        "μου"
+      ]
+    },
+    "options": {
+      "1": [
+        "μου",
+        "σου",
+        "μας"
+      ]
+    },
+    "translation": {
+      "en": "I'm Zeynep. My phone is here.",
+      "tr": "Ben Zeynep'im. Telefonum burada."
+    }
+  },
+  {
+    "id": "ch11-p-faga",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "explain": {
+      "en": "χθες + εγώ: aorist, I: έφαγα. φάγαμε is «we»; θα φάω is the future.",
+      "tr": "χθες + εγώ: aorist, ben: έφαγα. φάγαμε «biz»; θα φάω gelecek."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "grammar": [
+      "verb.aorist",
+      "verb.aorist.irregular"
+    ],
+    "text": "Χθες εγώ {1} ψάρι στο χωριό.",
+    "answer": {
+      "1": [
+        "έφαγα"
+      ]
+    },
+    "options": {
+      "1": [
+        "έφαγα",
+        "φάγαμε",
+        "θα φάω"
+      ]
+    },
+    "translation": {
+      "en": "Yesterday I ate fish in the village.",
+      "tr": "Dün köyde balık yedim."
+    },
+    "cue": {
+      "lemma": "τρώω",
+      "person": "1sg",
+      "tense": "aorist"
+    }
+  },
+  {
+    "id": "ch11-p-imoun",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "explain": {
+      "en": "The past of είμαι for «I» is ήμουν. ήσουν is «you were»; θα είμαι is «I will be».",
+      "tr": "είμαι'nın «ben» için geçmişi ήμουν. ήσουν «sen idin»; θα είμαι «olacağım»."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "grammar": [
+      "verb.imperfect",
+      "verb.imperfect.irregular"
+    ],
+    "text": "Χθες εγώ {1} πολύ κουρασμένη.",
+    "answer": {
+      "1": [
+        "ήμουν"
+      ]
+    },
+    "options": {
+      "1": [
+        "ήμουν",
+        "ήσουν",
+        "θα είμαι"
+      ]
+    },
+    "translation": {
+      "en": "Yesterday I was very tired.",
+      "tr": "Dün çok yorgundum."
+    },
+    "cue": {
+      "lemma": "είμαι",
+      "person": "1sg",
+      "tense": "imperfect"
+    }
+  },
+  {
+    "id": "ch11-p-agorasa",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "explain": {
+      "en": "αύριο + θα: the future form, αγοράσω (-ζω → -σω). αγόρασα and αγόρασες are the aorist.",
+      "tr": "αύριο + θα: gelecek biçimi, αγοράσω (-ζω → -σω). αγόρασα ve αγόρασες aorist."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "grammar": [
+      "verb.future",
+      "verb.perfective_stem"
+    ],
+    "text": "Αύριο θα {1} ψωμί στον φούρνο.",
+    "answer": {
+      "1": [
+        "αγοράσω"
+      ]
+    },
+    "options": {
+      "1": [
+        "αγοράσω",
+        "αγόρασα",
+        "αγόρασες"
+      ]
+    },
+    "translation": {
+      "en": "Tomorrow I'll buy bread at the bakery.",
+      "tr": "Yarın fırından ekmek alacağım."
+    },
+    "cue": {
+      "lemma": "αγοράζω",
+      "person": "1sg",
+      "tense": "future"
+    }
+  },
+  {
+    "id": "ch11-p-mas",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "explain": {
+      "en": "The object is «us» (εμείς): μας, before the verb. σας is «you (pl.)», τους is «them».",
+      "tr": "Nesne «bizi» (εμείς): μας, fiilden önce. σας «sizi», τους «onları»."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "grammar": [
+      "pronoun.object"
+    ],
+    "text": "Εμείς πήγαμε στη Χαλκιδική και η Σοφία {1} είδε εκεί.",
+    "answer": {
+      "1": [
+        "μας"
+      ]
+    },
+    "options": {
+      "1": [
+        "μας",
+        "σας",
+        "τους"
+      ]
+    },
+    "translation": {
+      "en": "We went to Halkidiki and Sofia saw us there.",
+      "tr": "Biz Halkidiki'ye gittik ve Sofia bizi orada gördü."
+    }
+  },
+  {
+    "id": "ch11-p-pron",
+    "type": "match",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Αντιστοιχίζω.",
+      "en": "Match each subject pronoun with its object pronoun.",
+      "tr": "Her özne zamirini nesne zamiriyle eşleştir."
+    },
+    "explain": {
+      "en": "εγώ → με, εσύ → σε, εμείς → μας, αυτοί → τους: the second column of the table.",
+      "tr": "εγώ → με, εσύ → σε, εμείς → μας, αυτοί → τους: tablonun ikinci sütunu."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "left": [
+      "εγώ",
+      "εσύ",
+      "εμείς",
+      "αυτοί"
+    ],
+    "right": [
+      "με",
+      "σε",
+      "μας",
+      "τους"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "ch11-p-past",
+    "type": "mcq",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right answer.",
+      "tr": "Doğru cevabı seç."
+    },
+    "explain": {
+      "en": "χθες (yesterday) goes with the aorist: «Χθες πήγα στο φαρμακείο.» The second sentence is the future, the third a habit in the present.",
+      "tr": "χθες (dün) aorist ile gider: «Χθες πήγα στο φαρμακείο.» İkinci cümle gelecek, üçüncüsü şimdiki zamanda bir alışkanlık."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "prompt": {
+      "el": "Ποια πρόταση είναι για το χθες;",
+      "en": "Which sentence is about yesterday?",
+      "tr": "Hangi cümle dünle ilgili?"
+    },
+    "options": [
+      "Χθες πήγα στο φαρμακείο.",
+      "Αύριο θα πάω στο φαρμακείο.",
+      "Κάθε μέρα πάω στο φαρμακείο."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "ch11-p-email",
+    "type": "form",
+    "skill": "grammar",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Διαλέγω το σωστό.",
+      "en": "Choose the right form.",
+      "tr": "Doğru biçimi seç."
+    },
+    "explain": {
+      "en": "το Σάββατο (the last one) → πήγα, Πέρασα (aorist). το επόμενο Σαββατοκύριακο → θα πάω. θέλεις να έρθεις: να, not θα.",
+      "tr": "το Σάββατο (geçen) → πήγα, Πέρασα (aorist). το επόμενο Σαββατοκύριακο → θα πάω. θέλεις να έρθεις: να, θα değil."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "grammar": [
+      "verb.aorist",
+      "verb.future",
+      "verb.modal"
+    ],
+    "text": "Γεια σου, Σοφία! Το Σάββατο {1} στη θάλασσα με τον Γιώργο. {2} πολύ ωραία! Το επόμενο Σαββατοκύριακο θα {3} στην Αθήνα. Θέλεις {4} έρθεις;",
+    "answer": {
+      "1": [
+        "πήγα"
+      ],
+      "2": [
+        "Πέρασα"
+      ],
+      "3": [
+        "πάω"
+      ],
+      "4": [
+        "να"
+      ]
+    },
+    "options": {
+      "1": [
+        "πήγα",
+        "θα πάω",
+        "πάω"
+      ],
+      "2": [
+        "Πέρασα",
+        "Θα περάσω",
+        "Περάσατε"
+      ],
+      "3": [
+        "πάω",
+        "πήγα",
+        "πήγες"
+      ],
+      "4": [
+        "να",
+        "θα",
+        "και"
+      ]
+    },
+    "translation": {
+      "en": "Hi Sofia! On Saturday I went to the sea with Giorgos. I had a great time! Next weekend I'll go to Athens. Do you want to come?",
+      "tr": "Merhaba Sofia! Cumartesi Giorgos'la denize gittim. Çok güzel geçti! Gelecek hafta sonu Atina'ya gideceğim. Gelmek ister misin?"
+    }
+  },
+  {
+    "id": "ch11-p-msg",
+    "type": "true_false",
+    "skill": "reading",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Σωστό ή λάθος;",
+      "en": "True or false?",
+      "tr": "Doğru mu, yanlış mı?"
+    },
+    "explain": {
+      "en": "The message: «Αύριο δεν θα είμαι στη δουλειά» (tomorrow I won't be at work), «Θα πάω στον γιατρό» (I'll go to the doctor), «Θα γυρίσω το απόγευμα» (I'll be back in the afternoon). The doctor visit is in the future, not yesterday.",
+      "tr": "Mesaj: «Αύριο δεν θα είμαι στη δουλειά» (yarın işte olmayacağım), «Θα πάω στον γιατρό» (doktora gideceğim), «Θα γυρίσω το απόγευμα» (öğleden sonra döneceğim). Doktora gidiş gelecekte, dün değil."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-sonnet"
+    },
+    "stimulus": {
+      "text": "Γεια σου, Ζεϊνέπ! Αύριο δεν θα είμαι στη δουλειά. Θα πάω στον γιατρό. Θα γυρίσω το απόγευμα. Φιλιά, Σοφία"
+    },
+    "statements": [
+      {
+        "el": "Η Σοφία δεν θα είναι στη δουλειά αύριο.",
+        "en": "Sofia won't be at work tomorrow.",
+        "tr": "Sofia yarın işte olmayacak.",
+        "answer": true
+      },
+      {
+        "el": "Η Σοφία πήγε χθες στον γιατρό.",
+        "en": "Sofia went to the doctor yesterday.",
+        "tr": "Sofia dün doktora gitti.",
+        "answer": false
+      },
+      {
+        "el": "Το μήνυμα είναι για την Ελίφ.",
+        "en": "The message is for Elif.",
+        "tr": "Mesaj Elif için.",
+        "answer": false
+      }
+    ]
+  }
+]

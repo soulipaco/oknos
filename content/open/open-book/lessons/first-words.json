@@ -1,0 +1,166 @@
+{
+  "id": "open-a1-b1.first-words",
+  "curriculum": "open-a1-b1",
+  "stage": "first-words",
+  "level": "A1",
+  "title": {"tr": "Yeni ev, ilk cümleler: είμαι ve έχω", "en": "A new flat, first sentences: είμαι and έχω"},
+  "minutes": 11,
+  "version": 1,
+  "sections": [
+    {"kind": "intro", "blocks": [
+      {"type": "prose",
+       "tr": "Bu bölümde **selam vermeyi**, **adını ve nereli olduğunu söylemeyi**, bir şeyin **nerede olduğunu sormayı** ve neyin **olduğunu** söylemeyi öğreneceksin.\n\nBunun için iki fiil yeter: **είμαι** (olmak: *-im*) ve **έχω** (sahip olmak: *-im var*). İkisi Yunancadaki en sık fiiller.",
+       "en": "In this chapter you learn to **greet people**, **say your name and where you are from**, **ask where something is**, and say what you **have**.\n\nTwo verbs are enough for all of it: **είμαι** (to be) and **έχω** (to have). They are the two commonest verbs in Greek."}
+    ]},
+    {"kind": "warmup", "blocks": [
+      {"type": "prose",
+       "tr": "Yeni bir eve taşındın. Ev sahibine ilk ne sorarsın? Mutfak nerede, banyo nerede, balkon var mı?\n\nTürkçede ev sahibine *siz*, yaşıtın komşuna *sen* dersin. Yunancada da aynısını yapacaksın.",
+       "en": "You have just moved into a new flat. What do you ask the landlady first? Where is the kitchen, where is the bathroom, is there a balcony?\n\nYou would speak politely to the landlady and casually to a neighbour your age. Greek marks that difference in the words themselves, like French *vous* and *tu*."}
+    ]},
+    {"kind": "text", "title": {"tr": "Selanik'te yeni bir ev", "en": "A new flat in Thessaloniki"}, "blocks": [
+      {"type": "prose",
+       "tr": "Önce iki diyaloğu dinle (▶ Hepsini dinle), sonra oku. Bilmediğin kelimeye dokun. Çeviriyi en sona bırak.",
+       "en": "Listen to both dialogues first (▶ Play all), then read them. Tap any word you don't know. Leave the translation for last."},
+      {"type": "dialogue",
+       "setting": {"tr": "Akşam, Kalamarya'da bir apartman. Zeynep, ev sahibi Katerina Hanım'ın kapısını çalıyor.",
+                   "en": "Evening, a block of flats in Kalamaria. Zeynep knocks on the door of her landlady, Mrs Katerina."},
+       "lines": [
+         {"who": "Κατερίνα", "el": "Καλησπέρα σας! Είστε η κυρία Ζεϊνέπ;", "tr": "İyi akşamlar! Zeynep Hanım siz misiniz?", "en": "Good evening! Are you Ms Zeynep?"},
+         {"who": "Ζεϊνέπ", "el": "Ναι, καλησπέρα. Με λένε Ζεϊνέπ Αϊντίν.", "tr": "Evet, iyi akşamlar. Adım Zeynep Aydın.", "en": "Yes, good evening. My name is Zeynep Aydın."},
+         {"who": "Κατερίνα", "el": "Χαίρω πολύ. Εγώ είμαι η Κατερίνα. Από πού είστε;", "tr": "Memnun oldum. Ben Katerina. Nerelisiniz?", "en": "Nice to meet you. I'm Katerina. Where are you from?"},
+         {"who": "Ζεϊνέπ", "el": "Από την Τουρκία. Είμαι από τη Σμύρνη.", "tr": "Türkiye'den. İzmirliyim.", "en": "From Turkey. I'm from Izmir."},
+         {"who": "Κατερίνα", "el": "Ορίστε το κλειδί. Εδώ είναι η κουζίνα.", "tr": "Buyurun anahtar. Mutfak burası.", "en": "Here is the key. This is the kitchen."},
+         {"who": "Ζεϊνέπ", "el": "Πού είναι το μπάνιο;", "tr": "Banyo nerede?", "en": "Where is the bathroom?"},
+         {"who": "Κατερίνα", "el": "Εκεί. Και το σπίτι έχει δύο δωμάτια.", "tr": "Orada. Bir de evde iki oda var.", "en": "Over there. And the flat has two rooms."},
+         {"who": "Ζεϊνέπ", "el": "Έχει μπαλκόνι;", "tr": "Balkonu var mı?", "en": "Does it have a balcony?"},
+         {"who": "Κατερίνα", "el": "Ναι, έχει μπαλκόνι.", "tr": "Evet, balkonu var.", "en": "Yes, it has a balcony."},
+         {"who": "Ζεϊνέπ", "el": "Ευχαριστώ πολύ, κυρία Κατερίνα.", "tr": "Çok teşekkür ederim Katerina Hanım.", "en": "Thank you very much, Mrs Katerina."},
+         {"who": "Κατερίνα", "el": "Παρακαλώ. Γεια σας!", "tr": "Rica ederim. İyi akşamlar!", "en": "You're welcome. Goodbye!"}
+       ]},
+      {"type": "dialogue",
+       "setting": {"tr": "Biraz sonra, merdivende. Katerina Hanım'ın oğlu Giorgos yukarı çıkıyor.",
+                   "en": "A little later, on the stairs. Mrs Katerina's son Giorgos is coming up."},
+       "lines": [
+         {"who": "Γιώργος", "el": "Γεια σου! Εσύ είσαι η Ζεϊνέπ;", "tr": "Selam! Zeynep sen misin?", "en": "Hi! Are you Zeynep?"},
+         {"who": "Ζεϊνέπ", "el": "Ναι! Γεια σου. Πώς σε λένε;", "tr": "Evet! Selam. Adın ne?", "en": "Yes! Hi. What's your name?"},
+         {"who": "Γιώργος", "el": "Με λένε Γιώργο. Είμαι ο γείτονας.", "tr": "Adım Giorgos. Ben komşunum.", "en": "My name is Giorgos. I'm the neighbour."},
+         {"who": "Ζεϊνέπ", "el": "Χαίρω πολύ, Γιώργο!", "tr": "Memnun oldum Giorgos!", "en": "Nice to meet you, Giorgos!"},
+         {"who": "Γιώργος", "el": "Κι εγώ. Έχεις τραπέζι στην κουζίνα;", "tr": "Ben de. Mutfakta masan var mı?", "en": "Me too. Do you have a table in the kitchen?"},
+         {"who": "Ζεϊνέπ", "el": "Όχι, δεν έχω. Έχω ένα χαλί και ένα φλιτζάνι!", "tr": "Hayır, yok. Bir halım ve bir fincanım var!", "en": "No, I don't. I have a rug and a cup!"},
+         {"who": "Γιώργος", "el": "Εμείς έχουμε ένα τραπέζι. Είναι για σένα!", "tr": "Bizim bir masamız var. Senin olsun!", "en": "We have a table. It's yours!"},
+         {"who": "Ζεϊνέπ", "el": "Ευχαριστώ πολύ, Γιώργο!", "tr": "Çok teşekkürler Giorgos!", "en": "Thanks a lot, Giorgos!"}
+       ]},
+      {"type": "prose",
+       "tr": "Üç küçük not: [[δωμάτια]], *δωμάτιο* kelimesinin çoğulu (çoğul alışveriş bölümünde gelecek). [[στην κουζίνα]] \"mutfakta\" demek; *σε* + artikel kuralı ulaşım bölümünde. [[για σένα]] \"senin için\".",
+       "en": "Three small notes: [[δωμάτια]] is the plural of *δωμάτιο* (the plural comes in the shopping chapter). [[στην κουζίνα]] means \"in the kitchen\"; the rule for *σε* + article comes in the chapter on getting around. [[για σένα]] means \"for you\"."}
+    ]},
+    {"kind": "comprehension", "blocks": [
+      {"type": "prose", "tr": "Diyaloglara göre iki kısa soru.", "en": "Two short questions on the dialogues."},
+      {"type": "check", "items": ["open-book/ch02-q-from", "open-book/ch02-q-flat"]}
+    ]},
+    {"kind": "grammar", "title": {"tr": "είμαι: olmak", "en": "είμαι: to be"}, "blocks": [
+      {"type": "prose",
+       "tr": "Yunancada fiilin sonu kimin konuştuğunu söyler; tıpkı Türkçede *İzmirli-yim*, *İzmirli-sin* gibi. Bu yüzden *εγώ* (ben), *εσύ* (sen) gibi zamirleri çoğu zaman söylemezsin: [[Είμαι από τη Σμύρνη.]] yeter. Zamiri yalnızca vurgu için kullanırsın: [[Εγώ είμαι η Κατερίνα.]] (\"Katerina *benim*\").",
+       "en": "In Greek the verb's ending tells you who is speaking, so the pronouns *εγώ* (I), *εσύ* (you) and so on are usually left out: [[Είμαι από τη Σμύρνη.]] is enough. You add the pronoun only for emphasis: [[Εγώ είμαι η Κατερίνα.]] (\"*I* am Katerina\")."},
+      {"type": "table",
+       "caption": {"tr": "είμαι, şimdiki zaman", "en": "είμαι, present tense"},
+       "head": [{"tr": "kim", "en": "who"}, "είμαι", {"tr": "Türkçesi", "en": "meaning"}],
+       "rows": [
+         ["εγώ", "είμαι", {"tr": "(ben) -im", "en": "I am"}],
+         ["εσύ", "είσαι", {"tr": "(sen) -sin", "en": "you are (one friend)"}],
+         ["αυτός, αυτή, αυτό", "είναι", {"tr": "(o) -dir", "en": "he, she, it is"}],
+         ["εμείς", "είμαστε", {"tr": "(biz) -iz", "en": "we are"}],
+         ["εσείς", "είστε", {"tr": "(siz) -siniz", "en": "you are (formal, or several people)"}],
+         ["αυτοί, αυτές, αυτά", "είναι", {"tr": "(onlar) -dir(ler)", "en": "they are"}]
+       ],
+       "note": {"tr": "*είστε* iki işe yarar: birden çok kişiye konuşurken ve tek bir kişiye resmî konuşurken; tam Türkçedeki *siz* gibi. Katerina Hanım Zeynep'e [[Από πού είστε;]] diye soruyor.",
+                "en": "*είστε* does two jobs: talking to several people, and talking politely to one person. Mrs Katerina asks Zeynep [[Από πού είστε;]]."}},
+      {"type": "examples", "items": [
+        {"el": "Είμαι η Ζεϊνέπ.", "tr": "Ben Zeynep'im.", "en": "I'm Zeynep."},
+        {"el": "Είσαι από τη Θεσσαλονίκη;", "tr": "Selanikli misin?", "en": "Are you from Thessaloniki?"},
+        {"el": "Ο Γιώργος είναι ο γείτονας.", "tr": "Giorgos komşu.", "en": "Giorgos is the neighbour."},
+        {"el": "Είμαστε από την Τουρκία.", "tr": "Türkiyeliyiz.", "en": "We're from Turkey."},
+        {"el": "Είστε η κυρία Κατερίνα;", "tr": "Katerina Hanım siz misiniz?", "en": "Are you Mrs Katerina?"}
+      ]}
+    ]},
+    {"kind": "grammar", "title": {"tr": "έχω: -im var", "en": "έχω: to have"}, "blocks": [
+      {"type": "prose",
+       "tr": "*έχω* \"bende … var\" demek. Türkçede *halım var* dersin; Yunancada \"halıya sahibim\" der gibi: [[Έχω ένα χαλί.]]\n\nBir yerde ne olduğunu da *έχει* ile söylersin: [[Το σπίτι έχει μπαλκόνι.]] \"Evin balkonu var.\" Olumsuz için fiilin önüne *δεν*: [[Δεν έχω.]] \"Yok.\"",
+       "en": "*έχω* means \"I have\": [[Έχω ένα χαλί.]]\n\nTo say what a place has, use *έχει*: [[Το σπίτι έχει μπαλκόνι.]] \"The flat has a balcony.\" For \"not\", put *δεν* before the verb: [[Δεν έχω.]] \"I don't (have one).\""},
+      {"type": "table",
+       "caption": {"tr": "έχω, şimdiki zaman", "en": "έχω, present tense"},
+       "head": [{"tr": "kim", "en": "who"}, "έχω", {"tr": "son ek", "en": "ending"}],
+       "rows": [
+         ["εγώ", "έχω", "-ω"],
+         ["εσύ", "έχεις", "-εις"],
+         ["αυτός, αυτή, αυτό", "έχει", "-ει"],
+         ["εμείς", "έχουμε", "-ουμε"],
+         ["εσείς", "έχετε", "-ετε"],
+         ["αυτοί, αυτές, αυτά", "έχουν", "-ουν"]
+       ],
+       "note": {"tr": "Bu altı sonu iyi öğren: Yunanca fiillerin çoğu aynen böyle çekilir. Bir sonraki bölümde onlarca fiile uygulayacaksın.",
+                "en": "Learn these six endings well: most Greek verbs go exactly like this. In the next chapter you will use them on many verbs."}},
+      {"type": "examples", "items": [
+        {"el": "Έχεις κλειδί;", "tr": "Anahtarın var mı?", "en": "Do you have a key?"},
+        {"el": "Η κουζίνα έχει ένα τραπέζι.", "tr": "Mutfakta bir masa var.", "en": "The kitchen has a table."},
+        {"el": "Δεν έχουμε μπαλκόνι.", "tr": "Balkonumuz yok.", "en": "We don't have a balcony."},
+        {"el": "Έχετε δύο δωμάτια;", "tr": "İki odanız var mı?", "en": "Do you have two rooms?"}
+      ]}
+    ]},
+    {"kind": "grammar", "title": {"tr": "ο, η, το: her ismin bir cinsi var", "en": "ο, η, το: every noun has a gender"}, "blocks": [
+      {"type": "prose",
+       "tr": "Yunancada her ismin bir **cinsi** var: eril, dişil ya da nötr. Cinsi, ismin önündeki **artikel** gösterir: *ο*, *η* ya da *το* (Türkçede karşılığı yok; İngilizcedeki *the* gibi). Masanın erkek ya da kadın olmasıyla ilgisi yok; bu bir dilbilgisi etiketi.\n\nİsmin sonu çoğu zaman ipucu verir. Ama en güvenlisi her ismi artikeliyle birlikte öğrenmek: *καφές* değil, **ο καφές**.",
+       "en": "Every Greek noun has a **gender**: masculine, feminine or neuter. The **article** in front of it shows which: *ο*, *η* or *το* (all three mean \"the\"). It has nothing to do with the thing itself: a table is not male or female; it is a grammatical label.\n\nThe ending is often a clue. But the safest habit is to learn every noun with its article: not *καφές*, but **ο καφές**."},
+      {"type": "table",
+       "caption": {"tr": "Artikel ve ismin sonu", "en": "Article and ending"},
+       "head": [{"tr": "cins", "en": "gender"}, {"tr": "artikel", "en": "article"}, {"tr": "sık sonlar", "en": "common endings"}, {"tr": "örnekler", "en": "examples"}],
+       "rows": [
+         [{"tr": "eril", "en": "masculine"}, "ο", "-ος, -ας, -ης, -ές", "ο καφές, ο γείτονας"],
+         [{"tr": "dişil", "en": "feminine"}, "η", "-α, -η", "η κουζίνα, η Ελλάδα"],
+         [{"tr": "nötr", "en": "neuter"}, "το", "-ο, -ι, -μα", "το μπάνιο, το σπίτι, το πάτωμα"]
+       ]},
+      {"type": "examples", "items": [
+        {"el": "Πού είναι ο καφές;", "tr": "Kahve nerede?", "en": "Where is the coffee?"},
+        {"el": "Πού είναι η κυρία Κατερίνα;", "tr": "Katerina Hanım nerede?", "en": "Where is Mrs Katerina?"},
+        {"el": "Πού είναι το κλειδί; — Εδώ!", "tr": "Anahtar nerede? — Burada!", "en": "Where is the key? — Here!"},
+        {"el": "Το χαλί είναι εκεί.", "tr": "Halı orada.", "en": "The rug is over there."}
+      ]}
+    ]},
+    {"kind": "words", "blocks": [
+      {"type": "prose",
+       "tr": "Bu bölümün kelimeleri. ▶ ile dinle. Bölümü bitirince oturumlarına gelecekler; her biri sana sorulmadan önce bir kez gösterilecek.",
+       "en": "The words of this chapter. Listen with ▶. Once you finish the chapter they come into your sessions, and each one is shown to you once before you are asked it."},
+      {"type": "words", "items": [
+        "open-book/ch02-geia-sas", "open-book/ch02-kalimera", "open-book/ch02-kalispera",
+        "open-book/ch02-me-lene", "open-book/ch02-pos-se-lene", "open-book/ch02-pos-sas-lene", "open-book/ch02-chairo-poly",
+        "open-book/ch02-apo-pou", "open-book/ch02-eimai", "open-book/ch02-echo",
+        "open-book/ch02-ellada", "open-book/ch02-tourkia",
+        "open-book/ch02-spiti", "open-book/ch02-domatio", "open-book/ch02-kouzina", "open-book/ch02-banio",
+        "open-book/ch02-kleidi", "open-book/ch02-trapezi", "open-book/ch02-patoma",
+        "open-book/ch02-pou", "open-book/ch02-edo", "open-book/ch02-ekei",
+        "open-book/ch02-geitonas", "open-book/ch02-kyria", "open-book/ch02-oriste"
+      ]}
+    ]},
+    {"kind": "tips", "blocks": [
+      {"type": "tip", "kind": "tr_bridge",
+       "tr": "**Sen ve siz.** [[Γεια σου]] samimi, [[Γεια σας]] resmî ya da birden çok kişiye; *σου* \"senin\", *σας* \"sizin\" demek. Türkçede bunu zaten yapıyorsun: Katerina Hanım'a *siz*, Giorgos'a *sen*.",
+       "en": "**Formal and informal.** [[Γεια σου]] is informal, [[Γεια σας]] is formal or for several people: *σου* is \"your\" to one friend, *σας* \"your\" politely or to many. Like French *tu* and *vous*: Zeynep says *σας* to Mrs Katerina and *σου* to Giorgos."},
+      {"type": "tip", "kind": "mistake",
+       "tr": "**Erkek adlarının sonundaki -ς.** *Γιώργος* \"Giorgos\" demek; ama ona seslenirken ve *με λένε* sözünden sonra sondaki -ς düşer: [[Με λένε Γιώργο.]] [[Χαίρω πολύ, Γιώργο!]] Kadın adları değişmez: [[Με λένε Κατερίνα.]]",
+       "en": "**The -ς of men's names.** *Γιώργος* is the name; but when you call him, and after *με λένε*, the final -ς goes: [[Με λένε Γιώργο.]] [[Χαίρω πολύ, Γιώργο!]] Women's names do not change: [[Με λένε Κατερίνα.]]"},
+      {"type": "tip", "kind": "mistake",
+       "tr": "**πού ve που.** Vurgulu [[πού;]] \"nerede?\" demek. Vurgusuz *που* başka bir kelime (\"ki, olan\"); ona sonra geleceğiz. Soru sorarken vurguyu unutma.",
+       "en": "**πού and που.** With the accent, [[πού;]] means \"where?\". Without it, *που* is a different word (\"that, who\"), which comes later. When you ask, keep the accent."},
+      {"type": "tip", "kind": "exam", "exam_task": "b1keg.speaking.warmup",
+       "tr": "Sözlü sınav hep böyle bir sohbetle başlar: [[Πώς σας λένε; Από πού είστε;]] Görevli seninle resmî konuşur. Kısa ama tam cümleyle cevap ver: **Με λένε … Είμαι από την Τουρκία.**",
+       "en": "The speaking exam always opens with a chat like this: [[Πώς σας λένε; Από πού είστε;]] The examiner speaks to you formally. Answer briefly, in full sentences: **Με λένε … Είμαι από την Τουρκία.**"}
+    ]},
+    {"kind": "try", "blocks": [
+      {"type": "prose",
+       "tr": "Şimdi sen dene. Yanlış yapmak serbest: bunlar sınav hazırlığı hesabına girmez.",
+       "en": "Now you try. Mistakes are fine here: these do not count towards your exam readiness."},
+      {"type": "check", "items": ["open-book/ch02-try-eimaste", "open-book/ch02-try-echeis",
+                                  "open-book/ch02-try-articles", "open-book/ch02-try-formal"]}
+    ]}
+  ]
+}

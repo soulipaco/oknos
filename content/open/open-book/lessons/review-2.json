@@ -1,0 +1,502 @@
+{
+  "id": "open-a1-b1.review-2",
+  "curriculum": "open-a1-b1",
+  "stage": "review-2",
+  "level": "A2",
+  "title": {
+    "tr": "Selanik'te ilk ay: tekrar",
+    "en": "The first month in Thessaloniki: review"
+  },
+  "minutes": 13,
+  "version": 1,
+  "sections": [
+    {
+      "kind": "intro",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümde **yeni bir şey yok**. Geçmişi, geleceği ve son bölümlerin yapılarını tek bir e-postada birlikte kullanacaksın: Zeynep, İzmir'deki arkadaşı Elif'e Selanik'teki ilk ayını yazıyor, Elif de cevap veriyor. Sonunda iki tablo göreceksin: sekiz sık fiil üç zamanda ve zamirler. Ayrıca sınavdaki gibi 40–60 kelimelik bir e-postanın nasıl göründüğüne bakacaksın.\n\nAnahtar nokta: bir cümlenin **ne zaman** olduğunu zaman sözü ve fiilin biçimi birlikte söyler: *χθες … πήγα*, *αύριο … θα πάω*.",
+          "en": "There is **nothing new** in this chapter. You use the past, the future and the structures of the last chapters together in one e-mail: Zeynep writes to her friend Elif in Izmir about her first month in Thessaloniki, and Elif answers. At the end you see two tables: eight common verbs in three tenses, and the pronouns. You also see what a 40–60 word e-mail looks like, as in the exam.\n\nThe key point: the time word and the verb form together tell you **when** a sentence is: *χθες … πήγα*, *αύριο … θα πάω*."
+        }
+      ]
+    },
+    {
+      "kind": "warmup",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bir arkadaşına en son ne zaman uzun bir mesaj yazdın? Ona önce ne anlattın: ne yaptığını mı, ne yapacağını mı? Zeynep ikisini de anlatıyor.",
+          "en": "When did you last write a long message to a friend? What did you tell them first: what you did, or what you will do? Zeynep tells her friend both."
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "title": {
+        "tr": "İki e-posta",
+        "en": "Two e-mails"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Önce Zeynep'in e-postasını oku, sonra Elif'in cevabına bak. Her fiil için kendine sor: bu oldu mu, olacak mı? Dinlemek için oynat.",
+          "en": "Read Zeynep's e-mail first, then Elif's answer. For every verb ask yourself: did it happen, or will it happen? Press play to listen."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Zeynep'in İzmir'deki arkadaşına e-postası.",
+            "en": "Zeynep's e-mail to her friend in Izmir."
+          },
+          "lines": [
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Γεια σου, Ελίφ!",
+              "tr": "Merhaba Elif!",
+              "en": "Hi Elif!"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Τι κάνεις; Εγώ είμαι καλά. Πέρασε ένας μήνας στη Θεσσαλονίκη!",
+              "tr": "Nasılsın? Ben iyiyim. Selanik'te bir ay geçti!",
+              "en": "How are you? I'm fine. A month has passed in Thessaloniki!"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Πρώτα βρήκα ένα σπίτι στην Καλαμαριά. Το βράδυ πηγαίνω στο μάθημα και μαθαίνω ελληνικά. Ο δάσκαλος είναι πολύ καλός.",
+              "tr": "Önce Kalamaria'da bir ev buldum. Akşamları derse gidiyorum ve Yunanca öğreniyorum. Öğretmen çok iyi.",
+              "en": "First I found a flat in Kalamaria. In the evening I go to class and learn Greek. The teacher is very good."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Το Σάββατο πήγα στη Χαλκιδική με τον Γιώργο. Κολυμπήσαμε στη θάλασσα, φάγαμε ψάρι σε ένα χωριό και γυρίσαμε αργά. Ήμουν πολύ κουρασμένη, αλλά ο καιρός ήταν ωραίος.",
+              "tr": "Cumartesi Giorgos'la Halkidiki'ye gittim. Denizde yüzdük, bir köyde balık yedik ve geç döndük. Çok yorgundum ama hava güzeldi.",
+              "en": "On Saturday I went to Halkidiki with Giorgos. We swam in the sea, ate fish in a village and came back late. I was very tired, but the weather was lovely."
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Πήγα και στον γιατρό, αλλά τώρα είμαι καλά. Μου αρέσει η Θεσσαλονίκη!",
+              "tr": "Doktora da gittim ama şimdi iyiyim. Selanik'i seviyorum!",
+              "en": "I went to the doctor too, but I'm fine now. I like Thessaloniki!"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Τον επόμενο μήνα θα δουλέψω πολύ, αλλά θα πάω και στην Αθήνα με τον Γιώργο. Εκεί θέλω να μιλήσω ελληνικά. Θέλεις να έρθεις στη Θεσσαλονίκη;",
+              "tr": "Gelecek ay çok çalışacağım ama Giorgos'la Atina'ya da gideceğim. Orada Yunanca konuşmak istiyorum. Selanik'e gelmek ister misin?",
+              "en": "Next month I'll work a lot, but I'll also go to Athens with Giorgos. There I want to speak Greek. Do you want to come to Thessaloniki?"
+            },
+            {
+              "who": "Ζεϊνέπ",
+              "el": "Φιλιά, Ζεϊνέπ",
+              "tr": "Öpüyorum, Zeynep",
+              "en": "Love, Zeynep"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "[[Τι κάνεις;]] \"nasılsın?\" demektir. [[Μου αρέσει]] \"hoşuma gidiyor, seviyorum\" anlamında bir kalıp; bir önceki bölümde gördün. [[Φιλιά]] arkadaşa yazılan bir mektubun sonunda \"öpücükler\" gibi bir kapanıştır.",
+          "en": "[[Τι κάνεις;]] means \"how are you?\". [[Μου αρέσει]] is the phrase for \"I like\"; you met it in the last chapter. [[Φιλιά]] (\"kisses\") is a warm way to close a letter to a friend."
+        },
+        {
+          "type": "dialogue",
+          "setting": {
+            "tr": "Elif'in cevabı.",
+            "en": "Elif's reply."
+          },
+          "lines": [
+            {
+              "who": "Ελίφ",
+              "el": "Γεια σου, Ζεϊνέπ!",
+              "tr": "Merhaba Zeynep!",
+              "en": "Hi Zeynep!"
+            },
+            {
+              "who": "Ελίφ",
+              "el": "Τι ωραία! Εγώ είμαι καλά, αλλά δουλεύω πολύ στη Σμύρνη και δεν κάνω εκδρομές. Πήγες στον γιατρό! Πώς είσαι τώρα; Πώς πέρασες στη Χαλκιδική; Τι έφαγες; Το σπίτι σου είναι κοντά στο κέντρο;",
+              "tr": "Ne güzel! Ben iyiyim ama İzmir'de çok çalışıyorum ve geziye çıkmıyorum. Doktora gitmişsin! Şimdi nasılsın? Halkidiki'de nasıl geçti? Ne yedin? Evin merkeze yakın mı?",
+              "en": "How nice! I'm fine, but I work a lot in Izmir and I have no trips. You went to the doctor! How are you now? How was Halkidiki? What did you eat? Is your flat near the centre?"
+            },
+            {
+              "who": "Ελίφ",
+              "el": "Ναι, θέλω να έρθω! Το επόμενο Σαββατοκύριακο θα έρθω στη Θεσσαλονίκη με το λεωφορείο και θα μείνω δύο μέρες. Θα σε δω και θα πάμε μαζί στη θάλασσα. Μου αρέσουν τα ψάρια: θα φάμε ψάρι!",
+              "tr": "Evet, gelmek istiyorum! Gelecek hafta sonu otobüsle Selanik'e gelip iki gün kalacağım. Seni göreceğim ve birlikte denize gideceğiz. Balığı severim: balık yiyeceğiz!",
+              "en": "Yes, I want to come! Next weekend I'll come to Thessaloniki by bus and stay two days. I'll see you and we'll go to the sea together. I like fish: we'll eat fish!"
+            },
+            {
+              "who": "Ελίφ",
+              "el": "Μπορείς να με περιμένεις στον σταθμό; Τα λέμε! Φιλιά, Ελίφ",
+              "tr": "İstasyonda beni bekleyebilir misin? Görüşürüz! Öpüyorum, Elif",
+              "en": "Can you wait for me at the station? See you soon! Love, Elif"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "tr": "[[Τα λέμε!]] \"görüşürüz\" demek; şimdilik bir kalıp. [[Πώς πέρασες;]] \"nasıl geçti?\" sorusunu daha önce gördün. [[περιμένω]] \"beklemek\" fiilidir: [[να με περιμένεις]] \"beni beklemen\". [[δύο μέρες]] \"iki gün\".",
+          "en": "[[Τα λέμε!]] means \"see you!\"; for now it is a set phrase. You have already met [[Πώς πέρασες;]] \"how was it?\". [[περιμένω]] is the verb \"to wait\": [[να με περιμένεις]] is \"(that) you wait for me\". [[δύο μέρες]] is \"two days\"."
+        },
+        {
+          "type": "prose",
+          "tr": "**Sınavın uzunluğunda.** Aynı e-postayı **40–60 kelimeye** sığdırırsan şöyle olur (50 kelime): [[Γεια σου, Ελίφ! Τι κάνεις; Εγώ είμαι καλά. Πέρασε ένας μήνας στη Θεσσαλονίκη! Βρήκα ένα σπίτι στην Καλαμαριά και το βράδυ μαθαίνω ελληνικά. Το Σάββατο πήγα στη Χαλκιδική με τον Γιώργο και φάγαμε ψάρι. Μου αρέσει η θάλασσα. Τον επόμενο μήνα θα πάω στην Αθήνα. Θέλεις να έρθεις; Φιλιά, Ζεϊνέπ]]",
+          "en": "**At the exam's length.** The same e-mail squeezed into **40–60 words** looks like this (50 words): [[Γεια σου, Ελίφ! Τι κάνεις; Εγώ είμαι καλά. Πέρασε ένας μήνας στη Θεσσαλονίκη! Βρήκα ένα σπίτι στην Καλαμαριά και το βράδυ μαθαίνω ελληνικά. Το Σάββατο πήγα στη Χαλκιδική με τον Γιώργο και φάγαμε ψάρι. Μου αρέσει η θάλασσα. Τον επόμενο μήνα θα πάω στην Αθήνα. Θέλεις να έρθεις; Φιλιά, Ζεϊνέπ]]"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Metne göre iki soru.",
+          "en": "Two questions on the text."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch11-q-where",
+            "open-book/ch11-q-tf"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Sekiz fiil, üç zaman",
+        "en": "Eight verbs, three tenses"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Sekiz sık fiil, **ben** için, üç zamanda. Düzenli fiillerde gelecek zamanın kökü ile aorist (geçmiş) **aynı kökten** gelir: *θα γράψω → έγραψα*, *θα αγοράσω → αγόρασα*, *θα μιλήσω → μίλησα*. Düzensiz fiillerde çoğu zaman benzer bir kök görürsün (*θα έρθω → ήρθα*, *θα δω → είδα*), ama her zaman değil: **θα πάω**, fakat **πήγα**. Bunları ayrı öğren. Aynı gelecek biçimi *θέλω να* ve *μπορώ να* sözlerinden sonra da gelir: *θέλω να πάω*.",
+          "en": "Eight common verbs, for **I**, in three tenses. For regular verbs the future and the aorist (the past) share **one stem**: *θα γράψω → έγραψα*, *θα αγοράσω → αγόρασα*, *θα μιλήσω → μίλησα*. For the irregular ones you often see a related stem (*θα έρθω → ήρθα*, *θα δω → είδα*), but not always: **θα πάω**, yet **πήγα**. Learn those apart. The same future form also follows *θέλω να* and *μπορώ να*: *θέλω να πάω*."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Ben: şimdiki, geçmiş, gelecek",
+            "en": "I: present, past, future"
+          },
+          "head": [
+            {
+              "tr": "şimdiki zaman",
+              "en": "present"
+            },
+            {
+              "tr": "geçmiş (aorist)",
+              "en": "past (aorist)"
+            },
+            {
+              "tr": "gelecek",
+              "en": "future"
+            },
+            {
+              "tr": "geçmiş anlamı",
+              "en": "past meaning"
+            }
+          ],
+          "rows": [
+            [
+              "γράφω",
+              "έγραψα",
+              "θα γράψω",
+              {
+                "tr": "yazdım",
+                "en": "I wrote"
+              }
+            ],
+            [
+              "αγοράζω",
+              "αγόρασα",
+              "θα αγοράσω",
+              {
+                "tr": "satın aldım",
+                "en": "I bought"
+              }
+            ],
+            [
+              "μιλάω",
+              "μίλησα",
+              "θα μιλήσω",
+              {
+                "tr": "konuştum",
+                "en": "I spoke"
+              }
+            ],
+            [
+              "πάω",
+              "πήγα",
+              "θα πάω",
+              {
+                "tr": "gittim",
+                "en": "I went"
+              }
+            ],
+            [
+              "έρχομαι",
+              "ήρθα",
+              "θα έρθω",
+              {
+                "tr": "geldim",
+                "en": "I came"
+              }
+            ],
+            [
+              "τρώω",
+              "έφαγα",
+              "θα φάω",
+              {
+                "tr": "yedim",
+                "en": "I ate"
+              }
+            ],
+            [
+              "βλέπω",
+              "είδα",
+              "θα δω",
+              {
+                "tr": "gördüm",
+                "en": "I saw"
+              }
+            ],
+            [
+              "είμαι",
+              "ήμουν",
+              "θα είμαι",
+              {
+                "tr": "idim",
+                "en": "I was"
+              }
+            ]
+          ],
+          "note": {
+            "tr": "*είμαι* ve *θα είμαι* aynı kökü paylaşır, ama geçmişi tamamen farklıdır: *ήμουν*.",
+            "en": "*είμαι* and *θα είμαι* share a stem, but the past is quite different: *ήμουν*."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Χθες έφαγα ψάρι, σήμερα τρώω κεφτέδες, αύριο θα φάω πατάτες.",
+              "tr": "Dün balık yedim, bugün köfte yiyorum, yarın patates yiyeceğim.",
+              "en": "Yesterday I ate fish, today I'm eating meatballs, tomorrow I'll eat potatoes."
+            },
+            {
+              "el": "Χθες ήμουν κουρασμένη, σήμερα είμαι καλά, αύριο θα είμαι στη δουλειά.",
+              "tr": "Dün yorgundum, bugün iyiyim, yarın işte olacağım.",
+              "en": "Yesterday I was tired, today I'm fine, tomorrow I'll be at work."
+            },
+            {
+              "el": "Χθες πήγα στο φαρμακείο, σήμερα πάω στη λαϊκή, αύριο θα πάω στον σταθμό.",
+              "tr": "Dün eczaneye gittim, bugün semt pazarına gidiyorum, yarın istasyona gideceğim.",
+              "en": "Yesterday I went to the pharmacy, today I'm going to the market, tomorrow I'll go to the station."
+            },
+            {
+              "el": "Χθες δεν ήρθα στο μάθημα, σήμερα έρχομαι, αύριο θα έρθω νωρίς.",
+              "tr": "Dün derse gelmedim, bugün geliyorum, yarın erken geleceğim.",
+              "en": "Yesterday I didn't come to class, today I'm coming, tomorrow I'll come early."
+            },
+            {
+              "el": "Χθες έγραψα στον Γιώργο, σήμερα γράφω στη Σοφία, αύριο θα γράψω στην Ελίφ.",
+              "tr": "Dün Giorgos'a yazdım, bugün Sofia'ya yazıyorum, yarın Elif'e yazacağım.",
+              "en": "Yesterday I wrote to Giorgos, today I'm writing to Sofia, tomorrow I'll write to Elif."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": {
+        "tr": "Zamirler: εγώ, με, μου",
+        "en": "The pronouns: εγώ, με, μου"
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Üç sütun, üç ayrı iş. **Birinci sütun** (εγώ, εσύ…) fiilin öznesidir; çoğu zaman söylenmez, çünkü fiilin sonu kimin olduğunu zaten gösterir. **İkinci sütun** (με, σε, τον…) nesnedir ve **fiilden önce** gelir: *σε βλέπω*, *θα σε δω*, *τους είδαμε*. **Üçüncü sütun** (μου, σου, του…) isimden **sonra** \"benim, senin\" demektir: *ο φίλος μου*; fiilden önce \"bana, sana\" anlamına gelir: *μου αρέσει*. İsim sondan üçüncü hecesinden vurgulanıyorsa (*τηλέφωνο*) isme bir vurgu daha eklenir: *το τηλέφωνό μου*.",
+          "en": "Three columns, three jobs. The **first column** (εγώ, εσύ…) is the subject; it is often left out, because the verb's ending already shows who. The **second column** (με, σε, τον…) is the object, and it comes **before the verb**: *σε βλέπω*, *θα σε δω*, *τους είδαμε*. The **third column** (μου, σου, του…) means \"my, your\" **after** a noun: *ο φίλος μου*; before a verb it means \"to me, to you\": *μου αρέσει*. If the noun is stressed on its third syllable from the end (*τηλέφωνο*), it gets a second accent: *το τηλέφωνό μου*."
+        },
+        {
+          "type": "table",
+          "caption": {
+            "tr": "Özne, nesne, benim",
+            "en": "Subject, object, my / to me"
+          },
+          "head": [
+            {
+              "tr": "özne",
+              "en": "subject"
+            },
+            {
+              "tr": "nesne (fiilden önce)",
+              "en": "object (before the verb)"
+            },
+            {
+              "tr": "benim… / bana…",
+              "en": "my… / to me…"
+            }
+          ],
+          "rows": [
+            [
+              "εγώ",
+              "με",
+              "μου"
+            ],
+            [
+              "εσύ",
+              "σε",
+              "σου"
+            ],
+            [
+              "αυτός",
+              "τον",
+              "του"
+            ],
+            [
+              "αυτή",
+              "την",
+              "της"
+            ],
+            [
+              "αυτό",
+              "το",
+              "του"
+            ],
+            [
+              "εμείς",
+              "μας",
+              "μας"
+            ],
+            [
+              "εσείς",
+              "σας",
+              "σας"
+            ],
+            [
+              "αυτοί",
+              "τους",
+              "τους"
+            ]
+          ],
+          "note": {
+            "tr": "Çoğul nesnede dişil ve nötr için *τις* ve *τα* vardır (*αυτές → τις*, *αυτά → τα*). Sahiplik (üçüncü sütun) çoğulda hep *τους*.",
+            "en": "For a plural object, feminine and neuter have *τις* and *τα* (*αυτές → τις*, *αυτά → τα*). In the third column the plural is always *τους*."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "el": "Θα σε δω αύριο.",
+              "tr": "Seni yarın göreceğim.",
+              "en": "I'll see you tomorrow."
+            },
+            {
+              "el": "Τους είδαμε στη Χαλκιδική.",
+              "tr": "Onları Halkidiki'de gördük.",
+              "en": "We saw them in Halkidiki."
+            },
+            {
+              "el": "Ο φίλος μου είναι από τη Σμύρνη.",
+              "tr": "Arkadaşım İzmirli.",
+              "en": "My friend is from Izmir."
+            },
+            {
+              "el": "Το τηλέφωνό μου είναι εδώ.",
+              "tr": "Telefonum burada.",
+              "en": "My phone is here.",
+              "note": {
+                "tr": "*τηλέφωνο* sondan üçüncü hecesinden vurgulanır: ikinci vurgu.",
+                "en": "*τηλέφωνο* is stressed on its third syllable from the end: the second accent."
+              }
+            },
+            {
+              "el": "Μου αρέσει η θάλασσα.",
+              "tr": "Denizi seviyorum.",
+              "en": "I like the sea."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "words",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Bu bölümde yeni kelime yok. Aşağıda future ve past bölümlerinden tekrar etmeye değer 23 kelime var. Bu liste hiçbir kelimeyi yeni bir yere koymaz; kelimeler zaten kendi bölümlerinde açıldı.",
+          "en": "There are no new words in this chapter. Below are 23 words from the future and past chapters that are worth revising. This list places no word anywhere new; each word already opened in its own chapter."
+        },
+        {
+          "type": "words",
+          "items": [
+            "open-book/ch08-mporo",
+            "open-book/ch08-fevgo",
+            "open-book/ch08-taxidevo",
+            "open-book/ch08-archizo",
+            "open-book/ch08-plirono",
+            "open-book/ch08-agorazo",
+            "open-book/ch08-evdomada",
+            "open-book/ch08-minas",
+            "open-book/ch08-savvatokyriako",
+            "open-book/ch08-rantevou",
+            "open-book/ch08-giatros",
+            "open-book/ch08-thalassa",
+            "open-book/ch08-mazi",
+            "open-book/ch08-epomenos",
+            "open-book/ch09-chthes",
+            "open-book/ch09-prota",
+            "open-book/ch09-meta",
+            "open-book/ch09-telika",
+            "open-book/ch09-paralia",
+            "open-book/ch09-chorio",
+            "open-book/ch09-kourasmenos",
+            "open-book/ch09-kolympao",
+            "open-book/ch09-gyrizo"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "tips",
+      "blocks": [
+        {
+          "type": "tip",
+          "kind": "exam",
+          "exam_task": "a2ltr.writing.email_friendly",
+          "tr": "**Dostça bir e-postanın parçaları.** (1) Selam: *Γεια σου, Ελίφ!* (2) Hâl hatır: [[Τι κάνεις;]] ve *Εγώ είμαι καλά.* (3) Haber: iki üç cümle; ne yaptın (aorist) ve ne yapacaksın (*θα …*, *θέλω να …*). (4) Bir soru: *Θέλεις να έρθεις;* ya da *Εσύ πώς πέρασες;* (5) Kapanış: [[Φιλιά]] ya da [[Τα λέμε!]], sonra adın. **Kelime sayısı:** 40–60. Selamı ve kapanışı da say; sayım nasıl yapılırsa yapılsın aralıkta kalmak için 45–55 kelimeyi hedefle. Görevdeki bütün maddelere cevap ver; kısa ve doğru cümleler, uzun ve hatalı cümlelerden iyidir.",
+          "en": "**The parts of a friendly e-mail.** (1) Greeting: *Γεια σου, Ελίφ!* (2) How are you: [[Τι κάνεις;]] and *Εγώ είμαι καλά.* (3) The news: two or three sentences; what you did (the aorist) and what you will do (*θα …*, *θέλω να …*). (4) A question: *Θέλεις να έρθεις;* or *Εσύ πώς πέρασες;* (5) A closing: [[Φιλιά]] or [[Τα λέμε!]], then your name. **Word count:** 40–60. Count the greeting and the closing too; aim for 45–55 words so you stay in range however the words are counted. Answer every point of the task; short, correct sentences beat long ones full of mistakes."
+        },
+        {
+          "type": "tip",
+          "kind": "mistake",
+          "tr": "**Üç sık hata.**\n**1. θα πάω mu πήγα mı?** Zaman sözüne bak: *χθες*, *πέρσι*, *το Σάββατο* (geçen) → *πήγα*; *αύριο*, *τον επόμενο μήνα* → *θα πάω*. *θα πήγα* diye bir şey yok: *θα* sözünden sonra aorist gelmez.\n**2. έγραψα mı γράψαμε mi?** *έ-* yalnızca \"ben, sen, o, onlar\" biçimlerinde var: *έγραψα, έγραψες, έγραψε, έγραψαν*. \"Biz\" ve \"siz\" biçimlerinde yok: *γράψαμε, γράψατε*. *έγραψαμε* yazma.\n**3. το τηλέφωνό μου.** *τηλέφωνο* sondan üçüncü hecesinden vurgulanır; ona *μου* eklenince ikinci vurgu gelir: *το τηλέφωνό μου*. *Το σπίτι μου* ve *ο φίλος μου* sözlerinde ek vurgu yok.",
+          "en": "**Three common mistakes.**\n**1. θα πάω or πήγα?** Look at the time word: *χθες*, *πέρσι*, *το Σάββατο* (last) → *πήγα*; *αύριο*, *τον επόμενο μήνα* → *θα πάω*. *θα πήγα* does not exist: the aorist never follows *θα*.\n**2. έγραψα or γράψαμε?** The *έ-* is only in the \"I, you, he/she, they\" forms: *έγραψα, έγραψες, έγραψε, έγραψαν*. It is missing in the \"we\" and \"you (pl.)\" forms: *γράψαμε, γράψατε*. Do not write *έγραψαμε*.\n**3. το τηλέφωνό μου.** *τηλέφωνο* is stressed on its third syllable from the end, so with *μου* it gets a second accent: *το τηλέφωνό μου*. *Το σπίτι μου* and *ο φίλος μου* take no extra accent."
+        }
+      ]
+    },
+    {
+      "kind": "try",
+      "blocks": [
+        {
+          "type": "prose",
+          "tr": "Şimdi sen dene. Yanlış yapmak serbest: bunlar sınav hazırlığı hesabına girmez.",
+          "en": "Now you try. Mistakes are fine here: these do not count towards your exam readiness."
+        },
+        {
+          "type": "check",
+          "items": [
+            "open-book/ch11-try-aorist",
+            "open-book/ch11-try-future",
+            "open-book/ch11-try-tense",
+            "open-book/ch11-try-se",
+            "open-book/ch11-try-mou"
+          ]
+        }
+      ]
+    }
+  ]
+}

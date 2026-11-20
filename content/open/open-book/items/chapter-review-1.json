@@ -1,0 +1,748 @@
+[
+ {
+  "id": "ch07-q-time",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "explain": {
+   "en": "Giorgos says «στις έντεκα πηγαίνω στη λαϊκή» and they agree on «Στις έντεκα». Half past nine is when he phones.",
+   "tr": "Giorgos «στις έντεκα πηγαίνω στη λαϊκή» diyor ve «Στις έντεκα» diye anlaşıyorlar. Dokuz buçuk, telefon ettiği saat."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "prompt": {
+   "el": "Τι ώρα πηγαίνουν στη λαϊκή;",
+   "en": "At what time are they going to the market?",
+   "tr": "Saat kaçta pazara gidiyorlar?"
+  },
+  "options": [
+   "Στις έντεκα.",
+   "Στις εννιά και μισή.",
+   "Στις δώδεκα."
+  ],
+  "answer": 0
+ },
+ {
+  "id": "ch07-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "explain": {
+   "en": "Zeynep takes two kilos of apples (four euros). Giorgos's three tomatoes cost one euro. She is from Izmir (Σμύρνη). The ticket costs «ένα ευρώ και είκοσι λεπτά».",
+   "tr": "Zeynep iki kilo elma alıyor (dört euro). Giorgos'un üç domatesi bir euro. Zeynep İzmirli (Σμύρνη). Bilet «ένα ευρώ και είκοσι λεπτά»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "statements": [
+   {
+    "el": "Η Ζεϊνέπ παίρνει δύο κιλά μήλα.",
+    "en": "Zeynep takes two kilos of apples.",
+    "tr": "Zeynep iki kilo elma alıyor.",
+    "answer": true
+   },
+   {
+    "el": "Οι τρεις ντομάτες κάνουν δύο ευρώ.",
+    "en": "The three tomatoes cost two euros.",
+    "tr": "Üç domates iki euro.",
+    "answer": false
+   },
+   {
+    "el": "Η Ζεϊνέπ είναι από την Αθήνα.",
+    "en": "Zeynep is from Athens.",
+    "tr": "Zeynep Atinalı.",
+    "answer": false
+   },
+   {
+    "el": "Το εισιτήριο κάνει ένα ευρώ και είκοσι λεπτά.",
+    "en": "The ticket costs one euro twenty.",
+    "tr": "Bilet bir euro yirmi sent.",
+    "answer": true
+   }
+  ]
+ },
+ {
+  "id": "ch07-try-mitate",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "εσείς → -άτε: μιλάτε. μιλάς is «you» (one friend); μιλάμε is «we».",
+   "tr": "εσείς → -άτε: μιλάτε. μιλάς tek bir arkadaşa «sen»; μιλάμε «biz»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_b"
+  ],
+  "cue": {
+   "lemma": "μιλάω",
+   "person": "2pl",
+   "tense": "present"
+  },
+  "text": "Εσείς {1} ελληνικά πολύ καλά;",
+  "answer": {
+   "1": [
+    "μιλάτε"
+   ]
+  },
+  "options": {
+   "1": [
+    "μιλάτε",
+    "μιλάς",
+    "μιλάμε"
+   ]
+  },
+  "translation": {
+   "en": "Do you (formal) speak Greek very well?",
+   "tr": "Yunancayı çok iyi konuşuyor musunuz?"
+  }
+ },
+ {
+  "id": "ch07-try-grafoume",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "εμείς → -ουμε: γράφουμε. γράφουν is «they»; γράφετε is «you (plural)».",
+   "tr": "εμείς → -ουμε: γράφουμε. γράφουν «onlar»; γράφετε «siz»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "verb.present"
+  ],
+  "cue": {
+   "lemma": "γράφω",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "text": "Εμείς {1} στο σπίτι το πρωί.",
+  "answer": {
+   "1": [
+    "γράφουμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "γράφουμε",
+    "γράφουν",
+    "γράφετε"
+   ]
+  },
+  "translation": {
+   "en": "We write at home in the morning.",
+   "tr": "Biz sabahları evde yazı yazıyoruz."
+  }
+ },
+ {
+  "id": "ch07-try-ton",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "ο δρόμος is masculine and here the object of θυμάμαι → τον δρόμο.",
+   "tr": "ο δρόμος eril ve burada θυμάμαι fiilinin nesnesi → τον δρόμο."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "article.accusative"
+  ],
+  "text": "Δεν θυμάμαι {1} δρόμο.",
+  "answer": {
+   "1": [
+    "τον"
+   ]
+  },
+  "options": {
+   "1": [
+    "τον",
+    "την",
+    "το"
+   ]
+  },
+  "translation": {
+   "en": "I don't remember the way.",
+   "tr": "Yolu hatırlamıyorum."
+  }
+ },
+ {
+  "id": "ch07-try-ntomates",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "Both are objects of παίρνουμε. Feminine plural object: τις ντομάτες. Neuter plural: τα μήλα (the neuter never changes).",
+   "tr": "İkisi de παίρνουμε fiilinin nesnesi. Dişil çoğul nesne: τις ντομάτες. Nötr çoğul: τα μήλα (nötr değişmez)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "article.accusative",
+   "article.plural"
+  ],
+  "text": "Παίρνουμε {1} ντομάτες και {2} μήλα.",
+  "answer": {
+   "1": [
+    "τις"
+   ],
+   "2": [
+    "τα"
+   ]
+  },
+  "options": {
+   "1": [
+    "τις",
+    "οι",
+    "τους"
+   ],
+   "2": [
+    "τα",
+    "οι",
+    "τις"
+   ]
+  },
+  "translation": {
+   "en": "We take the tomatoes and the apples.",
+   "tr": "Domatesleri ve elmaları alıyoruz."
+  }
+ },
+ {
+  "id": "ch07-try-time",
+  "type": "match",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each time in words with its digits.",
+   "tr": "Her saati yazıyla rakamıyla eşleştir."
+  },
+  "explain": {
+   "en": "και μισή = half past, και τέταρτο = quarter past: εννιά και μισή 9:30, δώδεκα και τέταρτο 12:15, έντεκα και μισή 11:30, δέκα και τέταρτο 10:15.",
+   "tr": "και μισή = buçuk, και τέταρτο = çeyrek geçe: εννιά και μισή 9:30, δώδεκα και τέταρτο 12:15, έντεκα και μισή 11:30, δέκα και τέταρτο 10:15."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "left": [
+   "εννιά και μισή",
+   "δώδεκα και τέταρτο",
+   "έντεκα και μισή",
+   "δέκα και τέταρτο"
+  ],
+  "right": [
+   "9:30",
+   "12:15",
+   "11:30",
+   "10:15"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ {
+  "id": "ch07-p-thymasai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "εσύ → -άσαι: θυμάσαι. θυμάται is «he»; θυμάμαι is «I».",
+   "tr": "εσύ → -άσαι: θυμάσαι. θυμάται «o»; θυμάμαι «ben»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "verb.present",
+   "verb.deponent"
+  ],
+  "cue": {
+   "lemma": "θυμάμαι",
+   "person": "2sg",
+   "tense": "present"
+  },
+  "text": "Εσύ {1} τον δρόμο;",
+  "answer": {
+   "1": [
+    "θυμάσαι"
+   ]
+  },
+  "options": {
+   "1": [
+    "θυμάσαι",
+    "θυμάται",
+    "θυμάμαι"
+   ]
+  },
+  "translation": {
+   "en": "Do you remember the way?",
+   "tr": "Yolu hatırlıyor musun?"
+  }
+ },
+ {
+  "id": "ch07-p-koimomaste",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "εμείς → κοιμόμαστε. κοιμάμαι is «I»; κοιμούνται is «they».",
+   "tr": "εμείς → κοιμόμαστε. κοιμάμαι «ben»; κοιμούνται «onlar»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "verb.present",
+   "verb.deponent"
+  ],
+  "cue": {
+   "lemma": "κοιμάμαι",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "text": "Το Σάββατο εμείς {1} αργά.",
+  "answer": {
+   "1": [
+    "κοιμόμαστε"
+   ]
+  },
+  "options": {
+   "1": [
+    "κοιμόμαστε",
+    "κοιμάμαι",
+    "κοιμούνται"
+   ]
+  },
+  "translation": {
+   "en": "On Saturday we sleep late.",
+   "tr": "Cumartesi biz geç uyuruz."
+  }
+ },
+ {
+  "id": "ch07-p-trome",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "εμείς → τρώμε. τρώνε is «they»; τρως is «you».",
+   "tr": "εμείς → τρώμε. τρώνε «onlar»; τρως «sen»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "verb.present"
+  ],
+  "cue": {
+   "lemma": "τρώω",
+   "person": "1pl",
+   "tense": "present"
+  },
+  "text": "Στην ταβέρνα εμείς {1} κεφτέδες.",
+  "answer": {
+   "1": [
+    "τρώμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "τρώμε",
+    "τρώνε",
+    "τρως"
+   ]
+  },
+  "translation": {
+   "en": "At the taverna we eat meatballs.",
+   "tr": "Tavernada biz köfte yeriz."
+  }
+ },
+ {
+  "id": "ch07-p-family",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Με ποιο ρήμα πάει; Βάζω κάθε τύπο στη σωστή ομάδα.",
+   "en": "Which verb does it go like? Put each form in the right group.",
+   "tr": "Hangi fiil gibi çekiliyor? Her biçimi doğru gruba koy."
+  },
+  "explain": {
+   "en": "δουλεύεις and πίνουμε go like γράφω (-ω); μιλάτε and ρωτάνε like μιλάω (-άω); έρχεσαι and κοιμάται like έρχομαι (-ομαι, -άμαι).",
+   "tr": "δουλεύεις ve πίνουμε γράφω gibi (-ω); μιλάτε ve ρωτάνε μιλάω gibi (-άω); έρχεσαι ve κοιμάται έρχομαι gibi (-ομαι, -άμαι)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "categories": [
+   "γράφω",
+   "μιλάω",
+   "έρχομαι"
+  ],
+  "items": [
+   "δουλεύεις",
+   "μιλάτε",
+   "έρχεσαι",
+   "πίνουμε",
+   "ρωτάνε",
+   "κοιμάται"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   0,
+   1,
+   2
+  ]
+ },
+ {
+  "id": "ch07-p-price",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "explain": {
+   "en": "3 × 2 = 6: έξι ευρώ.",
+   "tr": "3 × 2 = 6: έξι ευρώ."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "prompt": {
+   "el": "Τα μήλα είναι δύο ευρώ το κιλό. Η Ζεϊνέπ παίρνει τρία κιλά. Πόσο κάνουν;",
+   "en": "The apples are two euros a kilo. Zeynep takes three kilos. How much is it?",
+   "tr": "Elmanın kilosu iki euro. Zeynep üç kilo alıyor. Kaç para tutuyor?"
+  },
+  "options": [
+   "Έξι ευρώ.",
+   "Πέντε ευρώ.",
+   "Τρία ευρώ."
+  ],
+  "answer": 0
+ },
+ {
+  "id": "ch07-p-places",
+  "type": "match",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each thing with the place where you get it.",
+   "tr": "Her şeyi alındığı yerle eşleştir."
+  },
+  "explain": {
+   "en": "Bread comes from the bakery (ο φούρνος), tomatoes from the street market (η λαϊκή), you wait for the bus at the stop (η στάση), meatballs are eaten at the taverna (η ταβέρνα).",
+   "tr": "Ekmek fırından (ο φούρνος), domates semt pazarından (η λαϊκή) alınır; otobüsü durakta (η στάση) beklersin, köfteyi tavernada (η ταβέρνα) yersin."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "left": [
+   "το ψωμί",
+   "οι ντομάτες",
+   "το λεωφορείο",
+   "οι κεφτέδες"
+  ],
+  "right": [
+   "ο φούρνος",
+   "η λαϊκή",
+   "η στάση",
+   "η ταβέρνα"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ {
+  "id": "ch07-p-notice",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Σημειώστε ΣΩΣΤΟ ή ΛΑΘΟΣ.",
+   "en": "Mark TRUE or FALSE.",
+   "tr": "DOĞRU veya YANLIŞ işaretleyin."
+  },
+  "explain": {
+   "en": "Monday: closed (κλειστά). Tuesday – Sunday it is open, so also on Sunday and on Saturday, from 12:00.",
+   "tr": "Pazartesi: kapalı (κλειστά). Salı – Pazar açık; yani pazar günü de, cumartesi de saat 12.00'den itibaren."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "stimulus": {
+   "text": "Ταβέρνα «Ο Μανώλης»\nΔευτέρα: κλειστά\nΤρίτη – Κυριακή: 12:00 – 23:00"
+  },
+  "statements": [
+   {
+    "el": "Η ταβέρνα είναι κλειστή τη Δευτέρα.",
+    "en": "The taverna is closed on Monday.",
+    "tr": "Taverna pazartesi kapalı.",
+    "answer": true
+   },
+   {
+    "el": "Την Κυριακή η ταβέρνα είναι κλειστή.",
+    "en": "The taverna is closed on Sunday.",
+    "tr": "Taverna pazar günü kapalı.",
+    "answer": false
+   },
+   {
+    "el": "Το Σάββατο είναι ανοιχτή από τις δώδεκα.",
+    "en": "On Saturday it is open from twelve.",
+    "tr": "Cumartesi on ikiden itibaren açık.",
+    "answer": true
+   }
+  ]
+ },
+ {
+  "id": "ch07-p-bill",
+  "type": "mcq",
+  "skill": "speaking",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "explain": {
+   "en": "«Τον λογαριασμό, παρακαλώ.» is «the bill, please». «Τον κατάλογο» is the menu, which you ask for at the start.",
+   "tr": "«Τον λογαριασμό, παρακαλώ.» «hesap lütfen» demek. «Τον κατάλογο» menü demek; onu başta istersin."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "ask": {
+   "en": "You have finished your meal and want to pay. What do you say to the waiter?",
+   "tr": "Yemeği bitirdin ve ödemek istiyorsun. Garsona ne dersin?"
+  },
+  "prompt": {
+   "el": "Στην ταβέρνα. Εσείς: «…»",
+   "en": "At the taverna. You: «…»",
+   "tr": "Tavernada. Siz: «…»"
+  },
+  "options": [
+   "Τον λογαριασμό, παρακαλώ.",
+   "Τον κατάλογο, παρακαλώ.",
+   "Καλημέρα, χαίρω πολύ."
+  ],
+  "answer": 0
+ },
+ {
+  "id": "ch07-p-phone",
+  "type": "mcq",
+  "skill": "speaking",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "explain": {
+   "en": "«Εμπρός;» is how you answer the phone.",
+   "tr": "«Εμπρός;» telefonu açarken söylenir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "ask": {
+   "en": "Your phone rings and you pick it up. What do you say?",
+   "tr": "Telefonun çalıyor ve açıyorsun. Ne dersin?"
+  },
+  "prompt": {
+   "el": "Στο τηλέφωνο. Εσείς: «…»",
+   "en": "On the phone. You: «…»",
+   "tr": "Telefonda. Siz: «…»"
+  },
+  "options": [
+   "Εμπρός;",
+   "Ορίστε ο κατάλογος.",
+   "Στις έντεκα."
+  ],
+  "answer": 0
+ },
+ {
+  "id": "ch07-p-sto",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "explain": {
+   "en": "το κέντρο is neuter: σε + το = στο. στη is for feminine nouns, στον for masculine.",
+   "tr": "το κέντρο nötr: σε + το = στο. στη dişil isimlerle, στον eril isimlerle."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-sonnet"
+  },
+  "grammar": [
+   "preposition.article"
+  ],
+  "text": "Πηγαίνουμε {1} κέντρο με το λεωφορείο.",
+  "answer": {
+   "1": [
+    "στο"
+   ]
+  },
+  "options": {
+   "1": [
+    "στο",
+    "στη",
+    "στον"
+   ]
+  },
+  "translation": {
+   "en": "We're going to the centre by bus.",
+   "tr": "Merkeze otobüsle gidiyoruz."
+  }
+ }
+]
