@@ -238,6 +238,7 @@ learner/generated/<pack-id>/   gitignored: written by the coach for this learner
   raw/*.json                   optional, private packs only: source material that is not shown as exercises
   units.json                   optional: the course outline (lessons with theme, functions, grammar, vocabulary)
   overlays/tr.json             optional, imported packs: Turkish meanings written by the coach, applied on (re-)import
+  glossary.json                optional: what tapping a word finds when no item has it (§4.9)
 ```
 
 The app loads every pack in all three roots at start-up and on a "reload content" request from the coach. An invalid item is skipped and logged, never fatal. `uv run greek-coach validate <path>` checks a pack and prints problems in plain language; the coach runs it after every write.
@@ -271,6 +272,7 @@ The app loads every pack in all three roots at start-up and on a "reload content
 | `level` | yes | `A1`, `A2`, `B1` |
 | `topics` | no | Free tags: `pharmacy`, `office`, `neighbourhood`, `work`… The coach uses them to match interests. |
 | `rubric` | no | The Greek instruction line, with `en` and `tr` translations. |
+| `ask` | no | The question or situation in the learner's language, `{ "en": "...", "tr": "..." }`, always shown above the Greek (never behind "Translate"). For a task whose point is "what do you say here?" or a question about a word ("how is η read in μήνας?"). Phase 5d. |
 | `stimulus` | no | `{ "text": "...", "audio": "audio/x.mp3", "tts": "...", "plays": 2 }`. `tts` means "speak this with the browser voice"; `audio` takes precedence. |
 | `explain` | no | Short explanation after answering: `{ "en": "...", "tr": "..." }` |
 | `source` | yes for private packs | Provenance, e.g. `{ "doc": "...", "page": 41 }` |
@@ -469,7 +471,7 @@ Phase 5, as built (`src/greek_coach/exams.py`, validated on load and exported by
   - inline checks drawn by the normal card renderers;
   - at the end, "Done reading — practise this chapter". This marks the chapter read and starts a session of exactly this stage's items, its words first.
 - **Inline checks** are a session of kind `lesson`. They update the review schedule; their attempts are not exam evidence (§5.3).
-- **Data:** migration 0006 `chapter_reads(curriculum, stage, chapter_version, opened_at, finished_at, sections_json)`. The report (`report_version` 3) has `chapters`, and chapter flags (`item_key` `chapter:<curriculum>/<stage>#<section>`) appear in `open_flags` with the file and the section.
+- **Data:** migration 0006 `chapter_reads(curriculum, stage, chapter_version, opened_at, finished_at, sections_json)`. The report (`report_version` 3, now 4) has `chapters`, and chapter flags (`item_key` `chapter:<curriculum>/<stage>#<section>`) appear in `open_flags` with the file and the section.
 - **Navigation** (changed 2026-11-19, after the maintainer could not reach a chapter from the UI):
   - Every screen has a URL (`?book`, `?lesson=<stage>`, `?stage=<id>`, `?practise`, `?words`, `?verbs`, `?exam`, `?writing`, `?submission=<id>`, `?mock=<run id>`; the old `?map` still works) and its own history entry, so back and forward work.
   - The app bar on every screen outside a session links Home, Book, Practise, Words, Verbs and Exam.
@@ -479,6 +481,49 @@ Phase 5, as built (`src/greek_coach/exams.py`, validated on load and exported by
 - **Learn cards:** a vocab card for a word with no review state carries `learn`: the word, its meaning and an example, from the item or else the first chapter sentence that uses it. The app shows it ungraded before the test card. It is not shown in mocks or stage checks.
 
 ---
+
+### 4.9 Tap a word: every word has a meaning (phase 5d, as built: `src/greek_coach/lookup.py`, `wordscan.py`)
+
+**The problem it fixes.** On 2026-11-19, 41% of the tappable words found nothing: inflected forms (ακούστε, απαντήσεις), instruction words (Διαλέγω, Συμπληρώνω) and names (Μεχμέτ, Νάξο). Without the private book, the open packs explained almost nothing, because their meanings came from the book's word list.
+
+- **What is tappable** is what `web/app.js` passes to `greekText`:
+  - in items: rubrics, stimulus texts and transcripts, prompts, statements, the form and gap texts (with the answer filled in), match and categorise entries, table rows and columns, a speaking card's useful phrases and model, vocab words and examples;
+  - in chapters: dialogue lines, examples, table cells (not the header row) and `[[…]]` spans.
+
+  Option buttons (mcq options, form choices, the gap bank) are plain text. `wordscan.py` reads exactly these fields.
+- **Lookup order**, best first:
+  1. the exact word, or a verb form a form item lists;
+  2. without accents;
+  3. a function word (`function_words.json`), an instruction word (`rubric_words.json`), or a pack glossary's `words`;
+  4. a known name (`names.json`, a glossary's `names`, the speakers of the chapters);
+  5. a glossary's `forms`: an inflected form mapped to its lemma;
+  6. a name by its stem (Γιώργου → Γιώργος);
+  7. the same stem with another ending;
+  8. a phrase the word belongs to.
+
+  A form says so: "“ακούστε” is a form of ακούω" / "“ακούστε”, ακούω kelimesinin bir biçimi". A name says "a name (of a person)" / "özel isim", and a place "a place name" / "yer adı".
+- **`<pack>/glossary.json`** (schema `schemas/glossary.schema.json`):
+  - `forms {form: lemma | [lemmas]}`;
+  - `words [{el, forms, pos, en, tr}]`, the shape of `function_words.json`;
+  - `names {name: "person" | "place" | base name}`;
+  - `leave {word: reason}`, for words left unexplained on purpose (OCR fragments, endings in a grammar table).
+
+  It survives a re-import, because the importer rewrites only `items/`, `raw/`, `units.json` and the manifest.
+- **Open content is explained by tracked files alone.** A fresh clone has no private pack. The open packs' meanings are in `content/open/open-shared-words-tr/glossary.json` (CC BY-SA 4.0). They were drafted by Sonnet subagents on 2026-11-20 and spot-checked by Opus. The book's own extra words are in `content/private/greek-helper/glossary.json`.
+- **Filling the gaps:** `greek-coach words <pack> [--write] [--json <file>]`.
+  - It lists a pack's unexplained words. A pack is checked against what it can rely on: an open pack against open packs only, a private one against open and private.
+  - `--write` maps the inflected ones to a lemma the lookup knows, using the cached Wiktionary dump (`.cache/greek-coach/kaikki-el-forms.json`, built once from the dump the importer downloaded).
+  - `--json` writes the rest, with Wiktionary's gloss as a hint, for whoever writes their glossary entries.
+- **Kept fixed:**
+  - `validate` notes, per items file and per chapter, the words that find nothing, lists the `leave` words with their reasons, and reports a glossary form whose lemma nothing explains as a problem;
+  - `report` (`report_version` 4) carries `tap_a_word {total, unexplained, share, left_on_purpose, by_pack, sample}`;
+  - a test asserts that the open packs and the test chapter have no unexplained word.
+- **As measured on 2026-11-20:**
+  - the open packs: every tappable word has a meaning;
+  - the whole catalogue: 15 of 5,169 (0.3%) are left on purpose, each with its reason.
+- **No question hidden behind "Translate".** `validate` notes a true/false statement, or an mcq, match, categorise or table prompt, whose Greek has at most 2 words while its translation has at least 5, and 3 times as many, words, and that has no `ask`. The 17 book items it found are fixed:
+  - the sign statements now carry the claim in Greek («Η ΣΤΑΣΗ είναι για το λεωφορείο.»);
+  - the reading and "what do you say" items got an `ask`.
 
 ## 5. Learner data (`learner/`, gitignored)
 
@@ -549,7 +594,8 @@ The coach does not parse SQLite by hand. `uv run greek-coach report [--since 14d
 - accuracy per skill, `exam_task` and topic;
 - the items that are hardest (most lapses) and most looked up;
 - open flags and unmarked submissions;
-- the current readiness estimate.
+- the current readiness estimate;
+- how many tappable words find no meaning (`tap_a_word`, §4.9).
 
 This is the stable contract between app and agent. The coach writes only files (packs, feedback, notes, message, plan, profile), never the database.
 

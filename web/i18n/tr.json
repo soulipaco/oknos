@@ -86,6 +86,7 @@
   "accent_note": "Vurguya dikkat: {word}",
   "comes_back": "Bu yarın tekrar gelecek.",
   "lookup_none": "Paketlerinde “{word}” için henüz anlam yok.",
+  "lookup_form": "“{word}”, {lemma} kelimesinin bir biçimi.",
   "lookup_similar": "En yakın eşleşme: aynı kök, farklı ek.",
   "summary_title": "Bugünlük bu kadar",
   "summary_line": "Yaklaşık {minutes} dakikada {done} cevap, %{pct} doğru.",

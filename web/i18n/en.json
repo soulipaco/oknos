@@ -86,6 +86,7 @@
   "accent_note": "Watch the accent: {word}",
   "comes_back": "This one comes back tomorrow.",
   "lookup_none": "No meaning for “{word}” in your packs yet.",
+  "lookup_form": "“{word}” is a form of {lemma}.",
   "lookup_similar": "Closest match: same stem, different ending.",
   "summary_title": "Done for today",
   "summary_line": "{done} answers in about {minutes} min, {pct}% right.",

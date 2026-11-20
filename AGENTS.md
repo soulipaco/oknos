@@ -23,7 +23,7 @@ uv run pytest                 # run the tests
 
 ## Current state
 
-Phases 1–5 and 5b are built and committed. Phase 5b is a curriculum the learner progresses through, plus screens to see and choose what to practise. Phase 5c (the book: a chapter to read before each stage's practice) is built. **All 26 stages of the book curriculum have a chapter**: the intro, lessons 1–24 and the B1 bridge. Each was drafted by Sonnet (lessons 1–2 by Opus), reviewed by Opus, and validated. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.
+Phases 1–5 and 5b are built and committed. Phase 5b is a curriculum the learner progresses through, plus screens to see and choose what to practise. Phase 5c (the book: a chapter to read before each stage's practice) is built. Phase 5d (every tappable word has a meaning; no question hidden behind "Translate") is built. **All 26 stages of the book curriculum have a chapter**: the intro, lessons 1–24 and the B1 bridge. Each was drafted by Sonnet (lessons 1–2 by Opus), reviewed by Opus, and validated. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.
 
 What works now:
 - **Stack:** uv, FastAPI and SQLite (`learner/greek-coach.db`, migrations `0001`–`0006`), with a no-build front end in `web/`. UI in English and Turkish.
@@ -97,13 +97,28 @@ What works now:
   - the app takes them in.
 
   The shared rules are in `docs/COACHING.md`. Skills: `coach`, `capture`, `mark`, `tutor`, `daily-prep`, `watch`, `rebuild-imported`, `plan`, `mock-exam` and `write-chapter`, plus `setup` and `import-material`.
-- **CLI:** `start`, `stop`, `health`, `report`, `validate` (packs, chapters, Greek lint, exam tags, learner folder), `reload`, `import`, `raw`, `schema`, `shortcut`, `transcribe`, `run` and `schedule`.
+- **CLI:** `start`, `stop`, `health`, `report`, `validate` (packs, chapters, Greek lint, exam tags, tap-a-word gaps, hidden questions, learner folder), `words`, `reload`, `import`, `raw`, `schema`, `shortcut`, `transcribe`, `run` and `schedule`.
 - **Audio and speech.**
   - Browser voice for words. A vocab item's optional `say` replaces `el` as what is read.
-- **Tap a word:** the lookup finds exact words, accent-free matches, verb forms and stems. It also finds the phrase a word belongs to (λένε → με λένε …) and about 50 function words (articles, pronouns, prepositions, particles: `src/greek_coach/function_words.json`). A meaning shown in the other UI language because the item has none in this one is tagged EN or TR.
+- **Tap a word (phase 5d, SPEC §4.9):** every Greek word on screen has a meaning.
+  - The lookup finds, in this order:
+    - exact words and verb forms;
+    - accent-free matches;
+    - function words (`src/greek_coach/function_words.json`), instruction words (`rubric_words.json`: Διαλέγω, Συμπληρώστε…) and the packs' glossary words;
+    - names and places (`names.json`, chapter speakers, glossary `names`);
+    - inflected forms mapped to their word ("“ακούστε” is a form of ακούω");
+    - then stems and phrases.
+  - A pack's `glossary.json` holds `forms`, `words`, `names`, and `leave` (left unexplained on purpose, with a reason). `uv run greek-coach words <pack> --write` maps inflected forms from the cached Wiktionary dump.
+  - The open packs' meanings are tracked in `content/open/open-shared-words-tr/glossary.json`. They were drafted by Sonnet on 2026-11-20 and spot-checked by Opus. On a fresh clone the open packs explain every word they show.
+  - With the book, 15 of 5,169 tappable words (0.3%) are left unexplained, all OCR fragments or endings in grammar tables. `report` carries `tap_a_word`.
+  - A meaning shown in the other UI language because the item has none in this one is tagged EN or TR.
+- **No question behind "Translate":**
+  - items can carry `ask {tr, en}`, the question or situation in the UI language, always shown under the rubric;
+  - `validate` notes a statement or prompt whose Greek is ≤ 2 words with a much longer translation;
+  - the 17 book checks it found are fixed.
   - Listening passages pre-generated with `scripts/make_audio.py`: edge-tts with the learner's yes, for content outside `learner/` only.
   - Speaking recordings transcribed locally with faster-whisper `small` (the `speech` group).
-- **Tests:** `uv run pytest`, which includes a scripted two weeks of use, the phase 4 contracts (`tests/test_coach.py`) exam mode (`tests/test_exam.py`) and chapters (`tests/test_chapters.py`). `scripts/simulate.py` also prints the readiness per unit.
+- **Tests:** `uv run pytest`, which includes a scripted two weeks of use, the phase 4 contracts (`tests/test_coach.py`) exam mode (`tests/test_exam.py`), chapters (`tests/test_chapters.py`) and tap-a-word coverage (`tests/test_lookup_coverage.py`: no open word without a meaning). `scripts/simulate.py` also prints the readiness per unit.
 
 Known limits:
 - The open content alone gives too few A2/B1 exam-format items for readiness to show numbers in the first weeks. The coach's items and mocks are what make them appear.
@@ -113,6 +128,7 @@ Known limits:
 - The A2-LTR history pack waits until the plan targets an A2-LTR session with an announced date; none is announced. The syllabus PDF needs the learner's yes.
 - Neither exam publishes its speaking points split, and A2-LTR publishes no writing criteria. Those scores are always labelled estimates.
 - The app shows no pictures, so picture-based speaking parts are described in words.
+- The glossary meanings (open and book) and the book's A2/B1 Turkish meanings are AI-drafted and spot-checked, not checked by a person. A wrong one is fixed through the ⚑ flag or by editing `glossary.json`.
 
 The macOS and Linux shortcuts and schedulers are written but untested.
 
@@ -121,7 +137,6 @@ Not yet done on the maintainer's machine:
 - The `claude` command-line program is not signed in, so `greek-coach run` fails with "Not logged in" until `claude` is run once in a terminal and signed in.
 
 Next:
-- **phase 5d** (`docs/prompts/05d-every-word.md`): every tappable Greek word gets a meaning. On 2026-11-19, 1,038 of 2,527 distinct words found nothing (inflected forms, rubric words such as Διαλέγω, names). It also covers 14 checks whose question is visible only after pressing "Translate" (for example a true/false statement that is only «ΣΤΑΣΗ»), and collects the day's other adjustments;
 - the maintainer reads the chapters as the lessons come; the ⚑ flag on a section sends a fix to the coach.
 
 Optional, deferred by the maintainer (2026-11-19):
@@ -162,6 +177,7 @@ The canonical copy of each skill is in `.agents/skills/<name>/SKILL.md`. `.claud
 - `uv run greek-coach schema`: writes the pack JSON Schemas to `schemas/`.
 - `uv run greek-coach report [--since 14d] [--words]`: the learner's record as one JSON document. This is the coach's only view of the database.
 - `uv run greek-coach validate learner`: checks coach-written packs (including the Greek lint) and the coach's files.
+- `uv run greek-coach words <pack> [--write] [--json <file>]`: lists the tappable words that find no meaning; `--write` maps inflected forms to their word in the pack's `glossary.json`.
 - `uv run greek-coach reload`: makes the running app load new content and coach files.
 - `uv run greek-coach raw <pack> --unit <id>`: shows the raw imported exercises of one lesson.
 - `uv run --group speech greek-coach transcribe`: transcribes speaking recordings locally.

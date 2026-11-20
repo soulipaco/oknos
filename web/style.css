@@ -147,6 +147,7 @@ button:disabled { cursor: default; }
 
 .rubric { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-bottom: 14px; }
 .rubric .el { font-size: 15px; letter-spacing: .04em; color: var(--muted); }
+.ask { margin: -6px 0 14px; font-weight: 600; }
 .translation { color: var(--muted); font-size: 15px; font-family: var(--font-ui); }
 
 .question { text-align: center; margin-bottom: 26px; }

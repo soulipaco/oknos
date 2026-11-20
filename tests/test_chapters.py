@@ -206,7 +206,7 @@ def test_reading_and_practising_a_chapter_through_the_api(book, client):
     flag = client.post(f"/api/chapters/{STAGE}/flag", json={"section": 2, "note": "typo"})
     assert flag.status_code == 200
     rep = report.build(db.open_db(), packs.load_all())
-    assert rep["report_version"] == 3
+    assert rep["report_version"] == 4
     entry = next(x for x in rep["chapters"]["stages"] if x["stage"] == STAGE)
     assert entry["chapter"] and entry["finished_at"] and entry["sections_seen"] == 1
     chapter_flag = next(f for f in rep["open_flags"] if "chapter" in f)

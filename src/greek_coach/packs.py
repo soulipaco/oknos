@@ -78,6 +78,9 @@ class BaseItem(Strict):
     exam_task: str | None = None
     topics: list[str] = []
     rubric: Text | None = None
+    # The question or situation in the learner's language (tr/en), always shown above the Greek.
+    # For a task whose point is "what do you say here?"; the Greek still carries everything else.
+    ask: Text | None = None
     stimulus: Stimulus | None = None
     explain: Text | None = None
     source: dict[str, Any] | None = None
@@ -346,6 +349,40 @@ class Unit(Strict):
 _units_adapter = TypeAdapter(list[Unit])
 
 
+class GlossWord(Strict):
+    """A word the lookup explains without it being a practice item (same shape as function_words.json)."""
+
+    el: str = Field(min_length=1)
+    forms: list[str] = []
+    pos: str | None = None
+    en: str | None = None
+    tr: str | None = None
+
+    @model_validator(mode="after")
+    def _needs_a_meaning(self) -> "GlossWord":
+        if not (self.en or self.tr):
+            raise ValueError(f"the glossary word '{self.el}' needs an English (en) or Turkish (tr) meaning")
+        return self
+
+
+class Glossary(Strict):
+    """A pack's glossary.json: what tapping a word finds when no item has it (phase 5d).
+
+    forms: an inflected form -> its lemma(s), which the lookup then explains ("form of ...").
+    words: meanings for words that are not practice items.
+    names: a name -> "person" or "place", or the base name it is a form of (Νάξο -> Νάξος).
+    leave: words left unexplained on purpose, with the reason (validate lists them).
+    """
+
+    source: str | None = None
+    licence: str | None = None
+    note: str | None = None
+    forms: dict[str, str | list[str]] = {}
+    words: list[GlossWord] = []
+    names: dict[str, str] = {}
+    leave: dict[str, str] = {}
+
+
 @dataclass
 class Pack:
     manifest: Manifest
@@ -353,6 +390,8 @@ class Pack:
     items: dict[str, Item] = field(default_factory=dict)
     units: list[Unit] = field(default_factory=list)
     chapters: dict[str, "chapters_mod.Chapter"] = field(default_factory=dict)  # stage id -> chapter
+    glossary: Glossary | None = None
+    item_files: dict[str, str] = field(default_factory=dict)  # item id -> the items file it came from
 
     @property
     def id(self) -> str:
@@ -464,6 +503,15 @@ def load_pack(pack_dir: Path, expected_visibility: str | None = None) -> tuple[P
                 problems.append(f"{label}: the id '{item.id}' is used twice in this pack; the second one was skipped")
                 continue
             pack.items[item.id] = item
+            pack.item_files[item.id] = item_file.name
+    glossary_file = pack_dir / "glossary.json"
+    if glossary_file.is_file():
+        try:
+            pack.glossary = Glossary.model_validate(_nfc(_read_json(glossary_file)))
+        except json.JSONDecodeError as e:
+            problems.append(f"{name}/glossary.json is not valid JSON (line {e.lineno}): {e.msg}; the glossary was skipped")
+        except ValidationError as e:
+            problems.append(f"{name}/glossary.json: {_describe(e)}; the glossary was skipped")
     for chapter_file in chapter_files:
         rel = f"{name}/lessons/{chapter_file.name}"
         try:
@@ -576,4 +624,5 @@ def json_schemas() -> dict[str, dict]:
         "items-file": TypeAdapter(list[Item]).json_schema(),
         "units": _units_adapter.json_schema(),
         "chapter": chapters_mod.json_schema(),
+        "glossary": Glossary.model_json_schema(),
     }

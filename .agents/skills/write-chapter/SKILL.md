@@ -66,7 +66,9 @@ Give each drafter one stage, through the Agent tool with `model: "sonnet"`, runn
    - `lessons/<stage>.json`;
    - `items/chapter-<stage>.json`: new words, plus 10–20 practice items including the checks (LESSONS §4).
 
-   It ends by running `uv run greek-coach validate <pack folder>` and fixing every problem and every untaught-word note it can.
+   Say in the prompt: **every Greek word in your chapter and items must be explained by tapping; `validate` lists those that are not** (LESSONS §4 rule 7), and **the Greek must carry the question: no check whose question is only in the hidden translation** (rule 8).
+
+   It ends by running `uv run greek-coach words <pack folder> --write` and `uv run greek-coach validate <pack folder>`, and fixing every problem and every untaught-word, unexplained-word and hidden-question note it can.
 7. **What to report back:**
    - the files written;
    - the validate output;
@@ -82,6 +84,8 @@ uv run greek-coach validate content/private/<pack>
 
 Use the open pack folder for the open course. Every problem must be fixed. Read the notes:
 - untaught words;
+- tappable words that find no meaning (run `uv run greek-coach words <pack folder> --write` first; give the rest a row in the pack's `glossary.json`);
+- a question only in the translation (rewrite the Greek, or give the item an `ask`);
 - reading time;
 - unaccented words.
 

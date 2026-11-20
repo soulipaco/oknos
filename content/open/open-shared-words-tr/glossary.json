@@ -1,0 +1,3887 @@
+{
+ "source": "Meanings written for this project (drafted by an AI model, spot-checked); inflected forms mapped to their lemma from the English Wiktionary (https://en.wiktionary.org, via kaikki.org, CC BY-SA 4.0).",
+ "licence": "CC-BY-SA-4.0",
+ "words": [
+  {
+   "el": "αγαπητός",
+   "forms": [
+    "Αγαπητή"
+   ],
+   "pos": "adj",
+   "en": "dear (in letters: Αγαπητή = Dear ...)",
+   "tr": "sevgili"
+  },
+  {
+   "el": "η Αγγλία",
+   "pos": "noun",
+   "en": "England",
+   "tr": "İngiltere"
+  },
+  {
+   "el": "αγοράζω",
+   "forms": [
+    "αγοράζετε",
+    "Αγοράζουμε",
+    "αγοράζουμε",
+    "αγοράζει",
+    "αγοράζουν",
+    "αγόρασα",
+    "αγοράσαμε",
+    "αγοράσεις",
+    "αγοράσετε"
+   ],
+   "pos": "verb",
+   "en": "to buy",
+   "tr": "satın almak, almak"
+  },
+  {
+   "el": "αγοράζω",
+   "pos": "verb",
+   "en": "to buy",
+   "tr": "satın almak, almak"
+  },
+  {
+   "el": "η αίτηση",
+   "forms": [
+    "αίτησή"
+   ],
+   "pos": "noun",
+   "en": "application, request",
+   "tr": "başvuru, dilekçe"
+  },
+  {
+   "el": "ακριβαίνω",
+   "forms": [
+    "ακριβύνει"
+   ],
+   "pos": "verb",
+   "en": "to become more expensive",
+   "tr": "pahalılaşmak"
+  },
+  {
+   "el": "ακριβός",
+   "forms": [
+    "ακριβά",
+    "ακριβό"
+   ],
+   "pos": "adj",
+   "en": "expensive",
+   "tr": "pahalı"
+  },
+  {
+   "el": "η αλήθεια",
+   "pos": "noun",
+   "en": "truth",
+   "tr": "gerçek, doğru"
+  },
+  {
+   "el": "άλλος",
+   "forms": [
+    "άλλη",
+    "άλλοι"
+   ],
+   "pos": "pron",
+   "en": "other, another",
+   "tr": "başka, diğer"
+  },
+  {
+   "el": "αμέσως",
+   "pos": "adv",
+   "en": "immediately, right away",
+   "tr": "hemen, derhal"
+  },
+  {
+   "el": "αν",
+   "pos": "conj",
+   "en": "if",
+   "tr": "eğer, -sa/-se"
+  },
+  {
+   "el": "ανά",
+   "pos": "prep",
+   "en": "per, each",
+   "tr": "başına, her ... için"
+  },
+  {
+   "el": "ανάβω",
+   "forms": [
+    "άναβε"
+   ],
+   "pos": "verb",
+   "en": "to light, switch on, turn on (heating, light)",
+   "tr": "yakmak, açmak (ısıtıcı, ışık)"
+  },
+  {
+   "el": "αναλαμβάνω",
+   "forms": [
+    "αναλαμβάνει"
+   ],
+   "pos": "verb",
+   "en": "to take on, undertake",
+   "tr": "üstlenmek"
+  },
+  {
+   "el": "ανεβαίνω",
+   "forms": [
+    "ανεβαίνει",
+    "ανεβαίνουν",
+    "ανέβεις",
+    "ανέβετε",
+    "ανέβηκα",
+    "ανεβήκαμε"
+   ],
+   "pos": "verb",
+   "en": "to go up, to climb",
+   "tr": "yukarı çıkmak"
+  },
+  {
+   "el": "ανοίγω",
+   "forms": [
+    "άνοιξε",
+    "ανοίξουν",
+    "ανοίγει",
+    "ανοίγεις",
+    "ανοίγετε",
+    "άνοιξαν",
+    "ανοίξουμε",
+    "ανοίξω"
+   ],
+   "pos": "verb",
+   "en": "to open",
+   "tr": "açmak; açılmak"
+  },
+  {
+   "el": "ανοιχτός",
+   "forms": [
+    "ανοιχτό"
+   ],
+   "pos": "adj",
+   "en": "open",
+   "tr": "açık"
+  },
+  {
+   "el": "απαγορεύω",
+   "forms": [
+    "ΑΠΑΓΟΡΕΥΕΤΑΙ"
+   ],
+   "pos": "verb",
+   "en": "to forbid; απαγορεύεται = it is forbidden",
+   "tr": "yasaklamak; απαγορεύεται = yasaktır"
+  },
+  {
+   "el": "από",
+   "forms": [
+    "απ"
+   ],
+   "pos": "prep",
+   "en": "from; than (απ' όσο = than)",
+   "tr": "-den, -dan; (απ' όσο = -dığından)"
+  },
+  {
+   "el": "το απόγευμα",
+   "pos": "noun",
+   "en": "afternoon",
+   "tr": "öğleden sonra"
+  },
+  {
+   "el": "απογευματινός",
+   "forms": [
+    "απογευματινό"
+   ],
+   "pos": "adj",
+   "en": "afternoon (class, shift)",
+   "tr": "öğleden sonraki"
+  },
+  {
+   "el": "αργά",
+   "pos": "adv",
+   "en": "late; slowly",
+   "tr": "geç; yavaş"
+  },
+  {
+   "el": "αρέσω",
+   "forms": [
+    "αρέσει"
+   ],
+   "pos": "verb",
+   "en": "to be liked, please; μου αρέσει = I like",
+   "tr": "hoşa gitmek; μου αρέσει = hoşuma gider, severim"
+  },
+  {
+   "el": "αρχάριος",
+   "forms": [
+    "αρχάριους"
+   ],
+   "pos": "adj",
+   "en": "beginner",
+   "tr": "acemi; başlangıç seviyesinde"
+  },
+  {
+   "el": "αρχίζω",
+   "forms": [
+    "αρχίζουν",
+    "αρχίζει",
+    "αρχίζεις",
+    "αρχίζετε",
+    "άρχισαν",
+    "άρχισε",
+    "αρχίσουμε",
+    "αρχίσω"
+   ],
+   "pos": "verb",
+   "en": "to begin, start",
+   "tr": "başlamak"
+  },
+  {
+   "el": "το ασανσέρ",
+   "pos": "noun",
+   "en": "lift, elevator",
+   "tr": "asansör"
+  },
+  {
+   "el": "αστυνομικός",
+   "forms": [
+    "αστυνομική"
+   ],
+   "pos": "adj",
+   "en": "police (adj.); police officer; αστυνομική ταυτότητα = ID card",
+   "tr": "polisle ilgili; polis memuru; αστυνομική ταυτότητα = kimlik kartı"
+  },
+  {
+   "el": "ο Αύγουστος",
+   "forms": [
+    "Αύγουστο"
+   ],
+   "pos": "noun",
+   "en": "August",
+   "tr": "Ağustos"
+  },
+  {
+   "el": "αυξάνω",
+   "forms": [
+    "αυξήσει"
+   ],
+   "pos": "verb",
+   "en": "to increase, raise",
+   "tr": "artırmak, zam yapmak"
+  },
+  {
+   "el": "η αύξηση",
+   "pos": "noun",
+   "en": "increase, raise (rent, pay)",
+   "tr": "artış, zam"
+  },
+  {
+   "el": "αύριο",
+   "pos": "adv",
+   "en": "tomorrow",
+   "tr": "yarın"
+  },
+  {
+   "el": "το αυτοκίνητο",
+   "pos": "noun",
+   "en": "car",
+   "tr": "araba, otomobil"
+  },
+  {
+   "el": "ο αφηγητής",
+   "forms": [
+    "αφηγητή"
+   ],
+   "pos": "noun",
+   "en": "narrator (f. η αφηγήτρια)",
+   "tr": "anlatıcı"
+  },
+  {
+   "el": "ο αφηγητής",
+   "pos": "noun",
+   "en": "narrator (f. η αφηγήτρια)",
+   "tr": "anlatıcı"
+  },
+  {
+   "el": "αφού",
+   "pos": "conj",
+   "en": "since, because; after",
+   "tr": "madem, -diği için; -dıktan sonra"
+  },
+  {
+   "el": "η βαλίτσα",
+   "pos": "noun",
+   "en": "suitcase",
+   "tr": "bavul, valiz"
+  },
+  {
+   "el": "βγάζω",
+   "forms": [
+    "βγάλετε"
+   ],
+   "pos": "verb",
+   "en": "to take out, take off; to get (a document)",
+   "tr": "çıkarmak; (belge) almak"
+  },
+  {
+   "el": "βγαίνω",
+   "forms": [
+    "βγαίνετε",
+    "βγαίνουμε",
+    "βγει",
+    "βγήκατε",
+    "βγήκες",
+    "βγούνε"
+   ],
+   "pos": "verb",
+   "en": "to go out, come out",
+   "tr": "çıkmak, dışarı çıkmak"
+  },
+  {
+   "el": "βέβαια",
+   "pos": "adv",
+   "en": "of course, certainly",
+   "tr": "tabii, elbette"
+  },
+  {
+   "el": "βελτιώνω",
+   "forms": [
+    "βελτιώσει"
+   ],
+   "pos": "verb",
+   "en": "to improve",
+   "tr": "geliştirmek, iyileştirmek"
+  },
+  {
+   "el": "ο βήχας",
+   "forms": [
+    "βήχα"
+   ],
+   "pos": "noun",
+   "en": "cough",
+   "tr": "öksürük"
+  },
+  {
+   "el": "το βιβλίο",
+   "forms": [
+    "βιβλία"
+   ],
+   "pos": "noun",
+   "en": "book",
+   "tr": "kitap"
+  },
+  {
+   "el": "η βιβλιοθήκη",
+   "pos": "noun",
+   "en": "library; bookcase",
+   "tr": "kütüphane; kitaplık"
+  },
+  {
+   "el": "το βιβλιοπωλείο",
+   "pos": "noun",
+   "en": "bookshop",
+   "tr": "kitabevi"
+  },
+  {
+   "el": "βλέπω",
+   "forms": [
+    "Είδα",
+    "είδε",
+    "βλέπουμε",
+    "δούνε",
+    "είδατε",
+    "είδες"
+   ],
+   "pos": "verb",
+   "en": "to see, watch",
+   "tr": "görmek; izlemek"
+  },
+  {
+   "el": "βλέπω",
+   "pos": "verb",
+   "en": "to see",
+   "tr": "görmek"
+  },
+  {
+   "el": "βλέπω",
+   "forms": [
+    "δει"
+   ],
+   "pos": "verb",
+   "en": "to see, to watch",
+   "tr": "görmek; izlemek"
+  },
+  {
+   "el": "η βοήθεια",
+   "pos": "noun",
+   "en": "help",
+   "tr": "yardım"
+  },
+  {
+   "el": "το βουνό",
+   "forms": [
+    "βουνού"
+   ],
+   "pos": "noun",
+   "en": "mountain; ποδήλατο βουνού = mountain bike",
+   "tr": "dağ; ποδήλατο βουνού = dağ bisikleti"
+  },
+  {
+   "el": "το βράδυ",
+   "pos": "noun",
+   "en": "evening, night",
+   "tr": "akşam, gece"
+  },
+  {
+   "el": "βρεγμένος",
+   "forms": [
+    "ΒΡΕΓΜΕΝΟ"
+   ],
+   "pos": "adj",
+   "en": "wet",
+   "tr": "ıslak"
+  },
+  {
+   "el": "βρίσκω",
+   "forms": [
+    "βρει",
+    "βρήκες",
+    "βρήκατε",
+    "βρίσκουμε",
+    "βρούνε"
+   ],
+   "pos": "verb",
+   "en": "to find",
+   "tr": "bulmak"
+  },
+  {
+   "el": "βρίσκω",
+   "pos": "verb",
+   "en": "to find",
+   "tr": "bulmak"
+  },
+  {
+   "el": "το γάλα",
+   "pos": "noun",
+   "en": "milk",
+   "tr": "süt"
+  },
+  {
+   "el": "ο γείτονας",
+   "forms": [
+    "γειτόνισσα",
+    "γείτονες"
+   ],
+   "pos": "noun",
+   "en": "neighbour (f. η γειτόνισσα)",
+   "tr": "komşu"
+  },
+  {
+   "el": "η γειτονιά",
+   "forms": [
+    "γειτονιάς",
+    "ΓΕΙΤΟΝΙΑ"
+   ],
+   "pos": "noun",
+   "en": "neighbourhood",
+   "tr": "mahalle"
+  },
+  {
+   "el": "γεμίζω",
+   "forms": [
+    "γέμισαν"
+   ],
+   "pos": "verb",
+   "en": "to fill; to become full",
+   "tr": "doldurmak; dolmak"
+  },
+  {
+   "el": "τα γενέθλια",
+   "pos": "noun",
+   "en": "birthday",
+   "tr": "doğum günü"
+  },
+  {
+   "el": "η Γερμανία",
+   "pos": "noun",
+   "en": "Germany",
+   "tr": "Almanya"
+  },
+  {
+   "el": "η γιαγιά",
+   "pos": "noun",
+   "en": "grandmother",
+   "tr": "büyükanne, nine"
+  },
+  {
+   "el": "ο γιατρός",
+   "forms": [
+    "γιατροί",
+    "Γιατροί",
+    "γιατρού",
+    "γιατρό"
+   ],
+   "pos": "noun",
+   "en": "doctor",
+   "tr": "doktor, hekim"
+  },
+  {
+   "el": "γίνομαι",
+   "forms": [
+    "γίνει",
+    "έγιναν",
+    "γίνεται"
+   ],
+   "pos": "verb",
+   "en": "to become; to happen, take place",
+   "tr": "olmak; gerçekleşmek, yapılmak"
+  },
+  {
+   "el": "ο γιος",
+   "forms": [
+    "γιου"
+   ],
+   "pos": "noun",
+   "en": "son",
+   "tr": "oğul"
+  },
+  {
+   "el": "το γκαράζ",
+   "pos": "noun",
+   "en": "garage",
+   "tr": "garaj"
+  },
+  {
+   "el": "γλιστράω",
+   "forms": [
+    "γλιστρήσετε"
+   ],
+   "pos": "verb",
+   "en": "to slip, slide",
+   "tr": "kaymak"
+  },
+  {
+   "el": "γλυκός",
+   "forms": [
+    "γλυκά"
+   ],
+   "pos": "adj",
+   "en": "sweet",
+   "tr": "tatlı"
+  },
+  {
+   "el": "η γραμμή",
+   "forms": [
+    "γραμμής"
+   ],
+   "pos": "noun",
+   "en": "line; bus or metro line",
+   "tr": "hat; çizgi"
+  },
+  {
+   "el": "το γραφείο",
+   "pos": "noun",
+   "en": "office; desk",
+   "tr": "ofis, büro; yazı masası"
+  },
+  {
+   "el": "το γυμναστήριο",
+   "pos": "noun",
+   "en": "gym",
+   "tr": "spor salonu"
+  },
+  {
+   "el": "η γυμναστική",
+   "pos": "noun",
+   "en": "exercise, gymnastics; κάνω γυμναστική = to work out",
+   "tr": "jimnastik, spor; κάνω γυμναστική = spor yapmak"
+  },
+  {
+   "el": "γυρίζω",
+   "forms": [
+    "γυρίσω"
+   ],
+   "pos": "verb",
+   "en": "to return, come back; to turn",
+   "tr": "dönmek, geri dönmek"
+  },
+  {
+   "el": "η γωνία",
+   "forms": [
+    "γωνίας"
+   ],
+   "pos": "noun",
+   "en": "corner",
+   "tr": "köşe"
+  },
+  {
+   "el": "δανείζομαι",
+   "forms": [
+    "δανείζονται"
+   ],
+   "pos": "verb",
+   "en": "to borrow (δανείζω = to lend)",
+   "tr": "ödünç almak (δανείζω = ödünç vermek)"
+  },
+  {
+   "el": "ο δάσκαλος",
+   "forms": [
+    "δάσκαλο"
+   ],
+   "pos": "noun",
+   "en": "teacher",
+   "tr": "öğretmen"
+  },
+  {
+   "el": "δέκα",
+   "pos": "num",
+   "en": "ten",
+   "tr": "on"
+  },
+  {
+   "el": "δεκαπέντε",
+   "pos": "num",
+   "en": "fifteen",
+   "tr": "on beş"
+  },
+  {
+   "el": "το δέμα",
+   "pos": "noun",
+   "en": "parcel, package",
+   "tr": "paket, koli"
+  },
+  {
+   "el": "η Δευτέρα",
+   "pos": "noun",
+   "en": "Monday",
+   "tr": "Pazartesi"
+  },
+  {
+   "el": "δεύτερον",
+   "pos": "adv",
+   "en": "secondly",
+   "tr": "ikinci olarak, ikincisi"
+  },
+  {
+   "el": "δεύτερος",
+   "forms": [
+    "δεύτερο",
+    "δεύτερη",
+    "δεύτερα"
+   ],
+   "pos": "num",
+   "en": "second (2nd)",
+   "tr": "ikinci"
+  },
+  {
+   "el": "δέχομαι",
+   "forms": [
+    "δεχτώ"
+   ],
+   "pos": "verb",
+   "en": "to accept, receive",
+   "tr": "kabul etmek"
+  },
+  {
+   "el": "το δημαρχείο",
+   "pos": "noun",
+   "en": "town hall",
+   "tr": "belediye binası"
+  },
+  {
+   "el": "ο δήμαρχος",
+   "forms": [
+    "δήμαρχο"
+   ],
+   "pos": "noun",
+   "en": "mayor",
+   "tr": "belediye başkanı"
+  },
+  {
+   "el": "ο δήμος",
+   "forms": [
+    "δήμο"
+   ],
+   "pos": "noun",
+   "en": "municipality, local council",
+   "tr": "belediye"
+  },
+  {
+   "el": "δημοτικός",
+   "forms": [
+    "δημοτική"
+   ],
+   "pos": "adj",
+   "en": "municipal, of the town",
+   "tr": "belediyeye ait"
+  },
+  {
+   "el": "το διαβατήριο",
+   "forms": [
+    "διαβατήριό"
+   ],
+   "pos": "noun",
+   "en": "passport",
+   "tr": "pasaport"
+  },
+  {
+   "el": "διαδικτυακός",
+   "forms": [
+    "διαδικτυακά",
+    "διαδικτυακό",
+    "Διαδικτυακό"
+   ],
+   "pos": "adj",
+   "en": "online, internet-based",
+   "tr": "çevrimiçi, internet üzerinden"
+  },
+  {
+   "el": "οι διακοπές",
+   "pos": "noun",
+   "en": "holidays, vacation",
+   "tr": "tatil"
+  },
+  {
+   "el": "το διαμέρισμα",
+   "forms": [
+    "διαμερίσματα"
+   ],
+   "pos": "noun",
+   "en": "apartment, flat",
+   "tr": "daire"
+  },
+  {
+   "el": "ο διαχειριστής",
+   "pos": "noun",
+   "en": "administrator, building manager (f. η διαχειρίστρια)",
+   "tr": "yönetici, apartman yöneticisi"
+  },
+  {
+   "el": "ο διαχειριστής",
+   "forms": [
+    "διαχειριστή"
+   ],
+   "pos": "noun",
+   "en": "administrator; building manager",
+   "tr": "yönetici; apartman yöneticisi"
+  },
+  {
+   "el": "η διεύθυνση",
+   "pos": "noun",
+   "en": "address; direction, management",
+   "tr": "adres; yön; yönetim"
+  },
+  {
+   "el": "δίκαιος",
+   "forms": [
+    "δίκαιο"
+   ],
+   "pos": "adj",
+   "en": "fair, just",
+   "tr": "adil, haklı"
+  },
+  {
+   "el": "δίνω",
+   "forms": [
+    "Δώστε",
+    "έδωσε",
+    "δίνει",
+    "δίνουν",
+    "δώσαμε",
+    "δώσεις",
+    "δώσετε",
+    "έδωσα"
+   ],
+   "pos": "verb",
+   "en": "to give",
+   "tr": "vermek"
+  },
+  {
+   "el": "δίπλα",
+   "pos": "adv",
+   "en": "next to, beside, nearby",
+   "tr": "yanında, yakınında"
+  },
+  {
+   "el": "η δουλειά",
+   "pos": "noun",
+   "en": "work, job",
+   "tr": "iş"
+  },
+  {
+   "el": "δουλεύω",
+   "forms": [
+    "Δουλεύει",
+    "δουλεύει",
+    "δουλεύουμε",
+    "δουλέψατε",
+    "δουλέψει",
+    "δούλεψες",
+    "δουλέψουν"
+   ],
+   "pos": "verb",
+   "en": "to work",
+   "tr": "çalışmak"
+  },
+  {
+   "el": "δουλεύω",
+   "pos": "verb",
+   "en": "to work",
+   "tr": "çalışmak"
+  },
+  {
+   "el": "δύο",
+   "pos": "num",
+   "en": "two",
+   "tr": "iki"
+  },
+  {
+   "el": "δωρεάν",
+   "pos": "adv",
+   "en": "free, free of charge",
+   "tr": "bedava, ücretsiz"
+  },
+  {
+   "el": "το δώρο",
+   "pos": "noun",
+   "en": "gift, present",
+   "tr": "hediye"
+  },
+  {
+   "el": "η εβδομάδα",
+   "forms": [
+    "εβδομάδες"
+   ],
+   "pos": "noun",
+   "en": "week",
+   "tr": "hafta"
+  },
+  {
+   "el": "η εγγραφή",
+   "pos": "noun",
+   "en": "enrolment, registration",
+   "tr": "kayıt"
+  },
+  {
+   "el": "ειδικός",
+   "forms": [
+    "ειδική"
+   ],
+   "pos": "adj",
+   "en": "special, specific",
+   "tr": "özel"
+  },
+  {
+   "el": "είκοσι",
+   "pos": "num",
+   "en": "twenty",
+   "tr": "yirmi"
+  },
+  {
+   "el": "είμαι",
+   "forms": [
+    "είσαι",
+    "είναι",
+    "είμαστε",
+    "είστε",
+    "είσαστε",
+    "ήμουν",
+    "ήμουνα",
+    "ήσουν",
+    "ήσουνα",
+    "ήταν",
+    "ήτανε",
+    "ήμασταν",
+    "ήμαστε",
+    "ήσασταν",
+    "ήσαστε"
+   ],
+   "pos": "verb",
+   "en": "to be (είμαι I am, είσαι you are, είναι is / are)",
+   "tr": "olmak (είμαι -im, είσαι -sin, είναι -dir)"
+  },
+  {
+   "el": "το εισιτήριο",
+   "pos": "noun",
+   "en": "ticket",
+   "tr": "bilet"
+  },
+  {
+   "el": "εκατό",
+   "pos": "num",
+   "en": "hundred",
+   "tr": "yüz"
+  },
+  {
+   "el": "η εκδήλωση",
+   "pos": "noun",
+   "en": "event",
+   "tr": "etkinlik"
+  },
+  {
+   "el": "εκείνος",
+   "forms": [
+    "εκείνη"
+   ],
+   "pos": "pron",
+   "en": "that one; he (f. εκείνη = she)",
+   "tr": "o, şu (kadın: εκείνη = o)"
+  },
+  {
+   "el": "η ελιά",
+   "forms": [
+    "ελιές"
+   ],
+   "pos": "noun",
+   "en": "olive; olive tree",
+   "tr": "zeytin; zeytin ağacı"
+  },
+  {
+   "el": "η Ελλάδα",
+   "pos": "noun",
+   "en": "Greece",
+   "tr": "Yunanistan"
+  },
+  {
+   "el": "τα ελληνικά",
+   "forms": [
+    "ελληνικών"
+   ],
+   "pos": "noun",
+   "en": "Greek (language)",
+   "tr": "Yunanca"
+  },
+  {
+   "el": "ελληνικός",
+   "forms": [
+    "ελληνικά"
+   ],
+   "pos": "adj",
+   "en": "Greek; τα ελληνικά = the Greek language",
+   "tr": "Yunan, Yunanca; τα ελληνικά = Yunanca (dil)"
+  },
+  {
+   "el": "η έναρξη",
+   "forms": [
+    "έναρξης"
+   ],
+   "pos": "noun",
+   "en": "start, beginning; ώρα έναρξης = start time",
+   "tr": "başlangıç; ώρα έναρξης = başlama saati"
+  },
+  {
+   "el": "η ενέργεια",
+   "pos": "noun",
+   "en": "energy; action",
+   "tr": "enerji; eylem"
+  },
+  {
+   "el": "ενημερώνω",
+   "forms": [
+    "ενημερώσουμε"
+   ],
+   "pos": "verb",
+   "en": "to inform, keep informed",
+   "tr": "bilgilendirmek, haberdar etmek"
+  },
+  {
+   "el": "εννέα",
+   "forms": [
+    "εννιά"
+   ],
+   "pos": "num",
+   "en": "nine (also written εννιά)",
+   "tr": "dokuz"
+  },
+  {
+   "el": "ο ενοικιαστής",
+   "pos": "noun",
+   "en": "tenant (man)",
+   "tr": "kiracı (erkek)"
+  },
+  {
+   "el": "η ενοικιάστρια",
+   "pos": "noun",
+   "en": "tenant (woman)",
+   "tr": "kiracı (kadın)"
+  },
+  {
+   "el": "το ενοίκιο",
+   "forms": [
+    "ενοίκια"
+   ],
+   "pos": "noun",
+   "en": "rent",
+   "tr": "kira"
+  },
+  {
+   "el": "έντεκα",
+   "pos": "num",
+   "en": "eleven",
+   "tr": "on bir"
+  },
+  {
+   "el": "ενώ",
+   "pos": "conj",
+   "en": "while; whereas",
+   "tr": "iken; oysa, halbuki"
+  },
+  {
+   "el": "η εξέταση",
+   "forms": [
+    "εξετάσεις"
+   ],
+   "pos": "noun",
+   "en": "exam; medical test",
+   "tr": "sınav; tetkik"
+  },
+  {
+   "el": "έξι",
+   "pos": "num",
+   "en": "six",
+   "tr": "altı"
+  },
+  {
+   "el": "η έξοδος",
+   "forms": [
+    "ΕΞΟΔΟΣ"
+   ],
+   "pos": "noun",
+   "en": "exit",
+   "tr": "çıkış"
+  },
+  {
+   "el": "εξυπηρετώ",
+   "forms": [
+    "εξυπηρετούνται"
+   ],
+   "pos": "verb",
+   "en": "to serve, to assist",
+   "tr": "hizmet vermek, işini görmek"
+  },
+  {
+   "el": "επειδή",
+   "pos": "conj",
+   "en": "because",
+   "tr": "çünkü, -diği için"
+  },
+  {
+   "el": "επηρεάζω",
+   "forms": [
+    "επηρεάζει"
+   ],
+   "pos": "verb",
+   "en": "to affect, to influence",
+   "tr": "etkilemek"
+  },
+  {
+   "el": "ο επιβάτης",
+   "forms": [
+    "επιβάτες"
+   ],
+   "pos": "noun",
+   "en": "passenger",
+   "tr": "yolcu"
+  },
+  {
+   "el": "το επίπεδο",
+   "forms": [
+    "επιπέδου"
+   ],
+   "pos": "noun",
+   "en": "level",
+   "tr": "seviye, düzey"
+  },
+  {
+   "el": "η επισκευή",
+   "forms": [
+    "επισκευής"
+   ],
+   "pos": "noun",
+   "en": "repair",
+   "tr": "onarım, tamir"
+  },
+  {
+   "el": "η επιστολή",
+   "pos": "noun",
+   "en": "letter (written)",
+   "tr": "mektup, yazı"
+  },
+  {
+   "el": "το επιχείρημα",
+   "forms": [
+    "επιχειρήματα"
+   ],
+   "pos": "noun",
+   "en": "argument (a reason given for a view)",
+   "tr": "argüman, gerekçe"
+  },
+  {
+   "el": "επόμενος",
+   "forms": [
+    "επόμενο"
+   ],
+   "pos": "adj",
+   "en": "next, following",
+   "tr": "gelecek, sonraki"
+  },
+  {
+   "el": "επτά",
+   "pos": "num",
+   "en": "seven",
+   "tr": "yedi"
+  },
+  {
+   "el": "το έργο",
+   "forms": [
+    "έργων"
+   ],
+   "pos": "noun",
+   "en": "work, project; έργα = roadworks",
+   "tr": "iş, eser; έργα = yol çalışması"
+  },
+  {
+   "el": "έρχομαι",
+   "forms": [
+    "έρθει",
+    "έρθεις",
+    "έρθετε",
+    "έρχεστε",
+    "έρθω",
+    "Ήρθαν",
+    "έρθουν",
+    "ερχόμαστε",
+    "ήρθατε",
+    "ήρθες"
+   ],
+   "pos": "verb",
+   "en": "to come",
+   "tr": "gelmek"
+  },
+  {
+   "el": "έτοιμος",
+   "forms": [
+    "έτοιμη"
+   ],
+   "pos": "adj",
+   "en": "ready",
+   "tr": "hazır"
+  },
+  {
+   "el": "η ευκαιρία",
+   "forms": [
+    "ευκαιρίας"
+   ],
+   "pos": "noun",
+   "en": "opportunity, chance; τιμή ευκαιρίας = bargain price",
+   "tr": "fırsat; τιμή ευκαιρίας = fırsat fiyatı"
+  },
+  {
+   "el": "εύκολα",
+   "pos": "adv",
+   "en": "easily",
+   "tr": "kolayca, kolaylıkla"
+  },
+  {
+   "el": "το ευρώ",
+   "pos": "noun",
+   "en": "euro",
+   "tr": "avro"
+  },
+  {
+   "el": "ευχαριστώ",
+   "pos": "verb",
+   "en": "to thank; thank you",
+   "tr": "teşekkür etmek; teşekkürler"
+  },
+  {
+   "el": "ευχαριστώ",
+   "forms": [
+    "Ευχαριστούμε"
+   ],
+   "pos": "verb",
+   "en": "to thank; ευχαριστώ = thank you",
+   "tr": "teşekkür etmek; ευχαριστώ = teşekkürler"
+  },
+  {
+   "el": "η εφημερίδα",
+   "pos": "noun",
+   "en": "newspaper",
+   "tr": "gazete"
+  },
+  {
+   "el": "η εφορία",
+   "pos": "noun",
+   "en": "tax office",
+   "tr": "vergi dairesi"
+  },
+  {
+   "el": "έχω",
+   "forms": [
+    "Είχα",
+    "είχα",
+    "είχε",
+    "έχει",
+    "Έχει",
+    "έχουν",
+    "Έχετε",
+    "έχουμε",
+    "Έχουμε",
+    "είχαν",
+    "έχεις",
+    "έχετε"
+   ],
+   "pos": "verb",
+   "en": "to have",
+   "tr": "sahip olmak, var olmak (\"bende var\")"
+  },
+  {
+   "el": "έως",
+   "pos": "prep",
+   "en": "until, up to; μία έως τρεις = one to three",
+   "tr": "-e kadar; μία έως τρεις = bir ila üç"
+  },
+  {
+   "el": "η ζάχαρη",
+   "pos": "noun",
+   "en": "sugar",
+   "tr": "şeker"
+  },
+  {
+   "el": "ζεστός",
+   "forms": [
+    "ζεστό"
+   ],
+   "pos": "adj",
+   "en": "warm, hot",
+   "tr": "sıcak, ılık"
+  },
+  {
+   "el": "ζητάω",
+   "forms": [
+    "ζητάει",
+    "ζητήστε",
+    "Ζητάμε"
+   ],
+   "pos": "verb",
+   "en": "to ask for, to request",
+   "tr": "istemek, talep etmek"
+  },
+  {
+   "el": "ζητείται",
+   "pos": "phrase",
+   "en": "wanted (in small ads); is being sought",
+   "tr": "aranıyor (ilanlarda)"
+  },
+  {
+   "el": "ζω",
+   "forms": [
+    "ζήσει",
+    "ζουν"
+   ],
+   "pos": "verb",
+   "en": "to live",
+   "tr": "yaşamak"
+  },
+  {
+   "el": "το ζώο",
+   "forms": [
+    "ζώα"
+   ],
+   "pos": "noun",
+   "en": "animal",
+   "tr": "hayvan"
+  },
+  {
+   "el": "ηλεκτρικός",
+   "forms": [
+    "ηλεκτρική"
+   ],
+   "pos": "adj",
+   "en": "electric",
+   "tr": "elektrikli"
+  },
+  {
+   "el": "ο ήλιος",
+   "forms": [
+    "ήλιο"
+   ],
+   "pos": "noun",
+   "en": "sun",
+   "tr": "güneş"
+  },
+  {
+   "el": "η ημέρα",
+   "pos": "noun",
+   "en": "day",
+   "tr": "gün"
+  },
+  {
+   "el": "ήσυχος",
+   "forms": [
+    "ήσυχο"
+   ],
+   "pos": "adj",
+   "en": "quiet, calm",
+   "tr": "sakin, sessiz"
+  },
+  {
+   "el": "το θέατρο",
+   "pos": "noun",
+   "en": "theatre",
+   "tr": "tiyatro"
+  },
+  {
+   "el": "θέλω",
+   "forms": [
+    "ήθελα",
+    "ήθελε",
+    "θέλει",
+    "Θέλεις",
+    "θέλετε",
+    "θέλαμε",
+    "θέλεις"
+   ],
+   "pos": "verb",
+   "en": "to want",
+   "tr": "istemek"
+  },
+  {
+   "el": "θέλω",
+   "forms": [
+    "θέλουν"
+   ],
+   "pos": "verb",
+   "en": "to want",
+   "tr": "istemek"
+  },
+  {
+   "el": "η θέρμανση",
+   "pos": "noun",
+   "en": "heating",
+   "tr": "ısıtma"
+  },
+  {
+   "el": "ο θερμοσίφωνας",
+   "pos": "noun",
+   "en": "water heater",
+   "tr": "termosifon, şofben"
+  },
+  {
+   "el": "ο θόρυβος",
+   "forms": [
+    "θόρυβο"
+   ],
+   "pos": "noun",
+   "en": "noise",
+   "tr": "gürültü"
+  },
+  {
+   "el": "θυμάμαι",
+   "forms": [
+    "θυμάσαι",
+    "θυμάστε",
+    "θυμήθηκαν",
+    "θυμήθηκε",
+    "θυμηθούμε",
+    "θυμηθώ"
+   ],
+   "pos": "verb",
+   "en": "to remember",
+   "tr": "hatırlamak"
+  },
+  {
+   "el": "το ιατρείο",
+   "pos": "noun",
+   "en": "doctor's office, surgery",
+   "tr": "muayenehane"
+  },
+  {
+   "el": "η ιδέα",
+   "pos": "noun",
+   "en": "idea",
+   "tr": "fikir, düşünce"
+  },
+  {
+   "el": "ο ιδιοκτήτης",
+   "pos": "noun",
+   "en": "owner, landlord",
+   "tr": "mal sahibi, ev sahibi"
+  },
+  {
+   "el": "ίδιος",
+   "forms": [
+    "ίδια"
+   ],
+   "pos": "adj",
+   "en": "same",
+   "tr": "aynı"
+  },
+  {
+   "el": "το ισόγειο",
+   "forms": [
+    "ισογείου"
+   ],
+   "pos": "noun",
+   "en": "ground floor",
+   "tr": "zemin kat"
+  },
+  {
+   "el": "ίσως",
+   "pos": "adv",
+   "en": "perhaps, maybe",
+   "tr": "belki"
+  },
+  {
+   "el": "η Ιταλία",
+   "pos": "noun",
+   "en": "Italy",
+   "tr": "İtalya"
+  },
+  {
+   "el": "καθόλου",
+   "pos": "adv",
+   "en": "not at all, at all",
+   "tr": "hiç, asla"
+  },
+  {
+   "el": "κάθομαι",
+   "pos": "verb",
+   "en": "to sit; to sit down",
+   "tr": "oturmak"
+  },
+  {
+   "el": "η καθυστέρηση",
+   "pos": "noun",
+   "en": "delay",
+   "tr": "gecikme, rötar"
+  },
+  {
+   "el": "καινούργιος",
+   "forms": [
+    "καινούργιο",
+    "καινούργια"
+   ],
+   "pos": "adj",
+   "en": "new",
+   "tr": "yeni"
+  },
+  {
+   "el": "καινούριος",
+   "forms": [
+    "καινούριες"
+   ],
+   "pos": "adj",
+   "en": "new",
+   "tr": "yeni"
+  },
+  {
+   "el": "καλημέρα",
+   "pos": "intj",
+   "en": "good morning",
+   "tr": "günaydın"
+  },
+  {
+   "el": "καλησπέρα",
+   "pos": "intj",
+   "en": "good evening",
+   "tr": "iyi akşamlar"
+  },
+  {
+   "el": "καλός",
+   "forms": [
+    "καλή",
+    "καλά"
+   ],
+   "pos": "adj",
+   "en": "good",
+   "tr": "iyi"
+  },
+  {
+   "el": "καλύτερα",
+   "pos": "adv",
+   "en": "better",
+   "tr": "daha iyi"
+  },
+  {
+   "el": "καλώ",
+   "forms": [
+    "καλέσετε",
+    "Καλέστε"
+   ],
+   "pos": "verb",
+   "en": "to call; to invite",
+   "tr": "aramak; çağırmak"
+  },
+  {
+   "el": "κάνω",
+   "forms": [
+    "κάνει",
+    "κάνουν",
+    "κάνεις",
+    "κάνετε",
+    "κάνουμε",
+    "έκαναν",
+    "έκανε"
+   ],
+   "pos": "verb",
+   "en": "to do, to make",
+   "tr": "yapmak"
+  },
+  {
+   "el": "καπνίζω",
+   "forms": [
+    "καπνίζετε"
+   ],
+   "pos": "verb",
+   "en": "to smoke",
+   "tr": "sigara içmek"
+  },
+  {
+   "el": "το κάπνισμα",
+   "forms": [
+    "ΚΑΠΝΙΣΜΑ"
+   ],
+   "pos": "noun",
+   "en": "smoking",
+   "tr": "sigara içme"
+  },
+  {
+   "el": "κάποιος",
+   "forms": [
+    "κάποιον"
+   ],
+   "pos": "pron",
+   "en": "someone, somebody",
+   "tr": "biri, birisi"
+  },
+  {
+   "el": "το καρπούζι",
+   "pos": "noun",
+   "en": "watermelon",
+   "tr": "karpuz"
+  },
+  {
+   "el": "η κάρτα",
+   "pos": "noun",
+   "en": "card",
+   "tr": "kart"
+  },
+  {
+   "el": "κατά",
+   "pos": "prep",
+   "en": "by (an amount); against; during",
+   "tr": "kadar (miktar); karşı; sırasında"
+  },
+  {
+   "el": "καταλαβαίνω",
+   "forms": [
+    "καταλαβαίνεις",
+    "καταλαβαίνετε"
+   ],
+   "pos": "verb",
+   "en": "to understand",
+   "tr": "anlamak"
+  },
+  {
+   "el": "καταλαβαίνω",
+   "forms": [
+    "κατάλαβε",
+    "κατάλαβαν",
+    "καταλάβουμε",
+    "καταλάβω"
+   ],
+   "pos": "verb",
+   "en": "to understand",
+   "tr": "anlamak"
+  },
+  {
+   "el": "η κατάσταση",
+   "pos": "noun",
+   "en": "condition, state",
+   "tr": "durum, hâl"
+  },
+  {
+   "el": "κατεβαίνω",
+   "forms": [
+    "κατεβαίνουμε",
+    "κατέβει",
+    "κατεβήκατε",
+    "κατέβηκες",
+    "κατέβουν"
+   ],
+   "pos": "verb",
+   "en": "to go down, to come down",
+   "tr": "aşağı inmek, inmek"
+  },
+  {
+   "el": "κάτι",
+   "pos": "pron",
+   "en": "something",
+   "tr": "bir şey"
+  },
+  {
+   "el": "ο κάτοικος",
+   "forms": [
+    "κάτοικοι",
+    "κατοίκους"
+   ],
+   "pos": "noun",
+   "en": "resident, inhabitant",
+   "tr": "sakin, oturan"
+  },
+  {
+   "el": "κάτω",
+   "pos": "adv",
+   "en": "down, below; πιο κάτω = further down",
+   "tr": "aşağı, aşağıda; πιο κάτω = biraz ileride"
+  },
+  {
+   "el": "η καφετέρια",
+   "pos": "noun",
+   "en": "café",
+   "tr": "kafe, kafeterya"
+  },
+  {
+   "el": "το κέντρο",
+   "forms": [
+    "κέντρα",
+    "κέντρου"
+   ],
+   "pos": "noun",
+   "en": "centre; centre (institution)",
+   "tr": "merkez; merkez (kurum)"
+  },
+  {
+   "el": "το κιλό",
+   "pos": "noun",
+   "en": "kilo, kilogram",
+   "tr": "kilo"
+  },
+  {
+   "el": "η κίνηση",
+   "pos": "noun",
+   "en": "traffic; movement",
+   "tr": "trafik; hareket"
+  },
+  {
+   "el": "το κλειδί",
+   "forms": [
+    "κλειδιά"
+   ],
+   "pos": "noun",
+   "en": "key",
+   "tr": "anahtar"
+  },
+  {
+   "el": "κλείνω",
+   "forms": [
+    "κλείνει",
+    "κλείστε",
+    "έκλεισα",
+    "κλείνουν",
+    "κλείσαμε",
+    "κλείσεις",
+    "κλείσετε"
+   ],
+   "pos": "verb",
+   "en": "to close, to shut; to book (an appointment)",
+   "tr": "kapatmak, kapanmak; randevu almak"
+  },
+  {
+   "el": "κλειστός",
+   "forms": [
+    "κλειστό",
+    "κλειστά",
+    "κλειστή"
+   ],
+   "pos": "adj",
+   "en": "closed",
+   "tr": "kapalı"
+  },
+  {
+   "el": "κοιμάμαι",
+   "forms": [
+    "κοιμηθεί",
+    "κοιμηθήκατε",
+    "κοιμήθηκες",
+    "κοιμηθούν"
+   ],
+   "pos": "verb",
+   "en": "to sleep",
+   "tr": "uyumak"
+  },
+  {
+   "el": "κόκκινος",
+   "forms": [
+    "κόκκινο"
+   ],
+   "pos": "adj",
+   "en": "red",
+   "tr": "kırmızı"
+  },
+  {
+   "el": "το κομμάτι",
+   "pos": "noun",
+   "en": "piece, bit",
+   "tr": "parça, parçacık"
+  },
+  {
+   "el": "κοντά",
+   "pos": "adv",
+   "en": "near, close",
+   "tr": "yakın, yakında"
+  },
+  {
+   "el": "ο κόσμος",
+   "forms": [
+    "κόσμο"
+   ],
+   "pos": "noun",
+   "en": "world; people, crowd",
+   "tr": "dünya; insanlar, kalabalık"
+  },
+  {
+   "el": "κοστίζω",
+   "forms": [
+    "Κοστίζει",
+    "κοστίζει",
+    "κοστίζουν"
+   ],
+   "pos": "verb",
+   "en": "to cost",
+   "tr": "(fiyatı) olmak, mal olmak"
+  },
+  {
+   "el": "η κουβέρτα",
+   "pos": "noun",
+   "en": "blanket",
+   "tr": "battaniye"
+  },
+  {
+   "el": "η κουζίνα",
+   "pos": "noun",
+   "en": "kitchen; cooker",
+   "tr": "mutfak; ocak"
+  },
+  {
+   "el": "κρατάω",
+   "forms": [
+    "κρατούν"
+   ],
+   "pos": "verb",
+   "en": "to hold, keep; to last",
+   "tr": "tutmak; sürmek"
+  },
+  {
+   "el": "το κρέας",
+   "pos": "noun",
+   "en": "meat",
+   "tr": "et"
+  },
+  {
+   "el": "το κρεμμύδι",
+   "pos": "noun",
+   "en": "onion",
+   "tr": "soğan"
+  },
+  {
+   "el": "το κρεοπωλείο",
+   "pos": "noun",
+   "en": "butcher's shop",
+   "tr": "kasap dükkânı"
+  },
+  {
+   "el": "κρύος",
+   "pos": "adj",
+   "en": "cold",
+   "tr": "soğuk"
+  },
+  {
+   "el": "το κτίριο",
+   "pos": "noun",
+   "en": "building",
+   "tr": "bina"
+  },
+  {
+   "el": "η Κυριακή",
+   "pos": "noun",
+   "en": "Sunday",
+   "tr": "pazar (gün)"
+  },
+  {
+   "el": "ο κύριος",
+   "forms": [
+    "κυρία",
+    "κυρίας",
+    "κύριε"
+   ],
+   "pos": "noun",
+   "en": "gentleman, Mr; η κυρία = lady, Mrs",
+   "tr": "bey, beyefendi; η κυρία = hanım, bayan"
+  },
+  {
+   "el": "λαϊκός",
+   "forms": [
+    "λαϊκή"
+   ],
+   "pos": "adj",
+   "en": "popular, of the people; η λαϊκή = street market",
+   "tr": "halka ait, halkçı; η λαϊκή = semt pazarı"
+  },
+  {
+   "el": "το λαχανικό",
+   "forms": [
+    "λαχανικά"
+   ],
+   "pos": "noun",
+   "en": "vegetable",
+   "tr": "sebze"
+  },
+  {
+   "el": "λείπω",
+   "forms": [
+    "λείπετε"
+   ],
+   "pos": "verb",
+   "en": "to be away, to be absent; to be missing",
+   "tr": "yok olmak, uzakta olmak; eksik olmak"
+  },
+  {
+   "el": "λειτουργώ",
+   "forms": [
+    "λειτουργούν",
+    "λειτουργεί"
+   ],
+   "pos": "verb",
+   "en": "to operate, to work, to function",
+   "tr": "çalışmak, işlemek"
+  },
+  {
+   "el": "λειτουργώ",
+   "forms": [
+    "λειτουργούσε"
+   ],
+   "pos": "verb",
+   "en": "to operate, to work, to function",
+   "tr": "çalışmak, işlemek"
+  },
+  {
+   "el": "το λεμόνι",
+   "pos": "noun",
+   "en": "lemon",
+   "tr": "limon"
+  },
+  {
+   "el": "λέω",
+   "forms": [
+    "είπε",
+    "έλεγαν",
+    "λέει",
+    "πείτε",
+    "είπαμε",
+    "λένε",
+    "πεις"
+   ],
+   "pos": "verb",
+   "en": "to say, tell",
+   "tr": "söylemek, demek"
+  },
+  {
+   "el": "λέω",
+   "forms": [
+    "είπα"
+   ],
+   "pos": "verb",
+   "en": "to say, to tell",
+   "tr": "söylemek, demek"
+  },
+  {
+   "el": "το λεωφορείο",
+   "pos": "noun",
+   "en": "bus",
+   "tr": "otobüs"
+  },
+  {
+   "el": "ο λογαριασμός",
+   "forms": [
+    "λογαριασμό"
+   ],
+   "pos": "noun",
+   "en": "bill (restaurant, utilities); account",
+   "tr": "hesap; fatura; banka hesabı"
+  },
+  {
+   "el": "λόγω",
+   "pos": "prep",
+   "en": "because of, due to (+ genitive)",
+   "tr": "nedeniyle, yüzünden (+ tamlayan hali)"
+  },
+  {
+   "el": "η λύση",
+   "pos": "noun",
+   "en": "solution",
+   "tr": "çözüm"
+  },
+  {
+   "el": "το μαγαζί",
+   "forms": [
+    "μαγαζιά"
+   ],
+   "pos": "noun",
+   "en": "shop, store",
+   "tr": "dükkân, mağaza"
+  },
+  {
+   "el": "μαγειρεύω",
+   "pos": "verb",
+   "en": "to cook",
+   "tr": "yemek pişirmek"
+  },
+  {
+   "el": "η μαγειρική",
+   "forms": [
+    "μαγειρικής"
+   ],
+   "pos": "noun",
+   "en": "cooking, cookery",
+   "tr": "yemek pişirme, mutfak sanatı"
+  },
+  {
+   "el": "μαζεύω",
+   "forms": [
+    "μαζεύονται",
+    "μαζευτεί"
+   ],
+   "pos": "verb",
+   "en": "to collect, to gather",
+   "tr": "toplamak"
+  },
+  {
+   "el": "μαζί",
+   "pos": "adv",
+   "en": "together",
+   "tr": "birlikte"
+  },
+  {
+   "el": "μαθαίνω",
+   "forms": [
+    "έμαθα",
+    "μαθαίνει",
+    "μαθαίνουν",
+    "μάθαμε",
+    "μάθεις",
+    "μάθετε"
+   ],
+   "pos": "verb",
+   "en": "to learn",
+   "tr": "öğrenmek"
+  },
+  {
+   "el": "το μάθημα",
+   "forms": [
+    "μαθήματα",
+    "Μαθήματα"
+   ],
+   "pos": "noun",
+   "en": "lesson, class",
+   "tr": "ders"
+  },
+  {
+   "el": "ο μαθητής",
+   "forms": [
+    "Μαθητές",
+    "μαθητές"
+   ],
+   "pos": "noun",
+   "en": "pupil, student",
+   "tr": "öğrenci"
+  },
+  {
+   "el": "ο Μάιος",
+   "forms": [
+    "Μάιο",
+    "Μαΐου"
+   ],
+   "pos": "noun",
+   "en": "May",
+   "tr": "Mayıs"
+  },
+  {
+   "el": "μακριά",
+   "pos": "adv",
+   "en": "far, far away",
+   "tr": "uzak, uzakta"
+  },
+  {
+   "el": "το μάρκετ",
+   "pos": "noun",
+   "en": "market, supermarket (σούπερ μάρκετ)",
+   "tr": "market, süpermarket"
+  },
+  {
+   "el": "ο Μάρτιος",
+   "forms": [
+    "Μαρτίου"
+   ],
+   "pos": "noun",
+   "en": "March",
+   "tr": "mart (ay)"
+  },
+  {
+   "el": "μεγάλος",
+   "forms": [
+    "μεγάλο",
+    "μεγαλύτερα"
+   ],
+   "pos": "adj",
+   "en": "big, large; μεγαλύτερος = bigger",
+   "tr": "büyük; μεγαλύτερος = daha büyük"
+  },
+  {
+   "el": "το μέλι",
+   "pos": "noun",
+   "en": "honey",
+   "tr": "bal"
+  },
+  {
+   "el": "το μέλος",
+   "forms": [
+    "μέλους"
+   ],
+   "pos": "noun",
+   "en": "member",
+   "tr": "üye"
+  },
+  {
+   "el": "μένω",
+   "forms": [
+    "μένουν",
+    "μένεις",
+    "μένετε",
+    "έμεινα",
+    "μείναμε",
+    "μείνεις",
+    "μείνετε",
+    "μένει"
+   ],
+   "pos": "verb",
+   "en": "to live (somewhere), to stay",
+   "tr": "oturmak, kalmak"
+  },
+  {
+   "el": "η μέρα",
+   "pos": "noun",
+   "en": "day",
+   "tr": "gün"
+  },
+  {
+   "el": "η μέρα",
+   "forms": [
+    "μέρες"
+   ],
+   "pos": "noun",
+   "en": "day",
+   "tr": "gün"
+  },
+  {
+   "el": "μερικοί",
+   "pos": "adj",
+   "en": "some, a few",
+   "tr": "bazı, birkaç"
+  },
+  {
+   "el": "το μεσημέρι",
+   "pos": "noun",
+   "en": "noon, midday",
+   "tr": "öğle"
+  },
+  {
+   "el": "μετά",
+   "pos": "adv",
+   "en": "afterwards, then; after",
+   "tr": "sonra; -den sonra"
+  },
+  {
+   "el": "ο μετανάστης",
+   "forms": [
+    "μετανάστες"
+   ],
+   "pos": "noun",
+   "en": "immigrant",
+   "tr": "göçmen"
+  },
+  {
+   "el": "μεταχειρισμένος",
+   "forms": [
+    "μεταχειρισμένα"
+   ],
+   "pos": "adj",
+   "en": "second-hand, used",
+   "tr": "ikinci el, kullanılmış"
+  },
+  {
+   "el": "μετράω",
+   "forms": [
+    "μετράνε"
+   ],
+   "pos": "verb",
+   "en": "to count; to measure",
+   "tr": "saymak; ölçmek"
+  },
+  {
+   "el": "η μέτρηση",
+   "pos": "noun",
+   "en": "measurement",
+   "tr": "ölçüm"
+  },
+  {
+   "el": "το μέτρο",
+   "forms": [
+    "μέτρα",
+    "μέτρου"
+   ],
+   "pos": "noun",
+   "en": "metre; measure (μέτρα = measures)",
+   "tr": "metre; önlem (μέτρα = önlemler)"
+  },
+  {
+   "el": "το μετρό",
+   "pos": "noun",
+   "en": "metro, subway",
+   "tr": "metro"
+  },
+  {
+   "el": "το μήλο",
+   "pos": "noun",
+   "en": "apple",
+   "tr": "elma"
+  },
+  {
+   "el": "ο μήνας",
+   "forms": [
+    "μήνα",
+    "μήνες"
+   ],
+   "pos": "noun",
+   "en": "month",
+   "tr": "ay"
+  },
+  {
+   "el": "η μητέρα",
+   "pos": "noun",
+   "en": "mother",
+   "tr": "anne"
+  },
+  {
+   "el": "ο μηχανικός",
+   "pos": "noun",
+   "en": "engineer; mechanic",
+   "tr": "mühendis; tamirci"
+  },
+  {
+   "el": "μικρός",
+   "forms": [
+    "μικρό"
+   ],
+   "pos": "adj",
+   "en": "small, little",
+   "tr": "küçük"
+  },
+  {
+   "el": "μισός",
+   "forms": [
+    "μισή",
+    "μισό"
+   ],
+   "pos": "adj",
+   "en": "half; δέκα και μισή = half past ten",
+   "tr": "yarım; δέκα και μισή = on buçuk"
+  },
+  {
+   "el": "μόνος",
+   "forms": [
+    "μόνοι"
+   ],
+   "pos": "adj",
+   "en": "alone; only",
+   "tr": "yalnız, tek başına; tek"
+  },
+  {
+   "el": "η μουσική",
+   "pos": "noun",
+   "en": "music",
+   "tr": "müzik"
+  },
+  {
+   "el": "μπαίνω",
+   "forms": [
+    "μπαίνει",
+    "μπαίνουν",
+    "μπεις",
+    "μπείτε",
+    "μπήκα",
+    "μπήκαμε"
+   ],
+   "pos": "verb",
+   "en": "to enter, to get in",
+   "tr": "girmek; binmek"
+  },
+  {
+   "el": "το μπακάλικο",
+   "pos": "noun",
+   "en": "grocery store",
+   "tr": "bakkal"
+  },
+  {
+   "el": "η μπανάνα",
+   "pos": "noun",
+   "en": "banana",
+   "tr": "muz"
+  },
+  {
+   "el": "το μπάνιο",
+   "pos": "noun",
+   "en": "bathroom; bath",
+   "tr": "banyo"
+  },
+  {
+   "el": "μπορώ",
+   "forms": [
+    "μπορείτε",
+    "Μπορούμε",
+    "μπορούν",
+    "μπορούσα",
+    "Μπορεί"
+   ],
+   "pos": "verb",
+   "en": "can, to be able to",
+   "tr": "-ebilmek"
+  },
+  {
+   "el": "το μπουφάν",
+   "pos": "noun",
+   "en": "jacket (padded)",
+   "tr": "mont"
+  },
+  {
+   "el": "νέος",
+   "forms": [
+    "νέα"
+   ],
+   "pos": "adj",
+   "en": "new; young",
+   "tr": "yeni; genç"
+  },
+  {
+   "el": "το νερό",
+   "pos": "noun",
+   "en": "water",
+   "tr": "su"
+  },
+  {
+   "el": "νηστικός",
+   "forms": [
+    "νηστικοί"
+   ],
+   "pos": "adj",
+   "en": "fasting, on an empty stomach; hungry",
+   "tr": "aç karnına, aç"
+  },
+  {
+   "el": "νιώθω",
+   "forms": [
+    "ένιωσαν",
+    "ένιωσε",
+    "νιώθεις",
+    "νιώθετε",
+    "νιώσουμε",
+    "νιώσω"
+   ],
+   "pos": "verb",
+   "en": "to feel",
+   "tr": "hissetmek"
+  },
+  {
+   "el": "νοικιάζω",
+   "forms": [
+    "νοίκιαζα"
+   ],
+   "pos": "verb",
+   "en": "to rent",
+   "tr": "kiralamak"
+  },
+  {
+   "el": "νομίζω",
+   "pos": "verb",
+   "en": "to think, to believe",
+   "tr": "sanmak, zannetmek"
+  },
+  {
+   "el": "η νύχτα",
+   "pos": "noun",
+   "en": "night",
+   "tr": "gece"
+  },
+  {
+   "el": "νωρίς",
+   "pos": "adv",
+   "en": "early",
+   "tr": "erken"
+  },
+  {
+   "el": "ξανά",
+   "pos": "adv",
+   "en": "again",
+   "tr": "yeniden, tekrar"
+  },
+  {
+   "el": "ξέρω",
+   "forms": [
+    "ήξεραν",
+    "ήξερε",
+    "ξέρεις",
+    "ξέρετε",
+    "ξέρουμε"
+   ],
+   "pos": "verb",
+   "en": "to know",
+   "tr": "bilmek"
+  },
+  {
+   "el": "ξυπνάω",
+   "forms": [
+    "ξυπνούσα",
+    "ξυπνάτε",
+    "ξυπνά",
+    "ξυπνάν",
+    "ξύπνησα",
+    "ξυπνήσαμε",
+    "ξυπνήσεις",
+    "ξυπνήσετε"
+   ],
+   "pos": "verb",
+   "en": "to wake up",
+   "tr": "uyanmak; uyandırmak"
+  },
+  {
+   "el": "η οδός",
+   "forms": [
+    "οδό"
+   ],
+   "pos": "noun",
+   "en": "street, road",
+   "tr": "cadde, sokak"
+  },
+  {
+   "el": "η οικονομία",
+   "pos": "noun",
+   "en": "economy; saving",
+   "tr": "ekonomi; tasarruf"
+  },
+  {
+   "el": "όλος",
+   "forms": [
+    "όλα",
+    "όλη",
+    "όλοι",
+    "όλους"
+   ],
+   "pos": "adj",
+   "en": "all, whole; όλα = everything",
+   "tr": "bütün, tüm; όλα = her şey"
+  },
+  {
+   "el": "όμως",
+   "pos": "conj",
+   "en": "however, but",
+   "tr": "ama, ancak"
+  },
+  {
+   "el": "το όνομα",
+   "forms": [
+    "όνομά"
+   ],
+   "pos": "noun",
+   "en": "name",
+   "tr": "isim, ad"
+  },
+  {
+   "el": "όπως",
+   "pos": "conj",
+   "en": "as, like",
+   "tr": "gibi, -diği gibi"
+  },
+  {
+   "el": "οργανώνω",
+   "forms": [
+    "οργανώνει"
+   ],
+   "pos": "verb",
+   "en": "to organise",
+   "tr": "düzenlemek, organize etmek"
+  },
+  {
+   "el": "ο όροφος",
+   "forms": [
+    "όροφο"
+   ],
+   "pos": "noun",
+   "en": "floor, storey",
+   "tr": "kat"
+  },
+  {
+   "el": "όσος",
+   "forms": [
+    "όσο",
+    "Όσοι"
+   ],
+   "pos": "pron",
+   "en": "as much/many as; όσοι = those who",
+   "tr": "-diği kadar; όσοι = olanlar"
+  },
+  {
+   "el": "ότι",
+   "pos": "conj",
+   "en": "that",
+   "tr": "ki, -diğini (söylemek)"
+  },
+  {
+   "el": "οχτώ",
+   "pos": "num",
+   "en": "eight",
+   "tr": "sekiz"
+  },
+  {
+   "el": "το παιδί",
+   "forms": [
+    "παιδιά"
+   ],
+   "pos": "noun",
+   "en": "child",
+   "tr": "çocuk"
+  },
+  {
+   "el": "παίρνω",
+   "forms": [
+    "πάρω",
+    "παίρνεις",
+    "παίρνετε",
+    "πάρουμε",
+    "πήραν",
+    "πήρε"
+   ],
+   "pos": "verb",
+   "en": "to take, to get; to catch (a bus)",
+   "tr": "almak; (otobüse) binmek"
+  },
+  {
+   "el": "το παιχνίδι",
+   "pos": "noun",
+   "en": "game; toy; παιχνίδι ρόλων = role play",
+   "tr": "oyun; oyuncak; παιχνίδι ρόλων = rol yapma oyunu"
+  },
+  {
+   "el": "παλιός",
+   "forms": [
+    "παλιό"
+   ],
+   "pos": "adj",
+   "en": "old",
+   "tr": "eski"
+  },
+  {
+   "el": "το παλτό",
+   "pos": "noun",
+   "en": "coat, overcoat",
+   "tr": "palto, manto"
+  },
+  {
+   "el": "πάντα",
+   "pos": "adv",
+   "en": "always",
+   "tr": "her zaman, daima"
+  },
+  {
+   "el": "παραγγέλνω",
+   "forms": [
+    "Παραγγέλνουμε"
+   ],
+   "pos": "verb",
+   "en": "to order",
+   "tr": "sipariş vermek"
+  },
+  {
+   "el": "το παράθυρο",
+   "pos": "noun",
+   "en": "window",
+   "tr": "pencere"
+  },
+  {
+   "el": "παρακαλώ",
+   "pos": "verb",
+   "en": "to ask, request; please; you're welcome",
+   "tr": "rica etmek; lütfen; rica ederim"
+  },
+  {
+   "el": "παραλαμβάνω",
+   "forms": [
+    "παραλήφθηκε"
+   ],
+   "pos": "verb",
+   "en": "to receive, take delivery of",
+   "tr": "teslim almak, kabul etmek"
+  },
+  {
+   "el": "η παραλία",
+   "pos": "noun",
+   "en": "beach, seaside",
+   "tr": "plaj, sahil"
+  },
+  {
+   "el": "η Παρασκευή",
+   "pos": "noun",
+   "en": "Friday",
+   "tr": "Cuma"
+  },
+  {
+   "el": "το πάρκο",
+   "forms": [
+    "πάρκα"
+   ],
+   "pos": "noun",
+   "en": "park",
+   "tr": "park"
+  },
+  {
+   "el": "το πάρτι",
+   "pos": "noun",
+   "en": "party",
+   "tr": "parti"
+  },
+  {
+   "el": "η πατάτα",
+   "forms": [
+    "πατάτες"
+   ],
+   "pos": "noun",
+   "en": "potato",
+   "tr": "patates"
+  },
+  {
+   "el": "η πατρίδα",
+   "pos": "noun",
+   "en": "homeland, native country",
+   "tr": "vatan, anavatan"
+  },
+  {
+   "el": "το πάτωμα",
+   "forms": [
+    "ΠΑΤΩΜΑ"
+   ],
+   "pos": "noun",
+   "en": "floor",
+   "tr": "zemin, döşeme"
+  },
+  {
+   "el": "πειράζω",
+   "forms": [
+    "πειράζει"
+   ],
+   "pos": "verb",
+   "en": "to bother, annoy; δεν πειράζει = never mind, it's fine",
+   "tr": "rahatsız etmek; δεν πειράζει = sorun değil"
+  },
+  {
+   "el": "ο πελάτης",
+   "pos": "noun",
+   "en": "customer, client",
+   "tr": "müşteri"
+  },
+  {
+   "el": "η Πέμπτη",
+   "pos": "noun",
+   "en": "Thursday",
+   "tr": "Perşembe"
+  },
+  {
+   "el": "πενήντα",
+   "pos": "num",
+   "en": "fifty",
+   "tr": "elli"
+  },
+  {
+   "el": "πεντακόσιοι",
+   "forms": [
+    "πεντακόσια"
+   ],
+   "pos": "num",
+   "en": "five hundred",
+   "tr": "beş yüz"
+  },
+  {
+   "el": "πέντε",
+   "pos": "num",
+   "en": "five",
+   "tr": "beş"
+  },
+  {
+   "el": "περιλαμβάνω",
+   "forms": [
+    "περιλαμβάνει",
+    "περιλαμβάνεται"
+   ],
+   "pos": "verb",
+   "en": "to include, contain",
+   "tr": "içermek, kapsamak"
+  },
+  {
+   "el": "περιμένω",
+   "forms": [
+    "περίμενα",
+    "περίμενε",
+    "περιμένετε",
+    "περιμένουμε"
+   ],
+   "pos": "verb",
+   "en": "to wait (for); to expect",
+   "tr": "beklemek; ummak"
+  },
+  {
+   "el": "η περιοχή",
+   "pos": "noun",
+   "en": "area, district, region",
+   "tr": "bölge, semt"
+  },
+  {
+   "el": "το περίπτερο",
+   "pos": "noun",
+   "en": "kiosk, newsstand",
+   "tr": "büfe, gazete bayii"
+  },
+  {
+   "el": "το πετρέλαιο",
+   "pos": "noun",
+   "en": "oil, petroleum; heating oil",
+   "tr": "petrol; kalorifer yakıtı"
+  },
+  {
+   "el": "πηγαίνω",
+   "forms": [
+    "πάμε",
+    "πάει",
+    "πάνε",
+    "πάω",
+    "Πήγα",
+    "πας",
+    "πάτε",
+    "πήγα",
+    "πήγαμε"
+   ],
+   "pos": "verb",
+   "en": "to go",
+   "tr": "gitmek"
+  },
+  {
+   "el": "πια",
+   "pos": "adv",
+   "en": "by now; (not) any more",
+   "tr": "artık"
+  },
+  {
+   "el": "η πίεση",
+   "pos": "noun",
+   "en": "pressure; blood pressure",
+   "tr": "basınç; tansiyon"
+  },
+  {
+   "el": "πίνω",
+   "forms": [
+    "έπινα",
+    "πίνουμε",
+    "Πίνουμε",
+    "ήπιαν",
+    "ήπιε",
+    "πίνεις",
+    "πίνετε",
+    "πιούμε",
+    "πιω"
+   ],
+   "pos": "verb",
+   "en": "to drink",
+   "tr": "içmek"
+  },
+  {
+   "el": "πιο",
+   "pos": "adv",
+   "en": "more (makes comparatives)",
+   "tr": "daha"
+  },
+  {
+   "el": "το πιστοποιητικό",
+   "pos": "noun",
+   "en": "certificate",
+   "tr": "sertifika, belge"
+  },
+  {
+   "el": "η πλατεία",
+   "forms": [
+    "πλατείας"
+   ],
+   "pos": "noun",
+   "en": "square (in a town)",
+   "tr": "meydan"
+  },
+  {
+   "el": "η πλατφόρμα",
+   "pos": "noun",
+   "en": "platform (train)",
+   "tr": "peron; platform"
+  },
+  {
+   "el": "πλέκω",
+   "forms": [
+    "πλέξει"
+   ],
+   "pos": "verb",
+   "en": "to knit; to weave, plait",
+   "tr": "örmek"
+  },
+  {
+   "el": "η πληρωμή",
+   "pos": "noun",
+   "en": "payment",
+   "tr": "ödeme"
+  },
+  {
+   "el": "πληρώνω",
+   "pos": "verb",
+   "en": "to pay",
+   "tr": "ödemek"
+  },
+  {
+   "el": "πληρώνω",
+   "forms": [
+    "πλήρωσα",
+    "πληρώνετε",
+    "πληρώνουμε",
+    "πληρώσατε",
+    "πληρώσει",
+    "πλήρωσες",
+    "πληρώσουν"
+   ],
+   "pos": "verb",
+   "en": "to pay",
+   "tr": "ödemek"
+  },
+  {
+   "el": "το ποδήλατο",
+   "forms": [
+    "ποδήλατα"
+   ],
+   "pos": "noun",
+   "en": "bicycle",
+   "tr": "bisiklet"
+  },
+  {
+   "el": "το ποδόσφαιρο",
+   "pos": "noun",
+   "en": "football, soccer",
+   "tr": "futbol"
+  },
+  {
+   "el": "η πόλη",
+   "forms": [
+    "πόλης"
+   ],
+   "pos": "noun",
+   "en": "city, town",
+   "tr": "şehir, kent"
+  },
+  {
+   "el": "η πολυκατοικία",
+   "forms": [
+    "πολυκατοικίας"
+   ],
+   "pos": "noun",
+   "en": "apartment building",
+   "tr": "apartman"
+  },
+  {
+   "el": "πολύς",
+   "forms": [
+    "πολλές",
+    "πολλή"
+   ],
+   "pos": "adj",
+   "en": "much, many, a lot of",
+   "tr": "çok"
+  },
+  {
+   "el": "η πόρτα",
+   "pos": "noun",
+   "en": "door",
+   "tr": "kapı"
+  },
+  {
+   "el": "το πορτοκάλι",
+   "pos": "noun",
+   "en": "orange (fruit)",
+   "tr": "portakal"
+  },
+  {
+   "el": "πουλάω",
+   "forms": [
+    "πουλήσει",
+    "πουλάμε",
+    "πουλήσατε",
+    "πούλησες",
+    "πουλήσουν"
+   ],
+   "pos": "verb",
+   "en": "to sell",
+   "tr": "satmak"
+  },
+  {
+   "el": "πρέπει",
+   "pos": "verb",
+   "en": "must, one has to; it is necessary",
+   "tr": "-meli, gerekir"
+  },
+  {
+   "el": "πριν",
+   "pos": "adv",
+   "en": "before; ago",
+   "tr": "önce"
+  },
+  {
+   "el": "το προάστιο",
+   "pos": "noun",
+   "en": "suburb",
+   "tr": "banliyö"
+  },
+  {
+   "el": "το πρόβλημα",
+   "pos": "noun",
+   "en": "problem",
+   "tr": "sorun, problem"
+  },
+  {
+   "el": "το πρόγραμμα",
+   "forms": [
+    "προγράμματα"
+   ],
+   "pos": "noun",
+   "en": "programme; schedule",
+   "tr": "program"
+  },
+  {
+   "el": "η πρόληψη",
+   "forms": [
+    "πρόληψης"
+   ],
+   "pos": "noun",
+   "en": "prevention",
+   "tr": "önleme, korunma"
+  },
+  {
+   "el": "προσέχω",
+   "forms": [
+    "προσέξει",
+    "προσέχει"
+   ],
+   "pos": "verb",
+   "en": "to pay attention to, be careful of; to look after",
+   "tr": "dikkat etmek; göz kulak olmak"
+  },
+  {
+   "el": "η προσοχή",
+   "forms": [
+    "ΠΡΟΣΟΧΗ"
+   ],
+   "pos": "noun",
+   "en": "attention; Προσοχή! = Careful!",
+   "tr": "dikkat; Προσοχή! = Dikkat!"
+  },
+  {
+   "el": "προσωρινός",
+   "forms": [
+    "προσωρινή"
+   ],
+   "pos": "adj",
+   "en": "temporary",
+   "tr": "geçici"
+  },
+  {
+   "el": "προτείνω",
+   "forms": [
+    "προτείνετε"
+   ],
+   "pos": "verb",
+   "en": "to suggest, propose",
+   "tr": "önermek"
+  },
+  {
+   "el": "προτιμώ",
+   "forms": [
+    "προτιμάτε",
+    "προτιμούν"
+   ],
+   "pos": "verb",
+   "en": "to prefer",
+   "tr": "tercih etmek"
+  },
+  {
+   "el": "το πρωί",
+   "pos": "noun",
+   "en": "morning",
+   "tr": "sabah"
+  },
+  {
+   "el": "πρωινός",
+   "forms": [
+    "πρωινά"
+   ],
+   "pos": "adj",
+   "en": "morning (adj.); το πρωινό = breakfast",
+   "tr": "sabah (sıfat); το πρωινό = kahvaltı"
+  },
+  {
+   "el": "πρώτος",
+   "forms": [
+    "Πρώτα",
+    "πρώτη",
+    "πρώτο",
+    "πρώτους"
+   ],
+   "pos": "adj",
+   "en": "first; πρώτα = first, firstly",
+   "tr": "birinci, ilk; πρώτα = önce"
+  },
+  {
+   "el": "πωλώ",
+   "forms": [
+    "Πωλείται",
+    "πουλώ"
+   ],
+   "pos": "verb",
+   "en": "to sell; πωλείται = for sale",
+   "tr": "satmak; πωλείται = satılık"
+  },
+  {
+   "el": "το ραντεβού",
+   "pos": "noun",
+   "en": "appointment, date",
+   "tr": "randevu"
+  },
+  {
+   "el": "το ρεύμα",
+   "pos": "noun",
+   "en": "electricity, power; current; draught",
+   "tr": "elektrik; akım; cereyan"
+  },
+  {
+   "el": "το ρολόι",
+   "pos": "noun",
+   "en": "clock, watch",
+   "tr": "saat (duvar/kol saati)"
+  },
+  {
+   "el": "ο ρόλος",
+   "forms": [
+    "ρόλων",
+    "ρόλο",
+    "ρόλου",
+    "ρόλοι",
+    "ρόλους"
+   ],
+   "pos": "noun",
+   "en": "role, part; παιχνίδι ρόλων = role-play",
+   "tr": "rol; παιχνίδι ρόλων = canlandırma"
+  },
+  {
+   "el": "το ρούχο",
+   "forms": [
+    "ρούχα"
+   ],
+   "pos": "noun",
+   "en": "piece of clothing; (plural) clothes",
+   "tr": "giysi; (çoğul) kıyafetler"
+  },
+  {
+   "el": "ρωτάω",
+   "forms": [
+    "ρωτάς",
+    "ρωτάτε",
+    "ρωτήσαν",
+    "ρώτησε",
+    "ρωτήσουμε",
+    "ρωτήσω"
+   ],
+   "pos": "verb",
+   "en": "to ask",
+   "tr": "sormak"
+  },
+  {
+   "el": "το Σάββατο",
+   "pos": "noun",
+   "en": "Saturday",
+   "tr": "Cumartesi"
+  },
+  {
+   "el": "το Σαββατοκύριακο",
+   "forms": [
+    "Σαββατοκύριακα"
+   ],
+   "pos": "noun",
+   "en": "weekend",
+   "tr": "hafta sonu"
+  },
+  {
+   "el": "το σάκχαρο",
+   "forms": [
+    "σακχάρου"
+   ],
+   "pos": "noun",
+   "en": "sugar; blood sugar",
+   "tr": "şeker; kan şekeri"
+  },
+  {
+   "el": "η σαλάτα",
+   "pos": "noun",
+   "en": "salad",
+   "tr": "salata"
+  },
+  {
+   "el": "σαράντα",
+   "pos": "num",
+   "en": "forty",
+   "tr": "kırk"
+  },
+  {
+   "el": "ο σερβιτόρος",
+   "pos": "noun",
+   "en": "waiter",
+   "tr": "garson"
+  },
+  {
+   "el": "σημαίνω",
+   "forms": [
+    "σημαίνει"
+   ],
+   "pos": "verb",
+   "en": "to mean, to signify",
+   "tr": "anlamına gelmek, demek"
+  },
+  {
+   "el": "σήμερα",
+   "pos": "adv",
+   "en": "today",
+   "tr": "bugün"
+  },
+  {
+   "el": "το σινεμά",
+   "pos": "noun",
+   "en": "cinema",
+   "tr": "sinema"
+  },
+  {
+   "el": "η σκάλα",
+   "pos": "noun",
+   "en": "stairs, staircase; ladder",
+   "tr": "merdiven"
+  },
+  {
+   "el": "σκέφτομαι",
+   "pos": "verb",
+   "en": "to think, consider",
+   "tr": "düşünmek"
+  },
+  {
+   "el": "σκοπεύω",
+   "forms": [
+    "σκοπεύουν"
+   ],
+   "pos": "verb",
+   "en": "to intend, plan to",
+   "tr": "niyetinde olmak, -meyi planlamak"
+  },
+  {
+   "el": "το σκουπίδι",
+   "forms": [
+    "σκουπίδια"
+   ],
+   "pos": "noun",
+   "en": "rubbish, trash (plural: garbage)",
+   "tr": "çöp"
+  },
+  {
+   "el": "ο σκύλος",
+   "forms": [
+    "σκύλο"
+   ],
+   "pos": "noun",
+   "en": "dog",
+   "tr": "köpek"
+  },
+  {
+   "el": "η σόμπα",
+   "pos": "noun",
+   "en": "heater, stove",
+   "tr": "soba"
+  },
+  {
+   "el": "το σουβλάκι",
+   "pos": "noun",
+   "en": "souvlaki (grilled meat skewer)",
+   "tr": "souvlaki (şiş et)"
+  },
+  {
+   "el": "η σούπα",
+   "pos": "noun",
+   "en": "soup",
+   "tr": "çorba"
+  },
+  {
+   "el": "σούπερ",
+   "pos": "adj",
+   "en": "super (σούπερ μάρκετ = supermarket)",
+   "tr": "süper (σούπερ μάρκετ = süpermarket)"
+  },
+  {
+   "el": "το σουπερμάρκετ",
+   "forms": [
+    "ΣΟΥΠΕΡΜΑΡΚΕΤ"
+   ],
+   "pos": "noun",
+   "en": "supermarket",
+   "tr": "süpermarket"
+  },
+  {
+   "el": "σπασμένος",
+   "forms": [
+    "σπασμένο"
+   ],
+   "pos": "adj",
+   "en": "broken",
+   "tr": "kırık"
+  },
+  {
+   "el": "το σπίτι",
+   "pos": "noun",
+   "en": "house, home",
+   "tr": "ev"
+  },
+  {
+   "el": "σταματάω",
+   "forms": [
+    "Σταματήστε"
+   ],
+   "pos": "verb",
+   "en": "to stop",
+   "tr": "durmak; durdurmak"
+  },
+  {
+   "el": "η στάση",
+   "pos": "noun",
+   "en": "stop (bus, tram); stance",
+   "tr": "durak; duruş"
+  },
+  {
+   "el": "στέλνω",
+   "forms": [
+    "στάλθηκε",
+    "στείλω",
+    "έστειλαν",
+    "έστειλε",
+    "στείλουμε",
+    "στέλνεις",
+    "στέλνετε"
+   ],
+   "pos": "verb",
+   "en": "to send",
+   "tr": "göndermek"
+  },
+  {
+   "el": "ο συγγραφέας",
+   "forms": [
+    "συγγραφείς"
+   ],
+   "pos": "noun",
+   "en": "writer, author",
+   "tr": "yazar"
+  },
+  {
+   "el": "συζητάω",
+   "forms": [
+    "συζητήσουμε"
+   ],
+   "pos": "verb",
+   "en": "to discuss, talk over",
+   "tr": "tartışmak, görüşmek"
+  },
+  {
+   "el": "συμβαίνω",
+   "forms": [
+    "συμβαίνει"
+   ],
+   "pos": "verb",
+   "en": "to happen, to occur",
+   "tr": "olmak, meydana gelmek"
+  },
+  {
+   "el": "η συμβουλή",
+   "forms": [
+    "συμβουλές"
+   ],
+   "pos": "noun",
+   "en": "advice, piece of advice",
+   "tr": "tavsiye, öğüt"
+  },
+  {
+   "el": "συμφωνώ",
+   "forms": [
+    "συμφωνείτε"
+   ],
+   "pos": "verb",
+   "en": "to agree",
+   "tr": "aynı fikirde olmak, anlaşmak"
+  },
+  {
+   "el": "η συνάντηση",
+   "forms": [
+    "συναντήσεις"
+   ],
+   "pos": "noun",
+   "en": "meeting, appointment",
+   "tr": "toplantı, görüşme"
+  },
+  {
+   "el": "συνηθισμένος",
+   "forms": [
+    "συνηθισμένη"
+   ],
+   "pos": "adj",
+   "en": "ordinary, usual",
+   "tr": "alışılmış, sıradan"
+  },
+  {
+   "el": "συνήθως",
+   "pos": "adv",
+   "en": "usually",
+   "tr": "genellikle, çoğunlukla"
+  },
+  {
+   "el": "η συνταγή",
+   "forms": [
+    "συνταγές"
+   ],
+   "pos": "noun",
+   "en": "prescription; recipe",
+   "tr": "reçete; yemek tarifi"
+  },
+  {
+   "el": "σύντομα",
+   "pos": "adv",
+   "en": "soon, shortly; briefly",
+   "tr": "yakında; kısaca"
+  },
+  {
+   "el": "η ταβέρνα",
+   "pos": "noun",
+   "en": "taverna, traditional Greek restaurant",
+   "tr": "taverna, meyhane tarzı lokanta"
+  },
+  {
+   "el": "η ταινία",
+   "pos": "noun",
+   "en": "film, movie",
+   "tr": "film"
+  },
+  {
+   "el": "το ταμείο",
+   "forms": [
+    "ΤΑΜΕΙΟ"
+   ],
+   "pos": "noun",
+   "en": "cash desk, checkout",
+   "tr": "kasa"
+  },
+  {
+   "el": "το ταξί",
+   "pos": "noun",
+   "en": "taxi",
+   "tr": "taksi"
+  },
+  {
+   "el": "ταξιδεύω",
+   "forms": [
+    "ταξιδεύει",
+    "ταξιδεύουν",
+    "ταξίδεψα",
+    "ταξιδέψαμε",
+    "ταξιδέψεις",
+    "ταξιδέψετε"
+   ],
+   "pos": "verb",
+   "en": "to travel",
+   "tr": "seyahat etmek"
+  },
+  {
+   "el": "η ταυτότητα",
+   "forms": [
+    "ταυτότητά"
+   ],
+   "pos": "noun",
+   "en": "identity card, ID; identity",
+   "tr": "kimlik"
+  },
+  {
+   "el": "τελειώνω",
+   "forms": [
+    "Τελειώνει"
+   ],
+   "pos": "verb",
+   "en": "to finish, end",
+   "tr": "bitmek, bitirmek"
+  },
+  {
+   "el": "τελικά",
+   "pos": "adv",
+   "en": "finally, in the end",
+   "tr": "sonunda, nihayetinde"
+  },
+  {
+   "el": "το τέλος",
+   "pos": "noun",
+   "en": "end",
+   "tr": "son"
+  },
+  {
+   "el": "τέσσερις",
+   "forms": [
+    "τέσσερα"
+   ],
+   "pos": "num",
+   "en": "four",
+   "tr": "dört"
+  },
+  {
+   "el": "το τεστ",
+   "pos": "noun",
+   "en": "test",
+   "tr": "test, sınav"
+  },
+  {
+   "el": "η Τετάρτη",
+   "pos": "noun",
+   "en": "Wednesday",
+   "tr": "Çarşamba"
+  },
+  {
+   "el": "τετρακόσιοι",
+   "forms": [
+    "τετρακόσια"
+   ],
+   "pos": "num",
+   "en": "four hundred",
+   "tr": "dört yüz"
+  },
+  {
+   "el": "ο τεχνικός",
+   "pos": "noun",
+   "en": "technician, repairman",
+   "tr": "teknisyen, tamirci"
+  },
+  {
+   "el": "η τηλεόραση",
+   "pos": "noun",
+   "en": "television",
+   "tr": "televizyon"
+  },
+  {
+   "el": "το τηλέφωνο",
+   "pos": "noun",
+   "en": "telephone, phone",
+   "tr": "telefon"
+  },
+  {
+   "el": "τηλεφωνώ",
+   "forms": [
+    "τηλεφωνήσατε",
+    "τηλεφωνήσει",
+    "τηλεφώνησες",
+    "τηλεφωνήσουν"
+   ],
+   "pos": "verb",
+   "en": "to phone, to call",
+   "tr": "telefon etmek, aramak"
+  },
+  {
+   "el": "η τιμή",
+   "pos": "noun",
+   "en": "price; honour",
+   "tr": "fiyat; onur"
+  },
+  {
+   "el": "το τμήμα",
+   "forms": [
+    "τμήματα"
+   ],
+   "pos": "noun",
+   "en": "section, department; class (course group)",
+   "tr": "bölüm; sınıf, kurs grubu"
+  },
+  {
+   "el": "ο τοίχος",
+   "forms": [
+    "τοίχο"
+   ],
+   "pos": "noun",
+   "en": "wall",
+   "tr": "duvar"
+  },
+  {
+   "el": "τότε",
+   "pos": "adv",
+   "en": "then, at that time",
+   "tr": "o zaman, o sırada"
+  },
+  {
+   "el": "το τραπέζι",
+   "pos": "noun",
+   "en": "table",
+   "tr": "masa"
+  },
+  {
+   "el": "τρεις",
+   "pos": "num",
+   "en": "three",
+   "tr": "üç"
+  },
+  {
+   "el": "τρεις",
+   "forms": [
+    "τρία",
+    "Τρία"
+   ],
+   "pos": "num",
+   "en": "three (neuter: τρία)",
+   "tr": "üç"
+  },
+  {
+   "el": "τρέμω",
+   "forms": [
+    "τρέμοντας"
+   ],
+   "pos": "verb",
+   "en": "to tremble, shiver",
+   "tr": "titremek"
+  },
+  {
+   "el": "το τρένο",
+   "pos": "noun",
+   "en": "train",
+   "tr": "tren"
+  },
+  {
+   "el": "τρίτος",
+   "forms": [
+    "Τρίτη",
+    "τρίτο"
+   ],
+   "pos": "adj",
+   "en": "third; Τρίτη = Tuesday",
+   "tr": "üçüncü; Τρίτη = Salı"
+  },
+  {
+   "el": "τρώω",
+   "forms": [
+    "φάμε",
+    "έφαγες",
+    "τρώμε",
+    "φάγατε",
+    "φάει",
+    "φάνε"
+   ],
+   "pos": "verb",
+   "en": "to eat",
+   "tr": "yemek"
+  },
+  {
+   "el": "η τυρόπιτα",
+   "pos": "noun",
+   "en": "cheese pie",
+   "tr": "peynirli börek"
+  },
+  {
+   "el": "η υγεία",
+   "forms": [
+    "υγείας",
+    "Γεια"
+   ],
+   "pos": "noun",
+   "en": "health; γεια = hi, bye (also: cheers)",
+   "tr": "sağlık; γεια = merhaba, hoşça kal"
+  },
+  {
+   "el": "ο υπάλληλος",
+   "pos": "noun",
+   "en": "employee, clerk",
+   "tr": "memur, çalışan"
+  },
+  {
+   "el": "υπάρχω",
+   "forms": [
+    "υπάρχει",
+    "Υπάρχει"
+   ],
+   "pos": "verb",
+   "en": "to exist; υπάρχει = there is",
+   "tr": "var olmak; υπάρχει = var"
+  },
+  {
+   "el": "υπεύθυνος",
+   "forms": [
+    "υπεύθυνη"
+   ],
+   "pos": "adj",
+   "en": "responsible, in charge",
+   "tr": "sorumlu"
+  },
+  {
+   "el": "ο ύπνος",
+   "pos": "noun",
+   "en": "sleep",
+   "tr": "uyku"
+  },
+  {
+   "el": "υπογράφω",
+   "forms": [
+    "υπογράψετε"
+   ],
+   "pos": "verb",
+   "en": "to sign",
+   "tr": "imzalamak"
+  },
+  {
+   "el": "ο υπολογιστής",
+   "forms": [
+    "υπολογιστή"
+   ],
+   "pos": "noun",
+   "en": "computer",
+   "tr": "bilgisayar"
+  },
+  {
+   "el": "το φαρμακείο",
+   "pos": "noun",
+   "en": "pharmacy",
+   "tr": "eczane"
+  },
+  {
+   "el": "το φάρμακο",
+   "forms": [
+    "φάρμακα"
+   ],
+   "pos": "noun",
+   "en": "medicine, drug",
+   "tr": "ilaç"
+  },
+  {
+   "el": "φέρνω",
+   "forms": [
+    "έφερε",
+    "φέρει",
+    "Φέρτε",
+    "φέρτε",
+    "έφερες",
+    "φέρατε",
+    "φέρουν"
+   ],
+   "pos": "verb",
+   "en": "to bring",
+   "tr": "getirmek"
+  },
+  {
+   "el": "φέρνω",
+   "forms": [
+    "Φέρνετε",
+    "φέρω",
+    "φέρνουμε"
+   ],
+   "pos": "verb",
+   "en": "to bring",
+   "tr": "getirmek"
+  },
+  {
+   "el": "φέτος",
+   "pos": "adv",
+   "en": "this year",
+   "tr": "bu yıl"
+  },
+  {
+   "el": "φεύγω",
+   "forms": [
+    "φύγει",
+    "έφυγαν",
+    "έφυγε",
+    "φεύγεις",
+    "φεύγετε",
+    "φύγουμε",
+    "φύγω"
+   ],
+   "pos": "verb",
+   "en": "to leave, to depart",
+   "tr": "ayrılmak, gitmek; kalkmak (tren)"
+  },
+  {
+   "el": "ο φίλος",
+   "forms": [
+    "φίλοι",
+    "φίλο",
+    "φίλους"
+   ],
+   "pos": "noun",
+   "en": "friend",
+   "tr": "arkadaş, dost"
+  },
+  {
+   "el": "ο φίλος",
+   "pos": "noun",
+   "en": "friend (male)",
+   "tr": "arkadaş (erkek)"
+  },
+  {
+   "el": "η φοιτήτρια",
+   "pos": "noun",
+   "en": "student (female, university)",
+   "tr": "üniversite öğrencisi (kadın)"
+  },
+  {
+   "el": "ο φούρνος",
+   "forms": [
+    "φούρνο"
+   ],
+   "pos": "noun",
+   "en": "bakery; oven",
+   "tr": "fırın; ekmek fırını"
+  },
+  {
+   "el": "φρέσκος",
+   "forms": [
+    "φρέσκο"
+   ],
+   "pos": "adj",
+   "en": "fresh",
+   "tr": "taze"
+  },
+  {
+   "el": "φροντίζω",
+   "forms": [
+    "φροντίζει"
+   ],
+   "pos": "verb",
+   "en": "to take care of; to make sure",
+   "tr": "bakmak, ilgilenmek"
+  },
+  {
+   "el": "το φρούτο",
+   "forms": [
+    "Φρούτα",
+    "φρούτα"
+   ],
+   "pos": "noun",
+   "en": "fruit",
+   "tr": "meyve"
+  },
+  {
+   "el": "φτάνω",
+   "pos": "verb",
+   "en": "to arrive, reach",
+   "tr": "varmak, ulaşmak"
+  },
+  {
+   "el": "φτηνός",
+   "forms": [
+    "φτηνά"
+   ],
+   "pos": "adj",
+   "en": "cheap, inexpensive",
+   "tr": "ucuz"
+  },
+  {
+   "el": "φτιάχνω",
+   "forms": [
+    "φτιάξετε"
+   ],
+   "pos": "verb",
+   "en": "to make; to fix, repair",
+   "tr": "yapmak; tamir etmek"
+  },
+  {
+   "el": "φωτεινός",
+   "forms": [
+    "φωτεινό"
+   ],
+   "pos": "adj",
+   "en": "bright, light, sunny",
+   "tr": "aydınlık, ışıklı"
+  },
+  {
+   "el": "χαλάω",
+   "forms": [
+    "χάλασε"
+   ],
+   "pos": "verb",
+   "en": "to break, spoil (stop working)",
+   "tr": "bozulmak, bozmak"
+  },
+  {
+   "el": "η χάρη",
+   "forms": [
+    "Χάρη"
+   ],
+   "pos": "noun",
+   "en": "favour, grace; χάρη σε = thanks to",
+   "tr": "iyilik, lütuf; χάρη σε = sayesinde"
+  },
+  {
+   "el": "ο χειμώνας",
+   "forms": [
+    "χειμώνα"
+   ],
+   "pos": "noun",
+   "en": "winter",
+   "tr": "kış"
+  },
+  {
+   "el": "χθες",
+   "pos": "adv",
+   "en": "yesterday",
+   "tr": "dün"
+  },
+  {
+   "el": "χοντρός",
+   "forms": [
+    "χοντρά"
+   ],
+   "pos": "adj",
+   "en": "thick (of clothes); fat",
+   "tr": "kalın; şişman"
+  },
+  {
+   "el": "χρειάζομαι",
+   "forms": [
+    "χρειάζεται",
+    "Χρειάζεται",
+    "Χρειάζεστε",
+    "χρειάζεστε",
+    "χρειάζονται",
+    "χρειαστείς",
+    "χρειαστείτε",
+    "χρειάστηκα",
+    "χρειαστήκαμε"
+   ],
+   "pos": "verb",
+   "en": "to need",
+   "tr": "ihtiyacı olmak, gerekmek"
+  },
+  {
+   "el": "ο χρόνος",
+   "forms": [
+    "χρόνια"
+   ],
+   "pos": "noun",
+   "en": "year; time (pl. χρόνια = years)",
+   "tr": "yıl; zaman (χρόνια = yıllar)"
+  },
+  {
+   "el": "χτυπάω",
+   "forms": [
+    "χτύπησε"
+   ],
+   "pos": "verb",
+   "en": "to hit, strike, knock; to hurt (oneself)",
+   "tr": "vurmak, çarpmak"
+  },
+  {
+   "el": "χωριάτικος",
+   "forms": [
+    "χωριάτικη"
+   ],
+   "pos": "adj",
+   "en": "village-style, country; χωριάτικη σαλάτα = Greek salad",
+   "tr": "köy usulü; χωριάτικη σαλάτα = Yunan (çoban) salatası"
+  },
+  {
+   "el": "ο χώρος",
+   "forms": [
+    "χώρο"
+   ],
+   "pos": "noun",
+   "en": "space, room, area",
+   "tr": "alan, yer"
+  },
+  {
+   "el": "ψάχνω",
+   "forms": [
+    "ψάξει",
+    "ψάχνει",
+    "ψάχνετε"
+   ],
+   "pos": "verb",
+   "en": "to look for, search",
+   "tr": "aramak"
+  },
+  {
+   "el": "ψηλός",
+   "forms": [
+    "ψηλό"
+   ],
+   "pos": "adj",
+   "en": "tall; high",
+   "tr": "uzun boylu; yüksek"
+  },
+  {
+   "el": "το ψωμί",
+   "forms": [
+    "ψωμιά"
+   ],
+   "pos": "noun",
+   "en": "bread",
+   "tr": "ekmek"
+  },
+  {
+   "el": "τα ψώνια",
+   "pos": "noun",
+   "en": "shopping (κάνω ψώνια = to go shopping)",
+   "tr": "alışveriş (κάνω ψώνια = alışveriş yapmak)"
+  },
+  {
+   "el": "η ώρα",
+   "forms": [
+    "ώρες"
+   ],
+   "pos": "noun",
+   "en": "hour; time",
+   "tr": "saat (süre); vakit, zaman"
+  },
+  {
+   "el": "ωραίος",
+   "forms": [
+    "ωραία"
+   ],
+   "pos": "adj",
+   "en": "nice, beautiful, good",
+   "tr": "güzel, hoş"
+  },
+  {
+   "el": "ως",
+   "pos": "prep",
+   "en": "until, as far as; as",
+   "tr": "-e kadar; olarak"
+  }
+ ],
+ "forms": {
+  "κεφτέδες": "κεφτές",
+  "μεζέδες": "μεζές",
+  "μπελάδες": "μπελάς"
+ }
+}

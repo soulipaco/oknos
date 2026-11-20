@@ -113,6 +113,14 @@ The JSON Schema is `schemas/chapter.schema.json` (written by `uv run greek-coach
    - Every item has one answer you can defend (COACHING §5.2). An `explain` that says why is worth more than another item.
    - Exam-format items carry `exam_task` only at the exam's level (`lint_tags`).
 6. **Words already in a pack** are referenced, never duplicated. A missing word becomes a new vocab item in `items/chapter-<stage>.json`, with `en`, `tr`, `pos`, a gender for nouns, and an `example`.
+7. **Every word can be tapped.**
+   - Every Greek word in your chapter and items must be explained by tapping. `validate` lists those that are not, per chapter and per items file.
+   - An inflected form usually needs nothing: `uv run greek-coach words <pack> --write` maps it to its word.
+   - A word that is not worth a practice item gets a row in the pack's `glossary.json`. A name needs nothing if it is a speaker or a common name; otherwise it goes in the glossary's `names`.
+8. **The Greek must carry the question.**
+   - The learner sees the Greek; the translation is behind "Translate". So a true/false statement is a claim in Greek («Η ΣΤΑΣΗ είναι για το λεωφορείο.»), not a sign alone («ΣΤΑΣΗ»), with the claim in the translation.
+   - When the task really is "what do you say here?" or a question about a word ("how is η read in μήνας?"), write the situation in the item's `ask` (`tr`, `en`). It is always shown. The prompt's own translation stays a translation of its Greek.
+   - `validate` notes a statement or prompt whose Greek has at most 2 words while its translation is much longer.
 
 ## 5. The reviewer's checklist
 
@@ -129,8 +137,9 @@ Read the chapter as the learner would see it: `?lesson=<stage>` in the app.
   - [ ] Is every answer the only right one?
   - [ ] Is no distractor also correct?
   - [ ] Does each check test what the chapter taught?
+- [ ] **Questions.** Every check can be answered from what is on screen without pressing "Translate" (§4 rule 8).
 - [ ] **Copyright.** Nothing is copied from the book.
-- [ ] **Validation.** `uv run greek-coach validate <pack>` reports no problems. Its notes are read and either fixed or answered in the review note.
+- [ ] **Validation.** `uv run greek-coach validate <pack>` reports no problems. Its notes are read and either fixed or answered in the review note. No tappable word of the chapter is left without a meaning (§4 rule 7).
 
 The review note (`lessons/review/<stage>.md`) lists, in a few lines:
 - what was corrected;

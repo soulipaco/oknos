@@ -704,7 +704,7 @@ def create_app() -> FastAPI:
                     (db.now(), body.item_key, body.word[:80], entries[0].item_key if entries else None),
                 )
                 # Tapping a word signals it was not known (unless the match is ambiguous).
-                sure = how in ("exact", "accents") or (how == "stem" and len(entries) == 1)
+                sure = how in ("exact", "accents") or (how in ("stem", "form") and len(entries) == 1)
                 # only real items have a review schedule (function words such as την are not items)
                 if (entries and sure and entries[0].item_key != body.item_key
                         and entries[0].item_key in app.state.catalog.items):

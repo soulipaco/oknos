@@ -204,7 +204,7 @@ def form_card(item_key: str, item: FormItem, state: scheduler.State | None, rng:
     card: dict[str, Any] = {
         "item_key": item_key, "type": "form", "skill": item.skill, "text": item.text,
         "cue": item.cue.model_dump(exclude_none=True) if item.cue else None,
-        "translation": _text(item.translation), "rubric": _text(item.rubric),
+        "translation": _text(item.translation), "rubric": _text(item.rubric), "ask": _text(item.ask),
         "reps": state.reps if state else 0, "grammar": item.grammar,
     }
     # Choices while a form is new; typed with the Greek keyboard once it has been seen.
@@ -216,7 +216,7 @@ def form_card(item_key: str, item: FormItem, state: scheduler.State | None, rng:
 def task_card(item_key: str, item, rng: random.Random) -> dict:
     card: dict[str, Any] = {
         "item_key": item_key, "type": item.type, "skill": item.skill, "exam_task": item.exam_task,
-        "rubric": _text(item.rubric),
+        "rubric": _text(item.rubric), "ask": _text(item.ask),
         "stimulus": item.stimulus.model_dump(exclude_none=True) if item.stimulus else None,
     }
     if isinstance(item, McqItem):

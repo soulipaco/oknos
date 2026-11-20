@@ -261,7 +261,7 @@ def _is_learner_folder(path: Path) -> bool:
 
 
 def cmd_validate(args) -> int:
-    from greek_coach import coachfiles, lint, packs
+    from greek_coach import coachfiles, lint, packs, wordscan
 
     target = Path(args.path).resolve()
     learner_files: list[str] | None = None
@@ -285,6 +285,7 @@ def cmd_validate(args) -> int:
         return 1
     bad = False
     known = None
+    full_catalog = None
     for pack_dir in pack_dirs:
         pack, problems, later = packs.load_pack(pack_dir, expected)
         greek_problems, notes = lint.lint_pack(pack_dir)
@@ -295,6 +296,7 @@ def cmd_validate(args) -> int:
             tag_problems, tag_notes = lint.lint_tags(pack)
             problems += tag_problems
             notes += tag_notes
+            notes += lint.hidden_questions(pack)
             if pack.chapters:
                 full = packs.load_all()
                 if pack.id not in {p.id for p in full.packs}:  # a pack outside the content folders
@@ -304,6 +306,12 @@ def cmd_validate(args) -> int:
                 ch_problems, ch_notes = lint.chapter_checks(pack, full)
                 problems += ch_problems
                 notes += ch_notes
+            if not args.quick:
+                if full_catalog is None:
+                    full_catalog = packs.load_all()
+                word_problems, word_notes = wordscan.lint_pack(pack, full_catalog)
+                problems += word_problems
+                notes = word_notes + notes
             print(f"{pack.id}: {len(pack.items)} item(s) loaded" + (f", {later} of a type built in a later phase" if later else "")
                   + (f", {len(pack.chapters)} chapter(s)" if pack.chapters else ""))
             if pack.manifest.visibility == "generated" and not args.quick:
@@ -328,6 +336,62 @@ def cmd_validate(args) -> int:
         bad = bad or bool(learner_files)
     print("Some problems need fixing." if bad else "Everything is valid.")
     return 1 if bad else 0
+
+
+def cmd_words(args) -> int:
+    """Tappable words the lookup cannot explain, per pack; --write maps the inflected ones to their
+    lemma (from the cached Wiktionary dump) in the pack's glossary.json."""
+    from greek_coach import lookup, packs, wordscan
+    from greek_coach.importer import enrich
+
+    target = Path(args.path).resolve()
+    if target.is_dir() and _is_learner_folder(target):
+        target = target / "generated"
+    if (target / "pack.json").exists():
+        pack_dirs = [target]
+    elif target.is_dir():
+        pack_dirs = sorted(p for p in target.iterdir() if (p / "pack.json").exists())
+    else:
+        pack_dirs = []
+    if not pack_dirs:
+        print(f"No pack found at {target} (a pack is a folder with a pack.json).")
+        return 1
+    forms_index = enrich.load_forms_index()
+    if forms_index is None:
+        print("The Wiktionary dump is not downloaded (.cache/greek-coach/), so inflected forms cannot be mapped; "
+              "only the counts are shown.")
+    main_index = enrich.load_index() if args.json and forms_index else None
+    leftovers_all: list[dict] = []
+    for pack_dir in pack_dirs:
+        catalog = packs.load_all()
+        pack = next((p for p in catalog.packs if p.path.resolve() == pack_dir.resolve()), None)
+        if pack is None:
+            pack, problems, _ = packs.load_pack(pack_dir)
+            if pack is None:
+                print(f"{pack_dir.name}: could not be loaded: {'; '.join(problems)}")
+                continue
+            catalog.packs.append(pack)
+            catalog.items.update({f"{pack.id}/{i}": (pack, it) for i, it in pack.items.items()})
+        index = lookup.Index(wordscan.visible_to(catalog, pack.manifest.visibility))
+        gaps = wordscan.scan([pack], index)
+        print(f"{pack.id}: {gaps.total} tappable word(s), {len(gaps.unexplained)} find nothing "
+              f"({gaps.share:.1%}); {len(gaps.unexplained) - len(gaps.without_reason)} of them left on purpose")
+        if forms_index is None:
+            continue
+        forms, leftovers = wordscan.fill_forms(pack, index, forms_index, main_index)
+        print(f"  {len(forms)} are forms of a word the lookup knows" + ("" if args.write else " (use --write to add them)"))
+        if args.write and forms:
+            new = wordscan.write_forms(pack_dir, forms)
+            print(f"  wrote {new} new form(s) to {pack.id}/glossary.json")
+        print(f"  {len(leftovers)} still need a meaning: "
+              + ", ".join(x["word"] for x in leftovers[:args.show]) + (" …" if len(leftovers) > args.show else ""))
+        for x in leftovers:
+            x["pack"] = pack.id
+        leftovers_all += leftovers
+    if args.json:
+        Path(args.json).write_text(json.dumps(leftovers_all, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"wrote {len(leftovers_all)} leftover word(s) to {args.json}")
+    return 0
 
 
 def cmd_import(args) -> int:
@@ -545,8 +609,15 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("validate", help="check a content pack (or a learner folder) and explain any problems")
     p.add_argument("path", help="a pack folder, a folder of packs, or a learner folder (checks the coach files too)")
     p.add_argument("--notes", type=int, default=15, help="how many notes to print per pack (default 15)")
-    p.add_argument("--quick", action="store_true", help="skip the unfamiliar-words check")
+    p.add_argument("--quick", action="store_true", help="skip the unfamiliar-words and tap-a-word checks")
     p.set_defaults(func=cmd_validate)
+
+    p = sub.add_parser("words", help="list the tappable words that find no meaning; --write maps inflected forms to their word")
+    p.add_argument("path", help="a pack folder, a folder of packs, or a learner folder")
+    p.add_argument("--write", action="store_true", help="add the forms Wiktionary maps to a known word to the pack's glossary.json")
+    p.add_argument("--json", default=None, help="write the words still without a meaning, with hints, to this file")
+    p.add_argument("--show", type=int, default=40, help="how many leftover words to print per pack (default 40)")
+    p.set_defaults(func=cmd_words)
 
     p = sub.add_parser("report", help="print the learner's progress as JSON, for the coach")
     p.add_argument("--since", default="14d", help="the window, e.g. 14d or 3w (default 14d)")

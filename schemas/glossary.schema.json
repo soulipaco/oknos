@@ -1,0 +1,148 @@
+{
+  "$defs": {
+    "GlossWord": {
+      "additionalProperties": false,
+      "description": "A word the lookup explains without it being a practice item (same shape as function_words.json).",
+      "properties": {
+        "el": {
+          "minLength": 1,
+          "title": "El",
+          "type": "string"
+        },
+        "forms": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Forms",
+          "type": "array"
+        },
+        "pos": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pos"
+        },
+        "en": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "En"
+        },
+        "tr": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tr"
+        }
+      },
+      "required": [
+        "el"
+      ],
+      "title": "GlossWord",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "A pack's glossary.json: what tapping a word finds when no item has it (phase 5d).\n\nforms: an inflected form -> its lemma(s), which the lookup then explains (\"form of ...\").\nwords: meanings for words that are not practice items.\nnames: a name -> \"person\" or \"place\", or the base name it is a form of (Νάξο -> Νάξος).\nleave: words left unexplained on purpose, with the reason (validate lists them).",
+  "properties": {
+    "source": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source"
+    },
+    "licence": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Licence"
+    },
+    "note": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Note"
+    },
+    "forms": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        ]
+      },
+      "default": {},
+      "title": "Forms",
+      "type": "object"
+    },
+    "words": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/GlossWord"
+      },
+      "title": "Words",
+      "type": "array"
+    },
+    "names": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "default": {},
+      "title": "Names",
+      "type": "object"
+    },
+    "leave": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "default": {},
+      "title": "Leave",
+      "type": "object"
+    }
+  },
+  "title": "Glossary",
+  "type": "object"
+}

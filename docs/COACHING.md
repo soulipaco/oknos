@@ -80,6 +80,7 @@ The fields you will use most:
 | `coverage` | Per exam task: items available, tried and unseen at the exam's level; untagged general practice; and for B1, which `beyond_a2` points have been practised. |
 | `plan_inputs`, `plan_progress` | The plan's facts: candidate sessions from `watch.json` with weeks left and hours, the real pace against the budget. Also the current plan's planned against done (§11). |
 | `mocks` | Mock exams defined and taken, with points per section and `would_pass` (§12). |
+| `tap_a_word` | How many of the Greek words on screen find no meaning when tapped: `unexplained` of `total`, `by_pack`, and a `sample`. Anything above zero in your own pack (`learner/generated`) is yours to fix: run `uv run greek-coach words learner --write` (it maps inflected forms to their word), then give each word still listed a row in your pack's `glossary.json` (`words`: `el`, `pos`, `en`, `tr`, `forms`; SPEC §4.9). |
 | `chapters` | Which stages of the active curriculum have a chapter, and when each was opened and finished. A stage with an unread chapter gets none of its new items in daily sessions: if the current stage's chapter is unread, say so in your note ("read Lesson 3 first"). New chapters are the `write-chapter` skill. |
 
 ## 4. Where to write
@@ -130,6 +131,7 @@ The full schema is in `schemas/item.schema.json`, and every type has a worked ex
 - `topics` (free tags; use the profile's interests);
 - `exam_task` (see below);
 - `rubric` (`{el, en, tr}`, in the exam's own Greek wording);
+- `ask` (`{en, tr}`): the question or situation in the learner's language, always shown. Use it only when the task really is "what do you say here?" or a question about a word. Otherwise **the Greek must carry the question**: a true/false statement is a claim in Greek, not a sign whose claim is only in the translation (`validate` notes it);
 - `stimulus` (`text`, or `tts` for listening);
 - `explain` (`{en, tr}`, one or two sentences);
 - `status`.

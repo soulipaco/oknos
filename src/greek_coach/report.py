@@ -16,7 +16,7 @@ from typing import Any
 from greek_coach import coachfiles, curriculum, db, mock, paths, plan, readiness, scheduler, session
 from greek_coach.packs import Catalog, FormItem, SELECTION_TASKS, SpeakItem, VocabItem, WriteItem
 
-REPORT_VERSION = 3  # 3: chapters (phase 5c)
+REPORT_VERSION = 4  # 3: chapters (phase 5c); 4: tap_a_word (phase 5d)
 PROFILE_QUESTIONS = ("ui_lang", "minutes", "goal", "target_exam", "interests")
 
 
@@ -322,6 +322,22 @@ def mocks_state(conn: sqlite3.Connection, catalog: Catalog) -> dict:
             "reserved_items": len(mock.reserved_keys(conn))}
 
 
+def tap_a_word(catalog: Catalog) -> dict:
+    """How many of the Greek words on screen find a meaning when tapped (phase 5d). The coach
+    fills the gaps: `greek-coach words <pack> --write`, then glossary entries for the rest."""
+    from greek_coach import lookup, wordscan
+
+    gaps = wordscan.scan(catalog.packs, lookup.Index(catalog))
+    by_pack: dict[str, int] = {}
+    for place, words in gaps.missing.items():
+        n = len([w for w in words if w not in gaps.left])
+        if n:
+            by_pack[place.split("/")[0]] = by_pack.get(place.split("/")[0], 0) + n
+    return {"total": gaps.total, "unexplained": len(gaps.unexplained), "share": round(gaps.share, 4),
+            "left_on_purpose": len(gaps.unexplained) - len(gaps.without_reason), "by_pack": by_pack,
+            "sample": sorted(gaps.without_reason)[:30]}
+
+
 def build(conn: sqlite3.Connection, catalog: Catalog, days: int = 14, with_words: bool = False) -> dict:
     today = db.today()
     profile = _read_profile()
@@ -356,6 +372,7 @@ def build(conn: sqlite3.Connection, catalog: Catalog, days: int = 14, with_words
         "plan_inputs": plan.inputs(conn, profile, ready),
         "plan_progress": plan.progress(conn, catalog),
         "mocks": mocks_state(conn, catalog),
+        "tap_a_word": tap_a_word(catalog),
         "content": {"packs": [{"id": p.id, "visibility": p.manifest.visibility, "items": len(p.items)} for p in catalog.packs],
                     "problems": catalog.problems[:20]},
     }

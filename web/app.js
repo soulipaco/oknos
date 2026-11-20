@@ -156,6 +156,8 @@ async function lookupWord(target) {
         h("span", { class: "el", lang: "el" }, e.el), speakButton(e.say || e.el, true),
         h("span", { class: "pop-meaning" }, meaningText(e.meaning, e.meaning_lang))))
     : [h("p", { class: "muted" }, t("lookup_none", { word }))];
+  const formOf = res.entries[0]?.form_of || null;  // a verb form, or a form a glossary maps to its word
+  if (formOf) rows.unshift(h("p", { class: "muted small form-of" }, t("lookup_form", { word, lemma: formOf })));
   if (res.match === "stem") rows.push(h("p", { class: "muted small" }, t("lookup_similar")));
   if (res.match === "phrase") rows.push(h("p", { class: "muted small" }, t("lookup_phrase")));
   box.replaceChildren(h("div", { class: "pop-head" }, h("strong", { lang: "el" }, word),
@@ -708,9 +710,14 @@ function optionList(options, greek, onPick) {
     }, h("span", { class: "key", "aria-hidden": "true" }, String(i + 1)), text)));
 }
 
-function rubricLine(rubric) {
-  if (!rubric?.el) return null;
-  return h("div", { class: "rubric" }, ...translatable(greekText(rubric.el, { cls: "el" }), tr(rubric), { rubric: true }));
+function rubricLine(rubric, ask) {
+  // The rubric (Greek, translatable), then the item's question or situation in the UI language,
+  // always visible: the question is never only in the hidden translation.
+  const askText = ask ? tr(ask) : null;
+  return [
+    rubric?.el ? h("div", { class: "rubric" }, ...translatable(greekText(rubric.el, { cls: "el" }), tr(rubric), { rubric: true })) : null,
+    askText ? h("p", { class: "ask" }, askText) : null,
+  ];
 }
 
 function checkRow(onCheck) {
@@ -827,7 +834,7 @@ RENDERERS.form = (card) => {
   }
   const [row, btn] = checkRow(send);
   btn.disabled = false;
-  const blocks = [rubricLine(card.rubric), cueLine, ...translatable(sentence, tr(card.translation))];
+  const blocks = [rubricLine(card.rubric, card.ask), cueLine, ...translatable(sentence, tr(card.translation))];
   const gapWithOptions = Object.keys(card.options || {});
   if (gapWithOptions.length) {
     const gap = gapWithOptions[0];
@@ -847,7 +854,7 @@ RENDERERS.mcq = (card) => {
   const prompt = greekText(card.prompt.el, { tag: "p", cls: "prompt-greek" });
   const question = h("div", { class: "question" }, ...translatable(prompt, tr(card.prompt)));
   const opts = optionList(card.options, true, (i) => submit({ choice: i }, { pickedIndex: i }));
-  return h("article", { class: "card" }, rubricLine(card.rubric), stimulusBlock(card), question, opts, h("div", { class: "slot" }));
+  return h("article", { class: "card" }, rubricLine(card.rubric, card.ask), stimulusBlock(card), question, opts, h("div", { class: "slot" }));
 };
 
 RENDERERS.true_false = (card) => {
@@ -866,7 +873,7 @@ RENDERERS.true_false = (card) => {
       h("div", { class: "tf" }, btn(true, "ΣΩΣΤΟ", "true"), btn(false, "ΛΑΘΟΣ", "false")));
     return line;
   });
-  return h("article", { class: "card" }, rubricLine(card.rubric), stimulusBlock(card),
+  return h("article", { class: "card" }, rubricLine(card.rubric, card.ask), stimulusBlock(card),
     h("div", { class: "statements" }, statements), row, h("div", { class: "slot" }));
 };
 
@@ -904,7 +911,7 @@ RENDERERS.match = (card) => {
     });
   };
   paint();
-  return h("article", { class: "card" }, rubricLine(card.rubric), stimulusBlock(card),
+  return h("article", { class: "card" }, rubricLine(card.rubric, card.ask), stimulusBlock(card),
     card.prompt?.el ? greekText(card.prompt.el, { tag: "p", cls: "prompt-greek" }) : null,
     h("div", { class: "match" }, h("div", { class: "col" }, leftEls), h("div", { class: "col" }, rightEls)),
     row, h("div", { class: "slot" }));
@@ -954,7 +961,7 @@ RENDERERS.gap_bank = (card) => {
   };
   active = Object.keys(gaps)[0];
   paint();
-  return h("article", { class: "card" }, rubricLine(card.rubric), listenBlock(card),
+  return h("article", { class: "card" }, rubricLine(card.rubric, card.ask), listenBlock(card),
     ...translatable(text, tr(card.translation)), h("div", { class: "bank" }, chips), row, h("div", { class: "slot" }));
 };
 
@@ -979,7 +986,7 @@ RENDERERS.categorise = (card) => {
       });
     });
   };
-  return h("article", { class: "card" }, rubricLine(card.rubric), stimulusBlock(card),
+  return h("article", { class: "card" }, rubricLine(card.rubric, card.ask), stimulusBlock(card),
     card.prompt?.el ? greekText(card.prompt.el, { tag: "p", cls: "prompt-greek" }) : null,
     h("div", { class: "cat-list" }, rows), row, h("div", { class: "slot" }));
 };
@@ -1020,7 +1027,7 @@ RENDERERS.table_fill = (card) => {
     boards.forEach(b => { b.hidden = true; });
   };
   if (boards[0]) boards[0].hidden = false;
-  return h("article", { class: "card" }, rubricLine(card.rubric), stimulusBlock(card),
+  return h("article", { class: "card" }, rubricLine(card.rubric, card.ask), stimulusBlock(card),
     card.prompt?.el ? greekText(card.prompt.el, { tag: "p", cls: "prompt-greek" }) : null,
     h("div", { class: "table-wrap" }, h("table", { class: "fill-table" }, h("thead", {}, head), h("tbody", {}, body))),
     h("p", { class: "muted small" }, t("table_hint")),
@@ -1067,7 +1074,7 @@ RENDERERS.write = (card) => {
     ? h("div", { class: "must" }, h("p", { class: "small" }, t("write_include")),
         h("ul", {}, card.must_include.map(m => h("li", {}, tr(m) || m.el || ""))))
     : null;
-  return h("article", { class: "card write" }, rubricLine(card.rubric), openTaskPrompt(card), checklist,
+  return h("article", { class: "card write" }, rubricLine(card.rubric, card.ask), openTaskPrompt(card), checklist,
     h("div", { class: "typed-wrap" }, input), counter, board,
     h("label", { class: "small muted convert" }, convert, t("write_convert")),
     h("div", { class: "actions check-row" }, save, skipButton()), h("div", { class: "slot" }));
@@ -1130,7 +1137,7 @@ RENDERERS.speak = (card) => {
     ? h("div", { class: "useful" }, h("p", { class: "small" }, t("speak_useful")),
         h("ul", {}, card.useful.map(u => h("li", {}, greekText(u, { cls: "el" })))))
     : null;
-  return h("article", { class: "card speak-card" }, rubricLine(card.rubric), openTaskPrompt(card), useful, note,
+  return h("article", { class: "card speak-card" }, rubricLine(card.rubric, card.ask), openTaskPrompt(card), useful, note,
     h("div", { class: "actions" }, recordBtn, useBtn), player,
     h("div", { class: "actions check-row" }, aloud, skipButton()), h("div", { class: "slot" }));
 };

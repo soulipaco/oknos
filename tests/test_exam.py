@@ -470,7 +470,7 @@ def test_report_has_the_exam_fields(learner, catalog):
     conn = db.open_db()
     packs.sync_items(conn, catalog)
     r = report.build(conn, catalog)
-    assert r["report_version"] == 3
+    assert r["report_version"] == 4
     assert set(r["readiness"]) == {"a2ltr", "b1-keg"} and r["readiness_rules"]["first_attempts_only"]
     assert {t["id"] for t in r["coverage"]["b1-keg"]["tasks"]} == exams.load_blueprints()["b1-keg"].task_ids()
     assert r["plan_inputs"]["candidates"] == [] and r["plan_progress"] is None

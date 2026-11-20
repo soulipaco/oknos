@@ -132,3 +132,66 @@ def verb_forms(index: dict, lemma: str, person: str, tense: str) -> set[str]:
             continue
         out.add(f"θα {form}" if tense == "future" else form)
     return out
+
+
+FORMS_INDEX = CACHE_DIR / "kaikki-el-forms.json"
+FORMS_INDEX_VERSION = 1
+_SKIP_FORM_TAGS = {"romanization", "table-tags", "inflection-template", "class", "transliteration"}
+
+
+def build_forms_index(dump: Path = DUMP, out: Path = FORMS_INDEX) -> dict:
+    """Stream the dump once; map every inflected form (folded) to its lemmas and their part of speech.
+
+    From two places: non-lemma entries that say what they are a form of (απαντήσεις: form of
+    απάντηση), and the declension and conjugation tables of the lemmas themselves.
+    """
+    lemma_of: dict[str, list[list[str]]] = {}
+
+    def add(form: str, lemma: str, pos: str) -> None:
+        key = greek.fold(form)
+        if greek.fold(lemma) == key:
+            return
+        rows = lemma_of.setdefault(key, [])
+        if [lemma, pos] not in rows:
+            rows.append([lemma, pos])
+
+    with dump.open(encoding="utf-8") as f:
+        for line in f:
+            entry = json.loads(line)
+            word = greek.nfc(entry.get("word", ""))
+            pos = entry.get("pos") or ""
+            if not word or not greek.has_greek(word):
+                continue
+            for sense in entry.get("senses", []):
+                for ref in sense.get("form_of", []) + sense.get("alt_of", []):
+                    lemma = greek.nfc(ref.get("word") or "")
+                    if lemma and greek.has_greek(lemma) and " " not in lemma:
+                        add(word, lemma, pos)
+            for fm in entry.get("forms", []):
+                form = greek.nfc(fm.get("form") or "")
+                if (not form or " " in form or "-" in form or not greek.has_greek(form)
+                        or set(fm.get("tags", [])) & _SKIP_FORM_TAGS):
+                    continue
+                add(form, word, pos)
+    index = {"version": FORMS_INDEX_VERSION, "source": KAIKKI_URL, "licence": "CC-BY-SA-4.0 (Wiktionary)",
+             "lemma_of": lemma_of}
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(index, ensure_ascii=False), encoding="utf-8")
+    return index
+
+
+def load_forms_index() -> dict | None:
+    """The form -> lemma index, built from the dump on first use. None if the dump was never downloaded."""
+    if FORMS_INDEX.is_file():
+        index = json.loads(FORMS_INDEX.read_text(encoding="utf-8"))
+        if index.get("version") == FORMS_INDEX_VERSION:
+            return index
+    if DUMP.is_file():
+        return build_forms_index()
+    return None
+
+
+def lemmas_of(forms_index: dict, word: str) -> list[tuple[str, str]]:
+    """(lemma, part of speech) pairs Wiktionary gives for a form; a lemma that is the word itself is left out."""
+    return [(lemma, pos) for lemma, pos in forms_index["lemma_of"].get(greek.fold(word), [])
+            if greek.fold(lemma) != greek.fold(word)]

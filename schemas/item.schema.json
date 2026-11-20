@@ -61,6 +61,17 @@
           ],
           "default": null
         },
+        "ask": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
         "stimulus": {
           "anyOf": [
             {
@@ -336,6 +347,17 @@
           ],
           "default": null
         },
+        "ask": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
         "stimulus": {
           "anyOf": [
             {
@@ -521,6 +543,17 @@
           ],
           "default": null
         },
+        "ask": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
         "stimulus": {
           "anyOf": [
             {
@@ -665,6 +698,17 @@
           "type": "array"
         },
         "rubric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "ask": {
           "anyOf": [
             {
               "$ref": "#/$defs/Text"
@@ -832,6 +876,17 @@
           ],
           "default": null
         },
+        "ask": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
         "stimulus": {
           "anyOf": [
             {
@@ -962,6 +1017,17 @@
           "type": "array"
         },
         "rubric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "ask": {
           "anyOf": [
             {
               "$ref": "#/$defs/Text"
@@ -1247,6 +1313,17 @@
           ],
           "default": null
         },
+        "ask": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
         "stimulus": {
           "anyOf": [
             {
@@ -1489,6 +1566,17 @@
           ],
           "default": null
         },
+        "ask": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
         "stimulus": {
           "anyOf": [
             {
@@ -1608,6 +1696,17 @@
           "type": "array"
         },
         "rubric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "ask": {
           "anyOf": [
             {
               "$ref": "#/$defs/Text"
@@ -1823,6 +1922,17 @@
           "type": "array"
         },
         "rubric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Text"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "ask": {
           "anyOf": [
             {
               "$ref": "#/$defs/Text"
