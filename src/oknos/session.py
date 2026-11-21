@@ -939,7 +939,10 @@ def verb_table(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str) -> dict
     for v in out:
         v["open"] = any(f["open"] for f in v["forms"])
         v["known"] = sum(1 for f in v["forms"] if f["status"] in ("secure", "known"))
-    return {"verbs": out}
+    # the lessons the verbs are grouped under: the screen lists them lesson by lesson
+    stages = ([{"index": i, "id": st.id, "title": st.title.model_dump()} for i, st in enumerate(prog.curriculum.stages)]
+              if prog else [])
+    return {"verbs": out, "stages": stages, "current": prog.current if prog else None}
 
 
 def stage_detail(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage_id: str) -> dict | None:

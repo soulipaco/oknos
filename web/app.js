@@ -1586,10 +1586,12 @@ async function renderBook() {
   try { cur = await api("/api/curriculum"); } catch { return showError(); }
   if (!cur.curriculum) return go("home", null, { replace: true });
   const rows = cur.stages.map((st, i) => {
-    const marks = h("span", { class: "map-marks small" },
-      st.core && st.state !== "locked" ? h("span", { class: "mark-chip" }, `${Math.round(st.share * 100)}%`) : null,
-      st.passed_check ? h("span", { class: "mark-chip on" }, `✓ ${t("map_checked")}`) : null,
-      h("span", { class: `mark-chip state-${st.state}` }, t(`map_${st.state}`)));
+    // The ring and the rope already say where a lesson stands; one quiet line adds the number.
+    const shown = st.core && st.state !== "locked";
+    const marks = shown || st.passed_check ? h("span", { class: "muted small book-meta" },
+      shown ? `${Math.round(st.share * 100)}%` : null,
+      shown && st.passed_check ? " · " : null,
+      st.passed_check ? `✓ ${t("map_checked")}` : null) : null;
     const read = st.chapter
       ? navLink("lesson", st.chapter.read ? `✓ ${t("ch_reread_short")}` : [icon("book"), t("ch_read_short", { minutes: st.chapter.minutes })],
           st.id, `book-read ${st.chapter.read ? "done" : ""}`)
@@ -1754,8 +1756,29 @@ async function renderVerbs() {
         h("span", { class: "muted small" }, v.open ? t("v_known", { n: v.known, total: v.forms.length }) : t("w_locked"))),
       h("div", { class: "table-wrap" }, table), practise);
   });
+  // Lesson by lesson: the lessons reached come first, each under its name; the verbs of later
+  // lessons wait in one folded group, so the page is not a long list of greyed-out rows.
+  const stages = data.stages || [];
+  const current = data.current ?? -1;
+  const groups = new Map();
+  data.verbs.forEach((v, i) => {
+    const key = v.first_stage < stages.length ? v.first_stage : -1;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(rows[i]);
+  });
+  const reached = [], later = [];
+  for (const [idx, list] of groups) {
+    const st = stages[idx];
+    const head = h("h2", { class: "verb-group" }, st ? t("v_lesson", { n: idx + 1, title: tr(st.title) }) : t("v_group_none"),
+      h("span", { class: "muted small" }, ` · ${list.length}`));
+    (idx >= 0 && idx > current ? later : reached).push(head, ...list);
+  }
+  const laterCount = data.verbs.filter(v => v.first_stage < stages.length && v.first_stage > current).length;
+  const laterFold = later.length ? h("details", { class: "verb-later" },
+    h("summary", {}, t("v_group_later", { n: laterCount })), later) : null;
   app.replaceChildren(...appBar("verbs"),
-    h("section", { class: "summary" }, h("h1", {}, t("nav_verbs")), h("p", { class: "muted small" }, t("v_line")), rows));
+    h("section", { class: "summary verbs-page" }, h("h1", {}, t("nav_verbs")), h("p", { class: "muted small" }, t("v_line")),
+      reached, laterFold));
 }
 
 // ---------- the chapter reader: read first, then practise (phase 5c) ----------

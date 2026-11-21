@@ -382,5 +382,8 @@
   "summary_rope_line": "{done} of {total} cards today",
   "nothing_choose": "Nothing of this kind yet in the lessons you have reached. Try another kind, or come back after the next lesson.",
   "nothing_back_practise": "Choose something else",
-  "nothing_back_home": "Back home"
+  "nothing_back_home": "Back home",
+  "v_lesson": "Lesson {n}: {title}",
+  "v_group_none": "Not in a lesson yet",
+  "v_group_later": "Later lessons: {n} verbs"
 }

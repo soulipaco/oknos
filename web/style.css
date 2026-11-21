@@ -667,3 +667,8 @@ article.card:focus { outline: none; }
 .done-day .done-head h1 { margin: 0 0 6px; }
 .done-day .done-head .line { margin: 0; }
 .today-rope { display: grid; gap: 2px; margin: 4px 0 16px; padding: 12px 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.book-meta { margin-top: -2px; }
+.verbs-page .verb-group { font-size: 15px; margin: 22px 0 4px; color: var(--ink); }
+.verbs-page .verb-group:first-of-type { margin-top: 14px; }
+.verb-later { margin-top: 22px; border-top: 1px solid var(--line); padding-top: 10px; }
+.verb-later > summary { cursor: pointer; color: var(--muted); font-weight: 600; padding: 6px 0; }

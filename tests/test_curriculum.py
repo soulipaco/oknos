@@ -125,9 +125,13 @@ def test_word_and_verb_lists(learner, client):
     assert by_key["open-alphabet/l-alfa"]["open"] and by_key["open-alphabet/l-alfa"]["status"] == "new"
     assert by_key["open-shared-words-tr/v-kafes"]["stage"] == "reading"
     assert not any(w["open"] for w in words["words"] if w["stage"] == "b1-bridge")
-    verbs = client.get("/api/verbs").json()["verbs"]
+    vdata = client.get("/api/verbs").json()
+    verbs = vdata["verbs"]
     eimai = next(v for v in verbs if v["lemma"] == "είμαι")
     assert not eimai["open"] and eimai["forms"]  # είμαι comes in the second stage
+    # the screen groups verbs by the lesson they first appear in, and folds the lessons not reached
+    assert vdata["current"] == 0 and vdata["stages"][eimai["first_stage"]]["id"] == "first-words"
+    assert vdata["stages"][0]["title"]["en"]
     stage = client.get("/api/curriculum/stages/first-words").json()
     assert stage["state"] == "locked" and stage["forms_list"] and stage["can_check"]
     assert client.get("/api/curriculum/stages/nope").status_code == 404

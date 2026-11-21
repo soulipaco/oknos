@@ -382,5 +382,8 @@
   "summary_rope_line": "Bugün {total} karttan {done} tanesi",
   "nothing_choose": "Ulaştığın derslerde bu türden henüz bir şey yok. Başka bir tür seç ya da bir sonraki dersten sonra tekrar gel.",
   "nothing_back_practise": "Başka bir şey seç",
-  "nothing_back_home": "Ana sayfaya dön"
+  "nothing_back_home": "Ana sayfaya dön",
+  "v_lesson": "Ders {n}: {title}",
+  "v_group_none": "Henüz bir derste değil",
+  "v_group_later": "Sonraki dersler: {n} fiil"
 }
