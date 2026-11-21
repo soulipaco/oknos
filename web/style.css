@@ -98,12 +98,7 @@ button:disabled { cursor: default; }
   min-height: 40px;
 }
 .wordmark { font-weight: 600; letter-spacing: .02em; display: flex; align-items: center; gap: 8px; }
-.wordmark .alpha {
-  display: inline-grid; place-items: center;
-  width: 28px; height: 28px; border-radius: 8px;
-  background: var(--accent); color: var(--accent-ink);
-  font-family: var(--font-greek); font-size: 18px; line-height: 1;
-}
+.wordmark .mark { width: 28px; height: 28px; display: block; }
 
 .lang-switch { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; background: var(--surface); }
 .lang-switch button {

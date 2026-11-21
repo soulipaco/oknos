@@ -160,6 +160,7 @@ On the roadmap (2026-11-20, `docs/prompts/`):
 - **Before the repo is made public** (a separate decision):
   - phase 6 step 5, the public-repo check, must pass;
   - the README's `<owner>` placeholder gets the real account;
+  - upload `docs/brand/social-preview.png` in the repo's Settings → General → Social preview (GitHub shows that section only for public repositories);
   - every commit so far carries the maintainer's personal e-mail; switch to the GitHub no-reply address, and decide whether to rewrite the old commits;
   - three old revisions of the docs still hold the maintainer's Windows user name in a path (fixed in the current files); rewriting that history needs the maintainer's yes.
 
@@ -188,6 +189,8 @@ The canonical copy of each skill is in `.agents/skills/<name>/SKILL.md`. `.claud
 - `write-chapter`: "write the chapters for lessons 10–15", "make the outline". The chapters read before each stage's practice: an outline, golden chapters, Sonnet drafts, Opus review. See `.agents/skills/write-chapter/SKILL.md` and `docs/LESSONS.md`.
 
 ## Commands
+
+The full list, with how the code is laid out, is in `docs/DEVELOPING.md`. The README is for learners and visitors; its pictures come from `scripts/make_brand.py` and from a demo clone (`docs/DEVELOPING.md`, "The README's screenshots").
 
 - `uv run oknos start`: runs the app in the background on `127.0.0.1:8642` (or the next free port) and opens the browser.
 - `uv run oknos stop`: stops it.

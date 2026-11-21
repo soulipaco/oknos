@@ -390,7 +390,8 @@ function langSwitch() {
 }
 
 function wordmark() {
-  return h("div", { class: "wordmark" }, h("span", { class: "alpha", lang: "el" }, "α"), t("app_name"));
+  return h("div", { class: "wordmark" },
+    h("img", { class: "mark", src: "favicon.svg", alt: "", width: "28", height: "28" }), t("app_name"));
 }
 
 function areaName(area) {

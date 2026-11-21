@@ -178,10 +178,162 @@ def main():
           'stroke-linecap="square"/></svg>\n')
     (ROOT / "web" / "favicon.svg").write_text(svg("0 0 128 128", icon, "Oknos"), encoding="utf-8", newline="\n")
     print("wrote web/favicon.svg")
+    for t in ("light", "dark"):
+        diagram("how-it-works", t, how_it_works(t))
+        diagram("a-day", t, a_day(t))
+        diagram("what-you-learn", t, what_you_learn(t))
     social_preview()
 
 
-TAGLINE = "Learn Greek the lazy way. Your agent does the rest."
+# ---------- the README's diagrams (docs/img/) ----------
+
+UI_FONT = "-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+MUTED = {"light": "#627079", "dark": "#a1a9ae"}
+LINE = {"light": "#e3dccd", "dark": "#2e373d"}
+
+
+def esc(s: str) -> str:
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def label(x, y, s, t, size=15, weight=400, anchor="middle", colour=None, mono=False):
+    family = "ui-monospace, Consolas, monospace" if mono else UI_FONT
+    return (f'<text x="{num(x)}" y="{num(y)}" font-family="{family}" font-size="{size}" font-weight="{weight}" '
+            f'text-anchor="{anchor}" fill="{colour or INK[t]}">{esc(s)}</text>')
+
+
+def box(x, y, w, h, t, fill=None):
+    return (f'<rect x="{num(x)}" y="{num(y)}" width="{num(w)}" height="{num(h)}" rx="14" '
+            f'fill="{fill or LINEN[t]}" stroke="{LINE[t]}" stroke-width="1.5"/>')
+
+
+def place(x, y, size, view_box, body):
+    """Another drawing (the ring, the donkey) placed at x, y in a size×size square."""
+    return f'<svg x="{num(x)}" y="{num(y)}" width="{num(size)}" height="{num(size)}" viewBox="{view_box}">{body}</svg>'
+
+
+def arrow(x1, y1, x2, y2, t, both=False):
+    m = f'url(#arrow-{t})'
+    start = f' marker-start="{m}"' if both else ""
+    return (f'<line x1="{num(x1)}" y1="{num(y1)}" x2="{num(x2)}" y2="{num(y2)}" stroke="{AEGEAN[t]}" stroke-width="2"'
+            f' marker-end="{m}"{start}/>')
+
+
+def diagram(name, t, parts):
+    w, h, body, title = parts
+    defs = (f'<defs><marker id="arrow-{t}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" '
+            f'orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="{AEGEAN[t]}"/></marker></defs>')
+    top = 40  # the README's own heading names the diagram, so the drawing starts below where a title was
+    panel = f'<rect y="{top}" width="{w}" height="{h - top}" rx="20" fill="{PAPER[t]}"/>'
+    folder = ROOT / "docs" / "img"
+    folder.mkdir(parents=True, exist_ok=True)
+    (folder / f"{name}-{t}.svg").write_text(svg(f"0 {top} {w} {h - top}", defs + panel + body, title), encoding="utf-8", newline="\n")
+    print(f"wrote docs/img/{name}-{t}.svg")
+
+
+def person(x, y, t):
+    return (f'<g fill="none" stroke="{INK[t]}" stroke-width="3" stroke-linecap="round">'
+            f'<circle cx="{num(x)}" cy="{num(y)}" r="13"/>'
+            f'<path d="M{num(x - 24)} {num(y + 46)} C{num(x - 22)} {num(y + 22)} {num(x + 22)} {num(y + 22)} {num(x + 24)} {num(y + 46)}"/></g>')
+
+
+def how_it_works(t):
+    W, H = 900, 420
+    b = []
+    cols = {"you": 140, "app": 450, "agent": 760}
+    for x in cols.values():
+        b.append(box(x - 100, 80, 200, 160, t))
+    b.append(person(cols["you"], 112, t))
+    b.append(place(cols["app"] - 32, 96, 64, "0 0 100 100", ring_mark(AEGEAN[t], f"diag-ring-{t}")))
+    b.append(place(cols["agent"] - 34, 92, 68, "2 2 96 116", donkey(INK[t], "working")))
+    for key, title, line in (("you", "You", "a few minutes a day"),
+                             ("app", "The app", "in your browser"),
+                             ("agent", "Your agent", "Claude Code, Codex…")):
+        b.append(label(cols[key], 196, title, t, 17, 600))
+        b.append(label(cols[key], 218, line, t, 14, colour=MUTED[t]))
+    b.append(arrow(246, 150, 344, 150, t, both=True))
+    b.append(label(295, 136, "study", t, 13, colour=MUTED[t]))
+    b.append(label(295, 172, "no agent", t, 12, colour=MUTED[t]))
+    b.append(label(295, 187, "needed", t, 12, colour=MUTED[t]))
+    # the learner folder: what the app saves and what the agent reads and writes
+    b.append(box(320, 300, 560, 64, t, fill=PAPER[t]))
+    b.append(f'<rect x="320" y="300" width="560" height="64" rx="14" fill="none" stroke="{AEGEAN[t]}" stroke-width="1.5" stroke-dasharray="5 5"/>')
+    b.append(label(600, 328, "learner/   your progress, your writing, the coach's files", t, 15, 600))
+    b.append(label(600, 350, "a folder on your computer", t, 13, colour=MUTED[t]))
+    b.append(arrow(450, 244, 450, 294, t, both=True))
+    b.append(label(438, 274, "saves your progress", t, 13, anchor="end", colour=MUTED[t]))
+    b.append(arrow(760, 244, 760, 294, t, both=True))
+    b.append(label(748, 266, "reads the report", t, 13, anchor="end", colour=MUTED[t]))
+    b.append(label(748, 284, "writes exercises, feedback, a plan", t, 13, anchor="end", colour=MUTED[t]))
+    b.append(label(40, 396, "Everything stays on your computer. No accounts, no cloud, no tracking.", t, 14, anchor="start",
+                   colour=MUTED[t]))
+    return W, H, "".join(b), "How Oknos works: you study in the app; your agent reads your progress and prepares what comes next"
+
+
+def a_day(t):
+    W, H = 900, 290
+    b = []
+    x0, x1, y = 90, 810, 130
+    b.append(rope(rope_line(x0, x1, y, a=3.2, n=24), 3, 1.4, AEGEAN[t], (x0 - 6, y - 10, x1 - x0 + 12, 20), f"day-rope-{t}"))
+    steps = (("Read the chapter", "a dialogue, grammar in", "Turkish or English"),
+             ("Today's session", "reviews, verbs, an exam", "task, new words"),
+             ("Tap any word", "every Greek word", "has a meaning"),
+             ("Once a week", "write an e-mail or", "record yourself"),
+             ("The donkey works", "marks your writing,", "prepares tomorrow"))
+    for i, (title, l1, l2) in enumerate(steps):
+        x = x0 + (x1 - x0) * i / (len(steps) - 1)
+        b.append(f'<circle cx="{num(x)}" cy="{y}" r="17" fill="{LINEN[t]}" stroke="{AEGEAN[t]}" stroke-width="2.5"/>')
+        b.append(label(x, y + 5.5, str(i + 1), t, 15, 700, colour=AEGEAN[t]))
+        b.append(label(x, y + 52, title, t, 15, 600))
+        b.append(label(x, y + 74, l1, t, 13, colour=MUTED[t]))
+        b.append(label(x, y + 92, l2, t, 13, colour=MUTED[t]))
+    b.append(place(x1 - 26, 58, 52, "2 2 96 116", donkey(INK[t], "working")))
+    b.append(label(40, 266, "You plait the rope. The donkey carries the load.", t, 14, anchor="start", colour=MUTED[t]))
+    return W, H, "".join(b), "A day with Oknos: read, practise, tap words; once a week write or speak; the agent marks and prepares tomorrow"
+
+
+def what_you_learn(t):
+    W, H = 900, 340
+    b = []
+    levels = (("A1", 7, "reading Greek, first sentences, verbs, shops, getting around"),
+              ("A2", 4, "the future, the past, daily life in Greece"),
+              ("B1", 1, "towards B1"))
+    x, y, step = 70, 110, 47
+    i = 0
+    for level, count, about in levels:
+        start = x + i * step
+        for _ in range(count):
+            cx = x + i * step
+            if i < 3:   # learned stages: the ring is closed
+                b.append(place(cx - 19, y - 19, 38, "0 0 100 100", ring_mark(AEGEAN[t], f"wyl-{t}-{i}", small=True)))
+            else:
+                b.append(f'<circle cx="{num(cx)}" cy="{y}" r="15" fill="none" stroke="{FAINT[t]}" stroke-width="3" '
+                         'stroke-dasharray="2 5" stroke-linecap="round"/>')
+            i += 1
+        end = x + (i - 1) * step
+        b.append(f'<path d="M{num(start - 12)} {y + 32} v8 H{num(end + 12)} v-8" fill="none" stroke="{LINE[t]}" stroke-width="2"/>')
+        b.append(label((start + end) / 2, y + 62, level, t, 15, 700, colour=AEGEAN[t]))
+    b.append(label(70, y + 92, "12 stages of an open course, each with a chapter to read first", t, 14, anchor="start"))
+    b.append(label(70, y + 112, "A stage's ring closes as you learn it.", t, 13, anchor="start", colour=MUTED[t]))
+    # the exams
+    ex = 650
+    b.append(arrow(x + 11 * step + 26, y, ex - 8, y - 24, t))
+    b.append(arrow(x + 11 * step + 26, y, ex - 8, y + 44, t))
+    b.append(box(ex, 62, 210, 52, t))
+    b.append(label(ex + 105, 84, "A2 + history", t, 15, 600))
+    b.append(label(ex + 105, 103, "for long-term residence", t, 12, colour=MUTED[t]))
+    b.append(box(ex, 128, 210, 52, t))
+    b.append(label(ex + 105, 150, "Ελληνομάθεια B1", t, 15, 600))
+    b.append(label(ex + 105, 169, "with a readiness score", t, 12, colour=MUTED[t]))
+    b.append(box(40, 250, 820, 64, t, fill=PAPER[t]))
+    b.append(f'<rect x="40" y="250" width="820" height="64" rx="14" fill="none" stroke="{AEGEAN[t]}" stroke-width="1.5" stroke-dasharray="5 5"/>')
+    b.append(label(64, 278, "+ your own coursebook", t, 15, 600, anchor="start"))
+    b.append(label(64, 299, "Import a book you own and its lessons become the course. It stays private, on your computer.", t, 13,
+                   anchor="start", colour=MUTED[t]))
+    return W, H, "".join(b), "What you learn: 12 stages from reading Greek to B1, aimed at the A2 + history and B1 exams"
+
+
+TAGLINE ="Learn Greek the lazy way. Your agent does the rest."
 SECOND_LINE = "You plait the rope. The donkey carries the load."
 
 

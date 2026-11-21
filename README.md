@@ -1,105 +1,112 @@
-# Oknos
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/brand/oknos-lockup-dark.svg">
+    <img src="docs/brand/oknos-lockup-light.svg" alt="Oknos" width="300">
+  </picture>
+</p>
 
-A local-first Greek learning companion that your coding agent installs, runs and personalises for you. It is for people living in Greece who need to pass a language certification exam and have struggled to stay interested in studying.
+<h3 align="center">Learn Greek the lazy way. Your agent does the rest.</h3>
+<p align="center"><em>You plait the rope. The donkey carries the load.</em></p>
 
-> **Status: the book (phase 5c).** Every lesson starts with a chapter you read (dialogue, grammar explained in Turkish or English, words), and its practice comes after it. The app runs a daily session on its own, tells you honestly whether you would pass today, and runs timed mock exams; your agent is the coach.
-> - **The app:**
->   - you move through a course in order, simple before hard: reading the alphabet first, then lesson by lesson (your own coursebook's lessons if you imported it), and a lesson opens when the one before it is learned, or when you pass its "test me" check;
->   - one button starts a session sized to your time: reviews, verbs, one exam-format task and new words from your current lesson;
->   - or choose yourself: words, verbs, reading, listening, writing, speaking or your mistakes, from any lesson you have reached; see all your words and verb tables;
->   - once a week the session includes a writing prompt or a speaking card in exam format;
->   - spaced repetition (SM-2), tap any Greek word for its meaning, flag an item that looks wrong;
->   - an on-screen Greek keyboard;
->   - honest numbers on the home screen, with no streaks or badges;
->   - **"would you pass today?"** per exam section, for Ελληνομάθεια B1 and for the A2 + history exam for long-term residence, each against its real pass rule. Where there is too little evidence it says so instead of guessing;
->   - **timed mock exams** in the real format, section by section, and a plan to the exam date with the next four weeks.
-> - **The coach** (open your agent and say one word):
->   - **"coach"**: how it is going, your 2–3 weakest areas, feedback on your writing, and next week's exercises already in the app;
->   - **"tutor"**: a short chat in Greek, a role-play or "correct this";
->   - **"today in class we did…"**, or a photo of a letter in `learner/inbox/`: practice built from it;
->   - **"any exam dates?"**: the official pages are checked and the next dates go on the home screen;
->   - **"make me a plan"**: a week-by-week plan to a real, announced session, which says plainly whether it is realistic and what to drop if you fall behind;
->   - **"give me a mock exam"**: a full mock in the exam's format, marked afterwards.
-> - **Content:** five open packs (including learning to read Greek, and B1 practice), plus your own material if you import it privately.
->
-> Next (optional): phase 6, a test on a stranger's machine (see `docs/prompts/`).
+**Oknos** is a Greek learning app for people who live in Greece and need a Greek certificate: the **A2 + history** exam for long-term residence or **Ελληνομάθεια B1**. It is for people who have tried to study before and stopped. It runs only on your own computer, and your coding agent (Claude Code, Codex or similar) installs it, runs it and coaches you.
+
+> **Türkçe:** Bu sayfayı Türkçe okumak için ajanına "README'yi Türkçeye çevir" demen yeterli. Uygulamanın kendisi Türkçe ve İngilizce.
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/img/home.png" alt="The home screen: one button for today's session, where you are in the course, and the coach's note"></td>
+    <td width="50%"><img src="docs/img/reader.png" alt="A chapter's dialogue; tapping a Greek word shows its meaning"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>One button a day: the session is sized to your time</sub></td>
+    <td align="center"><sub>Read first, then practise. Tap any word for its meaning</sub></td>
+  </tr>
+  <tr>
+    <td><img src="docs/img/book.png" alt="The book: twelve chapters, each read before its lesson's practice"></td>
+    <td><img src="docs/img/practise.png" alt="Choosing your own practice: words, verbs, reading, listening, writing, speaking"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>A book of short chapters, from the alphabet to B1</sub></td>
+    <td align="center"><sub>Or choose: words, verbs, reading, listening, writing, speaking</sub></td>
+  </tr>
+</table>
+
+## Why "Oknos"?
+
+<img src="docs/brand/donkey-working-light.svg" alt="" width="64" align="right">
+
+In a painting at Delphi described by Pausanias, **Oknos** (Ὄκνος, "sloth" or "hesitation") sits plaiting a rope while a donkey eats it as fast as he plaits it. That is what happens to the Greek you learn and never review. In this app the donkey is on your side: your agent carries the load, so the rope gets longer. More in [docs/brand](docs/brand/README.md).
+
+## How it works
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/how-it-works-dark.svg">
+  <img src="docs/img/how-it-works-light.svg" alt="You study in the app in your browser, with no agent needed. The app saves your progress in a folder on your computer. Your agent reads a report of it and writes exercises, feedback and a plan, which the app picks up. Everything stays on your computer.">
+</picture>
+
+- The app runs at `http://127.0.0.1:8642`, only on your computer. Your progress, mistakes and writing stay in a local folder. There are no accounts and nothing is uploaded.
+- You study in the app every day. The agent is not needed for that.
+- When you open your agent, it reads how you have been doing and acts as your coach. It makes new exercises around your weak spots and from your own life, marks your writing against the exam's criteria, and turns what you did in class, or a letter you received, into practice. If you agree, it can also prepare tomorrow's exercises every evening by itself.
+
+## A day with Oknos
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/a-day-dark.svg">
+  <img src="docs/img/a-day-light.svg" alt="1. Read the chapter. 2. Today's session. 3. Tap any word. 4. Once a week, write or speak. 5. The donkey (your agent) marks your writing and prepares tomorrow.">
+</picture>
+
+## What you learn
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/what-you-learn-dark.svg">
+  <img src="docs/img/what-you-learn-light.svg" alt="Twelve stages of an open course, from reading Greek through A1 and A2 to B1, aimed at the A2 + history and Ελληνομάθεια B1 exams. You can import your own coursebook privately.">
+</picture>
+
+- **An open course in 12 stages**, from the alphabet to B1. Each stage starts with a short chapter to read (a dialogue, grammar explained in Turkish or English, the words), and its practice opens after it.
+- **Exam practice in the real formats**, a timed **mock exam**, and an honest answer to **"would you pass today?"** for each part of each exam, against its real pass rule. Where there is too little evidence, it says so instead of guessing.
+- **Your own material**, if you have it. Import a coursebook you own, a word list or handouts, and they become your course. They stay private, on your computer.
+
+## Say it to your agent
+
+Open your agent in the Oknos folder and say:
+
+| You say | What happens |
+|---|---|
+| **"coach"** or "how am I doing?" | How it is going, your two or three weakest areas, feedback on your writing, and next week's exercises already in the app. |
+| **"tutor"** or "role-play the landlord" | A short conversation in Greek at your level, also from your phone. |
+| **"today in class we did…"** | Practice built from your lesson, or from a letter or photo you drop in `learner/inbox/`. |
+| **"mark my writing"** | Corrections and an exam score, shown in the app next to what you wrote. |
+| **"make me a plan"** | A week-by-week plan to a real exam date, which says plainly whether it is realistic. |
+| **"give me a mock exam"** | A full mock in the exam's format, timed, then marked. |
+| **"any exam dates?"** | The official pages are checked and the next dates go on the home screen. |
+| **"import my book"** | Your own material becomes a private course. |
 
 ## Get started
 
 1. Install an agent such as the Claude desktop app (Claude Code) or Codex, and sign in.
 2. In a new session, say: **"Download `https://github.com/<owner>/oknos` and set it up for me."**
-3. The agent installs what is needed, starts the app and puts a **Oknos** shortcut on your desktop.
+3. The agent installs what is needed, starts the app and puts an **Oknos** shortcut on your desktop.
 
 After that, double-click **Oknos** whenever you want to study. You don't need the agent open for that.
 
-If you already have the code, open the folder in your agent and say "set this up for me". The steps the agent follows are in `.agents/skills/setup/SKILL.md`.
+If you already have the code, open the folder in your agent and say "set this up for me". The steps the agent follows are in [`.agents/skills/setup/SKILL.md`](.agents/skills/setup/SKILL.md).
 
-To run it yourself from the repo folder:
+## Honest by design
 
-```
-uv run oknos start      # start the app in the background and open the browser (http://127.0.0.1:8642)
-uv run oknos stop       # stop it
-uv run oknos stop; uv run oknos start   # restart: needed after changes to code (src/, web/)
-uv run oknos reload     # take in new or edited content (packs, chapters, coach files) without a restart
-uv run oknos health     # check the install
-uv run pytest                 # run the tests
-```
+- No streaks, no badges, no points. The home screen shows what is due and where you are.
+- Readiness uses only your first try at each exam-format item, so repeating an exercise does not inflate it.
+- Everything the agent writes in Greek is checked before you see it, and anything that looks wrong can be flagged with one tap.
+- Local only: no accounts, no tracking, no cloud.
 
-## The idea
-
-- You study in a web app that runs only on your own computer, at `http://127.0.0.1:8642`.
-- Your progress, mistakes and writing stay in a local folder (`learner/`). Nothing is uploaded.
-- When you open the agent again, it reads how you have been doing and acts as your coach:
-  - it builds new exercises around your weak spots, from your own life (work, neighbourhood, Greek offices);
-  - it marks your writing against the exam's criteria and shows the corrections next to what you wrote;
-  - it turns what you covered in class, or a letter you received, into practice;
-  - it practises conversation with you, also from your phone;
-  - it can prepare tomorrow's exercises every day by itself, if you agree.
-
-  Everything the coach knows about the coaching is in `docs/COACHING.md` and `.agents/skills/`.
-- You can import your own material (a textbook you own, a word list, course handouts) as a private content pack that never leaves your machine. Ask the agent to "import my material", or see `docs/IMPORTING.md`.
+Status: early. Used every day by its maintainer on Windows; the macOS and Linux installs are written but untested.
 
 ## For developers
 
-You need [uv](https://docs.astral.sh/uv/). Nothing else, not even Python.
+Everything is in [docs/DEVELOPING.md](docs/DEVELOPING.md): the commands, how the code is laid out, and the documents behind it. Coding agents start from [AGENTS.md](AGENTS.md).
 
-```
-uv sync
-uv run oknos start          # background server + browser
-uv run oknos health         # install check, including a Greek round trip through SQLite
-uv run oknos stop
-uv run oknos start --foreground   # server in this terminal, for development
-uv run oknos import <mapping> --source <folder>   # private pack from your own material
-uv run oknos report                # the learner's record as JSON, which is what the coach reads
-uv run oknos validate learner      # check coach-written packs and files
-uv run oknos reload                # make the running app pick up new content
-uv run oknos raw greek-helper --unit lesson-05    # raw imported exercises, for rebuilding
-uv run --group speech oknos transcribe            # local transcription of speaking recordings
-uv run oknos schedule list|add|remove             # scheduled coach runs (asks the learner first)
-uv run python scripts/simulate.py        # simulated weeks of use: scheduler, home and readiness numbers
-OKNOS_MOCK_SPEED=30 uv run oknos start --foreground   # development: mock-exam time runs 30x faster
-uv run pytest
-```
+## Licences and thanks
 
-How the code is laid out:
-- `src/oknos/`: the FastAPI server, SQLite, pack loading, answer checking, the scheduler (`scheduler.py`), sessions, word lookup, the importer (`importer/`) and the CLI.
-  - The coach's side: `report.py` (what the coach reads), `coachfiles.py` (the files it writes), `lint.py` (Greek and exam-tag checks), `scheduling.py` and `transcribe.py`.
-  - Exam mode: `exams.py` (blueprints and pass rules), `readiness.py`, `mock.py` and `plan.py`.
-  - Progression: `curriculum.py`, with the open course in `curricula/`.
-- `exams/`: the exam blueprints, facts about the two public exams with links to the official sources.
-- `web/`: plain HTML/CSS/JS with no build step, plus `i18n/` for the English and Turkish UI strings.
-- `content/open/`: the tracked content packs. `content/private/` (gitignored) holds imported material.
-- `scripts/`: the verb-pack builder, the listening-audio generator and the simulation.
-
-## Licences
-
-- Code: MIT (`LICENSE`).
-- Content in `content/open/`: CC BY-SA 4.0 (`content/open/LICENSE.md`).
-
-## Documents
-
-- `AGENTS.md`: instructions for any coding agent working in this repo.
-- `docs/COACHING.md`: how the agent coaches: the learner, tone, quality rules for generated Greek, and file formats.
-- `docs/SPEC.md`: the agreed specification. It overrides `docs/DESIGN.md`.
-- `docs/DESIGN.md`: the original product and architecture decisions.
-- `docs/prompts/`: the phased prompts used to build the app.
+- Code: MIT ([`LICENSE`](LICENSE)). Content in `content/open/`: CC BY-SA 4.0 ([`content/open/LICENSE.md`](content/open/LICENSE.md)).
+- Verb forms and the word index use the English Wiktionary's Greek entries (CC BY-SA), as extracted by [kaikki.org](https://kaikki.org).
+- The wordmark is drawn from Noto Serif (SIL Open Font Licence).
+- The name comes from Pausanias, *Description of Greece* 10.29.
