@@ -38,6 +38,8 @@ from oknos.packs import (
     TableFillItem,
     TrueFalseItem,
     VocabItem,
+    all_picture_urls,
+    picture_url,
     WriteItem,
     servable,
 )
@@ -56,6 +58,7 @@ VERB_SLOT = 4
 VERB_SLOT_MAX = 8
 COACH_VERB_SHARE = 3  # unseen coach-written forms per day, even when old forms are due
 OPTIONS_PER_CARD = 4
+PICTURE_SHARE = 0.4  # of the seen words that have a picture, how often the card is "pick the picture"
 EVIDENCE_MIN = 10  # attempts before an area's accuracy is shown
 PACK_RANK = {"generated": 0, "open": 1, "private": 2}
 LEVEL_RANK = {"A1": 0, "A2": 1, "B1": 2}
@@ -182,8 +185,21 @@ def vocab_card(item_key: str, pack: Pack, item: VocabItem, lang: str, direction:
                rng: random.Random, state: scheduler.State | None, catalog: Catalog | None = None) -> dict:
     card = {"item_key": item_key, "type": "vocab", "direction": direction, "lang": lang, "speak": item.say or item.el,
             "el": item.el, "reps": state.reps if state else 0, "pos": item.pos}
+    picture = picture_url(item)
+    if picture:
+        card["picture"] = picture
     if state is None:  # never seen: show it first, then test it (teach before testing)
         card["learn"] = learn_part(item, lang, catalog)
+        if picture:
+            card["learn"]["picture"] = picture
+    others = [u for u in all_picture_urls() if u != picture] if picture else []
+    if (picture and state is not None and len(others) >= OPTIONS_PER_CARD - 1
+            and direction in ("el_meaning", "audio_meaning") and rng.random() < PICTURE_SHARE):
+        # pick the picture: the Greek word, and four pictures to choose from
+        options = rng.sample(others, OPTIONS_PER_CARD - 1) + [picture]
+        rng.shuffle(options)
+        card.update(direction="el_picture", prompt=item.el, options=options, meaning=meaning(item, lang))
+        return card
     if direction in ("el_meaning", "audio_meaning"):
         right = meaning(item, lang)
         card["prompt"] = item.el if direction == "el_meaning" else None

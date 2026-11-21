@@ -40,6 +40,7 @@ What works now:
   - A word never seen gets an ungraded **learn card** (meaning, and an example from a chapter) before its first test.
   - The chapter's `words` block places those words in its stage.
   - The home screen's first button is the one next action: read the current chapter, or today's session. Light, dark and system themes.
+  - **Pictures** (phase 9, started 2026-11-22, `docs/brand/IMAGES.md`): words have pictures made by an image model through Codex, reviewed, and taken in as WebP into `content/open/open-pictures/` (`scripts/pictures.py`). A picture belongs to a word, so any pack's item with that word shows it: on the learn card, after an answer, and in "pick the picture" (`el_picture`).
   - **The look** (2026-11-21, `docs/brand/README.md`): every progress bar is a plaited rope, a stage's ring closes as it is learned, the donkey (the agent) sits by the coach's note, the end of a session and an empty screen, and the icons are one line style (no emoji). An empty practice choice says why and leads back.
   - Navigation: every screen has its own URL (`?book`, `?lesson=<stage>`, `?stage=<id>`, `?practise`, `?words`, `?verbs`, `?exam`, `?writing`, `?submission=<id>`, `?mock=<run id>`), so the browser's back and forward work. An app bar on every screen links Home · Book · Practise · Words · Verbs · Exam.
   - The **Book** screen (formerly the course map) is the table of contents. Any chapter can be read, also ahead of the lesson, and the reader links to the previous and next chapters.

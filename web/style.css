@@ -375,7 +375,8 @@ input.typed.wrong { border-color: var(--bad); background: var(--bad-soft); }
 .coach-note.with-donkey p + p { margin-top: 4px; }
 .coach-note p { margin: 0; }
 .warn { background: var(--bad-soft); color: var(--ink); border-radius: 10px; padding: 8px 12px; }
-.date-line::before { content: "📅 "; }
+.date-line { display: flex; gap: 10px; align-items: baseline; }
+.date-line .icon { flex: 0 0 auto; color: var(--accent); transform: translateY(3px); }
 .coach-links { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; }
 .feedback-ready { justify-self: start; }
 .feedback.neutral { background: var(--accent-soft); }
@@ -672,3 +673,12 @@ article.card:focus { outline: none; }
 .verbs-page .verb-group:first-of-type { margin-top: 14px; }
 .verb-later { margin-top: 22px; border-top: 1px solid var(--line); padding-top: 10px; }
 .verb-later > summary { cursor: pointer; color: var(--muted); font-weight: 600; padding: 6px 0; }
+
+/* ---------- pictures (phase 9) ---------- */
+.word-picture { display: block; width: 200px; height: 200px; margin: 6px auto 10px; border-radius: 18px; background: var(--paper); }
+.word-picture.small { width: 120px; height: 120px; margin: 10px auto 0; border-radius: 14px; }
+.options.pictures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.option.picture-option { position: relative; display: grid; place-items: center; padding: 10px; }
+.option.picture-option img { width: 100%; max-width: 170px; height: auto; aspect-ratio: 1; border-radius: 12px; display: block; }
+.option.picture-option .key { position: absolute; top: 8px; left: 8px; }
+:root[data-theme="dark"] .word-picture, :root[data-theme="dark"] .option.picture-option img { filter: brightness(.92); }

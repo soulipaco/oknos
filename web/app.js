@@ -490,6 +490,7 @@ const ICONS = {  // one line style: a 24 grid, 2 px, round ends
   flag: '<path d="M5 21V4M5 4h11l-2 4 2 4H5"/>',
   book: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/>',
   lock: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+  calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
 };
 
 function icon(name) {
@@ -600,7 +601,7 @@ function coachPanel(coach) {
     if (reg?.opens && reg.opens > today) line = t("date_reg_opens", { what, date: fmtDate(reg.opens) });
     else if (reg?.closes && reg.closes >= today) line = t("date_reg_closes", { what, date: fmtDate(reg.closes) });
     else line = t("date_next", { what, date: fmtDate(e.date) });
-    blocks.push(h("p", { class: "date-line" }, line));
+    blocks.push(h("p", { class: "date-line" }, icon("calendar"), h("span", {}, line)));
   }
   const links = [h("span", { class: "muted small" }, t("tutor_line"))];
   if (coach.submissions_total) {
@@ -774,6 +775,7 @@ function renderLearn(card) {
   const body = h("article", { class: "card learn-card" },
     h("div", { class: "question" }, h("div", { class: "ask" }, t("learn_title")),
       h("div", { class: "prompt-row" }, greekText(L.el, { tag: "p", cls: "big-greek", tappable: false }), speakButton(L.say || L.el))),
+    L.picture ? h("img", { class: "word-picture", src: L.picture, alt: "", width: "200", height: "200" }) : null,
     h("p", { class: "learn-meaning" }, meaningText(L.meaning, L.meaning_lang)),
     example ? h("div", { class: "learn-example" }, h("p", { class: "muted small" }, t("learn_example")), example) : null,
     h("div", { class: "actions" }, go));
@@ -814,6 +816,14 @@ function optionList(options, greek, onPick) {
       "data-index": i,
       onclick: () => onPick(i),
     }, h("span", { class: "key", "aria-hidden": "true" }, String(i + 1)), text)));
+}
+
+function pictureOptions(urls, onPick) {
+  // Four pictures to choose from; keys 1–4 work as for words.
+  return h("div", { class: "options pictures" },
+    urls.map((src, i) => h("button", { class: "option picture-option", type: "button", "data-index": i, onclick: () => onPick(i),
+      "aria-label": String(i + 1) },
+      h("span", { class: "key", "aria-hidden": "true" }, String(i + 1)), h("img", { src, alt: "", width: "160", height: "160" }))));
 }
 
 function rubricLine(rubric, ask) {
@@ -888,9 +898,10 @@ function stimulusBlock(card) {
 
 RENDERERS.vocab = (card) => {
   const dir = card.direction;
-  const ask = { el_meaning: t("q_meaning"), meaning_el: t("q_greek"), audio_meaning: t("q_heard"), meaning_el_typed: t("q_type") }[dir];
+  const ask = { el_meaning: t("q_meaning"), meaning_el: t("q_greek"), audio_meaning: t("q_heard"), meaning_el_typed: t("q_type"),
+    el_picture: t("q_picture") }[dir];
   let promptEl;
-  if (dir === "el_meaning") promptEl = h("div", { class: "prompt-row" }, greekText(card.prompt, { tag: "p", cls: "big-greek", tappable: false }), speakButton(card.speak));
+  if (dir === "el_meaning" || dir === "el_picture") promptEl = h("div", { class: "prompt-row" }, greekText(card.prompt, { tag: "p", cls: "big-greek", tappable: false }), speakButton(card.speak));
   else if (dir === "audio_meaning") {
     const b = h("button", { class: "primary listen big", type: "button", onclick: () => speak(card.speak, 0.8) }, `▶ ${t("play")}`);
     setTimeout(() => speak(card.speak, 0.8), 250);
@@ -904,8 +915,13 @@ RENDERERS.vocab = (card) => {
     const send = () => { if (input.value.trim()) submit({ text: input.value }, { typed: input }); };
     return h("article", { class: "card" }, question, h("div", { class: "typed-wrap" }, input), board, row, h("div", { class: "slot" }));
   }
-  const opts = optionList(card.options, dir === "meaning_el", (i) => submit({ choice: card.options[i] }, { pickedIndex: i }));
-  return h("article", { class: "card" }, question, opts, h("div", { class: "slot" }));
+  const pick = (i) => submit({ choice: card.options[i] }, { pickedIndex: i });
+  if (dir === "el_picture") {
+    setTimeout(() => speak(card.speak, 0.85), 250);
+    return h("article", { class: "card" }, question, pictureOptions(card.options, pick), h("div", { class: "slot" }));
+  }
+  if (dir === "meaning_el" && card.picture) question.append(h("img", { class: "word-picture small", src: card.picture, alt: "", width: "120", height: "120" }));
+  return h("article", { class: "card" }, question, optionList(card.options, dir === "meaning_el", pick), h("div", { class: "slot" }));
 };
 
 RENDERERS.form = (card) => {
@@ -1319,8 +1335,12 @@ function showFeedback(result, ui) {
       else if (i === ui.pickedIndex) b.classList.add("wrong");
     });
     if (!result.correct) {
-      const answerText = card.type === "mcq" ? card.options[result.answer] : result.answer;
+      const answerText = card.type === "mcq" ? card.options[result.answer]
+        : card.direction === "el_picture" ? card.meaning : result.answer;
       parts.push(h("p", {}, t("answer_is", { answer: answerText })));
+    }
+    if (card.type === "vocab" && card.picture && card.direction !== "el_picture") {
+      parts.push(h("img", { class: "word-picture small", src: card.picture, alt: "", width: "120", height: "120" }));
     }
     if (card.type === "vocab" && card.direction !== "el_meaning") {
       parts.push(h("div", { class: "example" }, speakButton(card.speak, true), greekText(card.el || card.speak, { cls: "el" })));
@@ -1554,6 +1574,12 @@ function stageName(st) {
   return tr(st.title) || st.id;
 }
 
+function ringLabel(title, position) {
+  // The lesson's number inside its ring, unless the title already carries one ("Ders 1"):
+  // a book's own numbering need not match the position, which counts the intro too.
+  return /\d/.test(title || "") ? "" : String(position);
+}
+
 function progressBar(done, total, cls = "") {
   return ropeBar(done, total, cls);
 }
@@ -1565,7 +1591,7 @@ function stagePanel(cur) {
     h("div", { class: "panel-head" }, h("h2", {}, t("stage_now")),
       h("span", { class: "muted small" }, t("stage_count", { n: cur.stages_done + 1, total: cur.stages_total }))),
     h("button", { class: "stage-card with-ring", type: "button", onclick: () => go("stage", st.id) },
-      ropeRing(st.core ? st.learned / st.core : 0, String(cur.stages_done + 1), 44),
+      ropeRing(st.core ? st.learned / st.core : 0, ringLabel(stageName(st), cur.stages_done + 1), 44),
       h("span", { class: "stage-text" },
         h("strong", {}, stageName(st)), st.theme ? h("span", { class: "muted" }, tr(st.theme)) : null,
         progressBar(st.learned, st.core),
@@ -1598,7 +1624,7 @@ async function renderBook() {
       : h("span", { class: "book-read none small muted" }, t("ch_not_yet"));
     return h("li", { class: `book-row ${st.state}` },
       h("span", { class: "book-num", "aria-hidden": "true" },
-        ropeRing(st.state === "done" ? 1 : st.state === "locked" || !st.core ? 0 : st.share, st.state === "done" ? "✓" : String(i + 1), 34)),
+        ropeRing(st.state === "done" ? 1 : st.state === "locked" || !st.core ? 0 : st.share, st.state === "done" ? "✓" : ringLabel(stageName(st), i + 1), 34)),
       h("div", { class: "book-text" },
         navLink("stage", stageName(st), st.id, "book-title"),
         st.chapter ? h("span", { class: "book-chapter" }, tr(st.chapter.title)) : null,

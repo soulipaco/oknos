@@ -27,7 +27,7 @@ from oknos.packs import (
 
 # el_meaning: Greek shown, pick the meaning. meaning_el: meaning shown, pick the Greek.
 # audio_meaning: Greek heard, pick the meaning. meaning_el_typed: meaning shown, type the Greek.
-VOCAB_DIRECTIONS = ("el_meaning", "meaning_el", "audio_meaning", "meaning_el_typed")
+VOCAB_DIRECTIONS = ("el_meaning", "meaning_el", "audio_meaning", "meaning_el_typed", "el_picture")
 
 
 class CheckError(ValueError):
@@ -124,6 +124,13 @@ def check(item: Item, card: dict[str, Any], response: dict[str, Any]) -> Result:
         choice = response.get("choice")
         if not isinstance(choice, str):
             raise CheckError("a vocab answer needs a 'choice' string")
+        if direction == "el_picture":  # pick the picture: the choice is a picture's address
+            from oknos.packs import picture_url
+
+            right = picture_url(item)
+            if right is None:
+                raise CheckError("this word has no picture")
+            return Result(score=1.0 if choice == right else 0.0, correct=choice == right, answer=right)
         right = item.el if direction == "meaning_el" else meaning(item, card.get("lang", "en"))
         ok = _same(choice, right)
         return Result(score=1.0 if ok else 0.0, correct=ok, answer=right)

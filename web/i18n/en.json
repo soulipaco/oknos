@@ -385,5 +385,6 @@
   "nothing_back_home": "Back home",
   "v_lesson": "Lesson {n}: {title}",
   "v_group_none": "Not in a lesson yet",
-  "v_group_later": "Later lessons: {n} verbs"
+  "v_group_later": "Later lessons: {n} verbs",
+  "q_picture": "Which picture is it?"
 }

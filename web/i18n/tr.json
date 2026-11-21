@@ -385,5 +385,6 @@
   "nothing_back_home": "Ana sayfaya dön",
   "v_lesson": "Ders {n}: {title}",
   "v_group_none": "Henüz bir derste değil",
-  "v_group_later": "Sonraki dersler: {n} fiil"
+  "v_group_later": "Sonraki dersler: {n} fiil",
+  "q_picture": "Hangi resim?"
 }

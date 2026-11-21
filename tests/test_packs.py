@@ -19,7 +19,7 @@ def test_there_is_an_open_pack():
 def test_open_pack_loads_cleanly(pack_dir):
     pack, problems, _ = packs.load_pack(pack_dir, "open")
     assert problems == []
-    assert pack is not None and len(pack.items) >= 10
+    assert pack is not None and (len(pack.items) >= 10 or len(pack.pictures) >= 10)  # a pictures-only pack has no items
 
 
 @pytest.mark.parametrize("pack_dir", OPEN_PACKS, ids=lambda p: p.name)

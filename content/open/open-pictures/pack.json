@@ -1,0 +1,13 @@
+{
+  "id": "open-pictures",
+  "title": {
+    "en": "Pictures for words",
+    "tr": "Kelimeler için resimler",
+    "el": "Εικόνες για τις λέξεις"
+  },
+  "version": 1,
+  "levels": ["A1", "A2", "B1"],
+  "visibility": "open",
+  "licence": "CC-BY-SA-4.0",
+  "source": "Made for Oknos with an image model (through Codex), from the style guide in docs/brand/IMAGES.md, and reviewed before they were taken in. Each picture's prompt is recorded in pictures/pictures.json. No picture contains text, a person or a brand."
+}

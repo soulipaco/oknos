@@ -365,6 +365,24 @@ class GlossWord(Strict):
         return self
 
 
+class Picture(Strict):
+    """A picture for a word (phase 9: pictures). Found by the word, so every pack's item with that word shows it."""
+
+    word: str = Field(min_length=1)            # the word as an item has it, with its article: "το ψωμί"
+    file: str = Field(pattern=r"^[A-Za-z0-9._-]+\.(webp|png|svg)$")
+    item: str | None = None                    # the item it was made for
+    prompt: str | None = None                  # how it was made
+    made: str | None = None                    # by what, e.g. "image model via Codex, reviewed 2026-11-22"
+
+
+class Pictures(Strict):
+    """A pack's pictures/pictures.json."""
+
+    source: str
+    licence: str
+    pictures: list[Picture] = []
+
+
 class Glossary(Strict):
     """A pack's glossary.json: what tapping a word finds when no item has it (phase 5d).
 
@@ -392,6 +410,7 @@ class Pack:
     chapters: dict[str, "chapters_mod.Chapter"] = field(default_factory=dict)  # stage id -> chapter
     glossary: Glossary | None = None
     item_files: dict[str, str] = field(default_factory=dict)  # item id -> the items file it came from
+    pictures: list[Picture] = field(default_factory=list)
 
     @property
     def id(self) -> str:
@@ -470,7 +489,20 @@ def load_pack(pack_dir: Path, expected_visibility: str | None = None) -> tuple[P
             problems.append(f"{name}/units.json could not be read ({e.__class__.__name__}); the course outline was skipped")
     item_files = sorted((pack_dir / "items").glob("*.json"))
     chapter_files = chapters_mod.chapter_files(pack_dir)
-    if not item_files and not chapter_files:
+    pictures_file = pack_dir / "pictures" / "pictures.json"
+    if pictures_file.is_file():
+        try:
+            pics = Pictures.model_validate(_nfc(_read_json(pictures_file)))
+            for pic in pics.pictures:
+                if (pack_dir / "pictures" / pic.file).is_file():
+                    pack.pictures.append(pic)
+                else:
+                    problems.append(f"{name}/pictures/pictures.json: the file '{pic.file}' for '{pic.word}' is missing")
+        except json.JSONDecodeError as e:
+            problems.append(f"{name}/pictures/pictures.json is not valid JSON (line {e.lineno}): {e.msg}; the pictures were skipped")
+        except ValidationError as e:
+            problems.append(f"{name}/pictures/pictures.json: {_describe(e)}; the pictures were skipped")
+    if not item_files and not chapter_files and not pack.pictures:
         problems.append(f"{name}: there are no item files in items/")
     for item_file in item_files:
         rel = f"{name}/items/{item_file.name}"
@@ -573,6 +605,7 @@ def load_all() -> Catalog:
             for chapter in pack.chapters.values():
                 catalog.chapters[(chapter.curriculum, chapter.stage)] = (pack, chapter)
     catalog.problems.extend(chapter_ref_problems(catalog))
+    set_pictures(catalog)
     for problem in catalog.problems:
         log.warning("content: %s", problem)
     return catalog
@@ -626,3 +659,40 @@ def json_schemas() -> dict[str, dict]:
         "chapter": chapters_mod.json_schema(),
         "glossary": Glossary.model_json_schema(),
     }
+
+
+# ---------- pictures (phase 9): a word's picture, from whichever pack has one ----------
+
+_pictures: dict[str, str] = {}  # folded word (with and without its article) -> "/pictures/<pack>/<file>"
+
+
+def picture_keys(word: str) -> set[str]:
+    from oknos import greek
+
+    words = greek.words(word or "")
+    bare = [w for w in words if greek.fold(w) not in greek.ARTICLES]
+    return {greek.fold(" ".join(ws)) for ws in (words, bare) if ws}
+
+
+def set_pictures(catalog: "Catalog") -> None:
+    """Index the loaded packs' pictures by word; a later pack (the coach's) wins over an earlier one."""
+    _pictures.clear()
+    for pack in catalog.packs:
+        for pic in pack.pictures:
+            for key in picture_keys(pic.word):
+                _pictures[key] = f"/pictures/{pack.id}/{pic.file}"
+
+
+def picture_url(item) -> str | None:
+    """The picture for a vocab item's word, if any pack has one."""
+    el = getattr(item, "el", None)
+    if not el:
+        return None
+    for key in sorted(picture_keys(el), key=len, reverse=True):
+        if key in _pictures:
+            return _pictures[key]
+    return None
+
+
+def all_picture_urls() -> list[str]:
+    return sorted(set(_pictures.values()))
