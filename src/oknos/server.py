@@ -199,6 +199,11 @@ def create_app() -> FastAPI:
                 cur_brief = None
                 next_action = {"kind": "daily", "stage": None, "then": None}
             try:
+                words = session.home_words(conn, app.state.catalog, lang)
+            except Exception:  # the home screen must open even if this breaks
+                log.exception("home words")
+                words = None
+            try:
                 mock.expire(conn, app.state.catalog)
                 ready_brief = {k: _brief(v) for k, v in readiness.all_readiness(conn, app.state.catalog).items()}
             except Exception:  # the home screen must open even if readiness breaks
@@ -210,6 +215,7 @@ def create_app() -> FastAPI:
             "coach": coach,
             "readiness": ready_brief,
             "curriculum": cur_brief,
+            "words": words,
             "next_action": next_action,
             "target_exam": profile.get("target_exam"),
             "ui_lang": profile.get("ui_lang") if profile.get("ui_lang") in UI_LANGS else None,

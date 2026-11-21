@@ -386,5 +386,16 @@
   "v_lesson": "Ders {n}: {title}",
   "v_group_none": "Henüz bir derste değil",
   "v_group_later": "Sonraki dersler: {n} fiil",
-  "q_picture": "Hangi resim?"
+  "q_picture": "Hangi resim?",
+  "home_today": "Bugün",
+  "home_new_words": "Seni bekleyen yeni kelimeler: {n}",
+  "home_lesson": "Dersin · {total} dersten {n}.",
+  "home_in_lesson": "Bu derste",
+  "home_coach": "Koçun",
+  "home_coach_none": "Henüz not yok. Ajanını aç ve “coach” de.",
+  "home_dates": "Yaklaşan tarihler",
+  "home_exam_link": "Sınav ekranı",
+  "home_rope_line": "{total} karttan {done} · bugünün halatı",
+  "date_reg_opens_short": "{what}: kayıt açılıyor",
+  "date_reg_closes_short": "{what}: kayıt kapanıyor"
 }

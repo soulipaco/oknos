@@ -490,6 +490,8 @@ const ICONS = {  // one line style: a 24 grid, 2 px, round ends
   flag: '<path d="M5 21V4M5 4h11l-2 4 2 4H5"/>',
   book: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/>',
   lock: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+  target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>',
+  arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
 };
 
@@ -575,40 +577,48 @@ function fmtDate(iso) {
   return d.toLocaleDateString(state.lang === "tr" ? "tr-TR" : "en-GB", { day: "numeric", month: "long", year: "numeric" });
 }
 
-function coachPanel(coach) {
-  // What the coach left for the learner: its note, feedback ready, exam dates, and run problems.
+function coachTile(coach) {
+  // What the agent did: its note (with the donkey), feedback ready, and any scheduled run that failed.
   if (!coach) return null;
   const blocks = [];
   for (const p of coach.run_problems || []) {
     blocks.push(h("p", { class: "warn" }, t(p.problem === "failed" ? "run_failed" : "run_missing",
       { skill: p.skill, date: fmtDate(p.since) })));
   }
-  if (coach.message) {
-    const text = coach.message[state.lang] || coach.message.en || coach.message.tr;
-    blocks.push(h("div", { class: "coach-note with-donkey" }, donkey("ready", 48),
-      h("div", {}, h("p", {}, text), h("p", { class: "muted small" }, t("coach_note_from", { date: fmtDate(coach.message.date) })))));
-  }
+  const text = coach.message ? (coach.message[state.lang] || coach.message.en || coach.message.tr) : null;
+  blocks.push(h("div", { class: "tile-head" }, donkey(text ? "ready" : "resting", 44),
+    h("div", {}, h("p", { class: "eyebrow" }, t("home_coach")),
+      coach.message ? h("p", { class: "small muted" }, fmtDate(coach.message.date)) : null)));
+  blocks.push(h("p", {}, text || t("home_coach_none")));
   if (coach.feedback_ready?.length) {
     const first = coach.feedback_ready[0];
-    blocks.push(h("button", { class: "secondary feedback-ready", type: "button", onclick: () => go("submission", first.id) },
+    blocks.push(h("button", { class: "secondary small-btn feedback-ready", type: "button", onclick: () => go("submission", first.id) },
       t(first.kind === "speaking" ? "feedback_ready_speaking" : "feedback_ready_writing")));
   }
-  for (const e of coach.dates?.entries || []) {
+  blocks.push(h("p", { class: "small muted" }, t("tutor_line")));
+  if (coach.submissions_total) blocks.push(navLink("writing", t("your_writing"), null, "tile-link"));
+  return h("section", { class: "tile coach-tile" }, ...blocks);
+}
+
+function datesTile(coach) {
+  const entries = coach?.dates?.entries || [];
+  if (!entries.length) return null;
+  const today = state.home.today;
+  const rows = entries.map(e => {
     const what = (state.lang === "tr" && e.what_tr) || e.what;
     const reg = e.registration;
-    const today = state.home.today;
-    let line;
-    if (reg?.opens && reg.opens > today) line = t("date_reg_opens", { what, date: fmtDate(reg.opens) });
-    else if (reg?.closes && reg.closes >= today) line = t("date_reg_closes", { what, date: fmtDate(reg.closes) });
-    else line = t("date_next", { what, date: fmtDate(e.date) });
-    blocks.push(h("p", { class: "date-line" }, icon("calendar"), h("span", {}, line)));
-  }
-  const links = [h("span", { class: "muted small" }, t("tutor_line"))];
-  if (coach.submissions_total) {
-    links.push(navLink("writing", t("your_writing"), null, "link-button small"));
-  }
-  blocks.push(h("p", { class: "coach-links" }, ...links));
-  return h("section", { class: "panel coach" }, ...blocks);
+    let date, line;
+    if (reg?.opens && reg.opens > today) { date = reg.opens; line = t("date_reg_opens_short", { what }); }
+    else if (reg?.closes && reg.closes >= today) { date = reg.closes; line = t("date_reg_closes_short", { what }); }
+    else { date = e.date; line = what; }
+    return h("li", {}, h("span", { class: "date-chip" }, shortDate(date)), h("span", {}, line));
+  });
+  return h("section", { class: "tile" }, h("p", { class: "eyebrow" }, icon("calendar"), t("home_dates")), h("ul", { class: "dates" }, rows));
+}
+
+function shortDate(iso) {
+  try { return new Date(iso + "T12:00:00").toLocaleDateString(state.lang === "tr" ? "tr-TR" : "en-GB", { day: "numeric", month: "short" }); }
+  catch { return iso; }
 }
 
 function resetScreens() {
@@ -653,17 +663,23 @@ async function renderHome() {
     second.push(h("p", { class: "counts muted" }, first ? t("home_first") : todayLine(stats)));
   }
   const progressPanels = first ? [] : [consistencyGrid(stats), standing(stats)];
+  const words = state.home.words;
+  const today = stats.today;
+  const rope = status === "resume" && today.planned ? h("div", { class: "today-rope" },
+    ropeBar(today.planned - today.left, today.planned),
+    h("span", { class: "small muted" }, t("home_rope_line", { done: today.planned - today.left, total: today.planned }))) : null;
+  const hero = h("section", { class: "hero" },
+    h("p", { class: "eyebrow" }, `${t("home_today")} · ${fmtDate(state.home.today)}`),
+    h("h1", { class: "greeting", lang: "el" }, hello),
+    h("p", { class: "greeting-tr" }, `${helloT} · ${t("tagline")}`),
+    status === "done" && na.kind !== "read" ? h("p", { class: "done-today" }, t("done_today")) : null,
+    na.kind !== "read" && words?.new?.length && status !== "done"
+      ? [h("p", { class: "eyebrow strip-head" }, t("home_new_words", { n: words.new_count })), wordStrip(words.new)] : null,
+    primary, ...second, rope);
   app.replaceChildren(
     ...appBar("home"),
-    h("section", { class: "home" },
-      h("h1", { class: "greeting", lang: "el" }, hello),
-      h("p", { class: "greeting-tr" }, `${helloT} · ${t("tagline")}`),
-      status === "done" && na.kind !== "read" ? h("p", { class: "done-today" }, t("done_today")) : null,
-      primary, ...second,
-    ),
-    stagePanel(state.home.curriculum),
-    coachPanel(state.home.coach),
-    examPanel(state.home),
+    h("div", { class: "home-grid" }, hero, lessonTile(state.home.curriculum, words)),
+    h("div", { class: "tiles" }, coachTile(state.home.coach), datesTile(state.home.coach), examTile(state.home)),
     progressPanels.length ? h("details", { class: "panel progress-fold" },
       h("summary", {}, h("h2", {}, t("progress_title"))), ...progressPanels.map(p => { p.classList.remove("panel"); return p; })) : null,
   );
@@ -1584,24 +1600,39 @@ function progressBar(done, total, cls = "") {
   return ropeBar(done, total, cls);
 }
 
-function stagePanel(cur) {
+function wordStrip(words) {
+  // Words with their pictures (phase 9); a word without one gets a plain Greek tile.
+  return h("div", { class: "word-strip" }, words.map(w => h("figure", { class: "nw", title: w.meaning || "" },
+    w.picture ? h("img", { src: w.picture, alt: w.meaning || "", width: "120", height: "120" })
+              : h("span", { class: "nw-plain" }, w.meaning || ""),
+    h("figcaption", { lang: "el" }, w.el))));
+}
+
+function lessonTile(cur, words) {
+  // The current lesson: its ring and rope, how far it is, its own words, what to do with it.
   if (!cur) return null;
   const st = cur.current;
-  return h("section", { class: "panel stage-panel" },
-    h("div", { class: "panel-head" }, h("h2", {}, t("stage_now")),
-      h("span", { class: "muted small" }, t("stage_count", { n: cur.stages_done + 1, total: cur.stages_total }))),
-    h("button", { class: "stage-card with-ring", type: "button", onclick: () => go("stage", st.id) },
-      ropeRing(st.core ? st.learned / st.core : 0, ringLabel(stageName(st), cur.stages_done + 1), 44),
-      h("span", { class: "stage-text" },
-        h("strong", {}, stageName(st)), st.theme ? h("span", { class: "muted" }, tr(st.theme)) : null,
-        progressBar(st.learned, st.core),
-        h("span", { class: "small muted" }, st.core ? t("stage_secure", { n: st.learned, total: st.core }) : t("stage_nothing")))),
-    st.chapter ? h("p", { class: "chapter-line" },
-      st.chapter.read
-        ? [h("span", { class: "chip map-done" }, `✓ ${t("ch_was_read")}`), " ",
-           h("button", { class: "link-button small", type: "button", onclick: () => go("lesson", st.id) }, t("ch_reread"))]
-        : h("button", { class: "secondary", type: "button", onclick: () => go("lesson", st.id) }, t("ch_read_min", { minutes: st.chapter.minutes }))) : null,
-    cur.next ? h("p", { class: "small muted" }, t("stage_next", { name: stageName(cur.next) })) : null);
+  const actions = [];
+  if (st.chapter) {
+    actions.push(h("button", { class: "secondary small-btn", type: "button", onclick: () => go("lesson", st.id) },
+      icon("book"), st.chapter.read ? t("ch_reread_short") : t("ch_read_min", { minutes: st.chapter.minutes })));
+  }
+  if (!st.chapter || st.chapter.read) {
+    actions.push(h("button", { class: "secondary small-btn", type: "button",
+      onclick: () => startSession("choose", [], { what: "all", stage: st.id, minutes: 10 }) }, t("stage_practise")));
+  }
+  return h("section", { class: "tile lesson-tile" },
+    h("p", { class: "eyebrow" }, t("home_lesson", { n: cur.stages_done + 1, total: cur.stages_total })),
+    h("button", { class: "lesson-head", type: "button", onclick: () => go("stage", st.id) },
+      ropeRing(st.core ? st.learned / st.core : 0, ringLabel(stageName(st), cur.stages_done + 1), 56),
+      h("span", {}, h("strong", { class: "lesson-name" }, stageName(st)),
+        st.theme ? h("span", { class: "muted lesson-theme" }, tr(st.theme)) : null)),
+    progressBar(st.learned, st.core),
+    h("p", { class: "small muted" }, [st.core ? t("stage_secure", { n: st.learned, total: st.core }) : t("stage_nothing"),
+      st.chapter?.read ? ` · ✓ ${t("ch_was_read")}` : ""].join("")),
+    words?.lesson?.length ? [h("p", { class: "eyebrow strip-head" }, t("home_in_lesson")), wordStrip(words.lesson)] : null,
+    cur.next ? h("p", { class: "small muted" }, t("stage_next", { name: stageName(cur.next) })) : null,
+    h("div", { class: "tile-actions" }, actions));
 }
 
 async function renderBook() {
@@ -2076,7 +2107,8 @@ function verdictText(v, short) {
   return parts.join(" ");
 }
 
-function examPanel(home) {
+function examTile(home) {
+  // A short "would you pass today?": the verdict, one small bar per part, and the way to the exam screen.
   const brief = home.readiness;
   if (!brief) return null;
   const ids = Object.keys(brief);
@@ -2088,14 +2120,13 @@ function examPanel(home) {
       try { localStorage.setItem("gc-exam", id); } catch { /* fine */ }
       rerender();
     } }, brief[id].short)));
-  const rows = r.units.map(u => h("div", { class: "area runit" },
-    h("span", { class: "area-name" }, unitName(u.unit)), readinessBar(u),
-    h("span", { class: "area-num small" }, u.state === "no_evidence" ? t("r_short_none") : `${num(u.estimate)}/${num(u.points)}`)));
-  return h("section", { class: "panel" },
-    h("div", { class: "panel-head" }, h("h2", {}, t("exam_today")), sw),
+  const rows = r.units.map(u => h("div", { class: "area runit mini" },
+    h("span", { class: "area-name" }, unitName(u.unit)), readinessBar(u)));
+  return h("section", { class: "tile exam-tile" },
+    h("div", { class: "tile-top" }, h("p", { class: "eyebrow" }, icon("target"), t("exam_today")), sw),
     h("p", { class: "weakest" }, verdictText({ state: r.verdict, ...Object.fromEntries(["below", "unclear", "no_evidence"].map(st => [st, r.units.filter(u => u.state === st).map(u => u.unit)])) }, r.short)),
     h("div", { class: "areas" }, rows),
-    h("p", {}, navLink("exam", t("exam_open"), null, "link-button")));
+    navLink("exam", [t("home_exam_link"), icon("arrow")], null, "tile-link"));
 }
 
 function techniqueBlock(u) {

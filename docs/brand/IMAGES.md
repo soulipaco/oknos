@@ -21,6 +21,15 @@ Pictures help the words stick: a word card shows its picture, and "pick the pict
 - No real people, no faces of anyone identifiable, no brand, no copyrighted character or style of a named artist.
 - No hands holding things unless the word needs it; no people at all for objects.
 
+## People (verbs and jobs, from 2026-11-22)
+
+Some words need a person: an action (τρώω, κολυμπάω, μαγειρεύω) or a job (ο γιατρός, ο χασάπης). Then:
+
+- **One person** (two only when the word is about talking to someone), adult, full body or from the waist up, doing the one thing the word says, so clearly that the picture could not mean another verb.
+- **Simple, friendly figures** in the same flat style and outline: a round head, **two dot eyes and a small line for the mouth, no other facial detail**, simple hair shapes, everyday clothes from the palette. They must not look like any real or famous person.
+- **Varied people** across the set: women and men, different ages and skin tones (warm browns and beiges, outlined like everything else).
+- The props of a job say what it is (a white coat and a stethoscope, a butcher's apron and a counter), never a name tag or a sign.
+
 ## Files
 
 - Square PNG at 1024×1024 from the model. The app uses a 512×512 WebP made from it once accepted.
@@ -32,6 +41,8 @@ Pictures help the words stick: a word card shows its picture, and "pick the pict
 Each prompt is this template with the subject filled in:
 
 > Flat vector-style illustration of {subject}. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.
+
+For a word that needs a person, the template's "no people" becomes: "One simple friendly adult figure with dot eyes and a small mouth line, no other facial detail, not resembling any real person."
 
 The subject line says what it is and, where it matters, the Greek touch ("a round Greek village loaf of bread with a scored crust", "a Greek pharmacy shop front with a green cross sign and no lettering").
 

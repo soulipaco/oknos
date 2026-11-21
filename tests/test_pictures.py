@@ -60,3 +60,15 @@ def test_a_missing_picture_file_is_a_problem(tmp_path):
         encoding="utf-8")
     pack, problems, _ = packs.load_pack(pack_dir, "open")
     assert any("psomi.webp" in p and "missing" in p for p in problems)
+
+
+def test_the_home_screen_shows_words_with_pictures_first(learner, client):
+    home = client.get("/api/home").json()
+    words = home["words"]
+    assert words is not None and set(words) == {"lesson", "new", "new_count"}
+    assert len(words["lesson"]) <= 4 and len(words["new"]) <= 4
+    shown = words["lesson"] + words["new"]
+    assert all(w["el"] and "key" in w for w in shown)
+    for group in (words["lesson"], words["new"]):  # those with a picture come first
+        flags = [w["picture"] is None for w in group]
+        assert flags == sorted(flags)

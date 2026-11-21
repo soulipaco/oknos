@@ -386,5 +386,16 @@
   "v_lesson": "Lesson {n}: {title}",
   "v_group_none": "Not in a lesson yet",
   "v_group_later": "Later lessons: {n} verbs",
-  "q_picture": "Which picture is it?"
+  "q_picture": "Which picture is it?",
+  "home_today": "Today",
+  "home_new_words": "New words waiting: {n}",
+  "home_lesson": "Your lesson · {n} of {total}",
+  "home_in_lesson": "In this lesson",
+  "home_coach": "Your coach",
+  "home_coach_none": "No note yet. Open your agent and say “coach” for a check-in.",
+  "home_dates": "Coming up",
+  "home_exam_link": "Exam view",
+  "home_rope_line": "{done} of {total} cards · today's rope",
+  "date_reg_opens_short": "{what}: registration opens",
+  "date_reg_closes_short": "{what}: registration closes"
 }

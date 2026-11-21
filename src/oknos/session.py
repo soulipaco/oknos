@@ -1083,3 +1083,28 @@ def chapter_practice(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, s
         conn.execute("UPDATE sessions SET plan_json=? WHERE id=?", (json.dumps(out["cards"], ensure_ascii=False), out["session_id"]))
     out["stage"] = stage_id
     return out
+
+
+def home_words(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, limit: int = 4) -> dict | None:
+    """The words the home screen shows: the current lesson's, and the new ones that come next.
+    Those with a picture come first (phase 9). None without a curriculum."""
+    from oknos import curriculum
+
+    prog = curriculum.progress(conn, catalog)
+    if prog is None:
+        return None
+    states = scheduler.all_states(conn)
+    allowed, _ = gate(conn, catalog)
+    lesson, new = [], []
+    for k, idx in prog.assigned.items():
+        entry = catalog.items.get(k)
+        if idx is None or entry is None or not isinstance(entry[1], VocabItem) or entry[1].status != "ok":
+            continue
+        item = entry[1]
+        word = {"key": k, "el": item.el, "meaning": meaning(item, ui_lang), "picture": picture_url(item)}
+        if idx == prog.current and k not in prog.pooled:
+            lesson.append(word)
+        if k not in states and idx <= prog.current and allowed(k, item):
+            new.append(word)
+    pictures_first = lambda words: sorted(words, key=lambda w: w["picture"] is None)  # noqa: E731
+    return {"lesson": pictures_first(lesson)[:limit], "new": pictures_first(new)[:limit], "new_count": len(new)}
