@@ -15,8 +15,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from greek_coach import greek  # noqa: E402
-from greek_coach.importer import enrich  # noqa: E402
+from oknos import greek  # noqa: E402
+from oknos.importer import enrich  # noqa: E402
 
 PACK = ROOT / "content" / "open" / "open-verbs-a1a2"
 PERSONS = ["1sg", "2sg", "3sg", "1pl", "2pl", "3pl"]
@@ -209,7 +209,7 @@ def main() -> int:
         "levels": ["A1", "A2"],
         "visibility": "open",
         "licence": "CC-BY-SA-4.0",
-        "source": "Original sentences written for Greek Coach. Verb forms checked against the English "
+        "source": "Original sentences written for Oknos. Verb forms checked against the English "
                   "Wiktionary's Greek conjugation tables (CC BY-SA 4.0, https://en.wiktionary.org, via kaikki.org).",
         "exam_blueprints": ["a2ltr", "b1-keg"],
     }

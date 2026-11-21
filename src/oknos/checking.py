@@ -10,8 +10,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any
 
-from greek_coach import greek
-from greek_coach.packs import (
+from oknos import greek
+from oknos.packs import (
     CategoriseItem,
     FormItem,
     GapBankItem,

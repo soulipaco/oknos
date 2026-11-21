@@ -1,6 +1,6 @@
 """Enrichment from the English Wiktionary's Greek entries, as extracted by kaikki.org (CC BY-SA).
 
-The full dump (~211 MB) is downloaded once, with the learner's OK, into .cache/greek-coach/.
+The full dump (~211 MB) is downloaded once, with the learner's OK, into .cache/oknos/.
 `build_index` streams it and keeps only what the app needs: the gender of every noun and the
 conjugation of the verbs we ask for. The small index is what later runs read.
 """
@@ -10,10 +10,10 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from greek_coach import greek, paths
+from oknos import greek, paths
 
 KAIKKI_URL = "https://kaikki.org/dictionary/Greek/kaikki.org-dictionary-Greek.jsonl"
-CACHE_DIR = paths.REPO_ROOT / ".cache" / "greek-coach"
+CACHE_DIR = paths.CACHE_DIR
 DUMP = CACHE_DIR / "kaikki.org-dictionary-Greek.jsonl"
 INDEX = CACHE_DIR / "kaikki-el-index.json"
 INDEX_VERSION = 3

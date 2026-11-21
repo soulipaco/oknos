@@ -42,10 +42,10 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, ValidationError, model_validator
 
-from greek_coach import coachfiles, db, greek, paths, scheduler
-from greek_coach.packs import Catalog, FormItem, Item, VocabItem
+from oknos import coachfiles, db, greek, paths, scheduler
+from oknos.packs import Catalog, FormItem, Item, VocabItem
 
-log = logging.getLogger("greek_coach.curriculum")
+log = logging.getLogger("oknos.curriculum")
 
 CURRICULA_DIR = paths.REPO_ROOT / "curricula"
 SECURE_DAYS = 6
@@ -457,7 +457,7 @@ def next_action(p: "Progress | None", today_state: str, due_reviews: int) -> dic
 
 def start_check(conn: sqlite3.Connection, catalog: Catalog, stage_id: str, ui_lang: str) -> dict:
     """A practice session of up to CHECK_SIZE items of one stage. Passing marks the stage done."""
-    from greek_coach import session
+    from oknos import session
 
     p = progress(conn, catalog)
     if p is None or stage_id not in [s.id for s in p.curriculum.stages]:

@@ -1,9 +1,9 @@
-from greek_coach import db
+from oknos import db
 
 
 def test_health_endpoint(client):
     r = client.get("/health").json()
-    assert r["app"] == "greek-coach"
+    assert r["app"] == "oknos"
     assert r["ok"] is True
     assert r["greek_roundtrip"] is True
     assert r["greek_sample"] == db.GREEK_SAMPLE
@@ -21,7 +21,7 @@ def test_migrations_are_idempotent(learner):
 
 
 def test_cli_health_offline(learner, capsys):
-    from greek_coach.cli import main
+    from oknos.cli import main
 
     assert main(["health"]) == 0
     out = capsys.readouterr().out
@@ -30,8 +30,8 @@ def test_cli_health_offline(learner, capsys):
 
 
 def test_cli_validate(capsys):
-    from greek_coach import paths
-    from greek_coach.cli import main
+    from oknos import paths
+    from oknos.cli import main
 
     assert main(["validate", str(paths.CONTENT_DIR / "open" / "open-shared-words-tr")]) == 0
     assert "Everything is valid." in capsys.readouterr().out

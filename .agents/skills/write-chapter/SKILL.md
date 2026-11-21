@@ -22,7 +22,7 @@ Run every command from the repository root.
 ## 0. Where you are
 
 1. Find the curriculum:
-   - `uv run greek-coach report` → `curriculum.curriculum` and `chapters`, which shows which stages have a chapter and which are read;
+   - `uv run oknos report` → `curriculum.curriculum` and `chapters`, which shows which stages have a chapter and which are read;
    - the book's curriculum is `content/private/<pack>/curriculum.json`, the open one `curricula/open-a1-b1.json`.
 2. Find the folder (LESSONS §1): a book's chapters are private, the open course's are tracked.
 3. If `lessons/outline.json` is missing, start at step 1. If it exists, check that the stages you are asked for are in it.
@@ -34,11 +34,11 @@ Write `lessons/outline.json` (LESSONS §6), one entry per stage, from:
 - the stage's `can_do`, `theme` and `include` rules in the curriculum;
 - for a book, `content/private/<pack>/units.json` (functions, grammar, vocabulary per lesson);
 - for a book, the printed curriculum map, if the earlier project is on this machine (`Greek_Helper/data/processed/lessons/curriculum_map.json`);
-- `uv run greek-coach raw <pack> --unit <id>`, for what the lesson actually practises.
+- `uv run oknos raw <pack> --unit <id>`, for what the lesson actually practises.
 
 Then check the whole outline at once:
 - **The order of grammar.** No stage relies on a structure that a later stage teaches. Where a dialogue needs one early, the entry says "set phrase".
-- **Words.** 15–25 per stage. Look them up in the pack first (`uv run greek-coach report --words`, or search the items files). Only what is missing goes under `new_words`.
+- **Words.** 15–25 per stage. Look them up in the pack first (`uv run oknos report --words`, or search the items files). Only what is missing goes under `new_words`.
 - **Review stages** consolidate; they introduce nothing new.
 
 Show the learner or maintainer a short table (stage, focus, scenario) and **wait for their yes** before any chapter is written.
@@ -60,15 +60,15 @@ Give each drafter one stage, through the Agent tool with `model: "sonnet"`, runn
 3. The two golden chapters, as paths to read.
 4. The allowed vocabulary, as a list of `key | Greek | meaning`:
    - the stage's existing words;
-   - the words of earlier stages, from `uv run greek-coach report --words` or the items files.
-5. For a book: the lesson's OCR page text, from `Greek_Helper/data/app/lesson_details.json` → `items[].source_pages` for that unit, or `uv run greek-coach raw <pack> --unit <id>`. Say in the prompt: **reference only, to see what the lesson covers; do not copy any sentence, dialogue or exercise.**
+   - the words of earlier stages, from `uv run oknos report --words` or the items files.
+5. For a book: the lesson's OCR page text, from `Greek_Helper/data/app/lesson_details.json` → `items[].source_pages` for that unit, or `uv run oknos raw <pack> --unit <id>`. Say in the prompt: **reference only, to see what the lesson covers; do not copy any sentence, dialogue or exercise.**
 6. **What to write:**
    - `lessons/<stage>.json`;
    - `items/chapter-<stage>.json`: new words, plus 10–20 practice items including the checks (LESSONS §4).
 
    Say in the prompt: **every Greek word in your chapter and items must be explained by tapping; `validate` lists those that are not** (LESSONS §4 rule 7), and **the Greek must carry the question: no check whose question is only in the hidden translation** (rule 8).
 
-   It ends by running `uv run greek-coach words <pack folder> --write` and `uv run greek-coach validate <pack folder>`, and fixing every problem and every untaught-word, unexplained-word and hidden-question note it can.
+   It ends by running `uv run oknos words <pack folder> --write` and `uv run oknos validate <pack folder>`, and fixing every problem and every untaught-word, unexplained-word and hidden-question note it can.
 7. **What to report back:**
    - the files written;
    - the validate output;
@@ -79,12 +79,12 @@ The drafter does not run `reload` and does not touch other stages' files.
 ## 4. Validate
 
 ```
-uv run greek-coach validate content/private/<pack>
+uv run oknos validate content/private/<pack>
 ```
 
 Use the open pack folder for the open course. Every problem must be fixed. Read the notes:
 - untaught words;
-- tappable words that find no meaning (run `uv run greek-coach words <pack folder> --write` first; give the rest a row in the pack's `glossary.json`);
+- tappable words that find no meaning (run `uv run oknos words <pack folder> --write` first; give the rest a row in the pack's `glossary.json`);
 - a question only in the translation (rewrite the Greek, or give the item an `ask`);
 - reading time;
 - unaccented words.
@@ -94,7 +94,7 @@ Fix them, or say in the review note why they stay.
 ## 5. Review (you, Opus, independently of the drafter)
 
 Review each drafted chapter against LESSONS §5:
-- Read it as a file, and then in the app (`?lesson=<stage>`, after `uv run greek-coach reload`).
+- Read it as a file, and then in the app (`?lesson=<stage>`, after `uv run oknos reload`).
 - Correct the files directly.
 - Pay most attention to the Greek: articles, cases, verb endings, accents, and natural word order.
 - Write `lessons/review/<stage>.md` (LESSONS §5): what changed, what is unsure, and the correction count.
@@ -103,7 +103,7 @@ If a chapter needed more than about ten Greek corrections, say so in the report:
 
 ## 6. Load and report
 
-1. `uv run greek-coach reload`.
+1. `uv run oknos reload`.
 2. Tell the learner in two or three plain lines:
    - which chapters are now in the app;
    - a link to the first one (`<app_url>?lesson=<stage>`);

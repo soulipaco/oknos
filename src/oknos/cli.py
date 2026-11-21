@@ -1,4 +1,4 @@
-"""Command line: greek-coach start | stop | health | report | validate | reload | import | raw | schema |
+"""Command line: oknos start | stop | health | report | validate | reload | import | raw | schema |
 shortcut | transcribe | run | schedule."""
 
 from __future__ import annotations
@@ -16,7 +16,7 @@ import urllib.request
 import webbrowser
 from pathlib import Path
 
-from greek_coach import __version__, db, health, paths
+from oknos import __version__, db, health, paths
 
 START_TIMEOUT_S = 60
 LOG_MAX_BYTES = 1_000_000
@@ -51,7 +51,7 @@ def running_port() -> int | None:
     except (FileNotFoundError, ValueError):
         return None
     info = fetch_health(port)
-    if info and info.get("app") == "greek-coach" and info.get("learner_dir") == str(paths.learner_dir()):
+    if info and info.get("app") in ("oknos", "greek-coach") and info.get("learner_dir") == str(paths.learner_dir()):
         return port
     return None
 
@@ -79,7 +79,7 @@ def _open_browser(port: int) -> None:
 def serve_foreground(port: int | None, open_browser: bool) -> int:
     import uvicorn
 
-    from greek_coach.server import create_app
+    from oknos.server import create_app
 
     paths.ensure_learner_dir()
     port = port or choose_port()
@@ -97,7 +97,7 @@ def serve_foreground(port: int | None, open_browser: bool) -> int:
 
         threading.Thread(target=wait_then_open, daemon=True).start()
 
-    print(f"Greek Coach is running at {_url(port)}", flush=True)
+    print(f"Oknos is running at {_url(port)}", flush=True)
     try:
         server.run()
     finally:
@@ -123,12 +123,12 @@ def spawn_background(port: int | None) -> subprocess.Popen:
     log_file = log_dir / "server.log"
     if log_file.exists() and log_file.stat().st_size > LOG_MAX_BYTES:
         log_file.unlink()
-    cmd = [_server_python(), "-m", "greek_coach", "start", "--foreground", "--no-browser"]
+    cmd = [_server_python(), "-m", "oknos", "start", "--foreground", "--no-browser"]
     if port:
         cmd += ["--port", str(port)]
     env = dict(os.environ, PYTHONUTF8="1", PYTHONIOENCODING="utf-8")
     log = open(log_file, "a", encoding="utf-8")
-    log.write(f"\n--- {db.now()} starting Greek Coach {__version__} ---\n")
+    log.write(f"\n--- {db.now()} starting Oknos {__version__} ---\n")
     log.flush()
     common = dict(cwd=str(paths.REPO_ROOT), env=env, stdin=subprocess.DEVNULL, stdout=log, stderr=subprocess.STDOUT)
     try:
@@ -156,7 +156,7 @@ def cmd_start(args) -> int:
         return serve_foreground(args.port, open_browser=not args.no_browser)
     port = running_port()
     if port:
-        print(f"Greek Coach is already running at {_url(port)}")
+        print(f"Oknos is already running at {_url(port)}")
     else:
         proc = spawn_background(args.port)
         deadline = time.monotonic() + START_TIMEOUT_S
@@ -168,10 +168,10 @@ def cmd_start(args) -> int:
                 break
             time.sleep(0.25)
         if not port:
-            print("Greek Coach did not start. The last lines of its log were:", file=sys.stderr)
+            print("Oknos did not start. The last lines of its log were:", file=sys.stderr)
             print(_tail(paths.log_dir() / "server.log"), file=sys.stderr)
             return 1
-        print(f"Greek Coach is running at {_url(port)}")
+        print(f"Oknos is running at {_url(port)}")
     if not args.no_browser:
         _open_browser(port)
     return 0
@@ -180,7 +180,7 @@ def cmd_start(args) -> int:
 def cmd_stop(args) -> int:
     port = running_port()
     if not port:
-        print("Greek Coach is not running.")
+        print("Oknos is not running.")
         return 0
     info = fetch_health(port) or {}
     pid = info.get("pid")
@@ -193,18 +193,18 @@ def cmd_stop(args) -> int:
             break
         time.sleep(0.25)
     else:
-        print("Greek Coach did not stop.", file=sys.stderr)
+        print("Oknos did not stop.", file=sys.stderr)
         return 1
     try:
         paths.port_file().unlink()
     except OSError:
         pass
-    print("Greek Coach stopped.")
+    print("Oknos stopped.")
     return 0
 
 
 def cmd_health(args) -> int:
-    from greek_coach import packs
+    from oknos import packs
 
     catalog = packs.load_all()
     rep = health.report(catalog)
@@ -228,8 +228,8 @@ def cmd_health(args) -> int:
         mark = {True: " ok ", False: "FAIL", None: " -- "}[good]
         print(f"  {mark}  {text}")
 
-    print("Greek Coach health check")
-    line(True, f"Python {rep['python']}, Greek Coach {rep['version']}")
+    print("Oknos health check")
+    line(True, f"Python {rep['python']}, Oknos {rep['version']}")
     if rep["database"]:
         line(True, f"Database ready (schema {rep['schema_version']}) in {paths.db_path()}")
     else:
@@ -242,9 +242,9 @@ def cmd_health(args) -> int:
         line(server["ok"], f"App running at {server['url']}")
         line(server["greek_over_http"], "Greek text survives the web layer too")
     elif args.server:
-        line(False, "App is not running (start it with: uv run greek-coach start)")
+        line(False, "App is not running (start it with: uv run oknos start)")
     else:
-        line(None, "App is not running right now (that is fine; start it with: uv run greek-coach start)")
+        line(None, "App is not running right now (that is fine; start it with: uv run oknos start)")
     if voice["found"] is True:
         line(True, f"Greek voice installed: {', '.join(voice['voices'])}")
     elif voice["found"] is False:
@@ -257,11 +257,11 @@ def cmd_health(args) -> int:
 
 def _is_learner_folder(path: Path) -> bool:
     return not (path / "pack.json").exists() and any(
-        (path / name).exists() for name in ("profile.json", "generated", "coach", "greek-coach.db"))
+        (path / name).exists() for name in ("profile.json", "generated", "coach", "oknos.db", paths.OLD_DB_NAME))
 
 
 def cmd_validate(args) -> int:
-    from greek_coach import coachfiles, lint, packs, wordscan
+    from oknos import coachfiles, lint, packs, wordscan
 
     target = Path(args.path).resolve()
     learner_files: list[str] | None = None
@@ -341,8 +341,8 @@ def cmd_validate(args) -> int:
 def cmd_words(args) -> int:
     """Tappable words the lookup cannot explain, per pack; --write maps the inflected ones to their
     lemma (from the cached Wiktionary dump) in the pack's glossary.json."""
-    from greek_coach import lookup, packs, wordscan
-    from greek_coach.importer import enrich
+    from oknos import lookup, packs, wordscan
+    from oknos.importer import enrich
 
     target = Path(args.path).resolve()
     if target.is_dir() and _is_learner_folder(target):
@@ -358,7 +358,7 @@ def cmd_words(args) -> int:
         return 1
     forms_index = enrich.load_forms_index()
     if forms_index is None:
-        print("The Wiktionary dump is not downloaded (.cache/greek-coach/), so inflected forms cannot be mapped; "
+        print("The Wiktionary dump is not downloaded (.cache/oknos/), so inflected forms cannot be mapped; "
               "only the counts are shown.")
     main_index = enrich.load_index() if args.json and forms_index else None
     leftovers_all: list[dict] = []
@@ -395,8 +395,8 @@ def cmd_words(args) -> int:
 
 
 def cmd_import(args) -> int:
-    from greek_coach import packs
-    from greek_coach.importer import core, mapping as mapping_mod
+    from oknos import packs
+    from oknos.importer import core, mapping as mapping_mod
 
     mapping_path = Path(args.mapping)
     if not mapping_path.is_file():
@@ -430,7 +430,7 @@ def cmd_import(args) -> int:
 
 
 def cmd_report(args) -> int:
-    from greek_coach import packs, report
+    from oknos import packs, report
 
     try:
         days = report.parse_days(args.since)
@@ -490,7 +490,7 @@ def cmd_raw(args) -> int:
 
 
 def cmd_transcribe(args) -> int:
-    from greek_coach import transcribe
+    from oknos import transcribe
 
     conn = db.open_db()
     try:
@@ -512,7 +512,7 @@ def cmd_reload(args) -> int:
     """Tell the running app to load new content and coach files (the coach runs this after writing)."""
     port = running_port()
     if not port:
-        print("Greek Coach is not running. It loads the new content by itself the next time it starts.")
+        print("Oknos is not running. It loads the new content by itself the next time it starts.")
         return 0
     req = urllib.request.Request(f"{_url(port)}api/reload", data=b"{}", method="POST",
                                  headers={"Content-Type": "application/json"})
@@ -529,7 +529,7 @@ def cmd_reload(args) -> int:
 
 
 def cmd_run(args) -> int:
-    from greek_coach import scheduling
+    from oknos import scheduling
 
     ok, detail = scheduling.run(args.skill, args.agent)
     print(f"{args.skill}: {'ok' if ok else 'failed'} ({detail})")
@@ -537,7 +537,7 @@ def cmd_run(args) -> int:
 
 
 def cmd_schedule(args) -> int:
-    from greek_coach import scheduling
+    from oknos import scheduling
 
     try:
         if args.action == "add":
@@ -561,7 +561,7 @@ def cmd_schedule(args) -> int:
 
 
 def cmd_schema(args) -> int:
-    from greek_coach import coachfiles, curriculum, exams, packs
+    from oknos import coachfiles, curriculum, exams, packs
 
     out = paths.REPO_ROOT / "schemas"
     out.mkdir(exist_ok=True)
@@ -574,7 +574,7 @@ def cmd_schema(args) -> int:
 
 
 def cmd_shortcut(args) -> int:
-    from greek_coach import shortcut
+    from oknos import shortcut
 
     try:
         created = shortcut.create()
@@ -587,14 +587,14 @@ def cmd_shortcut(args) -> int:
 
 
 def cmd_guard(args: argparse.Namespace) -> int:
-    from greek_coach import guard
+    from oknos import guard
 
     return guard.main(args.rev)
 
 
 def main(argv: list[str] | None = None) -> int:
     _utf8_console()
-    parser = argparse.ArgumentParser(prog="greek-coach", description="Greek Coach, a local Greek learning app.")
+    parser = argparse.ArgumentParser(prog="oknos", description="Oknos, a local Greek learning app.")
     parser.add_argument("--version", action="version", version=__version__)
     sub = parser.add_subparsers(dest="command", required=True)
 
@@ -677,7 +677,7 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("schema", help="write the content pack JSON Schemas to schemas/")
     p.set_defaults(func=cmd_schema)
 
-    p = sub.add_parser("shortcut", help="put a Greek Coach shortcut on the desktop")
+    p = sub.add_parser("shortcut", help="put an Oknos shortcut on the desktop")
     p.set_defaults(func=cmd_shortcut)
 
     args = parser.parse_args(argv)

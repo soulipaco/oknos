@@ -14,9 +14,9 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 from typing import Iterable
 
-from greek_coach import greek
-from greek_coach.chapters import Bi, Chapter, Table
-from greek_coach.packs import (GAP_RE, CategoriseItem, FormItem, GapBankItem, MatchItem, McqItem, SpeakItem,
+from oknos import greek
+from oknos.chapters import Bi, Chapter, Table
+from oknos.packs import (GAP_RE, CategoriseItem, FormItem, GapBankItem, MatchItem, McqItem, SpeakItem,
                                TableFillItem, TrueFalseItem, VocabItem, WriteItem)
 
 
@@ -126,7 +126,7 @@ def scan(packs, index) -> Gaps:
     return gaps
 
 
-# ---------- filling the gaps from Wiktionary (greek-coach words) ----------
+# ---------- filling the gaps from Wiktionary (oknos words) ----------
 
 def where_used(pack) -> dict[str, str]:
     """word -> the first text of the pack it appears in (context for whoever explains it)."""
@@ -141,7 +141,7 @@ def where_used(pack) -> dict[str, str]:
 
 def known_lemmas(index, forms_index: dict, word: str) -> list[str]:
     """Wiktionary's lemmas for a form that the lookup itself explains (one more hop for a form of a form)."""
-    from greek_coach.importer import enrich
+    from oknos.importer import enrich
 
     out: list[str] = []
     for lemma, _ in enrich.lemmas_of(forms_index, word):
@@ -156,7 +156,7 @@ def known_lemmas(index, forms_index: dict, word: str) -> list[str]:
 def fill_forms(pack, index, forms_index: dict, main_index: dict | None = None) -> tuple[dict[str, list[str]], list[dict]]:
     """(new forms for the pack's glossary, leftovers). A leftover has the word, Wiktionary's lemmas
     with an English gloss as a hint, and a text where it appears."""
-    from greek_coach.importer import enrich
+    from oknos.importer import enrich
 
     gaps = scan([pack], index)
     used = where_used(pack)
@@ -208,7 +208,7 @@ VISIBILITY_ORDER = ("open", "private", "generated")
 def visible_to(catalog, visibility: str):
     """The catalog as a pack of this visibility can rely on: an open pack only on open packs (a
     fresh clone has nothing else), a private pack on open and private ones, the coach's on all."""
-    from greek_coach.packs import Catalog
+    from oknos.packs import Catalog
 
     allowed = set(VISIBILITY_ORDER[: VISIBILITY_ORDER.index(visibility) + 1])
     out = Catalog()
@@ -223,7 +223,7 @@ def lint_pack(pack, catalog) -> tuple[list[str], list[str]]:
     """For validate: (problems, notes). Notes: per items file and chapter, the tappable words the
     lookup cannot explain; the words left unexplained on purpose, with their reasons. Problems: a
     glossary form whose lemma the lookup does not know (the form would still find nothing)."""
-    from greek_coach import lookup
+    from oknos import lookup
 
     if pack.id not in {p.id for p in catalog.packs}:  # a pack outside the content folders
         catalog.packs.append(pack)
@@ -242,7 +242,7 @@ def lint_pack(pack, catalog) -> tuple[list[str], list[str]]:
         open_words = sorted(w for w in words if w not in gaps.left)
         if open_words:
             notes.append(f"{place}: {len(open_words)} tappable word(s) find no meaning: " + ", ".join(open_words[:40])
-                         + (" …" if len(open_words) > 40 else "") + " (greek-coach words --write maps inflected forms)")
+                         + (" …" if len(open_words) > 40 else "") + " (oknos words --write maps inflected forms)")
     left = sorted(gaps.unexplained & set(gaps.left))
     if left:
         notes.append("left unexplained on purpose: " + "; ".join(f"{w} ({gaps.left[w]})" for w in left))

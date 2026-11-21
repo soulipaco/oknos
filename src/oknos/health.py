@@ -1,4 +1,4 @@
-"""Install checks shared by GET /health and `greek-coach health`."""
+"""Install checks shared by GET /health and `oknos health`."""
 
 from __future__ import annotations
 
@@ -6,14 +6,14 @@ import os
 import platform
 import subprocess
 
-from greek_coach import __version__, db, paths
-from greek_coach.packs import Catalog
+from oknos import __version__, db, paths
+from oknos.packs import Catalog
 
 
 def report(catalog: Catalog) -> dict:
     """Database, Greek round trip and content. Safe to call repeatedly."""
     out: dict = {
-        "app": "greek-coach",
+        "app": "oknos",
         "version": __version__,
         "pid": os.getpid(),
         "learner_dir": str(paths.learner_dir()),

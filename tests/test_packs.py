@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from greek_coach import lint, packs, paths
+from oknos import lint, packs, paths
 
 OPEN = paths.CONTENT_DIR / "open"
 OPEN_PACKS = sorted(p for p in OPEN.iterdir() if (p / "pack.json").exists())

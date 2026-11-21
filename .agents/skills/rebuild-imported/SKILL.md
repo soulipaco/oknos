@@ -18,16 +18,16 @@ They are in `content/private/<pack>/raw/exercises.json`, which is private and gi
 #<!-- phase 5b: rebuilt items carry their lesson's stage tag -->
 # 1. Choose the lesson
 
-- `uv run greek-coach raw <pack> --list-units` lists the lessons with how many raw entries each has. The pack is usually `greek-helper`; `ls content/private` shows the others.
+- `uv run oknos raw <pack> --list-units` lists the lessons with how many raw entries each has. The pack is usually `greek-helper`; `ls content/private` shows the others.
 - If they did not say which lesson, suggest the earliest one they have not rebuilt yet:
   - look for `items/rebuilt-*.json` in the pack;
-  - check `covered.book_units_met` in `uv run greek-coach report`.
-- `uv run greek-coach raw <pack> --unit lesson-05` prints:
+  - check `covered.book_units_met` in `uv run oknos report`.
+- `uv run oknos raw <pack> --unit lesson-05` prints:
   - the lesson outline (theme, functions, grammar, vocabulary);
   - its raw entries (page, exercise marker, instruction, text).
 
   Use `--limit` and `--pages` for long lessons.
-- **Answer keys** are separate entries (`kind: answer_key`), mostly not linked to a lesson. Search them with words from the exercise: `uv run greek-coach raw <pack> --kind answer_key --search "<a distinctive word>"`. Use one only if it clearly belongs to this exercise.
+- **Answer keys** are separate entries (`kind: answer_key`), mostly not linked to a lesson. Search them with words from the exercise: `uv run oknos raw <pack> --kind answer_key --search "<a distinctive word>"`. Use one only if it clearly belongs to this exercise.
 
 #<!-- phase 5b: rebuilt items carry their lesson's stage tag -->
 # 2. Understand each raw exercise
@@ -62,8 +62,8 @@ Write clean items of the supported types (SPEC §4.4) to `content/private/<pack>
 # 4. Check and load
 
 1. Self-check every item (COACHING §5.2).
-2. Run `uv run greek-coach validate content/private/<pack>` and fix every problem.
-3. Run `uv run greek-coach reload`.
+2. Run `uv run oknos validate content/private/<pack>` and fix every problem.
+3. Run `uv run oknos reload`.
 4. Give them a link to try a few right away: `<app_url>?practice=<pack>/<id>,…` with 4–6 ids.
 
 #<!-- phase 5b: rebuilt items carry their lesson's stage tag -->

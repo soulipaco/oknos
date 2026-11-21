@@ -13,7 +13,7 @@ Drafted by Sonnet (claude-sonnet), reviewed by Opus on 2026-11-20.
 - Forms built by pattern and not in the open verb pack were all checked: έρχεσαι, χρειάζεσαι, χρειαζόμαστε, θυμόμαστε, θυμούνται, κοιμάστε, κοιμόμαστε, κοιμούνται, μιλάνε, ρωτάνε, πουλάνε. All correct.
 
 ## Validate
-No problems. Inflected forms are mapped by `greek-coach words --write`; «Εμπρός» (answering the phone) got a glossary row.
+No problems. Inflected forms are mapped by `oknos words --write`; «Εμπρός» (answering the phone) got a glossary row.
 
 ## Count
 Greek fixes: 1. Teaching fixes: 4.

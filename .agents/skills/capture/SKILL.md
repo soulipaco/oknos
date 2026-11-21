@@ -48,8 +48,8 @@ Write to `<learner_dir>/generated/coach-capture/items/<today>-<short-name>.json`
 Set `level` honestly. A real notice may be B1 in places; simplify the reading text or mark the item B1. Then:
 
 - self-check every item (COACHING §5.2);
-- `uv run greek-coach validate <learner_dir>/generated/coach-capture`, then `uv run greek-coach validate <learner_dir>`;
-- `uv run greek-coach reload`.
+- `uv run oknos validate <learner_dir>/generated/coach-capture`, then `uv run oknos validate <learner_dir>`;
+- `uv run oknos reload`.
 
 ## 5. Tidy up and tell them
 

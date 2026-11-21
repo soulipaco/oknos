@@ -13,7 +13,7 @@ Engines, best first by the phase-3 listening test (SPEC §9):
            and only for content packs: never for anything under learner/ (captured documents,
            writing, coach packs built from them).
   windows  The local Windows voice (Microsoft Stefanos) through the WinRT speech API. Offline.
-  piper    Piper with a Greek voice model in .cache/greek-coach/piper/. Offline, but the CC0 voice
+  piper    Piper with a Greek voice model in .cache/oknos/piper/. Offline, but the CC0 voice
            garbled sentences in the phase-3 test, so it is a last resort.
 """
 
@@ -32,10 +32,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from greek_coach import packs, paths  # noqa: E402
+from oknos import packs, paths  # noqa: E402
 
 EDGE_VOICE = "el-GR-AthinaNeural"
-PIPER_MODEL = ROOT / ".cache" / "greek-coach" / "piper" / "el_GR-rapunzelina-low.onnx"
+PIPER_MODEL = ROOT / ".cache" / "oknos" / "piper" / "el_GR-rapunzelina-low.onnx"
 
 WINDOWS_PS = r"""
 $ErrorActionPreference = "Stop"

@@ -8,7 +8,7 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Callable
 
-from greek_coach import paths
+from oknos import paths
 
 # Covers accents, final sigma, diaeresis with accent and an em dash.
 GREEK_SAMPLE = unicodedata.normalize("NFC", "Καλημέρα! Ένας καφές, παρακαλώ — ς ΐ ΰ")

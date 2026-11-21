@@ -2,9 +2,9 @@
 
 faster-whisper is an optional dependency group (`speech`), used only by the coach:
 
-    uv run --group speech greek-coach transcribe [--model small]
+    uv run --group speech oknos transcribe [--model small]
 
-The model (small, about 0.5 GB) is downloaded once into .cache/greek-coach/whisper/, after the
+The model (small, about 0.5 GB) is downloaded once into .cache/oknos/whisper/, after the
 learner's OK. Transcripts go to learner/recordings/<submission-id>.json. They are "what the
 machine heard", never a pronunciation score: beginner speech is hard for any recogniser.
 """
@@ -15,9 +15,9 @@ import json
 import sqlite3
 from pathlib import Path
 
-from greek_coach import coachfiles, db, paths
+from oknos import coachfiles, db, paths
 
-MODEL_DIR = paths.REPO_ROOT / ".cache" / "greek-coach" / "whisper"
+MODEL_DIR = paths.CACHE_DIR / "whisper"
 DEFAULT_MODEL = "small"
 
 
@@ -47,7 +47,7 @@ def transcribe(conn: sqlite3.Connection, model_name: str = DEFAULT_MODEL, ids: l
         from faster_whisper import WhisperModel
     except ImportError as e:
         raise MissingDependency(
-            "faster-whisper is not installed. Run this command as: uv run --group speech greek-coach transcribe"
+            "faster-whisper is not installed. Run this command as: uv run --group speech oknos transcribe"
         ) from e
     todo = pending(conn, ids)
     if not todo:

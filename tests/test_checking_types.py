@@ -3,8 +3,8 @@
 import pytest
 from pydantic import ValidationError
 
-from greek_coach.checking import CheckError, check, check_typed
-from greek_coach.packs import CategoriseItem, FormItem, GapBankItem, MatchItem, VocabItem, _item_adapter
+from oknos.checking import CheckError, check, check_typed
+from oknos.packs import CategoriseItem, FormItem, GapBankItem, MatchItem, VocabItem, _item_adapter
 
 PIGA = FormItem(id="f", type="form", skill="grammar", level="A2",
                 text="Χθες {1} στη λαϊκή.", cue={"lemma": "πηγαίνω", "person": "1sg", "tense": "aorist"},

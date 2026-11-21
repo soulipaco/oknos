@@ -11,7 +11,7 @@ The learner will decide which session to book, and when, from this plan and the 
 
 ## 1. Get the facts
 
-1. Run `uv run greek-coach report`. You need:
+1. Run `uv run oknos report`. You need:
    - `plan_inputs`: candidate sessions from `watch.json` (date, registration window, `weeks_left`, `hours_at_pace`, `hours_needed`, `hint`), the real pace, the budget and `exams_without_announced_date`;
    - `readiness`: the state of each unit of each exam, and the verdict;
    - `coverage`: what has and has not been practised per exam task, and B1's `beyond_a2` list;
@@ -101,4 +101,4 @@ At most about 6 lines in their language:
 - the next two weeks in one line each;
 - "the plan is on the exam screen": `<app_url>?exam`.
 
-Then `uv run greek-coach validate <learner_dir>` and `uv run greek-coach reload`.
+Then `uv run oknos validate <learner_dir>` and `uv run oknos reload`.

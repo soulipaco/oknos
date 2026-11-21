@@ -7,7 +7,7 @@ unless a pack's own `pack.json` says otherwise.
 - Human-readable summary: https://creativecommons.org/licenses/by-sa/4.0/
 - Full legal code: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
-Attribution: "Greek Coach contributors", with a link to this repository.
+Attribution: "Oknos contributors", with a link to this repository.
 
 Every pack records its licence in the `licence` field of its `pack.json`, and a test
 checks that each pack here is marked `"visibility": "open"` with an open licence.

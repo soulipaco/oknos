@@ -3,9 +3,9 @@
 import random
 from datetime import date, datetime, timedelta
 
-from greek_coach import db, packs, scheduler, session
-from greek_coach.checking import check
-from greek_coach.scheduler import State, next_state
+from oknos import db, packs, scheduler, session
+from oknos.checking import check
+from oknos.scheduler import State, next_state
 
 
 def test_sm2_intervals_grow_and_lapses_reset():

@@ -16,7 +16,7 @@ The learner has done some sessions in the app, opened you and said one word. The
 ## 1. Look before you talk
 
 1. Send one short line in their language, so they know you are on it: "Looking at your last two weeks…" or "Son iki haftana bakıyorum…".
-2. Run `uv run greek-coach report`. Note `learner_dir`, the UI language (`profile.ui_lang`), `app_url` and `profile_missing`.
+2. Run `uv run oknos report`. Note `learner_dir`, the UI language (`profile.ui_lang`), `app_url` and `profile_missing`.
 3. Read `coach/notes.md` if it exists. It is your memory of earlier check-ins: what you promised, what they told you.
 
 ## 2. First run: the profile
@@ -77,9 +77,9 @@ Let the current plan week's `focus` and `beyond_a2` steer what you prepare in st
 1. Write **10–30 items** to `learner/generated/coach-practice/items/<today>-checkin.json`, aimed at those weak areas and built from their life (COACHING §5). They are for the **current stage** of the curriculum: tag each with `"stage:<id>"` (COACHING §5.3). For a book lesson, the `rebuild-imported` skill turns that lesson's own exercises into items, which is usually the best material.
    - If they have not done a writing task for a while and no `write` item is unseen, include one `write` prompt in exam format, about something from their life.
 2. **Self-check every item** against COACHING §5.2, then:
-   - `uv run greek-coach validate <learner_dir>/generated/coach-practice`; fix every problem and look at every note;
-   - `uv run greek-coach validate <learner_dir>`;
-   - `uv run greek-coach reload`.
+   - `uv run oknos validate <learner_dir>/generated/coach-practice`; fix every problem and look at every note;
+   - `uv run oknos validate <learner_dir>`;
+   - `uv run oknos reload`.
 3. If there are listening items and the platform allows it, run `make_audio.py` (COACHING §8).
 
 ## 6. Tell them
@@ -107,10 +107,10 @@ Tone: direct, brief, adult. No praise inflation. Never a word about missed days,
   - anything they told you;
   - open questions for next time;
   - maintainer to-dos.
-- Run `uv run greek-coach validate <learner_dir>` one last time.
+- Run `uv run oknos validate <learner_dir>` one last time.
 
 ## If something goes wrong
 
-- **`report` fails**: run `uv run greek-coach health`. A non-technical learner gets one plain sentence ("something in the app needs fixing; I'll note it for the maintainer"), and you still talk to them about their Greek from what you know.
-- **The app is not running** (`app_url` is null): that is fine. Content loads when they next start it. Tell them to double-click Greek Coach on the desktop when they want to practise.
+- **`report` fails**: run `uv run oknos health`. A non-technical learner gets one plain sentence ("something in the app needs fixing; I'll note it for the maintainer"), and you still talk to them about their Greek from what you know.
+- **The app is not running** (`app_url` is null): that is fine. Content loads when they next start it. Tell them to double-click Oknos on the desktop when they want to practise.
 - **No practice yet** (`answers_all_time` is 0): skip the analysis. Do the profile (step 2), prepare a small first set from their interests (8–10 A1 items), and tell them how to start the app.

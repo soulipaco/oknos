@@ -6,8 +6,8 @@ from datetime import date, datetime, timedelta
 
 import pytest
 
-from greek_coach import curriculum, db, packs, scheduler, session
-from greek_coach.checking import check
+from oknos import curriculum, db, packs, scheduler, session
+from oknos.checking import check
 
 
 def _clock(d: date, hour: int = 9):

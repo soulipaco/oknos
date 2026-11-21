@@ -9,7 +9,7 @@ The guardrail "Local only. No accounts, no telemetry, no cloud services" (`AGENT
 1. **Keep it at home and reach it privately:** a private network such as Tailscale (free personal plan) or WireGuard, so my phone reaches the laptop as if on the same Wi-Fi. Nothing is hosted; the laptop must be on.
 2. **A small always-on machine at home:** an old laptop or a Raspberry Pi, with option 1 for access.
 3. **A free virtual server:** for example Oracle Cloud's Always Free tier or Google Cloud's free e2-micro. Check what is really free today, and what a credit card on file means.
-4. **Free app hosting:** for example Render, Fly.io, Koyeb, Railway or Hugging Face Spaces. Check sleeping, the free hours, and whether the disk survives a restart, because the app keeps everything in SQLite (`learner/greek-coach.db`).
+4. **Free app hosting:** for example Render, Fly.io, Koyeb, Railway or Hugging Face Spaces. Check sleeping, the free hours, and whether the disk survives a restart, because the app keeps everything in SQLite (`learner/oknos.db`).
 
 ## For each, answer
 
@@ -18,7 +18,7 @@ The guardrail "Local only. No accounts, no telemetry, no cloud services" (`AGENT
 - **Copyright:** my private book material (`content/private/`) must never be reachable by anyone else. Can the option guarantee that?
 - **Access control:** the app has no login. What stops a stranger from opening it, and what would have to be added?
 - **The browser features:** speech recording and some audio need HTTPS outside `localhost`. Does the option give HTTPS?
-- **The coach:** the agent works on the files (`learner/`, packs, `coach/`). Where does it run in this option, and do the scheduled runs (`greek-coach schedule`) still work?
+- **The coach:** the agent works on the files (`learner/`, packs, `coach/`). Where does it run in this option, and do the scheduled runs (`oknos schedule`) still work?
 - **Effort:** setup steps, and what breaks when I am not watching it.
 
 ## Deliver

@@ -49,7 +49,7 @@ Exam sessions are announced late and places can be capped. Missing a registratio
    - `what` is English and short; `what_tr` is the Turkish.
    - Set `changed: true` for an entry that is new, or whose date or registration differs from the previous file.
    - Keep past entries out once their dates have passed. Leave out a course whose registration has closed, and mention it in `coach/notes.md` instead.
-6. Run `uv run greek-coach validate <learner_dir>`, then `uv run greek-coach reload`.
+6. Run `uv run oknos validate <learner_dir>`, then `uv run oknos reload`.
 
 ## Telling the learner
 
@@ -62,7 +62,7 @@ Exam sessions are announced late and places can be capped. Missing a registratio
 A weekly run is set up like daily prep's (see `.agents/skills/daily-prep/SKILL.md`, "Setting up the schedule"), with:
 
 ```
-uv run greek-coach schedule add watch --every week --day MON --at HH:MM
+uv run oknos schedule add watch --every week --day MON --at HH:MM
 ```
 
-In a scheduled run (`GREEK_COACH_SCHEDULED_RUN` is set), never ask anything. Write the file and finish with a one-line summary.
+In a scheduled run (`OKNOS_SCHEDULED_RUN` is set), never ask anything. Write the file and finish with a one-line summary.

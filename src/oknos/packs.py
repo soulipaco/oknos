@@ -18,10 +18,10 @@ from typing import Annotated, Any, Literal, Union
 
 from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, ValidationError, model_validator
 
-from greek_coach import chapters as chapters_mod
-from greek_coach import db, paths
+from oknos import chapters as chapters_mod
+from oknos import db, paths
 
-log = logging.getLogger("greek_coach.packs")
+log = logging.getLogger("oknos.packs")
 
 OPEN_LICENCES = {"CC-BY-SA-4.0", "CC-BY-4.0", "CC0-1.0", "MIT"}
 SUPPORTED_TYPES = {"vocab", "form", "mcq", "true_false", "match", "gap_bank", "categorise", "table_fill",

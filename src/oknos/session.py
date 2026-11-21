@@ -22,9 +22,9 @@ from collections import defaultdict
 from datetime import date, timedelta
 from typing import Any
 
-from greek_coach import coachfiles, db, paths, scheduler
-from greek_coach.checking import meaning, meaning_lang
-from greek_coach.packs import (
+from oknos import coachfiles, db, paths, scheduler
+from oknos.checking import meaning, meaning_lang
+from oknos.packs import (
     OPEN_TASKS,
     SELECTION_TASKS,
     Catalog,
@@ -146,7 +146,7 @@ _examples_cache: dict[int, dict[str, dict]] = {}
 
 def chapter_examples(catalog: Catalog) -> dict[str, dict]:
     """Folded Greek word -> the first chapter sentence that uses it ({el, tr, en}), for learn cards."""
-    from greek_coach import greek
+    from oknos import greek
 
     key = id(catalog)
     if key not in _examples_cache:
@@ -164,7 +164,7 @@ def chapter_examples(catalog: Catalog) -> dict[str, dict]:
 def learn_part(item: VocabItem, lang: str, catalog: Catalog | None) -> dict:
     """What a learn card shows before a word is tested for the first time (phase 5c): the word,
     its meaning, and an example sentence (the item's own, else one from a chapter)."""
-    from greek_coach import greek
+    from oknos import greek
 
     example = item.example.model_dump() if item.example else None
     if example is None and catalog is not None:
@@ -307,7 +307,7 @@ def gate(conn: sqlite3.Connection, catalog: Catalog):
     """What daily sessions may serve: the stages of the curriculum reached so far (docs/SPEC.md
     §5.4). Returns (allowed(key, item) -> bool, rank(key) -> sort key). Without a curriculum,
     the learner's level is the limit."""
-    from greek_coach import curriculum  # curriculum imports this module's neighbours
+    from oknos import curriculum  # curriculum imports this module's neighbours
 
     try:
         prog = curriculum.progress(conn, catalog, record=True)
@@ -334,7 +334,7 @@ def gate(conn: sqlite3.Connection, catalog: Catalog):
 def plan_focus_tasks(today: date) -> set[str]:
     """The exam tasks of the units the coach's plan puts in focus this week (empty without a plan)."""
     try:
-        from greek_coach import exams
+        from oknos import exams
 
         plan = coachfiles.plan()
         if plan is None:
@@ -352,7 +352,7 @@ def plan_focus_tasks(today: date) -> set[str]:
 def reserved_for_mocks(conn: sqlite3.Connection) -> set[str]:
     """Items of a mock exam the learner has not taken yet stay out of daily sessions, so the
     mock is a first sight of them (and so counts as readiness evidence)."""
-    from greek_coach import mock  # mock builds its cards with this module
+    from oknos import mock  # mock builds its cards with this module
 
     try:
         return mock.reserved_keys(conn)
@@ -814,7 +814,7 @@ def chosen(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, what: str, 
     """A practice session of what the learner picked, from the stages they have reached.
 
     Due items come first, then ones not seen yet, then the longest unseen. Sized to `minutes`."""
-    from greek_coach import curriculum
+    from oknos import curriculum
 
     if what not in CHOICES:
         raise ValueError(f"unknown choice {what!r}")
@@ -896,7 +896,7 @@ def status_of(state: scheduler.State | None) -> str:
 
 def word_list(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str) -> dict:
     """Every word, with its stage, whether it is open yet, and how well it is known."""
-    from greek_coach import curriculum
+    from oknos import curriculum
 
     prog = curriculum.progress(conn, catalog)
     states = scheduler.all_states(conn)
@@ -919,7 +919,7 @@ def word_list(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str) -> dict:
 
 def verb_table(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str) -> dict:
     """Every verb with its forms per tense and person, and whether each is open and known."""
-    from greek_coach import curriculum
+    from oknos import curriculum
 
     prog = curriculum.progress(conn, catalog)
     states = scheduler.all_states(conn)
@@ -943,7 +943,7 @@ def verb_table(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str) -> dict
 
 
 def stage_detail(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage_id: str) -> dict | None:
-    from greek_coach import curriculum
+    from oknos import curriculum
 
     prog = curriculum.progress(conn, catalog)
     if prog is None or stage_id not in [s.id for s in prog.curriculum.stages]:
@@ -979,7 +979,7 @@ def stage_detail(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage
 def chapter_view(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage_id: str) -> dict | None:
     """A stage's chapter as the reader shows it: the blocks, with words resolved to their item
     (Greek, meaning, status), and where the learner is in it."""
-    from greek_coach import curriculum
+    from oknos import curriculum
 
     prog = curriculum.progress(conn, catalog)
     if prog is None or stage_id not in [s.id for s in prog.curriculum.stages]:
@@ -1032,7 +1032,7 @@ def chapter_view(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage
 def chapter_checks(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage_id: str, keys: list[str]) -> dict:
     """A short session of a chapter's "try it" items, of kind 'lesson': the answers train the
     review schedule but never count as exam evidence (readiness.for_blueprint)."""
-    from greek_coach import curriculum
+    from oknos import curriculum
 
     cur = curriculum.active(catalog)
     ch = catalog.chapter(cur.id, stage_id) if cur else None
@@ -1049,7 +1049,7 @@ def chapter_practice(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, s
                      has_voice: bool = False) -> dict:
     """"Done reading — practise this chapter": marks the chapter read, then a session of exactly
     this stage's items (its words first: the ones the chapter taught)."""
-    from greek_coach import curriculum
+    from oknos import curriculum
 
     cur = curriculum.active(catalog)
     ch = catalog.chapter(cur.id, stage_id) if cur else None

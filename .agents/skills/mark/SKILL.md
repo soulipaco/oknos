@@ -15,7 +15,7 @@ The learner wrote or recorded something in the app (a `write` or `speak` card). 
 
 ## 1. Find what is waiting
 
-Run `uv run greek-coach report` and look at `submissions.pending`. Each entry has:
+Run `uv run oknos report` and look at `submissions.pending`. Each entry has:
 
 - `submission_id` and `item_key`;
 - `task` (the prompt, word range and required points);
@@ -55,13 +55,13 @@ For each piece:
    - one `mcq` for register.
 
    Use sentences close to theirs, about the same topic. Self-check, validate, reload (COACHING §4), and list the new item keys in `exercises`.
-8. **Write `<learner_dir>/feedback/<submission_id>.json`** (COACHING §7.3). Then run `uv run greek-coach validate <learner_dir>` and `uv run greek-coach reload`. The app marks the submission as done and shows "Feedback is ready" on the home screen.
+8. **Write `<learner_dir>/feedback/<submission_id>.json`** (COACHING §7.3). Then run `uv run oknos validate <learner_dir>` and `uv run oknos reload`. The app marks the submission as done and shows "Feedback is ready" on the home screen.
 
 ## 3. Speaking
 
 1. **Get a transcript.** If `transcribed` is false:
    - If `profile.whisper_ok` is not true, ask once, in their language: "To listen to your recordings I need a free speech-recognition model, about 0.5 GB. It runs only on this computer; nothing is sent anywhere. Shall I download it?" On a yes, set `"whisper_ok": true` in `profile.json`. On a no, give feedback on the task and the model answer only, and say you could not listen.
-   - Run `uv run --group speech greek-coach transcribe`. If it says the model is not downloaded and they said yes, run it again with `--download`. The first run also installs the speech package, which takes a few minutes.
+   - Run `uv run --group speech oknos transcribe`. If it says the model is not downloaded and they said yes, run it again with `--download`. The first run also installs the speech package, which takes a few minutes.
 2. **Remember what a transcript is.** It is what a machine heard, and beginners' Greek is hard for it. An odd word may be the recogniser's mistake, not theirs. Treat a word as their error only when the transcript makes sense otherwise and the error is a typical learner error (a wrong ending, a wrong article).
 3. **Write the feedback** with `kind: "speaking"`:
    - `heard`: the transcript, verbatim;

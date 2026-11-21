@@ -13,7 +13,7 @@ from typing import Any, List
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from greek_coach.packs import Level, Text
+from oknos.packs import Level, Text
 
 
 class Strict(BaseModel):

@@ -16,7 +16,7 @@ import sqlite3
 from dataclasses import dataclass
 from datetime import date, timedelta
 
-from greek_coach import db
+from oknos import db
 
 ALWAYS_SCHEDULED = {"vocab", "form"}
 MIN_EASE = 1.3

@@ -1,4 +1,4 @@
-"""Checks on the Greek inside a pack, for `greek-coach validate` (docs/COACHING.md).
+"""Checks on the Greek inside a pack, for `oknos validate` (docs/COACHING.md).
 
 A learner cannot tell when generated Greek is wrong, so the mechanical errors a writer (human or
 model) makes are caught here:
@@ -23,7 +23,7 @@ import unicodedata
 from pathlib import Path
 from typing import Any, Iterable
 
-from greek_coach import greek
+from oknos import greek
 
 _POLYTONIC = re.compile(r"[ἀ-῿]")
 _GREEK = r"Ͱ-Ͽἀ-῿"
@@ -145,7 +145,7 @@ def known_words(catalog, exclude_pack: str | None = None) -> set[str]:
             for _, text in _strings(item.model_dump(mode="json")):
                 out.update(greek.fold(w) for w in greek.words(text))
     try:
-        from greek_coach.importer import enrich
+        from oknos.importer import enrich
 
         if enrich.INDEX.is_file():
             index = json.loads(enrich.INDEX.read_text(encoding="utf-8"))
@@ -189,7 +189,7 @@ def lint_tags(pack) -> tuple[list[str], list[str]]:
     task's unit. Notes: an item below the exam's level (it is practice, not evidence for
     readiness), and, in coach packs, task-type items with no exam_task at all.
     """
-    from greek_coach import exams
+    from oknos import exams
 
     tasks = exams.all_task_ids()
     problems: list[str] = []
@@ -282,7 +282,7 @@ CHAPTER_SKIP_KEYS = {"type", "kind", "exam_task", "items", "id", "curriculum", "
 def _chapter_greek(value: Any, path: str = "") -> Iterable[tuple[str, str]]:
     """The Greek-bearing strings of a raw chapter: el fields, table cells, speakers, and the [[..]]
     spans inside the explanations (the explanation text itself is Turkish or English)."""
-    from greek_coach.chapters import INLINE_GREEK
+    from oknos.chapters import INLINE_GREEK
 
     if isinstance(value, str):
         yield path, value
@@ -302,7 +302,7 @@ def _chapter_greek(value: Any, path: str = "") -> Iterable[tuple[str, str]]:
 
 def lint_chapter_files(pack_dir: Path) -> tuple[list[str], list[str]]:
     """The Greek lint (problems and notes) over a pack's lessons/*.json, before NFC normalisation."""
-    from greek_coach.chapters import chapter_files
+    from oknos.chapters import chapter_files
 
     problems: list[str] = []
     notes: list[str] = []
@@ -331,9 +331,9 @@ def chapter_checks(pack, catalog) -> tuple[list[str], list[str]]:
     """Problems: the chapter's curriculum or stage does not exist, or it names items nobody has.
     Notes: reading time outside the level's range, and Greek words in its dialogues and examples
     that neither this nor an earlier stage teaches (nor the chapter's own words or [[glosses]])."""
-    from greek_coach import curriculum as curriculum_mod
-    from greek_coach.chapters import MINUTES
-    from greek_coach.packs import VocabItem, chapter_ref_problems
+    from oknos import curriculum as curriculum_mod
+    from oknos.chapters import MINUTES
+    from oknos.packs import VocabItem, chapter_ref_problems
 
     problems: list[str] = []
     notes: list[str] = []
@@ -350,8 +350,8 @@ def chapter_checks(pack, catalog) -> tuple[list[str], list[str]]:
         if stage_id not in [s.id for s in cur.stages]:
             problems.append(f"{label}: the curriculum '{cur.id}' has no stage '{stage_id}'")
             continue
-        from greek_coach import exams
-        from greek_coach.chapters import Tip
+        from oknos import exams
+        from oknos.chapters import Tip
 
         task_ids = exams.all_task_ids()
         for _, _, b in ch.blocks():

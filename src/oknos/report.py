@@ -1,4 +1,4 @@
-"""`greek-coach report`: one JSON document the coach reads instead of the database (SPEC §5.2).
+"""`oknos report`: one JSON document the coach reads instead of the database (SPEC §5.2).
 
 Read-only. It is the stable contract between app and agent: add fields freely, but do not
 rename or remove them without updating docs/COACHING.md and the skills.
@@ -13,8 +13,8 @@ from datetime import date, timedelta
 from pathlib import Path
 from typing import Any
 
-from greek_coach import coachfiles, curriculum, db, mock, paths, plan, readiness, scheduler, session
-from greek_coach.packs import Catalog, FormItem, SELECTION_TASKS, SpeakItem, VocabItem, WriteItem
+from oknos import coachfiles, curriculum, db, mock, paths, plan, readiness, scheduler, session
+from oknos.packs import Catalog, FormItem, SELECTION_TASKS, SpeakItem, VocabItem, WriteItem
 
 REPORT_VERSION = 4  # 3: chapters (phase 5c); 4: tap_a_word (phase 5d)
 PROFILE_QUESTIONS = ("ui_lang", "minutes", "goal", "target_exam", "interests")
@@ -324,8 +324,8 @@ def mocks_state(conn: sqlite3.Connection, catalog: Catalog) -> dict:
 
 def tap_a_word(catalog: Catalog) -> dict:
     """How many of the Greek words on screen find a meaning when tapped (phase 5d). The coach
-    fills the gaps: `greek-coach words <pack> --write`, then glossary entries for the rest."""
-    from greek_coach import lookup, wordscan
+    fills the gaps: `oknos words <pack> --write`, then glossary entries for the rest."""
+    from oknos import lookup, wordscan
 
     gaps = wordscan.scan(catalog.packs, lookup.Index(catalog))
     by_pack: dict[str, int] = {}

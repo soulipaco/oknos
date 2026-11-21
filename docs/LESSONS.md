@@ -25,7 +25,7 @@ This file is for whoever writes chapters: the maintainer, the coach, or a drafti
 
 ## 2. The format
 
-The JSON Schema is `schemas/chapter.schema.json` (written by `uv run greek-coach schema`). The model is in `src/greek_coach/chapters.py`.
+The JSON Schema is `schemas/chapter.schema.json` (written by `uv run oknos schema`). The model is in `src/oknos/chapters.py`.
 
 ```json
 {
@@ -115,7 +115,7 @@ The JSON Schema is `schemas/chapter.schema.json` (written by `uv run greek-coach
 6. **Words already in a pack** are referenced, never duplicated. A missing word becomes a new vocab item in `items/chapter-<stage>.json`, with `en`, `tr`, `pos`, a gender for nouns, and an `example`.
 7. **Every word can be tapped.**
    - Every Greek word in your chapter and items must be explained by tapping. `validate` lists those that are not, per chapter and per items file.
-   - An inflected form usually needs nothing: `uv run greek-coach words <pack> --write` maps it to its word.
+   - An inflected form usually needs nothing: `uv run oknos words <pack> --write` maps it to its word.
    - A word that is not worth a practice item gets a row in the pack's `glossary.json`. A name needs nothing if it is a speaker or a common name; otherwise it goes in the glossary's `names`.
 8. **The Greek must carry the question.**
    - The learner sees the Greek; the translation is behind "Translate". So a true/false statement is a claim in Greek («Η ΣΤΑΣΗ είναι για το λεωφορείο.»), not a sign alone («ΣΤΑΣΗ»), with the claim in the translation.
@@ -140,7 +140,7 @@ Read the chapter as the learner would see it: `?lesson=<stage>` in the app.
   - [ ] Does each check test what the chapter taught?
 - [ ] **Questions.** Every check can be answered from what is on screen without pressing "Translate" (§4 rule 8).
 - [ ] **Copyright.** Nothing is copied from the book.
-- [ ] **Validation.** `uv run greek-coach validate <pack>` reports no problems. Its notes are read and either fixed or answered in the review note. No tappable word of the chapter is left without a meaning (§4 rule 7).
+- [ ] **Validation.** `uv run oknos validate <pack>` reports no problems. Its notes are read and either fixed or answered in the review note. No tappable word of the chapter is left without a meaning (§4 rule 7).
 
 The review note (`lessons/review/<stage>.md`) lists, in a few lines:
 - what was corrected;

@@ -222,41 +222,6 @@ wheels = [
 ]
 
 [[package]]
-name = "greek-coach"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "fastapi" },
-    { name = "uvicorn" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "httpx" },
-    { name = "pytest" },
-]
-speech = [
-    { name = "av" },
-    { name = "faster-whisper" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "fastapi", specifier = ">=0.115" },
-    { name = "uvicorn", specifier = ">=0.30" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "httpx", specifier = ">=0.27" },
-    { name = "pytest", specifier = ">=8" },
-]
-speech = [
-    { name = "av", specifier = ">=16,<17" },
-    { name = "faster-whisper", specifier = ">=1.1" },
-]
-
-[[package]]
 name = "h11"
 version = "0.16.0"
 source = { registry = "https://pypi.org/simple" }
@@ -550,6 +515,41 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/99/3a/ab02c902cb380d0b950eccda4f0b67ac4f66ba490c98756d38adc4b3ccb5/numpy-2.5.5-cp315-cp315t-win32.whl", hash = "sha256:b5d08742de581c9eb61102768ccca125a2982913de399611b56981a07278de74", size = 6344124, upload-time = "2026-11-15T21:32:22.058Z" },
     { url = "https://files.pythonhosted.org/packages/fd/49/b04b1f12231e6fbcf26fd5e7949f629530e11c46a6fcd91923f61b017243/numpy-2.5.5-cp315-cp315t-win_amd64.whl", hash = "sha256:410eab02c6718cb42d06ccbb8604659f3522d2ce06ae70cacd5042092659f5af", size = 12898288, upload-time = "2026-11-15T21:32:23.871Z" },
     { url = "https://files.pythonhosted.org/packages/36/7b/935a5896b0bd441c6dd6da81f39bc5ebf8d5da891b7dcff768e1e1c088b5/numpy-2.5.5-cp315-cp315t-win_arm64.whl", hash = "sha256:b6ecbc1ff292c6799067d8064a4dd35cd25ba9d1a24aa41dd635d701691a49b5", size = 10891314, upload-time = "2026-11-15T21:32:26.357Z" },
+]
+
+[[package]]
+name = "oknos"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "fastapi" },
+    { name = "uvicorn" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "httpx" },
+    { name = "pytest" },
+]
+speech = [
+    { name = "av" },
+    { name = "faster-whisper" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "fastapi", specifier = ">=0.115" },
+    { name = "uvicorn", specifier = ">=0.30" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "httpx", specifier = ">=0.27" },
+    { name = "pytest", specifier = ">=8" },
+]
+speech = [
+    { name = "av", specifier = ">=16,<17" },
+    { name = "faster-whisper", specifier = ">=1.1" },
 ]
 
 [[package]]

@@ -8,7 +8,7 @@ import re
 
 import pytest
 
-from greek_coach import paths
+from oknos import paths
 
 CANONICAL = paths.REPO_ROOT / ".agents" / "skills"
 POINTERS = paths.REPO_ROOT / ".claude" / "skills"

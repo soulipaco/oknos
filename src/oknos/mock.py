@@ -14,7 +14,7 @@ items of that section in paper order. The app runs it:
 - section points follow the blueprint: each task's points times the share of its questions
   answered right, an unanswered item counting as wrong.
 
-GREEK_COACH_MOCK_SPEED (development only) makes mock time pass faster, to check the timing.
+OKNOS_MOCK_SPEED (development only) makes mock time pass faster, to check the timing.
 """
 
 from __future__ import annotations
@@ -26,9 +26,9 @@ import sqlite3
 from datetime import datetime, timedelta
 from typing import Any
 
-from greek_coach import coachfiles, db, exams, paths, scheduler, session
-from greek_coach.checking import CheckError, check
-from greek_coach.packs import (
+from oknos import coachfiles, db, exams, paths, scheduler, session
+from oknos.checking import CheckError, check
+from oknos.packs import (
     OPEN_TASKS,
     Catalog,
     CategoriseItem,
@@ -47,7 +47,7 @@ class MockError(ValueError):
 
 def speed() -> float:
     try:
-        value = float(os.environ.get("GREEK_COACH_MOCK_SPEED", "1"))
+        value = float(paths.env("MOCK_SPEED", "1"))
     except ValueError:
         return 1.0
     return value if value > 0 else 1.0

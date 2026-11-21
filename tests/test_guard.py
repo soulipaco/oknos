@@ -2,7 +2,7 @@
 
 import subprocess
 
-from greek_coach import guard, paths
+from oknos import guard, paths
 
 B = "\\"
 
@@ -14,7 +14,7 @@ def _repo(tmp_path):
     git("config", "user.email", "test@example.com")
     git("config", "user.name", "test")
     (tmp_path / ".gitignore").write_text("learner/\ncontent/private/\n", encoding="utf-8")
-    (tmp_path / "README.md").write_text("Install in C:" + B + "Users" + B + "you" + B + "greek-coach.\n", encoding="utf-8")
+    (tmp_path / "README.md").write_text("Install in C:" + B + "Users" + B + "you" + B + "oknos.\n", encoding="utf-8")
     git("add", ".")
     git("commit", "-q", "-m", "start")
     return git
@@ -41,7 +41,7 @@ def test_a_local_user_path_fails_and_a_placeholder_does_not(tmp_path):
     git = _repo(tmp_path)
     (tmp_path / "notes.md").write_text(
         "My old project is in C:" + B + "Users" + B + "alice" + B + "Desktop.\n"
-        "Fixtures use C:/Users/someone/scan.jpg and /home/you/greek-coach.\n", encoding="utf-8")
+        "Fixtures use C:/Users/someone/scan.jpg and /home/you/oknos.\n", encoding="utf-8")
     git("add", "notes.md")
     problems = guard.check(tmp_path)
     assert len(problems) == 1 and problems[0].startswith("notes.md:1:")

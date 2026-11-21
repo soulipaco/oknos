@@ -6,8 +6,8 @@ from datetime import date, datetime, timedelta
 
 import pytest
 
-from greek_coach import coachfiles, db, exams, lint, mock, packs, plan, readiness, report, session
-from greek_coach.checking import CheckError, check
+from oknos import coachfiles, db, exams, lint, mock, packs, plan, readiness, report, session
+from oknos.checking import CheckError, check
 
 A2_READING = ["open-everyday-a1a2/r-pharmacy-hours", "open-everyday-a1a2/r-kep-notice"]
 
@@ -401,7 +401,7 @@ def test_mock_run_timing_scoring_and_interruption(learner, catalog):
 
 
 def test_mock_api_and_speed(learner, client, catalog, monkeypatch):
-    monkeypatch.setenv("GREEK_COACH_MOCK_SPEED", "60")
+    monkeypatch.setenv("OKNOS_MOCK_SPEED", "60")
     _mock_files(learner, catalog)
     exam = client.get("/api/exam").json()
     assert exam["mocks"]["defined"][0]["ok"] and len(exam["exams"]) == 2

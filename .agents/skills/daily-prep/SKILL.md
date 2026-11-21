@@ -7,14 +7,14 @@ description: Prepare tomorrow's Greek practice ahead of time. Writes fresh exerc
 
 Fresh content every day, without the learner having to open you. This skill runs in one of two ways:
 
-- **Scheduled.** `greek-coach run daily-prep` starts you headless, and the environment variable `GREEK_COACH_SCHEDULED_RUN` is set. **Nobody is watching.** Never ask a question and never wait for an answer. Anything that needs the learner's yes (a download, a profile change) goes into `coach/notes.md` under "to ask at the next check-in". The wrapper writes the line in `coach/runs.log`, so do not write it yourself. Finish with a short plain summary of what you wrote: it goes into the run's log.
+- **Scheduled.** `oknos run daily-prep` starts you headless, and the environment variable `OKNOS_SCHEDULED_RUN` is set. **Nobody is watching.** Never ask a question and never wait for an answer. Anything that needs the learner's yes (a download, a profile change) goes into `coach/notes.md` under "to ask at the next check-in". The wrapper writes the line in `coach/runs.log`, so do not write it yourself. Finish with a short plain summary of what you wrote: it goes into the run's log.
 - **On request** ("prepare tomorrow"). The same steps, and you can talk to them.
 
 **First read `docs/COACHING.md`.**
 
 ## Steps
 
-1. Run `uv run greek-coach report`. Read `coach/notes.md`.
+1. Run `uv run oknos report`. Read `coach/notes.md`.
 2. **Mark pending writing** with `.agents/skills/mark/SKILL.md`.
    - In a scheduled run, transcribe speaking only if `profile.whisper_ok` is true and the model is already downloaded (no `--download`). Otherwise leave it for the check-in.
 3. **Decide how much to write:**
@@ -27,9 +27,9 @@ Fresh content every day, without the learner having to open you. This skill runs
    - **Leftovers**: anything noted in `coach/notes.md` as "to practise" (a class topic, words from a capture or tutor log).
    - About once a week (no `write` item unseen, and none submitted in 7 days): one `write` prompt in exam format.
 5. Self-check every item (COACHING §5.2), then:
-   - `uv run greek-coach validate <learner_dir>/generated/coach-practice`;
-   - `uv run greek-coach validate <learner_dir>`;
-   - `uv run greek-coach reload`.
+   - `uv run oknos validate <learner_dir>/generated/coach-practice`;
+   - `uv run oknos validate <learner_dir>`;
+   - `uv run oknos reload`.
 6. **Update `coach/notes.md`** with one line: the date, what you prepared, and anything left for the check-in.
 7. **The home-screen message.** Leave `coach/message.json` alone if it is less than 3 days old (the check-in wrote it). Otherwise, if you marked something, write a one-line message, e.g. "Your writing feedback is ready."
 
@@ -41,12 +41,12 @@ Do this only when the learner asks, or says yes to an offer from a check-in. It 
 2. **Ask when their computer is usually on and awake.** 05:00 is useless on a laptop that sleeps at night; lunchtime or early evening often works better.
 3. **On a clear yes**, run:
    ```
-   uv run greek-coach schedule add daily-prep --at HH:MM
+   uv run oknos schedule add daily-prep --at HH:MM
    ```
    Add `--agent codex` if they use Codex rather than Claude Code.
-4. Run `uv run greek-coach schedule list` and **show them what was created**, in plain words: "a Windows scheduled task called 'Greek Coach daily-prep', every day at 18:30".
-5. Tell them how to stop it: "just tell me 'stop the daily prep'", and you run `uv run greek-coach schedule remove daily-prep`.
-6. **Do a test run right away** with `uv run greek-coach run daily-prep`. Tell them it takes a few minutes, then check the `ok`/`failed` line it prints.
+4. Run `uv run oknos schedule list` and **show them what was created**, in plain words: "a Windows scheduled task called 'Oknos daily-prep', every day at 18:30".
+5. Tell them how to stop it: "just tell me 'stop the daily prep'", and you run `uv run oknos schedule remove daily-prep`.
+6. **Do a test run right away** with `uv run oknos run daily-prep`. Tell them it takes a few minutes, then check the `ok`/`failed` line it prints.
    - The scheduled run uses the agent's **command-line** program (`claude` or `codex`). The desktop app's sign-in does not always carry over to it.
    - If the line says `last=Not logged in` (or similar), the command-line program needs signing in once. Open a terminal for them if your harness can, or ask them to open one. Have them type `claude` (or `codex`) and follow the sign-in it shows, then run the test again.
    - Until a test run says `ok`, tell them plainly that the schedule exists but cannot work yet.

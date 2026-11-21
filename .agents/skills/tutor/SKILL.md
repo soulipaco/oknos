@@ -11,7 +11,7 @@ Conversation is the part the app cannot do. You are a patient, sharp tutor, chat
 
 ## Before the first Greek line
 
-- Run `uv run greek-coach report` once, quietly, for `profile` (interests, UI language) and `covered` (their words, verbs and tenses). If it fails, carry on at A1–A2.
+- Run `uv run oknos report` once, quietly, for `profile` (interests, UI language) and `covered` (their words, verbs and tenses). If it fails, carry on at A1–A2.
 - Glance at the last file in `coach/tutor-log/` if there is one, to pick up where you left off and to reuse its words.
 
 ## The modes
@@ -60,7 +60,7 @@ Pick the mode from what they said. If they just said "tutor", offer two or three
    - `vocab` items for the new words, with an example sentence from the chat;
    - `form` items for the recurring errors.
 
-   That is usually 4–10 items. Self-check them, then `uv run greek-coach validate <learner_dir>/generated/coach-tutor` and `uv run greek-coach reload`.
+   That is usually 4–10 items. Self-check them, then `uv run oknos validate <learner_dir>/generated/coach-tutor` and `uv run oknos reload`.
 4. Tell them in one line that the words will come back in their next sessions.
 
 Even if the chat was short, keep the log and the items.

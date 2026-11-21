@@ -1,4 +1,4 @@
-// Greek Coach front end. Plain ES module, no build step.
+// Oknos front end. Plain ES module, no build step.
 
 const app = document.getElementById("app");
 const LANGS = ["en", "tr"];

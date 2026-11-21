@@ -15,9 +15,9 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, ValidationError, model_validator
 
-from greek_coach import paths
+from oknos import paths
 
-log = logging.getLogger("greek_coach.exams")
+log = logging.getLogger("oknos.exams")
 
 EXAMS_DIR = paths.REPO_ROOT / "exams"
 NOT_BLUEPRINTS = {"watch-sources.json"}

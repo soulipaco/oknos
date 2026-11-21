@@ -8,7 +8,7 @@ OPEN_BOOK = "open-book"
 
 @pytest.fixture(autouse=True)
 def _real_clock():
-    from greek_coach import db
+    from oknos import db
 
     db.set_clock(None)
     yield
@@ -18,7 +18,7 @@ def _real_clock():
 @pytest.fixture(scope="session")
 def _open_without_book(tmp_path_factory):
     """The tracked open packs without the open course's book (one read-only copy per test run)."""
-    from greek_coach import paths
+    from oknos import paths
 
     root = tmp_path_factory.mktemp("content") / "open"
     root.mkdir()
@@ -29,7 +29,7 @@ def _open_without_book(tmp_path_factory):
 
 
 def _roots(monkeypatch, open_root, tmp_path, learner_dir):
-    from greek_coach import paths
+    from oknos import paths
 
     monkeypatch.setattr(paths, "content_roots", lambda: [
         ("open", open_root),
@@ -49,7 +49,7 @@ def learner(tmp_path, monkeypatch, _open_without_book):
     Tests of the book itself use the `open_book` fixture.
     """
     path = tmp_path / "learner"
-    monkeypatch.setenv("GREEK_COACH_LEARNER_DIR", str(path))
+    monkeypatch.setenv("OKNOS_LEARNER_DIR", str(path))
     _roots(monkeypatch, _open_without_book, tmp_path, path)
     return path
 
@@ -57,7 +57,7 @@ def learner(tmp_path, monkeypatch, _open_without_book):
 @pytest.fixture
 def open_book(learner, tmp_path, monkeypatch):
     """The learner folder with all the tracked open packs, the open book included."""
-    from greek_coach import paths
+    from oknos import paths
 
     _roots(monkeypatch, paths.CONTENT_DIR / "open", tmp_path, learner)
     return learner
@@ -65,7 +65,7 @@ def open_book(learner, tmp_path, monkeypatch):
 
 @pytest.fixture
 def client(learner):
-    from greek_coach.server import create_app
+    from oknos.server import create_app
 
     with TestClient(create_app()) as c:
         yield c
@@ -73,7 +73,7 @@ def client(learner):
 
 @pytest.fixture
 def catalog(learner):
-    from greek_coach import packs
+    from oknos import packs
 
     return packs.load_all()
 
@@ -81,6 +81,6 @@ def catalog(learner):
 @pytest.fixture
 def full_catalog(open_book):
     """Every tracked open pack, the open book included: what a fresh clone loads."""
-    from greek_coach import packs
+    from oknos import packs
 
     return packs.load_all()

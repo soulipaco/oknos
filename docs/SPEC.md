@@ -241,7 +241,7 @@ learner/generated/<pack-id>/   gitignored: written by the coach for this learner
   glossary.json                optional: what tapping a word finds when no item has it (§4.9)
 ```
 
-The app loads every pack in all three roots at start-up and on a "reload content" request from the coach. An invalid item is skipped and logged, never fatal. `uv run greek-coach validate <path>` checks a pack and prints problems in plain language; the coach runs it after every write.
+The app loads every pack in all three roots at start-up and on a "reload content" request from the coach. An invalid item is skipped and logged, never fatal. `uv run oknos validate <path>` checks a pack and prints problems in plain language; the coach runs it after every write.
 
 ### 4.2 Manifest (`pack.json`)
 
@@ -253,7 +253,7 @@ The app loads every pack in all three roots at start-up and on a "reload content
   "levels": ["A1"],
   "visibility": "open",
   "licence": "CC-BY-SA-4.0",
-  "source": "Original, written for Greek Coach",
+  "source": "Original, written for Oknos",
   "exam_blueprints": ["a2ltr"],
   "for_ui_lang": ["tr"]
 }
@@ -398,7 +398,7 @@ Greek text is NFC-normalised UTF-8 and monotonic. Final sigma is `ς`. Translati
 
 These are facts about a public exam: units, points, times, task ids with type and point value, pass rule, and source links with the date they were checked. Each blueprint also has a `watch` list: the official pages where dates and registration windows are announced, which the `watch` skill checks. Phase 5 writes `exams/a2ltr.json` from §1.3 and `exams/b1-keg.json` from the ΚΕΓ structure table and exam guide. Official papers are never copied into the repo; the coach can download them into `content/private/official-a2ltr/` for the learner, after asking.
 
-Phase 5, as built (`src/greek_coach/exams.py`, validated on load and exported by `greek-coach schema`):
+Phase 5, as built (`src/oknos/exams.py`, validated on load and exported by `oknos schema`):
 
 - **Top level:** `id`, `title`, `short` ("A2+", "B1"), `level`, `task_prefix` (`a2ltr`, `b1keg`), `checked_at`, `total_points`, `hours_estimate` (ΚΕΓ teaching hours, cumulative), `sessions_note`, `sources`, `watch` and, for B1, `beyond_a2`.
 - **`pass_rule`:** `{min_total, unit_min_share, units_needed, text}`.
@@ -425,7 +425,7 @@ Phase 5, as built (`src/greek_coach/exams.py`, validated on load and exported by
 - Typed answers (vocab recall, `form`, `table_fill` cells): NFC, trim, collapse spaces, lower-case including final-sigma folding. If the answer matches only when accents are ignored, it is **correct, with a note "watch the accent: φαρμακείο"**. A leading article is optional unless the card asks for it.
 - `write` and `speak` are never auto-scored.
 
-### 4.8 Chapters: read first, then practise (phase 5c, as built: `src/greek_coach/chapters.py`, `docs/LESSONS.md`)
+### 4.8 Chapters: read first, then practise (phase 5c, as built: `src/oknos/chapters.py`, `docs/LESSONS.md`)
 
 **The problem it fixes.** The app tested what it never taught: a new word reached the learner first as a test card, and a stage began with exercises. The maintainer learns by reading. So each stage can now have a chapter to read before its practice.
 
@@ -455,7 +455,7 @@ Phase 5, as built (`src/greek_coach/exams.py`, validated on load and exported by
 
   Every explanation has `tr` and `en`. Inline markup is only `**bold**`, `*italic*` and `[[Greek]]`, rendered by our own code; there is no Markdown dependency.
 - **Placement:** the items of a chapter's `words` and `check` blocks belong to its stage. A `stage:` tag takes precedence. Otherwise the item goes to the earlier of the chapter's stage and the stage its `include` rule gives (§5.4), so a later chapter never takes a word away from a lesson that already uses it. A review stage's chapter places nothing.
-- **Validation** (`greek-coach validate`):
+- **Validation** (`oknos validate`):
   - the schema;
   - the Greek lint;
   - references that resolve and are of the right type;
@@ -482,7 +482,7 @@ Phase 5, as built (`src/greek_coach/exams.py`, validated on load and exported by
 
 ---
 
-### 4.9 Tap a word: every word has a meaning (phase 5d, as built: `src/greek_coach/lookup.py`, `wordscan.py`)
+### 4.9 Tap a word: every word has a meaning (phase 5d, as built: `src/oknos/lookup.py`, `wordscan.py`)
 
 **The problem it fixes.** On 2026-11-19, 41% of the tappable words found nothing: inflected forms (ακούστε, απαντήσεις), instruction words (Διαλέγω, Συμπληρώνω) and names (Μεχμέτ, Νάξο). Without the private book, the open packs explained almost nothing, because their meanings came from the book's word list.
 
@@ -510,9 +510,9 @@ Phase 5, as built (`src/greek_coach/exams.py`, validated on load and exported by
 
   It survives a re-import, because the importer rewrites only `items/`, `raw/`, `units.json` and the manifest.
 - **Open content is explained by tracked files alone.** A fresh clone has no private pack. The open packs' meanings are in `content/open/open-shared-words-tr/glossary.json` (CC BY-SA 4.0). They were drafted by Sonnet subagents on 2026-11-20 and spot-checked by Opus. The book's own extra words are in `content/private/greek-helper/glossary.json`.
-- **Filling the gaps:** `greek-coach words <pack> [--write] [--json <file>]`.
+- **Filling the gaps:** `oknos words <pack> [--write] [--json <file>]`.
   - It lists a pack's unexplained words. A pack is checked against what it can rely on: an open pack against open packs only, a private one against open and private.
-  - `--write` maps the inflected ones to a lemma the lookup knows, using the cached Wiktionary dump (`.cache/greek-coach/kaikki-el-forms.json`, built once from the dump the importer downloaded).
+  - `--write` maps the inflected ones to a lemma the lookup knows, using the cached Wiktionary dump (`.cache/oknos/kaikki-el-forms.json`, built once from the dump the importer downloaded).
   - `--json` writes the rest, with Wiktionary's gloss as a hint, for whoever writes their glossary entries.
 - **Kept fixed:**
   - `validate` notes, per items file and per chapter, the words that find nothing, lists the `leave` words with their reasons, and reports a glossary form whose lemma nothing explains as a problem;
@@ -531,7 +531,7 @@ Phase 5, as built (`src/greek_coach/exams.py`, validated on load and exported by
 
 ```
 learner/
-  greek-coach.db          SQLite: everything the app records
+  oknos.db          SQLite: everything the app records
   profile.json            goal, exam, budget, interests, UI language (the coach writes it; the app reads it and can change ui_lang/minutes)
   coach/
     notes.md              the coach's running notes to its future self
@@ -540,7 +540,7 @@ learner/
     watch.json            exam and course dates found by the watch skill {checked_at, entries:[{what, date, registration, source_url, changed}]}
     tutor-log/<date>.md   short summary of each tutor chat: new words, recurring errors
     resolved-flags.json   the coach's ruling on flagged items (fixed / retired / kept); the app applies it
-    schedule.json         written by `greek-coach schedule`: which skills run when, with which agent
+    schedule.json         written by `oknos schedule`: which skills run when, with which agent
     runs.log              one line per scheduled run (time, skill, ok/failed), so a silent failure shows up
   feedback/<submission-id>.json   writing or speaking feedback the app shows next to the original
   generated/<pack-id>/    coach-written packs (coach-practice, coach-capture, coach-writing, coach-tutor)
@@ -571,7 +571,7 @@ Migrations are numbered SQL files applied at start-up, so an older database upgr
 
 **Scheduler:** SM-2-style spaced repetition (Anki's lineage), implemented in about 50 lines in the repo with no dependency. It was chosen because it is well understood and explainable on a dashboard. The state columns are generic enough to move to FSRS later.
 
-Phase 3, as built (`src/greek_coach/scheduler.py`). SM-2 was kept; nothing seen so far argues for FSRS.
+Phase 3, as built (`src/oknos/scheduler.py`). SM-2 was kept; nothing seen so far argues for FSRS.
 - **What is scheduled.** Every `vocab` and `form` item enters the schedule the first time it is seen. Verbs are the learner's stated gap, so they are scheduled like words. Any other item enters the first time it is answered wrongly.
 - **Quality** comes from the attempt, never from self-grading:
   - wrong, or any part wrong: 1, a lapse, so it is due tomorrow;
@@ -591,7 +591,7 @@ Phase 3, as built (`src/greek_coach/scheduler.py`). SM-2 was kept; nothing seen 
 
 ### 5.2 How the coach reads the data
 
-The coach does not parse SQLite by hand. `uv run greek-coach report [--since 14d]` prints one JSON document covering:
+The coach does not parse SQLite by hand. `uv run oknos report [--since 14d]` prints one JSON document covering:
 - sessions and minutes per day;
 - accuracy per skill, `exam_task` and topic;
 - the items that are hardest (most lapses) and most looked up;
@@ -601,7 +601,7 @@ The coach does not parse SQLite by hand. `uv run greek-coach report [--since 14d
 
 This is the stable contract between app and agent. The coach writes only files (packs, feedback, notes, message, plan, profile), never the database.
 
-### 5.4 Progression along a curriculum (phase 5b, as built: `src/greek_coach/curriculum.py`)
+### 5.4 Progression along a curriculum (phase 5b, as built: `src/oknos/curriculum.py`)
 
 **The problem it fixes.** The daily session drew from every pack at once, so the maintainer's first session held B1 passives and a 150-word letter before they could read the alphabet. Items now come in course order, simple before hard.
 
@@ -647,7 +647,7 @@ The intro is slow on purpose (about 5–12 new cards a day); a learner who alrea
 
 Nothing came from a later stage before an earlier one was done, and no stage reopened.
 
-### 5.3 Readiness (phase 5, as built: `src/greek_coach/readiness.py`)
+### 5.3 Readiness (phase 5, as built: `src/oknos/readiness.py`)
 
 The maintainer books an exam from this, so false confidence is worse than no estimate. Per exam, per unit:
 
@@ -667,7 +667,7 @@ The maintainer books an exam from this, so false confidence is worse than no est
 
 The report gains `readiness`, `readiness_rules`, `coverage`, `plan_inputs`, `plan_progress` and `mocks` (`report_version: 2`).
 
-Phase 4, as built (`src/greek_coach/report.py`, `report_version: 1`):
+Phase 4, as built (`src/oknos/report.py`, `report_version: 1`):
 - **More fields:**
   - `recent_wrong`: what was answered against what was right;
   - `covered`: words by level, verb lemmas and tenses, book units met; with `--words`, every word met;
@@ -677,7 +677,7 @@ Phase 4, as built (`src/greek_coach/report.py`, `report_version: 1`):
   - `coach`: last check-in, watch age, tutor logs, scheduled runs and problems;
   - `profile_missing`, `learner_dir` and `app_url`.
 - **Readiness is `null` until phase 5.**
-- **The coach files** (message, watch, feedback, flag resolutions, schedule, profile) are pydantic models in `coachfiles.py`. `greek-coach validate <learner folder>` checks them. The app reads them leniently: a broken file is skipped and logged, never fatal.
+- **The coach files** (message, watch, feedback, flag resolutions, schedule, profile) are pydantic models in `coachfiles.py`. `oknos validate <learner folder>` checks them. The app reads them leniently: a broken file is skipped and logged, never fatal.
 - **Their formats** are documented for agents in `docs/COACHING.md` §7.
 
 ---
@@ -760,24 +760,24 @@ The session is built from the time budget in `profile.json`, using the learner's
 
 ## 8. Install flow for a non-technical person
 
-The person needs a computer, internet, and a Claude Code or Codex subscription. Prerequisites the agent installs: **uv** (it brings Python), and **git** if it is missing. The app runs from the repo with `uv run greek-coach start`, binds to `127.0.0.1:8642` (or the next free port), and opens the browser.
+The person needs a computer, internet, and a Claude Code or Codex subscription. Prerequisites the agent installs: **uv** (it brings Python), and **git** if it is missing. The app runs from the repo with `uv run oknos start`, binds to `127.0.0.1:8642` (or the next free port), and opens the browser.
 
 **Windows**
 1. Install the Claude desktop app (or Codex) and sign in. This is the only step the person does alone.
-2. In the app, pick a folder (e.g. Documents) and type: *"Download https://github.com/<owner>/greek-coach and set it up for me."*
+2. In the app, pick a folder (e.g. Documents) and type: *"Download https://github.com/<owner>/oknos and set it up for me."*
 3. The agent:
    - checks for git and installs it with `winget install Git.Git` if missing, telling the person a Windows prompt may appear;
    - clones the repo;
    - installs uv with the official per-user installer (no admin rights);
    - runs `uv sync` and starts the app;
    - checks `/health` and that a Greek test string survives a round trip through the database.
-4. The agent creates a **"Greek Coach" shortcut on the Desktop** and says: *"Double-click Greek Coach on your desktop whenever you want to study. You don't need me open for that."*
+4. The agent creates a **"Oknos" shortcut on the Desktop** and says: *"Double-click Oknos on your desktop whenever you want to study. You don't need me open for that."*
 5. Optional, and done by the person, never by the agent: adding the Greek voice in *Settings → Time & language → Speech → Add voices → Greek*. The agent checks first; on this maintainer's machine it was already present.
 
 **macOS**
 1–2. As on Windows.
 3. If git is missing, macOS offers to install the Command Line Tools; the agent says "click Install in the window that appears". It installs uv with the official shell installer, then runs `uv sync`, starts the app and checks it.
-4. The shortcut is `Greek Coach.command` on the Desktop. The agent explains the first-run "are you sure you want to open it" dialog in one sentence.
+4. The shortcut is `Oknos.command` on the Desktop. The agent explains the first-run "are you sure you want to open it" dialog in one sentence.
 5. Optional Greek voice: *System Settings → Accessibility → Spoken Content → System voice → Manage Voices → Greek (Melina)* (unverified on current macOS).
 
 **Linux**: the same steps, with a `.desktop` launcher in `~/.local/share/applications` and on the Desktop. Browser Greek voices on Linux are poor, so listening relies on pre-generated audio.
@@ -856,7 +856,7 @@ What the phase-3 importer must do:
 
 Output goes only to `content/private/greek-helper/` with `licence: "private, commercial source"`.
 
-**Phase-3 re-measurement and result (2026-11-16)**, from `uv run greek-coach import greek-helper --source …`:
+**Phase-3 re-measurement and result (2026-11-16)**, from `uv run oknos import greek-helper --source …`:
 - **Vocabulary:** 3,289 rows (3,195 plus 94 that Greek_Helper had already set aside).
   - 56 OCR-split words were joined again with the dictionary (υπογ ράφω → υπογράφω).
   - 113 entries were flagged and kept out (99 header junk, 14 mixed script, 5 truncated; some carry two flags).
@@ -886,8 +886,8 @@ Also approved on that date, so later phases need not ask the maintainer again:
 Each is still shown to him when it is set up, and a non-maintainer learner is still asked.
 
 - **Stack as designed:** Python with uv, FastAPI and uvicorn, SQLite through the stdlib `sqlite3`, and plain HTML/CSS/JS modules with no build step. The pack schema is defined with pydantic (it comes with FastAPI) and exported as JSON Schema to `schemas/` for agents.
-- **Repo layout:** `src/greek_coach/` (server, db, packs, checking, scheduler, session, cli), `web/` (static, with `i18n/en.json` and `i18n/tr.json`), `content/`, `exams/`, `schemas/`, `scripts/`, `tests/`, `.agents/skills/`, `.claude/skills/`.
-- **CLI:** `greek-coach start | stop | health | report | validate | backup | shortcut`.
+- **Repo layout:** `src/oknos/` (server, db, packs, checking, scheduler, session, cli), `web/` (static, with `i18n/en.json` and `i18n/tr.json`), `content/`, `exams/`, `schemas/`, `scripts/`, `tests/`, `.agents/skills/`, `.claude/skills/`.
+- **CLI:** `oknos start | stop | health | report | validate | backup | shortcut`.
   - Phase 2 added `stop` and `shortcut`. With `shortcut` the agent never hand-writes OS launcher files.
   - `start` runs the server as a background process with no window, waits for `/health`, opens the browser and returns. A desktop double-click therefore behaves the same on every OS. `start --foreground` is for development.
   - `stop` finds the process through the pid that `/health` reports.
@@ -899,15 +899,15 @@ Each is still shown to him when it is set up, and a non-maintainer learner is st
 - **Harness support:** Claude Code and Codex, both tested in phase 6. Copilot reads `AGENTS.md` and may work, but it is not tested.
 
 Phase 3 additions (2026-11-16):
-- **Importer:** `greek-coach import <mapping> --source <folder>`, with mappings in `src/greek_coach/importer/mappings/`. It refuses any output folder outside `content/private/` and `learner/generated/`.
-- **Dictionary enrichment:** the kaikki.org Greek JSONL (Wiktionary, CC BY-SA) is downloaded once, with the learner's OK, into `.cache/greek-coach/` (gitignored). The importer reads a small index built from it; the app never needs it.
+- **Importer:** `oknos import <mapping> --source <folder>`, with mappings in `src/oknos/importer/mappings/`. It refuses any output folder outside `content/private/` and `learner/generated/`.
+- **Dictionary enrichment:** the kaikki.org Greek JSONL (Wiktionary, CC BY-SA) is downloaded once, with the learner's OK, into `.cache/oknos/` (gitignored). The importer reads a small index built from it; the app never needs it.
 - **Verb pack:** `content/open/open-verbs-a1a2` is generated by `scripts/build_verb_pack.py`. The sentences are original; the forms come from Wiktionary's conjugation tables.
 - **Answer typing:** the on-screen keyboard follows the standard Greek layout. Latin letters typed on a physical keyboard, pasted, or typed on a phone become Greek as they arrive, and `;` before a vowel adds the accent.
 - **Tests never see private content:** the test fixture limits content to `content/open/`.
 - **New endpoints:**
   - `POST /api/lookup`, `POST /api/flag` and `POST /api/reload`, the last for the coach after writing a pack;
   - `GET /packs/<id>/audio/<file>` and `GET /audio-cache/<pack>/<item>`, both with path traversal blocked.
-- **JSON Schemas** for agents: `greek-coach schema` writes them to `schemas/`.
+- **JSON Schemas** for agents: `oknos schema` writes them to `schemas/`.
 - **`table_fill` waited for phase 5**, as the phase-3 prompt allows (built in phase 5, §4.7).
 
 Phase 4 additions (2026-11-16):
@@ -925,18 +925,18 @@ Phase 4 additions (2026-11-16):
 - **Coach items first.** They come first in the verb and task segments as well as in new words, so a check-in shows in the next session.
 - **After 3 or more days away,** the first session back caps reviews at 15 and new words at 3. The coach can also shrink the next sessions with `restart` in `message.json`.
 - **Recordings.** They are uploaded as the raw request body (`POST /api/recording`), so no multipart dependency is needed. They are saved as `recordings/<submission-id>.<ext>` and served from `/recordings/<file>`, with path traversal blocked.
-- **Transcription:** faster-whisper `small` (about 0.5 GB, int8 on CPU), in the optional `speech` group, with the model cached in `.cache/greek-coach/whisper/`. Transcripts go to `recordings/<id>.json`.
+- **Transcription:** faster-whisper `small` (about 0.5 GB, int8 on CPU), in the optional `speech` group, with the model cached in `.cache/oknos/whisper/`. Transcripts go to `recordings/<id>.json`.
   - The group pins `av>=16,<17`: faster-whisper 1.2 crashes with av 17 and later (`metadata_errors`).
   - Tested on a 17-second recording made with the offline Greek voice. The transcript kept the learner's errors (`σε το πάρκο`, `Χθες πηγαίνω`) and misheard only a place name.
 - **Scheduled runs:**
-  - `greek-coach run <skill>` runs `claude -p` with a fixed tool allow-list (or `codex exec --full-auto`), writes its output to `learner/logs/runs/`, and always appends to `coach/runs.log`;
-  - `greek-coach schedule add|list|remove` writes the OS entry (Windows `schtasks` with `pythonw`, launchd, cron) and `coach/schedule.json`;
+  - `oknos run <skill>` runs `claude -p` with a fixed tool allow-list (or `codex exec --full-auto`), writes its output to `learner/logs/runs/`, and always appends to `coach/runs.log`;
+  - `oknos schedule add|list|remove` writes the OS entry (Windows `schtasks` with `pythonw`, launchd, cron) and `coach/schedule.json`;
   - the home screen shows a failed run, or one missing for two periods;
   - the agent is found on PATH or in its installer's default folder (`~/.local/bin`, the npm folder), because a scheduled task's PATH often lacks them;
   - **the command-line agent must be signed in.** On the maintainer's machine `claude -p` answered "Not logged in" although the desktop app is signed in. The run records that line, the home screen shows the failure, and the `daily-prep` skill tells the learner how to sign in once.
 - **Exam watch sources** lived in `exams/watch-sources.json` until phase 5 moved them into the blueprints.
 - **Writing criteria:** the ΚΕΓ A2 and B1 holistic writing scales, out of 25 with 15 to pass, were verified on 2026-11-16 and summarised in `docs/COACHING.md` §10. The A2-LTR writing criteria were not found; the coach marks those tasks out of 10 and labels the score unverified.
-- **New commands:** `greek-coach reload`, so the coach can refresh the running app on any OS, and `greek-coach raw`.
+- **New commands:** `oknos reload`, so the coach can refresh the running app on any OS, and `oknos raw`.
 - **Open content:** `open-everyday-a1a2` gained 2 `write` prompts and 2 `speak` cards, so the weekly slot works without a coach.
 
 ## 12. Challenges to the design, and what changed
@@ -952,16 +952,16 @@ Phase 4 additions (2026-11-16):
 
 ## 13. Phase 5 additions (2026-11-16)
 
-- **Mock exams** (`src/greek_coach/mock.py`, migration 0004):
+- **Mock exams** (`src/oknos/mock.py`, migration 0004):
   - The coach defines a mock as `learner/coach/mocks/<id>.json`: a blueprint and, per unit, the items in paper order.
   - The app times each section with the blueprint's minutes, on the server's clock. Answers are saved as drafts, and there is no feedback until hand-in. The learner can go back and change answers within a section.
   - **An interrupted section keeps its clock running, as in the exam** (the maintainer's choice, 2026-11-16). Coming back in time resumes with the time left and the saved answers. Coming back late finds the section closed with what was saved (`time_away`), and the readiness screen says so.
   - On closing, each answered item becomes a normal attempt in a `mock` session, so it feeds readiness and the review schedule.
   - Points follow the blueprint: task points × the share of its questions right; an unanswered item counts as wrong.
   - Items of a mock not yet taken stay out of daily sessions, so the mock is a first sight.
-  - `GREEK_COACH_MOCK_SPEED` (development only) makes mock time pass faster, for checking the timing.
+  - `OKNOS_MOCK_SPEED` (development only) makes mock time pass faster, for checking the timing.
 - **Speaking in a mock:** one `speak` card per exam part, recorded in the browser. The coach marks each recording with an estimated score on that part's scale, labelled unverified because neither exam publishes its speaking criteria. Without a recording the part is not scored.
-- **The plan** (`coach/plan.json`, `src/greek_coach/plan.py`):
+- **The plan** (`coach/plan.json`, `src/oknos/plan.py`):
   - The report's `plan_inputs` gives the candidate sessions from `watch.json`, the weeks left, the real pace (minutes per week over 4 weeks) against the budget (`profile.minutes × profile.days_per_week`), the hours practised, ΚΕΓ's hour guide and a crude realism hint.
   - `plan_progress` checks planned against done for each past week.
   - The exam screen shows the verdict, the current week and the next four weeks.

@@ -8,7 +8,7 @@ from datetime import date, datetime
 import pytest
 from pydantic import ValidationError
 
-from greek_coach import chapters, curriculum, db, lint, packs, paths, readiness, report, scheduler, session
+from oknos import chapters, curriculum, db, lint, packs, paths, readiness, report, scheduler, session
 
 STAGE = "first-words"  # the second stage of the open curriculum
 

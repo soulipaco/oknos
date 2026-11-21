@@ -15,7 +15,7 @@ Decisions already made (2026-11-18):
 
 ## 1. The chapter format
 
-Design a chapter format, write a JSON Schema for it (`greek-coach schema`), and document it in a new `docs/LESSONS.md`. Use structured blocks, not free Markdown. Blocks can be validated, linted for Greek, linked to items, and filled in reliably by a smaller model. Allow only minimal inline formatting (bold, italic, a Greek span), rendered by our own small renderer. Do not add a Markdown dependency.
+Design a chapter format, write a JSON Schema for it (`oknos schema`), and document it in a new `docs/LESSONS.md`. Use structured blocks, not free Markdown. Blocks can be validated, linted for Greek, linked to items, and filled in reliably by a smaller model. Allow only minimal inline formatting (bold, italic, a Greek span), rendered by our own small renderer. Do not add a Markdown dependency.
 
 A chapter belongs to one stage (`stage` = the stage id) and lives in its pack at `lessons/<stage-id>.json`. Suggested blocks; adjust them if the plan finds a better shape:
 - `prose`: explanation text `{tr, en}`.
@@ -103,7 +103,7 @@ Write it as a skill (`.agents/skills/write-chapter/SKILL.md`, and the pointer in
    - for the book curriculum, the OCR text of that lesson's pages (`Greek_Helper/data/app/lesson_details.json` → source pages), **as reference only, with the instruction not to copy sentences**.
 
    It writes the chapter in Turkish and English, plus 10–20 practice items tagged `stage:<id>` that test what the chapter taught. For the book this replaces most of the `rebuild-imported` work for that lesson; reuse that skill's rules.
-4. **Validate (`greek-coach validate`, extended):**
+4. **Validate (`oknos validate`, extended):**
    - the schema;
    - the Greek lint;
    - every Greek word in dialogues and examples is in the allowed vocabulary or glossed in the chapter;

@@ -1,4 +1,4 @@
-# Greek Coach
+# Oknos
 
 A local-first Greek learning companion that your coding agent installs, runs and personalises for you. It is for people living in Greece who need to pass a language certification exam and have struggled to stay interested in studying.
 
@@ -27,21 +27,21 @@ A local-first Greek learning companion that your coding agent installs, runs and
 ## Get started
 
 1. Install an agent such as the Claude desktop app (Claude Code) or Codex, and sign in.
-2. In a new session, say: **"Download `https://github.com/<owner>/greek-coach` and set it up for me."**
-3. The agent installs what is needed, starts the app and puts a **Greek Coach** shortcut on your desktop.
+2. In a new session, say: **"Download `https://github.com/<owner>/oknos` and set it up for me."**
+3. The agent installs what is needed, starts the app and puts a **Oknos** shortcut on your desktop.
 
-After that, double-click **Greek Coach** whenever you want to study. You don't need the agent open for that.
+After that, double-click **Oknos** whenever you want to study. You don't need the agent open for that.
 
 If you already have the code, open the folder in your agent and say "set this up for me". The steps the agent follows are in `.agents/skills/setup/SKILL.md`.
 
 To run it yourself from the repo folder:
 
 ```
-uv run greek-coach start      # start the app in the background and open the browser (http://127.0.0.1:8642)
-uv run greek-coach stop       # stop it
-uv run greek-coach stop; uv run greek-coach start   # restart: needed after changes to code (src/, web/)
-uv run greek-coach reload     # take in new or edited content (packs, chapters, coach files) without a restart
-uv run greek-coach health     # check the install
+uv run oknos start      # start the app in the background and open the browser (http://127.0.0.1:8642)
+uv run oknos stop       # stop it
+uv run oknos stop; uv run oknos start   # restart: needed after changes to code (src/, web/)
+uv run oknos reload     # take in new or edited content (packs, chapters, coach files) without a restart
+uv run oknos health     # check the install
 uv run pytest                 # run the tests
 ```
 
@@ -65,24 +65,24 @@ You need [uv](https://docs.astral.sh/uv/). Nothing else, not even Python.
 
 ```
 uv sync
-uv run greek-coach start          # background server + browser
-uv run greek-coach health         # install check, including a Greek round trip through SQLite
-uv run greek-coach stop
-uv run greek-coach start --foreground   # server in this terminal, for development
-uv run greek-coach import <mapping> --source <folder>   # private pack from your own material
-uv run greek-coach report                # the learner's record as JSON, which is what the coach reads
-uv run greek-coach validate learner      # check coach-written packs and files
-uv run greek-coach reload                # make the running app pick up new content
-uv run greek-coach raw greek-helper --unit lesson-05    # raw imported exercises, for rebuilding
-uv run --group speech greek-coach transcribe            # local transcription of speaking recordings
-uv run greek-coach schedule list|add|remove             # scheduled coach runs (asks the learner first)
+uv run oknos start          # background server + browser
+uv run oknos health         # install check, including a Greek round trip through SQLite
+uv run oknos stop
+uv run oknos start --foreground   # server in this terminal, for development
+uv run oknos import <mapping> --source <folder>   # private pack from your own material
+uv run oknos report                # the learner's record as JSON, which is what the coach reads
+uv run oknos validate learner      # check coach-written packs and files
+uv run oknos reload                # make the running app pick up new content
+uv run oknos raw greek-helper --unit lesson-05    # raw imported exercises, for rebuilding
+uv run --group speech oknos transcribe            # local transcription of speaking recordings
+uv run oknos schedule list|add|remove             # scheduled coach runs (asks the learner first)
 uv run python scripts/simulate.py        # simulated weeks of use: scheduler, home and readiness numbers
-GREEK_COACH_MOCK_SPEED=30 uv run greek-coach start --foreground   # development: mock-exam time runs 30x faster
+OKNOS_MOCK_SPEED=30 uv run oknos start --foreground   # development: mock-exam time runs 30x faster
 uv run pytest
 ```
 
 How the code is laid out:
-- `src/greek_coach/`: the FastAPI server, SQLite, pack loading, answer checking, the scheduler (`scheduler.py`), sessions, word lookup, the importer (`importer/`) and the CLI.
+- `src/oknos/`: the FastAPI server, SQLite, pack loading, answer checking, the scheduler (`scheduler.py`), sessions, word lookup, the importer (`importer/`) and the CLI.
   - The coach's side: `report.py` (what the coach reads), `coachfiles.py` (the files it writes), `lint.py` (Greek and exam-tag checks), `scheduling.py` and `transcribe.py`.
   - Exam mode: `exams.py` (blueprints and pass rules), `readiness.py`, `mock.py` and `plan.py`.
   - Progression: `curriculum.py`, with the open course in `curricula/`.

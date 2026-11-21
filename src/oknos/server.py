@@ -13,12 +13,12 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from greek_coach import (coachfiles, curriculum, db, exams, health, lookup, mock, packs, paths, plan, readiness,
+from oknos import (coachfiles, curriculum, db, exams, health, lookup, mock, packs, paths, plan, readiness,
                          scheduler, session)
-from greek_coach.checking import CheckError, check
-from greek_coach.packs import OPEN_TASKS, FormItem, SpeakItem, VocabItem, WriteItem
+from oknos.checking import CheckError, check
+from oknos.packs import OPEN_TASKS, FormItem, SpeakItem, VocabItem, WriteItem
 
-log = logging.getLogger("greek_coach.server")
+log = logging.getLogger("oknos.server")
 
 # Some Windows registries map .js to text/plain, which makes browsers refuse ES modules.
 mimetypes.add_type("text/javascript", ".js")
@@ -150,7 +150,7 @@ def create_app() -> FastAPI:
     conn.close()
     _sync_coach_files()
 
-    app = FastAPI(title="Greek Coach", docs_url=None, redoc_url=None, openapi_url=None)
+    app = FastAPI(title="Oknos", docs_url=None, redoc_url=None, openapi_url=None)
     app.state.catalog = catalog
     app.state.lookup = lookup.Index(catalog)
 

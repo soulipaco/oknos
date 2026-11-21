@@ -2,7 +2,7 @@ import unicodedata
 
 import pytest
 
-from greek_coach import greek
+from oknos import greek
 
 
 @pytest.mark.parametrize("poly,mono", [

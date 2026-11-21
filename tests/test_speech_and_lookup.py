@@ -2,9 +2,9 @@
 
 import random
 
-from greek_coach import chapters, lookup, packs, session
-from greek_coach.checking import meaning, meaning_lang
-from greek_coach.packs import VocabItem
+from oknos import chapters, lookup, packs, session
+from oknos.checking import meaning, meaning_lang
+from oknos.packs import VocabItem
 
 
 def test_letter_cards_say_the_name_and_an_example_not_the_letters(catalog):

@@ -5,8 +5,8 @@ import random
 
 from test_chapters import STAGE, book, chapter_data  # noqa: F401  (the book fixture)
 
-from greek_coach import chapters, db, lint, lookup, packs, report, session, wordscan
-from greek_coach.packs import TrueFalseItem
+from oknos import chapters, db, lint, lookup, packs, report, session, wordscan
+from oknos.packs import TrueFalseItem
 
 
 def test_every_tappable_word_of_the_open_packs_has_a_meaning(full_catalog):
@@ -14,7 +14,7 @@ def test_every_tappable_word_of_the_open_packs_has_a_meaning(full_catalog):
     gaps = wordscan.scan(full_catalog.packs, lookup.Index(full_catalog))
     assert gaps.total > 1000
     missing = {place: sorted(words) for place, words in gaps.missing.items() if words}
-    assert not missing, f"tappable words with no meaning (run `greek-coach words content/open --write`): {missing}"
+    assert not missing, f"tappable words with no meaning (run `oknos words content/open --write`): {missing}"
 
 
 def test_the_test_chapter_has_no_unexplained_word(book, learner):

@@ -7,7 +7,7 @@ from datetime import date, datetime, timedelta
 
 import pytest
 
-from greek_coach import cli, coachfiles, db, lint, packs, paths, report, scheduler, scheduling, session
+from oknos import cli, coachfiles, db, lint, packs, paths, report, scheduler, scheduling, session
 
 WRITE_KEY = "open-everyday-a1a2/w-lift-broken"
 SPEAK_KEY = "open-everyday-a1a2/s-neighbourhood"
@@ -289,12 +289,12 @@ def test_validate_reports_greek_problems_in_generated_packs(learner, capsys):
 # ---------- scheduled runs ----------
 
 def test_run_logs_failures_and_success(learner, monkeypatch):
-    monkeypatch.setenv("GREEK_COACH_AGENT_CMD", json.dumps([sys.executable, "-c", "import sys; print('Not logged in'); sys.exit(3)"]))
+    monkeypatch.setenv("OKNOS_AGENT_CMD", json.dumps([sys.executable, "-c", "import sys; print('Not logged in'); sys.exit(3)"]))
     ok, detail = scheduling.run("daily-prep", "claude")
     assert not ok and "exit=3" in detail and "last=Not logged in" in detail
     problems = coachfiles.run_problems()
     assert problems and problems[0]["skill"] == "daily-prep" and problems[0]["problem"] == "failed"
-    monkeypatch.setenv("GREEK_COACH_AGENT_CMD", json.dumps([sys.executable, "-c", "print('prepared')"]))
+    monkeypatch.setenv("OKNOS_AGENT_CMD", json.dumps([sys.executable, "-c", "print('prepared')"]))
     ok, _ = scheduling.run("daily-prep", "claude")
     assert ok and coachfiles.run_problems() == []
     lines = (learner / "coach" / "runs.log").read_text(encoding="utf-8").splitlines()
@@ -303,7 +303,7 @@ def test_run_logs_failures_and_success(learner, monkeypatch):
 
 
 def test_a_missing_agent_is_a_logged_failure(learner, monkeypatch):
-    monkeypatch.delenv("GREEK_COACH_AGENT_CMD", raising=False)
+    monkeypatch.delenv("OKNOS_AGENT_CMD", raising=False)
     monkeypatch.setattr(scheduling, "find_agent", lambda name: None)
     ok, detail = scheduling.run("watch", "codex")
     assert not ok and "not found" in detail

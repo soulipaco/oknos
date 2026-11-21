@@ -25,10 +25,10 @@ Every Greek word on screen can be tapped, but many give "no meaning for … in y
    - `report` carries the count, so the coach sees it.
    - Reuse the scan from this measurement: lookup over `greek.words()` of rubrics, prompts, texts, statements, options, dialogue lines, examples and table cells.
 2. **Inflected forms find their word.**
-   - Use the cached Wiktionary index (`.cache/greek-coach/kaikki-el-index.json`, already used by the importer and the verb-pack builder) to map a form to its lemma: verbs (ακούστε → ακούω), nouns (απαντήσεις → απάντηση) and adjectives.
+   - Use the cached Wiktionary index (`.cache/oknos/kaikki-el-index.json`, already used by the importer and the verb-pack builder) to map a form to its lemma: verbs (ακούστε → ακούω), nouns (απαντήσεις → απάντηση) and adjectives.
    - Then show the lemma's vocab item, labelled "form of …" / "… biçimi".
    - Prefer this to ever-longer ending lists in `lookup._ENDINGS`.
-3. **Instruction words.** A small tracked glossary of the rubric vocabulary, the same shape as `src/greek_coach/function_words.json`. Examples:
+3. **Instruction words.** A small tracked glossary of the rubric vocabulary, the same shape as `src/oknos/function_words.json`. Examples:
    - Διαλέγω, Διαλέξτε, Συμπληρώνω, Αντιστοιχίζω;
    - Σωστό ή λάθος, Διαβάζω/Διαβάστε, Ακούω/Ακούστε, Γράφω/Γράψτε;
    - η απάντηση, η ερώτηση, ο διάλογος, το κείμενο.

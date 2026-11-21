@@ -2,7 +2,7 @@
 
 import json
 
-from greek_coach import curriculum, db, packs, paths
+from oknos import curriculum, db, packs, paths
 
 BOOK = paths.CONTENT_DIR / "open" / "open-book"
 

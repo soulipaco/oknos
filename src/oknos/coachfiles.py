@@ -6,8 +6,8 @@ broken file is logged and skipped, never fatal) and updates its own tables:
   coach/message.json        the note on the home screen
   coach/watch.json          exam and course dates
   coach/resolved-flags.json the coach's verdict on flagged items -> flags.resolved_at
-  coach/schedule.json       written by `greek-coach schedule`; what should run and when
-  coach/runs.log            one line per scheduled run, written by `greek-coach run`
+  coach/schedule.json       written by `oknos schedule`; what should run and when
+  coach/runs.log            one line per scheduled run, written by `oknos run`
   feedback/<id>.json        marking of submission <id> -> submissions.status = 'marked'
   profile.json              the learner profile
 """
@@ -24,9 +24,9 @@ from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, ValidationError, field_validator, model_validator
 
-from greek_coach import db, paths
+from oknos import db, paths
 
-log = logging.getLogger("greek_coach.coachfiles")
+log = logging.getLogger("oknos.coachfiles")
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 MESSAGE_MAX_AGE_DAYS = 14
@@ -567,7 +567,7 @@ def validate_learner(folder: Path) -> list[str]:
 
 def _mock_problems(data: Any) -> list[str]:
     """Checks a mock definition against the blueprints (the model checks the shape)."""
-    from greek_coach import exams
+    from oknos import exams
 
     if not isinstance(data, dict):
         return []
@@ -575,7 +575,7 @@ def _mock_problems(data: Any) -> list[str]:
     bp = bps.get(data.get("blueprint"))
     if bp is None:
         return [f"blueprint {data.get('blueprint')!r} is not one of {sorted(bps)}"]
-    from greek_coach import packs
+    from oknos import packs
 
     out = []
     catalog = None
@@ -598,7 +598,7 @@ def _mock_problems(data: Any) -> list[str]:
 
 
 def _plan_problems(data: dict) -> list[str]:
-    from greek_coach import exams
+    from oknos import exams
 
     bps = exams.load_blueprints()
     out = []

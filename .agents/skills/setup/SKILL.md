@@ -1,11 +1,11 @@
 ---
 name: setup
-description: Install and start Greek Coach on this computer and put a shortcut on the desktop. Use when someone says "set this up for me", "install this", "get it running", "bunu benim için kur", or has just downloaded or cloned this repository and wants to use it.
+description: Install and start Oknos on this computer and put a shortcut on the desktop. Use when someone says "set this up for me", "install this", "get it running", "bunu benim için kur", or has just downloaded or cloned this repository and wants to use it.
 ---
 
-# Set up Greek Coach
+# Set up Oknos
 
-You are installing Greek Coach for someone who may have no technical background. Read this whole file before you start.
+You are installing Oknos for someone who may have no technical background. Read this whole file before you start.
 
 ## Rules for this whole skill
 
@@ -34,12 +34,12 @@ If git is missing:
 - **macOS:** run `xcode-select --install` and tell them "A window will appear; click Install and wait until it finishes, then tell me." Wait for them, then check `git --version` again.
 - **Linux:** install the `git` package with the system package manager (`sudo apt install -y git`, `sudo dnf install -y git`…). If it asks for a password, tell them it is their computer password.
 
-Clone into the folder they are in (or their Documents folder if they have no preference), then work inside the new `greek-coach` folder for every step below:
+Clone into the folder they are in (or their Documents folder if they have no preference), then work inside the new `oknos` folder for every step below:
 ```
-git clone <the link they gave you> greek-coach
+git clone <the link they gave you> oknos
 ```
 
-**Check:** the folder `greek-coach` exists and contains `pyproject.toml`.
+**Check:** the folder `oknos` exists and contains `pyproject.toml`.
 
 ## Step 2: make sure uv is installed (the one prerequisite)
 
@@ -81,7 +81,7 @@ git config core.hooksPath .githooks
 ## Step 4: check the install
 
 ```
-uv run greek-coach health
+uv run oknos health
 ```
 
 **Check:** the last line is `All good.` and these lines say `ok`:
@@ -102,28 +102,28 @@ If the file already exists, leave it alone. It holds their settings.
 ## Step 6: start the app
 
 ```
-uv run greek-coach start
+uv run oknos start
 ```
 This starts the app in the background and opens it in the browser. The command returns by itself after a few seconds; the app keeps running without a window.
 
 **Check:**
-- The command prints `Greek Coach is running at http://127.0.0.1:<port>/`.
+- The command prints `Oknos is running at http://127.0.0.1:<port>/`.
 - Then run:
   ```
-  uv run greek-coach health --server
+  uv run oknos health --server
   ```
   It must end with `All good.`, and include both "App running at …" and "Greek text survives the web layer too" as `ok`. That proves that Greek text goes through the database and the web server unharmed.
 
 ## Step 7: put the shortcut on the desktop
 
 ```
-uv run greek-coach shortcut
+uv run oknos shortcut
 ```
 
 **Check:** it prints `Created <path>`, and that file exists:
-- Windows: `Greek Coach.lnk` on the Desktop.
-- macOS: `Greek Coach.command` on the Desktop.
-- Linux: `greek-coach.desktop` in `~/.local/share/applications` (and on the Desktop if there is one).
+- Windows: `Oknos.lnk` on the Desktop.
+- macOS: `Oknos.command` on the Desktop.
+- Linux: `oknos.desktop` in `~/.local/share/applications` (and on the Desktop if there is one).
 
 ## Step 8: the Greek voice (optional, the person does it)
 
@@ -138,7 +138,7 @@ If there is no Greek voice, the app still works, but the speaker buttons stay hi
 
 Say something like this, in their language:
 
-> Greek Coach is ready, and it is open in your browser now. Whenever you want to study, double-click **Greek Coach** on your desktop. You don't need me open for that. When you want new exercises or feedback, open me again and say "coach".
+> Oknos is ready, and it is open in your browser now. Whenever you want to study, double-click **Oknos** on your desktop. You don't need me open for that. When you want new exercises or feedback, open me again and say "coach".
 
 On macOS, add: "The first time, your Mac may ask whether you are sure you want to open it. Click Open."
 
@@ -150,10 +150,10 @@ Do not set up scheduled runs here. If they ask for exercises to be prepared auto
 |---|---|
 | `uv sync` fails with a network or download error | Check the internet connection and run it again. A company network may block downloads; if so, say so plainly. |
 | `uv sync` says the Python version is not supported | Run `uv python install 3.12`, then `uv sync` again. |
-| Health: "Database could not be opened" | The folder is not writable. This often happens inside a OneDrive- or iCloud-synced folder, or a folder protected by "Controlled folder access". Clone the repository again into a normal local folder (e.g. `C:\Users\<name>\greek-coach` or `~/greek-coach`) and start again from step 3. |
+| Health: "Database could not be opened" | The folder is not writable. This often happens inside a OneDrive- or iCloud-synced folder, or a folder protected by "Controlled folder access". Clone the repository again into a normal local folder (e.g. `C:\Users\<name>\oknos` or `~/oknos`) and start again from step 3. |
 | Health: "Greek text survives the database" is FAIL | This is a bug in the app, not something the person can fix. Tell them the app could not be set up correctly and that the maintainer needs to look at it. Keep the health output for the maintainer. |
 | Health: content line says 0 exercises | The `content/open/` folder is missing or damaged. Run `git status` and restore it with `git checkout -- content/open`. |
-| `start` says "Greek Coach did not start" | It prints the end of `learner/logs/server.log`; read it. If another program is using the port, `start` already picks the next free one. Run `uv run greek-coach stop`, then `start` again. |
-| `health --server` says the app is not running right after `start` | Run `uv run greek-coach start` again and re-check. If it still fails, read `learner/logs/server.log`. |
-| `shortcut` fails | Run it again once. If it still fails, tell them they can always ask you "start Greek Coach", and you will run `uv run greek-coach start` in this folder. |
+| `start` says "Oknos did not start" | It prints the end of `learner/logs/server.log`; read it. If another program is using the port, `start` already picks the next free one. Run `uv run oknos stop`, then `start` again. |
+| `health --server` says the app is not running right after `start` | Run `uv run oknos start` again and re-check. If it still fails, read `learner/logs/server.log`. |
+| `shortcut` fails | Run it again once. If it still fails, tell them they can always ask you "start Oknos", and you will run `uv run oknos start` in this folder. |
 | The browser did not open | Give them the address `start` printed, as a link. |

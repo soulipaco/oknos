@@ -1,6 +1,6 @@
 # Agent Instructions
 
-Greek Coach is an open-source, local-first Greek learning app that is installed, operated and extended by a coding agent (Claude Code, Codex, or similar). This file is the canonical instruction file for every agent harness; `CLAUDE.md` only imports it.
+Oknos (Ὄκνος, the figure of sloth in Greek myth: `docs/brand/README.md`; called Greek Coach until 2026-11-21) is an open-source, local-first Greek learning app that is installed, operated and extended by a coding agent (Claude Code, Codex, or similar). This file is the canonical instruction file for every agent harness; `CLAUDE.md` only imports it.
 
 ## Read first
 
@@ -13,11 +13,11 @@ Greek Coach is an open-source, local-first Greek learning app that is installed,
 The commands used most, from the repo root (all of them are listed under **Commands** below):
 
 ```
-uv run greek-coach start      # start the app in the background and open the browser (http://127.0.0.1:8642)
-uv run greek-coach stop       # stop it
-uv run greek-coach stop; uv run greek-coach start   # restart: needed after changes to code (src/, web/)
-uv run greek-coach reload     # take in new or edited content (packs, chapters, coach files) without a restart
-uv run greek-coach health     # check the install
+uv run oknos start      # start the app in the background and open the browser (http://127.0.0.1:8642)
+uv run oknos stop       # stop it
+uv run oknos stop; uv run oknos start   # restart: needed after changes to code (src/, web/)
+uv run oknos reload     # take in new or edited content (packs, chapters, coach files) without a restart
+uv run oknos health     # check the install
 uv run pytest                 # run the tests
 ```
 
@@ -26,15 +26,15 @@ uv run pytest                 # run the tests
 Phases 1–5 and 5b are built and committed. Phase 5b is a curriculum the learner progresses through, plus screens to see and choose what to practise. Phase 5c (the book: a chapter to read before each stage's practice) is built. Phase 5d (every tappable word has a meaning; no question hidden behind "Translate") is built. **All 26 stages of the book curriculum have a chapter**: the intro, lessons 1–24 and the B1 bridge. Each was drafted by Sonnet (lessons 1–2 by Opus), reviewed by Opus, and validated. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.
 
 What works now:
-- **Stack:** uv, FastAPI and SQLite (`learner/greek-coach.db`, migrations `0001`–`0006`), with a no-build front end in `web/`. UI in English and Turkish.
+- **Stack:** uv, FastAPI and SQLite (`learner/oknos.db`, migrations `0001`–`0006`), with a no-build front end in `web/`. UI in English and Turkish.
 - **Progression (phase 5b, SPEC §5.4).**
   - A curriculum orders everything: the maintainer's book lessons (`content/private/greek-helper/curriculum.json`: intro/reading, lessons 1–24, B1) or the open course (`curricula/open-a1-b1.json`).
   - Daily sessions serve only reached stages, the current one first. A plan of today's that holds cards of a stage not reached (made before the curriculum, or under another one) is replaced, not resumed.
   - A stage is done at 80% learned, or with a passed "test me" check, and stays done.
   - Coach items carry the topic `stage:<id>`.
-  - `src/greek_coach/curriculum.py`.
+  - `src/oknos/curriculum.py`.
 - **The book: read first, then practise (phase 5c, SPEC §4.8, `docs/LESSONS.md`).**
-  - A stage can have a **chapter** (`<pack>/lessons/<stage>.json`, `src/greek_coach/chapters.py`): typed blocks (prose, dialogue, table, examples, words, tip, check) in a fixed section order, with explanations in Turkish and English.
+  - A stage can have a **chapter** (`<pack>/lessons/<stage>.json`, `src/oknos/chapters.py`): typed blocks (prose, dialogue, table, examples, words, tip, check) in a fixed section order, with explanations in Turkish and English.
   - The reader (`?lesson=<stage>`) plays the dialogues, makes every word tappable, and runs the inline "try it" checks. These are a `lesson` session: they train the review schedule but are never exam evidence. It ends with "Done reading — practise this chapter".
   - **Teach before testing:** a stage's new items enter daily sessions only once its chapter is read (or its check passed). Reviews never wait. A stage without a chapter behaves as before.
   - A word never seen gets an ungraded **learn card** (meaning, and an example from a chapter) before its first test.
@@ -87,18 +87,18 @@ What works now:
     - the coach's note, ready feedback, the next exam dates, failed scheduled runs;
     - one readiness bar per exam unit.
 - **Exam mode** (the exam screen, `?exam`).
-  - **Readiness per unit, against each exam's real pass rule** (`src/greek_coach/readiness.py`, SPEC §5.3):
+  - **Readiness per unit, against each exam's real pass rule** (`src/oknos/readiness.py`, SPEC §5.3):
     - evidence is first attempts only, at the exam's level, with a Wilson range;
     - "not enough evidence" replaces a number when there is too little;
     - writing and speaking count only through the coach's scores.
   - Coverage per task.
   - The plan's next four weeks, with planned against done.
-  - Timed mock exams (`src/greek_coach/mock.py`):
+  - Timed mock exams (`src/oknos/mock.py`):
     - section by section, with the server's clock;
     - the clock keeps running when interrupted;
     - auto-scored to the blueprint's points.
 - **The coach** (the agent) works only through files:
-  - it reads `greek-coach report` (`report_version` 3: readiness, coverage, plan inputs and progress, mocks, chapters read);
+  - it reads `oknos report` (`report_version` 3: readiness, coverage, plan inputs and progress, mocks, chapters read);
   - it writes packs, `feedback/<id>.json`, `coach/*.json` (including `plan.json` and `mocks/<id>.json`) and notes;
   - the app takes them in.
 
@@ -110,11 +110,11 @@ What works now:
   - The lookup finds, in this order:
     - exact words and verb forms;
     - accent-free matches;
-    - function words (`src/greek_coach/function_words.json`), instruction words (`rubric_words.json`: Διαλέγω, Συμπληρώστε…) and the packs' glossary words;
+    - function words (`src/oknos/function_words.json`), instruction words (`rubric_words.json`: Διαλέγω, Συμπληρώστε…) and the packs' glossary words;
     - names and places (`names.json`, chapter speakers, glossary `names`);
     - inflected forms mapped to their word ("“ακούστε” is a form of ακούω");
     - then stems and phrases.
-  - A pack's `glossary.json` holds `forms`, `words`, `names`, and `leave` (left unexplained on purpose, with a reason). `uv run greek-coach words <pack> --write` maps inflected forms from the cached Wiktionary dump.
+  - A pack's `glossary.json` holds `forms`, `words`, `names`, and `leave` (left unexplained on purpose, with a reason). `uv run oknos words <pack> --write` maps inflected forms from the cached Wiktionary dump.
   - The open packs' meanings are tracked in `content/open/open-shared-words-tr/glossary.json`. They were drafted by Sonnet on 2026-11-20 and spot-checked by Opus. On a fresh clone the open packs explain every word they show.
   - With the book, 15 of 5,169 tappable words (0.3%) are left unexplained, all OCR fragments or endings in grammar tables. `report` carries `tap_a_word`.
   - A meaning shown in the other UI language because the item has none in this one is tagged EN or TR.
@@ -155,8 +155,8 @@ On the roadmap (2026-11-20, `docs/prompts/`):
 
 - The repository is on GitHub under the maintainer's account, **private**.
 - Commits land on `main` through a short branch: commit there, fast-forward `main`, delete the branch. `git push` follows **only when the maintainer asks**.
-- **CI** (`.github/workflows/ci.yml`) runs on every push and pull request, on Ubuntu and Windows: the guard, `uv run pytest` and `uv run greek-coach validate content/open`. The tests need nothing from `content/private/`, `learner/` or a signed-in agent. See the result with `gh run list`, and a failure with `gh run view <id> --log-failed`.
-- **The guard** (`uv run greek-coach guard`, `src/greek_coach/guard.py`) fails if git tracks anything under `learner/` or `content/private/`, or a file holding a local user path (`C:\Users\<name>`, `/home/<name>`, an agent's temp folder). Write a placeholder such as `C:\Users\you` instead. The tests and CI run it, and so does the pre-push hook in `.githooks/`, which `git config core.hooksPath .githooks` turns on (the `setup` skill does this).
+- **CI** (`.github/workflows/ci.yml`) runs on every push and pull request, on Ubuntu and Windows: the guard, `uv run pytest` and `uv run oknos validate content/open`. The tests need nothing from `content/private/`, `learner/` or a signed-in agent. See the result with `gh run list`, and a failure with `gh run view <id> --log-failed`.
+- **The guard** (`uv run oknos guard`, `src/oknos/guard.py`) fails if git tracks anything under `learner/` or `content/private/`, or a file holding a local user path (`C:\Users\<name>`, `/home/<name>`, an agent's temp folder). Write a placeholder such as `C:\Users\you` instead. The tests and CI run it, and so does the pre-push hook in `.githooks/`, which `git config core.hooksPath .githooks` turns on (the `setup` skill does this).
 - **Before the repo is made public** (a separate decision):
   - phase 6 step 5, the public-repo check, must pass;
   - the README's `<owner>` placeholder gets the real account;
@@ -175,7 +175,7 @@ If it is unclear which one you are talking to, ask once.
 The canonical copy of each skill is in `.agents/skills/<name>/SKILL.md`. `.claude/skills/<name>/SKILL.md` only points to it, and `tests/test_skills.py` keeps the two in step. The coach skills share `docs/COACHING.md`.
 
 - `setup`: "set this up for me". Installs uv, starts the app, checks health and makes the desktop shortcut. See `.agents/skills/setup/SKILL.md`.
-- `import-material`: "import my old project / this book". Writes a mapping, runs `greek-coach import` into `content/private/`, and checks the report. See `.agents/skills/import-material/SKILL.md`.
+- `import-material`: "import my old project / this book". Writes a mapping, runs `oknos import` into `content/private/`, and checks the report. See `.agents/skills/import-material/SKILL.md`.
 - `coach`: "coach", "how am I doing?". The check-in: profile on first run, report, marking, flags, 10–30 new items, the home-screen note. See `.agents/skills/coach/SKILL.md`.
 - `capture`: "today in class we did…", or a letter or photo in `learner/inbox/`. Turns it into practice, with personal data replaced. See `.agents/skills/capture/SKILL.md`.
 - `mark`: marks writing and speaking against the exam criteria into `learner/feedback/<id>.json`. See `.agents/skills/mark/SKILL.md`.
@@ -189,30 +189,30 @@ The canonical copy of each skill is in `.agents/skills/<name>/SKILL.md`. `.claud
 
 ## Commands
 
-- `uv run greek-coach start`: runs the app in the background on `127.0.0.1:8642` (or the next free port) and opens the browser.
-- `uv run greek-coach stop`: stops it.
-- `uv run greek-coach health [--server] [--json]`: checks the install.
-- `uv run greek-coach validate <pack>`: checks a content pack and explains any problems.
-- `uv run greek-coach import <mapping> --source <folder>`: imports someone's own material as a private pack (`docs/IMPORTING.md`).
-- `uv run greek-coach schema`: writes the pack JSON Schemas to `schemas/`.
-- `uv run greek-coach report [--since 14d] [--words]`: the learner's record as one JSON document. This is the coach's only view of the database.
-- `uv run greek-coach validate learner`: checks coach-written packs (including the Greek lint) and the coach's files.
-- `uv run greek-coach words <pack> [--write] [--json <file>]`: lists the tappable words that find no meaning; `--write` maps inflected forms to their word in the pack's `glossary.json`.
-- `uv run greek-coach reload`: makes the running app load new content and coach files.
-- `uv run greek-coach raw <pack> --unit <id>`: shows the raw imported exercises of one lesson.
-- `uv run --group speech greek-coach transcribe`: transcribes speaking recordings locally.
-- `uv run greek-coach run <daily-prep|watch>` and `uv run greek-coach schedule list|add|remove`: scheduled coach runs. Set them up only after the learner says yes.
+- `uv run oknos start`: runs the app in the background on `127.0.0.1:8642` (or the next free port) and opens the browser.
+- `uv run oknos stop`: stops it.
+- `uv run oknos health [--server] [--json]`: checks the install.
+- `uv run oknos validate <pack>`: checks a content pack and explains any problems.
+- `uv run oknos import <mapping> --source <folder>`: imports someone's own material as a private pack (`docs/IMPORTING.md`).
+- `uv run oknos schema`: writes the pack JSON Schemas to `schemas/`.
+- `uv run oknos report [--since 14d] [--words]`: the learner's record as one JSON document. This is the coach's only view of the database.
+- `uv run oknos validate learner`: checks coach-written packs (including the Greek lint) and the coach's files.
+- `uv run oknos words <pack> [--write] [--json <file>]`: lists the tappable words that find no meaning; `--write` maps inflected forms to their word in the pack's `glossary.json`.
+- `uv run oknos reload`: makes the running app load new content and coach files.
+- `uv run oknos raw <pack> --unit <id>`: shows the raw imported exercises of one lesson.
+- `uv run --group speech oknos transcribe`: transcribes speaking recordings locally.
+- `uv run oknos run <daily-prep|watch>` and `uv run oknos schedule list|add|remove`: scheduled coach runs. Set them up only after the learner says yes.
 - `uv run python scripts/simulate.py`: simulates two weeks of use in a throwaway learner folder and prints the scheduler, home and readiness numbers.
-- `GREEK_COACH_MOCK_SPEED=30 uv run greek-coach start --foreground`: development only; mock-exam time passes 30 times faster, to check the timing.
-- `uv run greek-coach shortcut`: creates the desktop launcher.
+- `OKNOS_MOCK_SPEED=30 uv run oknos start --foreground`: development only; mock-exam time passes 30 times faster, to check the timing.
+- `uv run oknos shortcut`: creates the desktop launcher.
 - `uv run pytest`: runs the tests.
-- `uv run greek-coach start --foreground`: runs the server in the terminal, for development.
-- `uv run greek-coach guard [--rev <commit>]`: checks that git tracks nothing private (learner data, private content, local user paths).
+- `uv run oknos start --foreground`: runs the server in the terminal, for development.
+- `uv run oknos guard [--rev <commit>]`: checks that git tracks nothing private (learner data, private content, local user paths).
 
 ## Guardrails
 
 - **Local only.** No accounts, no telemetry, no cloud services. The app runs on `localhost` and all learner data stays on the machine. The one exception is the opt-in edge-tts fallback in `docs/SPEC.md` §9. It handles content text only, never learner data.
-- **The coach writes files, never the database.** It reads `greek-coach report`; the app takes in what it writes (`docs/COACHING.md` §7).
+- **The coach writes files, never the database.** It reads `oknos report`; the app takes in what it writes (`docs/COACHING.md` §7).
 - **Never commit learner data or private content.** `learner/` and `content/private/` are gitignored and must stay that way. Do not move anything out of them into tracked paths.
 - **Copyright.** Tracked content must be original to this project or openly licensed, with the licence recorded in the pack manifest. Textbook scans, OCR of commercial books, publisher audio and past exam papers belong in `content/private/` only.
 - **The app must work without an agent running.** The agent prepares content and feedback ahead of time; the daily study session is the web app alone.

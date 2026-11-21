@@ -1,4 +1,4 @@
-"""Scheduled coach runs (SPEC §6): `greek-coach run <skill>` and `greek-coach schedule ...`.
+"""Scheduled coach runs (SPEC §6): `oknos run <skill>` and `oknos schedule ...`.
 
 `run` starts the learner's agent headless on one skill and always records the outcome in
 learner/coach/runs.log, so a failed or crashed run shows on the home screen instead of
@@ -19,14 +19,14 @@ import sys
 import time
 from pathlib import Path
 
-from greek_coach import coachfiles, db, paths
+from oknos import coachfiles, db, paths
 
 SKILLS = ("daily-prep", "watch")
-TASK_PREFIX = "Greek Coach"
+TASK_PREFIX = "Oknos"
 RUN_TIMEOUT_S = 45 * 60
 CLAUDE_TOOLS = ("Read", "Write", "Edit", "Glob", "Grep", "WebFetch", "WebSearch",
-                "Bash(uv run greek-coach:*)", "Bash(uv run python scripts/:*)",
-                "Bash(uv run --group speech greek-coach:*)")
+                "Bash(uv run oknos:*)", "Bash(uv run python scripts/:*)",
+                "Bash(uv run --group speech oknos:*)")
 
 
 def prompt(skill: str) -> str:
@@ -54,7 +54,7 @@ def find_agent(agent: str) -> str | None:
 
 def agent_command(agent: str, skill: str) -> list[str] | None:
     """The headless command line for an agent, or None if it is not installed."""
-    override = os.environ.get("GREEK_COACH_AGENT_CMD")  # tests and unusual installs: a JSON list
+    override = paths.env("AGENT_CMD")  # tests and unusual installs: a JSON list
     if override:
         return [*json.loads(override), prompt(skill)]
     exe = find_agent(agent)
@@ -80,7 +80,7 @@ def run(skill: str, agent: str | None = None, timeout: int = RUN_TIMEOUT_S) -> t
         coachfiles.append_run(skill, False, detail)
         return False, detail
     started = time.monotonic()
-    env = dict(os.environ, PYTHONUTF8="1", PYTHONIOENCODING="utf-8", GREEK_COACH_SCHEDULED_RUN=skill)
+    env = dict(os.environ, PYTHONUTF8="1", PYTHONIOENCODING="utf-8", OKNOS_SCHEDULED_RUN=skill)
     with log_file.open("a", encoding="utf-8") as log:
         log.write(f"\n--- {db.now()} {skill} with {agent} ---\n")
         log.flush()
@@ -121,7 +121,7 @@ def _python_for_tasks() -> str:
 
 
 def _run_args(skill: str) -> list[str]:
-    return [_python_for_tasks(), "-m", "greek_coach", "run", skill]
+    return [_python_for_tasks(), "-m", "oknos", "run", skill]
 
 
 def task_name(skill: str) -> str:
@@ -155,7 +155,7 @@ def add(skill: str, every: str, at: str, day: str | None, agent: str) -> str:
         where = _cron_add(skill, args, task)
     _write_schedule(lambda s: (s.tasks.__setitem__(skill, task), setattr(s, "agent", agent)))
     when = f"every day at {at}" if every == "day" else f"every {day or 'SUN'} at {at}"
-    return f"{where}: runs `greek-coach run {skill}` {when}"
+    return f"{where}: runs `oknos run {skill}` {when}"
 
 
 def remove(skill: str) -> str:
@@ -166,7 +166,7 @@ def remove(skill: str) -> str:
         subprocess.run(["launchctl", "unload", str(plist)], capture_output=True)
         plist.unlink(missing_ok=True)
     else:
-        _cron_write([l for l in _cron_read() if not l.endswith(f"# greek-coach {skill}")])
+        _cron_write([l for l in _cron_read() if not l.endswith(f"# oknos {skill}")])
     _write_schedule(lambda s: s.tasks.pop(skill, None))
     return f"removed the scheduled {skill} run"
 
@@ -190,7 +190,7 @@ def _check(proc: subprocess.CompletedProcess) -> None:
 
 
 def _plist_path(skill: str) -> Path:
-    return Path.home() / "Library" / "LaunchAgents" / f"org.greek-coach.{skill}.plist"
+    return Path.home() / "Library" / "LaunchAgents" / f"org.oknos.{skill}.plist"
 
 
 def _launchd_add(skill: str, args: list[str], task: coachfiles.Task) -> str:  # untested (no Mac yet)
@@ -205,7 +205,7 @@ def _launchd_add(skill: str, args: list[str], task: coachfiles.Task) -> str:  # 
     plist.write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" '
         '"http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n<plist version="1.0"><dict>'
-        f"<key>Label</key><string>org.greek-coach.{skill}</string>"
+        f"<key>Label</key><string>org.oknos.{skill}</string>"
         f"<key>ProgramArguments</key><array>{arg_xml}</array>"
         f"<key>WorkingDirectory</key><string>{paths.REPO_ROOT}</string>"
         f"<key>StartCalendarInterval</key><dict>{interval}</dict></dict></plist>\n", encoding="utf-8")
@@ -226,6 +226,6 @@ def _cron_write(lines: list[str]) -> None:
 def _cron_add(skill: str, args: list[str], task: coachfiles.Task) -> str:  # untested (no Linux yet)
     hour, minute = (int(x) for x in task.at.split(":"))
     dow = "*" if task.every == "day" else str(["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"].index(task.day or "SUN"))
-    line = f"{minute} {hour} * * {dow} cd '{paths.REPO_ROOT}' && {' '.join(args)} # greek-coach {skill}"
-    _cron_write([l for l in _cron_read() if not l.endswith(f"# greek-coach {skill}")] + [line])
+    line = f"{minute} {hour} * * {dow} cd '{paths.REPO_ROOT}' && {' '.join(args)} # oknos {skill}"
+    _cron_write([l for l in _cron_read() if not l.endswith(f"# oknos {skill}")] + [line])
     return "crontab entry"

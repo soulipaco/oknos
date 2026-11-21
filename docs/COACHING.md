@@ -11,7 +11,7 @@ The skills hold only their own flow.
 
 ## 1. What you are and what the app is
 
-Greek Coach is a local web app. It presents exercises, checks answers, schedules reviews and records every attempt. It works every day without you.
+Oknos is a local web app. It presents exercises, checks answers, schedules reviews and records every attempt. It works every day without you.
 
 **You are the other half.** The app has no language model. Everything that needs judgement happens when the learner opens you:
 
@@ -21,16 +21,16 @@ Greek Coach is a local web app. It presents exercises, checks answers, schedules
 
 You work **only through files**:
 
-- you read the learner's record with `uv run greek-coach report`;
+- you read the learner's record with `uv run oknos report`;
 - you write packs, feedback and notes into the learner folder;
 - the app picks them up.
 
 Rules that are never bent:
 
-- **Never write to or query the database** (`greek-coach.db`), not even "just to fix one row". The report is your view of it, and the files in section 7 are your way to change things. The app reads them and updates its own tables.
+- **Never write to or query the database** (`oknos.db`), not even "just to fix one row". The report is your view of it, and the files in section 7 are your way to change things. The app reads them and updates its own tables.
 - **Never put learner data or private content into git**, and never move anything out of `learner/` or `content/private/`. Do not commit unless the maintainer asks.
-- **Run everything from the repository root.** Commands are `uv run greek-coach …`.
-- **The learner folder is wherever the report says** (`learner_dir`). It is normally `learner/` in the repo, but tests and simulations point it elsewhere with `GREEK_COACH_LEARNER_DIR`. Always write to the folder the report names.
+- **Run everything from the repository root.** Commands are `uv run oknos …`.
+- **The learner folder is wherever the report says** (`learner_dir`). It is normally `learner/` in the repo, but tests and simulations point it elsewhere with `OKNOS_LEARNER_DIR`. Always write to the folder the report names.
 
 ## 2. Who you are talking to
 
@@ -53,9 +53,9 @@ The first learner has avoided studying Greek for eight years, after material tha
 ## 3. Reading the record
 
 ```
-uv run greek-coach report            # the last 14 days (JSON)
-uv run greek-coach report --since 4w # a longer window
-uv run greek-coach report --words    # also every word they have met, with known/learning
+uv run oknos report            # the last 14 days (JSON)
+uv run oknos report --since 4w # a longer window
+uv run oknos report --words    # also every word they have met, with known/learning
 ```
 
 The fields you will use most:
@@ -80,7 +80,7 @@ The fields you will use most:
 | `coverage` | Per exam task: items available, tried and unseen at the exam's level; untagged general practice; and for B1, which `beyond_a2` points have been practised. |
 | `plan_inputs`, `plan_progress` | The plan's facts: candidate sessions from `watch.json` with weeks left and hours, the real pace against the budget. Also the current plan's planned against done (§11). |
 | `mocks` | Mock exams defined and taken, with points per section and `would_pass` (§12). |
-| `tap_a_word` | How many of the Greek words on screen find no meaning when tapped: `unexplained` of `total`, `by_pack`, and a `sample`. Anything above zero in your own pack (`learner/generated`) is yours to fix: run `uv run greek-coach words learner --write` (it maps inflected forms to their word), then give each word still listed a row in your pack's `glossary.json` (`words`: `el`, `pos`, `en`, `tr`, `forms`; SPEC §4.9). |
+| `tap_a_word` | How many of the Greek words on screen find no meaning when tapped: `unexplained` of `total`, `by_pack`, and a `sample`. Anything above zero in your own pack (`learner/generated`) is yours to fix: run `uv run oknos words learner --write` (it maps inflected forms to their word), then give each word still listed a row in your pack's `glossary.json` (`words`: `el`, `pos`, `en`, `tr`, `forms`; SPEC §4.9). |
 | `chapters` | Which stages of the active curriculum have a chapter, and when each was opened and finished. A stage with an unread chapter gets none of its new items in daily sessions: if the current stage's chapter is unread, say so in your note ("read Lesson 3 first"). New chapters are the `write-chapter` skill. |
 
 ## 4. Where to write
@@ -115,9 +115,9 @@ Adjust `levels` if you write B1 items. Then:
 
 After writing, always run, in order:
 
-1. `uv run greek-coach validate <the pack folder>`. Fix every **problem**. Read every **note**: a note about a word "no other content uses" is either a typo or a word above their level.
-2. `uv run greek-coach validate <learner_dir>`. This also checks the coach files.
-3. `uv run greek-coach reload`. The running app picks up the new items. If it is not running, they load at its next start.
+1. `uv run oknos validate <the pack folder>`. Fix every **problem**. Read every **note**: a note about a word "no other content uses" is either a typo or a word above their level.
+2. `uv run oknos validate <learner_dir>`. This also checks the coach files.
+3. `uv run oknos reload`. The running app picks up the new items. If it is not running, they load at its next start.
 
 The app shows coach items **first** in the next daily session: new words, verb forms and the exam-task slot.
 
@@ -331,18 +331,18 @@ Written by `tutor`. The skill describes it.
 
 ### 7.8 Scheduled runs
 
-`coach/runs.log` and `coach/schedule.json` are written by `greek-coach run` and `greek-coach schedule`. Do not edit them. The report shows them under `coach`.
+`coach/runs.log` and `coach/schedule.json` are written by `oknos run` and `oknos schedule`. Do not edit them. The report shows them under `coach`.
 
 ## 8. Tools you can use
 
-- `uv run greek-coach raw <pack> --unit lesson-05`: the raw imported exercises of one lesson (for `rebuild-imported`).
+- `uv run oknos raw <pack> --unit lesson-05`: the raw imported exercises of one lesson (for `rebuild-imported`).
 - `uv run python scripts/make_audio.py --engine <edge|windows> --pack <id>`: pre-generates listening audio for `stimulus.tts` passages of 8 words or more.
   - The app plays the file instead of the browser voice, which also makes listening work on a phone.
   - `edge` (natural, online) is allowed only when `profile.edge_tts_ok` is true, and only for packs outside `learner/`. Coach packs live under `learner/` and may hold captured material, so the script refuses edge for them.
   - For coach packs, use `--engine windows` (the offline Windows voice) on Windows. Elsewhere, skip it: the browser voice reads the `tts` text.
-- `uv run --group speech greek-coach transcribe`: transcribes speaking recordings locally.
+- `uv run --group speech oknos transcribe`: transcribes speaking recordings locally.
   - The `small` model is about 0.5 GB. Download it only after the learner's yes (`whisper_ok`). Then add `--download` once.
-- **Wiktionary data** (CC BY-SA), if it was downloaded during import: `.cache/greek-coach/kaikki-el-index.json` has noun genders and verb conjugations. Use it to check a form you are unsure of.
+- **Wiktionary data** (CC BY-SA), if it was downloaded during import: `.cache/oknos/kaikki-el-index.json` has noun genders and verb conjugations. Use it to check a form you are unsure of.
 
 ## 9. Personal data
 

@@ -11,7 +11,7 @@ A mock exam is the only evidence the app has that the learner can do the exam **
 
 ## 1. Choose the exam and the sections
 
-1. Run `uv run greek-coach report`. Note `profile.target_exam`, `readiness`, `coverage` and `mocks` (mocks already defined, and past runs).
+1. Run `uv run oknos report`. Note `profile.target_exam`, `readiness`, `coverage` and `mocks` (mocks already defined, and past runs).
 2. **Which exam.** Use the plan's target (`coach/plan.json` `exam`) or `profile.target_exam`. If it is `undecided`, ask which one, in one line.
 3. **Which units.**
    - A full mock has every unit of the blueprint.
@@ -76,9 +76,9 @@ Write `<learner_dir>/coach/mocks/<id>.json`, where `<id>` is `<today>-<exam>` an
 
 Then:
 
-- `uv run greek-coach validate <learner_dir>/generated/coach-mock` (and the private pack if you used one);
-- `uv run greek-coach validate <learner_dir>`;
-- `uv run greek-coach reload`.
+- `uv run oknos validate <learner_dir>/generated/coach-mock` (and the private pack if you used one);
+- `uv run oknos validate <learner_dir>`;
+- `uv run oknos reload`.
 
 The exam screen now shows the mock. Until it is taken, its items stay out of daily sessions.
 
@@ -96,7 +96,7 @@ In their language, in a few lines:
 When `mocks.runs` shows a finished run (or the learner says they are done):
 
 1. Mark its writing and speaking submissions with the `mark` skill. In each feedback file set `score.exam` to the blueprint id and `score.task` to the item's `exam_task`, with `points` and `out_of` on that task's scale (for example A2-LTR e-mail: out of 10; B1 writing part B: out of 13). The app scales them into the unit.
-2. Run `uv run greek-coach reload`, then the report again. Read `mocks.runs[0]`: the points per section, `would_pass`, unanswered items, and any `time_away` section.
+2. Run `uv run oknos reload`, then the report again. Read `mocks.runs[0]`: the points per section, `would_pass`, unanswered items, and any `time_away` section.
 3. **Tell them the result honestly**, per section, against the pass line:
    - what cost the most points;
    - whether time was the problem (unanswered items) or knowledge (wrong answers);

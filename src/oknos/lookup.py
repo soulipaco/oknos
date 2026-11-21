@@ -17,9 +17,9 @@ from collections import defaultdict
 from dataclasses import dataclass, replace
 from pathlib import Path
 
-from greek_coach import greek
-from greek_coach.checking import meaning
-from greek_coach.packs import Catalog, FormItem, VocabItem
+from oknos import greek
+from oknos.checking import meaning
+from oknos.packs import Catalog, FormItem, VocabItem
 
 # Endings stripped to find a shared stem, longest first.
 _ENDINGS = sorted(

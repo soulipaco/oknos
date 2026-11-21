@@ -4,9 +4,9 @@ import json
 
 import pytest
 
-from greek_coach import packs, paths
-from greek_coach.importer import core, enrich
-from greek_coach.importer.mapping import Mapping
+from oknos import packs, paths
+from oknos.importer import core, enrich
+from oknos.importer.mapping import Mapping
 
 FAKE_INDEX = {
     "version": enrich.INDEX_VERSION,
@@ -130,8 +130,8 @@ def test_import_refuses_tracked_folders(source, learner, monkeypatch, tmp_path):
 
 
 def test_builtin_mapping_is_valid_and_has_no_absolute_paths():
-    from greek_coach.importer import mapping
+    from oknos.importer import mapping
 
-    path = paths.REPO_ROOT / "src" / "greek_coach" / "importer" / "mappings" / "greek-helper.json"
+    path = paths.REPO_ROOT / "src" / "oknos" / "importer" / "mappings" / "greek-helper.json"
     m = mapping.load(path)
     assert m.pack.id == "greek-helper" and "C:" not in path.read_text(encoding="utf-8")

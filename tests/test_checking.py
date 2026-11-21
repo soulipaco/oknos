@@ -1,7 +1,7 @@
 import pytest
 
-from greek_coach.checking import CheckError, check
-from greek_coach.packs import McqItem, TrueFalseItem, VocabItem
+from oknos.checking import CheckError, check
+from oknos.packs import McqItem, TrueFalseItem, VocabItem
 
 KAFES = VocabItem(id="v", type="vocab", skill="vocab", level="A1", el="ο καφές", en="coffee", tr="kahve")
 

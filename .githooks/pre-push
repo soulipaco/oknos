@@ -1,10 +1,10 @@
 #!/bin/sh
-# Greek Coach: refuse to push a commit that tracks learner data, private content or a local
+# Oknos: refuse to push a commit that tracks learner data, private content or a local
 # user path. Installed by `git config core.hooksPath .githooks` (the setup skill does this).
 zero=0000000000000000000000000000000000000000
 status=0
 while read -r local_ref local_sha remote_ref remote_sha; do
   [ "$local_sha" = "$zero" ] && continue  # deleting a branch
-  uv run --quiet greek-coach guard --rev "$local_sha" || status=1
+  uv run --quiet oknos guard --rev "$local_sha" || status=1
 done
 exit $status

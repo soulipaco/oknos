@@ -44,13 +44,13 @@ def main() -> int:
     args = ap.parse_args()
     if args.learner_dir:
         Path(args.learner_dir).mkdir(parents=True, exist_ok=True)
-        os.environ["GREEK_COACH_LEARNER_DIR"] = str(Path(args.learner_dir).resolve())
+        os.environ["OKNOS_LEARNER_DIR"] = str(Path(args.learner_dir).resolve())
     else:
-        os.environ["GREEK_COACH_LEARNER_DIR"] = tempfile.mkdtemp(prefix="greek-coach-sim-")
-    tmp = os.environ["GREEK_COACH_LEARNER_DIR"]
+        os.environ["OKNOS_LEARNER_DIR"] = tempfile.mkdtemp(prefix="oknos-sim-")
+    tmp = os.environ["OKNOS_LEARNER_DIR"]
 
-    from greek_coach import db, packs, scheduler, session
-    from greek_coach.checking import check
+    from oknos import db, packs, scheduler, session
+    from oknos.checking import check
     sys.path.insert(0, str(ROOT / "tests"))
     from test_scheduler import _answer  # the same right/wrong answer helper the tests use
 
@@ -63,7 +63,7 @@ def main() -> int:
     print(f"learner folder: {tmp}")
     print(f"content: {len(catalog.packs)} packs, {len(catalog.items)} items\n")
     print("day        cards  review verbs task new | wrong  back-from-yesterday | due tomorrow | stage (learned/core)")
-    from greek_coach import curriculum
+    from oknos import curriculum
     wrong_before: set[str] = set()
     flag_days = {3: "confusing", 8: "wrong"} if args.flags else {}
     for n in range(args.days):
@@ -145,7 +145,7 @@ def main() -> int:
     print("\ncross-check: grid, vocabulary accuracy and counts match the attempts table.")
 
     # Readiness per exam unit (SPEC §5.3): what the exam screen would show on the last day.
-    from greek_coach import readiness
+    from oknos import readiness
     print("\nreadiness (first attempts only, last 90 days):")
     for exam, r in readiness.all_readiness(conn, catalog).items():
         print(f"  {exam}: verdict {r['verdict']['state']}")

@@ -18,7 +18,7 @@ import sqlite3
 from datetime import date, timedelta
 from typing import Any
 
-from greek_coach import coachfiles, db, exams
+from oknos import coachfiles, db, exams
 
 PACE_WEEKS = 4
 MINUTE_CAP_MS = 120_000  # one answer counts at most 2 minutes, as on the home screen

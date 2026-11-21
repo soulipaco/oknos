@@ -26,8 +26,8 @@ from collections import defaultdict
 from datetime import timedelta
 from typing import Any
 
-from greek_coach import coachfiles, db, exams
-from greek_coach.packs import TASK_TYPES, Catalog, FormItem, servable
+from oknos import coachfiles, db, exams
+from oknos.packs import TASK_TYPES, Catalog, FormItem, servable
 
 EVIDENCE_DAYS = 90
 PER_TASK_MAX = 20
@@ -187,7 +187,7 @@ def for_blueprint(conn: sqlite3.Connection, catalog: Catalog, bp: exams.Blueprin
         ev.sort(key=lambda e: e["ts"], reverse=True)
     units = [unit_readiness(bp, u, per_task) for u in bp.units]
     try:
-        from greek_coach import mock
+        from oknos import mock
         latest = mock.latest_unit_results(conn, bp.id)
     except Exception:  # no mock tables yet, or a broken mock file: readiness still works
         latest = {}

@@ -4,7 +4,7 @@ import unicodedata
 
 
 def _db(learner):
-    conn = sqlite3.connect(learner / "greek-coach.db")
+    conn = sqlite3.connect(learner / "oknos.db")
     conn.row_factory = sqlite3.Row
     return conn
 

@@ -22,8 +22,8 @@ jobs:
       - name: Install
         run: uv sync
       - name: Nothing private is tracked
-        run: uv run greek-coach guard
+        run: uv run oknos guard
       - name: Tests
         run: uv run pytest -q
       - name: Open content is valid
-        run: uv run greek-coach validate content/open
+        run: uv run oknos validate content/open
