@@ -4,7 +4,7 @@ Read `AGENTS.md` and `docs/SPEC.md`. The skeleton from phase 2 works. This sessi
 
 ## Part A — Private import
 
-My earlier project is at `C:\Users\you\Desktop\Greek_Helper`. Its app-ready data is in `data/app/` and its documents explain how it was produced. It is OCR of a commercial textbook, so it stays on my machine: the importer code belongs in this repo, its output goes to `content/private/`, and nothing from that folder may end up in a tracked file, a test fixture or an example.
+My earlier project is at `Greek_Helper` (a folder on the maintainer's machine, outside this repo). Its app-ready data is in `data/app/` and its documents explain how it was produced. It is OCR of a commercial textbook, so it stays on my machine: the importer code belongs in this repo, its output goes to `content/private/`, and nothing from that folder may end up in a tracked file, a test fixture or an example.
 
 Build an importer that turns that data into a private content pack in our format.
 

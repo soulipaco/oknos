@@ -138,9 +138,7 @@ Known limits:
 
 The macOS and Linux shortcuts and schedulers are written but untested.
 
-Not yet done on the maintainer's machine:
-- No scheduled runs are set up.
-- The `claude` command-line program is not signed in, so `greek-coach run` fails with "Not logged in" until `claude` is run once in a terminal and signed in.
+On the maintainer's machine (2026-11-20): the `claude` command-line program is signed in, and two scheduled runs are set up: `daily-prep` every day at 18:30 and `watch` on Mondays at 18:00. A test run of `watch` passed.
 
 Next:
 - the maintainer reads the chapters as the lessons come; the ⚑ flag on a section sends a fix to the coach.
@@ -148,9 +146,22 @@ Next:
 Optional, deferred by the maintainer (2026-11-19):
 - phase 6 (the friend test).
 
+Phase 7 (the repo on GitHub, private, with CI) is built: see **Git and GitHub** below.
+
 On the roadmap (2026-11-20, `docs/prompts/`):
-- phase 7: the repo on GitHub (private), with CI. There is no git remote yet, so nothing can be pushed until it is done;
 - phase 8 (optional): discovery of a free way to use the app away from home, research only.
+
+## Git and GitHub
+
+- The repository is on GitHub under the maintainer's account, **private**.
+- Commits land on `main` through a short branch: commit there, fast-forward `main`, delete the branch. `git push` follows **only when the maintainer asks**.
+- **CI** (`.github/workflows/ci.yml`) runs on every push and pull request, on Ubuntu and Windows: the guard, `uv run pytest` and `uv run greek-coach validate content/open`. The tests need nothing from `content/private/`, `learner/` or a signed-in agent. See the result with `gh run list`, and a failure with `gh run view <id> --log-failed`.
+- **The guard** (`uv run greek-coach guard`, `src/greek_coach/guard.py`) fails if git tracks anything under `learner/` or `content/private/`, or a file holding a local user path (`C:\Users\<name>`, `/home/<name>`, an agent's temp folder). Write a placeholder such as `C:\Users\you` instead. The tests and CI run it, and so does the pre-push hook in `.githooks/`, which `git config core.hooksPath .githooks` turns on (the `setup` skill does this).
+- **Before the repo is made public** (a separate decision):
+  - phase 6 step 5, the public-repo check, must pass;
+  - the README's `<owner>` placeholder gets the real account;
+  - every commit so far carries the maintainer's personal e-mail; switch to the GitHub no-reply address, and decide whether to rewrite the old commits;
+  - three old revisions of the docs still hold the maintainer's Windows user name in a path (fixed in the current files); rewriting that history needs the maintainer's yes.
 
 ## Two kinds of people use this repo
 
@@ -196,6 +207,7 @@ The canonical copy of each skill is in `.agents/skills/<name>/SKILL.md`. `.claud
 - `uv run greek-coach shortcut`: creates the desktop launcher.
 - `uv run pytest`: runs the tests.
 - `uv run greek-coach start --foreground`: runs the server in the terminal, for development.
+- `uv run greek-coach guard [--rev <commit>]`: checks that git tracks nothing private (learner data, private content, local user paths).
 
 ## Guardrails
 

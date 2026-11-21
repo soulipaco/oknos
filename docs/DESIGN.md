@@ -47,7 +47,7 @@ Content comes in **packs**: a folder with a manifest (title, level, licence, sou
 - `content/private/` — gitignored. The learner's own textbook, course handouts, past papers.
 - `learner/generated/` — gitignored. Written by the coach for this learner, in the same pack format.
 
-**The earlier project.** `C:\Users\you\Desktop\Greek_Helper` holds OCR of a commercial A1–A2 textbook, word lists, audio and transcripts, already processed into `data/app/` (25 lessons, about 3,200 vocabulary items, 281 practice items). It is copyrighted and cannot be published. It is imported as a private pack by an importer script that lives in this repo; the data itself does not. Its vocabulary list is the most immediately valuable part. Its practice items are OCR-derived and noisy, so treat them as raw material for the coach to rebuild, not as finished exercises.
+**The earlier project.** `Greek_Helper` (a folder on the maintainer's machine, outside this repo) holds OCR of a commercial A1–A2 textbook, word lists, audio and transcripts, already processed into `data/app/` (25 lessons, about 3,200 vocabulary items, 281 practice items). It is copyrighted and cannot be published. It is imported as a private pack by an importer script that lives in this repo; the data itself does not. Its vocabulary list is the most immediately valuable part. Its practice items are OCR-derived and noisy, so treat them as raw material for the coach to rebuild, not as finished exercises.
 
 **The B1 gap.** Existing material stops at A2. B1 content has to come from the exam specification, openly available sample papers (linked or imported privately, not redistributed), the course he enrols in, and coach-generated exercises checked against the specification.
 

@@ -586,6 +586,12 @@ def cmd_shortcut(args) -> int:
     return 0 if created else 1
 
 
+def cmd_guard(args: argparse.Namespace) -> int:
+    from greek_coach import guard
+
+    return guard.main(args.rev)
+
+
 def main(argv: list[str] | None = None) -> int:
     _utf8_console()
     parser = argparse.ArgumentParser(prog="greek-coach", description="Greek Coach, a local Greek learning app.")
@@ -600,6 +606,10 @@ def main(argv: list[str] | None = None) -> int:
 
     p = sub.add_parser("stop", help="stop the running app")
     p.set_defaults(func=cmd_stop)
+
+    p = sub.add_parser("guard", help="check that git tracks nothing private (learner data, private content, user paths)")
+    p.add_argument("--rev", default=None, help="check this commit instead of the index (the pre-push hook passes it)")
+    p.set_defaults(func=cmd_guard)
 
     p = sub.add_parser("health", help="check that the install works")
     p.add_argument("--server", action="store_true", help="also require the app to be running")

@@ -1,0 +1,29 @@
+# Runs the tests and checks the open content on every push and pull request (phase 7).
+# The tests see only the open packs; nothing here needs content/private/, learner data or a
+# signed-in agent. macOS is left out: on a private repo its minutes count ten times.
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Install
+        run: uv sync
+      - name: Nothing private is tracked
+        run: uv run greek-coach guard
+      - name: Tests
+        run: uv run pytest -q
+      - name: Open content is valid
+        run: uv run greek-coach validate content/open

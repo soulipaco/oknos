@@ -73,6 +73,11 @@ The first run downloads Python and a few packages. That can take a minute or two
 
 **Check:** it ends without an error. If it fails with a network error, check the internet connection, wait a moment and run it again.
 
+If the folder is a git clone, also turn on the check that stops private files from ever being pushed. It changes nothing else:
+```
+git config core.hooksPath .githooks
+```
+
 ## Step 4: check the install
 
 ```

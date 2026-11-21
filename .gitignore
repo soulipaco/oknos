@@ -23,3 +23,6 @@ build/
 
 # Downloaded reference data (dictionary dumps, voice models). Never tracked.
 .cache/
+
+# Agent sessions write local paths (scratchpads, learner folders) into this file. Never tracked.
+.claude/launch.json

@@ -11,7 +11,7 @@ I am the maintainer and the primary learner described in the design. I am not a 
    - For the rest, interview me. Ask a few questions at a time, not one long form. Ask about my week, what I have tried before and why it failed, what I find interesting, and what would make me open this app on a tired evening. The motivation problem in the design is real and is the main risk to the project.
    - Check the technical unknowns yourself instead of asking me: Greek speech-synthesis voices in browsers on Windows and macOS, and what Codex needs in order to follow the same setup and coach instructions as Claude Code.
 
-2. **Look at the earlier project** at `C:\Users\you\Desktop\Greek_Helper` (start with its `README.md` and `docs/AGENT_HANDOFF.md`, then sample `data/app/`). Tell me honestly what is worth importing, what is too noisy to use as it stands, and what the importer in phase 3 will have to do. That material is copyrighted and must never be copied into this repo.
+2. **Look at the earlier project** at `Greek_Helper` (a folder on the maintainer's machine, outside this repo) (start with its `README.md` and `docs/AGENT_HANDOFF.md`, then sample `data/app/`). Tell me honestly what is worth importing, what is too noisy to use as it stands, and what the importer in phase 3 will have to do. That material is copyrighted and must never be copied into this repo.
 
 3. **Challenge the design.** If the stack, the split between app and agent, or the content-pack idea looks wrong to you after the research, say so and propose the alternative. I would rather change it now.
 
