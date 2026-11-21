@@ -394,6 +394,109 @@ function wordmark() {
     h("img", { class: "mark", src: "favicon.svg", alt: "", width: "28", height: "28" }), t("app_name"));
 }
 
+// ---------- the brand's drawings: the rope, the ring, the donkey, the icons (docs/brand/README.md) ----------
+// The same geometry as scripts/make_brand.py. Colours come from the theme's CSS variables.
+
+function svgEl(markup) {
+  const tpl = document.createElement("template");
+  tpl.innerHTML = markup.trim();
+  return tpl.content.firstChild;
+}
+
+let ropeIds = 0;
+const fmt = (v) => (Math.round(v * 100) / 100).toString();
+const polyline = (pts) => "M" + pts.map(([x, y]) => `${fmt(x)} ${fmt(y)}`).join(" L");
+
+function ropeSegments(kind, { width = 600, a = 4.2, n = 22, R = 32, steps = 6 } = {}) {
+  // Two strands crossing over and under: along a line, or around a ring (r = R ± a·sin(nθ)).
+  const segs = { A: [], B: [] };
+  const count = kind === "ring" ? 2 * n : 2 * n + 1;
+  for (let k = 0; k < count; k++) {
+    for (const [s, sg] of [["A", 1], ["B", -1]]) {
+      const pts = [];
+      for (let i = 0; i <= steps; i++) {
+        if (kind === "ring") {
+          const t0 = (k - 0.5) * Math.PI / n, t1 = (k + 0.5) * Math.PI / n;
+          const th = t0 + (t1 - t0) * i / steps, r = R + sg * a * Math.sin(n * th);
+          pts.push([50 + r * Math.sin(th), 50 - r * Math.cos(th)]);
+        } else {
+          const u0 = Math.max(0, (k - 0.5) / (2 * n)), u1 = Math.min(1, (k + 0.5) / (2 * n));
+          const u = u0 + (u1 - u0) * i / steps;
+          pts.push([width * u, sg * a * Math.sin(2 * Math.PI * n * u)]);
+        }
+      }
+      segs[s].push([polyline(pts), (k % 2 === 0) === (s === "A")]);
+    }
+  }
+  return { segs, count };
+}
+
+function ropeStrands({ segs }, upto, strokeW, gap, box) {
+  const id = `rope-${++ropeIds}`;
+  const pick = (over) => ["A", "B"].flatMap(s => segs[s].filter(([, o], i) => o === over && i < upto).map(([d]) => d)).join(" ");
+  const [x, y, w, hh] = box;
+  return `<defs><mask id="${id}" maskUnits="userSpaceOnUse" x="${x}" y="${y}" width="${w}" height="${hh}">`
+    + `<rect x="${x}" y="${y}" width="${w}" height="${hh}" fill="#fff"/>`
+    + `<path d="${pick(true)}" fill="none" stroke="#000" stroke-width="${strokeW + 2 * gap}" stroke-linecap="round"/></mask></defs>`
+    + `<g fill="none" style="stroke:var(--accent)" stroke-width="${strokeW}" stroke-linecap="round" stroke-linejoin="round">`
+    + `<path mask="url(#${id})" d="${pick(false)}"/><path d="${pick(true)}"/></g>`;
+}
+
+function ropeBar(done, total, cls = "") {
+  // Progress as a plaited rope: plaited as far as you have got, a faint dotted line after (the brand's "session bar").
+  const frac = total ? Math.min(1, done / total) : 1;
+  const width = 600, rope = ropeSegments("line", { width });
+  const upto = frac > 0 ? Math.max(1, Math.round(frac * rope.count)) : 0;
+  const end = width * upto / rope.count;
+  const rest = upto < rope.count
+    ? `<path d="M${fmt(upto ? end + 8 : 0)} 0 H${width}" style="stroke:var(--line)" stroke-width="3.4" stroke-dasharray="1 9" stroke-linecap="round"/>`
+    : "";
+  const pct = Math.round(frac * 100);
+  return svgEl(`<svg class="rope-bar ${cls}" viewBox="-6 -10 ${width + 12} 20" preserveAspectRatio="xMinYMid meet" `
+    + `role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}">`
+    + rest + (upto ? ropeStrands(rope, upto, 4.6, 1.6, [-6, -10, width + 12, 20]) : "") + `</svg>`);
+}
+
+function ropeRing(frac, label = "", size = 36) {
+  // A stage's ring: it closes as the stage is learned. The label (the lesson's number) sits inside.
+  const rope = ropeSegments("ring", { n: 5, a: 5, steps: 8 });
+  const upto = Math.round(Math.min(1, Math.max(0, frac)) * rope.count);
+  const dotted = `<circle cx="50" cy="50" r="32" fill="none" style="stroke:var(--line)" stroke-width="5" stroke-dasharray="1.5 9" stroke-linecap="round"/>`;
+  const text = label === "" ? "" : `<text x="50" y="62" text-anchor="middle" font-size="34" font-weight="700" style="fill:var(--accent)">${label}</text>`;
+  return svgEl(`<svg class="ring" width="${size}" height="${size}" viewBox="0 0 100 100" aria-hidden="true">`
+    + dotted + (upto ? ropeStrands(rope, upto, 8.4, 1.8, [0, 0, 100, 100]) : "") + text + `</svg>`);
+}
+
+const DONKEY_EARS = {  // the agent's three moods, shown by the ears
+  ready: ["C40 30 40 16 47 6 C53 14 55 28 53 39", "C59 30 68 20 79 15 C79 26 71 37 62 44", true],
+  working: ["C40 30 40 16 47 6 C53 14 55 28 53 39", "C61 36 74 30 92 30 C86 38 74 42 62 44", true],
+  resting: ["C40 31 44 18 55 10 C58 20 56 30 53 39", "C61 36 74 30 92 30 C86 38 74 42 62 44", false],
+};
+
+function donkey(mood = "ready", size = 56) {
+  // The mascot: it stands for the agent, so it appears where the agent has done (or will do) something.
+  const [e1, e2, open] = DONKEY_EARS[mood];
+  const eye = open ? `<circle cx="39" cy="54" r="2.4" stroke="none" style="fill:var(--ink)"/>` : `<path d="M36 55 q3 2.6 6 0"/>`;
+  return svgEl(`<svg class="donkey" width="${size}" height="${Math.round(size * 1.2)}" viewBox="2 2 96 116" aria-hidden="true">`
+    + `<g fill="none" style="stroke:var(--ink)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">`
+    + `<path d="M66 114 C64 102 60 94 54 90 C46 88 36 90 28 90 C16 90 9 83 9 74 C9 64 15 58 24 57 C33 55 39 48 43 41 ${e1} ${e2} C71 50 80 60 84 74 C87 86 88 100 90 114"/>`
+    + `${eye}<path d="M14 72 q2 -1.6 4 0"/><path d="M13 83 q5 2.2 10 0.6"/></g></svg>`);
+}
+
+const ICONS = {  // one line style: a 24 grid, 2 px, round ends
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  moon: '<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/>',
+  system: '<circle cx="12" cy="12" r="9"/><path d="M12 3v18" /><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/>',
+  flag: '<path d="M5 21V4M5 4h11l-2 4 2 4H5"/>',
+  book: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/>',
+  lock: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+};
+
+function icon(name) {
+  return svgEl(`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" `
+    + `stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name]}</svg>`);
+}
+
 function areaName(area) {
   if (area === "vocab") return t("area_vocab");
   if (area.startsWith("verbs.")) return t("area_verbs", { tense: tenseName(area.slice(6)) });
@@ -481,8 +584,8 @@ function coachPanel(coach) {
   }
   if (coach.message) {
     const text = coach.message[state.lang] || coach.message.en || coach.message.tr;
-    blocks.push(h("div", { class: "coach-note" },
-      h("p", {}, text), h("p", { class: "muted small" }, t("coach_note_from", { date: fmtDate(coach.message.date) }))));
+    blocks.push(h("div", { class: "coach-note with-donkey" }, donkey("ready", 48),
+      h("div", {}, h("p", {}, text), h("p", { class: "muted small" }, t("coach_note_from", { date: fmtDate(coach.message.date) })))));
   }
   if (coach.feedback_ready?.length) {
     const first = coach.feedback_ready[0];
@@ -583,7 +686,7 @@ function themeSwitch() {
   const b = h("button", { class: "theme-switch", type: "button" });
   const paint = () => {
     const th = currentTheme();
-    b.textContent = th === "dark" ? "☾" : th === "light" ? "☀" : "◐";
+    b.replaceChildren(icon(th === "dark" ? "moon" : th === "light" ? "sun" : "system"));
     b.title = t(`theme_${th}`);
     b.setAttribute("aria-label", t(`theme_${th}`));
   };
@@ -605,7 +708,10 @@ async function startSession(kind, items = [], extra = {}) {
   try {
     const s = await api("/api/session", { kind, items, ui_lang: state.lang, has_voice: !!greekVoice, ...extra });
     if (!s.cards.length) {
-      app.replaceChildren(h("header", { class: "topbar" }, wordmark()), h("div", { class: "center-note" }, t("nothing")));
+      const back = kind === "choose" ? "practise" : "home";
+      app.replaceChildren(...appBar(back), h("section", { class: "empty-state" }, donkey("resting", 72),
+        h("p", {}, t(kind === "choose" ? "nothing_choose" : "nothing")),
+        h("p", {}, navLink(back, t(kind === "choose" ? "nothing_back_practise" : "nothing_back_home"), null, "secondary"))));
       return;
     }
     state.session = { ...s, index: 0 };
@@ -627,14 +733,12 @@ function sessionFrame(body, label = null) {
   const card = s.cards[s.index];
   const done = (s.done || 0) + s.index;
   const total = s.total || s.cards.length;
-  const pct = Math.round((done / total) * 100);
   return [
     h("header", { class: "topbar" },
       h("span", { class: "muted small" }, `${label || t(`segment_${card.segment || "review"}`)} · ${t("progress", { done: done + 1, total })}`),
       h("button", { class: "link-button", type: "button", onclick: finishSession }, t("enough")),
     ),
-    h("div", { class: "progress", role: "progressbar", "aria-valuemin": 0, "aria-valuemax": 100, "aria-valuenow": pct },
-      h("span", { style: `width:${pct}%` })),
+    h("div", { class: "progress" }, ropeBar(done, total, "session")),
     body,
   ];
 }
@@ -650,7 +754,7 @@ function flagButton() {
       } catch { /* the flag is optional */ }
     } }, t(`flag_${reason}`))));
   const btn = h("button", { class: "flag", type: "button", title: t("flag_title"), "aria-label": t("flag_title"),
-    onclick: () => { menu.hidden = !menu.hidden; } }, "⚑");
+    onclick: () => { menu.hidden = !menu.hidden; } }, icon("flag"));
   return h("div", { class: "flag-wrap" }, btn, menu);
 }
 
@@ -696,8 +800,9 @@ function renderCard() {
   if (s.index === 0 && (state.home?.stats?.answers_total ?? 0) < 10) {
     app.append(h("p", { class: "hint muted small" }, t("keys_hint")));
   }
-  const first = app.querySelector("input.typed, .option, .tf button, .pick");
-  if (first) first.focus();
+  const first = app.querySelector("input.typed") || app.querySelector("article.card");
+  if (first?.tagName === "ARTICLE") first.setAttribute("tabindex", "-1");
+  first?.focus({ preventScroll: true });
 }
 
 function optionList(options, greek, onPick) {
@@ -1318,7 +1423,8 @@ function renderSummary(sum) {
   } else if (!sum.done) {
     /* only writing or speaking this time */
   } else {
-    lines.push(h("p", { class: "line" }, t("summary_line", { done: sum.done, minutes: sum.minutes, pct: Math.round(sum.accuracy * 100) })));
+    lines.push(h("p", { class: "line" }, t(sum.done === 1 ? "summary_line_one" : "summary_line",
+      { done: sum.done, right: sum.right, minutes: Math.max(1, Math.round(sum.minutes)) })));
     for (const [area, v] of Object.entries(sum.by_area)) {
       lines.push(h("p", { class: "muted" }, t("summary_area", { area: areaName(area), right: v.right, done: v.done })));
     }
@@ -1331,10 +1437,16 @@ function renderSummary(sum) {
        h("ul", {}, sum.missed.map(w => h("li", {}, greekText(w.el, { cls: "el" }), speakButton(w.say || w.el, true), h("span", { class: "muted" }, w.meaning))))]
     : [];
   const done = h("button", { class: "primary", type: "button", onclick: () => go("home") }, t("done"));
+  const head = lines.shift();
+  const total = sum.done + (sum.left || 0);
+  const rope = sum.done && total ? h("div", { class: "today-rope" },
+    h("span", { class: "small muted" }, t("summary_rope")), ropeBar(sum.done, total),
+    h("span", { class: "small muted" }, t("summary_rope_line", { done: sum.done, total }))) : null;
   app.replaceChildren(
-    h("header", { class: "topbar" }, wordmark()),
-    h("section", { class: "summary" },
-      h("h1", {}, t("summary_title")),
+    ...appBar(null),
+    h("section", { class: "summary done-day" },
+      h("div", { class: "done-head" }, donkey("resting", 76), h("div", {}, h("h1", {}, t("summary_title")), head)),
+      rope,
       ...lines,
       ...missed,
       h("div", { class: "actions" },
@@ -1443,9 +1555,7 @@ function stageName(st) {
 }
 
 function progressBar(done, total, cls = "") {
-  const pct = total ? Math.round((done / total) * 100) : 100;
-  return h("span", { class: `pbar ${cls}`, role: "progressbar", "aria-valuenow": pct, "aria-valuemin": 0, "aria-valuemax": 100 },
-    h("span", { style: `width:${pct}%` }));
+  return ropeBar(done, total, cls);
 }
 
 function stagePanel(cur) {
@@ -1454,10 +1564,12 @@ function stagePanel(cur) {
   return h("section", { class: "panel stage-panel" },
     h("div", { class: "panel-head" }, h("h2", {}, t("stage_now")),
       h("span", { class: "muted small" }, t("stage_count", { n: cur.stages_done + 1, total: cur.stages_total }))),
-    h("button", { class: "stage-card", type: "button", onclick: () => go("stage", st.id) },
-      h("strong", {}, stageName(st)), st.theme ? h("span", { class: "muted" }, tr(st.theme)) : null,
-      progressBar(st.learned, st.core),
-      h("span", { class: "small muted" }, st.core ? t("stage_secure", { n: st.learned, total: st.core }) : t("stage_nothing"))),
+    h("button", { class: "stage-card with-ring", type: "button", onclick: () => go("stage", st.id) },
+      ropeRing(st.core ? st.learned / st.core : 0, String(cur.stages_done + 1), 44),
+      h("span", { class: "stage-text" },
+        h("strong", {}, stageName(st)), st.theme ? h("span", { class: "muted" }, tr(st.theme)) : null,
+        progressBar(st.learned, st.core),
+        h("span", { class: "small muted" }, st.core ? t("stage_secure", { n: st.learned, total: st.core }) : t("stage_nothing")))),
     st.chapter ? h("p", { class: "chapter-line" },
       st.chapter.read
         ? [h("span", { class: "chip map-done" }, `✓ ${t("ch_was_read")}`), " ",
@@ -1479,11 +1591,12 @@ async function renderBook() {
       st.passed_check ? h("span", { class: "mark-chip on" }, `✓ ${t("map_checked")}`) : null,
       h("span", { class: `mark-chip state-${st.state}` }, t(`map_${st.state}`)));
     const read = st.chapter
-      ? navLink("lesson", st.chapter.read ? `✓ ${t("ch_reread_short")}` : `📖 ${t("ch_read_short", { minutes: st.chapter.minutes })}`,
+      ? navLink("lesson", st.chapter.read ? `✓ ${t("ch_reread_short")}` : [icon("book"), t("ch_read_short", { minutes: st.chapter.minutes })],
           st.id, `book-read ${st.chapter.read ? "done" : ""}`)
       : h("span", { class: "book-read none small muted" }, t("ch_not_yet"));
     return h("li", { class: `book-row ${st.state}` },
-      h("span", { class: "book-num", "aria-hidden": "true" }, st.state === "done" ? "✓" : String(i)),
+      h("span", { class: "book-num", "aria-hidden": "true" },
+        ropeRing(st.state === "done" ? 1 : st.state === "locked" || !st.core ? 0 : st.share, st.state === "done" ? "✓" : String(i + 1), 34)),
       h("div", { class: "book-text" },
         navLink("stage", stageName(st), st.id, "book-title"),
         st.chapter ? h("span", { class: "book-chapter" }, tr(st.chapter.title)) : null,
@@ -1633,7 +1746,7 @@ async function renderVerbs() {
           const f = v.forms.find(x => x.person === pn && x.tense === tn);
           if (!f) return h("td", {});
           return h("td", { class: `vf ${f.open ? f.status : "locked"}`, lang: "el", title: f.open ? t(STATUS_KEYS[f.status]) : t("w_locked") },
-            f.open ? f.form : "🔒");
+            f.open ? f.form : icon("lock"));
         })))));
     const practise = v.open ? h("button", { class: "link-button small", type: "button", onclick: () => startSession("choose", [], { what: "verbs", lemma: v.lemma, minutes: 5 }) }, t("v_practise")) : null;
     return h("details", { class: `verb${v.open ? "" : " locked"}` },
@@ -1733,7 +1846,7 @@ const CHAPTER_BLOCKS = {
 };
 
 function sectionFlag(stage, index) {
-  const btn = h("button", { class: "flag ch-flag", type: "button", title: t("ch_flag"), "aria-label": t("ch_flag") }, "⚑");
+  const btn = h("button", { class: "flag ch-flag", type: "button", title: t("ch_flag"), "aria-label": t("ch_flag") }, icon("flag"));
   btn.addEventListener("click", async () => {
     const note = window.prompt(t("ch_flag"));
     if (note === null) return;

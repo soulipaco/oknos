@@ -89,7 +89,7 @@
   "lookup_form": "“{word}” is a form of {lemma}.",
   "lookup_similar": "Closest match: same stem, different ending.",
   "summary_title": "Done for today",
-  "summary_line": "{done} answers in about {minutes} min, {pct}% right.",
+  "summary_line": "{done} answers in about {minutes} min: {right} right.",
   "summary_none": "No answers this time. That's fine — come back whenever you like.",
   "summary_area": "{area}: {right} of {done} right.",
   "summary_perfect": "Every answer right. Nicely done.",
@@ -376,5 +376,11 @@
   "nav_words_short": "Words",
   "nav_verbs_short": "Verbs",
   "meaning_other_lang": "No English meaning yet; this is the Turkish one.",
-  "lookup_phrase": "This word is part of the phrase above."
+  "lookup_phrase": "This word is part of the phrase above.",
+  "summary_line_one": "1 answer in about {minutes} min: {right} right.",
+  "summary_rope": "Today's rope",
+  "summary_rope_line": "{done} of {total} cards today",
+  "nothing_choose": "Nothing of this kind yet in the lessons you have reached. Try another kind, or come back after the next lesson.",
+  "nothing_back_practise": "Choose something else",
+  "nothing_back_home": "Back home"
 }

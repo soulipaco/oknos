@@ -128,8 +128,7 @@ button:disabled { cursor: default; }
 .home .pack { margin-top: 4px; }
 
 /* ---------- session ---------- */
-.progress { height: 4px; background: var(--line); border-radius: 4px; overflow: hidden; margin: 12px 0 28px; }
-.progress > span { display: block; height: 100%; background: var(--accent); transition: width .3s ease; }
+.progress { margin: 10px 0 24px; }
 
 .card {
   background: var(--surface);
@@ -372,6 +371,8 @@ input.typed.wrong { border-color: var(--bad); background: var(--bad-soft); }
 .panel.coach { display: grid; gap: 10px; }
 .panel.coach p { margin: 0; }
 .coach-note { border-left: 3px solid var(--accent); padding: 4px 0 4px 12px; }
+.coach-note.with-donkey { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 14px; align-items: start; border-left: 0; padding-left: 0; }
+.coach-note.with-donkey p + p { margin-top: 4px; }
 .coach-note p { margin: 0; }
 .warn { background: var(--bad-soft); color: var(--ink); border-radius: 10px; padding: 8px 12px; }
 .date-line::before { content: "📅 "; }
@@ -475,9 +476,7 @@ details.technique summary { color: var(--ink); font-weight: 500; }
 .nav-tile:hover { border-color: var(--accent); background: var(--accent-soft); }
 .stage-card { display: grid; gap: 6px; width: 100%; text-align: left; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--paper); }
 .stage-card strong { font-size: 18px; }
-.pbar { display: block; height: 10px; border-radius: 6px; background: var(--line); overflow: hidden; }
-.pbar > span { display: block; height: 100%; background: var(--good); }
-.pbar.thin { height: 6px; margin-top: 4px; }
+.rope-bar.thin { height: 14px; margin: 6px 0 2px; }
 .map { list-style: none; padding: 0; display: grid; gap: 6px; }
 .map-row { display: grid; grid-template-columns: 24px 1fr auto; gap: 10px; align-items: center; width: 100%; text-align: left; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); }
 .map-row.current { border-color: var(--accent); background: var(--accent-soft); }
@@ -617,9 +616,9 @@ details.verb summary .el { font-size: 19px; }
   padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface);
 }
 .book-row.current { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
-.book-num { width: 30px; height: 30px; border-radius: 999px; display: grid; place-items: center; background: var(--paper); color: var(--muted); font-size: 14px; font-weight: 600; }
-.book-row.done .book-num { background: var(--good-soft); color: var(--good); }
-.book-row.current .book-num { background: var(--accent); color: var(--accent-ink); }
+.book-num { display: grid; place-items: center; }
+.book-row.locked .book-num .ring text, .book-row.later .book-num .ring text { fill: var(--muted) !important; }
+.book-read .icon { width: 15px; height: 15px; display: inline-block; vertical-align: -2px; margin-right: 6px; }
 .book-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .book-title { font-weight: 600; color: var(--ink); text-decoration: none; }
 .book-title:hover { text-decoration: underline; }
@@ -635,8 +634,9 @@ details.verb summary .el { font-size: 19px; }
 .ch-pager .pager-index { text-align: center; }
 .ch-pager .pager-next { text-align: right; }
 @media (max-width: 520px) {
-  .app-nav { flex-wrap: wrap; justify-content: center; border-radius: 16px; overflow: visible; }
-  .app-nav a { padding: 5px 11px; font-size: 14px; }
+  /* one row that scrolls sideways, rather than a lonely last item on a second line */
+  .app-nav { gap: 2px; }
+  .app-nav a { padding: 5px 10px; font-size: 14px; }
   .summary li.book-row, .book-row { grid-template-columns: 28px minmax(0, 1fr); }
   .book-row .book-read { grid-column: 2; justify-self: start; }
   .ch-pager { grid-template-columns: 1fr 1fr; }
@@ -645,3 +645,25 @@ details.verb summary .el { font-size: 19px; }
 
 /* a meaning shown in the other language because this word has none in the UI language yet */
 .lang-tag { font-size: 10px; font-weight: 700; letter-spacing: .05em; padding: 1px 5px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); vertical-align: middle; }
+
+/* ---------- the brand in the app: the rope, the ring, the donkey, the icons (docs/brand/README.md) ---------- */
+.icon { width: 18px; height: 18px; display: block; }
+.theme-switch { display: inline-grid; place-items: center; }
+.flag .icon { width: 15px; height: 15px; }
+.rope-bar { display: block; width: 100%; height: 18px; margin: 8px 0 4px; overflow: visible; }
+.rope-bar.session { height: 16px; margin: 0; }
+.ring { display: block; overflow: visible; }
+.ring text { font-family: var(--font-ui); }
+.stage-card.with-ring { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 14px; align-items: start; text-align: left; }
+.stage-card.with-ring .ring { margin-top: 2px; }
+.stage-text { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.vf .icon { width: 14px; height: 14px; display: inline-block; color: var(--muted); }
+article.card:focus { outline: none; }
+.empty-state { display: grid; justify-items: center; gap: 4px; text-align: center; margin: 48px auto 0; max-width: 440px; color: var(--muted); }
+.empty-state .donkey { margin-bottom: 8px; }
+.empty-state a.secondary { display: inline-block; text-decoration: none; color: var(--ink); margin-top: 10px; }
+.empty-state a.secondary:hover { border-color: var(--accent); }
+.done-day .done-head { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 18px; align-items: center; margin: 8px 0 16px; }
+.done-day .done-head h1 { margin: 0 0 6px; }
+.done-day .done-head .line { margin: 0; }
+.today-rope { display: grid; gap: 2px; margin: 4px 0 16px; padding: 12px 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }

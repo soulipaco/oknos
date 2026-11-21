@@ -30,6 +30,8 @@ Also: `meander.svg` (a repeatable border tile) and `social-preview.png` (1280×6
 
 In a README, show the light or dark file with `<picture>` and `prefers-color-scheme`. Inline in the app, give each rope's mask a unique id.
 
+In the app, `web/app.js` draws them with the same geometry, in the theme's colours: `ropeBar` (every progress bar: the session, a stage, the book), `ropeRing` (a stage's ring in the book and on the home screen, with its number inside), `donkey` (the coach's note, the end of a session, an empty screen) and `icon` (one line style for the theme switch, the flag, the book and the lock; no emoji).
+
 ## Remaking the files
 
 All of them come from one script, so a change is made there, never by hand in an SVG:

@@ -89,7 +89,7 @@
   "lookup_form": "“{word}”, {lemma} kelimesinin bir biçimi.",
   "lookup_similar": "En yakın eşleşme: aynı kök, farklı ek.",
   "summary_title": "Bugünlük bu kadar",
-  "summary_line": "Yaklaşık {minutes} dakikada {done} cevap, %{pct} doğru.",
+  "summary_line": "Yaklaşık {minutes} dakikada {done} cevap: {right} doğru.",
   "summary_none": "Bu sefer cevap yok. Sorun değil — istediğin zaman geri gel.",
   "summary_area": "{area}: {done} içinden {right} doğru.",
   "summary_perfect": "Hepsi doğru. Harika.",
@@ -376,5 +376,11 @@
   "nav_words_short": "Kelimeler",
   "nav_verbs_short": "Fiiller",
   "meaning_other_lang": "Henüz Türkçe anlamı yok; bu İngilizcesi.",
-  "lookup_phrase": "Bu kelime yukarıdaki kalıbın bir parçası."
+  "lookup_phrase": "Bu kelime yukarıdaki kalıbın bir parçası.",
+  "summary_line_one": "Yaklaşık {minutes} dakikada 1 cevap: {right} doğru.",
+  "summary_rope": "Bugünün halatı",
+  "summary_rope_line": "Bugün {total} karttan {done} tanesi",
+  "nothing_choose": "Ulaştığın derslerde bu türden henüz bir şey yok. Başka bir tür seç ya da bir sonraki dersten sonra tekrar gel.",
+  "nothing_back_practise": "Başka bir şey seç",
+  "nothing_back_home": "Ana sayfaya dön"
 }
