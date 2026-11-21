@@ -131,7 +131,7 @@ The full schema is in `schemas/item.schema.json`, and every type has a worked ex
 - `topics` (free tags; use the profile's interests);
 - `exam_task` (see below);
 - `rubric` (`{el, en, tr}`, in the exam's own Greek wording);
-- `ask` (`{en, tr}`): the question or situation in the learner's language, always shown. Use it only when the task really is "what do you say here?" or a question about a word. Otherwise **the Greek must carry the question**: a true/false statement is a claim in Greek, not a sign whose claim is only in the translation (`validate` notes it);
+- `ask` (`{en, tr}`): the question or situation in the learner's language, always shown. Use it only when the task really is "what do you say here?" or a question about a word. Otherwise **the Greek must carry the question**: a true/false statement is a claim in Greek, not a sign whose claim is only in the translation, and a bare «Αντιστοιχίζω.» gets an `ask` when the pairing is not obvious (`validate` notes both);
 - `stimulus` (`text`, or `tts` for listening);
 - `explain` (`{en, tr}`, one or two sentences);
 - `status`.

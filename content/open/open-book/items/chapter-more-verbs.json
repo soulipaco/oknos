@@ -773,6 +773,7 @@
  },
  {
   "id": "ch04-try-match",
+  "ask": {"en": "Match each person with the verb form.", "tr": "Her kişiyi fiil biçimiyle eşleştir."},
   "type": "match",
   "skill": "grammar",
   "level": "A1",

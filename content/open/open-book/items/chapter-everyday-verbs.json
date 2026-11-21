@@ -801,6 +801,7 @@
  },
  {
   "id": "ch03-try-questions",
+  "ask": {"en": "Match each question with its answer.", "tr": "Her soruyu cevabıyla eşleştir."},
   "type": "match",
   "skill": "reading",
   "level": "A1",
@@ -1170,6 +1171,7 @@
  },
  {
   "id": "ch03-p-pote",
+  "ask": {"en": "— … do you read the paper? — In the morning.", "tr": "— … gazete okuyorsun? — Sabahları."},
   "type": "mcq",
   "skill": "grammar",
   "level": "A1",

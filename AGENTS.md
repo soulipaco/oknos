@@ -120,8 +120,8 @@ What works now:
   - A meaning shown in the other UI language because the item has none in this one is tagged EN or TR.
 - **No question behind "Translate":**
   - items can carry `ask {tr, en}`, the question or situation in the UI language, always shown under the rubric;
-  - `validate` notes a statement or prompt whose Greek is ≤ 2 words with a much longer translation;
-  - the 17 book checks it found are fixed.
+  - `validate` notes a rubric, statement or prompt whose translation asks a question the Greek does not, or says much more than the Greek (SPEC §4.9);
+  - the 101 items it found (86 in the book, 15 in the open book) are fixed.
   - Listening passages pre-generated with `scripts/make_audio.py`: edge-tts with the learner's yes, for content outside `learner/` only.
   - Speaking recordings transcribed locally with faster-whisper `small` (the `speech` group).
 - **Tests:** `uv run pytest`, which includes a scripted two weeks of use, the phase 4 contracts (`tests/test_coach.py`) exam mode (`tests/test_exam.py`), chapters (`tests/test_chapters.py`), the open book (`tests/test_open_book.py`) and tap-a-word coverage (`tests/test_lookup_coverage.py`: no open word without a meaning). `scripts/simulate.py` also prints the readiness per unit.

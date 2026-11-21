@@ -623,6 +623,7 @@
  },
  {
   "id": "ch01-p-match-num",
+  "ask": {"en": "Match each number with its Greek word.", "tr": "Her sayıyı Yunanca kelimesiyle eşleştir."},
   "type": "match",
   "skill": "reading",
   "level": "A1",

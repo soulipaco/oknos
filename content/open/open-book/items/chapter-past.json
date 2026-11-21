@@ -752,6 +752,7 @@
   },
   {
     "id": "ch09-try-match",
+    "ask": {"en": "Match each present form with its past.", "tr": "Her şimdiki zaman biçimini geçmişiyle eşleştir."},
     "type": "match",
     "skill": "grammar",
     "level": "A2",

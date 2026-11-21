@@ -276,6 +276,7 @@
  },
  {
   "id": "ch07-try-time",
+  "ask": {"en": "Match each time in words with its digits.", "tr": "Her saati yazıyla rakamıyla eşleştir."},
   "type": "match",
   "skill": "vocab",
   "level": "A1",
@@ -541,6 +542,7 @@
  },
  {
   "id": "ch07-p-places",
+  "ask": {"en": "Match each thing with the place where you get it.", "tr": "Her şeyi alındığı yerle eşleştir."},
   "type": "match",
   "skill": "vocab",
   "level": "A1",

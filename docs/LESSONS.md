@@ -120,7 +120,8 @@ The JSON Schema is `schemas/chapter.schema.json` (written by `uv run greek-coach
 8. **The Greek must carry the question.**
    - The learner sees the Greek; the translation is behind "Translate". So a true/false statement is a claim in Greek («Η ΣΤΑΣΗ είναι για το λεωφορείο.»), not a sign alone («ΣΤΑΣΗ»), with the claim in the translation.
    - When the task really is "what do you say here?" or a question about a word ("how is η read in μήνας?"), write the situation in the item's `ask` (`tr`, `en`). It is always shown. The prompt's own translation stays a translation of its Greek.
-   - `validate` notes a statement or prompt whose Greek has at most 2 words while its translation is much longer.
+   - A bare instruction works the same way: «Αντιστοιχίζω.» says only "match". When the pairing is not obvious from the columns ("match each word with how it is read"), put it in `ask`.
+   - `validate` notes a rubric, statement or prompt whose translation asks a question the Greek does not, or says much more than the Greek (at least 5 words, 3 more and twice as many).
 
 ## 5. The reviewer's checklist
 

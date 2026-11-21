@@ -1160,6 +1160,7 @@
  },
  {
   "id": "ch02-p-match",
+  "ask": {"en": "Match each question with its answer.", "tr": "Her soruyu cevabıyla eşleştir."},
   "type": "match",
   "skill": "reading",
   "level": "A1",

@@ -122,6 +122,22 @@ def test_a_question_only_in_the_translation_is_flagged(catalog, full_catalog):
     assert not [n for p in full_catalog.packs for n in lint.hidden_questions(p)]  # none in the open packs
 
 
+def test_a_question_or_an_instruction_only_in_the_translation_is_found():
+    hides = lint._hides_question
+    # the question is only in the translation (the maintainer's flag: «ποτέ» / "How is ποτέ read?")
+    assert hides("ποτέ", ["How is ποτέ read?", "ποτέ nasıl okunur?"])
+    assert hides("210", ["How is 210 (the Athens area code) read digit by digit?"])
+    # a bare instruction whose real task is in the translation
+    assert hides("Αντιστοιχίζω.", ["Match each word with how it is read.", "Her kelimeyi okunuşuyla eşleştir."])
+    assert hides("Ποια πρόταση είναι σωστή;", ['Which sentence is right? ("I am waiting for you", to one friend)'])
+    # a plain translation, or a generic instruction, is fine
+    assert not hides("Συμπληρώνω.", ["Fill in the gaps.", "Boşlukları doldur."])
+    assert not hides("Πόσο κάνει;", ["How much is it?"])
+    assert not hides("Θα πάνε σινεμά το βράδυ.", ["They will go to the cinema in the evening."])
+    assert not hides("Γράψτε ένα e-mail (40–60 λέξεις).", ["Write an e-mail (40–60 words)."])
+    assert not hides("— Βλέπεις τηλεόραση; — Όχι, …", ["— Do you watch TV? — No, …"])
+
+
 def test_the_report_counts_the_words_that_find_nothing(open_book, full_catalog):
     rep = report.build(db.open_db(), full_catalog)
     tap = rep["tap_a_word"]

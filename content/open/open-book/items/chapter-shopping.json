@@ -844,6 +844,7 @@
  },
  {
   "id": "ch05-try-numbers",
+  "ask": {"en": "Match each number word with its digits.", "tr": "Her sayı sözcüğünü rakamıyla eşleştir."},
   "type": "match",
   "skill": "vocab",
   "level": "A1",
@@ -885,6 +886,7 @@
  },
  {
   "id": "ch05-p-day",
+  "ask": {"en": "Complete the order of the days.", "tr": "Günlerin sırasını tamamla."},
   "type": "form",
   "skill": "grammar",
   "level": "A1",

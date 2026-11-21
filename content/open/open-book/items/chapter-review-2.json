@@ -501,6 +501,7 @@
   },
   {
     "id": "ch11-p-pron",
+    "ask": {"en": "Match each subject pronoun with its object pronoun.", "tr": "Her özne zamirini nesne zamiriyle eşleştir."},
     "type": "match",
     "skill": "grammar",
     "level": "A2",

@@ -521,9 +521,11 @@ Phase 5, as built (`src/greek_coach/exams.py`, validated on load and exported by
 - **As measured on 2026-11-20:**
   - the open packs: every tappable word has a meaning;
   - the whole catalogue: 15 of 5,169 (0.3%) are left on purpose, each with its reason.
-- **No question hidden behind "Translate".** `validate` notes a true/false statement, or an mcq, match, categorise or table prompt, whose Greek has at most 2 words while its translation has at least 5, and 3 times as many, words, and that has no `ask`. The 17 book items it found are fixed:
-  - the sign statements now carry the claim in Greek («Η ΣΤΑΣΗ είναι για το λεωφορείο.»);
-  - the reading and "what do you say" items got an `ask`.
+- **No question hidden behind "Translate".** `validate` notes an item without an `ask` whose rubric, true/false statement, or mcq, match, categorise or table prompt hides its question in the translation:
+  - the translation ends in a question mark and the Greek does not («ποτέ» / "How is ποτέ read?");
+  - or the translation says much more than the Greek: at least 5 words, 3 more and twice as many («Αντιστοιχίζω.» / "Match each word with how it is read."). Words are counted alike on both sides, digits and Latin included.
+
+  The 17 book items the first rule found are fixed: the sign statements carry the claim in Greek («Η ΣΤΑΣΗ είναι για το λεωφορείο.»), and the reading and "what do you say" items got an `ask`. The wider rule (2026-11-21, after the maintainer's flags) found 84 more, 69 in the book and 15 in the open book, each given an `ask`.
 
 ## 5. Learner data (`learner/`, gitignored)
 

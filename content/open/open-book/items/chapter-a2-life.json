@@ -984,6 +984,7 @@
   },
   {
     "id": "ch10-p-match-object",
+    "ask": {"en": "Match each person or thing with the pronoun that replaces it.", "tr": "Her kişiyi ya da şeyi onun yerine geçen zamirle eşleştir."},
     "type": "match",
     "skill": "grammar",
     "level": "A2",

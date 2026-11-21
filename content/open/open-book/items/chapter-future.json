@@ -790,6 +790,7 @@
  },
  {
   "id": "ch08-try-questions",
+  "ask": {"en": "Match each question with its answer.", "tr": "Her soruyu cevabıyla eşleştir."},
   "type": "match",
   "skill": "reading",
   "level": "A2",
@@ -1048,6 +1049,7 @@
  },
  {
   "id": "ch08-match-mporo",
+  "ask": {"en": "Match each person with the form of μπορώ.", "tr": "Her kişiyi μπορώ fiilinin biçimiyle eşleştir."},
   "type": "match",
   "skill": "grammar",
   "level": "A2",

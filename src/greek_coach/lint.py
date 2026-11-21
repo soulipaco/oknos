@@ -218,26 +218,45 @@ def lint_tags(pack) -> tuple[list[str], list[str]]:
     return problems, notes
 
 
+GREEK_QUESTION_MARKS = (";", ";", "?")
+
+
 def _hides_question(el: str | None, translations: list[str | None]) -> bool:
-    """The Greek is a sign or a frame (≤ 2 words) while the translation spells out a claim."""
-    n = len(greek.words(el or ""))
-    longest = max((len((t or "").split()) for t in translations), default=0)
-    return 0 < n <= 2 and longest >= max(5, 3 * n)
+    """The question, or what the learner needs to answer it, is only in the translation.
+
+    Two signs: the translation asks something the Greek does not («ποτέ» / "How is ποτέ read?"),
+    or the translation says much more than the Greek («Αντιστοιχίζω.» / "Match each word with
+    how it is read."; «Ποια πρόταση είναι σωστή;» / "Which is right? (I am waiting for you, to
+    one friend)"). A plain translation is about as long as its Greek.
+    """
+    el = (el or "").strip()
+    n = len(re.findall(r"\w+", el))  # counted like the translations, digits and Latin included
+    if not n:
+        return False
+    texts = [(t or "").strip() for t in translations if t]
+    if any(t.endswith("?") for t in texts) and not el.endswith(GREEK_QUESTION_MARKS):
+        return True
+    longest = max((len(re.findall(r"\w+", t)) for t in texts), default=0)
+    return longest >= 5 and longest >= n + 3 and longest >= 2 * n
 
 
 def hidden_questions(pack) -> list[str]:
-    """Notes: a statement or prompt whose question is only in the hidden translation (phase 5d).
+    """Notes: a rubric, statement or prompt whose question is only in the hidden translation.
 
     The learner sees the Greek; the translation is behind "Translate". If the Greek is «ΣΤΑΣΗ»
     and the claim to judge ("the sign shows a bus stop") is only in the translation, the item
     cannot be answered from what is on screen. The fix is Greek that carries the claim, or an
-    `ask` (the situation in the learner's language, always shown).
+    `ask` (the question in the learner's language, always shown).
     """
     notes = []
     for item_id, item in pack.items.items():
         if item.ask is not None:
             continue
-        texts = [(f"statement {i + 1}", s.el, [s.en, s.tr]) for i, s in enumerate(getattr(item, "statements", []) or [])]
+        texts = []
+        rubric = getattr(item, "rubric", None)
+        if rubric is not None:
+            texts.append(("rubric", rubric.el, [rubric.en, rubric.tr]))
+        texts += [(f"statement {i + 1}", s.el, [s.en, s.tr]) for i, s in enumerate(getattr(item, "statements", []) or [])]
         prompt = getattr(item, "prompt", None)
         if prompt is not None and item.type in ("mcq", "match", "categorise", "table_fill"):
             texts.append(("prompt", prompt.el, [prompt.en, prompt.tr]))
