@@ -34,6 +34,7 @@ svg.stage { display: block; width: 100%; height: auto; cursor: pointer; }
 .cap-el.in, .cap-tr.in { opacity: 1; transform: none; }
 .controls { display: flex; justify-content: center; gap: 8px; }
 .replay { visibility: hidden; }
+.sound[hidden] { display: none; }
 .ended .replay { visibility: visible; }
 .source { color: var(--muted); font-size: .8rem; text-align: center; margin-top: 18px; line-height: 1.5; }
 .source a { color: inherit; }

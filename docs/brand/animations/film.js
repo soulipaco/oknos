@@ -6,7 +6,8 @@
    narration, made by scripts/film_voice.py (Google, published); voice-local/ holds this computer's
    own set (Athina, not tracked) and is played instead when it is there. When the clips are there, a
    "Play with sound" button starts the film again with them, each shot lasting at least its clip
-   plus a pause; without them the film plays silently, as before. */
+   plus a pause; without them the film plays silently, as before. Under the voice, ambience/<film>.mp3
+   (scripts/film_ambience.py) is a quiet loop of wind, cicadas and bells, with its own off switch. */
 (function () {
   "use strict";
   const FADE = 0.9;  // seconds of cross-fade at the start of each shot
@@ -130,13 +131,79 @@
     }
     function hush() { player.pause(); playing = null; }
 
-    let t0 = performance.now(), paused = false, pausedAt = 0, done = false;
+    // the background: ambience/<film>.mp3, a quiet loop of wind, cicadas and bells (scripts/film_ambience.py),
+    // only with sound on. It fades in, sinks under each clip, fades out at the end and on a pause, and
+    // can be turned off. Played through Web Audio (a gapless loop); opened as a file, where a page may
+    // not fetch, through a looping <audio> instead.
+    const BED = 0.35, DUCK = 0.2;  // its level between clips and under one
+    const amb = { src: null, on: true, level: 0, ctx: null, gain: null, el: null, live: false };
+    try { amb.on = localStorage.getItem("oknos-anim-ambience") !== "off"; } catch { /* fine */ }
+    function ambStart() {  // inside the tap, so the browser lets it sound
+      if (!amb.src || amb.ctx || amb.el) return;
+      const AC = window.AudioContext || window.webkitAudioContext;
+      const fallback = () => {
+        if (amb.gain) { amb.gain.disconnect(); amb.gain = null; }
+        amb.el = new Audio(amb.src); amb.el.loop = true; amb.el.volume = 0; amb.live = false;
+      };
+      if (!AC || location.protocol === "file:") { fallback(); amb.el.play().then(() => { amb.live = true; }).catch(() => {}); return; }
+      amb.ctx = new AC();
+      amb.ctx.resume().catch(() => {});
+      amb.gain = amb.ctx.createGain(); amb.gain.gain.value = 0; amb.gain.connect(amb.ctx.destination);
+      fetch(amb.src).then((r) => { if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); })
+        .then((data) => new Promise((ok, no) => amb.ctx.decodeAudioData(data, ok, no)))
+        .then((buf) => {
+          // a decoder that keeps the MP3's padding leaves a few silent milliseconds at either end: loop past them
+          const x = buf.getChannelData(0), quiet = (v) => Math.abs(v) < 1e-4;
+          let a = 0, b = x.length;
+          while (a < 4096 && quiet(x[a])) a++;
+          while (b > x.length - 4096 && quiet(x[b - 1])) b--;
+          const node = amb.ctx.createBufferSource();
+          node.buffer = buf; node.loop = true;
+          if (a > 64 || x.length - b > 64) { node.loopStart = a / buf.sampleRate; node.loopEnd = b / buf.sampleRate; }
+          node.connect(amb.gain); node.start(0, node.loopStart); amb.live = true;
+        })
+        .catch(() => { amb.ctx.close().catch(() => {}); amb.ctx = null; fallback(); amb.el.play().then(() => { amb.live = true; }).catch(() => {}); });
+    }
+    // a hidden page draws no frames, so nothing would fade the loop out: hush it until the page is back
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden) return;
+      amb.level = 0;
+      if (amb.ctx) { amb.gain.gain.value = 0; amb.ctx.suspend().catch(() => {}); }
+      if (amb.el) { amb.el.volume = 0; amb.el.pause(); }
+    });
+    function speaking(t) {  // a clip is due (from a moment before it starts, so the bed makes room in time)
+      return (end ? [...shots, end] : shots).some((p) => p.clip && t > p.start + LEAD - 0.4 && t < p.start + LEAD + p.clip.duration);
+    }
+    function ambience(t, dt) {
+      if (!amb.ctx && !amb.el) return;
+      let want = 0;
+      if (voiced && amb.on && !player.muted && !paused && !done) {
+        want = (speaking(t) ? DUCK : BED) * clamp((duration - t) / 3);
+      }
+      // slow to fade in and out, quicker to make room for the voice
+      const tau = want < amb.level && want > 0 ? 0.25 : 0.9;
+      amb.level += (want - amb.level) * (1 - Math.exp(-dt / tau));
+      if (want === 0 && amb.level < 0.002) amb.level = 0;
+      if (amb.ctx) {
+        if (amb.level === 0 && amb.ctx.state === "running") amb.ctx.suspend().catch(() => {});
+        else if (amb.level > 0 && amb.ctx.state === "suspended") amb.ctx.resume().catch(() => {});
+        amb.gain.gain.setTargetAtTime(amb.level, amb.ctx.currentTime, 0.02);
+      } else if (amb.el) {
+        amb.el.volume = clamp(amb.level);
+        if (amb.level === 0 && !amb.el.paused) amb.el.pause();
+        else if (amb.level > 0 && amb.el.paused && amb.live) amb.el.play().catch(() => {});
+      }
+    }
+
+    let t0 = performance.now(), paused = false, pausedAt = 0, done = false, last = performance.now();
     function tick(now) {
+      const dt = Math.min((now - last) / 1000, 1); last = now;
       if (!paused) {
         const t = Math.min((now - t0) / 1000, duration);
         frame(t);
         if (t >= duration && !done) { done = true; root.classList.add("ended"); }
       }
+      ambience(Math.min((now - t0) / 1000, duration), dt);
       requestAnimationFrame(tick);
     }
     function restart() { hush(); t0 = performance.now(); done = false; shown = -2; root.classList.remove("ended", "paused"); paused = false; }
@@ -161,13 +228,18 @@
         a.src = src;
       });
     }
-    let soundBtn = null;
+    let soundBtn = null, ambBtn = null;
     function label() {
       if (!soundBtn) return;
       const k = !voiced ? "play" : player.muted ? "on" : "off";
       const words = { play: { en: "▶ Play with sound", tr: "▶ Sesli oynat" }, on: { en: "Sound on", tr: "Sesi aç" }, off: { en: "Sound off", tr: "Sesi kapat" } }[k];
       soundBtn.dataset.en = words.en; soundBtn.dataset.tr = words.tr; soundBtn.textContent = words[lang];
       soundBtn.setAttribute("aria-pressed", String(voiced && !player.muted));
+      if (!ambBtn) return;
+      const w = amb.on ? { en: "Background off", tr: "Arka sesi kapat" } : { en: "Background on", tr: "Arka sesi aç" };
+      ambBtn.dataset.en = w.en; ambBtn.dataset.tr = w.tr; ambBtn.textContent = w[lang];
+      ambBtn.setAttribute("aria-pressed", String(amb.on));
+      ambBtn.hidden = !voiced || player.muted;
     }
     function offerSound() {
       if (!controls) return;
@@ -183,7 +255,22 @@
           soundBtn.type = "button"; soundBtn.className = "sound";
           controls.prepend(soundBtn);
           label();
+          probe(`ambience/${stem}.mp3`).then((a) => {
+            if (!a) return;
+            amb.src = a.src;
+            ambBtn = document.createElement("button");
+            ambBtn.type = "button"; ambBtn.className = "sound ambience";
+            soundBtn.after(ambBtn);
+            label();
+            ambBtn.addEventListener("click", () => {
+              amb.on = !amb.on;
+              try { localStorage.setItem("oknos-anim-ambience", amb.on ? "on" : "off"); } catch { /* fine */ }
+              if (amb.on) ambStart();
+              label();
+            });
+          });
           soundBtn.addEventListener("click", () => {
+            if (amb.on) ambStart();
             if (!voiced) {
               // unlock the player inside the tap (Safari asks for that), then start again with the voice's timing
               player.src = (shots.find((s) => s.clip) || end).clip.src;
