@@ -14,6 +14,7 @@ Each file is one prompt for one fresh agent session, run from the repo root. Pas
 | 6 | `06-friend-test.md` | Proof that a stranger's machine can install it. Optional: deferred by the maintainer on 2026-11-19. |
 | 7 | `07-github.md` | The repo on GitHub, private, with `main` pushed and the tests running in CI; a guard that keeps `learner/` and `content/private/` off it. |
 | 8 | `08-hosting-discovery.md` | Optional, research only: `docs/HOSTING.md`, free ways to use the app away from home (private network, home server, free VPS, free app hosting), and a recommendation. |
+| 10 | `10-voice.md` | A good Greek voice: a blind listening test of open models against today's voice, then audio made ahead of time for words, chapters and listening, voices for the story's people, and narration for the films. |
 
 How to use them:
 

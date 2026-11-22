@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oknos and his wife</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;600&display=swap">
+<link rel="stylesheet" href="anim.css">
+</head>
+<body>
+<main id="root">
+  <header>
+    <h1>Ὄκνος <small data-en="2 · Oknos and his wife" data-tr="2 · Oknos ve karısı">2 · Oknos and his wife</small></h1>
+    <div class="langs" role="group" aria-label="Translation"><button data-lang="tr" type="button">TR</button><button data-lang="en" type="button">EN</button></div>
+  </header>
+  <div class="frame"><div class="stage film" role="img" aria-label="Oknos makes rope, sells it and fills a jar with coins; his wife spends them as fast; the painter puts a donkey in her place."></div></div>
+  <div class="progress"><i></i></div>
+  <div class="captions" aria-live="polite"><p class="cap-el" lang="el"></p><p class="cap-tr"></p></div>
+  <div class="controls"><button class="replay" type="button" data-en="↺ Play again" data-tr="↺ Yeniden oynat">↺ Play again</button></div>
+  <p class="source" data-en="After Pausanias 10.29.2: they say Oknos was a hard-working man whose wife spent freely, so that whatever he earned was soon gone; and they take the donkey in Polygnotus' painting as a hint at her. Tap the picture to pause." data-tr="Pausanias 10.29.2'ye göre: Oknos'un çalışkan bir adam olduğu, karısının ise savurgan olduğu, kazandığının kısa sürede harcandığı anlatılır; Polygnotos'un resmindeki eşeğin de ona bir gönderme olduğu söylenir. Durdurmak için resme dokun.">.</p>
+  <nav class="others"><a href="1-oknos-and-the-donkey.html">1 · Ὄκνος &amp; το γαϊδούρι</a><a href="3-the-dream.html">3 · Το όνειρο</a></nav>
+</main>
+<script src="film.js"></script>
+<script>
+OknosFilm.film({
+  root: document.getElementById("root"), title: "Oknos and his wife",
+  shots: [
+    {
+      "src": "frames/f2-01.webp",
+      "d": 5.5,
+      "cam": [
+        [
+          0,
+          0,
+          1.12
+        ],
+        [
+          0,
+          0,
+          1.03
+        ]
+      ],
+      "cap": {
+        "el": "Ο Όκνος ήταν εργατικός. Έπλεκε σχοινιά όλη μέρα.",
+        "tr": "Oknos çalışkandı. Bütün gün halat örerdi.",
+        "en": "Oknos was hard-working. He plaited rope all day."
+      }
+    },
+    {
+      "src": "frames/f2-02.webp",
+      "d": 5,
+      "cam": [
+        [
+          -3,
+          0,
+          1.06
+        ],
+        [
+          3,
+          0,
+          1.12
+        ]
+      ],
+      "cap": {
+        "el": "Τα πουλούσε στην αγορά.",
+        "tr": "Onları çarşıda satardı.",
+        "en": "He sold them at the market."
+      }
+    },
+    {
+      "src": "frames/f2-03.webp",
+      "d": 4.5,
+      "cam": [
+        [
+          0,
+          0,
+          1.04
+        ],
+        [
+          0,
+          2,
+          1.14
+        ]
+      ],
+      "cap": {
+        "el": "Ό,τι κέρδιζε, το έβαζε στο πιθάρι.",
+        "tr": "Ne kazandıysa küpe koyardı.",
+        "en": "Whatever he earned, he put in the jar."
+      }
+    },
+    {
+      "src": "frames/f2-04.webp",
+      "d": 5,
+      "cam": [
+        [
+          3,
+          0,
+          1.12
+        ],
+        [
+          -1,
+          0,
+          1.04
+        ]
+      ],
+      "cap": {
+        "el": "Η γυναίκα του όμως είχε άλλα σχέδια.",
+        "tr": "Ama karısının başka planları vardı.",
+        "en": "But his wife had other plans."
+      }
+    },
+    {
+      "src": "frames/f2-05.webp",
+      "d": 5,
+      "cam": [
+        [
+          -2,
+          0,
+          1.04
+        ],
+        [
+          2,
+          -1,
+          1.12
+        ]
+      ],
+      "cap": {
+        "el": "Ένα κολιέ, ένα άρωμα, ένα ύφασμα…",
+        "tr": "Bir kolye, bir parfüm, bir kumaş…",
+        "en": "A necklace, a perfume, some cloth…"
+      }
+    },
+    {
+      "src": "frames/f2-06.webp",
+      "d": 5,
+      "cam": [
+        [
+          0,
+          0,
+          1.04
+        ],
+        [
+          2,
+          2,
+          1.14
+        ]
+      ],
+      "cap": {
+        "el": "Το πιθάρι ήταν πάλι άδειο.",
+        "tr": "Küp yine boştu.",
+        "en": "The jar was empty again."
+      }
+    },
+    {
+      "src": "frames/f2-07.webp",
+      "d": 5,
+      "cam": [
+        [
+          0,
+          0,
+          1.1
+        ],
+        [
+          0,
+          0,
+          1.03
+        ]
+      ],
+      "cap": {
+        "el": "Όσα έβαζε εκείνος, τόσα έπαιρνε εκείνη.",
+        "tr": "O ne koyduysa, karısı o kadar alırdı.",
+        "en": "As much as he put in, she took out."
+      }
+    },
+    {
+      "src": "frames/f2-08.webp",
+      "d": 4.5,
+      "cam": [
+        [
+          0,
+          0,
+          1.03
+        ],
+        [
+          0,
+          0,
+          1.1
+        ]
+      ],
+      "cap": {
+        "el": "Κάθε μέρα το ίδιο.",
+        "tr": "Her gün aynı.",
+        "en": "Every day the same."
+      }
+    },
+    {
+      "src": "frames/f2-09.webp",
+      "d": 5.5,
+      "cam": [
+        [
+          3,
+          0,
+          1.12
+        ],
+        [
+          -2,
+          0,
+          1.04
+        ]
+      ],
+      "cap": {
+        "el": "Ο ζωγράφος Πολύγνωτος ζωγράφισε την ιστορία…",
+        "tr": "Ressam Polygnotos hikâyeyi resmetti…",
+        "en": "The painter Polygnotus painted the story…"
+      }
+    },
+    {
+      "src": "frames/f2-10.webp",
+      "d": 7,
+      "cam": [
+        [
+          0,
+          0,
+          1.03
+        ],
+        [
+          0,
+          2,
+          1.12
+        ]
+      ],
+      "cap": {
+        "el": "…και στη θέση της έβαλε ένα γαϊδούρι!",
+        "tr": "…ve onun yerine bir eşek koydu!",
+        "en": "…and put a donkey in her place!"
+      }
+    }
+  ],
+  end: null,
+});
+</script>
+</body>
+</html>

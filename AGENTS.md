@@ -42,6 +42,8 @@ What works now:
   - The home screen's first button is the one next action: read the current chapter, or today's session. Light, dark and system themes.
   - **The home screen** (2026-11-22): a Today card (the greeting, the one next action, the new words waiting, with their pictures) beside the current lesson (its ring and rope, its words with pictures, read and practise), then small tiles for the coach (the donkey), the coming dates and a short "would you pass today?"; the progress fold stays below. `/api/home` carries `words` (`session.home_words`).
   - **Pictures** (phase 9, started 2026-11-22, `docs/brand/IMAGES.md`): words have pictures made by an image model through Codex, reviewed, and taken in as WebP into `content/open/open-pictures/` (`scripts/pictures.py`). A picture belongs to a word, so any pack's item with that word shows it: on the learn card, after an answer, and in "pick the picture" (`el_picture`). By 2026-11-22: 339 pictures, 102 for open words and 237 for nouns of the maintainer's book (all 238 of its picture requests but one already pictured); 83 of the open book's 218 words and 319 of the book's words have one.
+  - **Scenes of the story** (pilot, 2026-11-22, `docs/brand/CHARACTERS.md`): the open book's recurring people (Zeynep, Katerina, Giorgos) have a fixed look and a reference sheet, and a scene picture can sit above a chapter's dialogue (`picture`) or a task (`stimulus.pictures`, one or two; two are labelled α and β, as in the A2 exam's "describe and compare two photos"). The pilot is the shopping chapter: the bakery and the street market, with a true/false, a multiple choice and a speaking card on them.
+  - **Films** (2026-11-22, `docs/brand/animations/`): three short painted films of the Oknos myth (motion comics: illustrations drawn through Codex with the cast's reference sheets, a camera move, Greek captions with TR/EN).
   - **The look** (2026-11-21, `docs/brand/README.md`): every progress bar is a plaited rope, a stage's ring closes as it is learned, the donkey (the agent) sits by the coach's note, the end of a session and an empty screen, and the icons are one line style (no emoji). An empty practice choice says why and leads back.
   - Navigation: every screen has its own URL (`?book`, `?lesson=<stage>`, `?stage=<id>`, `?practise`, `?words`, `?verbs`, `?exam`, `?writing`, `?submission=<id>`, `?mock=<run id>`), so the browser's back and forward work. An app bar on every screen links Home · Book · Practise · Words · Verbs · Exam.
   - The **Book** screen (formerly the course map) is the table of contents. Any chapter can be read, also ahead of the lesson, and the reader links to the previous and next chapters.
@@ -153,6 +155,7 @@ Phase 7 (the repo on GitHub, private, with CI) is built: see **Git and GitHub** 
 
 On the roadmap (2026-11-20, `docs/prompts/`):
 - phase 8 (optional): discovery of a free way to use the app away from home, research only.
+- phase 10 (`docs/prompts/10-voice.md`, added 2026-11-22): a better Greek voice. The browser voice is "just okay"; the plan is a blind listening test (Microsoft neural, Chatterbox Multilingual, a Greek community model), then audio made ahead of time from files, character voices, and narration for the films.
 
 ## Git and GitHub
 

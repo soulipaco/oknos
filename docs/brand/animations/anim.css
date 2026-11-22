@@ -1,0 +1,52 @@
+/* Shared page style of the three Oknos animations. */
+:root {
+  --paper: #f6f2ea; --ink: #1e2a32; --muted: #627079; --aegean: #1f5f8b; --line: #e3dccd;
+  --serif: "Noto Serif", Georgia, "Times New Roman", serif;
+  --ui: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --paper: #161d22; --ink: #e9e2d4; --muted: #a1a9ae; --aegean: #7fb2d6; --line: #2e373d; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --paper: #161d22; --ink: #e9e2d4; --muted: #a1a9ae; --aegean: #7fb2d6; --line: #2e373d; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--ui); }
+main { max-width: 980px; margin: 0 auto; padding-block: 16px 32px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+h1 { font-family: var(--serif); font-weight: 600; font-size: 1.4rem; margin: 0 0 10px; }
+h1 small { display: block; font-family: var(--ui); font-weight: 400; font-size: .85rem; color: var(--muted); margin-top: 2px; }
+.langs { display: flex; gap: 4px; }
+.langs button, .replay {
+  font: inherit; font-size: .85rem; border: 1px solid var(--line); background: transparent; color: var(--ink);
+  border-radius: 999px; padding: 4px 12px; cursor: pointer;
+}
+.langs button[aria-pressed="true"] { background: var(--aegean); border-color: var(--aegean); color: var(--paper); }
+.langs button:focus-visible, .replay:focus-visible, nav.others a:focus-visible { outline: 2px solid var(--aegean); outline-offset: 2px; }
+.frame { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: #f6f2ea; }
+svg.stage { display: block; width: 100%; height: auto; cursor: pointer; }
+.paused .frame::after {
+  content: "❚❚"; position: absolute; top: 12px; right: 14px; color: #1e2a32; opacity: .5; font-size: 14px;
+}
+.progress { height: 3px; background: var(--line); }
+.progress i { display: block; height: 100%; width: 0; background: var(--aegean); }
+.captions { min-height: 92px; text-align: center; padding: 14px 8px 4px; }
+.cap-el { font-family: var(--serif); font-size: clamp(1.15rem, 3.4vw, 1.6rem); margin: 0; opacity: 0; transform: translateY(4px); transition: opacity .5s, transform .5s; }
+.cap-tr { color: var(--muted); margin: 6px 0 0; opacity: 0; transition: opacity .7s .15s; }
+.cap-el.in, .cap-tr.in { opacity: 1; transform: none; }
+.controls { display: flex; justify-content: center; gap: 8px; }
+.replay { visibility: hidden; }
+.ended .replay { visibility: visible; }
+.source { color: var(--muted); font-size: .8rem; text-align: center; margin-top: 18px; line-height: 1.5; }
+.source a { color: inherit; }
+nav.others { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 10px; font-size: .9rem; }
+nav.others a { color: var(--aegean); }
+
+/* the motion-comic stage (film.js) */
+.stage.film { position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #1e2a32; cursor: pointer; }
+.stage.film .shot { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0;
+  transform-origin: 50% 50%; will-change: transform, opacity; user-select: none; }
+.stage.film .flash { position: absolute; inset: 0; background: #fff; opacity: 0; pointer-events: none; z-index: 90; }
+.stage.film .end-card { position: absolute; inset: 0; opacity: 0; display: grid; place-content: center; gap: 14px; text-align: center;
+  background: #f6f2ea; color: #1e2a32; pointer-events: none; }
+.end-card svg { width: clamp(72px, 16vw, 120px); height: auto; margin: 0 auto; }
+.end-card .word { font-family: var(--serif); font-weight: 600; font-size: clamp(1.6rem, 5vw, 2.6rem); letter-spacing: .02em; }
+.end-card .line { font-family: var(--serif); font-size: clamp(1rem, 2.6vw, 1.3rem); color: #627079; }

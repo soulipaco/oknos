@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oknos's dream</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;600&display=swap">
+<link rel="stylesheet" href="anim.css">
+</head>
+<body>
+<main id="root">
+  <header>
+    <h1>Ὄκνος <small data-en="3 · The dream" data-tr="3 · Rüya">3 · The dream</small></h1>
+    <div class="langs" role="group" aria-label="Translation"><button data-lang="tr" type="button">TR</button><button data-lang="en" type="button">EN</button></div>
+  </header>
+  <div class="frame"><div class="stage film" role="img" aria-label="Oknos falls asleep under an olive tree and dreams the endless rope and the donkey, faster and faster; he wakes with a start, and the donkey is only eating a carrot."></div></div>
+  <div class="progress"><i></i></div>
+  <div class="captions" aria-live="polite"><p class="cap-el" lang="el"></p><p class="cap-tr"></p></div>
+  <div class="controls"><button class="replay" type="button" data-en="↺ Play again" data-tr="↺ Yeniden oynat">↺ Play again</button></div>
+  <p class="source" data-en="A new tale on the old one: Pausanias 10.29 tells of Oknos, who plaits a rope in the underworld while a donkey eats it. Tap the picture to pause." data-tr="Eski hikâyeye yeni bir ek: Pausanias 10.29, yeraltında bir halat ören ve halatını bir eşeğin yediği Oknos'u anlatır. Durdurmak için resme dokun.">.</p>
+  <nav class="others"><a href="1-oknos-and-the-donkey.html">1 · Ὄκνος &amp; το γαϊδούρι</a><a href="2-oknos-and-his-wife.html">2 · Ὄκνος &amp; η γυναίκα του</a></nav>
+</main>
+<script src="film.js"></script>
+<script>
+OknosFilm.film({
+  root: document.getElementById("root"), title: "Oknos's dream",
+  shots: [
+    {
+      "src": "frames/f3-01.webp",
+      "d": 5,
+      "cam": [
+        [
+          0,
+          0,
+          1.03
+        ],
+        [
+          0,
+          0,
+          1.1
+        ]
+      ],
+      "cap": {
+        "el": "Βράδυ. Ο Όκνος είναι κουρασμένος.",
+        "tr": "Akşam. Oknos yorgun.",
+        "en": "Evening. Oknos is tired."
+      }
+    },
+    {
+      "src": "frames/f3-02.webp",
+      "d": 5,
+      "cam": [
+        [
+          0,
+          -2,
+          1.1
+        ],
+        [
+          0,
+          0,
+          1.03
+        ]
+      ],
+      "cap": {
+        "el": "Κοιμάται κάτω από την ελιά.",
+        "tr": "Zeytin ağacının altında uyuyor.",
+        "en": "He sleeps under the olive tree."
+      }
+    },
+    {
+      "src": "frames/f3-03.webp",
+      "d": 5,
+      "cam": [
+        [
+          0,
+          0,
+          1.04
+        ],
+        [
+          0,
+          0,
+          1.12
+        ]
+      ],
+      "fx": "dream",
+      "cap": {
+        "el": "Στο όνειρό του πλέκει ένα σχοινί… και το γαϊδούρι το τρώει.",
+        "tr": "Rüyasında bir halat örüyor… ve eşek onu yiyor.",
+        "en": "In his dream he plaits a rope… and the donkey eats it."
+      }
+    },
+    {
+      "src": "frames/f3-04.webp",
+      "d": 3.8,
+      "cam": [
+        [
+          0,
+          0,
+          1.06
+        ],
+        [
+          0,
+          0,
+          1.18
+        ]
+      ],
+      "fx": "dream",
+      "cap": {
+        "el": "Πιο γρήγορα, πιο γρήγορα…",
+        "tr": "Daha hızlı, daha hızlı…",
+        "en": "Faster and faster…"
+      }
+    },
+    {
+      "src": "frames/f3-05.webp",
+      "d": 3,
+      "cam": [
+        [
+          0,
+          0,
+          1.05
+        ],
+        [
+          0,
+          0,
+          1.3
+        ]
+      ],
+      "fx": "dream",
+      "cap": {
+        "el": "Το γαϊδούρι φτάνει στα χέρια του!",
+        "tr": "Eşek ellerine kadar geliyor!",
+        "en": "The donkey reaches his hands!"
+      }
+    },
+    {
+      "src": "frames/f3-06.webp",
+      "d": 4.5,
+      "cam": [
+        [
+          0,
+          0,
+          1.06
+        ],
+        [
+          0,
+          0,
+          1.06
+        ]
+      ],
+      "fx": "shake",
+      "cap": {
+        "el": "Ωχ! Ο Όκνος ξυπνάει.",
+        "tr": "Eyvah! Oknos uyanıyor.",
+        "en": "Oh no! Oknos wakes up."
+      }
+    },
+    {
+      "src": "frames/f3-07.webp",
+      "d": 4.5,
+      "cam": [
+        [
+          -2,
+          0,
+          1.04
+        ],
+        [
+          2,
+          0,
+          1.1
+        ]
+      ],
+      "cap": {
+        "el": "Τι τρώει το γαϊδούρι;",
+        "tr": "Eşek ne yiyor?",
+        "en": "What is the donkey eating?"
+      }
+    },
+    {
+      "src": "frames/f3-08.webp",
+      "d": 5,
+      "cam": [
+        [
+          0,
+          0,
+          1.12
+        ],
+        [
+          0,
+          0,
+          1.04
+        ]
+      ],
+      "cap": {
+        "el": "Ένα καρότο! Όνειρο ήταν.",
+        "tr": "Bir havuç! Rüyaymış.",
+        "en": "A carrot! It was a dream."
+      }
+    },
+    {
+      "src": "frames/f3-09.webp",
+      "d": 6,
+      "cam": [
+        [
+          0,
+          0,
+          1.03
+        ],
+        [
+          0,
+          -1,
+          1.1
+        ]
+      ],
+      "cap": {
+        "el": "Καλημέρα, Όκνε!",
+        "tr": "Günaydın Oknos!",
+        "en": "Good morning, Oknos!"
+      }
+    }
+  ],
+  end: null,
+});
+</script>
+</body>
+</html>
