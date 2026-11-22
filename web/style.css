@@ -738,3 +738,11 @@ main:has(.home-grid) { max-width: 1040px; }
 }
 .hero .link-button { align-self: flex-start; text-align: left; }
 .nw-plain { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-clamp: 4; align-content: center; }
+
+/* scene pictures of the story (docs/brand/CHARACTERS.md) */
+.scene{margin:0 auto 14px;max-width:360px}
+.scene img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line, #d9d2c3)}
+.ch-dialogue .scene{max-width:420px}
+.scene-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 auto 14px;max-width:560px}
+.scene-pair .scene{margin:0}
+.scene figcaption{text-align:center;font-family:var(--serif, serif);font-weight:600;margin-top:4px}

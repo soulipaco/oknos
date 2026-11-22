@@ -16,7 +16,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Annotated, Any, Literal, Union
 
-from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, ValidationError, model_validator
+from pydantic import BaseModel, ConfigDict, Field, StringConstraints, TypeAdapter, ValidationError, model_validator
 
 from oknos import chapters as chapters_mod
 from oknos import db, paths
@@ -57,6 +57,11 @@ class Stimulus(Strict):
     audio: str | None = None
     tts: str | None = None
     plays: int | None = None
+    # Scene pictures (docs/brand/CHARACTERS.md): files in this pack's pictures/ folder, shown above
+    # the task; two are labelled α and β, as in the exams' "describe and compare two photos". A
+    # picture of a single word is found by the word instead (packs.picture_url).
+    pictures: list[Annotated[str, StringConstraints(pattern=r"^[A-Za-z0-9._-]+\.(webp|png|svg)$")]] | None = Field(
+        default=None, min_length=1, max_length=2)
     # Play only this part of the audio file (seconds), so one recording of a whole exam paper
     # can serve its separate parts.
     start: float | None = Field(default=None, ge=0)
@@ -534,6 +539,10 @@ def load_pack(pack_dir: Path, expected_visibility: str | None = None) -> tuple[P
             if item.id in pack.items:
                 problems.append(f"{label}: the id '{item.id}' is used twice in this pack; the second one was skipped")
                 continue
+            gone = [f for f in (item.stimulus.pictures or []) if not (pack_dir / "pictures" / f).is_file()] if item.stimulus else []
+            if gone:
+                problems.append(f"{label}: the picture '{gone[0]}' is not in {name}/pictures/; skipped")
+                continue
             pack.items[item.id] = item
             pack.item_files[item.id] = item_file.name
     glossary_file = pack_dir / "glossary.json"
@@ -556,6 +565,11 @@ def load_pack(pack_dir: Path, expected_visibility: str | None = None) -> tuple[P
             continue
         if chapter.stage != chapter_file.stem:
             problems.append(f"{rel}: the file name must be the stage id ('{chapter.stage}.json'); the chapter was skipped")
+            continue
+        missing = [b.picture for s in chapter.sections for b in s.blocks
+                   if getattr(b, "picture", None) and not (pack_dir / "pictures" / b.picture).is_file()]
+        if missing:
+            problems.append(f"{rel}: the picture '{missing[0]}' is not in {name}/pictures/; the chapter was skipped")
             continue
         pack.chapters[chapter.stage] = chapter
     return pack, problems, later

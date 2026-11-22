@@ -103,7 +103,12 @@
               "tr": "Rica ederim. Hoşça kalın!",
               "en": "You're welcome. Goodbye!"
             }
-          ]
+          ],
+          "picture": "scene-ch05-fournos.webp",
+          "picture_alt": {
+            "tr": "Zeynep fırında: Eleni Hanım ona bir ekmek veriyor; tezgâhta peynirli börekler.",
+            "en": "Zeynep at the bakery: Mrs Eleni hands her a loaf; cheese pies on the counter."
+          }
         },
         {
           "type": "prose",
@@ -171,7 +176,12 @@
               "tr": "Dört euro.",
               "en": "Four euros."
             }
-          ]
+          ],
+          "picture": "scene-ch05-laiki.webp",
+          "picture_alt": {
+            "tr": "Semt pazarında: Stelios Bey domatesleri tartıyor; Zeynep'in elinde bir torba elma.",
+            "en": "At the street market: Mr Stelios weighs the tomatoes; Zeynep holds a bag of apples."
+          }
         },
         {
           "type": "prose",
@@ -230,7 +240,9 @@
           "type": "check",
           "items": [
             "open-book/ch05-q-bakery",
-            "open-book/ch05-q-tf"
+            "open-book/ch05-q-tf",
+            "open-book/ch05-scene-fournos",
+            "open-book/ch05-scene-laiki"
           ]
         }
       ]

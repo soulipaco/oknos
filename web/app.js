@@ -907,9 +907,24 @@ function listenBlock(card) {
   return h("div", { class: "listen-block" }, h("div", { class: "listen-row" }, play, status), transcript);
 }
 
+function scenePicture(url, alt) {
+  // A scene of the story (docs/brand/CHARACTERS.md) above a task or a dialogue.
+  return url ? h("figure", { class: "scene" }, h("img", { src: url, alt: alt || "", width: "512", height: "512", loading: "lazy" })) : null;
+}
+
+function scenePictures(urls) {
+  // One scene, or two side by side labelled α and β (the exams' "describe and compare two photos").
+  if (!urls?.length) return null;
+  if (urls.length === 1) return scenePicture(urls[0]);
+  return h("div", { class: "scene-pair" }, urls.map((u, i) => h("figure", { class: "scene" },
+    h("img", { src: u, alt: "", width: "512", height: "512", loading: "lazy" }),
+    h("figcaption", { lang: "el" }, ["α", "β"][i]))));
+}
+
 function stimulusBlock(card) {
-  if (card.stimulus?.text) return h("div", { class: "notice" }, greekText(card.stimulus.text, { tag: "p" }));
-  return listenBlock(card);
+  const pic = scenePictures(card.stimulus?.pictures);
+  if (card.stimulus?.text) return [pic, h("div", { class: "notice" }, greekText(card.stimulus.text, { tag: "p" }))];
+  return [pic, listenBlock(card)];
 }
 
 RENDERERS.vocab = (card) => {
@@ -1178,7 +1193,7 @@ function countWords(text) {
 
 function openTaskPrompt(card) {
   const prompt = greekText(card.prompt.el, { tag: "p", cls: "prompt-greek" });
-  return h("div", { class: "question" }, ...translatable(prompt, tr(card.prompt)));
+  return [scenePictures(card.stimulus?.pictures), h("div", { class: "question" }, ...translatable(prompt, tr(card.prompt)))];
 }
 
 function skipButton() {
@@ -1888,6 +1903,7 @@ const CHAPTER_BLOCKS = {
     const play = h("button", { class: "secondary small-btn", type: "button", onclick: () => speakAll(b.lines.map(l => l.el)) }, `▶ ${t("ch_play_all")}`);
     play.hidden = !greekVoice;
     return h("div", { class: "ch-dialogue" },
+      scenePicture(b.picture, b.picture_alt ? tr(b.picture_alt) : (b.setting ? tr(b.setting) : "")),
       b.setting ? h("p", { class: "setting" }, tr(b.setting)) : null,
       h("div", { class: "ch-tools" }, play, toggle),
       lines);

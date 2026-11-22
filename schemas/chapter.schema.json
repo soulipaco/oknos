@@ -67,6 +67,30 @@
           ],
           "default": null
         },
+        "picture": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9._-]+\\.(webp|png|svg)$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Picture"
+        },
+        "picture_alt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Bi"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
         "lines": {
           "items": {
             "$ref": "#/$defs/Line"

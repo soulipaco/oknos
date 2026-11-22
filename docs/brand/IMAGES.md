@@ -57,6 +57,8 @@ The subject line says what it is and, where it matters, the Greek touch ("a roun
 
 ## In the app
 
+- **Scenes** (pictures of a moment of the story, with its people) follow `docs/brand/CHARACTERS.md` and live in the book's own pack (`content/open/open-book/pictures/`, 768×768 WebP); a dialogue shows one with `picture`, a task with `stimulus.pictures`.
+
 - A picture belongs to a **word**, not to one item: every pack's vocab item with the same word (with or without its article) shows it, so the maintainer's book gets the open pictures too (`packs.picture_url`).
 - The **learn card** of a new word shows its picture; after any answer the picture appears under the feedback; "what is it in Greek?" shows it with the meaning.
 - **Pick the picture** (`direction: el_picture`): for a word already seen, four in ten of its "what does it mean?" cards become "which picture is it?": the Greek word (and its sound), four pictures.

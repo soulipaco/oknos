@@ -844,7 +844,10 @@
  },
  {
   "id": "ch05-try-numbers",
-  "ask": {"en": "Match each number word with its digits.", "tr": "Her sayı sözcüğünü rakamıyla eşleştir."},
+  "ask": {
+   "en": "Match each number word with its digits.",
+   "tr": "Her sayı sözcüğünü rakamıyla eşleştir."
+  },
   "type": "match",
   "skill": "vocab",
   "level": "A1",
@@ -886,7 +889,10 @@
  },
  {
   "id": "ch05-p-day",
-  "ask": {"en": "Complete the order of the days.", "tr": "Günlerin sırasını tamamla."},
+  "ask": {
+   "en": "Complete the order of the days.",
+   "tr": "Günlerin sırasını tamamla."
+  },
   "type": "form",
   "skill": "grammar",
   "level": "A1",
@@ -1139,6 +1145,150 @@
     "tr": "Pazartesi akşam sekize kadar açık.",
     "answer": true
    }
+  ]
+ },
+ {
+  "id": "ch05-scene-fournos",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Σωστό ή λάθος;",
+   "en": "Look at the picture. True or false?",
+   "tr": "Resme bak. Doğru mu, yanlış mı?"
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch05-fournos.webp"
+   ]
+  },
+  "explain": {
+   "en": "Zeynep is at the bakery and takes a loaf; there are cheese pies on the counter. The tomatoes are at the street market, not here.",
+   "tr": "Zeynep fırında ve bir ekmek alıyor; tezgâhta peynirli börekler var. Domatesler burada değil, semt pazarında."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "statements": [
+   {
+    "el": "Η Ζεϊνέπ είναι στον φούρνο.",
+    "en": "Zeynep is at the bakery.",
+    "tr": "Zeynep fırında.",
+    "answer": true
+   },
+   {
+    "el": "Η Ζεϊνέπ παίρνει ένα ψωμί.",
+    "en": "Zeynep takes a loaf of bread.",
+    "tr": "Zeynep bir ekmek alıyor.",
+    "answer": true
+   },
+   {
+    "el": "Ο φούρνος έχει τυρόπιτες.",
+    "en": "The bakery has cheese pies.",
+    "tr": "Fırında peynirli börek var.",
+    "answer": true
+   },
+   {
+    "el": "Η Ζεϊνέπ παίρνει ντομάτες.",
+    "en": "Zeynep takes tomatoes.",
+    "tr": "Zeynep domates alıyor.",
+    "answer": false
+   }
+  ]
+ },
+ {
+  "id": "ch05-scene-laiki",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Διαλέγω το σωστό.",
+   "en": "Look at the picture. Choose the right answer.",
+   "tr": "Resme bak. Doğru cevabı seç."
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch05-laiki.webp"
+   ]
+  },
+  "explain": {
+   "en": "On the stall there are three crates: tomatoes, apples and potatoes.",
+   "tr": "Tezgâhta üç kasa var: domates, elma ve patates."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "prompt": {
+   "el": "Τι έχει ο Στέλιος στη λαϊκή;",
+   "en": "What does Stelios have at the street market?",
+   "tr": "Stelios'un pazarda neyi var?"
+  },
+  "options": [
+   "Ντομάτες, μήλα και πατάτες.",
+   "Ψωμί και τυρόπιτες.",
+   "Γάλα και φρούτα."
+  ],
+  "answer": 0
+ },
+ {
+  "id": "ch05-scene-compare",
+  "type": "speak",
+  "skill": "speaking",
+  "level": "A1",
+  "exam_task": "a2ltr.speaking.pictures",
+  "topics": [
+   "stage:shopping"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω τις δύο εικόνες και μιλάω.",
+   "en": "Look at the two pictures and speak.",
+   "tr": "İki resme bak ve konuş."
+  },
+  "ask": {
+   "en": "Say what you see in picture α, then in picture β. The A2 exam has a task like this, with two photos.",
+   "tr": "α resminde ne gördüğünü, sonra β resminde ne gördüğünü söyle. A2 sınavında iki fotoğrafla buna benzer bir görev var."
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch05-fournos.webp",
+    "scene-ch05-laiki.webp"
+   ]
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "shopping",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "prompt": {
+   "el": "Τι βλέπετε στην εικόνα α και τι στην εικόνα β;",
+   "en": "What do you see in picture α, and what in picture β?",
+   "tr": "α resminde ne görüyorsunuz, β resminde ne?"
+  },
+  "seconds": 60,
+  "model": {
+   "el": "Στην εικόνα α η Ζεϊνέπ είναι στον φούρνο. Η Ελένη έχει ψωμιά και τυρόπιτες. Η Ζεϊνέπ παίρνει ένα ψωμί. Στην εικόνα β η Ζεϊνέπ είναι στη λαϊκή. Ο Στέλιος έχει ντομάτες, μήλα και πατάτες. Η Ζεϊνέπ παίρνει μήλα.",
+   "en": "In picture α Zeynep is at the bakery. Eleni has loaves and cheese pies. Zeynep takes a loaf. In picture β Zeynep is at the street market. Stelios has tomatoes, apples and potatoes. Zeynep takes apples.",
+   "tr": "α resminde Zeynep fırında. Eleni'de ekmekler ve peynirli börekler var. Zeynep bir ekmek alıyor. β resminde Zeynep semt pazarında. Stelios'ta domates, elma ve patates var. Zeynep elma alıyor."
+  },
+  "useful": [
+   "Στην εικόνα α …",
+   "Στην εικόνα β …",
+   "Η Ζεϊνέπ είναι στον / στη …",
+   "Ο Στέλιος έχει …",
+   "Η Ζεϊνέπ παίρνει …"
   ]
  }
 ]

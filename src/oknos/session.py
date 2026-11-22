@@ -235,6 +235,8 @@ def task_card(item_key: str, item, rng: random.Random) -> dict:
         "rubric": _text(item.rubric), "ask": _text(item.ask),
         "stimulus": item.stimulus.model_dump(exclude_none=True) if item.stimulus else None,
     }
+    if item.stimulus and item.stimulus.pictures:
+        card["stimulus"]["pictures"] = [f"/pictures/{item_key.split('/', 1)[0]}/{f}" for f in item.stimulus.pictures]
     if isinstance(item, McqItem):
         card["prompt"] = _text(item.prompt)
         card["options"] = item.options
@@ -1024,6 +1026,8 @@ def chapter_view(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage
                                          "meaning_lang": meaning_lang(i, ui_lang), "pos": i.pos,
                                          "gender": i.gender, "status": status_of(states.get(k)),
                                          "example": i.example.model_dump() if i.example else None})
+            elif b.type == "dialogue" and b.picture:
+                out["picture"] = f"/pictures/{catalog.chapters[(prog.curriculum.id, stage_id)][0].id}/{b.picture}"
             elif b.type == "check":
                 out["items"] = [k for k in b.items if k in catalog.items and catalog.items[k][1].type not in ("write", "speak")]
             blocks.append(out)

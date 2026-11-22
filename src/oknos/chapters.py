@@ -56,6 +56,9 @@ class Line(Strict):
 class Dialogue(Strict):
     type: Literal["dialogue"]
     setting: Bi | None = None
+    # A scene of the dialogue (docs/brand/CHARACTERS.md): a file in the pack's pictures/ folder.
+    picture: str | None = Field(default=None, pattern=r"^[A-Za-z0-9._-]+\.(webp|png|svg)$")
+    picture_alt: Bi | None = None
     lines: list[Line] = Field(min_length=2)
 
 

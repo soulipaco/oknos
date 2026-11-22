@@ -1221,6 +1221,24 @@
           "default": null,
           "title": "Plays"
         },
+        "pictures": {
+          "anyOf": [
+            {
+              "items": {
+                "pattern": "^[A-Za-z0-9._-]+\\.(webp|png|svg)$",
+                "type": "string"
+              },
+              "maxItems": 2,
+              "minItems": 1,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pictures"
+        },
         "start": {
           "anyOf": [
             {

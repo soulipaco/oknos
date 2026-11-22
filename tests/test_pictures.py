@@ -72,3 +72,46 @@ def test_the_home_screen_shows_words_with_pictures_first(learner, client):
     for group in (words["lesson"], words["new"]):  # those with a picture come first
         flags = [w["picture"] is None for w in group]
         assert flags == sorted(flags)
+
+
+def _scene_pack(tmp_path, with_file: bool):
+    pack_dir = tmp_path / "story"
+    (pack_dir / "pictures").mkdir(parents=True)
+    (pack_dir / "items").mkdir()
+    (pack_dir / "pack.json").write_text(json.dumps({"id": "story", "title": {"en": "S"}, "version": 1, "levels": ["A1"],
+                                                    "visibility": "open", "licence": "CC-BY-SA-4.0", "source": "t"}))
+    if with_file:
+        (pack_dir / "pictures" / "scene-bakery.webp").write_bytes(b"RIFF0000WEBP")
+    item = {"id": "q-bakery", "type": "true_false", "skill": "reading", "level": "A1",
+            "stimulus": {"pictures": ["scene-bakery.webp"]},
+            "statements": [{"el": "Η Ζεϊνέπ αγοράζει ψωμί.", "answer": True}]}
+    (pack_dir / "items" / "scene.json").write_text(json.dumps([item], ensure_ascii=False), encoding="utf-8")
+    return packs.load_pack(pack_dir, "open")
+
+
+def test_a_task_can_show_a_scene_of_the_story(tmp_path):
+    pack, problems, _ = _scene_pack(tmp_path, with_file=True)
+    assert not problems and "q-bakery" in pack.items
+    card = session.task_card("story/q-bakery", pack.items["q-bakery"], random.Random(1))
+    assert card["stimulus"]["pictures"] == ["/pictures/story/scene-bakery.webp"]
+
+
+def test_a_task_whose_scene_is_missing_is_skipped(tmp_path):
+    pack, problems, _ = _scene_pack(tmp_path, with_file=False)
+    assert "q-bakery" not in pack.items
+    assert any("scene-bakery.webp" in p for p in problems)
+
+
+def test_a_scene_name_cannot_leave_the_pictures_folder():
+    import pytest
+    from pydantic import ValidationError
+
+    with pytest.raises(ValidationError):
+        packs.Stimulus.model_validate({"pictures": ["../pack.json"]})
+    with pytest.raises(ValidationError):
+        packs.Stimulus.model_validate({"pictures": ["a.webp", "b.webp", "c.webp"]})
+    from oknos import chapters
+
+    d = chapters.Dialogue.model_validate({"type": "dialogue", "picture": "scene.webp",
+                                          "lines": [{"who": "A", "el": "Γεια.", "tr": "Selam.", "en": "Hi."}] * 2})
+    assert d.picture == "scene.webp"

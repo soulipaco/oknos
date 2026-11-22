@@ -1,4 +1,5 @@
 [
+  {"el": "κοιτάζω", "forms": ["κοιτάξτε", "κοίταξε", "κοιτάζετε", "κοιτάω", "κοιτάμε"], "pos": "verb", "en": "I look at; κοιτάξτε = look at (an instruction)", "tr": "bakarım; κοιτάξτε = bakın (yönerge)"},
   {"el": "διαλέγω", "forms": ["διαλέξτε", "διάλεξε", "διαλέγετε", "διαλέγουμε"], "pos": "verb", "en": "I choose; διαλέξτε = choose (an instruction)", "tr": "seçerim; διαλέξτε = seçin (yönerge)"},
   {"el": "συμπληρώνω", "forms": ["συμπληρώστε", "συμπλήρωσε", "συμπληρώνετε", "συμπληρώνουμε"], "pos": "verb", "en": "I fill in, complete; συμπληρώστε = fill in", "tr": "doldururum, tamamlarım; συμπληρώστε = doldurun"},
   {"el": "αντιστοιχίζω", "forms": ["αντιστοιχίστε", "αντιστοίχισε", "αντιστοιχίζετε"], "pos": "verb", "en": "I match (one thing to another); αντιστοιχίστε = match", "tr": "eşleştiririm; αντιστοιχίστε = eşleştirin"},
