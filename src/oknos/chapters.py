@@ -169,7 +169,7 @@ class Chapter(Strict):
         out = []
         for _, _, b in self.blocks():
             if isinstance(b, Dialogue):
-                out += [{"el": ln.el, "tr": ln.tr, "en": ln.en} for ln in b.lines]
+                out += [{"el": ln.el, "tr": ln.tr, "en": ln.en, "who": ln.who} for ln in b.lines]
             elif isinstance(b, Examples):
                 out += [{"el": e.el, "tr": e.tr, "en": e.en} for e in b.items]
         return out

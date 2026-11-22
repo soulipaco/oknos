@@ -746,3 +746,30 @@ main:has(.home-grid) { max-width: 1040px; }
 .scene-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 auto 14px;max-width:560px}
 .scene-pair .scene{margin:0}
 .scene figcaption{text-align:center;font-family:var(--serif, serif);font-weight:600;margin-top:4px}
+
+/* the voice screen (phase 10) */
+.voice-page { display: grid; gap: 14px; }
+.voice-page .lede { color: var(--muted); max-width: 62ch; line-height: 1.55; margin: 0; }
+.voice-cover { display: grid; gap: 6px; }
+.voice-card { border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: grid; gap: 10px; }
+.voice-card.on { border-color: var(--accent); }
+.voice-head { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; justify-content: space-between; }
+.voice-name { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; min-width: 0; }
+.voice-tools { display: flex; gap: 6px; align-items: center; }
+.icon-btn { border: 1px solid var(--line); background: transparent; color: inherit; border-radius: 999px; width: 34px; height: 34px; display: grid; place-items: center; cursor: pointer; padding: 0; }
+.icon-btn[disabled] { opacity: .35; cursor: default; }
+.icon-btn svg { width: 18px; height: 18px; }
+.pill { font-size: .78rem; border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; color: var(--muted); }
+.pill.ok { border-color: var(--good); color: var(--good); }
+.pill.warn { border-color: var(--bad); color: var(--bad); }
+.warn-text { color: var(--bad); margin: 0; }
+.voice-samples { display: flex; flex-wrap: wrap; gap: 8px; }
+.quota { display: grid; gap: 4px; }
+.voice-pc { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 12px; margin: 0; font-size: .92rem; line-height: 1.5; }
+.voice-pc dt { color: var(--muted); }
+.voice-pc dd { margin: 0; }
+.voice-setup summary { cursor: pointer; color: var(--accent); }
+.voice-setup ol { margin: 8px 0 0; padding-left: 1.2rem; line-height: 1.55; font-size: .92rem; }
+.voice-foot { margin-top: 4px; }
+.voice-link svg { width: 18px; height: 18px; }
+@media (max-width: 520px) { .voice-pc { grid-template-columns: 1fr; } .voice-pc dt { margin-top: 4px; } }

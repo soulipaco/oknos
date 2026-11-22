@@ -29,7 +29,8 @@ Fresh content every day, without the learner having to open you. This skill runs
 5. Self-check every item (COACHING §5.2), then:
    - `uv run oknos validate <learner_dir>/generated/coach-practice`;
    - `uv run oknos validate <learner_dir>`;
-   - `uv run oknos reload`.
+   - `uv run oknos reload`;
+   - `uv run oknos voice build`, so the new items are spoken in the learner's chosen voice (it only makes what is missing; skip it if `oknos voice status` shows no service ready).
 6. **Update `coach/notes.md`** with one line: the date, what you prepared, and anything left for the check-in.
 7. **The home-screen message.** Leave `coach/message.json` alone if it is less than 3 days old (the check-in wrote it). Otherwise, if you marked something, write a one-line message, e.g. "Your writing feedback is ready."
 

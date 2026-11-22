@@ -1026,8 +1026,12 @@ def chapter_view(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage
                                          "meaning_lang": meaning_lang(i, ui_lang), "pos": i.pos,
                                          "gender": i.gender, "status": status_of(states.get(k)),
                                          "example": i.example.model_dump() if i.example else None})
-            elif b.type == "dialogue" and b.picture:
-                out["picture"] = f"/pictures/{catalog.chapters[(prog.curriculum.id, stage_id)][0].id}/{b.picture}"
+            elif b.type == "dialogue":
+                from oknos import voice
+                for ln in out["lines"]:
+                    ln["role"] = voice.role_of(ln["who"])  # each speaker's voice (phase 10)
+                if b.picture:
+                    out["picture"] = f"/pictures/{catalog.chapters[(prog.curriculum.id, stage_id)][0].id}/{b.picture}"
             elif b.type == "check":
                 out["items"] = [k for k in b.items if k in catalog.items and catalog.items[k][1].type not in ("write", "speak")]
             blocks.append(out)

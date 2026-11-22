@@ -69,45 +69,86 @@ const cardRoot = () => state.cardRoot || app;
 const packOf = (itemKey) => itemKey.split("/")[0];
 const idOf = (itemKey) => itemKey.split("/").slice(1).join("/");
 
-// ---------- Greek speech (browser voice, local only) ----------
+// ---------- Greek speech: made-ahead clips first (phase 10, docs/VOICE.md), then the browser voice ----------
 
 let greekVoice = null;
+let voiceClips = 0;  // how many clips this learner has made (from /api/voice)
+const canSpeak = () => !!greekVoice || voiceClips > 0;
+
+function showSpeakButtons() {
+  document.querySelectorAll(".speak, .play-all").forEach(b => { b.hidden = !canSpeak(); });
+}
 
 function pickVoice() {
   if (!("speechSynthesis" in window)) return;
   const voices = speechSynthesis.getVoices();
   greekVoice = voices.find(v => v.lang.toLowerCase().startsWith("el") && v.localService) || null;
-  document.querySelectorAll(".speak").forEach(b => { b.hidden = !greekVoice; });
+  showSpeakButtons();
 }
 if ("speechSynthesis" in window) {
   pickVoice();
   speechSynthesis.addEventListener("voiceschanged", pickVoice);
 }
+fetch("/api/voice?brief=1").then(r => r.ok ? r.json() : null).then(st => { voiceClips = st?.files || 0; showSpeakButtons(); }).catch(() => {});
 
-function speak(text, rate = 0.9) {
-  if (!greekVoice) return false;
-  speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.voice = greekVoice;
-  u.lang = greekVoice.lang;
-  u.rate = rate;
-  speechSynthesis.speak(u);
+const voiceUrl = (text, role = "f") => `/voice?r=${role === "m" ? "m" : "f"}&t=${encodeURIComponent(text)}`;
+let playing = null;  // the clip now playing, so a new one stops it
+let speakRun = 0;    // bumps on every new request, so an older "play all" stops
+
+function stopSpeaking() {
+  speakRun += 1;
+  if (playing) { playing.pause(); playing = null; }
+  if ("speechSynthesis" in window) speechSynthesis.cancel();
+}
+
+function browserSay(text, rate) {
+  if (!greekVoice) return Promise.resolve(false);
+  return new Promise(resolve => {
+    const u = new SpeechSynthesisUtterance(text);
+    u.voice = greekVoice; u.lang = greekVoice.lang; u.rate = rate;
+    u.onend = () => resolve(true); u.onerror = () => resolve(false);
+    speechSynthesis.speak(u);
+  });
+}
+
+function clipSay(text, role, rate) {
+  // resolves true when the clip has played to the end, false if there is none
+  return new Promise(resolve => {
+    const a = new Audio(voiceUrl(text, role));
+    a.playbackRate = Math.min(1, rate / 0.9);
+    a.onended = () => resolve(true);
+    a.onerror = () => resolve(false);
+    playing = a;
+    a.play().catch(() => resolve(false));
+  });
+}
+
+async function say(text, rate, role, run) {
+  if (voiceClips > 0 && await clipSay(text, role, rate)) return true;
+  if (run !== speakRun) return false;
+  return browserSay(text, rate);
+}
+
+function speak(text, rate = 0.9, role = "f") {
+  if (!canSpeak() || !text) return false;
+  stopSpeaking();
+  say(text, rate, role, speakRun);
   if (state.card) state.card.audioPlays += 1;
   return true;
 }
 
 const SPEAKER_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
 
-function speakButton(text, small = false) {
+function speakButton(text, small = false, role = "f") {
   const b = h("button", {
     class: small ? "speak small" : "speak",
     type: "button",
     title: t("listen"),
     "aria-label": t("listen"),
-    onclick: (e) => { e.stopPropagation(); speak(text); },
+    onclick: (e) => { e.stopPropagation(); speak(text, 0.9, role); },
   });
   b.innerHTML = SPEAKER_SVG;
-  b.hidden = !greekVoice;
+  b.hidden = !canSpeak();
   return b;
 }
 
@@ -300,6 +341,7 @@ const SCREENS = {
   writing: () => renderWriting(),
   submission: (id) => renderSubmission(Number(id)),
   mock: (id) => renderMockRun(Number(id)),
+  voice: () => renderVoice(),
 };
 const SCREEN_ALIASES = { map: "book" };  // older links
 
@@ -489,6 +531,9 @@ const ICONS = {  // one line style: a 24 grid, 2 px, round ends
   system: '<circle cx="12" cy="12" r="9"/><path d="M12 3v18" /><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/>',
   flag: '<path d="M5 21V4M5 4h11l-2 4 2 4H5"/>',
   book: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/>',
+  voice: '<path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/>',
+  up: '<path d="M6 15l6-6 6 6"/>',
+  down: '<path d="M6 9l6 6 6-6"/>',
   lock: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
   target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>',
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
@@ -633,7 +678,9 @@ function resetScreens() {
 }
 
 function topActions() {
-  return h("div", { class: "top-actions" }, themeSwitch(), langSwitch());
+  const voiceLink = navLink("voice", icon("voice"), null, "theme-switch voice-link");
+  voiceLink.title = t("voice_title"); voiceLink.setAttribute("aria-label", t("voice_title"));
+  return h("div", { class: "top-actions" }, voiceLink, themeSwitch(), langSwitch());
 }
 
 async function renderHome() {
@@ -723,7 +770,7 @@ async function startSession(kind, items = [], extra = {}) {
   resetScreens();
   app.replaceChildren(h("div", { class: "center-note" }, t("loading")));
   try {
-    const s = await api("/api/session", { kind, items, ui_lang: state.lang, has_voice: !!greekVoice, ...extra });
+    const s = await api("/api/session", { kind, items, ui_lang: state.lang, has_voice: canSpeak(), ...extra });
     if (!s.cards.length) {
       const back = kind === "choose" ? "practise" : "home";
       app.replaceChildren(...appBar(back), h("section", { class: "empty-state" }, donkey("resting", 72),
@@ -1873,15 +1920,15 @@ function paragraphs(text) {
   return String(text).split(/\n{2,}|\n/).filter(x => x.trim()).map(x => inlineText(x));
 }
 
-function speakAll(texts) {
-  if (!greekVoice || !texts.length) return;
-  speechSynthesis.cancel();
-  for (const text of texts) {
-    const u = new SpeechSynthesisUtterance(text);
-    u.voice = greekVoice;
-    u.lang = greekVoice.lang;
-    u.rate = 0.85;
-    speechSynthesis.speak(u);
+async function speakAll(lines) {
+  // lines: strings or {text, role}; a dialogue is read line by line, each in its speaker's voice
+  if (!canSpeak() || !lines.length) return;
+  stopSpeaking();
+  const run = speakRun;
+  for (const ln of lines) {
+    if (run !== speakRun) return;
+    const { text, role } = typeof ln === "string" ? { text: ln, role: "f" } : ln;
+    await say(text, 0.85, role, run);
   }
 }
 
@@ -1892,7 +1939,7 @@ const CHAPTER_BLOCKS = {
     const lines = b.lines.map(ln => h("div", { class: "ch-line" },
       h("span", { class: "who", lang: "el" }, ln.who),
       h("div", { class: "said" },
-        h("div", { class: "said-el" }, greekText(ln.el, { cls: "el" }), speakButton(ln.el, true)),
+        h("div", { class: "said-el" }, greekText(ln.el, { cls: "el" }), speakButton(ln.el, true, ln.role)),
         h("p", { class: "translation", hidden: true }, tr(ln)))));
     const toggle = h("button", { class: "link-button small", type: "button" }, t("ch_show_tr"));
     toggle.addEventListener("click", () => {
@@ -1900,8 +1947,8 @@ const CHAPTER_BLOCKS = {
       lines.forEach(l => { l.querySelector(".translation").hidden = !show; });
       toggle.textContent = show ? t("ch_hide_tr") : t("ch_show_tr");
     });
-    const play = h("button", { class: "secondary small-btn", type: "button", onclick: () => speakAll(b.lines.map(l => l.el)) }, `▶ ${t("ch_play_all")}`);
-    play.hidden = !greekVoice;
+    const play = h("button", { class: "secondary small-btn play-all", type: "button", onclick: () => speakAll(b.lines.map(l => ({ text: l.el, role: l.role }))) }, `▶ ${t("ch_play_all")}`);
+    play.hidden = !canSpeak();
     return h("div", { class: "ch-dialogue" },
       scenePicture(b.picture, b.picture_alt ? tr(b.picture_alt) : (b.setting ? tr(b.setting) : "")),
       b.setting ? h("p", { class: "setting" }, tr(b.setting)) : null,
@@ -2023,7 +2070,7 @@ async function startChapterPractice(stageId) {
   resetScreens();
   app.replaceChildren(h("div", { class: "center-note" }, t("loading")));
   try {
-    const s = await api(`/api/chapters/${encodeURIComponent(stageId)}/practice`, { has_voice: !!greekVoice });
+    const s = await api(`/api/chapters/${encodeURIComponent(stageId)}/practice`, { has_voice: canSpeak() });
     if (!s.cards.length) {
       app.replaceChildren(...appBar(null), h("div", { class: "center-note" }, t("nothing")));
       return;
@@ -2496,3 +2543,119 @@ document.addEventListener("keydown", (e) => {
   state.route = r;
   rerender();
 })();
+
+
+// ---------- the voice: which provider reads the Greek (phase 10, docs/VOICE.md) ----------
+
+const VOICE_INFO = {  // what each one costs, from the listening test of 2026-11-22
+  azure: {
+    pros: { en: "Microsoft's neural voices, Athina and Nestoras: the most natural in our test. Official, with your own Azure key; the free tier (500,000 characters a month) covers the whole book.",
+            tr: "Microsoft'un nöral sesleri Athina ve Nestoras: testimizde en doğal sesler. Kendi Azure anahtarınla, resmî yoldan; ücretsiz katman (ayda 500.000 karakter) bütün kitaba yeter." },
+    cons: { en: "Needs an Azure account and a Speech resource. The free tier makes 20 clips a minute, so the free Microsoft route below fills in the rest with the same voices.",
+            tr: "Azure hesabı ve bir Speech kaynağı gerekir. Ücretsiz katman dakikada 20 klip yapar; kalanını aşağıdaki ücretsiz Microsoft yolu aynı seslerle tamamlar." },
+    setup: { en: ["Sign in at azure.microsoft.com/free with a Microsoft account (a card for verification, no charge).", "Create a resource: Speech, region West Europe, pricing tier Free F0.", "Keys and Endpoint: copy KEY 1 and the region.", "Add AZURE_SPEECH_KEY=… and AZURE_SPEECH_REGION=… to learner/secrets.env."],
+             tr: ["azure.microsoft.com/free adresinde Microsoft hesabınla giriş yap (kart sadece doğrulama için, ücret yok).", "Bir kaynak oluştur: Speech, bölge West Europe, fiyat katmanı Free F0.", "Keys and Endpoint: KEY 1'i ve bölgeyi kopyala.", "learner/secrets.env dosyasına AZURE_SPEECH_KEY=… ve AZURE_SPEECH_REGION=… satırlarını ekle."] },
+  },
+  edge: {
+    pros: { en: "The same Athina and Nestoras, free, no account.", tr: "Aynı Athina ve Nestoras, bedava, hesap gerekmez." },
+    cons: { en: "Unofficial (the Edge browser's read-aloud service): Microsoft can slow it or close it, and the clips are for this computer only, never to share. Clips already made keep working.",
+            tr: "Resmî değil (Edge tarayıcısının sesli okuma servisi): Microsoft yavaşlatabilir ya da kapatabilir; klipler yalnızca bu bilgisayar içindir, paylaşılmaz. Yapılmış klipler çalışmaya devam eder." },
+    setup: { en: ["Say yes to it once (your agent asks; it is kept as edge_tts_ok in your profile).", "The agent makes the clips with: uv run oknos voice build"],
+             tr: ["Bir kez evet de (ajanın sorar; profilinde edge_tts_ok olarak kalır).", "Klipleri ajan yapar: uv run oknos voice build"] },
+  },
+  google: {
+    pros: { en: "Google's newest voices (Chirp 3 HD Kore and Orus), close behind Microsoft in our test. Your own key; 1 million characters free a month, and the whole book is about a tenth of that. The clips are yours.",
+            tr: "Google'ın en yeni sesleri (Chirp 3 HD Kore ve Orus), testimizde Microsoft'un hemen ardından. Kendi anahtarınla; ayda 1 milyon karakter bedava, bütün kitap bunun onda biri. Klipler senin." },
+    cons: { en: "Needs a Google Cloud project with billing turned on (the free trial covers it; no charge inside the free quota).",
+            tr: "Faturalandırması açık bir Google Cloud projesi gerekir (ücretsiz deneme bunu karşılar; ücretsiz kota içinde ücret yok)." },
+    setup: { en: ["console.cloud.google.com: start the free trial and create a project.", "Enable the Cloud Text-to-Speech API.", "Credentials → Create credentials → API key, restricted to Cloud Text-to-Speech API.", "Add GOOGLE_TTS_API_KEY=… to learner/secrets.env."],
+             tr: ["console.cloud.google.com: ücretsiz denemeyi başlat ve bir proje oluştur.", "Cloud Text-to-Speech API'yi etkinleştir.", "Credentials → Create credentials → API key; yalnızca Cloud Text-to-Speech API ile sınırla.", "learner/secrets.env dosyasına GOOGLE_TTS_API_KEY=… satırını ekle."] },
+  },
+  openai: {
+    pros: { en: "Clear Greek (gpt-4o-mini-tts), and the clips are yours. Pay as you go: about a dollar or two for the whole book.",
+            tr: "Anlaşılır Yunanca (gpt-4o-mini-tts), klipler senin. Kullandıkça öde: bütün kitap bir iki dolar." },
+    cons: { en: "An English voice speaking Greek: a slight accent, last of the online voices in our test. Needs an API balance (separate from ChatGPT Plus).",
+            tr: "Yunanca konuşan İngilizce bir ses: hafif aksan; testimizde çevrimiçi sesler içinde sonuncu. API bakiyesi gerekir (ChatGPT Plus'tan ayrı)." },
+    setup: { en: ["platform.openai.com/api-keys → Create new secret key (Restricted, with Audio on).", "Add OPENAI_API_KEY=… to learner/secrets.env."],
+             tr: ["platform.openai.com/api-keys → Create new secret key (Restricted, Audio açık).", "learner/secrets.env dosyasına OPENAI_API_KEY=… satırını ekle."] },
+  },
+};
+
+async function renderVoice() {
+  resetScreens();
+  let st;
+  try { st = await api("/api/voice"); } catch { return showError(); }
+  const lang = state.lang;
+  const num = (n) => n.toLocaleString(lang === "tr" ? "tr-TR" : "en-GB");
+  const order = [...st.order];
+  const rows = [...st.providers].sort((a, b) => (a.position ?? 99) - (b.position ?? 99));
+  const save = async (next) => {
+    try { await api("/api/voice/order", { providers: next }); } catch { /* the list stays as it was */ }
+    renderVoice();
+  };
+  const move = (name, d) => {
+    const i = order.indexOf(name), j = i + d;
+    if (i < 0 || j < 0 || j >= order.length) return;
+    [order[i], order[j]] = [order[j], order[i]];
+    save(order);
+  };
+  const toggle = (name) => save(order.includes(name) ? order.filter(n => n !== name) : [...order, name]);
+
+  const cards = rows.map(p => {
+    const info = VOICE_INFO[p.name] || {};
+    const on = order.includes(p.name);
+    const pill = p.problem ? h("span", { class: "pill warn" }, t("voice_needs"))
+      : on ? h("span", { class: "pill ok" }, `#${p.position} · ${t("voice_in_use")}`)
+      : h("span", { class: "pill" }, t("voice_ready_off"));
+    const sample = (role) => {
+      const label = role === "m" ? t("voice_sample_m") : t("voice_sample_f");
+      const btn = h("button", { class: "secondary small-btn", type: "button" }, `▶ ${label}`);
+      btn.addEventListener("click", async () => {
+        stopSpeaking();
+        let url = p.sample[role] ? `/voice-sample/${p.name}-${role}.mp3` : null;
+        if (!url) {
+          btn.disabled = true; btn.textContent = t("voice_making");
+          try { url = (await api("/api/voice/sample", { provider: p.name, role })).url; }
+          catch { btn.textContent = t("voice_sample_failed"); btn.disabled = false; return; }
+          btn.disabled = false; btn.textContent = `▶ ${label}`;
+          p.sample[role] = true;
+        }
+        const a = new Audio(`${url}?v=${Date.now()}`); playing = a; a.play().catch(() => {});
+      });
+      btn.disabled = !!p.problem && !p.sample[role];
+      return btn;
+    };
+    const quota = p.free ? h("div", { class: "quota" }, ropeBar(Math.min(p.used, p.free), p.free),
+      h("span", { class: "small muted" }, t("voice_quota", { used: num(p.used), free: num(p.free) }))) : null;
+    return h("article", { class: `voice-card${on ? " on" : ""}` },
+      h("div", { class: "voice-head" },
+        h("div", { class: "voice-name" }, h("strong", {}, p.label), pill),
+        h("div", { class: "voice-tools" },
+          on ? h("button", { class: "icon-btn", type: "button", "aria-label": t("voice_up"), title: t("voice_up"), disabled: p.position === 1, onclick: () => move(p.name, -1) }, icon("up")) : null,
+          on ? h("button", { class: "icon-btn", type: "button", "aria-label": t("voice_down"), title: t("voice_down"), disabled: p.position === order.length, onclick: () => move(p.name, 1) }, icon("down")) : null,
+          h("button", { class: "secondary small-btn", type: "button", onclick: () => toggle(p.name) }, on ? t("voice_remove") : t("voice_add")))),
+      p.problem ? h("p", { class: "small warn-text" }, t(/consent|yes/.test(p.problem) ? "voice_problem_yes" : /KEY|REGION/.test(p.problem) ? "voice_problem_key" : "voice_problem_install")) : null,
+      h("div", { class: "voice-samples" }, sample("f"), sample("m")),
+      quota,
+      h("dl", { class: "voice-pc" },
+        h("dt", {}, t("voice_for")), h("dd", {}, info.pros?.[lang] || ""),
+        h("dt", {}, t("voice_against")), h("dd", {}, info.cons?.[lang] || "")),
+      info.setup ? h("details", { class: "voice-setup" }, h("summary", {}, t("voice_how")),
+        h("ol", {}, info.setup[lang].map(x => h("li", {}, x)))) : null);
+  });
+  const total = st.texts || 0, made = total - (st.missing || 0);
+  const covered = total ? Math.round(100 * made / total) : 0;
+  app.replaceChildren(
+    ...appBar(null),
+    crumb("home", t("nav_home")),
+    h("section", { class: "voice-page" },
+      h("h1", {}, t("voice_title")),
+      h("p", { class: "lede" }, t("voice_lede")),
+      h("div", { class: "voice-cover" }, ropeBar(made, total || 1),
+        h("span", { class: "small muted" }, t("voice_covered", { pct: covered, made: num(made), total: num(total) }))),
+      ...cards,
+      h("article", { class: "voice-card browser" },
+        h("div", { class: "voice-head" }, h("div", { class: "voice-name" }, h("strong", {}, t("voice_browser")), h("span", { class: "pill" }, t("voice_always")))),
+        h("p", { class: "small muted" }, t("voice_browser_text"))),
+      h("p", { class: "small muted voice-foot" }, t("voice_foot"))));
+}

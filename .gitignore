@@ -26,3 +26,7 @@ build/
 
 # Agent sessions write local paths (scratchpads, learner folders) into this file. Never tracked.
 .claude/launch.json
+
+# secrets never belong in git (keys live in learner/secrets.env)
+.env
+*.env

@@ -821,6 +821,14 @@ Every step is checked by the agent before it reports success. The person is neve
 - Generated audio is never tracked: it is derived content, and the licences of TTS output are not CC BY-SA. Open packs carry `tts` text, not audio files.
 - The edge engine refuses packs under `learner/`.
 
+**Phase 10: every spoken text made ahead of time (2026-11-22, `docs/VOICE.md`).** The browser voice was "just okay", so the app now plays clips made ahead of time for everything it speaks, by the first service in the learner's list that works, and falls back to the browser voice for anything without one. The services are Azure Speech, edge-tts, Google Cloud Text-to-Speech and OpenAI. All except edge-tts run on the learner's own account and key (`learner/secrets.env`). This widens the one exception to the local-only guardrail, under the same rules:
+  - only the Greek content text is sent, never learner data (answers, writing, recordings, captured documents);
+  - every service is off until the learner chooses it (the Voice screen or the `setup` skill), and edge-tts also needs `"edge_tts_ok": true`;
+  - edge-tts never makes the coach's own texts (packs under `learner/`); a keyed service may, as they are written without personal data (COACHING);
+  - clips stay in `learner/voice/` and are never tracked or shipped.
+
+  A listening test of eight voices on ten book sentences, ranked by the maintainer's ear, put Microsoft's Athina and Nestoras first, then Google Chirp 3 HD, then OpenAI gpt-4o-mini-tts; OpenAI tts-1-hd, Chatterbox Multilingual and F5-TTS-Greek were no better than Stefanos. Default for a new learner: Google with their own key.
+
 **Official listening audio.** The 2022, 2024 and 2026A A2-LTR listening recordings are published as MP3s. The coach can download them into `content/private/` (after asking) for mock exams.
 
 **Speaking.**

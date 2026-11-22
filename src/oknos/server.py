@@ -14,7 +14,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from oknos import (coachfiles, curriculum, db, exams, health, lookup, mock, packs, paths, plan, readiness,
-                         scheduler, session)
+                         scheduler, session, voice)
 from oknos.checking import CheckError, check
 from oknos.packs import OPEN_TASKS, FormItem, SpeakItem, VocabItem, WriteItem
 
@@ -93,6 +93,15 @@ class ChapterFlagIn(BaseModel):
     section: int
     reason: Literal["wrong", "confusing", "audio"] = "wrong"
     note: str | None = None
+
+
+class VoiceSampleIn(BaseModel):
+    provider: str
+    role: Literal["f", "m"] = "f"
+
+
+class VoiceOrderIn(BaseModel):
+    providers: list[str]
 
 
 class FlagIn(BaseModel):
@@ -761,6 +770,51 @@ def create_app() -> FastAPI:
             raise HTTPException(404, "no such picture")
         kind = {".webp": "image/webp", ".png": "image/png", ".svg": "image/svg+xml"}[target.suffix]
         return FileResponse(target, media_type=kind, headers={"Cache-Control": "max-age=86400"})
+
+    # ---------- speech made ahead of time (phase 10, src/oknos/voice.py) ----------
+
+    @app.api_route("/voice", methods=["GET", "HEAD"])
+    def voice_clip(r: str = "f", t: str = ""):
+        """The made clip for a text in a voice (f or m); 404 means: use the browser's voice."""
+        if r not in voice.ROLES or not t.strip():
+            raise HTTPException(404, "no clip")
+        target = voice.file_for(t, r)
+        if not target.is_file():
+            raise HTTPException(404, "no clip")
+        return FileResponse(target, media_type="audio/mpeg", headers={"Cache-Control": "max-age=86400"})
+
+    @app.get("/api/voice")
+    def voice_status(brief: bool = False):
+        if brief:  # what every screen needs at start: are there clips at all
+            return {"files": len(voice.read_index())}
+        return voice.status(app.state.catalog)
+
+    @app.api_route("/voice-sample/{name}", methods=["GET", "HEAD"])
+    def voice_sample_file(name: str):
+        base = (voice.voice_dir() / "samples").resolve()
+        target = (base / name).resolve()
+        if base not in target.parents or target.suffix != ".mp3" or not target.is_file():
+            raise HTTPException(404, "no sample")
+        return FileResponse(target, media_type="audio/mpeg")
+
+    @app.post("/api/voice/sample")
+    def voice_sample(body: VoiceSampleIn):
+        """Make the test sentences now with one provider (sends only those two sentences to it)."""
+        if body.provider not in voice.providers():
+            raise HTTPException(404, "unknown provider")
+        try:
+            path = voice.make_sample(body.provider, body.role)
+        except voice.Refused as e:
+            raise HTTPException(409, str(e))
+        return {"url": f"/voice-sample/{path.name}"}
+
+    @app.post("/api/voice/order")
+    def voice_order(body: VoiceOrderIn):
+        known = voice.providers()
+        chosen = [p for p in dict.fromkeys(body.providers) if p in known]
+        profile = read_profile()
+        write_profile({"voice": {**(profile.get("voice") or {}), "providers": chosen}})
+        return voice.status(app.state.catalog)
 
     @app.api_route("/audio-cache/{pack_id}/{item_id}", methods=["GET", "HEAD"])
     def cached_audio(pack_id: str, item_id: str):

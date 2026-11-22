@@ -508,6 +508,47 @@ def cmd_transcribe(args) -> int:
     return 0
 
 
+def cmd_voice(args) -> int:
+    """Speech made ahead of time (phase 10, docs/VOICE.md): status, build, sample."""
+    from oknos import packs, voice
+
+    if args.action == "status":
+        st = voice.status(packs.load_all())
+        print(f"Order: {' → '.join(st['order']) or '(none: the browser voice only)'}")
+        for p in st["providers"]:
+            where = f"#{p['position']}" if p["position"] else "  -"
+            quota = f", {p['used']:,} of {p['free']:,} free characters this month" if p["free"] else (f", {p['used']:,} characters this month" if p["used"] else "")
+            print(f"  {where} {p['name']:7} {'ready' if not p['problem'] else p['problem']}{quota}")
+        print(f"Clips: {st['files']:,} made ({', '.join(f'{k} {v:,}' for k, v in st['by_provider'].items()) or 'none'}); "
+              f"{st['missing']:,} of {st['texts']:,} texts still use the browser voice.")
+        return 0
+    if args.action == "sample":
+        if not args.provider:
+            print("Which provider? e.g. oknos voice sample google")
+            return 1
+        for role in voice.ROLES:
+            try:
+                path = voice.make_sample(args.provider, role)
+                print(f"{args.provider} {role}: {path}")
+            except voice.Refused as e:
+                print(f"{args.provider} {role}: {e}")
+                return 1
+        return 0
+    # build
+    started = time.monotonic()
+
+    def progress(n, total, who):
+        if n % 50 == 0 or n == total:
+            rate = n / max(time.monotonic() - started, 1e-6)
+            left = (total - n) / rate if rate else 0
+            print(f"  {n:,}/{total:,} ({who or 'nobody could make it'}), about {left / 60:.0f} min left", flush=True)
+
+    result = voice.build(packs.load_all(), limit=args.limit, wait=args.wait, redo=args.redo, progress=progress)
+    made = ", ".join(f"{k} {v:,}" for k, v in result["made"].items()) or "nothing"
+    print(f"Made: {made}. Not made (the browser voice stays): {result['failed']:,}. Texts in all: {result['total']:,}.")
+    return 0
+
+
 def cmd_reload(args) -> int:
     """Tell the running app to load new content and coach files (the coach runs this after writing)."""
     port = running_port()
@@ -650,6 +691,14 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--ids", default=None, help="only these submission ids, comma-separated (re-transcribes them)")
     p.add_argument("--download", action="store_true", help="allow downloading the model (ask the learner first)")
     p.set_defaults(func=cmd_transcribe)
+
+    p = sub.add_parser("voice", help="speech made ahead of time: status, build, sample (docs/VOICE.md)")
+    p.add_argument("action", choices=["status", "build", "sample"])
+    p.add_argument("provider", nargs="?", help="for sample: azure, edge, google or openai")
+    p.add_argument("--limit", type=int, default=None, help="build: make at most this many clips")
+    p.add_argument("--wait", action="store_true", help="build: wait for a busy provider instead of using the next one")
+    p.add_argument("--redo", default=None, help="build: remake the clips this provider made, with the others")
+    p.set_defaults(func=cmd_voice)
 
     p = sub.add_parser("reload", help="make the running app load new content and coach files")
     p.set_defaults(func=cmd_reload)

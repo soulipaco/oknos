@@ -24,7 +24,25 @@ Take 10 sentences from the book (a word, a short sentence, a question, a dialogu
 
 Check each model's licence and Greek support on its own page first, with the date. Publish a private page (an Artifact) with the clips shuffled and unnamed, so the maintainer can listen on the phone and rank them; name them after. Also note the time per sentence on this laptop's CPU.
 
-## Step 2 — the pipeline
+### Result of the first test (2026-11-22)
+
+By the maintainer's ear: Microsoft's neural voices (Athina, Nestoras) are clearly better than today's Windows voice; Chatterbox Multilingual is about the same as the Windows voice and F5-TTS-Greek is worse (mostly unintelligible here). So no local model tested so far beats the baseline. Still to test: Google Cloud (Chirp 3 HD, WaveNet el-GR), OpenAI (gpt-4o-mini-tts, tts-1-hd) and VoxCPM2 (Apache 2.0, Greek listed, about 5 GB).
+
+Licences, in short: edge-tts (the free Microsoft route) is unofficial and gives no right to publish the audio, so it is for the learner's own machine only; Azure's paid tier, Google Cloud and OpenAI give the customer the use of the output; an NC model never ships audio with the CC BY-SA content.
+
+## Step 2 — voice providers in order, with a fallback (decided and built 2026-11-22, `docs/VOICE.md`)
+
+The voice is made by the first provider in a list that works, and the list is the learner's choice:
+
+1. **Google Cloud Text-to-Speech** with the learner's own key (the free monthly quota covers the whole book; billing must be enabled on the Google Cloud project, the key restricted to the Text-to-Speech API). For the maintainer this is first, if its Greek is good.
+2. **Microsoft neural through edge-tts**, on the learner's own machine, when Google's quota is used up or there is no key. Never published.
+3. **OpenAI** with the learner's own key (pay as you go, a few dollars for everything), if they prefer it.
+4. A **local model**, if one ever beats the browser voice.
+5. The **browser voice** for anything still without a file.
+
+Keys live in `learner/secrets.env` (git never tracks `learner/`; `.env` files are ignored too) and never in the repo, a URL or a log. The app counts characters per provider and month, and moves to the next provider before a free quota runs out. Only content text is sent to a provider, never learner data (SPEC §9). For a new learner, the `setup` skill offers the choices in plain words ("use your Google key", "use your OpenAI key", "make it on this computer", "keep the browser voice"); there is no "log in with Google" button, because Google's speech service needs a Cloud project with its own key, not a normal Google sign-in.
+
+## Step 3 — the pipeline
 
 With the winner:
 
@@ -34,7 +52,7 @@ With the winner:
 - Where the files live: the learner's machine (`learner/audio/` or `.cache/oknos/voice/`) unless the licence allows shipping them; a model with a non-commercial licence never ships audio in the open repo. Say which, per model.
 - Local-first holds: a local model sends nothing anywhere. The edge engine stays opt-in and content-only (SPEC §9).
 
-## Step 3 — voices for the story and the films
+## Step 4 — voices for the story and the films
 
 - The open book's people (`docs/brand/CHARACTERS.md`) can have their own voices if the model clones from a reference: Zeynep, Katerina, Giorgos, and a narrator. Reference clips must be original or openly licensed, never a real person's voice without their written yes.
 - The films (`docs/brand/animations/`): each shot has a Greek caption; make one clip per shot (the narrator, or the character who speaks), set each shot's length to its clip, and add a "▶ Play with sound" button (browsers only play sound after a tap). Captions stay on screen. Optional: a quiet ambient bed (wind, cicadas) if it is original or CC0.

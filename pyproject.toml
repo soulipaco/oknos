@@ -8,6 +8,8 @@ requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.115",
     "uvicorn>=0.30",
+    # Microsoft's free neural voices, made into clips on the learner's own machine (docs/VOICE.md).
+    "edge-tts>=7",
 ]
 
 [project.scripts]
