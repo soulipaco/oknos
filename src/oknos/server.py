@@ -493,9 +493,20 @@ def create_app() -> FastAPI:
         conn = db.open_db()
         try:
             out = curriculum.summary(conn, app.state.catalog)
+            if out:
+                out["pictures"] = session.stage_pictures(conn, app.state.catalog, _lang(read_profile()))
         finally:
             conn.close()
         return out or {"curriculum": None}
+
+    @app.get("/api/practise")
+    def get_practise(stage: str | None = None):
+        """How many cards each practice choice has waiting (the Practise screen's tiles)."""
+        conn = db.open_db()
+        try:
+            return session.choice_counts(conn, app.state.catalog, _lang(read_profile()), stage)
+        finally:
+            conn.close()
 
     @app.get("/api/curriculum/stages/{stage_id}")
     def get_stage(stage_id: str):

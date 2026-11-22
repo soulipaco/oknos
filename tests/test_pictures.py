@@ -115,3 +115,20 @@ def test_a_scene_name_cannot_leave_the_pictures_folder():
     d = chapters.Dialogue.model_validate({"type": "dialogue", "picture": "scene.webp",
                                           "lines": [{"who": "A", "el": "Γεια.", "tr": "Selam.", "en": "Hi."}] * 2})
     assert d.picture == "scene.webp"
+
+
+def test_the_practise_screen_counts_what_is_waiting(learner, client):
+    counts = client.get("/api/practise").json()
+    assert {"words", "verbs", "reading", "listening", "writing", "speaking", "review"} <= set(counts)
+    assert counts["words"]["total"] > 0 and counts["words"]["new"] >= 0
+    assert set(counts["review"]) == {"due", "mistakes"}
+
+
+def test_the_book_and_the_word_list_carry_pictures(learner, client):
+    words = client.get("/api/words").json()["words"]
+    assert any(w["picture"] for w in words) and all("picture" in w for w in words)
+    cur = client.get("/api/curriculum").json()
+    if cur.get("curriculum"):
+        assert isinstance(cur["pictures"], dict)
+        for pics in cur["pictures"].values():
+            assert len(pics) <= 4 and all(p["picture"].startswith("/pictures/") for p in pics)

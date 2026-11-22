@@ -912,6 +912,75 @@ def status_of(state: scheduler.State | None) -> str:
     return "learning"
 
 
+def choice_counts(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage: str | None = None) -> dict:
+    """For the Practise screen: per choice, how many cards are due, how many are new, and the mistakes.
+
+    The same classes as `chosen`, from the stages reached (and one stage, when given)."""
+    from oknos import curriculum
+
+    allowed, _ = gate(conn, catalog)
+    prog = curriculum.progress(conn, catalog)
+    stage_ids = [s.id for s in prog.curriculum.stages] if prog else []
+    stage_idx = stage_ids.index(stage) if stage in stage_ids else None
+    states = scheduler.all_states(conn)
+    last = _last_attempts(conn)
+    today = db.today().isoformat()
+    reserved = reserved_for_mocks(conn)
+    out = {c: {"due": 0, "new": 0, "total": 0} for c in ("words", "verbs", "reading", "listening", "writing", "speaking")}
+    mistakes = due_all = 0
+    for k, _, item in servable(catalog, ui_lang):
+        if not allowed(k, item) or k in reserved:
+            continue
+        if stage_idx is not None and (not prog or prog.assigned.get(k) != stage_idx):
+            continue
+        if isinstance(item, VocabItem):
+            kind = "words"
+        elif isinstance(item, FormItem):
+            kind = "verbs"
+        elif isinstance(item, SELECTION_TASKS) and item.skill in ("reading", "listening"):
+            kind = item.skill
+        elif isinstance(item, WriteItem):
+            kind = "writing"
+        elif isinstance(item, SpeakItem):
+            kind = "speaking"
+        else:
+            kind = None
+        st = states.get(k)
+        due = st is not None and st.due_at <= today
+        wrong = st is not None and last.get(k, ("", 1))[1] == 0
+        due_all += due
+        mistakes += wrong
+        if kind:
+            c = out[kind]
+            c["total"] += 1
+            c["due"] += due
+            c["new"] += st is None
+    out["review"] = {"due": due_all, "mistakes": mistakes}
+    return out
+
+
+def stage_pictures(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, per_stage: int = 4) -> dict[str, list[dict]]:
+    """For the Book: a few of each stage's words that have a picture."""
+    from oknos import curriculum
+
+    prog = curriculum.progress(conn, catalog)
+    if not prog:
+        return {}
+    stages = prog.curriculum.stages
+    out: dict[str, list[dict]] = {}
+    for k, idx in prog.assigned.items():
+        entry = catalog.items.get(k)
+        if idx is None or entry is None or not isinstance(entry[1], VocabItem):
+            continue
+        pics = out.setdefault(stages[idx].id, [])
+        if len(pics) >= per_stage:
+            continue
+        url = picture_url(entry[1])
+        if url and all(x["picture"] != url for x in pics):
+            pics.append({"el": entry[1].el, "meaning": meaning(entry[1], ui_lang), "picture": url})
+    return out
+
+
 def word_list(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str) -> dict:
     """Every word, with its stage, whether it is open yet, and how well it is known."""
     from oknos import curriculum
@@ -929,7 +998,7 @@ def word_list(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str) -> dict:
                      "pos": i.pos, "level": i.level,
                      "stage": stages[idx].id if idx is not None else None, "stage_order": idx,
                      "open": allowed(k, i), "extra": bool(prog and k in prog.pooled),
-                     "status": status_of(states.get(k)),
+                     "status": status_of(states.get(k)), "picture": picture_url(i),
                      "topics": [t for t in i.topics if not t.startswith(("unit:", "stage:"))]})
     rows.sort(key=lambda r: (r["stage_order"] if r["stage_order"] is not None else 999, r["extra"], r["el"]))
     return {"words": rows, "stages": [{"id": s.id, "title": s.title.model_dump()} for s in stages]}

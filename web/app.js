@@ -534,6 +534,10 @@ const ICONS = {  // one line style: a 24 grid, 2 px, round ends
   book: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/>',
   voice: '<path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/>',
   up: '<path d="M6 15l6-6 6 6"/>',
+  pen: '<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>',
+  mic: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/>',
+  headphones: '<path d="M3 14v-2a9 9 0 0 1 18 0v2"/><path d="M21 15a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2z"/><path d="M3 15a2 2 0 0 0 2 2h1v-5H5a2 2 0 0 0-2 2z"/>',
+  search: '<circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>',
   down: '<path d="M6 9l6 6 6-6"/>',
   lock: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
   target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>',
@@ -1697,41 +1701,94 @@ function lessonTile(cur, words) {
     h("div", { class: "tile-actions" }, actions));
 }
 
+const LEVEL_NAMES = { A1: "lvl_a1", A2: "lvl_a2", B1: "lvl_b1" };
+
+function picStrip(pics, n = 3, size = 44) {
+  // A few of a lesson's words, as small pictures (phase 9)
+  if (!pics?.length) return null;
+  return h("div", { class: "pic-strip" }, pics.slice(0, n).map(p =>
+    h("img", { src: p.picture, alt: p.meaning || p.el, title: p.el, width: String(size), height: String(size), loading: "lazy" })));
+}
+
+function lessonStatus(st) {
+  const ch = st.chapter;
+  if (st.state === "done") return [t("bk_done", { pct: Math.round((st.share || 0) * 100) }), "done"];
+  if (st.state === "current") return [ch && !ch.read ? t("bk_now_read", { minutes: ch.minutes }) : t("bk_now_practise"), "now"];
+  if (ch?.read) return [t("bk_read_ahead_done"), "later"];
+  if (ch) return [t("bk_later_read", { minutes: ch.minutes }), "later"];
+  return [t("bk_later"), "later"];
+}
+
 async function renderBook() {
-  // The book's table of contents: every lesson, its chapter (readable at any time, also ahead),
-  // and how far its practice has got.
+  // The book: where you are (one big card), then every lesson by level, each with its ring and a few of its pictures.
   closePopover();
   let cur;
   try { cur = await api("/api/curriculum"); } catch { return showError(); }
   if (!cur.curriculum) return go("home", null, { replace: true });
-  const rows = cur.stages.map((st, i) => {
-    // The ring and the rope already say where a lesson stands; one quiet line adds the number.
-    const shown = st.core && st.state !== "locked";
-    const marks = shown || st.passed_check ? h("span", { class: "muted small book-meta" },
-      shown ? `${Math.round(st.share * 100)}%` : null,
-      shown && st.passed_check ? " · " : null,
-      st.passed_check ? `✓ ${t("map_checked")}` : null) : null;
-    const read = st.chapter
-      ? navLink("lesson", st.chapter.read ? `✓ ${t("ch_reread_short")}` : [icon("book"), t("ch_read_short", { minutes: st.chapter.minutes })],
-          st.id, `book-read ${st.chapter.read ? "done" : ""}`)
-      : h("span", { class: "book-read none small muted" }, t("ch_not_yet"));
-    return h("li", { class: `book-row ${st.state}` },
-      h("span", { class: "book-num", "aria-hidden": "true" },
-        ropeRing(st.state === "done" ? 1 : st.state === "locked" || !st.core ? 0 : st.share, st.state === "done" ? "✓" : ringLabel(stageName(st), i + 1), 34)),
-      h("div", { class: "book-text" },
-        navLink("stage", stageName(st), st.id, "book-title"),
-        st.chapter ? h("span", { class: "book-chapter" }, tr(st.chapter.title)) : null,
-        st.theme ? h("span", { class: "muted small" }, tr(st.theme)) : null,
-        st.state !== "locked" && st.core ? progressBar(st.learned, st.core, "thin") : null,
-        marks),
-      read);
+  const pics = cur.pictures || {};
+  const idx = Math.max(0, cur.stages.findIndex(s => s.id === cur.current?.id));
+  const cst = cur.stages[idx];
+
+  const actions = [];
+  if (cst.chapter) {
+    actions.push(h("button", { class: cst.chapter.read ? "secondary" : "primary", type: "button", onclick: () => go("lesson", cst.id) },
+      icon("book"), cst.chapter.read ? t("ch_reread_short") : t("ch_read_min", { minutes: cst.chapter.minutes })));
+  }
+  if (cst.state !== "locked" && (!cst.chapter || cst.chapter.read)) {
+    actions.push(h("button", { class: "primary", type: "button", onclick: () => startSession("choose", [], { what: "all", stage: cst.id, minutes: 10 }) }, t("stage_practise")));
+  }
+  actions.push(navLink("stage", t("bk_see_lesson"), cst.id, "secondary-link"));
+  const heroPics = pics[cst.id] || [];
+  const hero = h("section", { class: "bk-hero", "aria-label": t("bk_here") },
+    h("div", { class: "bk-hero-main" },
+      h("p", { class: "eyebrow accent" }, t("bk_here")),
+      h("div", { class: "bk-hero-head" },
+        ropeRing(cst.core ? cst.learned / cst.core : 0, ringLabel(stageName(cst), idx + 1), 72),
+        h("div", { class: "bk-hero-names" },
+          h("h2", {}, cst.chapter ? tr(cst.chapter.title) : stageName(cst)),
+          h("p", { class: "muted" }, [stageName(cst), cst.core ? t("bk_words_forms", { n: cst.core }) : null].filter(Boolean).join(" · ")))),
+      cst.can_do?.length ? h("p", { class: "bk-can" }, t("bk_can", { what: cst.can_do.slice(0, 2).map(tr).join("; ") }))
+        : cst.theme ? h("p", {}, tr(cst.theme)) : null,
+      cst.core ? h("div", { class: "bk-rope" }, ropeBar(cst.learned, cst.core),
+        h("span", { class: "small muted" }, t("stage_secure", { n: cst.learned, total: cst.core }))) : null,
+      h("div", { class: "tile-actions" }, actions)),
+    heroPics.length ? h("div", { class: "bk-hero-words" }, h("p", { class: "eyebrow" }, t("home_in_lesson")), wordStrip(heroPics)) : null);
+
+  const groups = [];
+  cur.stages.forEach((st, i) => {
+    let g = groups.find(x => x.level === st.level);
+    if (!g) groups.push(g = { level: st.level, items: [] });
+    g.items.push([st, i]);
   });
-  const withChapter = cur.stages.filter(st => st.chapter).length;
+  const sections = groups.map(g => {
+    const done = g.items.filter(([s]) => s.state === "done").length;
+    const tiles = g.items.map(([st, i]) => {
+      const [line, kind] = lessonStatus(st);
+      const frac = st.state === "done" ? 1 : st.core && st.state !== "locked" ? st.share : 0;
+      return h("article", { class: `bk-tile ${st.state}${st.id === cst.id ? " here" : ""}` },
+        h("div", { class: "bk-tile-head" },
+          ropeRing(frac, st.state === "done" ? "✓" : ringLabel(stageName(st), i + 1), 48),
+          h("div", { class: "bk-tile-names" }, navLink("stage", stageName(st), st.id, "bk-title"),
+            st.chapter ? h("span", { class: "bk-chapter" }, tr(st.chapter.title)) : st.theme ? h("span", { class: "bk-chapter" }, tr(st.theme)) : null)),
+        picStrip(pics[st.id]),
+        h("div", { class: "bk-tile-foot" }, h("span", { class: `bk-state ${kind}` }, line),
+          st.chapter ? navLink("lesson", [icon("book"), st.chapter.read ? t("ch_reread_short") : t("bk_read")], st.id, "bk-read") : null));
+    });
+    const head = h("div", { class: "bk-group-head" },
+      h("h2", {}, `${g.level} · ${t(LEVEL_NAMES[g.level] || "lvl_other")}`),
+      h("span", { class: "small muted" }, t("bk_group_done", { n: done, total: g.items.length })));
+    const here = g.items.some(([s]) => s.id === cst.id);
+    if (here || g.items.length <= 3) return h("section", { class: "bk-group" }, head, h("div", { class: "bk-grid" }, tiles));
+    return h("details", { class: "bk-group" }, h("summary", {}, head), h("div", { class: "bk-grid" }, tiles));
+  });
+
   app.replaceChildren(...appBar("book"),
-    h("section", { class: "summary book" }, h("h1", {}, tr(cur.title)),
-      h("p", { class: "muted" }, t("book_line", { n: withChapter, total: cur.stages.length })),
-      h("p", { class: "muted small" }, t("map_line", { pct: Math.round(cur.mastery * 100) })),
-      h("ol", { class: "book-list" }, rows)));
+    h("section", { class: "bk-head" },
+      h("div", { class: "bk-head-text" }, h("p", { class: "eyebrow" }, t("bk_eyebrow")), h("h1", {}, tr(cur.title)),
+        h("p", { class: "muted" }, t("book_line", { n: cur.stages.filter(s => s.chapter).length, total: cur.stages.length }))),
+      h("div", { class: "bk-total" }, h("span", {}, h("strong", {}, `${cur.stages_done} / ${cur.stages_total}`), " ",
+        h("span", { class: "muted" }, t("bk_lessons_done"))), ropeBar(cur.stages_done, cur.stages_total))),
+    hero, ...sections);
 }
 
 function statusChip(status) {
@@ -1779,74 +1836,158 @@ async function renderStage(id) {
       st.extra_words ? h("p", { class: "muted small" }, t("stage_extra", { n: st.extra_words })) : null));
 }
 
-const PRACTISE_CHOICES = ["all", "words", "verbs", "reading", "listening", "writing", "speaking", "review"];
+const PR_KINDS = [  // the tiles: the choice, its icon and its tint; words show one of the lesson's pictures
+  ["words", "book", "accent"], ["verbs", "pen", "accent"], ["reading", "book", "accent"],
+  ["listening", "headphones", "accent"], ["writing", "pen", "bad"], ["speaking", "mic", "good"],
+];
+const PR_SECONDS = { words: 20, verbs: 30, reading: 90, listening: 90, writing: 360, speaking: 120, all: 30, review: 25 };
 
 async function renderPractise() {
+  // Choose one thing to practise: tiles that say how much is waiting, and a summary of the session you are about to start.
   closePopover();
-  let cur;
-  try { cur = await api("/api/curriculum"); } catch { cur = { curriculum: null }; }
+  let cur, counts;
+  try {
+    [cur, counts] = await Promise.all([api("/api/curriculum").catch(() => ({ curriculum: null })), api("/api/practise")]);
+  } catch { return showError(); }
   const pick = { what: "words", stage: "", minutes: 10 };
-  const chips = (values, key, label) => h("div", { class: "choice-row", role: "group", "aria-label": label },
-    values.map(([v, text]) => h("button", { type: "button", class: "choice", "aria-pressed": String(pick[key] === v), onclick: (e) => {
-      pick[key] = v;
-      e.target.parentElement.querySelectorAll(".choice").forEach(b => b.setAttribute("aria-pressed", String(b === e.target)));
-    } }, text)));
   const reached = (cur.stages || []).filter(st => st.state !== "locked");
-  const stageSelect = h("select", { class: "stage-select", "aria-label": t("pr_stage"), onchange: (e) => { pick.stage = e.target.value; } },
-    h("option", { value: "" }, t("pr_all_reached")), reached.map(st => h("option", { value: st.id }, stageName(st))));
-  const go = h("button", { class: "start", type: "button", onclick: () => startSession("choose", [], { what: pick.what, stage: pick.stage || null, minutes: pick.minutes }) }, t("pr_start"));
+  const pics = cur.pictures || {};
+  const wordPic = (pics[cur.current?.id] || Object.values(pics).flat())[0];
+  const tiles = h("section", { class: "pr-tiles", "aria-label": t("pr_what") });
+  const aside = h("aside", { class: "pr-aside", "aria-label": t("pr_session") });
+
+  const line = (what) => {
+    if (what === "all") return t("pr_all_line");
+    if (what === "review") return t("pr_review_line", { due: counts.review.due, mistakes: counts.review.mistakes });
+    const c = counts[what];
+    if (!c || !c.total) return t("pr_none_yet");
+    return c.new ? t("pr_count", { due: c.due, new: c.new }) : t("pr_count_due", { due: c.due });
+  };
+  const empty = (what) => what !== "all" && what !== "review" && !counts[what]?.total;
+
+  function tile(what, iconName, tint, wide = false) {
+    const visual = what === "words" && wordPic
+      ? h("img", { src: wordPic.picture, alt: "", width: "72", height: "72", class: "pr-pic" })
+      : h("span", { class: `pr-icon ${tint}` }, icon(iconName));
+    return h("button", { type: "button", class: `pr-tile${wide ? " wide" : ""}`, "aria-pressed": String(pick.what === what), disabled: empty(what),
+      onclick: () => { pick.what = what; paint(); } },
+      visual, h("span", { class: "pr-tile-text" }, h("strong", {}, t(`pr_${what}`)), h("span", { class: "small muted" }, line(what))));
+  }
+
+  function paint() {
+    tiles.replaceChildren(
+      ...PR_KINDS.map(([w, ic, tint]) => tile(w, ic, tint)),
+      tile("all", "target", "accent", true),
+      tile("review", "flag", "bad", true));
+    const c = pick.what === "review" ? { due: counts.review.due, new: 0 } : pick.what === "all" ? null : counts[pick.what];
+    const n = Math.max(1, Math.round((pick.minutes * 60) / (PR_SECONDS[pick.what] || 30)));
+    const chip = (value, label) => h("button", { type: "button", class: "choice", "aria-pressed": String(pick.stage === value),
+      onclick: async () => { pick.stage = value; await refresh(); } }, label);
+    const recent = reached.slice(-2).reverse();
+    const others = reached.filter(st => !recent.includes(st));
+    aside.replaceChildren(
+      h("h2", {}, `${t(`pr_${pick.what}`)} · ${t("minutes_n", { n: pick.minutes })}`),
+      cur.curriculum ? h("div", { class: "pr-field" }, h("p", { class: "eyebrow" }, t("pr_from")),
+        h("div", { class: "choice-row" }, chip("", t("pr_so_far")), recent.map(st => chip(st.id, stageName(st)))),
+        others.length ? h("select", { class: "stage-select", "aria-label": t("pr_other_stage"), onchange: async (e) => { pick.stage = e.target.value; await refresh(); } },
+          h("option", { value: "" }, t("pr_other_stage")), others.map(st => h("option", { value: st.id, selected: pick.stage === st.id }, stageName(st)))) : null) : null,
+      h("div", { class: "pr-field" }, h("p", { class: "eyebrow" }, t("pr_length")),
+        h("div", { class: "segmented", role: "group", "aria-label": t("pr_length") }, [5, 10, 20].map(m =>
+          h("button", { type: "button", "aria-pressed": String(pick.minutes === m), onclick: () => { pick.minutes = m; paint(); } }, t("minutes_n", { n: m }))))),
+      h("div", { class: "pr-estimate" },
+        h("p", {}, t("pr_about", { n })),
+        c ? h("ul", { class: "small muted" },
+          c.due ? h("li", {}, t("pr_due_first", { n: Math.min(c.due, n) })) : null,
+          c.new && c.due < n ? h("li", {}, t("pr_new_then")) : null) : h("p", { class: "small muted" }, t("pr_line"))),
+      h("button", { class: "start", type: "button", onclick: () => startSession("choose", [], { what: pick.what, stage: pick.stage || null, minutes: pick.minutes }) }, t("pr_start")));
+  }
+
+  async function refresh() {
+    try { counts = await api(`/api/practise${pick.stage ? `?stage=${encodeURIComponent(pick.stage)}` : ""}`); } catch { /* keep the old counts */ }
+    if (empty(pick.what)) pick.what = "all";
+    paint();
+  }
+
+  paint();
   app.replaceChildren(...appBar("practise"),
-    h("section", { class: "summary" }, h("h1", {}, t("pr_title")),
-      h("h2", {}, t("pr_what")), chips(PRACTISE_CHOICES.map(v => [v, t(`pr_${v}`)]), "what", t("pr_what")),
-      cur.curriculum ? [h("h2", {}, t("pr_stage")), stageSelect] : null,
-      h("h2", {}, t("pr_length")), chips([5, 10, 20].map(m => [m, t("minutes_n", { n: m })]), "minutes", t("pr_length")),
-      h("p", { class: "muted small" }, t("pr_line")),
-      go));
+    h("section", { class: "pr-head" }, h("p", { class: "eyebrow" }, t("pr_eyebrow")), h("h1", {}, t("pr_title")), h("p", { class: "muted" }, t("pr_sub"))),
+    h("div", { class: "pr-layout" }, tiles, aside));
 }
 
 async function renderWords() {
+  // Every word as a card with its picture; search, filters, and practise the ones you pick.
   closePopover();
   let data;
   try { data = await api("/api/words"); } catch { return showError(); }
-  const f = { q: "", status: "all", stage: "", upcoming: false, shown: 150 };
+  const f = { q: "", status: "all", pics: false, stage: "", upcoming: false, shown: 60 };
   const selected = new Set();
-  const list = h("ul", { class: "word-list" });
-  const count = h("p", { class: "muted small" });
-  const practise = h("button", { class: "primary", type: "button", disabled: true, onclick: () => startSession("practice", [...selected]) }, t("w_practise", { n: 0 }));
-  const more = h("button", { class: "link-button", type: "button", onclick: () => { f.shown += 300; paint(); } }, t("w_more"));
-  const norm = (x) => x.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+  const grid = h("section", { class: "wd-grid", "aria-label": t("nav_words") });
+  const count = h("p", { class: "small muted" });
+  const more = h("button", { class: "link-button", type: "button", onclick: () => { f.shown += 120; paint(); } }, t("w_more"));
+  const barText = h("span", {});
+  const bar = h("div", { class: "wd-bar", hidden: true }, barText,
+    h("button", { class: "primary", type: "button", onclick: () => startSession("practice", [...selected]) }, t("pr_start")));
+  const fold = (x) => x.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+  const open = data.words.filter(w => w.open);
+  const learned = open.filter(w => w.status === "secure" || w.status === "known").length;
+  const learning = open.filter(w => w.status === "learning").length;
+  const withPic = data.words.filter(w => w.picture).length;
+
+  function updateBar() {
+    bar.hidden = selected.size === 0;
+    barText.textContent = t("wd_bar", { n: selected.size });
+  }
+
+  function card(w) {
+    const box = h("input", { type: "checkbox", class: "wd-check", "aria-label": t("wd_select", { word: w.el }), disabled: !w.open,
+      onchange: (e) => { if (e.target.checked) selected.add(w.key); else selected.delete(w.key); updateBar(); } });
+    box.checked = selected.has(w.key);
+    const visual = w.picture
+      ? h("img", { src: w.picture, alt: w.meaning || "", width: "200", height: "200", loading: "lazy" })
+      : h("span", { class: "wd-plain", lang: "el" }, w.el.replace(/^(ο|η|το|οι|τα|ο\/η) /, ""));
+    const state = w.open ? t(STATUS_KEYS[w.status] || w.status) : t("w_locked");
+    return h("article", { class: `wd-card st-${w.open ? w.status : "locked"}` },
+      h("div", { class: "wd-visual" }, visual, box),
+      h("div", { class: "wd-body" },
+        h("div", { class: "wd-row" }, h("strong", { lang: "el" }, w.el), speakButton(w.say || w.el, true)),
+        h("span", { class: "small muted wd-meaning" }, meaningText(w.meaning, w.meaning_lang)),
+        h("span", { class: "wd-state" }, w.open ? null : icon("lock"), state)));
+  }
+
   function paint() {
-    const q = norm(f.q.trim());
+    const q = fold(f.q.trim());
     const rows = data.words.filter(w => (f.upcoming || w.open)
       && (f.status === "all" || w.status === f.status || (f.status === "secure" && w.status === "known"))
+      && (!f.pics || w.picture)
       && (!f.stage || w.stage === f.stage)
-      && (!q || norm(w.el).includes(q) || norm(w.meaning).includes(q)));
+      && (!q || fold(w.el).includes(q) || fold(w.meaning || "").includes(q)));
     count.textContent = t("w_count", { n: rows.length, total: data.words.length });
-    list.replaceChildren(...rows.slice(0, f.shown).map(w => {
-      const box = h("input", { type: "checkbox", "aria-label": w.el, disabled: !w.open, onchange: (e) => {
-        if (e.target.checked) selected.add(w.key); else selected.delete(w.key);
-        practise.disabled = selected.size === 0;
-        practise.textContent = t("w_practise", { n: selected.size });
-      } });
-      box.checked = selected.has(w.key);
-      return h("li", { class: `word-row${w.open ? "" : " locked"}` }, box, speakButton(w.say || w.el, true),
-        h("span", { class: "el", lang: "el" }, w.el), h("span", { class: "muted" }, meaningText(w.meaning, w.meaning_lang)),
-        w.open ? statusChip(w.status) : h("span", { class: "chip st-locked" }, t("w_locked")));
-    }));
+    grid.replaceChildren(...rows.slice(0, f.shown).map(card));
     more.hidden = rows.length <= f.shown;
   }
-  const search = h("input", { class: "search", type: "search", placeholder: t("w_search"), "aria-label": t("w_search"),
-    oninput: (e) => { f.q = e.target.value; f.shown = 150; paint(); } });
-  const statusRow = h("div", { class: "choice-row" }, ["all", "new", "learning", "secure"].map(v =>
-    h("button", { type: "button", class: "choice", "aria-pressed": String(f.status === v), onclick: (e) => {
-      f.status = v; e.target.parentElement.querySelectorAll(".choice").forEach(b => b.setAttribute("aria-pressed", String(b === e.target))); paint();
-    } }, v === "all" ? t("w_all") : t(STATUS_KEYS[v]))));
+
+  const chip = (label, on, onclick) => h("button", { type: "button", class: "choice", "aria-pressed": String(on), onclick }, label);
+  const filters = h("div", { class: "choice-row" });
+  function paintFilters() {
+    filters.replaceChildren(
+      ...["all", "new", "learning", "secure"].map(v => chip(v === "all" ? t("w_all") : t(STATUS_KEYS[v]), f.status === v, () => { f.status = v; f.shown = 60; paintFilters(); paint(); })),
+      chip(t("wd_pics"), f.pics, () => { f.pics = !f.pics; f.shown = 60; paintFilters(); paint(); }));
+  }
+  paintFilters();
+  const search = h("label", { class: "wd-search" }, icon("search"),
+    h("input", { type: "search", placeholder: t("w_search"), "aria-label": t("w_search"), oninput: (e) => { f.q = e.target.value; f.shown = 60; paint(); } }));
   const stageSel = data.stages.length ? h("select", { class: "stage-select", "aria-label": t("pr_stage"), onchange: (e) => { f.stage = e.target.value; paint(); } },
     h("option", { value: "" }, t("w_every_stage")), data.stages.map(st => h("option", { value: st.id }, tr(st.title)))) : null;
   const upcoming = h("label", { class: "small muted convert" }, h("input", { type: "checkbox", onchange: (e) => { f.upcoming = e.target.checked; paint(); } }), t("w_upcoming"));
+  const counter = (n, label, frac) => h("div", { class: "wd-counter" }, ropeRing(frac, "", 40), h("span", {}, h("strong", {}, n.toLocaleString(state.lang === "tr" ? "tr-TR" : "en-GB")), h("br"), h("span", { class: "small muted" }, label)));
+  const total = Math.max(1, open.length);
   app.replaceChildren(...appBar("words"),
-    h("section", { class: "summary" }, h("h1", {}, t("nav_words")), search, statusRow, stageSel, upcoming, count,
-      h("div", { class: "actions sticky-actions" }, practise), list, more));
+    h("section", { class: "wd-head" },
+      h("div", {}, h("p", { class: "eyebrow" }, t("nav_words")), h("h1", {}, t("wd_title", { n: data.words.length.toLocaleString(state.lang === "tr" ? "tr-TR" : "en-GB"), p: withPic }))),
+      h("div", { class: "wd-counters" }, counter(learned, t("wd_learned"), learned / total), counter(learning, t("wd_learning"), learning / total),
+        counter(open.length - learned - learning, t("wd_unseen"), 0))),
+    h("section", { class: "wd-filters", "aria-label": t("wd_find") }, search, filters, stageSel, upcoming),
+    count, grid, more, bar);
   paint();
 }
 
@@ -2236,7 +2377,7 @@ function planSection(data) {
 }
 
 function mocksSection(data) {
-  const blocks = [h("h2", {}, t("mocks_title"))];
+  const blocks = [h("h2", { id: "mocks" }, t("mocks_title"))];
   const defs = data.mocks.defined;
   const runs = data.mocks.runs;
   if (!defs.length) blocks.push(h("p", { class: "muted" }, t("mocks_none")));
@@ -2296,20 +2437,41 @@ async function renderExam() {
           h("ul", { class: "small" }, e.coverage.beyond_a2.map(b => h("li", { class: b.tried ? "" : "muted" },
             `${tr(b.title)}: `, b.tried ? t("beyond_tried", { n: b.tried, of: b.available }) : b.available ? t("beyond_unseen", { n: b.available }) : t("beyond_nothing")))))
       : null;
-    return h("section", { class: "panel exam-card" },
-      h("h2", {}, e.short, h("span", { class: "muted small" }, ` · ${tr(e.title)}`)),
-      h("p", { class: `verdict-line ${r.verdict.state}` }, verdictText(r.verdict, e.short)),
-      h("p", { class: "muted small" }, tr(e.pass_rule.text)),
-      ...rows,
-      beyond,
-      h("details", { class: "coverage" }, h("summary", { class: "small" }, t("technique_title")), e.units.map(techniqueBlock)),
+    const rings = r.units.map(u => {
+      const frac = u.state === "no_evidence" ? 0 : Math.max(0, Math.min(1, u.estimate / u.points));
+      return h("div", { class: `ex-ring ${u.state}` },
+        ropeRing(frac, u.state === "no_evidence" ? "?" : String(Math.round(frac * 100)), 64),
+        h("strong", {}, unitName(u.unit)),
+        h("span", { class: "small ex-ring-state" }, t(`state_${u.state}`)));
+    });
+    return h("section", { class: "ex-card", "data-exam": e.id },
+      h("div", { class: "ex-verdict" },
+        h("div", { class: "ex-verdict-head" }, h("h2", {}, verdictText(r.verdict, e.short)),
+          h("span", { class: "small muted" }, tr(e.pass_rule.text))),
+        h("div", { class: "ex-rings" }, rings),
+        h("div", { class: "tile-actions" },
+          h("button", { class: "primary", type: "button", onclick: () => startSession("choose", [], { what: "tasks", minutes: 15 }) }, t("ex_practise")),
+          h("a", { class: "secondary-link", href: "#mocks" }, t("ex_mock")))),
+      h("details", { class: "ex-details" }, h("summary", {}, t("ex_details")), ...rows, beyond,
+        h("details", { class: "coverage" }, h("summary", { class: "small" }, t("technique_title")), e.units.map(techniqueBlock))),
       e.sessions_note ? h("p", { class: "muted small" }, tr(e.sessions_note)) : null,
       h("p", { class: "muted small" }, t("checked_on", { date: fmtDate(e.checked_at) })));
   });
+  const ids = data.exams.map(e => e.id);
+  homeExam = homeExam && ids.includes(homeExam) ? homeExam : chosenExam(ids);
+  examCards.forEach(c => { c.hidden = c.dataset.exam !== homeExam; });
+  const exSwitch = ids.length > 1 ? h("div", { class: "lang-switch exam-switch", role: "group", "aria-label": t("exam") },
+    ...data.exams.map(e => h("button", { type: "button", "aria-pressed": String(e.id === homeExam), onclick: (ev) => {
+      homeExam = e.id;
+      try { localStorage.setItem("gc-exam", e.id); } catch { /* fine */ }
+      examCards.forEach(c => { c.hidden = c.dataset.exam !== homeExam; });
+      ev.currentTarget.parentElement.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b === ev.currentTarget)));
+    } }, e.short))) : null;
   app.replaceChildren(...appBar("exam"),
-    h("section", { class: "summary" }, h("h1", {}, t("exam_title")), h("p", { class: "muted" }, t("exam_honest"))),
-    progress,
-    ...examCards, planSection(data), mocksSection(data),
+    h("section", { class: "ex-head" },
+      h("div", {}, h("p", { class: "eyebrow" }, t("nav_exam")), h("h1", {}, t("exam_title")), h("p", { class: "muted" }, t("exam_honest"))),
+      exSwitch),
+    ...examCards, progress, planSection(data), mocksSection(data),
     h("p", { class: "muted small" }, t("exam_legal")));
 }
 
