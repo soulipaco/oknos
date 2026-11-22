@@ -20,6 +20,8 @@ Pictures help the words stick: a word card shows its picture, and "pick the pict
 - **No text, letters, numbers or logos** anywhere in the picture: no shop signs with words, no "TAXI" on the roof, no labels on packets. Image models garble Greek letters, and the app shows the word itself.
 - No real people, no faces of anyone identifiable, no brand, no copyrighted character or style of a named artist.
 - No hands holding things unless the word needs it; no people at all for objects.
+- No cartoon faces on objects, food or weather (a smiling sun, cloud, moon or fish): eyes and a mouth belong to people and animals only.
+- Nothing beside the subject that could be its own answer (a star next to the moon, olives on a leaf): the picture must not also mean another word.
 
 ## People (verbs and jobs, from 2026-11-22)
 
