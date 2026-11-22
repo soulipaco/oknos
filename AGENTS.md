@@ -155,7 +155,7 @@ Optional, deferred by the maintainer (2026-11-19):
 Phase 7 (the repo on GitHub, private, with CI) is built: see **Git and GitHub** below.
 
 On the roadmap (2026-11-20, `docs/prompts/`):
-- phase 8 (optional) is researched: `docs/HOSTING.md`. On 2026-11-22 the maintainer chose Tailscale Serve to the laptop (no app change; the setup is the maintainer's, §6 there). A Google Cloud e2-micro is the next step only if the laptop being off becomes the problem.
+- phase 8 (optional) is researched: `docs/HOSTING.md`. On 2026-11-22 the maintainer chose Tailscale Serve to the laptop (no app change; the setup is the maintainer's, §6 there), and it is set up on the maintainer's laptop the same day: tailnet only, no Funnel. Serve points at one port; if the app starts on another port, re-point it (`tailscale serve status`, then `tailscale serve --bg <port>`). A Google Cloud e2-micro is the next step only if the laptop being off becomes the problem.
 - phase 10 (`docs/prompts/10-voice.md`, added 2026-11-22): a better Greek voice. The browser voice is "just okay"; the plan is a blind listening test (Microsoft neural, Chatterbox Multilingual, a Greek community model), then audio made ahead of time from files, character voices, and narration for the films.
 
 ## Git and GitHub
