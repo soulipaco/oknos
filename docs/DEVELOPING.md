@@ -38,7 +38,7 @@ CI runs the guard, the tests and `validate content/open` on Ubuntu and Windows f
 - `exams/`: the exam blueprints, facts about the two public exams with links to the official sources.
 - `web/`: plain HTML/CSS/JS with no build step, plus `i18n/` for the English and Turkish UI strings.
 - `content/open/`: the tracked content packs, including the open course's book (`open-book/`). `content/private/` (gitignored) holds imported material.
-- `scripts/`: the verb-pack builder, the listening-audio generator, the simulation and the brand files.
+- `scripts/`: the verb-pack builder, the listening-audio generator, the shipped voice clips (`ship_voice.py`, `docs/VOICE.md`), the films' voice, the simulation and the brand files.
 - `docs/brand/`: the name, the logo, the icon and the donkey; `docs/img/`: the README's pictures.
 
 ## Documents

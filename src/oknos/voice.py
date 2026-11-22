@@ -13,8 +13,11 @@ Providers (each makes mp3 bytes from a text and a role, female or male):
   openai  OpenAI gpt-4o-mini-tts, with the learner's key.
 
 Keys come from learner/secrets.env or the environment and are only ever sent to their own
-provider. Only content text is sent, never learner data. Nothing here is shipped in the repo:
-every learner makes their own audio.
+provider. Only content text is sent, never learner data.
+
+Shipped clips: the open content's texts come with clips made by Google (Chirp 3 HD Kore and Orus)
+in content/open-voice/ (scripts/ship_voice.py). A clip is looked for in learner/voice/ first, then
+there, then the browser's voice reads the text.
 """
 
 from __future__ import annotations
@@ -61,9 +64,36 @@ def voice_dir() -> Path:
     return paths.learner_dir() / "voice"
 
 
-def file_for(text: str, role: str = "f") -> Path:
-    k = key(text, role if role in ROLES else "f")
-    return voice_dir() / role / k[:2] / f"{k}.mp3"
+def file_for(text: str, role: str = "f", base: Path | None = None) -> Path:
+    role = role if role in ROLES else "f"
+    k = key(text, role)
+    return (base or voice_dir()) / role / k[:2] / f"{k}.mp3"
+
+
+# ---------- clips shipped with the open content (content/open-voice/, scripts/ship_voice.py) ----------
+
+SHIPPED_FAMILY = "google"  # the shipped clips are Google's Kore and Orus
+
+
+def shipped_dir() -> Path:
+    return paths.CONTENT_DIR / "open-voice"
+
+
+def shipped() -> dict:
+    """The shipped clips' manifest: key -> {"r": role, "t": text}."""
+    try:
+        return json.loads((shipped_dir() / "index.json").read_text(encoding="utf-8")).get("clips", {})
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+def find(text: str, role: str = "f") -> Path | None:
+    """The clip to play: the learner's own first, then the shipped one; None means the browser's voice."""
+    for base in (voice_dir(), shipped_dir()):
+        target = file_for(text, role, base)
+        if target.is_file():
+            return target
+    return None
 
 
 def secrets() -> dict[str, str]:
@@ -422,8 +452,9 @@ def _collect(catalog) -> list[tuple[str, str]]:
     return out
 
 
-def missing(pairs: Iterable[tuple[str, str]]) -> list[tuple[str, str]]:
-    return [(t, r) for t, r in pairs if not file_for(t, r).is_file()]
+def missing(pairs: Iterable[tuple[str, str]], skip_shipped: bool = False) -> list[tuple[str, str]]:
+    ship = shipped() if skip_shipped else {}
+    return [(t, r) for t, r in pairs if not file_for(t, r).is_file() and key(t, r) not in ship]
 
 
 def build(catalog, *, limit: int | None = None, wait: bool = False, redo: str | None = None,
@@ -437,14 +468,16 @@ def build(catalog, *, limit: int | None = None, wait: bool = False, redo: str | 
     if redo:
         todo = [(t, r) for t, r in pairs if index.get(key(t, r), {}).get("p") == redo]
         chain = [p for p in chain if p.name != redo]
-    else:
-        todo = missing(pairs)
+    first = next((p for p in chain if not p.ready(keys, profile)), None)
+    if not redo:
+        # A shipped clip is already Google's voice: it is made again only when the learner's first
+        # ready provider speaks with other voices, so one speaker keeps one voice everywhere.
+        todo = missing(pairs, skip_shipped=first is None or first.family == SHIPPED_FAMILY)
     if limit is not None:
         todo = todo[:limit]
     # The first ready provider's family makes everything it can, over a few rounds (a refusal is
     # often only throttling), so one speaker does not change voice; the rest of the list fills in
     # only what that family still could not make.
-    first = next((p for p in chain if not p.ready(keys, profile)), None)
     family = [p for p in chain if first and p.family == first.family]
     passes = [family] * rounds + [chain] if family and family != chain else [chain] * max(1, rounds)
     made: dict[str, int] = {}
@@ -488,10 +521,11 @@ def status(catalog=None) -> dict:
     by: dict[str, int] = {}
     for v in index.values():
         by[v["p"]] = by.get(v["p"], 0) + 1
-    out = {"order": chosen, "providers": rows, "files": len(index), "by_provider": by}
+    ship = shipped()
+    out = {"order": chosen, "providers": rows, "files": len(index), "by_provider": by, "shipped": len(ship)}
     if catalog is not None:
         pairs = texts(catalog)
-        made = {k for k in index}
+        made = set(index) | set(ship)
         out["texts"] = len(pairs)
         out["missing"] = sum(1 for t, r in pairs if key(t, r) not in made)
     return out

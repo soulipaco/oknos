@@ -789,15 +789,15 @@ def create_app() -> FastAPI:
         """The made clip for a text in a voice (f or m); 404 means: use the browser's voice."""
         if r not in voice.ROLES or not t.strip():
             raise HTTPException(404, "no clip")
-        target = voice.file_for(t, r)
-        if not target.is_file():
+        target = voice.find(t, r)  # the learner's own clip, else the shipped one
+        if target is None:
             raise HTTPException(404, "no clip")
         return FileResponse(target, media_type="audio/mpeg", headers={"Cache-Control": "max-age=86400"})
 
     @app.get("/api/voice")
     def voice_status(brief: bool = False):
         if brief:  # what every screen needs at start: are there clips at all
-            return {"files": len(voice.read_index())}
+            return {"files": len(voice.read_index()) + len(voice.shipped())}
         return voice.status(app.state.catalog)
 
     @app.api_route("/voice-sample/{name}", methods=["GET", "HEAD"])

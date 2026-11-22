@@ -48,9 +48,13 @@ def learner(tmp_path, monkeypatch, _open_without_book):
     practise), and the session and scheduler tests are about the engine, not about that text.
     Tests of the book itself use the `open_book` fixture.
     """
+    from oknos import voice
+
     path = tmp_path / "learner"
     monkeypatch.setenv("OKNOS_LEARNER_DIR", str(path))
     _roots(monkeypatch, _open_without_book, tmp_path, path)
+    # The clips shipped in content/open-voice/ stay out too; tests of them set this themselves.
+    monkeypatch.setattr(voice, "shipped_dir", lambda: tmp_path / "open-voice")
     return path
 
 

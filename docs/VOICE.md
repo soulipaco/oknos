@@ -2,7 +2,31 @@
 
 Oknos reads Greek aloud from **clips made ahead of time**. The app knows what it will say (words, example sentences, dialogue lines, listening passages, every word you can tap), so each text is made once, by the first voice service in your list that works, and kept in `learner/voice/`. Anything without a clip (a word the coach added today) is read by your browser's own voice, as before. In the app, the speaker icon at the top opens **Voice**, where you can hear each service, see what it costs and change the order.
 
-Nothing here is shipped with the repository: every learner makes their own clips on their own computer. Only the Greek text goes to a voice service, never your answers, your writing or your progress.
+The open content comes with its clips already made (below), so a fresh clone sounds good with no key at all. The private book and the coach's own items are spoken by your own service, on your own computer. Only the Greek text goes to a voice service, never your answers, your writing or your progress.
+
+## Clips shipped with the open content
+
+Every text of the open packs (`content/open/`, the open book included) has a clip in `content/open-voice/`: 2,205 of 2,206 texts, about 34,000 characters, about 16 MB in the repository (7 KB a clip on average). They are made with **Google Chirp 3 HD**, Kore for the narrator and female speakers and Orus for male ones, the voice of the published films: Google's Cloud terms let its audio be used in applications, while Azure's free tier and edge-tts do not. Licence CC BY-SA 4.0, like the texts (`content/open-voice/README.md`).
+
+The app looks for a clip in this order:
+
+1. `learner/voice/`, your own clips;
+2. `content/open-voice/`, the shipped ones (the same file names: role and text);
+3. none: your browser's voice reads the text.
+
+`oknos voice status` counts the shipped clips with your own. `oknos voice build` does not remake a shipped clip when your first ready service is Google (it would be the same voice) or when no service is set up. When your first service has other voices (Azure, edge, OpenAI), it makes those texts too, so each speaker keeps one voice across the open content and the book; your clip then wins over the shipped one.
+
+After a change to the open content's Greek, the maintainer remakes what is missing (a test fails until then):
+
+```
+uv run python scripts/ship_voice.py --check                       # what is missing or stale
+uv run python scripts/ship_voice.py --secrets learner/secrets.env # make the missing clips (Google key)
+uv run python scripts/ship_voice.py --secrets learner/secrets.env --prune  # and delete unused ones
+```
+
+Chirp 3 HD now and then sends back silence for a short word (92 of the first 2,206 clips, all short words or letter pairs). The script checks every clip, by its loudness with ffmpeg or else by its length, and asks again, then as `word.`, `«word»` or `word!`, which sound the same (23 clips; `said` in `index.json`); `--recheck` finds silent clips among those already made. What stays silent is listed under `browser` in `index.json` and read by the browser's voice: today only κι. A test fails on a clip too short to hold speech.
+
+Never the private book (`content/private/`) or the coach's packs (`learner/generated/`): those are never shipped.
 
 ## The services
 
@@ -12,7 +36,7 @@ From the listening test of 2026-11-22 (ten sentences from the open book, the sam
 |---|---|---|---|
 | **Azure Speech** (Microsoft, official) | Athina, Nestoras | best | Your own key. Free tier F0: 500,000 characters a month; the whole book is about 150,000 the first time. The free tier makes 20 clips a minute. |
 | **edge-tts** (Microsoft, unofficial) | Athina, Nestoras | best (the same voices) | Free, no account. The Edge browser's read-aloud service, used from outside the browser: Microsoft can slow it or close it, and the clips are for your own computer only. Only with your yes (`"edge_tts_ok": true` in `learner/profile.json`), and never for the coach's own texts (SPEC §9). |
-| **Google Cloud Text-to-Speech** | Chirp 3 HD Kore, Orus | very good, just behind Microsoft | Your own key; 1 million characters free a month (billing must be on; the free trial covers it). **The default for a new learner.** |
+| **Google Cloud Text-to-Speech** | Chirp 3 HD Kore, Orus | very good, just behind Microsoft | Your own key; 1 million characters free a month (billing must be on; the free trial covers it). **The default for a new learner**, and the voice of the shipped clips. |
 | **OpenAI** | gpt-4o-mini-tts (coral, ash) | good, a slight accent | Your own key; pay as you go, about one or two dollars for the whole book. |
 | Your browser's voice | on Windows, Stefanos | robotic | Always there; it reads whatever has no clip. |
 
@@ -44,4 +68,4 @@ uv run oknos voice sample google   # the Voice screen's two test sentences, with
 
 The build lets the first service's family (Azure and edge are one family: the same voices) make everything it can over a few rounds, because a refusal is often only throttling; the next service in the list fills in only what is left, so one speaker does not change voice halfway through a dialogue. Free quotas are left at 90%. Without `--wait`, a clip whose service is still pacing itself goes to the next one: with Azure first and edge second, edge then makes most clips. A clip that takes too long fails and goes to the next service: 45 seconds for edge (a connection to it once hung for hours), 60 for the others. `daily-prep` runs `oknos voice build` after it writes new items, so tomorrow's words are already spoken well.
 
-The code is `src/oknos/voice.py` (services, chain, cache, quota) and the `/voice` route in `src/oknos/server.py`; the app's `speak()` in `web/app.js` tries the clip first.
+The code is `src/oknos/voice.py` (services, chain, cache, quota) and the `/voice` route in `src/oknos/server.py`; the app's `speak()` in `web/app.js` tries the clip first. The shipped clips are made by `scripts/ship_voice.py`.

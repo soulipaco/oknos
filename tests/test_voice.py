@@ -156,3 +156,85 @@ def test_the_coachs_own_texts_never_go_to_the_free_edge_route(learner):
     edge, google = Fake("edge"), Fake("google")
     assert voice.make("Η σπιτονοικοκυρά σου λέει…", "f", chain=[edge, google], keys={}, profile={}, own=True) == "google"
     assert not edge.calls
+
+
+# ---------- clips shipped with the open content (content/open-voice/) ----------
+
+def _ship(text, role, data=b"shipped"):
+    """A clip in the (test's own) shipped folder, listed in its index.json."""
+    base = voice.shipped_dir()
+    target = voice.file_for(text, role, base)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_bytes(data + b"\0" * 1200)
+    index = base / "index.json"
+    data_ = json.loads(index.read_text(encoding="utf-8")) if index.is_file() else {"clips": {}}
+    data_["clips"][voice.key(text, role)] = {"r": role, "t": text}
+    index.write_text(json.dumps(data_, ensure_ascii=False), encoding="utf-8")
+    return target
+
+
+def test_the_learners_own_clip_first_then_the_shipped_one_then_the_browser(client, learner):
+    _ship("Καλημέρα!", "f")
+    r = client.get("/voice", params={"r": "f", "t": "καλημέρα!"})
+    assert r.status_code == 200 and r.content.startswith(b"shipped")
+    assert client.get("/api/voice", params={"brief": 1}).json()["files"] == 1  # so the speaker buttons show
+    own = voice.file_for("Καλημέρα!", "f")
+    own.parent.mkdir(parents=True)
+    own.write_bytes(b"own" + b"\0" * 1200)
+    assert client.get("/voice", params={"r": "f", "t": "Καλημέρα!"}).content.startswith(b"own")
+    assert client.get("/voice", params={"r": "m", "t": "Καλημέρα!"}).status_code == 404  # the browser's voice
+
+
+def test_status_counts_shipped_clips_as_spoken(catalog):
+    text, role = voice.texts(catalog)[0]
+    before = voice.status(catalog)
+    _ship(text, role)
+    after = voice.status(catalog)
+    assert after["shipped"] == 1 and after["missing"] == before["missing"] - 1 and after["files"] == 0
+
+
+def test_build_leaves_shipped_clips_to_google_and_remakes_them_for_other_voices(catalog, monkeypatch):
+    shipped = voice.texts(catalog)[:3]
+    for t, r in shipped:
+        _ship(t, r)
+    google = Fake("google")
+    google.family = "google"
+    monkeypatch.setattr(voice, "providers", lambda: {"google": google})
+    voice.build(catalog, limit=5, pause=0)
+    assert not set(google.calls) & set(shipped) and len(google.calls) == 5
+
+    azure = Fake("azure")
+    azure.family = "microsoft"
+    monkeypatch.setattr(voice, "providers", lambda: {"azure": azure})
+    monkeypatch.setattr(voice, "read_profile", lambda: {"voice": {"providers": ["azure"]}})
+    voice.build(catalog, limit=3, pause=0)
+    assert azure.calls == shipped  # Athina everywhere, not Kore for the open words only
+
+
+def test_the_shipped_manifest_matches_the_open_content(full_catalog):
+    """Every text the open content speaks has a shipped clip, and every shipped clip is listed and found.
+
+    A change to the open content's Greek needs new clips: uv run python scripts/ship_voice.py --secrets <secrets.env>
+    (it makes only what is missing; --prune deletes what no text uses any more)."""
+    from oknos import paths
+
+    base = paths.CONTENT_DIR / "open-voice"
+    data = json.loads((base / "index.json").read_text(encoding="utf-8"))
+    assert data["licence"] == "CC-BY-SA-4.0" and "Google" in data["made_with"]
+    assert (base / "README.md").is_file()
+    clips = data["clips"]
+    for k, c in clips.items():
+        assert c["r"] in voice.ROLES and voice.key(c["t"], c["r"]) == k, c
+    files = {p.stem: p for p in base.rglob("*.mp3")}
+    assert set(files) == set(clips), "clips on disk and index.json differ"
+    # Chirp 3 HD sometimes sends silence for a short word (0.26-0.46 s, where speech is 0.45 s or more);
+    # the script checks loudness with ffmpeg. This only catches the worst, without ffmpeg (32 kb/s: 4,000 bytes a second).
+    too_short = [clips[k]["t"] for k, p in files.items() if p.stat().st_size < 0.3 * 4000]
+    assert not too_short, f"silent clips? {too_short[:5]} (scripts/ship_voice.py --recheck)"
+    wanted = {voice.key(t, r): t for t, r in voice.texts(full_catalog)}
+    browser = data.get("browser", {})  # texts Chirp gave only silence for: the browser's voice reads them
+    assert len(browser) <= 10 and not set(browser) & set(clips)
+    missing = sorted(t for k, t in wanted.items() if k not in clips and k not in browser)
+    assert not missing, f"{len(missing)} open texts have no shipped clip, e.g. {missing[:5]}"
+    stale = [c["t"] for k, c in clips.items() if k not in wanted]
+    assert not stale, f"{len(stale)} shipped clips no open text uses, e.g. {stale[:5]} (--prune)"

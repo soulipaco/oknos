@@ -519,7 +519,8 @@ def cmd_voice(args) -> int:
             where = f"#{p['position']}" if p["position"] else "  -"
             quota = f", {p['used']:,} of {p['free']:,} free characters this month" if p["free"] else (f", {p['used']:,} characters this month" if p["used"] else "")
             print(f"  {where} {p['name']:7} {'ready' if not p['problem'] else p['problem']}{quota}")
-        print(f"Clips: {st['files']:,} made ({', '.join(f'{k} {v:,}' for k, v in st['by_provider'].items()) or 'none'}); "
+        print(f"Clips: {st['files']:,} made ({', '.join(f'{k} {v:,}' for k, v in st['by_provider'].items()) or 'none'}), "
+              f"{st['shipped']:,} shipped with the open content (Google); "
               f"{st['missing']:,} of {st['texts']:,} texts still use the browser voice.")
         return 0
     if args.action == "sample":
