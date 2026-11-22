@@ -16,7 +16,7 @@ Research only, done 2026-11-22. Nothing was installed, no account was made and t
 
 **Your decisions:**
 1. **Tailscale, or stay local.** Tailscale is an outside service with an account, so it bends "no accounts, no cloud services". It never holds the data and cannot read the traffic, but it is one more company in the picture. If that is not acceptable, the honest answer is to stay as you are (§3).
-2. **If yes: does the laptop stay on at home?** That means "never sleep when plugged in" in Windows' power settings. If the laptop is often off or travels with you, option 1 does not help, and option 2 (a second machine at home) is the next step, at a real cost in effort.
+2. **If yes: does the laptop stay on at home?** That means "never sleep when plugged in" in Windows' power settings. If the laptop is often off or travels with you, option 1 does not help. The next step is then a second machine that stays on: a box at home (option 2) or Google's free e2-micro (§3.3a: about $3.65 a month for its IPv4 address, plus new sync code, because the coach cannot run on it). Both cost real effort, and both reuse the Tailscale setup.
 
 ## 2. What exists today (the baseline)
 
@@ -29,7 +29,7 @@ Research only, done 2026-11-22. Nothing was installed, no account was made and t
 
 | | 1. Private network to the laptop (Tailscale) | 2. Always-on machine at home + option 1 | 3. Free virtual server (Oracle, Google) | 4. Free app hosting (Render, Fly, Koyeb, Railway, HF) |
 |---|---|---|---|---|
-| **Really free?** | Yes. Personal plan $0, "free forever" for non-commercial use, up to 6 users, unlimited devices. No card mentioned. | Old laptop: yes (plus power). Raspberry Pi 5: no, it is bought (the 16 GB model is $305; the page shows no price for the smaller ones). | Oracle: free "for the life of the account", but a **credit card is needed** at sign-up (not charged unless you upgrade). Google: a **billing account with a card is required**; usage above the free limit is **billed**. | Mostly no for this app (see §3.4). Fly: $5/month of usage with a card on file, then automatic pay-as-you-go. |
+| **Really free?** | Yes. Personal plan $0, "free forever" for non-commercial use, up to 6 users, unlimited devices. No card mentioned. | Old laptop: yes (plus power). Raspberry Pi 5: no, it is bought (the 16 GB model is $305; the page shows no price for the smaller ones). | Oracle: free "for the life of the account", but a **credit card is needed** at sign-up (not charged unless you upgrade). Google: a **billing account with a card is required**; usage above the free limit is **billed**, and the public IPv4 address costs about $3.65 a month (§3.3a). | Mostly no for this app (see §3.4). Fly: $5/month of usage with a card on file, then automatic pay-as-you-go. |
 | **Where your data lives** | On the laptop, as today. | On the home machine. Two copies (laptop and box) would have to be avoided. | On the provider's disk (Oracle: home region you pick; Google: US regions only). You back it up. | On the provider's disk, where there is one at all. |
 | **Private book material** | Never leaves the laptop. | Never leaves home. | A copy of `content/private/` (348 MB today) sits on a third party's server. Unreachable to others only if access control is added and kept right. | Same as 3, and the provider runs the container. |
 | **Who can open it** | Only devices signed in to your tailnet. Nothing listens on the internet. Nothing to add to the app. | Same as 1. | Anyone, unless a login is added to the app or the server is put behind Tailscale too. | Anyone with the URL: the services give a public address. A login would have to be built. |
@@ -63,6 +63,25 @@ Useful only if the laptop cannot stay on. The app and `learner/` would move to t
 - **Google Cloud free tier:** one e2-micro (1 GB) in us-west1, us-central1 or us-east1 only, 30 GB of standard disk, 1 GB of outbound traffic a month from North America. A billing account is required; usage beyond the limits is billed. The free tier "has no end date", but Google may change it on 30 days' notice. The page does not mention any charge for a public IPv4 address (not checked further).
 - Either way the app and all of `learner/` (25 MB today, more as voice clips are built) and `content/private/` sit on someone else's computer, behind a login that would have to be built or a VPN that would have to be added, with server upkeep on top. For one learner this is no better than option 1, and it breaks the guardrail.
 
+### 3.3a Google Cloud in detail (asked 2026-11-22: "the card is already there for text-to-speech, so why not?")
+
+The card is no longer the obstacle: the free tier is counted per billing account, so the account made for Cloud Text-to-Speech can also run the free e2-micro. What is left:
+
+- **It is not quite $0.** The free tier covers the machine (one e2-micro for the whole month), 30 GB of *standard* disk and 1 GB of outbound traffic. It does **not** mention the public IPv4 address, and the VPC price list charges **$0.005 an hour for an IPv4 address in use on a standard VM**, about **$3.65 a month**, with no free-tier exemption. External IPv6 addresses on VMs are free, so an IPv6-only machine could be $0. That is untested: everything the machine must reach (Tailscale, the package index, Anthropic) and the phone's own network would need to work over IPv6.
+- **The disk must be picked by hand.** The console's default disk type is *balanced*, which is not in the free tier. Only *standard* is free (the gcloud command-line default).
+- **Traffic is enough.** A study session is small: the voice clips average 11 KB (1,959 clips, 21.9 MB), the pictures are WebP. A month of daily sessions is tens of MB, well inside the free 1 GB. Uploading the book material (348 MB) is inbound traffic, which is free.
+- **Overruns are billed, and nothing stops them.** On a Paid billing account usage above the free limits is charged automatically, and a budget only sends an e-mail: it "doesn't automatically cap" usage. A wrong click (a balanced disk, a second machine, a region outside the three US ones) costs money quietly.
+- **Check which kind of account it is.** If the Text-to-Speech account is still a *Free Trial* account (the $300 credit), it closes after 90 days unless it is upgraded to Paid, and its machines are then stopped and, after a 30-day grace period, deleted. The Billing overview page says "Free trial account" or "Paid account".
+- **The machine is small, but big enough for the app.** e2-micro: 2 shared vCPUs at 25% in total, short bursts, 1 GB of memory. The running Oknos server uses about 70–85 MB on this laptop, so the app fits.
+- **The coach cannot move there.** Claude Code needs **4 GB of RAM** or more; the e2-micro has 1 GB. Local transcription (faster-whisper) and the voice build need more than that too. So the agent stays on the laptop, and the app and its database would live on the server. That is the real cost:
+  - today the coach reads `oknos report` from the database next to it and writes its files into the same `learner/` folder. With the database in the US, every check-in, daily prep and marking run would have to fetch the report from the server, push its packs, feedback, coach files and voice clips up, and ask the server to reload; recordings would have to come down to be transcribed;
+  - none of that exists. It is new code (a sync step or remote commands) and changes to every coach skill, against "few dependencies";
+  - the scheduled runs stay on the laptop, so the laptop still has to be on at 18:30 for the daily prep. Only the studying itself becomes independent of the laptop.
+- **It still needs option 1 on top.** The app has no login. The safe way is to give the server no open ports at all and reach it through Tailscale, exactly as in option 1 (Tailscale Serve gives the HTTPS). Opening it to the internet would need a login to be built, and the private book material would then sit behind it.
+- **Where the data goes.** The database, the recordings, anything captured from real life (letters, which can hold personal details) and a copy of the private book would be on a Google machine in the US. Nobody else can open it if it is reachable only through Tailscale, but it is a copy on someone else's computer: the guardrail "local only" no longer holds, and backups become your job (for example, copying the database to the laptop every day).
+
+**Verdict.** It can be done, but it is not free (about $3.65 a month for the IPv4 address), it needs new sync code and skill changes, and it still needs Tailscale. What it buys over option 1 is one thing: studying from the phone while the laptop is off. Starting with option 1 loses nothing: if the laptop being off turns out to be the real problem, the Google machine is the next step and reuses the same Tailscale setup.
+
 ### 3.4 Option 4: free app hosting
 
 The app keeps everything in one SQLite file, so the question that decides is whether the disk survives.
@@ -85,7 +104,12 @@ The app keeps everything in one SQLite file, so the question that decides is whe
 - Headscale: https://headscale.net/stable/
 - Oracle Always Free resources (limits, idle reclamation, capacity): https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm
 - Oracle Free Tier (card, trial end, home region): https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier.htm (the marketing page and FAQ at oracle.com/cloud/free refused automated reading)
-- Google Cloud free tier: https://docs.cloud.google.com/free/docs/free-cloud-features
+- Google Cloud free tier and Free Trial (per billing account, 90-day trial, what happens at its end): https://docs.cloud.google.com/free/docs/free-cloud-features
+- Google VPC pricing (external IPv4 $0.005/hour in use, IPv6 on VMs free, outbound traffic): https://cloud.google.com/vpc/pricing (read in a browser; automated reading got only the title)
+- Google persistent disks (console default `pd-balanced`, gcloud default `pd-standard`): https://docs.cloud.google.com/compute/docs/disks/persistent-disks
+- Google budgets (alerts do not cap spending): https://docs.cloud.google.com/billing/docs/how-to/budgets
+- e2-micro machine type: https://docs.cloud.google.com/compute/docs/general-purpose-machines
+- Claude Code system requirements (4 GB+ RAM): https://code.claude.com/docs/en/setup
 - Raspberry Pi 5: https://www.raspberrypi.com/products/raspberry-pi-5/
 - Render free: https://render.com/docs/free
 - Fly.io: https://docs.fly.io/about/pricing and https://docs.fly.io/about/free-trial
