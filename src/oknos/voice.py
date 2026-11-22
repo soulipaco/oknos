@@ -175,6 +175,10 @@ def soften(text: str) -> str:
 
 
 class Edge(Provider):
+    # edge-tts's own receive timeout did not stop a TLS read that hung for hours (2026-11-22);
+    # a whole clip gets at most this long, then it fails and the next provider is tried.
+    timeout: float = 45.0
+
     def ready(self, keys, profile):
         if not profile.get("edge_tts_ok"):
             return "needs the learner's yes (edge_tts_ok in profile.json)"
@@ -196,7 +200,7 @@ class Edge(Provider):
 
         for attempt, t in enumerate((text, soften(text))):
             try:
-                data = asyncio.run(once(t))
+                data = asyncio.run(asyncio.wait_for(once(t), self.timeout))
                 if len(data) > 1000:
                     return data
             except Exception:  # edge-tts raises its own NoAudioReceived and network errors

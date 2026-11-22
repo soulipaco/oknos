@@ -70,6 +70,29 @@ def test_edge_gets_a_word_it_refuses_without_the_accent():
     assert voice.soften("Καλημέρα!") == "Καλημέρα!"
 
 
+def test_a_hung_edge_connection_fails_the_clip_and_the_next_provider_makes_it(learner, monkeypatch):
+    edge_tts = pytest.importorskip("edge_tts")
+    import asyncio
+    import time
+
+    class Hangs:
+        def __init__(self, *a, **k):
+            pass
+
+        async def stream(self):
+            await asyncio.sleep(3600)
+            yield {"type": "audio", "data": b""}
+
+    monkeypatch.setattr(edge_tts, "Communicate", Hangs)
+    monkeypatch.setattr(voice.time, "sleep", lambda s: None)
+    edge = voice.providers()["edge"]
+    edge.timeout = 0.2
+    other = Fake("other")
+    start = time.monotonic()
+    assert voice.make("Καλημέρα.", "f", chain=[edge, other], keys={}, profile={"edge_tts_ok": True}) == "other"
+    assert time.monotonic() - start < 5
+
+
 def test_keys_come_from_the_learner_folder_and_never_show(learner, monkeypatch):
     learner.mkdir(parents=True, exist_ok=True)
     (learner / "secrets.env").write_text("# keys\nGOOGLE_TTS_API_KEY=AIza-secret\nOPENAI_API_KEY=\n", encoding="utf-8")
