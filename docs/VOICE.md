@@ -36,11 +36,12 @@ The order is `voice.providers` in `learner/profile.json` (the Voice screen chang
 ```
 uv run oknos voice status          # the services, the keys present (yes/no), this month's characters, clips made
 uv run oknos voice build           # make every missing clip (resumable; the first time takes a few hours)
+uv run oknos voice build --wait    # wait out each service's pace (Azure's free tier: one clip every 3 s)
 uv run oknos voice build --limit 50
 uv run oknos voice build --redo edge   # make again, with the other services, what one service made
 uv run oknos voice sample google   # the Voice screen's two test sentences, with one service
 ```
 
-The build lets the first service's family (Azure and edge are one family: the same voices) make everything it can over a few rounds, because a refusal is often only throttling; the next service in the list fills in only what is left, so one speaker does not change voice halfway through a dialogue. Free quotas are left at 90%. `daily-prep` runs `oknos voice build` after it writes new items, so tomorrow's words are already spoken well.
+The build lets the first service's family (Azure and edge are one family: the same voices) make everything it can over a few rounds, because a refusal is often only throttling; the next service in the list fills in only what is left, so one speaker does not change voice halfway through a dialogue. Free quotas are left at 90%. Without `--wait`, a clip whose service is still pacing itself goes to the next one: with Azure first and edge second, edge then makes most clips. A clip that takes too long fails and goes to the next service: 45 seconds for edge (a connection to it once hung for hours), 60 for the others. `daily-prep` runs `oknos voice build` after it writes new items, so tomorrow's words are already spoken well.
 
 The code is `src/oknos/voice.py` (services, chain, cache, quota) and the `/voice` route in `src/oknos/server.py`; the app's `speak()` in `web/app.js` tries the clip first.
