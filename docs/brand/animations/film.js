@@ -3,7 +3,8 @@
    (a slow pan and zoom), an optional effect, and a caption in Greek with a Turkish and English line.
    Shots cross-fade; tap the picture to pause. Plain script, no build, no libraries.
    Sound: voice/<shot>.mp3 (the picture's name: f1-01, f3-06; the end card f1-end) is the shot's
-   narration, made by scripts/film_voice.py and not tracked by git. When the clips are there, a
+   narration, made by scripts/film_voice.py (Google, published); voice-local/ holds this computer's
+   own set (Athina, not tracked) and is played instead when it is there. When the clips are there, a
    "Play with sound" button starts the film again with them, each shot lasting at least its clip
    plus a pause; without them the film plays silently, as before. */
 (function () {
@@ -171,7 +172,9 @@
     function offerSound() {
       if (!controls) return;
       const stem = name(shots[0].src).split("-")[0];
-      Promise.all([...shots.map((s) => probe(`voice/${name(s.src)}.mp3`)), end ? probe(`voice/${stem}-end.mp3`) : null])
+      probe(`voice-local/${name(shots[0].src)}.mp3`)
+        .then((own) => { const dir = own ? "voice-local" : "voice";
+          return Promise.all([...shots.map((s) => probe(`${dir}/${name(s.src)}.mp3`)), end ? probe(`${dir}/${stem}-end.mp3`) : null]); })
         .then((found) => {
           shots.forEach((s, i) => { s.clip = found[i]; });
           if (end) end.clip = found[shots.length];

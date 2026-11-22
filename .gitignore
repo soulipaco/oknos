@@ -31,6 +31,6 @@ build/
 .env
 *.env
 
-# The films' narration (scripts/film_voice.py): made with Azure Speech's free tier, whose output
-# Microsoft's Product Terms do not let us publish (that right is for the paid tier only).
-docs/brand/animations/voice/
+# The films' narration in Athina's voice (scripts/film_voice.py --provider azure), for this computer
+# only: Azure's free tier gives no right to publish its output. The published clips (Google) are in voice/.
+docs/brand/animations/voice-local/
