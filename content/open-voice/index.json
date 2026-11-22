@@ -6,7 +6,7 @@
   "f": "el-GR-Chirp3-HD-Kore",
   "m": "el-GR-Chirp3-HD-Orus"
  },
- "characters": 34002,
+ "characters": 34006,
  "clips": {
   "000f3a518c8dc58a231db4d4572f30d7f72e2389": {
    "r": "f",
@@ -2549,6 +2549,11 @@
   "4ad5feb84371798dafb19d1ca067e5f7919546fa": {
    "r": "f",
    "t": "πρώτο"
+  },
+  "4b1dfd3e699030f8f94e216c1a468ec58dfe1e37": {
+   "r": "f",
+   "t": "κι",
+   "said": "«κι»"
   },
   "4b232069053aad7728414925996f6a96e3895771": {
    "r": "f",
@@ -8852,11 +8857,5 @@
    "t": "ψάξει"
   }
  },
- "browser": {
-  "4b1dfd3e699030f8f94e216c1a468ec58dfe1e37": {
-   "r": "f",
-   "t": "κι",
-   "why": "Chirp 3 HD sent only silence"
-  }
- }
+ "browser": {}
 }

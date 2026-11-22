@@ -6,7 +6,7 @@ The open content comes with its clips already made (below), so a fresh clone sou
 
 ## Clips shipped with the open content
 
-Every text of the open packs (`content/open/`, the open book included) has a clip in `content/open-voice/`: 2,205 of 2,206 texts, about 34,000 characters, about 16 MB in the repository (7 KB a clip on average). They are made with **Google Chirp 3 HD**, Kore for the narrator and female speakers and Orus for male ones, the voice of the published films: Google's Cloud terms let its audio be used in applications, while Azure's free tier and edge-tts do not. Licence CC BY-SA 4.0, like the texts (`content/open-voice/README.md`).
+Every text of the open packs (`content/open/`, the open book included) has a clip in `content/open-voice/`: 2,206 clips, about 34,000 characters, about 16 MB in the repository (7 KB a clip on average). They are made with **Google Chirp 3 HD**, Kore for the narrator and female speakers and Orus for male ones, the voice of the published films: Google's Cloud terms let its audio be used in applications, while Azure's free tier and edge-tts do not. Licence CC BY-SA 4.0, like the texts (`content/open-voice/README.md`).
 
 The app looks for a clip in this order:
 
@@ -24,7 +24,7 @@ uv run python scripts/ship_voice.py --secrets learner/secrets.env # make the mis
 uv run python scripts/ship_voice.py --secrets learner/secrets.env --prune  # and delete unused ones
 ```
 
-Chirp 3 HD now and then sends back silence for a short word (92 of the first 2,206 clips, all short words or letter pairs). The script checks every clip, by its loudness with ffmpeg or else by its length, and asks again, then as `word.`, `«word»` or `word!`, which sound the same (23 clips; `said` in `index.json`); `--recheck` finds silent clips among those already made. What stays silent is listed under `browser` in `index.json` and read by the browser's voice: today only κι. A test fails on a clip too short to hold speech.
+Chirp 3 HD now and then sends back silence for a short word (92 of the first 2,206 clips, all short words or letter pairs). The script checks every clip, by its loudness with ffmpeg or else by its length, and asks again, then as `word.`, `«word»` or `word!`, which sound the same (24 clips; `said` in `index.json`); `--recheck` finds silent clips among those already made. What stays silent is listed under `browser` in `index.json` and read by the browser's voice (none today; κι came out on a later try). A test fails on a clip too short to hold speech.
 
 Never the private book (`content/private/`) or the coach's packs (`learner/generated/`): those are never shipped.
 
