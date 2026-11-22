@@ -16,7 +16,7 @@ The app looks for a clip in this order:
 
 `oknos voice status` counts the shipped clips with your own. `oknos voice build` does not remake a shipped clip when your first ready service is Google (it would be the same voice) or when no service is set up. When your first service has other voices (Azure, edge, OpenAI), it makes those texts too, so each speaker keeps one voice across the open content and the book; your clip then wins over the shipped one.
 
-After a change to the open content's Greek, the maintainer remakes what is missing (a test fails until then):
+After a change to the open content's Greek, the maintainer remakes what is missing. Until then the browser's voice reads the new text, and `oknos validate content/open` (also in CI) prints a note, not a failure; the tests check only that the shipped clips and `index.json` agree:
 
 ```
 uv run python scripts/ship_voice.py --check                       # what is missing or stale

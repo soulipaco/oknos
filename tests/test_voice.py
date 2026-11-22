@@ -211,11 +211,12 @@ def test_build_leaves_shipped_clips_to_google_and_remakes_them_for_other_voices(
     assert azure.calls == shipped  # Athina everywhere, not Kore for the open words only
 
 
-def test_the_shipped_manifest_matches_the_open_content(full_catalog):
-    """Every text the open content speaks has a shipped clip, and every shipped clip is listed and found.
+def test_the_shipped_manifest_is_well_formed():
+    """The manifest, the licence and the files on disk agree, and no clip is silent.
 
-    A change to the open content's Greek needs new clips: uv run python scripts/ship_voice.py --secrets <secrets.env>
-    (it makes only what is missing; --prune deletes what no text uses any more)."""
+    Whether every open text has a clip is only a warning (`oknos validate content/open`), so a change
+    to the open content's Greek does not turn CI red: the browser's voice reads it until
+    uv run python scripts/ship_voice.py --secrets <secrets.env> makes the clip (--prune deletes unused ones)."""
     from oknos import paths
 
     base = paths.CONTENT_DIR / "open-voice"
@@ -227,14 +228,27 @@ def test_the_shipped_manifest_matches_the_open_content(full_catalog):
         assert c["r"] in voice.ROLES and voice.key(c["t"], c["r"]) == k, c
     files = {p.stem: p for p in base.rglob("*.mp3")}
     assert set(files) == set(clips), "clips on disk and index.json differ"
+    for k, p in files.items():
+        assert p.parent.name == k[:2] and p.parent.parent.name == clips[k]["r"], p
     # Chirp 3 HD sometimes sends silence for a short word (0.26-0.46 s, where speech is 0.45 s or more);
     # the script checks loudness with ffmpeg. This only catches the worst, without ffmpeg (32 kb/s: 4,000 bytes a second).
     too_short = [clips[k]["t"] for k, p in files.items() if p.stat().st_size < 0.3 * 4000]
     assert not too_short, f"silent clips? {too_short[:5]} (scripts/ship_voice.py --recheck)"
-    wanted = {voice.key(t, r): t for t, r in voice.texts(full_catalog)}
     browser = data.get("browser", {})  # texts Chirp gave only silence for: the browser's voice reads them
     assert len(browser) <= 10 and not set(browser) & set(clips)
-    missing = sorted(t for k, t in wanted.items() if k not in clips and k not in browser)
-    assert not missing, f"{len(missing)} open texts have no shipped clip, e.g. {missing[:5]}"
-    stale = [c["t"] for k, c in clips.items() if k not in wanted]
-    assert not stale, f"{len(stale)} shipped clips no open text uses, e.g. {stale[:5]} (--prune)"
+
+
+def test_a_missing_or_stale_shipped_clip_is_a_warning(catalog, monkeypatch):
+    texts = voice.texts(catalog)[:3]
+    (t0, r0), (t1, r1) = texts[0], texts[1]
+    _ship(t0, r0)
+    _ship("Ένα κείμενο που δεν υπάρχει πια", "f")
+    missing, stale = voice.shipped_gaps(catalog)
+    assert t0 not in missing and t1 in missing
+    assert stale == ["Ένα κείμενο που δεν υπάρχει πια"]
+
+    from oknos import cli, packs
+
+    monkeypatch.setattr(packs, "load_all", lambda roots=None: catalog)
+    notes = cli.shipped_voice_notes()
+    assert len(notes) == 2 and "ship_voice.py" in notes[0] and "--prune" in notes[1]

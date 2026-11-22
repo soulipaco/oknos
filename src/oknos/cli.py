@@ -372,6 +372,9 @@ def cmd_validate(args) -> int:
         if len(notes) > args.notes:
             print(f"  ({len(notes) - args.notes} more notes; use --notes {len(notes)} to see them)")
         bad = bad or bool(problems) or pack is None
+    if target == (paths.CONTENT_DIR / "open").resolve():
+        for note in shipped_voice_notes():
+            print(f"open voice: note: {note}")
     if learner_files is not None:
         print("coach files: " + ("all valid" if not learner_files else f"{len(learner_files)} problem(s)"))
         for problem in learner_files:
@@ -379,6 +382,23 @@ def cmd_validate(args) -> int:
         bad = bad or bool(learner_files)
     print("Some problems need fixing." if bad else "Everything is valid.")
     return 1 if bad else 0
+
+
+def shipped_voice_notes() -> list[str]:
+    """Warnings, never failures: a changed open text keeps CI green, and the browser's voice reads
+    it until scripts/ship_voice.py makes its clip (docs/VOICE.md)."""
+    from oknos import packs, voice
+
+    missing, stale = voice.shipped_gaps(packs.load_all([("open", paths.CONTENT_DIR / "open")]))
+    fix = "uv run python scripts/ship_voice.py --secrets <secrets.env>"
+    notes = []
+    if missing:
+        notes.append(f"{len(missing)} open text(s) have no shipped clip, so the browser's voice reads them, "
+                     f"e.g. {', '.join(missing[:5])}. To make them (Google key): {fix}")
+    if stale:
+        notes.append(f"{len(stale)} shipped clip(s) no open text uses any more, e.g. {', '.join(stale[:5])}. "
+                     f"To delete them: {fix} --prune")
+    return notes
 
 
 def cmd_words(args) -> int:

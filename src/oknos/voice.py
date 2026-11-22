@@ -87,6 +87,22 @@ def shipped() -> dict:
         return {}
 
 
+def shipped_gaps(open_catalog) -> tuple[list[str], list[str]]:
+    """Open texts with no shipped clip, and shipped clips no open text uses any more.
+
+    Either is only a warning (`oknos validate content/open`, `scripts/ship_voice.py --check`): a text
+    without a clip is read by the browser's voice until the script is run again with a Google key."""
+    try:
+        data = json.loads((shipped_dir() / "index.json").read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        data = {}
+    clips, browser = data.get("clips", {}), data.get("browser", {})
+    wanted = {key(t, r): t for t, r in texts(open_catalog)}
+    missing = sorted(t for k, t in wanted.items() if k not in clips and k not in browser)
+    stale = sorted(c["t"] for k, c in clips.items() if k not in wanted)
+    return missing, stale
+
+
 def find(text: str, role: str = "f") -> Path | None:
     """The clip to play: the learner's own first, then the shipped one; None means the browser's voice."""
     for base in (voice_dir(), shipped_dir()):

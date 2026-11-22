@@ -597,10 +597,11 @@ def chapter_ref_problems(catalog: "Catalog") -> list[str]:
     return out
 
 
-def load_all() -> Catalog:
+def load_all(roots: list[tuple[str, Path]] | None = None) -> Catalog:
+    """Every pack under the content roots (paths.content_roots(), unless others are given)."""
     catalog = Catalog()
     seen_ids: set[str] = set()
-    for visibility, root in paths.content_roots():
+    for visibility, root in roots or paths.content_roots():
         if not root.is_dir():
             continue
         for pack_dir in sorted(p for p in root.iterdir() if p.is_dir()):
