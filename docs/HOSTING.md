@@ -15,7 +15,7 @@ Research only, done 2026-11-22. Nothing was installed, no account was made and t
 - the laptop's name and the tailnet's name appear in a public certificate log (pick a laptop name that says nothing about you).
 
 **Your decisions:**
-1. **Tailscale, or stay local.** Tailscale is an outside service with an account, so it bends "no accounts, no cloud services". It never holds the data and cannot read the traffic, but it is one more company in the picture. If that is not acceptable, the honest answer is to stay as you are (§3).
+1. **Tailscale, or stay local.** *Decided on 2026-11-22: Tailscale first; the setup is in §6.* Tailscale is an outside service with an account, so it bends "no accounts, no cloud services". It never holds the data and cannot read the traffic, but it is one more company in the picture. If that is not acceptable, the honest answer is to stay as you are (§3).
 2. **If yes: does the laptop stay on at home?** That means "never sleep when plugged in" in Windows' power settings. If the laptop is often off or travels with you, option 1 does not help. The next step is then a second machine that stays on: a box at home (option 2) or Google's free e2-micro (§3.3a: about $3.65 a month for its IPv4 address, plus new sync code, because the coach cannot run on it). Both cost real effort, and both reuse the Tailscale setup.
 
 ## 2. What exists today (the baseline)
@@ -44,9 +44,10 @@ Research only, done 2026-11-22. Nothing was installed, no account was made and t
 - **Tailscale** is a WireGuard network run by a coordination service. All three connection types (direct, through a Tailscale relay, through a peer) are end-to-end encrypted; Tailscale says its relays cannot decrypt the traffic. The account exists to sign devices in to your private network; the app's data never passes through Tailscale in readable form.
 - **`tailscale serve 8642`** passes HTTPS from your tailnet to a local port and is tailnet-only. Its sibling **Funnel** publishes to the whole internet: **never use Funnel for this app.**
 - Practical points:
-  - On Windows, `serve` needs an Administrator console.
+  - Forwarding a port needs no administrator rights (only serving files does).
+  - With `--bg` the setting runs in the background and resumes by itself after a reboot.
+  - Serve's proxy targets `127.0.0.1`, which is where the app already listens.
   - The app falls back to the next free port if 8642 is taken; Serve points at one port. Keep 8642 free, or start with `--port 8642`.
-  - Whether the Serve setting survives a reboot was not checked; confirm it at setup.
   - HTTPS certificates last 90 days and are renewed automatically. Each certificate goes into the public Certificate Transparency log with the machine's full name, so the machine and tailnet names must hold nothing personal.
   - On the phone, the pre-made voice clips play as on the laptop. Words without a clip use the phone browser's own Greek voice, which differs from Windows'.
 - **Plain WireGuard** (free, GPLv2/MIT, apps for Windows, iOS, Android) avoids the Tailscale account, but needs a port opened on the home router, a way to find the home address when it changes, and its own HTTPS certificate for recording. More work and more exposure than Tailscale, for one person.
@@ -96,7 +97,10 @@ The app keeps everything in one SQLite file, so the question that decides is whe
 
 - Tailscale pricing (Personal plan): https://tailscale.com/pricing
 - Tailscale HTTPS certificates, Certificate Transparency warning: https://tailscale.com/kb/1153/enabling-https
-- Tailscale Serve (tailnet-only; Funnel is public; Windows needs Administrator): https://tailscale.com/kb/1312/serve
+- Tailscale Serve (tailnet-only; Funnel is public): https://tailscale.com/kb/1312/serve
+- `tailscale serve` command reference (`--bg` persists across reboots, `status`, `reset`, proxies to `127.0.0.1`, no admin rights for a port): https://tailscale.com/kb/1242/tailscale-serve
+- Machine names (rename, MagicDNS name follows it): https://tailscale.com/kb/1098/machine-names
+- Tailnet name (`tail<ID>.ts.net` or a random two-word name; fixed once used for certificates): https://tailscale.com/kb/1217/tailnet-name
 - Tailscale connection types (all end-to-end encrypted): https://tailscale.com/kb/1257/connection-types
 - Tailscale DERP relays (cannot decrypt traffic): https://tailscale.com/kb/1232/derp-servers
 - Tailscale clients (Windows, iOS, Android): https://tailscale.com/kb/1347/installation
@@ -123,7 +127,9 @@ The app keeps everything in one SQLite file, so the question that decides is whe
 
 Free tiers change. Re-read these pages before setting anything up.
 
-## 5. If option 1 is chosen: the wording to change (not changed yet)
+## 5. The wording changed for option 1
+
+The maintainer chose option 1 on 2026-11-22 ("Tailscale first"). The texts below are now in `AGENTS.md` and `docs/SPEC.md`.
 
 `docs/DESIGN.md` needs no change: it says only that the server runs on `localhost`, which stays true.
 
@@ -146,4 +152,29 @@ Free tiers change. Re-read these pages before setting anything up.
 
 > - The web app opens on the phone through the private network in §3 (`docs/HOSTING.md`).
 
-If you decide to stay local instead, the one change worth making is to SPEC §3: drop or rethink the home Wi-Fi mode, since over plain HTTP the phone would get no microphone (§2 above).
+## 6. Setting it up (option 1)
+
+Steps 1–4 are the learner's own: they create an account, accept Tailscale's terms and install a network driver, so an agent does not do them. An agent can help with step 5 onwards and check the result.
+
+1. **Account.** At tailscale.com, sign up with an existing Google, Microsoft, GitHub or Apple login. This creates your tailnet (the Personal plan, free).
+2. **The laptop.** Install Tailscale for Windows from tailscale.com/download and sign in with the same login.
+3. **The phone.** Install Tailscale from the App Store or Google Play and sign in with the same login. Turn it on when you want to study away from home; it can stay on at home too.
+4. **Names, before HTTPS.** Certificate names are public (§3.1). In the admin console:
+   - On the **Machines** page, use "Edit machine name" to give the laptop a name that says nothing about you, for example `oknos`.
+   - Optionally, on the **DNS** page, "Rename tailnet" picks a random two-word name instead of `tail<ID>.ts.net`. Once a name is used for certificates it cannot be re-rolled, so decide before step 5.
+5. **Serve the app.** With the app running (`uv run oknos start`), in a normal PowerShell:
+
+   ```
+   tailscale serve --bg 8642
+   ```
+
+   The first time, it asks you to turn on HTTPS for the tailnet; say yes. It prints the address, `https://<machine>.<tailnet>.ts.net`. `tailscale serve status` shows the setting; `tailscale serve reset` removes it.
+6. **Keep the laptop awake.** In Windows Settings → System → Power, set "when plugged in, put my device to sleep after" to **Never**, and leave the laptop plugged in at home. The screen can still turn off.
+7. **On the phone:** open the address in the browser and add it to the home screen. Check that a speaking card records (the browser asks for the microphone once).
+
+What breaks unseen, and the fix:
+- The laptop slept or restarted and the app did not start again: run `uv run oknos start` (the desktop shortcut does the same). Serve comes back by itself.
+- The app started on another port because 8642 was busy: `uv run oknos stop`, free the port, `uv run oknos start`.
+- The phone's Tailscale is off: turn it on in the app.
+
+Never run `tailscale funnel` for this app: it publishes it to the whole internet.

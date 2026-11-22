@@ -180,7 +180,7 @@ These are recorded here because they shape the product. From now on, personal de
   If any of them stops running, the daily app session still works from the content already prepared.
 - **Phone:**
   - The tutor works from the phone through the agent's own mobile access, for example Claude Code Remote Control into the session on the laptop.
-  - The web app gets an opt-in "open on my home Wi-Fi" switch (§3).
+  - The web app opens on the phone through the private network in §3 (`docs/HOSTING.md`).
 
 ### Motivation decisions already made (from the design, sharpened)
 
@@ -205,9 +205,10 @@ These are recorded here because they shape the product. From now on, personal de
 - Coach skills: setup, check-in, capture (class and real life), tutor, daily prep, watch, writing and speaking feedback, rebuilding imported material, import, plan, mock exam (§6).
 - Speaking: the learner records themselves in the browser and compares with a model answer. Recordings stay in `learner/recordings/`. The coach transcribes them locally with faster-whisper (an optional install, with the learner's OK for the model download) and gives feedback.
 - Scheduled agent runs (daily prep, weekly watch), set up only with the learner's explicit OK, through the operating system's scheduler or the harness's own scheduled tasks.
-- An opt-in **home Wi-Fi mode**, so a phone on the same network can open the app.
-  - Off by default.
-  - When on, the app binds to the LAN address and asks for a short PIN shown on the laptop.
+- Opt-in **access from the learner's own devices** (phone, another computer), at home or away, through a private network: Tailscale Serve passes `https://<machine>.<tailnet>.ts.net` to `127.0.0.1:8642` (`docs/HOSTING.md`). It replaces the home Wi-Fi mode planned here first, which over plain HTTP would have given the phone no microphone (decided 2026-11-22).
+  - Off by default; set up only with the learner's yes, as it needs a Tailscale account.
+  - The app is unchanged and listens on `127.0.0.1` only; only the learner's signed-in devices can reach it, over HTTPS, so recording works on the phone.
+  - The laptop must be on and awake.
 - The `b1-keg` and `a2ltr` blueprints, readiness against each pass rule, timed mock exams, and a plan to a target session.
 - Importer for the earlier project (§10) and a short guide for other people's material.
 
@@ -215,7 +216,7 @@ These are recorded here because they shape the product. From now on, personal de
 - Live speech recognition inside the app, and pronunciation scoring. Speaking feedback is after the fact, from the coach.
 - The ΠΕΓΠ blueprint.
 - Any LLM call from the app; any account, sync or telemetry; cloud TTS, except the opt-in edge-tts fallback in §9.
-- Access from outside the home network: no tunnels, no port forwarding.
+- Publishing the app to the internet: no public tunnels (Tailscale Funnel, Cloudflare quick tunnels), no port forwarding, no hosting on a server or app platform (`docs/HOSTING.md`).
 - Picture-based tasks (describing a photo), apart from a speaking card with an image.
 - Content editing inside the app. Content is written by the coach or the importer.
 - Multiple learners in one install, and Copilot-specific instructions.
@@ -888,7 +889,7 @@ Output goes only to `content/private/greek-helper/` with `licence: "private, com
 Also approved on that date, so later phases need not ask the maintainer again:
 - the faster-whisper model download;
 - the scheduled agent runs;
-- the home Wi-Fi switch;
+- the home Wi-Fi switch (replaced on 2026-11-22 by access through Tailscale, §3 and `docs/HOSTING.md`; that one needs the learner's own account, so it is always asked);
 - the edge-tts fallback (§9).
 
 Each is still shown to him when it is set up, and a non-maintainer learner is still asked.
