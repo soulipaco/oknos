@@ -15,12 +15,12 @@ header { display: flex; align-items: baseline; justify-content: space-between; g
 h1 { font-family: var(--serif); font-weight: 600; font-size: 1.4rem; margin: 0 0 10px; }
 h1 small { display: block; font-family: var(--ui); font-weight: 400; font-size: .85rem; color: var(--muted); margin-top: 2px; }
 .langs { display: flex; gap: 4px; }
-.langs button, .replay {
+.langs button, .replay, .sound {
   font: inherit; font-size: .85rem; border: 1px solid var(--line); background: transparent; color: var(--ink);
   border-radius: 999px; padding: 4px 12px; cursor: pointer;
 }
-.langs button[aria-pressed="true"] { background: var(--aegean); border-color: var(--aegean); color: var(--paper); }
-.langs button:focus-visible, .replay:focus-visible, nav.others a:focus-visible { outline: 2px solid var(--aegean); outline-offset: 2px; }
+.langs button[aria-pressed="true"], .sound[aria-pressed="true"] { background: var(--aegean); border-color: var(--aegean); color: var(--paper); }
+.langs button:focus-visible, .replay:focus-visible, .sound:focus-visible, nav.others a:focus-visible { outline: 2px solid var(--aegean); outline-offset: 2px; }
 .frame { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: #f6f2ea; }
 svg.stage { display: block; width: 100%; height: auto; cursor: pointer; }
 .paused .frame::after {

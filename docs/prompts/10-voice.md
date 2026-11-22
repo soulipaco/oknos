@@ -56,6 +56,7 @@ With the winner:
 
 - The open book's people (`docs/brand/CHARACTERS.md`) can have their own voices if the model clones from a reference: Zeynep, Katerina, Giorgos, and a narrator. Reference clips must be original or openly licensed, never a real person's voice without their written yes.
 - The films (`docs/brand/animations/`): each shot has a Greek caption; make one clip per shot (the narrator, or the character who speaks), set each shot's length to its clip, and add a "▶ Play with sound" button (browsers only play sound after a tap). Captions stay on screen. Optional: a quiet ambient bed (wind, cicadas) if it is original or CC0.
+- **Built 2026-11-22** (`scripts/film_voice.py`, `film.js`, `docs/brand/animations/README.md`): Athina narrates, Nestoras says Oknos's "Ωχ!". The clips are made with the maintainer's Azure free tier (F0), whose output the Product Terms do not let us publish (that right is for the paid tier only), so they stay out of git and off the published films page; a paid (S0) resource would change that.
 
 ## Done when
 
