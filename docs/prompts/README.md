@@ -15,6 +15,7 @@ Each file is one prompt for one fresh agent session, run from the repo root. Pas
 | 7 | `07-github.md` | The repo on GitHub, private, with `main` pushed and the tests running in CI; a guard that keeps `learner/` and `content/private/` off it. |
 | 8 | `08-hosting-discovery.md` | Optional, research only: `docs/HOSTING.md`, free ways to use the app away from home (private network, home server, free VPS, free app hosting), and a recommendation. |
 | 10 | `10-voice.md` | A good Greek voice: a blind listening test of open models against today's voice, then audio made ahead of time for words, chapters and listening, voices for the story's people, and narration for the films. |
+| 11 | `11-podcasts.md` | Optional, not started: podcast lessons written as text first, then voiced. One per book chapter, plus personal daily and weekly episodes from the learner's record; explanations in Turkish or English, the learner's choice; enriched from other Greek-teaching material within copyright. |
 
 How to use them:
 
