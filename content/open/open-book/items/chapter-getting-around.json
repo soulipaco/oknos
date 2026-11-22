@@ -1166,5 +1166,149 @@
    "↑"
   ],
   "answer": 0
+ },
+ {
+  "id": "ch06-scene-stasi",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Σωστό ή λάθος;",
+   "en": "Look at the picture. True or false?",
+   "tr": "Resme bak. Doğru mu, yanlış mı?"
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch06-stasi.webp"
+   ]
+  },
+  "explain": {
+   "en": "Zeynep is at the bus stop, not on the bus: the bus is still coming.",
+   "tr": "Zeynep durakta, otobüste değil: otobüs daha geliyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "statements": [
+   {
+    "el": "Η Ζεϊνέπ είναι στη στάση.",
+    "en": "Zeynep is at the bus stop.",
+    "tr": "Zeynep durakta.",
+    "answer": true
+   },
+   {
+    "el": "Το λεωφορείο έρχεται.",
+    "en": "The bus is coming.",
+    "tr": "Otobüs geliyor.",
+    "answer": true
+   },
+   {
+    "el": "Η Ζεϊνέπ είναι στο λεωφορείο.",
+    "en": "Zeynep is on the bus.",
+    "tr": "Zeynep otobüste.",
+    "answer": false
+   },
+   {
+    "el": "Η Ζεϊνέπ είναι στο φαρμακείο.",
+    "en": "Zeynep is at the pharmacy.",
+    "tr": "Zeynep eczanede.",
+    "answer": false
+   }
+  ]
+ },
+ {
+  "id": "ch06-scene-pyrgos",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Διαλέγω το σωστό.",
+   "en": "Look at the picture. Choose the right answer.",
+   "tr": "Resme bak. Doğru cevabı seç."
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch06-pyrgos.webp"
+   ]
+  },
+  "explain": {
+   "en": "Behind Zeynep, by the sea, is the White Tower. The pharmacy is a few minutes away.",
+   "tr": "Zeynep'in arkasında, denizin yanında Beyaz Kule var. Eczane birkaç dakika ötede."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "prompt": {
+   "el": "Πού είναι η Ζεϊνέπ;",
+   "en": "Where is Zeynep?",
+   "tr": "Zeynep nerede?"
+  },
+  "options": [
+   "Κοντά στον Λευκό Πύργο.",
+   "Στη στάση.",
+   "Στο φαρμακείο."
+  ],
+  "answer": 0
+ },
+ {
+  "id": "ch06-scene-compare",
+  "type": "speak",
+  "skill": "speaking",
+  "level": "A1",
+  "exam_task": "a2ltr.speaking.pictures",
+  "topics": [
+   "stage:getting-around"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω τις δύο εικόνες και μιλάω.",
+   "en": "Look at the two pictures and speak.",
+   "tr": "İki resme bak ve konuş."
+  },
+  "ask": {
+   "en": "Say what you see in picture α, then in picture β. The A2 exam has a task like this, with two photos.",
+   "tr": "α resminde ne gördüğünü, sonra β resminde ne gördüğünü söyle. A2 sınavında iki fotoğrafla buna benzer bir görev var."
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch06-stasi.webp",
+    "scene-ch06-pyrgos.webp"
+   ]
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "getting-around",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "prompt": {
+   "el": "Τι βλέπετε στην εικόνα α και τι στην εικόνα β;",
+   "en": "What do you see in picture α, and what in picture β?",
+   "tr": "α resminde ne görüyorsunuz, β resminde ne?"
+  },
+  "seconds": 60,
+  "model": {
+   "el": "Στην εικόνα α η Ζεϊνέπ είναι στη στάση. Ρωτάει μια κυρία. Το λεωφορείο έρχεται. Στην εικόνα β η Ζεϊνέπ είναι κοντά στον Λευκό Πύργο. Ένας κύριος λέει: «Συνεχίστε ευθεία.»",
+   "en": "In picture α Zeynep is at the bus stop. She asks a lady. The bus is coming. In picture β Zeynep is near the White Tower. A man says: «Keep going straight.»",
+   "tr": "α resminde Zeynep durakta. Bir hanıma soruyor. Otobüs geliyor. β resminde Zeynep Beyaz Kule'nin yanında. Bir bey diyor ki: «Dümdüz devam edin.»"
+  },
+  "useful": [
+   "Στην εικόνα α …",
+   "Στην εικόνα β …",
+   "Η Ζεϊνέπ είναι στη στάση.",
+   "Το λεωφορείο έρχεται.",
+   "κοντά στον Λευκό Πύργο"
+  ]
  }
 ]

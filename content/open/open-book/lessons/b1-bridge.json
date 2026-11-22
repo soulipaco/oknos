@@ -109,7 +109,12 @@
               "tr": "Çok teşekkürler.",
               "en": "Thank you very much."
             }
-          ]
+          ],
+          "picture": "scene-ch12-dimos.webp",
+          "picture_alt": {
+            "tr": "Belediyede: memur Zeynep'e formu veriyor; Zeynep kimliğini gösteriyor.",
+            "en": "At the town hall: the clerk gives Zeynep the form; Zeynep shows her ID card."
+          }
         },
         {
           "type": "prose",
@@ -229,7 +234,12 @@
               "tr": "Teşekkürler Giorgos! Dersim yoksa gelirim.",
               "en": "Thanks, Giorgos! If I have no class, I will come."
             }
-          ]
+          ],
+          "picture": "scene-ch12-vivliothiki.webp",
+          "picture_alt": {
+            "tr": "Cumartesi kütüphanede: Zeynep bir kitap okuyor; Giorgos raftan bir kitap alıyor.",
+            "en": "Saturday at the library: Zeynep reads a book; Giorgos takes one from a shelf."
+          }
         },
         {
           "type": "dialogue",
@@ -289,7 +299,8 @@
           "type": "check",
           "items": [
             "open-book/ch12-q-clerk",
-            "open-book/ch12-q-tf"
+            "open-book/ch12-q-tf",
+            "open-book/ch12-scene-dimos"
           ]
         }
       ]

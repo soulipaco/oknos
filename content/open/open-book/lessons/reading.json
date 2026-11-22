@@ -91,7 +91,12 @@
               "tr": "Bir çay, bir yoğurt. Buyurun!",
               "en": "One tea, one yoghurt. Here you are!"
             }
-          ]
+          ],
+          "picture": "scene-ch01-kafe.webp",
+          "picture_alt": {
+            "tr": "Kafede: garson Nikos Zeynep'e bir çay ve bir yoğurt veriyor.",
+            "en": "At the café: Nikos the waiter gives Zeynep a tea and a yoghurt."
+          }
         },
         {
           "type": "prose",
@@ -112,7 +117,8 @@
           "type": "check",
           "items": [
             "open-book/ch01-q-order",
-            "open-book/ch01-q-no"
+            "open-book/ch01-q-no",
+            "open-book/ch01-scene-kafe"
           ]
         }
       ]

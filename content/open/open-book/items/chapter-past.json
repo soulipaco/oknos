@@ -1248,5 +1248,152 @@
       "stage": "past",
       "by": "claude-sonnet"
     }
+  },
+  {
+    "id": "ch09-scene-chalkidiki",
+    "type": "true_false",
+    "skill": "reading",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Κοιτάζω την εικόνα. Σωστό ή λάθος;",
+      "en": "Look at the picture. True or false?",
+      "tr": "Resme bak. Doğru mu, yanlış mı?"
+    },
+    "ask": {
+      "en": "The picture is from last Saturday. Is each sentence true?",
+      "tr": "Resim geçen cumartesiden. Her cümle doğru mu?"
+    },
+    "stimulus": {
+      "pictures": [
+        "scene-ch09-chalkidiki.webp"
+      ]
+    },
+    "explain": {
+      "en": "On Saturday they were at the sea and ate fish in a village. They did not stay at home, and there are no meatballs.",
+      "tr": "Cumartesi denizdeydiler ve bir köyde balık yediler. Evde kalmadılar; köfte de yok."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-opus",
+      "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+    },
+    "statements": [
+      {
+        "el": "Η Ζεϊνέπ και ο Γιώργος έφαγαν ψάρι.",
+        "en": "Zeynep and Giorgos ate fish.",
+        "tr": "Zeynep ve Giorgos balık yedi.",
+        "answer": true
+      },
+      {
+        "el": "Πήγαν στη θάλασσα.",
+        "en": "They went to the sea.",
+        "tr": "Denize gittiler.",
+        "answer": true
+      },
+      {
+        "el": "Έμειναν στο σπίτι.",
+        "en": "They stayed at home.",
+        "tr": "Evde kaldılar.",
+        "answer": false
+      },
+      {
+        "el": "Έφαγαν κεφτέδες.",
+        "en": "They ate meatballs.",
+        "tr": "Köfte yediler.",
+        "answer": false
+      }
+    ]
+  },
+  {
+    "id": "ch09-scene-farmakeio",
+    "type": "mcq",
+    "skill": "reading",
+    "level": "A2",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Κοιτάζω την εικόνα. Διαλέγω το σωστό.",
+      "en": "Look at the picture. Choose the right answer.",
+      "tr": "Resme bak. Doğru cevabı seç."
+    },
+    "stimulus": {
+      "pictures": [
+        "scene-ch09-farmakeio.webp"
+      ]
+    },
+    "explain": {
+      "en": "On Monday Zeynep is back at work, at the pharmacy, with her colleague Sofia.",
+      "tr": "Pazartesi Zeynep yine işte, eczanede, iş arkadaşı Sofia'yla."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-opus",
+      "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+    },
+    "prompt": {
+      "el": "Πού είναι η Ζεϊνέπ τη Δευτέρα;",
+      "en": "Where is Zeynep on Monday?",
+      "tr": "Zeynep pazartesi nerede?"
+    },
+    "options": [
+      "Στο φαρμακείο, με τη Σοφία.",
+      "Στη Χαλκιδική, με τον Γιώργο.",
+      "Στο σπίτι."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "ch09-scene-compare",
+    "type": "speak",
+    "skill": "speaking",
+    "level": "A2",
+    "exam_task": "a2ltr.speaking.pictures",
+    "topics": [
+      "stage:past"
+    ],
+    "rubric": {
+      "el": "Κοιτάζω τις δύο εικόνες και μιλάω.",
+      "en": "Look at the two pictures and speak.",
+      "tr": "İki resme bak ve konuş."
+    },
+    "ask": {
+      "en": "Say what you see in picture α (Monday, now) and in picture β (last Saturday: use the past). The A2 exam has a task like this, with two photos.",
+      "tr": "α resminde (pazartesi, şimdi) ve β resminde (geçen cumartesi: geçmiş zamanı kullan) ne gördüğünü söyle. A2 sınavında iki fotoğrafla buna benzer bir görev var."
+    },
+    "stimulus": {
+      "pictures": [
+        "scene-ch09-farmakeio.webp",
+        "scene-ch09-chalkidiki.webp"
+      ]
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "past",
+      "by": "claude-opus",
+      "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+    },
+    "prompt": {
+      "el": "Τι βλέπετε στην εικόνα α και τι στην εικόνα β;",
+      "en": "What do you see in picture α, and what in picture β?",
+      "tr": "α resminde ne görüyorsunuz, β resminde ne?"
+    },
+    "seconds": 60,
+    "model": {
+      "el": "Στην εικόνα α είναι Δευτέρα πρωί. Η Ζεϊνέπ και η Σοφία είναι στο φαρμακείο και μιλάνε. Στην εικόνα β είναι Σάββατο. Η Ζεϊνέπ και ο Γιώργος πήγαν στη Χαλκιδική. Έφαγαν ψάρι σε ένα χωριό, κοντά στη θάλασσα.",
+      "en": "In picture α it is Monday morning. Zeynep and Sofia are at the pharmacy, talking. In picture β it is Saturday. Zeynep and Giorgos went to Halkidiki. They ate fish in a village, near the sea.",
+      "tr": "α resminde pazartesi sabahı. Zeynep ve Sofia eczanede konuşuyor. β resminde cumartesi. Zeynep ve Giorgos Halkidiki'ye gittiler. Deniz kenarında bir köyde balık yediler."
+    },
+    "useful": [
+      "Στην εικόνα α είναι Δευτέρα.",
+      "Στην εικόνα β είναι Σάββατο.",
+      "πήγαν στη Χαλκιδική",
+      "έφαγαν ψάρι"
+    ]
   }
 ]

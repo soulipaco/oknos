@@ -129,7 +129,12 @@
               "tr": "İstasyonda beni bekleyebilir misin? Görüşürüz! Öpüyorum, Elif",
               "en": "Can you wait for me at the station? See you soon! Love, Elif"
             }
-          ]
+          ],
+          "picture": "scene-ch11-stathmos.webp",
+          "picture_alt": {
+            "tr": "Otogarda: Elif otobüsten iniyor; Zeynep onu bekliyor.",
+            "en": "At the bus station: Elif gets off the coach; Zeynep is waiting for her."
+          }
         },
         {
           "type": "prose",
@@ -155,7 +160,8 @@
           "type": "check",
           "items": [
             "open-book/ch11-q-where",
-            "open-book/ch11-q-tf"
+            "open-book/ch11-q-tf",
+            "open-book/ch11-scene-stathmos"
           ]
         }
       ]

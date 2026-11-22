@@ -181,7 +181,12 @@
               "tr": "Denizde güzel bir gezi olacak!",
               "en": "It will be a lovely trip to the sea!"
             }
-          ]
+          ],
+          "picture": "scene-ch08-ekdromi.webp",
+          "picture_alt": {
+            "tr": "Cumartesi sabahı: Giorgos peynirli börekleri arabaya koyuyor; Zeynep elmalarla geliyor; Marko el sallıyor.",
+            "en": "Saturday morning: Giorgos puts the cheese pies in the car; Zeynep comes with the apples; Marko waves."
+          }
         },
         {
           "type": "prose",
@@ -202,7 +207,8 @@
           "type": "check",
           "items": [
             "open-book/ch08-q-saturday",
-            "open-book/ch08-q-tf"
+            "open-book/ch08-q-tf",
+            "open-book/ch08-scene-ekdromi"
           ]
         }
       ]

@@ -171,7 +171,12 @@
               "tr": "Geçmiş olsun!",
               "en": "Get well soon!"
             }
-          ]
+          ],
+          "picture": "scene-ch10-pyretos.webp",
+          "picture_alt": {
+            "tr": "Zeynep hasta: kanepede, battaniyenin altında muayenehaneyi arıyor; masada ilaç, su ve termometre.",
+            "en": "Zeynep is ill: on the sofa under a blanket, she phones the doctor's office; medicine, water and a thermometer on the table."
+          }
         },
         {
           "type": "prose",
@@ -221,7 +226,12 @@
               "tr": "Torununuza da nice yıllar!",
               "en": "And happy birthday to your grandson!"
             }
-          ]
+          ],
+          "picture": "scene-ch10-parti.webp",
+          "picture_alt": {
+            "tr": "Cumartesi, küçük Nikos'un doğum günü: Zeynep ona bir hediye veriyor; Katerina Hanım peynirli börek getiriyor.",
+            "en": "Saturday, little Nikos's birthday: Zeynep gives him a present; Mrs Katerina brings cheese pies."
+          }
         },
         {
           "type": "prose",
@@ -242,7 +252,9 @@
           "type": "check",
           "items": [
             "open-book/ch10-q-notice",
-            "open-book/ch10-q-time"
+            "open-book/ch10-q-time",
+            "open-book/ch10-scene-pyretos",
+            "open-book/ch10-scene-parti"
           ]
         }
       ]

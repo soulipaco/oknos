@@ -195,7 +195,12 @@
               "tr": "Bir euro yirmi sent. Otobüs geliyor!",
               "en": "One euro twenty. The bus is coming!"
             }
-          ]
+          ],
+          "picture": "scene-ch07-laiki.webp",
+          "picture_alt": {
+            "tr": "Semt pazarında: Stelios Bey Zeynep'e bir torba yeşil elma veriyor; Giorgos'un elinde üç domates.",
+            "en": "At the street market: Mr Stelios gives Zeynep a bag of green apples; Giorgos holds three tomatoes."
+          }
         },
         {
           "type": "dialogue",
@@ -270,7 +275,12 @@
               "tr": "Yirmi beş euro.",
               "en": "Twenty-five euros."
             }
-          ]
+          ],
+          "picture": "scene-ch07-taverna.webp",
+          "picture_alt": {
+            "tr": "Tavernada: garson Dimitris Zeynep'e köfte ve patates getiriyor; Giorgos'un önünde mezeler.",
+            "en": "At the taverna: Dimitris the waiter brings Zeynep meatballs and potatoes; mezes in front of Giorgos."
+          }
         },
         {
           "type": "prose",
@@ -291,7 +301,9 @@
           "type": "check",
           "items": [
             "open-book/ch07-q-time",
-            "open-book/ch07-q-tf"
+            "open-book/ch07-q-tf",
+            "open-book/ch07-scene-laiki",
+            "open-book/ch07-scene-taverna"
           ]
         }
       ]

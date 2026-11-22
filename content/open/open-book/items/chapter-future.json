@@ -1088,5 +1088,104 @@
    "stage": "future",
    "by": "claude-sonnet"
   }
+ },
+ {
+  "id": "ch08-scene-ekdromi",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Σωστό ή λάθος;",
+   "en": "Look at the picture. True or false?",
+   "tr": "Resme bak. Doğru mu, yanlış mı?"
+  },
+  "ask": {
+   "en": "Saturday morning, before the trip. Is each sentence about the trip true?",
+   "tr": "Cumartesi sabahı, geziden önce. Gezi hakkındaki her cümle doğru mu?"
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch08-ekdromi.webp"
+   ]
+  },
+  "explain": {
+   "en": "Giorgos has a car and puts the cheese pies in it; Marko is there too. They are going to the sea, not to the doctor.",
+   "tr": "Giorgos'un arabası var; peynirli börekleri arabaya koyuyor. Marko da orada. Denize gidiyorlar, doktora değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "statements": [
+   {
+    "el": "Θα πάνε με το αυτοκίνητο.",
+    "en": "They will go by car.",
+    "tr": "Arabayla gidecekler.",
+    "answer": true
+   },
+   {
+    "el": "Θα πάνε με το λεωφορείο.",
+    "en": "They will go by bus.",
+    "tr": "Otobüsle gidecekler.",
+    "answer": false
+   },
+   {
+    "el": "Ο Μάρκο θα έρθει μαζί.",
+    "en": "Marko will come along.",
+    "tr": "Marko da onlarla gelecek.",
+    "answer": true
+   },
+   {
+    "el": "Θα πάνε στον γιατρό.",
+    "en": "They will go to the doctor.",
+    "tr": "Doktora gidecekler.",
+    "answer": false
+   }
+  ]
+ },
+ {
+  "id": "ch08-scene-fagito",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:future"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Διαλέγω το σωστό.",
+   "en": "Look at the picture. Choose the right answer.",
+   "tr": "Resme bak. Doğru cevabı seç."
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch08-ekdromi.webp"
+   ]
+  },
+  "explain": {
+   "en": "Giorgos has the cheese pies from the bakery, and Zeynep the apples.",
+   "tr": "Fırından alınan peynirli börekler Giorgos'ta, elmalar Zeynep'te."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "future",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "prompt": {
+   "el": "Τι θα φάνε στην εκδρομή;",
+   "en": "What will they eat on the trip?",
+   "tr": "Gezide ne yiyecekler?"
+  },
+  "options": [
+   "Τυρόπιτες και μήλα.",
+   "Ψάρι και πατάτες.",
+   "Κεφτέδες."
+  ],
+  "answer": 0
  }
 ]

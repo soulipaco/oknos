@@ -1239,5 +1239,100 @@
    "stage": "more-verbs",
    "by": "claude-sonnet"
   }
+ },
+ {
+  "id": "ch04-scene-mathima",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Σωστό ή λάθος;",
+   "en": "Look at the picture. True or false?",
+   "tr": "Resme bak. Doğru mu, yanlış mı?"
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch04-mathima.webp"
+   ]
+  },
+  "explain": {
+   "en": "Mr Pavlos stands at the front and speaks: he is the teacher. Zeynep and Marko sit with their notebooks; nobody is asleep.",
+   "tr": "Pavlos Bey önde duruyor ve konuşuyor: öğretmen o. Zeynep ve Marko defterleriyle oturuyor; uyuyan kimse yok."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "statements": [
+   {
+    "el": "Ο κύριος Παύλος είναι ο δάσκαλος.",
+    "en": "Mr Pavlos is the teacher.",
+    "tr": "Pavlos Bey öğretmen.",
+    "answer": true
+   },
+   {
+    "el": "Ο δάσκαλος μιλάει.",
+    "en": "The teacher is speaking.",
+    "tr": "Öğretmen konuşuyor.",
+    "answer": true
+   },
+   {
+    "el": "Η Ζεϊνέπ και ο Μάρκο κάνουν μάθημα.",
+    "en": "Zeynep and Marko are having a lesson.",
+    "tr": "Zeynep ve Marko ders yapıyor.",
+    "answer": true
+   },
+   {
+    "el": "Ο Μάρκο κοιμάται.",
+    "en": "Marko is asleep.",
+    "tr": "Marko uyuyor.",
+    "answer": false
+   }
+  ]
+ },
+ {
+  "id": "ch04-scene-pou",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:more-verbs"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Διαλέγω το σωστό.",
+   "en": "Look at the picture. Choose the right answer.",
+   "tr": "Resme bak. Doğru cevabı seç."
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch04-mathima.webp"
+   ]
+  },
+  "explain": {
+   "en": "Zeynep is at the Greek class, with Mr Pavlos and Marko.",
+   "tr": "Zeynep Yunanca dersinde, Pavlos Bey ve Marko'yla."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "more-verbs",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "prompt": {
+   "el": "Πού είναι η Ζεϊνέπ;",
+   "en": "Where is Zeynep?",
+   "tr": "Zeynep nerede?"
+  },
+  "options": [
+   "Στο μάθημα.",
+   "Στο φαρμακείο.",
+   "Στο μπαλκόνι."
+  ],
+  "answer": 0
  }
 ]

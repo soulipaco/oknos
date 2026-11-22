@@ -133,7 +133,12 @@
               "tr": "Zeynep. Memnun oldum!",
               "en": "Zeynep. Pleased to meet you!"
             }
-          ]
+          ],
+          "picture": "scene-ch04-mathima.webp",
+          "picture_alt": {
+            "tr": "Akşam dersi: öğretmen Pavlos Bey konuşuyor; Zeynep ve Marko dinliyor.",
+            "en": "The evening class: the teacher, Mr Pavlos, is speaking; Zeynep and Marko listen."
+          }
         },
         {
           "type": "prose",
@@ -240,7 +245,8 @@
           "type": "check",
           "items": [
             "open-book/ch04-q-languages",
-            "open-book/ch04-q-katerina-sleep"
+            "open-book/ch04-q-katerina-sleep",
+            "open-book/ch04-scene-mathima"
           ]
         }
       ]

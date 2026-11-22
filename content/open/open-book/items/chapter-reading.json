@@ -886,5 +886,45 @@
    "stage": "reading",
    "by": "claude-sonnet"
   }
+ },
+ {
+  "id": "ch01-scene-kafe",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:reading"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Διαλέγω το σωστό.",
+   "en": "Look at the picture. Choose the right answer.",
+   "tr": "Resme bak. Doğru cevabı seç."
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch01-kafe.webp"
+   ]
+  },
+  "explain": {
+   "en": "On the counter there are a tea and a yoghurt. Zeynep said no to the halva: «Όχι, ευχαριστώ.»",
+   "tr": "Tezgâhta bir çay ve bir yoğurt var. Zeynep helvaya hayır dedi: «Όχι, ευχαριστώ.»"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "reading",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "prompt": {
+   "el": "Τι παίρνει η Ζεϊνέπ;",
+   "en": "What does Zeynep get?",
+   "tr": "Zeynep ne alıyor?"
+  },
+  "options": [
+   "Ένα τσάι και ένα γιαούρτι.",
+   "Ένα τσάι και έναν χαλβά.",
+   "Ένα γιαούρτι και έναν χαλβά."
+  ],
+  "answer": 0
  }
 ]

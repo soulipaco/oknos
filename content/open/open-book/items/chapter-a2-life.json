@@ -1146,5 +1146,143 @@
       "stage": "a2-life",
       "by": "claude-sonnet"
     }
+  },
+  {
+    "id": "ch10-scene-pyretos",
+    "type": "true_false",
+    "skill": "reading",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Κοιτάζω την εικόνα. Σωστό ή λάθος;",
+      "en": "Look at the picture. True or false?",
+      "tr": "Resme bak. Doğru mu, yanlış mı?"
+    },
+    "stimulus": {
+      "pictures": [
+        "scene-ch10-pyretos.webp"
+      ]
+    },
+    "explain": {
+      "en": "Zeynep is at home on the sofa, with a fever, and phones the doctor's office. She is not at work.",
+      "tr": "Zeynep evde, kanepede; ateşi var ve muayenehaneyi arıyor. İşte değil."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-opus",
+      "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+    },
+    "statements": [
+      {
+        "el": "Η Ζεϊνέπ έχει πυρετό.",
+        "en": "Zeynep has a fever.",
+        "tr": "Zeynep'in ateşi var.",
+        "answer": true
+      },
+      {
+        "el": "Η Ζεϊνέπ τηλεφωνεί στο ιατρείο.",
+        "en": "Zeynep is phoning the doctor's office.",
+        "tr": "Zeynep muayenehaneyi arıyor.",
+        "answer": true
+      },
+      {
+        "el": "Η Ζεϊνέπ είναι στη δουλειά.",
+        "en": "Zeynep is at work.",
+        "tr": "Zeynep işte.",
+        "answer": false
+      }
+    ]
+  },
+  {
+    "id": "ch10-scene-parti",
+    "type": "mcq",
+    "skill": "reading",
+    "level": "A2",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Κοιτάζω την εικόνα. Διαλέγω το σωστό.",
+      "en": "Look at the picture. Choose the right answer.",
+      "tr": "Resme bak. Doğru cevabı seç."
+    },
+    "stimulus": {
+      "pictures": [
+        "scene-ch10-parti.webp"
+      ]
+    },
+    "explain": {
+      "en": "Zeynep gives Nikos a present. The cheese pies are Mrs Katerina's.",
+      "tr": "Zeynep Nikos'a bir hediye veriyor. Peynirli börekler Katerina Hanım'ın."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-opus",
+      "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+    },
+    "prompt": {
+      "el": "Τι κάνει η Ζεϊνέπ στο πάρτι;",
+      "en": "What does Zeynep do at the party?",
+      "tr": "Zeynep partide ne yapıyor?"
+    },
+    "options": [
+      "Δίνει ένα δώρο στον Νίκο.",
+      "Φέρνει τυρόπιτες.",
+      "Τηλεφωνεί στο ιατρείο."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "ch10-scene-compare",
+    "type": "speak",
+    "skill": "speaking",
+    "level": "A2",
+    "exam_task": "a2ltr.speaking.pictures",
+    "topics": [
+      "stage:a2-life"
+    ],
+    "rubric": {
+      "el": "Κοιτάζω τις δύο εικόνες και μιλάω.",
+      "en": "Look at the two pictures and speak.",
+      "tr": "İki resme bak ve konuş."
+    },
+    "ask": {
+      "en": "Say what you see in picture α, then in picture β. The A2 exam has a task like this, with two photos.",
+      "tr": "α resminde ne gördüğünü, sonra β resminde ne gördüğünü söyle. A2 sınavında iki fotoğrafla buna benzer bir görev var."
+    },
+    "stimulus": {
+      "pictures": [
+        "scene-ch10-pyretos.webp",
+        "scene-ch10-parti.webp"
+      ]
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "a2-life",
+      "by": "claude-opus",
+      "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+    },
+    "prompt": {
+      "el": "Τι βλέπετε στην εικόνα α και τι στην εικόνα β;",
+      "en": "What do you see in picture α, and what in picture β?",
+      "tr": "α resminde ne görüyorsunuz, β resminde ne?"
+    },
+    "seconds": 60,
+    "model": {
+      "el": "Στην εικόνα α η Ζεϊνέπ είναι στο σπίτι. Έχει πυρετό και τηλεφωνεί στο ιατρείο. Στην εικόνα β η Ζεϊνέπ είναι καλά. Είναι στο πάρτι του Νίκου, γιατί ο Νίκος έχει γενέθλια. Η κυρία Κατερίνα έχει τυρόπιτες.",
+      "en": "In picture α Zeynep is at home. She has a fever and is phoning the doctor's office. In picture β Zeynep is well. She is at Nikos's party, because Nikos has his birthday. Mrs Katerina has cheese pies.",
+      "tr": "α resminde Zeynep evde. Ateşi var ve muayenehaneyi arıyor. β resminde Zeynep iyi. Nikos'un partisinde, çünkü Nikos'un doğum günü. Katerina Hanım'da peynirli börekler var."
+    },
+    "useful": [
+      "Στην εικόνα α …",
+      "Στην εικόνα β …",
+      "Έχει πυρετό.",
+      "Είναι καλά.",
+      "έχει γενέθλια"
+    ]
   }
 ]

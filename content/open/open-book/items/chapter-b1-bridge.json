@@ -1344,5 +1344,146 @@
    "stage": "b1-bridge",
    "by": "claude-sonnet"
   }
+ },
+ {
+  "id": "ch12-scene-dimos",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Σωστό ή λάθος;",
+   "en": "Look at the picture. True or false?",
+   "tr": "Resme bak. Doğru mu, yanlış mı?"
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch12-dimos.webp"
+   ]
+  },
+  "explain": {
+   "en": "Zeynep is at the town hall, with her ID card, and the clerk gives her the form. The clerk said she needs an application.",
+   "tr": "Zeynep belediyede, kimliği yanında; memur ona formu veriyor. Memur, bir başvuru gerektiğini söyledi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "statements": [
+   {
+    "el": "Το έντυπο δίνεται στη Ζεϊνέπ από την υπάλληλο.",
+    "en": "The form is given to Zeynep by the clerk.",
+    "tr": "Form Zeynep'e memur tarafından veriliyor.",
+    "answer": true
+   },
+   {
+    "el": "Η Ζεϊνέπ έφερε την ταυτότητά της.",
+    "en": "Zeynep brought her ID card.",
+    "tr": "Zeynep kimliğini getirdi.",
+    "answer": true
+   },
+   {
+    "el": "Η υπάλληλος είπε ότι δεν χρειάζεται αίτηση.",
+    "en": "The clerk said that no application is needed.",
+    "tr": "Memur başvuru gerekmediğini söyledi.",
+    "answer": false
+   },
+   {
+    "el": "Η Ζεϊνέπ είναι στη βιβλιοθήκη.",
+    "en": "Zeynep is at the library.",
+    "tr": "Zeynep kütüphanede.",
+    "answer": false
+   }
+  ]
+ },
+ {
+  "id": "ch12-scene-vivliothiki",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Διαλέγω το σωστό.",
+   "en": "Look at the picture. Choose the right answer.",
+   "tr": "Resme bak. Doğru cevabı seç."
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch12-vivliothiki.webp"
+   ]
+  },
+  "explain": {
+   "en": "Zeynep had no class on Saturday, so she went with Giorgos to the library, as he wrote in his note.",
+   "tr": "Zeynep'in cumartesi dersi yoktu; Giorgos'un notunda yazdığı gibi onunla kütüphaneye gitti."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "prompt": {
+   "el": "Πού πήγαν η Ζεϊνέπ και ο Γιώργος το Σάββατο;",
+   "en": "Where did Zeynep and Giorgos go on Saturday?",
+   "tr": "Zeynep ve Giorgos cumartesi nereye gitti?"
+  },
+  "options": [
+   "Στη βιβλιοθήκη.",
+   "Στον δήμο.",
+   "Στο φαρμακείο."
+  ],
+  "answer": 0
+ },
+ {
+  "id": "ch12-scene-library",
+  "type": "speak",
+  "skill": "speaking",
+  "level": "B1",
+  "exam_task": "b1keg.speaking.monologue",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα και μιλάω.",
+   "en": "Look at the picture and speak.",
+   "tr": "Resme bak ve konuş."
+  },
+  "ask": {
+   "en": "Describe the picture, then say whether you like libraries and why. The B1 exam's monologue asks for a photo with reasons.",
+   "tr": "Resmi anlat, sonra kütüphaneleri sevip sevmediğini ve nedenini söyle. B1 sınavının tek başına konuşma bölümü gerekçeli bir fotoğraf anlatımı ister."
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch12-vivliothiki.webp"
+   ]
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "prompt": {
+   "el": "Τι βλέπετε στην εικόνα; Σας αρέσει η βιβλιοθήκη; Γιατί;",
+   "en": "What do you see in the picture? Do you like the library? Why?",
+   "tr": "Resimde ne görüyorsunuz? Kütüphaneyi sever misiniz? Neden?"
+  },
+  "seconds": 90,
+  "model": {
+   "el": "Στην εικόνα η Ζεϊνέπ και ο Γιώργος είναι στη βιβλιοθήκη. Η Ζεϊνέπ διαβάζει ένα βιβλίο και ο Γιώργος παίρνει ένα βιβλίο. Μου αρέσει η βιβλιοθήκη, γιατί είναι ήσυχη και διαβάζω εκεί. Αν έχω χρόνο το Σάββατο, θα πάω κι εγώ.",
+   "en": "In the picture Zeynep and Giorgos are at the library. Zeynep is reading a book and Giorgos is taking a book. I like the library, because it is quiet and I read there. If I have time on Saturday, I'll go too.",
+   "tr": "Resimde Zeynep ve Giorgos kütüphanede. Zeynep bir kitap okuyor, Giorgos bir kitap alıyor. Kütüphaneyi severim, çünkü sessizdir ve orada okurum. Cumartesi vaktim olursa ben de gideceğim."
+  },
+  "useful": [
+   "Στην εικόνα …",
+   "Μου αρέσει … γιατί …",
+   "Αν έχω χρόνο, θα …"
+  ]
  }
 ]

@@ -36,7 +36,9 @@
          {"who": "Κατερίνα", "el": "Ναι, έχει μπαλκόνι.", "tr": "Evet, balkonu var.", "en": "Yes, it has a balcony."},
          {"who": "Ζεϊνέπ", "el": "Ευχαριστώ πολύ, κυρία Κατερίνα.", "tr": "Çok teşekkür ederim Katerina Hanım.", "en": "Thank you very much, Mrs Katerina."},
          {"who": "Κατερίνα", "el": "Παρακαλώ. Γεια σας!", "tr": "Rica ederim. İyi akşamlar!", "en": "You're welcome. Goodbye!"}
-       ]},
+       ],
+       "picture": "scene-ch02-kleidi.webp",
+       "picture_alt": {"tr": "Kapıda: Katerina Hanım Zeynep'e anahtarı veriyor; Zeynep'in yanında küçük bir bavul.", "en": "At the door: Mrs Katerina gives Zeynep the key; a small suitcase beside Zeynep."}},
       {"type": "dialogue",
        "setting": {"tr": "Biraz sonra, merdivende. Katerina Hanım'ın oğlu Giorgos yukarı çıkıyor.",
                    "en": "A little later, on the stairs. Mrs Katerina's son Giorgos is coming up."},
@@ -49,14 +51,16 @@
          {"who": "Ζεϊνέπ", "el": "Όχι, δεν έχω. Έχω ένα χαλί και ένα φλιτζάνι!", "tr": "Hayır, yok. Bir halım ve bir fincanım var!", "en": "No, I don't. I have a rug and a cup!"},
          {"who": "Γιώργος", "el": "Εμείς έχουμε ένα τραπέζι. Είναι για σένα!", "tr": "Bizim bir masamız var. Senin olsun!", "en": "We have a table. It's yours!"},
          {"who": "Ζεϊνέπ", "el": "Ευχαριστώ πολύ, Γιώργο!", "tr": "Çok teşekkürler Giorgos!", "en": "Thanks a lot, Giorgos!"}
-       ]},
+       ],
+       "picture": "scene-ch02-trapezi.webp",
+       "picture_alt": {"tr": "Merdivende: Giorgos bir mutfak masası taşıyor; Zeynep'in elinde bir halı ve bir fincan.", "en": "On the stairs: Giorgos carries a kitchen table up; Zeynep holds a rug and a cup."}},
       {"type": "prose",
        "tr": "Üç küçük not: [[δωμάτια]], *δωμάτιο* kelimesinin çoğulu (çoğul alışveriş bölümünde gelecek). [[στην κουζίνα]] \"mutfakta\" demek; *σε* + artikel kuralı ulaşım bölümünde. [[για σένα]] \"senin için\".",
        "en": "Three small notes: [[δωμάτια]] is the plural of *δωμάτιο* (the plural comes in the shopping chapter). [[στην κουζίνα]] means \"in the kitchen\"; the rule for *σε* + article comes in the chapter on getting around. [[για σένα]] means \"for you\"."}
     ]},
     {"kind": "comprehension", "blocks": [
       {"type": "prose", "tr": "Diyaloglara göre iki kısa soru.", "en": "Two short questions on the dialogues."},
-      {"type": "check", "items": ["open-book/ch02-q-from", "open-book/ch02-q-flat"]}
+      {"type": "check", "items": ["open-book/ch02-q-from", "open-book/ch02-q-flat", "open-book/ch02-scene-kleidi", "open-book/ch02-scene-trapezi"]}
     ]},
     {"kind": "grammar", "title": {"tr": "είμαι: olmak", "en": "είμαι: to be"}, "blocks": [
       {"type": "prose",

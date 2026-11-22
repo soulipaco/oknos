@@ -105,7 +105,12 @@
               "tr": "Rica ederim.",
               "en": "You're welcome."
             }
-          ]
+          ],
+          "picture": "scene-ch06-stasi.webp",
+          "picture_alt": {
+            "tr": "Durakta: yaşlı bir kadın Zeynep'e büfeyi gösteriyor; uzakta otobüs geliyor.",
+            "en": "At the bus stop: an older woman shows Zeynep the kiosk; the bus is coming in the distance."
+          }
         },
         {
           "type": "prose",
@@ -161,7 +166,12 @@
               "tr": "Çok teşekkürler beyefendi!",
               "en": "Thank you very much, sir!"
             }
-          ]
+          ],
+          "picture": "scene-ch06-pyrgos.webp",
+          "picture_alt": {
+            "tr": "Beyaz Kule'nin yanında: bir adam Zeynep'e eczanenin yolunu gösteriyor.",
+            "en": "Near the White Tower: a man shows Zeynep the way to the pharmacy."
+          }
         },
         {
           "type": "prose",
@@ -238,7 +248,8 @@
           "type": "check",
           "items": [
             "open-book/ch06-q-paulos",
-            "open-book/ch06-q-tf"
+            "open-book/ch06-q-tf",
+            "open-book/ch06-scene-stasi"
           ]
         }
       ]

@@ -115,7 +115,12 @@
               "tr": "Köfte!",
               "en": "Meatballs!"
             }
-          ]
+          ],
+          "picture": "scene-ch09-farmakeio.webp",
+          "picture_alt": {
+            "tr": "Pazartesi sabahı eczanede: Zeynep Sofia'ya hafta sonunu anlatıyor.",
+            "en": "Monday morning at the pharmacy: Zeynep tells Sofia about her weekend."
+          }
         },
         {
           "type": "prose",
@@ -165,7 +170,12 @@
               "tr": "Pazar günü evde kaldım.",
               "en": "On Sunday I stayed at home."
             }
-          ]
+          ],
+          "picture": "scene-ch09-chalkidiki.webp",
+          "picture_alt": {
+            "tr": "Cumartesi Halkidiki'de, deniz kenarında bir köyde: Zeynep ve Giorgos balık yiyor.",
+            "en": "Saturday in Halkidiki, in a village by the sea: Zeynep and Giorgos eat fish."
+          }
         }
       ]
     },
@@ -181,7 +191,9 @@
           "type": "check",
           "items": [
             "open-book/ch09-q-transport",
-            "open-book/ch09-q-tf"
+            "open-book/ch09-q-tf",
+            "open-book/ch09-scene-chalkidiki",
+            "open-book/ch09-scene-farmakeio"
           ]
         }
       ]

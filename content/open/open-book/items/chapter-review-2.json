@@ -689,5 +689,64 @@
         "answer": false
       }
     ]
+  },
+  {
+    "id": "ch11-scene-stathmos",
+    "type": "true_false",
+    "skill": "reading",
+    "level": "A2",
+    "topics": [
+      "stage:review-2"
+    ],
+    "rubric": {
+      "el": "Κοιτάζω την εικόνα. Σωστό ή λάθος;",
+      "en": "Look at the picture. True or false?",
+      "tr": "Resme bak. Doğru mu, yanlış mı?"
+    },
+    "ask": {
+      "en": "The picture shows Elif's visit next weekend. Is each sentence true?",
+      "tr": "Resim Elif'in gelecek hafta sonundaki ziyaretini gösteriyor. Her cümle doğru mu?"
+    },
+    "stimulus": {
+      "pictures": [
+        "scene-ch11-stathmos.webp"
+      ]
+    },
+    "explain": {
+      "en": "Elif comes by bus, as she wrote, and Zeynep waits for her at the station.",
+      "tr": "Elif yazdığı gibi otobüsle geliyor; Zeynep onu otogarda bekliyor."
+    },
+    "source": {
+      "doc": "chapter",
+      "stage": "review-2",
+      "by": "claude-opus",
+      "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+    },
+    "statements": [
+      {
+        "el": "Η Ελίφ θα έρθει με το λεωφορείο.",
+        "en": "Elif will come by bus.",
+        "tr": "Elif otobüsle gelecek.",
+        "answer": true
+      },
+      {
+        "el": "Η Ζεϊνέπ θα την περιμένει στον σταθμό.",
+        "en": "Zeynep will wait for her at the station.",
+        "tr": "Zeynep onu otogarda bekleyecek.",
+        "answer": true
+      },
+      {
+        "el": "Η Ελίφ θα έρθει με το αυτοκίνητο.",
+        "en": "Elif will come by car.",
+        "tr": "Elif arabayla gelecek.",
+        "answer": false
+      },
+      {
+        "el": "Η Ζεϊνέπ θα πάει στη Σμύρνη.",
+        "en": "Zeynep will go to Izmir.",
+        "tr": "Zeynep İzmir'e gidecek.",
+        "answer": false
+      }
+    ]
   }
 ]

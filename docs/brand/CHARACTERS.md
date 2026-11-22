@@ -32,6 +32,13 @@ Short looks, kept the same wherever they come back:
 - **Μάρκο** (Marco), the classmate from Italy: a man of about 25, light olive skin, wavy brown hair, an olive-green hoodie.
 - **Ελένη** (Eleni), the baker: a woman of about 50, warm beige skin, brown hair under a white cap, a white apron.
 - **Στέλιος** (Stelios), the greengrocer at the street market: a man of about 60, tanned skin, bald with a white moustache, a green apron over a blue shirt.
+- **Νίκος** (Nikos), the waiter at the café: a man of about 25, warm brown skin, short black hair, a white shirt and a dark-blue apron.
+- **Δημήτρης** (Dimitris), the waiter at the taverna: a man of about 45, light olive skin, short black hair going grey, a black waistcoat over a white shirt.
+- **ο μικρός Νίκος** (little Nikos), Katerina's grandson: a boy of about 8, warm beige skin, curly dark-brown hair, a yellow T-shirt and blue shorts.
+- **Ελίφ** (Elif), Zeynep's friend from Izmir: a woman of about 30, light-beige skin, long wavy auburn hair, a yellow raincoat and blue jeans.
+- **the woman at the bus stop**: a woman of about 70, brown skin, short white hair, a light blue coat, a shopping bag.
+- **the man near the White Tower**: a man of about 45, light skin, short brown hair, a mustard-yellow jacket and grey trousers.
+- **the clerk at the town hall**: a woman of about 45, deep brown skin, short natural black hair, a light olive-green blouse.
 
 ## Reference pictures
 

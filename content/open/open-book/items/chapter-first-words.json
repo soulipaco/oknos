@@ -1195,5 +1195,143 @@
    "stage": "first-words",
    "by": "claude-opus"
   }
+ },
+ {
+  "id": "ch02-scene-kleidi",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Σωστό ή λάθος;",
+   "en": "Look at the picture. True or false?",
+   "tr": "Resme bak. Doğru mu, yanlış mı?"
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch02-kleidi.webp"
+   ]
+  },
+  "explain": {
+   "en": "Mrs Katerina is at the door of the flat and has the key for Zeynep. Zeynep is at the door, not in the bathroom.",
+   "tr": "Katerina Hanım dairenin kapısında; Zeynep'e anahtarı veriyor. Zeynep kapıda, banyoda değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "statements": [
+   {
+    "el": "Η κυρία Κατερίνα έχει ένα κλειδί.",
+    "en": "Mrs Katerina has a key.",
+    "tr": "Katerina Hanım'da bir anahtar var.",
+    "answer": true
+   },
+   {
+    "el": "Η Ζεϊνέπ είναι στην πόρτα.",
+    "en": "Zeynep is at the door.",
+    "tr": "Zeynep kapıda.",
+    "answer": true
+   },
+   {
+    "el": "Η Ζεϊνέπ είναι στο μπάνιο.",
+    "en": "Zeynep is in the bathroom.",
+    "tr": "Zeynep banyoda.",
+    "answer": false
+   }
+  ]
+ },
+ {
+  "id": "ch02-scene-trapezi",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:first-words"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Διαλέγω το σωστό.",
+   "en": "Look at the picture. Choose the right answer.",
+   "tr": "Resme bak. Doğru cevabı seç."
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch02-trapezi.webp"
+   ]
+  },
+  "explain": {
+   "en": "Giorgos carries the table up the stairs. The rug and the cup are Zeynep's: «Έχω ένα χαλί και ένα φλιτζάνι!»",
+   "tr": "Giorgos masayı merdivenden taşıyor. Halı ve fincan Zeynep'in: «Έχω ένα χαλί και ένα φλιτζάνι!»"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "prompt": {
+   "el": "Τι έχει ο Γιώργος;",
+   "en": "What does Giorgos have?",
+   "tr": "Giorgos'ta ne var?"
+  },
+  "options": [
+   "Ένα τραπέζι.",
+   "Ένα χαλί.",
+   "Ένα φλιτζάνι."
+  ],
+  "answer": 0
+ },
+ {
+  "id": "ch02-scene-compare",
+  "type": "speak",
+  "skill": "speaking",
+  "level": "A1",
+  "exam_task": "a2ltr.speaking.pictures",
+  "topics": [
+   "stage:first-words"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω τις δύο εικόνες και μιλάω.",
+   "en": "Look at the two pictures and speak.",
+   "tr": "İki resme bak ve konuş."
+  },
+  "ask": {
+   "en": "Say what you see in picture α, then in picture β. The A2 exam has a task like this, with two photos.",
+   "tr": "α resminde ne gördüğünü, sonra β resminde ne gördüğünü söyle. A2 sınavında iki fotoğrafla buna benzer bir görev var."
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch02-kleidi.webp",
+    "scene-ch02-trapezi.webp"
+   ]
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "first-words",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "prompt": {
+   "el": "Τι βλέπετε στην εικόνα α και τι στην εικόνα β;",
+   "en": "What do you see in picture α, and what in picture β?",
+   "tr": "α resminde ne görüyorsunuz, β resminde ne?"
+  },
+  "seconds": 60,
+  "model": {
+   "el": "Στην εικόνα α η Ζεϊνέπ είναι στην πόρτα. Η κυρία Κατερίνα έχει ένα κλειδί. Στην εικόνα β ο Γιώργος έχει ένα τραπέζι. Η Ζεϊνέπ έχει ένα χαλί και ένα φλιτζάνι.",
+   "en": "In picture α Zeynep is at the door. Mrs Katerina has a key. In picture β Giorgos has a table. Zeynep has a rug and a cup.",
+   "tr": "α resminde Zeynep kapıda. Katerina Hanım'da bir anahtar var. β resminde Giorgos'ta bir masa var. Zeynep'te bir halı ve bir fincan var."
+  },
+  "useful": [
+   "Στην εικόνα α …",
+   "Στην εικόνα β …",
+   "Η Ζεϊνέπ είναι …",
+   "Ο Γιώργος έχει …",
+   "Η Ζεϊνέπ έχει …"
+  ]
  }
 ]

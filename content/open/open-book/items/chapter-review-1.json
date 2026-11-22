@@ -746,5 +746,143 @@
    "en": "We're going to the centre by bus.",
    "tr": "Merkeze otobüsle gidiyoruz."
   }
+ },
+ {
+  "id": "ch07-scene-laiki",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Σωστό ή λάθος;",
+   "en": "Look at the picture. True or false?",
+   "tr": "Resme bak. Doğru mu, yanlış mı?"
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch07-laiki.webp"
+   ]
+  },
+  "explain": {
+   "en": "Zeynep takes the bag of green apples; Giorgos has the three tomatoes.",
+   "tr": "Yeşil elma torbasını Zeynep alıyor; üç domates Giorgos'ta."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "statements": [
+   {
+    "el": "Η Ζεϊνέπ παίρνει μήλα.",
+    "en": "Zeynep takes apples.",
+    "tr": "Zeynep elma alıyor.",
+    "answer": true
+   },
+   {
+    "el": "Ο Γιώργος παίρνει τρεις ντομάτες.",
+    "en": "Giorgos takes three tomatoes.",
+    "tr": "Giorgos üç domates alıyor.",
+    "answer": true
+   },
+   {
+    "el": "Ο Γιώργος παίρνει μήλα.",
+    "en": "Giorgos takes apples.",
+    "tr": "Giorgos elma alıyor.",
+    "answer": false
+   }
+  ]
+ },
+ {
+  "id": "ch07-scene-taverna",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω την εικόνα. Διαλέγω το σωστό.",
+   "en": "Look at the picture. Choose the right answer.",
+   "tr": "Resme bak. Doğru cevabı seç."
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch07-taverna.webp"
+   ]
+  },
+  "explain": {
+   "en": "In front of Zeynep: meatballs and potatoes, as she ordered. The mezes are Giorgos's.",
+   "tr": "Zeynep'in önünde, istediği gibi köfte ve patates var. Mezeler Giorgos'un."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "prompt": {
+   "el": "Τι τρώει η Ζεϊνέπ;",
+   "en": "What is Zeynep eating?",
+   "tr": "Zeynep ne yiyor?"
+  },
+  "options": [
+   "Κεφτέδες και πατάτες.",
+   "Μεζέδες.",
+   "Ψάρι."
+  ],
+  "answer": 0
+ },
+ {
+  "id": "ch07-scene-compare",
+  "type": "speak",
+  "skill": "speaking",
+  "level": "A1",
+  "exam_task": "a2ltr.speaking.pictures",
+  "topics": [
+   "stage:review-1"
+  ],
+  "rubric": {
+   "el": "Κοιτάζω τις δύο εικόνες και μιλάω.",
+   "en": "Look at the two pictures and speak.",
+   "tr": "İki resme bak ve konuş."
+  },
+  "ask": {
+   "en": "Say what you see in picture α, then in picture β. The A2 exam has a task like this, with two photos.",
+   "tr": "α resminde ne gördüğünü, sonra β resminde ne gördüğünü söyle. A2 sınavında iki fotoğrafla buna benzer bir görev var."
+  },
+  "stimulus": {
+   "pictures": [
+    "scene-ch07-laiki.webp",
+    "scene-ch07-taverna.webp"
+   ]
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "review-1",
+   "by": "claude-opus",
+   "pictures": "scenes made by an image model via Codex, reviewed 2026-11-22 (docs/brand/CHARACTERS.md)"
+  },
+  "prompt": {
+   "el": "Τι βλέπετε στην εικόνα α και τι στην εικόνα β;",
+   "en": "What do you see in picture α, and what in picture β?",
+   "tr": "α resminde ne görüyorsunuz, β resminde ne?"
+  },
+  "seconds": 60,
+  "model": {
+   "el": "Στην εικόνα α η Ζεϊνέπ και ο Γιώργος είναι στη λαϊκή. Η Ζεϊνέπ παίρνει μήλα και ο Γιώργος παίρνει ντομάτες. Στην εικόνα β είναι σε μια ταβέρνα. Η Ζεϊνέπ τρώει κεφτέδες και πατάτες. Ο Γιώργος τρώει μεζέδες.",
+   "en": "In picture α Zeynep and Giorgos are at the street market. Zeynep takes apples and Giorgos takes tomatoes. In picture β they are at a taverna. Zeynep is eating meatballs and potatoes. Giorgos is eating mezes.",
+   "tr": "α resminde Zeynep ve Giorgos semt pazarında. Zeynep elma, Giorgos domates alıyor. β resminde bir tavernadalar. Zeynep köfte ve patates yiyor. Giorgos meze yiyor."
+  },
+  "useful": [
+   "Στην εικόνα α …",
+   "Στην εικόνα β …",
+   "είναι στη λαϊκή",
+   "είναι σε μια ταβέρνα",
+   "Η Ζεϊνέπ τρώει …"
+  ]
  }
 ]

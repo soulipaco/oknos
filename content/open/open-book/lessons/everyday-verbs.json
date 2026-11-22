@@ -36,7 +36,9 @@
          {"who": "Ζεϊνέπ", "el": "Ναι! Δεν ξέρω τι λένε, αλλά είναι ωραία.", "tr": "Evet! Ne dediklerini bilmiyorum ama güzel.", "en": "Yes! I don't know what they're saying, but it's lovely."},
          {"who": "Γιώργος", "el": "Η μητέρα μου κάνει κεφτέδες απόψε. Θέλεις;", "tr": "Annem bu akşam köfte yapıyor. İster misin?", "en": "My mother is making meatballs tonight. Would you like some?"},
          {"who": "Ζεϊνέπ", "el": "Ναι, θέλω! Ευχαριστώ, Γιώργο!", "tr": "Evet, isterim! Teşekkürler Giorgos!", "en": "Yes, I would! Thanks, Giorgos!"}
-       ]},
+       ],
+       "picture": "scene-ch03-balkoni.webp",
+       "picture_alt": {"tr": "Pazar sabahı balkonlarda: Zeynep kahve içiyor; Giorgos yan balkonda çay içiyor ve yazıyor.", "en": "Sunday morning on the balconies: Zeynep drinks coffee; Giorgos, next door, drinks tea and writes."}},
       {"type": "prose",
        "tr": "Yeni birkaç kelime: [[φίλους]] \"arkadaşlar(ı)\" (*φίλος* kelimesinin çoğulu), [[ωραία]] \"güzel\", [[η μητέρα μου]] \"annem\", [[απόψε]] \"bu akşam\". [[Τι δουλειά κάνεις;]] şimdilik bir kalıp: \"Ne iş yapıyorsun?\"",
        "en": "A few new words: [[φίλους]] \"friends\" (the plural of *φίλος*), [[ωραία]] \"lovely, nice\", [[η μητέρα μου]] \"my mother\", [[απόψε]] \"tonight\". [[Τι δουλειά κάνεις;]] is a set phrase for now: \"What do you do for a living?\""},
@@ -49,11 +51,13 @@
          {"who": "Ζεϊνέπ", "el": "Συνήθως τρώω στο σπίτι.", "tr": "Genellikle evde yemek yiyorum.", "en": "I usually eat at home."},
          {"who": "Ζεϊνέπ", "el": "Το βράδυ μαθαίνω ελληνικά.", "tr": "Akşamları Yunanca öğreniyorum.", "en": "In the evening I learn Greek."},
          {"who": "Ζεϊνέπ", "el": "Ο Γιώργος, ο γείτονας, δουλεύει στο σπίτι. Κάθε μέρα πίνει τσάι στο μπαλκόνι και γράφει.", "tr": "Komşum Giorgos evde çalışıyor. Her gün balkonda çay içip yazıyor.", "en": "Giorgos, my neighbour, works from home. Every day he drinks tea on the balcony and writes."}
-       ]}
+       ],
+       "picture": "scene-ch03-vradi.webp",
+       "picture_alt": {"tr": "Akşam evde: Zeynep okuyor, yazıyor ve müzik dinliyor.", "en": "Evening at home: Zeynep reads, writes and listens to music."}}
     ]},
     {"kind": "comprehension", "blocks": [
       {"type": "prose", "tr": "Metne göre iki soru.", "en": "Two questions on the text."},
-      {"type": "check", "items": ["open-book/ch03-q-giorgos-work", "open-book/ch03-q-tf"]}
+      {"type": "check", "items": ["open-book/ch03-q-giorgos-work", "open-book/ch03-q-tf", "open-book/ch03-scene-balkoni", "open-book/ch03-scene-vradi"]}
     ]},
     {"kind": "grammar", "title": {"tr": "-ω ile biten fiiller: şimdiki zaman", "en": "Verbs in -ω: the present tense"}, "blocks": [
       {"type": "prose",
