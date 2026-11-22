@@ -135,7 +135,7 @@
     // only with sound on. It fades in, sinks under each clip, fades out at the end and on a pause, and
     // can be turned off. Played through Web Audio (a gapless loop); opened as a file, where a page may
     // not fetch, through a looping <audio> instead.
-    const BED = 0.35, DUCK = 0.2;  // its level between clips and under one
+    const BED = 0.22, DUCK = 0.12;  // its level between clips and under one
     const amb = { src: null, on: true, level: 0, ctx: null, gain: null, el: null, live: false };
     try { amb.on = localStorage.getItem("oknos-anim-ambience") !== "off"; } catch { /* fine */ }
     function ambStart() {  // inside the tap, so the browser lets it sound
