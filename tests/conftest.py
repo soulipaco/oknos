@@ -15,6 +15,15 @@ def _real_clock():
     db.set_clock(None)
 
 
+@pytest.fixture(autouse=True)
+def _no_tailscale(monkeypatch):
+    """Tests never run the real `tailscale` command, so a developer's Tailscale setup cannot
+    change them (tests/test_port.py gives Serve's status as data)."""
+    from oknos import tailnet
+
+    monkeypatch.setattr(tailnet, "_exe", lambda: None)
+
+
 @pytest.fixture(scope="session")
 def _open_without_book(tmp_path_factory):
     """The tracked open packs without the open course's book (one read-only copy per test run)."""

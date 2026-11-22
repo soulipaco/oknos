@@ -47,7 +47,7 @@ Research only, done 2026-11-22. Nothing was installed, no account was made and t
   - Forwarding a port needs no administrator rights (only serving files does).
   - With `--bg` the setting runs in the background and resumes by itself after a reboot.
   - Serve's proxy targets `127.0.0.1`, which is where the app already listens.
-  - The app falls back to the next free port if 8642 is taken; Serve points at one port. Keep 8642 free, or start with `--port 8642`.
+  - Serve points at one port. `oknos start` takes the port it ran on last (8642 the first time, or the next free one), so a restart keeps the phone working. If that port is taken and the app lands on another one, `oknos start` and `oknos health` say so and print the one command that re-points Serve (`tailscale serve --bg <port>`); they only read Serve's setting, never change it. `oknos health` also fails if Funnel is on.
   - HTTPS certificates last 90 days and are renewed automatically. Each certificate goes into the public Certificate Transparency log with the machine's full name, so the machine and tailnet names must hold nothing personal.
   - On the phone, the pre-made voice clips play as on the laptop. Words without a clip use the phone browser's own Greek voice, which differs from Windows'.
 - **Plain WireGuard** (free, GPLv2/MIT, apps for Windows, iOS, Android) avoids the Tailscale account, but needs a port opened on the home router, a way to find the home address when it changes, and its own HTTPS certificate for recording. More work and more exposure than Tailscale, for one person.
@@ -133,9 +133,7 @@ The maintainer chose option 1 on 2026-11-22 ("Tailscale first"). The texts below
 
 `docs/DESIGN.md` needs no change: it says only that the server runs on `localhost`, which stays true.
 
-**`AGENTS.md`, Guardrails**, the first bullet becomes:
-
-> - **Local only.** No accounts in the app, no telemetry, no cloud services that hold learner data or content. The app runs on `localhost` and all learner data stays on the machine. The learner may opt in to opening it from their own devices through a private network (Tailscale Serve, `docs/HOSTING.md`): the app still listens on `127.0.0.1` only, nothing is hosted, and the network's provider cannot read the traffic. Never publish the app to the internet (no Tailscale Funnel, no public tunnel, no port forwarding). The one exception is the opt-in edge-tts fallback in `docs/SPEC.md` §9. It handles content text only, never learner data.
+**`AGENTS.md`, Guardrails**, the first bullet now names access from the learner's own devices through Tailscale Serve as an exception, and says never to publish the app to the internet (no Tailscale Funnel, no public tunnel, no port forwarding). On 2026-11-22 it was also corrected to name the phase-10 voice services (`docs/VOICE.md`) beside edge-tts; see the bullet itself for the current text.
 
 **`docs/SPEC.md` §3, "In"**, the home Wi-Fi bullet and its two sub-bullets become:
 
@@ -174,7 +172,7 @@ Steps 1–4 are the learner's own: they create an account, accept Tailscale's te
 
 What breaks unseen, and the fix:
 - The laptop slept or restarted and the app did not start again: run `uv run oknos start` (the desktop shortcut does the same). Serve comes back by itself.
-- The app started on another port because 8642 was busy: `uv run oknos stop`, free the port, `uv run oknos start`.
+- The app started on another port because its usual one was busy: `uv run oknos start` prints a note with the command, `tailscale serve --bg <port>`. Run it, or `uv run oknos stop`, free the port and `uv run oknos start` again (the app takes the port it used last).
 - The phone's Tailscale is off: turn it on in the app.
 
 Never run `tailscale funnel` for this app: it publishes it to the whole internet.

@@ -67,7 +67,14 @@ def profile_path() -> Path:
 
 
 def port_file() -> Path:
+    """The port of the server running now (removed when it stops)."""
     return learner_dir() / ".port"
+
+
+def last_port_file() -> Path:
+    """The port the app last ran on (kept), so the next start takes it again (Tailscale Serve and
+    the phone's bookmark point at one port)."""
+    return learner_dir() / ".last-port"
 
 
 def audio_cache_dir() -> Path:

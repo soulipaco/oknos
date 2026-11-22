@@ -65,11 +65,43 @@ def _port_is_free(port: int) -> bool:
     return True
 
 
-def choose_port(preferred: int = paths.DEFAULT_PORT) -> int:
-    for port in range(preferred, preferred + 20):
+def last_port() -> int | None:
+    """The port recorded at the last start; a server that was not stopped (the laptop restarted)
+    left only its .port file, which says the same."""
+    for path in (paths.last_port_file(), paths.port_file()):
+        try:
+            port = int(path.read_text(encoding="utf-8").strip())
+        except (OSError, ValueError):
+            continue
+        if 0 < port < 65536:
+            return port
+    return None
+
+
+def remember_port(port: int) -> None:
+    try:
+        paths.last_port_file().write_text(str(port), encoding="utf-8")
+    except OSError:
+        pass
+
+
+def choose_port() -> int:
+    """The port the app last ran on if it is free, else the first free one from 8642."""
+    first = paths.DEFAULT_PORT
+    candidates = list(range(first, first + 20))
+    previous = last_port()
+    if previous:
+        candidates = [previous] + [p for p in candidates if p != previous]
+    for port in candidates:
         if _port_is_free(port):
             return port
-    raise SystemExit(f"No free port between {preferred} and {preferred + 19}.")
+    raise SystemExit(f"No free port between {first} and {first + 19}.")
+
+
+def _tailscale_notes(port: int | None) -> dict:
+    from oknos import tailnet
+
+    return tailnet.check(port)
 
 
 def _open_browser(port: int) -> None:
@@ -85,6 +117,7 @@ def serve_foreground(port: int | None, open_browser: bool) -> int:
     port = port or choose_port()
     app = create_app()
     paths.port_file().write_text(str(port), encoding="utf-8")
+    remember_port(port)
     server = uvicorn.Server(uvicorn.Config(app, host=paths.HOST, port=port, log_level="info"))
 
     if open_browser:
@@ -172,6 +205,8 @@ def cmd_start(args) -> int:
             print(_tail(paths.log_dir() / "server.log"), file=sys.stderr)
             return 1
         print(f"Oknos is running at {_url(port)}")
+    for problem in _tailscale_notes(port)["problems"]:
+        print(f"Note: {problem}")
     if not args.no_browser:
         _open_browser(port)
     return 0
@@ -195,6 +230,7 @@ def cmd_stop(args) -> int:
     else:
         print("Oknos did not stop.", file=sys.stderr)
         return 1
+    remember_port(port)  # a server started by an older version did not record it
     try:
         paths.port_file().unlink()
     except OSError:
@@ -218,10 +254,13 @@ def cmd_health(args) -> int:
             ok=bool(info.get("ok")),
             greek_over_http=info.get("greek_sample") == db.GREEK_SAMPLE,
         )
-    ok = rep["ok"] and (not port or (server["ok"] and server["greek_over_http"])) and (port or not args.server)
+    tailscale = _tailscale_notes(port)
+    ok = (rep["ok"] and (not port or (server["ok"] and server["greek_over_http"])) and (port or not args.server)
+          and not tailscale["problems"])
 
     if args.json:
-        print(json.dumps({"ok": ok, "install": rep, "server": server, "greek_voice": voice}, ensure_ascii=False, indent=2))
+        print(json.dumps({"ok": ok, "install": rep, "server": server, "greek_voice": voice, "tailscale": tailscale},
+                         ensure_ascii=False, indent=2))
         return 0 if ok else 1
 
     def line(good: bool | None, text: str) -> None:
@@ -245,6 +284,10 @@ def cmd_health(args) -> int:
         line(False, "App is not running (start it with: uv run oknos start)")
     else:
         line(None, "App is not running right now (that is fine; start it with: uv run oknos start)")
+    for problem in tailscale["problems"]:
+        line(False, problem)
+    if port and tailscale["serve_ports"] and not tailscale["problems"]:
+        line(True, f"Tailscale Serve passes your devices to port {port}, the app's port")
     if voice["found"] is True:
         line(True, f"Greek voice installed: {', '.join(voice['voices'])}")
     elif voice["found"] is False:
