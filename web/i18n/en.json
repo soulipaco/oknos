@@ -422,5 +422,6 @@
   "voice_foot": "Your agent makes the clips (“make the voices”), or: uv run oknos voice build. Daily prep keeps them up to date.",
   "voice_problem_key": "Needs your key: see “How to set it up” below.",
   "voice_problem_yes": "Needs your yes first: ask your agent.",
-  "voice_problem_install": "Not installed on this computer: ask your agent to run uv sync."
+  "voice_problem_install": "Not installed on this computer: ask your agent to run uv sync.",
+  "home_progress_link": "Your progress: the last 28 days, words and skills"
 }

@@ -522,12 +522,6 @@ details.verb summary .el { font-size: 19px; }
 .home .link-button { align-self: center; }
 .home > .muted.small { max-width: 34em; align-self: center; margin: 4px 0 0; }
 .chapter-line { margin: 10px 0 0; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.progress-fold > summary { cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; }
-.progress-fold > summary::-webkit-details-marker { display: none; }
-.progress-fold > summary::after { content: "▾"; color: var(--muted); }
-.progress-fold[open] > summary::after { content: "▴"; }
-.progress-fold > summary h2 { margin: 0; }
-.progress-fold > section { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
 .map-marks { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
 .mark-chip { padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); font-size: 12px; }
 .mark-chip.on { background: var(--good-soft); border-color: transparent; color: var(--ink); }
@@ -732,7 +726,6 @@ main:has(.home-grid) { max-width: 1040px; }
 .exam-tile .area.mini { grid-template-columns: 96px minmax(0, 1fr); font-size: 13.5px; }
 .exam-tile .exam-switch button { padding: 3px 10px; font-size: 13px; }
 .coach-tile .feedback-ready { margin: 0 0 8px; }
-.progress-fold { margin-top: 18px; }
 @media (max-width: 820px) {
   .home-grid, .tiles { grid-template-columns: minmax(0, 1fr); }
 }
@@ -773,3 +766,14 @@ main:has(.home-grid) { max-width: 1040px; }
 .voice-foot { margin-top: 4px; }
 .voice-link svg { width: 18px; height: 18px; }
 @media (max-width: 520px) { .voice-pc { grid-template-columns: 1fr; } .voice-pc dt { margin-top: 4px; } }
+
+/* your progress, on the exam screen (2026-11-22) */
+.progress-pair { display: grid; gap: 10px; margin-bottom: 18px; }
+.progress-pair .pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 14px; align-items: start; }
+.progress-pair .pair > .panel { margin: 0; min-width: 0; }
+.section-title { font-size: 1.1rem; margin: 4px 0 0; }
+.progress-link { margin: 6px 0 0; }
+
+/* the top bar on a narrow phone: EN / TR instead of the language names */
+.lang-short { display: none; }
+@media (max-width: 420px) { .lang-long { display: none; } .lang-short { display: inline; } }

@@ -422,5 +422,6 @@
   "voice_foot": "Klipleri ajanın yapar (“sesleri yap”), ya da: uv run oknos voice build. Günlük hazırlık onları güncel tutar.",
   "voice_problem_key": "Anahtarın gerekiyor: aşağıdaki “Nasıl kurulur” bölümüne bak.",
   "voice_problem_yes": "Önce senin onayın gerekiyor: ajanına sor.",
-  "voice_problem_install": "Bu bilgisayarda kurulu değil: ajanından uv sync çalıştırmasını iste."
+  "voice_problem_install": "Bu bilgisayarda kurulu değil: ajanından uv sync çalıştırmasını iste.",
+  "home_progress_link": "İlerlemen: son 28 gün, kelimeler ve beceriler"
 }

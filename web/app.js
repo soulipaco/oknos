@@ -428,7 +428,8 @@ function langSwitch() {
           api("/api/profile", { ui_lang: code }).catch(() => {});
           rerender();
         },
-      }, label)));
+        "aria-label": label,
+      }, h("span", { class: "lang-long" }, label), h("span", { class: "lang-short", "aria-hidden": "true" }, code.toUpperCase()))));
 }
 
 function wordmark() {
@@ -709,7 +710,7 @@ async function renderHome() {
     primary = h("button", { class: status === "done" ? "start secondary-start" : "start", type: "button", id: "start", onclick: daily }, startLabel);
     second.push(h("p", { class: "counts muted" }, first ? t("home_first") : todayLine(stats)));
   }
-  const progressPanels = first ? [] : [consistencyGrid(stats), standing(stats)];
+  // Your progress (the 28 days, words and areas) lives on the exam screen since 2026-11-22.
   const words = state.home.words;
   const today = stats.today;
   const rope = status === "resume" && today.planned ? h("div", { class: "today-rope" },
@@ -727,8 +728,7 @@ async function renderHome() {
     ...appBar("home"),
     h("div", { class: "home-grid" }, hero, lessonTile(state.home.curriculum, words)),
     h("div", { class: "tiles" }, coachTile(state.home.coach), datesTile(state.home.coach), examTile(state.home)),
-    progressPanels.length ? h("details", { class: "panel progress-fold" },
-      h("summary", {}, h("h2", {}, t("progress_title"))), ...progressPanels.map(p => { p.classList.remove("panel"); return p; })) : null,
+    first ? null : h("p", { class: "progress-link" }, navLink("exam", [t("home_progress_link"), icon("arrow")], null, "tile-link")),
   );
   document.getElementById("start").focus();
 }
@@ -2265,8 +2265,12 @@ function mocksSection(data) {
 async function renderExam() {
   closePopover();
   state.mock = null;
-  let data;
-  try { data = await api("/api/exam"); } catch { return showError(); }
+  let data, home;
+  try { [data, home] = await Promise.all([api("/api/exam"), api("/api/home")]); } catch { return showError(); }
+  const stats = home.stats;
+  const progress = stats.answers_total ? h("section", { class: "progress-pair" },
+    h("h2", { class: "section-title" }, t("progress_title")),
+    h("div", { class: "pair" }, consistencyGrid(stats), standing(stats))) : null;
   const examCards = data.exams.map(e => {
     const r = e.readiness;
     const rows = r.units.map(u => {
@@ -2304,6 +2308,7 @@ async function renderExam() {
   });
   app.replaceChildren(...appBar("exam"),
     h("section", { class: "summary" }, h("h1", {}, t("exam_title")), h("p", { class: "muted" }, t("exam_honest"))),
+    progress,
     ...examCards, planSection(data), mocksSection(data),
     h("p", { class: "muted small" }, t("exam_legal")));
 }
