@@ -129,7 +129,7 @@ class Provider:
     min_interval: float = 0.0       # seconds between requests (Azure's free tier allows 20 a minute)
     label: str = ""
     family: str = ""                # providers of one family share voices (Azure and edge: Athina, Nestoras)
-    _last: float = field(default=0.0, repr=False)
+    _last: float = field(default=float("-inf"), repr=False)  # never used yet: not busy, whatever the clock says
 
     def ready(self, keys: dict, profile: dict) -> str | None:
         """None if it can be used, else why not (shown to the learner)."""
