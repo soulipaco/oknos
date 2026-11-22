@@ -215,7 +215,7 @@ These are recorded here because they shape the product. From now on, personal de
 **Out, explicitly:**
 - Live speech recognition inside the app, and pronunciation scoring. Speaking feedback is after the fact, from the coach.
 - The ΠΕΓΠ blueprint.
-- Any LLM call from the app; any account, sync or telemetry; cloud TTS, except the opt-in edge-tts fallback in §9.
+- Any LLM call from the app; any account, sync or telemetry; cloud TTS, except the opt-in voice services in §9 (edge-tts, and Azure, Google or OpenAI with the learner's own key), which get content text only.
 - Publishing the app to the internet: no public tunnels (Tailscale Funnel, Cloudflare quick tunnels), no port forwarding, no hosting on a server or app platform (`docs/HOSTING.md`).
 - Picture-based tasks (describing a photo), apart from a speaking card with an image.
 - Content editing inside the app. Content is written by the coach or the importer.
@@ -804,7 +804,7 @@ Every step is checked by the agent before it reports success. The person is neve
   - never with learner data: no writing, no captured documents, nothing from `learner/`;
   - off by default for every install, with each learner asked once before it is switched on.
 
-  This is the one documented exception to the local-only guardrail.
+  This was the one documented exception to the local-only guardrail. Phase 10 (below) widened it to the keyed voice services; access from the learner's own devices through Tailscale Serve (§3) is the other exception: the app still listens on `127.0.0.1` only, and the network's provider cannot read the traffic.
 
 **Phase-3 listening test (2026-11-16).** Eight A2 sentences were rendered by each voice, transcribed locally with faster-whisper `small`, and compared with the text by character error rate (CER). The digits and the word "ασανσέρ" inflate every voice's score equally.
 
@@ -826,7 +826,7 @@ Every step is checked by the agent before it reports success. The person is neve
   - only the Greek content text is sent, never learner data (answers, writing, recordings, captured documents);
   - every service is off until the learner chooses it (the Voice screen or the `setup` skill), and edge-tts also needs `"edge_tts_ok": true`;
   - edge-tts never makes the coach's own texts (packs under `learner/`); a keyed service may, as they are written without personal data (COACHING);
-  - clips stay in `learner/voice/` and are never tracked or shipped.
+  - a learner's clips stay in `learner/voice/` and are never tracked; only the open content's clips are shipped, in `content/open-voice/` (`docs/VOICE.md`).
 
   A listening test of eight voices on ten book sentences, ranked by the maintainer's ear, put Microsoft's Athina and Nestoras first, then Google Chirp 3 HD, then OpenAI gpt-4o-mini-tts; OpenAI tts-1-hd, Chatterbox Multilingual and F5-TTS-Greek were no better than Stefanos. Default for a new learner: Google with their own key.
 
