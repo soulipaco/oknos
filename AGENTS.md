@@ -41,7 +41,7 @@ What works now:
   - The chapter's `words` block places those words in its stage.
   - The home screen's first button is the one next action: read the current chapter, or today's session. Light, dark and system themes.
   - **The home screen** (2026-11-22): a Today card (the greeting, the one next action, the new words waiting, with their pictures) beside the current lesson (its ring and rope, its words with pictures, read and practise), then small tiles for the coach (the donkey), the coming dates and a short "would you pass today?"; the progress fold stays below. `/api/home` carries `words` (`session.home_words`).
-  - **Pictures** (phase 9, started 2026-11-22, `docs/brand/IMAGES.md`): words have pictures made by an image model through Codex, reviewed, and taken in as WebP into `content/open/open-pictures/` (`scripts/pictures.py`). A picture belongs to a word, so any pack's item with that word shows it: on the learn card, after an answer, and in "pick the picture" (`el_picture`).
+  - **Pictures** (phase 9, started 2026-11-22, `docs/brand/IMAGES.md`): words have pictures made by an image model through Codex, reviewed, and taken in as WebP into `content/open/open-pictures/` (`scripts/pictures.py`). A picture belongs to a word, so any pack's item with that word shows it: on the learn card, after an answer, and in "pick the picture" (`el_picture`). By 2026-11-22: 200 pictures, 102 for open words and 98 for nouns of the maintainer's book; 83 of the open book's 218 words and 179 of the book's words have one.
   - **The look** (2026-11-21, `docs/brand/README.md`): every progress bar is a plaited rope, a stage's ring closes as it is learned, the donkey (the agent) sits by the coach's note, the end of a session and an empty screen, and the icons are one line style (no emoji). An empty practice choice says why and leads back.
   - Navigation: every screen has its own URL (`?book`, `?lesson=<stage>`, `?stage=<id>`, `?practise`, `?words`, `?verbs`, `?exam`, `?writing`, `?submission=<id>`, `?mock=<run id>`), so the browser's back and forward work. An app bar on every screen links Home · Book · Practise · Words · Verbs · Exam.
   - The **Book** screen (formerly the course map) is the table of contents. Any chapter can be read, also ahead of the lesson, and the reader links to the previous and next chapters.
@@ -136,7 +136,7 @@ Known limits:
 - A heavy review day can still leave no room for new words in the daily session. After reading, "Practise this chapter" is the way to the new words.
 - The A2-LTR history pack waits until the plan targets an A2-LTR session with an announced date; none is announced. The syllabus PDF needs the learner's yes.
 - Neither exam publishes its speaking points split, and A2-LTR publishes no writing criteria. Those scores are always labelled estimates.
-- The app shows no pictures, so picture-based speaking parts are described in words.
+- Pictures are of single words, so picture-based speaking parts are still described in words.
 - The glossary meanings (open and book) and the book's A2/B1 Turkish meanings are AI-drafted and spot-checked, not checked by a person. A wrong one is fixed through the ⚑ flag or by editing `glossary.json`.
 
 The macOS and Linux shortcuts and schedulers are written but untested.

@@ -3,6 +3,13 @@
  "licence": "CC-BY-SA-4.0",
  "pictures": [
   {
+   "word": "η ταβέρνα",
+   "file": "ch00-taverna.webp",
+   "item": "greek-helper/ch00-taverna",
+   "prompt": "Flat vector-style illustration of a small Greek taverna shop front with a striped awning, a wooden table with two chairs and a carafe of wine outside, no lettering. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Keep every fill completely uniform: no gradients, cast shadows, highlights or texture. Use terracotta for the wooden table and chairs, with no yellow furniture. Simplify the shop front and leave clear paper margins around the whole subject.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
    "word": "το μπάνιο",
    "file": "ch02-banio.webp",
    "item": "open-book/ch02-banio",
@@ -353,6 +360,20 @@
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
+   "word": "ο φραπές",
+   "file": "ch07-frapes.webp",
+   "item": "greek-helper/ch07-frapes",
+   "prompt": "Flat vector-style illustration of a tall glass of iced frappé coffee with a thick foamy top and a straw. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το κουλούρι",
+   "file": "ch07-koulouri.webp",
+   "item": "greek-helper/ch07-koulouri",
+   "prompt": "Flat vector-style illustration of a round Thessaloniki-style sesame bread ring (koulouri) covered in sesame seeds. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
    "word": "αγοράζω",
    "file": "ch08-agorazo.webp",
    "item": "open-book/ch08-agorazo",
@@ -479,6 +500,13 @@
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
+   "word": "το φθινόπωρο",
+   "file": "ch10-fthinoporo.webp",
+   "item": "greek-helper/ch10-fthinoporo",
+   "prompt": "Flat vector-style illustration of a single tree with orange and terracotta leaves, a few leaves falling to the ground, autumn. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
    "word": "τα γενέθλια",
    "file": "ch10-genethlia.webp",
    "item": "open-book/ch10-genethlia",
@@ -549,6 +577,41 @@
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
+   "word": "το αγγούρι",
+   "file": "ch11-aggouri.webp",
+   "item": "greek-helper/ch11-aggouri",
+   "prompt": "Flat vector-style illustration of a whole green cucumber with one thick slice cut off beside it. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Make the cucumber long, slender and cylindrical, clearly a cucumber rather than a squash. The cut flesh is pale light olive #e8efd9 and the small seeds are white, not yellow. No yellow anywhere. Use completely uniform flat fills and no texture or gradients.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το αυγό",
+   "file": "ch11-avgo.webp",
+   "item": "greek-helper/ch11-avgo",
+   "prompt": "Flat vector-style illustration of a single brown egg standing in a small olive-green egg cup. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. The egg cup is one uniform flat olive #4f7227, with no yellow highlights or decorations. Egg shell uses flat terracotta #b0503a with no shine or gradient. No yellow anywhere; plain uniform paper background, crisp even outlines.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η φράουλα",
+   "file": "ch11-fraoula.webp",
+   "item": "greek-helper/ch11-fraoula",
+   "prompt": "Flat vector-style illustration of a single ripe red strawberry with a green leafy top. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "ο μανάβης",
+   "file": "ch11-manavis.webp",
+   "item": "greek-helper/ch11-manavis",
+   "prompt": "Flat vector-style illustration of a smiling greengrocer in an apron standing behind a market stall with crates of tomatoes, oranges and lettuce, no signs or price tags. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, One simple friendly adult figure with dot eyes and a small mouth line, no other facial detail, not resembling any real person. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Use terracotta wooden stall supports and crates, no yellow on furniture or clothing. Show a clearly adult middle-aged greengrocer with a simple dark hair shape. Use uniform flat fills without gradients or texture, and leave paper margins around the complete subject.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το τυρί",
+   "file": "ch11-tyri.webp",
+   "item": "greek-helper/ch11-tyri",
+   "prompt": "Flat vector-style illustration of a wedge of white feta cheese with one slice cut from it. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Show only the feta wedge and its one cut slice. No olives, leaves, garnish, plate or other objects. The white cheese may have a few simple light-blue pore marks. All internal contours use the same dark-navy ink. No yellow, gradients, shadows or texture.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
    "word": "το διαμέρισμα",
    "file": "ch12-diamerisma.webp",
    "item": "open-book/ch12-diamerisma",
@@ -584,6 +647,27 @@
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
+   "word": "το αεροπλάνο",
+   "file": "v-aeroplano.webp",
+   "item": "greek-helper/v-aeroplano",
+   "prompt": "Flat vector-style illustration of a passenger aeroplane flying, side view, no lettering. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Use a white fuselage, Aegean-blue tail and light-blue wings; no arbitrary yellow nose. Keep the entire aeroplane comfortably inside the square with plain paper margins. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "ο αγρότης",
+   "file": "v-agrotis.webp",
+   "item": "greek-helper/v-agrotis",
+   "prompt": "Flat vector-style illustration of a farmer in a straw hat and overalls holding a hoe, standing in front of a few rows of green plants. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, One simple friendly adult figure with dot eyes and a small mouth line, no other facial detail, not resembling any real person. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "τα ακουστικά",
+   "file": "v-akoystika.webp",
+   "item": "greek-helper/v-akoystika",
+   "prompt": "Flat vector-style illustration of a pair of over-ear headphones in terracotta with a curved band. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
    "word": "ο μπακάλης",
    "file": "v-bakalis.webp",
    "item": "open-shared-words-tr/v-bakalis",
@@ -605,10 +689,115 @@
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
+   "word": "ο χάρτης",
+   "file": "v-chartis.webp",
+   "item": "greek-helper/v-chartis",
+   "prompt": "Flat vector-style illustration of a folded paper map with a winding dotted route line, a few blue lakes and green areas, and a red pin, no lettering. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "ο δορυφόρος",
+   "file": "v-doryforos.webp",
+   "item": "greek-helper/v-doryforos",
+   "prompt": "Flat vector-style illustration of a satellite with two blue solar panels and a small dish antenna. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το ελικόπτερο",
+   "file": "v-elikoptero.webp",
+   "item": "greek-helper/v-elikoptero",
+   "prompt": "Flat vector-style illustration of a red and white helicopter with rotor blades, side view, no lettering. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η φάλαινα",
+   "file": "v-falaina.webp",
+   "item": "greek-helper/v-falaina",
+   "prompt": "Flat vector-style illustration of a blue whale swimming, with a small water spout from its blowhole. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
    "word": "το φλιτζάνι",
    "file": "v-flitzani.webp",
    "item": "open-shared-words-tr/v-flitzani",
    "prompt": "Flat vector-style illustration of an empty coffee cup on its saucer. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η φώκια",
+   "file": "v-fokia.webp",
+   "item": "greek-helper/v-fokia",
+   "prompt": "Flat vector-style illustration of a grey seal resting on a rock, looking forward. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το φόρεμα",
+   "file": "v-forema.webp",
+   "item": "greek-helper/v-forema",
+   "prompt": "Flat vector-style illustration of a light-blue summer dress with short sleeves and a belt, on a hanger. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Render at 1024×1024. Strictly flat solid colour fills: no gradients, no shading, no glow, no texture. Use a plain light-blue dress without a decorative print, a terracotta hanger and belt, and a dark-navy buckle; do not add yellow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "φορητός υπολογιστής",
+   "file": "v-foritos-ypologistis.webp",
+   "item": "greek-helper/v-foritos-ypologistis",
+   "prompt": "Flat vector-style illustration of an open laptop with a plain blue screen, no icons, no lettering. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η φωτιά",
+   "file": "v-fotia.webp",
+   "item": "greek-helper/v-fotia",
+   "prompt": "Flat vector-style illustration of a campfire of crossed logs with orange flames. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Only the crossed logs and flames: omit stones, grass and scenery. Every outline and interior line must be dark navy #1e2a32. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "φωτογραφική μηχανή",
+   "file": "v-fotografiki-michani.webp",
+   "item": "greek-helper/v-fotografiki-michani",
+   "prompt": "Flat vector-style illustration of a compact camera with a round lens and a small flash, no lettering. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "ο/η φωτογράφος",
+   "file": "v-fotografos.webp",
+   "item": "greek-helper/v-fotografos",
+   "prompt": "Flat vector-style illustration of a photographer holding a camera up to the eye, standing, with a camera strap around the neck. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, One simple friendly adult figure with dot eyes and a small mouth line, no other facial detail, not resembling any real person. Minimal, calm, friendly, consistent icon-like style for a language-learning app. The camera is Aegean blue and ink, with a light-blue lens and a terracotta neck strap. No yellow anywhere and no backpack or extra accessories. Place the camera's viewfinder against one eye, clearly taking a photograph. Use flat solid fills without gradients or texture.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "φούρνος μικροκυμάτων",
+   "file": "v-foyrnos-mikrokymaton.webp",
+   "item": "greek-helper/v-foyrnos-mikrokymaton",
+   "prompt": "Flat vector-style illustration of a microwave oven with a window door and a round dial, no lettering. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η φούστα",
+   "file": "v-foysta.webp",
+   "item": "greek-helper/v-foysta",
+   "prompt": "Flat vector-style illustration of a terracotta skirt with soft pleats, on a hanger. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "ο γάιδαρος",
+   "file": "v-gaidaros.webp",
+   "item": "greek-helper/v-gaidaros",
+   "prompt": "Flat vector-style illustration of a grey Greek village donkey standing, side view, with a simple halter. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Correction: Show only the standing donkey and its simple halter, no saddle, blanket, baskets, fruit, tassels, decorations or scenery. Keep generous paper margins on all four sides. Use light blue as the stylised cool grey body tone. Strictly solid flat fills, no gradients or shading. Square image, 1024 by 1024 pixels.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η γέφυρα",
+   "file": "v-gefyra.webp",
+   "item": "greek-helper/v-gefyra",
+   "prompt": "Flat vector-style illustration of a stone arched bridge over a river, simple cropped scene. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η γιαγιά",
+   "file": "v-giagia.webp",
+   "item": "greek-helper/v-giagia",
+   "prompt": "Flat vector-style illustration of a grandmother with grey hair in a bun, wearing a cardigan and a long skirt, sitting and knitting with wool and needles. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, One simple friendly adult figure with dot eyes and a small mouth line, no other facial detail, not resembling any real person. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
@@ -619,10 +808,94 @@
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
+   "word": "ο/η γιατρός",
+   "file": "v-giatros.webp",
+   "item": "greek-helper/v-giatros",
+   "prompt": "Flat vector-style illustration of a doctor in a white coat with a stethoscope around the neck, standing, holding a clipboard with no writing. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, One simple friendly adult figure with dot eyes and a small mouth line, no other facial detail, not resembling any real person. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Show an adult woman doctor with warm medium-brown skin and simple dark hair, to vary the people in the set. The clipboard has a terracotta frame and a completely blank white sheet, no yellow. The stethoscope tubing is Aegean blue, clothing white and olive. Use uniform flat fills, no gradients or texture.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "γκαρνταρόμπα",
+   "file": "v-gkarntarompa.webp",
+   "item": "greek-helper/v-gkarntarompa",
+   "prompt": "Flat vector-style illustration of a tall wooden wardrobe with two doors and small handles. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το γραφείο",
+   "file": "v-grafeio.webp",
+   "item": "greek-helper/v-grafeio",
+   "prompt": "Flat vector-style illustration of a wooden desk with a desk lamp, an open blank notebook and a pencil cup, no writing. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "ο ήλιος",
+   "file": "v-ilios.webp",
+   "item": "greek-helper/v-ilios",
+   "prompt": "Flat vector-style illustration of a bright yellow sun with short rays and a simple round disc, no face. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
    "word": "ο καφές",
    "file": "v-kafes.webp",
    "item": "open-shared-words-tr/v-kafes",
    "prompt": "Flat vector-style illustration of a small cup of Greek coffee with foam on a saucer, a little copper briki pot beside it. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το καλάθι",
+   "file": "v-kalathi.webp",
+   "item": "greek-helper/v-kalathi",
+   "prompt": "Flat vector-style illustration of a woven wicker basket with a curved handle, with a few apples inside. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η καμπάνα",
+   "file": "v-kampana.webp",
+   "item": "greek-helper/v-kampana",
+   "prompt": "Flat vector-style illustration of a bronze church bell hanging in a small white arched bell-tower frame. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "ο καναπές",
+   "file": "v-kanapes.webp",
+   "item": "greek-helper/v-kanapes",
+   "prompt": "Flat vector-style illustration of a light-blue three-seater sofa with two cushions. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το κανό",
+   "file": "v-kano.webp",
+   "item": "greek-helper/v-kano",
+   "prompt": "Flat vector-style illustration of a red canoe on calm water with a paddle laid across it. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το καπέλο",
+   "file": "v-kapelo.webp",
+   "item": "greek-helper/v-kapelo",
+   "prompt": "Flat vector-style illustration of a straw hat with a wide brim and a terracotta ribbon. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η καρέκλα",
+   "file": "v-karekla.webp",
+   "item": "greek-helper/v-karekla",
+   "prompt": "Flat vector-style illustration of a simple wooden chair with a woven seat. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το κασκόλ",
+   "file": "v-kaskol.webp",
+   "item": "greek-helper/v-kaskol",
+   "prompt": "Flat vector-style illustration of a long striped scarf in Aegean blue and white with fringes. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η κατσαρόλα",
+   "file": "v-katsarola.webp",
+   "item": "greek-helper/v-katsarola",
+   "prompt": "Flat vector-style illustration of a cooking pot with two handles and a lid, steam rising. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
@@ -640,10 +913,101 @@
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
+   "word": "κινητό τηλέφωνο",
+   "file": "v-kinito-tilefono.webp",
+   "item": "greek-helper/v-kinito-tilefono",
+   "prompt": "Flat vector-style illustration of a modern smartphone with a plain blue screen showing a few simple coloured shapes as icons, no lettering or numbers. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Keep the screen very simple: exactly four small rounded squares in olive, terracotta, light olive and light blue on a solid Aegean-blue screen. No pictograms, speech bubbles, books, headphones, graduation caps or other symbols, and no yellow anywhere. Uniform flat fills with no gradient or texture.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "ο κήπος",
+   "file": "v-kipos.webp",
+   "item": "greek-helper/v-kipos",
+   "prompt": "Flat vector-style illustration of a small garden with flower beds, a blue watering can and a low fence, cropped scene. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το κρεβάτι",
+   "file": "v-krevati.webp",
+   "item": "greek-helper/v-krevati",
+   "prompt": "Flat vector-style illustration of a single bed with a blue blanket and a white pillow. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η λάμπα",
+   "file": "v-lampa.webp",
+   "item": "greek-helper/v-lampa",
+   "prompt": "Flat vector-style illustration of a table lamp with a round lampshade and a base. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Keep the lamp very simple: a plain light-blue round lampshade with no pattern, a straight navy stem, and a plain terracotta round base. No leaves, flowers, decorative motifs, yellow accents, glow, texture, shading, or gradients. Use uniform flat colour fills.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η λίμνη",
+   "file": "v-limni.webp",
+   "item": "greek-helper/v-limni",
+   "prompt": "Flat vector-style illustration of a calm blue lake with a small wooden jetty and a green hill behind it, cropped scene. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. The small jetty must start on the visible green foreground shoreline and extend out into the lake, clearly attached to land, not floating or bridging between two water points. Keep the blue lake the main subject and the hill low behind it. Simplify to a few solid shapes with uniform flat fills and no gradients, texture or shadows.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το λιοντάρι",
+   "file": "v-liontari.webp",
+   "item": "greek-helper/v-liontari",
+   "prompt": "Flat vector-style illustration of a friendly male lion with a full mane, seated, side view. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το μαχαίρι",
+   "file": "v-machairi.webp",
+   "item": "greek-helper/v-machairi",
+   "prompt": "Flat vector-style illustration of a kitchen knife with a wooden handle and a steel blade. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
    "word": "ο μεζές",
    "file": "v-mezes.webp",
    "item": "open-shared-words-tr/v-mezes",
    "prompt": "Flat vector-style illustration of a small plate of meze: olives, feta cubes and bread. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το μολύβι",
+   "file": "v-molyvi.webp",
+   "item": "greek-helper/v-molyvi",
+   "prompt": "Flat vector-style illustration of a yellow pencil with a pink eraser, sharpened. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Use dark navy #1e2a32 for the graphite tip, light terracotta #f5e2da for the pink eraser and exposed wood, and warm yellow #e8b64a for the shaft. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το μωρό",
+   "file": "v-moro.webp",
+   "item": "greek-helper/v-moro",
+   "prompt": "Flat vector-style illustration of a baby wearing a light-blue onesie sitting and holding a rattle. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, One simple friendly adult figure with dot eyes and a small mouth line, no other facial detail, not resembling any real person. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "μπλουζάκι μακό",
+   "file": "v-mployzaki-mako.webp",
+   "item": "greek-helper/v-mployzaki-mako",
+   "prompt": "Flat vector-style illustration of a plain white T-shirt, short sleeves, no print. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το μπολ",
+   "file": "v-mpol.webp",
+   "item": "greek-helper/v-mpol",
+   "prompt": "Flat vector-style illustration of a deep light-blue bowl with a soft olive rim, empty. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η μπότα",
+   "file": "v-mpota.webp",
+   "item": "greek-helper/v-mpota",
+   "prompt": "Flat vector-style illustration of a brown leather ankle boot with laces. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Use terracotta #b0503a as the palette's brown-like leather colour and dark navy for the sole; no olive decorative patches. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το νησί",
+   "file": "v-nisi.webp",
+   "item": "greek-helper/v-nisi",
+   "prompt": "Flat vector-style illustration of a small green island in the blue sea with a tiny white beach and one olive tree, cropped scene. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. The single olive tree has narrow olive-green leaves and small dark-ink olives, no yellow fruit and no lemons. Make the island the main subject, visibly surrounded by blue water on all sides, with the tree modest in size. No yellow anywhere; use uniform flat fills, no gradients or texture.",
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
@@ -654,10 +1018,241 @@
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
+   "word": "το ντους",
+   "file": "v-ntoys.webp",
+   "item": "greek-helper/v-ntoys",
+   "prompt": "Flat vector-style illustration of a wall-mounted shower head with water spraying down in drops. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "ο πάγος",
+   "file": "v-pagos.webp",
+   "item": "greek-helper/v-pagos",
+   "prompt": "Flat vector-style illustration of three clear ice cubes in a light-blue tint, stacked. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το παιδί",
+   "file": "v-paidi.webp",
+   "item": "greek-helper/v-paidi",
+   "prompt": "Flat vector-style illustration of a small child in a terracotta T-shirt holding a round ball, full body. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, One simple friendly adult figure with dot eyes and a small mouth line, no other facial detail, not resembling any real person. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το παλτό",
+   "file": "v-palto.webp",
+   "item": "greek-helper/v-palto",
+   "prompt": "Flat vector-style illustration of a long olive-coloured winter coat with buttons and a collar, on a hanger. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το παντελόνι",
+   "file": "v-panteloni.webp",
+   "item": "greek-helper/v-panteloni",
+   "prompt": "Flat vector-style illustration of a pair of olive-green trousers, folded, with a belt. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το παπούτσι",
+   "file": "v-papoytsi.webp",
+   "item": "greek-helper/v-papoytsi",
+   "prompt": "Flat vector-style illustration of a single sports shoe with laces, side view. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Make the shoe unbranded and plain Aegean blue and white, in a clear side view with visible laces. No side stripes, swooshes, emblems, patches, yellow, or decorative brand-like marks. Solid flat fills only, no shading or gradients.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το πάρκο",
+   "file": "v-parko.webp",
+   "item": "greek-helper/v-parko",
+   "prompt": "Flat vector-style illustration of a park with a path, a wooden bench and two round green trees, simple cropped scene. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το περιστέρι",
+   "file": "v-peristeri.webp",
+   "item": "greek-helper/v-peristeri",
+   "prompt": "Flat vector-style illustration of a grey city pigeon walking, side view. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Use light blue #e2ecf3 for the pigeon's grey-looking body, with dark navy #1e2a32 wing bars; avoid a saturated blue body. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το πιάτο",
+   "file": "v-piato.webp",
+   "item": "greek-helper/v-piato",
+   "prompt": "Flat vector-style illustration of a round white plate with an Aegean-blue rim, with a fork and knife on each side. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. The plate is completely empty, with no food or decoration inside it. One fork to the left and one knife to the right. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "ο πιγκουίνος",
+   "file": "v-pigkoyinos.webp",
+   "item": "greek-helper/v-pigkoyinos",
+   "prompt": "Flat vector-style illustration of a penguin standing upright, side view. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το πλοίο",
+   "file": "v-ploio.webp",
+   "item": "greek-helper/v-ploio",
+   "prompt": "Flat vector-style illustration of a white Greek island ferry boat on blue waves, with a funnel and two decks, no lettering. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. The funnel is solid terracotta with an ink top, no stripes, logos or yellow. Keep the white hull, two decks and simple blue waves. Use the same thick even ink outline for the wave shapes too. No yellow anywhere, no gradient, texture, shadows or glossy shading.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το ποδόσφαιρο",
+   "file": "v-podosfairo.webp",
+   "item": "greek-helper/v-podosfairo",
+   "prompt": "Flat vector-style illustration of a classic football (soccer ball) with black pentagon patches, lying on a grass tuft. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η πολυθρόνα",
+   "file": "v-polythrona.webp",
+   "item": "greek-helper/v-polythrona",
+   "prompt": "Flat vector-style illustration of a cosy terracotta armchair with wooden legs. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το ποτάμι",
+   "file": "v-potami.webp",
+   "item": "greek-helper/v-potami",
+   "prompt": "Flat vector-style illustration of a river winding between two green banks with a few small trees, simple cropped scene. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το πουκάμισο",
+   "file": "v-poykamiso.webp",
+   "item": "greek-helper/v-poykamiso",
+   "prompt": "Flat vector-style illustration of a light-blue shirt with a collar and buttons, on a hanger. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το πουλί",
+   "file": "v-poyli.webp",
+   "item": "greek-helper/v-poyli",
+   "prompt": "Flat vector-style illustration of a small songbird perched on a branch with leaves. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το πουλόβερ",
+   "file": "v-poylover.webp",
+   "item": "greek-helper/v-poylover",
+   "prompt": "Flat vector-style illustration of a thick terracotta knitted jumper with a round neck. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Use solid, flat, uniform terracotta fills without gradients or shading. Make the jumper plain, with simple navy lines at the cuffs and collar to suggest knit; no decorative motifs, holiday patterns, or yellow accents.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το πρόβατο",
+   "file": "v-provato.webp",
+   "item": "greek-helper/v-provato",
+   "prompt": "Flat vector-style illustration of a white sheep with a woolly coat, standing, side view. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το ψυγείο",
+   "file": "v-psygeio.webp",
+   "item": "greek-helper/v-psygeio",
+   "prompt": "Flat vector-style illustration of a tall white fridge with a small freezer door on top and handles, no lettering. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το ραδιόφωνο",
+   "file": "v-radiofono.webp",
+   "item": "greek-helper/v-radiofono",
+   "prompt": "Flat vector-style illustration of a retro radio with a round speaker grille, a tuning dial and an antenna, no lettering or numbers. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το ροδάκινο",
+   "file": "v-rodakino.webp",
+   "item": "greek-helper/v-rodakino",
+   "prompt": "Flat vector-style illustration of a ripe peach with a leaf and a slice showing the stone. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow, no glossy highlights.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το ρομπότ",
+   "file": "v-rompot.webp",
+   "item": "greek-helper/v-rompot",
+   "prompt": "Flat vector-style illustration of a friendly boxy toy robot with antennae, round eyes and a small smile, standing. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το ρύζι",
+   "file": "v-ryzi.webp",
+   "item": "greek-helper/v-ryzi",
+   "prompt": "Flat vector-style illustration of a bowl of white rice with a spoon. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow. Show distinct white rice grains outlined in dark navy so the food clearly reads as rice.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το σακάκι",
+   "file": "v-sakaki.webp",
+   "item": "greek-helper/v-sakaki",
+   "prompt": "Flat vector-style illustration of a dark-blue jacket with lapels and two buttons, on a hanger. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το σακίδιο",
+   "file": "v-sakidio.webp",
+   "item": "greek-helper/v-sakidio",
+   "prompt": "Flat vector-style illustration of an olive-green backpack with two straps and a front pocket. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η σαλάτα",
+   "file": "v-salata.webp",
+   "item": "greek-helper/v-salata",
+   "prompt": "Flat vector-style illustration of a Greek salad in a white bowl with tomato wedges, cucumber slices, red onion rings, olives and a slab of white feta with oregano. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "σανδάλια",
+   "file": "v-sandalia.webp",
+   "item": "greek-helper/v-sandalia",
+   "prompt": "Flat vector-style illustration of a pair of brown leather sandals with straps. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το σάντουιτς",
+   "file": "v-santoyits.webp",
+   "item": "greek-helper/v-santoyits",
+   "prompt": "Flat vector-style illustration of a sandwich of two slices of bread with cheese, tomato and lettuce visible, cut diagonally. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η σκηνή",
+   "file": "v-skini.webp",
+   "item": "greek-helper/v-skini",
+   "prompt": "Flat vector-style illustration of an olive-green dome camping tent with its door flap open and a small guy rope. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
    "word": "το σοκάκι",
    "file": "v-sokaki.webp",
    "item": "open-shared-words-tr/v-sokaki",
    "prompt": "Flat vector-style illustration of a narrow Greek alley with white walls, steps and flower pots. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η σοκολάτα",
+   "file": "v-sokolata.webp",
+   "item": "greek-helper/v-sokolata",
+   "prompt": "Flat vector-style illustration of a chocolate bar partly unwrapped from plain paper, with a few squares broken off. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "σορτς",
+   "file": "v-sorts.webp",
+   "item": "greek-helper/v-sorts",
+   "prompt": "Flat vector-style illustration of a pair of olive-green shorts with a drawstring. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "στικάκι",
+   "file": "v-stikaki.webp",
+   "item": "greek-helper/v-stikaki",
+   "prompt": "Flat vector-style illustration of a small USB memory stick with a cap and a loop for a keyring, no lettering. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το στυλό",
+   "file": "v-stylo.webp",
+   "item": "greek-helper/v-stylo",
+   "prompt": "Flat vector-style illustration of a ballpoint pen with a clip, angled. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
@@ -668,6 +1263,13 @@
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
+   "word": "ο τάρανδος",
+   "file": "v-tarandos.webp",
+   "item": "greek-helper/v-tarandos",
+   "prompt": "Flat vector-style illustration of a reindeer standing with large branching antlers, side view. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. A natural unadorned animal: no saddle, no blanket, no clothing, no harness, no decorative motifs. Use terracotta for the body, pale terracotta for the antlers, and dark navy for the hooves. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
    "word": "το ταβάνι",
    "file": "v-tavani.webp",
    "item": "open-shared-words-tr/v-tavani",
@@ -675,10 +1277,31 @@
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
+   "word": "η τηλεόραση",
+   "file": "v-tileorasi.webp",
+   "item": "greek-helper/v-tileorasi",
+   "prompt": "Flat vector-style illustration of a flat-screen television on a small stand with a plain blue screen, no lettering. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το τρακτέρ",
+   "file": "v-trakter.webp",
+   "item": "greek-helper/v-trakter",
+   "prompt": "Flat vector-style illustration of a green farm tractor with large rear wheels, side view. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Strict side profile with one large rear wheel and one small front wheel visible. Use dark navy for the tyres and olive #4f7227 for the tractor. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow, no glossy highlights.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
    "word": "το τσάι",
    "file": "v-tsai.webp",
    "item": "open-shared-words-tr/v-tsai",
    "prompt": "Flat vector-style illustration of a cup of tea with a tea bag string hanging over the side and a lemon slice. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η τσάντα",
+   "file": "v-tsanta.webp",
+   "item": "greek-helper/v-tsanta",
+   "prompt": "Flat vector-style illustration of a terracotta handbag with a handle and a gold clasp. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
@@ -693,6 +1316,48 @@
    "file": "v-tzami.webp",
    "item": "open-shared-words-tr/v-tzami",
    "prompt": "Flat vector-style illustration of a window pane with a wooden frame and the sky seen through it. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το τζιν",
+   "file": "v-tzin.webp",
+   "item": "greek-helper/v-tzin",
+   "prompt": "Flat vector-style illustration of a pair of blue jeans, folded, with visible stitching and pockets. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "η βαλίτσα",
+   "file": "v-valitsa.webp",
+   "item": "greek-helper/v-valitsa",
+   "prompt": "Flat vector-style illustration of a medium suitcase with a handle and two wheels, in Aegean blue. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το βέλος",
+   "file": "v-velos.webp",
+   "item": "greek-helper/v-velos",
+   "prompt": "Flat vector-style illustration of a single arrow with feathers on one end and a pointed head. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το βιβλίο",
+   "file": "v-vivlio.webp",
+   "item": "greek-helper/v-vivlio",
+   "prompt": "Flat vector-style illustration of a closed hardcover book in Aegean blue with a plain cover, no title. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το βουνό",
+   "file": "v-voyno.webp",
+   "item": "greek-helper/v-voyno",
+   "prompt": "Flat vector-style illustration of a snow-capped mountain with a green lower slope, simple cropped scene. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το βραβείο",
+   "file": "v-vraveio.webp",
+   "item": "greek-helper/v-vraveio",
+   "prompt": "Flat vector-style illustration of a golden trophy cup with two handles on a small base. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow, no glossy highlights.",
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
@@ -714,6 +1379,27 @@
    "file": "v-xasapis.webp",
    "item": "open-shared-words-tr/v-xasapis",
    "prompt": "Flat vector-style illustration of a butcher in a white apron behind a meat counter. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos. One simple friendly adult figure with dot eyes and a small mouth line, no other facial detail, not resembling any real person. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output one square PNG at 1024×1024. Every colour region must be a uniform solid fill: no gradients, shading, highlights, shadows, texture or lighting effects. The face contains exactly two small round dot eyes and one short mouth line: no eyebrows, nose, eyelashes, cheek marks, wrinkles or inner-ear details. Keep the figure waist-up or full-body, fully inside the square with generous paper margins. Do not use yellow for clothing, furniture, fittings or backgrounds; reserve yellow only for inherently yellow objects. Use ink or terracotta for wooden furniture. Truly solid vector fills, no tonal variation within any shape. Show one mature adult male butcher with warm beige skin, simple white hair, a light-blue shirt and plain white apron behind a small meat counter. On the counter are a few simple terracotta meat cuts with pale centres and linked sausages; no gore, no blood. The job is conveyed by apron and meat, with no knife needed. No labels, prices, badges, text or lettering. Correction: eliminate tonal gradients from skin, clothes, meat and counter. Scale the combined figure and counter to around 70% of the square with a paper margin.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το ξενοδοχείο",
+   "file": "v-xenodocheio.webp",
+   "item": "greek-helper/v-xenodocheio",
+   "prompt": "Flat vector-style illustration of a three-storey hotel building with balconies and an awning at the entrance, no lettering, cropped scene. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Use an Aegean-blue and white striped entrance awning, with no yellow anywhere. Keep exactly three storeys including the ground floor, two simple balconies on each upper floor, and a clear entrance. Simplify the facade and use consistent thick ink outlines on all details. Uniform flat fills only, no gradients, texture or shadows.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "το ξυπνητήρι",
+   "file": "v-xypnitiri.webp",
+   "item": "greek-helper/v-xypnitiri",
+   "prompt": "Flat vector-style illustration of a classic twin-bell alarm clock with a plain face, tick marks only and no numerals, and little legs. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "τα ζυμαρικά",
+   "file": "v-zymarika.webp",
+   "item": "greek-helper/v-zymarika",
+   "prompt": "Flat vector-style illustration of a plate of spaghetti with tomato sauce and a basil leaf. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Output exactly 1024 by 1024 pixels. Every coloured region and the paper background must be a perfectly uniform solid fill: no gradients, no texture, no lighting, no shading, no shadow, no glossy highlights.",
    "made": "image model via Codex, reviewed 2026-11-22"
   }
  ]
