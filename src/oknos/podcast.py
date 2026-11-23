@@ -30,9 +30,11 @@ from oknos import greek, lint, paths, voice
 
 ID = re.compile(r"^[a-z0-9][a-z0-9.\-]{0,79}$")
 RATE = 24_000          # the episode's sample rate (mono); the voice services send 24 kHz
-GAP = 0.35             # the breath after each line of speech, in seconds
+GAP = 0.45             # the breath after each line of speech, in seconds
 ECHO_EXTRA = 1.0       # an echo gap is the last line's length × its factor, plus this
-CHARS_PER_SECOND = {"el": 11.0, "tr": 14.0, "en": 14.0}  # for the estimate before anything is made
+SILENCE_DB = -50       # below this, the start and end of a clip count as silence and are trimmed
+# For the estimate before anything is made (fitted to the pilot: Azure Athina and Emel, clips trimmed).
+CHARS_PER_SECOND = {"el": 10.5, "tr": 14.0, "en": 14.0}
 
 
 class PodcastError(Exception):
@@ -263,8 +265,13 @@ def _run(args: list[str]) -> None:
 
 
 def _to_wav(exe: str, clip: Path, out: Path, speed: float) -> bytes:
-    """The clip as raw 16-bit mono frames at RATE, slowed with atempo (the pitch stays)."""
-    filters = [f"atempo={speed:.3f}"] if speed < 0.999 else []
+    """The clip as raw 16-bit mono frames at RATE: the services' silence at both ends trimmed (the
+    script's own pauses and gaps set the rhythm, and an echo gap is measured on the speech alone),
+    then slowed with atempo (the pitch stays)."""
+    trim = f"silenceremove=start_periods=1:start_threshold={SILENCE_DB}dB:start_silence=0.05"
+    filters = [trim, "areverse", trim, "areverse"]
+    if speed < 0.999:
+        filters.append(f"atempo={speed:.3f}")
     filters.append(f"aresample={RATE}")
     _run([exe, "-v", "error", "-y", "-i", str(clip), "-af", ",".join(filters), "-ac", "1", "-ar", str(RATE),
           "-c:a", "pcm_s16le", str(out)])

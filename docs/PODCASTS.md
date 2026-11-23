@@ -2,7 +2,7 @@
 
 Audio lessons to listen to hands-free: on the way to work, while cooking. Each episode is written as **text first** (a script), checked, and then made into one audio file with the voice services the app already uses (`docs/VOICE.md`). The brief and its history are in `docs/prompts/11-podcasts.md`; this file is how it works.
 
-Status (2026-11-23): the pilot. One episode per book chapter, written by the agent with the `podcast` skill, played on the app's Podcast page. Personal daily and weekly episodes and the enrichment loop come later (below).
+Status (2026-11-23): the pilot. The first episode is the book's Lesson 1 in Turkish: 9 parts, 12.8 minutes, 4,833 Azure characters (76 Turkish and 17 new Greek clips; the dialogue's Greek clips were already there). It waits for the maintainer's ear before more are made. One episode per book chapter, written by the agent with the `podcast` skill, played on the app's Podcast page. Personal daily and weekly episodes and the enrichment loop come later (below).
 
 ## Decisions (agreed with the maintainer, 2026-11-23)
 
@@ -64,7 +64,7 @@ uv run oknos podcast check book.lesson-01.tr
 uv run oknos podcast render book.lesson-01.tr --wait
 ```
 
-`render` makes the missing clips through the voice chain (`voice.make`; a Greek clip the app already has is reused), then joins them with ffmpeg: each clip at its speed (`atempo`), the silences, one loudness pass, one mp3 (`episode.mp3`). `episode.json` beside it holds the length, the time of each part, the characters used and the services that spoke. ffmpeg must be installed (it is for the films).
+`render` makes the missing clips through the voice chain (`voice.make`; a Greek clip the app already has is reused), then joins them with ffmpeg: each clip with the services' silence at both ends trimmed and at its speed (`atempo`), a short breath after each line, the script's pauses and gaps, one loudness pass (−16 LUFS), one mp3 (`episode.mp3`, 64 kb/s mono, about 6 MB for 13 minutes). `episode.json` beside it holds the length, the time of each part, the characters used and the services that spoke. ffmpeg must be installed (it is for the films).
 
 Turkish and English clips are kept in `learner/voice/<lang>/` beside the Greek ones. edge-tts never makes them: the scripts are the agent's own texts (SPEC §9).
 
