@@ -42,6 +42,8 @@ From the listening test of 2026-11-22 (ten sentences from the open book, the sam
 
 Tested and not offered: OpenAI tts-1-hd (unclear Greek), Chatterbox Multilingual and F5-TTS-Greek (local models, no better than the browser's voice here).
 
+For the podcast lessons (`docs/PODCASTS.md`) each keyed service also speaks Turkish and English: Azure Emel and Ahmet (tr), Ava and Andrew (en); Google Chirp 3 HD Kore and Orus (tr-TR, en-US); OpenAI coral and ash. Those clips are kept in `learner/voice/tr/` and `learner/voice/en/`; edge-tts never makes them, as the scripts are the agent's own texts.
+
 Each character in the book's dialogues gets a voice of their kind (Zeynep and Katerina the female voice, Giorgos and Stelios the male one; `src/oknos/speakers.json`), so a dialogue sounds like two people.
 
 ## Setting a service up

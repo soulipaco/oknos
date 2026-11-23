@@ -1,6 +1,6 @@
 # Phase 11 (optional): podcast lessons
 
-Status: on the roadmap, optional, not started. Added 2026-11-23 from a conversation with the maintainer. When it starts, the first step is to turn this brief into a plan agreed with the maintainer, as earlier phases did.
+Status: started 2026-11-23. The plan agreed with the maintainer and how it works are in `docs/PODCASTS.md`; the pilot (one book chapter as an episode, the renderer and the Podcast page) is built. Added to the roadmap 2026-11-23 from a conversation with the maintainer; this brief is kept as the record.
 
 Read `AGENTS.md`, `docs/SPEC.md` (§9, audio and speech), `docs/VOICE.md`, `docs/LESSONS.md` and `docs/COACHING.md` first.
 
@@ -30,8 +30,9 @@ Short audio lessons to listen to hands-free, e.g. while starting work in the mor
 - Anything taken from such sources (notes, transcripts, word lists) is private: it goes in `content/private/` or `learner/`, never in tracked content.
 - Episodes that ship with the repository (if any) come only from original or openly licensed content and a voice whose terms allow publishing (today: Google, as for the shipped clips).
 
-## Open questions for the plan
+## Open questions for the plan (settled 2026-11-23, `docs/PODCASTS.md`)
 
-- Where the episodes are played: the app's page, a file synced to the phone, or a private feed over the tailnet.
-- How the enrichment loop finds and records sources (the learner names them, or the agent proposes them), and how often it runs.
-- Format details: how many pauses for shadowing, slow then normal speed, where the answers to listening questions go.
+- Where the episodes are played: the app's page, a file synced to the phone, or a private feed over the tailnet. **Settled:** the app's Podcast page, with a download link.
+- How the enrichment loop finds and records sources (the learner names them, or the agent proposes them), and how often it runs. **Settled:** the agent proposes, the maintainer says yes or no per source, a private list in `learner/podcasts/sources.json`; while writing, the agent may also search the web for ideas when the book and the open book are thin, recorded in the script's `sources`. Not built in the pilot.
+- Format details: how many pauses for shadowing, slow then normal speed, where the answers to listening questions go. **Settled for the pilot:** dialogue at normal speed, then line by line slower with a gap to repeat, words with a gap, the explanation, a question with a thinking gap and its answer, the dialogue once more; tuned after the maintainer listens.
+- Also settled: the agent writes the scripts (spoken style); the explanation voice follows the learner's voice settings (Azure Emel for the maintainer); episodes come from the book's chapter, then the open book's, then web ideas.

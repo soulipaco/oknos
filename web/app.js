@@ -343,6 +343,7 @@ const SCREENS = {
   mock: (id) => renderMockRun(Number(id)),
   voice: () => renderVoice(),
   films: (n) => renderFilms(n),
+  podcast: (id) => renderPodcast(id),
 };
 const SCREEN_ALIASES = { map: "book" };  // older links
 
@@ -649,6 +650,7 @@ function coachTile(coach) {
   }
   blocks.push(h("p", { class: "small muted" }, t("tutor_line")));
   if (coach.submissions_total) blocks.push(navLink("writing", t("your_writing"), null, "tile-link"));
+  if (state.home?.podcasts) blocks.push(navLink("podcast", [icon("headphones"), t("pod_link_home", { n: state.home.podcasts })], null, "tile-link films-link"));
   blocks.push(navLink("films", [icon("film"), t("films_link_coach")], null, "tile-link films-link"));
   return h("section", { class: "tile coach-tile" }, ...blocks);
 }
@@ -1725,8 +1727,8 @@ function lessonStatus(st) {
 async function renderBook() {
   // The book: where you are (one big card), then every lesson by level, each with its ring and a few of its pictures.
   closePopover();
-  let cur;
-  try { cur = await api("/api/curriculum"); } catch { return showError(); }
+  let cur, pods;
+  try { [cur, pods] = await Promise.all([api("/api/curriculum"), podcastsByStage()]); } catch { return showError(); }
   if (!cur.curriculum) return go("home", null, { replace: true });
   const pics = cur.pictures || {};
   const idx = Math.max(0, cur.stages.findIndex(s => s.id === cur.current?.id));
@@ -1740,6 +1742,7 @@ async function renderBook() {
   if (cst.state !== "locked" && (!cst.chapter || cst.chapter.read)) {
     actions.push(h("button", { class: "primary", type: "button", onclick: () => startSession("choose", [], { what: "all", stage: cst.id, minutes: 10 }) }, t("stage_practise")));
   }
+  if (pods[cst.id]) actions.push(podListenLink(pods[cst.id], "secondary-link"));
   actions.push(navLink("stage", t("bk_see_lesson"), cst.id, "secondary-link"));
   const heroPics = pics[cst.id] || [];
   const hero = h("section", { class: "bk-hero", "aria-label": t("bk_here") },
@@ -1775,6 +1778,7 @@ async function renderBook() {
             st.chapter ? h("span", { class: "bk-chapter" }, tr(st.chapter.title)) : st.theme ? h("span", { class: "bk-chapter" }, tr(st.theme)) : null)),
         picStrip(pics[st.id]),
         h("div", { class: "bk-tile-foot" }, h("span", { class: `bk-state ${kind}` }, line),
+          pods[st.id] ? navLink("podcast", [icon("headphones"), t("pod_listen_short")], pods[st.id], "bk-read") : null,
           st.chapter ? navLink("lesson", [icon("book"), st.chapter.read ? t("ch_reread_short") : t("bk_read")], st.id, "bk-read") : null));
     });
     const head = h("div", { class: "bk-group-head" },
@@ -2151,6 +2155,7 @@ function sectionFlag(stage, index) {
 async function renderChapter(stageId) {
   resetScreens();
   let ch;
+  const podsP = podcastsByStage();
   try { ch = await api(`/api/chapters/${encodeURIComponent(stageId)}`); } catch {
     app.replaceChildren(...appBar("book"), h("div", { class: "center-note" }, t("ch_none")));
     return;
@@ -2185,6 +2190,8 @@ async function renderChapter(stageId) {
       ch.prev_chapter ? navLink("lesson", `← ${tr(ch.prev_chapter.title)}`, ch.prev_chapter.id, "pager-prev") : h("span", {}),
       navLink("book", t("nav_book"), null, "pager-index"),
       ch.next_chapter ? navLink("lesson", `${tr(ch.next_chapter.title)} →`, ch.next_chapter.id, "pager-next") : h("span", {})));
+  const pods = await podsP;
+  const podLine = pods[stageId] ? h("p", { class: "ch-pod" }, podListenLink(pods[stageId])) : null;
   app.replaceChildren(
     ...appBar("book"),
     h("div", { class: "reader-progress", role: "progressbar", "aria-valuemin": 0, "aria-valuemax": 100 }, bar),
@@ -2192,7 +2199,7 @@ async function renderChapter(stageId) {
     h("article", { class: "reader" },
       h("p", { class: "kicker" }, `${tr(ch.stage_title)} · ${t("ch_meta", { level: ch.level, minutes: ch.minutes })}`),
       h("h1", { class: "ch-title" }, tr(ch.title)),
-      contents, sections, end));
+      podLine, contents, sections, end));
   window.scrollTo(0, 0);
   // A section counts as seen once most of it has been on screen.
   if ("IntersectionObserver" in window) {
@@ -2692,6 +2699,168 @@ document.addEventListener("keydown", (e) => {
     if (next && document.activeElement !== next) { e.preventDefault(); next.click(); }
   }
 });
+
+// ---------- podcast lessons (learner/podcasts/, served by src/oknos/podcast.py; docs/PODCASTS.md) ----------
+
+const POD_RATES = [0.8, 1, 1.25];
+
+function podTime(s) {
+  s = Math.max(0, Math.round(s || 0));
+  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+}
+
+function podTitle(ep) {
+  return tr(ep.title) || ep.id;
+}
+
+function podStore(key, value) {
+  // Where the learner stopped and the speed: a convenience of this device only.
+  try {
+    if (value === undefined) return JSON.parse(localStorage.getItem(`oknos-pod-${key}`) || "null");
+    localStorage.setItem(`oknos-pod-${key}`, JSON.stringify(value));
+  } catch { /* private mode: it starts from the beginning */ }
+  return null;
+}
+
+async function podcastsByStage() {
+  // stage id -> the episode to offer with that chapter; empty when there are none (or on any error).
+  try { return (await api("/api/podcasts")).by_stage || {}; } catch { return {}; }
+}
+
+function podListenLink(id, cls = "tile-link") {
+  return navLink("podcast", [icon("headphones"), t("pod_listen")], id, cls);
+}
+
+function podCard(ep, current) {
+  const kind = ep.kind === "chapter" ? t("pod_kind_chapter") : t(`pod_kind_${ep.kind}`);
+  const inner = [
+    h("span", { class: "eyebrow" }, icon("headphones"), kind),
+    h("strong", {}, podTitle(ep)),
+    h("span", { class: "small muted" }, [t("pod_minutes", { n: Math.max(1, Math.round((ep.seconds || 0) / 60)) }),
+      t(`pod_lang_${ep.lang}`), fmtDate(ep.rendered?.slice(0, 10))].filter(Boolean).join(" · "))];
+  const a = navLink("podcast", inner, ep.id, `pod-card${current ? " here" : ""}`);
+  if (current) a.setAttribute("aria-current", "page");
+  return a;
+}
+
+async function renderPodcast(id) {
+  // ?podcast: the episodes; ?podcast=<id>: one playing (parts, speed, the script), the others below.
+  resetScreens();
+  let data;
+  try { data = await api("/api/podcasts"); } catch { return showError(); }
+  const all = data.episodes || [];
+  if (!all.length) {
+    return app.replaceChildren(...appBar(null), crumb("home", t("nav_home")),
+      h("section", { class: "empty-state" }, donkey("resting", 72), h("p", {}, t("pod_none")),
+        h("p", { class: "small muted" }, t("pod_none_how")), h("p", {}, navLink("home", t("nothing_back_home"), null, "secondary"))));
+  }
+  let ep = null;
+  if (id) {
+    try { ep = await api(`/api/podcasts/${encodeURIComponent(id)}`); } catch { ep = null; }
+  }
+  const head = h("section", { class: "bk-head pod-head" },
+    h("div", { class: "bk-head-text" }, h("p", { class: "eyebrow" }, icon("headphones"), t("pod_eyebrow")),
+      h("h1", {}, ep ? podTitle(ep) : t("pod_title")),
+      h("p", { class: "muted" }, ep ? [t("pod_minutes", { n: Math.max(1, Math.round(ep.seconds / 60)) }), t(`pod_lang_${ep.lang}`)].join(" · ")
+        : t("pod_lede"))));
+  const player = ep ? podPlayer(ep) : null;
+  const others = all.filter(e => !ep || e.id !== ep.id);
+  app.replaceChildren(...[...appBar(null), crumb(ep ? "podcast" : "home", ep ? t("pod_title") : t("nav_home")), head, player,
+    ep && others.length ? h("h2", { class: "films-more" }, t("pod_more")) : null,
+    others.length ? h("div", { class: "pod-grid" }, others.map(e => podCard(e, false))) : null].filter(Boolean));
+}
+
+function podPlayer(ep) {
+  const audio = h("audio", { class: "pod-audio", src: `/podcasts/${encodeURIComponent(ep.id)}.mp3`, preload: "metadata", controls: "" });
+  const saved = podStore(ep.id);
+  let rate = Number(podStore("rate")) || 1;
+  if (!POD_RATES.includes(rate)) rate = 1;
+  audio.addEventListener("loadedmetadata", () => {
+    audio.playbackRate = rate;
+    // Start where the learner stopped (unless it was the very end or the episode was made again since).
+    if (saved && saved.rendered === ep.rendered && saved.t > 5 && saved.t < audio.duration - 10) audio.currentTime = saved.t;
+  });
+  let lastSave = 0;
+  const save = () => podStore(ep.id, { t: audio.currentTime, rendered: ep.rendered });
+  audio.addEventListener("pause", save);
+  audio.addEventListener("ended", () => podStore(ep.id, { t: 0, rendered: ep.rendered }));
+
+  const jump = (secs) => {
+    audio.currentTime = Math.max(0, secs);
+    audio.play().catch(() => {});
+  };
+  const rates = h("div", { class: "pod-rates", role: "group", "aria-label": t("pod_speed") },
+    POD_RATES.map(r => h("button", { type: "button", class: `chip-btn${r === rate ? " on" : ""}`, "aria-pressed": String(r === rate),
+      onclick: (e) => {
+        rate = r;
+        audio.playbackRate = r;
+        podStore("rate", r);
+        for (const b of e.currentTarget.parentNode.children) {
+          const on = b === e.currentTarget;
+          b.classList.toggle("on", on);
+          b.setAttribute("aria-pressed", String(on));
+        }
+      } }, `${String(r).replace(".", state.lang === "tr" ? "," : ".")}×`)));
+  const skips = h("div", { class: "pod-skips" },
+    h("button", { type: "button", class: "secondary small-btn", onclick: () => jump(audio.currentTime - 10) }, t("pod_back10")),
+    h("button", { type: "button", class: "secondary small-btn", onclick: () => jump(audio.currentTime + 10) }, t("pod_fwd10")));
+
+  const parts = (ep.parts || []).map((p, i) => {
+    const li = h("li", {}, h("button", { type: "button", class: "pod-part", onclick: () => jump(p.t) },
+      h("span", { class: "pod-time" }, podTime(p.t)), h("span", {}, p.title)));
+    li.dataset.t = p.t;
+    li.dataset.i = i;
+    return li;
+  });
+  const partList = h("ol", { class: "pod-parts" }, parts);
+
+  const lines = (ep.lines || []).map(l => {
+    const row = h("li", { class: `pod-line lang-${l.lang}` },
+      h("button", { type: "button", class: "pod-time link-button", onclick: () => jump(l.t), "aria-label": t("pod_play_from", { time: podTime(l.t) }) }, podTime(l.t)),
+      h("span", { lang: l.lang }, l.who ? h("span", { class: "pod-who" }, `${l.who}: `) : null, l.say,
+        l.speed ? h("span", { class: "small muted" }, ` (${t("pod_slow")})`) : null));
+    row.dataset.t = l.t;
+    return row;
+  });
+  const script = h("details", { class: "pod-script" }, h("summary", {}, t("pod_script")), h("ol", {}, lines));
+
+  // Follow the playback: the current part and line are marked; the position is kept every few seconds.
+  let curPart = -1;
+  let curLine = -1;
+  audio.addEventListener("timeupdate", () => {
+    const now = audio.currentTime;
+    if (Math.abs(now - lastSave) > 5) { lastSave = now; save(); }
+    let p = -1;
+    (ep.parts || []).forEach((x, i) => { if (x.t <= now + 0.2) p = i; });
+    if (p !== curPart) {
+      parts.forEach((li, i) => li.classList.toggle("now", i === p));
+      curPart = p;
+    }
+    let l = -1;
+    (ep.lines || []).forEach((x, i) => { if (x.t <= now + 0.1) l = i; });
+    if (l !== curLine) {
+      lines.forEach((li, i) => li.classList.toggle("now", i === l));
+      curLine = l;
+    }
+  });
+
+  if ("mediaSession" in navigator && "MediaMetadata" in window) {
+    // The title on the phone's lock screen, and its skip buttons.
+    navigator.mediaSession.metadata = new MediaMetadata({ title: podTitle(ep), artist: "Oknos", album: t("pod_title") });
+    try {
+      navigator.mediaSession.setActionHandler("seekbackward", () => jump(audio.currentTime - 10));
+      navigator.mediaSession.setActionHandler("seekforward", () => jump(audio.currentTime + 10));
+    } catch { /* not every browser has these */ }
+  }
+
+  return h("section", { class: "pod-player" },
+    ep.stale ? h("p", { class: "small warn" }, t("pod_stale")) : null,
+    audio,
+    h("div", { class: "pod-controls" }, skips, rates),
+    parts.length ? h("div", { class: "pod-parts-wrap" }, h("h2", {}, t("pod_parts")), partList) : null,
+    script,
+    h("p", { class: "small" }, h("a", { href: `/podcasts/${encodeURIComponent(ep.id)}.mp3`, download: `${ep.id}.mp3` }, t("pod_download"))));
+}
 
 // ---------- the films of the Oknos myth (docs/brand/animations/, served at /films/ by src/oknos/films.py) ----------
 

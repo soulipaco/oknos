@@ -613,6 +613,58 @@ def cmd_voice(args) -> int:
     return 0
 
 
+def cmd_podcast(args) -> int:
+    """Podcast lessons (phase 11, docs/PODCASTS.md): list the scripts, check one, render one."""
+    from oknos import podcast
+
+    if args.action == "list":
+        rows = podcast.scripts()
+        if not rows:
+            print(f"No scripts yet in {podcast.podcasts_dir()} (the podcast skill writes them).")
+        for r in rows:
+            if "error" in r:
+                print(f"  {r['id']}: {r['error']}")
+                continue
+            state = (f"rendered, {r['seconds'] / 60:.1f} min" + (", script changed since" if r.get("stale") else "")
+                     if r["rendered"] else f"not rendered (about {r['minutes']} min)")
+            print(f"  {r['id']:32} {r['kind']:8} {r['lang']}  {state}")
+        return 0
+    if not args.id:
+        print("Which episode? e.g. oknos podcast check book.lesson-01.tr")
+        return 1
+    try:
+        if args.action == "check":
+            c = podcast.check(args.id)
+            for x in c["problems"]:
+                print(f"PROBLEM {x}")
+            for x in c["notes"][:20]:
+                print(f"note    {x}")
+            cost = c["cost"]
+            print(f"{c['id']}: {c['segments']} segments, {len(c['parts'])} parts, about {c['minutes']} minutes.")
+            print(f"Lines: {cost['lines']}; still to voice: {cost['to_make']} clips, {cost['chars']:,} characters")
+            for lang, v in cost["by_lang"].items():
+                print(f"  {lang}: {v['clips']} clips, {v['chars']:,} characters")
+            for name, v in cost["by_provider"].items():
+                free = f" of {v['free']:,} free" if v["free"] else ""
+                print(f"  {name} would make {v['chars']:,} characters (this month so far: {v['used_this_month']:,}{free})")
+            if cost["no_service"]:
+                print(f"  {cost['no_service']} lines have no service that can make them (keys or the Voice screen's list).")
+            return 1 if c["problems"] else 0
+        # render
+        def progress(stage, n, total):
+            if n == total or n % 25 == 0:
+                print(f"  {'voicing' if stage == 'clips' else 'joining'} {n}/{total}", flush=True)
+
+        meta = podcast.render(args.id, wait=args.wait, progress=progress)
+        spent = ", ".join(f"{k} {v:,} characters" for k, v in meta["chars"].items()) or "nothing (every clip was there)"
+        print(f"{meta['id']}: {meta['seconds'] / 60:.1f} minutes, {len(meta['parts'])} parts. Spent: {spent}.")
+        print(f"File: {podcast.episode_dir(args.id) / 'episode.mp3'}")
+        return 0
+    except podcast.PodcastError as e:
+        print(str(e))
+        return 1
+
+
 def cmd_reload(args) -> int:
     """Tell the running app to load new content and coach files (the coach runs this after writing)."""
     port = running_port()
@@ -763,6 +815,12 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--wait", action="store_true", help="build: wait for a busy provider instead of using the next one")
     p.add_argument("--redo", default=None, help="build: remake the clips this provider made, with the others")
     p.set_defaults(func=cmd_voice)
+
+    p = sub.add_parser("podcast", help="podcast lessons: list, check, render (docs/PODCASTS.md)")
+    p.add_argument("action", choices=["list", "check", "render"])
+    p.add_argument("id", nargs="?", help="for check and render: the episode id (its folder in learner/podcasts/)")
+    p.add_argument("--wait", action="store_true", help="render: wait for a busy voice service instead of using the next one")
+    p.set_defaults(func=cmd_podcast)
 
     p = sub.add_parser("reload", help="make the running app load new content and coach files")
     p.set_defaults(func=cmd_reload)

@@ -13,8 +13,8 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from oknos import (coachfiles, curriculum, db, exams, films, health, lookup, mock, packs, paths, plan, readiness,
-                         scheduler, session, voice)
+from oknos import (coachfiles, curriculum, db, exams, films, health, lookup, mock, packs, paths, plan, podcast,
+                   readiness, scheduler, session, voice)
 from oknos.checking import CheckError, check
 from oknos.packs import OPEN_TASKS, FormItem, SpeakItem, VocabItem, WriteItem
 
@@ -30,6 +30,14 @@ DEFAULT_MINUTES = 10
 RECORDING_MAX_BYTES = 20_000_000
 RECORDING_TYPES = {"audio/webm": ".webm", "audio/ogg": ".ogg", "audio/mp4": ".m4a", "audio/mpeg": ".mp3",
                    "audio/wav": ".wav", "audio/x-wav": ".wav"}
+
+
+def _podcast_count() -> int:
+    try:
+        return len(podcast.listing())
+    except Exception:  # the home screen must open even if this breaks
+        log.exception("podcasts")
+        return 0
 
 
 def read_profile() -> dict:
@@ -243,6 +251,7 @@ def create_app() -> FastAPI:
             "stats": stats,
             "today": db.today().isoformat(),
             "welcome_film": welcome,
+            "podcasts": _podcast_count(),
         }
 
     def _brief(r: dict) -> dict:
@@ -869,6 +878,34 @@ def create_app() -> FastAPI:
             raise HTTPException(404, "no such film file")
         cache = {} if target.suffix in (".html", ".js", ".css") else {"Cache-Control": "max-age=86400"}
         return FileResponse(target, media_type=films.MEDIA_TYPES[target.suffix], headers=cache)
+
+    # ---------- podcast lessons (learner/podcasts/, src/oknos/podcast.py, docs/PODCASTS.md) ----------
+
+    @app.get("/api/podcasts")
+    def podcasts_list():
+        profile = read_profile()
+        lang = (profile.get("podcast") or {}).get("lang") or profile.get("ui_lang") or "en"
+        episodes = podcast.listing()
+        stages: dict[str, str] = {}
+        for m in reversed(episodes):  # oldest first: the newest episode in the learner's language wins
+            if m.get("kind") == "chapter" and m.get("stage") and (m["lang"] == lang or m["stage"] not in stages):
+                stages[m["stage"]] = m["id"]
+        return {"episodes": episodes, "lang": lang, "by_stage": stages}
+
+    @app.get("/api/podcasts/{pid}")
+    def podcast_one(pid: str):
+        meta = podcast.episode(pid) if podcast.ID.match(pid) else None
+        if meta is None:
+            raise HTTPException(404, "no such episode")
+        return meta
+
+    @app.api_route("/podcasts/{pid}.mp3", methods=["GET", "HEAD"])
+    def podcast_audio(pid: str):
+        """The episode's mp3; FileResponse answers range requests, so a phone can seek."""
+        target = podcast.audio_file(pid)
+        if target is None:
+            raise HTTPException(404, "no such episode")
+        return FileResponse(target, media_type="audio/mpeg", headers={"Cache-Control": "no-cache"})
 
     app.mount("/", StaticFiles(directory=paths.WEB_DIR, html=True), name="web")
     return app

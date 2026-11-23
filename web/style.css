@@ -946,3 +946,33 @@ a.film-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2p
 
 /* the hidden attribute wins over a display set above */
 .ex-card[hidden], .wd-bar[hidden], .pr-tile[hidden] { display: none; }
+
+/* Podcast lessons (?podcast; docs/PODCASTS.md) */
+main:has(.pod-player), main:has(.pod-grid) { max-width: 760px; }
+.pod-player { display: grid; gap: 14px; margin-bottom: 8px; }
+.pod-audio { width: 100%; }
+.pod-controls { display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; align-items: center; }
+.pod-skips, .pod-rates { display: flex; gap: 8px; flex-wrap: wrap; }
+.pod-rates button { border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px;
+  padding: 6px 14px; font-size: 15px; cursor: pointer; }
+.pod-rates button.on { border-color: var(--accent); background: var(--accent); color: var(--accent-ink); }
+.pod-parts-wrap h2 { font-size: 17px; margin: 4px 0 8px; }
+.pod-parts { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.pod-part { display: flex; gap: 12px; align-items: baseline; width: 100%; text-align: left; background: var(--surface);
+  border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; color: var(--ink); font-size: 16px; cursor: pointer; }
+.pod-part:hover { border-color: var(--accent); }
+.pod-parts li.now .pod-part { border: 1.5px solid var(--accent); }
+.pod-time { font-variant-numeric: tabular-nums; color: var(--muted); min-width: 3.2em; }
+.pod-script > summary { cursor: pointer; color: var(--accent); }
+.pod-script ol { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 4px; }
+.pod-line { display: flex; gap: 10px; align-items: baseline; line-height: 1.45; padding: 2px 6px; border-radius: 8px; }
+.pod-line .pod-time { padding: 0; font-size: 14px; text-decoration: none; }
+.pod-line.lang-el > span { font-family: var(--font-greek); font-size: 17px; }
+.pod-line.now { background: var(--accent-soft, rgba(31, 95, 139, .1)); }
+.pod-who { color: var(--muted); }
+.pod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr)); gap: 12px; }
+.pod-card { display: grid; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 12px 14px 14px; color: var(--ink); text-decoration: none; box-shadow: var(--shadow); }
+a.pod-card:hover { border-color: var(--accent); }
+.pod-card.here { border: 1.5px solid var(--accent); }
+.reader .ch-pod { margin: -4px 0 14px; }

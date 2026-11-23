@@ -41,6 +41,10 @@ from xml.sax.saxutils import escape
 from oknos import greek, paths
 
 ROLES = ("f", "m")  # female, male; the narrator is female
+# Greek is what the app speaks; Turkish and English are the explanation languages of the podcast
+# lessons (docs/PODCASTS.md). Each provider has a voice pair per language.
+LANGS = ("el", "tr", "en")
+LOCALES = {"el": "el-GR", "tr": "tr-TR", "en": "en-US"}
 SECRET_NAMES = ("GOOGLE_TTS_API_KEY", "AZURE_SPEECH_KEY", "AZURE_SPEECH_REGION", "OPENAI_API_KEY")
 USER_AGENT = "Oknos (local Greek learning app)"
 
@@ -56,18 +60,22 @@ def norm(text: str) -> str:
     return re.sub(r"\s+", " ", unicodedata.normalize("NFC", text)).strip().casefold()
 
 
-def key(text: str, role: str) -> str:
-    return hashlib.sha1(f"{role}|{norm(text)}".encode("utf-8")).hexdigest()
+def key(text: str, role: str, lang: str = "el") -> str:
+    """The cache key. Greek keys carry no language (they predate the others and stay valid)."""
+    prefix = role if lang == "el" else f"{lang}|{role}"
+    return hashlib.sha1(f"{prefix}|{norm(text)}".encode("utf-8")).hexdigest()
 
 
 def voice_dir() -> Path:
     return paths.learner_dir() / "voice"
 
 
-def file_for(text: str, role: str = "f", base: Path | None = None) -> Path:
+def file_for(text: str, role: str = "f", base: Path | None = None, lang: str = "el") -> Path:
+    """Greek clips: <base>/<role>/...; Turkish and English: <base>/<lang>/<role>/..."""
     role = role if role in ROLES else "f"
-    k = key(text, role)
-    return (base or voice_dir()) / role / k[:2] / f"{k}.mp3"
+    k = key(text, role, lang)
+    root = (base or voice_dir()) if lang == "el" else (base or voice_dir()) / lang
+    return root / role / k[:2] / f"{k}.mp3"
 
 
 # ---------- clips shipped with the open content (content/open-voice/, scripts/ship_voice.py) ----------
@@ -103,10 +111,10 @@ def shipped_gaps(open_catalog) -> tuple[list[str], list[str]]:
     return missing, stale
 
 
-def find(text: str, role: str = "f") -> Path | None:
-    """The clip to play: the learner's own first, then the shipped one; None means the browser's voice."""
-    for base in (voice_dir(), shipped_dir()):
-        target = file_for(text, role, base)
+def find(text: str, role: str = "f", lang: str = "el") -> Path | None:
+    """The clip to play: the learner's own first, then the shipped one (Greek only); None means the browser's voice."""
+    for base in (voice_dir(), shipped_dir()) if lang == "el" else (voice_dir(),):
+        target = file_for(text, role, base, lang)
         if target.is_file():
             return target
     return None
@@ -175,6 +183,7 @@ class Provider:
     min_interval: float = 0.0       # seconds between requests (Azure's free tier allows 20 a minute)
     label: str = ""
     family: str = ""                # providers of one family share voices (Azure and edge: Athina, Nestoras)
+    lang_voices: dict[str, dict[str, str]] = field(default_factory=dict)  # "tr"/"en" -> role -> voice
     _last: float = field(default=float("-inf"), repr=False)  # never used yet: not busy, whatever the clock says
 
     def ready(self, keys: dict, profile: dict) -> str | None:
@@ -183,6 +192,12 @@ class Provider:
 
     def make(self, text: str, role: str, keys: dict) -> bytes:
         raise NotImplementedError
+
+    def speaks(self, lang: str) -> bool:
+        return lang == "el" or lang in self.lang_voices
+
+    def voice(self, role: str, lang: str = "el") -> str:
+        return self.voices[role] if lang == "el" else self.lang_voices[lang][role]
 
     def busy(self) -> bool:
         return time.monotonic() - self._last < self.min_interval
@@ -202,8 +217,8 @@ class Azure(Provider):
     def ready(self, keys, profile):
         return None if keys.get("AZURE_SPEECH_KEY") and keys.get("AZURE_SPEECH_REGION") else "needs AZURE_SPEECH_KEY and AZURE_SPEECH_REGION"
 
-    def make(self, text, role, keys):
-        ssml = (f"<speak version='1.0' xml:lang='el-GR'><voice name='{self.voices[role]}'>"
+    def make(self, text, role, keys, lang="el"):
+        ssml = (f"<speak version='1.0' xml:lang='{LOCALES[lang]}'><voice name='{self.voice(role, lang)}'>"
                 f"{escape(text)}</voice></speak>")
         return _post(f"https://{keys['AZURE_SPEECH_REGION']}.tts.speech.microsoft.com/cognitiveservices/v1", ssml.encode("utf-8"),
                      {"Ocp-Apim-Subscription-Key": keys["AZURE_SPEECH_KEY"], "Content-Type": "application/ssml+xml",
@@ -259,8 +274,8 @@ class Google(Provider):
     def ready(self, keys, profile):
         return None if keys.get("GOOGLE_TTS_API_KEY") else "needs GOOGLE_TTS_API_KEY"
 
-    def make(self, text, role, keys):
-        body = json.dumps({"input": {"text": text}, "voice": {"languageCode": "el-GR", "name": self.voices[role]},
+    def make(self, text, role, keys, lang="el"):
+        body = json.dumps({"input": {"text": text}, "voice": {"languageCode": LOCALES[lang], "name": self.voice(role, lang)},
                            "audioConfig": {"audioEncoding": "MP3"}}).encode("utf-8")
         r = json.loads(_post("https://texttospeech.googleapis.com/v1/text:synthesize", body,
                              {"Content-Type": "application/json", "X-Goog-Api-Key": keys["GOOGLE_TTS_API_KEY"]}))
@@ -270,13 +285,16 @@ class Google(Provider):
 class OpenAI(Provider):
     INSTRUCTIONS = ("Speak natural, standard Modern Greek like a native speaker from Athens: clear, calm and friendly, "
                     "at a moderate pace for a language learner.")
+    TEACHER = {"tr": "Speak natural, standard Turkish like a warm, clear language teacher from Istanbul, at a calm pace.",
+               "en": "Speak clear, natural English like a warm language teacher, at a calm pace."}
 
     def ready(self, keys, profile):
         return None if keys.get("OPENAI_API_KEY") else "needs OPENAI_API_KEY"
 
-    def make(self, text, role, keys):
-        body = json.dumps({"model": "gpt-4o-mini-tts", "voice": self.voices[role], "input": text,
-                           "instructions": self.INSTRUCTIONS, "response_format": "mp3"}).encode("utf-8")
+    def make(self, text, role, keys, lang="el"):
+        body = json.dumps({"model": "gpt-4o-mini-tts", "voice": self.voice(role, lang), "input": text,
+                           "instructions": self.INSTRUCTIONS if lang == "el" else self.TEACHER[lang],
+                           "response_format": "mp3"}).encode("utf-8")
         return _post("https://api.openai.com/v1/audio/speech", body,
                      {"Content-Type": "application/json", "Authorization": f"Bearer {keys['OPENAI_API_KEY']}"})
 
@@ -284,12 +302,17 @@ class OpenAI(Provider):
 def providers() -> dict[str, Provider]:
     return {
         "azure": Azure("azure", {"f": "el-GR-AthinaNeural", "m": "el-GR-NestorasNeural"}, 500_000, min_interval=3.1,
-                       label="Microsoft Athina / Nestoras (Azure)", family="microsoft"),
+                       label="Microsoft Athina / Nestoras (Azure)", family="microsoft",
+                       lang_voices={"tr": {"f": "tr-TR-EmelNeural", "m": "tr-TR-AhmetNeural"},
+                                    "en": {"f": "en-US-AvaNeural", "m": "en-US-AndrewNeural"}}),
         "edge": Edge("edge", {"f": "el-GR-AthinaNeural", "m": "el-GR-NestorasNeural"}, None, min_interval=0.8,
                      label="Microsoft Athina / Nestoras (edge-tts, this computer only)", family="microsoft"),
         "google": Google("google", {"f": "el-GR-Chirp3-HD-Kore", "m": "el-GR-Chirp3-HD-Orus"}, 1_000_000,
-                         label="Google Chirp 3 HD Kore / Orus", family="google"),
-        "openai": OpenAI("openai", {"f": "coral", "m": "ash"}, None, label="OpenAI gpt-4o-mini-tts", family="openai"),
+                         label="Google Chirp 3 HD Kore / Orus", family="google",
+                         lang_voices={"tr": {"f": "tr-TR-Chirp3-HD-Kore", "m": "tr-TR-Chirp3-HD-Orus"},
+                                      "en": {"f": "en-US-Chirp3-HD-Kore", "m": "en-US-Chirp3-HD-Orus"}}),
+        "openai": OpenAI("openai", {"f": "coral", "m": "ash"}, None, label="OpenAI gpt-4o-mini-tts", family="openai",
+                         lang_voices={"tr": {"f": "coral", "m": "ash"}, "en": {"f": "coral", "m": "ash"}}),
     }
 
 
@@ -355,20 +378,23 @@ def _write_index(index: dict) -> None:
 # ---------- making one clip ----------
 
 def make(text: str, role: str = "f", *, chain: list[Provider] | None = None, keys: dict | None = None,
-         profile: dict | None = None, wait: bool = False, index: dict | None = None, own: bool = False) -> str | None:
+         profile: dict | None = None, wait: bool = False, index: dict | None = None, own: bool = False,
+         lang: str = "el") -> str | None:
     """Make the clip for a text with the first provider that works; return the provider's name, or None.
 
     own: the text comes from the learner's folder (the coach's packs). SPEC §9 keeps those away from
-    the free edge route; a provider on the learner's own account (a key) may make them."""
+    the free edge route; a provider on the learner's own account (a key) may make them.
+    lang: "el", or "tr"/"en" for a podcast's explanations, which are always the agent's own texts."""
+    own = own or lang != "el"
     profile = read_profile() if profile is None else profile
     keys = secrets() if keys is None else keys
     if chain is None:
         known = providers()
         chain = [known[p] for p in order(profile)]
     used = usage()
-    target = file_for(text, role)
+    target = file_for(text, role, lang=lang)
     for p in chain:
-        if p.ready(keys, profile) or (own and p.name == "edge"):
+        if p.ready(keys, profile) or (own and p.name == "edge") or not p.speaks(lang):
             continue
         if p.free_chars is not None and used.get(p.name, 0) + len(text) > QUOTA_SHARE * p.free_chars:
             continue
@@ -381,14 +407,15 @@ def make(text: str, role: str = "f", *, chain: list[Provider] | None = None, key
             time.sleep(max(0.0, left))
         p._last = time.monotonic()
         try:
-            data = p.make(text, role, keys)
+            data = p.make(text, role, keys) if lang == "el" else p.make(text, role, keys, lang=lang)
         except Refused:
             continue
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(data)
         _add_usage(p.name, len(text))
         if index is not None:
-            index[key(text, role)] = {"p": p.name, "v": p.voices[role], "t": text[:80]}
+            entry = {"p": p.name, "v": p.voice(role, lang), "t": text[:80]}
+            index[key(text, role, lang)] = entry if lang == "el" else {**entry, "l": lang}
         return p.name
     return None
 
