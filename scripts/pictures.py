@@ -11,6 +11,7 @@ and adds or updates its entry in pictures.json. Running it again changes nothing
 from __future__ import annotations
 
 import json
+import re
 import sys
 from datetime import date
 from pathlib import Path
@@ -23,7 +24,8 @@ SIZE = 512
 
 
 def slug(item_key: str) -> str:
-    return item_key.split("/", 1)[-1]
+    # a file name in the pack allows only letters, digits, '.', '_' and '-' (an item such as v-politis~2 has a '~')
+    return re.sub(r"[^A-Za-z0-9._-]", "-", item_key.split("/", 1)[-1])
 
 
 def take(requests_file: Path) -> int:
