@@ -40,6 +40,7 @@ CI runs the guard, the tests and `validate content/open` on Ubuntu and Windows f
 - `content/open/`: the tracked content packs, including the open course's book (`open-book/`). `content/private/` (gitignored) holds imported material.
 - `scripts/`: the verb-pack builder, the listening-audio generator, the shipped voice clips (`ship_voice.py`, `docs/VOICE.md`), the films' voice, the simulation and the brand files.
 - `docs/brand/`: the name, the logo, the icon and the donkey; `docs/img/`: the README's pictures.
+  - `docs/brand/animations/`: the three films. The app serves this folder itself at `/films/` (`src/oknos/films.py`: only the pages, `film.js`, `anim.css` and the files in `frames/`, `voice/`, `voice-local/` and `ambience/`), so there is one copy. The films page (`?films`, `?films=<n>`) and the first-launch welcome show a film's page in a frame with `?embed`; `film.js` then hides the page's own header and links, takes the app's language and theme, and tells the app its height and when the film has ended.
 
 ## Documents
 

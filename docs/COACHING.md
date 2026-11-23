@@ -324,6 +324,7 @@ The app reads it, and it changes `ui_lang` and `minutes` itself when the learner
 | `work` | One line |
 | `course` | `{"status": "looking", "condition": "after 17:00"}` or similar |
 | `edge_tts_ok`, `whisper_ok` | The learner's yes to the online voice and to the speech-model download. Only set these after they said yes in chat. |
+| `welcome_film_seen` | Set by the app: the date the first-launch welcome film ended or was skipped. Leave it alone. |
 
 ### 7.7 `coach/tutor-log/<YYYY-MM-DD>.md`
 

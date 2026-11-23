@@ -13,7 +13,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from oknos import (coachfiles, curriculum, db, exams, health, lookup, mock, packs, paths, plan, readiness,
+from oknos import (coachfiles, curriculum, db, exams, films, health, lookup, mock, packs, paths, plan, readiness,
                          scheduler, session, voice)
 from oknos.checking import CheckError, check
 from oknos.packs import OPEN_TASKS, FormItem, SpeakItem, VocabItem, WriteItem
@@ -61,6 +61,10 @@ def _minutes(profile: dict) -> int:
 class ProfileIn(BaseModel):
     ui_lang: Literal["en", "tr"] | None = None
     minutes: int | None = None
+
+
+class WelcomeIn(BaseModel):
+    how: Literal["ended", "skipped"] = "ended"
 
 
 class SessionIn(BaseModel):
@@ -218,6 +222,11 @@ def create_app() -> FastAPI:
             except Exception:  # the home screen must open even if readiness breaks
                 log.exception("readiness")
                 ready_brief = None
+            try:
+                welcome = films.welcome_due(conn, profile)
+            except Exception:  # the home screen must open even if this breaks
+                log.exception("welcome film")
+                welcome = False
         finally:
             conn.close()
         return {
@@ -233,6 +242,7 @@ def create_app() -> FastAPI:
                       for p in app.state.catalog.packs],
             "stats": stats,
             "today": db.today().isoformat(),
+            "welcome_film": welcome,
         }
 
     def _brief(r: dict) -> dict:
@@ -836,6 +846,29 @@ def create_app() -> FastAPI:
             if base in target.parents and target.is_file():
                 return FileResponse(target)
         raise HTTPException(404, "no pre-generated audio")
+
+    # ---------- the films of the Oknos myth (docs/brand/animations/, src/oknos/films.py) ----------
+
+    @app.get("/api/films")
+    def films_list():
+        return films.listing()
+
+    @app.post("/api/films/welcome")
+    def films_welcome_seen(body: WelcomeIn):
+        """The welcome film ended or was skipped: it is not shown again."""
+        profile = read_profile()
+        if not profile.get(films.PROFILE_KEY):
+            profile = write_profile({films.PROFILE_KEY: db.today().isoformat()})
+        return {films.PROFILE_KEY: profile[films.PROFILE_KEY], "how": body.how}
+
+    @app.api_route("/films/{name:path}", methods=["GET", "HEAD"])
+    def film_file(name: str):
+        """A film's page, its player, or one of its pictures and sounds, from docs/brand/animations/."""
+        target = films.file_for(name)
+        if target is None:
+            raise HTTPException(404, "no such film file")
+        cache = {} if target.suffix in (".html", ".js", ".css") else {"Cache-Control": "max-age=86400"}
+        return FileResponse(target, media_type=films.MEDIA_TYPES[target.suffix], headers=cache)
 
     app.mount("/", StaticFiles(directory=paths.WEB_DIR, html=True), name="web")
     return app

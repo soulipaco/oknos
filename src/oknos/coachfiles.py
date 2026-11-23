@@ -216,6 +216,7 @@ class Profile(Loose):
     course: dict[str, Any] | None = None
     edge_tts_ok: bool | None = None
     whisper_ok: bool | None = None
+    welcome_film_seen: str | None = None  # set by the app: the welcome film ended or was skipped
 
 
 # ---------- plan.json ----------

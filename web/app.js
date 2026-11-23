@@ -342,6 +342,7 @@ const SCREENS = {
   submission: (id) => renderSubmission(Number(id)),
   mock: (id) => renderMockRun(Number(id)),
   voice: () => renderVoice(),
+  films: (n) => renderFilms(n),
 };
 const SCREEN_ALIASES = { map: "book" };  // older links
 
@@ -543,6 +544,7 @@ const ICONS = {  // one line style: a 24 grid, 2 px, round ends
   target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>',
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+  film: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9.5v5l4.5-2.5z"/>',
 };
 
 function icon(name) {
@@ -647,6 +649,7 @@ function coachTile(coach) {
   }
   blocks.push(h("p", { class: "small muted" }, t("tutor_line")));
   if (coach.submissions_total) blocks.push(navLink("writing", t("your_writing"), null, "tile-link"));
+  blocks.push(navLink("films", [icon("film"), t("films_link_coach")], null, "tile-link films-link"));
   return h("section", { class: "tile coach-tile" }, ...blocks);
 }
 
@@ -732,7 +735,7 @@ async function renderHome() {
     ...appBar("home"),
     h("div", { class: "home-grid" }, hero, lessonTile(state.home.curriculum, words)),
     h("div", { class: "tiles" }, coachTile(state.home.coach), datesTile(state.home.coach), examTile(state.home)),
-    first ? null : h("p", { class: "progress-link" }, navLink("exam", [t("home_progress_link"), icon("arrow")], null, "tile-link")),
+    ...(first ? [] : [h("p", { class: "progress-link" }, navLink("exam", [t("home_progress_link"), icon("arrow")], null, "tile-link"))]),
   );
   document.getElementById("start").focus();
 }
@@ -1785,7 +1788,8 @@ async function renderBook() {
   app.replaceChildren(...appBar("book"),
     h("section", { class: "bk-head" },
       h("div", { class: "bk-head-text" }, h("p", { class: "eyebrow" }, t("bk_eyebrow")), h("h1", {}, tr(cur.title)),
-        h("p", { class: "muted" }, t("book_line", { n: cur.stages.filter(s => s.chapter).length, total: cur.stages.length }))),
+        h("p", { class: "muted" }, t("book_line", { n: cur.stages.filter(s => s.chapter).length, total: cur.stages.length })),
+        h("p", { class: "bk-films" }, navLink("films", [icon("film"), t("films_link_book")], null, "tile-link"))),
       h("div", { class: "bk-total" }, h("span", {}, h("strong", {}, `${cur.stages_done} / ${cur.stages_total}`), " ",
         h("span", { class: "muted" }, t("bk_lessons_done"))), ropeBar(cur.stages_done, cur.stages_total))),
     hero, ...sections);
@@ -2689,13 +2693,115 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
+// ---------- the films of the Oknos myth (docs/brand/animations/, served at /films/ by src/oknos/films.py) ----------
+
+const FILM_TITLES_EL = ["Ὄκνος & το γαϊδούρι", "Ὄκνος & η γυναίκα του", "Το όνειρο"];
+
+function filmFrame(film, embed, voice, onEnded = null) {
+  // The film's own page in a frame: it plays by itself and tells us its height and when it has ended.
+  const q = new URLSearchParams({ embed, lang: state.lang, voice: voice || "none" });
+  const th = currentTheme();
+  if (th !== "system") q.set("theme", th);
+  const frame = h("iframe", { class: "film-frame", src: `/films/${film.id}.html?${q}`, title: t(`film_${film.n}`), allow: "autoplay" });
+  const onMessage = (e) => {
+    if (e.source !== frame.contentWindow || e.origin !== location.origin || e.data?.oknos !== "film") {
+      if (!frame.isConnected && frame.dataset.loaded) window.removeEventListener("message", onMessage);
+      return;
+    }
+    frame.dataset.loaded = "1";
+    if (e.data.event === "size" && e.data.height > 0) frame.style.height = `${e.data.height}px`;
+    if (e.data.event === "ended" && onEnded) onEnded();
+  };
+  window.addEventListener("message", onMessage);
+  return frame;
+}
+
+function filmCard(film, current) {
+  const inner = [
+    h("img", { class: "film-poster", src: film.poster, alt: "", loading: "lazy", width: "1200", height: "800" }),
+    h("span", { class: "film-card-text" },
+      h("span", { class: "eyebrow" }, icon("film"), `${film.n} / 3`),
+      h("strong", { lang: "el" }, FILM_TITLES_EL[film.n - 1]),
+      h("span", { class: "small muted" }, t(`film_${film.n}`)),
+      h("span", { class: "small film-card-line" }, t(`film_${film.n}_line`)))];
+  if (!film.available) return h("article", { class: "film-card missing" }, ...inner);
+  const a = navLink("films", inner, film.n, `film-card${current ? " here" : ""}`);
+  if (current) a.setAttribute("aria-current", "page");
+  return a;
+}
+
+async function renderFilms(arg) {
+  // ?films: the three films; ?films=<n>: one of them playing, the others below.
+  resetScreens();
+  let data;
+  try { data = await api("/api/films"); } catch { return showError(); }
+  const all = data.films || [];
+  if (!all.some(f => f.available)) {
+    return app.replaceChildren(...appBar(null), h("section", { class: "empty-state" }, donkey("resting", 72),
+      h("p", {}, t("films_missing")), h("p", {}, navLink("home", t("nothing_back_home"), null, "secondary"))));
+  }
+  const film = all.find(f => f.n === Number(arg) && f.available) || null;
+  const head = h("section", { class: "bk-head films-head" },
+    h("div", { class: "bk-head-text" }, h("p", { class: "eyebrow" }, t("films_eyebrow")),
+      h("h1", { lang: film ? "el" : null }, film ? FILM_TITLES_EL[film.n - 1] : t("films_title")),
+      h("p", { class: "muted" }, film ? `${t(`film_${film.n}`)} · ${t(`film_${film.n}_line`)}` : t("films_lede"))));
+  const player = film ? h("section", { class: "film-player" }, filmFrame(film, "page", data.voice),
+    data.voice ? h("p", { class: "small muted film-tip" }, t("films_tip_sound")) : null) : null;
+  app.replaceChildren(...[...appBar(null), crumb(film ? "films" : "home", film ? t("films_title") : t("nav_home")),
+    head, player,
+    film ? h("h2", { class: "films-more" }, t("films_all")) : null,
+    h("div", { class: "film-grid" }, all.map(f => filmCard(f, film && f.n === film.n)))].filter(Boolean));
+}
+
+async function showWelcome() {
+  // Film 1, once, the first time a new learner opens the app. Skip (or Escape) closes it at any time;
+  // ending or skipping it is remembered (profile.json: welcome_film_seen). With reduced motion it waits for a tap.
+  let data;
+  try { data = await api("/api/films"); } catch { return; }
+  const film = data.films?.[0];
+  if (!film?.available || document.querySelector(".welcome")) return;
+  let ended = false, told = false;
+  const remember = (how) => { if (!told) { told = true; api("/api/films/welcome", { how }).catch(() => {}); } };
+  const onKey = (e) => { if (e.key === "Escape") close(); };
+  const close = () => {
+    remember(ended ? "ended" : "skipped");
+    document.removeEventListener("keydown", onKey);
+    dlg.remove();
+    document.getElementById("start")?.focus();
+  };
+  const skip = h("button", { class: "secondary welcome-skip", type: "button", onclick: close }, t("welcome_skip"));
+  const body = h("div", { class: "welcome-film" });
+  const play = () => body.replaceChildren(filmFrame(film, "welcome", data.voice, () => {
+    ended = true;
+    remember("ended");
+    skip.textContent = t("welcome_start");
+    skip.className = "primary welcome-skip";
+    skip.focus();
+  }));
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    body.replaceChildren(h("button", { class: "welcome-poster", type: "button", onclick: play },
+      h("img", { src: film.poster, alt: "" }), h("span", { class: "welcome-play" }, icon("film"), t("welcome_watch"))));
+  } else play();
+  const dlg = h("div", { class: "welcome", role: "dialog", "aria-modal": "true", "aria-labelledby": "welcome-title" },
+    h("div", { class: "welcome-box" },
+      h("div", { class: "welcome-head" },
+        h("div", {}, h("h2", { id: "welcome-title" }, t("welcome_title")), h("p", { class: "small muted" }, t("welcome_line"))),
+        skip),
+      body));
+  document.body.append(dlg);
+  document.addEventListener("keydown", onKey);
+  skip.focus();
+}
+
 // ---------- boot ----------
 
 (async function boot() {
   applyTheme(currentTheme());
   let lang = navigator.language?.toLowerCase().startsWith("tr") ? "tr" : "en";
+  let homeAtBoot = null;
   try {
     const home = await api("/api/home");
+    homeAtBoot = home;
     if (LANGS.includes(home.ui_lang)) lang = home.ui_lang;
   } catch { /* renderHome reports it */ }
   await loadStrings(lang);
@@ -2706,9 +2812,12 @@ document.addEventListener("keydown", (e) => {
   // Every other screen has its own address: ?book, ?lesson=<stage>, ?stage=<id>, ?practise,
   // ?words, ?verbs, ?exam, ?writing, ?submission=<id>, ?mock=<run id> (the coach links to them).
   const r = parseRoute();
+  const welcome = params.has("welcome") || (r.name === "home" && homeAtBoot?.welcome_film);
   history.replaceState(r, "", location.search ? urlFor(r.name, r.arg) : location.pathname);
   state.route = r;
-  rerender();
+  await rerender();
+  // The first time a new learner opens the app: film 1, once, skippable (?welcome shows it again).
+  if (welcome) showWelcome();
 })();
 
 

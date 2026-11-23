@@ -7,7 +7,12 @@
    own set (Athina, not tracked) and is played instead when it is there. When the clips are there, a
    "Play with sound" button starts the film again with them, each shot lasting at least its clip
    plus a pause; without them the film plays silently, as before. Under the voice, ambience/<film>.mp3
-   (scripts/film_ambience.py) is a quiet loop of wind, cicadas and bells, with its own off switch. */
+   (scripts/film_ambience.py) is a quiet loop of wind, cicadas and bells, with its own off switch.
+   In the app: the server serves this folder at /films/ (src/oknos/films.py) and the app shows a page
+   in a frame with ?embed (the app's own title around it, no header or links), ?embed=welcome (the
+   first-launch welcome: the picture and captions only), ?lang=en|tr, ?theme=light|dark and
+   ?voice=voice|voice-local|none (the server already knows which clips are there). The page then
+   tells the app its height and when the film has ended, by postMessage. */
 (function () {
   "use strict";
   const FADE = 0.9;  // seconds of cross-fade at the start of each shot
@@ -15,6 +20,22 @@
   const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
   const ease = (u) => { u = clamp(u); return u < 0.5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2; };
   const lerp = (a, b, u) => a + (b - a) * u;
+
+  // the page's options (see above); the web font is fetched only outside the app, which stays local
+  const q = new URLSearchParams(location.search);
+  const embed = q.has("embed") ? (q.get("embed") || "page") : null;
+  const inFrame = embed && window.parent !== window;
+  const tell = (msg) => { if (inFrame) window.parent.postMessage({ oknos: "film", ...msg }, location.origin); };
+  if (embed) {
+    document.documentElement.classList.add("embed", `embed-${embed}`);
+    const th = q.get("theme");
+    if (th === "light" || th === "dark") document.documentElement.dataset.theme = th;
+  } else {
+    for (const [rel, href] of [["preconnect", "https://fonts.googleapis.com"],
+                               ["stylesheet", "https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;600&display=swap"]]) {
+      const l = document.createElement("link"); l.rel = rel; l.href = href; document.head.append(l);
+    }
+  }
 
   function film({ root, shots, title, end }) {
     const stage = root.querySelector(".stage");
@@ -26,6 +47,7 @@
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let lang = (navigator.language || "en").toLowerCase().startsWith("tr") ? "tr" : "en";
     try { lang = localStorage.getItem("oknos-anim-lang") || lang; } catch { /* fine */ }
+    if (["en", "tr"].includes(q.get("lang"))) lang = q.get("lang");  // the app's language wins
 
     // timeline: each shot's own length, or (with sound) at least its clip's
     let at = 0, duration = 0, voiced = false;
@@ -67,8 +89,8 @@
       }, 160);
     }
     function setLang(l) {
+      if (l !== lang && !embed) { try { localStorage.setItem("oknos-anim-lang", l); } catch { /* fine */ } }
       lang = l;
-      try { localStorage.setItem("oknos-anim-lang", l); } catch { /* fine */ }
       langBtns.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === l)));
       root.querySelectorAll("[data-en]").forEach((n) => { n.textContent = n.dataset[lang]; });
       const c = shown >= 0 ? shots[shown].cap : (shown === -1 && end ? end.cap : null);
@@ -201,7 +223,7 @@
       if (!paused) {
         const t = Math.min((now - t0) / 1000, duration);
         frame(t);
-        if (t >= duration && !done) { done = true; root.classList.add("ended"); }
+        if (t >= duration && !done) { done = true; root.classList.add("ended"); tell({ event: "ended" }); }
       }
       ambience(Math.min((now - t0) / 1000, duration), dt);
       requestAnimationFrame(tick);
@@ -244,7 +266,9 @@
     function offerSound() {
       if (!controls) return;
       const stem = name(shots[0].src).split("-")[0];
-      probe(`voice-local/${name(shots[0].src)}.mp3`)
+      const told = q.get("voice");  // the app says which set is there: no need to look
+      if (told === "none") return;
+      (told === "voice" || told === "voice-local" ? Promise.resolve(told === "voice-local") : probe(`voice-local/${name(shots[0].src)}.mp3`))
         .then((own) => { const dir = own ? "voice-local" : "voice";
           return Promise.all([...shots.map((s) => probe(`${dir}/${name(s.src)}.mp3`)), end ? probe(`${dir}/${stem}-end.mp3`) : null]); })
         .then((found) => {
@@ -284,10 +308,14 @@
         });
     }
 
+    // in the app's frame: tell the app how tall the page is, so the frame fits it
+    if (inFrame && "ResizeObserver" in window) {
+      new ResizeObserver(() => tell({ event: "size", height: Math.ceil(document.documentElement.scrollHeight) }))
+        .observe(document.body);
+    }
     // ?still=12 holds the film at second 12 (for checking one moment); ?t=12 starts there
-    const q = new URLSearchParams(location.search);
     if (q.has("t")) t0 = performance.now() - parseFloat(q.get("t")) * 1000;
-    document.title = title;
+    if (!embed) document.title = title;
     if (q.has("still")) {
       const ts = parseFloat(q.get("still"));
       Promise.all(layers.map((i) => i.decode().catch(() => {}))).then(() => { frame(ts); caption(end && ts >= at ? -1 : shots.findLastIndex((s) => s.start <= ts)); });

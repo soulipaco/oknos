@@ -14,6 +14,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 CACHE_DIR = REPO_ROOT / ".cache" / "oknos"
 WEB_DIR = REPO_ROOT / "web"
 CONTENT_DIR = REPO_ROOT / "content"
+FILMS_DIR = REPO_ROOT / "docs" / "brand" / "animations"  # the three films, served at /films/
 MIGRATIONS_DIR = Path(__file__).resolve().parent / "migrations"
 
 DEFAULT_PORT = 8642

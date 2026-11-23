@@ -51,3 +51,12 @@ nav.others a { color: var(--aegean); }
 .end-card svg { width: clamp(72px, 16vw, 120px); height: auto; margin: 0 auto; }
 .end-card .word { font-family: var(--serif); font-weight: 600; font-size: clamp(1.6rem, 5vw, 2.6rem); letter-spacing: .02em; }
 .end-card .line { font-family: var(--serif); font-size: clamp(1rem, 2.6vw, 1.3rem); color: #627079; }
+
+/* in the app (film.js: ?embed): the app gives the title and the links; ?embed=welcome shows the film alone */
+.embed, .embed body { background: transparent; overflow: hidden; }  /* the app sizes the frame to the page */
+.embed main { padding: 0; max-width: none; }
+.embed header, .embed nav.others { display: none; }
+.embed .frame { border-radius: 12px; }
+.embed .source { margin-top: 10px; }
+.embed-welcome .source { display: none; }
+.embed-welcome .captions { min-height: 84px; padding-top: 10px; }

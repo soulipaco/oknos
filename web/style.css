@@ -904,5 +904,45 @@ details.bk-group[open] > summary .bk-group-head h2::after { content: " ▴"; }
 .plan-weeks > li { border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; margin: 0; }
 .plan-weeks > li.current { border: 1.5px solid var(--accent); }
 
+/* The films of the Oknos myth (docs/brand/animations/, served at /films/): the page, and the welcome on first launch */
+main:has(.film-grid) { max-width: 960px; }
+.film-frame { display: block; width: 100%; height: calc(min(928px, 100vw - 32px, (100dvh - 220px) * 1.5) * 2 / 3 + 170px); border: 0; background: transparent; }
+.film-player { margin: 0 auto 8px; width: min(100%, max(320px, (100dvh - 220px) * 1.5)); }
+.film-tip { margin: 6px 0 0; text-align: center; }
+.films-more { font-size: 18px; margin: 26px 0 12px; }
+.film-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 14px; }
+.film-card { display: grid; grid-template-rows: auto 1fr; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; color: var(--ink); text-decoration: none; box-shadow: var(--shadow); }
+a.film-card:hover { border-color: var(--accent); }
+a.film-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.film-card.here { border: 1.5px solid var(--accent); }
+.film-card.missing { opacity: .55; }
+.film-poster { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--line); }
+.film-card-text { display: grid; gap: 2px; padding: 12px 14px 14px; }
+.film-card-text .eyebrow { margin-bottom: 4px; }
+.film-card-text strong { font-family: var(--font-greek); font-size: 19px; font-weight: 600; }
+.film-card-line { margin-top: 6px; line-height: 1.45; }
+.bk-head p.bk-films { margin-top: 10px; }
+.coach-tile .films-link { margin-top: 4px; }
+
+.welcome { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 16px;
+  background: rgba(16, 23, 28, .72); overflow-y: auto; }
+.welcome-box { width: min(860px, 100%, max(320px, (100dvh - 240px) * 1.5)); background: var(--bg); border-radius: 18px; padding: 16px 18px 12px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, .35); }
+.welcome-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+.welcome-head h2 { font-family: var(--font-greek); font-weight: 600; font-size: clamp(20px, 3.4vw, 26px); margin: 0; }
+.welcome-head p { margin: 2px 0 0; }
+.welcome-skip { flex: none; padding: 8px 20px; font-size: 16px; }
+.welcome-film .film-frame { height: calc(min(824px, 100vw - 68px, (100dvh - 240px) * 1.5 - 36px) * 2 / 3 + 110px); }
+.welcome-poster { position: relative; display: block; width: 100%; padding: 0; border: 0; border-radius: 12px; overflow: hidden; background: none; }
+.welcome-poster img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+.welcome-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: inline-flex; gap: 8px; align-items: center;
+  background: var(--accent); color: var(--accent-ink); border-radius: 999px; padding: 12px 24px; font-weight: 600; }
+.welcome-play .icon { width: 20px; height: 20px; }
+@media (max-width: 520px) {
+  .welcome { padding: 8px; place-items: start center; }
+  .welcome-box { padding: 12px 12px 8px; }
+}
+
 /* the hidden attribute wins over a display set above */
 .ex-card[hidden], .wd-bar[hidden], .pr-tile[hidden] { display: none; }
