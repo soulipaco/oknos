@@ -18,7 +18,7 @@ Fresh content every day, without the learner having to open you. This skill runs
 2. **Mark pending writing** with `.agents/skills/mark/SKILL.md`.
    - In a scheduled run, transcribe speaking only if `profile.whisper_ok` is true and the model is already downloaded (no `--download`). Otherwise leave it for the check-in.
 3. **Decide how much to write:**
-   - `generated_stock` shows more than about 40 unseen items in coach packs: write nothing new today. It would only pile up. Note it and stop after step 2.
+   - `generated_stock` shows more than about 40 unseen items in coach packs: write nothing new today. It would only pile up. Note it and skip to step 5a (the podcast), then stop.
    - The learner has not practised for 3 days or more (`activity.days_since_last_practice`): write at most 5 items. A big pile is the last thing they need.
    - Otherwise write **8–15 items**.
 4. **What to write**, in `<learner_dir>/generated/coach-practice/items/<tomorrow's date>-prep.json`. Write for the curriculum's current stage (`curriculum.current` in the report) and tag each item `"stage:<id>"` (COACHING §5.3). If `coach/plan.json` exists, also aim at the current week's `focus` units and its `beyond_a2` points, and tag exam-format items with their `exam_task` (COACHING §5.1):
@@ -31,6 +31,10 @@ Fresh content every day, without the learner having to open you. This skill runs
    - `uv run oknos validate <learner_dir>`;
    - `uv run oknos reload`;
    - `uv run oknos voice build`, so the new items are spoken in the learner's chosen voice (it only makes what is missing; skip it if `oknos voice status` shows no service ready).
+5a. **The podcast, a lesson ahead** (`docs/PODCASTS.md`). Only for a learner who already has podcast lessons (a `script.json` in `<learner_dir>/podcasts/`): they asked for them once, so keeping them going needs no new yes. Their language is `podcast.lang` in `profile.json`, else `ui_lang`.
+   - Look at `curriculum.current` and the next stage with a chapter (`curriculum.stages`). If either has no episode in that language (`uv run oknos podcast list`), write **one** with `.agents/skills/podcast/SKILL.md`, the current stage first. One a run is enough.
+   - `uv run oknos podcast check <id>`: fix every problem. Render only if the service's characters this month plus the episode's stay under 80% of its free quota (the check prints both); otherwise leave the script and note it for the check-in.
+   - `uv run oknos podcast render <id> --wait`. In a scheduled run nobody listens yet, so say in the run's summary that a new episode is ready.
 6. **Update `coach/notes.md`** with one line: the date, what you prepared, and anything left for the check-in.
 7. **The home-screen message.** Leave `coach/message.json` alone if it is less than 3 days old (the check-in wrote it). Otherwise, if you marked something, write a one-line message, e.g. "Your writing feedback is ready."
 

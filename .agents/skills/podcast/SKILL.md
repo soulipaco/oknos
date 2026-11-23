@@ -13,6 +13,7 @@ An episode is a lesson to listen to on the way to work: the chapter's dialogue a
 - **Language:** `podcast.lang` in `profile.json`, else the app's language (`ui_lang`). The maintainer's: Turkish.
 - **Id:** `<source>.<stage>.<lang>`: `book.lesson-03.tr` for the private book, `open.shopping.en` for the open book. The folder is `<learner_dir>/podcasts/<id>/`, the script `script.json` in it.
 - If a script already exists, improve it (raise `version`) rather than starting over, unless asked.
+- Once a learner has episodes, `daily-prep` (step 5a) keeps them a lesson ahead with this skill: one episode a run, for the current stage, then the next.
 
 ## 2. What to make it from
 

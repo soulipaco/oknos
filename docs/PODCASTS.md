@@ -2,7 +2,7 @@
 
 Audio lessons to listen to hands-free: on the way to work, while cooking. Each episode is written as **text first** (a script), checked, and then made into one audio file with the voice services the app already uses (`docs/VOICE.md`). The brief and its history are in `docs/prompts/11-podcasts.md`; this file is how it works.
 
-Status (2026-11-23): the pilot. The first episode is the book's Lesson 1 in Turkish: 9 parts, 12.8 minutes, 4,833 Azure characters (76 Turkish and 17 new Greek clips; the dialogue's Greek clips were already there). It waits for the maintainer's ear before more are made. One episode per book chapter, written by the agent with the `podcast` skill, played on the app's Podcast page. Personal daily and weekly episodes and the enrichment loop come later (below).
+Status (2026-11-23): the pilot. The first episode is the book's Lesson 1 in Turkish: 9 parts, 12.8 minutes, 4,833 Azure characters (76 Turkish and 17 new Greek clips; the dialogue's Greek clips were already there). The maintainer listened and said carry on; Lessons 2 and 3 followed the same day. From then on `daily-prep` keeps the podcast a lesson ahead (step 5a: for a learner who has episodes, one new chapter episode a run, for the current stage and then the next, while the service stays under 80% of its free quota). One episode per book chapter, written by the agent with the `podcast` skill, played on the app's Podcast page. Personal daily and weekly episodes and the enrichment loop come later (below).
 
 ## Decisions (agreed with the maintainer, 2026-11-23)
 
