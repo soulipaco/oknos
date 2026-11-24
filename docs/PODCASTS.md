@@ -56,6 +56,36 @@ Status (2026-11-23): the pilot. The first episode is the book's Lesson 1 in Turk
 
 It prints the estimated length and the **characters that still need a clip, per service**: that is what rendering will spend.
 
+## Format v2: a show with a cast (in progress, 2026-11-25)
+
+After listening to the first episodes, the maintainer found them a mechanical lesson rather than a podcast. The voices were flat and few, and the delivery was one narrator. The grammar nuances are what they like; the delivery is what has to change. Agreed direction:
+
+- **Two Turkish hosts.** Selin (f, mid-30s, the teacher, warm, explains with Turkish bridges) and Mert (m, early 30s, the learner: he asks the listener's questions, guesses after a "sen de söyle" pause, makes the typical mistake). There is little banter, and only about the content.
+- **A native Greek guest**, Katerina (f, 40s), who says the Greek. The chapter's characters act out the scenes, each with their own voice.
+- The hosts and Katerina sound the same in every episode.
+- **The shape:**
+  - a cold open with a short Greek scene;
+  - the scene, then its nuances raised as "why this and not that?";
+  - 4–6 key lines to answer;
+  - the scene again;
+  - a teaser for the next episode.
+- **The drill and the Turkish:** the line-by-line drill moves to an optional last part. The Turkish share falls from lesson to lesson, and an episode ends with a few minutes of easy Greek only.
+- **Sound:** a short sting between parts and a jingle; never noise under speech.
+
+The voices and the engine (a larger pool, Google Chirp 3 HD's 30 voices, Gemini's multi-speaker TTS, music) are a separate piece of work. The sources this direction draws on are Greek-teaching podcasts and channels (Easy Greek, Language Transfer, Let's Talk Greek, Easy Greek Stories), as ideas only. No podcast teaches Greek in Turkish.
+
+**The cast** is a list in the script; a speech segment's `who` names a cast id:
+
+```json
+"cast": [
+  {"id": "selin", "name": "Selin", "role": "host", "lang": ["tr"], "gender": "f", "age": "35", "manner": "warm, curious"},
+  {"id": "mert", "name": "Mert", "role": "cohost", "lang": ["tr", "el"], "gender": "m"},
+  {"id": "katerina", "name": "Κατερίνα", "role": "guest", "lang": ["el"], "gender": "f"}
+]
+```
+
+`role` is `host`, `cohost`, `guest`, `character` or `narrator`. Until a cast is mapped to particular voices, a member speaks with the voice of their gender. `check` refuses a `who` that is not in the cast, and a line in a language its speaker does not speak. Scripts without a cast work as before; the 24 chapter episodes stay as they are until v2 is agreed after a pilot.
+
 ## Making the audio
 
 ```

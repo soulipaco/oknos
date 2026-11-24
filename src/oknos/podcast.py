@@ -60,9 +60,11 @@ class Say(Strict):
     role: Literal["f", "m"] | None = None
     speed: float = Field(default=1.0, ge=0.6, le=1.0)
 
-    def voice_role(self) -> str:
+    def voice_role(self, cast: dict[str, "CastMember"] | None = None) -> str:
         if self.role:
             return self.role
+        if cast and self.who in cast:
+            return cast[self.who].gender
         return voice.role_of(self.who) if self.lang == "el" else "f"
 
 
@@ -86,6 +88,19 @@ class Source(Strict):
     note: str | None = None
 
 
+class CastMember(Strict):
+    """One voice of the episode (format v2, docs/PODCASTS.md "The cast"): a host, a guest or a character.
+    A speech segment's `who` names its id; the voice session maps the cast to the voices in the pool."""
+
+    id: str = Field(pattern=r"^[a-z][a-z0-9\-]{0,30}$")
+    name: str = Field(min_length=1, max_length=40)
+    role: Literal["host", "cohost", "guest", "character", "narrator"]
+    lang: list[Literal["el", "tr", "en"]] = Field(min_length=1)
+    gender: Literal["f", "m"]
+    age: str | None = None
+    manner: str | None = Field(default=None, max_length=200)
+
+
 class Title(Strict):
     tr: str = Field(min_length=1)
     en: str = Field(min_length=1)
@@ -104,8 +119,13 @@ class Script(Strict):
     # week), and what it drilled (Greek words and points), so the next episode does not repeat them.
     date: str | None = Field(default=None, pattern=r"^\d{4}-\d{2}-\d{2}$")
     focus: list[str] = []
+    cast: list[CastMember] = []
     sources: list[Source] = []
     segments: list[Segment] = Field(min_length=3)
+
+
+def cast_of(script: "Script") -> dict[str, CastMember]:
+    return {c.id: c for c in script.cast}
 
 
 _SCRIPT = TypeAdapter(Script)
@@ -180,6 +200,17 @@ def problems(script: Script) -> tuple[list[str], list[str]]:
         if isinstance(seg, Echo) and not isinstance(previous, Say):
             bad.append(f"{where}: an echo gap must follow a line of speech")
         previous = seg
+    cast = cast_of(script)
+    if len(cast) != len(script.cast):
+        bad.append("two cast members share an id")
+    if cast:
+        for i, seg in enumerate(script.segments):
+            if isinstance(seg, Say) and seg.who:
+                member = cast.get(seg.who)
+                if member is None:
+                    bad.append(f"segment {i}: {seg.who!r} is not in the cast")
+                elif seg.lang not in member.lang:
+                    bad.append(f"segment {i}: {member.name} does not speak {seg.lang} (cast lang: {member.lang})")
     if script.kind != "chapter":
         if not script.date:
             bad.append(f"a {script.kind} episode needs its date (the day it is for)")
@@ -196,12 +227,13 @@ def lines(script: Script) -> list[tuple[str, str, str]]:
     """Every (text, role, lang) the episode speaks, each once."""
     seen: set[tuple[str, str, str]] = set()
     out = []
+    cast = cast_of(script)
     for s in script.segments:
         if isinstance(s, Say):
-            k = (voice.norm(s.say), s.voice_role(), s.lang)
+            k = (voice.norm(s.say), s.voice_role(cast), s.lang)
             if k not in seen:
                 seen.add(k)
-                out.append((s.say.strip(), s.voice_role(), s.lang))
+                out.append((s.say.strip(), s.voice_role(cast), s.lang))
     return out
 
 
@@ -333,13 +365,14 @@ def render(pid: str, *, wait: bool = False, progress: Callable[[str, int, int], 
     last = 0.0
     says = sum(1 for s in script.segments if isinstance(s, Say))
     done = 0
+    cast = cast_of(script)
     with tempfile.TemporaryDirectory(prefix="oknos-podcast-") as tmp:
         tmpdir = Path(tmp)
         for seg in script.segments:
             if isinstance(seg, Part):
                 timeline_parts.append({"t": round(t, 2), "title": seg.part})
             elif isinstance(seg, Say):
-                role = seg.voice_role()
+                role = seg.voice_role(cast)
                 clip = voice.find(seg.say, role, seg.lang)
                 if clip is None:  # made above; gone since?
                     raise PodcastError(f"the clip for {seg.say[:60]!r} is missing")
