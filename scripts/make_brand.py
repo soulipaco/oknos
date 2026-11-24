@@ -182,7 +182,7 @@ def main():
         diagram("how-it-works", t, how_it_works(t))
         diagram("a-day", t, a_day(t))
         diagram("what-you-learn", t, what_you_learn(t))
-    social_preview()
+    print("the social preview and the README's screenshots: scripts/readme_images.py")
 
 
 # ---------- the README's diagrams (docs/img/) ----------
@@ -331,46 +331,6 @@ def what_you_learn(t):
     b.append(label(64, 299, "Import a book you own and its lessons become the course. It stays private, on your computer.", t, 13,
                    anchor="start", colour=MUTED[t]))
     return W, H, "".join(b), "What you learn: 12 stages from reading Greek to B1, aimed at the A2 + history and B1 exams"
-
-
-TAGLINE ="Learn Greek the lazy way. Your agent does the rest."
-SECOND_LINE = "You plait the rope. The donkey carries the load."
-
-
-def social_preview():
-    """The GitHub social preview (1280×640 PNG), drawn as a page and photographed by headless Chrome."""
-    import shutil
-    import subprocess
-
-    page = ROOT / ".cache" / "oknos" / "social-preview.html"
-    page.write_text(f"""<!doctype html><meta charset="utf-8"><style>
-@font-face {{ font-family: "Noto Serif"; src: url("{FONT.as_uri()}"); font-weight: 100 900; }}
-html, body {{ margin: 0; width: 1280px; height: 640px; overflow: hidden; background: {PAPER["light"]}; }}
-.band {{ position: absolute; left: 0; right: 0; height: 28px; opacity: .55;
-         background: url("{(OUT / "meander.svg").as_uri()}") repeat-x center / 28px 28px; }}
-.top {{ top: 28px; }} .bottom {{ bottom: 28px; }}
-.card {{ position: absolute; left: 112px; right: 112px; top: 0; bottom: 0; display: flex; align-items: center; gap: 72px; }}
-.text {{ flex: 1; }}
-.text img {{ height: 132px; display: block; margin: 0 0 36px -10px; }}
-h1 {{ font: 600 46px/1.2 "Noto Serif", serif; color: {INK["light"]}; margin: 0 0 18px; letter-spacing: -.3px; }}
-p {{ font: 400 27px/1.4 "Segoe UI", system-ui, sans-serif; color: #627079; margin: 0; }}
-.donkey {{ height: 300px; }}
-</style>
-<div class="band top"></div><div class="band bottom"></div>
-<div class="card"><div class="text"><img src="{(OUT / "oknos-lockup-light.svg").as_uri()}" alt="Oknos">
-<h1>{TAGLINE.replace(". ", ".<br>", 1)}</h1><p>{SECOND_LINE}</p></div>
-<img class="donkey" src="{(OUT / "donkey-ready-light.svg").as_uri()}" alt=""></div>""", encoding="utf-8")
-    candidates = (shutil.which("chrome"), shutil.which("google-chrome"), shutil.which("chromium"),
-                  r"C:\Program Files\Google\Chrome\Application\chrome.exe",
-                  r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe")
-    chrome = next((c for c in candidates if c and Path(c).exists()), None)
-    if not chrome:
-        print(f"social preview: no Chrome found; open {page} at 1280x640 and save it as docs/brand/social-preview.png")
-        return
-    subprocess.run([chrome, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--allow-file-access-from-files",
-                    "--window-size=1280,640", f"--user-data-dir={page.parent / 'chrome-profile'}",
-                    f"--screenshot={OUT / 'social-preview.png'}", page.as_uri()], capture_output=True, timeout=120)
-    print("wrote social-preview.png")
 
 
 if __name__ == "__main__":

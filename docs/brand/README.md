@@ -26,7 +26,7 @@ The direction is Aegean: paper white, ink, Aegean blue, with olive and terracott
 | **The donkey** | The mascot, standing for the agent ("works like a donkey"). Only where the agent has done something: the coach's note, feedback ready, an empty day, "how it works". Never in the logo. Three moods, shown by the ears. | `donkey-{ready,working,resting}-{light,dark}.svg` |
 | **Ὄ** | The app icon and favicon: an omicron whose breathing (short ear) and accent (long ear) are a donkey's ears, splayed sideways. It also reads as the Turkish ö. Linen on an Aegean tile. | `oknos-icon.svg` (also `web/favicon.svg`), `oknos-o-{light,dark}.svg` |
 
-Also: `meander.svg` (a repeatable border tile) and `social-preview.png` (1280×640, for GitHub's social preview).
+Also: `meander.svg` (a repeatable border tile) and `social-preview.png` (1280×640, for GitHub's social preview: the lockup and tagline beside two cards from the app, made with the README's screenshots by `scripts/readme_images.py`, see `docs/DEVELOPING.md`).
 
 In a README, show the light or dark file with `<picture>` and `prefers-color-scheme`. Inline in the app, give each rope's mask a unique id.
 
@@ -40,4 +40,4 @@ All of them come from one script, so a change is made there, never by hand in an
 uv run --with fonttools python scripts/make_brand.py
 ```
 
-It needs Noto Serif (SIL Open Font Licence) in `.cache/oknos/fonts/`, from <https://github.com/google/fonts/tree/main/ofl/notoserif>; the wordmark is turned into outlines, so the font is not needed to show it. The social preview is photographed by headless Chrome or Edge.
+It needs Noto Serif (SIL Open Font Licence) in `.cache/oknos/fonts/`, from <https://github.com/google/fonts/tree/main/ofl/notoserif>; the wordmark is turned into outlines, so the font is not needed to show it. The social preview is made with the README's screenshots, by `scripts/readme_images.py`.

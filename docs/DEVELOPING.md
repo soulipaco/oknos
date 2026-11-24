@@ -55,4 +55,10 @@ CI runs the guard, the tests and `validate content/open` on Ubuntu and Windows f
 
 ## The README's screenshots
 
-They are taken from a fresh clone (only the open content, no private material) with a simulated learner: `uv run python scripts/simulate.py --days 24 --recent --learner-dir <clone>/learner`, a `profile.json` with `"ui_lang": "en"`, then the app at 720 px wide in the light theme. Never take them from a real learner folder.
+The README's pictures (`docs/img/app-*.webp`, `docs/img/hero-{light,dark}.webp`, `docs/img/film-preview.webp`) and the social preview (`docs/brand/social-preview.png`) come from one script, run in a fresh clone (only the open content, no private material):
+
+```
+uv run --with playwright --with pillow python scripts/readme_images.py
+```
+
+It refuses to run while `content/private/` holds anything, and it never touches `learner/`. It makes a throwaway learner folder with 24 days of simulated practice (`scripts/simulate.py`), an English profile and a coach's note; adds a demo coach pack (copies of the open exam-format items, answered once, about half right) so the exam screen has evidence to show; runs the app on port 8690 with that folder; photographs the screens in light and dark with headless Chrome or Edge; makes film 1's preview from the film's own player; composes the hero and the social preview from the screenshots; then stops the app and deletes the folder (`--keep` keeps it, `--port` picks another port). Playwright and Pillow are used only here, through `uv run --with`. The diagrams (`docs/img/*.svg`) and the brand files come from `scripts/make_brand.py`. Never take screenshots from a real learner folder.
