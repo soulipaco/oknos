@@ -2885,11 +2885,11 @@ function filmFrame(film, embed, voice, onEnded = null) {
   return frame;
 }
 
-function filmCard(film, current) {
+function filmCard(film, current, pos, count) {
   const inner = [
     h("img", { class: "film-poster", src: film.poster, alt: "", loading: "lazy", width: "1200", height: "800" }),
     h("span", { class: "film-card-text" },
-      h("span", { class: "eyebrow" }, icon("film"), `${film.n} / 3`),
+      h("span", { class: "eyebrow" }, icon("film"), `${pos} / ${count}`),
       h("strong", { lang: "el" }, FILM_TITLES_EL[film.n - 1]),
       h("span", { class: "small muted" }, t(`film_${film.n}`)),
       h("span", { class: "small film-card-line" }, t(`film_${film.n}_line`)))];
@@ -2919,7 +2919,7 @@ async function renderFilms(arg) {
   app.replaceChildren(...[...appBar(null), crumb(film ? "films" : "home", film ? t("films_title") : t("nav_home")),
     head, player,
     film ? h("h2", { class: "films-more" }, t("films_all")) : null,
-    h("div", { class: "film-grid" }, all.map(f => filmCard(f, film && f.n === film.n)))].filter(Boolean));
+    h("div", { class: "film-grid" }, all.map((f, i) => filmCard(f, film && f.n === film.n, i + 1, all.length)))].filter(Boolean));
 }
 
 async function showWelcome() {
