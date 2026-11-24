@@ -46,6 +46,28 @@ def test_match_scores_per_pair():
         check(item, {}, {"answers": [1, 0, 9]})
 
 
+def test_match_card_never_shows_a_pair_on_one_row():
+    # Items are often written pair by pair (2 – δύο, 5 – πέντε…): the card must not give that away.
+    import random
+
+    from oknos.session import match_order, task_card
+
+    item = MatchItem(id="m", type="match", skill="vocab", level="A1",
+                     left=["2", "5", "10", "0"], right=["δύο", "πέντε", "δέκα", "μηδέν"], answer=[0, 1, 2, 3])
+    for seed in range(200):
+        card = task_card("p/m", item, random.Random(seed))
+        order = card["right_order"]
+        assert sorted(order) == [0, 1, 2, 3] and card["right"] == item.right
+        assert all(order[r] != item.answer[r] for r in range(4))
+        # the positions sent back are still those of item.right, so checking is unchanged
+        assert check(item, card, {"answers": [0, 1, 2, 3]}).correct
+    # more right items than left, and a two-row item
+    for seed in range(50):
+        o = match_order([2, 0], 3, random.Random(seed))
+        assert sorted(o) == [0, 1, 2] and o[0] != 2 and o[1] != 0
+        assert match_order([0, 1], 2, random.Random(seed)) == [1, 0]
+
+
 def test_gap_bank_and_categorise():
     gb = GapBankItem(id="g", type="gap_bank", skill="reading", level="A1",
                      text="Είναι {1} και {2}.", bank=["ανοιχτό", "κλειστό", "μακριά"], answer={"1": "ανοιχτό", "2": "κλειστό"})

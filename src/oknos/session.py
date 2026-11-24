@@ -22,7 +22,7 @@ from collections import defaultdict
 from datetime import date, timedelta
 from typing import Any
 
-from oknos import coachfiles, db, paths, scheduler
+from oknos import coachfiles, db, greek, paths, scheduler
 from oknos.checking import meaning, meaning_lang
 from oknos.packs import (
     OPEN_TASKS,
@@ -39,6 +39,7 @@ from oknos.packs import (
     TrueFalseItem,
     VocabItem,
     all_picture_urls,
+    chapter_text,
     picture_url,
     WriteItem,
     servable,
@@ -229,12 +230,36 @@ def form_card(item_key: str, item: FormItem, state: scheduler.State | None, rng:
     return card
 
 
-def task_card(item_key: str, item, rng: random.Random) -> dict:
+def match_order(answer: list[int], size: int, rng: random.Random) -> list[int]:
+    """The order to show a match item's right column in: a list of right-hand positions, row by row.
+
+    Items are often written with each pair on the same row (answer 0, 1, 2…), which gives the answer
+    away. So the column is shuffled until no left item has its own pair beside it. With a single
+    row there is nothing to shuffle. The positions stay those of `item.right`, so checking is unchanged.
+    """
+    order = list(range(size))
+    if size < 2:
+        return order
+    rows = min(len(answer), size)
+    for _ in range(200):
+        rng.shuffle(order)
+        if all(order[r] != answer[r] for r in range(rows)):
+            return order
+    # Very unlikely after 200 tries; a rotation of the answer always works when every row has a pair.
+    shifted = answer[1:] + answer[:1] + [j for j in range(size) if j not in answer]
+    return shifted if all(shifted[r] != answer[r] for r in range(rows)) else order
+
+
+def task_card(item_key: str, item, rng: random.Random, in_chapter: bool = False) -> dict:
+    """An exam-format task's card. `in_chapter`: shown in the chapter reader, under the chapter's own
+    dialogue; anywhere else a comprehension question carries that dialogue as its text."""
     card: dict[str, Any] = {
         "item_key": item_key, "type": item.type, "skill": item.skill, "exam_task": item.exam_task,
         "rubric": _text(item.rubric), "ask": _text(item.ask),
         "stimulus": item.stimulus.model_dump(exclude_none=True) if item.stimulus else None,
     }
+    if card["stimulus"] is None and not in_chapter and (text := chapter_text(item_key)):
+        card["stimulus"] = {"text": text}
     if item.stimulus and item.stimulus.pictures:
         card["stimulus"]["pictures"] = [f"/pictures/{item_key.split('/', 1)[0]}/{f}" for f in item.stimulus.pictures]
     if isinstance(item, McqItem):
@@ -246,6 +271,7 @@ def task_card(item_key: str, item, rng: random.Random) -> dict:
         card["prompt"] = _text(item.prompt)
         card["left"] = item.left
         card["right"] = item.right
+        card["right_order"] = match_order(item.answer, len(item.right), rng)
     elif isinstance(item, GapBankItem):
         card["text"] = item.text
         card["bank"] = rng.sample(item.bank, len(item.bank))
@@ -648,7 +674,7 @@ def practice(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, keys: lis
         elif isinstance(item, FormItem):
             card = form_card(k, item, states.get(k), rng)
         else:
-            card = task_card(k, item, rng)
+            card = task_card(k, item, rng, in_chapter=kind == "lesson")
         cards.append({**card, "segment": _segment(item, states.get(k))})
     with conn:
         cur = conn.execute(
@@ -1066,6 +1092,26 @@ def stage_detail(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage
 
 # ---------- chapters: read first, then practise (phase 5c) ----------
 
+def _letter_says(catalog: Catalog) -> dict[str, str]:
+    """What a letter's card says aloud ("άλφα. ταξί"), by the letter as written ("Α α")."""
+    if getattr(catalog, "_letter_says", None) is None:
+        catalog._letter_says = {" ".join(i.el.split()): i.say for _, i in catalog.items.values()  # type: ignore[attr-defined]
+                                if isinstance(i, VocabItem) and i.say and i.pos in ("letter", "digraph")}
+    return catalog._letter_says  # type: ignore[attr-defined]
+
+
+def table_say(cell, catalog: Catalog) -> str | None:
+    """What the ▶ of a chapter table's row reads: a letter as its alphabet card says it (its name and
+    an example word), a Greek word or letter pair as written; nothing for a row headed in Turkish or
+    English, or for a lone letter with no card (a voice reading "Α α" helps no one)."""
+    if not isinstance(cell, str) or not greek.has_greek(cell):
+        return None
+    text = " ".join(cell.split())
+    if text in _letter_says(catalog):
+        return _letter_says(catalog)[text]
+    return text if any(len(w) > 1 for w in greek.words(text)) else None
+
+
 def chapter_view(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage_id: str) -> dict | None:
     """A stage's chapter as the reader shows it: the blocks, with words resolved to their item
     (Greek, meaning, status), and where the learner is in it."""
@@ -1103,6 +1149,8 @@ def chapter_view(conn: sqlite3.Connection, catalog: Catalog, ui_lang: str, stage
                     out["picture"] = f"/pictures/{catalog.chapters[(prog.curriculum.id, stage_id)][0].id}/{b.picture}"
             elif b.type == "check":
                 out["items"] = [k for k in b.items if k in catalog.items and catalog.items[k][1].type not in ("write", "speak")]
+            elif b.type == "table":
+                out["says"] = [table_say(row[0], catalog) if row else None for row in b.rows]
             blocks.append(out)
         sections.append({"kind": sec.kind, "title": sec.title.model_dump() if sec.title else None, "blocks": blocks})
     read = curriculum.chapter_reads(conn, prog.curriculum.id).get(stage_id)

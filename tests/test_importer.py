@@ -114,12 +114,17 @@ def test_import_writes_a_clean_private_pack(source, learner, monkeypatch, tmp_pa
 def test_turkish_overlay_survives_reimport(source, learner, monkeypatch, tmp_path):
     out, _ = run(source, learner, monkeypatch, tmp_path)
     (out / "overlays").mkdir()
-    (out / "overlays" / "tr.json").write_text(json.dumps({"words": {"φαρμακειο|noun": {"tr": "eczane"}}}), encoding="utf-8")
+    (out / "overlays" / "tr.json").write_text(json.dumps({"words": {
+        "φαρμακειο|noun": {"tr": "eczane"},
+        # a correction of the source: its English is wrong for the lesson's sense
+        "γιατροσ|noun": {"tr": "doktor", "en": "doctor; physician"}}}), encoding="utf-8")
     out, report = run(source, learner, monkeypatch, tmp_path)
     pack, _, _ = packs.load_pack(out, "private")
     f = next(i for i in pack.items.values() if i.lemma == "φαρμακείο")
     assert f.tr == "eczane" and f.source["tr"] == "coach, unverified"
-    assert report.counts["vocab_tr_from_overlay"] == 1
+    g = next(i for i in pack.items.values() if i.lemma == "γιατρός")
+    assert g.en == "doctor; physician" and g.tr == "doktor" and g.id == "v-giatros"
+    assert report.counts["vocab_tr_from_overlay"] == 2
 
 
 def test_import_refuses_tracked_folders(source, learner, monkeypatch, tmp_path):

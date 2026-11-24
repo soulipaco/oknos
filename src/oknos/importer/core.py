@@ -196,7 +196,14 @@ def import_vocabulary(mapping: Mapping, source: Path, out: Path, report: Report,
             no_gender.append(e["lemma"])
         if e["senses"]:
             item["en"] = "; ".join(e["senses"][:4])
-        tr_value = e["tr"] or (overlay_words.get(f"{folded}|{pos}") or {}).get("tr")
+        fix = overlay_words.get(f"{folded}|{pos}") or {}
+        # A coach's correction of the source itself (a word list that gives κύριος only as the
+        # adjective "main", when the lesson teaches ο κύριος, "Mr"): it replaces what the source says,
+        # and the item keeps its id so its history and flags stay with it.
+        for key in ("el", "pos", "gender", "en"):
+            if fix.get(key):
+                item[key] = fix[key]
+        tr_value = e["tr"] or fix.get("tr")
         if tr_value:
             item["tr"] = tr_value
             tr_applied += 0 if e["tr"] else 1

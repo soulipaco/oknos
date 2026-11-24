@@ -44,7 +44,7 @@ uv run oknos import my-book.json --source "C:\path\to\my material"
 
 The pack goes to `content/private/<id>/`. The importer refuses to write anywhere git could pick it up. It prints the counts, checks that the pack loads, and writes `IMPORT_REPORT.md` with samples of what was kept and what was dropped. Restart the app, or ask the coach to reload content, and the words appear in your daily sessions.
 
-Running the import again is safe. It rewrites the pack from the source, and it keeps the Turkish overlay (`overlays/tr.json`), which the coach writes. Fixing a meaning in the overlay and importing again updates the items.
+Running the import again is safe. It rewrites the pack from the source, and it keeps the Turkish overlay (`overlays/tr.json`), which the coach writes. Fixing a meaning in the overlay and importing again updates the items. An overlay entry can also correct the source itself: `en`, `el`, `pos` and `gender` there replace what the source says (a word list that gives κύριος only as the adjective "main", when the lesson teaches ο κύριος, "Mr"); the item keeps its id.
 
 ## 4. What the importer does to the text
 

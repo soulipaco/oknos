@@ -621,6 +621,7 @@ def load_all(roots: list[tuple[str, Path]] | None = None) -> Catalog:
                 catalog.chapters[(chapter.curriculum, chapter.stage)] = (pack, chapter)
     catalog.problems.extend(chapter_ref_problems(catalog))
     set_pictures(catalog)
+    set_chapter_texts(catalog)
     for problem in catalog.problems:
         log.warning("content: %s", problem)
     return catalog
@@ -711,3 +712,19 @@ def picture_url(item) -> str | None:
 
 def all_picture_urls() -> list[str]:
     return sorted(set(_pictures.values()))
+
+
+# ---------- a chapter's comprehension questions, outside the chapter ----------
+
+_chapter_texts: dict[str, str] = {}  # item key -> the dialogue its question is about
+
+
+def set_chapter_texts(catalog: "Catalog") -> None:
+    _chapter_texts.clear()
+    for _, chapter in catalog.chapters.values():
+        _chapter_texts.update(chapter.comprehension_texts())
+
+
+def chapter_text(item_key: str) -> str | None:
+    """The chapter dialogue a comprehension question asks about, to show with it in a session."""
+    return _chapter_texts.get(item_key)

@@ -164,6 +164,18 @@ class Chapter(Strict):
     def check_keys(self) -> list[str]:
         return _unique(k for _, _, b in self.blocks() if isinstance(b, Check) for k in b.items)
 
+    def comprehension_texts(self) -> dict[str, str]:
+        """The questions of the comprehension section, each with the chapter's dialogue as one text
+        ("Νίκος: … Ελένη: …"). In the reader they sit under the dialogue; in a daily session they
+        come alone, and without the text they cannot be answered."""
+        lines = [f"{ln.who}: {ln.el}" for s in self.sections if s.kind == "text"
+                 for b in s.blocks if isinstance(b, Dialogue) for ln in b.lines]
+        if not lines:
+            return {}
+        text = "\n".join(lines)
+        return {k: text for s in self.sections if s.kind == "comprehension"
+                for b in s.blocks if isinstance(b, Check) for k in b.items}
+
     def greek_lines(self) -> list[dict]:
         """Greek sentences with their translations: dialogue lines and examples, in order."""
         out = []

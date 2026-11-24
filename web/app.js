@@ -1091,10 +1091,10 @@ RENDERERS.match = (card) => {
   const picks = state.card.picks;
   let active = 0;
   const [row, checkBtn] = checkRow(() => submit({ answers: card.left.map((_, i) => picks[i]) }));
-  const leftEls = card.left.map((text, i) => h("button", { class: "pick left el", type: "button", lang: "el", "data-i": i,
+  const leftEls = card.left.map((text, i) => h("button", { class: "pick side-left el", type: "button", lang: "el", "data-i": i,
     onclick: () => { if (state.card.answered) return; if (picks[i] !== undefined) delete picks[i]; active = i; paint(); } },
     h("span", { class: "badge" }, String.fromCharCode(65 + i)), h("span", {}, text)));
-  const rightEls = card.right.map((text, j) => h("button", { class: "pick right el", type: "button", lang: "el", "data-j": j,
+  const rightEls = card.right.map((text, j) => h("button", { class: "pick side-right el", type: "button", lang: "el", "data-j": j,
     onclick: () => {
       if (state.card.answered) return;
       for (const [k, v] of Object.entries(picks)) if (v === j) delete picks[k];
@@ -1120,9 +1120,14 @@ RENDERERS.match = (card) => {
     });
   };
   paint();
+  // The server shuffles the right column so that no pair sits on one row (`right_order`); a card made
+  // before that is shown rotated by one, since most items are written pair by pair.
+  const n = card.right.length;
+  const order = Array.isArray(card.right_order) && card.right_order.length === n
+    ? card.right_order : card.right.map((_, j) => (j + 1) % n);
   return h("article", { class: "card" }, rubricLine(card.rubric, card.ask), stimulusBlock(card),
     card.prompt?.el ? greekText(card.prompt.el, { tag: "p", cls: "prompt-greek" }) : null,
-    h("div", { class: "match" }, h("div", { class: "col" }, leftEls), h("div", { class: "col" }, rightEls)),
+    h("div", { class: "match" }, h("div", { class: "col" }, leftEls), h("div", { class: "col" }, order.map(j => rightEls[j]))),
     row, h("div", { class: "slot" }));
 };
 
@@ -2110,8 +2115,10 @@ const CHAPTER_BLOCKS = {
     h("div", { class: "table-wrap" }, h("table", {},
       // a cell is Greek (a string) or an explanation in both languages ({tr, en})
       h("thead", {}, h("tr", {}, b.head.map(c => h("th", {}, typeof c === "string" ? greekText(c, { tappable: false }) : inlineText(tr(c), "span"))))),
-      h("tbody", {}, b.rows.map(row => h("tr", {}, row.map((c, j) => h(j === 0 ? "th" : "td", j === 0 ? { scope: "row" } : {},
-        typeof c === "string" ? greekText(c, { cls: "el" }) : inlineText(tr(c), "span")))))))),
+      // a row headed in Greek has a ▶ (`says`: a letter is read as its alphabet card says it, "άλφα. ταξί")
+      h("tbody", {}, b.rows.map((row, i) => h("tr", {}, row.map((c, j) => h(j === 0 ? "th" : "td", j === 0 ? { scope: "row" } : {},
+        typeof c === "string" ? greekText(c, { cls: "el" }) : inlineText(tr(c), "span"),
+        j === 0 && b.says?.[i] ? speakButton(b.says[i], true) : null))))))),
     b.note ? h("p", { class: "muted small" }, inlineText(tr(b.note), "span")) : null),
 
   examples: (b) => h("ul", { class: "ch-examples" }, b.items.map(e => h("li", {},

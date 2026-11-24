@@ -98,3 +98,37 @@ def test_the_open_book_supports_a_private_books_curriculum(open_book, tmp_path):
 def test_follows_must_name_real_stages(open_book, tmp_path):
     _book_with_curriculum(tmp_path, {"open-a1-b1": {"first-words": "lesson-99"}})
     assert "my-book-course" not in curriculum.available(packs.load_all())
+
+
+def test_comprehension_questions_carry_the_dialogue_outside_the_chapter(full_catalog):
+    # "According to the dialogue": in a daily session the question comes without the chapter, so
+    # its card carries the dialogue; in the reader it sits under the dialogue and does not.
+    import random
+
+    from oknos import session
+
+    cur = _open_curriculum()
+    checked = 0
+    for stage in cur.stages:
+        _, chapter = full_catalog.chapters[(cur.id, stage.id)]
+        texts = chapter.comprehension_texts()
+        for key, text in texts.items():
+            _, item = full_catalog.items[key]
+            if item.type in ("vocab", "form") or item.stimulus:
+                continue
+            card = session.task_card(key, item, random.Random(0))
+            assert card["stimulus"] == {"text": text} and ": " in text.splitlines()[0]
+            assert session.task_card(key, item, random.Random(0), in_chapter=True)["stimulus"] is None
+            checked += 1
+    assert checked >= 12
+
+
+def test_a_letter_table_row_is_read_as_its_alphabet_card(full_catalog):
+    # "Listen to each letter with ▶": a letter's row reads its name and example, not "Α α".
+    from oknos.session import table_say
+
+    assert table_say("Α α", full_catalog) == "άλφα. ταξί"
+    assert table_say("Σ σ ς", full_catalog).startswith("σίγμα")
+    assert table_say("γάλα", full_catalog) == "γάλα"
+    assert table_say({"tr": "ses", "en": "sound"}, full_catalog) is None
+    assert table_say("Ϙ ϙ", full_catalog) is None  # a lone letter with no card: nothing worth reading
