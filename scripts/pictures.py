@@ -29,7 +29,7 @@ def slug(item_key: str) -> str:
 
 
 def take(requests_file: Path) -> int:
-    data = json.loads(requests_file.read_text(encoding="utf-8"))
+    data = json.loads(requests_file.read_text(encoding="utf-8-sig"))  # a Windows tool may have saved it with a BOM
     folder = ROOT / data["folder"] if data.get("folder") else requests_file.parent
     index_file = PACK / "pictures" / "pictures.json"
     index = json.loads(index_file.read_text(encoding="utf-8"))
