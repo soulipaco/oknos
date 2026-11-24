@@ -210,3 +210,114 @@ def test_the_command_line_lists_and_checks_a_script(learner, capsys):
     out = capsys.readouterr().out
     assert "still to voice: 3 clips" in out and "tr: 1 clips" in out
     assert cli.main(["podcast", "check", "nothing"]) == 1
+
+
+# ---------- personal episodes (daily, weekly) ----------
+
+def personal(kind="daily", day="2026-11-25", **over):
+    from datetime import date as _date
+
+    from oknos.podcast_material import episode_id
+
+    base = script(id=episode_id(kind, _date.fromisoformat(day), "tr"), kind=kind, curriculum=None, stage=None,
+                  date=day, title={"tr": "Günün dersi", "en": "Today's lesson"},
+                  sources=[{"what": "report", "note": "due and weak words"}], focus=["το τσάι"])
+    base.update(over)
+    return base
+
+
+def test_personal_episode_ids_and_the_date_they_need(learner):
+    from datetime import date
+
+    from oknos.podcast_material import episode_id
+
+    assert episode_id("daily", date(2026, 11, 25), "tr") == "daily.2026-11-25.tr"
+    assert episode_id("weekly", date(2026, 11, 29), "en") == "weekly.2026-w48.en"
+    write(learner, personal())
+    assert podcast.check("daily.2026-11-25.tr")["problems"] == []
+    no_date = personal()
+    no_date.pop("date")
+    write(learner, no_date)
+    assert any("needs its date" in p for p in podcast.check("daily.2026-11-25.tr")["problems"])
+    with pytest.raises(podcast.PodcastError):
+        podcast.parse(personal(date="25 Nov"))
+
+
+def _fake_render(learner, raw, rendered="2026-11-24T19:00:00"):
+    """An episode on disk as render leaves it (episode.mp3 + episode.json), without ffmpeg."""
+    d = write(learner, raw)
+    (d / "episode.mp3").write_bytes(b"ID3")
+    meta = {"id": raw["id"], "kind": raw["kind"], "lang": raw["lang"], "title": raw["title"], "date": raw.get("date"),
+            "rendered": rendered, "seconds": 600, "script": podcast.script_hash(raw["id"]), "parts": []}
+    (d / "episode.json").write_text(json.dumps(meta, ensure_ascii=False), encoding="utf-8")
+    return d
+
+
+def test_today_is_the_daily_episode_else_the_weeks(learner):
+    assert podcast.today_episode("2026-11-25") is None
+    _fake_render(learner, personal("weekly", "2026-11-23"))
+    assert podcast.today_episode("2026-11-25")["kind"] == "weekly"
+    assert podcast.today_episode("2026-11-25", "en") is None
+    _fake_render(learner, personal("daily", "2026-11-25"))
+    assert podcast.today_episode("2026-11-25")["id"] == "daily.2026-11-25.tr"
+    assert podcast.today_episode("2026-11-30") is None  # last week's weekly is not this week's
+
+
+def test_the_home_screen_offers_todays_episode(client, learner):
+    from oknos import db
+
+    today = db.today().isoformat()
+    (learner / "profile.json").write_text(json.dumps({"ui_lang": "en", "podcast": {"lang": "tr"}}), encoding="utf-8")
+    assert client.get("/api/home").json()["podcast_today"] is None
+    _fake_render(learner, personal("daily", today))
+    got = client.get("/api/home").json()["podcast_today"]
+    assert got["id"] == f"daily.{today}.tr" and got["seconds"] == 600
+
+
+def test_prune_keeps_the_newest_personal_episodes_and_only_the_clips_still_spoken(learner):
+    chapter = write(learner, script())
+    for day in ("2026-11-20", "2026-11-21", "2026-11-22"):
+        raw = personal("daily", day)
+        raw["segments"] = [{"part": "Giriş"}, {"lang": "tr", "say": f"Bugün {day[-2:]}."}, {"lang": "el", "say": "Καλημέρα!"}]
+        write(learner, raw)
+    for text, lang in (("Merhaba! Bugün selamlaşmayı öğreniyoruz.", "tr"), ("Bugün 20.", "tr"), ("Bugün 22.", "tr"),
+                       ("Καλημέρα!", "el")):
+        f = voice.file_for(text, "f", lang=lang)
+        f.parent.mkdir(parents=True, exist_ok=True)
+        f.write_bytes(b"ID3")
+    gone = podcast.prune({"daily": 2, "weekly": 8})
+    assert gone["episodes"] == ["daily.2026-11-20.tr"] and gone["clips"] == 1
+    assert voice.find("Bugün 20.", "f", "tr") is None
+    assert voice.find("Bugün 22.", "f", "tr") is not None
+    assert voice.find("Merhaba! Bugün selamlaşmayı öğreniyoruz.", "f", "tr") is not None  # the chapter's
+    assert voice.find("Καλημέρα!", "f") is not None  # Greek clips stay: the app uses them
+    assert chapter.is_dir()
+
+
+def test_material_lists_due_weak_and_wrong_words_with_meanings(learner, capsys):
+    from datetime import timedelta
+
+    from oknos import cli, db, packs, scheduler
+    from oknos.podcast_material import material
+
+    catalog = packs.load_all()
+    conn = db.open_db()
+    packs.sync_items(conn, catalog)
+    words = [k for k, (_, it) in catalog.items.items() if it.type == "vocab" and not k.startswith("open-alphabet/")][:3]
+    with conn:
+        for k in words:
+            scheduler.record(conn, k, "vocab", False, 0.0)
+            conn.execute("INSERT INTO attempts(session_id, item_key, ts, response_json, score, correct) "
+                         "VALUES (NULL, ?, ?, '{}', 0, 0)", (k, db.now()))
+    tomorrow = db.today() + timedelta(days=1)
+    m = material(conn, catalog, "daily", tomorrow, {"ui_lang": "tr"})
+    conn.close()
+    assert m["id"] == f"daily.{tomorrow.isoformat()}.tr" and m["lang"] == "tr" and m["exists"] is False
+    assert {w["key"] for w in m["due"]} == set(words)
+    assert all(w["meaning"] and w["lapses"] == 1 for w in m["due"])
+    assert {x["key"] for x in m["mistakes"]} <= set(words) and m["mistakes"]
+    assert {w["key"] for w in m["new"]} == set(words)
+    assert m["previous"] == []
+    assert cli.main(["podcast", "material", "weekly"]) == 0
+    assert json.loads(capsys.readouterr().out)["id"].startswith("weekly.")
+    assert cli.main(["podcast", "material", "monthly"]) == 1

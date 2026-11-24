@@ -32,6 +32,18 @@ RECORDING_TYPES = {"audio/webm": ".webm", "audio/ogg": ".ogg", "audio/mp4": ".m4
                    "audio/wav": ".wav", "audio/x-wav": ".wav"}
 
 
+def _podcast_today(profile: dict) -> dict | None:
+    """Today's personal episode (daily, else this week's weekly) for the home screen's coach tile."""
+    from oknos.podcast_material import learner_lang
+
+    try:
+        m = podcast.today_episode(db.today().isoformat(), learner_lang(profile))
+    except Exception:  # noqa: BLE001 - the home screen must load whatever is in learner/podcasts/
+        log.exception("podcast today")
+        return None
+    return None if m is None else {k: m.get(k) for k in ("id", "kind", "title", "seconds", "date")}
+
+
 def _podcast_count() -> int:
     try:
         return len(podcast.listing())
@@ -252,6 +264,7 @@ def create_app() -> FastAPI:
             "today": db.today().isoformat(),
             "welcome_film": welcome,
             "podcasts": _podcast_count(),
+            "podcast_today": _podcast_today(profile),
         }
 
     def _brief(r: dict) -> dict:
@@ -883,8 +896,9 @@ def create_app() -> FastAPI:
 
     @app.get("/api/podcasts")
     def podcasts_list():
-        profile = read_profile()
-        lang = (profile.get("podcast") or {}).get("lang") or profile.get("ui_lang") or "en"
+        from oknos.podcast_material import learner_lang
+
+        lang = learner_lang(read_profile())
         episodes = podcast.listing()
         stages: dict[str, str] = {}
         for m in reversed(episodes):  # oldest first: the newest episode in the learner's language wins

@@ -1,11 +1,11 @@
 ---
 name: podcast
-description: Write and make a podcast lesson, an audio episode to listen to hands-free, from a book chapter (one episode per chapter, Greek with Turkish or English explanations). Writes the script as text, checks it, says what it will cost, then makes one mp3 that plays on the app's Podcast page. Use when the learner says "make the podcast for this lesson", "a podcast for lesson 3", "I want to listen to the chapter", "bu dersin podcast'ini yap", "dersi dinlemek istiyorum", "podcast hazırla".
+description: Write and make a podcast lesson, an audio episode to listen to hands-free, from a book chapter (one episode per chapter, Greek with Turkish or English explanations), or a personal daily or weekly review episode from the learner's record. Writes the script as text, checks it, says what it will cost, then makes one mp3 that plays on the app's Podcast page. Use when the learner says "make the podcast for this lesson", "a podcast for lesson 3", "I want to listen to the chapter", "make me today's podcast", "bu dersin podcast'ini yap", "dersi dinlemek istiyorum", "podcast hazırla", "bugünün podcast'ini yap", or when daily-prep keeps the episodes going.
 ---
 
 # Podcast lessons
 
-An episode is a lesson to listen to on the way to work: the chapter's dialogue at normal speed and then slowly with gaps to repeat, its words, what to know, a question or two, all explained in the learner's language like a good teacher on the radio. You write the **script** (text); the program checks it and makes the audio. Read `docs/PODCASTS.md` first (the format, the voices, the copyright rules) and `docs/COACHING.md` §2 (tone).
+A chapter episode is a lesson to listen to on the way to work: the chapter's dialogue at normal speed and then slowly with gaps to repeat, its words, what to know, a question or two, all explained in the learner's language like a good teacher on the radio. You write the **script** (text); the program checks it and makes the audio. Read `docs/PODCASTS.md` first (the format, the voices, the copyright rules) and `docs/COACHING.md` §2 (tone).
 
 ## 1. Which episode
 
@@ -37,7 +37,23 @@ Each `part` is a mark the player lists, so keep them few and named in the learne
 6. **Quick questions** (≈2 min): 3–4 questions in the learner's language ("how do you say … ?"), a `pause` of 4–5 s, the Greek answer, an `echo` gap.
 7. **Once more** (≈1 min): the dialogue again at normal speed, and a goodbye that names the next step (read the chapter in the app, practise).
 
-The daily and weekly personal episodes (`kind` `daily`, `weekly`) come later (`docs/PODCASTS.md`, "Later").
+## 3b. A personal episode: daily (10–20 minutes) and weekly (20–30 minutes)
+
+Written by `daily-prep` (its step 5b) for a learner who said yes to them (`podcast.personal` in `profile.json`), or when the learner asks ("make me today's podcast"). It is the learner's own review to listen to: the words due that day and the weak ones, a mistake or two put right, a short story at their level, a look at the current lesson.
+
+1. **The material:** `uv run oknos podcast material daily` (or `weekly`; `--date` for another day than tomorrow). It prints the id (`daily.2026-11-25.tr`, `weekly.2026-w48.tr`), the date, the language, whether a script already exists, and: `due` and `weak` words with their meanings and an example, `mistakes` (what was asked and the right answer), `new` (words met in the last days), `current` (the lesson), `met_words` and `met_verbs` (what the story may use), and `previous` (the last personal episodes and their `focus`, so you do not repeat them). If `exists` is true, stop: never make the same episode twice.
+2. **Pick:** a daily episode drills 8–12 words (the due ones first, then weak ones not drilled in the last two `previous` episodes) and one or two mistakes; a weekly one 15–20 words, the week's mistakes grouped by what they have in common, and the current lesson's main point. Skip words whose meaning in `due` is a fragment or a reading card.
+3. **The shape of a daily episode** (each a `part`, named in the learner's language):
+   1. *Giriş* (≈30 s): what today holds, in two sentences. No date, no numbers about the learner.
+   2. *Bugünün kelimeleri* (≈5 min): each word: the Greek, a `pause` of 1.5 s to guess, the meaning, the Greek slowly, an `echo`; then a short sentence with it (the example, or one you write with `met_words`), its meaning, an `echo`.
+   3. *Düzeltelim* (≈2 min): one or two of `mistakes`, taught as a point ("üçüncü çoğul kişide …"), the right form in two or three Greek sentences with `echo`. Say the wrong form only as the common mistake, never as theirs.
+   4. *Kısa hikâye* (≈4 min): an original story of 8–12 short sentences at the learner's level, about everyday life (the open book's people, Zeynep, Katerina, Giorgos, are good company), using today's words and `met_words`; a new word only with its meaning said. Once at normal speed (role `f` for the narrator), then sentence by sentence at speed 0.8 with its meaning and an `echo` for some.
+   5. *Sorular* (≈2 min): three questions about the story or the words, a `pause` of 4–5 s, the answer in Greek, an `echo`.
+   6. *Kapanış* (≈30 s): the story once more at normal speed, or one line of encouragement and today's next step in the app.
+4. **A weekly episode** has the same parts, longer: the week's words in two groups (with a short review question between them), the week's mistakes, the current lesson's point (as in a chapter episode's "point", from its chapter), a longer story (15–25 sentences) told in two halves with a true/false question after each half, and five questions at the end. Its date is the first day it is for: the Saturday when `daily-prep` makes it on Friday for the weekend.
+5. **The script:** as a chapter's, with `"kind": "daily"` (or `"weekly"`), `"curriculum"` and `"stage"` of the current lesson, `"date"` from the material, `"focus"`: the Greek words and points it drilled, and `"sources": [{"what": "report", "note": "due and weak words, mistakes"}]` (plus `{"what": "chapter", "ref": …}` when you used the chapter). Then check and render as in §5. In a scheduled run there is nobody to tell the cost to: render only under 80% of the service's free quota.
+6. **Privacy:** the text goes to the learner's keyed voice service. It holds learning content only: words, sentences, the right forms. Never the learner's name, their answers quoted as theirs, scores, counts, how long or when they studied, or anything from a captured document or a tutor chat about their life. Never edge-tts (the program refuses it).
+7. **Keep the folder small:** after a render, `uv run oknos podcast prune` keeps the newest 14 daily and 8 weekly episodes and deletes the Turkish or English clips no remaining script speaks (Greek clips and chapter episodes stay).
 
 ## 4. Writing for the ear
 

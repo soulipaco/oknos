@@ -20,7 +20,7 @@ import shutil
 import subprocess
 import tempfile
 import wave
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Callable, Literal, Union
 
@@ -100,6 +100,10 @@ class Script(Strict):
     title: Title
     version: int = 1
     written: str
+    # Personal episodes (daily, weekly): the day the episode is for (a weekly one: the first day of its
+    # week), and what it drilled (Greek words and points), so the next episode does not repeat them.
+    date: str | None = Field(default=None, pattern=r"^\d{4}-\d{2}-\d{2}$")
+    focus: list[str] = []
     sources: list[Source] = []
     segments: list[Segment] = Field(min_length=3)
 
@@ -176,6 +180,13 @@ def problems(script: Script) -> tuple[list[str], list[str]]:
         if isinstance(seg, Echo) and not isinstance(previous, Say):
             bad.append(f"{where}: an echo gap must follow a line of speech")
         previous = seg
+    if script.kind != "chapter":
+        if not script.date:
+            bad.append(f"a {script.kind} episode needs its date (the day it is for)")
+        elif not script.id.startswith(f"{script.kind}."):
+            bad.append(f"a {script.kind} episode's id starts with '{script.kind}.' (oknos podcast material prints it)")
+        if not any(s.what == "report" for s in script.sources):
+            notes.append("a personal episode usually names the report among its sources")
     if not any(isinstance(s, Say) and s.lang == script.lang for s in script.segments):
         notes.append(f"no line in the script's own language ({script.lang})")
     return bad, notes
@@ -370,7 +381,7 @@ def render(pid: str, *, wait: bool = False, progress: Callable[[str, int, int], 
 
     meta = {"id": script.id, "kind": script.kind, "lang": script.lang, "title": script.title.model_dump(),
             "curriculum": script.curriculum, "stage": script.stage, "version": script.version,
-            "written": script.written, "rendered": datetime.now().isoformat(timespec="seconds"),
+            "written": script.written, "date": script.date, "rendered": datetime.now().isoformat(timespec="seconds"),
             "seconds": round(t, 1), "script": script_hash(pid), "parts": timeline_parts, "lines": timeline_lines,
             "made": made, "chars": spent}
     (out_dir / "episode.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
@@ -405,7 +416,7 @@ def listing() -> list[dict]:
             meta = episode(d.name)
             if meta:
                 out.append({k: meta.get(k) for k in ("id", "kind", "lang", "title", "curriculum", "stage",
-                                                     "written", "rendered", "seconds", "stale")}
+                                                     "written", "date", "rendered", "seconds", "stale")}
                            | {"parts": len(meta.get("parts", []))})
     out.sort(key=lambda m: m.get("rendered") or "", reverse=True)
     return out
@@ -432,3 +443,70 @@ def scripts() -> list[dict]:
             out.append(row)
     return out
 
+
+
+# ---------- personal episodes: today's, and keeping the folder small ----------
+
+PERSONAL = ("daily", "weekly")
+KEEP = {"daily": 14, "weekly": 8}  # the newest personal episodes kept; older ones (and their clips) go
+
+
+def today_episode(today: str, lang: str | None = None) -> dict | None:
+    """The personal episode to offer on the home screen: today's daily one, else this week's weekly one
+    (rendered, in the learner's language when given). None if there is neither."""
+    week_start = (datetime.fromisoformat(today) - timedelta(days=datetime.fromisoformat(today).weekday())).date().isoformat()
+    best = None
+    for m in listing():
+        if m.get("kind") not in PERSONAL or not m.get("date") or (lang and m.get("lang") != lang):
+            continue
+        if m["kind"] == "daily" and m["date"] == today:
+            return m
+        if m["kind"] == "weekly" and week_start <= m["date"] <= today and (best is None or m["date"] > best["date"]):
+            best = m
+    return best
+
+
+def prune(keep: dict[str, int] | None = None) -> dict:
+    """Delete personal episodes beyond the newest KEEP of each kind, then the Turkish and English clips
+    no remaining script speaks (they were made for one episode and are never heard again). Greek clips
+    stay: the app uses them too. Chapter episodes are never deleted. Returns what went."""
+    keep = keep or KEEP
+    base = podcasts_dir()
+    gone: list[str] = []
+    if base.is_dir():
+        for kind in PERSONAL:
+            dirs = []
+            for d in base.iterdir():
+                if d.is_dir() and d.name.startswith(kind + ".") and ID.match(d.name):
+                    try:
+                        raw = json.loads((d / "script.json").read_text(encoding="utf-8-sig"))
+                    except (OSError, ValueError):
+                        continue
+                    dirs.append((raw.get("date") or "", d))
+            dirs.sort(reverse=True)
+            for _, d in dirs[keep.get(kind, 0):]:
+                shutil.rmtree(d)
+                gone.append(d.name)
+    wanted: set[str] = set()
+    if base.is_dir():
+        for d in base.iterdir():
+            if d.is_dir() and (d / "script.json").is_file():
+                try:
+                    s = load(d.name)
+                except PodcastError:
+                    return {"episodes": gone, "clips": 0, "kept_clips_because": f"{d.name} cannot be read"}
+                wanted |= {voice.key(t, r, lang) for t, r, lang in lines(s) if lang != "el"}
+    removed = 0
+    index = voice.read_index()
+    for lang in ("tr", "en"):
+        root = voice.voice_dir() / lang
+        if not root.is_dir():
+            continue
+        for f in root.rglob("*.mp3"):
+            if f.stem not in wanted:
+                f.unlink()
+                index.pop(f.stem, None)
+                removed += 1
+    if removed:
+        voice._write_index(index)
+    return {"episodes": gone, "clips": removed}

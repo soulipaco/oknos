@@ -509,5 +509,7 @@
   "pod_stale": "Bu bölüm yapıldıktan sonra metni değişti; bir sonraki seslendirmede yeniden yapılır.",
   "pod_listen": "Podcast olarak dinle",
   "pod_listen_short": "Dinle",
+  "pod_link_today": "Bugünün podcast'i ({n} dk)",
+  "pod_link_week": "Bu haftanın podcast'i ({n} dk)",
   "pod_link_home": "Podcast dersleri ({n})"
 }

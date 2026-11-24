@@ -2,7 +2,7 @@
 
 Audio lessons to listen to hands-free: on the way to work, while cooking. Each episode is written as **text first** (a script), checked, and then made into one audio file with the voice services the app already uses (`docs/VOICE.md`). The brief and its history are in `docs/prompts/11-podcasts.md`; this file is how it works.
 
-Status (2026-11-23): the pilot. The first episode is the book's Lesson 1 in Turkish: 9 parts, 12.8 minutes, 4,833 Azure characters (76 Turkish and 17 new Greek clips; the dialogue's Greek clips were already there). The maintainer listened and said carry on; Lessons 2 and 3 followed the same day. From then on `daily-prep` keeps the podcast a lesson ahead (step 5a: for a learner who has episodes, one new chapter episode a run, for the current stage and then the next, while the service stays under 80% of its free quota). One episode per book chapter, written by the agent with the `podcast` skill, played on the app's Podcast page. Personal daily and weekly episodes and the enrichment loop come later (below).
+Status (2026-11-23): the pilot. The first episode is the book's Lesson 1 in Turkish: 9 parts, 12.8 minutes, 4,833 Azure characters (76 Turkish and 17 new Greek clips; the dialogue's Greek clips were already there). The maintainer listened and said carry on; Lessons 2 and 3 followed the same day. From then on `daily-prep` keeps the podcast a lesson ahead (step 5a: for a learner who has episodes, one new chapter episode a run, for the current stage and then the next, while the service stays under 80% of its free quota). One episode per book chapter, written by the agent with the `podcast` skill, played on the app's Podcast page. On 2026-11-24 a long-running session took the book's chapters on towards the end of A2 (lesson 24), and the **personal daily and weekly episodes** were built (below); `daily-prep` makes them only for a learner who has said yes (`podcast.personal`). The enrichment loop comes later.
 
 ## Decisions (agreed with the maintainer, 2026-11-23)
 
@@ -62,6 +62,8 @@ It prints the estimated length and the **characters that still need a clip, per 
 uv run oknos podcast list                 # the scripts and episodes in learner/podcasts/
 uv run oknos podcast check book.lesson-01.tr
 uv run oknos podcast render book.lesson-01.tr --wait
+uv run oknos podcast material daily       # what a personal episode is written from (below)
+uv run oknos podcast prune                # old personal episodes and the clips only they used
 ```
 
 `render` makes the missing clips through the voice chain (`voice.make`; a Greek clip the app already has is reused), then joins them with ffmpeg: each clip with the services' silence at both ends trimmed and at its speed (`atempo`), a short breath after each line, the script's pauses and gaps, one loudness pass (−16 LUFS), one mp3 (`episode.mp3`, 64 kb/s mono, about 6 MB for 13 minutes). `episode.json` beside it holds the length, the time of each part, the characters used and the services that spoke. ffmpeg must be installed (it is for the films).
@@ -80,16 +82,33 @@ Turkish and English clips are kept in `learner/voice/<lang>/` beside the Greek o
 
 `?podcast` lists the episodes, newest first; `?podcast=<id>` plays one: the parts to jump to, the speed (0.8×, 1×, 1.25×), the position kept on that device, the title on the phone's lock screen, a download link and the script as text. The Book screen and a chapter's reader show "Listen" when the chapter has an episode. The server serves only `learner/podcasts/<id>/episode.mp3` (`/podcasts/<id>.mp3`, with range requests so the phone can seek).
 
+## Personal episodes (built 2026-11-24)
+
+A learner's own review to listen to: a **daily** episode of 10–20 minutes (the words due that day and the weak ones, a mistake or two put right, a short original story at their level, three questions) and a **weekly** one of 20–30 minutes (the week's words and mistakes, the current lesson's main point, a longer story in two halves). The agent writes them with the `podcast` skill (§3b) from:
+
+```
+uv run oknos podcast material daily     # tomorrow's (or --date YYYY-MM-DD); weekly for the weekly one
+```
+
+`material` (`src/oknos/podcast_material.py`) reads the database and writes nothing. It prints the episode's id (`daily.2026-11-25.tr`, `weekly.2026-w48.tr`), its date, whether a script already exists, and the words due (on that day, or in that week) and weak (lapses, low ease), with their meanings and an example sentence (the item's own, else one from a chapter); the recent mistakes with the right answer; the words met in the last days; the current lesson; the words and verbs the learner has met (the story keeps to them); and the last personal episodes with what they drilled (`focus`), so the next one does not repeat them. Reading cards (`open-alphabet`) are left out.
+
+A personal script is a chapter script with `kind` `daily` or `weekly`, the `date` it is for, `focus` (the Greek words and points it drilled) and the report among its `sources`; `check` refuses one without a date or whose id does not start with its kind.
+
+- **When:** `daily-prep` (step 5b) writes tomorrow's, only when `podcast.personal` in `profile.json` says yes (`{"daily": true, "weekly": true}`): a daily episode for Monday to Friday, the weekly one on Friday evening for the weekend. With only `daily`, one every day. It renders only under 80% of the service's free quota.
+- **Where:** the home screen's coach tile links "Today's episode" (the daily one for today, else this week's weekly one: `/api/home` → `podcast_today`); the Podcast page lists it with the others.
+- **Privacy:** the text goes to the learner's keyed voice service (never edge-tts), so it holds learning content only: words, sentences, right forms. Never the learner's name, their answers quoted as theirs, scores, counts, when or how long they studied, or anything from a capture or a tutor chat about their life.
+- **Keeping it small:** `uv run oknos podcast prune` (run by `daily-prep` after a render) keeps the newest 14 daily and 8 weekly episodes and deletes the Turkish and English clips no remaining script speaks. Greek clips stay (the app uses them), and chapter episodes are never deleted.
+- **Cost:** a daily episode of about 14 minutes spends about 4,000–5,500 new characters (nearly all the Turkish is new each day; many Greek words already have a clip), a weekly one about 8,000–10,000. Weekdays plus a weekly: about 110,000–150,000 characters a month, inside Azure's free 500,000 next to the chapter episodes and the daily voice builds.
+
 ## Copyright and privacy (must hold)
 
 - Other people's podcasts, videos and posts are **sources of ideas only**: topics, which words and phrases come up, what learners ask, an episode worth listening to next (with a link). An episode never re-voices, translates or reproduces their content, and nothing is downloaded without the maintainer's yes for that source and a check of the platform's terms.
 - Each idea source is recorded in the script's `sources` (`{"what": "idea", "url": …, "note": what was taken}`). Scripts, notes and episodes live in `learner/` and are never tracked.
 - Episodes of the private book or of a learner's record stay in `learner/podcasts/`; they are never shipped.
-- A chapter episode carries no personal data. Personal episodes (later) are spoken only by a keyed service on the learner's own account, never by edge-tts.
+- A chapter episode carries no personal data. Personal episodes are spoken only by a keyed service on the learner's own account, never by edge-tts, and hold learning content only (above).
 - Episodes that might ship with the repository one day come only from the open content, voiced by Google (as the shipped clips).
 
 ## Later (not built)
 
-- **Personal daily (10–20 min) and weekly (20–30 min) episodes**, written by `daily-prep` from `oknos report`: due and weak words, recent mistakes, the current chapter, a short story at the learner's level; rendered overnight.
 - **The enrichment loop:** the agent proposes Greek-teaching podcasts, channels and accounts, the maintainer says yes or no to each, and the agent keeps a private list (`learner/podcasts/sources.json`: link, what it is, the date, the yes) to draw ideas from when writing.
 - Episodes for every book chapter and the open book; a private podcast feed if the page is not enough.

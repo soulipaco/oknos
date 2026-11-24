@@ -14,6 +14,7 @@ import threading
 import time
 import urllib.request
 import webbrowser
+from datetime import date, timedelta
 from pathlib import Path
 
 from oknos import __version__, db, health, paths
@@ -629,6 +630,32 @@ def cmd_podcast(args) -> int:
                      if r["rendered"] else f"not rendered (about {r['minutes']} min)")
             print(f"  {r['id']:32} {r['kind']:8} {r['lang']}  {state}")
         return 0
+    if args.action == "prune":
+        gone = podcast.prune()
+        print(f"Removed {len(gone['episodes'])} old personal episodes and {gone['clips']} clips no script speaks."
+              + (f" Kept the clips: {gone['kept_clips_because']}." if gone.get("kept_clips_because") else ""))
+        return 0
+    if args.action == "material":
+        from oknos import packs, podcast_material, report
+
+        if args.id not in ("daily", "weekly"):
+            print("Which kind? oknos podcast material daily (or weekly) [--date YYYY-MM-DD]")
+            return 1
+        try:
+            day = date.fromisoformat(args.date) if args.date else db.today() + timedelta(days=1)
+        except ValueError:
+            print(f"--date: not a date: {args.date!r} (YYYY-MM-DD)", file=sys.stderr)
+            return 2
+        paths.ensure_learner_dir()
+        conn = db.open_db()
+        try:
+            catalog = packs.load_all()
+            packs.sync_items(conn, catalog)
+            data = podcast_material.material(conn, catalog, args.id, day, report._read_profile())
+        finally:
+            conn.close()
+        print(json.dumps(data, ensure_ascii=False, indent=1))
+        return 0
     if not args.id:
         print("Which episode? e.g. oknos podcast check book.lesson-01.tr")
         return 1
@@ -816,9 +843,11 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--redo", default=None, help="build: remake the clips this provider made, with the others")
     p.set_defaults(func=cmd_voice)
 
-    p = sub.add_parser("podcast", help="podcast lessons: list, check, render (docs/PODCASTS.md)")
-    p.add_argument("action", choices=["list", "check", "render"])
-    p.add_argument("id", nargs="?", help="for check and render: the episode id (its folder in learner/podcasts/)")
+    p = sub.add_parser("podcast", help="podcast lessons: list, check, render, material, prune (docs/PODCASTS.md)")
+    p.add_argument("action", choices=["list", "check", "render", "material", "prune"])
+    p.add_argument("id", nargs="?", help="for check and render: the episode id (its folder in learner/podcasts/); "
+                                        "for material: daily or weekly")
+    p.add_argument("--date", default=None, help="material: the day the episode is for (default: tomorrow)")
     p.add_argument("--wait", action="store_true", help="render: wait for a busy voice service instead of using the next one")
     p.set_defaults(func=cmd_podcast)
 

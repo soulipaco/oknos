@@ -509,5 +509,7 @@
   "pod_stale": "The script has changed since this episode was made; it is made again on the next render.",
   "pod_listen": "Listen as a podcast",
   "pod_listen_short": "Listen",
+  "pod_link_today": "Today's episode ({n} min)",
+  "pod_link_week": "This week's episode ({n} min)",
   "pod_link_home": "Podcast lessons ({n})"
 }

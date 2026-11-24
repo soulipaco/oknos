@@ -650,6 +650,9 @@ function coachTile(coach) {
   }
   blocks.push(h("p", { class: "small muted" }, t("tutor_line")));
   if (coach.submissions_total) blocks.push(navLink("writing", t("your_writing"), null, "tile-link"));
+  const today = state.home?.podcast_today;
+  if (today) blocks.push(navLink("podcast", [icon("headphones"), t(today.kind === "weekly" ? "pod_link_week" : "pod_link_today",
+    { n: Math.max(1, Math.round((today.seconds || 0) / 60)) })], today.id, "tile-link films-link"));
   if (state.home?.podcasts) blocks.push(navLink("podcast", [icon("headphones"), t("pod_link_home", { n: state.home.podcasts })], null, "tile-link films-link"));
   blocks.push(navLink("films", [icon("film"), t("films_link_coach")], null, "tile-link films-link"));
   return h("section", { class: "tile coach-tile" }, ...blocks);
@@ -2744,7 +2747,7 @@ function podCard(ep, current) {
     h("span", { class: "eyebrow" }, icon("headphones"), kind),
     h("strong", {}, podTitle(ep)),
     h("span", { class: "small muted" }, [t("pod_minutes", { n: Math.max(1, Math.round((ep.seconds || 0) / 60)) }),
-      t(`pod_lang_${ep.lang}`), fmtDate(ep.rendered?.slice(0, 10))].filter(Boolean).join(" · "))];
+      t(`pod_lang_${ep.lang}`), fmtDate(ep.date || ep.rendered?.slice(0, 10))].filter(Boolean).join(" · "))];
   const a = navLink("podcast", inner, ep.id, `pod-card${current ? " here" : ""}`);
   if (current) a.setAttribute("aria-current", "page");
   return a;
