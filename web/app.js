@@ -2900,7 +2900,7 @@ function filmCard(film, current) {
 }
 
 async function renderFilms(arg) {
-  // ?films: the three films; ?films=<n>: one of them playing, the others below.
+  // ?films: the films (film 2 is archived, not shown); ?films=<n>: one of them playing, the others below.
   resetScreens();
   let data;
   try { data = await api("/api/films"); } catch { return showError(); }

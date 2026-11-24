@@ -29,6 +29,8 @@ def test_the_films_are_served_from_their_one_folder(client):
 @pytest.mark.parametrize("name", [
     "README.md", "../../../pyproject.toml", "frames/../README.md", "voice/f1-01.wav", "frames/f1-01.mp3",
     "other/f1-01.webp", "4-no-such-film.html", "voice/no-such-clip.mp3", "frames/sub/f1-01.webp",
+    # film 2 is archived: its files stay in docs/brand/animations/, the app does not serve them
+    "2-oknos-and-his-wife.html", "frames/f2-01.webp", "voice/f2-01.mp3", "ambience/f2.mp3",
 ])
 def test_only_the_films_files_are_served(client, name):
     assert client.get(f"/films/{name}").status_code == 404
@@ -36,7 +38,8 @@ def test_only_the_films_files_are_served(client, name):
 
 def test_the_films_list(client):
     data = client.get("/api/films").json()
-    assert [f["n"] for f in data["films"]] == [1, 2, 3]
+    assert [f["n"] for f in data["films"]] == [1, 3]  # film 2 is archived
+    assert data["films"][1]["poster"] == "/films/frames/f3-01.webp"
     assert all(f["available"] for f in data["films"])
     assert data["films"][0] == {"n": 1, "id": "1-oknos-and-the-donkey", "available": True,
                                 "poster": "/films/frames/f1-01.webp"}
@@ -96,7 +99,7 @@ def test_no_welcome_and_no_films_when_the_files_are_missing(client, film_copy):
     (film_copy / "1-oknos-and-the-donkey.html").unlink()
     assert client.get("/api/home").json()["welcome_film"] is False
     data = client.get("/api/films").json()
-    assert [f["available"] for f in data["films"]] == [False, True, True]
+    assert [f["available"] for f in data["films"]] == [False, True]
     shutil.rmtree(film_copy)
     assert client.get("/api/home").status_code == 200  # the app stays usable
     assert not any(f["available"] for f in client.get("/api/films").json()["films"])
