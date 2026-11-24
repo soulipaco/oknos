@@ -162,7 +162,7 @@ On the roadmap (2026-11-20, `docs/prompts/`):
 - phase 11 (optional, `docs/prompts/11-podcasts.md`, added 2026-11-23; started the same day, the pilot is built: `docs/PODCASTS.md`): podcast lessons, written as text first and then voiced. One per book chapter by default, and personal daily (10–20 min) and weekly (20–30 min) episodes made by `daily-prep`. Explanations in Turkish or English, the learner's choice; other languages later are a new script, not a new system. A loop enriches them from other Greek-teaching podcasts, videos and accounts as sources of ideas only, never re-voicing their content.
 - the films in the app, and a new GitHub look (added 2026-11-23):
   - the films in the app: done 2026-11-23 (see **Films** above).
-  - redesign the repository's GitHub face from the app as it is then, so it catches the eye: the README's hero, screenshots and a link to the films with a short preview, and the social preview image (`docs/brand/social-preview.png`, `scripts/make_brand.py`, the demo clone in `docs/DEVELOPING.md`).
+  - the new GitHub face: done 2026-11-24. The README has a hero (the home screen with a picture card and a chapter's scene), a gallery of the app in light and dark, a films section with a short animated preview of film 1, and current facts; the social preview matches the hero. All of it is made by `scripts/readme_images.py` from a demo learner with the open content only (`docs/DEVELOPING.md`, "The README's screenshots").
 
 ## Git and GitHub
 
@@ -204,7 +204,7 @@ The canonical copy of each skill is in `.agents/skills/<name>/SKILL.md`. `.claud
 
 ## Commands
 
-The full list, with how the code is laid out, is in `docs/DEVELOPING.md`. The README is for learners and visitors; its pictures come from `scripts/make_brand.py` and from a demo clone (`docs/DEVELOPING.md`, "The README's screenshots").
+The full list, with how the code is laid out, is in `docs/DEVELOPING.md`. The README is for learners and visitors; its diagrams come from `scripts/make_brand.py`, and its screenshots, hero, film preview and the social preview from `scripts/readme_images.py`, run in a fresh clone (`docs/DEVELOPING.md`, "The README's screenshots").
 
 - `uv run oknos start`: runs the app in the background on `127.0.0.1:8642` (or the next free port) and opens the browser.
 - `uv run oknos stop`: stops it.
