@@ -1102,6 +1102,13 @@
    "made": "image model via Codex, reviewed 2026-11-23"
   },
   {
+   "word": "η βασιλόπιτα",
+   "file": "ch22-vasilopita.webp",
+   "item": "greek-helper/ch22-vasilopita",
+   "prompt": "Flat vector-style illustration of a whole round Greek New Year's cake (vasilopita) seen from a three-quarter view above, on a round white plate: a domed golden-brown baked top (warm yellow #e8b64a with terracotta browning, like a baked sweet bread), sprinkled with flaked almonds; beside the plate one small cut slice lies on its side showing pale light-terracotta crumb and a small gold coin sticking out of it, and a cake knife lies next to it. It must NOT look like cheese (no white top, no rind, no holes) and not like a pizza or a pie. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.\n\nOutput ONE square image at 1024×1024. Every coloured region, including the paper background, must be a perfectly uniform SOLID fill. No gradients, shading, texture, lighting effects, or soft shadows. No text, letters, numbers, year, or numerals on the coin.",
+   "made": "image model via Codex, reviewed 2026-11-24"
+  },
+  {
    "word": "το πτυχίο",
    "file": "ch23-ptychio.webp",
    "item": "greek-helper/ch23-ptychio",
@@ -2030,6 +2037,13 @@
    "file": "v-docheio.webp",
    "item": "greek-helper/v-docheio",
    "prompt": "Flat vector-style illustration of a plastic food storage container with its lid beside it. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Square image, canvas exactly 1024 by 1024 pixels. STRICT FLAT ART: draw like a basic SVG exported to PNG. All shapes must have perfectly uniform solid fills, no gradients, shading, highlights, grain, texture, glow effects or cast shadows. The background must be constant #f6f2ea edge to edge. Express shine or illumination only through the listed flat colour shapes. Use large simple shapes with little detail. Correction: container in flat light blue with an Aegean blue rim and matching Aegean blue detached lid, no yellow. Empty container. Absolutely flat constant-colour plastic, without reflections, texture or shading. Paper background one constant colour. Exactly 1024x1024.",
+   "made": "image model via Codex, reviewed 2026-11-24"
+  },
+  {
+   "word": "το δοκάρι",
+   "file": "v-dokari.webp",
+   "item": "greek-helper/v-dokari",
+   "prompt": "Flat vector-style illustration of one single long, heavy, square-section wooden building beam (a timber), lying alone on the ground diagonally across the frame from lower left to upper right, in three-quarter view so its long top face, one long side face and its square cut end all show; the cut end shows growth rings; the sides show a few long wood-grain lines; warm terracotta and light terracotta wood colours. NOTHING under it or on it: no legs, no supports, no blocks, no seat, no house, no stilts, no roof. It must NOT look like a bench, a table, a plank, a log with bark or a pencil. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.\n\nOutput ONE square image at 1024×1024. Every coloured region, including the paper background, must be a perfectly uniform SOLID fill. No gradients, shading, texture, lighting effects, or soft shadows. No text, letters, or numbers anywhere.",
    "made": "image model via Codex, reviewed 2026-11-24"
   },
   {
@@ -4122,8 +4136,8 @@
    "word": "ο/η μηχανικός",
    "file": "v-michanikos.webp",
    "item": "greek-helper/v-michanikos",
-   "prompt": "Flat vector-style illustration of a car mechanic in blue overalls holding a large wrench, with a red toolbox at the feet. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos. One simple friendly adult figure with dot eyes and a small mouth line, no other facial detail, not resembling any real person. Minimal, calm, friendly, consistent icon-like style for a language-learning app. Square 1024×1024 PNG. Perfectly uniform solid fills only. No gradients, shading, highlights, texture, paper grain or lighting effects. Each shape has exactly one solid colour. All outlines are matte, uniform #1e2a32. Background is an absolutely solid #f6f2ea, not textured paper. Clean vector-export appearance. Include only the requested subject and necessary props. Use warm yellow only for something naturally yellow, never decorative furniture, clothing, walls or frames. Keep generous margins around the entire subject. Corrective pass: adult mechanic in blue overalls with plain dark-ink fasteners, holding one large light-blue wrench, terracotta toolbox by the feet. No yellow. Make every colour fill perfectly uniform and matte. No gradients, shading, highlights or texture, including on the overalls, skin and wrench. Two dot eyes and a small mouth line only.",
-   "made": "image model via Codex, reviewed 2026-11-23"
+   "prompt": "Flat vector-style illustration of an engineer: one adult man with medium-brown skin standing beside a tilted drafting table, wearing a white hard hat, a white shirt and dark trousers, pointing at a big sheet of plans on the table (Aegean blue sheet with white lines of a simple bridge or building drawing, no letters or numbers), a rolled plan and a ruler on the table. It must NOT look like a car mechanic: no overalls, no wrench, no spanner, no toolbox, no car, no tyre. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos. One simple friendly adult figure with dot eyes and a small mouth line, no other facial detail, not resembling any real person. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-24"
   },
   {
    "word": "μηχάνημα ανάληψης μετρητών",
@@ -4623,6 +4637,13 @@
    "made": "image model via Codex, reviewed 2026-11-22"
   },
   {
+   "word": "το οπάλιο",
+   "file": "v-opalio.webp",
+   "item": "greek-helper/v-opalio",
+   "prompt": "Flat vector-style illustration of a single small polished opal gemstone lying on a small round dark Aegean-blue velvet jeweller's display pad, seen from three-quarters above: the stone is a glossy oval cabochon, milky pale blue-white with iridescent patches of blue, olive, terracotta and yellow inside it like a rainbow seen in milk, one long curved white gloss highlight across its top, and three small yellow four-pointed sparkle marks around it. The stone must look hard, small and shiny, a precious stone, not a cake, not an egg, not a globe, not a pill, not a ring. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
+   "made": "image model via Codex, reviewed 2026-11-24"
+  },
+  {
    "word": "η όπερα",
    "file": "v-opera.webp",
    "item": "greek-helper/v-opera",
@@ -4992,6 +5013,13 @@
    "item": "greek-helper/v-petaloyda",
    "prompt": "Flat vector-style illustration of a butterfly with spread wings in light blue and terracotta. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.",
    "made": "image model via Codex, reviewed 2026-11-22"
+  },
+  {
+   "word": "πέτρα για να περνάς το ποτάμι",
+   "file": "v-petra-gia-na-pernas-to-potami.webp",
+   "item": "greek-helper/v-petra-gia-na-pernas-to-potami",
+   "prompt": "Flat vector-style illustration of a small river seen from a raised three-quarter view, flowing from the top of the picture to the bottom, blue water (#1f5f8b) with a few white ripple lines around each stone; grassy olive banks on the left and the right, each with a small beige dirt path that leads to the water's edge; between the two paths a line of five big flat irregular rounded stones in light terracotta and sandy beige, spaced a step apart, crossing the river from the left bank to the right bank, each stone sticking just above the water. The stones must be clearly irregular natural rocks, not hexagons, not teeth, not coins, not tablets, and the water must be a flowing river, not a puddle; no bridge, no person. Thick even dark-navy outline (#1e2a32), rounded line ends, flat colours only from this palette: Aegean blue #1f5f8b, light blue #e2ecf3, olive #4f7227, light olive #e8efd9, terracotta #b0503a, light terracotta #f5e2da, warm yellow #e8b64a, white. Plain warm paper background #f6f2ea filling the square. Single subject centred, about 70% of the frame, friendly three-quarter view. No text, no letters, no numbers, no logos, no people. Minimal, calm, friendly, consistent icon-like style for a language-learning app.\n\nOutput ONE square image at 1024×1024. Every coloured region, including the paper background, must be a perfectly uniform SOLID fill. No gradients, shading, texture, lighting effects, or soft shadows. No text, letters, or numbers anywhere.\n\nRetry correction: Draw five substantial NATURAL ROCKS with broad flat tops, visibly thick irregular side edges and one or two short ink cracks each, projecting above the flowing river. All five rocks use pale light-terracotta #f5e2da and white, not saturated yellow or dark terracotta; do not make coloured blobs, geometric tiles or a row of teeth. Omit flowers. Keep the two banks, dirt paths, open upstream/downstream water and curved white ripples.",
+   "made": "image model via Codex, reviewed 2026-11-24"
   },
   {
    "word": "η πετσέτα",
