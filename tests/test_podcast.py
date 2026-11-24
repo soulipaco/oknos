@@ -321,3 +321,28 @@ def test_material_lists_due_weak_and_wrong_words_with_meanings(learner, capsys):
     assert cli.main(["podcast", "material", "weekly"]) == 0
     assert json.loads(capsys.readouterr().out)["id"].startswith("weekly.")
     assert cli.main(["podcast", "material", "monthly"]) == 1
+
+
+def test_a_connection_cut_halfway_is_tried_again_then_refused(monkeypatch):
+    import http.client
+
+    calls = []
+
+    class Cut:
+        def read(self):
+            calls.append(1)
+            if len(calls) == 1:
+                raise http.client.IncompleteRead(b"abc")
+            return b"ID3 audio"
+
+    monkeypatch.setattr(voice.time, "sleep", lambda s: None)
+    monkeypatch.setattr(voice.urllib.request, "urlopen", lambda req, timeout: Cut())
+    assert voice._post("https://example.invalid/", b"x", {}) == b"ID3 audio" and len(calls) == 2
+
+    class AlwaysCut:
+        def read(self):
+            raise http.client.IncompleteRead(b"")
+
+    monkeypatch.setattr(voice.urllib.request, "urlopen", lambda req, timeout: AlwaysCut())
+    with pytest.raises(voice.Refused, match="IncompleteRead"):
+        voice._post("https://example.invalid/", b"x", {})

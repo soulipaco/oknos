@@ -25,6 +25,7 @@ from __future__ import annotations
 import asyncio
 import base64
 import hashlib
+import http.client
 import json
 import os
 import re
@@ -203,14 +204,22 @@ class Provider:
         return time.monotonic() - self._last < self.min_interval
 
 
-def _post(url: str, body: bytes, headers: dict, timeout: float = 60) -> bytes:
+def _post(url: str, body: bytes, headers: dict, timeout: float = 60, tries: int = 2) -> bytes:
+    """POST and read the answer. A connection cut halfway through the answer (IncompleteRead and the
+    like: it happened once in an hour of podcast clips) is tried again once before it counts as a
+    refusal, so one bad moment does not hand the clip to another voice or stop a long render."""
     req = urllib.request.Request(url, data=body, headers={"User-Agent": USER_AGENT, **headers})
-    try:
-        return urllib.request.urlopen(req, timeout=timeout).read()
-    except urllib.error.HTTPError as e:
-        raise Refused(f"{e.code} {e.reason}") from None
-    except (urllib.error.URLError, TimeoutError, OSError) as e:
-        raise Refused(f"no connection ({e.__class__.__name__})") from None
+    for attempt in range(tries):
+        try:
+            return urllib.request.urlopen(req, timeout=timeout).read()
+        except urllib.error.HTTPError as e:
+            raise Refused(f"{e.code} {e.reason}") from None
+        except (urllib.error.URLError, TimeoutError, OSError, http.client.HTTPException) as e:
+            if attempt + 1 < tries and not isinstance(e, urllib.error.URLError):
+                time.sleep(2)
+                continue
+            raise Refused(f"no connection ({e.__class__.__name__})") from None
+    raise Refused("no connection")
 
 
 class Azure(Provider):
