@@ -139,7 +139,9 @@ def main() -> int:
     # Cross-check the dashboard against the raw attempts.
     by_day = dict(conn.execute("SELECT substr(ts,1,10), COUNT(*) FROM attempts GROUP BY 1").fetchall())
     assert all(c["answers"] == by_day.get(c["date"], 0) for c in stats["grid"]), "grid does not match attempts"
-    vocab = conn.execute("SELECT correct FROM attempts a JOIN items i USING(item_key) WHERE i.type='vocab'").fetchall()
+    since = (end - timedelta(days=30)).isoformat()  # the dashboard's areas cover the last 30 days
+    vocab = conn.execute("SELECT correct FROM attempts a JOIN items i USING(item_key) "
+                         "WHERE i.type='vocab' AND a.ts >= ?", (since,)).fetchall()
     area = next(a for a in stats["areas"] if a["area"] == "vocab")
     assert area["n"] == len(vocab) and abs(area["accuracy"] - sum(r[0] for r in vocab) / len(vocab)) < 1e-3
     print("\ncross-check: grid, vocabulary accuracy and counts match the attempts table.")
