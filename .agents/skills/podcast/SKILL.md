@@ -58,7 +58,7 @@ Written by `daily-prep` (its step 5b) for a learner who said yes to them (`podca
 
 1. **The material:** `uv run oknos podcast material daily` (or `weekly`; `--date` for another day than tomorrow). It prints the id (`daily.2026-11-25.tr`, `weekly.2026-w48.tr`), the date, the language, whether a script already exists, and: `due` and `weak` words with their meanings and an example, `mistakes` (what was asked and the right answer), `new` (words met in the last days), `current` (the lesson), `met_words` and `met_verbs` (what the story may use), and `previous` (the last personal episodes and their `focus`, so you do not repeat them). If `exists` is true, stop: never make the same episode twice.
 2. **Pick:** a daily episode drills 8–12 words (the due ones first, then weak ones not drilled in the last two `previous` episodes) and one or two mistakes; a weekly one 15–20 words, the week's mistakes grouped by what they have in common, and the current lesson's main point. Skip words whose meaning in `due` is a fragment or a reading card.
-3. **The shape of a daily episode** (each a `part`, named in the learner's language). It uses the show's cast (§3): Ada and Mert talk, Katerina says the Greek and tells the story, and the story's people are `character`s:
+3. **The shape of a daily episode** (each a `part`, named in the learner's language). It uses the show's cast (§3): Ada and Mert talk, Katerina says the Greek and tells the story, and the story's people are `character`s. Keep it within about 30–35 requests (§4): Ada and Mert go through the words in one run per few words, rather than a word, a pause, a meaning and an echo for each.
    1. *Giriş* (≈30 s): what today holds, in two sentences. No date, no numbers about the learner.
    2. *Bugünün kelimeleri* (≈5 min): each word: the Greek, a `pause` of 1.5 s to guess, the meaning, the Greek slowly, an `echo`; then a short sentence with it (the example, or one you write with `met_words`), its meaning, an `echo`.
    3. *Düzeltelim* (≈2 min): one or two of `mistakes`, taught as a point ("üçüncü çoğul kişide …"), the right form in two or three Greek sentences with `echo`. Say the wrong form only as the common mistake, never as theirs.
@@ -88,7 +88,9 @@ Written by `daily-prep` (its step 5b) for a learner who said yes to them (`podca
   - nothing between ordinary lines: the program puts natural gaps between turns.
 
   Not every line needs a gap; a gap after every sentence is tiring.
-- A slowed line (`speed`) or a line followed by an `echo` is voiced on its own, outside the acted exchange. Use them only for the repeat moments.
+- **Requests are the budget.** Gemini allows 100 requests a day. A request is one exchange between two people, or one person's run, of up to 24 lines or 2,400 characters. Every `pause`, `echo` and `part` ends a request, and so does a change of speed within one person's run.
+  - So write fewer, longer runs: merge consecutive lines of one speaker, put no `pause` between ordinary turns, and save `echo` for the 5–8 lines that matter most (and for the repeat corner).
+  - `check` prints the requests a render needs. Aim at about 45 for a chapter episode, 30–35 for a daily one and about 50 for a weekly one.
 - Numbers, dates and abbreviations in the learner's language are written as words ("üç", not "3"), so the voice reads them right.
 - No personal data, ever: a chapter episode is about the chapter, not about the learner.
 
@@ -107,6 +109,8 @@ Then:
 ```
 uv run oknos podcast render <id> --wait
 ```
+
+With Gemini, render only when the requests `check` prints fit what is left today (the day resets at 10:00 in Greece). A render that reaches the day's limit stops, keeps its clips, and resumes the next day with the same command.
 
 `--wait` waits out a service's pace instead of handing lines to the next service. An episode takes a few minutes the first time; a second render spends nothing. When it is done, tell the learner in one or two sentences where to find it: the Podcast page (the headphones link on the home screen's coach tile, or "Listen" on the Book screen and in the chapter), also from the phone. Ask how it sounded; their remarks (too fast, gaps too short, too much Turkish) go into the next script, and into `docs/PODCASTS.md` if they change the default shape.
 
