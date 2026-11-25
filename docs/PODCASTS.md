@@ -110,6 +110,7 @@ A voice per person alone gained little; acting the exchange together gained most
 - A host may say Greek inside a Turkish sentence ("…şuydu: Ναι."), in her own voice. `check` makes this a note for a cast member whose `lang` includes `el`, and a problem for anyone else; only a service that speaks mixed lines (gemini) makes it, and the render stops if none is ready.
 - Between requests, gaps follow the turn-taking: 0.3 s between two people in Greek, 0.35 s in Turkish, 0.25 s for the same person, 0.6 s where the language changes.
 - A short jingle opens and closes the episode and a soft sting marks each new part: a plucked motif in D, made from numbers by ffmpeg (original, like the films' ambience). No music runs under speech.
+- One service voices the whole episode: the first in the list that can make all of it. Gemini meets its per-minute limit now and then on a long episode; it waits and asks again (up to about three minutes). If it still refuses, the render stops rather than finishing in the fallback's sound: the clips made so far are kept, and rendering again goes on from there.
 - Chirp, which reads one line at a time, now and then answers a short word with silence: such a clip is asked again in quotation marks.
 - Clips are kept in `learner/voice/podcast/` and listed in `episode.json` (`clips`), with `cast`, the services and, for Gemini, the audio tokens; a second render spends nothing. `prune` deletes cast clips no episode lists, once they are three days old.
 

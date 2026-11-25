@@ -570,3 +570,39 @@ def test_gemini_asks_for_each_speaker_by_name_and_keeps_the_style_out_of_the_spo
     assert sent[1]["contents"][0]["parts"][0] == {"text": "Στον Πειραιά.", "speechMetadata": {"style": "patient"}}
     with pytest.raises(ValueError):
         g.make_exchange([("a", "A", "1", None), ("b", "B", "2", None), ("c", "C", "3", None)], keys)
+
+
+@pytest.mark.skipif(not HAS_FFMPEG, reason="ffmpeg joins the clips")
+def test_one_service_voices_the_whole_episode_and_a_refusal_stops_it_without_mixing(learner, monkeypatch):
+    class Tired(Actor):
+        def make_exchange(self, turns, keys):
+            if len(self.calls) >= 1:
+                raise voice.Refused("429 Too Many Requests")
+            return super().make_exchange(turns, keys)
+
+    tired, reader = Tired(), Reader()
+    monkeypatch.setattr(podcast, "_chain", lambda profile, keys: [tired, reader])
+    write(learner, cast_script())
+    with pytest.raises(podcast.PodcastError, match="gemini refused"):
+        podcast.render("open.first-words.tr")
+    assert reader.calls == [] and len(tired.calls) == 1  # the first exchange is kept for the next try
+
+
+def test_gemini_waits_and_asks_again_after_a_429(monkeypatch):
+    answers = [voice.Refused("429 Too Many Requests"), voice.Refused("503 Unavailable")]
+    pcm = base64.b64encode(b"\x00\x01" * 2400).decode()
+
+    def fake_post(url, body, headers, timeout=60, tries=2):
+        if answers:
+            raise answers.pop(0)
+        return json.dumps({"candidates": [{"content": {"parts": [{"inlineData": {"mimeType": "audio/L16;rate=24000",
+                                                                                  "data": pcm}}]}}]}).encode()
+
+    slept = []
+    monkeypatch.setattr(voice, "_post", fake_post)
+    monkeypatch.setattr(voice.time, "sleep", slept.append)
+    assert voice.podcast_providers()["gemini"].make("Γεια!", "f", {"GEMINI_API_KEY": "k"})[:4] == b"RIFF"
+    assert slept == [15, 30]
+    monkeypatch.setattr(voice, "_post", lambda *a, **k: (_ for _ in ()).throw(voice.Refused("400 Bad Request")))
+    with pytest.raises(voice.Refused, match="400"):
+        voice.podcast_providers()["gemini"].make("Γεια!", "f", {"GEMINI_API_KEY": "k"})

@@ -543,6 +543,7 @@ def _ask(req: dict, p: voice.Provider, keys: dict, text_of=lambda x: x["text"]) 
 def _cast_cost(script: Script, chain, profile, keys, used) -> dict:
     members, who_of = casting.speakers(script)
     units = [u for u in plan(script, who_of) if isinstance(u, Unit)]
+    chain = _episode_chain(units, chain, keys, profile)
     by_lang: dict[str, dict] = {}
     by_provider: dict[str, int] = {}
     nobody = to_make = 0
@@ -607,10 +608,21 @@ def _sound(exe: str, kind: str, tmpdir: Path) -> bytes:
         return w.readframes(w.getnframes())
 
 
+def _episode_chain(units: list[Unit], chain, keys, profile) -> list:
+    """One service voices the whole episode: the first that can make every unit. A refusal halfway
+    then stops the render (clips made so far are kept, so a second render goes on from there)
+    instead of mixing two services' sounds in one episode."""
+    for p in chain:
+        if all(_can(p, u, keys, profile) for u in units):
+            return [p]
+    return chain
+
+
 def _render_cast(pid: str, script: Script, exe: str, chain, profile, keys, progress) -> dict:
     members, who_of = casting.speakers(script)
     items = plan(script, who_of)
     units = [u for u in items if isinstance(u, Unit)]
+    chain = _episode_chain(units, chain, keys, profile)
     out_dir = episode_dir(pid)
     made: dict[str, int] = {}
     spent: dict[str, int] = {}
@@ -732,7 +744,8 @@ def _voice_unit(unit: Unit, chain, members, lang, keys, profile, exe, tmpdir) ->
                     data = _to_wav(exe, clip, tmpdir / "piece.wav", speed)
                 out.append((who, req, data, k))
             return out
-        except voice.Refused:
+        except voice.Refused as e:
+            why = f"{p.name} refused: {e}; the clips made so far are kept, so rendering again goes on from here"
             continue
     raise PodcastError(f"no voice could make this part ({why}): {unit.lines[0][0].say[:60]!r}")
 

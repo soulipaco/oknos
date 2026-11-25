@@ -332,11 +332,24 @@ class Gemini(Provider):
     def ready(self, keys, profile):
         return None if keys.get("GEMINI_API_KEY") else "needs GEMINI_API_KEY"
 
+    RETRY_WAITS = (15, 30, 60, 60)  # seconds before asking again after a 429 or a server error
+
     def _speak(self, parts: list[dict], speech: dict, keys: dict) -> bytes:
         body = json.dumps({"contents": [{"role": "user", "parts": parts}],
                            "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": speech}}).encode("utf-8")
-        r = json.loads(_post(f"https://generativelanguage.googleapis.com/v1beta/models/{self.MODEL}:generateContent", body,
-                             {"Content-Type": "application/json", "X-Goog-Api-Key": keys["GEMINI_API_KEY"]}, timeout=300))
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.MODEL}:generateContent"
+        headers = {"Content-Type": "application/json", "X-Goog-Api-Key": keys["GEMINI_API_KEY"]}
+        # A long episode meets the per-minute limit now and then (2026-11-25: about half of a pilot went
+        # to the fallback): wait and ask again before refusing.
+        for wait in (*self.RETRY_WAITS, None):
+            try:
+                answer = _post(url, body, headers, timeout=300)
+                break
+            except Refused as e:
+                if wait is None or not str(e)[:3] in ("429", "500", "502", "503", "504"):
+                    raise
+                time.sleep(wait)
+        r = json.loads(answer)
         try:
             data = r["candidates"][0]["content"]["parts"][0]["inlineData"]
         except (KeyError, IndexError):
