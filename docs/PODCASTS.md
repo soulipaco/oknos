@@ -72,7 +72,7 @@ After listening to the first episodes, the maintainer found them a mechanical le
 - **The drill and the Turkish:** the line-by-line drill moves to an optional last part. The Turkish share falls from lesson to lesson, and an episode ends with a few minutes of easy Greek only.
 - **Sound:** a short sting between parts and a jingle; never noise under speech.
 
-The voices and the engine (a larger pool, Google Chirp 3 HD's 30 voices, Gemini's multi-speaker TTS, music) are a separate piece of work. The sources this direction draws on are Greek-teaching podcasts and channels (Easy Greek, Language Transfer, Let's Talk Greek, Easy Greek Stories), as ideas only. No podcast teaches Greek in Turkish.
+The voices and the engine are below ("The voices"). The sources this direction draws on are Greek-teaching podcasts and channels (Easy Greek, Language Transfer, Let's Talk Greek, Easy Greek Stories), as ideas only. No podcast teaches Greek in Turkish.
 
 **The cast** is a list in the script; a speech segment's `who` names a cast id:
 
@@ -84,7 +84,40 @@ The voices and the engine (a larger pool, Google Chirp 3 HD's 30 voices, Gemini'
 ]
 ```
 
-`role` is `host`, `cohost`, `guest`, `character` or `narrator`. Until a cast is mapped to particular voices, a member speaks with the voice of their gender. `check` refuses a `who` that is not in the cast, and a line in a language its speaker does not speak. Scripts without a cast work as before; the 24 chapter episodes stay as they are until v2 is agreed after a pilot.
+`role` is `host`, `cohost`, `guest`, `character` or `narrator`. Each member gets their own voice ("The voices", below). `check` refuses a `who` that is not in the cast, and a line in a language its speaker does not speak. Greek inside a Turkish line is allowed for a member who speaks Greek (a note, not a problem). Scripts without a cast work as before; the 24 chapter episodes stay as they are until v2 is agreed after a pilot.
+
+## The voices (built 2026-11-25)
+
+The maintainer found the first episodes mechanical: two Greek voices for everyone, each line made alone and glued with the same short gap, one narrator. A blind test settled what to change. Four podcast excerpts (two women at a door; a story told in Turkish with two men's Greek lines; two hosts chatting with Greek words in between; the v2 format), each made with seven setups and scored by ear from 1 to 5:
+
+| Setup | Score of 20 |
+|---|---|
+| **Gemini 3.8 Flash TTS**: two speakers acted in one request, a described style per person | **17** |
+| Google Chirp 3 HD, a voice per person | 14–14.5 |
+| Azure for the main Greek pair, Chirp for the rest | 14 |
+| OpenAI gpt-4o-mini-tts, a described style per person | 13.5 |
+| Azure as before (Athina, Nestoras, Emel), line by line | 12.5 |
+| Azure in one SSML document, with multilingual voices for the second woman and man | 12.5 |
+
+A voice per person alone gained little; acting the exchange together gained most. So podcasts are voiced by **Gemini TTS**, with **Chirp 3 HD** as the fallback (the same 30 voice names, so people keep roughly their sound). The app's own clips (words, sentences) are not affected: they keep `voice.providers`.
+
+**Setting it up.** `podcast.providers` in `profile.json` is the podcast's own list, e.g. `["gemini", "google"]` (without it the podcast uses the Voice screen's list, as before). Gemini needs its own key from AI Studio (aistudio.google.com/apikey, in a project with billing, which makes it the paid tier: the text is not used to train models) in `learner/secrets.env` as `GEMINI_API_KEY`, and prepaid credit on that project. The Cloud Text-to-Speech key does not reach Gemini: that route needs a signed-in account, not a key.
+
+**Casting** (`src/oknos/casting.py`, `src/oknos/casting.json`). The show's people keep one voice in every episode: Ada Sulafat (warm), Mert Umbriel (easy-going), Katerina Gacrux (mature). A character gets a voice of their gender from the other 27, in an order fixed by their name, so the same character sounds the same in every episode and two people of one episode never share a voice (only with more people of one gender than voices). A cast member may name a voice itself (`"voice": {"google": "Leda"}`). Older scripts are cast too: a Turkish line with no speaker is Ada, a Greek line with no speaker Katerina, a Greek line with a name that character. `oknos podcast check` prints the cast.
+
+**How an episode is made.** When the first ready service in the podcast's list has named voices (gemini, google), the episode is cast:
+- Consecutive lines between at most two people (up to 10 lines, 1,000 characters) are one request, acted together, each line with its speaker's style: the setting, then the person's name, age, role and manner from the cast. A slowed line, or a line followed by an echo gap, is made on its own (the gap is measured on it).
+- A host may say Greek inside a Turkish sentence ("…şuydu: Ναι."), in her own voice. `check` makes this a note for a cast member whose `lang` includes `el`, and a problem for anyone else; only a service that speaks mixed lines (gemini) makes it, and the render stops if none is ready.
+- Between requests, gaps follow the turn-taking: 0.3 s between two people in Greek, 0.35 s in Turkish, 0.25 s for the same person, 0.6 s where the language changes.
+- A short jingle opens and closes the episode and a soft sting marks each new part: a plucked motif in D, made from numbers by ffmpeg (original, like the films' ambience). No music runs under speech.
+- Chirp, which reads one line at a time, now and then answers a short word with silence: such a clip is asked again in quotation marks.
+- Clips are kept in `learner/voice/podcast/` and listed in `episode.json` (`clips`), with `cast`, the services and, for Gemini, the audio tokens; a second render spends nothing. `prune` deletes cast clips no episode lists, once they are three days old.
+
+When the first ready service is Azure or OpenAI, an episode is made line by line with the female or male voice as before, and a line with Greek inside Turkish is refused.
+
+**Cost.** Gemini bills audio by tokens, about 25 a second of speech. The 3.8 Flash TTS price until 2026-12-31 is $9 per million audio tokens (then $18), so a chapter episode of 14 minutes costs about $0.20 ($0.40 from 2027), and 300,000 characters a month about $5 ($10). The credit is prepaid, so it cannot run over; a budget alert in the Google Cloud console is still worth setting. Chirp 3 HD is free up to 1 million characters a month.
+
+**What else was tried.** Azure has only Athina and Nestoras for Greek; its new Turkish HD voices (Elif, Aydın, Grant, Harper on MAI-Voice-2.1, with styles) are refused on the free tier. OpenAI's TTS models shut down on 2027-01-06. ElevenLabs speaks Greek and Turkish with a dialogue API, but costs four to ten times as much at this volume and was not tested. No open model that runs on a laptop speaks Greek well enough (Chatterbox Multilingual was tested in phase 10). Gemini 3.8 is about the best that a low cost buys today.
 
 ## Making the audio
 
@@ -96,7 +129,7 @@ uv run oknos podcast material daily       # what a personal episode is written f
 uv run oknos podcast prune                # old personal episodes and the clips only they used
 ```
 
-`render` makes the missing clips through the voice chain (`voice.make`; a Greek clip the app already has is reused), then joins them with ffmpeg: each clip with the services' silence at both ends trimmed and at its speed (`atempo`), a short breath after each line, the script's pauses and gaps, one loudness pass (−16 LUFS), one mp3 (`episode.mp3`, 64 kb/s mono, about 6 MB for 13 minutes). `episode.json` beside it holds the length, the time of each part, the characters used and the services that spoke. ffmpeg must be installed (it is for the films).
+`render` casts the episode when the podcast's first service has named voices ("The voices"). Otherwise it makes the missing clips through the voice chain (`voice.make`; a Greek clip the app already has is reused), then joins them with ffmpeg: each clip with the services' silence at both ends trimmed and at its speed (`atempo`), a short breath after each line, the script's pauses and gaps, one loudness pass (−16 LUFS), one mp3 (`episode.mp3`, 64 kb/s mono, about 6 MB for 13 minutes). `episode.json` beside it holds the length, the time of each part, the characters used and the services that spoke. ffmpeg must be installed (it is for the films).
 
 Turkish and English clips are kept in `learner/voice/<lang>/` beside the Greek ones. edge-tts never makes them: the scripts are the agent's own texts (SPEC §9).
 
@@ -124,7 +157,7 @@ uv run oknos podcast material daily     # tomorrow's (or --date YYYY-MM-DD); wee
 
 A personal script is a chapter script with `kind` `daily` or `weekly`, the `date` it is for, `focus` (the Greek words and points it drilled) and the report among its `sources`; `check` refuses one without a date or whose id does not start with its kind.
 
-- **When:** `daily-prep` (step 5b) writes tomorrow's, only when `podcast.personal` in `profile.json` says yes (`{"daily": true, "weekly": true}`): a daily episode for Monday to Friday, the weekly one on Friday evening for the weekend. With only `daily`, one every day. It renders only under 80% of the service's free quota.
+- **When:** `daily-prep` (step 5b) writes tomorrow's, only when `podcast.personal` in `profile.json` says yes (`{"daily": true, "weekly": true}`): a daily episode for Monday to Friday, the weekly one on Friday evening for the weekend. With only `daily`, one every day. It renders only under 80% of the service's free quota; Gemini has no free quota, and a daily episode costs it a few cents.
 - **Where:** the home screen's coach tile links "Today's episode" (the daily one for today, else this week's weekly one: `/api/home` → `podcast_today`); the Podcast page lists it with the others.
 - **Privacy:** the text goes to the learner's keyed voice service (never edge-tts), so it holds learning content only: words, sentences, right forms. Never the learner's name, their answers quoted as theirs, scores, counts, when or how long they studied, or anything from a capture or a tutor chat about their life.
 - **Keeping it small:** `uv run oknos podcast prune` (run by `daily-prep` after a render) keeps the newest 14 daily and 8 weekly episodes and deletes the Turkish and English clips no remaining script speaks. Greek clips stay (the app uses them), and chapter episodes are never deleted.

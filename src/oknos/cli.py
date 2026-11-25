@@ -673,7 +673,10 @@ def cmd_podcast(args) -> int:
                 print(f"  {lang}: {v['clips']} clips, {v['chars']:,} characters")
             for name, v in cost["by_provider"].items():
                 free = f" of {v['free']:,} free" if v["free"] else ""
-                print(f"  {name} would make {v['chars']:,} characters (this month so far: {v['used_this_month']:,}{free})")
+                tokens = f", about {v['tokens']:,} audio tokens" if v.get("tokens") else ""
+                print(f"  {name} would make {v['chars']:,} characters{tokens} (this month so far: {v['used_this_month']:,}{free})")
+            if cost.get("cast"):
+                print("Cast: " + ", ".join(f"{c['name']} = {c['voice']}" for c in cost["cast"].values()))
             if cost["no_service"]:
                 print(f"  {cost['no_service']} lines have no service that can make them (keys or the Voice screen's list).")
             return 1 if c["problems"] else 0
@@ -681,9 +684,13 @@ def cmd_podcast(args) -> int:
         def progress(stage, n, total):
             if n == total or n % 25 == 0:
                 print(f"  {'voicing' if stage == 'clips' else 'joining'} {n}/{total}", flush=True)
+            elif stage == "clips" and n % 5 == 0:
+                print(f"  voicing {n}/{total}", flush=True)
 
         meta = podcast.render(args.id, wait=args.wait, progress=progress)
         spent = ", ".join(f"{k} {v:,} characters" for k, v in meta["chars"].items()) or "nothing (every clip was there)"
+        if meta.get("tokens"):
+            spent += f" ({meta['tokens']:,} audio tokens)"
         print(f"{meta['id']}: {meta['seconds'] / 60:.1f} minutes, {len(meta['parts'])} parts. Spent: {spent}.")
         print(f"File: {podcast.episode_dir(args.id) / 'episode.mp3'}")
         return 0

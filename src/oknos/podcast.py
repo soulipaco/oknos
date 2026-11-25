@@ -20,13 +20,14 @@ import shutil
 import subprocess
 import tempfile
 import wave
+from dataclasses import dataclass
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Callable, Literal, Union
 
 from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, ValidationError
 
-from oknos import greek, lint, paths, voice
+from oknos import casting, greek, lint, paths, voice
 
 ID = re.compile(r"^[a-z0-9][a-z0-9.\-]{0,79}$")
 RATE = 24_000          # the episode's sample rate (mono); the voice services send 24 kHz
@@ -99,6 +100,9 @@ class CastMember(Strict):
     gender: Literal["f", "m"]
     age: str | None = None
     manner: str | None = Field(default=None, max_length=200)
+    # The voice for one casting family, chosen by the script (docs/PODCASTS.md "The voices"),
+    # e.g. {"google": "Leda"}; without it the casting (src/oknos/casting.json) chooses.
+    voice: dict[str, str] | None = None
 
 
 class Title(Strict):
@@ -182,6 +186,7 @@ def problems(script: Script) -> tuple[list[str], list[str]]:
     """(problems, notes). A problem stops the render; a note is worth a look."""
     bad: list[str] = []
     notes: list[str] = []
+    cast = cast_of(script)
     if not isinstance(script.segments[0], Part):
         bad.append("the first segment must be a part (a chapter mark)")
     previous = None
@@ -194,13 +199,15 @@ def problems(script: Script) -> tuple[list[str], list[str]]:
                 p, n = lint.check_text(seg.say)
                 bad += [f"{where}: {x}: {seg.say[:60]!r}" for x in p]
                 notes += [f"{where}: {x}" for x in n]
+            elif greek.has_greek(seg.say) and seg.who in cast and "el" in cast[seg.who].lang:
+                notes.append(f"{where}: Greek inside a {seg.lang} line, said by {cast[seg.who].name} in one breath; "
+                             f"only a voice that speaks mixed lines (gemini) can make it: {seg.say[:60]!r}")
             elif greek.has_greek(seg.say):
                 bad.append(f"{where}: Greek letters inside a {seg.lang} line (the {seg.lang} voice would mangle them; "
                            f"put the Greek in its own segment): {seg.say[:60]!r}")
         if isinstance(seg, Echo) and not isinstance(previous, Say):
             bad.append(f"{where}: an echo gap must follow a line of speech")
         previous = seg
-    cast = cast_of(script)
     if len(cast) != len(script.cast):
         bad.append("two cast members share an id")
     if cast:
@@ -251,8 +258,18 @@ def estimate_seconds(script: Script) -> float:
 
 
 def _chain(profile: dict, keys: dict) -> list[voice.Provider]:
-    known = voice.providers()
-    return [known[p] for p in voice.order(profile)]
+    """The podcast's voices: `podcast.providers` in the profile (e.g. ["gemini", "google"]), else the
+    app's own order (the Voice screen)."""
+    known = voice.podcast_providers()
+    chosen = (profile.get("podcast") or {}).get("providers") or voice.order(profile)
+    return [known[p] for p in chosen if p in known]
+
+
+def _cast_path(chain: list[voice.Provider], profile: dict, keys: dict) -> bool:
+    """Episodes are cast (a voice per person, exchanges, the jingle) when the first ready service has
+    named voices; otherwise each line is a clip of the app's female or male voice, as before."""
+    first = next((p for p in chain if not p.ready(keys, profile) and p.name != "edge"), None)
+    return bool(first and first.named)
 
 
 def cost(script: Script) -> dict:
@@ -261,6 +278,8 @@ def cost(script: Script) -> dict:
     profile, keys = voice.read_profile(), voice.secrets()
     chain = _chain(profile, keys)
     used = voice.usage()
+    if _cast_path(chain, profile, keys):
+        return _cast_cost(script, chain, profile, keys, used)
     todo = [(t, r, lang) for t, r, lang in lines(script) if voice.find(t, r, lang) is None]
     by_lang: dict[str, dict] = {}
     by_provider: dict[str, int] = {}
@@ -269,7 +288,8 @@ def cost(script: Script) -> dict:
         row = by_lang.setdefault(lang, {"clips": 0, "chars": 0})
         row["clips"] += 1
         row["chars"] += len(t)
-        who = next((p.name for p in chain if not p.ready(keys, profile) and p.name != "edge" and p.speaks(lang)), None)
+        who = next((p.name for p in chain if not p.ready(keys, profile) and p.name != "edge" and not p.podcast_only
+                    and p.speaks(lang)), None)
         if who:
             by_provider[who] = by_provider.get(who, 0) + len(t)
         else:
@@ -339,6 +359,13 @@ def render(pid: str, *, wait: bool = False, progress: Callable[[str, int, int], 
     exe = ffmpeg()
     profile, keys = voice.read_profile(), voice.secrets()
     chain = _chain(profile, keys)
+    if _cast_path(chain, profile, keys):
+        return _render_cast(pid, script, exe, chain, profile, keys, progress)
+    mixed = [s.say for s in script.segments if isinstance(s, Say) and s.lang != "el" and greek.has_greek(s.say)]
+    if mixed:
+        raise PodcastError(f"a line has Greek inside a {script.lang} sentence, which only a cast episode with a "
+                           f"voice that speaks mixed lines (gemini) can make: {mixed[0][:60]!r}")
+    chain = [p for p in chain if not p.podcast_only]
     index = voice.read_index()
     made: dict[str, int] = {}
     spent: dict[str, int] = {}
@@ -419,6 +446,295 @@ def render(pid: str, *, wait: bool = False, progress: Callable[[str, int, int], 
             "made": made, "chars": spent}
     (out_dir / "episode.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     return meta
+
+
+# ---------- cast episodes: a voice per person, exchanges acted together, the jingle ----------
+#
+# When the first ready service has named voices (gemini, google), an episode is cast: each person of
+# the script gets their own voice (oknos.casting), consecutive lines between at most two people are
+# made in one request by a service that acts dialogue (gemini), gaps follow the turn-taking, and a
+# short jingle opens and closes the episode, with a sting between parts. Clips are kept in
+# learner/voice/podcast/ and listed in episode.json, so a second render spends nothing.
+
+MAX_TURNS = 10              # lines in one exchange (one request)
+MAX_EXCHANGE_CHARS = 1000   # characters in one exchange
+AUDIO_TOKENS_PER_SECOND = 25  # Gemini bills audio by tokens, about 25 a second of speech
+
+
+@dataclass
+class Unit:
+    """Lines spoken in one go: an exchange between two people, one person's run, or one line."""
+
+    lines: list[tuple[Say, str]]  # (segment, member id)
+    solo: bool = False            # slowed, or followed by an echo gap: made on its own
+
+    def ids(self) -> set[str]:
+        return {mid for _, mid in self.lines}
+
+    def chars(self) -> int:
+        return sum(len(s.say) for s, _ in self.lines)
+
+
+def plan(script: Script, who_of: dict[int, str]) -> list:
+    """The episode as parts, pauses, echo gaps and units of speech."""
+    items: list = []
+    cur: Unit | None = None
+    segs = script.segments
+    for i, seg in enumerate(segs):
+        if not isinstance(seg, Say):
+            items.append(seg)
+            cur = None
+            continue
+        mid = who_of[i]
+        solo = seg.speed < 0.999 or (i + 1 < len(segs) and isinstance(segs[i + 1], Echo))
+        if (cur is not None and not solo and len(cur.ids() | {mid}) <= 2 and len(cur.lines) < MAX_TURNS
+                and cur.chars() + len(seg.say) <= MAX_EXCHANGE_CHARS):
+            cur.lines.append((seg, mid))
+            continue
+        cur = Unit([(seg, mid)], solo=solo)
+        items.append(cur)
+        if solo:
+            cur = None
+    return items
+
+
+def _mixed(seg: Say) -> bool:
+    return seg.lang != "el" and greek.has_greek(seg.say)
+
+
+def _can(p: voice.Provider, unit: Unit, keys: dict, profile: dict) -> bool:
+    if p.ready(keys, profile) or p.name == "edge":  # edge never: the scripts are the agent's own texts
+        return False
+    return all(p.speaks(seg.lang) and (p.mixed or not _mixed(seg)) for seg, _ in unit.lines)
+
+
+def _requests(unit: Unit, p: voice.Provider, voices: dict[str, str], members: dict, lang: str) -> list[dict]:
+    """What the service is asked for this unit: one request (an exchange, or one person's run) when it
+    acts dialogue, else one per line."""
+    lines_ = [{"who": mid, "voice": voices.get(mid), "role": members[mid].gender, "text": seg.say.strip(),
+               "lang": seg.lang, "style": casting.style(members[mid], lang) if p.dialogue else None}
+              for seg, mid in unit.lines]
+    if p.dialogue and len(lines_) > 1:
+        return [{"mode": "run" if len(unit.ids()) == 1 else "exchange", "lines": lines_}]
+    return [{"mode": "line", "lines": [x]} for x in lines_]
+
+
+def _request_key(req: dict, p: voice.Provider) -> str:
+    sig = [p.name, getattr(p, "MODEL", ""), req["mode"],
+           [(x["voice"] or x["role"], x["style"] or "", x["text"], x["lang"]) for x in req["lines"]]]
+    return hashlib.sha1(json.dumps(sig, ensure_ascii=False).encode("utf-8")).hexdigest()
+
+
+def cast_clip(k: str) -> Path:
+    return voice.voice_dir() / "podcast" / k[:2] / f"{k}.clip"  # mp3 or wav: ffmpeg reads either
+
+
+def _ask(req: dict, p: voice.Provider, keys: dict, text_of=lambda x: x["text"]) -> bytes:
+    ls = req["lines"]
+    if req["mode"] == "exchange":
+        return p.make_exchange([(x["who"], x["voice"], text_of(x), x["style"]) for x in ls], keys)
+    x = ls[0]
+    text = " ".join(text_of(y) for y in ls)
+    if p.named:
+        return p.make(text, x["role"], keys, lang=x["lang"], voice_name=x["voice"], style=x["style"])
+    return p.make(text, x["role"], keys) if x["lang"] == "el" else p.make(text, x["role"], keys, lang=x["lang"])
+
+
+def _cast_cost(script: Script, chain, profile, keys, used) -> dict:
+    members, who_of = casting.speakers(script)
+    units = [u for u in plan(script, who_of) if isinstance(u, Unit)]
+    by_lang: dict[str, dict] = {}
+    by_provider: dict[str, int] = {}
+    nobody = to_make = 0
+    for u in units:
+        p = next((p for p in chain if _can(p, u, keys, profile)), None)
+        if p is None:
+            nobody += len(u.lines)
+            continue
+        voices = casting.assign(members, casting.family_of(p.name))
+        for req in _requests(u, p, voices, members, script.lang):
+            if cast_clip(_request_key(req, p)).is_file():
+                continue
+            to_make += 1
+            for x in req["lines"]:
+                row = by_lang.setdefault(x["lang"], {"clips": 0, "chars": 0})
+                row["clips"] += 1
+                row["chars"] += len(x["text"])
+                by_provider[p.name] = by_provider.get(p.name, 0) + len(x["text"])
+    known = voice.podcast_providers()
+    providers = {}
+    for name, chars in by_provider.items():
+        providers[name] = {"chars": chars, "used_this_month": used.get(name, 0), "free": known[name].free_chars}
+        if name == "gemini":
+            providers[name]["tokens"] = int(chars / CHARS_PER_SECOND["tr"] * AUDIO_TOKENS_PER_SECOND)
+    first = next((p for p in chain if not p.ready(keys, profile) and p.name != "edge"), None)
+    voices = casting.assign(members, casting.family_of(first.name)) if first else {}
+    return {"lines": sum(len(u.lines) for u in units), "to_make": to_make, "chars": sum(by_provider.values()),
+            "by_lang": by_lang, "by_provider": providers, "no_service": nobody,
+            "cast": {mid: {"name": m.name, "voice": voices.get(mid, m.gender)} for mid, m in members.items()}}
+
+
+def _turn_gap(prev: tuple[str, str] | None, cur: tuple[str, str]) -> float:
+    """The silence between two turns: short in a dialogue, longer where the language changes."""
+    if prev is None:
+        return 0.0
+    (pw, pl), (cw, cl) = prev, cur
+    if pl != cl:
+        return 0.6
+    if pw == cw:
+        return 0.25
+    return 0.3 if cl == "el" else 0.35
+
+
+# The show's sounds, made from numbers (original, like the films' ambience): a plucked motif in D.
+_NOTE = "{a}*(sin(2*PI*{f}*(t-{s}))+0.35*sin(4*PI*{f}*(t-{s})))*exp(-{d}*(t-{s}))*gte(t\\,{s})"
+SOUNDS = {
+    "open": (2.6, [(0, 146.83, .08, 1.2), (0, 293.66, .14, 3.5), (.17, 349.23, .14, 3.5), (.34, 440.0, .14, 3.5),
+                   (.51, 587.33, .16, 2.5)]),
+    "sting": (1.1, [(0, 440.0, .12, 4.0), (.13, 587.33, .12, 3.5)]),
+    "close": (2.8, [(0, 587.33, .14, 3.5), (.17, 440.0, .14, 3.5), (.34, 349.23, .14, 3.5), (.51, 293.66, .16, 2.0),
+                    (.51, 146.83, .08, 1.2)]),
+}
+
+
+def _sound(exe: str, kind: str, tmpdir: Path) -> bytes:
+    dur, notes = SOUNDS[kind]
+    expr = "+".join(_NOTE.format(a=a, f=f, s=s, d=d) for s, f, a, d in notes)
+    out = tmpdir / f"{kind}.wav"
+    _run([exe, "-v", "error", "-y", "-f", "lavfi", "-i", f"aevalsrc=exprs={expr}:s={RATE}:d={dur}",
+          "-af", f"afade=t=out:st={dur - 0.5:.2f}:d=0.5", "-ac", "1", "-ar", str(RATE), "-c:a", "pcm_s16le", str(out)])
+    with wave.open(str(out), "rb") as w:
+        return w.readframes(w.getnframes())
+
+
+def _render_cast(pid: str, script: Script, exe: str, chain, profile, keys, progress) -> dict:
+    members, who_of = casting.speakers(script)
+    items = plan(script, who_of)
+    units = [u for u in items if isinstance(u, Unit)]
+    out_dir = episode_dir(pid)
+    made: dict[str, int] = {}
+    spent: dict[str, int] = {}
+    tokens = 0
+    used_keys: list[str] = []
+    voices_used: dict[str, str] = {}
+    frames: list[bytes] = []
+    parts: list[dict] = []
+    timeline: list[dict] = []
+    t = last = 0.0
+    prev: tuple[str, str] | None = None
+    first_part = True
+    done = 0
+    with tempfile.TemporaryDirectory(prefix="oknos-podcast-") as tmp:
+        tmpdir = Path(tmp)
+
+        def add(data: bytes) -> float:
+            nonlocal t
+            frames.append(data)
+            secs = len(data) / 2 / RATE
+            t += secs
+            return secs
+
+        add(_sound(exe, "open", tmpdir) + _silence(0.4))
+        for item in items:
+            if isinstance(item, Part):
+                if not first_part:
+                    add(_silence(0.5) + _sound(exe, "sting", tmpdir) + _silence(0.3))
+                first_part = False
+                parts.append({"t": round(t, 2), "title": item.part})
+                prev = None
+            elif isinstance(item, Pause):
+                add(_silence(item.pause))
+                prev = None
+            elif isinstance(item, Echo):
+                add(_silence(last * item.echo + ECHO_EXTRA))
+                prev = None
+            else:
+                for p, req, data, k in _voice_unit(item, chain, members, script.lang, keys, profile, exe, tmpdir):
+                    add(_silence(_turn_gap(prev, (req["lines"][0]["who"], req["lines"][0]["lang"]))))
+                    start = t
+                    secs = add(data)
+                    total = sum(len(x["text"]) for x in req["lines"]) or 1
+                    at = start
+                    for x in req["lines"]:  # lines within one request: placed by their share of the characters
+                        line = {"t": round(at, 2), "lang": x["lang"], "say": x["text"], "who": x["who"]}
+                        if item.solo and item.lines[0][0].speed < 0.999:
+                            line["speed"] = item.lines[0][0].speed
+                        timeline.append(line)
+                        at += secs * len(x["text"]) / total
+                        voices_used[x["who"]] = x["voice"] or x["role"]
+                    last = secs
+                    prev = (req["lines"][-1]["who"], req["lines"][-1]["lang"])
+                    used_keys.append(k)
+                    if p is not None:
+                        made[p.name] = made.get(p.name, 0) + 1
+                        spent[p.name] = spent.get(p.name, 0) + total
+                        tokens += getattr(p, "tokens", 0) if p.name == "gemini" else 0
+                done += 1
+                if progress:
+                    progress("clips", done, len(units))
+        add(_silence(0.8) + _sound(exe, "close", tmpdir))
+        joined = tmpdir / "joined.wav"
+        with wave.open(str(joined), "wb") as w:
+            w.setnchannels(1)
+            w.setsampwidth(2)
+            w.setframerate(RATE)
+            for f in frames:
+                w.writeframes(f)
+        target = out_dir / "episode.mp3"
+        partial = out_dir / "episode.part.mp3"
+        _run([exe, "-v", "error", "-y", "-i", str(joined), "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
+              "-ar", str(RATE), "-ac", "1", "-c:a", "libmp3lame", "-b:a", "64k",
+              "-metadata", f"title={script.title.tr if script.lang == 'tr' else script.title.en}",
+              "-metadata", "artist=Oknos", "-f", "mp3", str(partial)])
+        partial.replace(target)
+    meta = {"id": script.id, "kind": script.kind, "lang": script.lang, "title": script.title.model_dump(),
+            "curriculum": script.curriculum, "stage": script.stage, "version": script.version,
+            "written": script.written, "date": script.date, "rendered": datetime.now().isoformat(timespec="seconds"),
+            "seconds": round(t, 1), "script": script_hash(pid), "parts": parts, "lines": timeline,
+            "made": made, "chars": spent,
+            "cast": {mid: {"name": members[mid].name, "voice": v} for mid, v in voices_used.items()},
+            "clips": sorted(set(used_keys)), "sounds": True}
+    if tokens:
+        meta["tokens"] = tokens
+    (out_dir / "episode.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    return meta
+
+
+def _voice_unit(unit: Unit, chain, members, lang, keys, profile, exe, tmpdir) -> list[tuple]:
+    """The unit's audio as (service, or None when the clip was kept; request; frames; key), from the
+    first service that can make all of it; a service refusing a request passes the unit on."""
+    why = "no service in the podcast's list can make it (keys, or podcast.providers in the profile)"
+    if any(_mixed(seg) for seg, _ in unit.lines) and not any(p.mixed and not p.ready(keys, profile) for p in chain):
+        why = "it has Greek inside a Turkish or English sentence, and no ready service speaks mixed lines (gemini)"
+    speed = unit.lines[0][0].speed if unit.solo else 1.0
+    for p in chain:
+        if not _can(p, unit, keys, profile):
+            continue
+        voices = casting.assign(members, casting.family_of(p.name))
+        out = []
+        try:
+            for req in _requests(unit, p, voices, members, lang):
+                k = _request_key(req, p)
+                clip = cast_clip(k)
+                who = None
+                if not clip.is_file():
+                    data = _ask(req, p, keys)
+                    clip.parent.mkdir(parents=True, exist_ok=True)
+                    clip.write_bytes(data)
+                    voice._add_usage(p.name, sum(len(x["text"]) for x in req["lines"]))
+                    if p.name == "gemini" and getattr(p, "tokens", 0):
+                        voice._add_usage("gemini_tokens", p.tokens)
+                    who = p
+                data = _to_wav(exe, clip, tmpdir / "piece.wav", speed)
+                if len(data) < 0.15 * RATE * 2 and req["mode"] == "line":
+                    # Chirp now and then answers a short word with silence: ask again, quoted (it sounds the same).
+                    clip.write_bytes(_ask(req, p, keys, text_of=lambda x: f"«{x['text']}»"))
+                    data = _to_wav(exe, clip, tmpdir / "piece.wav", speed)
+                out.append((who, req, data, k))
+            return out
+        except voice.Refused:
+            continue
+    raise PodcastError(f"no voice could make this part ({why}): {unit.lines[0][0].say[:60]!r}")
 
 
 # ---------- what the app shows ----------
@@ -542,4 +858,20 @@ def prune(keep: dict[str, int] | None = None) -> dict:
                 removed += 1
     if removed:
         voice._write_index(index)
+    # A cast episode's clips (learner/voice/podcast/) go when no remaining episode lists them; a clip
+    # made in the last three days stays, as it may belong to a render not finished yet.
+    kept: set[str] = set()
+    if base.is_dir():
+        for d in base.iterdir():
+            try:
+                kept |= set(json.loads((d / "episode.json").read_text(encoding="utf-8")).get("clips", []))
+            except (OSError, ValueError):
+                continue
+    root = voice.voice_dir() / "podcast"
+    if root.is_dir():
+        young = datetime.now().timestamp() - 3 * 86400
+        for f in root.rglob("*.clip"):
+            if f.stem not in kept and f.stat().st_mtime < young:
+                f.unlink()
+                removed += 1
     return {"episodes": gone, "clips": removed}

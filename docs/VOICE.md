@@ -40,7 +40,9 @@ From the listening test of 2026-11-22 (ten sentences from the open book, the sam
 | **OpenAI** | gpt-4o-mini-tts (coral, ash) | good, a slight accent | Your own key; pay as you go, about one or two dollars for the whole book. |
 | Your browser's voice | on Windows, Stefanos | robotic | Always there; it reads whatever has no clip. |
 
-Tested and not offered: OpenAI tts-1-hd (unclear Greek), Chatterbox Multilingual and F5-TTS-Greek (local models, no better than the browser's voice here).
+Tested and not offered: OpenAI tts-1-hd (unclear Greek), Chatterbox Multilingual and F5-TTS-Greek (local models, no better than the browser's voice here). OpenAI's TTS models (gpt-4o-mini-tts, tts-1) shut down on 2027-01-06.
+
+**For the podcasts only: Gemini TTS** (Google's Gemini API, `GEMINI_API_KEY` from aistudio.google.com/apikey in a project with billing and prepaid credit; the paid tier does not use the text for training). It won a second blind test of seven setups on podcast excerpts on 2026-11-25 (17 of 20, against 12.5 for Azure line by line): two speakers acted together, a described style per person, Greek inside a Turkish sentence. About $0.20 a 14-minute episode until 2026-12-31, then about $0.40. It never makes the app's clips (`voice.podcast_providers()`); the podcast's own list is `podcast.providers` in the profile. Google Chirp 3 HD has the same 30 voices (14 female, 16 male) by name in Greek, Turkish and English, and is the fallback. How an episode is cast: `docs/PODCASTS.md`, "The voices".
 
 For the podcast lessons (`docs/PODCASTS.md`) each keyed service also speaks Turkish and English: Azure Emel and Ahmet (tr), Ava and Andrew (en); Google Chirp 3 HD Kore and Orus (tr-TR, en-US); OpenAI coral and ash. Those clips are kept in `learner/voice/tr/` and `learner/voice/en/`; edge-tts never makes them, as the scripts are the agent's own texts.
 
@@ -53,6 +55,7 @@ Keys go in `learner/secrets.env` (git never tracks `learner/`), one per line. Th
 - **Google:** console.cloud.google.com → start the free trial → create a project → enable *Cloud Text-to-Speech API* → Credentials → Create credentials → API key, restricted to *Cloud Text-to-Speech API* → `GOOGLE_TTS_API_KEY=…`
 - **Azure:** azure.microsoft.com/free with a Microsoft account → create a *Speech* resource, region West Europe, pricing tier *Free F0* → Keys and Endpoint → `AZURE_SPEECH_KEY=…` and `AZURE_SPEECH_REGION=westeurope`
 - **OpenAI:** platform.openai.com/api-keys → new secret key, Restricted with *Audio* on → `OPENAI_API_KEY=…`
+- **Gemini (podcasts):** aistudio.google.com/apikey → Create API key, in a project with billing → add prepaid credit (ai.studio/projects) → `GEMINI_API_KEY=…`; then `"podcast": {"providers": ["gemini", "google"]}` in `learner/profile.json`.
 - **edge-tts:** nothing to set up; your agent asks for your yes once.
 
 The order is `voice.providers` in `learner/profile.json` (the Voice screen changes it). A new learner starts with `["google"]`.

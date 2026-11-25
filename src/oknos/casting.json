@@ -1,0 +1,41 @@
+{
+  "about": "Who speaks with which voice in a podcast episode (docs/PODCASTS.md, 'The voices'). The show's own people (the hosts and the Greek guest) keep one voice in every episode; a story character gets a voice from the pool of their gender, chosen from their name, so the same character sounds the same everywhere and no two people of one episode share a voice. A script's cast member may name a voice for one family (cast[].voice). Google's 30 voices carry the same name and sound in Gemini TTS and in Cloud Text-to-Speech (Chirp 3 HD), in every language, so a host can also say Greek in her own voice. The word after each voice is Google's own description of it.",
+  "families": {
+    "google": {
+      "providers": ["gemini", "google"],
+      "show": {"ada": "Sulafat", "mert": "Umbriel", "katerina": "Gacrux"},
+      "voices": {
+        "Achernar": ["f", "soft"],
+        "Achird": ["m", "friendly"],
+        "Algenib": ["m", "gravelly"],
+        "Algieba": ["m", "smooth"],
+        "Alnilam": ["m", "firm"],
+        "Aoede": ["f", "breezy"],
+        "Autonoe": ["f", "bright"],
+        "Callirrhoe": ["f", "easy-going"],
+        "Charon": ["m", "informative"],
+        "Despina": ["f", "smooth"],
+        "Enceladus": ["m", "breathy"],
+        "Erinome": ["f", "clear"],
+        "Fenrir": ["m", "excitable"],
+        "Gacrux": ["f", "mature"],
+        "Iapetus": ["m", "clear"],
+        "Kore": ["f", "firm"],
+        "Laomedeia": ["f", "upbeat"],
+        "Leda": ["f", "youthful"],
+        "Orus": ["m", "firm"],
+        "Puck": ["m", "upbeat"],
+        "Pulcherrima": ["f", "forward"],
+        "Rasalgethi": ["m", "informative"],
+        "Sadachbia": ["m", "lively"],
+        "Sadaltager": ["m", "knowledgeable"],
+        "Schedar": ["m", "even"],
+        "Sulafat": ["f", "warm"],
+        "Umbriel": ["m", "easy-going"],
+        "Vindemiatrix": ["f", "gentle"],
+        "Zephyr": ["f", "bright"],
+        "Zubenelgenubi": ["m", "casual"]
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 """Phase 11: podcast lessons, written as a script, checked, and joined into one file (docs/PODCASTS.md)."""
 
+import base64
 import io
 import json
 import math
@@ -381,3 +382,191 @@ def test_a_cast_member_needs_a_known_role_gender_and_id():
     for bad in ({"gender": "x"}, {"role": "singer"}, {"id": "Ada K"}, {"lang": []}):
         with pytest.raises(podcast.PodcastError):
             podcast.parse(script(cast=[{**CAST[0], **bad}]))
+
+
+# ---------- the voices of a cast episode (docs/PODCASTS.md "The voices") ----------
+
+from oknos import casting  # noqa: E402
+
+SCENE = CAST + [
+    {"id": "ayse", "name": "Αϊσέ", "role": "character", "lang": ["el"], "gender": "f", "age": "30", "manner": "shy"},
+    {"id": "nikos", "name": "Νίκος", "role": "character", "lang": ["el"], "gender": "m"},
+]
+
+
+def cast_script(**over):
+    return script(cast=SCENE, segments=[
+        {"part": "Sahne"},
+        {"lang": "el", "say": "Γεια σου, Αϊσέ! Πού μένεις;", "who": "nikos"},
+        {"lang": "el", "say": "Μένω στην Κυψέλη. Εσύ;", "who": "ayse"},
+        {"lang": "el", "say": "Εγώ μένω στο Παγκράτι.", "who": "nikos"},
+        {"part": "Konuşma"},
+        {"lang": "tr", "say": "Ada, bir şey soracağım.", "who": "mert"},
+        {"lang": "tr", "say": "Sor bakalım.", "who": "ada"},
+        {"lang": "tr", "say": "Neden bazen ston, bazen stin?", "who": "mert"},
+        {"lang": "el", "say": "Στον Πειραιά.", "who": "katerina"},
+        {"lang": "el", "say": "Στον Πειραιά.", "who": "katerina", "speed": 0.8},
+        {"echo": 1.2},
+        {"lang": "tr", "say": "Evet dediğimde, yani Ναι dediğimde, herkes güldü.", "who": "mert"},
+        {"pause": 1},
+    ], **over)
+
+
+class Actor(voice.Provider):
+    """A service like Gemini: named voices, two speakers in one request, Greek inside Turkish."""
+
+    named = dialogue = mixed = True
+
+    def __init__(self, name="gemini"):
+        super().__init__(name, {"f": "Kore", "m": "Orus"}, None, label=name, family="google",
+                         lang_voices={"tr": {"f": "Kore", "m": "Orus"}, "en": {"f": "Kore", "m": "Orus"}})
+        self.calls = []
+
+    def ready(self, keys, profile):
+        return None
+
+    def make(self, text, role, keys, lang="el", voice_name=None, style=None):
+        self.calls.append(("one", (voice_name,), (text,), style))
+        return tone(1.0)
+
+    def make_exchange(self, turns, keys):
+        self.calls.append(("two", tuple(t[1] for t in turns), tuple(t[2] for t in turns), turns[0][3]))
+        return tone(0.8 * len(turns))
+
+
+class Reader(Actor):
+    """A service like Chirp 3 HD: named voices, but one line at a time and no Greek inside Turkish."""
+
+    dialogue = mixed = False
+
+    def __init__(self):
+        super().__init__("google")
+
+
+def test_the_show_keeps_its_voices_and_no_two_people_share_one():
+    script_ = podcast.parse(cast_script())
+    members, _ = casting.speakers(script_)
+    voices = casting.assign(members, "google")
+    show = casting.table()["families"]["google"]["show"]
+    assert voices["ada"] == show["ada"] and voices["mert"] == show["mert"] and voices["katerina"] == show["katerina"]
+    assert len(set(voices.values())) == len(voices)
+    pool = casting.table()["families"]["google"]["voices"]
+    assert pool[voices["ayse"]][0] == "f" and pool[voices["nikos"]][0] == "m"
+    # The same character gets the same voice in another episode with other people.
+    other = podcast.parse(script(cast=[SCENE[3], {**SCENE[4], "id": "x", "name": "Γιάννης"}],
+                                 segments=[{"part": "A"}, {"lang": "el", "say": "Γεια!", "who": "ayse"},
+                                           {"lang": "el", "say": "Γεια!", "who": "x"}]))
+    assert casting.assign(casting.speakers(other)[0], "google")["ayse"] == voices["ayse"]
+    # A script may choose a voice itself; a provider with no pool gets none.
+    chosen = podcast.parse(script(cast=[{**SCENE[3], "voice": {"google": "Leda"}}],
+                                  segments=[{"part": "A"}, {"lang": "el", "say": "Γεια!", "who": "ayse"},
+                                            {"lang": "el", "say": "Καλημέρα!", "who": "ayse"}]))
+    assert casting.assign(casting.speakers(chosen)[0], "google")["ayse"] == "Leda"
+    assert casting.assign(members, casting.family_of("azure")) == {}
+
+
+def test_more_people_than_voices_of_a_gender_share_only_then():
+    many = [{"id": f"w{i}", "name": f"Γυναίκα {i}", "role": "character", "lang": ["el"], "gender": "f"} for i in range(16)]
+    segs = [{"part": "A"}] + [{"lang": "el", "say": "Γεια!", "who": m["id"]} for m in many]
+    voices = casting.assign(casting.speakers(podcast.parse(script(cast=many, segments=segs)))[0], "google")
+    free = sum(1 for g, _ in casting.table()["families"]["google"]["voices"].values() if g == "f") - 2  # Ada, Katerina
+    assert len(set(voices.values())) == free and len(voices) == 16
+
+
+def test_older_scripts_get_the_host_the_guest_and_their_characters():
+    members, who_of = casting.speakers(podcast.parse(script()))
+    assert who_of[1] == "ada"                      # a Turkish line with no speaker: the host
+    assert members[who_of[3]].name == "Κατερίνα" and members[who_of[3]].role == "character"
+    assert members[who_of[6]].gender == "m"        # Γιώργος
+
+
+def test_lines_between_two_people_are_one_exchange_and_slow_or_echoed_lines_stand_alone():
+    s = podcast.parse(cast_script())
+    _, who_of = casting.speakers(s)
+    units = [u for u in podcast.plan(s, who_of) if isinstance(u, podcast.Unit)]
+    # A third voice (Katerina) starts a new request; the slow repeat before an echo stands alone.
+    assert [sorted(u.ids()) for u in units] == [["ayse", "nikos"], ["ada", "mert"], ["katerina"], ["katerina"], ["mert"]]
+    assert [len(u.lines) for u in units] == [3, 3, 1, 1, 1]
+    assert units[3].solo and not units[0].solo and not units[2].solo
+
+
+def test_greek_inside_turkish_is_a_note_for_a_speaker_who_speaks_greek_else_a_problem(learner):
+    write(learner, cast_script())
+    c = podcast.check("open.first-words.tr")
+    assert c["problems"] == [] and any("Greek inside a tr line" in n for n in c["notes"])
+    raw = cast_script()
+    raw["segments"][11]["who"] = "ada"  # Ada speaks Turkish only in this cast
+    write(learner, raw)
+    assert any("Greek letters inside a tr line" in p for p in podcast.check("open.first-words.tr")["problems"])
+
+
+@pytest.mark.skipif(not HAS_FFMPEG, reason="ffmpeg joins the clips")
+def test_a_cast_episode_is_acted_in_exchanges_with_its_voices_and_the_jingle(learner, monkeypatch):
+    actor = Actor()
+    monkeypatch.setattr(podcast, "_chain", lambda profile, keys: [actor])
+    write(learner, cast_script())
+    assert podcast.check("open.first-words.tr")["cost"]["by_provider"]["gemini"]["tokens"] > 0
+    meta = podcast.render("open.first-words.tr")
+    show = casting.table()["families"]["google"]["show"]
+    kinds = [c[0] for c in actor.calls]
+    assert kinds == ["two", "two", "one", "one"]  # the slow repeat reuses Katerina's clip
+    assert actor.calls[1][1] == (show["mert"], show["ada"], show["mert"])
+    assert "Mert" in actor.calls[1][3]  # each line carries its speaker's style
+    assert actor.calls[3][2] == ("Evet dediğimde, yani Ναι dediğimde, herkes güldü.",)
+    assert meta["cast"]["ada"]["voice"] == show["ada"] and meta["sounds"] is True
+    assert [p["title"] for p in meta["parts"]] == ["Sahne", "Konuşma"] and meta["parts"][0]["t"] > 2  # after the jingle
+    assert len(meta["lines"]) == 9 and [x["t"] for x in meta["lines"]] == sorted(x["t"] for x in meta["lines"])
+    speech = 0.8 * (3 + 3 + 2) + 1.25 + 1.0
+    assert meta["seconds"] > speech + 5  # the jingle, the sting, the close, the gaps
+    # A second render spends nothing; prune keeps the clips an episode lists.
+    again = podcast.render("open.first-words.tr")
+    assert again["chars"] == {} and len(actor.calls) == 4
+    assert podcast.prune()["clips"] == 0 and all(podcast.cast_clip(k).is_file() for k in again["clips"])
+
+
+@pytest.mark.skipif(not HAS_FFMPEG, reason="ffmpeg joins the clips")
+def test_a_service_without_dialogue_reads_line_by_line_and_cannot_say_mixed_lines(learner, monkeypatch):
+    reader = Reader()
+    monkeypatch.setattr(podcast, "_chain", lambda profile, keys: [reader])
+    raw = cast_script()
+    raw["segments"] = raw["segments"][:11]
+    write(learner, raw)
+    meta = podcast.render("open.first-words.tr")
+    assert {c[0] for c in reader.calls} == {"one"} and len(reader.calls) == 7  # the slow repeat reuses its clip
+    assert meta["cast"]["nikos"]["voice"] != meta["cast"]["mert"]["voice"]
+    write(learner, cast_script())
+    with pytest.raises(podcast.PodcastError, match="mixed lines"):
+        podcast.render("open.first-words.tr")
+
+
+def test_the_podcast_has_its_own_list_and_gemini_never_makes_the_apps_clips(learner):
+    assert "gemini" in voice.podcast_providers() and "gemini" not in voice.providers()
+    chain = podcast._chain({"voice": {"providers": ["azure"]}, "podcast": {"providers": ["gemini", "google"]}}, {})
+    assert [p.name for p in chain] == ["gemini", "google"]
+    assert [p.name for p in podcast._chain({"voice": {"providers": ["azure"]}}, {})] == ["azure"]
+
+
+def test_gemini_asks_for_each_speaker_by_name_and_keeps_the_style_out_of_the_spoken_text(monkeypatch):
+    sent = []
+
+    def fake_post(url, body, headers, timeout=60, tries=2):
+        sent.append(json.loads(body))
+        pcm = base64.b64encode(b"\x00\x01" * 2400).decode()
+        return json.dumps({"candidates": [{"content": {"parts": [{"inlineData": {
+            "mimeType": "audio/L16;codec=pcm;rate=24000", "data": pcm}}]}}],
+            "usageMetadata": {"candidatesTokenCount": 7}}).encode()
+
+    monkeypatch.setattr(voice, "_post", fake_post)
+    g = voice.podcast_providers()["gemini"]
+    keys = {"GEMINI_API_KEY": "k"}
+    wav = g.make_exchange([("ada", "Sulafat", "Merhaba!", "warm"), ("mert", "Umbriel", "Selam.", "easy")], keys)
+    assert wav[:4] == b"RIFF" and g.tokens == 7
+    parts = sent[0]["contents"][0]["parts"]
+    assert [p["speechMetadata"]["speaker"] for p in parts] == ["ada", "mert"] and parts[0]["text"] == "Merhaba!"
+    voices = sent[0]["generationConfig"]["speechConfig"]["multiSpeakerVoiceConfig"]["speakerVoiceConfigs"]
+    assert {v["speaker"]: v["voiceConfig"]["prebuiltVoiceConfig"]["voiceName"] for v in voices} == {
+        "ada": "Sulafat", "mert": "Umbriel"}
+    g.make("Στον Πειραιά.", "f", keys, lang="el", voice_name="Gacrux", style="patient")
+    assert sent[1]["contents"][0]["parts"][0] == {"text": "Στον Πειραιά.", "speechMetadata": {"style": "patient"}}
+    with pytest.raises(ValueError):
+        g.make_exchange([("a", "A", "1", None), ("b", "B", "2", None), ("c", "C", "3", None)], keys)

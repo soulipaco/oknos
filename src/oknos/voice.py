@@ -12,6 +12,10 @@ Providers (each makes mp3 bytes from a text and a role, female or male):
   google  Google Cloud Text-to-Speech (Chirp 3 HD), with the learner's key.
   openai  OpenAI gpt-4o-mini-tts, with the learner's key.
 
+For the podcast lessons only (podcast_providers(), docs/PODCASTS.md):
+  gemini  Google Gemini TTS, with the learner's own Gemini API key: two speakers acted together in
+          one request, a described style per speaker, Greek inside a Turkish sentence.
+
 Keys come from learner/secrets.env or the environment and are only ever sent to their own
 provider. Only content text is sent, never learner data.
 
@@ -46,7 +50,7 @@ ROLES = ("f", "m")  # female, male; the narrator is female
 # lessons (docs/PODCASTS.md). Each provider has a voice pair per language.
 LANGS = ("el", "tr", "en")
 LOCALES = {"el": "el-GR", "tr": "tr-TR", "en": "en-US"}
-SECRET_NAMES = ("GOOGLE_TTS_API_KEY", "AZURE_SPEECH_KEY", "AZURE_SPEECH_REGION", "OPENAI_API_KEY")
+SECRET_NAMES = ("GOOGLE_TTS_API_KEY", "AZURE_SPEECH_KEY", "AZURE_SPEECH_REGION", "OPENAI_API_KEY", "GEMINI_API_KEY")
 USER_AGENT = "Oknos (local Greek learning app)"
 
 # The test sentences of the "Choose your voice" screen (from the open book).
@@ -187,6 +191,12 @@ class Provider:
     lang_voices: dict[str, dict[str, str]] = field(default_factory=dict)  # "tr"/"en" -> role -> voice
     _last: float = field(default=float("-inf"), repr=False)  # never used yet: not busy, whatever the clock says
 
+    # What a podcast can ask of it (docs/PODCASTS.md, "The voices"):
+    named = False         # speaks with a voice chosen by name from the casting pool (src/oknos/casting.json)
+    dialogue = False      # acts two speakers together in one request (make_exchange)
+    mixed = False         # says Greek words inside a Turkish or English sentence correctly
+    podcast_only = False  # never makes the app's clips (its audio is not mp3; the podcast joins it)
+
     def ready(self, keys: dict, profile: dict) -> str | None:
         """None if it can be used, else why not (shown to the learner)."""
         raise NotImplementedError
@@ -280,11 +290,14 @@ class Edge(Provider):
 
 
 class Google(Provider):
+    named = True  # Chirp 3 HD has the 30 voices of the casting pool, by name, in every language
+
     def ready(self, keys, profile):
         return None if keys.get("GOOGLE_TTS_API_KEY") else "needs GOOGLE_TTS_API_KEY"
 
-    def make(self, text, role, keys, lang="el"):
-        body = json.dumps({"input": {"text": text}, "voice": {"languageCode": LOCALES[lang], "name": self.voice(role, lang)},
+    def make(self, text, role, keys, lang="el", voice_name=None, style=None):
+        name = f"{LOCALES[lang]}-Chirp3-HD-{voice_name}" if voice_name else self.voice(role, lang)
+        body = json.dumps({"input": {"text": text}, "voice": {"languageCode": LOCALES[lang], "name": name},
                            "audioConfig": {"audioEncoding": "MP3"}}).encode("utf-8")
         r = json.loads(_post("https://texttospeech.googleapis.com/v1/text:synthesize", body,
                              {"Content-Type": "application/json", "X-Goog-Api-Key": keys["GOOGLE_TTS_API_KEY"]}))
@@ -308,6 +321,70 @@ class OpenAI(Provider):
                      {"Content-Type": "application/json", "Authorization": f"Bearer {keys['OPENAI_API_KEY']}"})
 
 
+class Gemini(Provider):
+    """Gemini TTS through the Gemini API (the learner's own key, paid tier: the text is not used for
+    training). Podcasts only. It answers with raw 16-bit PCM, which is returned as a WAV file."""
+
+    MODEL = "gemini-3.8-flash-tts"
+    named = dialogue = mixed = podcast_only = True
+    tokens = 0  # audio tokens of the last request (about 25 a second of speech): what is billed
+
+    def ready(self, keys, profile):
+        return None if keys.get("GEMINI_API_KEY") else "needs GEMINI_API_KEY"
+
+    def _speak(self, parts: list[dict], speech: dict, keys: dict) -> bytes:
+        body = json.dumps({"contents": [{"role": "user", "parts": parts}],
+                           "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": speech}}).encode("utf-8")
+        r = json.loads(_post(f"https://generativelanguage.googleapis.com/v1beta/models/{self.MODEL}:generateContent", body,
+                             {"Content-Type": "application/json", "X-Goog-Api-Key": keys["GEMINI_API_KEY"]}, timeout=300))
+        try:
+            data = r["candidates"][0]["content"]["parts"][0]["inlineData"]
+        except (KeyError, IndexError):
+            raise Refused(f"no audio in the answer ({r.get('candidates', [{}])[0].get('finishReason', '?')})") from None
+        self.tokens = (r.get("usageMetadata") or {}).get("candidatesTokenCount", 0)
+        audio = base64.b64decode(data["data"])
+        if audio[:4] == b"RIFF":
+            return audio
+        rate = 24000
+        if "rate=" in data.get("mimeType", ""):
+            rate = int(data["mimeType"].split("rate=")[1].split(";")[0])
+        return pcm_to_wav(audio, rate)
+
+    def make(self, text, role, keys, lang="el", voice_name=None, style=None):
+        # The style goes in the metadata: put in the text, a single speaker reads it aloud.
+        part = {"text": text}
+        if style:
+            part["speechMetadata"] = {"style": style}
+        name = voice_name or self.voice(role, lang)
+        return self._speak([part], {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": name}}}, keys)
+
+    def make_exchange(self, turns: list[tuple[str, str, str, str | None]], keys: dict) -> bytes:
+        """Two speakers acted together: turns are (speaker, voice name, text, style)."""
+        voices: dict[str, str] = {}
+        for who, name, _, _ in turns:
+            voices.setdefault(who, name)
+        if len(voices) > 2:
+            raise ValueError("Gemini acts at most two speakers in one request")
+        parts = [{"text": text, "speechMetadata": {"speaker": who, **({"style": style} if style else {})}}
+                 for who, _, text, style in turns]
+        speech = {"multiSpeakerVoiceConfig": {"speakerVoiceConfigs": [
+            {"speaker": who, "voiceConfig": {"prebuiltVoiceConfig": {"voiceName": name}}} for who, name in voices.items()]}}
+        return self._speak(parts, speech, keys)
+
+
+def pcm_to_wav(pcm: bytes, rate: int = 24000) -> bytes:
+    import io
+    import wave
+
+    buf = io.BytesIO()
+    with wave.open(buf, "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(rate)
+        w.writeframes(pcm)
+    return buf.getvalue()
+
+
 def providers() -> dict[str, Provider]:
     return {
         "azure": Azure("azure", {"f": "el-GR-AthinaNeural", "m": "el-GR-NestorasNeural"}, 500_000, min_interval=3.1,
@@ -323,6 +400,13 @@ def providers() -> dict[str, Provider]:
         "openai": OpenAI("openai", {"f": "coral", "m": "ash"}, None, label="OpenAI gpt-4o-mini-tts", family="openai",
                          lang_voices={"tr": {"f": "coral", "m": "ash"}, "en": {"f": "coral", "m": "ash"}}),
     }
+
+
+def podcast_providers() -> dict[str, Provider]:
+    """The app's providers plus those that make podcasts only (Gemini)."""
+    return {**providers(),
+            "gemini": Gemini("gemini", {"f": "Kore", "m": "Orus"}, None, label="Google Gemini TTS (podcasts only)",
+                             family="google", lang_voices={"tr": {"f": "Kore", "m": "Orus"}, "en": {"f": "Kore", "m": "Orus"}})}
 
 
 DEFAULT_ORDER = ["google"]  # a new learner: Google with their own key; else the browser voice
