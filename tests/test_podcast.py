@@ -351,7 +351,7 @@ def test_a_connection_cut_halfway_is_tried_again_then_refused(monkeypatch):
 # ---------- the cast (format v2) ----------
 
 CAST = [
-    {"id": "selin", "name": "Selin", "role": "host", "lang": ["tr"], "gender": "f", "age": "35", "manner": "warm"},
+    {"id": "ada", "name": "Ada", "role": "host", "lang": ["tr"], "gender": "f", "age": "35", "manner": "warm"},
     {"id": "mert", "name": "Mert", "role": "cohost", "lang": ["tr", "el"], "gender": "m"},
     {"id": "katerina", "name": "Κατερίνα", "role": "guest", "lang": ["el"], "gender": "f"},
 ]
@@ -360,15 +360,15 @@ CAST = [
 def test_a_cast_gives_each_speaker_a_voice_by_gender_and_checks_their_languages(learner):
     raw = script(cast=CAST, segments=[
         {"part": "Giriş"},
-        {"lang": "tr", "say": "Hoş geldin!", "who": "selin"},
-        {"lang": "tr", "say": "Merhaba Selin.", "who": "mert"},
+        {"lang": "tr", "say": "Hoş geldin!", "who": "ada"},
+        {"lang": "tr", "say": "Merhaba Ada.", "who": "mert"},
         {"lang": "el", "say": "Στον Πειραιά.", "who": "katerina"},
         {"lang": "el", "say": "Στον Πειραιά.", "who": "mert"},
     ])
     write(learner, raw)
     assert podcast.check("open.first-words.tr")["problems"] == []
     got = {(t, r, lang) for t, r, lang in podcast.lines(podcast.load("open.first-words.tr"))}
-    assert ("Merhaba Selin.", "m", "tr") in got and ("Hoş geldin!", "f", "tr") in got
+    assert ("Merhaba Ada.", "m", "tr") in got and ("Hoş geldin!", "f", "tr") in got
     assert ("Στον Πειραιά.", "f", "el") in got and ("Στον Πειραιά.", "m", "el") in got
 
     raw["segments"] += [{"lang": "tr", "say": "Merhaba.", "who": "katerina"}, {"lang": "el", "say": "Γεια!", "who": "nikos"}]
@@ -378,6 +378,6 @@ def test_a_cast_gives_each_speaker_a_voice_by_gender_and_checks_their_languages(
 
 
 def test_a_cast_member_needs_a_known_role_gender_and_id():
-    for bad in ({"gender": "x"}, {"role": "singer"}, {"id": "Selin K"}, {"lang": []}):
+    for bad in ({"gender": "x"}, {"role": "singer"}, {"id": "Ada K"}, {"lang": []}):
         with pytest.raises(podcast.PodcastError):
             podcast.parse(script(cast=[{**CAST[0], **bad}]))

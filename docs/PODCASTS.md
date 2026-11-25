@@ -60,7 +60,7 @@ It prints the estimated length and the **characters that still need a clip, per 
 
 After listening to the first episodes, the maintainer found them a mechanical lesson rather than a podcast. The voices were flat and few, and the delivery was one narrator. The grammar nuances are what they like; the delivery is what has to change. Agreed direction:
 
-- **Two Turkish hosts.** Selin (f, mid-30s, the teacher, warm, explains with Turkish bridges) and Mert (m, early 30s, the learner: he asks the listener's questions, guesses after a "sen de söyle" pause, makes the typical mistake). There is little banter, and only about the content.
+- **Two Turkish hosts.** Ada (f, mid-30s, the teacher, warm, explains with Turkish bridges) and Mert (m, early 30s, the learner: he asks the listener's questions, guesses after a "sen de söyle" pause, makes the typical mistake). There is little banter, and only about the content.
 - **A native Greek guest**, Katerina (f, 40s), who says the Greek. The chapter's characters act out the scenes, each with their own voice.
 - The hosts and Katerina sound the same in every episode.
 - **The shape:**
@@ -78,7 +78,7 @@ The voices and the engine (a larger pool, Google Chirp 3 HD's 30 voices, Gemini'
 
 ```json
 "cast": [
-  {"id": "selin", "name": "Selin", "role": "host", "lang": ["tr"], "gender": "f", "age": "35", "manner": "warm, curious"},
+  {"id": "ada", "name": "Ada", "role": "host", "lang": ["tr"], "gender": "f", "age": "35", "manner": "warm, curious"},
   {"id": "mert", "name": "Mert", "role": "cohost", "lang": ["tr", "el"], "gender": "m"},
   {"id": "katerina", "name": "Κατερίνα", "role": "guest", "lang": ["el"], "gender": "f"}
 ]
