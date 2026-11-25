@@ -214,6 +214,18 @@ class Provider:
         return time.monotonic() - self._last < self.min_interval
 
 
+def quota_day() -> str:
+    """The day Google counts a daily quota in: it resets at midnight Pacific time (UTC-8)."""
+    from datetime import datetime, timedelta, timezone
+
+    return datetime.now(timezone(timedelta(hours=-8))).date().isoformat()
+
+
+def requests_today(provider: str) -> int:
+    """Requests sent to a provider today (counted for Gemini, whose paid Tier 1 allows 100 a day)."""
+    return usage().get(f"{provider}_requests_{quota_day()}", 0)
+
+
 def _post(url: str, body: bytes, headers: dict, timeout: float = 60, tries: int = 2) -> bytes:
     """POST and read the answer. A connection cut halfway through the answer (IncompleteRead and the
     like: it happened once in an hour of podcast clips) is tried again once before it counts as a
@@ -223,7 +235,13 @@ def _post(url: str, body: bytes, headers: dict, timeout: float = 60, tries: int 
         try:
             return urllib.request.urlopen(req, timeout=timeout).read()
         except urllib.error.HTTPError as e:
-            raise Refused(f"{e.code} {e.reason}") from None
+            detail = ""
+            if e.code == 429:  # which limit: a day's or a minute's (Gemini says so in the body)
+                try:
+                    detail = " " + e.read().decode("utf-8", "replace")[:400]
+                except Exception:
+                    pass
+            raise Refused(f"{e.code} {e.reason}{detail}") from None
         except (urllib.error.URLError, TimeoutError, OSError, http.client.HTTPException) as e:
             if attempt + 1 < tries and not isinstance(e, urllib.error.URLError):
                 time.sleep(2)
@@ -346,9 +364,13 @@ class Gemini(Provider):
                 answer = _post(url, body, headers, timeout=300)
                 break
             except Refused as e:
+                if "PerDay" in str(e) or "per day" in str(e):
+                    raise Refused("Gemini's daily limit is reached (Tier 1: 100 requests a day per model); it resets "
+                                  "at midnight Pacific time") from None
                 if wait is None or not str(e)[:3] in ("429", "500", "502", "503", "504"):
                     raise
                 time.sleep(wait)
+        _add_usage(f"gemini_requests_{quota_day()}", 1)
         r = json.loads(answer)
         try:
             data = r["candidates"][0]["content"]["parts"][0]["inlineData"]

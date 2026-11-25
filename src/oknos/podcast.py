@@ -456,8 +456,13 @@ def render(pid: str, *, wait: bool = False, progress: Callable[[str, int, int], 
 # short jingle opens and closes the episode, with a sting between parts. Clips are kept in
 # learner/voice/podcast/ and listed in episode.json, so a second render spends nothing.
 
-MAX_TURNS = 10              # lines in one exchange (one request)
-MAX_EXCHANGE_CHARS = 1000   # characters in one exchange
+# Gemini's Tier 1 allows 100 requests a day per model (2026-11-25: a 14-minute pilot made line by line
+# needed 103), so a service that acts dialogue gets long requests: up to 24 lines or 2,400 characters
+# (about three minutes of speech), an echoed or slowed line included. A service that reads line by
+# line gets one request a line anyway.
+MAX_TURNS = 24              # lines in one request
+MAX_EXCHANGE_CHARS = 2400   # characters in one request
+GEMINI_DAILY_REQUESTS = 100
 AUDIO_TOKENS_PER_SECOND = 25  # Gemini bills audio by tokens, about 25 a second of speech
 
 
@@ -466,7 +471,7 @@ class Unit:
     """Lines spoken in one go: an exchange between two people, one person's run, or one line."""
 
     lines: list[tuple[Say, str]]  # (segment, member id)
-    solo: bool = False            # slowed, or followed by an echo gap: made on its own
+    solo: bool = False            # made on its own (a service that reads line by line: slowed, or echoed)
 
     def ids(self) -> set[str]:
         return {mid for _, mid in self.lines}
@@ -475,8 +480,10 @@ class Unit:
         return sum(len(s.say) for s, _ in self.lines)
 
 
-def plan(script: Script, who_of: dict[int, str]) -> list:
-    """The episode as parts, pauses, echo gaps and units of speech."""
+def plan(script: Script, who_of: dict[int, str], acts: bool = True) -> list:
+    """The episode as parts, pauses, echo gaps and units of speech. For a service that acts dialogue
+    (`acts`), a slowed line is asked to be slow in its style and an echoed line ends its unit (the gap
+    is measured on its share); otherwise each of them is made on its own, slowed with atempo."""
     items: list = []
     cur: Unit | None = None
     segs = script.segments
@@ -486,7 +493,7 @@ def plan(script: Script, who_of: dict[int, str]) -> list:
             cur = None
             continue
         mid = who_of[i]
-        solo = seg.speed < 0.999 or (i + 1 < len(segs) and isinstance(segs[i + 1], Echo))
+        solo = not acts and (seg.speed < 0.999 or (i + 1 < len(segs) and isinstance(segs[i + 1], Echo)))
         if (cur is not None and not solo and len(cur.ids() | {mid}) <= 2 and len(cur.lines) < MAX_TURNS
                 and cur.chars() + len(seg.say) <= MAX_EXCHANGE_CHARS):
             cur.lines.append((seg, mid))
@@ -511,11 +518,29 @@ def _can(p: voice.Provider, unit: Unit, keys: dict, profile: dict) -> bool:
 def _requests(unit: Unit, p: voice.Provider, voices: dict[str, str], members: dict, lang: str) -> list[dict]:
     """What the service is asked for this unit: one request (an exchange, or one person's run) when it
     acts dialogue, else one per line."""
+    def styled(seg, mid):
+        if not p.dialogue:
+            return None
+        text = casting.style(members[mid], lang)
+        if seg.speed < 0.999:
+            text += (f" Say this line slowly and clearly, at about {round(seg.speed * 100)}% of normal pace, "
+                     f"so a learner can repeat it.")
+        return text
+
     lines_ = [{"who": mid, "voice": voices.get(mid), "role": members[mid].gender, "text": seg.say.strip(),
-               "lang": seg.lang, "style": casting.style(members[mid], lang) if p.dialogue else None}
+               "lang": seg.lang, "speed": seg.speed, "style": styled(seg, mid)}
               for seg, mid in unit.lines]
+    if p.dialogue and len(lines_) > 1 and len(unit.ids()) == 2:
+        return [{"mode": "exchange", "lines": lines_}]  # each line carries its own style, its pace included
     if p.dialogue and len(lines_) > 1:
-        return [{"mode": "run" if len(unit.ids()) == 1 else "exchange", "lines": lines_}]
+        # One person's run is one text with one style: lines at another pace go in a request of their own.
+        groups: list[list[dict]] = []
+        for x in lines_:
+            if groups and groups[-1][-1]["speed"] == x["speed"]:
+                groups[-1].append(x)
+            else:
+                groups.append([x])
+        return [{"mode": "run" if len(g) > 1 else "line", "lines": g} for g in groups]
     return [{"mode": "line", "lines": [x]} for x in lines_]
 
 
@@ -542,8 +567,8 @@ def _ask(req: dict, p: voice.Provider, keys: dict, text_of=lambda x: x["text"]) 
 
 def _cast_cost(script: Script, chain, profile, keys, used) -> dict:
     members, who_of = casting.speakers(script)
-    units = [u for u in plan(script, who_of) if isinstance(u, Unit)]
-    chain = _episode_chain(units, chain, keys, profile)
+    _, units, chain = _planned(script, who_of, chain, keys, profile)
+    requests: dict[str, int] = {}
     by_lang: dict[str, dict] = {}
     by_provider: dict[str, int] = {}
     nobody = to_make = 0
@@ -557,6 +582,7 @@ def _cast_cost(script: Script, chain, profile, keys, used) -> dict:
             if cast_clip(_request_key(req, p)).is_file():
                 continue
             to_make += 1
+            requests[p.name] = requests.get(p.name, 0) + 1
             for x in req["lines"]:
                 row = by_lang.setdefault(x["lang"], {"clips": 0, "chars": 0})
                 row["clips"] += 1
@@ -566,8 +592,11 @@ def _cast_cost(script: Script, chain, profile, keys, used) -> dict:
     providers = {}
     for name, chars in by_provider.items():
         providers[name] = {"chars": chars, "used_this_month": used.get(name, 0), "free": known[name].free_chars}
+        providers[name]["requests"] = requests.get(name, 0)
         if name == "gemini":
             providers[name]["tokens"] = int(chars / CHARS_PER_SECOND["tr"] * AUDIO_TOKENS_PER_SECOND)
+            providers[name]["daily_requests"] = GEMINI_DAILY_REQUESTS
+            providers[name]["requests_today"] = voice.requests_today("gemini")
     first = next((p for p in chain if not p.ready(keys, profile) and p.name != "edge"), None)
     voices = casting.assign(members, casting.family_of(first.name)) if first else {}
     return {"lines": sum(len(u.lines) for u in units), "to_make": to_make, "chars": sum(by_provider.values()),
@@ -608,6 +637,15 @@ def _sound(exe: str, kind: str, tmpdir: Path) -> bytes:
         return w.readframes(w.getnframes())
 
 
+def _planned(script: Script, who_of: dict[int, str], chain, keys, profile) -> tuple[list, list[Unit], list]:
+    """Pick the service (on the finest plan: what it must be able to say does not depend on the
+    grouping), then plan for it."""
+    fine = [u for u in plan(script, who_of, acts=False) if isinstance(u, Unit)]
+    chain = _episode_chain(fine, chain, keys, profile)
+    items = plan(script, who_of, acts=bool(chain and chain[0].dialogue))
+    return items, [u for u in items if isinstance(u, Unit)], chain
+
+
 def _episode_chain(units: list[Unit], chain, keys, profile) -> list:
     """One service voices the whole episode: the first that can make every unit. A refusal halfway
     then stops the render (clips made so far are kept, so a second render goes on from there)
@@ -620,9 +658,7 @@ def _episode_chain(units: list[Unit], chain, keys, profile) -> list:
 
 def _render_cast(pid: str, script: Script, exe: str, chain, profile, keys, progress) -> dict:
     members, who_of = casting.speakers(script)
-    items = plan(script, who_of)
-    units = [u for u in items if isinstance(u, Unit)]
-    chain = _episode_chain(units, chain, keys, profile)
+    items, units, chain = _planned(script, who_of, chain, keys, profile)
     out_dir = episode_dir(pid)
     made: dict[str, int] = {}
     spent: dict[str, int] = {}
@@ -669,12 +705,12 @@ def _render_cast(pid: str, script: Script, exe: str, chain, profile, keys, progr
                     at = start
                     for x in req["lines"]:  # lines within one request: placed by their share of the characters
                         line = {"t": round(at, 2), "lang": x["lang"], "say": x["text"], "who": x["who"]}
-                        if item.solo and item.lines[0][0].speed < 0.999:
-                            line["speed"] = item.lines[0][0].speed
+                        if x["speed"] < 0.999:
+                            line["speed"] = x["speed"]
                         timeline.append(line)
-                        at += secs * len(x["text"]) / total
+                        last = secs * len(x["text"]) / total  # an echo gap after it is measured on this line
+                        at += last
                         voices_used[x["who"]] = x["voice"] or x["role"]
-                    last = secs
                     prev = (req["lines"][-1]["who"], req["lines"][-1]["lang"])
                     used_keys.append(k)
                     if p is not None:

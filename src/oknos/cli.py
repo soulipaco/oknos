@@ -674,7 +674,13 @@ def cmd_podcast(args) -> int:
             for name, v in cost["by_provider"].items():
                 free = f" of {v['free']:,} free" if v["free"] else ""
                 tokens = f", about {v['tokens']:,} audio tokens" if v.get("tokens") else ""
+                tokens += f", {v['requests']} requests" if v.get("requests") else ""
                 print(f"  {name} would make {v['chars']:,} characters{tokens} (this month so far: {v['used_this_month']:,}{free})")
+            for name, v in cost["by_provider"].items():
+                if v.get("daily_requests"):
+                    left = v["daily_requests"] - v["requests_today"]
+                    warn = " Not enough left for today: render after midnight Pacific time." if v["requests"] > left else ""
+                    print(f"  {name} allows {v['daily_requests']} requests a day; about {left} are left today.{warn}")
             if cost.get("cast"):
                 print("Cast: " + ", ".join(f"{c['name']} = {c['voice']}" for c in cost["cast"].values()))
             if cost["no_service"]:

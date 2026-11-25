@@ -480,14 +480,17 @@ def test_older_scripts_get_the_host_the_guest_and_their_characters():
     assert members[who_of[6]].gender == "m"        # Γιώργος
 
 
-def test_lines_between_two_people_are_one_exchange_and_slow_or_echoed_lines_stand_alone():
+def test_lines_between_two_people_are_one_request_and_a_third_voice_or_a_gap_starts_another():
     s = podcast.parse(cast_script())
     _, who_of = casting.speakers(s)
     units = [u for u in podcast.plan(s, who_of) if isinstance(u, podcast.Unit)]
-    # A third voice (Katerina) starts a new request; the slow repeat before an echo stands alone.
-    assert [sorted(u.ids()) for u in units] == [["ayse", "nikos"], ["ada", "mert"], ["katerina"], ["katerina"], ["mert"]]
-    assert [len(u.lines) for u in units] == [3, 3, 1, 1, 1]
-    assert units[3].solo and not units[0].solo and not units[2].solo
+    # A service that acts dialogue: Katerina (a third voice) starts a new request; her slowed line
+    # stays in it (asked to be slow), and the echo gap after it ends it.
+    assert [sorted(u.ids()) for u in units] == [["ayse", "nikos"], ["ada", "mert"], ["katerina"], ["mert"]]
+    assert [len(u.lines) for u in units] == [3, 3, 2, 1] and not any(u.solo for u in units)
+    # A service that reads line by line: the slowed, echoed line is made on its own.
+    fine = [u for u in podcast.plan(s, who_of, acts=False) if isinstance(u, podcast.Unit)]
+    assert [len(u.lines) for u in fine] == [3, 3, 1, 1, 1] and fine[3].solo
 
 
 def test_greek_inside_turkish_is_a_note_for_a_speaker_who_speaks_greek_else_a_problem(learner):
@@ -509,10 +512,11 @@ def test_a_cast_episode_is_acted_in_exchanges_with_its_voices_and_the_jingle(lea
     meta = podcast.render("open.first-words.tr")
     show = casting.table()["families"]["google"]["show"]
     kinds = [c[0] for c in actor.calls]
-    assert kinds == ["two", "two", "one", "one"]  # the slow repeat reuses Katerina's clip
+    assert kinds == ["two", "two", "one", "one", "one"]  # Katerina's slow repeat: its own pace, its own request
+    assert "slowly" in actor.calls[3][3] and "slowly" not in actor.calls[2][3]
     assert actor.calls[1][1] == (show["mert"], show["ada"], show["mert"])
     assert "Mert" in actor.calls[1][3]  # each line carries its speaker's style
-    assert actor.calls[3][2] == ("Evet dediğimde, yani Ναι dediğimde, herkes güldü.",)
+    assert actor.calls[4][2] == ("Evet dediğimde, yani Ναι dediğimde, herkes güldü.",)
     assert meta["cast"]["ada"]["voice"] == show["ada"] and meta["sounds"] is True
     assert [p["title"] for p in meta["parts"]] == ["Sahne", "Konuşma"] and meta["parts"][0]["t"] > 2  # after the jingle
     assert len(meta["lines"]) == 9 and [x["t"] for x in meta["lines"]] == sorted(x["t"] for x in meta["lines"])
@@ -520,7 +524,7 @@ def test_a_cast_episode_is_acted_in_exchanges_with_its_voices_and_the_jingle(lea
     assert meta["seconds"] > speech + 5  # the jingle, the sting, the close, the gaps
     # A second render spends nothing; prune keeps the clips an episode lists.
     again = podcast.render("open.first-words.tr")
-    assert again["chars"] == {} and len(actor.calls) == 4
+    assert again["chars"] == {} and len(actor.calls) == 5
     assert podcast.prune()["clips"] == 0 and all(podcast.cast_clip(k).is_file() for k in again["clips"])
 
 
@@ -546,7 +550,7 @@ def test_the_podcast_has_its_own_list_and_gemini_never_makes_the_apps_clips(lear
     assert [p.name for p in podcast._chain({"voice": {"providers": ["azure"]}}, {})] == ["azure"]
 
 
-def test_gemini_asks_for_each_speaker_by_name_and_keeps_the_style_out_of_the_spoken_text(monkeypatch):
+def test_gemini_asks_for_each_speaker_by_name_and_keeps_the_style_out_of_the_spoken_text(learner, monkeypatch):
     sent = []
 
     def fake_post(url, body, headers, timeout=60, tries=2):
@@ -588,7 +592,7 @@ def test_one_service_voices_the_whole_episode_and_a_refusal_stops_it_without_mix
     assert reader.calls == [] and len(tired.calls) == 1  # the first exchange is kept for the next try
 
 
-def test_gemini_waits_and_asks_again_after_a_429(monkeypatch):
+def test_gemini_waits_and_asks_again_after_a_429(learner, monkeypatch):
     answers = [voice.Refused("429 Too Many Requests"), voice.Refused("503 Unavailable")]
     pcm = base64.b64encode(b"\x00\x01" * 2400).decode()
 
@@ -606,3 +610,15 @@ def test_gemini_waits_and_asks_again_after_a_429(monkeypatch):
     monkeypatch.setattr(voice, "_post", lambda *a, **k: (_ for _ in ()).throw(voice.Refused("400 Bad Request")))
     with pytest.raises(voice.Refused, match="400"):
         voice.podcast_providers()["gemini"].make("Γεια!", "f", {"GEMINI_API_KEY": "k"})
+
+
+def test_gemini_stops_at_once_when_the_days_requests_are_used_up(learner, monkeypatch):
+    def fake_post(url, body, headers, timeout=60, tries=2):
+        raise voice.Refused("429 Too Many Requests {quotaId: GenerateRequestsPerDayPerProjectPerModel}")
+
+    slept = []
+    monkeypatch.setattr(voice, "_post", fake_post)
+    monkeypatch.setattr(voice.time, "sleep", slept.append)
+    with pytest.raises(voice.Refused, match="daily limit"):
+        voice.podcast_providers()["gemini"].make("Γεια!", "f", {"GEMINI_API_KEY": "k"})
+    assert slept == []
