@@ -3026,6 +3026,22 @@ const VOICE_INFO = {  // what each one costs, from the listening test of 2026-11
     setup: { en: ["console.cloud.google.com: start the free trial and create a project.", "Enable the Cloud Text-to-Speech API.", "Credentials → Create credentials → API key, restricted to Cloud Text-to-Speech API.", "Add GOOGLE_TTS_API_KEY=… to learner/secrets.env."],
              tr: ["console.cloud.google.com: ücretsiz denemeyi başlat ve bir proje oluştur.", "Cloud Text-to-Speech API'yi etkinleştir.", "Credentials → Create credentials → API key; yalnızca Cloud Text-to-Speech API ile sınırla.", "learner/secrets.env dosyasına GOOGLE_TTS_API_KEY=… satırını ekle."] },
   },
+  gemini: {
+    pros: { en: "Google's Gemini voices (Kore and Orus), the voice of the clips that come with the app since 2026-11-26. Your own Gemini API key; a few cents for the whole book.",
+            tr: "Google'ın Gemini sesleri (Kore ve Orus); 2026-11-26'dan beri uygulamayla gelen kliplerin sesi. Kendi Gemini API anahtarınla; bütün kitap birkaç sent." },
+    cons: { en: "Needs an AI Studio project with billing and prepaid credit, and ffmpeg on this computer (it makes the clips mp3). The paid tier allows about 100 clips a day, so the book takes some days.",
+            tr: "Faturalandırması ve ön ödemeli kredisi olan bir AI Studio projesi ve bu bilgisayarda ffmpeg gerekir (klipleri mp3 yapar). Ücretli katman günde yaklaşık 100 klip yapar; kitap birkaç gün sürer." },
+    setup: { en: ["aistudio.google.com/apikey → Create API key, in a project with billing.", "Add prepaid credit to the project (a few dollars is plenty).", "Add GEMINI_API_KEY=… to learner/secrets.env."],
+             tr: ["aistudio.google.com/apikey → Create API key; faturalandırması açık bir projede.", "Projeye ön ödemeli kredi ekle (birkaç dolar fazlasıyla yeter).", "learner/secrets.env dosyasına GEMINI_API_KEY=… satırını ekle."] },
+  },
+  elevenlabs: {
+    pros: { en: "ElevenLabs v4 with native Greek voices from its library (Crhysa, Christos): the most natural voice we have heard, and the podcasts' voice. Your own key and plan.",
+            tr: "ElevenLabs v4, kütüphanesinden ana dili Yunanca olan seslerle (Crhysa, Christos): duyduğumuz en doğal ses, podcast'lerin sesi. Kendi anahtarın ve planınla." },
+    cons: { en: "A paid plan (from $6 a month; library voices are not available on the free plan). Its clips are for your own use only: ElevenLabs' terms do not let them be shared openly.",
+            tr: "Ücretli plan gerekir (ayda 6 dolardan başlar; ücretsiz planda kütüphane sesleri yok). Klipleri yalnızca senin kullanımın içindir: ElevenLabs'in koşulları açıkça paylaşılmasına izin vermez." },
+    setup: { en: ["elevenlabs.io: choose a paid plan (Starter or higher).", "Profile → API Keys → Create, with Text to Speech, Voices (read) and User (read).", "Add ELEVENLABS_API_KEY=… to learner/secrets.env."],
+             tr: ["elevenlabs.io: ücretli bir plan seç (Starter ya da üstü).", "Profile → API Keys → Create; Text to Speech, Voices (read) ve User (read) açık.", "learner/secrets.env dosyasına ELEVENLABS_API_KEY=… satırını ekle."] },
+  },
   openai: {
     pros: { en: "Clear Greek (gpt-4o-mini-tts), and the clips are yours. Pay as you go: about a dollar or two for the whole book.",
             tr: "Anlaşılır Yunanca (gpt-4o-mini-tts), klipler senin. Kullandıkça öde: bütün kitap bir iki dolar." },

@@ -20,9 +20,12 @@ After a change to the open content's Greek, the maintainer remakes what is missi
 
 ```
 uv run python scripts/ship_voice.py --check                       # what is missing or stale
-uv run python scripts/ship_voice.py --secrets learner/secrets.env # make the missing clips (Google key)
+uv run python scripts/ship_voice.py --secrets learner/secrets.env # make the missing clips (Gemini key)
+uv run python scripts/ship_voice.py --secrets learner/secrets.env --provider google  # with Chirp 3 HD instead
 uv run python scripts/ship_voice.py --secrets learner/secrets.env --prune  # and delete unused ones
 ```
+
+**Published audio is Google's, a learner's own may be anyone's (2026-11-26).** The maintainer's rule: everything the repo ships (these clips, the films' `voice/`) is made by Gemini TTS, with Chirp 3 HD as the other choice; their own clips, podcasts and the films' `voice-local/` by ElevenLabs v4. Only a service whose terms let its audio be published may make shipped audio (`publishable` in `voice.py`: Google's). ElevenLabs' use policy forbids passing its output on under terms more permissive than its own, which CC BY-SA would do, and forbids training models on it; Azure's free tier gives output rights to the paid tier only; edge-tts is unofficial. `index.json` names who made each clip (`p`; absent means Chirp), the films' `voice/made_with.json` likewise, and `oknos guard` (the tests, CI, the pre-push hook) fails if any of them is not Google's. A clip made by the other Google service is made again, so the set speaks with one voice; Gemini's paid Tier 1 allows 100 requests a day, and a run that meets the limit stops and goes on the next day with the same command.
 
 Chirp 3 HD now and then sends back silence for a short word (92 of the first 2,206 clips, all short words or letter pairs). The script checks every clip, by its loudness with ffmpeg or else by its length, and asks again, then as `word.`, `«word»` or `word!`, which sound the same (24 clips; `said` in `index.json`); `--recheck` finds silent clips among those already made. What stays silent is listed under `browser` in `index.json` and read by the browser's voice (none today; κι came out on a later try). A test fails on a clip too short to hold speech.
 
@@ -38,6 +41,8 @@ From the listening test of 2026-11-22 (ten sentences from the open book, the sam
 | **edge-tts** (Microsoft, unofficial) | Athina, Nestoras | best (the same voices) | Free, no account. The Edge browser's read-aloud service, used from outside the browser: Microsoft can slow it or close it, and the clips are for your own computer only. Only with your yes (`"edge_tts_ok": true` in `learner/profile.json`), and never for the coach's own texts (SPEC §9). |
 | **Google Cloud Text-to-Speech** | Chirp 3 HD Kore, Orus | very good, just behind Microsoft | Your own key; 1 million characters free a month (billing must be on; the free trial covers it). **The default for a new learner**, and the voice of the shipped clips. |
 | **OpenAI** | gpt-4o-mini-tts (coral, ash) | good, a slight accent | Your own key; pay as you go, about one or two dollars for the whole book. |
+| **Gemini TTS** (Google, added 2026-11-26) | Kore, Orus | not in that test; the voice of the shipped clips since 2026-11-26 | Your own Gemini API key (paid tier, prepaid credit); a few cents for the whole book, but about 100 clips a day. ffmpeg makes its audio mp3. Publishable. |
+| **ElevenLabs v4** (added 2026-11-26) | Crhysa, Christos (Greek library voices) | not in that test; preferred by the maintainer for podcasts | Your own key and paid plan (from $6 a month); its monthly credits are a hard cap, about 0.4 a character. **Your own use only**: never shipped. |
 | Your browser's voice | on Windows, Stefanos | robotic | Always there; it reads whatever has no clip. |
 
 Tested and not offered: OpenAI tts-1-hd (unclear Greek), Chatterbox Multilingual and F5-TTS-Greek (local models, no better than the browser's voice here). OpenAI's TTS models (gpt-4o-mini-tts, tts-1) shut down on 2027-01-06.
@@ -61,7 +66,7 @@ Keys go in `learner/secrets.env` (git never tracks `learner/`), one per line. Th
 - **ElevenLabs (podcasts):** elevenlabs.io → a paid plan (Starter or higher; the API cannot use library voices on Free) → Profile → API Keys → Create, with Text to Speech, Voices read and User read → `ELEVENLABS_API_KEY=…`; then `"podcast": {"providers": ["elevenlabs", "gemini", "google"]}` in `learner/profile.json`.
 - **edge-tts:** nothing to set up; your agent asks for your yes once.
 
-The order is `voice.providers` in `learner/profile.json` (the Voice screen changes it). A new learner starts with `["google"]`.
+The order is `voice.providers` in `learner/profile.json` (the Voice screen changes it). A new learner starts with `["google"]`. Any service in the list makes your own clips; for example `["elevenlabs", "google"]` makes them with ElevenLabs and, when its credits run out, with Google. A shipped clip is made again for you only when your first service is not one of Google's (it would sound different).
 
 ## Making the clips
 

@@ -48,3 +48,25 @@ def test_a_local_user_path_fails_and_a_placeholder_does_not(tmp_path):
     for text, bad in (("/ho" + "me/bob/x", True), ("x/AppData/Local/" + "Temp/claude/1/scratchpad", True),
                       ("the APPDATA folder", False), ("C:" + B + "Users" + B + "…", False)):
         assert bool(guard.USER_PATH.search(text)) == bad, text
+
+
+def test_published_audio_comes_only_from_a_service_that_lets_it_be_published(tmp_path):
+    import json
+
+    from oknos import voice
+
+    assert set(guard.PUBLISHABLE) == {n for n, p in voice.providers().items() if p.publishable}
+    git = _repo(tmp_path)
+    (tmp_path / "content" / "open-voice").mkdir(parents=True)
+    index = tmp_path / "content" / "open-voice" / "index.json"
+    index.write_text(json.dumps({"clips": {"a": {"t": "Γεια"}, "b": {"t": "Ναι", "p": "gemini"}}}), encoding="utf-8")
+    films = tmp_path / "docs" / "brand" / "animations" / "voice"
+    films.mkdir(parents=True)
+    (films / "made_with.json").write_text(json.dumps({"f1-01": "gemini"}), encoding="utf-8")
+    git("add", ".")
+    assert guard.check(tmp_path) == []
+    (films / "made_with.json").write_text(json.dumps({"f1-01": "elevenlabs"}), encoding="utf-8")
+    index.write_text(json.dumps({"clips": {"a": {"t": "Γεια", "p": "azure"}}}), encoding="utf-8")
+    git("add", ".")
+    problems = guard.check(tmp_path)
+    assert len(problems) == 2 and "elevenlabs" in " ".join(problems) and "azure" in " ".join(problems)

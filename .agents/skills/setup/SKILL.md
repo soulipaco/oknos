@@ -130,7 +130,7 @@ uv run oknos shortcut
 The app reads Greek from clips made ahead of time (`docs/VOICE.md`). Offer the choice in plain words, and do only what they pick:
 - **Google (the default):** "Google's voices sound very good and are free within a monthly allowance, but you need a Google Cloud key. I can walk you through it, about ten minutes." Guide them screen by screen (`docs/VOICE.md`), ask them to paste the key into `learner/secrets.env` themselves, never in the chat.
 - **Microsoft's voices, free, on this computer only:** the best sound in our test, no account; it sends the Greek text to Microsoft's read-aloud service. Ask for their yes, then set `"edge_tts_ok": true` and `"voice": {"providers": ["edge"]}` in `learner/profile.json`.
-- **Azure or OpenAI:** for someone who already has an account; the same key steps.
+- **Azure, OpenAI, Gemini or ElevenLabs:** for someone who already has an account; the same key steps (`docs/VOICE.md`, "Setting a service up"). ElevenLabs needs a paid plan and sounds the most natural; its clips stay on their computer, which is how all of them stay anyway.
 - **Keep the browser's voice:** nothing to do.
 
 With a service chosen, run `uv run oknos voice build` in the background and tell them the voice gets better over the next hour or two as clips are made. Then the browser voice below is only the fallback.

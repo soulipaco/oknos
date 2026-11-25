@@ -11,12 +11,15 @@ Providers (each makes mp3 bytes from a text and a role, female or male):
           learner's yes (profile `edge_tts_ok`, SPEC §9).
   google  Google Cloud Text-to-Speech (Chirp 3 HD), with the learner's key.
   openai  OpenAI gpt-4o-mini-tts, with the learner's key.
-
-For the podcast lessons only (podcast_providers(), docs/PODCASTS.md):
-  gemini  Google Gemini TTS, with the learner's own Gemini API key: two speakers acted together in
-          one request, a described style per speaker, Greek inside a Turkish sentence.
-  elevenlabs  ElevenLabs v4, with the learner's own key and plan: up to ten speakers acted together
-          in one request, each in a native voice from its library, Greek inside a Turkish sentence.
+  gemini  Google Gemini TTS, with the learner's own Gemini API key (paid tier). For a podcast, two
+          speakers acted together in one request, a described style per speaker, Greek inside a
+          Turkish sentence. Its audio is PCM: an app clip is made mp3 with ffmpeg.
+  elevenlabs  ElevenLabs v4, with the learner's own key and paid plan: for a podcast up to ten
+          speakers acted together in one request, each in a native voice from its library, Greek
+          inside a Turkish sentence. Its audio is for the learner's own use only: ElevenLabs' use
+          policy forbids passing it on under terms more permissive than its own (no CC BY-SA), so
+          it never makes the clips shipped in the repo (scripts/ship_voice.py, the films' voice/;
+          oknos guard checks).
 
 Keys come from learner/secrets.env or the environment and are only ever sent to their own
 provider. Only content text is sent, never learner data.
@@ -197,7 +200,8 @@ class Provider:
     named = False         # speaks with a voice chosen by name from the casting pool (src/oknos/casting.json)
     dialogue = False      # acts two speakers together in one request (make_exchange)
     mixed = False         # says Greek words inside a Turkish or English sentence correctly
-    podcast_only = False  # never makes the app's clips (its audio is not mp3; the podcast joins it)
+    podcast_only = False  # never makes the app's clips (none today)
+    publishable = False   # its terms let its audio be published openly (CC BY-SA): Google's do
     max_speakers = 2      # people in one acted request
     max_chars = 2400      # characters in one acted request
     style_kind = "describe"  # how a line's manner and pace are asked for: a described style, or "tags"
@@ -229,6 +233,25 @@ def quota_day() -> str:
 def requests_today(provider: str) -> int:
     """Requests sent to a provider today (counted for Gemini, whose paid Tier 1 allows 100 a day)."""
     return usage().get(f"{provider}_requests_{quota_day()}", 0)
+
+
+def to_mp3(wav: bytes, bitrate: str = "48k") -> bytes:
+    """A WAV clip as mp3 (for the app's clips, which are mp3 files), with ffmpeg; Refused without it."""
+    import shutil
+    import subprocess
+    import tempfile
+
+    exe = shutil.which("ffmpeg")
+    if not exe:
+        raise Refused("ffmpeg is needed to make this service's audio an mp3 clip")
+    with tempfile.TemporaryDirectory(prefix="oknos-mp3-") as tmp:
+        src, out = Path(tmp) / "in.wav", Path(tmp) / "out.mp3"
+        src.write_bytes(wav)
+        done = subprocess.run([exe, "-v", "error", "-y", "-i", str(src), "-ac", "1", "-c:a", "libmp3lame",
+                               "-b:a", bitrate, str(out)], capture_output=True, timeout=120)
+        if done.returncode != 0 or not out.is_file():
+            raise Refused("ffmpeg could not make an mp3 of the clip")
+        return out.read_bytes()
 
 
 def _post(url: str, body: bytes, headers: dict, timeout: float = 60, tries: int = 2) -> bytes:
@@ -314,6 +337,7 @@ class Edge(Provider):
 
 class Google(Provider):
     named = True  # Chirp 3 HD has the 30 voices of the casting pool, by name, in every language
+    publishable = True  # Google lets its audio be used "in your applications or media" (Cloud terms)
 
     def ready(self, keys, profile):
         return None if keys.get("GOOGLE_TTS_API_KEY") else "needs GOOGLE_TTS_API_KEY"
@@ -346,10 +370,17 @@ class OpenAI(Provider):
 
 class Gemini(Provider):
     """Gemini TTS through the Gemini API (the learner's own key, paid tier: the text is not used for
-    training). Podcasts only. It answers with raw 16-bit PCM, which is returned as a WAV file."""
+    training). It answers with raw 16-bit PCM, which is returned as a WAV file (voice.make makes an
+    app clip of it an mp3). Its audio may be published, as Google claims no ownership of it."""
 
     MODEL = "gemini-3.8-flash-tts"
-    named = dialogue = mixed = podcast_only = True
+    named = dialogue = mixed = publishable = True
+    # A clip of the app's: one word or sentence, said exactly as written (with no style, a single
+    # word now and then comes back with something added).
+    CLIP_STYLE = {"el": "Say exactly this Modern Greek text and nothing else, clearly and naturally, like a native "
+                        "speaker from Athens, at a calm pace for a learner.",
+                  "tr": "Say exactly this Turkish text and nothing else, clearly and naturally, at a calm pace.",
+                  "en": "Say exactly this English text and nothing else, clearly and naturally, at a calm pace."}
     tokens = 0  # audio tokens of the last request (about 25 a second of speech): what is billed
 
     def ready(self, keys, profile):
@@ -396,9 +427,7 @@ class Gemini(Provider):
 
     def make(self, text, role, keys, lang="el", voice_name=None, style=None):
         # The style goes in the metadata: put in the text, a single speaker reads it aloud.
-        part = {"text": text}
-        if style:
-            part["speechMetadata"] = {"style": style}
+        part = {"text": text, "speechMetadata": {"style": style or self.CLIP_STYLE.get(lang, self.CLIP_STYLE["el"])}}
         name = voice_name or self.voice(role, lang)
         return self._speak([part], {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": name}}}, keys)
 
@@ -424,7 +453,7 @@ class ElevenLabs(Provider):
     16-bit PCM at 24 kHz, returned as a WAV file. The plan's credits are a hard cap: no overage."""
 
     MODEL = "eleven_v4"
-    named = dialogue = mixed = podcast_only = True
+    named = dialogue = mixed = True
     max_speakers = 10
     max_chars = 2000  # the API's advice for one request
     style_kind = "tags"
@@ -434,12 +463,12 @@ class ElevenLabs(Provider):
     def ready(self, keys, profile):
         return None if keys.get("ELEVENLABS_API_KEY") else "needs ELEVENLABS_API_KEY"
 
-    def _dialogue(self, inputs: list[dict], keys: dict) -> bytes:
+    def _dialogue(self, inputs: list[dict], keys: dict, fmt: str = "pcm_24000") -> bytes:
         body = json.dumps({"model_id": self.MODEL, "inputs": inputs, "seed": 7}, ensure_ascii=False).encode("utf-8")
         headers = {"Content-Type": "application/json", "xi-api-key": keys["ELEVENLABS_API_KEY"]}
         for wait in (*self.RETRY_WAITS, None):
             try:
-                pcm = _post(f"{self.URL}/v1/text-to-dialogue?output_format=pcm_24000", body, headers, timeout=300)
+                pcm = _post(f"{self.URL}/v1/text-to-dialogue?output_format={fmt}", body, headers, timeout=300)
                 break
             except Refused as e:
                 if "quota_exceeded" in str(e):
@@ -448,9 +477,9 @@ class ElevenLabs(Provider):
                 if wait is None or str(e)[:3] not in ("429", "500", "502", "503", "504"):
                     raise
                 time.sleep(wait)
-        if len(pcm) < 2400:  # under 0.05 s: no speech came back
+        if len(pcm) < 2400:  # under 0.05 s (or an mp3 of nothing): no speech came back
             raise Refused("no audio in the answer")
-        return pcm_to_wav(pcm, 24000)
+        return pcm if fmt.startswith("mp3") else pcm_to_wav(pcm, 24000)
 
     @staticmethod
     def _input(text: str, name: str, style: str | None) -> dict:
@@ -459,7 +488,9 @@ class ElevenLabs(Provider):
         return {"text": f"{style} {text}" if style else text, "voice_id": casting.voice_id("elevenlabs", name)}
 
     def make(self, text, role, keys, lang="el", voice_name=None, style=None):
-        return self._dialogue([self._input(text, voice_name or self.voice(role, lang), style)], keys)
+        """One line as mp3: an app clip as it is, a podcast's line through ffmpeg like any clip."""
+        return self._dialogue([self._input(text, voice_name or self.voice(role, lang), style)], keys,
+                              fmt="mp3_44100_64")
 
     def make_exchange(self, turns: list[tuple[str, str, str, str | None]], keys: dict) -> bytes:
         """People acted together: turns are (speaker, voice name, text, audio tag or None)."""
@@ -503,17 +534,17 @@ def providers() -> dict[str, Provider]:
                                       "en": {"f": "en-US-Chirp3-HD-Kore", "m": "en-US-Chirp3-HD-Orus"}}),
         "openai": OpenAI("openai", {"f": "coral", "m": "ash"}, None, label="OpenAI gpt-4o-mini-tts", family="openai",
                          lang_voices={"tr": {"f": "coral", "m": "ash"}, "en": {"f": "coral", "m": "ash"}}),
+        "gemini": Gemini("gemini", {"f": "Kore", "m": "Orus"}, None, label="Google Gemini TTS (Kore / Orus)",
+                         family="google", lang_voices={"tr": {"f": "Kore", "m": "Orus"}, "en": {"f": "Kore", "m": "Orus"}}),
+        "elevenlabs": ElevenLabs("elevenlabs", {"f": "Crhysa", "m": "Christos"}, None,
+                                 label="ElevenLabs v4 (Crhysa / Christos; your own use only)", family="elevenlabs",
+                                 lang_voices={"tr": {"f": "Gozde", "m": "Arman"}, "en": {"f": "Gozde", "m": "Arman"}}),
     }
 
 
 def podcast_providers() -> dict[str, Provider]:
-    """The app's providers plus those that make podcasts only (Gemini, ElevenLabs)."""
-    return {**providers(),
-            "gemini": Gemini("gemini", {"f": "Kore", "m": "Orus"}, None, label="Google Gemini TTS (podcasts only)",
-                             family="google", lang_voices={"tr": {"f": "Kore", "m": "Orus"}, "en": {"f": "Kore", "m": "Orus"}}),
-            "elevenlabs": ElevenLabs("elevenlabs", {"f": "Crhysa", "m": "Christos"}, None,
-                                     label="ElevenLabs v4 (podcasts only)", family="elevenlabs",
-                                     lang_voices={"tr": {"f": "Gozde", "m": "Arman"}, "en": {"f": "Gozde", "m": "Arman"}})}
+    """The services a podcast can use: the app's own (each podcast has its list, podcast.providers)."""
+    return providers()
 
 
 DEFAULT_ORDER = ["google"]  # a new learner: Google with their own key; else the browser voice
@@ -608,6 +639,8 @@ def make(text: str, role: str = "f", *, chain: list[Provider] | None = None, key
         p._last = time.monotonic()
         try:
             data = p.make(text, role, keys) if lang == "el" else p.make(text, role, keys, lang=lang)
+            if data[:4] == b"RIFF":  # Gemini's PCM: the app's clips are mp3
+                data = to_mp3(data)
         except Refused:
             continue
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -781,7 +814,8 @@ def make_sample(name: str, role: str = "f") -> Path:
     why = p.ready(keys, profile)
     if why:
         raise Refused(why)
-    data = b"".join(p.make(s, role, keys) for s in SAMPLES)
+    parts = [p.make(s, role, keys) for s in SAMPLES]
+    data = b"".join(to_mp3(x) if x[:4] == b"RIFF" else x for x in parts)
     target = voice_dir() / "samples" / f"{name}-{role}.mp3"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_bytes(data)

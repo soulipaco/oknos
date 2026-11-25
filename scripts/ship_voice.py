@@ -1,18 +1,26 @@
 """Make the voice clips shipped with the open content (docs/VOICE.md, "Clips shipped with the open content").
 
     uv run python scripts/ship_voice.py --check                  # what is missing or stale, make nothing
-    uv run python scripts/ship_voice.py --secrets <secrets.env>  # make the missing clips (Google), resumable
+    uv run python scripts/ship_voice.py --secrets <secrets.env>  # make the missing clips (Gemini), resumable
+    uv run python scripts/ship_voice.py --secrets <...> --provider google  # with Chirp 3 HD instead
     uv run python scripts/ship_voice.py --secrets <...> --prune  # also delete clips no open text uses any more
 
 Every Greek text of the tracked open packs (content/open/open-*, the open book's chapters
-included) that the app can speak gets one clip, made with Google Cloud Text-to-Speech, Chirp 3 HD:
-Kore for the narrator and female speakers, Orus for male ones (src/oknos/voice.py's role_of). Never
-the private book (content/private/) or the coach's per-learner packs (learner/generated/).
+included) that the app can speak gets one clip, made with a Google voice: Gemini TTS (the default
+since 2026-11-26, the maintainer's choice for everything published) or Cloud Text-to-Speech, Chirp
+3 HD. Kore for the narrator and female speakers, Orus for male ones (src/oknos/voice.py's role_of).
+A clip made by the other one is made again, so the set has one voice; index.json says who made
+each clip ("p"). Never the private book (content/private/) or the coach's per-learner packs
+(learner/generated/). Only a service whose terms let its audio be published may make them
+(voice.Provider.publishable: Google's; never ElevenLabs, Azure's free tier or edge-tts).
+
+Gemini's paid Tier 1 allows 100 requests a day: when the day's are used up the run stops, keeps
+what it made, and the same command goes on the next day.
 
 The clips sit in content/open-voice/ with the same names as learner/voice/ (role/xx/<key>.mp3, the
 key made from the role and the text), so the app finds either with one lookup. index.json lists
-every clip with its text and role. Google lets its audio be used in applications under its Cloud
-terms; Azure's free tier and edge-tts do not, so those never make shipped clips.
+every clip with its text, role and maker. Google lets its audio be used in applications under its
+Cloud terms; Azure's free tier, edge-tts and ElevenLabs do not, so those never make shipped clips.
 
 Chirp 3 HD now and then sends back near-silence for a short word (92 of the first 2,206 clips,
 all single words or fragments). Every clip is checked: with ffmpeg on the PATH by its loudness,
@@ -20,8 +28,8 @@ else by its length. A silent one is asked for again, then as "word.", «word» a
 read the same; index.json records under "said" what was sent when it is not the text itself.
 `--recheck` checks the clips already made and remakes the silent ones.
 
-The key is GOOGLE_TTS_API_KEY from the given secrets file (or the environment); it is sent to
-Google only and never printed. Every request has a 60-second timeout, every ffmpeg call one too.
+The key is GEMINI_API_KEY (or GOOGLE_TTS_API_KEY for Chirp) from the given secrets file (or the
+environment); it is sent to Google only and never printed. Every request has a 60-second timeout, every ffmpeg call one too.
 """
 
 from __future__ import annotations
@@ -85,14 +93,21 @@ def read_manifest(out: Path) -> dict:
         return {}
 
 
+MADE_WITH = {"gemini": "Google Gemini TTS (gemini-3.8-flash-tts)", "google": "Google Cloud Text-to-Speech, Chirp 3 HD"}
+KEYS = {"gemini": "GEMINI_API_KEY", "google": "GOOGLE_TTS_API_KEY"}
+
+
 def write_manifest(out: Path, clips: dict, browser: dict) -> None:
-    google = voice.providers()["google"]
+    by: dict[str, int] = {}
+    for c in clips.values():
+        by[c.get("p", "google")] = by.get(c.get("p", "google"), 0) + 1
     data = {
         "about": "Greek voice clips for the open content of Oknos (docs/VOICE.md). Each clip is "
-                 "<role>/<key[:2]>/<key>.mp3, key = sha1('<role>|<normalised text>') (src/oknos/voice.py).",
+                 "<role>/<key[:2]>/<key>.mp3, key = sha1('<role>|<normalised text>') (src/oknos/voice.py); "
+                 "p is the service that made it (absent: google).",
         "licence": LICENCE,
-        "made_with": "Google Cloud Text-to-Speech, Chirp 3 HD",
-        "voices": google.voices,
+        "made_with": "; ".join(f"{MADE_WITH.get(k, k)}: {n:,} clips" for k, n in sorted(by.items(), key=lambda x: -x[1])),
+        "voices": {"f": "Kore", "m": "Orus"},
         "characters": sum(len(c.get("said", c["t"])) for c in clips.values()),
         "clips": dict(sorted(clips.items())),
         "browser": dict(sorted(browser.items())),  # texts Chirp gave only silence for: the browser's voice reads them
@@ -102,20 +117,21 @@ def write_manifest(out: Path, clips: dict, browser: dict) -> None:
     tmp.replace(out / "index.json")
 
 
-def load_key(path: str | None) -> str | None:
-    if os.environ.get("GOOGLE_TTS_API_KEY"):
-        return os.environ["GOOGLE_TTS_API_KEY"]
+def load_key(path: str | None, wanted: str = "GOOGLE_TTS_API_KEY") -> str | None:
+    if os.environ.get(wanted):
+        return os.environ[wanted]
     if path and Path(path).is_file():
         for line in Path(path).read_text(encoding="utf-8-sig").splitlines():
             name, _, value = line.partition("=")
-            if name.strip() == "GOOGLE_TTS_API_KEY" and value.strip():
+            if name.strip() == wanted and value.strip():
                 return value.strip()
     return None
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--secrets", help="a secrets.env holding GOOGLE_TTS_API_KEY (e.g. the main checkout's learner/secrets.env)")
+    ap.add_argument("--secrets", help="a secrets.env holding GEMINI_API_KEY or GOOGLE_TTS_API_KEY (e.g. the main checkout's learner/secrets.env)")
+    ap.add_argument("--provider", choices=sorted(KEYS), default="gemini", help="who makes the clips (default gemini)")
     ap.add_argument("--check", action="store_true", help="report what is missing or stale, make nothing")
     ap.add_argument("--prune", action="store_true", help="delete clips no open text uses any more")
     ap.add_argument("--recheck", action="store_true", help="find silent clips among those made and make them again")
@@ -134,7 +150,9 @@ def main() -> int:
         quiet = [k for k, c in clips.items() if silent(voice.file_for(c["t"], c["r"], out).read_bytes())]
         print(f"{len(quiet):,} of {len(clips):,} clips are silent; they are made again")
         clips = {k: v for k, v in clips.items() if k not in quiet}
-    todo = [(k, t, r) for k, (t, r) in wanted.items() if k not in clips and k not in browser]
+    # A clip by the other service is made again, so the shipped set speaks with one voice.
+    todo = [(k, t, r) for k, (t, r) in wanted.items()
+            if (k not in clips or clips[k].get("p", "google") != args.provider) and k not in browser]
     stale = sorted(set(clips) - set(wanted))
     print(f"{len(wanted):,} open texts; {len(set(clips) & set(wanted)):,} have a clip, {len(todo):,} missing, "
           f"{len(stale):,} stale, {len(browser):,} left to the browser voice; {sum(len(t) for _, t, _ in todo):,} characters to make.")
@@ -151,12 +169,13 @@ def main() -> int:
 
     if not todo:
         return 0
-    api_key = load_key(args.secrets)
+    api_key = load_key(args.secrets, KEYS[args.provider])
     if not api_key:
-        print("No GOOGLE_TTS_API_KEY (pass --secrets <path to secrets.env>).")
+        print(f"No {KEYS[args.provider]} (pass --secrets <path to secrets.env>).")
         return 1
-    keys = {"GOOGLE_TTS_API_KEY": api_key}
-    google = voice.providers()["google"]
+    keys = {KEYS[args.provider]: api_key}
+    google = voice.providers()[args.provider]
+    assert google.publishable, f"{args.provider}'s audio may not be published"
     if args.limit is not None:
         todo = todo[:args.limit]
     made = failed = chars = 0
@@ -168,9 +187,16 @@ def main() -> int:
                 time.sleep(PACE)
                 try:
                     data = google.make(sent, role, keys)  # voice._post: a 60-second timeout
+                    if data[:4] == b"RIFF":  # Gemini's PCM: shipped clips are 32 kb/s mp3
+                        data = voice.to_mp3(data, "32k")
                     chars += len(sent)
                     break
                 except voice.Refused as e:
+                    if "daily limit" in str(e):
+                        write_manifest(out, clips, browser)
+                        print(f"Gemini's requests for today are used up after {made:,} clips; run the same command "
+                              f"tomorrow (after 10:00 in Greece) to go on.", flush=True)
+                        return 2
                     print(f"  {k[:8]}: {e}; again in {10 * (attempt + 1)} s", flush=True)
                     time.sleep(10 * (attempt + 1))
             if data and not silent(data):
@@ -181,12 +207,13 @@ def main() -> int:
             failed += 1
             print(f"  only silence, left to the browser voice: {text}", flush=True)
             voice.file_for(text, role, out).unlink(missing_ok=True)  # never play a silent clip
-            browser[k] = {"r": role, "t": text, "why": "Chirp 3 HD sent only silence"}
+            browser[k] = {"r": role, "t": text, "why": f"{args.provider} sent only silence"}
             continue
         target = voice.file_for(text, role, out)
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(data)
-        clips[k] = {"r": role, "t": text, **({"said": said} if said != text else {})}
+        clips[k] = {"r": role, "t": text, **({"said": said} if said != text else {}),
+                    **({"p": args.provider} if args.provider != "google" else {})}
         made += 1
         if made % 50 == 0:
             write_manifest(out, clips, browser)

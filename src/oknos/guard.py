@@ -32,6 +32,34 @@ def _git(args: list[str], cwd: Path) -> str:
     return out.stdout.decode("utf-8", "replace")
 
 
+# Published audio (the open content's clips, the films' voice) may come only from a service whose
+# terms let it be published under CC BY-SA: Google's (voice.Provider.publishable). Never ElevenLabs
+# (its use policy forbids passing its audio on under more permissive terms), Azure's free tier or
+# edge-tts. Each manifest names who made each clip.
+PUBLISHABLE = ("google", "gemini")
+AUDIO_MANIFESTS = {"content/open-voice/index.json": "clips", "docs/brand/animations/voice/made_with.json": None}
+
+
+def _audio_makers(repo: Path, rev: str | None, files: list[str]) -> list[str]:
+    import json
+
+    problems = []
+    for path, field in AUDIO_MANIFESTS.items():
+        if path not in files:
+            continue
+        try:
+            data = json.loads(_git(["show", f"{rev}:{path}" if rev else f":{path}"], repo))
+        except (json.JSONDecodeError, RuntimeError):
+            problems.append(f"{path}: not readable JSON")
+            continue
+        makers = ([c.get("p", "google") for c in data.get(field, {}).values()] if field else list(data.values()))
+        bad = sorted({m for m in makers if m not in PUBLISHABLE})
+        if bad:
+            problems.append(f"{path}: published audio made by {', '.join(bad)}, whose terms do not let it be "
+                            f"published; only {' or '.join(PUBLISHABLE)} may make it")
+    return problems
+
+
 def check(repo: Path | str = ".", rev: str | None = None) -> list[str]:
     """Problems in what git tracks: the index, or the commit `rev`. Empty when all is well."""
     repo = Path(repo)
@@ -39,6 +67,7 @@ def check(repo: Path | str = ".", rev: str | None = None) -> list[str]:
     files = _git(["ls-tree", "-r", "--name-only", rev] if rev else ["ls-files"], repo).splitlines()
     problems = [f"{f}: tracked, but everything under {d} must stay on this machine (it is gitignored)"
                 for f in files for d in PRIVATE_DIRS if f.replace("\\", "/").startswith(d)]
+    problems += _audio_makers(repo, rev, files)
     # git grep finds the candidate lines fast; USER_PATH then decides (placeholders are fine)
     lines = _git(["grep", "-I", "-n", "-i", "-E", "-e", BROAD, *where], repo).splitlines()
     for line in lines:

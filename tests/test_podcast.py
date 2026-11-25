@@ -543,8 +543,10 @@ def test_a_service_without_dialogue_reads_line_by_line_and_cannot_say_mixed_line
         podcast.render("open.first-words.tr")
 
 
-def test_the_podcast_has_its_own_list_and_gemini_never_makes_the_apps_clips(learner):
-    assert "gemini" in voice.podcast_providers() and "gemini" not in voice.providers()
+def test_the_podcast_has_its_own_list_and_only_google_may_be_published(learner):
+    # Since 2026-11-26 Gemini and ElevenLabs make the app's clips too, when the learner lists them.
+    assert {"gemini", "elevenlabs"} <= set(voice.providers())
+    assert {n for n, p in voice.providers().items() if p.publishable} == {"google", "gemini"}
     chain = podcast._chain({"voice": {"providers": ["azure"]}, "podcast": {"providers": ["gemini", "google"]}}, {})
     assert [p.name for p in chain] == ["gemini", "google"]
     assert [p.name for p in podcast._chain({"voice": {"providers": ["azure"]}}, {})] == ["azure"]
@@ -727,3 +729,26 @@ def test_an_episode_that_may_not_fit_the_elevenlabs_credits_goes_whole_to_the_fa
     eleven.left = None  # the key may not read the credits: try
     write(learner, {**raw, "written": "2026-11-26"})
     assert list(podcast.check("open.first-words.tr")["cost"]["by_provider"]) == ["elevenlabs"]
+
+
+def test_an_app_clip_from_gemini_is_an_mp3_and_elevenlabs_sends_one(learner, monkeypatch):
+    if not HAS_FFMPEG:
+        pytest.skip("ffmpeg makes Gemini's audio an mp3")
+    pcm = base64.b64encode(b"\x00\x01" * 24000).decode()
+    monkeypatch.setattr(voice, "_post", lambda url, body, headers, timeout=60, tries=2: json.dumps(
+        {"candidates": [{"content": {"parts": [{"inlineData": {"mimeType": "audio/L16;rate=24000", "data": pcm}}]}}]}).encode())
+    keys = {"GEMINI_API_KEY": "k"}
+    chain = [voice.providers()["gemini"]]
+    assert voice.make("Καλημέρα", "f", chain=chain, keys=keys, profile={}) == "gemini"
+    data = voice.file_for("Καλημέρα", "f").read_bytes()
+    assert data[:4] != b"RIFF" and (data[:3] == b"ID3" or data[0] == 0xFF)
+    sent = []
+
+    def fake_post(url, body, headers, timeout=60, tries=2):
+        sent.append(url)
+        return b"\xff\xfb" + b"\x00" * 4000
+
+    monkeypatch.setattr(voice, "_post", fake_post)
+    chain = [voice.providers()["elevenlabs"]]
+    assert voice.make("Καληνύχτα", "m", chain=chain, keys={"ELEVENLABS_API_KEY": "k"}, profile={}) == "elevenlabs"
+    assert "output_format=mp3" in sent[0]

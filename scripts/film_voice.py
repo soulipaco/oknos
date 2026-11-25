@@ -1,7 +1,7 @@
 """Make the films' narration: one clip per shot, from its Greek caption (phase 10, step 4).
 
-    uv run python scripts/film_voice.py                   # the published clips (Google), the missing ones
-    uv run python scripts/film_voice.py --provider azure  # this computer's own clips (Athina, Nestoras)
+    uv run python scripts/film_voice.py                        # the published clips (Gemini), the missing ones
+    uv run python scripts/film_voice.py --provider elevenlabs  # this computer's own clips (or azure)
     uv run python scripts/film_voice.py --redo            # make all of them again
     uv run python scripts/film_voice.py --list            # print what each clip says, make nothing
 
@@ -11,14 +11,15 @@ shot has `say`: a list of [role, text] parts, "m" for Oknos and "f" for the narr
 the other into one clip. The end card's clip is its `say`, if it has one.
 
 Two sets of clips, named after the shot's picture (f1-01, f3-06, f1-end), as decided with the
-maintainer on 2026-11-22 (Google for the repo, Athina and Nestoras for their own use):
+maintainer on 2026-11-22 and 2026-11-26 (a Google voice for the repo, their own voice for their use):
 
-  voice/<shot>.mp3        Google Cloud Text-to-Speech, Chirp 3 HD Kore (narrator) and Orus (Oknos).
-                          Tracked and published: Google lets the audio files be used "in your
-                          applications or media" under its Cloud terms, on any tier.
-  voice-local/<shot>.mp3  Azure Speech, Athina and Nestoras, for this computer only and not tracked:
-                          Microsoft's Product Terms give the use of the output to the paid tier
-                          only, and the maintainer's resource is the free tier (F0).
+  voice/<shot>.mp3        Google: Gemini TTS Kore (narrator) and Orus (Oknos) since 2026-11-26,
+                          before that Chirp 3 HD. Tracked and published: Google claims no ownership
+                          of the audio and lets it be used "in your applications or media".
+                          made_with.json says who made each clip (oknos guard checks it).
+  voice-local/<shot>.mp3  A service whose audio may not be published, for this computer only and
+                          not tracked: ElevenLabs v4 (its use policy forbids more permissive terms
+                          than its own) or Azure's free tier (output rights on the paid tier only).
 
 film.js plays voice-local/ when it is there, else voice/, else the film plays silently. The services
 are src/oknos/voice.py's, with the keys in learner/secrets.env.
@@ -35,7 +36,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 FILMS = ROOT / "docs" / "brand" / "animations"
-OUT = {"google": FILMS / "voice", "azure": FILMS / "voice-local"}
+PROVIDERS = ("gemini", "google", "elevenlabs", "azure")  # a publishable one writes voice/, the rest voice-local/
 
 
 def film_data(page: Path) -> dict:
@@ -102,8 +103,8 @@ def clips() -> list[tuple[str, list[tuple[str, str]]]]:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--provider", choices=sorted(OUT), default="google",
-                    help="google: the published clips (voice/); azure: this computer's own (voice-local/)")
+    ap.add_argument("--provider", choices=PROVIDERS, default="gemini",
+                    help="gemini or google: the published clips (voice/); elevenlabs or azure: this computer's own (voice-local/)")
     ap.add_argument("--redo", action="store_true", help="make every clip again")
     ap.add_argument("--list", action="store_true", help="print the clips' texts, make nothing")
     args = ap.parse_args()
@@ -118,7 +119,12 @@ def main() -> int:
     from oknos import voice
 
     tts = voice.providers()[args.provider]
-    out = OUT[args.provider]
+    out = FILMS / ("voice" if tts.publishable else "voice-local")
+    made_with_file = out / "made_with.json"
+    try:
+        made_with = json.loads(made_with_file.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        made_with = {}
     keys = voice.secrets()
     why = tts.ready(keys, {})
     if why:
@@ -128,7 +134,8 @@ def main() -> int:
     made = failed = 0
     for name, parts in todo:
         target = out / f"{name}.mp3"
-        if target.exists() and not args.redo:
+        # A clip by another service is made again, so a set speaks with one voice.
+        if target.exists() and not args.redo and made_with.get(name, "google" if tts.publishable else "azure") == args.provider:
             continue
         audio = b""
         for role, text in parts:
@@ -138,7 +145,10 @@ def main() -> int:
                     time.sleep(left)
                 tts._last = time.monotonic()
                 try:
-                    audio += frames(tts.make(text, role, keys))  # mp3 frames of one format join into one clip
+                    data = tts.make(text, role, keys)
+                    if data[:4] == b"RIFF":  # Gemini's PCM, as the other clips: 48 kb/s mp3
+                        data = voice.to_mp3(data)
+                    audio += frames(data)  # mp3 frames of one format join into one clip
                     voice._add_usage(tts.name, len(text))
                     break
                 except voice.Refused as e:
@@ -152,6 +162,9 @@ def main() -> int:
             print(f"{name}: not made")
             continue
         target.write_bytes(audio)
+        made_with[name] = args.provider
+        if tts.publishable:
+            made_with_file.write_text(json.dumps(dict(sorted(made_with.items())), indent=1) + "\n", encoding="utf-8")
         made += 1
         print(f"{name}: {len(audio) // 1024} KB  " + " + ".join(t for _, t in parts))
     print(f"made {made}, failed {failed}, in {out.relative_to(ROOT)}")
