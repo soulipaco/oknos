@@ -72,7 +72,7 @@ Written by `daily-prep` (its step 5b) for a learner who said yes to them (`podca
 
 ## 4. Writing for the ear
 
-- **Write in exchanges between two people.** The voice service (Gemini) acts up to two speakers together in one request, and that is where the natural sound comes from. A run of lines between Ada and Mert, or between two characters, sounds like talk. A third voice breaking in starts a new request, and the flow resets a little. So bring Katerina in at deliberate points (a model sentence, the repeat corner), not after every host line.
+- **Write in exchanges.** The voice service acts the people of a run of lines together in one request, and that is where the natural sound comes from: ElevenLabs v4 (the maintainer's first service) up to ten people, Gemini (the fallback) two. A run between Ada and Mert, with Katerina saying the Greek between them, or a whole scene, sounds like talk. Still bring Katerina in at deliberate points (a model sentence, the repeat corner), not after every host line: with Gemini a third voice starts a new request, and the flow resets a little.
 - **Greek inside a Turkish line**, only for a cast member whose `lang` includes `el` (Ada, Mert): "Pire'de demek için şunu dersin: στον Πειραιά."
   - Keep it to a few words; a whole Greek sentence goes in its own `el` line.
   - `check` notes such lines. The render refuses them when no ready service speaks mixed lines.
@@ -88,9 +88,11 @@ Written by `daily-prep` (its step 5b) for a learner who said yes to them (`podca
   - nothing between ordinary lines: the program puts natural gaps between turns.
 
   Not every line needs a gap; a gap after every sentence is tiring.
-- **Requests are the budget.** Gemini allows 100 requests a day. A request is one exchange between two people, or one person's run, of up to 24 lines or 2,400 characters. Every `pause`, `echo` and `part` ends a request, and so does a change of speed within one person's run.
-  - So write fewer, longer runs: merge consecutive lines of one speaker, put no `pause` between ordinary turns, and save `echo` for the 5–8 lines that matter most (and for the repeat corner).
-  - `check` prints the requests a render needs. Aim at about 45 for a chapter episode, 30–35 for a daily one and about 50 for a weekly one.
+- **A slowed line** (`speed` below 1) is said slowly by an audio tag (ElevenLabs) or a style (Gemini), inside its exchange. Use it for the repeat moments only.
+- **Few, long runs.** Every `pause`, `echo` and `part` ends a request, and the acting starts afresh after it.
+  - So merge consecutive lines of one speaker, put no `pause` between ordinary turns, and save `echo` for the 5–8 lines that matter most (and for the repeat corner).
+  - With ElevenLabs the budget is the month's credits, not requests (`check` prints the credits left; about 0.4 a character). A chapter episode is about 8,500 characters, a daily one 4,000–5,000, a weekly one about 9,000.
+  - With Gemini it is 100 requests a day. A request is one exchange or one person's run of up to 24 lines or 2,400 characters. `check` prints the requests a render needs: aim at about 45 for a chapter episode, 30–35 for a daily one and about 50 for a weekly one, so the episode can still go to Gemini when ElevenLabs' credits run out.
 - Numbers, dates and abbreviations in the learner's language are written as words ("üç", not "3"), so the voice reads them right.
 - No personal data, ever: a chapter episode is about the chapter, not about the learner.
 
@@ -101,7 +103,8 @@ uv run oknos podcast check <id>        # problems, length, the cast and its voic
 ```
 
 Fix every PROBLEM, and look at the notes. Then, before rendering, **tell the learner the length and what it will spend**:
-- with Gemini (`podcast.providers` in `profile.json`): the audio tokens, about $0.20 for a chapter episode of 14 minutes ($0.40 from 2027);
+- with ElevenLabs (first in `podcast.providers` in `profile.json`): the characters, against the credits left this month (about 0.4 credits a character, so about 3,500 for a chapter episode);
+- with Gemini: the audio tokens, about $0.20 for a chapter episode of 14 minutes ($0.40 from 2027);
 - with a free-tier service: the characters, against this month's quota.
 
 Then:
@@ -110,7 +113,7 @@ Then:
 uv run oknos podcast render <id> --wait
 ```
 
-With Gemini, render only when the requests `check` prints fit what is left today (the day resets at 10:00 in Greece). A render that reaches the day's limit stops, keeps its clips, and resumes the next day with the same command.
+With ElevenLabs, an episode whose characters do not fit the credits left goes whole to the next service (`check` says so). With Gemini, render only when the requests `check` prints fit what is left today (the day resets at 10:00 in Greece). A render that reaches the day's limit stops, keeps its clips, and resumes the next day with the same command.
 
 `--wait` waits out a service's pace instead of handing lines to the next service. An episode takes a few minutes the first time; a second render spends nothing. When it is done, tell the learner in one or two sentences where to find it: the Podcast page (the headphones link on the home screen's coach tile, or "Listen" on the Book screen and in the chapter), also from the phone. Ask how it sounded; their remarks (too fast, gaps too short, too much Turkish) go into the next script, and into `docs/PODCASTS.md` if they change the default shape.
 

@@ -636,3 +636,94 @@ def test_an_episode_that_does_not_fit_the_days_gemini_requests_goes_whole_to_the
     assert list(cost["by_provider"]) == ["google"]
     meta = podcast.render("open.first-words.tr")
     assert actor.calls == [] and set(meta["made"]) == {"google"}
+
+
+# ---------- ElevenLabs v4 (chosen by the maintainer on 2026-11-25) ----------
+
+class Eleven(Actor):
+    """A service like ElevenLabs v4: up to ten people in one request, the pace as an audio tag."""
+
+    max_speakers = 10
+    max_chars = 2000
+    style_kind = "tags"
+
+    def __init__(self, left=None):
+        voice.Provider.__init__(self, "elevenlabs", {"f": "Crhysa", "m": "Christos"}, None, label="elevenlabs",
+                                family="elevenlabs", lang_voices={"tr": {"f": "Gozde", "m": "Arman"}})
+        self.calls = []
+        self.left = left
+
+    def credits_left(self, keys):
+        return self.left
+
+
+def test_elevenlabs_gives_a_greek_character_a_greek_voice_of_their_age():
+    members, _ = casting.speakers(podcast.parse(cast_script()))
+    members["clerk"] = casting.Member("clerk", "Υπάλληλος", "character", "m", {"el"}, "50", "polite, brisk")
+    voices = casting.assign(members, "elevenlabs")
+    fam = casting.table()["families"]["elevenlabs"]
+    assert {k: voices[k] for k in ("ada", "mert", "katerina")} == fam["show"]
+    assert len(set(voices.values())) == len(voices)
+    for mid in ("ayse", "nikos", "clerk"):
+        assert casting.entry("elevenlabs", voices[mid])["lang"] == "el"
+    assert casting.entry("elevenlabs", voices["clerk"])["age"] == "middle"
+    assert casting.entry("elevenlabs", voices["ayse"])["age"] == "young"  # 30
+    assert casting.voice_id("elevenlabs", "Crhysa") == "4hx4668A4ljDTKS4m5oV"
+    assert casting.voice_id("google", "Kore") == "Kore"
+
+
+@pytest.mark.skipif(not HAS_FFMPEG, reason="ffmpeg joins the clips")
+def test_elevenlabs_acts_more_than_two_people_together_and_slows_a_line_with_a_tag(learner, monkeypatch):
+    eleven = Eleven()
+    monkeypatch.setattr(podcast, "_chain", lambda profile, keys: [eleven])
+    write(learner, cast_script())
+    cost = podcast.check("open.first-words.tr")["cost"]
+    assert cost["by_provider"]["elevenlabs"]["requests"] == 3
+    podcast.render("open.first-words.tr")
+    # The scene; the hosts with Katerina (a third voice) in one request, her slow repeat in it with
+    # its tag; Mert's line after the echo gap.
+    assert [c[0] for c in eleven.calls] == ["two", "two", "one"]
+    show = casting.table()["families"]["elevenlabs"]["show"]
+    assert eleven.calls[1][1] == (show["mert"], show["ada"], show["mert"], show["katerina"], show["katerina"])
+    assert eleven.calls[1][3] is None  # no style on a line at normal pace
+
+
+def test_elevenlabs_sends_library_ids_and_the_tag_and_waits_when_busy(learner, monkeypatch):
+    sent, answers, slept = [], [voice.Refused("429 Too Many Requests")], []
+
+    def fake_post(url, body, headers, timeout=60, tries=2):
+        if answers:
+            raise answers.pop(0)
+        sent.append((url, json.loads(body), headers))
+        return b"\x00\x01" * 4800
+
+    monkeypatch.setattr(voice, "_post", fake_post)
+    monkeypatch.setattr(voice.time, "sleep", slept.append)
+    e = voice.podcast_providers()["elevenlabs"]
+    keys = {"ELEVENLABS_API_KEY": "k"}
+    wav = e.make_exchange([("ada", "Gozde", "Merhaba!", None), ("katerina", "Crhysa", "Στον Πειραιά.", "[slowly]")], keys)
+    assert wav[:4] == b"RIFF" and slept == [5]
+    url, body, headers = sent[0]
+    assert "text-to-dialogue" in url and "pcm_24000" in url and headers["xi-api-key"] == "k"
+    assert body["model_id"] == "eleven_v4"
+    assert body["inputs"] == [{"text": "Merhaba!", "voice_id": "aEJD8mYP0nuof1XHShVY"},
+                              {"text": "[slowly] Στον Πειραιά.", "voice_id": "4hx4668A4ljDTKS4m5oV"}]
+    monkeypatch.setattr(voice, "_post", lambda *a, **k: (_ for _ in ()).throw(
+        voice.Refused('401 Unauthorized {"detail":{"status":"quota_exceeded"}}')))
+    with pytest.raises(voice.Refused, match="used up"):
+        e.make("Γεια!", "f", keys)
+
+
+@pytest.mark.skipif(not HAS_FFMPEG, reason="ffmpeg joins the clips")
+def test_an_episode_that_may_not_fit_the_elevenlabs_credits_goes_whole_to_the_fallback(learner, monkeypatch):
+    eleven, reader = Eleven(left=50), Reader()
+    monkeypatch.setattr(podcast, "_chain", lambda profile, keys: [eleven, reader])
+    raw = cast_script()
+    raw["segments"] = raw["segments"][:11]  # no Greek inside Turkish: the fallback can say all of it
+    write(learner, raw)
+    assert list(podcast.check("open.first-words.tr")["cost"]["by_provider"]) == ["google"]
+    meta = podcast.render("open.first-words.tr")
+    assert eleven.calls == [] and set(meta["made"]) == {"google"}
+    eleven.left = None  # the key may not read the credits: try
+    write(learner, {**raw, "written": "2026-11-26"})
+    assert list(podcast.check("open.first-words.tr")["cost"]["by_provider"]) == ["elevenlabs"]

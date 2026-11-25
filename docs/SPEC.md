@@ -215,7 +215,7 @@ These are recorded here because they shape the product. From now on, personal de
 **Out, explicitly:**
 - Live speech recognition inside the app, and pronunciation scoring. Speaking feedback is after the fact, from the coach.
 - The ΠΕΓΠ blueprint.
-- Any LLM call from the app; any account, sync or telemetry; cloud TTS, except the opt-in voice services in §9 (edge-tts, and Azure, Google, Gemini or OpenAI with the learner's own key), which get content text only.
+- Any LLM call from the app; any account, sync or telemetry; cloud TTS, except the opt-in voice services in §9 (edge-tts, and Azure, Google, Gemini, ElevenLabs or OpenAI with the learner's own key), which get content text only.
 - Publishing the app to the internet: no public tunnels (Tailscale Funnel, Cloudflare quick tunnels), no port forwarding, no hosting on a server or app platform (`docs/HOSTING.md`).
 - Picture-based tasks (describing a photo), apart from a speaking card with an image.
 - Content editing inside the app. Content is written by the coach or the importer.
@@ -830,7 +830,7 @@ Every step is checked by the agent before it reports success. The person is neve
 
   A listening test of eight voices on ten book sentences, ranked by the maintainer's ear, put Microsoft's Athina and Nestoras first, then Google Chirp 3 HD, then OpenAI gpt-4o-mini-tts; OpenAI tts-1-hd, Chatterbox Multilingual and F5-TTS-Greek were no better than Stefanos. Default for a new learner: Google with their own key.
 
-  **Podcasts (2026-11-25).** A second blind test, of seven setups on four podcast excerpts (a dialogue, a story, two hosts chatting, the v2 show format), scored by the maintainer: Gemini 3.8 Flash TTS 17 of 20, Google Chirp 3 HD with a voice per person 14–14.5, OpenAI 13.5, today's Azure setup 12.5. Podcasts are therefore voiced by **Gemini TTS** (Google's Gemini API, the learner's own key, paid tier, about 5–10 dollars a month at 300,000 characters), with Chirp 3 HD as the fallback; the app's own clips keep their services. The same rules hold: content text only, never edge-tts for the agent's texts, a personal episode holds learning content only (`docs/PODCASTS.md`, "The voices").
+  **Podcasts (2026-11-25).** A second blind test, of seven setups on four podcast excerpts (a dialogue, a story, two hosts chatting, the v2 show format), scored by the maintainer: Gemini 3.8 Flash TTS 17 of 20, Google Chirp 3 HD with a voice per person 14–14.5, OpenAI 13.5, today's Azure setup 12.5. Podcasts are therefore voiced by **Gemini TTS** (Google's Gemini API, the learner's own key, paid tier, about 5–10 dollars a month at 300,000 characters), with Chirp 3 HD as the fallback; the app's own clips keep their services. Later that evening the maintainer heard ElevenLabs v4 beside Gemini and preferred it (v4 > Gemini > ElevenLabs v3): podcasts are now voiced by ElevenLabs v4 (the learner's own key and paid plan, its monthly credits a hard cap), then Gemini, then Chirp 3 HD. The same rules hold: content text only, never edge-tts for the agent's texts, a personal episode holds learning content only (`docs/PODCASTS.md`, "The voices").
 
 **Official listening audio.** The 2022, 2024 and 2026A A2-LTR listening recordings are published as MP3s. The coach can download them into `content/private/` (after asking) for mock exams.
 

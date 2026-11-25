@@ -92,6 +92,30 @@ def speakers(script) -> tuple[dict[str, Member], dict[int, str]]:
     return members, who_of
 
 
+def entry(family: str, name: str) -> dict:
+    """A pool voice as {gender, lang, age, about, id}: Google's are [gender, description] (every
+    language, no age); ElevenLabs' are written out, with a native language and the library's id."""
+    v = table()["families"][family]["voices"][name]
+    if isinstance(v, dict):
+        return v
+    return {"gender": v[0], "about": v[1], "lang": None, "age": None, "id": name}
+
+
+def voice_id(family: str, name: str) -> str:
+    """What the service is asked for: the voice's id in its library (its name for Google)."""
+    voices = table()["families"][family]["voices"]
+    return entry(family, name)["id"] if name in voices else name
+
+
+def age_band(age: str | None) -> str | None:
+    """A cast member's age ("50", "30s") as the library's band: young, middle or old."""
+    digits = "".join(c for c in (age or "") if c.isdigit())[:2]
+    if not digits:
+        return None
+    n = int(digits)
+    return "young" if n < 35 else "middle" if n < 60 else "old"
+
+
 def assign(members: dict[str, Member], family: str | None) -> dict[str, str]:
     """member id -> voice name in the family's pool ({} for a provider without a pool)."""
     if family is None:
@@ -108,9 +132,19 @@ def assign(members: dict[str, Member], family: str | None) -> dict[str, str]:
     for m in members.values():
         if m.id in out:
             continue
-        mine = [n for n, (g, _) in pool.items() if g == m.gender and n not in show.values()]
-        # An order of the pool fixed by the name: the first free voice in it is this person's.
-        mine.sort(key=lambda n: hashlib.sha1(f"{greek.fold(m.name)}|{n}".encode("utf-8")).hexdigest())
+        mine = [n for n in pool if entry(family, n)["gender"] == m.gender and n not in show.values()]
+        band = age_band(m.age)
+
+        def rank(n: str) -> tuple:
+            # A voice of the person's language first (a Greek character, a Greek voice), then of
+            # their age band when the pool says ages, then an order fixed by the name: the first
+            # free voice in it is this person's.
+            e = entry(family, n)
+            return (e["lang"] is not None and e["lang"] not in m.lang,
+                    0 if not band or e["age"] == band else 1 if e["age"] is None else 2,
+                    hashlib.sha1(f"{greek.fold(m.name)}|{n}".encode("utf-8")).hexdigest())
+
+        mine.sort(key=rank)
         free = [n for n in mine if n not in taken]
         out[m.id] = (free or mine)[0]  # more people than voices of a gender: share (only then)
         taken.add(out[m.id])

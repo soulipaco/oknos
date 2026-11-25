@@ -1,9 +1,13 @@
 {
-  "about": "Who speaks with which voice in a podcast episode (docs/PODCASTS.md, 'The voices'). The show's own people (the hosts and the Greek guest) keep one voice in every episode; a story character gets a voice from the pool of their gender, chosen from their name, so the same character sounds the same everywhere and no two people of one episode share a voice. A script's cast member may name a voice for one family (cast[].voice). Google's 30 voices carry the same name and sound in Gemini TTS and in Cloud Text-to-Speech (Chirp 3 HD), in every language, so a host can also say Greek in her own voice. The word after each voice is Google's own description of it.",
+  "about": "Who speaks with which voice in a podcast episode (docs/PODCASTS.md, 'The voices'). The show's own people (the hosts and the Greek guest) keep one voice in every episode; a story character gets a voice from the pool of their gender, chosen from their name, so the same character sounds the same everywhere and no two people of one episode share a voice. A script's cast member may name a voice for one family (cast[].voice). Google's 30 voices carry the same name and sound in Gemini TTS and in Cloud Text-to-Speech (Chirp 3 HD), in every language, so a host can also say Greek in her own voice. The word after each voice is Google's own description of it. ElevenLabs voices (family 'elevenlabs', chosen from its voice library by description on 2026-11-25; the hosts and Katerina were heard and liked by the maintainer) each have a native language ('lang'), an age band and the library's voice id; a character gets a voice of their gender and language, of their age band when there is one.",
   "families": {
     "google": {
       "providers": ["gemini", "google"],
-      "show": {"ada": "Sulafat", "mert": "Umbriel", "katerina": "Gacrux"},
+      "show": {
+        "ada": "Sulafat",
+        "mert": "Umbriel",
+        "katerina": "Gacrux"
+      },
       "voices": {
         "Achernar": ["f", "soft"],
         "Achird": ["m", "friendly"],
@@ -35,6 +39,63 @@
         "Vindemiatrix": ["f", "gentle"],
         "Zephyr": ["f", "bright"],
         "Zubenelgenubi": ["m", "casual"]
+      }
+    },
+    "elevenlabs": {
+      "providers": ["elevenlabs"],
+      "show": {
+        "ada": "Gozde",
+        "mert": "Arman",
+        "katerina": "Crhysa"
+      },
+      "voices": {
+        "Gozde": {"gender": "f", "lang": "tr", "age": "young", "about": "casual, conversational", "id": "aEJD8mYP0nuof1XHShVY"},
+        "Arman": {"gender": "m", "lang": "tr", "age": "young", "about": "excited, social media", "id": "qUGjOGoUuQBTUqwY8n0e"},
+        "Crhysa": {"gender": "f", "lang": "el", "age": "middle", "about": "excited, athenian, conversational", "id": "4hx4668A4ljDTKS4m5oV"},
+        "Eleni": {"gender": "f", "lang": "el", "age": "young", "about": "casual, athenian, narrative story", "id": "aTP4J5SJLQl74WTSRXKW"},
+        "Sophia": {"gender": "f", "lang": "el", "age": null, "about": "pleasant, social media", "id": "7smwXrU3C1PfaspIIUZB"},
+        "Sofia": {"gender": "f", "lang": "el", "age": "young", "about": "pleasant, macedonian, advertisement", "id": "0oYUKTNPbymIKVAkDQqh"},
+        "Aria": {"gender": "f", "lang": "el", "age": "young", "about": "calm, social media", "id": "mRTQIE2xdk2oMdoKFGJu"},
+        "Niki": {"gender": "f", "lang": "el", "age": "young", "about": "gentle, informative educational", "id": "wykE1oPxFaMrxdpOtFt6"},
+        "Niki2": {"gender": "f", "lang": "el", "age": "young", "about": "classy, advertisement", "id": "AnNshXL08po8KEaf53gz"},
+        "Madlen": {"gender": "f", "lang": "el", "age": "young", "about": "casual, aegean, conversational", "id": "Jv2zcgjn9Qu0uNMKJjb1"},
+        "Agapi": {"gender": "f", "lang": "el", "age": "young", "about": "casual, advertisement", "id": "XZ8zM3TBDcQnbvfD1YDK"},
+        "Christina": {"gender": "f", "lang": "el", "age": "young", "about": "calm, narrative story", "id": "TaxceJVmw8PImjbbbz3w"},
+        "Maria": {"gender": "f", "lang": "el", "age": "young", "about": "casual, athenian, narrative story", "id": "ZvNtavtkYB5WSlSIOcoj"},
+        "Zenia": {"gender": "f", "lang": "el", "age": "young", "about": "calm, athenian, narrative story", "id": "qq6iLYCLMNznH8v9gGx5"},
+        "Martha": {"gender": "f", "lang": "el", "age": "middle", "about": "professional, cypriot, informative educational", "id": "JrrE7QTGDmQKQuUnqk7H"},
+        "Katerina-L": {"gender": "f", "lang": "el", "age": "middle", "about": "confident, narrative story", "id": "t7C9cEkpMwHG1IMZlJJ5"},
+        "Theos": {"gender": "m", "lang": "el", "age": "middle", "about": "professional, narrative story", "id": "n0vzWypeCK1NlWPVwhOc"},
+        "Stefanos": {"gender": "m", "lang": "el", "age": "young", "about": "calm, athenian, narrative story", "id": "20zUtLxCwVzsFDWub4sB"},
+        "Eugene": {"gender": "m", "lang": "el", "age": "middle", "about": "casual, narrative story", "id": "5DAtyqt3LGjv9jkjNVFd"},
+        "Christos": {"gender": "m", "lang": "el", "age": "middle", "about": "confident, narrative story", "id": "PaZ8laODC1yRxHTPYJFh"},
+        "Kyriakos": {"gender": "m", "lang": "el", "age": "middle", "about": "pleasant, informative educational", "id": "6z1Ks05MOtac6wYNh9PJ"},
+        "Atlas": {"gender": "m", "lang": "el", "age": "old", "about": "confident, narrative story", "id": "ejJ1ETWS2ohLMMeCu1H3"},
+        "Georgios": {"gender": "m", "lang": "el", "age": "young", "about": "professional, conversational", "id": "TN3alZndDSA8GYZSOf3r"},
+        "Takis": {"gender": "m", "lang": "el", "age": "young", "about": "classy, informative educational", "id": "KDImLuG6RkuyuX5httC7"},
+        "Fatsis": {"gender": "m", "lang": "el", "age": "middle", "about": "pleasant, athenian, narrative story", "id": "cuab90umcstNgL8U7orz"},
+        "Elias": {"gender": "m", "lang": "el", "age": "middle", "about": "confident, social media", "id": "LjADh1ECU2fAah7OCeE8"},
+        "Theon": {"gender": "m", "lang": "el", "age": "middle", "about": "calm, narrative story", "id": "gFpOFEriJA3T1VbGi2Be"},
+        "Konstantinos": {"gender": "m", "lang": "el", "age": "middle", "about": "professional, athenian, advertisement", "id": "9xjHNaV3YwyHqzzgRuXl"},
+        "Menelaos": {"gender": "m", "lang": "el", "age": "young", "about": "casual, athenian, advertisement", "id": "0ZJ6CiTzPB5e41TNRP12"},
+        "Panos": {"gender": "m", "lang": "el", "age": "middle", "about": "confident, athenian, narrative story", "id": "BbaKfkUxNfvcfAmNo76e"},
+        "Stavros": {"gender": "m", "lang": "el", "age": "young", "about": "pleasant, conversational", "id": "3NIJOdpOh5ailCXf4Qmi"},
+        "Miltiadis": {"gender": "m", "lang": "el", "age": "old", "about": "deep, conversational", "id": "YjbHBTWH8WkGAhNrkp0i"},
+        "Angelos": {"gender": "m", "lang": "el", "age": "middle", "about": "professional, narrative story", "id": "WAiDT3LdFjZHIgDuqoqD"},
+        "Spyros": {"gender": "m", "lang": "el", "age": "middle", "about": "casual, athenian, conversational", "id": "aiLoXPalsEy9XgwZza9g"},
+        "Giannis": {"gender": "m", "lang": "el", "age": "young", "about": "chill, informative educational", "id": "OliGrmN98tfANxmOp5rL"},
+        "Iakovos": {"gender": "m", "lang": "el", "age": "young", "about": "casual, athenian, social media", "id": "y83PW0HE5BFHEduP7GHI"},
+        "Yiannis": {"gender": "m", "lang": "el", "age": "young", "about": "casual, narrative story", "id": "2KCRgZhHPaecTJfl6gAl"},
+        "Derya": {"gender": "f", "lang": "tr", "age": "young", "about": "casual, narrative story", "id": "NNn9dv8zq2kUo7d3JSGG"},
+        "Ahu": {"gender": "f", "lang": "tr", "age": "middle", "about": "casual, istanbul, conversational", "id": "xyqF3vGMQlPk3e7yA4DI"},
+        "Elif": {"gender": "f", "lang": "tr", "age": "young", "about": "calm, istanbul, conversational", "id": "4XsbOSxQHw4NUVaEeo2o"},
+        "Fili": {"gender": "f", "lang": "tr", "age": "young", "about": "calm, istanbul, conversational", "id": "FDs1ZX5J4e4f2c2erxtW"},
+        "Hurrem": {"gender": "f", "lang": "tr", "age": "middle", "about": "professional, istanbul, narrative story", "id": "TASY7VCrU29rEMoYFTGG"},
+        "Hasan": {"gender": "m", "lang": "tr", "age": "middle", "about": "casual, istanbul, conversational", "id": "tILIOdKERNNbBHVEXk7I"},
+        "Yunus": {"gender": "m", "lang": "tr", "age": "young", "about": "confident, istanbul, conversational", "id": "Q5n6GDIjpN0pLOlycRFT"},
+        "Kaya": {"gender": "m", "lang": "tr", "age": "young", "about": "calm, istanbul, narrative story", "id": "Vv1QW9Yx3WB2mLKFmyZG"},
+        "Ozan": {"gender": "m", "lang": "tr", "age": "middle", "about": "professional, istanbul, narrative story", "id": "5nr6ATQepuidiLb6OT3B"},
+        "Mehmet": {"gender": "m", "lang": "tr", "age": "middle", "about": "confident, istanbul, social media", "id": "LCHGt3rsPMP50Vs28amI"}
       }
     }
   }

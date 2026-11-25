@@ -15,6 +15,8 @@ Providers (each makes mp3 bytes from a text and a role, female or male):
 For the podcast lessons only (podcast_providers(), docs/PODCASTS.md):
   gemini  Google Gemini TTS, with the learner's own Gemini API key: two speakers acted together in
           one request, a described style per speaker, Greek inside a Turkish sentence.
+  elevenlabs  ElevenLabs v4, with the learner's own key and plan: up to ten speakers acted together
+          in one request, each in a native voice from its library, Greek inside a Turkish sentence.
 
 Keys come from learner/secrets.env or the environment and are only ever sent to their own
 provider. Only content text is sent, never learner data.
@@ -196,6 +198,9 @@ class Provider:
     dialogue = False      # acts two speakers together in one request (make_exchange)
     mixed = False         # says Greek words inside a Turkish or English sentence correctly
     podcast_only = False  # never makes the app's clips (its audio is not mp3; the podcast joins it)
+    max_speakers = 2      # people in one acted request
+    max_chars = 2400      # characters in one acted request
+    style_kind = "describe"  # how a line's manner and pace are asked for: a described style, or "tags"
 
     def ready(self, keys: dict, profile: dict) -> str | None:
         """None if it can be used, else why not (shown to the learner)."""
@@ -236,7 +241,7 @@ def _post(url: str, body: bytes, headers: dict, timeout: float = 60, tries: int 
             return urllib.request.urlopen(req, timeout=timeout).read()
         except urllib.error.HTTPError as e:
             detail = ""
-            if e.code == 429:  # which limit: a day's or a minute's (Gemini says so in the body)
+            if e.code in (400, 401, 402, 422, 429):  # which limit, or what is wrong: the body says
                 try:
                     detail = " " + e.read().decode("utf-8", "replace")[:400]
                 except Exception:
@@ -411,6 +416,66 @@ class Gemini(Provider):
         return self._speak(parts, speech, keys)
 
 
+class ElevenLabs(Provider):
+    """ElevenLabs v4 through its text-to-dialogue API (the learner's own key and plan). Podcasts only.
+    Up to ten people in one request, each in a voice of its library (src/oknos/casting.json, family
+    "elevenlabs"), Greek inside a Turkish line included. A line's pace is an audio tag in front of it
+    ("[slowly]": v4 acts it, about 0.7 of the normal pace, and does not say it). It answers with raw
+    16-bit PCM at 24 kHz, returned as a WAV file. The plan's credits are a hard cap: no overage."""
+
+    MODEL = "eleven_v4"
+    named = dialogue = mixed = podcast_only = True
+    max_speakers = 10
+    max_chars = 2000  # the API's advice for one request
+    style_kind = "tags"
+    RETRY_WAITS = (5, 15, 30, 60)  # seconds before asking again when busy (429) or after a server error
+    URL = "https://api.elevenlabs.io"
+
+    def ready(self, keys, profile):
+        return None if keys.get("ELEVENLABS_API_KEY") else "needs ELEVENLABS_API_KEY"
+
+    def _dialogue(self, inputs: list[dict], keys: dict) -> bytes:
+        body = json.dumps({"model_id": self.MODEL, "inputs": inputs, "seed": 7}, ensure_ascii=False).encode("utf-8")
+        headers = {"Content-Type": "application/json", "xi-api-key": keys["ELEVENLABS_API_KEY"]}
+        for wait in (*self.RETRY_WAITS, None):
+            try:
+                pcm = _post(f"{self.URL}/v1/text-to-dialogue?output_format=pcm_24000", body, headers, timeout=300)
+                break
+            except Refused as e:
+                if "quota_exceeded" in str(e):
+                    raise Refused("the ElevenLabs plan's credits for this month are used up (they reset on the "
+                                  "plan's renewal day)") from None
+                if wait is None or str(e)[:3] not in ("429", "500", "502", "503", "504"):
+                    raise
+                time.sleep(wait)
+        if len(pcm) < 2400:  # under 0.05 s: no speech came back
+            raise Refused("no audio in the answer")
+        return pcm_to_wav(pcm, 24000)
+
+    @staticmethod
+    def _input(text: str, name: str, style: str | None) -> dict:
+        from oknos import casting  # casting imports this module
+
+        return {"text": f"{style} {text}" if style else text, "voice_id": casting.voice_id("elevenlabs", name)}
+
+    def make(self, text, role, keys, lang="el", voice_name=None, style=None):
+        return self._dialogue([self._input(text, voice_name or self.voice(role, lang), style)], keys)
+
+    def make_exchange(self, turns: list[tuple[str, str, str, str | None]], keys: dict) -> bytes:
+        """People acted together: turns are (speaker, voice name, text, audio tag or None)."""
+        return self._dialogue([self._input(text, name, style) for _, name, text, style in turns], keys)
+
+    def credits_left(self, keys: dict) -> int | None:
+        """The plan's credits left this month, or None when the key may not read them."""
+        try:
+            req = urllib.request.Request(f"{self.URL}/v1/user/subscription",
+                                         headers={"User-Agent": USER_AGENT, "xi-api-key": keys["ELEVENLABS_API_KEY"]})
+            sub = json.loads(urllib.request.urlopen(req, timeout=20).read())
+            return int(sub["character_limit"]) - int(sub["character_count"])
+        except Exception:
+            return None
+
+
 def pcm_to_wav(pcm: bytes, rate: int = 24000) -> bytes:
     import io
     import wave
@@ -442,10 +507,13 @@ def providers() -> dict[str, Provider]:
 
 
 def podcast_providers() -> dict[str, Provider]:
-    """The app's providers plus those that make podcasts only (Gemini)."""
+    """The app's providers plus those that make podcasts only (Gemini, ElevenLabs)."""
     return {**providers(),
             "gemini": Gemini("gemini", {"f": "Kore", "m": "Orus"}, None, label="Google Gemini TTS (podcasts only)",
-                             family="google", lang_voices={"tr": {"f": "Kore", "m": "Orus"}, "en": {"f": "Kore", "m": "Orus"}})}
+                             family="google", lang_voices={"tr": {"f": "Kore", "m": "Orus"}, "en": {"f": "Kore", "m": "Orus"}}),
+            "elevenlabs": ElevenLabs("elevenlabs", {"f": "Crhysa", "m": "Christos"}, None,
+                                     label="ElevenLabs v4 (podcasts only)", family="elevenlabs",
+                                     lang_voices={"tr": {"f": "Gozde", "m": "Arman"}, "en": {"f": "Gozde", "m": "Arman"}})}
 
 
 DEFAULT_ORDER = ["google"]  # a new learner: Google with their own key; else the browser voice

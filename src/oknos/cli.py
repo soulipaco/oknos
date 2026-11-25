@@ -681,6 +681,10 @@ def cmd_podcast(args) -> int:
                     left = v["daily_requests"] - v["requests_today"]
                     warn = " Not enough left for today: render after midnight Pacific time." if v["requests"] > left else ""
                     print(f"  {name} allows {v['daily_requests']} requests a day; about {left} are left today.{warn}")
+                if v.get("credits_left") is not None:
+                    warn = " It may not fit: the episode goes to the next service." if v["chars"] > v["credits_left"] else ""
+                    print(f"  {name}: {v['credits_left']:,} credits left this month (about 0.4 a character in v4 "
+                          f"dialogue, at most 1).{warn}")
             if cost.get("cast"):
                 print("Cast: " + ", ".join(f"{c['name']} = {c['voice']}" for c in cost["cast"].values()))
             if cost["no_service"]:

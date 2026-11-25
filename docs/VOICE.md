@@ -44,6 +44,8 @@ Tested and not offered: OpenAI tts-1-hd (unclear Greek), Chatterbox Multilingual
 
 **For the podcasts only: Gemini TTS** (Google's Gemini API, `GEMINI_API_KEY` from aistudio.google.com/apikey in a project with billing and prepaid credit; the paid tier does not use the text for training). It won a second blind test of seven setups on podcast excerpts on 2026-11-25 (17 of 20, against 12.5 for Azure line by line): two speakers acted together, a described style per person, Greek inside a Turkish sentence. About $0.20 a 14-minute episode until 2026-12-31, then about $0.40. It never makes the app's clips (`voice.podcast_providers()`); the podcast's own list is `podcast.providers` in the profile. Google Chirp 3 HD has the same 30 voices (14 female, 16 male) by name in Greek, Turkish and English, and is the fallback. How an episode is cast: `docs/PODCASTS.md`, "The voices".
 
+**For the podcasts only: ElevenLabs v4** (elevenlabs.io, `ELEVENLABS_API_KEY`, a paid plan for its library voices). On 2026-11-25 the maintainer heard it beside Gemini and preferred it (v4 > Gemini > ElevenLabs v3), so their podcast list is ElevenLabs, then Gemini, then Chirp 3 HD. Up to ten people are acted in one request, each in a native Greek or Turkish voice of its library; the plan's monthly credits are a hard cap (about 0.4 a character, measured).
+
 For the podcast lessons (`docs/PODCASTS.md`) each keyed service also speaks Turkish and English: Azure Emel and Ahmet (tr), Ava and Andrew (en); Google Chirp 3 HD Kore and Orus (tr-TR, en-US); OpenAI coral and ash. Those clips are kept in `learner/voice/tr/` and `learner/voice/en/`; edge-tts never makes them, as the scripts are the agent's own texts.
 
 Each character in the book's dialogues gets a voice of their kind (Zeynep and Katerina the female voice, Giorgos and Stelios the male one; `src/oknos/speakers.json`), so a dialogue sounds like two people.
@@ -56,6 +58,7 @@ Keys go in `learner/secrets.env` (git never tracks `learner/`), one per line. Th
 - **Azure:** azure.microsoft.com/free with a Microsoft account → create a *Speech* resource, region West Europe, pricing tier *Free F0* → Keys and Endpoint → `AZURE_SPEECH_KEY=…` and `AZURE_SPEECH_REGION=westeurope`
 - **OpenAI:** platform.openai.com/api-keys → new secret key, Restricted with *Audio* on → `OPENAI_API_KEY=…`
 - **Gemini (podcasts):** aistudio.google.com/apikey → Create API key, in a project with billing → add prepaid credit (ai.studio/projects) → `GEMINI_API_KEY=…`; then `"podcast": {"providers": ["gemini", "google"]}` in `learner/profile.json`.
+- **ElevenLabs (podcasts):** elevenlabs.io → a paid plan (Starter or higher; the API cannot use library voices on Free) → Profile → API Keys → Create, with Text to Speech, Voices read and User read → `ELEVENLABS_API_KEY=…`; then `"podcast": {"providers": ["elevenlabs", "gemini", "google"]}` in `learner/profile.json`.
 - **edge-tts:** nothing to set up; your agent asks for your yes once.
 
 The order is `voice.providers` in `learner/profile.json` (the Voice screen changes it). A new learner starts with `["google"]`.
