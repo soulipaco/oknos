@@ -622,3 +622,17 @@ def test_gemini_stops_at_once_when_the_days_requests_are_used_up(learner, monkey
     with pytest.raises(voice.Refused, match="daily limit"):
         voice.podcast_providers()["gemini"].make("Γεια!", "f", {"GEMINI_API_KEY": "k"})
     assert slept == []
+
+
+@pytest.mark.skipif(not HAS_FFMPEG, reason="ffmpeg joins the clips")
+def test_an_episode_that_does_not_fit_the_days_gemini_requests_goes_whole_to_the_fallback(learner, monkeypatch):
+    actor, reader = Actor(), Reader()
+    monkeypatch.setattr(podcast, "_chain", lambda profile, keys: [actor, reader])
+    raw = cast_script()
+    raw["segments"] = raw["segments"][:11]  # no Greek inside Turkish: the fallback can say all of it
+    write(learner, raw)
+    voice._add_usage(f"gemini_requests_{voice.quota_day()}", podcast.GEMINI_DAILY_REQUESTS - 2)
+    cost = podcast.check("open.first-words.tr")["cost"]
+    assert list(cost["by_provider"]) == ["google"]
+    meta = podcast.render("open.first-words.tr")
+    assert actor.calls == [] and set(meta["made"]) == {"google"}

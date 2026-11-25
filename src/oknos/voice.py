@@ -365,6 +365,10 @@ class Gemini(Provider):
                 break
             except Refused as e:
                 if "PerDay" in str(e) or "per day" in str(e):
+                    # Count the day as used up, so the next episode today goes to the fallback at once.
+                    left = 100 - requests_today("gemini")
+                    if left > 0:
+                        _add_usage(f"gemini_requests_{quota_day()}", left)
                     raise Refused("Gemini's daily limit is reached (Tier 1: 100 requests a day per model); it resets "
                                   "at midnight Pacific time") from None
                 if wait is None or not str(e)[:3] in ("429", "500", "502", "503", "504"):

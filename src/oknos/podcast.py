@@ -567,7 +567,7 @@ def _ask(req: dict, p: voice.Provider, keys: dict, text_of=lambda x: x["text"]) 
 
 def _cast_cost(script: Script, chain, profile, keys, used) -> dict:
     members, who_of = casting.speakers(script)
-    _, units, chain = _planned(script, who_of, chain, keys, profile)
+    _, units, chain = _planned(script, who_of, chain, keys, profile, members, script.lang)
     requests: dict[str, int] = {}
     by_lang: dict[str, dict] = {}
     by_provider: dict[str, int] = {}
@@ -637,28 +637,33 @@ def _sound(exe: str, kind: str, tmpdir: Path) -> bytes:
         return w.readframes(w.getnframes())
 
 
-def _planned(script: Script, who_of: dict[int, str], chain, keys, profile) -> tuple[list, list[Unit], list]:
-    """Pick the service (on the finest plan: what it must be able to say does not depend on the
-    grouping), then plan for it."""
+def _planned(script: Script, who_of: dict[int, str], chain, keys, profile,
+             members: dict | None = None, lang: str = "tr") -> tuple[list, list[Unit], list]:
+    """One service voices the whole episode: the first that can say all of it and, for Gemini, whose
+    requests still to make fit what is left of the day's limit (else the next one makes the whole
+    episode: an episode in the fallback's sound rather than none). A refusal halfway then stops the
+    render (clips made so far are kept, so a second render goes on from there) instead of mixing two
+    services' sounds in one episode."""
     fine = [u for u in plan(script, who_of, acts=False) if isinstance(u, Unit)]
-    chain = _episode_chain(fine, chain, keys, profile)
-    items = plan(script, who_of, acts=bool(chain and chain[0].dialogue))
-    return items, [u for u in items if isinstance(u, Unit)], chain
-
-
-def _episode_chain(units: list[Unit], chain, keys, profile) -> list:
-    """One service voices the whole episode: the first that can make every unit. A refusal halfway
-    then stops the render (clips made so far are kept, so a second render goes on from there)
-    instead of mixing two services' sounds in one episode."""
     for p in chain:
-        if all(_can(p, u, keys, profile) for u in units):
-            return [p]
-    return chain
+        if not all(_can(p, u, keys, profile) for u in fine):
+            continue
+        items = plan(script, who_of, acts=p.dialogue)
+        units = [u for u in items if isinstance(u, Unit)]
+        if p.name == "gemini" and members is not None:
+            voices = casting.assign(members, casting.family_of(p.name))
+            needed = sum(1 for u in units for req in _requests(u, p, voices, members, lang)
+                         if not cast_clip(_request_key(req, p)).is_file())
+            if needed > GEMINI_DAILY_REQUESTS - voice.requests_today("gemini"):
+                continue
+        return items, units, [p]
+    items = plan(script, who_of, acts=False)
+    return items, [u for u in items if isinstance(u, Unit)], chain
 
 
 def _render_cast(pid: str, script: Script, exe: str, chain, profile, keys, progress) -> dict:
     members, who_of = casting.speakers(script)
-    items, units, chain = _planned(script, who_of, chain, keys, profile)
+    items, units, chain = _planned(script, who_of, chain, keys, profile, members, script.lang)
     out_dir = episode_dir(pid)
     made: dict[str, int] = {}
     spent: dict[str, int] = {}
