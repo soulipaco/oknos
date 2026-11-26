@@ -1,0 +1,20 @@
+name: Idea
+description: Something Oknos could do or do better.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you would like
+      description: The problem or wish first, then the idea. Who is it for, a learner or someone developing Oknos?
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: How it could work
+      description: Optional. A sketch, an example, or how another app does it.
+  - type: markdown
+    attributes:
+      value: |
+        Oknos stays local-first, works without an agent for daily study, and adds few dependencies. Ideas that need an account or a cloud service holding learner data will not fit. Longer conversations are welcome in [Discussions](https://github.com/soulipaco/oknos/discussions).

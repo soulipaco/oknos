@@ -1,0 +1,46 @@
+name: Bug report
+description: Something in the app does not work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting this. **Never paste learner data or keys here:** nothing from `learner/` (answers, writing, recordings, `profile.json`, `oknos.db`) and nothing from `learner/secrets.env`. This page is public.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to see it
+      description: What you did, one step per line. A screenshot helps, if it shows no personal data.
+      placeholder: |
+        1. uv run oknos start
+        2. Open Book, then lesson 3
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: Windows 11, macOS 15, Ubuntu 24.04 ...
+    validations:
+      required: true
+  - type: textarea
+    id: health
+    attributes:
+      label: Output of `uv run oknos health`
+      description: Run it in the Oknos folder and paste what it prints. Replace your user name in any path with `you`.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else
+      description: The browser, an error from the terminal, whether an agent set it up.

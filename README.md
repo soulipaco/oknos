@@ -260,6 +260,10 @@ Claude Code and Codex are the two it is used with, and the scheduled runs start 
 
 The commands, how the code is laid out, and the documents behind it are in [docs/DEVELOPING.md](docs/DEVELOPING.md). A coding agent starts from [AGENTS.md](AGENTS.md): tell yours what you want to change.
 
+## Contributing
+
+Fixes to the Greek are as welcome as fixes to the code, and you can make them with or without an agent. Found a mistake in a lesson? [Open a content issue](https://github.com/soulipaco/oknos/issues/new?template=content.yml): the ⚑ flag in the app only reaches your own coach. How to check and send a change is in [CONTRIBUTING.md](CONTRIBUTING.md); questions go to [Discussions](https://github.com/soulipaco/oknos/discussions), security problems to [SECURITY.md](SECURITY.md), and everyone follows the [Code of Conduct](CODE_OF_CONDUCT.md).
+
 ## Licences and thanks
 
 <p>

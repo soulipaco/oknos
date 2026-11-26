@@ -1,0 +1,40 @@
+name: Greek or content error
+description: A mistake in the Greek, a meaning, an exercise or a chapter.
+labels: [content]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The ⚑ flag in the app only reaches your own coach, so an issue here is how a fix reaches everyone. Thank you.
+  - type: input
+    id: where
+    attributes:
+      label: Where it is
+      description: The lesson and section, or the exercise. The file and item id if you know them.
+      placeholder: Lesson 5, "Grammar" section; or content/open/oknos-book/lessons/lesson-05.json
+    validations:
+      required: true
+  - type: textarea
+    id: text
+    attributes:
+      label: The text as it is now
+      description: Copy the Greek (and the Turkish or English) exactly.
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong
+      description: A spelling, an accent, a grammar rule, a meaning, an unnatural phrase, a wrong answer key, a confusing explanation ...
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: The correction
+      description: How it should read. Leave it empty if you are not sure.
+  - type: input
+    id: source
+    attributes:
+      label: Source, if any
+      description: A dictionary, a grammar, or "native speaker".

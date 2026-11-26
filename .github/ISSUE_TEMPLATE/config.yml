@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or conversation
+    url: https://github.com/soulipaco/oknos/discussions
+    about: Ask how something works, or talk an idea through.
+  - name: Security problem
+    url: https://github.com/soulipaco/oknos/security/advisories/new
+    about: Report it privately, not in a public issue.
