@@ -1,21 +1,21 @@
 """Make the voice clips shipped with the open content (docs/VOICE.md, "Clips shipped with the open content").
 
     uv run python scripts/ship_voice.py --check                  # what is missing or stale, make nothing
-    uv run python scripts/ship_voice.py --secrets <secrets.env>  # make the missing clips (Gemini), resumable
-    uv run python scripts/ship_voice.py --secrets <...> --provider google  # with Chirp 3 HD instead
+    uv run python scripts/ship_voice.py --secrets <secrets.env>  # make the missing clips (Chirp 3 HD), resumable
+    uv run python scripts/ship_voice.py --secrets <...> --provider gemini  # with Gemini TTS instead
     uv run python scripts/ship_voice.py --secrets <...> --prune  # also delete clips no open text uses any more
 
 Every Greek text of the tracked open packs (content/open/open-*, the open book's chapters
-included) that the app can speak gets one clip, made with a Google voice: Gemini TTS (the default
-since 2026-11-26, the maintainer's choice for everything published) or Cloud Text-to-Speech, Chirp
-3 HD. Kore for the narrator and female speakers, Orus for male ones (src/oknos/voice.py's role_of).
+included) that the app can speak gets one clip, made with a Google voice: Cloud Text-to-Speech, Chirp
+3 HD (the default: no daily limit, a million characters free a month; the maintainer kept it on
+2026-11-26) or Gemini TTS. Kore for the narrator and female speakers, Orus for male ones (src/oknos/voice.py's role_of).
 A clip made by the other one is made again, so the set has one voice; index.json says who made
 each clip ("p"). Never the private book (content/private/) or the coach's per-learner packs
 (learner/generated/). Only a service whose terms let its audio be published may make them
 (voice.Provider.publishable: Google's; never ElevenLabs, Azure's free tier or edge-tts).
 
-Gemini's paid Tier 1 allows 100 requests a day: when the day's are used up the run stops, keeps
-what it made, and the same command goes on the next day.
+With Gemini, the paid Tier 1 allows 100 requests a day: when the day's are used up the run stops,
+keeps what it made, and the same command goes on the next day.
 
 The clips sit in content/open-voice/ with the same names as learner/voice/ (role/xx/<key>.mp3, the
 key made from the role and the text), so the app finds either with one lookup. index.json lists
@@ -131,7 +131,7 @@ def load_key(path: str | None, wanted: str = "GOOGLE_TTS_API_KEY") -> str | None
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--secrets", help="a secrets.env holding GEMINI_API_KEY or GOOGLE_TTS_API_KEY (e.g. the main checkout's learner/secrets.env)")
-    ap.add_argument("--provider", choices=sorted(KEYS), default="gemini", help="who makes the clips (default gemini)")
+    ap.add_argument("--provider", choices=sorted(KEYS), default="google", help="who makes the clips (default google: Chirp 3 HD)")
     ap.add_argument("--check", action="store_true", help="report what is missing or stale, make nothing")
     ap.add_argument("--prune", action="store_true", help="delete clips no open text uses any more")
     ap.add_argument("--recheck", action="store_true", help="find silent clips among those made and make them again")

@@ -3027,8 +3027,8 @@ const VOICE_INFO = {  // what each one costs, from the listening test of 2026-11
              tr: ["console.cloud.google.com: ücretsiz denemeyi başlat ve bir proje oluştur.", "Cloud Text-to-Speech API'yi etkinleştir.", "Credentials → Create credentials → API key; yalnızca Cloud Text-to-Speech API ile sınırla.", "learner/secrets.env dosyasına GOOGLE_TTS_API_KEY=… satırını ekle."] },
   },
   gemini: {
-    pros: { en: "Google's Gemini voices (Kore and Orus), the voice of the clips that come with the app since 2026-11-26. Your own Gemini API key; a few cents for the whole book.",
-            tr: "Google'ın Gemini sesleri (Kore ve Orus); 2026-11-26'dan beri uygulamayla gelen kliplerin sesi. Kendi Gemini API anahtarınla; bütün kitap birkaç sent." },
+    pros: { en: "Google's Gemini voices (Kore and Orus), the voice of the films since 2026-11-26. Your own Gemini API key; a few cents for the whole book.",
+            tr: "Google'ın Gemini sesleri (Kore ve Orus); 2026-11-26'dan beri filmlerin sesi. Kendi Gemini API anahtarınla; bütün kitap birkaç sent." },
     cons: { en: "Needs an AI Studio project with billing and prepaid credit, and ffmpeg on this computer (it makes the clips mp3). The paid tier allows about 100 clips a day, so the book takes some days.",
             tr: "Faturalandırması ve ön ödemeli kredisi olan bir AI Studio projesi ve bu bilgisayarda ffmpeg gerekir (klipleri mp3 yapar). Ücretli katman günde yaklaşık 100 klip yapar; kitap birkaç gün sürer." },
     setup: { en: ["aistudio.google.com/apikey → Create API key, in a project with billing.", "Add prepaid credit to the project (a few dollars is plenty).", "Add GEMINI_API_KEY=… to learner/secrets.env."],
