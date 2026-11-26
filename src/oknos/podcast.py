@@ -464,6 +464,7 @@ def render(pid: str, *, wait: bool = False, progress: Callable[[str, int, int], 
 MAX_TURNS = 24              # lines in one request
 MAX_EXCHANGE_CHARS = 2400   # characters in one request
 GEMINI_DAILY_REQUESTS = 100
+ELEVEN_CREDITS_PER_CHAR = 0.6  # what an episode is reckoned to cost on ElevenLabs v4 (measured 0.40-0.55)
 AUDIO_TOKENS_PER_SECOND = 25  # Gemini bills audio by tokens, about 25 a second of speech
 
 
@@ -670,9 +671,11 @@ def _planned(script: Script, who_of: dict[int, str], chain, keys, profile,
                 continue
             if p.name == "elevenlabs" and todo:
                 # The plan's credits are a hard cap: an episode that may not fit goes whole to the next
-                # service. A character costs at most a credit (v4 dialogue measured about 0.4).
+                # service. Measured: 0.40 a character in dialogue, 0.55 for single words; 0.6 keeps
+                # a margin. Should the credits still run out halfway, the render stops and keeps its
+                # clips (no mixing of two services' sounds).
                 left = p.credits_left(keys)
-                if left is not None and sum(len(x["text"]) for r in todo for x in r["lines"]) > left:
+                if left is not None and ELEVEN_CREDITS_PER_CHAR * sum(len(x["text"]) for r in todo for x in r["lines"]) > left:
                     continue
         return items, units, [p]
     items = plan(script, who_of, acts=False)
