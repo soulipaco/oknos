@@ -37,7 +37,8 @@ def _git(args: list[str], cwd: Path) -> str:
 # (its use policy forbids passing its audio on under more permissive terms), Azure's free tier or
 # edge-tts. Each manifest names who made each clip.
 PUBLISHABLE = ("google", "gemini")
-AUDIO_MANIFESTS = {"content/open-voice/index.json": "clips", "docs/brand/animations/voice/made_with.json": None}
+AUDIO_MANIFESTS = {"content/open-voice/index.json": "clips", "docs/brand/animations/voice/made_with.json": None,
+                   "content/open-podcasts/index.json": "episodes"}
 
 
 def _audio_makers(repo: Path, rev: str | None, files: list[str]) -> list[str]:

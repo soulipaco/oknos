@@ -548,6 +548,49 @@ def test_a_service_without_dialogue_reads_line_by_line_and_cannot_say_mixed_line
         podcast.render("open.first-words.tr")
 
 
+def test_chirp_makes_a_mixed_line_in_pieces_one_language_each_in_one_voice(learner, monkeypatch):
+    assert podcast.split_mixed("Evet dediğimde, yani Ναι dediğimde, herkes güldü.", "tr") == [
+        ("tr", "Evet dediğimde, yani"), ("el", "Ναι"), ("tr", "dediğimde, herkes güldü.")]
+    assert podcast.split_mixed("Garson “χαλβάς” dedi. Ήμουν. Είμαι'nin geçmişi.", "tr") == [
+        ("tr", "Garson"), ("el", "χαλβάς"), ("tr", "dedi."), ("el", "Ήμουν. Είμαι"), ("tr", "nin geçmişi.")]
+    reader = Reader()
+    reader.splits = True
+    langs = []
+    real = reader.make
+    monkeypatch.setattr(reader, "make", lambda text, role, keys, lang="el", **kw: langs.append((lang, text))
+                        or real(text, role, keys, lang=lang, **kw))
+    monkeypatch.setattr(podcast, "_chain", lambda profile, keys: [reader])
+    write(learner, cast_script())
+    meta = podcast.render("open.first-words.tr")
+    assert ("el", "Ναι") in langs and ("tr", "Evet dediğimde, yani") in langs
+    last = meta["lines"][-1]
+    assert last["say"].startswith("Evet dediğimde") and last["who"] == "mert"  # one line in the timeline
+    assert len(meta["clips"]) == len(set(meta["clips"])) >= len(langs)
+
+
+def test_a_shipped_episode_plays_until_the_learner_renders_their_own(client, learner, monkeypatch):
+    shipped = podcast.shipped_dir() / "open.first-words.tr"
+    shipped.mkdir(parents=True)
+    (shipped / "script.json").write_text(json.dumps(script(), ensure_ascii=False), encoding="utf-8")
+    (shipped / "episode.mp3").write_bytes(b"ID3shipped")
+    (shipped / "episode.json").write_text(json.dumps({
+        "id": "open.first-words.tr", "kind": "chapter", "lang": "tr", "stage": "first-words",
+        "rendered": "2026-11-26T10:00:00", "seconds": 60, "parts": [],
+        "script": podcast.script_hash("open.first-words.tr", shipped)}), encoding="utf-8")
+    listing = client.get("/api/podcasts").json()
+    assert listing["by_stage"] == {"first-words": "open.first-words.tr"}
+    one = client.get("/api/podcasts/open.first-words.tr").json()
+    assert one["shipped"] is True and one["stale"] is False
+    assert client.get("/podcasts/open.first-words.tr.mp3").content == b"ID3shipped"
+    # The learner's own rendering, once there, wins.
+    monkeypatch.setattr(podcast, "_chain", lambda profile, keys: [Speaker("azure")])
+    write(learner, script())
+    podcast.render("open.first-words.tr")
+    assert client.get("/api/podcasts/open.first-words.tr").json()["shipped"] is False
+    assert client.get("/podcasts/open.first-words.tr.mp3").content != b"ID3shipped"
+    assert [e["id"] for e in client.get("/api/podcasts").json()["episodes"]] == ["open.first-words.tr"]
+
+
 def test_the_podcast_has_its_own_list_and_only_google_may_be_published(learner):
     # Since 2026-11-26 Gemini and ElevenLabs make the app's clips too, when the learner lists them.
     assert {"gemini", "elevenlabs"} <= set(voice.providers())

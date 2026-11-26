@@ -154,7 +154,21 @@ Turkish and English clips are kept in `learner/voice/<lang>/` beside the Greek o
 
 ## The page
 
-`?podcast` lists the episodes, newest first; `?podcast=<id>` plays one: the parts to jump to, the speed (0.8×, 1×, 1.25×), the position kept on that device, the title on the phone's lock screen, a download link and the script as text. The Book screen and a chapter's reader show "Listen" when the chapter has an episode. The server serves only `learner/podcasts/<id>/episode.mp3` (`/podcasts/<id>.mp3`, with range requests so the phone can seek).
+`?podcast` lists the episodes, newest first; `?podcast=<id>` plays one: the parts to jump to, the speed (0.8×, 1×, 1.25×), the position kept on that device, the title on the phone's lock screen, a download link and the script as text. The Book screen and a chapter's reader show "Listen" when the chapter has an episode. The server serves the learner's own `learner/podcasts/<id>/episode.mp3`, else the shipped `content/open-podcasts/<id>/episode.mp3` (`/podcasts/<id>.mp3`, with range requests so the phone can seek).
+
+## Shipped episodes (2026-11-26)
+
+The Oknos book's chapter episodes come with the repository, so a fresh clone can listen with no key: `content/open-podcasts/<id>/` holds the script, `episode.json` and `episode.mp3` (mono, 32 kb/s), CC BY-SA 4.0 like the book. `index.json` says which service voiced each one (`p`); `oknos guard` fails unless it is a service whose terms let its audio be published (Google's Chirp 3 HD or Gemini TTS, never ElevenLabs, Azure's free tier or edge-tts). The app plays the learner's own rendering of an episode first, then the shipped one (`shipped` in `/api/podcasts`).
+
+```
+uv run python scripts/ship_podcasts.py --check                      # what is missing or out of date
+uv run python scripts/ship_podcasts.py                              # make them with Chirp 3 HD
+uv run python scripts/ship_podcasts.py --provider gemini <ids>      # with Gemini, as its daily requests allow
+```
+
+The script takes the chapter scripts from `learner/podcasts/` (never a personal one), sets the open book's curriculum and refs and drops pointers into `learner/`, renders them in `learner/podcasts-ship/` with that one service (the learner's own episodes are never touched; the clip cache in `learner/voice/podcast/` is shared, so a line already made with the same service and voice costs nothing), and copies the result. An episode is made again when its script changed or another service made it.
+
+Chirp 3 HD reads one language a request. A Turkish line with Greek inside ("yani Ναι dediğimde") is made in pieces, one language each, in the same voice (Chirp's voices have the same name in every language), and joined with a short gap; the timeline keeps it as one line (`split_mixed`, `Provider.splits`). Gemini and ElevenLabs say such a line in one breath. The maintainer's choice (2026-11-26): Chirp now, replaced with Gemini as its quota allows.
 
 ## Personal episodes (built 2026-11-24)
 
@@ -177,10 +191,10 @@ A personal script is a chapter script with `kind` `daily` or `weekly`, the `date
 ## Copyright and privacy (must hold)
 
 - Other people's podcasts, videos and posts are **sources of ideas only**: topics, which words and phrases come up, what learners ask, an episode worth listening to next (with a link). An episode never re-voices, translates or reproduces their content, and nothing is downloaded without the maintainer's yes for that source and a check of the platform's terms.
-- Each idea source is recorded in the script's `sources` (`{"what": "idea", "url": …, "note": what was taken}`). Scripts, notes and episodes live in `learner/` and are never tracked.
+- Each idea source is recorded in the script's `sources` (`{"what": "idea", "url": …, "note": what was taken}`). Scripts, notes and episodes live in `learner/` and are never tracked; only the open book's chapter episodes are copied out, by `scripts/ship_podcasts.py`.
 - Episodes of the private book or of a learner's record stay in `learner/podcasts/`; they are never shipped.
 - A chapter episode carries no personal data. Personal episodes are spoken only by a keyed service on the learner's own account, never by edge-tts, and hold learning content only (above).
-- Episodes that might ship with the repository one day come only from the open content, voiced by Google (as the shipped clips).
+- Shipped episodes come only from the open content, voiced by Google (as the shipped clips): "Shipped episodes" above.
 
 ## Later (not built)
 

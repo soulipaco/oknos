@@ -66,6 +66,10 @@ def learner(tmp_path, monkeypatch, _open_without_book):
     _roots(monkeypatch, _open_without_book, tmp_path, path)
     # The clips shipped in content/open-voice/ stay out too; tests of them set this themselves.
     monkeypatch.setattr(voice, "shipped_dir", lambda: tmp_path / "open-voice")
+    # So do the podcast episodes shipped in content/open-podcasts/.
+    from oknos import podcast
+
+    monkeypatch.setattr(podcast, "shipped_dir", lambda: tmp_path / "open-podcasts")
     return path
 
 

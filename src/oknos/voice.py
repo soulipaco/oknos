@@ -200,6 +200,7 @@ class Provider:
     named = False         # speaks with a voice chosen by name from the casting pool (src/oknos/casting.json)
     dialogue = False      # acts two speakers together in one request (make_exchange)
     mixed = False         # says Greek words inside a Turkish or English sentence correctly
+    splits = False        # else a mixed line is made in pieces, one language each, in one voice
     podcast_only = False  # never makes the app's clips (none today)
     publishable = False   # its terms let its audio be published openly (CC BY-SA): Google's do
     max_speakers = 2      # people in one acted request
@@ -337,6 +338,7 @@ class Edge(Provider):
 
 class Google(Provider):
     named = True  # Chirp 3 HD has the 30 voices of the casting pool, by name, in every language
+    splits = True  # so a Turkish line with Greek inside is made in pieces, the same voice in each language
     publishable = True  # Google lets its audio be used "in your applications or media" (Cloud terms)
 
     def ready(self, keys, profile):

@@ -147,13 +147,24 @@ def episode_dir(pid: str) -> Path:
     return podcasts_dir() / pid
 
 
-def audio_file(pid: str) -> Path | None:
-    """The episode's mp3, or None (unknown id, or not rendered yet)."""
+def shipped_dir() -> Path:
+    """The open book's episodes, shipped with the repo (content/open-podcasts/, scripts/ship_podcasts.py)."""
+    return paths.CONTENT_DIR / "open-podcasts"
+
+
+def _home(pid: str) -> Path | None:
+    """The folder whose episode plays: the learner's own rendering (learner/podcasts/), else the shipped one."""
     try:
-        f = episode_dir(pid) / "episode.mp3"
+        own = episode_dir(pid)
     except PodcastError:
         return None
-    return f if f.is_file() else None
+    return next((d for d in (own, shipped_dir() / pid) if (d / "episode.mp3").is_file()), None)
+
+
+def audio_file(pid: str) -> Path | None:
+    """The episode's mp3, or None (unknown id, or not rendered yet)."""
+    d = _home(pid)
+    return d / "episode.mp3" if d else None
 
 
 # ---------- reading and checking a script ----------
@@ -201,7 +212,7 @@ def problems(script: Script) -> tuple[list[str], list[str]]:
                 notes += [f"{where}: {x}" for x in n]
             elif greek.has_greek(seg.say) and seg.who in cast and "el" in cast[seg.who].lang:
                 notes.append(f"{where}: Greek inside a {seg.lang} line, said by {cast[seg.who].name} in one breath; "
-                             f"only a voice that speaks mixed lines (gemini, elevenlabs) can make it: {seg.say[:60]!r}")
+                             f"a voice that speaks mixed lines (gemini, elevenlabs) makes it whole, Chirp in pieces: {seg.say[:60]!r}")
             elif greek.has_greek(seg.say):
                 bad.append(f"{where}: Greek letters inside a {seg.lang} line (the {seg.lang} voice would mangle them; "
                            f"put the Greek in its own segment): {seg.say[:60]!r}")
@@ -346,8 +357,8 @@ def _silence(seconds: float) -> bytes:
     return b"\x00\x00" * int(round(seconds * RATE))
 
 
-def script_hash(pid: str) -> str:
-    return hashlib.sha1((episode_dir(pid) / "script.json").read_bytes()).hexdigest()[:12]
+def script_hash(pid: str, folder: Path | None = None) -> str:
+    return hashlib.sha1(((folder or episode_dir(pid)) / "script.json").read_bytes()).hexdigest()[:12]
 
 
 def render(pid: str, *, wait: bool = False, progress: Callable[[str, int, int], None] | None = None) -> dict:
@@ -516,7 +527,35 @@ def _mixed(seg: Say) -> bool:
 def _can(p: voice.Provider, unit: Unit, keys: dict, profile: dict) -> bool:
     if p.ready(keys, profile) or p.name == "edge":  # edge never: the scripts are the agent's own texts
         return False
-    return all(p.speaks(seg.lang) and (p.mixed or not _mixed(seg)) for seg, _ in unit.lines)
+    return all(p.speaks(seg.lang) and (p.mixed or not _mixed(seg) or (p.splits and p.speaks("el")))
+               for seg, _ in unit.lines)
+
+
+_GREEK_RUN = re.compile(rf"{greek.GREEK_LETTER}+(?:[\s,·’'\-]+{greek.GREEK_LETTER}+)*[;!.…]?")
+_EDGE = " 	“”«»\"'‘’()[]–—-"
+PIECE_GAP = 0.12  # seconds between the pieces of a split line
+
+
+def split_mixed(text: str, lang: str) -> list[tuple[str, str]]:
+    """A Turkish or English line with Greek inside, as (lang, piece) runs, for a service that reads one
+    language a request (Chirp 3 HD: its voices have the same name in every language, so the host keeps
+    one voice). Quotes and brackets at a piece's ends go; a piece with no letter is dropped."""
+    runs: list[tuple[str, str]] = []
+    pos = 0
+    for m in _GREEK_RUN.finditer(text):
+        runs += [(lang, text[pos:m.start()]), ("el", m.group())]
+        pos = m.end()
+    runs.append((lang, text[pos:]))
+    out: list[tuple[str, str]] = []
+    for lng, piece in runs:
+        piece = piece.strip(_EDGE).lstrip(",;:.!? ").strip(_EDGE)  # no piece starts with the last one's comma
+        if not any(c.isalpha() for c in piece):
+            continue
+        if out and out[-1][0] == lng:
+            out[-1] = (lng, f"{out[-1][1]} {piece}")
+        else:
+            out.append((lng, piece))
+    return out
 
 
 def _requests(unit: Unit, p: voice.Provider, voices: dict[str, str], members: dict, lang: str) -> list[dict]:
@@ -738,7 +777,7 @@ def _render_cast(pid: str, script: Script, exe: str, chain, profile, keys, progr
                         at += last
                         voices_used[x["who"]] = x["voice"] or x["role"]
                     prev = (req["lines"][-1]["who"], req["lines"][-1]["lang"])
-                    used_keys.append(k)
+                    used_keys += k
                     if p is not None:
                         made[p.name] = made.get(p.name, 0) + 1
                         spent[p.name] = spent.get(p.name, 0) + total
@@ -774,12 +813,34 @@ def _render_cast(pid: str, script: Script, exe: str, chain, profile, keys, progr
     return meta
 
 
+def _clip(req: dict, p: voice.Provider, keys: dict, exe: str, tmpdir: Path, speed: float) -> tuple[bool, bytes, str]:
+    """One request's audio as (made now, frames, key): the kept clip, else asked of the service."""
+    k = _request_key(req, p)
+    clip = cast_clip(k)
+    made = False
+    if not clip.is_file():
+        data = _ask(req, p, keys)
+        clip.parent.mkdir(parents=True, exist_ok=True)
+        clip.write_bytes(data)
+        voice._add_usage(p.name, sum(len(x["text"]) for x in req["lines"]))
+        if p.name == "gemini" and getattr(p, "tokens", 0):
+            voice._add_usage("gemini_tokens", p.tokens)
+        made = True
+    data = _to_wav(exe, clip, tmpdir / "piece.wav", speed)
+    if len(data) < 0.15 * RATE * 2 and req["mode"] == "line":
+        # Chirp now and then answers a short word with silence: ask again, quoted (it sounds the same).
+        clip.write_bytes(_ask(req, p, keys, text_of=lambda x: f"«{x['text']}»"))
+        data = _to_wav(exe, clip, tmpdir / "piece.wav", speed)
+    return made, data, k
+
+
 def _voice_unit(unit: Unit, chain, members, lang, keys, profile, exe, tmpdir) -> list[tuple]:
-    """The unit's audio as (service, or None when the clip was kept; request; frames; key), from the
+    """The unit's audio as (service, or None when the clips were kept; request; frames; keys), from the
     first service that can make all of it; a service refusing a request passes the unit on."""
     why = "no service in the podcast's list can make it (keys, or podcast.providers in the profile)"
-    if any(_mixed(seg) for seg, _ in unit.lines) and not any(p.mixed and not p.ready(keys, profile) for p in chain):
-        why = "it has Greek inside a Turkish or English sentence, and no ready service speaks mixed lines (gemini, elevenlabs)"
+    if any(_mixed(seg) for seg, _ in unit.lines) and not any((p.mixed or p.splits) and not p.ready(keys, profile)
+                                                             for p in chain):
+        why = "it has Greek inside a Turkish or English sentence, and no ready service speaks mixed lines (gemini, elevenlabs, google)"
     speed = unit.lines[0][0].speed if unit.solo else 1.0
     for p in chain:
         if not _can(p, unit, keys, profile):
@@ -788,23 +849,17 @@ def _voice_unit(unit: Unit, chain, members, lang, keys, profile, exe, tmpdir) ->
         out = []
         try:
             for req in _requests(unit, p, voices, members, lang):
-                k = _request_key(req, p)
-                clip = cast_clip(k)
-                who = None
-                if not clip.is_file():
-                    data = _ask(req, p, keys)
-                    clip.parent.mkdir(parents=True, exist_ok=True)
-                    clip.write_bytes(data)
-                    voice._add_usage(p.name, sum(len(x["text"]) for x in req["lines"]))
-                    if p.name == "gemini" and getattr(p, "tokens", 0):
-                        voice._add_usage("gemini_tokens", p.tokens)
-                    who = p
-                data = _to_wav(exe, clip, tmpdir / "piece.wav", speed)
-                if len(data) < 0.15 * RATE * 2 and req["mode"] == "line":
-                    # Chirp now and then answers a short word with silence: ask again, quoted (it sounds the same).
-                    clip.write_bytes(_ask(req, p, keys, text_of=lambda x: f"«{x['text']}»"))
-                    data = _to_wav(exe, clip, tmpdir / "piece.wav", speed)
-                out.append((who, req, data, k))
+                x = req["lines"][0]
+                if req["mode"] == "line" and not p.mixed and x["lang"] != "el" and greek.has_greek(x["text"]):
+                    # One language a request: the line in pieces, joined (the timeline keeps one line).
+                    made, datas, ks = False, [], []
+                    for lng, piece in split_mixed(x["text"], x["lang"]):
+                        m, d, k = _clip(dict(req, lines=[dict(x, text=piece, lang=lng)]), p, keys, exe, tmpdir, speed)
+                        made, datas, ks = made or m, datas + [d], ks + [k]
+                    out.append((p if made else None, req, _silence(PIECE_GAP).join(datas), ks))
+                else:
+                    m, data, k = _clip(req, p, keys, exe, tmpdir, speed)
+                    out.append((p if m else None, req, data, [k]))
             return out
         except voice.Refused as e:
             why = f"{p.name} refused: {e}; the clips made so far are kept, so rendering again goes on from here"
@@ -815,33 +870,35 @@ def _voice_unit(unit: Unit, chain, members, lang, keys, profile, exe, tmpdir) ->
 # ---------- what the app shows ----------
 
 def episode(pid: str) -> dict | None:
-    """episode.json of a rendered episode, with `stale` when the script changed since; None if not rendered."""
-    if audio_file(pid) is None:
+    """episode.json of a rendered episode, with `stale` when the script changed since and `shipped` when
+    it came with the repo; None if not rendered."""
+    d = _home(pid)
+    if d is None:
         return None
     try:
-        meta = json.loads((episode_dir(pid) / "episode.json").read_text(encoding="utf-8"))
+        meta = json.loads((d / "episode.json").read_text(encoding="utf-8"))
     except (FileNotFoundError, json.JSONDecodeError):
         return None
     try:
-        meta["stale"] = meta.get("script") != script_hash(pid)
+        meta["stale"] = meta.get("script") != script_hash(pid, d)
     except FileNotFoundError:
         meta["stale"] = False
+    meta["shipped"] = d.parent == shipped_dir()
     return meta
 
 
 def listing() -> list[dict]:
-    """The rendered episodes, newest first (scripts not yet rendered are left out of the app)."""
+    """The rendered episodes, the learner's own and the shipped ones, newest first (scripts not yet
+    rendered are left out of the app)."""
     out = []
-    base = podcasts_dir()
-    if not base.is_dir():
-        return out
-    for d in base.iterdir():
-        if d.is_dir() and ID.match(d.name):
-            meta = episode(d.name)
-            if meta:
-                out.append({k: meta.get(k) for k in ("id", "kind", "lang", "title", "curriculum", "stage",
-                                                     "written", "date", "rendered", "seconds", "stale")}
-                           | {"parts": len(meta.get("parts", []))})
+    ids = {d.name for base in (podcasts_dir(), shipped_dir()) if base.is_dir()
+           for d in base.iterdir() if d.is_dir() and ID.match(d.name)}
+    for pid in ids:
+        meta = episode(pid)
+        if meta:
+            out.append({k: meta.get(k) for k in ("id", "kind", "lang", "title", "curriculum", "stage",
+                                                 "written", "date", "rendered", "seconds", "stale", "shipped")}
+                       | {"parts": len(meta.get("parts", []))})
     out.sort(key=lambda m: m.get("rendered") or "", reverse=True)
     return out
 

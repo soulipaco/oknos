@@ -70,3 +70,8 @@ def test_published_audio_comes_only_from_a_service_that_lets_it_be_published(tmp
     git("add", ".")
     problems = guard.check(tmp_path)
     assert len(problems) == 2 and "elevenlabs" in " ".join(problems) and "azure" in " ".join(problems)
+    pods = tmp_path / "content" / "open-podcasts"
+    pods.mkdir(parents=True)
+    (pods / "index.json").write_text(json.dumps({"episodes": {"book.intro.tr": {"p": "elevenlabs"}}}), encoding="utf-8")
+    git("add", ".")
+    assert any("open-podcasts" in x and "elevenlabs" in x for x in guard.check(tmp_path))
