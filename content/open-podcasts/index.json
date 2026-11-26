@@ -1,7 +1,7 @@
 {
  "about": "Podcast lessons of the Oknos book, shipped with the open content (docs/PODCASTS.md). Each is <id>/episode.mp3 with its script.json and episode.json; p is the service that voiced it.",
  "licence": "CC-BY-SA-4.0",
- "made_with": "Google Cloud Text-to-Speech, Chirp 3 HD: 26 episodes",
+ "made_with": "Google Gemini TTS: 1 episodes; Google Cloud Text-to-Speech, Chirp 3 HD: 25 episodes",
  "mp3": "mono, 32 kb/s",
  "updated": "2026-11-26",
  "episodes": {
@@ -24,9 +24,9 @@
    "version": 4
   },
   "book.lesson-02.tr": {
-   "p": "google",
+   "p": "gemini",
    "rendered": "2026-11-26",
-   "seconds": 905.7,
+   "seconds": 862.9,
    "version": 2
   },
   "book.lesson-03.tr": {

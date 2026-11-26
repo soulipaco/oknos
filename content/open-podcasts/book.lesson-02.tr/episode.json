@@ -11,8 +11,8 @@
  "version": 2,
  "written": "2026-11-26",
  "date": null,
- "rendered": "2026-11-26T12:59:22",
- "seconds": 905.7,
+ "rendered": "2026-11-26T13:59:20",
+ "seconds": 862.9,
  "script": "aec80da00524",
  "parts": [
   {
@@ -20,55 +20,55 @@
    "title": "Açılış"
   },
   {
-   "t": 28.32,
+   "t": 26.86,
    "title": "Hoş geldin"
   },
   {
-   "t": 59.84,
+   "t": 56.35,
    "title": "Doğum günü partisinde"
   },
   {
-   "t": 166.65,
+   "t": 159.25,
    "title": "Mühendisim, ama nasıl?"
   },
   {
-   "t": 295.53,
+   "t": 295.56,
    "title": "Nikos mu, Niko mu?"
   },
   {
-   "t": 393.7,
+   "t": 385.71,
    "title": "Sen de öğrenci misin?"
   },
   {
-   "t": 480.75,
+   "t": 465.13,
    "title": "Sıfırdan ona"
   },
   {
-   "t": 545.53,
+   "t": 521.86,
    "title": "Sıra sende"
   },
   {
-   "t": 618.93,
+   "t": 591.61,
    "title": "Mert'in hatası"
   },
   {
-   "t": 657.87,
+   "t": 631.5,
    "title": "Oyun: seslen!"
   },
   {
-   "t": 726.5,
+   "t": 693.92,
    "title": "Parti yeniden"
   },
   {
-   "t": 768.24,
+   "t": 734.35,
    "title": "Kelime köşesi: doktor ve makine"
   },
   {
-   "t": 826.04,
+   "t": 782.49,
    "title": "Gelecek bölüm"
   },
   {
-   "t": 859.15,
+   "t": 812.18,
    "title": "Tekrar köşesi"
   }
  ],
@@ -80,915 +80,915 @@
    "who": "eleni"
   },
   {
-   "t": 4.75,
+   "t": 4.72,
    "lang": "el",
    "say": "Γεια σου, Μεχμέτ! Χαίρω πολύ.",
    "who": "nikos"
   },
   {
-   "t": 7.23,
+   "t": 7.29,
    "lang": "el",
    "say": "Χαίρω πολύ, Νίκο.",
    "who": "mehmet"
   },
   {
-   "t": 8.96,
+   "t": 8.53,
    "lang": "tr",
    "say": "Üç kısa cümle, bir tanışma. Ama dikkat ettin mi? Adamın adı Nikos. Herkes ona Niko diyor.",
    "who": "ada"
   },
   {
-   "t": 15.7,
+   "t": 15.38,
    "lang": "tr",
    "say": "Ben de fark ettim. Sonundaki s nereye gitti? Yoksa bu onun lakabı mı?",
    "who": "mert"
   },
   {
-   "t": 21.47,
+   "t": 20.54,
    "lang": "tr",
    "say": "Bugün tam bunu çözeceğiz. Bir de Yunanca mühendisim demeyi.",
    "who": "ada"
   },
   {
-   "t": 28.32,
+   "t": 26.86,
    "lang": "tr",
    "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, ikinci bölüm.",
    "who": "ada"
   },
   {
-   "t": 33.26,
+   "t": 31.18,
    "lang": "tr",
    "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
    "who": "mert"
   },
   {
-   "t": 38.55,
+   "t": 35.56,
    "lang": "tr",
    "say": "Bugün ne iş yaptığını söyleyeceksin, birine ne iş yaptığını soracaksın, iki arkadaşını da birbiriyle tanıştıracaksın. Bir de sıfırdan ona kadar sayacaksın. Stüdyoda Katerina da var. Selanikli. Örnek cümleleri o söyleyecek, sen de arkasından yüksek sesle söyle.",
    "who": "ada"
   },
   {
-   "t": 55.64,
+   "t": 52.68,
    "lang": "el",
    "say": "Γεια σας! Χαίρω πολύ.",
    "who": "katerina"
   },
   {
-   "t": 59.84,
+   "t": 56.35,
    "lang": "tr",
    "say": "Bir doğum günü partisindeyiz. Eleni doktor. Arkadaşı Mehmet'i Nikos'la tanıştırıyor. Biraz sonra Nikos'un babası, Bay Pappas da geliyor. Bir şeye kulak ver: Mehmet ne iş yapıyor?",
    "who": "ada"
   },
   {
-   "t": 73.6,
+   "t": 69.1,
    "lang": "el",
    "say": "Νίκο, από δω ο Μεχμέτ.",
    "who": "eleni"
   },
   {
-   "t": 75.34,
+   "t": 70.98,
    "lang": "el",
    "say": "Γεια σου, Μεχμέτ! Χαίρω πολύ.",
    "who": "nikos"
   },
   {
-   "t": 77.83,
+   "t": 73.2,
    "lang": "el",
    "say": "Χαίρω πολύ, Νίκο.",
    "who": "mehmet"
   },
   {
-   "t": 79.26,
+   "t": 74.51,
    "lang": "el",
    "say": "Τι δουλειά κάνεις;",
    "who": "nikos"
   },
   {
-   "t": 80.6,
+   "t": 75.89,
    "lang": "el",
    "say": "Είμαι μηχανικός. Εσύ;",
    "who": "mehmet"
   },
   {
-   "t": 82.69,
+   "t": 77.5,
    "lang": "el",
    "say": "Εγώ είμαι φοιτητής. Η Ελένη είναι γιατρός.",
    "who": "nikos"
   },
   {
-   "t": 85.94,
+   "t": 81.03,
    "lang": "el",
    "say": "Καλησπέρα, κύριε Παππά! Από δω ο Μεχμέτ.",
    "who": "eleni"
   },
   {
-   "t": 88.77,
+   "t": 83.99,
    "lang": "el",
    "say": "Χαίρω πολύ, Μεχμέτ. Είσαι κι εσύ φοιτητής;",
    "who": "kyrios-pappas"
   },
   {
-   "t": 92.31,
+   "t": 87.4,
    "lang": "el",
    "say": "Όχι, είμαι μηχανικός. Εσείς τι δουλειά κάνετε, κύριε Παππά;",
    "who": "mehmet"
   },
   {
-   "t": 96.02,
+   "t": 91.71,
    "lang": "el",
    "say": "Είμαι λογιστής. Ο Νίκος κι εγώ είμαστε από τη Θεσσαλονίκη.",
    "who": "kyrios-pappas"
   },
   {
-   "t": 100.59,
+   "t": 95.93,
    "lang": "el",
    "say": "Α, ωραία!",
    "who": "mehmet"
   },
   {
-   "t": 102.32,
+   "t": 97.19,
    "lang": "tr",
    "say": "Mehmet ne iş yapıyor? Sen de söyle.",
    "who": "ada"
   },
   {
-   "t": 109.24,
+   "t": 103.06,
    "lang": "tr",
    "say": "Bunu yakaladım, iki kere söyledi: μηχανικός. Mühendis.",
    "who": "mert"
   },
   {
-   "t": 113.58,
+   "t": 107.21,
    "lang": "tr",
    "say": "Doğru. Bay Pappas onu öğrenci sandı, Mehmet hayır dedi. Şimdi partinin ikinci yarısı, biraz yavaş. Bu sefer şuna kulak ver: Bay Pappas ile Nikos nereli?",
    "who": "ada"
   },
   {
-   "t": 126.35,
+   "t": 119.47,
    "lang": "el",
    "say": "Καλησπέρα, κύριε Παππά! Από δω ο Μεχμέτ.",
    "who": "eleni",
    "speed": 0.85
   },
   {
-   "t": 129.6,
+   "t": 122.69,
    "lang": "el",
    "say": "Χαίρω πολύ, Μεχμέτ. Είσαι κι εσύ φοιτητής;",
    "who": "kyrios-pappas",
    "speed": 0.85
   },
   {
-   "t": 133.7,
+   "t": 126.37,
    "lang": "el",
    "say": "Όχι, είμαι μηχανικός. Εσείς τι δουλειά κάνετε, κύριε Παππά;",
    "who": "mehmet",
    "speed": 0.85
   },
   {
-   "t": 138.0,
+   "t": 131.0,
    "lang": "el",
    "say": "Είμαι λογιστής. Ο Νίκος κι εγώ είμαστε από τη Θεσσαλονίκη.",
    "who": "kyrios-pappas",
    "speed": 0.85
   },
   {
-   "t": 143.31,
+   "t": 135.56,
    "lang": "el",
    "say": "Α, ωραία!",
    "who": "mehmet",
    "speed": 0.85
   },
   {
-   "t": 145.23,
+   "t": 136.87,
    "lang": "tr",
    "say": "Nereliler? Sen de söyle.",
    "who": "ada"
   },
   {
-   "t": 151.52,
+   "t": 142.81,
    "lang": "tr",
    "say": "Selanikli! Θεσσαλονίκη. Katerina'nın memleketi.",
    "who": "mert"
   },
   {
-   "t": 155.17,
+   "t": 146.88,
    "lang": "tr",
    "say": "Evet, baba oğul ikisi de Selanikli. Ve Bay Pappas bunu tek bir fiille söyledi: biz Selanikliyiz. O fiile hemen geliyoruz.",
    "who": "ada"
   },
   {
-   "t": 166.65,
+   "t": 159.25,
    "lang": "tr",
    "say": "Ada, Türkçede mühendisim tek kelime. Mehmet'ten iki kelime duydum.",
    "who": "mert"
   },
   {
-   "t": 171.44,
+   "t": 164.41,
    "lang": "tr",
    "say": "Çünkü Türkçede olmak çoğu zaman bir ek: mühendisim, öğrencisin. Yunancada ise ayrı bir kelime: είμαι. Ve kişiye göre değişir, tıpkı bizim eklerimiz gibi.",
    "who": "ada"
   },
   {
-   "t": 182.97,
+   "t": 176.36,
    "lang": "tr",
    "say": "Birinci derste üç tanesini görmüştük galiba. Ben, sen, bir de siz.",
    "who": "mert"
   },
   {
-   "t": 188.43,
+   "t": 181.52,
    "lang": "tr",
    "say": "Evet. Bugün altısını birden öğreniyorsun. Katerina söyleyecek, önce zamirle birlikte. Dinle ve tekrar et.",
    "who": "ada"
   },
   {
-   "t": 196.33,
+   "t": 190.32,
    "lang": "el",
    "say": "εγώ είμαι, εσύ είσαι, αυτός είναι",
    "who": "katerina",
    "speed": 0.85
   },
   {
-   "t": 205.31,
+   "t": 202.87,
    "lang": "el",
    "say": "εμείς είμαστε, εσείς είστε, αυτοί είναι",
    "who": "katerina",
    "speed": 0.85
   },
   {
-   "t": 215.48,
+   "t": 217.97,
    "lang": "tr",
    "say": "Ben, sen, o. Biz, siz, onlar. Bir şey yakaladın mı?",
    "who": "ada"
   },
   {
-   "t": 222.36,
+   "t": 221.8,
    "lang": "tr",
    "say": "O ile onlar aynı. İkisi de είναι.",
    "who": "mert"
   },
   {
-   "t": 226.06,
+   "t": 224.28,
    "lang": "tr",
    "say": "Aynen. Kimden söz ettiğini cümlenin geri kalanı söyler. Bir güzel haber daha: zamiri çoğu zaman hiç söylemezsin. Türkçede ben mühendisim demene gerek yok, mühendisim yeter. Yunancada da öyle.",
    "who": "ada"
   },
   {
-   "t": 238.62,
+   "t": 239.24,
    "lang": "el",
    "say": "Είμαι μηχανικός.",
    "who": "katerina"
   },
   {
-   "t": 242.46,
+   "t": 242.94,
    "lang": "tr",
    "say": "Peki Nikos neden zamiri söyledi? Εγώ είμαι φοιτητής dedi.",
    "who": "mert"
   },
   {
-   "t": 247.08,
+   "t": 247.34,
    "lang": "tr",
    "say": "Vurgu için. Mehmet ya sen diye sormuştu. Nikos da ben öğrenciyim diyor, ben. Türkçede de sesimizle aynı vurguyu yaparız. Bir de şu: Mehmet, Bay Pappas'a εσείς dedi, yani siz. Tek bir kişiye resmî konuşurken de çoğul biçim gelir, Türkçedeki siz misiniz gibi.",
    "who": "ada"
   },
   {
-   "t": 266.95,
+   "t": 267.77,
    "lang": "el",
    "say": "Κύριε Παππά, εσείς είστε λογιστής;",
    "who": "katerina"
   },
   {
-   "t": 269.85,
+   "t": 270.37,
    "lang": "tr",
    "say": "Bay Pappas, siz muhasebeci misiniz? Bir de sınav notu. Sözlü sınavın ilk sorularından biri neredeyse her zaman şudur:",
    "who": "ada"
   },
   {
-   "t": 278.98,
+   "t": 279.29,
    "lang": "el",
    "say": "Τι δουλειά κάνετε;",
    "who": "katerina"
   },
   {
-   "t": 280.83,
+   "t": 280.66,
    "lang": "tr",
    "say": "Ne iş yapıyorsunuz. Hazır bir cevabın olsun: είμαι, ve arkasından işin. Şu an çalışmıyorsan da şöyle dersin:",
    "who": "ada"
   },
   {
-   "t": 288.91,
+   "t": 288.9,
    "lang": "el",
    "say": "Αυτή τη στιγμή δε δουλεύω.",
    "who": "katerina"
   },
   {
-   "t": 291.17,
+   "t": 291.49,
    "lang": "tr",
    "say": "Şu an çalışmıyorum. Bunu ezberliyorum.",
    "who": "mert"
   },
   {
-   "t": 295.53,
+   "t": 295.56,
    "lang": "tr",
    "say": "Şimdi açılıştaki soru. Nikos neden Niko oldu? Bence lakap. Bizde Mehmet'e Memo demek gibi.",
    "who": "mert"
   },
   {
-   "t": 303.9,
+   "t": 302.46,
    "lang": "tr",
    "say": "Güzel tahmin, ama değil. Bu bir kural. Birine seslenirken erkek isimlerinin sonu değişir, önündeki küçük kelime de düşer. Buna hitap hâli denir. Nikos'tan söz ederken ο Νίκος, ona seslenirken sadece Νίκο.",
    "who": "ada"
   },
   {
-   "t": 321.5,
+   "t": 318.1,
    "lang": "tr",
    "say": "Yani sondaki s düşüyor.",
    "who": "mert"
   },
   {
-   "t": 323.57,
+   "t": 319.86,
    "lang": "tr",
    "say": "Os ile biten isimlerde evet, os o olur. As ile bitenler a olur, is ile bitenler i. Katerina önce söz ederken, sonra seslenirken söyleyecek. Sen seslenme biçimini tekrar et.",
    "who": "ada"
   },
   {
-   "t": 338.35,
+   "t": 333.64,
    "lang": "el",
    "say": "ο Γιώργος",
    "who": "katerina"
   },
   {
-   "t": 339.74,
+   "t": 334.78,
    "lang": "el",
    "say": "Γιώργο!",
    "who": "katerina"
   },
   {
-   "t": 343.26,
+   "t": 337.83,
    "lang": "el",
    "say": "ο Κώστας",
    "who": "katerina"
   },
   {
-   "t": 344.69,
+   "t": 338.96,
    "lang": "el",
    "say": "Κώστα!",
    "who": "katerina"
   },
   {
-   "t": 347.51,
+   "t": 341.9,
    "lang": "tr",
    "say": "Peki Eleni, Bay Pappas'a κύριε dedi. O e nereden çıktı?",
    "who": "mert"
   },
   {
-   "t": 352.03,
+   "t": 346.79,
    "lang": "tr",
    "say": "İyi kulak! Ad olmayan, os ile biten sıradan kelimeler çoğunlukla e alır. Bay demek κύριος, seslenirken κύριε. Soyadı da kurala uyar: Παππάς, ama κύριε Παππά.",
    "who": "ada"
   },
   {
-   "t": 367.99,
+   "t": 361.34,
    "lang": "el",
    "say": "Καλησπέρα, κύριε Παππά!",
    "who": "katerina"
   },
   {
-   "t": 372.6,
+   "t": 365.77,
    "lang": "tr",
    "say": "Kadınlar ne oluyor?",
    "who": "mert"
   },
   {
-   "t": 374.07,
+   "t": 367.21,
    "lang": "tr",
    "say": "Kadın isimleri değişmez. Sadece önlerindeki küçük kelime düşer: η Ελένη, ama Ελένη! Yabancı isimler de değişmez. Mehmet her zaman Mehmet. O yüzden Nikos Γεια σου, Μεχμέτ dedi.",
    "who": "ada"
   },
   {
-   "t": 389.14,
+   "t": 380.47,
    "lang": "tr",
    "say": "Bu benim için iyi haber. Mert de Mert kalır.",
    "who": "mert"
   },
   {
-   "t": 393.7,
+   "t": 385.71,
    "lang": "tr",
    "say": "Bay Pappas, Mehmet'e ne sordu, hatırlıyor musun?",
    "who": "ada"
   },
   {
-   "t": 400.78,
+   "t": 392.42,
    "lang": "el",
    "say": "Είσαι κι εσύ φοιτητής;",
    "who": "mert"
   },
   {
-   "t": 402.66,
+   "t": 394.24,
    "lang": "tr",
    "say": "Çok iyi. Sen de öğrenci misin? Burada iki küçük şey var. Birincisi κι. Bu aslında και, yani ve, de. Ünlüyle başlayan bir kelimeden önce kısalır: κι εσύ, sen de.",
    "who": "ada"
   },
   {
-   "t": 421.63,
+   "t": 407.5,
    "lang": "tr",
    "say": "Bay Pappas'ın son cümlesinde de vardı: ο Νίκος κι εγώ.",
    "who": "mert"
   },
   {
-   "t": 425.44,
+   "t": 411.98,
    "lang": "tr",
    "say": "Aynen, Nikos ve ben. Ünsüzden önce ise και kalır: ο Νίκος και ο Μεχμέτ. İkincisi φοιτητής. Bu, üniversite öğrencisi demek. Okuldaki öğrenci ise μαθητής. Türkçedeki tek öğrenci kelimesi Yunancada ikiye ayrılıyor.",
    "who": "ada"
   },
   {
-   "t": 444.57,
+   "t": 429.46,
    "lang": "tr",
    "say": "Peki Eleni öğrenci olsaydı? Kadın için de φοιτητής mı denir?",
    "who": "mert"
   },
   {
-   "t": 449.48,
+   "t": 434.44,
    "lang": "tr",
    "say": "Hayır, kadın için başka bir biçim var: φοιτήτρια. Muhasebeci de öyle: λογιστής, λογίστρια. Bir kadın öğrenci kendini şöyle tanıtır:",
    "who": "ada"
   },
   {
-   "t": 460.71,
+   "t": 445.9,
    "lang": "el",
    "say": "Είμαι φοιτήτρια.",
    "who": "katerina"
   },
   {
-   "t": 462.44,
+   "t": 447.09,
    "lang": "tr",
    "say": "Ama Eleni doktor, ve Nikos η Ελένη είναι γιατρός dedi. Doktorun kadın biçimi yok mu?",
    "who": "mert"
   },
   {
-   "t": 468.63,
+   "t": 453.7,
    "lang": "tr",
    "say": "Yok. Γιατρός hem erkek hem kadın için. Değişen sadece önündeki küçük kelime: ο γιατρός, η γιατρός. Mühendis de böyle.",
    "who": "ada"
   },
   {
-   "t": 480.75,
+   "t": 465.13,
    "lang": "tr",
    "say": "Şimdi sayılar. Katerina sıfırdan ona sayacak, yavaşça. Sen de arkasından söyle.",
    "who": "ada"
   },
   {
-   "t": 488.47,
+   "t": 476.02,
    "lang": "el",
    "say": "μηδέν, ένα, δύο, τρία, τέσσερα, πέντε, έξι, εφτά, οχτώ, εννιά, δέκα",
    "who": "katerina",
    "speed": 0.85
   },
   {
-   "t": 518.72,
+   "t": 496.42,
    "lang": "tr",
    "say": "Beşi tanıdım: πέντε. Pentagon gibi, beş köşe.",
    "who": "mert"
   },
   {
-   "t": 522.49,
+   "t": 500.05,
    "lang": "tr",
    "say": "Aynen. Dekatlon da on yarış: δέκα.",
    "who": "ada"
   },
   {
-   "t": 525.66,
+   "t": 502.79,
    "lang": "tr",
    "say": "Yedi, sekiz, dokuz kitapta başka türlü yazılmıştı galiba.",
    "who": "mert"
   },
   {
-   "t": 529.5,
+   "t": 507.39,
    "lang": "tr",
    "say": "Doğru, onların bir de resmî, yazı dilindeki biçimi var: επτά, οκτώ, εννέα. İkisi de doğru. Ama konuşurken çoğu kişi Katerina gibi söyler: εφτά, οχτώ, εννιά.",
    "who": "ada"
   },
   {
-   "t": 545.53,
+   "t": 521.86,
    "lang": "tr",
    "say": "Şimdi sıra sende. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert deneyecek, en son Katerina doğrusunu söyleyecek. Birincisi: bir arkadaşına ne iş yaptığını sor.",
    "who": "ada"
   },
   {
-   "t": 561.68,
+   "t": 537.86,
    "lang": "el",
    "say": "Τι δουλειά κάνεις;",
    "who": "mert"
   },
   {
-   "t": 563.01,
+   "t": 539.09,
    "lang": "el",
    "say": "Τι δουλειά κάνεις;",
    "who": "katerina"
   },
   {
-   "t": 566.99,
+   "t": 543.06,
    "lang": "tr",
    "say": "Mehmet'e seslen ve onu Nikos'la tanıştır. Mehmet, bu Nikos.",
    "who": "ada"
   },
   {
-   "t": 577.05,
+   "t": 553.19,
    "lang": "el",
    "say": "Μεχμέτ, από δω ο Νίκο.",
    "who": "mert"
   },
   {
-   "t": 579.29,
+   "t": 554.85,
    "lang": "tr",
    "say": "Dur. Burada Nikos'a mı sesleniyorsun?",
    "who": "ada"
   },
   {
-   "t": 581.87,
+   "t": 557.64,
    "lang": "tr",
    "say": "Hayır, Mehmet'e sesleniyorum. Nikos'tan sadece söz ediyorum. O zaman Nikos tam kalır.",
    "who": "mert"
   },
   {
-   "t": 587.57,
+   "t": 564.65,
    "lang": "el",
    "say": "Μεχμέτ, από δω ο Νίκος.",
    "who": "katerina"
   },
   {
-   "t": 593.43,
+   "t": 569.98,
    "lang": "tr",
    "say": "Son olarak Bay Pappas'a, resmî olarak, ne iş yaptığını sor.",
    "who": "ada"
   },
   {
-   "t": 602.74,
+   "t": 579.06,
    "lang": "el",
    "say": "Τι δουλειά κάνετε, κύριε Παππά;",
    "who": "mert"
   },
   {
-   "t": 604.9,
+   "t": 581.53,
    "lang": "tr",
    "say": "Mükemmel. Hem siz dedin, hem de κύριε.",
    "who": "ada"
   },
   {
-   "t": 610.35,
+   "t": 585.16,
    "lang": "el",
    "say": "Τι δουλειά κάνετε, κύριε Παππά;",
    "who": "katerina"
   },
   {
-   "t": 618.93,
+   "t": 591.61,
    "lang": "tr",
    "say": "Mert, şimdi hızlı ol. Düşünmeden söyle: Eleni doktor.",
    "who": "ada"
   },
   {
-   "t": 623.99,
+   "t": 595.85,
    "lang": "el",
    "say": "Η Ελένη γιατρός.",
    "who": "mert"
   },
   {
-   "t": 625.76,
+   "t": 597.13,
    "lang": "tr",
    "say": "Türkçede bu cümle tamam. Yunancada bir şey eksik.",
    "who": "ada"
   },
   {
-   "t": 629.32,
+   "t": 601.06,
    "lang": "tr",
    "say": "Ne eksik? Eleni var, doktor var.",
    "who": "mert"
   },
   {
-   "t": 631.78,
+   "t": 603.62,
    "lang": "tr",
    "say": "Fiil eksik. Türkçede Eleni doktor dersin, fiil görünmez. Yunancada είναι şart, İngilizcedeki is gibi.",
    "who": "ada"
   },
   {
-   "t": 640.87,
+   "t": 611.7,
    "lang": "tr",
    "say": "Yani her seferinde Eleni doktordur der gibi.",
    "who": "mert"
   },
   {
-   "t": 644.07,
+   "t": 615.23,
    "lang": "tr",
    "say": "Evet. Türkçe konuşanların en sık yaptığı hatalardan biri bu. Doğrusunu Katerina'dan dinle ve tekrar et:",
    "who": "ada"
   },
   {
-   "t": 650.93,
+   "t": 624.07,
    "lang": "el",
    "say": "Η Ελένη είναι γιατρός.",
    "who": "katerina"
   },
   {
-   "t": 657.87,
+   "t": 631.5,
    "lang": "tr",
    "say": "Şimdi küçük bir oyun: seslen! Ben birinden söz edeceğim, sen ona seslen. Sonra Mert söyleyecek. Birincisi: ο Γιώργος.",
    "who": "ada"
   },
   {
-   "t": 672.16,
+   "t": 643.65,
    "lang": "el",
    "say": "Γιώργο!",
    "who": "mert"
   },
   {
-   "t": 673.28,
+   "t": 644.42,
    "lang": "tr",
    "say": "Doğru. İkincisi: ο Γιάννης.",
    "who": "ada"
   },
   {
-   "t": 680.6,
+   "t": 651.41,
    "lang": "el",
    "say": "Γιάννη!",
    "who": "mert"
   },
   {
-   "t": 681.81,
+   "t": 652.02,
    "lang": "tr",
    "say": "Üçüncüsü biraz zor. Arkadaşına sesleniyorsun: ο φίλος.",
    "who": "ada"
   },
   {
-   "t": 690.63,
+   "t": 660.72,
    "lang": "el",
    "say": "Φίλο!",
    "who": "mert"
   },
   {
-   "t": 691.84,
+   "t": 661.16,
    "lang": "tr",
    "say": "Dur. Φίλος bir ad değil, sıradan bir kelime. Hangi ses gelir?",
    "who": "ada"
   },
   {
-   "t": 697.46,
+   "t": 666.58,
    "lang": "tr",
    "say": "Ah, e. Κύριε gibi.",
    "who": "mert"
   },
   {
-   "t": 699.95,
+   "t": 668.77,
    "lang": "el",
    "say": "Γεια σου, φίλε!",
    "who": "katerina"
   },
   {
-   "t": 702.97,
+   "t": 671.91,
    "lang": "tr",
    "say": "Dördüncüsü: η Μαρία.",
    "who": "ada"
   },
   {
-   "t": 709.17,
+   "t": 678.03,
    "lang": "el",
    "say": "Μαρία!",
    "who": "mert"
   },
   {
-   "t": 710.39,
+   "t": 678.58,
    "lang": "tr",
    "say": "Doğru, kadın isimleri değişmez. Son soru, sayılardan: yedi?",
    "who": "ada"
   },
   {
-   "t": 720.34,
+   "t": 688.02,
    "lang": "el",
    "say": "εφτά",
    "who": "mert"
   },
   {
-   "t": 721.53,
+   "t": 688.44,
    "lang": "tr",
    "say": "Ya da yazıda επτά. İkisi de doğru.",
    "who": "ada"
   },
   {
-   "t": 726.5,
+   "t": 693.92,
    "lang": "tr",
    "say": "Şimdi parti bir kez daha, normal hızda. Bu sefer her kelimeyi anlayacaksın.",
    "who": "ada"
   },
   {
-   "t": 732.53,
+   "t": 699.04,
    "lang": "el",
    "say": "Νίκο, από δω ο Μεχμέτ.",
    "who": "eleni"
   },
   {
-   "t": 734.27,
+   "t": 700.84,
    "lang": "el",
    "say": "Γεια σου, Μεχμέτ! Χαίρω πολύ.",
    "who": "nikos"
   },
   {
-   "t": 736.76,
+   "t": 703.06,
    "lang": "el",
    "say": "Χαίρω πολύ, Νίκο.",
    "who": "mehmet"
   },
   {
-   "t": 738.19,
+   "t": 704.37,
    "lang": "el",
    "say": "Τι δουλειά κάνεις;",
    "who": "nikos"
   },
   {
-   "t": 739.53,
+   "t": 705.75,
    "lang": "el",
    "say": "Είμαι μηχανικός. Εσύ;",
    "who": "mehmet"
   },
   {
-   "t": 741.62,
+   "t": 707.36,
    "lang": "el",
    "say": "Εγώ είμαι φοιτητής. Η Ελένη είναι γιατρός.",
    "who": "nikos"
   },
   {
-   "t": 744.87,
+   "t": 710.89,
    "lang": "el",
    "say": "Καλησπέρα, κύριε Παππά! Από δω ο Μεχμέτ.",
    "who": "eleni"
   },
   {
-   "t": 747.69,
+   "t": 713.85,
    "lang": "el",
    "say": "Χαίρω πολύ, Μεχμέτ. Είσαι κι εσύ φοιτητής;",
    "who": "kyrios-pappas"
   },
   {
-   "t": 751.23,
+   "t": 717.27,
    "lang": "el",
    "say": "Όχι, είμαι μηχανικός. Εσείς τι δουλειά κάνετε, κύριε Παππά;",
    "who": "mehmet"
   },
   {
-   "t": 754.95,
+   "t": 721.57,
    "lang": "el",
    "say": "Είμαι λογιστής. Ο Νίκος κι εγώ είμαστε από τη Θεσσαλονίκη.",
    "who": "kyrios-pappas"
   },
   {
-   "t": 759.52,
+   "t": 725.8,
    "lang": "el",
    "say": "Α, ωραία!",
    "who": "mehmet"
   },
   {
-   "t": 761.25,
+   "t": 727.05,
    "lang": "tr",
    "say": "Gerçekten hepsini anladım. Νίκο, κύριε Παππά, κι εσύ. Hepsi yerli yerinde.",
    "who": "mert"
   },
   {
-   "t": 768.24,
+   "t": 734.35,
    "lang": "tr",
    "say": "Kelime köşesi. Bugünün mesleklerinden ikisi Türkçede de saklanıyor. Birincisi γιατρός, doktor. Eski Yunancada bu kelime ιατρός idi.",
    "who": "ada"
   },
   {
-   "t": 781.81,
+   "t": 743.96,
    "lang": "tr",
    "say": "Bu bana hiçbir şey hatırlatmıyor.",
    "who": "mert"
   },
   {
-   "t": 783.8,
+   "t": 746.39,
    "lang": "tr",
    "say": "Hatırlatır. Çocuk doktorluğuna ne diyoruz?",
    "who": "ada"
   },
   {
-   "t": 787.42,
+   "t": 749.47,
    "lang": "tr",
    "say": "Pediatri. Dur. Pedi, sonra iatri?",
    "who": "mert"
   },
   {
-   "t": 790.96,
+   "t": 751.89,
    "lang": "tr",
    "say": "Evet. Çocuk ve doktor. Psikiyatri de ruh ve doktor.",
    "who": "ada"
   },
   {
-   "t": 795.87,
+   "t": 755.63,
    "lang": "tr",
    "say": "Mühendis de öyle mi?",
    "who": "mert"
   },
   {
-   "t": 797.52,
+   "t": 757.1,
    "lang": "tr",
    "say": "Μηχανικός, μηχανή kelimesinden gelir: makine. Türkçedeki makine ve mekanik kelimeleri de, başka diller üzerinden, bu köke dayanır. Son olarak κύριος. Eskiden efendi, sahip demekti. Gelecek bölümde haftanın günlerini öğreneceksin. Pazar gününün adı bu kelimeden gelir.",
    "who": "ada"
   },
   {
-   "t": 819.74,
+   "t": 776.7,
    "lang": "tr",
    "say": "Pazar, bayların günü mü yani?",
    "who": "mert"
   },
   {
-   "t": 821.92,
+   "t": 778.83,
    "lang": "tr",
    "say": "Neredeyse. Rab'bin günü.",
    "who": "ada"
   },
   {
-   "t": 826.04,
+   "t": 782.49,
    "lang": "tr",
    "say": "Gelecek bölümde Ayşe bir dil kursuna kaydoluyor. Sonra bir arkadaşıyla nerede oturduğunu, nerede çalıştığını konuşuyor.",
    "who": "ada"
   },
   {
-   "t": 834.31,
+   "t": 790.13,
    "lang": "tr",
    "say": "Kahve de var mı?",
    "who": "mert"
   },
   {
-   "t": 835.73,
+   "t": 791.16,
    "lang": "tr",
    "say": "Var. Ne sıklıkla kahve içtiğini de söyleyeceksin. Bir de her yerin önüne neden başka bir küçük kelime geldiğini çözeceğiz. Bu arada bölümü uygulamada oku, alıştırmaları yap. Görüşmek üzere!",
    "who": "ada"
   },
   {
-   "t": 849.19,
+   "t": 803.29,
    "lang": "tr",
    "say": "Görüşürüz!",
    "who": "mert"
   },
   {
-   "t": 850.54,
+   "t": 804.54,
    "lang": "el",
    "say": "Γεια σας!",
    "who": "katerina"
   },
   {
-   "t": 851.82,
+   "t": 805.19,
    "lang": "tr",
    "say": "Biraz daha tekrar istersen, hemen ardından kısa bir tekrar köşesi var.",
    "who": "ada"
   },
   {
-   "t": 859.15,
+   "t": 812.18,
    "lang": "tr",
    "say": "Tekrar köşesi. Bugünün anahtar cümleleri, yavaşça. Katerina'dan sonra tekrar et.",
    "who": "ada"
   },
   {
-   "t": 866.69,
+   "t": 818.78,
    "lang": "el",
    "say": "Τι δουλειά κάνεις;",
    "who": "katerina",
    "speed": 0.8
   },
   {
-   "t": 871.53,
+   "t": 823.5,
    "lang": "el",
    "say": "Τι δουλειά κάνετε;",
    "who": "katerina",
    "speed": 0.8
   },
   {
-   "t": 876.4,
+   "t": 828.87,
    "lang": "el",
    "say": "Είμαι μηχανικός.",
    "who": "katerina",
    "speed": 0.8
   },
   {
-   "t": 881.22,
+   "t": 834.27,
    "lang": "el",
    "say": "Η Ελένη είναι γιατρός.",
    "who": "katerina",
    "speed": 0.8
   },
   {
-   "t": 887.66,
+   "t": 842.94,
    "lang": "el",
    "say": "Νίκο, από δω ο Μεχμέτ.",
    "who": "katerina",
    "speed": 0.8
   },
   {
-   "t": 893.05,
+   "t": 850.96,
    "lang": "el",
    "say": "Είσαι κι εσύ φοιτητής;",
    "who": "katerina",
    "speed": 0.8
   },
   {
-   "t": 899.4,
+   "t": 857.51,
    "lang": "tr",
    "say": "Bu kadar. Haftaya görüşürüz.",
    "who": "ada"
