@@ -97,6 +97,8 @@ Let the current plan week's `focus` and `beyond_a2` steer what you prepare in st
 
 Tone: direct, brief, adult. No praise inflation. Never a word about missed days, except "welcome back".
 
+**The one star ask.** Only if the report's `star.ask_now` is true and the check-in went well: after the message, one short paragraph asking, once ever, for a GitHub star (COACHING §7.9 says what to say and what to do with the answer). Set `star_asked` in `profile.json` the same turn, whatever the answer. If `ask_now` is false, say nothing about it.
+
 ## 7. Leave things ready for next time
 
 - Write `coach/message.json` (COACHING §7.1): one or two sentences for the home screen, ideally in both languages. After a gap of 4 days or more, add `restart` with 5 minutes for the next 2 days.

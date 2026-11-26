@@ -17,6 +17,13 @@
 
 <p align="center"><a href="#get-started"><b>I want to learn Greek</b></a> &nbsp;·&nbsp; <a href="#built-and-run-by-agents"><b>I want to see how agents build it</b></a></p>
 
+<p align="center">
+  <a href="#the-stack"><img src="https://img.shields.io/badge/built_with-Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white&labelColor=1e2a32" alt="Built with Claude Code"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/code-MIT-1f5f8b?style=flat-square&labelColor=1e2a32" alt="Code: MIT licence"></a>
+  <a href="content/open/LICENSE.md"><img src="https://img.shields.io/badge/content-CC_BY--SA_4.0-1f5f8b?style=flat-square&logo=creativecommons&logoColor=white&labelColor=1e2a32" alt="Content: CC BY-SA 4.0"></a>
+  <img src="https://img.shields.io/badge/runs-on_your_computer_only-1f5f8b?style=flat-square&labelColor=1e2a32" alt="Runs on your computer only">
+</p>
+
 **Oknos** is a Greek learning app for people who live in Greece and need a Greek certificate: the **A2 + history** exam for long-term residence, or **Ελληνομάθεια B1**. It is made for people who have tried to study before and stopped. It runs only on your own computer, and your coding agent (Claude Code, Codex or similar) installs it, runs it and coaches you. It is built the same way: the code, the two books, the pictures and the voices were made with AI agents and checked step by step, as [the developer section](#built-and-run-by-agents) shows.
 
 > **Türkçe:** Uygulama Türkçe ve İngilizce. Bu sayfayı Türkçe okumak için ajanına "README'yi Türkçeye çevir" demen yeterli.
@@ -183,6 +190,46 @@ The Oknos book was first written to follow a commercial textbook's syllabus. Bef
 One Claude Code session coordinates; side sessions do one task each (a batch of pictures, the book's voice, the podcasts), each in its own git worktree. Their work lands on `main` by fast-forward after three checks: `oknos guard` (nothing private, no local paths, only publishable audio), `pytest`, and `oknos validate` on the open content. CI runs the same three on Ubuntu and Windows.
 </details>
 
+### The stack
+
+<p align="center">
+  <a href="docs/BUILT-WITH-AGENTS.md"><img src="https://img.shields.io/badge/built_with-Claude_Code-D97757?style=for-the-badge&logo=claude&logoColor=white&labelColor=1e2a32" alt="Built with Claude Code"></a>
+</p>
+
+Every tool Oknos uses, and what it does here. Nothing else is needed to run it.
+
+| | Its part in Oknos |
+|---|---|
+| **Made by** | |
+| ![Claude Code](https://img.shields.io/badge/Claude_Code-Opus-D97757?style=flat-square&logo=claude&logoColor=white) | Wrote the app, the tests, the docs and the skills, and made every commit. Reviews every chapter and every picture. For a learner, it is the coach. |
+| ![Sonnet subagents](https://img.shields.io/badge/Claude_subagents-Sonnet-D97757?style=flat-square&logo=claude&logoColor=white) | Drafted the book's chapters, 3–5 at a time, and wrote the meanings of its 2,780 words. |
+| ![Codex](https://img.shields.io/badge/Codex-image_model-1e2a32?style=flat-square) | Drew the word pictures, the story's scenes and the films' frames, from Claude's prompts. Runs the same skills for a learner who uses Codex. |
+| **Voices** | |
+| ![Google Cloud Text-to-Speech](https://img.shields.io/badge/Google_Cloud_TTS-Chirp_3_HD-4285F4?style=flat-square&logo=googlecloud&logoColor=white) | Every Greek clip the repo ships, and the shipped podcast episodes. |
+| ![Gemini TTS](https://img.shields.io/badge/Gemini-TTS-8E75B2?style=flat-square&logo=googlegemini&logoColor=white) | The films' published narration, and podcast lines as its daily quota allows. |
+| ![ElevenLabs](https://img.shields.io/badge/ElevenLabs-v4-1e2a32?style=flat-square&logo=elevenlabs&logoColor=white) | The maintainer's own podcasts and clips, on their own computer, chosen by ear. Never in the repo: its audio is not ours to share. |
+| ![Azure Speech](https://img.shields.io/badge/Azure-Speech-0078D4?style=flat-square) | An option for a learner with their own key, as are Google, Gemini, ElevenLabs and OpenAI. Nothing it made is shipped. |
+| **The app** | |
+| ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white) | The app, its command line (`oknos`) and every script. |
+| ![uv](https://img.shields.io/badge/uv-DE5FE9?style=flat-square&logo=uv&logoColor=white) | Installs and runs it: `uv run oknos start`. |
+| ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) | The small server, on `127.0.0.1` only. |
+| ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) | The learner's record: one file on their own computer. |
+| ![JavaScript, no build](https://img.shields.io/badge/JavaScript-no_build_step-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | The front end: plain JavaScript and CSS, no framework, nothing to compile. |
+| ![ffmpeg](https://img.shields.io/badge/ffmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white) | Joins a podcast episode into one mp3, and mixes the films' sound. |
+| ![faster-whisper](https://img.shields.io/badge/faster--whisper-local-555555?style=flat-square) | Optional: transcribes speaking recordings on the learner's computer. |
+| ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI-2088FF?style=flat-square&logo=githubactions&logoColor=white) | Runs the guard, the tests and `oknos validate` on Ubuntu and Windows. |
+
+**Also runs with** any agent that reads [`AGENTS.md`](AGENTS.md) or the skills in [`.agents/skills/`](.agents/skills/):
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white" alt="Claude Code">
+  <img src="https://img.shields.io/badge/Codex-1e2a32?style=flat-square" alt="Codex">
+  <img src="https://img.shields.io/badge/Antigravity-untried-4285F4?style=flat-square&logo=googlegemini&logoColor=white" alt="Antigravity, not tried yet">
+  <img src="https://img.shields.io/badge/Gemini_CLI-untried-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini CLI, not tried yet">
+</p>
+
+Claude Code and Codex are the two it is used with, and the scheduled runs start either one. Antigravity reads the skills from `.agents/skills/`, and Gemini CLI reads `AGENTS.md` once its `context.fileName` setting points there; neither has been tried with Oknos yet.
+
 **The full story**, with the costs, the review numbers and what no person has checked: [docs/BUILT-WITH-AGENTS.md](docs/BUILT-WITH-AGENTS.md).
 
 ### Develop it
@@ -191,8 +238,15 @@ The commands, how the code is laid out, and the documents behind it are in [docs
 
 ## Licences and thanks
 
+<p>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/code-MIT-1f5f8b?style=flat-square&labelColor=1e2a32" alt="Code: MIT licence"></a>
+  <a href="content/open/LICENSE.md"><img src="https://img.shields.io/badge/content-CC_BY--SA_4.0-1f5f8b?style=flat-square&logo=creativecommons&logoColor=white&labelColor=1e2a32" alt="Content: CC BY-SA 4.0"></a>
+  <img src="https://img.shields.io/badge/voice_clips-CC_BY--SA_4.0-1f5f8b?style=flat-square&logo=creativecommons&logoColor=white&labelColor=1e2a32" alt="Shipped voice clips and podcasts: CC BY-SA 4.0">
+  <img src="https://img.shields.io/badge/films-CC_BY--SA_4.0-1f5f8b?style=flat-square&logo=creativecommons&logoColor=white&labelColor=1e2a32" alt="Films and their sound: CC BY-SA 4.0">
+</p>
+
 - Code: MIT ([`LICENSE`](LICENSE)). Content in `content/open/` (the course, the book, the pictures): CC BY-SA 4.0 ([`content/open/LICENSE.md`](content/open/LICENSE.md)). The films and their sound: CC BY-SA 4.0.
-- The open content's voice clips (`content/open-voice/`) were made with Google Cloud Text-to-Speech and are shared under CC BY-SA 4.0.
+- The open content's voice clips (`content/open-voice/`) and the book's podcast episodes (`content/open-podcasts/`) were made with Google's voices (Cloud Text-to-Speech, Gemini TTS) and are shared under CC BY-SA 4.0.
 - Verb forms and the word index use the English Wiktionary's Greek entries (CC BY-SA), as extracted by [kaikki.org](https://kaikki.org).
 - The wordmark is drawn from Noto Serif (SIL Open Font Licence).
 - The name comes from Pausanias, *Description of Greece* 10.29.

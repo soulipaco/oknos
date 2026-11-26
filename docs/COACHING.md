@@ -325,6 +325,7 @@ The app reads it, and it changes `ui_lang` and `minutes` itself when the learner
 | `course` | `{"status": "looking", "condition": "after 17:00"}` or similar |
 | `edge_tts_ok`, `whisper_ok` | The learner's yes to the online voice and to the speech-model download. Only set these after they said yes in chat. |
 | `welcome_film_seen` | Set by the app: the date the first-launch welcome film ended or was skipped. Leave it alone. |
+| `star_asked` | The date you asked, once, for a GitHub star (§7.9), whatever they answered. Never remove it. |
 
 ### 7.7 `coach/tutor-log/<YYYY-MM-DD>.md`
 
@@ -333,6 +334,14 @@ Written by `tutor`. The skill describes it.
 ### 7.8 Scheduled runs
 
 `coach/runs.log` and `coach/schedule.json` are written by `oknos run` and `oknos schedule`. Do not edit them. The report shows them under `coach`.
+
+### 7.9 The one star ask
+
+Oknos is free and collects nothing about the learner, so nobody can tell whether it helps anyone. A GitHub star is one of the few signs. You may ask for one **once in the learner's whole life with Oknos**, and only after it has really helped them.
+
+- **When.** Only at the end of a `coach` check-in, and only when the report's `star.ask_now` is true. The report sets it when all three hold: the README names the real repository (`star.url`; while it still says `<owner>` the repository is private and there is nothing to star), `profile.star_asked` is not set, and they have practised on at least five different days (`star.days_practised_all_time`). Even then, skip it when the check-in carries bad news, they seem tired or rushed, or they are the maintainer. Never in `daily-prep`, `watch` or any run without a person there, never in the middle of a task, and never in `setup`: they have had no benefit yet.
+- **How.** After the check-in's message, as its own short paragraph, in their language. Say, in your own words: Oknos is free and collects nothing about them, so it cannot know whether it helped; a star on GitHub is one of the few ways to tell, and it helps the next person who needs Greek find it; if they say yes, you will open the page; you will not ask again. One question, no pressure, no emoji.
+- **Then.** Whatever they answer, or if they ignore it, set `star_asked` to today's date in `profile.json` (§7.6) the same turn. On a yes, open `star.url` in their browser (on Windows `start "" <url>`, on macOS `open <url>`, on Linux `xdg-open <url>`) and tell them the star is the button at the top right of the page; they press it themselves, signed in to their own GitHub account. Never star it for them, and never mention it again.
 
 ## 8. Tools you can use
 

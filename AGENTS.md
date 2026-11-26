@@ -115,7 +115,8 @@ What works now:
 - **The coach** (the agent) works only through files:
   - it reads `oknos report` (`report_version` 3: readiness, coverage, plan inputs and progress, mocks, chapters read);
   - it writes packs, `feedback/<id>.json`, `coach/*.json` (including `plan.json` and `mocks/<id>.json`) and notes;
-  - the app takes them in.
+  - the app takes them in;
+  - **the one star ask** (2026-11-26, COACHING §7.9): once in a learner's life, at the end of a `coach` check-in, the coach may ask for a GitHub star (free, collects nothing, so a star is one of few signs it helped), only when `oknos report`'s `star.ask_now` is true: the README names the real repository (never while it says `<owner>`), `profile.star_asked` is unset, and they have practised on 5 different days. Whatever the answer, `star_asked` gets the date; on a yes the coach opens the page.
 
   The shared rules are in `docs/COACHING.md`. Skills: `coach`, `capture`, `mark`, `tutor`, `daily-prep`, `watch`, `rebuild-imported`, `plan`, `mock-exam` and `write-chapter`, plus `setup` and `import-material`.
 - **CLI:** `start`, `stop`, `health`, `report`, `validate` (packs, chapters, Greek lint, exam tags, tap-a-word gaps, hidden questions, learner folder), `words`, `reload`, `import`, `raw`, `schema`, `shortcut`, `transcribe`, `voice`, `podcast`, `run` and `schedule`.
@@ -169,7 +170,7 @@ On the roadmap (2026-11-20, `docs/prompts/`):
 - the films in the app, and a new GitHub look (added 2026-11-23):
   - the films in the app: done 2026-11-23 (see **Films** above).
   - the new GitHub face: done 2026-11-24. The README has a hero (the home screen with a picture card and a chapter's scene), a gallery of the app in light and dark, a films section with a short animated preview of film 1, and current facts; the social preview matches the hero. All of it is made by `scripts/readme_images.py` from a demo learner with the open content only (`docs/DEVELOPING.md`, "The README's screenshots").
-  - the developer face: done 2026-11-26. Under the hero two links lead to the learner part or to "Built and run by agents": the numbers, the harness (AGENTS.md, 13 skills, the coach through files, scheduled runs), who made what (Claude Code, its Sonnet subagents, Codex's image model, Google's voices, plain code) and the parallel sessions in worktrees; the full story with costs, review numbers and what no person has checked is `docs/BUILT-WITH-AGENTS.md`. The four diagrams come from `scripts/make_brand.py developer`, which counts from the repo. The screenshots now show the 26-chapter Oknos book.
+  - the developer face: done 2026-11-26. Under the hero two links lead to the learner part or to "Built and run by agents": the numbers, the harness (AGENTS.md, 13 skills, the coach through files, scheduled runs), who made what (Claude Code, its Sonnet subagents, Codex's image model, Google's voices, plain code) and the parallel sessions in worktrees; the full story with costs, review numbers and what no person has checked is `docs/BUILT-WITH-AGENTS.md`. The four diagrams come from `scripts/make_brand.py developer`, which counts from the repo. The screenshots now show the 26-chapter Oknos book. The same day the README got its brand badges (shields.io): a small row under the hero (built with Claude Code, code MIT, content CC BY-SA 4.0), "The stack" in the developer part (each tool with its role, ElevenLabs and Azure marked as never shipped), an "Also runs with" row (Claude Code and Codex used; Antigravity and Gemini CLI read the skills or AGENTS.md but are untried) and the licence badges.
 
 ## Git and GitHub
 

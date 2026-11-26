@@ -7,6 +7,7 @@ rename or remove them without updating docs/COACHING.md and the skills.
 from __future__ import annotations
 
 import json
+import re
 import sqlite3
 from collections import Counter, defaultdict
 from datetime import date, timedelta
@@ -18,6 +19,8 @@ from oknos.packs import Catalog, FormItem, SELECTION_TASKS, SpeakItem, VocabItem
 
 REPORT_VERSION = 4  # 3: chapters (phase 5c); 4: tap_a_word (phase 5d)
 PROFILE_QUESTIONS = ("ui_lang", "minutes", "goal", "target_exam", "interests")
+STAR_MIN_DAYS = 5  # the one star ask waits for a real benefit: practice on five different days (COACHING §7.9)
+REPO_PAGE = re.compile(r"https://github\.com/[A-Za-z0-9][A-Za-z0-9-]*/oknos\b")
 
 
 def _read_profile() -> dict:
@@ -26,6 +29,26 @@ def _read_profile() -> dict:
         return data if isinstance(data, dict) else {}
     except (FileNotFoundError, json.JSONDecodeError):
         return {}
+
+
+def repo_page(readme: Path | None = None) -> str | None:
+    """The repository's GitHub page, from the README's "Download ..." line. None while the README still
+    has the `<owner>` placeholder (the repository is private), so the coach never asks for a star then."""
+    try:
+        text = (readme or paths.REPO_ROOT / "README.md").read_text(encoding="utf-8")
+    except OSError:
+        return None
+    m = REPO_PAGE.search(text)
+    return m.group(0) if m else None
+
+
+def star_state(conn: sqlite3.Connection, profile: dict) -> dict:
+    """Whether the coach may ask, once, for a GitHub star now (COACHING §7.9)."""
+    url = repo_page()
+    days = conn.execute("SELECT COUNT(DISTINCT substr(ts,1,10)) FROM attempts").fetchone()[0]
+    asked = bool(profile.get("star_asked"))
+    return {"url": url, "asked": asked, "days_practised_all_time": days,
+            "ask_now": bool(url) and not asked and days >= STAR_MIN_DAYS}
 
 
 def item_summary(catalog: Catalog, key: str) -> dict[str, Any] | None:
@@ -373,6 +396,7 @@ def build(conn: sqlite3.Connection, catalog: Catalog, days: int = 14, with_words
         "plan_progress": plan.progress(conn, catalog),
         "mocks": mocks_state(conn, catalog),
         "tap_a_word": tap_a_word(catalog),
+        "star": star_state(conn, profile),
         "content": {"packs": [{"id": p.id, "visibility": p.manifest.visibility, "items": len(p.items)} for p in catalog.packs],
                     "problems": catalog.problems[:20]},
     }

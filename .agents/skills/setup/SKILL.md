@@ -152,7 +152,7 @@ Say something like this, in their language:
 
 On macOS, add: "The first time, your Mac may ask whether you are sure you want to open it. Click Open."
 
-Do not set up scheduled runs here. If they ask for exercises to be prepared automatically every day, follow "Setting up the schedule" in `.agents/skills/daily-prep/SKILL.md`, which asks first.
+Do not ask for a GitHub star here: they have had no benefit yet (the coach asks once, later; `docs/COACHING.md` §7.9). Do not set up scheduled runs here. If they ask for exercises to be prepared automatically every day, follow "Setting up the schedule" in `.agents/skills/daily-prep/SKILL.md`, which asks first.
 
 ## If a check fails
 

@@ -50,3 +50,15 @@ def test_agents_md_lists_every_skill():
     agents = (paths.REPO_ROOT / "AGENTS.md").read_text(encoding="utf-8")
     for name in names(CANONICAL):
         assert f".agents/skills/{name}/SKILL.md" in agents
+
+
+def test_the_star_is_asked_only_by_the_coach_and_once():
+    """COACHING §7.9: one ask, at a check-in, gated by the report's star.ask_now and recorded in star_asked."""
+    coaching = (paths.REPO_ROOT / "docs" / "COACHING.md").read_text(encoding="utf-8")
+    assert "### 7.9 The one star ask" in coaching and "`star_asked`" in coaching
+    coach = (CANONICAL / "coach" / "SKILL.md").read_text(encoding="utf-8")
+    assert "star.ask_now" in coach and "star_asked" in coach
+    for name in names(CANONICAL):
+        if name != "coach":
+            body = (CANONICAL / name / "SKILL.md").read_text(encoding="utf-8")
+            assert "star.ask_now" not in body, f"only the coach asks for a star, not {name}"

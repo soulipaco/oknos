@@ -67,8 +67,8 @@ An agent works on Oknos in two roles, and the repo is laid out for both:
 | **Claude Code** (Opus) | Wrote the app (Python, FastAPI, SQLite, a no-build front end), the tests, the docs and the skills. Coordinates the work across sessions. Wrote the golden chapters and reviewed every other chapter. Reviews every picture. Writes the podcast scripts. Every commit in this repo was made with it. |
 | **Claude Code subagents** (Sonnet) | Drafted the book chapters from an approved outline, 3–5 at a time. Wrote the meanings of the book's 2,780 words, and the glossary of the words the open content shows. |
 | **Codex** (its image model) | Drew the word pictures, the story's scenes and the films' frames. Claude Code starts it headless with a short brief. |
-| **Google Cloud Text-to-Speech** (Chirp 3 HD) | Voiced every Greek text of the open content: the clips in `content/open-voice/`, so a fresh clone sounds right with no key. |
-| **Gemini TTS** | Voiced the films' published narration (`docs/brand/animations/voice/`). |
+| **Google Cloud Text-to-Speech** (Chirp 3 HD) | Voiced every Greek text of the open content: the clips in `content/open-voice/`, so a fresh clone sounds right with no key. Voices the book's shipped podcast episodes (`content/open-podcasts/`). |
+| **Gemini TTS** | Voiced the films' published narration (`docs/brand/animations/voice/`), and takes over podcast lines as its daily quota allows. |
 | **Plain code, no model** | The film player (`film.js`), the films' background sound (`scripts/film_ambience.py`), the brand and these diagrams (`scripts/make_brand.py`), the screenshots (`scripts/readme_images.py`). |
 
 ### The books
@@ -101,7 +101,7 @@ The background sound is **made from numbers**. `scripts/film_ambience.py` builds
 
 ### The podcasts
 
-An episode is a script first (`script.json`: parts, lines in Greek, Turkish or English, speakers, speed, pauses, gaps to repeat). The agent writes it with the `podcast` skill from the chapter. `uv run oknos podcast check` checks it and prints the characters a render will spend. `render` casts each person a voice of their own (`src/oknos/casting.py`), voices the lines a service can act together as one dialogue, and joins it all with ffmpeg into one mp3 for the app's Podcast page. Episodes are made with the learner's own keys and stay in `learner/`, so none is in the repo.
+An episode is a script first (`script.json`: parts, lines in Greek, Turkish or English, speakers, speed, pauses, gaps to repeat). The agent writes it with the `podcast` skill from the chapter. `uv run oknos podcast check` checks it and prints the characters a render will spend. `render` casts each person a voice of their own (`src/oknos/casting.py`), voices the lines a service can act together as one dialogue, and joins it all with ffmpeg into one mp3 for the app's Podcast page. A learner's episodes are made with their own keys and stay in `learner/`. The book's 26 chapter episodes also ship with the repo (`content/open-podcasts/`), voiced by Google only, so a fresh clone can listen with no key.
 
 ## 4. How the code is built: parallel sessions
 

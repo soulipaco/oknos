@@ -253,6 +253,33 @@ def test_report_shape(client, learner):
     assert report.parse_days("3w") == 21 and report.parse_days("10d") == 10
 
 
+def test_star_is_asked_once_and_only_when_public(client, learner, tmp_path, monkeypatch):
+    readme = tmp_path / "README.md"
+    readme.write_text("Say: Download `https://github.com/<owner>/oknos` and set it up.", encoding="utf-8")
+    assert report.repo_page(readme) is None  # the placeholder: the repository is still private
+    readme.write_text("Say: Download `https://github.com/someone/oknos` and set it up.", encoding="utf-8")
+    assert report.repo_page(readme) == "https://github.com/someone/oknos"
+
+    conn = db.open_db()
+    start = db.today() - timedelta(days=10)
+    monkeypatch.setattr(report, "repo_page", lambda readme=None: None)
+    for i in range(report.STAR_MIN_DAYS):
+        _attempt(conn, "open-shared-words-tr/v-kafes", True, start + timedelta(days=i))
+    db.set_clock(None)
+    assert report.star_state(conn, {})["ask_now"] is False  # private: never asked
+    monkeypatch.setattr(report, "repo_page", lambda readme=None: "https://github.com/someone/oknos")
+    star = report.star_state(conn, {})
+    assert star["ask_now"] is True and star["days_practised_all_time"] == report.STAR_MIN_DAYS
+    assert report.star_state(conn, {"star_asked": "2026-11-26"})["ask_now"] is False  # asked once, never again
+
+    with conn:  # one day of practice is too early to ask
+
+        conn.execute("DELETE FROM attempts")
+    _attempt(conn, "open-shared-words-tr/v-kafes", True, start)
+    db.set_clock(None)
+    assert report.star_state(conn, {})["ask_now"] is False
+
+
 def test_report_command_prints_json(learner, capsys):
     assert cli.main(["report", "--since", "7d"]) == 0
     out = json.loads(capsys.readouterr().out)
