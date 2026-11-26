@@ -2747,24 +2747,72 @@ function podListenLink(id, cls = "tile-link") {
   return navLink("podcast", [icon("headphones"), t("pod_listen")], id, cls);
 }
 
-function podCard(ep, current) {
-  const kind = ep.kind === "chapter" ? t("pod_kind_chapter") : t(`pod_kind_${ep.kind}`);
+function podCard(ep, current, stage = null) {
+  // A chapter's episode says which lesson it belongs to; a personal one says its day.
+  const kind = stage ? stageName(stage) : ep.kind === "chapter" ? t("pod_kind_chapter") : t(`pod_kind_${ep.kind}`);
+  const minutes = t("pod_minutes", { n: Math.max(1, Math.round((ep.seconds || 0) / 60)) });
+  const line = stage ? [minutes, stage.id === state.podHere ? t("bk_here") : null]
+    : [minutes, t(`pod_lang_${ep.lang}`), fmtDate(ep.date || ep.rendered?.slice(0, 10))];
   const inner = [
     h("span", { class: "eyebrow" }, icon("headphones"), kind),
     h("strong", {}, podTitle(ep)),
-    h("span", { class: "small muted" }, [t("pod_minutes", { n: Math.max(1, Math.round((ep.seconds || 0) / 60)) }),
-      t(`pod_lang_${ep.lang}`), fmtDate(ep.date || ep.rendered?.slice(0, 10))].filter(Boolean).join(" · "))];
-  const a = navLink("podcast", inner, ep.id, `pod-card${current ? " here" : ""}`);
+    h("span", { class: "small muted" }, line.filter(Boolean).join(" · "))];
+  const here = stage && stage.id === state.podHere;
+  const a = navLink("podcast", inner, ep.id, `pod-card${current ? " here" : ""}${here ? " pod-now" : ""}`);
   if (current) a.setAttribute("aria-current", "page");
   return a;
+}
+
+function podSections(all, cur, playing) {
+  // The chapters' episodes in the book's order, grouped by level like the Book; then the personal ones.
+  const stages = cur?.stages || [];
+  const order = new Map(stages.map((s, i) => [s.id, i]));
+  const chapters = all.filter(e => e.kind === "chapter" && order.has(e.stage)
+                                   && (!e.curriculum || !cur?.curriculum?.id || e.curriculum === cur.curriculum.id));
+  const byStage = new Map();
+  for (const e of chapters) if (!byStage.has(e.stage)) byStage.set(e.stage, e);  // newest first from the server
+  const shown = new Set([...byStage.values()].map(e => e.id));
+  const groups = [];
+  stages.forEach(st => {
+    const e = byStage.get(st.id);
+    if (!e) return;
+    let g = groups.find(x => x.level === st.level);
+    if (!g) groups.push(g = { level: st.level, cards: [], n: 0 });
+    g.n += 1;
+    g.cards.push(podCard(e, playing && e.id === playing.id, st));
+  });
+  const out = groups.map(g => h("section", { class: "bk-group" },
+    h("div", { class: "bk-group-head" }, h("h2", {}, `${g.level} · ${t(LEVEL_NAMES[g.level] || "lvl_other")}`),
+      h("span", { class: "small muted" }, t("pod_n_episodes", { n: g.n }))),
+    h("div", { class: "pod-grid" }, g.cards)));
+  const personal = all.filter(e => !shown.has(e.id) && e.kind !== "chapter");
+  const rest = all.filter(e => !shown.has(e.id) && e.kind === "chapter");
+  if (personal.length) out.push(h("section", { class: "bk-group" },
+    h("div", { class: "bk-group-head" }, h("h2", {}, t("pod_personal"))),
+    h("div", { class: "pod-grid" }, personal.map(e => podCard(e, playing && e.id === playing.id)))));
+  if (rest.length) out.push(h("section", { class: "bk-group" },
+    h("div", { class: "bk-group-head" }, h("h2", {}, t("pod_other"))),
+    h("div", { class: "pod-grid" }, rest.map(e => podCard(e, playing && e.id === playing.id)))));
+  return { sections: out, next: nextEpisode(stages, byStage, playing) };
+}
+
+function nextEpisode(stages, byStage, playing) {
+  // After a chapter's episode, the next lesson's (if there is one).
+  if (!playing || playing.kind !== "chapter") return null;
+  const i = stages.findIndex(s => s.id === playing.stage);
+  for (const st of stages.slice(i + 1)) if (byStage.has(st.id)) return [st, byStage.get(st.id)];
+  return null;
 }
 
 async function renderPodcast(id) {
   // ?podcast: the episodes; ?podcast=<id>: one playing (parts, speed, the script), the others below.
   resetScreens();
-  let data;
-  try { data = await api("/api/podcasts"); } catch { return showError(); }
+  let data, cur;
+  try {
+    [data, cur] = await Promise.all([api("/api/podcasts"), api("/api/curriculum").catch(() => null)]);
+  } catch { return showError(); }
   const all = data.episodes || [];
+  state.podHere = cur?.current?.id || null;
   if (!all.length) {
     return app.replaceChildren(...appBar("podcast"), crumb("home", t("nav_home")),
       h("section", { class: "empty-state" }, donkey("resting", 72), h("p", {}, t("pod_none")),
@@ -2774,16 +2822,19 @@ async function renderPodcast(id) {
   if (id) {
     try { ep = await api(`/api/podcasts/${encodeURIComponent(id)}`); } catch { ep = null; }
   }
+  const epStage = ep?.kind === "chapter" ? (cur?.stages || []).find(s => s.id === ep.stage) : null;
   const head = h("section", { class: "bk-head pod-head" },
-    h("div", { class: "bk-head-text" }, h("p", { class: "eyebrow" }, icon("headphones"), t("pod_eyebrow")),
+    h("div", { class: "bk-head-text" }, h("p", { class: "eyebrow" }, icon("headphones"), epStage ? stageName(epStage) : t("pod_eyebrow")),
       h("h1", {}, ep ? podTitle(ep) : t("pod_title")),
       h("p", { class: "muted" }, ep ? [t("pod_minutes", { n: Math.max(1, Math.round(ep.seconds / 60)) }), t(`pod_lang_${ep.lang}`)].join(" · ")
         : t("pod_lede"))));
   const player = ep ? podPlayer(ep) : null;
-  const others = all.filter(e => !ep || e.id !== ep.id);
-  app.replaceChildren(...[...appBar("podcast"), crumb(ep ? "podcast" : "home", ep ? t("pod_title") : t("nav_home")), head, player,
-    ep && others.length ? h("h2", { class: "films-more" }, t("pod_more")) : null,
-    others.length ? h("div", { class: "pod-grid" }, others.map(e => podCard(e, false))) : null].filter(Boolean));
+  const { sections, next } = podSections(all, cur, ep);
+  const after = ep ? h("div", { class: "tile-actions pod-after" },
+    epStage?.chapter ? navLink("lesson", [icon("book"), t("pod_read_chapter")], epStage.id, "secondary-link") : null,
+    next ? navLink("podcast", [icon("headphones"), t("pod_next", { lesson: stageName(next[0]) })], next[1].id, "secondary-link") : null) : null;
+  app.replaceChildren(...[...appBar("podcast"), crumb(ep ? "podcast" : "home", ep ? t("pod_title") : t("nav_home")), head, player, after,
+    ep ? h("h2", { class: "films-more" }, t("pod_all")) : null, ...sections].filter(Boolean));
 }
 
 function podPlayer(ep) {

@@ -975,4 +975,7 @@ main:has(.pod-player), main:has(.pod-grid) { max-width: 760px; }
   padding: 12px 14px 14px; color: var(--ink); text-decoration: none; box-shadow: var(--shadow); }
 a.pod-card:hover { border-color: var(--accent); }
 .pod-card.here { border: 1.5px solid var(--accent); }
+.pod-card.pod-now { border-color: var(--accent); background: var(--accent-soft, var(--surface)); }
+.pod-card .eyebrow { white-space: normal; }
+.pod-after { margin: 4px 0 8px; }
 .reader .ch-pod { margin: -4px 0 14px; }
