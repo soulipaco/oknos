@@ -58,6 +58,8 @@ You don't need an AI to use Oknos. Nothing in the app calls one, and you can set
 
 **What needs an agent:** the coaching. Without one, nothing makes new exercises around your mistakes, marks the writing and speaking you hand in (they are kept until something does), makes a plan or a mock exam, turns your class or a letter into practice, or checks the exam dates. You can add an agent at any time; it reads where you are and carries on from there.
 
+Comfortable in a terminal? [docs/MANUAL.md](docs/MANUAL.md) shows how to do most of the coaching by hand as well: the settings, your own exercises, other voices, podcasts, marking, and your record as data.
+
 ## A look inside
 
 <table>

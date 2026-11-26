@@ -181,7 +181,7 @@ On the roadmap (2026-11-20, `docs/prompts/`):
 - **Before the repo is made public** (a separate decision):
   - phase 6 step 5, the public-repo check: run on 2026-11-26 and clean except for the two history items below (nothing from `learner/` or `content/private/` ever committed, no keys, every open pack, the shipped voice, podcasts and films under CC BY-SA 4.0, MIT for code);
   - the README and SPEC name the real repository (`soulipaco/oknos`, filled in on 2026-11-26; this also lets the coach's one star ask happen);
-  - the README has a "Without an agent" part (2026-11-26): download, uv, `uv run oknos start`, and what needs an agent;
+  - the README has a "Without an agent" part (2026-11-26): download, uv, `uv run oknos start`, and what needs an agent; `docs/MANUAL.md` covers running it by hand (settings, own exercises, voices, podcasts, marking);
   - upload `docs/brand/social-preview.png` in the repo's Settings → General → Social preview (GitHub shows that section only for public repositories);
   - every commit so far carries the maintainer's personal e-mail; switch to the GitHub no-reply address, and decide whether to rewrite the old commits;
   - three old revisions of the docs still hold the maintainer's Windows user name in a path (fixed in the current files); rewriting that history needs the maintainer's yes.

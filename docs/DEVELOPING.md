@@ -51,6 +51,7 @@ CI runs the guard, the tests and `validate content/open` on Ubuntu and Windows f
 - `docs/COACHING.md`: how the agent coaches: the learner, tone, quality rules for generated Greek, and file formats.
 - `docs/LESSONS.md`: how the book's chapters are written and reviewed.
 - `docs/IMPORTING.md`: importing your own material.
+- `docs/MANUAL.md`: running Oknos by hand, with no agent.
 - `docs/brand/README.md`: the name and the look.
 - `docs/BUILT-WITH-AGENTS.md`: how agents build and run Oknos, who made what, and what no person has checked.
 - `docs/prompts/`: the phased prompts used to build the app.
