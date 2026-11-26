@@ -30,11 +30,33 @@
 
 ## Get started
 
-Install an agent such as the Claude desktop app (Claude Code) or Codex, sign in, and say:
+The easiest way: install an agent such as the Claude desktop app (Claude Code) or Codex, sign in, and say (no agent? see [Without an agent](#without-an-agent)):
 
-> **"Download `https://github.com/<owner>/oknos` and set it up for me."**
+> **"Download `https://github.com/soulipaco/oknos` and set it up for me."**
 
 The agent installs what is needed, starts the app and puts an **Oknos** shortcut on your desktop. After that, double-click **Oknos** whenever you want to study; you don't need the agent open for that. (Already have the code? Open the folder in your agent and say "set this up for me". The agent's steps are in [`.agents/skills/setup/SKILL.md`](.agents/skills/setup/SKILL.md).)
+
+### Without an agent
+
+You don't need an AI to use Oknos. Nothing in the app calls one, and you can set it up yourself in about five minutes:
+
+1. **Get the code.** On this page, click the green **Code** button → **Download ZIP**, and unzip it into a normal folder, for example your Documents (not a OneDrive or iCloud folder). With git you can run `git clone https://github.com/soulipaco/oknos` instead.
+2. **Install uv**, a free tool that brings Python and everything else the app needs. You only do this once, and it needs no admin rights. Run the line for your system in a terminal (on Windows, PowerShell from the Start menu; on a Mac, Terminal):
+   - Windows: `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+   - macOS or Linux: `curl -LsSf https://astral.sh/uv/install.sh | sh`
+
+   Then close the terminal and open a new one.
+3. **Start Oknos.** Go to the folder and start it (on Windows, you can also right-click the folder and choose *Open in Terminal*):
+   ```
+   cd path/to/oknos
+   uv run oknos start
+   ```
+   The first start downloads what the app needs and takes a minute or two. Then the app opens in your browser at `http://127.0.0.1:8642`. You can choose English or Türkçe at the top of the app.
+4. **Optional: a desktop icon.** Run `uv run oknos shortcut` and from then on double-click **Oknos** on your desktop. `uv run oknos stop` stops the app. `uv run oknos health` checks the install if something seems wrong.
+
+**What you get on your own:** the whole app. That means the 26-lesson book with its recorded Greek voice, the daily practice and its reviews, the pictures, tap-a-word meanings, the 26 podcast episodes, the films, practice in the exam formats and the "would you pass today?" screen.
+
+**What needs an agent:** the coaching. Without one, nothing makes new exercises around your mistakes, marks the writing and speaking you hand in (they are kept until something does), makes a plan or a mock exam, turns your class or a letter into practice, or checks the exam dates. You can add an agent at any time; it reads where you are and carries on from there.
 
 ## A look inside
 

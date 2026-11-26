@@ -179,8 +179,9 @@ On the roadmap (2026-11-20, `docs/prompts/`):
 - **CI** (`.github/workflows/ci.yml`) runs on every push and pull request, on Ubuntu and Windows: the guard, `uv run pytest` and `uv run oknos validate content/open`. The tests need nothing from `content/private/`, `learner/` or a signed-in agent. See the result with `gh run list`, and a failure with `gh run view <id> --log-failed`.
 - **The guard** (`uv run oknos guard`, `src/oknos/guard.py`) fails if git tracks anything under `learner/` or `content/private/`, or a file holding a local user path (`C:\Users\<name>`, `/home/<name>`, an agent's temp folder). Write a placeholder such as `C:\Users\you` instead. The tests and CI run it, and so does the pre-push hook in `.githooks/`, which `git config core.hooksPath .githooks` turns on (the `setup` skill does this).
 - **Before the repo is made public** (a separate decision):
-  - phase 6 step 5, the public-repo check, must pass;
-  - the README's `<owner>` placeholder gets the real account;
+  - phase 6 step 5, the public-repo check: run on 2026-11-26 and clean except for the two history items below (nothing from `learner/` or `content/private/` ever committed, no keys, every open pack, the shipped voice, podcasts and films under CC BY-SA 4.0, MIT for code);
+  - the README and SPEC name the real repository (`soulipaco/oknos`, filled in on 2026-11-26; this also lets the coach's one star ask happen);
+  - the README has a "Without an agent" part (2026-11-26): download, uv, `uv run oknos start`, and what needs an agent;
   - upload `docs/brand/social-preview.png` in the repo's Settings → General → Social preview (GitHub shows that section only for public repositories);
   - every commit so far carries the maintainer's personal e-mail; switch to the GitHub no-reply address, and decide whether to rewrite the old commits;
   - three old revisions of the docs still hold the maintainer's Windows user name in a path (fixed in the current files); rewriting that history needs the maintainer's yes.

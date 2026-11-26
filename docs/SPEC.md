@@ -765,7 +765,7 @@ The person needs a computer, internet, and a Claude Code or Codex subscription. 
 
 **Windows**
 1. Install the Claude desktop app (or Codex) and sign in. This is the only step the person does alone.
-2. In the app, pick a folder (e.g. Documents) and type: *"Download https://github.com/<owner>/oknos and set it up for me."*
+2. In the app, pick a folder (e.g. Documents) and type: *"Download https://github.com/soulipaco/oknos and set it up for me."*
 3. The agent:
    - checks for git and installs it with `winget install Git.Git` if missing, telling the person a Windows prompt may appear;
    - clones the repo;
