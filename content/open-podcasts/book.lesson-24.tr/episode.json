@@ -1,0 +1,795 @@
+{
+ "id": "book.lesson-24.tr",
+ "kind": "chapter",
+ "lang": "tr",
+ "title": {
+  "tr": "Bir kök, dört kapı: Ayşe'nin uzun e-postası",
+  "en": "One stem, four doors: Ayşe's long e-mail"
+ },
+ "curriculum": "oknos-book",
+ "stage": "lesson-24",
+ "version": 4,
+ "written": "2026-11-26",
+ "date": null,
+ "rendered": "2026-11-26T13:56:18",
+ "seconds": 803.1,
+ "script": "699da8d3b695",
+ "parts": [
+  {
+   "t": 3.0,
+   "title": "Açılış"
+  },
+  {
+   "t": 35.04,
+   "title": "Hoş geldin"
+  },
+  {
+   "t": 77.06,
+   "title": "Ayşe'nin e-postası"
+  },
+  {
+   "t": 220.94,
+   "title": "Bir kök, dört kapı"
+  },
+  {
+   "t": 306.58,
+   "title": "Kime, ne?"
+  },
+  {
+   "t": 382.78,
+   "title": "Θα var mı, yok mu?"
+  },
+  {
+   "t": 476.44,
+   "title": "Sıra sende"
+  },
+  {
+   "t": 553.93,
+   "title": "Mert'in hatası"
+  },
+  {
+   "t": 592.55,
+   "title": "Oyun: Yunanca soru, Yunanca cevap"
+  },
+  {
+   "t": 644.32,
+   "title": "Köşe: nice yıllara"
+  },
+  {
+   "t": 680.15,
+   "title": "Gelecek bölüm"
+  },
+  {
+   "t": 738.0,
+   "title": "Katerina anlatıyor"
+  }
+ ],
+ "lines": [
+  {
+   "t": 3.0,
+   "lang": "el",
+   "say": "Στο ταχυδρομείο έστειλα ένα δέμα στη μητέρα μου.",
+   "who": "ayse"
+  },
+  {
+   "t": 5.92,
+   "lang": "el",
+   "say": "Πάρτε ένα χάπι το πρωί και ένα το βράδυ και μην πάτε στη δουλειά.",
+   "who": "giatros"
+  },
+  {
+   "t": 9.52,
+   "lang": "el",
+   "say": "Όταν έρθεις τη Μεγάλη Πέμπτη, θα βάψουμε αυγά μαζί.",
+   "who": "maria"
+  },
+  {
+   "t": 13.24,
+   "lang": "el",
+   "say": "Το βράδυ της τηλεφώνησα για να της το πω.",
+   "who": "ayse"
+  },
+  {
+   "t": 16.51,
+   "lang": "tr",
+   "say": "Bir doktor, bir komşu, bir de Ayşe. Dört cümle, dört ayrı dersten. Ama dördünün içinde aynı gizli parça var.",
+   "who": "ada"
+  },
+  {
+   "t": 25.85,
+   "lang": "tr",
+   "say": "Gizli parça mı? Ben sadece koli, hap ve yumurta duydum.",
+   "who": "mert"
+  },
+  {
+   "t": 29.85,
+   "lang": "tr",
+   "say": "Bölümün sonunda o parçayı her yerde duyacaksın.",
+   "who": "ada"
+  },
+  {
+   "t": 35.04,
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, yirmi dördüncü bölüm, bir tekrar bölümü: bugün yeni hiçbir şey yok.",
+   "who": "ada"
+  },
+  {
+   "t": 43.75,
+   "lang": "tr",
+   "say": "Ben de Mert. Yeni bir şey yoksa ben bugün tatildeyim, değil mi?",
+   "who": "mert"
+  },
+  {
+   "t": 48.04,
+   "lang": "tr",
+   "say": "Hiç de değil. Bir yıl geçti. Ayşe arkadaşı Eleni'ye uzun bir e-posta yazıyor, içinde son beş dersin hepsi var. Ama önce sana bir soru, Yunanca. Μερτ, εσύ τι έκανες πέρσι το καλοκαίρι;",
+   "who": "ada"
+  },
+  {
+   "t": 61.96,
+   "lang": "el",
+   "say": "Δεν πήγα διακοπές. Έμεινα στο σπίτι και δούλεψα.",
+   "who": "mert"
+  },
+  {
+   "t": 66.18,
+   "lang": "tr",
+   "say": "Ayşe'den az eğlenmişsin, ama cümlen doğru. Stüdyoda Katerina da var.",
+   "who": "ada"
+  },
+  {
+   "t": 71.47,
+   "lang": "el",
+   "say": "Γεια σας! Σήμερα έχουμε ένα μεγάλο γράμμα από την Αϊσέ.",
+   "who": "katerina"
+  },
+  {
+   "t": 77.06,
+   "lang": "tr",
+   "say": "Ayşe okuyor. Doktorun ve komşunun sözlerini kendi seslerinden duyacaksın. Her kelimeyi anlaman gerekmiyor. Bir şeye kulak ver: Ayşe dün hangi iki yere gitti?",
+   "who": "ada"
+  },
+  {
+   "t": 88.66,
+   "lang": "el",
+   "say": "Γεια σου Ελένη! Έχω πολλά νέα! Πέρσι το καλοκαίρι πήγα διακοπές στην Πάρο με τη Ζέινεπ. Πήραμε το πλοίο από τη Ραφήνα και φτάσαμε το μεσημέρι. Κολυμπήσαμε πολύ, φάγαμε ψάρι και ήπιαμε κρασί. Ήταν τέλεια!",
+   "who": "ayse"
+  },
+  {
+   "t": 103.6,
+   "lang": "el",
+   "say": "Έχω και μια πρόταση για νέα δουλειά. Ο μισθός είναι καλύτερος από τον μισθό που παίρνω τώρα, αλλά η εταιρεία είναι πιο μακριά και το ωράριο είναι μεγαλύτερο. Επειδή θέλω καλύτερο μισθό, θα πάρω τη νέα δουλειά, αν και δε θα έχω ρεπό τα Σάββατα. Όταν αρχίσω, θα σου πω πώς είναι.",
+   "who": "ayse"
+  },
+  {
+   "t": 120.54,
+   "lang": "el",
+   "say": "Την περασμένη εβδομάδα ήμουν άρρωστη. Την Τρίτη πήγα στον γιατρό, γιατί είχα πυρετό. Ο γιατρός μου είπε:",
+   "who": "ayse"
+  },
+  {
+   "t": 126.87,
+   "lang": "el",
+   "say": "Πάρτε ένα χάπι το πρωί και ένα το βράδυ και μην πάτε στη δουλειά.",
+   "who": "giatros"
+  },
+  {
+   "t": 130.48,
+   "lang": "el",
+   "say": "Ευτυχώς δεν ήταν σοβαρό! Χθες πήγα στην τράπεζα και στο ταχυδρομείο. Στην τράπεζα άνοιξα λογαριασμό και έκανα μια κατάθεση. Στο ταχυδρομείο έστειλα ένα δέμα στη μητέρα μου, συστημένο. Το βράδυ της τηλεφώνησα για να της το πω.",
+   "who": "ayse"
+  },
+  {
+   "t": 145.96,
+   "lang": "el",
+   "say": "Σε δύο εβδομάδες έχουμε Πάσχα. Πριν από δύο μέρες είδα τη γειτόνισσά μου και μου είπε:",
+   "who": "ayse"
+  },
+  {
+   "t": 151.11,
+   "lang": "el",
+   "say": "Όταν έρθεις τη Μεγάλη Πέμπτη, θα βάψουμε αυγά μαζί.",
+   "who": "maria"
+  },
+  {
+   "t": 154.83,
+   "lang": "el",
+   "say": "Στις είκοσι μία Μαΐου είναι η γιορτή σου. Θα σου τηλεφωνήσω να σου πω «Χρόνια πολλά!» Και εσύ; Τι νέα; Γράψε μου! Καλό Πάσχα! Φιλιά, Αϊσέ.",
+   "who": "ayse"
+  },
+  {
+   "t": 164.89,
+   "lang": "tr",
+   "say": "Dün hangi iki yere gitti? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 171.92,
+   "lang": "tr",
+   "say": "Doktora ve bankaya.",
+   "who": "mert"
+  },
+  {
+   "t": 173.6,
+   "lang": "tr",
+   "say": "Doktor geçen haftaydı. Dün bankaya ve postaneye gitti: στην τράπεζα και στο ταχυδρομείο. Şimdi iş teklifi, yavaşça. Yeni işin kötü yanı ne?",
+   "who": "ada"
+  },
+  {
+   "t": 185.75,
+   "lang": "el",
+   "say": "Ο μισθός είναι καλύτερος από τον μισθό που παίρνω τώρα, αλλά η εταιρεία είναι πιο μακριά και το ωράριο είναι μεγαλύτερο.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 193.73,
+   "lang": "el",
+   "say": "Επειδή θέλω καλύτερο μισθό, θα πάρω τη νέα δουλειά, αν και δε θα έχω ρεπό τα Σάββατα.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 200.41,
+   "lang": "tr",
+   "say": "Yeni işin kötü yanı ne? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 207.24,
+   "lang": "tr",
+   "say": "Şirket daha uzak, πιο μακριά. Bir de cumartesileri izin yok.",
+   "who": "mert"
+  },
+  {
+   "t": 211.73,
+   "lang": "tr",
+   "say": "Bir de mesai daha uzun: το ωράριο είναι μεγαλύτερο. Yunanca uzun mesaiye büyük mesai der.",
+   "who": "ada"
+  },
+  {
+   "t": 220.94,
+   "lang": "tr",
+   "say": "Şimdi söyle Ada. Açılıştaki gizli parça ne?",
+   "who": "mert"
+  },
+  {
+   "t": 224.75,
+   "lang": "tr",
+   "say": "Geleceğin bir kerelik kökü: θα γράψω, yazacağım. Son beş dersin çoğu bu kökün üstüne kurulu. Katerina, yavaşça:",
+   "who": "ada"
+  },
+  {
+   "t": 234.99,
+   "lang": "el",
+   "say": "θα γράψω. έγραψα. γράψε. μη γράψεις. όταν γράψω. για να γράψω.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 257.2,
+   "lang": "tr",
+   "say": "Yazacağım, yazdım, yaz, yazma, yazınca, yazmak için. Altı anlam, bir gövde.",
+   "who": "ada"
+  },
+  {
+   "t": 264.2,
+   "lang": "tr",
+   "say": "O zaman açılıştaki dört cümle de böyle: έστειλα, πάρτε, έρθεις, για να πω. Bir de sonda γράψε μου.",
+   "who": "mert"
+  },
+  {
+   "t": 271.58,
+   "lang": "tr",
+   "say": "Aynen. Dört ayrı ders, tek kapı. Şimdi ilk paragrafa bak, orada hep biz var: πήραμε, φτάσαμε, φάγαμε, ήπιαμε.",
+   "who": "ada"
+  },
+  {
+   "t": 280.82,
+   "lang": "tr",
+   "say": "Ama tek başına yediğinde έφαγα. Baştaki e, biz derken kayboldu.",
+   "who": "mert"
+  },
+  {
+   "t": 285.65,
+   "lang": "tr",
+   "say": "İyi kulak. O e yalnızca vurgu için. Geçmişte vurgu sondan üçüncü heceye gider. Yedim derken o hece yok, e onu taşır. Φάγαμε zaten üç hece.",
+   "who": "ada"
+  },
+  {
+   "t": 296.99,
+   "lang": "el",
+   "say": "Έφαγα ψάρι. Φάγαμε ψάρι.",
+   "who": "katerina"
+  },
+  {
+   "t": 306.58,
+   "lang": "tr",
+   "say": "Şimdi açılıştaki son cümle. Ayşe akşam annesini aradı.",
+   "who": "ada"
+  },
+  {
+   "t": 311.35,
+   "lang": "el",
+   "say": "Το βράδυ της τηλεφώνησα για να της το πω.",
+   "who": "katerina"
+  },
+  {
+   "t": 317.82,
+   "lang": "tr",
+   "say": "İki küçük kelime yan yana: της το. Hangisi ne?",
+   "who": "mert"
+  },
+  {
+   "t": 321.32,
+   "lang": "tr",
+   "say": "Της, ona, yani anneye. Το, onu, yani o haberi. Türkçede onu ona da dersin, ona onu da. Yunancada sıra sabit: önce kime, sonra ne.",
+   "who": "ada"
+  },
+  {
+   "t": 333.33,
+   "lang": "el",
+   "say": "Το δέμα; Της το έστειλα χθες.",
+   "who": "katerina"
+  },
+  {
+   "t": 340.47,
+   "lang": "tr",
+   "say": "Bu küçük kelimeler fiilin önünde durur. Olumlu emirde ise arkaya geçer: γράψε μου, bana yaz. Yasakta yine öne döner:",
+   "who": "ada"
+  },
+  {
+   "t": 351.45,
+   "lang": "el",
+   "say": "Μη μου το δώσεις!",
+   "who": "katerina"
+  },
+  {
+   "t": 355.44,
+   "lang": "tr",
+   "say": "Peki doktor neden πάρτε, μην πάτε dedi? Sonları -τε.",
+   "who": "mert"
+  },
+  {
+   "t": 360.69,
+   "lang": "tr",
+   "say": "Çünkü Ayşe'ye siz diyor: alın, gitmeyin. Bir arkadaşa söyleseydi:",
+   "who": "ada"
+  },
+  {
+   "t": 366.39,
+   "lang": "el",
+   "say": "Πάρε ένα χάπι και μην πας στη δουλειά.",
+   "who": "katerina"
+  },
+  {
+   "t": 371.86,
+   "lang": "tr",
+   "say": "Yasakta μην'den sonra να ile kullanılan biçim gelir. Μην πάρε diye bir şey yok.",
+   "who": "ada"
+  },
+  {
+   "t": 382.78,
+   "lang": "tr",
+   "say": "Bir şey kafamı karıştırdı. Όταν αρχίσω, θα σου πω: όταν'dan sonra θα yok. Ama Ayşe αν και δε θα έχω ρεπό dedi. Αν'dan sonra da θα olmuyordu hani?",
+   "who": "mert"
+  },
+  {
+   "t": 395.58,
+   "lang": "tr",
+   "say": "Güzel soru. Αν ile αν και aynı kelime değil. Αν, eğer. Αν και, -se de. İki ayrı aile. Όταν ve αν, Türkçedeki başlayınca gibi: içinde gelecek eki yok, ama anlam gelecek. Arkalarından θα olmadan bir kerelik kök gelir.",
+   "who": "ada"
+  },
+  {
+   "t": 419.95,
+   "lang": "el",
+   "say": "Αν δεν αργήσω, θα έρθω.",
+   "who": "katerina"
+  },
+  {
+   "t": 424.5,
+   "lang": "tr",
+   "say": "Επειδή ve αν και ise normal bir cümle alır: şimdiki zaman, geçmiş, θα ile gelecek. Sadece να gelmez. Cumartesi izni gelecekte olmayacak, o yüzden θα:",
+   "who": "ada"
+  },
+  {
+   "t": 440.94,
+   "lang": "el",
+   "say": "Θα πάρω τη νέα δουλειά, αν και δε θα έχω ρεπό τα Σάββατα.",
+   "who": "katerina"
+  },
+  {
+   "t": 450.7,
+   "lang": "tr",
+   "say": "Bir ayrıntı: όταν'dan sonra bir durum gelirse şimdiki zaman kalır. Μερτ, θα μου γράψεις;",
+   "who": "ada"
+  },
+  {
+   "t": 458.08,
+   "lang": "el",
+   "say": "Θα σου γράψω, όταν έχω χρόνο.",
+   "who": "mert"
+  },
+  {
+   "t": 460.64,
+   "lang": "tr",
+   "say": "Έχω, çünkü zamanın olması bir durum. Και όταν φτάσεις στο σπίτι;",
+   "who": "ada"
+  },
+  {
+   "t": 466.1,
+   "lang": "el",
+   "say": "Όταν φτάσω, θα σου τηλεφωνήσω.",
+   "who": "mert"
+  },
+  {
+   "t": 469.04,
+   "lang": "tr",
+   "say": "Φτάσω, çünkü eve varmak tek bir olay. Mükemmel.",
+   "who": "ada"
+  },
+  {
+   "t": 476.44,
+   "lang": "tr",
+   "say": "Şimdi sıra sende. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert, en son Katerina. Birincisi: biri koliyi soruyor. Ona, yani bir kadına, dün gönderdim de.",
+   "who": "ada"
+  },
+  {
+   "t": 495.96,
+   "lang": "el",
+   "say": "Της το έστειλα χθες.",
+   "who": "mert"
+  },
+  {
+   "t": 497.52,
+   "lang": "el",
+   "say": "Της το έστειλα χθες.",
+   "who": "katerina"
+  },
+  {
+   "t": 501.78,
+   "lang": "tr",
+   "say": "Bir arkadaşına: bana yaz!",
+   "who": "ada"
+  },
+  {
+   "t": 508.15,
+   "lang": "el",
+   "say": "Μου γράψε!",
+   "who": "mert"
+  },
+  {
+   "t": 509.7,
+   "lang": "tr",
+   "say": "Olumlu emirde küçük kelime nerede?",
+   "who": "ada"
+  },
+  {
+   "t": 512.45,
+   "lang": "tr",
+   "say": "Arkada. Γράψε μου!",
+   "who": "mert"
+  },
+  {
+   "t": 514.52,
+   "lang": "el",
+   "say": "Γράψε μου!",
+   "who": "katerina"
+  },
+  {
+   "t": 517.5,
+   "lang": "tr",
+   "say": "Başlayınca sana anlatırım.",
+   "who": "ada"
+  },
+  {
+   "t": 524.31,
+   "lang": "el",
+   "say": "Όταν αρχίσω, θα σου πω.",
+   "who": "mert"
+  },
+  {
+   "t": 526.03,
+   "lang": "el",
+   "say": "Όταν αρχίσω, θα σου πω.",
+   "who": "katerina"
+  },
+  {
+   "t": 531.28,
+   "lang": "tr",
+   "say": "Son olarak: daha iyi maaş istediğim için yeni işi alacağım.",
+   "who": "ada"
+  },
+  {
+   "t": 540.19,
+   "lang": "el",
+   "say": "Επειδή θέλω καλύτερο μισθό, θα πάρω τη νέα δουλειά.",
+   "who": "mert"
+  },
+  {
+   "t": 543.77,
+   "lang": "el",
+   "say": "Επειδή θέλω καλύτερο μισθό, θα πάρω τη νέα δουλειά.",
+   "who": "katerina"
+  },
+  {
+   "t": 553.93,
+   "lang": "tr",
+   "say": "Mert, hızlı ol. Düşünmeden söyle: akşam onu aradım. Onu, yani anneni.",
+   "who": "ada"
+  },
+  {
+   "t": 561.36,
+   "lang": "el",
+   "say": "Το βράδυ την τηλεφώνησα.",
+   "who": "mert"
+  },
+  {
+   "t": 563.45,
+   "lang": "tr",
+   "say": "Küçük kelime yanlış.",
+   "who": "ada"
+  },
+  {
+   "t": 565.3,
+   "lang": "tr",
+   "say": "Neden? Onu aradım. Onu, την.",
+   "who": "mert"
+  },
+  {
+   "t": 568.26,
+   "lang": "tr",
+   "say": "Türkçenin tuzağı. Türkçede birini ararsın. Ama τηλεφωνώ, telefon etmek demek, ve Türkçede de anneme telefon ettim dersin. Yunancada da birine telefon edilir: της τηλεφώνησα.",
+   "who": "ada"
+  },
+  {
+   "t": 582.43,
+   "lang": "tr",
+   "say": "Aramak değil, telefon etmek. Tamam.",
+   "who": "mert"
+  },
+  {
+   "t": 585.84,
+   "lang": "el",
+   "say": "Το βράδυ της τηλεφώνησα.",
+   "who": "katerina"
+  },
+  {
+   "t": 592.55,
+   "lang": "tr",
+   "say": "Şimdi bir oyun, tamamen Yunanca. Ben e-postadan soru soracağım, sen cevapla, sonra Mert.",
+   "who": "ada"
+  },
+  {
+   "t": 599.8,
+   "lang": "el",
+   "say": "Πού πήγε η Αϊσέ πέρσι το καλοκαίρι;",
+   "who": "ada"
+  },
+  {
+   "t": 606.31,
+   "lang": "el",
+   "say": "Στην Πάρο, με τη Ζέινεπ.",
+   "who": "mert"
+  },
+  {
+   "t": 608.53,
+   "lang": "el",
+   "say": "Σωστά! Γιατί πήγε στον γιατρό;",
+   "who": "ada"
+  },
+  {
+   "t": 615.3,
+   "lang": "el",
+   "say": "Γιατί είχε πυρετό.",
+   "who": "mert"
+  },
+  {
+   "t": 616.91,
+   "lang": "el",
+   "say": "Πολύ καλά. Πότε είναι η γιορτή της Ελένης;",
+   "who": "ada"
+  },
+  {
+   "t": 624.51,
+   "lang": "el",
+   "say": "Στις είκοσι μία Μάιος.",
+   "who": "mert"
+  },
+  {
+   "t": 627.27,
+   "lang": "tr",
+   "say": "Ayın sonuna dikkat. Tarihte ay, kimin sorusundaki biçime girer: ο Μάιος, ama Μαΐου.",
+   "who": "ada"
+  },
+  {
+   "t": 636.97,
+   "lang": "el",
+   "say": "Στις είκοσι μία Μαΐου.",
+   "who": "katerina"
+  },
+  {
+   "t": 644.32,
+   "lang": "tr",
+   "say": "Kültür köşesi. Χρόνια πολλά, kelimesi kelimesine çok yıllar. Türkçede ne deriz?",
+   "who": "ada"
+  },
+  {
+   "t": 650.81,
+   "lang": "tr",
+   "say": "Nice yıllara! Aynı fikir.",
+   "who": "mert"
+  },
+  {
+   "t": 653.21,
+   "lang": "tr",
+   "say": "Evet. Yunanlar bunu isim gününde, doğum gününde, bayramlarda da söyler, Paskalya'da da. Yirmi bir Mayıs'ta kilise iki azizi birlikte anar: imparator Konstantin ile annesi Helena. O gün bütün Eleniler kutlanır.",
+   "who": "ada"
+  },
+  {
+   "t": 667.45,
+   "lang": "tr",
+   "say": "Peki Πάσχα? Paskalya'ya benziyor.",
+   "who": "mert"
+  },
+  {
+   "t": 670.32,
+   "lang": "tr",
+   "say": "Aynı kelime. Aslı İbranice Pesah, Hamursuz Bayramı'nın adı. Yunancaya oradan geçti, Türkçedeki Paskalya da aynı kökten.",
+   "who": "ada"
+  },
+  {
+   "t": 680.15,
+   "lang": "tr",
+   "say": "Gelecek bölüm bir köprü, A ikiden B bire. Belediye, mahallenin pazar yerini taşıyor. Eleni buna karşı belediye başkanına resmî bir e-posta yazıyor.",
+   "who": "ada"
+  },
+  {
+   "t": 690.66,
+   "lang": "tr",
+   "say": "Γεια σου ve Φιλιά ile mi?",
+   "who": "mert"
+  },
+  {
+   "t": 693.6,
+   "lang": "tr",
+   "say": "Hiç değil. Sınavda da fark bu. A ikide arkadaşa kırk ile altmış kelime yazarsın, Φιλιά ile bitirirsin. B birde resmî metin yüz otuz ile yüz yetmiş kelime, baştan sona siz. Başı ve sonu:",
+   "who": "ada"
+  },
+  {
+   "t": 711.64,
+   "lang": "el",
+   "say": "Αξιότιμε κύριε Δήμαρχε. Με εκτίμηση.",
+   "who": "katerina"
+  },
+  {
+   "t": 719.57,
+   "lang": "tr",
+   "say": "Sayın Belediye Başkanı, saygılarımla. Bu arada bölümü uygulamada oku ve alıştırmaları yap. Şimdi son söz Katerina'nın: Ayşe'nin yılı, sadece Yunanca. Bu sefer her kelimeyi anlayacaksın. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "t": 735.34,
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "t": 738.0,
+   "lang": "el",
+   "say": "Πέρασε ένας χρόνος. Η Αϊσέ γράφει στη φίλη της, την Ελένη.",
+   "who": "katerina"
+  },
+  {
+   "t": 742.1,
+   "lang": "el",
+   "say": "Πέρσι το καλοκαίρι η Αϊσέ και η Ζέινεπ πήγαν διακοπές στην Πάρο.",
+   "who": "katerina"
+  },
+  {
+   "t": 745.81,
+   "lang": "el",
+   "say": "Πήραν το πλοίο από τη Ραφήνα. Κολύμπησαν πολύ, έφαγαν ψάρι και ήπιαν κρασί.",
+   "who": "katerina"
+  },
+  {
+   "t": 750.9,
+   "lang": "el",
+   "say": "Τώρα η Αϊσέ έχει μια πρόταση για νέα δουλειά.",
+   "who": "katerina"
+  },
+  {
+   "t": 753.85,
+   "lang": "el",
+   "say": "Ο μισθός είναι καλύτερος, αλλά η εταιρεία είναι πιο μακριά και το ωράριο είναι μεγαλύτερο.",
+   "who": "katerina"
+  },
+  {
+   "t": 759.65,
+   "lang": "el",
+   "say": "Η Αϊσέ θα πάρει τη δουλειά, επειδή θέλει καλύτερο μισθό.",
+   "who": "katerina"
+  },
+  {
+   "t": 763.24,
+   "lang": "el",
+   "say": "Την περασμένη εβδομάδα ήταν άρρωστη. Είχε πυρετό και πήγε στον γιατρό.",
+   "who": "katerina"
+  },
+  {
+   "t": 767.86,
+   "lang": "el",
+   "say": "Ο γιατρός της είπε: «Πάρτε ένα χάπι το πρωί και ένα το βράδυ.»",
+   "who": "katerina"
+  },
+  {
+   "t": 772.45,
+   "lang": "el",
+   "say": "Ευτυχώς δεν ήταν σοβαρό.",
+   "who": "katerina"
+  },
+  {
+   "t": 774.59,
+   "lang": "el",
+   "say": "Χθες η Αϊσέ άνοιξε λογαριασμό στην τράπεζα.",
+   "who": "katerina"
+  },
+  {
+   "t": 778.11,
+   "lang": "el",
+   "say": "Μετά έστειλε ένα δέμα στη μητέρα της, και το βράδυ της τηλεφώνησε.",
+   "who": "katerina"
+  },
+  {
+   "t": 783.07,
+   "lang": "el",
+   "say": "Σε δύο εβδομάδες είναι Πάσχα.",
+   "who": "katerina"
+  },
+  {
+   "t": 785.43,
+   "lang": "el",
+   "say": "Τη Μεγάλη Πέμπτη η Αϊσέ θα βάψει αυγά με τη γειτόνισσά της.",
+   "who": "katerina"
+  },
+  {
+   "t": 789.75,
+   "lang": "el",
+   "say": "Και στις είκοσι μία Μαΐου θα τηλεφωνήσει στην Ελένη, για να της πει: «Χρόνια πολλά!»",
+   "who": "katerina"
+  },
+  {
+   "t": 795.77,
+   "lang": "el",
+   "say": "Καλό Πάσχα σε όλους! Γεια σας!",
+   "who": "katerina"
+  }
+ ],
+ "cast": {
+  "ayse": {
+   "name": "Αϊσέ",
+   "voice": "Achernar"
+  },
+  "giatros": {
+   "name": "Γιατρός",
+   "voice": "Alnilam"
+  },
+  "maria": {
+   "name": "Μαρία",
+   "voice": "Erinome"
+  },
+  "ada": {
+   "name": "Ada",
+   "voice": "Sulafat"
+  },
+  "mert": {
+   "name": "Mert",
+   "voice": "Umbriel"
+  },
+  "katerina": {
+   "name": "Κατερίνα",
+   "voice": "Gacrux"
+  }
+ },
+ "sounds": true
+}
