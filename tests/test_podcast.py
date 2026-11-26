@@ -548,6 +548,7 @@ def test_a_service_without_dialogue_reads_line_by_line_and_cannot_say_mixed_line
         podcast.render("open.first-words.tr")
 
 
+@pytest.mark.skipif(not HAS_FFMPEG, reason="ffmpeg joins the pieces (CI has none)")
 def test_chirp_makes_a_mixed_line_in_pieces_one_language_each_in_one_voice(learner, monkeypatch):
     assert podcast.split_mixed("Evet dediğimde, yani Ναι dediğimde, herkes güldü.", "tr") == [
         ("tr", "Evet dediğimde, yani"), ("el", "Ναι"), ("tr", "dediğimde, herkes güldü.")]
@@ -568,6 +569,7 @@ def test_chirp_makes_a_mixed_line_in_pieces_one_language_each_in_one_voice(learn
     assert len(meta["clips"]) == len(set(meta["clips"])) >= len(langs)
 
 
+@pytest.mark.skipif(not HAS_FFMPEG, reason="the learner's render joins the clips with ffmpeg (CI has none)")
 def test_a_shipped_episode_plays_until_the_learner_renders_their_own(client, learner, monkeypatch):
     shipped = podcast.shipped_dir() / "open.first-words.tr"
     shipped.mkdir(parents=True)
