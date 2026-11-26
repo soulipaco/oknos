@@ -2,8 +2,8 @@
  {
   "id": "ch06-q-family",
   "ask": {
-   "en": "Eleni: «Η οικογένειά μου είναι …» Where is her family?",
-   "tr": "Eleni: «Η οικογένειά μου είναι …» Ailesi nerede?"
+   "en": "Kalliopi: «Η οικογένειά μου είναι …» Where is her family?",
+   "tr": "Kalliopi: «Η οικογένειά μου είναι …» Ailesi nerede?"
   },
   "type": "mcq",
   "skill": "reading",
@@ -17,9 +17,9 @@
    "tr": "Doğru cevabı seç."
   },
   "prompt": {
-   "el": "Ελένη: «Η οικογένειά μου είναι …»",
-   "en": "Eleni: «Η οικογένειά μου είναι …» Where is her family?",
-   "tr": "Eleni: «Η οικογένειά μου είναι …» Ailesi nerede?"
+   "el": "Καλλιόπη: «Η οικογένειά μου είναι …»",
+   "en": "Kalliopi: «Η οικογένειά μου είναι …» Where is her family?",
+   "tr": "Kalliopi: «Η οικογένειά μου είναι …» Ailesi nerede?"
   },
   "options": [
    "στην Πάτρα.",
@@ -28,8 +28,8 @@
   ],
   "answer": 0,
   "explain": {
-   "en": "«Η οικογένειά μου είναι στην Πάτρα.» Izmir is where Mehmet's parents live, and Marousi is where Eleni herself lives.",
-   "tr": "«Η οικογένειά μου είναι στην Πάτρα.» İzmir, Mehmet'in anne babasının yeri; Marusi ise Eleni'nin kendi oturduğu semt."
+   "en": "«Η οικογένειά μου είναι στην Πάτρα.» Izmir is where Mehmet's parents live, and Marousi is where Kalliopi herself lives.",
+   "tr": "«Η οικογένειά μου είναι στην Πάτρα.» İzmir, Mehmet'in anne babasının yeri; Marusi ise Kalliopi'nin kendi oturduğu semt."
   },
   "source": {
    "doc": "chapter",
@@ -64,15 +64,15 @@
     "answer": false
    },
    {
-    "el": "Η Ελένη μένει στην Καλλιθέα.",
-    "en": "Eleni lives in Kallithea.",
-    "tr": "Eleni Kallithea'da oturuyor.",
+    "el": "Η Καλλιόπη μένει στην Καλλιθέα.",
+    "en": "Kalliopi lives in Kallithea.",
+    "tr": "Kalliopi Kallithea'da oturuyor.",
     "answer": false
    }
   ],
   "explain": {
-   "en": "Mehmet: «Δουλεύω στο νοσοκομείο». Mrs Andreou: «Εγώ είμαι από τη Θεσσαλονίκη». Eleni: «Μένω στο Μαρούσι»; it is Mehmet who lives in Kallithea.",
-   "tr": "Mehmet: «Δουλεύω στο νοσοκομείο». Andreou Hanım: «Εγώ είμαι από τη Θεσσαλονίκη». Eleni: «Μένω στο Μαρούσι»; Kallithea'da oturan Mehmet."
+   "en": "Mehmet: «Δουλεύω στο νοσοκομείο». Mrs Andreou: «Εγώ είμαι από τη Θεσσαλονίκη». Kalliopi: «Μένω στο Μαρούσι»; it is Mehmet who lives in Kallithea.",
+   "tr": "Mehmet: «Δουλεύω στο νοσοκομείο». Andreou Hanım: «Εγώ είμαι από τη Θεσσαλονίκη». Kalliopi: «Μένω στο Μαρούσι»; Kallithea'da oturan Mehmet."
   },
   "source": {
    "doc": "chapter",
@@ -96,7 +96,7 @@
   "grammar": [
    "verb.eimai"
   ],
-  "text": "— Κύριε Γιλμάζ, {1} από την Τουρκία; — Ναι, είμαι από τη Σμύρνη.",
+  "text": "— Κύριε Σαχίν, {1} από την Τουρκία; — Ναι, είμαι από τη Σμύρνη.",
   "answer": {
    "1": [
     "είστε"
@@ -110,12 +110,12 @@
    ]
   },
   "translation": {
-   "en": "— Mr Yılmaz, are you from Turkey? — Yes, I am from Izmir.",
-   "tr": "— Yılmaz Bey, Türkiye'den misiniz? — Evet, İzmir'denim."
+   "en": "— Mr Şahin, are you from Turkey? — Yes, I am from Izmir.",
+   "tr": "— Şahin Bey, Türkiye'den misiniz? — Evet, İzmir'denim."
   },
   "explain": {
-   "en": "«Κύριε Γιλμάζ» is formal, so it is είστε (εσείς).",
-   "tr": "«Κύριε Γιλμάζ» resmî hitap: είστε (εσείς)."
+   "en": "«Κύριε Σαχίν» is formal, so it is είστε (εσείς).",
+   "tr": "«Κύριε Σαχίν» resmî hitap: είστε (εσείς)."
   },
   "source": {
    "doc": "chapter",
@@ -230,7 +230,7 @@
    "en": "Fill in the gap.",
    "tr": "Boşluğu doldur."
   },
-  "text": "— Ελένη, εσύ μένεις στο Μαρούσι. Και η οικογένειά {1}; — Η οικογένειά {2} είναι στην Πάτρα.",
+  "text": "— Καλλιόπη, εσύ μένεις στο Μαρούσι. Και η οικογένειά {1}; — Η οικογένειά {2} είναι στην Πάτρα.",
   "bank": [
    "μου",
    "σου",
@@ -241,12 +241,12 @@
    "2": "μου"
   },
   "translation": {
-   "en": "— Eleni, you live in Marousi. And your family? — My family is in Patras.",
-   "tr": "— Eleni, sen Marusi'de oturuyorsun. Ya ailen? — Ailem Patra'da."
+   "en": "— Kalliopi, you live in Marousi. And your family? — My family is in Patras.",
+   "tr": "— Kalliopi, sen Marusi'de oturuyorsun. Ya ailen? — Ailem Patra'da."
   },
   "explain": {
-   "en": "Eleni is a friend (εσύ, μένεις), so σου. She answers about herself: μου. σας would be formal or plural.",
-   "tr": "Eleni arkadaş (εσύ, μένεις): σου. Kendinden söz ediyor: μου. σας resmî ya da çoğul olurdu."
+   "en": "Kalliopi is a friend (εσύ, μένεις), so σου. She answers about herself: μου. σας would be formal or plural.",
+   "tr": "Kalliopi arkadaş (εσύ, μένεις): σου. Kendinden söz ediyor: μου. σας resmî ya da çoğul olurdu."
   },
   "source": {
    "doc": "chapter",
@@ -506,7 +506,7 @@
    "en": "Fill in the gap.",
    "tr": "Boşluğu doldur."
   },
-  "text": "Ο αδελφός μου {1} φοιτητής. Εγώ {2} μηχανικός. Κύριε Παππά, εσείς {3} δικηγόρος;",
+  "text": "Ο αδελφός μου {1} φοιτητής. Εγώ {2} μηχανικός. Κύριε Παππά, εσείς {3} λογιστής;",
   "bank": [
    "είμαι",
    "είναι",
@@ -519,8 +519,8 @@
    "3": "είστε"
   },
   "translation": {
-   "en": "My brother is a student. I am an engineer. Mr Pappas, are you a lawyer?",
-   "tr": "Erkek kardeşim üniversite öğrencisi. Ben mühendisim. Pappas Bey, siz avukat mısınız?"
+   "en": "My brother is a student. I am an engineer. Mr Pappas, are you an accountant?",
+   "tr": "Erkek kardeşim üniversite öğrencisi. Ben mühendisim. Pappas Bey, siz muhasebeci misiniz?"
   },
   "explain": {
    "en": "«Ο αδελφός μου» is he: είναι. Εγώ: είμαι. «Κύριε Παππά, εσείς» is formal: είστε. είσαι would go with εσύ.",

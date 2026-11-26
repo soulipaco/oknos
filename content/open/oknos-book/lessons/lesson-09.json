@@ -133,9 +133,9 @@
       },
       {
        "who": "Νίκος",
-       "el": "Γεια σου, Αϊσέ! Ευχαριστώ για το μήνυμα. Εγώ δεν πίνω ποτέ καφέ το πρωί. Πίνω τσάι και τρώω ψωμί με γιαούρτι στη δουλειά, στη βιβλιοθήκη.",
-       "tr": "Selam Ayşe! Mesajın için teşekkürler. Ben sabahları hiç kahve içmem. İşte, kütüphanede çay içer, yoğurtla ekmek yerim.",
-       "en": "Hi Ayşe! Thanks for the message. I never drink coffee in the morning. I drink tea and eat bread with yoghurt at work, at the library."
+       "el": "Γεια σου, Αϊσέ! Ευχαριστώ για το μήνυμα. Εγώ δεν πίνω ποτέ ζεστό καφέ το πρωί. Πίνω τσάι και τρώω ψωμί με γιαούρτι στη δουλειά, στο θέατρο.",
+       "tr": "Selam Ayşe! Mesajın için teşekkürler. Ben sabahları hiç sıcak kahve içmem. İşte, tiyatroda çay içer, yoğurtla ekmek yerim.",
+       "en": "Hi Ayşe! Thanks for the message. I never drink hot coffee in the morning. I drink tea and eat bread with yoghurt at work, at the theatre."
       }
      ]
     }
@@ -596,8 +596,8 @@
    "blocks": [
     {
      "type": "prose",
-     "tr": "Ders 3'ten: **πάντα** (her zaman) · **συνήθως** (genellikle) · **συχνά** (sık sık) · **μερικές φορές** (bazen) · **ποτέ** (hiçbir zaman). Yeni: **σπάνια** (nadiren). Zarf fiilden önce ya da sonra gelir. *Ποτέ* ile fiil *δεν* alır (*Δεν πίνω ποτέ καφέ*, *Ποτέ δεν πίνω καφέ*); *σπάνια* ile almaz (*Σπάνια πίνω καφέ*).",
-     "en": "From Lesson 3: **πάντα** (always) · **συνήθως** (usually) · **συχνά** (often) · **μερικές φορές** (sometimes) · **ποτέ** (never). New: **σπάνια** (rarely). The adverb goes before or after the verb. With *ποτέ* the verb takes *δεν* (*Δεν πίνω ποτέ καφέ*, *Ποτέ δεν πίνω καφέ*); with *σπάνια* it does not (*Σπάνια πίνω καφέ*)."
+     "tr": "Ders 3'ten: **πάντα** (her zaman) · **συνήθως** (genellikle) · **συχνά** (sık sık) · **μερικές φορές** (bazen) · **ποτέ** (hiçbir zaman). Yeni: **σπάνια** (nadiren). Zarf fiilden önce ya da sonra gelir. *Ποτέ* ile fiil *δεν* alır (*Δεν πίνω ποτέ ζεστό καφέ*, *Ποτέ δεν πίνω ζεστό καφέ*); *σπάνια* ile almaz (*Σπάνια πίνω ζεστό καφέ*).",
+     "en": "From Lesson 3: **πάντα** (always) · **συνήθως** (usually) · **συχνά** (often) · **μερικές φορές** (sometimes) · **ποτέ** (never). New: **σπάνια** (rarely). The adverb goes before or after the verb. With *ποτέ* the verb takes *δεν* (*Δεν πίνω ποτέ ζεστό καφέ*, *Ποτέ δεν πίνω ζεστό καφέ*); with *σπάνια* it does not (*Σπάνια πίνω ζεστό καφέ*)."
     }
    ]
   },

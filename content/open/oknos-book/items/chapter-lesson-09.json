@@ -257,15 +257,15 @@
     "answer": false
    },
    {
-    "el": "Ο Νίκος πίνει καφέ το πρωί.",
-    "en": "Nikos drinks coffee in the morning.",
-    "tr": "Nikos sabahları kahve içiyor.",
+    "el": "Ο Νίκος πίνει ζεστό καφέ το πρωί.",
+    "en": "Nikos drinks hot coffee in the morning.",
+    "tr": "Nikos sabahları sıcak kahve içiyor.",
     "answer": false
    }
   ],
   "explain": {
-   "en": "Ayşe: «Το βράδυ συχνά ακούω ραδιόφωνο» and «το πρωί δεν τρώω ποτέ». Nikos: «δεν πίνω ποτέ καφέ το πρωί»; he drinks tea.",
-   "tr": "Ayşe: «Το βράδυ συχνά ακούω ραδιόφωνο» ve «το πρωί δεν τρώω ποτέ». Nikos: «δεν πίνω ποτέ καφέ το πρωί»; o çay içiyor."
+   "en": "Ayşe: «Το βράδυ συχνά ακούω ραδιόφωνο» and «το πρωί δεν τρώω ποτέ». Nikos: «δεν πίνω ποτέ ζεστό καφέ το πρωί»; he drinks tea.",
+   "tr": "Ayşe: «Το βράδυ συχνά ακούω ραδιόφωνο» ve «το πρωί δεν τρώω ποτέ». Nikos: «δεν πίνω ποτέ ζεστό καφέ το πρωί»; o çay içiyor."
   },
   "source": {
    "doc": "chapter",

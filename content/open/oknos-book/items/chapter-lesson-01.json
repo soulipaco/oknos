@@ -469,8 +469,8 @@
   ],
   "answer": 0,
   "explain": {
-   "en": "Mehmet says «Είμαι από την Τουρκία». Ayşe is the one from Izmir (Σμύρνη).",
-   "tr": "Mehmet «Είμαι από την Τουρκία» diyor. İzmirli (Σμύρνη) olan Ayşe."
+   "en": "Mehmet says «Είμαι από την Τουρκία». He gives only the country in this dialogue. Ayşe mentions Izmir (Σμύρνη) in Dialogue 2.",
+   "tr": "Mehmet «Είμαι από την Τουρκία» diyor. Bu diyalogda sadece ülkesini söylüyor. Ayşe ikinci diyalogda İzmir'den (Σμύρνη) geldiğini söylüyor."
   },
   "source": {
    "doc": "chapter",

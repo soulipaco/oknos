@@ -106,21 +106,21 @@
    "blocks": [
     {
      "type": "prose",
-     "tr": "Ertesi gün Ayşe, Selanik'teki arkadaşı Maria'ya yazıyor. Arkadaşlar mesajı *Φιλιά* ([[Φιλιά]], «öpücükler») ile bitirebilir.",
-     "en": "The next day Ayşe writes to her friend Maria in Thessaloniki. Friends can end a message with *Φιλιά* ([[Φιλιά]], «kisses»)."
+     "tr": "Ertesi gün Ayşe, Selanik'teki arkadaşı Anastasia'ya yazıyor. Arkadaşlar mesajı *Φιλιά* ([[Φιλιά]], «öpücükler») ile bitirebilir.",
+     "en": "The next day Ayşe writes to her friend Anastasia in Thessaloniki. Friends can end a message with *Φιλιά* ([[Φιλιά]], «kisses»)."
     },
     {
      "type": "dialogue",
      "setting": {
-      "tr": "Mesajlaşma: Ayşe, Maria'ya yazıyor.",
-      "en": "A text message from Ayşe to Maria."
+      "tr": "Mesajlaşma: Ayşe, Anastasia'ya yazıyor.",
+      "en": "A text message from Ayşe to Anastasia."
      },
      "lines": [
       {
        "who": "Αϊσέ",
-       "el": "Γεια σου Μαρία! Γύρισα την Κυριακή από την Πάρο.",
-       "tr": "Merhaba Maria! Pazar günü Paros'tan döndüm.",
-       "en": "Hi Maria! I came back from Paros on Sunday."
+       "el": "Γεια σου, Αναστασία! Γύρισα την Κυριακή από την Πάρο.",
+       "tr": "Merhaba Anastasia! Pazar günü Paros'tan döndüm.",
+       "en": "Hi Anastasia! I came back from Paros on Sunday."
       },
       {
        "who": "Αϊσέ",
@@ -231,14 +231,14 @@
      "type": "examples",
      "items": [
       {
-       "el": "Χθες έγραψα ένα μήνυμα στη Μαρία.",
-       "tr": "Dün Maria'ya bir mesaj yazdım.",
-       "en": "Yesterday I wrote a message to Maria."
+       "el": "Χθες έγραψα ένα μήνυμα στην Αναστασία.",
+       "tr": "Dün Anastasia'ya bir mesaj yazdım.",
+       "en": "Yesterday I wrote a message to Anastasia."
       },
       {
-       "el": "Η Αϊσέ έγραψε ένα μήνυμα στη Μαρία.",
-       "tr": "Ayşe Maria'ya bir mesaj yazdı.",
-       "en": "Ayşe wrote a message to Maria."
+       "el": "Η Αϊσέ έγραψε ένα μήνυμα στην Αναστασία.",
+       "tr": "Ayşe Anastasia'ya bir mesaj yazdı.",
+       "en": "Ayşe wrote a message to Anastasia."
       }
      ]
     }

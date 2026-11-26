@@ -97,15 +97,15 @@
      "lines": [
       {
        "who": "Ελένη",
-       "el": "Γεια σου, Αϊσέ! Την Κυριακή το πρωί θα είμαι στο πάρκο με τον Νίκο και τη Σοφία. Έρχεσαι κι εσύ; Φιλιά, Ελένη",
-       "tr": "Merhaba Ayşe! Pazar sabahı Nikos ve Sofia'yla parkta olacağım. Sen de gelir misin? Öptüm, Eleni",
-       "en": "Hi, Ayşe! On Sunday morning I will be in the park with Nikos and Sofia. Are you coming too? Love, Eleni"
+       "el": "Γεια σου, Αϊσέ! Την Κυριακή το πρωί θα είμαι στο πάρκο με τον Νίκο και τη Λυδία. Έρχεσαι κι εσύ; Φιλιά, Ελένη",
+       "tr": "Merhaba Ayşe! Pazar sabahı Nikos ve Lydia'yla parkta olacağım. Sen de gelir misin? Öptüm, Eleni",
+       "en": "Hi, Ayşe! On Sunday morning I will be in the park with Nikos and Lydia. Are you coming too? Love, Eleni"
       },
       {
        "who": "Αϊσέ",
-       "el": "Γεια σου, Ελένη! Ευχαριστώ πολύ! Το Σάββατο έρχομαι στον Πειραιά, αλλά την Κυριακή δουλεύω, από τις οχτώ μέχρι τις έξι. Χθες είδα τη Σοφία στο μετρό! Φιλιά, Αϊσέ",
-       "tr": "Merhaba Eleni! Çok teşekkürler! Cumartesi Pire'ye geliyorum ama pazar günü sekizden altıya kadar çalışıyorum. Dün Sofia'yı metroda gördüm! Öptüm, Ayşe",
-       "en": "Hi, Eleni! Thanks a lot! On Saturday I'm coming to Piraeus, but on Sunday I work, from eight until six. Yesterday I saw Sofia on the metro! Love, Ayşe"
+       "el": "Γεια σου, Ελένη! Ευχαριστώ πολύ! Το Σάββατο έρχομαι στον Πειραιά, αλλά αυτή την Κυριακή δουλεύω, από τις οχτώ μέχρι τις έξι. Χθες είδα τη Λυδία στο μετρό! Φιλιά, Αϊσέ",
+       "tr": "Merhaba Eleni! Çok teşekkürler! Cumartesi Pire'ye geliyorum ama bu pazar saat sekizden altıya kadar çalışıyorum. Dün Lydia'yı metroda gördüm! Öptüm, Ayşe",
+       "en": "Hi, Eleni! Thanks a lot! On Saturday I'm coming to Piraeus, but this Sunday I work, from eight until six. Yesterday I saw Lydia on the metro! Love, Ayşe"
       }
      ]
     }
@@ -419,9 +419,9 @@
        "en": "Yesterday I saw Nikos on the metro."
       },
       {
-       "el": "Αύριο θα δεις τη Σοφία στο πάρκο.",
-       "tr": "Yarın Sofia'yı parkta göreceksin.",
-       "en": "Tomorrow you will see Sofia in the park."
+       "el": "Αύριο θα δεις τη Λυδία στο πάρκο.",
+       "tr": "Yarın Lydia'yı parkta göreceksin.",
+       "en": "Tomorrow you will see Lydia in the park."
       },
       {
        "el": "Αύριο θα φύγω από τη δουλειά στις έξι.",
@@ -663,8 +663,8 @@
     {
      "type": "tip",
      "kind": "exam",
-     "tr": "**Sınavda.** Arkadaşça e-posta (40-60 kelime) çoğu zaman bir davet ya da bir davete cevaptır. İşe yarar: *Έρχεσαι την Κυριακή;*, yer ve saat (*στο πάρκο στις δέκα*), sebep (*αλλά την Κυριακή δουλεύω*), kapanış (*Φιλιά*).",
-     "en": "**In the exam.** The friendly e-mail (40-60 words) is often an invitation or a reply to one. Useful: *Έρχεσαι την Κυριακή;*, a place and time (*στο πάρκο στις δέκα*), a reason (*αλλά την Κυριακή δουλεύω*), *Φιλιά*.",
+     "tr": "**Sınavda.** Arkadaşça e-posta (40-60 kelime) çoğu zaman bir davet ya da bir davete cevaptır. İşe yarar: *Έρχεσαι την Κυριακή;*, yer ve saat (*στο πάρκο στις δέκα*), sebep (*αλλά αυτή την Κυριακή δουλεύω*), kapanış (*Φιλιά*).",
+     "en": "**In the exam.** The friendly e-mail (40-60 words) is often an invitation or a reply to one. Useful: *Έρχεσαι την Κυριακή;*, a place and time (*στο πάρκο στις δέκα*), a reason (*αλλά αυτή την Κυριακή δουλεύω*), *Φιλιά*.",
      "exam_task": "a2ltr.writing.email_friendly"
     }
    ]

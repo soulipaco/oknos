@@ -713,7 +713,7 @@
    "en": "Fill in the gap.",
    "tr": "Boşluğu doldur."
   },
-  "text": "Κύριε Γιλμάζ, το όνομά {1}, παρακαλώ; — Το όνομά {2} είναι Μεχμέτ.",
+  "text": "Κύριε Σαχίν, το όνομά {1}, παρακαλώ; — Το όνομά {2} είναι Μεχμέτ.",
   "bank": [
    "μου",
    "σας",
@@ -724,8 +724,8 @@
    "2": "μου"
   },
   "translation": {
-   "en": "Mr Yilmaz, your first name, please? — My first name is Mehmet.",
-   "tr": "Bay Yılmaz, adınız, lütfen? — Adım Mehmet."
+   "en": "Mr Şahin, your first name, please? — My first name is Mehmet.",
+   "tr": "Bay Şahin, adınız, lütfen? — Adım Mehmet."
   },
   "explain": {
    "en": "The clerk is formal («κύριε»): σας. Mehmet answers about himself: μου.",

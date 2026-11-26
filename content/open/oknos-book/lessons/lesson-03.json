@@ -126,9 +126,9 @@
       },
       {
        "who": "Νίκος",
-       "el": "Εγώ δεν πίνω ποτέ καφέ. Συνήθως πίνω τσάι.",
-       "tr": "Ben hiç kahve içmem. Genellikle çay içerim.",
-       "en": "I never drink coffee. I usually drink tea."
+       "el": "Εγώ δεν πίνω ποτέ ζεστό καφέ. Συνήθως πίνω τσάι.",
+       "tr": "Ben hiç sıcak kahve içmem. Genellikle çay içerim.",
+       "en": "I never drink hot coffee. I usually drink tea."
       },
       {
        "who": "Αϊσέ",
@@ -431,12 +431,12 @@
        "en": "I am from Izmir."
       },
       {
-       "el": "Η Ελένη μένει στην Πάτρα.",
-       "tr": "Eleni Patra'da oturuyor.",
-       "en": "Eleni lives in Patras.",
+       "el": "Η Ελένη μένει στην Καλλιθέα.",
+       "tr": "Eleni Kallithea'da oturuyor.",
+       "en": "Eleni lives in Kallithea.",
        "note": {
-        "tr": "π listede, bu yüzden -ν kalır.",
-        "en": "π is on the list, so the -ν stays."
+        "tr": "κ listede, bu yüzden -ν kalır.",
+        "en": "κ is on the list, so the -ν stays."
        }
       },
       {
@@ -564,8 +564,8 @@
    "blocks": [
     {
      "type": "prose",
-     "tr": "**Ne sıklıkla**, çoktan aza: **πάντα** (her zaman) · **συνήθως** (genellikle) · **συχνά** (sık sık) · **μερικές φορές** (bazen) · **ποτέ** (hiçbir zaman). Fiilden önce ya da sonra gelebilirler.\n\n**ποτέ** ile fiilin önüne **δεν** de gelir: *Δεν πίνω ποτέ καφέ* (hiç kahve içmem).",
-     "en": "**How often**, from most to least: **πάντα** (always) · **συνήθως** (usually) · **συχνά** (often) · **μερικές φορές** (sometimes) · **ποτέ** (never). They can stand before or after the verb.\n\nWith **ποτέ** the verb also takes **δεν**: *Δεν πίνω ποτέ καφέ* (I never drink coffee)."
+     "tr": "**Ne sıklıkla**, çoktan aza: **πάντα** (her zaman) · **συνήθως** (genellikle) · **συχνά** (sık sık) · **μερικές φορές** (bazen) · **ποτέ** (hiçbir zaman). Fiilden önce ya da sonra gelebilirler.\n\n**ποτέ** ile fiilin önüne **δεν** de gelir: *Δεν πίνω ποτέ ζεστό καφέ* (hiç sıcak kahve içmem).",
+     "en": "**How often**, from most to least: **πάντα** (always) · **συνήθως** (usually) · **συχνά** (often) · **μερικές φορές** (sometimes) · **ποτέ** (never). They can stand before or after the verb.\n\nWith **ποτέ** the verb also takes **δεν**: *Δεν πίνω ποτέ ζεστό καφέ* (I never drink hot coffee)."
     },
     {
      "type": "examples",

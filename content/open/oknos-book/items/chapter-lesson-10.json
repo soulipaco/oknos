@@ -322,15 +322,15 @@
     "answer": false
    },
    {
-    "el": "Η Αϊσέ: Την Κυριακή είμαι στο πάρκο.",
-    "en": "Ayşe: On Sunday I am in the park.",
-    "tr": "Ayşe: Pazar günü parktayım.",
+    "el": "Η Αϊσέ: Αυτή την Κυριακή είμαι στο πάρκο.",
+    "en": "Ayşe: This Sunday I am in the park.",
+    "tr": "Ayşe: Bu pazar parktayım.",
     "answer": false
    }
   ],
   "explain": {
-   "en": "Ayşe writes «Το Σάββατο έρχομαι στον Πειραιά». Eleni says «Σήμερα βρέχει»: the heat is for Saturday. On Sunday Ayşe works from eight until six, so she is not in the park.",
-   "tr": "Ayşe «Το Σάββατο έρχομαι στον Πειραιά» diye yazıyor. Eleni «Σήμερα βρέχει» diyor: sıcak hava cumartesi için. Pazar günü Ayşe sekizden altıya kadar çalışıyor, yani parkta değil."
+   "en": "Ayşe writes «Το Σάββατο έρχομαι στον Πειραιά». Eleni says «Σήμερα βρέχει»: the heat is for Saturday. This Sunday Ayşe works from eight until six, so she is not in the park.",
+   "tr": "Ayşe «Το Σάββατο έρχομαι στον Πειραιά» diye yazıyor. Eleni «Σήμερα βρέχει» diyor: sıcak hava cumartesi için. Bu pazar Ayşe sekizden altıya kadar çalışıyor, yani parkta değil."
   },
   "source": {
    "doc": "chapter",

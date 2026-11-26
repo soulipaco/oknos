@@ -29,8 +29,8 @@
    "blocks": [
     {
      "type": "prose",
-     "tr": "Önce dinle, sonra oku. Mehmet önce kursun sekreteriyle resmî, sonra Eleni ile samimi konuşuyor.",
-     "en": "Listen first, then read. Mehmet talks formally to the course secretary, then informally to Eleni."
+     "tr": "Önce dinle, sonra oku. Mehmet önce kursun sekreteriyle resmî, sonra Kalliopi ile samimi konuşuyor.",
+     "en": "Listen first, then read. Mehmet talks formally to the course secretary, then informally to Kalliopi."
     },
     {
      "type": "dialogue",
@@ -53,15 +53,15 @@
       },
       {
        "who": "Μεχμέτ",
-       "el": "Με λένε Μεχμέτ Γιλμάζ.",
-       "tr": "Adım Mehmet Yılmaz.",
-       "en": "My name is Mehmet Yılmaz."
+       "el": "Με λένε Μεχμέτ Σαχίν.",
+       "tr": "Adım Mehmet Şahin.",
+       "en": "My name is Mehmet Şahin."
       },
       {
        "who": "Κυρία Ανδρέου",
-       "el": "Χαίρω πολύ, κύριε Γιλμάζ. Από πού είστε;",
-       "tr": "Memnun oldum Yılmaz Bey. Nerelisiniz?",
-       "en": "Nice to meet you, Mr Yılmaz. Where are you from?"
+       "el": "Χαίρω πολύ, κύριε Σαχίν. Από πού είστε;",
+       "tr": "Memnun oldum Şahin Bey. Nerelisiniz?",
+       "en": "Nice to meet you, Mr Şahin. Where are you from?"
       },
       {
        "who": "Μεχμέτ",
@@ -95,24 +95,24 @@
       },
       {
        "who": "Κυρία Ανδρέου",
-       "el": "Ευχαριστώ. Ελένη, από δω ο Μεχμέτ Γιλμάζ. Η Ελένη είναι φοιτήτρια.",
-       "tr": "Teşekkürler. Eleni, bu Mehmet Yılmaz. Eleni üniversite öğrencisi.",
-       "en": "Thank you. Eleni, this is Mehmet Yılmaz. Eleni is a university student."
+       "el": "Ευχαριστώ. Καλλιόπη, από δω ο Μεχμέτ Σαχίν. Η Καλλιόπη είναι φοιτήτρια.",
+       "tr": "Teşekkürler. Kalliopi, bu Mehmet Şahin. Kalliopi üniversite öğrencisi.",
+       "en": "Thank you. Kalliopi, this is Mehmet Şahin. Kalliopi is a university student."
       },
       {
-       "who": "Ελένη",
+       "who": "Καλλιόπη",
        "el": "Γεια σου, Μεχμέτ! Χαίρω πολύ.",
        "tr": "Merhaba Mehmet! Memnun oldum.",
        "en": "Hi, Mehmet! Nice to meet you."
       },
       {
        "who": "Μεχμέτ",
-       "el": "Χαίρω πολύ, Ελένη. Πού μένεις;",
-       "tr": "Ben de memnun oldum Eleni. Sen nerede oturuyorsun?",
-       "en": "Nice to meet you, Eleni. Where do you live?"
+       "el": "Χαίρω πολύ, Καλλιόπη. Πού μένεις;",
+       "tr": "Ben de memnun oldum Kalliopi. Sen nerede oturuyorsun?",
+       "en": "Nice to meet you, Kalliopi. Where do you live?"
       },
       {
-       "who": "Ελένη",
+       "who": "Καλλιόπη",
        "el": "Μένω στο Μαρούσι. Μιλάς ελληνικά πολύ καλά!",
        "tr": "Marusi'de oturuyorum. Çok iyi Yunanca konuşuyorsun!",
        "en": "I live in Marousi. You speak Greek very well!"
@@ -124,7 +124,7 @@
        "en": "Thank you! I speak Turkish, Greek and a little English."
       },
       {
-       "who": "Ελένη",
+       "who": "Καλλιόπη",
        "el": "Η οικογένειά σου είναι στην Τουρκία;",
        "tr": "Ailen Türkiye'de mi?",
        "en": "Is your family in Turkey?"
@@ -136,7 +136,7 @@
        "en": "Yes. My mother and my father live in Izmir. And your family?"
       },
       {
-       "who": "Ελένη",
+       "who": "Καλλιόπη",
        "el": "Η οικογένειά μου είναι στην Πάτρα. Ο πατέρας μου είναι δάσκαλος.",
        "tr": "Ailem Patra'da. Babam öğretmen.",
        "en": "My family is in Patras. My father is a teacher."
@@ -148,16 +148,16 @@
        "en": "Good! Is the lesson on Monday?"
       },
       {
-       "who": "Ελένη",
+       "who": "Καλλιόπη",
        "el": "Ναι, τη Δευτέρα και την Πέμπτη. Γεια σου!",
        "tr": "Evet, pazartesi ve perşembe. Hoşça kal!",
        "en": "Yes, on Monday and Thursday. Bye!"
       },
       {
        "who": "Μεχμέτ",
-       "el": "Γεια σου, Ελένη! Ευχαριστώ, κυρία Ανδρέου. Γεια σας!",
-       "tr": "Hoşça kal Eleni! Teşekkür ederim Andreou Hanım. İyi günler!",
-       "en": "Bye, Eleni! Thank you, Mrs Andreou. Goodbye!"
+       "el": "Γεια σου, Καλλιόπη! Ευχαριστώ, κυρία Ανδρέου. Γεια σας!",
+       "tr": "Hoşça kal Kalliopi! Teşekkür ederim Andreou Hanım. İyi günler!",
+       "en": "Bye, Kalliopi! Thank you, Mrs Andreou. Goodbye!"
       }
      ]
     }
@@ -266,9 +266,9 @@
        "en": "I am from Izmir."
       },
       {
-       "el": "Κύριε Γιλμάζ, είστε μηχανικός;",
-       "tr": "Yılmaz Bey, mühendis misiniz?",
-       "en": "Mr Yılmaz, are you an engineer?"
+       "el": "Κύριε Σαχίν, είστε μηχανικός;",
+       "tr": "Şahin Bey, mühendis misiniz?",
+       "en": "Mr Şahin, are you an engineer?"
       }
      ]
     }

@@ -35,8 +35,8 @@
     {
      "type": "dialogue",
      "setting": {
-      "tr": "Ayşe'nin telefonunda kontör bitti. Sabah erkenden büfeye uğruyor; büfeci Kostas.",
-      "en": "Ayşe's phone has run out of credit. Early in the morning she stops at the kiosk, which Kostas runs."
+      "tr": "Ayşe'nin telefonunda kontör bitti. Sabah erkenden büfeye uğruyor; büfeci Sotiris.",
+      "en": "Ayşe's phone has run out of credit. Early in the morning she stops at the kiosk, which Sotiris runs."
      },
      "lines": [
       {
@@ -46,7 +46,7 @@
        "en": "Good morning! A top-up card for my phone, please."
       },
       {
-       "who": "Κώστας",
+       "who": "Σωτήρης",
        "el": "Καλημέρα. Δεν έχω, δυστυχώς. Αύριο.",
        "tr": "Günaydın. Yok, maalesef. Yarın.",
        "en": "Good morning. I haven't got any, I'm afraid. Tomorrow."
@@ -58,7 +58,7 @@
        "en": "Pity. How much is this chewing gum?"
       },
       {
-       "who": "Κώστας",
+       "who": "Σωτήρης",
        "el": "Ένα ευρώ.",
        "tr": "Bir avro.",
        "en": "One euro."
@@ -70,7 +70,7 @@
        "en": "I'd like one, please. Here you are, twenty euros."
       },
       {
-       "who": "Κώστας",
+       "who": "Σωτήρης",
        "el": "Είκοσι; Δεν έχω ψιλά… Κάτι άλλο;",
        "tr": "Yirmi mi? Bozuk param yok… Başka bir şey?",
        "en": "Twenty? I have no change… Anything else?"
@@ -82,7 +82,7 @@
        "en": "Wait… Here you are, one euro!"
       },
       {
-       "who": "Κώστας",
+       "who": "Σωτήρης",
        "el": "Ευχαριστώ! Γεια σας!",
        "tr": "Teşekkürler! İyi günler!",
        "en": "Thank you! Goodbye!"

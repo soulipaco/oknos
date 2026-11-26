@@ -103,8 +103,8 @@
     },
     {
      "type": "prose",
-     "tr": "Şimdi Eleni'nin resmî cevabı, **model metin**: yaklaşık 150 kelime. Açılış ve kapanış kalıptır: «[[Αξιότιμε κύριε Δήμαρχε]]» (Sayın Belediye Başkanı); bir kadına «[[Αξιότιμη κυρία]]» ve soyadı (*Αξιότιμη κυρία Παππά*); kimin okuyacağını bilmiyorsan «[[Αξιότιμοι κύριοι]]» (Sayın Yetkili); sonda «[[Με εκτίμηση]]» (saygılarımla) ve bir ad. Paragraflara ve bağlaçlara bak. Kelimeler: «[[οι συνταξιούχοι]]» (emekliler), «[[προτείνω]]» (öneriyorum), «[[να δημιουργηθεί]]» (yapılsın, kurulsun), «[[όπως και πολλοί άλλοι]]» (birçok başkası gibi).",
-     "en": "Now Eleni's formal reply, the **model text**: about 150 words. The opening and the closing are set phrases: «[[Αξιότιμε κύριε Δήμαρχε]]» (Dear Mayor); to a woman «[[Αξιότιμη κυρία]]» and her surname (*Αξιότιμη κυρία Παππά*); to an unknown reader «[[Αξιότιμοι κύριοι]]» (Dear Sir or Madam); at the end «[[Με εκτίμηση]]» (Yours sincerely) and a name. Watch the paragraphs and the linking words. Words: «[[οι συνταξιούχοι]]» (pensioners), «[[προτείνω]]» (I suggest), «[[να δημιουργηθεί]]» (that it be set up), «[[όπως και πολλοί άλλοι]]» (like many others)."
+     "tr": "Şimdi Eleni'nin resmî cevabı, **model metin**: yaklaşık 150 kelime. Açılış ve kapanış kalıptır: «[[Αξιότιμε κύριε Δήμαρχε]]» (Sayın Belediye Başkanı); bir kadına «[[Αξιότιμη κυρία]]» ve soyadı (*Αξιότιμη κυρία Ράπτη*); kimin okuyacağını bilmiyorsan «[[Αξιότιμοι κύριοι]]» (Sayın Yetkili); sonda «[[Με εκτίμηση]]» (saygılarımla) ve bir ad. Paragraflara ve bağlaçlara bak. Kelimeler: «[[οι συνταξιούχοι]]» (emekliler), «[[προτείνω]]» (öneriyorum), «[[να δημιουργηθεί]]» (yapılsın, kurulsun), «[[όπως και πολλοί άλλοι]]» (birçok başkası gibi).",
+     "en": "Now Eleni's formal reply, the **model text**: about 150 words. The opening and the closing are set phrases: «[[Αξιότιμε κύριε Δήμαρχε]]» (Dear Mayor); to a woman «[[Αξιότιμη κυρία]]» and her surname (*Αξιότιμη κυρία Ράπτη*); to an unknown reader «[[Αξιότιμοι κύριοι]]» (Dear Sir or Madam); at the end «[[Με εκτίμηση]]» (Yours sincerely) and a name. Watch the paragraphs and the linking words. Words: «[[οι συνταξιούχοι]]» (pensioners), «[[προτείνω]]» (I suggest), «[[να δημιουργηθεί]]» (that it be set up), «[[όπως και πολλοί άλλοι]]» (like many others)."
     },
     {
      "type": "dialogue",
@@ -157,9 +157,9 @@
       },
       {
        "who": "Η Ελένη",
-       "el": "Ελένη Παππά",
-       "tr": "Eleni Pappa",
-       "en": "Eleni Pappa"
+       "el": "Ελένη Ράπτη",
+       "tr": "Eleni Rapti",
+       "en": "Eleni Rapti"
       }
      ]
     }

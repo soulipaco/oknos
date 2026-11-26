@@ -559,7 +559,7 @@
    "en": "Fill in the gap.",
    "tr": "Boşluğu doldur."
   },
-  "text": "Το Σάββατο εμείς θα {1} στην ταβέρνα. Εγώ θα {2} αρνί, η Αϊσέ θα {3} κοτόπουλο και ο Νίκος θα {4} τον λογαριασμό.",
+  "text": "Το Σάββατο εμείς θα {1} στην ταβέρνα. Εγώ θα {2} ζυμαρικά, η Αϊσέ θα {3} αρνί και ο Νίκος θα πάρει κοτόπουλο και θα {4} τον λογαριασμό.",
   "bank": [
    "πάμε",
    "φάω",
@@ -574,8 +574,8 @@
    "4": "πληρώσει"
   },
   "translation": {
-   "en": "On Saturday we will go to the taverna. I will have lamb, Ayşe will have chicken and Nikos will pay the bill.",
-   "tr": "Cumartesi biz tavernaya gideceğiz. Ben kuzu yiyeceğim, Ayşe tavuk yiyecek, Nikos da hesabı ödeyecek."
+   "en": "On Saturday we will go to the taverna. I will have pasta, Ayşe will have lamb, and Nikos will have chicken and pay the bill.",
+   "tr": "Cumartesi biz tavernaya gideceğiz. Ben makarna yiyeceğim, Ayşe kuzu yiyecek, Nikos da tavuk yiyip hesabı ödeyecek."
   },
   "explain": {
    "en": "Match each verb to its subject: εμείς → πάμε, εγώ → φάω, η Αϊσέ → φάει, ο Νίκος → πληρώσει. φάτε (you, plural) is left over.",

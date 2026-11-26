@@ -342,17 +342,17 @@
        "en": "Hi, Giannis!"
       },
       {
-       "el": "Κώστα, από δω η Μαρία.",
-       "tr": "Kostas, bu Maria.",
-       "en": "Kostas, this is Maria."
+       "el": "Σάββα, από δω η Μαρία.",
+       "tr": "Savvas, bu Maria.",
+       "en": "Savvas, this is Maria."
       },
       {
-       "el": "Ο Κώστας είναι λογιστής.",
-       "tr": "Kostas muhasebeci.",
-       "en": "Kostas is an accountant.",
+       "el": "Ο Σάββας είναι λογιστής.",
+       "tr": "Savvas muhasebeci.",
+       "en": "Savvas is an accountant.",
        "note": {
-        "tr": "Burada Kostas'a seslenmiyoruz, ondan söz ediyoruz; bu yüzden *ο Κώστας*.",
-        "en": "Here we talk about Kostas, we do not call him, so: *ο Κώστας*."
+        "tr": "Burada Savvas'a seslenmiyoruz, ondan söz ediyoruz; bu yüzden *ο Σάββας*.",
+        "en": "Here we talk about Savvas, we do not call him, so: *ο Σάββας*."
        }
       }
      ]

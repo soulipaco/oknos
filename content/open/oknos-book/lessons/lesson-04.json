@@ -39,18 +39,18 @@
    "blocks": [
     {
      "type": "prose",
-     "tr": "Dinle, sonra oku. *το όνομά μου*, *το κινητό μου* ve *το τηλέφωνό σας* gibi ifadeleri şimdilik kalıp olarak al; kuralı aşağıda göreceksin. Sofia numarayı gruplar hâlinde tekrar ediyor; bunu da aşağıda göreceksin.",
-     "en": "Listen, then read. Take phrases like *το όνομά μου*, *το κινητό μου* and *το τηλέφωνό σας* as they come; the rule follows below. Sofia repeats the number in groups; that comes below too."
+     "tr": "Dinle, sonra oku. *το όνομά μου*, *το κινητό μου* ve *το τηλέφωνό σας* gibi ifadeleri şimdilik kalıp olarak al; kuralı aşağıda göreceksin. Lydia numarayı gruplar hâlinde tekrar ediyor; bunu da aşağıda göreceksin.",
+     "en": "Listen, then read. Take phrases like *το όνομά μου*, *το κινητό μου* and *το τηλέφωνό σας* as they come; the rule follows below. Lydia repeats the number in groups; that comes below too."
     },
     {
      "type": "dialogue",
      "setting": {
-      "tr": "Mehmet bir iş için bir şirketin ofisini arıyor. Telefonu Sofia açıyor ve başvuru formunu dolduruyor.",
-      "en": "Mehmet phones a company's office about a job. Sofia answers and fills in his application form."
+      "tr": "Mehmet bir iş için bir şirketin ofisini arıyor. Telefonu Lydia açıyor ve başvuru formunu dolduruyor.",
+      "en": "Mehmet phones a company's office about a job. Lydia answers and fills in his application form."
      },
      "lines": [
       {
-       "who": "Σοφία",
+       "who": "Λυδία",
        "el": "Ναι, παρακαλώ;",
        "tr": "Alo, buyurun?",
        "en": "Hello?"
@@ -62,34 +62,34 @@
        "en": "Good morning. I'm calling about the job…"
       },
       {
-       "who": "Σοφία",
-       "el": "Α, ναι! Είμαι η Σοφία. Η δουλειά είναι στο γραφείο μας, στην Αθήνα. Το όνομά σας, παρακαλώ;",
-       "tr": "Ha, evet! Ben Sofia. İş, Atina'daki ofisimizde. Adınız, lütfen?",
-       "en": "Ah, yes! I'm Sofia. The job is at our office in Athens. Your name, please?"
+       "who": "Λυδία",
+       "el": "Α, ναι! Είμαι η Λυδία. Η δουλειά είναι στο γραφείο μας, στην Αθήνα. Το όνομά σας, παρακαλώ;",
+       "tr": "Ha, evet! Ben Lydia. İş, Atina'daki ofisimizde. Adınız, lütfen?",
+       "en": "Ah, yes! I'm Lydia. The job is at our office in Athens. Your name, please?"
       },
       {
        "who": "Μεχμέτ",
-       "el": "Το όνομά μου είναι Μεχμέτ. Το επώνυμό μου είναι Γιλμάζ.",
-       "tr": "Adım Mehmet. Soyadım Yılmaz.",
-       "en": "My first name is Mehmet. My surname is Yilmaz."
+       "el": "Το όνομά μου είναι Μεχμέτ. Το επώνυμό μου είναι Σαχίν.",
+       "tr": "Adım Mehmet. Soyadım Şahin.",
+       "en": "My first name is Mehmet. My surname is Şahin."
       },
       {
-       "who": "Σοφία",
+       "who": "Λυδία",
        "el": "Ωραία. Και το τηλέφωνό σας;",
        "tr": "Güzel. Ya telefonunuz?",
        "en": "Good. And your phone number?"
       },
       {
        "who": "Μεχμέτ",
-       "el": "Το κινητό μου είναι έξι, εννιά, τέσσερα, τέσσερα, ένα, δύο, τρία, τέσσερα, πέντε, έξι.",
-       "tr": "Cep telefonum altı, dokuz, dört, dört, bir, iki, üç, dört, beş, altı.",
-       "en": "My mobile is six, nine, four, four, one, two, three, four, five, six."
+       "el": "Το κινητό μου είναι έξι, εννιά, εφτά, δύο, ένα, δύο, τέσσερα, πέντε, έξι, οχτώ.",
+       "tr": "Cep telefonum altı, dokuz, yedi, iki, bir, iki, dört, beş, altı, sekiz.",
+       "en": "My mobile is six, nine, seven, two, one, two, four, five, six, eight."
       },
       {
-       "who": "Σοφία",
-       "el": "Έξι, εννιά, τέσσερα, τετρακόσια δώδεκα, τριάντα τέσσερα, πενήντα έξι. Ευχαριστώ. Πού δουλεύετε, κύριε Γιλμάζ;",
-       "tr": "Altı, dokuz, dört, dört yüz on iki, otuz dört, elli altı. Teşekkürler. Nerede çalışıyorsunuz Bay Yılmaz?",
-       "en": "Six, nine, four, four hundred and twelve, thirty-four, fifty-six. Thank you. Where do you work, Mr Yilmaz?"
+       "who": "Λυδία",
+       "el": "Έξι, εννιά, εφτά, διακόσια δώδεκα, σαράντα πέντε, εξήντα οχτώ. Ευχαριστώ. Πού δουλεύετε, κύριε Σαχίν;",
+       "tr": "Altı, dokuz, yedi, iki yüz on iki, kırk beş, altmış sekiz. Teşekkürler. Nerede çalışıyorsunuz Bay Şahin?",
+       "en": "Six, nine, seven, two hundred and twelve, forty-five, sixty-eight. Thank you. Where do you work, Mr Şahin?"
       },
       {
        "who": "Μεχμέτ",
@@ -98,7 +98,7 @@
        "en": "I work at the hospital. I'm an engineer. And I study at the university."
       },
       {
-       "who": "Σοφία",
+       "who": "Λυδία",
        "el": "Είστε παντρεμένος;",
        "tr": "Evli misiniz?",
        "en": "Are you married?"
@@ -110,10 +110,10 @@
        "en": "No, I'm single. My family is in Turkey."
       },
       {
-       "who": "Σοφία",
-       "el": "Ευχαριστώ πολύ, κύριε Γιλμάζ. Γεια σας!",
-       "tr": "Çok teşekkürler Bay Yılmaz. Hoşça kalın!",
-       "en": "Thank you very much, Mr Yilmaz. Goodbye!"
+       "who": "Λυδία",
+       "el": "Ευχαριστώ πολύ, κύριε Σαχίν. Γεια σας!",
+       "tr": "Çok teşekkürler Bay Şahin. Hoşça kalın!",
+       "en": "Thank you very much, Mr Şahin. Goodbye!"
       },
       {
        "who": "Μεχμέτ",
@@ -216,9 +216,9 @@
        "en": "My job is at the hospital."
       },
       {
-       "el": "Η Ελένη είναι γιατρός. Το νοσοκομείο της είναι στη Θεσσαλονίκη.",
-       "tr": "Eleni doktor. Hastanesi Selanik'te.",
-       "en": "Eleni is a doctor. Her hospital is in Thessaloniki.",
+       "el": "Η Ελένη είναι γιατρός. Το νοσοκομείο της είναι στην Αθήνα.",
+       "tr": "Eleni doktor. Hastanesi Atina'da.",
+       "en": "Eleni is a doctor. Her hospital is in Athens.",
        "note": {
         "tr": "*της*: sahibi Eleni, yani bir kadın.",
         "en": "*της*, because the owner is Eleni, a woman."
@@ -386,8 +386,8 @@
     },
     {
      "type": "prose",
-     "tr": "**Telefon numarası.** Yunanistan'da numaralar 10 hanelidir. Sabit hatlar *2* ile başlar (Atina: *210*), cep telefonları *69* ile. İki türlü okunur:\n**Rakam rakam:** *210* = *δύο, ένα, μηδέν*. Mehmet böyle okuyor.\n**Gruplar hâlinde:** *210* = *διακόσια δέκα*, *34* = *τριάντα τέσσερα*. Sofia böyle tekrar ediyor. Yunanlar çoğu zaman böyle okur; yüzlükler burada işine yarar.\nSen rakam rakam söyleyebilirsin, her zaman anlaşılır. Ama grupları da dinleyip anlaman gerekir.",
-     "en": "**Phone numbers** in Greece have 10 digits. Landlines start with *2* (Athens: *210*), mobiles with *69*. You hear them read two ways:\n**Digit by digit:** *210* = *δύο, ένα, μηδέν*. This is how Mehmet reads his.\n**In groups:** *210* = *διακόσια δέκα*, *34* = *τριάντα τέσσερα*. This is how Sofia repeats it. Greeks often read numbers this way, which is where the hundreds come in.\nYou can say yours digit by digit and always be understood, but you need to follow the groups when you hear them."
+     "tr": "**Telefon numarası.** Yunanistan'da numaralar 10 hanelidir. Sabit hatlar *2* ile başlar (Atina: *210*), cep telefonları *69* ile. İki türlü okunur:\n**Rakam rakam:** *697* = *έξι, εννιά, εφτά*. Mehmet böyle okuyor.\n**Gruplar hâlinde:** *212* = *διακόσια δώδεκα*, *45* = *σαράντα πέντε*. Lydia böyle tekrar ediyor. Yunanlar çoğu zaman böyle okur; yüzlükler burada işine yarar.\nSen rakam rakam söyleyebilirsin, her zaman anlaşılır. Ama grupları da dinleyip anlaman gerekir.",
+     "en": "**Phone numbers** in Greece have 10 digits. Landlines start with *2* (Athens: *210*), mobiles with *69*. You hear them read two ways:\n**Digit by digit:** *697* = *έξι, εννιά, εφτά*. This is how Mehmet reads his.\n**In groups:** *212* = *διακόσια δώδεκα*, *45* = *σαράντα πέντε*. This is how Lydia repeats it. Greeks often read numbers this way, which is where the hundreds come in.\nYou can say yours digit by digit and always be understood, but you need to follow the groups when you hear them."
     },
     {
      "type": "examples",

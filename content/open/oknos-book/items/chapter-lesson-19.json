@@ -12,9 +12,9 @@
    "stage:lesson-19"
   ],
   "example": {
-   "el": "Προχθές τηλεφώνησα στη Μαρία.",
-   "en": "The day before yesterday I phoned Maria.",
-   "tr": "Evvelsi gün Maria'ya telefon ettim."
+   "el": "Προχθές τηλεφώνησα στην Αναστασία.",
+   "en": "The day before yesterday I phoned Anastasia.",
+   "tr": "Evvelsi gün Anastasia'ya telefon ettim."
   },
   "source": {
    "doc": "chapter",
@@ -322,9 +322,9 @@
     "answer": false
    },
    {
-    "el": "Η Αϊσέ αγόρασε ένα δώρο για τη Μαρία.",
-    "en": "Ayşe bought a present for Maria.",
-    "tr": "Ayşe Maria için bir hediye aldı.",
+    "el": "Η Αϊσέ αγόρασε ένα δώρο για την Αναστασία.",
+    "en": "Ayşe bought a present for Anastasia.",
+    "tr": "Ayşe Anastasia için bir hediye aldı.",
     "answer": true
    }
   ],
@@ -354,7 +354,7 @@
   "grammar": [
    "verb.aorist.simple"
   ],
-  "text": "Χθες το βράδυ εγώ {1} ένα μήνυμα στη Μαρία.",
+  "text": "Χθες το βράδυ εγώ {1} ένα μήνυμα στην Αναστασία.",
   "answer": {
    "1": [
     "έγραψα"
@@ -368,8 +368,8 @@
    ]
   },
   "translation": {
-   "en": "Yesterday evening I wrote a message to Maria.",
-   "tr": "Dün akşam Maria'ya bir mesaj yazdım."
+   "en": "Yesterday evening I wrote a message to Anastasia.",
+   "tr": "Dün akşam Anastasia'ya bir mesaj yazdım."
   },
   "explain": {
    "en": "γράφω → θα γράψω → έγραψα: with εγώ the ending is -α, and the short form gets έ-. γράψα is not a form. έγραψες is «you wrote».",
@@ -755,7 +755,7 @@
   "grammar": [
    "verb.aorist.irregular"
   ],
-  "text": "Χθες η Μαρία {1} στο γραφείο στις εννιά.",
+  "text": "Χθες η Αναστασία {1} στο γραφείο στις εννιά.",
   "answer": {
    "1": [
     "ήρθε"
@@ -769,12 +769,12 @@
    ]
   },
   "translation": {
-   "en": "Yesterday Maria came to the office at nine.",
-   "tr": "Dün Maria ofise dokuzda geldi."
+   "en": "Yesterday Anastasia came to the office at nine.",
+   "tr": "Dün Anastasia ofise dokuzda geldi."
   },
   "explain": {
-   "en": "«Η Μαρία» is third person singular: ήρθε. ήρθα is «I came» and ήρθαν is «they came».",
-   "tr": "«Η Μαρία» üçüncü tekil kişi: ήρθε. ήρθα «ben geldim», ήρθαν «onlar geldiler» demek."
+   "en": "«Η Αναστασία» is third person singular: ήρθε. ήρθα is «I came» and ήρθαν is «they came».",
+   "tr": "«Η Αναστασία» üçüncü tekil kişi: ήρθε. ήρθα «ben geldim», ήρθαν «onlar geldiler» demek."
   },
   "source": {
    "doc": "chapter",

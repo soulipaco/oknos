@@ -501,9 +501,9 @@
   },
   "statements": [
    {
-    "el": "Ο Κώστας δεν έχει ψιλά.",
-    "en": "Kostas has no change.",
-    "tr": "Kostas'ın bozuk parası yok.",
+    "el": "Ο Σωτήρης δεν έχει ψιλά.",
+    "en": "Sotiris has no change.",
+    "tr": "Sotiris'in bozuk parası yok.",
     "answer": true
    },
    {
@@ -520,8 +520,8 @@
    }
   ],
   "explain": {
-   "en": "At the kiosk Kostas says «Δεν έχω ψιλά», so Ayşe pays with one euro. In the café she says «Μέτριο»: medium, not sweet. Nikos says «Εγώ θα ήθελα έναν φραπέ».",
-   "tr": "Büfede Kostas «Δεν έχω ψιλά» diyor; Ayşe de bir avro veriyor. Kafede «Μέτριο» diyor: orta, şekerli değil. Nikos «Εγώ θα ήθελα έναν φραπέ» diyor."
+   "en": "At the kiosk Sotiris says «Δεν έχω ψιλά», so Ayşe pays with one euro. In the café she says «Μέτριο»: medium, not sweet. Nikos says «Εγώ θα ήθελα έναν φραπέ».",
+   "tr": "Büfede Sotiris «Δεν έχω ψιλά» diyor; Ayşe de bir avro veriyor. Kafede «Μέτριο» diyor: orta, şekerli değil. Nikos «Εγώ θα ήθελα έναν φραπέ» diyor."
   },
   "source": {
    "doc": "chapter",

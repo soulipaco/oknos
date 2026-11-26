@@ -106,9 +106,9 @@
    "stage:lesson-03"
   ],
   "example": {
-   "el": "Δεν πίνω ποτέ καφέ.",
-   "en": "I never drink coffee.",
-   "tr": "Hiç kahve içmem."
+   "el": "Δεν πίνω ποτέ ζεστό καφέ.",
+   "en": "I never drink hot coffee.",
+   "tr": "Hiç sıcak kahve içmem."
   },
   "source": {
    "doc": "chapter",
@@ -371,15 +371,15 @@
     "answer": false
    },
    {
-    "el": "Ο Νίκος δεν πίνει ποτέ καφέ.",
-    "en": "Nikos never drinks coffee.",
-    "tr": "Nikos hiç kahve içmiyor.",
+    "el": "Ο Νίκος δεν πίνει ποτέ ζεστό καφέ.",
+    "en": "Nikos never drinks hot coffee.",
+    "tr": "Nikos hiç sıcak kahve içmiyor.",
     "answer": true
    }
   ],
   "explain": {
-   "en": "Nikos says «Εγώ μένω εδώ, στο Μαρούσι» and «Εγώ δεν πίνω ποτέ καφέ». Ayşe answers «Όχι»: she works Monday, Tuesday and Thursday.",
-   "tr": "Nikos «Εγώ μένω εδώ, στο Μαρούσι» ve «Εγώ δεν πίνω ποτέ καφέ» diyor. Ayşe «Όχι» diye cevap veriyor: pazartesi, salı ve perşembe çalışıyor."
+   "en": "Nikos says «Εγώ μένω εδώ, στο Μαρούσι» and «Εγώ δεν πίνω ποτέ ζεστό καφέ». Ayşe answers «Όχι»: she works Monday, Tuesday and Thursday.",
+   "tr": "Nikos «Εγώ μένω εδώ, στο Μαρούσι» ve «Εγώ δεν πίνω ποτέ ζεστό καφέ» diyor. Ayşe «Όχι» diye cevap veriyor: pazartesi, salı ve perşembe çalışıyor."
   },
   "level": "A1",
   "topics": [
@@ -578,15 +578,15 @@
    "tr": "Nikos: «…»"
   },
   "options": [
-   "Δεν πίνω ποτέ καφέ.",
-   "Πίνω ποτέ καφέ.",
-   "Πίνω πάντα καφέ.",
-   "Δεν πίνω πάντα καφέ."
+   "Δεν πίνω ποτέ ζεστό καφέ.",
+   "Πίνω ποτέ ζεστό καφέ.",
+   "Πίνω πάντα ζεστό καφέ.",
+   "Δεν πίνω πάντα ζεστό καφέ."
   ],
   "answer": 0,
   "explain": {
-   "en": "ποτέ needs δεν: «Δεν πίνω ποτέ καφέ». «Δεν πίνω πάντα καφέ» means «I do not always drink coffee».",
-   "tr": "ποτέ ile δεν de gelir: «Δεν πίνω ποτέ καφέ». «Δεν πίνω πάντα καφέ» ise «Her zaman kahve içmem» demek."
+   "en": "ποτέ needs δεν: «Δεν πίνω ποτέ ζεστό καφέ». «Δεν πίνω πάντα ζεστό καφέ» means «I do not always drink hot coffee».",
+   "tr": "ποτέ ile δεν de gelir: «Δεν πίνω ποτέ ζεστό καφέ». «Δεν πίνω πάντα ζεστό καφέ» ise «Her zaman sıcak kahve içmem» demek."
   },
   "level": "A1",
   "topics": [
@@ -598,8 +598,8 @@
    "by": "sonnet-draft"
   },
   "ask": {
-   "en": "Nikos never drinks coffee. What does he say?",
-   "tr": "Nikos hiç kahve içmiyor. Ne der?"
+   "en": "Nikos never drinks hot coffee. What does he say?",
+   "tr": "Nikos hiç sıcak kahve içmiyor. Ne der?"
   }
  },
  {
@@ -709,7 +709,7 @@
    "en": "Fill in the gap.",
    "tr": "Boşluğu doldur."
   },
-  "text": "Ο Νίκος και η Ελένη {1} στο θέατρο.",
+  "text": "Ο Νίκος και η Παναγιώτα {1} στο θέατρο.",
   "answer": {
    "1": [
     "δουλεύουν",
@@ -724,8 +724,8 @@
    ]
   },
   "translation": {
-   "en": "Nikos and Eleni work at the theatre.",
-   "tr": "Nikos ve Eleni tiyatroda çalışıyor."
+   "en": "Nikos and Panagiota work at the theatre.",
+   "tr": "Nikos ve Panagiota tiyatroda çalışıyor."
   },
   "explain": {
    "en": "Two people = they: δουλεύουν(ε).",
@@ -901,9 +901,9 @@
    "tr": "Doğru biçimi seç."
   },
   "prompt": {
-   "el": "Η Ελένη μένει … Πάτρα.",
-   "en": "Eleni lives in Patras.",
-   "tr": "Eleni Patra'da oturuyor."
+   "el": "Η Ελένη μένει … Καλλιθέα.",
+   "en": "Eleni lives in Kallithea.",
+   "tr": "Eleni Kallithea'da oturuyor."
   },
   "options": [
    "στην",
@@ -912,8 +912,8 @@
   ],
   "answer": 0,
   "explain": {
-   "en": "η Πάτρα is feminine, and π is one of the letters that keep the -ν: στην Πάτρα.",
-   "tr": "η Πάτρα dişil ve π'den önce -ν kalır: στην Πάτρα."
+   "en": "η Καλλιθέα is feminine, and κ is one of the letters that keep the -ν: στην Καλλιθέα.",
+   "tr": "η Καλλιθέα dişil ve κ'den önce -ν kalır: στην Καλλιθέα."
   },
   "level": "A1",
   "topics": [

@@ -45,8 +45,8 @@
     {
      "type": "dialogue",
      "setting": {
-      "tr": "Dil kursunun ilk günü. Eleni ile Mehmet yan yana oturuyor.",
-      "en": "First day of a language course. Eleni and Mehmet sit next to each other."
+      "tr": "İngilizce kursunun ilk günü. Eleni ile Mehmet yan yana oturuyor.",
+      "en": "First day of an English course. Eleni and Mehmet sit next to each other."
      },
      "lines": [
       {
