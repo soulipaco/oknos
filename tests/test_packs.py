@@ -110,3 +110,17 @@ def test_needs_review_items_are_not_served(learner, tmp_path, monkeypatch):
     catalog = packs.load_all()
     keys = {k for k, _, _ in packs.servable(catalog, "en")}
     assert "gen/a" in keys and "gen/b" not in keys
+
+
+def test_a_pack_with_only_raw_material_loads_without_a_problem(tmp_path):
+    # an imported pack whose items an open pack replaced, or not yet rebuilt by the coach
+    root = tmp_path / "p"
+    (root / "raw").mkdir(parents=True)
+    (root / "pack.json").write_text(json.dumps({
+        "id": "raw-only", "title": {"en": "Raw"}, "version": 1, "levels": ["A1"],
+        "visibility": "private", "licence": "private", "source": "test"}), encoding="utf-8")
+    pack, problems, _ = packs.load_pack(root, "private")
+    assert pack is not None and problems == []
+    (root / "raw").rmdir()
+    _, problems, _ = packs.load_pack(root, "private")
+    assert problems == ["p: there are no item files in items/"]

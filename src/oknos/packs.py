@@ -513,7 +513,9 @@ def load_pack(pack_dir: Path, expected_visibility: str | None = None) -> tuple[P
             problems.append(f"{name}/pictures/pictures.json is not valid JSON (line {e.lineno}): {e.msg}; the pictures were skipped")
         except ValidationError as e:
             problems.append(f"{name}/pictures/pictures.json: {_describe(e)}; the pictures were skipped")
-    if not item_files and not chapter_files and not pack.pictures:
+    # a learner's imported pack may hold only its course outline and raw material (raw/), waiting
+    # for the coach to rebuild it into items (rebuild-imported), or after an open pack replaced them
+    if not item_files and not chapter_files and not pack.pictures and not pack.units and not (pack_dir / "raw").is_dir():
         problems.append(f"{name}: there are no item files in items/")
     for item_file in item_files:
         rel = f"{name}/items/{item_file.name}"
