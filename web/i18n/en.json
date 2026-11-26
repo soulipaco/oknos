@@ -366,6 +366,7 @@
   "nav_book": "Book",
   "nav_practise_short": "Practise",
   "nav_exam": "Exam",
+  "nav_podcast": "Podcast",
   "book_line": "Every lesson starts with a chapter to read: {n} of {total} are written so far. You can read any chapter, also ahead; a lesson's practice opens when you reach it.",
   "ch_read_short": "Read ({minutes} min)",
   "ch_reread_short": "Read again",

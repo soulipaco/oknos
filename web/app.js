@@ -383,7 +383,8 @@ window.addEventListener("popstate", () => {
 });
 
 const NAV_ITEMS = [["home", "nav_home"], ["book", "nav_book"], ["practise", "nav_practise_short"],
-                   ["words", "nav_words_short"], ["verbs", "nav_verbs_short"], ["exam", "nav_exam"]];
+                   ["words", "nav_words_short"], ["verbs", "nav_verbs_short"], ["podcast", "nav_podcast"],
+                   ["exam", "nav_exam"]];
 
 function navLink(name, label, arg = null, cls = "") {
   // A real link (it opens in a new tab with a middle click), routed in place on a normal click.
@@ -2760,7 +2761,7 @@ async function renderPodcast(id) {
   try { data = await api("/api/podcasts"); } catch { return showError(); }
   const all = data.episodes || [];
   if (!all.length) {
-    return app.replaceChildren(...appBar(null), crumb("home", t("nav_home")),
+    return app.replaceChildren(...appBar("podcast"), crumb("home", t("nav_home")),
       h("section", { class: "empty-state" }, donkey("resting", 72), h("p", {}, t("pod_none")),
         h("p", { class: "small muted" }, t("pod_none_how")), h("p", {}, navLink("home", t("nothing_back_home"), null, "secondary"))));
   }
@@ -2775,7 +2776,7 @@ async function renderPodcast(id) {
         : t("pod_lede"))));
   const player = ep ? podPlayer(ep) : null;
   const others = all.filter(e => !ep || e.id !== ep.id);
-  app.replaceChildren(...[...appBar(null), crumb(ep ? "podcast" : "home", ep ? t("pod_title") : t("nav_home")), head, player,
+  app.replaceChildren(...[...appBar("podcast"), crumb(ep ? "podcast" : "home", ep ? t("pod_title") : t("nav_home")), head, player,
     ep && others.length ? h("h2", { class: "films-more" }, t("pod_more")) : null,
     others.length ? h("div", { class: "pod-grid" }, others.map(e => podCard(e, false))) : null].filter(Boolean));
 }
