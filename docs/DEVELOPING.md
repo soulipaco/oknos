@@ -24,6 +24,7 @@ uv run oknos guard                 # check that git tracks nothing private
 uv run python scripts/simulate.py  # simulated weeks of use: scheduler, home and readiness numbers
 OKNOS_MOCK_SPEED=30 uv run oknos start --foreground   # mock-exam time runs 30x faster
 uv run --with fonttools python scripts/make_brand.py  # remake the brand files and the README's pictures
+uv run --no-sync python scripts/make_brand.py developer  # only the developer diagrams, with the counts read from the repo
 uv run pytest
 ```
 
@@ -51,6 +52,7 @@ CI runs the guard, the tests and `validate content/open` on Ubuntu and Windows f
 - `docs/LESSONS.md`: how the book's chapters are written and reviewed.
 - `docs/IMPORTING.md`: importing your own material.
 - `docs/brand/README.md`: the name and the look.
+- `docs/BUILT-WITH-AGENTS.md`: how agents build and run Oknos, who made what, and what no person has checked.
 - `docs/prompts/`: the phased prompts used to build the app.
 
 ## The README's screenshots
@@ -61,4 +63,4 @@ The README's pictures (`docs/img/app-*.webp`, `docs/img/hero-{light,dark}.webp`,
 uv run --with playwright --with pillow python scripts/readme_images.py
 ```
 
-It refuses to run while `content/private/` holds anything, and it never touches `learner/`. It makes a throwaway learner folder with 24 days of simulated practice (`scripts/simulate.py`), an English profile and a coach's note; adds a demo coach pack (copies of the open exam-format items, answered once, about half right) so the exam screen has evidence to show; runs the app on port 8690 with that folder; photographs the screens in light and dark with headless Chrome or Edge; makes film 1's preview from the film's own player; composes the hero and the social preview from the screenshots; then stops the app and deletes the folder (`--keep` keeps it, `--port` picks another port). Playwright and Pillow are used only here, through `uv run --with`. The diagrams (`docs/img/*.svg`) and the brand files come from `scripts/make_brand.py`. Never take screenshots from a real learner folder.
+It refuses to run while `content/private/` holds anything, and it never touches `learner/`. It makes a throwaway learner folder with 24 days of simulated practice (`scripts/simulate.py`), an English profile and a coach's note; adds a demo coach pack (copies of the open exam-format items, answered once, about half right) so the exam screen has evidence to show; runs the app on port 8690 with that folder; photographs the screens in light and dark with headless Chrome or Edge; makes film 1's preview from the film's own player; composes the hero and the social preview from the screenshots; then stops the app and deletes the folder (`--keep` keeps it, `--port` picks another port). Playwright and Pillow are used only here, through `uv run --with`. The diagrams (`docs/img/*.svg`) and the brand files come from `scripts/make_brand.py`; its developer diagrams (`by-the-numbers`, `harness`, `who-made-what`, `how-it-is-built`) count chapters, pictures, clips, skills, tests and commits from the checkout itself, so remake them (`make_brand.py developer`) when those change. Never take screenshots from a real learner folder.

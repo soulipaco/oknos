@@ -182,6 +182,7 @@ def main():
         diagram("how-it-works", t, how_it_works(t))
         diagram("a-day", t, a_day(t))
         diagram("what-you-learn", t, what_you_learn(t))
+    developer_diagrams()
     print("the social preview and the README's screenshots: scripts/readme_images.py")
 
 
@@ -333,5 +334,229 @@ def what_you_learn(t):
     return W, H, "".join(b), "What you learn: the Oknos book, 26 stages from reading Greek to B1, aimed at the A2 + history and B1 exams"
 
 
+# ---------- the developer face: how agents build and run Oknos (docs/img/, README and docs/BUILT-WITH-AGENTS.md) ----------
+
+# Who made a thing, one colour each: Claude Code, Codex, a voice service, plain code (no model).
+SOFT = {"claude": {"light": "#e2ecf3", "dark": "#213240"}, "codex": {"light": "#e8efd9", "dark": "#243021"},
+        "voice": {"light": "#f5e2da", "dark": "#3b2622"}, "code": LINEN}
+EDGE = {"claude": AEGEAN, "codex": {"light": "#4f7227", "dark": "#a7c879"},
+        "voice": {"light": "#b0503a", "dark": "#e59b85"}, "code": LINE}
+WHO = (("claude", "Claude Code (Opus, Sonnet subagents)"), ("codex", "Codex (an image model)"),
+       ("voice", "a voice service"), ("code", "plain code, no model"))
+
+
+def chip(x, y, w, h, text, t, kind="code", size=13, mono=False, sub=None):
+    out = (f'<rect x="{num(x)}" y="{num(y)}" width="{num(w)}" height="{num(h)}" rx="10" fill="{SOFT[kind][t]}" '
+           f'stroke="{EDGE[kind][t]}" stroke-width="1.5"/>')
+    if sub:
+        out += label(x + w / 2, y + h / 2 - 3, text, t, size, 600, mono=mono)
+        out += label(x + w / 2, y + h / 2 + 14, sub, t, 11.5, colour=MUTED[t])
+    else:
+        out += label(x + w / 2, y + h / 2 + size * 0.36, text, t, size, 500, mono=mono)
+    return out
+
+
+def legend(x, y, t, kinds=WHO):
+    out = []
+    for kind, name in kinds:
+        out.append(f'<rect x="{num(x)}" y="{num(y - 11)}" width="14" height="14" rx="4" fill="{SOFT[kind][t]}" '
+                   f'stroke="{EDGE[kind][t]}" stroke-width="1.5"/>')
+        out.append(label(x + 22, y, name, t, 13, anchor="start", colour=MUTED[t]))
+        x += 32 + len(name) * 6.6
+    return "".join(out)
+
+
+def _items(path: Path) -> list:
+    import json
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return data["items"] if isinstance(data, dict) else data
+
+
+def repo_numbers() -> dict:
+    """Everything the developer diagrams count, read from this checkout (nothing typed by hand)."""
+    import json
+    import re
+    import subprocess
+    import sys
+    open_ = ROOT / "content" / "open"
+    git = lambda *a: subprocess.run(["git", *a], cwd=ROOT, capture_output=True, text=True,  # noqa: E731
+                                    encoding="utf-8").stdout.strip()
+    pictures = json.loads((open_ / "open-pictures" / "pictures" / "pictures.json").read_text(encoding="utf-8"))
+    tests = subprocess.run([sys.executable, "-m", "pytest", "--collect-only", "-q"], cwd=ROOT, capture_output=True,
+                           text=True, encoding="utf-8").stdout
+    found = re.search(r"(\d+) tests? collected", tests)
+    bodies = git("log", "--format=%B%x00").split("\x00")
+    commits = [b for b in bodies if b.strip()]
+    voice = json.loads((ROOT / "content" / "open-voice" / "index.json").read_text(encoding="utf-8"))
+    return {
+        "chapters": sum(1 for book in ("oknos-book", "open-book") for f in (open_ / book / "lessons").glob("*.json")
+                        if f.stem != "outline"),
+        "words": sum(len(_items(f)) for f in (open_ / "oknos-book" / "items").glob("words-*.json")),
+        "pictures": len({p["file"] for p in pictures["pictures"]}),
+        "scenes": len(list((open_ / "open-book" / "pictures").glob("*.webp"))),
+        "frames": len(list((ROOT / "docs" / "brand" / "animations" / "frames").glob("*.webp"))),
+        "clips": len(voice["clips"]) + len(list((ROOT / "docs" / "brand" / "animations" / "voice").glob("*.mp3"))),
+        "skills": len(list((ROOT / ".agents" / "skills").glob("*/SKILL.md"))),
+        "tests": int(found.group(1)) if found else 0,
+        "commits": len(commits),
+        "with_claude": sum(1 for b in commits if re.search(r"Co-Authored-By: Claude", b, re.I)),
+        "since": git("log", "--reverse", "--format=%cs").splitlines()[0],
+    }
+
+
+def by_the_numbers(t, n):
+    W, H = 900, 330
+    tiles = ((n["chapters"], "chapters in two open books", "drafted and reviewed by Claude"),
+             (n["words"], "words with meanings", "written new, by Sonnet"),
+             (n["pictures"], "word pictures", "via Codex, each one reviewed"),
+             (n["scenes"] + n["frames"], "scenes and film frames", "drawn through Codex too"),
+             (n["clips"], "shipped voice clips", "Google Chirp 3 HD, Gemini"),
+             (n["skills"], "agent skills", "one copy for every harness"),
+             (n["tests"], "tests", "on Ubuntu and Windows in CI"),
+             (n["commits"], "commits", "all made with Claude Code" if n["with_claude"] == n["commits"]
+              else f"{n['with_claude']} made with Claude Code"))
+    b = []
+    for i, (value, what, how) in enumerate(tiles):
+        x, y = 30 + (i % 4) * 213, 60 + (i // 4) * 116
+        b.append(box(x, y, 199, 100, t))
+        b.append(label(x + 18, y + 44, f"{value:,}", t, 30, 700, anchor="start", colour=AEGEAN[t]))
+        b.append(label(x + 18, y + 68, what, t, 14, 600, anchor="start"))
+        b.append(label(x + 18, y + 86, how, t, 12, anchor="start", colour=MUTED[t]))
+    b.append(label(30, 312, f"Counted from the repository by scripts/make_brand.py. Commits since {n['since']}.", t, 13,
+                   anchor="start", colour=MUTED[t]))
+    return W, H, "".join(b), "Oknos by the numbers, counted from the repository"
+
+
+def harness(t):
+    W, H = 900, 520
+    b = []
+    # the harnesses read one instruction file and one set of skills
+    for x, w, name, kind in ((90, 180, "Claude Code", "claude"), (300, 180, "Codex", "codex"),
+                             (510, 300, "any agent that reads AGENTS.md", "code")):
+        b.append(chip(x, 62, w, 42, name, t, kind, size=15))
+        b.append(f'<line x1="{num(x + w / 2)}" y1="104" x2="{num(x + w / 2)}" y2="138" stroke="{LINE[t]}" stroke-width="2"/>')
+    b.append(box(90, 138, 720, 104, t))
+    b.append(place(104, 150, 64, "2 2 96 116", donkey(INK[t], "working")))
+    b.append(label(480, 168, "AGENTS.md  +  13 skills in .agents/skills/", t, 16, 600))
+    b.append(label(480, 196, "setup · import-material · coach · capture · mark · tutor · plan", t, 13, mono=True))
+    b.append(label(480, 218, "mock-exam · daily-prep · watch · rebuild-imported · write-chapter · podcast", t, 13,
+                   mono=True))
+    # the files between the agent and the app
+    b.append(box(40, 330, 210, 100, t))
+    b.append(place(54, 344, 40, "0 0 100 100", ring_mark(AEGEAN[t], f"harness-ring-{t}")))
+    b.append(label(104, 366, "The app", t, 16, 600, anchor="start"))
+    b.append(label(54, 398, "browser + SQLite", t, 13, anchor="start", colour=MUTED[t]))
+    b.append(label(54, 416, "needs no agent to study", t, 13, anchor="start", colour=MUTED[t]))
+    b.append(box(340, 330, 220, 100, t, fill=PAPER[t]))
+    b.append(f'<rect x="340" y="330" width="220" height="100" rx="14" fill="none" stroke="{AEGEAN[t]}" '
+             'stroke-width="1.5" stroke-dasharray="5 5"/>')
+    b.append(label(450, 362, "learner/", t, 16, 600, mono=True))
+    b.append(label(450, 390, "progress, answers, writing", t, 13, colour=MUTED[t]))
+    b.append(label(450, 408, "and the coach's files", t, 13, colour=MUTED[t]))
+    b.append(arrow(244, 380, 334, 380, t, both=True))
+    b.append(label(289, 368, "saves", t, 12, colour=MUTED[t]))
+    b.append(label(289, 400, "takes in", t, 12, colour=MUTED[t]))
+    b.append(arrow(410, 324, 410, 248, t))
+    b.append(label(400, 278, "reads", t, 13, anchor="end", colour=MUTED[t]))
+    b.append(label(400, 296, "oknos report", t, 13, anchor="end", mono=True))
+    b.append(arrow(490, 248, 490, 324, t))
+    b.append(label(500, 278, "writes packs, feedback, a plan", t, 13, anchor="start", colour=MUTED[t]))
+    b.append(label(500, 296, "checked by oknos validate", t, 13, anchor="start", colour=MUTED[t]))
+    b.append(box(650, 330, 210, 100, t))
+    b.append(label(668, 358, "Scheduled runs", t, 16, 600, anchor="start"))
+    b.append(label(668, 382, "daily-prep: tomorrow", t, 13, anchor="start", mono=True))
+    b.append(label(668, 401, "watch: exam dates", t, 13, anchor="start", mono=True))
+    b.append(label(668, 420, "claude -p · codex exec", t, 12, anchor="start", mono=True, colour=MUTED[t]))
+    b.append(arrow(800, 324, 800, 248, t))
+    b.append(label(810, 290, "after a yes", t, 12, anchor="start", colour=MUTED[t]))
+    b.append(label(40, 478, "The coach writes files, never the database. Nothing about the learner leaves the computer.",
+                   t, 14, anchor="start", colour=MUTED[t]))
+    return W, H, "".join(b), ("The harness: Claude Code, Codex or any agent reads AGENTS.md and 13 skills, reads the "
+                              "learner's report and writes files the app takes in; scheduled runs prepare tomorrow")
+
+
+def pipelines(t, n):
+    W, H = 900, 520
+    rows = (("The book", "lessons to read", (("Sonnet drafts", "claude"), ("Opus reviews", "claude"),
+                                            ("oknos validate", "code")), n["chapters"], "chapters"),
+            ("Word pictures", "a picture per word", (("Claude writes prompts", "claude"), ("image model", "codex"),
+                                                     ("Claude reviews each", "claude")), n["pictures"], "pictures"),
+            ("Scenes and films", "the story, drawn", (("storyboards, sheets", "claude"), ("image model", "codex"),
+                                                      ("reviewed, redrawn", "claude")),
+             n["scenes"] + n["frames"], "scenes and frames"),
+            ("Voice", "every open text", (("the open Greek text", "code"), ("Chirp 3 HD, Gemini", "voice"),
+                                          ("oknos guard", "code")), n["clips"], "shipped clips"),
+            ("Film ambience", "wind, cicadas, bells", (("seeded noise, sines", "code"), ("film_ambience.py", "code"),
+                                                       ("ffmpeg to mp3", "code")), 3, "loops"),
+            ("Podcasts", "a lesson to listen to", (("podcast skill: script", "claude"), ("oknos podcast check", "code"),
+                                                   ("cast and voiced", "voice")), None, "on your computer"))
+    b = []
+    for r, (title, sub, steps, value, unit) in enumerate(rows):
+        y = 62 + r * 62
+        b.append(label(30, y + 20, title, t, 15, 600, anchor="start"))
+        b.append(label(30, y + 38, sub, t, 12, anchor="start", colour=MUTED[t]))
+        for i, (text, kind) in enumerate(steps):
+            x = 190 + i * 185
+            b.append(chip(x, y + 4, 160, 40, text, t, kind, mono=text.startswith(("oknos", "film_"))))
+            b.append(arrow(x + 162, y + 24, x + 182, y + 24, t))
+        b.append(label(752, y + 22, "local" if value is None else f"{value:,}", t, 18, 700, anchor="start",
+                       colour=AEGEAN[t]))
+        b.append(label(752, y + 40, unit, t, 12, anchor="start", colour=MUTED[t]))
+    b.append(legend(30, 470, t))
+    return W, H, "".join(b), ("Who made what: chapters by Claude, pictures through Codex, voices by Google's services, "
+                              "the films' background by plain code")
+
+
+def build_loop(t, n):
+    W, H = 900, 490
+    b = []
+    b.append(box(30, 150, 180, 120, t))
+    b.append(place(44, 162, 48, "2 2 96 116", donkey(INK[t], "ready")))
+    b.append(label(100, 188, "Coordinating", t, 15, 600, anchor="start"))
+    b.append(label(100, 206, "session", t, 15, 600, anchor="start"))
+    b.append(label(44, 236, "starts the sessions,", t, 12, anchor="start", colour=MUTED[t]))
+    b.append(label(44, 253, "merges what they made", t, 12, anchor="start", colour=MUTED[t]))
+    names = ("the book's voice", "word pictures", "podcast lessons", "this page")
+    for i, name in enumerate(names):
+        y = 66 + i * 76
+        b.append(arrow(212, 210, 262, y + 30, t))
+        b.append(chip(266, y, 210, 60, name, t, "claude", sub="own worktree and branch"))
+        b.append(arrow(478, y + 30, 540, 210, t))
+    b.append(box(544, 140, 160, 140, t))
+    b.append(label(624, 170, "Checks", t, 15, 600))
+    for i, c in enumerate(("oknos guard", "pytest", "oknos validate")):
+        b.append(label(624, 200 + i * 24, c, t, 13, mono=True))
+    b.append(arrow(706, 210, 736, 210, t))
+    b.append(rope(rope_line(744, 870, 210, a=3, n=8), 3, 1.4, AEGEAN[t], (738, 198, 138, 24), f"build-rope-{t}"))
+    b.append(label(807, 180, "main", t, 15, 600, mono=True))
+    b.append(label(807, 244, "fast-forward only", t, 12, colour=MUTED[t]))
+    b.append(arrow(807, 262, 807, 336, t))
+    b.append(chip(700, 340, 170, 60, "GitHub CI", t, "code", sub="Ubuntu and Windows"))
+    b.append(label(690, 366, "push only when", t, 12, anchor="end", colour=MUTED[t]))
+    b.append(label(690, 383, "the maintainer asks", t, 12, anchor="end", colour=MUTED[t]))
+    b.append(label(30, 412, "Examples of side sessions; a session that writes code", t, 13, anchor="start", colour=MUTED[t]))
+    b.append(label(30, 430, "never shares files with another one at the same time.", t, 13, anchor="start",
+                   colour=MUTED[t]))
+    b.append(label(30, 466, f"{n['commits']} commits since {n['since']}, {n['with_claude']} of them made with Claude Code. "
+                   "The guard keeps learner data and private content out of git.", t, 13, anchor="start",
+                   colour=MUTED[t]))
+    return W, H, "".join(b), ("How Oknos is built: one coordinating Claude Code session starts side sessions, each in "
+                              "its own git worktree; checks pass, main moves forward, CI runs on Ubuntu and Windows")
+
+
+def developer_diagrams():
+    n = repo_numbers()
+    print("counted:", n)
+    for t in ("light", "dark"):
+        diagram("by-the-numbers", t, by_the_numbers(t, n))
+        diagram("harness", t, harness(t))
+        diagram("who-made-what", t, pipelines(t, n))
+        diagram("how-it-is-built", t, build_loop(t, n))
+
+
 if __name__ == "__main__":
-    main()
+    import sys
+    if sys.argv[1:] == ["developer"]:
+        developer_diagrams()   # needs no font: uv run --no-sync python scripts/make_brand.py developer
+    else:
+        main()

@@ -169,6 +169,7 @@ On the roadmap (2026-11-20, `docs/prompts/`):
 - the films in the app, and a new GitHub look (added 2026-11-23):
   - the films in the app: done 2026-11-23 (see **Films** above).
   - the new GitHub face: done 2026-11-24. The README has a hero (the home screen with a picture card and a chapter's scene), a gallery of the app in light and dark, a films section with a short animated preview of film 1, and current facts; the social preview matches the hero. All of it is made by `scripts/readme_images.py` from a demo learner with the open content only (`docs/DEVELOPING.md`, "The README's screenshots").
+  - the developer face: done 2026-11-26. Under the hero two links lead to the learner part or to "Built and run by agents": the numbers, the harness (AGENTS.md, 13 skills, the coach through files, scheduled runs), who made what (Claude Code, its Sonnet subagents, Codex's image model, Google's voices, plain code) and the parallel sessions in worktrees; the full story with costs, review numbers and what no person has checked is `docs/BUILT-WITH-AGENTS.md`. The four diagrams come from `scripts/make_brand.py developer`, which counts from the repo. The screenshots now show the 26-chapter Oknos book.
 
 ## Git and GitHub
 
@@ -210,7 +211,7 @@ The canonical copy of each skill is in `.agents/skills/<name>/SKILL.md`. `.claud
 
 ## Commands
 
-The full list, with how the code is laid out, is in `docs/DEVELOPING.md`. The README is for learners and visitors; its diagrams come from `scripts/make_brand.py`, and its screenshots, hero, film preview and the social preview from `scripts/readme_images.py`, run in a fresh clone (`docs/DEVELOPING.md`, "The README's screenshots").
+The full list, with how the code is laid out, is in `docs/DEVELOPING.md`. The README is for learners and visitors, and its "Built and run by agents" part for developers (`docs/BUILT-WITH-AGENTS.md`); its diagrams come from `scripts/make_brand.py`, and its screenshots, hero, film preview and the social preview from `scripts/readme_images.py`, run in a fresh clone (`docs/DEVELOPING.md`, "The README's screenshots").
 
 - `uv run oknos start`: runs the app in the background on `127.0.0.1:8642` (or the next free port) and opens the browser.
 - `uv run oknos stop`: stops it.

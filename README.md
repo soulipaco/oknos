@@ -15,7 +15,9 @@
   </picture>
 </p>
 
-**Oknos** is a Greek learning app for people who live in Greece and need a Greek certificate: the **A2 + history** exam for long-term residence, or **Ελληνομάθεια B1**. It is made for people who have tried to study before and stopped. It runs only on your own computer, and your coding agent (Claude Code, Codex or similar) installs it, runs it and coaches you.
+<p align="center"><a href="#get-started"><b>I want to learn Greek</b></a> &nbsp;·&nbsp; <a href="#built-and-run-by-agents"><b>I want to see how agents build it</b></a></p>
+
+**Oknos** is a Greek learning app for people who live in Greece and need a Greek certificate: the **A2 + history** exam for long-term residence, or **Ελληνομάθεια B1**. It is made for people who have tried to study before and stopped. It runs only on your own computer, and your coding agent (Claude Code, Codex or similar) installs it, runs it and coaches you. It is built the same way: the code, the two books, the pictures and the voices were made with AI agents and checked step by step, as [the developer section](#built-and-run-by-agents) shows.
 
 > **Türkçe:** Uygulama Türkçe ve İngilizce. Bu sayfayı Türkçe okumak için ajanına "README'yi Türkçeye çevir" demen yeterli.
 
@@ -31,7 +33,7 @@ The agent installs what is needed, starts the app and puts an **Oknos** shortcut
 
 <table>
   <tr>
-    <td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/app-reader-dark.webp"><img src="docs/img/app-reader-light.webp" alt="A chapter of the book: a painted scene at the bakery, then the dialogue in Greek, each line with a play button"></picture></td>
+    <td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/app-reader-dark.webp"><img src="docs/img/app-reader-light.webp" alt="A chapter of the Oknos book, lesson 1: a dialogue in Greek, each line with a play button"></picture></td>
     <td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/app-picture-dark.webp"><img src="docs/img/app-picture-light.webp" alt="A practice card: the Greek word ο καφές and four pictures to choose from"></picture></td>
   </tr>
   <tr>
@@ -40,18 +42,18 @@ The agent installs what is needed, starts the app and puts an **Oknos** shortcut
   </tr>
   <tr>
     <td valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/app-scene-dark.webp"><img src="docs/img/app-scene-light.webp" alt="An exam-format task: look at the picture of the bakery and say whether each Greek sentence is true or false"></picture></td>
-    <td valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/app-exam-dark.webp"><img src="docs/img/app-exam-light.webp" alt="The exam screen: would you pass B1 today? Reading and listening too close to call, writing and speaking not enough evidence yet"></picture></td>
+    <td valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/app-exam-dark.webp"><img src="docs/img/app-exam-light.webp" alt="The exam screen: would you pass B1 today? Reading too close to call, listening above the line, writing and speaking not enough evidence yet"></picture></td>
   </tr>
   <tr>
     <td align="center"><b>Exam formats from day one.</b> <sub>Look at the picture: true or false? Gap fills, matching, listening, writing and speaking, as in the real exams.</sub></td>
     <td align="center"><b>Would you pass today?</b> <sub>An honest answer per skill, against each exam's real pass rule. With too little evidence, it says so.</sub></td>
   </tr>
   <tr>
-    <td valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/app-book-dark.webp"><img src="docs/img/app-book-light.webp" alt="The book: twelve lessons from the first letter to B1, the current one with its progress and its words with pictures"></picture></td>
+    <td valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/app-book-dark.webp"><img src="docs/img/app-book-light.webp" alt="The Oknos book: 26 lessons from the first letter to B1, the current one with its progress and its words with pictures"></picture></td>
     <td valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/app-films-dark.webp"><img src="docs/img/app-films-light.webp" alt="The films of Oknos: two short painted films, Oknos and the donkey, and The dream"></picture></td>
   </tr>
   <tr>
-    <td align="center"><b>A book of twelve lessons.</b> <sub>From the alphabet to B1, following Zeynep from Izmir as she settles in Thessaloniki.</sub></td>
+    <td align="center"><b>A book of 26 lessons.</b> <sub>From the alphabet to B1, each lesson a chapter to read first, with grammar explained in Turkish or English.</sub></td>
     <td align="center"><b>Films about the name.</b> <sub>Two short painted films of the myth, with Greek captions to read along.</sub></td>
   </tr>
 </table>
@@ -98,7 +100,7 @@ Two short painted films (about 45 seconds each) tell the story: **Oknos and the 
 </picture>
 
 - **The Oknos book**, an open course in 26 stages: reading Greek, 24 lessons and a bridge to B1. Each starts with a chapter to read, and its practice opens after it. A new word is shown and explained before it is ever tested. A shorter course of 12 chapters, with a story running through it, is there too and adds its words and scenes to the book's lessons.
-- **Pictures and a voice.** Painted scenes in every chapter, and pictures for words: over a hundred in the open course and close to a thousand in all, drawn for Oknos. Every Greek sentence of the open course comes with a natural recorded voice, so it sounds right from the first day with no setup. With your own key for a voice service (Azure, Google or OpenAI) the agent can voice everything else too.
+- **Pictures and a voice.** Close to a thousand pictures for words, drawn for Oknos, and painted scenes of the story in the shorter course's chapters. Every Greek text of both books comes with a natural recorded voice, so it sounds right from the first day with no setup. With your own key for a voice service (Azure, Google, Gemini, ElevenLabs or OpenAI) the agent can voice everything else too, in the voices you like best.
 - **Podcast lessons** to listen to on the go: your agent writes an episode for a chapter, in Greek with explanations in Turkish or English, and voices it with your voice service.
 - **Exam practice in the real formats**, a timed **mock exam**, and an honest answer to **"would you pass today?"** for each part of each exam.
 - **Your own material**, if you have it. Import a coursebook you own, a word list or handouts, and they become your course. They stay private, on your computer.
@@ -129,9 +131,63 @@ Open your agent in the Oknos folder and say:
 
 Status: early. Used every day by its maintainer on Windows; the macOS and Linux installs are written but untested.
 
-## For developers
+## Built and run by agents
 
-Everything is in [docs/DEVELOPING.md](docs/DEVELOPING.md): the commands, how the code is laid out, and the documents behind it. Coding agents start from [AGENTS.md](AGENTS.md).
+<img src="docs/brand/donkey-ready-light.svg" alt="" width="64" align="right">
+
+Oknos is a working example of an app that coding agents build, install and run. Claude Code wrote the code, the tests, the docs and both books. Codex drew the pictures and the films. Google's speech services voiced everything the repo ships. The maintainer decided what to build, listened, looked, and said yes or no. Every step is in the repo, with numbers you can check.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/by-the-numbers-dark.svg">
+  <img src="docs/img/by-the-numbers-light.svg" alt="Oknos by the numbers: chapters in two open books, words with meanings, word pictures, scenes and film frames, shipped voice clips, agent skills, tests and commits, all counted from the repository.">
+</picture>
+
+### One harness, any agent
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/harness-dark.svg">
+  <img src="docs/img/harness-light.svg" alt="Claude Code, Codex or any agent that reads AGENTS.md uses the same 13 skills. The agent reads the learner's report with oknos report and writes packs, feedback and a plan into the learner folder, which oknos validate checks and the app takes in. Scheduled runs (daily-prep, watch) start claude -p or codex exec after the learner says yes.">
+</picture>
+
+- **[`AGENTS.md`](AGENTS.md)** is the one instruction file for every harness (`CLAUDE.md` only imports it). It holds the current state, the commands and the rules, and is updated as the work lands.
+- **13 skills** in [`.agents/skills/`](.agents/skills/), one copy each, for Claude Code and Codex alike: from `setup` and `coach` to `write-chapter` and `podcast`. A learner says "coach" or "make me a plan", and the skill says what to do.
+- **The coach works only through files.** It reads one JSON report (`oknos report`) and writes item packs, feedback and a plan; `oknos validate` checks them and the app takes them in. It never touches the database, and studying never needs it.
+- **Scheduled runs**, after the learner's yes: `daily-prep` every evening and `watch` every week, started headless as `claude -p` or `codex exec`.
+
+### Who made what
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/who-made-what-dark.svg">
+  <img src="docs/img/who-made-what-light.svg" alt="Six pipelines. The book: Sonnet drafts, Opus reviews, oknos validate. Word pictures: Claude writes prompts, an image model through Codex draws, Claude reviews each. Scenes and films: storyboards and reference sheets, the image model, review and redraw. Voice: the open Greek text, Google Chirp 3 HD and Gemini, oknos guard. Film ambience: seeded noise and sine waves, film_ambience.py, ffmpeg. Podcasts: the podcast skill writes a script, oknos podcast check, cast and voiced, kept on the learner's computer.">
+</picture>
+
+| | What it did here |
+|---|---|
+| **Claude Code** (Opus) | The app, the tests, the docs and the skills; the golden chapters and the review of every other one; the review of every picture; the podcast scripts. Every commit. |
+| **Claude Code subagents** (Sonnet) | The drafts of the book chapters, 3–5 at a time, and the meanings of the book's words. |
+| **Codex** (an image model) | The word pictures, the story's scenes and the films' frames, from Claude's prompts, started headless with `codex exec`. |
+| **Google** (Chirp 3 HD, Gemini TTS) | The voice clips the repo ships, and the films' narration. |
+| **Plain code** | The film player, the films' wind and cicadas (made from numbers), these diagrams and the screenshots. |
+
+The Oknos book was first written to follow a commercial textbook's syllabus. Before it was opened, its text was checked against that textbook and the passages too close to it were rewritten. The voices were chosen by listening tests, and the repo's guard refuses audio from a service whose terms do not allow sharing it.
+
+<details>
+<summary><b>How the code is built: parallel sessions in git worktrees</b></summary>
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/how-it-is-built-dark.svg">
+  <img src="docs/img/how-it-is-built-light.svg" alt="One coordinating Claude Code session starts side sessions, each in its own git worktree and branch. Their work passes the checks (oknos guard, pytest, oknos validate), then main moves forward by fast-forward only. A push happens only when the maintainer asks, and CI runs on Ubuntu and Windows.">
+</picture>
+
+One Claude Code session coordinates; side sessions do one task each (a batch of pictures, the book's voice, the podcasts), each in its own git worktree. Their work lands on `main` by fast-forward after three checks: `oknos guard` (nothing private, no local paths, only publishable audio), `pytest`, and `oknos validate` on the open content. CI runs the same three on Ubuntu and Windows.
+</details>
+
+**The full story**, with the costs, the review numbers and what no person has checked: [docs/BUILT-WITH-AGENTS.md](docs/BUILT-WITH-AGENTS.md).
+
+### Develop it
+
+The commands, how the code is laid out, and the documents behind it are in [docs/DEVELOPING.md](docs/DEVELOPING.md). A coding agent starts from [AGENTS.md](AGENTS.md): tell yours what you want to change.
 
 ## Licences and thanks
 

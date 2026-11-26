@@ -44,7 +44,7 @@ FONT = ROOT / ".cache" / "oknos" / "fonts" / "NotoSerif[wdth,wght].ttf"
 # name: (address, viewport width, what to photograph, width of docs/img/app-<name>-<theme>.webp, None for none)
 SHOTS = {
     "home": ("", 1100, "top:760", None),  # only in the hero
-    "reader": ("?lesson=shopping", 720, "dialogue", 820),
+    "reader": ("?lesson=lesson-01", 720, "dialogue", 820),  # the Oknos book (the default course)
     "picture": ("?practice={seen_pictures}", 720, "card", 820),  # "pick the picture": only for words seen before
     "scene": ("?practice=open-book/ch05-scene-fournos", 720, "card:900", 820),
     "exam": ("?exam", 720, "top:820", 820),
@@ -197,7 +197,7 @@ def screenshots(browser, base: str, raw: Path) -> None:
                 sel = {"dialogue": ".ch-dialogue", "card": "article.card"}[kind]
                 box = page.locator(sel).first.bounding_box()
                 y = box["y"] + page.evaluate("scrollY")
-                pad, top = 20, 100 if kind == "dialogue" else 20  # a dialogue with its heading and first line
+                pad, top = 20, 152 if kind == "dialogue" else 20  # a dialogue with its heading and the line before it
                 clip = {"x": max(0, box["x"] - pad), "y": max(0, y - top), "width": box["width"] + 2 * pad,
                         "height": min(box["height"], int(limit or 820)) + pad + top}
             png = page.screenshot(clip=clip, full_page=True)
