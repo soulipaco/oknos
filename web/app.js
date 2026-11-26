@@ -397,15 +397,20 @@ function navLink(name, label, arg = null, cls = "") {
 
 function appBar(active) {
   // The top of every screen outside a session: the name, theme and language, and the main sections.
-  return [
-    h("header", { class: "topbar" }, navLink("home", wordmark(), null, "home-link"), topActions()),
-    h("nav", { class: "app-nav", "aria-label": t("nav_label") },
-      NAV_ITEMS.map(([name, key]) => {
-        const a = navLink(name, t(key), null, name === active ? "on" : "");
-        if (name === active) a.setAttribute("aria-current", "page");
-        return a;
-      })),
-  ];
+  const nav = h("nav", { class: "app-nav", "aria-label": t("nav_label") },
+    NAV_ITEMS.map(([name, key]) => {
+      const a = navLink(name, t(key), null, name === active ? "on" : "");
+      if (name === active) a.setAttribute("aria-current", "page");
+      return a;
+    }));
+  // On a phone the bar scrolls sideways: bring the current section into view.
+  setTimeout(() => {  // once the bar is on the page (not requestAnimationFrame: a hidden tab never runs it)
+    const on = nav.querySelector(".on");
+    if (!on || nav.scrollWidth <= nav.clientWidth) return;
+    const box = nav.getBoundingClientRect(), it = on.getBoundingClientRect();
+    nav.scrollLeft += (it.left + it.width / 2) - (box.left + box.width / 2);
+  });
+  return [h("header", { class: "topbar" }, navLink("home", wordmark(), null, "home-link"), topActions()), nav];
 }
 
 function crumb(name, label, arg = null) {
