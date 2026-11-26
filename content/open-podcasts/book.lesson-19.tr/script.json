@@ -1,0 +1,937 @@
+{
+ "id": "book.lesson-19.tr",
+ "kind": "chapter",
+ "curriculum": "oknos-book",
+ "stage": "lesson-19",
+ "lang": "tr",
+ "title": {
+  "tr": "E nereye gitti? Paros'tan dönüş ve geçmiş zaman",
+  "en": "Where did the e go? Back from Paros, and the past tense"
+ },
+ "version": 4,
+ "written": "2026-11-26",
+ "cast": [
+  {
+   "id": "ada",
+   "name": "Ada",
+   "role": "host",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "f",
+   "age": "35",
+   "manner": "warm, curious, explains with Turkish bridges"
+  },
+  {
+   "id": "mert",
+   "name": "Mert",
+   "role": "cohost",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "m",
+   "age": "32",
+   "manner": "easy-going, a bit lazy, the learner; guesses and sometimes gets it wrong"
+  },
+  {
+   "id": "katerina",
+   "name": "Κατερίνα",
+   "role": "guest",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "45",
+   "manner": "native, from Thessaloniki, warm, patient, clear"
+  },
+  {
+   "id": "eleni",
+   "name": "Ελένη",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "30",
+   "manner": "Ayşe's neighbour and friend in Athens, chatty, cheerful, warm"
+  },
+  {
+   "id": "ayse",
+   "name": "Αϊσέ",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "30",
+   "manner": "Turkish learner of Greek from Izmir, a little shy, polite; happy and sunburnt after a week on Paros"
+  }
+ ],
+ "sources": [
+  {
+   "what": "chapter",
+   "ref": "oknos-book/lessons/lesson-19"
+  }
+ ],
+ "segments": [
+  {
+   "part": "Açılış"
+  },
+  {
+   "lang": "el",
+   "say": "Αϊσέ! Γύρισες! Πού ήσουν;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Στην Πάρο! Πήγα μαζί με τη Ζέινεπ.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Πώς πήγατε; Με αεροπλάνο;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, πήραμε το πλοίο από τη Ραφήνα. Φύγαμε το πρωί και φτάσαμε το μεσημέρι.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ωραία! Εγώ έμεινα στην Αθήνα και δούλεψα.",
+   "who": "eleni"
+  },
+  {
+   "lang": "tr",
+   "say": "Her şey geçmiş zamanda. Ama kulak ver: Eleni kaldım derken başta bir e vardı, έμεινα. Ayşe ise φύγαμε dedi, φτάσαμε dedi. Başta e yok.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ben başka bir şey yakaladım. Eleni πώς πήγατε diye sordu: nasıl gittiniz. Peki tatil nasıl geçti diye sormak istesem? Yine πώς πήγατε mı?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İkisini de bugün çözeceğiz.",
+   "who": "ada"
+  },
+  {
+   "part": "Hoş geldin"
+  },
+  {
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, on dokuzuncu bölüm.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bugün geçmiş zaman var. Hadi, Yunanca:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Μερτ, τι έκανες το Σαββατοκύριακο;",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Έμεινα στο σπίτι και ήπια πολύ καφέ.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bak, bölüm başlamadan iki geçmiş biçim kullandın. Bugün nereye gittiğini, ne yaptığını, nasıl geçtiğini anlatacaksın, bir de arkadaşına bir tatil mesajı yazacaksın. Stüdyoda Katerina da var. Örnek cümleleri o söyleyecek, sen de arkasından yüksek sesle söyle.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας! Πώς περάσατε το Σαββατοκύριακο;",
+   "who": "katerina"
+  },
+  {
+   "part": "Sokakta karşılaşma"
+  },
+  {
+   "lang": "tr",
+   "say": "İlk sahne. Ayşe Paros adasında bir hafta tatil yaptı ve Atina'ya döndü. Sokakta arkadaşı Eleni'yle karşılaşıyor. Bir şeye kulak ver: cuma günü ne oldu?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Αϊσέ! Γύρισες! Πού ήσουν;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Στην Πάρο! Πήγα μαζί με τη Ζέινεπ. Ήμασταν μια εβδομάδα στο νησί.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Πώς πήγατε; Με αεροπλάνο;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, πήραμε το πλοίο από τη Ραφήνα. Φύγαμε το πρωί και φτάσαμε το μεσημέρι.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Και τι κάνατε εκεί;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Την πρώτη μέρα πήγαμε στην παραλία και κολυμπήσαμε πολύ. Μετά φάγαμε ψάρι σε μια ταβέρνα και ήπιαμε κρασί.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Έβρεξε καθόλου;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Ναι, την Παρασκευή έβρεξε όλη μέρα. Μείναμε στο δωμάτιο και είδαμε δύο ταινίες.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ωραία! Εγώ έμεινα στην Αθήνα και δούλεψα.",
+   "who": "eleni"
+  },
+  {
+   "lang": "tr",
+   "say": "Cuma ne oldu? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Cuma... Plaja gittiler ve bol bol yüzdüler?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "O ilk gündü: την πρώτη μέρα. Cuma bütün gün yağmur yağdı: έβρεξε όλη μέρα. Odada kaldılar, iki film izlediler: μείναμε στο δωμάτιο.",
+   "who": "ada"
+  },
+  {
+   "part": "Anastasia'ya mesaj"
+  },
+  {
+   "lang": "tr",
+   "say": "İkinci sahne. Ertesi gün Ayşe, Selanik'teki arkadaşı Anastasia'ya bir mesaj yazıyor. Yazarken kendi kendine okuyor, biraz yavaş. Dikkat et: Ayşe adada ne satın aldı?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου, Αναστασία! Γύρισα την Κυριακή από την Πάρο.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Πέρασα μια εβδομάδα στο νησί και ήταν τέλεια!",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Κλείσαμε δωμάτιο κοντά στην παραλία και βρήκαμε μια ωραία ταβέρνα.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Αγόρασα ένα καπέλο και ένα δώρο για εσένα.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Και εσύ; Τι έκανες το καλοκαίρι; Πού πήγες; Φιλιά, Αϊσέ.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "tr",
+   "say": "Ayşe ne aldı? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Bir şapka: ένα καπέλο. Bir de Anastasia'ya bir hediye.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru. Κλείσαμε δωμάτιο da oda ayırttık demek. Κλείνω kapatmak; odayı kendine kapatıyorsun. Sondaki φιλιά, öpücükler. Bu mesaj, sınavdaki arkadaşa e-postanın tam örneği: kırk ile altmış kelime, on puan. Bir selam, üç dört geçmiş cümle, bir soru, ve φιλιά.",
+   "who": "ada"
+  },
+  {
+   "part": "Kökü zaten biliyorsun"
+  },
+  {
+   "lang": "tr",
+   "say": "Ada, bu geçmiş zaman bana çok yeni geliyor. Her fiili ayrı ayrı mı ezberleyeceğim?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Hayır. Kökü zaten biliyorsun: on beşinci dersteki gelecek zamanın bir kerelik kökü, θα γράψω. Geçmiş aynı kökü kullanır. Katerina, üçünü art arda söyler misin?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "γράφω, θα γράψω, έγραψα",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "lang": "tr",
+   "say": "Yazıyorum, yazacağım, yazdım. Ekler de her fiilde aynı. Türkçedeki -dı eki gibi düşün: yazdım, yazdın, yazdı.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "έγραψα, έγραψες, έγραψε",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi çoğul: yazdık, yazdınız, yazdılar.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "γράψαμε, γράψατε, έγραψαν",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "lang": "tr",
+   "say": "Dur, ben deneyeyim. Φτάνω, varmak. Gelecekte θα φτάσω. O zaman vardım, έφτασα mı?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Mükemmel! Ayşe de φτάσαμε dedi: vardık. Çalışmak da öyle: δουλεύω, θα δουλέψω, δούλεψα. Konuşmak, telefon etmek gibi fiiller de gelecekteki gibi isa sesini alır. Konuştum: μίλησα. Konuştuk:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Μιλήσαμε ελληνικά με τον σερβιτόρο.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "O zaman Ayşe'nin κολυμπήσαμε'si de bu türden. Yüzdük.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynen öyle.",
+   "who": "ada"
+  },
+  {
+   "part": "E nereye gitti?"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi açılıştaki soru. Έμεινα'nın başında e var, μείναμε'de yok. Neden?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Çünkü bu e kökün parçası değil, sadece vurgu için gelir. Kural şu: geçmiş zamanda vurgu sondan üçüncü heceye düşer. Μείναμε'yi hecele: μεί, να, με. Üç hece, vurgu sondan üçüncüde. Her şey yerinde.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Peki ya kaldım? Μείνα mı?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İşte sorun burada. Μεί, να: sadece iki hece. Sondan üçüncü hece yok. Vurgunun oturacak bir yere ihtiyacı var. O yüzden başa bir e gelir, vurgu da onun üstüne biner: έμεινα.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Yani bu e, vurgu için bir tabure. Hece yetmezse getiriyorsun.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Güzel benzetme. Katerina, iki çifti söyler misin? Kaldım, kaldık. Ayrıldım, ayrıldık.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "έμεινα, μείναμε",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "έφυγα, φύγαμε",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "lang": "tr",
+   "say": "Peki αγόρασα? Onun başında e yok.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Çünkü zaten uzun. Α, γό, ρα, σα: dört hece, vurgu γό'da. E'ye gerek yok. Biz biçimi bir hece uzun, vurgu da bir hece sağa kayar:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "αγόρασα, αγοράσαμε",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "part": "İki nasıl"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi Mert'in sorusu. Eleni πώς πήγατε diye sordu. Ama tatilden dönene başka bir nasıl da sorulur: πώς πέρασες στις διακοπές.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Bunu tahmin edeyim. Tatilde nasıl geçirdin? Yani tatil nasıl geçti.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru. Περνάω: geçmek, vakit geçirmek. Tatilden dönene hep bu sorulur. Bu fiil isa almaz, asa alır: πέρασα. Cevap da çoğu zaman şöyle:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Πέρασα ωραία στο νησί.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Adada güzel vakit geçirdim. Peki πώς πήγατε?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "O başka. Nasıl gittiniz, yani neyle? Uçakla mı, gemiyle mi? Ayşe ne cevap verdi, hatırlıyor musun?",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Πήραμε το πλοίο από τη Ραφήνα.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Türkçede gemiye bindik deriz, Yunancada gemiyi alırsın. Πήραμε, παίρνω fiilinin geçmişi. Ve bu fiil kendi bildiğini okuyor.",
+   "who": "ada"
+  },
+  {
+   "part": "Kendi bildiğini okuyanlar"
+  },
+  {
+   "lang": "tr",
+   "say": "Bazı sık fiillerin geçmişi tahmin edilmez, ama ekler yine aynı. Katerina: gitmek, almak, bulmak.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "πάω, πήγα. παίρνω, πήρα. βρίσκω, βρήκα.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.1
+  },
+  {
+   "lang": "tr",
+   "say": "Hepsi iki hece, ama başlarında e yok!",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İyi kulak. Bunlar kendi kurallarıyla gider: vurgu ilk hecede. Şimdi yemek, τρώω. Yedim nasıl olur? Sen de tahmin et.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Gelecekte θα φάω'ydı. O zaman έφαγα?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bravo, gelecekteki kök yine yol gösterdi. İki hece, o yüzden e var; biz biçiminde düşer: φάγαμε. İçmek farklı: ήπια. Buradaki ilk hece kökün parçası, düşmez: ήπιαμε.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Φάγαμε ψάρι σε μια ταβέρνα και ήπιαμε κρασί.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Bir de olmak. Είμαι fiilinin tek bir geçmişi var: ήμουν, ήταν, ήμασταν. Adadaydık:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Ήμασταν μια εβδομάδα στο νησί.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Sıra sende"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi sıra sende. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert deneyecek, en son Katerina doğrusunu söyleyecek. Birincisi: bir arkadaşına tatilin nasıl geçtiğini sor.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Πώς πήγες στις διακοπές;",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Dikkat, Mert. Bu neyle gittin demek oldu.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ah, doğru. Geçirmek fiili lazım: πέρασες.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Πώς πέρασες στις διακοπές;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Bir hafta adada kaldığınızı söyle. Kalmak fiiliyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 5
+  },
+  {
+   "lang": "el",
+   "say": "Ήμασταν μια εβδομάδα στο νησί.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bu da doğru, Ayşe'nin cümlesi. Ama kalmak fiiliyle istedim.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Kaldık. Üç hece, e yok.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Μείναμε μια εβδομάδα στο νησί.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Μείναμε μια εβδομάδα στο νησί.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Son olarak: geçen hafta çalışmadığını söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 5
+  },
+  {
+   "lang": "el",
+   "say": "Δε δούλεψα την περασμένη εβδομάδα.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Çok iyi. Δεν'in sonundaki n, δ sesinden önce düşer.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Δε δούλεψα την περασμένη εβδομάδα.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Mert'in hatası"
+  },
+  {
+   "lang": "tr",
+   "say": "Mert, şimdi hızlı ol. Düşünmeden: dün tavernada balık yedik.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Χθες έφαγαμε ψάρι στην ταβέρνα.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Έφαγαμε mi? Dur bir dakika.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ama έφαγα'da e vardı! Türkçede yedim de yedik de aynı başlar.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçede öyle. Ama bu e kök değil, sadece vurgu için gelmişti. Φάγαμε zaten üç hece. Yunanca öğrenenlerin en sık hatalarından biri bu. Doğrusunu dinle ve tekrar et:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Χθες φάγαμε ψάρι στην ταβέρνα.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Oyun: dün mü, yarın mı?"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi küçük bir oyun. Ben bir zaman sözcüğü ve bir fiil söyleyeceğim. Sen ikisini uydurarak bir cümle kur, sonra Mert söyleyecek. Birincisi: χθες, ve πάω στο μουσείο.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Χθες πήγα στο μουσείο.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru. Dün ile geçmiş gelir. İkincisi: αύριο, ve πάω στην παραλία.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Αύριο πήγα στην παραλία.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Yarın gittim mi? Mert!",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Akışa kapıldım. Yarın ile θα gelir.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Αύριο θα πάω στην παραλία.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Son bir soru. Γύρισα προχθές: evvelsi gün döndüm. Peki πέρσι ne demek?",
+   "who": "ada"
+  },
+  {
+   "pause": 3.5
+  },
+  {
+   "lang": "tr",
+   "say": "Geçen yaz?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Geçen yıl. Yaz başka bir kelime: το καλοκαίρι. Geçen yaz demek istersen ikisini yan yana koyarsın:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Πέρσι το καλοκαίρι πήγα στην Κρήτη.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Sahne yeniden"
+  },
+  {
+   "lang": "tr",
+   "say": "Sokaktaki konuşma bir kez daha. Bu sefer her kelimeyi anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Αϊσέ! Γύρισες! Πού ήσουν;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Στην Πάρο! Πήγα μαζί με τη Ζέινεπ. Ήμασταν μια εβδομάδα στο νησί.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Πώς πήγατε; Με αεροπλάνο;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, πήραμε το πλοίο από τη Ραφήνα. Φύγαμε το πρωί και φτάσαμε το μεσημέρι.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Και τι κάνατε εκεί;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Την πρώτη μέρα πήγαμε στην παραλία και κολυμπήσαμε πολύ. Μετά φάγαμε ψάρι σε μια ταβέρνα και ήπιαμε κρασί.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Έβρεξε καθόλου;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Ναι, την Παρασκευή έβρεξε όλη μέρα. Μείναμε στο δωμάτιο και είδαμε δύο ταινίες.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ωραία! Εγώ έμεινα στην Αθήνα και δούλεψα.",
+   "who": "eleni"
+  },
+  {
+   "lang": "tr",
+   "say": "Gerçekten hepsini anladım. Έμεινα'da e var, φύγαμε'de yok. Artık nedenini de biliyorum.",
+   "who": "mert"
+  },
+  {
+   "part": "Köşe: tatil bir ara mı?"
+  },
+  {
+   "lang": "tr",
+   "say": "Köşemiz bugün bir kelime: οι διακοπές, tatil. Fark ettin mi, Yunancada hep çoğul.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Στις διακοπές. Evet, πώς πέρασες στις διακοπές.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Tekili η διακοπή: kesinti, ara. Elektrik kesildiğinde de bu kelimeyi duyarsın. Yani tatil, işe verilen aralar.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Bizim tatil de öyle değil mi? Arapçadan geliyor galiba.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet, Arapçada işi durdurmak demek. İki dil de aynı şeyi görmüş: tatil, işin durduğu zaman.",
+   "who": "ada"
+  },
+  {
+   "part": "Gelecek bölüm"
+  },
+  {
+   "lang": "tr",
+   "say": "Gelecek bölümde Ayşe'nin işleri var: telefon mağazası, banka ve postane. Bir de bana, sana gibi sözler: Yunancada fiilin önünde küçük bir kelime.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Bankada Yunanca mı? Ben Türkçe bile zorlanıyorum.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Yapacaksın. Bu arada bölümü uygulamada oku, alıştırmaları yap. Şimdi son söz Katerina'nın: bugünün hikâyesi, sadece Yunanca. Sadece dinle. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "part": "Katerina anlatıyor"
+  },
+  {
+   "lang": "el",
+   "say": "Η Αϊσέ και η Ζέινεπ πήγαν διακοπές στην Πάρο.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Πήραν το πλοίο από τη Ραφήνα.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Έφυγαν το πρωί και έφτασαν στο νησί το μεσημέρι.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Την πρώτη μέρα πήγαν στη θάλασσα και κολύμπησαν πολύ.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Μετά έφαγαν ψάρι σε μια ταβέρνα και ήπιαν κρασί.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Την Παρασκευή έβρεξε όλη μέρα.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Έμειναν στο δωμάτιο και είδαν δύο ταινίες.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Η Αϊσέ αγόρασε ένα καπέλο και ένα δώρο για την Αναστασία.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Την Κυριακή η Αϊσέ γύρισε στην Αθήνα.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Στον δρόμο είδε την Ελένη.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Η Ελένη δεν πήγε διακοπές. Έμεινε στην Αθήνα και δούλεψε.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "«Πού ήσουν;» ρώτησε η Ελένη. «Στην Πάρο!» είπε η Αϊσέ.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Την άλλη μέρα η Αϊσέ έγραψε ένα μήνυμα στην Αναστασία, στη Θεσσαλονίκη.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "«Και εσύ; Τι έκανες το καλοκαίρι; Πού πήγες;»",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Τι έκανε η Αναστασία το καλοκαίρι; Θα δούμε!",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ]
+}

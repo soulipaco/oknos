@@ -1,0 +1,1039 @@
+{
+ "id": "book.lesson-18.tr",
+ "kind": "chapter",
+ "lang": "tr",
+ "title": {
+  "tr": "Seni mi, sana mı? Sofia Atina'da",
+  "en": "Σε or σου? Sofia comes to Athens"
+ },
+ "curriculum": "oknos-book",
+ "stage": "lesson-18",
+ "version": 2,
+ "written": "2026-11-26",
+ "date": null,
+ "rendered": "2026-11-26T13:40:03",
+ "seconds": 898.9,
+ "script": "c0815b6e792c",
+ "parts": [
+  {
+   "t": 3.0,
+   "title": "Açılış"
+  },
+  {
+   "t": 37.84,
+   "title": "Hoş geldin"
+  },
+  {
+   "t": 87.15,
+   "title": "Telefonda"
+  },
+  {
+   "t": 146.38,
+   "title": "Meydanda ve evde"
+  },
+  {
+   "t": 192.67,
+   "title": "Ermu'da ve gişede"
+  },
+  {
+   "t": 246.56,
+   "title": "Seni mi, sana mı?"
+  },
+  {
+   "t": 338.4,
+   "title": "Θα mı, να mı?"
+  },
+  {
+   "t": 466.71,
+   "title": "Yoruluyorum, uyuyacağım"
+  },
+  {
+   "t": 532.01,
+   "title": "Sıra sende"
+  },
+  {
+   "t": 617.63,
+   "title": "Mert'in hatası"
+  },
+  {
+   "t": 659.98,
+   "title": "Oyun: çoğalt"
+  },
+  {
+   "t": 710.92,
+   "title": "Sahne yeniden"
+  },
+  {
+   "t": 750.84,
+   "title": "Kelime köşesi"
+  },
+  {
+   "t": 779.55,
+   "title": "Gelecek bölüm"
+  },
+  {
+   "t": 820.61,
+   "title": "Katerina anlatıyor"
+  }
+ ],
+ "lines": [
+  {
+   "t": 3.0,
+   "lang": "el",
+   "say": "Αϊσέ, δε σε βλέπω! Πού είσαι;",
+   "who": "sofia"
+  },
+  {
+   "t": 5.8,
+   "lang": "el",
+   "say": "Απέναντι από την τράπεζα. Με βλέπεις τώρα;",
+   "who": "ayse"
+  },
+  {
+   "t": 9.09,
+   "lang": "el",
+   "say": "Ναι, σε βλέπω!",
+   "who": "sofia"
+  },
+  {
+   "t": 10.48,
+   "lang": "el",
+   "say": "Μου πάει, Αϊσέ;",
+   "who": "sofia"
+  },
+  {
+   "t": 12.0,
+   "lang": "el",
+   "say": "Σου πάει πολύ!",
+   "who": "ayse"
+  },
+  {
+   "t": 13.88,
+   "lang": "tr",
+   "say": "İki arkadaş, iki ayrı gün. Önce bir meydanda: seni görmüyorum, δε σε βλέπω. Ertesi gün bir dükkânda: sana çok yakışıyor, σου πάει πολύ.",
+   "who": "ada"
+  },
+  {
+   "t": 25.57,
+   "lang": "tr",
+   "say": "İkisinde de sen var. Ama biri σε, biri σου. Ben ikisine de aynısını derdim.",
+   "who": "mert"
+  },
+  {
+   "t": 31.71,
+   "lang": "tr",
+   "say": "Bugün tam bunu çözeceğiz. Cevabı aslında Türkçeden biliyorsun.",
+   "who": "ada"
+  },
+  {
+   "t": 37.84,
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, on sekizinci bölüm.",
+   "who": "ada"
+  },
+  {
+   "t": 42.83,
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "t": 48.12,
+   "lang": "tr",
+   "say": "Bugün bir tekrar bölümü. Yeni hiçbir şey yok. On üçüncü dersten on yedinci derse kadar ne öğrendiysek, hepsi bir hafta sonunda bir araya geliyor.",
+   "who": "ada"
+  },
+  {
+   "t": 57.81,
+   "lang": "el",
+   "say": "Μερτ, θυμάσαι;",
+   "who": "ada"
+  },
+  {
+   "t": 59.7,
+   "lang": "el",
+   "say": "Θυμάμαι… λίγο.",
+   "who": "mert"
+  },
+  {
+   "t": 61.23,
+   "lang": "tr",
+   "say": "Θυμάσαι, hatırlıyor musun. Θυμάμαι, hatırlıyorum. Bu hafta sonu Ayşe'nin arkadaşı Sofia Atina'ya geliyor. A iki sınavının konuşma bölümünde tam böyle bir rol oyunu çıkabilir: bir arkadaşın ziyarete geliyor.",
+   "who": "ada"
+  },
+  {
+   "t": 76.95,
+   "lang": "tr",
+   "say": "Katerina da burada. Örnek cümleleri o söyleyecek, sen de arkasından söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 82.73,
+   "lang": "el",
+   "say": "Γεια σας! Σήμερα πάμε στην Αθήνα!",
+   "who": "katerina"
+  },
+  {
+   "t": 87.15,
+   "lang": "tr",
+   "say": "İlk sahne. Perşembe akşamı, Sofia telefonda Ayşe'yle konuşuyor. Kulak ver: Sofia hangi gün geliyor, nerede kalacak?",
+   "who": "ada"
+  },
+  {
+   "t": 97.47,
+   "lang": "el",
+   "say": "Γεια σου, Αϊσέ! Θα έρθω την Παρασκευή. Πού θα μείνω;",
+   "who": "sofia"
+  },
+  {
+   "t": 101.84,
+   "lang": "el",
+   "say": "Θα μείνεις στο σπίτι μου! Το διαμέρισμα είναι στον τρίτο όροφο και υπάρχει ασανσέρ.",
+   "who": "ayse"
+  },
+  {
+   "t": 108.12,
+   "lang": "el",
+   "say": "Τι θα κάνουμε το Σαββατοκύριακο;",
+   "who": "sofia"
+  },
+  {
+   "t": 110.1,
+   "lang": "el",
+   "say": "Το Σάββατο θα κάνουμε ψώνια στην Ερμού. Το βράδυ θέλεις να δούμε μια παράσταση;",
+   "who": "ayse"
+  },
+  {
+   "t": 115.71,
+   "lang": "el",
+   "say": "Ναι! Τι ρούχα να φέρω; Κάνει ζέστη;",
+   "who": "sofia"
+  },
+  {
+   "t": 118.4,
+   "lang": "el",
+   "say": "Το πρωί κάνει ζέστη, αλλά το βράδυ κάνει κρύο. Να φέρεις ένα καπέλο και ένα μακρύ παντελόνι. Μην ξεχάσεις τα γυαλιά!",
+   "who": "ayse"
+  },
+  {
+   "t": 127.53,
+   "lang": "tr",
+   "say": "Hangi gün, nerede? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 133.82,
+   "lang": "tr",
+   "say": "Cuma günü geliyor, την Παρασκευή. Bir otelde kalacak galiba?",
+   "who": "mert"
+  },
+  {
+   "t": 137.93,
+   "lang": "tr",
+   "say": "Otel yok. Ayşe'nin evinde: θα μείνεις στο σπίτι μου. Üçüncü katta, asansörü de var.",
+   "who": "ada"
+  },
+  {
+   "t": 146.38,
+   "lang": "tr",
+   "say": "İkinci sahne. Cuma öğlen Sofia geldi. Bir meydanda Ayşe'yi arıyor, sonra eve gidiyorlar. Bu sefer biraz yavaş. Gösteri ne zaman?",
+   "who": "ada"
+  },
+  {
+   "t": 156.33,
+   "lang": "el",
+   "say": "Αϊσέ, δε σε βλέπω! Πού είσαι;",
+   "who": "sofia",
+   "speed": 0.85
+  },
+  {
+   "t": 159.56,
+   "lang": "el",
+   "say": "Απέναντι από την τράπεζα. Με βλέπεις τώρα;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 163.37,
+   "lang": "el",
+   "say": "Ναι, σε βλέπω! Στο αεροπλάνο κουράζομαι πολύ. Χρειάζομαι έναν καφέ!",
+   "who": "sofia",
+   "speed": 0.85
+  },
+  {
+   "t": 168.94,
+   "lang": "el",
+   "say": "Αυτό είναι το δωμάτιό σου, δίπλα στο σαλόνι. Εγώ κοιμάμαι δίπλα στην κουζίνα.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 175.19,
+   "lang": "el",
+   "say": "Θυμάσαι τι ώρα αρχίζει η παράσταση;",
+   "who": "sofia",
+   "speed": 0.85
+  },
+  {
+   "t": 178.02,
+   "lang": "el",
+   "say": "Αύριο στις εννιά το βράδυ.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 180.92,
+   "lang": "tr",
+   "say": "Gösteri ne zaman? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 187.5,
+   "lang": "tr",
+   "say": "Yarın akşam dokuzda. Αύριο στις εννιά το βράδυ.",
+   "who": "mert"
+  },
+  {
+   "t": 192.67,
+   "lang": "tr",
+   "say": "Üçüncü sahne. Cumartesi. Önce Ermu Caddesi'nde bir giyim mağazası, akşamüstü de tiyatronun gişesi. Biletleri kim ödüyor?",
+   "who": "ada"
+  },
+  {
+   "t": 201.84,
+   "lang": "el",
+   "say": "Καλημέρα! Μου αρέσουν αυτά τα ροζ φορέματα.",
+   "who": "sofia"
+  },
+  {
+   "t": 205.47,
+   "lang": "el",
+   "say": "Τι νούμερο φοράτε;",
+   "who": "politria"
+  },
+  {
+   "t": 207.05,
+   "lang": "el",
+   "say": "Φοράω το σαράντα.",
+   "who": "sofia"
+  },
+  {
+   "t": 208.84,
+   "lang": "el",
+   "say": "Ορίστε το σαράντα.",
+   "who": "politria"
+  },
+  {
+   "t": 210.38,
+   "lang": "el",
+   "say": "Μου κάνει, αλλά είναι λίγο μακρύ. Μου πάει, Αϊσέ;",
+   "who": "sofia"
+  },
+  {
+   "t": 214.04,
+   "lang": "el",
+   "say": "Σου πάει πολύ!",
+   "who": "ayse"
+  },
+  {
+   "t": 215.62,
+   "lang": "el",
+   "say": "Ωραία, θα το πάρω.",
+   "who": "sofia"
+  },
+  {
+   "t": 217.03,
+   "lang": "el",
+   "say": "Καλησπέρα. Θα ήθελα δύο εισιτήρια για την παράσταση.",
+   "who": "ayse"
+  },
+  {
+   "t": 220.8,
+   "lang": "el",
+   "say": "Τριάντα ευρώ, παρακαλώ.",
+   "who": "tamias"
+  },
+  {
+   "t": 222.99,
+   "lang": "el",
+   "say": "Όχι, Αϊσέ, πληρώνω εγώ!",
+   "who": "sofia"
+  },
+  {
+   "t": 225.63,
+   "lang": "el",
+   "say": "Η παράσταση αρχίζει στις εννιά. Μην αργήσετε!",
+   "who": "tamias"
+  },
+  {
+   "t": 229.56,
+   "lang": "tr",
+   "say": "Kim ödüyor? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 236.07,
+   "lang": "tr",
+   "say": "Ayşe. Bileti isteyen o.",
+   "who": "mert"
+  },
+  {
+   "t": 238.62,
+   "lang": "tr",
+   "say": "İsteyen Ayşe, ama ödeyen Sofia: όχι, πληρώνω εγώ. İki bilet otuz avro.",
+   "who": "ada"
+  },
+  {
+   "t": 246.56,
+   "lang": "tr",
+   "say": "Açılıştaki soruya dönelim. Δε σε βλέπω, ama σου πάει. İkisi de sen. Neden?",
+   "who": "mert"
+  },
+  {
+   "t": 252.76,
+   "lang": "tr",
+   "say": "Türkçede nasıl diyorsun? Seni görmüyorum. Ama sana yakışıyor.",
+   "who": "ada"
+  },
+  {
+   "t": 258.37,
+   "lang": "tr",
+   "say": "Seni… sana… Dur. Görmek i ister, yakışmak e ister!",
+   "who": "mert"
+  },
+  {
+   "t": 263.16,
+   "lang": "tr",
+   "say": "İşte bu. Yunanca da tam böyle ayırır. Seni, beni: σε, με. Sana, bana: σου, μου. Görmek ve beklemek σε alır. Hoşa gitmek, yakışmak, bedenine olmak μου, σου alır. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 281.76,
+   "lang": "el",
+   "say": "Σε βλέπω. Σε περιμένω.",
+   "who": "katerina"
+  },
+  {
+   "t": 288.14,
+   "lang": "tr",
+   "say": "Ve öbür taraf:",
+   "who": "ada"
+  },
+  {
+   "t": 290.03,
+   "lang": "el",
+   "say": "Μου αρέσει. Σου πάει. Μου κάνει.",
+   "who": "katerina"
+  },
+  {
+   "t": 300.2,
+   "lang": "tr",
+   "say": "Hoşuma gidiyor da e ile. Türkçe gibi düşünmek yine işe yaradı.",
+   "who": "mert"
+  },
+  {
+   "t": 305.39,
+   "lang": "el",
+   "say": "Μερτ, με βλέπεις;",
+   "who": "ada"
+  },
+  {
+   "t": 307.81,
+   "lang": "el",
+   "say": "Ναι, σε βλέπω!",
+   "who": "mert"
+  },
+  {
+   "t": 309.93,
+   "lang": "tr",
+   "say": "Bu küçük kelimeler fiilin hemen önüne gelir. Θα ya da να varsa, onların arkasına. Sofia elbiseyi alırken ne dedi?",
+   "who": "ada"
+  },
+  {
+   "t": 323.97,
+   "lang": "tr",
+   "say": "Θα το πάρω. Onu alacağım. Το, yani onu.",
+   "who": "mert"
+  },
+  {
+   "t": 327.48,
+   "lang": "tr",
+   "say": "Evet, elbise nötr, o yüzden το. Na'nın arkasında da aynı yer: beni alabilir misin, μπορείς να με πάρεις.",
+   "who": "ada"
+  },
+  {
+   "t": 338.4,
+   "lang": "tr",
+   "say": "İkinci nokta. Telefon konuşması gelecek zamanla dolu: θα έρθω, θα μείνεις, θα κάνουμε. Θα, ve arkasından fiilin bir kerelik biçimi.",
+   "who": "ada"
+  },
+  {
+   "t": 349.94,
+   "lang": "tr",
+   "say": "Bir kerelik biçim neydi, hatırlat.",
+   "who": "mert"
+  },
+  {
+   "t": 352.19,
+   "lang": "tr",
+   "say": "Bir kere olan iş için ayrı bir kök. Yazmak γράφω, ama θα γράψω. Konuşmak μιλάω, ama θα μιλήσω. Bazen hiç benzemez: τρώω, ama θα φάω.",
+   "who": "ada"
+  },
+  {
+   "t": 368.91,
+   "lang": "tr",
+   "say": "Yani tahmin edilmez.",
+   "who": "mert"
+  },
+  {
+   "t": 370.55,
+   "lang": "tr",
+   "say": "Edilmez, öğrenilir. Ama güzel haber şu: na ile kurulan biçim tamamen aynı. Sadece θα yerine να gelir. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 382.67,
+   "lang": "el",
+   "say": "θα γράψω, να γράψω. θα έρθω, να έρθω. θα φάω, να φάω.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 399.04,
+   "lang": "tr",
+   "say": "Peki Sofia τι ρούχα να φέρω dedi. Önünde istemek yok. Bu na orada ne yapıyor?",
+   "who": "mert"
+  },
+  {
+   "t": 405.38,
+   "lang": "tr",
+   "say": "Önünde başka fiil olmayan na, getireyim mi demek. Ayşe'nin cevabı da na ile, ama bir rica: getir.",
+   "who": "ada"
+  },
+  {
+   "t": 414.24,
+   "lang": "el",
+   "say": "Να φέρεις ένα καπέλο και ένα μακρύ παντελόνι.",
+   "who": "katerina"
+  },
+  {
+   "t": 421.33,
+   "lang": "tr",
+   "say": "Bir de θέλεις να δούμε. Türkçede izlemek ister misin deriz. Yunancada izlemek nerede?",
+   "who": "mert"
+  },
+  {
+   "t": 427.89,
+   "lang": "tr",
+   "say": "Yok, çünkü Yunancada mastar yok. Hep na ve kişisi belli bir fiil: izleyelim, ister misin? Türkçede de bazen böyle deriz: gelmeni istiyorum. Yunanca θέλω να έρθεις der.",
+   "who": "ada"
+  },
+  {
+   "t": 441.92,
+   "lang": "tr",
+   "say": "Bir incelik daha. Yarın, cuma günü gibi bir kere olan iş için bu kök. Her gün olan bir alışkanlıksa, şimdiki zamanın kökü gelir. Önce yarın:",
+   "who": "ada"
+  },
+  {
+   "t": 453.4,
+   "lang": "el",
+   "say": "Αύριο πρέπει να ξυπνήσω στις έξι.",
+   "who": "katerina"
+  },
+  {
+   "t": 456.28,
+   "lang": "tr",
+   "say": "Şimdi her gün:",
+   "who": "ada"
+  },
+  {
+   "t": 458.15,
+   "lang": "el",
+   "say": "Κάθε μέρα πρέπει να ξυπνάω στις επτά.",
+   "who": "katerina"
+  },
+  {
+   "t": 466.71,
+   "lang": "tr",
+   "say": "Sofia uçakta κουράζομαι dedi, Ayşe de κοιμάμαι. İkisi de aynı sesle bitiyor, ama sonları aynı değil gibi.",
+   "who": "mert"
+  },
+  {
+   "t": 474.57,
+   "lang": "tr",
+   "say": "Çünkü iki grup var. Gelmek grubu: έρχομαι. Hatırlamak grubu: θυμάμαι. Katerina, ikisini de baştan sona söyler misin? Yavaşça.",
+   "who": "ada"
+  },
+  {
+   "t": 485.67,
+   "lang": "el",
+   "say": "έρχομαι, έρχεσαι, έρχεται, ερχόμαστε, έρχεστε, έρχονται",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 490.93,
+   "lang": "el",
+   "say": "θυμάμαι, θυμάσαι, θυμάται, θυμόμαστε, θυμάστε, θυμούνται",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 503.0,
+   "lang": "tr",
+   "say": "Peki gelecekte? Sofia cuma günü gelecek. Θα έρχομαι mı diyor?",
+   "who": "mert"
+  },
+  {
+   "t": 508.11,
+   "lang": "tr",
+   "say": "Cuma günü bir kere gelecek. O zaman bir kerelik kök, ve o kökün sonunda bu ses yok: θα έρθω. Uyumak da öyle: θα κοιμηθώ.",
+   "who": "ada"
+  },
+  {
+   "t": 517.89,
+   "lang": "el",
+   "say": "Μερτ, τι θα κάνεις το Σαββατοκύριακο;",
+   "who": "ada"
+  },
+  {
+   "t": 521.2,
+   "lang": "el",
+   "say": "Θα κοιμηθώ!",
+   "who": "mert"
+  },
+  {
+   "t": 522.52,
+   "lang": "tr",
+   "say": "Tahmin etmiştim. Uyuyacağım. Bu fiilde vurgu en sonda: θα κοιμηθώ, θα κοιμηθείς.",
+   "who": "ada"
+  },
+  {
+   "t": 532.01,
+   "lang": "tr",
+   "say": "Şimdi sıra sende. Sofia sana geliyor, ev sahibi sensin. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert, en son Katerina. Birincisi: benim evimde kalacaksın.",
+   "who": "ada"
+  },
+  {
+   "t": 549.59,
+   "lang": "el",
+   "say": "Θα μείνεις στο σπίτι μου!",
+   "who": "mert"
+  },
+  {
+   "t": 551.05,
+   "lang": "el",
+   "say": "Θα μείνεις στο σπίτι μου!",
+   "who": "katerina"
+  },
+  {
+   "t": 555.47,
+   "lang": "tr",
+   "say": "Meydandasın, arkadaşını göremiyorsun. Seni görmüyorum, de.",
+   "who": "ada"
+  },
+  {
+   "t": 565.09,
+   "lang": "el",
+   "say": "Δε σου βλέπω!",
+   "who": "mert"
+  },
+  {
+   "t": 566.62,
+   "lang": "tr",
+   "say": "Mert! Görmek neyi ister?",
+   "who": "ada"
+  },
+  {
+   "t": 569.48,
+   "lang": "tr",
+   "say": "Seni. O zaman σε.",
+   "who": "mert"
+  },
+  {
+   "t": 572.3,
+   "lang": "el",
+   "say": "Δε σε βλέπω!",
+   "who": "katerina"
+  },
+  {
+   "t": 575.68,
+   "lang": "tr",
+   "say": "Arkadaşın gözlük takıyor, çok güzel. Gözlüğün sana yakışıyor, de.",
+   "who": "ada"
+  },
+  {
+   "t": 586.05,
+   "lang": "el",
+   "say": "Σου πάνε τα γυαλιά!",
+   "who": "mert"
+  },
+  {
+   "t": 587.82,
+   "lang": "tr",
+   "say": "Çok iyi. Gözlük Yunancada çoğul, o yüzden πάνε.",
+   "who": "ada"
+  },
+  {
+   "t": 592.49,
+   "lang": "el",
+   "say": "Σου πάνε τα γυαλιά!",
+   "who": "katerina"
+  },
+  {
+   "t": 596.81,
+   "lang": "tr",
+   "say": "Son olarak: yarın altıda kalkman lazım. Bunu söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 606.86,
+   "lang": "el",
+   "say": "Αύριο πρέπει να ξυπνήσω στις έξι.",
+   "who": "mert"
+  },
+  {
+   "t": 609.48,
+   "lang": "el",
+   "say": "Αύριο πρέπει να ξυπνήσω στις έξι.",
+   "who": "katerina"
+  },
+  {
+   "t": 617.63,
+   "lang": "tr",
+   "say": "Mert, şimdi hızlı ol. Düşünmeden Sofia'ya söyle: gösteriye geç kalma.",
+   "who": "ada"
+  },
+  {
+   "t": 623.82,
+   "lang": "el",
+   "say": "Να δεν αργήσεις!",
+   "who": "mert"
+  },
+  {
+   "t": 625.71,
+   "lang": "tr",
+   "say": "Neredeyse. Ama να'nın arkasından δεν gelmez.",
+   "who": "ada"
+  },
+  {
+   "t": 632.95,
+   "lang": "tr",
+   "say": "Türkçe konuşanların en sık hatası bu, çünkü Türkçede olumsuzluk fiilin içinde. Yunancada iki olumsuzluk kelimesi var. Δεν düz cümlede: δε σε βλέπω. Μην ise να'nın arkasında, bir de rica ve uyarıda. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 652.09,
+   "lang": "el",
+   "say": "Να μην αργήσεις.",
+   "who": "katerina"
+  },
+  {
+   "t": 653.49,
+   "lang": "el",
+   "say": "Μην αργήσεις!",
+   "who": "katerina"
+  },
+  {
+   "t": 657.17,
+   "lang": "tr",
+   "say": "Tembellik işte.",
+   "who": "mert"
+  },
+  {
+   "t": 659.98,
+   "lang": "tr",
+   "say": "Küçük bir oyun. Ben tekil söyleyeceğim, sen çoğul yap, sonra Mert. Birincisi: η κοντή φούστα.",
+   "who": "ada"
+  },
+  {
+   "t": 670.93,
+   "lang": "el",
+   "say": "οι κοντές φούστες",
+   "who": "mert"
+  },
+  {
+   "t": 673.0,
+   "lang": "tr",
+   "say": "Doğru, dişil çoğulda es. İkincisi: το μακρύ φόρεμα.",
+   "who": "ada"
+  },
+  {
+   "t": 681.8,
+   "lang": "el",
+   "say": "τα μακριά φορέματα",
+   "who": "mert"
+  },
+  {
+   "t": 683.71,
+   "lang": "tr",
+   "say": "Harika. Üçüncüsü: το ροζ φόρεμα.",
+   "who": "ada"
+  },
+  {
+   "t": 691.27,
+   "lang": "tr",
+   "say": "Pembe… o da a ile bitiyor mu?",
+   "who": "mert"
+  },
+  {
+   "t": 693.6,
+   "lang": "tr",
+   "say": "Tuzak! Pembe hiç değişmez. Katerina, hepsi bir cümlede:",
+   "who": "ada"
+  },
+  {
+   "t": 700.15,
+   "lang": "el",
+   "say": "Τα ροζ φορέματα είναι μακριά, αλλά οι φούστες είναι κοντές.",
+   "who": "katerina"
+  },
+  {
+   "t": 710.92,
+   "lang": "tr",
+   "say": "Şimdi telefon konuşması bir kez daha, normal hızda. Bu sefer her kelimeyi anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "t": 717.73,
+   "lang": "el",
+   "say": "Γεια σου, Αϊσέ! Θα έρθω την Παρασκευή. Πού θα μείνω;",
+   "who": "sofia"
+  },
+  {
+   "t": 722.1,
+   "lang": "el",
+   "say": "Θα μείνεις στο σπίτι μου! Το διαμέρισμα είναι στον τρίτο όροφο και υπάρχει ασανσέρ.",
+   "who": "ayse"
+  },
+  {
+   "t": 728.38,
+   "lang": "el",
+   "say": "Τι θα κάνουμε το Σαββατοκύριακο;",
+   "who": "sofia"
+  },
+  {
+   "t": 730.37,
+   "lang": "el",
+   "say": "Το Σάββατο θα κάνουμε ψώνια στην Ερμού. Το βράδυ θέλεις να δούμε μια παράσταση;",
+   "who": "ayse"
+  },
+  {
+   "t": 735.98,
+   "lang": "el",
+   "say": "Ναι! Τι ρούχα να φέρω; Κάνει ζέστη;",
+   "who": "sofia"
+  },
+  {
+   "t": 738.67,
+   "lang": "el",
+   "say": "Το πρωί κάνει ζέστη, αλλά το βράδυ κάνει κρύο. Να φέρεις ένα καπέλο και ένα μακρύ παντελόνι. Μην ξεχάσεις τα γυαλιά!",
+   "who": "ayse"
+  },
+  {
+   "t": 747.8,
+   "lang": "tr",
+   "say": "Hepsini anladım.",
+   "who": "mert"
+  },
+  {
+   "t": 750.84,
+   "lang": "tr",
+   "say": "Kelime köşesi. Bugünün sahnelerinde tanıdık kelimeler vardı. Mesela asansör: ασανσέρ.",
+   "who": "ada"
+  },
+  {
+   "t": 759.16,
+   "lang": "tr",
+   "say": "Bu bizim kelime! İkisi de Fransızcadan mı?",
+   "who": "mert"
+  },
+  {
+   "t": 761.98,
+   "lang": "tr",
+   "say": "Evet, iki dil de Fransızcadan almış.",
+   "who": "ada"
+  },
+  {
+   "t": 765.15,
+   "lang": "tr",
+   "say": "Peki gözlük? Τα γυαλιά.",
+   "who": "mert"
+  },
+  {
+   "t": 767.24,
+   "lang": "tr",
+   "say": "Γυαλί cam demek. Gözlükte iki cam var, o yüzden hep çoğul: τα γυαλιά. Türkçe gözden yola çıkmış, Yunanca camdan.",
+   "who": "ada"
+  },
+  {
+   "t": 779.55,
+   "lang": "tr",
+   "say": "Gelecek bölümde Ayşe tatilden dönüyor. Paros adasına gitmiş. Sokakta arkadaşı Eleni'yle karşılaşıyor ve neler yaptığını anlatıyor.",
+   "who": "ada"
+  },
+  {
+   "t": 788.58,
+   "lang": "tr",
+   "say": "Yani geçmiş zaman. Gittim, yedim, yüzdüm.",
+   "who": "mert"
+  },
+  {
+   "t": 792.25,
+   "lang": "tr",
+   "say": "Evet. Ve güzel haber: geçmiş zaman bugünkü bir kerelik kökten kurulur. Θα γράψω, yazacağım. Έγραψα, yazdım. Aynı kök.",
+   "who": "ada"
+  },
+  {
+   "t": 803.32,
+   "lang": "tr",
+   "say": "Bu arada bölümü uygulamada oku, altı kısa tablo hepsini bir arada gösteriyor. Sonra alıştırmaları yap. Şimdi son söz Katerina'nın: Sofia'nın Atina'daki hafta sonu, sadece Yunanca. Sadece dinle. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "t": 817.96,
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "t": 820.61,
+   "lang": "el",
+   "say": "Την Πέμπτη το βράδυ η Σοφία μιλάει με την Αϊσέ στο τηλέφωνο.",
+   "who": "katerina"
+  },
+  {
+   "t": 825.05,
+   "lang": "el",
+   "say": "Η Σοφία θα έρθει στην Αθήνα την Παρασκευή.",
+   "who": "katerina"
+  },
+  {
+   "t": 827.91,
+   "lang": "el",
+   "say": "Θα μείνει στο σπίτι της Αϊσέ.",
+   "who": "katerina"
+  },
+  {
+   "t": 830.21,
+   "lang": "el",
+   "say": "Το Σάββατο θα κάνουν ψώνια στην Ερμού, και το βράδυ θα δουν μια παράσταση.",
+   "who": "katerina"
+  },
+  {
+   "t": 834.83,
+   "lang": "el",
+   "say": "Η Αϊσέ λέει: «Να φέρεις ένα καπέλο και ένα μακρύ παντελόνι. Μην ξεχάσεις τα γυαλιά!»",
+   "who": "katerina"
+  },
+  {
+   "t": 841.95,
+   "lang": "el",
+   "say": "Την Παρασκευή το μεσημέρι η Σοφία είναι στην πλατεία, αλλά δε βλέπει την Αϊσέ.",
+   "who": "katerina"
+  },
+  {
+   "t": 847.62,
+   "lang": "el",
+   "say": "Στο αεροπλάνο η Σοφία κουράζεται πολύ, και τώρα χρειάζεται έναν καφέ.",
+   "who": "katerina"
+  },
+  {
+   "t": 852.16,
+   "lang": "el",
+   "say": "Στο σπίτι, το δωμάτιο της Σοφίας είναι δίπλα στο σαλόνι.",
+   "who": "katerina"
+  },
+  {
+   "t": 856.42,
+   "lang": "el",
+   "say": "Η Αϊσέ κοιμάται δίπλα στην κουζίνα.",
+   "who": "katerina"
+  },
+  {
+   "t": 859.05,
+   "lang": "el",
+   "say": "Σε ένα μαγαζί η Σοφία βλέπει τα ροζ φορέματα. Της αρέσουν πολύ.",
+   "who": "katerina"
+  },
+  {
+   "t": 864.25,
+   "lang": "el",
+   "say": "Το φόρεμα της κάνει, αλλά είναι λίγο μακρύ.",
+   "who": "katerina"
+  },
+  {
+   "t": 867.15,
+   "lang": "el",
+   "say": "Η Αϊσέ λέει: «Σου πάει πολύ!» Και η Σοφία το παίρνει.",
+   "who": "katerina"
+  },
+  {
+   "t": 872.23,
+   "lang": "el",
+   "say": "Μετά θέλουν δύο εισιτήρια για την παράσταση. Είναι τριάντα ευρώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 876.99,
+   "lang": "el",
+   "say": "Η Αϊσέ θέλει να πληρώσει, αλλά η Σοφία λέει: «Όχι, πληρώνω εγώ!»",
+   "who": "katerina"
+  },
+  {
+   "t": 881.65,
+   "lang": "el",
+   "say": "Η παράσταση αρχίζει στις εννιά. Δεν πρέπει να αργήσουν!",
+   "who": "katerina"
+  },
+  {
+   "t": 886.2,
+   "lang": "el",
+   "say": "Και δεν αργούν. Στις εννιά είναι στο θέατρο.",
+   "who": "katerina"
+  },
+  {
+   "t": 889.71,
+   "lang": "el",
+   "say": "Η Σοφία φοράει το ροζ φόρεμα. Της πάει πολύ!",
+   "who": "katerina"
+  },
+  {
+   "t": 894.59,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ],
+ "cast": {
+  "sofia": {
+   "name": "Σοφία",
+   "voice": "Vindemiatrix"
+  },
+  "ayse": {
+   "name": "Αϊσέ",
+   "voice": "Achernar"
+  },
+  "ada": {
+   "name": "Ada",
+   "voice": "Sulafat"
+  },
+  "mert": {
+   "name": "Mert",
+   "voice": "Umbriel"
+  },
+  "katerina": {
+   "name": "Κατερίνα",
+   "voice": "Gacrux"
+  },
+  "politria": {
+   "name": "Πωλήτρια",
+   "voice": "Pulcherrima"
+  },
+  "tamias": {
+   "name": "Υπάλληλος",
+   "voice": "Leda"
+  }
+ },
+ "sounds": true
+}

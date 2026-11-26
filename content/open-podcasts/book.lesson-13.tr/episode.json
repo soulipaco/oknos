@@ -1,0 +1,1053 @@
+{
+ "id": "book.lesson-13.tr",
+ "kind": "chapter",
+ "lang": "tr",
+ "title": {
+  "tr": "Bana oldu mu, yakıştı mı? Ermou'da alışveriş",
+  "en": "Does it fit, does it suit? Shopping on Ermou Street"
+ },
+ "curriculum": "oknos-book",
+ "stage": "lesson-13",
+ "version": 3,
+ "written": "2026-11-26",
+ "date": null,
+ "rendered": "2026-11-26T13:26:53",
+ "seconds": 861.8,
+ "script": "b12f15702b18",
+ "parts": [
+  {
+   "t": 3.0,
+   "title": "Açılış"
+  },
+  {
+   "t": 38.77,
+   "title": "Hoş geldin"
+  },
+  {
+   "t": 88.06,
+   "title": "Ermou'da bir mağaza"
+  },
+  {
+   "t": 167.06,
+   "title": "Telefonda Marina"
+  },
+  {
+   "t": 219.03,
+   "title": "Kim kimin hoşuna gidiyor?"
+  },
+  {
+   "t": 312.57,
+   "title": "Oldu mu, yakıştı mı?"
+  },
+  {
+   "t": 379.23,
+   "title": "Gri hiç değişmez"
+  },
+  {
+   "t": 443.23,
+   "title": "Yaptım, yapacağım, yoruluyorum"
+  },
+  {
+   "t": 529.13,
+   "title": "Sıra sende"
+  },
+  {
+   "t": 614.54,
+   "title": "Mert'in hatası"
+  },
+  {
+   "t": 650.27,
+   "title": "Oyun: κάνει mi, πάει mı?"
+  },
+  {
+   "t": 701.64,
+   "title": "Sahne yeniden"
+  },
+  {
+   "t": 734.44,
+   "title": "Köşe: Hermes'in caddesi"
+  },
+  {
+   "t": 760.65,
+   "title": "Gelecek bölüm"
+  },
+  {
+   "t": 787.43,
+   "title": "Katerina anlatıyor"
+  }
+ ],
+ "lines": [
+  {
+   "t": 3.0,
+   "lang": "el",
+   "say": "Δοκιμάζω και το μπλε… Μου πάει;",
+   "who": "ayse"
+  },
+  {
+   "t": 5.64,
+   "lang": "el",
+   "say": "Σας πάει πολύ!",
+   "who": "politria"
+  },
+  {
+   "t": 7.01,
+   "lang": "el",
+   "say": "Ωραία. Θα ήθελα και αυτά τα καφέ παπούτσια, το τριάντα εννιά.",
+   "who": "ayse"
+  },
+  {
+   "t": 11.5,
+   "lang": "el",
+   "say": "Ορίστε. Σας κάνουν;",
+   "who": "politria"
+  },
+  {
+   "t": 13.78,
+   "lang": "el",
+   "say": "Δε μου κάνουν, είναι μεγάλα. Το τριάντα οχτώ, παρακαλώ.",
+   "who": "ayse"
+  },
+  {
+   "t": 18.32,
+   "lang": "el",
+   "say": "Ορίστε.",
+   "who": "politria"
+  },
+  {
+   "t": 19.37,
+   "lang": "el",
+   "say": "Τώρα μου κάνουν και μου πάνε!",
+   "who": "ayse"
+  },
+  {
+   "t": 21.58,
+   "lang": "tr",
+   "say": "Ayşe'nin son cümlesinde iki fiil var, ikisi de bana diye başlıyor. İkisi de çoğul. Oysa Ayşe tek kişi.",
+   "who": "ada"
+  },
+  {
+   "t": 29.55,
+   "lang": "tr",
+   "say": "Μου κάνουν, μου πάνε. Hangisi bana oldu, hangisi yakıştı? Hiç bilmiyorum.",
+   "who": "mert"
+  },
+  {
+   "t": 35.19,
+   "lang": "tr",
+   "say": "Bugün tam bunu çözeceğiz.",
+   "who": "ada"
+  },
+  {
+   "t": 38.77,
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, on üçüncü bölüm.",
+   "who": "ada"
+  },
+  {
+   "t": 44.43,
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "t": 49.72,
+   "lang": "tr",
+   "say": "Artık A iki seviyesindeyiz, o yüzden aramızda biraz daha Yunanca konuşacağız.",
+   "who": "ada"
+  },
+  {
+   "t": 55.47,
+   "lang": "el",
+   "say": "Γεια σου, Μερτ! Τι έκανες το σαββατοκύριακο;",
+   "who": "ada"
+  },
+  {
+   "t": 59.24,
+   "lang": "el",
+   "say": "Έκανα ψώνια!",
+   "who": "mert"
+  },
+  {
+   "t": 60.83,
+   "lang": "tr",
+   "say": "Bugünün fiilini daha şimdiden kullandın: έκανα, yaptım. Bugün biz de alışverişteyiz, Atina'nın ünlü caddesi Ermou'da. Bir şeyin hoşuna gidip gitmediğini, sana yakışıp yakışmadığını söyleyeceksin.",
+   "who": "ada"
+  },
+  {
+   "t": 74.27,
+   "lang": "tr",
+   "say": "Bir de bedenime olup olmadığını. Benim için en önemlisi o.",
+   "who": "mert"
+  },
+  {
+   "t": 77.66,
+   "lang": "tr",
+   "say": "Katerina da burada. Örnek cümleleri o söyleyecek, sen de arkasından söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 83.44,
+   "lang": "el",
+   "say": "Γεια σας! Σήμερα πάμε για ψώνια!",
+   "who": "katerina"
+  },
+  {
+   "t": 88.06,
+   "lang": "tr",
+   "say": "İlk sahne. Cumartesi, Ermou'da bir giyim mağazası. Ayşe pantolon arıyor ve iki renk deniyor. Kulak ver: sonunda hangi rengi alıyor?",
+   "who": "ada"
+  },
+  {
+   "t": 99.05,
+   "lang": "el",
+   "say": "Καλημέρα σας! Ορίστε;",
+   "who": "politria"
+  },
+  {
+   "t": 101.42,
+   "lang": "el",
+   "say": "Καλημέρα. Θα ήθελα ένα παντελόνι. Μου αρέσουν αυτά τα γκρι παντελόνια.",
+   "who": "ayse"
+  },
+  {
+   "t": 106.37,
+   "lang": "el",
+   "say": "Τι νούμερο φοράτε;",
+   "who": "politria"
+  },
+  {
+   "t": 107.95,
+   "lang": "el",
+   "say": "Φοράω το σαράντα.",
+   "who": "ayse"
+  },
+  {
+   "t": 109.57,
+   "lang": "el",
+   "say": "Ορίστε. Τα φαρδιά παντελόνια είναι ωραία.",
+   "who": "politria"
+  },
+  {
+   "t": 112.87,
+   "lang": "el",
+   "say": "Μου κάνει, αλλά το γκρι δε μου πάει. Και σε άλλο χρώμα;",
+   "who": "ayse"
+  },
+  {
+   "t": 116.65,
+   "lang": "el",
+   "say": "Το έχουμε και σε μπλε. Ορίστε.",
+   "who": "politria"
+  },
+  {
+   "t": 118.98,
+   "lang": "el",
+   "say": "Δοκιμάζω και το μπλε… Μου πάει;",
+   "who": "ayse"
+  },
+  {
+   "t": 121.62,
+   "lang": "el",
+   "say": "Σας πάει πολύ!",
+   "who": "politria"
+  },
+  {
+   "t": 122.99,
+   "lang": "el",
+   "say": "Ωραία. Θα ήθελα και αυτά τα καφέ παπούτσια, το τριάντα εννιά.",
+   "who": "ayse"
+  },
+  {
+   "t": 127.48,
+   "lang": "el",
+   "say": "Ορίστε. Σας κάνουν;",
+   "who": "politria"
+  },
+  {
+   "t": 129.76,
+   "lang": "el",
+   "say": "Δε μου κάνουν, είναι μεγάλα. Το τριάντα οχτώ, παρακαλώ.",
+   "who": "ayse"
+  },
+  {
+   "t": 134.3,
+   "lang": "el",
+   "say": "Ορίστε.",
+   "who": "politria"
+  },
+  {
+   "t": 135.35,
+   "lang": "el",
+   "say": "Τώρα μου κάνουν και μου πάνε! Πληρώνω με κάρτα.",
+   "who": "ayse"
+  },
+  {
+   "t": 139.32,
+   "lang": "tr",
+   "say": "Hangi renk? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 145.9,
+   "lang": "tr",
+   "say": "Mavi! Το μπλε. Gri ona yakışmadı.",
+   "who": "mert"
+  },
+  {
+   "t": 149.31,
+   "lang": "tr",
+   "say": "Evet. Kırk numara Ayşe'ye oldu, ama gri yakışmadı; mavi ise çok yakıştı. Bir de dikkat: bedene numara diyorlar. Τι νούμερο φοράτε, kaç numara giyiyorsunuz. Türkçede numara daha çok ayakkabı için.",
+   "who": "ada"
+  },
+  {
+   "t": 167.06,
+   "lang": "tr",
+   "say": "İkinci sahne. Pazartesi akşamı Ayşe, yeni bir işe başlayan arkadaşı Marina'yı arıyor. Bu sefer biraz yavaş. Marina her gün otobüste ne kadar oturuyor?",
+   "who": "ada"
+  },
+  {
+   "t": 178.78,
+   "lang": "el",
+   "say": "Γεια σου, Μαρίνα! Τι έκανες το σαββατοκύριακο;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 182.92,
+   "lang": "el",
+   "say": "Ήμουν στο σπίτι. Η καινούργια μου δουλειά είναι μακριά: κάθομαι μία ώρα στο λεωφορείο, πρωί και βράδυ. Κουράζομαι πολύ! Εσύ;",
+   "who": "marina",
+   "speed": 0.85
+  },
+  {
+   "t": 192.79,
+   "lang": "el",
+   "say": "Εγώ έκανα ψώνια. Τώρα χρειάζομαι ένα φόρεμα για το πάρτι.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 198.88,
+   "lang": "el",
+   "say": "Στην Ερμού έχει ωραία φορέματα! Τι θα κάνεις αύριο;",
+   "who": "marina",
+   "speed": 0.85
+  },
+  {
+   "t": 203.52,
+   "lang": "el",
+   "say": "Θα κάνω ψώνια!",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 205.52,
+   "lang": "tr",
+   "say": "Ne kadar? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 211.38,
+   "lang": "tr",
+   "say": "Sabah bir saat, akşam bir saat: μία ώρα, πρωί και βράδυ. Yeni işi uzakta.",
+   "who": "mert"
+  },
+  {
+   "t": 219.03,
+   "lang": "tr",
+   "say": "Ada, açılıştaki soruya dönelim. Ayşe tek kişi. Neden μου κάνουν, μου πάνε? Ayakkabıları çok sevdiği için mi çoğul?",
+   "who": "mert"
+  },
+  {
+   "t": 227.9,
+   "lang": "tr",
+   "say": "Güzel tahmin, ama hayır. Önce hoşa gitmeye bakalım, üçünün kuralı aynı. Türkçede nasıl diyorsun? Ayakkabılar hoşuma gidiyor. Bu cümlede özne kim?",
+   "who": "ada"
+  },
+  {
+   "t": 238.62,
+   "lang": "tr",
+   "say": "Ayakkabılar. Ben değilim. Ayakkabılar bana hoş geliyor.",
+   "who": "mert"
+  },
+  {
+   "t": 242.94,
+   "lang": "tr",
+   "say": "İşte bu. Yunanca da böyle kurulur: fiil şeye uyar, sana değil. Tek şey için αρέσει, birden çok şey için αρέσουν. Bana kısmını da μου söyler. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 257.3,
+   "lang": "el",
+   "say": "Μου αρέσει το φόρεμα.",
+   "who": "katerina"
+  },
+  {
+   "t": 259.1,
+   "lang": "el",
+   "say": "Μου αρέσουν τα παπούτσια.",
+   "who": "katerina"
+  },
+  {
+   "t": 263.26,
+   "lang": "tr",
+   "say": "Kişiyi değiştirmek için μου yerine başka küçük kelimeler gelir. Dördüncü dersten tanıyorsun, το σπίτι μου derken. Katerina, sırayla:",
+   "who": "ada"
+  },
+  {
+   "t": 274.83,
+   "lang": "el",
+   "say": "μου, σου, του, της, μας, σας, τους",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 281.59,
+   "lang": "tr",
+   "say": "Του ve της. İkisi de ona mı?",
+   "who": "mert"
+  },
+  {
+   "t": 284.02,
+   "lang": "tr",
+   "say": "Του erkek için, της kadın için. Pembe çoraplar onun hoşuna gidiyor, bir kadından söz ediyorsak:",
+   "who": "ada"
+  },
+  {
+   "t": 292.61,
+   "lang": "el",
+   "say": "Της αρέσουν οι ροζ κάλτσες.",
+   "who": "katerina"
+  },
+  {
+   "t": 297.61,
+   "lang": "el",
+   "say": "Μερτ, σου αρέσουν οι ροζ κάλτσες;",
+   "who": "ada"
+  },
+  {
+   "t": 300.11,
+   "lang": "el",
+   "say": "Όχι! Δε μου αρέσουν.",
+   "who": "mert"
+  },
+  {
+   "t": 302.26,
+   "lang": "tr",
+   "say": "Olumsuzda başa değil gelir. Δεν'in n sesi μ'den önce genelde düşer: δε μου.",
+   "who": "ada"
+  },
+  {
+   "t": 312.57,
+   "lang": "tr",
+   "say": "Peki κάνει ile πάει? Ayşe ikisini de kullandı.",
+   "who": "mert"
+  },
+  {
+   "t": 317.02,
+   "lang": "tr",
+   "say": "Önce sen tahmin et. Otuz dokuz numara ayakkabılar büyük geldi. Ayşe ne dedi, hatırlıyor musun?",
+   "who": "ada"
+  },
+  {
+   "t": 326.51,
+   "lang": "el",
+   "say": "Δε μου κάνουν, είναι μεγάλα.",
+   "who": "mert"
+  },
+  {
+   "t": 328.58,
+   "lang": "tr",
+   "say": "Çok iyi. Κάνει bedenle ilgili: bana oluyor. Πάει görünüşle ilgili: bana yakışıyor. Gri pantolon için Ayşe μου κάνει dedi, ama το γκρι δε μου πάει. Oldu, ama yakışmadı.",
+   "who": "ada"
+  },
+  {
+   "t": 346.13,
+   "lang": "tr",
+   "say": "Yani beden başka, görünüş başka.",
+   "who": "mert"
+  },
+  {
+   "t": 348.61,
+   "lang": "tr",
+   "say": "Aynen. Ve αρέσει gibi bunlar da şeye uyar. Ayakkabılar çoğul:",
+   "who": "ada"
+  },
+  {
+   "t": 354.82,
+   "lang": "el",
+   "say": "Μου κάνουν και μου πάνε.",
+   "who": "katerina"
+  },
+  {
+   "t": 359.34,
+   "lang": "tr",
+   "say": "Satıcı da Ayşe'ye σας πάει dedi. Σας, yani size. Resmî.",
+   "who": "mert"
+  },
+  {
+   "t": 365.91,
+   "lang": "tr",
+   "say": "Evet, müşteriye siz. Bir arkadaşına ise σου dersin:",
+   "who": "ada"
+  },
+  {
+   "t": 372.28,
+   "lang": "el",
+   "say": "Σου πάει πολύ αυτό το φόρεμα!",
+   "who": "katerina"
+  },
+  {
+   "t": 379.23,
+   "lang": "tr",
+   "say": "Bölümde bir cümle var: τα παντελόνια είναι στενά, ama οι φούστες είναι κοντές. Στενά ve κοντές. Sonlar farklı.",
+   "who": "mert"
+  },
+  {
+   "t": 387.94,
+   "lang": "tr",
+   "say": "İyi göz! Sıfat ismine uyar, cinsiyle ve sayısıyla. Çoğulda üç son yeter: erilde i, dişilde es, nötrde a. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 399.69,
+   "lang": "el",
+   "say": "οι καλοί πελάτες, οι καλές κυρίες, τα καλά παπούτσια",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 411.1,
+   "lang": "tr",
+   "say": "Peki gri neden değişmedi? Τα γκρι παντελόνια.",
+   "who": "mert"
+  },
+  {
+   "t": 414.55,
+   "lang": "tr",
+   "say": "Çünkü bazı renkler hiç değişmez: gri, kahverengi, mavi, pembe, mor. Başka dillerden gelmişler, Yunanca sonları yok:",
+   "who": "ada"
+  },
+  {
+   "t": 424.6,
+   "lang": "el",
+   "say": "Θέλω ένα ροζ πουκάμισο και δύο μωβ πουκάμισα.",
+   "who": "katerina"
+  },
+  {
+   "t": 433.45,
+   "lang": "tr",
+   "say": "Bir dakika. Καφέ kahverengi mi? Kahve gibi?",
+   "who": "mert"
+  },
+  {
+   "t": 437.08,
+   "lang": "tr",
+   "say": "Evet, kahve rengi. Türkçedeki kahverengiyle aynı mantık.",
+   "who": "ada"
+  },
+  {
+   "t": 443.23,
+   "lang": "tr",
+   "say": "Ayşe Marina'ya τι έκανες diye sordu: ne yaptın. Κάνω'nun geçmişi. Baştaki e yalnızca vurguyu taşır, biz ve siz derken düşer:",
+   "who": "ada"
+  },
+  {
+   "t": 455.88,
+   "lang": "el",
+   "say": "έκανα, έκανες, έκανε, κάναμε, κάνατε, έκαναν",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 466.74,
+   "lang": "tr",
+   "say": "Gelecek de kolay: θα κάνεις. Şimdiki zamanla aynı.",
+   "who": "mert"
+  },
+  {
+   "t": 470.59,
+   "lang": "tr",
+   "say": "Bu fiilde aynı, her fiilde değil. Hadi, Yunanca:",
+   "who": "ada"
+  },
+  {
+   "t": 475.67,
+   "lang": "el",
+   "say": "Μερτ, τι θα κάνεις αύριο;",
+   "who": "ada"
+  },
+  {
+   "t": 477.81,
+   "lang": "el",
+   "say": "Αύριο θα κάνω ψώνια στην Ερμού!",
+   "who": "mert"
+  },
+  {
+   "t": 480.3,
+   "lang": "tr",
+   "say": "Marina κουράζομαι dedi: yoruluyorum. Sonu bambaşka.",
+   "who": "mert"
+  },
+  {
+   "t": 484.37,
+   "lang": "tr",
+   "say": "Bazı fiiller böyle biter. Yormak ve yorulmak gibi düşün: o l eki işi insanın kendine döndürür. Ama her böyle fiilde bu anlam yok. Έρχομαι sadece geliyorum demek. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 500.15,
+   "lang": "el",
+   "say": "έρχομαι, έρχεσαι, έρχεται, ερχόμαστε, έρχεστε, έρχονται",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 512.17,
+   "lang": "tr",
+   "say": "Biz derken vurgu bir hece kaydı: ερχόμαστε. İhtiyacım var da böyle biter. Türkçede elbiseye deriz, Yunancada o e eki yok:",
+   "who": "ada"
+  },
+  {
+   "t": 522.65,
+   "lang": "el",
+   "say": "Χρειάζομαι ένα φόρεμα.",
+   "who": "katerina"
+  },
+  {
+   "t": 529.13,
+   "lang": "tr",
+   "say": "Sıra sende. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle, sonra Mert, en son Katerina. Birincisi: satıcısın. Müşteriye kaç numara giydiğini sor.",
+   "who": "ada"
+  },
+  {
+   "t": 544.66,
+   "lang": "el",
+   "say": "Τι νούμερο φοράτε;",
+   "who": "mert"
+  },
+  {
+   "t": 546.0,
+   "lang": "el",
+   "say": "Τι νούμερο φοράτε;",
+   "who": "katerina"
+  },
+  {
+   "t": 550.92,
+   "lang": "tr",
+   "say": "Pantolon sana olmuyor, çok dar. Bunu söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 560.07,
+   "lang": "el",
+   "say": "Δε μου πάει. Είναι πολύ στενό.",
+   "who": "mert"
+  },
+  {
+   "t": 562.77,
+   "lang": "tr",
+   "say": "Dar mı, çirkin mi, Mert? Darsa sorun beden.",
+   "who": "ada"
+  },
+  {
+   "t": 566.53,
+   "lang": "tr",
+   "say": "Ah, doğru. Beden, o zaman κάνει.",
+   "who": "mert"
+  },
+  {
+   "t": 570.58,
+   "lang": "el",
+   "say": "Δε μου κάνει. Είναι πολύ στενό.",
+   "who": "katerina"
+  },
+  {
+   "t": 579.14,
+   "lang": "tr",
+   "say": "Arkadaşına, elbisenin ona çok yakıştığını söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 586.53,
+   "lang": "el",
+   "say": "Σου πάει πολύ!",
+   "who": "mert"
+  },
+  {
+   "t": 587.77,
+   "lang": "el",
+   "say": "Σου πάει πολύ!",
+   "who": "katerina"
+  },
+  {
+   "t": 591.78,
+   "lang": "tr",
+   "say": "Son olarak: otobüste bir saat oturduğunu ve çok yorulduğunu söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 601.3,
+   "lang": "el",
+   "say": "Κάθομαι μία ώρα στο λεωφορείο και κουράζομαι πολύ!",
+   "who": "mert"
+  },
+  {
+   "t": 604.67,
+   "lang": "el",
+   "say": "Κάθομαι μία ώρα στο λεωφορείο και κουράζομαι πολύ!",
+   "who": "katerina"
+  },
+  {
+   "t": 614.54,
+   "lang": "tr",
+   "say": "Mert, şimdi hızlı ol. Düşünmeden: ayakkabıları seviyorum.",
+   "who": "ada"
+  },
+  {
+   "t": 619.94,
+   "lang": "el",
+   "say": "Αρέσω τα παπούτσια.",
+   "who": "mert"
+  },
+  {
+   "t": 621.93,
+   "lang": "tr",
+   "say": "Mert! Αρέσω, ben hoşa gidiyorum demek. Kendini mi beğendin?",
+   "who": "ada"
+  },
+  {
+   "t": 627.82,
+   "lang": "tr",
+   "say": "Dur, bir daha: μου αρέσει τα παπούτσια.",
+   "who": "mert"
+  },
+  {
+   "t": 630.42,
+   "lang": "tr",
+   "say": "Yarı yoldasın. Ayakkabılar çoğul.",
+   "who": "ada"
+  },
+  {
+   "t": 633.8,
+   "lang": "tr",
+   "say": "Tembellik işte. Αρέσουν.",
+   "who": "mert"
+  },
+  {
+   "t": 635.81,
+   "lang": "tr",
+   "say": "Türkçe konuşanların en sık hatası bu: sevmek gibi düşünmek. Yunanca hoşa gitmek gibi kurar. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 644.2,
+   "lang": "el",
+   "say": "Μου αρέσουν τα παπούτσια.",
+   "who": "katerina"
+  },
+  {
+   "t": 650.27,
+   "lang": "tr",
+   "say": "Küçük bir oyun. Bir durum anlatacağım, önce sen söyle, sonra Mert. Birincisi: ayakkabılar küçük, ayağını sıkıyor.",
+   "who": "ada"
+  },
+  {
+   "t": 662.0,
+   "lang": "el",
+   "say": "Δε μου κάνουν.",
+   "who": "mert"
+  },
+  {
+   "t": 663.58,
+   "lang": "tr",
+   "say": "Doğru. Beden, ve ayakkabılar çoğul. İkincisi: bir kadından söz ediyorsun. Kırmızı elbise ona çok yakışıyor.",
+   "who": "ada"
+  },
+  {
+   "t": 675.38,
+   "lang": "el",
+   "say": "Της πάει πολύ.",
+   "who": "mert"
+  },
+  {
+   "t": 676.93,
+   "lang": "tr",
+   "say": "Evet, kadın için της. Üçüncüsü: arkadaşın yeni gözlük almış, ona çok yakışmış.",
+   "who": "ada"
+  },
+  {
+   "t": 687.86,
+   "lang": "el",
+   "say": "Σου πάει!",
+   "who": "mert"
+  },
+  {
+   "t": 689.1,
+   "lang": "tr",
+   "say": "Tuzağa düştün. Gözlük Yunancada çoğul: τα γυαλιά.",
+   "who": "ada"
+  },
+  {
+   "t": 693.75,
+   "lang": "tr",
+   "say": "O zaman πάνε.",
+   "who": "mert"
+  },
+  {
+   "t": 695.56,
+   "lang": "el",
+   "say": "Σου πάνε τα γυαλιά!",
+   "who": "katerina"
+  },
+  {
+   "t": 701.64,
+   "lang": "tr",
+   "say": "Marina ile telefon bir kez daha, normal hızda.",
+   "who": "ada"
+  },
+  {
+   "t": 705.7,
+   "lang": "el",
+   "say": "Γεια σου, Μαρίνα! Τι έκανες το σαββατοκύριακο;",
+   "who": "ayse"
+  },
+  {
+   "t": 709.27,
+   "lang": "el",
+   "say": "Ήμουν στο σπίτι. Η καινούργια μου δουλειά είναι μακριά: κάθομαι μία ώρα στο λεωφορείο, πρωί και βράδυ. Κουράζομαι πολύ! Εσύ;",
+   "who": "marina"
+  },
+  {
+   "t": 717.72,
+   "lang": "el",
+   "say": "Εγώ έκανα ψώνια. Τώρα χρειάζομαι ένα φόρεμα για το πάρτι.",
+   "who": "ayse"
+  },
+  {
+   "t": 722.96,
+   "lang": "el",
+   "say": "Στην Ερμού έχει ωραία φορέματα! Τι θα κάνεις αύριο;",
+   "who": "marina"
+  },
+  {
+   "t": 726.95,
+   "lang": "el",
+   "say": "Θα κάνω ψώνια!",
+   "who": "ayse"
+  },
+  {
+   "t": 728.75,
+   "lang": "tr",
+   "say": "Hepsini anladım. Έκανα, θα κάνω, κουράζομαι.",
+   "who": "mert"
+  },
+  {
+   "t": 734.44,
+   "lang": "tr",
+   "say": "Köşemiz. Ερμού ne demek, biliyor musun? Hermes'in. Hermes, eski Yunanlıların yolcu ve ticaret tanrısı.",
+   "who": "ada"
+  },
+  {
+   "t": 743.55,
+   "lang": "tr",
+   "say": "Alışveriş caddesine ticaret tanrısının adı. Çok yerinde.",
+   "who": "mert"
+  },
+  {
+   "t": 747.86,
+   "lang": "tr",
+   "say": "Bir de παντελόνι. Pantolon! Bu Yunanca mı?",
+   "who": "mert"
+  },
+  {
+   "t": 752.11,
+   "lang": "tr",
+   "say": "Hayır, iki dil de Batı'dan almış. Kökünde eski İtalyan tiyatrosunun bir karakteri var: Pantalone.",
+   "who": "ada"
+  },
+  {
+   "t": 760.65,
+   "lang": "tr",
+   "say": "Gelecek bölümde Ayşe ev arıyor. Bir emlakçıyı arayacak: kaç oda var, kira ne kadar, yakında postane var mı?",
+   "who": "ada"
+  },
+  {
+   "t": 768.72,
+   "lang": "tr",
+   "say": "Yani var mı demeyi öğreneceğiz.",
+   "who": "mert"
+  },
+  {
+   "t": 771.18,
+   "lang": "tr",
+   "say": "Evet: υπάρχει. Bu arada bölümü uygulamada oku, alıştırmaları yap. Şimdi son söz Katerina'nın: bugünün hikâyesi, sadece Yunanca. Sadece dinle. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "t": 784.78,
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "t": 787.43,
+   "lang": "el",
+   "say": "Είναι Σάββατο και η Αϊσέ είναι στην Ερμού.",
+   "who": "katerina"
+  },
+  {
+   "t": 790.78,
+   "lang": "el",
+   "say": "Η Αϊσέ χρειάζεται ένα παντελόνι.",
+   "who": "katerina"
+  },
+  {
+   "t": 793.19,
+   "lang": "el",
+   "say": "Πάει σε ένα μαγαζί. Της αρέσουν τα γκρι παντελόνια.",
+   "who": "katerina"
+  },
+  {
+   "t": 797.67,
+   "lang": "el",
+   "say": "Η πωλήτρια ρωτάει: «Τι νούμερο φοράτε;»",
+   "who": "katerina"
+  },
+  {
+   "t": 801.04,
+   "lang": "el",
+   "say": "«Φοράω το σαράντα.»",
+   "who": "katerina"
+  },
+  {
+   "t": 802.83,
+   "lang": "el",
+   "say": "Το γκρι παντελόνι της κάνει, αλλά δεν της πάει.",
+   "who": "katerina"
+  },
+  {
+   "t": 806.14,
+   "lang": "el",
+   "say": "Η πωλήτρια το έχει και σε μπλε.",
+   "who": "katerina"
+  },
+  {
+   "t": 808.55,
+   "lang": "el",
+   "say": "Δοκιμάζει και το μπλε. Της πάει πολύ!",
+   "who": "katerina"
+  },
+  {
+   "t": 811.62,
+   "lang": "el",
+   "say": "Η Αϊσέ θέλει και τα καφέ παπούτσια, το τριάντα εννιά.",
+   "who": "katerina"
+  },
+  {
+   "t": 815.58,
+   "lang": "el",
+   "say": "Αλλά δεν της κάνουν. Είναι μεγάλα.",
+   "who": "katerina"
+  },
+  {
+   "t": 818.52,
+   "lang": "el",
+   "say": "Το τριάντα οχτώ της κάνει. Τώρα τα παπούτσια της πάνε πολύ!",
+   "who": "katerina"
+  },
+  {
+   "t": 823.77,
+   "lang": "el",
+   "say": "Πληρώνει με κάρτα.",
+   "who": "katerina"
+  },
+  {
+   "t": 825.13,
+   "lang": "el",
+   "say": "Τη Δευτέρα η Αϊσέ μιλάει στο τηλέφωνο με τη φίλη της, τη Μαρίνα.",
+   "who": "katerina"
+  },
+  {
+   "t": 829.95,
+   "lang": "el",
+   "say": "Η Μαρίνα έχει καινούργια δουλειά. Η δουλειά της είναι μακριά.",
+   "who": "katerina"
+  },
+  {
+   "t": 834.34,
+   "lang": "el",
+   "say": "Κάθεται μία ώρα στο λεωφορείο, πρωί και βράδυ.",
+   "who": "katerina"
+  },
+  {
+   "t": 837.43,
+   "lang": "el",
+   "say": "Η Μαρίνα κουράζεται πολύ.",
+   "who": "katerina"
+  },
+  {
+   "t": 839.47,
+   "lang": "el",
+   "say": "Η Αϊσέ δεν κουράζεται. Της αρέσουν τα ψώνια!",
+   "who": "katerina"
+  },
+  {
+   "t": 843.31,
+   "lang": "el",
+   "say": "Η Αϊσέ λέει: «Χρειάζομαι ένα φόρεμα για το πάρτι.»",
+   "who": "katerina"
+  },
+  {
+   "t": 847.18,
+   "lang": "el",
+   "say": "Και η Μαρίνα: «Στην Ερμού έχει ωραία φορέματα!»",
+   "who": "katerina"
+  },
+  {
+   "t": 850.47,
+   "lang": "el",
+   "say": "Αύριο η Αϊσέ θα κάνει ψώνια στην Ερμού.",
+   "who": "katerina"
+  },
+  {
+   "t": 853.0,
+   "lang": "el",
+   "say": "Θα της αρέσει ένα φόρεμα; Θα της κάνει; Θα της πάει;",
+   "who": "katerina"
+  },
+  {
+   "t": 857.52,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ],
+ "cast": {
+  "ayse": {
+   "name": "Αϊσέ",
+   "voice": "Achernar"
+  },
+  "politria": {
+   "name": "Πωλήτρια",
+   "voice": "Pulcherrima"
+  },
+  "ada": {
+   "name": "Ada",
+   "voice": "Sulafat"
+  },
+  "mert": {
+   "name": "Mert",
+   "voice": "Umbriel"
+  },
+  "katerina": {
+   "name": "Κατερίνα",
+   "voice": "Gacrux"
+  },
+  "marina": {
+   "name": "Μαρίνα",
+   "voice": "Despina"
+  }
+ },
+ "sounds": true
+}

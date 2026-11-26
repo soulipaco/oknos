@@ -1,0 +1,153 @@
+{
+ "about": "Podcast lessons of the Oknos book, shipped with the open content (docs/PODCASTS.md). Each is <id>/episode.mp3 with its script.json and episode.json; p is the service that voiced it.",
+ "licence": "CC-BY-SA-4.0",
+ "made_with": "Google Cloud Text-to-Speech, Chirp 3 HD: 24 episodes",
+ "mp3": "mono, 32 kb/s",
+ "updated": "2026-11-26",
+ "episodes": {
+  "book.b1-bridge.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 827.8,
+   "version": 3
+  },
+  "book.intro.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 972.1,
+   "version": 3
+  },
+  "book.lesson-01.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 918.0,
+   "version": 4
+  },
+  "book.lesson-02.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 905.7,
+   "version": 2
+  },
+  "book.lesson-03.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 878.4,
+   "version": 4
+  },
+  "book.lesson-04.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 889.0,
+   "version": 4
+  },
+  "book.lesson-05.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 860.4,
+   "version": 2
+  },
+  "book.lesson-06.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 883.1,
+   "version": 4
+  },
+  "book.lesson-07.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 942.9,
+   "version": 4
+  },
+  "book.lesson-08.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 874.6,
+   "version": 3
+  },
+  "book.lesson-09.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 921.0,
+   "version": 4
+  },
+  "book.lesson-10.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 894.0,
+   "version": 4
+  },
+  "book.lesson-11.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 847.2,
+   "version": 3
+  },
+  "book.lesson-12.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 882.3,
+   "version": 2
+  },
+  "book.lesson-13.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 861.8,
+   "version": 3
+  },
+  "book.lesson-14.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 821.2,
+   "version": 4
+  },
+  "book.lesson-15.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 914.2,
+   "version": 2
+  },
+  "book.lesson-16.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 917.5,
+   "version": 3
+  },
+  "book.lesson-17.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 909.7,
+   "version": 3
+  },
+  "book.lesson-18.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 898.9,
+   "version": 2
+  },
+  "book.lesson-19.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 922.2,
+   "version": 4
+  },
+  "book.lesson-20.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 900.2,
+   "version": 3
+  },
+  "book.lesson-21.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 912.2,
+   "version": 2
+  },
+  "book.lesson-22.tr": {
+   "p": "google",
+   "rendered": "2026-11-26",
+   "seconds": 908.4,
+   "version": 3
+  }
+ }
+}

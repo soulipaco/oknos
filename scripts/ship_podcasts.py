@@ -28,6 +28,7 @@ import argparse
 import json
 import os
 import sys
+import time
 from datetime import date
 from pathlib import Path
 
@@ -120,11 +121,18 @@ def main() -> int:
     for pid, body in todo:
         (build / pid).mkdir(parents=True, exist_ok=True)
         (build / pid / "script.json").write_text(body, encoding="utf-8")
-        try:
-            meta = podcast.render(pid, wait=True)
-        except podcast.PodcastError as e:
-            print(f"{pid}: stopped: {str(e)[:300]}")
-            break
+        for attempt in range(10):
+            try:
+                meta = podcast.render(pid, wait=True)
+                break
+            except podcast.PodcastError as e:
+                if "429" in str(e) and p.name == "google" and attempt < 9:
+                    # Chirp's per-minute quota: wait a minute and go on (the clips made are kept).
+                    print(f"{pid}: Google's per-minute limit, waiting a minute", flush=True)
+                    time.sleep(65)
+                    continue
+                print(f"{pid}: stopped: {str(e)[:300]}")
+                return 1
         if set(meta.get("made") or {}) - {p.name}:
             print(f"{pid}: made by {meta['made']}, not only {p.name}; not shipped")
             continue

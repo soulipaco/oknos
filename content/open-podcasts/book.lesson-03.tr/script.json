@@ -1,0 +1,1030 @@
+{
+ "id": "book.lesson-03.tr",
+ "kind": "chapter",
+ "curriculum": "oknos-book",
+ "stage": "lesson-03",
+ "lang": "tr",
+ "title": {
+  "tr": "Pire erkek mi? Nerede oturuyorsun, nerede çalışıyorsun",
+  "en": "Is Piraeus a he? Where you live, where you work"
+ },
+ "version": 4,
+ "written": "2026-11-26",
+ "cast": [
+  {
+   "id": "ada",
+   "name": "Ada",
+   "role": "host",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "f",
+   "age": "35",
+   "manner": "warm, curious, explains with Turkish bridges"
+  },
+  {
+   "id": "mert",
+   "name": "Mert",
+   "role": "cohost",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "m",
+   "age": "32",
+   "manner": "easy-going, a bit lazy, the learner; guesses and sometimes gets it wrong"
+  },
+  {
+   "id": "katerina",
+   "name": "Κατερίνα",
+   "role": "guest",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "45",
+   "manner": "native, from Thessaloniki, warm, patient, clear"
+  },
+  {
+   "id": "ypallilos",
+   "name": "Υπάλληλος",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "m",
+   "age": "50",
+   "manner": "course office clerk, polite, formal, brisk"
+  },
+  {
+   "id": "ayse",
+   "name": "Αϊσέ",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "30",
+   "manner": "Turkish learner of Greek from Izmir, a little shy, polite"
+  },
+  {
+   "id": "nikos",
+   "name": "Νίκος",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "m",
+   "age": "30",
+   "manner": "Athenian, friendly, teasing, works at a theatre"
+  }
+ ],
+ "sources": [
+  {
+   "what": "chapter",
+   "ref": "oknos-book/lessons/lesson-03"
+  }
+ ],
+ "segments": [
+  {
+   "part": "Açılış"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου, Αϊσέ! Εγώ μένω εδώ, στο Μαρούσι. Μένεις κι εσύ εδώ;",
+   "who": "nikos"
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, εγώ μένω στην Καλλιθέα. Και δουλεύω στον Πειραιά.",
+   "who": "ayse"
+  },
+  {
+   "lang": "tr",
+   "say": "Kısa bir sohbet, üç ayrı yer. Ama dikkatli dinlediysen, her yerin önünde başka bir küçük kelime vardı.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ben de duydum. Biri ston gibiydi, biri stin. Hangisi ne zaman, hiç bilmiyorum.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bugün tam bunu çözeceğiz.",
+   "who": "ada"
+  },
+  {
+   "part": "Hoş geldin"
+  },
+  {
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, üçüncü bölüm.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bugün nerede oturduğunu, nerede çalıştığını ve hangi günler çalıştığını söyleyeceksin. Bir de kahveyi ne sıklıkla içtiğini.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Kahve kısmı benim için önemli.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Stüdyoda Katerina da var. Selanikli. Örnek cümleleri o söyleyecek, sen de arkasından yüksek sesle söyle.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "part": "Kayıt masasında"
+  },
+  {
+   "lang": "tr",
+   "say": "İlk sahne. Ayşe bir dil kursuna kaydoluyor. Sekreterlikte görevli ona sorular soruyor. Bir şeye kulak ver: Ayşe hangi günler çalışıyor?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα! Από πού είστε;",
+   "who": "ypallilos"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα. Είμαι από την Τουρκία, από τη Σμύρνη.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ωραία! Πού μένετε;",
+   "who": "ypallilos"
+  },
+  {
+   "lang": "el",
+   "say": "Μένω στην Καλλιθέα. Δουλεύω στον Πειραιά.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Δουλεύετε Σάββατο και Κυριακή;",
+   "who": "ypallilos"
+  },
+  {
+   "lang": "el",
+   "say": "Όχι. Δουλεύω Δευτέρα, Τρίτη και Πέμπτη.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ευχαριστώ πολύ!",
+   "who": "ypallilos"
+  },
+  {
+   "lang": "tr",
+   "say": "Hangi günler? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Dur, ben deneyeyim. Cumartesi ve pazar?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Görevli tam bunu sordu, ama Ayşe hayır dedi. Pazartesi, salı ve perşembe çalışıyor: Δευτέρα, Τρίτη και Πέμπτη.",
+   "who": "ada"
+  },
+  {
+   "part": "Ders çıkışı"
+  },
+  {
+   "lang": "tr",
+   "say": "İkinci sahne. Ders bitti, Ayşe çıkışta Nikos'la sohbet ediyor. Bu sefer biraz yavaş. Kahveye dikkat.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου, Αϊσέ! Εγώ μένω εδώ, στο Μαρούσι. Μένεις κι εσύ εδώ;",
+   "who": "nikos",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, εγώ μένω στην Καλλιθέα. Και δουλεύω στον Πειραιά.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Στον Πειραιά; Εγώ δουλεύω στο θέατρο. Πίνεις καφέ;",
+   "who": "nikos",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Πάντα! Εσύ;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Εγώ δεν πίνω ποτέ ζεστό καφέ. Συνήθως πίνω τσάι.",
+   "who": "nikos",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Εγώ πίνω τσάι μερικές φορές.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "tr",
+   "say": "Nikos nerede çalışıyor? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Tiyatroda! Στο θέατρο. Bunu hemen anladım, kelime neredeyse aynı.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Bu kelimenin kökü zaten Yunanca.",
+   "who": "ada"
+  },
+  {
+   "part": "Pire erkek mi?"
+  },
+  {
+   "lang": "tr",
+   "say": "Ada, açılıştaki soruya dönelim. Ayşe Kallithea'da derken bir kelime, Pire'de derken başka bir kelime kullandı. Neden?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Çünkü Yunancada de eki yok. Onun yerine ismin önüne küçük bir kelime gelir, ve bu kelime ismin cinsine göre değişir.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "İsimlerin cinsi mi var?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Var. Her isim eril, dişil ya da nötrdür. Bunu önündeki artikel söyler. Üç yerimizi artikeliyle dinle: ο Πειραιάς, η Καλλιθέα, το Μαρούσι.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Yani Pire erkek mi şimdi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Gramerde evet! Pire eril, Kallithea dişil, Marusi nötr. Bir yerde demek için o küçük kelime artikelle birleşir. Katerina'dan dinle ve tekrar et. Pire'de:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "στον Πειραιά",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Kallithea'da:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "στην Καλλιθέα",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Marusi'de:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "στο Μαρούσι",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Ston, stin, sto. Eril, dişil, nötr. Ama Pire'nin sonu da kısaldı galiba?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İyi kulak! Eril isimlerin sonundaki s sesi burada düşer. Bir daha dinle: ο Πειραιάς, ama στον Πειραιά.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Peki bir kelimenin eril mi dişil mi olduğunu nereden bileceğim?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Çoğu zaman sonundan. Os ya da as ile biten çoğunlukla eril, a ile biten çoğunlukla dişil. Ama en iyi hile şu: her kelimeyi artikeliyle öğren. O zaman doğru biçim kendiliğinden gelir.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Peki nereden? Ayşe kayıtta nereli olduğunu söyledi: από την Τουρκία, από τη Σμύρνη.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Nereden için başka bir kelime var, ve o artikelle birleşmez. Birinci dersten tanıdık mı?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet! O zaman kalıp diye ezberlemiştik. Şimdi nedenini öğrendik.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir ayrıntı: Türkiye'den derken artikelin sonunda bir n sesi var, İzmir'den derken yok. Bazı seslerden önce o n düşer. Şimdilik kulağın alışsın yeter.",
+   "who": "ada"
+  },
+  {
+   "part": "Sen mi, siz mi?"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir şey daha yakaladım. Görevli Ayşe'ye πού μένετε diye sordu, Nikos ise μένεις κι εσύ εδώ dedi.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Görevli resmî konuşuyor, siz diyor. Nikos arkadaşça, sen diyor. Türkçedeki oturuyorsunuz ile oturuyorsun gibi.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Yani fiilin sonu değişiyor, Türkçedeki gibi.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynen. O yüzden ben, sen demene de gerek yok. Katerina, oturmak fiilini baştan sona söyler misin? Yavaşça.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "μένω, μένεις, μένει, μένουμε, μένετε, μένουν",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.1
+  },
+  {
+   "lang": "tr",
+   "say": "Oturuyorum, oturuyorsun, oturuyor, oturuyoruz, oturuyorsunuz, oturuyorlar. Çalışmak da aynı sonları alır. Mert, sen dene.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "δουλεύω, δουλεύεις, δουλεύει, δουλεύουμε, δουλεύετε, δουλεύουν",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Harika. Soru için de ayrı bir kelime yok. Türkçedeki mi ekinin işini ses yapar; cümlenin sonunda sesin yükselir. Katerina:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Μένεις στην Αθήνα;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Hiç ve değil"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi kahve. Nikos ne dedi, hatırlıyor musun?",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Εγώ δεν πίνω ποτέ ζεστό καφέ.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Ama burada bir tuhaflık var. Hiç kelimesi var, bir de değil kelimesi. İkisi birden mi? Fazladan değil mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Hiç de fazladan değil. Türkçeye bak: hiç kahve içmem deriz, hiç kahve içerim demeyiz. Yunanca da tam böyle. Önce sıcak kahve içmem: δεν πίνω ζεστό καφέ. Bir de hiç eklersen:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Δεν πίνω ποτέ ζεστό καφέ.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Demek burada Türkçe gibi düşünmek işe yarıyor.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Şimdi ne sıklıkla sorusunun cevapları. Beş kelime, çoktan aza doğru. Birincisi πάντα.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Bunu biliyorum, Ayşe söyledi. Her zaman.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Sonra συνήθως: genellikle. Nikos genellikle çay içiyordu. Sonra συχνά: sık sık. Sonra μερικές φορές.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Bazen? Ayşe de bazen çay içiyordu.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru. En sonda da ποτέ: hiçbir zaman. Katerina, beşini sırayla söyler misin?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "πάντα, συνήθως, συχνά, μερικές φορές, ποτέ",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.1
+  },
+  {
+   "lang": "tr",
+   "say": "Bir cümle daha: pazar günü genellikle evde kalırım.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Την Κυριακή συνήθως μένω στο σπίτι.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "lang": "tr",
+   "say": "Oturmak fiili burada kalmak mı oldu?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet, bu fiil ikisini de söyler: hem oturmak, hem kalmak.",
+   "who": "ada"
+  },
+  {
+   "part": "Sıra sende"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi sıra sende. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert deneyecek, en son Katerina doğrusunu söyleyecek.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir arkadaşına nerede oturduğunu sor.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Πού μένεις;",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Πού μένεις;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi aynı soruyu bir görevliye, resmî olarak sor.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Πού μένεις;",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Görevliye sen mi diyorsun, Mert?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ah, doğru. Siz olacak.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Πού μένετε;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Pire'de çalıştığını söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4.5
+  },
+  {
+   "lang": "tr",
+   "say": "Dur, ben deneyeyim. Pire eril, o zaman:",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Δουλεύω στον Πειραιά.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Δουλεύω στον Πειραιά.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Hiç sıcak kahve içmediğini söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 5
+  },
+  {
+   "lang": "el",
+   "say": "Δεν πίνω ποτέ ζεστό καφέ.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Δεν πίνω ποτέ ζεστό καφέ.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Son olarak, cumartesi günü evde kaldığını söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 5
+  },
+  {
+   "lang": "el",
+   "say": "Το Σάββατο μένω στο σπίτι.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Mükemmel. Cumartesi nötr, artikeli de nötr. Pazar günü derken de artikel vardı, hatırlarsan. Ama Ayşe kayıtta günleri sayarken artikel kullanmadı. Bir liste verirken artikel düşer.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Το Σάββατο μένω στο σπίτι.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Mert'in hatası"
+  },
+  {
+   "lang": "tr",
+   "say": "Mert, şimdi hızlı ol. Düşünmeden, Atina'da oturuyorum de.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Μένω σε Αθήνα.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Neredeyse! Ama bir şey eksik.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ne eksik? Atina'da dedim ya.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçede de eki tek başına yeter. Yunancada o küçük kelime artikelsiz kalmaz. Atina dişil, o zaman στην Αθήνα.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Artikeli unuttum. Tembellik işte.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçe konuşanların en sık yaptığı hata bu. Türkçede artikel yok, kulak onu aramıyor. Doğrusunu Katerina'dan dinle ve tekrar et:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Μένω στην Αθήνα.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Oyun: nerede?"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi küçük bir oyun. Ben bir yer söyleyeceğim, artikeliyle. Sen o yerde demeyi dene, sonra Mert söyleyecek. Birincisi: ο Βόλος.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "στον Βόλο",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru. Eril, ve s sesi düştü. İkincisi: η Πάτρα.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "στο Πάτρα",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Dur. Artikeli duydun mu? Patra dişil.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ah, o zaman stin.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "στην Πάτρα",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Üçüncüsü: η Θεσσαλονίκη.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "στην Θεσσαλονίκη",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Neredeyse. Hatırla, o n sesi bazen düşüyor. Burada düşüyor.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "στη Θεσσαλονίκη",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Katerina'nın memleketi, değil mi Katerina?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι από τη Θεσσαλονίκη.",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "İkinci tur: sayılar. Ben bir sayı söyleyeceğim, sen Türkçesini söyle. Birincisi: τριάντα πέντε.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Otuz beş. Türkçedeki gibi, önce onlar, sonra birler.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İkincisi: εκατόν είκοσι.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Yüz yirmi mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Yüz tek başınayken εκατό, arkasına sayı gelince sonuna bir n sesi eklenir:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "εκατόν είκοσι",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Sahne yeniden"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi ikinci sahne bir kez daha, normal hızda. Bu sefer her kelimeyi anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου, Αϊσέ! Εγώ μένω εδώ, στο Μαρούσι. Μένεις κι εσύ εδώ;",
+   "who": "nikos"
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, εγώ μένω στην Καλλιθέα. Και δουλεύω στον Πειραιά.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Στον Πειραιά; Εγώ δουλεύω στο θέατρο. Πίνεις καφέ;",
+   "who": "nikos"
+  },
+  {
+   "lang": "el",
+   "say": "Πάντα! Εσύ;",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Εγώ δεν πίνω ποτέ ζεστό καφέ. Συνήθως πίνω τσάι.",
+   "who": "nikos"
+  },
+  {
+   "lang": "el",
+   "say": "Εγώ πίνω τσάι μερικές φορές.",
+   "who": "ayse"
+  },
+  {
+   "lang": "tr",
+   "say": "Gerçekten hepsini anladım. Ston, stin, sto, hepsi yerli yerinde.",
+   "who": "mert"
+  },
+  {
+   "part": "Kelime köşesi: günler"
+  },
+  {
+   "lang": "tr",
+   "say": "Kelime köşesi. Bugün haftanın günleri. Katerina, ilk dördünü söyler misin?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "η Δευτέρα, η Τρίτη, η Τετάρτη, η Πέμπτη",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Bu dört ismin anlamı aslında ikinci, üçüncü, dördüncü ve beşinci. Yunan takviminde hafta pazar günü başlar.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Dördüncü, beşinci. Bir dakika. Bizim çarşamba ile perşembe de öyle değil mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Çok güzel yakaladın! Çarşamba ve perşembe Farsçadan geliyor: dördüncü gün ve beşinci gün. Yani iki dilde de perşembe beşinci gün.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Pazartesi de pazar ertesi. Cumartesi, cuma ertesi.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynen. İki dil de günleri sayarak adlandırmış. Geriye üç gün kaldı. Η Παρασκευή: cuma. Kelime anlamı hazırlık.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Το Σάββατο: cumartesi. Tek nötr gün bu.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Η Κυριακή: pazar. Anlamı Rab'bin günü.",
+   "who": "ada"
+  },
+  {
+   "part": "Gelecek bölüm"
+  },
+  {
+   "lang": "tr",
+   "say": "Gelecek bölümde telefon çalıyor. Mehmet bir iş için bir şirketin ofisini arıyor. Ondan adını, soyadını ve telefon numarasını isteyecekler.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Numarayı Yunanca mı söyleyecek? Ben yüz yirmiyi zor söyledim.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "O zamana kadar hazır olursun. Bir de adım, numaram gibi sözleri öğreneceğiz. Yunancada benim kelimesi ismin arkasına gelir.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Bu arada bölümü uygulamada oku, alıştırmaları yap. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Biraz daha tekrar istersen, hemen ardından kısa bir tekrar köşesi var.",
+   "who": "ada"
+  },
+  {
+   "part": "Tekrar köşesi"
+  },
+  {
+   "lang": "tr",
+   "say": "Tekrar köşesi. Bugünün anahtar cümleleri, yavaşça. Katerina'dan sonra tekrar et.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Πού μένεις;",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Πού μένετε;",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Μένω στην Καλλιθέα.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Δουλεύω στον Πειραιά.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Δεν πίνω ποτέ ζεστό καφέ.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Το Σάββατο μένω στο σπίτι.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "tr",
+   "say": "Bu kadar. Haftaya görüşürüz.",
+   "who": "ada"
+  }
+ ]
+}

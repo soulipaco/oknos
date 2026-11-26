@@ -1,0 +1,1007 @@
+{
+ "id": "book.lesson-22.tr",
+ "kind": "chapter",
+ "lang": "tr",
+ "title": {
+  "tr": "Kimin günü? Komşunun isim günü ve Paskalya",
+  "en": "Whose day? A neighbour's name day and Easter"
+ },
+ "curriculum": "oknos-book",
+ "stage": "lesson-22",
+ "version": 3,
+ "written": "2026-11-26",
+ "date": null,
+ "rendered": "2026-11-26T13:51:50",
+ "seconds": 908.4,
+ "script": "e7c26b1f80f2",
+ "parts": [
+  {
+   "t": 3.0,
+   "title": "Açılış"
+  },
+  {
+   "t": 36.68,
+   "title": "Hoş geldin"
+  },
+  {
+   "t": 72.62,
+   "title": "Komşunun kapısında"
+  },
+  {
+   "t": 131.98,
+   "title": "Merdivende"
+  },
+  {
+   "t": 201.76,
+   "title": "Maria'nın evi"
+  },
+  {
+   "t": 321.45,
+   "title": "On beş Ağustos"
+  },
+  {
+   "t": 372.16,
+   "title": "Eğer gelirsen"
+  },
+  {
+   "t": 440.12,
+   "title": "Geldiğinde, gelir gelmez"
+  },
+  {
+   "t": 511.83,
+   "title": "Sıra sende"
+  },
+  {
+   "t": 591.78,
+   "title": "Mert'in hatası"
+  },
+  {
+   "t": 633.74,
+   "title": "Oyun: hangi dilek?"
+  },
+  {
+   "t": 697.48,
+   "title": "Sahne yeniden"
+  },
+  {
+   "t": 744.02,
+   "title": "Köşe: kimin günü?"
+  },
+  {
+   "t": 795.13,
+   "title": "Gelecek bölüm"
+  },
+  {
+   "t": 829.56,
+   "title": "Katerina anlatıyor"
+  }
+ ],
+ "lines": [
+  {
+   "t": 3.0,
+   "lang": "el",
+   "say": "Καλημέρα, κυρία Μαρία! Χρόνια πολλά!",
+   "who": "ayse"
+  },
+  {
+   "t": 6.23,
+   "lang": "el",
+   "say": "Ευχαριστώ, Αϊσέ μου! Και του χρόνου! Έλα μέσα.",
+   "who": "maria"
+  },
+  {
+   "t": 10.99,
+   "lang": "el",
+   "say": "Δεκαπέντε Αυγούστου, της Παναγίας: η γιορτή σας! Ορίστε ένα μικρό δώρο.",
+   "who": "ayse"
+  },
+  {
+   "t": 15.79,
+   "lang": "tr",
+   "say": "Bugün ne doğum günü var, ne yılbaşı. Ama Ayşe kapıda nice senelere diyor.",
+   "who": "ada"
+  },
+  {
+   "t": 21.33,
+   "lang": "tr",
+   "say": "Bir de της Παναγίας dedi. Παναγία'yı biliyorum, Meryem Ana. Ama önündeki o küçük της ne?",
+   "who": "mert"
+  },
+  {
+   "t": 29.37,
+   "lang": "tr",
+   "say": "O küçük kelime, Türkçedeki -nın ekinin işini yapıyor. Bugün kimin sorusunu çözeceğiz.",
+   "who": "ada"
+  },
+  {
+   "t": 36.68,
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, yirmi ikinci bölüm.",
+   "who": "ada"
+  },
+  {
+   "t": 42.64,
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "t": 47.92,
+   "lang": "tr",
+   "say": "Bugün bayram var: komşunun isim günü ve Paskalya. Sonunda Maria'nın evi diyebileceksin, bir de gelirsen, geldiğinde.",
+   "who": "ada"
+  },
+  {
+   "t": 55.54,
+   "lang": "el",
+   "say": "Μερτ, αν έχεις χρόνο, έλα στη γιορτή μου!",
+   "who": "ada"
+  },
+  {
+   "t": 58.89,
+   "lang": "el",
+   "say": "Αν δεν αργήσω στη δουλειά, θα έρθω!",
+   "who": "mert"
+  },
+  {
+   "t": 61.58,
+   "lang": "tr",
+   "say": "Daha başlamadan söyledin: geç kalmazsam gelirim. Katerina da burada, örnek cümleler onda.",
+   "who": "ada"
+  },
+  {
+   "t": 67.95,
+   "lang": "el",
+   "say": "Γεια σας! Σήμερα έχουμε γιορτή!",
+   "who": "katerina"
+  },
+  {
+   "t": 72.62,
+   "lang": "tr",
+   "say": "İlk sahne. On beş Ağustos sabahı. Ayşe, komşusu Maria Hanım'ın kapısında; bugün onun isim günü. Bir şeye kulak ver: akşam kim gelecek?",
+   "who": "ada"
+  },
+  {
+   "t": 83.45,
+   "lang": "el",
+   "say": "Καλημέρα, κυρία Μαρία! Χρόνια πολλά!",
+   "who": "ayse"
+  },
+  {
+   "t": 86.67,
+   "lang": "el",
+   "say": "Ευχαριστώ, Αϊσέ μου! Και του χρόνου! Έλα μέσα.",
+   "who": "maria"
+  },
+  {
+   "t": 91.44,
+   "lang": "el",
+   "say": "Δεκαπέντε Αυγούστου, της Παναγίας: η γιορτή σας! Ορίστε ένα μικρό δώρο.",
+   "who": "ayse"
+  },
+  {
+   "t": 95.94,
+   "lang": "el",
+   "say": "Τι ωραίο! Το βράδυ θα έρθουν τα παιδιά μου. Όταν έρθουν, θα φάμε μαζί. Έλα κι εσύ!",
+   "who": "maria"
+  },
+  {
+   "t": 101.61,
+   "lang": "el",
+   "say": "Αν δεν αργήσω στη δουλειά, θα έρθω.",
+   "who": "ayse"
+  },
+  {
+   "t": 104.02,
+   "lang": "el",
+   "say": "Ωραία! Μόλις έρθεις, θα σε κεράσω γλυκό.",
+   "who": "maria"
+  },
+  {
+   "t": 107.66,
+   "lang": "el",
+   "say": "Εγώ δεν έχω γιορτή, αλλά έχω γενέθλια στις τρεις Μαΐου.",
+   "who": "ayse"
+  },
+  {
+   "t": 111.55,
+   "lang": "el",
+   "say": "Στις τρεις Μαΐου θα σου πω: «Να τα εκατοστίσεις!»",
+   "who": "maria"
+  },
+  {
+   "t": 116.03,
+   "lang": "tr",
+   "say": "Akşam kim gelecek? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 122.61,
+   "lang": "tr",
+   "say": "Maria'nın arkadaşları mı? Komşular?",
+   "who": "mert"
+  },
+  {
+   "t": 125.62,
+   "lang": "tr",
+   "say": "Hayır, çocukları: θα έρθουν τα παιδιά μου. Ayşe de davetli.",
+   "who": "ada"
+  },
+  {
+   "t": 131.98,
+   "lang": "tr",
+   "say": "İkinci sahne. Paskalya'dan birkaç gün önce, apartmanın merdiveni. Ayşe soruyor, Maria anlatıyor. Bu sefer biraz yavaş. Yumurtalar ne renk?",
+   "who": "ada"
+  },
+  {
+   "t": 142.45,
+   "lang": "el",
+   "say": "Κυρία Μαρία, τι κάνετε το Πάσχα;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 145.3,
+   "lang": "el",
+   "say": "Τη Μεγάλη Πέμπτη βάφουμε αυγά. Τα βάφουμε κόκκινα. Το κόκκινο είναι το χρώμα του Πάσχα.",
+   "who": "maria",
+   "speed": 0.85
+  },
+  {
+   "t": 153.66,
+   "lang": "el",
+   "say": "Και το βράδυ του Σαββάτου;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 155.68,
+   "lang": "el",
+   "say": "Πάμε στην εκκλησία. Τα μεσάνυχτα ανάβουμε τις λαμπάδες και λέμε: «Χριστός Ανέστη!»",
+   "who": "maria",
+   "speed": 0.85
+  },
+  {
+   "t": 164.3,
+   "lang": "el",
+   "say": "Και τι λέω εγώ;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 165.92,
+   "lang": "el",
+   "say": "«Αληθώς Ανέστη!» Μετά τσουγκρίζουμε τα κόκκινα αυγά. Την Κυριακή του Πάσχα τρώμε αρνί.",
+   "who": "maria",
+   "speed": 0.85
+  },
+  {
+   "t": 173.66,
+   "lang": "tr",
+   "say": "Yumurtalar ne renk? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 180.58,
+   "lang": "tr",
+   "say": "Kırmızı! Τα βάφουμε κόκκινα. Bir de gece yarısı mum yakıyorlar.",
+   "who": "mert"
+  },
+  {
+   "t": 184.98,
+   "lang": "tr",
+   "say": "Evet. Λαμπάδα, uzun bir Paskalya mumu. O anda biri sana Χριστός Ανέστη der, Mesih dirildi. Sen de Αληθώς Ανέστη dersin: gerçekten dirildi.",
+   "who": "ada"
+  },
+  {
+   "t": 201.76,
+   "lang": "tr",
+   "say": "Açılıştaki soruya dönelim. Της Παναγίας. Bu της ne iş yapıyor?",
+   "who": "mert"
+  },
+  {
+   "t": 206.84,
+   "lang": "tr",
+   "say": "Türkçede Maria'nın evi dersin: önce sahip, sonra ev. Yunancada tam tersi: önce ev, sonra sahip. Sahibin de hem artikeli değişir, hem sonu. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 219.38,
+   "lang": "el",
+   "say": "το σπίτι της Μαρίας",
+   "who": "katerina"
+  },
+  {
+   "t": 223.88,
+   "lang": "tr",
+   "say": "Maria'nın sonuna bir s geldi: Μαρίας.",
+   "who": "mert"
+  },
+  {
+   "t": 226.97,
+   "lang": "tr",
+   "say": "İyi kulak. Artikel de η idi, της oldu. Artikel kuralı kısa: eril ve nötrde του, dişilde της.",
+   "who": "ada"
+  },
+  {
+   "t": 238.94,
+   "lang": "tr",
+   "say": "Peki erkek isimleri? Nikos'un hediyesi mesela.",
+   "who": "mert"
+  },
+  {
+   "t": 242.25,
+   "lang": "tr",
+   "say": "Nikos os ile bitiyor, os da u olur: του Νίκου. Katerina, birkaç tane söyler misin? Yavaşça.",
+   "who": "ada"
+  },
+  {
+   "t": 251.32,
+   "lang": "el",
+   "say": "ο φίλος, του φίλου. ο πατέρας, του πατέρα.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 256.95,
+   "lang": "el",
+   "say": "η μητέρα, της μητέρας. η Ελένη, της Ελένης.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 263.17,
+   "lang": "el",
+   "say": "το δώρο, του δώρου. το παιδί, του παιδιού.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 273.2,
+   "lang": "tr",
+   "say": "Πατέρας'ta s düştü, μητέρα'da s geldi, παιδί'de vurgu sona kaydı. Ayşe gibi yabancı isimler ise hiç değişmez: της Αϊσέ.",
+   "who": "ada"
+  },
+  {
+   "t": 285.98,
+   "lang": "tr",
+   "say": "Kimin diye sormak için de bir kelime var: τίνος, ya da ποιανού.",
+   "who": "ada"
+  },
+  {
+   "t": 292.13,
+   "lang": "el",
+   "say": "Μερτ, τίνος είναι το κόκκινο αυγό;",
+   "who": "ada"
+  },
+  {
+   "t": 294.72,
+   "lang": "el",
+   "say": "Του Νίκου!",
+   "who": "mert"
+  },
+  {
+   "t": 296.19,
+   "lang": "tr",
+   "say": "Çoğulda iş daha da kolay. Üç cinsiyette de artikel των, son da hep ων. Çocukların hediyesi:",
+   "who": "ada"
+  },
+  {
+   "t": 305.21,
+   "lang": "el",
+   "say": "Το δώρο των παιδιών είναι δίπλα στο δέντρο.",
+   "who": "katerina"
+  },
+  {
+   "t": 311.99,
+   "lang": "tr",
+   "say": "Ton ve on. Hepsi aynı.",
+   "who": "mert"
+  },
+  {
+   "t": 315.0,
+   "lang": "tr",
+   "say": "Son hep aynı, ama vurgu çoğu zaman kayar. Onu kelimeyle öğren.",
+   "who": "ada"
+  },
+  {
+   "t": 321.45,
+   "lang": "tr",
+   "say": "Bu hâl sadece sahiplik için değil. Ayşe kapıda ne demişti? Δεκαπέντε Αυγούστου.",
+   "who": "ada"
+  },
+  {
+   "t": 328.28,
+   "lang": "tr",
+   "say": "Ağustos'u tanıdım. Ama ay Αύγουστος değil miydi?",
+   "who": "mert"
+  },
+  {
+   "t": 332.53,
+   "lang": "tr",
+   "say": "Evet. Ayın adı da os ile biter, tarihte u olur: Αυγούστου. Türkçede de Ağustos'un on beşi deriz ya.",
+   "who": "ada"
+  },
+  {
+   "t": 340.89,
+   "lang": "tr",
+   "say": "Ayşe'nin doğum günü de öyleydi: στις τρεις Μαΐου.",
+   "who": "mert"
+  },
+  {
+   "t": 344.13,
+   "lang": "tr",
+   "say": "Μάιος, Μαΐου: Mayıs'ın üçünde. Yaş da bu hâlle sorulur. Χρονών, yılların demek.",
+   "who": "ada"
+  },
+  {
+   "t": 352.15,
+   "lang": "el",
+   "say": "Μερτ, πόσων χρονών είσαι;",
+   "who": "ada"
+  },
+  {
+   "t": 354.76,
+   "lang": "el",
+   "say": "Είμαι τριάντα δύο χρονών.",
+   "who": "mert"
+  },
+  {
+   "t": 357.76,
+   "lang": "tr",
+   "say": "Otuz iki yaşındayım. Tabelalar ve etiketler de böyle: οδός Αιόλου, rüzgârların tanrısı Aiolos'un caddesi. Bir de λάδι Καλαμάτας, Kalamata'nın zeytinyağı.",
+   "who": "ada"
+  },
+  {
+   "t": 372.16,
+   "lang": "tr",
+   "say": "Sahnede Ayşe αν δεν αργήσω dedi. Αν, eğer demek, onu biliyorum. Ama fiil biraz tuhaf.",
+   "who": "mert"
+  },
+  {
+   "t": 379.58,
+   "lang": "tr",
+   "say": "Türkçede eğer bir ekle söylenir: gelirsen, varsa. Yunancada cümlenin başına αν gelir. Bir durum için, zamanın varsa gibi, fiil şimdiki zamanda kalır:",
+   "who": "ada"
+  },
+  {
+   "t": 392.77,
+   "lang": "el",
+   "say": "Αν έχεις χρόνο, έλα.",
+   "who": "katerina"
+  },
+  {
+   "t": 397.73,
+   "lang": "tr",
+   "say": "Tek bir olay için, gelirsen gibi, bir kerelik kök gelir. On beşinci derste θα ile öğrendiğin kök. Ama burada θα yok:",
+   "who": "ada"
+  },
+  {
+   "t": 409.23,
+   "lang": "el",
+   "say": "Αν έρθεις, θα φάμε.",
+   "who": "katerina"
+  },
+  {
+   "t": 413.59,
+   "lang": "tr",
+   "say": "Θα arkada kalmış, ana cümlede. Yeriz kısmında.",
+   "who": "mert"
+  },
+  {
+   "t": 418.3,
+   "lang": "tr",
+   "say": "Tam olarak. Türkçeye bak: gelirsen yiyeceğiz. Gelecek eki sadece yiyeceğiz'de var, gelirsen'de yok. Yunanca da öyle. Olumsuzu da kolay, αν δεν. Ayşe'nin cümlesi:",
+   "who": "ada"
+  },
+  {
+   "t": 431.47,
+   "lang": "el",
+   "say": "Αν δεν αργήσω στη δουλειά, θα έρθω.",
+   "who": "katerina"
+  },
+  {
+   "t": 440.12,
+   "lang": "tr",
+   "say": "Şimdi zaman. Maria ne demişti? Όταν έρθουν, θα φάμε μαζί. Όταν, -dığında: geldiklerinde. Sonra da μόλις έρθεις.",
+   "who": "ada"
+  },
+  {
+   "t": 452.44,
+   "lang": "tr",
+   "say": "Μόλις… Gelir gelmez mi?",
+   "who": "mert"
+  },
+  {
+   "t": 454.92,
+   "lang": "tr",
+   "say": "Evet. Bir de πριν var: -meden önce. Üçü de αν gibi çalışır: gelecekteki bir olay için bir kerelik kök, θα yok. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 470.03,
+   "lang": "el",
+   "say": "Πριν πάω στη γιορτή, θα αγοράσω ένα δώρο.",
+   "who": "katerina"
+  },
+  {
+   "t": 478.78,
+   "lang": "tr",
+   "say": "Bir incelik daha. Όταν'dan sonra alışkanlık için şimdiki zaman gelir:",
+   "who": "ada"
+  },
+  {
+   "t": 484.46,
+   "lang": "el",
+   "say": "Όταν κάνει ζέστη, πάμε στη θάλασσα.",
+   "who": "katerina"
+  },
+  {
+   "t": 487.92,
+   "lang": "tr",
+   "say": "Ama tek bir kere, gelecekte olacaksa:",
+   "who": "ada"
+  },
+  {
+   "t": 491.48,
+   "lang": "el",
+   "say": "Όταν έρθει ο Νίκος, θα φάμε.",
+   "who": "katerina"
+  },
+  {
+   "t": 497.49,
+   "lang": "tr",
+   "say": "Türkçede ikisi de -ınca: sıcak olunca, Nikos gelince.",
+   "who": "mert"
+  },
+  {
+   "t": 501.23,
+   "lang": "tr",
+   "say": "Evet, Türkçe burada ayırmaz. Yunanca fiilin kökünde ayırır: κάνει her seferinde, έρθει bir kere.",
+   "who": "ada"
+  },
+  {
+   "t": 511.83,
+   "lang": "tr",
+   "say": "Sıra sende. Ben Türkçe söylüyorum, sen Yunancasını yüksek sesle söyle; sonra Mert, en son Katerina. Birincisi: komşunun isim günü, kapıyı açtı. Ne dersin?",
+   "who": "ada"
+  },
+  {
+   "t": 527.32,
+   "lang": "el",
+   "say": "Χρόνια πολλά!",
+   "who": "mert"
+  },
+  {
+   "t": 528.67,
+   "lang": "el",
+   "say": "Χρόνια πολλά!",
+   "who": "katerina"
+  },
+  {
+   "t": 532.36,
+   "lang": "tr",
+   "say": "İkincisi: Nikos'un hediyesi burada.",
+   "who": "ada"
+  },
+  {
+   "t": 539.95,
+   "lang": "el",
+   "say": "Το δώρο του Νίκος είναι εδώ.",
+   "who": "mert"
+  },
+  {
+   "t": 542.16,
+   "lang": "tr",
+   "say": "Artikel doğru. Ama Nikos?",
+   "who": "ada"
+  },
+  {
+   "t": 545.38,
+   "lang": "tr",
+   "say": "Ah, o da değişiyor. Νίκου.",
+   "who": "mert"
+  },
+  {
+   "t": 547.86,
+   "lang": "el",
+   "say": "Το δώρο του Νίκου είναι εδώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 552.76,
+   "lang": "tr",
+   "say": "Üçüncüsü: gelirsen birlikte yeriz.",
+   "who": "ada"
+  },
+  {
+   "t": 560.89,
+   "lang": "el",
+   "say": "Αν έρθεις, θα φάμε μαζί.",
+   "who": "mert"
+  },
+  {
+   "t": 563.08,
+   "lang": "el",
+   "say": "Αν έρθεις, θα φάμε μαζί.",
+   "who": "katerina"
+  },
+  {
+   "t": 568.08,
+   "lang": "tr",
+   "say": "Dördüncüsü: varır varmaz seni ararım.",
+   "who": "ada"
+  },
+  {
+   "t": 575.79,
+   "lang": "tr",
+   "say": "Varır varmaz, μόλις. Varmak da φτάνω. O zaman:",
+   "who": "mert"
+  },
+  {
+   "t": 580.57,
+   "lang": "el",
+   "say": "Μόλις φτάσω, θα σου τηλεφωνήσω.",
+   "who": "mert"
+  },
+  {
+   "t": 583.18,
+   "lang": "el",
+   "say": "Μόλις φτάσω, θα σου τηλεφωνήσω.",
+   "who": "katerina"
+  },
+  {
+   "t": 591.78,
+   "lang": "tr",
+   "say": "Mert, şimdi hızlı ol. Düşünmeden söyle: gelirsen sana tatlı ikram ederim.",
+   "who": "ada"
+  },
+  {
+   "t": 598.21,
+   "lang": "el",
+   "say": "Αν θα έρθεις, θα σε κεράσω γλυκό.",
+   "who": "mert"
+  },
+  {
+   "t": 600.93,
+   "lang": "tr",
+   "say": "Neredeyse. Ama bir θα fazla.",
+   "who": "ada"
+  },
+  {
+   "t": 605.03,
+   "lang": "tr",
+   "say": "Ama gelmek gelecekte olacak. Neden θα yok?",
+   "who": "mert"
+  },
+  {
+   "t": 609.18,
+   "lang": "tr",
+   "say": "Türkçe konuşanların sık hatası bu: olay gelecekte, kulak θα arıyor. Ama Türkçede de gelirsen dersin, gelecek eki koymazsın. Θα sadece ana cümlede; όταν ve μόλις ile de koyma. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 626.54,
+   "lang": "el",
+   "say": "Αν έρθεις, θα σε κεράσω γλυκό.",
+   "who": "katerina"
+  },
+  {
+   "t": 633.74,
+   "lang": "tr",
+   "say": "Küçük bir oyun. Ben bir gün söyleyeceğim, sen dileği söyle, sonra Mert. Birincisi: yılbaşı.",
+   "who": "ada"
+  },
+  {
+   "t": 644.74,
+   "lang": "el",
+   "say": "Καλό χρονιά!",
+   "who": "mert"
+  },
+  {
+   "t": 646.41,
+   "lang": "tr",
+   "say": "Dur. Χρονιά dişil.",
+   "who": "ada"
+  },
+  {
+   "t": 648.89,
+   "lang": "tr",
+   "say": "O zaman καλή.",
+   "who": "mert"
+  },
+  {
+   "t": 650.75,
+   "lang": "el",
+   "say": "Καλή χρονιά!",
+   "who": "katerina"
+  },
+  {
+   "t": 653.94,
+   "lang": "tr",
+   "say": "Καλός bayramın cinsine uyar: καλό Πάσχα, καλή χρονιά, καλά Χριστούγεννα. İkincisi: arkadaşının doğum günü.",
+   "who": "ada"
+  },
+  {
+   "t": 666.73,
+   "lang": "el",
+   "say": "Χρόνια πολλά!",
+   "who": "mert"
+  },
+  {
+   "t": 668.38,
+   "lang": "tr",
+   "say": "Doğru, Χρόνια πολλά her kutlamaya uyar. Ama doğum gününe özel bir dilek daha var.",
+   "who": "ada"
+  },
+  {
+   "t": 675.84,
+   "lang": "el",
+   "say": "Να τα εκατοστίσεις!",
+   "who": "mert"
+  },
+  {
+   "t": 677.71,
+   "lang": "tr",
+   "say": "İşte bu. İçinde εκατό var, yüz: yüz yaşına gel. O yüzden sadece doğum gününde. İsim günü olan ise seneye de der:",
+   "who": "ada"
+  },
+  {
+   "t": 689.28,
+   "lang": "el",
+   "say": "Ευχαριστώ! Και του χρόνου!",
+   "who": "katerina"
+  },
+  {
+   "t": 697.48,
+   "lang": "tr",
+   "say": "Şimdi ilk sahne bir kez daha, normal hızda. Bu sefer her kelimeyi anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "t": 703.39,
+   "lang": "el",
+   "say": "Καλημέρα, κυρία Μαρία! Χρόνια πολλά!",
+   "who": "ayse"
+  },
+  {
+   "t": 706.62,
+   "lang": "el",
+   "say": "Ευχαριστώ, Αϊσέ μου! Και του χρόνου! Έλα μέσα.",
+   "who": "maria"
+  },
+  {
+   "t": 711.39,
+   "lang": "el",
+   "say": "Δεκαπέντε Αυγούστου, της Παναγίας: η γιορτή σας! Ορίστε ένα μικρό δώρο.",
+   "who": "ayse"
+  },
+  {
+   "t": 715.88,
+   "lang": "el",
+   "say": "Τι ωραίο! Το βράδυ θα έρθουν τα παιδιά μου. Όταν έρθουν, θα φάμε μαζί. Έλα κι εσύ!",
+   "who": "maria"
+  },
+  {
+   "t": 721.56,
+   "lang": "el",
+   "say": "Αν δεν αργήσω στη δουλειά, θα έρθω.",
+   "who": "ayse"
+  },
+  {
+   "t": 723.96,
+   "lang": "el",
+   "say": "Ωραία! Μόλις έρθεις, θα σε κεράσω γλυκό.",
+   "who": "maria"
+  },
+  {
+   "t": 727.61,
+   "lang": "el",
+   "say": "Εγώ δεν έχω γιορτή, αλλά έχω γενέθλια στις τρεις Μαΐου.",
+   "who": "ayse"
+  },
+  {
+   "t": 731.5,
+   "lang": "el",
+   "say": "Στις τρεις Μαΐου θα σου πω: «Να τα εκατοστίσεις!»",
+   "who": "maria"
+  },
+  {
+   "t": 735.97,
+   "lang": "tr",
+   "say": "Hepsini anladım. Όταν έρθουν, μόλις έρθεις, αν δεν αργήσω. Üçünde de θα yok.",
+   "who": "mert"
+  },
+  {
+   "t": 744.02,
+   "lang": "tr",
+   "say": "Kültür köşesi. Yunanistan'da geleneksel olarak isim günü çok önemlidir. Her ismin bir azizi var, ve azizin gününde o adı taşıyan herkes kutlanır.",
+   "who": "ada"
+  },
+  {
+   "t": 754.29,
+   "lang": "tr",
+   "say": "Yani on beş Ağustos'ta bütün Marialar aynı gün kutlanıyor.",
+   "who": "mert"
+  },
+  {
+   "t": 758.04,
+   "lang": "tr",
+   "say": "Evet, Παναγία'nın günü. Nikos'lar altı Aralık'ta, Eleni'ler yirmi bir Mayıs'ta. Geleneksel olarak davet beklemeden gidersin, ev sahibi ikram eder.",
+   "who": "ada"
+  },
+  {
+   "t": 768.58,
+   "lang": "tr",
+   "say": "Paskalya'da yumurta tokuşturmak da bir oyun: kimin yumurtası kırılmazsa o kazanır.",
+   "who": "ada"
+  },
+  {
+   "t": 773.99,
+   "lang": "tr",
+   "say": "Sınav için de: tarih bölümünde iki ulusal bayramı bil. Yirmi beş Mart, bin sekiz yüz yirmi bir ayaklanmasının başlangıcı. Yirmi sekiz Ekim, bin dokuz yüz kırkta İtalya'ya söylenen hayır. İkisi de ayın tamlayanıyla:",
+   "who": "ada"
+  },
+  {
+   "t": 789.45,
+   "lang": "el",
+   "say": "στις είκοσι πέντε Μαρτίου, στις είκοσι οχτώ Οκτωβρίου",
+   "who": "katerina"
+  },
+  {
+   "t": 795.13,
+   "lang": "tr",
+   "say": "Gelecek bölümde Ayşe'nin önünde iki iş teklifi var. Bir kafede arkadaşı Eleni'ye anlatıyor: biri merkezde, maaşı iyi ama saatleri uzun. Öbürü evine yakın.",
+   "who": "ada"
+  },
+  {
+   "t": 806.02,
+   "lang": "tr",
+   "say": "Ben hangisini seçerdim, biliyorum. Eve yakın olanı.",
+   "who": "mert"
+  },
+  {
+   "t": 809.37,
+   "lang": "tr",
+   "say": "Ayşe de seçecek ve nedenini söyleyecek: çünkü, daha iyi, en iyi. Bu arada bölümü uygulamada oku, alıştırmaları yap. Şimdi son söz Katerina'nın: Maria'nın isim günü ve Paskalya, sadece Yunanca. Sadece dinle. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "t": 826.91,
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "t": 829.56,
+   "lang": "el",
+   "say": "Η κυρία Μαρία είναι η γειτόνισσα της Αϊσέ.",
+   "who": "katerina"
+  },
+  {
+   "t": 832.4,
+   "lang": "el",
+   "say": "Στις δεκαπέντε Αυγούστου είναι η γιορτή της.",
+   "who": "katerina"
+  },
+  {
+   "t": 835.33,
+   "lang": "el",
+   "say": "Το πρωί η Αϊσέ πάει στο σπίτι της κυρίας Μαρίας με ένα μικρό δώρο.",
+   "who": "katerina"
+  },
+  {
+   "t": 840.46,
+   "lang": "el",
+   "say": "Λέει: «Χρόνια πολλά!» Και η κυρία Μαρία απαντάει: «Ευχαριστώ! Και του χρόνου!»",
+   "who": "katerina"
+  },
+  {
+   "t": 848.02,
+   "lang": "el",
+   "say": "Το βράδυ θα έρθουν τα παιδιά της. Όταν έρθουν, θα φάνε όλοι μαζί.",
+   "who": "katerina"
+  },
+  {
+   "t": 852.91,
+   "lang": "el",
+   "say": "Η Αϊσέ δουλεύει, αλλά αν δεν αργήσει στη δουλειά, θα πάει κι αυτή.",
+   "who": "katerina"
+  },
+  {
+   "t": 857.82,
+   "lang": "el",
+   "say": "Η κυρία Μαρία λέει: «Μόλις έρθεις, θα σε κεράσω γλυκό.»",
+   "who": "katerina"
+  },
+  {
+   "t": 862.35,
+   "lang": "el",
+   "say": "Η Αϊσέ δεν έχει γιορτή. Έχει γενέθλια στις τρεις Μαΐου.",
+   "who": "katerina"
+  },
+  {
+   "t": 868.79,
+   "lang": "el",
+   "say": "Τότε η κυρία Μαρία θα της πει: «Να τα εκατοστίσεις!»",
+   "who": "katerina"
+  },
+  {
+   "t": 873.02,
+   "lang": "el",
+   "say": "Λίγες μέρες πριν από το Πάσχα, η Αϊσέ ρωτάει: «Τι κάνετε το Πάσχα;»",
+   "who": "katerina"
+  },
+  {
+   "t": 877.87,
+   "lang": "el",
+   "say": "Τη Μεγάλη Πέμπτη η κυρία Μαρία βάφει αυγά. Τα βάφει κόκκινα.",
+   "who": "katerina"
+  },
+  {
+   "t": 882.38,
+   "lang": "el",
+   "say": "Το βράδυ του Σαββάτου όλοι πάνε στην εκκλησία.",
+   "who": "katerina"
+  },
+  {
+   "t": 886.34,
+   "lang": "el",
+   "say": "Τα μεσάνυχτα ανάβουν τις λαμπάδες και λένε: «Χριστός Ανέστη!»",
+   "who": "katerina"
+  },
+  {
+   "t": 890.35,
+   "lang": "el",
+   "say": "Η Αϊσέ ξέρει τι θα πει: «Αληθώς Ανέστη!»",
+   "who": "katerina"
+  },
+  {
+   "t": 893.96,
+   "lang": "el",
+   "say": "Μετά τσουγκρίζουν τα κόκκινα αυγά.",
+   "who": "katerina"
+  },
+  {
+   "t": 896.66,
+   "lang": "el",
+   "say": "Την Κυριακή του Πάσχα η Αϊσέ τρώει αρνί με την οικογένεια της κυρίας Μαρίας.",
+   "who": "katerina"
+  },
+  {
+   "t": 901.24,
+   "lang": "el",
+   "say": "Και λέει: «Του χρόνου θα βάψω κι εγώ αυγά!»",
+   "who": "katerina"
+  },
+  {
+   "t": 904.13,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ],
+ "cast": {
+  "ayse": {
+   "name": "Αϊσέ",
+   "voice": "Achernar"
+  },
+  "maria": {
+   "name": "Μαρία",
+   "voice": "Erinome"
+  },
+  "ada": {
+   "name": "Ada",
+   "voice": "Sulafat"
+  },
+  "mert": {
+   "name": "Mert",
+   "voice": "Umbriel"
+  },
+  "katerina": {
+   "name": "Κατερίνα",
+   "voice": "Gacrux"
+  }
+ },
+ "sounds": true
+}

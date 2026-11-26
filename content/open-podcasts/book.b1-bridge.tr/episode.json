@@ -1,0 +1,944 @@
+{
+ "id": "book.b1-bridge.tr",
+ "kind": "chapter",
+ "lang": "tr",
+ "title": {
+  "tr": "Arabam olsa: belediyeye bir mektup",
+  "en": "If I had a car: a letter to the town hall"
+ },
+ "curriculum": "oknos-book",
+ "stage": "b1-bridge",
+ "version": 3,
+ "written": "2026-11-26",
+ "date": null,
+ "rendered": "2026-11-26T12:54:36",
+ "seconds": 827.8,
+ "script": "2ba01dbf7980",
+ "parts": [
+  {
+   "t": 3.0,
+   "title": "Açılış"
+  },
+  {
+   "t": 48.79,
+   "title": "Hoş geldin"
+  },
+  {
+   "t": 86.44,
+   "title": "Panodaki duyuru"
+  },
+  {
+   "t": 149.86,
+   "title": "Eleni yazıyor"
+  },
+  {
+   "t": 246.12,
+   "title": "Pazarı kim taşıyor?"
+  },
+  {
+   "t": 332.49,
+   "title": "Bana dedi ki"
+  },
+  {
+   "t": 422.87,
+   "title": "Arabam olsa"
+  },
+  {
+   "t": 482.84,
+   "title": "Cümleleri bağla"
+  },
+  {
+   "t": 551.54,
+   "title": "Sıra sende"
+  },
+  {
+   "t": 614.66,
+   "title": "Mert'in hatası"
+  },
+  {
+   "t": 646.53,
+   "title": "Oyun: edilgen mi?"
+  },
+  {
+   "t": 688.13,
+   "title": "Sahne yeniden"
+  },
+  {
+   "t": 718.91,
+   "title": "Kelime köşesi"
+  },
+  {
+   "t": 748.49,
+   "title": "Son söz"
+  },
+  {
+   "t": 772.83,
+   "title": "Katerina anlatıyor"
+  }
+ ],
+ "lines": [
+  {
+   "t": 3.0,
+   "lang": "el",
+   "say": "Καλημέρα. Διάβασα την ανακοίνωση για τη λαϊκή αγορά.",
+   "who": "eleni"
+  },
+  {
+   "t": 7.25,
+   "lang": "el",
+   "say": "Ναι. Από τις πέντε Μαρτίου η αγορά μεταφέρεται στο πάρκο.",
+   "who": "town-hall-clerk"
+  },
+  {
+   "t": 11.53,
+   "lang": "el",
+   "say": "Η απόφαση πάρθηκε από το δημοτικό συμβούλιο.",
+   "who": "town-hall-clerk"
+  },
+  {
+   "t": 14.38,
+   "lang": "el",
+   "say": "Θα υπάρχει στάση λεωφορείου στο πάρκο;",
+   "who": "eleni"
+  },
+  {
+   "t": 16.97,
+   "lang": "el",
+   "say": "Όχι, δε θα υπάρχει στάση λεωφορείου.",
+   "who": "town-hall-clerk"
+  },
+  {
+   "t": 19.84,
+   "lang": "el",
+   "say": "Αν είχα αυτοκίνητο, θα πήγαινα εύκολα. Αλλά δεν έχω.",
+   "who": "eleni"
+  },
+  {
+   "t": 24.73,
+   "lang": "el",
+   "say": "Τότε στείλτε ένα μήνυμα στον δήμαρχο.",
+   "who": "town-hall-clerk"
+  },
+  {
+   "t": 27.4,
+   "lang": "tr",
+   "say": "Eleni'nin arabası yok, kendisi söyledi: δεν έχω. Ama hemen önce αν είχα dedi. Είχα, yani vardı. Geçmiş zaman.",
+   "who": "ada"
+  },
+  {
+   "t": 38.93,
+   "lang": "tr",
+   "say": "Yani bir zamanlar arabası vardı da sattı mı?",
+   "who": "mert"
+  },
+  {
+   "t": 41.41,
+   "lang": "tr",
+   "say": "Hiç olmadı. Geçmiş gibi duran bu biçim şimdiyi anlatıyor. Bugün bu sırrı çözeceğiz.",
+   "who": "ada"
+  },
+  {
+   "t": 48.79,
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, kitabın son bölümü: B bir'e köprü. Bugün çoğunlukla Yunanca konuşuyoruz, Türkçe sadece ince noktalar için.",
+   "who": "ada"
+  },
+  {
+   "t": 61.0,
+   "lang": "el",
+   "say": "Μερτ, είσαι έτοιμος;",
+   "who": "ada"
+  },
+  {
+   "t": 63.51,
+   "lang": "el",
+   "say": "Νομίζω ναι. Λίγο φοβάμαι, αλλά είμαι έτοιμος.",
+   "who": "mert"
+  },
+  {
+   "t": 67.41,
+   "lang": "el",
+   "say": "Σήμερα διαβάζουμε μια ανακοίνωση του δήμου. Και μετά, την απάντηση της Ελένης.",
+   "who": "ada"
+  },
+  {
+   "t": 72.81,
+   "lang": "tr",
+   "say": "B bir sınavının yazma bölümünden bir görev: belediyeye resmî bir e-posta. Stüdyoda Katerina da var.",
+   "who": "ada"
+  },
+  {
+   "t": 80.43,
+   "lang": "el",
+   "say": "Γεια σας! Σήμερα θα σας διαβάσω την ανακοίνωση του δήμου.",
+   "who": "katerina"
+  },
+  {
+   "t": 86.44,
+   "lang": "tr",
+   "say": "Mahalledeki panoda bir duyuru var. Kulak ver: yeni yerler için başvurular ne zamana kadar?",
+   "who": "ada"
+  },
+  {
+   "t": 92.87,
+   "lang": "el",
+   "say": "Ανακοίνωση.",
+   "who": "katerina"
+  },
+  {
+   "t": 94.07,
+   "lang": "el",
+   "say": "Από τις πέντε Μαρτίου η λαϊκή αγορά της Τετάρτης μεταφέρεται από την οδό Αθηνάς στο πάρκο της γειτονιάς, καθώς το πάρκο είναι πιο μεγάλο.",
+   "who": "katerina"
+  },
+  {
+   "t": 103.34,
+   "lang": "el",
+   "say": "Η απόφαση πάρθηκε από το δημοτικό συμβούλιο.",
+   "who": "katerina"
+  },
+  {
+   "t": 106.52,
+   "lang": "el",
+   "say": "Η οδός Αθηνάς θα καθαριστεί και θα κλείσει για τα αυτοκίνητα.",
+   "who": "katerina"
+  },
+  {
+   "t": 110.51,
+   "lang": "el",
+   "say": "Οι αιτήσεις για τις νέες θέσεις υποβάλλονται ηλεκτρονικά μέχρι τις δεκαπέντε Φεβρουαρίου.",
+   "who": "katerina"
+  },
+  {
+   "t": 115.88,
+   "lang": "el",
+   "say": "Οι πωλητές θα ενημερωθούν με ηλεκτρονικό μήνυμα.",
+   "who": "katerina"
+  },
+  {
+   "t": 119.51,
+   "lang": "el",
+   "say": "Για πληροφορίες τηλεφωνήστε στο γραφείο του δήμου.",
+   "who": "katerina"
+  },
+  {
+   "t": 123.06,
+   "lang": "tr",
+   "say": "Ne zamana kadar? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 129.22,
+   "lang": "el",
+   "say": "Μέχρι τις πέντε Μαρτίου.",
+   "who": "mert"
+  },
+  {
+   "t": 131.06,
+   "lang": "el",
+   "say": "Όχι, Μερτ. Στις πέντε Μαρτίου μεταφέρεται η αγορά. Οι αιτήσεις υποβάλλονται μέχρι τις δεκαπέντε Φεβρουαρίου.",
+   "who": "ada"
+  },
+  {
+   "t": 140.4,
+   "lang": "tr",
+   "say": "Bir şeye daha dikkat et: duyuruda kimse ben ya da biz demiyor. Pazar taşınıyor, karar alındı. Buna döneceğiz.",
+   "who": "ada"
+  },
+  {
+   "t": 149.86,
+   "lang": "tr",
+   "say": "Eleni karara katılmıyor ve belediye başkanına yazıyor. Yazarken sesli okuyor. Dikkat: Eleni ne öneriyor? İki şey.",
+   "who": "ada"
+  },
+  {
+   "t": 160.0,
+   "lang": "el",
+   "say": "Θέμα: Η λαϊκή αγορά της Τετάρτης.",
+   "who": "eleni"
+  },
+  {
+   "t": 162.98,
+   "lang": "el",
+   "say": "Αξιότιμε κύριε Δήμαρχε,",
+   "who": "eleni"
+  },
+  {
+   "t": 164.93,
+   "lang": "el",
+   "say": "Διάβασα την ανακοίνωση του δήμου για τη λαϊκή αγορά και σας γράφω, επειδή δε συμφωνώ με την απόφαση.",
+   "who": "eleni"
+  },
+  {
+   "t": 172.05,
+   "lang": "el",
+   "say": "Στην ανακοίνωση γράφετε ότι η αγορά μεταφέρεται, καθώς το πάρκο είναι πιο μεγάλο.",
+   "who": "eleni"
+  },
+  {
+   "t": 177.26,
+   "lang": "el",
+   "say": "Αν και το πάρκο είναι ωραίο, είναι μακριά από το μετρό, ενώ η οδός Αθηνάς είναι κοντά.",
+   "who": "eleni"
+  },
+  {
+   "t": 183.38,
+   "lang": "el",
+   "say": "Ένας υπάλληλος του δήμου μου είπε ότι δε θα υπάρχει στάση λεωφορείου στο πάρκο.",
+   "who": "eleni"
+  },
+  {
+   "t": 187.93,
+   "lang": "el",
+   "say": "Επομένως, οι συνταξιούχοι δε θα μπορούν να πάνε στην αγορά.",
+   "who": "eleni"
+  },
+  {
+   "t": 191.6,
+   "lang": "el",
+   "say": "Επιπλέον, οι κάτοικοι δε ρωτήθηκαν πριν από την απόφαση.",
+   "who": "eleni"
+  },
+  {
+   "t": 196.03,
+   "lang": "el",
+   "say": "Αν είχα αυτοκίνητο, θα πήγαινα εύκολα στο πάρκο, αλλά δεν έχω, όπως και πολλοί άλλοι κάτοικοι.",
+   "who": "eleni"
+  },
+  {
+   "t": 202.63,
+   "lang": "el",
+   "say": "Γι' αυτό σας προτείνω είτε να μείνει η αγορά στην οδό Αθηνάς είτε να δημιουργηθεί μια στάση λεωφορείου κοντά στο πάρκο.",
+   "who": "eleni"
+  },
+  {
+   "t": 210.42,
+   "lang": "el",
+   "say": "Αν αλλάξετε την απόφαση, οι κάτοικοι θα είναι πιο ευχαριστημένοι.",
+   "who": "eleni"
+  },
+  {
+   "t": 214.79,
+   "lang": "el",
+   "say": "Τέλος, σας παρακαλώ να με ενημερώσετε σύντομα για την απόφασή σας.",
+   "who": "eleni"
+  },
+  {
+   "t": 219.55,
+   "lang": "el",
+   "say": "Με εκτίμηση, Ελένη Ράπτη.",
+   "who": "eleni"
+  },
+  {
+   "t": 222.34,
+   "lang": "tr",
+   "say": "Ne öneriyor? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 229.37,
+   "lang": "el",
+   "say": "Να μείνει η αγορά στην οδό Αθηνάς. Ή μια στάση λεωφορείου κοντά στο πάρκο.",
+   "who": "mert"
+  },
+  {
+   "t": 235.98,
+   "lang": "tr",
+   "say": "Aynen. İki seçenek, aralarında είτε… είτε: ya… ya da. Bu mektubu dört araç güzelleştiriyor.",
+   "who": "ada"
+  },
+  {
+   "t": 246.12,
+   "lang": "tr",
+   "say": "Η αγορά μεταφέρεται. Kim taşıyor? Pazar kendi kendine mi gidiyor?",
+   "who": "mert"
+  },
+  {
+   "t": 250.54,
+   "lang": "tr",
+   "say": "Bu edilgen çatı. Türkçede taşınıyor, duyuruldu dersin. Yunanca da fiilin sonunu değiştirir: iş özneye yapılır.",
+   "who": "ada"
+  },
+  {
+   "t": 258.27,
+   "lang": "el",
+   "say": "Η αγορά μεταφέρεται. Οι αιτήσεις υποβάλλονται ηλεκτρονικά.",
+   "who": "katerina"
+  },
+  {
+   "t": 269.66,
+   "lang": "tr",
+   "say": "Geçmişte ανακοινώθηκε, duyuruldu. Tarafından yerine από gelir.",
+   "who": "ada"
+  },
+  {
+   "t": 277.27,
+   "lang": "el",
+   "say": "Μερτ, ποιος πήρε την απόφαση;",
+   "who": "ada"
+  },
+  {
+   "t": 279.93,
+   "lang": "el",
+   "say": "Η απόφαση πάρθηκε από το δημοτικό συμβούλιο.",
+   "who": "mert"
+  },
+  {
+   "t": 282.8,
+   "lang": "el",
+   "say": "Μπράβο!",
+   "who": "ada"
+  },
+  {
+   "t": 284.46,
+   "lang": "tr",
+   "say": "Karar alındı ile birebir aynı kalıp. Ama παίρνω, πάρθηκε tahmin edilmez; böyle geçmişleri fiille birlikte öğren. Gelecekte θα gelir:",
+   "who": "ada"
+  },
+  {
+   "t": 297.92,
+   "lang": "el",
+   "say": "Οι πωλητές θα ενημερωθούν με ηλεκτρονικό μήνυμα.",
+   "who": "katerina"
+  },
+  {
+   "t": 306.68,
+   "lang": "el",
+   "say": "Και η οδός Αθηνάς; Τι θα γίνει;",
+   "who": "ada"
+  },
+  {
+   "t": 309.52,
+   "lang": "el",
+   "say": "Θα καθαριστεί και θα κλείσει για τα αυτοκίνητα.",
+   "who": "mert"
+  },
+  {
+   "t": 312.29,
+   "lang": "tr",
+   "say": "Θα καθαριστεί, temizlenecek: edilgen. Θα κλείσει de edilgen mi?",
+   "who": "mert"
+  },
+  {
+   "t": 317.12,
+   "lang": "tr",
+   "say": "Hayır. Κλείνω hem kapatmak hem kapanmak demek, fiil etken. Bir tuzak daha: έρχεται, κάθεται, χρειάζεται. Sonları edilgen gibi, ama değiller.",
+   "who": "ada"
+  },
+  {
+   "t": 332.49,
+   "lang": "el",
+   "say": "Μερτ, τι είπε ο υπάλληλος στην Ελένη;",
+   "who": "ada"
+  },
+  {
+   "t": 335.58,
+   "lang": "el",
+   "say": "Είπε: «Όχι, δε θα υπάρχει στάση λεωφορείου.»",
+   "who": "mert"
+  },
+  {
+   "t": 339.33,
+   "lang": "tr",
+   "say": "Eleni mektupta bunu aktarıyor:",
+   "who": "ada"
+  },
+  {
+   "t": 341.95,
+   "lang": "el",
+   "say": "Ένας υπάλληλος του δήμου μου είπε ότι δε θα υπάρχει στάση λεωφορείου στο πάρκο.",
+   "who": "eleni"
+  },
+  {
+   "t": 346.85,
+   "lang": "tr",
+   "say": "Türkçe olmayacağını söyledi der, fiil isme döner. Yunanca είπε ότι ya da είπε πως der, arkasından normal bir cümle. Ve zaman değişmez: görevli θα υπάρχει dedi, Eleni de θα υπάρχει diyor. Değişen sadece kişi.",
+   "who": "ada"
+  },
+  {
+   "t": 369.03,
+   "lang": "el",
+   "say": "Κατερίνα, πού είσαι τώρα;",
+   "who": "ada"
+  },
+  {
+   "t": 371.07,
+   "lang": "el",
+   "say": "Είμαι στο στούντιο, με την Άντα και τον Μερτ.",
+   "who": "katerina"
+  },
+  {
+   "t": 373.86,
+   "lang": "el",
+   "say": "Μερτ, τι είπε η Κατερίνα;",
+   "who": "ada"
+  },
+  {
+   "t": 380.18,
+   "lang": "el",
+   "say": "Η Κατερίνα είπε ότι είναι στο στούντιο.",
+   "who": "mert"
+  },
+  {
+   "t": 383.15,
+   "lang": "tr",
+   "say": "Σωστά. Bir soruyu aktarırken αν gelir. Ama bu αν eğer değil, -ip -mediğini demek. O yüzden arkasından θα gelebilir.",
+   "who": "ada"
+  },
+  {
+   "t": 396.04,
+   "lang": "el",
+   "say": "Ρώτησα τον υπάλληλο αν θα υπάρχει στάση λεωφορείου.",
+   "who": "eleni"
+  },
+  {
+   "t": 406.53,
+   "lang": "tr",
+   "say": "Bir ricayı aktarırken να gelir. Görevli στείλτε dedi:",
+   "who": "ada"
+  },
+  {
+   "t": 413.86,
+   "lang": "el",
+   "say": "Μου είπε να στείλω ένα μήνυμα στον δήμαρχο.",
+   "who": "eleni"
+  },
+  {
+   "t": 422.87,
+   "lang": "tr",
+   "say": "Şimdi açılıştaki sır. Αν είχα αυτοκίνητο.",
+   "who": "mert"
+  },
+  {
+   "t": 425.96,
+   "lang": "tr",
+   "say": "Hayal edilen bir durum için Yunanca iki tarafta da sürekli geçmişi kullanır, παρατατικός. Biçim geçmiş, anlam şimdi. Türkçe de öyle: arabam olsa giderdim. Giderdim'de bir geçmiş eki var, ama şimdiyi anlatıyorsun.",
+   "who": "ada"
+  },
+  {
+   "t": 442.7,
+   "lang": "el",
+   "say": "Αν είχα αυτοκίνητο, θα πήγαινα στο πάρκο.",
+   "who": "katerina"
+  },
+  {
+   "t": 449.88,
+   "lang": "tr",
+   "say": "Θα πήγα diyebilir miyim?",
+   "who": "mert"
+  },
+  {
+   "t": 451.94,
+   "lang": "tr",
+   "say": "Hayır. Πήγα bir kez olan geçmiş; burada πήγαινα lazım. Παίρνω için de έπαιρνα. Ve αν sözcüğünden sonra θα gelmez.",
+   "who": "ada"
+  },
+  {
+   "t": 466.58,
+   "lang": "el",
+   "say": "Αν μπορούσα, θα έπαιρνα ταξί.",
+   "who": "katerina"
+  },
+  {
+   "t": 471.97,
+   "lang": "el",
+   "say": "Μερτ, αν είχες πολλά λεφτά, τι θα έκανες;",
+   "who": "ada"
+  },
+  {
+   "t": 476.32,
+   "lang": "el",
+   "say": "Αν είχα πολλά λεφτά, δε θα δούλευα. Θα ταξίδευα!",
+   "who": "mert"
+  },
+  {
+   "t": 482.84,
+   "lang": "tr",
+   "say": "Son araç, bağlaçlar. Sınavda puanı bunlar getirir: her paragrafta en az bir tane. Mert, Eleni'nin mektubunda kaç tane yakaladın?",
+   "who": "ada"
+  },
+  {
+   "t": 493.11,
+   "lang": "tr",
+   "say": "Αν και, olsa da. Επειδή, çünkü. Bir de καθώς.",
+   "who": "mert"
+  },
+  {
+   "t": 498.41,
+   "lang": "tr",
+   "say": "Καθώς da -dığı için, ama resmî: takım elbiseli bir επειδή. Karşıtlık için ενώ, oysa.",
+   "who": "ada"
+  },
+  {
+   "t": 507.59,
+   "lang": "el",
+   "say": "Το πάρκο είναι μακριά από το μετρό, ενώ η οδός Αθηνάς είναι κοντά.",
+   "who": "katerina"
+  },
+  {
+   "t": 518.34,
+   "lang": "el",
+   "say": "Και μετά; Τι γράφει η Ελένη;",
+   "who": "ada"
+  },
+  {
+   "t": 521.14,
+   "lang": "el",
+   "say": "Επομένως, οι συνταξιούχοι δε θα μπορούν να πάνε στην αγορά.",
+   "who": "mert"
+  },
+  {
+   "t": 526.12,
+   "lang": "tr",
+   "say": "Επομένως, bu nedenle; gündelik hâli γι' αυτό. Ekleme için επιπλέον, ayrıca. Son nokta için τέλος, son olarak. Açılış kalıp: Αξιότιμε κύριε Δήμαρχε. Kapanış da: Με εκτίμηση, ve uydurma bir ad. Yüz otuz ile yüz yetmiş kelime arası.",
+   "who": "ada"
+  },
+  {
+   "t": 551.54,
+   "lang": "tr",
+   "say": "Sıra sende. Ben Türkçe söylüyorum, sen Yunancasını söyle. Karar dün belediye tarafından duyuruldu.",
+   "who": "ada"
+  },
+  {
+   "t": 562.34,
+   "lang": "el",
+   "say": "Η απόφαση ανακοινώθηκε χθες από τον δήμο.",
+   "who": "mert"
+  },
+  {
+   "t": 565.03,
+   "lang": "el",
+   "say": "Η απόφαση ανακοινώθηκε χθες από τον δήμο.",
+   "who": "katerina"
+  },
+  {
+   "t": 573.06,
+   "lang": "tr",
+   "say": "Bana nerede oturduğumu sordu.",
+   "who": "ada"
+  },
+  {
+   "t": 580.03,
+   "lang": "el",
+   "say": "Με ρώτησε αν μένω.",
+   "who": "mert"
+  },
+  {
+   "t": 582.05,
+   "lang": "tr",
+   "say": "Bu, oturup oturmadığımı sordu oldu. Soru kelimesi kalır.",
+   "who": "ada"
+  },
+  {
+   "t": 587.01,
+   "lang": "el",
+   "say": "Με ρώτησε πού μένω.",
+   "who": "katerina"
+  },
+  {
+   "t": 591.31,
+   "lang": "tr",
+   "say": "Pazar yakın olsa alışverişimi orada yapardım.",
+   "who": "ada"
+  },
+  {
+   "t": 599.41,
+   "lang": "el",
+   "say": "Αν η αγορά ήταν κοντά, θα έκανα εκεί τα ψώνια μου.",
+   "who": "mert"
+  },
+  {
+   "t": 603.01,
+   "lang": "el",
+   "say": "Αν η αγορά ήταν κοντά, θα έκανα εκεί τα ψώνια μου.",
+   "who": "katerina"
+  },
+  {
+   "t": 614.66,
+   "lang": "tr",
+   "say": "Mert, hızlı: başvurular elektronik olarak yapılır.",
+   "who": "ada"
+  },
+  {
+   "t": 619.42,
+   "lang": "el",
+   "say": "Οι αιτήσεις υποβάλλεται ηλεκτρονικά.",
+   "who": "mert"
+  },
+  {
+   "t": 622.44,
+   "lang": "tr",
+   "say": "Kaç başvuru var?",
+   "who": "ada"
+  },
+  {
+   "t": 623.94,
+   "lang": "tr",
+   "say": "Çok. Ama Türkçede de başvurular yapılır deriz, yapılırlar demeyiz.",
+   "who": "mert"
+  },
+  {
+   "t": 628.53,
+   "lang": "tr",
+   "say": "Hatanın kaynağı bu. Türkçede çoğul bir şeyin fiili çoğu zaman tekil kalır. Yunancada özne çoğulsa fiil de çoğul.",
+   "who": "ada"
+  },
+  {
+   "t": 637.31,
+   "lang": "el",
+   "say": "Οι αιτήσεις υποβάλλονται ηλεκτρονικά.",
+   "who": "katerina"
+  },
+  {
+   "t": 646.53,
+   "lang": "tr",
+   "say": "Küçük bir oyun. Katerina bir cümle söyleyecek. Fiil edilgen mi, değil mi?",
+   "who": "ada"
+  },
+  {
+   "t": 652.62,
+   "lang": "el",
+   "say": "Ο Νίκος έρχεται αύριο.",
+   "who": "katerina"
+  },
+  {
+   "t": 658.3,
+   "lang": "tr",
+   "say": "Değil. Sadece edilgen gibi görünüyor.",
+   "who": "mert"
+  },
+  {
+   "t": 661.23,
+   "lang": "el",
+   "say": "Το γραφείο κλείνει στις τρεις.",
+   "who": "katerina"
+  },
+  {
+   "t": 667.11,
+   "lang": "tr",
+   "say": "Ofis kapanır… Edilgen!",
+   "who": "mert"
+  },
+  {
+   "t": 669.18,
+   "lang": "el",
+   "say": "Όχι, Μερτ.",
+   "who": "ada"
+  },
+  {
+   "t": 671.34,
+   "lang": "tr",
+   "say": "Κλείνει etken: ofis kendi kendine kapanır.",
+   "who": "ada"
+  },
+  {
+   "t": 675.62,
+   "lang": "el",
+   "say": "Οι κάτοικοι δε ρωτήθηκαν.",
+   "who": "katerina"
+  },
+  {
+   "t": 681.19,
+   "lang": "tr",
+   "say": "Edilgen ve çoğul. Sakinlere sorulmadı.",
+   "who": "mert"
+  },
+  {
+   "t": 685.17,
+   "lang": "el",
+   "say": "Μπράβο!",
+   "who": "ada"
+  },
+  {
+   "t": 688.13,
+   "lang": "tr",
+   "say": "Açılıştaki sahne bir kez daha. Bu sefer her kelimeyi anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "t": 693.21,
+   "lang": "el",
+   "say": "Καλημέρα. Διάβασα την ανακοίνωση για τη λαϊκή αγορά.",
+   "who": "eleni"
+  },
+  {
+   "t": 697.46,
+   "lang": "el",
+   "say": "Ναι. Από τις πέντε Μαρτίου η αγορά μεταφέρεται στο πάρκο.",
+   "who": "town-hall-clerk"
+  },
+  {
+   "t": 701.74,
+   "lang": "el",
+   "say": "Η απόφαση πάρθηκε από το δημοτικό συμβούλιο.",
+   "who": "town-hall-clerk"
+  },
+  {
+   "t": 704.59,
+   "lang": "el",
+   "say": "Θα υπάρχει στάση λεωφορείου στο πάρκο;",
+   "who": "eleni"
+  },
+  {
+   "t": 707.18,
+   "lang": "el",
+   "say": "Όχι, δε θα υπάρχει στάση λεωφορείου.",
+   "who": "town-hall-clerk"
+  },
+  {
+   "t": 710.05,
+   "lang": "el",
+   "say": "Αν είχα αυτοκίνητο, θα πήγαινα εύκολα. Αλλά δεν έχω.",
+   "who": "eleni"
+  },
+  {
+   "t": 714.94,
+   "lang": "el",
+   "say": "Τότε στείλτε ένα μήνυμα στον δήμαρχο.",
+   "who": "town-hall-clerk"
+  },
+  {
+   "t": 718.91,
+   "lang": "tr",
+   "say": "Δήμος kelimesi tanıdık geliyor mu?",
+   "who": "ada"
+  },
+  {
+   "t": 722.34,
+   "lang": "tr",
+   "say": "Demokrasi! Δημοκρατία.",
+   "who": "mert"
+  },
+  {
+   "t": 724.54,
+   "lang": "tr",
+   "say": "Evet. Antik Yunancada δήμος halk demekti, κράτος da güç. Demokrasi, halkın yönetimi. Λαϊκή αγορά'daki λαός da halk: halk pazarı, bizim semt pazarı gibi. Αγορά ise antik kentte hem pazar yeriydi hem buluşma meydanı.",
+   "who": "ada"
+  },
+  {
+   "t": 748.49,
+   "lang": "tr",
+   "say": "Kitabın son bölümüydü bu. Bundan sonrası senin: uygulamada kendi mektubunu yaz, koç sınav ölçütlerine göre değerlendirsin.",
+   "who": "ada"
+  },
+  {
+   "t": 757.12,
+   "lang": "el",
+   "say": "Αν είχα χρόνο, θα έγραφα δέκα μηνύματα!",
+   "who": "mert"
+  },
+  {
+   "t": 760.01,
+   "lang": "el",
+   "say": "Έχεις χρόνο, Μερτ.",
+   "who": "ada"
+  },
+  {
+   "t": 762.84,
+   "lang": "tr",
+   "say": "Son söz Katerina'nın: Eleni'nin hikâyesi, sonuyla, sadece Yunanca. Sadece dinle. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "t": 770.18,
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "t": 772.83,
+   "lang": "el",
+   "say": "Κάθε Τετάρτη στη γειτονιά της Ελένης υπάρχει λαϊκή αγορά, στην οδό Αθηνάς.",
+   "who": "katerina"
+  },
+  {
+   "t": 778.0,
+   "lang": "el",
+   "say": "Ένα πρωί η Ελένη διαβάζει μια ανακοίνωση: η αγορά μεταφέρεται στο πάρκο.",
+   "who": "katerina"
+  },
+  {
+   "t": 783.4,
+   "lang": "el",
+   "say": "Αλλά το πάρκο είναι μακριά από το μετρό, και η Ελένη δεν έχει αυτοκίνητο.",
+   "who": "katerina"
+  },
+  {
+   "t": 788.38,
+   "lang": "el",
+   "say": "Ρωτάει έναν υπάλληλο του δήμου αν θα υπάρχει στάση λεωφορείου.",
+   "who": "katerina"
+  },
+  {
+   "t": 792.09,
+   "lang": "el",
+   "say": "Ο υπάλληλος λέει ότι δε θα υπάρχει, και της λέει να στείλει ένα μήνυμα στον δήμαρχο.",
+   "who": "katerina"
+  },
+  {
+   "t": 797.57,
+   "lang": "el",
+   "say": "Το βράδυ η Ελένη γράφει το μήνυμα.",
+   "who": "katerina"
+  },
+  {
+   "t": 800.3,
+   "lang": "el",
+   "say": "Μια εβδομάδα μετά, παίρνει μια απάντηση από τον δήμο.",
+   "who": "katerina"
+  },
+  {
+   "t": 803.72,
+   "lang": "el",
+   "say": "Η αγορά θα μεταφερθεί στο πάρκο. Αλλά κοντά στο πάρκο θα δημιουργηθεί μια καινούρια στάση λεωφορείου.",
+   "who": "katerina"
+  },
+  {
+   "t": 810.63,
+   "lang": "el",
+   "say": "Την πρώτη Τετάρτη η Ελένη παίρνει το λεωφορείο και πηγαίνει στην αγορά.",
+   "who": "katerina"
+  },
+  {
+   "t": 815.22,
+   "lang": "el",
+   "say": "Εκεί βλέπει πολλούς συνταξιούχους. Όλοι είναι ευχαριστημένοι.",
+   "who": "katerina"
+  },
+  {
+   "t": 819.27,
+   "lang": "el",
+   "say": "Η Ελένη χαμογελάει. Ένα καλό μήνυμα μπορεί να αλλάξει πολλά.",
+   "who": "katerina"
+  },
+  {
+   "t": 823.55,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ],
+ "cast": {
+  "eleni": {
+   "name": "Ελένη",
+   "voice": "Callirrhoe"
+  },
+  "town-hall-clerk": {
+   "name": "Υπάλληλος",
+   "voice": "Schedar"
+  },
+  "ada": {
+   "name": "Ada",
+   "voice": "Sulafat"
+  },
+  "mert": {
+   "name": "Mert",
+   "voice": "Umbriel"
+  },
+  "katerina": {
+   "name": "Κατερίνα",
+   "voice": "Gacrux"
+  }
+ },
+ "sounds": true
+}

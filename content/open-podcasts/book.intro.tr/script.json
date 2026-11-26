@@ -1,0 +1,1050 @@
+{
+ "id": "book.intro.tr",
+ "kind": "chapter",
+ "curriculum": "oknos-book",
+ "stage": "intro",
+ "lang": "tr",
+ "title": {
+  "tr": "P aslında r mi? Harfler, sesler, vurgu",
+  "en": "Is P really R? Letters, sounds and the stress"
+ },
+ "version": 3,
+ "written": "2026-11-26",
+ "cast": [
+  {
+   "id": "ada",
+   "name": "Ada",
+   "role": "host",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "f",
+   "age": "35",
+   "manner": "warm, curious, explains with Turkish bridges"
+  },
+  {
+   "id": "mert",
+   "name": "Mert",
+   "role": "cohost",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "m",
+   "age": "32",
+   "manner": "easy-going, a bit lazy, the learner; guesses and sometimes gets it wrong"
+  },
+  {
+   "id": "katerina",
+   "name": "Κατερίνα",
+   "role": "guest",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "45",
+   "manner": "native, from Thessaloniki, warm, patient, clear"
+  },
+  {
+   "id": "ayse",
+   "name": "Αϊσέ",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "30",
+   "manner": "Turkish learner of Greek from Izmir, a little shy, polite"
+  },
+  {
+   "id": "waiter",
+   "name": "Σερβιτόρος",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "m",
+   "age": "25",
+   "manner": "café waiter, quick, polite"
+  }
+ ],
+ "sources": [
+  {
+   "what": "chapter",
+   "ref": "oknos-book/lessons/intro"
+  },
+  {
+   "what": "chapter",
+   "ref": "open-book/lessons/reading",
+   "note": "the café scene"
+  }
+ ],
+ "segments": [
+  {
+   "part": "Açılış"
+  },
+  {
+   "lang": "el",
+   "say": "Στάση. Μετρό. Σινεμά. Ταβέρνα.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου! Παρακαλώ;",
+   "who": "waiter"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου! Ένα τσάι, παρακαλώ.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ένα τσάι. Και γιαούρτι;",
+   "who": "waiter"
+  },
+  {
+   "lang": "el",
+   "say": "Ναι, ένα γιαούρτι. Ευχαριστώ!",
+   "who": "ayse"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir sokak, dört tabela, bir kafe. Ve bil bakalım: bu kelimelerin yarısını zaten tanıyorsun.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Metro, sinema, çay, yoğurt. Bunları duydum. Ama tabelaya baksam okuyamam.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bugün tam bunu değiştireceğiz. Bir de şunu soracağım: Yunancada Türkçede hiç olmayan hangi sesler var?",
+   "who": "ada"
+  },
+  {
+   "part": "Hoş geldin"
+  },
+  {
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, giriş bölümü. Birinci dersten önce okumayı öğreniyoruz.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum. Bugün herhalde çok.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bugünün sonunda Atina'da bir tabelayı ya da bir kafenin menüsünü sesli okuyabileceksin. Harfleri burada göremezsin, bu bir podcast. Ama sesleri duyup ağzına alacaksın. Sonra uygulamada harfler bu seslere oturacak.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Yani önce kulak, sonra göz.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynen. Stüdyoda Katerina da var. Selanikli. Kelimeleri o söyleyecek, sen de arkasından yüksek sesle söyle.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "part": "Atina'da bir kafe"
+  },
+  {
+   "lang": "tr",
+   "say": "İlk sahne. Ayşe İzmirli, Atina'ya yeni geldi. Sokakta yürüyor ve tabelaları yüksek sesle okuyor. Sonra bir kafeye giriyor. Bir şeye kulak ver: Ayşe helva istiyor mu?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Στάση. Μετρό. Σινεμά. Ταβέρνα.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου! Παρακαλώ;",
+   "who": "waiter"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου! Ένα τσάι, παρακαλώ.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ένα τσάι. Και γιαούρτι;",
+   "who": "waiter"
+  },
+  {
+   "lang": "el",
+   "say": "Ναι, ένα γιαούρτι. Ευχαριστώ!",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Και χαλβάς;",
+   "who": "waiter"
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, ευχαριστώ.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ένα τσάι, ένα γιαούρτι. Παρακαλώ!",
+   "who": "waiter"
+  },
+  {
+   "lang": "tr",
+   "say": "Helva istiyor mu? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Garson χαλβάς dedi, Ayşe de όχι dedi. Hayır galiba.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru. Όχι, ευχαριστώ: hayır, teşekkürler. Bir çay ve bir yoğurt aldı. Şimdi aynı sahne yavaşça. Bu sefer bir kelimeyi say: παρακαλώ kaç kez geçiyor?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου! Παρακαλώ;",
+   "who": "waiter",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου! Ένα τσάι, παρακαλώ.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Ένα τσάι. Και γιαούρτι;",
+   "who": "waiter",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Ναι, ένα γιαούρτι. Ευχαριστώ!",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Και χαλβάς;",
+   "who": "waiter",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, ευχαριστώ.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Ένα τσάι, ένα γιαούρτι. Παρακαλώ!",
+   "who": "waiter",
+   "speed": 0.85
+  },
+  {
+   "lang": "tr",
+   "say": "Kaç kez? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "İki. Ayşe çay isterken bir, garson en sonda bir.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Üç. Garson en başta da söyledi: buyurun, ne istersiniz. Ayşe lütfen diye söyledi, garson en sonda buyurun, işte diye. Tek kelime, üç iş.",
+   "who": "ada"
+  },
+  {
+   "part": "Göz kandırır"
+  },
+  {
+   "lang": "tr",
+   "say": "Ada, tabelalara dönelim. Ayşe metro dedi. Ama ben o tabelaya baksam metpo okurdum herhalde.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Herkes öyle başlar. Tabelada Latin P harfine benzeyen bir harf var. Ama Yunancada o harf r sesidir. Yani metro, ama r ile.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Başka böyle hain harf var mı?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Birkaç tane. Latin H harfine benzeyen harf i okunur. Latin Y'ye benzeyen harf de i. İzmir'in Yunanca adında ikisi birden var. Katerina?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "η Σμύρνη",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Smírni. Bir de küçük v harfine benzeyen harf aslında n okunur. Deniz ortasındaki ada, mesela: νησί.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Peki Latin B'ye benzeyen harf? O b'dir herhalde.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Maalesef değil. O v okunur. Kitap demek:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "το βιβλίο",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Vivlío. İki tane v sesi var, hiç b yok. Bunları ezberleme, kelimelerle duydukça kulağın alışır. X'e benzeyen harfi ise ayrıca konuşacağız, çünkü onun sesi Türkçede yok.",
+   "who": "ada"
+  },
+  {
+   "part": "Dil dişlerin arasında"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçede olmayan sesler. Ben hep Yunancayı Türkçeye yakın sanırdım.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Çok yakın. Yunanca da Türkçe gibi yazıldığı gibi okunur. Ama dört ses Türkçede yok. İlk ikisi kardeş. Katerina, memleketinin adını söyler misin?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Θεσσαλονίκη",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Baştaki sesi duydun mu? O ses Türkçede yok. Şöyle yap: dilinin ucunu dişlerinin arasına koy ve s demeye çalış. Hava dilinle dişlerin arasından çıkar.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Peltek s gibi mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Tam olarak. Türkçede peltek dediğimiz ses, Yunancada düzgün bir harf. Bir de tiyatro demek:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "το θέατρο",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi kardeşi. Dil yine dişlerin arasında, ama bu sefer z de. Ses titresin. Bu harfi matematikten tanıyorsun: delta, üçgen olan.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Delta. Biz onu d diye okuruz.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Yunanlı onu d diye okumaz. Katerina, iki ve on:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "δύο, δέκα",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Dil dişlerin arasında, ama z gibi titriyor. Demek delta bile d değilmiş.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Değil. Yunancada d sesini yazmak için başka bir yol var. Birazdan göreceğiz.",
+   "who": "ada"
+  },
+  {
+   "part": "Boğazdan gelen iki ses"
+  },
+  {
+   "lang": "tr",
+   "say": "Kalan iki ses boğazdan gelir. Biri helvadaki ses. Mert, helva de.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Helva.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Senin h sesin hafif bir nefes. Yunanlının sesi daha arkadan, boğazdan gelir, biraz hırıltılı. Almanca Bach'taki ses gibi. X'e benzeyen harf işte bu. Katerina:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "ο χαλβάς",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Dördüncüsü?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Dördüncüsü gama. Bizim yumuşak g'ye benzer, ama bir farkla. İstanbul Türkçesinde yumuşak g neredeyse duyulmaz: dağ deriz, daa gibi çıkar. Yunanca gama ise duyulur: boğazdan, yumuşak, çok hafif bir gargara gibi. Süt demek:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "το γάλα",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Ama e ve i seslerinden önce gama birden y olur. Yoğurdu sahnede duydun. Hatırla:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "το γιαούρτι",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Yaúrti. Bizim yoğurttaki yumuşak g uçmuş!",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Uçmuş. Kelime Türkçeden geçmiş, yeni bir kılığa girmiş. Bir de ters yön var: ş, ü ve ö Yunancada yok. O yüzden Ayşe'nin adı Yunanca şöyle:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Αϊσέ",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Ş gitmiş, s kalmış.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir de a ile i ayrı okunur: a, i, se. Yazıda i'nin üstündeki iki nokta şunu der: bu iki harfi birleştirme. Neden, şimdi göreceksin.",
+   "who": "ada"
+  },
+  {
+   "part": "İki harf, tek ses"
+  },
+  {
+   "lang": "tr",
+   "say": "Bazen iki harf yan yana gelir ve tek bir ses verir. Mesela çay. Yunancada ç harfi yok, onun yerine t ile s yan yana yazılır. Bizim ç'ye çok yakın, biraz daha ince.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "το τσάι",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Peki c? Mesela cam?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Cam için de d ile z yan yana. Bizim c'ye yakın: τζάμι.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Camı da almışlar! Peki u sesi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Yunancada o ile u'ya benzeyen iki harf yan yana gelir ve u okunur. Çorba, mesela: σούπα. Şimdi hatırla: Latin B'ye benzeyen harf v okunuyordu, delta da d değildi. Peki Yunanlı b ve d seslerini nasıl yazar?",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "İki harfle mi? Bu bölümün sırrı bu galiba.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynen. m ile p yan yana: b. n ile t yan yana: d. Bakkal ve domates:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "ο μπακάλης, η ντομάτα",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Bakkal da Türkçeden geçti. Kelimenin başında temiz bir b ya da d duyarsın. Ortada bazen mb, nd, bazen yalnızca b, d. Son olarak i sesi. Yunancada onu yazmanın beş yolu var: üç tek harf ve iki çift. Okurken hepsi aynı i. Yazarken hangisi olduğunu kelimeyle öğrenirsin.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Beş tane i. İyi ki okurken fark etmiyor. Peki teşekkürler kelimesi? Efharistó. Orada da bir çift var gibi.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Var. e ile u'ya benzeyen harf yan yana. Bu çift çoğu zaman ev okunur: Avrupa, Ευρώπη. Ama bazı seslerin önünde ef olur: ευχαριστώ. Bunu da kelimeyle duymak yeter.",
+   "who": "ada"
+  },
+  {
+   "part": "Hangi hece güçlü?"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi küçük ama çok önemli bir işaret: vurgu. İki ya da daha çok heceli her kelimede bir hece daha güçlü söylenir, ve Yunanca bunu o harfin üstüne küçük bir çizgiyle yazar.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçede öyle bir işaret yok.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Yok, çünkü Türkçede vurgu çoğu kelimede kendiliğinden sona gelir. Kalem, kitap, arkadaş. Yunancada ise kelimeden kelimeye değişir. Dinle: çorbada vurgu ilk hecede, domateste ortada, kahvede sonda.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "η σούπα, η ντομάτα, ο καφές",
+   "who": "katerina",
+   "speed": 0.9
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "lang": "tr",
+   "say": "Vurgu yanlış olsa ne olur? Yine anlaşılmaz mı?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bazen başka bir kelime olur. Türkçede de olur: İstanbul'daki Bebek semtinde vurgu baştadır, kucaktaki bebekte sondadır. Yunancada da işte iki kelime. Biri ne zaman demek, öbürü hiç demek. Tek fark vurgu.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Πότε; Ποτέ.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Hangisi ne zaman? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4.5
+  },
+  {
+   "lang": "tr",
+   "say": "İlki ne zaman, ikincisi hiç.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru. Póte: ne zaman. Poté: hiç. Bir sürpriz daha: çay Türkçede tek hece, Yunancada iki. Neden? a ile i yan yana normalde e okunur, ve demek gibi. Ama vurgu a'nın üstüne gelince çift bozulur, ikisi ayrı okunur.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "και, τσάι",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Biri tek hece, öbürü iki hece. Peki tabelalarda vurgu işareti var mıydı?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İyi yakaladın, yoktu. Büyük harfle yazınca işaret konmaz. Vurguyu kelimeyi tanıyarak bilirsin: tavérna. Bir de bir göz notu: s harfinin kelime sonunda ayrı bir biçimi var. Ses aynı, uygulamada görürsün.",
+   "who": "ada"
+  },
+  {
+   "part": "Sıra sende"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi sıra sende. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert deneyecek, en son Katerina doğrusunu söyleyecek. Birincisi: kafede kibarca bir çay iste.",
+   "who": "ada"
+  },
+  {
+   "pause": 4.5
+  },
+  {
+   "lang": "el",
+   "say": "Ένα τσάι, παρακαλώ.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Ένα τσάι, παρακαλώ.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Garson helva ister misin diye soruyor. Hayır, teşekkürler de.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, ευχαριστώ.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, ευχαριστώ.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Bir arkadaşına ne zaman diye sor.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Ποτέ;",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Hiç mi? Vurguyu nereye koydun, Mert?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ah, sona koydum. Başta olacaktı.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Πότε;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "tr",
+   "say": "Son olarak, bir yoğurt iste, lütfen diyerek.",
+   "who": "ada"
+  },
+  {
+   "pause": 5
+  },
+  {
+   "lang": "el",
+   "say": "Ένα γιαούρτι, παρακαλώ.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Ένα γιαούρτι, παρακαλώ.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Mert'in hatası"
+  },
+  {
+   "lang": "tr",
+   "say": "Mert, menüye bakıyorsun. X harfine benzeyen bir harfle başlayan bir tatlı var. Düşünmeden oku.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ksalvas!",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Ksalvas mı? Sahnede ne duymuştun?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ah. Helva. O harf x değil, boğazdan bir h.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçe konuşanların en sık hatası bu. Göz Latin harfini görür, ağız da onu okur. Gözüne değil, kulağına güven. Doğrusunu Katerina'dan dinle ve tekrar et:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "ο χαλβάς",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "part": "Oyun: Türkçesi ne?"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi oyun. Katerina bir kelime söyleyecek. Hepsi Türkçede de var. Sen Türkçesini bul, sonra Mert söyleyecek.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "ο μεζές",
+   "who": "katerina"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Meze! Kolay.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "το φλιτζάνι",
+   "who": "katerina"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Fincan! Ortada bizim c'ye benzeyen o çift var.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "ο κεφτές",
+   "who": "katerina"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Keyif mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Yakın, ama değil. Keyif başka bir kelime, κέφι. Bu köfte.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Köfte. Masaya keyif gelmedi, köfte geldi. Fena değil.",
+   "who": "mert"
+  },
+  {
+   "part": "Sahne yeniden"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi sahne bir kez daha, normal hızda. Bu sefer her kelimeyi tanıyacaksın.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Στάση. Μετρό. Σινεμά. Ταβέρνα.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου! Παρακαλώ;",
+   "who": "waiter"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου! Ένα τσάι, παρακαλώ.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ένα τσάι. Και γιαούρτι;",
+   "who": "waiter"
+  },
+  {
+   "lang": "el",
+   "say": "Ναι, ένα γιαούρτι. Ευχαριστώ!",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Και χαλβάς;",
+   "who": "waiter"
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, ευχαριστώ.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ένα τσάι, ένα γιαούρτι. Παρακαλώ!",
+   "who": "waiter"
+  },
+  {
+   "lang": "tr",
+   "say": "Durak, metro, sinema, taverna. Çay, yoğurt, helva. Hepsini anladım. Bir de efharistó, teşekkürler.",
+   "who": "mert"
+  },
+  {
+   "part": "Kelime köşesi: alfabe"
+  },
+  {
+   "lang": "tr",
+   "say": "Kelime köşesi. Alfabe kelimesi nereden geliyor, biliyor musun?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Tahmin edeyim: ilk iki harften. Alfa, beta.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynen. Ama bugünkü Yunancada ikinci harfin adı beta değil. Katerina, ilk iki harfin adını söyler misin?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "άλφα, βήτα",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Vita! Tabii. B'ye benzeyen harf v okunuyordu.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "O yüzden Yunanlı alfabe demez. Şöyle der:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "το αλφάβητο",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir hikâye daha. Bugünkü Yunancada o sesi veren iki harf var, hatırla. Adlarını Katerina söylesin:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "όμικρον, ωμέγα",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Mikro ve mega mı? Küçük o, büyük o!",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Tam olarak. Eskiden biri kısa bir o, öbürü uzun bir o idi. Bugün ikisi de aynı o. Fark yalnızca adlarında kaldı.",
+   "who": "ada"
+  },
+  {
+   "part": "Gelecek bölüm"
+  },
+  {
+   "lang": "tr",
+   "say": "Gelecek bölümde artık konuşuyoruz. Bir dil kursunun ilk günü. Eleni ile Mehmet yan yana oturuyor ve tanışıyorlar. Adını ve nereli olduğunu söylemeyi öğreneceksin.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Merhaba demeyi zaten biliyorum: γεια σου.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Biliyorsun. Bir de resmî merhabayı öğreneceğiz. Bu arada bölümü uygulamada oku, harfleri gözünle de gör. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Biraz daha tekrar istersen, hemen ardından kısa bir tekrar köşesi var.",
+   "who": "ada"
+  },
+  {
+   "part": "Tekrar köşesi"
+  },
+  {
+   "lang": "tr",
+   "say": "Tekrar köşesi. Bugünün anahtar kelimeleri ve cümleleri, yavaşça. Katerina'dan sonra tekrar et.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Ένα τσάι, παρακαλώ.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, ευχαριστώ.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "η σούπα, η ντομάτα, ο καφές",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Πότε; Ποτέ.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "το γιαούρτι, ο χαλβάς",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "tr",
+   "say": "Bu kadar. Haftaya görüşürüz.",
+   "who": "ada"
+  }
+ ]
+}

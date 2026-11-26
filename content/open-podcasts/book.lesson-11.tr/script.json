@@ -1,0 +1,966 @@
+{
+ "id": "book.lesson-11.tr",
+ "kind": "chapter",
+ "curriculum": "oknos-book",
+ "stage": "lesson-11",
+ "lang": "tr",
+ "title": {
+  "tr": "Üç domates mi, τρεις ντομάτες mi? Cumartesi pazarında",
+  "en": "Three tomato or three tomatoes? Saturday at the street market"
+ },
+ "version": 3,
+ "written": "2026-11-26",
+ "cast": [
+  {
+   "id": "ada",
+   "name": "Ada",
+   "role": "host",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "f",
+   "age": "35",
+   "manner": "warm, curious, explains with Turkish bridges"
+  },
+  {
+   "id": "mert",
+   "name": "Mert",
+   "role": "cohost",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "m",
+   "age": "32",
+   "manner": "easy-going, a bit lazy, the learner; guesses and sometimes gets it wrong"
+  },
+  {
+   "id": "katerina",
+   "name": "Κατερίνα",
+   "role": "guest",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "45",
+   "manner": "native, from Thessaloniki, warm, patient, clear"
+  },
+  {
+   "id": "kostas",
+   "name": "Κώστας",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "m",
+   "age": "55",
+   "manner": "greengrocer at the laiki street market, loud, cheerful, a quick seller's patter"
+  },
+  {
+   "id": "ayse",
+   "name": "Αϊσέ",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "30",
+   "manner": "Turkish learner of Greek from Izmir, a little shy, polite"
+  },
+  {
+   "id": "eleni",
+   "name": "Ελένη",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "30",
+   "manner": "Ayşe's neighbour and friend in Athens, chatty, cheerful, warm"
+  },
+  {
+   "id": "tamias",
+   "name": "Υπάλληλος",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "40",
+   "manner": "supermarket cashier, polite, brisk, matter-of-fact"
+  }
+ ],
+ "sources": [
+  {
+   "what": "chapter",
+   "ref": "oknos-book/lessons/lesson-11"
+  }
+ ],
+ "segments": [
+  {
+   "part": "Açılış"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα σας. Πόσο κάνουν οι ντομάτες;",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Δύο ευρώ το κιλό. Οι πιπεριές κάνουν τρία.",
+   "who": "kostas"
+  },
+  {
+   "lang": "el",
+   "say": "Θα ήθελα δύο κιλά ντομάτες και τέσσερις πιπεριές.",
+   "who": "ayse"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçede iki kilo domates ve dört biber deriz: kilo tek, domates tek, biber tek. Ama dikkatli dinlediysen, Ayşe'nin kelimelerinin hiçbiri tek kalmadı.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Duydum. Domates için ντομάτα biliyordum, burada ντομάτες dedi. Kilo da κιλά oldu. Neden?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bugün tam bunu çözeceğiz.",
+   "who": "ada"
+  },
+  {
+   "part": "Hoş geldin"
+  },
+  {
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, on birinci bölüm.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bugün pazara gidiyoruz. Yunanistan'da semt pazarına λαϊκή denir. Kaç kilo istediğini söyleyeceksin, fiyat soracaksın, parayı vereceksin.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Pazarlık da var mı?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Pazarlık yok, ama hesap var. Stüdyoda yine Katerina var. Sonda bize sadece Yunanca bir hikâye anlatacak.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "part": "Laikide"
+  },
+  {
+   "lang": "tr",
+   "say": "İlk sahne. Cumartesi sabahı, Kallithea'daki pazar. Ayşe, manav Kostas'ın tezgâhında. Kulak ver: hepsi kaç avro tutuyor?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα σας! Ορίστε;",
+   "who": "kostas"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα σας. Πόσο κάνουν οι ντομάτες;",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Δύο ευρώ το κιλό. Οι πιπεριές κάνουν τρία.",
+   "who": "kostas"
+  },
+  {
+   "lang": "el",
+   "say": "Θα ήθελα δύο κιλά ντομάτες και τέσσερις πιπεριές.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ορίστε. Θέλετε και φράουλες; Τέσσερα ευρώ το κιλό, πολύ φρέσκες!",
+   "who": "kostas"
+  },
+  {
+   "lang": "el",
+   "say": "Μισό κιλό, παρακαλώ.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Και αγγούρια; Αυτά εδώ κάνουν ένα ευρώ το κιλό, εκείνα εκεί δύο.",
+   "who": "kostas"
+  },
+  {
+   "lang": "el",
+   "say": "Ένα κιλό από αυτά, παρακαλώ.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Όλα μαζί εννιά ευρώ.",
+   "who": "kostas"
+  },
+  {
+   "lang": "el",
+   "say": "Ορίστε, δέκα ευρώ.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ευχαριστώ! Ορίστε ένα ευρώ. Γεια σας!",
+   "who": "kostas"
+  },
+  {
+   "lang": "tr",
+   "say": "Hepsi kaç avro? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "On avro. Ayşe δέκα ευρώ dedi.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Ayşe on avro verdi. Ama hesap dokuz: όλα μαζί εννιά ευρώ. Kostas bir avro geri verdi.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Paranın üstü. Onu kaçırdım.",
+   "who": "mert"
+  },
+  {
+   "part": "Süpermarkette"
+  },
+  {
+   "lang": "tr",
+   "say": "İkinci sahne. Pazardan sonra Ayşe ve arkadaşı Eleni süpermarkette. Bu sefer biraz yavaş. Soru şu: kasada kim ödüyor?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Έχεις πολλά πράγματα! Πόσα έδωσες στη λαϊκή;",
+   "who": "eleni",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Έδωσα εννιά ευρώ. Τώρα έχω αρκετές ντομάτες, αλλά δεν έχω καθόλου ρύζι.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Θέλω ένα πακέτο ρύζι και δύο μπουκάλια νερό.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Εγώ δεν έχω κανένα αυγό. Θέλω έξι αυγά και λίγο τυρί.",
+   "who": "eleni",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Δεκατρία ευρώ και δεκατέσσερα λεπτά, παρακαλώ.",
+   "who": "tamias",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Σήμερα πληρώνω εγώ.",
+   "who": "eleni",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Ευχαριστώ, Ελένη!",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "tr",
+   "say": "Kim ödüyor? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Eleni. Σήμερα πληρώνω εγώ: bugün ben ödüyorum. Böyle bir arkadaş herkese lazım.",
+   "who": "mert"
+  },
+  {
+   "part": "Üç domates, τρεις ντομάτες"
+  },
+  {
+   "lang": "tr",
+   "say": "Ada, açılışa dönelim. Türkçede üç domates deriz, domatesler demeyiz. Yunancada neden çoğul?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Çünkü Yunancada birden büyük her sayıdan sonra isim çoğul olur. Çoğulda da iki şey birden değişir: artikel ve ismin sonu. Eril ve dişilin çoğul artikeli οι, nötrünki τα. Katerina, önce iki dişil:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "η ντομάτα, οι ντομάτες. η πιπεριά, οι πιπεριές.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "lang": "tr",
+   "say": "Sondaki a sesi e oldu. Şimdi iki nötr:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "το μήλο, τα μήλα. το αγγούρι, τα αγγούρια.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "lang": "tr",
+   "say": "Elmada o sesi a oldu. Salatalıkta sona bir a eklendi. Kilo da nötr galiba: δύο κιλά.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Ağırlık tıpkı Türkçedeki gibi yan yana söylenir, ama hem ölçü hem isim çoğul:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Θα ήθελα δύο κιλά ντομάτες.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Peki yarım kilo? Yarım, birden büyük değil.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İyi düşündün. Yarım kilo tekil kalır, çilekler yine çoğul: μισό κιλό φράουλες. Bir de Kostas'ın fiyatına bak: δύο ευρώ το κιλό. Türkçedeki kilosu iki avro gibi. Kilosu demenin işini artikel yapıyor.",
+   "who": "ada"
+  },
+  {
+   "part": "Τρεις mi, τρία mı?"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi sayılar. Üç domates, τρεις ντομάτες. Peki üç salatalık? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "τρεις αγγούρια",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Tuzak buydu. Salatalık nötr, ve bazı sayılar ismin cinsine uyar. Nötrle üç, τρία olur:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Θέλω τρεις ντομάτες και τρία αγγούρια.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Aynı cümlede iki ayrı üç. Bütün sayılar böyle mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Neyse ki hayır. Sadece bir, üç, dört, on üç, on dört ve bunlarla bitenler. Dört de üç gibi: Ayşe τέσσερις πιπεριές dedi, Kostas çilek için τέσσερα ευρώ.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Τέσσερα. Demek avro nötr.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Sent de nötr: το λεπτό. Kasadaki hesabı hatırlıyor musun? On üç avro on dört sent. Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4.5
+  },
+  {
+   "lang": "el",
+   "say": "Δεκατρία ευρώ και δεκατέσσερα λεπτά.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Δεκατρία ευρώ και δεκατέσσερα λεπτά.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "part": "Ne kadar, kaç para?"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir şey daha. Ayşe πόσο κάνουν dedi, Eleni πόσα έδωσες. İkisi de ne kadar. Neden sonları farklı?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Fiyat sorarken hep πόσο. Ama Eleni kaç para verdin diyor, aklındaki kelime avro: πόσα ευρώ. Sayılan şeyde bu soru kelimesi isme uyar. Kaç domates? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Πόσες ντομάτες;",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru. Sayılmayan şeyde ise tekil kalır:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Πόσο ρύζι έχεις;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Eleni'nin fiili έδωσες, vermek fiilinin geçmişi. Kök değişiyor. Katerina, veriyorum, verdim, vereceğim:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "δίνω, έδωσα, θα δώσω",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "lang": "tr",
+   "say": "Ama Eleni kasada πληρώνω dedi. O da mı vermek?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "O asıl ödemek fiili. Türkçede de kaç para verdin de deriz, kaç para ödedin de. Ama hesap bende demek için Eleni gibi söyle:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Σήμερα πληρώνω εγώ.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Hiç yumurtam yok"
+  },
+  {
+   "lang": "tr",
+   "say": "Süpermarkette iki ayrı hiç duydun: δεν έχω καθόλου ρύζι, δεν έχω κανένα αυγό. Mert, ortak ne var?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "İkisinde de δεν var. Üçüncü bölümdeki δεν πίνω ποτέ καφέ gibi.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Türkçe gibi: hiç yumurtam yok deriz, hiç yumurtam var demeyiz. Καθόλου hiç değişmez, pirinç ya da süt gibi şeylerle en doğalı o. Κανένα ise tekildir ve ismin cinsine uyar: κανένα αυγό, ama καμία ντομάτα.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Peki δεν olmadan?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Soruda δεν yoksa κανένα hiç anlamına gelir: έχεις κανένα αυγό;",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Hiç yumurtan var mı? Türkçede de soruda hiç diyoruz!",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynen. Türkçe kulağın burada yardım ediyor. Katerina:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Δεν έχω κανένα αυγό.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "el",
+   "say": "Έχεις κανένα αυγό;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Sıra sende"
+  },
+  {
+   "lang": "tr",
+   "say": "Sıra sende. Ben Türkçe söylüyorum, sen Yunancasını yüksek sesle söyle. Sonra Mert dener, en son Katerina doğrusunu söyler. Birincisi: pazarda biberler ne kadar diye sor.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Πόσο κάνουν οι πιπεριές;",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Πόσο κάνουν οι πιπεριές;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Hiç pirincin olmadığını söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4.5
+  },
+  {
+   "lang": "el",
+   "say": "Δεν έχω καθόλου ρύζι.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Δεν έχω καθόλου ρύζι.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Bir arkadaşına sor: pazarda kaç para verdin?",
+   "who": "ada"
+  },
+  {
+   "pause": 4.5
+  },
+  {
+   "lang": "el",
+   "say": "Πόσα έδωσες στη λαϊκή;",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Πόσα έδωσες στη λαϊκή;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Son olarak, Kostas'a: şu salatalıkları istiyorum, bunları değil.",
+   "who": "ada"
+  },
+  {
+   "pause": 5
+  },
+  {
+   "lang": "el",
+   "say": "Θέλω εκείνα αγγούρια, όχι αυτά.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Neredeyse. Bu ve şu ismin yanında gelince artikel de kalır: εκείνα τα αγγούρια. Yakındakiler αυτά, uzaktakiler εκείνα.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Θέλω εκείνα τα αγγούρια, όχι αυτά.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Mert'in hatası"
+  },
+  {
+   "lang": "tr",
+   "say": "Mert, hızlı ol. Düşünmeden: üç domates istiyorum.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Θέλω τρεις ντομάτα.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Sayı doğru. Ama domates?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Üç domates dedim ya. Türkçede üç domatesler demeyiz.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçe konuşanların en sık hatası bu. Türkçede sayıdan sonra isim tekil kalır. Yunancada birden büyük her sayıdan sonra çoğul. Doğrusu:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Θέλω τρεις ντομάτες.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Oyun: tekilden çoğula"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi oyun. Ben bir kelimeyi artikeliyle söylüyorum, sen çoğulunu söyle, sonra Mert. Birincisi: η φράουλα.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "οι φράουλες",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru. İkincisi, vurgu kayıyor: το τυρί.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "τα τυριά",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Sonuncusu, bugünün kahramanı: ο μανάβης.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "οι μανάβες",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Kurala göre mantıklı. Ama bu kelime kendi yolunu tutuyor:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "ο μανάβης, οι μανάβηδες",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Μανάβης. Bu kelimeyi bir yerden tanıyorum sanki.",
+   "who": "mert"
+  },
+  {
+   "part": "Sahne yeniden"
+  },
+  {
+   "lang": "tr",
+   "say": "Süpermarket sahnesi bir kez daha, bu sefer normal hızda. Artık her kelimeyi anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Έχεις πολλά πράγματα! Πόσα έδωσες στη λαϊκή;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Έδωσα εννιά ευρώ. Τώρα έχω αρκετές ντομάτες, αλλά δεν έχω καθόλου ρύζι.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Θέλω ένα πακέτο ρύζι και δύο μπουκάλια νερό.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Εγώ δεν έχω κανένα αυγό. Θέλω έξι αυγά και λίγο τυρί.",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Δεκατρία ευρώ και δεκατέσσερα λεπτά, παρακαλώ.",
+   "who": "tamias"
+  },
+  {
+   "lang": "el",
+   "say": "Σήμερα πληρώνω εγώ.",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Ευχαριστώ, Ελένη!",
+   "who": "ayse"
+  },
+  {
+   "lang": "tr",
+   "say": "Hepsini anladım. Κανένα αυγό, καθόλου ρύζι, ve hesap Eleni'den.",
+   "who": "mert"
+  },
+  {
+   "part": "Kelime köşesi: manav ve agora"
+  },
+  {
+   "lang": "tr",
+   "say": "Kelime köşesi. Μανάβης tanıdık geldi, çünkü Türkçedeki manav kelimesinden geçmiş. Kahve de öyle: ο καφές. İkisinin çoğulu da kurala uymuyor:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "οι μανάβηδες, οι καφέδες",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Pazarın tam adı ise η λαϊκή αγορά. Λαϊκή, halk demek olan λαός kelimesinden: halkın pazarı. Αγορά, eski Atina'da şehrin çarşısı ve buluşma yeriydi. Bugün de pazar demek.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Halk pazarı. Bizim semt pazarı gibi, sadece adı çok daha eski.",
+   "who": "mert"
+  },
+  {
+   "part": "Gelecek bölüm"
+  },
+  {
+   "lang": "tr",
+   "say": "Gelecek bölüm bir tekrar bölümü: Ayşe'nin işlerle dolu bir günü. Büfe, fırın, Nikos'la bir kahve, Pire'de bir çamaşır makinesi.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Yeni kural yok mu? Şimdiden sevdim.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bu arada bölümü uygulamada oku, alıştırmaları yap. Şimdi son söz Katerina'nın: bugünün hikâyesi, sadece Yunanca. Sadece dinle. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "part": "Katerina anlatıyor"
+  },
+  {
+   "lang": "el",
+   "say": "Είναι Σάββατο πρωί.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Η Αϊσέ πάει στη λαϊκή, στην Καλλιθέα.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Η λαϊκή έχει πολλούς πάγκους.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Ο Κώστας είναι μανάβης. Έχει δύο πάγκους στη λαϊκή.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Έχει ντομάτες, πιπεριές, αγγούρια και φράουλες.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Οι ντομάτες κάνουν δύο ευρώ το κιλό και οι πιπεριές τρία.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Η Αϊσέ θέλει δύο κιλά ντομάτες και τέσσερις πιπεριές.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Οι φράουλες είναι πολύ φρέσκες. Η Αϊσέ θέλει μισό κιλό.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Και τα αγγούρια; Αυτά εδώ κάνουν ένα ευρώ το κιλό, εκείνα εκεί δύο.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Η Αϊσέ θέλει ένα κιλό από αυτά.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Όλα μαζί εννιά ευρώ.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Η Αϊσέ δίνει δέκα ευρώ στον Κώστα. Ο Κώστας δίνει ένα ευρώ στην Αϊσέ.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Τώρα η Αϊσέ είναι στο σουπερμάρκετ με τη φίλη της, την Ελένη.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Η Ελένη ρωτάει: «Πόσα έδωσες στη λαϊκή;»",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "«Έδωσα εννιά ευρώ.»",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Η Αϊσέ έχει αρκετές ντομάτες, αλλά δεν έχει καθόλου ρύζι.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Θέλει ένα πακέτο ρύζι και δύο μπουκάλια νερό.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Η Ελένη δεν έχει κανένα αυγό. Θέλει έξι αυγά και λίγο τυρί.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Όλα μαζί δεκατρία ευρώ και δεκατέσσερα λεπτά.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Ποιος πληρώνει; Σήμερα πληρώνει η Ελένη.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "«Ευχαριστώ, Ελένη!»",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Τώρα η Αϊσέ έχει πολλά πράγματα, και η Ελένη έχει έξι αυγά.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ]
+}

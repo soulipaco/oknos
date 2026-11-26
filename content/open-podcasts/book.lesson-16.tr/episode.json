@@ -1,0 +1,1101 @@
+{
+ "id": "book.lesson-16.tr",
+ "kind": "chapter",
+ "lang": "tr",
+ "title": {
+  "tr": "Telefon mu alacak? Yanya'da bir hafta sonu",
+  "en": "Is she buying a phone? A weekend in Ioannina"
+ },
+ "curriculum": "oknos-book",
+ "stage": "lesson-16",
+ "version": 3,
+ "written": "2026-11-26",
+ "date": null,
+ "rendered": "2026-11-26T13:34:08",
+ "seconds": 917.5,
+ "script": "4c8916ab3ff9",
+ "parts": [
+  {
+   "t": 3.0,
+   "title": "Açılış"
+  },
+  {
+   "t": 59.33,
+   "title": "Hoş geldin"
+  },
+  {
+   "t": 99.71,
+   "title": "Otele telefon"
+  },
+  {
+   "t": 172.7,
+   "title": "Otobüste"
+  },
+  {
+   "t": 235.73,
+   "title": "Resepsiyonda"
+  },
+  {
+   "t": 280.2,
+   "title": "Telefon mu alacak?"
+  },
+  {
+   "t": 382.35,
+   "title": "Onu: erkek mi, kadın mı?"
+  },
+  {
+   "t": 435.08,
+   "title": "Benim için"
+  },
+  {
+   "t": 480.38,
+   "title": "Geleceğiz, kalkacağız"
+  },
+  {
+   "t": 553.71,
+   "title": "Sıra sende"
+  },
+  {
+   "t": 637.14,
+   "title": "Mert'in hatası"
+  },
+  {
+   "t": 673.9,
+   "title": "Oyun: kimi, neyi?"
+  },
+  {
+   "t": 722.82,
+   "title": "Sahne yeniden"
+  },
+  {
+   "t": 761.24,
+   "title": "Kelime köşesi: yatak ve yabancı"
+  },
+  {
+   "t": 798.97,
+   "title": "Gelecek bölüm"
+  },
+  {
+   "t": 832.4,
+   "title": "Katerina anlatıyor"
+  }
+ ],
+ "lines": [
+  {
+   "t": 3.0,
+   "lang": "el",
+   "say": "Ξενοδοχείο «Λίμνη», καλησπέρα σας.",
+   "who": "receptionist"
+  },
+  {
+   "t": 5.8,
+   "lang": "el",
+   "say": "Καλησπέρα, η Αϊσέ Γιλμάζ είμαι. Με ακούτε;",
+   "who": "ayse"
+  },
+  {
+   "t": 10.24,
+   "lang": "el",
+   "say": "Σας ακούω, αλλά όχι καλά. Πού είστε;",
+   "who": "receptionist"
+  },
+  {
+   "t": 13.48,
+   "lang": "el",
+   "say": "Στο λεωφορείο. Θα έρθουμε στις δέκα, λίγο αργά.",
+   "who": "ayse"
+  },
+  {
+   "t": 16.65,
+   "lang": "el",
+   "say": "Κανένα πρόβλημα. Θα σας περιμένουμε.",
+   "who": "receptionist"
+  },
+  {
+   "t": 19.66,
+   "lang": "el",
+   "say": "Τι λένε; Μας περιμένουν;",
+   "who": "nikos"
+  },
+  {
+   "t": 21.88,
+   "lang": "el",
+   "say": "Ναι. Τώρα θα κοιμηθώ λίγο. Θα με ξυπνήσεις στα Ιωάννινα;",
+   "who": "ayse"
+  },
+  {
+   "t": 26.42,
+   "lang": "el",
+   "say": "Ναι, θα σε ξυπνήσω.",
+   "who": "nikos"
+  },
+  {
+   "t": 28.17,
+   "lang": "tr",
+   "say": "Yanya yolunda bir otobüs, bir cuma akşamı. Ayşe otele telefon ediyor, sonra Nikos'la konuşuyor. Kısa bir konuşma, ama neredeyse her cümlede küçük bir kelime fiilin önüne atlıyor.",
+   "who": "ada"
+  },
+  {
+   "t": 40.16,
+   "lang": "tr",
+   "say": "Με ακούτε, σας ακούω, θα σε ξυπνήσω. Hep bir με, bir σε, bir σας. Bu σε, üçüncü dersteki στο gibi bir şey mi? Yer mi söylüyor?",
+   "who": "mert"
+  },
+  {
+   "t": 52.8,
+   "lang": "tr",
+   "say": "Güzel soru. Cevabı hayır. Bugün nedenini birlikte çözeceğiz.",
+   "who": "ada"
+  },
+  {
+   "t": 59.33,
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, on altıncı bölüm.",
+   "who": "ada"
+  },
+  {
+   "t": 64.47,
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "t": 70.01,
+   "lang": "el",
+   "say": "Μερτ, τι θα κάνεις το Σαββατοκύριακο;",
+   "who": "ada"
+  },
+  {
+   "t": 73.32,
+   "lang": "el",
+   "say": "Θα κοιμηθώ!",
+   "who": "mert"
+  },
+  {
+   "t": 74.63,
+   "lang": "tr",
+   "say": "Uyuyacağım. Tam bugünün konusu: gelecek zaman. Ayşe ile Nikos ise bu hafta sonu otobüsle Yanya'ya gidiyor. Telefonla otel odası ayırtacaksın, ve beni, seni, onu demeyi öğreneceksin. Stüdyoda yine Katerina var; sonda bize sadece Yunanca bir hikâye anlatacak.",
+   "who": "ada"
+  },
+  {
+   "t": 95.51,
+   "lang": "el",
+   "say": "Γεια σας! Καλό ταξίδι!",
+   "who": "katerina"
+  },
+  {
+   "t": 99.71,
+   "lang": "tr",
+   "say": "İlk sahne. Ayşe Yanya'daki Λίμνη, yani Göl oteline telefon ediyor. Kulak ver: kaç gece, ve kahvaltılı bir gece kaç avro?",
+   "who": "ada"
+  },
+  {
+   "t": 110.47,
+   "lang": "el",
+   "say": "Ναι, παρακαλώ;",
+   "who": "receptionist"
+  },
+  {
+   "t": 111.86,
+   "lang": "el",
+   "say": "Καλημέρα. Έχετε ένα δίκλινο για την Παρασκευή και το Σάββατο;",
+   "who": "ayse"
+  },
+  {
+   "t": 116.2,
+   "lang": "el",
+   "say": "Ναι, έχουμε. Δύο νύχτες, σωστά;",
+   "who": "receptionist"
+  },
+  {
+   "t": 119.11,
+   "lang": "el",
+   "say": "Σωστά. Το δωμάτιο έχει μπαλκόνι;",
+   "who": "ayse"
+  },
+  {
+   "t": 121.89,
+   "lang": "el",
+   "say": "Ναι, όλα τα δωμάτια έχουν μπαλκόνι. Πισίνα δεν έχουμε, αλλά η λίμνη είναι πολύ κοντά.",
+   "who": "receptionist"
+  },
+  {
+   "t": 127.32,
+   "lang": "el",
+   "say": "Ωραία. Πόσο κάνει η διανυκτέρευση;",
+   "who": "ayse"
+  },
+  {
+   "t": 130.06,
+   "lang": "el",
+   "say": "Εβδομήντα ευρώ χωρίς πρωινό, ογδόντα πέντε με πρωινό.",
+   "who": "receptionist"
+  },
+  {
+   "t": 133.99,
+   "lang": "el",
+   "say": "Θα ήθελα να κάνω κράτηση, με πρωινό. Θα έρθουμε την Παρασκευή το βράδυ με το λεωφορείο.",
+   "who": "ayse"
+  },
+  {
+   "t": 139.8,
+   "lang": "el",
+   "say": "Θα σας περιμένουμε. Καλό ταξίδι!",
+   "who": "receptionist"
+  },
+  {
+   "t": 143.34,
+   "lang": "el",
+   "say": "Ευχαριστώ. Θα σας πάρω τηλέφωνο από το λεωφορείο. Γεια σας!",
+   "who": "ayse"
+  },
+  {
+   "t": 147.85,
+   "lang": "tr",
+   "say": "Kaç gece, kahvaltılı kaç avro? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 155.47,
+   "lang": "tr",
+   "say": "İki gece: δύο νύχτες. Kahvaltılı da yetmiş avro galiba.",
+   "who": "mert"
+  },
+  {
+   "t": 159.92,
+   "lang": "tr",
+   "say": "Yetmiş kahvaltısız: χωρίς πρωινό. Kahvaltılı seksen beş: ογδόντα πέντε με πρωινό. Havuz yok, ama bütün odaların balkonu var, göl de çok yakın.",
+   "who": "ada"
+  },
+  {
+   "t": 172.7,
+   "lang": "tr",
+   "say": "İkinci sahne, açılıştaki telefon. Bu sefer biraz yavaş. Saat kaçta gelecekler, ve Ayşe Nikos'tan ne istiyor?",
+   "who": "ada"
+  },
+  {
+   "t": 180.95,
+   "lang": "el",
+   "say": "Ξενοδοχείο «Λίμνη», καλησπέρα σας.",
+   "who": "receptionist",
+   "speed": 0.85
+  },
+  {
+   "t": 184.18,
+   "lang": "el",
+   "say": "Καλησπέρα, η Αϊσέ Γιλμάζ είμαι. Με ακούτε;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 189.34,
+   "lang": "el",
+   "say": "Σας ακούω, αλλά όχι καλά. Πού είστε;",
+   "who": "receptionist",
+   "speed": 0.85
+  },
+  {
+   "t": 193.08,
+   "lang": "el",
+   "say": "Στο λεωφορείο. Θα έρθουμε στις δέκα, λίγο αργά.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 196.75,
+   "lang": "el",
+   "say": "Κανένα πρόβλημα. Θα σας περιμένουμε.",
+   "who": "receptionist",
+   "speed": 0.85
+  },
+  {
+   "t": 200.22,
+   "lang": "el",
+   "say": "Τι λένε; Μας περιμένουν;",
+   "who": "nikos",
+   "speed": 0.85
+  },
+  {
+   "t": 202.78,
+   "lang": "el",
+   "say": "Ναι. Τώρα θα κοιμηθώ λίγο. Θα με ξυπνήσεις στα Ιωάννινα;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 208.05,
+   "lang": "el",
+   "say": "Ναι, θα σε ξυπνήσω.",
+   "who": "nikos",
+   "speed": 0.85
+  },
+  {
+   "t": 209.99,
+   "lang": "tr",
+   "say": "Saat kaçta gelecekler, Ayşe ne istiyor? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 217.18,
+   "lang": "tr",
+   "say": "Saat onda: στις δέκα. Ayşe biraz uyuyacak, Nikos da onu Yanya'da uyandıracak.",
+   "who": "mert"
+  },
+  {
+   "t": 223.41,
+   "lang": "tr",
+   "say": "Evet. Θα με ξυπνήσεις; Beni uyandırır mısın? Bir de αργά, geç demek: λίγο αργά, biraz geç.",
+   "who": "ada"
+  },
+  {
+   "t": 235.73,
+   "lang": "tr",
+   "say": "Üçüncü sahne. Cuma gecesi, otelin resepsiyonu. Oda kaç numara?",
+   "who": "ada"
+  },
+  {
+   "t": 242.01,
+   "lang": "el",
+   "say": "Καλησπέρα σας. Έχουμε κράτηση, στο όνομα Γιλμάζ.",
+   "who": "ayse"
+  },
+  {
+   "t": 246.68,
+   "lang": "el",
+   "say": "Καλώς ήρθατε! Ένα δίκλινο για δύο νύχτες, για δύο άτομα;",
+   "who": "receptionist"
+  },
+  {
+   "t": 251.04,
+   "lang": "el",
+   "say": "Ναι, η κράτηση είναι για εμένα και τον Νίκο.",
+   "who": "ayse"
+  },
+  {
+   "t": 253.86,
+   "lang": "el",
+   "say": "Ορίστε το κλειδί: δωμάτιο δώδεκα, στον δεύτερο όροφο. Το ασανσέρ είναι δίπλα στη ρεσεψιόν.",
+   "who": "receptionist"
+  },
+  {
+   "t": 261.53,
+   "lang": "el",
+   "say": "Ευχαριστώ. Αύριο θα ξυπνήσουμε νωρίς. Θα πάμε με τη βάρκα στο νησί της λίμνης.",
+   "who": "ayse"
+  },
+  {
+   "t": 266.79,
+   "lang": "el",
+   "say": "Ωραία! Η βάρκα φεύγει από το λιμάνι. Καληνύχτα σας! Θα σας δω το πρωί.",
+   "who": "receptionist"
+  },
+  {
+   "t": 273.44,
+   "lang": "tr",
+   "say": "On iki, ikinci katta. Yarın da kayıkla gölün adasına gidecekler.",
+   "who": "mert"
+  },
+  {
+   "t": 280.2,
+   "lang": "tr",
+   "say": "Ada, bir şey takıldı aklıma. Ayşe telefonda θα σας πάρω τηλέφωνο dedi. Παίρνω almak değil mi? Yeni telefon mu alacak?",
+   "who": "mert"
+  },
+  {
+   "t": 289.13,
+   "lang": "tr",
+   "say": "Hayır! Παίρνω τηλέφωνο bir kalıp: telefonla aramak. Θα σας πάρω τηλέφωνο: sizi arayacağım.",
+   "who": "ada"
+  },
+  {
+   "t": 297.74,
+   "lang": "tr",
+   "say": "O σας da sizi mi?",
+   "who": "mert"
+  },
+  {
+   "t": 300.13,
+   "lang": "tr",
+   "say": "Evet, bugünün asıl konusu bu. Türkçede ben kelimesine bir ek yapışır: beni. Yunancada beni için ayrı, küçük bir kelime var. Beni, seni, bizi, sizi:",
+   "who": "ada"
+  },
+  {
+   "t": 311.43,
+   "lang": "el",
+   "say": "με, σε, μας, σας",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 318.06,
+   "lang": "tr",
+   "say": "Hadi deneyelim.",
+   "who": "ada"
+  },
+  {
+   "t": 320.32,
+   "lang": "el",
+   "say": "Μερτ, με ακούς;",
+   "who": "ada"
+  },
+  {
+   "t": 322.4,
+   "lang": "el",
+   "say": "Ναι, σε ακούω!",
+   "who": "mert"
+  },
+  {
+   "t": 324.27,
+   "lang": "tr",
+   "say": "Ama açılıştaki soruma dönelim. Σε yer bildirmiyor muydu? Στο λιμάνι, limanda.",
+   "who": "mert"
+  },
+  {
+   "t": 330.31,
+   "lang": "tr",
+   "say": "Aynı sesle iki ayrı σε var. Biri -de eki gibi: στο λιμάνι. Öbürü seni. İkisi bir cümlede bile olur:",
+   "who": "ada"
+  },
+  {
+   "t": 341.5,
+   "lang": "el",
+   "say": "Σε περιμένω στο λιμάνι.",
+   "who": "katerina"
+  },
+  {
+   "t": 346.28,
+   "lang": "tr",
+   "say": "Seni limanda bekliyorum. Fiilin hemen önündeyse, zamirdir.",
+   "who": "ada"
+  },
+  {
+   "t": 350.89,
+   "lang": "tr",
+   "say": "Türkçe gibi: seni bekliyorum. Ama isim fiilin arkasına gelmiyor muydu? Περιμένω τον Νίκο.",
+   "who": "mert"
+  },
+  {
+   "t": 356.89,
+   "lang": "tr",
+   "say": "İsim arkaya gelir, ama bu küçük zamirler öne kaçar. Gelecek zamanda θα ile fiilin arasına girer:",
+   "who": "ada"
+  },
+  {
+   "t": 365.82,
+   "lang": "el",
+   "say": "Θα σας δω στο πρωινό.",
+   "who": "katerina"
+  },
+  {
+   "t": 370.03,
+   "lang": "tr",
+   "say": "Sizi kahvaltıda göreceğim. Olumsuzda önce δεν, sonra zamir, sonra fiil: δε σε βλέπω, seni görmüyorum.",
+   "who": "ada"
+  },
+  {
+   "t": 382.35,
+   "lang": "tr",
+   "say": "Şimdi onu. Türkçede tek kelime: Nikos'u da, Eleni'yi de, anahtarı da onu diye anarsın. Yunancada?",
+   "who": "ada"
+  },
+  {
+   "t": 390.35,
+   "lang": "tr",
+   "say": "Tahmin edeyim: üç tane. Çünkü her şeyin bir cinsi var.",
+   "who": "mert"
+  },
+  {
+   "t": 394.29,
+   "lang": "tr",
+   "say": "Bildin. Erkek için, kadın için, nötr için:",
+   "who": "ada"
+  },
+  {
+   "t": 399.55,
+   "lang": "el",
+   "say": "τον, την, το",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 404.26,
+   "lang": "tr",
+   "say": "Bunlar artikel! Τον Νίκο, την Ελένη, το κλειδί.",
+   "who": "mert"
+  },
+  {
+   "t": 407.69,
+   "lang": "tr",
+   "say": "Aynen. İsmi atarsın, artikel tek başına kalır. Nikos'u görmüyorum:",
+   "who": "ada"
+  },
+  {
+   "t": 414.16,
+   "lang": "el",
+   "say": "Δεν τον βλέπω.",
+   "who": "katerina"
+  },
+  {
+   "t": 417.98,
+   "lang": "tr",
+   "say": "Eleni için τη βλέπω. Çoğulda da üç tane: τους, τις, τα. Anahtarlar nötr, o zaman:",
+   "who": "ada"
+  },
+  {
+   "t": 427.79,
+   "lang": "el",
+   "say": "Τα κλειδιά; Εγώ τα έχω.",
+   "who": "katerina"
+  },
+  {
+   "t": 435.08,
+   "lang": "tr",
+   "say": "Resepsiyonda Ayşe şunu dedi: rezervasyon benim ve Nikos için. Yunancasını hatırlıyor musun?",
+   "who": "ada"
+  },
+  {
+   "t": 445.46,
+   "lang": "tr",
+   "say": "Dur, deneyeyim: η κράτηση είναι για με και τον Νίκο.",
+   "who": "mert"
+  },
+  {
+   "t": 448.64,
+   "lang": "tr",
+   "say": "Hayır. Για gibi küçük kelimelerden sonra kısa zamir duramaz. Uzun, güçlü biçim gelir: εμένα.",
+   "who": "ada"
+  },
+  {
+   "t": 457.93,
+   "lang": "el",
+   "say": "Η κράτηση είναι για εμένα και τον Νίκο.",
+   "who": "katerina"
+  },
+  {
+   "t": 463.71,
+   "lang": "tr",
+   "say": "Kısa takım fiilin önünde: με, σε. Uzun takım için, ile gibi kelimelerden sonra: εμένα, εσένα. Bir de kısa cevapta. Katerina, Mert'e sorar mısın?",
+   "who": "ada"
+  },
+  {
+   "t": 476.43,
+   "lang": "el",
+   "say": "Ποιον περιμένεις;",
+   "who": "katerina"
+  },
+  {
+   "t": 477.77,
+   "lang": "el",
+   "say": "Εσένα!",
+   "who": "mert"
+  },
+  {
+   "t": 480.38,
+   "lang": "tr",
+   "say": "Son nokta, gelecek zaman. Mert, Ayşe otobüsten saat kaçta geleceğiz dedi?",
+   "who": "ada"
+  },
+  {
+   "t": 486.71,
+   "lang": "tr",
+   "say": "Saat onda: θα έρθουμε στις δέκα. Ama gelmek έρχομαι değil miydi? Sondaki me sesi nereye gitti?",
+   "who": "mert"
+  },
+  {
+   "t": 494.03,
+   "lang": "tr",
+   "say": "Gelecekte gider: έρχομαι, ama θα έρθω. Oturmak da öyle: κάθομαι, θα καθίσω. Senin θα κοιμηθώ da bu aileden.",
+   "who": "ada"
+  },
+  {
+   "t": 505.25,
+   "lang": "el",
+   "say": "έρχομαι, θα έρθω. κάθομαι, θα καθίσω.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 518.33,
+   "lang": "tr",
+   "say": "Peki Ayşe resepsiyonda θα ξυπνήσουμε dedi?",
+   "who": "mert"
+  },
+  {
+   "t": 521.9,
+   "lang": "tr",
+   "say": "O, beşinci dersteki ailenin fiili. Bunlarda sondaki ao gider, yerine iso gelir: μιλάω, θα μιλήσω. Birkaç fiil aso alır: περνάω, θα περάσω. Ξεχνάω, θα ξεχάσω.",
+   "who": "ada"
+  },
+  {
+   "t": 536.82,
+   "lang": "el",
+   "say": "Δε θα ξεχάσω τη βαλίτσα μου.",
+   "who": "katerina"
+  },
+  {
+   "t": 541.8,
+   "lang": "tr",
+   "say": "Bavulumu unutmayacağım. Bir de yapabilmek, μπορώ; o biraz farklı: θα μπορέσω. Eklerin çoğu on beşinci dersteki gibi.",
+   "who": "ada"
+  },
+  {
+   "t": 553.71,
+   "lang": "tr",
+   "say": "Şimdi sıra sende. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert deneyecek, en son Katerina doğrusunu söyleyecek.",
+   "who": "ada"
+  },
+  {
+   "t": 563.17,
+   "lang": "tr",
+   "say": "Otele telefon ediyorsun. İki gece için iki kişilik bir oda iste.",
+   "who": "ada"
+  },
+  {
+   "t": 572.6,
+   "lang": "el",
+   "say": "Θα ήθελα ένα δίκλινο για δύο νύχτες, παρακαλώ.",
+   "who": "mert"
+  },
+  {
+   "t": 576.43,
+   "lang": "el",
+   "say": "Θα ήθελα ένα δίκλινο για δύο νύχτες, παρακαλώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 585.31,
+   "lang": "tr",
+   "say": "Telefonda ses kesik geliyor. Arkadaşına seni duymuyorum de.",
+   "who": "ada"
+  },
+  {
+   "t": 592.83,
+   "lang": "el",
+   "say": "Δε σε ακούω.",
+   "who": "mert"
+  },
+  {
+   "t": 594.18,
+   "lang": "el",
+   "say": "Δε σε ακούω.",
+   "who": "katerina"
+  },
+  {
+   "t": 597.25,
+   "lang": "tr",
+   "say": "Eleni soruyor: Nikos nerede? Onu görmüyorum de.",
+   "who": "ada"
+  },
+  {
+   "t": 604.98,
+   "lang": "el",
+   "say": "Δεν το βλέπω.",
+   "who": "mert"
+  },
+  {
+   "t": 606.47,
+   "lang": "tr",
+   "say": "Nikos'a το mu? O bir anahtar değil.",
+   "who": "ada"
+  },
+  {
+   "t": 610.44,
+   "lang": "tr",
+   "say": "Ah, erkek. O zaman τον.",
+   "who": "mert"
+  },
+  {
+   "t": 613.2,
+   "lang": "el",
+   "say": "Δεν τον βλέπω.",
+   "who": "katerina"
+  },
+  {
+   "t": 617.15,
+   "lang": "tr",
+   "say": "Son olarak otel görevlisine: sizi yarın sabah arayacağım.",
+   "who": "ada"
+  },
+  {
+   "t": 626.3,
+   "lang": "el",
+   "say": "Θα σας πάρω τηλέφωνο αύριο το πρωί.",
+   "who": "mert"
+  },
+  {
+   "t": 628.86,
+   "lang": "el",
+   "say": "Θα σας πάρω τηλέφωνο αύριο το πρωί.",
+   "who": "katerina"
+  },
+  {
+   "t": 637.14,
+   "lang": "tr",
+   "say": "Mert, hızlı ol. Bir arkadaşına seni arayacağım de, ama τηλεφωνώ ile.",
+   "who": "ada"
+  },
+  {
+   "t": 643.73,
+   "lang": "el",
+   "say": "Θα σε τηλεφωνήσω.",
+   "who": "mert"
+  },
+  {
+   "t": 645.62,
+   "lang": "tr",
+   "say": "Türkçe düşündün: seni ararım. Ama τηλεφωνώ, telefon etmek gibi: bir yere, birine telefon edilir. Θα τηλεφωνήσω στο ξενοδοχείο, otele telefon edeceğim. Arkadaşın için şimdilik Ayşe'nin kalıbını kullan:",
+   "who": "ada"
+  },
+  {
+   "t": 663.53,
+   "lang": "el",
+   "say": "Θα σε πάρω τηλέφωνο.",
+   "who": "katerina"
+  },
+  {
+   "t": 668.17,
+   "lang": "tr",
+   "say": "Telefonu alıp seni arayacağım. Kafamda böyle tutarım.",
+   "who": "mert"
+  },
+  {
+   "t": 673.9,
+   "lang": "tr",
+   "say": "Küçük bir oyun. Katerina bir cümle söyleyecek. Sen ismi at, yerine küçük zamiri koy. Birincisi:",
+   "who": "ada"
+  },
+  {
+   "t": 682.45,
+   "lang": "el",
+   "say": "Περιμένω τον Νίκο.",
+   "who": "katerina"
+  },
+  {
+   "t": 687.88,
+   "lang": "el",
+   "say": "Τον περιμένω.",
+   "who": "mert"
+  },
+  {
+   "t": 689.43,
+   "lang": "tr",
+   "say": "Doğru. İkincisi:",
+   "who": "ada"
+  },
+  {
+   "t": 692.12,
+   "lang": "el",
+   "say": "Βλέπω την Ελένη.",
+   "who": "katerina"
+  },
+  {
+   "t": 697.35,
+   "lang": "el",
+   "say": "Τον βλέπω.",
+   "who": "mert"
+  },
+  {
+   "t": 698.89,
+   "lang": "tr",
+   "say": "Eleni'ye τον mu?",
+   "who": "ada"
+  },
+  {
+   "t": 701.74,
+   "lang": "tr",
+   "say": "Ah, kadın. Τη βλέπω.",
+   "who": "mert"
+  },
+  {
+   "t": 704.11,
+   "lang": "el",
+   "say": "Τη βλέπω.",
+   "who": "katerina"
+  },
+  {
+   "t": 706.82,
+   "lang": "tr",
+   "say": "Sonuncusu, gelecek zamanla:",
+   "who": "ada"
+  },
+  {
+   "t": 709.8,
+   "lang": "el",
+   "say": "Θα πάρω τα κλειδιά.",
+   "who": "katerina"
+  },
+  {
+   "t": 716.01,
+   "lang": "el",
+   "say": "Θα τα πάρω.",
+   "who": "mert"
+  },
+  {
+   "t": 717.39,
+   "lang": "tr",
+   "say": "Mükemmel, θα ile fiilin arasına girdi.",
+   "who": "ada"
+  },
+  {
+   "t": 722.82,
+   "lang": "tr",
+   "say": "Şimdi otobüsteki konuşma bir kez daha, normal hızda. Bu sefer her küçük kelimeyi yakalayacaksın.",
+   "who": "ada"
+  },
+  {
+   "t": 729.96,
+   "lang": "el",
+   "say": "Ξενοδοχείο «Λίμνη», καλησπέρα σας.",
+   "who": "receptionist"
+  },
+  {
+   "t": 732.76,
+   "lang": "el",
+   "say": "Καλησπέρα, η Αϊσέ Γιλμάζ είμαι. Με ακούτε;",
+   "who": "ayse"
+  },
+  {
+   "t": 737.2,
+   "lang": "el",
+   "say": "Σας ακούω, αλλά όχι καλά. Πού είστε;",
+   "who": "receptionist"
+  },
+  {
+   "t": 740.44,
+   "lang": "el",
+   "say": "Στο λεωφορείο. Θα έρθουμε στις δέκα, λίγο αργά.",
+   "who": "ayse"
+  },
+  {
+   "t": 743.61,
+   "lang": "el",
+   "say": "Κανένα πρόβλημα. Θα σας περιμένουμε.",
+   "who": "receptionist"
+  },
+  {
+   "t": 746.62,
+   "lang": "el",
+   "say": "Τι λένε; Μας περιμένουν;",
+   "who": "nikos"
+  },
+  {
+   "t": 748.84,
+   "lang": "el",
+   "say": "Ναι. Τώρα θα κοιμηθώ λίγο. Θα με ξυπνήσεις στα Ιωάννινα;",
+   "who": "ayse"
+  },
+  {
+   "t": 753.38,
+   "lang": "el",
+   "say": "Ναι, θα σε ξυπνήσω.",
+   "who": "nikos"
+  },
+  {
+   "t": 755.13,
+   "lang": "tr",
+   "say": "Με, σε, σας, hepsi fiilin önünde. Hepsini duydum.",
+   "who": "mert"
+  },
+  {
+   "t": 761.24,
+   "lang": "tr",
+   "say": "Kelime köşesi. Μονόκλινο ve δίκλινο, tek kişilik ve iki kişilik oda. İçlerinde eski bir kelime saklı: κλίνη, yatak.",
+   "who": "ada"
+  },
+  {
+   "t": 772.94,
+   "lang": "tr",
+   "say": "Yatak. Bir dakika. Klinik?",
+   "who": "mert"
+  },
+  {
+   "t": 775.96,
+   "lang": "tr",
+   "say": "Aynen! Klinik de oradan geliyor: hastanın yatağı başında yapılan hekimlik. Bir de ξενοδοχείο. İki parça: ξένος, yabancı, misafir. Ve δέχομαι, kabul etmek. Yabancıları ağırlayan yer.",
+   "who": "ada"
+  },
+  {
+   "t": 794.5,
+   "lang": "tr",
+   "say": "Ksenofobi de buradan. Yabancı korkusu.",
+   "who": "mert"
+  },
+  {
+   "t": 798.97,
+   "lang": "tr",
+   "say": "Gelecek bölümde Ayşe, Nikos ve Eleni açık havada bir sinemaya gidiyor: θερινό σινεμά. Bir film izlemek istiyorum demeyi öğreneceğiz: θέλω να δω μια ταινία. Bugünkü θα δω gibi, ama θα yerine να.",
+   "who": "ada"
+  },
+  {
+   "t": 815.41,
+   "lang": "tr",
+   "say": "Yazlık sinema! Bizde de var.",
+   "who": "mert"
+  },
+  {
+   "t": 818.04,
+   "lang": "tr",
+   "say": "Bu arada bölümü uygulamada oku, alıştırmaları yap. Şimdi son söz Katerina'nın: bugünün hikâyesi, sadece Yunanca. Sadece dinle. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "t": 829.75,
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "t": 832.4,
+   "lang": "el",
+   "say": "Η Αϊσέ και ο Νίκος θα πάνε στα Ιωάννινα το Σαββατοκύριακο.",
+   "who": "katerina"
+  },
+  {
+   "t": 836.39,
+   "lang": "el",
+   "say": "Η Αϊσέ τηλεφωνεί στο ξενοδοχείο «Λίμνη» και κάνει κράτηση για ένα δίκλινο.",
+   "who": "katerina"
+  },
+  {
+   "t": 840.95,
+   "lang": "el",
+   "say": "Θα είναι δύο άτομα, για δύο νύχτες.",
+   "who": "katerina"
+  },
+  {
+   "t": 843.49,
+   "lang": "el",
+   "say": "Το δωμάτιο έχει μπαλκόνι.",
+   "who": "katerina"
+  },
+  {
+   "t": 846.02,
+   "lang": "el",
+   "say": "Το ξενοδοχείο δεν έχει πισίνα, αλλά η λίμνη είναι πολύ κοντά.",
+   "who": "katerina"
+  },
+  {
+   "t": 850.5,
+   "lang": "el",
+   "say": "Η διανυκτέρευση κάνει ογδόντα πέντε ευρώ, με πρωινό.",
+   "who": "katerina"
+  },
+  {
+   "t": 854.31,
+   "lang": "el",
+   "say": "Την Παρασκευή το βράδυ η Αϊσέ και ο Νίκος παίρνουν το λεωφορείο.",
+   "who": "katerina"
+  },
+  {
+   "t": 858.45,
+   "lang": "el",
+   "say": "Στο λεωφορείο η Αϊσέ παίρνει πάλι τηλέφωνο στο ξενοδοχείο.",
+   "who": "katerina"
+  },
+  {
+   "t": 862.62,
+   "lang": "el",
+   "say": "«Με ακούτε;» «Σας ακούω, αλλά όχι καλά.»",
+   "who": "katerina"
+  },
+  {
+   "t": 866.54,
+   "lang": "el",
+   "say": "Θα έρθουν στις δέκα, λίγο αργά. «Κανένα πρόβλημα. Θα σας περιμένουμε.»",
+   "who": "katerina"
+  },
+  {
+   "t": 872.4,
+   "lang": "el",
+   "say": "Μετά η Αϊσέ λέει στον Νίκο: «Θα κοιμηθώ λίγο. Θα με ξυπνήσεις στα Ιωάννινα;»",
+   "who": "katerina"
+  },
+  {
+   "t": 878.26,
+   "lang": "el",
+   "say": "«Ναι, θα σε ξυπνήσω», λέει ο Νίκος.",
+   "who": "katerina"
+  },
+  {
+   "t": 880.71,
+   "lang": "el",
+   "say": "Στη ρεσεψιόν η υπάλληλος λέει: «Καλώς ήρθατε!» και δίνει το κλειδί στην Αϊσέ.",
+   "who": "katerina"
+  },
+  {
+   "t": 887.03,
+   "lang": "el",
+   "say": "Το δωμάτιο είναι στον δεύτερο όροφο.",
+   "who": "katerina"
+  },
+  {
+   "t": 889.92,
+   "lang": "el",
+   "say": "Ο Νίκος λέει: «Αύριο θα κοιμηθώ πολύ!»",
+   "who": "katerina"
+  },
+  {
+   "t": 893.37,
+   "lang": "el",
+   "say": "Η Αϊσέ λέει: «Όχι! Αύριο θα ξυπνήσουμε νωρίς. Θα πάμε με τη βάρκα στο νησί της λίμνης.»",
+   "who": "katerina"
+  },
+  {
+   "t": 900.97,
+   "lang": "el",
+   "say": "«Και μετά;» ρωτάει ο Νίκος.",
+   "who": "katerina"
+  },
+  {
+   "t": 903.25,
+   "lang": "el",
+   "say": "«Μετά θα περάσουμε όλη τη μέρα στο νησί.»",
+   "who": "katerina"
+  },
+  {
+   "t": 906.1,
+   "lang": "el",
+   "say": "Την Κυριακή το βράδυ θα πάρουν το λεωφορείο για την Αθήνα.",
+   "who": "katerina"
+  },
+  {
+   "t": 909.71,
+   "lang": "el",
+   "say": "Και η Αϊσέ λέει: «Δε θα ξεχάσω τη βαλίτσα μου!»",
+   "who": "katerina"
+  },
+  {
+   "t": 913.26,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ],
+ "cast": {
+  "receptionist": {
+   "name": "Υπάλληλος",
+   "voice": "Achernar"
+  },
+  "ayse": {
+   "name": "Αϊσέ",
+   "voice": "Autonoe"
+  },
+  "nikos": {
+   "name": "Νίκος",
+   "voice": "Rasalgethi"
+  },
+  "ada": {
+   "name": "Ada",
+   "voice": "Sulafat"
+  },
+  "mert": {
+   "name": "Mert",
+   "voice": "Umbriel"
+  },
+  "katerina": {
+   "name": "Κατερίνα",
+   "voice": "Gacrux"
+  }
+ },
+ "sounds": true
+}

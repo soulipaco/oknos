@@ -1,0 +1,963 @@
+{
+ "id": "book.lesson-14.tr",
+ "kind": "chapter",
+ "lang": "tr",
+ "title": {
+  "tr": "Yakında fırın var mı? Ayşe ev arıyor",
+  "en": "Is there a bakery nearby? Ayşe looks for a flat"
+ },
+ "curriculum": "oknos-book",
+ "stage": "lesson-14",
+ "version": 4,
+ "written": "2026-11-26",
+ "date": null,
+ "rendered": "2026-11-26T13:28:48",
+ "seconds": 821.2,
+ "script": "ee12014be647",
+ "parts": [
+  {
+   "t": 3.0,
+   "title": "Açılış"
+  },
+  {
+   "t": 36.46,
+   "title": "Hoş geldin"
+  },
+  {
+   "t": 73.92,
+   "title": "Emlakçıyla telefonda"
+  },
+  {
+   "t": 153.78,
+   "title": "Daireyi geziyoruz"
+  },
+  {
+   "t": 225.13,
+   "title": "Var mı, nerede?"
+  },
+  {
+   "t": 292.35,
+   "title": "Önce yan, sonra eczane"
+  },
+  {
+   "t": 393.92,
+   "title": "Kaçıncı kat?"
+  },
+  {
+   "t": 438.1,
+   "title": "Geldim, geleceğim"
+  },
+  {
+   "t": 496.47,
+   "title": "Sıra sende"
+  },
+  {
+   "t": 583.55,
+   "title": "Mert'in hatası"
+  },
+  {
+   "t": 615.95,
+   "title": "Oyun: ilan"
+  },
+  {
+   "t": 672.84,
+   "title": "Sahne yeniden"
+  },
+  {
+   "t": 721.46,
+   "title": "Kelime köşesi: uyku odası"
+  },
+  {
+   "t": 749.15,
+   "title": "Gelecek bölüm"
+  },
+  {
+   "t": 771.06,
+   "title": "Katerina anlatıyor"
+  }
+ ],
+ "lines": [
+  {
+   "t": 3.0,
+   "lang": "el",
+   "say": "Η θέα είναι πολύ ωραία! Υπάρχει ταχυδρομείο κοντά;",
+   "who": "ayse"
+  },
+  {
+   "t": 6.81,
+   "lang": "el",
+   "say": "Ναι, υπάρχει ένα πίσω από το σχολείο. Στη γειτονιά υπάρχουν και δύο φούρνοι. Η στάση είναι δίπλα στην τράπεζα.",
+   "who": "mesitis"
+  },
+  {
+   "t": 14.77,
+   "lang": "tr",
+   "say": "Emlakçı iki kez var dedi: bir keresinde υπάρχει, bir keresinde υπάρχουν. Ama durağın yerini söylerken var demedi, başka bir fiil kullandı.",
+   "who": "ada"
+  },
+  {
+   "t": 27.02,
+   "lang": "tr",
+   "say": "Bir de sıra tuhaftı. Ben okulun arkasında beklerdim. O önce arkasında dedi, okulu sona koydu.",
+   "who": "mert"
+  },
+  {
+   "t": 32.89,
+   "lang": "tr",
+   "say": "Bugün tam bunu çözeceğiz.",
+   "who": "ada"
+  },
+  {
+   "t": 36.46,
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, on dördüncü bölüm.",
+   "who": "ada"
+  },
+  {
+   "t": 42.23,
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "t": 47.52,
+   "lang": "tr",
+   "say": "Bugün Ayşe ev arıyor. Kaç oda, kaçıncı kat, kira ne kadar, yakında ne var: hepsini soracaksın. Bir de artık biz de aramızda biraz Yunanca konuşacağız. Mert, πού μένεις;",
+   "who": "ada"
+  },
+  {
+   "t": 60.34,
+   "lang": "el",
+   "say": "Μένω στον πέμπτο όροφο, αλλά δεν υπάρχει ασανσέρ.",
+   "who": "mert"
+  },
+  {
+   "t": 63.76,
+   "lang": "el",
+   "say": "Λυπάμαι!",
+   "who": "ada"
+  },
+  {
+   "t": 65.49,
+   "lang": "tr",
+   "say": "Stüdyoda yine Katerina var. En sonda bize sadece Yunanca bir hikâye anlatacak.",
+   "who": "ada"
+  },
+  {
+   "t": 71.34,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "t": 73.92,
+   "lang": "tr",
+   "say": "İlk sahne. Ayşe bir ilanda iki daire görmüş, emlakçı Bay Petrou'yu arıyor. Kulak ver: Ayşe hangi daireyi görmeye gidecek, saat kaçta?",
+   "who": "ada"
+  },
+  {
+   "t": 84.78,
+   "lang": "el",
+   "say": "Καλημέρα σας. Ψάχνω διαμέρισμα στην Καλλιθέα.",
+   "who": "ayse"
+  },
+  {
+   "t": 88.06,
+   "lang": "el",
+   "say": "Καλημέρα σας. Υπάρχουν δύο διαμερίσματα. Το πρώτο είναι εξήντα πέντε τετραγωνικά και έχει δύο υπνοδωμάτια, σαλόνι και μπαλκόνι.",
+   "who": "mesitis"
+  },
+  {
+   "t": 97.84,
+   "lang": "el",
+   "say": "Είναι επιπλωμένο;",
+   "who": "ayse"
+  },
+  {
+   "t": 99.61,
+   "lang": "el",
+   "say": "Ναι, είναι επιπλωμένο. Είναι στον τρίτο όροφο και υπάρχει ασανσέρ.",
+   "who": "mesitis"
+  },
+  {
+   "t": 104.43,
+   "lang": "el",
+   "say": "Πόσο είναι το ενοίκιο;",
+   "who": "ayse"
+  },
+  {
+   "t": 106.09,
+   "lang": "el",
+   "say": "Πεντακόσια ευρώ τον μήνα.",
+   "who": "mesitis"
+  },
+  {
+   "t": 108.56,
+   "lang": "el",
+   "say": "Ωραία. Και το δεύτερο;",
+   "who": "ayse"
+  },
+  {
+   "t": 110.79,
+   "lang": "el",
+   "say": "Το δεύτερο είναι στον πρώτο όροφο, κοντά στο μετρό. Έχει ένα υπνοδωμάτιο και μπαλκόνι, αλλά δεν υπάρχει ασανσέρ.",
+   "who": "mesitis"
+  },
+  {
+   "t": 119.54,
+   "lang": "el",
+   "say": "Θα έρθω αύριο στο πρώτο διαμέρισμα, στις έντεκα.",
+   "who": "ayse"
+  },
+  {
+   "t": 123.11,
+   "lang": "el",
+   "say": "Ναι. Θα είμαι εκεί στις έντεκα.",
+   "who": "mesitis"
+  },
+  {
+   "t": 125.68,
+   "lang": "el",
+   "say": "Ευχαριστώ πολύ, κύριε Πέτρου. Γεια σας!",
+   "who": "ayse"
+  },
+  {
+   "t": 129.04,
+   "lang": "tr",
+   "say": "Hangi daire, saat kaçta? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 137.0,
+   "lang": "tr",
+   "say": "İkinci daire, metroya yakın olan. Saat on birde.",
+   "who": "mert"
+  },
+  {
+   "t": 140.73,
+   "lang": "tr",
+   "say": "Saat doğru, daire değil. Ayşe birinciyi seçti: στο πρώτο διαμέρισμα. Üçüncü katta, asansörlü olanı.",
+   "who": "ada"
+  },
+  {
+   "t": 148.98,
+   "lang": "tr",
+   "say": "Haklı. Asansörsüz beşinci katı ben bilirim.",
+   "who": "mert"
+  },
+  {
+   "t": 153.78,
+   "lang": "tr",
+   "say": "İkinci sahne. Ertesi gün Ayşe daireyi geziyor. Bu sefer biraz yavaş. Soru şu: metroya giderken köşede sağa mı dönüyor, sola mı?",
+   "who": "ada"
+  },
+  {
+   "t": 164.11,
+   "lang": "el",
+   "say": "Καλημέρα, κύριε Πέτρου! Ήρθα με το μετρό.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 168.36,
+   "lang": "el",
+   "say": "Καλημέρα σας! Ορίστε, αυτό είναι το σαλόνι. Τα υπνοδωμάτια είναι εκεί και η κουζίνα είναι δίπλα στο μπάνιο.",
+   "who": "mesitis",
+   "speed": 0.85
+  },
+  {
+   "t": 175.73,
+   "lang": "el",
+   "say": "Η θέα είναι πολύ ωραία! Υπάρχει ταχυδρομείο κοντά;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 180.15,
+   "lang": "el",
+   "say": "Ναι, υπάρχει ένα πίσω από το σχολείο. Στη γειτονιά υπάρχουν και δύο φούρνοι. Η στάση είναι δίπλα στην τράπεζα.",
+   "who": "mesitis",
+   "speed": 0.85
+  },
+  {
+   "t": 189.1,
+   "lang": "el",
+   "say": "Πώς πάω στο μετρό;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 190.88,
+   "lang": "el",
+   "say": "Προχωράτε ευθεία και περνάτε την τράπεζα. Στη γωνία στρίβετε αριστερά. Το μετρό είναι μπροστά στην πλατεία.",
+   "who": "mesitis",
+   "speed": 0.85
+  },
+  {
+   "t": 199.65,
+   "lang": "el",
+   "say": "Ευχαριστώ! Είναι ωραίο διαμέρισμα. Θα έρθω αύριο με την Ελένη.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 204.76,
+   "lang": "tr",
+   "say": "Sağa mı, sola mı? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 211.34,
+   "lang": "tr",
+   "say": "Sağa. Δεξιά.",
+   "who": "mert"
+  },
+  {
+   "t": 213.1,
+   "lang": "tr",
+   "say": "Tersi: στρίβετε αριστερά, sola dönüyorsunuz. Kısa olan δεξιά sağ, uzun olan αριστερά sol.",
+   "who": "ada"
+  },
+  {
+   "t": 225.13,
+   "lang": "tr",
+   "say": "Açılışa dönelim. Türkçede var hiç değişmez. Emlakçı ise bir υπάρχει dedi, bir υπάρχουν.",
+   "who": "mert"
+  },
+  {
+   "t": 232.85,
+   "lang": "tr",
+   "say": "Çünkü Yunancada var bir fiil, tekili ve çoğulu olur. Bir fırın var:",
+   "who": "ada"
+  },
+  {
+   "t": 238.2,
+   "lang": "el",
+   "say": "Υπάρχει ένας φούρνος.",
+   "who": "katerina"
+  },
+  {
+   "t": 242.32,
+   "lang": "tr",
+   "say": "İki fırın var:",
+   "who": "ada"
+  },
+  {
+   "t": 243.89,
+   "lang": "el",
+   "say": "Υπάρχουν δύο φούρνοι.",
+   "who": "katerina"
+  },
+  {
+   "t": 248.47,
+   "lang": "tr",
+   "say": "Yok da δεν artı var herhalde. Δεν υπάρχει ασανσέρ.",
+   "who": "mert"
+  },
+  {
+   "t": 252.68,
+   "lang": "tr",
+   "say": "Aynen. Peki durak? Emlakçı orada η στάση είναι dedi. Neden var demedi?",
+   "who": "ada"
+  },
+  {
+   "t": 259.98,
+   "lang": "tr",
+   "say": "Durak zaten belli olduğu için mi?",
+   "who": "mert"
+  },
+  {
+   "t": 262.3,
+   "lang": "tr",
+   "say": "Tam olarak. Türkçede de böyle: yakında bir fırın var dersin, yeni bir şey haber verirsin. Ama fırın nerede diye sorulunca fırın eczanenin yanında dersin. Bilinen bir şeyin yeri için olmak fiili gelir:",
+   "who": "ada"
+  },
+  {
+   "t": 274.17,
+   "lang": "el",
+   "say": "Ο φούρνος είναι δίπλα στο φαρμακείο.",
+   "who": "katerina"
+  },
+  {
+   "t": 280.42,
+   "lang": "tr",
+   "say": "Soru için sadece sesin sonda yükselir. Ayşe'nin sorusu:",
+   "who": "ada"
+  },
+  {
+   "t": 285.53,
+   "lang": "el",
+   "say": "Υπάρχει ταχυδρομείο κοντά;",
+   "who": "katerina"
+  },
+  {
+   "t": 292.35,
+   "lang": "tr",
+   "say": "Şimdi sıra. Mert, eczanenin yanında?",
+   "who": "ada"
+  },
+  {
+   "t": 296.33,
+   "lang": "tr",
+   "say": "Δίπλα στο φαρμακείο. Önce yan, sonra eczane. Türkçenin tersi.",
+   "who": "mert"
+  },
+  {
+   "t": 302.04,
+   "lang": "tr",
+   "say": "Evet. Önce yer kelimesi, sonra çoğu zaman üçüncü bölümden tanıdığın ston, stin, sto, en sonda isim. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 312.22,
+   "lang": "el",
+   "say": "δίπλα στο φαρμακείο, κοντά στο μετρό, μπροστά στην πλατεία",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 323.14,
+   "lang": "tr",
+   "say": "Ama arkasında derken πίσω από dedi.",
+   "who": "mert"
+  },
+  {
+   "t": 326.87,
+   "lang": "tr",
+   "say": "Karşısında, arkasında ve uzağında, nereden demek olan από ile gelir. Uzak için Türkçe de aynısını yapar: bankadan uzak. Από artikelle birleşmez, ayrı kalır.",
+   "who": "ada"
+  },
+  {
+   "t": 340.66,
+   "lang": "el",
+   "say": "απέναντι από την τράπεζα, πίσω από το σουπερμάρκετ, μακριά από το σπίτι",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 355.41,
+   "lang": "tr",
+   "say": "Sen dene: süpermarketin arkasında. Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 363.4,
+   "lang": "el",
+   "say": "πίσω στο σουπερμάρκετ",
+   "who": "mert"
+  },
+  {
+   "t": 365.37,
+   "lang": "tr",
+   "say": "Arkasında, από grubundaydı.",
+   "who": "ada"
+  },
+  {
+   "t": 368.82,
+   "lang": "el",
+   "say": "πίσω από το σουπερμάρκετ",
+   "who": "katerina"
+  },
+  {
+   "t": 373.82,
+   "lang": "tr",
+   "say": "Yol tarifinde emlakçı προχωράτε ευθεία dedi: dümdüz ilerliyorsunuz. Türkçedeki gibi şimdiki zaman. Ayşe'yi tanımadığı için siz dedi. Bir arkadaşa ise:",
+   "who": "ada"
+  },
+  {
+   "t": 385.72,
+   "lang": "el",
+   "say": "Προχωράς ευθεία και στρίβεις δεξιά.",
+   "who": "katerina"
+  },
+  {
+   "t": 393.92,
+   "lang": "tr",
+   "say": "Daire στον τρίτο όροφο. Ama üç τρία değil miydi?",
+   "who": "mert"
+  },
+  {
+   "t": 398.56,
+   "lang": "tr",
+   "say": "Üç τρία, üçüncü τρίτος. Sıra sayıları sıfattır, ismin cinsine uyar. Kat eril. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 409.25,
+   "lang": "el",
+   "say": "πρώτος, δεύτερος, τρίτος, τέταρτος, πέμπτος",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 421.74,
+   "lang": "tr",
+   "say": "Dişilde ve nötrde son değişir: η πρώτη στάση, το πρώτο διαμέρισμα. Zemin katın da kendi adı var, kelime anlamı yerle aynı hizada:",
+   "who": "ada"
+  },
+  {
+   "t": 431.91,
+   "lang": "el",
+   "say": "Μένω στο ισόγειο.",
+   "who": "katerina"
+  },
+  {
+   "t": 438.1,
+   "lang": "tr",
+   "say": "Ayşe ertesi gün ne dedi? Ήρθα με το μετρό.",
+   "who": "ada"
+  },
+  {
+   "t": 441.56,
+   "lang": "tr",
+   "say": "Metroyla geldim. Ama gelmek έρχομαι değil miydi?",
+   "who": "mert"
+  },
+  {
+   "t": 445.57,
+   "lang": "tr",
+   "say": "Bu fiil geçmişte ve gelecekte kökünü değiştirir. Geldim, geldin:",
+   "who": "ada"
+  },
+  {
+   "t": 450.86,
+   "lang": "el",
+   "say": "ήρθα, ήρθες",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 456.13,
+   "lang": "tr",
+   "say": "Geleceğim, geleceksin:",
+   "who": "ada"
+  },
+  {
+   "t": 458.3,
+   "lang": "el",
+   "say": "θα έρθω, θα έρθεις",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 464.35,
+   "lang": "tr",
+   "say": "Bir de başta sana λυπάμαι dedim: üzgünüm. Bu ailede hatırlamak, uyumak ve korkmak da var. Hepsi aynı sonla biter. Katerina, hatırlamak:",
+   "who": "ada"
+  },
+  {
+   "t": 478.43,
+   "lang": "el",
+   "say": "θυμάμαι, θυμάσαι, θυμάται, θυμόμαστε, θυμάστε, θυμούνται",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 489.99,
+   "lang": "el",
+   "say": "Ada, φοβάσαι το ασανσέρ;",
+   "who": "mert"
+  },
+  {
+   "t": 492.72,
+   "lang": "el",
+   "say": "Όχι, δεν φοβάμαι.",
+   "who": "ada"
+  },
+  {
+   "t": 496.47,
+   "lang": "tr",
+   "say": "Sıra sende. Ben Türkçe söylüyorum, sen Yunancasını yüksek sesle söyle. Sonra Mert dener, en son Katerina doğrusunu söyler. Birincisi: Kallithea'da bir daire aradığını söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 512.7,
+   "lang": "el",
+   "say": "Ψάχνω διαμέρισμα στην Καλλιθέα.",
+   "who": "mert"
+  },
+  {
+   "t": 514.85,
+   "lang": "el",
+   "say": "Ψάχνω διαμέρισμα στην Καλλιθέα.",
+   "who": "katerina"
+  },
+  {
+   "t": 520.52,
+   "lang": "tr",
+   "say": "Kiranın ne kadar olduğunu sor.",
+   "who": "ada"
+  },
+  {
+   "t": 526.77,
+   "lang": "el",
+   "say": "Πόσο είναι το ενοίκιο;",
+   "who": "mert"
+  },
+  {
+   "t": 528.37,
+   "lang": "el",
+   "say": "Πόσο είναι το ενοίκιο;",
+   "who": "katerina"
+  },
+  {
+   "t": 532.46,
+   "lang": "tr",
+   "say": "Mahallede iki fırın olduğunu söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 539.26,
+   "lang": "el",
+   "say": "Στη γειτονιά υπάρχει δύο φούρνοι.",
+   "who": "mert"
+  },
+  {
+   "t": 541.68,
+   "lang": "tr",
+   "say": "Kaç fırın, Mert?",
+   "who": "ada"
+  },
+  {
+   "t": 543.06,
+   "lang": "tr",
+   "say": "İki. Ah, o zaman fiil de çoğul.",
+   "who": "mert"
+  },
+  {
+   "t": 545.82,
+   "lang": "el",
+   "say": "Στη γειτονιά υπάρχουν δύο φούρνοι.",
+   "who": "katerina"
+  },
+  {
+   "t": 553.1,
+   "lang": "tr",
+   "say": "Dairenin dördüncü katta olduğunu söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 560.58,
+   "lang": "el",
+   "say": "Το διαμέρισμα είναι στον τέταρτο όροφο.",
+   "who": "mert"
+  },
+  {
+   "t": 563.36,
+   "lang": "el",
+   "say": "Το διαμέρισμα είναι στον τέταρτο όροφο.",
+   "who": "katerina"
+  },
+  {
+   "t": 569.95,
+   "lang": "tr",
+   "say": "Son olarak, metroyla geldiğini söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 576.7,
+   "lang": "el",
+   "say": "Ήρθα με το μετρό.",
+   "who": "mert"
+  },
+  {
+   "t": 578.04,
+   "lang": "el",
+   "say": "Ήρθα με το μετρό.",
+   "who": "katerina"
+  },
+  {
+   "t": 583.55,
+   "lang": "tr",
+   "say": "Mert, hızlı ol: yakında bir fırın var.",
+   "who": "ada"
+  },
+  {
+   "t": 587.47,
+   "lang": "el",
+   "say": "Υπάρχει έναν φούρνο κοντά.",
+   "who": "mert"
+  },
+  {
+   "t": 589.66,
+   "lang": "tr",
+   "say": "Ψάχνω έναν φούρνο gibi, değil mi?",
+   "who": "mert"
+  },
+  {
+   "t": 592.92,
+   "lang": "tr",
+   "say": "İşte tuzak. Ararken fırın nesnedir. Ama var derken fırın öznedir. Türkçede de bir fırını var demeyiz. Özne yalın kalır, sonunda n olmaz. Türkçe konuşanların sık yaptığı hata bu:",
+   "who": "ada"
+  },
+  {
+   "t": 608.75,
+   "lang": "el",
+   "say": "Υπάρχει ένας φούρνος κοντά.",
+   "who": "katerina"
+  },
+  {
+   "t": 615.95,
+   "lang": "tr",
+   "say": "Şimdi sınavdan tanıdık bir oyun. Katerina kısa bir ilan okuyacak, ben üç cümle söyleyeceğim. Doğru mu, yanlış mı, sen karar ver.",
+   "who": "ada"
+  },
+  {
+   "t": 624.57,
+   "lang": "el",
+   "say": "Ενοικιάζεται διαμέρισμα στο κέντρο.",
+   "who": "katerina"
+  },
+  {
+   "t": 627.51,
+   "lang": "el",
+   "say": "Εβδομήντα τετραγωνικά, τέταρτος όροφος, με ασανσέρ.",
+   "who": "katerina"
+  },
+  {
+   "t": 631.21,
+   "lang": "el",
+   "say": "Δύο υπνοδωμάτια, επιπλωμένο.",
+   "who": "katerina"
+  },
+  {
+   "t": 634.02,
+   "lang": "el",
+   "say": "Τετρακόσια πενήντα ευρώ τον μήνα.",
+   "who": "katerina"
+  },
+  {
+   "t": 636.87,
+   "lang": "tr",
+   "say": "Ενοικιάζεται, kiralık demek. Birinci cümle: daire beşinci katta.",
+   "who": "ada"
+  },
+  {
+   "t": 647.2,
+   "lang": "tr",
+   "say": "Yanlış. Τέταρτος όροφος, dördüncü kat.",
+   "who": "mert"
+  },
+  {
+   "t": 650.7,
+   "lang": "tr",
+   "say": "İkinci: dairede asansör yok.",
+   "who": "ada"
+  },
+  {
+   "t": 657.17,
+   "lang": "tr",
+   "say": "Yanlış. Με ασανσέρ, asansörlü.",
+   "who": "mert"
+  },
+  {
+   "t": 660.37,
+   "lang": "tr",
+   "say": "Üçüncü: kira ayda dört yüz elli avro.",
+   "who": "ada"
+  },
+  {
+   "t": 667.55,
+   "lang": "tr",
+   "say": "Doğru. Τον μήνα, ayda. Üçte üç!",
+   "who": "mert"
+  },
+  {
+   "t": 672.84,
+   "lang": "tr",
+   "say": "İkinci sahne bir kez daha, normal hızda. Artık her kelimeyi anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "t": 679.07,
+   "lang": "el",
+   "say": "Καλημέρα, κύριε Πέτρου! Ήρθα με το μετρό.",
+   "who": "ayse"
+  },
+  {
+   "t": 682.74,
+   "lang": "el",
+   "say": "Καλημέρα σας! Ορίστε, αυτό είναι το σαλόνι. Τα υπνοδωμάτια είναι εκεί και η κουζίνα είναι δίπλα στο μπάνιο.",
+   "who": "mesitis"
+  },
+  {
+   "t": 689.07,
+   "lang": "el",
+   "say": "Η θέα είναι πολύ ωραία! Υπάρχει ταχυδρομείο κοντά;",
+   "who": "ayse"
+  },
+  {
+   "t": 692.88,
+   "lang": "el",
+   "say": "Ναι, υπάρχει ένα πίσω από το σχολείο. Στη γειτονιά υπάρχουν και δύο φούρνοι. Η στάση είναι δίπλα στην τράπεζα.",
+   "who": "mesitis"
+  },
+  {
+   "t": 700.54,
+   "lang": "el",
+   "say": "Πώς πάω στο μετρό;",
+   "who": "ayse"
+  },
+  {
+   "t": 702.11,
+   "lang": "el",
+   "say": "Προχωράτε ευθεία και περνάτε την τράπεζα. Στη γωνία στρίβετε αριστερά. Το μετρό είναι μπροστά στην πλατεία.",
+   "who": "mesitis"
+  },
+  {
+   "t": 709.62,
+   "lang": "el",
+   "say": "Ευχαριστώ! Είναι ωραίο διαμέρισμα. Θα έρθω αύριο με την Ελένη.",
+   "who": "ayse"
+  },
+  {
+   "t": 714.06,
+   "lang": "tr",
+   "say": "Hepsini anladım. Υπάρχει, υπάρχουν, πίσω, δίπλα, ve köşede sola.",
+   "who": "mert"
+  },
+  {
+   "t": 721.46,
+   "lang": "tr",
+   "say": "Kelime köşesi. Yatak odası, το υπνοδωμάτιο. İçinde iki kelime saklı: uyku demek olan ύπνος ve oda demek olan δωμάτιο. Uyku odası.",
+   "who": "ada"
+  },
+  {
+   "t": 734.19,
+   "lang": "tr",
+   "say": "Ύπνος. Hipnoz gibi mi?",
+   "who": "mert"
+  },
+  {
+   "t": 736.3,
+   "lang": "tr",
+   "say": "Evet, hipnoz bu kökten geliyor. Ο μεσίτης da orta demek olan μέσος kelimesinden: emlakçı iki tarafın ortasında duran aracıdır.",
+   "who": "ada"
+  },
+  {
+   "t": 749.15,
+   "lang": "tr",
+   "say": "Gelecek bölümde yemek var. Nikos telefonla suvlaki sipariş ediyor, Ayşe bir tavernada masa ayırtıyor. Gelecek zamanın tamamı geliyor.",
+   "who": "ada"
+  },
+  {
+   "t": 758.6,
+   "lang": "tr",
+   "say": "Bu arada bölümü uygulamada oku, alıştırmaları yap. Şimdi son söz Katerina'nın: bugünün hikâyesi, sadece Yunanca. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "t": 768.4,
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "t": 771.06,
+   "lang": "el",
+   "say": "Η Αϊσέ ψάχνει διαμέρισμα στην Καλλιθέα.",
+   "who": "katerina"
+  },
+  {
+   "t": 774.1,
+   "lang": "el",
+   "say": "Μιλάει στο τηλέφωνο με τον μεσίτη, τον κύριο Πέτρου.",
+   "who": "katerina"
+  },
+  {
+   "t": 777.57,
+   "lang": "el",
+   "say": "Το πρώτο διαμέρισμα έχει δύο υπνοδωμάτια, σαλόνι και μπαλκόνι.",
+   "who": "katerina"
+  },
+  {
+   "t": 782.51,
+   "lang": "el",
+   "say": "Είναι στον τρίτο όροφο και υπάρχει ασανσέρ.",
+   "who": "katerina"
+  },
+  {
+   "t": 786.12,
+   "lang": "el",
+   "say": "Το ενοίκιο είναι πεντακόσια ευρώ τον μήνα.",
+   "who": "katerina"
+  },
+  {
+   "t": 789.07,
+   "lang": "el",
+   "say": "Στο δεύτερο διαμέρισμα δεν υπάρχει ασανσέρ.",
+   "who": "katerina"
+  },
+  {
+   "t": 792.33,
+   "lang": "el",
+   "say": "Την άλλη μέρα η Αϊσέ πάει στο πρώτο διαμέρισμα με το μετρό.",
+   "who": "katerina"
+  },
+  {
+   "t": 796.05,
+   "lang": "el",
+   "say": "Η κουζίνα είναι δίπλα στο μπάνιο, και η θέα είναι πολύ ωραία.",
+   "who": "katerina"
+  },
+  {
+   "t": 799.93,
+   "lang": "el",
+   "say": "Στη γειτονιά υπάρχει ένα ταχυδρομείο, πίσω από το σχολείο.",
+   "who": "katerina"
+  },
+  {
+   "t": 804.07,
+   "lang": "el",
+   "say": "Υπάρχουν και δύο φούρνοι.",
+   "who": "katerina"
+  },
+  {
+   "t": 806.12,
+   "lang": "el",
+   "say": "Και το μετρό; Προχωράς ευθεία, και στη γωνία στρίβεις αριστερά.",
+   "who": "katerina"
+  },
+  {
+   "t": 810.79,
+   "lang": "el",
+   "say": "Η Αϊσέ λέει: «Είναι ωραίο διαμέρισμα!»",
+   "who": "katerina"
+  },
+  {
+   "t": 814.14,
+   "lang": "el",
+   "say": "Αύριο θα έρθει ξανά, με την Ελένη.",
+   "who": "katerina"
+  },
+  {
+   "t": 816.94,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ],
+ "cast": {
+  "ayse": {
+   "name": "Αϊσέ",
+   "voice": "Achernar"
+  },
+  "mesitis": {
+   "name": "Μεσίτης",
+   "voice": "Charon"
+  },
+  "ada": {
+   "name": "Ada",
+   "voice": "Sulafat"
+  },
+  "mert": {
+   "name": "Mert",
+   "voice": "Umbriel"
+  },
+  "katerina": {
+   "name": "Κατερίνα",
+   "voice": "Gacrux"
+  }
+ },
+ "sounds": true
+}

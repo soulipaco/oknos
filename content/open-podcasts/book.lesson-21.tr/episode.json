@@ -1,0 +1,1040 @@
+{
+ "id": "book.lesson-21.tr",
+ "kind": "chapter",
+ "lang": "tr",
+ "title": {
+  "tr": "Πάρτε, ama μην πάρετε! Eczanede ve doktorda",
+  "en": "Take it, but don't take two! At the pharmacy and the doctor's"
+ },
+ "curriculum": "oknos-book",
+ "stage": "lesson-21",
+ "version": 2,
+ "written": "2026-11-26",
+ "date": null,
+ "rendered": "2026-11-26T13:49:13",
+ "seconds": 912.2,
+ "script": "29d1be0d3766",
+ "parts": [
+  {
+   "t": 3.0,
+   "title": "Açılış"
+  },
+  {
+   "t": 45.6,
+   "title": "Hoş geldin"
+  },
+  {
+   "t": 91.56,
+   "title": "Eczanede"
+  },
+  {
+   "t": 152.47,
+   "title": "Sağlık merkezinde"
+  },
+  {
+   "t": 225.57,
+   "title": "Başım beni acıtıyor"
+  },
+  {
+   "t": 307.25,
+   "title": "Yaz, yazın: γράψε, γράψτε"
+  },
+  {
+   "t": 436.3,
+   "title": "Alma, almayın: μην"
+  },
+  {
+   "t": 540.97,
+   "title": "Sıra sende"
+  },
+  {
+   "t": 642.49,
+   "title": "Mert'in hatası"
+  },
+  {
+   "t": 676.66,
+   "title": "Oyun: doktor diyor ki"
+  },
+  {
+   "t": 726.72,
+   "title": "Sahne yeniden"
+  },
+  {
+   "t": 773.57,
+   "title": "Köşe: geçmiş olsun"
+  },
+  {
+   "t": 815.6,
+   "title": "Gelecek bölüm"
+  },
+  {
+   "t": 846.48,
+   "title": "Katerina anlatıyor"
+  }
+ ],
+ "lines": [
+  {
+   "t": 3.0,
+   "lang": "el",
+   "say": "Δώστε μου και ένα χάπι για τον πυρετό, παρακαλώ.",
+   "who": "ayse"
+  },
+  {
+   "t": 6.36,
+   "lang": "el",
+   "say": "Ορίστε. Πάρτε ένα το πρωί και ένα το βράδυ. Μην πάρετε δύο μαζί! Και πηγαίνετε σήμερα στο κέντρο υγείας.",
+   "who": "farmakopoios"
+  },
+  {
+   "t": 14.67,
+   "lang": "el",
+   "say": "Ευχαριστώ πολύ.",
+   "who": "ayse"
+  },
+  {
+   "t": 16.18,
+   "lang": "el",
+   "say": "Περαστικά!",
+   "who": "farmakopoios"
+  },
+  {
+   "t": 18.06,
+   "lang": "tr",
+   "say": "Bir eczane, bir hap, iki emir. Önce alın: πάρτε. Hemen arkasından almayın: μην πάρετε.",
+   "who": "ada"
+  },
+  {
+   "t": 26.11,
+   "lang": "tr",
+   "say": "Ben olsam πάρτε deyip başına bir değil eklerdim. Δεν πάρτε gibi bir şey. Ama eczacı bambaşka bir şey dedi. Fiilin sonu bile değişti.",
+   "who": "mert"
+  },
+  {
+   "t": 36.46,
+   "lang": "tr",
+   "say": "Bugün tam bunu çözeceğiz. Ve iyi ki çözeceğiz, çünkü doktor her cümlede bir emir verir.",
+   "who": "ada"
+  },
+  {
+   "t": 45.6,
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, yirmi birinci bölüm.",
+   "who": "ada"
+  },
+  {
+   "t": 50.82,
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "t": 56.36,
+   "lang": "el",
+   "say": "Μερτ, τι έχεις;",
+   "who": "ada"
+  },
+  {
+   "t": 58.42,
+   "lang": "el",
+   "say": "Δε νιώθω καλά. Με πονάει το κεφάλι μου.",
+   "who": "mert"
+  },
+  {
+   "t": 61.37,
+   "lang": "el",
+   "say": "Περαστικά!",
+   "who": "ada"
+  },
+  {
+   "t": 63.09,
+   "lang": "tr",
+   "say": "Περαστικά, geçmiş olsun. Bugün Ayşe de hasta. Önce eczaneye gidiyor, sonra doktora. Sen de neren ağrıyor söylemeyi ve doktorun emirlerini anlamayı öğreneceksin.",
+   "who": "ada"
+  },
+  {
+   "t": 75.42,
+   "lang": "tr",
+   "say": "A iki sınavında da çıkar mı bu?",
+   "who": "mert"
+  },
+  {
+   "t": 77.54,
+   "lang": "tr",
+   "say": "Çıkabilir. Rol oyununda karşındaki kişi eczacı ya da doktor olabilir. Katerina da burada. Örnek cümleleri o söyleyecek, sen de arkasından söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 87.59,
+   "lang": "el",
+   "say": "Γεια σας! Καθίστε και ακούστε!",
+   "who": "katerina"
+  },
+  {
+   "t": 91.56,
+   "lang": "tr",
+   "say": "İlk sahne. Pazartesi sabahı, Ayşe eczanede. Eczacı ona siz diyor, bu yüzden bütün emirler çoğul. Bir şeye kulak ver: şurubu günde kaç kez alacak?",
+   "who": "ada"
+  },
+  {
+   "t": 103.7,
+   "lang": "el",
+   "say": "Καλημέρα σας. Δε νιώθω καλά. Είμαι άρρωστη.",
+   "who": "ayse"
+  },
+  {
+   "t": 107.56,
+   "lang": "el",
+   "say": "Τι έχετε;",
+   "who": "farmakopoios"
+  },
+  {
+   "t": 109.11,
+   "lang": "el",
+   "say": "Με πονάει ο λαιμός μου. Με πονάει και το κεφάλι μου. Βήχω και έχω πυρετό, τριάντα οχτώ.",
+   "who": "ayse"
+  },
+  {
+   "t": 115.33,
+   "lang": "el",
+   "say": "Έχετε κρυολόγημα ή γρίπη. Ορίστε ένα σιρόπι. Πάρτε το τρεις φορές τη μέρα.",
+   "who": "farmakopoios"
+  },
+  {
+   "t": 121.95,
+   "lang": "el",
+   "say": "Δώστε μου και ένα χάπι για τον πυρετό, παρακαλώ.",
+   "who": "ayse"
+  },
+  {
+   "t": 125.31,
+   "lang": "el",
+   "say": "Ορίστε. Πάρτε ένα το πρωί και ένα το βράδυ. Μην πάρετε δύο μαζί! Και πηγαίνετε σήμερα στο κέντρο υγείας.",
+   "who": "farmakopoios"
+  },
+  {
+   "t": 133.62,
+   "lang": "el",
+   "say": "Ευχαριστώ πολύ.",
+   "who": "ayse"
+  },
+  {
+   "t": 135.13,
+   "lang": "el",
+   "say": "Περαστικά!",
+   "who": "farmakopoios"
+  },
+  {
+   "t": 137.01,
+   "lang": "tr",
+   "say": "Günde kaç kez? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 143.48,
+   "lang": "tr",
+   "say": "İki kez. Sabah bir, akşam bir.",
+   "who": "mert"
+  },
+  {
+   "t": 146.44,
+   "lang": "tr",
+   "say": "O hap. Şurup üç kez: τρεις φορές τη μέρα.",
+   "who": "ada"
+  },
+  {
+   "t": 152.47,
+   "lang": "tr",
+   "say": "İkinci sahne. Aynı gün, sağlık merkezinde. Yunancası το κέντρο υγείας. Ayşe doktorun odasında. Bu sefer biraz yavaş. Dinle: Ayşe yarın işe gidebilecek mi?",
+   "who": "ada"
+  },
+  {
+   "t": 167.68,
+   "lang": "el",
+   "say": "Καλησπέρα σας. Καθίστε, παρακαλώ. Τι συμπτώματα έχετε;",
+   "who": "giatros",
+   "speed": 0.85
+  },
+  {
+   "t": 172.75,
+   "lang": "el",
+   "say": "Από χθες έχω πυρετό και με πονάει η πλάτη μου. Βήχω πολύ.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 178.57,
+   "lang": "el",
+   "say": "Ανοίξτε το στόμα σας, παρακαλώ. Τώρα ξαπλώστε στο κρεβάτι.",
+   "who": "giatros",
+   "speed": 0.85
+  },
+  {
+   "t": 183.57,
+   "lang": "el",
+   "say": "Είναι σοβαρό;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 185.02,
+   "lang": "el",
+   "say": "Όχι, έχετε γρίπη. Πάρτε ένα χάπι δύο φορές τη μέρα και πιείτε πολύ νερό.",
+   "who": "giatros",
+   "speed": 0.85
+  },
+  {
+   "t": 190.82,
+   "lang": "el",
+   "say": "Πείτε μου, γιατρέ: μπορώ να πάω αύριο στη δουλειά;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 194.85,
+   "lang": "el",
+   "say": "Δυστυχώς όχι. Μείνετε στο κρεβάτι και μην πάτε στη δουλειά.",
+   "who": "giatros",
+   "speed": 0.85
+  },
+  {
+   "t": 198.92,
+   "lang": "el",
+   "say": "Χρειάζομαι συνταγή;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 200.77,
+   "lang": "el",
+   "say": "Ναι, ορίστε. Δώστε τη στον φαρμακοποιό. Ελάτε την Πέμπτη. Περαστικά!",
+   "who": "giatros",
+   "speed": 0.85
+  },
+  {
+   "t": 208.71,
+   "lang": "tr",
+   "say": "İşe gidebilecek mi? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 215.51,
+   "lang": "tr",
+   "say": "Hayır. Δυστυχώς όχι, maalesef hayır. Yatakta kalacak. Perşembe günü de doktora geri gidecek: ελάτε την Πέμπτη.",
+   "who": "mert"
+  },
+  {
+   "t": 225.57,
+   "lang": "tr",
+   "say": "Ayşe boğazım ağrıyor derken με πονάει ο λαιμός μου dedi. Ama με beni demek değil miydi?",
+   "who": "mert"
+  },
+  {
+   "t": 232.77,
+   "lang": "tr",
+   "say": "Evet, beni. Yunanca ağrıyı tersinden söyler. Kelimesi kelimesine: boğazım beni acıtıyor.",
+   "who": "ada"
+  },
+  {
+   "t": 240.3,
+   "lang": "tr",
+   "say": "Yani boğazım bana bir şey yapıyor.",
+   "who": "mert"
+  },
+  {
+   "t": 242.69,
+   "lang": "tr",
+   "say": "Aynen. Sonra artikel, parça, en sonda da benim anlamına gelen μου. Artikel parçaya uyar. Boğaz eril, o yüzden ο λαιμός. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 255.32,
+   "lang": "el",
+   "say": "Με πονάει ο λαιμός μου.",
+   "who": "katerina"
+  },
+  {
+   "t": 260.19,
+   "lang": "tr",
+   "say": "Baş nötr, το κεφάλι. Sırt dişil, η πλάτη. Doktorda Ayşe'nin sırtı da ağrıyordu:",
+   "who": "ada"
+  },
+  {
+   "t": 268.93,
+   "lang": "el",
+   "say": "Με πονάει η πλάτη μου.",
+   "who": "katerina"
+  },
+  {
+   "t": 273.35,
+   "lang": "tr",
+   "say": "Peki iki ayağım birden ağrıyorsa?",
+   "who": "mert"
+  },
+  {
+   "t": 275.72,
+   "lang": "tr",
+   "say": "O zaman fiil de çoğul olur, çünkü ağrıyan iki şey var. Πονάει yerine πονάνε.",
+   "who": "ada"
+  },
+  {
+   "t": 282.74,
+   "lang": "el",
+   "say": "Με πονάνε τα πόδια μου.",
+   "who": "katerina"
+  },
+  {
+   "t": 287.89,
+   "lang": "tr",
+   "say": "Ateşte ve hastalıkta ise bu kalıp yok. Sadece var fiili, artikelsiz: έχω πυρετό, έχω γρίπη.",
+   "who": "ada"
+  },
+  {
+   "t": 296.04,
+   "lang": "el",
+   "say": "Μερτ, εσένα πού σε πονάει;",
+   "who": "ada"
+  },
+  {
+   "t": 299.33,
+   "lang": "el",
+   "say": "Με πονάει το στομάχι μου.",
+   "who": "mert"
+  },
+  {
+   "t": 301.61,
+   "lang": "tr",
+   "say": "Midesi ağrıyormuş. Nedenini birazdan öğreneceğiz.",
+   "who": "ada"
+  },
+  {
+   "t": 307.25,
+   "lang": "tr",
+   "say": "Şimdi emirler. Eczacı πάρτε dedi. Doktor καθίστε, ανοίξτε, ξαπλώστε. Hepsi aynı sesle bitiyor.",
+   "who": "mert"
+  },
+  {
+   "t": 316.21,
+   "lang": "tr",
+   "say": "Çünkü ikisi de Ayşe'ye siz diyor. Türkçede yaz ve yazın deriz. Yunancada da iki biçim var. Bir arkadaşa, sonu e: γράψε. Birkaç kişiye, ya da nazikçe siz diye, sonu te: γράψτε.",
+   "who": "ada"
+  },
+  {
+   "t": 329.9,
+   "lang": "tr",
+   "say": "Peki yazmak γράφω. Emirdeki o ps sesi nereden geldi?",
+   "who": "mert"
+  },
+  {
+   "t": 334.28,
+   "lang": "tr",
+   "say": "Gelecek zamandan. Θα γράψω, yazacağım. Emir aynı bir kerelik kökü alır. Θα πάρω, alacağım: πάρε, πάρτε. Θα δώσω, vereceğim: δώσε, δώστε.",
+   "who": "ada"
+  },
+  {
+   "t": 350.32,
+   "lang": "tr",
+   "say": "Yani gelecek zamanı biliyorsam emri de biliyorum.",
+   "who": "mert"
+  },
+  {
+   "t": 353.96,
+   "lang": "tr",
+   "say": "Çoğu zaman, evet. Katerina, doktorun emirleri. Önce bir arkadaşa, sonra siz diye. Yavaşça.",
+   "who": "ada"
+  },
+  {
+   "t": 362.32,
+   "lang": "el",
+   "say": "κάθισε, καθίστε. άνοιξε, ανοίξτε. ξάπλωσε, ξαπλώστε.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 379.58,
+   "lang": "tr",
+   "say": "Peki πιείτε? Doktor çok su için derken öyle dedi. Bu hiç benzemiyor.",
+   "who": "mert"
+  },
+  {
+   "t": 384.67,
+   "lang": "tr",
+   "say": "Bazı fiillerin emri kendine özgü. İçmek, söylemek, gelmek. Bunları ayrı öğren. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 394.05,
+   "lang": "el",
+   "say": "πιες, πιείτε. πες, πείτε. έλα, ελάτε.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 404.35,
+   "lang": "tr",
+   "say": "Ayşe doktora ne dedi, hatırla: πείτε μου, γιατρέ. Söyleyin bana. Eczacıya da δώστε μου dedi. Fark ettin mi? Bana kelimesi fiilden sonra geldi.",
+   "who": "ada"
+  },
+  {
+   "t": 415.62,
+   "lang": "tr",
+   "say": "Ama on altıncı derste hep öndeydi. Σου δίνω, sana veriyorum.",
+   "who": "mert"
+  },
+  {
+   "t": 420.22,
+   "lang": "tr",
+   "say": "Düz cümlede önde. Olumlu emirde arkada. Türkçedeki ver bana gibi düşün. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 428.73,
+   "lang": "el",
+   "say": "Δώστε μου ένα σιρόπι, παρακαλώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 436.3,
+   "lang": "tr",
+   "say": "Şimdi açılıştaki soru. Almayın neden δεν πάρτε değil?",
+   "who": "mert"
+  },
+  {
+   "t": 441.21,
+   "lang": "tr",
+   "say": "Çünkü olumsuz emirde emir biçimi hiç kullanılmaz. On yedinci derste geç kalma demiştik, hatırla: μην αργήσεις. Aynı kalıp. Önce μην, sonra fiilin να ile kullanılan biçimi.",
+   "who": "ada"
+  },
+  {
+   "t": 457.01,
+   "lang": "tr",
+   "say": "Να πάρεις. O zaman μην πάρεις!",
+   "who": "mert"
+  },
+  {
+   "t": 459.92,
+   "lang": "tr",
+   "say": "Evet. Bir arkadaşa μην πάρεις, siz diye μην πάρετε. Katerina, olumlu ve olumsuz yan yana:",
+   "who": "ada"
+  },
+  {
+   "t": 469.04,
+   "lang": "el",
+   "say": "πάρε, μην πάρεις. πάρτε, μην πάρετε.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 478.77,
+   "lang": "tr",
+   "say": "Doktor da işe gitmeyin dedi. Git emri πήγαινε, ama olumsuzda kısa biçim gelir:",
+   "who": "ada"
+  },
+  {
+   "t": 485.81,
+   "lang": "el",
+   "say": "Μην πάτε στη δουλειά.",
+   "who": "katerina"
+  },
+  {
+   "t": 489.7,
+   "lang": "tr",
+   "say": "Bana, onu gibi küçük kelimeler ne oluyor? Olumsuzda nereye gidiyor?",
+   "who": "mert"
+  },
+  {
+   "t": 494.35,
+   "lang": "tr",
+   "say": "Yine öne döner. Onu al: πάρε το. Onu alma: μην το πάρεις. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 502.1,
+   "lang": "el",
+   "say": "Μην το πάρεις με καφέ.",
+   "who": "katerina"
+  },
+  {
+   "t": 506.26,
+   "lang": "tr",
+   "say": "Bir de μην, δεν gibi, bazı seslerden önce n sesini düşürür: μη φας, ama μην πας.",
+   "who": "ada"
+  },
+  {
+   "t": 515.34,
+   "lang": "tr",
+   "say": "Son bir incelik. Mert, miden ağrıyordu. Sana bir kerelik bir şey söyleyeyim: bugün kahve içme.",
+   "who": "ada"
+  },
+  {
+   "t": 523.23,
+   "lang": "el",
+   "say": "Μην πιεις καφέ σήμερα.",
+   "who": "katerina"
+  },
+  {
+   "t": 525.43,
+   "lang": "tr",
+   "say": "Ama bir alışkanlık söylüyorsam, yani akşamları hiç içme diyorsam, şimdiki zamanın kökü gelir:",
+   "who": "ada"
+  },
+  {
+   "t": 532.22,
+   "lang": "el",
+   "say": "Μην πίνεις καφέ το βράδυ.",
+   "who": "katerina"
+  },
+  {
+   "t": 537.08,
+   "lang": "tr",
+   "say": "Anladım. Ama söz veremem.",
+   "who": "mert"
+  },
+  {
+   "t": 540.97,
+   "lang": "tr",
+   "say": "Şimdi sıra sende. Eczanedesin, sonra doktordasın. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert, en son Katerina. Birincisi: eczacıya kendini iyi hissetmediğini söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 559.23,
+   "lang": "el",
+   "say": "Δε νιώθω καλά.",
+   "who": "mert"
+  },
+  {
+   "t": 560.6,
+   "lang": "el",
+   "say": "Δε νιώθω καλά.",
+   "who": "katerina"
+  },
+  {
+   "t": 564.3,
+   "lang": "tr",
+   "say": "Boğazının ağrıdığını söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 570.83,
+   "lang": "el",
+   "say": "Με πονάει ο λαιμός μου.",
+   "who": "mert"
+  },
+  {
+   "t": 572.64,
+   "lang": "el",
+   "say": "Με πονάει ο λαιμός μου.",
+   "who": "katerina"
+  },
+  {
+   "t": 577.5,
+   "lang": "tr",
+   "say": "Eczacıya: bana bir şurup verin, lütfen.",
+   "who": "ada"
+  },
+  {
+   "t": 585.32,
+   "lang": "el",
+   "say": "Μου δώστε ένα σιρόπι, παρακαλώ.",
+   "who": "mert"
+  },
+  {
+   "t": 587.79,
+   "lang": "tr",
+   "say": "Mert, bana kelimesi nerede olmalıydı?",
+   "who": "ada"
+  },
+  {
+   "t": 591.02,
+   "lang": "tr",
+   "say": "Ah, olumlu emir. Arkada.",
+   "who": "mert"
+  },
+  {
+   "t": 594.16,
+   "lang": "el",
+   "say": "Δώστε μου ένα σιρόπι, παρακαλώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 600.05,
+   "lang": "tr",
+   "say": "Doktor çok hızlı konuşuyor. Ona yavaş konuşun, lütfen, de.",
+   "who": "ada"
+  },
+  {
+   "t": 608.12,
+   "lang": "el",
+   "say": "Μιλήστε αργά, παρακαλώ.",
+   "who": "mert"
+  },
+  {
+   "t": 610.59,
+   "lang": "tr",
+   "say": "Mükemmel. Yavaş αργός, yavaşça αργά. İyi de öyle: καλός, καλά. Sınavda bu cümle seni kurtarır.",
+   "who": "ada"
+  },
+  {
+   "t": 622.39,
+   "lang": "el",
+   "say": "Μιλήστε αργά, παρακαλώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 627.23,
+   "lang": "tr",
+   "say": "Son olarak, hasta bir arkadaşına: işe gitme.",
+   "who": "ada"
+  },
+  {
+   "t": 635.55,
+   "lang": "el",
+   "say": "Μην πας στη δουλειά.",
+   "who": "mert"
+  },
+  {
+   "t": 636.99,
+   "lang": "el",
+   "say": "Μην πας στη δουλειά.",
+   "who": "katerina"
+  },
+  {
+   "t": 642.49,
+   "lang": "tr",
+   "say": "Mert, şimdi hızlı ol. Düşünmeden eczacı ol ve Ayşe'ye söyle: ikisini birden almayın.",
+   "who": "ada"
+  },
+  {
+   "t": 649.98,
+   "lang": "el",
+   "say": "Μην πάρτε δύο μαζί!",
+   "who": "mert"
+  },
+  {
+   "t": 652.12,
+   "lang": "tr",
+   "say": "Neredeyse. Ama μην gelince emir biçimi gitmeli.",
+   "who": "ada"
+  },
+  {
+   "t": 657.55,
+   "lang": "tr",
+   "say": "Πάρτε emir biçimi. O zaman να ile olan biçim: πάρετε.",
+   "who": "mert"
+  },
+  {
+   "t": 662.29,
+   "lang": "tr",
+   "say": "İşte. Türkçede almayın, alın'a bir ek eklemekle olur. Yunancada olumsuz emir başka bir kalıp. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 670.25,
+   "lang": "el",
+   "say": "Μην πάρετε δύο μαζί!",
+   "who": "katerina"
+  },
+  {
+   "t": 676.66,
+   "lang": "tr",
+   "say": "Küçük bir oyun. Ben bir arkadaşa emir vereceğim. Sen aynı emri doktor gibi, siz diye söyle. Sonra Mert. Birincisi: κάθισε.",
+   "who": "ada"
+  },
+  {
+   "t": 692.37,
+   "lang": "el",
+   "say": "Καθίστε!",
+   "who": "mert"
+  },
+  {
+   "t": 693.79,
+   "lang": "tr",
+   "say": "Doğru. İkincisi: άνοιξε το στόμα σου.",
+   "who": "ada"
+  },
+  {
+   "t": 701.56,
+   "lang": "el",
+   "say": "Ανοίξτε το στόμα σας!",
+   "who": "mert"
+  },
+  {
+   "t": 703.32,
+   "lang": "tr",
+   "say": "Harika, σου da σας oldu. Üçüncüsü: έλα την Πέμπτη.",
+   "who": "ada"
+  },
+  {
+   "t": 713.45,
+   "lang": "el",
+   "say": "Έλτε την Πέμπτη!",
+   "who": "mert"
+  },
+  {
+   "t": 715.22,
+   "lang": "tr",
+   "say": "Dur. Gelmek düzensizdi, hatırla.",
+   "who": "ada"
+  },
+  {
+   "t": 718.21,
+   "lang": "tr",
+   "say": "Ah, doğru. Ελάτε.",
+   "who": "mert"
+  },
+  {
+   "t": 720.37,
+   "lang": "el",
+   "say": "Ελάτε την Πέμπτη.",
+   "who": "katerina"
+  },
+  {
+   "t": 726.72,
+   "lang": "tr",
+   "say": "Şimdi doktordaki sahne bir kez daha, normal hızda. Artık her emri anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "t": 732.87,
+   "lang": "el",
+   "say": "Καλησπέρα σας. Καθίστε, παρακαλώ. Τι συμπτώματα έχετε;",
+   "who": "giatros"
+  },
+  {
+   "t": 737.24,
+   "lang": "el",
+   "say": "Από χθες έχω πυρετό και με πονάει η πλάτη μου. Βήχω πολύ.",
+   "who": "ayse"
+  },
+  {
+   "t": 742.24,
+   "lang": "el",
+   "say": "Ανοίξτε το στόμα σας, παρακαλώ. Τώρα ξαπλώστε στο κρεβάτι.",
+   "who": "giatros"
+  },
+  {
+   "t": 746.54,
+   "lang": "el",
+   "say": "Είναι σοβαρό;",
+   "who": "ayse"
+  },
+  {
+   "t": 747.83,
+   "lang": "el",
+   "say": "Όχι, έχετε γρίπη. Πάρτε ένα χάπι δύο φορές τη μέρα και πιείτε πολύ νερό.",
+   "who": "giatros"
+  },
+  {
+   "t": 752.82,
+   "lang": "el",
+   "say": "Πείτε μου, γιατρέ: μπορώ να πάω αύριο στη δουλειά;",
+   "who": "ayse"
+  },
+  {
+   "t": 756.3,
+   "lang": "el",
+   "say": "Δυστυχώς όχι. Μείνετε στο κρεβάτι και μην πάτε στη δουλειά.",
+   "who": "giatros"
+  },
+  {
+   "t": 759.81,
+   "lang": "el",
+   "say": "Χρειάζομαι συνταγή;",
+   "who": "ayse"
+  },
+  {
+   "t": 761.44,
+   "lang": "el",
+   "say": "Ναι, ορίστε. Δώστε τη στον φαρμακοποιό. Ελάτε την Πέμπτη. Περαστικά!",
+   "who": "giatros"
+  },
+  {
+   "t": 768.29,
+   "lang": "tr",
+   "say": "Doktor neredeyse her cümlede bir emir verdi. Hepsini anladım.",
+   "who": "mert"
+  },
+  {
+   "t": 773.57,
+   "lang": "tr",
+   "say": "Köşemiz. Eczacı da doktor da en sonda aynı şeyi dedi: Περαστικά.",
+   "who": "ada"
+  },
+  {
+   "t": 780.37,
+   "lang": "tr",
+   "say": "Geçmiş olsun.",
+   "who": "mert"
+  },
+  {
+   "t": 781.66,
+   "lang": "tr",
+   "say": "Evet, ve anlamı da neredeyse aynı. Περνάω geçmek demek. Περαστικός, geçip giden, geçici. Περαστικά ise geçici olsun, geçip gitsin.",
+   "who": "ada"
+  },
+  {
+   "t": 794.49,
+   "lang": "tr",
+   "say": "Yani iki dil de hastalığa aynı şeyi diyor: geçip git.",
+   "who": "mert"
+  },
+  {
+   "t": 797.7,
+   "lang": "tr",
+   "say": "Aynen. Bir de eczane. Φαρμακείο, eczacı φαρμακοποιός, ilaç φάρμακο. Bu kelime çok eski. Antik Yunancada hem ilaç, hem de zehir demekti.",
+   "who": "ada"
+  },
+  {
+   "t": 811.11,
+   "lang": "tr",
+   "say": "Farmakoloji gibi kelimeler de oradan geliyor demek.",
+   "who": "mert"
+  },
+  {
+   "t": 815.6,
+   "lang": "tr",
+   "say": "Gelecek bölümde Ayşe iyileşmiş. Komşusu Maria Hanım'ın isim günü var, ve Ayşe kapıda ona χρόνια πολλά diyor.",
+   "who": "ada"
+  },
+  {
+   "t": 824.15,
+   "lang": "tr",
+   "say": "İsim günü mü? Doğum günü gibi mi?",
+   "who": "mert"
+  },
+  {
+   "t": 826.56,
+   "lang": "tr",
+   "say": "Benzer, ama bir azizin gününde kutlanır. Bir de Paskalya'yı ve kırmızı yumurtaları dinleyeceğiz.",
+   "who": "ada"
+  },
+  {
+   "t": 832.08,
+   "lang": "tr",
+   "say": "Bu arada bölümü uygulamada oku, alıştırmaları yap. Şimdi son söz Katerina'nın: Ayşe'nin hasta pazartesisi, sadece Yunanca. Sadece dinle. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "t": 843.83,
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "t": 846.48,
+   "lang": "el",
+   "say": "Τη Δευτέρα το πρωί η Αϊσέ δε νιώθει καλά. Είναι άρρωστη.",
+   "who": "katerina"
+  },
+  {
+   "t": 851.53,
+   "lang": "el",
+   "say": "Την πονάει ο λαιμός της. Την πονάει και το κεφάλι της.",
+   "who": "katerina"
+  },
+  {
+   "t": 856.28,
+   "lang": "el",
+   "say": "Βήχει και έχει πυρετό, τριάντα οχτώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 859.0,
+   "lang": "el",
+   "say": "Πηγαίνει στο φαρμακείο. Ο φαρμακοποιός της δίνει ένα σιρόπι και ένα χάπι για τον πυρετό.",
+   "who": "katerina"
+  },
+  {
+   "t": 865.79,
+   "lang": "el",
+   "say": "Της λέει: «Πάρτε ένα το πρωί και ένα το βράδυ. Μην πάρετε δύο μαζί!»",
+   "who": "katerina"
+  },
+  {
+   "t": 870.83,
+   "lang": "el",
+   "say": "Το απόγευμα η Αϊσέ είναι στο κέντρο υγείας. Τώρα την πονάει και η πλάτη της.",
+   "who": "katerina"
+  },
+  {
+   "t": 876.03,
+   "lang": "el",
+   "say": "Ο γιατρός λέει: «Καθίστε, παρακαλώ. Ανοίξτε το στόμα σας.»",
+   "who": "katerina"
+  },
+  {
+   "t": 882.33,
+   "lang": "el",
+   "say": "Η Αϊσέ ρωτάει: «Είναι σοβαρό;»",
+   "who": "katerina"
+  },
+  {
+   "t": 885.29,
+   "lang": "el",
+   "say": "Ευτυχώς, δεν είναι σοβαρό. Η Αϊσέ έχει γρίπη.",
+   "who": "katerina"
+  },
+  {
+   "t": 889.28,
+   "lang": "el",
+   "say": "Πρέπει να πάρει ένα χάπι δύο φορές τη μέρα και να πίνει πολύ νερό.",
+   "who": "katerina"
+  },
+  {
+   "t": 893.93,
+   "lang": "el",
+   "say": "Αύριο δεν μπορεί να πάει στη δουλειά. Πρέπει να μείνει στο κρεβάτι.",
+   "who": "katerina"
+  },
+  {
+   "t": 898.64,
+   "lang": "el",
+   "say": "Την Πέμπτη πρέπει να πάει πάλι στον γιατρό.",
+   "who": "katerina"
+  },
+  {
+   "t": 901.54,
+   "lang": "el",
+   "say": "Το βράδυ η Αϊσέ είναι στο σπίτι, στο κρεβάτι, με ένα τσάι.",
+   "who": "katerina"
+  },
+  {
+   "t": 906.01,
+   "lang": "el",
+   "say": "Περαστικά, Αϊσέ!",
+   "who": "katerina"
+  },
+  {
+   "t": 907.89,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ],
+ "cast": {
+  "ayse": {
+   "name": "Αϊσέ",
+   "voice": "Achernar"
+  },
+  "farmakopoios": {
+   "name": "Φαρμακοποιός",
+   "voice": "Alnilam"
+  },
+  "ada": {
+   "name": "Ada",
+   "voice": "Sulafat"
+  },
+  "mert": {
+   "name": "Mert",
+   "voice": "Umbriel"
+  },
+  "katerina": {
+   "name": "Κατερίνα",
+   "voice": "Gacrux"
+  },
+  "giatros": {
+   "name": "Γιατρός",
+   "voice": "Achird"
+  }
+ },
+ "sounds": true
+}

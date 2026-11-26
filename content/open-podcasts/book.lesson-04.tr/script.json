@@ -1,0 +1,935 @@
+{
+ "id": "book.lesson-04.tr",
+ "kind": "chapter",
+ "curriculum": "oknos-book",
+ "stage": "lesson-04",
+ "lang": "tr",
+ "title": {
+  "tr": "Benim neden arkada? Telefonda adın, numaran, işin",
+  "en": "Why does 'my' come last? Your name, number and work on the phone"
+ },
+ "version": 4,
+ "written": "2026-11-26",
+ "cast": [
+  {
+   "id": "ada",
+   "name": "Ada",
+   "role": "host",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "f",
+   "age": "35",
+   "manner": "warm, curious, explains with Turkish bridges"
+  },
+  {
+   "id": "mert",
+   "name": "Mert",
+   "role": "cohost",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "m",
+   "age": "32",
+   "manner": "easy-going, a bit lazy, the learner; guesses and sometimes gets it wrong"
+  },
+  {
+   "id": "katerina",
+   "name": "Κατερίνα",
+   "role": "guest",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "45",
+   "manner": "native, from Thessaloniki, warm, patient, clear"
+  },
+  {
+   "id": "lydia",
+   "name": "Λυδία",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "35",
+   "manner": "office secretary at a company in Athens, friendly, efficient, quick on the phone"
+  },
+  {
+   "id": "mehmet",
+   "name": "Μεχμέτ",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "m",
+   "age": "30",
+   "manner": "Turkish engineer living in Athens, polite, careful, a little formal on the phone"
+  }
+ ],
+ "sources": [
+  {
+   "what": "chapter",
+   "ref": "oknos-book/lessons/lesson-04"
+  }
+ ],
+ "segments": [
+  {
+   "part": "Açılış"
+  },
+  {
+   "lang": "el",
+   "say": "Ναι, παρακαλώ;",
+   "who": "lydia"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα σας. Για τη δουλειά…",
+   "who": "mehmet"
+  },
+  {
+   "lang": "el",
+   "say": "Α, ναι! Είμαι η Λυδία. Το όνομά σας, παρακαλώ;",
+   "who": "lydia"
+  },
+  {
+   "lang": "el",
+   "say": "Το όνομά μου είναι Μεχμέτ. Το επώνυμό μου είναι Σαχίν.",
+   "who": "mehmet"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir telefon, dört kısa cümle. Mehmet adım dedi, soyadım dedi. Ama dikkat ettin mi, benim kelimesi nerede?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir μου duydum, ama adın arkasındaydı galiba. Bir de bazı kelimeler sanki iki kere vurgulandı.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İki iyi soru. Bugün ikisini de çözeceğiz.",
+   "who": "ada"
+  },
+  {
+   "part": "Hoş geldin"
+  },
+  {
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, dördüncü bölüm.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ben de Mert. Bugün ne var?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bu bölümde telefondasın. Bir iş için bir şirketi arıyorsun, onlar da senin için bir form dolduruyor: adın, soyadın, numaran, işin, evli mi bekâr mı olduğun. Bir de yüzlükler var, iki yüzden bine.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Katerina da stüdyoda. Örnek cümleleri o söyleyecek, sen de arkasından yüksek sesle söyle.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "part": "Telefon çalıyor"
+  },
+  {
+   "lang": "tr",
+   "say": "Önce bütün konuşma. Mehmet bir iş için bir şirketi arıyor, telefonu Lydia açıyor. Kulak ver: Mehmet nerede çalışıyor?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Ναι, παρακαλώ;",
+   "who": "lydia"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα σας. Για τη δουλειά…",
+   "who": "mehmet"
+  },
+  {
+   "lang": "el",
+   "say": "Α, ναι! Είμαι η Λυδία. Η δουλειά είναι στο γραφείο μας, στην Αθήνα. Το όνομά σας, παρακαλώ;",
+   "who": "lydia"
+  },
+  {
+   "lang": "el",
+   "say": "Το όνομά μου είναι Μεχμέτ. Το επώνυμό μου είναι Σαχίν.",
+   "who": "mehmet"
+  },
+  {
+   "lang": "el",
+   "say": "Ωραία. Και το τηλέφωνό σας;",
+   "who": "lydia"
+  },
+  {
+   "lang": "el",
+   "say": "Το κινητό μου είναι έξι, εννιά, εφτά, δύο, ένα, δύο, τέσσερα, πέντε, έξι, οχτώ.",
+   "who": "mehmet"
+  },
+  {
+   "lang": "el",
+   "say": "Έξι, εννιά, εφτά, διακόσια δώδεκα, σαράντα πέντε, εξήντα οχτώ. Ευχαριστώ. Πού δουλεύετε, κύριε Σαχίν;",
+   "who": "lydia"
+  },
+  {
+   "lang": "el",
+   "say": "Δουλεύω στο νοσοκομείο. Είμαι μηχανικός. Και σπουδάζω στο πανεπιστήμιο.",
+   "who": "mehmet"
+  },
+  {
+   "lang": "el",
+   "say": "Είστε παντρεμένος;",
+   "who": "lydia"
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, είμαι ελεύθερος. Η οικογένειά μου είναι στην Τουρκία.",
+   "who": "mehmet"
+  },
+  {
+   "lang": "el",
+   "say": "Ευχαριστώ πολύ, κύριε Σαχίν. Γεια σας!",
+   "who": "lydia"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "mehmet"
+  },
+  {
+   "lang": "tr",
+   "say": "Mehmet nerede çalışıyor? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Ofiste mi? Γραφείο kelimesini duydum.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "O, Lydia'nın kelimesiydi. İş, onların ofisinde, Atina'da. Mehmet ise hastanede çalışıyor: στο νοσοκομείο. Mühendis, bir de üniversitede okuyor.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir şey daha. Lydia telefonu açınca alo demedi. Evet dedi, değil mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Yunanlar telefonu çoğunlukla ναι ya da παρακαλώ diye açar. Παρακαλώ çok işe yarar: hem lütfen, hem buyurun, hem de rica ederim. Şimdi dört cümle, biraz yavaş. Küçük kelimelerin yerine dikkat et.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Το όνομά σας, παρακαλώ;",
+   "who": "lydia",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Το όνομά μου είναι Μεχμέτ. Το επώνυμό μου είναι Σαχίν.",
+   "who": "mehmet",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Είστε παντρεμένος;",
+   "who": "lydia",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, είμαι ελεύθερος. Η οικογένειά μου είναι στην Τουρκία.",
+   "who": "mehmet",
+   "speed": 0.85
+  },
+  {
+   "lang": "tr",
+   "say": "Mehmet evli mi? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Hayır, bekâr: ελεύθερος. Ama bu kelime özgür demek değil miydi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet, kelimenin asıl anlamı özgür. Medeni hâl sorulunca bekâr demek. Ailesi de Türkiye'de.",
+   "who": "ada"
+  },
+  {
+   "part": "Artikel önde, benim arkada"
+  },
+  {
+   "lang": "tr",
+   "say": "Açılıştaki soruya dönelim. Adım derken Mehmet benim kelimesini adın arkasına koydu.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Türkçede ek kelimenin sonuna yapışır. Yunancada da benim sona gelir, ama ayrı, küçük bir kelime olarak. Ve isim artikelini korur. Katerina:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "το όνομά μου",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Yani artikel önde, benim arkada. İsim ortada, sandviç gibi.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Güzel benzetme. Şimdi bütün kişiler, ev kelimesiyle. Katerina yavaşça söyleyecek, sen arkasından tekrar et.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "το σπίτι μου, το σπίτι σου, το σπίτι του, το σπίτι της",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.1
+  },
+  {
+   "lang": "el",
+   "say": "το σπίτι μας, το σπίτι σας, το σπίτι τους",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.1
+  },
+  {
+   "lang": "tr",
+   "say": "Benim, senin, onun, onun, bizim, sizin, onların evi. Lydia'nın σας kelimesi de buradan: sizin. Hem çoğul, hem resmî.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Dur, onun iki kere geçti.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Çünkü Yunancada onun ikiye ayrılır. Erkeğin evi το σπίτι του, kadının evi το σπίτι της. Türkçede ikisi de onun.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Tamam, o zaman eşyaya bakıyorum. Eleni doktor. Hastane nötr, demek ki onun hastanesi: το νοσοκομείο του.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İşte tuzak! Eşyaya değil, sahibine bakarsın. Sahibi Eleni, bir kadın. Katerina:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Η Ελένη είναι γιατρός. Το νοσοκομείο της είναι στην Αθήνα.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "part": "Gizli ikinci vurgu"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi ikinci sorum. Lydia numarayı sorarken το τηλέφωνό σας dedi. Telefon kelimesi iki kere vurgulandı gibi geldi.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İyi kulak. Önce kelimeyi yalnız dinle.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "το τηλέφωνο",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Vurgu le hecesinde, yani sondan üçüncü hecede. Yunancada vurgu bundan daha geriye gidemez. Arkasına μου gelince, vurgu sondan dördüncü heceye düşerdi. Buna izin yok. Çözüm şu: kelimenin son hecesi ikinci bir vurgu alır. Dinle:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "το τηλέφωνό μου",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Duydum, sonda hafif bir vurgu daha var. Yazarken de mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet, son heceye bir vurgu işareti daha koyarsın. Ad, soyad ve aile de böyle: το όνομά μου, το επώνυμό μου, η οικογένειά μου.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Peki iş? İşim derken ikinci vurgu gelir mi? Sen ne dersin?",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Gelir bence. Her şey iki vurgu alıyor bugün.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Gelmez. Δουλειά zaten son hecede vurgulu. Kural yalnızca sondan üçüncü hecede vurgulu isimler için. Ev de öyle kalır.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "η δουλειά μου, το σπίτι μου",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "part": "Rakam rakam mı, grup grup mu?"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi numara. Mehmet numarasını rakam rakam söyledi. Lydia tekrar edince başka sayılar duydum. Yanlış mı yazdı?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Hayır, aynı numara. Lydia onu gruplar hâlinde okudu, Yunanlar çoğu zaman böyle okur. Mehmet'in iki, bir, iki rakamları tek bir sayı oldu: iki yüz on iki.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "διακόσια δώδεκα",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Yüzlükler hep aynı kalıpla yapılır: sayının kökü, arkasına kosia. Vurgu hep ko hecesinde. Katerina iki yüzden bine kadar sayacak. Sen de tekrar et.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "διακόσια, τριακόσια, τετρακόσια, πεντακόσια",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.1
+  },
+  {
+   "lang": "el",
+   "say": "εξακόσια, εφτακόσια, οχτακόσια, εννιακόσια, χίλια",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.1
+  },
+  {
+   "lang": "tr",
+   "say": "Tria, tetra: üç ve dördün kökleri, değil mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynen. Şimdi bir ofisin numarası. Atina'daki sabit hatlar iki yüz onla başlar, cep telefonları altmış dokuzla. Dinle:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Το τηλέφωνό μας είναι διακόσια δέκα, εξακόσια σαράντα, είκοσι πέντε, δεκαοχτώ.",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Telefonumuz iki yüz on, altı yüz kırk, yirmi beş, on sekiz. Sen kendi numaranı rakam rakam söyleyebilirsin, her zaman anlaşılır. Ama grupları duyunca anlaman lazım. Para da böyle söylenir. Üç yüz avro: τριακόσια ευρώ.",
+   "who": "ada"
+  },
+  {
+   "part": "Evli mi, bekâr mı?"
+  },
+  {
+   "lang": "tr",
+   "say": "Küçük bir nokta daha. Evli kelimesi konuşanın cinsiyetine uyar. Erkek παντρεμένος der, kadın παντρεμένη. Bekâr da öyle: ελεύθερος, ελεύθερη.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Yani Lydia bir kadına sorsaydı:",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Είστε παντρεμένη;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdilik bunları çift olarak öğren. Kuralı sekizinci derste.",
+   "who": "ada"
+  },
+  {
+   "part": "Sıra sende"
+  },
+  {
+   "lang": "tr",
+   "say": "Sıra sende. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle, sonra Mert dener, Katerina doğrusunu söyler. Birincisi: bir görevli gibi, resmî olarak, birinin adını sor.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Το όνομά σας, παρακαλώ;",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Το όνομά σας, παρακαλώ;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Ailenin Türkiye'de olduğunu söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 5
+  },
+  {
+   "lang": "el",
+   "say": "Η οικογένειά μου είναι στην Τουρκία.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Η οικογένειά μου είναι στην Τουρκία.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "lang": "tr",
+   "say": "Bir kadın olarak, bekâr olduğunu söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι ελεύθερος.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Kadın olarak dedim, Mert.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ah, doğru. Sonu değişecek.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι ελεύθερη.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Son olarak, bir arkadaşına telefonunu sor. Arkadaşça, sen diye.",
+   "who": "ada"
+  },
+  {
+   "pause": 5
+  },
+  {
+   "lang": "el",
+   "say": "Και το τηλέφωνό σου;",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Mükemmel. Hem sen, hem ikinci vurgu yerinde.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Και το τηλέφωνό σου;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "part": "Mert'in hatası"
+  },
+  {
+   "lang": "tr",
+   "say": "Mert, şimdi hızlı ol. Düşünmeden, adım Mert de.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Μου όνομα είναι Μερτ.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçe gibi dizdin. Benim önde, ad arkada.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Benim adım. Türkçede doğru sıra bu ama.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçede evet. Yunancada sandviçi hatırla: artikel, isim, en sonda benim. Türkçe konuşanların en sık hatalarından biri bu. Doğrusunu Katerina'dan dinle ve tekrar et:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Το όνομά μου είναι Μερτ.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "part": "Oyun: kimin?"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi küçük bir oyun: kimin? Ben Türkçe söylerim, sen Yunancasını dene. Birincisi: senin evin.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "το σπίτι σου",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru. İkincisi biraz zor: Lydia'nın ailesi. Yani onun ailesi.",
+   "who": "ada"
+  },
+  {
+   "pause": 4.5
+  },
+  {
+   "lang": "el",
+   "say": "η οικογένειά του",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Lydia erkek mi, Mert?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ah, sahibine bakacaktım. Lydia kadın, o zaman της.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "η οικογένειά της",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "İkinci tur: sayılar. Ben Yunanca bir sayı söyleyeceğim, sen Türkçesini söyle. Birincisi: εξακόσια σαράντα.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Altı yüz kırk. Ofisin numarasındaydı.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Son soru tersten. Beş yüz avro nasıl denir?",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "πεντακόσια ευρώ",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "πεντακόσια ευρώ",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Sahne yeniden"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi telefon bir kez daha çalıyor, normal hızda. Bu sefer her kelimeyi anlayacaksın, numarayı bile.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Ναι, παρακαλώ;",
+   "who": "lydia"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα σας. Για τη δουλειά…",
+   "who": "mehmet"
+  },
+  {
+   "lang": "el",
+   "say": "Α, ναι! Είμαι η Λυδία. Η δουλειά είναι στο γραφείο μας, στην Αθήνα. Το όνομά σας, παρακαλώ;",
+   "who": "lydia"
+  },
+  {
+   "lang": "el",
+   "say": "Το όνομά μου είναι Μεχμέτ. Το επώνυμό μου είναι Σαχίν.",
+   "who": "mehmet"
+  },
+  {
+   "lang": "el",
+   "say": "Ωραία. Και το τηλέφωνό σας;",
+   "who": "lydia"
+  },
+  {
+   "lang": "el",
+   "say": "Το κινητό μου είναι έξι, εννιά, εφτά, δύο, ένα, δύο, τέσσερα, πέντε, έξι, οχτώ.",
+   "who": "mehmet"
+  },
+  {
+   "lang": "el",
+   "say": "Έξι, εννιά, εφτά, διακόσια δώδεκα, σαράντα πέντε, εξήντα οχτώ. Ευχαριστώ. Πού δουλεύετε, κύριε Σαχίν;",
+   "who": "lydia"
+  },
+  {
+   "lang": "el",
+   "say": "Δουλεύω στο νοσοκομείο. Είμαι μηχανικός. Και σπουδάζω στο πανεπιστήμιο.",
+   "who": "mehmet"
+  },
+  {
+   "lang": "el",
+   "say": "Είστε παντρεμένος;",
+   "who": "lydia"
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, είμαι ελεύθερος. Η οικογένειά μου είναι στην Τουρκία.",
+   "who": "mehmet"
+  },
+  {
+   "lang": "el",
+   "say": "Ευχαριστώ πολύ, κύριε Σαχίν. Γεια σας!",
+   "who": "lydia"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "mehmet"
+  },
+  {
+   "lang": "tr",
+   "say": "Hepsini anladım. Numarayı bile: iki yüz on iki, kırk beş, altmış sekiz.",
+   "who": "mert"
+  },
+  {
+   "part": "Kelime köşesi: uzaktan gelen ses"
+  },
+  {
+   "lang": "tr",
+   "say": "Kelime köşesi. Bugünün kelimelerinin birçoğu Türkçeye tanıdık. Telefon mesela. Τηλέφωνο iki Yunanca kökten yapılmış: τήλε uzak demek, φωνή ses. Uzaktan gelen ses.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "En güzeli okul: σχολείο. Kökü σχολή, eski Yunancada boş zaman demekti. Boş zamanında insan konuşur, tartışır, öğrenir. Zamanla kelime okul oldu. İngilizcedeki school da buradan.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Yani okul aslında boş zaman. Bunu öğretmenlere söylemeyeceğim.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir de iki ayrı okumak var. Üniversitede okumak σπουδάζω, kitap okumak ya da sınava çalışmak διαβάζω.",
+   "who": "ada"
+  },
+  {
+   "part": "Gelecek bölüm"
+  },
+  {
+   "lang": "tr",
+   "say": "Gelecek bölümde balkondayız. Ayşe komşusu Eleni'yle konuşuyor. Eleni'nin annesi Alman, babası Yunan. Evde hangi dili konuşuyorlar?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Annem, babam. Demek bugünkü μου yine lazım olacak.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynen: η μητέρα μου, ο πατέρας μου. Bu arada bölümü uygulamada oku; ikinci vurguyu yazılı görünce her şey yerine oturur. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Biraz daha tekrar istersen, hemen ardından kısa bir tekrar köşesi var.",
+   "who": "ada"
+  },
+  {
+   "part": "Tekrar köşesi"
+  },
+  {
+   "lang": "tr",
+   "say": "Tekrar köşesi. Bugünün anahtar cümleleri, yavaşça. Katerina'dan sonra tekrar et.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Ναι, παρακαλώ;",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Το όνομά σας, παρακαλώ;",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Το όνομά μου είναι Μεχμέτ.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Και το τηλέφωνό σας;",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Δουλεύω στο νοσοκομείο.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Η οικογένειά μου είναι στην Τουρκία.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "tr",
+   "say": "Bu kadar. Haftaya görüşürüz.",
+   "who": "ada"
+  }
+ ]
+}

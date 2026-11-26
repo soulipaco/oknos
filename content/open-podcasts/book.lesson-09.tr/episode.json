@@ -1,0 +1,954 @@
+{
+ "id": "book.lesson-09.tr",
+ "kind": "chapter",
+ "lang": "tr",
+ "title": {
+  "tr": "Bu n nereden çıktı? Mağazada ve e-postada",
+  "en": "Where did that n come from? In the shop and in an e-mail"
+ },
+ "curriculum": "oknos-book",
+ "stage": "lesson-09",
+ "version": 4,
+ "written": "2026-11-26",
+ "date": null,
+ "rendered": "2026-11-26T13:16:22",
+ "seconds": 921.0,
+ "script": "671715978fbc",
+ "parts": [
+  {
+   "t": 3.0,
+   "title": "Açılış"
+  },
+  {
+   "t": 37.83,
+   "title": "Hoş geldin"
+  },
+  {
+   "t": 70.89,
+   "title": "Elektronik mağazasında"
+  },
+  {
+   "t": 147.28,
+   "title": "Ayşe'nin e-postası"
+  },
+  {
+   "t": 220.9,
+   "title": "Ton her yerde"
+  },
+  {
+   "t": 342.92,
+   "title": "Hangisini?"
+  },
+  {
+   "t": 418.78,
+   "title": "Yiyorum, yedim"
+  },
+  {
+   "t": 557.24,
+   "title": "Sıra sende"
+  },
+  {
+   "t": 631.73,
+   "title": "Mert'in hatası"
+  },
+  {
+   "t": 664.17,
+   "title": "Oyun: ne alıyorsun?"
+  },
+  {
+   "t": 717.53,
+   "title": "Kelime köşesi: sayan ve koşan"
+  },
+  {
+   "t": 783.95,
+   "title": "Gelecek bölüm"
+  },
+  {
+   "t": 818.57,
+   "title": "Hikâye: Ayşe'nin günü"
+  }
+ ],
+ "lines": [
+  {
+   "t": 3.0,
+   "lang": "el",
+   "say": "Αυτός ο υπολογιστής είναι σε προσφορά. Ο μεγάλος είναι ακριβός. Ποιον θέλετε;",
+   "who": "politis"
+  },
+  {
+   "t": 8.06,
+   "lang": "el",
+   "say": "Τον φτηνό, ευχαριστώ.",
+   "who": "ayse"
+  },
+  {
+   "t": 9.82,
+   "lang": "el",
+   "say": "Πληρώνετε με κάρτα ή με μετρητά;",
+   "who": "politis"
+  },
+  {
+   "t": 12.62,
+   "lang": "el",
+   "say": "Με κάρτα.",
+   "who": "ayse"
+  },
+  {
+   "t": 14.11,
+   "lang": "tr",
+   "say": "Satıcı ο μεγάλος diyor. Ama Ayşe cevap verirken τον φτηνό diyor. Satıcının sorusunun sonunda da bir n var. Bu n'ler nereden çıktı?",
+   "who": "ada"
+  },
+  {
+   "t": 27.66,
+   "lang": "tr",
+   "say": "Yedinci bölümde kahvede görmüştük galiba. Ama orada sadece kahve vardı.",
+   "who": "mert"
+  },
+  {
+   "t": 33.11,
+   "lang": "tr",
+   "say": "Bugün o küçük kuralı her yere yayıyoruz.",
+   "who": "ada"
+  },
+  {
+   "t": 37.83,
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, dokuzuncu bölüm.",
+   "who": "ada"
+  },
+  {
+   "t": 43.38,
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "t": 48.66,
+   "lang": "tr",
+   "say": "Bugün bir mağazada alışveriş yapacaksın. Sonra bir arkadaşına gününü anlatan kısa bir e-posta yazacaksın: ne zaman kalkıyorsun, ne yiyorsun, ne dinliyorsun.",
+   "who": "ada"
+  },
+  {
+   "t": 58.8,
+   "lang": "tr",
+   "say": "Alışveriş ve yemek. Tam benim konularım.",
+   "who": "mert"
+  },
+  {
+   "t": 61.52,
+   "lang": "tr",
+   "say": "Stüdyoda yine Katerina var. Örnek cümleleri o söyleyecek, sen de arkasından yüksek sesle tekrar et.",
+   "who": "ada"
+  },
+  {
+   "t": 68.31,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "t": 70.89,
+   "lang": "tr",
+   "say": "İlk sahne. Ayşe bir elektronik mağazasında. Bir buzdolabı istiyor, bir de kardeşi için bir bilgisayar. Kulak ver: buzdolabı kaç avro?",
+   "who": "ada"
+  },
+  {
+   "t": 81.28,
+   "lang": "el",
+   "say": "Καλημέρα σας! Ορίστε;",
+   "who": "politis"
+  },
+  {
+   "t": 83.41,
+   "lang": "el",
+   "say": "Καλημέρα. Θα ήθελα ένα ψυγείο και έναν υπολογιστή για τον αδελφό μου.",
+   "who": "ayse"
+  },
+  {
+   "t": 87.81,
+   "lang": "el",
+   "say": "Αυτό εδώ κάνει τετρακόσια ευρώ.",
+   "who": "politis"
+  },
+  {
+   "t": 89.78,
+   "lang": "el",
+   "say": "Δε χωράει στην κουζίνα μου!",
+   "who": "ayse"
+  },
+  {
+   "t": 91.55,
+   "lang": "el",
+   "say": "Αυτό το λευκό είναι μικρό: διακόσια πενήντα ευρώ.",
+   "who": "politis"
+  },
+  {
+   "t": 95.78,
+   "lang": "el",
+   "say": "Εντάξει, θέλω αυτό. Το φέρνετε στο σπίτι;",
+   "who": "ayse"
+  },
+  {
+   "t": 99.38,
+   "lang": "el",
+   "say": "Ναι, την Πέμπτη.",
+   "who": "politis"
+  },
+  {
+   "t": 100.67,
+   "lang": "el",
+   "say": "Ο αδελφός μου θέλει έναν φτηνό υπολογιστή.",
+   "who": "ayse"
+  },
+  {
+   "t": 103.98,
+   "lang": "el",
+   "say": "Αυτός ο υπολογιστής είναι σε προσφορά. Ο μεγάλος είναι ακριβός. Ποιον θέλετε;",
+   "who": "politis"
+  },
+  {
+   "t": 109.05,
+   "lang": "el",
+   "say": "Τον φτηνό, ευχαριστώ.",
+   "who": "ayse"
+  },
+  {
+   "t": 110.8,
+   "lang": "el",
+   "say": "Πληρώνετε με κάρτα ή με μετρητά;",
+   "who": "politis"
+  },
+  {
+   "t": 113.6,
+   "lang": "el",
+   "say": "Με κάρτα.",
+   "who": "ayse"
+  },
+  {
+   "t": 115.09,
+   "lang": "tr",
+   "say": "Buzdolabı kaç avro? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 121.14,
+   "lang": "tr",
+   "say": "Dur, ben deneyeyim. Διακόσια πενήντα. İki yüz elli avro. Dört yüzlük olan mutfağına sığmıyordu.",
+   "who": "mert"
+  },
+  {
+   "t": 128.21,
+   "lang": "tr",
+   "say": "Doğru. Sığmaz demek için Ayşe δε χωράει dedi. Satıcı buzdolabını eve de getiriyor, perşembe günü. Bilgisayar ise indirimde: σε προσφορά. Bunu şimdilik kalıp olarak al. Kartla mı, nakitle mi sorusu da öyle.",
+   "who": "ada"
+  },
+  {
+   "t": 147.28,
+   "lang": "tr",
+   "say": "İkinci sahne. Akşam Ayşe, arkadaşı Nikos'a bir e-posta yazıyor ve gününü anlatıyor. Nikos da cevap veriyor. Bu sefer biraz yavaş. Dikkat et: Ayşe sabahları ne yiyor?",
+   "who": "ada"
+  },
+  {
+   "t": 159.52,
+   "lang": "el",
+   "say": "Γεια σου, Νίκο! Ξυπνάω νωρίς και πίνω έναν ελληνικό καφέ, αλλά το πρωί δεν τρώω ποτέ.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 166.12,
+   "lang": "el",
+   "say": "Το μεσημέρι συνήθως τρώω στο γραφείο. Το βράδυ συχνά ακούω ραδιόφωνο.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 172.12,
+   "lang": "el",
+   "say": "Σπάνια τρώω σε εστιατόριο. Κι εσύ; Τι τρως το πρωί;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 176.76,
+   "lang": "el",
+   "say": "Γεια σου, Αϊσέ! Ευχαριστώ για το μήνυμα.",
+   "who": "nikos",
+   "speed": 0.85
+  },
+  {
+   "t": 180.65,
+   "lang": "el",
+   "say": "Εγώ δεν πίνω ποτέ ζεστό καφέ το πρωί. Πίνω τσάι και τρώω ψωμί με γιαούρτι στη δουλειά, στο θέατρο.",
+   "who": "nikos",
+   "speed": 0.85
+  },
+  {
+   "t": 188.96,
+   "lang": "tr",
+   "say": "Ayşe sabahları ne yiyor? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 196.16,
+   "lang": "tr",
+   "say": "Bir Yunan kahvesi içiyor. Ama yemek? Hiçbir şey! Δεν τρώω ποτέ dedi.",
+   "who": "mert"
+  },
+  {
+   "t": 202.2,
+   "lang": "tr",
+   "say": "Evet. Nikos ise sabah hiç sıcak kahve içmiyor: çay, bir de yoğurtla ekmek. Sabah, öğle ve akşam için το πρωί, το μεσημέρι, το βράδυ dedi. Bunları şimdilik kalıp olarak al, kuralı onuncu bölümde.",
+   "who": "ada"
+  },
+  {
+   "t": 220.9,
+   "lang": "tr",
+   "say": "Ada, açılıştaki n'lere dönelim. Kahvede öğrenmiştik: ο καφές, ama θέλω τον καφέ. Bilgisayarda da aynısı mı oluyor?",
+   "who": "mert"
+  },
+  {
+   "t": 229.55,
+   "lang": "tr",
+   "say": "Aynısı. Bir isim fiilin nesnesi olunca, eril isimde artikel ton olur, sondaki s sesi düşer. Bütün eril isimlerde böyle. Katerina, üç çift söyler misin? Önce özne, sonra nesne.",
+   "who": "ada"
+  },
+  {
+   "t": 244.67,
+   "lang": "el",
+   "say": "ο υπολογιστής, τον υπολογιστή. ο χυμός, τον χυμό. ο πατέρας, τον πατέρα.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 262.69,
+   "lang": "tr",
+   "say": "Üçünde de s gitti.",
+   "who": "mert"
+  },
+  {
+   "t": 264.22,
+   "lang": "tr",
+   "say": "Dişilde isim aynı kalır, yalnızca artikel değişir: αγοράζω την τηλεόραση. Nötrde hiçbir şey değişmez: αγοράζω το ψυγείο. Bir şey daha. Bu biçim fiilden sonra da gelir, küçük kelimelerden sonra da. Ayşe kardeşim için dedi: για τον αδελφό μου. Με, από ve σε da öyle. Ayşe Nikos'a yazıyor:",
+   "who": "ada"
+  },
+  {
+   "t": 289.3,
+   "lang": "el",
+   "say": "Η Αϊσέ γράφει στον Νίκο.",
+   "who": "katerina"
+  },
+  {
+   "t": 294.38,
+   "lang": "tr",
+   "say": "Στον! Üçüncü bölümdeki στον Πειραιά gibi. Demek o da buydu.",
+   "who": "mert"
+  },
+  {
+   "t": 299.69,
+   "lang": "tr",
+   "say": "Evet, o ston aslında σε artı τον. Bir yeri daha var: adlar. Birinci bölümden με λένε kalıbını biliyorsun; kelimesi kelimesine, beni şöyle çağırırlar. Bir erkek için:",
+   "who": "ada"
+  },
+  {
+   "t": 315.2,
+   "lang": "el",
+   "say": "Πώς τον λένε; Τον λένε Νίκο.",
+   "who": "katerina"
+  },
+  {
+   "t": 321.05,
+   "lang": "tr",
+   "say": "Erkek adı da s'yi atıyor.",
+   "who": "mert"
+  },
+  {
+   "t": 323.12,
+   "lang": "tr",
+   "say": "Evet. Kadın adları ise değişmez:",
+   "who": "ada"
+  },
+  {
+   "t": 328.25,
+   "lang": "el",
+   "say": "Τη λένε Ελένη.",
+   "who": "katerina"
+  },
+  {
+   "t": 330.72,
+   "lang": "tr",
+   "say": "Burada da n yok ama. Την değil, τη.",
+   "who": "mert"
+  },
+  {
+   "t": 333.77,
+   "lang": "tr",
+   "say": "Üçüncü bölümdeki kural: bazı seslerden önce o n düşer. L sesinden önce de düşer.",
+   "who": "ada"
+  },
+  {
+   "t": 342.92,
+   "lang": "tr",
+   "say": "Peki sıfatlar? Ayşe τον φτηνό dedi. Ucuz olanı.",
+   "who": "mert"
+  },
+  {
+   "t": 348.11,
+   "lang": "tr",
+   "say": "Sıfat, artikel ve isim birlikte hareket eder. Eril sıfat da s sesini atar. Katerina, önce bir bilgisayar, sonra onu istiyorsun:",
+   "who": "ada"
+  },
+  {
+   "t": 358.92,
+   "lang": "el",
+   "say": "ένας καινούργιος υπολογιστής",
+   "who": "katerina"
+  },
+  {
+   "t": 361.17,
+   "lang": "el",
+   "say": "Θέλω έναν καινούργιο υπολογιστή.",
+   "who": "katerina"
+  },
+  {
+   "t": 366.47,
+   "lang": "tr",
+   "say": "Üç kelimenin üçü de değişti. Έναν, καινούργιο, υπολογιστή.",
+   "who": "mert"
+  },
+  {
+   "t": 371.25,
+   "lang": "tr",
+   "say": "Üçü birden. Dişil ve nötr sıfat ise aynı kalır: μια μεγάλη τηλεόραση. Şimdi satıcının sorusu. Sekizinci bölümde ποιος kelimesini öğrendin: kim, hangisi. Nesne olunca o da n alır: ποιον. Türkçede de böyle değil mi?",
+   "who": "ada"
+  },
+  {
+   "t": 390.92,
+   "lang": "tr",
+   "say": "Evet! Kim geliyor, ama kimi bekliyorsun.",
+   "who": "mert"
+  },
+  {
+   "t": 394.38,
+   "lang": "el",
+   "say": "Ποιον περιμένεις;",
+   "who": "katerina"
+  },
+  {
+   "t": 397.76,
+   "lang": "tr",
+   "say": "Bir fark var. Türkçede kimi, kiminle, kimin için; her biri başka bir ek. Yunancada hep aynı ποιον, sadece önüne küçük bir kelime gelir. Kiminle konuşuyorsun:",
+   "who": "ada"
+  },
+  {
+   "t": 409.99,
+   "lang": "el",
+   "say": "Με ποιον μιλάς;",
+   "who": "katerina"
+  },
+  {
+   "t": 411.76,
+   "lang": "tr",
+   "say": "Dişil ποια ve nötr ποιο hiç değişmez.",
+   "who": "ada"
+  },
+  {
+   "t": 418.78,
+   "lang": "tr",
+   "say": "E-postada bir fiil dikkatimi çekti. Δεν τρώω, τι τρως. Sonu çok kısa.",
+   "who": "mert"
+  },
+  {
+   "t": 423.82,
+   "lang": "tr",
+   "say": "Bunlar ayrı bir grup. Kökleri ünlüyle biter, vurgu kökte kalır. Önce dinlemek fiili. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 431.74,
+   "lang": "el",
+   "say": "ακούω, ακούς, ακούει, ακούμε, ακούτε, ακούνε",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 444.46,
+   "lang": "tr",
+   "say": "Dinliyorum, dinliyorsun, dinliyor, ve böyle devam. Mert, yemek fiili aynı sonları alır. Sen dene.",
+   "who": "ada"
+  },
+  {
+   "t": 452.48,
+   "lang": "el",
+   "say": "τρώω, τρώεις…",
+   "who": "mert"
+  },
+  {
+   "t": 454.5,
+   "lang": "tr",
+   "say": "Dur. Τρώεις diye bir biçim yok. Beşinci bölümdeki konuşmak fiilini hatırla: μιλάς, μιλάμε. Bu grubun sonları onunkiler gibi, sadece a sesi yok. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 467.94,
+   "lang": "el",
+   "say": "τρώω, τρως, τρώει, τρώμε, τρώτε, τρώνε",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 478.67,
+   "lang": "tr",
+   "say": "Söylemek λέω, ağlamak κλαίω, bir de gitmek πάω da bu gruptan. Hadi gidelim derken πάμε dersin, bu grubun biz biçimi. Yemek fiilinin bir sürprizi daha var: geçmişi ve geleceği, gitmek gibi, hazır biçimler. Dün lokantada yedim:",
+   "who": "ada"
+  },
+  {
+   "t": 499.81,
+   "lang": "el",
+   "say": "Χθες έφαγα στο εστιατόριο.",
+   "who": "katerina"
+  },
+  {
+   "t": 505.81,
+   "lang": "tr",
+   "say": "Έφαγα? Τρώω ile hiç benzemiyor.",
+   "who": "mert"
+  },
+  {
+   "t": 509.14,
+   "lang": "tr",
+   "say": "O yüzden ezber. Yiyeceğim de θα φάω. Son küçük şey: ne sıklıkla. Üçüncü bölümden beş kelime biliyorsun, bugün bir yenisi var: σπάνια, yani nadiren. Mert, nadiren sıcak kahve içerim nasıl olur?",
+   "who": "ada"
+  },
+  {
+   "t": 529.6,
+   "lang": "el",
+   "say": "Σπάνια πίνω ζεστό καφέ.",
+   "who": "mert"
+  },
+  {
+   "t": 531.83,
+   "lang": "tr",
+   "say": "Burada δεν yok, değil mi? Türkçede de hiç içmem deriz, ama nadiren içerim. Nadiren içmem demeyiz.",
+   "who": "mert"
+  },
+  {
+   "t": 539.35,
+   "lang": "tr",
+   "say": "Çok güzel yakaladın. Ποτέ ile fiil δεν alır, σπάνια ile almaz. Karşılaştır:",
+   "who": "ada"
+  },
+  {
+   "t": 548.06,
+   "lang": "el",
+   "say": "Δεν πίνω ποτέ ζεστό καφέ.",
+   "who": "katerina"
+  },
+  {
+   "t": 550.0,
+   "lang": "el",
+   "say": "Σπάνια πίνω ζεστό καφέ.",
+   "who": "katerina"
+  },
+  {
+   "t": 557.24,
+   "lang": "tr",
+   "say": "Şimdi sıra sende. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert deneyecek, en son Katerina doğrusunu söyleyecek. Birincisi: satıcıya yeni bir bilgisayar istediğini söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 575.58,
+   "lang": "el",
+   "say": "Θέλω έναν καινούργιος υπολογιστή.",
+   "who": "mert"
+  },
+  {
+   "t": 577.91,
+   "lang": "tr",
+   "say": "Sıfatı unuttun, Mert. O da s'yi atar.",
+   "who": "ada"
+  },
+  {
+   "t": 580.99,
+   "lang": "tr",
+   "say": "Ah, doğru. Καινούργιο.",
+   "who": "mert"
+  },
+  {
+   "t": 583.36,
+   "lang": "el",
+   "say": "Θέλω έναν καινούργιο υπολογιστή.",
+   "who": "katerina"
+  },
+  {
+   "t": 588.66,
+   "lang": "tr",
+   "say": "Bir arkadaşına kimi beklediğini sor.",
+   "who": "ada"
+  },
+  {
+   "t": 595.18,
+   "lang": "el",
+   "say": "Ποιον περιμένεις;",
+   "who": "mert"
+  },
+  {
+   "t": 598.7,
+   "lang": "tr",
+   "say": "Akşamları sık sık radyo dinlediğini söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 606.2,
+   "lang": "el",
+   "say": "Το βράδυ συχνά ακούω ραδιόφωνο.",
+   "who": "mert"
+  },
+  {
+   "t": 608.7,
+   "lang": "el",
+   "say": "Το βράδυ συχνά ακούω ραδιόφωνο.",
+   "who": "katerina"
+  },
+  {
+   "t": 615.67,
+   "lang": "tr",
+   "say": "Son olarak: dün lokantada yediğini söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 623.93,
+   "lang": "el",
+   "say": "Χθες έφαγα στο εστιατόριο.",
+   "who": "mert"
+  },
+  {
+   "t": 626.43,
+   "lang": "tr",
+   "say": "Mükemmel. Hazır biçimi unutmadın.",
+   "who": "ada"
+  },
+  {
+   "t": 631.73,
+   "lang": "tr",
+   "say": "Mert, bugün her yere ton koyduk. Şimdi hızlı ol, düşünmeden söyle: Nikos o satıcı.",
+   "who": "ada"
+  },
+  {
+   "t": 638.08,
+   "lang": "el",
+   "say": "Ο Νίκος είναι τον πωλητή.",
+   "who": "mert"
+  },
+  {
+   "t": 640.68,
+   "lang": "tr",
+   "say": "Fazla çalışmışsın, Mert!",
+   "who": "ada"
+  },
+  {
+   "t": 642.65,
+   "lang": "tr",
+   "say": "Ne var? Ton koydum, s'yi de attım.",
+   "who": "mert"
+  },
+  {
+   "t": 645.18,
+   "lang": "tr",
+   "say": "Ama burada nesne yok. Olmak fiili nesne almaz; iki taraf da aynı kişi. Türkçede de Nikos satıcıyı demezsin, Nikos satıcı dersin. Doğrusunu Katerina'dan dinle ve tekrar et:",
+   "who": "ada"
+  },
+  {
+   "t": 657.66,
+   "lang": "el",
+   "say": "Ο Νίκος είναι ο πωλητής.",
+   "who": "katerina"
+  },
+  {
+   "t": 664.17,
+   "lang": "tr",
+   "say": "Şimdi küçük bir oyun. Ben bir eşya söyleyeceğim, artikeliyle. Sen onu aldığını söyle: αγοράζω, ve eşya. Sonra Mert söyleyecek. Birincisi: ο υπολογιστής.",
+   "who": "ada"
+  },
+  {
+   "t": 680.38,
+   "lang": "el",
+   "say": "Αγοράζω τον υπολογιστή.",
+   "who": "mert"
+  },
+  {
+   "t": 682.69,
+   "lang": "tr",
+   "say": "Doğru. İkincisi: το ψυγείο.",
+   "who": "ada"
+  },
+  {
+   "t": 690.03,
+   "lang": "el",
+   "say": "Αγοράζω τον ψυγείο.",
+   "who": "mert"
+  },
+  {
+   "t": 691.97,
+   "lang": "tr",
+   "say": "Dur. Buzdolabı nötr. Nötrde hiçbir şey değişmez, artikel de.",
+   "who": "ada"
+  },
+  {
+   "t": 697.99,
+   "lang": "el",
+   "say": "Αγοράζω το ψυγείο.",
+   "who": "katerina"
+  },
+  {
+   "t": 702.37,
+   "lang": "tr",
+   "say": "Sonuncusu en zoru: ένας ακριβός υπολογιστής.",
+   "who": "ada"
+  },
+  {
+   "t": 711.0,
+   "lang": "el",
+   "say": "Αγοράζω έναν ακριβό υπολογιστή.",
+   "who": "mert"
+  },
+  {
+   "t": 713.8,
+   "lang": "tr",
+   "say": "Üçü birden değişti. Bravo.",
+   "who": "ada"
+  },
+  {
+   "t": 717.53,
+   "lang": "tr",
+   "say": "Kelime köşesi. Mert, bilgisayar kelimesi nereden geliyor?",
+   "who": "ada"
+  },
+  {
+   "t": 722.17,
+   "lang": "tr",
+   "say": "Bilgi sayar. Bilgiyi sayan makine.",
+   "who": "mert"
+  },
+  {
+   "t": 724.92,
+   "lang": "tr",
+   "say": "Yunanca da benzer bir yoldan gitmiş. Υπολογιστής, hesaplamak demek olan υπολογίζω fiilinden gelir. Yani hesaplayan. E-postanın uzun Yunanca adı da güzel:",
+   "who": "ada"
+  },
+  {
+   "t": 739.42,
+   "lang": "el",
+   "say": "το ηλεκτρονικό ταχυδρομείο",
+   "who": "katerina"
+  },
+  {
+   "t": 741.96,
+   "lang": "tr",
+   "say": "Ταχυδρομείο posta demek. İçinde iki parça var: ταχύ, yani hızlı, ve δρόμος, yani yol ya da koşu. Postacı da ταχυδρόμος: hızlı koşan.",
+   "who": "ada"
+  },
+  {
+   "t": 759.67,
+   "lang": "tr",
+   "say": "Δρόμος. Hipodromdaki drom mu bu?",
+   "who": "mert"
+  },
+  {
+   "t": 762.39,
+   "lang": "tr",
+   "say": "Aynen o: atların koştuğu yer. Ηλεκτρονικό kelimesinin kökü de ήλεκτρον, yani kehribar. Kehribarı ovunca küçük şeyleri çektiğini insanlar çok eskiden fark etmiş. Elektrik adını bu taştan alıyor.",
+   "who": "ada"
+  },
+  {
+   "t": 778.31,
+   "lang": "tr",
+   "say": "Yani e-posta, kelimesi kelimesine kehribarlı hızlı koşu.",
+   "who": "mert"
+  },
+  {
+   "t": 783.95,
+   "lang": "tr",
+   "say": "Gelecek bölümde telefon çalıyor. Eleni, Ayşe'yi cumartesi Pire'ye çağırıyor. Metroyla nasıl gidilir, saat kaçta buluşulur, hava nasıl olacak?",
+   "who": "ada"
+  },
+  {
+   "t": 794.25,
+   "lang": "tr",
+   "say": "Pire'yi biliyorum: στον Πειραιά. Ama saat kısmı biraz korkutucu.",
+   "who": "mert"
+  },
+  {
+   "t": 798.38,
+   "lang": "tr",
+   "say": "Korkma, adım adım gideceğiz. Bu arada bölümü uygulamada oku, alıştırmaları yap. Ve bitirmeden önce, Katerina sana Ayşe'nin gününü Yunanca küçük bir hikâye olarak anlatacak. Hiç Türkçe yok. Sadece dinle, her kelimeyi anlaman gerekmiyor.",
+   "who": "ada"
+  },
+  {
+   "t": 814.3,
+   "lang": "tr",
+   "say": "Ben de dinleyeceğim. Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "t": 818.57,
+   "lang": "el",
+   "say": "Μια μικρή ιστορία.",
+   "who": "katerina"
+  },
+  {
+   "t": 820.11,
+   "lang": "el",
+   "say": "Αυτή είναι η Αϊσέ. Είναι από τη Σμύρνη, αλλά μένει στην Αθήνα, στην Καλλιθέα.",
+   "who": "katerina"
+  },
+  {
+   "t": 826.86,
+   "lang": "el",
+   "say": "Δουλεύει στον Πειραιά. Δουλεύει Δευτέρα, Τρίτη και Πέμπτη.",
+   "who": "katerina"
+  },
+  {
+   "t": 830.74,
+   "lang": "el",
+   "say": "Η κουζίνα της είναι μικρή, και η Αϊσέ θέλει ένα μικρό ψυγείο.",
+   "who": "katerina"
+  },
+  {
+   "t": 835.06,
+   "lang": "el",
+   "say": "Ο αδελφός της θέλει έναν υπολογιστή. Αλλά δεν θέλει έναν ακριβό υπολογιστή. Θέλει έναν φτηνό.",
+   "who": "katerina"
+  },
+  {
+   "t": 842.27,
+   "lang": "el",
+   "say": "Ένα ψυγείο κάνει τετρακόσια ευρώ, αλλά δε χωράει στην κουζίνα της.",
+   "who": "katerina"
+  },
+  {
+   "t": 846.87,
+   "lang": "el",
+   "say": "Το λευκό ψυγείο είναι μικρό. Κάνει διακόσια πενήντα ευρώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 851.42,
+   "lang": "el",
+   "say": "Η Αϊσέ αγοράζει το λευκό ψυγείο. Ο πωλητής το φέρνει στο σπίτι την Πέμπτη.",
+   "who": "katerina"
+  },
+  {
+   "t": 857.04,
+   "lang": "el",
+   "say": "Μετά ο πωλητής ρωτάει:",
+   "who": "katerina"
+  },
+  {
+   "t": 859.03,
+   "lang": "el",
+   "say": "Ποιον υπολογιστή θέλετε; Τον φτηνό ή τον ακριβό;",
+   "who": "politis"
+  },
+  {
+   "t": 862.71,
+   "lang": "el",
+   "say": "Τον φτηνό, ευχαριστώ.",
+   "who": "ayse"
+  },
+  {
+   "t": 864.47,
+   "lang": "el",
+   "say": "Ο φτηνός υπολογιστής είναι σε προσφορά. Η Αϊσέ πληρώνει με κάρτα.",
+   "who": "katerina"
+  },
+  {
+   "t": 870.15,
+   "lang": "el",
+   "say": "Το βράδυ η Αϊσέ είναι στο σπίτι. Γράφει ένα μήνυμα στον Νίκο.",
+   "who": "katerina"
+  },
+  {
+   "t": 874.72,
+   "lang": "el",
+   "say": "Ξυπνάει νωρίς και πίνει έναν ελληνικό καφέ. Αλλά το πρωί δεν τρώει ποτέ.",
+   "who": "katerina"
+  },
+  {
+   "t": 880.29,
+   "lang": "el",
+   "say": "Το μεσημέρι συνήθως τρώει στο γραφείο. Το βράδυ συχνά ακούει ραδιόφωνο.",
+   "who": "katerina"
+  },
+  {
+   "t": 886.23,
+   "lang": "el",
+   "say": "Σπάνια τρώει σε εστιατόριο.",
+   "who": "katerina"
+  },
+  {
+   "t": 888.64,
+   "lang": "el",
+   "say": "Ο Νίκος δουλεύει στο θέατρο. Γράφει κι αυτός ένα μήνυμα:",
+   "who": "katerina"
+  },
+  {
+   "t": 893.56,
+   "lang": "el",
+   "say": "Ευχαριστώ για το μήνυμα, Αϊσέ! Εγώ δεν πίνω ποτέ ζεστό καφέ το πρωί. Πίνω τσάι και τρώω ψωμί με γιαούρτι.",
+   "who": "nikos"
+  },
+  {
+   "t": 902.52,
+   "lang": "el",
+   "say": "Την Κυριακή ο αδελφός της έχει έναν καινούργιο υπολογιστή.",
+   "who": "katerina"
+  },
+  {
+   "t": 907.09,
+   "lang": "el",
+   "say": "Και λέει στην Αϊσέ: ευχαριστώ πολύ!",
+   "who": "katerina"
+  },
+  {
+   "t": 910.1,
+   "lang": "el",
+   "say": "Κι εσύ; Τι τρως το πρωί; Τι ακούς το βράδυ;",
+   "who": "katerina"
+  },
+  {
+   "t": 916.77,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ],
+ "cast": {
+  "politis": {
+   "name": "Πωλητής",
+   "voice": "Iapetus"
+  },
+  "ayse": {
+   "name": "Αϊσέ",
+   "voice": "Achernar"
+  },
+  "ada": {
+   "name": "Ada",
+   "voice": "Sulafat"
+  },
+  "mert": {
+   "name": "Mert",
+   "voice": "Umbriel"
+  },
+  "katerina": {
+   "name": "Κατερίνα",
+   "voice": "Gacrux"
+  },
+  "nikos": {
+   "name": "Νίκος",
+   "voice": "Rasalgethi"
+  }
+ },
+ "sounds": true
+}

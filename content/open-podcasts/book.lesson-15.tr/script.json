@@ -1,0 +1,1071 @@
+{
+ "id": "book.lesson-15.tr",
+ "kind": "chapter",
+ "curriculum": "oknos-book",
+ "stage": "lesson-15",
+ "lang": "tr",
+ "title": {
+  "tr": "Τρώω ama θα φάω? Telefonda suvlaki, tavernada masa",
+  "en": "Τρώω but θα φάω? Souvlaki by phone, a table at the taverna"
+ },
+ "version": 2,
+ "written": "2026-11-26",
+ "cast": [
+  {
+   "id": "ada",
+   "name": "Ada",
+   "role": "host",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "f",
+   "age": "35",
+   "manner": "warm, curious, explains with Turkish bridges"
+  },
+  {
+   "id": "mert",
+   "name": "Mert",
+   "role": "cohost",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "m",
+   "age": "32",
+   "manner": "easy-going, a bit lazy, the learner; guesses and sometimes gets it wrong"
+  },
+  {
+   "id": "katerina",
+   "name": "Κατερίνα",
+   "role": "guest",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "45",
+   "manner": "native, from Thessaloniki, warm, patient, clear"
+  },
+  {
+   "id": "souvlaki-clerk",
+   "name": "Υπάλληλος",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "35",
+   "manner": "souvlaki shop clerk on the phone, quick, friendly, a little rushed"
+  },
+  {
+   "id": "nikos",
+   "name": "Νίκος",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "m",
+   "age": "30",
+   "manner": "Athenian, friendly, teasing, works at a theatre"
+  },
+  {
+   "id": "taverna-waiter",
+   "name": "Σερβιτόρος",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "m",
+   "age": "50",
+   "manner": "taverna waiter, warm, quick, a little theatrical"
+  },
+  {
+   "id": "ayse",
+   "name": "Αϊσέ",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "30",
+   "manner": "Turkish learner of Greek from Izmir, a little shy, polite"
+  }
+ ],
+ "sources": [
+  {
+   "what": "chapter",
+   "ref": "oknos-book/lessons/lesson-15"
+  }
+ ],
+ "segments": [
+  {
+   "part": "Açılış"
+  },
+  {
+   "lang": "el",
+   "say": "Ορίστε το μενού. Τι θα πάρετε;",
+   "who": "taverna-waiter"
+  },
+  {
+   "lang": "el",
+   "say": "Εγώ θα φάω αρνί με πατάτες.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Εγώ θα φάω κοτόπουλο και η Ελένη θα φάει ζυμαρικά.",
+   "who": "nikos"
+  },
+  {
+   "lang": "el",
+   "say": "Θα πιείτε κάτι;",
+   "who": "taverna-waiter"
+  },
+  {
+   "lang": "el",
+   "say": "Θα πιούμε νερό και μισό κιλό κρασί.",
+   "who": "nikos"
+  },
+  {
+   "lang": "tr",
+   "say": "Herkes cümlesine aynı küçük kelimeyle başladı: θα.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ben başka bir şey yakaladım. Yemek fiili τρώω değil miydi? Burada φάω dediler. İçmek de πίνω'ydu, burada πιούμε.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir de yarım kilo şarap.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet! Şarap kiloyla mı içiliyor?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bugün üçünü de çözeceğiz.",
+   "who": "ada"
+  },
+  {
+   "part": "Hoş geldin"
+  },
+  {
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, on beşinci bölüm.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Μερτ, τι θα κάνεις το Σαββατοκύριακο;",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Hafta sonu ne yapacağımı soruyorsun. Ama gelecek zamanı daha bilmiyorum.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bölümün sonunda bileceksin. Bugün telefonla suvlaki ısmarlayacak, tavernada masa ayırtacaksın. Anahtarı o küçük kelime.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Θα. Bu kadar mı?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Keşke. Fiil de değişiyor, senin yakaladığın gibi. Stüdyoda yine Katerina var. Sonda bize Yunanca bir hikâye anlatacak.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Καλησπέρα σας!",
+   "who": "katerina"
+  },
+  {
+   "part": "Telefonda suvlaki"
+  },
+  {
+   "lang": "tr",
+   "say": "İlk sahne. Cuma akşamı, Nikos hep sipariş verdiği suvlaki dükkânını arıyor. Kulak ver: suvlakiler ne zaman gelecek?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Ναι, παρακαλώ;",
+   "who": "souvlaki-clerk"
+  },
+  {
+   "lang": "el",
+   "say": "Καλησπέρα σας. Θα ήθελα να παραγγείλω σουβλάκια.",
+   "who": "nikos"
+  },
+  {
+   "lang": "el",
+   "say": "Τι θα πάρετε;",
+   "who": "souvlaki-clerk"
+  },
+  {
+   "lang": "el",
+   "say": "Είμαστε τέσσερα άτομα. Θα πάρω τέσσερα σουβλάκια με γύρο και μία μερίδα τζατζίκι.",
+   "who": "nikos"
+  },
+  {
+   "lang": "el",
+   "say": "Σε πίτα ή σε μερίδα;",
+   "who": "souvlaki-clerk"
+  },
+  {
+   "lang": "el",
+   "say": "Σε πίτα, χωρίς κρεμμύδι. Και μία χωριάτικη σαλάτα.",
+   "who": "nikos"
+  },
+  {
+   "lang": "el",
+   "say": "Εντάξει. Τα σουβλάκια θα έρθουν σε μισή ώρα. Όλα μαζί είκοσι οχτώ ευρώ.",
+   "who": "souvlaki-clerk"
+  },
+  {
+   "lang": "el",
+   "say": "Ωραία. Θα πληρώσω με μετρητά.",
+   "who": "nikos"
+  },
+  {
+   "lang": "tr",
+   "say": "Suvlakiler ne zaman gelecek? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Yarım saat sonra. Σε μισή ώρα. Ama σε μερίδα kısmında kayboldum. Porsiyon değil miydi bu?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Dükkân soruyor: pidede mi, tabakta mı? Nikos pide istedi, hem de soğansız: χωρίς κρεμμύδι.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Χωρίς, bizim sız eki. Soğansız. Bunu sevdim.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Nikos'un ilk cümlesindeki θα ήθελα ise gelecek değil, kibarlık. Türkçedeki isterdim gibi. Kalıp olarak al.",
+   "who": "ada"
+  },
+  {
+   "part": "Masa ayırtmak"
+  },
+  {
+   "lang": "tr",
+   "say": "İkinci sahne, biraz yavaş. Ayşe cumartesi akşamı için bir tavernayı arıyor. Kaç kişi olacaklar, saat kaçta gelecekler?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Ταβέρνα «Η Σμύρνη», παρακαλώ.",
+   "who": "taverna-waiter",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Καλησπέρα. Θα ήθελα ένα τραπέζι για το Σάββατο το βράδυ.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Πόσα άτομα θα είστε;",
+   "who": "taverna-waiter",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Θα είμαστε έξι άτομα.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Και τι ώρα θα έρθετε;",
+   "who": "taverna-waiter",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Θα έρθουμε στις εννιά.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Εντάξει. Σάββατο, στις εννιά, έξι άτομα. Το όνομά σας, παρακαλώ;",
+   "who": "taverna-waiter",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Αϊσέ Γιλμάζ.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "tr",
+   "say": "Kaç kişi, saat kaçta? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4.5
+  },
+  {
+   "lang": "tr",
+   "say": "Yedi kişi, saat dokuzda.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Saat doğru: στις εννιά. Ama kişi sayısı έξι, yani altı. Yedi εφτά olurdu.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Έξι, εφτά. Kulakta çok yakınlar.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Sınavda tam bu tuzak çıkar. Rezervasyonda hep kaç kişi, hangi gün, saat kaçta diye sorulur. İlk dinleyişte not al, ikincide kontrol et. Tavernanın adı da tanıdık: Η Σμύρνη.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "İzmir! Ayşe'nin memleketi.",
+   "who": "mert"
+  },
+  {
+   "part": "Tavernada"
+  },
+  {
+   "lang": "tr",
+   "say": "Üçüncü sahne. Cumartesi akşamı, saat dokuz. Ayşe, Nikos ve arkadaşları masada. Kulak ver: Ayşe ne yiyecek?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Ορίστε το μενού. Τι θα πάρετε;",
+   "who": "taverna-waiter"
+  },
+  {
+   "lang": "el",
+   "say": "Θα πάρουμε μία χωριάτικη σαλάτα και ψωμί.",
+   "who": "nikos"
+  },
+  {
+   "lang": "el",
+   "say": "Εγώ θα φάω αρνί με πατάτες.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Εγώ θα φάω κοτόπουλο και η Ελένη θα φάει ζυμαρικά.",
+   "who": "nikos"
+  },
+  {
+   "lang": "el",
+   "say": "Θα πιείτε κάτι;",
+   "who": "taverna-waiter"
+  },
+  {
+   "lang": "el",
+   "say": "Θα πιούμε νερό και μισό κιλό κρασί.",
+   "who": "nikos"
+  },
+  {
+   "lang": "el",
+   "say": "Εντάξει. Καλή όρεξη!",
+   "who": "taverna-waiter"
+  },
+  {
+   "lang": "el",
+   "say": "Τον λογαριασμό, παρακαλώ.",
+   "who": "ayse"
+  },
+  {
+   "lang": "tr",
+   "say": "Ayşe ne yiyecek? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Tavuk.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Tavuk Nikos'un. Ayşe αρνί με πατάτες dedi: patatesli kuzu.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Haklısın, kuzu. Peki şarap? Söz vermiştin.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Tavernada ev şarabı sürahiyle gelir ve kiloyla söylenir. Μισό κιλό aşağı yukarı yarım litre. Kimse tartmıyor, öyle söyleniyor.",
+   "who": "ada"
+  },
+  {
+   "part": "Θα: öne geçen -ecek"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi şu θα. Tam olarak ne yapıyor?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçede gelecek fiilin sonuna yapışır: yaz-acağ-ım. Yunancada fiilin önüne θα gelir, ve hiç değişmez. Kişiyi yine fiilin sonu söyler.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Kolaymış. O zaman yazacağım: θα γράφω.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Neredeyse. Katerina söylesin, dinle. Önce yazıyorum, sonra yazacağım.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "γράφω. Θα γράψω.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Bir harf değişti. Φ gitti, ψ geldi.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Yunancada fiilin iki kökü vardır. Biri süren iş için: γράφ. Öbürü bir kere yapılıp biten iş için: γράψ. Gelecek çoğunlukla ikincisiyle kurulur.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Yani benim θα γράφω yanlış mı?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Yanlış değil, ama sürekli ya da tekrar tekrar yapacağın bir iş için. Tek bir mesaj yazacaksan θα γράψω. Ekler şimdiki zamandakiyle aynı. Katerina:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "θα γράψω, θα γράψεις, θα γράψει, θα γράψουμε, θα γράψετε, θα γράψουν",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.1
+  },
+  {
+   "part": "Kökün sırrı"
+  },
+  {
+   "lang": "tr",
+   "say": "Yeni kökü çoğu zaman fiilin sonu söyler. Okumak: διαβάζω. Okuyacağım nasıl olur? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Θα διαβάσω.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru. Sondaki ζ, σ olur. Αγοράζω, θα αγοράσω da öyle. Şimdi daha zoru. Çalışmak: δουλεύω. Çalışacağım? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Θα δουλέσω.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Mantıklı, ama burada ευ, εψ olur. Vurgulu hece aynı kalır, sadece işaret ε'nin üstüne geçer.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "δουλεύω. Θα δουλέψω.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Nikos'un θα πληρώσω'su da bir kural: πληρώνω'daki ν, σ olmuş. Kapatmak da öyle: κλείνω, θα κλείσω. Masa ayırtmak da bu fiille söylenir.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Θα κλείσω τραπέζι για το Σάββατο.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Ama kaçaklar da var: παίζω, θα παίξω. Μένω, θα μείνω. Yeni bir fiili gelecek biçimiyle birlikte öğren.",
+   "who": "ada"
+  },
+  {
+   "part": "Τρώω ama θα φάω"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi açılıştaki gizem. Τρώω nasıl φάω oldu? Hiçbir harf aynı değil.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Çünkü bu bambaşka bir kök. En sık fiillerin birkaçı böyledir, o yüzden kulağın çabuk alışır. Katerina, yemek, içmek ve görmek:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "τρώω, θα φάω. πίνω, θα πιω. βλέπω, θα δω.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi söylemek, almak ve gelmek. Son ikisini suvlaki sahnesinde duydun: τι θα πάρετε, τα σουβλάκια θα έρθουν.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "λέω, θα πω. παίρνω, θα πάρω. έρχομαι, θα έρθω.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Peki yapmak, sahip olmak, olmak? Onlar da mı kaçak?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Hayır, onlar hiç değişmez: θα κάνω, θα έχω, θα είμαι. Ayşe de öyle dedi: θα είμαστε έξι άτομα.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "En sevdiğim fiiller bunlar.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir ayrıntı daha. Garson θα πιείτε κάτι diye sordu, Nikos θα πιούμε diye cevap verdi. İçmenin gelecekte kendi ekleri var. Katerina:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "θα πιω, θα πιεις, θα πιει, θα πιούμε, θα πιείτε, θα πιουν",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.1
+  },
+  {
+   "part": "Yarın, öbür gün"
+  },
+  {
+   "lang": "tr",
+   "say": "Plan için zaman kelimeleri de lazım. Öbür gün μεθαύριο: içinde αύριο'yu duyuyorsun. Gelecek hafta την άλλη εβδομάδα, yani öbür hafta.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Seneye?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Onun için bir kalıp var: του χρόνου.",
+   "who": "ada"
+  },
+  {
+   "part": "Sıra sende"
+  },
+  {
+   "lang": "tr",
+   "say": "Sıra sende. Ben Türkçe söylüyorum, sen Yunancasını yüksek sesle söyle, sonra Mert dener. Birincisi: garson sensin. Masadakilere ne alacaklarını sor.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Τι θα πάρεις;",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Masada birkaç kişi var, Mert. Hem garson zaten siz der.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ah, doğru. Πάρετε.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Τι θα πάρετε;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi bir tavernayı ara: cumartesi akşamı için bir masa iste.",
+   "who": "ada"
+  },
+  {
+   "pause": 5
+  },
+  {
+   "lang": "el",
+   "say": "Θα ήθελα ένα τραπέζι για το Σάββατο το βράδυ.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Θα ήθελα ένα τραπέζι για το Σάββατο το βράδυ.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.6
+  },
+  {
+   "lang": "tr",
+   "say": "Masadasın. Patatesli kuzu yiyeceğini söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4.5
+  },
+  {
+   "lang": "el",
+   "say": "Θα φάω αρνί με πατάτες.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Θα φάω αρνί με πατάτες.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Arkadaşlarınla birlikte: su ve yarım kilo şarap içeceğiz.",
+   "who": "ada"
+  },
+  {
+   "pause": 5
+  },
+  {
+   "lang": "el",
+   "say": "Θα πιούμε νερό και μισό κιλό κρασί.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Θα πιούμε νερό και μισό κιλό κρασί.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "part": "Mert'in hatası"
+  },
+  {
+   "lang": "tr",
+   "say": "Mert, şimdi hızlı ol. Düşünmeden: yarın çalışmayacağım.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Αύριο θα δε δουλέψω.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Θα δε? Sıraya bir bak.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Çalış-ma-yacağ-ım. Dur, Türkçede olumsuzluk gelecek ekinden önce geliyor.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynen, Türkçe burada yardım ediyor. Yunancada da olumsuzluk θα'dan önce gelir: δε θα. Δεν θα da çok yaygın. Katerina:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Αύριο δε θα δουλέψω.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "part": "Oyun: bugün, yarın"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi küçük bir oyun. Katerina bugünü söyleyecek, sen aynı cümleyi yarın için söyle. Sonra Mert. Birincisi:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Σήμερα φτιάχνω τζατζίκι.",
+   "who": "katerina"
+  },
+  {
+   "pause": 4.5
+  },
+  {
+   "lang": "el",
+   "say": "Αύριο θα φτιάξω τζατζίκι.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Harika. Sondaki χν, ξ oldu. İkincisi:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Σήμερα βλέπω την Ελένη.",
+   "who": "katerina"
+  },
+  {
+   "pause": 4.5
+  },
+  {
+   "lang": "el",
+   "say": "Αύριο θα βλέψω την Ελένη.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Kurala göre güzel düşündün. Ama βλέπω kaçaklardan biriydi.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ah, görmek. Θα δω.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Αύριο θα δω την Ελένη.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "part": "Sahne yeniden"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi suvlaki siparişi bir kez daha, normal hızda. Bu sefer her kelimeyi anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Ναι, παρακαλώ;",
+   "who": "souvlaki-clerk"
+  },
+  {
+   "lang": "el",
+   "say": "Καλησπέρα σας. Θα ήθελα να παραγγείλω σουβλάκια.",
+   "who": "nikos"
+  },
+  {
+   "lang": "el",
+   "say": "Τι θα πάρετε;",
+   "who": "souvlaki-clerk"
+  },
+  {
+   "lang": "el",
+   "say": "Είμαστε τέσσερα άτομα. Θα πάρω τέσσερα σουβλάκια με γύρο και μία μερίδα τζατζίκι.",
+   "who": "nikos"
+  },
+  {
+   "lang": "el",
+   "say": "Σε πίτα ή σε μερίδα;",
+   "who": "souvlaki-clerk"
+  },
+  {
+   "lang": "el",
+   "say": "Σε πίτα, χωρίς κρεμμύδι. Και μία χωριάτικη σαλάτα.",
+   "who": "nikos"
+  },
+  {
+   "lang": "el",
+   "say": "Εντάξει. Τα σουβλάκια θα έρθουν σε μισή ώρα. Όλα μαζί είκοσι οχτώ ευρώ.",
+   "who": "souvlaki-clerk"
+  },
+  {
+   "lang": "el",
+   "say": "Ωραία. Θα πληρώσω με μετρητά.",
+   "who": "nikos"
+  },
+  {
+   "lang": "tr",
+   "say": "Hepsini anladım. Θα έρθουν, θα πληρώσω, ve soğan yok.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Μερτ, τι θα κάνεις το Σαββατοκύριακο;",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Το Σάββατο θα φάω σουβλάκια και θα πιω μισό κιλό κρασί.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Και την Κυριακή;",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Την Κυριακή θα μείνω στο σπίτι.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Θα μείνω, hem de kaçak fiille. Bölümün başında cevap veremiyordun.",
+   "who": "ada"
+  },
+  {
+   "part": "Kelime köşesi: döner ve γύρος"
+  },
+  {
+   "lang": "tr",
+   "say": "Kelime köşesi. Ο γύρος, dönüş, tur demek. Et dikey bir şişte döne döne pişer.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Bizim döner! Aynı fikir, iki dilde.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet, iki adı da dönmekten geliyor. Σουβλάκι ise σούβλα, yani şiş kelimesinden. Sonuna küçültme eki gelmiş: küçük şiş.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Şişçik yani. Peki τζατζίκι?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "O da Türkçeden geçmiş: cacık. Χωριάτικη ise χωριό, yani köy kelimesinden: köy salatası.",
+   "who": "ada"
+  },
+  {
+   "part": "Gelecek bölüm"
+  },
+  {
+   "lang": "tr",
+   "say": "Gelecek bölümde Ayşe ve Nikos hafta sonu Naksos adasına gidiyor. Ayşe telefonla otel ayırtıyor.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Yine telefon. Ama bu sefer θα ile hazırım.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Hazırsın. Bir de seni görüyorum gibi sözler gelecek: Yunancada seni kelimesi fiilin önüne geçer.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Bölümü uygulamada oku, alıştırmaları yap. Şimdi son söz Katerina'nın: bugünün hikâyesi, sadece Yunanca. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Görüşürüz! Καλή όρεξη!",
+   "who": "mert"
+  },
+  {
+   "part": "Katerina anlatıyor"
+  },
+  {
+   "lang": "el",
+   "say": "Είναι Παρασκευή βράδυ.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Ο Νίκος είναι στο σπίτι με φίλους. Είναι τέσσερα άτομα.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Ο Νίκος παραγγέλνει τέσσερα σουβλάκια με γύρο, σε πίτα, χωρίς κρεμμύδι.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Παραγγέλνει και μία μερίδα τζατζίκι και μία χωριάτικη σαλάτα.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Τα σουβλάκια θα έρθουν σε μισή ώρα.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Όλα μαζί κάνουν είκοσι οχτώ ευρώ. Ο Νίκος θα πληρώσει με μετρητά.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Η Αϊσέ είναι στο σπίτι της, στην Κυψέλη.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Το Σάββατο θα φάει στην ταβέρνα με τον Νίκο και την Ελένη.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Κλείνει τραπέζι στην ταβέρνα «Η Σμύρνη».",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Θα είναι έξι άτομα, και θα έρθουν στις εννιά.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Τώρα είναι Σάββατο βράδυ.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Στην ταβέρνα «Η Σμύρνη» είναι έξι άτομα.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Ο σερβιτόρος φέρνει το μενού.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Η Αϊσέ θα φάει αρνί με πατάτες.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Ο Νίκος θα φάει κοτόπουλο και η Ελένη ζυμαρικά.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Θα πιουν νερό και μισό κιλό κρασί.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "«Καλή όρεξη!» λέει ο σερβιτόρος.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Και τώρα η Αϊσέ λέει: «Τον λογαριασμό, παρακαλώ.»",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Την άλλη εβδομάδα η Αϊσέ και ο Νίκος θα πάνε στη Νάξο με το πλοίο.",
+   "who": "katerina"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ]
+}

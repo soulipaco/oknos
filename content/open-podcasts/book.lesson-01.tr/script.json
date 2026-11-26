@@ -1,0 +1,1050 @@
+{
+ "id": "book.lesson-01.tr",
+ "kind": "chapter",
+ "curriculum": "oknos-book",
+ "stage": "lesson-01",
+ "lang": "tr",
+ "title": {
+  "tr": "Sana nasıl diyorlar? Selamlaşmak ve tanışmak",
+  "en": "What do they call you? Greeting and meeting people"
+ },
+ "version": 4,
+ "written": "2026-11-26",
+ "cast": [
+  {
+   "id": "ada",
+   "name": "Ada",
+   "role": "host",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "f",
+   "age": "35",
+   "manner": "warm, curious, explains with Turkish bridges"
+  },
+  {
+   "id": "mert",
+   "name": "Mert",
+   "role": "cohost",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "m",
+   "age": "32",
+   "manner": "easy-going, a bit lazy, the learner; guesses and sometimes gets it wrong"
+  },
+  {
+   "id": "katerina",
+   "name": "Κατερίνα",
+   "role": "guest",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "45",
+   "manner": "native, from Thessaloniki, warm, patient, clear"
+  },
+  {
+   "id": "eleni",
+   "name": "Ελένη",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "30",
+   "manner": "Greek, friendly, lively, warm; meets Mehmet on the first day of an English course"
+  },
+  {
+   "id": "mehmet",
+   "name": "Μεχμέτ",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "m",
+   "age": "30",
+   "manner": "Turkish learner of Greek living in Athens, polite, a little careful"
+  },
+  {
+   "id": "ayse",
+   "name": "Αϊσέ",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "30",
+   "manner": "Turkish learner of Greek from Izmir, a little shy, polite"
+  },
+  {
+   "id": "ypallilos",
+   "name": "Υπάλληλος",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "m",
+   "age": "50",
+   "manner": "town hall clerk, polite, formal, brisk"
+  }
+ ],
+ "sources": [
+  {
+   "what": "chapter",
+   "ref": "oknos-book/lessons/lesson-01"
+  }
+ ],
+ "segments": [
+  {
+   "part": "Açılış"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου! Με λένε Ελένη. Εσένα;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου, Ελένη. Με λένε Μεχμέτ.",
+   "who": "mehmet"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα σας. Πώς σας λένε;",
+   "who": "ypallilos"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα. Με λένε Αϊσέ Γιλμάζ.",
+   "who": "ayse"
+  },
+  {
+   "lang": "tr",
+   "say": "İki tanışma. İkisinde de biri adını soruyor. Ama dikkatli dinlediysen, birinde γεια σου dendi, öbüründe καλημέρα σας.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ben bir de şunu duydum: herkes με λένε dedi. Bu adım demek herhalde?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Tam olarak değil. Bugün ikisini de çözeceğiz: o küçük σου ile σας farkını, bir de Yunanların adını nasıl söylediğini.",
+   "who": "ada"
+  },
+  {
+   "part": "Hoş geldin"
+  },
+  {
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, ilk bölümümüz. Kitabın her dersi için bir bölüm yapacağız. Ben anlatıyorum, sen dinleyip yüksek sesle söylüyorsun.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ben de Mert. Ben de senin gibi Yunanca öğreniyorum. Soruları ben soracağım, tahmin edeceğim, bazen de yanlış yapacağım. Ada da düzeltecek.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Şovun adı da sana bir şey söylüyor. Oknos, Yunan mitlerinde tembelliğin adı. Oturup bir halat örer, yanındaki eşek de ördüğünü yer.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Yani öğrendiğimi unutmamın da bir efsanesi varmış. Bana uyar.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "O yüzden burada her şeyi tekrar ederek öğreneceğiz. Stüdyoda bir konuğumuz daha var: Katerina. Ana dili Yunanca, Selanikli. Örnek cümleleri o söyleyecek. Katerina bir cümle söyleyip sustuğunda, sen de yüksek sesle tekrar et. Ben bir soru sorup sustuğumda ise önce sen dene.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας! Με λένε Κατερίνα. Είμαι από τη Θεσσαλονίκη.",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Bugün selam vermeyi, kendini tanıtmayı ve birine adını, nereli olduğunu sormayı öğreneceksin. En önemlisi de kime sen, kime siz diyeceğini.",
+   "who": "ada"
+  },
+  {
+   "part": "Kursta ilk gün"
+  },
+  {
+   "lang": "tr",
+   "say": "İlk sahne. Bir İngilizce kursunun ilk günü. Eleni ile Mehmet yan yana oturuyor. Bir şeye kulak ver: Mehmet nereli?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου! Με λένε Ελένη. Εσένα;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου, Ελένη. Με λένε Μεχμέτ.",
+   "who": "mehmet"
+  },
+  {
+   "lang": "el",
+   "say": "Χαίρω πολύ, Μεχμέτ. Από πού είσαι;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι από την Τουρκία. Εσύ;",
+   "who": "mehmet"
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι από την Ελλάδα.",
+   "who": "eleni"
+  },
+  {
+   "lang": "tr",
+   "say": "Mehmet nereli? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Türkiyeli! Τουρκία kelimesini hemen yakaladım. Eleni de Yunanistan'dan: Ελλάδα.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru. Şimdi aynı sahne bir kez daha, biraz yavaş. Bu sefer her cümlenin ne dediğini anlamaya çalış.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου! Με λένε Ελένη. Εσένα;",
+   "who": "eleni",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου, Ελένη. Με λένε Μεχμέτ.",
+   "who": "mehmet",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Χαίρω πολύ, Μεχμέτ. Από πού είσαι;",
+   "who": "eleni",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι από την Τουρκία. Εσύ;",
+   "who": "mehmet",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι από την Ελλάδα.",
+   "who": "eleni",
+   "speed": 0.85
+  },
+  {
+   "lang": "tr",
+   "say": "Χαίρω πολύ dediğinde Mehmet'in adını hemen arkasından söyledi. Memnun oldum gibi bir şey mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynen öyle. Memnun oldum, Mehmet.",
+   "who": "ada"
+  },
+  {
+   "part": "Belediyede"
+  },
+  {
+   "lang": "tr",
+   "say": "İkinci sahne. Sabah, belediyede bir ofis. Bir memur, Ayşe Yılmaz'ı karşılıyor. Burada hava bambaşka. Dinle: Ayşe hangi şehirden?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα σας. Πώς σας λένε;",
+   "who": "ypallilos"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα. Με λένε Αϊσέ Γιλμάζ.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Χαίρω πολύ, κυρία Γιλμάζ. Από πού είστε;",
+   "who": "ypallilos"
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι από την Τουρκία, από τη Σμύρνη.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ευχαριστώ, κυρία Γιλμάζ. Γεια σας.",
+   "who": "ypallilos"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "ayse"
+  },
+  {
+   "lang": "tr",
+   "say": "Ayşe hangi şehirden? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Σμύρνη. Hiç duymadığım bir şehir. Yunanistan'da bir yer mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Hayır, çok tanıdık bir yer: İzmir. Yunanca adı η Σμύρνη. Ayşe önce ülkesini söyledi, sonra şehrini.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir de sonunda γεια σας dediler. Ama o merhaba değil miydi? Burada vedalaşıyorlar.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İyi kulak. Γεια ikisini de söyler: hem merhaba, hem hoşça kal. Geldiğinde de söylersin, giderken de.",
+   "who": "ada"
+  },
+  {
+   "part": "Sana nasıl diyorlar?"
+  },
+  {
+   "lang": "tr",
+   "say": "Açılıştaki soruma dönelim. Με λένε. Bu adım demek değil mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Anlamı o, ama kuruluşu başka. Kelimesi kelimesine: bana diyorlar. Με λένε Ελένη, yani bana Eleni diyorlar. Yunanlar adı böyle söyler.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Peki adını sorarken?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Soru da aynı kalıpla kurulur: sana nasıl diyorlar? Katerina:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Πώς σε λένε;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Cevap da: bana Katerina diyorlar.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Με λένε Κατερίνα.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Bir şey daha yakaladım. Eleni ya sen demek için Εσένα dedi, Mehmet ise Εσύ. İkisi de ya sen değil mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İkisi de ya sen, ama yerleri farklı. Türkçede de bana Eleni diyorlar, ya sana, dersin. Ya sen demezsin. Ad konuşurken Yunanca da öyle: Εσένα;",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Peki Εσύ ne zaman?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Nereli olduğunu konuşurken. Είμαι από την Ελλάδα, yani Yunanistan'danım. Cümle είμαι ile kurulu, ben şuyum der. Soru da ona uyar: ya sen? Εσύ; Şimdilik bunları kalıp olarak öğren, nedeni ileriki derslerde gelecek.",
+   "who": "ada"
+  },
+  {
+   "part": "Sen mi, siz mi?"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi bugünün ana konusu. Eleni ile Mehmet nasıl konuştu, memur ile Ayşe nasıl konuştu?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Biri samimi, öbürü resmî. Bizdeki sen ve siz gibi.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Ta kendisi. Yunancada da iki hitap var. Samimi olanı arkadaşlara, aileye, çocuklara ve yaşıtın gençlere. Resmî olanı tanımadığın yetişkinlere, memurlara, doktorlara, öğretmenine.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Peki bu fark nerede duyuluyor?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Küçük kelimelerde. Samimi tarafta σου ya da σε, resmî tarafta hep σας. Katerina, aynı cümleyi iki biçimde söyler misin? Önce sana, sonra size.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου! Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "lang": "el",
+   "say": "Πώς σε λένε; Πώς σας λένε;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "lang": "tr",
+   "say": "Nerelisin de değişiyor mu? Eleni είσαι dedi, memur είστε.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Değişiyor. Fiilin sonu da Türkçedeki sin ile siniz gibi değişir.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Από πού είσαι; Από πού είστε;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "lang": "tr",
+   "say": "Ya sen sorusunun resmî hâli de var: Εσείς. Ad konuşurken de Εσάς.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Bir dakika. Peki iki arkadaşıma birden ne derim?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Güzel soru. Türkçede bir gruba siz dersin, değil mi? Yunancada da öyle. Birden çok kişiye konuşurken resmî biçimi kullanırsın: Γεια σας.",
+   "who": "ada"
+  },
+  {
+   "part": "Günaydın'dan iyi geceye"
+  },
+  {
+   "lang": "tr",
+   "say": "Memur Ayşe'yi nasıl karşıladı, hatırlıyor musun?",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα σας.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru. Καλημέρα, günaydın. Ama içine bak: καλή iyi demek, μέρα da gün. Yani iyi gün.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Akşam olunca ne oluyor?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Akşam da kendi kelimesini alır: Καλησπέρα, iyi akşamlar. Öğleden sonra ve akşam biriyle karşılaşınca söylersin. Gece ayrılırken ya da yatmadan önce ise Καληνύχτα, iyi geceler. Katerina, üçünü sırayla söyler misin?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα. Καλησπέρα. Καληνύχτα.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.1
+  },
+  {
+   "lang": "tr",
+   "say": "İki selam daha: Χαίρετε, biraz resmî bir merhaba. Αντίο, uzun bir ayrılıkta elveda. Günlük hayatta giderken çoğu zaman yine γεια dersin.",
+   "who": "ada"
+  },
+  {
+   "part": "Nerelisin?"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi nereli olduğunu söyleyelim. Kalıp şu: Είμαι από. Yani ben şuradanım.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Από, bizim den eki gibi mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İşi o, ama yeri farklı. Türkçede ek kelimenin sonuna gelir: Türkiye'den. Yunancada από kelimenin önüne gelir. Dinle ve tekrar et.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι από την Τουρκία.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι από τη Σμύρνη.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Από ile yerin adı arasında bir küçük kelime daha duydum. Bir tin, bir ti.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Onlar artikel. Türkçede yok. Volos'tanım derken ton duyarsın, İran'danım derken to. Volos, Yunanistan'da bir liman şehri.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι από τον Βόλο. Είμαι από το Ιράν.",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Kuralını üçüncü derste göreceğiz. Şimdilik her ülkeyi, her şehri önündeki küçük kelimeyle birlikte ezberle, bir paket gibi.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Peki İstanbul? Onu da Yunanca söylemek isterim.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Tam adı η Κωνσταντινούπολη. Ama Yunanlar çoğu zaman kısaca şehir der: η Πόλη.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι από την Πόλη.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Sıra sende"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi sıra sende. Ben bir durum söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert deneyecek, en son Katerina doğrusunu söyleyecek.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Sabah belediyedesin. Memura günaydın de.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα σας.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα σας.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Kursta yanına genç biri oturdu. Ona adını sor.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Πώς σε λένε;",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Πώς σε λένε;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi bir doktora nereli olduğunu sor.",
+   "who": "ada"
+  },
+  {
+   "pause": 4.5
+  },
+  {
+   "lang": "el",
+   "say": "Από πού είσαι;",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doktora sen mi diyorsun, Mert?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ah, doğru. Tanımadığım bir yetişkin, siz olacak.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Από πού είστε;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Biri sana adını söyledi. Memnun olduğunu söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Χαίρω πολύ.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Χαίρω πολύ.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.4
+  },
+  {
+   "lang": "tr",
+   "say": "Son olarak kendini tanıt. Adını söyle, sonra Türkiye'den olduğunu.",
+   "who": "ada"
+  },
+  {
+   "pause": 5
+  },
+  {
+   "lang": "el",
+   "say": "Με λένε Μερτ. Είμαι από την Τουρκία.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Mükemmel. Sen de bir kez daha, kendi adınla söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "part": "Mert'in hatası"
+  },
+  {
+   "lang": "tr",
+   "say": "Mert, şimdi hızlı ol. Sen belediyedeki memursun. Düşünmeden Ayşe Yılmaz'a teşekkür et.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Ευχαριστώ, Γιλμάζ κυρία.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Neredeyse! Ama bir şey yerinde değil.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ne? Yılmaz Hanım dedim ya.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İşte orası. Türkçede önce ad gelir, sonra hanım. Yunancada tam tersi: κυρία önce gelir. Resmî yerlerde soyadıyla: κυρία Γιλμάζ.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçe kafayla dizdim. Tembellik işte.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçe konuşanların en sık yaptığı hata bu. Günlük hayatta adla da söylenir, tam Ayşe Hanım gibi: κυρία Αϊσέ. Samimiysen yalnızca Αϊσέ. Doğrusunu Katerina'dan dinle ve tekrar et.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Ευχαριστώ, κυρία Γιλμάζ.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Oyun: kime nasıl merhaba?"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi küçük bir oyun. Ben birini söyleyeceğim, sen ona merhaba de: γεια σου mu, γεια σας mı? Sonra Mert söyleyecek. Birincisi: annen.",
+   "who": "ada"
+  },
+  {
+   "pause": 3.5
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου!",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru, aile samimi. İkincisi: otobüste tanımadığın yaşlı bir bey.",
+   "who": "ada"
+  },
+  {
+   "pause": 3.5
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru. Üçüncüsü: iki arkadaşın birden geliyor.",
+   "who": "ada"
+  },
+  {
+   "pause": 3.5
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου!",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Dur. Kaç kişi?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "İki. Ah, birden çok kişi, o zaman siz biçimi.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "İkinci tur: saatler. Akşam dokuzda bir yemeğe vardın, kapıda ev sahibini selamla.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Καληνύχτα σας.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Dur, daha yeni geldin! Καληνύχτα, iyi geceler gibi, ayrılırken söylenir. Gelirken akşamsa:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Καλησπέρα σας.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçede de kapıda iyi geceler demeyiz zaten. Aynı mantık.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynen. Son soru: yemek bitti, eve gidiyorsun.",
+   "who": "ada"
+  },
+  {
+   "pause": 3.5
+  },
+  {
+   "lang": "el",
+   "say": "Καληνύχτα!",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İşte şimdi tam yerinde.",
+   "who": "ada"
+  },
+  {
+   "part": "Sahne yeniden"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi belediye sahnesi bir kez daha, normal hızda. Bu sefer her kelimeyi anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα σας. Πώς σας λένε;",
+   "who": "ypallilos"
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα. Με λένε Αϊσέ Γιλμάζ.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Χαίρω πολύ, κυρία Γιλμάζ. Από πού είστε;",
+   "who": "ypallilos"
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι από την Τουρκία, από τη Σμύρνη.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ευχαριστώ, κυρία Γιλμάζ. Γεια σας.",
+   "who": "ypallilos"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "ayse"
+  },
+  {
+   "lang": "tr",
+   "say": "Gerçekten hepsini anladım. Burada herkes siz diyor.",
+   "who": "mert"
+  },
+  {
+   "part": "Kelime köşesi: sağlığına"
+  },
+  {
+   "lang": "tr",
+   "say": "Kelime köşesi. Belki bu selamı Türkiye'de de duymuşsundur: γεια σου.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Duydum tabii. Ama ne demek olduğunu hiç düşünmedim.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Γεια aslında sağlık demek. Γεια σου, yani sağlığına. Biri hapşırınca söylenen çok yaşa gibi, selamın içinde bir iyi dilek var.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Merhaba derken sağlık diliyorlar yani. Güzelmiş.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bu yüzden kadeh kaldırırken de Yunanlar sağlığımıza der. Katerina?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια μας!",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Yani şerefe. Bir de uygulamada okurken dikkat et: Yunanca soru işareti bizim noktalı virgüle benzer.",
+   "who": "ada"
+  },
+  {
+   "part": "Gelecek bölüm"
+  },
+  {
+   "lang": "tr",
+   "say": "Gelecek bölümde Eleni, Mehmet'i bir arkadaşıyla tanıştırıyor. Sonra arkadaşın babası geliyor. Herkes ne iş yaptığını söylüyor.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Ben şuyum, sen nesin demeyi öğreneceğiz. Bir de birini tanıştırmayı. Bu arada bölümü uygulamada oku, alıştırmaları yap. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Biraz daha tekrar istersen, hemen ardından kısa bir tekrar köşesi var.",
+   "who": "ada"
+  },
+  {
+   "part": "Tekrar köşesi"
+  },
+  {
+   "lang": "tr",
+   "say": "Tekrar köşesi. Bugünün anahtar cümleleri, yavaşça. Katerina'dan sonra tekrar et.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σου! Πώς σε λένε;",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Καλημέρα σας. Πώς σας λένε;",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Χαίρω πολύ.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Από πού είστε;",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι από την Τουρκία, από τη Σμύρνη.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Ευχαριστώ, κυρία Γιλμάζ.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "tr",
+   "say": "Bu kadar. Haftaya görüşürüz.",
+   "who": "ada"
+  }
+ ]
+}

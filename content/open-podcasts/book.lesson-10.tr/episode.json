@@ -1,0 +1,934 @@
+{
+ "id": "book.lesson-10.tr",
+ "kind": "chapter",
+ "lang": "tr",
+ "title": {
+  "tr": "On bire çeyrek kala: Pire'ye davet, metro, saat ve hava",
+  "en": "A quarter to eleven: an invitation to Piraeus, the metro, the time and the weather"
+ },
+ "curriculum": "oknos-book",
+ "stage": "lesson-10",
+ "version": 4,
+ "written": "2026-11-26",
+ "date": null,
+ "rendered": "2026-11-26T13:19:10",
+ "seconds": 894.0,
+ "script": "a94d5c842f59",
+ "parts": [
+  {
+   "t": 3.0,
+   "title": "Açılış"
+  },
+  {
+   "t": 38.33,
+   "title": "Hoş geldin"
+  },
+  {
+   "t": 71.25,
+   "title": "Telefonda bir davet"
+  },
+  {
+   "t": 136.19,
+   "title": "İki mesaj"
+  },
+  {
+   "t": 198.19,
+   "title": "Dört kelime, dokuz kelime"
+  },
+  {
+   "t": 311.79,
+   "title": "Saat kaç, saat kaçta?"
+  },
+  {
+   "t": 408.26,
+   "title": "Pazar sabahı, hava sıcak"
+  },
+  {
+   "t": 466.29,
+   "title": "Sıra sende"
+  },
+  {
+   "t": 540.78,
+   "title": "Mert'in hatası"
+  },
+  {
+   "t": 580.01,
+   "title": "Oyun: dün mü, yarın mı?"
+  },
+  {
+   "t": 663.84,
+   "title": "Sahne yeniden"
+  },
+  {
+   "t": 707.04,
+   "title": "Kelime köşesi: aylar"
+  },
+  {
+   "t": 770.45,
+   "title": "Gelecek bölüm"
+  },
+  {
+   "t": 802.85,
+   "title": "Katerina anlatıyor"
+  }
+ ],
+ "lines": [
+  {
+   "t": 3.0,
+   "lang": "el",
+   "say": "Γεια σου, Αϊσέ! Το Σάββατο πάω στον Πειραιά με τον Νίκο. Έρχεσαι κι εσύ;",
+   "who": "eleni"
+  },
+  {
+   "t": 8.07,
+   "lang": "el",
+   "say": "Ναι, έρχομαι! Λεωφορείο ή μετρό;",
+   "who": "ayse"
+  },
+  {
+   "t": 11.64,
+   "lang": "el",
+   "say": "Με το λεωφορείο κάνει μία ώρα. Με το μετρό, από την Ομόνοια μέχρι τον Πειραιά, μισή ώρα.",
+   "who": "eleni"
+  },
+  {
+   "t": 18.88,
+   "lang": "tr",
+   "say": "Metroyla, Omonia'dan Pire'ye kadar. Türkçede dört kelime. Eleni'nin cümlesinin bu parçasında ise tam dokuz kelime var.",
+   "who": "ada"
+  },
+  {
+   "t": 27.72,
+   "lang": "tr",
+   "say": "Dokuz mu? Ben sadece metroyu, Omonia'yı ve Pire'yi duydum. Gerisi küçük küçük kelimeler.",
+   "who": "mert"
+  },
+  {
+   "t": 33.89,
+   "lang": "tr",
+   "say": "İşte bugünün sırrı o küçük kelimelerde.",
+   "who": "ada"
+  },
+  {
+   "t": 38.33,
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, onuncu bölüm.",
+   "who": "ada"
+  },
+  {
+   "t": 43.52,
+   "lang": "tr",
+   "say": "Ben de Mert. Bugün metroya biniyoruz galiba.",
+   "who": "mert"
+  },
+  {
+   "t": 47.0,
+   "lang": "tr",
+   "say": "Evet. Bir davete evet diyeceksin, oraya nasıl gideceğini ve saat kaçta buluşacağını söyleyeceksin. Bir de havadan konuşacağız.",
+   "who": "ada"
+  },
+  {
+   "t": 55.25,
+   "lang": "tr",
+   "say": "Saat kısmı beni biraz korkutuyor. Türkçede bile çeyrek kala ile çeyrek geçeyi karıştırırım.",
+   "who": "mert"
+  },
+  {
+   "t": 60.6,
+   "lang": "tr",
+   "say": "Göreceksin, Yunancası kolay. Stüdyoda Katerina da var. Örnek cümleleri o söyleyecek, sen de arkasından yüksek sesle söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 68.68,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "t": 71.25,
+   "lang": "tr",
+   "say": "İlk sahne. Eleni, Ayşe'yi telefonla arıyor ve onu cumartesi Pire'ye çağırıyor. Omonia, Atina'nın merkezinde bir metro istasyonu. Bir şeye kulak ver: Ayşe evden saat kaçta çıkıyor?",
+   "who": "ada"
+  },
+  {
+   "t": 85.91,
+   "lang": "el",
+   "say": "Γεια σου, Αϊσέ! Το Σάββατο πάω στον Πειραιά με τον Νίκο. Έρχεσαι κι εσύ;",
+   "who": "eleni"
+  },
+  {
+   "t": 90.98,
+   "lang": "el",
+   "say": "Ναι, έρχομαι! Λεωφορείο ή μετρό;",
+   "who": "ayse"
+  },
+  {
+   "t": 94.55,
+   "lang": "el",
+   "say": "Με το λεωφορείο κάνει μία ώρα. Με το μετρό, από την Ομόνοια μέχρι τον Πειραιά, μισή ώρα.",
+   "who": "eleni"
+  },
+  {
+   "t": 101.49,
+   "lang": "el",
+   "say": "Με το μετρό! Τι ώρα;",
+   "who": "ayse"
+  },
+  {
+   "t": 103.55,
+   "lang": "el",
+   "say": "Στις έντεκα και μισή. Θα είμαι στον σταθμό με τον Νίκο.",
+   "who": "eleni"
+  },
+  {
+   "t": 107.88,
+   "lang": "el",
+   "say": "Ωραία! Φεύγω από το σπίτι για την Ομόνοια στις έντεκα παρά τέταρτο.",
+   "who": "ayse"
+  },
+  {
+   "t": 112.74,
+   "lang": "el",
+   "say": "Σήμερα βρέχει, αλλά το Σάββατο θα κάνει ζέστη.",
+   "who": "eleni"
+  },
+  {
+   "t": 116.66,
+   "lang": "tr",
+   "say": "Ayşe evden saat kaçta çıkıyor? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 124.31,
+   "lang": "tr",
+   "say": "On bir buçukta. Στις έντεκα και μισή.",
+   "who": "mert"
+  },
+  {
+   "t": 127.25,
+   "lang": "tr",
+   "say": "O buluşma saati, Mert. Ayşe evden daha erken çıkıyor, on bire çeyrek kala: στις έντεκα παρά τέταρτο.",
+   "who": "ada"
+  },
+  {
+   "t": 136.19,
+   "lang": "tr",
+   "say": "İkinci sahne: iki kısa mesaj, biraz yavaş. Eleni bu sefer pazar için yazıyor. Ayşe pazar günü parka gidiyor mu?",
+   "who": "ada"
+  },
+  {
+   "t": 144.58,
+   "lang": "el",
+   "say": "Γεια σου, Αϊσέ! Την Κυριακή το πρωί θα είμαι στο πάρκο με τον Νίκο και τη Λυδία.",
+   "who": "eleni",
+   "speed": 0.85
+  },
+  {
+   "t": 150.79,
+   "lang": "el",
+   "say": "Έρχεσαι κι εσύ; Φιλιά, Ελένη.",
+   "who": "eleni",
+   "speed": 0.85
+  },
+  {
+   "t": 155.06,
+   "lang": "el",
+   "say": "Γεια σου, Ελένη! Ευχαριστώ πολύ!",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 157.91,
+   "lang": "el",
+   "say": "Το Σάββατο έρχομαι στον Πειραιά, αλλά αυτή την Κυριακή δουλεύω, από τις οχτώ μέχρι τις έξι.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 164.63,
+   "lang": "el",
+   "say": "Χθες είδα τη Λυδία στο μετρό! Φιλιά, Αϊσέ.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 169.68,
+   "lang": "tr",
+   "say": "Ayşe pazar günü parka gidiyor mu? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 177.09,
+   "lang": "tr",
+   "say": "Gitmiyor. Pazar günü çalışıyor, sekizden altıya kadar.",
+   "who": "mert"
+  },
+  {
+   "t": 180.67,
+   "lang": "tr",
+   "say": "Evet. Mesajların sonundaki Φιλιά, kelimesi kelimesine öpücükler. Türkçedeki öptüm gibi. Sınavdaki kısa arkadaş e-postası da çoğu zaman tam böyle bir davettir, ya da bir davete cevap.",
+   "who": "ada"
+  },
+  {
+   "t": 198.19,
+   "lang": "tr",
+   "say": "Açılıştaki soruya dönelim. Türkçede dört kelime, Yunancada dokuz. Neden?",
+   "who": "mert"
+  },
+  {
+   "t": 203.6,
+   "lang": "tr",
+   "say": "Çünkü Türkçede ek ismin sonuna yapışır: metro-yla, Omonia-dan. Yunancada ek yok. Onun yerine ismin önüne küçük, ayrı bir kelime gelir, arkasından da çoğu zaman artikel.",
+   "who": "ada"
+  },
+  {
+   "t": 216.41,
+   "lang": "tr",
+   "say": "Yani metroyla demek için önce ile, sonra artikel, sonra metro.",
+   "who": "mert"
+  },
+  {
+   "t": 220.8,
+   "lang": "tr",
+   "say": "Aynen. İle demek için με: με τον Νίκο, με το μετρό. Den için από, e kadar için μέχρι. Katerina, Eleni'nin yol tarifini söyler misin? Sen de tekrar et.",
+   "who": "ada"
+  },
+  {
+   "t": 235.29,
+   "lang": "el",
+   "say": "Με το μετρό, από την Ομόνοια μέχρι τον Πειραιά.",
+   "who": "katerina"
+  },
+  {
+   "t": 243.47,
+   "lang": "tr",
+   "say": "Pire'ye derken de, istasyonda derken de aynı küçük kelimeyi duydum: στον Πειραιά, στον σταθμό.",
+   "who": "mert"
+  },
+  {
+   "t": 249.39,
+   "lang": "tr",
+   "say": "Onu üçüncü bölümden tanıyorsun: σε, artikelle birleşir. Hem e demektir, hem de. Hangisi olduğunu fiil söyler. Πάω στον Πειραιά: Pire'ye gidiyorum. Θα είμαι στον σταθμό: istasyonda olacağım.",
+   "who": "ada"
+  },
+  {
+   "t": 265.71,
+   "lang": "tr",
+   "say": "Bir de Ayşe evden çıkarken για την Ομόνοια dedi.",
+   "who": "mert"
+  },
+  {
+   "t": 269.77,
+   "lang": "tr",
+   "say": "Για, bir yere gitmek üzere demek; yolun yönünü söyler. Pire'ye giden otobüs: το λεωφορείο για τον Πειραιά. Aynı kelime için de demek.",
+   "who": "ada"
+  },
+  {
+   "t": 281.88,
+   "lang": "tr",
+   "say": "Beş küçük kelime o zaman: με, σε, για, από, μέχρι.",
+   "who": "mert"
+  },
+  {
+   "t": 287.69,
+   "lang": "tr",
+   "say": "Evet. Soru sorarken de küçük kelime önde kalır. Türkçede kiminle, ek sonda. Yunancada με ποιον. Nereden: από πού. Cevap da aynı kelimeyle başlar. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 302.62,
+   "lang": "el",
+   "say": "Από πού έρχεσαι; Από τη δουλειά.",
+   "who": "katerina"
+  },
+  {
+   "t": 311.79,
+   "lang": "tr",
+   "say": "Şimdi saat. Saat kaç diye sormak için Τι ώρα είναι. Cevap Είναι ile başlar: Είναι τέσσερις, saat dört. Saat kaçta diye sorarsan ise cevap στις ile başlar:",
+   "who": "ada"
+  },
+  {
+   "t": 326.67,
+   "lang": "el",
+   "say": "Στις έντεκα και μισή.",
+   "who": "katerina"
+  },
+  {
+   "t": 331.66,
+   "lang": "tr",
+   "say": "Στις, yine σε ile bir artikel mi? Türkçedeki saat beşte demenin te eki gibi.",
+   "who": "mert"
+  },
+  {
+   "t": 338.39,
+   "lang": "tr",
+   "say": "Tam öyle. Ama sayıya dikkat. Saat kelimesi dişil: η ώρα. O yüzden bir, üç ve dört dişil biçimde söylenir: μία, τρεις, τέσσερις.",
+   "who": "ada"
+  },
+  {
+   "t": 351.38,
+   "lang": "tr",
+   "say": "Geçen bölümdeki τρεις χιλιάδες gibi. Peki saat birde? Στις μία mı?",
+   "who": "mert"
+  },
+  {
+   "t": 357.4,
+   "lang": "tr",
+   "say": "Saat bir, tek bir saat. Yani tekil, artikel de tekil olur: στη μία. Şimdi dakikalar. Και ekler, παρά çıkarır. Τέταρτο çeyrek, μισή buçuk. Altıya çeyrek kala:",
+   "who": "ada"
+  },
+  {
+   "t": 375.38,
+   "lang": "el",
+   "say": "Είναι έξι παρά τέταρτο.",
+   "who": "katerina"
+  },
+  {
+   "t": 380.65,
+   "lang": "tr",
+   "say": "Altı eksi çeyrek. Türkçe gibi, bir sonraki saate göre sayıyor.",
+   "who": "mert"
+  },
+  {
+   "t": 385.25,
+   "lang": "tr",
+   "say": "Aynen. O zaman Ayşe'nin cümlesini sen söyle: evden on bire çeyrek kala çıkıyorum.",
+   "who": "ada"
+  },
+  {
+   "t": 395.84,
+   "lang": "el",
+   "say": "Φεύγω από το σπίτι στις έντεκα παρά τέταρτο.",
+   "who": "mert"
+  },
+  {
+   "t": 398.76,
+   "lang": "el",
+   "say": "Φεύγω από το σπίτι στις έντεκα παρά τέταρτο.",
+   "who": "katerina"
+  },
+  {
+   "t": 408.26,
+   "lang": "tr",
+   "say": "Eleni'nin mesajında pazar sabahı vardı: την Κυριακή το πρωί. Orada küçük kelime yoktu galiba.",
+   "who": "mert"
+  },
+  {
+   "t": 414.62,
+   "lang": "tr",
+   "say": "Yoktu. Gün, gün bölümü, ay ve mevsim için artikel yeter. Mayısta: τον Μάιο. Kışın: τον χειμώνα. Τον'un sonundaki n sesi de hiç düşmez.",
+   "who": "ada"
+  },
+  {
+   "t": 428.22,
+   "lang": "tr",
+   "say": "Şimdi hava. Hava nasıl: Τι καιρό κάνει. Kelimesi kelimesine: ne hava yapıyor?",
+   "who": "ada"
+  },
+  {
+   "t": 435.15,
+   "lang": "tr",
+   "say": "Türkçede de dün çok soğuk yaptı deriz.",
+   "who": "mert"
+  },
+  {
+   "t": 437.56,
+   "lang": "tr",
+   "say": "Tam öyle. Yunanca da sıcak yapıyor, soğuk yapıyor der: κάνει ζέστη, κάνει κρύο. Yağmur için tek kelime yeter: βρέχει. Yarın için başına θα gelir: θα κάνει ζέστη. Katerina, iki mevsim:",
+   "who": "ada"
+  },
+  {
+   "t": 455.14,
+   "lang": "el",
+   "say": "Το καλοκαίρι κάνει ζέστη. Τον χειμώνα κάνει κρύο.",
+   "who": "katerina"
+  },
+  {
+   "t": 466.29,
+   "lang": "tr",
+   "say": "Şimdi sıra sende. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert deneyecek, en son Katerina doğrusunu söyleyecek. Birincisi: bir arkadaşına kiminle gittiğini sor.",
+   "who": "ada"
+  },
+  {
+   "t": 484.11,
+   "lang": "el",
+   "say": "Ποιον με πας;",
+   "who": "mert"
+  },
+  {
+   "t": 485.57,
+   "lang": "tr",
+   "say": "Türkçe sırası bu, Mert: kim, ile. Yunancada küçük kelime hep önde.",
+   "who": "ada"
+  },
+  {
+   "t": 491.75,
+   "lang": "el",
+   "say": "Με ποιον πας;",
+   "who": "katerina"
+  },
+  {
+   "t": 495.07,
+   "lang": "tr",
+   "say": "Saatin dört buçuk olduğunu söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 501.74,
+   "lang": "el",
+   "say": "Είναι τέσσερις και μισή.",
+   "who": "mert"
+  },
+  {
+   "t": 503.47,
+   "lang": "el",
+   "say": "Είναι τέσσερις και μισή.",
+   "who": "katerina"
+  },
+  {
+   "t": 508.46,
+   "lang": "tr",
+   "say": "İşe metroyla gittiğini söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 514.95,
+   "lang": "el",
+   "say": "Πάω στη δουλειά με το μετρό.",
+   "who": "mert"
+  },
+  {
+   "t": 516.73,
+   "lang": "el",
+   "say": "Πάω στη δουλειά με το μετρό.",
+   "who": "katerina"
+  },
+  {
+   "t": 521.42,
+   "lang": "tr",
+   "say": "Son olarak bir arkadaşını davet et: pazar günü parka geliyor musun?",
+   "who": "ada"
+  },
+  {
+   "t": 530.79,
+   "lang": "el",
+   "say": "Έρχεσαι στο πάρκο την Κυριακή;",
+   "who": "mert"
+  },
+  {
+   "t": 533.26,
+   "lang": "el",
+   "say": "Έρχεσαι στο πάρκο την Κυριακή;",
+   "who": "katerina"
+  },
+  {
+   "t": 540.78,
+   "lang": "tr",
+   "say": "Mert, şimdi hızlı ol. Düşünmeden: pazar günü sekizden altıya kadar çalışıyorum.",
+   "who": "ada"
+  },
+  {
+   "t": 547.3,
+   "lang": "el",
+   "say": "Την Κυριακή δουλεύω από οχτώ μέχρι έξι.",
+   "who": "mert"
+  },
+  {
+   "t": 550.58,
+   "lang": "tr",
+   "say": "Neredeyse. Ama saatlerde bir şey eksik.",
+   "who": "ada"
+  },
+  {
+   "t": 554.36,
+   "lang": "tr",
+   "say": "Türkçede sekizden deriz, artikel yok ki.",
+   "who": "mert"
+  },
+  {
+   "t": 556.89,
+   "lang": "tr",
+   "say": "Türkçe konuşanların en sık yaptığı hata da bu. Yunancada saatin önünde artikel şart: από τις οχτώ, μέχρι τις έξι. Doğrusunu Katerina'dan dinle ve tekrar et:",
+   "who": "ada"
+  },
+  {
+   "t": 569.48,
+   "lang": "el",
+   "say": "Την Κυριακή δουλεύω από τις οχτώ μέχρι τις έξι.",
+   "who": "katerina"
+  },
+  {
+   "t": 580.01,
+   "lang": "tr",
+   "say": "Şimdi bir oyun, ama önce iki fiil. Ayşe mesajında χθες είδα τη Λυδία yazdı: dün Lydia'yı gördüm.",
+   "who": "ada"
+  },
+  {
+   "t": 589.6,
+   "lang": "tr",
+   "say": "Είδα, görmek mi? Βλέπω'ya hiç benzemiyor.",
+   "who": "mert"
+  },
+  {
+   "t": 593.73,
+   "lang": "tr",
+   "say": "Benzemiyor. Dokuzuncu bölümdeki έφαγα gibi, kök değişiyor. Gördüm: είδα. Göreceğim: θα δω. Ayrılmak da öyle: φεύγω, έφυγα, θα φύγω. Geçmişte θα yok, gelecekte hep var. Oyun şu: Katerina bir cümle söyleyecek, sen dün mü yarın mı olduğunu söyle. Birincisi.",
+   "who": "ada"
+  },
+  {
+   "t": 616.71,
+   "lang": "el",
+   "say": "Χθες είδα τον Νίκο στο μετρό.",
+   "who": "katerina"
+  },
+  {
+   "t": 622.75,
+   "lang": "tr",
+   "say": "Dün. Dün Nikos'u metroda gördüm.",
+   "who": "mert"
+  },
+  {
+   "t": 625.51,
+   "lang": "tr",
+   "say": "Doğru. İkincisi biraz zor, bu sefer dün ya da yarın kelimesi yok.",
+   "who": "ada"
+  },
+  {
+   "t": 630.23,
+   "lang": "el",
+   "say": "Θα δεις τη Λυδία στο πάρκο.",
+   "who": "katerina"
+  },
+  {
+   "t": 636.64,
+   "lang": "tr",
+   "say": "Dün? Lydia'yı parkta gördün.",
+   "who": "mert"
+  },
+  {
+   "t": 639.45,
+   "lang": "tr",
+   "say": "Başını dinledin mi? Θα vardı. Θα δεις: göreceksin.",
+   "who": "ada"
+  },
+  {
+   "t": 645.31,
+   "lang": "tr",
+   "say": "Ah, o zaman yarın. Lydia'yı parkta göreceksin.",
+   "who": "mert"
+  },
+  {
+   "t": 649.16,
+   "lang": "tr",
+   "say": "Evet. Sonuncusu.",
+   "who": "ada"
+  },
+  {
+   "t": 651.59,
+   "lang": "el",
+   "say": "Έφυγα από το σπίτι στις οχτώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 657.9,
+   "lang": "tr",
+   "say": "Bu sefer θα yok. Dün: evden sekizde çıktım.",
+   "who": "mert"
+  },
+  {
+   "t": 663.84,
+   "lang": "tr",
+   "say": "Şimdi telefon konuşması bir kez daha, normal hızda. Bu sefer her kelimeyi anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "t": 670.65,
+   "lang": "el",
+   "say": "Γεια σου, Αϊσέ! Το Σάββατο πάω στον Πειραιά με τον Νίκο. Έρχεσαι κι εσύ;",
+   "who": "eleni"
+  },
+  {
+   "t": 675.72,
+   "lang": "el",
+   "say": "Ναι, έρχομαι! Λεωφορείο ή μετρό;",
+   "who": "ayse"
+  },
+  {
+   "t": 679.29,
+   "lang": "el",
+   "say": "Με το λεωφορείο κάνει μία ώρα. Με το μετρό, από την Ομόνοια μέχρι τον Πειραιά, μισή ώρα.",
+   "who": "eleni"
+  },
+  {
+   "t": 686.23,
+   "lang": "el",
+   "say": "Με το μετρό! Τι ώρα;",
+   "who": "ayse"
+  },
+  {
+   "t": 688.3,
+   "lang": "el",
+   "say": "Στις έντεκα και μισή. Θα είμαι στον σταθμό με τον Νίκο.",
+   "who": "eleni"
+  },
+  {
+   "t": 692.62,
+   "lang": "el",
+   "say": "Ωραία! Φεύγω από το σπίτι για την Ομόνοια στις έντεκα παρά τέταρτο.",
+   "who": "ayse"
+  },
+  {
+   "t": 697.48,
+   "lang": "el",
+   "say": "Σήμερα βρέχει, αλλά το Σάββατο θα κάνει ζέστη.",
+   "who": "eleni"
+  },
+  {
+   "t": 701.4,
+   "lang": "tr",
+   "say": "Gerçekten hepsini anladım. Dokuz kelimenin hepsi yerli yerinde.",
+   "who": "mert"
+  },
+  {
+   "t": 707.04,
+   "lang": "tr",
+   "say": "Kelime köşesi: aylar. Katerina, on iki ayı söyler misin?",
+   "who": "ada"
+  },
+  {
+   "t": 712.6,
+   "lang": "el",
+   "say": "Ιανουάριος, Φεβρουάριος, Μάρτιος, Απρίλιος, Μάιος, Ιούνιος, Ιούλιος, Αύγουστος, Σεπτέμβριος, Οκτώβριος, Νοέμβριος, Δεκέμβριος.",
+   "who": "katerina",
+   "speed": 0.9
+  },
+  {
+   "t": 725.36,
+   "lang": "tr",
+   "say": "Αύγουστος, ağustos! Bizim ağustos da bu mu?",
+   "who": "mert"
+  },
+  {
+   "t": 728.8,
+   "lang": "tr",
+   "say": "Evet, Türkçeye Rumcadan gelmiş. Ad, Roma imparatoru Augustus'un. Şimdi bir bilmece: Σεπτέμβριος, Latincede yedi demek olan bir kelimeden gelir. Ama eylül dokuzuncu ay. Neden?",
+   "who": "ada"
+  },
+  {
+   "t": 745.29,
+   "lang": "tr",
+   "say": "Romalılar saymayı bilmiyordu?",
+   "who": "mert"
+  },
+  {
+   "t": 747.48,
+   "lang": "tr",
+   "say": "Biliyorlardı. Ama Roma'nın eski takviminde yıl martta başlardı. O zaman eylül yedinci aydı.",
+   "who": "ada"
+  },
+  {
+   "t": 754.83,
+   "lang": "tr",
+   "say": "Dur. Οκτώβριος'ta οχτώ duyuyorum. Sekiz!",
+   "who": "mert"
+  },
+  {
+   "t": 759.88,
+   "lang": "tr",
+   "say": "Aynen. Ekim sekizinci aydı. Δεκέμβριος'ta da δέκα var, on: aralık onuncu aydı.",
+   "who": "ada"
+  },
+  {
+   "t": 770.45,
+   "lang": "tr",
+   "say": "Gelecek bölümde cumartesi sabahı semt pazarındayız. Ayşe manav Kostas'tan domates, biber ve çilek alacak, fiyatları soracak.",
+   "who": "ada"
+  },
+  {
+   "t": 778.95,
+   "lang": "tr",
+   "say": "Türkçede üç domates deriz. Yunanca da öyle mi?",
+   "who": "mert"
+  },
+  {
+   "t": 782.14,
+   "lang": "tr",
+   "say": "Değil. Yunancada üçten sonra isim çoğul olur. Onu gelecek bölümde göreceğiz. Bu arada bölümü uygulamada oku, alıştırmaları yap. Şimdi son söz Katerina'nın. Bugünün hikâyesini sadece Yunanca anlatacak. Türkçe yok, sadece dinle. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "t": 800.19,
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "t": 802.85,
+   "lang": "el",
+   "say": "Είναι Μάιος. Τον Μάιο στην Αθήνα κάνει ζέστη, αλλά σήμερα βρέχει.",
+   "who": "katerina"
+  },
+  {
+   "t": 807.55,
+   "lang": "el",
+   "say": "Είναι Πέμπτη και η Αϊσέ είναι στο σπίτι.",
+   "who": "katerina"
+  },
+  {
+   "t": 810.88,
+   "lang": "el",
+   "say": "Η Ελένη ρωτάει την Αϊσέ στο τηλέφωνο:",
+   "who": "katerina"
+  },
+  {
+   "t": 813.62,
+   "lang": "el",
+   "say": "«Το Σάββατο πάω στον Πειραιά με τον Νίκο. Έρχεσαι κι εσύ;»",
+   "who": "katerina"
+  },
+  {
+   "t": 818.5,
+   "lang": "el",
+   "say": "«Ναι, έρχομαι! Λεωφορείο ή μετρό;»",
+   "who": "katerina"
+  },
+  {
+   "t": 821.82,
+   "lang": "el",
+   "say": "«Με το λεωφορείο κάνει μία ώρα. Με το μετρό, μισή ώρα.»",
+   "who": "katerina"
+  },
+  {
+   "t": 826.39,
+   "lang": "el",
+   "say": "«Με το μετρό! Τι ώρα;»",
+   "who": "katerina"
+  },
+  {
+   "t": 828.44,
+   "lang": "el",
+   "say": "«Στις έντεκα και μισή.»",
+   "who": "katerina"
+  },
+  {
+   "t": 830.31,
+   "lang": "el",
+   "say": "Το Σάββατο δεν βρέχει. Κάνει ζέστη.",
+   "who": "katerina"
+  },
+  {
+   "t": 833.72,
+   "lang": "el",
+   "say": "Η Αϊσέ φεύγει από το σπίτι για την Ομόνοια στις έντεκα παρά τέταρτο.",
+   "who": "katerina"
+  },
+  {
+   "t": 837.7,
+   "lang": "el",
+   "say": "Από την Ομόνοια πάει με το μετρό μέχρι τον Πειραιά.",
+   "who": "katerina"
+  },
+  {
+   "t": 840.86,
+   "lang": "el",
+   "say": "Κατεβαίνει στον Πειραιά στις έντεκα και είκοσι.",
+   "who": "katerina"
+  },
+  {
+   "t": 844.15,
+   "lang": "el",
+   "say": "Στον σταθμό είναι η Ελένη και ο Νίκος.",
+   "who": "katerina"
+  },
+  {
+   "t": 846.35,
+   "lang": "el",
+   "say": "Ο Νίκος ρωτάει: «Γεια σου, Αϊσέ! Από πού έρχεσαι; Από τη δουλειά;»",
+   "who": "katerina"
+  },
+  {
+   "t": 851.88,
+   "lang": "el",
+   "say": "«Όχι, από το σπίτι. Το Σάββατο δεν δουλεύω.»",
+   "who": "katerina"
+  },
+  {
+   "t": 854.73,
+   "lang": "el",
+   "say": "Η Αϊσέ πίνει καφέ. Ο Νίκος δεν πίνει ποτέ ζεστό καφέ. Πίνει τσάι.",
+   "who": "katerina"
+  },
+  {
+   "t": 861.2,
+   "lang": "el",
+   "say": "Η Ελένη ρωτάει: «Την Κυριακή το πρωί θα είμαι στο πάρκο με τη Λυδία. Έρχεσαι κι εσύ;»",
+   "who": "katerina"
+  },
+  {
+   "t": 867.82,
+   "lang": "el",
+   "say": "«Ευχαριστώ, αλλά αυτή την Κυριακή δουλεύω, από τις οχτώ μέχρι τις έξι.»",
+   "who": "katerina"
+  },
+  {
+   "t": 871.86,
+   "lang": "el",
+   "say": "«Η Λυδία! Χθες είδα τη Λυδία στο μετρό!»",
+   "who": "katerina"
+  },
+  {
+   "t": 874.96,
+   "lang": "el",
+   "say": "Το βράδυ η Αϊσέ φεύγει από τον Πειραιά στις οχτώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 878.18,
+   "lang": "el",
+   "say": "Κατεβαίνει στην Ομόνοια και πάει στο σπίτι.",
+   "who": "katerina"
+  },
+  {
+   "t": 881.07,
+   "lang": "el",
+   "say": "Αύριο θα φύγει νωρίς από το σπίτι. Θα πάει στη δουλειά με το μετρό.",
+   "who": "katerina"
+  },
+  {
+   "t": 886.2,
+   "lang": "el",
+   "say": "Και τι καιρό θα κάνει αύριο; Θα κάνει ζέστη.",
+   "who": "katerina"
+  },
+  {
+   "t": 889.75,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ],
+ "cast": {
+  "eleni": {
+   "name": "Ελένη",
+   "voice": "Callirrhoe"
+  },
+  "ayse": {
+   "name": "Αϊσέ",
+   "voice": "Achernar"
+  },
+  "ada": {
+   "name": "Ada",
+   "voice": "Sulafat"
+  },
+  "mert": {
+   "name": "Mert",
+   "voice": "Umbriel"
+  },
+  "katerina": {
+   "name": "Κατερίνα",
+   "voice": "Gacrux"
+  }
+ },
+ "sounds": true
+}

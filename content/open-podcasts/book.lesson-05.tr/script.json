@@ -1,0 +1,849 @@
+{
+ "id": "book.lesson-05.tr",
+ "kind": "chapter",
+ "curriculum": "oknos-book",
+ "stage": "lesson-05",
+ "lang": "tr",
+ "title": {
+  "tr": "Annem Alman, babam Yunan: diller, uyruklar, aile",
+  "en": "My mother's German, my father's Greek: languages, nationalities, family"
+ },
+ "version": 2,
+ "written": "2026-11-26",
+ "cast": [
+  {
+   "id": "ada",
+   "name": "Ada",
+   "role": "host",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "f",
+   "age": "35",
+   "manner": "warm, curious, explains with Turkish bridges"
+  },
+  {
+   "id": "mert",
+   "name": "Mert",
+   "role": "cohost",
+   "lang": [
+    "tr",
+    "el"
+   ],
+   "gender": "m",
+   "age": "32",
+   "manner": "easy-going, a bit lazy, the learner; guesses and sometimes gets it wrong"
+  },
+  {
+   "id": "katerina",
+   "name": "Κατερίνα",
+   "role": "guest",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "45",
+   "manner": "native, from Thessaloniki, warm, patient, clear"
+  },
+  {
+   "id": "eleni",
+   "name": "Ελένη",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "30",
+   "manner": "Ayşe's neighbour in Athens, chatty, cheerful, warm; grew up with Greek and German"
+  },
+  {
+   "id": "ayse",
+   "name": "Αϊσέ",
+   "role": "character",
+   "lang": [
+    "el"
+   ],
+   "gender": "f",
+   "age": "30",
+   "manner": "Turkish learner of Greek from Izmir, a little shy, polite"
+  }
+ ],
+ "sources": [
+  {
+   "what": "chapter",
+   "ref": "oknos-book/lessons/lesson-05"
+  }
+ ],
+ "segments": [
+  {
+   "part": "Açılış"
+  },
+  {
+   "lang": "el",
+   "say": "Καλησπέρα, Αϊσέ! Μιλάς ελληνικά πολύ καλά!",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Ευχαριστώ, Ελένη! Μιλάω ελληνικά και λίγο αγγλικά. Στο σπίτι μιλάμε τουρκικά.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Εγώ μιλάω ελληνικά και γερμανικά. Η μητέρα μου είναι Γερμανίδα και ο πατέρας μου είναι Έλληνας.",
+   "who": "eleni"
+  },
+  {
+   "lang": "tr",
+   "say": "Balkonda iki komşu. Eleni annesinin Alman olduğunu söyledi: η μητέρα μου είναι Γερμανίδα. Peki babası da Alman olsaydı, ne derdi?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynısını herhalde. Γερμανίδα. Türkçede de öyle: annem Alman, babam Alman.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İşte orada yanılıyorsun. Bugün tam bunu çözeceğiz.",
+   "who": "ada"
+  },
+  {
+   "part": "Hoş geldin"
+  },
+  {
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, beşinci bölüm.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Az önce duyduğun gibi, bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bugün hangi dilleri konuştuğunu, nereli olduğunu ve ailende kimler olduğunu anlatacaksın. Bir de yeni bir fiil ailesiyle tanışacaksın: vurgusu sonda duran fiiller.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Stüdyoda Katerina da var. Örnek cümleleri o söyleyecek, sen de arkasından yüksek sesle tekrar et.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Καλησπέρα σας!",
+   "who": "katerina"
+  },
+  {
+   "part": "Balkonda"
+  },
+  {
+   "lang": "tr",
+   "say": "Akşam. Ayşe ve komşusu Eleni balkonda sohbet ediyor. Bir şeye kulak ver: Eleni annesiyle hangi dili konuşuyor?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Καλησπέρα, Αϊσέ! Μιλάς ελληνικά πολύ καλά!",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Ευχαριστώ, Ελένη! Μιλάω ελληνικά και λίγο αγγλικά. Στο σπίτι μιλάμε τουρκικά.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Εγώ μιλάω ελληνικά και γερμανικά. Η μητέρα μου είναι Γερμανίδα και ο πατέρας μου είναι Έλληνας.",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Ωραία! Στο σπίτι σας μιλάτε γερμανικά;",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Με τη μητέρα μου μιλάω γερμανικά. Με τον πατέρα μου μιλάμε ελληνικά.",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Και ο αδελφός σου; Μιλάει γερμανικά;",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ναι, ο αδελφός μου και η αδελφή μου μιλάνε γερμανικά και αγγλικά. Και η οικογένειά σου; Είναι στην Αθήνα;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, η οικογένειά μου είναι στη Σμύρνη. Ο πατέρας μου είναι γιατρός και η μητέρα μου είναι δασκάλα. Αγαπάω πολύ την οικογένειά μου.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ωραία οικογένεια!",
+   "who": "eleni"
+  },
+  {
+   "lang": "tr",
+   "say": "Eleni annesiyle hangi dili konuşuyor? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Almanca. Annesi Alman ya, bu kolaydı.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru: με τη μητέρα μου μιλάω γερμανικά. Babasıyla da Yunanca konuşuyor. Annemle, babamla gibi kalıpları şimdilik olduğu gibi al; nedenini yedinci bölümde göreceğiz.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi sohbetin sonu bir kez daha, yavaşça. Bu sefer Ayşe'nin ailesine dikkat: babası ne iş yapıyor?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Και η οικογένειά σου; Είναι στην Αθήνα;",
+   "who": "eleni",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, η οικογένειά μου είναι στη Σμύρνη. Ο πατέρας μου είναι γιατρός και η μητέρα μου είναι δασκάλα. Αγαπάω πολύ την οικογένειά μου.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "lang": "el",
+   "say": "Ωραία οικογένεια!",
+   "who": "eleni",
+   "speed": 0.85
+  },
+  {
+   "lang": "tr",
+   "say": "Babası ne iş yapıyor? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Doktor: γιατρός. Annesi de öğretmen. Ama dur, öğretmen δάσκαλος değil miydi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Erkek öğretmen δάσκαλος, kadın öğretmen δασκάλα. Bunu aklında tut. Bugün erkek ve kadın biçimlerini çok konuşacağız.",
+   "who": "ada"
+  },
+  {
+   "part": "Vurgu sonda"
+  },
+  {
+   "lang": "tr",
+   "say": "Ada, bir şey dikkatimi çekti. Üçüncü bölümde çalışmak fiili vardı, δουλεύω. Konuşmak fiili kulağa başka türlü geliyor.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "İyi kulak. Çalışmak fiilinde vurgu fiilin gövdesinde kalıyordu. Konuşmak fiilinde ise vurgu ekin başındaki a sesine düşer ve hep orada kalır. Katerina, baştan sona söyler misin? Yavaşça.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "μιλάω, μιλάς, μιλάει, μιλάμε, μιλάτε, μιλάνε",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.1
+  },
+  {
+   "lang": "tr",
+   "say": "Konuşuyorum, konuşuyorsun, konuşuyor, konuşuyoruz, konuşuyorsunuz, konuşuyorlar. Mert, sen biçimine bir daha bak. Üçüncü bölümde çalışıyorsun nasıldı?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "δουλεύεις. O zaman konuşuyorsun da μιλάεις olur, değil mi?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Mantıklı bir tahmin, ama hayır. Öyle bir biçim yok. Sen biçimi kısa: μιλάς. Eleni de Ayşe'ye öyle dedi: μιλάς ελληνικά πολύ καλά.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Μιλάς. Daha kısa, daha kolay. Bunu sevdim.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bazen daha kısa biçimler de duyarsın: μιλώ, μιλούν. Anlamı aynı. Tanıman yeter; sen Katerina'nın söylediklerini kullan.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Bu kalıp tek bir fiile ait değil. Sormak, sevmek ve uyanmak da aynı ekleri alır: ρωτάω, αγαπάω, ξυπνάω. Ayşe sohbetin sonunda bunlardan birini kullandı. Hatırlıyor musun?",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Αγαπάω πολύ την οικογένειά μου.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynen: ailemi çok seviyorum. Bir de uyanmak. Çocuğum erken uyanıyor:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Το παιδί μου ξυπνάει νωρίς.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Türkçe mi, Türk mü?"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi diller. Eleni μιλάω ελληνικά dedi. Ama geçen sefer her yerin önüne artikel koymayı öğrendim. Burada artikel yok mu?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Yok. Dil, konuşmak fiilinden sonra artikelsiz gelir. Türkçedeki Türkçe, Yunanca kelimeleri gibi düşün: Türkçe konuşuyorum, μιλάω τουρκικά. Katerina, bugünün dört dilini söyler misin?",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "τουρκικά, ελληνικά, αγγλικά, γερμανικά",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçe, Yunanca, İngilizce, Almanca. Bir de sıra var. Çok iyi, dilden sonra gelir; Eleni'nin dediği gibi: μιλάς ελληνικά πολύ καλά. Biraz ise dilden önce gelir:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Μιλάω λίγο αγγλικά.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi kişiler. Türkçede Türk tek kelime. Ben de Türk'üm, annem de Türk.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Yunancada ise erkek ve kadın için iki ayrı kelime var. Açılıştaki sorunun cevabı da bu. Eleni'nin babası Alman olsaydı, Eleni şöyle derdi:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Ο πατέρας μου είναι Γερμανός.",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Demek Γερμανίδα kadın için, Γερμανός erkek için.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Kadın biçimlerinin çoğu ida diye biter. Katerina, çiftleri söyler misin? Önce erkek, sonra kadın.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "ο Έλληνας, η Ελληνίδα. ο Γερμανός, η Γερμανίδα.",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "echo": 1.1
+  },
+  {
+   "lang": "tr",
+   "say": "Peki Türk kadın? Τουρκίδα mı?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Hayır, işte istisna. Türk kadın η Τουρκάλα, Türk erkek ο Τούρκος. Bunu ayrıca öğren.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "ο Τούρκος, η Τουρκάλα",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.2
+  },
+  {
+   "lang": "tr",
+   "say": "Son bir ipucu: dil ile kişiyi karıştırma. Dil konuşmak fiiliyle gelir, kişi olmak fiiliyle. Türkçe konuşuyorum: μιλάω τουρκικά. Türk'üm: είμαι Τούρκος, kadınsan είμαι Τουρκάλα. Yazarken de dil küçük harfle başlar, kişi büyük harfle.",
+   "who": "ada"
+  },
+  {
+   "part": "Annem, babam"
+  },
+  {
+   "lang": "tr",
+   "say": "Son nokta: aile. Dördüncü bölümde benim, senin sözlerini öğrendin; ismin arkasına geliyorlardı. Aile kelimeleri hep onlarla gelir. Katerina:",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "η μητέρα μου, ο πατέρας μου, ο αδελφός μου, η αδελφή μου",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.1
+  },
+  {
+   "lang": "tr",
+   "say": "Annem, babam, erkek kardeşim, kız kardeşim. Türkçede bir de abla, ağabey deriz, yaşı da söyleriz. Yunancada yaş yok, sadece erkek ve kadın var.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ben bu kelimeyi sokakta l ile değil, r ile duydum galiba.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru duymuşsun. Konuşmada çok sık ο αδερφός, η αδερφή denir. İkisi de doğru. Üç kelime daha: oğul ο γιος, kız evlat η κόρη, büyükanne η γιαγιά. Bir cümle: büyükannem İzmir'de oturuyor.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Η γιαγιά μου μένει στη Σμύρνη.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Μένει, üçüncü bölümden. Σμύρνη da dişil, o yüzden στη.",
+   "who": "mert"
+  },
+  {
+   "part": "Sıra sende"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi sıra sende. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert deneyecek, en son Katerina doğrusunu söyleyecek. Birincisi: bir arkadaşına Yunanca konuşup konuşmadığını sor.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "Μιλάς ελληνικά;",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Μιλάς ελληνικά;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Biraz İngilizce konuştuğunu söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 4.5
+  },
+  {
+   "lang": "el",
+   "say": "Μιλάω λίγο αγγλικά.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Μιλάω λίγο αγγλικά.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Annenin Alman olduğunu söyle.",
+   "who": "ada"
+  },
+  {
+   "pause": 5
+  },
+  {
+   "lang": "el",
+   "say": "Η μητέρα μου είναι Γερμανός.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Annen kadın, Mert.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ah, doğru. Γερμανίδα.",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Η μητέρα μου είναι Γερμανίδα.",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "tr",
+   "say": "Son olarak, bir arkadaşına erkek kardeşi Almanca konuşuyor mu diye sor.",
+   "who": "ada"
+  },
+  {
+   "pause": 5
+  },
+  {
+   "lang": "el",
+   "say": "Ο αδελφός σου μιλάει γερμανικά;",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Mükemmel. Konuşan o, yani μιλάει. Kardeş de senin değil, arkadaşının: σου.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Ο αδελφός σου μιλάει γερμανικά;",
+   "who": "katerina"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "part": "Mert'in hatası"
+  },
+  {
+   "lang": "tr",
+   "say": "Mert, şimdi hızlı ol. Düşünmeden, Türk olduğunu söyle.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι Τουρκάλα.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Τουρκάλα mı? Mert, sen kadın mısın?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Ah. Az önce Τουρκάλα'yı duydum, ilk o geldi aklıma.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Türkçe konuşanların çok sık yaptığı hata bu. Türkçede Türk tek kelime; kulak erkek mi kadın mı diye bakmıyor. Erkeksen Τούρκος, kadınsan Τουρκάλα.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Είμαι Τούρκος.",
+   "who": "mert"
+  },
+  {
+   "echo": 1.3
+  },
+  {
+   "lang": "el",
+   "say": "Κι εγώ είμαι Ελληνίδα.",
+   "who": "katerina"
+  },
+  {
+   "part": "Oyun: kadın mı, erkek mi?"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi küçük bir oyun. Ben erkek biçimini söyleyeceğim, sen kadın biçimini söyle. Sonra Mert söyleyecek. Birincisi: ο Άγγλος.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "η Αγγλίδα",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Doğru, İngiliz kadın. İkincisi: ο Ιταλός.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "el",
+   "say": "η Ιταλίδα",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Yine doğru. Şimdi başka bir soru. Ben bir kelime söyleyeceğim, sen dil mi kişi mi, onu söyle: Έλληνας.",
+   "who": "ada"
+  },
+  {
+   "pause": 4
+  },
+  {
+   "lang": "tr",
+   "say": "Dil. Yunanca.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Dikkat, sonunu dinle. Έλληνας bir kişi: Yunan erkek. Yunanca ise ελληνικά. Kadınsa Ελληνίδα.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Üç kelime, hepsi birbirine benziyor. Tamam, sonlarını dinleyeceğim.",
+   "who": "mert"
+  },
+  {
+   "part": "Sahne yeniden"
+  },
+  {
+   "lang": "tr",
+   "say": "Şimdi balkon sohbeti bir kez daha, normal hızda. Bu sefer her kelimeyi anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Καλησπέρα, Αϊσέ! Μιλάς ελληνικά πολύ καλά!",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Ευχαριστώ, Ελένη! Μιλάω ελληνικά και λίγο αγγλικά. Στο σπίτι μιλάμε τουρκικά.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Εγώ μιλάω ελληνικά και γερμανικά. Η μητέρα μου είναι Γερμανίδα και ο πατέρας μου είναι Έλληνας.",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Ωραία! Στο σπίτι σας μιλάτε γερμανικά;",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Με τη μητέρα μου μιλάω γερμανικά. Με τον πατέρα μου μιλάμε ελληνικά.",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Και ο αδελφός σου; Μιλάει γερμανικά;",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ναι, ο αδελφός μου και η αδελφή μου μιλάνε γερμανικά και αγγλικά. Και η οικογένειά σου; Είναι στην Αθήνα;",
+   "who": "eleni"
+  },
+  {
+   "lang": "el",
+   "say": "Όχι, η οικογένειά μου είναι στη Σμύρνη. Ο πατέρας μου είναι γιατρός και η μητέρα μου είναι δασκάλα. Αγαπάω πολύ την οικογένειά μου.",
+   "who": "ayse"
+  },
+  {
+   "lang": "el",
+   "say": "Ωραία οικογένεια!",
+   "who": "eleni"
+  },
+  {
+   "lang": "tr",
+   "say": "Hepsini anladım. Annesi Γερμανίδα, babası Έλληνας, kardeşleri de iki dil konuşuyor.",
+   "who": "mert"
+  },
+  {
+   "part": "Kelime köşesi: aynı karından"
+  },
+  {
+   "lang": "tr",
+   "say": "Kelime köşesi. Bugün kardeş kelimesi. Yunanca αδελφός çok eski bir kelime. İki parçadan oluşuyor: başta aynı anlamına gelen bir ses, sonra da eski Yunancada rahim, ana karnı demek olan bir kelime.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Yani aynı karından olan?",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Aynen. Peki Türkçedeki kardeş kelimesi nereden geliyor, biliyor musun?",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Hiç düşünmedim.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Eski Türkçede karındaş: karın ve daş, aynı karından olan. Zamanla kardeş olmuş.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Dur. İki dil de kardeşe aynı karından olan demiş yani. Birbirinden habersiz.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Evet. Bir de Amerika'daki Filadelfiya şehrinin adı. Sevmek ve kardeş: kardeş sevgisi.",
+   "who": "ada"
+  },
+  {
+   "part": "Gelecek bölüm"
+  },
+  {
+   "lang": "tr",
+   "say": "Gelecek bölüm bir tekrar bölümü. Mehmet kurs ofisine kayda geliyor. İlk beş bölümde öğrendiğin her şey tek bir konuşmada: adı, nereli olduğu, nerede oturduğu, telefon numarası ve hangi dilleri konuştuğu.",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Telefon numarası yine mi? Ben hâlâ yüz yirmide kaldım.",
+   "who": "mert"
+  },
+  {
+   "lang": "tr",
+   "say": "Bu sefer hazırsın. Bu arada bölümü uygulamada oku, alıştırmaları yap. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "lang": "tr",
+   "say": "Biraz daha tekrar istersen, hemen ardından kısa bir tekrar köşesi var.",
+   "who": "ada"
+  },
+  {
+   "part": "Tekrar köşesi"
+  },
+  {
+   "lang": "tr",
+   "say": "Tekrar köşesi. Bugünün anahtar cümleleri, yavaşça. Katerina'dan sonra tekrar et.",
+   "who": "ada"
+  },
+  {
+   "lang": "el",
+   "say": "Μιλάς ελληνικά;",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Μιλάω λίγο αγγλικά.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Στο σπίτι μιλάμε τουρκικά.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Η μητέρα μου είναι Γερμανίδα.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Ο πατέρας μου είναι γιατρός.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "el",
+   "say": "Αγαπάω πολύ την οικογένειά μου.",
+   "who": "katerina",
+   "speed": 0.8
+  },
+  {
+   "echo": 1.5
+  },
+  {
+   "lang": "tr",
+   "say": "Bu kadar. Haftaya görüşürüz.",
+   "who": "ada"
+  }
+ ]
+}

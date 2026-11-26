@@ -1,0 +1,1016 @@
+{
+ "id": "book.lesson-17.tr",
+ "kind": "chapter",
+ "lang": "tr",
+ "title": {
+  "tr": "Gitmek diye bir kelime yok: cuma akşamı açık hava sineması",
+  "en": "Greek has no 'to go': Friday night at the open-air cinema"
+ },
+ "curriculum": "oknos-book",
+ "stage": "lesson-17",
+ "version": 3,
+ "written": "2026-11-26",
+ "date": null,
+ "rendered": "2026-11-26T13:36:46",
+ "seconds": 909.7,
+ "script": "3b380f587984",
+ "parts": [
+  {
+   "t": 3.0,
+   "title": "Açılış"
+  },
+  {
+   "t": 39.96,
+   "title": "Hoş geldin"
+  },
+  {
+   "t": 82.4,
+   "title": "Grup sohbetinde plan"
+  },
+  {
+   "t": 164.44,
+   "title": "Arabada, yavaşça"
+  },
+  {
+   "t": 212.35,
+   "title": "İstiyorum ki gideyim"
+  },
+  {
+   "t": 355.26,
+   "title": "Senin gelmeni istiyorum"
+  },
+  {
+   "t": 425.65,
+   "title": "Geç kalma!"
+  },
+  {
+   "t": 508.92,
+   "title": "Sıra sende"
+  },
+  {
+   "t": 592.45,
+   "title": "Mert'in hatası"
+  },
+  {
+   "t": 635.71,
+   "title": "Oyun: evet mi, hayır mı?"
+  },
+  {
+   "t": 732.98,
+   "title": "Sahne yeniden"
+  },
+  {
+   "t": 768.72,
+   "title": "Köşe: sinema eve dönüyor"
+  },
+  {
+   "t": 815.27,
+   "title": "Gelecek bölüm"
+  },
+  {
+   "t": 845.3,
+   "title": "Katerina anlatıyor"
+  }
+ ],
+ "lines": [
+  {
+   "t": 3.0,
+   "lang": "el",
+   "say": "Νίκο, μπορώ να καθίσω μπροστά;",
+   "who": "ayse"
+  },
+  {
+   "t": 5.3,
+   "lang": "el",
+   "say": "Βεβαίως. Ελένη, μπορείς να καθίσεις πίσω;",
+   "who": "nikos"
+  },
+  {
+   "t": 8.61,
+   "lang": "el",
+   "say": "Δεν υπάρχει πρόβλημα!",
+   "who": "eleni"
+  },
+  {
+   "t": 10.38,
+   "lang": "el",
+   "say": "Θέλω να ακούσω ένα τουρκικό τραγούδι. Μπορώ;",
+   "who": "ayse"
+  },
+  {
+   "t": 13.64,
+   "lang": "el",
+   "say": "Εντάξει, αλλά εγώ προτιμώ να ακούσουμε ελληνική μουσική.",
+   "who": "nikos"
+  },
+  {
+   "t": 17.51,
+   "lang": "tr",
+   "say": "Üç arkadaş arabada. Beş kısa cümlede aynı küçük kelime dört kez geçti: να. Ve oturmak, dinlemek gibi bir biçim hiç yok. Her fiil kişiye göre çekilmiş.",
+   "who": "ada"
+  },
+  {
+   "t": 28.79,
+   "lang": "tr",
+   "say": "Ben de duydum. Να καθίσω, να ακούσω. Ama Yunancada dinlemek istiyorum nasıl deniyor, onu hâlâ bilmiyorum.",
+   "who": "mert"
+  },
+  {
+   "t": 36.38,
+   "lang": "tr",
+   "say": "Bugün tam bunu çözeceğiz.",
+   "who": "ada"
+  },
+  {
+   "t": 39.96,
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, on yedinci bölüm.",
+   "who": "ada"
+  },
+  {
+   "t": 45.02,
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "t": 50.3,
+   "lang": "tr",
+   "say": "Bugün eğlence var. Mert, hazır mısın?",
+   "who": "ada"
+  },
+  {
+   "t": 54.33,
+   "lang": "el",
+   "say": "Μερτ, θέλεις να πάμε σινεμά την Παρασκευή;",
+   "who": "ada"
+  },
+  {
+   "t": 57.88,
+   "lang": "el",
+   "say": "Θέλω! Τι ταινία παίζουν;",
+   "who": "mert"
+  },
+  {
+   "t": 60.61,
+   "lang": "tr",
+   "say": "Bak, bugünün cümlesini daha bölüm başlamadan kurdun. Bugün arkadaşlarla plan yapacaksın, izin isteyeceksin, rica edeceksin, bir de geç kalma, unutma diyeceksin.",
+   "who": "ada"
+  },
+  {
+   "t": 71.72,
+   "lang": "tr",
+   "say": "Stüdyoda Katerina da var. Örnek cümleleri o söyleyecek, sen de arkasından yüksek sesle söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 78.22,
+   "lang": "el",
+   "say": "Γεια σας! Θέλετε να πάμε σινεμά;",
+   "who": "katerina"
+  },
+  {
+   "t": 82.4,
+   "lang": "tr",
+   "say": "İlk sahne. Çarşamba akşamı. Ayşe, Nikos ve Eleni bir mesaj grubunda cuma akşamı için plan yapıyor. Bir şeye kulak ver: sonunda hangi filmi izleyecekler, saat kaçta?",
+   "who": "ada"
+  },
+  {
+   "t": 95.82,
+   "lang": "el",
+   "say": "Καλησπέρα, παρέα! Την Παρασκευή το βράδυ θέλω να δω μια ταινία στο θερινό σινεμά. Θέλετε να έρθετε;",
+   "who": "ayse"
+  },
+  {
+   "t": 102.35,
+   "lang": "el",
+   "say": "Ωραία ιδέα! Τι ταινία παίζουν;",
+   "who": "nikos"
+  },
+  {
+   "t": 104.96,
+   "lang": "el",
+   "say": "Μια γαλλική ταινία. Αρχίζει στις εννιά.",
+   "who": "ayse"
+  },
+  {
+   "t": 108.29,
+   "lang": "el",
+   "say": "Εγώ προτιμώ να δούμε μια ελληνική ταινία.",
+   "who": "eleni"
+  },
+  {
+   "t": 110.98,
+   "lang": "el",
+   "say": "Εντάξει. Στις δέκα παίζουν μια ελληνική ταινία. Να δούμε αυτή;",
+   "who": "ayse"
+  },
+  {
+   "t": 116.33,
+   "lang": "el",
+   "say": "Ναι, να δούμε αυτή. Πρέπει να κλείσουμε εισιτήρια;",
+   "who": "nikos"
+  },
+  {
+   "t": 119.69,
+   "lang": "el",
+   "say": "Όχι, μπορούμε να πάρουμε εισιτήρια στο ταμείο.",
+   "who": "ayse"
+  },
+  {
+   "t": 122.88,
+   "lang": "el",
+   "say": "Ωραία. Νίκο, μπορείς να με πάρεις από το σπίτι;",
+   "who": "eleni"
+  },
+  {
+   "t": 126.47,
+   "lang": "el",
+   "say": "Βεβαίως! Θα είμαι στο σπίτι σου στις εννιά και μισή.",
+   "who": "nikos"
+  },
+  {
+   "t": 129.88,
+   "lang": "el",
+   "say": "Ευχαριστώ! Να μην αργήσεις, εντάξει;",
+   "who": "eleni"
+  },
+  {
+   "t": 133.89,
+   "lang": "el",
+   "say": "Εντάξει, δε θα αργήσω.",
+   "who": "nikos"
+  },
+  {
+   "t": 135.94,
+   "lang": "tr",
+   "say": "Hangi film, saat kaçta? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 143.17,
+   "lang": "tr",
+   "say": "Fransız filmi, dokuzda. Αρχίζει στις εννιά dedi, duydum.",
+   "who": "mert"
+  },
+  {
+   "t": 147.6,
+   "lang": "tr",
+   "say": "Ayşe ilk önce onu önerdi, evet. Ama Eleni Yunan filmi istedi. Saat onda da bir Yunan filmi var, onu seçtiler: στις δέκα.",
+   "who": "ada"
+  },
+  {
+   "t": 156.3,
+   "lang": "tr",
+   "say": "Biletleri de gişeden alacaklar: στο ταμείο. Παρέα da arkadaş grubu demek.",
+   "who": "ada"
+  },
+  {
+   "t": 164.44,
+   "lang": "tr",
+   "say": "Cuma akşamı, Nikos'un arabası. Açılıştaki sahne, bu sefer yavaş. Dikkat et: Ayşe arabada ne dinlemek istiyor?",
+   "who": "ada"
+  },
+  {
+   "t": 174.13,
+   "lang": "el",
+   "say": "Νίκο, μπορώ να καθίσω μπροστά;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 176.77,
+   "lang": "el",
+   "say": "Βεβαίως. Ελένη, μπορείς να καθίσεις πίσω;",
+   "who": "nikos",
+   "speed": 0.85
+  },
+  {
+   "t": 180.59,
+   "lang": "el",
+   "say": "Θέλω να ακούσω ένα τουρκικό τραγούδι. Μπορώ;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 184.37,
+   "lang": "el",
+   "say": "Εντάξει, αλλά εγώ προτιμώ να ακούσουμε ελληνική μουσική.",
+   "who": "nikos",
+   "speed": 0.85
+  },
+  {
+   "t": 188.8,
+   "lang": "tr",
+   "say": "Ayşe ne dinlemek istiyor? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 195.77,
+   "lang": "tr",
+   "say": "Bir Türkçe şarkı: ένα τουρκικό τραγούδι. Ama Nikos'un aklı Yunan müziğinde.",
+   "who": "mert"
+  },
+  {
+   "t": 200.83,
+   "lang": "tr",
+   "say": "Doğru. Nikos tamam diyor, ama tercihini de söylüyor. Ayşe öne oturdu, μπροστά. Eleni arkaya, πίσω.",
+   "who": "ada"
+  },
+  {
+   "t": 212.35,
+   "lang": "tr",
+   "say": "Ada, açılıştaki soruya dönelim. Να δω, να έρθω. On beşinci derste θα δω, θα έρθω vardı. Bu να da gelecek zaman mı?",
+   "who": "mert"
+  },
+  {
+   "t": 222.3,
+   "lang": "tr",
+   "say": "Güzel yakaladın. Fiil biçimi tamamen aynı, sadece θα yerine να geliyor. Ama anlam değişiyor. Θα, -ecek demek. Να değil. Katerina, ikisini art arda söyler misin?",
+   "who": "ada"
+  },
+  {
+   "t": 239.33,
+   "lang": "el",
+   "say": "θα πάω, θα έρθω, θα δω",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 242.09,
+   "lang": "el",
+   "say": "να πάω, να έρθω, να δω",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 247.56,
+   "lang": "tr",
+   "say": "Peki gitmek nerede? Gitmek istiyorum demek için gitmek lazım.",
+   "who": "mert"
+  },
+  {
+   "t": 252.0,
+   "lang": "tr",
+   "say": "İşte bugünün en önemli noktası. Yunancada mastar yok. Gitmek, izlemek, dinlemek diye bir biçim yok. İkinci fiil de kişiye göre çekilir. Kelimesi kelimesine şöyle: istiyorum ki gideyim.",
+   "who": "ada"
+  },
+  {
+   "t": 265.54,
+   "lang": "el",
+   "say": "Θέλω να πάω.",
+   "who": "katerina"
+  },
+  {
+   "t": 269.24,
+   "lang": "tr",
+   "say": "Ama Türkçede bu işi yapan ekler var. Gidelim, gelsin, göreyim. Yunancada aynı işi να yapar: gidelim, να πάμε. Gelsin, να έρθει.",
+   "who": "ada"
+  },
+  {
+   "t": 280.81,
+   "lang": "tr",
+   "say": "O zaman Ayşe'nin να δούμε αυτή'sı da izleyelim mi demek.",
+   "who": "mert"
+  },
+  {
+   "t": 285.05,
+   "lang": "tr",
+   "say": "Aynen. Önünde başka fiil yoksa, να bir öneri ya da ricadır. Bir örnek daha:",
+   "who": "ada"
+  },
+  {
+   "t": 292.57,
+   "lang": "el",
+   "say": "Να πάμε σε μια παράσταση το Σάββατο;",
+   "who": "katerina"
+  },
+  {
+   "t": 299.4,
+   "lang": "tr",
+   "say": "Παράσταση ne?",
+   "who": "mert"
+  },
+  {
+   "t": 301.08,
+   "lang": "tr",
+   "say": "Gösteri. Bir tiyatro oyunu mesela. Να'dan önce en sık gelen fiiller de sahnelerdeydi: θέλω, μπορώ, πρέπει, προτιμώ.",
+   "who": "ada"
+  },
+  {
+   "t": 311.73,
+   "lang": "tr",
+   "say": "Harika. Bir incelik var. Bu akşam, cuma günü gibi tek bir olay için, gelecek zamandaki biçim gelir. Ama her gün tekrarlanan bir alışkanlık için şimdiki zamanın biçimi gelir. Dinle:",
+   "who": "ada"
+  },
+  {
+   "t": 324.55,
+   "lang": "el",
+   "say": "Πρέπει να φύγω στις εννιά.",
+   "who": "katerina"
+  },
+  {
+   "t": 326.37,
+   "lang": "el",
+   "say": "Κάθε μέρα πρέπει να ξυπνάω στις επτά.",
+   "who": "katerina"
+  },
+  {
+   "t": 333.04,
+   "lang": "tr",
+   "say": "Bir seferlik dokuzda çıkmam lazım, ama her gün yedide kalkmam lazım. Ξυπνάω tanıdık geliyor, şimdiki zaman.",
+   "who": "mert"
+  },
+  {
+   "t": 340.27,
+   "lang": "tr",
+   "say": "Evet. Bilmek fiilinden sonra da şimdiki biçim gelir. Hadi, Yunanca:",
+   "who": "ada"
+  },
+  {
+   "t": 347.1,
+   "lang": "el",
+   "say": "Μερτ, ξέρεις να οδηγείς;",
+   "who": "ada"
+  },
+  {
+   "t": 349.7,
+   "lang": "el",
+   "say": "Ναι, ξέρω να οδηγώ. Αλλά δε μου αρέσει.",
+   "who": "mert"
+  },
+  {
+   "t": 355.26,
+   "lang": "tr",
+   "say": "Bir şey daha yakaladım. Ayşe θέλετε να έρθετε dedi. İki fiil de siz.",
+   "who": "mert"
+  },
+  {
+   "t": 361.03,
+   "lang": "tr",
+   "say": "Çünkü isteyen de siz, gelecek olan da siz. Ama Türkçede gelmeni istiyorum dersin. İsteyen ben, gelen sen. Yunancada ikinci fiil, gelecek kişiye göre çekilir. Farkı dinle:",
+   "who": "ada"
+  },
+  {
+   "t": 374.74,
+   "lang": "el",
+   "say": "Θέλω να έρθω.",
+   "who": "katerina"
+  },
+  {
+   "t": 376.11,
+   "lang": "el",
+   "say": "Θέλω να έρθεις.",
+   "who": "katerina"
+  },
+  {
+   "t": 380.33,
+   "lang": "tr",
+   "say": "Sadece son değişiyor: έρθω, έρθεις. Eleni de öyle yaptı: προτιμώ να δούμε. Tercih eden o, izleyecek olan biz. Türkçesi: izlememizi tercih ederim.",
+   "who": "ada"
+  },
+  {
+   "t": 393.55,
+   "lang": "tr",
+   "say": "Eleni'nin bir cümlesinde bir de με vardı. Μπορείς να με πάρεις.",
+   "who": "mert"
+  },
+  {
+   "t": 398.66,
+   "lang": "tr",
+   "say": "On altıncı dersin küçük kelimeleri: με beni, σε seni. Να ile fiilin arasına girer. Bir de şunu fark et: aynı fiil, hem bilet almak, hem birini arabayla almak. Türkçede de seni evden alırım deriz.",
+   "who": "ada"
+  },
+  {
+   "t": 416.11,
+   "lang": "el",
+   "say": "Μπορείς να με πάρεις από το σπίτι;",
+   "who": "katerina"
+  },
+  {
+   "t": 418.48,
+   "lang": "el",
+   "say": "Θέλεις να σε πάρω από το σπίτι;",
+   "who": "katerina"
+  },
+  {
+   "t": 425.65,
+   "lang": "tr",
+   "say": "Peki şu kısım ne? Eleni να μην αργήσεις dedi, Nikos da δε θα αργήσω. Değil kelimesi neden değişti?",
+   "who": "mert"
+  },
+  {
+   "t": 434.05,
+   "lang": "tr",
+   "say": "Çok iyi soru. Θα'dan sonra bildiğin δεν kalır. Ama να'dan sonra δεν gelmez, μην gelir. Geç kalma:",
+   "who": "ada"
+  },
+  {
+   "t": 448.6,
+   "lang": "el",
+   "say": "Να μην αργήσεις!",
+   "who": "katerina"
+  },
+  {
+   "t": 453.01,
+   "lang": "tr",
+   "say": "Να'yı atarsan kısa bir uyarı olur. Bir arkadaşa söylenecek en kullanışlı cümlelerden biri:",
+   "who": "ada"
+  },
+  {
+   "t": 460.51,
+   "lang": "el",
+   "say": "Μην ξεχάσεις τα εισιτήρια!",
+   "who": "katerina"
+  },
+  {
+   "t": 465.34,
+   "lang": "tr",
+   "say": "Sondaki n sesi, δεν ve την'deki kuralı izler. Bazı ünsüzlerden önce düşer. Mesela gitme derken: μη φύγεις.",
+   "who": "ada"
+  },
+  {
+   "t": 477.88,
+   "lang": "tr",
+   "say": "Bir de arabada Eleni δεν πρέπει να αργήσουμε dedi. Bu, geç kalmamıza gerek yok mu demek?",
+   "who": "mert"
+  },
+  {
+   "t": 484.14,
+   "lang": "tr",
+   "say": "Dikkat, tam tersi! Δεν πρέπει: geç kalmamalıyız. Bir yasak gibi. Gerek yok demek değil.",
+   "who": "ada"
+  },
+  {
+   "t": 492.44,
+   "lang": "el",
+   "say": "Δεν πρέπει να αργήσουμε.",
+   "who": "katerina"
+  },
+  {
+   "t": 496.89,
+   "lang": "tr",
+   "say": "Yapamam derken de δεν birinci fiilin önüne gelir. Gelemem: δεν μπορώ να έρθω. Να μην ise rica ve uyarı için.",
+   "who": "ada"
+  },
+  {
+   "t": 508.92,
+   "lang": "tr",
+   "say": "Şimdi sıra sende. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert deneyecek, en son Katerina doğrusunu söyleyecek. Birincisi: arkadaşlarına gelmek ister misiniz diye sor.",
+   "who": "ada"
+  },
+  {
+   "t": 526.08,
+   "lang": "el",
+   "say": "Θέλετε να έρθετε;",
+   "who": "mert"
+  },
+  {
+   "t": 527.48,
+   "lang": "el",
+   "say": "Θέλετε να έρθετε;",
+   "who": "katerina"
+  },
+  {
+   "t": 531.63,
+   "lang": "tr",
+   "say": "Bir arkadaşından seni evden almasını rica et.",
+   "who": "ada"
+  },
+  {
+   "t": 539.86,
+   "lang": "el",
+   "say": "Μπορείς να με πάρω από το σπίτι;",
+   "who": "mert"
+  },
+  {
+   "t": 542.32,
+   "lang": "tr",
+   "say": "Kim alacak, Mert? Sen mi kendini?",
+   "who": "ada"
+  },
+  {
+   "t": 545.11,
+   "lang": "tr",
+   "say": "Ah, doğru. O alacak, o zaman πάρεις.",
+   "who": "mert"
+  },
+  {
+   "t": 549.07,
+   "lang": "el",
+   "say": "Μπορείς να με πάρεις από το σπίτι;",
+   "who": "katerina"
+  },
+  {
+   "t": 554.95,
+   "lang": "tr",
+   "say": "Arkadaşına biletleri unutma de.",
+   "who": "ada"
+  },
+  {
+   "t": 561.08,
+   "lang": "el",
+   "say": "Μην ξεχάσεις τα εισιτήρια!",
+   "who": "mert"
+  },
+  {
+   "t": 562.8,
+   "lang": "el",
+   "say": "Μην ξεχάσεις τα εισιτήρια!",
+   "who": "katerina"
+  },
+  {
+   "t": 567.8,
+   "lang": "tr",
+   "say": "Son olarak: geç kalmamalıyız, film onda başlıyor.",
+   "who": "ada"
+  },
+  {
+   "t": 576.89,
+   "lang": "el",
+   "say": "Δεν πρέπει να αργήσουμε! Η ταινία αρχίζει στις δέκα.",
+   "who": "mert"
+  },
+  {
+   "t": 580.48,
+   "lang": "el",
+   "say": "Δεν πρέπει να αργήσουμε! Η ταινία αρχίζει στις δέκα.",
+   "who": "katerina"
+  },
+  {
+   "t": 592.45,
+   "lang": "tr",
+   "say": "Mert, şimdi hızlı ol. Düşünmeden: dokuzda çıkmamız lazım.",
+   "who": "ada"
+  },
+  {
+   "t": 597.67,
+   "lang": "el",
+   "say": "Πρέπουμε να φύγουμε στις εννιά.",
+   "who": "mert"
+  },
+  {
+   "t": 599.85,
+   "lang": "tr",
+   "say": "Πρέπουμε mi? Öyle bir kelime yok.",
+   "who": "ada"
+  },
+  {
+   "t": 603.69,
+   "lang": "tr",
+   "say": "Ama biz dedim. Türkçede de çıkmalıyız, sonunda biz eki var. Tembellik değil, mantık!",
+   "who": "mert"
+  },
+  {
+   "t": 609.96,
+   "lang": "tr",
+   "say": "Mantıklı, ama πρέπει hiç değişmez. Ben de, sen de, biz de πρέπει. Kişiyi ikinci fiil söyler: φύγουμε zaten biz demek.",
+   "who": "ada"
+  },
+  {
+   "t": 622.2,
+   "lang": "tr",
+   "say": "Türkçe konuşanların en sık yaptığı hatalardan biri bu. Doğrusunu Katerina'dan dinle ve tekrar et:",
+   "who": "ada"
+  },
+  {
+   "t": 628.74,
+   "lang": "el",
+   "say": "Πρέπει να φύγουμε στις εννιά.",
+   "who": "katerina"
+  },
+  {
+   "t": 635.71,
+   "lang": "tr",
+   "say": "Şimdi küçük bir oyun. Ben Yunanca bir rica söyleyeceğim, sen istediğim gibi cevap ver, sonra Mert cevap verecek. Birincisi: Μπορώ να καθίσω μπροστά; Evet de, tabii.",
+   "who": "ada"
+  },
+  {
+   "t": 651.8,
+   "lang": "el",
+   "say": "Βεβαίως!",
+   "who": "mert"
+  },
+  {
+   "t": 653.36,
+   "lang": "tr",
+   "say": "Doğru. Δεν υπάρχει πρόβλημα da olurdu: sorun değil. İkincisi: Μπορείς να έρθεις νωρίς; Kibarca hayır de: kusura bakma, ama bugün olmaz.",
+   "who": "ada"
+  },
+  {
+   "t": 668.32,
+   "lang": "el",
+   "say": "Δεν μπορώ.",
+   "who": "mert"
+  },
+  {
+   "t": 669.74,
+   "lang": "tr",
+   "say": "Yapamam. Olur, ama biraz sert. Daha kibarı var:",
+   "who": "ada"
+  },
+  {
+   "t": 674.61,
+   "lang": "el",
+   "say": "Συγγνώμη, αλλά όχι σήμερα.",
+   "who": "katerina"
+  },
+  {
+   "t": 679.76,
+   "lang": "tr",
+   "say": "İkinci tur: nereden geldiği. Ben bir isim söyleyeceğim, sen ona Yunan, Türk ya da Fransız sıfatını ekle. Sıfat ismin cinsine uyar. Το τραγούδι, Türk.",
+   "who": "ada"
+  },
+  {
+   "t": 694.55,
+   "lang": "el",
+   "say": "το τουρκική τραγούδι",
+   "who": "mert"
+  },
+  {
+   "t": 696.44,
+   "lang": "tr",
+   "say": "Şarkı nötr, Mert. Sıfat da nötr olmalı.",
+   "who": "ada"
+  },
+  {
+   "t": 702.34,
+   "lang": "tr",
+   "say": "Ah, o zaman sonu o.",
+   "who": "mert"
+  },
+  {
+   "t": 704.16,
+   "lang": "el",
+   "say": "το τουρκικό τραγούδι",
+   "who": "katerina"
+  },
+  {
+   "t": 708.35,
+   "lang": "tr",
+   "say": "Son olarak ο καφές, Yunan.",
+   "who": "ada"
+  },
+  {
+   "t": 715.65,
+   "lang": "el",
+   "say": "ο ελληνικός καφές",
+   "who": "mert"
+  },
+  {
+   "t": 717.51,
+   "lang": "tr",
+   "say": "Bu bizim Türk kahvesi değil mi?",
+   "who": "mert"
+  },
+  {
+   "t": 719.61,
+   "lang": "tr",
+   "say": "Aynı kahve. Yunanistan'da genelde ελληνικός καφές denir. Konuşmada τούρκικος καφές da duyabilirsin. Dikkat, orada vurgu başa kayar.",
+   "who": "ada"
+  },
+  {
+   "t": 732.98,
+   "lang": "tr",
+   "say": "Şimdi arabadaki konuşma bir kez daha, normal hızda. Bu sefer her kelimeyi anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "t": 740.2,
+   "lang": "el",
+   "say": "Νίκο, μπορώ να καθίσω μπροστά;",
+   "who": "ayse"
+  },
+  {
+   "t": 742.49,
+   "lang": "el",
+   "say": "Βεβαίως. Ελένη, μπορείς να καθίσεις πίσω;",
+   "who": "nikos"
+  },
+  {
+   "t": 745.8,
+   "lang": "el",
+   "say": "Δεν υπάρχει πρόβλημα!",
+   "who": "eleni"
+  },
+  {
+   "t": 747.58,
+   "lang": "el",
+   "say": "Θέλω να ακούσω ένα τουρκικό τραγούδι. Μπορώ;",
+   "who": "ayse"
+  },
+  {
+   "t": 750.84,
+   "lang": "el",
+   "say": "Εντάξει, αλλά εγώ προτιμώ να ακούσουμε ελληνική μουσική.",
+   "who": "nikos"
+  },
+  {
+   "t": 754.4,
+   "lang": "el",
+   "say": "Νίκο, δεν πρέπει να αργήσουμε! Η ταινία αρχίζει στις δέκα.",
+   "who": "eleni"
+  },
+  {
+   "t": 758.96,
+   "lang": "el",
+   "say": "Δε θα αργήσουμε.",
+   "who": "nikos"
+  },
+  {
+   "t": 760.49,
+   "lang": "tr",
+   "say": "Gerçekten hepsini anladım. Μπορώ να, μπορείς να, προτιμώ να, δεν πρέπει να. Hepsi yerli yerinde.",
+   "who": "mert"
+  },
+  {
+   "t": 768.72,
+   "lang": "tr",
+   "say": "Köşemiz: θερινό σινεμά. Θερινό, yaz demek olan eski bir kelimeden gelir: θέρος. Yani yazlık sinema.",
+   "who": "ada"
+  },
+  {
+   "t": 777.94,
+   "lang": "tr",
+   "say": "Yunanistan'da yaz akşamlarının en sevilen eğlencelerinden biri. Film hava karardıktan sonra başlar. Atina'da bazılarından Akropolis bile görünür.",
+   "who": "ada"
+  },
+  {
+   "t": 788.01,
+   "lang": "tr",
+   "say": "Peki σινεμά? Bu Fransızca gibi.",
+   "who": "mert"
+  },
+  {
+   "t": 790.98,
+   "lang": "tr",
+   "say": "Fransızcadan geldi, Türkçedeki sinema gibi. Ama Fransızca kelime, sinematograf adlı aletin kısaltması. O ad da iki Yunanca kökten yapılmış: κίνημα, hareket, ve γράφω, yazıyorum.",
+   "who": "ada"
+  },
+  {
+   "t": 806.42,
+   "lang": "tr",
+   "say": "Hareketi yazan alet. Yani kelime Yunanistan'dan çıkmış, Fransa'yı gezmiş, sonra eve dönmüş.",
+   "who": "mert"
+  },
+  {
+   "t": 815.27,
+   "lang": "tr",
+   "say": "Gelecek bölüm bir tekrar bölümü. Bir arkadaşın Atina'ya geliyor. Nerede kalacak, birlikte ne yapacaksınız, ne giymeli?",
+   "who": "ada"
+  },
+  {
+   "t": 823.6,
+   "lang": "tr",
+   "say": "Yeni bir şey yok. On üçten on yediye kadar ne öğrendiysen bir arada, θα ile να yan yana. Bu arada bölümü uygulamada oku, alıştırmaları yap. Şimdi son söz Katerina'nın: bugünün hikâyesi, sadece Yunanca. Sadece dinle. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "t": 842.65,
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "t": 845.3,
+   "lang": "el",
+   "say": "Είναι Τετάρτη βράδυ.",
+   "who": "katerina"
+  },
+  {
+   "t": 846.88,
+   "lang": "el",
+   "say": "Η Αϊσέ θέλει να δει μια ταινία στο θερινό σινεμά.",
+   "who": "katerina"
+  },
+  {
+   "t": 850.71,
+   "lang": "el",
+   "say": "Γράφει στην παρέα της: «Θέλετε να έρθετε;»",
+   "who": "katerina"
+  },
+  {
+   "t": 853.98,
+   "lang": "el",
+   "say": "Ο Νίκος και η Ελένη θέλουν να έρθουν.",
+   "who": "katerina"
+  },
+  {
+   "t": 856.42,
+   "lang": "el",
+   "say": "Η Ελένη προτιμά να δουν μια ελληνική ταινία.",
+   "who": "katerina"
+  },
+  {
+   "t": 859.42,
+   "lang": "el",
+   "say": "Η ελληνική ταινία αρχίζει στις δέκα.",
+   "who": "katerina"
+  },
+  {
+   "t": 862.16,
+   "lang": "el",
+   "say": "Ο Νίκος θα πάρει την Ελένη από το σπίτι της στις εννιά και μισή.",
+   "who": "katerina"
+  },
+  {
+   "t": 865.98,
+   "lang": "el",
+   "say": "Η Ελένη του λέει: «Να μην αργήσεις!»",
+   "who": "katerina"
+  },
+  {
+   "t": 868.88,
+   "lang": "el",
+   "say": "Η Αϊσέ κάθεται μπροστά. Η Ελένη κάθεται πίσω.",
+   "who": "katerina"
+  },
+  {
+   "t": 872.73,
+   "lang": "el",
+   "say": "Η Αϊσέ θέλει να ακούσει ένα τουρκικό τραγούδι.",
+   "who": "katerina"
+  },
+  {
+   "t": 875.94,
+   "lang": "el",
+   "say": "Ο Νίκος προτιμά να ακούσουν ελληνική μουσική.",
+   "who": "katerina"
+  },
+  {
+   "t": 878.97,
+   "lang": "el",
+   "say": "Η Ελένη λέει: «Νίκο, δεν πρέπει να αργήσουμε!»",
+   "who": "katerina"
+  },
+  {
+   "t": 882.58,
+   "lang": "el",
+   "say": "Αλλά ο Νίκος δεν αργεί.",
+   "who": "katerina"
+  },
+  {
+   "t": 884.48,
+   "lang": "el",
+   "say": "Στις δέκα η παρέα είναι στο θερινό σινεμά.",
+   "who": "katerina"
+  },
+  {
+   "t": 887.39,
+   "lang": "el",
+   "say": "Παίρνουν εισιτήρια στο ταμείο, και η ελληνική ταινία αρχίζει.",
+   "who": "katerina"
+  },
+  {
+   "t": 891.68,
+   "lang": "el",
+   "say": "Η Αϊσέ δεν καταλαβαίνει όλες τις λέξεις, αλλά η ταινία της αρέσει πολύ.",
+   "who": "katerina"
+  },
+  {
+   "t": 896.81,
+   "lang": "el",
+   "say": "Μετά την ταινία η Ελένη λέει: «Να πάμε σε μια συναυλία το Σάββατο;»",
+   "who": "katerina"
+  },
+  {
+   "t": 901.62,
+   "lang": "el",
+   "say": "Και η Αϊσέ: «Ναι! Αλλά μην αργήσετε!»",
+   "who": "katerina"
+  },
+  {
+   "t": 905.46,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ],
+ "cast": {
+  "ayse": {
+   "name": "Αϊσέ",
+   "voice": "Achernar"
+  },
+  "nikos": {
+   "name": "Νίκος",
+   "voice": "Rasalgethi"
+  },
+  "eleni": {
+   "name": "Ελένη",
+   "voice": "Callirrhoe"
+  },
+  "ada": {
+   "name": "Ada",
+   "voice": "Sulafat"
+  },
+  "mert": {
+   "name": "Mert",
+   "voice": "Umbriel"
+  },
+  "katerina": {
+   "name": "Κατερίνα",
+   "voice": "Gacrux"
+  }
+ },
+ "sounds": true
+}

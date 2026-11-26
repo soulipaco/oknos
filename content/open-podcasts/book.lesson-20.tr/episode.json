@@ -1,0 +1,1039 @@
+{
+ "id": "book.lesson-20.tr",
+ "kind": "chapter",
+ "lang": "tr",
+ "title": {
+  "tr": "Bana mı, benim mi? Postanede, telefon mağazasında, bankada",
+  "en": "To me or mine? At the post office, the phone shop and the bank"
+ },
+ "curriculum": "oknos-book",
+ "stage": "lesson-20",
+ "version": 3,
+ "written": "2026-11-26",
+ "date": null,
+ "rendered": "2026-11-26T13:46:33",
+ "seconds": 900.2,
+ "script": "1cc104c88418",
+ "parts": [
+  {
+   "t": 3.0,
+   "title": "Açılış"
+  },
+  {
+   "t": 37.86,
+   "title": "Hoş geldin"
+  },
+  {
+   "t": 76.76,
+   "title": "Postanede, yavaşça"
+  },
+  {
+   "t": 165.36,
+   "title": "Telefon mağazasında"
+  },
+  {
+   "t": 217.58,
+   "title": "Bankada"
+  },
+  {
+   "t": 284.28,
+   "title": "Bana mı, benim mi?"
+  },
+  {
+   "t": 367.67,
+   "title": "Seni mi, sana mı?"
+  },
+  {
+   "t": 427.34,
+   "title": "Size onu"
+  },
+  {
+   "t": 493.16,
+   "title": "Bankanın dişil kelimeleri"
+  },
+  {
+   "t": 520.14,
+   "title": "Sıra sende"
+  },
+  {
+   "t": 607.96,
+   "title": "Mert'in hatası"
+  },
+  {
+   "t": 643.08,
+   "title": "Oyun: kime?"
+  },
+  {
+   "t": 716.84,
+   "title": "Sahne yeniden"
+  },
+  {
+   "t": 773.14,
+   "title": "Kelime köşesi: hızlı koşan"
+  },
+  {
+   "t": 808.45,
+   "title": "Gelecek bölüm"
+  },
+  {
+   "t": 835.5,
+   "title": "Katerina anlatıyor"
+  }
+ ],
+ "lines": [
+  {
+   "t": 3.0,
+   "lang": "el",
+   "say": "Καλημέρα. Θα ήθελα να ανοίξω λογαριασμό. Έχω μαζί μου το διαβατήριο και τον ΑΦΜ μου.",
+   "who": "ayse"
+  },
+  {
+   "t": 10.5,
+   "lang": "el",
+   "say": "Μου τα δίνετε; Χρειάζομαι και τη διεύθυνσή σας.",
+   "who": "bank-clerk"
+  },
+  {
+   "t": 14.42,
+   "lang": "tr",
+   "say": "Onları bana verir misiniz? Türkçede bana bir ek. Yunancada ise fiilin önünde duran küçük kelimeler.",
+   "who": "ada"
+  },
+  {
+   "t": 22.94,
+   "lang": "tr",
+   "say": "Μου'yu tanıyorum ama. Τον ΑΦΜ μου: benim vergi numaram. Ama μου τα δίνετε'de benim değil, bana gibi duruyor. Aynı kelime iki iş mi yapıyor?",
+   "who": "mert"
+  },
+  {
+   "t": 34.29,
+   "lang": "tr",
+   "say": "Bugün tam bunu çözeceğiz.",
+   "who": "ada"
+  },
+  {
+   "t": 37.86,
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, yirminci bölüm.",
+   "who": "ada"
+  },
+  {
+   "t": 43.67,
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "t": 48.96,
+   "lang": "tr",
+   "say": "Bugün resmî işler var: bir postane, bir telefon mağazası, bir banka. Üçünde de biri birine bir şey veriyor.",
+   "who": "ada"
+  },
+  {
+   "t": 56.86,
+   "lang": "el",
+   "say": "Μερτ, μου δίνεις το κινητό σου;",
+   "who": "ada"
+  },
+  {
+   "t": 59.94,
+   "lang": "el",
+   "say": "Όχι, δε σου το δίνω!",
+   "who": "mert"
+  },
+  {
+   "t": 61.87,
+   "lang": "tr",
+   "say": "Bölümün en zor cümlesi, daha baştan. Sonunda sen de kuracaksın. Stüdyoda Katerina da var. Örnek cümleleri o söyleyecek, sen de arkasından yüksek sesle söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 73.06,
+   "lang": "el",
+   "say": "Γεια σας! Πάμε;",
+   "who": "katerina"
+  },
+  {
+   "t": 76.76,
+   "lang": "tr",
+   "say": "İlk sahne, biraz yavaş. Ayşe İzmir'deki annesine bir koli gönderiyor. Türkiye AB dışında, bu yüzden bir de gümrük beyannamesi gerekiyor: η δήλωση. Dinle: Ayşe hangisini seçiyor, kaç euro?",
+   "who": "ada"
+  },
+  {
+   "t": 91.37,
+   "lang": "el",
+   "say": "Καλημέρα σας. Θέλω να στείλω αυτό το δέμα στη Σμύρνη, στη μητέρα μου.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 96.83,
+   "lang": "el",
+   "say": "Στην Τουρκία; Τότε χρειάζεται και μια δήλωση για το τελωνείο. Τι έχει μέσα;",
+   "who": "post-clerk",
+   "speed": 0.85
+  },
+  {
+   "t": 103.5,
+   "lang": "el",
+   "say": "Βιβλία και ένα δώρο για τα γενέθλιά της.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 107.06,
+   "lang": "el",
+   "say": "Μου τα γράφετε εδώ, στη δήλωση;",
+   "who": "post-clerk",
+   "speed": 0.85
+  },
+  {
+   "t": 109.84,
+   "lang": "el",
+   "say": "Βέβαια. Πότε θα φτάσει;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 112.75,
+   "lang": "el",
+   "say": "Συστημένο, σε μια εβδομάδα: δεκαπέντε ευρώ. Με κούριερ, σε δύο μέρες, αλλά κάνει τριάντα.",
+   "who": "post-clerk",
+   "speed": 0.85
+  },
+  {
+   "t": 121.33,
+   "lang": "el",
+   "say": "Συστημένο, παρακαλώ. Έχω και ένα γράμμα, σε φάκελο. Θέλει γραμματόσημο;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 128.68,
+   "lang": "el",
+   "say": "Όχι, πάει μέσα στο δέμα. Ορίστε η απόδειξη.",
+   "who": "post-clerk",
+   "speed": 0.85
+  },
+  {
+   "t": 134.0,
+   "lang": "el",
+   "say": "Ευχαριστώ! Θα της τηλεφωνήσω το βράδυ.",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 138.03,
+   "lang": "tr",
+   "say": "Hangisi, kaç euro? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 145.9,
+   "lang": "tr",
+   "say": "Otuz euro!",
+   "who": "mert"
+  },
+  {
+   "t": 147.2,
+   "lang": "tr",
+   "say": "O kurye, iki günde. Ayşe taahhütlüyü seçti: συστημένο, bir haftada, δεκαπέντε ευρώ. Sınavın dinleme bölümünde tam bu tuzak var: seçeneklerde öbür sayılar da olur. Konuşan hangisini seçiyor, soruyu önceden oku.",
+   "who": "ada"
+  },
+  {
+   "t": 165.36,
+   "lang": "tr",
+   "say": "İkinci sahne. Postaneden sonra Ayşe bir telefon mağazasında paket istiyor. Kulak ver: sözleşme kaç yıllık?",
+   "who": "ada"
+  },
+  {
+   "t": 173.24,
+   "lang": "el",
+   "say": "Γεια σας! Παρακαλώ;",
+   "who": "phone-clerk"
+  },
+  {
+   "t": 175.5,
+   "lang": "el",
+   "say": "Γεια σας. Θέλω ένα πακέτο με πολλά δεδομένα για το κινητό μου.",
+   "who": "ayse"
+  },
+  {
+   "t": 179.94,
+   "lang": "el",
+   "say": "Με συμβόλαιο είκοσι ευρώ τον μήνα, χωρίς συμβόλαιο τριάντα.",
+   "who": "phone-clerk"
+  },
+  {
+   "t": 184.13,
+   "lang": "el",
+   "say": "Με συμβόλαιο, παρακαλώ. Για έναν χρόνο;",
+   "who": "ayse"
+  },
+  {
+   "t": 187.53,
+   "lang": "el",
+   "say": "Ναι. Σας δίνω το συμβόλαιο να το διαβάσετε.",
+   "who": "phone-clerk"
+  },
+  {
+   "t": 191.67,
+   "lang": "el",
+   "say": "Ευχαριστώ. Μου το στέλνετε και με email;",
+   "who": "ayse"
+  },
+  {
+   "t": 194.96,
+   "lang": "el",
+   "say": "Βέβαια, σας το στέλνω τώρα.",
+   "who": "phone-clerk"
+  },
+  {
+   "t": 197.19,
+   "lang": "tr",
+   "say": "Kaç yıl? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 203.31,
+   "lang": "tr",
+   "say": "İki yıl galiba?",
+   "who": "mert"
+  },
+  {
+   "t": 204.7,
+   "lang": "tr",
+   "say": "Bir yıl: για έναν χρόνο. Paket ayda yirmi euro, içinde bol δεδομένα var, yani internet verisi. Bu anlamda kelime hep çoğul.",
+   "who": "ada"
+  },
+  {
+   "t": 217.58,
+   "lang": "tr",
+   "say": "Üçüncü sahne. Ayşe bankada hesap açıyor. Restorandaki hesap kelimesini duyacaksın: ο λογαριασμός. Banka hesabı da demek. Dinle: Ayşe kartını nasıl alacak?",
+   "who": "ada"
+  },
+  {
+   "t": 230.02,
+   "lang": "el",
+   "say": "Καλημέρα. Θα ήθελα να ανοίξω λογαριασμό. Έχω μαζί μου το διαβατήριο και τον ΑΦΜ μου.",
+   "who": "ayse"
+  },
+  {
+   "t": 237.52,
+   "lang": "el",
+   "say": "Μου τα δίνετε; Χρειάζομαι και τη διεύθυνσή σας.",
+   "who": "bank-clerk"
+  },
+  {
+   "t": 241.14,
+   "lang": "el",
+   "say": "Μένω στην Καλλιθέα. Σας τη γράφω εδώ;",
+   "who": "ayse"
+  },
+  {
+   "t": 244.41,
+   "lang": "el",
+   "say": "Ναι, στην αίτηση, με την υπογραφή σας.",
+   "who": "bank-clerk"
+  },
+  {
+   "t": 247.22,
+   "lang": "el",
+   "say": "Πότε θα έχω κάρτα;",
+   "who": "ayse"
+  },
+  {
+   "t": 248.91,
+   "lang": "el",
+   "say": "Θα σας τη στείλουμε στο σπίτι. Ο ΙΒΑΝ σας είναι εδώ, στην απόδειξη.",
+   "who": "bank-clerk"
+  },
+  {
+   "t": 254.19,
+   "lang": "el",
+   "say": "Ευχαριστώ. Έχω και εκατό ευρώ για τον λογαριασμό.",
+   "who": "ayse"
+  },
+  {
+   "t": 258.08,
+   "lang": "el",
+   "say": "Για την κατάθεση, το ταμείο είναι εκεί.",
+   "who": "bank-clerk"
+  },
+  {
+   "t": 261.36,
+   "lang": "tr",
+   "say": "Kart nasıl gelecek? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 268.29,
+   "lang": "tr",
+   "say": "Bankadan alacak, değil mi?",
+   "who": "mert"
+  },
+  {
+   "t": 270.11,
+   "lang": "tr",
+   "say": "Memur ne dedi? Θα σας τη στείλουμε στο σπίτι. Kartı eve gönderecekler.",
+   "who": "ada"
+  },
+  {
+   "t": 275.61,
+   "lang": "tr",
+   "say": "O θα σας τη kısmı çok hızlıydı.",
+   "who": "mert"
+  },
+  {
+   "t": 278.26,
+   "lang": "tr",
+   "say": "Orada iki küçük kelime yan yana. Birazdan ona da geleceğiz.",
+   "who": "ada"
+  },
+  {
+   "t": 284.28,
+   "lang": "tr",
+   "say": "Ada, açılıştaki soruya dönelim. Μου hem benim, hem bana mı?",
+   "who": "mert"
+  },
+  {
+   "t": 289.09,
+   "lang": "tr",
+   "say": "Evet, aynı kelime. İsimden sonra gelirse benim: το διαβατήριό μου. Fiilden önce gelirse bana: μου δίνετε. Türkçe bana derken ek koyar, Yunanca fiilin önüne küçük bir kelime. Yedi tane var. Katerina, sırayla söyler misin? Yavaşça.",
+   "who": "ada"
+  },
+  {
+   "t": 308.36,
+   "lang": "el",
+   "say": "μου, σου, του, της, μας, σας, τους",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 314.86,
+   "lang": "tr",
+   "say": "Bana, sana, ona, ona, bize, size, onlara. İki tane ona var, fark ettin mi?",
+   "who": "ada"
+  },
+  {
+   "t": 320.56,
+   "lang": "tr",
+   "say": "Του ve της. Biri erkek, biri kadın mı?",
+   "who": "mert"
+  },
+  {
+   "t": 323.53,
+   "lang": "tr",
+   "say": "Aynen. Türkçe tek bir ona der, Yunanca cinsiyete bakar. Erkeğe ve nötre του, kadına της. Onlara derken hepsi τους. Şimdi postanedeki son cümle. Ayşe akşam telefon edecek. Kime, ve hangi küçük kelimeyle?",
+   "who": "ada"
+  },
+  {
+   "t": 345.0,
+   "lang": "tr",
+   "say": "Annesine. Anne kadın, o zaman της.",
+   "who": "mert"
+  },
+  {
+   "t": 348.65,
+   "lang": "el",
+   "say": "Θα της τηλεφωνήσω το βράδυ.",
+   "who": "katerina"
+  },
+  {
+   "t": 353.92,
+   "lang": "tr",
+   "say": "Θα'dan sonra bile küçük kelime fiilin hemen önünde. Bir de mağazada ve bankada memurlar σας dedi: resmî yerde size. Arkadaşa sana: σου.",
+   "who": "ada"
+  },
+  {
+   "t": 367.67,
+   "lang": "tr",
+   "say": "Ama on altıncı derste de küçük kelimeler vardı. Σε, seni demekti: σε βλέπω. Şimdi sana σου. Hangisi ne zaman?",
+   "who": "mert"
+  },
+  {
+   "t": 376.26,
+   "lang": "tr",
+   "say": "Fiile bak. Seni görüyorum, seni bekliyorum: kimi sorusu. Sana veriyorum, sana gönderiyorum, sana söylüyorum: kime sorusu. Türkçeyle aynı mantık. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 387.85,
+   "lang": "el",
+   "say": "Σε βλέπω.",
+   "who": "katerina"
+  },
+  {
+   "t": 389.01,
+   "lang": "el",
+   "say": "Σου δίνω.",
+   "who": "katerina"
+  },
+  {
+   "t": 391.76,
+   "lang": "tr",
+   "say": "Peki telefon etmek?",
+   "who": "mert"
+  },
+  {
+   "t": 393.35,
+   "lang": "tr",
+   "say": "Türkçede sana telefon ediyorum dersin, seni değil. Yunanca da kime: σου τηλεφωνώ. İsim varsa küçük kelime yerine σε gelir, artikelle birleşir: στη μητέρα μου. Vurgulamak istersen de σε ile uzun biçim:",
+   "who": "ada"
+  },
+  {
+   "t": 410.24,
+   "lang": "el",
+   "say": "Δίνω το δέμα σε εσένα, όχι στον Νίκο.",
+   "who": "katerina"
+  },
+  {
+   "t": 418.07,
+   "lang": "tr",
+   "say": "Konuşmada kısalır: σε σένα, σε μένα. Ama σε σου diye bir şey yok.",
+   "who": "ada"
+  },
+  {
+   "t": 427.34,
+   "lang": "tr",
+   "say": "Şimdi bankadaki o hızlı kısım. Σας τη γράφω. Θα σας τη στείλουμε.",
+   "who": "mert"
+  },
+  {
+   "t": 432.76,
+   "lang": "tr",
+   "say": "İki küçük kelime yan yana: size ve onu. Önce kişi, sonra şey. Σας τη γράφω: size onu yazıyorum. Τη burada adres, çünkü η διεύθυνση dişil.",
+   "who": "ada"
+  },
+  {
+   "t": 446.26,
+   "lang": "tr",
+   "say": "Ama memur kart demedi ki. Sadece τη dedi.",
+   "who": "mert"
+  },
+  {
+   "t": 449.87,
+   "lang": "tr",
+   "say": "İyi kulak. Kartı Ayşe söyledi: πότε θα έχω κάρτα; Memur bir daha söylemez, τη yeter, çünkü η κάρτα dişil. Konuşmada hep böyle: konu bir kez söylenir, sonra küçük kelimeyle anılır. Türkçede de deriz: kart mı? Onu size göndereceğiz. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 471.31,
+   "lang": "el",
+   "say": "Τα γραμματόσημα; Σας τα δίνω τώρα.",
+   "who": "katerina"
+  },
+  {
+   "t": 477.97,
+   "lang": "tr",
+   "say": "Baştaki cümleye dönelim. Δεν'in n'si burada düşer, çünkü arkasından s sesi geliyor. Sana onu vermiyorum:",
+   "who": "ada"
+  },
+  {
+   "t": 486.31,
+   "lang": "el",
+   "say": "Όχι, δε σου το δίνω.",
+   "who": "katerina"
+  },
+  {
+   "t": 493.16,
+   "lang": "tr",
+   "say": "Bankada bir kelime ailesi daha var. Para yatırma: η κατάθεση. Makbuz: η απόδειξη. Sonları si ya da ksi, hepsi dişil. Çoğulda vurgu hep sondan ikinci heceye gelir:",
+   "who": "ada"
+  },
+  {
+   "t": 507.27,
+   "lang": "el",
+   "say": "η κατάθεση, οι καταθέσεις",
+   "who": "katerina",
+   "speed": 0.85
+  },
+  {
+   "t": 514.16,
+   "lang": "tr",
+   "say": "Vurgu bir hece kaydı. Kural tek: çoğulda sondan ikinci hece.",
+   "who": "mert"
+  },
+  {
+   "t": 520.14,
+   "lang": "tr",
+   "say": "Şimdi sıra sende. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert deneyecek, en son Katerina doğrusunu söyleyecek. Birincisi: bankada hesap açmak istediğini söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 537.2,
+   "lang": "el",
+   "say": "Θα ήθελα να ανοίξω λογαριασμό.",
+   "who": "mert"
+  },
+  {
+   "t": 539.21,
+   "lang": "el",
+   "say": "Θα ήθελα να ανοίξω λογαριασμό.",
+   "who": "katerina"
+  },
+  {
+   "t": 544.98,
+   "lang": "tr",
+   "say": "Memura sor: bana bir makbuz verir misiniz, lütfen?",
+   "who": "ada"
+  },
+  {
+   "t": 554.0,
+   "lang": "el",
+   "say": "Μου δίνετε μια απόδειξη, παρακαλώ;",
+   "who": "mert"
+  },
+  {
+   "t": 556.17,
+   "lang": "el",
+   "say": "Μου δίνετε μια απόδειξη, παρακαλώ;",
+   "who": "katerina"
+  },
+  {
+   "t": 561.86,
+   "lang": "tr",
+   "say": "Akşam annene telefon edeceğini söyle, ama annem demeden: akşam ona telefon edeceğim.",
+   "who": "ada"
+  },
+  {
+   "t": 573.38,
+   "lang": "el",
+   "say": "Θα του τηλεφωνήσω το βράδυ.",
+   "who": "mert"
+  },
+  {
+   "t": 575.66,
+   "lang": "tr",
+   "say": "Annen erkek mi, Mert?",
+   "who": "ada"
+  },
+  {
+   "t": 577.84,
+   "lang": "tr",
+   "say": "Ah, doğru. Kadın, o zaman της.",
+   "who": "mert"
+  },
+  {
+   "t": 580.92,
+   "lang": "el",
+   "say": "Θα της τηλεφωνήσω το βράδυ.",
+   "who": "katerina"
+  },
+  {
+   "t": 586.37,
+   "lang": "tr",
+   "say": "Son olarak sen memursun. Pullar mı? Şimdi size veriyorum, de.",
+   "who": "ada"
+  },
+  {
+   "t": 596.07,
+   "lang": "el",
+   "say": "Τα γραμματόσημα; Σας τα δίνω τώρα.",
+   "who": "mert"
+  },
+  {
+   "t": 598.88,
+   "lang": "el",
+   "say": "Τα γραμματόσημα; Σας τα δίνω τώρα.",
+   "who": "katerina"
+  },
+  {
+   "t": 607.96,
+   "lang": "tr",
+   "say": "Mert, şimdi hızlı ol. Düşünmeden: ona telefon ediyorum. Nikos'a.",
+   "who": "ada"
+  },
+  {
+   "t": 614.07,
+   "lang": "el",
+   "say": "Τον τηλεφωνώ.",
+   "who": "mert"
+  },
+  {
+   "t": 615.67,
+   "lang": "tr",
+   "say": "Τον mu? O, onu demek. Onu görüyorum gibi.",
+   "who": "ada"
+  },
+  {
+   "t": 620.18,
+   "lang": "tr",
+   "say": "Ama on altıncı derste erkeğe hep τον diyorduk.",
+   "who": "mert"
+  },
+  {
+   "t": 624.54,
+   "lang": "tr",
+   "say": "Orada fiil kimi diye soruyordu. Telefon etmek kime: o zaman του. Aynı tuzak sana veriyorum'da da var: σε δίνω değil, σου δίνω. Doğrusunu Katerina'dan dinle:",
+   "who": "ada"
+  },
+  {
+   "t": 637.69,
+   "lang": "el",
+   "say": "Του τηλεφωνώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 643.08,
+   "lang": "tr",
+   "say": "Şimdi küçük bir oyun. Ben kime olduğunu söyleyeceğim, sen küçük kelimeyle Yunanca kur, sonra Mert söyleyecek. Birincisi: ona veriyorum, bir kadına.",
+   "who": "ada"
+  },
+  {
+   "t": 655.53,
+   "lang": "el",
+   "say": "Της δίνω.",
+   "who": "mert"
+  },
+  {
+   "t": 656.74,
+   "lang": "tr",
+   "say": "Doğru. İkincisi biraz farklı: koliyi Nikos'a veriyorum.",
+   "who": "ada"
+  },
+  {
+   "t": 665.03,
+   "lang": "el",
+   "say": "Του δίνω το δέμα.",
+   "who": "mert"
+  },
+  {
+   "t": 666.6,
+   "lang": "tr",
+   "say": "Olur, ama Nikos nerede kaldı? İsim varsa σε ile söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 672.28,
+   "lang": "el",
+   "say": "Δίνω το δέμα στον Νίκο.",
+   "who": "katerina"
+  },
+  {
+   "t": 677.04,
+   "lang": "tr",
+   "say": "İkinci tur: çoğul. Ben tekili söyleyeceğim, sen çoğulunu. Rezervasyon: η κράτηση.",
+   "who": "ada"
+  },
+  {
+   "t": 688.55,
+   "lang": "el",
+   "say": "οι κράτησεις",
+   "who": "mert"
+  },
+  {
+   "t": 690.19,
+   "lang": "tr",
+   "say": "Vurguyu duydun mu? Çoğulda sondan ikinci hece.",
+   "who": "ada"
+  },
+  {
+   "t": 694.46,
+   "lang": "tr",
+   "say": "Ah, o zaman vurgu kayıyor.",
+   "who": "mert"
+  },
+  {
+   "t": 696.84,
+   "lang": "el",
+   "say": "οι κρατήσεις",
+   "who": "katerina"
+  },
+  {
+   "t": 700.01,
+   "lang": "tr",
+   "say": "Son kelime yeni: η έκπληξη. Sürpriz demek. Çoğulu?",
+   "who": "ada"
+  },
+  {
+   "t": 708.87,
+   "lang": "el",
+   "say": "οι εκπλήξεις",
+   "who": "mert"
+  },
+  {
+   "t": 710.48,
+   "lang": "tr",
+   "say": "Mükemmel. Bu kelime birazdan Katerina'nın hikâyesinde çıkacak.",
+   "who": "ada"
+  },
+  {
+   "t": 716.84,
+   "lang": "tr",
+   "say": "Şimdi postane bir kez daha, normal hızda. Bu sefer her kelimeyi anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "t": 723.3,
+   "lang": "el",
+   "say": "Καλημέρα σας. Θέλω να στείλω αυτό το δέμα στη Σμύρνη, στη μητέρα μου.",
+   "who": "ayse"
+  },
+  {
+   "t": 727.99,
+   "lang": "el",
+   "say": "Στην Τουρκία; Τότε χρειάζεται και μια δήλωση για το τελωνείο. Τι έχει μέσα;",
+   "who": "post-clerk"
+  },
+  {
+   "t": 733.72,
+   "lang": "el",
+   "say": "Βιβλία και ένα δώρο για τα γενέθλιά της.",
+   "who": "ayse"
+  },
+  {
+   "t": 736.8,
+   "lang": "el",
+   "say": "Μου τα γράφετε εδώ, στη δήλωση;",
+   "who": "post-clerk"
+  },
+  {
+   "t": 739.22,
+   "lang": "el",
+   "say": "Βέβαια. Πότε θα φτάσει;",
+   "who": "ayse"
+  },
+  {
+   "t": 741.75,
+   "lang": "el",
+   "say": "Συστημένο, σε μια εβδομάδα: δεκαπέντε ευρώ. Με κούριερ, σε δύο μέρες, αλλά κάνει τριάντα.",
+   "who": "post-clerk"
+  },
+  {
+   "t": 749.1,
+   "lang": "el",
+   "say": "Συστημένο, παρακαλώ. Έχω και ένα γράμμα, σε φάκελο. Θέλει γραμματόσημο;",
+   "who": "ayse"
+  },
+  {
+   "t": 755.4,
+   "lang": "el",
+   "say": "Όχι, πάει μέσα στο δέμα. Ορίστε η απόδειξη.",
+   "who": "post-clerk"
+  },
+  {
+   "t": 759.99,
+   "lang": "el",
+   "say": "Ευχαριστώ! Θα της τηλεφωνήσω το βράδυ.",
+   "who": "ayse"
+  },
+  {
+   "t": 763.21,
+   "lang": "el",
+   "say": "Μερτ, τα κατάλαβες όλα;",
+   "who": "ada"
+  },
+  {
+   "t": 765.98,
+   "lang": "el",
+   "say": "Ναι, όλα! Συστημένο, σε μια εβδομάδα, δεκαπέντε ευρώ.",
+   "who": "mert"
+  },
+  {
+   "t": 773.14,
+   "lang": "tr",
+   "say": "Kelime köşesi. Postane: το ταχυδρομείο. İçinde iki eski kelime saklı. Ταχύς, hızlı. Ve δρόμος, yol, koşu.",
+   "who": "ada"
+  },
+  {
+   "t": 785.08,
+   "lang": "tr",
+   "say": "Hipodromdaki drom bu mu?",
+   "who": "mert"
+  },
+  {
+   "t": 787.16,
+   "lang": "tr",
+   "say": "Aynen o. Hipodrom, atların koştuğu yer. Postacı da ταχυδρόμος: hızlı koşan, yani ulak. Pul da iki parça: γράμμα, mektup, ve σήμα, işaret. Γραμματόσημο: mektubun işareti.",
+   "who": "ada"
+  },
+  {
+   "t": 808.45,
+   "lang": "tr",
+   "say": "Gelecek bölümde Ayşe hasta, ateşi var. Eczaneye, sonra doktora gidiyor. Herkes ona bir şey söylüyor: oturun, alın, için.",
+   "who": "ada"
+  },
+  {
+   "t": 817.85,
+   "lang": "tr",
+   "say": "Yani emirler. Ben emir almayı sevmem.",
+   "who": "mert"
+  },
+  {
+   "t": 820.33,
+   "lang": "tr",
+   "say": "Ama anlamayı seveceksin. Bu arada bölümü uygulamada oku, alıştırmaları yap. Şimdi son söz Katerina'nın: bugünün hikâyesi, sadece Yunanca. Sadece dinle. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "t": 832.84,
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "t": 835.5,
+   "lang": "el",
+   "say": "Είναι Δευτέρα πρωί.",
+   "who": "katerina"
+  },
+  {
+   "t": 836.99,
+   "lang": "el",
+   "say": "Η Αϊσέ έχει πολλές δουλειές σήμερα.",
+   "who": "katerina"
+  },
+  {
+   "t": 839.44,
+   "lang": "el",
+   "say": "Πρώτα πηγαίνει στο ταχυδρομείο.",
+   "who": "katerina"
+  },
+  {
+   "t": 841.58,
+   "lang": "el",
+   "say": "Θέλει να στείλει ένα δέμα στη μητέρα της, στη Σμύρνη.",
+   "who": "katerina"
+  },
+  {
+   "t": 844.97,
+   "lang": "el",
+   "say": "Μέσα έχει βιβλία και ένα δώρο.",
+   "who": "katerina"
+  },
+  {
+   "t": 847.38,
+   "lang": "el",
+   "say": "Για την Τουρκία χρειάζεται και μια δήλωση για το τελωνείο.",
+   "who": "katerina"
+  },
+  {
+   "t": 850.88,
+   "lang": "el",
+   "say": "Η Αϊσέ το στέλνει συστημένο, και θα φτάσει σε μια εβδομάδα.",
+   "who": "katerina"
+  },
+  {
+   "t": 855.26,
+   "lang": "el",
+   "say": "Μετά πηγαίνει σε ένα μαγαζί με κινητά.",
+   "who": "katerina"
+  },
+  {
+   "t": 858.67,
+   "lang": "el",
+   "say": "Θέλει ένα πακέτο με πολλά δεδομένα.",
+   "who": "katerina"
+  },
+  {
+   "t": 861.32,
+   "lang": "el",
+   "say": "Το πακέτο κάνει είκοσι ευρώ τον μήνα.",
+   "who": "katerina"
+  },
+  {
+   "t": 864.09,
+   "lang": "el",
+   "say": "Της δίνουν ένα συμβόλαιο για έναν χρόνο.",
+   "who": "katerina"
+  },
+  {
+   "t": 866.68,
+   "lang": "el",
+   "say": "Της το στέλνουν και με email.",
+   "who": "katerina"
+  },
+  {
+   "t": 868.93,
+   "lang": "el",
+   "say": "Στο τέλος πηγαίνει στην τράπεζα και ανοίγει λογαριασμό.",
+   "who": "katerina"
+  },
+  {
+   "t": 872.42,
+   "lang": "el",
+   "say": "Δίνει το διαβατήριό της και τον ΑΦΜ της.",
+   "who": "katerina"
+  },
+  {
+   "t": 876.85,
+   "lang": "el",
+   "say": "Κάνει και μια κατάθεση, εκατό ευρώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 879.61,
+   "lang": "el",
+   "say": "Της δίνουν μια απόδειξη.",
+   "who": "katerina"
+  },
+  {
+   "t": 881.4,
+   "lang": "el",
+   "say": "Την κάρτα θα της τη στείλουν στο σπίτι.",
+   "who": "katerina"
+  },
+  {
+   "t": 884.18,
+   "lang": "el",
+   "say": "Το βράδυ η Αϊσέ τηλεφωνεί στη μητέρα της.",
+   "who": "katerina"
+  },
+  {
+   "t": 887.09,
+   "lang": "el",
+   "say": "«Μαμά, σήμερα σου έστειλα ένα δέμα!»",
+   "who": "katerina"
+  },
+  {
+   "t": 889.84,
+   "lang": "el",
+   "say": "«Τι μου έστειλες;» ρωτάει η μητέρα της.",
+   "who": "katerina"
+  },
+  {
+   "t": 892.67,
+   "lang": "el",
+   "say": "«Δε σου το λέω, μαμά. Είναι έκπληξη!»",
+   "who": "katerina"
+  },
+  {
+   "t": 895.91,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ],
+ "cast": {
+  "ayse": {
+   "name": "Αϊσέ",
+   "voice": "Achernar"
+  },
+  "bank-clerk": {
+   "name": "Υπάλληλος",
+   "voice": "Leda"
+  },
+  "ada": {
+   "name": "Ada",
+   "voice": "Sulafat"
+  },
+  "mert": {
+   "name": "Mert",
+   "voice": "Umbriel"
+  },
+  "katerina": {
+   "name": "Κατερίνα",
+   "voice": "Gacrux"
+  },
+  "post-clerk": {
+   "name": "Υπάλληλος",
+   "voice": "Alnilam"
+  },
+  "phone-clerk": {
+   "name": "Υπάλληλος",
+   "voice": "Schedar"
+  }
+ },
+ "sounds": true
+}

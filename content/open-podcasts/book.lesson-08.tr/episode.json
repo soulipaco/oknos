@@ -1,0 +1,1111 @@
+{
+ "id": "book.lesson-08.tr",
+ "kind": "chapter",
+ "lang": "tr",
+ "title": {
+  "tr": "Çanta kadın mı? Küçük, siyah, eski: bir şeyi tarif etmek",
+  "en": "Is a bag a she? Small, black, old: describing things"
+ },
+ "curriculum": "oknos-book",
+ "stage": "lesson-08",
+ "version": 3,
+ "written": "2026-11-26",
+ "date": null,
+ "rendered": "2026-11-26T13:13:25",
+ "seconds": 874.6,
+ "script": "12226471b6b0",
+ "parts": [
+  {
+   "t": 3.0,
+   "title": "Açılış"
+  },
+  {
+   "t": 39.27,
+   "title": "Hoş geldin"
+  },
+  {
+   "t": 73.84,
+   "title": "Karakolda"
+  },
+  {
+   "t": 129.81,
+   "title": "Fotoğraftaki kim?"
+  },
+  {
+   "t": 190.25,
+   "title": "Küçük çanta, küçük telefon"
+  },
+  {
+   "t": 267.94,
+   "title": "Eski ama güzel"
+  },
+  {
+   "t": 335.84,
+   "title": "Hangisi? Uzun olan"
+  },
+  {
+   "t": 405.93,
+   "title": "Dün metrodaydım"
+  },
+  {
+   "t": 441.68,
+   "title": "Sıra sende"
+  },
+  {
+   "t": 534.52,
+   "title": "Mert'in hatası"
+  },
+  {
+   "t": 572.53,
+   "title": "Oyun: kaç para?"
+  },
+  {
+   "t": 674.95,
+   "title": "Sahne yeniden"
+  },
+  {
+   "t": 709.27,
+   "title": "Kelime köşesi: kara deniz"
+  },
+  {
+   "t": 744.54,
+   "title": "Gelecek bölüm"
+  },
+  {
+   "t": 774.39,
+   "title": "Katerina anlatıyor"
+  }
+ ],
+ "lines": [
+  {
+   "t": 3.0,
+   "lang": "el",
+   "say": "Πώς είναι η τσάντα σας; Μεγάλη ή μικρή;",
+   "who": "astynomikos"
+  },
+  {
+   "t": 6.2,
+   "lang": "el",
+   "say": "Είναι μικρή και μαύρη.",
+   "who": "ayse"
+  },
+  {
+   "t": 7.82,
+   "lang": "el",
+   "say": "Καινούργια ή παλιά;",
+   "who": "astynomikos"
+  },
+  {
+   "t": 9.27,
+   "lang": "el",
+   "say": "Παλιά, αλλά είναι πολύ ωραία.",
+   "who": "ayse"
+  },
+  {
+   "t": 11.35,
+   "lang": "el",
+   "say": "Τι έχει μέσα;",
+   "who": "astynomikos"
+  },
+  {
+   "t": 12.59,
+   "lang": "el",
+   "say": "Ένα βιβλίο κι ένα κινητό. Το κινητό είναι καινούργιο.",
+   "who": "ayse"
+  },
+  {
+   "t": 17.43,
+   "lang": "tr",
+   "say": "Bir çanta, bir telefon: küçük, siyah, eski, yeni. Ama dikkatli dinlediysen, çanta için başka sonlar duydun, telefon için başka.",
+   "who": "ada"
+  },
+  {
+   "t": 27.94,
+   "lang": "tr",
+   "say": "Duydum. Çanta için i ya da a, telefon için o. Türkçede küçük her yerde küçük. Burada neden değişiyor?",
+   "who": "mert"
+  },
+  {
+   "t": 35.69,
+   "lang": "tr",
+   "say": "Bugün tam bunu çözeceğiz.",
+   "who": "ada"
+  },
+  {
+   "t": 39.27,
+   "lang": "tr",
+   "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, sekizinci bölüm.",
+   "who": "ada"
+  },
+  {
+   "t": 44.46,
+   "lang": "tr",
+   "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
+   "who": "mert"
+  },
+  {
+   "t": 49.75,
+   "lang": "tr",
+   "say": "Bugün bir şeyi tarif edeceksin: büyük mü, küçük mü, ne renk, yeni mi, eski mi. Hangisi diye soracaksın, dün oradaydım, yarın burada olacağım diyeceksin. Bir de binler ve milyonlar.",
+   "who": "ada"
+  },
+  {
+   "t": 61.53,
+   "lang": "tr",
+   "say": "Milyonlar mı? Benim cüzdanım için biraz fazla.",
+   "who": "mert"
+  },
+  {
+   "t": 65.03,
+   "lang": "tr",
+   "say": "Stüdyoda yine Katerina var. Sonda bize sadece Yunanca bir hikâye anlatacak.",
+   "who": "ada"
+  },
+  {
+   "t": 71.26,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  },
+  {
+   "t": 73.84,
+   "lang": "tr",
+   "say": "İlk sahne. Ayşe çantasını metroda kaybetmiş, karakola gidiyor. Polis memuru, yani αστυνομικός, çantayı soruyor. Kulak ver: içindeki telefon kaç avro?",
+   "who": "ada"
+  },
+  {
+   "t": 88.69,
+   "lang": "el",
+   "say": "Καλημέρα σας. Παρακαλώ;",
+   "who": "astynomikos"
+  },
+  {
+   "t": 90.93,
+   "lang": "el",
+   "say": "Καλημέρα. Χθες ήμουν στο μετρό και τώρα δεν έχω την τσάντα μου.",
+   "who": "ayse"
+  },
+  {
+   "t": 94.47,
+   "lang": "el",
+   "say": "Πώς είναι η τσάντα σας; Μεγάλη ή μικρή;",
+   "who": "astynomikos"
+  },
+  {
+   "t": 97.67,
+   "lang": "el",
+   "say": "Είναι μικρή και μαύρη.",
+   "who": "ayse"
+  },
+  {
+   "t": 99.28,
+   "lang": "el",
+   "say": "Καινούργια ή παλιά;",
+   "who": "astynomikos"
+  },
+  {
+   "t": 100.74,
+   "lang": "el",
+   "say": "Παλιά, αλλά είναι πολύ ωραία.",
+   "who": "ayse"
+  },
+  {
+   "t": 102.82,
+   "lang": "el",
+   "say": "Τι έχει μέσα;",
+   "who": "astynomikos"
+  },
+  {
+   "t": 104.05,
+   "lang": "el",
+   "say": "Ένα βιβλίο κι ένα κινητό. Το κινητό είναι καινούργιο.",
+   "who": "ayse"
+  },
+  {
+   "t": 108.6,
+   "lang": "el",
+   "say": "Είναι ακριβό;",
+   "who": "astynomikos"
+  },
+  {
+   "t": 109.74,
+   "lang": "el",
+   "say": "Ναι, χίλια διακόσια ευρώ.",
+   "who": "ayse"
+  },
+  {
+   "t": 111.74,
+   "lang": "el",
+   "say": "Εντάξει. Αύριο θα είμαι εδώ.",
+   "who": "astynomikos"
+  },
+  {
+   "t": 114.84,
+   "lang": "el",
+   "say": "Ευχαριστώ πολύ. Θα είμαι κι εγώ εδώ.",
+   "who": "ayse"
+  },
+  {
+   "t": 117.73,
+   "lang": "tr",
+   "say": "Telefon kaç avro? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 124.25,
+   "lang": "tr",
+   "say": "Bin iki yüz avro. Χίλια διακόσια. Hem yeni hem pahalı.",
+   "who": "mert"
+  },
+  {
+   "t": 129.81,
+   "lang": "tr",
+   "say": "İkinci sahne. Akşam komşusu Despina, Ayşe'ye üniversiteden eski bir sınıf fotoğrafı gösteriyor. Bu sefer biraz yavaş. Soru şu: Despina fotoğrafta hangisi, uzun olan mı, kısa olan mı?",
+   "who": "ada"
+  },
+  {
+   "t": 142.43,
+   "lang": "el",
+   "say": "Αυτή είναι μια παλιά φωτογραφία από το πανεπιστήμιο.",
+   "who": "despina",
+   "speed": 0.85
+  },
+  {
+   "t": 146.12,
+   "lang": "el",
+   "say": "Ποια είσαι εσύ; Η ψηλή;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 148.8,
+   "lang": "el",
+   "say": "Όχι, εγώ είμαι η κοντή με το κόκκινο φόρεμα. Ήμουν πολύ νέα!",
+   "who": "despina",
+   "speed": 0.85
+  },
+  {
+   "t": 154.2,
+   "lang": "el",
+   "say": "Και ο ψηλός κύριος; Ποιος είναι;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 157.35,
+   "lang": "el",
+   "say": "Ο Λευτέρης. Είναι πολύ αστείος. Τώρα μένει στη Θεσσαλονίκη.",
+   "who": "despina",
+   "speed": 0.85
+  },
+  {
+   "t": 162.65,
+   "lang": "el",
+   "say": "Και η ξανθιά κοπέλα που είναι μπροστά;",
+   "who": "ayse",
+   "speed": 0.85
+  },
+  {
+   "t": 165.59,
+   "lang": "el",
+   "say": "Είναι η Ρούλα, η φίλη μου από το σχολείο.",
+   "who": "despina",
+   "speed": 0.85
+  },
+  {
+   "t": 168.84,
+   "lang": "tr",
+   "say": "Despina hangisi? Sen de söyle.",
+   "who": "ada"
+  },
+  {
+   "t": 175.34,
+   "lang": "tr",
+   "say": "Uzun olan. Η ψηλή.",
+   "who": "mert"
+  },
+  {
+   "t": 177.24,
+   "lang": "tr",
+   "say": "Ayşe tam bunu sordu, ama Despina hayır dedi. O kısa olan, kırmızı elbiseli: η κοντή. Uzun boylu bey de Lefteris.",
+   "who": "ada"
+  },
+  {
+   "t": 186.52,
+   "lang": "tr",
+   "say": "Ayşe'nin sorusunu cevap sandım.",
+   "who": "mert"
+  },
+  {
+   "t": 190.25,
+   "lang": "tr",
+   "say": "Ada, açılıştaki soruya dönelim. Çanta için μικρή, telefon için καινούργιο. Neden sonlar farklı?",
+   "who": "mert"
+  },
+  {
+   "t": 197.56,
+   "lang": "tr",
+   "say": "Çünkü sıfat, ismin cinsine uyar. Her isim eril, dişil ya da nötr, hatırla. Çanta dişil: η τσάντα. Telefon nötr: το κινητό.",
+   "who": "ada"
+  },
+  {
+   "t": 211.03,
+   "lang": "tr",
+   "say": "Yani sıfat da ismin cinsini giyiyor.",
+   "who": "mert"
+  },
+  {
+   "t": 213.35,
+   "lang": "tr",
+   "say": "Güzel söyledin. Eril isimde sıfat os sesiyle biter, dişilde i, nötrde o. Katerina, küçük kelimesini üç cinsiyle söyler misin?",
+   "who": "ada"
+  },
+  {
+   "t": 222.46,
+   "lang": "el",
+   "say": "μικρός, μικρή, μικρό",
+   "who": "katerina"
+  },
+  {
+   "t": 229.95,
+   "lang": "tr",
+   "say": "Vurgu yerinden oynamaz. Uzun boylu da öyle:",
+   "who": "ada"
+  },
+  {
+   "t": 233.92,
+   "lang": "el",
+   "say": "ψηλός, ψηλή, ψηλό",
+   "who": "katerina"
+  },
+  {
+   "t": 240.69,
+   "lang": "tr",
+   "say": "Önce bir erkek arkadaş, sonra bir kadın arkadaş:",
+   "who": "ada"
+  },
+  {
+   "t": 244.57,
+   "lang": "el",
+   "say": "Ο φίλος μου είναι ψηλός.",
+   "who": "katerina"
+  },
+  {
+   "t": 246.46,
+   "lang": "el",
+   "say": "Η φίλη μου είναι ψηλή.",
+   "who": "katerina"
+  },
+  {
+   "t": 248.61,
+   "lang": "tr",
+   "say": "Türkçede ikisi de arkadaşım uzun boylu. Burada sıfat söylüyor, kadın mı erkek mi.",
+   "who": "mert"
+  },
+  {
+   "t": 254.02,
+   "lang": "tr",
+   "say": "Aynen. Artikelle isim arasında da biçim aynı. Renkler de sıfat. Siyah çanta pahalı:",
+   "who": "ada"
+  },
+  {
+   "t": 261.27,
+   "lang": "el",
+   "say": "Η μαύρη τσάντα είναι ακριβή.",
+   "who": "katerina"
+  },
+  {
+   "t": 267.94,
+   "lang": "tr",
+   "say": "Ama Ayşe çantası için παλιά dedi. Sonu a. Çanta dişilse i olmaz mıydı?",
+   "who": "mert"
+  },
+  {
+   "t": 274.5,
+   "lang": "tr",
+   "say": "Dişil, ama bu sıfat ikinci gruptan. Os'tan hemen önce bir ünlü varsa, dişil a ile biter. Burada os'tan önce bir i sesi var. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 286.42,
+   "lang": "el",
+   "say": "παλιός, παλιά, παλιό",
+   "who": "katerina"
+  },
+  {
+   "t": 291.04,
+   "lang": "tr",
+   "say": "Güzel de böyle: ωραία. Yeni de: καινούργια.",
+   "who": "ada"
+  },
+  {
+   "t": 296.23,
+   "lang": "tr",
+   "say": "Despina da kendisi için νέα dedi. O da yeni demek değil mi?",
+   "who": "mert"
+  },
+  {
+   "t": 301.52,
+   "lang": "tr",
+   "say": "Hem genç, hem yeni. İnsan için genç. Eşya için yeni çoğu zaman öbür kelime: telefon καινούργιο, Despina νέα. Bir de iki istisna var. Yedinci bölümdeki şekerli kahveyi hatırla. Os'tan önce ünsüz var, ama dişili ya ile biter:",
+   "who": "ada"
+  },
+  {
+   "t": 322.07,
+   "lang": "el",
+   "say": "γλυκός, γλυκιά, γλυκό",
+   "who": "katerina"
+  },
+  {
+   "t": 326.47,
+   "lang": "tr",
+   "say": "Sarışın da öyle. Fotoğraftaki Rula ξανθιά. En iyisi, her sıfatı üç biçimiyle öğrenmek.",
+   "who": "ada"
+  },
+  {
+   "t": 335.84,
+   "lang": "tr",
+   "say": "Şimdi fotoğraf. Ayşe ποιος diye sordu: hem kim, hem hangi. O da isme uyar.",
+   "who": "ada"
+  },
+  {
+   "t": 343.23,
+   "lang": "tr",
+   "say": "Sıfat gibi mi?",
+   "who": "mert"
+  },
+  {
+   "t": 344.52,
+   "lang": "tr",
+   "say": "Evet, aynı sonlar. Katerina:",
+   "who": "ada"
+  },
+  {
+   "t": 348.11,
+   "lang": "el",
+   "say": "ποιος, ποια, ποιο",
+   "who": "katerina"
+  },
+  {
+   "t": 353.39,
+   "lang": "tr",
+   "say": "Despina'ya ποια dedi, çünkü bir kadına soruyor. Lefteris için ποιος. Bir de soruya bak: η ψηλή. Türkçede uzun olan deriz. Yunancada olan yok, artikel ve sıfat yeter.",
+   "who": "ada"
+  },
+  {
+   "t": 367.67,
+   "lang": "tr",
+   "say": "Η ψηλή, η κοντή. Kısa ve öz.",
+   "who": "mert"
+  },
+  {
+   "t": 370.42,
+   "lang": "tr",
+   "say": "Ama Ayşe'nin son sorusunda bir olan daha var: önde olan sarışın kız. Türkçede bu kısım isimden önce gelir. Yunancada isimden sonra, küçük bir kelimeyle:",
+   "who": "ada"
+  },
+  {
+   "t": 381.48,
+   "lang": "el",
+   "say": "η ξανθιά κοπέλα που είναι μπροστά",
+   "who": "katerina"
+  },
+  {
+   "t": 387.88,
+   "lang": "tr",
+   "say": "Dur. Πού nerede demek değil miydi?",
+   "who": "mert"
+  },
+  {
+   "t": 390.48,
+   "lang": "tr",
+   "say": "İyi kulak! Nerede anlamındaki vurguyla söylenir. Bu bağlayan kelime vurgusuz, ve hiç değişmez. Bir tane daha:",
+   "who": "ada"
+  },
+  {
+   "t": 399.22,
+   "lang": "el",
+   "say": "ο φίλος που μένει εδώ",
+   "who": "katerina"
+  },
+  {
+   "t": 405.93,
+   "lang": "tr",
+   "say": "Bir de zaman var. Ayşe karakolda dün metrodaydım dedi:",
+   "who": "ada"
+  },
+  {
+   "t": 410.45,
+   "lang": "el",
+   "say": "Χθες ήμουν στο μετρό.",
+   "who": "katerina"
+  },
+  {
+   "t": 414.82,
+   "lang": "tr",
+   "say": "Ήμουν. Είμαι'nin geçmişi, idim.",
+   "who": "mert"
+  },
+  {
+   "t": 418.3,
+   "lang": "tr",
+   "say": "Evet. Sen için ήσουν. Gelecek için, yedinci bölümdeki gibi, önüne θα gelir. Memur en sonda ne dedi? Sen de söyle: yarın burada olacağım.",
+   "who": "ada"
+  },
+  {
+   "t": 434.52,
+   "lang": "el",
+   "say": "Αύριο θα είμαι εδώ.",
+   "who": "mert"
+  },
+  {
+   "t": 436.1,
+   "lang": "el",
+   "say": "Αύριο θα είμαι εδώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 441.68,
+   "lang": "tr",
+   "say": "Sıra sende. Ben Türkçe söylüyorum, sen Yunancasını yüksek sesle söyle. Sonra Mert dener, en son Katerina doğrusunu söyler. Birincisi: çanta küçük ve siyah.",
+   "who": "ada"
+  },
+  {
+   "t": 458.37,
+   "lang": "el",
+   "say": "Η τσάντα είναι μικρή και μαύρη.",
+   "who": "mert"
+  },
+  {
+   "t": 460.4,
+   "lang": "el",
+   "say": "Η τσάντα είναι μικρή και μαύρη.",
+   "who": "katerina"
+  },
+  {
+   "t": 466.09,
+   "lang": "tr",
+   "say": "Telefon yeni ve pahalı.",
+   "who": "ada"
+  },
+  {
+   "t": 472.83,
+   "lang": "el",
+   "say": "Το κινητό είναι καινούργιο και ακριβό.",
+   "who": "mert"
+  },
+  {
+   "t": 474.98,
+   "lang": "el",
+   "say": "Το κινητό είναι καινούργιο και ακριβό.",
+   "who": "katerina"
+  },
+  {
+   "t": 481.14,
+   "lang": "tr",
+   "say": "Fotoğrafa bakıyorsun. Rula hangisi diye sor.",
+   "who": "ada"
+  },
+  {
+   "t": 488.09,
+   "lang": "el",
+   "say": "Ποιος είναι η Ρούλα;",
+   "who": "mert"
+  },
+  {
+   "t": 489.72,
+   "lang": "tr",
+   "say": "Rula kadın, Mert.",
+   "who": "ada"
+  },
+  {
+   "t": 491.93,
+   "lang": "tr",
+   "say": "Ah, doğru. O zaman ποια.",
+   "who": "mert"
+  },
+  {
+   "t": 495.05,
+   "lang": "el",
+   "say": "Ποια είναι η Ρούλα;",
+   "who": "katerina"
+  },
+  {
+   "t": 498.45,
+   "lang": "tr",
+   "say": "Bir arkadaşına sor: dün üniversitede miydin?",
+   "who": "ada"
+  },
+  {
+   "t": 505.9,
+   "lang": "el",
+   "say": "Χθες ήσουν στο πανεπιστήμιο;",
+   "who": "mert"
+  },
+  {
+   "t": 508.23,
+   "lang": "el",
+   "say": "Χθες ήσουν στο πανεπιστήμιο;",
+   "who": "katerina"
+  },
+  {
+   "t": 513.72,
+   "lang": "tr",
+   "say": "Son olarak sor: hangi elbise pahalı? Elbise nötr: το φόρεμα.",
+   "who": "ada"
+  },
+  {
+   "t": 525.8,
+   "lang": "el",
+   "say": "Ποιο φόρεμα είναι ακριβό;",
+   "who": "mert"
+  },
+  {
+   "t": 527.5,
+   "lang": "el",
+   "say": "Ποιο φόρεμα είναι ακριβό;",
+   "who": "katerina"
+  },
+  {
+   "t": 534.52,
+   "lang": "tr",
+   "say": "Mert, şimdi hızlı ol. Düşünmeden: çanta küçük.",
+   "who": "ada"
+  },
+  {
+   "t": 539.59,
+   "lang": "el",
+   "say": "Η τσάντα είναι μικρό.",
+   "who": "mert"
+  },
+  {
+   "t": 541.36,
+   "lang": "tr",
+   "say": "Neredeyse. Çanta ne cins?",
+   "who": "ada"
+  },
+  {
+   "t": 545.19,
+   "lang": "tr",
+   "say": "Ama çanta bir eşya. Ne kadın, ne erkek. Nötr olması gerekmez mi?",
+   "who": "mert"
+  },
+  {
+   "t": 551.77,
+   "lang": "tr",
+   "say": "Türkçe konuşanların en sık düştüğü tuzak bu. Eşyada cins, şeye göre değil, kelimeye göre. Telefon nötr, çanta dişil, ikisi de eşya. Artikele bak: η τσάντα. Doğrusu:",
+   "who": "ada"
+  },
+  {
+   "t": 566.32,
+   "lang": "el",
+   "say": "Η τσάντα είναι μικρή.",
+   "who": "katerina"
+  },
+  {
+   "t": 572.53,
+   "lang": "tr",
+   "say": "Şimdi oyun: kaç para? Önce kural. Bin tek başına χίλια: telefon χίλια διακόσια. Ama iki binden itibaren binler anlamında başka bir kelime gelir: δύο χιλιάδες.",
+   "who": "ada"
+  },
+  {
+   "t": 587.43,
+   "lang": "tr",
+   "say": "Bin için iki kelime mi var?",
+   "who": "mert"
+  },
+  {
+   "t": 589.6,
+   "lang": "tr",
+   "say": "Evet, ve ikincisi dişil. Sen dene: üç bin avro.",
+   "who": "ada"
+  },
+  {
+   "t": 599.78,
+   "lang": "el",
+   "say": "Τρία χιλιάδες ευρώ.",
+   "who": "mert"
+  },
+  {
+   "t": 601.69,
+   "lang": "tr",
+   "say": "Dişil dedim, Mert. Üç sayısının dişil biçimi lazım.",
+   "who": "ada"
+  },
+  {
+   "t": 606.05,
+   "lang": "tr",
+   "say": "Ah, o zaman τρεις.",
+   "who": "mert"
+  },
+  {
+   "t": 608.22,
+   "lang": "el",
+   "say": "Τρεις χιλιάδες ευρώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 612.28,
+   "lang": "tr",
+   "say": "İki, beş, altı hiç değişmez. Yüzler de arkadan gelir. Eski araba iki bin dört yüz avro.",
+   "who": "ada"
+  },
+  {
+   "t": 624.57,
+   "lang": "el",
+   "say": "Δύο χιλιάδες τετρακόσια ευρώ.",
+   "who": "mert"
+  },
+  {
+   "t": 626.92,
+   "lang": "el",
+   "say": "Το παλιό αυτοκίνητο κάνει δύο χιλιάδες τετρακόσια ευρώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 636.36,
+   "lang": "tr",
+   "say": "Milyon ise nötr: ένα εκατομμύριο. Son soru, büyük para: üç milyon.",
+   "who": "ada"
+  },
+  {
+   "t": 648.2,
+   "lang": "tr",
+   "say": "Milyon nötr, o zaman üç de nötr:",
+   "who": "mert"
+  },
+  {
+   "t": 652.14,
+   "lang": "el",
+   "say": "τρία εκατομμύρια",
+   "who": "mert"
+  },
+  {
+   "t": 653.62,
+   "lang": "el",
+   "say": "τρία εκατομμύρια",
+   "who": "katerina"
+  },
+  {
+   "t": 657.68,
+   "lang": "tr",
+   "say": "Binlerde τρεις, milyonlarda τρία. Avro hiç değişmez. Lira dişil, çoğulu da değişir; şimdilik tanıman yeter. İzmir'de telefon elli bin lira:",
+   "who": "ada"
+  },
+  {
+   "t": 669.86,
+   "lang": "el",
+   "say": "Στη Σμύρνη το κινητό κάνει πενήντα χιλιάδες λίρες.",
+   "who": "katerina"
+  },
+  {
+   "t": 674.95,
+   "lang": "tr",
+   "say": "Fotoğraf sahnesi bir kez daha, normal hızda. Bu sefer her kelimeyi anlayacaksın.",
+   "who": "ada"
+  },
+  {
+   "t": 680.68,
+   "lang": "el",
+   "say": "Αυτή είναι μια παλιά φωτογραφία από το πανεπιστήμιο.",
+   "who": "despina"
+  },
+  {
+   "t": 683.88,
+   "lang": "el",
+   "say": "Ποια είσαι εσύ; Η ψηλή;",
+   "who": "ayse"
+  },
+  {
+   "t": 686.22,
+   "lang": "el",
+   "say": "Όχι, εγώ είμαι η κοντή με το κόκκινο φόρεμα. Ήμουν πολύ νέα!",
+   "who": "despina"
+  },
+  {
+   "t": 690.86,
+   "lang": "el",
+   "say": "Και ο ψηλός κύριος; Ποιος είναι;",
+   "who": "ayse"
+  },
+  {
+   "t": 693.59,
+   "lang": "el",
+   "say": "Ο Λευτέρης. Είναι πολύ αστείος. Τώρα μένει στη Θεσσαλονίκη.",
+   "who": "despina"
+  },
+  {
+   "t": 698.15,
+   "lang": "el",
+   "say": "Και η ξανθιά κοπέλα που είναι μπροστά;",
+   "who": "ayse"
+  },
+  {
+   "t": 700.71,
+   "lang": "el",
+   "say": "Είναι η Ρούλα, η φίλη μου από το σχολείο.",
+   "who": "despina"
+  },
+  {
+   "t": 703.58,
+   "lang": "tr",
+   "say": "Hepsini anladım. Despina kısa olan, kırmızı elbiseli.",
+   "who": "mert"
+  },
+  {
+   "t": 709.27,
+   "lang": "tr",
+   "say": "Kelime köşesi. Karadeniz'in Yunanca adı:",
+   "who": "ada"
+  },
+  {
+   "t": 713.48,
+   "lang": "el",
+   "say": "η Μαύρη Θάλασσα",
+   "who": "katerina"
+  },
+  {
+   "t": 715.42,
+   "lang": "tr",
+   "say": "Μαύρη! Siyah. Yani o da kara deniz, tıpkı Türkçedeki gibi.",
+   "who": "mert"
+  },
+  {
+   "t": 720.02,
+   "lang": "tr",
+   "say": "Evet. Deniz kelimesi dişil, o yüzden siyah da dişil. Bugünün kuralı haritada bile.",
+   "who": "ada"
+  },
+  {
+   "t": 726.41,
+   "lang": "tr",
+   "say": "Peki milyon? O kelime çok uzundu.",
+   "who": "mert"
+  },
+  {
+   "t": 729.4,
+   "lang": "tr",
+   "say": "İki parça. Başında εκατό var, yani yüz. Arkası eski Yunancada on bin demek olan bir kelimeden. Yüz kere on bin.",
+   "who": "ada"
+  },
+  {
+   "t": 740.97,
+   "lang": "tr",
+   "say": "Bir milyon. Hesap tutuyor!",
+   "who": "mert"
+  },
+  {
+   "t": 744.54,
+   "lang": "tr",
+   "say": "Gelecek bölümde Ayşe bir elektronik mağazasında: küçük mutfağına bir buzdolabı, kardeşine bir bilgisayar alacak.",
+   "who": "ada"
+  },
+  {
+   "t": 752.01,
+   "lang": "tr",
+   "say": "Ucuz olanından, değil mi?",
+   "who": "mert"
+  },
+  {
+   "t": 754.17,
+   "lang": "tr",
+   "say": "Satıcı da tam bunu soracak: hangisini istiyorsunuz? Bu sefer hangisi kelimesinin sonu biraz değişecek. Bu arada bölümü uygulamada oku, alıştırmaları yap. Şimdi son söz Katerina'nın: bugünün hikâyesi, sadece Yunanca. Sadece dinle. Görüşmek üzere!",
+   "who": "ada"
+  },
+  {
+   "t": 771.74,
+   "lang": "tr",
+   "say": "Görüşürüz!",
+   "who": "mert"
+  },
+  {
+   "t": 774.39,
+   "lang": "el",
+   "say": "Αυτή είναι η Αϊσέ.",
+   "who": "katerina"
+  },
+  {
+   "t": 776.05,
+   "lang": "el",
+   "say": "Η Αϊσέ είναι από τη Σμύρνη, αλλά μένει στην Αθήνα, στην Καλλιθέα.",
+   "who": "katerina"
+  },
+  {
+   "t": 779.85,
+   "lang": "el",
+   "say": "Δουλεύει στον Πειραιά και πάει στη δουλειά με το μετρό.",
+   "who": "katerina"
+  },
+  {
+   "t": 783.32,
+   "lang": "el",
+   "say": "Η Αϊσέ έχει μια τσάντα. Η τσάντα είναι μικρή και μαύρη.",
+   "who": "katerina"
+  },
+  {
+   "t": 787.87,
+   "lang": "el",
+   "say": "Δεν είναι καινούργια. Είναι παλιά, αλλά είναι πολύ ωραία.",
+   "who": "katerina"
+  },
+  {
+   "t": 792.01,
+   "lang": "el",
+   "say": "Μέσα έχει ένα βιβλίο κι ένα κινητό.",
+   "who": "katerina"
+  },
+  {
+   "t": 794.34,
+   "lang": "el",
+   "say": "Το βιβλίο είναι μεγάλο και κόκκινο.",
+   "who": "katerina"
+  },
+  {
+   "t": 796.81,
+   "lang": "el",
+   "say": "Το κινητό είναι καινούργιο και πολύ ακριβό. Κάνει χίλια διακόσια ευρώ.",
+   "who": "katerina"
+  },
+  {
+   "t": 801.66,
+   "lang": "el",
+   "say": "Αλλά τώρα η Αϊσέ δεν έχει την τσάντα της. Πού είναι η τσάντα;",
+   "who": "katerina"
+  },
+  {
+   "t": 806.29,
+   "lang": "el",
+   "say": "Στο μετρό; Στο γραφείο; Στο σπίτι;",
+   "who": "katerina"
+  },
+  {
+   "t": 809.49,
+   "lang": "el",
+   "say": "Η Αϊσέ πάει στον αστυνομικό.",
+   "who": "katerina"
+  },
+  {
+   "t": 811.54,
+   "lang": "el",
+   "say": "«Καλημέρα. Χθες ήμουν στο μετρό και τώρα δεν έχω την τσάντα μου.»",
+   "who": "katerina"
+  },
+  {
+   "t": 814.99,
+   "lang": "el",
+   "say": "Ο αστυνομικός ρωτάει: «Πώς είναι η τσάντα σας; Μεγάλη ή μικρή;»",
+   "who": "katerina"
+  },
+  {
+   "t": 820.04,
+   "lang": "el",
+   "say": "«Είναι μικρή και μαύρη. Παλιά, αλλά πολύ ωραία.»",
+   "who": "katerina"
+  },
+  {
+   "t": 823.8,
+   "lang": "el",
+   "say": "Ο αστυνομικός ρωτάει: «Τι έχει μέσα;»",
+   "who": "katerina"
+  },
+  {
+   "t": 827.02,
+   "lang": "el",
+   "say": "«Ένα βιβλίο κι ένα καινούργιο κινητό.»",
+   "who": "katerina"
+  },
+  {
+   "t": 829.54,
+   "lang": "el",
+   "say": "Κι ο αστυνομικός: «Εντάξει. Αύριο θα είμαι εδώ.»",
+   "who": "katerina"
+  },
+  {
+   "t": 833.46,
+   "lang": "el",
+   "say": "«Ευχαριστώ πολύ. Θα είμαι κι εγώ εδώ.»",
+   "who": "katerina"
+  },
+  {
+   "t": 836.18,
+   "lang": "el",
+   "say": "Τώρα η Αϊσέ είναι στο σπίτι με τη Δέσποινα.",
+   "who": "katerina"
+  },
+  {
+   "t": 839.06,
+   "lang": "el",
+   "say": "Η Δέσποινα έχει μια παλιά φωτογραφία από το πανεπιστήμιο.",
+   "who": "katerina"
+  },
+  {
+   "t": 842.91,
+   "lang": "el",
+   "say": "Στη φωτογραφία η Δέσποινα είναι πολύ νέα.",
+   "who": "katerina"
+  },
+  {
+   "t": 845.75,
+   "lang": "el",
+   "say": "Δεν είναι η ψηλή. Είναι η κοντή με το κόκκινο φόρεμα.",
+   "who": "katerina"
+  },
+  {
+   "t": 850.31,
+   "lang": "el",
+   "say": "Ο ψηλός κύριος είναι ο Λευτέρης. Είναι πολύ αστείος και τώρα μένει στη Θεσσαλονίκη.",
+   "who": "katerina"
+  },
+  {
+   "t": 856.92,
+   "lang": "el",
+   "say": "Και ποια είναι η ξανθιά κοπέλα που είναι μπροστά; Είναι η Ρούλα, η φίλη της από το σχολείο.",
+   "who": "katerina"
+  },
+  {
+   "t": 862.24,
+   "lang": "el",
+   "say": "Αλλά η Αϊσέ δεν έχει την τσάντα της. Αύριο θα πάει στον αστυνομικό.",
+   "who": "katerina"
+  },
+  {
+   "t": 866.37,
+   "lang": "el",
+   "say": "Θα έχει την τσάντα της; Θα έχει το κινητό της;",
+   "who": "katerina"
+  },
+  {
+   "t": 870.29,
+   "lang": "el",
+   "say": "Γεια σας!",
+   "who": "katerina"
+  }
+ ],
+ "cast": {
+  "astynomikos": {
+   "name": "Αστυνομικός",
+   "voice": "Fenrir"
+  },
+  "ayse": {
+   "name": "Αϊσέ",
+   "voice": "Achernar"
+  },
+  "ada": {
+   "name": "Ada",
+   "voice": "Sulafat"
+  },
+  "mert": {
+   "name": "Mert",
+   "voice": "Umbriel"
+  },
+  "katerina": {
+   "name": "Κατερίνα",
+   "voice": "Gacrux"
+  },
+  "despina": {
+   "name": "Δέσποινα",
+   "voice": "Kore"
+  }
+ },
+ "sounds": true
+}
