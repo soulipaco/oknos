@@ -1,12 +1,12 @@
 {
  "about": "Greek voice clips for the open content of Oknos (docs/VOICE.md). Each clip is <role>/<key[:2]>/<key>.mp3, key = sha1('<role>|<normalised text>') (src/oknos/voice.py); p is the service that made it (absent: google).",
  "licence": "CC-BY-SA-4.0",
- "made_with": "Google Cloud Text-to-Speech, Chirp 3 HD: 8,372 clips",
+ "made_with": "Google Cloud Text-to-Speech, Chirp 3 HD: 8,367 clips; Google Cloud Text-to-Speech, el-GR-Wavenet-B: 5 clips",
  "voices": {
   "f": "Kore",
   "m": "Orus"
  },
- "characters": 118847,
+ "characters": 118837,
  "clips": {
   "000f3a518c8dc58a231db4d4572f30d7f72e2389": {
    "r": "f",
@@ -2406,7 +2406,7 @@
   "11d09c739d1cab2c3655945b6089c6496e5bebab": {
    "r": "f",
    "t": "όχι",
-   "said": "«όχι»"
+   "v": "el-GR-Wavenet-B"
   },
   "11d9a8eaaa663c6c2cbe025de138320cca6fdbeb": {
    "r": "f",
@@ -9847,7 +9847,7 @@
   "4b1dfd3e699030f8f94e216c1a468ec58dfe1e37": {
    "r": "f",
    "t": "κι",
-   "said": "«κι»"
+   "v": "el-GR-Wavenet-B"
   },
   "4b232069053aad7728414925996f6a96e3895771": {
    "r": "f",
@@ -24337,7 +24337,7 @@
   "b979175839d1ed348824c07d2b224ddb7ea0d9ea": {
    "r": "f",
    "t": "μπ",
-   "said": "«μπ»"
+   "v": "el-GR-Wavenet-B"
   },
   "b9818a5b4999fd5711e098f81ef4bda06825cc09": {
    "r": "f",
@@ -27041,7 +27041,7 @@
   "cd3eb7c7a690cab33f1e9860ac8ed11d946f55b5": {
    "r": "f",
    "t": "ης",
-   "said": "«ης»"
+   "v": "el-GR-Wavenet-B"
   },
   "cd3f418d827a60cd8ff2fa2c9c4c64d7e1b4a7ed": {
    "r": "f",
@@ -28855,7 +28855,7 @@
   "db1d970e654ba707fd8461917f426e172b5c8b3e": {
    "r": "f",
    "t": "τη",
-   "said": "«τη»"
+   "v": "el-GR-Wavenet-B"
   },
   "db22cbb4d797eceed4b45b5127d68bd670ee15eb": {
    "r": "f",

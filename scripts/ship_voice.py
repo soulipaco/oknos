@@ -26,6 +26,8 @@ Chirp 3 HD now and then sends back near-silence for a short word (92 of the firs
 all single words or fragments). Every clip is checked: with ffmpeg on the PATH by its loudness,
 else by its length. A silent one is asked for again, then as "word.", «word» and "word…", which
 read the same; index.json records under "said" what was sent when it is not the text itself.
+Five fragments Chirp read badly even so (ης, κι, μπ, τη, όχι; the maintainer's choice by ear,
+2026-11-26) are Google's el-GR-Wavenet-B, recorded under "v"; a run leaves them alone.
 `--recheck` checks the clips already made and remakes the silent ones.
 
 The key is GEMINI_API_KEY (or GOOGLE_TTS_API_KEY for Chirp) from the given secrets file (or the
@@ -100,13 +102,16 @@ KEYS = {"gemini": "GEMINI_API_KEY", "google": "GOOGLE_TTS_API_KEY"}
 def write_manifest(out: Path, clips: dict, browser: dict) -> None:
     by: dict[str, int] = {}
     for c in clips.values():
-        by[c.get("p", "google")] = by.get(c.get("p", "google"), 0) + 1
+        # "v": a clip chosen by ear from another Google voice, where Chirp read a short fragment badly
+        maker = f"google:{c['v']}" if c.get("v") else c.get("p", "google")
+        by[maker] = by.get(maker, 0) + 1
     data = {
         "about": "Greek voice clips for the open content of Oknos (docs/VOICE.md). Each clip is "
                  "<role>/<key[:2]>/<key>.mp3, key = sha1('<role>|<normalised text>') (src/oknos/voice.py); "
                  "p is the service that made it (absent: google).",
         "licence": LICENCE,
-        "made_with": "; ".join(f"{MADE_WITH.get(k, k)}: {n:,} clips" for k, n in sorted(by.items(), key=lambda x: -x[1])),
+        "made_with": "; ".join(f"{MADE_WITH.get(k, k.replace('google:', 'Google Cloud Text-to-Speech, '))}: {n:,} clips"
+                               for k, n in sorted(by.items(), key=lambda x: -x[1])),
         "voices": {"f": "Kore", "m": "Orus"},
         "characters": sum(len(c.get("said", c["t"])) for c in clips.values()),
         "clips": dict(sorted(clips.items())),
