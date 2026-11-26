@@ -8,15 +8,15 @@
   "en": "On Ermou Street: plural adjectives, «I like it», κάνω and verbs in -ομαι"
  },
  "minutes": 17,
- "version": 1,
+ "version": 2,
  "sections": [
   {
    "kind": "intro",
    "blocks": [
     {
      "type": "prose",
-     "tr": "Bu bölümde giyim mağazasında alışveriş yapacaksın: bedenini ve rengi söylemek, bir şeyin hoşuna gidip gitmediğini, yakışıp yakışmadığını, bedenine olup olmadığını anlatmak. Bir mağaza çalışanının gününü de anlatacaksın.\n\nİki anahtar nokta: sıfat isme **cins, sayı ve hâl** bakımından uyar, çoğulda da: **τα μαύρα παντελόνια**. Ve «hoşuma gidiyor» Yunancada «bana hoş geliyor» gibi kurulur, yani fiil **hoşlandığın şeye** uyar: **μου αρέσουν** τα παπούτσια.",
-     "en": "In this chapter you shop for clothes: your size and colour, and whether you like something, whether it suits you and whether it fits. You will also describe a shop assistant's day.\n\nTwo key points: the adjective agrees with the noun in **gender, number and case**, in the plural too: **τα μαύρα παντελόνια**. And «I like it» is «it pleases me», so the verb agrees with **the thing you like**: **μου αρέσουν** τα παπούτσια."
+     "tr": "Bu bölümde giyim mağazasında alışveriş yapacaksın: bedenini ve rengi söylemek, bir şeyin hoşuna gidip gitmediğini, yakışıp yakışmadığını, bedenine olup olmadığını anlatmak. Bir arkadaş da sana uzun iş yolunu anlatacak.\n\nİki anahtar nokta: sıfat isme **cins, sayı ve hâl** bakımından uyar, çoğulda da: **τα μαύρα παντελόνια**. Ve «hoşuma gidiyor» Yunancada «bana hoş geliyor» gibi kurulur, yani fiil **hoşlandığın şeye** uyar: **μου αρέσουν** τα παπούτσια.",
+     "en": "In this chapter you shop for clothes: your size and colour, and whether you like something, whether it suits you and whether it fits. And a friend tells you about her long trip to work.\n\nTwo key points: the adjective agrees with the noun in **gender, number and case**, in the plural too: **τα μαύρα παντελόνια**. And «I like it» is «it pleases me», so the verb agrees with **the thing you like**: **μου αρέσουν** τα παπούτσια."
     }
    ]
   },
@@ -25,14 +25,14 @@
    "blocks": [
     {
      "type": "prose",
-     "tr": "Dinle, sonra oku. *Μου αρέσουν*, *μου κάνει*, *μου πάει* aşağıda açıklanıyor. [[Φοράτε]] *φοράω* (giymek) fiilinden gelir, Ders 5'teki *μιλάω* gibi çekilir. Yeni: [[Έχουμε]] (bizde var), [[δοκιμάζουν]] (deniyorlar), [[τρέχω]] (koşturuyorum), [[όλη μέρα]] (bütün gün), [[πάρτι]].",
-     "en": "Listen, then read. *Μου αρέσουν*, *μου κάνει*, *μου πάει* are explained below. [[Φοράτε]] is from *φοράω* («wear»), like Lesson 5's *μιλάω*. New: [[Έχουμε]] («we have»), [[δοκιμάζουν]] («they try on»), [[τρέχω]] («I run around»), [[όλη μέρα]] («all day»), [[πάρτι]]."
+     "tr": "Dinle, sonra oku. *Μου αρέσουν*, *μου κάνει*, *μου πάει* aşağıda açıklanıyor. [[Φοράτε]] *φοράω* (giymek) fiilinden gelir, Ders 5'teki *μιλάω* gibi çekilir. Yeni: [[Έχουμε]] (bizde var), [[σε άλλο χρώμα]] (başka renkte), [[καινούργια]] (yeni), [[μακριά]] (uzakta), [[πάρτι]].",
+     "en": "Listen, then read. *Μου αρέσουν*, *μου κάνει*, *μου πάει* are explained below. [[Φοράτε]] is from *φοράω* («wear»), like Lesson 5's *μιλάω*. New: [[Έχουμε]] («we have»), [[σε άλλο χρώμα]] («in another colour»), [[καινούργια]] («new»), [[μακριά]] («far away»), [[πάρτι]]."
     },
     {
      "type": "dialogue",
      "setting": {
-      "tr": "Cumartesi, Ermou Caddesi'nde bir giyim mağazası. Ayşe bir pantolon arıyor. Pantolonu deneyip geri geliyor.",
-      "en": "Saturday, a clothes shop on Ermou Street. Ayşe is looking for trousers. She tries a pair on and comes back."
+      "tr": "Cumartesi, Ermou Caddesi'nde bir giyim mağazası. Ayşe bir pantolon arıyor; iki renk deniyor.",
+      "en": "Saturday, a clothes shop on Ermou Street. Ayşe is looking for trousers and tries on two colours."
      },
      "lines": [
       {
@@ -61,27 +61,27 @@
       },
       {
        "who": "Πωλήτρια",
-       "el": "Ορίστε το σαράντα. Τα γκρι παντελόνια είναι πολύ ωραία, αλλά είναι στενά.",
-       "tr": "Buyurun, kırk. Gri pantolonlar çok güzel ama dar.",
-       "en": "Here is the forty. The grey trousers are very nice, but they are tight."
+       "el": "Ορίστε. Τα φαρδιά παντελόνια είναι ωραία.",
+       "tr": "Buyurun. Bol pantolonlar güzel.",
+       "en": "Here you are. Wide trousers are nice."
       },
       {
        "who": "Αϊσέ",
-       "el": "Δε μου κάνει το σαράντα. Είναι πολύ στενό.",
-       "tr": "Kırk bana olmadı. Çok dar.",
-       "en": "The forty doesn't fit me. It is too tight."
+       "el": "Μου κάνει, αλλά το γκρι δε μου πάει. Και σε άλλο χρώμα;",
+       "tr": "Bedenime oldu, ama gri bana yakışmıyor. Başka renkte de var mı?",
+       "en": "It fits me, but the grey doesn't suit me. And in another colour?"
       },
       {
        "who": "Πωλήτρια",
-       "el": "Έχουμε και το σαράντα δύο. Ορίστε.",
-       "tr": "Kırk iki de var. Buyurun.",
-       "en": "We have a forty-two too. Here you are."
+       "el": "Το έχουμε και σε μπλε. Ορίστε.",
+       "tr": "Mavisi de var. Buyurun.",
+       "en": "We have it in blue too. Here you are."
       },
       {
        "who": "Αϊσέ",
-       "el": "Μου κάνει! Μου πάει;",
-       "tr": "Bana oldu! Yakıştı mı?",
-       "en": "It fits me! Does it suit me?"
+       "el": "Δοκιμάζω και το μπλε… Μου πάει;",
+       "tr": "Maviyi de deniyorum… Yakıştı mı?",
+       "en": "I'll try the blue one too… Does it suit me?"
       },
       {
        "who": "Πωλήτρια",
@@ -103,17 +103,29 @@
       },
       {
        "who": "Αϊσέ",
-       "el": "Ναι, μου κάνουν και μου πάνε. Μου αρέσουν πολύ! Πληρώνω με κάρτα.",
-       "tr": "Evet, bana oluyorlar ve yakışıyorlar. Çok hoşuma gidiyorlar! Kartla ödüyorum.",
-       "en": "Yes, they fit me and they suit me. I like them a lot! I'll pay by card."
+       "el": "Δε μου κάνουν, είναι μεγάλα. Το τριάντα οχτώ, παρακαλώ.",
+       "tr": "Olmadı, büyükler. Otuz sekiz, lütfen.",
+       "en": "They don't fit, they are too big. The thirty-eight, please."
+      },
+      {
+       "who": "Πωλήτρια",
+       "el": "Ορίστε.",
+       "tr": "Buyurun.",
+       "en": "Here you are."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Τώρα μου κάνουν και μου πάνε! Πληρώνω με κάρτα.",
+       "tr": "Şimdi oluyorlar ve yakışıyorlar! Kartla ödüyorum.",
+       "en": "Now they fit me and they suit me! I'll pay by card."
       }
      ]
     },
     {
      "type": "dialogue",
      "setting": {
-      "tr": "Pazartesi akşamı, telefonda: Ayşe, Ermou'da bir giyim mağazasında çalışan arkadaşı Marina'yı arıyor.",
-      "en": "Monday evening on the phone: Ayşe calls her friend Marina, who works in a clothes shop on Ermou Street."
+      "tr": "Pazartesi akşamı, telefonda: Ayşe, yeni bir işe başlayan arkadaşı Marina'yı arıyor.",
+      "en": "Monday evening on the phone: Ayşe calls her friend Marina, who has just started a new job."
      },
      "lines": [
       {
@@ -124,27 +136,27 @@
       },
       {
        "who": "Μαρίνα",
-       "el": "Ήμουν στο μαγαζί, στην Ερμού. Έρχονται πολλοί πελάτες, κάθονται και δοκιμάζουν παπούτσια. Τρέχω όλη μέρα και κουράζομαι πολύ! Εσύ τι έκανες;",
-       "tr": "Dükkândaydım, Ermou'da. Çok müşteri geliyor, oturup ayakkabı deniyorlar. Bütün gün koşturuyorum ve çok yoruluyorum! Sen ne yaptın?",
-       "en": "I was in the shop, on Ermou. Lots of customers come, sit down and try on shoes. I run around all day and I get very tired! What did you do?"
+       "el": "Ήμουν στο σπίτι. Η καινούργια μου δουλειά είναι μακριά: κάθομαι μία ώρα στο λεωφορείο, πρωί και βράδυ. Κουράζομαι πολύ! Εσύ;",
+       "tr": "Evdeydim. Yeni işim uzakta: sabah akşam birer saat otobüste oturuyorum. Çok yoruluyorum! Ya sen?",
+       "en": "I was at home. My new job is far away: I sit on the bus for an hour, morning and evening. I get very tired! And you?"
       },
       {
        "who": "Αϊσέ",
-       "el": "Εγώ έκανα ψώνια το Σάββατο. Τώρα χρειάζομαι ένα φόρεμα για το πάρτι.",
-       "tr": "Ben cumartesi alışveriş yaptım. Şimdi parti için bir elbiseye ihtiyacım var.",
-       "en": "I did some shopping on Saturday. Now I need a dress for the party."
+       "el": "Εγώ έκανα ψώνια. Τώρα χρειάζομαι ένα φόρεμα για το πάρτι.",
+       "tr": "Ben alışveriş yaptım. Şimdi parti için bir elbiseye ihtiyacım var.",
+       "en": "I went shopping. Now I need a dress for the party."
       },
       {
        "who": "Μαρίνα",
-       "el": "Έχουμε ωραία φορέματα στο μαγαζί! Τι θα κάνεις αύριο;",
-       "tr": "Dükkânda güzel elbiselerimiz var! Yarın ne yapacaksın?",
-       "en": "We have lovely dresses in the shop! What will you do tomorrow?"
+       "el": "Στην Ερμού έχει ωραία φορέματα! Τι θα κάνεις αύριο;",
+       "tr": "Ermou'da güzel elbiseler var! Yarın ne yapacaksın?",
+       "en": "There are lovely dresses on Ermou Street! What will you do tomorrow?"
       },
       {
        "who": "Αϊσέ",
-       "el": "Θα κάνω ψώνια στο μαγαζί σου! Έρχομαι στις δέκα.",
-       "tr": "Senin dükkânında alışveriş yapacağım! Saat onda geliyorum.",
-       "en": "I'll go shopping in your shop! I'm coming at ten."
+       "el": "Θα κάνω ψώνια!",
+       "tr": "Alışveriş yapacağım!",
+       "en": "I'll go shopping!"
       }
      ]
     }
@@ -252,9 +264,9 @@
        }
       },
       {
-       "el": "Η Μαρίνα έχει καλούς πελάτες.",
-       "tr": "Marina'nın iyi müşterileri var.",
-       "en": "Marina has good customers.",
+       "el": "Ο Νίκος έχει καλούς φίλους.",
+       "tr": "Nikos'un iyi arkadaşları var.",
+       "en": "Nikos has good friends.",
        "note": {
         "tr": "Eril nesne: *-ους*.",
         "en": "Masculine object: *-ους*."
@@ -605,9 +617,9 @@
        "en": "I come to the shop at nine."
       },
       {
-       "el": "Οι πελάτες κάθονται και δοκιμάζουν τα παπούτσια.",
-       "tr": "Müşteriler oturup ayakkabıları deniyor.",
-       "en": "The customers sit down and try on the shoes."
+       "el": "Η Μαρίνα και η Αϊσέ κάθονται πίσω στο λεωφορείο.",
+       "tr": "Marina ile Ayşe otobüste arkada oturuyor.",
+       "en": "Marina and Ayşe sit at the back of the bus."
       },
       {
        "el": "Χρειάζομαι ένα μαύρο παντελόνι.",

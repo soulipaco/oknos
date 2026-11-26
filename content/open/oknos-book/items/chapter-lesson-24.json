@@ -48,9 +48,9 @@
   },
   "statements": [
    {
-    "el": "Η Αϊσέ πήγε στη Νάξο με αεροπλάνο.",
-    "en": "Ayşe went to Naxos by plane.",
-    "tr": "Ayşe Naksos'a uçakla gitti.",
+    "el": "Η Αϊσέ πήγε στην Πάρο με αεροπλάνο.",
+    "en": "Ayşe went to Paros by plane.",
+    "tr": "Ayşe Paros'a uçakla gitti.",
     "answer": false
    },
    {

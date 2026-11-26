@@ -2469,6 +2469,112 @@
    "pos": "phrase",
    "en": "the adjective ending -ύς (as in βαθύς, φαρδύς)",
    "tr": "-ύς sıfat eki (βαθύς, φαρδύς gibi)"
+  },
+  {
+   "el": "η τσίχλα",
+   "pos": "noun",
+   "en": "chewing gum",
+   "tr": "sakız"
+  },
+  {
+   "el": "τα ψιλά",
+   "pos": "noun",
+   "en": "small change (coins)",
+   "tr": "bozuk para, bozukluk"
+  },
+  {
+   "el": "κρίμα",
+   "pos": "phrase",
+   "en": "a pity; what a shame",
+   "tr": "yazık; ne yazık"
+  },
+  {
+   "el": "το κούριερ",
+   "pos": "noun",
+   "en": "courier; courier service",
+   "tr": "kurye; kargo şirketi"
+  },
+  {
+   "el": "η δήλωση",
+   "forms": [
+    "δηλώσεις"
+   ],
+   "pos": "noun",
+   "en": "declaration; form you fill in",
+   "tr": "beyan; beyanname"
+  },
+  {
+   "el": "τίνος",
+   "pos": "pron",
+   "en": "whose? (spoken)",
+   "tr": "kimin? (konuşma dili)"
+  },
+  {
+   "el": "η ειρήνη",
+   "forms": [
+    "ειρήνης",
+    "Ειρήνης"
+   ],
+   "pos": "noun",
+   "en": "peace",
+   "tr": "barış"
+  },
+  {
+   "el": "η φιλία",
+   "forms": [
+    "φιλίας",
+    "Φιλίας"
+   ],
+   "pos": "noun",
+   "en": "friendship",
+   "tr": "dostluk"
+  },
+  {
+   "el": "ο/η αστρονόμος",
+   "forms": [
+    "αστρονόμος"
+   ],
+   "pos": "noun",
+   "en": "astronomer",
+   "tr": "gökbilimci"
+  },
+  {
+   "el": "ο/η βιολόγος",
+   "forms": [
+    "βιολόγος"
+   ],
+   "pos": "noun",
+   "en": "biologist",
+   "tr": "biyolog"
+  },
+  {
+   "el": "ο έμπορος",
+   "forms": [
+    "έμπορος"
+   ],
+   "pos": "noun",
+   "en": "merchant; trader",
+   "tr": "tüccar"
+  },
+  {
+   "el": "ο/η επιχειρηματίας",
+   "forms": [
+    "επιχειρηματίας"
+   ],
+   "pos": "noun",
+   "en": "businessman; businesswoman",
+   "tr": "iş insanı"
+  },
+  {
+   "el": "ευρύς",
+   "forms": [
+    "ευρείας",
+    "ευρεία",
+    "ευρύ"
+   ],
+   "pos": "adj",
+   "en": "wide; broad",
+   "tr": "geniş"
   }
  ],
  "leave": {
@@ -2478,7 +2584,6 @@
   "ές": "These are word endings (noun suffixes), not words",
   "ες": "These are word endings (noun suffixes), not words",
   "ης": "Word ending (-ης) from a grammar rule list, not a word.",
-  "ΜΡ": "Latin letters from MP3 misread as Greek, not a Greek word.",
   "ος": "These are word endings (noun suffixes), not words"
  },
  "forms": {
@@ -2556,10 +2661,12 @@
   "δεις": "βλέπω",
   "δείτε": "βλέπω",
   "δες": "βλέπω",
+  "δευτερεύον": "δευτερεύων",
   "δήμαρχε": "δήμαρχος",
   "δημιουργηθεί": "δημιουργώ",
   "διάβασα": "διαβάζω",
   "διαβάσει": "διαβάζω",
+  "διαβάσετε": "διαβάζω",
   "δούλεψα": "δουλεύω",
   "δουλέψαμε": "δουλεύω",
   "δουλέψετε": "δουλεύω",
@@ -2897,13 +3004,19 @@
   "φίλων": "φίλος",
   "φοβάσαι": "φοβάμαι",
   "φοιτήτρια": "φοιτητής",
+  "φοράει": "φοράω",
+  "φοράμε": "φοράω",
+  "φοράνε": "φοράω",
   "φοράς": [
    "φορά",
    "φόρα"
   ],
+  "φοράτε": "φοράω",
+  "φορώ": "φοράω",
   "φρέσκες": "φρέσκος",
   "φρέσκια": "φρέσκος",
   "φτάσαμε": "φτάνω",
+  "φτάσει": "φτάνω",
   "φτάσω": "φτάνω",
   "φτιάξαμε": "φτιάχνω",
   "φτιάξω": "φτιάχνω",
@@ -2923,14 +3036,12 @@
   "ψάξω": "ψάχνω",
   "ώρας": "ώρα",
   "ώρες": "ώρα",
-  "ωρών": "ώρα",
-  "φοράτε": "φοράω",
-  "φοράει": "φοράω",
-  "φοράμε": "φοράω",
-  "φοράνε": "φοράω",
-  "φορώ": "φοράω"
+  "ωρών": "ώρα"
  },
  "names": {
-  "Μπούρτζι": "place"
+  "Ιράν": "place",
+  "Ραφήνα": "place",
+  "Αίολος": "person",
+  "Αιόλου": "Αίολος"
  }
 }

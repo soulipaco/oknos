@@ -8,7 +8,7 @@
   "en": "At the kiosk, the bakery and the café: asking for what you want"
  },
  "minutes": 15,
- "version": 1,
+ "version": 2,
  "sections": [
   {
    "kind": "intro",
@@ -29,57 +29,63 @@
    "blocks": [
     {
      "type": "prose",
-     "tr": "Dinle, sonra oku. Kalıplar: [[Κάτι άλλο;]] (başka bir şey?), [[Τι θα θέλατε;]] (ne arzu edersiniz?), [[Πάμε!]] (hadi gidelim!) ve *Θα ήθελα…* (… isterdim). *Πάω* fiilinin biçimleri aşağıda.",
-     "en": "Listen, then read. Set phrases: [[Κάτι άλλο;]] (anything else?), [[Τι θα θέλατε;]] (what would you like?), [[Πάμε!]] (let's go!) and *Θα ήθελα…* (I'd like). The forms of *πάω* follow below."
+     "tr": "Dinle, sonra oku. Kalıplar: [[Κάτι άλλο;]] (başka bir şey?), [[Τι θα θέλατε;]] (ne arzu edersiniz?), [[Πάμε!]] (hadi gidelim!) ve *Θα ήθελα…* (… isterdim). Büfede: [[η κάρτα]] (kontör kartı), [[η τσίχλα]] (sakız), [[Κρίμα]] (yazık), [[τα ψιλά]] (bozuk para). *Πάω* fiilinin biçimleri aşağıda.",
+     "en": "Listen, then read. Set phrases: [[Κάτι άλλο;]] (anything else?), [[Τι θα θέλατε;]] (what would you like?), [[Πάμε!]] (let's go!) and *Θα ήθελα…* (I'd like). At the kiosk: [[η κάρτα]] (top-up card), [[η τσίχλα]] (gum), [[Κρίμα]] (pity), [[τα ψιλά]] (change). The forms of *πάω* follow below."
     },
     {
      "type": "dialogue",
      "setting": {
-      "tr": "Ayşe sabah erkenden büfeye uğruyor. Kostas büfeci.",
-      "en": "Early in the morning Ayşe stops at the kiosk. Kostas runs it."
+      "tr": "Ayşe'nin telefonunda kontör bitti. Sabah erkenden büfeye uğruyor; büfeci Kostas.",
+      "en": "Ayşe's phone has run out of credit. Early in the morning she stops at the kiosk, which Kostas runs."
      },
      "lines": [
       {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα! Μια κάρτα για το κινητό, παρακαλώ.",
+       "tr": "Günaydın! Telefon için bir kontör kartı, lütfen.",
+       "en": "Good morning! A top-up card for my phone, please."
+      },
+      {
        "who": "Κώστας",
-       "el": "Καλημέρα! Ορίστε;",
-       "tr": "Günaydın! Buyurun?",
-       "en": "Good morning! Yes?"
+       "el": "Καλημέρα. Δεν έχω, δυστυχώς. Αύριο.",
+       "tr": "Günaydın. Yok, maalesef. Yarın.",
+       "en": "Good morning. I haven't got any, I'm afraid. Tomorrow."
       },
       {
        "who": "Αϊσέ",
-       "el": "Καλημέρα σας. Θα ήθελα ένα νερό και μια εφημερίδα, παρακαλώ.",
-       "tr": "Günaydın. Bir su ve bir gazete alayım, lütfen.",
-       "en": "Good morning. I'd like a water and a newspaper, please."
+       "el": "Κρίμα. Πόσο κάνει αυτή η τσίχλα;",
+       "tr": "Yazık. Bu sakız ne kadar?",
+       "en": "Pity. How much is this chewing gum?"
       },
       {
        "who": "Κώστας",
-       "el": "Ορίστε. Κάτι άλλο;",
-       "tr": "Buyurun. Başka bir şey?",
-       "en": "Here you are. Anything else?"
+       "el": "Ένα ευρώ.",
+       "tr": "Bir avro.",
+       "en": "One euro."
       },
       {
        "who": "Αϊσέ",
-       "el": "Όχι, ευχαριστώ. Πόσο κάνει;",
-       "tr": "Hayır, teşekkürler. Ne kadar?",
-       "en": "No, thank you. How much is it?"
+       "el": "Θα ήθελα μία, παρακαλώ. Ορίστε, είκοσι ευρώ.",
+       "tr": "Bir tane alayım, lütfen. Buyurun, yirmi avro.",
+       "en": "I'd like one, please. Here you are, twenty euros."
       },
       {
        "who": "Κώστας",
-       "el": "Δύο ευρώ και πενήντα λεπτά.",
-       "tr": "İki avro elli sent.",
-       "en": "Two euros fifty."
+       "el": "Είκοσι; Δεν έχω ψιλά… Κάτι άλλο;",
+       "tr": "Yirmi mi? Bozuk param yok… Başka bir şey?",
+       "en": "Twenty? I have no change… Anything else?"
       },
       {
        "who": "Αϊσέ",
-       "el": "Ορίστε. Ευχαριστώ!",
-       "tr": "Buyurun. Teşekkürler!",
-       "en": "Here you are. Thank you!"
+       "el": "Περιμένετε… Ορίστε, ένα ευρώ!",
+       "tr": "Durun… Buyurun, bir avro!",
+       "en": "Wait… Here you are, one euro!"
       },
       {
        "who": "Κώστας",
-       "el": "Παρακαλώ. Γεια σας!",
-       "tr": "Rica ederim. İyi günler!",
-       "en": "You're welcome. Goodbye!"
+       "el": "Ευχαριστώ! Γεια σας!",
+       "tr": "Teşekkürler! İyi günler!",
+       "en": "Thank you! Goodbye!"
       }
      ]
     },
@@ -673,8 +679,8 @@
    "blocks": [
     {
      "type": "prose",
-     "tr": "**Πάω** (gitmek) fiilinin geçmişini ve geleceğini **hazır biçimler** olarak öğren, şimdilik yalnızca *ben* ve *sen* için. Geçmişte kök değişir: *πήγα*. Gelecek **θα** + biçimdir. Gidilen yer *σε* + nesne hâli: *πάω στο περίπτερο*. *Χθες* dün, *αύριο* yarın demektir.",
-     "en": "Learn the past and future of **πάω** (to go) as **ready-made forms**, for *I* and *you* only. The past has a new stem, *πήγα*; the future is **θα** + the form. Where you go is *σε* + the accusative: *πάω στο περίπτερο*. *Χθες* is yesterday, *αύριο* tomorrow."
+     "tr": "**Πάω** (gitmek) fiilinin geçmişini ve geleceğini **hazır biçimler** olarak öğren, şimdilik *ben*, *sen* ve *biz* için (kafedeki **Πάμε!** «hadi gidelim» demek). Geçmişte kök değişir: *πήγα*. Gelecek **θα** + biçimdir. Gidilen yer *σε* + nesne hâli: *πάω στο περίπτερο*. *Χθες* dün, *αύριο* yarın demektir. [[Η λαϊκή]] haftalık semt pazarıdır.",
+     "en": "Learn the past and future of **πάω** (to go) as **ready-made forms**, for *I*, *you* and *we* (**Πάμε!**, «let's go», from the café). The past has a new stem, *πήγα*; the future is **θα** + the form. Where you go is *σε* + the accusative: *πάω στο περίπτερο*. *Χθες* is yesterday, *αύριο* tomorrow. [[Η λαϊκή]] is the weekly street market."
     },
     {
      "type": "table",
@@ -705,6 +711,12 @@
        "πας",
        "πήγες",
        "θα πας"
+      ],
+      [
+       "εμείς",
+       "πάμε",
+       "πήγαμε",
+       "θα πάμε"
       ]
      ]
     },
@@ -712,9 +724,9 @@
      "type": "examples",
      "items": [
       {
-       "el": "Χθες πήγα στον φούρνο.",
-       "tr": "Dün fırına gittim.",
-       "en": "Yesterday I went to the bakery."
+       "el": "Χθες πήγα στη λαϊκή.",
+       "tr": "Dün semt pazarına gittim.",
+       "en": "Yesterday I went to the street market."
       },
       {
        "el": "Πού πήγες;",

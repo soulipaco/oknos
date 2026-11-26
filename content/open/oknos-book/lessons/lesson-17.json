@@ -8,7 +8,7 @@
   "en": "Friday at the open-air cinema: asking permission, making requests and the simple subjunctive"
  },
  "minutes": 18,
- "version": 1,
+ "version": 2,
  "sections": [
   {
    "kind": "intro",
@@ -588,6 +588,13 @@
      ],
      "rows": [
       [
+       "Με χαρά!",
+       {
+        "tr": "Memnuniyetle!",
+        "en": "With pleasure!"
+       }
+      ],
+      [
        "Βεβαίως.",
        {
         "tr": "Tabii.",
@@ -609,17 +616,17 @@
        }
       ],
       [
-       "Δυστυχώς, δε γίνεται.",
+       "Συγγνώμη, αλλά όχι σήμερα.",
        {
-        "tr": "Maalesef, olmaz.",
-        "en": "Unfortunately, it's not possible."
+        "tr": "Kusura bakma, ama bugün olmaz.",
+        "en": "Sorry, but not today."
        }
       ],
       [
-       "Δεν μπορώ τώρα.",
+       "Τώρα έχω δουλειά. Μετά;",
        {
-        "tr": "Şimdi yapamam.",
-        "en": "I can't now."
+        "tr": "Şimdi işim var. Sonra olur mu?",
+        "en": "I'm busy now. Later?"
        }
       ]
      ]

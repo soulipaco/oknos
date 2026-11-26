@@ -12,9 +12,9 @@
    "stage:lesson-19"
   ],
   "example": {
-   "el": "Προχθές γύρισα από την Πάρο.",
-   "en": "The day before yesterday I came back from Paros.",
-   "tr": "Evvelsi gün Paros'tan döndüm."
+   "el": "Προχθές τηλεφώνησα στη Μαρία.",
+   "en": "The day before yesterday I phoned Maria.",
+   "tr": "Evvelsi gün Maria'ya telefon ettim."
   },
   "source": {
    "doc": "chapter",
@@ -286,8 +286,8 @@
   ],
   "answer": 1,
   "explain": {
-   "en": "«Όχι, πήραμε το πλοίο από τον Πειραιά.» Eleni asks about the plane, and Ayşe says no.",
-   "tr": "«Όχι, πήραμε το πλοίο από τον Πειραιά.» Eleni uçağı soruyor, Ayşe hayır diyor."
+   "en": "«Όχι, πήραμε το πλοίο από τη Ραφήνα.» Eleni asks about the plane, and Ayşe says no.",
+   "tr": "«Όχι, πήραμε το πλοίο από τη Ραφήνα.» Eleni uçağı soruyor, Ayşe hayır diyor."
   },
   "source": {
    "doc": "chapter",
@@ -310,9 +310,9 @@
   },
   "statements": [
    {
-    "el": "Την Τετάρτη έβρεξε στο νησί.",
-    "en": "On Wednesday it rained on the island.",
-    "tr": "Çarşamba günü adada yağmur yağdı.",
+    "el": "Την Παρασκευή έβρεξε στο νησί.",
+    "en": "On Friday it rained on the island.",
+    "tr": "Cuma günü adada yağmur yağdı.",
     "answer": true
    },
    {
@@ -329,8 +329,8 @@
    }
   ],
   "explain": {
-   "en": "Ayşe says «την Τετάρτη έβρεξε» and writes «Αγόρασα ένα καπέλο και ένα δώρο για εσένα». Eleni says «Εγώ έμεινα στην Αθήνα».",
-   "tr": "Ayşe «την Τετάρτη έβρεξε» diyor ve «Αγόρασα ένα καπέλο και ένα δώρο για εσένα» yazıyor. Eleni «Εγώ έμεινα στην Αθήνα» diyor."
+   "en": "Ayşe says «την Παρασκευή έβρεξε» and writes «Αγόρασα ένα καπέλο και ένα δώρο για εσένα». Eleni says «Εγώ έμεινα στην Αθήνα».",
+   "tr": "Ayşe «την Παρασκευή έβρεξε» diyor ve «Αγόρασα ένα καπέλο και ένα δώρο για εσένα» yazıyor. Eleni «Εγώ έμεινα στην Αθήνα» diyor."
   },
   "source": {
    "doc": "chapter",
@@ -927,7 +927,7 @@
   "grammar": [
    "verb.aorist.irregular"
   ],
-  "text": "Εμείς {1} το πλοίο από τον Πειραιά.",
+  "text": "Εμείς {1} το πλοίο από τη Ραφήνα.",
   "answer": {
    "1": [
     "πήραμε"
@@ -941,8 +941,8 @@
    ]
   },
   "translation": {
-   "en": "We took the boat from Piraeus.",
-   "tr": "Biz Pire'den gemiye bindik."
+   "en": "We took the boat from Rafina.",
+   "tr": "Biz Rafina'dan gemiye bindik."
   },
   "explain": {
    "en": "With εμείς you need πήραμε. πήρα is «I took» and πήρατε is «you (pl.) took».",

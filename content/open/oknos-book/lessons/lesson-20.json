@@ -8,15 +8,15 @@
   "en": "At the post office, the phone shop and the bank: «to me, to you» and nouns in -ση"
  },
  "minutes": 17,
- "version": 2,
+ "version": 3,
  "sections": [
   {
    "kind": "intro",
    "blocks": [
     {
      "type": "prose",
-     "tr": "Bu bölümde postaneden bir koli alıp mektup gönderecek, cep telefonu paketi alacak ve bankada hesap açacaksın.\n\nAnahtar nokta: Türkçe «bana, sana» için ek kullanır; Yunanca fiilin **önüne** küçük bir kelime koyar: **Σας δίνω** το συμβόλαιο (Size sözleşmeyi veriyorum). Bir de -ση, -ξη, -ψη ile biten dişil isimleri öğreneceksin: η κατάθεση, η απόδειξη.",
-     "en": "In this chapter you collect a parcel and send a letter, buy a mobile plan and open a bank account.\n\nThe key point: Greek says «to me, to you» with a little word **before** the verb: **Σας δίνω** το συμβόλαιο (I give you the contract). You also learn the feminine nouns in -ση, -ξη, -ψη: η κατάθεση, η απόδειξη."
+     "tr": "Bu bölümde annene bir koli gönderecek, cep telefonu paketi alacak ve bankada hesap açacaksın.\n\nAnahtar nokta: Türkçe «bana, sana» için ek kullanır; Yunanca fiilin **önüne** küçük bir kelime koyar: **Σας δίνω** το συμβόλαιο (Size sözleşmeyi veriyorum). Bir de -ση, -ξη, -ψη ile biten dişil isimleri öğreneceksin: η κατάθεση, η απόδειξη.",
+     "en": "In this chapter you send a parcel home, buy a mobile plan and open a bank account.\n\nThe key point: Greek says «to me, to you» with a little word **before** the verb: **Σας δίνω** το συμβόλαιο (I give you the contract). You also learn the feminine nouns in -ση, -ξη, -ψη: η κατάθεση, η απόδειξη."
     }
    ]
   },
@@ -29,39 +29,63 @@
    "blocks": [
     {
      "type": "prose",
-     "tr": "Ayşe'ye bir koli gelmiş; kapıda bir [[ειδοποίηση]] (bildirim kâğıdı) var. Önce dinle, sonra oku. Yeni: [[συστημένο]] (taahhütlü), [[Θέλω να στείλω]] (göndermek istiyorum), [[το γράμμα]] (mektup), [[το γραμματόσημο]] (pul), [[ο φάκελος]] (zarf).",
-     "en": "A parcel has come for Ayşe, and there is a [[ειδοποίηση]] (a notice slip) at her door. Listen first, then read. New: [[συστημένο]] (registered), [[Θέλω να στείλω]] (I want to send), [[το γράμμα]] (letter), [[το γραμματόσημο]] (stamp), [[ο φάκελος]] (envelope)."
+     "tr": "Ayşe, İzmir'deki annesine doğum günü kolisi gönderiyor; Türkiye AB dışında, bu yüzden gümrük beyannamesi gerekir. Yeni: [[Θέλω να στείλω]] (göndermek istiyorum), [[η δήλωση]] (beyanname), [[το τελωνείο]] (gümrük), [[συστημένο]] (taahhütlü), [[με κούριερ]] (kuryeyle), [[το γράμμα]] (mektup), [[ο φάκελος]] (zarf), [[το γραμματόσημο]] (pul).",
+     "en": "Ayşe sends a birthday parcel to her mother in Izmir; outside the EU it needs a customs form. New: [[Θέλω να στείλω]] (I want to send), [[η δήλωση]] (a form), [[το τελωνείο]] (customs), [[συστημένο]] (registered), [[με κούριερ]] (by courier), [[το γράμμα]] (letter), [[ο φάκελος]] (envelope), [[το γραμματόσημο]] (stamp)."
     },
     {
      "type": "dialogue",
      "setting": {
-      "tr": "Postanede: bir koli almak, bir mektup göndermek.",
-      "en": "At the post office: collecting a parcel, sending a letter."
+      "tr": "Postanede: annesine bir koli göndermek.",
+      "en": "At the post office: sending a parcel to her mother."
      },
      "lines": [
       {
        "who": "Αϊσέ",
-       "el": "Καλημέρα σας. Έχω μια ειδοποίηση για ένα δέμα.",
-       "en": "Good morning. I have a notice for a parcel.",
-       "tr": "Günaydın. Bir koli için bildirim kâğıdım var."
+       "el": "Καλημέρα σας. Θέλω να στείλω αυτό το δέμα στη Σμύρνη, στη μητέρα μου.",
+       "en": "Good morning. I want to send this parcel to Izmir, to my mother.",
+       "tr": "Günaydın. Bu koliyi İzmir'e, anneme göndermek istiyorum."
       },
       {
        "who": "Υπάλληλος",
-       "el": "Μου τη δίνετε; … Ναι, ένα δέμα από την Τουρκία, συστημένο. Μου γράφετε εδώ το όνομά σας;",
-       "en": "Could you give it to me? … Yes, a parcel from Turkey, registered. Could you write your name here for me?",
-       "tr": "Bana verir misiniz? … Evet, Türkiye'den taahhütlü bir koli. Adınızı buraya yazar mısınız?"
+       "el": "Στην Τουρκία; Τότε χρειάζεται και μια δήλωση για το τελωνείο. Τι έχει μέσα;",
+       "en": "To Turkey? Then it also needs a customs form. What is inside?",
+       "tr": "Türkiye'ye mi? O zaman bir de gümrük beyannamesi gerekiyor. İçinde ne var?"
       },
       {
        "who": "Αϊσέ",
-       "el": "Βέβαια. Είναι από τη μητέρα μου! Θέλω να στείλω κι εγώ ένα γράμμα στη Σμύρνη, αλλά δεν έχω φάκελο.",
-       "en": "Of course. It is from my mother! I want to send a letter to Izmir too, but I have no envelope.",
-       "tr": "Tabii. Annemden! Ben de İzmir'e bir mektup göndermek istiyorum, ama zarfım yok."
+       "el": "Βιβλία και ένα δώρο για τα γενέθλιά της.",
+       "en": "Books and a present for her birthday.",
+       "tr": "Kitaplar ve doğum günü için bir hediye."
       },
       {
        "who": "Υπάλληλος",
-       "el": "Ορίστε, σας δίνω έναν φάκελο και ένα γραμματόσημο για την Τουρκία. Ο φάκελος κάνει ένα ευρώ και το γραμματόσημο δύο: όλα μαζί τρία.",
-       "en": "Here, I am giving you an envelope and a stamp for Turkey. The envelope is one euro and the stamp two: three altogether.",
-       "tr": "Buyurun, size bir zarf ve Türkiye için bir pul veriyorum. Zarf bir euro, pul iki: hepsi birlikte üç."
+       "el": "Μου τα γράφετε εδώ, στη δήλωση;",
+       "en": "Could you write them here for me, on the form?",
+       "tr": "Bunları buraya, beyannameye yazar mısınız?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Βέβαια. Πότε θα φτάσει;",
+       "en": "Of course. When will it arrive?",
+       "tr": "Tabii. Ne zaman varır?"
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Συστημένο, σε μια εβδομάδα: δεκαπέντε ευρώ. Με κούριερ, σε δύο μέρες, αλλά κάνει τριάντα.",
+       "en": "Registered, in a week: fifteen euros. By courier, in two days, but it costs thirty.",
+       "tr": "Taahhütlü, bir haftada: on beş euro. Kuryeyle iki günde, ama otuz euro."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Συστημένο, παρακαλώ. Έχω και ένα γράμμα, σε φάκελο. Θέλει γραμματόσημο;",
+       "en": "Registered, please. I also have a letter, in an envelope. Does it need a stamp?",
+       "tr": "Taahhütlü, lütfen. Bir de mektubum var, zarfın içinde. Pul gerekir mi?"
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Όχι, πάει μέσα στο δέμα. Ορίστε η απόδειξη.",
+       "en": "No, it goes inside the parcel. Here is the receipt.",
+       "tr": "Hayır, kolinin içine girer. Buyurun, makbuzunuz."
       },
       {
        "who": "Αϊσέ",
@@ -118,21 +142,21 @@
       },
       {
        "who": "Υπάλληλος",
-       "el": "Ναι, για έναν χρόνο. Χρειάζομαι το διαβατήριό σας ή την αστυνομική σας ταυτότητα.",
-       "en": "Yes, for one year. I need your passport or your ID card.",
-       "tr": "Evet, bir yıllık. Pasaportunuz ya da kimlik kartınız gerekiyor."
+       "el": "Ναι. Σας δίνω το συμβόλαιο να το διαβάσετε.",
+       "en": "Yes. Here is the contract for you to read.",
+       "tr": "Evet. Okumanız için size sözleşmeyi veriyorum."
       },
       {
        "who": "Αϊσέ",
-       "el": "Ορίστε το διαβατήριό μου.",
-       "en": "Here is my passport.",
-       "tr": "Buyurun, pasaportum."
+       "el": "Ευχαριστώ. Μου το στέλνετε και με email;",
+       "en": "Thank you. Could you send it to me by email too?",
+       "tr": "Teşekkürler. Bana e-postayla da gönderir misiniz?"
       },
       {
        "who": "Υπάλληλος",
-       "el": "Ευχαριστώ. Σας δίνω το συμβόλαιο. Και τον αριθμό σας θα σας τον στείλω με μήνυμα.",
-       "en": "Thank you. Here is the contract for you. And I will send you your number in a message.",
-       "tr": "Teşekkürler. Size sözleşmeyi veriyorum. Numaranızı da size mesajla göndereceğim."
+       "el": "Βέβαια, σας το στέλνω τώρα.",
+       "en": "Of course, I am sending it to you now.",
+       "tr": "Tabii, şimdi size gönderiyorum."
       }
      ]
     }
@@ -597,11 +621,19 @@
        }
       ],
       [
+       "η δήλωση",
+       "οι δηλώσεις",
+       {
+        "tr": "beyan; beyanname",
+        "en": "declaration; form"
+       }
+      ],
+      [
        "η ειδοποίηση",
        "οι ειδοποιήσεις",
        {
-        "tr": "bildirim (kâğıdı)",
-        "en": "notice (slip)"
+        "tr": "bildirim",
+        "en": "notice; notification"
        }
       ],
       [
@@ -709,8 +741,8 @@
      "type": "tip",
      "kind": "exam",
      "exam_task": "a2ltr.listening.mcq",
-     "tr": "**Sınavda.** Dinlemede (a2ltr.listening.mcq) soruları kayıttan önce oku: saat mi, yer mi, fiyat mı soruluyor? Postane konuşmasında birçok sayı geçer (*ένα ευρώ*, *δύο*, *όλα μαζί τρία*). Toplam mı, parça mı soruluyor? Seçeneklerde öbür sayılar da olur.",
-     "en": "**In the exam.** In listening (a2ltr.listening.mcq), read the questions before the recording: is it a time, a place or a price? Post-office talk has many numbers (*ένα ευρώ*, *δύο*, *όλα μαζί τρία*). Total or part? The options contain the other numbers too."
+     "tr": "**Sınavda.** Dinlemede (a2ltr.listening.mcq) soruları kayıttan önce oku. Postane konuşmasında birçok sayı geçer (*σε μια εβδομάδα*, *δεκαπέντε ευρώ*, *τριάντα*): konuşan hangisini seçiyor? Öbürleri de seçeneklerde olur.",
+     "en": "**In the exam.** In listening (a2ltr.listening.mcq), read the questions before the recording. Post-office talk has many numbers (*σε μια εβδομάδα*, *δεκαπέντε ευρώ*, *τριάντα*): which does she choose? The others are in the options too."
     }
    ]
   },

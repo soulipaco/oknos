@@ -8,7 +8,7 @@
   "en": "In the shop and in an e-mail: the object form, ποιον, the AB verbs"
  },
  "minutes": 15,
- "version": 1,
+ "version": 2,
  "sections": [
   {
    "kind": "intro",
@@ -29,8 +29,8 @@
    "blocks": [
     {
      "type": "prose",
-     "tr": "Dinle, sonra oku. [[σε προσφορά]] (indirimde) ve [[με κάρτα ή με μετρητά]] (kartla mı nakitle mi) şimdilik kalıp. Kurallar aşağıda.",
-     "en": "Listen, then read. [[σε προσφορά]] (on offer) and [[με κάρτα ή με μετρητά]] (by card or in cash) are set phrases for now. The rules follow below."
+     "tr": "Dinle, sonra oku. [[σε προσφορά]] (indirimde), [[με κάρτα ή με μετρητά]] (kartla mı nakitle mi) ve [[Το φέρνετε στο σπίτι;]] (eve getiriyor musunuz?) şimdilik kalıp. Yeni: [[χωράει]] (sığıyor). Kurallar aşağıda.",
+     "en": "Listen, then read. [[σε προσφορά]] (on offer), [[με κάρτα ή με μετρητά]] (by card or in cash) and [[Το φέρνετε στο σπίτι;]] (do you deliver it?) are set phrases for now. New: [[χωράει]] («it fits»). The rules follow below."
     },
     {
      "type": "dialogue",
@@ -53,45 +53,45 @@
       },
       {
        "who": "Πωλητής",
-       "el": "Τι ψυγείο θέλετε; Μεγάλο ή μικρό;",
-       "tr": "Nasıl bir buzdolabı istiyorsunuz? Büyük mü, küçük mü?",
-       "en": "What kind of fridge do you want? Big or small?"
+       "el": "Αυτό εδώ κάνει τετρακόσια ευρώ.",
+       "tr": "Şu dört yüz avro.",
+       "en": "This one here is four hundred euros."
       },
       {
        "who": "Αϊσέ",
-       "el": "Μικρό. Η κουζίνα μου είναι μικρή.",
-       "tr": "Küçük. Mutfağım küçük.",
-       "en": "Small. My kitchen is small."
+       "el": "Δε χωράει στην κουζίνα μου!",
+       "tr": "Mutfağıma sığmaz!",
+       "en": "It won't fit in my kitchen!"
       },
       {
        "who": "Πωλητής",
-       "el": "Αυτό το λευκό ψυγείο είναι σε προσφορά.",
-       "tr": "Şu beyaz buzdolabı indirimde.",
-       "en": "This white fridge is on offer."
+       "el": "Αυτό το λευκό είναι μικρό: διακόσια πενήντα ευρώ.",
+       "tr": "Şu beyaz küçük: iki yüz elli avro.",
+       "en": "This white one is small: two hundred and fifty euros."
       },
       {
        "who": "Αϊσέ",
-       "el": "Πόσο κάνει;",
-       "tr": "Ne kadar?",
-       "en": "How much is it?"
+       "el": "Εντάξει, θέλω αυτό. Το φέρνετε στο σπίτι;",
+       "tr": "Tamam, bunu istiyorum. Eve getiriyor musunuz?",
+       "en": "OK, I'll take this one. Do you deliver it?"
       },
       {
        "who": "Πωλητής",
-       "el": "Κάνει διακόσια πενήντα ευρώ και έχει εγγύηση.",
-       "tr": "İki yüz elli avro ve garantisi var.",
-       "en": "It's two hundred and fifty euros and it has a guarantee."
+       "el": "Ναι, την Πέμπτη.",
+       "tr": "Evet, perşembe günü.",
+       "en": "Yes, on Thursday."
       },
       {
        "who": "Αϊσέ",
-       "el": "Εντάξει, θέλω αυτό. Ο αδελφός μου θέλει έναν φτηνό υπολογιστή.",
-       "tr": "Tamam, bunu istiyorum. Kardeşim ucuz bir bilgisayar istiyor.",
-       "en": "OK, I'll take this one. My brother wants a cheap computer."
+       "el": "Ο αδελφός μου θέλει έναν φτηνό υπολογιστή.",
+       "tr": "Kardeşim ucuz bir bilgisayar istiyor.",
+       "en": "My brother wants a cheap computer."
       },
       {
        "who": "Πωλητής",
-       "el": "Αυτός ο υπολογιστής είναι καινούργιος και φτηνός. Ο μεγάλος είναι ακριβός. Ποιον θέλετε;",
-       "tr": "Bu bilgisayar yeni ve ucuz. Büyük olan pahalı. Hangisini istersiniz?",
-       "en": "This computer is new and cheap. The big one is expensive. Which one would you like?"
+       "el": "Αυτός ο υπολογιστής είναι σε προσφορά. Ο μεγάλος είναι ακριβός. Ποιον θέλετε;",
+       "tr": "Bu bilgisayar indirimde. Büyük olan pahalı. Hangisini istersiniz?",
+       "en": "This computer is on offer. The big one is expensive. Which one would you like?"
       },
       {
        "who": "Αϊσέ",
@@ -127,15 +127,15 @@
      "lines": [
       {
        "who": "Αϊσέ",
-       "el": "Γεια σου, Νίκο! Ξυπνάω νωρίς και πίνω έναν ελληνικό καφέ, αλλά το πρωί δεν τρώω ποτέ. Το μεσημέρι τρώω σε ένα εστιατόριο κοντά στο γραφείο. Το βράδυ συχνά ακούω ραδιόφωνο. Το Σάββατο διαβάζω στη βιβλιοθήκη. Κι εσύ; Τι τρως το πρωί;",
-       "tr": "Selam Nikos! Erken kalkıyorum ve bir Yunan kahvesi içiyorum, ama sabahları hiçbir şey yemiyorum. Öğleyin ofisin yakınındaki bir lokantada yiyorum. Akşamları sık sık radyo dinliyorum. Cumartesi günü kütüphanede ders çalışıyorum. Ya sen? Sabahları ne yiyorsun?",
-       "en": "Hi Nikos! I wake up early and drink a Greek coffee, but I never eat in the morning. At midday I eat in a restaurant near the office. In the evening I often listen to the radio. On Saturday I study at the library. And you? What do you eat in the morning?"
+       "el": "Γεια σου, Νίκο! Ξυπνάω νωρίς και πίνω έναν ελληνικό καφέ, αλλά το πρωί δεν τρώω ποτέ. Το μεσημέρι συνήθως τρώω στο γραφείο. Το βράδυ συχνά ακούω ραδιόφωνο. Σπάνια τρώω σε εστιατόριο. Κι εσύ; Τι τρως το πρωί;",
+       "tr": "Selam Nikos! Erken kalkıyorum ve bir Yunan kahvesi içiyorum, ama sabahları hiçbir şey yemiyorum. Öğleyin genellikle ofiste yiyorum. Akşamları sık sık radyo dinliyorum. Lokantada nadiren yiyorum. Ya sen? Sabahları ne yiyorsun?",
+       "en": "Hi Nikos! I wake up early and drink a Greek coffee, but I never eat in the morning. At midday I usually eat at the office. In the evening I often listen to the radio. I rarely eat in a restaurant. And you? What do you eat in the morning?"
       },
       {
        "who": "Νίκος",
-       "el": "Γεια σου, Αϊσέ! Ευχαριστώ για το μήνυμα. Εγώ δεν πίνω ποτέ καφέ το πρωί. Πίνω τσάι και τρώω ψωμί με γιαούρτι.",
-       "tr": "Selam Ayşe! Mesajın için teşekkürler. Ben sabahları hiç kahve içmem. Çay içerim, yoğurtla ekmek yerim.",
-       "en": "Hi Ayşe! Thanks for the message. I never drink coffee in the morning. I drink tea and eat bread with yoghurt."
+       "el": "Γεια σου, Αϊσέ! Ευχαριστώ για το μήνυμα. Εγώ δεν πίνω ποτέ καφέ το πρωί. Πίνω τσάι και τρώω ψωμί με γιαούρτι στη δουλειά, στη βιβλιοθήκη.",
+       "tr": "Selam Ayşe! Mesajın için teşekkürler. Ben sabahları hiç kahve içmem. İşte, kütüphanede çay içer, yoğurtla ekmek yerim.",
+       "en": "Hi Ayşe! Thanks for the message. I never drink coffee in the morning. I drink tea and eat bread with yoghurt at work, at the library."
       }
      ]
     }

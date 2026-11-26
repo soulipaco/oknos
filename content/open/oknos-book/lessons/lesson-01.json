@@ -8,7 +8,7 @@
   "en": "Hello, I'm …: greeting and meeting people"
  },
  "minutes": 10,
- "version": 1,
+ "version": 2,
  "sections": [
   {
    "kind": "intro",
@@ -230,8 +230,8 @@
    "blocks": [
     {
      "type": "prose",
-     "tr": "Nereli olduğunu söylemek için **Είμαι από** (\"…'denim\") ve ülkenin adı.\n\nÜlke adının önünde küçük bir kelime göreceksin: *την*, *τη*, *τον* ya da *το*. Bunlar **artikel**; Türkçede yok. Şimdilik ülke adıyla birlikte ezberle, kuralını Ders 3'te göreceksin.",
-     "en": "To say where you are from: **Είμαι από** (\"I am from\") plus the country.\n\nYou will see a small word before the country: *την*, *τη*, *τον* or *το*. These are **articles**; Turkish has none. For now, learn each one together with the country; the rule comes in Lesson 3."
+     "tr": "Nereli olduğunu söylemek için **Είμαι από** (\"…'denim\") ve ülkenin ya da şehrin adı.\n\nAdın önünde küçük bir kelime göreceksin: *την*, *τη*, *τον* ya da *το*. Bunlar **artikel**; Türkçede yok. Şimdilik adla birlikte ezberle, kuralını Ders 3'te göreceksin.",
+     "en": "To say where you are from: **Είμαι από** (\"I am from\") plus the country or the city.\n\nYou will see a small word before the name: *την*, *τη*, *τον* or *το*. These are **articles**; Turkish has none. For now, learn each one together with the name; the rule comes in Lesson 3."
     },
     {
      "type": "examples",
@@ -256,14 +256,18 @@
        }
       },
       {
-       "el": "Είμαι από τον Καναδά.",
-       "tr": "Kanada'danım.",
-       "en": "I'm from Canada."
+       "el": "Είμαι από τον Βόλο.",
+       "tr": "Volos'tanım.",
+       "en": "I'm from Volos.",
+       "note": {
+        "tr": "*Ο Βόλος*, Yunanistan'da bir liman şehri.",
+        "en": "*Ο Βόλος* is a port city in Greece."
+       }
       },
       {
-       "el": "Είμαι από το Βέλγιο.",
-       "tr": "Belçika'danım.",
-       "en": "I'm from Belgium."
+       "el": "Είμαι από το Ιράν.",
+       "tr": "İran'danım.",
+       "en": "I'm from Iran."
       }
      ]
     }

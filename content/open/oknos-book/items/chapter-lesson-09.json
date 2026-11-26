@@ -64,9 +64,9 @@
   "lemma": "προσφορά",
   "gender": "f",
   "example": {
-   "el": "Αυτό το ψυγείο είναι σε προσφορά.",
-   "en": "This fridge is on offer.",
-   "tr": "Bu buzdolabı indirimde."
+   "el": "Αυτός ο υπολογιστής είναι σε προσφορά.",
+   "en": "This computer is on offer.",
+   "tr": "Bu bilgisayar indirimde."
   },
   "source": {
    "doc": "chapter",
@@ -216,13 +216,13 @@
   },
   "options": [
    "Διακόσια πενήντα ευρώ.",
-   "Τριακόσια ογδόντα ευρώ.",
+   "Τετρακόσια ευρώ.",
    "Διακόσια ευρώ."
   ],
   "answer": 0,
   "explain": {
-   "en": "The seller says «Κάνει διακόσια πενήντα ευρώ». The computer has no price in the dialogue.",
-   "tr": "Satıcı «Κάνει διακόσια πενήντα ευρώ» diyor. Bilgisayarın fiyatı diyalogda yok."
+   "en": "Ayşe takes the small white fridge: «κάνει διακόσια πενήντα ευρώ». The one for four hundred is too big for her kitchen. The computer has no price in the dialogue.",
+   "tr": "Ayşe küçük beyaz buzdolabını alıyor: «κάνει διακόσια πενήντα ευρώ». Dört yüz avroluk olan mutfağına büyük geliyor. Bilgisayarın fiyatı diyalogda yok."
   },
   "source": {
    "doc": "chapter",
@@ -662,7 +662,7 @@
    "en": "Fill in the gap.",
    "tr": "Boşluğu doldur."
   },
-  "text": "Με {1} πας στο σινεμά; — Με τη Μαρία.",
+  "text": "Με {1} μιλάς στο τηλέφωνο; — Με τη Δέσποινα.",
   "answer": {
    "1": [
     "ποια"
@@ -676,12 +676,12 @@
    ]
   },
   "translation": {
-   "en": "Who are you going to the cinema with? — With Maria.",
-   "tr": "Sinemaya kiminle gidiyorsun? — Maria'yla."
+   "en": "Who are you talking to on the phone? — To Despina.",
+   "tr": "Telefonda kiminle konuşuyorsun? — Despina'yla."
   },
   "explain": {
-   "en": "Maria is feminine, so after με you use ποια. Ποιον would be masculine, ποιος is the subject form.",
-   "tr": "Maria dişil, bu yüzden με'den sonra ποια gelir. Ποιον eril olurdu, ποιος özne biçimi."
+   "en": "Despina is feminine, so after με you use ποια. Ποιον would be masculine, ποιος is the subject form.",
+   "tr": "Despina dişil, bu yüzden με'den sonra ποια gelir. Ποιον eril olurdu, ποιος özne biçimi."
   },
   "source": {
    "doc": "chapter",

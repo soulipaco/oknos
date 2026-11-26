@@ -634,11 +634,17 @@ def load_all(roots: list[tuple[str, Path]] | None = None) -> Catalog:
     return catalog
 
 
-def _word(item: VocabItem) -> str:
+def _words(item: VocabItem) -> set[str]:
+    """The word a vocab card teaches, folded and without its article: as written and as its lemma
+    (a corrected card may hold the dictionary form of what an older card wrote inflected)."""
     from oknos import greek
 
-    words = [w for w in greek.words(item.el) if greek.fold(w) not in greek.ARTICLES]
-    return greek.fold(" ".join(words))
+    out = set()
+    for text in (item.el, item.lemma):
+        words = [w for w in greek.words(text or "") if greek.fold(w) not in greek.ARTICLES]
+        if words:
+            out.add(greek.fold(" ".join(words)))
+    return out
 
 
 def apply_replaces(catalog: Catalog) -> None:
@@ -653,7 +659,8 @@ def apply_replaces(catalog: Catalog) -> None:
         words: dict[str, str] = {}
         for iid, it in pack.items.items():
             if isinstance(it, VocabItem):
-                words.setdefault(_word(it), iid)
+                for w in _words(it):
+                    words.setdefault(w, iid)
         for old_id in pack.manifest.replaces:
             if old_id == pack.id:
                 continue
@@ -663,7 +670,8 @@ def apply_replaces(catalog: Catalog) -> None:
             if old is None:
                 continue
             for iid, it in list(old.items.items()):
-                target = iid if iid in pack.items else words.get(_word(it)) if isinstance(it, VocabItem) else None
+                target = iid if iid in pack.items else next(
+                    (words[w] for w in sorted(_words(it)) if w in words), None) if isinstance(it, VocabItem) else None
                 if target is None:
                     continue
                 del old.items[iid]

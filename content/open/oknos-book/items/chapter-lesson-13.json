@@ -328,19 +328,19 @@
    "tr": "Doğru cevabı seç."
   },
   "prompt": {
-   "el": "Τι λέει η Αϊσέ για το σαράντα;",
-   "en": "What does Ayşe say about size forty?",
-   "tr": "Ayşe kırk bedeni için ne diyor?"
+   "el": "Τι λέει η Αϊσέ για το γκρι παντελόνι;",
+   "en": "What does Ayşe say about the grey trousers?",
+   "tr": "Ayşe gri pantolon için ne diyor?"
   },
   "options": [
-   "Είναι πολύ στενό.",
-   "Είναι πολύ κοντό.",
-   "Είναι πολύ ακριβό."
+   "«Μου κάνει, αλλά δε μου πάει.»",
+   "«Δε μου κάνει, είναι στενό.»",
+   "«Μου πάει, αλλά είναι ακριβό.»"
   ],
   "answer": 0,
   "explain": {
-   "en": "«Δε μου κάνει το σαράντα. Είναι πολύ στενό.» She then takes the forty-two.",
-   "tr": "«Δε μου κάνει το σαράντα. Είναι πολύ στενό.» Sonra kırk iki bedeni alıyor."
+   "en": "«Μου κάνει, αλλά το γκρι δε μου πάει»: the size is right, the colour is not. So she takes it in blue.",
+   "tr": "«Μου κάνει, αλλά το γκρι δε μου πάει»: beden doğru, renk değil. Bu yüzden mavisini alıyor."
   },
   "source": {
    "doc": "chapter",
@@ -363,9 +363,9 @@
   },
   "statements": [
    {
-    "el": "Η Αϊσέ φοράει το τριάντα εννιά στα παπούτσια.",
-    "en": "Ayşe wears a size thirty-nine in shoes.",
-    "tr": "Ayşe ayakkabıda otuz dokuz giyiyor.",
+    "el": "Η Αϊσέ φοράει το τριάντα οχτώ στα παπούτσια.",
+    "en": "Ayşe wears a size thirty-eight in shoes.",
+    "tr": "Ayşe ayakkabıda otuz sekiz giyiyor.",
     "answer": true
    },
    {
@@ -375,15 +375,15 @@
     "answer": false
    },
    {
-    "el": "Η Μαρίνα δουλεύει στην Ερμού.",
-    "en": "Marina works on Ermou Street.",
-    "tr": "Marina Ermou'da çalışıyor.",
-    "answer": true
+    "el": "Η Μαρίνα δουλεύει κοντά στο σπίτι.",
+    "en": "Marina works near home.",
+    "tr": "Marina evin yakınında çalışıyor.",
+    "answer": false
    }
   ],
   "explain": {
-   "en": "Ayşe asks for the brown shoes «το τριάντα εννιά» and says «Πληρώνω με κάρτα» (by card, not cash). Marina: «Ήμουν στο μαγαζί, στην Ερμού».",
-   "tr": "Ayşe kahverengi ayakkabıları «το τριάντα εννιά» olarak istiyor ve «Πληρώνω με κάρτα» diyor (nakit değil, kartla). Marina: «Ήμουν στο μαγαζί, στην Ερμού»."
+   "en": "The thirty-nine shoes are too big («είναι μεγάλα»), so Ayşe takes the thirty-eight; she says «Πληρώνω με κάρτα» (by card, not cash). Marina: «Η καινούργια μου δουλειά είναι μακριά».",
+   "tr": "Otuz dokuz numara ayakkabılar büyük («είναι μεγάλα»), Ayşe otuz sekizi alıyor; «Πληρώνω με κάρτα» diyor (nakit değil, kartla). Marina: «Η καινούργια μου δουλειά είναι μακριά»."
   },
   "source": {
    "doc": "chapter",

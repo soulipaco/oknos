@@ -48,6 +48,22 @@
   }
  },
  {
+  "id": "v-agchotikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αγχωτικός",
+  "lemma": "αγχωτικός",
+  "pos": "adj",
+  "en": "stressful",
+  "tr": "stresli; gerilimli",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-adiavrochos-adj",
   "type": "vocab",
   "skill": "vocab",
@@ -57,6 +73,38 @@
   "pos": "adj",
   "en": "waterproof",
   "tr": "su geçirmez",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-aidiastikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αηδιαστικός",
+  "lemma": "αηδιαστικός",
+  "pos": "adj",
+  "en": "disgusting",
+  "tr": "iğrenç",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-aichmalotizo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αιχμαλωτίζω",
+  "lemma": "αιχμαλωτίζω",
+  "pos": "verb",
+  "en": "capture",
+  "tr": "esir almak; yakalamak",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -112,6 +160,38 @@
   }
  },
  {
+  "id": "v-allazo-gyrizo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αλλάζω, γυρίζω",
+  "lemma": "αλλάζω, γυρίζω",
+  "pos": "verb",
+  "en": "change; turn",
+  "tr": "değiştirmek; dönmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-amelo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αμελώ",
+  "lemma": "αμελώ",
+  "pos": "verb",
+  "en": "neglect",
+  "tr": "ihmal etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-amesos-adj",
   "type": "vocab",
   "skill": "vocab",
@@ -121,6 +201,22 @@
   "pos": "adv",
   "en": "immediately",
   "tr": "hemen",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-anavosvino",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αναβοσβήνω",
+  "lemma": "αναβοσβήνω",
+  "pos": "verb",
+  "en": "flash; blink",
+  "tr": "yanıp sönmek",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -192,6 +288,38 @@
   }
  },
  {
+  "id": "v-anamorfono-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αναμορφώνω",
+  "lemma": "αναμορφώνω",
+  "pos": "verb",
+  "en": "reform",
+  "tr": "yeniden biçimlendirmek; ıslah etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ananeosimos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ανανεώσιμος",
+  "lemma": "ανανεώσιμος",
+  "pos": "adj",
+  "en": "renewable",
+  "tr": "yenilenebilir",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-anapoda-adv",
   "type": "vocab",
   "skill": "vocab",
@@ -240,6 +368,86 @@
   }
  },
  {
+  "id": "v-anarrichomai-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αναρριχώμαι",
+  "lemma": "αναρριχώμαι",
+  "pos": "verb",
+  "en": "climb (mountaineering)",
+  "tr": "dağa tırmanmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-anasfalis-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ανασφαλής",
+  "lemma": "ανασφαλής",
+  "pos": "adj",
+  "en": "insecure",
+  "tr": "güvensiz",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-anevaino-phrase",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ανεβαίνω",
+  "lemma": "ανεβαίνω",
+  "pos": "verb",
+  "en": "go up; get on",
+  "tr": "çıkmak; binmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-anepithymitos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ανεπιθύμητος",
+  "lemma": "ανεπιθύμητος",
+  "pos": "adj",
+  "en": "unwanted",
+  "tr": "istenmeyen",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-anepisimos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ανεπίσημος",
+  "lemma": "ανεπίσημος",
+  "pos": "adj",
+  "en": "informal",
+  "tr": "gayriresmî",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-anthropistikos-adj",
   "type": "vocab",
   "skill": "vocab",
@@ -256,6 +464,54 @@
   }
  },
  {
+  "id": "v-antecho-oikonomika-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αντέχω οικονομικά",
+  "lemma": "αντέχω οικονομικά",
+  "pos": "verb",
+  "en": "afford",
+  "tr": "maddi olarak karşılamak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-antigrafo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αντιγράφω",
+  "lemma": "αντιγράφω",
+  "pos": "verb",
+  "en": "copy",
+  "tr": "kopyalamak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-antika-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αντίκα",
+  "lemma": "αντίκα",
+  "pos": "adj",
+  "en": "antique",
+  "tr": "antika",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-antimetopizo-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -265,6 +521,54 @@
   "pos": "verb",
   "en": "face; deal with",
   "tr": "başa çıkmak; karşı karşıya kalmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-antiprosopeyo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αντιπροσωπεύω",
+  "lemma": "αντιπροσωπεύω",
+  "pos": "verb",
+  "en": "represent",
+  "tr": "temsil etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-antistekomai-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αντιστέκομαι",
+  "lemma": "αντιστέκομαι",
+  "pos": "verb",
+  "en": "resist",
+  "tr": "direnmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-anypomonos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ανυπόμονος",
+  "lemma": "ανυπόμονος",
+  "pos": "adj",
+  "en": "impatient",
+  "tr": "sabırsız",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -304,6 +608,22 @@
   }
  },
  {
+  "id": "v-axiopoio-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αξιοποιώ",
+  "lemma": "αξιοποιώ",
+  "pos": "verb",
+  "en": "make use of",
+  "tr": "değerlendirmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-apagoreyo-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -329,6 +649,38 @@
   "pos": "adj",
   "en": "unbelievable",
   "tr": "inanılmaz",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-aplo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "απλό",
+  "lemma": "απλό",
+  "pos": "adj",
+  "en": "simple; single ticket",
+  "tr": "basit; tek yön bileti",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-apovivazo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αποβιβάζω",
+  "lemma": "αποβιβάζω",
+  "pos": "verb",
+  "en": "disembark; drop off",
+  "tr": "karaya çıkarmak",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -368,6 +720,38 @@
   }
  },
  {
+  "id": "v-apokoimiemai-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αποκοιμιέμαι",
+  "lemma": "αποκοιμιέμαι",
+  "pos": "verb",
+  "en": "fall asleep",
+  "tr": "uykuya dalmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-apokriatiko-arma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αποκριάτικο άρμα",
+  "lemma": "αποκριάτικο άρμα",
+  "pos": "noun",
+  "en": "carnival float",
+  "tr": "karnaval arabası",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-apokto-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -377,6 +761,70 @@
   "pos": "verb",
   "en": "acquire; get",
   "tr": "edinmek; kazanmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-apoplirono-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αποπληρώνω",
+  "lemma": "αποπληρώνω",
+  "pos": "verb",
+  "en": "pay off",
+  "tr": "borcu kapatmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-apostello-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αποστέλλω",
+  "lemma": "αποστέλλω",
+  "pos": "verb",
+  "en": "send",
+  "tr": "göndermek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-apotelesmatika-adv",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αποτελεσματικά",
+  "lemma": "αποτελεσματικά",
+  "pos": "adv",
+  "en": "effectively",
+  "tr": "etkili biçimde",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-apotomos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "απότομος",
+  "lemma": "απότομος",
+  "pos": "adj",
+  "en": "steep; abrupt",
+  "tr": "sarp; ani",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -400,6 +848,54 @@
   }
  },
  {
+  "id": "v-apofasizo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αποφασίζω",
+  "lemma": "αποφασίζω",
+  "pos": "verb",
+  "en": "decide",
+  "tr": "karar vermek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-apofasismenos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αποφασισμένος",
+  "lemma": "αποφασισμένος",
+  "pos": "adj",
+  "en": "determined",
+  "tr": "kararlı; azimli",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-apofasistikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αποφασιστικός",
+  "lemma": "αποφασιστικός",
+  "pos": "adj",
+  "en": "decisive; determined",
+  "tr": "kararlı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-apofeygo-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -409,6 +905,22 @@
   "pos": "verb",
   "en": "avoid",
   "tr": "kaçınmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-aprosmenos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "απρόσμενος",
+  "lemma": "απρόσμενος",
+  "pos": "adj",
+  "en": "unexpected",
+  "tr": "beklenmedik",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -432,6 +944,38 @@
   }
  },
  {
+  "id": "v-asko-kritiki-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ασκώ κριτική",
+  "lemma": "ασκώ κριτική",
+  "pos": "verb",
+  "en": "criticize",
+  "tr": "eleştirmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-atomo-poy-pairnei-tilefono",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "άτομο που παίρνει τηλέφωνο",
+  "lemma": "άτομο που παίρνει τηλέφωνο",
+  "pos": "noun",
+  "en": "caller",
+  "tr": "arayan kişi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-ayxano-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -441,6 +985,38 @@
   "pos": "verb",
   "en": "increase",
   "tr": "artırmak; artmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-aytochthon-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αυτόχθων",
+  "lemma": "αυτόχθων",
+  "pos": "adj",
+  "en": "native; indigenous",
+  "tr": "otokton; bölgenin yerlisi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-afydatomenos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αφυδατωμένος",
+  "lemma": "αφυδατωμένος",
+  "pos": "adj",
+  "en": "dehydrated",
+  "tr": "susuz kalmış",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -473,6 +1049,86 @@
   "pos": "adj",
   "en": "violent",
   "tr": "şiddetli; zorba",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-viografiko-simeioma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "βιογραφικό σημείωμα",
+  "lemma": "βιογραφικό σημείωμα",
+  "pos": "noun",
+  "en": "CV",
+  "tr": "özgeçmiş",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-vlepo-axiotheata",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "βλέπω αξιοθέατα",
+  "lemma": "βλέπω αξιοθέατα",
+  "pos": "verb",
+  "en": "go sightseeing",
+  "tr": "gezilecek yerleri görmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-voyliazo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "βουλιάζω",
+  "lemma": "βουλιάζω",
+  "pos": "verb",
+  "en": "sink",
+  "tr": "batmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-geografikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "γεωγραφικός",
+  "lemma": "γεωγραφικός",
+  "pos": "adj",
+  "en": "geographical",
+  "tr": "coğrafi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-gipedo-kriket",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "γήπεδο κρίκετ",
+  "lemma": "γήπεδο κρίκετ",
+  "pos": "noun",
+  "en": "cricket field",
+  "tr": "kriket sahası",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -544,6 +1200,54 @@
   }
  },
  {
+  "id": "v-dexiosi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "δεξίωση",
+  "lemma": "δεξίωση",
+  "pos": "noun",
+  "en": "reception",
+  "tr": "kabul töreni; resepsiyon",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-deyteri-thesi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "δεύτερη θέση",
+  "lemma": "δεύτερη θέση",
+  "pos": "noun",
+  "en": "second place",
+  "tr": "ikincilik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-dimitriako",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "δημητριακό",
+  "lemma": "δημητριακό",
+  "pos": "noun",
+  "en": "cereal (grain)",
+  "tr": "tahıl",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-dimioyrgikos-adj",
   "type": "vocab",
   "skill": "vocab",
@@ -553,6 +1257,54 @@
   "pos": "adj",
   "en": "creative",
   "tr": "yaratıcı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-dimosies-sygkoinonies",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "δημόσιες συγκοινωνίες",
+  "lemma": "δημόσιες συγκοινωνίες",
+  "pos": "noun",
+  "en": "public transport",
+  "tr": "toplu taşıma",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-dimosieyo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "δημοσιεύω",
+  "lemma": "δημοσιεύω",
+  "pos": "verb",
+  "en": "publish",
+  "tr": "yayımlamak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-diago-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "διάγω",
+  "lemma": "διάγω",
+  "pos": "verb",
+  "en": "spend (time); lead (a life)",
+  "tr": "geçirmek; sürdürmek",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -576,6 +1328,22 @@
   }
  },
  {
+  "id": "v-diakosmo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "διακοσμώ",
+  "lemma": "διακοσμώ",
+  "pos": "verb",
+  "en": "decorate",
+  "tr": "süslemek; dekore etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-diamartyromai-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -585,6 +1353,22 @@
   "pos": "verb",
   "en": "protest",
   "tr": "protesto etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-diarkis-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "διαρκής",
+  "lemma": "διαρκής",
+  "pos": "adj",
+  "en": "lasting; permanent",
+  "tr": "sürekli; kalıcı",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -608,6 +1392,22 @@
   }
  },
  {
+  "id": "v-diasfalizo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "διασφαλίζω",
+  "lemma": "διασφαλίζω",
+  "pos": "verb",
+  "en": "ensure",
+  "tr": "sağlamak; güvence altına almak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-diasozo-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -616,7 +1416,121 @@
   "lemma": "διασώζω",
   "pos": "verb",
   "en": "rescue",
-  "tr": "kurtarmak",
+  "tr": "kurtarmak (tehlikeden)",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-diafimizo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "διαφημίζω",
+  "lemma": "διαφημίζω",
+  "pos": "verb",
+  "en": "advertise",
+  "tr": "reklam yapmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-diachorizo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "διαχωρίζω",
+  "lemma": "διαχωρίζω",
+  "pos": "verb",
+  "en": "separate",
+  "tr": "ayırmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-dino-grothia-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "δίνω γροθιά",
+  "lemma": "δίνω γροθιά",
+  "pos": "verb",
+  "en": "punch",
+  "tr": "yumruk atmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ditrochi-amaxa",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "δίτροχη άμαξα",
+  "lemma": "δίτροχη άμαξα",
+  "pos": "noun",
+  "en": "two-wheeled carriage",
+  "tr": "iki tekerlekli araba",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-dramatika-simantika-adv",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "δραματικά, σημαντικά",
+  "lemma": "δραματικά, σημαντικά",
+  "pos": "adv",
+  "en": "dramatically; significantly",
+  "tr": "çarpıcı biçimde; önemli ölçüde",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-dyo-zeygari",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "δύο, ζευγάρι",
+  "lemma": "δύο, ζευγάρι",
+  "pos": "phrase",
+  "en": "two; pair",
+  "tr": "iki; çift",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26",
+   "doubt": "two words joined, not one card: δύο (two) and ζευγάρι (couple, pair)"
+  },
+  "status": "needs_review"
+ },
+ {
+  "id": "v-dystychismenos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "δυστυχισμένος",
+  "lemma": "δυστυχισμένος",
+  "pos": "adj",
+  "en": "unhappy",
+  "tr": "mutsuz",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -688,6 +1602,54 @@
   }
  },
  {
+  "id": "v-eidika-adv",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ειδικά",
+  "lemma": "ειδικά",
+  "pos": "adv",
+  "en": "especially",
+  "tr": "özellikle",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-eikr-peripoy-4-stremmata",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "έικρ (περίπου 4 στρέμματα)",
+  "lemma": "έικρ (περίπου 4 στρέμματα)",
+  "pos": "noun",
+  "en": "acre",
+  "tr": "akr",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ekatontachronos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "εκατοντάχρονος",
+  "lemma": "εκατοντάχρονος",
+  "pos": "noun",
+  "en": "centenarian; hundred-year-old",
+  "tr": "yüz yaşındaki",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-ektheto-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -752,6 +1714,38 @@
   }
  },
  {
+  "id": "v-empeiros-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "έμπειρος",
+  "lemma": "έμπειρος",
+  "pos": "adj",
+  "en": "experienced",
+  "tr": "deneyimli",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-enallaktikos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "εναλλακτικός",
+  "lemma": "εναλλακτικός",
+  "pos": "adj",
+  "en": "alternative",
+  "tr": "alternatif",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-energitikos-adj",
   "type": "vocab",
   "skill": "vocab",
@@ -768,6 +1762,38 @@
   }
  },
  {
+  "id": "v-entharryno-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ενθαρρύνω",
+  "lemma": "ενθαρρύνω",
+  "pos": "verb",
+  "en": "encourage",
+  "tr": "cesaretlendirmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ennia-me-pente-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "εννιά με πέντε",
+  "lemma": "εννιά με πέντε",
+  "pos": "adj",
+  "en": "nine to five",
+  "tr": "dokuzdan beşe",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-enochlo-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -777,6 +1803,22 @@
   "pos": "verb",
   "en": "bother; disturb",
   "tr": "rahatsız etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-entyposiakos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "εντυπωσιακός",
+  "lemma": "εντυπωσιακός",
+  "pos": "adj",
+  "en": "impressive",
+  "tr": "etkileyici",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -816,6 +1858,72 @@
   }
  },
  {
+  "id": "v-exafanizomai-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "εξαφανίζομαι",
+  "lemma": "εξαφανίζομαι",
+  "pos": "verb",
+  "en": "disappear",
+  "tr": "kaybolmak; yok olmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-exafanismenos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "εξαφανισμένος",
+  "lemma": "εξαφανισμένος",
+  "pos": "adj",
+  "en": "extinct; vanished",
+  "tr": "yok olmuş; kaybolmuş",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-exereynisi-spilaion",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "εξερεύνηση σπηλαίων",
+  "lemma": "εξερεύνηση σπηλαίων",
+  "pos": "noun",
+  "en": "cave exploration",
+  "tr": "mağara keşfi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-epanalamvanomen-os-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "επαναλαμβανόμεν ος",
+  "lemma": "επαναλαμβανόμεν ος",
+  "pos": "adj",
+  "en": "repeated",
+  "tr": "tekrarlanan",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26",
+   "doubt": "OCR damage: the word is split (επαναλαμβανόμενος)"
+  },
+  "status": "needs_review"
+ },
+ {
   "id": "v-epanafortizo-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -825,6 +1933,54 @@
   "pos": "verb",
   "en": "recharge",
   "tr": "yeniden şarj etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-epanachrisimopoio-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "επαναχρησιμοποιώ",
+  "lemma": "επαναχρησιμοποιώ",
+  "pos": "verb",
+  "en": "reuse",
+  "tr": "yeniden kullanmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-epeyfimo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "επευφημώ",
+  "lemma": "επευφημώ",
+  "pos": "verb",
+  "en": "cheer",
+  "tr": "alkışlamak; tezahürat yapmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-epi-toy-parontos-adv",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "επί του παρόντος",
+  "lemma": "επί του παρόντος",
+  "pos": "adv",
+  "en": "for the time being",
+  "tr": "şimdilik",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -896,6 +2052,120 @@
   }
  },
  {
+  "id": "v-epipleon-adj~2",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "επιπλέων",
+  "lemma": "επιπλέων",
+  "pos": "adj",
+  "en": "floating",
+  "tr": "yüzen",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26",
+   "doubt": "probably the word επιπλέον (additional); επιπλέων is a rare participle"
+  },
+  "status": "needs_review"
+ },
+ {
+  "id": "v-epiponos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "επίπονος",
+  "lemma": "επίπονος",
+  "pos": "adj",
+  "en": "laborious; painful",
+  "tr": "zahmetli; sıkıcı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-epistrefo-chrimata-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "επιστρέφω χρήματα",
+  "lemma": "επιστρέφω χρήματα",
+  "pos": "verb",
+  "en": "refund",
+  "tr": "para iadesi yapmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-epitrapezio-paichnidi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "επιτραπέζιο παιχνίδι",
+  "lemma": "επιτραπέζιο παιχνίδι",
+  "pos": "noun",
+  "en": "board game",
+  "tr": "masa oyunu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ergatiko-dynamiko",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "εργατικό δυναμικό",
+  "lemma": "εργατικό δυναμικό",
+  "pos": "noun",
+  "en": "workforce",
+  "tr": "iş gücü",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-erethismenos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ερεθισμένος",
+  "lemma": "ερεθισμένος",
+  "pos": "adj",
+  "en": "irritated",
+  "tr": "tahriş olmuş",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ermario-archeiothetisis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ερμάριο αρχειοθέτησης",
+  "lemma": "ερμάριο αρχειοθέτησης",
+  "pos": "noun",
+  "en": "filing cabinet",
+  "tr": "dosya dolabı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-eyeliktos-adj",
   "type": "vocab",
   "skill": "vocab",
@@ -905,6 +2175,86 @@
   "pos": "adj",
   "en": "flexible",
   "tr": "esnek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-eytychos-adv",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ευτυχώς",
+  "lemma": "ευτυχώς",
+  "pos": "adv",
+  "en": "luckily",
+  "tr": "neyse ki; şükür",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-eyfyis-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ευφυής",
+  "lemma": "ευφυής",
+  "pos": "adj",
+  "en": "intelligent",
+  "tr": "zeki",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-echo-prosonta-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "έχω προσόντα",
+  "lemma": "έχω προσόντα",
+  "pos": "verb",
+  "en": "be qualified",
+  "tr": "nitelikli olmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-zoiros-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ζωηρός",
+  "lemma": "ζωηρός",
+  "pos": "adj",
+  "en": "lively; spirited",
+  "tr": "hareketli; canlı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-zoni-kathismatos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ζώνη καθίσματος",
+  "lemma": "ζώνη καθίσματος",
+  "pos": "noun",
+  "en": "seat belt",
+  "tr": "emniyet kemeri",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -946,6 +2296,193 @@
   }
  },
  {
+  "id": "v-akri",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η άκρη",
+  "lemma": "άκρη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "edge; end",
+  "tr": "kenar; uç",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-aktinovolia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ακτινοβολία",
+  "lemma": "ακτινοβολία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "radiation",
+  "tr": "radyasyon",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-aktogrammi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ακτογραμμή",
+  "lemma": "ακτογραμμή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "coastline",
+  "tr": "kıyı şeridi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-allilepidrasi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η αλληλεπίδραση",
+  "lemma": "αλληλεπίδραση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "interaction",
+  "tr": "etkileşim",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-anatoli",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ανατολή",
+  "lemma": "ανατολή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "sunrise; east",
+  "tr": "gün doğumu; doğu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-anapsychi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η αναψυχή",
+  "lemma": "αναψυχή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "recreation",
+  "tr": "dinlence; eğlence",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-anexartisia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ανεξαρτησία",
+  "lemma": "ανεξαρτησία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "independence",
+  "tr": "bağımsızlık",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-antiliaki-krema",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η αντηλιακή κρέμα",
+  "lemma": "αντηλιακή κρέμα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "sunscreen",
+  "tr": "güneş kremi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-antlia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η αντλία",
+  "lemma": "αντλία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "pump",
+  "tr": "pompa",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "w-apodeixi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η απόδειξη",
+  "lemma": "απόδειξη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "receipt; proof",
+  "tr": "fiş; makbuz; kanıt",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "opus, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-apolaysi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η απόλαυση",
+  "lemma": "απόλαυση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "enjoyment",
+  "tr": "keyif; zevk",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-apofoitisi",
   "type": "vocab",
   "skill": "vocab",
@@ -956,6 +2493,23 @@
   "gender": "f",
   "en": "graduation",
   "tr": "mezuniyet",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-apopsilosi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η αποψίλωση",
+  "lemma": "αποψίλωση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "deforestation",
+  "tr": "ormansızlaşma",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -980,6 +2534,142 @@
   }
  },
  {
+  "id": "v-architektoniki",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η αρχιτεκτονική",
+  "lemma": "αρχιτεκτονική",
+  "pos": "noun",
+  "gender": "f",
+  "en": "architecture",
+  "tr": "mimarlık",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-asfaleia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ασφάλεια",
+  "lemma": "ασφάλεια",
+  "pos": "noun",
+  "gender": "f",
+  "en": "safety; security",
+  "tr": "güvenlik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-asfalisi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ασφάλιση",
+  "lemma": "ασφάλιση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "insurance",
+  "tr": "sigorta",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-veltiosi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η βελτίωση",
+  "lemma": "βελτίωση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "improvement",
+  "tr": "gelişme; iyileşme",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-venzini",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η βενζίνη",
+  "lemma": "βενζίνη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "petrol",
+  "tr": "benzin",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-viopoikilotita",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η βιοποικιλότητα",
+  "lemma": "βιοποικιλότητα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "biodiversity",
+  "tr": "biyolojik çeşitlilik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-geitonia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η γειτονιά",
+  "lemma": "γειτονιά",
+  "pos": "noun",
+  "gender": "f",
+  "en": "neighbourhood",
+  "tr": "mahalle",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-gennisi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η γέννηση",
+  "lemma": "γέννηση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "birth",
+  "tr": "doğum",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-giogka",
   "type": "vocab",
   "skill": "vocab",
@@ -997,6 +2687,23 @@
   }
  },
  {
+  "id": "v-gnomi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η γνώμη",
+  "lemma": "γνώμη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "opinion",
+  "tr": "görüş",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-gnosi",
   "type": "vocab",
   "skill": "vocab",
@@ -1007,6 +2714,23 @@
   "gender": "f",
   "en": "knowledge",
   "tr": "bilgi; birikim",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-grafomichani",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η γραφομηχανή",
+  "lemma": "γραφομηχανή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "typewriter",
+  "tr": "daktilo",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1048,6 +2772,23 @@
   }
  },
  {
+  "id": "v-dimioyrgikotita",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η δημιουργικότητα",
+  "lemma": "δημιουργικότητα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "creativity",
+  "tr": "yaratıcılık",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-diadromi",
   "type": "vocab",
   "skill": "vocab",
@@ -1058,6 +2799,91 @@
   "gender": "f",
   "en": "route; journey",
   "tr": "güzergâh; yol",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-diathesi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η διάθεση",
+  "lemma": "διάθεση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "mood; disposition",
+  "tr": "ruh hali; istek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-diaskedasi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η διασκέδαση",
+  "lemma": "διασκέδαση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "fun; entertainment",
+  "tr": "eğlence",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-diatirisi-prostasia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η διατήρηση, προστασία",
+  "lemma": "διατήρηση, προστασία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "preservation; protection",
+  "tr": "koruma; muhafaza",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-diatrofi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η διατροφή",
+  "lemma": "διατροφή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "diet; nutrition",
+  "tr": "beslenme",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-diafaneia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η διαφάνεια",
+  "lemma": "διαφάνεια",
+  "pos": "noun",
+  "gender": "f",
+  "en": "transparency; slide",
+  "tr": "şeffaflık; slayt",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1082,6 +2908,40 @@
   }
  },
  {
+  "id": "v-doxa",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η δόξα",
+  "lemma": "δόξα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "glory",
+  "tr": "şan; şöhret",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-dynami",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η δύναμη",
+  "lemma": "δύναμη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "strength; power",
+  "tr": "güç; kuvvet",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-eisagogi",
   "type": "vocab",
   "skill": "vocab",
@@ -1092,6 +2952,23 @@
   "gender": "f",
   "en": "introduction; import",
   "tr": "giriş; ithalat",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-eisodos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η είσοδος",
+  "lemma": "είσοδος",
+  "pos": "noun",
+  "gender": "f",
+  "en": "entrance",
+  "tr": "giriş",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1184,6 +3061,40 @@
   }
  },
  {
+  "id": "v-emfanisi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η εμφάνιση",
+  "lemma": "εμφάνιση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "appearance",
+  "tr": "görünüm",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-enosi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ένωση",
+  "lemma": "ένωση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "union; association",
+  "tr": "birlik; birleşme",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-exaskisi-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -1218,6 +3129,40 @@
   }
  },
  {
+  "id": "v-exereynitiki-apostoli",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η εξερευνητική αποστολή",
+  "lemma": "εξερευνητική αποστολή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "exploration mission",
+  "tr": "keşif görevi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-exigisi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η εξήγηση",
+  "lemma": "εξήγηση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "explanation",
+  "tr": "açıklama",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-exoysia",
   "type": "vocab",
   "skill": "vocab",
@@ -1235,6 +3180,91 @@
   }
  },
  {
+  "id": "v-exochi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η εξοχή",
+  "lemma": "εξοχή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "the country (outside town)",
+  "tr": "kır; taşra",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-epivevaiosi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η επιβεβαίωση",
+  "lemma": "επιβεβαίωση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "confirmation",
+  "tr": "onay",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-epiviosi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η επιβίωση",
+  "lemma": "επιβίωση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "survival",
+  "tr": "hayatta kalma",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-epideixi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η επίδειξη",
+  "lemma": "επίδειξη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "show; demonstration",
+  "tr": "gösteri; sergileme",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-epithesi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η επίθεση",
+  "lemma": "επίθεση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "attack",
+  "tr": "saldırı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-epirroi",
   "type": "vocab",
   "skill": "vocab",
@@ -1244,7 +3274,7 @@
   "pos": "noun",
   "gender": "f",
   "en": "influence",
-  "tr": "etki",
+  "tr": "nüfuz",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1279,6 +3309,23 @@
   "gender": "f",
   "en": "return (noun); way back",
   "tr": "dönüş",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-eyaisthitopoiisi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ευαισθητοποίηση",
+  "lemma": "ευαισθητοποίηση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "raising awareness",
+  "tr": "farkındalık yaratma",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1337,6 +3384,57 @@
   }
  },
  {
+  "id": "v-thalamigos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η θαλαμηγός",
+  "lemma": "θαλαμηγός",
+  "pos": "noun",
+  "gender": "f",
+  "en": "yacht",
+  "tr": "yat",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-thyella",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η θύελλα",
+  "lemma": "θύελλα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "gale",
+  "tr": "şiddetli fırtına",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-thysia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η θυσία",
+  "lemma": "θυσία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "sacrifice",
+  "tr": "fedakârlık; kurban",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-idea",
   "type": "vocab",
   "skill": "vocab",
@@ -1354,6 +3452,40 @@
   }
  },
  {
+  "id": "v-intsa",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ίντσα",
+  "lemma": "ίντσα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "inch",
+  "tr": "inç",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-isorropia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ισορροπία",
+  "lemma": "ισορροπία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "balance",
+  "tr": "denge",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-ischys",
   "type": "vocab",
   "skill": "vocab",
@@ -1363,7 +3495,24 @@
   "pos": "noun",
   "gender": "f",
   "en": "power; strength",
-  "tr": "güç; kuvvet",
+  "tr": "kudret",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kalligrafia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η καλλιγραφία",
+  "lemma": "καλλιγραφία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "calligraphy",
+  "tr": "hat sanatı; güzel yazı",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1381,6 +3530,40 @@
   "gender": "f",
   "en": "hut",
   "tr": "kulübe",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kardia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η καρδιά",
+  "lemma": "καρδιά",
+  "pos": "noun",
+  "gender": "f",
+  "en": "heart",
+  "tr": "kalp",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kataigida-me-keraynoys",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η καταιγίδα (με κεραυνούς)",
+  "lemma": "καταιγίδα (με κεραυνούς)",
+  "pos": "noun",
+  "gender": "f",
+  "en": "thunderstorm",
+  "tr": "gök gürültülü fırtına",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1456,6 +3639,23 @@
   }
  },
  {
+  "id": "v-kapsoyla",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η κάψουλα",
+  "lemma": "κάψουλα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "capsule",
+  "tr": "kapsül",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-kilida",
   "type": "vocab",
   "skill": "vocab",
@@ -1490,6 +3690,74 @@
   }
  },
  {
+  "id": "v-koitida",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η κοιτίδα",
+  "lemma": "κοιτίδα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "cradle; birthplace",
+  "tr": "beşik; doğum yeri",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-koryfi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η κορυφή",
+  "lemma": "κορυφή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "peak; top",
+  "tr": "zirve; tepe",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-koykkida",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η κουκκίδα",
+  "lemma": "κουκκίδα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "dot",
+  "tr": "nokta",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-koyltoyra",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η κουλτούρα",
+  "lemma": "κουλτούρα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "culture",
+  "tr": "kültür",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-kykloforiaki-symforisi",
   "type": "vocab",
   "skill": "vocab",
@@ -1500,6 +3768,40 @@
   "gender": "f",
   "en": "traffic jam",
   "tr": "trafik sıkışıklığı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-laspi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η λάσπη",
+  "lemma": "λάσπη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "mud",
+  "tr": "çamur",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-leoforos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η λεωφόρος",
+  "lemma": "λεωφόρος",
+  "pos": "noun",
+  "gender": "f",
+  "en": "avenue; boulevard",
+  "tr": "cadde; bulvar",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1524,6 +3826,23 @@
   }
  },
  {
+  "id": "v-marka",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η μάρκα",
+  "lemma": "μάρκα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "brand",
+  "tr": "marka",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-meleti",
   "type": "vocab",
   "skill": "vocab",
@@ -1534,6 +3853,40 @@
   "gender": "f",
   "en": "study (noun); research",
   "tr": "çalışma; etüt",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-mesi-ilikia-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η μέση ηλικία",
+  "lemma": "μέση ηλικία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "middle age",
+  "tr": "orta yaş",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-metavoli",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η μεταβολή",
+  "lemma": "μεταβολή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "alteration",
+  "tr": "değişim",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1566,8 +3919,42 @@
   "lemma": "μόλυνση",
   "pos": "noun",
   "gender": "f",
-  "en": "pollution",
-  "tr": "kirlilik",
+  "en": "pollution (contamination)",
+  "tr": "kirlenme",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-morfi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η μορφή",
+  "lemma": "μορφή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "form; shape",
+  "tr": "biçim; şekil",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-mpataria",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η μπαταρία",
+  "lemma": "μπαταρία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "battery",
+  "tr": "pil",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1592,6 +3979,40 @@
   }
  },
  {
+  "id": "v-odontovoyrtsa",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η οδοντόβουρτσα",
+  "lemma": "οδοντόβουρτσα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "toothbrush",
+  "tr": "diş fırçası",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-oikonomia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η οικονομία",
+  "lemma": "οικονομία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "economy; saving",
+  "tr": "ekonomi; tasarruf",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-omilia",
   "type": "vocab",
   "skill": "vocab",
@@ -1602,6 +4023,91 @@
   "gender": "f",
   "en": "speech; talk",
   "tr": "konuşma",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-omichli",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ομίχλη",
+  "lemma": "ομίχλη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "fog",
+  "tr": "sis",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-omorfia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ομορφιά",
+  "lemma": "ομορφιά",
+  "pos": "noun",
+  "gender": "f",
+  "en": "beauty",
+  "tr": "güzellik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-omprela",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ομπρέλα",
+  "lemma": "ομπρέλα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "umbrella",
+  "tr": "şemsiye",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-omonymi-lexi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ομώνυμη λέξη",
+  "lemma": "ομώνυμη λέξη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "homonym",
+  "tr": "eş sesli sözcük",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-orasi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η όραση",
+  "lemma": "όραση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "sight; vision",
+  "tr": "görme; görüş",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1677,6 +4183,57 @@
   }
  },
  {
+  "id": "v-paroysiasi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η παρουσίαση",
+  "lemma": "παρουσίαση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "presentation",
+  "tr": "sunum",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pediada",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η πεδιάδα",
+  "lemma": "πεδιάδα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "plain",
+  "tr": "ova",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-peitharchia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η πειθαρχία",
+  "lemma": "πειθαρχία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "discipline",
+  "tr": "disiplin",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-perigrafi",
   "type": "vocab",
   "skill": "vocab",
@@ -1687,6 +4244,23 @@
   "gender": "f",
   "en": "description",
   "tr": "tanım; betimleme",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-periodos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η περίοδος",
+  "lemma": "περίοδος",
+  "pos": "noun",
+  "gender": "f",
+  "en": "period",
+  "tr": "dönem",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1711,6 +4285,23 @@
   }
  },
  {
+  "id": "v-petseta",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η πετσέτα",
+  "lemma": "πετσέτα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "towel",
+  "tr": "havlu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-pinakothiki",
   "type": "vocab",
   "skill": "vocab",
@@ -1728,6 +4319,23 @@
   }
  },
  {
+  "id": "v-plagia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η πλαγιά",
+  "lemma": "πλαγιά",
+  "pos": "noun",
+  "gender": "f",
+  "en": "slope",
+  "tr": "yamaç",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-plateia",
   "type": "vocab",
   "skill": "vocab",
@@ -1738,6 +4346,40 @@
   "gender": "f",
   "en": "square",
   "tr": "meydan",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-platforma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η πλατφόρμα",
+  "lemma": "πλατφόρμα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "platform",
+  "tr": "platform; peron",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pliromi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η πληρωμή",
+  "lemma": "πληρωμή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "payment",
+  "tr": "ödeme",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1779,6 +4421,23 @@
   }
  },
  {
+  "id": "v-posotita",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ποσότητα",
+  "lemma": "ποσότητα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "quantity",
+  "tr": "miktar",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-proagogi",
   "type": "vocab",
   "skill": "vocab",
@@ -1789,6 +4448,23 @@
   "gender": "f",
   "en": "promotion",
   "tr": "terfi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-prokatavoli",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η προκαταβολή",
+  "lemma": "προκαταβολή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "advance payment; deposit",
+  "tr": "peşinat; avans",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1813,6 +4489,23 @@
   }
  },
  {
+  "id": "v-promitheia-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η προμήθεια",
+  "lemma": "προμήθεια",
+  "pos": "noun",
+  "gender": "f",
+  "en": "commission; supply",
+  "tr": "komisyon; tedarik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-proodos",
   "type": "vocab",
   "skill": "vocab",
@@ -1830,6 +4523,23 @@
   }
  },
  {
+  "id": "v-prosvasimotita",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η προσβασιμότητα",
+  "lemma": "προσβασιμότητα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "accessibility",
+  "tr": "erişilebilirlik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-prospatheia",
   "type": "vocab",
   "skill": "vocab",
@@ -1840,6 +4550,40 @@
   "gender": "f",
   "en": "effort; attempt",
   "tr": "çaba; girişim",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-prostateyomeni-periochi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η προστατευόμενη περιοχή",
+  "lemma": "προστατευόμενη περιοχή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "protected area",
+  "tr": "korunan alan",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-proypothesi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η προϋπόθεση",
+  "lemma": "προϋπόθεση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "condition; prerequisite",
+  "tr": "koşul; önkoşul",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1881,6 +4625,23 @@
   }
  },
  {
+  "id": "v-ravdos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ράβδος",
+  "lemma": "ράβδος",
+  "pos": "noun",
+  "gender": "f",
+  "en": "rod; stick",
+  "tr": "çubuk; değnek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-raketa",
   "type": "vocab",
   "skill": "vocab",
@@ -1915,6 +4676,23 @@
   }
  },
  {
+  "id": "v-sampania",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η σαμπάνια",
+  "lemma": "σαμπάνια",
+  "pos": "noun",
+  "gender": "f",
+  "en": "champagne",
+  "tr": "şampanya",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-seira",
   "type": "vocab",
   "skill": "vocab",
@@ -1925,6 +4703,23 @@
   "gender": "f",
   "en": "row; series; turn",
   "tr": "sıra; dizi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-seira-mathimaton",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η σειρά μαθημάτων",
+  "lemma": "σειρά μαθημάτων",
+  "pos": "noun",
+  "gender": "f",
+  "en": "series of lessons",
+  "tr": "ders dizisi",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1949,6 +4744,40 @@
   }
  },
  {
+  "id": "v-silikoni",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η σιλικόνη",
+  "lemma": "σιλικόνη",
+  "pos": "noun",
+  "gender": "f",
+  "en": "silicone",
+  "tr": "silikon",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-skoini",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η σκοινί",
+  "lemma": "σκοινί",
+  "pos": "noun",
+  "gender": "n",
+  "en": "rope",
+  "tr": "ip; halat",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-sodeia",
   "type": "vocab",
   "skill": "vocab",
@@ -1959,6 +4788,23 @@
   "gender": "f",
   "en": "harvest; crop",
   "tr": "hasat; ürün",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-stegasi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η στέγαση",
+  "lemma": "στέγαση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "housing",
+  "tr": "konut; barınma",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -1983,6 +4829,23 @@
   }
  },
  {
+  "id": "v-symfonia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η συμφωνία",
+  "lemma": "συμφωνία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "agreement; symphony",
+  "tr": "anlaşma; senfoni",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-synaylia",
   "type": "vocab",
   "skill": "vocab",
@@ -2000,6 +4863,40 @@
   }
  },
  {
+  "id": "v-synodeia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η συνοδεία",
+  "lemma": "συνοδεία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "escort; entourage",
+  "tr": "refakat; maiyet",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-synomilia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η συνομιλία",
+  "lemma": "συνομιλία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "conversation",
+  "tr": "sohbet; konuşma",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-syskeyi",
   "type": "vocab",
   "skill": "vocab",
@@ -2010,6 +4907,23 @@
   "gender": "f",
   "en": "device",
   "tr": "cihaz",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-scholiki-stoli",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η σχολική στολή",
+  "lemma": "σχολική στολή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "school uniform",
+  "tr": "okul üniforması",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2044,6 +4958,40 @@
   "gender": "f",
   "en": "identity; ID",
   "tr": "kimlik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-teleti",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η τελετή",
+  "lemma": "τελετή",
+  "pos": "noun",
+  "gender": "f",
+  "en": "ceremony",
+  "tr": "tören",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-toyrmpina",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η τουρμπίνα",
+  "lemma": "τουρμπίνα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "turbine",
+  "tr": "türbin",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2102,6 +5050,23 @@
   }
  },
  {
+  "id": "v-ypogeia-diavasi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η υπόγεια διάβαση",
+  "lemma": "υπόγεια διάβαση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "underpass",
+  "tr": "alt geçit",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-farma",
   "type": "vocab",
   "skill": "vocab",
@@ -2136,6 +5101,23 @@
   }
  },
  {
+  "id": "v-fterna",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η φτέρνα",
+  "lemma": "φτέρνα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "heel",
+  "tr": "topuk",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-fyli",
   "type": "vocab",
   "skill": "vocab",
@@ -2150,6 +5132,23 @@
   "source": {
    "doc": "oknos-words",
    "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "w-fysi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η φύση",
+  "lemma": "φύση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "nature",
+  "tr": "doğa",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "opus, from the Greek word, 2026-11-26"
   }
  },
  {
@@ -2187,6 +5186,74 @@
   }
  },
  {
+  "id": "v-chionothyella",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η χιονοθύελλα",
+  "lemma": "χιονοθύελλα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "snowstorm",
+  "tr": "kar fırtınası",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-chorigia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η χορηγία",
+  "lemma": "χορηγία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "sponsorship",
+  "tr": "sponsorluk",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-psychagogia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ψυχαγωγία",
+  "lemma": "ψυχαγωγία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "recreation; entertainment",
+  "tr": "eğlence; dinlence",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-psychologia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ψυχολογία",
+  "lemma": "ψυχολογία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "psychology",
+  "tr": "psikoloji",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-ora-aichmis",
   "type": "vocab",
   "skill": "vocab",
@@ -2197,6 +5264,40 @@
   "gender": "f",
   "en": "rush hour",
   "tr": "yoğun saat",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ithopoios-moysikos-choreytis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ηθοποιός – μουσικός – χορευτής",
+  "lemma": "ηθοποιός – μουσικός – χορευτής",
+  "pos": "noun",
+  "en": "actor – musician – dancer",
+  "tr": "oyuncu – müzisyen – dansçı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26",
+   "doubt": "three words listed in one entry"
+  },
+  "status": "needs_review"
+ },
+ {
+  "id": "v-ilektronikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ηλεκτρονικός",
+  "lemma": "ηλεκτρονικός",
+  "pos": "adj",
+  "en": "electronic",
+  "tr": "elektronik",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2220,6 +5321,86 @@
   }
  },
  {
+  "id": "v-iremos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ήρεμος",
+  "lemma": "ήρεμος",
+  "pos": "adj",
+  "en": "calm",
+  "tr": "dingin",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-theatriko-ergo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "θεατρικό έργο",
+  "lemma": "θεατρικό έργο",
+  "pos": "noun",
+  "en": "play (theatre)",
+  "tr": "tiyatro oyunu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-therizoalonistiki-michani",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "θεριζοαλωνιστική μηχανή",
+  "lemma": "θεριζοαλωνιστική μηχανή",
+  "pos": "noun",
+  "en": "combine harvester",
+  "tr": "biçerdöver",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-thrylikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "θρυλικός",
+  "lemma": "θρυλικός",
+  "pos": "adj",
+  "en": "legendary",
+  "tr": "efsanevi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-thymomenos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "θυμωμένος",
+  "lemma": "θυμωμένος",
+  "pos": "adj",
+  "en": "angry",
+  "tr": "kızgın",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-iatrikos-adj",
   "type": "vocab",
   "skill": "vocab",
@@ -2229,6 +5410,70 @@
   "pos": "adj",
   "en": "medical",
   "tr": "tıbbi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-idiotita-meloys",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ιδιότητα μέλους",
+  "lemma": "ιδιότητα μέλους",
+  "pos": "noun",
+  "en": "membership",
+  "tr": "üyelik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ieros-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ιερός",
+  "lemma": "ιερός",
+  "pos": "adj",
+  "en": "sacred",
+  "tr": "kutsal",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ierotelestia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ιεροτελεστία",
+  "lemma": "ιεροτελεστία",
+  "pos": "noun",
+  "en": "religious ceremony",
+  "tr": "ayin",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-isodynamo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ισοδυναμώ",
+  "lemma": "ισοδυναμώ",
+  "pos": "verb",
+  "en": "be equivalent to",
+  "tr": "eşdeğer olmak",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2268,6 +5513,118 @@
   }
  },
  {
+  "id": "v-kala-exoplismenos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "καλά εξοπλισμένος",
+  "lemma": "καλά εξοπλισμένος",
+  "pos": "adj",
+  "en": "well equipped",
+  "tr": "iyi donanımlı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kalypto-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "καλύπτω",
+  "lemma": "καλύπτω",
+  "pos": "verb",
+  "en": "cover",
+  "tr": "örtmek; kapsamak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kamenos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "καμένος",
+  "lemma": "καμένος",
+  "pos": "adj",
+  "en": "burnt",
+  "tr": "yanmış",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kanonikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κανονικός",
+  "lemma": "κανονικός",
+  "pos": "adj",
+  "en": "normal; regular",
+  "tr": "normal; olağan",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kano-anaskafi-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κάνω ανασκαφή",
+  "lemma": "κάνω ανασκαφή",
+  "pos": "phrase",
+  "en": "excavate",
+  "tr": "kazı yapmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kano-gnorimies-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κάνω γνωριμίες",
+  "lemma": "κάνω γνωριμίες",
+  "pos": "phrase",
+  "en": "make acquaintances",
+  "tr": "tanışmak; yeni insanlarla tanışmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kano-diatrisi-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κάνω διάτρηση",
+  "lemma": "κάνω διάτρηση",
+  "pos": "phrase",
+  "en": "drill a hole",
+  "tr": "delik açmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-kano-ski-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -2284,6 +5641,38 @@
   }
  },
  {
+  "id": "v-karotsi-toy-soyper-market",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "καρότσι του σούπερ μάρκετ",
+  "lemma": "καρότσι του σούπερ μάρκετ",
+  "pos": "noun",
+  "en": "shopping cart",
+  "tr": "market arabası",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-karfia-ypodimaton-oreivasias",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "καρφιά υποδημάτων ορειβασίας",
+  "lemma": "καρφιά υποδημάτων ορειβασίας",
+  "pos": "noun",
+  "en": "climbing-boot spikes",
+  "tr": "dağcı ayakkabısı çivileri",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-katagrafo-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -2293,6 +5682,38 @@
   "pos": "verb",
   "en": "record; write down",
   "tr": "kaydetmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-katarreo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "καταρρέω",
+  "lemma": "καταρρέω",
+  "pos": "verb",
+  "en": "collapse",
+  "tr": "çökmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kataskinosi-vasis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κατασκήνωση βάσης",
+  "lemma": "κατασκήνωση βάσης",
+  "pos": "noun",
+  "en": "base camp",
+  "tr": "ana kamp",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2325,6 +5746,102 @@
   "pos": "verb",
   "en": "go down; get off",
   "tr": "inmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-katevaino-plagia-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κατεβαίνω πλαγιά",
+  "lemma": "κατεβαίνω πλαγιά",
+  "pos": "verb",
+  "en": "go down a slope",
+  "tr": "yamaçtan inmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kaysaeria",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "καυσαέρια",
+  "lemma": "καυσαέρια",
+  "pos": "noun",
+  "en": "exhaust fumes",
+  "tr": "egzoz gazları",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kafeini",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "καφεΐνη",
+  "lemma": "καφεΐνη",
+  "pos": "noun",
+  "en": "caffeine",
+  "tr": "kafein",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kefali-tyrioy",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κεφάλι (τυριού)",
+  "lemma": "κεφάλι (τυριού)",
+  "pos": "noun",
+  "en": "wheel of cheese",
+  "tr": "peynir kalıbı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-klasikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κλασικός",
+  "lemma": "κλασικός",
+  "pos": "adj",
+  "en": "classic; classical",
+  "tr": "klasik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-klevo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κλέβω",
+  "lemma": "κλέβω",
+  "pos": "verb",
+  "en": "steal",
+  "tr": "çalmak",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2380,6 +5897,22 @@
   }
  },
  {
+  "id": "v-konservokoyti",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κονσερβοκούτι",
+  "lemma": "κονσερβοκούτι",
+  "pos": "noun",
+  "en": "tin can",
+  "tr": "konserve kutusu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-koralliogenis-yfalos",
   "type": "vocab",
   "skill": "vocab",
@@ -2389,6 +5922,70 @@
   "pos": "noun",
   "en": "coral reef",
   "tr": "mercan resifi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-korna",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κόρνα",
+  "lemma": "κόρνα",
+  "pos": "noun",
+  "en": "horn",
+  "tr": "korna",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-koryfogrammi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κορυφογραμμή",
+  "lemma": "κορυφογραμμή",
+  "pos": "noun",
+  "en": "ridge",
+  "tr": "dağ sırtı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-koyzina-syskeyi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κουζίνα (συσκευή)",
+  "lemma": "κουζίνα (συσκευή)",
+  "pos": "noun",
+  "en": "cooker",
+  "tr": "ocak; fırın",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-koynao-to-cheri-se-endeixi-chairetismoy-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κουνάω το χέρι σε ένδειξη χαιρετισμού",
+  "lemma": "κουνάω το χέρι σε ένδειξη χαιρετισμού",
+  "pos": "verb",
+  "en": "wave (the hand)",
+  "tr": "el sallamak",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2412,6 +6009,86 @@
   }
  },
  {
+  "id": "v-kyvikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κυβικός",
+  "lemma": "κυβικός",
+  "pos": "adj",
+  "en": "cubic",
+  "tr": "küp biçimli; kübik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kykloforo-me-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κυκλοφορώ με",
+  "lemma": "κυκλοφορώ με",
+  "pos": "verb",
+  "en": "drive around in",
+  "tr": "ile dolaşmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-latris-tis-peripeteias",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "λάτρης της περιπέτειας",
+  "lemma": "λάτρης της περιπέτειας",
+  "pos": "noun",
+  "en": "adventure lover",
+  "tr": "macera tutkunu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ligoteros-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "λιγότερος",
+  "lemma": "λιγότερος",
+  "pos": "adj",
+  "en": "less; fewer",
+  "tr": "daha az",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-mageireyto-katsarolas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μαγειρευτό κατσαρόλας",
+  "lemma": "μαγειρευτό κατσαρόλας",
+  "pos": "noun",
+  "en": "stew; casserole",
+  "tr": "güveç",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-magikos-adj",
   "type": "vocab",
   "skill": "vocab",
@@ -2428,6 +6105,118 @@
   }
  },
  {
+  "id": "v-magnitikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μαγνητικός",
+  "lemma": "μαγνητικός",
+  "pos": "adj",
+  "en": "magnetic",
+  "tr": "manyetik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-mazikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μαζικός",
+  "lemma": "μαζικός",
+  "pos": "adj",
+  "en": "mass",
+  "tr": "toplu; kitlesel",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-mathimatikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μαθηματικός",
+  "lemma": "μαθηματικός",
+  "pos": "adj",
+  "en": "mathematical",
+  "tr": "matematiksel",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-makrinos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μακρινός",
+  "lemma": "μακρινός",
+  "pos": "adj",
+  "en": "distant",
+  "tr": "uzak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-me-egkaymata-apo-ton-ilio-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "με εγκαύματα από τον ήλιο",
+  "lemma": "με εγκαύματα από τον ήλιο",
+  "pos": "adj",
+  "en": "sunburnt",
+  "tr": "güneş yanığı olan",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-mesos-oros",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μέσος όρος",
+  "lemma": "μέσος όρος",
+  "pos": "noun",
+  "en": "average",
+  "tr": "ortalama",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-metagenestera-adv",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μεταγενέστερα",
+  "lemma": "μεταγενέστερα",
+  "pos": "adv",
+  "en": "later",
+  "tr": "sonradan",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-metakinoymai-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -2437,6 +6226,102 @@
   "pos": "verb",
   "en": "travel around; move around",
   "tr": "dolaşmak; ulaşım sağlamak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-metakinoymai-me-dimosia-mesa-metaforas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μετακινούμαι με δημόσια μέσα μεταφοράς",
+  "lemma": "μετακινούμαι με δημόσια μέσα μεταφοράς",
+  "pos": "verb",
+  "en": "travel by public transport",
+  "tr": "toplu taşımayla seyahat etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-metalliko-docheio-ladioy",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μεταλλικό δοχείο λαδιού",
+  "lemma": "μεταλλικό δοχείο λαδιού",
+  "pos": "noun",
+  "en": "metal oil can",
+  "tr": "metal yağ tenekesi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-metalliko-tampoyro",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μεταλλικό ταμπούρο",
+  "lemma": "μεταλλικό ταμπούρο",
+  "pos": "noun",
+  "en": "metal drum",
+  "tr": "metal davul",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-metapolo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μεταπωλώ",
+  "lemma": "μεταπωλώ",
+  "pos": "verb",
+  "en": "resell",
+  "tr": "yeniden satmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-mikrografia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μικρογραφία",
+  "lemma": "μικρογραφία",
+  "pos": "noun",
+  "en": "miniature",
+  "tr": "minyatür",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-miktos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μικτός",
+  "lemma": "μικτός",
+  "pos": "adj",
+  "en": "mixed; gross",
+  "tr": "karışık; brüt",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2476,6 +6361,54 @@
   }
  },
  {
+  "id": "v-moysonas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μουσώνας",
+  "lemma": "μουσώνας",
+  "pos": "noun",
+  "en": "monsoon",
+  "tr": "muson",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-neyriasmenos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "νευριασμένος",
+  "lemma": "νευριασμένος",
+  "pos": "adj",
+  "en": "angry; annoyed",
+  "tr": "sinirli",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-neyrikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "νευρικός",
+  "lemma": "νευρικός",
+  "pos": "adj",
+  "en": "nervous",
+  "tr": "gergin; sinirli",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-niko-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -2485,6 +6418,70 @@
   "pos": "verb",
   "en": "win; defeat",
   "tr": "yenmek; kazanmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-nomadikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "νομαδικός",
+  "lemma": "νομαδικός",
+  "pos": "adj",
+  "en": "nomadic",
+  "tr": "göçebe",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-xakoystos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ξακουστός",
+  "lemma": "ξακουστός",
+  "pos": "adj",
+  "en": "famous; renowned",
+  "tr": "ünlü; meşhur",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-xafnikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ξαφνικός",
+  "lemma": "ξαφνικός",
+  "pos": "adj",
+  "en": "sudden",
+  "tr": "ani",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-xenychtao-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ξενυχτάω",
+  "lemma": "ξενυχτάω",
+  "pos": "verb",
+  "en": "stay up all night",
+  "tr": "sabahlamak",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2508,6 +6505,105 @@
   }
  },
  {
+  "id": "v-xefloydizo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ξεφλουδίζω",
+  "lemma": "ξεφλουδίζω",
+  "pos": "verb",
+  "en": "peel",
+  "tr": "soymak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-xefortono-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ξεφορτώνω",
+  "lemma": "ξεφορτώνω",
+  "pos": "verb",
+  "en": "unload",
+  "tr": "boşaltmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-xylokopos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ξυλοκόπος",
+  "lemma": "ξυλοκόπος",
+  "pos": "noun",
+  "en": "woodcutter",
+  "tr": "oduncu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-agnostos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο άγνωστος",
+  "lemma": "άγνωστος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "stranger; unknown person",
+  "tr": "yabancı; bilinmeyen kişi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-athlitis-toy-kik-mpox",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο αθλητής του κικ μποξ",
+  "lemma": "αθλητής του κικ μποξ",
+  "pos": "noun",
+  "gender": "m",
+  "en": "kickboxer",
+  "tr": "kick boksçu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-aisthitiras",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο αισθητήρας",
+  "lemma": "αισθητήρας",
+  "pos": "noun",
+  "gender": "m",
+  "en": "sensor",
+  "tr": "sensör",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-aionas",
   "type": "vocab",
   "skill": "vocab",
@@ -2518,6 +6614,74 @@
   "gender": "m",
   "en": "century",
   "tr": "yüzyıl",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-akroatis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο ακροατής",
+  "lemma": "ακροατής",
+  "pos": "noun",
+  "gender": "m",
+  "en": "listener",
+  "tr": "dinleyici",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ampelonas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο αμπελώνας",
+  "lemma": "αμπελώνας",
+  "pos": "noun",
+  "gender": "m",
+  "en": "vineyard",
+  "tr": "bağ",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-anagnostis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο αναγνώστης",
+  "lemma": "αναγνώστης",
+  "pos": "noun",
+  "gender": "m",
+  "en": "reader",
+  "tr": "okuyucu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-antartis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο αντάρτης",
+  "lemma": "αντάρτης",
+  "pos": "noun",
+  "gender": "m",
+  "en": "guerrilla; rebel",
+  "tr": "gerilla; isyancı",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2559,6 +6723,40 @@
   }
  },
  {
+  "id": "v-atmos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο ατμός",
+  "lemma": "ατμός",
+  "pos": "noun",
+  "gender": "m",
+  "en": "steam",
+  "tr": "buhar",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-achthoforos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο αχθοφόρος",
+  "lemma": "αχθοφόρος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "porter",
+  "tr": "hamal",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-vichas-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -2576,6 +6774,23 @@
   }
  },
  {
+  "id": "v-gampros",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο γαμπρός",
+  "lemma": "γαμπρός",
+  "pos": "noun",
+  "gender": "m",
+  "en": "groom; son-in-law",
+  "tr": "damat",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-diagonizomenos",
   "type": "vocab",
   "skill": "vocab",
@@ -2586,6 +6801,40 @@
   "gender": "m",
   "en": "contestant",
   "tr": "yarışmacı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-diaititis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο διαιτητής",
+  "lemma": "διαιτητής",
+  "pos": "noun",
+  "gender": "m",
+  "en": "referee",
+  "tr": "hakem",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-didaskon",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο διδάσκων",
+  "lemma": "διδάσκων",
+  "pos": "noun",
+  "gender": "m",
+  "en": "teacher; lecturer",
+  "tr": "öğretmen; ders veren",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2627,6 +6876,23 @@
   }
  },
  {
+  "id": "v-ekfonitis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο εκφωνητής",
+  "lemma": "εκφωνητής",
+  "pos": "noun",
+  "gender": "m",
+  "en": "announcer",
+  "tr": "spiker",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-enthoysiasmos",
   "type": "vocab",
   "skill": "vocab",
@@ -2654,6 +6920,40 @@
   "gender": "m",
   "en": "celebration",
   "tr": "kutlama",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ergodotis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο εργοδότης",
+  "lemma": "εργοδότης",
+  "pos": "noun",
+  "gender": "m",
+  "en": "employer",
+  "tr": "işveren",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-efeyretis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο εφευρέτης",
+  "lemma": "εφευρέτης",
+  "pos": "noun",
+  "gender": "m",
+  "en": "inventor",
+  "tr": "mucit",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2780,6 +7080,142 @@
   }
  },
  {
+  "id": "v-kapnos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο καπνός",
+  "lemma": "καπνός",
+  "pos": "noun",
+  "gender": "m",
+  "en": "smoke",
+  "tr": "duman",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-katanalotis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο καταναλωτής",
+  "lemma": "καταναλωτής",
+  "pos": "noun",
+  "gender": "m",
+  "en": "consumer",
+  "tr": "tüketici",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-katarraktis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο καταρράκτης",
+  "lemma": "καταρράκτης",
+  "pos": "noun",
+  "gender": "m",
+  "en": "waterfall",
+  "tr": "şelale",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kindynos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο κίνδυνος",
+  "lemma": "κίνδυνος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "danger",
+  "tr": "tehlike",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-komvos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο κόμβος",
+  "lemma": "κόμβος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "junction; hub",
+  "tr": "kavşak; merkez",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kyvernitis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο κυβερνήτης",
+  "lemma": "κυβερνήτης",
+  "pos": "noun",
+  "gender": "m",
+  "en": "governor; helmsman",
+  "tr": "vali; dümenci",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kyvos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο κύβος",
+  "lemma": "κύβος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "cube; dice",
+  "tr": "küp; zar",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-lamptiras",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο λαμπτήρας",
+  "lemma": "λαμπτήρας",
+  "pos": "noun",
+  "gender": "m",
+  "en": "light bulb",
+  "tr": "ampul",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-marathonios",
   "type": "vocab",
   "skill": "vocab",
@@ -2807,6 +7243,23 @@
   "gender": "m",
   "en": "salary; wage",
   "tr": "maaş",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-mythos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο μύθος",
+  "lemma": "μύθος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "myth",
+  "tr": "mit; efsane",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2848,6 +7301,40 @@
   }
  },
  {
+  "id": "v-xenos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο ξένος",
+  "lemma": "ξένος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "foreigner; stranger",
+  "tr": "yabancı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-orfanos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο ορφανός",
+  "lemma": "ορφανός",
+  "pos": "noun",
+  "gender": "m",
+  "en": "orphan (masculine)",
+  "tr": "yetim (eril)",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-palaistis",
   "type": "vocab",
   "skill": "vocab",
@@ -2858,6 +7345,40 @@
   "gender": "m",
   "en": "wrestler",
   "tr": "güreşçi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-paroysiastis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο παρουσιαστής",
+  "lemma": "παρουσιαστής",
+  "pos": "noun",
+  "gender": "m",
+  "en": "presenter",
+  "tr": "sunucu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pilos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο πηλός",
+  "lemma": "πηλός",
+  "pos": "noun",
+  "gender": "m",
+  "en": "clay",
+  "tr": "kil; çamur",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2892,6 +7413,23 @@
   "gender": "m",
   "en": "culture; civilization",
   "tr": "kültür; uygarlık",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ponos-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο πόνος",
+  "lemma": "πόνος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "pain",
+  "tr": "ağrı; acı",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -2950,6 +7488,23 @@
   }
  },
  {
+  "id": "v-rythmos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο ρυθμός",
+  "lemma": "ρυθμός",
+  "pos": "noun",
+  "gender": "m",
+  "en": "rhythm; pace",
+  "tr": "ritim; tempo",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-skeletos",
   "type": "vocab",
   "skill": "vocab",
@@ -2967,6 +7522,23 @@
   }
  },
  {
+  "id": "v-spagkos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο σπάγκος",
+  "lemma": "σπάγκος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "string; twine",
+  "tr": "sicim; ip",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-stathmos",
   "type": "vocab",
   "skill": "vocab",
@@ -2977,6 +7549,23 @@
   "gender": "m",
   "en": "station",
   "tr": "istasyon",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-stegnotiras-mallion",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο στεγνωτήρας μαλλιών",
+  "lemma": "στεγνωτήρας μαλλιών",
+  "pos": "noun",
+  "gender": "m",
+  "en": "hair dryer",
+  "tr": "saç kurutma makinesi",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3035,6 +7624,23 @@
   }
  },
  {
+  "id": "v-symmetechon",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο συμμετέχων",
+  "lemma": "συμμετέχων",
+  "pos": "noun",
+  "gender": "m",
+  "en": "participant",
+  "tr": "katılımcı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-schediastis",
   "type": "vocab",
   "skill": "vocab",
@@ -3045,6 +7651,23 @@
   "gender": "m",
   "en": "designer",
   "tr": "tasarımcı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-solinas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο σωλήνας",
+  "lemma": "σωλήνας",
+  "pos": "noun",
+  "gender": "m",
+  "en": "pipe; tube",
+  "tr": "boru; tüp",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3086,6 +7709,57 @@
   }
  },
  {
+  "id": "v-tyfonas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο τυφώνας",
+  "lemma": "τυφώνας",
+  "pos": "noun",
+  "gender": "m",
+  "en": "typhoon",
+  "tr": "tayfun",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ypaithrios-pagkos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο υπαίθριος πάγκος",
+  "lemma": "υπαίθριος πάγκος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "outdoor stall",
+  "tr": "açık hava tezgâhı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ypeythynos-ypodochis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο υπεύθυνος υποδοχής",
+  "lemma": "υπεύθυνος υποδοχής",
+  "pos": "noun",
+  "gender": "m",
+  "en": "receptionist; person in charge of reception",
+  "tr": "resepsiyon sorumlusu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-ypnosakos",
   "type": "vocab",
   "skill": "vocab",
@@ -3120,6 +7794,40 @@
   }
  },
  {
+  "id": "v-yponomos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο υπόνομος",
+  "lemma": "υπόνομος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "sewer",
+  "tr": "kanalizasyon",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ypostiriktis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο υποστηρικτής",
+  "lemma": "υποστηρικτής",
+  "pos": "noun",
+  "gender": "m",
+  "en": "supporter",
+  "tr": "destekçi; taraftar",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-fakelos",
   "type": "vocab",
   "skill": "vocab",
@@ -3137,6 +7845,40 @@
   }
  },
  {
+  "id": "v-frynos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο φρύνος",
+  "lemma": "φρύνος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "toad",
+  "tr": "kara kurbağası",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-chalkos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο χαλκός",
+  "lemma": "χαλκός",
+  "pos": "noun",
+  "gender": "m",
+  "en": "copper",
+  "tr": "bakır",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-chrysos",
   "type": "vocab",
   "skill": "vocab",
@@ -3145,8 +7887,25 @@
   "lemma": "χρυσός",
   "pos": "noun",
   "gender": "m",
-  "en": "gold",
-  "tr": "altın",
+  "en": "gold (metal)",
+  "tr": "altın (maden)",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-chorikos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο χωρικός",
+  "lemma": "χωρικός",
+  "pos": "noun",
+  "gender": "m",
+  "en": "villager",
+  "tr": "köylü",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3187,6 +7946,39 @@
   }
  },
  {
+  "id": "v-glossologos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο/η γλωσσολόγος",
+  "lemma": "γλωσσολόγος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "linguist",
+  "tr": "dilbilimci",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-dimarchos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο/η δήμαρχος",
+  "lemma": "ο/η δήμαρχος",
+  "pos": "noun",
+  "en": "mayor",
+  "tr": "belediye başkanı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-didymos",
   "type": "vocab",
   "skill": "vocab",
@@ -3203,6 +7995,22 @@
   }
  },
  {
+  "id": "v-emporos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο/η έμπορος",
+  "lemma": "ο/η έμπορος",
+  "pos": "noun",
+  "en": "merchant; trader",
+  "tr": "tüccar",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-epaggelmatias",
   "type": "vocab",
   "skill": "vocab",
@@ -3210,8 +8018,74 @@
   "el": "ο/η επαγγελματίας",
   "lemma": "επαγγελματίας",
   "pos": "noun",
-  "en": "professional",
+  "en": "professional (person)",
   "tr": "profesyonel; uzman",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-epicheirimatias",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο/η επιχειρηματίας",
+  "lemma": "ο/η επιχειρηματίας",
+  "pos": "noun",
+  "en": "businessperson",
+  "tr": "işadamı; iş insanı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-mythistoriografos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο/η μυθιστοριογράφος",
+  "lemma": "μυθιστοριογράφος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "novelist",
+  "tr": "romancı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-oikonomos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο/η οικονόμος",
+  "lemma": "οικονόμος",
+  "pos": "noun",
+  "en": "steward; housekeeper",
+  "tr": "kâhya; ev idarecisi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-optikos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο/η οπτικός",
+  "lemma": "οπτικός",
+  "pos": "noun",
+  "gender": "m",
+  "en": "optician",
+  "tr": "gözlükçü",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3251,6 +8125,300 @@
   }
  },
  {
+  "id": "v-ypoyrgos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο/η υπουργός",
+  "lemma": "υπουργός",
+  "pos": "noun",
+  "en": "minister",
+  "tr": "bakan",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-odika-erga",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "οδικά έργα",
+  "lemma": "οδικά έργα",
+  "pos": "noun",
+  "en": "roadworks",
+  "tr": "yol çalışması",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-odiko-taxidi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "οδικό ταξίδι",
+  "lemma": "οδικό ταξίδι",
+  "pos": "noun",
+  "en": "road trip",
+  "tr": "karayolu yolculuğu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-agrotes",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "οι αγρότες",
+  "lemma": "αγρότες",
+  "pos": "noun",
+  "gender": "m",
+  "en": "farmers",
+  "tr": "çiftçiler",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-dosolipsies",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "οι δοσοληψίες",
+  "lemma": "δοσοληψίες",
+  "pos": "noun",
+  "gender": "f",
+  "en": "dealings",
+  "tr": "ilişkiler; alışveriş işleri",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-dynatotites",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "οι δυνατότητες",
+  "lemma": "δυνατότητες",
+  "pos": "noun",
+  "gender": "f",
+  "en": "possibilities; abilities",
+  "tr": "olanaklar; yetenekler",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-katakomves",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "οι κατακόμβες",
+  "lemma": "κατακόμβες",
+  "pos": "noun",
+  "gender": "f",
+  "en": "catacombs",
+  "tr": "yeraltı mezarlıkları",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pezoi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "οι πεζοί",
+  "lemma": "πεζοί",
+  "pos": "noun",
+  "gender": "m",
+  "en": "pedestrians",
+  "tr": "yayalar",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-propodes",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "οι πρόποδες",
+  "lemma": "πρόποδες",
+  "pos": "noun",
+  "gender": "m",
+  "en": "foothills",
+  "tr": "dağ eteği",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-oikodomo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "οικοδομώ",
+  "lemma": "οικοδομώ",
+  "pos": "verb",
+  "en": "build",
+  "tr": "inşa etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-oikologikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "οικολογικός",
+  "lemma": "οικολογικός",
+  "pos": "adj",
+  "en": "ecological; eco-friendly",
+  "tr": "ekolojik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-oikositos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "οικόσιτος",
+  "lemma": "οικόσιτος",
+  "pos": "adj",
+  "en": "home-fed; living at home",
+  "tr": "evde beslenen; evde kalan",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-omadiki-ergasia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ομαδική εργασία",
+  "lemma": "ομαδική εργασία",
+  "pos": "noun",
+  "en": "teamwork",
+  "tr": "ekip çalışması",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-oreinos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ορεινός",
+  "lemma": "ορεινός",
+  "pos": "adj",
+  "en": "mountainous",
+  "tr": "dağlık",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-orizo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ορίζω",
+  "lemma": "ορίζω",
+  "pos": "verb",
+  "en": "define; set",
+  "tr": "belirlemek; tanımlamak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-orio-tachytitas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "όριο ταχύτητας",
+  "lemma": "όριο ταχύτητας",
+  "pos": "noun",
+  "en": "speed limit",
+  "tr": "hız sınırı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pagetodis-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "παγετώδης",
+  "lemma": "παγετώδης",
+  "pos": "adj",
+  "en": "icy; freezing",
+  "tr": "buz gibi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pagkosmios-adv",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "παγκοσμίως",
+  "lemma": "παγκοσμίως",
+  "pos": "adv",
+  "en": "worldwide",
+  "tr": "dünya çapında",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-pagomenos-adj",
   "type": "vocab",
   "skill": "vocab",
@@ -3260,6 +8428,86 @@
   "pos": "adj",
   "en": "frozen; icy",
   "tr": "donmuş; buz gibi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pathaino-vlavi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "παθαίνω βλάβη",
+  "lemma": "παθαίνω βλάβη",
+  "pos": "verb",
+  "en": "break down",
+  "tr": "arızalanmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pairno-enan-ypnako-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "παίρνω έναν υπνάκο",
+  "lemma": "παίρνω έναν υπνάκο",
+  "pos": "verb",
+  "en": "take a nap",
+  "tr": "kısa bir uyku çekmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-palaistra",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "παλαίστρα",
+  "lemma": "παλαίστρα",
+  "pos": "noun",
+  "en": "gym; wrestling school",
+  "tr": "spor salonu; güreş salonu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pamp",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "παμπ",
+  "lemma": "παμπ",
+  "pos": "noun",
+  "en": "pub",
+  "tr": "pub; bar",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pantreyomai-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "παντρεύομαι",
+  "lemma": "παντρεύομαι",
+  "pos": "verb",
+  "en": "get married",
+  "tr": "evlenmek",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3283,6 +8531,38 @@
   }
  },
  {
+  "id": "v-paralamvano-phrase",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "παραλαμβάνω",
+  "lemma": "παραλαμβάνω",
+  "pos": "verb",
+  "en": "pick up; receive",
+  "tr": "teslim almak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-paraponiemai-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "παραπονιέμαι",
+  "lemma": "παραπονιέμαι",
+  "pos": "verb",
+  "en": "complain",
+  "tr": "şikâyet etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-paratiro-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -3292,6 +8572,22 @@
   "pos": "verb",
   "en": "observe; notice",
   "tr": "gözlemlemek; fark etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-paremferis-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "παρεμφερής",
+  "lemma": "παρεμφερής",
+  "pos": "adj",
+  "en": "akin; similar",
+  "tr": "benzer; yakın",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3315,6 +8611,104 @@
   }
  },
  {
+  "id": "v-pasignostos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πασίγνωστος",
+  "lemma": "πασίγνωστος",
+  "pos": "adj",
+  "en": "very well known",
+  "tr": "çok ünlü",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-patao-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πατάω",
+  "lemma": "πατάω",
+  "pos": "verb",
+  "en": "step on; press",
+  "tr": "basmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pato",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πατώ",
+  "lemma": "πατώ",
+  "pos": "verb",
+  "en": "step on; press (also πατάω)",
+  "tr": "basmak (πατάω ile aynı)",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pelorios-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πελώριος",
+  "lemma": "πελώριος",
+  "pos": "adj",
+  "en": "enormous",
+  "tr": "devasa",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-perifanos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "περήφανος",
+  "lemma": "περήφανος",
+  "pos": "adj",
+  "en": "proud",
+  "tr": "gururlu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-perivallontologo-s",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "περιβαλλοντολόγο ς",
+  "lemma": "περιβαλλοντολόγο ς",
+  "pos": "noun",
+  "en": "environmentalist",
+  "tr": "çevre uzmanı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26",
+   "doubt": "OCR damage: stray space, should be περιβαλλοντολόγος"
+  },
+  "status": "needs_review"
+ },
+ {
   "id": "v-peripoy-adv",
   "type": "vocab",
   "skill": "vocab",
@@ -3331,6 +8725,22 @@
   }
  },
  {
+  "id": "v-peristrefomeni-karekla",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "περιστρεφόμενη καρέκλα",
+  "lemma": "περιστρεφόμενη καρέκλα",
+  "pos": "noun",
+  "en": "swivel chair",
+  "tr": "döner sandalye",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-pernao-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -3340,6 +8750,102 @@
   "pos": "verb",
   "en": "pass; spend (time)",
   "tr": "geçmek; geçirmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pernao-chrono-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "περνάω χρόνο",
+  "lemma": "περνάω χρόνο",
+  "pos": "verb",
+  "en": "spend time",
+  "tr": "zaman geçirmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-petao-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πετάω",
+  "lemma": "πετάω",
+  "pos": "verb",
+  "en": "fly; throw (also written πετώ)",
+  "tr": "uçmak; atmak (πετώ ile aynı)",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pinakas-eidopoiiseon",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πίνακας ειδοποιήσεων",
+  "lemma": "πίνακας ειδοποιήσεων",
+  "pos": "noun",
+  "en": "notice board",
+  "tr": "ilan panosu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-plaketa-kyklomatos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πλακέτα κυκλώματος",
+  "lemma": "πλακέτα κυκλώματος",
+  "pos": "noun",
+  "en": "circuit board",
+  "tr": "devre kartı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-politismikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πολιτισμικός",
+  "lemma": "πολιτισμικός",
+  "pos": "adj",
+  "en": "cultural",
+  "tr": "kültürel",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-polytelis-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πολυτελής",
+  "lemma": "πολυτελής",
+  "pos": "adj",
+  "en": "luxurious",
+  "tr": "lüks (sıfat)",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3372,6 +8878,86 @@
   "pos": "adj",
   "en": "colourful",
   "tr": "rengârenk",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ponos-sto-ayti",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πόνος στο αυτί",
+  "lemma": "πόνος στο αυτί",
+  "pos": "noun",
+  "en": "earache",
+  "tr": "kulak ağrısı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-poy-trechei-myti-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "που τρέχει (μύτη)",
+  "lemma": "που τρέχει",
+  "pos": "adj",
+  "en": "runny (nose)",
+  "tr": "akan (burun)",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pragmatopoio-kratisi-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πραγματοποιώ κράτηση",
+  "lemma": "πραγματοποιώ κράτηση",
+  "pos": "phrase",
+  "en": "make a reservation",
+  "tr": "rezervasyon yapmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-presvyteros-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πρεσβύτερος",
+  "lemma": "πρεσβύτερος",
+  "pos": "adj",
+  "en": "elder",
+  "tr": "daha yaşlı; yaşça büyük",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-prokalo-vlaves-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "προκαλώ βλάβες",
+  "lemma": "προκαλώ βλάβες",
+  "pos": "verb",
+  "en": "cause damage",
+  "tr": "zarar vermek",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3427,6 +9013,38 @@
   }
  },
  {
+  "id": "v-prositos-oikonomika-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "προσιτός οικονομικά",
+  "lemma": "προσιτός οικονομικά",
+  "pos": "adj",
+  "en": "affordable",
+  "tr": "ekonomik olarak uygun fiyatlı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-prostateytika-gyalia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "προστατευτικά γυαλιά",
+  "lemma": "προστατευτικά γυαλιά",
+  "pos": "noun",
+  "en": "protective glasses",
+  "tr": "koruyucu gözlük",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-prostateyo-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -3459,6 +9077,22 @@
   }
  },
  {
+  "id": "v-prosfero-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "προσφέρω",
+  "lemma": "προσφέρω",
+  "pos": "verb",
+  "en": "offer",
+  "tr": "sunmak; teklif etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-protimo-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -3468,6 +9102,214 @@
   "pos": "verb",
   "en": "prefer",
   "tr": "tercih etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-proti-thesi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πρώτη θέση",
+  "lemma": "πρώτη θέση",
+  "pos": "noun",
+  "en": "first place; first class",
+  "tr": "birincilik; birinci sınıf",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-protofanis-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πρωτοφανής",
+  "lemma": "πρωτοφανής",
+  "pos": "adj",
+  "en": "unprecedented",
+  "tr": "eşi görülmemiş",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pyrinikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πυρηνικός",
+  "lemma": "πυρηνικός",
+  "pos": "adj",
+  "en": "nuclear",
+  "tr": "nükleer",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-polo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πωλώ",
+  "lemma": "πωλώ",
+  "pos": "verb",
+  "en": "sell",
+  "tr": "satmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-radiofonikos-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ραδιοφωνικός",
+  "lemma": "ραδιοφωνικός",
+  "pos": "adj",
+  "en": "radio (adjective)",
+  "tr": "radyo ile ilgili",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-rafi-gia-vivlia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ράφι για βιβλία",
+  "lemma": "ράφι για βιβλία",
+  "pos": "noun",
+  "en": "bookshelf",
+  "tr": "kitap rafı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-romantismos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ρομαντισμός",
+  "lemma": "ρομαντισμός",
+  "pos": "noun",
+  "en": "romanticism",
+  "tr": "romantizm",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-rythmizo-organo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ρυθμίζω (όργανο)",
+  "lemma": "ρυθμίζω (όργανο)",
+  "pos": "verb",
+  "en": "tune (an instrument)",
+  "tr": "akort etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-rypaino-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ρυπαίνω",
+  "lemma": "ρυπαίνω",
+  "pos": "verb",
+  "en": "pollute",
+  "tr": "kirletmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-safis-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σαφής",
+  "lemma": "σαφής",
+  "pos": "adj",
+  "en": "clear",
+  "tr": "açık; net",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-se-forma-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σε φόρμα",
+  "lemma": "σε φόρμα",
+  "pos": "adj",
+  "en": "in shape",
+  "tr": "formda",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-siderono-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σιδερώνω",
+  "lemma": "σιδερώνω",
+  "pos": "verb",
+  "en": "iron",
+  "tr": "ütülemek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-siopilos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σιωπηλός",
+  "lemma": "σιωπηλός",
+  "pos": "adj",
+  "en": "silent",
+  "tr": "suskun",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3491,6 +9333,54 @@
   }
  },
  {
+  "id": "v-skoteinos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σκοτεινός",
+  "lemma": "σκοτεινός",
+  "pos": "adj",
+  "en": "dark (gloomy)",
+  "tr": "karanlık",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-skoyter-chionioy",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σκούτερ χιονιού",
+  "lemma": "σκούτερ χιονιού",
+  "pos": "noun",
+  "en": "snow scooter",
+  "tr": "kar skuteri",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "w-sovaros-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σοβαρός",
+  "lemma": "σοβαρός",
+  "pos": "adj",
+  "en": "serious",
+  "tr": "ciddi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "opus, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-spania-adv",
   "type": "vocab",
   "skill": "vocab",
@@ -3500,6 +9390,38 @@
   "pos": "adv",
   "en": "rarely",
   "tr": "nadiren",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-spanios-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σπάνιος",
+  "lemma": "σπάνιος",
+  "pos": "adj",
+  "en": "rare",
+  "tr": "nadir",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-spilaio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σπήλαιο",
+  "lemma": "σπήλαιο",
+  "pos": "noun",
+  "en": "cave (formal)",
+  "tr": "mağara (resmî)",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3523,6 +9445,38 @@
   }
  },
  {
+  "id": "v-statheros-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σταθερός",
+  "lemma": "σταθερός",
+  "pos": "adj",
+  "en": "steady; fixed",
+  "tr": "sabit; sağlam",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-stathmos-epivivasis-apovivasis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σταθμός (επιβίβασης αποβίβασης)",
+  "lemma": "σταθμός (επιβίβασης αποβίβασης)",
+  "pos": "noun",
+  "en": "boarding and drop-off stop",
+  "tr": "biniş-iniş durağı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-sti-mesi",
   "type": "vocab",
   "skill": "vocab",
@@ -3539,6 +9493,22 @@
   }
  },
  {
+  "id": "v-stithaio-asfaleias",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "στηθαίο ασφαλείας",
+  "lemma": "στηθαίο ασφαλείας",
+  "pos": "noun",
+  "en": "safety railing",
+  "tr": "güvenlik korkuluğu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-ston-aera",
   "type": "vocab",
   "skill": "vocab",
@@ -3548,6 +9518,54 @@
   "pos": "phrase",
   "en": "on air; in the air",
   "tr": "yayında; havada",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-strifogyrizo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "στριφογυρίζω",
+  "lemma": "στριφογυρίζω",
+  "pos": "verb",
+  "en": "twirl; spin around",
+  "tr": "dönmek; dönüp durmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-sygkrotima-me-metallika-kroysta",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "συγκρότημα με μεταλλικά κρουστά",
+  "lemma": "συγκρότημα με μεταλλικά κρουστά",
+  "pos": "noun",
+  "en": "band with metal percussion",
+  "tr": "metal vurmalı çalgılar topluluğu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-syllego-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "συλλέγω",
+  "lemma": "συλλέγω",
+  "pos": "verb",
+  "en": "collect",
+  "tr": "derlemek",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3587,6 +9605,38 @@
   }
  },
  {
+  "id": "v-sympagis-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "συμπαγής",
+  "lemma": "συμπαγής",
+  "pos": "adj",
+  "en": "solid; compact",
+  "tr": "sağlam; katı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-syndeo-stin-priza-phrase",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "συνδέω στην πρίζα",
+  "lemma": "συνδέω στην πρίζα",
+  "pos": "phrase",
+  "en": "plug in",
+  "tr": "prize takmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-syndyazo-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -3619,6 +9669,118 @@
   }
  },
  {
+  "id": "v-synergazomai-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "συνεργάζομαι",
+  "lemma": "συνεργάζομαι",
+  "pos": "verb",
+  "en": "cooperate",
+  "tr": "işbirliği yapmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-synithis-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "συνήθης",
+  "lemma": "συνήθης",
+  "pos": "adj",
+  "en": "usual",
+  "tr": "olağan",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-synistomenos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "συνιστώμενος",
+  "lemma": "συνιστώμενος",
+  "pos": "adj",
+  "en": "recommended",
+  "tr": "önerilen",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-synolika-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "συνολικά",
+  "lemma": "συνολικά",
+  "pos": "adv",
+  "en": "in total; overall",
+  "tr": "toplamda; genel olarak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-synopsizo-phrase",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "συνοψίζω",
+  "lemma": "συνοψίζω",
+  "pos": "verb",
+  "en": "sum up",
+  "tr": "özetlemek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-syntaxiodotoymai-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "συνταξιοδοτούμαι",
+  "lemma": "συνταξιοδοτούμαι",
+  "pos": "verb",
+  "en": "retire",
+  "tr": "emekli olmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-synypologizo-phrase",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "συνυπολογίζω",
+  "lemma": "συνυπολογίζω",
+  "pos": "verb",
+  "en": "take into account",
+  "tr": "hesaba katmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-syrriknonomai-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -3628,6 +9790,54 @@
   "pos": "verb",
   "en": "shrink",
   "tr": "küçülmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-sfigga",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σφίγγα",
+  "lemma": "σφίγγα",
+  "pos": "noun",
+  "en": "sphinx",
+  "tr": "sfenks",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-schedon-pote-adv",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σχεδόν ποτέ",
+  "lemma": "σχεδόν ποτέ",
+  "pos": "adv",
+  "en": "almost never",
+  "tr": "neredeyse hiç",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-schizo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σχίζω",
+  "lemma": "σχίζω",
+  "pos": "verb",
+  "en": "tear",
+  "tr": "yırtmak",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3651,6 +9861,22 @@
   }
  },
  {
+  "id": "v-sozo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σώζω",
+  "lemma": "σώζω",
+  "pos": "verb",
+  "en": "save; rescue",
+  "tr": "kurtarmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-somatika-adv",
   "type": "vocab",
   "skill": "vocab",
@@ -3660,6 +9886,73 @@
   "pos": "adv",
   "en": "physically",
   "tr": "fiziksel olarak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-somatikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "σωματικός",
+  "lemma": "σωματικός",
+  "pos": "adj",
+  "en": "physical; bodily",
+  "tr": "bedensel; fiziksel",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-aporrimmata",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τα απορρίμματα",
+  "lemma": "απορρίμματα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "rubbish",
+  "tr": "atık",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-vooeidi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τα βοοειδή",
+  "lemma": "βοοειδή",
+  "pos": "noun",
+  "gender": "n",
+  "en": "cattle",
+  "tr": "sığır",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-girateia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τα γηρατειά",
+  "lemma": "γηρατειά",
+  "pos": "noun",
+  "gender": "n",
+  "en": "old age",
+  "tr": "yaşlılık",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3677,6 +9970,57 @@
   "gender": "n",
   "en": "glasses",
   "tr": "gözlük",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ereipia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τα ερείπια",
+  "lemma": "ερείπια",
+  "pos": "noun",
+  "gender": "n",
+  "en": "ruins",
+  "tr": "kalıntılar; harabeler",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kaysima",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τα καύσιμα",
+  "lemma": "καύσιμα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "fuel",
+  "tr": "yakıt",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kialia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τα κιάλια",
+  "lemma": "κιάλια",
+  "pos": "noun",
+  "gender": "n",
+  "en": "binoculars",
+  "tr": "dürbün",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3718,6 +10062,105 @@
   }
  },
  {
+  "id": "v-psila",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τα ψιλά",
+  "lemma": "ψιλά",
+  "pos": "noun",
+  "gender": "n",
+  "en": "small change",
+  "tr": "ufaklık",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-taktikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τακτικός",
+  "lemma": "τακτικός",
+  "pos": "adj",
+  "en": "regular",
+  "tr": "düzenli",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-termatikos-stathmos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τερματικός σταθμός",
+  "lemma": "τερματικός σταθμός",
+  "pos": "noun",
+  "en": "terminus",
+  "tr": "son durak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-techniti-limni",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τεχνητή λίμνη",
+  "lemma": "τεχνητή λίμνη",
+  "pos": "noun",
+  "en": "artificial lake",
+  "tr": "yapay göl",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-agroktima",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το αγρόκτημα",
+  "lemma": "αγρόκτημα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "farmstead",
+  "tr": "tarım çiftliği",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-agchos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το άγχος",
+  "lemma": "άγχος",
+  "pos": "noun",
+  "gender": "n",
+  "en": "stress; anxiety",
+  "tr": "stres; kaygı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-aisthima",
   "type": "vocab",
   "skill": "vocab",
@@ -3728,6 +10171,40 @@
   "gender": "n",
   "en": "feeling; sense",
   "tr": "his; duygu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-akanthodes-perivlima-fytoy",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ακανθώδες περίβλημα φυτού",
+  "lemma": "ακανθώδες περίβλημα φυτού",
+  "pos": "noun",
+  "gender": "n",
+  "en": "thorny plant casing",
+  "tr": "bitkinin dikenli kabuğu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-akinito",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ακίνητο",
+  "lemma": "ακίνητο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "property; real estate",
+  "tr": "taşınmaz; emlak",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3752,6 +10229,125 @@
   }
  },
  {
+  "id": "w-apotelesma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το αποτέλεσμα",
+  "lemma": "αποτέλεσμα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "result",
+  "tr": "sonuç",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "opus, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-asteio-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το αστείο",
+  "lemma": "αστείο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "joke; funny",
+  "tr": "şaka; komik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-atsali",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ατσάλι",
+  "lemma": "ατσάλι",
+  "pos": "noun",
+  "gender": "n",
+  "en": "steel",
+  "tr": "çelik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-vazo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το βάζο",
+  "lemma": "βάζο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "jar; vase",
+  "tr": "kavanoz; vazo",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-varos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το βάρος",
+  "lemma": "βάρος",
+  "pos": "noun",
+  "gender": "n",
+  "en": "weight",
+  "tr": "ağırlık",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-vivliopoleio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το βιβλιοπωλείο",
+  "lemma": "βιβλιοπωλείο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "bookshop",
+  "tr": "kitabevi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-vrefos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το βρέφος",
+  "lemma": "βρέφος",
+  "pos": "noun",
+  "gender": "n",
+  "en": "infant",
+  "tr": "yenidoğan",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-giaoyrti",
   "type": "vocab",
   "skill": "vocab",
@@ -3769,6 +10365,23 @@
   }
  },
  {
+  "id": "v-gkaraz",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το γκαράζ",
+  "lemma": "γκαράζ",
+  "pos": "noun",
+  "gender": "n",
+  "en": "garage",
+  "tr": "garaj",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-glypto",
   "type": "vocab",
   "skill": "vocab",
@@ -3778,7 +10391,7 @@
   "pos": "noun",
   "gender": "n",
   "en": "sculpture",
-  "tr": "heykel",
+  "tr": "yontu",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3871,6 +10484,76 @@
   }
  },
  {
+  "id": "v-dilimma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το δίλημμα",
+  "lemma": "δίλημμα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "dilemma",
+  "tr": "ikilem",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-dioxeidio-t-oy-theioy",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το διοξείδιο τ ου θείου",
+  "lemma": "διοξείδιο τ ου θείου",
+  "pos": "noun",
+  "gender": "n",
+  "en": "sulphur dioxide",
+  "tr": "kükürt dioksit",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26",
+   "doubt": "OCR damage: split letters (διοξείδιο του θείου)"
+  },
+  "status": "needs_review"
+ },
+ {
+  "id": "v-dioxeidio-toy-anthraka",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το διοξείδιο του άνθρακα",
+  "lemma": "διοξείδιο του άνθρακα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "carbon dioxide",
+  "tr": "karbondioksit",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-dichty",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το δίχτυ",
+  "lemma": "δίχτυ",
+  "pos": "noun",
+  "gender": "n",
+  "en": "net",
+  "tr": "ağ; file",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-docheio",
   "type": "vocab",
   "skill": "vocab",
@@ -3898,6 +10581,23 @@
   "gender": "n",
   "en": "gift",
   "tr": "hediye",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-eisodima",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το εισόδημα",
+  "lemma": "εισόδημα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "income",
+  "tr": "gelir",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -3939,6 +10639,74 @@
   }
  },
  {
+  "id": "v-endiaferon",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ενδιαφέρον",
+  "lemma": "ενδιαφέρον",
+  "pos": "noun",
+  "gender": "n",
+  "en": "interest",
+  "tr": "ilgi; ilgi çekicilik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-exoteriko-adv",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το εξωτερικό",
+  "lemma": "εξωτερικό",
+  "pos": "noun",
+  "gender": "n",
+  "en": "abroad",
+  "tr": "yurt dışı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-epathlo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το έπαθλο",
+  "lemma": "έπαθλο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "prize",
+  "tr": "yarışma ödülü",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-epipedo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το επίπεδο",
+  "lemma": "επίπεδο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "level; floor",
+  "tr": "seviye; kat",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-ergaleio",
   "type": "vocab",
   "skill": "vocab",
@@ -3956,6 +10724,91 @@
   }
  },
  {
+  "id": "v-iliovasilema",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ηλιοβασίλεμα",
+  "lemma": "ηλιοβασίλεμα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "sunset",
+  "tr": "gün batımı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-theretro",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το θέρετρο",
+  "lemma": "θέρετρο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "resort",
+  "tr": "tatil yeri",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-idryma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ίδρυμα",
+  "lemma": "ίδρυμα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "institution; foundation",
+  "tr": "kurum; vakıf",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-katharisma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το καθάρισμα",
+  "lemma": "καθάρισμα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "cleaning",
+  "tr": "temizlik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kalampoki",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το καλαμπόκι",
+  "lemma": "καλαμπόκι",
+  "pos": "noun",
+  "gender": "n",
+  "en": "corn; maize",
+  "tr": "mısır",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-kanali",
   "type": "vocab",
   "skill": "vocab",
@@ -3966,6 +10819,57 @@
   "gender": "n",
   "en": "channel",
   "tr": "kanal",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-karvoyno",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το κάρβουνο",
+  "lemma": "κάρβουνο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "coal; charcoal",
+  "tr": "kömür",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-katafygio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το καταφύγιο",
+  "lemma": "καταφύγιο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "shelter; refuge",
+  "tr": "sığınak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kelari",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το κελάρι",
+  "lemma": "κελάρι",
+  "pos": "noun",
+  "gender": "n",
+  "en": "cellar",
+  "tr": "kiler; bodrum",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -4007,6 +10911,40 @@
   }
  },
  {
+  "id": "v-kolaro",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το κολάρο",
+  "lemma": "κολάρο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "collar",
+  "tr": "yaka; tasma",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-kolegio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το κολέγιο",
+  "lemma": "κολέγιο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "college (also spelled κολλέγιο)",
+  "tr": "kolej (κολλέγιο ile aynı)",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-koyiz",
   "type": "vocab",
   "skill": "vocab",
@@ -4017,6 +10955,23 @@
   "gender": "n",
   "en": "quiz",
   "tr": "bilgi yarışması; test",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-koympi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το κουμπί",
+  "lemma": "κουμπί",
+  "pos": "noun",
+  "gender": "n",
+  "en": "button",
+  "tr": "düğme",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -4041,6 +10996,23 @@
   }
  },
  {
+  "id": "v-lepto-stroma-pagoy",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το λεπτό στρώμα (πάγου)",
+  "lemma": "λεπτό στρώμα (πάγου)",
+  "pos": "noun",
+  "gender": "n",
+  "en": "thin layer of ice",
+  "tr": "ince buz tabakası",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-mathima",
   "type": "vocab",
   "skill": "vocab",
@@ -4051,6 +11023,91 @@
   "gender": "n",
   "en": "lesson; class",
   "tr": "ders",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-manitari",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το μανιτάρι",
+  "lemma": "μανιτάρι",
+  "pos": "noun",
+  "gender": "n",
+  "en": "mushroom",
+  "tr": "mantar",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-megaro",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το μέγαρο",
+  "lemma": "μέγαρο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "mansion; large building",
+  "tr": "büyük bina; köşk",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-meigma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το μείγμα",
+  "lemma": "μείγμα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "mixture",
+  "tr": "karışım",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-melani",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το μελάνι",
+  "lemma": "μελάνι",
+  "pos": "noun",
+  "gender": "n",
+  "en": "ink",
+  "tr": "mürekkep",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-meli",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το μέλι",
+  "lemma": "μέλι",
+  "pos": "noun",
+  "gender": "n",
+  "en": "honey",
+  "tr": "bal",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -4075,6 +11132,40 @@
   }
  },
  {
+  "id": "v-metallo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το μέταλλο",
+  "lemma": "μέταλλο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "metal",
+  "tr": "metal",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-mikrofono",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το μικρόφωνο",
+  "lemma": "μικρόφωνο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "microphone",
+  "tr": "mikrofon",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-moystaki",
   "type": "vocab",
   "skill": "vocab",
@@ -4085,6 +11176,40 @@
   "gender": "n",
   "en": "moustache",
   "tr": "bıyık",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-mpar",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το μπαρ",
+  "lemma": "μπαρ",
+  "pos": "noun",
+  "gender": "n",
+  "en": "bar",
+  "tr": "bar",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-mpastoyni",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το μπαστούνι",
+  "lemma": "μπαστούνι",
+  "pos": "noun",
+  "gender": "n",
+  "en": "stick; walking stick",
+  "tr": "baston; sopa",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -4126,6 +11251,125 @@
   }
  },
  {
+  "id": "v-mystiko",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το μυστικό",
+  "lemma": "μυστικό",
+  "pos": "noun",
+  "gender": "n",
+  "en": "secret",
+  "tr": "sır",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-nait-klamp",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το νάιτ κλαμπ",
+  "lemma": "νάιτ κλαμπ",
+  "pos": "noun",
+  "gender": "n",
+  "en": "nightclub",
+  "tr": "gece kulübü",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-narkopedio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ναρκοπέδιο",
+  "lemma": "ναρκοπέδιο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "minefield",
+  "tr": "mayın tarlası",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-nekrotafeio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το νεκροταφείο",
+  "lemma": "νεκροταφείο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "cemetery",
+  "tr": "mezarlık",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-xylo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ξύλο",
+  "lemma": "ξύλο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "wood",
+  "tr": "odun; ahşap",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-oikosystima",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το οικοσύστημα",
+  "lemma": "οικοσύστημα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "ecosystem",
+  "tr": "ekosistem",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-oikotrofeio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το οικοτροφείο",
+  "lemma": "οικοτροφείο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "boarding school",
+  "tr": "yatılı okul",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-oneiro",
   "type": "vocab",
   "skill": "vocab",
@@ -4143,6 +11387,40 @@
   }
  },
  {
+  "id": "v-oxygono",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το οξυγόνο",
+  "lemma": "οξυγόνο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "oxygen",
+  "tr": "oksijen",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-organo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το όργανο",
+  "lemma": "όργανο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "instrument; organ",
+  "tr": "alet; organ; çalgı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-orio",
   "type": "vocab",
   "skill": "vocab",
@@ -4153,6 +11431,40 @@
   "gender": "n",
   "en": "limit",
   "tr": "sınır; limit",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-orykto-kaysimo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ορυκτό καύσιμο",
+  "lemma": "ορυκτό καύσιμο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "fossil fuel",
+  "tr": "fosil yakıt",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-osto",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το οστό",
+  "lemma": "οστό",
+  "pos": "noun",
+  "gender": "n",
+  "en": "bone",
+  "tr": "kemik",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -4228,6 +11540,40 @@
   }
  },
  {
+  "id": "v-platos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το πλάτος",
+  "lemma": "πλάτος",
+  "pos": "noun",
+  "gender": "n",
+  "en": "width",
+  "tr": "genişlik",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-plegma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το πλέγμα",
+  "lemma": "πλέγμα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "mesh; grid",
+  "tr": "ağ; kafes",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-pleonektima",
   "type": "vocab",
   "skill": "vocab",
@@ -4255,6 +11601,23 @@
   "gender": "n",
   "en": "crowd; large number",
   "tr": "kalabalık; çokluk",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pliktrologio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το πληκτρολόγιο",
+  "lemma": "πληκτρολόγιο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "keyboard",
+  "tr": "klavye",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -4330,6 +11693,125 @@
   }
  },
  {
+  "id": "v-protathlima",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το πρωτάθλημα",
+  "lemma": "πρωτάθλημα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "championship",
+  "tr": "şampiyona",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-pterygio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το πτερύγιο",
+  "lemma": "πτερύγιο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "fin; flipper",
+  "tr": "yüzgeç",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ptychio-spoydon",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το πτυχίο σπουδών",
+  "lemma": "πτυχίο σπουδών",
+  "pos": "noun",
+  "gender": "n",
+  "en": "degree",
+  "tr": "diploma; üniversite derecesi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-reyma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ρεύμα",
+  "lemma": "ρεύμα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "current; draught",
+  "tr": "akım; cereyan",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-silo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το σιλό",
+  "lemma": "σιλό",
+  "pos": "noun",
+  "gender": "n",
+  "en": "silo",
+  "tr": "silo",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-skali",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το σκαλί",
+  "lemma": "σκαλί",
+  "pos": "noun",
+  "gender": "n",
+  "en": "step; stair",
+  "tr": "basamak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-skitso-schedio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το σκίτσο, σχέδιο",
+  "lemma": "σκίτσο, σχέδιο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "sketch; design",
+  "tr": "taslak; tasarım",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-skoyliki",
   "type": "vocab",
   "skill": "vocab",
@@ -4340,6 +11822,40 @@
   "gender": "n",
   "en": "worm",
   "tr": "solucan; kurt",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-skoyter",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το σκούτερ",
+  "lemma": "σκούτερ",
+  "pos": "noun",
+  "gender": "n",
+  "en": "scooter",
+  "tr": "skuter",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-spirta",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το σπίρτα",
+  "lemma": "σπίρτα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "matches",
+  "tr": "kibrit",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -4364,6 +11880,23 @@
   }
  },
  {
+  "id": "v-stayrolexo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το σταυρόλεξο",
+  "lemma": "σταυρόλεξο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "crossword",
+  "tr": "bulmaca",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-sygkrotima",
   "type": "vocab",
   "skill": "vocab",
@@ -4374,6 +11907,23 @@
   "gender": "n",
   "en": "band; complex",
   "tr": "grup; kompleks",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-symvoylio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το συμβούλιο",
+  "lemma": "συμβούλιο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "council; board",
+  "tr": "kurul; konsey",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -4415,6 +11965,23 @@
   }
  },
  {
+  "id": "v-tavani",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ταβάνι",
+  "lemma": "ταβάνι",
+  "pos": "noun",
+  "gender": "n",
+  "en": "ceiling",
+  "tr": "tavan",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-talento",
   "type": "vocab",
   "skill": "vocab",
@@ -4449,6 +12016,57 @@
   }
  },
  {
+  "id": "v-teletoyrgiko",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το τελετουργικό",
+  "lemma": "τελετουργικό",
+  "pos": "noun",
+  "gender": "n",
+  "en": "ritual",
+  "tr": "ritüel; tören",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-teras",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το τέρας",
+  "lemma": "τέρας",
+  "pos": "noun",
+  "gender": "n",
+  "en": "monster",
+  "tr": "canavar",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-toynel",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το τούνελ",
+  "lemma": "τούνελ",
+  "pos": "noun",
+  "gender": "n",
+  "en": "tunnel (loanword)",
+  "tr": "tünel (alıntı sözcük)",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-trochospito",
   "type": "vocab",
   "skill": "vocab",
@@ -4459,6 +12077,23 @@
   "gender": "n",
   "en": "caravan",
   "tr": "karavan",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-tsimento",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το τσιμέντο",
+  "lemma": "τσιμέντο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "cement",
+  "tr": "çimento",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -4493,6 +12128,57 @@
   "gender": "n",
   "en": "background",
   "tr": "arka plan; zemin",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ypokatastima",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το υποκατάστημα",
+  "lemma": "υποκατάστημα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "branch (office)",
+  "tr": "şube",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ypostroma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το υπόστρωμα",
+  "lemma": "υπόστρωμα",
+  "pos": "noun",
+  "gender": "n",
+  "en": "base layer; substrate",
+  "tr": "alt tabaka",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-fermoyar",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το φερμουάρ",
+  "lemma": "φερμουάρ",
+  "pos": "noun",
+  "gender": "n",
+  "en": "zip; zipper",
+  "tr": "fermuar",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -4568,6 +12254,152 @@
   }
  },
  {
+  "id": "v-chartomantilo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το χαρτομάντιλο",
+  "lemma": "χαρτομάντιλο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "tissue",
+  "tr": "kâğıt mendil",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-psalidi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ψαλίδι",
+  "lemma": "ψαλίδι",
+  "pos": "noun",
+  "gender": "n",
+  "en": "scissors",
+  "tr": "makas",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-toxikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τοξικός",
+  "lemma": "τοξικός",
+  "pos": "adj",
+  "en": "toxic",
+  "tr": "zehirli",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-topos-kataskinosis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τόπος κατασκήνωσης",
+  "lemma": "τόπος κατασκήνωσης",
+  "pos": "noun",
+  "en": "campsite",
+  "tr": "kamp yeri",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-traymatismenos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τραυματισμένος",
+  "lemma": "τραυματισμένος",
+  "pos": "adj",
+  "en": "injured",
+  "tr": "yaralı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-trechon-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τρέχων",
+  "lemma": "τρέχων",
+  "pos": "adj",
+  "en": "current",
+  "tr": "güncel; cari",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-triathlo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τρίαθλο",
+  "lemma": "τρίαθλο",
+  "pos": "noun",
+  "en": "triathlon",
+  "tr": "triatlon",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-tridymos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τρίδυμος",
+  "lemma": "τρίδυμος",
+  "pos": "noun",
+  "en": "triplet",
+  "tr": "üçüz",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-tsofli-avgoy",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τσόφλι αβγού",
+  "lemma": "τσόφλι αβγού",
+  "pos": "noun",
+  "en": "eggshell",
+  "tr": "yumurta kabuğu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-yparcho-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -4600,6 +12432,22 @@
   }
  },
  {
+  "id": "v-ypermegethis-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "υπερμεγέθης",
+  "lemma": "υπερμεγέθης",
+  "pos": "adj",
+  "en": "huge; oversized",
+  "tr": "aşırı büyük; dev",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-yperochos-adj",
   "type": "vocab",
   "skill": "vocab",
@@ -4609,6 +12457,38 @@
   "pos": "adj",
   "en": "wonderful; superb",
   "tr": "harika; muhteşem",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ypertatos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "υπέρτατος",
+  "lemma": "υπέρτατος",
+  "pos": "adj",
+  "en": "supreme; highest",
+  "tr": "en yüksek; üstün",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ypovallo-aitisi-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "υποβάλλω αίτηση",
+  "lemma": "υποβάλλω αίτηση",
+  "pos": "verb",
+  "en": "apply",
+  "tr": "başvurmak",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -4648,6 +12528,22 @@
   }
  },
  {
+  "id": "v-fantastika-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "φανταστικά",
+  "lemma": "φανταστικά",
+  "pos": "adv",
+  "en": "fantastic; wonderful",
+  "tr": "müthiş",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-ferno-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -4657,6 +12553,38 @@
   "pos": "verb",
   "en": "bring",
   "tr": "getirmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-fthano-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "φθάνω",
+  "lemma": "φθάνω",
+  "pos": "verb",
+  "en": "arrive; reach",
+  "tr": "varmak; ulaşmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-filodoxos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "φιλόδοξος",
+  "lemma": "φιλόδοξος",
+  "pos": "adj",
+  "en": "ambitious",
+  "tr": "hırslı",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -4680,6 +12608,70 @@
   }
  },
  {
+  "id": "v-fortizo-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "φορτίζω",
+  "lemma": "φορτίζω",
+  "pos": "verb",
+  "en": "charge",
+  "tr": "şarj etmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-ftiachno-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "φτιάχνω",
+  "lemma": "φτιάχνω",
+  "pos": "verb",
+  "en": "make; fix",
+  "tr": "yapmak; onarmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-fyllo-aloyminioy",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "φύλλο αλουμινίου",
+  "lemma": "φύλλο αλουμινίου",
+  "pos": "noun",
+  "en": "aluminium foil",
+  "tr": "alüminyum folyo",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-fytikos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "φυτικός",
+  "lemma": "φυτικός",
+  "pos": "adj",
+  "en": "plant-based; herbal",
+  "tr": "bitkisel",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-fonazo-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -4696,6 +12688,70 @@
   }
  },
  {
+  "id": "v-fotaerio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "φωταέριο",
+  "lemma": "φωταέριο",
+  "pos": "noun",
+  "en": "coal gas",
+  "tr": "havagazı",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-fototypiko-michanima",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "φωτοτυπικό μηχάνημα",
+  "lemma": "φωτοτυπικό μηχάνημα",
+  "pos": "noun",
+  "en": "photocopier",
+  "tr": "fotokopi makinesi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-chalaros-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "χαλαρός",
+  "lemma": "χαλαρός",
+  "pos": "adj",
+  "en": "relaxed; loose",
+  "tr": "rahat; gevşek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-chamenos-adj",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "χαμένος",
+  "lemma": "χαμένος",
+  "pos": "adj",
+  "en": "lost",
+  "tr": "kaybolmuş",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-chano-verb",
   "type": "vocab",
   "skill": "vocab",
@@ -4705,6 +12761,70 @@
   "pos": "verb",
   "en": "lose; waste",
   "tr": "kaybetmek",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-charadra-pagetona",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "χαράδρα παγετώνα",
+  "lemma": "χαράδρα παγετώνα",
+  "pos": "noun",
+  "en": "glacier ravine",
+  "tr": "buzul vadisi",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-chartokivotio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "χαρτοκιβώτιο",
+  "lemma": "χαρτοκιβώτιο",
+  "pos": "noun",
+  "en": "cardboard box",
+  "tr": "karton kutu",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-chartoni",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "χαρτόνι",
+  "lemma": "χαρτόνι",
+  "pos": "noun",
+  "en": "cardboard",
+  "tr": "karton",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-chaski",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "χάσκι",
+  "lemma": "χάσκι",
+  "pos": "noun",
+  "en": "husky",
+  "tr": "haski",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -4744,6 +12864,22 @@
   }
  },
  {
+  "id": "v-chtypo-tin-korna-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "χτυπώ (την κόρνα)",
+  "lemma": "χτυπώ (την κόρνα)",
+  "pos": "verb",
+  "en": "honk (the horn)",
+  "tr": "korna çalmak",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
   "id": "v-choris-adj",
   "type": "vocab",
   "skill": "vocab",
@@ -4753,6 +12889,22 @@
   "pos": "prep",
   "en": "without",
   "tr": "-sız; olmadan",
+  "topics": [],
+  "source": {
+   "doc": "oknos-words",
+   "by": "sonnet, from the Greek word, 2026-11-26"
+  }
+ },
+ {
+  "id": "v-psisimo-kreaton-sti-schara",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ψήσιμο κρεάτων στη σχάρα",
+  "lemma": "ψήσιμο κρεάτων στη σχάρα",
+  "pos": "noun",
+  "en": "grilling meat",
+  "tr": "ızgarada et pişirme",
   "topics": [],
   "source": {
    "doc": "oknos-words",
@@ -4776,70 +12928,51 @@
   }
  },
  {
-  "id": "w-sovaros-adj",
+  "id": "v-psyktis-neroy",
   "type": "vocab",
   "skill": "vocab",
   "level": "A2",
-  "el": "σοβαρός",
-  "lemma": "σοβαρός",
-  "pos": "adj",
-  "en": "serious",
-  "tr": "ciddi",
+  "el": "ψύκτης νερού",
+  "lemma": "ψύκτης νερού",
+  "pos": "noun",
+  "en": "water cooler",
+  "tr": "su sebili",
   "topics": [],
   "source": {
    "doc": "oknos-words",
-   "by": "opus, from the Greek word, 2026-11-26"
+   "by": "sonnet, from the Greek word, 2026-11-26"
   }
  },
  {
-  "id": "w-apodeixi",
+  "id": "v-psychiki-ygeia",
   "type": "vocab",
   "skill": "vocab",
   "level": "A2",
-  "el": "η απόδειξη",
-  "lemma": "απόδειξη",
+  "el": "ψυχική υγεία",
+  "lemma": "ψυχική υγεία",
   "pos": "noun",
-  "gender": "f",
-  "en": "receipt; proof",
-  "tr": "fiş; makbuz; kanıt",
+  "en": "mental health",
+  "tr": "ruh sağlığı",
   "topics": [],
   "source": {
    "doc": "oknos-words",
-   "by": "opus, from the Greek word, 2026-11-26"
+   "by": "sonnet, from the Greek word, 2026-11-26"
   }
  },
  {
-  "id": "w-apotelesma",
+  "id": "v-ora-ypnoy",
   "type": "vocab",
   "skill": "vocab",
   "level": "A2",
-  "el": "το αποτέλεσμα",
-  "lemma": "αποτέλεσμα",
+  "el": "ώρα ύπνου",
+  "lemma": "ώρα ύπνου",
   "pos": "noun",
-  "gender": "n",
-  "en": "result",
-  "tr": "sonuç",
+  "en": "bedtime",
+  "tr": "yatma vakti",
   "topics": [],
   "source": {
    "doc": "oknos-words",
-   "by": "opus, from the Greek word, 2026-11-26"
-  }
- },
- {
-  "id": "w-fysi",
-  "type": "vocab",
-  "skill": "vocab",
-  "level": "A2",
-  "el": "η φύση",
-  "lemma": "φύση",
-  "pos": "noun",
-  "gender": "f",
-  "en": "nature",
-  "tr": "doğa",
-  "topics": [],
-  "source": {
-   "doc": "oknos-words",
-   "by": "opus, from the Greek word, 2026-11-26"
+   "by": "sonnet, from the Greek word, 2026-11-26"
   }
  }
 ]

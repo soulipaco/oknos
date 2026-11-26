@@ -314,7 +314,7 @@
   "grammar": [
    "verb.future.simple"
   ],
-  "text": "Εμείς θα {1} το Σαββατοκύριακο στο Ναύπλιο.",
+  "text": "Εμείς θα {1} το Σαββατοκύριακο στα Ιωάννινα.",
   "answer": {
    "1": [
     "περάσουμε"
@@ -328,8 +328,8 @@
    ]
   },
   "translation": {
-   "en": "We will spend the weekend in Nafplio.",
-   "tr": "Hafta sonunu Nafplio'da geçireceğiz."
+   "en": "We will spend the weekend in Ioannina.",
+   "tr": "Hafta sonunu Yanya'da geçireceğiz."
   },
   "explain": {
    "en": "περνάω is one of the few that take -άσω: θα περάσω, and the ν drops. With «we» you need περάσουμε; περάσουν is for «they».",
@@ -398,7 +398,7 @@
    "en": "Fill in the gap.",
    "tr": "Boşluğu doldur."
   },
-  "text": "— Ελένη, {1} ακούς; — Ναι, {2} ακούω. Πού είναι ο Γιώργος και ο Κώστας; — Είναι στο ταξί, {3} βλέπω από εδώ.",
+  "text": "— Νίκο, {1} ακούς; — Ναι, {2} ακούω. Πού είναι ο Γιώργος και ο Κώστας; — Είναι στη βάρκα, {3} βλέπω από εδώ.",
   "bank": [
    "με",
    "σε",
@@ -410,8 +410,8 @@
    "3": "τους"
   },
   "translation": {
-   "en": "— Eleni, can you hear me? — Yes, I can hear you. Where are Giorgos and Kostas? — They are in the taxi, I can see them from here.",
-   "tr": "— Eleni, beni duyuyor musun? — Evet, seni duyuyorum. Yorgo ile Kostas nerede? — Taksideler, onları buradan görüyorum."
+   "en": "— Nikos, can you hear me? — Yes, I can hear you. Where are Giorgos and Kostas? — They are in the boat, I can see them from here.",
+   "tr": "— Nikos, beni duyuyor musun? — Evet, seni duyuyorum. Yorgo ile Kostas nerede? — Kayıktalar, onları buradan görüyorum."
   },
   "explain": {
    "en": "«Me» = με, «you» (one friend) = σε, «them» = τους (two men; two women would be τις).",

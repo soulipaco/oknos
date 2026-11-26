@@ -8,7 +8,7 @@
   "en": "Where do you live, where do you work? Verbs, articles, days and numbers"
  },
  "minutes": 14,
- "version": 2,
+ "version": 3,
  "sections": [
   {
    "kind": "intro",
@@ -301,19 +301,19 @@
        "-ο, -ι, -μα"
       ],
       [
-       "ο δάσκαλος",
+       "ο δρόμος",
        "η Αθήνα",
        "το σπίτι"
       ],
       [
-       "ο Πειραιάς",
+       "ο πατέρας",
        "η Κρήτη",
-       "το βιβλίο"
+       "το νερό"
       ],
       [
-       "ο μαθητής",
+       "ο πελάτης",
        "η Τουρκία",
-       "το μάθημα"
+       "το όνομα"
       ]
      ],
      "note": {
@@ -325,9 +325,9 @@
      "type": "examples",
      "items": [
       {
-       "el": "Ο Πειραιάς είναι στην Ελλάδα.",
-       "tr": "Pire Yunanistan'da.",
-       "en": "Piraeus is in Greece."
+       "el": "Ο Βόλος είναι στην Ελλάδα.",
+       "tr": "Volos Yunanistan'da.",
+       "en": "Volos is in Greece."
       },
       {
        "el": "Η Καλλιθέα είναι στην Αθήνα.",

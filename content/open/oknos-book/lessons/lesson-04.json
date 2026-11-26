@@ -8,7 +8,7 @@
   "en": "A job call: my name, my number, my work. Possessives, and 200-1000"
  },
  "minutes": 13,
- "version": 1,
+ "version": 2,
  "sections": [
   {
    "kind": "intro",
@@ -393,9 +393,9 @@
      "type": "examples",
      "items": [
       {
-       "el": "Το πλυντήριο είναι τριακόσια ευρώ.",
-       "tr": "Çamaşır makinesi üç yüz avro.",
-       "en": "The washing machine is three hundred euros."
+       "el": "Το κρεβάτι είναι τριακόσια ευρώ.",
+       "tr": "Yatak üç yüz avro.",
+       "en": "The bed is three hundred euros."
       },
       {
        "el": "Το τηλέφωνό μας είναι διακόσια δέκα, εξακόσια σαράντα, είκοσι πέντε, δεκαοχτώ.",

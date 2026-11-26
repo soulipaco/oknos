@@ -479,9 +479,9 @@
   ],
   "lemma": "πίσω",
   "example": {
-   "el": "Ο φούρνος είναι πίσω από το σουπερμάρκετ.",
-   "en": "The bakery is behind the supermarket.",
-   "tr": "Fırın süpermarketin arkasında."
+   "el": "Το ταχυδρομείο είναι πίσω από το σχολείο.",
+   "en": "The post office is behind the school.",
+   "tr": "Postane okulun arkasında."
   },
   "source": {
    "doc": "chapter",
@@ -527,9 +527,9 @@
   ],
   "lemma": "ανάμεσα",
   "example": {
-   "el": "Το φαρμακείο είναι ανάμεσα στην τράπεζα και στο σουπερμάρκετ.",
-   "en": "The pharmacy is between the bank and the supermarket.",
-   "tr": "Eczane banka ile süpermarketin arasında."
+   "el": "Το περίπτερο είναι ανάμεσα στην τράπεζα και στη στάση.",
+   "en": "The kiosk is between the bank and the stop.",
+   "tr": "Büfe bankayla durağın arasında."
   },
   "source": {
    "doc": "chapter",
@@ -941,19 +941,19 @@
    "tr": "Doğru cevabı seç."
   },
   "prompt": {
-   "el": "Πού είναι το σουπερμάρκετ;",
-   "en": "Where is the supermarket?",
-   "tr": "Süpermarket nerede?"
+   "el": "Πού είναι το ταχυδρομείο;",
+   "en": "Where is the post office?",
+   "tr": "Postane nerede?"
   },
   "options": [
-   "Απέναντι από το φαρμακείο.",
+   "Πίσω από το σχολείο.",
    "Δίπλα στην τράπεζα.",
    "Μπροστά στην πλατεία."
   ],
   "answer": 0,
   "explain": {
-   "en": "The agent says «υπάρχει ένα απέναντι από το φαρμακείο». The stop is next to the bank, and the metro is in front of the square.",
-   "tr": "Emlakçı «υπάρχει ένα απέναντι από το φαρμακείο» diyor. Durak bankanın yanında, metro ise meydanın önünde."
+   "en": "The agent says «υπάρχει ένα πίσω από το σχολείο». The stop is next to the bank, and the metro is in front of the square.",
+   "tr": "Emlakçı «υπάρχει ένα πίσω από το σχολείο» diyor. Durak bankanın yanında, metro ise meydanın önünde."
   },
   "source": {
    "doc": "chapter",

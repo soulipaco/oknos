@@ -8,7 +8,7 @@
   "en": "An invitation to Piraeus: metro, time, days and weather; με, σε, για, από, μέχρι"
  },
  "minutes": 15,
- "version": 1,
+ "version": 2,
  "sections": [
   {
    "kind": "intro",
@@ -47,27 +47,27 @@
       },
       {
        "who": "Αϊσέ",
-       "el": "Ναι, έρχομαι! Πώς πάω;",
-       "tr": "Evet, geliyorum! Nasıl gideceğim?",
-       "en": "Yes, I'm coming! How do I get there?"
+       "el": "Ναι, έρχομαι! Λεωφορείο ή μετρό;",
+       "tr": "Evet, geliyorum! Otobüs mü, metro mu?",
+       "en": "Yes, I'm coming! Bus or metro?"
       },
       {
        "who": "Ελένη",
-       "el": "Με το μετρό, από την Ομόνοια μέχρι τον Πειραιά.",
-       "tr": "Metroyla, Omonia'dan Pire'ye kadar.",
-       "en": "By metro, from Omonia to Piraeus."
+       "el": "Με το λεωφορείο κάνει μία ώρα. Με το μετρό, από την Ομόνοια μέχρι τον Πειραιά, μισή ώρα.",
+       "tr": "Otobüsle bir saat sürüyor. Metroyla, Omonia'dan Pire'ye kadar, yarım saat.",
+       "en": "By bus it takes an hour. By metro, from Omonia to Piraeus, half an hour."
       },
       {
        "who": "Αϊσέ",
-       "el": "Και τι ώρα;",
-       "tr": "Peki saat kaçta?",
-       "en": "And what time?"
+       "el": "Με το μετρό! Τι ώρα;",
+       "tr": "Metroyla! Saat kaçta?",
+       "en": "By metro! What time?"
       },
       {
        "who": "Ελένη",
-       "el": "Στις έντεκα και μισή. Κατεβαίνεις στον Πειραιά και θα είμαι στον σταθμό με τον Νίκο.",
-       "tr": "On bir buçukta. Pire'de iniyorsun; ben de Nikos'la istasyonda olacağım.",
-       "en": "At half past eleven. You get off at Piraeus, and I'll be at the station with Nikos."
+       "el": "Στις έντεκα και μισή. Θα είμαι στον σταθμό με τον Νίκο.",
+       "tr": "On bir buçukta. Nikos'la istasyonda olacağım.",
+       "en": "At half past eleven. I'll be at the station with Nikos."
       },
       {
        "who": "Αϊσέ",

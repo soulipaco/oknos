@@ -169,9 +169,9 @@
    "tr": "Doğru cevabı seç."
   },
   "prompt": {
-   "el": "ο μήνας",
-   "en": "the month",
-   "tr": "ay"
+   "el": "το μήλο",
+   "en": "the apple",
+   "tr": "elma"
   },
   "options": [
    "i",
@@ -180,8 +180,8 @@
   ],
   "answer": 0,
   "explain": {
-   "en": "η is read i: mínas. It only looks like a Latin H.",
-   "tr": "η, i diye okunur: mínas. Sadece Latin H harfine benzer."
+   "en": "η is read i: mílo. It only looks like a Latin H.",
+   "tr": "η, i diye okunur: mílo. Sadece Latin H harfine benzer."
   },
   "source": {
    "doc": "chapter",
@@ -189,8 +189,8 @@
    "by": "sonnet-draft"
   },
   "ask": {
-   "en": "How is the letter η read in μήνας?",
-   "tr": "μήνας kelimesindeki η harfi nasıl okunur?"
+   "en": "How is the letter η read in μήλο?",
+   "tr": "μήλο kelimesindeki η harfi nasıl okunur?"
   }
  },
  {

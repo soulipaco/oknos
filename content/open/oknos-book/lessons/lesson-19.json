@@ -8,7 +8,7 @@
   "en": "Back from holiday: a message to a friend. The simple past (aorist)"
  },
  "minutes": 18,
- "version": 1,
+ "version": 2,
  "sections": [
   {
    "kind": "intro",
@@ -41,15 +41,15 @@
      "lines": [
       {
        "who": "Ελένη",
-       "el": "Αϊσέ! Γύρισες! Πώς πέρασες στις διακοπές;",
-       "tr": "Ayşe! Döndün demek! Tatil nasıl geçti?",
-       "en": "Ayşe! You're back! How was your holiday?"
+       "el": "Αϊσέ! Γύρισες! Πού ήσουν;",
+       "tr": "Ayşe! Döndün demek! Neredeydin?",
+       "en": "Ayşe! You're back! Where were you?"
       },
       {
        "who": "Αϊσέ",
-       "el": "Τέλεια! Πήγα στην Πάρο μαζί με τη Ζέινεπ. Ήμασταν μια εβδομάδα στο νησί.",
-       "tr": "Harikaydı! Zeynep'le birlikte Paros'a gittim. Bir hafta adadaydık.",
-       "en": "Great! I went to Paros together with Zeynep. We were on the island for a week."
+       "el": "Στην Πάρο! Πήγα μαζί με τη Ζέινεπ. Ήμασταν μια εβδομάδα στο νησί.",
+       "tr": "Paros'ta! Zeynep'le birlikte gittim. Bir hafta adadaydık.",
+       "en": "On Paros! I went together with Zeynep. We were on the island for a week."
       },
       {
        "who": "Ελένη",
@@ -59,9 +59,9 @@
       },
       {
        "who": "Αϊσέ",
-       "el": "Όχι, πήραμε το πλοίο από τον Πειραιά. Φύγαμε το πρωί και φτάσαμε το μεσημέρι.",
-       "tr": "Hayır, Pire'den gemiye bindik. Sabah yola çıktık, öğlen vardık.",
-       "en": "No, we took the boat from Piraeus. We left in the morning and arrived at midday."
+       "el": "Όχι, πήραμε το πλοίο από τη Ραφήνα. Φύγαμε το πρωί και φτάσαμε το μεσημέρι.",
+       "tr": "Hayır, Rafina'dan gemiye bindik. Sabah yola çıktık, öğlen vardık.",
+       "en": "No, we took the boat from Rafina. We left in the morning and arrived at midday."
       },
       {
        "who": "Ελένη",
@@ -83,9 +83,9 @@
       },
       {
        "who": "Αϊσέ",
-       "el": "Ναι, την Τετάρτη έβρεξε, αλλά πήγαμε στο μουσείο.",
-       "tr": "Evet, Çarşamba yağmur yağdı ama müzeye gittik.",
-       "en": "Yes, on Wednesday it rained, but we went to the museum."
+       "el": "Ναι, την Παρασκευή έβρεξε όλη μέρα. Μείναμε στο δωμάτιο και είδαμε δύο ταινίες.",
+       "tr": "Evet, Cuma günü bütün gün yağmur yağdı. Odada kaldık ve iki film izledik.",
+       "en": "Yes, on Friday it rained all day. We stayed in the room and watched two films."
       },
       {
        "who": "Ελένη",
@@ -118,9 +118,9 @@
      "lines": [
       {
        "who": "Αϊσέ",
-       "el": "Γεια σου Μαρία! Γύρισα προχθές από την Πάρο.",
-       "tr": "Merhaba Maria! Paros'tan evvelsi gün döndüm.",
-       "en": "Hi Maria! I came back from Paros the day before yesterday."
+       "el": "Γεια σου Μαρία! Γύρισα την Κυριακή από την Πάρο.",
+       "tr": "Merhaba Maria! Pazar günü Paros'tan döndüm.",
+       "en": "Hi Maria! I came back from Paros on Sunday."
       },
       {
        "who": "Αϊσέ",

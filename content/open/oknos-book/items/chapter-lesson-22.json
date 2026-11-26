@@ -360,9 +360,9 @@
   ],
   "gender": "f",
   "example": {
-   "el": "Η οδός Σταδίου είναι κοντά στο Σύνταγμα.",
-   "en": "Stadiou Street is near Syntagma.",
-   "tr": "Stadiou Caddesi Sintagma'ya yakın."
+   "el": "Το φαρμακείο είναι στην οδό Αιόλου.",
+   "en": "The chemist's is on Aiolou Street.",
+   "tr": "Eczane Aiolou Caddesi'nde."
   },
   "source": {
    "doc": "chapter",
@@ -740,14 +740,14 @@
   ],
   "rubric": {
    "el": "Αντιστοιχίζω την περίσταση με την ευχή.",
-   "en": "Match each situation with the wish.",
-   "tr": "Her durumu dilekle eşleştir."
+   "en": "Match each scene with the wish that fits it.",
+   "tr": "Her sahneyi ona uyan dilekle eşleştir."
   },
   "left": [
-   "Η Σοφία έχει γενέθλια.",
-   "Σήμερα είναι είκοσι πέντε Δεκεμβρίου.",
-   "Σήμερα είναι Πρωτοχρονιά.",
-   "Ο φίλος σου λέει: «Χριστός Ανέστη!»"
+   "Η κυρία Μαρία φέρνει ένα γλυκό στην Αϊσέ: σήμερα είναι τα γενέθλιά της.",
+   "Ο Νίκος έχει ένα δέντρο στο σαλόνι και δώρα για όλους.",
+   "Η κυρία Μαρία κόβει τη βασιλόπιτα και η Αϊσέ βρίσκει το φλουρί.",
+   "Μεσάνυχτα στην εκκλησία: η κυρία Μαρία ανάβει τη λαμπάδα της και λέει «Χριστός Ανέστη!»."
   ],
   "right": [
    "Αληθώς Ανέστη!",
@@ -762,8 +762,8 @@
    0
   ],
   "explain": {
-   "en": "A birthday: Να τα εκατοστίσεις. 25 December: Καλά Χριστούγεννα. New Year's Day: Καλή χρονιά. The answer to «Χριστός Ανέστη» is always «Αληθώς Ανέστη».",
-   "tr": "Doğum günü: Να τα εκατοστίσεις. 25 Aralık: Καλά Χριστούγεννα. Yılbaşı: Καλή χρονιά. «Χριστός Ανέστη» selamının cevabı her zaman «Αληθώς Ανέστη»."
+   "en": "Her birthday: Να τα εκατοστίσεις. The tree and the gifts: Καλά Χριστούγεννα. The vasilopita and its coin: Καλή χρονιά. The answer to «Χριστός Ανέστη» is always «Αληθώς Ανέστη».",
+   "tr": "Doğum günü: Να τα εκατοστίσεις. Ağaç ve hediyeler: Καλά Χριστούγεννα. Vasilopita ve içindeki sikke: Καλή χρονιά. «Χριστός Ανέστη» selamının cevabı her zaman «Αληθώς Ανέστη»."
   },
   "source": {
    "doc": "chapter",
@@ -1018,26 +1018,26 @@
   "grammar": [
    "case.genitive.street"
   ],
-  "text": "Η οδός {1} είναι κοντά στο Σύνταγμα.",
+  "text": "Το μαγαζί με τα δώρα είναι στην οδό {1}.",
   "answer": {
    "1": [
-    "Σταδίου"
+    "Αιόλου"
    ]
   },
   "options": {
    "1": [
-    "Σταδίου",
-    "Στάδιο",
-    "Σταδίο"
+    "Αιόλου",
+    "Αίολος",
+    "Αίολου"
    ]
   },
   "translation": {
-   "en": "Stadiou Street is near Syntagma.",
-   "tr": "Σταδίου Caddesi Σύνταγμα'ya yakın."
+   "en": "The gift shop is on Aiolou Street.",
+   "tr": "Hediyelik eşya dükkânı Aiolou Caddesi'nde."
   },
   "explain": {
-   "en": "Street names are in the genitive: το Στάδιο → οδός Σταδίου. The stress moves one place right before -ου.",
-   "tr": "Cadde adları tamlayan hâlindedir: το Στάδιο → οδός Σταδίου. Vurgu -ου önünde bir hece sağa kayar."
+   "en": "A street sign names the street after someone in the genitive: ο Αίολος (the god of the winds) → οδός Αιόλου. As in δάσκαλος → δασκάλου, the stress moves one syllable right before -ου.",
+   "tr": "Cadde tabelası, caddeye adını vereni tamlayan hâlinde yazar: ο Αίολος (rüzgârların tanrısı) → οδός Αιόλου. δάσκαλος → δασκάλου gibi, -ου önünde vurgu bir hece sağa kayar."
   },
   "source": {
    "doc": "chapter",
@@ -1061,26 +1061,26 @@
   "grammar": [
    "case.genitive.origin"
   ],
-  "text": "Αυτό το τυρί είναι από τη Νάξο: είναι τυρί {1}.",
+  "text": "Το λάδι είναι από την Καλαμάτα. Στο μπουκάλι γράφει: «Λάδι {1}».",
   "answer": {
    "1": [
-    "Νάξου"
+    "Καλαμάτας"
    ]
   },
   "options": {
    "1": [
-    "Νάξου",
-    "Νάξος",
-    "Νάξο"
+    "Καλαμάτας",
+    "Καλαμάτα",
+    "Καλαμάτες"
    ]
   },
   "translation": {
-   "en": "This cheese is from Naxos: it is Naxos cheese.",
-   "tr": "Bu peynir Naksos'tan: Naksos peyniri."
+   "en": "The olive oil is from Kalamata. The bottle says: «Kalamata olive oil».",
+   "tr": "Zeytinyağı Kalamata'dan. Şişenin üstünde «Kalamata zeytinyağı» yazıyor."
   },
   "explain": {
-   "en": "The origin of a product is in the genitive: τυρί Νάξου. Η Νάξος is a feminine -ος noun, and it takes -ου like ο φίλος → του φίλου.",
-   "tr": "Bir ürünün kökeni tamlayan hâlinde söylenir: τυρί Νάξου. Η Νάξος dişil bir -ος ismidir ve ο φίλος → του φίλου gibi -ου alır."
+   "en": "A label gives the place in the genitive, without the article: η Καλαμάτα → λάδι Καλαμάτας, as η μητέρα → της μητέρας. Καλαμάτες is a plural.",
+   "tr": "Etiket yer adını artikelsiz, tamlayan hâlinde yazar: η Καλαμάτα → λάδι Καλαμάτας, η μητέρα → της μητέρας gibi. Καλαμάτες çoğuldur."
   },
   "source": {
    "doc": "chapter",

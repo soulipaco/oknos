@@ -8,15 +8,15 @@
   "en": "Looking for a flat: ads, the neighbourhood and directions; υπάρχει, ordinals, δίπλα σε"
  },
  "minutes": 17,
- "version": 1,
+ "version": 2,
  "sections": [
   {
    "kind": "intro",
    "blocks": [
     {
      "type": "prose",
-     "tr": "Bu bölümde bir daire ilanını okumayı, emlakçıyla konuşmayı ve çevreyi sormayı öğreneceksin: **yakında süpermarket var mı?**, **durak nerede?**, **metroya nasıl giderim?**\n\nAnahtar nokta: «var» Yunancada **υπάρχει** (tekil) ya da **υπάρχουν** (çoğul) olur. Yer sözcüğü de isimden önce gelir: **δίπλα στο φαρμακείο**, **απέναντι από την τράπεζα**.",
-     "en": "In this chapter you learn to read a flat ad, talk to an estate agent and ask what is nearby: **is there a supermarket near here?**, **where is the stop?**, **how do I get to the metro?**\n\nThe key point: «there is» is **υπάρχει** (singular) or **υπάρχουν** (plural), and a place word goes before the noun: **δίπλα στο φαρμακείο**, **απέναντι από την τράπεζα**."
+     "tr": "Bu bölümde bir daire ilanını okumayı, emlakçıyla konuşmayı ve çevreyi sormayı öğreneceksin: **yakında postane var mı?**, **durak nerede?**, **metroya nasıl giderim?**\n\nAnahtar nokta: «var» Yunancada **υπάρχει** (tekil) ya da **υπάρχουν** (çoğul) olur. Yer sözcüğü de isimden önce gelir: **πίσω από το σχολείο**, **απέναντι από την τράπεζα**.",
+     "en": "In this chapter you learn to read a flat ad, talk to an estate agent and ask what is nearby: **is there a post office near here?**, **where is the stop?**, **how do I get to the metro?**\n\nThe key point: «there is» is **υπάρχει** (singular) or **υπάρχουν** (plural), and a place word goes before the noun: **πίσω από το σχολείο**, **απέναντι από την τράπεζα**."
     }
    ]
   },
@@ -123,15 +123,15 @@
       },
       {
        "who": "Αϊσέ",
-       "el": "Η θέα είναι πολύ ωραία! Υπάρχει σουπερμάρκετ κοντά;",
-       "tr": "Manzara çok güzel! Yakında süpermarket var mı?",
-       "en": "The view is lovely! Is there a supermarket nearby?"
+       "el": "Η θέα είναι πολύ ωραία! Υπάρχει ταχυδρομείο κοντά;",
+       "tr": "Manzara çok güzel! Yakında postane var mı?",
+       "en": "The view is lovely! Is there a post office nearby?"
       },
       {
        "who": "Μεσίτης",
-       "el": "Ναι, υπάρχει ένα απέναντι από το φαρμακείο. Στη γειτονιά υπάρχουν και δύο φούρνοι. Η στάση είναι δίπλα στην τράπεζα.",
-       "tr": "Evet, eczanenin karşısında bir tane var. Mahallede iki de fırın var. Durak bankanın yanında.",
-       "en": "Yes, there is one opposite the pharmacy. There are also two bakeries in the neighbourhood. The stop is next to the bank."
+       "el": "Ναι, υπάρχει ένα πίσω από το σχολείο. Στη γειτονιά υπάρχουν και δύο φούρνοι. Η στάση είναι δίπλα στην τράπεζα.",
+       "tr": "Evet, okulun arkasında bir tane var. Mahallede iki de fırın var. Durak bankanın yanında.",
+       "en": "Yes, there is one behind the school. There are also two bakeries in the neighbourhood. The stop is next to the bank."
       },
       {
        "who": "Αϊσέ",
@@ -570,7 +570,7 @@
         "tr": "…-ın karşısında",
         "en": "opposite"
        },
-       "Το σουπερμάρκετ είναι απέναντι από το φαρμακείο."
+       "Το σουπερμάρκετ είναι απέναντι από το πάρκο."
       ],
       [
        "πίσω από",
@@ -578,7 +578,7 @@
         "tr": "…-ın arkasında",
         "en": "behind"
        },
-       "Ο φούρνος είναι πίσω από το σουπερμάρκετ."
+       "Το ταχυδρομείο είναι πίσω από το σχολείο."
       ],
       [
        "μπροστά σε",
@@ -594,7 +594,7 @@
         "tr": "…-ın arasında",
         "en": "between"
        },
-       "Το φαρμακείο είναι ανάμεσα στην τράπεζα και στο σουπερμάρκετ."
+       "Το περίπτερο είναι ανάμεσα στην τράπεζα και στη στάση."
       ]
      ],
      "note": {
@@ -689,96 +689,62 @@
    "blocks": [
     {
      "type": "prose",
-     "tr": "En çok kullandığın iki hâl **yalın hâl** (ονομαστική) ve **-i hâli** (αιτιατική). Hangisi ne zaman?",
-     "en": "The two cases you use most are the **nominative** (ονομαστική) and the **accusative** (αιτιατική). Which one when?"
+     "tr": "Sor: isim **yapan, olan ya da var olan** mı? O zaman **yalın hâl** (ονομαστική). Ona bir şey mi **yapılıyor**, önünde **edat** mı var, bir **zaman** mı? O zaman **-i hâli** (αιτιατική).",
+     "en": "Ask: does the noun **act, be or exist**? Then **nominative** (ονομαστική). Is something **done to** it, is there a **preposition** before it, or is it a **time**? Then **accusative** (αιτιατική)."
     },
     {
      "type": "table",
      "head": [
       {
-       "tr": "isim ne iş görür?",
-       "en": "what the noun does"
+       "tr": "ne değişiyor?",
+       "en": "what changes"
       },
       {
-       "tr": "hâl",
-       "en": "case"
+       "tr": "yalın hâl",
+       "en": "nominative"
       },
       {
-       "tr": "örnek",
-       "en": "example"
+       "tr": "-i hâli",
+       "en": "accusative"
       }
      ],
      "rows": [
       [
        {
-        "tr": "özne",
-        "en": "subject"
+        "tr": "özne / nesne",
+        "en": "subject / object"
        },
-       {
-        "tr": "yalın",
-        "en": "nominative"
-       },
-       "Ο Νίκος ψάχνει διαμέρισμα."
+       "Ο μεσίτης περιμένει.",
+       "Περιμένω τον μεσίτη."
       ],
       [
        {
-        "tr": "είναι fiilinden sonra",
-        "en": "after είναι"
+        "tr": "tek başına / edattan sonra",
+        "en": "alone / after a preposition"
        },
-       {
-        "tr": "yalın",
-        "en": "nominative"
-       },
-       "Ο κύριος Πέτρου είναι ο μεσίτης."
+       "Ο φούρνος είναι κοντά.",
+       "Μένω δίπλα στον φούρνο."
       ],
       [
        {
-        "tr": "υπάρχει fiilinden sonra",
-        "en": "after υπάρχει"
+        "tr": "var / görüyorum",
+        "en": "there is / I see"
        },
-       {
-        "tr": "yalın",
-        "en": "nominative"
-       },
-       "Υπάρχει ένας φούρνος κοντά."
+       "Υπάρχει ένας φούρνος.",
+       "Βλέπω έναν φούρνο."
       ],
       [
        {
-        "tr": "fiilin nesnesi",
-        "en": "object of a verb"
+        "tr": "özne / zaman",
+        "en": "subject / time"
        },
-       {
-        "tr": "-i hâli",
-        "en": "accusative"
-       },
-       "Ψάχνω τον μεσίτη."
-      ],
-      [
-       {
-        "tr": "edattan sonra (σε, από, για, με…)",
-        "en": "after a preposition (σε, από, για, με…)"
-       },
-       {
-        "tr": "-i hâli",
-        "en": "accusative"
-       },
-       "δίπλα στον φούρνο, απέναντι από τη στάση"
-      ],
-      [
-       {
-        "tr": "zaman",
-        "en": "time"
-       },
-       {
-        "tr": "-i hâli",
-        "en": "accusative"
-       },
-       "τη Δευτέρα, το πρωί, τον μήνα"
+       "Η Δευτέρα είναι δύσκολη.",
+       "Τη Δευτέρα δουλεύω."
       ]
      ],
      "note": {
-      "tr": "Artikel: *ο, η, το, οι, τα* yalın; *τον, την, το, τους, τις, τα* -i hâli. *Ένας* yalın, *έναν* -i hâli. Nötrde iki hâl aynıdır.",
-      "en": "Article: *ο, η, το, οι, τα* nominative; *τον, την, το, τους, τις, τα* accusative. *Ένας* is nominative, *έναν* accusative. In the neuter the two cases are the same."
+      "tr": "*Είναι*'den sonra gelen isim de yalın hâldedir: *Ο κύριος Πέτρου είναι ο μεσίτης.* Artikel: *ο, η, το, οι, τα* yalın; *τον, την, το, τους, τις, τα* -i hâli. *Ένας* yalın, *έναν* -i hâli. Nötrde iki hâl aynıdır.",
+      "en": "A noun after *είναι* is nominative too: *Ο κύριος Πέτρου είναι ο μεσίτης.* Article: *ο, η, το, οι, τα* nominative; *τον, την, το, τους, τις, τα* accusative. *Ένας* is nominative, *έναν* accusative. In the neuter the two cases are the same."
      }
     }
    ]

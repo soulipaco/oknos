@@ -114,9 +114,9 @@
   "lemma": "δέμα",
   "gender": "n",
   "example": {
-   "el": "Έχω μια ειδοποίηση για ένα δέμα.",
-   "en": "I have a notice for a parcel.",
-   "tr": "Bir koli için bildirim kâğıdım var."
+   "el": "Θέλω να στείλω ένα δέμα στη Σμύρνη.",
+   "en": "I want to send a parcel to Izmir.",
+   "tr": "İzmir'e bir koli göndermek istiyorum."
   },
   "source": {
    "doc": "chapter",
@@ -163,9 +163,9 @@
   ],
   "lemma": "συστημένος",
   "example": {
-   "el": "Το δέμα από την Τουρκία είναι συστημένο.",
-   "en": "The parcel from Turkey is registered.",
-   "tr": "Türkiye'den gelen koli taahhütlü."
+   "el": "Στέλνω το δέμα συστημένο.",
+   "en": "I am sending the parcel registered.",
+   "tr": "Koliyi taahhütlü gönderiyorum."
   },
   "source": {
    "doc": "chapter",
@@ -419,19 +419,19 @@
    "tr": "Doğru cevabı seç."
   },
   "prompt": {
-   "el": "Πόσο κάνουν όλα μαζί στο ταχυδρομείο;",
-   "en": "How much is everything together at the post office?",
-   "tr": "Postanede hepsi birlikte ne kadar?"
+   "el": "Πόσο πληρώνει η Αϊσέ για το δέμα;",
+   "en": "How much does Ayşe pay for the parcel?",
+   "tr": "Ayşe koli için ne kadar ödüyor?"
   },
   "options": [
-   "ένα ευρώ",
-   "δύο ευρώ",
-   "τρία ευρώ"
+   "δεκαπέντε ευρώ",
+   "τριάντα ευρώ",
+   "σαράντα πέντε ευρώ"
   ],
-  "answer": 2,
+  "answer": 0,
   "explain": {
-   "tr": "Zarf bir euro, pul iki; «όλα μαζί» toplamdır: üç. Bir ve iki tuzaktır. Koli için para ödemiyor.",
-   "en": "The envelope is one euro and the stamp two; «όλα μαζί» is the total, three. One and two are the traps. She pays nothing for the parcel."
+   "tr": "Taahhütlü bir haftada varır ve on beş euro; kurye iki günde varır ve otuz euro. Ayşe taahhütlüyü seçiyor: on beş. Otuz kuryenin fiyatı, kırk beş ikisinin toplamı: ikisi de tuzak.",
+   "en": "Registered takes a week and costs fifteen euros; the courier takes two days and costs thirty. Ayşe chooses registered: fifteen. Thirty is the courier's price and forty-five the two added up: both are traps."
   },
   "source": {
    "doc": "chapter",
@@ -706,15 +706,15 @@
   },
   "statements": [
    {
-    "el": "Το δέμα είναι από την Τουρκία.",
-    "en": "The parcel is from Turkey.",
-    "tr": "Koli Türkiye'den geliyor.",
-    "answer": true
-   },
-   {
     "el": "Η Αϊσέ στέλνει ένα δέμα στη μητέρα της.",
     "en": "Ayşe sends a parcel to her mother.",
     "tr": "Ayşe annesine bir koli gönderiyor.",
+    "answer": true
+   },
+   {
+    "el": "Η Αϊσέ στέλνει το δέμα με κούριερ.",
+    "en": "Ayşe sends the parcel by courier.",
+    "tr": "Ayşe koliyi kuryeyle gönderiyor.",
     "answer": false
    },
    {
@@ -731,8 +731,8 @@
    }
   ],
   "explain": {
-   "tr": "Koli Türkiye'den, annesinden geliyor: Ayşe onu alıyor, göndermiyor; göndereceği şey bir mektup. Paketi sözleşmeli alıyor. Banka «Θα σας τη στείλουμε στο σπίτι» diyor.",
-   "en": "The parcel comes from Turkey, from her mother: Ayşe collects it, she does not send it; what she sends is a letter. She takes the plan with a contract. The bank says «Θα σας τη στείλουμε στο σπίτι»."
+   "tr": "Ayşe koliyi İzmir'e, annesine gönderiyor; kuryeyle değil, taahhütlü. Paketi sözleşmeli alıyor. Banka «Θα σας τη στείλουμε στο σπίτι» diyor.",
+   "en": "Ayşe sends the parcel to her mother in Izmir; not by courier but registered. She takes the plan with a contract. The bank says «Θα σας τη στείλουμε στο σπίτι»."
   },
   "source": {
    "doc": "chapter",

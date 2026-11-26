@@ -8,7 +8,7 @@
   "en": "A neighbour's name day and Easter: the genitive, αν and όταν"
  },
  "minutes": 18,
- "version": 1,
+ "version": 2,
  "sections": [
   {
    "kind": "intro",
@@ -453,21 +453,21 @@
   {
    "kind": "grammar",
    "title": {
-    "tr": "Tamlayan ne için kullanılır? Beş iş",
-    "en": "What the genitive is for: five uses"
+    "tr": "Tamlayan başka nerede? Sorular, sayılar, tabelalar",
+    "en": "Where else the genitive turns up: questions, numbers, signs"
    },
    "blocks": [
     {
      "type": "prose",
-     "tr": "**Kimin?** için *ποιανού;* (sahip kadınsa: *ποιανής;*): *Ποιανού είναι το δώρο; — Του Νίκου.* Yaşı sorarken: [[Πόσων χρονών;]]",
-     "en": "For **whose?** ask *ποιανού;* (if the owner is a woman: *ποιανής;*): *Ποιανού είναι το δώρο; — Του Νίκου.* To ask age: [[Πόσων χρονών;]]"
+     "tr": "Tamlayan **«kimin?»** sorusunu cevaplar: *Τίνος είναι το κόκκινο αυγό; — Του Νίκου.* (ya da *Ποιανού;*, sahip kadınsa *Ποιανής;*). Yaşta ve tarihte **bir sayıdan sonra** gelir ([[Πόσων χρονών;]]); **tabelada ve etikette** de adları verir: cadde, stat, ürünün geldiği yer.",
+     "en": "The genitive answers **«whose?»**: *Τίνος είναι το κόκκινο αυγό; — Του Νίκου.* (also *Ποιανού;*, for a woman *Ποιανής;*). It follows **a number** in ages and dates ([[Πόσων χρονών;]]), and names things **on signs and labels**: streets, stadiums, where a product comes from."
     },
     {
      "type": "table",
      "head": [
       {
-       "tr": "Ne için?",
-       "en": "What for?"
+       "tr": "Nerede?",
+       "en": "Where?"
       },
       {
        "tr": "Örnek",
@@ -477,57 +477,59 @@
      "rows": [
       [
        {
-        "tr": "Sahiplik",
-        "en": "Possession"
+        "tr": "«Kimin?»",
+        "en": "«Whose?»"
        },
-       "το σπίτι της Μαρίας"
+       "Τίνος είναι; — Του Νίκου."
       ],
       [
        {
-        "tr": "Cadde, meydan adı",
-        "en": "Street and square names"
+        "tr": "Sayıdan sonra: yaş",
+        "en": "After a number: age"
        },
-       "οδός Ερμού · οδός Σταδίου · πλατεία Συντάγματος"
+       "τριάντα χρονών"
       ],
       [
        {
-        "tr": "Yaş: είμαι + sayı + χρονών",
-        "en": "Age: είμαι + number + χρονών"
+        "tr": "Sayıdan sonra: tarih",
+        "en": "After a number: a date"
        },
-       "Είμαι τριάντα χρονών."
+       "στις τρεις Μαΐου"
       ],
       [
        {
-        "tr": "Tarih: στις + sayı + ay",
-        "en": "Date: στις + number + month"
+        "tr": "Tabela: cadde",
+        "en": "A sign: a street"
        },
-       "στις 25 Μαρτίου"
+       "οδός Αιόλου"
       ],
       [
        {
-        "tr": "Köken: ürün + yer",
-        "en": "Origin: product + place"
+        "tr": "Tabela: stat",
+        "en": "A sign: a stadium"
        },
-       "τυρί Νάξου · κρασί Σαντορίνης"
+       "Στάδιο Ειρήνης και Φιλίας"
+      ],
+      [
+       {
+        "tr": "Etiket: ürün + yer",
+        "en": "A label: product + place"
+       },
+       "λάδι Καλαμάτας · τυρί Λήμνου"
       ]
      ],
      "note": {
-      "tr": "Aylar da -ος isimleridir: Μάρτιος → Μαρτίου, Δεκέμβριος → Δεκεμβρίου, Μάιος → Μαΐου; Ιούλιος → Ιουλίου, Αύγουστος → Αυγούστου. Yaşta 3 ve 4 değişir: τριών, τεσσάρων χρονών; resmî dilde ετών. Cadde adları tamlayandır: οδός Σταδίου (το Στάδιο), πλατεία Συντάγματος (το Σύνταγμα). Ερμού ise Ερμής (Hermes) adının eski bir tamlayanıdır.",
-      "en": "Months are -ος nouns too: Μάρτιος → Μαρτίου, Δεκέμβριος → Δεκεμβρίου, Μάιος → Μαΐου; Ιούλιος → Ιουλίου, Αύγουστος → Αυγούστου. In ages 3 and 4 change: τριών, τεσσάρων χρονών; the formal word is ετών. Street names are genitives: οδός Σταδίου (το Στάδιο), πλατεία Συντάγματος (το Σύνταγμα). Ερμού is an old genitive of ο Ερμής (Hermes)."
+      "tr": "Tabela ve etiket artikel yazmaz. Sözlük biçimleri: ο Μάιος → Μαΐου, ο Αίολος → Αιόλου, η ειρήνη → ειρήνης, η φιλία → φιλίας, η Καλαμάτα → Καλαμάτας. Aylar -ος isimleridir: ο Αύγουστος → Αυγούστου, ο Δεκέμβριος → Δεκεμβρίου. Yaşta 3 ve 4 değişir: τριών, τεσσάρων χρονών; resmî dilde ετών. Ο Αίολος (rüzgârların tanrısı) → Αιόλου: vurgu, δάσκαλος → δασκάλου gibi bir hece sağa kayar. Dişil -ος ada adları da -ου alır: η Λήμνος → Λήμνου, η Νάξος → Νάξου. Στάδιο Ειρήνης και Φιλίας, Pire'deki büyük kapalı stattır («Barış ve Dostluk Stadı»).",
+      "en": "Signs and labels leave the article out. Dictionary forms: ο Μάιος → Μαΐου, ο Αίολος → Αιόλου, η ειρήνη → ειρήνης, η φιλία → φιλίας, η Καλαμάτα → Καλαμάτας. Months are -ος nouns: ο Αύγουστος → Αυγούστου, ο Δεκέμβριος → Δεκεμβρίου. In ages 3 and 4 change: τριών, τεσσάρων χρονών; the formal word is ετών. Ο Αίολος (the god of the winds) → Αιόλου: the stress moves one syllable right, as in δάσκαλος → δασκάλου. Feminine island names in -ος take -ου too: η Λήμνος → Λήμνου, η Νάξος → Νάξου. Στάδιο Ειρήνης και Φιλίας is the big indoor stadium in Piraeus («the Stadium of Peace and Friendship»)."
      }
     },
     {
      "type": "examples",
      "items": [
       {
-       "el": "Πόσων χρονών είσαι; — Είμαι είκοσι οχτώ χρονών.",
-       "tr": "Kaç yaşındasın? — Yirmi sekiz yaşındayım.",
-       "en": "How old are you? — I am twenty-eight."
-      },
-      {
-       "el": "Η γιορτή του Νίκου είναι στις έξι Δεκεμβρίου.",
-       "tr": "Nikos'un isim günü 6 Aralık'ta.",
-       "en": "Nikos's name day is on 6 December."
+       "el": "Ο Νίκος είναι τριάντα χρονών, και η Αϊσέ έχει γενέθλια στις τρεις Μαΐου.",
+       "tr": "Nikos otuz yaşında, Ayşe'nin de doğum günü 3 Mayıs'ta.",
+       "en": "Nikos is thirty, and Ayşe has her birthday on 3 May."
       }
      ]
     }

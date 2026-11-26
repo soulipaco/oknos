@@ -13,9 +13,9 @@
   ],
   "lemma": "κοντός",
   "example": {
-   "el": "Ο Νίκος είναι κοντός.",
-   "en": "Nikos is short.",
-   "tr": "Nikos kısa boylu."
+   "el": "Η Δέσποινα είναι κοντή, ο Λευτέρης είναι ψηλός.",
+   "en": "Despina is short; Lefteris is tall.",
+   "tr": "Despina kısa boylu, Lefteris uzun boylu."
   },
   "source": {
    "doc": "chapter",
@@ -85,9 +85,9 @@
    "stage:lesson-08"
   ],
   "example": {
-   "el": "Ποια είναι η Σοφία;",
-   "en": "Which one is Sofia?",
-   "tr": "Sofia hangisi?"
+   "el": "Ποια είναι η Ρούλα;",
+   "en": "Which one is Roula?",
+   "tr": "Rula hangisi?"
   },
   "source": {
    "doc": "chapter",
@@ -246,21 +246,21 @@
     "answer": true
    },
    {
-    "el": "Ο Νίκος είναι ο ψηλός.",
-    "en": "Nikos is the tall one.",
-    "tr": "Nikos uzun olan.",
+    "el": "Η Δέσποινα είναι η ψηλή.",
+    "en": "Despina is the tall one.",
+    "tr": "Despina uzun olan.",
     "answer": false
    },
    {
-    "el": "Η Σοφία είναι νέα και όμορφη.",
-    "en": "Sofia is young and pretty.",
-    "tr": "Sofia genç ve güzel.",
+    "el": "Η Ρούλα είναι ξανθιά.",
+    "en": "Roula is blonde.",
+    "tr": "Rula sarışın.",
     "answer": true
    }
   ],
   "explain": {
-   "en": "Ayşe says the phone is expensive: «Ναι, χίλια διακόσια ευρώ». Nikos is «ο κοντός»; the tall one is Kostas. Sofia is «νέα και πολύ όμορφη».",
-   "tr": "Ayşe telefonun pahalı olduğunu söylüyor: «Ναι, χίλια διακόσια ευρώ». Nikos «ο κοντός»; uzun olan Kostas. Sofia «νέα και πολύ όμορφη»."
+   "en": "Ayşe says the phone is expensive: «Ναι, χίλια διακόσια ευρώ». Despina is «η κοντή με το κόκκινο φόρεμα», not the tall one. Roula is «η ξανθιά κοπέλα».",
+   "tr": "Ayşe telefonun pahalı olduğunu söylüyor: «Ναι, χίλια διακόσια ευρώ». Despina «η κοντή με το κόκκινο φόρεμα», uzun olan değil. Rula «η ξανθιά κοπέλα»."
   },
   "source": {
    "doc": "chapter",
@@ -311,8 +311,8 @@
  {
   "id": "ch08-try-group2",
   "ask": {
-   "en": "Sofia is very young. Which form is right?",
-   "tr": "Sofia çok genç. Hangi biçim doğru?"
+   "en": "Roula is very funny. Which form is right?",
+   "tr": "Rula çok komik. Hangi biçim doğru?"
   },
   "type": "mcq",
   "skill": "grammar",
@@ -326,19 +326,19 @@
    "tr": "Doğru cevabı seç."
   },
   "prompt": {
-   "el": "Η Σοφία είναι πολύ …",
-   "en": "Sofia is very young. Which form is right?",
-   "tr": "Sofia çok genç. Hangi biçim doğru?"
+   "el": "Η Ρούλα είναι πολύ …",
+   "en": "Roula is very funny. Which form is right?",
+   "tr": "Rula çok komik. Hangi biçim doğru?"
   },
   "options": [
-   "νέα",
-   "νέη",
-   "νέο"
+   "αστεία",
+   "αστείη",
+   "αστείο"
   ],
   "answer": 0,
   "explain": {
-   "en": "Νέος has a vowel (ε) before -ος, so the feminine ends in -α: νέα. Νέο is neuter, and νέη does not exist.",
-   "tr": "Νέος'ta -ος'tan önce ünlü (ε) var, dişil -α ile biter: νέα. Νέο nötr; νέη diye bir biçim yok."
+   "en": "Αστείος has a vowel (ι) before -ος, so the feminine ends in -α: αστεία. Αστείο is neuter, and αστείη does not exist.",
+   "tr": "Αστείος'ta -ος'tan önce ünlü (ι) var, dişil -α ile biter: αστεία. Αστείο nötr; αστείη diye bir biçim yok."
   },
   "source": {
    "doc": "chapter",
@@ -359,7 +359,7 @@
    "en": "Fill in the gap.",
    "tr": "Boşluğu doldur."
   },
-  "text": "{1} είναι η φίλη σου; — Η Μαρία.",
+  "text": "{1} είναι η φίλη σου; — Η Ρούλα.",
   "answer": {
    "1": [
     "Ποια"
@@ -373,8 +373,8 @@
    ]
   },
   "translation": {
-   "en": "Which one is your friend? — Maria.",
-   "tr": "Arkadaşın hangisi? — Maria."
+   "en": "Which one is your friend? — Roula.",
+   "tr": "Arkadaşın hangisi? — Rula."
   },
   "explain": {
    "en": "Η φίλη is feminine: ποια.",
@@ -619,7 +619,7 @@
    "en": "Fill in the gap.",
    "tr": "Boşluğu doldur."
   },
-  "text": "Ο Νίκος είναι {1}. Η Μαρία είναι {2}. Το παιδί είναι {3}.",
+  "text": "Ο Λευτέρης είναι {1}. Η Ρούλα είναι {2}. Το παιδί είναι {3}.",
   "bank": [
    "ψηλός",
    "νέα",
@@ -631,12 +631,12 @@
    "3": "μικρό"
   },
   "translation": {
-   "en": "Nikos is tall. Maria is young. The child is small.",
-   "tr": "Nikos uzun boylu. Maria genç. Çocuk küçük."
+   "en": "Lefteris is tall. Roula is young. The child is small.",
+   "tr": "Lefteris uzun boylu. Rula genç. Çocuk küçük."
   },
   "explain": {
-   "en": "Ο Νίκος is masculine: ψηλός. Η Μαρία is feminine: νέα. Το παιδί is neuter: μικρό.",
-   "tr": "Ο Νίκος eril: ψηλός. Η Μαρία dişil: νέα. Το παιδί nötr: μικρό."
+   "en": "Ο Λευτέρης is masculine: ψηλός. Η Ρούλα is feminine: νέα. Το παιδί is neuter: μικρό.",
+   "tr": "Ο Λευτέρης eril: ψηλός. Η Ρούλα dişil: νέα. Το παιδί nötr: μικρό."
   },
   "source": {
    "doc": "chapter",
@@ -657,7 +657,7 @@
    "en": "Fill in the gap.",
    "tr": "Boşluğu doldur."
   },
-  "text": "— {1} είναι ο Νίκος; — Ο κοντός. — {2} είναι η Σοφία; — Η νέα. — {3} φόρεμα είναι ακριβό; — Το κόκκινο.",
+  "text": "— {1} είναι ο Λευτέρης; — Ο ψηλός. — {2} είναι η Ρούλα; — Η ξανθιά. — {3} φόρεμα είναι ακριβό; — Το κόκκινο.",
   "bank": [
    "Ποιος",
    "Ποια",
@@ -669,12 +669,12 @@
    "3": "Ποιο"
   },
   "translation": {
-   "en": "— Which one is Nikos? — The short one. — Which one is Sofia? — The young one. — Which dress is expensive? — The red one.",
-   "tr": "— Nikos hangisi? — Kısa olan. — Sofia hangisi? — Genç olan. — Hangi elbise pahalı? — Kırmızı olan."
+   "en": "— Which one is Lefteris? — The tall one. — Which one is Roula? — The blonde one. — Which dress is expensive? — The red one.",
+   "tr": "— Lefteris hangisi? — Uzun olan. — Rula hangisi? — Sarışın olan. — Hangi elbise pahalı? — Kırmızı olan."
   },
   "explain": {
-   "en": "Ποιος goes with ο Νίκος (masculine), ποια with η Σοφία (feminine), ποιο with το φόρεμα (neuter).",
-   "tr": "Ποιος ο Νίκος ile (eril), ποια η Σοφία ile (dişil), ποιο το φόρεμα ile (nötr) gelir."
+   "en": "Ποιος goes with ο Λευτέρης (masculine), ποια with η Ρούλα (feminine), ποιο with το φόρεμα (neuter).",
+   "tr": "Ποιος ο Λευτέρης ile (eril), ποια η Ρούλα ile (dişil), ποιο το φόρεμα ile (nötr) gelir."
   },
   "source": {
    "doc": "chapter",

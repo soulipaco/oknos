@@ -227,9 +227,9 @@
    "stage:lesson-07"
   ],
   "example": {
-   "el": "Χθες πήγα στον φούρνο.",
-   "en": "Yesterday I went to the bakery.",
-   "tr": "Dün fırına gittim."
+   "el": "Χθες πήγες στη λαϊκή;",
+   "en": "Did you go to the street market yesterday?",
+   "tr": "Dün semt pazarına gittin mi?"
   },
   "source": {
    "doc": "chapter",
@@ -501,9 +501,9 @@
   },
   "statements": [
    {
-    "el": "Η Αϊσέ θέλει ένα νερό και μια εφημερίδα.",
-    "en": "Ayşe wants a water and a newspaper.",
-    "tr": "Ayşe bir su ve bir gazete istiyor.",
+    "el": "Ο Κώστας δεν έχει ψιλά.",
+    "en": "Kostas has no change.",
+    "tr": "Kostas'ın bozuk parası yok.",
     "answer": true
    },
    {
@@ -520,8 +520,8 @@
    }
   ],
   "explain": {
-   "en": "At the kiosk she asks for «ένα νερό και μια εφημερίδα». In the café she says «Μέτριο»: medium, not sweet. Nikos says «Εγώ θα ήθελα έναν φραπέ».",
-   "tr": "Büfede «ένα νερό και μια εφημερίδα» diyor. Kafede «Μέτριο» diyor: orta, şekerli değil. Nikos «Εγώ θα ήθελα έναν φραπέ» diyor."
+   "en": "At the kiosk Kostas says «Δεν έχω ψιλά», so Ayşe pays with one euro. In the café she says «Μέτριο»: medium, not sweet. Nikos says «Εγώ θα ήθελα έναν φραπέ».",
+   "tr": "Büfede Kostas «Δεν έχω ψιλά» diyor; Ayşe de bir avro veriyor. Kafede «Μέτριο» diyor: orta, şekerli değil. Nikos «Εγώ θα ήθελα έναν φραπέ» diyor."
   },
   "source": {
    "doc": "chapter",
@@ -673,7 +673,7 @@
    "tense": "aorist",
    "person": "1sg"
   },
-  "text": "Χθες (εγώ) {1} στον φούρνο.",
+  "text": "Χθες (εγώ) {1} στη λαϊκή.",
   "answer": {
    "1": [
     "πήγα"
@@ -687,8 +687,8 @@
    ]
   },
   "translation": {
-   "en": "Yesterday I went to the bakery.",
-   "tr": "Dün fırına gittim."
+   "en": "Yesterday I went to the street market.",
+   "tr": "Dün semt pazarına gittim."
   },
   "explain": {
    "en": "Yesterday is the past, and the speaker is «I»: πήγα. πήγες is «you», θα πάω is the future.",
