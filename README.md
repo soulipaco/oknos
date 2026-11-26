@@ -40,7 +40,7 @@ The agent installs what is needed, starts the app and puts an **Oknos** shortcut
 
 You don't need an AI to use Oknos. Nothing in the app calls one, and you can set it up yourself in about five minutes:
 
-1. **Get the code.** On this page, click the green **Code** button → **Download ZIP**, and unzip it into a normal folder, for example your Documents (not a OneDrive or iCloud folder). With git you can run `git clone https://github.com/soulipaco/oknos` instead.
+1. **Get the code.** On this page, click the green **Code** button → **Download ZIP** (about 150 MB: the recorded voice and podcasts are inside), and unzip it into a normal folder, for example your Documents (not a OneDrive or iCloud folder). With git you can run `git clone https://github.com/soulipaco/oknos` instead.
 2. **Install uv**, a free tool that brings Python and everything else the app needs. You only do this once, and it needs no admin rights. Run the line for your system in a terminal (on Windows, PowerShell from the Start menu; on a Mac, Terminal):
    - Windows: `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
    - macOS or Linux: `curl -LsSf https://astral.sh/uv/install.sh | sh`

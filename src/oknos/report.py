@@ -33,7 +33,7 @@ def _read_profile() -> dict:
 
 def repo_page(readme: Path | None = None) -> str | None:
     """The repository's GitHub page, from the README's "Download ..." line. None while the README still
-    has the `<owner>` placeholder (the repository is private), so the coach never asks for a star then."""
+    has the `<owner>` placeholder (a copy whose README names no repository), so the coach never asks for a star then."""
     try:
         text = (readme or paths.REPO_ROOT / "README.md").read_text(encoding="utf-8")
     except OSError:
