@@ -91,9 +91,14 @@ def test_explanations_never_go_to_edge_and_skip_services_without_that_language(l
     class EdgeLike(Speaker):
         pass
 
+    class Mp3Speaker(Speaker):  # an mp3 already, so no ffmpeg is needed (CI has none)
+        def make(self, text, role, keys, lang="el"):
+            self.calls.append((text, role, lang))
+            return b"ID3" + bytes(64)
+
     edge = EdgeLike("edge")
     greek_only = Speaker("greekonly", langs=())
-    keyed = Speaker("google")
+    keyed = Mp3Speaker("google")
     who = voice.make("Merhaba!", "f", chain=[edge, greek_only, keyed], keys={}, profile={"edge_tts_ok": True}, lang="tr")
     assert who == "google" and edge.calls == [] and greek_only.calls == []
     assert voice.find("Merhaba!", "f", "tr") is not None
