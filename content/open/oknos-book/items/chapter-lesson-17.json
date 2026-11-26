@@ -1,0 +1,873 @@
+[
+ {
+  "id": "ch17-therino",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το θερινό σινεμά",
+  "pos": "noun",
+  "en": "open-air summer cinema",
+  "tr": "açık hava sineması; yazlık sinema",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "lemma": "θερινό σινεμά",
+  "gender": "n",
+  "example": {
+   "el": "Την Παρασκευή θα δούμε μια ταινία στο θερινό σινεμά.",
+   "en": "On Friday we will watch a film at the open-air cinema.",
+   "tr": "Cuma günü açık hava sinemasında bir film izleyeceğiz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-mousiki",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η μουσική",
+  "pos": "noun",
+  "en": "music",
+  "tr": "müzik",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "lemma": "μουσική",
+  "gender": "f",
+  "example": {
+   "el": "Προτιμώ την ελληνική μουσική.",
+   "en": "I prefer Greek music.",
+   "tr": "Yunan müziğini tercih ederim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-tragoudi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το τραγούδι",
+  "pos": "noun",
+  "en": "song",
+  "tr": "şarkı",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "lemma": "τραγούδι",
+  "gender": "n",
+  "example": {
+   "el": "Θέλω να ακούσω ένα τουρκικό τραγούδι.",
+   "en": "I want to listen to a Turkish song.",
+   "tr": "Bir Türkçe şarkı dinlemek istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-parea",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η παρέα",
+  "pos": "noun",
+  "en": "group of friends; company",
+  "tr": "arkadaş grubu; ekip",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "lemma": "παρέα",
+  "gender": "f",
+  "example": {
+   "el": "Η παρέα μου θα έρθει στο σινεμά.",
+   "en": "My group of friends will come to the cinema.",
+   "tr": "Arkadaş grubum sinemaya gelecek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-tourkikos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τουρκικός",
+  "pos": "adj",
+  "en": "Turkish (of things)",
+  "tr": "Türk, Türkçe (şeyler için)",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "lemma": "τουρκικός",
+  "example": {
+   "el": "Αυτό το τραγούδι είναι τουρκικό.",
+   "en": "This song is Turkish.",
+   "tr": "Bu şarkı Türkçe."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-gallikos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "γαλλικός",
+  "pos": "adj",
+  "en": "French (of things)",
+  "tr": "Fransız (şeyler için)",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "lemma": "γαλλικός",
+  "example": {
+   "el": "Η Ελένη βλέπει μια γαλλική ταινία.",
+   "en": "Eleni is watching a French film.",
+   "tr": "Eleni bir Fransız filmi izliyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-amerikanikos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αμερικανικός",
+  "pos": "adj",
+  "en": "American (of things)",
+  "tr": "Amerikan (şeyler için)",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "lemma": "αμερικανικός",
+  "example": {
+   "el": "Θέλω να δω μια αμερικανική ταινία.",
+   "en": "I want to see an American film.",
+   "tr": "Bir Amerikan filmi izlemek istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-prepei",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πρέπει",
+  "pos": "verb",
+  "en": "must; have to (never changes: πρέπει να φύγω)",
+  "tr": "-meli; gerekmek (değişmez: πρέπει να φύγω)",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "lemma": "πρέπει",
+  "example": {
+   "el": "Πρέπει να φύγουμε στις εννιά.",
+   "en": "We have to leave at nine.",
+   "tr": "Dokuzda çıkmamız gerekiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-xero",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ξέρω",
+  "pos": "verb",
+  "en": "know; know how to",
+  "tr": "bilmek; -meyi bilmek",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "lemma": "ξέρω",
+  "example": {
+   "el": "Ξέρω να μαγειρεύω.",
+   "en": "I know how to cook.",
+   "tr": "Yemek yapmayı biliyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-archizo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αρχίζω",
+  "pos": "verb",
+  "en": "begin; start",
+  "tr": "başlamak",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "lemma": "αρχίζω",
+  "example": {
+   "el": "Η ταινία αρχίζει στις δέκα.",
+   "en": "The film starts at ten.",
+   "tr": "Film saat onda başlıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-argo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αργώ",
+  "pos": "verb",
+  "en": "be late; be slow",
+  "tr": "geç kalmak; gecikmek",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "lemma": "αργώ",
+  "example": {
+   "el": "Δε θα αργήσω.",
+   "en": "I will not be late.",
+   "tr": "Geç kalmayacağım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-veveos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "βεβαίως",
+  "pos": "adv",
+  "en": "of course; certainly",
+  "tr": "tabii; elbette",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "lemma": "βεβαίως",
+  "example": {
+   "el": "Βεβαίως, μπορείς να καθίσεις μπροστά.",
+   "en": "Of course, you can sit in the front.",
+   "tr": "Tabii, önde oturabilirsin."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-q-film",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ποια ταινία θα δουν οι φίλοι;",
+   "en": "Which film will the friends watch?",
+   "tr": "Arkadaşlar hangi filmi izleyecek?"
+  },
+  "options": [
+   "Μια γαλλική ταινία.",
+   "Μια ελληνική ταινία.",
+   "Μια αμερικανική ταινία."
+  ],
+  "answer": 1,
+  "explain": {
+   "en": "Eleni prefers a Greek film, Ayşe finds one at ten o'clock and Nikos says «να δούμε αυτή».",
+   "tr": "Eleni Yunan filmini tercih ediyor, Ayşe saat onda bir tane buluyor ve Nikos «να δούμε αυτή» diyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Αϊσέ θέλει να δει μια ταινία την Παρασκευή το βράδυ.",
+    "en": "Ayşe wants to see a film on Friday night.",
+    "tr": "Ayşe Cuma akşamı bir film izlemek istiyor.",
+    "answer": true
+   },
+   {
+    "el": "Οι φίλοι θα πάρουν εισιτήρια στο ταμείο.",
+    "en": "The friends will get tickets at the box office.",
+    "tr": "Arkadaşlar biletleri gişeden alacak.",
+    "answer": true
+   },
+   {
+    "el": "Ο Νίκος θα πάρει την Ελένη από το σπίτι στις εννιά και μισή.",
+    "en": "Nikos will pick Eleni up from home at half past nine.",
+    "tr": "Nikos Eleni'yi dokuz buçukta evinden alacak.",
+    "answer": true
+   },
+   {
+    "el": "Στο αυτοκίνητο η Αϊσέ θέλει να ακούσει ελληνική μουσική.",
+    "en": "In the car Ayşe wants to listen to Greek music.",
+    "tr": "Arabada Ayşe Yunan müziği dinlemek istiyor.",
+    "answer": false
+   }
+  ],
+  "explain": {
+   "en": "The first three are in the first dialogue. In the car Ayşe asks to listen to a Turkish song, and Nikos prefers Greek music.",
+   "tr": "İlk üçü ilk diyalogda geçiyor. Arabada Ayşe bir Türkçe şarkı dinlemek istiyor, Nikos ise Yunan müziğini tercih ediyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-try-form",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Αύριο πρέπει να {1} νωρίς.",
+  "answer": {
+   "1": [
+    "ξυπνήσω"
+   ]
+  },
+  "options": {
+   "1": [
+    "ξυπνήσω",
+    "ξυπνάσω",
+    "ξυπνέσω"
+   ]
+  },
+  "translation": {
+   "en": "Tomorrow I have to wake up early.",
+   "tr": "Yarın erken uyanmam gerekiyor."
+  },
+  "explain": {
+   "en": "After να the form is the same as after θα: θα ξυπνήσω → να ξυπνήσω. The other two are not real forms.",
+   "tr": "Να'dan sonra θα'dan sonraki biçim gelir: θα ξυπνήσω → να ξυπνήσω. Diğer ikisi gerçek biçim değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-try-subject",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Η Ελένη λέει στον Νίκο: «Θέλω να έρθεις στο σινεμά». Τι θέλει η Ελένη;",
+   "en": "Eleni says to Nikos: «Θέλω να έρθεις στο σινεμά». What does Eleni want?",
+   "tr": "Eleni Nikos'a diyor ki: «Θέλω να έρθεις στο σινεμά». Eleni ne istiyor?"
+  },
+  "options": [
+   "Να έρθει η Ελένη.",
+   "Να έρθει ο Νίκος.",
+   "Να έρθει η Αϊσέ."
+  ],
+  "answer": 1,
+  "explain": {
+   "en": "έρθεις is the «you» form, and Eleni is talking to Nikos: she wants him to come. If she wanted to come herself, she would say «Θέλω να έρθω».",
+   "tr": "έρθεις «sen» biçimi ve Eleni Nikos'la konuşuyor: Nikos'un gelmesini istiyor. Kendisi gelmek isteseydi «Θέλω να έρθω» derdi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-try-min",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ζητάω από μια φίλη να μην ξεχάσει τα εισιτήρια. Τι λέω;",
+   "en": "I ask a friend not to forget the tickets. What do I say?",
+   "tr": "Bir arkadaşımdan biletleri unutmamasını istiyorum. Ne diyorum?"
+  },
+  "options": [
+   "Μην ξεχάσεις τα εισιτήρια!",
+   "Δεν ξεχάσεις τα εισιτήρια!",
+   "Όχι ξεχάσεις τα εισιτήρια!"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "A warning is made with μην + the να form. δεν and όχι do not belong before a form like ξεχάσεις.",
+   "tr": "Uyarı, μην + να'lı biçimle yapılır. δεν ve όχι, ξεχάσεις gibi bir biçimin önüne gelmez."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-try-permission",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Θέλω να φύγω νωρίς. Τι ρωτάω;",
+   "en": "I want to leave early. What do I ask?",
+   "tr": "Erken çıkmak istiyorum. Ne soruyorum?"
+  },
+  "options": [
+   "Μπορώ να φύγω νωρίς;",
+   "Μπορείς να φύγω νωρίς;",
+   "Μπορώ να φύγεις νωρίς;"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "To ask permission for yourself, use μπορώ and a form for «I»: να φύγω. In the other two the persons do not match.",
+   "tr": "Kendin için izin isterken μπορώ ve «ben» biçimi gerekir: να φύγω. Diğer ikisinde kişiler uyuşmuyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-try-adj",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Μια {1} ταινία, ένα {2} τραγούδι και ο {3} καφές.",
+  "bank": [
+   "γαλλική",
+   "τουρκικό",
+   "ελληνικός"
+  ],
+  "answer": {
+   "1": "γαλλική",
+   "2": "τουρκικό",
+   "3": "ελληνικός"
+  },
+  "translation": {
+   "en": "A French film, a Turkish song and the Greek coffee.",
+   "tr": "Bir Fransız filmi, bir Türk şarkısı ve Yunan kahvesi."
+  },
+  "explain": {
+   "en": "The adjective agrees with the noun: ταινία is feminine (γαλλική), τραγούδι is neuter (τουρκικό), καφές is masculine (ελληνικός).",
+   "tr": "Sıfat isme uyar: ταινία dişil (γαλλική), τραγούδι nötr (τουρκικό), καφές eril (ελληνικός)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-p-form2",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Εμείς πρέπει να {1} τώρα.",
+  "answer": {
+   "1": [
+    "φύγουμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "φύγουμε",
+    "φύγω",
+    "φύγουν"
+   ]
+  },
+  "translation": {
+   "en": "We have to leave now.",
+   "tr": "Şimdi çıkmamız gerekiyor."
+  },
+  "explain": {
+   "en": "The subject is «εμείς», so the verb after πρέπει να is the «we» form: φύγουμε. πρέπει itself does not change.",
+   "tr": "Özne «εμείς», bu yüzden πρέπει να'dan sonra biz biçimi gelir: φύγουμε. πρέπει'nin kendisi değişmez."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-p-match",
+  "type": "match",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the pairs.",
+   "tr": "Eşleştir."
+  },
+  "left": [
+   "έρχομαι",
+   "βλέπω",
+   "τρώω",
+   "κλείνω",
+   "αργώ"
+  ],
+  "right": [
+   "να έρθω",
+   "να δω",
+   "να φάω",
+   "να κλείσω",
+   "να αργήσω"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "explain": {
+   "en": "The να form uses the same stem as the future: θα έρθω, θα δω, θα φάω, θα κλείσω, θα αργήσω.",
+   "tr": "Να'lı biçim gelecekle aynı gövdeyi kullanır: θα έρθω, θα δω, θα φάω, θα κλείσω, θα αργήσω."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-p-sort",
+  "ask": {
+   "en": "Sort each sentence: once-only stem (like να φύγω) or present stem (like να μαγειρεύω)?",
+   "tr": "Her cümleyi gruplara ayır: bir kerelik kök mü (να φύγω gibi), şimdiki kök mü (να μαγειρεύω gibi)?"
+  },
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε πρόταση στη σωστή ομάδα.",
+   "en": "Sort each sentence: once-only stem (like να φύγω) or present stem (like να μαγειρεύω)?",
+   "tr": "Her cümleyi gruplara ayır: bir kerelik kök mü (να φύγω gibi), şimdiki kök mü (να μαγειρεύω gibi)?"
+  },
+  "categories": [
+   "όπως «να φύγω»",
+   "όπως «να μαγειρεύω»"
+  ],
+  "items": [
+   "Πρέπει να φύγω τώρα.",
+   "Ξέρω να μαγειρεύω.",
+   "Θέλω να κλείσω εισιτήρια για την Παρασκευή.",
+   "Αρχίζει να βρέχει.",
+   "Κάθε μέρα πρέπει να ξυπνάω στις επτά."
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   1
+  ],
+  "explain": {
+   "en": "For one occasion, after πρέπει and θέλω: να φύγω, να κλείσω. For a habit (κάθε μέρα), and after ξέρω and αρχίζω: the present stem (να ξυπνάω, να μαγειρεύω, να βρέχει).",
+   "tr": "Tek bir olay için πρέπει ve θέλω'dan sonra: να φύγω, να κλείσω. Bir alışkanlık için (κάθε μέρα), ξέρω ve αρχίζω'dan sonra da şimdiki kök gelir (να ξυπνάω, να μαγειρεύω, να βρέχει)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-p-gap",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "— Ελένη, θέλεις να {1} μαζί μας; — Ναι. Νίκο, μπορείς να με {2} από το σπίτι;",
+  "bank": [
+   "έρθεις",
+   "πάρεις"
+  ],
+  "answer": {
+   "1": "έρθεις",
+   "2": "πάρεις"
+  },
+  "translation": {
+   "en": "— Eleni, do you want to come with us? — Yes. Nikos, can you pick me up from home?",
+   "tr": "— Eleni, bizimle gelmek ister misin? — Evet. Nikos, beni evden alabilir misin?"
+  },
+  "explain": {
+   "en": "Both verbs are about «you» (εσύ): θέλεις να έρθεις, μπορείς να με πάρεις. The pronoun με stands between να and the verb.",
+   "tr": "İki fiil de «sen» ile ilgili: θέλεις να έρθεις, μπορείς να με πάρεις. με zamiri να ile fiilin arasında durur."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-p-answer",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ο Γιώργος ρωτάει: «Μπορώ να καθίσω εδώ;» Η απάντηση είναι ναι. Τι λέω;",
+   "en": "Giorgos asks: «Μπορώ να καθίσω εδώ;» The answer is yes. What do I say?",
+   "tr": "Yorgo soruyor: «Μπορώ να καθίσω εδώ;» Cevap evet. Ne diyorum?"
+  },
+  "options": [
+   "Βεβαίως.",
+   "Δυστυχώς, δε γίνεται.",
+   "Δεν μπορώ τώρα."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Βεβαίως» means «of course». The other two say no.",
+   "tr": "«Βεβαίως» «tabii» demektir. Diğer ikisi hayır anlamına gelir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-p-who",
+  "type": "true_false",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Αϊσέ λέει στον Νίκο: «Θέλω να φύγεις». Η Αϊσέ θέλει να φύγει ο Νίκος.",
+    "en": "Ayşe says to Nikos: «Θέλω να φύγεις». Ayşe wants Nikos to leave.",
+    "tr": "Ayşe Nikos'a «Θέλω να φύγεις» diyor. Ayşe, Nikos'un gitmesini istiyor.",
+    "answer": true
+   },
+   {
+    "el": "Η Αϊσέ λέει στον Νίκο: «Θέλω να φύγω». Η Αϊσέ θέλει να φύγει ο Νίκος.",
+    "en": "Ayşe says to Nikos: «Θέλω να φύγω». Ayşe wants Nikos to leave.",
+    "tr": "Ayşe Nikos'a «Θέλω να φύγω» diyor. Ayşe, Nikos'un gitmesini istiyor.",
+    "answer": false
+   },
+   {
+    "el": "Η Ελένη λέει: «Θέλουν να πάω». Αυτοί θέλουν να πάει η Ελένη.",
+    "en": "Eleni says: «Θέλουν να πάω». They want Eleni to go.",
+    "tr": "Eleni «Θέλουν να πάω» diyor. Onlar Eleni'nin gitmesini istiyor.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "Look at the ending of the second verb: φύγεις is «you», φύγω and πάω are «I». In the second sentence Ayşe wants to leave herself.",
+   "tr": "İkinci fiilin sonuna bak: φύγεις «sen», φύγω ve πάω «ben». İkinci cümlede gitmek isteyen Ayşe'nin kendisi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-p-origin",
+  "type": "mcq",
+  "skill": "vocab",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Το τραγούδι είναι από την Τουρκία. Τι τραγούδι είναι;",
+   "en": "The song is from Turkey. What kind of song is it?",
+   "tr": "Şarkı Türkiye'den. Nasıl bir şarkı?"
+  },
+  "options": [
+   "Είναι τουρκικό.",
+   "Είναι τουρκική.",
+   "Είναι τουρκικός."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "τραγούδι is neuter, so the adjective is neuter: τουρκικό.",
+   "tr": "τραγούδι nötr, bu yüzden sıfat da nötr: τουρκικό."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch17-p-sit",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-17"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Μπορώ να {1} εδώ;",
+  "answer": {
+   "1": [
+    "καθίσω"
+   ]
+  },
+  "options": {
+   "1": [
+    "καθίσω",
+    "καθίσεις",
+    "καθίσουμε"
+   ]
+  },
+  "translation": {
+   "en": "May I sit here?",
+   "tr": "Burada oturabilir miyim?"
+  },
+  "explain": {
+   "en": "Μπορώ is the «I» form, so the verb after να is «I» too: καθίσω.",
+   "tr": "Μπορώ «ben» biçimi; bu yüzden να'dan sonraki fiil de «ben» biçiminde olur: καθίσω."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-17",
+   "by": "sonnet-draft"
+  }
+ }
+]

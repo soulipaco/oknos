@@ -1,0 +1,681 @@
+{
+ "id": "oknos-book.lesson-12",
+ "curriculum": "oknos-book",
+ "stage": "lesson-12",
+ "level": "A1",
+ "title": {
+  "tr": "Tekrar: 7-11. dersler, işlerle dolu bir gün",
+  "en": "Review: lessons 7-11 in a day of errands"
+ },
+ "minutes": 15,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde **yeni hiçbir şey yok**: 7-11. dersleri işlerle dolu bir günde ve dört kısa tabloda topluyorsun: artikel ve nesne hâli, sıfat uyumu, geçmiş ve gelecek, edatlar ve zaman.\n\nAnahtar nokta: kelimenin cümlede **ne yaptığına** bak: fiilin nesnesi mi, hangi cins, geçmiş mi (*θα* yok) gelecek mi (*θα* var)?",
+     "en": "There is **nothing new** in this chapter: it pulls lessons 7-11 together in a day of errands and four short tables.\n\nThe key point: ask what the word is doing: object? which gender? past (no *θα*) or future (*θα*)?"
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Cumartesi günü işler",
+    "en": "A Saturday of errands"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Önce dinle, sonra oku. Ayşe cumartesi günü büfeye, fırına, kafeye ve Pire'deki bir dükkâna gider; akşam mesaj yazar.",
+     "en": "Listen first, then read. On Saturday Ayşe goes to the kiosk, the bakery, a café and a shop in Piraeus, and writes a message in the evening."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Önce büfe, sonra fırın; sabah.",
+      "en": "The kiosk, then the bakery, in the morning."
+     },
+     "lines": [
+      {
+       "who": "Πωλητής",
+       "el": "Καλημέρα! Ορίστε;",
+       "tr": "Günaydın! Buyurun?",
+       "en": "Good morning! Yes?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Θα ήθελα αυτή την εφημερίδα και ένα μικρό νερό, παρακαλώ.",
+       "tr": "Şu gazeteyi ve küçük bir su alayım, lütfen.",
+       "en": "I'd like this newspaper and a small water, please."
+      },
+      {
+       "who": "Πωλητής",
+       "el": "Ένα ευρώ και εβδομήντα λεπτά.",
+       "tr": "Bir avro yetmiş sent.",
+       "en": "One euro seventy."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα. Θέλω αυτές τις δύο τυρόπιτες και μισό κιλό ψωμί, παρακαλώ. Πόσο κάνουν;",
+       "tr": "Günaydın. Şu iki peynirli böreği ve yarım kilo ekmek istiyorum, lütfen. Ne kadar?",
+       "en": "Good morning. I want these two cheese pies and half a kilo of bread, please. How much are they?"
+      },
+      {
+       "who": "Πωλήτρια",
+       "el": "Πέντε ευρώ και εξήντα λεπτά.",
+       "tr": "Beş avro altmış sent.",
+       "en": "Five euros sixty."
+      }
+     ]
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ayşe sokakta Nikos'la karşılaşır, sonra bir kafe.",
+      "en": "Ayşe meets Nikos in the street, then a café."
+     },
+     "lines": [
+      {
+       "who": "Νίκος",
+       "el": "Γεια σου, Αϊσέ! Πού πας;",
+       "tr": "Merhaba Ayşe! Nereye gidiyorsun?",
+       "en": "Hi, Ayşe! Where are you going?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Πάω στον Πειραιά με το μετρό. Θέλω ένα καινούργιο πλυντήριο. Πάμε για καφέ;",
+       "tr": "Metroyla Pire'ye gidiyorum. Yeni bir çamaşır makinesi istiyorum. Kahveye gidelim mi?",
+       "en": "I'm going to Piraeus by metro. I want a new washing machine. Shall we go for a coffee?"
+      },
+      {
+       "who": "Σερβιτόρος",
+       "el": "Τι θα θέλατε;",
+       "tr": "Ne alırsınız?",
+       "en": "What would you like?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Έναν ελληνικό μέτριο, παρακαλώ.",
+       "tr": "Orta şekerli bir Yunan kahvesi, lütfen.",
+       "en": "A medium-sweet Greek coffee, please."
+      },
+      {
+       "who": "Νίκος",
+       "el": "Εγώ θα ήθελα έναν φραπέ.",
+       "tr": "Ben bir frappe alayım.",
+       "en": "I'd like a frappé."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Πού ήσουν χθες, Νίκο;",
+       "tr": "Dün neredeydin, Nikos?",
+       "en": "Where were you yesterday, Nikos?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Ήμουν στη λαϊκή και είδα την Ελένη.",
+       "tr": "Semt pazarındaydım ve Eleni'yi gördüm.",
+       "en": "I was at the street market and I saw Eleni."
+      }
+     ]
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Pire'de bir elektrikli eşya dükkânı.",
+      "en": "An appliance shop in Piraeus."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα σας. Θα ήθελα ένα πλυντήριο.",
+       "tr": "Günaydın. Bir çamaşır makinesi istiyorum.",
+       "en": "Good morning. I'd like a washing machine."
+      },
+      {
+       "who": "Πωλητής",
+       "el": "Μεγάλο ή μικρό;",
+       "tr": "Büyük mü küçük mü?",
+       "en": "Big or small?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Μικρό. Το σπίτι μου είναι μικρό.",
+       "tr": "Küçük. Evim küçük.",
+       "en": "Small. My house is small."
+      },
+      {
+       "who": "Πωλητής",
+       "el": "Αυτό το μικρό είναι καινούργιο και κάνει τετρακόσια ευρώ. Εκείνο το μεγάλο είναι παλιό και φτηνό.",
+       "tr": "Bu küçük olan yeni, dört yüz avro. Şu büyük olan eski ve ucuz.",
+       "en": "This small one is new and costs four hundred euros. That big one is old and cheap."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Θέλω το καινούργιο. Πληρώνω με κάρτα.",
+       "tr": "Yenisini istiyorum. Kartla ödüyorum.",
+       "en": "I want the new one. I pay by card."
+      }
+     ]
+    },
+    {
+     "type": "prose",
+     "tr": "Akşam Ayşe, Nikos'a mesaj yazar; Nikos cevap verir. *Φιλιά* arkadaşa yazılan mesajın samimi kapanışıdır.",
+     "en": "In the evening Ayşe writes to Nikos. *Φιλιά* is a friendly sign-off."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "İki mesaj.",
+      "en": "Two messages."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Γεια σου, Νίκο! Σήμερα πήγα στον φούρνο και έφαγα μια τυρόπιτα. Στον Πειραιά έδωσα τετρακόσια ευρώ για ένα πλυντήριο. Την Κυριακή το πρωί θα πάω στη λαϊκή και θα φύγω από το σπίτι στις εννιά παρά τέταρτο. Έρχεσαι; Φιλιά, Αϊσέ",
+       "tr": "Merhaba Nikos! Bugün fırına gittim ve bir peynirli börek yedim. Pire'de bir çamaşır makinesi için dört yüz avro verdim. Pazar sabahı semt pazarına gideceğim ve evden dokuza çeyrek kala çıkacağım. Geliyor musun? Öptüm, Ayşe",
+       "en": "Hi, Nikos! Today I went to the bakery and I ate a cheese pie. In Piraeus I paid four hundred euros for a washing machine. On Sunday morning I'll go to the street market and I'll leave home at a quarter to nine. Are you coming? Love, Ayşe"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Έρχομαι! Θα φύγω στις οχτώ και μισή και θα είμαι στη λαϊκή στις εννιά. Πληρώνω εγώ! Φιλιά, Νίκος",
+       "tr": "Geliyorum! Sekiz buçukta çıkacağım ve dokuzda semt pazarında olacağım. Ben ödüyorum! Öptüm, Nikos",
+       "en": "I'm coming! I'll leave at half past eight and I'll be at the street market at nine. I'm paying! Love, Nikos"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Metinlere göre:",
+     "en": "According to the texts:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch12-q-errand",
+      "oknos-book/ch12-q-tf"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Artikel ve nesne hâli (7, 9, 11)",
+    "en": "The article and the object form (7, 9, 11)"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "7, 9 ve 11. dersler. Fiilin nesnesi **αιτιατική** (nesne hâli) alır: artikel değişir, eril isimde sondaki *-ς* düşer. Çoğul nesnede yalnızca eril *-ος* isimlerin sonu değişir (*-οι → -ους*). Aynı hâl *σε, από, με, για* kelimelerinden sonra da gelir. Özne ve *είμαι* fiilinden sonraki isim yalın hâlde kalır.\n\n**-ν kuralı:** *τον, στον, έναν* hep -ν alır. *την, στην* ünlüden ve κ, π, τ, ξ, ψ, μπ, ντ, γκ, τσ, τζ'den önce tutar, öteki ünsüzlerden önce düşürür: *την τυρόπιτα*, *τη Σμύρνη*.",
+     "en": "Lessons 7, 9 and 11. The object of a verb takes the **accusative** (*αιτιατική*): the article changes, and a masculine noun drops its final *-ς*. As a plural object only masculine *-ος* nouns change their ending (*-οι → -ους*). The same case follows *σε, από, με, για*. The subject, and the noun after *είμαι*, stays as it is.\n\n**The -ν rule:** *τον, στον, έναν* always keep the -ν. *την, στην* keep it before a vowel and before κ, π, τ, ξ, ψ, μπ, ντ, γκ, τσ, τζ, and drop it before the other consonants: *την τυρόπιτα*, *τη Σμύρνη*."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Özne → nesne, tekil ve çoğul",
+      "en": "Subject → object, singular and plural"
+     },
+     "head": [
+      "",
+      {
+       "tr": "tekil özne",
+       "en": "singular subject"
+      },
+      {
+       "tr": "tekil nesne",
+       "en": "singular object"
+      },
+      {
+       "tr": "çoğul özne",
+       "en": "plural subject"
+      },
+      {
+       "tr": "çoğul nesne",
+       "en": "plural object"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "eril",
+        "en": "masculine"
+       },
+       "ο φούρνος",
+       "τον φούρνο",
+       "οι φούρνοι",
+       "τους φούρνους"
+      ],
+      [
+       {
+        "tr": "dişil",
+        "en": "feminine"
+       },
+       "η τυρόπιτα",
+       "την τυρόπιτα",
+       "οι τυρόπιτες",
+       "τις τυρόπιτες"
+      ],
+      [
+       {
+        "tr": "nötr",
+        "en": "neuter"
+       },
+       "το μήλο",
+       "το μήλο",
+       "τα μήλα",
+       "τα μήλα"
+      ]
+     ],
+     "note": {
+      "tr": "*-ης* ve *-ας* isimler çoğul nesnede değişmez: *οι πελάτες → τους πελάτες*. «Bir» de aynı yolu izler: *ένας καφές → έναν καφέ*. «Kim?»: *ποιος → ποιον*.",
+      "en": "*-ης* and *-ας* nouns do not change as a plural object: *οι πελάτες → τους πελάτες*. «A» follows the same path: *ένας καφές → έναν καφέ*. «Who?»: *ποιος → ποιον*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Θέλω έναν καφέ και αυτή την τυρόπιτα.",
+       "tr": "Bir kahve ve şu peynirli böreği istiyorum.",
+       "en": "I want a coffee and this cheese pie."
+      },
+      {
+       "el": "Ο Κώστας περιμένει τους πελάτες στη λαϊκή.",
+       "tr": "Kostas semt pazarında müşterileri bekliyor.",
+       "en": "Kostas is waiting for the customers at the street market."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Sıfat uyumu (8, 9)",
+    "en": "Adjective agreement (8, 9)"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "8. ve 9. dersler. Sıfat ismin cinsine uyar: eril *-ος*, dişil *-η* (ünlüden sonra *-α*: *παλιά*), nötr *-ο*. Tekil nesne hâlinde yalnızca eril sıfat değişir (*-ος → -ο*). Cins kelimeye aittir: *η τσάντα* dişildir, o yüzden *μικρή*.",
+     "en": "Lessons 8 and 9. The adjective matches the noun's gender: masculine *-ος*, feminine *-η* (after a vowel *-α*: *παλιά*), neuter *-ο*. As a singular object only the masculine adjective changes (*-ος → -ο*). Gender belongs to the word: *η τσάντα* is feminine, so *μικρή*."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Sıfat ismi izler",
+      "en": "The adjective follows the noun"
+     },
+     "head": [
+      "",
+      {
+       "tr": "eril",
+       "en": "masculine"
+      },
+      {
+       "tr": "dişil",
+       "en": "feminine"
+      },
+      {
+       "tr": "nötr",
+       "en": "neuter"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "özne",
+        "en": "subject"
+       },
+       "ένας καινούργιος υπολογιστής",
+       "μια παλιά τσάντα",
+       "ένα φτηνό ψυγείο"
+      ],
+      [
+       {
+        "tr": "nesne",
+        "en": "object"
+       },
+       "έναν καινούργιο υπολογιστή",
+       "μια παλιά τσάντα",
+       "ένα φτηνό ψυγείο"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Η τσάντα μου είναι μικρή και το σπίτι μου είναι μικρό.",
+       "tr": "Çantam küçük ve evim küçük.",
+       "en": "My bag is small and my house is small."
+      },
+      {
+       "el": "Θέλω έναν φτηνό υπολογιστή.",
+       "tr": "Ucuz bir bilgisayar istiyorum.",
+       "en": "I want a cheap computer."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Geçmiş ve gelecek (7-11)",
+    "en": "Past and future (7-11)"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "7-11. derslerde altı fiilin geçmiş ve gelecek biçimlerini **hazır kalıp** olarak öğrendin, yalnızca *ben* ve *sen* için. Geçmişte *θα* yoktur; gelecekte her zaman vardır.",
+     "en": "Six verbs, as **ready-made forms** for *I* and *you* only. The past has no *θα*; the future always has it."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Altı fiil, geçmiş ve gelecek",
+      "en": "Six verbs, past and future"
+     },
+     "head": [
+      {
+       "tr": "fiil (ders)",
+       "en": "verb (lesson)"
+      },
+      {
+       "tr": "εγώ: geçmiş",
+       "en": "εγώ: past"
+      },
+      {
+       "tr": "εγώ: gelecek",
+       "en": "εγώ: future"
+      },
+      {
+       "tr": "εσύ: geçmiş",
+       "en": "εσύ: past"
+      },
+      {
+       "tr": "εσύ: gelecek",
+       "en": "εσύ: future"
+      }
+     ],
+     "rows": [
+      [
+       "πάω (7)",
+       "πήγα",
+       "θα πάω",
+       "πήγες",
+       "θα πας"
+      ],
+      [
+       "είμαι (8)",
+       "ήμουν",
+       "θα είμαι",
+       "ήσουν",
+       "θα είσαι"
+      ],
+      [
+       "τρώω (9)",
+       "έφαγα",
+       "θα φάω",
+       "έφαγες",
+       "θα φας"
+      ],
+      [
+       "βλέπω (10)",
+       "είδα",
+       "θα δω",
+       "είδες",
+       "θα δεις"
+      ],
+      [
+       "φεύγω (10)",
+       "έφυγα",
+       "θα φύγω",
+       "έφυγες",
+       "θα φύγεις"
+      ],
+      [
+       "δίνω (11)",
+       "έδωσα",
+       "θα δώσω",
+       "έδωσες",
+       "θα δώσεις"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Χθες πήγα στο περίπτερο.",
+       "tr": "Dün büfeye gittim.",
+       "en": "Yesterday I went to the kiosk."
+      },
+      {
+       "el": "Αύριο θα φάω στο σπίτι.",
+       "tr": "Yarın evde yiyeceğim.",
+       "en": "Tomorrow I will eat at home."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Edatlar ve zaman (10)",
+    "en": "Prepositions and time (10)"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "10. ders. Türkçede ek olan şey Yunancada ismin **önüne** küçük bir kelime olarak gelir; çoğu zaman artikel de gerekir ve isim nesne hâlindedir. Gün ve günün bölümleri için edat gerekmez: **artikel + nesne hâli** yeter. Saat için *στις* kullanılır (bir için *στη μία*).",
+     "en": "Lesson 10. Greek puts a small word **before** the noun, usually with the article, and the noun is in the accusative. Days and parts of the day need no preposition: **article + accusative**. For a clock time use *στις* (*στη μία* for one)."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Küçük kelimeler ve zaman",
+      "en": "Small words and time"
+     },
+     "head": [
+      {
+       "tr": "ne",
+       "en": "what"
+      },
+      {
+       "tr": "Yunanca",
+       "en": "Greek"
+      },
+      {
+       "tr": "anlamı",
+       "en": "meaning"
+      }
+     ],
+     "rows": [
+      [
+       "με",
+       "με το μετρό",
+       {
+        "tr": "metroyla",
+        "en": "by metro"
+       }
+      ],
+      [
+       "σε",
+       "στον Πειραιά",
+       {
+        "tr": "Pire'ye / Pire'de",
+        "en": "to / in Piraeus"
+       }
+      ],
+      [
+       "για",
+       "για τον Πειραιά",
+       {
+        "tr": "Pire'ye (gitmek üzere)",
+        "en": "bound for Piraeus"
+       }
+      ],
+      [
+       "από",
+       "από το σπίτι",
+       {
+        "tr": "evden",
+        "en": "from home"
+       }
+      ],
+      [
+       "μέχρι",
+       "μέχρι τις έξι",
+       {
+        "tr": "altıya kadar",
+        "en": "until six"
+       }
+      ],
+      [
+       {
+        "tr": "gün",
+        "en": "day"
+       },
+       "τη Δευτέρα · την Κυριακή",
+       {
+        "tr": "pazartesi · pazar günü",
+        "en": "on Monday · on Sunday"
+       }
+      ],
+      [
+       {
+        "tr": "günün bölümü",
+        "en": "part of the day"
+       },
+       "το πρωί · το βράδυ",
+       {
+        "tr": "sabah · akşam",
+        "en": "in the morning · in the evening"
+       }
+      ],
+      [
+       "στις",
+       "στις οχτώ και μισή",
+       {
+        "tr": "sekiz buçukta",
+        "en": "at half past eight"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Τη Δευτέρα το πρωί φεύγω από το σπίτι στις οχτώ.",
+       "tr": "Pazartesi sabahı sekizde evden çıkıyorum.",
+       "en": "On Monday morning I leave home at eight."
+      },
+      {
+       "el": "Δουλεύω από τις εννιά μέχρι τις πέντε.",
+       "tr": "Dokuzdan beşe kadar çalışıyorum.",
+       "en": "I work from nine until five."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Yeni kelime yok: 7-11. derslerden tekrar etmeye değer 20 kelime.",
+     "en": "No new words: 20 from lessons 7-11."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/ch07-periptero",
+      "oknos-book/v-foyrnos",
+      "oknos-book/ch07-tyropita",
+      "oknos-book/ch07-tha-ithela",
+      "oknos-book/ch07-poso-kanei",
+      "oknos-book/ch07-lepto",
+      "oknos-book/ch07-ellinikos",
+      "oknos-book/v-tsanta",
+      "oknos-book/v-karta",
+      "oknos-book/v-metrita",
+      "oknos-book/v-mikros-adj",
+      "oknos-book/v-palios-adj",
+      "oknos-book/ch08-kainourgios",
+      "oknos-book/v-ftinos-adj",
+      "oknos-book/ch10-feygo",
+      "oknos-book/ch10-misi",
+      "oknos-book/ch10-para",
+      "oknos-book/ch11-laiki",
+      "oknos-book/ch11-dino",
+      "oknos-book/v-ntomata"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Artikeli ve -ν'yi unutma.** Saatte artikel var: *στις πέντε*. Saat bir tekildir: *στη μία*, *στις μία* değil. *Τον, στον, έναν* hep -ν alır: *στον Πειραιά*, *έναν καφέ*.",
+     "en": "**Keep the article and the -ν.** Times take the article: *στις πέντε*. One o'clock is singular: *στη μία*, not *στις μία*. *Τον, στον, έναν* always keep the -ν: *στον Πειραιά*."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Cinse uy.** *Η τσάντα είναι μικρό* yanlış: *η τσάντα* dişil, o yüzden *μικρή*. Önce artikele bak, sonra sıfatı seç.",
+     "en": "**Match the gender.** *Η τσάντα είναι μικρό* is wrong: *η τσάντα* is feminine, so *μικρή*. Look at the article first, then choose the adjective."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Geçmişte θα yok.** *Χθες πήγα*, *Χθες θα πήγα* değil. Gelecek hep *θα* ile: *Αύριο θα πάω*.",
+     "en": "**No θα in the past.** *Χθες πήγα*, not *Χθες θα πήγα*. The future always has *θα*: *Αύριο θα πάω*."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "exam_task": "a2ltr.reading.notices_tf",
+     "tr": "A2 okuma sınavının ikinci kısmında kısa duyurular ve doğru/yanlış cümleleri var. Cevap yalnızca duyuruya bağlıdır: gün, saat, fiyat ve ödeme bilgisine bak (*το Σάββατο*, *μέχρι τις δύο*, *με μετρητά*).",
+     "en": "In the second part of the A2 reading exam there are short notices with true/false statements. The answer depends only on the notice: check the day, time, price and payment (*το Σάββατο*, *μέχρι τις δύο*, *με μετρητά*)."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: nesne hâli, sıfat, geçmiş ve gelecek, zaman ve edatlar bir arada.",
+     "en": "Now you try."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch12-try-article",
+      "oknos-book/ch12-try-adj",
+      "oknos-book/ch12-try-tense",
+      "oknos-book/ch12-try-time",
+      "oknos-book/ch12-try-prep"
+     ]
+    }
+   ]
+  }
+ ]
+}

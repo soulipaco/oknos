@@ -1,0 +1,702 @@
+{
+ "id": "oknos-book.lesson-13",
+ "curriculum": "oknos-book",
+ "stage": "lesson-13",
+ "level": "A2",
+ "title": {
+  "tr": "Ermou Caddesi'nde: çoğul sıfatlar, «hoşuma gidiyor», κάνω ve -ομαι fiilleri",
+  "en": "On Ermou Street: plural adjectives, «I like it», κάνω and verbs in -ομαι"
+ },
+ "minutes": 17,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde giyim mağazasında alışveriş yapacaksın: bedenini ve rengi söylemek, bir şeyin hoşuna gidip gitmediğini, yakışıp yakışmadığını, bedenine olup olmadığını anlatmak. Bir mağaza çalışanının gününü de anlatacaksın.\n\nİki anahtar nokta: sıfat isme **cins, sayı ve hâl** bakımından uyar, çoğulda da: **τα μαύρα παντελόνια**. Ve «hoşuma gidiyor» Yunancada «bana hoş geliyor» gibi kurulur, yani fiil **hoşlandığın şeye** uyar: **μου αρέσουν** τα παπούτσια.",
+     "en": "In this chapter you shop for clothes: your size and colour, and whether you like something, whether it suits you and whether it fits. You will also describe a shop assistant's day.\n\nTwo key points: the adjective agrees with the noun in **gender, number and case**, in the plural too: **τα μαύρα παντελόνια**. And «I like it» is «it pleases me», so the verb agrees with **the thing you like**: **μου αρέσουν** τα παπούτσια."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Dinle, sonra oku. *Μου αρέσουν*, *μου κάνει*, *μου πάει* aşağıda açıklanıyor. [[Φοράτε]] *φοράω* (giymek) fiilinden gelir, Ders 5'teki *μιλάω* gibi çekilir. Yeni: [[Έχουμε]] (bizde var), [[δοκιμάζουν]] (deniyorlar), [[τρέχω]] (koşturuyorum), [[όλη μέρα]] (bütün gün), [[πάρτι]].",
+     "en": "Listen, then read. *Μου αρέσουν*, *μου κάνει*, *μου πάει* are explained below. [[Φοράτε]] is from *φοράω* («wear»), like Lesson 5's *μιλάω*. New: [[Έχουμε]] («we have»), [[δοκιμάζουν]] («they try on»), [[τρέχω]] («I run around»), [[όλη μέρα]] («all day»), [[πάρτι]]."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Cumartesi, Ermou Caddesi'nde bir giyim mağazası. Ayşe bir pantolon arıyor. Pantolonu deneyip geri geliyor.",
+      "en": "Saturday, a clothes shop on Ermou Street. Ayşe is looking for trousers. She tries a pair on and comes back."
+     },
+     "lines": [
+      {
+       "who": "Πωλήτρια",
+       "el": "Καλημέρα σας! Ορίστε;",
+       "tr": "Günaydın! Buyurun?",
+       "en": "Good morning! Yes, please?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα. Θα ήθελα ένα παντελόνι. Μου αρέσουν αυτά τα γκρι παντελόνια.",
+       "tr": "Günaydın. Bir pantolon istiyorum. Şu gri pantolonlar hoşuma gidiyor.",
+       "en": "Good morning. I'd like a pair of trousers. I like these grey trousers."
+      },
+      {
+       "who": "Πωλήτρια",
+       "el": "Τι νούμερο φοράτε;",
+       "tr": "Kaç beden giyiyorsunuz?",
+       "en": "What size do you wear?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Φοράω το σαράντα.",
+       "tr": "Kırk giyiyorum.",
+       "en": "I wear a forty."
+      },
+      {
+       "who": "Πωλήτρια",
+       "el": "Ορίστε το σαράντα. Τα γκρι παντελόνια είναι πολύ ωραία, αλλά είναι στενά.",
+       "tr": "Buyurun, kırk. Gri pantolonlar çok güzel ama dar.",
+       "en": "Here is the forty. The grey trousers are very nice, but they are tight."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Δε μου κάνει το σαράντα. Είναι πολύ στενό.",
+       "tr": "Kırk bana olmadı. Çok dar.",
+       "en": "The forty doesn't fit me. It is too tight."
+      },
+      {
+       "who": "Πωλήτρια",
+       "el": "Έχουμε και το σαράντα δύο. Ορίστε.",
+       "tr": "Kırk iki de var. Buyurun.",
+       "en": "We have a forty-two too. Here you are."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Μου κάνει! Μου πάει;",
+       "tr": "Bana oldu! Yakıştı mı?",
+       "en": "It fits me! Does it suit me?"
+      },
+      {
+       "who": "Πωλήτρια",
+       "el": "Σας πάει πολύ!",
+       "tr": "Size çok yakışıyor!",
+       "en": "It suits you very well!"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ωραία. Θα ήθελα και αυτά τα καφέ παπούτσια, το τριάντα εννιά.",
+       "tr": "Güzel. Şu kahverengi ayakkabıları da istiyorum, otuz dokuz.",
+       "en": "Lovely. I'd also like these brown shoes, in a thirty-nine."
+      },
+      {
+       "who": "Πωλήτρια",
+       "el": "Ορίστε. Σας κάνουν;",
+       "tr": "Buyurun. Oldu mu?",
+       "en": "Here you are. Do they fit?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ναι, μου κάνουν και μου πάνε. Μου αρέσουν πολύ! Πληρώνω με κάρτα.",
+       "tr": "Evet, bana oluyorlar ve yakışıyorlar. Çok hoşuma gidiyorlar! Kartla ödüyorum.",
+       "en": "Yes, they fit me and they suit me. I like them a lot! I'll pay by card."
+      }
+     ]
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Pazartesi akşamı, telefonda: Ayşe, Ermou'da bir giyim mağazasında çalışan arkadaşı Marina'yı arıyor.",
+      "en": "Monday evening on the phone: Ayşe calls her friend Marina, who works in a clothes shop on Ermou Street."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Γεια σου, Μαρίνα! Τι έκανες το σαββατοκύριακο;",
+       "tr": "Merhaba Marina! Hafta sonu ne yaptın?",
+       "en": "Hi, Marina! What did you do at the weekend?"
+      },
+      {
+       "who": "Μαρίνα",
+       "el": "Ήμουν στο μαγαζί, στην Ερμού. Έρχονται πολλοί πελάτες, κάθονται και δοκιμάζουν παπούτσια. Τρέχω όλη μέρα και κουράζομαι πολύ! Εσύ τι έκανες;",
+       "tr": "Dükkândaydım, Ermou'da. Çok müşteri geliyor, oturup ayakkabı deniyorlar. Bütün gün koşturuyorum ve çok yoruluyorum! Sen ne yaptın?",
+       "en": "I was in the shop, on Ermou. Lots of customers come, sit down and try on shoes. I run around all day and I get very tired! What did you do?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Εγώ έκανα ψώνια το Σάββατο. Τώρα χρειάζομαι ένα φόρεμα για το πάρτι.",
+       "tr": "Ben cumartesi alışveriş yaptım. Şimdi parti için bir elbiseye ihtiyacım var.",
+       "en": "I did some shopping on Saturday. Now I need a dress for the party."
+      },
+      {
+       "who": "Μαρίνα",
+       "el": "Έχουμε ωραία φορέματα στο μαγαζί! Τι θα κάνεις αύριο;",
+       "tr": "Dükkânda güzel elbiselerimiz var! Yarın ne yapacaksın?",
+       "en": "We have lovely dresses in the shop! What will you do tomorrow?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Θα κάνω ψώνια στο μαγαζί σου! Έρχομαι στις δέκα.",
+       "tr": "Senin dükkânında alışveriş yapacağım! Saat onda geliyorum.",
+       "en": "I'll go shopping in your shop! I'm coming at ten."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloglara göre:",
+     "en": "According to the dialogues:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch13-q-size",
+      "oknos-book/ch13-q-tf"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Çoğul sıfatlar: καλοί, καλές, καλά",
+    "en": "Plural adjectives: καλοί, καλές, καλά"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Sıfat isme **cins, sayı ve hâl** bakımından uyar; artikel de aynı. Çoğulda üç ek yeter: eril **-οι**, dişil **-ες**, nötr **-α**. Nesne olunca (Ders 11'deki **τους, τις, τα** artikelleri gibi) yalnızca eril değişir: **-ους**. İki grup da aynı: *καλός, καλή, καλό* ve *ωραίος, ωραία, ωραίο* (Ders 8).",
+     "en": "The adjective agrees with the noun in **gender, number and case**, and so does the article. Three endings are enough in the plural: masculine **-οι**, feminine **-ες**, neuter **-α**. As an object (like the articles **τους, τις, τα** from Lesson 11) only the masculine changes: **-ους**. Both groups work the same way: *καλός, καλή, καλό* and *ωραίος, ωραία, ωραίο* (Lesson 8)."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "tekil",
+       "en": "singular"
+      },
+      {
+       "tr": "özne, çoğul",
+       "en": "subject, plural"
+      },
+      {
+       "tr": "nesne, çoğul",
+       "en": "object, plural"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "eril",
+        "en": "masculine"
+       },
+       "ο καλός πελάτης",
+       "οι καλοί πελάτες",
+       "τους καλούς πελάτες"
+      ],
+      [
+       {
+        "tr": "dişil",
+        "en": "feminine"
+       },
+       "η καλή κυρία",
+       "οι καλές κυρίες",
+       "τις καλές κυρίες"
+      ],
+      [
+       {
+        "tr": "nötr",
+        "en": "neuter"
+       },
+       "το καλό παπούτσι",
+       "τα καλά παπούτσια",
+       "τα καλά παπούτσια"
+      ],
+      [
+       {
+        "tr": "dişil (-α)",
+        "en": "feminine (-α)"
+       },
+       "η ωραία τσάντα",
+       "οι ωραίες τσάντες",
+       "τις ωραίες τσάντες"
+      ]
+     ],
+     "note": {
+      "tr": "Sıfatta vurgu yerinde kalır: *κόκκινος → κόκκινοι → κόκκινους*. Ders 11'deki *δάσκαλος → δασκάλους* gibi kaymaz. Dişil ve nötr nesne, özne çoğuluyla aynıdır.",
+      "en": "In adjectives the stress stays put: *κόκκινος → κόκκινοι → κόκκινους*. It does not move as in Lesson 11's *δάσκαλος → δασκάλους*. Feminine and neuter objects are the same as the plural subject."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Οι κάλτσες είναι άσπρες και τα πουκάμισα είναι άσπρα.",
+       "tr": "Çoraplar beyaz, gömlekler de beyaz.",
+       "en": "The socks are white and the shirts are white.",
+       "note": {
+        "tr": "*Άσπρος*: dişil çoğul *άσπρες*, nötr çoğul *άσπρα*.",
+        "en": "*Άσπρος*: feminine plural *άσπρες*, neuter plural *άσπρα*."
+       }
+      },
+      {
+       "el": "Η Μαρίνα έχει καλούς πελάτες.",
+       "tr": "Marina'nın iyi müşterileri var.",
+       "en": "Marina has good customers.",
+       "note": {
+        "tr": "Eril nesne: *-ους*.",
+        "en": "Masculine object: *-ους*."
+       }
+      },
+      {
+       "el": "Τα παντελόνια είναι στενά και οι φούστες είναι κοντές.",
+       "tr": "Pantolonlar dar, etekler de kısa.",
+       "en": "The trousers are tight and the skirts are short."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Değişmeyen sıfatlar ve -ύς sıfatları: μπλε, μακρύς, φαρδύς",
+    "en": "Adjectives that do not follow the pattern: μπλε, μακρύς, φαρδύς"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "İki sıfat grubu bu kalıba uymaz. **1. Hiç değişmeyenler.** *μπλε, γκρι, ροζ, μωβ, καφέ, πορτοκαλί* her cinste ve sayıda aynı kalır: *ένα μπλε παντελόνι, δύο μπλε παντελόνια, μια ροζ φούστα, οι ροζ φούστες*. (*Γκρι* yanında *γκρίζος, γκρίζα, γκρίζο* de var; o normal sıfat gibi değişir.)\n\n**2. -ύς ile bitenler.** *μακρύς* ve *φαρδύς* kendi kalıplarıyla çekilir: tekilde *-ύς, -ιά, -ύ*, çoğulda *-ιοί, -ιές, -ιά*.",
+     "en": "Two groups break that pattern. **1. Those that never change.** *μπλε, γκρι, ροζ, μωβ, καφέ, πορτοκαλί* stay the same in every gender and number: *ένα μπλε παντελόνι, δύο μπλε παντελόνια, μια ροζ φούστα, οι ροζ φούστες*. (Next to *γκρι* there is also *γκρίζος, γκρίζα, γκρίζο*, a normal adjective.)\n\n**2. Those in -ύς.** *μακρύς* and *φαρδύς* have their own pattern: *-ύς, -ιά, -ύ* in the singular and *-ιοί, -ιές, -ιά* in the plural."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "eril",
+       "en": "masculine"
+      },
+      {
+       "tr": "dişil",
+       "en": "feminine"
+      },
+      {
+       "tr": "nötr",
+       "en": "neuter"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "tekil",
+        "en": "singular"
+       },
+       "ο μακρύς",
+       "η μακριά",
+       "το μακρύ"
+      ],
+      [
+       {
+        "tr": "çoğul",
+        "en": "plural"
+       },
+       "οι μακριοί",
+       "οι μακριές",
+       "τα μακριά"
+      ],
+      [
+       {
+        "tr": "tekil",
+        "en": "singular"
+       },
+       "ο φαρδύς",
+       "η φαρδιά",
+       "το φαρδύ"
+      ],
+      [
+       {
+        "tr": "çoğul",
+        "en": "plural"
+       },
+       "οι φαρδιοί",
+       "οι φαρδιές",
+       "τα φαρδιά"
+      ]
+     ],
+     "note": {
+      "tr": "Eril nesne: *τον μακρύ* (-ς yok), *τους μακριούς*. Nötr çoğul *μακριά* ile dişil tekil *μακριά* aynı yazılır; artikel ve fiil hangisi olduğunu gösterir. *Μακριά* «uzakta» anlamında zarf olarak da kullanılır (Ders 14).",
+      "en": "Masculine object: *τον μακρύ* (no -ς), *τους μακριούς*. The neuter plural *μακριά* and the feminine singular *μακριά* are spelled the same; the article and the verb show which is meant. *Μακριά* is also the adverb «far» (Lesson 14)."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Τα καφέ παπούτσια είναι φαρδιά.",
+       "tr": "Kahverengi ayakkabılar geniş.",
+       "en": "The brown shoes are wide."
+      },
+      {
+       "el": "Θέλω ένα ροζ πουκάμισο και δύο μωβ πουκάμισα.",
+       "tr": "Pembe bir gömlek ve iki mor gömlek istiyorum.",
+       "en": "I want a pink shirt and two purple shirts."
+      },
+      {
+       "el": "Η φούστα είναι μακριά, αλλά τα παντελόνια είναι κοντά.",
+       "tr": "Etek uzun ama pantolonlar kısa.",
+       "en": "The skirt is long, but the trousers are short."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "«Hoşuma gidiyor»: μου αρέσει, μου πάει, μου κάνει",
+    "en": "«I like it»: μου αρέσει, μου πάει, μου κάνει"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Yunancada «bunu seviyorum» yerine «bu bana hoş geliyor» dersin. **Özne şeydir**, yani yalın hâldedir: *μου αρέσει **η** φούστα* (*τη φούστα* değil). Kişi, Ders 4'teki küçük kelimelerle söylenir (*το σπίτι μου*): **μου, σου, του, της, μας, σας, τους** (bana, sana, ona (erkek), ona (kadın), bize, size, onlara). Fiil **şeye** uyar: tek şey için *αρέσει*, çoğul için *αρέσουν*. Aynı kalıp iki fiille daha var: **μου πάει / μου πάνε** (yakışıyor) ve **μου κάνει / μου κάνουν** (bana oluyor, beden).",
+     "en": "In Greek «I like this» is «this pleases me». **The thing is the subject**, in the nominative: *μου αρέσει **η** φούστα* (not *τη φούστα*). The person is a little word, the same as in *το σπίτι μου* (Lesson 4): **μου, σου, του, της, μας, σας, τους** (to me, you, him, her, us, you (formal or plural), them). The verb agrees with **the thing**: *αρέσει* for one, *αρέσουν* for several. Two more verbs work the same way: **μου πάει / μου πάνε** (it suits me) and **μου κάνει / μου κάνουν** (it fits me, the size)."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "tek şey",
+       "en": "one thing"
+      },
+      {
+       "tr": "birden çok şey",
+       "en": "several things"
+      },
+      {
+       "tr": "anlamı",
+       "en": "what it means"
+      }
+     ],
+     "rows": [
+      [
+       "μου αρέσει το φόρεμα",
+       "μου αρέσουν τα παπούτσια",
+       {
+        "tr": "hoşuma gidiyor",
+        "en": "I like it, I like them"
+       }
+      ],
+      [
+       "μου πάει το φόρεμα",
+       "μου πάνε τα παπούτσια",
+       {
+        "tr": "bana yakışıyor (görünüş)",
+        "en": "it suits me (the look)"
+       }
+      ],
+      [
+       "μου κάνει το παντελόνι",
+       "μου κάνουν τα παπούτσια",
+       {
+        "tr": "bana oluyor (beden)",
+        "en": "it fits me (the size)"
+       }
+      ]
+     ],
+     "note": {
+      "tr": "Olumsuz: *δε μου αρέσει*. *Δεν*, *την* gibi, μ'den önce -ν'sini atar; *δεν μου* da çok yazılır. Kişiyi değiştirmek için *μου* yerine *σου, του, της, μας, σας, τους* koy. Fiil, şeyden önce de sonra da gelebilir: *Τα παπούτσια μου αρέσουν.*",
+      "en": "Negative: *δε μου αρέσει*. Like *την*, *δεν* drops its -ν before μ; *δεν μου* is also often written. To change the person, replace *μου* with *σου, του, της, μας, σας, τους*. The verb can come before or after the thing: *Τα παπούτσια μου αρέσουν.*"
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Μου αρέσουν τα μαύρα παπούτσια, αλλά δε μου κάνουν.",
+       "tr": "Siyah ayakkabılar hoşuma gidiyor ama bana olmuyor.",
+       "en": "I like the black shoes, but they don't fit me."
+      },
+      {
+       "el": "Σου πάει πολύ αυτό το φόρεμα!",
+       "tr": "Bu elbise sana çok yakışıyor!",
+       "en": "This dress suits you very well!"
+      },
+      {
+       "el": "Της αρέσουν οι ροζ κάλτσες.",
+       "tr": "Pembe çoraplar onun hoşuna gidiyor.",
+       "en": "She likes the pink socks."
+      },
+      {
+       "el": "Σας πάνε τα γυαλιά;",
+       "tr": "Gözlük size yakışıyor mu?",
+       "en": "Do the glasses suit you?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Geçmiş ve gelecek: κάνω, έκανα, θα κάνω",
+    "en": "Past and future: κάνω, έκανα, θα κάνω"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "*Κάνω* (yapmak, etmek) fiilini Ders 2 ve 3'ten biliyorsun: *Τι δουλειά κάνεις;* Şimdi geçmişi ve geleceği, Ders 7'deki *πήγα* ve *θα πάω* gibi: *χθες έκανα, έκανες*; *αύριο θα κάνω, θα κάνεις*. *Κάνω* fiilinde *θα* ile gelen biçim şimdiki zamanınkiyle aynı; her fiilde öyle değil (*θα δω, θα φύγω*, Ders 10). Baştaki *έ-* yalnızca vurguyu taşır: *κάναμε, κάνατε* biçimlerinde düşer, *έκαναν* biçiminde kalır. Kalıplar: *κάνω ψώνια* (alışveriş yapmak), *Πόσο κάνει;* (kaç para?).",
+     "en": "You know *κάνω* («do, make») from Lessons 2 and 3: *Τι δουλειά κάνεις;* Now its past and future, as with *πήγα* and *θα πάω* in Lesson 7: *χθες έκανα, έκανες*; *αύριο θα κάνω, θα κάνεις*. For *κάνω* the form after *θα* is the present one, but not for every verb (*θα δω, θα φύγω*, Lesson 10). The initial *έ-* only carries the stress: it falls away in *κάναμε, κάνατε* and stays in *έκαναν*. Phrases: *κάνω ψώνια* («go shopping»), *Πόσο κάνει;* («how much?»)."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      "τώρα",
+      "χθες",
+      "αύριο"
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "κάνω",
+       "έκανα",
+       "θα κάνω"
+      ],
+      [
+       "εσύ",
+       "κάνεις",
+       "έκανες",
+       "θα κάνεις"
+      ],
+      [
+       "αυτός / αυτή / αυτό",
+       "κάνει",
+       "έκανε",
+       "θα κάνει"
+      ],
+      [
+       "εμείς",
+       "κάνουμε",
+       "κάναμε",
+       "θα κάνουμε"
+      ],
+      [
+       "εσείς",
+       "κάνετε",
+       "κάνατε",
+       "θα κάνετε"
+      ],
+      [
+       "αυτοί / αυτές / αυτά",
+       "κάνουν(ε)",
+       "έκαναν",
+       "θα κάνουν(ε)"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "— Τι έκανες χθες; — Έκανα ψώνια στην Ερμού.",
+       "tr": "— Dün ne yaptın? — Ermou'da alışveriş yaptım.",
+       "en": "— What did you do yesterday? — I went shopping on Ermou Street."
+      },
+      {
+       "el": "— Τι θα κάνεις αύριο; — Αύριο θα πάω στη λαϊκή.",
+       "tr": "— Yarın ne yapacaksın? — Yarın semt pazarına gideceğim.",
+       "en": "— What will you do tomorrow? — Tomorrow I'll go to the street market."
+      },
+      {
+       "el": "Αύριο θα κάνουμε ψώνια στην Ερμού.",
+       "tr": "Yarın Ermou'da alışveriş yapacağız.",
+       "en": "Tomorrow we will go shopping on Ermou Street."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "-ομαι ile biten fiiller: έρχομαι, κάθομαι, χρειάζομαι, κουράζομαι",
+    "en": "Verbs in -ομαι: έρχομαι, κάθομαι, χρειάζομαι, κουράζομαι"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ders 10'da yalnızca *έρχομαι* ve *έρχεσαι* vardı; şimdi bütün çekim (dilbilgisi kitaplarındaki adıyla **G1 fiilleri**). Altı ek: **-ομαι, -εσαι, -εται, -όμαστε, -εστε, -ονται**. «Biz» biçiminde vurgu bir hece sağa kayar, çünkü sondan üçüncü heceden geriye gidemez (Ders 11): *ερχόμαστε*. Konuşmada «siz» için *ερχόσαστε, καθόσαστε* de çok duyulur. *Χρειάζομαι* nesnesini doğrudan alır: *χρειάζομαι ένα φόρεμα* (Türkçedeki «-e» yok). *Λέγομαι* da böyle çekilir: *Λέγομαι Αϊσέ* = *Με λένε Αϊσέ* (Ders 1). En çok [[λέγεται]] (denir) gerekir.",
+     "en": "Lesson 10 had only *έρχομαι* and *έρχεσαι*; here is the whole verb (the **G1 verbs**, as grammar books call them). Six endings: **-ομαι, -εσαι, -εται, -όμαστε, -εστε, -ονται**. In «we» the stress moves right, since it cannot go back past the third syllable from the end (Lesson 11): *ερχόμαστε*. In speech «you» plural is often *ερχόσαστε, καθόσαστε*. *Χρειάζομαι* takes a direct object: *χρειάζομαι ένα φόρεμα*. *Λέγομαι* goes the same way: *Λέγομαι Αϊσέ* = *Με λένε Αϊσέ* (Lesson 1). You need [[λέγεται]] («is called») most."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      "έρχομαι",
+      "κάθομαι",
+      "χρειάζομαι",
+      "κουράζομαι"
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "έρχομαι",
+       "κάθομαι",
+       "χρειάζομαι",
+       "κουράζομαι"
+      ],
+      [
+       "εσύ",
+       "έρχεσαι",
+       "κάθεσαι",
+       "χρειάζεσαι",
+       "κουράζεσαι"
+      ],
+      [
+       "αυτός / αυτή / αυτό",
+       "έρχεται",
+       "κάθεται",
+       "χρειάζεται",
+       "κουράζεται"
+      ],
+      [
+       "εμείς",
+       "ερχόμαστε",
+       "καθόμαστε",
+       "χρειαζόμαστε",
+       "κουραζόμαστε"
+      ],
+      [
+       "εσείς",
+       "έρχεστε",
+       "κάθεστε",
+       "χρειάζεστε",
+       "κουράζεστε"
+      ],
+      [
+       "αυτοί / αυτές / αυτά",
+       "έρχονται",
+       "κάθονται",
+       "χρειάζονται",
+       "κουράζονται"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Έρχομαι στο μαγαζί στις εννιά.",
+       "tr": "Dokuzda dükkâna geliyorum.",
+       "en": "I come to the shop at nine."
+      },
+      {
+       "el": "Οι πελάτες κάθονται και δοκιμάζουν τα παπούτσια.",
+       "tr": "Müşteriler oturup ayakkabıları deniyor.",
+       "en": "The customers sit down and try on the shoes."
+      },
+      {
+       "el": "Χρειάζομαι ένα μαύρο παντελόνι.",
+       "tr": "Siyah bir pantolona ihtiyacım var.",
+       "en": "I need a pair of black trousers."
+      },
+      {
+       "el": "Πώς λέγεται αυτό στα ελληνικά;",
+       "tr": "Buna Yunancada ne denir?",
+       "en": "What is this called in Greek?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ayakkabı, çorap ve gözlük Yunancada çoğul söylenir: *τα παπούτσια*, *οι κάλτσες*, *τα γυαλιά* (Türkçede «bir gözlük»). Pantolon ise Türkçedeki gibi tekil: *το παντελόνι*, çoğulu *τα παντελόνια*.",
+     "en": "Shoes, socks and glasses are plural, as in English: *τα παπούτσια*, *οι κάλτσες*, *τα γυαλιά*. But *το παντελόνι* (a pair of trousers) is singular."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/v-panteloni",
+      "oknos-book/v-poykamiso",
+      "oknos-book/v-foysta",
+      "oknos-book/v-papoytsi",
+      "oknos-book/v-mployza",
+      "oknos-book/v-kapelo",
+      "oknos-book/v-kaltses",
+      "oknos-book/v-gyalia",
+      "oknos-book/v-forao-verb",
+      "oknos-book/v-gkri-adj",
+      "oknos-book/v-roz-adj",
+      "oknos-book/ch13-mov",
+      "oknos-book/ch13-aspros",
+      "oknos-book/ch13-stenos",
+      "oknos-book/ch13-fardys",
+      "oknos-book/ch13-makrys",
+      "oknos-book/ch13-aresei",
+      "oknos-book/ch13-dokimazo",
+      "oknos-book/ch13-kano",
+      "oknos-book/v-kathomai-verb",
+      "oknos-book/ch13-chreiazomai",
+      "oknos-book/ch13-kourazomai",
+      "oknos-book/ch13-noumero",
+      "oknos-book/ch13-poletria",
+      "oknos-book/ch13-magazi"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**«Bana yakışıyor» Türkçede de böyle kurulur:** *bu elbise bana yakışıyor*. Özne giysi, kişi ise *bana*; Yunancada bunu *μου* söyler: **Αυτό το φόρεμα μου πάει.** Fark: Yunanca fiil çoğulu gösterir, *μου πάει* (tek), *μου πάνε* (çoğul).\nBazı -ομαι fiilleri, Türkçedeki -n-, -l- ekleri gibi, «kendine» anlamı taşır: *κουράζομαι* «yorulmak», *πλένομαι* «yıkanmak», *ντύνομαι* «giyinmek». *Έρχομαι* gibilerinde böyle bir anlam yok.",
+     "en": "**Think «it pleases me».** Greek puts «to me» in the little word *μου*: **Αυτό το φόρεμα μου πάει.** The verb agrees with the thing: *μου πάει* (one), *μου πάνε* (several).\nSome -ομαι verbs mean «to yourself»: *πλένομαι* «I wash (myself)», *ντύνομαι* «I get dressed», *κουράζομαι* «I get tired». Others, like *έρχομαι*, only have the form."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Fiil şeye uyar, kişiye değil.** «Ben ayakkabıları seviyorum» diye düşünüp *Αρέσω τα παπούτσια* ya da *Μου αρέσει τα παπούτσια* deme; doğrusu **Μου αρέσουν τα παπούτσια.** Ve **πάει ile κάνει aynı şey değil:** *μου πάει* görünüşle, *μου κάνει* bedenle ilgilidir. Dar bir pantolon için *δε μου κάνει* dersin.",
+     "en": "**The verb agrees with the thing, not with you.** Not *Αρέσω τα παπούτσια* or *Μου αρέσει τα παπούτσια*, but **Μου αρέσουν τα παπούτσια.** And **πάει and κάνει differ:** *μου πάει* is about looks, *μου κάνει* about size. Tight trousers are *δε μου κάνει*."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi dene:",
+     "en": "Try it now:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch13-try-agree",
+      "oknos-book/ch13-try-aresei",
+      "oknos-book/ch13-try-kano"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,829 @@
+{
+ "id": "oknos-book.lesson-11",
+ "curriculum": "oknos-book",
+ "stage": "lesson-11",
+ "level": "A1",
+ "title": {
+  "tr": "Cumartesi pazarı: çoğul, sayılar, «ne kadar?» ve δίνω",
+  "en": "Saturday at the street market: plurals, numbers, «how much?» and δίνω"
+ },
+ "minutes": 15,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde laiki pazarında ve süpermarkette alışveriş yapmayı öğreneceksin: kaç kilo, kaç tane istediğini söylemek, fiyatı sormak, parayı vermek.\n\nAnahtar nokta: Türkçede çoğul tek bir ekle yapılır (*-ler/-lar*) ve sayıdan sonra isim tekil kalır (*üç domates*). Yunancada **artikel de isim de** değişir ve birden büyük bir sayıdan sonra isim **çoğuldur**: **τρεις ντομάτες**.",
+     "en": "In this chapter you learn to shop at the laiki street market and the supermarket: how many kilos or pieces, the price, paying.\n\nThe key point: in the plural **both the article and the noun** change, and after any number above one the noun is **plural**: **τρεις ντομάτες**."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Laiki ve süpermarket",
+    "en": "The laiki and the supermarket"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Dinle, sonra oku. *Πόσο [[κάνουν]];* şimdilik bir kalıp: Ders 7'deki *Πόσο κάνει;* sorusunun çoğulu. Yeni biçimler: [[κιλά]] (kilolar), [[αυγά]] (yumurtalar), [[έχεις]] (sende var), [[εκεί]] (orada), [[όλα μαζί]] (hepsi birlikte).",
+     "en": "Listen, then read. *Πόσο [[κάνουν]];* («how much are they?») is a set phrase for now, the plural of Lesson 7's *Πόσο κάνει;*. New forms: [[κιλά]] (kilos), [[αυγά]] (eggs), [[έχεις]] (you have), [[εκεί]] (there), [[όλα μαζί]] (all together)."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Cumartesi sabahı, Kallithea'daki laiki pazarında: Ayşe, manav [[ο μανάβης]] Kostas'ın tezgâhında.",
+      "en": "Saturday morning at the laiki in Kallithea: Ayşe at the stall of Kostas, a greengrocer ([[ο μανάβης]])."
+     },
+     "lines": [
+      {
+       "who": "Κώστας",
+       "el": "Καλημέρα σας! Ορίστε;",
+       "tr": "Günaydın! Buyurun?",
+       "en": "Good morning! Yes, please?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα σας. Πόσο κάνουν οι ντομάτες;",
+       "tr": "Günaydın. Domatesler ne kadar?",
+       "en": "Good morning. How much are the tomatoes?"
+      },
+      {
+       "who": "Κώστας",
+       "el": "Δύο ευρώ το κιλό. Οι πιπεριές κάνουν τρία.",
+       "tr": "Kilosu iki euro. Biberler üç.",
+       "en": "Two euros a kilo. The peppers are three."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Θα ήθελα δύο κιλά ντομάτες και τέσσερις πιπεριές.",
+       "tr": "İki kilo domates ve dört biber istiyorum.",
+       "en": "I'd like two kilos of tomatoes and four peppers."
+      },
+      {
+       "who": "Κώστας",
+       "el": "Ορίστε. Θέλετε και φράουλες; Τέσσερα ευρώ το κιλό, πολύ φρέσκες!",
+       "tr": "Buyurun. Çilek de ister misiniz? Kilosu dört euro, çok taze!",
+       "en": "Here you are. Would you like strawberries too? Four euros a kilo, very fresh!"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Μισό κιλό, παρακαλώ.",
+       "tr": "Yarım kilo, lütfen.",
+       "en": "Half a kilo, please."
+      },
+      {
+       "who": "Κώστας",
+       "el": "Και αγγούρια; Αυτά εδώ κάνουν ένα ευρώ το κιλό, εκείνα εκεί δύο.",
+       "tr": "Salatalık da? Bunlar kilosu bir euro, şuradakiler iki.",
+       "en": "And cucumbers? These here are one euro a kilo, those over there two."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ένα κιλό από αυτά, παρακαλώ.",
+       "tr": "Bunlardan bir kilo, lütfen.",
+       "en": "A kilo of these, please."
+      },
+      {
+       "who": "Κώστας",
+       "el": "Όλα μαζί εννιά ευρώ.",
+       "tr": "Hepsi dokuz euro.",
+       "en": "Nine euros all together."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ορίστε, δέκα ευρώ.",
+       "tr": "Buyurun, on euro.",
+       "en": "Here you are, ten euros."
+      },
+      {
+       "who": "Κώστας",
+       "el": "Ευχαριστώ! Ορίστε ένα ευρώ. Γεια σας!",
+       "tr": "Teşekkürler! Buyurun, bir euro. Hoşça kalın!",
+       "en": "Thank you! Here is a euro. Goodbye!"
+      }
+     ]
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Pazardan sonra süpermarkette: Ayşe ve arkadaşı Eleni eksikleri alıyor.",
+      "en": "After the market, in the supermarket: Ayşe and her friend Eleni buy what is missing."
+     },
+     "lines": [
+      {
+       "who": "Ελένη",
+       "el": "Έχεις πολλά πράγματα! Πόσα έδωσες στη λαϊκή;",
+       "tr": "Ne çok şey almışsın! Pazarda kaç para verdin?",
+       "en": "You've got a lot of things! How much did you pay at the laiki?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Έδωσα εννιά ευρώ. Τώρα έχω αρκετές ντομάτες, αλλά δεν έχω καθόλου ρύζι. Θέλω ένα πακέτο ρύζι και δύο μπουκάλια νερό.",
+       "tr": "Dokuz euro verdim. Artık yeterince domatesim var, ama hiç pirincim yok. Bir paket pirinç ve iki şişe su istiyorum.",
+       "en": "I paid nine euros. Now I have enough tomatoes, but I have no rice at all. I want a packet of rice and two bottles of water."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Εγώ δεν έχω κανένα αυγό. Θέλω έξι αυγά και λίγο τυρί.",
+       "tr": "Benim hiç yumurtam yok. Altı yumurta ve biraz peynir istiyorum.",
+       "en": "I don't have a single egg. I want six eggs and a little cheese."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Δεκατρία ευρώ και δεκατέσσερα λεπτά, παρακαλώ.",
+       "tr": "On üç euro on dört sent, lütfen.",
+       "en": "Thirteen euros and fourteen cents, please."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Σήμερα πληρώνω εγώ.",
+       "tr": "Bugün ben ödüyorum.",
+       "en": "I'm paying today."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ευχαριστώ, Ελένη!",
+       "tr": "Teşekkürler, Eleni!",
+       "en": "Thank you, Eleni!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloglara göre:",
+     "en": "According to the dialogues:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch11-q-kilos",
+      "oknos-book/ch11-q-tf"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Çoğul: οι ντομάτες, τα μήλα",
+    "en": "The plural: οι ντομάτες, τα μήλα"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Çoğulda **hem artikel hem isim sonu** değişir. Artikel eril ve dişil için **οι**, nötr için **τα** olur. Kelimeyi hep artikeliyle öğren: artikel ve son birlikte çoğulu gösterir.",
+     "en": "In the plural **both the article and the noun ending** change. The article is **οι** for masculine and feminine, **τα** for neuter. Learn each word with its article: the two together tell you the plural."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Özne olarak çoğul",
+      "en": "The plural as a subject"
+     },
+     "head": [
+      {
+       "tr": "son ek",
+       "en": "ending"
+      },
+      {
+       "tr": "tekil",
+       "en": "singular"
+      },
+      {
+       "tr": "çoğul",
+       "en": "plural"
+      }
+     ],
+     "rows": [
+      [
+       "-ος → -οι",
+       "ο πάγκος",
+       "οι πάγκοι"
+      ],
+      [
+       "-ας → -ες",
+       "ο πατέρας",
+       "οι πατέρες"
+      ],
+      [
+       "-ης → -ες",
+       "ο πελάτης",
+       "οι πελάτες"
+      ],
+      [
+       "-α, -ά → -ες, -ές",
+       "η ντομάτα, η πιπεριά",
+       "οι ντομάτες, οι πιπεριές"
+      ],
+      [
+       "-η → -ες",
+       "η λαϊκή",
+       "οι λαϊκές"
+      ],
+      [
+       "-ο → -α",
+       "το μήλο",
+       "τα μήλα"
+      ],
+      [
+       "-ι → -ια",
+       "το κρεμμύδι",
+       "τα κρεμμύδια"
+      ],
+      [
+       {
+        "tr": "-μα → -ματα",
+        "en": "-μα → -ματα"
+       },
+       "το μάθημα, το όνομα",
+       "τα μαθήματα, τα ονόματα"
+      ]
+     ],
+     "note": {
+      "tr": "Vurgu genelde yerinde kalır (*πιπεριά → πιπεριές*, *πράγμα → πράγματα*). Ama Yunancada vurgu sondan üçüncü heceden daha geriye gidemez. *-ματα* bir hece eklediği için vurgu bir hece ileri kayar: *μά-θη-μα → μα-θή-μα-τα*, *ό-νο-μα → ο-νό-μα-τα*. Vurgusu son *-ί* üzerinde olan nötrlerde vurgu yeni *α*'ya geçer: *τυρί → τυριά*. Ölçüler: *το κιλό → τα κιλά*.",
+      "en": "The stress mostly stays put (*πιπεριά → πιπεριές*, *πράγμα → πράγματα*). But in Greek the stress can never go back further than the third syllable from the end. *-ματα* adds a syllable, so the stress moves one syllable on: *μά-θη-μα → μα-θή-μα-τα*, *ό-νο-μα → ο-νό-μα-τα*. For neuter nouns stressed on a final *-ί*, the accent goes to the new *α*: *τυρί → τυριά*. Measures: *το κιλό → τα κιλά*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Οι ντομάτες είναι στον πάγκο.",
+       "tr": "Domatesler tezgâhta.",
+       "en": "The tomatoes are on the stall."
+      },
+      {
+       "el": "Τα μαθήματα είναι τη Δευτέρα.",
+       "tr": "Dersler pazartesi.",
+       "en": "The lessons are on Monday."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Nesne olarak çoğul: τους, τις, τα",
+    "en": "The plural as an object: τους, τις, τα"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Nesne olunca (Ders 7'deki -i hâli, *αιτιατική*) çoğulda artikel değişir: eril **τους**, dişil **τις**, nötr **τα**. İsimde ise yalnızca **-ος** ile biten eril isimlerin sonu değişir: *-οι → -ους*. Öbür isimler özne çoğuluyla aynı kalır.",
+     "en": "As an object (the accusative from Lesson 7), the plural article changes: masculine **τους**, feminine **τις**, neuter **τα**. The noun changes only for masculine nouns in **-ος**: *-οι → -ους*. All other nouns stay the same as the subject plural."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "özne",
+       "en": "subject"
+      },
+      {
+       "tr": "nesne",
+       "en": "object"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "eril",
+        "en": "masculine"
+       },
+       "οι πάγκοι",
+       "τους πάγκους"
+      ],
+      [
+       "",
+       "οι δάσκαλοι",
+       "τους δασκάλους"
+      ],
+      [
+       "",
+       "οι πελάτες",
+       "τους πελάτες"
+      ],
+      [
+       {
+        "tr": "dişil",
+        "en": "feminine"
+       },
+       "οι ντομάτες",
+       "τις ντομάτες"
+      ],
+      [
+       {
+        "tr": "nötr",
+        "en": "neuter"
+       },
+       "τα μήλα",
+       "τα μήλα"
+      ]
+     ],
+     "note": {
+      "tr": "Vurgusu sondan üçüncü hecede olan bazı *-ος* isimlerinde vurgu *-ους* ile bir hece ileri kayar: *ο δάσκαλος → τους δασκάλους*. Çoğulda -ν kuralı yoktur. Artikeller *σε* ile birleşir: *στους, στις, στα*.",
+      "en": "In some *-ος* nouns stressed on the third syllable from the end, the stress moves one syllable on with *-ους*: *ο δάσκαλος → τους δασκάλους*. There is no -ν rule in the plural. The articles join *σε*: *στους, στις, στα*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Ο Κώστας έχει δύο πάγκους στη λαϊκή.",
+       "tr": "Kostas'ın pazarda iki tezgâhı var.",
+       "en": "Kostas has two stalls at the street market."
+      },
+      {
+       "el": "Θέλω τις πιπεριές και τα αγγούρια.",
+       "tr": "Biberleri ve salatalıkları istiyorum.",
+       "en": "I want the peppers and the cucumbers."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Sayılar isme uyar: ένας, μία, ένα; τρεις, τρία",
+    "en": "Numbers that agree: ένας, μία, ένα; τρεις, τρία"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Birkaç sayı ismin cinsiyetine uyar: **1, 3, 4, 13, 14** ve bunlarla biten **21, 23, 24…** (yüzlükler Ders 4'te). Ötekiler değişmez: *δύο, πέντε, έξι … δώδεκα, δεκαπέντε, είκοσι*. Birden büyük bir sayıdan sonra isim **çoğul** olur. Ağırlık Türkçedeki gibi söylenir, ama ölçü de çoğul olur: *iki kilo domates* = **δύο κιλά ντομάτες**, *yarım kilo çilek* = **μισό κιλό φράουλες**.",
+     "en": "A few numbers agree with the gender of the noun: **1, 3, 4, 13, 14**, and the numbers ending in them, **21, 23, 24 …** (the hundreds are in Lesson 4). The others never change: *δύο, πέντε, έξι … δώδεκα, δεκαπέντε, είκοσι*. After any number above one the noun is **plural**. For weights there is no «of»: **δύο κιλά ντομάτες**, **μισό κιλό φράουλες**."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "eril",
+       "en": "masculine"
+      },
+      {
+       "tr": "dişil",
+       "en": "feminine"
+      },
+      {
+       "tr": "nötr",
+       "en": "neuter"
+      }
+     ],
+     "rows": [
+      [
+       "1",
+       "ένας (έναν)",
+       "μία",
+       "ένα"
+      ],
+      [
+       "3",
+       "τρεις",
+       "τρεις",
+       "τρία"
+      ],
+      [
+       "4",
+       "τέσσερις",
+       "τέσσερις",
+       "τέσσερα"
+      ],
+      [
+       "13",
+       "δεκατρείς",
+       "δεκατρείς",
+       "δεκατρία"
+      ],
+      [
+       "14",
+       "δεκατέσσερις",
+       "δεκατέσσερις",
+       "δεκατέσσερα"
+      ]
+     ],
+     "note": {
+      "tr": "Bu biçimler nesne olunca da aynı kalır; yalnızca *ένας* → *έναν* olur (Ders 7). Artikel olarak («bir») genellikle *μια* yazılır; *μία* sayıyı vurgular.",
+      "en": "These forms stay the same as an object; only *ένας* becomes *έναν* (Lesson 7). As the article «a», *μια* is the usual spelling; *μία* stresses «one»."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Θέλω τρεις ντομάτες και τρία αγγούρια.",
+       "tr": "Üç domates ve üç salatalık istiyorum.",
+       "en": "I want three tomatoes and three cucumbers.",
+       "note": {
+        "tr": "Aynı sayı, iki biçim: *ντομάτες* dişil, *αγγούρια* nötr.",
+        "en": "One number, two forms: *ντομάτες* is feminine, *αγγούρια* neuter."
+       }
+      },
+      {
+       "el": "Η Ελένη έχει μία αδελφή και τρία παιδιά.",
+       "tr": "Eleni'nin bir kız kardeşi ve üç çocuğu var.",
+       "en": "Eleni has one sister and three children.",
+       "note": {
+        "tr": "*Παιδί → παιδιά*: vurgu yeni *α*'ya geçer.",
+        "en": "*Παιδί → παιδιά*: the accent goes to the new *α*."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Ne kadar? Kaç tane? πόσο, πόσα, πόσες",
+    "en": "How much? How many? πόσο, πόσα, πόσες"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**Πόσος** («ne kadar? kaç tane?») de ismin cinsiyetine ve sayısına uyar. Sayılamayan şey için tekil kullanılır: *πόσο ρύζι;* Sayılabilen şey için çoğul: *πόσα κιλά; πόσες ντομάτες;* Tabloda nesne (-i hâli) biçimleri var.",
+     "en": "**Πόσος** («how much? how many?») also agrees with the noun. It is singular for what you do not count: *πόσο ρύζι;* It is plural for what you count: *πόσα κιλά; πόσες ντομάτες;* The table shows the accusative forms."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "eril",
+       "en": "masculine"
+      },
+      {
+       "tr": "dişil",
+       "en": "feminine"
+      },
+      {
+       "tr": "nötr",
+       "en": "neuter"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "tekil",
+        "en": "singular"
+       },
+       "πόσο",
+       "πόση",
+       "πόσο"
+      ],
+      [
+       {
+        "tr": "çoğul",
+        "en": "plural"
+       },
+       "πόσους",
+       "πόσες",
+       "πόσα"
+      ]
+     ],
+     "note": {
+      "tr": "Fiyat sorarken *πόσο* değişmez: *Πόσο κάνει; Πόσο κάνουν οι φράουλες;* Ödenen para için ise *πόσα* duyarsın (*πόσα ευρώ*): *Πόσα έδωσες;*",
+      "en": "When you ask a price, *πόσο* does not change: *Πόσο κάνει; Πόσο κάνουν οι φράουλες;* For money paid you hear *πόσα* (*πόσα ευρώ*): *Πόσα έδωσες;*"
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Πόσα κιλά ντομάτες θέλεις;",
+       "tr": "Kaç kilo domates istiyorsun?",
+       "en": "How many kilos of tomatoes do you want?"
+      },
+      {
+       "el": "Πόσο ρύζι έχεις;",
+       "tr": "Ne kadar pirincin var?",
+       "en": "How much rice do you have?"
+      },
+      {
+       "el": "Πόσους πελάτες έχεις σήμερα;",
+       "tr": "Bugün kaç müşterin var?",
+       "en": "How many customers do you have today?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Çok, az, yeterli, hiç: πολύς, λίγος, αρκετός, κανένας",
+    "en": "A lot, a little, enough, none: πολύς, λίγος, αρκετός, κανένας"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu sözcükler sıfat gibi isme uyar ve isimden önce gelir. **Λίγος** («az, biraz») ve **αρκετός** («yeterli, epey») Ders 8'deki *-ος, -η, -ο* sıfatları gibi çekilir: *λίγο τυρί, λίγα αυγά; αρκετούς πελάτες, αρκετές ντομάτες*. Tabloda yalnızca kurala uymayan **πολύς** ve **κανένας** var, nesne biçimleriyle. **Κανένας** («hiçbir») tekildir ve **δεν** ile gelir: *δεν έχω κανένα αυγό*; soruda «hiç» demektir: *Έχεις κανένα αυγό;* **Καθόλου** («hiç») asla değişmez: *δεν έχω καθόλου ρύζι*.",
+     "en": "These words agree with the noun and stand before it. **Λίγος** («a little, few») and **αρκετός** («enough, quite a lot») go like Lesson 8's *-ος, -η, -ο* adjectives: *λίγο τυρί, λίγα αυγά, αρκετές ντομάτες*. The table shows the two irregular ones, **πολύς** and **κανένας**, as objects. **Κανένας** («no, not any») is singular and goes with **δεν**: *δεν έχω κανένα αυγό*; in a question it means «any»: *Έχεις κανένα αυγό;* **Καθόλου** («at all») never changes: *δεν έχω καθόλου ρύζι*."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "eril",
+       "en": "masculine"
+      },
+      {
+       "tr": "dişil",
+       "en": "feminine"
+      },
+      {
+       "tr": "nötr",
+       "en": "neuter"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "πολύς, tekil",
+        "en": "πολύς, singular"
+       },
+       "πολύ",
+       "πολλή",
+       "πολύ"
+      ],
+      [
+       {
+        "tr": "πολύς, çoğul",
+        "en": "πολύς, plural"
+       },
+       "πολλούς",
+       "πολλές",
+       "πολλά"
+      ],
+      [
+       {
+        "tr": "κανένας, yalnız tekil",
+        "en": "κανένας, singular only"
+       },
+       "κανέναν",
+       "καμία",
+       "κανένα"
+      ]
+     ],
+     "note": {
+      "tr": "Dişil *πολλή* iki λ ile yazılır. *Πολύ* aynı zamanda bildiğin «çok» zarfıdır: *Χαίρω πολύ*. *Καμία* ayrıca *καμιά* diye yazılır.",
+      "en": "Feminine *πολλή* has two λ. *Πολύ* is also the adverb «very, a lot» you know from *Χαίρω πολύ*. *Καμία* is also written *καμιά*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Θέλω λίγο τυρί και πολλές φράουλες.",
+       "tr": "Biraz peynir ve bol çilek istiyorum.",
+       "en": "I want a little cheese and a lot of strawberries."
+      },
+      {
+       "el": "Δεν έχω κανένα αυγό και καθόλου γάλα.",
+       "tr": "Hiç yumurtam ve hiç sütüm yok.",
+       "en": "I don't have a single egg, and no milk at all."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Vermek, ödemek: δίνω, έδωσα, θα δώσω",
+    "en": "Giving and paying: δίνω, έδωσα, θα δώσω"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**Δίνω** «vermek» demektir; bir miktar parayla «ödemek» de olur: *Πόσα έδωσες;* «Kaç para verdin?». Asıl «ödemek» fiili *πληρώνω*'dur (Ders 10): *Σήμερα πληρώνω εγώ.* Geçmiş ve gelecek, Ders 7'deki *πήγα, θα πάω* gibi hazır biçimlerdir, şimdilik yalnızca **ben** ve **sen** için. İkisi de *δωσ-* kökünü kullanır: geçmişte başa *έ-* gelir (*έδωσα*), gelecek **θα** + *δώσω*.",
+     "en": "**Δίνω** means «I give»; with an amount of money, «I pay»: *Πόσα έδωσες;* «How much did you pay?». The usual verb for «pay» is *πληρώνω* (Lesson 10): *Σήμερα πληρώνω εγώ.* The past and future are ready-made forms, like Lesson 7's *πήγα, θα πάω*, for now only for **I** and **you**. Both use the stem *δωσ-*: the past adds *έ-* (*έδωσα*), the future is **θα** + *δώσω*."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "şimdi",
+       "en": "now"
+      },
+      {
+       "tr": "geçmiş",
+       "en": "past"
+      },
+      {
+       "tr": "gelecek",
+       "en": "future"
+      }
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "δίνω",
+       "έδωσα",
+       "θα δώσω"
+      ],
+      [
+       "εσύ",
+       "δίνεις",
+       "έδωσες",
+       "θα δώσεις"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Χθες έδωσα είκοσι ευρώ στη Μαρία.",
+       "tr": "Dün Maria'ya yirmi euro verdim.",
+       "en": "Yesterday I gave Maria twenty euros."
+      },
+      {
+       "el": "Θα δώσεις τις φράουλες στην Ελένη;",
+       "tr": "Çilekleri Eleni'ye verecek misin?",
+       "en": "Will you give the strawberries to Eleni?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Bu ve şu: αυτός, εκείνος, tekil ve çoğul",
+    "en": "This and that: αυτός and εκείνος, singular and plural"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**Αυτός** «bu» (yakındaki), **εκείνος** «şu, o» (uzaktaki) demektir. İsimle birlikte **artikel yine kalır**: *αυτά τα μήλα*. Tekil *αυτός* biçimlerini Ders 7'de gördün. Çoğul *αυτοί, αυτές, αυτά* ise Ders 2'deki «onlar» ile aynı sözcükler.",
+     "en": "**Αυτός** means «this» (near), **εκείνος** «that» (further away). With a noun the **article stays**: *αυτά τα μήλα*. You know singular *αυτός* from Lesson 7; the plural *αυτοί, αυτές, αυτά* are Lesson 2's words for «they»."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "eril",
+       "en": "masculine"
+      },
+      {
+       "tr": "dişil",
+       "en": "feminine"
+      },
+      {
+       "tr": "nötr",
+       "en": "neuter"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "εκείνος, tekil özne",
+        "en": "εκείνος, singular subject"
+       },
+       "εκείνος ο πάγκος",
+       "εκείνη η ντομάτα",
+       "εκείνο το μήλο"
+      ],
+      [
+       {
+        "tr": "εκείνος, tekil nesne",
+        "en": "εκείνος, singular object"
+       },
+       "εκείνον τον πάγκο",
+       "εκείνη την ντομάτα",
+       "εκείνο το μήλο"
+      ],
+      [
+       {
+        "tr": "εκείνος, çoğul özne",
+        "en": "εκείνος, plural subject"
+       },
+       "εκείνοι οι πάγκοι",
+       "εκείνες οι ντομάτες",
+       "εκείνα τα μήλα"
+      ],
+      [
+       {
+        "tr": "εκείνος, çoğul nesne",
+        "en": "εκείνος, plural object"
+       },
+       "εκείνους τους πάγκους",
+       "εκείνες τις ντομάτες",
+       "εκείνα τα μήλα"
+      ]
+     ],
+     "note": {
+      "tr": "*Αυτός* aynı ekleri alır: *αυτοί οι πάγκοι, αυτούς τους πάγκους, αυτές τις ντομάτες, αυτά τα μήλα*. Dişil nesne *αυτήν την*, *εκείνην την* diye de yazılır.",
+      "en": "*Αυτός* takes the same endings: *αυτοί οι πάγκοι, αυτούς τους πάγκους, αυτές τις ντομάτες, αυτά τα μήλα*. The feminine object is also written *αυτήν την*, *εκείνην την*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Αυτά τα αγγούρια κάνουν ένα ευρώ, εκείνα δύο.",
+       "tr": "Bu salatalıklar bir euro, şunlar iki.",
+       "en": "These cucumbers cost one euro, those two."
+      },
+      {
+       "el": "Αυτό το τυρί ή εκείνο;",
+       "tr": "Bu peynir mi, şu mu?",
+       "en": "This cheese or that one?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu dersin kelimeleri: pazar ve süpermarket ürünleri, *δίνω* ve miktar sözcükleri. Bölümü bitirince oturumlarına gelecekler.",
+     "en": "This lesson's words: market goods, *δίνω* and the words for amounts. They come into your sessions once you finish the chapter."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/v-froyto",
+      "oknos-book/v-karoto",
+      "oknos-book/v-kremmydi",
+      "oknos-book/v-ntomata",
+      "oknos-book/v-piperia",
+      "oknos-book/v-ryzi",
+      "oknos-book/v-mpoykali",
+      "oknos-book/v-paketo",
+      "oknos-book/ch11-laiki",
+      "oknos-book/ch11-pagkos",
+      "oknos-book/ch11-manavis",
+      "oknos-book/ch11-milo",
+      "oknos-book/ch11-fraoula",
+      "oknos-book/ch11-aggouri",
+      "oknos-book/ch11-gala",
+      "oknos-book/ch11-tyri",
+      "oknos-book/ch11-avgo",
+      "oknos-book/ch11-dino",
+      "oknos-book/ch11-poso",
+      "oknos-book/ch11-polys",
+      "oknos-book/ch11-arketos",
+      "oknos-book/ch11-kanenas",
+      "oknos-book/ch11-katholou",
+      "oknos-book/ch11-misos",
+      "oknos-book/ch11-ekeinos"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Tabloya uymayan sık kelimeler.** *Ο καφές* → *οι **καφέδες***, *η πόλη* → *οι **πόλεις***. Türkçeden gelen *ο μανάβης* da *-ηδες* alır: *οι **μανάβηδες***. Bunları çoğuluyla birlikte öğren.",
+     "en": "**Common words that break the table.** *Ο καφές* → *οι **καφέδες***, *η πόλη* → *οι **πόλεις***. *Ο μανάβης*, a word from Turkish, takes *-ηδες*: *οι **μανάβηδες***. Learn these with their plural."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**«Hiç» için olumsuz fiil gerekir.** *Έχω κανένα αυγό* denmez; Türkçedeki *hiç yumurtam yok* gibi fiil olumsuz olmalı: **δεν** έχω κανένα αυγό, **δεν** έχω καθόλου γάλα.",
+     "en": "**«None» needs a negative verb:** **δεν** έχω κανένα αυγό, **δεν** έχω καθόλου γάλα. *Έχω κανένα αυγό* is wrong."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: çoğul, sayıların uyumu ve δίνω.",
+     "en": "Now you try: the plural, numbers that agree, and δίνω."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch11-try-plural",
+      "oknos-book/ch11-try-numeral",
+      "oknos-book/ch11-try-dino"
+     ]
+    }
+   ]
+  }
+ ]
+}

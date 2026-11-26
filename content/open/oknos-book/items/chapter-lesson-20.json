@@ -1,0 +1,975 @@
+[
+ {
+  "id": "ch20-afm",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο ΑΦΜ",
+  "pos": "noun",
+  "en": "tax number (AFM)",
+  "tr": "vergi numarası (AFM)",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "ΑΦΜ",
+  "gender": "m",
+  "example": {
+   "el": "Έχω μαζί μου τον ΑΦΜ μου.",
+   "en": "I have my tax number with me.",
+   "tr": "Vergi numaram yanımda."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-iban",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο ΙΒΑΝ",
+  "pos": "noun",
+  "en": "IBAN (bank account number); also το ΙΒΑΝ",
+  "tr": "IBAN (banka hesap numarası); «το ΙΒΑΝ» de denir",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "ΙΒΑΝ",
+  "gender": "m",
+  "example": {
+   "el": "Ο ΙΒΑΝ σας είναι εδώ.",
+   "en": "Your IBAN is here.",
+   "tr": "IBAN'ınız burada."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-analipsi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ανάληψη",
+  "pos": "noun",
+  "en": "withdrawal (of money)",
+  "tr": "para çekme",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "ανάληψη",
+  "gender": "f",
+  "example": {
+   "el": "Κάνω μια ανάληψη από τον λογαριασμό μου.",
+   "en": "I make a withdrawal from my account.",
+   "tr": "Hesabımdan para çekiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-katathesi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η κατάθεση",
+  "pos": "noun",
+  "en": "deposit (of money)",
+  "tr": "para yatırma",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "κατάθεση",
+  "gender": "f",
+  "example": {
+   "el": "Η κατάθεση είναι εκατό ευρώ.",
+   "en": "The deposit is a hundred euros.",
+   "tr": "Yatırılan para yüz euro."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-dema",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το δέμα",
+  "pos": "noun",
+  "en": "parcel",
+  "tr": "koli; paket",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "δέμα",
+  "gender": "n",
+  "example": {
+   "el": "Έχω μια ειδοποίηση για ένα δέμα.",
+   "en": "I have a notice for a parcel.",
+   "tr": "Bir koli için bildirim kâğıdım var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-gramma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το γράμμα",
+  "pos": "noun",
+  "en": "letter (to post)",
+  "tr": "mektup",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "γράμμα",
+  "gender": "n",
+  "example": {
+   "el": "Στέλνω ένα γράμμα στη μητέρα μου.",
+   "en": "I am sending a letter to my mother.",
+   "tr": "Anneme bir mektup gönderiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-systimeno",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "συστημένο",
+  "pos": "adj",
+  "en": "registered (mail)",
+  "tr": "taahhütlü (posta)",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "συστημένος",
+  "example": {
+   "el": "Το δέμα από την Τουρκία είναι συστημένο.",
+   "en": "The parcel from Turkey is registered.",
+   "tr": "Türkiye'den gelen koli taahhütlü."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-gramatosimo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το γραμματόσημο",
+  "pos": "noun",
+  "en": "stamp",
+  "tr": "pul",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "γραμματόσημο",
+  "gender": "n",
+  "example": {
+   "el": "Θέλω ένα γραμματόσημο για την Τουρκία.",
+   "en": "I want a stamp for Turkey.",
+   "tr": "Türkiye için bir pul istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-dedomena",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τα δεδομένα",
+  "pos": "noun",
+  "en": "mobile data; data",
+  "tr": "(internet) veri; kota",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "δεδομένα",
+  "gender": "n",
+  "example": {
+   "el": "Το πακέτο έχει πολλά δεδομένα.",
+   "en": "The plan has a lot of data.",
+   "tr": "Paketin çok verisi var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-symvolaio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το συμβόλαιο",
+  "pos": "noun",
+  "en": "contract",
+  "tr": "sözleşme; abonelik",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "συμβόλαιο",
+  "gender": "n",
+  "example": {
+   "el": "Το συμβόλαιο είναι για έναν χρόνο.",
+   "en": "The contract is for one year.",
+   "tr": "Sözleşme bir yıllık."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-lipsi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η λήψη",
+  "pos": "noun",
+  "en": "reception (phone signal)",
+  "tr": "(telefonda) çekim",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "λήψη",
+  "gender": "f",
+  "example": {
+   "el": "Εδώ το κινητό μου δεν έχει λήψη.",
+   "en": "My mobile has no reception here.",
+   "tr": "Burada telefonum çekmiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "opus-review"
+  }
+ },
+ {
+  "id": "ch20-stelno",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "στέλνω",
+  "pos": "verb",
+  "en": "to send (future: θα στείλω)",
+  "tr": "göndermek (gelecek: θα στείλω)",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "στέλνω",
+  "example": {
+   "el": "Σας στέλνω ένα μήνυμα.",
+   "en": "I am sending you a message.",
+   "tr": "Size bir mesaj gönderiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-anoigo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ανοίγω",
+  "pos": "verb",
+  "en": "to open (future: θα ανοίξω)",
+  "tr": "açmak (gelecek: θα ανοίξω)",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "ανοίγω",
+  "example": {
+   "el": "Θα ήθελα να ανοίξω λογαριασμό.",
+   "en": "I would like to open an account.",
+   "tr": "Hesap açmak istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-tachydromeio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ταχυδρομείο",
+  "pos": "noun",
+  "en": "post office",
+  "tr": "postane",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "ταχυδρομείο",
+  "gender": "n",
+  "example": {
+   "el": "Το ταχυδρομείο είναι δίπλα στην τράπεζα.",
+   "en": "The post office is next to the bank.",
+   "tr": "Postane bankanın yanında."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-astynomiki",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η αστυνομική ταυτότητα",
+  "pos": "noun",
+  "en": "Greek identity card",
+  "tr": "(Yunan) kimlik kartı",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "lemma": "ταυτότητα",
+  "gender": "f",
+  "example": {
+   "el": "Μου δίνετε την αστυνομική ταυτότητά σας;",
+   "en": "Could you give me your ID card?",
+   "tr": "Kimlik kartınızı bana verir misiniz?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-q-plan",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πόσο κάνει τον μήνα το πακέτο με συμβόλαιο;",
+   "en": "How much is the plan with a contract a month?",
+   "tr": "Sözleşmeli paket ayda ne kadar?"
+  },
+  "options": [
+   "δέκα ευρώ",
+   "είκοσι ευρώ",
+   "τριάντα ευρώ"
+  ],
+  "answer": 1,
+  "explain": {
+   "tr": "Satıcı «με συμβόλαιο, είκοσι ευρώ τον μήνα» diyor; otuz euro sözleşmesiz paketin fiyatı. Ayşe sözleşmeliyi alıyor.",
+   "en": "The assistant says «με συμβόλαιο, είκοσι ευρώ τον μήνα»; thirty euros is the price without a contract. Ayşe takes the one with the contract."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-q-parcel",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πόσο κάνουν όλα μαζί στο ταχυδρομείο;",
+   "en": "How much is everything together at the post office?",
+   "tr": "Postanede hepsi birlikte ne kadar?"
+  },
+  "options": [
+   "ένα ευρώ",
+   "δύο ευρώ",
+   "τρία ευρώ"
+  ],
+  "answer": 2,
+  "explain": {
+   "tr": "Zarf bir euro, pul iki; «όλα μαζί» toplamdır: üç. Bir ve iki tuzaktır. Koli için para ödemiyor.",
+   "en": "The envelope is one euro and the stamp two; «όλα μαζί» is the total, three. One and two are the traps. She pays nothing for the parcel."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-try-pron",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω τα κενά. Μία λέξη περισσεύει.",
+   "en": "Fill the gaps. One word is not needed.",
+   "tr": "Boşlukları doldur. Bir kelime fazla."
+  },
+  "text": "Η Ελένη είναι φίλη μου. {1} τηλεφωνώ το βράδυ. Ο Νίκος είναι φίλος μου. {2} στέλνω ένα μήνυμα. Κυρία Παπαδάκη, {3} δίνω την απόδειξη.",
+  "bank": [
+   "της",
+   "του",
+   "σας",
+   "σου"
+  ],
+  "answer": {
+   "1": "της",
+   "2": "του",
+   "3": "σας"
+  },
+  "translation": {
+   "tr": "Eleni arkadaşım. Akşam ona telefon ediyorum. Nikos arkadaşım. Ona bir mesaj gönderiyorum. Papadaki Hanım, size makbuzu veriyorum.",
+   "en": "Eleni is my friend. I phone her in the evening. Nikos is my friend. I send him a message. Ms Papadaki, I am giving you the receipt."
+  },
+  "explain": {
+   "tr": "Eleni kadın: της. Nikos erkek: του. Papadaki Hanım'a resmî konuşuyorsun: σας. σου, «εσύ» dediğin kişi içindir.",
+   "en": "Eleni is a woman: της. Nikos is a man: του. You speak formally to Ms Papadaki: σας. σου is for someone you call «εσύ»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-try-who",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "Βάζω «του» ή «της».",
+   "en": "Put του or της with each person.",
+   "tr": "Her kişiye του ya da της koy."
+  },
+  "categories": [
+   "του",
+   "της"
+  ],
+  "items": [
+   "ο Νίκος",
+   "η Ελένη",
+   "το παιδί",
+   "η μητέρα",
+   "ο πατέρας",
+   "η γιαγιά"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "explain": {
+   "tr": "Eril ve nötr του alır (Νίκος, παιδί, πατέρας); dişil της alır (Ελένη, μητέρα, γιαγιά).",
+   "en": "Masculine and neuter take του (Νίκος, παιδί, πατέρας); feminine takes της (Ελένη, μητέρα, γιαγιά)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-try-order",
+  "ask": {
+   "en": "You ask about the parcel: \"Will you give it to me?\" Which is right?",
+   "tr": "Koliyi soruyorsun: «Onu bana verir misin?» Hangisi doğru?"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ποια πρόταση είναι σωστή;",
+   "en": "You ask about the parcel: \"Will you give it to me?\" Which is right?",
+   "tr": "Koliyi soruyorsun: «Onu bana verir misin?» Hangisi doğru?"
+  },
+  "options": [
+   "Μου το δίνεις;",
+   "Το μου δίνεις;",
+   "Δίνεις μου το;"
+  ],
+  "answer": 0,
+  "explain": {
+   "tr": "İki küçük kelime de fiilin önünde durur; önce kişi, sonra şey: μου το δίνεις.",
+   "en": "Both little words stand before the verb, the person first and the thing second: μου το δίνεις."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-try-strong",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "text": "Δίνω το δέμα σε {1}, όχι στον Νίκο.",
+  "options": {
+   "1": [
+    "εσένα",
+    "εσύ",
+    "σου"
+   ]
+  },
+  "answer": {
+   "1": [
+    "εσένα"
+   ]
+  },
+  "translation": {
+   "tr": "Koliyi sana veriyorum, Nikos'a değil.",
+   "en": "I give the parcel to you, not to Nikos."
+  },
+  "grammar": [
+   "strong pronouns after σε"
+  ],
+  "explain": {
+   "tr": "σε'den sonra Ders 16'daki güçlü biçim gelir: σε εσένα (konuşmada σε σένα). «σε εσύ» ve «σε σου» diye bir şey yoktur.",
+   "en": "After σε comes the strong form of Lesson 16: σε εσένα (in speech σε σένα). «σε εσύ» and «σε σου» do not exist."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-try-plural",
+  "ask": {
+   "en": "Match each singular with its plural.",
+   "tr": "Her tekili çoğuluyla eşleştir."
+  },
+  "type": "match",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each singular with its plural.",
+   "tr": "Her tekili çoğuluyla eşleştir."
+  },
+  "left": [
+   "η κράτηση",
+   "η πράξη",
+   "η κατάθεση",
+   "η απόδειξη"
+  ],
+  "right": [
+   "οι πράξεις",
+   "οι αποδείξεις",
+   "οι καταθέσεις",
+   "οι κρατήσεις"
+  ],
+  "answer": [
+   3,
+   0,
+   2,
+   1
+  ],
+  "explain": {
+   "tr": "-ση → -σεις, -ξη → -ξεις. Çoğulda vurgu sondan ikinci hecededir: κρατήσεις, καταθέσεις, αποδείξεις; πράξεις'te zaten oradaydı.",
+   "en": "-ση → -σεις, -ξη → -ξεις. In the plural the stress is on the second-to-last syllable: κρατήσεις, καταθέσεις, αποδείξεις; in πράξεις it was there already."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-p-gender",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "Βάζω «ο», «η» ή «το».",
+   "en": "Put ο, η or το with each word.",
+   "tr": "Her kelimeye ο, η veya το koy."
+  },
+  "categories": [
+   "ο",
+   "η",
+   "το"
+  ],
+  "items": [
+   "ανάληψη",
+   "δέμα",
+   "ταμείο",
+   "διεύθυνση",
+   "φάκελος",
+   "γραμματόσημο"
+  ],
+  "answer": [
+   1,
+   2,
+   2,
+   1,
+   0,
+   2
+  ],
+  "explain": {
+   "tr": "-ση ve -ψη ile biten isimler dişildir (διεύθυνση, ανάληψη). δέμα, ταμείο ve γραμματόσημο nötr; φάκελος eril.",
+   "en": "Nouns in -ση and -ψη are feminine (διεύθυνση, ανάληψη). δέμα, ταμείο and γραμματόσημο are neuter; φάκελος is masculine."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-p-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Το δέμα είναι από την Τουρκία.",
+    "en": "The parcel is from Turkey.",
+    "tr": "Koli Türkiye'den geliyor.",
+    "answer": true
+   },
+   {
+    "el": "Η Αϊσέ στέλνει ένα δέμα στη μητέρα της.",
+    "en": "Ayşe sends a parcel to her mother.",
+    "tr": "Ayşe annesine bir koli gönderiyor.",
+    "answer": false
+   },
+   {
+    "el": "Η Αϊσέ παίρνει το πακέτο χωρίς συμβόλαιο.",
+    "en": "Ayşe takes the plan without a contract.",
+    "tr": "Ayşe sözleşmesiz paketi alıyor.",
+    "answer": false
+   },
+   {
+    "el": "Η τράπεζα θα στείλει την κάρτα στο σπίτι.",
+    "en": "The bank will send the card to her home.",
+    "tr": "Banka kartı eve gönderecek.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "tr": "Koli Türkiye'den, annesinden geliyor: Ayşe onu alıyor, göndermiyor; göndereceği şey bir mektup. Paketi sözleşmeli alıyor. Banka «Θα σας τη στείλουμε στο σπίτι» diyor.",
+   "en": "The parcel comes from Turkey, from her mother: Ayşe collects it, she does not send it; what she sends is a letter. She takes the plan with a contract. The bank says «Θα σας τη στείλουμε στο σπίτι»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-p-replace1",
+  "ask": {
+   "en": "Replace «στη μητέρα μου» with a pronoun: «Δίνω το δέμα στη μητέρα μου.»",
+   "tr": "«στη μητέρα μου» yerine zamir koy: «Δίνω το δέμα στη μητέρα μου.»"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Δίνω το δέμα στη μητέρα μου.",
+   "en": "Replace «στη μητέρα μου» with a pronoun: «Δίνω το δέμα στη μητέρα μου.»",
+   "tr": "«στη μητέρα μου» yerine zamir koy: «Δίνω το δέμα στη μητέρα μου.»"
+  },
+  "options": [
+   "Της δίνω το δέμα.",
+   "Τη δίνω το δέμα.",
+   "Του δίνω το δέμα."
+  ],
+  "answer": 0,
+  "explain": {
+   "tr": "«Ona (kadına)» için της denir. τη(ν) Ders 16'daki «onu» demektir; του «ona (erkeğe)» olurdu.",
+   "en": "«To her» is της. τη(ν) is the object «her» of Lesson 16, and του would be «to him»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-p-replace2",
+  "ask": {
+   "en": "Replace «στους φίλους μου» with a pronoun: «Στέλνω ένα μήνυμα στους φίλους μου.»",
+   "tr": "«στους φίλους μου» yerine zamir koy: «Στέλνω ένα μήνυμα στους φίλους μου.»"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Στέλνω ένα μήνυμα στους φίλους μου.",
+   "en": "Replace «στους φίλους μου» with a pronoun: «Στέλνω ένα μήνυμα στους φίλους μου.»",
+   "tr": "«στους φίλους μου» yerine zamir koy: «Στέλνω ένα μήνυμα στους φίλους μου.»"
+  },
+  "options": [
+   "Τους στέλνω ένα μήνυμα.",
+   "Τις στέλνω ένα μήνυμα.",
+   "Σας στέλνω ένα μήνυμα."
+  ],
+  "answer": 0,
+  "explain": {
+   "tr": "«Onlara» için τους denir. τις dişil ve «onları» demektir; σας «size» demektir.",
+   "en": "«To them» is τους. τις would be feminine and accusative; σας is «to you»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-p-verb-case",
+  "ask": {
+   "en": "The person is «you»: does σε or σου go before the verb?",
+   "tr": "Kişi «sen»: fiilin önüne σε mi gelir, σου mu?"
+  },
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "«Σε …» ή «σου …»;",
+   "en": "The person is «you»: does σε or σου go before the verb?",
+   "tr": "Kişi «sen»: fiilin önüne σε mi gelir, σου mu?"
+  },
+  "categories": [
+   "σε …",
+   "σου …"
+  ],
+  "items": [
+   "βλέπω",
+   "δίνω",
+   "περιμένω",
+   "στέλνω",
+   "τηλεφωνώ",
+   "ακούω"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   1,
+   0
+  ],
+  "explain": {
+   "tr": "βλέπω, περιμένω ve ακούω «-i» hâli alır: σε βλέπω (seni görüyorum). δίνω, στέλνω ve τηλεφωνώ «kime?» sorar: σου δίνω, σου τηλεφωνώ (sana telefon ediyorum).",
+   "en": "βλέπω, περιμένω and ακούω take the object: σε βλέπω (I see you). δίνω, στέλνω and τηλεφωνώ have a person «to» whom: σου δίνω, σου τηλεφωνώ (I phone you)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-p-bank",
+  "type": "gap_bank",
+  "skill": "vocab",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω τα κενά. Μία λέξη περισσεύει.",
+   "en": "Fill the gaps. One word is not needed.",
+   "tr": "Boşlukları doldur. Bir kelime fazla."
+  },
+  "text": "Δίνω εκατό ευρώ στο ταμείο. Κάνω μια {1}. Παίρνω εκατό ευρώ από το ταμείο. Κάνω μια {2}.",
+  "bank": [
+   "κατάθεση",
+   "ανάληψη",
+   "απόδειξη"
+  ],
+  "answer": {
+   "1": "κατάθεση",
+   "2": "ανάληψη"
+  },
+  "translation": {
+   "tr": "Kasaya yüz euro veriyorum. Para yatırıyorum. Kasadan yüz euro alıyorum. Para çekiyorum.",
+   "en": "I give a hundred euros at the till. I make a deposit. I take a hundred euros from the till. I make a withdrawal."
+  },
+  "explain": {
+   "tr": "Para girer: κατάθεση. Para çıkar: ανάληψη. Makbuz (απόδειξη) ikisinden sonra eline aldığın kâğıttır.",
+   "en": "Money in: κατάθεση. Money out: ανάληψη. The receipt (απόδειξη) is the paper you get after either."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-p-where",
+  "type": "mcq",
+  "skill": "vocab",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Από πού στέλνω ένα δέμα;",
+   "en": "Where do you send a parcel from?",
+   "tr": "Koliyi nereden gönderirsin?"
+  },
+  "options": [
+   "από την τράπεζα",
+   "από το ταχυδρομείο",
+   "από το φαρμακείο"
+  ],
+  "answer": 1,
+  "explain": {
+   "tr": "Postaneden (το ταχυδρομείο). Banka (η τράπεζα) hesap, para yatırma ve çekme içindir.",
+   "en": "At the post office (το ταχυδρομείο). The bank (η τράπεζα) is for accounts, deposits and withdrawals."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch20-p-stress",
+  "ask": {
+   "en": "What is the plural of η κατάθεση?",
+   "tr": "η κατάθεση kelimesinin çoğulu hangisi?"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-20"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "η κατάθεση → οι …",
+   "en": "What is the plural of η κατάθεση?",
+   "tr": "η κατάθεση kelimesinin çoğulu hangisi?"
+  },
+  "options": [
+   "κατάθεσεις",
+   "καταθέσεις",
+   "καταθεσείς"
+  ],
+  "answer": 1,
+  "explain": {
+   "tr": "-ση, -σεις olur ve çoğulda vurgu sondan ikinci heceye gelir: κα-τα-θέ-σεις.",
+   "en": "-ση becomes -σεις, and in the plural the stress falls on the second-to-last syllable: κα-τα-θέ-σεις."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-20",
+   "by": "sonnet-draft"
+  }
+ }
+]

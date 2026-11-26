@@ -1,0 +1,1137 @@
+{
+ "id": "oknos-book",
+ "title": {
+  "en": "The Oknos book: Greek from A1 to B1",
+  "tr": "Oknos'un kitabı: A1'den B1'e Yunanca"
+ },
+ "source": "Original, written for Oknos (CC BY-SA 4.0): reading, 24 lessons and a bridge to B1, one chapter each (content/open/oknos-book). The `units` rules place words a learner's own imported pack tags with a lesson (unit:lesson-NN); they match nothing in the open packs.",
+ "for_pack": "oknos-book",
+ "formerly": [
+  "greek-helper-book"
+ ],
+ "stages": [
+  {
+   "id": "intro",
+   "title": {
+    "en": "Introduction · Reading Greek",
+    "tr": "Giriş · Yunanca okumak"
+   },
+   "theme": {
+    "en": "The letters, letter pairs and the accent",
+    "tr": "Harfler, çift harfler ve vurgu"
+   },
+   "level": "A1",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "intro"
+     ]
+    },
+    {
+     "packs": [
+      "open-alphabet"
+     ]
+    },
+    {
+     "packs": [
+      "open-shared-words-tr"
+     ],
+     "types": [
+      "vocab"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Read any Greek word aloud, slowly",
+     "tr": "Her Yunanca kelimeyi yavaşça sesli okumak"
+    },
+    {
+     "en": "Say where the stress falls",
+     "tr": "Vurgunun nereye düştüğünü söylemek"
+    }
+   ]
+  },
+  {
+   "id": "lesson-01",
+   "title": {
+    "en": "Lesson 1 · Hello, I'm …",
+    "tr": "Ders 1 · Merhaba, ben …"
+   },
+   "theme": {
+    "en": "Greetings and meeting people",
+    "tr": "Selamlaşmak ve tanışmak"
+   },
+   "level": "A1",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-01"
+     ]
+    },
+    {
+     "items": [
+      "open-shared-words-tr/q-flitzani-drink",
+      "open-shared-words-tr/q-xali-where",
+      "open-shared-words-tr/q-kimas-where"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Say hello and goodbye to a friend and to a stranger",
+     "tr": "Bir arkadaşa ve bir yabancıya merhaba ve hoşça kal demek"
+    },
+    {
+     "en": "Say your name and where you are from",
+     "tr": "Adını ve nereli olduğunu söylemek"
+    },
+    {
+     "en": "Ask someone the same, with εσύ or εσείς",
+     "tr": "Aynısını birine εσύ ya da εσείς ile sormak"
+    }
+   ]
+  },
+  {
+   "id": "lesson-02",
+   "title": {
+    "en": "Lesson 2 · What do you do?",
+    "tr": "Ders 2 · Ne iş yapıyorsun?"
+   },
+   "theme": {
+    "en": "Jobs, the verb είμαι, introducing people",
+    "tr": "Meslekler, είμαι fiili, birini tanıştırmak"
+   },
+   "level": "A1",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-02"
+     ]
+    },
+    {
+     "lemmas": [
+      "είμαι"
+     ],
+     "tenses": [
+      "present"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Say what you do and ask what others do",
+     "tr": "Ne iş yaptığını söylemek, başkalarına sormak"
+    },
+    {
+     "en": "Introduce a friend or a colleague",
+     "tr": "Bir arkadaşı ya da iş arkadaşını tanıştırmak"
+    },
+    {
+     "en": "Count to ten",
+     "tr": "Ona kadar saymak"
+    }
+   ]
+  },
+  {
+   "id": "lesson-03",
+   "title": {
+    "en": "Lesson 3 · Where do you live?",
+    "tr": "Ders 3 · Nerede oturuyorsun?"
+   },
+   "theme": {
+    "en": "Home, work, days and numbers; the present of A verbs",
+    "tr": "Ev, iş, günler ve sayılar; A fiillerinin şimdiki zamanı"
+   },
+   "level": "A1",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-03"
+     ]
+    },
+    {
+     "tenses": [
+      "present"
+     ],
+     "grammar": [
+      "verb.class_a"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    },
+    {
+     "items": [
+      "open-everyday-a1a2/r-match-questions",
+      "open-shared-words-tr/r-taverna-menu"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Say where you live and where you work",
+     "tr": "Nerede oturduğunu ve çalıştığını söylemek"
+    },
+    {
+     "en": "Fill in a simple form",
+     "tr": "Basit bir form doldurmak"
+    },
+    {
+     "en": "Say on which days and how often you do something",
+     "tr": "Bir şeyi hangi günler ve ne sıklıkla yaptığını söylemek"
+    }
+   ]
+  },
+  {
+   "id": "lesson-04",
+   "title": {
+    "en": "Lesson 4 · Work, phone, family",
+    "tr": "Ders 4 · İş, telefon, aile"
+   },
+   "theme": {
+    "en": "Possessives, phone numbers, numbers to 1000",
+    "tr": "İyelik, telefon numaraları, 1000'e kadar sayılar"
+   },
+   "level": "A1",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-04"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Give your phone number and spell your name",
+     "tr": "Telefon numaranı vermek, adını harf harf söylemek"
+    },
+    {
+     "en": "Talk about your work or studies",
+     "tr": "İşin ya da okulun hakkında konuşmak"
+    },
+    {
+     "en": "Say whether you are married and have children",
+     "tr": "Evli olup olmadığını, çocuğun olup olmadığını söylemek"
+    }
+   ]
+  },
+  {
+   "id": "lesson-05",
+   "title": {
+    "en": "Lesson 5 · Languages and family",
+    "tr": "Ders 5 · Diller ve aile"
+   },
+   "theme": {
+    "en": "Nationalities, languages, family; verbs like μιλάω",
+    "tr": "Uyruklar, diller, aile; μιλάω gibi fiiller"
+   },
+   "level": "A1",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-05"
+     ]
+    },
+    {
+     "tenses": [
+      "present"
+     ],
+     "grammar": [
+      "verb.class_b"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Say which languages you speak",
+     "tr": "Hangi dilleri konuştuğunu söylemek"
+    },
+    {
+     "en": "Say your nationality, as a man or a woman",
+     "tr": "Uyruğunu, erkek ya da kadın olarak söylemek"
+    },
+    {
+     "en": "Talk about the people in your family",
+     "tr": "Ailendeki kişilerden söz etmek"
+    }
+   ]
+  },
+  {
+   "id": "lesson-06",
+   "title": {
+    "en": "Lesson 6 · Review of 1–5",
+    "tr": "Ders 6 · Tekrar: 1–5"
+   },
+   "theme": {
+    "en": "Lessons 1–5 in one conversation",
+    "tr": "1–5. dersler tek bir sohbette"
+   },
+   "level": "A1",
+   "review_of": [
+    "lesson-01",
+    "lesson-02",
+    "lesson-03",
+    "lesson-04",
+    "lesson-05"
+   ],
+   "include": [
+    {
+     "units": [
+      "lesson-06"
+     ]
+    }
+   ],
+   "can_do": []
+  },
+  {
+   "id": "lesson-07",
+   "title": {
+    "en": "Lesson 7 · Kiosk, bakery, café",
+    "tr": "Ders 7 · Büfede, fırında, kafede"
+   },
+   "theme": {
+    "en": "Asking for what you want; θέλω, παίρνω",
+    "tr": "İstediğini istemek; θέλω, παίρνω"
+   },
+   "level": "A1",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-07"
+     ]
+    },
+    {
+     "lemmas": [
+      "πηγαίνω"
+     ],
+     "tenses": [
+      "aorist",
+      "future"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    },
+    {
+     "items": [
+      "open-everyday-a1a2/l-bakery",
+      "open-everyday-a1a2/r-match-shops",
+      "open-everyday-a1a2/r-gap-pharmacy",
+      "open-shared-words-tr/r-bakaliko-notice"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Buy something at a kiosk or a bakery",
+     "tr": "Büfeden ya da fırından bir şey almak"
+    },
+    {
+     "en": "Order a coffee the way you like it",
+     "tr": "Kahveni istediğin gibi ısmarlamak"
+    }
+   ]
+  },
+  {
+   "id": "lesson-08",
+   "title": {
+    "en": "Lesson 8 · A lost bag",
+    "tr": "Ders 8 · Kayıp çanta"
+   },
+   "theme": {
+    "en": "Describing things; adjectives, ποιος, big numbers",
+    "tr": "Eşyaları anlatmak; sıfatlar, ποιος, büyük sayılar"
+   },
+   "level": "A1",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-08"
+     ]
+    },
+    {
+     "lemmas": [
+      "είμαι",
+      "έχω"
+     ],
+     "tenses": [
+      "imperfect",
+      "future"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Describe a thing by its colour, size and age",
+     "tr": "Bir eşyayı rengi, büyüklüğü ve yaşıyla anlatmak"
+    },
+    {
+     "en": "Ask «which one?» and answer",
+     "tr": "«Hangisi?» diye sormak ve cevap vermek"
+    }
+   ]
+  },
+  {
+   "id": "lesson-09",
+   "title": {
+    "en": "Lesson 9 · In the shop and in an e-mail",
+    "tr": "Ders 9 · Dükkânda ve e-postada"
+   },
+   "theme": {
+    "en": "The object form, ποιον, verbs like ακούω",
+    "tr": "Nesne biçimi, ποιον, ακούω gibi fiiller"
+   },
+   "level": "A1",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-09"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Buy something for the home in a shop",
+     "tr": "Bir dükkândan ev için bir şey almak"
+    },
+    {
+     "en": "Describe your day in a short e-mail",
+     "tr": "Gününü kısa bir e-postada anlatmak"
+    },
+    {
+     "en": "Say what you do often and what you rarely do",
+     "tr": "Neyi sık, neyi seyrek yaptığını söylemek"
+    }
+   ]
+  },
+  {
+   "id": "lesson-10",
+   "title": {
+    "en": "Lesson 10 · Metro, time, weather",
+    "tr": "Ders 10 · Metro, saat, hava"
+   },
+   "theme": {
+    "en": "Getting somewhere; με, σε, για, από, μέχρι",
+    "tr": "Bir yere gitmek; με, σε, για, από, μέχρι"
+   },
+   "level": "A1",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-10"
+     ]
+    },
+    {
+     "lemmas": [
+      "βλέπω",
+      "φεύγω"
+     ],
+     "tenses": [
+      "aorist",
+      "future"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    },
+    {
+     "items": [
+      "open-everyday-a1a2/l-nikos-time",
+      "open-everyday-a1a2/r-cat-places",
+      "open-everyday-a1a2/l-places",
+      "open-everyday-a1a2/l-station",
+      "open-everyday-a1a2/r-tf-bus",
+      "open-everyday-a1a2/r-match-signs",
+      "open-everyday-a1a2/s-my-day"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Say how to get somewhere by metro or bus",
+     "tr": "Bir yere metroyla ya da otobüsle nasıl gidileceğini söylemek"
+    },
+    {
+     "en": "Invite someone and answer an invitation",
+     "tr": "Birini davet etmek ve bir davete cevap vermek"
+    },
+    {
+     "en": "Tell the time and talk about the weather",
+     "tr": "Saati söylemek ve hava hakkında konuşmak"
+    }
+   ]
+  },
+  {
+   "id": "lesson-11",
+   "title": {
+    "en": "Lesson 11 · At the street market",
+    "tr": "Ders 11 · Pazarda"
+   },
+   "theme": {
+    "en": "Plurals, quantities, «how much?»",
+    "tr": "Çoğullar, miktarlar, «ne kadar?»"
+   },
+   "level": "A1",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-11"
+     ]
+    },
+    {
+     "items": [
+      "open-everyday-a1a2/r-tf-supermarket",
+      "open-everyday-a1a2/r-cat-food"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Buy fruit and vegetables by the kilo",
+     "tr": "Kiloyla meyve ve sebze almak"
+    },
+    {
+     "en": "Ask the price and pay",
+     "tr": "Fiyatı sormak ve ödemek"
+    }
+   ]
+  },
+  {
+   "id": "lesson-12",
+   "title": {
+    "en": "Lesson 12 · Review of 7–11",
+    "tr": "Ders 12 · Tekrar: 7–11"
+   },
+   "theme": {
+    "en": "Lessons 7–11 in a day of errands",
+    "tr": "7–11. dersler bir iş günü boyunca"
+   },
+   "level": "A1",
+   "review_of": [
+    "lesson-07",
+    "lesson-08",
+    "lesson-09",
+    "lesson-10",
+    "lesson-11"
+   ],
+   "include": [
+    {
+     "units": [
+      "lesson-12"
+     ]
+    }
+   ],
+   "can_do": []
+  },
+  {
+   "id": "lesson-13",
+   "title": {
+    "en": "Lesson 13 · Buying clothes",
+    "tr": "Ders 13 · Giysi alışverişi"
+   },
+   "theme": {
+    "en": "Plural adjectives, «I like it», verbs in -ομαι",
+    "tr": "Çoğul sıfatlar, «hoşuma gidiyor», -ομαι fiilleri"
+   },
+   "level": "A2",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-13"
+     ]
+    },
+    {
+     "lemmas": [
+      "κάνω"
+     ],
+     "tenses": [
+      "aorist",
+      "future"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Ask for a size and a colour and try something on",
+     "tr": "Beden ve renk sormak, bir şey denemek"
+    },
+    {
+     "en": "Say what you like and what you don't",
+     "tr": "Neyi sevip neyi sevmediğini söylemek"
+    }
+   ]
+  },
+  {
+   "id": "lesson-14",
+   "title": {
+    "en": "Lesson 14 · Looking for a flat",
+    "tr": "Ders 14 · Ev aramak"
+   },
+   "theme": {
+    "en": "Ads, rooms, the neighbourhood; υπάρχει, ordinals",
+    "tr": "İlanlar, odalar, mahalle; υπάρχει, sıra sayıları"
+   },
+   "level": "A2",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-14"
+     ]
+    },
+    {
+     "lemmas": [
+      "έρχομαι"
+     ],
+     "tenses": [
+      "aorist",
+      "future"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    },
+    {
+     "tenses": [
+      "present"
+     ],
+     "grammar": [
+      "verb.deponent"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    },
+    {
+     "items": [
+      "open-everyday-a1a2/r-gap-neighbour",
+      "open-everyday-a1a2/r-tf-building",
+      "open-everyday-a1a2/r-mcq-landlord",
+      "open-everyday-a1a2/w-lift-broken",
+      "open-everyday-a1a2/s-neighbourhood"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Read a short flat ad",
+     "tr": "Kısa bir ev ilanını okumak"
+    },
+    {
+     "en": "Describe a flat and its rooms",
+     "tr": "Bir evi ve odalarını anlatmak"
+    },
+    {
+     "en": "Ask what there is near a place",
+     "tr": "Bir yerin yakınında ne olduğunu sormak"
+    }
+   ]
+  },
+  {
+   "id": "lesson-15",
+   "title": {
+    "en": "Lesson 15 · At the taverna; the future",
+    "tr": "Ders 15 · Tavernada; gelecek zaman"
+   },
+   "theme": {
+    "en": "Ordering by phone and at the table; θα + verb",
+    "tr": "Telefonla ve masada sipariş; θα + fiil"
+   },
+   "level": "A2",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-15"
+     ]
+    },
+    {
+     "tenses": [
+      "future"
+     ],
+     "grammar": [
+      "verb.class_a"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Order food by phone or at a taverna",
+     "tr": "Telefonla ya da tavernada yemek ısmarlamak"
+    },
+    {
+     "en": "Book a table",
+     "tr": "Masa ayırtmak"
+    },
+    {
+     "en": "Say what you will do",
+     "tr": "Ne yapacağını söylemek"
+    }
+   ]
+  },
+  {
+   "id": "lesson-16",
+   "title": {
+    "en": "Lesson 16 · A hotel and a trip",
+    "tr": "Ders 16 · Otel ve yolculuk"
+   },
+   "theme": {
+    "en": "Booking and checking in; object pronouns",
+    "tr": "Rezervasyon ve giriş; nesne zamirleri"
+   },
+   "level": "A2",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-16"
+     ]
+    },
+    {
+     "tenses": [
+      "future"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Book a hotel room by phone",
+     "tr": "Telefonla otel odası ayırtmak"
+    },
+    {
+     "en": "Check in at the reception",
+     "tr": "Resepsiyonda giriş yapmak"
+    },
+    {
+     "en": "Talk about the plan of a trip",
+     "tr": "Bir yolculuğun planını anlatmak"
+    }
+   ]
+  },
+  {
+   "id": "lesson-17",
+   "title": {
+    "en": "Lesson 17 · Cinema; permission and requests",
+    "tr": "Ders 17 · Sinema; izin ve rica"
+   },
+   "theme": {
+    "en": "Going out with friends; να + verb",
+    "tr": "Arkadaşlarla dışarı çıkmak; να + fiil"
+   },
+   "level": "A2",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-17"
+     ]
+    },
+    {
+     "tenses": [
+      "subjunctive"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    },
+    {
+     "items": [
+      "open-everyday-a1a2/l-weekend-plan",
+      "open-everyday-a1a2/w-invite-saturday"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Arrange an evening out with friends",
+     "tr": "Arkadaşlarla bir akşam planlamak"
+    },
+    {
+     "en": "Ask whether you may do something",
+     "tr": "Bir şeyi yapıp yapamayacağını sormak"
+    },
+    {
+     "en": "Ask someone to do something, or not to",
+     "tr": "Birinden bir şeyi yapmasını ya da yapmamasını istemek"
+    }
+   ]
+  },
+  {
+   "id": "lesson-18",
+   "title": {
+    "en": "Lesson 18 · Review of 13–17",
+    "tr": "Ders 18 · Tekrar: 13–17"
+   },
+   "theme": {
+    "en": "Lessons 13–17 in a visit to Athens",
+    "tr": "13–17. dersler bir Atina ziyaretinde"
+   },
+   "level": "A2",
+   "review_of": [
+    "lesson-13",
+    "lesson-14",
+    "lesson-15",
+    "lesson-16",
+    "lesson-17"
+   ],
+   "include": [
+    {
+     "units": [
+      "lesson-18"
+     ]
+    }
+   ],
+   "can_do": []
+  },
+  {
+   "id": "lesson-19",
+   "title": {
+    "en": "Lesson 19 · Back from holiday; the past",
+    "tr": "Ders 19 · Tatil dönüşü; geçmiş zaman"
+   },
+   "theme": {
+    "en": "A message to a friend; the simple past",
+    "tr": "Bir arkadaşa mesaj; geçmiş zaman"
+   },
+   "level": "A2",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-19"
+     ]
+    },
+    {
+     "tenses": [
+      "aorist"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    },
+    {
+     "items": [
+      "open-everyday-a1a2/r-cat-time"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Write a friend a short message about your holiday",
+     "tr": "Bir arkadaşına tatilini anlatan kısa bir mesaj yazmak"
+    },
+    {
+     "en": "Say what you did yesterday or last week",
+     "tr": "Dün ya da geçen hafta ne yaptığını söylemek"
+    }
+   ]
+  },
+  {
+   "id": "lesson-20",
+   "title": {
+    "en": "Lesson 20 · Bank, post office, phone shop",
+    "tr": "Ders 20 · Banka, postane, telefoncu"
+   },
+   "theme": {
+    "en": "Errands at the counter; «to me, to you»",
+    "tr": "Gişede işler; «bana, sana»"
+   },
+   "level": "A2",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-20"
+     ]
+    },
+    {
+     "items": [
+      "open-everyday-a1a2/r-gap-kep"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Choose a mobile phone plan",
+     "tr": "Bir cep telefonu paketi seçmek"
+    },
+    {
+     "en": "Do a simple task at the bank or the post office",
+     "tr": "Bankada ya da postanede basit bir iş yapmak"
+    }
+   ]
+  },
+  {
+   "id": "lesson-21",
+   "title": {
+    "en": "Lesson 21 · Health: pharmacy and doctor",
+    "tr": "Ders 21 · Sağlık: eczane ve doktor"
+   },
+   "theme": {
+    "en": "Saying what hurts; telling someone what to do",
+    "tr": "Neren ağrıyor; birine ne yapacağını söylemek"
+   },
+   "level": "A2",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-21"
+     ]
+    },
+    {
+     "tenses": [
+      "imperative"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    },
+    {
+     "items": [
+      "open-everyday-a1a2/l-message-doctor"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Say how you feel when you are ill",
+     "tr": "Hastayken nasıl hissettiğini söylemek"
+    },
+    {
+     "en": "Talk to a pharmacist or a doctor",
+     "tr": "Bir eczacıyla ya da doktorla konuşmak"
+    },
+    {
+     "en": "Understand and give instructions",
+     "tr": "Talimatları anlamak ve vermek"
+    }
+   ]
+  },
+  {
+   "id": "lesson-22",
+   "title": {
+    "en": "Lesson 22 · Name days and Easter",
+    "tr": "Ders 22 · İsim günü ve Paskalya"
+   },
+   "theme": {
+    "en": "Wishes and customs; the genitive, αν and όταν",
+    "tr": "Dilekler ve gelenekler; -in hâli, αν ve όταν"
+   },
+   "level": "A2",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-22"
+     ]
+    },
+    {
+     "grammar": [
+      "syntax.conditional",
+      "noun.genitive",
+      "case.genitive"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Give the right wish on a birthday, a name day or a holiday",
+     "tr": "Doğum gününde, isim gününde ya da bayramda doğru dileği söylemek"
+    },
+    {
+     "en": "Describe how a holiday is celebrated",
+     "tr": "Bir bayramın nasıl kutlandığını anlatmak"
+    }
+   ]
+  },
+  {
+   "id": "lesson-23",
+   "title": {
+    "en": "Lesson 23 · Work and study; comparing",
+    "tr": "Ders 23 · İş ve eğitim; karşılaştırmak"
+   },
+   "theme": {
+    "en": "Job offers and plans; comparatives",
+    "tr": "İş teklifleri ve planlar; karşılaştırma"
+   },
+   "level": "A2",
+   "review_of": [],
+   "include": [
+    {
+     "units": [
+      "lesson-23"
+     ]
+    },
+    {
+     "tenses": [
+      "imperfect"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    },
+    {
+     "grammar": [
+      "adj.comparative"
+     ],
+     "levels": [
+      "A1",
+      "A2"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Talk about your study and work plans",
+     "tr": "Okul ve iş planlarından söz etmek"
+    },
+    {
+     "en": "Describe a job and what it offers",
+     "tr": "Bir işi ve neler sunduğunu anlatmak"
+    },
+    {
+     "en": "Compare two things and give reasons",
+     "tr": "İki şeyi karşılaştırmak ve gerekçe göstermek"
+    }
+   ]
+  },
+  {
+   "id": "lesson-24",
+   "title": {
+    "en": "Lesson 24 · Review of 19–23",
+    "tr": "Ders 24 · Tekrar: 19–23"
+   },
+   "theme": {
+    "en": "Lessons 19–23 in a long e-mail",
+    "tr": "19–23. dersler uzun bir e-postada"
+   },
+   "level": "A2",
+   "review_of": [
+    "lesson-19",
+    "lesson-20",
+    "lesson-21",
+    "lesson-22",
+    "lesson-23"
+   ],
+   "include": [
+    {
+     "units": [
+      "lesson-24"
+     ]
+    }
+   ],
+   "can_do": []
+  },
+  {
+   "id": "b1-bridge",
+   "title": {
+    "en": "Towards B1",
+    "tr": "B1'e doğru"
+   },
+   "theme": {
+    "en": "What B1 adds: the passive, reported speech, 150-word texts",
+    "tr": "B1'in ekledikleri: edilgen çatı, dolaylı anlatım, 150 kelimelik metinler"
+   },
+   "level": "B1",
+   "review_of": [],
+   "include": [
+    {
+     "packs": [
+      "open-b1-bridge"
+     ]
+    }
+   ],
+   "can_do": [
+    {
+     "en": "Read a formal notice and answer it in about 150 words",
+     "tr": "Resmî bir duyuruyu okuyup yaklaşık 150 kelimeyle cevap vermek"
+    },
+    {
+     "en": "Report what someone said",
+     "tr": "Birinin ne dediğini aktarmak"
+    }
+   ]
+  }
+ ],
+ "pools": [
+  {
+   "level": "A1",
+   "from_stage": "lesson-03"
+  },
+  {
+   "level": "A2",
+   "from_stage": "lesson-13"
+  },
+  {
+   "level": "B1",
+   "from_stage": "b1-bridge"
+  }
+ ],
+ "follows": {
+  "open-a1-b1": {
+   "reading": "intro",
+   "first-words": "lesson-03",
+   "everyday-verbs": "lesson-03",
+   "more-verbs": "lesson-14",
+   "shopping": "lesson-11",
+   "getting-around": "lesson-11",
+   "review-1": "lesson-14",
+   "future": "lesson-17",
+   "past": "lesson-19",
+   "a2-life": "lesson-20",
+   "review-2": "lesson-20",
+   "b1-bridge": "b1-bridge"
+  }
+ }
+}

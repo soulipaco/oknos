@@ -1,0 +1,698 @@
+{
+ "id": "oknos-book.lesson-06",
+ "curriculum": "oknos-book",
+ "stage": "lesson-06",
+ "level": "A1",
+ "title": {
+  "tr": "Tekrar: 1-5. dersler tek bir konuşmada",
+  "en": "Review: lessons 1-5 in one conversation"
+ },
+ "minutes": 15,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde **yeni hiçbir şey yok**: 1-5. dersleri tek bir konuşmada ve beş kısa tabloda topluyorsun: *είμαι*, iki fiil grubu, *εσύ / εσείς*, *μου / σου / σας*, *σε / από*.\n\nAnahtar nokta: kime konuştuğuna karar ver. Arkadaşına **εσύ** (*σου*, *μένεις*, *μιλάς*), tanımadığın birine **εσείς** (*σας*, *μένετε*, *μιλάτε*).",
+     "en": "There is **nothing new** in this chapter: it pulls lessons 1-5 together in one conversation and five short tables: *είμαι*, the two verb groups, *εσύ / εσείς*, *μου / σου / σας*, *σε / από*.\n\nThe key point: decide who you are talking to. A friend is **εσύ** (*σου*, *μένεις*, *μιλάς*); a stranger is **εσείς** (*σας*, *μένετε*, *μιλάτε*)."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Kursun ilk günü",
+    "en": "The first day at the course"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Önce dinle, sonra oku. Mehmet önce kursun sekreteriyle resmî, sonra Eleni ile samimi konuşuyor.",
+     "en": "Listen first, then read. Mehmet talks formally to the course secretary, then informally to Eleni."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Kurs ofisi. Mehmet kayıt için geliyor.",
+      "en": "The course office. Mehmet comes to register."
+     },
+     "lines": [
+      {
+       "who": "Μεχμέτ",
+       "el": "Καλημέρα σας.",
+       "tr": "Günaydın.",
+       "en": "Good morning."
+      },
+      {
+       "who": "Κυρία Ανδρέου",
+       "el": "Καλημέρα σας! Πώς σας λένε;",
+       "tr": "Günaydın! Adınız ne?",
+       "en": "Good morning! What is your name?"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Με λένε Μεχμέτ Γιλμάζ.",
+       "tr": "Adım Mehmet Yılmaz.",
+       "en": "My name is Mehmet Yılmaz."
+      },
+      {
+       "who": "Κυρία Ανδρέου",
+       "el": "Χαίρω πολύ, κύριε Γιλμάζ. Από πού είστε;",
+       "tr": "Memnun oldum Yılmaz Bey. Nerelisiniz?",
+       "en": "Nice to meet you, Mr Yılmaz. Where are you from?"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Είμαι από την Τουρκία, από τη Σμύρνη. Εσείς;",
+       "tr": "Türkiye'denim, İzmir'den. Ya siz?",
+       "en": "I am from Turkey, from Izmir. And you?"
+      },
+      {
+       "who": "Κυρία Ανδρέου",
+       "el": "Εγώ είμαι από τη Θεσσαλονίκη. Πού μένετε;",
+       "tr": "Ben Selanik'tenim. Nerede oturuyorsunuz?",
+       "en": "I am from Thessaloniki. Where do you live?"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Μένω στην Καλλιθέα. Είμαι μηχανικός και δουλεύω στο νοσοκομείο.",
+       "tr": "Kallithea'da oturuyorum. Mühendisim, hastanede çalışıyorum.",
+       "en": "I live in Kallithea. I am an engineer and I work at the hospital."
+      },
+      {
+       "who": "Κυρία Ανδρέου",
+       "el": "Ωραία! Και το τηλέφωνό σας, παρακαλώ;",
+       "tr": "Güzel! Telefonunuz da lütfen?",
+       "en": "Good! And your phone number, please?"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Το κινητό μου είναι έξι, εννιά, εφτά, διακόσια δώδεκα, σαράντα πέντε, εξήντα οχτώ.",
+       "tr": "Cep telefonum altı, dokuz, yedi, iki yüz on iki, kırk beş, altmış sekiz.",
+       "en": "My mobile is six, nine, seven, two hundred and twelve, forty-five, sixty-eight."
+      },
+      {
+       "who": "Κυρία Ανδρέου",
+       "el": "Ευχαριστώ. Ελένη, από δω ο Μεχμέτ Γιλμάζ. Η Ελένη είναι φοιτήτρια.",
+       "tr": "Teşekkürler. Eleni, bu Mehmet Yılmaz. Eleni üniversite öğrencisi.",
+       "en": "Thank you. Eleni, this is Mehmet Yılmaz. Eleni is a university student."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Γεια σου, Μεχμέτ! Χαίρω πολύ.",
+       "tr": "Merhaba Mehmet! Memnun oldum.",
+       "en": "Hi, Mehmet! Nice to meet you."
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Χαίρω πολύ, Ελένη. Πού μένεις;",
+       "tr": "Ben de memnun oldum Eleni. Sen nerede oturuyorsun?",
+       "en": "Nice to meet you, Eleni. Where do you live?"
+      },
+      {
+       "who": "Ελένη",
+       "el": "Μένω στο Μαρούσι. Μιλάς ελληνικά πολύ καλά!",
+       "tr": "Marusi'de oturuyorum. Çok iyi Yunanca konuşuyorsun!",
+       "en": "I live in Marousi. You speak Greek very well!"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Ευχαριστώ! Μιλάω τουρκικά, ελληνικά και λίγο αγγλικά.",
+       "tr": "Teşekkürler! Türkçe, Yunanca ve biraz İngilizce konuşuyorum.",
+       "en": "Thank you! I speak Turkish, Greek and a little English."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Η οικογένειά σου είναι στην Τουρκία;",
+       "tr": "Ailen Türkiye'de mi?",
+       "en": "Is your family in Turkey?"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Ναι. Η μητέρα μου και ο πατέρας μου μένουν στη Σμύρνη. Και η οικογένειά σου;",
+       "tr": "Evet. Annemle babam İzmir'de oturuyor. Ya senin ailen?",
+       "en": "Yes. My mother and my father live in Izmir. And your family?"
+      },
+      {
+       "who": "Ελένη",
+       "el": "Η οικογένειά μου είναι στην Πάτρα. Ο πατέρας μου είναι δάσκαλος.",
+       "tr": "Ailem Patra'da. Babam öğretmen.",
+       "en": "My family is in Patras. My father is a teacher."
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Ωραία! Το μάθημα είναι τη Δευτέρα;",
+       "tr": "Güzel! Ders pazartesi mi?",
+       "en": "Good! Is the lesson on Monday?"
+      },
+      {
+       "who": "Ελένη",
+       "el": "Ναι, τη Δευτέρα και την Πέμπτη. Γεια σου!",
+       "tr": "Evet, pazartesi ve perşembe. Hoşça kal!",
+       "en": "Yes, on Monday and Thursday. Bye!"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Γεια σου, Ελένη! Ευχαριστώ, κυρία Ανδρέου. Γεια σας!",
+       "tr": "Hoşça kal Eleni! Teşekkür ederim Andreou Hanım. İyi günler!",
+       "en": "Bye, Eleni! Thank you, Mrs Andreou. Goodbye!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloğa göre:",
+     "en": "According to the dialogue:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch06-q-family",
+      "oknos-book/ch06-q-true-false"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "είμαι: Ders 1-2",
+    "en": "είμαι: Lessons 1-2"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "*είμαι* Ders 1'de üç biçimle, Ders 2'de altı biçimle geldi. Zamiri genelde söylemezsin: *Είμαι μηχανικός.*",
+     "en": "*είμαι* came with three forms in Lesson 1 and all six in Lesson 2. You usually leave the pronoun out: *Είμαι μηχανικός.*"
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "είμαι (olmak), şimdiki zaman",
+      "en": "είμαι (to be), present tense"
+     },
+     "head": [
+      "",
+      "είμαι",
+      {
+       "tr": "Anlamı",
+       "en": "Meaning"
+      }
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "είμαι",
+       {
+        "tr": "(ben) …-im",
+        "en": "I am"
+       }
+      ],
+      [
+       "εσύ",
+       "είσαι",
+       {
+        "tr": "(sen) …-sin",
+        "en": "you are (informal)"
+       }
+      ],
+      [
+       "αυτός / αυτή / αυτό",
+       "είναι",
+       {
+        "tr": "(o) …",
+        "en": "he / she / it is"
+       }
+      ],
+      [
+       "εμείς",
+       "είμαστε",
+       {
+        "tr": "(biz) …-iz",
+        "en": "we are"
+       }
+      ],
+      [
+       "εσείς",
+       "είστε",
+       {
+        "tr": "(siz) …-siniz",
+        "en": "you are (formal or plural)"
+       }
+      ],
+      [
+       "αυτοί / αυτές / αυτά",
+       "είναι",
+       {
+        "tr": "(onlar) …",
+        "en": "they are"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Είμαι από τη Σμύρνη.",
+       "tr": "İzmir'denim.",
+       "en": "I am from Izmir."
+      },
+      {
+       "el": "Κύριε Γιλμάζ, είστε μηχανικός;",
+       "tr": "Yılmaz Bey, mühendis misiniz?",
+       "en": "Mr Yılmaz, are you an engineer?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Fiiller: -ω ve -άω yan yana (Ders 3 ve 5)",
+    "en": "Verbs: -ω and -άω side by side (Lessons 3 and 5)"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ders 3'ün **A fiillerinde** (*μένω, δουλεύω, γράφω*) vurgu hep kökte, aynı hecede kalır. Ders 5'in **B1 fiillerinde** (*μιλάω, ρωτάω, αγαπάω*) vurgu **sondaki ekte** durur. Son sütun Ders 5'in kısa biçimleri: onları tanı, ama kendin ortadakileri kullan.",
+     "en": "In the **A verbs** of Lesson 3 (*μένω, δουλεύω, γράφω*) the stress stays on the same syllable of the stem. In the **B1 verbs** of Lesson 5 (*μιλάω, ρωτάω, αγαπάω*) it sits **on the ending**. The last column has Lesson 5's short forms: recognise them, but use the middle column yourself."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Şimdiki zaman: A fiili ve B1 fiili",
+      "en": "Present tense: an A verb and a B1 verb"
+     },
+     "head": [
+      "",
+      "δουλεύω",
+      "μιλάω",
+      {
+       "tr": "kısa biçim",
+       "en": "short form"
+      }
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "δουλεύω",
+       "μιλάω",
+       "μιλώ"
+      ],
+      [
+       "εσύ",
+       "δουλεύεις",
+       "μιλάς",
+       "μιλάς"
+      ],
+      [
+       "αυτός / αυτή / αυτό",
+       "δουλεύει",
+       "μιλάει",
+       "μιλά"
+      ],
+      [
+       "εμείς",
+       "δουλεύουμε",
+       "μιλάμε",
+       "μιλάμε"
+      ],
+      [
+       "εσείς",
+       "δουλεύετε",
+       "μιλάτε",
+       "μιλάτε"
+      ],
+      [
+       "αυτοί / αυτές / αυτά",
+       "δουλεύουν(ε)",
+       "μιλάνε",
+       "μιλούν(ε)"
+      ]
+     ],
+     "note": {
+      "tr": "Olumsuz için iki grupta da fiilin önüne δεν gelir (Ders 3). Soru için ek kelime gerekmez: ses yükselir ve sona ; konur.",
+      "en": "For a negative, δεν goes before the verb in both groups (Lesson 3). A question needs no extra word: the voice rises, and it ends in ;."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Δουλεύετε στο νοσοκομείο;",
+       "tr": "Hastanede mi çalışıyorsunuz?",
+       "en": "Do you work at the hospital?"
+      },
+      {
+       "el": "Μιλάς ελληνικά;",
+       "tr": "Yunanca konuşuyor musun?",
+       "en": "Do you speak Greek?"
+      },
+      {
+       "el": "Ο αδελφός μου ξυπνάει νωρίς και δουλεύει στον Πειραιά.",
+       "tr": "Erkek kardeşim erken uyanıyor ve Pire'de çalışıyor.",
+       "en": "My brother wakes up early and works in Piraeus.",
+       "note": {
+        "tr": "Bir cümlede iki grup: *ξυπνάει* (B1), *δουλεύει* (A).",
+        "en": "Both groups in one sentence: *ξυπνάει* (B1), *δουλεύει* (A)."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Samimi mi, resmî mi? (Ders 1-5)",
+    "en": "Informal or formal? (Lessons 1-5)"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Arkadaşına, çocuğa, yaşıtına **εσύ**; tanımadığın birine, yaşça büyük birine ya da birkaç kişiye **εσείς**. Fiil ve *σου / σας* birlikte değişir.",
+     "en": "To a friend, a child or someone your age: **εσύ**. To a stranger, an older person or several people: **εσείς**. The verb and *σου / σας* change together."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Aynı soru, iki ton",
+      "en": "The same question, two tones"
+     },
+     "head": [
+      {
+       "tr": "Ne diyorsun?",
+       "en": "What you say"
+      },
+      {
+       "tr": "Samimi (εσύ)",
+       "en": "Informal (εσύ)"
+      },
+      {
+       "tr": "Resmî (εσείς)",
+       "en": "Formal (εσείς)"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "Selam / hoşça kal",
+        "en": "Hello / bye"
+       },
+       "Γεια σου",
+       "Γεια σας"
+      ],
+      [
+       {
+        "tr": "Adın ne?",
+        "en": "Your name?"
+       },
+       "Πώς σε λένε;",
+       "Πώς σας λένε;"
+      ],
+      [
+       {
+        "tr": "Nerelisin?",
+        "en": "Where are you from?"
+       },
+       "Από πού είσαι;",
+       "Από πού είστε;"
+      ],
+      [
+       {
+        "tr": "Ne iş yapıyorsun?",
+        "en": "What is your job?"
+       },
+       "Τι δουλειά κάνεις;",
+       "Τι δουλειά κάνετε;"
+      ],
+      [
+       {
+        "tr": "Nerede oturuyorsun?",
+        "en": "Where do you live?"
+       },
+       "Πού μένεις;",
+       "Πού μένετε;"
+      ],
+      [
+       {
+        "tr": "Telefonun?",
+        "en": "Your phone number?"
+       },
+       "Το τηλέφωνό σου;",
+       "Το τηλέφωνό σας;"
+      ],
+      [
+       {
+        "tr": "Yunanca konuşuyor musun?",
+        "en": "Do you speak Greek?"
+       },
+       "Μιλάς ελληνικά;",
+       "Μιλάτε ελληνικά;"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "μου, σου, του… (Ders 4)",
+    "en": "μου, σου, του… (Lesson 4)"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ders 4: \"benim, senin …\" isimden **sonra** gelir, isim artikelini korur. Sondan üçüncü hecede vurgulu isim ikinci bir vurgu alır: *το όνομά μου*, *η οικογένειά σου*. Diğerleri değişmez: *η δουλειά μου*.",
+     "en": "Lesson 4: \"my, your …\" comes **after** the noun, and the noun keeps its article. A noun stressed on the third syllable from the end takes a second accent: *το όνομά μου*, *η οικογένειά σου*. The others do not change: *η δουλειά μου*."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Sahiplik zamirleri",
+      "en": "The possessives"
+     },
+     "head": [
+      "",
+      {
+       "tr": "Söz",
+       "en": "Word"
+      },
+      {
+       "tr": "Örnek",
+       "en": "Example"
+      }
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "μου",
+       "το όνομά μου"
+      ],
+      [
+       "εσύ",
+       "σου",
+       "η οικογένειά σου"
+      ],
+      [
+       "αυτός",
+       "του",
+       "το τηλέφωνό του"
+      ],
+      [
+       "αυτή",
+       "της",
+       "η δουλειά της"
+      ],
+      [
+       "εμείς",
+       "μας",
+       "το γραφείο μας"
+      ],
+      [
+       "εσείς",
+       "σας",
+       "το τηλέφωνό σας"
+      ],
+      [
+       "αυτοί / αυτές",
+       "τους",
+       "το σπίτι τους"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Η μητέρα μου μένει στην Πάτρα.",
+       "tr": "Annem Patra'da oturuyor.",
+       "en": "My mother lives in Patras."
+      },
+      {
+       "el": "Το όνομά σας, παρακαλώ;",
+       "tr": "Adınız, lütfen?",
+       "en": "Your name, please?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "σε και από: artikel (Ders 3)",
+    "en": "σε and από: the article (Lesson 3)"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ders 3: **σε** ve **από** kelimelerinden sonra değişen çoğunlukla artikeldir; eril isim yalnızca son -ς'yi düşürür (*ο Πειραιάς → στον Πειραιά*). **σε** artikelle birleşir (*στον, στην, στο*), **από** birleşmez.\n\n**-ν kuralı:** **τον / στον** hep -ν alır. **την / στην** onu yalnızca ünlüden ve κ, π, τ, ξ, ψ, μπ, ντ, γκ, τσ, τζ'den önce tutar. Günlerde de böyle: *τη Δευτέρα*, *την Πέμπτη*.",
+     "en": "Lesson 3: after **σε** and **από** it is mostly the article that changes; a masculine noun only drops its final -ς (*ο Πειραιάς → στον Πειραιά*). **σε** merges with the article (*στον, στην, στο*); **από** does not.\n\n**The final -ν:** **τον / στον** always keep it. **την / στην** keep it only before a vowel and before κ, π, τ, ξ, ψ, μπ, ντ, γκ, τσ, τζ. Days work the same way: *τη Δευτέρα*, *την Πέμπτη*."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Ad → σε … → από …",
+      "en": "Name → σε … → από …"
+     },
+     "head": [
+      "",
+      "σε …",
+      "από …"
+     ],
+     "rows": [
+      [
+       "ο Πειραιάς",
+       "στον Πειραιά",
+       "από τον Πειραιά"
+      ],
+      [
+       "η Αθήνα",
+       "στην Αθήνα",
+       "από την Αθήνα"
+      ],
+      [
+       "η Καλλιθέα",
+       "στην Καλλιθέα",
+       "από την Καλλιθέα"
+      ],
+      [
+       "η Σμύρνη",
+       "στη Σμύρνη",
+       "από τη Σμύρνη"
+      ],
+      [
+       "το Μαρούσι",
+       "στο Μαρούσι",
+       "από το Μαρούσι"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Δουλεύω στον Πειραιά.",
+       "tr": "Pire'de çalışıyorum.",
+       "en": "I work in Piraeus."
+      },
+      {
+       "el": "Ο Νίκος είναι από τη Θεσσαλονίκη.",
+       "tr": "Nikos Selanik'ten.",
+       "en": "Nikos is from Thessaloniki."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Yeni kelime yok: 1-5. derslerden tekrar etmeye değer kelimeler.",
+     "en": "No new words: these are words from lessons 1-5 worth revising."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/ch01-geia-sou",
+      "oknos-book/ch01-geia-sas",
+      "oknos-book/ch01-pos-sas-lene",
+      "oknos-book/ch01-chairo-poly",
+      "oknos-book/ch01-apo-pou-eiste",
+      "oknos-book/ch02-ti-douleia-formal",
+      "oknos-book/ch02-apo-do",
+      "oknos-book/ch02-foititis",
+      "oknos-book/v-michanikos",
+      "oknos-book/v-meno-verb",
+      "oknos-book/ch03-douleyo",
+      "oknos-book/ch04-onoma",
+      "oknos-book/ch04-tilefono",
+      "oknos-book/v-kinito-tilefono",
+      "oknos-book/v-oikogeneia",
+      "oknos-book/ch04-parakalo",
+      "oknos-book/v-milo-verb",
+      "oknos-book/ch05-ellinika",
+      "oknos-book/v-mitera",
+      "oknos-book/v-pateras"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Artikeli unutma.** *Μένω σε Αθήνα* değil, *Μένω στην Αθήνα*. -ν'ye de dikkat: *στην Αθήνα* ama *στη Σμύρνη*.",
+     "en": "**Do not drop the article.** Not *Μένω σε Αθήνα* but *Μένω στην Αθήνα*. Watch the -ν too: *στην Αθήνα* but *στη Σμύρνη*."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**B1 fiiline A sonu ekleme.** *μιλάς*, *μιλάει* doğru; *μιλάεις* yanlış. Ve ikinci vurguyu unutma: *το όνομά μου*, *το όνομα μου* değil.",
+     "en": "**Do not give a B1 verb the A endings.** *μιλάς* and *μιλάει* are right; *μιλάεις* is wrong. And do not forget the second accent: *το όνομά μου*, not *το όνομα μου*."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "exam_task": "a2ltr.speaking.personal",
+     "tr": "A2 konuşma sınavının ilk kısmı seninle ilgili. Sınavda sana *εσείς* ile sorarlar: *Πώς σας λένε; Από πού είστε; Πού μένετε; Τι δουλειά κάνετε;* Her birine bu bölümün cümleleriyle iki üç cümle hazırla; ailen için de.",
+     "en": "The first part of the A2 speaking exam is about you, and the examiners use *εσείς*: *Πώς σας λένε; Από πού είστε; Πού μένετε; Τι δουλειά κάνετε;* Prepare two or three sentences for each from this chapter, and some about your family."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: *είμαι*, fiiller, artikel ve sahiplik zamirleri bir arada.",
+     "en": "Now you try: *είμαι*, verbs, the article and the possessives together."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch06-try-eimai",
+      "oknos-book/ch06-try-verb",
+      "oknos-book/ch06-try-b1",
+      "oknos-book/ch06-try-poss",
+      "oknos-book/ch06-try-article"
+     ]
+    }
+   ]
+  }
+ ]
+}

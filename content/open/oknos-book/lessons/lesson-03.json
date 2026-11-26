@@ -1,0 +1,742 @@
+{
+ "id": "oknos-book.lesson-03",
+ "curriculum": "oknos-book",
+ "stage": "lesson-03",
+ "level": "A1",
+ "title": {
+  "tr": "Nerede oturuyorsun, nerede çalışıyorsun? Fiiller, artikeller, günler, sayılar",
+  "en": "Where do you live, where do you work? Verbs, articles, days and numbers"
+ },
+ "minutes": 14,
+ "version": 2,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde **nerede oturduğunu**, **nerede çalıştığını**, **hangi günler** çalıştığını ve bir şeyi **ne sıklıkla** yaptığını söylemeyi, ayrıca 11'den 199'a kadar sayıları öğreneceksin.\n\nEn önemli nokta: Ders 1'de *είμαι από την Τουρκία* diyordun ve *την* kalıp gibiydi. Şimdi kuralını öğreniyorsun: **σε** (-de, -e) ve **από** (-den) kelimelerinden sonra artikel değişir; *σε + την* birleşip **στην** olur: *Μένω στην Αθήνα*.",
+     "en": "In this chapter you learn to say **where you live**, **where you work**, **on which days** and **how often** you do things, plus the numbers from 11 to 199.\n\nThe key point: in Lesson 1 you said *είμαι από την Τουρκία* and *την* was a set phrase. Now it gets its rule: after **σε** (in, at, to) and **από** (from) the article changes, and *σε + την* melts into **στην**: *Μένω στην Αθήνα*."
+    }
+   ]
+  },
+  {
+   "kind": "warmup",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bir kursa yazılıyorsun. Form soruyor: nerelisin, nerede oturuyorsun, nerede çalışıyorsun, hangi günler? Yunancada Türkçedeki *-de, -den* eklerinin yerini küçük kelimeler tutar.",
+     "en": "You are signing up for a course. The form asks where you are from, where you live and work, and which days. Greek uses small words where Turkish uses endings like *-de, -den*."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Sekreterlikte ve sohbette",
+    "en": "In the office and in a chat"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Önce dinle, sonra oku. *στην, στον, στο, από τη* gibi küçük parçalara dikkat et; birazdan açıklayacağız. [[Πίνεις]] = içiyorsun.",
+     "en": "Listen first, then read. Watch small chunks like *στην, στον, στο, από τη*; we explain them in a moment. [[Πίνεις]] = you drink."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Kursun sekreterliğinde. Ayşe, kayıt için bilgilerini veriyor.",
+      "en": "In the course office. Ayşe gives her details to register."
+     },
+     "lines": [
+      {
+       "who": "Υπάλληλος",
+       "el": "Καλημέρα! Από πού είστε;",
+       "tr": "Günaydın! Nerelisiniz?",
+       "en": "Good morning! Where are you from?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα. Είμαι από την Τουρκία, από τη Σμύρνη.",
+       "tr": "Günaydın. Türkiye'denim, İzmir'denim.",
+       "en": "Good morning. I'm from Turkey, from Izmir."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Ωραία! Πού μένετε;",
+       "tr": "Ne güzel! Nerede oturuyorsunuz?",
+       "en": "Nice! Where do you live?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Μένω στην Καλλιθέα. Δουλεύω στον Πειραιά.",
+       "tr": "Kallithea'da oturuyorum. Pire'de çalışıyorum.",
+       "en": "I live in Kallithea. I work in Piraeus."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Δουλεύετε Σάββατο και Κυριακή;",
+       "tr": "Cumartesi ve pazar çalışıyor musunuz?",
+       "en": "Do you work on Saturday and Sunday?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Όχι. Δουλεύω Δευτέρα, Τρίτη και Πέμπτη.",
+       "tr": "Hayır. Pazartesi, salı ve perşembe çalışıyorum.",
+       "en": "No. I work on Monday, Tuesday and Thursday."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Ευχαριστώ πολύ!",
+       "tr": "Çok teşekkür ederim!",
+       "en": "Thank you very much!"
+      }
+     ]
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ders çıkışı. Ayşe, Nikos'la konuşuyor.",
+      "en": "After class. Ayşe talks to Nikos."
+     },
+     "lines": [
+      {
+       "who": "Νίκος",
+       "el": "Γεια σου, Αϊσέ! Εγώ μένω εδώ, στο Μαρούσι. Μένεις κι εσύ εδώ;",
+       "tr": "Merhaba Ayşe! Ben burada, Marusi'de oturuyorum. Sen de mi burada oturuyorsun?",
+       "en": "Hi, Ayşe! I live here, in Marousi. Do you live here too?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Όχι, εγώ μένω στην Καλλιθέα. Και δουλεύω στον Πειραιά.",
+       "tr": "Hayır, ben Kallithea'da oturuyorum. Pire'de de çalışıyorum.",
+       "en": "No, I live in Kallithea. And I work in Piraeus."
+      },
+      {
+       "who": "Νίκος",
+       "el": "Στον Πειραιά; Εγώ δουλεύω στο θέατρο. Πίνεις καφέ;",
+       "tr": "Pire'de mi? Ben tiyatroda çalışıyorum. Kahve içiyor musun?",
+       "en": "In Piraeus? I work at the theatre. Do you drink coffee?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Πάντα! Εσύ;",
+       "tr": "Her zaman! Ya sen?",
+       "en": "Always! And you?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Εγώ δεν πίνω ποτέ καφέ. Συνήθως πίνω τσάι.",
+       "tr": "Ben hiç kahve içmem. Genellikle çay içerim.",
+       "en": "I never drink coffee. I usually drink tea."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Εγώ πίνω τσάι μερικές φορές.",
+       "tr": "Ben bazen çay içerim.",
+       "en": "I drink tea sometimes."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloglara göre:",
+     "en": "According to the dialogues:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch03-q-where-live",
+      "oknos-book/ch03-q-true-false"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "-ω ile biten fiiller: μένω, δουλεύω",
+    "en": "Verbs in -ω: μένω, δουλεύω"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Yunancada fiilin sonu kişiye göre değişir. Çoğu fiil aynı düzeni izler: **kök** aynı kalır, sonuna **-ω, -εις, -ει, -ουμε, -ετε, -ουν(ε)** gelir. Vurgu da aynı hecede kalır.",
+     "en": "In Greek the end of the verb changes with the person. Most verbs follow one pattern: the **stem** stays, and the ending **-ω, -εις, -ει, -ουμε, -ετε, -ουν(ε)** is added. The stress stays on the same syllable."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Şimdiki zaman",
+      "en": "Present tense"
+     },
+     "head": [
+      "",
+      "μένω",
+      "δουλεύω",
+      "γράφω",
+      "διαβάζω"
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "μένω",
+       "δουλεύω",
+       "γράφω",
+       "διαβάζω"
+      ],
+      [
+       "εσύ",
+       "μένεις",
+       "δουλεύεις",
+       "γράφεις",
+       "διαβάζεις"
+      ],
+      [
+       "αυτός / αυτή / αυτό",
+       "μένει",
+       "δουλεύει",
+       "γράφει",
+       "διαβάζει"
+      ],
+      [
+       "εμείς",
+       "μένουμε",
+       "δουλεύουμε",
+       "γράφουμε",
+       "διαβάζουμε"
+      ],
+      [
+       "εσείς",
+       "μένετε",
+       "δουλεύετε",
+       "γράφετε",
+       "διαβάζετε"
+      ],
+      [
+       "αυτοί / αυτές / αυτά",
+       "μένουν(ε)",
+       "δουλεύουν(ε)",
+       "γράφουν(ε)",
+       "διαβάζουν(ε)"
+      ]
+     ],
+     "note": {
+      "tr": "*μένουν* da *μένουνε* de doğru.",
+      "en": "Both *μένουν* and *μένουνε* are correct."
+     }
+    },
+    {
+     "type": "prose",
+     "tr": "Bu zaman hem \"oturuyorum\" hem \"otururum\" demektir. Zamiri yine söylemezsin. **Soru** için ayrı kelime yok: *Μένεις στην Αθήνα;* (sesin yükselir; Yunancada soru işareti **;** yazılır). **Olumsuz** için fiilden önce **δεν** koyarsın: *Δεν πίνω καφέ.*\n\nDers 2'deki *Τι δουλειά κάνεις;* sorusunun fiili de bu düzende: [[κάνω]] (yapmak), *κάνεις*, *κάνει*…",
+     "en": "This tense means both \"I live\" and \"I am living\". You still leave out the pronoun. A **question** needs no extra word: *Μένεις στην Αθήνα;* (rising voice; the Greek question mark is **;**). For a **negative**, put **δεν** before the verb: *Δεν πίνω καφέ.*\n\nThe verb in Lesson 2's *Τι δουλειά κάνεις;* follows the same pattern: [[κάνω]] (to do), *κάνεις*, *κάνει*…"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Η Αϊσέ δουλεύει στον Πειραιά.",
+       "tr": "Ayşe Pire'de çalışıyor.",
+       "en": "Ayşe works in Piraeus.",
+       "note": {
+        "tr": "*στον Πειραιά* kısmını iki bölüm sonra açıklıyoruz.",
+        "en": "We explain *στον Πειραιά* two sections further on."
+       }
+      },
+      {
+       "el": "Εσείς μένετε στην Καλλιθέα;",
+       "tr": "Siz Kallithea'da mı oturuyorsunuz?",
+       "en": "Do you live in Kallithea?"
+      },
+      {
+       "el": "Δεν πίνω καφέ.",
+       "tr": "Kahve içmem.",
+       "en": "I don't drink coffee."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Her ismin bir cinsi var: ο, η, το",
+    "en": "Every noun has a gender: ο, η, το"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Türkçede cins yoktur. Yunancada her isim **eril, dişil ya da nötr**dür ve bunu önündeki **artikel** gösterir: **ο** (eril), **η** (dişil), **το** (nötr). İnsanlarda cins çoğu zaman kişinin cinsiyetidir: *ο Νίκος*, *η Αϊσέ*. Öteki isimlerde cinsi çoğu zaman **sondan** anlarsın.",
+     "en": "Greek nouns have a gender: **masculine, feminine or neuter**. The **article** in front of the noun shows it: **ο**, **η**, **το** (like French *le / la*, German *der / die / das*). For people it is usually their sex: *ο Νίκος*, *η Αϊσέ*. For other nouns you can often tell the gender from the **ending**."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Sonlara göre cins",
+      "en": "Gender by ending"
+     },
+     "head": [
+      {
+       "tr": "ο (eril)",
+       "en": "ο (masculine)"
+      },
+      {
+       "tr": "η (dişil)",
+       "en": "η (feminine)"
+      },
+      {
+       "tr": "το (nötr)",
+       "en": "το (neuter)"
+      }
+     ],
+     "rows": [
+      [
+       "-ος, -ας, -ης",
+       "-α, -η",
+       "-ο, -ι, -μα"
+      ],
+      [
+       "ο δάσκαλος",
+       "η Αθήνα",
+       "το σπίτι"
+      ],
+      [
+       "ο Πειραιάς",
+       "η Κρήτη",
+       "το βιβλίο"
+      ],
+      [
+       "ο μαθητής",
+       "η Τουρκία",
+       "το μάθημα"
+      ]
+     ],
+     "note": {
+      "tr": "Bu bir rehberdir, kesin kural değil. Bir kelimeyi her zaman artikeliyle birlikte öğren: *το παιδί*, *η Ελλάδα*.",
+      "en": "This is a guide, not a law. Always learn a word together with its article: *το παιδί*, *η Ελλάδα*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Ο Πειραιάς είναι στην Ελλάδα.",
+       "tr": "Pire Yunanistan'da.",
+       "en": "Piraeus is in Greece."
+      },
+      {
+       "el": "Η Καλλιθέα είναι στην Αθήνα.",
+       "tr": "Kallithea Atina'da.",
+       "en": "Kallithea is in Athens."
+      },
+      {
+       "el": "Το παιδί είναι στο σπίτι.",
+       "tr": "Çocuk evde.",
+       "en": "The child is at home.",
+       "note": {
+        "tr": "*Το παιδί* nötrdür, çünkü sonu -ι.",
+        "en": "*Το παιδί* is neuter, since it ends in -ι."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "σε ve από: nerede, nereden",
+    "en": "σε and από: where, from where"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**σε** \"-de / -e\" (*Atina'da, Atina'ya*), **από** \"-den\" demektir. Bu iki kelimeden sonra isim **αιτιατική** (belirtme hâli) denen biçimini alır. Bunu en çok artikelden görürsün:",
+     "en": "**σε** means \"in, at, to\" and **από** means \"from\". After these two words the noun takes its **accusative** form (*αιτιατική*). You see it mostly in the article:"
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Yalın biçim → σε ve από'dan sonra",
+      "en": "Basic form → after σε and από"
+     },
+     "head": [
+      "Ονομαστική",
+      "σε …",
+      "από …"
+     ],
+     "rows": [
+      [
+       "ο Πειραιάς",
+       "στον Πειραιά",
+       "από τον Πειραιά"
+      ],
+      [
+       "ο Βόλος",
+       "στον Βόλο",
+       "από τον Βόλο"
+      ],
+      [
+       "η Αθήνα",
+       "στην Αθήνα",
+       "από την Αθήνα"
+      ],
+      [
+       "η Καλλιθέα",
+       "στην Καλλιθέα",
+       "από την Καλλιθέα"
+      ],
+      [
+       "η Σμύρνη",
+       "στη Σμύρνη",
+       "από τη Σμύρνη"
+      ],
+      [
+       "το Μαρούσι",
+       "στο Μαρούσι",
+       "από το Μαρούσι"
+      ]
+     ],
+     "note": {
+      "tr": "Eril isimde sondaki -ς düşer: -ος → -ο (*Βόλος → Βόλο*), -ας → -α (*Πειραιάς → Πειραιά*), -ης → -η. Dişil ve nötr isimler aynı kalır; yalnızca artikel değişir (*η → την / τη*).",
+      "en": "A masculine noun loses its final -ς: -ος → -ο (*Βόλος → Βόλο*), -ας → -α (*Πειραιάς → Πειραιά*), -ης → -η. Feminine and neuter nouns stay the same; only the article changes (*η → την / τη*)."
+     }
+    },
+    {
+     "type": "prose",
+     "tr": "**1. σε artikelle birleşir:** *σε + τον* → **στον**, *σε + την* → **στην / στη**, *σε + το* → **στο**. **από** birleşmez: *από τον, από την, από το*.\n\n**2. Sondaki -ν.** Eril **τον / στον**: -ν her zaman yazılır: *στον Πειραιά, στον Βόλο*. Dişil **την / στην**: -ν yalnızca sonraki kelime bir **ünlüyle** ya da **κ, π, τ, ξ, ψ, μπ, ντ, γκ, τσ, τζ** ile başlıyorsa yazılır: *στην Αθήνα, στην Καλλιθέα, στην Πάτρα, από την Τουρκία*. Öteki ünsüzlerden önce düşer: *στη Σμύρνη, από τη Θεσσαλονίκη*.",
+     "en": "**1. σε melts into the article:** *σε + τον* → **στον**, *σε + την* → **στην / στη**, *σε + το* → **στο**. **από** does not merge: *από τον, από την, από το*.\n\n**2. The final -ν.** Masculine **τον / στον** always keeps it: *στον Πειραιά, στον Βόλο*. Feminine **την / στην** keeps it only before a **vowel** or **κ, π, τ, ξ, ψ, μπ, ντ, γκ, τσ, τζ**: *στην Αθήνα, στην Καλλιθέα, στην Πάτρα, από την Τουρκία*. Before any other consonant it drops: *στη Σμύρνη, από τη Θεσσαλονίκη*."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Μένω στην Αθήνα.",
+       "tr": "Atina'da oturuyorum.",
+       "en": "I live in Athens."
+      },
+      {
+       "el": "Δουλεύω στον Πειραιά.",
+       "tr": "Pire'de çalışıyorum.",
+       "en": "I work in Piraeus."
+      },
+      {
+       "el": "Είμαι από τη Σμύρνη.",
+       "tr": "İzmirliyim.",
+       "en": "I am from Izmir."
+      },
+      {
+       "el": "Η Ελένη μένει στην Πάτρα.",
+       "tr": "Eleni Patra'da oturuyor.",
+       "en": "Eleni lives in Patras.",
+       "note": {
+        "tr": "π listede, bu yüzden -ν kalır.",
+        "en": "π is on the list, so the -ν stays."
+       }
+      },
+      {
+       "el": "Ο κύριος Παππάς είναι από τη Θεσσαλονίκη.",
+       "tr": "Bay Pappas Selanikli.",
+       "en": "Mr Pappas is from Thessaloniki.",
+       "note": {
+        "tr": "θ listede yok, bu yüzden -ν düşer.",
+        "en": "θ is not on the list, so the -ν drops."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Hangi gün?",
+    "en": "Which day?"
+   },
+   "blocks": [
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Haftanın günleri",
+      "en": "The days of the week"
+     },
+     "head": [
+      "Ημέρα",
+      {
+       "tr": "Türkçe",
+       "en": "English"
+      }
+     ],
+     "rows": [
+      [
+       "η Δευτέρα",
+       {
+        "tr": "Pazartesi",
+        "en": "Monday"
+       }
+      ],
+      [
+       "η Τρίτη",
+       {
+        "tr": "Salı",
+        "en": "Tuesday"
+       }
+      ],
+      [
+       "η Τετάρτη",
+       {
+        "tr": "Çarşamba",
+        "en": "Wednesday"
+       }
+      ],
+      [
+       "η Πέμπτη",
+       {
+        "tr": "Perşembe",
+        "en": "Thursday"
+       }
+      ],
+      [
+       "η Παρασκευή",
+       {
+        "tr": "Cuma",
+        "en": "Friday"
+       }
+      ],
+      [
+       "το Σάββατο",
+       {
+        "tr": "Cumartesi",
+        "en": "Saturday"
+       }
+      ],
+      [
+       "η Κυριακή",
+       {
+        "tr": "Pazar",
+        "en": "Sunday"
+       }
+      ]
+     ],
+     "note": {
+      "tr": "*Σάββατο* nötrdür (*το*), diğer altısı dişildir (*η*). *Δευτέρα, Τρίτη, Τετάρτη, Πέμπτη* aslında \"ikinci, üçüncü, dördüncü, beşinci\" gün demek: Yunan takviminde hafta pazar günü başlar.",
+      "en": "*Σάββατο* is neuter (*το*); the other six are feminine (*η*). *Δευτέρα, Τρίτη, Τετάρτη, Πέμπτη* mean \"second, third, fourth, fifth\" day: the Greek calendar starts the week on Sunday."
+     }
+    },
+    {
+     "type": "prose",
+     "tr": "**\"Pazartesi günü\"** demek için günü αιτιατική artikeliyle söylersin: **τη Δευτέρα, την Τρίτη, την Τετάρτη, την Πέμπτη, την Παρασκευή, το Σάββατο, την Κυριακή**. -ν kuralı burada da geçerli: *τη Δευτέρα* (δ listede yok), ama *την Τρίτη* (τ listede).\n\nBir liste ya da program verirken artikel çoğu zaman düşer: *Δουλεύω Δευτέρα, Τρίτη και Πέμπτη.*",
+     "en": "To say **\"on Monday\"**, give the day with its accusative article: **τη Δευτέρα, την Τρίτη, την Τετάρτη, την Πέμπτη, την Παρασκευή, το Σάββατο, την Κυριακή**. The -ν rule works here too: *τη Δευτέρα* (δ is not on the list), but *την Τρίτη* (τ is).\n\nIn a list or a timetable the article is often left out: *Δουλεύω Δευτέρα, Τρίτη και Πέμπτη.*"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Τη Δευτέρα δουλεύω στον Πειραιά.",
+       "tr": "Pazartesi Pire'de çalışıyorum.",
+       "en": "On Monday I work in Piraeus."
+      },
+      {
+       "el": "Την Παρασκευή διαβάζω.",
+       "tr": "Cuma günü ders çalışıyorum.",
+       "en": "On Friday I study."
+      },
+      {
+       "el": "Το Σάββατο μένω στο σπίτι.",
+       "tr": "Cumartesi evde kalıyorum.",
+       "en": "On Saturday I stay at home."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Ne sıklıkla?",
+    "en": "How often?"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**Ne sıklıkla**, çoktan aza: **πάντα** (her zaman) · **συνήθως** (genellikle) · **συχνά** (sık sık) · **μερικές φορές** (bazen) · **ποτέ** (hiçbir zaman). Fiilden önce ya da sonra gelebilirler.\n\n**ποτέ** ile fiilin önüne **δεν** de gelir: *Δεν πίνω ποτέ καφέ* (hiç kahve içmem).",
+     "en": "**How often**, from most to least: **πάντα** (always) · **συνήθως** (usually) · **συχνά** (often) · **μερικές φορές** (sometimes) · **ποτέ** (never). They can stand before or after the verb.\n\nWith **ποτέ** the verb also takes **δεν**: *Δεν πίνω ποτέ καφέ* (I never drink coffee)."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Πάντα πίνω καφέ.",
+       "tr": "Her zaman kahve içerim.",
+       "en": "I always drink coffee."
+      },
+      {
+       "el": "Την Κυριακή συνήθως μένω στο σπίτι.",
+       "tr": "Pazar günü genellikle evde kalırım.",
+       "en": "On Sunday I usually stay at home."
+      },
+      {
+       "el": "Ο Νίκος συχνά διαβάζει στο πάρκο.",
+       "tr": "Nikos sık sık parkta okur.",
+       "en": "Nikos often reads in the park."
+      },
+      {
+       "el": "Μερικές φορές δουλεύω το Σάββατο.",
+       "tr": "Bazen cumartesi çalışırım.",
+       "en": "Sometimes I work on Saturday."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "11'den 199'a",
+    "en": "From 11 to 199"
+   },
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "11–19",
+      "20–100"
+     ],
+     "rows": [
+      [
+       "11 έντεκα",
+       "20 είκοσι"
+      ],
+      [
+       "12 δώδεκα",
+       "30 τριάντα"
+      ],
+      [
+       "13 δεκατρία",
+       "40 σαράντα"
+      ],
+      [
+       "14 δεκατέσσερα",
+       "50 πενήντα"
+      ],
+      [
+       "15 δεκαπέντε",
+       "60 εξήντα"
+      ],
+      [
+       "16 δεκαέξι",
+       "70 εβδομήντα"
+      ],
+      [
+       "17 δεκαεφτά",
+       "80 ογδόντα"
+      ],
+      [
+       "18 δεκαοχτώ",
+       "90 ενενήντα"
+      ],
+      [
+       "19 δεκαεννιά",
+       "100 εκατό"
+      ]
+     ],
+     "note": {
+      "tr": "13–19: *δέκα* + birler, tek kelime. Yazıda 17, 18, 19 için *δεκαεπτά, δεκαοκτώ, δεκαεννέα* da görürsün.",
+      "en": "13–19: *δέκα* + the unit, one word. In writing you also see *δεκαεπτά, δεκαοκτώ, δεκαεννέα*."
+     }
+    },
+    {
+     "type": "prose",
+     "tr": "**21–99:** onlar + birler, iki ayrı kelime olarak: *είκοσι ένα* (21), *τριάντα πέντε* (35), *εξήντα εννιά* (69), *ενενήντα εννιά* (99).\n\n**101–199:** **εκατόν** + sayı. 100 tek başına *εκατό*dur, ama arkasına sayı gelince *εκατόν* olur: *εκατόν ένα* (101), *εκατόν είκοσι* (120), *εκατόν πενήντα τρία* (153).",
+     "en": "**21–99:** tens + units, as two separate words: *είκοσι ένα* (21), *τριάντα πέντε* (35), *εξήντα εννιά* (69), *ενενήντα εννιά* (99).\n\n**101–199:** **εκατόν** + the number. 100 alone is *εκατό*, but with a number after it, it becomes *εκατόν*: *εκατόν ένα* (101), *εκατόν είκοσι* (120), *εκατόν πενήντα τρία* (153)."
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu dersin kelimeleri. Bölümü bitirince oturumlarına gelecekler.",
+     "en": "The words of this lesson. They come into your sessions once you finish the chapter."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/v-meno-verb",
+      "oknos-book/v-pino-verb",
+      "oknos-book/ch03-douleyo",
+      "oknos-book/v-grafo-verb",
+      "oknos-book/v-diavazo-verb",
+      "oknos-book/ch03-athina",
+      "oknos-book/v-deytera",
+      "oknos-book/v-triti",
+      "oknos-book/v-tetarti",
+      "oknos-book/v-pempti",
+      "oknos-book/v-paraskeyi",
+      "oknos-book/v-savvato",
+      "oknos-book/v-kyriaki",
+      "oknos-book/ch03-panta",
+      "oknos-book/v-synithos-adv",
+      "oknos-book/v-sychna-adv",
+      "oknos-book/ch03-merikes-fores",
+      "oknos-book/ch03-pote",
+      "oknos-book/ch03-num-11",
+      "oknos-book/ch03-num-12",
+      "oknos-book/ch03-num-20",
+      "oknos-book/ch03-num-30",
+      "oknos-book/ch03-num-40",
+      "oknos-book/ch03-num-50",
+      "oknos-book/ch03-num-60",
+      "oknos-book/ch03-num-70",
+      "oknos-book/ch03-num-80",
+      "oknos-book/ch03-num-90",
+      "oknos-book/ch03-num-100"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Artikeli unutma.** *Μένω σε Αθήνα* değil, *Μένω στην Αθήνα*.",
+     "en": "**Do not drop the article.** Not *Μένω σε Αθήνα* but *Μένω στην Αθήνα*."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "exam_task": "a2ltr.speaking.personal",
+     "tr": "Sözlü sınavda *Πού μένετε;* ve *Πού δουλεύετε;* gibi sorular gelir. Hazır cevap: **Μένω στην/στον/στο …**, **Δουλεύω στην/στον/στο …**.",
+     "en": "The speaking exam asks things like *Πού μένετε;* and *Πού δουλεύετε;*. Have your answers ready: **Μένω στην/στον/στο …**, **Δουλεύω στην/στον/στο …**."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene.",
+     "en": "Now you try."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch03-try-meno",
+      "oknos-book/ch03-try-prep",
+      "oknos-book/ch03-try-gender",
+      "oknos-book/ch03-try-never"
+     ]
+    }
+   ]
+  }
+ ]
+}

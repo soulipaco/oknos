@@ -1,0 +1,972 @@
+[
+ {
+  "id": "ch09-ypologistis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο υπολογιστής",
+  "pos": "noun",
+  "en": "computer",
+  "tr": "bilgisayar",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "lemma": "υπολογιστής",
+  "gender": "m",
+  "example": {
+   "el": "Ο αδελφός μου θέλει έναν φτηνό υπολογιστή.",
+   "en": "My brother wants a cheap computer.",
+   "tr": "Kardeşim ucuz bir bilgisayar istiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-egyisi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η εγγύηση",
+  "pos": "noun",
+  "en": "guarantee; warranty",
+  "tr": "garanti",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "lemma": "εγγύηση",
+  "gender": "f",
+  "example": {
+   "el": "Το ψυγείο έχει εγγύηση.",
+   "en": "The fridge has a guarantee.",
+   "tr": "Buzdolabının garantisi var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-prosfora",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η προσφορά",
+  "pos": "noun",
+  "en": "special offer",
+  "tr": "kampanya; indirim",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "lemma": "προσφορά",
+  "gender": "f",
+  "example": {
+   "el": "Αυτό το ψυγείο είναι σε προσφορά.",
+   "en": "This fridge is on offer.",
+   "tr": "Bu buzdolabı indirimde."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-agorazo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "αγοράζω",
+  "pos": "verb",
+  "en": "buy",
+  "tr": "satın almak; almak",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "lemma": "αγοράζω",
+  "example": {
+   "el": "Η Αϊσέ αγοράζει ένα ψυγείο.",
+   "en": "Ayşe is buying a fridge.",
+   "tr": "Ayşe bir buzdolabı alıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-leo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "λέω",
+  "pos": "verb",
+  "en": "say; tell",
+  "tr": "söylemek; demek",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "lemma": "λέω",
+  "example": {
+   "el": "Λέω καλημέρα στον πωλητή.",
+   "en": "I say good morning to the shop assistant.",
+   "tr": "Satıcıya günaydın diyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-klaio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "κλαίω",
+  "pos": "verb",
+  "en": "cry; weep",
+  "tr": "ağlamak",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "lemma": "κλαίω",
+  "example": {
+   "el": "Το παιδί κλαίει.",
+   "en": "The child is crying.",
+   "tr": "Çocuk ağlıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-proi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το πρωί",
+  "pos": "noun",
+  "en": "morning; in the morning",
+  "tr": "sabah; sabahleyin",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "lemma": "πρωί",
+  "gender": "n",
+  "example": {
+   "el": "Το πρωί πίνω έναν ελληνικό καφέ.",
+   "en": "In the morning I drink a Greek coffee.",
+   "tr": "Sabah bir Yunan kahvesi içiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-vradi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το βράδυ",
+  "pos": "noun",
+  "en": "evening; in the evening",
+  "tr": "akşam; akşamleyin",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "lemma": "βράδυ",
+  "gender": "n",
+  "example": {
+   "el": "Το βράδυ βλέπω τηλεόραση.",
+   "en": "In the evening I watch TV.",
+   "tr": "Akşam televizyon izliyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-q-price",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πόσο κάνει το ψυγείο;",
+   "en": "How much is the fridge?",
+   "tr": "Buzdolabı ne kadar?"
+  },
+  "options": [
+   "Διακόσια πενήντα ευρώ.",
+   "Τριακόσια ογδόντα ευρώ.",
+   "Διακόσια ευρώ."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The seller says «Κάνει διακόσια πενήντα ευρώ». The computer has no price in the dialogue.",
+   "tr": "Satıcı «Κάνει διακόσια πενήντα ευρώ» diyor. Bilgisayarın fiyatı diyalogda yok."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-q-email",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Αϊσέ ακούει συχνά ραδιόφωνο.",
+    "en": "Ayşe often listens to the radio.",
+    "tr": "Ayşe sık sık radyo dinliyor.",
+    "answer": true
+   },
+   {
+    "el": "Η Αϊσέ τρώει το πρωί.",
+    "en": "Ayşe eats in the morning.",
+    "tr": "Ayşe sabahları yemek yiyor.",
+    "answer": false
+   },
+   {
+    "el": "Ο Νίκος πίνει καφέ το πρωί.",
+    "en": "Nikos drinks coffee in the morning.",
+    "tr": "Nikos sabahları kahve içiyor.",
+    "answer": false
+   }
+  ],
+  "explain": {
+   "en": "Ayşe: «Το βράδυ συχνά ακούω ραδιόφωνο» and «το πρωί δεν τρώω ποτέ». Nikos: «δεν πίνω ποτέ καφέ το πρωί»; he drinks tea.",
+   "tr": "Ayşe: «Το βράδυ συχνά ακούω ραδιόφωνο» ve «το πρωί δεν τρώω ποτέ». Nikos: «δεν πίνω ποτέ καφέ το πρωί»; o çay içiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-try-noun",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Ο Νίκος περιμένει {1} πωλητή.",
+  "answer": {
+   "1": [
+    "τον"
+   ]
+  },
+  "options": {
+   "1": [
+    "ο",
+    "τον",
+    "την"
+   ]
+  },
+  "translation": {
+   "en": "Nikos is waiting for the shop assistant.",
+   "tr": "Nikos satıcıyı bekliyor."
+  },
+  "explain": {
+   "en": "The shop assistant is the object, and πωλητής is masculine: ο → τον, πωλητής → πωλητή. Την is the feminine article.",
+   "tr": "Satıcı nesne ve πωλητής eril: ο → τον, πωλητής → πωλητή. Την dişil artikel."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-try-adj",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Θα ήθελα έναν {1} υπολογιστή.",
+  "answer": {
+   "1": [
+    "καινούργιο"
+   ]
+  },
+  "options": {
+   "1": [
+    "καινούργιο",
+    "καινούργιος",
+    "καινούργια"
+   ]
+  },
+  "translation": {
+   "en": "I'd like a new computer.",
+   "tr": "Yeni bir bilgisayar istiyorum."
+  },
+  "explain": {
+   "en": "The computer is a masculine object, so the adjective follows: καινούργιος → καινούργιο.",
+   "tr": "Bilgisayar eril bir nesne, sıfat da onu izler: καινούργιος → καινούργιο."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-try-poios",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "{1} περιμένεις; — Τον Νίκο.",
+  "bank": [
+   "Ποιος",
+   "Ποιον",
+   "Ποια"
+  ],
+  "answer": {
+   "1": "Ποιον"
+  },
+  "translation": {
+   "en": "Who are you waiting for? — Nikos.",
+   "tr": "Kimi bekliyorsun? — Nikos'u."
+  },
+  "explain": {
+   "en": "The person waited for is a masculine object (τον Νίκο), so ποιος → ποιον. Ποια would be feminine.",
+   "tr": "Beklenen kişi eril bir nesne (τον Νίκο), yani ποιος → ποιον. Ποια dişil olurdu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-try-ab",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Εσύ τι {1} το μεσημέρι;",
+  "answer": {
+   "1": [
+    "τρως"
+   ]
+  },
+  "options": {
+   "1": [
+    "τρως",
+    "τρώω",
+    "τρώει"
+   ]
+  },
+  "translation": {
+   "en": "What do you eat at midday?",
+   "tr": "Sen öğlen ne yersin?"
+  },
+  "explain": {
+   "en": "The subject is εσύ: τρως. Τρώω is «I», τρώει is «he/she».",
+   "tr": "Özne εσύ: τρως. Τρώω «ben», τρώει «o»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-try-efaga",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Χθες {1} στο εστιατόριο, αλλά αύριο {2} στο σπίτι.",
+  "answer": {
+   "1": [
+    "έφαγα"
+   ],
+   "2": [
+    "θα φάω"
+   ]
+  },
+  "options": {
+   "1": [
+    "έφαγα",
+    "θα φάω",
+    "τρώω"
+   ],
+   "2": [
+    "θα φάω",
+    "έφαγα",
+    "έφαγες"
+   ]
+  },
+  "translation": {
+   "en": "Yesterday I ate at the restaurant, but tomorrow I'll eat at home.",
+   "tr": "Dün lokantada yedim ama yarın evde yiyeceğim."
+  },
+  "explain": {
+   "en": "Χθες is the past: έφαγα. Αύριο is the future: θα φάω. Έφαγες is the past too, and means «you ate».",
+   "tr": "Χθες geçmiş: έφαγα. Αύριο gelecek: θα φάω. Έφαγες de geçmiş ve «sen yedin» demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-p-match-acc",
+  "type": "match",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω την ονομαστική με την αιτιατική.",
+   "en": "Match each nominative with its object form.",
+   "tr": "Yalın halli sözcüğü nesne biçimiyle eşleştir."
+  },
+  "left": [
+   "ο χυμός",
+   "ο πωλητής",
+   "ο Νίκος",
+   "ο καφές"
+  ],
+  "right": [
+   "τον χυμό",
+   "τον πωλητή",
+   "τον Νίκο",
+   "τον καφέ"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "A masculine noun drops its final -ς and ο becomes τον, also with a name: ο Νίκος → τον Νίκο.",
+   "tr": "Eril isim sondaki -ς'yi atar ve ο, τον olur; ad da öyle: ο Νίκος → τον Νίκο."
+  }
+ },
+ {
+  "id": "ch09-p-categorise",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Ποιο άρθρο παίρνει κάθε λέξη ως αντικείμενο;",
+   "en": "Which article does each word take as an object? «τον» or «την / το».",
+   "tr": "Her sözcük nesne olunca hangi artikeli alır? «τον» mu, «την / το» mu?"
+  },
+  "categories": [
+   "τον",
+   "την / το"
+  ],
+  "items": [
+   "ο χυμός",
+   "η κουζίνα",
+   "το ψυγείο",
+   "ο υπολογιστής",
+   "η τηλεόραση",
+   "ο πωλητής"
+  ],
+  "answer": [
+   0,
+   1,
+   1,
+   0,
+   1,
+   0
+  ],
+  "explain": {
+   "en": "Only masculine nouns take τον. Feminine nouns take την (η → την), neuter nouns keep το.",
+   "tr": "Yalnızca eril isimler τον alır. Dişil isimler την alır (η → την), nötr isimler το olarak kalır."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-p-adj-form",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Η Αϊσέ θέλει έναν {1} υπολογιστή και μια {2} τηλεόραση.",
+  "answer": {
+   "1": [
+    "φτηνό"
+   ],
+   "2": [
+    "μεγάλη"
+   ]
+  },
+  "options": {
+   "1": [
+    "φτηνό",
+    "φτηνός",
+    "φτηνή"
+   ],
+   "2": [
+    "μεγάλη",
+    "μεγάλο",
+    "μεγάλος"
+   ]
+  },
+  "translation": {
+   "en": "Ayşe wants a cheap computer and a big television.",
+   "tr": "Ayşe ucuz bir bilgisayar ve büyük bir televizyon istiyor."
+  },
+  "explain": {
+   "en": "Υπολογιστής is a masculine object: φτηνός → φτηνό. Η τηλεόραση is feminine: μεγάλη.",
+   "tr": "Υπολογιστής eril bir nesne: φτηνός → φτηνό. Η τηλεόραση dişil: μεγάλη."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-p-adj-stress",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Η Ελένη αγοράζει τον {1} υπολογιστή.",
+  "answer": {
+   "1": [
+    "ακριβό"
+   ]
+  },
+  "options": {
+   "1": [
+    "ακριβό",
+    "ακριβός",
+    "ακριβή"
+   ]
+  },
+  "translation": {
+   "en": "Eleni is buying the expensive computer.",
+   "tr": "Eleni pahalı bilgisayarı alıyor."
+  },
+  "explain": {
+   "en": "After τον the adjective is masculine and an object: ακριβός → ακριβό, still stressed on the last syllable. Ακριβή is feminine.",
+   "tr": "τον artikelinden sonra sıfat eril ve nesne: ακριβός → ακριβό, vurgu yine son hecede. Ακριβή dişil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-p-poios",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Με {1} πας στο σινεμά; — Με τη Μαρία.",
+  "answer": {
+   "1": [
+    "ποια"
+   ]
+  },
+  "options": {
+   "1": [
+    "ποια",
+    "ποιον",
+    "ποιος"
+   ]
+  },
+  "translation": {
+   "en": "Who are you going to the cinema with? — With Maria.",
+   "tr": "Sinemaya kiminle gidiyorsun? — Maria'yla."
+  },
+  "explain": {
+   "en": "Maria is feminine, so after με you use ποια. Ποιον would be masculine, ποιος is the subject form.",
+   "tr": "Maria dişil, bu yüzden με'den sonra ποια gelir. Ποιον eril olurdu, ποιος özne biçimi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-p-trome",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Εμείς {1} στο εστιατόριο το μεσημέρι.",
+  "answer": {
+   "1": [
+    "τρώμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "τρώμε",
+    "τρώτε",
+    "τρώνε"
+   ]
+  },
+  "translation": {
+   "en": "We eat at the restaurant at midday.",
+   "tr": "Biz öğleyin lokantada yemek yeriz."
+  },
+  "explain": {
+   "en": "Εμείς takes the ending -με: τρώμε. Τρώτε is «you» (plural) and τρώνε is «they».",
+   "tr": "Εμείς -με ekini alır: τρώμε. Τρώτε «siz», τρώνε «onlar»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-p-match-person",
+  "type": "match",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω το πρόσωπο με τον τύπο του «λέω».",
+   "en": "Match each person with the form of «λέω».",
+   "tr": "Kişiyi «λέω» fiilinin biçimiyle eşleştir."
+  },
+  "left": [
+   "εσύ",
+   "αυτός",
+   "εμείς",
+   "αυτοί"
+  ],
+  "right": [
+   "λες",
+   "λέει",
+   "λέμε",
+   "λένε"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "λέω: λες, λέει, λέμε, λέτε, λένε. Λες has one syllable, so it takes no accent mark.",
+   "tr": "λέω: λες, λέει, λέμε, λέτε, λένε. Λες tek heceli, bu yüzden vurgu işareti almaz."
+  }
+ },
+ {
+  "id": "ch09-p-pote",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the correct sentence.",
+   "tr": "Doğru cümleyi seç."
+  },
+  "prompt": {
+   "el": "Ποτέ…",
+   "en": "Never…",
+   "tr": "Asla…"
+  },
+  "options": [
+   "Ποτέ δεν πίνω καφέ το βράδυ.",
+   "Ποτέ πίνω καφέ το βράδυ.",
+   "Δεν ποτέ πίνω καφέ το βράδυ."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "With ποτέ the verb needs δεν: «Ποτέ δεν πίνω…» (or «Δεν πίνω ποτέ…»).",
+   "tr": "ποτέ ile fiil δεν alır: «Ποτέ δεν πίνω…» (ya da «Δεν πίνω ποτέ…»)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  },
+  "ask": {
+   "en": "Say «I never drink coffee in the evening.» Which sentence is correct?",
+   "tr": "«Akşam asla kahve içmem.» demek istiyorsun. Hangi cümle doğru?"
+  }
+ },
+ {
+  "id": "ch09-p-match-time",
+  "ask": {
+   "en": "Match the time and the person with the form of «τρώω».",
+   "tr": "Zamanı ve kişiyi «τρώω» fiilinin biçimiyle eşleştir."
+  },
+  "type": "match",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the time and the person with the form of «τρώω».",
+   "tr": "Zamanı ve kişiyi «τρώω» fiilinin biçimiyle eşleştir."
+  },
+  "left": [
+   "εγώ, χθες",
+   "εσύ, χθες",
+   "εγώ, αύριο",
+   "εσύ, αύριο"
+  ],
+  "right": [
+   "έφαγα",
+   "έφαγες",
+   "θα φάω",
+   "θα φας"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "Χθες takes the past (έφαγα, έφαγες), αύριο the future with θα (θα φάω, θα φας). The ending shows the person: -α/-ω for εγώ, -ες/-ς for εσύ.",
+   "tr": "Χθες geçmişi ister (έφαγα, έφαγες), αύριο θα ile geleceği (θα φάω, θα φας). Ek kişiyi gösterir: εγώ için -α/-ω, εσύ için -ες/-ς."
+  }
+ },
+ {
+  "id": "ch09-p-lenoun",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "— Πώς τον λένε; — Τον λένε {1}.",
+  "answer": {
+   "1": [
+    "Νίκο"
+   ]
+  },
+  "options": {
+   "1": [
+    "Νίκο",
+    "Νίκος",
+    "Ελένη"
+   ]
+  },
+  "translation": {
+   "en": "— What's his name? — His name is Nikos.",
+   "tr": "— Adı ne? — Adı Nikos."
+  },
+  "explain": {
+   "en": "After τον λένε the name takes the object form: Νίκος → Νίκο. Ελένη is a woman's name.",
+   "tr": "τον λένε'den sonra ad nesne biçimini alır: Νίκος → Νίκο. Ελένη bir kadın adı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch09-p-ti-lene",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "— Πώς {1} λένε; — Τη λένε Σοφία.",
+  "answer": {
+   "1": [
+    "τη"
+   ]
+  },
+  "options": {
+   "1": [
+    "τη",
+    "την",
+    "τον"
+   ]
+  },
+  "translation": {
+   "en": "— What's her name? — Her name is Sofia.",
+   "tr": "— Onun adı ne? — Adı Sofia."
+  },
+  "explain": {
+   "en": "Sofia is a woman, so the feminine form: την. Before λ the -ν drops: τη λένε. Τον would be for a man.",
+   "tr": "Sofia bir kadın, yani dişil biçim: την. λ'dan önce -ν düşer: τη λένε. Τον bir erkek için olurdu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "opus-review"
+  }
+ },
+ {
+  "id": "ch09-p-agorazo",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-09"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Ο Νίκος αγοράζει {1} υπολογιστή.",
+  "bank": [
+   "έναν",
+   "ένας",
+   "ένα"
+  ],
+  "answer": {
+   "1": "έναν"
+  },
+  "translation": {
+   "en": "Nikos is buying a computer.",
+   "tr": "Nikos bir bilgisayar alıyor."
+  },
+  "explain": {
+   "en": "The computer is a masculine object: ένας → έναν.",
+   "tr": "Bilgisayar eril bir nesne: ένας → έναν."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-09",
+   "by": "sonnet-draft"
+  }
+ }
+]

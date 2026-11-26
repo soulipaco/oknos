@@ -1,0 +1,801 @@
+[
+ {
+  "id": "ch01-geia-sou",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "γεια σου",
+  "pos": "phrase",
+  "en": "hi; bye (informal)",
+  "tr": "merhaba; hoşça kal (samimi)",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Γεια σου, Μαρία!",
+   "en": "Hi, Maria!",
+   "tr": "Merhaba Maria!"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-geia-sas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "γεια σας",
+  "pos": "phrase",
+  "en": "hello; goodbye (formal, or to several people)",
+  "tr": "merhaba; hoşça kalın (resmî ya da birden çok kişiye)",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Ευχαριστώ. Γεια σας!",
+   "en": "Thank you. Goodbye!",
+   "tr": "Teşekkürler. Hoşça kalın!"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-kalimera",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "καλημέρα",
+  "pos": "phrase",
+  "en": "good morning",
+  "tr": "günaydın",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Καλημέρα σας. Πώς σας λένε;",
+   "en": "Good morning. What is your name?",
+   "tr": "Günaydın. Adınız ne?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-kalispera",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "καλησπέρα",
+  "pos": "phrase",
+  "en": "good evening",
+  "tr": "iyi akşamlar",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Καλησπέρα σας!",
+   "en": "Good evening!",
+   "tr": "İyi akşamlar!"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-chairete",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "χαίρετε",
+  "pos": "phrase",
+  "en": "hello (formal)",
+  "tr": "merhaba (resmî)",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-me-lene",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "με λένε …",
+  "pos": "phrase",
+  "en": "my name is …",
+  "tr": "benim adım …",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Γεια σου! Με λένε Ελένη.",
+   "en": "Hi! My name is Eleni.",
+   "tr": "Merhaba! Benim adım Eleni."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-pos-se-lene",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πώς σε λένε;",
+  "pos": "phrase",
+  "en": "what is your name? (informal)",
+  "tr": "adın ne? (samimi)",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Γεια σου! Πώς σε λένε;",
+   "en": "Hi! What's your name?",
+   "tr": "Merhaba! Adın ne?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-pos-sas-lene",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πώς σας λένε;",
+  "pos": "phrase",
+  "en": "what is your name? (formal)",
+  "tr": "adınız ne? (resmî)",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-chairo-poly",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "χαίρω πολύ",
+  "pos": "phrase",
+  "en": "nice to meet you",
+  "tr": "memnun oldum",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Χαίρω πολύ, κυρία Γιλμάζ.",
+   "en": "Nice to meet you, Mrs Yılmaz.",
+   "tr": "Memnun oldum Yılmaz Hanım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-apo-pou-eisai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "από πού είσαι;",
+  "pos": "phrase",
+  "en": "where are you from? (informal)",
+  "tr": "nerelisin? (samimi)",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Χαίρω πολύ. Από πού είσαι;",
+   "en": "Nice to meet you. Where are you from?",
+   "tr": "Memnun oldum. Nerelisin?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-apo-pou-eiste",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "από πού είστε;",
+  "pos": "phrase",
+  "en": "where are you from? (formal)",
+  "tr": "nerelisiniz? (resmî)",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-eimai-apo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "είμαι από …",
+  "pos": "phrase",
+  "en": "I am from …",
+  "tr": "…'liyim; …'denim",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Είμαι από την Τουρκία.",
+   "en": "I am from Turkey.",
+   "tr": "Türkiye'denim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-esy",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εσύ;",
+  "pos": "phrase",
+  "en": "and you? (informal; 'you' as the subject: Εσύ;)",
+  "tr": "ya sen? (samimi; özne olarak 'sen')",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Είμαι από την Τουρκία. Εσύ;",
+   "en": "I'm from Turkey. And you?",
+   "tr": "Türkiye'denim. Ya sen?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-eseis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εσείς;",
+  "pos": "phrase",
+  "en": "and you? (formal; 'you' as the subject)",
+  "tr": "ya siz? (resmî; özne olarak 'siz')",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-esena",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εσένα;",
+  "pos": "phrase",
+  "en": "and you? (informal; after με λένε …)",
+  "tr": "ya seninki? (samimi; με λένε … cümlesinden sonra)",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Με λένε Ελένη. Εσένα;",
+   "en": "My name is Eleni. And yours?",
+   "tr": "Benim adım Eleni. Seninki?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-esas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εσάς;",
+  "pos": "phrase",
+  "en": "and you? (formal; after με λένε …)",
+  "tr": "ya sizinki? (resmî; με λένε … cümlesinden sonra)",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-kyria",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η κυρία",
+  "lemma": "κυρία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "Mrs; madam; lady",
+  "tr": "hanım; hanımefendi; bayan",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Από πού είστε, κυρία Γιλμάζ;",
+   "en": "Where are you from, Mrs Yılmaz?",
+   "tr": "Nerelisiniz Yılmaz Hanım?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-efcharisto",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ευχαριστώ",
+  "pos": "phrase",
+  "en": "thank you",
+  "tr": "teşekkür ederim",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Ευχαριστώ, κυρία Γιλμάζ.",
+   "en": "Thank you, Mrs Yılmaz.",
+   "tr": "Teşekkür ederim Yılmaz Hanım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-ellada",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η Ελλάδα",
+  "lemma": "Ελλάδα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "Greece",
+  "tr": "Yunanistan",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Είμαι από την Ελλάδα.",
+   "en": "I am from Greece.",
+   "tr": "Yunanistan'danım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-tourkia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η Τουρκία",
+  "lemma": "Τουρκία",
+  "pos": "noun",
+  "gender": "f",
+  "en": "Turkey",
+  "tr": "Türkiye",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "example": {
+   "el": "Είμαι από την Τουρκία.",
+   "en": "I am from Turkey.",
+   "tr": "Türkiye'denim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-q-mehmet-from",
+  "ask": {
+   "en": "Dialogue 1: where is Mehmet from?",
+   "tr": "Diyalog 1: Mehmet nereli?"
+  },
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Μεχμέτ: «Είμαι από …»",
+   "en": "Dialogue 1: where is Mehmet from?",
+   "tr": "Diyalog 1: Mehmet nereli?"
+  },
+  "options": [
+   "την Τουρκία.",
+   "την Ελλάδα.",
+   "τη Σμύρνη."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Mehmet says «Είμαι από την Τουρκία». Ayşe is the one from Izmir (Σμύρνη).",
+   "tr": "Mehmet «Είμαι από την Τουρκία» diyor. İzmirli (Σμύρνη) olan Ayşe."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-q-clerk-asks",
+  "ask": {
+   "en": "Dialogue 2: what does the clerk ask Ayşe?",
+   "tr": "Diyalog 2: memur Ayşe'ye ne soruyor?"
+  },
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Υπάλληλος: «Καλημέρα σας. …»",
+   "en": "Dialogue 2: what does the clerk ask Ayşe?",
+   "tr": "Diyalog 2: memur Ayşe'ye ne soruyor?"
+  },
+  "options": [
+   "Πώς σας λένε;",
+   "Πώς σε λένε;",
+   "Εσένα;"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The clerk speaks formally to a stranger, so: σας.",
+   "tr": "Memur tanımadığı bir yetişkinle resmî konuşuyor, bu yüzden: σας."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-try-formal-greet",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "grammar": [
+   "formal_informal"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right word.",
+   "tr": "Doğru kelimeyi seç."
+  },
+  "text": "Καλημέρα {1}. Πώς σας λένε;",
+  "answer": {
+   "1": [
+    "σας"
+   ]
+  },
+  "options": {
+   "1": [
+    "σου",
+    "σας"
+   ]
+  },
+  "translation": {
+   "en": "Good morning. What is your name? (formal)",
+   "tr": "Günaydın. Adınız ne? (resmî)"
+  },
+  "explain": {
+   "en": "«Πώς σας λένε;» is formal, so the greeting is formal too: σας.",
+   "tr": "«Πώς σας λένε;» resmî; selam da resmî olmalı: σας."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-try-informal-name",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "grammar": [
+   "formal_informal"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right word.",
+   "tr": "Doğru kelimeyi seç."
+  },
+  "text": "Γεια σου! Πώς {1} λένε;",
+  "answer": {
+   "1": [
+    "σε"
+   ]
+  },
+  "options": {
+   "1": [
+    "σε",
+    "σας"
+   ]
+  },
+  "translation": {
+   "en": "Hi! What's your name? (informal)",
+   "tr": "Merhaba! Adın ne? (samimi)"
+  },
+  "explain": {
+   "en": "«Γεια σου» is informal, so: πώς σε λένε;",
+   "tr": "«Γεια σου» samimi; o halde: πώς σε λένε;"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-try-esy",
+  "ask": {
+   "en": "Eleni says where she is from. How does she ask you back?",
+   "tr": "Eleni nereli olduğunu söyledi. Aynı soruyu sana nasıl sorar?"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Είμαι από την Ελλάδα. …",
+   "en": "Eleni says where she is from. How does she ask you back?",
+   "tr": "Eleni nereli olduğunu söyledi. Aynı soruyu sana nasıl sorar?"
+  },
+  "options": [
+   "Εσύ;",
+   "Εσένα;",
+   "Εσάς;"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "After «είμαι …» the question is «Εσύ;». «Εσένα;» comes after «με λένε …».",
+   "tr": "«είμαι …» cümlesinden sonra «Εσύ;» denir. «Εσένα;» ise «με λένε …» cümlesinden sonra gelir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-try-match",
+  "ask": {
+   "en": "Match each line with its answer.",
+   "tr": "Her cümleyi cevabıyla eşleştir."
+  },
+  "type": "match",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each line with its answer.",
+   "tr": "Her cümleyi cevabıyla eşleştir."
+  },
+  "left": [
+   "Πώς σε λένε;",
+   "Από πού είστε;",
+   "Χαίρω πολύ!"
+  ],
+  "right": [
+   "Με λένε Μαρία.",
+   "Είμαι από την Κύπρο.",
+   "Χαίρω πολύ!"
+  ],
+  "answer": [
+   0,
+   1,
+   2
+  ],
+  "explain": {
+   "en": "«Χαίρω πολύ» is answered with «Χαίρω πολύ», like \"Nice to meet you. — Nice to meet you too.\"",
+   "tr": "«Χαίρω πολύ» diyene sen de «Χαίρω πολύ» dersin; Türkçedeki «Memnun oldum. — Ben de.» gibi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-p-eiste",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "grammar": [
+   "formal_informal"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right word.",
+   "tr": "Doğru kelimeyi seç."
+  },
+  "text": "Καλημέρα σας, κυρία. Από πού {1};",
+  "answer": {
+   "1": [
+    "είστε"
+   ]
+  },
+  "options": {
+   "1": [
+    "είσαι",
+    "είστε"
+   ]
+  },
+  "translation": {
+   "en": "Good morning, madam. Where are you from?",
+   "tr": "Günaydın hanımefendi. Nerelisiniz?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-p-esena",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "grammar": [
+   "formal_informal"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right word.",
+   "tr": "Doğru kelimeyi seç."
+  },
+  "text": "Με λένε Σοφία. {1};",
+  "answer": {
+   "1": [
+    "Εσένα"
+   ]
+  },
+  "options": {
+   "1": [
+    "Εσένα",
+    "Εσύ"
+   ]
+  },
+  "translation": {
+   "en": "My name is Sofia. And yours?",
+   "tr": "Benim adım Sofia. Seninki?"
+  },
+  "explain": {
+   "en": "After «με λένε …»: «Εσένα;».",
+   "tr": "«με λένε …» cümlesinden sonra: «Εσένα;»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch01-p-kalinychta",
+  "ask": {
+   "en": "It is 11 at night and you are leaving a party.",
+   "tr": "Saat gece 11, bir partiden ayrılıyorsun."
+  },
+  "type": "mcq",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-01"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right greeting.",
+   "tr": "Doğru selamı seç."
+  },
+  "prompt": {
+   "el": "23:00 — «…!»",
+   "en": "It is 11 at night and you are leaving a party.",
+   "tr": "Saat gece 11, bir partiden ayrılıyorsun."
+  },
+  "options": [
+   "Καληνύχτα!",
+   "Καλημέρα!",
+   "Χαίρω πολύ!"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Καληνύχτα» is said when leaving late in the evening or going to bed; «καλησπέρα» is said when arriving in the evening.",
+   "tr": "«Καληνύχτα» akşam geç saatte ayrılırken ya da yatarken söylenir; «καλησπέρα» akşam bir yere gelince."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-01",
+   "by": "coach"
+  }
+ }
+]

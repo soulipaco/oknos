@@ -4,6 +4,8 @@ import pytest
 from fastapi.testclient import TestClient
 
 OPEN_BOOK = "open-book"
+# The books whose chapters gate every stage: left out of the default test content.
+BOOKS = {OPEN_BOOK, "oknos-book"}
 
 
 @pytest.fixture(autouse=True)
@@ -26,13 +28,13 @@ def _no_tailscale(monkeypatch):
 
 @pytest.fixture(scope="session")
 def _open_without_book(tmp_path_factory):
-    """The tracked open packs without the open course's book (one read-only copy per test run)."""
+    """The tracked open packs without the two books (one read-only copy per test run)."""
     from oknos import paths
 
     root = tmp_path_factory.mktemp("content") / "open"
     root.mkdir()
     for pack in (paths.CONTENT_DIR / "open").iterdir():
-        if pack.is_dir() and pack.name != OPEN_BOOK:
+        if pack.is_dir() and pack.name not in BOOKS:
             shutil.copytree(pack, root / pack.name)
     return root
 

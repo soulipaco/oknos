@@ -8,6 +8,7 @@ This file is for whoever writes chapters: the maintainer, the coach, or a drafti
 
 | Curriculum | Chapters | Practice items | Visibility |
 |---|---|---|---|
+| The Oknos book (`curricula/oknos-book.json`, the default) | `content/open/oknos-book/lessons/<stage>.json` | `content/open/oknos-book/items/chapter-<stage>.json` | tracked, CC BY-SA 4.0, original |
 | A book's curriculum (`content/private/<pack>/curriculum.json`) | `content/private/<pack>/lessons/<stage>.json` | `content/private/<pack>/items/chapter-<stage>.json` | private, gitignored |
 | The open course (`curricula/open-a1-b1.json`) | `content/open/open-book/lessons/<stage>.json` | `content/open/open-book/items/chapter-<stage>.json` | tracked, CC BY-SA 4.0, original |
 | Coach-written for one learner | `learner/generated/<pack>/lessons/<stage>.json` | the same pack's `items/` | gitignored |
@@ -18,6 +19,7 @@ This file is for whoever writes chapters: the maintainer, the coach, or a drafti
 - `lessons/review/<stage>.md` holds the reviewer's notes.
 
 **Copyright.**
+- The Oknos book was written to follow a commercial textbook's syllabus and was private until 2026-11-26. It was opened after an overlap check against that textbook's OCR and an independent review (`AGENTS.md`, "The Oknos book"). A fix to it must stay original: never bring in a scene, a name sequence or a sentence from any textbook.
 - A chapter for a book's curriculum follows that book's syllabus and may use its OCR pages as reference, so it stays private.
 - Its text is still written new. Never copy a sentence, a dialogue or an exercise from the book.
 - Names, situations and examples are your own.
@@ -30,7 +32,7 @@ The JSON Schema is `schemas/chapter.schema.json` (written by `uv run oknos schem
 ```json
 {
   "id": "<curriculum>.<stage>",
-  "curriculum": "greek-helper-book",
+  "curriculum": "oknos-book",
   "stage": "lesson-01",
   "level": "A1",
   "title": {"tr": "…", "en": "…"},
@@ -154,7 +156,7 @@ Written once per curriculum, before any chapter, and approved by the learner or 
 ```json
 {"stage": "lesson-02", "objectives": ["…"], "grammar": ["the present of είμαι, all persons"],
  "assumes": ["lesson-01: greetings, με λένε, είμαι από as a set phrase"],
- "words": ["greek-helper/…"], "new_words": ["…"], "scenario": {"tr": "…", "en": "…"},
+ "words": ["oknos-book/…"], "new_words": ["…"], "scenario": {"tr": "…", "en": "…"},
  "exam_task": "b1keg.speaking.warmup", "notes": "…"}
 ```
 

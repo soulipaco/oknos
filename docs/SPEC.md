@@ -606,9 +606,9 @@ This is the stable contract between app and agent. The coach writes only files (
 
 **The problem it fixes.** The daily session drew from every pack at once, so the maintainer's first session held B1 passives and a 150-word letter before they could read the alphabet. Items now come in course order, simple before hard.
 
-**A curriculum** is an ordered list of stages: `curricula/open-a1-b1.json` (tracked, for a learner without a book) or a book's own `curriculum.json` in its private pack folder. The maintainer's is `content/private/greek-helper/curriculum.json`, built from the book's `units.json`: an intro (reading) stage, then lessons 1–24, then a B1 stage.
+**A curriculum** is an ordered list of stages: `curricula/oknos-book.json` (tracked, the Oknos book: an intro (reading) stage, then lessons 1–24, then a B1 stage; the default), `curricula/open-a1-b1.json` (tracked, the shorter open course), or a book's own `curriculum.json` in its private pack folder. Until 2026-11-26 the Oknos book was the maintainer's private book (`content/private/greek-helper/`); `"formerly"` and the pack's `"replaces"` carry a learner's history over when a book moves like that (`src/oknos/moves.py`).
 
-- **Which curriculum:** `profile.curriculum` if set; else a book curriculum whose pack is loaded; else the open one. `"curriculum": "off"` turns it off (an advanced learner); `profile.level` then limits the level.
+- **Which curriculum:** `profile.curriculum` if set (an old id named in another curriculum's `formerly` means that one); else a book curriculum whose pack is loaded (`for_pack`: the Oknos book in every clone); else the open one. `"curriculum": "off"` turns it off (an advanced learner); `profile.level` then limits the level.
 - **Where an item belongs:**
   1. a topic `stage:<id>` (what the coach writes);
   1b. the words and checks of the stage's chapter (§4.8);

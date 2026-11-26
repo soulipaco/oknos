@@ -139,6 +139,10 @@ class Curriculum(Strict):
     # another curriculum's stages -> this one's: where that curriculum's book items go as extras
     # here ({"open-a1-b1": {"shopping": "lesson-11"}}); unmapped ones go to the level pools
     follows: dict[str, dict[str, str]] = {}
+    # earlier ids of this curriculum (the maintainer's private book became the open Oknos book):
+    # a curriculum file with such an id is ignored, and the learner's reads, checks and chapter
+    # flags under it move here (src/oknos/moves.py)
+    formerly: list[str] = []
 
     @model_validator(mode="after")
     def _consistent(self) -> "Curriculum":
@@ -181,7 +185,13 @@ def available(catalog: Catalog) -> dict[str, Curriculum]:
             log.warning("curriculum %s skipped: %s", f, e.__class__.__name__)
             continue
         out[c.id] = c
-    return out
+    gone = {old for c in out.values() for old in c.formerly if old != c.id}
+    return {k: c for k, c in out.items() if k not in gone}
+
+
+def renames(catalog: Catalog) -> dict[str, str]:
+    """old curriculum id -> the curriculum that took it over (`formerly`)."""
+    return {old: c.id for c in available(catalog).values() for old in c.formerly if old != c.id}
 
 
 def _profile() -> dict:
@@ -193,15 +203,21 @@ def _profile() -> dict:
 
 
 def active(catalog: Catalog) -> Curriculum | None:
-    """profile.curriculum if it names one; else a book's curriculum whose pack is loaded; else the open one."""
+    """profile.curriculum if it names one (or names one another took over); else a book's curriculum
+    whose pack is loaded, a learner's own private book first, then the Oknos book; else the open one."""
     found = available(catalog)
     wanted = _profile().get("curriculum")
     if wanted == "off":  # an advanced learner who wants every pack open; the level still limits it
         return None
     if wanted in found:
         return found[wanted]
-    loaded = {p.id for p in catalog.packs}
-    book = [c for c in found.values() if c.for_pack and c.for_pack in loaded]
+    moved = next((c for c in found.values() if wanted in c.formerly), None)
+    if moved is not None:
+        return moved
+    loaded = {p.id: p for p in catalog.packs}
+    # a learner's own (private) book comes before the open Oknos book that every clone has
+    book = sorted((c for c in found.values() if c.for_pack and c.for_pack in loaded),
+                  key=lambda c: loaded[c.for_pack].manifest.visibility == "open")
     if book:
         return book[0]
     open_ = [c for c in found.values() if not c.for_pack]

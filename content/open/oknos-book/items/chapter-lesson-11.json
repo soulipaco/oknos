@@ -1,0 +1,1075 @@
+[
+ {
+  "id": "ch11-laiki",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η λαϊκή",
+  "pos": "noun",
+  "en": "street market (short for η λαϊκή αγορά)",
+  "tr": "semt pazarı (η λαϊκή αγορά)",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "λαϊκή",
+  "gender": "f",
+  "example": {
+   "el": "Το Σάββατο πάω στη λαϊκή.",
+   "en": "On Saturday I go to the street market.",
+   "tr": "Cumartesi semt pazarına gidiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-pagkos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο πάγκος",
+  "pos": "noun",
+  "en": "stall; counter",
+  "tr": "tezgâh",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "πάγκος",
+  "gender": "m",
+  "example": {
+   "el": "Ο πάγκος είναι εκεί, στη λαϊκή.",
+   "en": "The stall is over there, at the street market.",
+   "tr": "Tezgâh orada, pazarda."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-manavis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο μανάβης",
+  "pos": "noun",
+  "en": "greengrocer (plural οι μανάβηδες)",
+  "tr": "manav (çoğulu οι μανάβηδες)",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "μανάβης",
+  "gender": "m",
+  "example": {
+   "el": "Ο μανάβης έχει φράουλες.",
+   "en": "The greengrocer has strawberries.",
+   "tr": "Manavın çileği var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-milo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το μήλο",
+  "pos": "noun",
+  "en": "apple",
+  "tr": "elma",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "μήλο",
+  "gender": "n",
+  "example": {
+   "el": "Θα ήθελα ένα κιλό μήλα.",
+   "en": "I'd like a kilo of apples.",
+   "tr": "Bir kilo elma istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-fraoula",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η φράουλα",
+  "pos": "noun",
+  "en": "strawberry",
+  "tr": "çilek",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "φράουλα",
+  "gender": "f",
+  "example": {
+   "el": "Οι φράουλες κάνουν τέσσερα ευρώ το κιλό.",
+   "en": "The strawberries are four euros a kilo.",
+   "tr": "Çileğin kilosu dört euro."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-aggouri",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το αγγούρι",
+  "pos": "noun",
+  "en": "cucumber",
+  "tr": "salatalık",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "αγγούρι",
+  "gender": "n",
+  "example": {
+   "el": "Θέλω τρία αγγούρια.",
+   "en": "I want three cucumbers.",
+   "tr": "Üç salatalık istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-gala",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το γάλα",
+  "pos": "noun",
+  "en": "milk",
+  "tr": "süt",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "γάλα",
+  "gender": "n",
+  "example": {
+   "el": "Δεν έχω καθόλου γάλα.",
+   "en": "I have no milk at all.",
+   "tr": "Hiç sütüm yok."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-tyri",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το τυρί",
+  "pos": "noun",
+  "en": "cheese",
+  "tr": "peynir",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "τυρί",
+  "gender": "n",
+  "example": {
+   "el": "Θέλω μισό κιλό τυρί.",
+   "en": "I want half a kilo of cheese.",
+   "tr": "Yarım kilo peynir istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-avgo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το αυγό",
+  "pos": "noun",
+  "en": "egg",
+  "tr": "yumurta",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "αυγό",
+  "gender": "n",
+  "example": {
+   "el": "Έξι αυγά, παρακαλώ.",
+   "en": "Six eggs, please.",
+   "tr": "Altı yumurta, lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-dino",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "δίνω",
+  "pos": "verb",
+  "en": "give; pay (an amount) (έδωσα, θα δώσω)",
+  "tr": "vermek; (bir miktar) ödemek (έδωσα, θα δώσω)",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "δίνω",
+  "example": {
+   "el": "Δίνω δέκα ευρώ στον πωλητή.",
+   "en": "I give ten euros to the seller.",
+   "tr": "Satıcıya on euro veriyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-poso",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πόσος / πόση / πόσο",
+  "pos": "pron",
+  "en": "how much; how many (plural πόσοι, πόσες, πόσα)",
+  "tr": "ne kadar; kaç (çoğul πόσοι, πόσες, πόσα)",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "πόσος",
+  "example": {
+   "el": "Πόσα κιλά θέλεις;",
+   "en": "How many kilos do you want?",
+   "tr": "Kaç kilo istiyorsun?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-polys",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πολύς / πολλή / πολύ",
+  "pos": "adj",
+  "en": "much, a lot of; (plural) many",
+  "tr": "çok",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "πολύς",
+  "example": {
+   "el": "Έχω πολλά πράγματα.",
+   "en": "I have a lot of things.",
+   "tr": "Çok şeyim var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-arketos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "αρκετός / αρκετή / αρκετό",
+  "pos": "adj",
+  "en": "enough; quite a lot of",
+  "tr": "yeterli; epey",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "αρκετός",
+  "example": {
+   "el": "Έχω αρκετές ντομάτες.",
+   "en": "I have enough tomatoes.",
+   "tr": "Yeterince domatesim var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-kanenas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "κανένας / καμία / κανένα",
+  "pos": "pron",
+  "en": "no, not any (with δεν); any (in a question)",
+  "tr": "hiçbir (δεν ile); soruda: hiç",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "κανένας",
+  "example": {
+   "el": "Δεν έχω κανένα αυγό.",
+   "en": "I don't have a single egg.",
+   "tr": "Hiç yumurtam yok."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-katholou",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "καθόλου",
+  "pos": "adv",
+  "en": "not at all; none at all (with δεν)",
+  "tr": "hiç; hiç ... yok (δεν ile)",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "example": {
+   "el": "Δεν έχω καθόλου ρύζι.",
+   "en": "I have no rice at all.",
+   "tr": "Hiç pirincim yok."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-misos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "μισός / μισή / μισό",
+  "pos": "adj",
+  "en": "half",
+  "tr": "yarım",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "μισός",
+  "example": {
+   "el": "Θα ήθελα μισό κιλό φράουλες.",
+   "en": "I'd like half a kilo of strawberries.",
+   "tr": "Yarım kilo çilek istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-ekeinos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εκείνος / εκείνη / εκείνο",
+  "pos": "pron",
+  "en": "that; those (further away)",
+  "tr": "şu; o (uzaktaki)",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "lemma": "εκείνος",
+  "example": {
+   "el": "Θέλω εκείνα τα αγγούρια, όχι αυτά.",
+   "en": "I want those cucumbers, not these.",
+   "tr": "Şu salatalıkları istiyorum, bunları değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-q-kilos",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πόσα κιλά ντομάτες θέλει η Αϊσέ;",
+   "en": "How many kilos of tomatoes does Ayşe want?",
+   "tr": "Ayşe kaç kilo domates istiyor?"
+  },
+  "options": [
+   "Ένα κιλό.",
+   "Δύο κιλά.",
+   "Μισό κιλό."
+  ],
+  "answer": 1,
+  "explain": {
+   "en": "«Θα ήθελα δύο κιλά ντομάτες». Half a kilo is for the strawberries, and one kilo for the cucumbers.",
+   "tr": "«Θα ήθελα δύο κιλά ντομάτες». Yarım kilo çilek, bir kilo da salatalık için."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Αϊσέ έχει ρύζι.",
+    "en": "Ayşe has rice.",
+    "tr": "Ayşe'nin pirinci var.",
+    "answer": false
+   },
+   {
+    "el": "Η Ελένη δεν έχει κανένα αυγό.",
+    "en": "Eleni doesn't have a single egg.",
+    "tr": "Eleni'nin hiç yumurtası yok.",
+    "answer": true
+   },
+   {
+    "el": "Η Ελένη πληρώνει σήμερα.",
+    "en": "Eleni pays today.",
+    "tr": "Bugün Eleni ödüyor.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "Ayşe says «δεν έχω καθόλου ρύζι». Eleni says «δεν έχω κανένα αυγό» and «Σήμερα πληρώνω εγώ».",
+   "tr": "Ayşe «δεν έχω καθόλου ρύζι» diyor. Eleni «δεν έχω κανένα αυγό» ve «Σήμερα πληρώνω εγώ» diyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-try-plural",
+  "ask": {
+   "en": "Match each word with its plural.",
+   "tr": "Her kelimeyi çoğuluyla eşleştir."
+  },
+  "type": "match",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each word with its plural.",
+   "tr": "Her kelimeyi çoğuluyla eşleştir."
+  },
+  "left": [
+   "η ντομάτα",
+   "το μήλο",
+   "ο πατέρας",
+   "το κρεμμύδι"
+  ],
+  "right": [
+   "τα μήλα",
+   "οι πατέρες",
+   "τα κρεμμύδια",
+   "οι ντομάτες"
+  ],
+  "answer": [
+   3,
+   0,
+   1,
+   2
+  ],
+  "explain": {
+   "en": "-α → -ες (ντομάτες), -ο → -α (μήλα), -ας → -ες (πατέρες), -ι → -ια (κρεμμύδια).",
+   "tr": "-α → -ες (ντομάτες), -ο → -α (μήλα), -ας → -ες (πατέρες), -ι → -ια (κρεμμύδια)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-try-article",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Βλέπω {1} πελάτες και θέλω {2} ντομάτες.",
+  "answer": {
+   "1": [
+    "τους"
+   ],
+   "2": [
+    "τις"
+   ]
+  },
+  "options": {
+   "1": [
+    "τους",
+    "τις",
+    "οι"
+   ],
+   "2": [
+    "τις",
+    "τους",
+    "οι"
+   ]
+  },
+  "translation": {
+   "en": "I see the customers and I want the tomatoes.",
+   "tr": "Müşterileri görüyorum ve domatesleri istiyorum."
+  },
+  "explain": {
+   "en": "Both are objects, so the accusative plural article: πελάτες is masculine (τους), ντομάτες is feminine (τις). οι is the subject form.",
+   "tr": "İkisi de nesne; bu yüzden nesne çoğul artikeli: πελάτες eril (τους), ντομάτες dişil (τις). οι özne biçimidir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-try-numeral",
+  "ask": {
+   "en": "I'd like three peppers and four cucumbers. Write the numbers in Greek.",
+   "tr": "Üç biber ve dört salatalık istiyorum. Sayıları Yunanca yaz."
+  },
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps with the number in the English sentence.",
+   "tr": "Boşlukları cümledeki sayıyla doldur."
+  },
+  "text": "Θα ήθελα {1} πιπεριές και {2} αγγούρια.",
+  "answer": {
+   "1": [
+    "τρεις"
+   ],
+   "2": [
+    "τέσσερα"
+   ]
+  },
+  "options": {
+   "1": [
+    "τρεις",
+    "τρία",
+    "τέσσερις"
+   ],
+   "2": [
+    "τέσσερα",
+    "τέσσερις",
+    "τρία"
+   ]
+  },
+  "translation": {
+   "en": "I'd like three peppers and four cucumbers.",
+   "tr": "Üç biber ve dört salatalık istiyorum."
+  },
+  "explain": {
+   "en": "πιπεριές is feminine: τρεις. αγγούρια is neuter: τέσσερα. The other options have the wrong gender or the wrong figure.",
+   "tr": "πιπεριές dişil: τρεις. αγγούρια nötr: τέσσερα. Öteki seçeneklerin ya cinsiyeti ya da sayısı yanlış."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-try-poso",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "— {1} κιλά ντομάτες; — Δύο. — Και {2} πιπεριές; — Τέσσερις.",
+  "answer": {
+   "1": [
+    "Πόσα"
+   ],
+   "2": [
+    "Πόσες"
+   ]
+  },
+  "options": {
+   "1": [
+    "Πόσα",
+    "Πόσες",
+    "Πόσο"
+   ],
+   "2": [
+    "Πόσες",
+    "Πόσα",
+    "Πόσους"
+   ]
+  },
+  "translation": {
+   "en": "— How many kilos of tomatoes? — Two. — And how many peppers? — Four.",
+   "tr": "— Kaç kilo domates? — İki. — Peki kaç biber? — Dört."
+  },
+  "explain": {
+   "en": "κιλά is neuter plural: πόσα. πιπεριές is feminine plural: πόσες.",
+   "tr": "κιλά nötr çoğul: πόσα. πιπεριές dişil çoğul: πόσες."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-try-dino",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Χθες {1} είκοσι ευρώ στον πωλητή και αύριο θα {2} δέκα.",
+  "answer": {
+   "1": [
+    "έδωσα"
+   ],
+   "2": [
+    "δώσω"
+   ]
+  },
+  "options": {
+   "1": [
+    "έδωσα",
+    "δίνω",
+    "δώσω"
+   ],
+   "2": [
+    "δώσω",
+    "έδωσα",
+    "έδωσες"
+   ]
+  },
+  "translation": {
+   "en": "Yesterday I gave the seller twenty euros and tomorrow I will give ten.",
+   "tr": "Dün satıcıya yirmi euro verdim ve yarın on euro vereceğim."
+  },
+  "explain": {
+   "en": "«Χθες» = past: έδωσα. The future is θα + δώσω; θα never goes with a past form like έδωσα or έδωσες.",
+   "tr": "«Χθες» = geçmiş: έδωσα. Gelecek θα + δώσω; θα, έδωσα ya da έδωσες gibi geçmiş biçimlerle gelmez."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-p-sort",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε λέξη στη σωστή ομάδα.",
+   "en": "Sort the nouns by their plural article: «οι» or «τα».",
+   "tr": "İsimleri çoğul artikellerine göre ayır: «οι» ya da «τα»."
+  },
+  "categories": [
+   "οι",
+   "τα"
+  ],
+  "items": [
+   "η φράουλα",
+   "το καρότο",
+   "ο πάγκος",
+   "το αγγούρι",
+   "η πιπεριά",
+   "το πακέτο"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "explain": {
+   "en": "Masculine and feminine take οι (οι φράουλες, οι πάγκοι, οι πιπεριές). Neuter takes τα (τα καρότα, τα αγγούρια, τα πακέτα).",
+   "tr": "Eril ve dişil οι alır (οι φράουλες, οι πάγκοι, οι πιπεριές). Nötr τα alır (τα καρότα, τα αγγούρια, τα πακέτα)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-p-gap-bank",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Έχω {1} πράγματα, αλλά δεν έχω {2} αυγό.",
+  "bank": [
+   "πολλά",
+   "κανένα",
+   "πολλές"
+  ],
+  "answer": {
+   "1": "πολλά",
+   "2": "κανένα"
+  },
+  "translation": {
+   "en": "I have a lot of things, but I don't have a single egg.",
+   "tr": "Çok şeyim var ama hiç yumurtam yok."
+  },
+  "explain": {
+   "en": "πράγματα is neuter plural: πολλά. After δεν, κανένα goes with the neuter singular αυγό. πολλές would need a feminine noun.",
+   "tr": "πράγματα nötr çoğul: πολλά. δεν'den sonra κανένα nötr tekil αυγό ile gelir. πολλές dişil isim ister."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-p-katholou",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Δεν έχω {1} ρύζι.",
+  "answer": {
+   "1": [
+    "καθόλου"
+   ]
+  },
+  "options": {
+   "1": [
+    "καθόλου",
+    "πολλά",
+    "κανέναν"
+   ]
+  },
+  "translation": {
+   "en": "I have no rice at all.",
+   "tr": "Hiç pirincim yok."
+  },
+  "explain": {
+   "en": "Καθόλου never changes and means «at all». πολλά is a plural and does not fit ρύζι; κανέναν is masculine.",
+   "tr": "Καθόλου hiç değişmez ve «hiç» demektir. πολλά çoğuldur, ρύζι ile uymaz; κανέναν eril."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-p-ekeinos",
+  "ask": {
+   "en": "Fill in the gap with «those».",
+   "tr": "Boşluğu «şunlar» ile doldur."
+  },
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap with «those».",
+   "tr": "Boşluğu «şunlar» ile doldur."
+  },
+  "text": "Θέλω {1} τις ντομάτες εκεί.",
+  "answer": {
+   "1": [
+    "εκείνες"
+   ]
+  },
+  "options": {
+   "1": [
+    "εκείνες",
+    "εκείνα",
+    "εκείνους"
+   ]
+  },
+  "translation": {
+   "en": "I want those tomatoes over there.",
+   "tr": "Şuradaki domatesleri istiyorum."
+  },
+  "explain": {
+   "en": "The article is τις, so the word is feminine plural: εκείνες. εκείνα is neuter and εκείνους is masculine.",
+   "tr": "Artikel τις; yani dişil çoğul: εκείνες. εκείνα nötr, εκείνους eril."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-p-numeral-mcq",
+  "ask": {
+   "en": "I'd like four peppers.",
+   "tr": "Dört biber istiyorum."
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the correct phrase.",
+   "tr": "Doğru ifadeyi seç."
+  },
+  "prompt": {
+   "el": "Θα ήθελα …",
+   "en": "I'd like four peppers.",
+   "tr": "Dört biber istiyorum."
+  },
+  "options": [
+   "τέσσερις πιπεριές",
+   "τέσσερα πιπεριές",
+   "τέσσερις πιπεριά",
+   "τέσσερα πιπεριά"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "After a number the noun is plural (πιπεριές), and τέσσερις goes with a feminine noun.",
+   "tr": "Sayıdan sonra isim çoğul olur (πιπεριές) ve τέσσερις dişil isimle gelir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-p-dino-match",
+  "ask": {
+   "en": "Match the time and the person with the form of δίνω.",
+   "tr": "Zamanı ve kişiyi δίνω'nun biçimiyle eşleştir."
+  },
+  "type": "match",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the time and the person with the form of δίνω.",
+   "tr": "Zamanı ve kişiyi δίνω'nun biçimiyle eşleştir."
+  },
+  "left": [
+   "χθες, εγώ",
+   "αύριο, εσύ",
+   "τώρα, εγώ",
+   "χθες, εσύ"
+  ],
+  "right": [
+   "θα δώσεις",
+   "έδωσες",
+   "δίνω",
+   "έδωσα"
+  ],
+  "answer": [
+   3,
+   0,
+   2,
+   1
+  ],
+  "explain": {
+   "en": "Past: έδωσα (I), έδωσες (you). Future: θα + δώσω / δώσεις. Present: δίνω, δίνεις.",
+   "tr": "Geçmiş: έδωσα (ben), έδωσες (sen). Gelecek: θα + δώσω / δώσεις. Şimdi: δίνω, δίνεις."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-p-poso-mcq",
+  "ask": {
+   "en": "Ask Kostas how many customers he has today.",
+   "tr": "Kostas'a bugün kaç müşterisi olduğunu sor."
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right question.",
+   "tr": "Doğru soruyu seç."
+  },
+  "prompt": {
+   "el": "— … έχεις σήμερα; — Πολλούς!",
+   "en": "Ask Kostas how many customers he has today.",
+   "tr": "Kostas'a bugün kaç müşterisi olduğunu sor."
+  },
+  "options": [
+   "Πόσους πελάτες",
+   "Πόσες πελάτες",
+   "Πόσα πελάτες",
+   "Πόσο πελάτες"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "πελάτες is masculine plural (ο πελάτης), and it is the object: πόσους. The answer πολλούς has the same ending.",
+   "tr": "πελάτες eril çoğul (ο πελάτης) ve nesne: πόσους. Cevaptaki πολλούς da aynı eki taşıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch11-p-13-14",
+  "ask": {
+   "en": "I want thirteen apples and fourteen tomatoes. Write the numbers in Greek.",
+   "tr": "On üç elma ve on dört domates istiyorum. Sayıları Yunanca yaz."
+  },
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-11"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps with the numbers in the English sentence.",
+   "tr": "Boşlukları cümledeki sayılarla doldur."
+  },
+  "text": "Θέλω {1} μήλα και {2} ντομάτες.",
+  "answer": {
+   "1": [
+    "δεκατρία"
+   ],
+   "2": [
+    "δεκατέσσερις"
+   ]
+  },
+  "options": {
+   "1": [
+    "δεκατρία",
+    "δεκατρείς",
+    "δεκατέσσερα"
+   ],
+   "2": [
+    "δεκατέσσερις",
+    "δεκατέσσερα",
+    "δεκατρείς"
+   ]
+  },
+  "translation": {
+   "en": "I want thirteen apples and fourteen tomatoes.",
+   "tr": "On üç elma ve on dört domates istiyorum."
+  },
+  "explain": {
+   "en": "μήλα is neuter: δεκατρία. ντομάτες is feminine: δεκατέσσερις.",
+   "tr": "μήλα nötr: δεκατρία. ντομάτες dişil: δεκατέσσερις."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-11",
+   "by": "sonnet-draft"
+  }
+ }
+]

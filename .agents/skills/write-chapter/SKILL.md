@@ -23,8 +23,8 @@ Run every command from the repository root.
 
 1. Find the curriculum:
    - `uv run oknos report` → `curriculum.curriculum` and `chapters`, which shows which stages have a chapter and which are read;
-   - the book's curriculum is `content/private/<pack>/curriculum.json`, the open one `curricula/open-a1-b1.json`.
-2. Find the folder (LESSONS §1): a book's chapters are private, the open course's are tracked.
+   - the Oknos book's is `curricula/oknos-book.json`, the shorter open course's `curricula/open-a1-b1.json`, a learner's own private book's `content/private/<pack>/curriculum.json`.
+2. Find the folder (LESSONS §1): both open books are tracked (`content/open/oknos-book/`, `content/open/open-book/`) and must stay original; a learner's own book is private.
 3. If `lessons/outline.json` is missing, start at step 1. If it exists, check that the stages you are asked for are in it.
 4. If the request is a flagged section: `report.open_flags` entries with a `chapter` field give the file and the section. Fix that, run step 4 and step 6, and add the flag to `coach/resolved-flags.json` (COACHING §7.4). Then stop.
 

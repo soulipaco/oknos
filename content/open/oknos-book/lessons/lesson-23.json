@@ -1,0 +1,616 @@
+{
+ "id": "oknos-book.lesson-23",
+ "curriculum": "oknos-book",
+ "stage": "lesson-23",
+ "level": "A2",
+ "title": {
+  "tr": "İki iş teklifi: karşılaştırmak ve neden söylemek",
+  "en": "Two job offers: comparing and giving reasons"
+ },
+ "minutes": 18,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde bir arkadaşına iki iş teklifini anlatmayı, hangisini seçtiğini ve nedenini söylemeyi öğreneceksin. Araçların: **για να** (-mek için), **γιατί / επειδή** (çünkü), **αν και / παρόλο που** (-e rağmen), **πιο … από** (…-den daha …) ve **ο πιο …** (en …).\n\nAnahtar nokta: Türkçede neden ve karşıtlık çoğu zaman fiile eklenen bir ekle söylenir (*geldiği için*, *geldiği hâlde*). Yunancada **για να**, **επειδή** ve **αν και** yan cümlenin başında duran ayrı kelimelerdir; fiil, bildiğin biçimlerle arkadan gelir.",
+     "en": "In this chapter you learn to tell a friend about two job offers, and to say which one you chose and why. Your tools: **για να** (in order to), **γιατί / επειδή** (because), **αν και / παρόλο που** (although), **πιο … από** (more … than) and **ο πιο …** (the most …).\n\nThe key point: **για να**, **επειδή** and **αν και** each stand at the front of a whole clause with its own verb, and that verb takes forms you already know."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Hangi işi alayım?",
+    "en": "Which job should I take?"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ayşe, arkadaşı Eleni'ye iki iş teklifini anlatıyor. Dinle, sonra oku. *Τι νέα;* «ne haber?»; *η άδεια* burada işten izin; [[ώρες]] «saat» (çoğul); [[μάθω]] ve [[βρεις]], *μαθαίνω* ile *βρίσκω* fiillerinin bir kerelik biçimleri.",
+     "en": "Ayşe tells her friend Eleni about two job offers. Listen, then read. *Τι νέα;* is «what's new?»; *η άδεια* here is leave from work; [[ώρες]] is «hours» (plural); [[μάθω]] and [[βρεις]] are once-only forms of *μαθαίνω* and *βρίσκω*."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ayşe ve Eleni bir kafede. Ayşe'nin önünde iki iş teklifi var.",
+      "en": "Ayşe and Eleni are in a café. Ayşe has two job offers."
+     },
+     "lines": [
+      {
+       "who": "Ελένη",
+       "el": "Καλημέρα, Αϊσέ! Τι νέα;",
+       "tr": "Günaydın Ayşe! Ne haber?",
+       "en": "Good morning, Ayşe! What's new?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα! Τη Δευτέρα αρχίζω ένα σεμινάριο στο πανεπιστήμιο, για να μάθω καλύτερα ελληνικά.",
+       "tr": "Günaydın! Pazartesi üniversitede bir seminere başlıyorum, Yunancayı daha iyi öğrenmek için.",
+       "en": "Good morning! On Monday I start a seminar at the university, to learn Greek better."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Ωραία! Και δουλειά; Βρήκες;",
+       "tr": "Güzel! Ya iş? Buldun mu?",
+       "en": "Great! And a job? Did you find one?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Έχω δύο προτάσεις, αλλά δεν ξέρω ποια να πάρω. Η πρώτη εταιρεία είναι στο κέντρο. Ο μισθός είναι καλός, αλλά το ωράριο είναι μεγάλο: εννιά ώρες τη μέρα.",
+       "tr": "İki teklifim var ama hangisini alacağımı bilmiyorum. Birinci şirket merkezde. Maaş iyi, ama çalışma saatleri uzun: günde dokuz saat.",
+       "en": "I have two offers, but I don't know which one to take. The first company is in the centre. The salary is good, but the hours are long: nine hours a day."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Και η δεύτερη;",
+       "tr": "Ya ikincisi?",
+       "en": "And the second?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Είναι ένα μικρό γραφείο κοντά στο σπίτι μου, με καλές συνθήκες. Ο μισθός είναι χειρότερος, αλλά το ωράριο είναι καλύτερο: οκτώ ώρες, και ρεπό τα Σαββατοκύριακα.",
+       "tr": "Evime yakın küçük bir ofis, koşulları iyi. Maaş daha kötü, ama saatler daha iyi: sekiz saat, hafta sonları da izin.",
+       "en": "It is a small office near my home, with good conditions. The salary is worse, but the hours are better: eight hours, and weekends off."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Και άδεια; Πόσες μέρες;",
+       "tr": "Ya izin? Kaç gün?",
+       "en": "And leave? How many days?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Η πρώτη είκοσι, η δεύτερη είκοσι πέντε.",
+       "tr": "Birincisi yirmi, ikincisi yirmi beş.",
+       "en": "The first twenty, the second twenty-five."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Ποια θα πάρεις; Και γιατί;",
+       "tr": "Hangisini alacaksın? Peki neden?",
+       "en": "Which one will you take? And why?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Τη δεύτερη, επειδή είναι κοντά στο σπίτι και το ωράριο είναι καλύτερο. Αν δουλεύω εννιά ώρες τη μέρα, δε θα έχω χρόνο για το σεμινάριο.",
+       "tr": "İkincisini, çünkü evime yakın ve saatler daha iyi. Günde dokuz saat çalışırsam, seminer için vaktim olmaz.",
+       "en": "The second, because it is near my home and the hours are better. If I work nine hours a day, I won't have time for the seminar."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Αν και ο μισθός είναι χειρότερος;",
+       "tr": "Maaşın daha kötü olmasına rağmen mi?",
+       "en": "Even though the salary is worse?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ναι. Παρόλο που ο μισθός είναι χειρότερος, είναι η καλύτερη λύση για μένα.",
+       "tr": "Evet. Maaş daha kötü olsa da benim için en iyi çözüm bu.",
+       "en": "Yes. Although the salary is worse, it is the best solution for me."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Αυτή είναι η δουλειά που χρειάζεσαι! Και όταν τελειώσεις το σεμινάριο, θα βρεις πιο εύκολα καλύτερη δουλειά.",
+       "tr": "İhtiyacın olan iş bu! Semineri bitirince daha iyi bir işi daha kolay bulursun.",
+       "en": "That is the job you need! And when you finish the seminar, you will find a better job more easily."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Σωστά! Ευχαριστώ, Ελένη!",
+       "tr": "Doğru! Teşekkürler Eleni!",
+       "en": "Right! Thank you, Eleni!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloğa göre:",
+     "en": "According to the dialogue:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch23-q-why",
+      "oknos-book/ch23-q-tf"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Zaten bildiğin bağlaçlar: όταν, αν, που",
+    "en": "Link words you know: όταν, αν, που"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyalogda bunlar da geçti. 22. dersten *όταν* ve *αν*, 8. dersten *που* tanıdık. Hepsinden sonra tam bir cümle gelir. *Που* burada iki iş görür: «olan/ki» ve «-diği (gün)».",
+     "en": "These came up in the dialogue too. *Όταν* and *αν* are from Lesson 22, *που* from Lesson 8. A whole clause follows each. *Που* does two jobs here: «that/who» and «when» (after a day or time)."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Λέξη",
+      {
+       "tr": "Anlamı",
+       "en": "Meaning"
+      },
+      "Παράδειγμα"
+     ],
+     "rows": [
+      [
+       "όταν",
+       {
+        "tr": "…dığında",
+        "en": "when"
+       },
+       "Όταν έχω ρεπό, πάω στη θάλασσα."
+      ],
+      [
+       "αν",
+       {
+        "tr": "eğer",
+        "en": "if"
+       },
+       "Αν δεν έχω χρόνο, δε θα πάω στο σεμινάριο."
+      ],
+      [
+       "που",
+       {
+        "tr": "olan, ki (iş, kişi)",
+        "en": "that, who (the job…)"
+       },
+       "Η δουλειά που χρειάζομαι είναι κοντά στο σπίτι μου."
+      ],
+      [
+       "που",
+       {
+        "tr": "-diği (gün, zaman)",
+        "en": "when (after a day or time)"
+       },
+       "Θυμάμαι τη μέρα που ήρθα στην Αθήνα."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Amaç: για να",
+    "en": "Purpose: για να"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**Για να** «-mek için» demektir ve bir eylemin amacını söyler. Fiil, **να** ile kullandığın biçimde gelir (Ders 17): tek bir olay için bir kerelik kök (*για να φτάσω*), tekrar eden ya da süren bir şey için şimdiki kök (*για να πληρώνω το ενοίκιο*, her ay). Olumsuz biçim **για να μην**: *για να μην αργήσω* («geç kalmamak için»).",
+     "en": "**Για να** means «in order to» and gives the purpose of an action. The verb takes the form you use after **να** (Lesson 17): the once-only stem for a single event (*για να φτάσω*), the present stem for something repeated or ongoing (*για να πληρώνω το ενοίκιο*, every month). The negative is **για να μην**: *για να μην αργήσω* («so as not to be late»)."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Ana cümle",
+       "en": "Main clause"
+      },
+      "για να",
+      {
+       "tr": "Fiil",
+       "en": "Verb"
+      }
+     ],
+     "rows": [
+      [
+       "Δουλεύω",
+       "για να",
+       "ζήσω"
+      ],
+      [
+       "Μαθαίνω ελληνικά",
+       "για να",
+       "βρω δουλειά"
+      ],
+      [
+       "Παίρνω το μετρό",
+       "για να",
+       "φτάσω νωρίς"
+      ],
+      [
+       "Φεύγω νωρίς",
+       "για να μην",
+       "αργήσω"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Σπουδάζω στο πανεπιστήμιο για να πάρω πτυχίο.",
+       "tr": "Diploma almak için üniversitede okuyorum.",
+       "en": "I study at the university to get a degree."
+      },
+      {
+       "el": "Εργάζομαι σε μια εταιρεία για να πληρώνω το ενοίκιο.",
+       "tr": "Kirayı ödemek için bir şirkette çalışıyorum.",
+       "en": "I work at a company to pay the rent.",
+       "note": {
+        "tr": "Her ay tekrar eden bir amaç: şimdiki kök.",
+        "en": "A purpose repeated every month: the present stem."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Neden: γιατί, επειδή",
+    "en": "Reason: γιατί, επειδή"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bir nedeni söylerken **γιατί** ya da **επειδή** («çünkü») kullan. Arkalarından normal bir fiil gelir, να olmadan: *επειδή είναι κοντά*. **Γιατί** aynı zamanda soru kelimesidir: «neden?». Bu yüzden cümlenin en başındaki *γιατί* genelde soru olarak anlaşılır. Neden cümlesi öne gelecekse **επειδή** kullan: *Επειδή αργώ, παίρνω ταξί.*",
+     "en": "To give a reason, use **γιατί** or **επειδή** («because»), followed by an ordinary verb, without να: *επειδή είναι κοντά*. **Γιατί** is also the question word «why?», so a *γιατί* at the very start of a sentence is normally heard as a question. When the reason clause comes first, use **επειδή**: *Επειδή αργώ, παίρνω ταξί.*"
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Ne?",
+       "en": "What?"
+      },
+      "Παράδειγμα"
+     ],
+     "rows": [
+      [
+       {
+        "tr": "Soru: neden?",
+        "en": "Question: why?"
+       },
+       "Γιατί θα πάρεις τη δεύτερη;"
+      ],
+      [
+       {
+        "tr": "Cevap: çünkü…",
+        "en": "Answer: because…"
+       },
+       "Επειδή είναι κοντά στο σπίτι μου."
+      ],
+      [
+       {
+        "tr": "Ana cümleden sonra",
+        "en": "After the main clause"
+       },
+       "Θα την πάρω, γιατί το ωράριο είναι καλύτερο."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Δεν έρχομαι, γιατί έχω δουλειά.",
+       "tr": "Gelmiyorum, çünkü işim var.",
+       "en": "I am not coming, because I have work."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Karşıtlık: αν και, παρόλο που",
+    "en": "Contrast: αν και, παρόλο που"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**Αν και** ve **παρόλο που** aynı anlama gelir: «-e rağmen, -diği hâlde». İkisinden sonra da normal bir fiil gelir. *Αλλά* («ama») iki ana cümleyi bağlar; *αν και* ise karşıt bilgiyi kendi yan cümlesine koyar, bu yan cümle çoğu zaman başa gelir. *Αν και* tek bir birimdir; *αν* («eğer») ile karıştırma.",
+     "en": "**Αν και** and **παρόλο που** mean the same: «although, even though». Both take an ordinary verb. *Αλλά* («but») joins two main clauses; *αν και* puts the contrasting fact in a clause of its own, often at the front. *Αν και* is one unit; do not confuse it with *αν* («if»)."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Λέξη",
+      {
+       "tr": "Anlamı",
+       "en": "Meaning"
+      },
+      "Παράδειγμα"
+     ],
+     "rows": [
+      [
+       "αν και",
+       {
+        "tr": "-e rağmen",
+        "en": "although"
+       },
+       "Αν και κάνει κρύο, πάμε στη θάλασσα."
+      ],
+      [
+       "παρόλο που",
+       {
+        "tr": "-e rağmen (aynı anlam)",
+        "en": "although (the same meaning)"
+       },
+       "Παρόλο που κάνει κρύο, πάμε στη θάλασσα."
+      ],
+      [
+       "αλλά",
+       {
+        "tr": "ama",
+        "en": "but"
+       },
+       "Κάνει κρύο, αλλά πάμε στη θάλασσα."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Αν και η δουλειά είναι μακριά, ο μισθός είναι καλός.",
+       "tr": "İş uzak olmasına rağmen maaş iyi.",
+       "en": "Although the job is far away, the salary is good."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Karşılaştırma: πιο … από",
+    "en": "Comparing: πιο … από"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**Πιο** + sıfat + **από** «…-den daha …» demektir. *Πιο* hiç değişmez; sıfat isimle uyar: *ένα πιο ακριβό σπίτι*, *μια πιο ακριβή περιοχή*. **Από** karşılaştırdığın şeyin önüne gelir, isim de -i hâlinde: *από τον μισθό*, *από την αδελφή μου*. Dört sık sıfatın tek kelimelik biçimini kelime olarak öğren: *καλύτερος, χειρότερος, μεγαλύτερος, μικρότερος*. *Μεγαλύτερος* ve *μικρότερος* insanlar için «yaşça büyük/küçük» de demektir. Zarflar da aynı yolla karşılaştırılır ama hiç değişmez: *πιο γρήγορα*, *πιο εύκολα*, *καλά → καλύτερα*, **χειρότερα** (daha kötü).",
+     "en": "**Πιο** + adjective + **από** means «more … than». *Πιο* never changes; the adjective agrees with its noun: *ένα πιο ακριβό σπίτι*, *μια πιο ακριβή περιοχή*. **Από** comes before the thing you compare with, which is in the accusative: *από τον μισθό*, *από την αδελφή μου*. Learn the one-word forms of four common adjectives as words: *καλύτερος, χειρότερος, μεγαλύτερος, μικρότερος*. *Μεγαλύτερος* and *μικρότερος* also mean «older» and «younger» for people. Adverbs compare the same way but never change: *πιο γρήγορα*, *πιο εύκολα*, *καλά → καλύτερα*, **χειρότερα** (worse)."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Sıfatlar",
+      "en": "Adjectives"
+     },
+     "head": [
+      {
+       "tr": "Sıfat",
+       "en": "Adjective"
+      },
+      {
+       "tr": "Daha …",
+       "en": "Comparative"
+      }
+     ],
+     "rows": [
+      [
+       "ακριβός",
+       "πιο ακριβός"
+      ],
+      [
+       "φτηνός",
+       "πιο φτηνός"
+      ],
+      [
+       "εύκολος",
+       "πιο εύκολος"
+      ],
+      [
+       "καλός",
+       "καλύτερος"
+      ],
+      [
+       "κακός",
+       "χειρότερος"
+      ],
+      [
+       "μεγάλος",
+       "μεγαλύτερος"
+      ],
+      [
+       "μικρός",
+       "μικρότερος"
+      ]
+     ],
+     "note": {
+      "tr": "πιο καλός, πιο μεγάλος da doğrudur. Birçok sıfatın -ότερος biçimi de var (ακριβότερος), ama πιο her zaman olur.",
+      "en": "πιο καλός and πιο μεγάλος are right too. Many adjectives also have an -ότερος form (ακριβότερος), but πιο always works."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Ο μισθός στην πρώτη εταιρεία είναι καλύτερος από τον μισθό στη δεύτερη.",
+       "tr": "Birinci şirketteki maaş, ikincisindekinden daha iyi.",
+       "en": "The salary at the first company is better than the salary at the second."
+      },
+      {
+       "el": "Το μετρό πάει πιο γρήγορα από το λεωφορείο.",
+       "tr": "Metro otobüsten daha hızlı gidiyor.",
+       "en": "The metro goes faster than the bus."
+      },
+      {
+       "el": "Ο αδελφός μου είναι μεγαλύτερος από την αδελφή μου.",
+       "tr": "Erkek kardeşim kız kardeşimden büyük.",
+       "en": "My brother is older than my sister."
+      },
+      {
+       "el": "Η Αϊσέ μιλάει ελληνικά καλύτερα από τον Νίκο.",
+       "tr": "Ayşe, Nikos'tan daha iyi Yunanca konuşuyor.",
+       "en": "Ayşe speaks Greek better than Nikos."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "En …: ο πιο …, ο καλύτερος",
+    "en": "The most …: ο πιο …, ο καλύτερος"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "«En …» demek için karşılaştırmanın önüne belirli **artikel** koy: **ο πιο …**, **η πιο …**, **το πιο …**, ya da **ο καλύτερος**, **ο χειρότερος**. *Πιο ακριβός* «daha pahalı», *ο πιο ακριβός* «en pahalı» demektir. Arkasından çoğu zaman bir yer ya da **που** ile bir cümle gelir: *η πιο μεγάλη πόλη της Ελλάδας*, *η καλύτερη εταιρεία που ξέρω*.",
+     "en": "For «the most …» put the definite **article** in front of the comparative: **ο πιο …**, **η πιο …**, **το πιο …**, or **ο καλύτερος**, **ο χειρότερος**. *Πιο ακριβός* is «more expensive», *ο πιο ακριβός* «the most expensive». A place or a **που** clause often follows: *η πιο μεγάλη πόλη της Ελλάδας*, *η καλύτερη εταιρεία που ξέρω*."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Eril",
+       "en": "Masculine"
+      },
+      {
+       "tr": "Dişil",
+       "en": "Feminine"
+      },
+      {
+       "tr": "Nötr",
+       "en": "Neuter"
+      }
+     ],
+     "rows": [
+      [
+       "ο πιο ακριβός δρόμος",
+       "η πιο ακριβή περιοχή",
+       "το πιο ακριβό σπίτι"
+      ],
+      [
+       "ο καλύτερος μισθός",
+       "η καλύτερη δουλειά",
+       "το καλύτερο ωράριο"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Η Αθήνα είναι η πιο μεγάλη πόλη της Ελλάδας.",
+       "tr": "Atina, Yunanistan'ın en büyük şehri.",
+       "en": "Athens is the biggest city in Greece."
+      },
+      {
+       "el": "Αυτή είναι η καλύτερη εταιρεία που ξέρω.",
+       "tr": "Bu, bildiğim en iyi şirket.",
+       "en": "This is the best company I know."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "*Οι συνθήκες* «koşullar» demektir; *οι συνθήκες εργασίας* «çalışma koşulları» (*εργασία* «iş, çalışma»; şimdilik kalıp).",
+     "en": "*Οι συνθήκες* means «conditions»; *οι συνθήκες εργασίας* is «working conditions» (*εργασία* is «work»; a set phrase for now)."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/v-misthos",
+      "oknos-book/ch23-orario",
+      "oknos-book/v-adeia",
+      "oknos-book/v-synadelfos",
+      "oknos-book/v-ergazomai-verb",
+      "oknos-book/v-repo",
+      "oknos-book/ch23-synthikes",
+      "oknos-book/ch23-teleiono",
+      "oknos-book/ch23-ptychio",
+      "oknos-book/ch23-seminario",
+      "oknos-book/ch23-spoudes",
+      "oknos-book/ch23-gia-na",
+      "oknos-book/ch23-giati",
+      "oknos-book/ch23-epeidi",
+      "oknos-book/ch23-an-kai",
+      "oknos-book/ch23-parolo-pou",
+      "oknos-book/ch23-pio",
+      "oknos-book/ch23-kalyteros",
+      "oknos-book/v-cheiroteros-adj",
+      "oknos-book/ch23-megalyteros",
+      "oknos-book/ch23-mikroteros"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Neden mi, amaç mı?** *Γιατί* bir nedeni açıklar, *για να* bir amacı söyler: *Μαθαίνω ελληνικά γιατί μένω στην Ελλάδα* (çünkü Yunanistan'da oturuyorum), *Μαθαίνω ελληνικά για να βρω δουλειά* (iş bulmak için). Bir de: *πιο καλύτερος* denmez; ya *καλύτερος* ya *πιο καλός*.",
+     "en": "**Reason or purpose?** *Γιατί* explains why, *για να* gives a goal: *Μαθαίνω ελληνικά γιατί μένω στην Ελλάδα* (because I live in Greece), *Μαθαίνω ελληνικά για να βρω δουλειά* (to find a job). And no «more better»: not *πιο καλύτερος*, but *καλύτερος* or *πιο καλός*."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "exam_task": "b1keg.speaking.monologue",
+     "tr": "**Tek kişilik konuşma.** Sınavda bir konu hakkında tek başına konuşurken bağlaçları kullan: iki seçeneği karşılaştır (*πιο … από*), nedenini söyle (*επειδή*), kararını söyle (*Θα πάρω τη δεύτερη, παρόλο που …*).",
+     "en": "**The solo talk.** When you speak alone on a topic in the exam, use the link words: compare the two options (*πιο … από*), give your reason (*επειδή*), say what you decided (*Θα πάρω τη δεύτερη, παρόλο που …*)."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: amaç, neden, karşıtlık, karşılaştırma ve en üstünlük.",
+     "en": "Now you try: purpose, reason, contrast, comparing and the superlative."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch23-try-gia-na",
+      "oknos-book/ch23-try-because",
+      "oknos-book/ch23-try-concession",
+      "oknos-book/ch23-try-compare",
+      "oknos-book/ch23-try-super"
+     ]
+    }
+   ]
+  }
+ ]
+}

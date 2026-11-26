@@ -94,10 +94,10 @@ Two short painted films (about 45 seconds each) tell the story: **Oknos and the 
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/img/what-you-learn-dark.svg">
-  <img src="docs/img/what-you-learn-light.svg" alt="Twelve stages of an open course, from reading Greek through A1 and A2 to B1, aimed at the A2 + history and Ελληνομάθεια B1 exams. You can import your own coursebook privately.">
+  <img src="docs/img/what-you-learn-light.svg" alt="The Oknos book: 26 stages, from reading Greek through A1 and A2 to B1, aimed at the A2 + history and Ελληνομάθεια B1 exams. You can import your own coursebook privately.">
 </picture>
 
-- **An open course in 12 lessons**, from the alphabet to B1. Each starts with a chapter to read, and its practice opens after it. A new word is shown and explained before it is ever tested.
+- **The Oknos book**, an open course in 26 stages: reading Greek, 24 lessons and a bridge to B1. Each starts with a chapter to read, and its practice opens after it. A new word is shown and explained before it is ever tested. A shorter course of 12 chapters, with a story running through it, is there too and adds its words and scenes to the book's lessons.
 - **Pictures and a voice.** Painted scenes in every chapter, and pictures for words: over a hundred in the open course and close to a thousand in all, drawn for Oknos. Every Greek sentence of the open course comes with a natural recorded voice, so it sounds right from the first day with no setup. With your own key for a voice service (Azure, Google or OpenAI) the agent can voice everything else too.
 - **Podcast lessons** to listen to on the go: your agent writes an episode for a chapter, in Greek with explanations in Turkish or English, and voices it with your voice service.
 - **Exam practice in the real formats**, a timed **mock exam**, and an honest answer to **"would you pass today?"** for each part of each exam.

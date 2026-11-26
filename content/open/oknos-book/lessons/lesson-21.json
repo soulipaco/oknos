@@ -1,0 +1,803 @@
+{
+ "id": "oknos-book.lesson-21",
+ "curriculum": "oknos-book",
+ "stage": "lesson-21",
+ "level": "A2",
+ "title": {
+  "tr": "Ateşin var: eczane, doktor, emirler ve olumsuz emirler",
+  "en": "You have a fever: the pharmacy, the doctor, instructions and negative instructions"
+ },
+ "minutes": 18,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Eczanede ve doktorda derdini anlatmayı, **emirleri** (*Πάρτε, Καθίστε*) anlamayı ve kendin vermeyi öğreneceksin.\n\nAnahtar nokta: emir, gelecek zamanın bir kerelik kökünden yapılır: *θα γράψω* → **γράψε** (sen), **γράψτε** (siz). Olumsuz emir başka bir biçimle kurulur: **μη γράψεις**.",
+     "en": "You learn to say what is wrong at the pharmacy and the doctor's, and to understand and give **instructions** (*Πάρτε, Καθίστε*).\n\nThe key point: the instruction comes from the once-only stem of the future: *θα γράψω* → **γράψε** (to one person), **γράψτε** (polite or several). A negative instruction uses another form: **μη γράψεις**."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Eczanede, sonra doktorda",
+    "en": "At the pharmacy, then at the doctor"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ayşe'nin ateşi var: önce eczane, sonra sağlık merkezi. Eczacı ve doktor ona «siz» diyor, bu yüzden emirler çoğul. Kalıplar: «[[Τι έχετε;]]» (neyiniz var?), «[[Περαστικά!]]» (geçmiş olsun!), «[[σοβαρό]]» (ciddi), «[[το κέντρο υγείας]]» (sağlık merkezi).",
+     "en": "Ayşe has a fever: first the pharmacy, then the health centre. The pharmacist and the doctor both use the polite «you», so the instructions are plural. Set phrases: «[[Τι έχετε;]]» (what is the matter?), «[[Περαστικά!]]» (get well soon!), «[[σοβαρό]]» (serious), «[[το κέντρο υγείας]]» (health centre)."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Pazartesi sabahı, eczanede.",
+      "en": "Monday morning, at the pharmacy."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα σας. Δε νιώθω καλά. Είμαι άρρωστη.",
+       "tr": "Günaydın. Kendimi iyi hissetmiyorum. Hastayım.",
+       "en": "Good morning. I don't feel well. I am ill."
+      },
+      {
+       "who": "Φαρμακοποιός",
+       "el": "Τι έχετε;",
+       "tr": "Neyiniz var?",
+       "en": "What is the matter?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Με πονάει ο λαιμός μου. Με πονάει και το κεφάλι μου. Βήχω και έχω πυρετό, τριάντα οχτώ.",
+       "tr": "Boğazım ağrıyor. Başım da ağrıyor. Öksürüyorum ve ateşim var, otuz sekiz.",
+       "en": "My throat hurts. My head hurts too. I cough and I have a fever, thirty-eight."
+      },
+      {
+       "who": "Φαρμακοποιός",
+       "el": "Έχετε κρυολόγημα ή γρίπη. Ορίστε ένα σιρόπι. Πάρτε το τρεις φορές τη μέρα.",
+       "tr": "Nezle ya da grip olmuşsunuz. Buyurun bir şurup. Günde üç kez alın.",
+       "en": "You have a cold or the flu. Here is a syrup. Take it three times a day."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Δώστε μου και ένα χάπι για τον πυρετό, παρακαλώ.",
+       "tr": "Bana ateş için bir de hap verin, lütfen.",
+       "en": "Please give me a pill for the fever as well."
+      },
+      {
+       "who": "Φαρμακοποιός",
+       "el": "Ορίστε. Πάρτε ένα το πρωί και ένα το βράδυ. Μην πάρετε δύο μαζί! Και πηγαίνετε σήμερα στο κέντρο υγείας.",
+       "tr": "Buyurun. Sabah bir, akşam bir tane alın. İkisini birden almayın! Bir de bugün sağlık merkezine gidin.",
+       "en": "Here. Take one in the morning and one in the evening. Don't take two together! And go to the health centre today."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ευχαριστώ πολύ.",
+       "tr": "Çok teşekkürler.",
+       "en": "Thank you very much."
+      },
+      {
+       "who": "Φαρμακοποιός",
+       "el": "Περαστικά!",
+       "tr": "Geçmiş olsun!",
+       "en": "Get well soon!"
+      }
+     ]
+    },
+    {
+     "type": "prose",
+     "tr": "Aynı gün, sağlık merkezinde.",
+     "en": "The same day, at the health centre."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Sağlık merkezinde, doktorun odasında.",
+      "en": "At the health centre, in the doctor's room."
+     },
+     "lines": [
+      {
+       "who": "Γιατρός",
+       "el": "Καλησπέρα σας. Καθίστε, παρακαλώ. Τι συμπτώματα έχετε;",
+       "tr": "İyi akşamlar. Oturun, lütfen. Ne gibi belirtileriniz var?",
+       "en": "Good evening. Sit down, please. What symptoms do you have?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Από χθες έχω πυρετό και με πονάει η πλάτη μου. Βήχω πολύ.",
+       "tr": "Dünden beri ateşim var ve sırtım ağrıyor. Çok öksürüyorum.",
+       "en": "Since yesterday I have a fever and my back hurts. I cough a lot."
+      },
+      {
+       "who": "Γιατρός",
+       "el": "Ανοίξτε το στόμα σας, παρακαλώ. Τώρα ξαπλώστε στο κρεβάτι.",
+       "tr": "Ağzınızı açın, lütfen. Şimdi yatağa uzanın.",
+       "en": "Open your mouth, please. Now lie down on the bed."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Είναι σοβαρό;",
+       "tr": "Ciddi mi?",
+       "en": "Is it serious?"
+      },
+      {
+       "who": "Γιατρός",
+       "el": "Όχι, έχετε γρίπη. Πάρτε ένα χάπι δύο φορές τη μέρα και πιείτε πολύ νερό.",
+       "tr": "Hayır, gribiniz var. Günde iki kez bir hap alın ve çok su için.",
+       "en": "No, you have the flu. Take a pill twice a day and drink plenty of water."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Πείτε μου, γιατρέ: μπορώ να πάω αύριο στη δουλειά;",
+       "tr": "Söyleyin bana doktor: yarın işe gidebilir miyim?",
+       "en": "Tell me, doctor: can I go to work tomorrow?"
+      },
+      {
+       "who": "Γιατρός",
+       "el": "Δυστυχώς όχι. Μείνετε στο κρεβάτι και μην πάτε στη δουλειά.",
+       "tr": "Maalesef hayır. Yatakta kalın ve işe gitmeyin.",
+       "en": "Unfortunately not. Stay in bed and don't go to work."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Χρειάζομαι συνταγή;",
+       "tr": "Reçete gerekiyor mu?",
+       "en": "Do I need a prescription?"
+      },
+      {
+       "who": "Γιατρός",
+       "el": "Ναι, ορίστε. Δώστε τη στον φαρμακοποιό. Ελάτε την Πέμπτη. Περαστικά!",
+       "tr": "Evet, buyurun. Bunu eczacıya verin. Perşembe günü gelin. Geçmiş olsun!",
+       "en": "Yes, here you are. Give it to the pharmacist. Come on Thursday. Get well soon!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch21-q-pharmacy",
+      "oknos-book/ch21-q-tf"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Neren ağrıyor? Με πονάει…",
+    "en": "What hurts? Με πονάει…"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ağrıyı şöyle söylersin: **Με πονάει** + artikel + vücut parçası + **μου** (kelimesi kelimesine «başım beni acıtıyor»). **Με** «beni» (Ders 16), **μου** «-im» (Ders 4). Bir yer ağrıyorsa *πονάει*, birkaç yer ağrıyorsa *πονάνε*: *με πονάνε τα πόδια μου*. Artikel parçaya uyar: **ο** λαιμός, **το** κεφάλι, **η** πλάτη. Doktorun sorusu: **Πού πονάτε;** ya da **Τι σας πονάει;** Ateş ve hastalık adlarında artikel yok: **έχω πυρετό**, **έχω γρίπη**.",
+     "en": "To say what hurts: **Με πονάει** + article + body part + **μου**. **Με** is \"me\" (Lesson 16), **μου** \"my\" (Lesson 4). One part hurts: *πονάει*; several: *πονάνε* (*με πονάνε τα πόδια μου*). The article follows the part: **ο** λαιμός, **το** κεφάλι, **η** πλάτη. The doctor asks **Πού πονάτε;** or **Τι σας πονάει;** With a fever or an illness there is no article: **έχω πυρετό**, **έχω γρίπη**."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Yunanca",
+       "en": "Greek"
+      },
+      {
+       "tr": "Anlamı",
+       "en": "Meaning"
+      }
+     ],
+     "rows": [
+      [
+       "Με πονάει ο λαιμός μου.",
+       {
+        "tr": "Boğazım ağrıyor.",
+        "en": "My throat hurts."
+       }
+      ],
+      [
+       "Με πονάει το κεφάλι μου.",
+       {
+        "tr": "Başım ağrıyor.",
+        "en": "My head hurts."
+       }
+      ],
+      [
+       "Με πονάει το στομάχι μου.",
+       {
+        "tr": "Midem ağrıyor.",
+        "en": "My stomach hurts."
+       }
+      ],
+      [
+       "Με πονάει η πλάτη μου.",
+       {
+        "tr": "Sırtım ağrıyor.",
+        "en": "My back hurts."
+       }
+      ],
+      [
+       "Με πονάει το πόδι μου.",
+       {
+        "tr": "Ayağım ağrıyor.",
+        "en": "My foot hurts."
+       }
+      ],
+      [
+       "Έχω πυρετό. Έχω γρίπη.",
+       {
+        "tr": "Ateşim var. Grip oldum.",
+        "en": "I have a fever. I have the flu."
+       }
+      ],
+      [
+       "Έχω κρυολόγημα. Βήχω.",
+       {
+        "tr": "Nezle oldum. Öksürüyorum.",
+        "en": "I have a cold. I cough."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Emir: γράψε, γράψτε",
+    "en": "The instruction: γράψε, γράψτε"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Eczacı ve doktor Ayşe'ye **emir kipiyle** (*προστακτική*) konuştu. Emir, gelecek zamanın bir kerelik kökünden yapılır: *θα γράψω* → kök **γράψ-**. Bir kişiye (arkadaş) **-ε** eklenir: **γράψε**. Birkaç kişiye ya da nazik «siz» için **-τε**: **γράψτε** (Türkçedeki *yaz / yazın* gibi). Eczanede ve doktorda çoğul kullan.\n\nVurgu: tekilde iki heceli biçimlerde ilk hece (γράψε, πάρε), daha uzun biçimlerde sondan üçüncü hece (**διάβασε, μίλησε, κάθισε**). Çoğulda vurgu *-τε* ekinden hemen önceki hecededir: γράψτε, διαβάστε, μιλήστε.",
+     "en": "The **imperative** (*προστακτική*) is made from the once-only stem of the future: *θα γράψω* → stem **γράψ-**. To one friend add **-ε**: **γράψε**. To several people, or politely to one, add **-τε**: **γράψτε**.\n\nStress: in the singular, two-syllable forms are stressed on the first syllable (γράψε, πάρε), longer forms on the third from the end (**διάβασε, μίλησε, κάθισε**). In the plural the stress falls on the syllable just before *-τε*: γράψτε, διαβάστε, μιλήστε."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Şimdiki zaman",
+       "en": "Present"
+      },
+      {
+       "tr": "Gelecek",
+       "en": "Future"
+      },
+      {
+       "tr": "Sen (bir kişi)",
+       "en": "One friend"
+      },
+      {
+       "tr": "Siz / birkaç kişi",
+       "en": "Polite / several"
+      }
+     ],
+     "rows": [
+      [
+       "γράφω",
+       "θα γράψω",
+       "γράψε",
+       "γράψτε"
+      ],
+      [
+       "διαβάζω",
+       "θα διαβάσω",
+       "διάβασε",
+       "διαβάστε"
+      ],
+      [
+       "ανοίγω",
+       "θα ανοίξω",
+       "άνοιξε",
+       "ανοίξτε"
+      ],
+      [
+       "παίρνω",
+       "θα πάρω",
+       "πάρε",
+       "πάρτε"
+      ],
+      [
+       "φέρνω",
+       "θα φέρω",
+       "φέρε",
+       "φέρτε"
+      ],
+      [
+       "δίνω",
+       "θα δώσω",
+       "δώσε",
+       "δώστε"
+      ],
+      [
+       "μιλάω",
+       "θα μιλήσω",
+       "μίλησε",
+       "μιλήστε"
+      ],
+      [
+       "ακούω",
+       "θα ακούσω",
+       "άκουσε",
+       "ακούστε"
+      ],
+      [
+       "κάθομαι",
+       "θα καθίσω",
+       "κάθισε",
+       "καθίστε"
+      ],
+      [
+       "ξαπλώνω",
+       "θα ξαπλώσω",
+       "ξάπλωσε",
+       "ξαπλώστε"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Διάβασε αυτό το μήνυμα.",
+       "tr": "Bu mesajı oku.",
+       "en": "Read this message."
+      },
+      {
+       "el": "Ανοίξτε το παράθυρο, παρακαλώ.",
+       "tr": "Pencereyi açın, lütfen.",
+       "en": "Open the window, please."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Düzensiz emirler: έλα, ελάτε",
+    "en": "Irregular instructions: έλα, ελάτε"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Düzensiz fiillerin emirleri kendi biçimlerini alır. **πω, δω, πιω, βγω, μπω** kökleri tek hecelidir ve aynı kalıpla gider: tekilde **-ες** (vurgu işareti yok: *πες, δες*), çoğulda **-είτε** (*πείτε, δείτε*). *Πήγαινε* ve *πηγαίνετε*, *πάω* fiilinin uzun biçiminden (*πηγαίνω*) gelir. *Μείνε* çoğulda *-ετε* alır: **μείνετε**.",
+     "en": "Irregular verbs have forms of their own. The stems **πω, δω, πιω, βγω, μπω** are one syllable and follow one pattern: **-ες** in the singular (no accent mark: *πες, δες*) and **-είτε** in the plural (*πείτε, δείτε*). *Πήγαινε* and *πηγαίνετε* come from πηγαίνω (the long form of πάω). *Μείνε* takes *-ετε* in the plural: **μείνετε**."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Şimdiki zaman",
+       "en": "Present"
+      },
+      {
+       "tr": "Gelecek",
+       "en": "Future"
+      },
+      {
+       "tr": "Sen (bir kişi)",
+       "en": "One friend"
+      },
+      {
+       "tr": "Siz / birkaç kişi",
+       "en": "Polite / several"
+      }
+     ],
+     "rows": [
+      [
+       "πάω",
+       "θα πάω",
+       "πήγαινε",
+       "πηγαίνετε"
+      ],
+      [
+       "έρχομαι",
+       "θα έρθω",
+       "έλα",
+       "ελάτε"
+      ],
+      [
+       "τρώω",
+       "θα φάω",
+       "φάε",
+       "φάτε"
+      ],
+      [
+       "πίνω",
+       "θα πιω",
+       "πιες",
+       "πιείτε"
+      ],
+      [
+       "βλέπω",
+       "θα δω",
+       "δες",
+       "δείτε"
+      ],
+      [
+       "λέω",
+       "θα πω",
+       "πες",
+       "πείτε"
+      ],
+      [
+       "βγαίνω",
+       "θα βγω",
+       "βγες",
+       "βγείτε"
+      ],
+      [
+       "μπαίνω",
+       "θα μπω",
+       "μπες",
+       "μπείτε"
+      ],
+      [
+       "μένω",
+       "θα μείνω",
+       "μείνε",
+       "μείνετε"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Έλα το πρωί.",
+       "tr": "Sabah gel.",
+       "en": "Come in the morning."
+      },
+      {
+       "el": "Μπείτε, παρακαλώ.",
+       "tr": "Girin, lütfen.",
+       "en": "Come in, please."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Emir + küçük zamir: δώσε μου",
+    "en": "Instruction + little pronoun: δώσε μου"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ders 16 ve 20'de küçük zamir fiilin **önüne** geliyordu: *σου δίνω*. Olumlu emirde zamir fiilden **sonra** gelir: **Δώσε μου**, **Πάρτε το**, **Πες μου**, **Φέρτε μου**.\n\nİki ayrıntı. Vurgusu sondan üçüncü hecede olan emre zamir eklenince son heceye ikinci bir işaret konur (Ders 4'teki *το τηλέφωνό μου* gibi): διάβασε → **διάβασέ το**, άκουσε → **άκουσέ με**. Konuşmada tekildeki -ε, *το* ve *τα* önünde çoğu zaman düşer: **πάρ' το**, **δώσ' το**. Tam biçim de doğrudur.",
+     "en": "Until now the little pronoun stood **before** the verb (*σου δίνω*). In a positive instruction it comes **after** the verb: **Δώσε μου**, **Πάρτε το**, **Πες μου**, **Φέρτε μου**.\n\nTwo details. If the stress is on the third syllable from the end, adding a pronoun puts a second accent on the last syllable (like *το τηλέφωνό μου*, Lesson 4): διάβασε → **διάβασέ το**, άκουσε → **άκουσέ με**. In speech the singular -ε often drops before *το* and *τα*: **πάρ' το**, **δώσ' το**. The full form is right too."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Emir",
+       "en": "Instruction"
+      },
+      {
+       "tr": "+ zamir",
+       "en": "+ pronoun"
+      },
+      {
+       "tr": "Anlamı",
+       "en": "Meaning"
+      }
+     ],
+     "rows": [
+      [
+       "πάρε",
+       "πάρε το · πάρ' το",
+       {
+        "tr": "onu al",
+        "en": "take it"
+       }
+      ],
+      [
+       "δώσε",
+       "δώσε μου",
+       {
+        "tr": "bana ver",
+        "en": "give me"
+       }
+      ],
+      [
+       "πες",
+       "πες μου",
+       {
+        "tr": "bana söyle",
+        "en": "tell me"
+       }
+      ],
+      [
+       "διάβασε",
+       "διάβασέ το",
+       {
+        "tr": "onu oku",
+        "en": "read it"
+       }
+      ],
+      [
+       "πάρτε",
+       "πάρτε το",
+       {
+        "tr": "onu alın",
+        "en": "take it (polite)"
+       }
+      ],
+      [
+       "φέρτε",
+       "φέρτε μου",
+       {
+        "tr": "bana getirin",
+        "en": "bring me (polite)"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Φέρτε μου ένα τσάι, παρακαλώ.",
+       "tr": "Bana bir çay getirin, lütfen.",
+       "en": "Bring me a tea, please."
+      },
+      {
+       "el": "Το σιρόπι; Πάρ' το το βράδυ.",
+       "tr": "Şurup mu? Akşam al onu.",
+       "en": "The syrup? Take it in the evening."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Olumsuz emir: μην πάρεις",
+    "en": "The negative instruction: μην πάρεις"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Olumsuz emirde emir biçimi kullanılmaz; yerine Ders 17'deki *Μην αργήσεις!* kalıbı gelir: **μην** + *να* ile kullanılan biçimin 2. kişisi. *Πάρε* → **μην πάρεις**, *πάρτε* → **μην πάρετε**. Küçük zamir yine fiilin **önüne** döner: *πάρε το* → **μην το πάρεις**. *μην* sözcüğündeki -ν, Ders 3'teki *την, δεν* kuralına uyar: μην πάρεις, μην πας, ama μη φας, μη δώσεις.\n\nBu bir kerelik bir şey içindir: *Μην πιεις καφέ σήμερα.* Bir alışkanlık için (hiçbir zaman yapma) şimdiki kök kullanılır: **Μην πίνεις καφέ το βράδυ.**",
+     "en": "A negative instruction uses the pattern of *Μην αργήσεις!* from Lesson 17: **μην** + the 2nd person of the form after *να*. *Πάρε* → **μην πάρεις**, *πάρτε* → **μην πάρετε**. The little pronoun goes back **before** the verb: *πάρε το* → **μην το πάρεις**. The -ν of *μην* follows Lesson 3's rule for *την, δεν*: μην πάρεις, μην πας, but μη φας, μη δώσεις.\n\nThat is for one occasion: *Μην πιεις καφέ σήμερα.* For a habit (never do it) the present stem is used: **Μην πίνεις καφέ το βράδυ.**"
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Olumlu (sen / siz)",
+       "en": "Positive (friend / polite)"
+      },
+      {
+       "tr": "Olumsuz (sen)",
+       "en": "Negative (friend)"
+      },
+      {
+       "tr": "Olumsuz (siz)",
+       "en": "Negative (polite)"
+      }
+     ],
+     "rows": [
+      [
+       "πάρε · πάρτε",
+       "μην πάρεις",
+       "μην πάρετε"
+      ],
+      [
+       "πιες · πιείτε",
+       "μην πιεις",
+       "μην πιείτε"
+      ],
+      [
+       "πήγαινε · πηγαίνετε",
+       "μην πας",
+       "μην πάτε"
+      ],
+      [
+       "φάε · φάτε",
+       "μη φας",
+       "μη φάτε"
+      ],
+      [
+       "δώσε · δώστε",
+       "μη δώσεις",
+       "μη δώσετε"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Μην το πάρεις με καφέ.",
+       "tr": "Onu kahveyle alma.",
+       "en": "Don't take it with coffee."
+      },
+      {
+       "el": "Μην πάτε στη δουλειά.",
+       "tr": "İşe gitmeyin.",
+       "en": "Don't go to work."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Nasıl? Zarflar: καλά, ευτυχώς",
+    "en": "How? Adverbs: καλά, ευτυχώς"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Sıfat bir şeyin nasıl olduğunu, **zarf** nasıl yapıldığını söyler: *Η γρίπη είναι σοβαρή* (sıfat), *Νιώθω καλά* (zarf). Zarf hiç değişmez. Çoğu zarf, sıfatın **-ος** yerine **-α** almasıyla yapılır; vurgu aynı hecede kalır: καλός → **καλά**, γρήγορος → **γρήγορα**, αργός → **αργά**. Bir grup zarf **-ως** ile biter: **ευτυχώς, δυστυχώς, αμέσως, βεβαίως**. Bunları tek tek öğren.",
+     "en": "An adjective says how something is, an **adverb** how it is done: *Η γρίπη είναι σοβαρή* (adjective), *Νιώθω καλά* (adverb). An adverb never changes. Most are made by changing the adjective's **-ος** to **-α**; the stress stays on the same syllable: καλός → **καλά**, γρήγορος → **γρήγορα**, αργός → **αργά**. A group ends in **-ως**: **ευτυχώς, δυστυχώς, αμέσως, βεβαίως**."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Yunanca",
+       "en": "Greek"
+      },
+      {
+       "tr": "Anlamı",
+       "en": "Meaning"
+      }
+     ],
+     "rows": [
+      [
+       "καλός → καλά",
+       {
+        "tr": "iyi → iyi",
+        "en": "good → well"
+       }
+      ],
+      [
+       "γρήγορος → γρήγορα",
+       {
+        "tr": "hızlı → hızlıca",
+        "en": "fast → quickly"
+       }
+      ],
+      [
+       "αργός → αργά",
+       {
+        "tr": "yavaş → yavaşça; geç",
+        "en": "slow → slowly; late"
+       }
+      ],
+      [
+       "σωστός → σωστά",
+       {
+        "tr": "doğru → doğru olarak",
+        "en": "right → correctly"
+       }
+      ],
+      [
+       "ωραίος → ωραία",
+       {
+        "tr": "güzel → güzelce",
+        "en": "nice → nicely"
+       }
+      ],
+      [
+       "ευτυχώς · δυστυχώς",
+       {
+        "tr": "neyse ki · maalesef",
+        "en": "fortunately · unfortunately"
+       }
+      ],
+      [
+       "αμέσως · βεβαίως",
+       {
+        "tr": "hemen · tabii",
+        "en": "at once · of course"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Μιλήστε αργά, παρακαλώ.",
+       "tr": "Yavaş konuşun, lütfen.",
+       "en": "Speak slowly, please."
+      },
+      {
+       "el": "Ευτυχώς, δεν έχω πυρετό. Δυστυχώς, δε νιώθω καλά.",
+       "tr": "Neyse ki ateşim yok. Maalesef kendimi iyi hissetmiyorum.",
+       "en": "Fortunately I have no fever. Unfortunately I don't feel well."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/ch21-kefali",
+      "oknos-book/v-laimos",
+      "oknos-book/ch21-stomachi",
+      "oknos-book/ch21-plati",
+      "oknos-book/v-podi",
+      "oknos-book/ch21-stoma",
+      "oknos-book/v-soma",
+      "oknos-book/ch21-ponao",
+      "oknos-book/v-pyretos",
+      "oknos-book/ch21-vicho",
+      "oknos-book/ch21-krylogima",
+      "oknos-book/ch21-gripi",
+      "oknos-book/ch21-arrostos",
+      "oknos-book/ch21-niotho",
+      "oknos-book/v-symptoma",
+      "oknos-book/v-chapi",
+      "oknos-book/ch21-siropi",
+      "oknos-book/v-syntagi",
+      "oknos-book/ch21-kentro-ygeias",
+      "oknos-book/ch21-exetasi",
+      "oknos-book/ch21-farmakopoios",
+      "oknos-book/v-xaplono-phrase",
+      "oknos-book/ch21-arga"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**Geçmiş olsun = Περαστικά!** Türkçedeki emir de tekil ve çoğul ayırır: *yaz / yazın* = **γράψε / γράψτε**. Fark olumsuzda: Türkçe *-ma* ekler (*yazma*), Yunanca emir biçimini bırakıp **μην** kullanır.",
+     "en": "**Geçmiş olsun = Περαστικά!** Turkish also has a singular and a plural instruction: *yaz / yazın* = **γράψε / γράψτε**. In the negative Turkish adds *-ma* (*yazma*); Greek uses **μην**."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Μην + emir biçimi olmaz.** «Μην πάρε» ve «μην πάρτε» yanlıştır: **μην πάρεις**, **μην πάρετε**. Zamirin yeri: olumlu emirde fiilden sonra (**Δώσε μου**, «Μου δώσε» değil), olumsuzda fiilden önce (**μην το πάρεις**).",
+     "en": "**Never μην + the instruction form.** \"Μην πάρε\" and \"μην πάρτε\" are wrong: **μην πάρεις**, **μην πάρετε**. The pronoun: after the verb in a positive instruction (**Δώσε μου**, not \"Μου δώσε\"), before it in a negative (**μην το πάρεις**)."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "exam_task": "a2ltr.speaking.roleplay",
+     "tr": "**Sınavda.** Rol yapma bölümünde eczacı ya da doktor rolündeki kişi sorular sorar ve emirler verir. Önce derdini söyle: *Δε νιώθω καλά. Έχω πυρετό.* Anlamazsan: *Μιλήστε αργά, παρακαλώ.*",
+     "en": "**In the exam.** In the role-play the pharmacist or doctor asks questions and gives instructions. Say what is wrong first: *Δε νιώθω καλά. Έχω πυρετό.* If lost: *Μιλήστε αργά, παρακαλώ.*"
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch21-try-pl",
+      "oknos-book/ch21-try-pron",
+      "oknos-book/ch21-try-neg"
+     ]
+    }
+   ]
+  }
+ ]
+}

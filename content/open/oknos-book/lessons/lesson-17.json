@@ -1,0 +1,795 @@
+{
+ "id": "oknos-book.lesson-17",
+ "curriculum": "oknos-book",
+ "stage": "lesson-17",
+ "level": "A2",
+ "title": {
+  "tr": "Cuma akşamı açık hava sineması: izin istemek, rica etmek ve «να» ile dilek kipi",
+  "en": "Friday at the open-air cinema: asking permission, making requests and the simple subjunctive"
+ },
+ "minutes": 18,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde arkadaşlarla bir gösteriye gitmeyi ayarlamayı, izin istemeyi ve birinden bir şey yapmasını ya da yapmamasını rica etmeyi öğreneceksin. Ders 15 ve 16'da gelecek zamanı öğrendin: θα πάω, θα έρθω, θα δω. Şimdi aynı fiil biçimini **θα** yerine **να** ile kullanacaksın: **να πάω, να έρθω, να δω**.\n\nAnahtar nokta: Yunancada «gitmek istiyorum» için mastar yoktur. İkinci fiil de çekilir: **θέλω να πάω** (kelimesi kelimesine: «istiyorum ki gideyim»).",
+     "en": "In this chapter you learn to arrange a night out with friends, to ask permission, and to ask someone to do or not to do something. You know the future (θα πάω, θα έρθω). Now you use the same verb form after **να** instead of **θα**: **να πάω, να έρθω, να δω**.\n\nThe key point: Greek has no infinitive (no \"to go\"). The second verb is conjugated too: **θέλω να πάω** (word for word: \"I want that I go\")."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Cuma akşamı için plan",
+    "en": "Planning Friday night"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ayşe, Nikos ve Eleni bir grup sohbetinde Cuma akşamı için plan yapıyor. Her **να …** biçimine dikkat et; kuralı aşağıda göreceksin. «[[Τι ταινία παίζουν;]]» şimdilik kalıp: «hangi film oynuyor?» (kelimesi kelimesine: «ne film oynarlar?»). *παρέα* arkadaş grubu demek.",
+     "en": "Ayşe, Nikos and Eleni plan Friday night in a group chat. Notice every **να …** form. «[[Τι ταινία παίζουν;]]» is a set phrase for now: \"what film is on?\". *παρέα* is a group of friends."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Çarşamba akşamı, grup sohbeti.",
+      "en": "Wednesday evening, in the group chat."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Καλησπέρα, παρέα! Την Παρασκευή το βράδυ θέλω να δω μια ταινία στο θερινό σινεμά. Θέλετε να έρθετε;",
+       "tr": "İyi akşamlar arkadaşlar! Cuma akşamı açık hava sinemasında bir film izlemek istiyorum. Siz de gelmek ister misiniz?",
+       "en": "Good evening, everyone! On Friday night I want to see a film at the open-air cinema. Do you want to come?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Ωραία ιδέα! Τι ταινία παίζουν;",
+       "tr": "Güzel fikir! Hangi film oynuyor?",
+       "en": "Nice idea! What film is on?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Μια γαλλική ταινία. Αρχίζει στις εννιά.",
+       "tr": "Bir Fransız filmi. Saat dokuzda başlıyor.",
+       "en": "A French film. It starts at nine."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Εγώ προτιμώ να δούμε μια ελληνική ταινία.",
+       "tr": "Ben bir Yunan filmi izlememizi tercih ederim.",
+       "en": "I would rather we watch a Greek film."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Εντάξει. Στις δέκα παίζουν μια ελληνική ταινία. Να δούμε αυτή;",
+       "tr": "Tamam. Saat ongelde bir Yunan filmi oynuyor. O filmi izleyelim mi?",
+       "en": "All right. At ten they show a Greek film. Shall we watch that one?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Ναι, να δούμε αυτή. Πρέπει να κλείσουμε εισιτήρια;",
+       "tr": "Evet, onu izleyelim. Bilet ayırtmamız gerekiyor mu?",
+       "en": "Yes, let's watch that one. Do we have to book tickets?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Όχι, μπορούμε να πάρουμε εισιτήρια στο ταμείο.",
+       "tr": "Hayır, biletleri gişeden alabiliriz.",
+       "en": "No, we can get tickets at the box office."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Ωραία. Νίκο, μπορείς να με πάρεις από το σπίτι;",
+       "tr": "Güzel. Nikos, beni evden alabilir misin?",
+       "en": "Good. Nikos, can you pick me up from home?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Βεβαίως! Θα είμαι στο σπίτι σου στις εννιά και μισή.",
+       "tr": "Tabii! Saat dokuz buçukta evinde olacağım.",
+       "en": "Of course! I will be at your house at half past nine."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Ευχαριστώ! Να μην αργήσεις, εντάξει;",
+       "tr": "Teşekkürler! Geç kalma, tamam mı?",
+       "en": "Thank you! Don't be late, all right?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Εντάξει, δε θα αργήσω.",
+       "tr": "Tamam, geç kalmayacağım.",
+       "en": "All right, I won't be late."
+      }
+     ]
+    },
+    {
+     "type": "prose",
+     "tr": "Cuma akşamı arabada. «[[Δεν υπάρχει πρόβλημα!]]» şimdilik kalıp: «sorun değil!».",
+     "en": "Friday evening in the car. «[[Δεν υπάρχει πρόβλημα!]]» is a set phrase for now: \"no problem!\"."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Nikos'un arabasında.",
+      "en": "In Nikos's car."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Νίκο, μπορώ να καθίσω μπροστά;",
+       "tr": "Nikos, önde oturabilir miyim?",
+       "en": "Nikos, may I sit in the front?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Βεβαίως. Ελένη, μπορείς να καθίσεις πίσω;",
+       "tr": "Tabii. Eleni, arkada oturabilir misin?",
+       "en": "Of course. Eleni, can you sit in the back?"
+      },
+      {
+       "who": "Ελένη",
+       "el": "Δεν υπάρχει πρόβλημα!",
+       "tr": "Sorun değil!",
+       "en": "No problem!"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Θέλω να ακούσω ένα τουρκικό τραγούδι. Μπορώ;",
+       "tr": "Bir Türkçe şarkı dinlemek istiyorum. Olur mu?",
+       "en": "I want to listen to a Turkish song. May I?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Εντάξει, αλλά εγώ προτιμώ να ακούσουμε ελληνική μουσική.",
+       "tr": "Tamam, ama ben Yunan müziği dinlememizi tercih ederim.",
+       "en": "All right, but I would rather we listen to Greek music."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Νίκο, δεν πρέπει να αργήσουμε! Η ταινία αρχίζει στις δέκα.",
+       "tr": "Nikos, geç kalmamalıyız! Film saat onda başlıyor.",
+       "en": "Nikos, we must not be late! The film starts at ten."
+      },
+      {
+       "who": "Νίκος",
+       "el": "Δε θα αργήσουμε.",
+       "tr": "Geç kalmayacağız.",
+       "en": "We won't be late."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloglara göre:",
+     "en": "According to the dialogues:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch17-q-film",
+      "oknos-book/ch17-q-tf"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Να + aynı fiil biçimi",
+    "en": "Να + the same verb form"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Gelecek zamanda **θα** + bir kerelik kök kullanıyordun: θα έρθω, θα δω. **Να** ile kurulan biçim (basit dilek-istek kipi) tamamen aynı fiil biçimidir; yalnızca **θα** yerine **να** gelir. Kişi ekleri de aynıdır: να φύγω, να φύγεις, να φύγει, να φύγουμε, να φύγετε, να φύγουν(ε).\n\nTürkçede de benzer ekler var: *gidelim* = **να πάμε**, *gelsin* = **να έρθει**, *göreyim* = **να δω**. **Θα** «-ecek» demektir; **να** değil.",
+     "en": "In the future you used **θα** + the once-only stem: θα έρθω, θα δω. The **να** form (the simple subjunctive) is exactly the same verb form; only **θα** is replaced by **να**. The endings are the same too: να φύγω, να φύγεις, να φύγει, να φύγουμε, να φύγετε, να φύγουν(ε).\n\n**Θα** says \"will\"; **να** does not: **να πάμε;** is \"shall we go?\"."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Şimdiki zaman (ben)",
+       "en": "Present (I)"
+      },
+      {
+       "tr": "Gelecek (ben)",
+       "en": "Future (I)"
+      },
+      {
+       "tr": "Να ile (ben)",
+       "en": "With να (I)"
+      }
+     ],
+     "rows": [
+      [
+       "γράφω",
+       "θα γράψω",
+       "να γράψω"
+      ],
+      [
+       "έρχομαι",
+       "θα έρθω",
+       "να έρθω"
+      ],
+      [
+       "βλέπω",
+       "θα δω",
+       "να δω"
+      ],
+      [
+       "τρώω",
+       "θα φάω",
+       "να φάω"
+      ],
+      [
+       "κλείνω",
+       "θα κλείσω",
+       "να κλείσω"
+      ],
+      [
+       "αργώ",
+       "θα αργήσω",
+       "να αργήσω"
+      ],
+      [
+       "ξεχνώ",
+       "θα ξεχάσω",
+       "να ξεχάσω"
+      ]
+     ],
+     "note": {
+      "tr": "Gövde değişimleri Ders 15 ve 16'daki gibidir; yeni bir şey öğrenmiyorsun.",
+      "en": "The stem changes are those of Lessons 15 and 16; nothing new to learn."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Θέλω να δω αυτή την ταινία.",
+       "tr": "Bu filmi görmek istiyorum.",
+       "en": "I want to see this film."
+      },
+      {
+       "el": "Να πάμε σε μια παράσταση το Σάββατο;",
+       "tr": "Cumartesi bir gösteriye gidelim mi?",
+       "en": "Shall we go to a show on Saturday?",
+       "note": {
+        "tr": "«Να + biz biçimi» bir öneridir: «… -elim mi?».",
+        "en": "«Να + we form» is a suggestion: \"shall we …?\"."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Να'dan önce hangi fiiller gelir?",
+    "en": "Which verbs come before να?"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bazı fiillerden sonra ikinci fiil mastar gibi değil, **να + çekimli fiil** olarak gelir. **Πρέπει** hiç değişmez: *πρέπει να φύγω, πρέπει να φύγεις, πρέπει να φύγουμε*.",
+     "en": "After some verbs the second verb is not an infinitive but **να + a conjugated verb**. **Πρέπει** never changes: *πρέπει να φύγω, πρέπει να φύγεις, πρέπει να φύγουμε*."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Kalıp",
+       "en": "Pattern"
+      },
+      {
+       "tr": "Anlamı",
+       "en": "Meaning"
+      }
+     ],
+     "rows": [
+      [
+       "θέλω να …",
+       {
+        "tr": "-mek istiyorum",
+        "en": "I want to …"
+       }
+      ],
+      [
+       "μπορώ να …",
+       {
+        "tr": "-ebilirim; -ebilir miyim?",
+        "en": "I can …; may I …?"
+       }
+      ],
+      [
+       "πρέπει να …",
+       {
+        "tr": "-meliyim (kişiye göre değişmez)",
+        "en": "I must … (never changes)"
+       }
+      ],
+      [
+       "προτιμώ να …",
+       {
+        "tr": "-meyi tercih ederim",
+        "en": "I prefer to …"
+       }
+      ],
+      [
+       "σκέφτομαι να …",
+       {
+        "tr": "-meyi düşünüyorum",
+        "en": "I am thinking of …"
+       }
+      ],
+      [
+       "ξέρω να …",
+       {
+        "tr": "-meyi biliyorum",
+        "en": "I know how to …"
+       }
+      ],
+      [
+       "αρχίζω να …",
+       {
+        "tr": "-meye başlıyorum",
+        "en": "I begin to …"
+       }
+      ]
+     ],
+     "note": {
+      "tr": "Önünde fiil olmayan bir *να* öneri ya da ricadır: *Να δούμε αυτή;*, *Να μην αργήσεις*.",
+      "en": "A *να* with no verb before it is a suggestion or a request: *Να δούμε αυτή;*, *Να μην αργήσεις*."
+     }
+    },
+    {
+     "type": "prose",
+     "tr": "Hangi kök? **Θέλω, μπορώ, πρέπει, προτιμώ, σκέφτομαι** ile tek bir olaydan (bu akşam, Cuma günü) söz ederken bir kerelik kökü kullan: *πρέπει να φύγω στις εννιά*. Her gün tekrarlanan bir alışkanlık için şimdiki kök gelir: *κάθε μέρα πρέπει να ξυπνάω στις επτά*. **Ξέρω** («-meyi bilmek») ve **αρχίζω** ile de şimdiki kök gelir: *ξέρω να μαγειρεύω, αρχίζει να βρέχει*.",
+     "en": "Which stem? After **θέλω, μπορώ, πρέπει, προτιμώ, σκέφτομαι**, for one occasion (tonight, on Friday) use the once-only stem: *πρέπει να φύγω στις εννιά*. For a habit, something done every day, use the present stem: *κάθε μέρα πρέπει να ξυπνάω στις επτά*. After **ξέρω** (know how) and **αρχίζω** the present stem comes too: *ξέρω να μαγειρεύω, αρχίζει να βρέχει*."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Πρέπει να φύγω στις εννιά.",
+       "tr": "Dokuzda çıkmam gerekiyor.",
+       "en": "I have to leave at nine."
+      },
+      {
+       "el": "Σκέφτομαι να πάω στη συναυλία την Παρασκευή.",
+       "tr": "Cuma günü konsere gitmeyi düşünüyorum.",
+       "en": "I am thinking of going to the concert on Friday."
+      },
+      {
+       "el": "Ξέρω να οδηγώ.",
+       "tr": "Araba kullanmayı biliyorum.",
+       "en": "I know how to drive.",
+       "note": {
+        "tr": "Burada şimdiki kök: οδηγώ.",
+        "en": "The present stem here: οδηγώ."
+       }
+      },
+      {
+       "el": "Αρχίζει να βρέχει.",
+       "tr": "Yağmur yağmaya başlıyor.",
+       "en": "It is starting to rain."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Farklı özneler",
+    "en": "Different subjects"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Türkçede «gelmeni istiyorum» dersin: ikinci fiil kişi eki alır. Yunancada ikinci fiilin öznesi birincininkinden farklı olabilir; ikinci fiil o kişiye göre çekilir: **θέλω να έρθεις** (senin gelmeni istiyorum). Özne aynıysa fiil de aynı kişidedir: θέλω να έρθω.\n\nHatırla: nesne zamirleri (με, σε, τον, την, το, μας, σας, τους; Ders 16) **να ile fiilin arasına** girer: *να με πάρεις*, *να σε πάρω*.",
+     "en": "The second verb can have a different subject from the first, and it is conjugated for that person: **θέλω να έρθεις** (I want you to come). With the same subject, the same person: θέλω να έρθω.\n\nObject pronouns (με, σε, τον, την … ; Lesson 16) go **between να and the verb**: *να με πάρεις*, *να σε πάρω*."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Cümle",
+       "en": "Sentence"
+      },
+      {
+       "tr": "Kim ister?",
+       "en": "Who wants?"
+      },
+      {
+       "tr": "Kim yapar?",
+       "en": "Who does it?"
+      }
+     ],
+     "rows": [
+      [
+       "Θέλω να έρθω.",
+       {
+        "tr": "ben",
+        "en": "I"
+       },
+       {
+        "tr": "ben",
+        "en": "I"
+       }
+      ],
+      [
+       "Θέλω να έρθεις.",
+       {
+        "tr": "ben",
+        "en": "I"
+       },
+       {
+        "tr": "sen",
+        "en": "you"
+       }
+      ],
+      [
+       "Θέλει να έρθουμε.",
+       {
+        "tr": "o",
+        "en": "he, she"
+       },
+       {
+        "tr": "biz",
+        "en": "we"
+       }
+      ],
+      [
+       "Θέλουν να φύγω.",
+       {
+        "tr": "onlar",
+        "en": "they"
+       },
+       {
+        "tr": "ben",
+        "en": "I"
+       }
+      ],
+      [
+       "Θέλετε να έρθετε;",
+       {
+        "tr": "siz",
+        "en": "you (pl, formal)"
+       },
+       {
+        "tr": "siz",
+        "en": "you (pl, formal)"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Προτιμώ να δούμε μια ελληνική ταινία.",
+       "tr": "Bir Yunan filmi izlememizi tercih ederim.",
+       "en": "I would rather we watch a Greek film."
+      },
+      {
+       "el": "Μπορείς να με πάρεις από το σπίτι;",
+       "tr": "Beni evden alabilir misin?",
+       "en": "Can you pick me up from home?"
+      },
+      {
+       "el": "Θέλεις να σε πάρω από το σπίτι;",
+       "tr": "Seni evden almamı ister misin?",
+       "en": "Do you want me to pick you up from home?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Olumsuz: να μην ve μην",
+    "en": "The negative: να μην and μην"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**Να**'dan sonra olumsuzluk **μην** ile yapılır, **δεν** ile değil: *να μην αργήσεις* (geç kalma). Aynı biçim kısa bir uyarı da olur: **Μην αργήσεις!** (geç kalma!), **Μην ξεχάσεις!** (unutma!).\n\n*Μην*'in sondaki -ν'si Ders 3'teki *την, δεν* kuralına uyar: ünlü ve κ, π, τ, ξ, ψ, μπ, ντ, γκ, τσ, τζ önünde kalır, diğer ünsüzlerin önünde düşer: *μην αργήσεις, μην ξεχάσεις, μην κλείσεις*, ama *μη φύγεις*.\n\n«İstemiyorum, yapamam, -memeliyim» için **δεν** birinci fiilin önüne gelir: *δε θέλω να φύγω, δεν μπορώ να έρθω*. **Να μην** ise rica, uyarı ya da «yapmamayı tercih etme» içindir: *προτιμώ να μη φύγω νωρίς*.",
+     "en": "After **να** the negative is **μην**, not **δεν**: *να μην αργήσεις* (don't be late). The same form is also a short warning: **Μην αργήσεις!** (don't be late!), **Μην ξεχάσεις!** (don't forget!).\n\nThe final -ν of *μην* follows the rule of *την, δεν* from Lesson 3: it stays before a vowel and before κ, π, τ, ξ, ψ, μπ, ντ, γκ, τσ, τζ, and drops before other consonants: *μην αργήσεις, μην ξεχάσεις, μην κλείσεις*, but *μη φύγεις*.\n\nFor \"I don't want, I can't, I mustn't\", **δεν** goes before the first verb: *δε θέλω να φύγω, δεν μπορώ να έρθω*. **Να μην** is for requests, warnings and \"prefer not to\": *προτιμώ να μη φύγω νωρίς*."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Olumlu",
+       "en": "Positive"
+      },
+      {
+       "tr": "Olumsuz",
+       "en": "Negative"
+      }
+     ],
+     "rows": [
+      [
+       "να ξεχάσεις",
+       "να μην ξεχάσεις"
+      ],
+      [
+       "να κλείσουμε",
+       "να μην κλείσουμε"
+      ],
+      [
+       "να έρθετε",
+       "να μην έρθετε"
+      ],
+      [
+       "να φύγεις",
+       "να μη φύγεις"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Να μην αργήσεις!",
+       "tr": "Geç kalma!",
+       "en": "Don't be late!"
+      },
+      {
+       "el": "Μην ξεχάσεις τα εισιτήρια!",
+       "tr": "Biletleri unutma!",
+       "en": "Don't forget the tickets!"
+      },
+      {
+       "el": "Δεν πρέπει να αργήσουμε.",
+       "tr": "Geç kalmamalıyız.",
+       "en": "We must not be late."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "İzin istemek ve rica etmek",
+    "en": "Asking permission and making requests"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**Μπορώ να …;** izin (*η άδεια*) ister: «-ebilir miyim?». **Μπορείς να …;** bir arkadaştan, **Μπορείτε να …;** nazik biçimde ya da birkaç kişiden bir şey rica eder: «-ebilir misin / -ebilir misiniz?». Fiil, yapacak kişiye göre çekilir.",
+     "en": "**Μπορώ να …;** asks permission (*η άδεια*): \"may I …?\". **Μπορείς να …;** asks a friend, and **Μπορείτε να …;** asks politely or asks several people, to do something: \"can you …?\". The verb is conjugated for the person who will do it."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Cevap",
+       "en": "Answer"
+      },
+      {
+       "tr": "Anlamı",
+       "en": "Meaning"
+      }
+     ],
+     "rows": [
+      [
+       "Βεβαίως.",
+       {
+        "tr": "Tabii.",
+        "en": "Of course."
+       }
+      ],
+      [
+       "Εντάξει.",
+       {
+        "tr": "Tamam.",
+        "en": "All right."
+       }
+      ],
+      [
+       "Δεν υπάρχει πρόβλημα.",
+       {
+        "tr": "Sorun değil.",
+        "en": "No problem."
+       }
+      ],
+      [
+       "Δυστυχώς, δε γίνεται.",
+       {
+        "tr": "Maalesef, olmaz.",
+        "en": "Unfortunately, it's not possible."
+       }
+      ],
+      [
+       "Δεν μπορώ τώρα.",
+       {
+        "tr": "Şimdi yapamam.",
+        "en": "I can't now."
+       }
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Μπορώ να φύγω νωρίς σήμερα;",
+       "tr": "Bugün erken çıkabilir miyim?",
+       "en": "May I leave early today?"
+      },
+      {
+       "el": "Μπορείς να έρθεις νωρίς;",
+       "tr": "Erken gelebilir misin?",
+       "en": "Can you come early?"
+      },
+      {
+       "el": "Μπορείτε να κλείσετε το παράθυρο;",
+       "tr": "Pencereyi kapatabilir misiniz?",
+       "en": "Can you close the window?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Ülkeyi gösteren sıfatlar",
+    "en": "Adjectives of origin"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "[[Η προέλευση]] (köken) bir şeyin nereden geldiğidir. Bir film, şarkı ya da yemeğin hangi ülkeden olduğunu **-ικός, -ική, -ικό** ile biten sıfatlarla söylersin. Sıfat isme uyar: *ο ελληνικός καφές, η γαλλική ταινία, το τουρκικό τραγούδι*. *Τα γαλλικά* (Fransızca) dilin adıdır, *τα τουρκικά* gibi.",
+     "en": "[[Η προέλευση]] (origin) is where something comes from. To say which country a film, song or dish comes from you use adjectives in **-ικός, -ική, -ικό**. The adjective agrees with its noun: *ο ελληνικός καφές, η γαλλική ταινία, το τουρκικό τραγούδι*. *Τα γαλλικά* (French) is the name of the language, like *τα τουρκικά*."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Eril",
+       "en": "Masculine"
+      },
+      {
+       "tr": "Dişil",
+       "en": "Feminine"
+      },
+      {
+       "tr": "Nötr",
+       "en": "Neuter"
+      }
+     ],
+     "rows": [
+      [
+       "ελληνικός",
+       "ελληνική",
+       "ελληνικό"
+      ],
+      [
+       "τουρκικός",
+       "τουρκική",
+       "τουρκικό"
+      ],
+      [
+       "γαλλικός",
+       "γαλλική",
+       "γαλλικό"
+      ],
+      [
+       "αμερικανικός",
+       "αμερικανική",
+       "αμερικανικό"
+      ]
+     ],
+     "note": {
+      "tr": "Konuşmada *αμερικάνικος, αμερικάνικη, αμερικάνικο* ve *τούρκικος, τούρκικη, τούρκικο* de çok duyulur: vurgu başa doğru kayar, dişil -η ile biter (*ο τούρκικος καφές*).",
+      "en": "In speech you also often hear *αμερικάνικος, αμερικάνικη, αμερικάνικο* and *τούρκικος, τούρκικη, τούρκικο*: the accent moves towards the start and the feminine ends in -η (*ο τούρκικος καφές*)."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Προτιμώ την ελληνική μουσική.",
+       "tr": "Yunan müziğini tercih ederim.",
+       "en": "I prefer Greek music."
+      },
+      {
+       "el": "Η Ελένη βλέπει μια αμερικανική ταινία.",
+       "tr": "Eleni bir Amerikan filmi izliyor.",
+       "en": "Eleni is watching an American film."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/ch17-therino",
+      "oknos-book/ch17-mousiki",
+      "oknos-book/ch17-tragoudi",
+      "oknos-book/v-synaylia",
+      "oknos-book/v-parastasi",
+      "oknos-book/v-tameio",
+      "oknos-book/ch17-parea",
+      "oknos-book/v-adeia",
+      "oknos-book/v-proeleysi",
+      "oknos-book/ch07-ellinikos",
+      "oknos-book/ch17-tourkikos",
+      "oknos-book/ch17-gallikos",
+      "oknos-book/ch17-amerikanikos",
+      "oknos-book/ch17-prepei",
+      "oknos-book/ch17-xero",
+      "oknos-book/ch17-archizo",
+      "oknos-book/ch17-argo",
+      "oknos-book/v-protimo-verb",
+      "oknos-book/ch17-veveos"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**Türkçe -elim, -sin, Yunanca να.** Türkçede «gidelim, gelsin» gibi ekler istek ve öneri bildirir. Yunancada aynı işi ayrı bir küçük kelime yapar: **να πάμε, να έρθει**. İki dilde de ikinci fiil kişiye göre çekilir: *gelmeni istiyorum* = **θέλω να έρθεις**.",
+     "en": "**English \"let's\" and \"may\", Greek να.** Where English says \"let's go\" or \"I want you to come\", Greek uses a small word before a conjugated verb: **να πάμε, θέλω να έρθεις**. There is no \"to go\" form: the verb after να is always conjugated."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Να'yı atlama, πρέπει'yi çekme.** *Θέλω να πάω* denir, «θέλω πάω» denmez. *Πρέπει* hep aynı kalır: *πρέπει να φύγω, πρέπει να φύγεις*; «πρέπουμε» diye bir şey yok.",
+     "en": "**Do not drop να, and do not conjugate πρέπει.** You say *θέλω να πάω*, never \"θέλω πάω\". *Πρέπει* stays the same: *πρέπει να φύγω, πρέπει να φύγεις*; there is no \"πρέπουμε\"."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "exam_task": "a2ltr.writing.email_friendly",
+     "tr": "**Sınavda.** Arkadaşa yazılan kısa e-posta ya da mesajda (a2ltr.writing.email_friendly) genelde bir davet ve birkaç rica istenir. Kalıplar: *Θέλεις να έρθεις …;*, *Μπορείς να φέρεις …;*, *Μην ξεχάσεις …*.",
+     "en": "**In the exam.** A short e-mail or message to a friend (a2ltr.writing.email_friendly) usually asks you to invite someone and to make a few requests. Useful: *Θέλεις να έρθεις …;*, *Μπορείς να φέρεις …;*, *Μην ξεχάσεις …*."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene.",
+     "en": "Now you try."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch17-try-form",
+      "oknos-book/ch17-try-subject",
+      "oknos-book/ch17-try-min",
+      "oknos-book/ch17-try-permission",
+      "oknos-book/ch17-try-adj"
+     ]
+    }
+   ]
+  }
+ ]
+}

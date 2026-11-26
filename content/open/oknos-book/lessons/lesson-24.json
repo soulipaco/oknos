@@ -1,0 +1,664 @@
+{
+ "id": "oknos-book.lesson-24",
+ "curriculum": "oknos-book",
+ "stage": "lesson-24",
+ "level": "A2",
+ "title": {
+  "tr": "Tekrar: 19-23. dersler, bir yıl sonra uzun bir e-posta",
+  "en": "Review: lessons 19-23 in a long e-mail a year later"
+ },
+ "minutes": 18,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde **yeni hiçbir şey yok**: 19-23. dersler, bir yıl sonra Ayşe'nin yazdığı uzun bir e-postada ve altı kısa tabloda geri geliyor.\n\nAnahtar nokta: **bir kerelik kök** (*θα γράψω*) bu derslerin çoğunu taşıyor: *έγραψα* (19), *γράψε, μη γράψεις* (21), *αν γράψω, όταν γράψω* (22), *για να γράψω* (23).",
+     "en": "Nothing here is **new**: lessons 19-23 come back in a long e-mail that Ayşe writes a year later, and in six short tables.\n\nThe key point: the **once-only stem** (*θα γράψω*) carries most of these lessons: *έγραψα* (19), *γράψε, μη γράψεις* (21), *αν γράψω, όταν γράψω* (22), *για να γράψω* (23)."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bir yıl geçti. Ayşe, Yunanca kursundan arkadaşı Eleni'ye uzun bir e-posta yazıyor. [[Τι νέα;]] «ne var ne yok?» demek. [[είπε]] «dedi» (*λέω* → *είπα*, 19. ders).",
+     "en": "A year has passed. Ayşe writes a long e-mail to Eleni, a friend from her Greek class. [[Τι νέα;]] means «what's new?». [[είπε]] is «said» (*λέω* → *είπα*, Lesson 19)."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Nisan ayında, bir e-posta (beş paragraf).",
+      "en": "In April, an e-mail (five paragraphs)."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Γεια σου Ελένη! Έχω πολλά νέα! Πέρσι το καλοκαίρι πήγα διακοπές στη Νάξο με τη Ζέινεπ. Πήραμε το πλοίο από τον Πειραιά και φτάσαμε το μεσημέρι. Κολυμπήσαμε πολύ, φάγαμε ψάρι και ήπιαμε κρασί. Ήταν τέλεια!",
+       "tr": "Merhaba Eleni! Çok haberim var! Geçen yaz Zeynep'le Naksos'a tatile gittim. Pire'den gemiye bindik ve öğlen vardık. Çok yüzdük, balık yedik, şarap içtik. Harikaydı!",
+       "en": "Hi Eleni! I have a lot of news! Last summer I went on holiday to Naxos with Zeynep. We took the ship from Piraeus and arrived at midday. We swam a lot, ate fish and drank wine. It was great!"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Έχω και μια πρόταση για νέα δουλειά. Ο μισθός είναι καλύτερος από τον μισθό που παίρνω τώρα, αλλά η εταιρεία είναι πιο μακριά και το ωράριο είναι μεγαλύτερο. Επειδή θέλω καλύτερο μισθό, θα πάρω τη νέα δουλειά, αν και δε θα έχω ρεπό τα Σάββατα. Όταν αρχίσω, θα σου πω πώς είναι.",
+       "tr": "Bir de yeni bir iş teklifim var. Maaş şimdi aldığım maaştan daha iyi, ama şirket daha uzak ve mesai saatleri daha uzun. Daha iyi maaş istediğim için, cumartesileri izinli olmayacak olsam da yeni işi alacağım. Başlayınca nasıl olduğunu sana anlatırım.",
+       "en": "I also have an offer of a new job. The salary is better than the salary I get now, but the company is further away and the working hours are longer. Because I want a better salary, I will take the new job, although I will not have Saturdays off. When I start, I will tell you what it is like."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Την περασμένη εβδομάδα ήμουν άρρωστη. Την Τρίτη πήγα στον γιατρό, γιατί είχα πυρετό. Ο γιατρός μου είπε: «Πάρτε ένα χάπι το πρωί και ένα το βράδυ και μην πάτε στη δουλειά.» Ευτυχώς δεν ήταν σοβαρό!",
+       "tr": "Geçen hafta hastaydım. Salı günü doktora gittim, çünkü ateşim vardı. Doktor bana şöyle dedi: «Sabah bir hap, akşam bir hap alın ve işe gitmeyin.» Neyse ki ciddi değildi!",
+       "en": "Last week I was ill. On Tuesday I went to the doctor, because I had a fever. The doctor told me: «Take one pill in the morning and one in the evening, and do not go to work.» Fortunately it was not serious!"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Χθες πήγα στην τράπεζα και στο ταχυδρομείο. Στην τράπεζα άνοιξα λογαριασμό και έκανα μια κατάθεση. Στο ταχυδρομείο έστειλα ένα δέμα στη μητέρα μου, συστημένο. Το βράδυ της τηλεφώνησα για να της το πω.",
+       "tr": "Dün bankaya ve postaneye gittim. Bankada hesap açtım ve para yatırdım. Postanede anneme taahhütlü bir koli gönderdim. Akşam ona haber vermek için telefon ettim.",
+       "en": "Yesterday I went to the bank and the post office. At the bank I opened an account and made a deposit. At the post office I sent a parcel to my mother, registered. In the evening I phoned her to tell her about it."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Σε δύο εβδομάδες έχουμε Πάσχα. Πριν από δύο μέρες είδα τη γειτόνισσά μου και μου είπε: «Όταν έρθεις τη Μεγάλη Πέμπτη, θα βάψουμε αυγά μαζί.» Στις 21 Μαΐου είναι η γιορτή σου. Θα σου τηλεφωνήσω να σου πω «Χρόνια πολλά!» Και εσύ; Τι νέα; Γράψε μου! Καλό Πάσχα! Φιλιά, Αϊσέ",
+       "tr": "İki hafta sonra Paskalya. İki gün önce komşumu gördüm, bana şöyle dedi: «Büyük Perşembe günü gelince birlikte yumurta boyayacağız.» 21 Mayıs'ta senin isim günün. Seni arayıp «Nice yıllara!» diyeceğim. Ya sen? Ne var ne yok? Bana yaz! İyi Paskalyalar! Öpücükler, Ayşe",
+       "en": "Easter is in two weeks. Two days ago I saw my neighbour, and she told me: «When you come on Holy Thursday, we will dye eggs together.» Your name day is on 21 May. I will phone you to say «Many happy returns!» And you? What's new? Write to me! Happy Easter! Kisses, Ayşe"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "E-postaya göre:",
+     "en": "According to the e-mail:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch24-q-job",
+      "oknos-book/ch24-q-tf"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "19. ders. Geçmiş, geleceğin **bir kerelik kökünden** yapılır (*θα γράψω* → *έγραψα*). Ekler her fiilde aynı: **-α, -ες, -ε, -αμε, -ατε, -αν(ε)**. *Έ-* yalnızca vurgu için gelir: *έγραψα* ama *γράψαμε*. *Είμαι* ve *έχω* için tek geçmiş var: *ήμουν*, *είχα*.",
+     "en": "Lesson 19. The past is built from the **once-only stem** of the future (*θα γράψω* → *έγραψα*). The endings are the same for every verb: **-α, -ες, -ε, -αμε, -ατε, -αν(ε)**. *Έ-* comes only for the stress: *έγραψα* but *γράψαμε*. *Είμαι* and *έχω* have only one past: *ήμουν*, *είχα*."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Grup",
+       "en": "Group"
+      },
+      {
+       "tr": "Şimdiki zaman",
+       "en": "Present"
+      },
+      "εγώ",
+      "εμείς"
+     ],
+     "rows": [
+      [
+       {
+        "tr": "A",
+        "en": "A"
+       },
+       "γράφω",
+       "έγραψα",
+       "γράψαμε"
+      ],
+      [
+       {
+        "tr": "A",
+        "en": "A"
+       },
+       "ανοίγω",
+       "άνοιξα",
+       "ανοίξαμε"
+      ],
+      [
+       {
+        "tr": "B1, B2",
+        "en": "B1, B2"
+       },
+       "μιλάω",
+       "μίλησα",
+       "μιλήσαμε"
+      ],
+      [
+       {
+        "tr": "düzensiz",
+        "en": "irregular"
+       },
+       "πάω",
+       "πήγα",
+       "πήγαμε"
+      ],
+      [
+       {
+        "tr": "düzensiz",
+        "en": "irregular"
+       },
+       "τρώω",
+       "έφαγα",
+       "φάγαμε"
+      ],
+      [
+       {
+        "tr": "düzensiz",
+        "en": "irregular"
+       },
+       "δίνω",
+       "έδωσα",
+       "δώσαμε"
+      ],
+      [
+       {
+        "tr": "A (kendi kökü)",
+        "en": "A (own stem)"
+       },
+       "στέλνω",
+       "έστειλα",
+       "στείλαμε"
+      ],
+      [
+       {
+        "tr": "tek geçmiş",
+        "en": "one past"
+       },
+       "είμαι · έχω",
+       "ήμουν · είχα",
+       "ήμασταν · είχαμε"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Στο ταχυδρομείο έστειλα ένα δέμα.",
+       "tr": "Postanede bir koli gönderdim.",
+       "en": "At the post office I sent a parcel."
+      }
+     ]
+    }
+   ],
+   "title": {
+    "tr": "Geçmiş zaman: tüm gruplar (19)",
+    "en": "The simple past: all groups (19)"
+   }
+  },
+  {
+   "kind": "grammar",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "20. ders. «Birine» için küçük kelimeler fiilin **önünde** durur: **μου, σου, του, της, μας, σας, τους**. İki küçük kelime yan yana gelirse **önce kişi, sonra şey**: *μου το δίνεις*, *της το έστειλα*, *δε σου το δίνω*. Kişi bir isimse *σε* kullanılır: *στη μητέρα μου*.",
+     "en": "Lesson 20. The little words for «to someone» stand **before** the verb: **μου, σου, του, της, μας, σας, τους**. When two little words meet, the **person comes first, then the thing**: *μου το δίνεις*, *της το έστειλα*, *δε σου το δίνω*. If the person is a noun, use *σε*: *στη μητέρα μου*."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Kim?",
+       "en": "Who?"
+      },
+      {
+       "tr": "«-e» hâli",
+       "en": "«To»"
+      }
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "μου"
+      ],
+      [
+       "εσύ",
+       "σου"
+      ],
+      [
+       "αυτός · αυτό",
+       "του"
+      ],
+      [
+       "αυτή",
+       "της"
+      ],
+      [
+       "εμείς",
+       "μας"
+      ],
+      [
+       "εσείς",
+       "σας"
+      ],
+      [
+       "αυτοί",
+       "τους"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Το δέμα; Της το έστειλα χθες.",
+       "tr": "Koli mi? Ona dün gönderdim.",
+       "en": "The parcel? I sent it to her yesterday."
+      },
+      {
+       "el": "Τα γραμματόσημα; Σας τα δίνω τώρα.",
+       "tr": "Pullar mı? Size şimdi veriyorum.",
+       "en": "The stamps? I am giving them to you now."
+      }
+     ]
+    }
+   ],
+   "title": {
+    "tr": "«Birine» zamirleri, iki zamir (20)",
+    "en": "«To someone» pronouns, and two together (20)"
+   }
+  },
+  {
+   "kind": "grammar",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "21. ders. Emir de bir kerelik kökten gelir: arkadaşa **-ε**, birkaç kişiye ya da nazikçe **-τε** (*θα δώσω* → *δώσε, δώστε*). Olumsuzu **μην + να ile kullanılan biçim**: *μην πάρεις*, *μην πάρετε* («μην πάρε» yok). Küçük zamir olumlu emirde fiilin **arkasına**, olumsuzda **önüne** gelir.",
+     "en": "Lesson 21. The instruction also comes from the once-only stem: **-ε** to a friend, **-τε** to several people or politely (*θα δώσω* → *δώσε, δώστε*). The negative is **μην + the form used after να**: *μην πάρεις*, *μην πάρετε* (never «μην πάρε»). The little pronoun goes **after** a positive instruction and **before** a negative one."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Olumlu (sen)",
+       "en": "Positive (friend)"
+      },
+      {
+       "tr": "Olumlu (siz)",
+       "en": "Positive (polite)"
+      },
+      {
+       "tr": "Olumsuz (sen)",
+       "en": "Negative (friend)"
+      },
+      {
+       "tr": "Olumsuz (siz)",
+       "en": "Negative (polite)"
+      }
+     ],
+     "rows": [
+      [
+       "πάρε",
+       "πάρτε",
+       "μην πάρεις",
+       "μην πάρετε"
+      ],
+      [
+       "δώσε",
+       "δώστε",
+       "μη δώσεις",
+       "μη δώσετε"
+      ],
+      [
+       "έλα",
+       "ελάτε",
+       "μην έρθεις",
+       "μην έρθετε"
+      ],
+      [
+       "δώσε μου",
+       "δώστε μου",
+       "μη μου δώσεις",
+       "μη μου δώσετε"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Μη μου το δώσεις!",
+       "tr": "Bana onu verme!",
+       "en": "Do not give it to me!"
+      }
+     ]
+    }
+   ],
+   "title": {
+    "tr": "Emir ve μην (21)",
+    "en": "The instruction and μην (21)"
+   }
+  },
+  {
+   "kind": "grammar",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "22. ders. «Kimin?» sorusunun cevabı isimde yeni bir **ekle** ve yeni bir **artikelle** gelir: **το σπίτι της Μαρίας**. Çoğulda üç cinste de **των … -ων**. Aynı biçim yaşta (*τριάντα χρονών*) ve tarihte (*στις 21 Μαΐου*) de çıkar.",
+     "en": "Lesson 22. The answer to «whose?» is a new **ending** on the noun and a new **article**: **το σπίτι της Μαρίας**. In the plural all three genders take **των … -ων**. The same form appears in age (*τριάντα χρονών*) and dates (*στις 21 Μαΐου*)."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Yalın hâl",
+       "en": "Nominative"
+      },
+      {
+       "tr": "Tamlayan tekil",
+       "en": "Genitive singular"
+      },
+      {
+       "tr": "Tamlayan çoğul",
+       "en": "Genitive plural"
+      }
+     ],
+     "rows": [
+      [
+       "ο φίλος",
+       "του φίλου",
+       "των φίλων"
+      ],
+      [
+       "η γυναίκα",
+       "της γυναίκας",
+       "των γυναικών"
+      ],
+      [
+       "το παιδί",
+       "του παιδιού",
+       "των παιδιών"
+      ],
+      [
+       "το δώρο",
+       "του δώρου",
+       "των δώρων"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Η γιορτή της Ελένης είναι στις 21 Μαΐου.",
+       "tr": "Eleni'nin isim günü 21 Mayıs'ta.",
+       "en": "Eleni's name day is on 21 May."
+      },
+      {
+       "el": "Το δώρο των παιδιών είναι δίπλα στο δέντρο.",
+       "tr": "Çocukların hediyesi ağacın yanında.",
+       "en": "The children's gift is next to the tree."
+      }
+     ]
+    }
+   ],
+   "title": {
+    "tr": "İsmin tamlayan hâli (22)",
+    "en": "The genitive of nouns (22)"
+   }
+  },
+  {
+   "kind": "grammar",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "22 ve 23. dersler. Bağlaçtan sonra **hangi fiil biçimi** geldiğine bak. Gelecekte tek bir olay için **αν** ve **όταν** bir kerelik kökü alır, **θα olmadan** (bir durum ya da alışkanlık için şimdiki zaman: *αν έχεις χρόνο*). **για να** + *να* ile kullanılan biçim. **επειδή** ve **αν και** normal bir fiil alır, asla *να* değil.",
+     "en": "Lessons 22 and 23. Look at **which verb form** follows the link word. For one event in the future, **αν** and **όταν** take the once-only stem, **without θα** (for a state or a habit, the present: *αν έχεις χρόνο*). **για να** takes the form used after *να*. **επειδή** and **αν και** take an ordinary verb, never *να*."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Kelime",
+       "en": "Word"
+      },
+      {
+       "tr": "Anlamı",
+       "en": "Meaning"
+      },
+      {
+       "tr": "Sonra gelen",
+       "en": "What follows"
+      },
+      {
+       "tr": "Örnek",
+       "en": "Example"
+      }
+     ],
+     "rows": [
+      [
+       "αν",
+       {
+        "tr": "eğer",
+        "en": "if"
+       },
+       {
+        "tr": "bir olay: bir kerelik kök, θα yok",
+        "en": "an event: once-only stem, no θα"
+       },
+       "Αν δεν αργήσω, θα έρθω."
+      ],
+      [
+       "όταν",
+       {
+        "tr": "…dığında",
+        "en": "when"
+       },
+       {
+        "tr": "gelecek: bir kerelik kök, θα yok",
+        "en": "the future: once-only stem, no θα"
+       },
+       "Όταν έρθεις τη Μεγάλη Πέμπτη, θα βάψουμε αυγά."
+      ],
+      [
+       "για να",
+       {
+        "tr": "…mek için",
+        "en": "in order to"
+       },
+       {
+        "tr": "να ile kullanılan biçim",
+        "en": "the form used after να"
+       },
+       "Φεύγω νωρίς για να μην αργήσω."
+      ],
+      [
+       "επειδή",
+       {
+        "tr": "çünkü",
+        "en": "because"
+       },
+       {
+        "tr": "normal fiil",
+        "en": "an ordinary verb"
+       },
+       "Επειδή θέλω καλύτερο μισθό, θα πάρω τη δουλειά."
+      ],
+      [
+       "αν και",
+       {
+        "tr": "-se de",
+        "en": "although"
+       },
+       {
+        "tr": "normal fiil",
+        "en": "an ordinary verb"
+       },
+       "Αν και κάνει κρύο, πάμε στη θάλασσα."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Αν και είμαι άρρωστη, θα έρθω στη γιορτή.",
+       "tr": "Hasta olsam da isim gününe geleceğim.",
+       "en": "Although I am ill, I will come to the name day."
+      }
+     ]
+    }
+   ],
+   "title": {
+    "tr": "Cümle bağlaçları (22, 23)",
+    "en": "Link words (22, 23)"
+   }
+  },
+  {
+   "kind": "grammar",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "23. ders. «Daha …» için **πιο** + sıfat + **από**: *πιο ακριβός από…*. **πιο her zaman olur**: *πιο καλός*, *πιο μεγάλος* da doğru. Dört sık biçimi kelime olarak öğren: *καλύτερος, χειρότερος, μεγαλύτερος, μικρότερος* (insanlar için «yaşça büyük/küçük» de). «En …» için başa **artikel** gelir: *ο πιο ακριβός, ο καλύτερος*. «πιο καλύτερος» yok.",
+     "en": "Lesson 23. For «more …» use **πιο** + adjective + **από**: *πιο ακριβός από…*. **πιο always works**: *πιο καλός*, *πιο μεγάλος* are right too. Learn four common forms as words: *καλύτερος, χειρότερος, μεγαλύτερος, μικρότερος* (for people also «older, younger»). For «the most …» put the **article** in front: *ο πιο ακριβός, ο καλύτερος*. There is no «πιο καλύτερος»."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Sıfat",
+       "en": "Adjective"
+      },
+      {
+       "tr": "Daha …",
+       "en": "Comparative"
+      },
+      {
+       "tr": "En …",
+       "en": "Superlative"
+      }
+     ],
+     "rows": [
+      [
+       "ακριβός",
+       "πιο ακριβός",
+       "ο πιο ακριβός"
+      ],
+      [
+       "καλός",
+       "καλύτερος",
+       "ο καλύτερος"
+      ],
+      [
+       "μεγάλος",
+       "μεγαλύτερος",
+       "ο μεγαλύτερος"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Ο νέος μισθός είναι καλύτερος από τον μισθό που παίρνω τώρα.",
+       "tr": "Yeni maaş, şimdi aldığım maaştan daha iyi.",
+       "en": "The new salary is better than the salary I get now."
+      },
+      {
+       "el": "Ο Νίκος είναι μεγαλύτερος από τη Ζέινεπ.",
+       "tr": "Nikos, Zeynep'ten büyük.",
+       "en": "Nikos is older than Zeynep."
+      }
+     ]
+    }
+   ],
+   "title": {
+    "tr": "Karşılaştırma (23)",
+    "en": "Comparing (23)"
+   }
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Yeni kelime yok: hepsi e-postada geçiyor.",
+     "en": "No new words: all of them are in the e-mail."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/ch19-persi",
+      "oknos-book/ch19-perasmenos",
+      "oknos-book/ch19-ftano",
+      "oknos-book/ch19-teleia",
+      "oknos-book/ch20-katathesi",
+      "oknos-book/ch20-stelno",
+      "oknos-book/ch20-anoigo",
+      "oknos-book/ch20-dema",
+      "oknos-book/ch20-systimeno",
+      "oknos-book/ch20-tachydromeio",
+      "oknos-book/ch21-arrostos",
+      "oknos-book/v-chapi",
+      "oknos-book/v-pyretos",
+      "oknos-book/ch22-pascha",
+      "oknos-book/ch22-geitonas",
+      "oknos-book/v-giorti",
+      "oknos-book/ch23-orario",
+      "oknos-book/v-misthos",
+      "oknos-book/ch23-epeidi",
+      "oknos-book/ch23-an-kai",
+      "oknos-book/ch23-kalyteros",
+      "oknos-book/ch23-megalyteros"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Geçmişte *έ-* ve zaman kelimesi.** *Έγραψα* ama *γράψαμε*: üç heceli biçim *έ-* almaz. *Χθες*, *πέρσι*, *προχθές* geçmişle gelir: *Χθες πήγα*; «*Χθες πάω*» yanlış.",
+     "en": "**The past: *έ-* and the time word.** *Έγραψα* but *γράψαμε*: a three-syllable form takes no *έ-*. *Χθες*, *πέρσι*, *προχθές* go with the past: *Χθες πήγα*; «*Χθες πάω*» is wrong."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Küçük kelime nerede?** *Του τηλεφωνώ*, «*Τον τηλεφωνώ*» değil. Olumlu emirde arkada: *Δώσε μου*; olumsuzda önde: *μη μου δώσεις*. «*Μην πάρε*» yok: *μην πάρεις*.",
+     "en": "**Where is the little word?** *Του τηλεφωνώ*, not «*Τον τηλεφωνώ*». After a positive instruction: *Δώσε μου*; before a negative one: *μη μου δώσεις*. Never «*Μην πάρε*»: *μην πάρεις*."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "tr": "**Sınavda e-posta.** A2'deki arkadaşça e-posta (a2ltr.writing.email_friendly) 40-60 kelime: *Γεια σου …!*, geçmişte üç dört cümle, bir soru ve *Φιλιά* yeter. B1'deki resmî metin (b1keg.writing.formal) 130-170 kelime ve dili farklı: *Αξιότιμε κύριε* ya da *Αξιότιμη κυρία* ile başlar, baştan sona *εσείς* kullanır (*Σας γράφω…*), *Με εκτίμηση* ile biter; *Φιλιά* olmaz.",
+     "en": "**The e-mail in the exam.** The A2 friendly e-mail (a2ltr.writing.email_friendly) is 40-60 words: *Γεια σου …!*, three or four sentences in the past, a question and *Φιλιά* are enough. The B1 formal text (b1keg.writing.formal) is 130-170 words and sounds different: it opens with *Αξιότιμε κύριε* or *Αξιότιμη κυρία*, uses *εσείς* throughout (*Σας γράφω…*) and ends with *Με εκτίμηση*, never *Φιλιά*.",
+     "exam_task": "b1keg.writing.formal"
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene.",
+     "en": "Now you try."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch24-try-past-imp",
+      "oknos-book/ch24-try-gen",
+      "oknos-book/ch24-try-clause",
+      "oknos-book/ch24-try-compare"
+     ]
+    }
+   ]
+  }
+ ]
+}

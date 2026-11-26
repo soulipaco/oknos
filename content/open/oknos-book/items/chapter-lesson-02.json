@@ -1,0 +1,921 @@
+[
+ {
+  "id": "ch02-eimai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "είμαι",
+  "pos": "verb",
+  "en": "to be (I am)",
+  "tr": "olmak (-im)",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "example": {
+   "el": "Είμαι μηχανικός.",
+   "en": "I am an engineer.",
+   "tr": "Mühendisim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-ti-douleia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τι δουλειά κάνεις;",
+  "pos": "phrase",
+  "en": "what do you do? (informal)",
+  "tr": "ne iş yapıyorsun? (samimi)",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "example": {
+   "el": "Τι δουλειά κάνεις; — Είμαι φοιτητής.",
+   "en": "What do you do? — I'm a student.",
+   "tr": "Ne iş yapıyorsun? — Öğrenciyim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-ti-douleia-formal",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τι δουλειά κάνετε;",
+  "pos": "phrase",
+  "en": "what do you do? (formal)",
+  "tr": "ne iş yapıyorsunuz? (resmî)",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-apo-do",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "από δω ο/η …",
+  "pos": "phrase",
+  "en": "this is … (introducing someone)",
+  "tr": "bu … (birini tanıştırırken)",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "example": {
+   "el": "Νίκο, από δω ο Μεχμέτ.",
+   "en": "Nikos, this is Mehmet.",
+   "tr": "Nikos, bu Mehmet."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-kyrios",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο κύριος",
+  "lemma": "κύριος",
+  "pos": "noun",
+  "gender": "m",
+  "en": "Mr; sir; gentleman",
+  "tr": "bay; beyefendi",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "example": {
+   "el": "Καλησπέρα, κύριε Παππά!",
+   "en": "Good evening, Mr Pappas!",
+   "tr": "İyi akşamlar Bay Pappas!"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-foititis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο φοιτητής / η φοιτήτρια",
+  "lemma": "φοιτητής",
+  "pos": "noun",
+  "en": "(university) student",
+  "tr": "üniversite öğrencisi",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "example": {
+   "el": "Εγώ είμαι φοιτητής.",
+   "en": "I am a student.",
+   "tr": "Ben öğrenciyim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-ypallilos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο/η υπάλληλος",
+  "lemma": "υπάλληλος",
+  "pos": "noun",
+  "en": "employee; clerk",
+  "tr": "memur; çalışan",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-filos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο φίλος / η φίλη",
+  "lemma": "φίλος",
+  "pos": "noun",
+  "en": "friend",
+  "tr": "arkadaş",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "example": {
+   "el": "Γεια σου, φίλε!",
+   "en": "Hi, mate!",
+   "tr": "Selam dostum!"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-oraia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ωραία",
+  "pos": "adv",
+  "en": "nice; great",
+  "tr": "güzel; harika",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "example": {
+   "el": "Α, ωραία!",
+   "en": "Oh, nice!",
+   "tr": "Aa, ne güzel!"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-num-0",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "μηδέν",
+  "pos": "num",
+  "en": "zero (0)",
+  "tr": "sıfır (0)",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-num-1",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ένα",
+  "pos": "num",
+  "en": "one (1)",
+  "tr": "bir (1)",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-num-2",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "δύο",
+  "pos": "num",
+  "en": "two (2)",
+  "tr": "iki (2)",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-num-3",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τρία",
+  "pos": "num",
+  "en": "three (3)",
+  "tr": "üç (3)",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-num-4",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τέσσερα",
+  "pos": "num",
+  "en": "four (4)",
+  "tr": "dört (4)",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-num-5",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πέντε",
+  "pos": "num",
+  "en": "five (5)",
+  "tr": "beş (5)",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-num-6",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "έξι",
+  "pos": "num",
+  "en": "six (6)",
+  "tr": "altı (6)",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-num-7",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εφτά",
+  "pos": "num",
+  "en": "seven (7); also written επτά",
+  "tr": "yedi (7); επτά diye de yazılır",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-num-8",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "οχτώ",
+  "pos": "num",
+  "en": "eight (8); also written οκτώ",
+  "tr": "sekiz (8); οκτώ diye de yazılır",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-num-9",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εννιά",
+  "pos": "num",
+  "en": "nine (9); also written εννέα",
+  "tr": "dokuz (9); εννέα diye de yazılır",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-num-10",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "δέκα",
+  "pos": "num",
+  "en": "ten (10)",
+  "tr": "on (10)",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-q-mehmet-job",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ο Μεχμέτ είναι …",
+   "en": "Mehmet is …",
+   "tr": "Mehmet …"
+  },
+  "options": [
+   "μηχανικός.",
+   "φοιτητής.",
+   "λογιστής."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Είμαι μηχανικός», he says twice. Nikos is the student, Mr Pappas the accountant.",
+   "tr": "İki kez «Είμαι μηχανικός» diyor. Öğrenci olan Nikos, muhasebeci Bay Pappas."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-q-true-false",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Ο Νίκος είναι φοιτητής.",
+    "en": "Nikos is a student.",
+    "tr": "Nikos öğrenci.",
+    "answer": true
+   },
+   {
+    "el": "Η Ελένη είναι λογίστρια.",
+    "en": "Eleni is an accountant.",
+    "tr": "Eleni muhasebeci.",
+    "answer": false
+   },
+   {
+    "el": "Ο Νίκος και ο κύριος Παππάς είναι από τη Θεσσαλονίκη.",
+    "en": "Nikos and Mr Pappas are from Thessaloniki.",
+    "tr": "Nikos ve Bay Pappas Selanikli.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "Eleni is a doctor (γιατρός).",
+   "tr": "Eleni doktor (γιατρός)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-try-eimaste",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "grammar": [
+   "verb.eimai.present"
+  ],
+  "cue": {
+   "lemma": "είμαι",
+   "tense": "present",
+   "person": "1pl"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Ο Νίκος κι εγώ {1} από τη Θεσσαλονίκη.",
+  "answer": {
+   "1": [
+    "είμαστε"
+   ]
+  },
+  "options": {
+   "1": [
+    "είμαστε",
+    "είναι",
+    "είστε"
+   ]
+  },
+  "translation": {
+   "en": "Nikos and I are from Thessaloniki.",
+   "tr": "Nikos ve ben Selanikliyiz."
+  },
+  "explain": {
+   "en": "«Nikos and I» = we: είμαστε. (κι is και, \"and\", shortened before the vowel of εγώ.)",
+   "tr": "«Nikos ve ben» = biz: είμαστε. (κι, \"ve\" anlamındaki και'nin εγώ'nun ünlüsünden önceki kısa hâli.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-try-vocative",
+  "ask": {
+   "en": "You ask Giorgos what he does. How do you call him?",
+   "tr": "Yorgos'a ne iş yaptığını soruyorsun. Ona nasıl seslenirsin?"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "prompt": {
+   "el": "«…, τι δουλειά κάνεις;» (ο Γιώργος)",
+   "en": "You ask Giorgos what he does. How do you call him?",
+   "tr": "Yorgos'a ne iş yaptığını soruyorsun. Ona nasıl seslenirsin?"
+  },
+  "options": [
+   "Γιώργο",
+   "Γιώργος",
+   "Γιώργε"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Calling someone: -ος becomes -ο (Νίκος → Νίκο, Γιώργος → Γιώργο).",
+   "tr": "Seslenirken -ος, -ο olur (Νίκος → Νίκο, Γιώργος → Γιώργο)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-try-kyrie",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "prompt": {
+   "el": "«Καλημέρα, … Παππά!»",
+   "en": "Good morning, Mr Pappas!",
+   "tr": "Günaydın Bay Pappas!"
+  },
+  "options": [
+   "κύριε",
+   "κύριος",
+   "κύριο"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«κύριος» is not a first name: like most ordinary -ος words it takes -ε: κύριε Παππά.",
+   "tr": "«κύριος» bir ad değil; çoğu sıradan -ος kelimesi gibi -ε alır: κύριε Παππά."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-try-numbers",
+  "type": "match",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the numbers.",
+   "tr": "Sayıları eşleştir."
+  },
+  "left": [
+   "3",
+   "7",
+   "9",
+   "4"
+  ],
+  "right": [
+   "τρία",
+   "εφτά",
+   "εννιά",
+   "τέσσερα"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-p-eisai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "grammar": [
+   "verb.eimai.present"
+  ],
+  "cue": {
+   "lemma": "είμαι",
+   "tense": "present",
+   "person": "2sg"
+  },
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Είσαι κι εσύ φοιτητής; — Ναι, {1} φοιτητής.",
+  "answer": {
+   "1": [
+    "είμαι"
+   ]
+  },
+  "options": {
+   "1": [
+    "είμαι",
+    "είσαι",
+    "είναι"
+   ]
+  },
+  "translation": {
+   "en": "Are you a student too? — Yes, I am a student.",
+   "tr": "Sen de öğrenci misin? — Evet, öğrenciyim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-p-eiste",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "grammar": [
+   "verb.eimai.present"
+  ],
+  "cue": {
+   "lemma": "είμαι",
+   "tense": "present",
+   "person": "2pl"
+  },
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Κύριε Παππά, εσείς {1} λογιστής;",
+  "answer": {
+   "1": [
+    "είστε"
+   ]
+  },
+  "options": {
+   "1": [
+    "είστε",
+    "είσαι",
+    "είναι"
+   ]
+  },
+  "translation": {
+   "en": "Mr Pappas, are you an accountant?",
+   "tr": "Bay Pappas, siz muhasebeci misiniz?"
+  },
+  "explain": {
+   "en": "Speaking formally to one person, the verb is plural, as in Turkish: siz … misiniz → εσείς είστε.",
+   "tr": "Tek bir kişiyle resmî konuşurken fiil, Türkçedeki gibi çoğuldur: siz … misiniz → εσείς είστε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-p-einai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "grammar": [
+   "verb.eimai.present"
+  ],
+  "cue": {
+   "lemma": "είμαι",
+   "tense": "present",
+   "person": "3sg"
+  },
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Η Ελένη {1} γιατρός.",
+  "answer": {
+   "1": [
+    "είναι"
+   ]
+  },
+  "options": {
+   "1": [
+    "είναι",
+    "είμαι",
+    "είσαι"
+   ]
+  },
+  "translation": {
+   "en": "Eleni is a doctor.",
+   "tr": "Eleni doktor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-p-einai-pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "grammar": [
+   "verb.eimai.present"
+  ],
+  "cue": {
+   "lemma": "είμαι",
+   "tense": "present",
+   "person": "3pl"
+  },
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Ο Νίκος και η Ελένη {1} από την Ελλάδα.",
+  "answer": {
+   "1": [
+    "είναι"
+   ]
+  },
+  "options": {
+   "1": [
+    "είναι",
+    "είμαστε",
+    "είστε"
+   ]
+  },
+  "translation": {
+   "en": "Nikos and Eleni are from Greece.",
+   "tr": "Nikos ve Eleni Yunanistanlı."
+  },
+  "explain": {
+   "en": "«he/she is» and «they are» are the same word: είναι.",
+   "tr": "«o …» ile «onlar …» aynı kelime: είναι."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-p-answer-job",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "rubric": {
+   "el": "Διαλέγω την απάντηση.",
+   "en": "Choose the answer.",
+   "tr": "Cevabı seç."
+  },
+  "prompt": {
+   "el": "Τι δουλειά κάνεις;",
+   "en": "What do you do?",
+   "tr": "Ne iş yapıyorsun?"
+  },
+  "options": [
+   "Είμαι φοιτήτρια.",
+   "Είμαι από την Ελλάδα.",
+   "Με λένε Μαρία."
+  ],
+  "answer": 0,
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-p-vocative-kostas",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "prompt": {
+   "el": "«Γεια σου, …!» (ο Κώστας)",
+   "en": "Hi, Kostas!",
+   "tr": "Merhaba Kostas!"
+  },
+  "options": [
+   "Κώστα",
+   "Κώστας",
+   "Κώστε"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "-ας becomes -α: Κώστας → Κώστα.",
+   "tr": "-ας, -α olur: Κώστας → Κώστα."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ },
+ {
+  "id": "ch02-p-numbers",
+  "type": "match",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-02"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the numbers.",
+   "tr": "Sayıları eşleştir."
+  },
+  "left": [
+   "2",
+   "5",
+   "10",
+   "0"
+  ],
+  "right": [
+   "δύο",
+   "πέντε",
+   "δέκα",
+   "μηδέν"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-02",
+   "by": "coach"
+  }
+ }
+]

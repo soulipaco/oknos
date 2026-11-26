@@ -334,6 +334,10 @@ class Manifest(Strict):
     source: str
     exam_blueprints: list[str] = []
     for_ui_lang: list[Literal["en", "tr"]] | None = None
+    # Packs this one took content over from (an open book that was a learner's private pack):
+    # their items with the same id, or a vocab item with the same word, are left out of the
+    # catalog, and the learner's history moves to this pack's item (src/oknos/moves.py).
+    replaces: list[str] = []
 
 
 class Unit(Strict):
@@ -430,6 +434,8 @@ class Catalog:
     skipped_later_types: int = 0
     # (curriculum id, stage id) -> (pack, chapter); a later content root (the coach's) replaces an earlier one
     chapters: dict[tuple[str, str], tuple[Pack, "chapters_mod.Chapter"]] = field(default_factory=dict)
+    # an old item key -> the item that replaces it (a pack's `replaces`); the history moves there
+    moved: dict[str, str] = field(default_factory=dict)
 
     def chapter(self, curriculum: str, stage: str) -> "chapters_mod.Chapter | None":
         entry = self.chapters.get((curriculum, stage))
@@ -619,6 +625,7 @@ def load_all(roots: list[tuple[str, Path]] | None = None) -> Catalog:
                 catalog.items[f"{pack.id}/{item_id}"] = (pack, item)
             for chapter in pack.chapters.values():
                 catalog.chapters[(chapter.curriculum, chapter.stage)] = (pack, chapter)
+    apply_replaces(catalog)
     catalog.problems.extend(chapter_ref_problems(catalog))
     set_pictures(catalog)
     set_chapter_texts(catalog)
@@ -627,13 +634,58 @@ def load_all(roots: list[tuple[str, Path]] | None = None) -> Catalog:
     return catalog
 
 
+def _word(item: VocabItem) -> str:
+    from oknos import greek
+
+    words = [w for w in greek.words(item.el) if greek.fold(w) not in greek.ARTICLES]
+    return greek.fold(" ".join(words))
+
+
+def apply_replaces(catalog: Catalog) -> None:
+    """A pack that `replaces` another takes over its items: the old pack's item with the same id,
+    or a vocab item with the same word, is left out (never served twice), and its chapters go
+    too (they moved with it). `catalog.moved` maps every old key that may hold history to the
+    new one: all of this pack's ids under the old pack's name, loaded or not, and the words."""
+    by_id = {p.id: p for p in catalog.packs}
+    for pack in catalog.packs:
+        if not pack.manifest.replaces:
+            continue
+        words: dict[str, str] = {}
+        for iid, it in pack.items.items():
+            if isinstance(it, VocabItem):
+                words.setdefault(_word(it), iid)
+        for old_id in pack.manifest.replaces:
+            if old_id == pack.id:
+                continue
+            for iid in pack.items:
+                catalog.moved[f"{old_id}/{iid}"] = f"{pack.id}/{iid}"
+            old = by_id.get(old_id)
+            if old is None:
+                continue
+            for iid, it in list(old.items.items()):
+                target = iid if iid in pack.items else words.get(_word(it)) if isinstance(it, VocabItem) else None
+                if target is None:
+                    continue
+                del old.items[iid]
+                old.item_files.pop(iid, None)
+                catalog.items.pop(f"{old_id}/{iid}", None)
+                catalog.moved[f"{old_id}/{iid}"] = f"{pack.id}/{target}"
+            for key, (owner, _) in list(catalog.chapters.items()):
+                if owner is old:
+                    del catalog.chapters[key]
+            old.chapters.clear()
+
+
 def content_hash(item: Item) -> str:
     data = json.dumps(item.model_dump(mode="json"), ensure_ascii=False, sort_keys=True)
     return hashlib.sha256(data.encode("utf-8")).hexdigest()[:16]
 
 
 def sync_items(conn: sqlite3.Connection, catalog: Catalog) -> None:
-    """Record every loaded item in the items table; mark vanished ones retired."""
+    """Record every loaded item in the items table; move the history of items that moved to
+    another pack or curriculum (src/oknos/moves.py); mark vanished ones retired."""
+    from oknos import curriculum, moves
+
     ts = db.now()
     with conn:
         for key, (pack, item) in catalog.items.items():
@@ -647,6 +699,7 @@ def sync_items(conn: sqlite3.Connection, catalog: Catalog) -> None:
                 """,
                 (key, pack.id, item.type, item.skill, item.exam_task, item.level, content_hash(item), ts),
             )
+        moves.adopt(conn, catalog.moved, curriculum.renames(catalog))
         known = set(catalog.items)
         for row in conn.execute("SELECT item_key FROM items WHERE retired_at IS NULL").fetchall():
             if row["item_key"] not in known:

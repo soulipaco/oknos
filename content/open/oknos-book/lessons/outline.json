@@ -1,0 +1,623 @@
+{
+ "curriculum": "oknos-book",
+ "status": "approved by the maintainer on 2026-11-19",
+ "written": "2026-11-19",
+ "sources": [
+  "curricula/oknos-book.json (stages and what each lets the learner do)",
+  "exams/b1-keg.json beyond_a2 (for b1-bridge)"
+ ],
+ "grammar_order_check": "Each stage lists what it may assume. A structure used before the stage that teaches it is marked as a set phrase. Verb groups use the usual names of Greek grammar teaching: A (γράφω), B1 (μιλάω), B2 (μπορώ), G1 (έρχομαι), G2 (θυμάμαι), and the AB group (ακούω, λέω, τρώω).",
+ "stages": [
+  {
+   "stage": "intro",
+   "kind": "reading",
+   "objectives": [
+    "Read any Greek word aloud, slowly",
+    "Say where the stress falls"
+   ],
+   "grammar": [
+    "the alphabet, small and capital letters",
+    "letter pairs: ου, αι, ει, οι, υι, αυ, ευ, μπ, ντ, γκ, γγ, τσ, τζ",
+    "the accent mark, and words written in capitals without it"
+   ],
+   "assumes": [],
+   "set_phrases": [],
+   "words": "the open-alphabet reading cards, plus 10-15 words the learner already knows from Turkish (open-shared-words-tr)",
+   "scenario": {
+    "tr": "Atina'da sokak tabelaları ve bir kafenin menüsü: önce harfler, sonra tanıdık kelimeler (καφές, φλιτζάνι, ταβέρνα).",
+    "en": "Street signs and a café menu in Athens: first letters, then familiar words (καφές, φλιτζάνι, ταβέρνα)."
+   },
+   "exam_task": null,
+   "notes": "A different shape from the other chapters: the text section is short readings of signs. The Turkish bridge is strong here: many shared words, and sounds Turkish has (ş does not exist, but ç ≈ τσ, c ≈ τζ)."
+  },
+  {
+   "stage": "lesson-01",
+   "kind": "communication",
+   "status": "golden chapter written 2026-11-19",
+   "objectives": [
+    "Say hello and goodbye to a friend and to a stranger",
+    "Say your name and where you are from",
+    "Ask someone the same, with εσύ or εσείς"
+   ],
+   "grammar": [
+    "informal and formal address: σου/σας, σε/σας, είσαι/είστε, εσύ/εσείς, εσένα/εσάς"
+   ],
+   "assumes": [
+    "intro: reading"
+   ],
+   "set_phrases": [
+    "με λένε …",
+    "είμαι από + την/τη/τον/το + country (the rule is lesson 3)"
+   ],
+   "words": [
+    "oknos-book/ch01-* (new)",
+    "oknos-book/v-kalinychta",
+    "oknos-book/v-antio"
+   ],
+   "scenario": {
+    "tr": "Dil kursunun ilk günü (samimi) ve belediyede bir memur (resmî).",
+    "en": "First day of a language course (informal) and a clerk at the town hall (formal)."
+   },
+   "exam_task": "b1keg.speaking.warmup"
+  },
+  {
+   "stage": "lesson-02",
+   "kind": "grammar",
+   "status": "golden chapter written 2026-11-19",
+   "objectives": [
+    "Say what you do and ask what others do",
+    "Introduce a friend or a colleague",
+    "Count to ten"
+   ],
+   "grammar": [
+    "the present of είμαι, all six persons",
+    "personal pronouns in the nominative (εγώ … αυτοί/αυτές/αυτά)",
+    "the vocative of names: Νίκος → Νίκο, κύριος Παππάς → κύριε Παππά; feminine names do not change"
+   ],
+   "assumes": [
+    "lesson-01: greetings, σου/σας, με λένε, είμαι από as a set phrase"
+   ],
+   "set_phrases": [
+    "Τι δουλειά κάνεις/κάνετε; (κάνω as a verb of its own: its forms come with the A verbs in lesson 3, its aorist and future in lesson 13)",
+    "Από δω ο/η … (introducing someone)"
+   ],
+   "words": "numbers 0-10; 8-10 professions (γιατρός, δάσκαλος/δασκάλα, φοιτητής/φοιτήτρια, μηχανικός, πωλητής/πωλήτρια, υπάλληλος); ο κύριος; ο φίλος / η φίλη",
+   "scenario": {
+    "tr": "Bir doğum günü partisinde Eleni, arkadaşı Mehmet'i Nikos'la tanıştırıyor; sonra Nikos'un babası Bay Pappas geliyor.",
+    "en": "At a birthday party Eleni introduces her friend Mehmet to Nikos; then Nikos's father, Mr Pappas, joins them."
+   },
+   "exam_task": "b1keg.speaking.warmup"
+  },
+  {
+   "stage": "lesson-03",
+   "objectives": [
+    "Say where you live and where you work",
+    "Fill in a simple form",
+    "Say on which days and how often you do something"
+   ],
+   "grammar": [
+    "nouns in the nominative singular and their gender: ο/η/το and the endings -ος/-ας/-ης, -α/-η, -ο/-ι/-μα",
+    "the accusative after σε and από: μένω στην Αθήνα, είμαι από την Τουρκία (the lesson-01 set phrase gets its rule)",
+    "the present of A verbs (μένω, δουλεύω, γράφω, διαβάζω)"
+   ],
+   "assumes": [
+    "lesson-02: είμαι in every person, nominative pronouns"
+   ],
+   "set_phrases": [],
+   "words": "days of the week; πάντα, συνήθως, συχνά, μερικές φορές, ποτέ; numbers 11-199; μένω, δουλεύω; a few Athens neighbourhoods as names",
+   "scenario": {
+    "tr": "Bir kursta tanışma formu dolduruluyor: nerede oturuyorsun, nerede çalışıyorsun, hangi günler.",
+    "en": "Filling in a course registration form: where you live, where you work, which days."
+   },
+   "exam_task": null
+  },
+  {
+   "stage": "lesson-04",
+   "objectives": [
+    "Give your phone number and spell your name",
+    "Talk about your work or studies",
+    "Say whether you are married and have children"
+   ],
+   "grammar": [
+    "the weak possessive pronouns after the noun: το όνομά μου, η δουλειά σου, ο αριθμός του/της/μας/σας/τους (and the second accent: τηλέφωνό μου)"
+   ],
+   "assumes": [
+    "lesson-03: A verbs, gender, accusative after σε/από"
+   ],
+   "set_phrases": [
+    "παντρεμένος/παντρεμένη, ελεύθερος/ελεύθερη (as forms to learn; adjectives are lesson 8)"
+   ],
+   "words": "numbers 200-1,000; how to read a Greek phone number (69…, 210…); workplaces (γραφείο, νοσοκομείο, σχολείο, εταιρεία); σπουδάζω; family status",
+   "scenario": {
+    "tr": "Bir iş başvurusu telefonda: ad, numara, nerede çalıştığın, evli misin.",
+    "en": "A job application by phone: name, number, where you work, whether you are married."
+   },
+   "exam_task": null
+  },
+  {
+   "stage": "lesson-05",
+   "objectives": [
+    "Say which languages you speak",
+    "Say your nationality, as a man or a woman",
+    "Talk about the people in your family"
+   ],
+   "grammar": [
+    "the present of B1 verbs: μιλάω, ρωτάω, αγαπάω, ξυπνάω (and the -ώ forms one hears)"
+   ],
+   "assumes": [
+    "lesson-03: A verbs; lesson-04: possessives"
+   ],
+   "set_phrases": [],
+   "words": "nationalities, masculine and feminine (Τούρκος/Τουρκάλα, Έλληνας/Ελληνίδα, …); languages (τουρκικά, ελληνικά, αγγλικά); family (μητέρα, πατέρας, αδελφός, αδελφή, παιδί, γιος, κόρη)",
+   "scenario": {
+    "tr": "Komşuyla balkonda sohbet: kaç dil konuşuyorsun, ailen nerede.",
+    "en": "Chatting with a neighbour on the balcony: which languages you speak, where your family is."
+   },
+   "exam_task": "b1keg.speaking.warmup"
+  },
+  {
+   "stage": "lesson-06",
+   "kind": "review",
+   "objectives": [
+    "Review the stages before it"
+   ],
+   "grammar": [
+    "a summary table: είμαι, A verbs, B1 verbs; σου/σας; possessives"
+   ],
+   "assumes": [
+    "lessons 1-5"
+   ],
+   "set_phrases": [],
+   "words": "none new; the chapter points back to lessons 1-5",
+   "scenario": {
+    "tr": "Kurs sonunda yeni bir öğrenciyle tanışma: 1-5. derslerin hepsi tek bir konuşmada.",
+    "en": "Meeting a new student at the end of term: lessons 1-5 in one conversation."
+   },
+   "exam_task": "a2ltr.speaking.personal",
+   "notes": "The try section is longer (5 checks); no new words block beyond a short list of lesson-1-5 words worth revising (the words block still needs at least one item)."
+  },
+  {
+   "stage": "lesson-07",
+   "objectives": [
+    "Buy something at a kiosk or a bakery",
+    "Order a coffee the way you like it"
+   ],
+   "grammar": [
+    "the definite and indefinite article",
+    "nominative and accusative of the article (ο → τον, η → την, το → το; ένας → έναν)",
+    "the demonstrative αυτός/αυτή/αυτό",
+    "πάω: πήγα and θα πάω (1st and 2nd person singular, as forms)"
+   ],
+   "assumes": [
+    "lesson-03: the accusative after σε/από"
+   ],
+   "set_phrases": [
+    "θέλω / θα ήθελα … (ordering)",
+    "Πόσο κάνει;"
+   ],
+   "words": "kiosk and bakery products (εφημερίδα, νερό, τυρόπιτα, κουλούρι, ψωμί); euro notes and coins; κιλό, γραμμάριο; coffee orders (φραπέ, ελληνικός, σκέτος, μέτριος, γλυκός)",
+   "scenario": {
+    "tr": "Sabah: önce periptero'dan su, sonra fırından tiropita, sonra kafede kahve siparişi.",
+    "en": "Morning: water from the periptero, a tiropita at the bakery, then ordering coffee."
+   },
+   "exam_task": null
+  },
+  {
+   "stage": "lesson-08",
+   "objectives": [
+    "Describe a thing by its colour, size and age",
+    "Ask «which one?» and answer"
+   ],
+   "grammar": [
+    "adjectives of the two main groups: -ος/-η/-ο and -ος/-α/-ο, and the common exceptions",
+    "ποιος/ποια/ποιο",
+    "είμαι: ήμουν and θα είμαι (1st and 2nd person singular)",
+    "the relative που"
+   ],
+   "assumes": [
+    "lesson-07: articles, nominative and accusative"
+   ],
+   "set_phrases": [],
+   "words": "adjectives for people and things (ψηλός, κοντός, μεγάλος, μικρός, ωραίος, καινούργιος, παλιός, ακριβός, φτηνός); currencies; numbers 1,000-3,000,000",
+   "scenario": {
+    "tr": "Kaybolan bir çanta: karakolda tarif ediyorsun (ne renk, ne büyüklükte, içinde ne vardı).",
+    "en": "A lost bag: describing it at the police station (colour, size, what was in it)."
+   },
+   "exam_task": null
+  },
+  {
+   "stage": "lesson-09",
+   "objectives": [
+    "Buy something for the home in a shop",
+    "Describe your day in a short e-mail",
+    "Say what you do often and what you rarely do"
+   ],
+   "grammar": [
+    "the accusative singular of nouns",
+    "uses of the accusative: after prepositions, as object, τον/την λένε",
+    "adjectives in the accusative and agreement",
+    "ποιον/ποια/ποιο",
+    "the AB verb group",
+    "τρώω: έφαγα and θα φάω (1st and 2nd person singular)"
+   ],
+   "assumes": [
+    "lesson-08: adjectives in the nominative"
+   ],
+   "set_phrases": [],
+   "words": "basic appliances (ψυγείο, πλυντήριο, κουζίνα, τηλεόραση); e-mail words; frequency adverbs (revised from lesson 3)",
+   "scenario": {
+    "tr": "Bir elektronik mağazasında buzdolabı almak; sonra arkadaşına günlük düzenini anlatan bir e-posta.",
+    "en": "Buying a fridge in an electronics shop; then an e-mail to a friend about your day."
+   },
+   "exam_task": "a2ltr.writing.email_friendly"
+  },
+  {
+   "stage": "lesson-10",
+   "objectives": [
+    "Say how to get somewhere by metro or bus",
+    "Invite someone and answer an invitation",
+    "Tell the time and talk about the weather"
+   ],
+   "grammar": [
+    "the prepositions με, σε, για, από, μέχρι/έως and their basic uses",
+    "movement verbs with prepositions (πάω στο, έρχομαι από)",
+    "βλέπω and φεύγω: είδα/θα δω, έφυγα/θα φύγω (1st and 2nd person singular)",
+    "a question word after a preposition (με ποιον; για πού;)",
+    "the accusative of time (τη Δευτέρα, το πρωί)"
+   ],
+   "assumes": [
+    "lesson-09: the accusative and its uses"
+   ],
+   "set_phrases": [
+    "έρχομαι (G verbs are lesson 13-14; here only έρχομαι, έρχεσαι as forms)"
+   ],
+   "words": "telling the time; transport (μετρό, λεωφορείο, τρένο, ταξί, στάση); seasons and months; weather (βρέχει, κάνει κρύο/ζέστη); movement verbs",
+   "scenario": {
+    "tr": "Bir arkadaş seni cumartesi Pire'ye davet ediyor: metroyla nasıl gidilir, kaçta buluşulur.",
+    "en": "A friend invites you to Piraeus on Saturday: how to get there by metro, and what time to meet."
+   },
+   "exam_task": "a2ltr.writing.email_friendly"
+  },
+  {
+   "stage": "lesson-11",
+   "objectives": [
+    "Buy fruit and vegetables by the kilo",
+    "Ask the price and pay"
+   ],
+   "grammar": [
+    "the plural of nouns",
+    "numerals that agree (ένας/μία/ένα, τρεις/τρία, τέσσερις/τέσσερα)",
+    "πόσος in the accusative",
+    "πολύς, λίγος, αρκετός, κανένας in the accusative, and καθόλου",
+    "δίνω: έδωσα and θα δώσω (1st and 2nd person singular)",
+    "αυτός and εκείνος, singular and plural"
+   ],
+   "assumes": [
+    "lesson-09: the accusative singular"
+   ],
+   "set_phrases": [],
+   "words": "fruit and vegetables; supermarket products; κιλό, μισό κιλό, γραμμάρια; laiki words (πάγκος, φρέσκο)",
+   "scenario": {
+    "tr": "Cumartesi sabahı laiki pazarında alışveriş, sonra süpermarkette eksikleri tamamlamak.",
+    "en": "Saturday morning at the laiki street market, then the supermarket for what is missing."
+   },
+   "exam_task": null
+  },
+  {
+   "stage": "lesson-12",
+   "kind": "review",
+   "objectives": [
+    "Review the stages before it"
+   ],
+   "grammar": [
+    "summary tables: the article in nominative and accusative, singular and plural; adjective agreement; the aorist and future forms met so far"
+   ],
+   "assumes": [
+    "lessons 7-11"
+   ],
+   "set_phrases": [],
+   "words": "none new",
+   "scenario": {
+    "tr": "Bir günlük alışveriş turu: periptero, fırın, pazar, mağaza.",
+    "en": "A day of errands: periptero, bakery, market, shop."
+   },
+   "exam_task": "a2ltr.reading.notices_tf"
+  },
+  {
+   "stage": "lesson-13",
+   "objectives": [
+    "Ask for a size and a colour and try something on",
+    "Say what you like and what you don't"
+   ],
+   "grammar": [
+    "plural adjectives in nominative and accusative",
+    "adjective-noun agreement",
+    "κάνω: έκανα and θα κάνω (1st and 2nd person singular)",
+    "G1 verbs (-ομαι: έρχομαι, κάθομαι, χρειάζομαι)",
+    "μου αρέσει / μου πάει / μου κάνει + nominative"
+   ],
+   "assumes": [
+    "lesson-11: plurals"
+   ],
+   "set_phrases": [],
+   "words": "clothes, shoes, accessories; colours; adjectives for clothes (στενός, φαρδύς, κοντός, μακρύς); μου αρέσει/πάει/κάνει",
+   "scenario": {
+    "tr": "Ermou Caddesi'nde bir mağazada pantolon denemek: beden, renk, uydu mu.",
+    "en": "Trying on trousers in a shop on Ermou Street: size, colour, does it fit."
+   },
+   "exam_task": null
+  },
+  {
+   "stage": "lesson-14",
+   "objectives": [
+    "Read a short flat ad",
+    "Describe a flat and its rooms",
+    "Ask what there is near a place"
+   ],
+   "grammar": [
+    "υπάρχει/υπάρχουν and είναι + nominative",
+    "έρχομαι: ήρθα and θα έρθω (1st and 2nd person singular)",
+    "G2 verbs (-άμαι: θυμάμαι, κοιμάμαι, λυπάμαι)",
+    "a summary table of nominative and accusative uses",
+    "place adverbs + preposition: δίπλα σε, απέναντι από, κοντά σε, μακριά από"
+   ],
+   "assumes": [
+    "lesson-13: G1 verbs"
+   ],
+   "set_phrases": [],
+   "words": "flat descriptions: type, size (τετραγωνικά), floor, rooms, furniture, appliances; ordinal adjectives (πρώτος … δέκατος); verbs for directions (στρίβω, προχωράω)",
+   "scenario": {
+    "tr": "İlan sitesinde iki daire ilanı okuyup emlakçıyı aramak, sonra daireyi gezmek.",
+    "en": "Reading two flat ads online, calling the agent, then viewing the flat."
+   },
+   "exam_task": "a2ltr.reading.notices_tf"
+  },
+  {
+   "stage": "lesson-15",
+   "objectives": [
+    "Order food by phone or at a taverna",
+    "Book a table",
+    "Say what you will do"
+   ],
+   "grammar": [
+    "the simple future (θα + perfective stem) of A verbs and irregular verbs"
+   ],
+   "assumes": [
+    "lessons 7-14: the 1st and 2nd person future forms met as single forms now become a system"
+   ],
+   "set_phrases": [],
+   "words": "phrases used with the future (αύριο, το Σαββατοκύριακο, την άλλη εβδομάδα); souvlaki and taverna menu",
+   "scenario": {
+    "tr": "Telefonla souvlaki siparişi, sonra hafta sonu tavernada bir masa ayırtmak.",
+    "en": "Ordering souvlaki by phone, then booking a taverna table for the weekend."
+   },
+   "exam_task": "a2ltr.listening.mcq"
+  },
+  {
+   "stage": "lesson-16",
+   "objectives": [
+    "Book a hotel room by phone",
+    "Check in at the reception",
+    "Talk about the plan of a trip"
+   ],
+   "grammar": [
+    "the simple future of B1, B2 and G verbs",
+    "personal pronouns in the accusative, weak and strong (με/εμένα, σε/εσένα, τον/αυτόν …)"
+   ],
+   "assumes": [
+    "lesson-15: the simple future of A verbs"
+   ],
+   "set_phrases": [],
+   "words": "hotel words (δωμάτιο, μονόκλινο, δίκλινο, κράτηση, ρεσεψιόν, πρωινό)",
+   "scenario": {
+    "tr": "Naxos'a bir hafta sonu gezisi: telefonla oda ayırtmak ve otele giriş.",
+    "en": "A weekend on Naxos: booking a room by phone and checking in."
+   },
+   "exam_task": "a2ltr.speaking.roleplay"
+  },
+  {
+   "stage": "lesson-17",
+   "objectives": [
+    "Arrange an evening out with friends",
+    "Ask whether you may do something",
+    "Ask someone to do something, or not to"
+   ],
+   "grammar": [
+    "the simple subjunctive (να + perfective)",
+    "verbs followed by να (θέλω, μπορώ, πρέπει, ξέρω)",
+    "μην",
+    "different subjects: θέλω να πας"
+   ],
+   "assumes": [
+    "lesson-16: perfective stems of all verb groups"
+   ],
+   "set_phrases": [],
+   "words": "music, cinema, theatre; adjectives of origin (ελληνικός, τουρκικός, γαλλικός)",
+   "scenario": {
+    "tr": "Mesajlaşma: arkadaşlar cuma akşamı açık hava sinemasına gitmeyi ayarlıyor.",
+    "en": "Text messages: friends arrange an open-air cinema on Friday night."
+   },
+   "exam_task": "a2ltr.writing.email_friendly"
+  },
+  {
+   "stage": "lesson-18",
+   "kind": "review",
+   "objectives": [
+    "Review the stages before it"
+   ],
+   "grammar": [
+    "summary tables: the future and the subjunctive side by side; weak pronouns"
+   ],
+   "assumes": [
+    "lessons 13-17"
+   ],
+   "set_phrases": [],
+   "words": "none new",
+   "scenario": {
+    "tr": "Bir arkadaşın Atina'ya gelecek: nerede kalacak, ne yapacaksınız, ne giymeli.",
+    "en": "A friend is visiting Athens: where they will stay, what you will do, what to wear."
+   },
+   "exam_task": "a2ltr.speaking.roleplay"
+  },
+  {
+   "stage": "lesson-19",
+   "objectives": [
+    "Write a friend a short message about your holiday",
+    "Say what you did yesterday or last week"
+   ],
+   "grammar": [
+    "the aorist of A verbs and irregular verbs (all persons)",
+    "the aorist of B1 and B2 verbs"
+   ],
+   "assumes": [
+    "the 1st and 2nd person aorists met in lessons 7-14 as single forms"
+   ],
+   "set_phrases": [],
+   "words": "words used with the aorist (χθες, πέρσι, πριν από δύο μέρες, την περασμένη εβδομάδα); holiday words (παραλία, νησί, πλοίο, κολύμπι)",
+   "scenario": {
+    "tr": "Tatilden dönüşte bir arkadaşa mesaj: nereye gittin, ne yaptın, nasıl geçti.",
+    "en": "Back from holiday, a message to a friend: where you went, what you did, how it was."
+   },
+   "exam_task": "a2ltr.writing.email_friendly"
+  },
+  {
+   "stage": "lesson-20",
+   "objectives": [
+    "Choose a mobile phone plan",
+    "Do a simple task at the bank or the post office"
+   ],
+   "grammar": [
+    "weak genitive pronouns as indirect objects (μου δίνετε, σας στέλνω) and after prepositions",
+    "feminine nouns in -ση, -ξη, -ψη (η κράτηση, η πράξη, η λήψη)"
+   ],
+   "assumes": [
+    "lesson-16: weak pronouns in the accusative"
+   ],
+   "set_phrases": [],
+   "words": "banking (λογαριασμός, κάρτα, ΑΦΜ, ΙΒΑΝ, ανάληψη, κατάθεση); post office (δέμα, συστημένο, γραμματόσημο); mobile plan words",
+   "scenario": {
+    "tr": "Bankada hesap açmak (AFM ve kimlik istenir), sonra postaneden koli göndermek.",
+    "en": "Opening a bank account (they ask for your AFM and ID), then sending a parcel at the post office."
+   },
+   "exam_task": "a2ltr.listening.mcq"
+  },
+  {
+   "stage": "lesson-21",
+   "objectives": [
+    "Say how you feel when you are ill",
+    "Talk to a pharmacist or a doctor",
+    "Understand and give instructions"
+   ],
+   "grammar": [
+    "the simple imperative",
+    "the imperative with weak pronouns (πάρ' το, δώσε μου)",
+    "negative commands (μην + subjunctive)",
+    "adverbs in -α and -ως"
+   ],
+   "assumes": [
+    "lesson-17: the subjunctive and μην"
+   ],
+   "set_phrases": [],
+   "words": "illnesses, symptoms, medicines, health centres (κέντρο υγείας, φαρμακείο); the body; medical tests; specialists",
+   "scenario": {
+    "tr": "Ateşin var: önce eczaneye, sonra sağlık merkezinde doktora.",
+    "en": "You have a fever: the pharmacy first, then the doctor at the health centre."
+   },
+   "exam_task": "a2ltr.speaking.roleplay"
+  },
+  {
+   "stage": "lesson-22",
+   "objectives": [
+    "Give the right wish on a birthday, a name day or a holiday",
+    "Describe how a holiday is celebrated"
+   ],
+   "grammar": [
+    "the genitive of nouns, singular and plural",
+    "uses of the genitive: possession, street names, age, date, origin",
+    "conditional clauses (αν)",
+    "time clauses (όταν, πριν, μόλις)"
+   ],
+   "assumes": [
+    "lesson-20: genitive weak pronouns"
+   ],
+   "set_phrases": [],
+   "words": "wishes (χρόνια πολλά, καλό Πάσχα, καλά Χριστούγεννα, να τα εκατοστήσεις); holiday words",
+   "scenario": {
+    "tr": "Komşunun isim günü ve Paskalya: ne denir, ne yapılır.",
+    "en": "A neighbour's name day, and Easter: what to say and what people do."
+   },
+   "exam_task": "a2ltr.history.mcq",
+   "notes": "Customs feed the A2 + history exam; keep facts general and correct, and leave dates of movable feasts out."
+  },
+  {
+   "stage": "lesson-23",
+   "objectives": [
+    "Talk about your study and work plans",
+    "Describe a job and what it offers",
+    "Compare two things and give reasons"
+   ],
+   "grammar": [
+    "όταν, αν, που",
+    "purpose clauses (για να)",
+    "causal clauses (γιατί, επειδή)",
+    "concessive clauses (αν και, παρόλο που)",
+    "the comparative and the relative superlative of adjectives",
+    "comparative adverbs"
+   ],
+   "assumes": [
+    "lesson-22: conditional and time clauses"
+   ],
+   "set_phrases": [],
+   "words": "education (πανεπιστήμιο, πτυχίο, σεμινάριο); work (μισθός, ωράριο, άδεια, συνάδελφος)",
+   "scenario": {
+    "tr": "İki iş teklifini karşılaştırmak: maaş, saatler, yol; bir arkadaşa hangisini seçtiğini anlatmak.",
+    "en": "Comparing two job offers (pay, hours, commute) and telling a friend which you chose."
+   },
+   "exam_task": "b1keg.speaking.monologue"
+  },
+  {
+   "stage": "lesson-24",
+   "kind": "review",
+   "objectives": [
+    "Review the stages before it"
+   ],
+   "grammar": [
+    "summary: the aorist, the imperative, the genitive, the clause types"
+   ],
+   "assumes": [
+    "lessons 19-23"
+   ],
+   "set_phrases": [],
+   "words": "none new",
+   "scenario": {
+    "tr": "Bir yıl sonra kurs arkadaşına uzun bir e-posta: neler yaptın, işin, sağlığın, bayramlar.",
+    "en": "A year later, a long e-mail to a classmate: what you did, work, health, holidays."
+   },
+   "exam_task": "b1keg.writing.formal"
+  },
+  {
+   "stage": "b1-bridge",
+   "kind": "bridge",
+   "objectives": [
+    "Read a formal notice and answer it in about 150 words",
+    "Report what someone said"
+   ],
+   "grammar": [
+    "the passive voice in the present and the aorist",
+    "conditionals beyond αν + present",
+    "linking a 150-word text"
+   ],
+   "assumes": [
+    "lesson-24"
+   ],
+   "set_phrases": [],
+   "words": "from the open-b1-bridge pack and the coach's B1 items",
+   "scenario": {
+    "tr": "Bir belediye duyurusu ve buna verilecek 150 kelimelik resmî bir cevap.",
+    "en": "A municipal notice and a formal 150-word reply to it."
+   },
+   "exam_task": "b1keg.writing.formal",
+   "notes": "Not part of the book: this chapter is written from the B1 blueprint, and is the most important to review against the exam guide."
+  }
+ ]
+}

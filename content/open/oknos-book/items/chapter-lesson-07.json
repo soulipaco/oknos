@@ -1,0 +1,1146 @@
+[
+ {
+  "id": "ch07-periptero",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το περίπτερο",
+  "pos": "noun",
+  "en": "kiosk (street kiosk selling newspapers, water, tickets)",
+  "tr": "büfe (gazete, su, bilet satan sokak büfesi)",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "lemma": "περίπτερο",
+  "gender": "n",
+  "example": {
+   "el": "Η εφημερίδα είναι στο περίπτερο.",
+   "en": "The newspaper is at the kiosk.",
+   "tr": "Gazete büfede."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-nero",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το νερό",
+  "pos": "noun",
+  "en": "water",
+  "tr": "su",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "lemma": "νερό",
+  "gender": "n",
+  "example": {
+   "el": "Ένα νερό, παρακαλώ.",
+   "en": "A water, please.",
+   "tr": "Bir su lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-tyropita",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η τυρόπιτα",
+  "pos": "noun",
+  "en": "cheese pie",
+  "tr": "peynirli börek",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "lemma": "τυρόπιτα",
+  "gender": "f",
+  "example": {
+   "el": "Θέλω μια τυρόπιτα.",
+   "en": "I want a cheese pie.",
+   "tr": "Bir peynirli börek istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-koulouri",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το κουλούρι",
+  "pos": "noun",
+  "en": "sesame bread ring",
+  "tr": "susamlı halka ekmek (simit gibi)",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "lemma": "κουλούρι",
+  "gender": "n",
+  "example": {
+   "el": "Θα ήθελα ένα κουλούρι.",
+   "en": "I'd like a bread ring.",
+   "tr": "Bir simit alayım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-thelo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "θέλω",
+  "pos": "verb",
+  "en": "to want",
+  "tr": "istemek",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "example": {
+   "el": "Θέλω έναν καφέ, παρακαλώ.",
+   "en": "I want a coffee, please.",
+   "tr": "Bir kahve istiyorum, lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-tha-ithela",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "θα ήθελα …",
+  "pos": "phrase",
+  "en": "I would like … (polite)",
+  "tr": "… isterdim; dükkânda: … alayım (kibar)",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "example": {
+   "el": "Θα ήθελα ένα νερό, παρακαλώ.",
+   "en": "I'd like a water, please.",
+   "tr": "Bir su alayım, lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-poso-kanei",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "Πόσο κάνει;",
+  "pos": "phrase",
+  "en": "How much is it?",
+  "tr": "Ne kadar? Kaç para?",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "example": {
+   "el": "Πόσο κάνει το ψωμί;",
+   "en": "How much is the bread?",
+   "tr": "Ekmek ne kadar?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-orise",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "Ορίστε",
+  "pos": "phrase",
+  "en": "here you are; yes? (the seller asking)",
+  "tr": "buyurun",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "example": {
+   "el": "Ορίστε. Δύο ευρώ.",
+   "en": "Here you are. Two euros.",
+   "tr": "Buyurun. İki avro."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-pao",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πάω",
+  "pos": "verb",
+  "en": "to go (πήγα, θα πάω)",
+  "tr": "gitmek (πήγα, θα πάω)",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "example": {
+   "el": "Πάω για καφέ.",
+   "en": "I'm going for a coffee.",
+   "tr": "Kahveye gidiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-chthes",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "χθες",
+  "pos": "adv",
+  "en": "yesterday",
+  "tr": "dün",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "example": {
+   "el": "Χθες πήγα στον φούρνο.",
+   "en": "Yesterday I went to the bakery.",
+   "tr": "Dün fırına gittim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-avrio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "αύριο",
+  "pos": "adv",
+  "en": "tomorrow",
+  "tr": "yarın",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "example": {
+   "el": "Αύριο θα πάω στο περίπτερο.",
+   "en": "Tomorrow I'll go to the kiosk.",
+   "tr": "Yarın büfeye gideceğim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-kilo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το κιλό",
+  "pos": "noun",
+  "en": "kilo (1000 grams)",
+  "tr": "kilo (1000 gram)",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "lemma": "κιλό",
+  "gender": "n",
+  "example": {
+   "el": "Ένα κιλό ψωμί, παρακαλώ.",
+   "en": "A kilo of bread, please.",
+   "tr": "Bir kilo ekmek lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-grammario",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το γραμμάριο",
+  "pos": "noun",
+  "en": "gram (plural γραμμάρια)",
+  "tr": "gram (çoğul γραμμάρια)",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "lemma": "γραμμάριο",
+  "gender": "n",
+  "example": {
+   "el": "Πεντακόσια γραμμάρια, παρακαλώ.",
+   "en": "Five hundred grams, please.",
+   "tr": "Beş yüz gram lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-lepto",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το λεπτό",
+  "pos": "noun",
+  "en": "cent (a hundredth of a euro); minute (plural λεπτά)",
+  "tr": "sent (avronun yüzde biri); dakika (çoğul λεπτά)",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "lemma": "λεπτό",
+  "gender": "n",
+  "example": {
+   "el": "Το νερό κάνει πενήντα λεπτά.",
+   "en": "The water costs fifty cents.",
+   "tr": "Su elli sent."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-frapes",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο φραπές",
+  "pos": "noun",
+  "en": "frappé (iced, foamy instant coffee); many say το φραπέ, which never changes",
+  "tr": "frappe (köpüklü soğuk neskafe); çok kişi το φραπέ der, o hiç değişmez",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "lemma": "φραπές",
+  "gender": "m",
+  "example": {
+   "el": "Ο Νίκος θέλει έναν φραπέ.",
+   "en": "Nikos wants a frappé.",
+   "tr": "Nikos bir frappe istiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-ellinikos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ελληνικός (καφές)",
+  "pos": "adj",
+  "en": "Greek coffee, like Turkish coffee (short for ελληνικός καφές)",
+  "tr": "Yunan kahvesi, Türk kahvesi gibi (ελληνικός καφές'in kısası)",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "example": {
+   "el": "Έναν ελληνικό, παρακαλώ.",
+   "en": "A Greek coffee, please.",
+   "tr": "Bir Yunan kahvesi lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-sketos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "σκέτος",
+  "pos": "adj",
+  "en": "plain, no sugar (coffee)",
+  "tr": "sade, şekersiz (kahve)",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "example": {
+   "el": "Έναν φραπέ σκέτο, παρακαλώ.",
+   "en": "A plain frappé, please.",
+   "tr": "Sade bir frappe lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-metrios",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "μέτριος",
+  "pos": "adj",
+  "en": "medium sweet (coffee)",
+  "tr": "orta şekerli (kahve)",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "example": {
+   "el": "Έναν ελληνικό μέτριο, παρακαλώ.",
+   "en": "A medium-sweet Greek coffee, please.",
+   "tr": "Orta şekerli bir Yunan kahvesi lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-glykos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "γλυκός",
+  "pos": "adj",
+  "en": "sweet (coffee with sugar)",
+  "tr": "şekerli (kahve)",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "example": {
+   "el": "Θα ήθελα έναν ελληνικό γλυκό.",
+   "en": "I'd like a sweet Greek coffee.",
+   "tr": "Şekerli bir Yunan kahvesi alayım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-q-bakery",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πόσο ψωμί θέλει η Αϊσέ;",
+   "en": "How much bread does Ayşe want?",
+   "tr": "Ayşe ne kadar ekmek istiyor?"
+  },
+  "options": [
+   "Πεντακόσια γραμμάρια.",
+   "Διακόσια γραμμάρια.",
+   "Ένα κιλό."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Θα ήθελα πεντακόσια γραμμάρια»: 500 grams, half a kilo.",
+   "tr": "«Θα ήθελα πεντακόσια γραμμάρια»: 500 gram, yarım kilo."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-q-true-false",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Αϊσέ θέλει ένα νερό και μια εφημερίδα.",
+    "en": "Ayşe wants a water and a newspaper.",
+    "tr": "Ayşe bir su ve bir gazete istiyor.",
+    "answer": true
+   },
+   {
+    "el": "Η Αϊσέ θέλει έναν ελληνικό γλυκό.",
+    "en": "Ayşe wants a sweet Greek coffee.",
+    "tr": "Ayşe şekerli bir Yunan kahvesi istiyor.",
+    "answer": false
+   },
+   {
+    "el": "Ο Νίκος θέλει έναν φραπέ.",
+    "en": "Nikos wants a frappé.",
+    "tr": "Nikos bir frappe istiyor.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "At the kiosk she asks for «ένα νερό και μια εφημερίδα». In the café she says «Μέτριο»: medium, not sweet. Nikos says «Εγώ θα ήθελα έναν φραπέ».",
+   "tr": "Büfede «ένα νερό και μια εφημερίδα» diyor. Kafede «Μέτριο» diyor: orta, şekerli değil. Nikos «Εγώ θα ήθελα έναν φραπέ» diyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-try-enan",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "article.indefinite.accusative"
+  ],
+  "text": "Θέλω {1} καφέ.",
+  "answer": {
+   "1": [
+    "έναν"
+   ]
+  },
+  "options": {
+   "1": [
+    "ένας",
+    "έναν",
+    "ένα"
+   ]
+  },
+  "translation": {
+   "en": "I want a coffee.",
+   "tr": "Bir kahve istiyorum."
+  },
+  "explain": {
+   "en": "The coffee is the object of θέλω, and καφές is masculine: ένας → έναν (and καφές → καφέ).",
+   "tr": "Kahve θέλω'nun nesnesi ve καφές eril: ένας → έναν (ve καφές → καφέ)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-try-accusative",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Διαβάζω {1} εφημερίδα και περιμένω {2} Νίκο.",
+  "bank": [
+   "την",
+   "τον",
+   "το"
+  ],
+  "answer": {
+   "1": "την",
+   "2": "τον"
+  },
+  "translation": {
+   "en": "I read the newspaper and wait for Nikos.",
+   "tr": "Gazeteyi okuyorum ve Nikos'u bekliyorum."
+  },
+  "explain": {
+   "en": "Both are objects. Feminine η εφημερίδα → την (vowel, so the -ν stays); masculine ο Νίκος → τον Νίκο.",
+   "tr": "İkisi de nesne. Dişil η εφημερίδα → την (ünlü, -ν kalır); eril ο Νίκος → τον Νίκο."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-try-aytos",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "demonstrative.accusative"
+  ],
+  "text": "Θέλω {1} τον καφέ, παρακαλώ.",
+  "answer": {
+   "1": [
+    "αυτόν"
+   ]
+  },
+  "options": {
+   "1": [
+    "αυτός",
+    "αυτόν",
+    "αυτό"
+   ]
+  },
+  "translation": {
+   "en": "I want this coffee, please.",
+   "tr": "Şu kahveyi istiyorum, lütfen."
+  },
+  "explain": {
+   "en": "The coffee is the object and masculine: αυτός → αυτόν, before τον καφέ.",
+   "tr": "Kahve nesne ve eril: αυτός → αυτόν, τον καφέ'nin önünde."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-try-past",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.pao.aorist"
+  ],
+  "cue": {
+   "lemma": "πάω",
+   "tense": "aorist",
+   "person": "1sg"
+  },
+  "text": "Χθες (εγώ) {1} στον φούρνο.",
+  "answer": {
+   "1": [
+    "πήγα"
+   ]
+  },
+  "options": {
+   "1": [
+    "πήγα",
+    "πήγες",
+    "θα πάω"
+   ]
+  },
+  "translation": {
+   "en": "Yesterday I went to the bakery.",
+   "tr": "Dün fırına gittim."
+  },
+  "explain": {
+   "en": "Yesterday is the past, and the speaker is «I»: πήγα. πήγες is «you», θα πάω is the future.",
+   "tr": "Dün geçmiştir ve konuşan «ben»: πήγα. πήγες «sen», θα πάω gelecektir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-try-future",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.pao.future"
+  ],
+  "cue": {
+   "lemma": "πάω",
+   "tense": "future",
+   "person": "2sg"
+  },
+  "text": "Αύριο (εσύ) {1} στο περίπτερο.",
+  "answer": {
+   "1": [
+    "θα πας"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα πας",
+    "πήγες",
+    "θα πάω"
+   ]
+  },
+  "translation": {
+   "en": "Tomorrow you will go to the kiosk.",
+   "tr": "Yarın büfeye gideceksin."
+  },
+  "explain": {
+   "en": "Tomorrow is the future, and the subject is «you»: θα πας. θα πάω is «I», πήγες is the past.",
+   "tr": "Yarın gelecektir ve özne «sen»: θα πας. θα πάω «ben», πήγες geçmiştir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-p-prices",
+  "type": "match",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω τις τιμές.",
+   "en": "Match the prices.",
+   "tr": "Fiyatları eşleştir."
+  },
+  "left": [
+   "0,50 €",
+   "1 €",
+   "2,50 €",
+   "3,50 €"
+  ],
+  "right": [
+   "πενήντα λεπτά",
+   "ένα ευρώ",
+   "δύο ευρώ και πενήντα λεπτά",
+   "τρία ευρώ και πενήντα λεπτά"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "Cents are λεπτά, and ευρώ never changes: ένα ευρώ, δύο ευρώ.",
+   "tr": "Sent λεπτά'dır; ευρώ hiç değişmez: ένα ευρώ, δύο ευρώ."
+  }
+ },
+ {
+  "id": "ch07-p-case-sort",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε φράση στη σωστή ομάδα.",
+   "en": "Sort the phrases: «ονομαστική» = the subject form, «αιτιατική» = the object form.",
+   "tr": "İfadeleri ayır: «ονομαστική» = özne biçimi, «αιτιατική» = nesne biçimi."
+  },
+  "categories": [
+   "ονομαστική",
+   "αιτιατική"
+  ],
+  "items": [
+   "ο καφές",
+   "τον καφέ",
+   "ένας φραπές",
+   "έναν φραπέ",
+   "τον πελάτη",
+   "ο πελάτης"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   1,
+   0
+  ],
+  "explain": {
+   "en": "Masculine subjects: ο, ένας, and the noun with -ς. Masculine objects: τον, έναν, and the noun without -ς.",
+   "tr": "Eril özneler: ο, ένας ve -ς'li isim. Eril nesneler: τον, έναν ve -ς'siz isim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-p-mia",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "article.indefinite"
+  ],
+  "text": "Θα ήθελα {1} τυρόπιτα.",
+  "answer": {
+   "1": [
+    "μια",
+    "μία"
+   ]
+  },
+  "options": {
+   "1": [
+    "μια",
+    "έναν",
+    "ένα"
+   ]
+  },
+  "translation": {
+   "en": "I'd like a cheese pie.",
+   "tr": "Bir peynirli börek rica ediyorum."
+  },
+  "explain": {
+   "en": "Τυρόπιτα is feminine, so μια. As an object μια stays μια (only the definite η becomes την).",
+   "tr": "Τυρόπιτα dişil, bu yüzden μια. Nesne olunca μια aynı kalır (yalnızca belirli η, την olur)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-p-nu",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Θέλω … τυρόπιτα.",
+   "en": "I want … cheese pie.",
+   "tr": "… peynirli börek istiyorum."
+  },
+  "options": [
+   "την",
+   "τη",
+   "τον"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Feminine object: την. The word starts with τ, which is on the list, so the -ν stays. τον is masculine.",
+   "tr": "Dişil nesne: την. Sözcük τ ile başlıyor, τ listede, bu yüzden -ν kalır. τον eriltir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  },
+  "ask": {
+   "en": "Which article goes in the gap? (the cheese pie is the object)",
+   "tr": "Boşluğa hangi artikel gelir? (peynirli börek nesne)"
+  }
+ },
+ {
+  "id": "ch07-p-demo",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Πόσο κάνει {1} ο καφές; Και πόσο κάνει {2} το κουλούρι;",
+  "bank": [
+   "αυτός",
+   "αυτό",
+   "αυτή"
+  ],
+  "answer": {
+   "1": "αυτός",
+   "2": "αυτό"
+  },
+  "translation": {
+   "en": "How much is this coffee? And how much is this bread ring?",
+   "tr": "Bu kahve ne kadar? Ya bu simit ne kadar?"
+  },
+  "explain": {
+   "en": "Here the coffee and the ring are the subject of κάνει: nominative. ο καφές is masculine: αυτός; το κουλούρι is neuter: αυτό.",
+   "tr": "Burada kahve ve simit κάνει'nin öznesi: yalın hâl. ο καφές eril: αυτός; το κουλούρι nötr: αυτό."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-p-order",
+  "ask": {
+   "en": "You want a Greek coffee with no sugar. What do you say to the waiter?",
+   "tr": "Şekersiz bir Yunan kahvesi istiyorsun. Garsona ne dersin?"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Τι λέω στον σερβιτόρο;",
+   "en": "You want a Greek coffee with no sugar. What do you say to the waiter?",
+   "tr": "Şekersiz bir Yunan kahvesi istiyorsun. Garsona ne dersin?"
+  },
+  "options": [
+   "Έναν ελληνικό σκέτο.",
+   "Έναν ελληνικό μέτριο.",
+   "Έναν ελληνικό γλυκό."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "σκέτος means plain, no sugar. μέτριος is medium sweet, γλυκός is sweet.",
+   "tr": "σκέτος sade, şekersiz demektir. μέτριος orta şekerli, γλυκός şekerlidir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-p-pao-match",
+  "ask": {
+   "en": "Match each person and time with the form.",
+   "tr": "Kişiyi ve zamanı biçimle eşleştir."
+  },
+  "type": "match",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each person and time with the form.",
+   "tr": "Kişiyi ve zamanı biçimle eşleştir."
+  },
+  "left": [
+   "εγώ, χθες",
+   "εσύ, χθες",
+   "εγώ, αύριο",
+   "εσύ, αύριο"
+  ],
+  "right": [
+   "πήγα",
+   "πήγες",
+   "θα πάω",
+   "θα πας"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "Past: πήγα (I), πήγες (you). Future: θα + πάω (I), θα + πας (you).",
+   "tr": "Geçmiş: πήγα (ben), πήγες (sen). Gelecek: θα + πάω (ben), θα + πας (sen)."
+  }
+ },
+ {
+  "id": "ch07-p-poso",
+  "ask": {
+   "en": "How do you ask the price of something?",
+   "tr": "Bir şeyin fiyatını nasıl sorarsın?"
+  },
+  "type": "mcq",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πώς ρωτάω την τιμή;",
+   "en": "How do you ask the price of something?",
+   "tr": "Bir şeyin fiyatını nasıl sorarsın?"
+  },
+  "options": [
+   "Πόσο κάνει;",
+   "Πού κάνει;",
+   "Τι κάνει;"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Πόσο κάνει; means «how much is it?». Πού is «where» and Τι is «what».",
+   "tr": "Πόσο κάνει; «ne kadar?» demektir. Πού «nerede», Τι «ne» demektir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-p-kilo",
+  "type": "mcq",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ένα κιλό είναι …",
+   "en": "Complete: one kilo is …",
+   "tr": "Tamamla: bir kilo …"
+  },
+  "options": [
+   "χίλια γραμμάρια",
+   "εκατό γραμμάρια",
+   "πεντακόσια γραμμάρια"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "One kilo is 1000 grams: χίλια. Five hundred grams is half a kilo.",
+   "tr": "Bir kilo 1000 gramdır: χίλια. Beş yüz gram yarım kilodur."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch07-p-eimai",
+  "ask": {
+   "en": "Which article goes in the gap? (Giorgos is the waiter.)",
+   "tr": "Boşluğa hangi artikel gelir? (Giorgos garson.)"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-07"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ο Γιώργος είναι … σερβιτόρος.",
+   "en": "Which article goes in the gap? (Giorgos is the waiter.)",
+   "tr": "Boşluğa hangi artikel gelir? (Giorgos garson.)"
+  },
+  "options": [
+   "ο",
+   "τον"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "After είναι the thing named stays in the nominative: ο σερβιτόρος. The object form τον comes only after verbs like θέλω.",
+   "tr": "είναι'den sonra söylenen şey yalın hâlde kalır: ο σερβιτόρος. Nesne biçimi τον yalnızca θέλω gibi fiillerden sonra gelir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-07",
+   "by": "sonnet-draft"
+  }
+ }
+]

@@ -1,0 +1,737 @@
+{
+ "id": "oknos-book.lesson-20",
+ "curriculum": "oknos-book",
+ "stage": "lesson-20",
+ "level": "A2",
+ "title": {
+  "tr": "Postanede, telefon mağazasında, bankada: «bana, sana, ona» ve -ση isimleri",
+  "en": "At the post office, the phone shop and the bank: «to me, to you» and nouns in -ση"
+ },
+ "minutes": 17,
+ "version": 2,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde postaneden bir koli alıp mektup gönderecek, cep telefonu paketi alacak ve bankada hesap açacaksın.\n\nAnahtar nokta: Türkçe «bana, sana» için ek kullanır; Yunanca fiilin **önüne** küçük bir kelime koyar: **Σας δίνω** το συμβόλαιο (Size sözleşmeyi veriyorum). Bir de -ση, -ξη, -ψη ile biten dişil isimleri öğreneceksin: η κατάθεση, η απόδειξη.",
+     "en": "In this chapter you collect a parcel and send a letter, buy a mobile plan and open a bank account.\n\nThe key point: Greek says «to me, to you» with a little word **before** the verb: **Σας δίνω** το συμβόλαιο (I give you the contract). You also learn the feminine nouns in -ση, -ξη, -ψη: η κατάθεση, η απόδειξη."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Postanede",
+    "en": "At the post office"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ayşe'ye bir koli gelmiş; kapıda bir [[ειδοποίηση]] (bildirim kâğıdı) var. Önce dinle, sonra oku. Yeni: [[συστημένο]] (taahhütlü), [[Θέλω να στείλω]] (göndermek istiyorum), [[το γράμμα]] (mektup), [[το γραμματόσημο]] (pul), [[ο φάκελος]] (zarf).",
+     "en": "A parcel has come for Ayşe, and there is a [[ειδοποίηση]] (a notice slip) at her door. Listen first, then read. New: [[συστημένο]] (registered), [[Θέλω να στείλω]] (I want to send), [[το γράμμα]] (letter), [[το γραμματόσημο]] (stamp), [[ο φάκελος]] (envelope)."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Postanede: bir koli almak, bir mektup göndermek.",
+      "en": "At the post office: collecting a parcel, sending a letter."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα σας. Έχω μια ειδοποίηση για ένα δέμα.",
+       "en": "Good morning. I have a notice for a parcel.",
+       "tr": "Günaydın. Bir koli için bildirim kâğıdım var."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Μου τη δίνετε; … Ναι, ένα δέμα από την Τουρκία, συστημένο. Μου γράφετε εδώ το όνομά σας;",
+       "en": "Could you give it to me? … Yes, a parcel from Turkey, registered. Could you write your name here for me?",
+       "tr": "Bana verir misiniz? … Evet, Türkiye'den taahhütlü bir koli. Adınızı buraya yazar mısınız?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Βέβαια. Είναι από τη μητέρα μου! Θέλω να στείλω κι εγώ ένα γράμμα στη Σμύρνη, αλλά δεν έχω φάκελο.",
+       "en": "Of course. It is from my mother! I want to send a letter to Izmir too, but I have no envelope.",
+       "tr": "Tabii. Annemden! Ben de İzmir'e bir mektup göndermek istiyorum, ama zarfım yok."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Ορίστε, σας δίνω έναν φάκελο και ένα γραμματόσημο για την Τουρκία. Ο φάκελος κάνει ένα ευρώ και το γραμματόσημο δύο: όλα μαζί τρία.",
+       "en": "Here, I am giving you an envelope and a stamp for Turkey. The envelope is one euro and the stamp two: three altogether.",
+       "tr": "Buyurun, size bir zarf ve Türkiye için bir pul veriyorum. Zarf bir euro, pul iki: hepsi birlikte üç."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ευχαριστώ! Θα της τηλεφωνήσω το βράδυ.",
+       "en": "Thank you! I will phone her this evening.",
+       "tr": "Teşekkürler! Akşam ona telefon edeceğim."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Cep telefonu paketi",
+    "en": "A mobile plan"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Sonra telefon mağazası. Yeni: [[τα δεδομένα]] (internet verisi), [[το συμβόλαιο]] (sözleşme).",
+     "en": "Then the phone shop. New: [[τα δεδομένα]] (mobile data) and [[το συμβόλαιο]] (the contract)."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Bir telefon mağazasında.",
+      "en": "In a phone shop."
+     },
+     "lines": [
+      {
+       "who": "Υπάλληλος",
+       "el": "Γεια σας! Παρακαλώ;",
+       "en": "Hello! Can I help?",
+       "tr": "Merhaba! Buyurun?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Γεια σας. Θέλω ένα πακέτο με πολλά δεδομένα για το κινητό μου.",
+       "en": "Hello. I want a plan with a lot of data for my mobile.",
+       "tr": "Merhaba. Cep telefonum için bol verili bir paket istiyorum."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Με συμβόλαιο είκοσι ευρώ τον μήνα, χωρίς συμβόλαιο τριάντα.",
+       "en": "With a contract twenty euros a month, without a contract thirty.",
+       "tr": "Sözleşmeli ayda yirmi euro, sözleşmesiz otuz."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Με συμβόλαιο, παρακαλώ. Για έναν χρόνο;",
+       "en": "With a contract, please. For one year?",
+       "tr": "Sözleşmeli, lütfen. Bir yıllık mı?"
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Ναι, για έναν χρόνο. Χρειάζομαι το διαβατήριό σας ή την αστυνομική σας ταυτότητα.",
+       "en": "Yes, for one year. I need your passport or your ID card.",
+       "tr": "Evet, bir yıllık. Pasaportunuz ya da kimlik kartınız gerekiyor."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ορίστε το διαβατήριό μου.",
+       "en": "Here is my passport.",
+       "tr": "Buyurun, pasaportum."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Ευχαριστώ. Σας δίνω το συμβόλαιο. Και τον αριθμό σας θα σας τον στείλω με μήνυμα.",
+       "en": "Thank you. Here is the contract for you. And I will send you your number in a message.",
+       "tr": "Teşekkürler. Size sözleşmeyi veriyorum. Numaranızı da size mesajla göndereceğim."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Bankada",
+    "en": "At the bank"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Son olarak banka. [[ο λογαριασμός]] Ders 15'te restorandaki «hesap»tı; banka hesabı da demek. Yeni: [[Θα ήθελα να ανοίξω]] (açmak istiyorum, Ders 17), [[ο ΑΦΜ]] (vergi numarası), [[ο ΙΒΑΝ]] (IBAN; «το ΙΒΑΝ» de denir).",
+     "en": "Last, the bank. [[ο λογαριασμός]] was the bill in Lesson 15; it is also a bank account. New: [[Θα ήθελα να ανοίξω]] (I would like to open, Lesson 17), [[ο ΑΦΜ]] (tax number), [[ο ΙΒΑΝ]] (IBAN; also «το ΙΒΑΝ»)."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Bir banka şubesinde.",
+      "en": "In a bank branch."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα. Θα ήθελα να ανοίξω λογαριασμό. Έχω μαζί μου το διαβατήριο και τον ΑΦΜ μου.",
+       "en": "Good morning. I would like to open an account. I have my passport and my tax number with me.",
+       "tr": "Günaydın. Hesap açmak istiyorum. Pasaportum ve vergi numaram (AFM) yanımda."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Μου τα δίνετε; Χρειάζομαι και τη διεύθυνσή σας.",
+       "en": "Could you give them to me? I also need your address.",
+       "tr": "Onları bana verir misiniz? Adresiniz de gerekiyor."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Μένω στην Καλλιθέα. Σας τη γράφω εδώ;",
+       "en": "I live in Kallithea. Shall I write it here for you?",
+       "tr": "Kallithea'da oturuyorum. Size buraya yazayım mı?"
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Ναι, στην αίτηση, με την υπογραφή σας.",
+       "en": "Yes, on the application, with your signature.",
+       "tr": "Evet, başvuru formuna, imzanızla birlikte."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Πότε θα έχω κάρτα;",
+       "en": "When will I have a card?",
+       "tr": "Kartım ne zaman gelecek?"
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Θα σας τη στείλουμε στο σπίτι. Ο ΙΒΑΝ σας είναι εδώ, στην απόδειξη.",
+       "en": "We will send it to your home. Your IBAN is here, on the receipt.",
+       "tr": "Size eve göndereceğiz. IBAN'ınız burada, makbuzun üstünde."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ευχαριστώ. Έχω και εκατό ευρώ για τον λογαριασμό.",
+       "en": "Thank you. I also have a hundred euros for the account.",
+       "tr": "Teşekkürler. Hesap için yüz euro da getirdim."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Για την κατάθεση, το ταμείο είναι εκεί.",
+       "en": "For the deposit, the cashier's desk is over there.",
+       "tr": "Para yatırmak için kasa orada."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloglara göre:",
+     "en": "According to the dialogues:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch20-q-parcel",
+      "oknos-book/ch20-q-plan"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "«Bana, sana, ona»: μου, σου, του…",
+    "en": "\"To me, to you, to him\": μου, σου, του…"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ders 16'da nesne olan küçük kelimeleri gördün: *με, σε, τον, την, το*. «Birine» demek için ayrı bir dizi var: **μου, σου, του, της, μας, σας, τους** (bana, sana, ona, ona, bize, size, onlara). Dilbilgisinde adı *genitif*; sen anlamını bil. Hepsi fiilin önüne gelir, θα ve δεν'den sonra da: *θα της τηλεφωνήσω*, *δε σου δίνω*. *το σπίτι μου* (Ders 4) ve *μου αρέσει* (Ders 13) içindeki μου de bu kelime.\n\nResmî yerlerde **σας**, arkadaşa **σου**.",
+     "en": "In Lesson 16 you met the object words *με, σε, τον, την, το*. There is a separate set for «to someone»: **μου, σου, του, της, μας, σας, τους** (to me, to you, to him, to her, to us, to you, to them). Grammar calls it the *genitive*; you only need the meaning. They stand before the verb, also after θα and δεν: *θα της τηλεφωνήσω*, *δε σου δίνω*. The μου of *το σπίτι μου* (Lesson 4) and *μου αρέσει* (Lesson 13) is the same word.\n\nIn formal places use **σας**; to a friend **σου**."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Kim?",
+       "en": "Who?"
+      },
+      {
+       "tr": "«-e» hâli (bu bölüm)",
+       "en": "\"To\" (this chapter)"
+      },
+      {
+       "tr": "«-i» hâli (Ders 16)",
+       "en": "Object (Lesson 16)"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "ben → bana",
+        "en": "I → to me"
+       },
+       "μου",
+       "με"
+      ],
+      [
+       {
+        "tr": "sen → sana",
+        "en": "you → to you"
+       },
+       "σου",
+       "σε"
+      ],
+      [
+       {
+        "tr": "o (erkek) → ona",
+        "en": "he → to him"
+       },
+       "του",
+       "τον"
+      ],
+      [
+       {
+        "tr": "o (kadın) → ona",
+        "en": "she → to her"
+       },
+       "της",
+       "την"
+      ],
+      [
+       {
+        "tr": "o (nötr) → ona",
+        "en": "it → to it"
+       },
+       "του",
+       "το"
+      ],
+      [
+       {
+        "tr": "biz → bize",
+        "en": "we → to us"
+       },
+       "μας",
+       "μας"
+      ],
+      [
+       {
+        "tr": "siz → size",
+        "en": "you (formal/pl) → to you"
+       },
+       "σας",
+       "σας"
+      ],
+      [
+       {
+        "tr": "onlar → onlara",
+        "en": "they → to them"
+       },
+       "τους",
+       "τους, τις, τα"
+      ]
+     ],
+     "note": {
+      "tr": "μας ve σας iki dizide aynı. «Onlara» her cinsiyette τους. Tekilde erkek ve nötr **του**, dişil **της**.",
+      "en": "μας and σας are the same in both sets. «To them» is τους for every gender. In the singular masculine and neuter share **του**; feminine is **της**."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Μου δίνετε την ταυτότητά σας;",
+       "en": "Will you give me your ID card?",
+       "tr": "Kimliğinizi bana verir misiniz?"
+      },
+      {
+       "el": "Σας στέλνω ένα μήνυμα.",
+       "en": "I am sending you a message.",
+       "tr": "Size bir mesaj gönderiyorum."
+      },
+      {
+       "el": "Του τηλεφωνώ το βράδυ.",
+       "en": "I phone him in the evening.",
+       "tr": "Akşam ona telefon ediyorum.",
+       "note": {
+        "tr": "τηλεφωνώ «birine» yapılır: σου, του, της τηλεφωνώ. Ders 16'daki *θα σε πάρω τηλέφωνο* da doğru; orada fiil παίρνω.",
+        "en": "τηλεφωνώ is done «to» someone: σου, του, της τηλεφωνώ. Lesson 16's *θα σε πάρω τηλέφωνο* is right too; there the verb is παίρνω."
+       }
+      }
+     ]
+    },
+    {
+     "type": "prose",
+     "tr": "«Kime?» sorusunu soran fiiller: **δίνω, στέλνω, λέω, φέρνω** (kime ne?) ve **τηλεφωνώ** (kime?): *σου λέω, σου τηλεφωνώ*. **βλέπω, περιμένω, ακούω** ise Ders 16'daki «-i» hâlini alır: *σε βλέπω* (seni görüyorum).",
+     "en": "Verbs with a person «to» whom: **δίνω, στέλνω, λέω, φέρνω** (something to someone) and **τηλεφωνώ** (to someone): *σου λέω, σου τηλεφωνώ*. **βλέπω, περιμένω, ακούω** take the object of Lesson 16: *σε βλέπω* (I see you)."
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "İsimle ve vurguyla: σε + …",
+    "en": "With a noun, or with emphasis: σε + …"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Kişi bir **isim**se küçük kelime yerine **σε** gelir: *Δίνω το δέμα **στον** Νίκο* (σε + τον, Ders 3). Zamiri vurgulamak için de σε + güçlü biçim (Ders 16): **σε εμένα, σε εσένα, σε αυτόν, σε αυτήν, σε εμάς, σε εσάς, σε αυτούς**.\n\nKonuşmada kısa biçimler çok yaygındır: **σε μένα, σε σένα, σε μας, σε σας**; *σε αυτόν* çoğu zaman *σ' αυτόν* olur. «σε σου» diye bir şey yoktur.",
+     "en": "If the person is a **noun**, σε comes instead of the little word: *Δίνω το δέμα **στον** Νίκο* (σε + τον, Lesson 3). To stress a pronoun, use σε + the strong form of Lesson 16: **σε εμένα, σε εσένα, σε αυτόν, σε αυτήν, σε εμάς, σε εσάς, σε αυτούς**.\n\nIn speech the short forms are very common: **σε μένα, σε σένα, σε μας, σε σας**; *σε αυτόν* is often *σ' αυτόν*. «σε σου» never exists."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Kim?",
+       "en": "Who?"
+      },
+      {
+       "tr": "Vurgulu: σε + …",
+       "en": "Emphatic: σε + …"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "ben",
+        "en": "I"
+       },
+       "σε εμένα · σε μένα"
+      ],
+      [
+       {
+        "tr": "sen",
+        "en": "you"
+       },
+       "σε εσένα · σε σένα"
+      ],
+      [
+       {
+        "tr": "o (erkek)",
+        "en": "he"
+       },
+       "σε αυτόν"
+      ],
+      [
+       {
+        "tr": "o (kadın)",
+        "en": "she"
+       },
+       "σε αυτήν"
+      ],
+      [
+       {
+        "tr": "biz",
+        "en": "we"
+       },
+       "σε εμάς · σε μας"
+      ],
+      [
+       {
+        "tr": "siz",
+        "en": "you (formal/pl)"
+       },
+       "σε εσάς · σε σας"
+      ],
+      [
+       {
+        "tr": "onlar",
+        "en": "they"
+       },
+       "σε αυτούς / αυτές / αυτά"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Δίνω το δέμα στον Νίκο.",
+       "en": "I give the parcel to Nikos.",
+       "tr": "Koliyi Nikos'a veriyorum."
+      },
+      {
+       "el": "Δίνω το δέμα σε εσένα, όχι στον Νίκο.",
+       "en": "I give the parcel to you, not to Nikos.",
+       "tr": "Koliyi sana veriyorum, Nikos'a değil."
+      },
+      {
+       "el": "Σε σένα τηλεφωνώ, όχι στην Ελένη.",
+       "en": "It is you I am phoning, not Eleni.",
+       "tr": "Sana telefon ediyorum, Eleni'ye değil.",
+       "note": {
+        "tr": "Ders 16: *τηλεφωνώ στο ξενοδοχείο*. Kişiyle de böyle: *τηλεφωνώ σε σένα* = *σου τηλεφωνώ*, ama vurgulu.",
+        "en": "Lesson 16: *τηλεφωνώ στο ξενοδοχείο*. With a person it is the same: *τηλεφωνώ σε σένα* = *σου τηλεφωνώ*, with stress."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "İki küçük kelime: μου το δίνεις",
+    "en": "Two little words: μου το δίνεις"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Kişi ve şey ikisi de küçük kelimeyse önce **kişi** (μου, σου…), sonra **şey** (το, τη(ν), τα…) gelir, ikisi de fiilin önünde, δεν ve θα'dan sonra: *δε σου το δίνω*, *θα σας το στείλω*. Şimdilik bunu bir kalıp olarak öğren.",
+     "en": "If both the person and the thing are little words, the **person** (μου, σου…) comes first, then the **thing** (το, τη(ν), τα…), both before the verb and after δεν and θα: *δε σου το δίνω*, *θα σας το στείλω*. For now learn it as a pattern."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Kişi",
+       "en": "Person"
+      },
+      {
+       "tr": "Şey",
+       "en": "Thing"
+      },
+      {
+       "tr": "Birlikte",
+       "en": "Together"
+      }
+     ],
+     "rows": [
+      [
+       "μου",
+       "το",
+       "μου το δίνεις;"
+      ],
+      [
+       "σου",
+       "το",
+       "δε σου το δίνω"
+      ],
+      [
+       "σας",
+       "τα",
+       "σας τα στέλνω"
+      ],
+      [
+       "σας",
+       "τη(ν)",
+       "σας τη γράφω"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Το δέμα; Σας το στέλνω αύριο.",
+       "en": "The parcel? I am sending it to you tomorrow.",
+       "tr": "Koli mi? Yarın size gönderiyorum."
+      },
+      {
+       "el": "Τα γραμματόσημα; Σας τα δίνω τώρα.",
+       "en": "The stamps? I am giving them to you now.",
+       "tr": "Pullar mı? Şimdi size veriyorum."
+      },
+      {
+       "el": "— Μου δίνεις το βιβλίο σου; — Όχι, δε σου το δίνω.",
+       "en": "— Will you give me your book? — No, I am not giving it to you.",
+       "tr": "— Kitabını bana verir misin? — Hayır, vermiyorum.",
+       "note": {
+        "tr": "δε, çünkü σ -ν kuralının listesinde yok.",
+        "en": "δε, because σ is not on the -ν list."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "-ση, -ξη, -ψη: η κατάθεση",
+    "en": "-ση, -ξη, -ψη: η κατάθεση"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Banka ve postane kelimelerinin çoğu bu sonlarla biter. Hepsi **dişil** (η). Çoğulda son **-σεις, -ξεις, -ψεις** olur; nesne olarak biçim değişmez: *την κατάθεση, τις καταθέσεις*.\n\nVurgu: çoğulda vurgu hep **sondan ikinci hecededir**: κα-τα-**θέ**-σεις. Tekilde sondan üçüncüdeyse bir hece sona kayar (κατάθεση → καταθέσεις); zaten sondan ikincideyse yerinde kalır (πράξη → πράξεις).",
+     "en": "Many bank and post-office words have these endings. They are all **feminine** (η). The plural ends in **-σεις, -ξεις, -ψεις**; as an object nothing changes: *την κατάθεση, τις καταθέσεις*.\n\nStress: in the plural it is always on the **second-to-last syllable**: κα-τα-**θέ**-σεις. If the singular has it on the third-to-last, it moves one syllable on (κατάθεση → καταθέσεις); if it is already second-to-last, it stays (πράξη → πράξεις)."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Tekil",
+       "en": "Singular"
+      },
+      {
+       "tr": "Çoğul",
+       "en": "Plural"
+      },
+      {
+       "tr": "Anlam",
+       "en": "Meaning"
+      }
+     ],
+     "rows": [
+      [
+       "η κατάθεση",
+       "οι καταθέσεις",
+       {
+        "tr": "para yatırma",
+        "en": "deposit"
+       }
+      ],
+      [
+       "η ανάληψη",
+       "οι αναλήψεις",
+       {
+        "tr": "para çekme",
+        "en": "withdrawal"
+       }
+      ],
+      [
+       "η κράτηση",
+       "οι κρατήσεις",
+       {
+        "tr": "rezervasyon",
+        "en": "booking"
+       }
+      ],
+      [
+       "η διεύθυνση",
+       "οι διευθύνσεις",
+       {
+        "tr": "adres",
+        "en": "address"
+       }
+      ],
+      [
+       "η ειδοποίηση",
+       "οι ειδοποιήσεις",
+       {
+        "tr": "bildirim (kâğıdı)",
+        "en": "notice (slip)"
+       }
+      ],
+      [
+       "η πράξη",
+       "οι πράξεις",
+       {
+        "tr": "işlem; eylem",
+        "en": "transaction; action"
+       }
+      ],
+      [
+       "η απόδειξη",
+       "οι αποδείξεις",
+       {
+        "tr": "makbuz",
+        "en": "receipt"
+       }
+      ],
+      [
+       "η λήψη",
+       "οι λήψεις",
+       {
+        "tr": "(telefonda) çekim",
+        "en": "reception (phone signal)"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Η κράτηση είναι για τρεις νύχτες.",
+       "en": "The booking is for three nights.",
+       "tr": "Rezervasyon üç gece için."
+      },
+      {
+       "el": "Θέλω μια απόδειξη, παρακαλώ.",
+       "en": "I want a receipt, please.",
+       "tr": "Bir makbuz istiyorum, lütfen."
+      },
+      {
+       "el": "Κάνω δύο καταθέσεις τον μήνα.",
+       "en": "I make two deposits a month.",
+       "tr": "Ayda iki kez para yatırıyorum."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Hesap, banka ve posta kelimeleri.",
+     "en": "The words for the bank, the post and the phone."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/ch20-afm",
+      "oknos-book/ch20-iban",
+      "oknos-book/ch20-analipsi",
+      "oknos-book/ch20-katathesi",
+      "oknos-book/ch20-dema",
+      "oknos-book/ch20-gramma",
+      "oknos-book/ch20-systimeno",
+      "oknos-book/ch20-gramatosimo",
+      "oknos-book/v-fakelos",
+      "oknos-book/ch20-dedomena",
+      "oknos-book/ch20-symvolaio",
+      "oknos-book/v-dieythynsi",
+      "oknos-book/v-praxi",
+      "oknos-book/ch20-lipsi",
+      "oknos-book/ch20-stelno",
+      "oknos-book/ch20-anoigo",
+      "oknos-book/ch20-tachydromeio",
+      "oknos-book/ch20-astynomiki",
+      "oknos-book/v-taytotita",
+      "oknos-book/v-ypografi",
+      "oknos-book/v-diavatirio",
+      "oknos-book/v-tameio",
+      "oknos-book/v-aitisi"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**Türkçe «-e» hâli, Yunanca μου, σου…** Türkçe ek kullanır (sen → sana), Yunanca küçük bir kelime: *sana veriyorum* = *σου δίνω*. Türkçe tek «ona» der, Yunanca cinsiyete bakar: **του** ya da **της**. Türkçede de «sana telefon ediyorum» denir, tıpkı *σου τηλεφωνώ* gibi.",
+     "en": "**«To you» before the verb.** English says «I give you»; Greek puts the little word first: *σου δίνω*. Careful: English «I phone you» has no «to», but Greek treats it as «to you»: *σου τηλεφωνώ*."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Sıra ve zamirin türü.** Küçük kelime fiilden sonra gelmez (emir kipi başka, Ders 21): *Μου δίνετε*, «Δίνετε μου» değil. «Ona telefon ediyorum» *Του τηλεφωνώ* olur, «Τον τηλεφωνώ» değil. «Sana veriyorum» *Σου δίνω* olur, «Σε δίνω» değil: küçük kelime σε «seni» demektir (*σε βλέπω*). Edat σε ise isimle ya da güçlü biçimle gelir: *στον Νίκο, σε σένα*.",
+     "en": "**Order and the kind of pronoun.** The little word never follows the verb (commands differ, Lesson 21): *Μου δίνετε*, not \"Δίνετε μου\". «I phone him» is *Του τηλεφωνώ*, not \"Τον τηλεφωνώ\". «I give you» is *Σου δίνω*, not \"Σε δίνω\": the little word σε means «you» as the object (*σε βλέπω*). The preposition σε goes with a noun or a strong form: *στον Νίκο, σε σένα*."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "exam_task": "a2ltr.listening.mcq",
+     "tr": "**Sınavda.** Dinlemede (a2ltr.listening.mcq) soruları kayıttan önce oku: saat mi, yer mi, fiyat mı soruluyor? Postane konuşmasında birçok sayı geçer (*ένα ευρώ*, *δύο*, *όλα μαζί τρία*). Toplam mı, parça mı soruluyor? Seçeneklerde öbür sayılar da olur.",
+     "en": "**In the exam.** In listening (a2ltr.listening.mcq), read the questions before the recording: is it a time, a place or a price? Post-office talk has many numbers (*ένα ευρώ*, *δύο*, *όλα μαζί τρία*). Total or part? The options contain the other numbers too."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: «birine» zamirleri, sıra, σε ve çoğul.",
+     "en": "Now you try: the «to» pronouns, the order, σε and the plural."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch20-try-pron",
+      "oknos-book/ch20-try-order",
+      "oknos-book/ch20-try-strong",
+      "oknos-book/ch20-try-plural"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1211 @@
+[
+ {
+  "id": "ch22-efchi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ευχή",
+  "lemma": "ευχή",
+  "pos": "noun",
+  "en": "wish; greeting",
+  "tr": "dilek; temenni",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "gender": "f",
+  "example": {
+   "el": "Το «Χριστός Ανέστη» είναι η ευχή του Πάσχα.",
+   "en": "«Χριστός Ανέστη» is the Easter greeting.",
+   "tr": "«Χριστός Ανέστη» Paskalya'nın selamıdır."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-christougenna",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τα Χριστούγεννα",
+  "lemma": "Χριστούγεννα",
+  "pos": "noun",
+  "en": "Christmas",
+  "tr": "Noel",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "gender": "n",
+  "example": {
+   "el": "Τα Χριστούγεννα έχουμε δέντρο στο σπίτι.",
+   "en": "At Christmas we have a tree at home.",
+   "tr": "Noel'de evde ağaç olur."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-pascha",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το Πάσχα",
+  "lemma": "Πάσχα",
+  "pos": "noun",
+  "en": "Easter",
+  "tr": "Paskalya",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "gender": "n",
+  "example": {
+   "el": "Το Πάσχα τρώμε αρνί με την οικογένεια.",
+   "en": "At Easter we eat lamb with the family.",
+   "tr": "Paskalya'da ailecek kuzu yeriz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-protochronia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η Πρωτοχρονιά",
+  "lemma": "Πρωτοχρονιά",
+  "pos": "noun",
+  "en": "New Year's Day",
+  "tr": "Yılbaşı; 1 Ocak",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "gender": "f",
+  "example": {
+   "el": "Την Πρωτοχρονιά κόβουμε τη βασιλόπιτα.",
+   "en": "On New Year's Day we cut the vasilopita.",
+   "tr": "Yılbaşında βασιλόπιτα keseriz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-chronia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η χρονιά",
+  "lemma": "χρονιά",
+  "pos": "noun",
+  "en": "year (as a period)",
+  "tr": "yıl (bir dönem olarak)",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "gender": "f",
+  "example": {
+   "el": "Καλή χρονιά, κυρία Μαρία!",
+   "en": "Happy New Year, Mrs Maria!",
+   "tr": "Yeni yılınız kutlu olsun Maria Hanım!"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-vasilopita",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η βασιλόπιτα",
+  "lemma": "βασιλόπιτα",
+  "pos": "noun",
+  "en": "vasilopita (New Year's cake with a coin)",
+  "tr": "vasilopita (içinde sikke olan yılbaşı pastası)",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "gender": "f",
+  "example": {
+   "el": "Στη βασιλόπιτα υπάρχει ένα φλουρί.",
+   "en": "There is a coin in the vasilopita.",
+   "tr": "Vasilopitanın içinde bir sikke var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-flouri",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το φλουρί",
+  "lemma": "φλουρί",
+  "pos": "noun",
+  "en": "coin (the one hidden in the vasilopita)",
+  "tr": "sikke (vasilopitanın içindeki)",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "gender": "n",
+  "example": {
+   "el": "Ποιος έχει το φλουρί;",
+   "en": "Who has the coin?",
+   "tr": "Sikke kimde?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-lampada",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η λαμπάδα",
+  "lemma": "λαμπάδα",
+  "pos": "noun",
+  "en": "Easter candle; candle",
+  "tr": "Paskalya mumu; mum",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "gender": "f",
+  "example": {
+   "el": "Ανάβουμε τις λαμπάδες στην εκκλησία.",
+   "en": "We light the candles in church.",
+   "tr": "Kilisede mumları yakarız."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-ekklisia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η εκκλησία",
+  "lemma": "εκκλησία",
+  "pos": "noun",
+  "en": "church",
+  "tr": "kilise",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "gender": "f",
+  "example": {
+   "el": "Στις δώδεκα πάμε στην εκκλησία.",
+   "en": "At twelve we go to church.",
+   "tr": "Saat on ikide kiliseye gideriz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-geitonas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο γείτονας / η γειτόνισσα",
+  "lemma": "γείτονας",
+  "pos": "noun",
+  "en": "neighbour",
+  "tr": "komşu",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "example": {
+   "el": "Η γειτόνισσά μου έχει γιορτή σήμερα.",
+   "en": "My neighbour has her name day today.",
+   "tr": "Komşumun bugün isim günü."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-glyko",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το γλυκό",
+  "lemma": "γλυκό",
+  "pos": "noun",
+  "en": "sweet; dessert",
+  "tr": "tatlı",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "gender": "n",
+  "example": {
+   "el": "Θέλεις ένα γλυκό;",
+   "en": "Would you like a sweet?",
+   "tr": "Bir tatlı ister misin?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-kernao",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κερνάω",
+  "lemma": "κερνάω",
+  "pos": "verb",
+  "en": "to treat, to offer (food or drink) (future: θα κεράσω)",
+  "tr": "ikram etmek (gelecek: θα κεράσω)",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "example": {
+   "el": "Η κυρία Μαρία μας κερνάει γλυκό.",
+   "en": "Mrs Maria treats us to a sweet.",
+   "tr": "Maria Hanım bize tatlı ikram ediyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-vafo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "βάφω",
+  "lemma": "βάφω",
+  "pos": "verb",
+  "en": "to dye; to paint (future: θα βάψω)",
+  "tr": "boyamak (gelecek: θα βάψω)",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "example": {
+   "el": "Τη Μεγάλη Πέμπτη βάφουμε τα αυγά κόκκινα.",
+   "en": "On Holy Thursday we dye the eggs red.",
+   "tr": "Büyük Perşembe yumurtaları kırmızıya boyarız."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-tsougrizo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τσουγκρίζω",
+  "lemma": "τσουγκρίζω",
+  "pos": "verb",
+  "en": "to knock together (eggs, glasses)",
+  "tr": "tokuşturmak (yumurta, kadeh)",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "example": {
+   "el": "Τσουγκρίζουμε τα κόκκινα αυγά.",
+   "en": "We knock the red eggs together.",
+   "tr": "Kırmızı yumurtaları tokuştururuz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-odos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η οδός",
+  "lemma": "οδός",
+  "pos": "noun",
+  "en": "street (on signs and addresses)",
+  "tr": "cadde; sokak (adreslerde)",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "gender": "f",
+  "example": {
+   "el": "Η οδός Σταδίου είναι κοντά στο Σύνταγμα.",
+   "en": "Stadiou Street is near Syntagma.",
+   "tr": "Stadiou Caddesi Sintagma'ya yakın."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-an",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αν",
+  "lemma": "αν",
+  "pos": "conj",
+  "en": "if",
+  "tr": "eğer",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "example": {
+   "el": "Αν έχεις χρόνο, έλα.",
+   "en": "If you have time, come.",
+   "tr": "Zamanın varsa gel."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-otan",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "όταν",
+  "lemma": "όταν",
+  "pos": "conj",
+  "en": "when",
+  "tr": "…dığında; …ince",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "example": {
+   "el": "Όταν έρθει ο Νίκος, θα φάμε.",
+   "en": "When Nikos comes, we will eat.",
+   "tr": "Nikos gelince yiyeceğiz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-molis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μόλις",
+  "lemma": "μόλις",
+  "pos": "conj",
+  "en": "as soon as",
+  "tr": "…ır …maz; hemen …ince",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "example": {
+   "el": "Μόλις φτάσω, θα σου τηλεφωνήσω.",
+   "en": "As soon as I arrive, I will phone you.",
+   "tr": "Varır varmaz sana telefon ederim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-q-nameday",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Τι έχει σήμερα η κυρία Μαρία;",
+   "en": "What does Mrs Maria have today?",
+   "tr": "Maria Hanım'ın bugün ne var?"
+  },
+  "options": [
+   "Γιορτή.",
+   "Γενέθλια.",
+   "Εκδρομή."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Ayşe says «Χρόνια πολλά» and «Δεκαπέντε Αυγούστου, της Παναγίας: η γιορτή σας!»: on the Virgin Mary's day every Maria celebrates, so it is Mrs Maria's name day. The birthday (γενέθλια) is Ayşe's, on 3 May.",
+   "tr": "Ayşe «Χρόνια πολλά» ve «Δεκαπέντε Αυγούστου, της Παναγίας: η γιορτή σας!» diyor: Meryem Ana'nın gününde her Maria kutlar, yani bu Maria Hanım'ın isim günü. Doğum günü (γενέθλια) Ayşe'nin, 3 Mayıs'ta."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-q-easter",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πότε ανάβουν τις λαμπάδες στην εκκλησία;",
+   "en": "When do they light the candles in church?",
+   "tr": "Kilisede mumları ne zaman yakıyorlar?"
+  },
+  "options": [
+   "Τη Μεγάλη Πέμπτη.",
+   "Τα μεσάνυχτα του Σαββάτου.",
+   "Την Κυριακή του Πάσχα."
+  ],
+  "answer": 1,
+  "explain": {
+   "en": "Ayşe asks about Saturday night, and Maria says: «Τα μεσάνυχτα ανάβουμε τις λαμπάδες…». On Holy Thursday they dye eggs, and on Easter Sunday they eat lamb.",
+   "tr": "Ayşe Cumartesi akşamını soruyor, Maria da şöyle diyor: «Τα μεσάνυχτα ανάβουμε τις λαμπάδες…». Büyük Perşembe yumurta boyanır, Paskalya Pazarı kuzu yenir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-try-gen-sg",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "case.genitive.sg"
+  ],
+  "text": "Το σπίτι {1} (η Μαρία) είναι κοντά στο σπίτι {2} (ο Νίκος). Το δώρο {3} (το παιδί) είναι εδώ.",
+  "answer": {
+   "1": [
+    "της Μαρίας"
+   ],
+   "2": [
+    "του Νίκου"
+   ],
+   "3": [
+    "του παιδιού"
+   ]
+  },
+  "options": {
+   "1": [
+    "της Μαρίας",
+    "του Μαρίας",
+    "της Μαρία"
+   ],
+   "2": [
+    "του Νίκου",
+    "του Νίκο",
+    "της Νίκου"
+   ],
+   "3": [
+    "του παιδιού",
+    "του παιδί",
+    "της παιδιού"
+   ]
+  },
+  "translation": {
+   "en": "Maria's house is near Nikos's house. The child's gift is here.",
+   "tr": "Maria'nın evi Nikos'un evinin yanında. Çocuğun hediyesi burada."
+  },
+  "explain": {
+   "en": "η Μαρία → της Μαρίας (-α → -ας). ο Νίκος → του Νίκου (-ος → -ου). το παιδί → του παιδιού (-ι → -ιού). The article changes as well as the noun.",
+   "tr": "η Μαρία → της Μαρίας (-α → -ας). ο Νίκος → του Νίκου (-ος → -ου). το παιδί → του παιδιού (-ι → -ιού). Yalnızca isim değil, artikel de değişir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-try-gen-pl",
+  "type": "match",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω με τον πληθυντικό στη γενική.",
+   "en": "Match each noun with its genitive plural.",
+   "tr": "Her ismi tamlayan çoğuluyla eşleştir."
+  },
+  "left": [
+   "ο φίλος",
+   "η γυναίκα",
+   "το παιδί",
+   "ο δάσκαλος"
+  ],
+  "right": [
+   "των παιδιών",
+   "των δασκάλων",
+   "των φίλων",
+   "των γυναικών"
+  ],
+  "answer": [
+   2,
+   3,
+   0,
+   1
+  ],
+  "explain": {
+   "en": "All end in -ων: των φίλων, των γυναικών and των παιδιών (the stress on -ών), των δασκάλων (the stress moves from the third syllable from the end to the second).",
+   "tr": "Hepsi -ων ile biter: των φίλων, των γυναικών ve των παιδιών (vurgu -ών üzerinde), των δασκάλων (vurgu sondan üçüncü heceden sondan ikinciye kayar)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-p-date",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "case.genitive.date"
+  ],
+  "text": "Η γιορτή του Νίκου είναι στις έξι {1}.",
+  "answer": {
+   "1": [
+    "Δεκεμβρίου"
+   ]
+  },
+  "options": {
+   "1": [
+    "Δεκεμβρίου",
+    "Δεκέμβριος",
+    "Δεκέμβριο"
+   ]
+  },
+  "translation": {
+   "en": "Nikos's name day is on 6 December.",
+   "tr": "Nikos'un isim günü 6 Aralık'ta."
+  },
+  "explain": {
+   "en": "After the day number (στις έξι) the month is in the genitive: Δεκέμβριος → Δεκεμβρίου, with the stress one place to the right.",
+   "tr": "Gün sayısından sonra (στις έξι) ay tamlayan hâlindedir: Δεκέμβριος → Δεκεμβρίου, vurgu bir hece sağa kayar."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-try-ean",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Διαλέγω τη σωστή πρόταση.",
+   "en": "Choose the correct sentence.",
+   "tr": "Doğru cümleyi seç."
+  },
+  "prompt": {
+   "el": "Ποια πρόταση είναι σωστή;",
+   "en": "Which sentence is correct?",
+   "tr": "Hangi cümle doğru?"
+  },
+  "options": [
+   "Αν έρθεις, θα φάμε.",
+   "Αν θα έρθεις, θα φάμε.",
+   "Αν να έρθεις, θα φάμε."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "After αν meaning «if» there is neither θα nor να: αν + the once-only stem (έρθεις), and θα stays in the main clause (θα φάμε).",
+   "tr": "«Eğer» anlamındaki αν ile ne θα ne να kullanılır: αν + bir kerelik kök (έρθεις); θα yalnızca ana cümlede kalır (θα φάμε)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-p-otan",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "clause.temporal.otan"
+  ],
+  "text": "Όταν {1} η Μαρία, θα φάμε μαζί.",
+  "answer": {
+   "1": [
+    "έρθει"
+   ]
+  },
+  "options": {
+   "1": [
+    "έρθει",
+    "ήρθε",
+    "να έρθει"
+   ]
+  },
+  "translation": {
+   "en": "When Maria comes, we will eat together.",
+   "tr": "Maria geldiğinde birlikte yiyeceğiz."
+  },
+  "explain": {
+   "en": "The main clause is about the future (θα φάμε), so όταν takes the once-only stem without να: όταν έρθει. ήρθε is the past.",
+   "tr": "Ana cümle gelecekten söz ediyor (θα φάμε), bu yüzden όταν ile να'sız bir kerelik kök gelir: όταν έρθει. ήρθε geçmiş zamandır."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-p-wish-match",
+  "type": "match",
+  "skill": "vocab",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω την περίσταση με την ευχή.",
+   "en": "Match each situation with the wish.",
+   "tr": "Her durumu dilekle eşleştir."
+  },
+  "left": [
+   "Η Σοφία έχει γενέθλια.",
+   "Σήμερα είναι είκοσι πέντε Δεκεμβρίου.",
+   "Σήμερα είναι Πρωτοχρονιά.",
+   "Ο φίλος σου λέει: «Χριστός Ανέστη!»"
+  ],
+  "right": [
+   "Αληθώς Ανέστη!",
+   "Καλή χρονιά!",
+   "Να τα εκατοστίσεις!",
+   "Καλά Χριστούγεννα!"
+  ],
+  "answer": [
+   2,
+   3,
+   1,
+   0
+  ],
+  "explain": {
+   "en": "A birthday: Να τα εκατοστίσεις. 25 December: Καλά Χριστούγεννα. New Year's Day: Καλή χρονιά. The answer to «Χριστός Ανέστη» is always «Αληθώς Ανέστη».",
+   "tr": "Doğum günü: Να τα εκατοστίσεις. 25 Aralık: Καλά Χριστούγεννα. Yılbaşı: Καλή χρονιά. «Χριστός Ανέστη» selamının cevabı her zaman «Αληθώς Ανέστη»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-p-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Τη Μεγάλη Πέμπτη βάφουν τα αυγά κόκκινα.",
+    "en": "On Holy Thursday they dye the eggs red.",
+    "tr": "Büyük Perşembe yumurtaları kırmızıya boyarlar.",
+    "answer": true
+   },
+   {
+    "el": "Την Πρωτοχρονιά κόβουν τη βασιλόπιτα.",
+    "en": "On New Year's Day they cut the vasilopita.",
+    "tr": "Yılbaşında βασιλόπιτα keserler.",
+    "answer": true
+   },
+   {
+    "el": "Η Αϊσέ έχει γιορτή στις τρεις Μαΐου.",
+    "en": "Ayşe has her name day on 3 May.",
+    "tr": "Ayşe'nin isim günü 3 Mayıs'ta.",
+    "answer": false
+   },
+   {
+    "el": "Την Κυριακή του Πάσχα τρώνε αρνί.",
+    "en": "On Easter Sunday they eat lamb.",
+    "tr": "Paskalya Pazarı kuzu yerler.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "Ayşe says she has no name day: on 3 May she has her birthday (γενέθλια). The other three customs are in the dialogue and the examples.",
+   "tr": "Ayşe isim günü olmadığını söylüyor: 3 Mayıs'ta doğum günü (γενέθλια) var. Diğer üç gelenek diyalogda ve örneklerde geçiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-p-gen-cat",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε ουσιαστικό στη σωστή ομάδα: πώς τελειώνει η γενική του;",
+   "en": "Sort each noun by how its genitive ends: -ου, or -α / -η (the -ς drops).",
+   "tr": "Her ismi tamlayan hâlinin sonuna göre ayır: -ου, ya da -α / -η (-ς düşer)."
+  },
+  "categories": [
+   "-ου",
+   "-α / -η"
+  ],
+  "items": [
+   "ο φίλος",
+   "ο πατέρας",
+   "ο πελάτης",
+   "το δώρο",
+   "ο Νίκος",
+   "ο Κώστας"
+  ],
+  "answer": [
+   0,
+   1,
+   1,
+   0,
+   0,
+   1
+  ],
+  "explain": {
+   "en": "-ος nouns and -ο neuters end in -ου (φίλου, δώρου, Νίκου). Masculine -ας and -ης lose the -ς: πατέρα, πελάτη, Κώστα.",
+   "tr": "-ος'lu isimler ve -ο'lu nötrler -ου ile biter (φίλου, δώρου, Νίκου). Eril -ας ve -ης sonundaki -ς'yi atar: πατέρα, πελάτη, Κώστα."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-p-fem",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "case.genitive.sg.f"
+  ],
+  "text": "Τα γενέθλια {1} (η γιαγιά) είναι αύριο. Το σπίτι {2} (η Ελένη) είναι στην Καλλιθέα.",
+  "answer": {
+   "1": [
+    "της γιαγιάς"
+   ],
+   "2": [
+    "της Ελένης"
+   ]
+  },
+  "options": {
+   "1": [
+    "της γιαγιάς",
+    "της γιαγιά",
+    "των γιαγιάς"
+   ],
+   "2": [
+    "της Ελένης",
+    "της Ελένη",
+    "του Ελένης"
+   ]
+  },
+  "translation": {
+   "en": "Grandmother's birthday is tomorrow. Eleni's house is in Kallithea.",
+   "tr": "Büyükannemin doğum günü yarın. Eleni'nin evi Kallithea'da."
+  },
+  "explain": {
+   "en": "Feminine nouns take -ς: γιαγιά → γιαγιάς (the stress stays on the last syllable) and Ελένη → Ελένης. The article is της.",
+   "tr": "Dişil isimler -ς alır: γιαγιά → γιαγιάς (vurgu son hecede kalır) ve Ελένη → Ελένης. Artikel της'tir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-p-neuter",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "case.genitive.sg.n"
+  ],
+  "text": "Ποιο είναι το όνομα {1} (το σχολείο); Η λύση {2} (το πρόβλημα) είναι εύκολη.",
+  "answer": {
+   "1": [
+    "του σχολείου"
+   ],
+   "2": [
+    "του προβλήματος"
+   ]
+  },
+  "options": {
+   "1": [
+    "του σχολείου",
+    "του σχολείο",
+    "της σχολείου"
+   ],
+   "2": [
+    "του προβλήματος",
+    "του πρόβλημα",
+    "του προβλήμου"
+   ]
+  },
+  "translation": {
+   "en": "What is the name of the school? The solution to the problem is easy.",
+   "tr": "Okulun adı ne? Sorunun çözümü kolay."
+  },
+  "explain": {
+   "en": "Neuter nouns in -ο take -ου and the article του (σχολείο → του σχολείου). Nouns in -μα add -τος, and the stress moves one syllable right: πρόβλημα → προβλήματος.",
+   "tr": "-ο ile biten nötrler -ου ve του artikelini alır (σχολείο → του σχολείου). -μα ile biten isimlere -τος eklenir ve vurgu bir hece sağa kayar: πρόβλημα → προβλήματος."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-p-date-gap",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω τα κενά. Μία λέξη περισσεύει.",
+   "en": "Fill the gaps. One word is not needed.",
+   "tr": "Boşlukları doldur. Bir kelime fazla."
+  },
+  "text": "— Πόσων {1} γίνεται ο Νίκος; — Γίνεται τριάντα. — Και πότε έχει γενέθλια; — Στις δώδεκα {2}.",
+  "bank": [
+   "χρονών",
+   "Μαΐου",
+   "Μάιος"
+  ],
+  "answer": {
+   "1": "χρονών",
+   "2": "Μαΐου"
+  },
+  "translation": {
+   "en": "— How old is Nikos turning? — He is turning thirty. — And when is his birthday? — On 12 May.",
+   "tr": "— Nikos kaç yaşına giriyor? — Otuz yaşına giriyor. — Doğum günü ne zaman? — 12 Mayıs'ta."
+  },
+  "explain": {
+   "en": "Age takes χρονών (Πόσων χρονών;). A date takes the month in the genitive: στις δώδεκα Μαΐου. Μάιος is the nominative and does not fit.",
+   "tr": "Yaş χρονών ile söylenir (Πόσων χρονών;). Tarihte ay tamlayan hâlinde gelir: στις δώδεκα Μαΐου. Μάιος yalın hâl, buraya uymaz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-p-street",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "case.genitive.street"
+  ],
+  "text": "Η οδός {1} είναι κοντά στο Σύνταγμα.",
+  "answer": {
+   "1": [
+    "Σταδίου"
+   ]
+  },
+  "options": {
+   "1": [
+    "Σταδίου",
+    "Στάδιο",
+    "Σταδίο"
+   ]
+  },
+  "translation": {
+   "en": "Stadiou Street is near Syntagma.",
+   "tr": "Σταδίου Caddesi Σύνταγμα'ya yakın."
+  },
+  "explain": {
+   "en": "Street names are in the genitive: το Στάδιο → οδός Σταδίου. The stress moves one place right before -ου.",
+   "tr": "Cadde adları tamlayan hâlindedir: το Στάδιο → οδός Σταδίου. Vurgu -ου önünde bir hece sağa kayar."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-p-origin",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "case.genitive.origin"
+  ],
+  "text": "Αυτό το τυρί είναι από τη Νάξο: είναι τυρί {1}.",
+  "answer": {
+   "1": [
+    "Νάξου"
+   ]
+  },
+  "options": {
+   "1": [
+    "Νάξου",
+    "Νάξος",
+    "Νάξο"
+   ]
+  },
+  "translation": {
+   "en": "This cheese is from Naxos: it is Naxos cheese.",
+   "tr": "Bu peynir Naksos'tan: Naksos peyniri."
+  },
+  "explain": {
+   "en": "The origin of a product is in the genitive: τυρί Νάξου. Η Νάξος is a feminine -ος noun, and it takes -ου like ο φίλος → του φίλου.",
+   "tr": "Bir ürünün kökeni tamlayan hâlinde söylenir: τυρί Νάξου. Η Νάξος dişil bir -ος ismidir ve ο φίλος → του φίλου gibi -ου alır."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-p-time",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "clause.temporal.molis"
+  ],
+  "text": "Μόλις {1}, θα σου τηλεφωνήσω.",
+  "answer": {
+   "1": [
+    "φτάσω"
+   ]
+  },
+  "options": {
+   "1": [
+    "φτάσω",
+    "έφτασα",
+    "να φτάσω"
+   ]
+  },
+  "translation": {
+   "en": "As soon as I arrive, I will phone you.",
+   "tr": "Varır varmaz sana telefon edeceğim."
+  },
+  "explain": {
+   "en": "The main clause is about the future (θα σου τηλεφωνήσω), so μόλις takes the once-only stem without να: μόλις φτάσω. έφτασα is the past.",
+   "tr": "Ana cümle gelecekten söz ediyor (θα σου τηλεφωνήσω), bu yüzden μόλις ile να'sız bir kerelik kök gelir: μόλις φτάσω. έφτασα geçmiş zamandır."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-p-pl",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "case.genitive.pl"
+  ],
+  "text": "Το δώρο των {1} (το παιδί) είναι δίπλα στο δέντρο.",
+  "answer": {
+   "1": [
+    "παιδιών"
+   ]
+  },
+  "options": {
+   "1": [
+    "παιδιών",
+    "παιδιά",
+    "παιδιού"
+   ]
+  },
+  "translation": {
+   "en": "The children's gift is next to the tree.",
+   "tr": "Çocukların hediyesi ağacın yanında."
+  },
+  "explain": {
+   "en": "των asks for the genitive plural in -ων, with the stress on -ών: παιδιών. παιδιά is the plain plural and παιδιού is the singular genitive.",
+   "tr": "των, -ων ile biten tamlayan çoğulunu ister, vurgu -ών üzerindedir: παιδιών. παιδιά yalın çoğul, παιδιού ise tamlayan tekildir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch22-p-whose",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-22"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "— Ποιανού είναι το δώρο; — …",
+   "en": "— Whose gift is it? — …",
+   "tr": "— Hediye kimin? — …"
+  },
+  "options": [
+   "Είναι του Νίκου.",
+   "Είναι του Νίκος.",
+   "Είναι τον Νίκου."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Ποιανού; asks for an owner in the genitive: του Νίκου. The article and the noun must both be genitive.",
+   "tr": "Ποιανού; tamlayan hâlinde bir sahip ister: του Νίκου. Artikel de isim de tamlayan olmalı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-22",
+   "by": "sonnet-draft"
+  }
+ }
+]

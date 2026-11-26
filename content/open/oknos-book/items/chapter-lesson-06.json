@@ -1,0 +1,612 @@
+[
+ {
+  "id": "ch06-q-family",
+  "ask": {
+   "en": "Eleni: «Η οικογένειά μου είναι …» Where is her family?",
+   "tr": "Eleni: «Η οικογένειά μου είναι …» Ailesi nerede?"
+  },
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-06"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ελένη: «Η οικογένειά μου είναι …»",
+   "en": "Eleni: «Η οικογένειά μου είναι …» Where is her family?",
+   "tr": "Eleni: «Η οικογένειά μου είναι …» Ailesi nerede?"
+  },
+  "options": [
+   "στην Πάτρα.",
+   "στη Σμύρνη.",
+   "στο Μαρούσι."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Η οικογένειά μου είναι στην Πάτρα.» Izmir is where Mehmet's parents live, and Marousi is where Eleni herself lives.",
+   "tr": "«Η οικογένειά μου είναι στην Πάτρα.» İzmir, Mehmet'in anne babasının yeri; Marusi ise Eleni'nin kendi oturduğu semt."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-06",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch06-q-true-false",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-06"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Ο Μεχμέτ δουλεύει στο νοσοκομείο.",
+    "en": "Mehmet works at the hospital.",
+    "tr": "Mehmet hastanede çalışıyor.",
+    "answer": true
+   },
+   {
+    "el": "Η κυρία Ανδρέου είναι από την Τουρκία.",
+    "en": "Mrs Andreou is from Turkey.",
+    "tr": "Andreou Hanım Türkiye'den.",
+    "answer": false
+   },
+   {
+    "el": "Η Ελένη μένει στην Καλλιθέα.",
+    "en": "Eleni lives in Kallithea.",
+    "tr": "Eleni Kallithea'da oturuyor.",
+    "answer": false
+   }
+  ],
+  "explain": {
+   "en": "Mehmet: «Δουλεύω στο νοσοκομείο». Mrs Andreou: «Εγώ είμαι από τη Θεσσαλονίκη». Eleni: «Μένω στο Μαρούσι»; it is Mehmet who lives in Kallithea.",
+   "tr": "Mehmet: «Δουλεύω στο νοσοκομείο». Andreou Hanım: «Εγώ είμαι από τη Θεσσαλονίκη». Eleni: «Μένω στο Μαρούσι»; Kallithea'da oturan Mehmet."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-06",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch06-try-eimai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-06"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.eimai"
+  ],
+  "text": "— Κύριε Γιλμάζ, {1} από την Τουρκία; — Ναι, είμαι από τη Σμύρνη.",
+  "answer": {
+   "1": [
+    "είστε"
+   ]
+  },
+  "options": {
+   "1": [
+    "είσαι",
+    "είστε",
+    "είναι"
+   ]
+  },
+  "translation": {
+   "en": "— Mr Yılmaz, are you from Turkey? — Yes, I am from Izmir.",
+   "tr": "— Yılmaz Bey, Türkiye'den misiniz? — Evet, İzmir'denim."
+  },
+  "explain": {
+   "en": "«Κύριε Γιλμάζ» is formal, so it is είστε (εσείς).",
+   "tr": "«Κύριε Γιλμάζ» resmî hitap: είστε (εσείς)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-06",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch06-try-verb",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-06"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.present.a"
+  ],
+  "text": "— Νίκο, εσύ πού {1}; — {2} στο Μαρούσι.",
+  "answer": {
+   "1": [
+    "μένεις"
+   ],
+   "2": [
+    "Μένω"
+   ]
+  },
+  "options": {
+   "1": [
+    "μένεις",
+    "μένετε",
+    "μένει"
+   ],
+   "2": [
+    "Μένω",
+    "Μένει",
+    "Μένεις"
+   ]
+  },
+  "translation": {
+   "en": "— Nikos, where do you live? — I live in Marousi.",
+   "tr": "— Nikos, sen nerede oturuyorsun? — Marusi'de oturuyorum."
+  },
+  "explain": {
+   "en": "«Νίκο» and «εσύ»: a friend, so μένεις (-εις). Nikos answers about himself: Μένω. μένετε would be formal or plural.",
+   "tr": "«Νίκο» ve «εσύ»: arkadaş, yani μένεις (-εις). Nikos kendini anlatıyor: Μένω. μένετε resmî ya da çoğul olurdu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-06",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch06-try-b1",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-06"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.present.b1"
+  ],
+  "text": "Η μητέρα μου μένει στη Σμύρνη και {1} τουρκικά και ελληνικά.",
+  "answer": {
+   "1": [
+    "μιλάει"
+   ]
+  },
+  "options": {
+   "1": [
+    "μιλάει",
+    "μιλάς",
+    "μιλάω"
+   ]
+  },
+  "translation": {
+   "en": "My mother lives in Izmir and speaks Turkish and Greek.",
+   "tr": "Annem İzmir'de oturuyor ve Türkçe ile Yunanca konuşuyor."
+  },
+  "explain": {
+   "en": "«Η μητέρα μου» is she, like μένει: μιλάει (short form μιλά). μιλάς is for εσύ and μιλάω for εγώ.",
+   "tr": "«Η μητέρα μου» o demek, tıpkı μένει gibi: μιλάει (kısa biçimi μιλά). μιλάς εσύ, μιλάω εγώ içindir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-06",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch06-try-poss",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-06"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "— Ελένη, εσύ μένεις στο Μαρούσι. Και η οικογένειά {1}; — Η οικογένειά {2} είναι στην Πάτρα.",
+  "bank": [
+   "μου",
+   "σου",
+   "σας"
+  ],
+  "answer": {
+   "1": "σου",
+   "2": "μου"
+  },
+  "translation": {
+   "en": "— Eleni, you live in Marousi. And your family? — My family is in Patras.",
+   "tr": "— Eleni, sen Marusi'de oturuyorsun. Ya ailen? — Ailem Patra'da."
+  },
+  "explain": {
+   "en": "Eleni is a friend (εσύ, μένεις), so σου. She answers about herself: μου. σας would be formal or plural.",
+   "tr": "Eleni arkadaş (εσύ, μένεις): σου. Kendinden söz ediyor: μου. σας resmî ya da çoğul olurdu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-06",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch06-try-article",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-06"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "accusative.after-se"
+  ],
+  "text": "Η αδελφή μου μένει {1} Θεσσαλονίκη και ο αδελφός μου δουλεύει {2} Πειραιά.",
+  "answer": {
+   "1": [
+    "στη"
+   ],
+   "2": [
+    "στον"
+   ]
+  },
+  "options": {
+   "1": [
+    "στη",
+    "στην",
+    "στον"
+   ],
+   "2": [
+    "στον",
+    "στο",
+    "στην"
+   ]
+  },
+  "translation": {
+   "en": "My sister lives in Thessaloniki and my brother works in Piraeus.",
+   "tr": "Kız kardeşim Selanik'te oturuyor, erkek kardeşim de Pire'de çalışıyor."
+  },
+  "explain": {
+   "en": "η Θεσσαλονίκη is feminine, and θ is not on the list, so the -ν drops: στη. ο Πειραιάς is masculine: στον, always with -ν.",
+   "tr": "η Θεσσαλονίκη dişil ve θ listede yok, -ν düşer: στη. ο Πειραιάς eril: στον, her zaman -ν'li."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-06",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch06-p-formal",
+  "ask": {
+   "en": "You ask Mrs Andreou, the course secretary, about her job. Which question is right?",
+   "tr": "Kursun sekreteri Andreou Hanım'a işini soruyorsun. Hangi soru doğru?"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-06"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ρωτάω την κυρία Ανδρέου για τη δουλειά της:",
+   "en": "You ask Mrs Andreou, the course secretary, about her job. Which question is right?",
+   "tr": "Kursun sekreteri Andreou Hanım'a işini soruyorsun. Hangi soru doğru?"
+  },
+  "options": [
+   "Τι δουλειά κάνετε, κυρία Ανδρέου;",
+   "Τι δουλειά κάνεις, κυρία Ανδρέου;",
+   "Τι δουλειά κάνω, κυρία Ανδρέου;"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "You do not know Mrs Andreou well, so εσείς: κάνετε, as in «Πού μένετε;». κάνεις is for a friend; κάνω is «I do».",
+   "tr": "Andreou Hanım'ı yakından tanımıyorsun, yani εσείς: κάνετε, tıpkı «Πού μένετε;» gibi. κάνεις arkadaşa söylenir; κάνω «ben yapıyorum» demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-06",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch06-p-match-formal",
+  "ask": {
+   "en": "Match each informal question with its formal version.",
+   "tr": "Her samimi soruyu resmî haliyle eşleştir."
+  },
+  "type": "match",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-06"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each informal question with its formal version.",
+   "tr": "Her samimi soruyu resmî haliyle eşleştir."
+  },
+  "left": [
+   "Πώς σε λένε;",
+   "Από πού είσαι;",
+   "Τι δουλειά κάνεις;",
+   "Το τηλέφωνό σου;",
+   "Μιλάς ελληνικά;"
+  ],
+  "right": [
+   "Από πού είστε;",
+   "Μιλάτε ελληνικά;",
+   "Το τηλέφωνό σας;",
+   "Πώς σας λένε;",
+   "Τι δουλειά κάνετε;"
+  ],
+  "answer": [
+   3,
+   0,
+   4,
+   2,
+   1
+  ],
+  "explain": {
+   "en": "σε → σας, είσαι → είστε, κάνεις → κάνετε, σου → σας, μιλάς → μιλάτε.",
+   "tr": "σε → σας, είσαι → είστε, κάνεις → κάνετε, σου → σας, μιλάς → μιλάτε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-06",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch06-p-verb-sort",
+  "ask": {
+   "en": "Sort the verb forms. «σαν το δουλεύω» means «like δουλεύω»: the A verbs of Lesson 3. «σαν το μιλάω» means «like μιλάω»: the B1 verbs of Lesson 5.",
+   "tr": "Fiil biçimlerini ayır. «σαν το δουλεύω» «δουλεύω gibi» demek: Ders 3'ün A fiilleri. «σαν το μιλάω» «μιλάω gibi» demek: Ders 5'in B1 fiilleri."
+  },
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-06"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε ρήμα στη σωστή ομάδα.",
+   "en": "Sort the verb forms. «σαν το δουλεύω» means «like δουλεύω»: the A verbs of Lesson 3. «σαν το μιλάω» means «like μιλάω»: the B1 verbs of Lesson 5.",
+   "tr": "Fiil biçimlerini ayır. «σαν το δουλεύω» «δουλεύω gibi» demek: Ders 3'ün A fiilleri. «σαν το μιλάω» «μιλάω gibi» demek: Ders 5'in B1 fiilleri."
+  },
+  "categories": [
+   "σαν το δουλεύω",
+   "σαν το μιλάω"
+  ],
+  "items": [
+   "δουλεύει",
+   "μιλάει",
+   "ρωτάς",
+   "μένουμε",
+   "γράφεις",
+   "μιλάνε",
+   "διαβάζουν",
+   "αγαπάτε"
+  ],
+  "answer": [
+   0,
+   1,
+   1,
+   0,
+   0,
+   1,
+   0,
+   1
+  ],
+  "explain": {
+   "en": "δουλεύει, μένουμε, γράφεις and διαβάζουν go like δουλεύω, δουλεύεις, δουλεύει …, with the stress in the stem. μιλάει, ρωτάς, μιλάνε and αγαπάτε carry the stressed ά of the ending, like μιλάω.",
+   "tr": "δουλεύει, μένουμε, γράφεις ve διαβάζουν, δουλεύω, δουλεύεις, δουλεύει … gibi çekilir; vurgu kökte. μιλάει, ρωτάς, μιλάνε ve αγαπάτε, μιλάω gibi ekte vurgulu ά taşır."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-06",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch06-p-turkey",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-06"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "accusative.after-se"
+  ],
+  "text": "Είμαι από {1} Τουρκία και η μητέρα μου μένει {2} Σμύρνη.",
+  "answer": {
+   "1": [
+    "την"
+   ],
+   "2": [
+    "στη"
+   ]
+  },
+  "options": {
+   "1": [
+    "την",
+    "τη",
+    "τον"
+   ],
+   "2": [
+    "στη",
+    "στην",
+    "στο"
+   ]
+  },
+  "translation": {
+   "en": "I am from Turkey and my mother lives in Izmir.",
+   "tr": "Türkiye'denim ve annem İzmir'de oturuyor."
+  },
+  "explain": {
+   "en": "η Τουρκία starts with τ, which keeps the -ν: από την. η Σμύρνη starts with σ, which drops it: στη.",
+   "tr": "η Τουρκία τ ile başlar, -ν kalır: από την. η Σμύρνη σ ile başlar, -ν düşer: στη."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-06",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch06-p-eimai-bank",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-06"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Ο αδελφός μου {1} φοιτητής. Εγώ {2} μηχανικός. Κύριε Παππά, εσείς {3} δικηγόρος;",
+  "bank": [
+   "είμαι",
+   "είναι",
+   "είστε",
+   "είσαι"
+  ],
+  "answer": {
+   "1": "είναι",
+   "2": "είμαι",
+   "3": "είστε"
+  },
+  "translation": {
+   "en": "My brother is a student. I am an engineer. Mr Pappas, are you a lawyer?",
+   "tr": "Erkek kardeşim üniversite öğrencisi. Ben mühendisim. Pappas Bey, siz avukat mısınız?"
+  },
+  "explain": {
+   "en": "«Ο αδελφός μου» is he: είναι. Εγώ: είμαι. «Κύριε Παππά, εσείς» is formal: είστε. είσαι would go with εσύ.",
+   "tr": "«Ο αδελφός μου» o demek: είναι. Εγώ: είμαι. «Κύριε Παππά, εσείς» resmî: είστε. είσαι εσύ ile gider."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-06",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch06-p-phone",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-06"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "— Κυρία Ανδρέου, το τηλέφωνό σας; — Διακόσια δέκα, τριακόσια πενήντα, σαράντα ένα, ογδόντα δύο. Ποιος είναι ο αριθμός;",
+   "en": "— Mrs Andreou, your phone number? — «Διακόσια δέκα, τριακόσια πενήντα, σαράντα ένα, ογδόντα δύο». Which number is it?",
+   "tr": "— Andreou Hanım, telefonunuz? — «Διακόσια δέκα, τριακόσια πενήντα, σαράντα ένα, ογδόντα δύο». Numara hangisi?"
+  },
+  "options": [
+   "210 350 41 82",
+   "210 530 41 82",
+   "210 350 14 82"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "διακόσια δέκα = 210, τριακόσια πενήντα = 350 (πεντακόσια τριάντα would be 530), σαράντα ένα = 41 (14 is δεκατέσσερα), ογδόντα δύο = 82.",
+   "tr": "διακόσια δέκα = 210, τριακόσια πενήντα = 350 (530 πεντακόσια τριάντα olurdu), σαράντα ένα = 41 (14 δεκατέσσερα), ογδόντα δύο = 82."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-06",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch06-p-day",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-06"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "accusative.days"
+  ],
+  "text": "{1} Τρίτη η Αϊσέ δουλεύει στο θέατρο και μιλάει ελληνικά.",
+  "answer": {
+   "1": [
+    "Την"
+   ]
+  },
+  "options": {
+   "1": [
+    "Την",
+    "Τη",
+    "Το"
+   ]
+  },
+  "translation": {
+   "en": "On Tuesday Ayşe works at the theatre and speaks Greek.",
+   "tr": "Salı günü Ayşe tiyatroda çalışıyor ve Yunanca konuşuyor."
+  },
+  "explain": {
+   "en": "η Τρίτη takes την, and τ keeps the -ν: the same rule as στην Πάτρα.",
+   "tr": "η Τρίτη için την gelir; τ -ν'yi korur. Kural, στην Πάτρα ile aynı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-06",
+   "by": "sonnet-draft"
+  }
+ }
+]

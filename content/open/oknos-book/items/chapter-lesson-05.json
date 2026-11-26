@@ -1,0 +1,951 @@
+[
+ {
+  "id": "ch05-adelfos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο αδελφός",
+  "pos": "noun",
+  "en": "brother",
+  "tr": "erkek kardeş; ağabey",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "lemma": "αδελφός",
+  "gender": "m",
+  "example": {
+   "el": "Ο αδελφός μου μιλάει γερμανικά.",
+   "en": "My brother speaks German.",
+   "tr": "Erkek kardeşim Almanca konuşuyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-adelfi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η αδελφή",
+  "pos": "noun",
+  "en": "sister",
+  "tr": "kız kardeş; abla",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "lemma": "αδελφή",
+  "gender": "f",
+  "example": {
+   "el": "Η αδελφή μου μένει στην Αθήνα.",
+   "en": "My sister lives in Athens.",
+   "tr": "Kız kardeşim Atina'da oturuyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-rotao",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ρωτάω",
+  "pos": "verb",
+  "en": "ask",
+  "tr": "sormak",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "lemma": "ρωτάω",
+  "example": {
+   "el": "Ρωτάω τη μητέρα μου.",
+   "en": "I ask my mother.",
+   "tr": "Anneme soruyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-agapao",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "αγαπάω",
+  "pos": "verb",
+  "en": "love",
+  "tr": "sevmek",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "lemma": "αγαπάω",
+  "example": {
+   "el": "Αγαπάω την οικογένειά μου.",
+   "en": "I love my family.",
+   "tr": "Ailemi seviyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-xypnao",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ξυπνάω",
+  "pos": "verb",
+  "en": "wake up",
+  "tr": "uyanmak",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "lemma": "ξυπνάω",
+  "example": {
+   "el": "Το παιδί μου ξυπνάει νωρίς.",
+   "en": "My child wakes up early.",
+   "tr": "Çocuğum erken uyanıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-tourkos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο Τούρκος / η Τουρκάλα",
+  "pos": "noun",
+  "en": "Turkish man / Turkish woman",
+  "tr": "Türk (erkek / kadın)",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "lemma": "Τούρκος",
+  "example": {
+   "el": "Η Αϊσέ είναι Τουρκάλα.",
+   "en": "Ayşe is Turkish (a woman).",
+   "tr": "Ayşe Türk."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-ellinas",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο Έλληνας / η Ελληνίδα",
+  "pos": "noun",
+  "en": "Greek man / Greek woman",
+  "tr": "Yunan (erkek / kadın)",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "lemma": "Έλληνας",
+  "example": {
+   "el": "Ο Νίκος είναι Έλληνας.",
+   "en": "Nikos is Greek (a man).",
+   "tr": "Nikos Yunan."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-agglos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο Άγγλος / η Αγγλίδα",
+  "pos": "noun",
+  "en": "English man / English woman",
+  "tr": "İngiliz (erkek / kadın)",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "lemma": "Άγγλος",
+  "example": {
+   "el": "Η Σάρα είναι Αγγλίδα.",
+   "en": "Sarah is English (a woman).",
+   "tr": "Sarah İngiliz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-germanos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο Γερμανός / η Γερμανίδα",
+  "pos": "noun",
+  "en": "German man / German woman",
+  "tr": "Alman (erkek / kadın)",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "lemma": "Γερμανός",
+  "example": {
+   "el": "Η μητέρα μου είναι Γερμανίδα.",
+   "en": "My mother is German.",
+   "tr": "Annem Alman."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-italos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο Ιταλός / η Ιταλίδα",
+  "pos": "noun",
+  "en": "Italian man / Italian woman",
+  "tr": "İtalyan (erkek / kadın)",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "lemma": "Ιταλός",
+  "example": {
+   "el": "Ο Μάρκο είναι Ιταλός.",
+   "en": "Marco is Italian (a man).",
+   "tr": "Marco İtalyan."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-tourkika",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τα τουρκικά",
+  "pos": "noun",
+  "en": "Turkish (the language)",
+  "tr": "Türkçe",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "example": {
+   "el": "Μιλάω τουρκικά.",
+   "en": "I speak Turkish.",
+   "tr": "Türkçe konuşuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  },
+  "gender": "n",
+  "lemma": "τουρκικά"
+ },
+ {
+  "id": "ch05-ellinika",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τα ελληνικά",
+  "pos": "noun",
+  "en": "Greek (the language)",
+  "tr": "Yunanca",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "example": {
+   "el": "Μιλάς ελληνικά;",
+   "en": "Do you speak Greek?",
+   "tr": "Yunanca konuşuyor musun?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  },
+  "gender": "n",
+  "lemma": "ελληνικά"
+ },
+ {
+  "id": "ch05-agglika",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τα αγγλικά",
+  "pos": "noun",
+  "en": "English (the language)",
+  "tr": "İngilizce",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "example": {
+   "el": "Μιλάω λίγο αγγλικά.",
+   "en": "I speak a little English.",
+   "tr": "Biraz İngilizce konuşuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  },
+  "gender": "n",
+  "lemma": "αγγλικά"
+ },
+ {
+  "id": "ch05-germanika",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τα γερμανικά",
+  "pos": "noun",
+  "en": "German (the language)",
+  "tr": "Almanca",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "example": {
+   "el": "Με τη μητέρα μου μιλάω γερμανικά.",
+   "en": "I speak German with my mother.",
+   "tr": "Annemle Almanca konuşuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  },
+  "gender": "n",
+  "lemma": "γερμανικά"
+ },
+ {
+  "id": "ch05-ligo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "λίγο",
+  "pos": "adv",
+  "en": "a little",
+  "tr": "biraz",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "example": {
+   "el": "Μιλάω λίγο αγγλικά.",
+   "en": "I speak a little English.",
+   "tr": "Biraz İngilizce konuşuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-q-mother",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Τι μιλάει η Ελένη με τη μητέρα της;",
+   "en": "Which language does Eleni speak with her mother?",
+   "tr": "Eleni annesiyle hangi dili konuşuyor?"
+  },
+  "options": [
+   "Γερμανικά.",
+   "Ελληνικά.",
+   "Αγγλικά."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Με τη μητέρα μου μιλάω γερμανικά.» With her father she speaks Greek.",
+   "tr": "«Με τη μητέρα μου μιλάω γερμανικά.» Babasıyla Yunanca konuşuyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-q-true-false",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Ελένη μιλάει γερμανικά.",
+    "en": "Eleni speaks German.",
+    "tr": "Eleni Almanca konuşuyor.",
+    "answer": true
+   },
+   {
+    "el": "Η Αϊσέ μιλάει γερμανικά.",
+    "en": "Ayşe speaks German.",
+    "tr": "Ayşe Almanca konuşuyor.",
+    "answer": false
+   },
+   {
+    "el": "Η Αϊσέ αγαπάει την οικογένειά της.",
+    "en": "Ayşe loves her family.",
+    "tr": "Ayşe ailesini seviyor.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "Eleni: «Εγώ μιλάω ελληνικά και γερμανικά.» Ayşe speaks Greek, a little English and (at home) Turkish, not German. She says «Αγαπάω πολύ την οικογένειά μου».",
+   "tr": "Eleni: «Εγώ μιλάω ελληνικά και γερμανικά.» Ayşe Yunanca, biraz İngilizce ve evde Türkçe konuşuyor; Almanca değil. «Αγαπάω πολύ την οικογένειά μου» diyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-try-milao",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_b"
+  ],
+  "text": "Η αδελφή μου {1} γερμανικά.",
+  "answer": {
+   "1": [
+    "μιλάει",
+    "μιλά"
+   ]
+  },
+  "options": {
+   "1": [
+    "μιλάω",
+    "μιλάει",
+    "μιλάτε"
+   ]
+  },
+  "translation": {
+   "en": "My sister speaks German.",
+   "tr": "Kız kardeşim Almanca konuşuyor."
+  },
+  "explain": {
+   "en": "«Η αδελφή μου» is he/she/it (αυτή): μιλάει (or μιλά). μιλάω goes with εγώ, μιλάτε with εσείς.",
+   "tr": "«Η αδελφή μου» üçüncü tekil kişi (αυτή): μιλάει (ya da μιλά). μιλάω εγώ ile, μιλάτε εσείς ile gelir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-try-forms",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "— Εσύ {1} γερμανικά; — Όχι, αλλά ο αδελφός μου {2} γερμανικά. Εμείς {3} ελληνικά.",
+  "bank": [
+   "μιλάς",
+   "μιλάει",
+   "μιλάμε",
+   "μιλάτε"
+  ],
+  "answer": {
+   "1": "μιλάς",
+   "2": "μιλάει",
+   "3": "μιλάμε"
+  },
+  "translation": {
+   "en": "— Do you speak German? — No, but my brother speaks German. We speak Greek.",
+   "tr": "— Sen Almanca konuşuyor musun? — Hayır, ama erkek kardeşim Almanca konuşuyor. Biz Yunanca konuşuyoruz."
+  },
+  "explain": {
+   "en": "εσύ → μιλάς; my brother (αυτός) → μιλάει; εμείς → μιλάμε. μιλάτε would go with εσείς, which is not in the text.",
+   "tr": "εσύ → μιλάς; erkek kardeşim (αυτός) → μιλάει; εμείς → μιλάμε. μιλάτε εσείς ile gelirdi; metinde εσείς yok."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-try-language",
+  "ask": {
+   "en": "Answer «Yes, I speak German».",
+   "tr": "«Evet, Almanca konuşuyorum» diye cevap ver."
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "— Μιλάς γερμανικά; — Ναι, …",
+   "en": "Answer «Yes, I speak German».",
+   "tr": "«Evet, Almanca konuşuyorum» diye cevap ver."
+  },
+  "options": [
+   "μιλάω γερμανικά.",
+   "μιλάω Γερμανός.",
+   "μιλάς γερμανικά."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«I speak» is μιλάω (μιλάς is «you speak»). The language comes without an article and with a small letter: γερμανικά. Γερμανός is a German man, not the language.",
+   "tr": "«Konuşuyorum» = μιλάω; μιλάς ise «konuşuyorsun». Dil artikelsiz ve küçük harfle gelir: γερμανικά. Γερμανός ise Alman bir erkektir, dil değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-try-nat",
+  "ask": {
+   "en": "Giulia is a woman from Italy. She is …",
+   "tr": "Giulia İtalya'dan gelen bir kadın. O …"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Η Τζούλια είναι …",
+   "en": "Giulia is a woman from Italy. She is …",
+   "tr": "Giulia İtalya'dan gelen bir kadın. O …"
+  },
+  "options": [
+   "Ιταλίδα.",
+   "Ιταλός.",
+   "ιταλικά."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "A woman takes the feminine form, Ιταλίδα. Ιταλός is a man, and ιταλικά would be the language.",
+   "tr": "Kadın için dişil biçim kullanılır: Ιταλίδα. Ιταλός erkektir; ιταλικά ise dil olurdu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-try-family",
+  "ask": {
+   "en": "Match each man with the matching woman.",
+   "tr": "Her erkeği ona uyan kadınla eşleştir."
+  },
+  "type": "match",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each man with the matching woman.",
+   "tr": "Her erkeği ona uyan kadınla eşleştir."
+  },
+  "left": [
+   "ο πατέρας",
+   "ο αδελφός",
+   "ο γιος",
+   "ο Έλληνας"
+  ],
+  "right": [
+   "η μητέρα",
+   "η αδελφή",
+   "η κόρη",
+   "η Ελληνίδα"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "explain": {
+   "en": "father – mother, brother – sister, son – daughter, Greek man – Greek woman.",
+   "tr": "baba – anne, erkek kardeş – kız kardeş, oğul – kız evlat, Yunan erkek – Yunan kadın."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-p-person-match",
+  "ask": {
+   "en": "Match the person with the form of μιλάω.",
+   "tr": "Kişiyi μιλάω fiilinin biçimiyle eşleştir."
+  },
+  "type": "match",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the person with the form of μιλάω.",
+   "tr": "Kişiyi μιλάω fiilinin biçimiyle eşleştir."
+  },
+  "left": [
+   "εγώ",
+   "εσύ",
+   "εμείς",
+   "εσείς"
+  ],
+  "right": [
+   "μιλάω",
+   "μιλάς",
+   "μιλάμε",
+   "μιλάτε"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "εγώ → μιλάω, εσύ → μιλάς, εμείς → μιλάμε, εσείς → μιλάτε. The ending tells you the person.",
+   "tr": "εγώ → μιλάω, εσύ → μιλάς, εμείς → μιλάμε, εσείς → μιλάτε. Kişiyi ek gösterir."
+  }
+ },
+ {
+  "id": "ch05-p-rotao",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_b"
+  ],
+  "text": "Ο Νίκος {1} τη μητέρα του.",
+  "answer": {
+   "1": [
+    "ρωτάει",
+    "ρωτά"
+   ]
+  },
+  "options": {
+   "1": [
+    "ρωτάω",
+    "ρωτάει",
+    "ρωτάτε"
+   ]
+  },
+  "translation": {
+   "en": "Nikos asks his mother.",
+   "tr": "Nikos annesine soruyor."
+  },
+  "explain": {
+   "en": "Nikos is «he» (αυτός): ρωτάει (or ρωτά). «τη μητέρα του» is the set pattern of this lesson: ρωτάω τη μητέρα μου.",
+   "tr": "Nikos «o» (αυτός): ρωτάει (ya da ρωτά). «τη μητέρα του» bu dersteki kalıp: ρωτάω τη μητέρα μου."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-p-agapao",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_b"
+  ],
+  "text": "Εγώ {1} την οικογένειά μου.",
+  "answer": {
+   "1": [
+    "αγαπάω",
+    "αγαπώ"
+   ]
+  },
+  "options": {
+   "1": [
+    "αγαπάω",
+    "αγαπάς",
+    "αγαπάνε"
+   ]
+  },
+  "translation": {
+   "en": "I love my family.",
+   "tr": "Ben ailemi seviyorum."
+  },
+  "explain": {
+   "en": "With εγώ the verb ends in -άω: αγαπάω (or αγαπώ).",
+   "tr": "εγώ ile fiil -άω ile biter: αγαπάω (ya da αγαπώ)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-p-xypnao",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.present",
+   "verb.class_b"
+  ],
+  "text": "Η κόρη μου και ο γιος μου {1} νωρίς.",
+  "answer": {
+   "1": [
+    "ξυπνάνε",
+    "ξυπνάν",
+    "ξυπνούν",
+    "ξυπνούνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ξυπνάω",
+    "ξυπνάει",
+    "ξυπνάνε"
+   ]
+  },
+  "translation": {
+   "en": "My daughter and my son wake up early.",
+   "tr": "Kızım ve oğlum erken uyanıyor."
+  },
+  "explain": {
+   "en": "Two people (αυτοί): ξυπνάνε (or ξυπνούν). ξυπνάει is for one person.",
+   "tr": "İki kişi (αυτοί): ξυπνάνε (ya da ξυπνούν). ξυπνάει tek kişi içindir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-p-lang-or-person",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ο Νίκος μιλάει …",
+   "en": "Nikos speaks Greek.",
+   "tr": "Nikos Yunanca konuşuyor."
+  },
+  "options": [
+   "ελληνικά.",
+   "Έλληνας.",
+   "Ελληνίδα."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "After μιλάει the language is the neuter plural ελληνικά. Έλληνας and Ελληνίδα are people.",
+   "tr": "μιλάει fiilinden sonra dil, nötr çoğul ελληνικά'dır. Έλληνας ve Ελληνίδα kişilerdir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-p-nat-sort",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε λέξη στη σωστή ομάδα.",
+   "en": "Sort the words: «ο» = a man, «η» = a woman.",
+   "tr": "Kelimeleri ayır: «ο» = erkek, «η» = kadın."
+  },
+  "categories": [
+   "ο",
+   "η"
+  ],
+  "items": [
+   "Τουρκάλα",
+   "Έλληνας",
+   "Γερμανίδα",
+   "Ιταλός",
+   "Αγγλίδα",
+   "Άγγλος"
+  ],
+  "answer": [
+   1,
+   0,
+   1,
+   0,
+   1,
+   0
+  ],
+  "explain": {
+   "en": "Man: Έλληνας, Ιταλός, Άγγλος. Woman: Τουρκάλα, Γερμανίδα, Αγγλίδα.",
+   "tr": "Erkek: Έλληνας, Ιταλός, Άγγλος. Kadın: Τουρκάλα, Γερμανίδα, Αγγλίδα."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch05-p-family-poss",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-05"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "possessive.weak"
+  ],
+  "text": "Είμαι η Αϊσέ. Η αδελφή {1} μένει στην Αθήνα.",
+  "answer": {
+   "1": [
+    "μου"
+   ]
+  },
+  "options": {
+   "1": [
+    "μου",
+    "σου",
+    "της"
+   ]
+  },
+  "translation": {
+   "en": "I am Ayşe. My sister lives in Athens.",
+   "tr": "Ben Ayşe. Kız kardeşim Atina'da oturuyor."
+  },
+  "explain": {
+   "en": "Ayşe talks about her own sister: «my» = μου. No second accent: αδελφή is stressed on its last syllable.",
+   "tr": "Ayşe kendi kız kardeşinden söz ediyor: «benim» = μου. İkinci vurgu yok: αδελφή son hecede vurgulu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-05",
+   "by": "sonnet-draft"
+  }
+ }
+]

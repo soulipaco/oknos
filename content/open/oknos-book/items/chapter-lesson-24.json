@@ -1,0 +1,508 @@
+[
+ {
+  "id": "ch24-q-job",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-24"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Γιατί θα πάρει η Αϊσέ τη νέα δουλειά;",
+   "en": "Why will Ayşe take the new job?",
+   "tr": "Ayşe yeni işi neden alacak?"
+  },
+  "options": [
+   "Επειδή ο μισθός είναι καλύτερος.",
+   "Επειδή η εταιρεία είναι κοντά στο σπίτι της.",
+   "Επειδή θα έχει ρεπό τα Σάββατα."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Επειδή θέλω καλύτερο μισθό, θα πάρω τη νέα δουλειά.» The company is further away, and she will not have Saturdays off.",
+   "tr": "«Επειδή θέλω καλύτερο μισθό, θα πάρω τη νέα δουλειά.» Şirket daha uzak ve cumartesileri izinli olmayacak."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-24",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch24-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-24"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Αϊσέ πήγε στη Νάξο με αεροπλάνο.",
+    "en": "Ayşe went to Naxos by plane.",
+    "tr": "Ayşe Naksos'a uçakla gitti.",
+    "answer": false
+   },
+   {
+    "el": "Η Αϊσέ είχε πυρετό την περασμένη εβδομάδα.",
+    "en": "Ayşe had a fever last week.",
+    "tr": "Ayşe geçen hafta ateşliydi.",
+    "answer": true
+   },
+   {
+    "el": "Η Αϊσέ έστειλε το δέμα στην Ελένη.",
+    "en": "Ayşe sent the parcel to Eleni.",
+    "tr": "Ayşe koliyi Eleni'ye gönderdi.",
+    "answer": false
+   },
+   {
+    "el": "Η γιορτή της Ελένης είναι στις 21 Μαΐου.",
+    "en": "Eleni's name day is on 21 May.",
+    "tr": "Eleni'nin isim günü 21 Mayıs'ta.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "«Πήραμε το πλοίο», so not the plane. «Είχα πυρετό.» The parcel went to her mother. «Στις 21 Μαΐου είναι η γιορτή σου.»",
+   "tr": "«Πήραμε το πλοίο», yani uçak değil. «Είχα πυρετό.» Koli annesine gitti. «Στις 21 Μαΐου είναι η γιορτή σου.»"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-24",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch24-try-past-imp",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-24"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Η κυρία Μαρία έχει πυρετό. Χθες {1} στον γιατρό και ο γιατρός της είπε: «{2} πολύ νερό και {3} στη δουλειά.»",
+  "answer": {
+   "1": [
+    "πήγε"
+   ],
+   "2": [
+    "Πιείτε"
+   ],
+   "3": [
+    "μην πάτε"
+   ]
+  },
+  "options": {
+   "1": [
+    "πήγε",
+    "πάει",
+    "θα πάει"
+   ],
+   "2": [
+    "Πιείτε",
+    "Πιες",
+    "Ήπιατε"
+   ],
+   "3": [
+    "μην πάτε",
+    "μην πας",
+    "μην πήγατε"
+   ]
+  },
+  "translation": {
+   "en": "Mrs Maria has a fever. Yesterday she went to the doctor, and the doctor told her: «Drink a lot of water and do not go to work.»",
+   "tr": "Bayan Maria'nın ateşi var. Dün doktora gitti ve doktor ona şöyle dedi: «Çok su için ve işe gitmeyin.»"
+  },
+  "explain": {
+   "en": "Χθες needs the past: πήγε. The doctor speaks politely to Mrs Maria, so the polite plural: πιείτε (the instruction of πίνω) and μην πάτε (μην + the form used after να). Πιες and μην πας are for a friend; ήπιατε and μην πήγατε are past forms, never instructions.",
+   "tr": "Χθες geçmişle gelir: πήγε. Doktor Bayan Maria ile nazik konuşuyor, bu yüzden çoğul biçim: πιείτε (πίνω fiilinin emri) ve μην πάτε (μην + να ile kullanılan biçim). Πιες ve μην πας bir arkadaş içindir; ήπιατε ve μην πήγατε geçmiş biçimleridir, emir olmaz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-24",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch24-try-pron",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-24"
+  ],
+  "rubric": {
+   "el": "Διαλέγω τη σωστή πρόταση.",
+   "en": "Choose the right sentence.",
+   "tr": "Doğru cümleyi seç."
+  },
+  "prompt": {
+   "el": "— Έστειλες το δέμα στη μητέρα σου; — Ναι, …",
+   "en": "— Did you send the parcel to your mother? — Yes, …",
+   "tr": "— Koliyi annene gönderdin mi? — Evet, …"
+  },
+  "options": [
+   "της το έστειλα χθες.",
+   "το της έστειλα χθες.",
+   "την το έστειλα χθες."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The person comes first (της, «to her»), then the thing (το, the parcel), both before the verb: της το έστειλα. την is «her» as the object, not «to her».",
+   "tr": "Önce kişi (της, «ona»), sonra şey (το, koli), ikisi de fiilin önünde: της το έστειλα. την «onu» demek, «ona» değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-24",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch24-try-gen",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-24"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Πέρσι {1} στη γιορτή {2} Νίκου και του {3} ένα δώρο.",
+  "answer": {
+   "1": [
+    "πήγα"
+   ],
+   "2": [
+    "του"
+   ],
+   "3": [
+    "έδωσα"
+   ]
+  },
+  "options": {
+   "1": [
+    "πήγα",
+    "πάω",
+    "θα πάω"
+   ],
+   "2": [
+    "του",
+    "τον",
+    "ο"
+   ],
+   "3": [
+    "έδωσα",
+    "δίνω",
+    "δώσα"
+   ]
+  },
+  "translation": {
+   "en": "Last year I went to Nikos's name day and gave him a gift.",
+   "tr": "Geçen yıl Nikos'un isim gününe gittim ve ona bir hediye verdim."
+  },
+  "explain": {
+   "en": "Πέρσι needs the past: πήγα, έδωσα (έδωσα, not δώσα: the έ- carries the stress). Whose name day? The genitive article: του Νίκου. The second του is «to him» (Lesson 20).",
+   "tr": "Πέρσι geçmişle gelir: πήγα, έδωσα (δώσα değil: vurguyu έ- taşır). Kimin isim günü? Tamlayan artikeli: του Νίκου. İkinci του «ona» demek (20. ders)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-24",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch24-try-clause",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-24"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "{1} δεν αργήσω, θα έρθω στη γιορτή σου {2} σου δώσω ένα δώρο.",
+  "answer": {
+   "1": [
+    "Αν"
+   ],
+   "2": [
+    "για να"
+   ]
+  },
+  "options": {
+   "1": [
+    "Αν",
+    "Πριν",
+    "Επειδή"
+   ],
+   "2": [
+    "για να",
+    "επειδή",
+    "αν και"
+   ]
+  },
+  "translation": {
+   "en": "If I am not late, I will come to your name day to give you a gift.",
+   "tr": "Geç kalmazsam isim gününe sana bir hediye vermek için geleceğim."
+  },
+  "explain": {
+   "en": "«If» is αν, with the once-only stem and no θα. The goal is για να + the form after να. επειδή and αν και need a real verb, not σου δώσω.",
+   "tr": "«Eğer» αν, bir kerelik kökle ve θα olmadan. Amaç için για να + να'dan sonraki biçim. επειδή ve αν και gerçek bir fiil ister, σου δώσω değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-24",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch24-try-compare",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-24"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Στην παλιά δουλειά το ωράριο ήταν οχτώ ώρες. Στη νέα είναι εννιά. Το νέο ωράριο είναι … από το παλιό.",
+   "en": "At the old job the working hours were eight hours. At the new one they are nine. The new working hours are … than the old ones.",
+   "tr": "Eski işte mesai sekiz saatti. Yenisinde dokuz saat. Yeni mesai eskisinden daha …"
+  },
+  "options": [
+   "μεγαλύτερο",
+   "μεγαλύτερος",
+   "πιο μεγαλύτερο"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Nine hours are more than eight: μεγαλύτερο, neuter like το ωράριο. μεγαλύτερος is masculine and does not agree; «πιο μεγαλύτερο» says «more» twice. πιο μεγάλο would be right too.",
+   "tr": "Dokuz saat sekizden fazla: μεγαλύτερο, το ωράριο gibi nötr. μεγαλύτερος eril, isimle uymuyor; «πιο μεγαλύτερο» «daha»yı iki kez söylüyor. πιο μεγάλο da doğru olurdu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-24",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch24-p-match",
+  "ask": {
+   "en": "Match each question with its answer.",
+   "tr": "Her soruyu cevabıyla eşleştir."
+  },
+  "type": "match",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-24"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each question with its answer.",
+   "tr": "Her soruyu cevabıyla eşleştir."
+  },
+  "left": [
+   "Τι έκανες χθες;",
+   "Τι έχετε;",
+   "Γιατί θα πάρεις τη δουλειά;",
+   "Ποιανού είναι το δώρο;"
+  ],
+  "right": [
+   "Πήγα στην τράπεζα και έκανα μια κατάθεση.",
+   "Έχω πυρετό και με πονάει ο λαιμός μου.",
+   "Επειδή ο μισθός είναι καλύτερος.",
+   "Του Νίκου."
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "explain": {
+   "en": "Χθες asks for the past; «Τι έχετε;» is the doctor's question; γιατί is answered with επειδή; ποιανού is answered with the genitive.",
+   "tr": "Χθες geçmiş ister; «Τι έχετε;» doktorun sorusu; γιατί'ye επειδή ile cevap verilir; ποιανού'ya tamlayan hâliyle."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-24",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch24-p-cat",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-24"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε μορφή στη σωστή στήλη.",
+   "en": "Put each form under past, future or instruction.",
+   "tr": "Her biçimi geçmiş, gelecek veya emir altına koy."
+  },
+  "categories": [
+   "Παρελθόν",
+   "Μέλλον",
+   "Εντολή"
+  ],
+  "items": [
+   "πήγαμε",
+   "έδωσα",
+   "θα στείλω",
+   "θα φάμε",
+   "πάρτε",
+   "μην πάρεις"
+  ],
+  "answer": [
+   0,
+   0,
+   1,
+   1,
+   2,
+   2
+  ],
+  "explain": {
+   "en": "Παρελθόν is the past, Μέλλον the future, Εντολή the instruction. πήγαμε, έδωσα: past. θα στείλω, θα φάμε: θα + once-only stem. πάρτε, μην πάρεις: instructions.",
+   "tr": "Παρελθόν geçmiş, Μέλλον gelecek, Εντολή emir. πήγαμε, έδωσα: geçmiş. θα στείλω, θα φάμε: θα + bir kerelik kök. πάρτε, μην πάρεις: emir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-24",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch24-p-neg",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-24"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ο Νίκος έχει το δέμα μου και θέλει να το ανοίξει. Του λέω:",
+   "en": "Nikos has my parcel and wants to open it. I tell him:",
+   "tr": "Nikos'un elinde kolim var ve açmak istiyor. Ona diyorum ki:"
+  },
+  "options": [
+   "Μην το ανοίξεις!",
+   "Μην άνοιξε το!",
+   "Μην το ανοίξτε!"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "A negative instruction to a friend: μην + the form after να (ανοίξεις), and the pronoun goes before the verb. «Μην άνοιξε το» uses the positive form, and ανοίξτε is for several people.",
+   "tr": "Arkadaşa olumsuz emir: μην + να'dan sonraki biçim (ανοίξεις), zamir fiilin önünde. «Μην άνοιξε το» olumlu biçimi kullanıyor, ανοίξτε ise birkaç kişi içindir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-24",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch24-p-age",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-24"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Η Αϊσέ είναι είκοσι οχτώ χρονών και η Ελένη είναι είκοσι πέντε. Η Αϊσέ είναι … από την Ελένη.",
+   "en": "Ayşe is twenty-eight and Eleni is twenty-five. Ayşe is … than Eleni.",
+   "tr": "Ayşe yirmi sekiz, Eleni yirmi beş yaşında. Ayşe, Eleni'den …"
+  },
+  "options": [
+   "μεγαλύτερη",
+   "πιο μεγαλύτερη",
+   "μικρότερη"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Older: μεγαλύτερη, feminine for Ayşe. «Πιο μεγαλύτερη» is wrong (no «more older»), and μικρότερη means younger.",
+   "tr": "Daha büyük: μεγαλύτερη, Ayşe için dişil. «Πιο μεγαλύτερη» yanlış, μικρότερη ise daha genç demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-24",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch24-p-gap",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-24"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω τα κενά. Δύο λέξεις περισσεύουν.",
+   "en": "Fill the gaps. Two words are not needed.",
+   "tr": "Boşlukları doldur. İki kelime fazla."
+  },
+  "text": "Μόλις {1} στην τράπεζα, θα σου τηλεφωνήσω. Θα φύγω νωρίς {2} μην αργήσω.",
+  "bank": [
+   "φτάσω",
+   "για να",
+   "επειδή",
+   "έφτασα"
+  ],
+  "answer": {
+   "1": "φτάσω",
+   "2": "για να"
+  },
+  "translation": {
+   "en": "As soon as I arrive at the bank, I will phone you. I will leave early so as not to be late.",
+   "tr": "Bankaya varır varmaz sana telefon edeceğim. Geç kalmamak için erken çıkacağım."
+  },
+  "explain": {
+   "en": "μόλις + the once-only stem for the future: φτάσω, not the past έφτασα. The goal is για να μην αργήσω; επειδή needs a real verb.",
+   "tr": "μόλις + gelecek için bir kerelik kök: φτάσω, geçmiş έφτασα değil. Amaç: για να μην αργήσω; επειδή gerçek bir fiil ister."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-24",
+   "by": "sonnet-draft"
+  }
+ }
+]

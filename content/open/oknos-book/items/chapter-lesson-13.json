@@ -1,0 +1,994 @@
+[
+ {
+  "id": "ch13-aspros",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "άσπρος / άσπρη / άσπρο",
+  "pos": "adj",
+  "en": "white",
+  "tr": "beyaz",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "lemma": "άσπρος",
+  "example": {
+   "el": "Θέλω ένα άσπρο πουκάμισο.",
+   "en": "I want a white shirt.",
+   "tr": "Beyaz bir gömlek istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-mov",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μωβ",
+  "pos": "adj",
+  "en": "purple (never changes)",
+  "tr": "mor (hiç değişmez)",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "lemma": "μωβ",
+  "example": {
+   "el": "Η μωβ μπλούζα είναι ωραία.",
+   "en": "The purple top is nice.",
+   "tr": "Mor bluz güzel."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-stenos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "στενός / στενή / στενό",
+  "pos": "adj",
+  "en": "narrow; tight",
+  "tr": "dar",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "lemma": "στενός",
+  "example": {
+   "el": "Το παντελόνι είναι στενό.",
+   "en": "The trousers are tight.",
+   "tr": "Pantolon dar."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-fardys",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "φαρδύς / φαρδιά / φαρδύ",
+  "pos": "adj",
+  "en": "wide; loose",
+  "tr": "geniş; bol",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "lemma": "φαρδύς",
+  "example": {
+   "el": "Τα παπούτσια είναι φαρδιά.",
+   "en": "The shoes are wide.",
+   "tr": "Ayakkabılar geniş."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-makrys",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μακρύς / μακριά / μακρύ",
+  "pos": "adj",
+  "en": "long",
+  "tr": "uzun",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "lemma": "μακρύς",
+  "example": {
+   "el": "Η φούστα είναι μακριά.",
+   "en": "The skirt is long.",
+   "tr": "Etek uzun."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-aresei",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μου αρέσει / μου αρέσουν",
+  "pos": "verb",
+  "en": "I like it / I like them (lit. it pleases me)",
+  "tr": "hoşuma gidiyor (bana hoş geliyor)",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "lemma": "αρέσω",
+  "example": {
+   "el": "Μου αρέσουν τα κόκκινα παπούτσια.",
+   "en": "I like the red shoes.",
+   "tr": "Kırmızı ayakkabılar hoşuma gidiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-dokimazo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "δοκιμάζω",
+  "pos": "verb",
+  "en": "try on; try; taste",
+  "tr": "denemek (giysi, yemek)",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "lemma": "δοκιμάζω",
+  "example": {
+   "el": "Δοκιμάζω το παντελόνι.",
+   "en": "I am trying on the trousers.",
+   "tr": "Pantolonu deniyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-kano",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κάνω",
+  "pos": "verb",
+  "en": "do; make (έκανα, θα κάνω)",
+  "tr": "yapmak; etmek (έκανα, θα κάνω)",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "lemma": "κάνω",
+  "example": {
+   "el": "Αύριο θα κάνω ψώνια.",
+   "en": "Tomorrow I will do the shopping.",
+   "tr": "Yarın alışveriş yapacağım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-chreiazomai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "χρειάζομαι",
+  "pos": "verb",
+  "en": "need",
+  "tr": "ihtiyacı olmak; ihtiyaç duymak",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "lemma": "χρειάζομαι",
+  "example": {
+   "el": "Χρειάζομαι ένα φόρεμα για το πάρτι.",
+   "en": "I need a dress for the party.",
+   "tr": "Parti için bir elbiseye ihtiyacım var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-kourazomai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κουράζομαι",
+  "pos": "verb",
+  "en": "get tired",
+  "tr": "yorulmak",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "lemma": "κουράζομαι",
+  "example": {
+   "el": "Κουράζομαι πολύ στη δουλειά.",
+   "en": "I get very tired at work.",
+   "tr": "İşte çok yoruluyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-noumero",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το νούμερο",
+  "pos": "noun",
+  "en": "size (of shoes and clothes); number",
+  "tr": "beden; numara",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "lemma": "νούμερο",
+  "gender": "n",
+  "example": {
+   "el": "Τι νούμερο φοράς;",
+   "en": "What size do you wear?",
+   "tr": "Kaç numara giyiyorsun?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-poletria",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η πωλήτρια",
+  "pos": "noun",
+  "en": "saleswoman; shop assistant",
+  "tr": "(kadın) tezgâhtar; satıcı",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "lemma": "πωλήτρια",
+  "gender": "f",
+  "example": {
+   "el": "Η πωλήτρια δουλεύει σε ένα μαγαζί στην Ερμού.",
+   "en": "The shop assistant works in a shop on Ermou Street.",
+   "tr": "Tezgâhtar kadın Ermou Caddesi'nde bir dükkânda çalışıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-magazi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το μαγαζί",
+  "pos": "noun",
+  "en": "shop",
+  "tr": "dükkân; mağaza",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "lemma": "μαγαζί",
+  "gender": "n",
+  "example": {
+   "el": "Το μαγαζί είναι στην Ερμού.",
+   "en": "The shop is on Ermou Street.",
+   "tr": "Dükkân Ermou Caddesi'nde."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-q-size",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Τι λέει η Αϊσέ για το σαράντα;",
+   "en": "What does Ayşe say about size forty?",
+   "tr": "Ayşe kırk bedeni için ne diyor?"
+  },
+  "options": [
+   "Είναι πολύ στενό.",
+   "Είναι πολύ κοντό.",
+   "Είναι πολύ ακριβό."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Δε μου κάνει το σαράντα. Είναι πολύ στενό.» She then takes the forty-two.",
+   "tr": "«Δε μου κάνει το σαράντα. Είναι πολύ στενό.» Sonra kırk iki bedeni alıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Αϊσέ φοράει το τριάντα εννιά στα παπούτσια.",
+    "en": "Ayşe wears a size thirty-nine in shoes.",
+    "tr": "Ayşe ayakkabıda otuz dokuz giyiyor.",
+    "answer": true
+   },
+   {
+    "el": "Η Αϊσέ πληρώνει με μετρητά.",
+    "en": "Ayşe pays in cash.",
+    "tr": "Ayşe nakit ödüyor.",
+    "answer": false
+   },
+   {
+    "el": "Η Μαρίνα δουλεύει στην Ερμού.",
+    "en": "Marina works on Ermou Street.",
+    "tr": "Marina Ermou'da çalışıyor.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "Ayşe asks for the brown shoes «το τριάντα εννιά» and says «Πληρώνω με κάρτα» (by card, not cash). Marina: «Ήμουν στο μαγαζί, στην Ερμού».",
+   "tr": "Ayşe kahverengi ayakkabıları «το τριάντα εννιά» olarak istiyor ve «Πληρώνω με κάρτα» diyor (nakit değil, kartla). Marina: «Ήμουν στο μαγαζί, στην Ερμού»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-try-agree",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Ο Νίκος έχει {1} φίλους και {2} παπούτσια.",
+  "answer": {
+   "1": [
+    "καλούς"
+   ],
+   "2": [
+    "ωραία"
+   ]
+  },
+  "options": {
+   "1": [
+    "καλούς",
+    "καλοί",
+    "καλά"
+   ],
+   "2": [
+    "ωραία",
+    "ωραίες",
+    "ωραίους"
+   ]
+  },
+  "translation": {
+   "en": "Nikos has good friends and nice shoes.",
+   "tr": "Nikos'un iyi arkadaşları ve güzel ayakkabıları var."
+  },
+  "explain": {
+   "en": "φίλους is masculine and an object: καλούς (-ους). παπούτσια is neuter plural: ωραία. καλοί is the subject form, ωραίες is feminine.",
+   "tr": "φίλους eril ve nesne: καλούς (-ους). παπούτσια nötr çoğul: ωραία. καλοί özne biçimi, ωραίες dişil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-try-nochange",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ποια φράση είναι σωστή;",
+   "en": "Which phrase is correct? (the pink skirts)",
+   "tr": "Hangi öbek doğru? (pembe etekler)"
+  },
+  "options": [
+   "οι ροζ φούστες",
+   "οι ροζές φούστες",
+   "οι ροζοί φούστες"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "ροζ never changes, so only the article and the noun show the plural: οι ροζ φούστες.",
+   "tr": "ροζ hiç değişmez; çoğulu yalnızca artikel ve isim gösterir: οι ροζ φούστες."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-try-aresei",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "— Σου {1} τα καφέ παπούτσια; — Ναι, αλλά δε μου {2}. Είναι στενά.",
+  "answer": {
+   "1": [
+    "αρέσουν"
+   ],
+   "2": [
+    "κάνουν"
+   ]
+  },
+  "options": {
+   "1": [
+    "αρέσουν",
+    "αρέσει",
+    "αρέσεις"
+   ],
+   "2": [
+    "κάνουν",
+    "κάνει",
+    "κάνεις"
+   ]
+  },
+  "translation": {
+   "en": "— Do you like the brown shoes? — Yes, but they don't fit me. They're tight.",
+   "tr": "— Kahverengi ayakkabılar hoşuna gidiyor mu? — Evet ama bana olmuyor. Dar."
+  },
+  "explain": {
+   "en": "The thing liked is τα παπούτσια, plural, so both verbs are plural: αρέσουν, κάνουν. καφέ does not change. αρέσεις and κάνεις are «you» forms.",
+   "tr": "Söz konusu şey τα παπούτσια, çoğul; bu yüzden iki fiil de çoğul: αρέσουν, κάνουν. καφέ değişmez. αρέσεις ve κάνεις «sen» biçimleri."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-try-kano",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "— Τι {1} χθες, Νίκο; — Έκανα ψώνια στην Ερμού. Εσύ τι {2} αύριο;",
+  "answer": {
+   "1": [
+    "έκανες"
+   ],
+   "2": [
+    "θα κάνεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "έκανες",
+    "έκανα",
+    "θα κάνεις"
+   ],
+   "2": [
+    "θα κάνεις",
+    "θα κάνω",
+    "έκανες"
+   ]
+  },
+  "translation": {
+   "en": "— What did you do yesterday, Nikos? — I went shopping on Ermou Street. What will you do tomorrow?",
+   "tr": "— Dün ne yaptın, Nikos? — Ermou'da alışveriş yaptım. Sen yarın ne yapacaksın?"
+  },
+  "explain": {
+   "en": "Both questions are to «you». Yesterday: έκανες. Tomorrow: θα κάνεις. έκανα and θα κάνω are the «I» forms.",
+   "tr": "İki soru da «sen»e soruluyor. Dün: έκανες. Yarın: θα κάνεις. έκανα ve θα κάνω «ben» biçimleri."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-try-erchomai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "— Πότε {1} στο μαγαζί, Αϊσέ; — {2} στις δέκα.",
+  "answer": {
+   "1": [
+    "έρχεσαι"
+   ],
+   "2": [
+    "Έρχομαι",
+    "έρχομαι"
+   ]
+  },
+  "options": {
+   "1": [
+    "έρχεσαι",
+    "έρχομαι",
+    "έρχεται"
+   ],
+   "2": [
+    "Έρχομαι",
+    "Έρχεσαι",
+    "Έρχεται"
+   ]
+  },
+  "translation": {
+   "en": "— When are you coming to the shop, Ayşe? — I am coming at ten.",
+   "tr": "— Dükkâna ne zaman geliyorsun, Ayşe? — Saat onda geliyorum."
+  },
+  "explain": {
+   "en": "A question to «you» (Αϊσέ): έρχεσαι. The answer from Ayşe herself: έρχομαι.",
+   "tr": "Soru Ayşe'ye, yani «sen»e: έρχεσαι. Ayşe kendisi için cevap veriyor: έρχομαι."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-p-match-adj",
+  "ask": {
+   "en": "Match each phrase with its plural.",
+   "tr": "Her öbeği çoğuluyla eşleştir."
+  },
+  "type": "match",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each phrase with its plural.",
+   "tr": "Her öbeği çoğuluyla eşleştir."
+  },
+  "left": [
+   "το κόκκινο παντελόνι",
+   "η μαύρη μπλούζα",
+   "το άσπρο πουκάμισο",
+   "ο ωραίος πελάτης"
+  ],
+  "right": [
+   "οι ωραίοι πελάτες",
+   "τα άσπρα πουκάμισα",
+   "οι μαύρες μπλούζες",
+   "τα κόκκινα παντελόνια"
+  ],
+  "answer": [
+   3,
+   2,
+   1,
+   0
+  ],
+  "explain": {
+   "en": "Article, adjective and noun all change: -ο → -α (neuter), -η → -ες (feminine), -ος → -οι (masculine).",
+   "tr": "Artikel, sıfat ve isim birlikte değişir: -ο → -α (nötr), -η → -ες (dişil), -ος → -οι (eril)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-p-categorise",
+  "ask": {
+   "en": "Sort the adjectives: «αλλάζει» (it changes with gender and number) or «δεν αλλάζει» (it never changes).",
+   "tr": "Sıfatları ayır: «αλλάζει» (cinse ve sayıya göre değişir) ya da «δεν αλλάζει» (hiç değişmez)."
+  },
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε λέξη στη σωστή ομάδα.",
+   "en": "Sort the adjectives: «αλλάζει» (it changes with gender and number) or «δεν αλλάζει» (it never changes).",
+   "tr": "Sıfatları ayır: «αλλάζει» (cinse ve sayıya göre değişir) ya da «δεν αλλάζει» (hiç değişmez)."
+  },
+  "categories": [
+   "αλλάζει",
+   "δεν αλλάζει"
+  ],
+  "items": [
+   "μαύρος",
+   "μπλε",
+   "κοντός",
+   "ροζ",
+   "καφέ",
+   "φαρδύς"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   1,
+   0
+  ],
+  "explain": {
+   "en": "μαύρος, κοντός and φαρδύς have different forms (μαύρη, κοντές, φαρδιά …). μπλε, ροζ and καφέ never change.",
+   "tr": "μαύρος, κοντός ve φαρδύς değişir (μαύρη, κοντές, φαρδιά …). μπλε, ροζ ve καφέ hiç değişmez."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-p-pronoun-match",
+  "ask": {
+   "en": "Match each person with the little word of «μου αρέσει».",
+   "tr": "Her kişiyi «μου αρέσει» kalıbındaki küçük kelimeyle eşleştir."
+  },
+  "type": "match",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each person with the little word of «μου αρέσει».",
+   "tr": "Her kişiyi «μου αρέσει» kalıbındaki küçük kelimeyle eşleştir."
+  },
+  "left": [
+   "(εγώ)",
+   "(εσύ)",
+   "(αυτός)",
+   "(αυτή)",
+   "(εμείς)",
+   "(αυτοί)"
+  ],
+  "right": [
+   "της",
+   "τους",
+   "μου",
+   "μας",
+   "του",
+   "σου"
+  ],
+  "answer": [
+   2,
+   5,
+   4,
+   0,
+   3,
+   1
+  ],
+  "explain": {
+   "en": "μου, σου, του, της, μας, τους: the same little words as in το σπίτι μου (Lesson 4). σας is for εσείς.",
+   "tr": "μου, σου, του, της, μας, τους: Ders 4'teki küçük kelimeler (το σπίτι μου). σας, εσείς içindir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-p-fit",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Το παντελόνι είναι πολύ στενό. Τι λέω;",
+   "en": "The trousers are too tight. What do I say?",
+   "tr": "Pantolon çok dar. Ne diyorum?"
+  },
+  "options": [
+   "Δε μου κάνει.",
+   "Μου κάνει.",
+   "Μου πάνε."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Size is μου κάνει / δε μου κάνει. Μου πάνε is plural and means «they suit me»; the trousers are one thing.",
+   "tr": "Beden için μου κάνει / δε μου κάνει denir. Μου πάνε çoğuldur ve «yakışıyorlar» demektir; pantolon tek şey."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-p-bank-aresei",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Μου {1} τα παπούτσια, αλλά είναι στενά και δε μου {2}.",
+  "bank": [
+   "αρέσουν",
+   "κάνουν",
+   "πάει"
+  ],
+  "answer": {
+   "1": "αρέσουν",
+   "2": "κάνουν"
+  },
+  "translation": {
+   "en": "I like the shoes, but they are tight and they don't fit me.",
+   "tr": "Ayakkabılar hoşuma gidiyor ama dar ve bana olmuyor."
+  },
+  "explain": {
+   "en": "Both gaps need the plural (τα παπούτσια). First «I like them»: αρέσουν. Then, because they are tight, «they don't fit»: κάνουν. πάει is singular.",
+   "tr": "İki boşluk da çoğul ister (τα παπούτσια). Önce «hoşuma gidiyor»: αρέσουν. Sonra, dar oldukları için «olmuyor»: κάνουν. πάει tekildir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-p-bank-verbs",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Οι πελάτες {1} στο μαγαζί το Σάββατο. Εμείς {2} πολύ. Εγώ {3} ένα καπέλο.",
+  "bank": [
+   "έρχονται",
+   "κουραζόμαστε",
+   "χρειάζομαι",
+   "κάθεται"
+  ],
+  "answer": {
+   "1": "έρχονται",
+   "2": "κουραζόμαστε",
+   "3": "χρειάζομαι"
+  },
+  "translation": {
+   "en": "The customers come to the shop on Saturday. We get very tired. I need a hat.",
+   "tr": "Müşteriler cumartesi dükkâna geliyor. Biz çok yoruluyoruz. Bana bir şapka lazım."
+  },
+  "explain": {
+   "en": "The ending shows the person: οι πελάτες → έρχονται, εμείς → κουραζόμαστε, εγώ → χρειάζομαι. κάθεται is third person singular and fits none of them.",
+   "tr": "Ek kişiyi gösterir: οι πελάτες → έρχονται, εμείς → κουραζόμαστε, εγώ → χρειάζομαι. κάθεται üçüncü tekil kişidir, hiçbirine uymaz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-p-bank-kano",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Χθες η Μαρίνα {1} ψώνια. Αύριο εμείς {2} ψώνια.",
+  "bank": [
+   "έκανε",
+   "θα κάνουμε",
+   "θα κάνει",
+   "έκαναν"
+  ],
+  "answer": {
+   "1": "έκανε",
+   "2": "θα κάνουμε"
+  },
+  "translation": {
+   "en": "Yesterday Marina did the shopping. Tomorrow we will do the shopping.",
+   "tr": "Dün Marina alışveriş yaptı. Yarın biz alışveriş yapacağız."
+  },
+  "explain": {
+   "en": "Χθες is past, one person (Marina): έκανε. Αύριο is future, εμείς: θα κάνουμε.",
+   "tr": "Χθες geçmiş, tek kişi (Marina): έκανε. Αύριο gelecek, εμείς: θα κάνουμε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-p-opposites",
+  "ask": {
+   "en": "Match each phrase with its opposite.",
+   "tr": "Her öbeği zıddıyla eşleştir."
+  },
+  "type": "match",
+  "skill": "vocab",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each phrase with its opposite.",
+   "tr": "Her öbeği zıddıyla eşleştir."
+  },
+  "left": [
+   "στενά παντελόνια",
+   "κοντές φούστες",
+   "ακριβά παπούτσια",
+   "παλιά πουκάμισα"
+  ],
+  "right": [
+   "μακριές φούστες",
+   "φτηνά παπούτσια",
+   "φαρδιά παντελόνια",
+   "καινούργια πουκάμισα"
+  ],
+  "answer": [
+   2,
+   0,
+   1,
+   3
+  ],
+  "explain": {
+   "en": "Tight and wide, short and long, expensive and cheap, old and new. The plural endings already agree with the noun.",
+   "tr": "Dar ve geniş, kısa ve uzun, pahalı ve ucuz, eski ve yeni. Çoğul ekleri zaten isme uyuyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch13-p-bank-pronoun",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-13"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Η Αϊσέ φοράει ένα μωβ φόρεμα και {1} πάει πολύ. Ο Νίκος δοκιμάζει ένα καπέλο, αλλά δεν {2} κάνει.",
+  "bank": [
+   "της",
+   "του",
+   "τους"
+  ],
+  "answer": {
+   "1": "της",
+   "2": "του"
+  },
+  "translation": {
+   "en": "Ayşe is wearing a purple dress and it suits her very well. Nikos is trying on a hat, but it doesn't fit him.",
+   "tr": "Ayşe mor bir elbise giyiyor ve ona çok yakışıyor. Nikos bir şapka deniyor ama ona olmuyor."
+  },
+  "explain": {
+   "en": "Ayşe is a woman: της. Nikos, who tries on the hat, is a man: του. τους is for several people.",
+   "tr": "Ayşe kadın: της. Şapkayı deneyen Nikos erkek: του. τους birden çok kişi içindir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-13",
+   "by": "sonnet-draft"
+  }
+ }
+]

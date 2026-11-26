@@ -1,0 +1,994 @@
+[
+ {
+  "id": "ch15-souvlaki",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το σουβλάκι",
+  "pos": "noun",
+  "en": "souvlaki (grilled meat on a skewer, or in a pita)",
+  "tr": "suvlaki (şişte ya da pidede ızgara et)",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "lemma": "σουβλάκι",
+  "gender": "n",
+  "example": {
+   "el": "Θα πάρω δύο σουβλάκια σε πίτα.",
+   "en": "I'll have two souvlaki in pita.",
+   "tr": "Pidede iki suvlaki alacağım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-gyros",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο γύρος",
+  "pos": "noun",
+  "en": "gyros (meat roasted on a vertical spit)",
+  "tr": "döner (dikey şişte pişen et)",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "lemma": "γύρος",
+  "gender": "m",
+  "example": {
+   "el": "Ένα σουβλάκι με γύρο, παρακαλώ.",
+   "en": "A souvlaki with gyros, please.",
+   "tr": "Bir döner suvlaki, lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-pita",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η πίτα",
+  "pos": "noun",
+  "en": "pita (flat bread); pie",
+  "tr": "pide (yassı ekmek); börek",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "lemma": "πίτα",
+  "gender": "f",
+  "example": {
+   "el": "Σε πίτα ή σε μερίδα;",
+   "en": "In pita, or on a plate?",
+   "tr": "Pidede mi, tabakta mı?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-choriatiki",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η χωριάτικη σαλάτα",
+  "pos": "phrase",
+  "en": "Greek (village) salad",
+  "tr": "köy salatası (Yunan salatası)",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "example": {
+   "el": "Θα πάρω μία χωριάτικη σαλάτα.",
+   "en": "I'll have a Greek salad.",
+   "tr": "Bir köy salatası alacağım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-tzatziki",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το τζατζίκι",
+  "pos": "noun",
+  "en": "tzatziki (yoghurt, cucumber and garlic dip)",
+  "tr": "tzatziki (yoğurtlu, salatalıklı, sarımsaklı meze)",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "lemma": "τζατζίκι",
+  "gender": "n",
+  "example": {
+   "el": "Μία μερίδα τζατζίκι, παρακαλώ.",
+   "en": "A portion of tzatziki, please.",
+   "tr": "Bir porsiyon tzatziki, lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-merida",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η μερίδα",
+  "pos": "noun",
+  "en": "portion",
+  "tr": "porsiyon",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "lemma": "μερίδα",
+  "gender": "f",
+  "example": {
+   "el": "Θα πάρω μία μερίδα αρνί.",
+   "en": "I'll have a portion of lamb.",
+   "tr": "Bir porsiyon kuzu alacağım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-krasi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το κρασί",
+  "pos": "noun",
+  "en": "wine",
+  "tr": "şarap",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "lemma": "κρασί",
+  "gender": "n",
+  "example": {
+   "el": "Θα πιούμε μισό κιλό κρασί.",
+   "en": "We'll drink half a kilo of wine.",
+   "tr": "Yarım kilo şarap içeceğiz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-paraggelno",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "παραγγέλνω",
+  "pos": "verb",
+  "en": "order (food, goods)",
+  "tr": "sipariş vermek",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "lemma": "παραγγέλνω",
+  "example": {
+   "el": "Θα ήθελα να παραγγείλω σουβλάκια.",
+   "en": "I would like to order souvlaki.",
+   "tr": "Suvlaki sipariş etmek istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-kleino",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "κλείνω",
+  "pos": "verb",
+  "en": "close; book (a table)",
+  "tr": "kapatmak; (masa) ayırtmak",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "lemma": "κλείνω",
+  "example": {
+   "el": "Θα κλείσω τραπέζι για το Σάββατο.",
+   "en": "I will book a table for Saturday.",
+   "tr": "Cumartesi için masa ayırtacağım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-pairno",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "παίρνω",
+  "pos": "verb",
+  "en": "take; get; (when ordering) have",
+  "tr": "almak; (sipariş verirken) almak",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "lemma": "παίρνω",
+  "example": {
+   "el": "Τι θα πάρετε;",
+   "en": "What will you have?",
+   "tr": "Ne alacaksınız?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-atomo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το άτομο",
+  "pos": "noun",
+  "en": "person (when counting)",
+  "tr": "kişi (sayarken)",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "lemma": "άτομο",
+  "gender": "n",
+  "example": {
+   "el": "Είμαστε τέσσερα άτομα.",
+   "en": "There are four of us.",
+   "tr": "Dört kişiyiz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-methavrio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μεθαύριο",
+  "pos": "adv",
+  "en": "the day after tomorrow",
+  "tr": "öbür gün",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "example": {
+   "el": "Μεθαύριο θα δουλέψω στο γραφείο.",
+   "en": "The day after tomorrow I will work at the office.",
+   "tr": "Öbür gün ofiste çalışacağım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-tou-chronou",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "του χρόνου",
+  "pos": "phrase",
+  "en": "next year (set phrase)",
+  "tr": "seneye; gelecek yıl",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "example": {
+   "el": "Του χρόνου θα ταξιδέψουμε στη Σμύρνη.",
+   "en": "Next year we will travel to Smyrna.",
+   "tr": "Seneye İzmir'e yolculuk edeceğiz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-q-delivery",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Σε πόση ώρα θα έρθουν τα σουβλάκια;",
+   "en": "How long until the souvlaki arrive?",
+   "tr": "Suvlakiler ne kadar sonra gelecek?"
+  },
+  "options": [
+   "Σε μισή ώρα.",
+   "Σε μία ώρα.",
+   "Σε δέκα λεπτά."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The clerk says «Τα σουβλάκια θα έρθουν σε μισή ώρα.» (σε + a length of time = in, from now).",
+   "tr": "Çalışan «Τα σουβλάκια θα έρθουν σε μισή ώρα.» diyor (σε + süre = … sonra)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-q-table",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Θα είναι έξι άτομα στο τραπέζι.",
+    "en": "There will be six people at the table.",
+    "tr": "Masada altı kişi olacak.",
+    "answer": true
+   },
+   {
+    "el": "Η Αϊσέ θα φάει αρνί.",
+    "en": "Ayşe will have lamb.",
+    "tr": "Ayşe kuzu yiyecek.",
+    "answer": true
+   },
+   {
+    "el": "Ο Νίκος θα φάει ζυμαρικά.",
+    "en": "Nikos will have pasta.",
+    "tr": "Nikos makarna yiyecek.",
+    "answer": false
+   }
+  ],
+  "explain": {
+   "en": "Ayşe booked for six, and she says «Θα φάω αρνί». Nikos has chicken, and Eleni has pasta.",
+   "tr": "Ayşe altı kişilik masa ayırtmıştı ve «Θα φάω αρνί» diyor. Nikos tavuk yiyor, makarnayı Eleni yiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-try-stem",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.future.simple"
+  ],
+  "text": "Το Σάββατο εγώ θα {1} στο γραφείο.",
+  "answer": {
+   "1": [
+    "δουλέψω"
+   ]
+  },
+  "options": {
+   "1": [
+    "δουλέψω",
+    "δουλεύσω",
+    "δουλέξω"
+   ]
+  },
+  "translation": {
+   "en": "On Saturday I will work at the office.",
+   "tr": "Cumartesi ofiste çalışacağım."
+  },
+  "explain": {
+   "en": "Verbs in -εύω change -ευ- to -εψ-, and the accent mark moves onto the ε: δουλεύω → θα δουλέψω. The other two are not real forms.",
+   "tr": "-εύω ile biten fiillerde -ευ- → -εψ- olur ve vurgu işareti ε'ye geçer: δουλεύω → θα δουλέψω. Diğer ikisi gerçek biçim değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-p-endings",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.future.simple"
+  ],
+  "text": "Το Σάββατο εμείς θα {1} στην ταβέρνα.",
+  "answer": {
+   "1": [
+    "πάμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "πάμε",
+    "πάω",
+    "πάτε"
+   ]
+  },
+  "translation": {
+   "en": "On Saturday we will go to the taverna.",
+   "tr": "Cumartesi biz tavernaya gideceğiz."
+  },
+  "explain": {
+   "en": "«Εμείς» takes the -με form: θα πάμε. θα πάω is «I», θα πάτε is «you» (plural).",
+   "tr": "«Εμείς» için -με biçimi gelir: θα πάμε. θα πάω «ben», θα πάτε «siz» demektir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-try-irregular",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Σήμερα τρώω κοτόπουλο. Αύριο θα … αρνί.",
+   "en": "Today I eat chicken. Tomorrow I will … lamb. (eat)",
+   "tr": "Bugün tavuk yiyorum. Yarın kuzu … (yemek)"
+  },
+  "options": [
+   "φάω.",
+   "πιω.",
+   "τρώσω."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The future of τρώω is θα φάω. θα πιω is the future of πίνω (drink), and τρώσω does not exist.",
+   "tr": "τρώω'nun geleceği θα φάω. θα πιω, πίνω'nun (içmek) geleceğidir; τρώσω diye bir biçim yoktur."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-p-neg",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "— Θα πας αύριο στο γραφείο; — Όχι, … .",
+   "en": "— Will you go to the office tomorrow? — No, I won't.",
+   "tr": "— Yarın ofise gidecek misin? — Hayır, gitmeyeceğim."
+  },
+  "options": [
+   "δε θα πάω",
+   "θα δε πάω",
+   "δε πάω θα"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The negative comes before θα: δε θα πάω. The other two orders do not exist in Greek.",
+   "tr": "Olumsuzluk θα'dan önce gelir: δε θα πάω. Diğer iki sıra Yunancada yoktur."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-try-bank",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Το Σάββατο εμείς θα {1} στην ταβέρνα. Εγώ θα {2} αρνί, η Αϊσέ θα {3} κοτόπουλο και ο Νίκος θα {4} τον λογαριασμό.",
+  "bank": [
+   "πάμε",
+   "φάω",
+   "φάει",
+   "πληρώσει",
+   "φάτε"
+  ],
+  "answer": {
+   "1": "πάμε",
+   "2": "φάω",
+   "3": "φάει",
+   "4": "πληρώσει"
+  },
+  "translation": {
+   "en": "On Saturday we will go to the taverna. I will have lamb, Ayşe will have chicken and Nikos will pay the bill.",
+   "tr": "Cumartesi biz tavernaya gideceğiz. Ben kuzu yiyeceğim, Ayşe tavuk yiyecek, Nikos da hesabı ödeyecek."
+  },
+  "explain": {
+   "en": "Match each verb to its subject: εμείς → πάμε, εγώ → φάω, η Αϊσέ → φάει, ο Νίκος → πληρώσει. φάτε (you, plural) is left over.",
+   "tr": "Her fiili öznesiyle eşleştir: εμείς → πάμε, εγώ → φάω, η Αϊσέ → φάει, ο Νίκος → πληρώσει. φάτε (siz) artıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-p-match-stem",
+  "type": "match",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the forms.",
+   "tr": "Biçimleri eşleştir."
+  },
+  "left": [
+   "γράφω",
+   "διαβάζω",
+   "δουλεύω",
+   "πληρώνω",
+   "μένω"
+  ],
+  "right": [
+   "θα γράψω",
+   "θα διαβάσω",
+   "θα δουλέψω",
+   "θα πληρώσω",
+   "θα μείνω"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "explain": {
+   "en": "φ → ψ, ζ → σ, ευ → εψ, -ώνω → -ώσω; μένω → μείνω is irregular.",
+   "tr": "φ → ψ, ζ → σ, ευ → εψ, -ώνω → -ώσω; μένω → μείνω ise kural dışı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-p-match-irregular",
+  "type": "match",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the forms.",
+   "tr": "Biçimleri eşleştir."
+  },
+  "left": [
+   "τρώω",
+   "πίνω",
+   "βλέπω",
+   "λέω",
+   "παίρνω"
+  ],
+  "right": [
+   "θα φάω",
+   "θα πιω",
+   "θα δω",
+   "θα πω",
+   "θα πάρω"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "explain": {
+   "en": "These five change their stem: τρώω → φάω, πίνω → πιω, βλέπω → δω, λέω → πω, παίρνω → πάρω.",
+   "tr": "Bu beş fiil kök değiştirir: τρώω → φάω, πίνω → πιω, βλέπω → δω, λέω → πω, παίρνω → πάρω."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-p-come",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.future.simple"
+  ],
+  "text": "Εσύ θα {1} στο πάρτι το Σάββατο;",
+  "answer": {
+   "1": [
+    "έρθεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "έρθεις",
+    "έρθω",
+    "έρθετε"
+   ]
+  },
+  "translation": {
+   "en": "Will you come to the party on Saturday?",
+   "tr": "Cumartesi partiye gelecek misin?"
+  },
+  "explain": {
+   "en": "«Εσύ» takes -εις: θα έρθεις. θα έρθω is «I» and θα έρθετε is «you» (plural).",
+   "tr": "«Εσύ» için -εις gelir: θα έρθεις. θα έρθω «ben», θα έρθετε «siz» demektir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-p-pay",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.future.simple"
+  ],
+  "text": "Ο Νίκος θα {1} τον λογαριασμό.",
+  "answer": {
+   "1": [
+    "πληρώσει"
+   ]
+  },
+  "options": {
+   "1": [
+    "πληρώσει",
+    "πληρώσουν",
+    "πληρώσω"
+   ]
+  },
+  "translation": {
+   "en": "Nikos will pay the bill.",
+   "tr": "Nikos hesabı ödeyecek."
+  },
+  "explain": {
+   "en": "One man, so the 3rd person singular: θα πληρώσει (-ώνω → -ώσω).",
+   "tr": "Tek bir erkek var, yani üçüncü tekil kişi: θα πληρώσει (-ώνω → -ώσω)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-p-travel",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.future.simple"
+  ],
+  "text": "Την άλλη εβδομάδα εσείς θα {1} στην Κρήτη.",
+  "answer": {
+   "1": [
+    "ταξιδέψετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ταξιδέψετε",
+    "ταξιδέψουμε",
+    "ταξιδέψουν"
+   ]
+  },
+  "translation": {
+   "en": "Next week you will travel to Crete.",
+   "tr": "Gelecek hafta siz Girit'e yolculuk edeceksiniz."
+  },
+  "explain": {
+   "en": "«Εσείς» → θα ταξιδέψετε, with the same ending as in the present (γράφετε → θα γράψετε).",
+   "tr": "«Εσείς» → θα ταξιδέψετε; ek şimdiki zamandakiyle aynı (γράφετε → θα γράψετε)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-p-time",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Σήμερα είναι Παρασκευή. Μεθαύριο είναι …",
+   "en": "Today is Friday. The day after tomorrow is …",
+   "tr": "Bugün cuma. Öbür gün …"
+  },
+  "options": [
+   "Κυριακή.",
+   "Σάββατο.",
+   "Δευτέρα."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Tomorrow (αύριο) is Saturday, and the day after (μεθαύριο) is Sunday.",
+   "tr": "Yarın (αύριο) cumartesi, öbür gün (μεθαύριο) pazar."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-p-bill",
+  "type": "mcq",
+  "skill": "vocab",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "— Θέλετε κάτι άλλο; — Όχι, ευχαριστώ. … , παρακαλώ.",
+   "en": "At the end of the meal you ask for the bill.",
+   "tr": "Yemeğin sonunda hesabı istiyorsun."
+  },
+  "options": [
+   "Τον λογαριασμό",
+   "Τον λογαριασμός",
+   "Η λογαριασμός"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "ο λογαριασμός is masculine, and as an object it is τον λογαριασμό (Lesson 7): the article takes -ν and the noun drops its -ς. You will also see «το λογαριασμό» written, but the standard spelling keeps τον.",
+   "tr": "ο λογαριασμός eril; nesne olunca τον λογαριασμό olur (Ders 7): artikel -ν alır, isim -ς'sini atar. «το λογαριασμό» yazıldığını da görürsün, ama standart yazım τον."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-p-sort",
+  "type": "categorise",
+  "skill": "vocab",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε λέξη στη σωστή ομάδα.",
+   "en": "Sort the menu words: «κρέας» = meat, «λαχανικά» = vegetables.",
+   "tr": "Menü kelimelerini ayır: «κρέας» = et, «λαχανικά» = sebze."
+  },
+  "categories": [
+   "κρέας",
+   "λαχανικά"
+  ],
+  "items": [
+   "το κοτόπουλο",
+   "η ντομάτα",
+   "το αρνί",
+   "το αγγούρι",
+   "ο γύρος",
+   "το καρότο"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "explain": {
+   "en": "Chicken, lamb and gyros are meat; tomato, cucumber and carrot are vegetables.",
+   "tr": "Tavuk, kuzu ve döner ettir; domates, salatalık ve havuç sebzedir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-p-order",
+  "ask": {
+   "en": "You phone a taverna to book a table. What do you say?",
+   "tr": "Bir tavernayı arayıp masa ayırtıyorsun. Ne dersin?"
+  },
+  "type": "mcq",
+  "skill": "vocab",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "— Ταβέρνα «Η Σμύρνη», παρακαλώ. — Καλησπέρα. …",
+   "en": "You phone a taverna to book a table. What do you say?",
+   "tr": "Bir tavernayı arayıp masa ayırtıyorsun. Ne dersin?"
+  },
+  "options": [
+   "Θα ήθελα ένα τραπέζι για το Σάββατο.",
+   "Θα ήθελα έναν λογαριασμό για το Σάββατο.",
+   "Θα πάρω ένα τραπέζι με πίτα."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Θα ήθελα ένα τραπέζι για …» is the polite way to book. A bill is not booked, and a table is not eaten.",
+   "tr": "«Θα ήθελα ένα τραπέζι για …» masa ayırtmanın kibar yoludur. Hesap ayırtılmaz, masa da yenmez."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch15-p-plan",
+  "ask": {
+   "en": "— What will you do at the weekend? — (your own plan)",
+   "tr": "— Hafta sonu ne yapacaksın? — (kendi planın)"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-15"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "— Τι θα κάνεις το Σαββατοκύριακο; — …",
+   "en": "— What will you do at the weekend? — (your own plan)",
+   "tr": "— Hafta sonu ne yapacaksın? — (kendi planın)"
+  },
+  "options": [
+   "Θα πάω στην ταβέρνα.",
+   "Θα πας στην ταβέρνα.",
+   "Πήγα στην ταβέρνα."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "You answer about yourself, in the future: θα πάω. θα πας is «you», and πήγα is the past.",
+   "tr": "Kendin hakkında, gelecekte cevap verirsin: θα πάω. θα πας «sen», πήγα ise geçmiş zaman."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-15",
+   "by": "sonnet-draft"
+  }
+ }
+]

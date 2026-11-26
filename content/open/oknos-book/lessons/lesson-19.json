@@ -1,0 +1,757 @@
+{
+ "id": "oknos-book.lesson-19",
+ "curriculum": "oknos-book",
+ "stage": "lesson-19",
+ "level": "A2",
+ "title": {
+  "tr": "Tatilden dönüş: arkadaşa mesaj. Geçmiş zaman (aorist)",
+  "en": "Back from holiday: a message to a friend. The simple past (aorist)"
+ },
+ "minutes": 18,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde tatilden dönünce bir arkadaşına mesaj yazmayı öğreneceksin: **nereye gittin, ne yaptın, nasıl geçti**. Bunun için geçmiş zamana ihtiyacın var; Yunancadaki adı *αόριστος* (aorist). Türkçedeki *-dı* gibi çalışır: *yazdım, yazdın, yazdı…*\n\nAnahtar nokta: geçmiş zaman, gelecek zamanın bir kerelik köküyle (*θα γράψω* → *έγραψα*) ve **-α, -ες, -ε, -αμε, -ατε, -αν(ε)** ekleriyle kurulur. Bazı biçimleri (*πήγα, είδα, έφαγα, έδωσα, ήρθα*) daha önce tek tek görmüştün; şimdi hepsi bir sistem olacak.",
+     "en": "In this chapter you learn to write to a friend after a holiday: **where you went, what you did, how it was**. For that you need the simple past; its Greek name is *αόριστος* (aorist).\n\nThe key point: the past is built from the once-only stem of the future (*θα γράψω* → *έγραψα*) plus the endings **-α, -ες, -ε, -αμε, -ατε, -αν(ε)**. You already met some forms one by one (*πήγα, είδα, έφαγα, έδωσα, ήρθα*); now they become a system."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Tatilden dönüş",
+    "en": "Back from the island"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Dinle, sonra oku. *Έβρεξε* ([[έβρεξε]]) «yağmur yağdı» demektir.",
+     "en": "Listen, then read. *Έβρεξε* ([[έβρεξε]]) means «it rained»."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ayşe Paros adasındaki tatilinden döndü. Sokakta arkadaşı Eleni ile karşılaşıyor.",
+      "en": "Ayşe is back from a holiday on the island of Paros. In the street she meets her friend Eleni."
+     },
+     "lines": [
+      {
+       "who": "Ελένη",
+       "el": "Αϊσέ! Γύρισες! Πώς πέρασες στις διακοπές;",
+       "tr": "Ayşe! Döndün demek! Tatil nasıl geçti?",
+       "en": "Ayşe! You're back! How was your holiday?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Τέλεια! Πήγα στην Πάρο μαζί με τη Ζέινεπ. Ήμασταν μια εβδομάδα στο νησί.",
+       "tr": "Harikaydı! Zeynep'le birlikte Paros'a gittim. Bir hafta adadaydık.",
+       "en": "Great! I went to Paros together with Zeynep. We were on the island for a week."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Πώς πήγατε; Με αεροπλάνο;",
+       "tr": "Nasıl gittiniz? Uçakla mı?",
+       "en": "How did you go? By plane?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Όχι, πήραμε το πλοίο από τον Πειραιά. Φύγαμε το πρωί και φτάσαμε το μεσημέρι.",
+       "tr": "Hayır, Pire'den gemiye bindik. Sabah yola çıktık, öğlen vardık.",
+       "en": "No, we took the boat from Piraeus. We left in the morning and arrived at midday."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Και τι κάνατε εκεί;",
+       "tr": "Peki orada ne yaptınız?",
+       "en": "And what did you do there?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Την πρώτη μέρα πήγαμε στην παραλία και κολυμπήσαμε πολύ. Μετά φάγαμε ψάρι σε μια ταβέρνα και ήπιαμε κρασί.",
+       "tr": "İlk gün plaja gittik ve çok yüzdük. Sonra bir tavernada balık yedik, şarap içtik.",
+       "en": "On the first day we went to the beach and swam a lot. Then we ate fish at a taverna and drank wine."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Έβρεξε καθόλου;",
+       "tr": "Hiç yağmur yağdı mı?",
+       "en": "Did it rain at all?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ναι, την Τετάρτη έβρεξε, αλλά πήγαμε στο μουσείο.",
+       "tr": "Evet, Çarşamba yağmur yağdı ama müzeye gittik.",
+       "en": "Yes, on Wednesday it rained, but we went to the museum."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Ωραία! Εγώ έμεινα στην Αθήνα και δούλεψα.",
+       "tr": "Ne güzel! Ben Atina'da kaldım ve çalıştım.",
+       "en": "Lovely! I stayed in Athens and worked."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Arkadaşa mesaj",
+    "en": "A message to a friend"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ertesi gün Ayşe, Selanik'teki arkadaşı Maria'ya yazıyor. Arkadaşlar mesajı *Φιλιά* ([[Φιλιά]], «öpücükler») ile bitirebilir.",
+     "en": "The next day Ayşe writes to her friend Maria in Thessaloniki. Friends can end a message with *Φιλιά* ([[Φιλιά]], «kisses»)."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Mesajlaşma: Ayşe, Maria'ya yazıyor.",
+      "en": "A text message from Ayşe to Maria."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Γεια σου Μαρία! Γύρισα προχθές από την Πάρο.",
+       "tr": "Merhaba Maria! Paros'tan evvelsi gün döndüm.",
+       "en": "Hi Maria! I came back from Paros the day before yesterday."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Πέρασα μια εβδομάδα στο νησί και ήταν τέλεια! Κλείσαμε δωμάτιο κοντά στην παραλία και βρήκαμε μια ωραία ταβέρνα.",
+       "tr": "Adada bir hafta geçirdim ve harikaydı! Plajın yakınında oda tuttuk ve güzel bir taverna bulduk.",
+       "en": "I spent a week on the island and it was great! We booked a room near the beach and found a nice taverna."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Αγόρασα ένα καπέλο και ένα δώρο για εσένα. Και εσύ; Τι έκανες το καλοκαίρι; Πού πήγες; Φιλιά, Αϊσέ",
+       "tr": "Bir şapka ve senin için bir hediye aldım. Ya sen? Yazın ne yaptın? Nereye gittin? Öpücükler, Ayşe",
+       "en": "I bought a hat and a present for you. And you? What did you do this summer? Where did you go? Kisses, Ayşe"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Metinlere göre:",
+     "en": "According to the texts:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch19-q-how",
+      "oknos-book/ch19-q-tf"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Geçmiş zaman: kök + ek",
+    "en": "The past: stem + endings"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Geçmiş zamanın üç parçası var: **kök, ek, vurgu**.\n\n1. **Kök:** Ders 15'te gelecek için fiilin *bir kerelik kökünü* gördün (*θα γράψω*). Geçmiş aynı kökü kullanır: *γράφω* → *θα γράψω* → *έγραψα*.\n2. **Ekler:** her fiil için aynı: **-α, -ες, -ε, -αμε, -ατε, -αν(ε)**.\n3. **Vurgu ve έ-:** düzenli fiillerde vurgu hep **sondan üçüncü heceye** gelir. Biçim yalnızca iki heceli olursa (*γράψα*), vurguyu taşımak için başına **έ-** eklenir: *έγραψα*. Üç heceli biçimler *έ-* almaz: *γράψαμε, γράψατε*.\n\nÜçüncü çoğul: *έγραψαν* ya da *γράψανε*.",
+     "en": "The past has three parts: **stem, endings, stress**.\n\n1. **Stem:** in Lesson 15 you learned the *once-only stem* for the future (*θα γράψω*). The past uses the same stem: *γράφω* → *θα γράψω* → *έγραψα*.\n2. **Endings:** the same for every verb: **-α, -ες, -ε, -αμε, -ατε, -αν(ε)**.\n3. **Stress and έ-:** in regular verbs the stress always goes to the **third syllable from the end**. If a form would have only two syllables (*γράψα*), an **έ-** is added in front to carry it: *έγραψα*. Forms with three syllables get no *έ-*: *γράψαμε, γράψατε*.\n\nThird person plural: *έγραψαν* or *γράψανε*."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "γράφω: üç zaman yan yana",
+      "en": "γράφω: three tenses side by side"
+     },
+     "head": [
+      "",
+      {
+       "tr": "Şimdiki zaman",
+       "en": "Present"
+      },
+      {
+       "tr": "Gelecek",
+       "en": "Future"
+      },
+      {
+       "tr": "Geçmiş",
+       "en": "Past"
+      }
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "γράφω",
+       "θα γράψω",
+       "έγραψα"
+      ],
+      [
+       "εσύ",
+       "γράφεις",
+       "θα γράψεις",
+       "έγραψες"
+      ],
+      [
+       "αυτός / αυτή / αυτό",
+       "γράφει",
+       "θα γράψει",
+       "έγραψε"
+      ],
+      [
+       "εμείς",
+       "γράφουμε",
+       "θα γράψουμε",
+       "γράψαμε"
+      ],
+      [
+       "εσείς",
+       "γράφετε",
+       "θα γράψετε",
+       "γράψατε"
+      ],
+      [
+       "αυτοί / αυτές / αυτά",
+       "γράφουν(ε)",
+       "θα γράψουν(ε)",
+       "έγραψαν"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Χθες έγραψα ένα μήνυμα στη Μαρία.",
+       "tr": "Dün Maria'ya bir mesaj yazdım.",
+       "en": "Yesterday I wrote a message to Maria."
+      },
+      {
+       "el": "Η Αϊσέ έγραψε ένα μήνυμα στη Μαρία.",
+       "tr": "Ayşe Maria'ya bir mesaj yazdı.",
+       "en": "Ayşe wrote a message to Maria."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "A fiilleri: kökü bul",
+    "en": "A verbs: finding the stem"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Kök değişimleri Ders 15'tekilerin aynısıdır. İki biçimde de vurgu sondan üçüncü hecededir (*αγόρασα, αγοράσαμε*); *εμείς* biçimi bir hece uzun olduğu için vurgu sağa kayar. Kısa fiillerde (*έκλεισα, έμεινα*) *έ-* gelir.",
+     "en": "The stem changes are the ones from Lesson 15. In both forms the stress is on the third syllable from the end (*αγόρασα, αγοράσαμε*); the *εμείς* form is one syllable longer, so the stress moves to the right. Short verbs (*έκλεισα, έμεινα*) take *έ-*."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Değişim",
+       "en": "Change"
+      },
+      {
+       "tr": "Şimdiki zaman",
+       "en": "Present"
+      },
+      "εγώ",
+      "εμείς"
+     ],
+     "rows": [
+      [
+       "ζ→σ",
+       "αγοράζω",
+       "αγόρασα",
+       "αγοράσαμε"
+      ],
+      [
+       "φ→ψ",
+       "γράφω",
+       "έγραψα",
+       "γράψαμε"
+      ],
+      [
+       "ευ→εψ",
+       "δουλεύω",
+       "δούλεψα",
+       "δουλέψαμε"
+      ],
+      [
+       "ν→σ",
+       "κλείνω",
+       "έκλεισα",
+       "κλείσαμε"
+      ],
+      [
+       "ν→σ",
+       "φτάνω",
+       "έφτασα",
+       "φτάσαμε"
+      ],
+      [
+       "χν→ξ",
+       "φτιάχνω",
+       "έφτιαξα",
+       "φτιάξαμε"
+      ],
+      [
+       {
+        "tr": "kendi kökü",
+        "en": "own stem"
+       },
+       "μένω",
+       "έμεινα",
+       "μείναμε"
+      ],
+      [
+       {
+        "tr": "kendi kökü",
+        "en": "own stem"
+       },
+       "φεύγω",
+       "έφυγα",
+       "φύγαμε"
+      ]
+     ],
+     "note": {
+      "tr": "Diğer dört kişi için tarif: *εσύ* = *εγώ* biçiminde *-α* yerine *-ες*; *αυτός* = *-α* yerine *-ε*; *εσείς* = *εμείς* biçiminde *-με* yerine *-τε*; *αυτοί* = *εγώ* biçimine *-ν*. Örnek: *έκλεισα, έκλεισες, έκλεισε, κλείσαμε, κλείσατε, έκλεισαν*.",
+      "en": "The other four persons by recipe: *εσύ* = the *εγώ* form with *-ες* instead of *-α*; *αυτός* = *-ε* instead of *-α*; *εσείς* = the *εμείς* form with *-τε* instead of *-με*; *αυτοί* = the *εγώ* form plus *-ν*. For example: *έκλεισα, έκλεισες, έκλεισε, κλείσαμε, κλείσατε, έκλεισαν*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Χθες αγόρασα ψάρι στη λαϊκή.",
+       "tr": "Dün pazardan balık aldım.",
+       "en": "Yesterday I bought fish at the street market."
+      },
+      {
+       "el": "Η Ζέινεπ έκλεισε ένα δωμάτιο στο ξενοδοχείο.",
+       "tr": "Zeynep otelde bir oda tuttu.",
+       "en": "Zeynep booked a room at the hotel."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "B1 ve B2 fiilleri: -ησα",
+    "en": "B1 and B2 verbs: -ησα"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Dilbilgisi kitaplarının **B1** fiilleri *-άω* ile (*μιλάω, ρωτάω, ξυπνάω*), **B2** fiilleri *-ώ* ile biter (*τηλεφωνώ, ζω, μπορώ*). Çoğu, gelecekteki gibi, **-ησα** alır; vurgu yine sondan üçüncü hecede: *μιλάω* → *μίλησα*, *μιλήσαμε*; kısa *ζω* → *έζησα*. Ders 16'daki istisnalar burada da istisna: *περνάω* → *πέρασα*, *ξεχνάω* → *ξέχασα* (*-ασα*), *μπορώ* → *μπόρεσα* (*-εσα*).",
+     "en": "The **B1** verbs of the grammar books end in *-άω* (*μιλάω, ρωτάω, ξυπνάω*), its **B2** verbs in *-ώ* (*τηλεφωνώ, ζω, μπορώ*). Most take **-ησα**, as in the future, again stressed on the third syllable from the end: *μιλάω* → *μίλησα*, *μιλήσαμε*; short *ζω* → *έζησα*. The exceptions of Lesson 16 stay exceptions: *περνάω* → *πέρασα*, *ξεχνάω* → *ξέχασα* (*-ασα*), *μπορώ* → *μπόρεσα* (*-εσα*)."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Üç fiil, altı kişi",
+      "en": "Three verbs, six persons"
+     },
+     "head": [
+      "",
+      "μιλάω",
+      "τηλεφωνώ",
+      "μπορώ"
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "μίλησα",
+       "τηλεφώνησα",
+       "μπόρεσα"
+      ],
+      [
+       "εσύ",
+       "μίλησες",
+       "τηλεφώνησες",
+       "μπόρεσες"
+      ],
+      [
+       "αυτός / αυτή / αυτό",
+       "μίλησε",
+       "τηλεφώνησε",
+       "μπόρεσε"
+      ],
+      [
+       "εμείς",
+       "μιλήσαμε",
+       "τηλεφωνήσαμε",
+       "μπορέσαμε"
+      ],
+      [
+       "εσείς",
+       "μιλήσατε",
+       "τηλεφωνήσατε",
+       "μπορέσατε"
+      ],
+      [
+       "αυτοί / αυτές / αυτά",
+       "μίλησαν",
+       "τηλεφώνησαν",
+       "μπόρεσαν"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Μιλήσαμε ελληνικά με τον σερβιτόρο.",
+       "tr": "Garsonla Yunanca konuştuk.",
+       "en": "We spoke Greek with the waiter."
+      },
+      {
+       "el": "Τηλεφώνησα στο ξενοδοχείο χθες.",
+       "tr": "Dün otele telefon ettim.",
+       "en": "I phoned the hotel yesterday."
+      },
+      {
+       "el": "Πέρασα ωραία στο νησί.",
+       "tr": "Adada güzel vakit geçirdim.",
+       "en": "I had a good time on the island.",
+       "note": {
+        "tr": "*Πώς πέρασες;* (*εσείς*: *Πώς περάσατε;*) tatilden dönene sorulan olağan sorudur, «nasıl geçti?». *Πώς πήγατε;* ise «nasıl gittiniz?», yani neyle.",
+        "en": "*Πώς πέρασες;* (*εσείς*: *Πώς περάσατε;*) is the usual question after a holiday, «how was it?». *Πώς πήγατε;* is «how did you get there?»."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Düzensiz fiiller: kendi geçmiş kökleri",
+    "en": "Irregular verbs: stems of their own"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Çok sık kullanılan bazı fiillerin geçmiş kökü şimdiki zamandan tahmin edilmez. **Ekler yine aynı**; diğer kişiler yukarıdaki tarifle gelir: *φάγατε* = *φάγαμε* biçiminde *-με* yerine *-τε*; *είδαν* = *είδα* + *-ν*.\n\n*Έ-* yine yalnızca vurgu için gelir: *έφαγα* ama *φάγαμε*, *έδωσα* ama *δώσαμε*. *Ήπια, είδα, είπα* biçimlerinin ilk hecesi kökün parçasıdır, düşmez: *ήπιαμε, είδαμε*. *Πήγα, ήρθα, βρήκα* gibi iki heceli biçimlerde vurgu ilk hecededir.",
+     "en": "The past stem of some very common verbs cannot be guessed from the present. **The endings are still the same**, and the other persons follow by the recipe above: *φάγατε* = *φάγαμε* with *-τε* for *-με*; *είδαν* = *είδα* + *-ν*.\n\n*Έ-* still comes only for the stress: *έφαγα* but *φάγαμε*, *έδωσα* but *δώσαμε*. In *ήπια, είδα, είπα* the first syllable is part of the stem and stays: *ήπιαμε, είδαμε*. Two-syllable forms such as *πήγα, ήρθα, βρήκα* are stressed on the first syllable."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Şimdiki zaman",
+       "en": "Present"
+      },
+      "εγώ",
+      "εμείς"
+     ],
+     "rows": [
+      [
+       "πάω",
+       "πήγα",
+       "πήγαμε"
+      ],
+      [
+       "έρχομαι",
+       "ήρθα",
+       "ήρθαμε"
+      ],
+      [
+       "τρώω",
+       "έφαγα",
+       "φάγαμε"
+      ],
+      [
+       "πίνω",
+       "ήπια",
+       "ήπιαμε"
+      ],
+      [
+       "βλέπω",
+       "είδα",
+       "είδαμε"
+      ],
+      [
+       "λέω",
+       "είπα",
+       "είπαμε"
+      ],
+      [
+       "βρίσκω",
+       "βρήκα",
+       "βρήκαμε"
+      ],
+      [
+       "μπαίνω",
+       "μπήκα",
+       "μπήκαμε"
+      ],
+      [
+       "βγαίνω",
+       "βγήκα",
+       "βγήκαμε"
+      ],
+      [
+       "παίρνω",
+       "πήρα",
+       "πήραμε"
+      ],
+      [
+       "δίνω",
+       "έδωσα",
+       "δώσαμε"
+      ],
+      [
+       "κάνω",
+       "έκανα",
+       "κάναμε"
+      ]
+     ]
+    },
+    {
+     "type": "prose",
+     "tr": "**Olmak ve sahip olmak.** *Είμαι* ve *έχω* fiillerinin tek bir geçmişi var: *ήμουν* ve *είχα*. Başka fiillerde aorist kullandığın her yerde bunları kullanırsın.",
+     "en": "**Being and having.** *Είμαι* and *έχω* have only one past: *ήμουν* and *είχα*. Use it wherever other verbs take the aorist."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      "είμαι",
+      "έχω"
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "ήμουν",
+       "είχα"
+      ],
+      [
+       "εσύ",
+       "ήσουν",
+       "είχες"
+      ],
+      [
+       "αυτός / αυτή / αυτό",
+       "ήταν",
+       "είχε"
+      ],
+      [
+       "εμείς",
+       "ήμασταν",
+       "είχαμε"
+      ],
+      [
+       "εσείς",
+       "ήσασταν",
+       "είχατε"
+      ],
+      [
+       "αυτοί / αυτές / αυτά",
+       "ήταν(ε)",
+       "είχαν"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Πήγα στην παραλία και είδα τον Νίκο.",
+       "tr": "Plaja gittim ve Nikos'u gördüm.",
+       "en": "I went to the beach and saw Nikos."
+      },
+      {
+       "el": "Φάγαμε ψάρι και ήπιαμε κρασί.",
+       "tr": "Balık yedik, şarap içtik.",
+       "en": "We ate fish and drank wine."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Geçmişin zaman sözcükleri",
+    "en": "Time words for the past"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu sözcükler geçmiş zamanla gelir. *Πριν από* + zaman «… önce» demektir. *Την περασμένη εβδομάδα* Ders 10'daki kalıbı izler (artikel + *-i hâli*: *την Τρίτη*); şimdilik hazır kalıp olarak al.",
+     "en": "These words go with the past. *Πριν από* + a time means «… ago». *Την περασμένη εβδομάδα* follows the pattern of Lesson 10 (article + accusative: *την Τρίτη*); take it as a set phrase for now."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "Anlamı",
+       "en": "Meaning"
+      }
+     ],
+     "rows": [
+      [
+       "χθες",
+       {
+        "tr": "dün",
+        "en": "yesterday"
+       }
+      ],
+      [
+       "προχθές",
+       {
+        "tr": "evvelsi gün",
+        "en": "the day before yesterday"
+       }
+      ],
+      [
+       "πριν από δύο μέρες",
+       {
+        "tr": "iki gün önce",
+        "en": "two days ago"
+       }
+      ],
+      [
+       "την περασμένη εβδομάδα",
+       {
+        "tr": "geçen hafta",
+        "en": "last week"
+       }
+      ],
+      [
+       "πέρσι",
+       {
+        "tr": "geçen yıl",
+        "en": "last year"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Πέρσι το καλοκαίρι πήγα στην Κρήτη.",
+       "tr": "Geçen yaz Girit'e gittim.",
+       "en": "Last summer I went to Crete."
+      },
+      {
+       "el": "Πριν από δύο μέρες γύρισα από τις διακοπές.",
+       "tr": "İki gün önce tatilden döndüm.",
+       "en": "Two days ago I came back from my holiday."
+      },
+      {
+       "el": "Δε δούλεψα την περασμένη εβδομάδα.",
+       "tr": "Geçen hafta çalışmadım.",
+       "en": "I didn't work last week.",
+       "note": {
+        "tr": "Olumsuz: *δε(ν)* + aynı geçmiş biçim. *δ* önünde -ν düşer.",
+        "en": "Negative: *δε(ν)* + the same past form. The -ν drops before *δ*."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu dersin kelimeleri: tatil ve geçmişin zaman sözcükleri.",
+     "en": "The words of this lesson: holiday words and time words for the past."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/ch19-prochthes",
+      "oknos-book/ch19-persi",
+      "oknos-book/ch19-perasmenos",
+      "oknos-book/ch19-paralia",
+      "oknos-book/ch19-kolymbi",
+      "oknos-book/v-kolympo-verb",
+      "oknos-book/ch19-gyrizo",
+      "oknos-book/v-psari",
+      "oknos-book/ch19-ftano",
+      "oknos-book/ch19-mazi",
+      "oknos-book/ch19-meta",
+      "oknos-book/ch19-mera",
+      "oknos-book/ch19-teleia",
+      "oknos-book/v-nisi",
+      "oknos-book/v-ploio",
+      "oknos-book/v-diakopes",
+      "oknos-book/v-thalassa",
+      "oknos-book/v-taxidi",
+      "oknos-book/ch07-chthes"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**Türkçedeki *-dı* ile aynı iş.** Bitmiş, bir kez olmuş olayı anlatır: *gittim* = *πήγα*, *yedik* = *φάγαμε*, *gördüler* = *είδαν*.",
+     "en": "**The job of Turkish *-dı*.** It tells of a finished event that happened once: *gittim* = *πήγα*, *yedik* = *φάγαμε*, *gördüler* = *είδαν*."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**έ-'yi unutma, ama gereksiz yere de ekleme.** *Έγραψα* yazılır, *γράψα* değil; ama *γράψαμε* ve *μιλήσαμε* başına *έ-* almaz. Kural: biçim zaten üç heceliyse *έ-* gelmez.",
+     "en": "**Do not drop *έ-*, and do not add it where it is not needed.** Write *έγραψα*, not *γράψα*; but *γράψαμε* and *μιλήσαμε* take no *έ-*. If the form already has three syllables, there is no *έ-*."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Zaman sözcüğü ve fiil uyuşmalı.** *Χθες* ile geçmiş biçim gelir (*Χθες πήγα*), *αύριο* ile *θα* gelir (*Αύριο θα πάω*). *Χθες πηγαίνω* ya da *αύριο πήγα* yanlıştır.",
+     "en": "**The time word and the verb must agree.** *Χθες* goes with the past (*Χθες πήγα*), *αύριο* with *θα* (*Αύριο θα πάω*). *Χθες πηγαίνω* or *αύριο πήγα* is wrong."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "tr": "**Sınavda.** Yazma bölümündeki arkadaşça e-posta (a2ltr.writing.email_friendly) 40-60 sözcüktür ve 10 puan eder. Tatil mesajı bu türden bir metindir: *Γεια σου …!*, bir zaman sözcüğüyle (*χθες, πέρσι*) üç dört geçmiş cümle, arkadaşa bir soru (*Και εσύ;*) ve *Φιλιά*. Doğru olduğundan emin olduğun kısa cümleler yaz.",
+     "en": "**In the exam.** The friendly e-mail in the writing part (a2ltr.writing.email_friendly) is 40-60 words and worth 10 points. A holiday message is a text of this kind: *Γεια σου …!*, three or four sentences in the past with a time word (*χθες, πέρσι*), a question to the friend (*Και εσύ;*) and *Φιλιά*. Write short sentences you know are right.",
+     "exam_task": "a2ltr.writing.email_friendly"
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: geçmişin ekleri, düzensiz fiiller, B1 fiilleri ve zaman sözcükleri.",
+     "en": "Now you try: the past endings, the irregular verbs, B1 verbs and the time words."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch19-try-write",
+      "oknos-book/ch19-try-irreg",
+      "oknos-book/ch19-try-b1",
+      "oknos-book/ch19-try-time",
+      "oknos-book/ch19-try-we"
+     ]
+    }
+   ]
+  }
+ ]
+}

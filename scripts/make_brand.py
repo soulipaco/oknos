@@ -295,30 +295,30 @@ def a_day(t):
 def what_you_learn(t):
     W, H = 900, 340
     b = []
-    levels = (("A1", 7, "reading Greek, first sentences, verbs, shops, getting around"),
-              ("A2", 4, "the future, the past, daily life in Greece"),
+    levels = (("A1", 13, "reading Greek, meeting people, shops, getting around"),
+              ("A2", 12, "a flat, the future, travel, the past, errands, health"),
               ("B1", 1, "towards B1"))
-    x, y, step = 70, 110, 47
+    x, y, step = 62, 110, 22
     i = 0
     for level, count, about in levels:
         start = x + i * step
         for _ in range(count):
             cx = x + i * step
-            if i < 3:   # learned stages: the ring is closed
-                b.append(place(cx - 19, y - 19, 38, "0 0 100 100", ring_mark(AEGEAN[t], f"wyl-{t}-{i}", small=True)))
+            if i < 4:   # learned stages: the ring is closed
+                b.append(place(cx - 10, y - 10, 20, "0 0 100 100", ring_mark(AEGEAN[t], f"wyl-{t}-{i}", small=True)))
             else:
-                b.append(f'<circle cx="{num(cx)}" cy="{y}" r="15" fill="none" stroke="{FAINT[t]}" stroke-width="3" '
-                         'stroke-dasharray="2 5" stroke-linecap="round"/>')
+                b.append(f'<circle cx="{num(cx)}" cy="{y}" r="7.5" fill="none" stroke="{FAINT[t]}" stroke-width="2.2" '
+                         'stroke-dasharray="1.5 3.5" stroke-linecap="round"/>')
             i += 1
         end = x + (i - 1) * step
-        b.append(f'<path d="M{num(start - 12)} {y + 32} v8 H{num(end + 12)} v-8" fill="none" stroke="{LINE[t]}" stroke-width="2"/>')
+        b.append(f'<path d="M{num(start - 8)} {y + 22} v8 H{num(end + 8)} v-8" fill="none" stroke="{LINE[t]}" stroke-width="2"/>')
         b.append(label((start + end) / 2, y + 62, level, t, 15, 700, colour=AEGEAN[t]))
-    b.append(label(70, y + 92, "12 stages of an open course, each with a chapter to read first", t, 14, anchor="start"))
-    b.append(label(70, y + 112, "A stage's ring closes as you learn it.", t, 13, anchor="start", colour=MUTED[t]))
+    b.append(label(62, y + 92, "The Oknos book: 26 stages, each with a chapter to read first", t, 14, anchor="start"))
+    b.append(label(62, y + 112, "A stage's ring closes as you learn it. A shorter 12-chapter course is there too.", t, 13, anchor="start", colour=MUTED[t]))
     # the exams
     ex = 650
-    b.append(arrow(x + 11 * step + 26, y, ex - 8, y - 24, t))
-    b.append(arrow(x + 11 * step + 26, y, ex - 8, y + 44, t))
+    b.append(arrow(x + 25 * step + 16, y, ex - 8, y - 24, t))
+    b.append(arrow(x + 25 * step + 16, y, ex - 8, y + 44, t))
     b.append(box(ex, 62, 210, 52, t))
     b.append(label(ex + 105, 84, "A2 + history", t, 15, 600))
     b.append(label(ex + 105, 103, "for long-term residence", t, 12, colour=MUTED[t]))
@@ -330,7 +330,7 @@ def what_you_learn(t):
     b.append(label(64, 278, "+ your own coursebook", t, 15, 600, anchor="start"))
     b.append(label(64, 299, "Import a book you own and its lessons become the course. It stays private, on your computer.", t, 13,
                    anchor="start", colour=MUTED[t]))
-    return W, H, "".join(b), "What you learn: 12 stages from reading Greek to B1, aimed at the A2 + history and B1 exams"
+    return W, H, "".join(b), "What you learn: the Oknos book, 26 stages from reading Greek to B1, aimed at the A2 + history and B1 exams"
 
 
 if __name__ == "__main__":

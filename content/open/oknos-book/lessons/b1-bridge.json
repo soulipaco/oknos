@@ -1,0 +1,725 @@
+{
+ "id": "oknos-book.b1-bridge",
+ "curriculum": "oknos-book",
+ "stage": "b1-bridge",
+ "level": "B1",
+ "title": {
+  "tr": "Belediye duyurusu ve resmî cevap: edilgen, dolaylı anlatım, koşul, bağlaçlar",
+  "en": "A municipal notice and a formal reply: the passive, reported speech, conditions, linking"
+ },
+ "minutes": 21,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "title": {
+    "tr": "Başlarken",
+    "en": "Getting started"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölüm A2'den B1'e köprü; B1 sınavının yazma bölümünden çıkıyor. Bir **belediye duyurusu** ve ona **150 kelimelik resmî bir cevap** okuyacak, dört araç öğreneceksin: **edilgen çatı** (*karar duyuruldu*), **dolaylı anlatım** (*dedi ki…*), **gerçek dışı koşul** (*arabam olsa…*) ve **bağlaçlar**.\n\nAnahtar nokta: resmî metin kısa cümle yığını değil, birbirine bağlanan paragraflardır. Bağlaçlar puan getirir.",
+     "en": "This chapter is the bridge from A2 to B1. It comes from the B1 writing task. You read a **municipal notice** and a **formal 150-word reply**, and learn four tools: the **passive** (*the decision was announced*), **reported speech** (*he said that…*), the **unreal condition** (*if I had a car…*) and **linking words**.\n\nThe key point: a formal text is not a heap of short sentences but linked paragraphs. Linking words earn marks."
+    }
+   ]
+  },
+  {
+   "kind": "warmup",
+   "title": {
+    "tr": "Isınma",
+    "en": "Warm-up"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Mahallendeki pazar taşınsa belediyeye yazar mıydın? Önce duyuruyu, sonra bir sakinin cevabını okuyacaksın.",
+     "en": "If your local market moved, would you write to the town hall? First the notice, then a resident's reply."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Duyuru ve cevap",
+    "en": "The notice and the reply"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Önce belediyenin duyurusu. Duyuruda **kim yaptı** değil, **ne oldu** önemli: fiiller edilgen. Kelimeler: «[[ο δήμος]]» (belediye), «[[η ανακοίνωση]]» (duyuru), «[[η απόφαση]]» (karar), «[[το δημοτικό συμβούλιο]]» (belediye meclisi), «[[οι πωλητές]]» (satıcılar). Biçimler: «[[πάρθηκε]]» (alındı), «[[την οδό]]» (caddeyi), «[[τις νέες θέσεις]]» (yeni yerleri), «[[πιο μεγάλο]]» (daha büyük).",
+     "en": "First the municipality's notice. In a notice **who did it** does not matter, **what happened** does: the verbs are passive. Words: «[[ο δήμος]]» (municipality), «[[η ανακοίνωση]]» (notice), «[[η απόφαση]]» (decision), «[[το δημοτικό συμβούλιο]]» (town council), «[[οι πωλητές]]» (stallholders). Forms: «[[πάρθηκε]]» (was taken), «[[την οδό]]» (the street), «[[τις νέες θέσεις]]» (the new places), «[[πιο μεγάλο]]» (bigger)."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Mahalledeki panoda bir duyuru.",
+      "en": "A notice on the neighbourhood board."
+     },
+     "lines": [
+      {
+       "who": "Ο Δήμος",
+       "el": "Ανακοίνωση",
+       "tr": "Duyuru",
+       "en": "Notice"
+      },
+      {
+       "who": "Ο Δήμος",
+       "el": "Από τις πέντε Μαρτίου η λαϊκή αγορά της Τετάρτης μεταφέρεται από την οδό Αθηνάς στο πάρκο της γειτονιάς, καθώς το πάρκο είναι πιο μεγάλο.",
+       "tr": "5 Mart'tan itibaren çarşamba semt pazarı, park daha büyük olduğu için Athinas Caddesi'nden mahalle parkına taşınıyor.",
+       "en": "From 5 March the Wednesday street market is being moved from Athinas Street to the neighbourhood park, as the park is bigger."
+      },
+      {
+       "who": "Ο Δήμος",
+       "el": "Η απόφαση πάρθηκε από το δημοτικό συμβούλιο.",
+       "tr": "Karar belediye meclisi tarafından alındı.",
+       "en": "The decision was taken by the town council."
+      },
+      {
+       "who": "Ο Δήμος",
+       "el": "Η οδός Αθηνάς θα καθαριστεί και θα κλείσει για τα αυτοκίνητα.",
+       "tr": "Athinas Caddesi temizlenecek ve arabalara kapanacak.",
+       "en": "Athinas Street will be cleaned and will close to cars."
+      },
+      {
+       "who": "Ο Δήμος",
+       "el": "Οι αιτήσεις για τις νέες θέσεις υποβάλλονται ηλεκτρονικά μέχρι τις δεκαπέντε Φεβρουαρίου.",
+       "tr": "Yeni yerler için başvurular 15 Şubat'a kadar elektronik olarak yapılır.",
+       "en": "Applications for the new places are submitted online by 15 February."
+      },
+      {
+       "who": "Ο Δήμος",
+       "el": "Οι πωλητές θα ενημερωθούν με ηλεκτρονικό μήνυμα.",
+       "tr": "Satıcılara e-postayla bilgi verilecek.",
+       "en": "The stallholders will be informed by e-mail."
+      },
+      {
+       "who": "Ο Δήμος",
+       "el": "Για πληροφορίες τηλεφωνήστε στο γραφείο του δήμου.",
+       "tr": "Bilgi için belediye ofisini arayın.",
+       "en": "For information, phone the town hall office."
+      }
+     ]
+    },
+    {
+     "type": "prose",
+     "tr": "Şimdi Eleni'nin resmî cevabı, **model metin**: yaklaşık 150 kelime. Açılış ve kapanış kalıptır: «[[Αξιότιμε κύριε Δήμαρχε]]» (Sayın Belediye Başkanı); bir kadına «[[Αξιότιμη κυρία]]» ve soyadı (*Αξιότιμη κυρία Παππά*); kimin okuyacağını bilmiyorsan «[[Αξιότιμοι κύριοι]]» (Sayın Yetkili); sonda «[[Με εκτίμηση]]» (saygılarımla) ve bir ad. Paragraflara ve bağlaçlara bak. Kelimeler: «[[οι συνταξιούχοι]]» (emekliler), «[[προτείνω]]» (öneriyorum), «[[να δημιουργηθεί]]» (yapılsın, kurulsun), «[[όπως και πολλοί άλλοι]]» (birçok başkası gibi).",
+     "en": "Now Eleni's formal reply, the **model text**: about 150 words. The opening and the closing are set phrases: «[[Αξιότιμε κύριε Δήμαρχε]]» (Dear Mayor); to a woman «[[Αξιότιμη κυρία]]» and her surname (*Αξιότιμη κυρία Παππά*); to an unknown reader «[[Αξιότιμοι κύριοι]]» (Dear Sir or Madam); at the end «[[Με εκτίμηση]]» (Yours sincerely) and a name. Watch the paragraphs and the linking words. Words: «[[οι συνταξιούχοι]]» (pensioners), «[[προτείνω]]» (I suggest), «[[να δημιουργηθεί]]» (that it be set up), «[[όπως και πολλοί άλλοι]]» (like many others)."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Mahallede oturan Eleni belediyeye e-posta yazıyor.",
+      "en": "Eleni, who lives in the neighbourhood, writes an e-mail to the municipality."
+     },
+     "lines": [
+      {
+       "who": "Η Ελένη",
+       "el": "Θέμα: Η λαϊκή αγορά της Τετάρτης",
+       "tr": "Konu: Çarşamba semt pazarı",
+       "en": "Subject: The Wednesday street market"
+      },
+      {
+       "who": "Η Ελένη",
+       "el": "Αξιότιμε κύριε Δήμαρχε,",
+       "tr": "Sayın Belediye Başkanı,",
+       "en": "Dear Mayor,"
+      },
+      {
+       "who": "Η Ελένη",
+       "el": "Διάβασα την ανακοίνωση του δήμου για τη λαϊκή αγορά και σας γράφω, επειδή δε συμφωνώ με την απόφαση.",
+       "tr": "Belediyenin pazar duyurusunu okudum ve karara katılmadığım için size yazıyorum.",
+       "en": "I have read the municipality's notice about the street market, and I am writing to you because I do not agree with the decision."
+      },
+      {
+       "who": "Η Ελένη",
+       "el": "Στην ανακοίνωση γράφετε ότι η αγορά μεταφέρεται, καθώς το πάρκο είναι πιο μεγάλο. Αν και το πάρκο είναι ωραίο, είναι μακριά από το μετρό, ενώ η οδός Αθηνάς είναι κοντά. Ένας υπάλληλος του δήμου μου είπε ότι δε θα υπάρχει στάση λεωφορείου στο πάρκο. Επομένως, οι συνταξιούχοι δε θα μπορούν να πάνε στην αγορά. Επιπλέον, οι κάτοικοι δε ρωτήθηκαν πριν από την απόφαση.",
+       "tr": "Duyuruda pazarın, park daha büyük olduğu için taşındığını yazıyorsunuz. Park güzel olsa da metrodan uzak; oysa Athinas Caddesi yakın. Belediyeden bir memur bana parkta otobüs durağı olmayacağını söyledi. Bu nedenle emekliler pazara gidemeyecek. Ayrıca karardan önce sakinlere sorulmadı.",
+       "en": "In the notice you write that the market is being moved, as the park is bigger. Although the park is nice, it is far from the metro, whereas Athinas Street is near. A clerk at the town hall told me that there will be no bus stop at the park. Therefore, pensioners will not be able to get to the market. Moreover, the residents were not asked before the decision."
+      },
+      {
+       "who": "Η Ελένη",
+       "el": "Αν είχα αυτοκίνητο, θα πήγαινα εύκολα στο πάρκο, αλλά δεν έχω, όπως και πολλοί άλλοι κάτοικοι. Γι' αυτό σας προτείνω είτε να μείνει η αγορά στην οδό Αθηνάς είτε να δημιουργηθεί μια στάση λεωφορείου κοντά στο πάρκο. Αν αλλάξετε την απόφαση, οι κάτοικοι θα είναι πιο ευχαριστημένοι.",
+       "tr": "Arabam olsa parka kolayca giderdim, ama birçok başka sakin gibi benim de arabam yok. Bu yüzden size ya pazarın Athinas Caddesi'nde kalmasını ya da parkın yakınına bir otobüs durağı konmasını öneriyorum. Kararı değiştirirseniz sakinler daha memnun olur.",
+       "en": "If I had a car, I would get to the park easily, but I do not have one, like many other residents. That is why I suggest either that the market stays on Athinas Street or that a bus stop is set up near the park. If you change the decision, the residents will be happier."
+      },
+      {
+       "who": "Η Ελένη",
+       "el": "Τέλος, σας παρακαλώ να με ενημερώσετε σύντομα για την απόφασή σας.",
+       "tr": "Son olarak, kararınızı bana yakında bildirmenizi rica ederim.",
+       "en": "Finally, I would ask you to let me know your decision soon."
+      },
+      {
+       "who": "Η Ελένη",
+       "el": "Με εκτίμηση,",
+       "tr": "Saygılarımla,",
+       "en": "Yours sincerely,"
+      },
+      {
+       "who": "Η Ελένη",
+       "el": "Ελένη Παππά",
+       "tr": "Eleni Pappa",
+       "en": "Eleni Pappa"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "title": {
+    "tr": "Anladın mı?",
+    "en": "Did you follow?"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Metinlere göre:",
+     "en": "According to the texts:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/chB1-q-notice",
+      "oknos-book/chB1-q-reply"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Edilgen çatı: şimdi, geçmiş, gelecek",
+    "en": "The passive: present, past, future"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Türkçedeki gibi (*duyur-ul-du*) Yunanca da edilgeni fiilin sonunu değiştirerek kurar. **Özne eylemi yapmaz, eylem ona yapılır**: *Η αίτηση υποβάλλεται* (başvuru yapılır). Kimin yaptığı: **από + belirtme hâli**, «[[από τον δήμο]]» (belediye tarafından). Burada **3. tekil ve 3. çoğul** kişiye bakıyoruz.\n\n**Şimdiki zaman:** *έρχομαι* gibi (Ders 13): **-εται / -ονται**. **Geçmiş:** **-θηκε / -θηκαν**; *-ίζω* fiillerinde çoğunlukla **-ίστηκε** (*χτίστηκε*). **Gelecek:** **θα** + **-θεί / -θούν**; **να** ile de aynı biçim (*να δημιουργηθεί*). *-ώνω* fiilleri düzenlidir (*πληρώθηκε, θα πληρωθεί*); başka fiillerde geçmiş kökünü fiille birlikte öğren (*στέλνω → στάλθηκε, παίρνω → πάρθηκε*). Diğer kişiler (biz ve sizde vurgu kayar): *ενημερώθηκα, ενημερώθηκες, ενημερώθηκε, ενημερωθήκαμε, ενημερωθήκατε, ενημερώθηκαν*.",
+     "en": "Like Turkish (*duyur-ul-du*), Greek makes the passive by changing the verb's ending. **The subject does not do the action; it receives it**: *Η αίτηση υποβάλλεται* (the application is submitted). To say who did it: **από + the accusative**, «[[από τον δήμο]]» (by the municipality). Here we look at the **3rd person singular and plural**.\n\n**Present:** like *έρχομαι* (Lesson 13): **-εται / -ονται**. **Past:** **-θηκε / -θηκαν**; *-ίζω* verbs usually take **-ίστηκε** (*χτίστηκε*). **Future:** **θα** + **-θεί / -θούν**; after **να** the same form (*να δημιουργηθεί*). *-ώνω* verbs are regular (*πληρώθηκε, θα πληρωθεί*); other past stems are learnt with the verb (*στέλνω → στάλθηκε, παίρνω → πάρθηκε*). The other persons, with the stress moving in *we* and *you*: *ενημερώθηκα, ενημερώθηκες, ενημερώθηκε, ενημερωθήκαμε, ενημερωθήκατε, ενημερώθηκαν*."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Etken fiil → edilgen: tekil / çoğul",
+      "en": "Active verb → passive: singular / plural"
+     },
+     "head": [
+      {
+       "tr": "etken",
+       "en": "active"
+      },
+      {
+       "tr": "şimdi",
+       "en": "now"
+      },
+      {
+       "tr": "geçmiş",
+       "en": "past"
+      },
+      {
+       "tr": "gelecek",
+       "en": "future"
+      }
+     ],
+     "rows": [
+      [
+       "πληρώνω",
+       "πληρώνεται / πληρώνονται",
+       "πληρώθηκε / πληρώθηκαν",
+       "θα πληρωθεί / θα πληρωθούν"
+      ],
+      [
+       "ανακοινώνω",
+       "ανακοινώνεται / ανακοινώνονται",
+       "ανακοινώθηκε / ανακοινώθηκαν",
+       "θα ανακοινωθεί / θα ανακοινωθούν"
+      ],
+      [
+       "υποβάλλω",
+       "υποβάλλεται / υποβάλλονται",
+       "υποβλήθηκε / υποβλήθηκαν",
+       "θα υποβληθεί / θα υποβληθούν"
+      ],
+      [
+       "χτίζω",
+       "χτίζεται / χτίζονται",
+       "χτίστηκε / χτίστηκαν",
+       "θα χτιστεί / θα χτιστούν"
+      ]
+     ],
+     "note": {
+      "tr": "Çoğul özne → çoğul fiil: *Οι αιτήσεις υποβάλλονται*, *υποβάλλεται* değil.",
+      "en": "A plural subject takes the plural verb: *Οι αιτήσεις υποβάλλονται*, not *υποβάλλεται*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Οι αιτήσεις υποβάλλονται ηλεκτρονικά.",
+       "tr": "Başvurular elektronik olarak yapılır.",
+       "en": "Applications are submitted online."
+      },
+      {
+       "el": "Η απόφαση ανακοινώθηκε χθες από τον δήμο.",
+       "tr": "Karar dün belediye tarafından duyuruldu.",
+       "en": "The decision was announced yesterday by the municipality.",
+       "note": {
+        "tr": "από + τον δήμο: kim yaptı.",
+        "en": "από + τον δήμο: who did it."
+       }
+      },
+      {
+       "el": "Οι πωλητές θα ενημερωθούν με μήνυμα.",
+       "tr": "Satıcılara mesajla bilgi verilecek.",
+       "en": "The sellers will be informed by message."
+      },
+      {
+       "el": "Δεν ενημερωθήκαμε για την απόφαση.",
+       "tr": "Karar hakkında bilgilendirilmedik.",
+       "en": "We were not informed about the decision.",
+       "note": {
+        "tr": "biz: vurgu kayar (ενημερωθήκαμε)",
+        "en": "we: the stress moves (ενημερωθήκαμε)"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Dolaylı anlatım: είπε ότι…",
+    "en": "Reported speech: είπε ότι…"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Birinin sözünü aktarırken Türkçe fiili ad hâline sokar (*geleceğini söyledi*). Yunanca tam bir yan cümle kurar: **λέει / είπε + ότι** (ya da **πως**: aynı anlam) + normal cümle. **Zaman değişmez**: söylenen şimdiki zamansa şimdiki, gelecekse gelecek, geçmişse geçmiş kalır. Türkçede de böyledir: *geleceğini söyledi* cümlesinde gelecek zaman kalır. Değişen **kişi**dir (*είμαι* → *είναι*).\n\n**Evet/hayır sorusu** **αν** ile aktarılır: *Με ρώτησε αν…* (-ip -mediğimi sordu). *τι, πού, πότε, γιατί* gibi soru kelimeleri olduğu gibi kalır: *Με ρώτησε πού μένω*. Buradaki *αν* «eğer» değil, «-ip -mediğini» demektir; bu yüzden arkasından *θα* gelebilir: *Με ρώτησε αν θα έρθω*. **Rica ya da emir** **να** + tek seferlik biçimle aktarılır: *Μου είπε να έρθω*.",
+     "en": "When Turkish reports speech it turns the verb into a noun form (*geleceğini söyledi*). Greek builds a full clause: **λέει / είπε + ότι** (or **πως**, the same) + an ordinary sentence. **The tense does not shift**, unlike English *she said she was…*: a present stays present, a future stays future. What changes is the **person** (*είμαι* → *είναι*).\n\nA yes/no **question** takes **αν** (whether): *Με ρώτησε αν…*. Question words (*τι, πού, πότε, γιατί*) stay: *Με ρώτησε πού μένω*. This αν means «whether», so θα may follow it: *Με ρώτησε αν θα έρθω*. A **request** takes **να** + the once-only form: *Μου είπε να έρθω*."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Doğrudan → dolaylı",
+      "en": "Direct → reported"
+     },
+     "head": [
+      {
+       "tr": "söz",
+       "en": "what was said"
+      },
+      {
+       "tr": "aktarılan",
+       "en": "reported"
+      },
+      {
+       "tr": "not",
+       "en": "note"
+      }
+     ],
+     "rows": [
+      [
+       "«Είμαι στο γραφείο.»",
+       "Είπε ότι είναι στο γραφείο.",
+       {
+        "tr": "şimdiki aynı kalır",
+        "en": "the present stays"
+       }
+      ],
+      [
+       "«Έφυγα νωρίς.»",
+       "Είπε ότι έφυγε νωρίς.",
+       {
+        "tr": "geçmiş aynı kalır",
+        "en": "the past stays"
+       }
+      ],
+      [
+       "«Θα έρθω αύριο.»",
+       "Είπε ότι θα έρθει αύριο.",
+       {
+        "tr": "gelecek aynı kalır",
+        "en": "the future stays"
+       }
+      ],
+      [
+       "«Έχεις το κλειδί;»",
+       "Με ρώτησε αν έχω το κλειδί.",
+       {
+        "tr": "evet/hayır sorusu: αν",
+        "en": "yes/no question: αν"
+       }
+      ],
+      [
+       "«Τι ώρα είναι;»",
+       "Με ρώτησε τι ώρα είναι.",
+       {
+        "tr": "soru kelimesi aynı kalır",
+        "en": "the question word stays"
+       }
+      ],
+      [
+       "«Έλα αύριο.»",
+       "Μου είπε να έρθω αύριο.",
+       {
+        "tr": "emir: να",
+        "en": "instruction: να"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Ο δήμος λέει ότι η αγορά μεταφέρεται.",
+       "tr": "Belediye pazarın taşındığını söylüyor.",
+       "en": "The municipality says that the market is being moved."
+      },
+      {
+       "el": "Η Ελένη μου είπε πως θα έρθει αύριο.",
+       "tr": "Eleni bana yarın geleceğini söyledi.",
+       "en": "Eleni told me that she will come tomorrow."
+      },
+      {
+       "el": "Με ρώτησε πού μένω.",
+       "tr": "Bana nerede oturduğumu sordu.",
+       "en": "He asked me where I live."
+      },
+      {
+       "el": "Η μητέρα μου είπε να μην αργήσω.",
+       "tr": "Annem geç kalmamamı söyledi.",
+       "en": "My mother told me not to be late."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Gerçek dışı koşul: αν είχα, θα…",
+    "en": "The unreal condition: αν είχα, θα…"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ders 22'de **gerçek** koşulu gördün: *Αν έρθεις, θα πάμε.* Şimdi **şu an doğru olmayan**, hayal edilen bir durum: *arabam olsa giderdim*. Yunanca iki tarafta da **sürekli geçmişi** (*παρατατικός*: «yapıyordu, yapardı») kullanır: **αν + είχα**, **θα + πήγαινα**. Biçim geçmiş gibi görünür, anlam şimdi ve hayaldir.\n\nBazı biçimleri biliyorsun: *ήμουν* (Ders 8), *θα ήθελα* (Ders 7: «isterdim»). *έχω* ve *κάνω* için bu biçim bildiğin geçmişle aynıdır (*είχα, έκανα*); *πάω* ve *παίρνω* için değil: bir kez olan *πήγα, πήρα* yerine **πήγαινα, έπαιρνα**. Mektup için ben ve o biçimleri yeter. Ders 22'deki gibi koşulda **αν** sözcüğünden sonra **θα** gelmez: *Αν είχα* doğru, *Αν θα είχα* yanlış.",
+     "en": "Lesson 22 taught the **real** condition: *Αν έρθεις, θα πάμε.* Now something **not true now**, only imagined: *if I had a car, I would go*. Greek uses the **imperfect** (*παρατατικός*, the past of «was doing, used to do») in both parts: **αν + είχα**, **θα + πήγαινα**. It looks past, but the meaning is present and imagined.\n\nYou know some of these forms already: *ήμουν* (Lesson 8), *θα ήθελα* (Lesson 7). For *έχω* and *κάνω* the form is the past you know (*είχα, έκανα*); for *πάω* and *παίρνω* it is not: **πήγαινα, έπαιρνα**, not the one-time *πήγα, πήρα*. The I and he/she forms are enough for a letter. As in Lesson 22, no **θα** after **αν** in a condition: *Αν είχα*, not *Αν θα είχα*."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Sürekli geçmiş: ben / o",
+      "en": "The imperfect: I / he, she"
+     },
+     "head": [
+      {
+       "tr": "şimdiki",
+       "en": "present"
+      },
+      {
+       "tr": "ben",
+       "en": "I"
+      },
+      {
+       "tr": "o",
+       "en": "he / she"
+      }
+     ],
+     "rows": [
+      [
+       "έχω",
+       "είχα",
+       "είχε"
+      ],
+      [
+       "είμαι",
+       "ήμουν",
+       "ήταν"
+      ],
+      [
+       "θέλω",
+       "ήθελα",
+       "ήθελε"
+      ],
+      [
+       "μπορώ",
+       "μπορούσα",
+       "μπορούσε"
+      ],
+      [
+       "παίρνω",
+       "έπαιρνα",
+       "έπαιρνε"
+      ],
+      [
+       "πάω",
+       "πήγαινα",
+       "πήγαινε"
+      ],
+      [
+       "κάνω",
+       "έκανα",
+       "έκανε"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Αν έρθεις αύριο, θα πάμε μαζί.",
+       "tr": "Yarın gelirsen birlikte gideriz.",
+       "en": "If you come tomorrow, we will go together.",
+       "note": {
+        "tr": "gerçek: αν + tek seferlik biçim",
+        "en": "real: αν + the once-only form"
+       }
+      },
+      {
+       "el": "Αν είχα αυτοκίνητο, θα πήγαινα στο πάρκο.",
+       "tr": "Arabam olsa parka giderdim.",
+       "en": "If I had a car, I would go to the park.",
+       "note": {
+        "tr": "gerçek dışı: arabam yok",
+        "en": "unreal: I have no car"
+       }
+      },
+      {
+       "el": "Αν η αγορά ήταν κοντά, θα έκανα εκεί τα ψώνια μου.",
+       "tr": "Pazar yakın olsa alışverişimi orada yapardım.",
+       "en": "If the market were near, I would do my shopping there."
+      },
+      {
+       "el": "Αν μπορούσα, θα έπαιρνα ταξί.",
+       "tr": "Elimden gelse taksiye binerdim.",
+       "en": "If I could, I would take a taxi.",
+       "note": {
+        "tr": "πήρα değil, έπαιρνα",
+        "en": "έπαιρνα, not πήρα"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "150 kelimelik metni bağlamak",
+    "en": "Linking a 150-word text"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Puan alan bir metin cümlelerini bağlar. Her bağlacın bir işi var: karşıtlık, neden, sonuç, ekleme, son nokta, seçenek. *Αν και* (-sa da) ve *επειδή* (çünkü) Ders 23'ten; burada hatırlatıyoruz. **Καθώς** da neden bildirir ama resmîdir; cümlenin başında ya da ortasında gelir. Kural: her paragrafta en az bir bağlaç.\n\nNoktalama: cümle ortasında *ενώ* ve *καθώς* önüne virgül; *Αν και* ya da *Καθώς* ile başlayan yan cümlenin sonuna virgül. *Επομένως, Επιπλέον, Τέλος* cümleyi başlatır, arkalarından virgül gelir.",
+     "en": "A text that earns marks links its sentences. Each linking word has a job: contrast, reason, result, addition, last point, choice. *Αν και* (although) and *επειδή* (because) are from Lesson 23; here we recall them. **Καθώς** gives a reason in a formal register (*as, since*), at the start or in the middle. Rule: at least one link per paragraph.\n\nPunctuation: a comma before *ενώ* and *καθώς* in mid-sentence, and after a clause opening with *Αν και* or *Καθώς*. *Επομένως, Επιπλέον, Τέλος* open a sentence and take a comma after them."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Bağlaçlar ve işleri",
+      "en": "Linking words and their jobs"
+     },
+     "head": [
+      {
+       "tr": "iş",
+       "en": "job"
+      },
+      "",
+      {
+       "tr": "üslup",
+       "en": "style"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "karşıtlık",
+        "en": "contrast"
+       },
+       "ενώ · αν και",
+       {
+        "tr": "her ikisi",
+        "en": "both"
+       }
+      ],
+      [
+       {
+        "tr": "neden",
+        "en": "reason"
+       },
+       "καθώς · επειδή",
+       {
+        "tr": "καθώς resmî",
+        "en": "καθώς is formal"
+       }
+      ],
+      [
+       {
+        "tr": "sonuç",
+        "en": "result"
+       },
+       "επομένως · γι' αυτό",
+       {
+        "tr": "επομένως daha resmî, γι' αυτό her ikisi",
+        "en": "επομένως more formal, γι' αυτό both"
+       }
+      ],
+      [
+       {
+        "tr": "ekleme",
+        "en": "addition"
+       },
+       "επιπλέον · επίσης",
+       {
+        "tr": "επιπλέον resmî, επίσης her ikisi",
+        "en": "επιπλέον formal, επίσης both"
+       }
+      ],
+      [
+       {
+        "tr": "son nokta",
+        "en": "last point"
+       },
+       "τέλος",
+       {
+        "tr": "her ikisi",
+        "en": "both"
+       }
+      ],
+      [
+       {
+        "tr": "seçenek",
+        "en": "choice"
+       },
+       "είτε … είτε",
+       {
+        "tr": "iki kez gelir",
+        "en": "comes twice"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Το πάρκο είναι μακριά, ενώ η οδός Αθηνάς είναι κοντά.",
+       "tr": "Park uzak, oysa Athinas Caddesi yakın.",
+       "en": "The park is far, whereas Athinas Street is near."
+      },
+      {
+       "el": "Καθώς το πάρκο είναι μακριά από το μετρό, πολλοί κάτοικοι δε θα πάνε.",
+       "tr": "Park metrodan uzak olduğu için birçok sakin gitmeyecek.",
+       "en": "As the park is far from the metro, many residents will not go."
+      },
+      {
+       "el": "Δεν έχω αυτοκίνητο· γι' αυτό παίρνω το λεωφορείο.",
+       "tr": "Arabam yok; bu yüzden otobüse biniyorum.",
+       "en": "I have no car; that is why I take the bus."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "title": {
+    "tr": "Kelimeler",
+    "en": "Words"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Resmî metin ve bağlaç kelimeleri. Bölümü bitirince günlük çalışmana girerler.",
+     "en": "Official words and linking words. They come into your sessions after the chapter."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/chB1-dimos",
+      "oknos-book/chB1-anakoinosi",
+      "oknos-book/chB1-apofasi",
+      "oknos-book/chB1-katoikos",
+      "oknos-book/chB1-metafero",
+      "oknos-book/chB1-ypovallo",
+      "oknos-book/chB1-enimerono",
+      "oknos-book/chB1-anakoinono",
+      "oknos-book/chB1-akyrono",
+      "oknos-book/chB1-chtizo",
+      "oknos-book/chB1-ilektronika",
+      "oknos-book/chB1-mechri",
+      "oknos-book/chB1-symfono",
+      "oknos-book/chB1-proteino",
+      "oknos-book/chB1-syntoma",
+      "oknos-book/chB1-efcharistimenos",
+      "oknos-book/chB1-enw",
+      "oknos-book/chB1-kathos",
+      "oknos-book/chB1-epomenos",
+      "oknos-book/chB1-gi-afto",
+      "oknos-book/chB1-epiplewn",
+      "oknos-book/chB1-telos",
+      "oknos-book/chB1-eite",
+      "oknos-book/v-plirono-verb"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "title": {
+    "tr": "İpuçları",
+    "en": "Tips"
+   },
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**-ıl- / -in- = -θηκε.** *Karar duyuruldu* = *Η απόφαση ανακοινώθηκε*; *karar alındı* = *η απόφαση πάρθηκε* (aynı kalıp); *tarafından* = **από**. Dolaylı anlatımda Türkçenin *-diğini söyledi* kalıbı Yunancada **ότι** ile tam cümle olur ve zaman yine değişmez: *geleceğini söyledi* = *είπε ότι θα έρθει*. Koşulda *-sa… -erdi* = **αν + είχα… θα + πήγαινα**.",
+     "en": "**English *was + -ed* = -θηκε**: *was announced* = *ανακοινώθηκε*; *by* = **από**. *She said that…* = *είπε ότι…*, keeping the tense of the words said: *She said she would come* = *Είπε ότι θα έρθει*. *If I had…, I would…* = **αν + είχα…, θα + πήγαινα**."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Edilgeni sonundan tanı:** **-εται / -ονται, -θηκε / -θηκαν, -θεί / -θούν**. Ama *έρχεται, κάθεται, χρειάζεται* -εται ile biter ve edilgen değildir (Ders 13); *Το γραφείο κλείνει στις τρεις* (ofis üçte kapanır) da etkendir. Bir hata daha: çoğul özne tekil fiille (*οι αιτήσεις υποβάλλεται*); doğrusu **υποβάλλονται**.",
+     "en": "**Know the passive by its endings:** **-εται / -ονται, -θηκε / -θηκαν, -θεί / -θούν**. But *έρχεται, κάθεται, χρειάζεται* end in -εται and are not passive (Lesson 13), and *Το γραφείο κλείνει στις τρεις* (the office closes at three) is active. Another mistake: a plural subject with a singular verb (*οι αιτήσεις υποβάλλεται*); the correct form is **υποβάλλονται**."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "exam_task": "b1keg.writing.formal",
+     "tr": "**Sınavda.** b1keg.writing.formal, yazmanın B kısmı (13 puan, yaklaşık 25 dakika): gerekçeli bir istek, başvuru ya da şikâyet, 130–170 kelime; belirgin biçimde kısa bir metin bir bant düşer. Düzen: açılış (*Αξιότιμε κύριε …*, *Αξιότιμη κυρία …*, *Αξιότιμοι κύριοι*), neden yazdığını söyleyen ilk cümle, iki gelişme paragrafı (sorun, öneri), kapanış (*Τέλος, σας παρακαλώ…*, *Με εκτίμηση,* ve bir ad). Her paragrafta bir bağlaç; baştan sona «εσείς». **Gerçek adınla imzalama.**",
+     "en": "**In the exam.** b1keg.writing.formal, writing part B (13 points, about 25 minutes): a request, application or complaint with reasons, 130–170 words; a clearly short text drops a band. Layout: an opening (*Αξιότιμε κύριε …*, *Αξιότιμη κυρία …*, *Αξιότιμοι κύριοι*), a first sentence with your reason, two body paragraphs (problem, suggestion), a closing (*Τέλος, σας παρακαλώ…*, *Με εκτίμηση,* and a name). A link in every paragraph; «εσείς» throughout. **Never sign with your real name.**"
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "title": {
+    "tr": "Şimdi sen dene",
+    "en": "Now you try"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene.",
+     "en": "Now you try."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/chB1-try-pass",
+      "oknos-book/chB1-try-reported",
+      "oknos-book/chB1-try-unreal",
+      "oknos-book/chB1-try-link"
+     ]
+    }
+   ]
+  }
+ ]
+}

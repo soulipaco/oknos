@@ -1,0 +1,939 @@
+[
+ {
+  "id": "ch04-onoma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το όνομα",
+  "pos": "noun",
+  "en": "name; first name",
+  "tr": "ad; isim",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "lemma": "όνομα",
+  "gender": "n",
+  "example": {
+   "el": "Το όνομά μου είναι Μεχμέτ.",
+   "en": "My first name is Mehmet.",
+   "tr": "Adım Mehmet."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-tilefono",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το τηλέφωνο",
+  "pos": "noun",
+  "en": "telephone; phone number",
+  "tr": "telefon; telefon numarası",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "lemma": "τηλέφωνο",
+  "gender": "n",
+  "example": {
+   "el": "Το τηλέφωνό σας, παρακαλώ;",
+   "en": "Your phone number, please?",
+   "tr": "Telefonunuz, lütfen?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-arithmos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ο αριθμός",
+  "pos": "noun",
+  "en": "number",
+  "tr": "sayı; numara",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "lemma": "αριθμός",
+  "gender": "m",
+  "example": {
+   "el": "Ποιος είναι ο αριθμός σας;",
+   "en": "What is your number?",
+   "tr": "Numaranız ne?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-parakalo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "παρακαλώ",
+  "pos": "phrase",
+  "en": "please; you're welcome",
+  "tr": "lütfen; rica ederim",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "example": {
+   "el": "Το επώνυμό σας, παρακαλώ;",
+   "en": "Your surname, please?",
+   "tr": "Soyadınız, lütfen?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-douleia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η δουλειά",
+  "pos": "noun",
+  "en": "work; job",
+  "tr": "iş; çalışma",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "lemma": "δουλειά",
+  "gender": "f",
+  "example": {
+   "el": "Η δουλειά μου είναι στο νοσοκομείο.",
+   "en": "My job is at the hospital.",
+   "tr": "İşim hastanede."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-pantremenos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "παντρεμένος / παντρεμένη",
+  "pos": "adj",
+  "en": "married (man / woman)",
+  "tr": "evli (erkek / kadın)",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "lemma": "παντρεμένος",
+  "example": {
+   "el": "Είμαι παντρεμένη.",
+   "en": "I'm married. (a woman speaking)",
+   "tr": "Evliyim. (kadın)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-eleytheros",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ελεύθερος / ελεύθερη",
+  "pos": "adj",
+  "en": "single, not married (man / woman)",
+  "tr": "bekâr (erkek / kadın)",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "lemma": "ελεύθερος",
+  "example": {
+   "el": "Όχι, είμαι ελεύθερος.",
+   "en": "No, I'm single. (a man speaking)",
+   "tr": "Hayır, bekârım. (erkek)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-num-200",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "διακόσια",
+  "pos": "num",
+  "en": "two hundred (200)",
+  "tr": "iki yüz (200)",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-num-300",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τριακόσια",
+  "pos": "num",
+  "en": "three hundred (300)",
+  "tr": "üç yüz (300)",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-num-400",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τετρακόσια",
+  "pos": "num",
+  "en": "four hundred (400)",
+  "tr": "dört yüz (400)",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-num-500",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πεντακόσια",
+  "pos": "num",
+  "en": "five hundred (500)",
+  "tr": "beş yüz (500)",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-num-600",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εξακόσια",
+  "pos": "num",
+  "en": "six hundred (600)",
+  "tr": "altı yüz (600)",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-num-700",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εφτακόσια",
+  "pos": "num",
+  "en": "seven hundred (700); also written επτακόσια",
+  "tr": "yedi yüz (700); επτακόσια diye de yazılır",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-num-800",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "οχτακόσια",
+  "pos": "num",
+  "en": "eight hundred (800); also written οκτακόσια",
+  "tr": "sekiz yüz (800); οκτακόσια diye de yazılır",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-num-900",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εννιακόσια",
+  "pos": "num",
+  "en": "nine hundred (900); also written εννεακόσια",
+  "tr": "dokuz yüz (900); εννεακόσια diye de yazılır",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-num-1000",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "χίλια",
+  "pos": "num",
+  "en": "one thousand (1000)",
+  "tr": "bin (1000)",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-q-where-work",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πού δουλεύει ο Μεχμέτ;",
+   "en": "Where does Mehmet work?",
+   "tr": "Mehmet nerede çalışıyor?"
+  },
+  "options": [
+   "Στο νοσοκομείο.",
+   "Στο σχολείο.",
+   "Στο πανεπιστήμιο."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Δουλεύω στο νοσοκομείο.» He studies at the university, but he works at the hospital.",
+   "tr": "«Δουλεύω στο νοσοκομείο.» Üniversitede okuyor ama hastanede çalışıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-q-true-false",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Ο Μεχμέτ είναι παντρεμένος.",
+    "en": "Mehmet is married.",
+    "tr": "Mehmet evli.",
+    "answer": false
+   },
+   {
+    "el": "Ο Μεχμέτ σπουδάζει στο πανεπιστήμιο.",
+    "en": "Mehmet studies at the university.",
+    "tr": "Mehmet üniversitede okuyor.",
+    "answer": true
+   },
+   {
+    "el": "Η οικογένειά του είναι στην Τουρκία.",
+    "en": "His family is in Turkey.",
+    "tr": "Ailesi Türkiye'de.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "He says «Όχι, είμαι ελεύθερος»: he is single. He works at the hospital and studies at the university, and «Η οικογένειά μου είναι στην Τουρκία».",
+   "tr": "«Όχι, είμαι ελεύθερος» diyor: bekâr. Hastanede çalışıyor, üniversitede okuyor; «Η οικογένειά μου είναι στην Τουρκία» diyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-try-mou",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "possessive.weak"
+  ],
+  "text": "— Πώς σας λένε; — Το όνομά {1} είναι Μαρία.",
+  "answer": {
+   "1": [
+    "μου"
+   ]
+  },
+  "options": {
+   "1": [
+    "μου",
+    "σου",
+    "της"
+   ]
+  },
+  "translation": {
+   "en": "— What is your name? — My name is Maria.",
+   "tr": "— Adınız ne? — Adım Maria."
+  },
+  "explain": {
+   "en": "Maria answers about herself: «my» = μου.",
+   "tr": "Maria kendinden söz ediyor: «benim» = μου."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-try-tis",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "possessive.weak"
+  ],
+  "text": "Η Ελένη δουλεύει στην Αθήνα, αλλά η οικογένειά {1} είναι στη Θεσσαλονίκη.",
+  "answer": {
+   "1": [
+    "της"
+   ]
+  },
+  "options": {
+   "1": [
+    "του",
+    "της",
+    "τους"
+   ]
+  },
+  "translation": {
+   "en": "Eleni works in Athens, but her family is in Thessaloniki.",
+   "tr": "Eleni Atina'da çalışıyor ama ailesi Selanik'te."
+  },
+  "explain": {
+   "en": "The owner is Eleni, a woman: της. (του would be a man's, τους theirs.)",
+   "tr": "Sahibi Eleni, bir kadın: της. (του bir erkeğin, τους onların olurdu.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-try-accent",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "prompt": {
+   "el": "— Το …, παρακαλώ;",
+   "en": "— Your …, please?",
+   "tr": "— …, lütfen?"
+  },
+  "options": [
+   "το τηλέφωνό σας",
+   "το τηλέφωνο σας",
+   "το τηλεφώνο σας"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Τηλέφωνο is stressed on the third syllable from the end (τη-λέ-φω-νο), so before σας it takes a second accent on its last syllable: το τηλέφωνό σας. The stress itself never moves: τηλεφώνο is wrong.",
+   "tr": "Τηλέφωνο sondan üçüncü hecede vurgulu (τη-λέ-φω-νο); σας gelince son hecesi ikinci bir vurgu alır: το τηλέφωνό σας. Asıl vurgu yerinden oynamaz: τηλεφώνο yanlış."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  },
+  "ask": {
+   "en": "A clerk asks for your phone number (formally). Which is written correctly?",
+   "tr": "Bir memur telefon numaranı soruyor (resmî). Hangisi doğru yazılmış?"
+  }
+ },
+ {
+  "id": "ch04-try-hundreds",
+  "type": "match",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the numbers.",
+   "tr": "Sayıları eşleştir."
+  },
+  "left": [
+   "300",
+   "500",
+   "800",
+   "900"
+  ],
+  "right": [
+   "τριακόσια",
+   "πεντακόσια",
+   "οχτακόσια",
+   "εννιακόσια"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-try-married",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "prompt": {
+   "el": "Άννα: «Είμαι …»",
+   "en": "Anna: «I am …»",
+   "tr": "Anna: «… -im»"
+  },
+  "options": [
+   "παντρεμένη.",
+   "παντρεμένος.",
+   "ελεύθερη."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "A woman speaking about herself uses the feminine form: παντρεμένη. Παντρεμένος is what a man says; ελεύθερη means single.",
+   "tr": "Bir kadın kendinden söz ederken dişil biçimi kullanır: παντρεμένη. Παντρεμένος bir erkeğin sözü; ελεύθερη «bekâr» demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  },
+  "ask": {
+   "en": "Anna is married. What does she say?",
+   "tr": "Anna evli. Ne der?"
+  }
+ },
+ {
+  "id": "ch04-p-accent-sort",
+  "ask": {
+   "en": "Sort the nouns: «με δεύτερο τόνο» = they take a second accent before μου; «χωρίς δεύτερο τόνο» = no second accent.",
+   "tr": "İsimleri ayır: «με δεύτερο τόνο» = arkasına μου gelince ikinci vurgu alır; «χωρίς δεύτερο τόνο» = ikinci vurgu almaz."
+  },
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε λέξη στη σωστή ομάδα.",
+   "en": "Sort the nouns: «με δεύτερο τόνο» = they take a second accent before μου; «χωρίς δεύτερο τόνο» = no second accent.",
+   "tr": "İsimleri ayır: «με δεύτερο τόνο» = arkasına μου gelince ikinci vurgu alır; «χωρίς δεύτερο τόνο» = ikinci vurgu almaz."
+  },
+  "categories": [
+   "με δεύτερο τόνο",
+   "χωρίς δεύτερο τόνο"
+  ],
+  "items": [
+   "το τηλέφωνο",
+   "η δουλειά",
+   "το όνομα",
+   "το σπίτι",
+   "το επώνυμο",
+   "το γραφείο"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "explain": {
+   "en": "Stressed on the third from last (τη-λέ-φω-νο, ό-νο-μα, ε-πώ-νυ-μο): second accent. Stressed on the last or second from last (δου-λειά, σπί-τι, γρα-φεί-ο): nothing changes.",
+   "tr": "Sondan üçüncü hecede vurgulu (τη-λέ-φω-νο, ό-νο-μα, ε-πώ-νυ-μο): ikinci vurgu. Son ya da sondan ikinci hecede vurgulu (δου-λειά, σπί-τι, γρα-φεί-ο): değişiklik yok."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-p-poss-match",
+  "ask": {
+   "en": "Whose home is it? Match each person with the phrase.",
+   "tr": "Ev kimin? Her kişiyi ifadeyle eşleştir."
+  },
+  "type": "match",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Whose home is it? Match each person with the phrase.",
+   "tr": "Ev kimin? Her kişiyi ifadeyle eşleştir."
+  },
+  "left": [
+   "εγώ",
+   "εσείς",
+   "αυτοί",
+   "εμείς"
+  ],
+  "right": [
+   "το σπίτι μου",
+   "το σπίτι σας",
+   "το σπίτι τους",
+   "το σπίτι μας"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "εγώ → μου, εσείς → σας, αυτοί → τους, εμείς → μας.",
+   "tr": "εγώ → μου, εσείς → σας, αυτοί → τους, εμείς → μας."
+  }
+ },
+ {
+  "id": "ch04-p-gap-bank",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Κύριε Γιλμάζ, το όνομά {1}, παρακαλώ; — Το όνομά {2} είναι Μεχμέτ.",
+  "bank": [
+   "μου",
+   "σας",
+   "του"
+  ],
+  "answer": {
+   "1": "σας",
+   "2": "μου"
+  },
+  "translation": {
+   "en": "Mr Yilmaz, your first name, please? — My first name is Mehmet.",
+   "tr": "Bay Yılmaz, adınız, lütfen? — Adım Mehmet."
+  },
+  "explain": {
+   "en": "The clerk is formal («κύριε»): σας. Mehmet answers about himself: μου.",
+   "tr": "Memur resmî konuşuyor («κύριε»): σας. Mehmet kendinden söz ediyor: μου."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-p-hundreds-euro",
+  "type": "match",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the prices.",
+   "tr": "Fiyatları eşleştir."
+  },
+  "left": [
+   "200 €",
+   "600 €",
+   "700 €",
+   "1000 €"
+  ],
+  "right": [
+   "διακόσια ευρώ",
+   "εξακόσια ευρώ",
+   "εφτακόσια ευρώ",
+   "χίλια ευρώ"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-p-phone-210",
+  "ask": {
+   "en": "How is 210 (the Athens area code) read digit by digit?",
+   "tr": "210 (Atina alan kodu) rakam rakam nasıl okunur?"
+  },
+  "type": "mcq",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right reading.",
+   "tr": "Doğru okunuşu seç."
+  },
+  "prompt": {
+   "el": "210",
+   "en": "How is 210 (the Athens area code) read digit by digit?",
+   "tr": "210 (Atina alan kodu) rakam rakam nasıl okunur?"
+  },
+  "options": [
+   "δύο, ένα, μηδέν",
+   "δύο, μηδέν, ένα",
+   "ένα, δύο, μηδέν"
+  ],
+  "answer": 0,
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "Digit by digit, in order: 2 δύο, 1 ένα, 0 μηδέν. In groups it is «διακόσια δέκα».",
+   "tr": "Sırayla, rakam rakam: 2 δύο, 1 ένα, 0 μηδέν. Grup olarak okunursa «διακόσια δέκα»."
+  }
+ },
+ {
+  "id": "ch04-p-phone-groups",
+  "ask": {
+   "en": "A number read in groups. Which is it?",
+   "tr": "Gruplar hâlinde okunan bir numara. Hangisi?"
+  },
+  "type": "mcq",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the number you hear.",
+   "tr": "Duyduğun numarayı seç."
+  },
+  "prompt": {
+   "el": "«Διακόσια δέκα, εξακόσια σαράντα, είκοσι πέντε, δεκαοχτώ.»",
+   "en": "A number read in groups. Which is it?",
+   "tr": "Gruplar hâlinde okunan bir numara. Hangisi?"
+  },
+  "options": [
+   "210 640 25 18",
+   "210 604 25 18",
+   "200 610 25 18"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "διακόσια δέκα = 210, εξακόσια σαράντα = 640 (604 would be εξακόσια τέσσερα), είκοσι πέντε = 25, δεκαοχτώ = 18.",
+   "tr": "διακόσια δέκα = 210, εξακόσια σαράντα = 640 (604 olsaydı εξακόσια τέσσερα), είκοσι πέντε = 25, δεκαοχτώ = 18."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch04-p-single-woman",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Διαλέγω την απάντηση.",
+   "en": "Choose the answer a woman gives.",
+   "tr": "Bir kadının vereceği cevabı seç."
+  },
+  "prompt": {
+   "el": "Είστε παντρεμένη;",
+   "en": "Are you married? (to a woman, formal)",
+   "tr": "Evli misiniz? (bir kadına, resmî)"
+  },
+  "options": [
+   "Όχι, είμαι ελεύθερη.",
+   "Όχι, είμαι ελεύθερος.",
+   "Όχι, είμαι παντρεμένη."
+  ],
+  "answer": 0,
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "A woman says ελεύθερη (feminine). Ελεύθερος is what a man says, and παντρεμένη means married.",
+   "tr": "Kadın ελεύθερη der (dişil). Ελεύθερος erkeğin sözü; παντρεμένη ise «evli» demek."
+  },
+  "ask": {
+   "en": "A woman is asked this. She is single. What does she answer?",
+   "tr": "Bir kadına bu soruluyor. Bekâr. Ne cevap verir?"
+  }
+ },
+ {
+  "id": "ch04-p-spoudazo",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-04"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.spoudazo.present"
+  ],
+  "cue": {
+   "lemma": "σπουδάζω",
+   "tense": "present",
+   "person": "1sg"
+  },
+  "text": "Εγώ {1} στο πανεπιστήμιο.",
+  "answer": {
+   "1": [
+    "σπουδάζω"
+   ]
+  },
+  "options": {
+   "1": [
+    "σπουδάζω",
+    "σπουδάζεις",
+    "σπουδάζει"
+   ]
+  },
+  "translation": {
+   "en": "I study at the university.",
+   "tr": "Ben üniversitede okuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-04",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "With εγώ the verb ends in -ω: σπουδάζω, like μένω and δουλεύω.",
+   "tr": "εγώ ile fiil -ω ile biter: σπουδάζω, tıpkı μένω ve δουλεύω gibi."
+  }
+ }
+]

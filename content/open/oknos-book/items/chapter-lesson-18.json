@@ -1,0 +1,819 @@
+[
+ {
+  "id": "ch18-q-stay",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πού θα μείνει η Σοφία;",
+   "en": "Where will Sofia stay?",
+   "tr": "Sofia nerede kalacak?"
+  },
+  "options": [
+   "Σε ένα διαμέρισμα στον τρίτο όροφο.",
+   "Σε ένα ξενοδοχείο στο κέντρο.",
+   "Στο ισόγειο, δίπλα στο μετρό."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Ayşe: «Θα μείνεις στο σπίτι μου! Το διαμέρισμα είναι στον τρίτο όροφο.» There is no hotel in the text.",
+   "tr": "Ayşe: «Θα μείνεις στο σπίτι μου! Το διαμέρισμα είναι στον τρίτο όροφο.» Metinde otel yok."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Σοφία θα κοιμηθεί δίπλα στο σαλόνι.",
+    "en": "Sofia will sleep next to the living room.",
+    "tr": "Sofia salonun yanında yatacak.",
+    "answer": true
+   },
+   {
+    "el": "Το βράδυ κάνει ζέστη.",
+    "en": "In the evening it is hot.",
+    "tr": "Akşam hava sıcak.",
+    "answer": false
+   },
+   {
+    "el": "Η Αϊσέ πληρώνει τα εισιτήρια.",
+    "en": "Ayşe pays for the tickets.",
+    "tr": "Ayşe biletleri ödüyor.",
+    "answer": false
+   }
+  ],
+  "explain": {
+   "en": "Ayşe: «Αυτό είναι το δωμάτιό σου, δίπλα στο σαλόνι», so the first is true. Evening: «το βράδυ κάνει κρύο». At the box office Sofia says «πληρώνω εγώ».",
+   "tr": "Ayşe: «Αυτό είναι το δωμάτιό σου, δίπλα στο σαλόνι», yani ilki doğru. Akşam: «το βράδυ κάνει κρύο». Gişede Sofia «πληρώνω εγώ» diyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-try-adj",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Η Σοφία θα φέρει δύο {1} φούστες και τρία {2} πουκάμισα.",
+  "answer": {
+   "1": [
+    "μακριές"
+   ],
+   "2": [
+    "άσπρα"
+   ]
+  },
+  "options": {
+   "1": [
+    "μακριές",
+    "μακριά",
+    "μακριοί"
+   ],
+   "2": [
+    "άσπρα",
+    "άσπρες",
+    "άσπρους"
+   ]
+  },
+  "translation": {
+   "en": "Sofia will bring two long skirts and three white shirts.",
+   "tr": "Sofia iki uzun etek ve üç beyaz gömlek getirecek."
+  },
+  "explain": {
+   "en": "φούστες is feminine plural: μακριές (μακρύς, μακριά, μακρύ; plural μακριοί, μακριές, μακριά). πουκάμισα is neuter plural: άσπρα. θα φέρει is the future of φέρνω. (Lessons 13 and 15.)",
+   "tr": "φούστες dişil çoğul: μακριές (μακρύς, μακριά, μακρύ; çoğulu μακριοί, μακριές, μακριά). πουκάμισα nötr çoğul: άσπρα. θα φέρει, φέρνω fiilinin geleceği. (13. ve 15. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-try-aresei",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Σου {1} πολύ αυτά τα γυαλιά! Θα {2} πάρεις;",
+  "answer": {
+   "1": [
+    "πάνε"
+   ],
+   "2": [
+    "τα"
+   ]
+  },
+  "options": {
+   "1": [
+    "πάνε",
+    "πάει",
+    "πας"
+   ],
+   "2": [
+    "τα",
+    "τους",
+    "τις"
+   ]
+  },
+  "translation": {
+   "en": "These glasses really suit you! Will you take them?",
+   "tr": "Bu gözlük sana çok yakışıyor! Alacak mısın?"
+  },
+  "explain": {
+   "en": "τα γυαλιά is plural, so the verb is plural: σου πάνε (πάει is for one thing). τα γυαλιά is neuter, so the weak pronoun is τα, after θα and before the verb. (Lessons 13 and 16.)",
+   "tr": "τα γυαλιά çoğul, fiil de çoğul: σου πάνε (πάει tek bir şey için). τα γυαλιά nötr, zayıf zamir de τα; θα ile fiilin arasına girer. (13. ve 16. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-try-mai",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Εμείς {1} στο σαλόνι. Εσύ {2} στο δωμάτιο. Οι φίλοι μου {3} το βράδυ.",
+  "bank": [
+   "καθόμαστε",
+   "κοιμάσαι",
+   "έρχονται",
+   "θυμάται"
+  ],
+  "answer": {
+   "1": "καθόμαστε",
+   "2": "κοιμάσαι",
+   "3": "έρχονται"
+  },
+  "translation": {
+   "en": "We sit in the living room. You sleep in the room. My friends come in the evening.",
+   "tr": "Biz salonda oturuyoruz. Sen odada yatıyorsun. Arkadaşlarım akşam geliyor."
+  },
+  "explain": {
+   "en": "The ending shows the person: εμείς → καθόμαστε, εσύ → κοιμάσαι, οι φίλοι μου → έρχονται. θυμάται is third person singular and fits none of them. (Lessons 13 and 14.)",
+   "tr": "Ek kişiyi gösterir: εμείς → καθόμαστε, εσύ → κοιμάσαι, οι φίλοι μου → έρχονται. θυμάται üçüncü tekil kişidir, hiçbirine uymaz. (13. ve 14. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-try-future",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Αύριο εγώ θα {1} με τη Σοφία και θα {2} στο σπίτι σου.",
+  "answer": {
+   "1": [
+    "μιλήσω"
+   ],
+   "2": [
+    "έρθω"
+   ]
+  },
+  "options": {
+   "1": [
+    "μιλήσω",
+    "μίλησα",
+    "μιλήσεις"
+   ],
+   "2": [
+    "έρθω",
+    "ήρθα",
+    "έρθεις"
+   ]
+  },
+  "translation": {
+   "en": "Tomorrow I will talk to Sofia and I will come to your home.",
+   "tr": "Yarın Sofia ile konuşacağım ve senin evine geleceğim."
+  },
+  "explain": {
+   "en": "After θα comes the once-only stem: μιλάω → θα μιλήσω, έρχομαι → θα έρθω. The subject is εγώ, so the ending is -ω, not -εις. μίλησα and ήρθα are past forms. (Lessons 14 and 16.)",
+   "tr": "θα kelimesinden sonra «bir kerelik» kök gelir: μιλάω → θα μιλήσω, έρχομαι → θα έρθω. Özne εγώ, yani ek -ω olur, -εις değil. μίλησα ve ήρθα geçmiş zaman biçimleri. (14. ve 16. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-try-pron",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Αύριο θέλω να {1} δω στην Ερμού. {2} ξεχάσεις τα γυαλιά!",
+  "answer": {
+   "1": [
+    "σε"
+   ],
+   "2": [
+    "Μην"
+   ]
+  },
+  "options": {
+   "1": [
+    "σε",
+    "εσένα",
+    "σου"
+   ],
+   "2": [
+    "Μην",
+    "Δεν",
+    "Όχι"
+   ]
+  },
+  "translation": {
+   "en": "Tomorrow I want to see you on Ermou Street. Don't forget your glasses!",
+   "tr": "Yarın seni Ermou'da görmek istiyorum. Gözlüğünü unutma!"
+  },
+  "explain": {
+   "en": "The weak pronoun σε goes between να and the verb; σου is the wrong small word with δω, and εσένα is for after a preposition or for emphasis. A warning begins with Μην, not Δεν or Όχι. (Lessons 16 and 17.)",
+   "tr": "Zayıf zamir σε, να ile fiilin arasına girer; δω ile σου yanlış küçük kelimedir, εσένα ise edattan sonra ya da vurgu için. Uyarı Μην ile başlar, Δεν ya da Όχι ile değil. (16. ve 17. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-p-flat",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Στον τρίτο όροφο υπάρχουν δύο {1} διαμερίσματα. Το πρώτο έχει μια {2} κουζίνα.",
+  "answer": {
+   "1": [
+    "επιπλωμένα"
+   ],
+   "2": [
+    "μικρή"
+   ]
+  },
+  "options": {
+   "1": [
+    "επιπλωμένα",
+    "επιπλωμένο",
+    "επιπλωμένες"
+   ],
+   "2": [
+    "μικρή",
+    "μικρά",
+    "μικρός"
+   ]
+  },
+  "translation": {
+   "en": "On the third floor there are two furnished flats. The first has a small kitchen.",
+   "tr": "Üçüncü katta iki eşyalı daire var. Birincisinin küçük bir mutfağı var."
+  },
+  "explain": {
+   "en": "διαμερίσματα is neuter plural: επιπλωμένα. κουζίνα is feminine singular: μικρή. (Lessons 13 and 14.)",
+   "tr": "διαμερίσματα nötr çoğul: επιπλωμένα. κουζίνα dişil tekil: μικρή. (13. ve 14. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-p-suits",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "{1} βλέπω δίπλα στο ταξί. Σου {2} πολύ το καπέλο!",
+  "bank": [
+   "Σε",
+   "Σου",
+   "πάει",
+   "πάνε"
+  ],
+  "answer": {
+   "1": "Σε",
+   "2": "πάει"
+  },
+  "translation": {
+   "en": "I see you next to the taxi. The hat suits you very much!",
+   "tr": "Seni taksinin yanında görüyorum. Şapka sana çok yakışıyor!"
+  },
+  "explain": {
+   "en": "βλέπω takes the object pronoun σε. πάει agrees with one thing (το καπέλο), so not πάνε. (Lessons 13 and 16.)",
+   "tr": "βλέπω nesne zamiri σε ile gelir. πάει tek şeye (το καπέλο) uyar, πάνε değil. (13. ve 16. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-p-stay",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Ο φίλος μου θα {1} στο σπίτι μου και θα {2} στο δωμάτιο δίπλα στην κουζίνα.",
+  "answer": {
+   "1": [
+    "μείνει"
+   ],
+   "2": [
+    "κοιμηθεί"
+   ]
+  },
+  "options": {
+   "1": [
+    "μείνει",
+    "μείνεις",
+    "μείνω"
+   ],
+   "2": [
+    "κοιμηθεί",
+    "κοιμηθείς",
+    "κοιμηθώ"
+   ]
+  },
+  "translation": {
+   "en": "My friend will stay at my home and sleep in the room next to the kitchen.",
+   "tr": "Arkadaşım evimde kalacak ve mutfağın yanındaki odada yatacak."
+  },
+  "explain": {
+   "en": "The subject is ο φίλος μου (he), so the third person: θα μείνει, θα κοιμηθεί. μείνεις and κοιμηθείς are «you», μείνω and κοιμηθώ are «I». (Lessons 14, 15 and 16.)",
+   "tr": "Özne ο φίλος μου (o), yani üçüncü kişi: θα μείνει, θα κοιμηθεί. μείνεις ve κοιμηθείς «sen», μείνω ve κοιμηθώ «ben» demektir. (14, 15 ve 16. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-p-na-pron",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Μπορείς να {1} πάρεις από το σπίτι; Και η Ελένη; Θέλω να {2} δω αύριο.",
+  "answer": {
+   "1": [
+    "με"
+   ],
+   "2": [
+    "τη"
+   ]
+  },
+  "options": {
+   "1": [
+    "με",
+    "εμένα",
+    "εγώ"
+   ],
+   "2": [
+    "τη",
+    "τον",
+    "το"
+   ]
+  },
+  "translation": {
+   "en": "Can you pick me up from home? And Eleni? I want to see her tomorrow.",
+   "tr": "Beni evden alabilir misin? Ya Eleni? Onu yarın görmek istiyorum."
+  },
+  "explain": {
+   "en": "A weak pronoun goes between να and the verb: να με πάρεις. Eleni is a woman, so τη (την loses its -ν before δ). εμένα and εγώ cannot stand there. (Lessons 16 and 17.)",
+   "tr": "Zayıf zamir να ile fiilin arasına girer: να με πάρεις. Eleni kadın, yani τη (την, δ harfinden önce -ν düşer). εμένα ve εγώ oraya giremez. (16. ve 17. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-p-want",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Η Αϊσέ θέλει να έρθει η Σοφία στην παράσταση. Τι λέει στη Σοφία;",
+   "en": "Ayşe wants Sofia to come to the show. What does she say to Sofia?",
+   "tr": "Ayşe, Sofia'nın gösteriye gelmesini istiyor. Sofia'ya ne diyor?"
+  },
+  "options": [
+   "Θέλω να έρθεις.",
+   "Θέλω να έρθω.",
+   "Θέλεις να έρθω."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Two subjects: I want (θέλω), you come (να έρθεις). «Θέλω να έρθω» is «I want to come» myself, and «Θέλεις να έρθω» asks «do you want me to come?». (Lessons 16 and 17.)",
+   "tr": "İki özne: ben istiyorum (θέλω), sen geliyorsun (να έρθεις). «Θέλω να έρθω» kendim gelmek istiyorum, «Θέλεις να έρθω» ise «gelmemi ister misin?» demek. (16. ve 17. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-p-ma",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε ρήμα στη σωστή ομάδα.",
+   "en": "Sort the verbs: those that go like έρχομαι, or like θυμάμαι.",
+   "tr": "Fiilleri ayır: έρχομαι gibi gidenler ya da θυμάμαι gibi gidenler."
+  },
+  "categories": [
+   "όπως «έρχομαι»",
+   "όπως «θυμάμαι»"
+  ],
+  "items": [
+   "κάθομαι",
+   "κοιμάμαι",
+   "χρειάζομαι",
+   "φοβάμαι",
+   "κουράζομαι"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   0
+  ],
+  "explain": {
+   "en": "κάθομαι, χρειάζομαι and κουράζομαι go like έρχομαι (κάθεσαι, χρειάζεσαι, κουράζεσαι). κοιμάμαι and φοβάμαι go like θυμάμαι (κοιμάσαι, φοβάσαι). (Lessons 13 and 14.)",
+   "tr": "κάθομαι, χρειάζομαι ve κουράζομαι, έρχομαι gibi çekilir (κάθεσαι, χρειάζεσαι, κουράζεσαι). κοιμάμαι ve φοβάμαι, θυμάμαι gibi çekilir (κοιμάσαι, φοβάσαι). (13. ve 14. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-p-stems",
+  "ask": {
+   "en": "Match each present form with its future.",
+   "tr": "Her şimdiki zaman biçimini geleceğiyle eşleştir."
+  },
+  "type": "match",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each present form with its future.",
+   "tr": "Her şimdiki zaman biçimini geleceğiyle eşleştir."
+  },
+  "left": [
+   "μιλάω",
+   "γράφω",
+   "τρώω",
+   "έρχομαι",
+   "τηλεφωνώ"
+  ],
+  "right": [
+   "θα φάω",
+   "θα έρθω",
+   "θα γράψω",
+   "θα τηλεφωνήσω",
+   "θα μιλήσω"
+  ],
+  "answer": [
+   4,
+   2,
+   0,
+   1,
+   3
+  ],
+  "explain": {
+   "en": "B1: μιλάω → θα μιλήσω. A: γράφω → θα γράψω. Irregular: τρώω → θα φάω. G: έρχομαι → θα έρθω (no -μαι). B2: τηλεφωνώ → θα τηλεφωνήσω. (Lessons 15 and 16.)",
+   "tr": "B1: μιλάω → θα μιλήσω. A: γράφω → θα γράψω. Düzensiz: τρώω → θα φάω. G: έρχομαι → θα έρθω (-μαι yok). B2: τηλεφωνώ → θα τηλεφωνήσω. (15. ve 16. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-p-strong",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Η κράτηση είναι για {1}: ένα δωμάτιο στον δεύτερο όροφο. Θα {2} περιμένουμε στο λιμάνι.",
+  "bank": [
+   "εσένα",
+   "σε",
+   "εσύ",
+   "σου"
+  ],
+  "answer": {
+   "1": "εσένα",
+   "2": "σε"
+  },
+  "translation": {
+   "en": "The booking is for you: a room on the second floor. We will wait for you at the port.",
+   "tr": "Rezervasyon senin için: ikinci katta bir oda. Seni limanda bekleyeceğiz."
+  },
+  "explain": {
+   "en": "After a preposition (για) the strong form: για εσένα. Otherwise the weak form, after θα and before the verb: θα σε περιμένουμε. σου is the wrong small word with περιμένω. (Lessons 14 and 16.)",
+   "tr": "Edattan (για) sonra güçlü biçim: για εσένα. Başka yerde zayıf biçim, θα ile fiilin arasında: θα σε περιμένουμε. περιμένω ile σου yanlış küçük kelimedir. (14. ve 16. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-p-aresei-na",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Μου {1} πολύ τα ροζ παπούτσια, αλλά δεν πρέπει {2} τα πάρω: είναι ακριβά.",
+  "bank": [
+   "αρέσουν",
+   "αρέσει",
+   "να",
+   "θα"
+  ],
+  "answer": {
+   "1": "αρέσουν",
+   "2": "να"
+  },
+  "translation": {
+   "en": "I like the pink shoes very much, but I must not buy them: they are expensive.",
+   "tr": "Pembe ayakkabıları çok seviyorum, ama onları almamalıyım: pahalılar."
+  },
+  "explain": {
+   "en": "The shoes are plural: αρέσουν. πρέπει is followed by να, and the weak pronoun τα stands between να and πάρω. (Lessons 13, 16 and 17.)",
+   "tr": "Ayakkabılar çoğul: αρέσουν. πρέπει kelimesinden sonra να gelir ve zayıf zamir τα, να ile πάρω arasında durur. (13, 16 ve 17. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-p-floor",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Μπορώ να {1} στον {2} όροφο;",
+  "answer": {
+   "1": [
+    "μείνω"
+   ],
+   "2": [
+    "τρίτο"
+   ]
+  },
+  "options": {
+   "1": [
+    "μείνω",
+    "έμεινα",
+    "μείνεις"
+   ],
+   "2": [
+    "τρίτο",
+    "τρίτος",
+    "τρίτη"
+   ]
+  },
+  "translation": {
+   "en": "May I stay on the third floor?",
+   "tr": "Üçüncü katta kalabilir miyim?"
+  },
+  "explain": {
+   "en": "μπορώ να + the same person: να μείνω (μείνεις is «you», έμεινα is past). όροφος is masculine, and after σε (στον) it is in the accusative: στον τρίτο όροφο. (Lessons 14, 15 and 17.)",
+   "tr": "μπορώ να + aynı kişi: να μείνω (μείνεις «sen», έμεινα geçmiş). όροφος eril; σε (στον) edatından sonra nesne hâlindedir (αιτιατική): στον τρίτο όροφο. (14, 15 ve 17. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-p-late",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Η παράσταση αρχίζει σε δέκα λεπτά, αλλά η Σοφία δοκιμάζει φορέματα. Τι λέω στη Σοφία;",
+   "en": "The show starts in ten minutes, but Sofia is trying on dresses. What do I say to Sofia?",
+   "tr": "Gösteri on dakika sonra başlıyor, ama Sofia elbise deniyor. Sofia'ya ne diyorum?"
+  },
+  "options": [
+   "Μην αργήσεις!",
+   "Δεν αργήσεις!",
+   "Να δεν αργήσεις!"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "A warning for one occasion is Μην + the once-only stem: Μην αργήσεις! Δεν never comes with this form, and να δεν is never used: after να the negative is μην. (Lessons 13 and 17.)",
+   "tr": "Tek bir sefer için uyarı Μην + «bir kerelik» kök ile yapılır: Μην αργήσεις! Bu biçimle Δεν kullanılmaz, να δεν de hiç olmaz: να kelimesinden sonra olumsuz μην olur. (13. ve 17. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch18-p-message",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-18"
+  ],
+  "rubric": {
+   "el": "Διαβάζω. Σωστό ή λάθος;",
+   "en": "Read, then answer: true or false?",
+   "tr": "Oku, sonra cevapla: doğru mu, yanlış mı?"
+  },
+  "stimulus": {
+   "text": "Γεια σου, Αϊσέ! Θα έρθω την Παρασκευή στις εννιά με το αεροπλάνο. Θα φέρω μια μικρή βαλίτσα. Δε θα ξεχάσω τα γυαλιά! Θέλω να δω την Ερμού και μια παράσταση. Φιλιά, Σοφία"
+  },
+  "statements": [
+   {
+    "el": "Η Σοφία θα φέρει μια μικρή βαλίτσα.",
+    "en": "Sofia will bring a small suitcase.",
+    "tr": "Sofia küçük bir bavul getirecek.",
+    "answer": true
+   },
+   {
+    "el": "Η Σοφία θα έρθει με το πλοίο.",
+    "en": "Sofia will come by ship.",
+    "tr": "Sofia gemiyle gelecek.",
+    "answer": false
+   },
+   {
+    "el": "Η Σοφία θέλει να δει μια παράσταση.",
+    "en": "Sofia wants to see a show.",
+    "tr": "Sofia bir gösteri izlemek istiyor.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "«Θα φέρω μια μικρή βαλίτσα.» She comes «με το αεροπλάνο», not by ship. «Θέλω να δω … μια παράσταση.» (Lessons 15, 16 and 17.)",
+   "tr": "«Θα φέρω μια μικρή βαλίτσα.» «Με το αεροπλάνο» geliyor, gemiyle değil. «Θέλω να δω … μια παράσταση.» (15, 16 ve 17. dersler.)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-18",
+   "by": "sonnet-draft"
+  }
+ }
+]

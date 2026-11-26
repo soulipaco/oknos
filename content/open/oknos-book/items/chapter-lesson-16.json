@@ -1,0 +1,919 @@
+[
+ {
+  "id": "ch16-monoklino",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το μονόκλινο",
+  "pos": "noun",
+  "en": "single room",
+  "tr": "tek kişilik oda",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "lemma": "μονόκλινο",
+  "gender": "n",
+  "example": {
+   "el": "Θα ήθελα ένα μονόκλινο για τρεις νύχτες.",
+   "en": "I would like a single room for three nights.",
+   "tr": "Üç gece için tek kişilik bir oda istiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-diklino",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το δίκλινο",
+  "pos": "noun",
+  "en": "double room (two beds)",
+  "tr": "iki kişilik oda",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "lemma": "δίκλινο",
+  "gender": "n",
+  "example": {
+   "el": "Έχετε ένα δίκλινο για την Παρασκευή;",
+   "en": "Do you have a double room for Friday?",
+   "tr": "Cuma için iki kişilik bir odanız var mı?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-kratisi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η κράτηση",
+  "pos": "noun",
+  "en": "booking; reservation",
+  "tr": "rezervasyon",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "lemma": "κράτηση",
+  "gender": "f",
+  "example": {
+   "el": "Έχουμε κράτηση για δύο νύχτες.",
+   "en": "We have a booking for two nights.",
+   "tr": "İki gece için rezervasyonumuz var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-resepsion",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η ρεσεψιόν",
+  "pos": "noun",
+  "en": "reception (desk)",
+  "tr": "resepsiyon",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "lemma": "ρεσεψιόν",
+  "gender": "f",
+  "example": {
+   "el": "Το ασανσέρ είναι δίπλα στη ρεσεψιόν.",
+   "en": "The lift is next to the reception.",
+   "tr": "Asansör resepsiyonun yanında."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-diany",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η διανυκτέρευση",
+  "pos": "noun",
+  "en": "overnight stay; one night (as charged)",
+  "tr": "geceleme; bir gecelik konaklama",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "lemma": "διανυκτέρευση",
+  "gender": "f",
+  "example": {
+   "el": "Η διανυκτέρευση κάνει εβδομήντα ευρώ χωρίς πρωινό.",
+   "en": "One night costs seventy euros without breakfast.",
+   "tr": "Bir gecelik konaklama kahvaltısız yetmiş euro."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-mporo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μπορώ",
+  "pos": "verb",
+  "en": "can; be able to (θα μπορέσω)",
+  "tr": "-ebilmek; yapabilmek (θα μπορέσω)",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "lemma": "μπορώ",
+  "example": {
+   "el": "Την Κυριακή θα μπορέσω να έρθω.",
+   "en": "On Sunday I will be able to come.",
+   "tr": "Pazar günü gelebileceğim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-tilefono-verb",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τηλεφωνώ",
+  "pos": "verb",
+  "en": "phone; call (θα τηλεφωνήσω)",
+  "tr": "telefon etmek; aramak (θα τηλεφωνήσω)",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "lemma": "τηλεφωνώ",
+  "example": {
+   "el": "Θα τηλεφωνήσω στο ξενοδοχείο αύριο.",
+   "en": "I will phone the hotel tomorrow.",
+   "tr": "Yarın otele telefon edeceğim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-q-nights",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Για πόσες νύχτες κάνει κράτηση η Αϊσέ;",
+   "en": "For how many nights does Ayşe book?",
+   "tr": "Ayşe kaç gece için rezervasyon yaptırıyor?"
+  },
+  "options": [
+   "Για δύο νύχτες.",
+   "Για τρεις νύχτες.",
+   "Για μία νύχτα."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "She asks for Friday and Saturday, and the clerk checks «Δύο νύχτες, σωστά;». At the reception he says it again: «Ένα δίκλινο για δύο νύχτες».",
+   "tr": "Cuma ve cumartesi için soruyor; memur da «Δύο νύχτες, σωστά;» diye teyit ediyor. Resepsiyonda yine söylüyor: «Ένα δίκλινο για δύο νύχτες»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-q-checkin",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Το δωμάτιο έχει μπαλκόνι.",
+    "en": "The room has a balcony.",
+    "tr": "Odanın balkonu var.",
+    "answer": true
+   },
+   {
+    "el": "Το ξενοδοχείο έχει πισίνα.",
+    "en": "The hotel has a pool.",
+    "tr": "Otelin havuzu var.",
+    "answer": false
+   },
+   {
+    "el": "Με πρωινό η διανυκτέρευση κάνει ογδόντα πέντε ευρώ.",
+    "en": "With breakfast a night's stay costs eighty-five euros.",
+    "tr": "Kahvaltılı bir gecelik konaklama seksen beş euro.",
+    "answer": true
+   },
+   {
+    "el": "Το δωμάτιο είναι στον τρίτο όροφο.",
+    "en": "The room is on the third floor.",
+    "tr": "Oda üçüncü katta.",
+    "answer": false
+   }
+  ],
+  "explain": {
+   "en": "The clerk says «όλα τα δωμάτια έχουν μπαλκόνι» but «Πισίνα δεν έχουμε», and the price is «ογδόντα πέντε με πρωινό» (seventy without). The room is «στον δεύτερο όροφο», not the third.",
+   "tr": "Memur «όλα τα δωμάτια έχουν μπαλκόνι» diyor, ama «Πισίνα δεν έχουμε»; fiyat «ογδόντα πέντε με πρωινό» (kahvaltısız yetmiş). Oda üçüncü katta değil, «στον δεύτερο όροφο»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-try-b1",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.future.simple"
+  ],
+  "text": "Αύριο εγώ θα {1} στη ρεσεψιόν.",
+  "answer": {
+   "1": [
+    "ρωτήσω"
+   ]
+  },
+  "options": {
+   "1": [
+    "ρωτήσω",
+    "ρωτάσω",
+    "ρωτέσω"
+   ]
+  },
+  "translation": {
+   "en": "Tomorrow I will ask at the reception.",
+   "tr": "Yarın resepsiyonda soracağım."
+  },
+  "explain": {
+   "en": "Most B1 verbs change -άω to -ήσω: ρωτάω → θα ρωτήσω. ρωτάσω and ρωτέσω are not real forms.",
+   "tr": "B1 fiillerinin çoğunda -άω, -ήσω olur: ρωτάω → θα ρωτήσω. ρωτάσω ve ρωτέσω gerçek biçimler değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-try-exc",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.future.simple"
+  ],
+  "text": "Εμείς θα {1} το Σαββατοκύριακο στο Ναύπλιο.",
+  "answer": {
+   "1": [
+    "περάσουμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "περάσουμε",
+    "περνήσουμε",
+    "περάσουν"
+   ]
+  },
+  "translation": {
+   "en": "We will spend the weekend in Nafplio.",
+   "tr": "Hafta sonunu Nafplio'da geçireceğiz."
+  },
+  "explain": {
+   "en": "περνάω is one of the few that take -άσω: θα περάσω, and the ν drops. With «we» you need περάσουμε; περάσουν is for «they».",
+   "tr": "περνάω, -άσω alan birkaç fiilden biri: θα περάσω, ν de düşer. «Biz» için περάσουμε gerekir; περάσουν «onlar» içindir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-try-g",
+  "type": "match",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the forms.",
+   "tr": "Biçimleri eşleştir."
+  },
+  "left": [
+   "κοιμάμαι",
+   "χρειάζομαι",
+   "θυμάμαι",
+   "έρχομαι",
+   "κάθομαι"
+  ],
+  "right": [
+   "θα κοιμηθώ",
+   "θα χρειαστώ",
+   "θα θυμηθώ",
+   "θα έρθω",
+   "θα καθίσω"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "explain": {
+   "en": "In the future the -μαι is gone: -μαι verbs end in -ώ or -ω.",
+   "tr": "Gelecekte -μαι yok: -μαι fiilleri -ώ ya da -ω ile biter."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-try-pron",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "— Ελένη, {1} ακούς; — Ναι, {2} ακούω. Πού είναι ο Γιώργος και ο Κώστας; — Είναι στο ταξί, {3} βλέπω από εδώ.",
+  "bank": [
+   "με",
+   "σε",
+   "τους"
+  ],
+  "answer": {
+   "1": "με",
+   "2": "σε",
+   "3": "τους"
+  },
+  "translation": {
+   "en": "— Eleni, can you hear me? — Yes, I can hear you. Where are Giorgos and Kostas? — They are in the taxi, I can see them from here.",
+   "tr": "— Eleni, beni duyuyor musun? — Evet, seni duyuyorum. Yorgo ile Kostas nerede? — Taksideler, onları buradan görüyorum."
+  },
+  "explain": {
+   "en": "«Me» = με, «you» (one friend) = σε, «them» = τους (two men; two women would be τις).",
+   "tr": "«Beni» = με, «seni» (tek arkadaş) = σε, «onları» = τους (iki erkek; iki kadın olsaydı τις)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-try-strong",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "prompt": {
+   "el": "Η κράτηση είναι για ... και τον Νίκο.",
+   "en": "The booking is for me and Nikos.",
+   "tr": "Rezervasyon benim ve Nikos için."
+  },
+  "options": [
+   "εμένα",
+   "με",
+   "εγώ"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "After a preposition (για) you need the strong form: για εμένα. The weak με never follows a preposition, and εγώ is the subject form.",
+   "tr": "Edattan (για) sonra güçlü biçim gerekir: για εμένα. Zayıf με edattan sonra gelmez, εγώ ise özne biçimidir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-p-b2",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.future.simple"
+  ],
+  "text": "Εσείς θα {1} στο ξενοδοχείο;",
+  "answer": {
+   "1": [
+    "τηλεφωνήσετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "τηλεφωνήσετε",
+    "τηλεφωνήσεις",
+    "τηλεφωνήσουν"
+   ]
+  },
+  "translation": {
+   "en": "Will you phone the hotel?",
+   "tr": "Siz otele telefon edecek misiniz?"
+  },
+  "explain": {
+   "en": "With εσείς you need θα τηλεφωνήσετε. θα τηλεφωνήσεις is for εσύ and θα τηλεφωνήσουν for «they».",
+   "tr": "εσείς için θα τηλεφωνήσετε gerekir. θα τηλεφωνήσεις εσύ içindir, θα τηλεφωνήσουν «onlar» için."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-p-zo",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.future.simple"
+  ],
+  "text": "Η Αϊσέ θα {1} έναν χρόνο στην Αθήνα.",
+  "answer": {
+   "1": [
+    "ζήσει"
+   ]
+  },
+  "options": {
+   "1": [
+    "ζήσει",
+    "ζήσω",
+    "ζήσουν"
+   ]
+  },
+  "translation": {
+   "en": "Ayşe will live in Athens for a year.",
+   "tr": "Ayşe bir yıl Atina'da yaşayacak."
+  },
+  "explain": {
+   "en": "«Η Αϊσέ» is third person singular: θα ζήσει.",
+   "tr": "«Η Αϊσέ» üçüncü tekil kişi: θα ζήσει."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-p-mporo",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.future.simple"
+  ],
+  "text": "Την Κυριακή εγώ θα {1} να έρθω.",
+  "answer": {
+   "1": [
+    "μπορέσω"
+   ]
+  },
+  "options": {
+   "1": [
+    "μπορέσω",
+    "μπορήσω",
+    "μπορέσεις"
+   ]
+  },
+  "translation": {
+   "en": "On Sunday I will be able to come.",
+   "tr": "Pazar günü gelebileceğim."
+  },
+  "explain": {
+   "en": "μπορώ is the exception: θα μπορέσω (-έσω). With εγώ the ending is -ω.",
+   "tr": "μπορώ istisnadır: θα μπορέσω (-έσω). εγώ ile ek -ω olur."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-p-g",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.future.simple"
+  ],
+  "text": "Το βράδυ τα παιδιά θα {1} νωρίς.",
+  "answer": {
+   "1": [
+    "κοιμηθούν"
+   ]
+  },
+  "options": {
+   "1": [
+    "κοιμηθούν",
+    "κοιμηθεί",
+    "κοιμηθώ"
+   ]
+  },
+  "translation": {
+   "en": "In the evening the children will sleep early.",
+   "tr": "Akşam çocuklar erken yatacak."
+  },
+  "explain": {
+   "en": "«Τα παιδιά» is third person plural: θα κοιμηθούν.",
+   "tr": "«Τα παιδιά» üçüncü çoğul kişi: θα κοιμηθούν."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-p-sort",
+  "ask": {
+   "en": "Sort the verbs by the future ending: «θα … -ήσω» or «θα … -ηθώ ή -στώ».",
+   "tr": "Fiilleri gelecekteki sonuna göre ayır: «θα … -ήσω» ya da «θα … -ηθώ ή -στώ»."
+  },
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε ρήμα στη σωστή ομάδα.",
+   "en": "Sort the verbs by the future ending: «θα … -ήσω» or «θα … -ηθώ ή -στώ».",
+   "tr": "Fiilleri gelecekteki sonuna göre ayır: «θα … -ήσω» ya da «θα … -ηθώ ή -στώ»."
+  },
+  "categories": [
+   "θα … -ήσω",
+   "θα … -ηθώ ή -στώ"
+  ],
+  "items": [
+   "μιλάω",
+   "αγαπάω",
+   "θυμάμαι",
+   "κοιμάμαι",
+   "χρειάζομαι",
+   "ξυπνάω"
+  ],
+  "answer": [
+   0,
+   0,
+   1,
+   1,
+   1,
+   0
+  ],
+  "explain": {
+   "en": "-άω verbs: θα μιλήσω, θα αγαπήσω, θα ξυπνήσω. -μαι verbs: θα θυμηθώ, θα κοιμηθώ, θα χρειαστώ.",
+   "tr": "-άω fiilleri: θα μιλήσω, θα αγαπήσω, θα ξυπνήσω. -μαι fiilleri: θα θυμηθώ, θα κοιμηθώ, θα χρειαστώ."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-p-match-b",
+  "type": "match",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the forms.",
+   "tr": "Biçimleri eşleştir."
+  },
+  "left": [
+   "μιλάω",
+   "αγαπάω",
+   "ξεχνάω",
+   "ξυπνάω",
+   "τηλεφωνώ"
+  ],
+  "right": [
+   "θα μιλήσω",
+   "θα αγαπήσω",
+   "θα ξεχάσω",
+   "θα ξυπνήσω",
+   "θα τηλεφωνήσω"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "explain": {
+   "en": "These -άω and -ώ verbs take -ήσω; ξεχνάω takes -άσω: θα ξεχάσω.",
+   "tr": "Bu -άω ve -ώ fiilleri -ήσω alır; ξεχνάω ise -άσω: θα ξεχάσω."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-p-hotel",
+  "type": "mcq",
+  "skill": "vocab",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ένα δίκλινο δωμάτιο είναι για πόσα άτομα;",
+   "en": "How many people is a δίκλινο room for?",
+   "tr": "Δίκλινο bir oda kaç kişiliktir?"
+  },
+  "options": [
+   "δύο άτομα.",
+   "ένα άτομο.",
+   "τρία άτομα."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "δίκλινο = two beds, so two people. μονόκλινο is for one.",
+   "tr": "δίκλινο = iki yataklı, yani iki kişilik. μονόκλινο tek kişilik."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-p-order",
+  "ask": {
+   "en": "Which sentence is right? (\"I am waiting for you\", to one friend)",
+   "tr": "Hangi cümle doğru? («Seni bekliyorum», bir arkadaşa)"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ποια πρόταση είναι σωστή;",
+   "en": "Which sentence is right? (\"I am waiting for you\", to one friend)",
+   "tr": "Hangi cümle doğru? («Seni bekliyorum», bir arkadaşa)"
+  },
+  "options": [
+   "Σε περιμένω.",
+   "Περιμένω σε.",
+   "Εσύ περιμένω."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The weak pronoun comes right before the verb: Σε περιμένω.",
+   "tr": "Zayıf zamir fiilin hemen önüne gelir: Σε περιμένω."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-p-formal",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "pronoun.accusative"
+  ],
+  "text": "— Κυρία Γιλμάζ, ορίστε το κλειδί. Το δωμάτιο δώδεκα είναι για {1}.",
+  "answer": {
+   "1": [
+    "εσάς"
+   ]
+  },
+  "options": {
+   "1": [
+    "εσάς",
+    "εσείς",
+    "σε"
+   ]
+  },
+  "translation": {
+   "en": "— Ms Yilmaz, here is the key. Room twelve is for you.",
+   "tr": "— Bayan Yılmaz, buyurun anahtar. On iki numaralı oda sizin için."
+  },
+  "explain": {
+   "en": "After the preposition για you need the strong form, and the clerk speaks formally (κυρία): για εσάς (or για σας). εσείς is the subject form; «για σε» is always wrong.",
+   "tr": "για edatından sonra güçlü biçim gerekir ve memur resmî konuşuyor (κυρία): για εσάς (ya da για σας). εσείς özne biçimi; «για σε» hep yanlış."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-p-gender",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "pronoun.accusative"
+  ],
+  "text": "— Πού είναι ο Νίκος; — Δεν {1} βλέπω.",
+  "answer": {
+   "1": [
+    "τον"
+   ]
+  },
+  "options": {
+   "1": [
+    "τον",
+    "την",
+    "το"
+   ]
+  },
+  "translation": {
+   "en": "— Where is Nikos? — I can't see him.",
+   "tr": "— Nikos nerede? — Onu göremiyorum."
+  },
+  "explain": {
+   "en": "Nikos is masculine: τον (and δεν keeps its -ν before τ). την is feminine and το neuter.",
+   "tr": "Nikos eril: τον (δεν de τ önünde -ν'sini korur). την dişil, το nötr."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch16-p-plural",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-16"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Οι φίλοι μου είναι στην πισίνα: {1} βλέπω. Οι φίλες μου είναι στη ρεσεψιόν: {2} περιμένω. Τα κλειδιά; Εγώ {3} έχω.",
+  "bank": [
+   "τους",
+   "τις",
+   "τα"
+  ],
+  "answer": {
+   "1": "τους",
+   "2": "τις",
+   "3": "τα"
+  },
+  "translation": {
+   "en": "My (male) friends are at the pool: I can see them. My (female) friends are at the reception: I am waiting for them. The keys? I have them.",
+   "tr": "Arkadaşlarım (erkekler) havuzda: onları görüyorum. Arkadaşlarım (kadınlar) resepsiyonda: onları bekliyorum. Anahtarlar mı? Onlar bende."
+  },
+  "explain": {
+   "en": "Plural by gender: masculine τους, feminine τις, neuter τα. «Οι φίλοι» is masculine, «οι φίλες» feminine, «τα κλειδιά» neuter.",
+   "tr": "Çoğul cinsiyete göre: eril τους, dişil τις, nötr τα. «Οι φίλοι» eril, «οι φίλες» dişil, «τα κλειδιά» nötr."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-16",
+   "by": "sonnet-draft"
+  }
+ }
+]

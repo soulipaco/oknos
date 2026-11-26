@@ -1,0 +1,1292 @@
+[
+ {
+  "id": "ch14-diamerisma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το διαμέρισμα",
+  "pos": "noun",
+  "en": "flat; apartment",
+  "tr": "daire",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "διαμέρισμα",
+  "gender": "n",
+  "example": {
+   "el": "Ψάχνω ένα διαμέρισμα στο κέντρο.",
+   "en": "I'm looking for a flat in the centre.",
+   "tr": "Merkezde bir daire arıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-domatio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το δωμάτιο",
+  "pos": "noun",
+  "en": "room",
+  "tr": "oda",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "δωμάτιο",
+  "gender": "n",
+  "example": {
+   "el": "Το διαμέρισμα έχει τρία δωμάτια.",
+   "en": "The flat has three rooms.",
+   "tr": "Dairenin üç odası var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-ypnodomatio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το υπνοδωμάτιο",
+  "pos": "noun",
+  "en": "bedroom",
+  "tr": "yatak odası",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "υπνοδωμάτιο",
+  "gender": "n",
+  "example": {
+   "el": "Το υπνοδωμάτιο έχει μπαλκόνι.",
+   "en": "The bedroom has a balcony.",
+   "tr": "Yatak odasında balkon var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-saloni",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το σαλόνι",
+  "pos": "noun",
+  "en": "living room",
+  "tr": "salon; oturma odası",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "σαλόνι",
+  "gender": "n",
+  "example": {
+   "el": "Το σαλόνι είναι μεγάλο.",
+   "en": "The living room is big.",
+   "tr": "Salon büyük."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-epiplomenos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "επιπλωμένος / επιπλωμένη / επιπλωμένο",
+  "pos": "adj",
+  "en": "furnished",
+  "tr": "eşyalı",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "επιπλωμένος",
+  "example": {
+   "el": "Το διαμέρισμα είναι επιπλωμένο.",
+   "en": "The flat is furnished.",
+   "tr": "Daire eşyalı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-tetragonika",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τα τετραγωνικά",
+  "pos": "noun",
+  "en": "square metres (m²), floor area",
+  "tr": "metrekare (m²)",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "τετραγωνικά",
+  "gender": "n",
+  "example": {
+   "el": "Το σαλόνι είναι είκοσι τετραγωνικά.",
+   "en": "The living room is twenty square metres.",
+   "tr": "Salon yirmi metrekare."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-orofos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο όροφος",
+  "pos": "noun",
+  "en": "floor; storey",
+  "tr": "kat",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "όροφος",
+  "gender": "m",
+  "example": {
+   "el": "Μένω στον δεύτερο όροφο.",
+   "en": "I live on the second floor.",
+   "tr": "İkinci katta oturuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-isogeio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ισόγειο",
+  "pos": "noun",
+  "en": "ground floor",
+  "tr": "zemin kat",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "ισόγειο",
+  "gender": "n",
+  "example": {
+   "el": "Το φαρμακείο είναι στο ισόγειο.",
+   "en": "The pharmacy is on the ground floor.",
+   "tr": "Eczane zemin katta."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-asanser",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ασανσέρ",
+  "pos": "noun",
+  "en": "lift; elevator",
+  "tr": "asansör",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "ασανσέρ",
+  "gender": "n",
+  "example": {
+   "el": "Δεν υπάρχει ασανσέρ.",
+   "en": "There is no lift.",
+   "tr": "Asansör yok."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-enoikio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ενοίκιο",
+  "pos": "noun",
+  "en": "rent",
+  "tr": "kira",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "ενοίκιο",
+  "gender": "n",
+  "example": {
+   "el": "Το ενοίκιο είναι τετρακόσια ευρώ τον μήνα.",
+   "en": "The rent is four hundred euros a month.",
+   "tr": "Kira ayda dört yüz euro."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-mesitis",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο μεσίτης / η μεσίτρια",
+  "pos": "noun",
+  "en": "estate agent",
+  "tr": "emlakçı",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "μεσίτης",
+  "gender": "m",
+  "example": {
+   "el": "Ο μεσίτης είναι στο γραφείο.",
+   "en": "The estate agent is at the office.",
+   "tr": "Emlakçı ofiste."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-aggelia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η αγγελία",
+  "pos": "noun",
+  "en": "advertisement; small ad",
+  "tr": "ilan",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "αγγελία",
+  "gender": "f",
+  "example": {
+   "el": "Διαβάζω μια αγγελία για ένα διαμέρισμα.",
+   "en": "I'm reading an ad for a flat.",
+   "tr": "Bir daire ilanı okuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-psachno",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ψάχνω",
+  "pos": "verb",
+  "en": "to look for; to search",
+  "tr": "aramak",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "ψάχνω",
+  "example": {
+   "el": "Ψάχνω διαμέρισμα.",
+   "en": "I'm looking for a flat.",
+   "tr": "Daire arıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-protos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πρώτος / πρώτη / πρώτο",
+  "pos": "adj",
+  "en": "first",
+  "tr": "birinci; ilk",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "πρώτος",
+  "example": {
+   "el": "Μένω στον πρώτο όροφο.",
+   "en": "I live on the first floor.",
+   "tr": "Birinci katta oturuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-deyteros",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "δεύτερος / δεύτερη / δεύτερο",
+  "pos": "adj",
+  "en": "second",
+  "tr": "ikinci",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "δεύτερος",
+  "example": {
+   "el": "Το δεύτερο διαμέρισμα έχει μπαλκόνι.",
+   "en": "The second flat has a balcony.",
+   "tr": "İkinci dairenin balkonu var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-stribo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "στρίβω",
+  "pos": "verb",
+  "en": "to turn (at a corner)",
+  "tr": "dönmek (köşeden)",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "στρίβω",
+  "example": {
+   "el": "Στη γωνία στρίβεις δεξιά.",
+   "en": "At the corner you turn right.",
+   "tr": "Köşede sağa dönersin."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-prochorao",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "προχωράω",
+  "pos": "verb",
+  "en": "to go on; to continue ahead",
+  "tr": "ilerlemek; yürümeye devam etmek",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "προχωράω",
+  "example": {
+   "el": "Προχωράς ευθεία.",
+   "en": "You go straight on.",
+   "tr": "Dümdüz ilerlersin."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-dexia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "δεξιά / αριστερά",
+  "pos": "adv",
+  "en": "right / left (to the right, on the right)",
+  "tr": "sağ / sol (sağa, sağda)",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "example": {
+   "el": "Η στάση είναι δεξιά και η τράπεζα είναι αριστερά.",
+   "en": "The stop is on the right and the bank is on the left.",
+   "tr": "Durak sağda, banka solda."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-makria",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μακριά",
+  "pos": "adv",
+  "en": "far; μακριά από = far from",
+  "tr": "uzak; μακριά από = …-dan uzak",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "μακριά",
+  "example": {
+   "el": "Το γραφείο είναι μακριά από το σπίτι.",
+   "en": "The office is far from home.",
+   "tr": "Ofis evden uzak."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-pisw",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πίσω",
+  "pos": "adv",
+  "en": "behind; πίσω από = behind",
+  "tr": "arka; πίσω από = …-ın arkasında",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "πίσω",
+  "example": {
+   "el": "Ο φούρνος είναι πίσω από το σουπερμάρκετ.",
+   "en": "The bakery is behind the supermarket.",
+   "tr": "Fırın süpermarketin arkasında."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-brosta",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μπροστά",
+  "pos": "adv",
+  "en": "in front; μπροστά σε = in front of",
+  "tr": "ön; μπροστά σε = …-ın önünde",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "μπροστά",
+  "example": {
+   "el": "Το μετρό είναι μπροστά στην πλατεία.",
+   "en": "The metro is in front of the square.",
+   "tr": "Metro meydanın önünde."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-anamesa",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ανάμεσα",
+  "pos": "adv",
+  "en": "between; ανάμεσα σε = between",
+  "tr": "ara; ανάμεσα σε = …-ın arasında",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "ανάμεσα",
+  "example": {
+   "el": "Το φαρμακείο είναι ανάμεσα στην τράπεζα και στο σουπερμάρκετ.",
+   "en": "The pharmacy is between the bank and the supermarket.",
+   "tr": "Eczane banka ile süpermarketin arasında."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-irtha",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ήρθα / θα έρθω",
+  "pos": "verb",
+  "en": "I came / I will come (έρχομαι)",
+  "tr": "geldim / geleceğim (έρχομαι)",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "lemma": "έρχομαι",
+  "example": {
+   "el": "Αύριο θα έρθω με το μετρό.",
+   "en": "Tomorrow I'll come by metro.",
+   "tr": "Yarın metroyla geleceğim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-q-floor",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Σε ποιον όροφο είναι το πρώτο διαμέρισμα;",
+   "en": "On which floor is the first flat?",
+   "tr": "İlk daire kaçıncı katta?"
+  },
+  "options": [
+   "Στο ισόγειο.",
+   "Στον πρώτο όροφο.",
+   "Στον τρίτο όροφο."
+  ],
+  "answer": 2,
+  "explain": {
+   "en": "The agent says «Είναι στον τρίτο όροφο και υπάρχει ασανσέρ». The first floor is where the second flat is.",
+   "tr": "Emlakçı «Είναι στον τρίτο όροφο και υπάρχει ασανσέρ» diyor. Birinci kat ikinci dairenin katı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Το πρώτο διαμέρισμα είναι επιπλωμένο.",
+    "en": "The first flat is furnished.",
+    "tr": "İlk daire eşyalı.",
+    "answer": true
+   },
+   {
+    "el": "Το δεύτερο διαμέρισμα είναι στο ισόγειο.",
+    "en": "The second flat is on the ground floor.",
+    "tr": "İkinci daire zemin katta.",
+    "answer": false
+   },
+   {
+    "el": "Το δεύτερο διαμέρισμα δεν έχει μπαλκόνι.",
+    "en": "The second flat has no balcony.",
+    "tr": "İkinci dairenin balkonu yok.",
+    "answer": false
+   }
+  ],
+  "explain": {
+   "en": "The first flat: «Ναι, είναι επιπλωμένο». The second is on the first floor («στον πρώτο όροφο»), not the ground floor, and it has a balcony («Έχει … μπαλκόνι»); it is the lift that is missing.",
+   "tr": "İlk daire için «Ναι, είναι επιπλωμένο». İkinci daire birinci katta («στον πρώτο όροφο»), zemin katta değil; balkonu var («Έχει … μπαλκόνι»), asansörü yok."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-try-yparchei",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "{1} ένας φούρνος κοντά. Ο φούρνος {2} δίπλα στο φαρμακείο.",
+  "answer": {
+   "1": [
+    "Υπάρχει"
+   ],
+   "2": [
+    "είναι"
+   ]
+  },
+  "options": {
+   "1": [
+    "Υπάρχει",
+    "Υπάρχουν"
+   ],
+   "2": [
+    "είναι",
+    "υπάρχει",
+    "υπάρχουν"
+   ]
+  },
+  "translation": {
+   "en": "There is a bakery nearby. The bakery is next to the pharmacy.",
+   "tr": "Yakında bir fırın var. Fırın eczanenin yanında."
+  },
+  "explain": {
+   "en": "«Ένας φούρνος» is new information and singular: Υπάρχει (Υπάρχουν is plural). «Ο φούρνος» is a known thing whose place you give: είναι.",
+   "tr": "«Ένας φούρνος» yeni bilgi ve tekil: Υπάρχει (Υπάρχουν çoğuldur). «Ο φούρνος» bilinen bir şey, yerini söylüyorsun: είναι."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-try-erchomai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Χθες {1} με το μετρό. Αύριο θα {2} με το λεωφορείο.",
+  "answer": {
+   "1": [
+    "ήρθα"
+   ],
+   "2": [
+    "έρθω"
+   ]
+  },
+  "options": {
+   "1": [
+    "ήρθα",
+    "έρθω",
+    "έρχομαι"
+   ],
+   "2": [
+    "έρθω",
+    "ήρθα",
+    "ήρθες"
+   ]
+  },
+  "translation": {
+   "en": "Yesterday I came by metro. Tomorrow I will come by bus.",
+   "tr": "Dün metroyla geldim. Yarın otobüsle geleceğim."
+  },
+  "explain": {
+   "en": "Χθες is the past: ήρθα; έρθω needs θα in front, and έρχομαι is the present. After θα comes έρθω; ήρθα and ήρθες are past forms and never follow θα.",
+   "tr": "Χθες geçmiş: ήρθα; έρθω önünde θα ister, έρχομαι ise şimdiki zaman. θα'dan sonra έρθω gelir; ήρθα ve ήρθες geçmiş biçimlerdir, θα ile kullanılmaz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-try-thymamai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Η Ελένη {1} στο σαλόνι και εγώ {2} στο υπνοδωμάτιο.",
+  "answer": {
+   "1": [
+    "κοιμάται"
+   ],
+   "2": [
+    "κοιμάμαι"
+   ]
+  },
+  "options": {
+   "1": [
+    "κοιμάται",
+    "κοιμάμαι",
+    "κοιμούνται"
+   ],
+   "2": [
+    "κοιμάμαι",
+    "κοιμάται",
+    "κοιμόμαστε"
+   ]
+  },
+  "translation": {
+   "en": "Eleni sleeps in the living room and I sleep in the bedroom.",
+   "tr": "Eleni salonda uyuyor, ben de yatak odasında uyuyorum."
+  },
+  "explain": {
+   "en": "Eleni is «she»: κοιμάται. «Εγώ» takes κοιμάμαι. κοιμούνται is «they» and κοιμόμαστε is «we».",
+   "tr": "Eleni «o»: κοιμάται. «Εγώ» ile κοιμάμαι gelir. κοιμούνται «onlar», κοιμόμαστε «biz» demektir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-try-ordinal",
+  "ask": {
+   "en": "Match each floor with its number.",
+   "tr": "Her katı numarasıyla eşleştir."
+  },
+  "type": "match",
+  "skill": "vocab",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each floor with its number.",
+   "tr": "Her katı numarasıyla eşleştir."
+  },
+  "left": [
+   "1ος όροφος",
+   "2ος όροφος",
+   "3ος όροφος",
+   "5ος όροφος"
+  ],
+  "right": [
+   "ο τρίτος όροφος",
+   "ο πέμπτος όροφος",
+   "ο πρώτος όροφος",
+   "ο δεύτερος όροφος"
+  ],
+  "answer": [
+   2,
+   3,
+   0,
+   1
+  ],
+  "explain": {
+   "en": "1ος = πρώτος, 2ος = δεύτερος, 3ος = τρίτος, 5ος = πέμπτος. In ads the ordinal is written as a number plus its ending (-ος for ο όροφος).",
+   "tr": "1ος = πρώτος, 2ος = δεύτερος, 3ος = τρίτος, 5ος = πέμπτος. İlanlarda sıra sayısı rakam ve sonekiyle yazılır (ο όροφος için -ος)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-try-prep",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Η τράπεζα είναι απέναντι {1} το φαρμακείο και το σπίτι μου είναι κοντά {2} μετρό.",
+  "answer": {
+   "1": [
+    "από"
+   ],
+   "2": [
+    "στο"
+   ]
+  },
+  "options": {
+   "1": [
+    "από",
+    "σε",
+    "με"
+   ],
+   "2": [
+    "στο",
+    "από",
+    "στη"
+   ]
+  },
+  "translation": {
+   "en": "The bank is opposite the pharmacy and my home is near the metro.",
+   "tr": "Banka eczanenin karşısında ve evim metroya yakın."
+  },
+  "explain": {
+   "en": "απέναντι takes από. κοντά takes σε, and σε + το joins into στο (το μετρό is neuter). στη would need a feminine noun.",
+   "tr": "απέναντι ile από kullanılır. κοντά ile σε kullanılır; σε + το birleşip στο olur (το μετρό nötr). στη dişil isim ister."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-p-ad",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Σημειώστε ΣΩΣΤΟ ή ΛΑΘΟΣ.",
+   "en": "Mark TRUE or FALSE.",
+   "tr": "DOĞRU ya da YANLIŞ işaretle."
+  },
+  "exam_task": "a2ltr.reading.notices_tf",
+  "stimulus": {
+   "text": "ΕΝΟΙΚΙΑΖΕΤΑΙ διαμέρισμα 70 τ.μ. στο κέντρο, 4ος όροφος, με ασανσέρ. 2 υπνοδωμάτια, σαλόνι, κουζίνα, μπάνιο, μπαλκόνι. Επιπλωμένο. 450 € τον μήνα. Τηλέφωνο: 210 555 01 42."
+  },
+  "statements": [
+   {
+    "el": "Το διαμέρισμα είναι στον τέταρτο όροφο.",
+    "en": "The flat is on the fourth floor.",
+    "tr": "Daire dördüncü katta.",
+    "answer": true
+   },
+   {
+    "el": "Υπάρχει ασανσέρ.",
+    "en": "There is a lift.",
+    "tr": "Asansör var.",
+    "answer": true
+   },
+   {
+    "el": "Το διαμέρισμα δεν είναι επιπλωμένο.",
+    "en": "The flat is not furnished.",
+    "tr": "Daire eşyalı değil.",
+    "answer": false
+   },
+   {
+    "el": "Το διαμέρισμα έχει τρία υπνοδωμάτια.",
+    "en": "The flat has three bedrooms.",
+    "tr": "Dairenin üç yatak odası var.",
+    "answer": false
+   }
+  ],
+  "explain": {
+   "en": "ΕΝΟΙΚΙΑΖΕΤΑΙ means «for rent», and τ.μ. is τετραγωνικά (square metres). 4ος όροφος is the fourth floor, «με ασανσέρ» means there is a lift, «Επιπλωμένο» means furnished, and «2 υπνοδωμάτια» is two bedrooms, not three.",
+   "tr": "ΕΝΟΙΚΙΑΖΕΤΑΙ «kiralık», τ.μ. de τετραγωνικά (metrekare) demek. 4ος όροφος dördüncü kat, «με ασανσέρ» asansör var, «Επιπλωμένο» eşyalı demek; «2 υπνοδωμάτια» iki yatak odası, üç değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-p-where",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πού είναι το σουπερμάρκετ;",
+   "en": "Where is the supermarket?",
+   "tr": "Süpermarket nerede?"
+  },
+  "options": [
+   "Απέναντι από το φαρμακείο.",
+   "Δίπλα στην τράπεζα.",
+   "Μπροστά στην πλατεία."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The agent says «υπάρχει ένα απέναντι από το φαρμακείο». The stop is next to the bank, and the metro is in front of the square.",
+   "tr": "Emlakçı «υπάρχει ένα απέναντι από το φαρμακείο» diyor. Durak bankanın yanında, metro ise meydanın önünde."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-p-metro",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πού στρίβει η Αϊσέ για το μετρό;",
+   "en": "Where does Ayşe turn on the way to the metro?",
+   "tr": "Ayşe metroya giderken nerede dönüyor?"
+  },
+  "options": [
+   "Δεξιά, στην πλατεία.",
+   "Αριστερά, στη γωνία.",
+   "Αριστερά, στο φαρμακείο."
+  ],
+  "answer": 1,
+  "explain": {
+   "en": "«Στη γωνία στρίβετε αριστερά»: left, at the corner. The metro itself is in front of the square.",
+   "tr": "«Στη γωνία στρίβετε αριστερά»: köşede sola. Metro ise meydanın önünde."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-p-sort",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε λέξη στη σωστή ομάδα: ονομαστική ή αιτιατική;",
+   "en": "Sort the phrases by case: «ονομαστική» (nominative) or «αιτιατική» (accusative).",
+   "tr": "İfadeleri hâllerine göre ayır: «ονομαστική» (yalın) ya da «αιτιατική» (-i hâli)."
+  },
+  "categories": [
+   "ονομαστική",
+   "αιτιατική"
+  ],
+  "items": [
+   "ο μεσίτης",
+   "τον μεσίτη",
+   "η τράπεζα",
+   "την τράπεζα",
+   "οι στάσεις",
+   "τις στάσεις"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "explain": {
+   "en": "The nominative is the subject form: ο, η, οι. The accusative follows a verb or a preposition: τον, την, τις.",
+   "tr": "Yalın hâl öznenin biçimidir: ο, η, οι. -i hâli fiilden veya edattan sonra gelir: τον, την, τις."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-p-nomacc",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Υπάρχει {1} φούρνος κοντά. Βλέπω {2} φούρνο.",
+  "answer": {
+   "1": [
+    "ένας"
+   ],
+   "2": [
+    "έναν"
+   ]
+  },
+  "options": {
+   "1": [
+    "ένας",
+    "έναν"
+   ],
+   "2": [
+    "έναν",
+    "ένας"
+   ]
+  },
+  "translation": {
+   "en": "There is a bakery nearby. I see a bakery.",
+   "tr": "Yakında bir fırın var. Bir fırın görüyorum."
+  },
+  "explain": {
+   "en": "After υπάρχει the noun is the nominative: ένας φούρνος. After the verb βλέπω it is the object, so the accusative: έναν φούρνο.",
+   "tr": "υπάρχει'den sonra isim yalın hâldedir: ένας φούρνος. βλέπω fiilinden sonra nesnedir, bu yüzden -i hâli: έναν φούρνο."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-p-dir",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Προχωράτε {1} και στη γωνία στρίβετε {2}.",
+  "bank": [
+   "ευθεία",
+   "αριστερά",
+   "μακριά"
+  ],
+  "answer": {
+   "1": "ευθεία",
+   "2": "αριστερά"
+  },
+  "translation": {
+   "en": "Go straight on and at the corner turn left.",
+   "tr": "Dümdüz ilerleyin ve köşede sola dönün."
+  },
+  "explain": {
+   "en": "You go ευθεία (straight on) and turn αριστερά (left). μακριά means «far» and does not fit with προχωράτε or στρίβετε.",
+   "tr": "ευθεία (dümdüz) ilerlenir, αριστερά (sola) dönülür. μακριά «uzak» demektir; προχωράτε ya da στρίβετε ile uymaz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-p-thymasai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Εσύ {1} τον αριθμό μου;",
+  "answer": {
+   "1": [
+    "θυμάσαι"
+   ]
+  },
+  "options": {
+   "1": [
+    "θυμάσαι",
+    "θυμάται",
+    "θυμάστε"
+   ]
+  },
+  "translation": {
+   "en": "Do you remember my number?",
+   "tr": "Numaramı hatırlıyor musun?"
+  },
+  "explain": {
+   "en": "«Εσύ» takes θυμάσαι. θυμάται is «he/she» and θυμάστε is «you» (formal or plural).",
+   "tr": "«Εσύ» ile θυμάσαι gelir. θυμάται «o», θυμάστε ise «siz»dir (resmî ya da çoğul)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-p-koimomaste",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Εμείς {1} στο υπνοδωμάτιο και τα παιδιά {2} στο σαλόνι.",
+  "answer": {
+   "1": [
+    "κοιμόμαστε"
+   ],
+   "2": [
+    "κοιμούνται"
+   ]
+  },
+  "options": {
+   "1": [
+    "κοιμόμαστε",
+    "κοιμάστε",
+    "κοιμούνται"
+   ],
+   "2": [
+    "κοιμούνται",
+    "κοιμάται",
+    "κοιμόμαστε"
+   ]
+  },
+  "translation": {
+   "en": "We sleep in the bedroom and the children sleep in the living room.",
+   "tr": "Biz yatak odasında uyuyoruz, çocuklar da salonda uyuyor."
+  },
+  "explain": {
+   "en": "«Εμείς» takes -όμαστε: κοιμόμαστε. «Τα παιδιά» is «they»: κοιμούνται.",
+   "tr": "«Εμείς» ile -όμαστε gelir: κοιμόμαστε. «Τα παιδιά» «onlar»dır: κοιμούνται."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-p-erchesai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Αύριο εσύ θα {1} με τον Νίκο;",
+  "answer": {
+   "1": [
+    "έρθεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "έρθεις",
+    "έρθω",
+    "ήρθες"
+   ]
+  },
+  "translation": {
+   "en": "Will you come with Nikos tomorrow?",
+   "tr": "Yarın Nikos'la mı geleceksin?"
+  },
+  "explain": {
+   "en": "«Εσύ» after θα takes έρθεις. έρθω is «I», and ήρθες is the past («you came»), which does not follow θα.",
+   "tr": "θα'dan sonra «εσύ» için έρθεις gelir. έρθω «ben»dir; ήρθες ise geçmiştir («geldin») ve θα'dan sonra gelmez."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch14-p-ordinal-form",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-14"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Μένω στον {1} όροφο.",
+  "answer": {
+   "1": [
+    "έβδομο"
+   ]
+  },
+  "options": {
+   "1": [
+    "έβδομο",
+    "έβδομη",
+    "έβδομος"
+   ]
+  },
+  "translation": {
+   "en": "I live on the seventh floor.",
+   "tr": "Yedinci katta oturuyorum."
+  },
+  "explain": {
+   "en": "ο όροφος is masculine, and after στον the accusative is έβδομο. έβδομη is feminine and έβδομος is the nominative.",
+   "tr": "ο όροφος eril; στον ile -i hâli gelir: έβδομο. έβδομη dişil, έβδομος ise yalın hâldir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-14",
+   "by": "sonnet-draft"
+  }
+ }
+]

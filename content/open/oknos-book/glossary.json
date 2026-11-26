@@ -1,0 +1,2936 @@
+{
+ "source": "Inflected forms mapped to their lemma from the English Wiktionary (https://en.wiktionary.org, via kaikki.org, CC BY-SA 4.0); meanings written for this pack.",
+ "licence": "CC-BY-SA-4.0",
+ "note": "Meanings drafted by Sonnet subagents on 2026-11-20 and 2026-11-26, spot-checked by Opus; not checked by a person.",
+ "words": [
+  {
+   "el": "ο αέρας",
+   "forms": [
+    "αέρα"
+   ],
+   "pos": "noun",
+   "en": "air; wind",
+   "tr": "hava; rüzgâr"
+  },
+  {
+   "el": "αθλητικός",
+   "forms": [
+    "αθλητική"
+   ],
+   "pos": "adj",
+   "en": "athletic, sports (related to sport)",
+   "tr": "sportif, spora ait"
+  },
+  {
+   "el": "το Αιγαίο",
+   "pos": "noun",
+   "en": "the Aegean Sea (here a hotel name)",
+   "tr": "Ege Denizi"
+  },
+  {
+   "el": "η αίθουσα",
+   "pos": "noun",
+   "en": "room, hall",
+   "tr": "salon, büyük oda; sınıf"
+  },
+  {
+   "el": "η αιχμή",
+   "forms": [
+    "αιχμής"
+   ],
+   "pos": "noun",
+   "en": "point, tip; ώρα αιχμής = rush hour",
+   "tr": "uç, sivri uç; ώρα αιχμής = yoğun saat"
+  },
+  {
+   "el": "ακανθώδης",
+   "forms": [
+    "ακανθώδες"
+   ],
+   "pos": "adj",
+   "en": "thorny, prickly",
+   "tr": "dikenli"
+  },
+  {
+   "el": "ακραίος",
+   "forms": [
+    "ακραίο"
+   ],
+   "pos": "adj",
+   "en": "extreme",
+   "tr": "aşırı, uç"
+  },
+  {
+   "el": "το αλεξίπτωτο",
+   "pos": "noun",
+   "en": "parachute",
+   "tr": "paraşüt"
+  },
+  {
+   "el": "αληθώς",
+   "pos": "adv",
+   "en": "truly; Αληθώς Ανέστη = Truly He is risen (Easter reply)",
+   "tr": "gerçekten; Αληθώς Ανέστη = Gerçekten dirildi (Paskalya yanıtı)"
+  },
+  {
+   "el": "άλλος",
+   "forms": [
+    "άλλο",
+    "άλλες",
+    "άλλους"
+   ],
+   "pos": "adj",
+   "en": "other, another, else",
+   "tr": "diğer, başka"
+  },
+  {
+   "el": "άλλος",
+   "forms": [
+    "άλλον"
+   ],
+   "pos": "adj",
+   "en": "other, another (here: another person)",
+   "tr": "diğer, başka (başka biri)"
+  },
+  {
+   "el": "το αλουμίνιο",
+   "forms": [
+    "αλουμινίου"
+   ],
+   "pos": "noun",
+   "en": "aluminium; φύλλο αλουμινίου = aluminium foil",
+   "tr": "alüminyum; φύλλο αλουμινίου = alüminyum folyo"
+  },
+  {
+   "el": "η άμαξα",
+   "pos": "noun",
+   "en": "horse-drawn carriage",
+   "tr": "at arabası, araba"
+  },
+  {
+   "el": "η ανάγκη",
+   "pos": "noun",
+   "en": "need, necessity; έκτακτη ανάγκη = emergency",
+   "tr": "ihtiyaç, gereksinim; έκτακτη ανάγκη = acil durum"
+  },
+  {
+   "el": "η ανάγνωση",
+   "forms": [
+    "ανάγνωσης"
+   ],
+   "pos": "noun",
+   "en": "reading",
+   "tr": "okuma"
+  },
+  {
+   "el": "η αναζήτηση",
+   "forms": [
+    "αναζήτησης"
+   ],
+   "pos": "noun",
+   "en": "search; μηχανή αναζήτησης = search engine",
+   "tr": "arama; μηχανή αναζήτησης = arama motoru"
+  },
+  {
+   "el": "η αναπαραγωγή",
+   "forms": [
+    "αναπαραγωγής"
+   ],
+   "pos": "noun",
+   "en": "playback (of audio); reproduction",
+   "tr": "oynatma (ses/müzik); üreme"
+  },
+  {
+   "el": "η ανάπαυλα",
+   "forms": [
+    "ανάπαυλας"
+   ],
+   "pos": "noun",
+   "en": "break, pause, rest; έτος ανάπαυλας = sabbatical year",
+   "tr": "ara, mola, dinlenme; έτος ανάπαυλας = dinlenme yılı"
+  },
+  {
+   "el": "αναπνευστικός",
+   "forms": [
+    "αναπνευστική"
+   ],
+   "pos": "adj",
+   "en": "respiratory, breathing",
+   "tr": "solunumla ilgili, solunum"
+  },
+  {
+   "el": "η ανασκαφή",
+   "pos": "noun",
+   "en": "excavation, dig; κάνω ανασκαφή = to carry out an excavation",
+   "tr": "kazı; κάνω ανασκαφή = kazı yapmak"
+  },
+  {
+   "el": "ο άνθρακας",
+   "forms": [
+    "άνθρακα"
+   ],
+   "pos": "noun",
+   "en": "carbon; coal",
+   "tr": "karbon; kömür"
+  },
+  {
+   "el": "ανθρακούχος",
+   "forms": [
+    "ανθρακούχο"
+   ],
+   "pos": "adj",
+   "en": "carbonated, fizzy",
+   "tr": "gazlı"
+  },
+  {
+   "el": "ανίσταμαι",
+   "forms": [
+    "Ανέστη"
+   ],
+   "pos": "verb",
+   "en": "to rise, to be resurrected; Χριστός Ανέστη = Christ is risen",
+   "tr": "ayağa kalkmak, dirilmek; Χριστός Ανέστη = Mesih dirildi"
+  },
+  {
+   "el": "ανοιγοκλείνω",
+   "pos": "verb",
+   "en": "to open and close; ανοιγοκλείνω τα μάτια = to blink",
+   "tr": "açıp kapamak; ανοιγοκλείνω τα μάτια = göz kırpmak"
+  },
+  {
+   "el": "αντέχω",
+   "pos": "verb",
+   "en": "to endure, withstand; αντέχω οικονομικά = to be able to afford",
+   "tr": "dayanmak; αντέχω οικονομικά = maddi olarak karşılayabilmek"
+  },
+  {
+   "el": "αντηλιακός",
+   "forms": [
+    "αντηλιακή"
+   ],
+   "pos": "adj",
+   "en": "sun-protection; αντηλιακή κρέμα = sunscreen",
+   "tr": "güneşten koruyan; αντηλιακή κρέμα = güneş kremi"
+  },
+  {
+   "el": "η αντισφαίριση",
+   "pos": "noun",
+   "en": "tennis; επιτραπέζια αντισφαίριση = table tennis",
+   "tr": "tenis; επιτραπέζια αντισφαίριση = masa tenisi"
+  },
+  {
+   "el": "το αντίτυπο",
+   "pos": "noun",
+   "en": "copy (of a print, book)",
+   "tr": "nüsha, kopya"
+  },
+  {
+   "el": "η άντληση",
+   "pos": "noun",
+   "en": "pumping, drawing (water)",
+   "tr": "pompalama, su çekme"
+  },
+  {
+   "el": "το αξιοθέατο",
+   "forms": [
+    "αξιοθέατα",
+    "αξιοθέατων"
+   ],
+   "pos": "noun",
+   "en": "sight, tourist attraction",
+   "tr": "görülmeye değer yer, turistik yer"
+  },
+  {
+   "el": "αξιότιμος",
+   "forms": [
+    "Αξιότιμε",
+    "Αξιότιμη",
+    "Αξιότιμοι"
+   ],
+   "pos": "adj",
+   "en": "esteemed, honourable (used as Dear in formal letters)",
+   "tr": "sayın, muhterem"
+  },
+  {
+   "el": "η απασχόληση",
+   "forms": [
+    "απασχόλησης"
+   ],
+   "pos": "noun",
+   "en": "employment, occupation; μερικής απασχόλησης = part-time",
+   "tr": "istihdam, iş; μερικής απασχόλησης = yarı zamanlı"
+  },
+  {
+   "el": "απασχολώ",
+   "forms": [
+    "απασχολούμενος"
+   ],
+   "pos": "verb",
+   "en": "to employ; to occupy, keep busy; απασχολούμενος = employed",
+   "tr": "çalıştırmak; meşgul etmek; απασχολούμενος = çalışan, istihdam edilen"
+  },
+  {
+   "el": "η αποβίβαση",
+   "forms": [
+    "αποβίβασης"
+   ],
+   "pos": "noun",
+   "en": "disembarkation, getting off (a ship, plane)",
+   "tr": "(gemiden, uçaktan) inme, karaya çıkış"
+  },
+  {
+   "el": "το απόβλητο",
+   "pos": "noun",
+   "en": "waste (product)",
+   "tr": "atık"
+  },
+  {
+   "el": "η απογείωση",
+   "forms": [
+    "απογείωσης"
+   ],
+   "pos": "noun",
+   "en": "takeoff",
+   "tr": "kalkış, havalanma"
+  },
+  {
+   "el": "αποκριάτικος",
+   "forms": [
+    "αποκριάτικο"
+   ],
+   "pos": "adj",
+   "en": "carnival (adj)",
+   "tr": "karnavalla ilgili"
+  },
+  {
+   "el": "το απόσπασμα",
+   "pos": "noun",
+   "en": "excerpt, extract, clip",
+   "tr": "alıntı, bölüm, parça"
+  },
+  {
+   "el": "αριστερός",
+   "forms": [
+    "αριστερά"
+   ],
+   "pos": "adj",
+   "en": "left; αριστερά = on the left, to the left",
+   "tr": "sol; αριστερά = solda, sola"
+  },
+  {
+   "el": "το άρμα",
+   "pos": "noun",
+   "en": "chariot; float (carnival); tank",
+   "tr": "savaş arabası; karnaval arabası; tank"
+  },
+  {
+   "el": "αρτηριακός",
+   "forms": [
+    "αρτηριακή"
+   ],
+   "pos": "adj",
+   "en": "arterial; αρτηριακή πίεση = blood pressure",
+   "tr": "atardamarla ilgili; αρτηριακή πίεση = tansiyon"
+  },
+  {
+   "el": "η αρχειοθέτηση",
+   "forms": [
+    "αρχειοθέτησης"
+   ],
+   "pos": "noun",
+   "en": "filing, archiving",
+   "tr": "dosyalama, arşivleme"
+  },
+  {
+   "el": "ασκώ",
+   "pos": "verb",
+   "en": "to exercise, practise, exert; ασκώ κριτική = to criticise",
+   "tr": "uygulamak, yapmak; ασκώ κριτική = eleştirmek"
+  },
+  {
+   "el": "το αυτί",
+   "pos": "noun",
+   "en": "ear",
+   "tr": "kulak"
+  },
+  {
+   "el": "η βάση",
+   "forms": [
+    "βάσης"
+   ],
+   "pos": "noun",
+   "en": "base, foundation; κατασκήνωση βάσης = base camp",
+   "tr": "taban, temel; üs; κατασκήνωση βάσης = ana kamp"
+  },
+  {
+   "el": "βγαίνω",
+   "forms": [
+    "βγείτε",
+    "βγες",
+    "βγήκα",
+    "βγήκαμε",
+    "βγω"
+   ],
+   "pos": "verb",
+   "en": "to go out, come out",
+   "tr": "çıkmak"
+  },
+  {
+   "el": "το Βέλγιο",
+   "pos": "noun",
+   "en": "Belgium",
+   "tr": "Belçika"
+  },
+  {
+   "el": "βιογραφικός",
+   "forms": [
+    "βιογραφικό"
+   ],
+   "pos": "adj",
+   "en": "biographical; βιογραφικό σημείωμα = CV",
+   "tr": "biyografik; βιογραφικό σημείωμα = özgeçmiş"
+  },
+  {
+   "el": "η βλάβη",
+   "forms": [
+    "βλάβες"
+   ],
+   "pos": "noun",
+   "en": "damage, harm; fault, breakdown",
+   "tr": "hasar, zarar; arıza"
+  },
+  {
+   "el": "βόρειος",
+   "forms": [
+    "Βορείου"
+   ],
+   "pos": "adj",
+   "en": "north, northern; Βόρειος Πόλος = North Pole",
+   "tr": "kuzey; Βόρειος Πόλος = Kuzey Kutbu"
+  },
+  {
+   "el": "ο βούβαλος",
+   "pos": "noun",
+   "en": "buffalo; υδρόβιος βούβαλος = water buffalo",
+   "tr": "manda, bufalo; υδρόβιος βούβαλος = su mandası"
+  },
+  {
+   "el": "βρέχω",
+   "forms": [
+    "έβρεξε",
+    "Έβρεξε"
+   ],
+   "pos": "verb",
+   "en": "to rain; to wet; έβρεξε = it rained",
+   "tr": "yağmur yağmak; ıslatmak; έβρεξε = yağmur yağdı"
+  },
+  {
+   "el": "βρίσκω",
+   "forms": [
+    "βρεις",
+    "βρήκα",
+    "βρήκαμε",
+    "βρω",
+    "βρίσκεις",
+    "βρίσκονται"
+   ],
+   "pos": "verb",
+   "en": "to find",
+   "tr": "bulmak"
+  },
+  {
+   "el": "γεννώ",
+   "forms": [
+    "γεννήθηκε"
+   ],
+   "pos": "verb",
+   "en": "to give birth to; to lay (eggs); γεννήθηκε = was born",
+   "tr": "doğurmak; yumurtlamak; γεννήθηκε = doğdu"
+  },
+  {
+   "el": "η γκάιντα",
+   "forms": [
+    "γκάιντας"
+   ],
+   "pos": "noun",
+   "en": "bagpipe",
+   "tr": "gayda, tulum"
+  },
+  {
+   "el": "ο γκρεμός",
+   "forms": [
+    "γκρεμό"
+   ],
+   "pos": "noun",
+   "en": "cliff, precipice",
+   "tr": "uçurum"
+  },
+  {
+   "el": "η γνωριμία",
+   "forms": [
+    "γνωριμίες"
+   ],
+   "pos": "noun",
+   "en": "acquaintance; κάνω γνωριμίες = to meet new people",
+   "tr": "tanışıklık, tanıdık; κάνω γνωριμίες = yeni insanlarla tanışmak"
+  },
+  {
+   "el": "γονιμοποιώ",
+   "pos": "verb",
+   "en": "to fertilise, pollinate",
+   "tr": "döllemek, tozlaştırmak"
+  },
+  {
+   "el": "γραπτός",
+   "forms": [
+    "γραπτά"
+   ],
+   "pos": "adj",
+   "en": "written; γραπτά μηνύματα = text messages",
+   "tr": "yazılı; γραπτά μηνύματα = yazılı mesajlar"
+  },
+  {
+   "el": "η γροθιά",
+   "pos": "noun",
+   "en": "fist; punch; δίνω γροθιά = to punch",
+   "tr": "yumruk; δίνω γροθιά = yumruk atmak"
+  },
+  {
+   "el": "η γυναίκα",
+   "pos": "noun",
+   "en": "woman; wife",
+   "tr": "kadın; eş, karı"
+  },
+  {
+   "el": "η γυναίκα",
+   "forms": [
+    "γυναίκας",
+    "γυναικών"
+   ],
+   "pos": "noun",
+   "en": "woman; wife",
+   "tr": "kadın; eş, karı"
+  },
+  {
+   "el": "δείχνω",
+   "forms": [
+    "δείχνει"
+   ],
+   "pos": "verb",
+   "en": "to show, indicate, point out",
+   "tr": "göstermek"
+  },
+  {
+   "el": "δεκαεννέα",
+   "forms": [
+    "δεκαεννιά"
+   ],
+   "pos": "num",
+   "en": "nineteen",
+   "tr": "on dokuz"
+  },
+  {
+   "el": "δεκαέξι",
+   "pos": "num",
+   "en": "sixteen",
+   "tr": "on altı"
+  },
+  {
+   "el": "δεκαεπτά",
+   "forms": [
+    "δεκαεφτά"
+   ],
+   "pos": "num",
+   "en": "seventeen",
+   "tr": "on yedi"
+  },
+  {
+   "el": "δεκαοκτώ",
+   "forms": [
+    "δεκαοχτώ"
+   ],
+   "pos": "num",
+   "en": "eighteen",
+   "tr": "on sekiz"
+  },
+  {
+   "el": "δεκατέσσερα",
+   "forms": [
+    "δεκατέσσερις"
+   ],
+   "pos": "num",
+   "en": "fourteen",
+   "tr": "on dört"
+  },
+  {
+   "el": "δέκατος",
+   "pos": "num",
+   "en": "tenth",
+   "tr": "onuncu"
+  },
+  {
+   "el": "δεκατρία",
+   "forms": [
+    "δεκατρείς"
+   ],
+   "pos": "num",
+   "en": "thirteen",
+   "tr": "on üç"
+  },
+  {
+   "el": "δεξιός",
+   "forms": [
+    "δεξιά"
+   ],
+   "pos": "adj",
+   "en": "right; δεξιά = on the right, to the right",
+   "tr": "sağ; δεξιά = sağda, sağa"
+  },
+  {
+   "el": "δευτερεύων",
+   "pos": "adj",
+   "en": "secondary, minor",
+   "tr": "ikincil, yan"
+  },
+  {
+   "el": "δημόσιος",
+   "forms": [
+    "δημόσιες"
+   ],
+   "pos": "adj",
+   "en": "public",
+   "tr": "kamusal, kamu; toplu"
+  },
+  {
+   "el": "δημοτικός",
+   "forms": [
+    "δημοτικό",
+    "Δημοτικό"
+   ],
+   "pos": "adj",
+   "en": "municipal; το Δημοτικό = primary school",
+   "tr": "belediyeye ait; το Δημοτικό = ilkokul"
+  },
+  {
+   "el": "η διάβαση",
+   "pos": "noun",
+   "en": "crossing, passage; υπόγεια διάβαση = underpass",
+   "tr": "geçit; υπόγεια διάβαση = alt geçit"
+  },
+  {
+   "el": "η διάδοση",
+   "pos": "noun",
+   "en": "spread, dissemination",
+   "tr": "yayılma, yayılım"
+  },
+  {
+   "el": "η διασταύρωση",
+   "pos": "noun",
+   "en": "junction, intersection; crossbreeding; κυκλική διασταύρωση = roundabout",
+   "tr": "kavşak; melezleme; κυκλική διασταύρωση = dönel kavşak"
+  },
+  {
+   "el": "διαστημικός",
+   "forms": [
+    "διαστημικό"
+   ],
+   "pos": "adj",
+   "en": "space (adj); διαστημικό λεωφορείο = space shuttle",
+   "tr": "uzayla ilgili; διαστημικό λεωφορείο = uzay mekiği"
+  },
+  {
+   "el": "η διάταξη",
+   "pos": "noun",
+   "en": "arrangement, order; provision; ημερήσια διάταξη = agenda",
+   "tr": "düzen; hüküm, madde; ημερήσια διάταξη = gündem"
+  },
+  {
+   "el": "η διατήρηση",
+   "pos": "noun",
+   "en": "preservation, maintenance",
+   "tr": "koruma, muhafaza"
+  },
+  {
+   "el": "η διάτρηση",
+   "pos": "noun",
+   "en": "perforation, drilling, piercing",
+   "tr": "delme, delik açma"
+  },
+  {
+   "el": "το διοξείδιο",
+   "pos": "noun",
+   "en": "dioxide",
+   "tr": "dioksit"
+  },
+  {
+   "el": "δίτροχος",
+   "forms": [
+    "δίτροχη"
+   ],
+   "pos": "adj",
+   "en": "two-wheeled",
+   "tr": "iki tekerlekli"
+  },
+  {
+   "el": "δορυφορικός",
+   "forms": [
+    "δορυφορικής"
+   ],
+   "pos": "adj",
+   "en": "satellite (adj)",
+   "tr": "uydu ile ilgili, uydu"
+  },
+  {
+   "el": "δραματικός",
+   "forms": [
+    "δραματικά"
+   ],
+   "pos": "adj",
+   "en": "dramatic; δραματικά = dramatically",
+   "tr": "dramatik; δραματικά = çarpıcı biçimde"
+  },
+  {
+   "el": "ο εαυτός",
+   "forms": [
+    "εαυτό"
+   ],
+   "pos": "noun",
+   "en": "self, oneself",
+   "tr": "kendi, benlik"
+  },
+  {
+   "el": "έβδομος",
+   "forms": [
+    "έβδομο"
+   ],
+   "pos": "num",
+   "en": "seventh",
+   "tr": "yedinci"
+  },
+  {
+   "el": "το έγκαυμα",
+   "forms": [
+    "εγκαύματα"
+   ],
+   "pos": "noun",
+   "en": "burn (injury)",
+   "tr": "yanık"
+  },
+  {
+   "el": "η έδρα",
+   "pos": "noun",
+   "en": "seat, headquarters; teacher's desk, chair",
+   "tr": "merkez, genel merkez; kürsü"
+  },
+  {
+   "el": "η είδηση",
+   "forms": [
+    "ειδήσεων"
+   ],
+   "pos": "noun",
+   "en": "news item, piece of news",
+   "tr": "haber"
+  },
+  {
+   "el": "η ειδοποίηση",
+   "forms": [
+    "ειδοποιήσεων",
+    "ειδοποιήσεις"
+   ],
+   "pos": "noun",
+   "en": "notification, notice",
+   "tr": "bildirim, uyarı"
+  },
+  {
+   "el": "το έικρ",
+   "pos": "noun",
+   "en": "acre (unit of area)",
+   "tr": "akre (alan ölçü birimi)"
+  },
+  {
+   "el": "εκείνος",
+   "forms": [
+    "εκείνον"
+   ],
+   "pos": "pron",
+   "en": "that one, that (over there)",
+   "tr": "o, şu (uzaktaki)"
+  },
+  {
+   "el": "έκτακτος",
+   "forms": [
+    "έκτακτη"
+   ],
+   "pos": "adj",
+   "en": "extraordinary, emergency, special",
+   "tr": "olağanüstü, acil"
+  },
+  {
+   "el": "η εκτίμηση",
+   "pos": "noun",
+   "en": "esteem, respect; estimate; Με εκτίμηση = Kind regards",
+   "tr": "saygı; değerlendirme, tahmin; Με εκτίμηση = Saygılarımla"
+  },
+  {
+   "el": "έκτος",
+   "forms": [
+    "έκτο"
+   ],
+   "pos": "num",
+   "en": "sixth",
+   "tr": "altıncı"
+  },
+  {
+   "el": "εν",
+   "pos": "prep",
+   "en": "in, within (formal); εν συνεχεία = subsequently, then",
+   "tr": "içinde (resmî dil); εν συνεχεία = ardından, devamında"
+  },
+  {
+   "el": "ένατος",
+   "pos": "num",
+   "en": "ninth",
+   "tr": "dokuzuncu"
+  },
+  {
+   "el": "η ένδειξη",
+   "pos": "noun",
+   "en": "indication, sign; σε ένδειξη = as a sign of",
+   "tr": "gösterge, belirti; σε ένδειξη = ... işareti olarak"
+  },
+  {
+   "el": "εννιακόσια",
+   "forms": [
+    "εννεακόσια"
+   ],
+   "pos": "num",
+   "en": "nine hundred",
+   "tr": "dokuz yüz"
+  },
+  {
+   "el": "εντάξει",
+   "pos": "adv",
+   "en": "OK, all right",
+   "tr": "tamam, peki"
+  },
+  {
+   "el": "εξερευνητικός",
+   "forms": [
+    "εξερευνητική"
+   ],
+   "pos": "adj",
+   "en": "exploratory; εξερευνητική αποστολή = exploration mission",
+   "tr": "keşif amaçlı; εξερευνητική αποστολή = keşif seferi"
+  },
+  {
+   "el": "εξοπλίζω",
+   "forms": [
+    "εξοπλισμένος"
+   ],
+   "pos": "verb",
+   "en": "to equip; εξοπλισμένος = equipped",
+   "tr": "donatmak; εξοπλισμένος = donanımlı"
+  },
+  {
+   "el": "επαναλαμβανόμενος",
+   "forms": [
+    "επαναλαμβανόμενο",
+    "επαναλαμβανόμενη"
+   ],
+   "pos": "adj",
+   "en": "repeated, recurring",
+   "tr": "tekrarlanan, tekrar eden"
+  },
+  {
+   "el": "επάνω",
+   "pos": "adv",
+   "en": "up, above, upstairs",
+   "tr": "yukarı, üstte, üst kat"
+  },
+  {
+   "el": "η επέμβαση",
+   "pos": "noun",
+   "en": "intervention; operation; χειρουργική επέμβαση = surgical operation",
+   "tr": "müdahale; ameliyat; χειρουργική επέμβαση = cerrahi ameliyat"
+  },
+  {
+   "el": "η επεξεργασία",
+   "pos": "noun",
+   "en": "processing; editing",
+   "tr": "işleme; düzenleme"
+  },
+  {
+   "el": "επί",
+   "pos": "prep",
+   "en": "on, upon; επί πάγου = on ice",
+   "tr": "üzerinde; επί πάγου = buz üzerinde"
+  },
+  {
+   "el": "η επιβίβαση",
+   "forms": [
+    "επιβίβασης"
+   ],
+   "pos": "noun",
+   "en": "boarding (a vehicle)",
+   "tr": "biniş"
+  },
+  {
+   "el": "επιτραπέζιος",
+   "forms": [
+    "επιτραπέζια",
+    "επιτραπέζιο"
+   ],
+   "pos": "adj",
+   "en": "table, tabletop; επιτραπέζια αντισφαίριση = table tennis",
+   "tr": "masa ...; επιτραπέζια αντισφαίριση = masa tenisi"
+  },
+  {
+   "el": "επτακόσιοι",
+   "forms": [
+    "επτακόσια"
+   ],
+   "pos": "num",
+   "en": "seven hundred",
+   "tr": "yedi yüz"
+  },
+  {
+   "el": "η εργασία",
+   "forms": [
+    "εργασίας"
+   ],
+   "pos": "noun",
+   "en": "work; job; assignment",
+   "tr": "iş; çalışma; ödev"
+  },
+  {
+   "el": "εργασιακός",
+   "pos": "adj",
+   "en": "work-related; εργασιακός χώρος = workplace",
+   "tr": "çalışmayla ilgili; εργασιακός χώρος = çalışma alanı, iş yeri"
+  },
+  {
+   "el": "το ερμάριο",
+   "pos": "noun",
+   "en": "cupboard, cabinet; ερμάριο αρχειοθέτησης = filing cabinet",
+   "tr": "dolap; ερμάριο αρχειοθέτησης = dosya dolabı"
+  },
+  {
+   "el": "ερμηνεύω",
+   "pos": "verb",
+   "en": "to interpret; to explain",
+   "tr": "yorumlamak; açıklamak"
+  },
+  {
+   "el": "εσφαλμένος",
+   "forms": [
+    "εσφαλμένα"
+   ],
+   "pos": "adj",
+   "en": "mistaken, wrong (εσφαλμένα = wrongly)",
+   "tr": "yanlış, hatalı (εσφαλμένα = yanlış olarak)"
+  },
+  {
+   "el": "ετεροθαλής",
+   "pos": "adj",
+   "en": "half- (sharing only one parent); ετεροθαλής αδερφός = half-brother",
+   "tr": "anne ya da baba bir; ετεροθαλής αδερφός = anne ya da baba bir erkek kardeş"
+  },
+  {
+   "el": "το έτος",
+   "forms": [
+    "ετών"
+   ],
+   "pos": "noun",
+   "en": "year; ετών = years old",
+   "tr": "yıl; ετών = yaşında"
+  },
+  {
+   "el": "η Ευρώπη",
+   "pos": "noun",
+   "en": "Europe",
+   "tr": "Avrupa"
+  },
+  {
+   "el": "το ζευγάρι",
+   "pos": "noun",
+   "en": "couple; pair",
+   "tr": "çift"
+  },
+  {
+   "el": "ζητάω",
+   "pos": "verb",
+   "en": "to ask for, request",
+   "tr": "istemek; rica etmek"
+  },
+  {
+   "el": "η ζύμωση",
+   "pos": "noun",
+   "en": "fermentation; kneading",
+   "tr": "mayalanma, fermantasyon; yoğurma"
+  },
+  {
+   "el": "η ζωγραφική",
+   "pos": "noun",
+   "en": "painting (the art)",
+   "tr": "resim (sanatı); ressamlık"
+  },
+  {
+   "el": "η ηλικία",
+   "pos": "noun",
+   "en": "age; μέση ηλικία = middle age",
+   "tr": "yaş; μέση ηλικία = orta yaş"
+  },
+  {
+   "el": "η ημέρα",
+   "forms": [
+    "ημέρας"
+   ],
+   "pos": "noun",
+   "en": "day; πιάτο ημέρας = dish of the day",
+   "tr": "gün; πιάτο ημέρας = günün yemeği"
+  },
+  {
+   "el": "ημερήσιος",
+   "forms": [
+    "ημερήσια"
+   ],
+   "pos": "adj",
+   "en": "daily; ημερήσια διάταξη = agenda",
+   "tr": "günlük; ημερήσια διάταξη = gündem"
+  },
+  {
+   "el": "η ημερομηνία",
+   "forms": [
+    "ημερομηνίες"
+   ],
+   "pos": "noun",
+   "en": "date",
+   "tr": "tarih"
+  },
+  {
+   "el": "το θέαμα",
+   "pos": "noun",
+   "en": "sight; spectacle",
+   "tr": "görüntü; gösteri"
+  },
+  {
+   "el": "θεατρικός",
+   "forms": [
+    "θεατρικό",
+    "θεατρικά"
+   ],
+   "pos": "adj",
+   "en": "theatrical, of the theatre; θεατρικό έργο = play",
+   "tr": "tiyatroyla ilgili; θεατρικό έργο = tiyatro oyunu"
+  },
+  {
+   "el": "θεριζοαλωνιστικός",
+   "forms": [
+    "θεριζοαλωνιστική"
+   ],
+   "pos": "adj",
+   "en": "harvesting and threshing; θεριζοαλωνιστική μηχανή = combine harvester",
+   "tr": "biçme ve harman yapan; θεριζοαλωνιστική μηχανή = biçerdöver"
+  },
+  {
+   "el": "θερινός",
+   "forms": [
+    "θερινό"
+   ],
+   "pos": "adj",
+   "en": "summer (adj.); θερινό σινεμά = open-air summer cinema",
+   "tr": "yaz ...; θερινό σινεμά = yazlık (açık hava) sinema"
+  },
+  {
+   "el": "θετός",
+   "pos": "adj",
+   "en": "adopted; θετός αδερφός = adoptive brother",
+   "tr": "evlat edinilmiş; θετός αδερφός = evlatlık kardeş"
+  },
+  {
+   "el": "το θηλαστικό",
+   "forms": [
+    "θηλαστικού"
+   ],
+   "pos": "noun",
+   "en": "mammal",
+   "tr": "memeli"
+  },
+  {
+   "el": "το θηλαστικό",
+   "forms": [
+    "θηλαστικών"
+   ],
+   "pos": "noun",
+   "en": "mammal",
+   "tr": "memeli"
+  },
+  {
+   "el": "θυμάμαι",
+   "forms": [
+    "θυμόμαστε"
+   ],
+   "pos": "verb",
+   "en": "to remember",
+   "tr": "hatırlamak"
+  },
+  {
+   "el": "η ιδιότητα",
+   "pos": "noun",
+   "en": "capacity, status; property, quality; ιδιότητα μέλους = membership",
+   "tr": "sıfat, statü; nitelik, özellik; ιδιότητα μέλους = üyelik"
+  },
+  {
+   "el": "η ίνα",
+   "pos": "noun",
+   "en": "fibre; οπτική ίνα = optical fibre",
+   "tr": "lif; οπτική ίνα = fiber optik"
+  },
+  {
+   "el": "ιπτάμενος",
+   "forms": [
+    "ιπτάμενα"
+   ],
+   "pos": "adj",
+   "en": "flying",
+   "tr": "uçan"
+  },
+  {
+   "el": "ισχύω",
+   "forms": [
+    "ισχύει"
+   ],
+   "pos": "verb",
+   "en": "to be valid, be in force",
+   "tr": "geçerli olmak, yürürlükte olmak"
+  },
+  {
+   "el": "καθαρίζω",
+   "forms": [
+    "καθαριστεί"
+   ],
+   "pos": "verb",
+   "en": "to clean",
+   "tr": "temizlemek"
+  },
+  {
+   "el": "το κάθισμα",
+   "forms": [
+    "καθίσματος"
+   ],
+   "pos": "noun",
+   "en": "seat; ζώνη καθίσματος = seat belt",
+   "tr": "koltuk, oturak; ζώνη καθίσματος = emniyet kemeri"
+  },
+  {
+   "el": "καλλιεργώ",
+   "pos": "verb",
+   "en": "to grow, cultivate",
+   "tr": "yetiştirmek, ekip biçmek"
+  },
+  {
+   "el": "καλώς",
+   "pos": "adv",
+   "en": "well; Καλώς ήρθατε = welcome",
+   "tr": "iyi; Καλώς ήρθατε = hoş geldiniz"
+  },
+  {
+   "el": "το καρότσι",
+   "pos": "noun",
+   "en": "cart, trolley; pram",
+   "tr": "araba (market arabası); bebek arabası"
+  },
+  {
+   "el": "ο καρπός",
+   "pos": "noun",
+   "en": "fruit; wrist; ξηρός καρπός = nut",
+   "tr": "meyve; bilek; ξηρός καρπός = kuru yemiş"
+  },
+  {
+   "el": "το καρφί",
+   "forms": [
+    "καρφιά"
+   ],
+   "pos": "noun",
+   "en": "nail",
+   "tr": "çivi"
+  },
+  {
+   "el": "καταρρακτωδώς",
+   "pos": "adv",
+   "en": "torrentially, in buckets",
+   "tr": "sağanak halinde, bardaktan boşanırcasına"
+  },
+  {
+   "el": "ο κεραυνός",
+   "forms": [
+    "κεραυνούς"
+   ],
+   "pos": "noun",
+   "en": "lightning bolt, thunderbolt",
+   "tr": "yıldırım"
+  },
+  {
+   "el": "κικ μποξ",
+   "forms": [
+    "κικ"
+   ],
+   "pos": "phrase",
+   "en": "kickboxing",
+   "tr": "kick boks"
+  },
+  {
+   "el": "κινητός",
+   "forms": [
+    "κινητό"
+   ],
+   "pos": "adj",
+   "en": "mobile, movable; το κινητό = mobile phone",
+   "tr": "taşınabilir, hareketli; το κινητό = cep telefonu"
+  },
+  {
+   "el": "το κίνητρο",
+   "pos": "noun",
+   "en": "motive; motivation, incentive",
+   "tr": "güdü; motivasyon, teşvik"
+  },
+  {
+   "el": "το κλαμπ",
+   "pos": "noun",
+   "en": "club; νάιτ κλαμπ = night club",
+   "tr": "kulüp; νάιτ κλαμπ = gece kulübü"
+  },
+  {
+   "el": "κοιμάμαι",
+   "forms": [
+    "κοιμόμαστε"
+   ],
+   "pos": "verb",
+   "en": "to sleep",
+   "tr": "uyumak"
+  },
+  {
+   "el": "η κοίτη",
+   "pos": "noun",
+   "en": "river bed",
+   "tr": "nehir yatağı"
+  },
+  {
+   "el": "κολυμπάω",
+   "forms": [
+    "Κολυμπήσαμε",
+    "κολυμπήσαμε"
+   ],
+   "pos": "verb",
+   "en": "to swim",
+   "tr": "yüzmek"
+  },
+  {
+   "el": "κοραλλιογενής",
+   "pos": "adj",
+   "en": "coral-forming; κοραλλιογενής ύφαλος = coral reef",
+   "tr": "mercan oluşturan; κοραλλιογενής ύφαλος = mercan kayalığı"
+  },
+  {
+   "el": "το κόστος",
+   "forms": [
+    "κόστους"
+   ],
+   "pos": "noun",
+   "en": "cost; χαμηλού κόστους = low-cost",
+   "tr": "maliyet; χαμηλού κόστους = düşük maliyetli"
+  },
+  {
+   "el": "κουνάω",
+   "pos": "verb",
+   "en": "to shake, move; to wave",
+   "tr": "sallamak; kıpırdatmak"
+  },
+  {
+   "el": "το κουτί",
+   "forms": [
+    "κουτιά"
+   ],
+   "pos": "noun",
+   "en": "box; κουτί πρώτων βοηθειών = first-aid kit",
+   "tr": "kutu; κουτί πρώτων βοηθειών = ilk yardım çantası"
+  },
+  {
+   "el": "το κτήριο",
+   "forms": [
+    "κτήρια"
+   ],
+   "pos": "noun",
+   "en": "building",
+   "tr": "bina"
+  },
+  {
+   "el": "κυκλικός",
+   "forms": [
+    "κυκλική"
+   ],
+   "pos": "adj",
+   "en": "circular; κυκλική διασταύρωση = roundabout",
+   "tr": "dairesel; κυκλική διασταύρωση = göbekli kavşak"
+  },
+  {
+   "el": "κυκλοφοριακός",
+   "forms": [
+    "κυκλοφοριακή"
+   ],
+   "pos": "adj",
+   "en": "traffic (adj.); κυκλοφοριακή συμφόρηση = traffic jam",
+   "tr": "trafikle ilgili; κυκλοφοριακή συμφόρηση = trafik sıkışıklığı"
+  },
+  {
+   "el": "κυκλοφορώ",
+   "pos": "verb",
+   "en": "to circulate, move around; to drive; to be on the market",
+   "tr": "dolaşmak; trafikte olmak; piyasada olmak"
+  },
+  {
+   "el": "το κύκλωμα",
+   "forms": [
+    "κυκλώματος"
+   ],
+   "pos": "noun",
+   "en": "circuit; πλακέτα κυκλώματος = circuit board",
+   "tr": "devre; πλακέτα κυκλώματος = devre kartı"
+  },
+  {
+   "el": "η Κύπρος",
+   "forms": [
+    "Κύπρο"
+   ],
+   "pos": "noun",
+   "en": "Cyprus",
+   "tr": "Kıbrıs"
+  },
+  {
+   "el": "το λάδι",
+   "forms": [
+    "λαδιού"
+   ],
+   "pos": "noun",
+   "en": "oil",
+   "tr": "yağ"
+  },
+  {
+   "el": "ο λίθος",
+   "pos": "noun",
+   "en": "stone; πολύτιμος λίθος = gemstone",
+   "tr": "taş; πολύτιμος λίθος = değerli taş"
+  },
+  {
+   "el": "λυπάμαι",
+   "pos": "verb",
+   "en": "to be sorry; to feel sad",
+   "tr": "üzülmek; üzgün olmak (Λυπάμαι = Üzgünüm)"
+  },
+  {
+   "el": "το μαγειρευτό",
+   "pos": "noun",
+   "en": "cooked dish, stew; μαγειρευτό κατσαρόλας = pot dish",
+   "tr": "pişmiş yemek, güveç; μαγειρευτό κατσαρόλας = tencere yemeği"
+  },
+  {
+   "el": "το μακό",
+   "pos": "noun",
+   "en": "cotton jersey (knit fabric); μπλουζάκι μακό = cotton T-shirt",
+   "tr": "penye; μπλουζάκι μακό = penye tişört"
+  },
+  {
+   "el": "η μανία",
+   "pos": "noun",
+   "en": "mania; fury; με μανία = furiously",
+   "tr": "çılgınlık, tutku; öfke; με μανία = hırsla, büyük bir öfkeyle"
+  },
+  {
+   "el": "το μάτι",
+   "forms": [
+    "μάτια"
+   ],
+   "pos": "noun",
+   "en": "eye",
+   "tr": "göz"
+  },
+  {
+   "el": "μεταλλικός",
+   "forms": [
+    "μεταλλικά",
+    "μεταλλικό"
+   ],
+   "pos": "adj",
+   "en": "metal, metallic",
+   "tr": "metal; metalik"
+  },
+  {
+   "el": "μητρικός",
+   "forms": [
+    "μητρική"
+   ],
+   "pos": "adj",
+   "en": "maternal; μητρική γλώσσα = mother tongue",
+   "tr": "anneyle ilgili; μητρική γλώσσα = anadil"
+  },
+  {
+   "el": "το μικροκύμα",
+   "forms": [
+    "μικροκυμάτων"
+   ],
+   "pos": "noun",
+   "en": "microwave; φούρνος μικροκυμάτων = microwave oven",
+   "tr": "mikrodalga; φούρνος μικροκυμάτων = mikrodalga fırın"
+  },
+  {
+   "el": "το μοντάζ",
+   "pos": "noun",
+   "en": "editing (film); montage",
+   "tr": "montaj"
+  },
+  {
+   "el": "μπαίνω",
+   "forms": [
+    "μπες",
+    "μπω"
+   ],
+   "pos": "verb",
+   "en": "to enter, go in",
+   "tr": "girmek, içeri girmek"
+  },
+  {
+   "el": "το μπαλάκι",
+   "pos": "noun",
+   "en": "small ball; μπαλάκι του τένις = tennis ball",
+   "tr": "küçük top; μπαλάκι του τένις = tenis topu"
+  },
+  {
+   "el": "η μύτη",
+   "pos": "noun",
+   "en": "nose; tip",
+   "tr": "burun; uç"
+  },
+  {
+   "el": "νάιτ κλαμπ",
+   "forms": [
+    "νάιτ"
+   ],
+   "pos": "phrase",
+   "en": "night club",
+   "tr": "gece kulübü"
+  },
+  {
+   "el": "το νεογνό",
+   "pos": "noun",
+   "en": "newborn (baby or animal)",
+   "tr": "yenidoğan"
+  },
+  {
+   "el": "το ντουλάπι",
+   "pos": "noun",
+   "en": "cupboard; ντουλάπι κουζίνας = kitchen cupboard",
+   "tr": "dolap; ντουλάπι κουζίνας = mutfak dolabı"
+  },
+  {
+   "el": "νυχτερινός",
+   "forms": [
+    "νυχτερινή"
+   ],
+   "pos": "adj",
+   "en": "night, nocturnal; νυχτερινή ζωή = nightlife",
+   "tr": "gece ...; νυχτερινή ζωή = gece hayatı"
+  },
+  {
+   "el": "ξεχνάω",
+   "forms": [
+    "ξεχάσει",
+    "ξεχάσεις",
+    "ξεχάσω"
+   ],
+   "pos": "verb",
+   "en": "to forget",
+   "tr": "unutmak"
+  },
+  {
+   "el": "ξεχνάω",
+   "pos": "verb",
+   "en": "to forget",
+   "tr": "unutmak"
+  },
+  {
+   "el": "ξηρός",
+   "pos": "adj",
+   "en": "dry; ξηρός καρπός = nut",
+   "tr": "kuru; ξηρός καρπός = kuru yemiş"
+  },
+  {
+   "el": "όγδοος",
+   "pos": "num",
+   "en": "eighth",
+   "tr": "sekizinci"
+  },
+  {
+   "el": "οδικός",
+   "forms": [
+    "οδικά",
+    "οδικό"
+   ],
+   "pos": "adj",
+   "en": "road (adj.); οδικά έργα = roadworks",
+   "tr": "yolla ilgili, karayolu ...; οδικά έργα = yol çalışması"
+  },
+  {
+   "el": "οικιακός",
+   "pos": "adj",
+   "en": "domestic, household; οικιακός βοηθός = home help",
+   "tr": "ev ile ilgili, ev ...; οικιακός βοηθός = ev yardımcısı"
+  },
+  {
+   "el": "οικοδομικός",
+   "forms": [
+    "οικοδομικό"
+   ],
+   "pos": "adj",
+   "en": "building, construction; οικοδομικό τετράγωνο = city block",
+   "tr": "inşaatla ilgili; οικοδομικό τετράγωνο = (şehirde) ada"
+  },
+  {
+   "el": "οκτακόσιοι",
+   "forms": [
+    "οκτακόσια"
+   ],
+   "pos": "num",
+   "en": "eight hundred",
+   "tr": "sekiz yüz"
+  },
+  {
+   "el": "ομαδικός",
+   "forms": [
+    "ομαδική"
+   ],
+   "pos": "adj",
+   "en": "group, collective; ομαδική εργασία = teamwork, group work",
+   "tr": "grup ..., toplu; ομαδική εργασία = ekip çalışması, grup ödevi"
+  },
+  {
+   "el": "ομώνυμος",
+   "forms": [
+    "ομώνυμη"
+   ],
+   "pos": "adj",
+   "en": "having the same name; ομώνυμη λέξη = word of the same name",
+   "tr": "aynı adı taşıyan; ομώνυμη λέξη = aynı adlı sözcük"
+  },
+  {
+   "el": "η ορειβασία",
+   "forms": [
+    "ορειβασίας"
+   ],
+   "pos": "noun",
+   "en": "mountaineering",
+   "tr": "dağcılık"
+  },
+  {
+   "el": "η όρεξη",
+   "pos": "noun",
+   "en": "appetite; Καλή όρεξη! = Enjoy your meal!",
+   "tr": "iştah; Καλή όρεξη! = Afiyet olsun!"
+  },
+  {
+   "el": "ο όρος",
+   "pos": "noun",
+   "en": "term; condition; μέσος όρος = average",
+   "tr": "terim; koşul; μέσος όρος = ortalama"
+  },
+  {
+   "el": "ορυκτός",
+   "forms": [
+    "ορυκτό"
+   ],
+   "pos": "adj",
+   "en": "mineral, fossil; ορυκτό καύσιμο = fossil fuel",
+   "tr": "madensel, fosil; ορυκτό καύσιμο = fosil yakıt"
+  },
+  {
+   "el": "το ορυχείο",
+   "forms": [
+    "ορυχείου"
+   ],
+   "pos": "noun",
+   "en": "mine; εργάτης ορυχείου = mine worker",
+   "tr": "maden ocağı; εργάτης ορυχείου = maden işçisi"
+  },
+  {
+   "el": "το οτοστόπ",
+   "forms": [
+    "ωτοστόπ"
+   ],
+   "pos": "noun",
+   "en": "hitchhiking",
+   "tr": "otostop"
+  },
+  {
+   "el": "το όχημα",
+   "pos": "noun",
+   "en": "vehicle; όχημα χιονιού = snowmobile",
+   "tr": "araç; όχημα χιονιού = kar aracı"
+  },
+  {
+   "el": "παθαίνω",
+   "pos": "verb",
+   "en": "to suffer, undergo; παθαίνω βλάβη = to break down",
+   "tr": "uğramak, (kötü bir şey) başına gelmek; παθαίνω βλάβη = arızalanmak"
+  },
+  {
+   "el": "παίρνω",
+   "pos": "verb",
+   "en": "to take (πάρ' = short form of πάρε, take!)",
+   "tr": "almak (πάρ' = πάρε'nin kısaltması, al!)"
+  },
+  {
+   "el": "η Παναγία",
+   "forms": [
+    "Παναγίας"
+   ],
+   "pos": "noun",
+   "en": "the Virgin Mary",
+   "tr": "Meryem Ana, Hz. Meryem"
+  },
+  {
+   "el": "παραθέτω",
+   "pos": "verb",
+   "en": "to quote, cite; to set out",
+   "tr": "alıntı yapmak; sunmak, sıralamak"
+  },
+  {
+   "el": "παραπάνω",
+   "pos": "adv",
+   "en": "above; more; παραπάνω από = more than",
+   "tr": "yukarıda; daha fazla; παραπάνω από = -den fazla"
+  },
+  {
+   "el": "το πάρκινγκ",
+   "pos": "noun",
+   "en": "car park, parking",
+   "tr": "otopark"
+  },
+  {
+   "el": "παρόλο",
+   "pos": "conj",
+   "en": "although (παρόλο που = although)",
+   "tr": "-e rağmen (παρόλο που = -mesine rağmen)"
+  },
+  {
+   "el": "περαστικά",
+   "pos": "intj",
+   "en": "get well soon!",
+   "tr": "geçmiş olsun!"
+  },
+  {
+   "el": "περιβαλλοντικός",
+   "forms": [
+    "περιβαλλοντική"
+   ],
+   "pos": "adj",
+   "en": "environmental; περιβαλλοντική οργάνωση = environmental organisation",
+   "tr": "çevresel; περιβαλλοντική οργάνωση = çevre örgütü"
+  },
+  {
+   "el": "ο περιβαλλοντολόγος",
+   "forms": [
+    "περιβαλλοντολόγο"
+   ],
+   "pos": "noun",
+   "en": "environmentalist, environmental scientist",
+   "tr": "çevre bilimci, çevre uzmanı"
+  },
+  {
+   "el": "το περίβλημα",
+   "pos": "noun",
+   "en": "casing, covering, husk",
+   "tr": "kılıf, dış kaplama, kabuk"
+  },
+  {
+   "el": "η περιήγηση",
+   "pos": "noun",
+   "en": "tour, sightseeing",
+   "tr": "gezi, tur"
+  },
+  {
+   "el": "περιουσιακός",
+   "forms": [
+    "περιουσιακό"
+   ],
+   "pos": "adj",
+   "en": "property-related; περιουσιακό στοιχείο = asset",
+   "tr": "mülkle ilgili; περιουσιακό στοιχείο = varlık"
+  },
+  {
+   "el": "περιστρεφόμενος",
+   "forms": [
+    "περιστρεφόμενη"
+   ],
+   "pos": "adj",
+   "en": "revolving, rotating",
+   "tr": "dönen, döner; περιστρεφόμενη καρέκλα = döner sandalye"
+  },
+  {
+   "el": "η πέτρα",
+   "pos": "noun",
+   "en": "stone, rock",
+   "tr": "taş, kaya"
+  },
+  {
+   "el": "πηγαίνω",
+   "forms": [
+    "πήγαινα",
+    "πήγαινε",
+    "πηγαίνει",
+    "πηγαίνετε",
+    "Πήγαινε",
+    "πηγαίνουν"
+   ],
+   "pos": "verb",
+   "en": "to go",
+   "tr": "gitmek"
+  },
+  {
+   "el": "η πλάκα",
+   "pos": "noun",
+   "en": "slab, plate; τεκτονική πλάκα = tectonic plate",
+   "tr": "levha, plaka; τεκτονική πλάκα = tektonik levha"
+  },
+  {
+   "el": "η πλακέτα",
+   "pos": "noun",
+   "en": "circuit board, plate; πλακέτα κυκλώματος = circuit board",
+   "tr": "devre kartı, plaka"
+  },
+  {
+   "el": "πλήρως",
+   "pos": "adv",
+   "en": "fully, completely",
+   "tr": "tamamen, tam olarak"
+  },
+  {
+   "el": "πολεμικός",
+   "forms": [
+    "πολεμική"
+   ],
+   "pos": "adj",
+   "en": "war, martial; πολεμική τέχνη = martial art",
+   "tr": "savaşla ilgili; πολεμική τέχνη = dövüş sanatı"
+  },
+  {
+   "el": "ο πομπός",
+   "pos": "noun",
+   "en": "transmitter",
+   "tr": "verici"
+  },
+  {
+   "el": "το ποσοστό",
+   "pos": "noun",
+   "en": "percentage, rate",
+   "tr": "yüzde, oran"
+  },
+  {
+   "el": "το ποστάλ",
+   "pos": "noun",
+   "en": "postcard (in καρτ-ποστάλ)",
+   "tr": "kartpostal (καρτ-ποστάλ içinde)"
+  },
+  {
+   "el": "πραγματοποιώ",
+   "pos": "verb",
+   "en": "to carry out, to make happen; πραγματοποιώ κράτηση = to make a booking",
+   "tr": "gerçekleştirmek; πραγματοποιώ κράτηση = rezervasyon yapmak"
+  },
+  {
+   "el": "ο πράκτορας",
+   "pos": "noun",
+   "en": "agent; ταξιδιωτικός πράκτορας = travel agent",
+   "tr": "acente görevlisi, ajan; ταξιδιωτικός πράκτορας = seyahat acentesi çalışanı"
+  },
+  {
+   "el": "η προσγείωση",
+   "forms": [
+    "προσγείωσης"
+   ],
+   "pos": "noun",
+   "en": "landing (of a plane)",
+   "tr": "iniş (uçak)"
+  },
+  {
+   "el": "το προσδόκιμο",
+   "pos": "noun",
+   "en": "expectancy; προσδόκιμο ζωής = life expectancy",
+   "tr": "beklenti; προσδόκιμο ζωής = yaşam beklentisi"
+  },
+  {
+   "el": "προσιτός",
+   "pos": "adj",
+   "en": "affordable, accessible; προσιτός οικονομικά = affordable",
+   "tr": "ulaşılabilir, uygun fiyatlı; προσιτός οικονομικά = ekonomik olarak karşılanabilir"
+  },
+  {
+   "el": "προστατευτικός",
+   "forms": [
+    "προστατευτικά"
+   ],
+   "pos": "adj",
+   "en": "protective; προστατευτικά γυαλιά = protective glasses",
+   "tr": "koruyucu; προστατευτικά γυαλιά = koruyucu gözlük"
+  },
+  {
+   "el": "ο πρόσφυγας",
+   "forms": [
+    "προσφύγων"
+   ],
+   "pos": "noun",
+   "en": "refugee",
+   "tr": "mülteci"
+  },
+  {
+   "el": "πρωτεύων",
+   "forms": [
+    "πρωτευόντων"
+   ],
+   "pos": "adj",
+   "en": "primary; πρωτεύοντα θηλαστικά = primates",
+   "tr": "birincil; πρωτεύοντα θηλαστικά = primatlar"
+  },
+  {
+   "el": "η πτώση",
+   "pos": "noun",
+   "en": "fall, drop; case (grammar)",
+   "tr": "düşme, düşüş; (dilbilgisi) hâl"
+  },
+  {
+   "el": "ραγδαίος",
+   "forms": [
+    "ραγδαία"
+   ],
+   "pos": "adj",
+   "en": "rapid, sharp (ραγδαία = rapidly)",
+   "tr": "hızlı, ani; ραγδαία αύξηση = hızlı artış"
+  },
+  {
+   "el": "ρυθμίζω",
+   "pos": "verb",
+   "en": "to adjust, to regulate, to tune",
+   "tr": "ayarlamak, düzenlemek"
+  },
+  {
+   "el": "η σελίδα",
+   "pos": "noun",
+   "en": "page",
+   "tr": "sayfa"
+  },
+  {
+   "el": "το σερφ",
+   "pos": "noun",
+   "en": "surfing; κάνω σερφ = to surf",
+   "tr": "sörf; κάνω σερφ = sörf yapmak"
+  },
+  {
+   "el": "το σημείωμα",
+   "pos": "noun",
+   "en": "note; βιογραφικό σημείωμα = CV, résumé",
+   "tr": "not, pusula; βιογραφικό σημείωμα = özgeçmiş"
+  },
+  {
+   "el": "ο σιδηρόδρομος",
+   "pos": "noun",
+   "en": "railway; υπόγειος σιδηρόδρομος = underground railway",
+   "tr": "demiryolu; υπόγειος σιδηρόδρομος = metro"
+  },
+  {
+   "el": "το σκίτσο",
+   "pos": "noun",
+   "en": "sketch, drawing",
+   "tr": "taslak çizim, karakalem, karikatür"
+  },
+  {
+   "el": "η σκούπα",
+   "pos": "noun",
+   "en": "broom; ηλεκτρική σκούπα = vacuum cleaner",
+   "tr": "süpürge; ηλεκτρική σκούπα = elektrikli süpürge"
+  },
+  {
+   "el": "το σνακ",
+   "pos": "noun",
+   "en": "snack; σνακ μπαρ = snack bar",
+   "tr": "atıştırmalık; σνακ μπαρ = snack bar"
+  },
+  {
+   "el": "σπονδυλικός",
+   "forms": [
+    "σπονδυλική"
+   ],
+   "pos": "adj",
+   "en": "spinal, vertebral; σπονδυλική στήλη = spine",
+   "tr": "omurga ile ilgili; σπονδυλική στήλη = omurga"
+  },
+  {
+   "el": "ο στεγνωτήρας",
+   "pos": "noun",
+   "en": "dryer; στεγνωτήρας μαλλιών = hair dryer",
+   "tr": "kurutucu; στεγνωτήρας μαλλιών = saç kurutma makinesi"
+  },
+  {
+   "el": "το στηθαίο",
+   "pos": "noun",
+   "en": "parapet, guardrail; στηθαίο ασφαλείας = safety barrier",
+   "tr": "korkuluk, bariyer"
+  },
+  {
+   "el": "η στιγμή",
+   "pos": "noun",
+   "en": "moment; αυτή τη στιγμή = right now",
+   "tr": "an, lahza; αυτή τη στιγμή = şu anda"
+  },
+  {
+   "el": "το στρατόπεδο",
+   "pos": "noun",
+   "en": "camp; στρατόπεδο προσφύγων = refugee camp",
+   "tr": "kamp; στρατόπεδο προσφύγων = mülteci kampı"
+  },
+  {
+   "el": "το στρέμμα",
+   "forms": [
+    "στρέμματα"
+   ],
+   "pos": "noun",
+   "en": "stremma (land unit, 1,000 m²)",
+   "tr": "dönüm (arazi ölçüsü, 1000 m²)"
+  },
+  {
+   "el": "το στρώμα",
+   "pos": "noun",
+   "en": "layer; mattress",
+   "tr": "tabaka, katman; yatak (şilte)"
+  },
+  {
+   "el": "η συγκοινωνία",
+   "forms": [
+    "συγκοινωνίες"
+   ],
+   "pos": "noun",
+   "en": "transport; δημόσιες συγκοινωνίες = public transport",
+   "tr": "ulaşım; δημόσιες συγκοινωνίες = toplu taşıma"
+  },
+  {
+   "el": "η συμφόρηση",
+   "pos": "noun",
+   "en": "congestion; κυκλοφοριακή συμφόρηση = traffic jam",
+   "tr": "tıkanıklık; κυκλοφοριακή συμφόρηση = trafik sıkışıklığı"
+  },
+  {
+   "el": "η συνέχεια",
+   "forms": [
+    "συνεχεία"
+   ],
+   "pos": "noun",
+   "en": "continuation; εν συνεχεία = then, subsequently",
+   "tr": "devam; εν συνεχεία = ardından, sonrasında"
+  },
+  {
+   "el": "η σχάρα",
+   "pos": "noun",
+   "en": "grill, rack; στη σχάρα = grilled",
+   "tr": "ızgara; στη σχάρα = ızgarada"
+  },
+  {
+   "el": "σχεδόν",
+   "pos": "adv",
+   "en": "almost, nearly; σχεδόν ποτέ = almost never",
+   "tr": "neredeyse; σχεδόν ποτέ = neredeyse hiç"
+  },
+  {
+   "el": "σχολικός",
+   "forms": [
+    "σχολική"
+   ],
+   "pos": "adj",
+   "en": "school (adj.), of school; σχολική αίθουσα = classroom",
+   "tr": "okulla ilgili; σχολική αίθουσα = derslik"
+  },
+  {
+   "el": "το ταμπούρο",
+   "pos": "noun",
+   "en": "drum",
+   "tr": "davul"
+  },
+  {
+   "el": "ταξιδιωτικός",
+   "pos": "adj",
+   "en": "travel (adj.); ταξιδιωτικός οδηγός = travel guide",
+   "tr": "seyahatle ilgili; ταξιδιωτικός οδηγός = seyahat rehberi"
+  },
+  {
+   "el": "ταχυδρομικός",
+   "pos": "adj",
+   "en": "postal; ταχυδρομικός κώδικας = postcode",
+   "tr": "posta ile ilgili; ταχυδρομικός κώδικας = posta kodu"
+  },
+  {
+   "el": "η ταχύτητα",
+   "forms": [
+    "ταχύτητας"
+   ],
+   "pos": "noun",
+   "en": "speed; όριο ταχύτητας = speed limit",
+   "tr": "hız; όριο ταχύτητας = hız sınırı"
+  },
+  {
+   "el": "η τεκτονική",
+   "pos": "noun",
+   "en": "tectonics (τεκτονική πλάκα = tectonic plate)",
+   "tr": "tektonik"
+  },
+  {
+   "el": "τεντωμένος",
+   "forms": [
+    "τεντωμένο"
+   ],
+   "pos": "adj",
+   "en": "stretched, taut",
+   "tr": "gerilmiş, gergin"
+  },
+  {
+   "el": "τερματικός",
+   "pos": "adj",
+   "en": "terminal, final; τερματικός σταθμός = terminus",
+   "tr": "son, uç; τερματικός σταθμός = son durak, terminal"
+  },
+  {
+   "el": "το τετράγωνο",
+   "pos": "noun",
+   "en": "square; city block (οικοδομικό τετράγωνο)",
+   "tr": "kare; sokak bloğu (οικοδομικό τετράγωνο)"
+  },
+  {
+   "el": "η τέχνη",
+   "forms": [
+    "τέχνης"
+   ],
+   "pos": "noun",
+   "en": "art; πολεμική τέχνη = martial art",
+   "tr": "sanat; πολεμική τέχνη = dövüş sanatı"
+  },
+  {
+   "el": "τεχνητός",
+   "forms": [
+    "τεχνητή"
+   ],
+   "pos": "adj",
+   "en": "artificial, man-made; τεχνητή λίμνη = artificial lake",
+   "tr": "yapay; τεχνητή λίμνη = yapay göl"
+  },
+  {
+   "el": "ο τίτλος",
+   "pos": "noun",
+   "en": "title; headline",
+   "tr": "başlık, unvan"
+  },
+  {
+   "el": "τουριστικός",
+   "forms": [
+    "τουριστικό",
+    "τουριστικά"
+   ],
+   "pos": "adj",
+   "en": "tourist (adj.); τουριστικό αξιοθέατο = tourist attraction",
+   "tr": "turistik; τουριστικό αξιοθέατο = turistik yer"
+  },
+  {
+   "el": "ο τρόμος",
+   "forms": [
+    "τρόμου"
+   ],
+   "pos": "noun",
+   "en": "terror, horror; ταινία τρόμου = horror film",
+   "tr": "korku, dehşet; ταινία τρόμου = korku filmi"
+  },
+  {
+   "el": "το τσόφλι",
+   "pos": "noun",
+   "en": "shell (egg)",
+   "tr": "kabuk (yumurta)"
+  },
+  {
+   "el": "το τύλιγμα",
+   "pos": "noun",
+   "en": "wrapping; τύλιγμα για δώρο = gift wrapping",
+   "tr": "sarma, sarım; τύλιγμα για δώρο = hediye paketleme"
+  },
+  {
+   "el": "υδρόβιος",
+   "pos": "adj",
+   "en": "aquatic, water (animal)",
+   "tr": "suda yaşayan"
+  },
+  {
+   "el": "ο ύμνος",
+   "pos": "noun",
+   "en": "hymn, anthem; εθνικός ύμνος = national anthem",
+   "tr": "ilahi, marş; εθνικός ύμνος = ulusal marş"
+  },
+  {
+   "el": "υπέρ",
+   "pos": "prep",
+   "en": "for, in favour of",
+   "tr": "lehinde, yanında"
+  },
+  {
+   "el": "ο υπνάκος",
+   "forms": [
+    "υπνάκο"
+   ],
+   "pos": "noun",
+   "en": "nap; παίρνω έναν υπνάκο = to take a nap",
+   "tr": "şekerleme; παίρνω έναν υπνάκο = şekerleme yapmak"
+  },
+  {
+   "el": "ο ύπνος",
+   "forms": [
+    "ύπνου"
+   ],
+   "pos": "noun",
+   "en": "sleep; ώρα ύπνου = bedtime",
+   "tr": "uyku; ώρα ύπνου = yatma vakti"
+  },
+  {
+   "el": "υποβάλλω",
+   "forms": [
+    "υποβλήθηκαν"
+   ],
+   "pos": "verb",
+   "en": "to submit (υποβλήθηκαν = were submitted)",
+   "tr": "sunmak, teslim etmek (υποβλήθηκαν = sunuldu)"
+  },
+  {
+   "el": "υποβάλλω",
+   "forms": [
+    "υποβληθούν"
+   ],
+   "pos": "verb",
+   "en": "to submit (θα υποβληθούν = will be submitted)",
+   "tr": "sunmak, teslim etmek (θα υποβληθούν = sunulacak)"
+  },
+  {
+   "el": "η υποδοχή",
+   "forms": [
+    "υποδοχής"
+   ],
+   "pos": "noun",
+   "en": "reception, welcome; υπεύθυνος υποδοχής = receptionist",
+   "tr": "resepsiyon, karşılama; υπεύθυνος υποδοχής = resepsiyon görevlisi"
+  },
+  {
+   "el": "υποψήφιος",
+   "forms": [
+    "υποψήφιο"
+   ],
+   "pos": "adj",
+   "en": "candidate; prospective",
+   "tr": "aday"
+  },
+  {
+   "el": "ο ύφαλος",
+   "pos": "noun",
+   "en": "reef; κοραλλιογενής ύφαλος = coral reef",
+   "tr": "resif; κοραλλιογενής ύφαλος = mercan resifi"
+  },
+  {
+   "el": "υφίσταμαι",
+   "pos": "verb",
+   "en": "to undergo, to suffer",
+   "tr": "maruz kalmak, geçirmek"
+  },
+  {
+   "el": "η φαγούρα",
+   "pos": "noun",
+   "en": "itch",
+   "tr": "kaşıntı"
+  },
+  {
+   "el": "φιλανθρωπικός",
+   "forms": [
+    "φιλανθρωπικό"
+   ],
+   "pos": "adj",
+   "en": "charitable; φιλανθρωπικό ίδρυμα = charity",
+   "tr": "hayırseverlikle ilgili; φιλανθρωπικό ίδρυμα = hayır kurumu"
+  },
+  {
+   "el": "το φιλί",
+   "forms": [
+    "Φιλιά"
+   ],
+   "pos": "noun",
+   "en": "kiss; Φιλιά = (sign-off) kisses, love",
+   "tr": "öpücük; Φιλιά = (mektup sonu) öptüm, sevgiler"
+  },
+  {
+   "el": "φορητός",
+   "pos": "adj",
+   "en": "portable; φορητός υπολογιστής = laptop",
+   "tr": "taşınabilir; φορητός υπολογιστής = dizüstü bilgisayar"
+  },
+  {
+   "el": "η φούσκα",
+   "pos": "noun",
+   "en": "bubble; ψάρι φούσκα = pufferfish",
+   "tr": "kabarcık, balon; ψάρι φούσκα = balon balığı"
+  },
+  {
+   "el": "φυτρώνω",
+   "pos": "verb",
+   "en": "to sprout, to grow (of plants)",
+   "tr": "filizlenmek, bitmek"
+  },
+  {
+   "el": "η φωνή",
+   "pos": "noun",
+   "en": "voice; grammatical voice (παθητική φωνή = passive voice)",
+   "tr": "ses; (dilbilgisi) çatı (παθητική φωνή = edilgen çatı)"
+  },
+  {
+   "el": "φωτογραφικός",
+   "forms": [
+    "φωτογραφική"
+   ],
+   "pos": "adj",
+   "en": "photographic; φωτογραφική μηχανή = camera",
+   "tr": "fotoğrafla ilgili; φωτογραφική μηχανή = fotoğraf makinesi"
+  },
+  {
+   "el": "το φωτοτυπικό",
+   "pos": "noun",
+   "en": "photocopier; φωτοτυπικό μηχάνημα = photocopier",
+   "tr": "fotokopi makinesi"
+  },
+  {
+   "el": "ο χαιρετισμός",
+   "forms": [
+    "χαιρετισμού",
+    "χαιρετισμό"
+   ],
+   "pos": "noun",
+   "en": "greeting",
+   "tr": "selam, selamlama"
+  },
+  {
+   "el": "χαμηλός",
+   "forms": [
+    "χαμηλού"
+   ],
+   "pos": "adj",
+   "en": "low; χαμηλού κόστους = low-cost",
+   "tr": "alçak, düşük; χαμηλού κόστους = düşük maliyetli"
+  },
+  {
+   "el": "η χαράδρα",
+   "pos": "noun",
+   "en": "gorge, ravine",
+   "tr": "vadi, dar boğaz"
+  },
+  {
+   "el": "το χαρακτικό",
+   "forms": [
+    "χαρακτικού"
+   ],
+   "pos": "noun",
+   "en": "engraving, print (artwork)",
+   "tr": "gravür, baskı resim"
+  },
+  {
+   "el": "χειρουργικός",
+   "forms": [
+    "χειρουργική"
+   ],
+   "pos": "adj",
+   "en": "surgical; χειρουργική επέμβαση = surgery, operation",
+   "tr": "cerrahi; χειρουργική επέμβαση = ameliyat"
+  },
+  {
+   "el": "το χόκεϊ",
+   "pos": "noun",
+   "en": "hockey; χόκεϊ επί πάγου = ice hockey",
+   "tr": "hokey; χόκεϊ επί πάγου = buz hokeyi"
+  },
+  {
+   "el": "τα χρήματα",
+   "pos": "noun",
+   "en": "money",
+   "tr": "para"
+  },
+  {
+   "el": "ο Χριστός",
+   "pos": "noun",
+   "en": "Christ; Χριστός Ανέστη = Christ is risen (Easter greeting)",
+   "tr": "İsa Mesih; Χριστός Ανέστη = Mesih dirildi (Paskalya selamı)"
+  },
+  {
+   "el": "χτυπώ",
+   "pos": "verb",
+   "en": "to hit, to knock; to honk (the horn)",
+   "tr": "vurmak, çarpmak; çalmak (korna)"
+  },
+  {
+   "el": "το ψήσιμο",
+   "pos": "noun",
+   "en": "roasting, grilling, baking",
+   "tr": "pişirme, kızartma"
+  },
+  {
+   "el": "ο ψύκτης",
+   "pos": "noun",
+   "en": "cooler; ψύκτης νερού = water cooler",
+   "tr": "soğutucu; ψύκτης νερού = su sebili"
+  },
+  {
+   "el": "ψυχικός",
+   "forms": [
+    "ψυχική"
+   ],
+   "pos": "adj",
+   "en": "mental, psychological; ψυχική υγεία = mental health",
+   "tr": "ruhsal; ψυχική υγεία = ruh sağlığı"
+  },
+  {
+   "el": "άγριος",
+   "pos": "adj",
+   "en": "wild",
+   "tr": "vahşi; yabani",
+   "forms": [
+    "άγρια",
+    "άγριο",
+    "άγρια ζώα"
+   ]
+  },
+  {
+   "el": "ευγενικά",
+   "pos": "adv",
+   "en": "politely; kindly",
+   "tr": "kibarca"
+  },
+  {
+   "el": "ο Καναδάς",
+   "pos": "noun",
+   "en": "Canada",
+   "tr": "Kanada",
+   "forms": [
+    "Καναδά"
+   ]
+  },
+  {
+   "el": "η κουκούλα",
+   "pos": "noun",
+   "en": "hood",
+   "tr": "kapüşon"
+  },
+  {
+   "el": "το μπαρ",
+   "pos": "noun",
+   "en": "bar",
+   "tr": "bar"
+  },
+  {
+   "el": "παιδικός",
+   "pos": "adj",
+   "en": "children's; for children",
+   "tr": "çocuk; çocuklara ait",
+   "forms": [
+    "παιδική",
+    "παιδικό"
+   ]
+  },
+  {
+   "el": "πολικός",
+   "pos": "adj",
+   "en": "polar",
+   "tr": "kutup",
+   "forms": [
+    "πολική",
+    "πολικό"
+   ]
+  },
+  {
+   "el": "το συμβούλιο",
+   "pos": "noun",
+   "en": "council; board",
+   "tr": "kurul; meclis"
+  },
+  {
+   "el": "υπόγειος",
+   "pos": "adj",
+   "en": "underground",
+   "tr": "yeraltı",
+   "forms": [
+    "υπόγεια",
+    "υπόγειο"
+   ]
+  },
+  {
+   "el": "το φούτερ",
+   "pos": "noun",
+   "en": "sweatshirt",
+   "tr": "sweatshirt; kapüşonlu"
+  },
+  {
+   "el": "καλύπτω",
+   "pos": "verb",
+   "en": "cover",
+   "tr": "örtmek; kapsamak",
+   "forms": [
+    "καλυμμένος"
+   ]
+  },
+  {
+   "el": "κινώ",
+   "pos": "verb",
+   "en": "move",
+   "tr": "hareket ettirmek",
+   "forms": [
+    "κινούμαι",
+    "κινούμενα"
+   ]
+  },
+  {
+   "el": "κριτικός",
+   "pos": "adj",
+   "en": "critical",
+   "tr": "eleştirel",
+   "forms": [
+    "κριτική"
+   ]
+  },
+  {
+   "el": "οπτικός",
+   "pos": "adj",
+   "en": "visual; optical",
+   "tr": "görsel; optik",
+   "forms": [
+    "οπτική"
+   ]
+  },
+  {
+   "el": "το υπόδημα",
+   "pos": "noun",
+   "en": "shoe (formal); footwear",
+   "tr": "ayakkabı (resmî); ayakkabılar",
+   "forms": [
+    "υποδημάτων"
+   ]
+  },
+  {
+   "el": "χημικός",
+   "pos": "adj",
+   "en": "chemical",
+   "tr": "kimyasal",
+   "forms": [
+    "χημική"
+   ]
+  },
+  {
+   "el": "εκατοστίζω",
+   "pos": "verb",
+   "en": "live to a hundred (in «Να τα εκατοστίσεις!», a birthday wish)",
+   "tr": "yüz yaşına gelmek («Να τα εκατοστίσεις!»: doğum günü dileği)",
+   "forms": [
+    "εκατοστίσεις"
+   ]
+  },
+  {
+   "el": "ια",
+   "pos": "phrase",
+   "en": "the ending -ια / -ιά (as in γειτονιά, μακριά)",
+   "tr": "-ια / -ιά eki (γειτονιά, μακριά gibi)",
+   "forms": [
+    "ιά"
+   ]
+  },
+  {
+   "el": "εψ",
+   "pos": "phrase",
+   "en": "how ευ is said before θ, κ, ξ, π, σ, τ, φ, χ (eps)",
+   "tr": "θ, κ, ξ, π, σ, τ, φ, χ önünde ευ'nun okunuşu (eps)"
+  },
+  {
+   "el": "χν",
+   "pos": "phrase",
+   "en": "the letter pair χν, as in συχνά",
+   "tr": "χν harf çifti (συχνά'daki gibi)"
+  },
+  {
+   "el": "ύς",
+   "pos": "phrase",
+   "en": "the adjective ending -ύς (as in βαθύς, φαρδύς)",
+   "tr": "-ύς sıfat eki (βαθύς, φαρδύς gibi)"
+  }
+ ],
+ "leave": {
+  "ας": "These are word endings (noun suffixes), not words",
+  "επαναλαμβανόμεν": "Cut-off fragment (the ending -ος is split off); the word is επαναλαμβανόμενος",
+  "επεκτείνομα": "Cut-off fragment (final ι split off); the word is επεκτείνομαι",
+  "ές": "These are word endings (noun suffixes), not words",
+  "ες": "These are word endings (noun suffixes), not words",
+  "ης": "Word ending (-ης) from a grammar rule list, not a word.",
+  "ΜΡ": "Latin letters from MP3 misread as Greek, not a Greek word.",
+  "ος": "These are word endings (noun suffixes), not words"
+ },
+ "forms": {
+  "αγαπάμε": "αγαπάω",
+  "αγαπάνε": "αγαπάω",
+  "αγαπάς": "αγαπάω",
+  "αγαπάτε": "αγαπάω",
+  "αγαπήσω": "αγαπάω",
+  "αγγλίδα": [
+   "Άγγλος",
+   "άγγλος"
+  ],
+  "αγόρασε": "αγοράζω",
+  "αγοράσω": "αγοράζω",
+  "αθλητικά": "αθλητικός",
+  "αθλητικό": "αθλητικός",
+  "ακούν": "ακούω",
+  "ακούς": "ακούω",
+  "ακούσουμε": "ακούω",
+  "ακούσω": "ακούω",
+  "ακυρωθεί": "ακυρώνω",
+  "ακυρώθηκε": "ακυρώνω",
+  "ακύρωσε": "ακυρώνω",
+  "αλλάξετε": "αλλάζω",
+  "αλλάξω": "αλλάζω",
+  "αμερικανίδα": "Αμερικανός",
+  "ανακοινωθεί": "ανακοινώνω",
+  "ανακοινώθηκαν": "ανακοινώνω",
+  "ανακοινώθηκε": "ανακοινώνω",
+  "ανακοινωθούν": "ανακοινώνω",
+  "ανοίξτε": "ανοίγω",
+  "απαντήσουμε": "απαντάω",
+  "αργήσεις": "αργώ",
+  "αργήσετε": "αργώ",
+  "αργήσουμε": "αργώ",
+  "αργήσω": "αργώ",
+  "αρέσει": "αρέσω",
+  "αρέσουν": "αρέσω",
+  "αρκετές": "αρκετός",
+  "αρκετή": "αρκετός",
+  "αρκετό": "αρκετός",
+  "άρρωστη": "άρρωστος",
+  "άσπρα": "άσπρος",
+  "άσπρες": "άσπρος",
+  "άσπρη": "άσπρος",
+  "άσπρο": "άσπρος",
+  "αυτήν": [
+   "τα",
+   "αυτός"
+  ],
+  "αυτόν": [
+   "τα",
+   "αυτός"
+  ],
+  "αυτούς": [
+   "τα",
+   "του",
+   "αυτός"
+  ],
+  "βάψουμε": "βάφω",
+  "γειτόνισσα": "γείτονας",
+  "γειτόνισσά": "γείτονας",
+  "γειτόνισσάς": "γείτονας",
+  "γερμανίδα": "Γερμανός",
+  "γιατρέ": "γιατρός",
+  "γιατρό": "γιατρός",
+  "γράψατε": "γράφω",
+  "γράψει": "γράφω",
+  "γράψουμε": "γράφω",
+  "γράψουν": "γράφω",
+  "γράψω": "γράφω",
+  "γυναίκα": "γυναικάς",
+  "γύρισα": "γυρίζω",
+  "γύρισες": "γυρίζω",
+  "δεις": "βλέπω",
+  "δείτε": "βλέπω",
+  "δες": "βλέπω",
+  "δήμαρχε": "δήμαρχος",
+  "δημιουργηθεί": "δημιουργώ",
+  "διάβασα": "διαβάζω",
+  "διαβάσει": "διαβάζω",
+  "δούλεψα": "δουλεύω",
+  "δουλέψαμε": "δουλεύω",
+  "δουλέψετε": "δουλεύω",
+  "δουλέψω": "δουλεύω",
+  "δούμε": "βλέπω",
+  "δώσε": "δίνω",
+  "δώστε": "δίνω",
+  "δώσω": "δίνω",
+  "έγραψαν": "γράφω",
+  "έγραψε": "γράφω",
+  "έγραψες": "γράφω",
+  "έδωσες": "δίνω",
+  "είπε": "λέω",
+  "είχα": "έχω",
+  "είχαμε": "έχω",
+  "είχατε": "έχω",
+  "είχες": "έχω",
+  "έκανα": "κάνω",
+  "έκανες": "κάνω",
+  "εκατόν": "εκατό",
+  "εκείνα": "εκείνος",
+  "εκείνες": "εκείνος",
+  "εκείνη": "εκείνος",
+  "εκείνο": "εκείνος",
+  "εκείνοι": "εκείνος",
+  "εκείνους": "εκείνος",
+  "έκλεισε": "κλείνω",
+  "έλα": "έρχομαι",
+  "ελάτε": "έρχομαι",
+  "ελληνίδα": [
+   "Έλληνας",
+   "έλληνας"
+  ],
+  "εμάς": "τα",
+  "ενημερωθήκαμε": "ενημερώνω",
+  "ενημερωθούν": "ενημερώνω",
+  "ενημερώσετε": "ενημερώνω",
+  "ενημερώσουμε": "ενημερώνω",
+  "εννέα": "εννιά",
+  "ενοικιαζεται": "νοικιάζω",
+  "έπαιρνα": "παίρνω",
+  "έπαιρνε": "παίρνω",
+  "επιπλωμένα": "επιπλωμένος",
+  "επιπλωμένη": "επιπλωμένος",
+  "επιπλωμένο": "επιπλωμένος",
+  "έρθετε": "έρχομαι",
+  "έρθουμε": "έρχομαι",
+  "έρθω": "έρχομαι",
+  "έρχεστε": "έρχομαι",
+  "έρχεται": "έρχομαι",
+  "έρχονται": "έρχομαι",
+  "έστειλα": "στέλνω",
+  "έστειλες": "στέλνω",
+  "ευχαριστημένη": "ευχαριστώ",
+  "ευχαριστημένοι": "ευχαριστώ",
+  "ευχαριστημένος": "ευχαριστώ",
+  "έφαγα": [
+   "τρώγω",
+   "τρώω"
+  ],
+  "έφτασα": "φτάνω",
+  "έφτιαξα": "φτιάχνω",
+  "έφυγα": "φεύγω",
+  "έφυγες": "φεύγω",
+  "έχει": "έχω",
+  "έχτισε": "χτίζω",
+  "ζήσει": "ζω",
+  "ζήσεις": "ζω",
+  "ζήσω": "ζω",
+  "ζωής": [
+   "ζωή",
+   "Ζωή"
+  ],
+  "ήθελε": "θέλω",
+  "ήμασταν": "είμαι",
+  "ήμαστε": "είμαι",
+  "ήπια": "πίνω",
+  "ήπιαμε": "πίνω",
+  "ήρθα": "έρχομαι",
+  "ήρθαμε": "έρχομαι",
+  "ήρθε": "έρχομαι",
+  "θυμάται": "θυμάμαι",
+  "θυμηθείς": "θυμάμαι",
+  "θυμούνται": "θυμάμαι",
+  "ιού": [
+   "ιός",
+   "Ίος"
+  ],
+  "ιταλίδα": "Ιταλός",
+  "κάθεσαι": "κάθομαι",
+  "κάθεστε": "κάθομαι",
+  "κάθισε": "κάθομαι",
+  "καθίσεις": "κάθομαι",
+  "καθίσουμε": "κάθομαι",
+  "καθίστε": "κάθομαι",
+  "καθίσω": "κάθομαι",
+  "καθόμαστε": "κάθομαι",
+  "καλυμμένος": "καλύπτω",
+  "καλύτερα": [
+   "καλά",
+   "καλύτερος"
+  ],
+  "καλύτερη": "καλύτερος",
+  "καλύτερο": "καλύτερος",
+  "καμία": [
+   "κανένας",
+   "κανείς"
+  ],
+  "κανένα": [
+   "κανένας",
+   "κανείς"
+  ],
+  "κανέναν": [
+   "κανένας",
+   "κανείς"
+  ],
+  "κάτοικοι": "κάτοικος",
+  "κεράσω": "κερνάω",
+  "κινούμαι": "κινώ",
+  "κινούμενα": "κινώ",
+  "κλαίμε": "κλαίω",
+  "κλαίνε": "κλαίω",
+  "κλαις": "κλαίω",
+  "κλαίτε": "κλαίω",
+  "κλείσε": "κλείνω",
+  "κλείσει": "κλείνω",
+  "κλείσουμε": "κλείνω",
+  "κλείσω": "κλείνω",
+  "κοιμάσαι": "κοιμάμαι",
+  "κοιμάστε": "κοιμάμαι",
+  "κοιμάται": "κοιμάμαι",
+  "κοιμηθείς": "κοιμάμαι",
+  "κοιμηθούμε": "κοιμάμαι",
+  "κοιμηθώ": "κοιμάμαι",
+  "κοιμούνται": "κοιμάμαι",
+  "κουράζεσαι": "κουράζομαι",
+  "κουράζεστε": "κουράζομαι",
+  "κουραζόμαστε": "κουράζομαι",
+  "κρεάτων": "κρέας",
+  "κριτική": "κριτικός",
+  "λέγεται": "λέω",
+  "λέμε": "λέω",
+  "λες": "λέω",
+  "λέτε": "λέω",
+  "λογίστρια": "λογιστής",
+  "μαθημάτων": "μάθημα",
+  "μαθήτρια": "μαθητής",
+  "μάθω": "μαθαίνω",
+  "μακρύ": "μακρύς",
+  "μεγαλύτερη": [
+   "μεγάλος",
+   "μεγαλύτερος"
+  ],
+  "μεγαλύτερο": [
+   "μεγάλος",
+   "μεγαλύτερος"
+  ],
+  "μείνε": "μένω",
+  "μείνει": "μένω",
+  "μείνουν": "μένω",
+  "μείνω": "μένω",
+  "μερικές": "μερικοί",
+  "μεσίτη": "μεσίτης",
+  "μεσίτρια": "μεσίτης",
+  "μικρότερη": "μικρός",
+  "μικρότερο": "μικρός",
+  "μιλήσαμε": "μιλάω",
+  "μιλήσατε": "μιλάω",
+  "μίλησες": "μιλάω",
+  "μισό": "μισός",
+  "μπλουζάκι": "μπλούζα",
+  "μπορείτε": "μπορώ",
+  "μπόρεσα": "μπορώ",
+  "μπορέσαμε": "μπορώ",
+  "μπόρεσαν": "μπορώ",
+  "μπορέσατε": "μπορώ",
+  "μπόρεσε": "μπορώ",
+  "μπορέσεις": "μπορώ",
+  "μπόρεσες": "μπορώ",
+  "μπορέσω": "μπορώ",
+  "μπορούσα": "μπορώ",
+  "μπορούσε": "μπορώ",
+  "νέα": "νέος",
+  "νέες": "νέος",
+  "νέο": "νέος",
+  "ξάπλωσε": "ξαπλώνω",
+  "ξαπλώστε": "ξαπλώνω",
+  "ξαπλώσω": "ξαπλώνω",
+  "ξυπνάμε": "ξυπνάω",
+  "ξυπνάς": "ξυπνάω",
+  "ξυπνάτε": "ξυπνάω",
+  "ξυπνήσουμε": "ξυπνάω",
+  "ξυπνήσω": "ξυπνάω",
+  "οδό": "οδός",
+  "οκτώ": "οχτώ",
+  "οπτική": "οπτικός",
+  "πάει": "πάω",
+  "παίξω": "παίζω",
+  "πάμε": "πάω",
+  "πάνε": "πάω",
+  "παντρεμένη": "παντρεμένος",
+  "παππούς": "γιαγιά",
+  "πάρ": "παίρνω",
+  "παραγγείλω": "παραγγέλνω",
+  "πάρεις": "παίρνω",
+  "πάρετε": "παίρνω",
+  "πάρθηκε": "παίρνω",
+  "πάρουν": "παίρνω",
+  "πέρασα": "περνάω",
+  "πέρασες": "περνάω",
+  "περάσουμε": "περνάω",
+  "περάσω": "περνάω",
+  "περισσότερο": "πολύς",
+  "περνάς": "περνάω",
+  "περνάτε": "περνάω",
+  "περνώ": "περνάω",
+  "πες": "λέω",
+  "πήγατε": "πηγαίνω",
+  "πήρα": "παίρνω",
+  "πήραμε": "παίρνω",
+  "πιει": "πίνω",
+  "πιεις": "πίνω",
+  "πιείτε": "πίνω",
+  "πιες": "πίνω",
+  "πιουν": "πίνω",
+  "πληρωθεί": "πληρώνω",
+  "πληρώθηκαν": "πληρώνω",
+  "πληρώθηκε": "πληρώνω",
+  "πληρωθούν": "πληρώνω",
+  "πλήρωσα": "πληρώνω",
+  "πλήρωσε": "πληρώνω",
+  "πληρώσετε": "πληρώνω",
+  "πληρώσω": "πληρώνω",
+  "ποιανού": "ποιος",
+  "πολλές": "πολύς",
+  "πολλή": "πολύς",
+  "πολλοί": "πολύς",
+  "πολλούς": "πολύς",
+  "πονάτε": "πονάω",
+  "πόσων": [
+   "ποσό",
+   "πόσος"
+  ],
+  "προβλήματος": "πρόβλημα",
+  "προβλημάτων": "πρόβλημα",
+  "προσόντα": "προσόν",
+  "προστατευόμενη": "προστατεύω",
+  "πρώτη": "πρώτος",
+  "πρώτο": "πρώτος",
+  "πρώτων": "πρώτος",
+  "πω": "λέω",
+  "ρωτάμε": "ρωτάω",
+  "ρωτάνε": "ρωτάω",
+  "ρωτήθηκαν": "ρωτάω",
+  "ρώτησα": "ρωτάω",
+  "σένα": [
+   "τα",
+   "εσένα",
+   "σε"
+  ],
+  "στείλαμε": "στέλνω",
+  "στείλει": "στέλνω",
+  "στενά": "στενός",
+  "στενή": "στενός",
+  "στενό": "στενός",
+  "συνταξιούχοι": "συνταξιούχος",
+  "ταξιδέψει": "ταξιδεύω",
+  "ταξιδέψουμε": "ταξιδεύω",
+  "ταξιδέψω": "ταξιδεύω",
+  "τελειώσεις": "τελειώνω",
+  "τέσσερις": "τέσσερα",
+  "τηλεφωνήσαμε": "τηλεφωνώ",
+  "τηλεφωνήσεις": "τηλεφωνώ",
+  "τηλεφωνήσετε": "τηλεφωνώ",
+  "τηλεφωνήστε": "τηλεφωνώ",
+  "τηλεφωνήσω": "τηλεφωνώ",
+  "τος": "τα",
+  "τουρκάλα": "Τούρκος",
+  "τρεις": "τρία",
+  "τρώνε": [
+   "τρώγω",
+   "τρώω"
+  ],
+  "τρως": [
+   "τρώγω",
+   "τρώω"
+  ],
+  "τρώτε": [
+   "τρώγω",
+   "τρώω"
+  ],
+  "τσαγιού": "τσάι",
+  "υποβληθεί": "υποβάλλω",
+  "υποβλήθηκε": "υποβάλλω",
+  "υποδημάτων": "υπόδημα",
+  "φάγαμε": [
+   "τρώγω",
+   "τρώω"
+  ],
+  "φάε": [
+   "τρώγω",
+   "τρώω"
+  ],
+  "φάμε": [
+   "τρώγω",
+   "τρώω"
+  ],
+  "φαρδιά": "φαρδύς",
+  "φαρδιές": "φαρδύς",
+  "φαρδιοί": "φαρδύς",
+  "φαρδύ": "φαρδύς",
+  "φαρμακοποιό": "φαρμακοποιός",
+  "φας": [
+   "τρώγω",
+   "τρώω"
+  ],
+  "φάτε": [
+   "τρώγω",
+   "τρώω"
+  ],
+  "φάω": [
+   "τρώγω",
+   "τρώω"
+  ],
+  "φέρε": "φέρνω",
+  "φέρεις": "φέρνω",
+  "φέρτε": "φέρνω",
+  "φέρω": "φέρνω",
+  "φίλε": "φίλος",
+  "φίλες": "φίλος",
+  "φίλη": "φίλος",
+  "φίλοι": "φίλος",
+  "φίλου": "φίλος",
+  "φίλους": "φίλος",
+  "φίλων": "φίλος",
+  "φοβάσαι": "φοβάμαι",
+  "φοιτήτρια": "φοιτητής",
+  "φοράς": [
+   "φορά",
+   "φόρα"
+  ],
+  "φρέσκες": "φρέσκος",
+  "φρέσκια": "φρέσκος",
+  "φτάσαμε": "φτάνω",
+  "φτάσω": "φτάνω",
+  "φτιάξαμε": "φτιάχνω",
+  "φτιάξω": "φτιάχνω",
+  "φύγαμε": "φεύγω",
+  "φύγει": "φεύγω",
+  "φύγεις": "φεύγω",
+  "χημική": "χημικός",
+  "χρειάζεσαι": "χρειάζομαι",
+  "χρειάζεστε": "χρειάζομαι",
+  "χρειαζόμαστε": "χρειάζομαι",
+  "χρειαστούμε": "χρειάζομαι",
+  "χρειαστώ": "χρειάζομαι",
+  "χτιστεί": "χτίζω",
+  "χτίστηκαν": "χτίζω",
+  "χτίστηκε": "χτίζω",
+  "χτιστούν": "χτίζω",
+  "ψάξω": "ψάχνω",
+  "ώρας": "ώρα",
+  "ώρες": "ώρα",
+  "ωρών": "ώρα",
+  "φοράτε": "φοράω",
+  "φοράει": "φοράω",
+  "φοράμε": "φοράω",
+  "φοράνε": "φοράω",
+  "φορώ": "φοράω"
+ },
+ "names": {
+  "Μπούρτζι": "place"
+ }
+}

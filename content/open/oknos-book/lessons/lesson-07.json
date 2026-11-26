@@ -1,0 +1,817 @@
+{
+ "id": "oknos-book.lesson-07",
+ "curriculum": "oknos-book",
+ "stage": "lesson-07",
+ "level": "A1",
+ "title": {
+  "tr": "Büfede, fırında, kafede: istediğini söylemek",
+  "en": "At the kiosk, the bakery and the café: asking for what you want"
+ },
+ "minutes": 15,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde **büfeden ve fırından alışveriş yapmayı** ve **kahve ısmarlamayı** öğreneceksin; fiyatı, avro ile senti, kilo ile gramı da.\n\nAnahtar nokta: istediğin şey fiilin **nesnesi** olunca artikel değişir: *ο καφές* ama **θέλω τον καφέ**; *η τυρόπιτα* ama **θέλω την τυρόπιτα**. Eril isim de sondaki *-ς*'yi atar.",
+     "en": "In this chapter you learn to **buy at a kiosk and a bakery** and to **order coffee**, with prices, euros and cents, kilos and grams.\n\nThe key point: when the thing you want is the **object** of the verb, the article changes: *ο καφές* but **θέλω τον καφέ**; *η τυρόπιτα* but **θέλω την τυρόπιτα**. A masculine noun also drops its final *-ς*."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Sabah: büfe, fırın, kafe",
+    "en": "Morning: kiosk, bakery, café"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Dinle, sonra oku. Kalıplar: [[Κάτι άλλο;]] (başka bir şey?), [[Τι θα θέλατε;]] (ne arzu edersiniz?), [[Πάμε!]] (hadi gidelim!) ve *Θα ήθελα…* (… isterdim). *Πάω* fiilinin biçimleri aşağıda.",
+     "en": "Listen, then read. Set phrases: [[Κάτι άλλο;]] (anything else?), [[Τι θα θέλατε;]] (what would you like?), [[Πάμε!]] (let's go!) and *Θα ήθελα…* (I'd like). The forms of *πάω* follow below."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ayşe sabah erkenden büfeye uğruyor. Kostas büfeci.",
+      "en": "Early in the morning Ayşe stops at the kiosk. Kostas runs it."
+     },
+     "lines": [
+      {
+       "who": "Κώστας",
+       "el": "Καλημέρα! Ορίστε;",
+       "tr": "Günaydın! Buyurun?",
+       "en": "Good morning! Yes?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα σας. Θα ήθελα ένα νερό και μια εφημερίδα, παρακαλώ.",
+       "tr": "Günaydın. Bir su ve bir gazete alayım, lütfen.",
+       "en": "Good morning. I'd like a water and a newspaper, please."
+      },
+      {
+       "who": "Κώστας",
+       "el": "Ορίστε. Κάτι άλλο;",
+       "tr": "Buyurun. Başka bir şey?",
+       "en": "Here you are. Anything else?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Όχι, ευχαριστώ. Πόσο κάνει;",
+       "tr": "Hayır, teşekkürler. Ne kadar?",
+       "en": "No, thank you. How much is it?"
+      },
+      {
+       "who": "Κώστας",
+       "el": "Δύο ευρώ και πενήντα λεπτά.",
+       "tr": "İki avro elli sent.",
+       "en": "Two euros fifty."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ορίστε. Ευχαριστώ!",
+       "tr": "Buyurun. Teşekkürler!",
+       "en": "Here you are. Thank you!"
+      },
+      {
+       "who": "Κώστας",
+       "el": "Παρακαλώ. Γεια σας!",
+       "tr": "Rica ederim. İyi günler!",
+       "en": "You're welcome. Goodbye!"
+      }
+     ]
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Sonra fırın. Ayşe tezgâhtaki ürünleri parmağıyla gösteriyor.",
+      "en": "Then the bakery. Ayşe points at what she wants."
+     },
+     "lines": [
+      {
+       "who": "Μαρία",
+       "el": "Καλημέρα! Παρακαλώ;",
+       "tr": "Günaydın! Buyurun?",
+       "en": "Good morning! Yes?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα. Θέλω αυτή την τυρόπιτα και ένα κουλούρι.",
+       "tr": "Günaydın. Şu peynirli böreği ve bir simit istiyorum.",
+       "en": "Good morning. I want this cheese pie and a bread ring."
+      },
+      {
+       "who": "Μαρία",
+       "el": "Ορίστε. Κάτι άλλο;",
+       "tr": "Buyurun. Başka bir şey?",
+       "en": "Here you are. Anything else?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ναι. Πόσο κάνει το ψωμί;",
+       "tr": "Evet. Ekmek ne kadar?",
+       "en": "Yes. How much is the bread?"
+      },
+      {
+       "who": "Μαρία",
+       "el": "Δύο ευρώ το κιλό.",
+       "tr": "Kilosu iki avro.",
+       "en": "Two euros a kilo."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Θα ήθελα πεντακόσια γραμμάρια, παρακαλώ.",
+       "tr": "Beş yüz gram alayım, lütfen.",
+       "en": "I'd like five hundred grams, please."
+      },
+      {
+       "who": "Μαρία",
+       "el": "Ορίστε. Τρία ευρώ και πενήντα λεπτά.",
+       "tr": "Buyurun. Üç avro elli sent.",
+       "en": "Here you are. Three euros fifty."
+      }
+     ]
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ayşe fırından çıkıyor ve arkadaşı Nikos'a rastlıyor. Birlikte kafeye gidiyorlar; garson Giorgos.",
+      "en": "Ayşe leaves the bakery and meets her friend Nikos. They go to a café together; Giorgos is the waiter."
+     },
+     "lines": [
+      {
+       "who": "Νίκος",
+       "el": "Καλημέρα, Αϊσέ! Πού πας;",
+       "tr": "Günaydın Ayşe! Nereye gidiyorsun?",
+       "en": "Good morning, Ayşe! Where are you going?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα, Νίκο! Πήγα στο περίπτερο και στον φούρνο. Πάω για καφέ. Θέλεις κι εσύ;",
+       "tr": "Günaydın Nikos! Büfeye ve fırına gittim. Kahveye gidiyorum. Sen de ister misin?",
+       "en": "Good morning, Nikos! I went to the kiosk and the bakery. I'm going for a coffee. Do you want one too?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Ναι, πάμε!",
+       "tr": "Evet, hadi gidelim!",
+       "en": "Yes, let's go!"
+      },
+      {
+       "who": "Γιώργος",
+       "el": "Καλημέρα σας. Τι θα θέλατε;",
+       "tr": "Günaydın. Ne arzu edersiniz?",
+       "en": "Good morning. What would you like?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Έναν ελληνικό, παρακαλώ.",
+       "tr": "Bir Yunan kahvesi lütfen.",
+       "en": "A Greek coffee, please."
+      },
+      {
+       "who": "Γιώργος",
+       "el": "Σκέτο, μέτριο ή γλυκό;",
+       "tr": "Sade mi, orta mı, şekerli mi?",
+       "en": "Plain, medium or sweet?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Μέτριο, παρακαλώ.",
+       "tr": "Orta, lütfen.",
+       "en": "Medium, please."
+      },
+      {
+       "who": "Νίκος",
+       "el": "Εγώ θα ήθελα έναν φραπέ και ένα νερό.",
+       "tr": "Ben bir frappe ve bir su alayım.",
+       "en": "I'd like a frappé and a water."
+      },
+      {
+       "who": "Γιώργος",
+       "el": "Ορίστε.",
+       "tr": "Buyurun.",
+       "en": "Here you are."
+      },
+      {
+       "who": "Νίκος",
+       "el": "Ευχαριστώ. Πόσο κάνει;",
+       "tr": "Teşekkürler. Ne kadar?",
+       "en": "Thank you. How much is it?"
+      },
+      {
+       "who": "Γιώργος",
+       "el": "Έξι ευρώ.",
+       "tr": "Altı avro.",
+       "en": "Six euros."
+      },
+      {
+       "who": "Νίκος",
+       "el": "Αϊσέ, αύριο θα πας στον φούρνο; Θέλω κι εγώ ένα κουλούρι.",
+       "tr": "Ayşe, yarın fırına gidecek misin? Ben de bir simit istiyorum.",
+       "en": "Ayşe, will you go to the bakery tomorrow? I want a bread ring too."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ναι, θα πάω. Ένα κουλούρι για τον Νίκο!",
+       "tr": "Evet, gideceğim. Nikos'a bir simit!",
+       "en": "Yes, I will. A bread ring for Nikos!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloğa göre:",
+     "en": "According to the dialogues:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch07-q-bakery",
+      "oknos-book/ch07-q-true-false"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "İki artikel: ο, η, το ve ένας, μια, ένα",
+    "en": "Two articles: ο, η, το and ένας, μια, ένα"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**Belirli artikel** *ο, η, το*'yu (\"the\") tanıyorsun. Bir de **belirsiz artikel** var: **ένας, μια, ένα** (\"bir\"), aynı zamanda \"bir\" sayısı. Bir şeyi isterken belirsiz artikel kullanırsın: **ένα νερό**.",
+     "en": "You know the **definite article** *ο, η, το* (\"the\"). There is also an **indefinite article**: **ένας, μια, ένα** (\"a, an\"), which is also the number \"one\". You use it to ask for something: **ένα νερό**."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "eril",
+       "en": "masculine"
+      },
+      {
+       "tr": "dişil",
+       "en": "feminine"
+      },
+      {
+       "tr": "nötr",
+       "en": "neuter"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "belirli (the)",
+        "en": "definite (the)"
+       },
+       "ο καφές",
+       "η τυρόπιτα",
+       "το νερό"
+      ],
+      [
+       {
+        "tr": "belirsiz (a)",
+        "en": "indefinite (a)"
+       },
+       "ένας καφές",
+       "μια τυρόπιτα",
+       "ένα νερό"
+      ]
+     ],
+     "note": {
+      "tr": "*Μια* yazıda *μία* diye de yazılır; ikisi de doğru.",
+      "en": "*Μια* is also written *μία*; both are correct."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Θα ήθελα ένα νερό.",
+       "tr": "Bir su alayım.",
+       "en": "I'd like a water."
+      },
+      {
+       "el": "Μια τυρόπιτα και ένα κουλούρι, παρακαλώ.",
+       "tr": "Bir peynirli börek ve bir simit lütfen.",
+       "en": "A cheese pie and a bread ring, please."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "İstediğin şey nesnedir: τον, την, έναν",
+    "en": "What you want is the object: τον, την, έναν"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "İstediğin, okuduğun ya da beklediğin şey fiilin **nesnesidir** (*θέλω, διαβάζω, περιμένω*). Nesne **αιτιατική** hâlindedir; bunu *στον, στην, στο*'dan tanıyorsun. Özne yalın hâlde (*ονομαστική*) kalır. [[θέλει]]: (o) istiyor.",
+     "en": "The thing you want, read or wait for is the **object** of the verb (*θέλω, διαβάζω, περιμένω*). It takes the **accusative** (*αιτιατική*), which you know from *στον, στην, στο*. The subject stays in the nominative (*ονομαστική*). [[θέλει]]: he/she wants."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Ονομαστική",
+      "Αιτιατική"
+     ],
+     "rows": [
+      [
+       "ο καφές",
+       "τον καφέ"
+      ],
+      [
+       "ένας καφές",
+       "έναν καφέ"
+      ],
+      [
+       "η τυρόπιτα",
+       "την τυρόπιτα"
+      ],
+      [
+       "μια τυρόπιτα",
+       "μια τυρόπιτα"
+      ],
+      [
+       "το νερό",
+       "το νερό"
+      ],
+      [
+       "ένα νερό",
+       "ένα νερό"
+      ]
+     ],
+     "note": {
+      "tr": "Eril en çok değişir: *ο → τον, ένας → έναν*, isim de sondaki *-ς*'yi atar (*καφές → καφέ*). Dişilde yalnızca artikel değişir: *η → την* (ya da *τη*, -ν kuralı); *μια* ve isim aynı kalır. Nötr hiç değişmez.",
+      "en": "The masculine changes most: *ο → τον, ένας → έναν*, and the noun drops its final *-ς* (*καφές → καφέ*). In the feminine only the article changes: *η → την* (or *τη*, by the -ν rule); *μια* and the noun stay the same. The neuter does not change at all."
+     }
+    },
+    {
+     "type": "prose",
+     "tr": "**-ν kuralı:** *τον* ve *έναν* her zaman -ν'li yazılır (*ένα καφέ* da duyarsın; sen *έναν* yaz). *Την* ise ünlüden ve κ, π, τ, ξ, ψ, μπ, ντ, γκ, τσ, τζ'dan önce -ν'yi korur: *την εφημερίδα, την τυρόπιτα*. Diğer ünsüzlerden önce düşer: *τη σοκολάτα*.",
+     "en": "**The -ν rule:** *τον* and *έναν* always keep the -ν (you also hear *ένα καφέ*; write *έναν*). *Την* keeps it before a vowel and before κ, π, τ, ξ, ψ, μπ, ντ, γκ, τσ, τζ: *την εφημερίδα, την τυρόπιτα*. Before other consonants it drops: *τη σοκολάτα*."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Θέλω έναν καφέ.",
+       "tr": "Bir kahve istiyorum.",
+       "en": "I want a coffee."
+      },
+      {
+       "el": "Η Αϊσέ διαβάζει την εφημερίδα.",
+       "tr": "Ayşe gazeteyi okuyor.",
+       "en": "Ayşe is reading the newspaper."
+      },
+      {
+       "el": "Περιμένω τον Νίκο.",
+       "tr": "Nikos'u bekliyorum.",
+       "en": "I'm waiting for Nikos."
+      },
+      {
+       "el": "Ο πελάτης θέλει μια τυρόπιτα.",
+       "tr": "Müşteri bir peynirli börek istiyor.",
+       "en": "The customer wants a cheese pie.",
+       "note": {
+        "tr": "*Ο πελάτης* özne: yalın hâl. *Μια τυρόπιτα* nesne.",
+        "en": "*Ο πελάτης* is the subject: nominative. *Μια τυρόπιτα* is the object."
+       }
+      },
+      {
+       "el": "Η Αϊσέ θέλει τη σοκολάτα, όχι την τυρόπιτα.",
+       "tr": "Ayşe çikolatayı istiyor, peynirli böreği değil.",
+       "en": "Ayşe wants the chocolate, not the cheese pie.",
+       "note": {
+        "tr": "σ listede yok, bu yüzden *τη*; τ listede, bu yüzden *την*.",
+        "en": "σ is not on the list, so *τη*; τ is, so *την*."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "\"Bu\": αυτός ο, αυτή η, αυτό το",
+    "en": "\"This\": αυτός ο, αυτή η, αυτό το"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bir şeyi gösterirken **αυτός, αυτή, αυτό** (\"bu, şu\") dersin. İkinci dersten *αυτός* ve *αυτή* kelimelerini \"o\" olarak biliyorsun; isimle birlikte \"bu\" anlamına gelir. Yunancada **artikel yine de kalır**: *αυτός **ο** καφές*. Eril nesnede ikisi de değişir: *αυτόν τον καφέ*.",
+     "en": "To point at something, say **αυτός, αυτή, αυτό** (\"this\"). You know *αυτός* and *αυτή* as \"he\" and \"she\" from Lesson 2; with a noun they mean \"this\". Greek **keeps the article** too: *αυτός **ο** καφές*. For a masculine object both words change: *αυτόν τον καφέ*."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "eril",
+       "en": "masculine"
+      },
+      {
+       "tr": "dişil",
+       "en": "feminine"
+      },
+      {
+       "tr": "nötr",
+       "en": "neuter"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "özne",
+        "en": "subject"
+       },
+       "αυτός ο καφές",
+       "αυτή η τυρόπιτα",
+       "αυτό το νερό"
+      ],
+      [
+       {
+        "tr": "nesne",
+        "en": "object"
+       },
+       "αυτόν τον καφέ",
+       "αυτή την τυρόπιτα",
+       "αυτό το νερό"
+      ]
+     ],
+     "note": {
+      "tr": "Kurala göre *αυτήν την* daha doğrudur (*την* τ ile başlıyor), ama *αυτή την* çok daha sık. Çoğul biçimler sonra.",
+      "en": "By the -ν rule *αυτήν την* is stricter (*την* starts with τ), but *αυτή την* is far more common. Plurals come later."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Πόσο κάνει αυτό το κουλούρι;",
+       "tr": "Bu simit ne kadar?",
+       "en": "How much is this bread ring?"
+      },
+      {
+       "el": "Θέλω αυτή την τυρόπιτα.",
+       "tr": "Şu peynirli böreği istiyorum.",
+       "en": "I want this cheese pie."
+      },
+      {
+       "el": "Θέλω αυτόν τον καφέ.",
+       "tr": "Şu kahveyi istiyorum.",
+       "en": "I want this coffee."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Sipariş ve ödeme: kalıplar, avro, kilo",
+    "en": "Ordering and paying: phrases, euros, kilos"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**Θέλω** (\"istiyorum\") doğrudandır; **Θα ήθελα** daha kibardır ve her yerde duyulur. İkisini de kalıp olarak öğren.",
+     "en": "**Θέλω** (\"I want\") is direct; **Θα ήθελα** is more polite, and you hear it everywhere. Learn both as set phrases."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Ελληνικά",
+      {
+       "tr": "anlamı",
+       "en": "meaning"
+      }
+     ],
+     "rows": [
+      [
+       "Θέλω …",
+       {
+        "tr": "… istiyorum",
+        "en": "I want …"
+       }
+      ],
+      [
+       "Θα ήθελα …",
+       {
+        "tr": "… isterdim; dükkânda: … alayım (kibar)",
+        "en": "I'd like … (polite)"
+       }
+      ],
+      [
+       "Πόσο κάνει;",
+       {
+        "tr": "Ne kadar? (bir şey ya da toplam)",
+        "en": "How much is it? (one thing, or the total)"
+       }
+      ],
+      [
+       "Ορίστε",
+       {
+        "tr": "Buyurun; işte (verirken); Buyurun? (satıcı sorarken)",
+        "en": "Here you are; yes? (the seller asking)"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "prose",
+     "tr": "**Para.** *Ευρώ* hiç değişmez: *ένα ευρώ, δύο ευρώ*. Sent **λεπτό**'dur: *πενήντα λεπτά*. Fiyatta virgül kullanılır: 2,50 €.\n\n**Ağırlık.** *Ένα κιλό* = *χίλια γραμμάρια*; yarım kilo *μισό κιλό* ya da *πεντακόσια γραμμάρια* (*γραμμάρια* çoğul biçimdir).",
+     "en": "**Money.** *Ευρώ* never changes: *ένα ευρώ, δύο ευρώ*. A cent is a **λεπτό**: *πενήντα λεπτά*. Prices use a comma: 2,50 €.\n\n**Weight.** *Ένα κιλό* = *χίλια γραμμάρια*; half a kilo is *μισό κιλό* or *πεντακόσια γραμμάρια* (*γραμμάρια* is the plural)."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Το νερό κάνει πενήντα λεπτά.",
+       "tr": "Su elli sent.",
+       "en": "The water costs fifty cents."
+      },
+      {
+       "el": "Δύο ευρώ και πενήντα λεπτά.",
+       "tr": "İki avro elli sent.",
+       "en": "Two euros fifty.",
+       "note": {
+        "tr": "Konuşurken kısa: *δύο πενήντα* ya da *δυόμισι* (iki buçuk).",
+        "en": "Spoken, often short: *δύο πενήντα*, or *δυόμισι* (two and a half)."
+       }
+      },
+      {
+       "el": "Πεντακόσια γραμμάρια, παρακαλώ.",
+       "tr": "Beş yüz gram lütfen.",
+       "en": "Five hundred grams, please."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Kahve ısmarlamak",
+    "en": "Ordering coffee"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Kahvenin türü ve şekeri tek kelimeyle söylenir. Bu kelimeler eril *ο καφές* ile gider, bu yüzden sipariş verirken (*έναν …*) nesne biçimini alır: sondaki *-ος* → *-ο*, *-ές* → *-έ*. Sıfatları sekizinci derste öğreneceksin; şimdilik bu kelimeleri hazır kalıp olarak al.",
+     "en": "The type of coffee and its sugar are each one word. They go with masculine *ο καφές*, so when you order (*έναν …*) they take the object form: *-ος* → *-ο*, *-ές* → *-έ*. Adjectives come in Lesson 8; take these words as ready-made for now."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "kelime",
+       "en": "word"
+      },
+      "ένας …",
+      "έναν …",
+      {
+       "tr": "anlamı",
+       "en": "meaning"
+      }
+     ],
+     "rows": [
+      [
+       "φραπές",
+       "ένας φραπές",
+       "έναν φραπέ",
+       {
+        "tr": "köpüklü soğuk neskafe",
+        "en": "iced, foamy instant coffee"
+       }
+      ],
+      [
+       "ελληνικός",
+       "ένας ελληνικός",
+       "έναν ελληνικό",
+       {
+        "tr": "Yunan kahvesi (Türk kahvesi gibi, cezvede)",
+        "en": "Greek coffee (brewed in a small pot, like Turkish coffee)"
+       }
+      ],
+      [
+       "σκέτος",
+       "ένας σκέτος",
+       "έναν σκέτο",
+       {
+        "tr": "sade, şekersiz",
+        "en": "plain, no sugar"
+       }
+      ],
+      [
+       "μέτριος",
+       "ένας μέτριος",
+       "έναν μέτριο",
+       {
+        "tr": "orta şekerli",
+        "en": "medium sweet"
+       }
+      ],
+      [
+       "γλυκός",
+       "ένας γλυκός",
+       "έναν γλυκό",
+       {
+        "tr": "şekerli",
+        "en": "sweet"
+       }
+      ]
+     ],
+     "note": {
+      "tr": "Çok kişi *ένα φραπέ* de der: o zaman *φραπέ* nötrdür ve hiç değişmez. İkisi de anlaşılır; bu kitap *ο φραπές, έναν φραπέ* kullanıyor.",
+      "en": "Many people also say *ένα φραπέ*: then *φραπέ* is neuter and never changes. Both are understood; this book uses *ο φραπές, έναν φραπέ*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Έναν ελληνικό μέτριο, παρακαλώ.",
+       "tr": "Orta şekerli bir Yunan kahvesi lütfen.",
+       "en": "A medium-sweet Greek coffee, please."
+      },
+      {
+       "el": "Έναν φραπέ σκέτο, παρακαλώ.",
+       "tr": "Sade bir frappe lütfen.",
+       "en": "A plain frappé, please."
+      },
+      {
+       "el": "Θα ήθελα έναν ελληνικό γλυκό.",
+       "tr": "Şekerli bir Yunan kahvesi alayım.",
+       "en": "I'd like a sweet Greek coffee."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Gitmek: πάω, πήγα, θα πάω",
+    "en": "Going: πάω, πήγα, θα πάω"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**Πάω** (gitmek) fiilinin geçmişini ve geleceğini **hazır biçimler** olarak öğren, şimdilik yalnızca *ben* ve *sen* için. Geçmişte kök değişir: *πήγα*. Gelecek **θα** + biçimdir. Gidilen yer *σε* + nesne hâli: *πάω στο περίπτερο*. *Χθες* dün, *αύριο* yarın demektir.",
+     "en": "Learn the past and future of **πάω** (to go) as **ready-made forms**, for *I* and *you* only. The past has a new stem, *πήγα*; the future is **θα** + the form. Where you go is *σε* + the accusative: *πάω στο περίπτερο*. *Χθες* is yesterday, *αύριο* tomorrow."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "şimdi",
+       "en": "now"
+      },
+      {
+       "tr": "geçmiş",
+       "en": "past"
+      },
+      {
+       "tr": "gelecek",
+       "en": "future"
+      }
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "πάω",
+       "πήγα",
+       "θα πάω"
+      ],
+      [
+       "εσύ",
+       "πας",
+       "πήγες",
+       "θα πας"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Χθες πήγα στον φούρνο.",
+       "tr": "Dün fırına gittim.",
+       "en": "Yesterday I went to the bakery."
+      },
+      {
+       "el": "Πού πήγες;",
+       "tr": "Nereye gittin?",
+       "en": "Where did you go?"
+      },
+      {
+       "el": "Αύριο θα πάω στο περίπτερο.",
+       "tr": "Yarın büfeye gideceğim.",
+       "en": "Tomorrow I'll go to the kiosk."
+      },
+      {
+       "el": "Θα πας στην Αθήνα;",
+       "tr": "Atina'ya gidecek misin?",
+       "en": "Will you go to Athens?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu dersin kelimeleri: büfe ve fırın ürünleri, para ve ağırlık, kahve türleri, *πάω*. *Ο φούρνος* da Türkçedeki *fırın* gibi hem yemek pişirilen fırın hem ekmek fırını demektir.",
+     "en": "The words of this lesson: kiosk and bakery things, money and weight, coffee types, and *πάω*. *Ο φούρνος* means both \"oven\" and \"bakery\"."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/v-kafes",
+      "oknos-book/v-psomi",
+      "oknos-book/v-efimerida",
+      "oknos-book/v-foyrnos",
+      "oknos-book/v-pelatis",
+      "oknos-book/v-servitoros",
+      "oknos-book/v-perimeno-verb",
+      "oknos-book/ch07-periptero",
+      "oknos-book/ch07-nero",
+      "oknos-book/ch07-tyropita",
+      "oknos-book/ch07-koulouri",
+      "oknos-book/ch07-thelo",
+      "oknos-book/ch07-tha-ithela",
+      "oknos-book/ch07-poso-kanei",
+      "oknos-book/ch07-orise",
+      "oknos-book/ch07-pao",
+      "oknos-book/ch07-chthes",
+      "oknos-book/ch07-avrio",
+      "oknos-book/ch07-kilo",
+      "oknos-book/ch07-grammario",
+      "oknos-book/ch07-lepto",
+      "oknos-book/ch07-frapes",
+      "oknos-book/ch07-ellinikos",
+      "oknos-book/ch07-sketos",
+      "oknos-book/ch07-metrios",
+      "oknos-book/ch07-glykos"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**Türkçeden bir köprü.** Türkçede belirli nesne ek alır: *kahveyi istiyorum* = *θέλω τον καφέ*. *Bir kahve istiyorum*'da ise ek yok. Yunancada ikisi de nesne biçimini alır: *τον καφέ* ve *έναν καφέ*.",
+     "en": "**A bridge.** English shows the object form only on pronouns: *he* → *him*. Greek shows it on the article and on a masculine noun, even after *a*: *έναν καφέ*."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Είμαι'den sonra nesne biçimi gelmez.** *Είμαι* ile söylenen şey yalın hâlde kalır: *Ο Γιώργος είναι ο σερβιτόρος*; *Ο Γιώργος είναι **τον** σερβιτόρο* yanlış.",
+     "en": "**No accusative after είμαι.** With *είμαι* the thing named stays in the nominative: *Ο Γιώργος είναι ο σερβιτόρος*, not *τον σερβιτόρο*."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: nesne biçimi, \"bu\", gitmek.",
+     "en": "Now you try: the object form, \"this\", and going."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch07-try-enan",
+      "oknos-book/ch07-try-accusative",
+      "oknos-book/ch07-try-aytos",
+      "oknos-book/ch07-try-past",
+      "oknos-book/ch07-try-future"
+     ]
+    }
+   ]
+  }
+ ]
+}

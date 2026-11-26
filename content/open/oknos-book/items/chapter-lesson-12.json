@@ -1,0 +1,643 @@
+[
+ {
+  "id": "ch12-q-errand",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Η Αϊσέ πάει στον Πειραιά. Τι θέλει;",
+   "en": "Ayşe goes to Piraeus. What does she want?",
+   "tr": "Ayşe Pire'ye gidiyor. Ne istiyor?"
+  },
+  "options": [
+   "ένα πλυντήριο.",
+   "ένα ψυγείο.",
+   "μια τηλεόραση."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Θέλω ένα καινούργιο πλυντήριο.» The fridge and the television are from the shop in lesson 9, not from this text.",
+   "tr": "«Θέλω ένα καινούργιο πλυντήριο.» Buzdolabı ve televizyon 9. dersteki dükkândan, bu metinden değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch12-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Αϊσέ αγοράζει δύο τυρόπιτες.",
+    "en": "Ayşe buys two cheese pies.",
+    "tr": "Ayşe iki peynirli börek alıyor.",
+    "answer": true
+   },
+   {
+    "el": "Ο Νίκος θέλει έναν ελληνικό καφέ.",
+    "en": "Nikos wants a Greek coffee.",
+    "tr": "Nikos bir Yunan kahvesi istiyor.",
+    "answer": false
+   },
+   {
+    "el": "Στον Πειραιά η Αϊσέ πληρώνει με μετρητά.",
+    "en": "In Piraeus Ayşe pays in cash.",
+    "tr": "Pire'de Ayşe nakit ödüyor.",
+    "answer": false
+   }
+  ],
+  "explain": {
+   "en": "Ayşe: «Θέλω αυτές τις δύο τυρόπιτες». Nikos: «Εγώ θα ήθελα έναν φραπέ». Ayşe in the shop: «Πληρώνω με κάρτα».",
+   "tr": "Ayşe: «Θέλω αυτές τις δύο τυρόπιτες». Nikos: «Εγώ θα ήθελα έναν φραπέ». Ayşe dükkânda: «Πληρώνω με κάρτα»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch12-try-article",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Η Αϊσέ θέλει {1} εφημερίδα και {2} μήλα και περιμένει {3} Νίκο.",
+  "bank": [
+   "τον",
+   "την",
+   "τα",
+   "τις"
+  ],
+  "answer": {
+   "1": "την",
+   "2": "τα",
+   "3": "τον"
+  },
+  "translation": {
+   "en": "Ayşe wants the newspaper and the apples, and she is waiting for Nikos.",
+   "tr": "Ayşe gazeteyi ve elmaları istiyor ve Nikos'u bekliyor."
+  },
+  "explain": {
+   "en": "Feminine singular: την. Neuter plural: τα (it does not change as an object). Masculine singular: τον, and the name drops its -ς (Νίκος → Νίκο).",
+   "tr": "Dişil tekil: την. Nötr çoğul: τα (nesne olunca değişmez). Eril tekil: τον ve ad -ς'sini düşürür (Νίκος → Νίκο)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch12-try-adj",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "adjective.agreement"
+  ],
+  "text": "Περιμένω τον {1} σερβιτόρο. Η τσάντα μου είναι {2}.",
+  "answer": {
+   "1": [
+    "καινούργιο"
+   ],
+   "2": [
+    "μικρή"
+   ]
+  },
+  "options": {
+   "1": [
+    "καινούργιος",
+    "καινούργια",
+    "καινούργιο"
+   ],
+   "2": [
+    "μικρός",
+    "μικρή",
+    "μικρό"
+   ]
+  },
+  "translation": {
+   "en": "I'm waiting for the new waiter. My bag is small.",
+   "tr": "Yeni garsonu bekliyorum. Çantam küçük."
+  },
+  "explain": {
+   "en": "«Τον σερβιτόρο» is a masculine object, so the adjective takes -ο: καινούργιο. «Η τσάντα» is feminine, so μικρή.",
+   "tr": "«Τον σερβιτόρο» eril bir nesne, bu yüzden sıfat -ο alır: καινούργιο. «Η τσάντα» dişil olduğu için μικρή."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch12-try-tense",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.past-future"
+  ],
+  "text": "Εγώ χθες {1} στη λαϊκή και αύριο θα {2} στον Πειραιά.",
+  "answer": {
+   "1": [
+    "ήμουν"
+   ],
+   "2": [
+    "πάω"
+   ]
+  },
+  "options": {
+   "1": [
+    "ήμουν",
+    "ήσουν",
+    "είμαι"
+   ],
+   "2": [
+    "πάω",
+    "πήγα",
+    "πας"
+   ]
+  },
+  "translation": {
+   "en": "Yesterday I was at the street market and tomorrow I will go to Piraeus.",
+   "tr": "Dün semt pazarındaydım ve yarın Pire'ye gideceğim."
+  },
+  "explain": {
+   "en": "«Χθες» with «εγώ» asks for the past of I: ήμουν (ήσουν is «you»). The future of πάω is θα πάω; πήγα is the past and πας is «you».",
+   "tr": "«Χθες» ve «εγώ» ben için geçmiş ister: ήμουν (ήσουν «sen»dir). πάω fiilinin geleceği θα πάω; πήγα geçmiştir, πας «sen»dir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch12-try-time",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Θα πάω στη λαϊκή {1} Κυριακή και θα φύγω από το σπίτι {2} εννιά.",
+  "bank": [
+   "την",
+   "στην",
+   "στις",
+   "με"
+  ],
+  "answer": {
+   "1": "την",
+   "2": "στις"
+  },
+  "translation": {
+   "en": "I will go to the street market on Sunday and I will leave home at nine.",
+   "tr": "Pazar günü semt pazarına gideceğim ve evden saat dokuzda çıkacağım."
+  },
+  "explain": {
+   "en": "A day needs no preposition: την Κυριακή. A clock time uses στις: στις εννιά.",
+   "tr": "Gün için edat gerekmez: την Κυριακή. Saat için στις kullanılır: στις εννιά."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch12-try-prep",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Χθες ήμουν στη λαϊκή {1} τις οχτώ {2} τις δέκα. Αύριο θα πάω στον Πειραιά {3} το μετρό.",
+  "bank": [
+   "με",
+   "από",
+   "για",
+   "μέχρι"
+  ],
+  "answer": {
+   "1": "από",
+   "2": "μέχρι",
+   "3": "με"
+  },
+  "translation": {
+   "en": "Yesterday I was at the street market from eight until ten. Tomorrow I will go to Piraeus by metro.",
+   "tr": "Dün sekizden ona kadar semt pazarındaydım. Yarın metroyla Pire'ye gideceğim."
+  },
+  "explain": {
+   "en": "από … μέχρι … is «from … until …». Με gives the means of transport: με το μετρό.",
+   "tr": "από … μέχρι … «-den … -e kadar» demektir. Με ulaşım aracını bildirir: με το μετρό."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch12-p-notice",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Σημειώνω ΣΩΣΤΟ ή ΛΑΘΟΣ.",
+   "en": "Mark TRUE or FALSE.",
+   "tr": "DOĞRU veya YANLIŞ işaretle."
+  },
+  "stimulus": {
+   "text": "ΛΑΪΚΗ ΣΤΟΝ ΠΕΙΡΑΙΑ. Το Σάββατο, από τις 7:00 μέχρι τις 14:00. Ντομάτες: 2 ευρώ το κιλό. Φράουλες: 4 ευρώ το κιλό. Πληρώνετε με μετρητά, όχι με κάρτα."
+  },
+  "statements": [
+   {
+    "el": "Η λαϊκή είναι την Κυριακή.",
+    "en": "The street market is on Sunday.",
+    "tr": "Semt pazarı pazar günü.",
+    "answer": false
+   },
+   {
+    "el": "Η λαϊκή είναι μέχρι τις δύο.",
+    "en": "The street market is open until two.",
+    "tr": "Semt pazarı ikiye kadar açık.",
+    "answer": true
+   },
+   {
+    "el": "Οι ντομάτες κάνουν δύο ευρώ το κιλό.",
+    "en": "The tomatoes cost two euros a kilo.",
+    "tr": "Domatesin kilosu iki avro.",
+    "answer": true
+   },
+   {
+    "el": "Στη λαϊκή πληρώνεις με κάρτα.",
+    "en": "At the market you pay by card.",
+    "tr": "Semt pazarında kartla ödersin.",
+    "answer": false
+   }
+  ],
+  "explain": {
+   "en": "The notice says «Το Σάββατο», «μέχρι τις 14:00» (two o'clock), «2 ευρώ το κιλό» and «με μετρητά, όχι με κάρτα».",
+   "tr": "Duyuru şunu söylüyor: «Το Σάββατο», «μέχρι τις 14:00» (saat iki), «2 ευρώ το κιλό» ve «με μετρητά, όχι με κάρτα»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch12-p-forms",
+  "ask": {
+   "en": "Match each past form with its future.",
+   "tr": "Her geçmiş biçimi geleceğiyle eşleştir."
+  },
+  "type": "match",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each past form with its future.",
+   "tr": "Her geçmiş biçimi geleceğiyle eşleştir."
+  },
+  "left": [
+   "έφαγα",
+   "είδα",
+   "έφυγα",
+   "έδωσα",
+   "ήμουν"
+  ],
+  "right": [
+   "θα φύγω",
+   "θα δώσω",
+   "θα είμαι",
+   "θα φάω",
+   "θα δω"
+  ],
+  "answer": [
+   3,
+   4,
+   0,
+   1,
+   2
+  ],
+  "explain": {
+   "en": "έφαγα → θα φάω, είδα → θα δω, έφυγα → θα φύγω, έδωσα → θα δώσω, ήμουν → θα είμαι.",
+   "tr": "έφαγα → θα φάω, είδα → θα δω, έφυγα → θα φύγω, έδωσα → θα δώσω, ήμουν → θα είμαι."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch12-p-gender",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε ουσιαστικό με το σωστό επίθετο.",
+   "en": "Put each noun with the adjective that fits it.",
+   "tr": "Her ismi uyan sıfatla eşleştir."
+  },
+  "categories": [
+   "μικρός",
+   "μικρή",
+   "μικρό"
+  ],
+  "items": [
+   "ο φούρνος",
+   "η τσάντα",
+   "το ψυγείο",
+   "η τηλεόραση",
+   "ο υπολογιστής",
+   "το πλυντήριο"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   1,
+   0,
+   2
+  ],
+  "explain": {
+   "en": "The article gives the gender: ο is masculine (μικρός), η feminine (μικρή), το neuter (μικρό).",
+   "tr": "Cinsi artikel verir: ο eril (μικρός), η dişil (μικρή), το nötr (μικρό)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch12-p-numbers",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "numeral.agreement"
+  ],
+  "text": "Θα ήθελα {1} τυρόπιτες και {2} κουλούρια, παρακαλώ.",
+  "answer": {
+   "1": [
+    "τρεις"
+   ],
+   "2": [
+    "τρία"
+   ]
+  },
+  "options": {
+   "1": [
+    "τρεις",
+    "τρία"
+   ],
+   "2": [
+    "τρεις",
+    "τρία"
+   ]
+  },
+  "translation": {
+   "en": "I'd like three cheese pies and three bread rings, please.",
+   "tr": "Üç peynirli börek ve üç simit alayım, lütfen."
+  },
+  "explain": {
+   "en": "«Three» agrees with the noun: feminine τυρόπιτες → τρεις, neuter κουλούρια → τρία.",
+   "tr": "«Üç» isme uyar: dişil τυρόπιτες → τρεις, nötr κουλούρια → τρία."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch12-p-plural",
+  "ask": {
+   "en": "Yesterday I saw my friends at the street market. Which form is right?",
+   "tr": "Dün semt pazarında arkadaşlarımı gördüm. Hangi biçim doğru?"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Χθες είδα … στη λαϊκή.",
+   "en": "Yesterday I saw my friends at the street market. Which form is right?",
+   "tr": "Dün semt pazarında arkadaşlarımı gördüm. Hangi biçim doğru?"
+  },
+  "options": [
+   "τους φίλους μου",
+   "οι φίλοι μου",
+   "τους φίλοι μου"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "My friends are the object of «είδα»: the article is τους and the -ος noun changes -οι → -ους. «Οι φίλοι» is the subject form, and «τους φίλοι» mixes the two.",
+   "tr": "Arkadaşlarım «είδα»'nın nesnesi: artikel τους olur, -ος isim de -οι → -ους değişir. «Οι φίλοι» özne biçimi; «τους φίλοι» ikisini karıştırıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch12-p-order",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Θα ήθελα …",
+   "en": "I would like …",
+   "tr": "… isterdim"
+  },
+  "options": [
+   "έναν ελληνικό μέτριο.",
+   "ένας ελληνικός μέτριος.",
+   "έναν ελληνικός μέτριο."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "What you order is the object, so έναν and the endings -ο: έναν ελληνικό μέτριο. The other two keep a subject ending.",
+   "tr": "Sipariş edilen şey nesnedir: έναν ve -ο ekleri: έναν ελληνικό μέτριο. Öteki ikisi özne ekini tutuyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  },
+  "ask": {
+   "en": "Order a medium-sweet Greek coffee politely.",
+   "tr": "Orta şekerli bir Türk kahvesini kibarca sipariş et."
+  }
+ },
+ {
+  "id": "ch12-p-poios",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "pronoun.poios"
+  ],
+  "text": "— Με {1} πας στη λαϊκή; — Με τον Νίκο.",
+  "answer": {
+   "1": [
+    "ποιον"
+   ]
+  },
+  "options": {
+   "1": [
+    "ποιος",
+    "ποιον",
+    "ποιο"
+   ]
+  },
+  "translation": {
+   "en": "— Who are you going to the street market with? — With Nikos.",
+   "tr": "— Semt pazarına kiminle gidiyorsun? — Nikos'la."
+  },
+  "explain": {
+   "en": "After «με» the question word takes the object form, and the answer is masculine: με τον Νίκο, so ποιον.",
+   "tr": "«με»'den sonra soru sözcüğü nesne biçimini alır ve cevap eril: με τον Νίκο, yani ποιον."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch12-p-correct",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-12"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ποια πρόταση είναι σωστή;",
+   "en": "Which sentence is right?",
+   "tr": "Hangi cümle doğru?"
+  },
+  "options": [
+   "Την Κυριακή πάω στη λαϊκή με το μετρό.",
+   "Στην Κυριακή πάω στη λαϊκή με το μετρό.",
+   "Την Κυριακή πάω στον λαϊκή με το μετρό."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "A day takes the article and no preposition (την Κυριακή). Λαϊκή is feminine, so στη λαϊκή, not στον.",
+   "tr": "Gün artikelle gelir, edat almaz (την Κυριακή). Λαϊκή dişildir: στη λαϊκή olur, στον değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-12",
+   "by": "sonnet-draft"
+  }
+ }
+]

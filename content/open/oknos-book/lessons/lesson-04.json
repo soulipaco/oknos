@@ -1,0 +1,563 @@
+{
+ "id": "oknos-book.lesson-04",
+ "curriculum": "oknos-book",
+ "stage": "lesson-04",
+ "level": "A1",
+ "title": {
+  "tr": "Telefonda başvuru: adım, numaram, işim. Sahiplik zamirleri ve 200-1000",
+  "en": "A job call: my name, my number, my work. Possessives, and 200-1000"
+ },
+ "minutes": 13,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde bir formda ya da telefonda sorulan bilgileri vermeyi öğreneceksin: **adın, soyadın, numaran, çalıştığın yer, okulun** ve **medeni hâlin**.\n\nAnahtar nokta: Türkçede \"benim evim\" derken ek isme yapışır (*ev-im*). Yunancada isimden **sonra** küçük bir kelime gelir: **το σπίτι μου**.",
+     "en": "In this chapter you learn to give the details a form or a phone call asks for: **first name, surname, phone number, workplace, studies** and **marital status**.\n\nThe key point: in Greek the small word for \"my\" comes **after** the noun: **το σπίτι μου** (my home)."
+    }
+   ]
+  },
+  {
+   "kind": "warmup",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bir iş için bir şirketi arıyorsun: adını, numaranı, nerede çalıştığını soruyorlar. Dinlerken *μου*, *σας*, *μας* kelimelerinin hep isimden sonra geldiğine dikkat et.",
+     "en": "You phone a company about a job, and they ask your name, number and workplace. As you listen, notice that *μου*, *σας* and *μας* always come after the noun."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Telefon çalıyor",
+    "en": "The phone rings"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Dinle, sonra oku. *το όνομά μου*, *το κινητό μου* ve *το τηλέφωνό σας* gibi ifadeleri şimdilik kalıp olarak al; kuralı aşağıda göreceksin. Sofia numarayı gruplar hâlinde tekrar ediyor; bunu da aşağıda göreceksin.",
+     "en": "Listen, then read. Take phrases like *το όνομά μου*, *το κινητό μου* and *το τηλέφωνό σας* as they come; the rule follows below. Sofia repeats the number in groups; that comes below too."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Mehmet bir iş için bir şirketin ofisini arıyor. Telefonu Sofia açıyor ve başvuru formunu dolduruyor.",
+      "en": "Mehmet phones a company's office about a job. Sofia answers and fills in his application form."
+     },
+     "lines": [
+      {
+       "who": "Σοφία",
+       "el": "Ναι, παρακαλώ;",
+       "tr": "Alo, buyurun?",
+       "en": "Hello?"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Καλημέρα σας. Για τη δουλειά…",
+       "tr": "Günaydın. İş için arıyorum…",
+       "en": "Good morning. I'm calling about the job…"
+      },
+      {
+       "who": "Σοφία",
+       "el": "Α, ναι! Είμαι η Σοφία. Η δουλειά είναι στο γραφείο μας, στην Αθήνα. Το όνομά σας, παρακαλώ;",
+       "tr": "Ha, evet! Ben Sofia. İş, Atina'daki ofisimizde. Adınız, lütfen?",
+       "en": "Ah, yes! I'm Sofia. The job is at our office in Athens. Your name, please?"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Το όνομά μου είναι Μεχμέτ. Το επώνυμό μου είναι Γιλμάζ.",
+       "tr": "Adım Mehmet. Soyadım Yılmaz.",
+       "en": "My first name is Mehmet. My surname is Yilmaz."
+      },
+      {
+       "who": "Σοφία",
+       "el": "Ωραία. Και το τηλέφωνό σας;",
+       "tr": "Güzel. Ya telefonunuz?",
+       "en": "Good. And your phone number?"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Το κινητό μου είναι έξι, εννιά, τέσσερα, τέσσερα, ένα, δύο, τρία, τέσσερα, πέντε, έξι.",
+       "tr": "Cep telefonum altı, dokuz, dört, dört, bir, iki, üç, dört, beş, altı.",
+       "en": "My mobile is six, nine, four, four, one, two, three, four, five, six."
+      },
+      {
+       "who": "Σοφία",
+       "el": "Έξι, εννιά, τέσσερα, τετρακόσια δώδεκα, τριάντα τέσσερα, πενήντα έξι. Ευχαριστώ. Πού δουλεύετε, κύριε Γιλμάζ;",
+       "tr": "Altı, dokuz, dört, dört yüz on iki, otuz dört, elli altı. Teşekkürler. Nerede çalışıyorsunuz Bay Yılmaz?",
+       "en": "Six, nine, four, four hundred and twelve, thirty-four, fifty-six. Thank you. Where do you work, Mr Yilmaz?"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Δουλεύω στο νοσοκομείο. Είμαι μηχανικός. Και σπουδάζω στο πανεπιστήμιο.",
+       "tr": "Hastanede çalışıyorum. Mühendisim. Bir de üniversitede okuyorum.",
+       "en": "I work at the hospital. I'm an engineer. And I study at the university."
+      },
+      {
+       "who": "Σοφία",
+       "el": "Είστε παντρεμένος;",
+       "tr": "Evli misiniz?",
+       "en": "Are you married?"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Όχι, είμαι ελεύθερος. Η οικογένειά μου είναι στην Τουρκία.",
+       "tr": "Hayır, bekârım. Ailem Türkiye'de.",
+       "en": "No, I'm single. My family is in Turkey."
+      },
+      {
+       "who": "Σοφία",
+       "el": "Ευχαριστώ πολύ, κύριε Γιλμάζ. Γεια σας!",
+       "tr": "Çok teşekkürler Bay Yılmaz. Hoşça kalın!",
+       "en": "Thank you very much, Mr Yilmaz. Goodbye!"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Γεια σας!",
+       "tr": "Hoşça kalın!",
+       "en": "Goodbye!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloğa göre:",
+     "en": "According to the dialogue:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch04-q-where-work",
+      "oknos-book/ch04-q-true-false"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Benim, senin, onun: isimden sonra μου, σου, του…",
+    "en": "My, your, his: μου, σου, του… after the noun"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Yunancada \"benim\", \"senin\" gibi sahiplik **ismin arkasına** gelen küçük bir kelimeyle söylenir (**zayıf sahiplik zamirleri**). İsim artikelini korur: **το** σπίτι **μου**. Türkçedeki *ev-im*, *ev-in* eklerinin durduğu yerde durur.",
+     "en": "In Greek, \"my\", \"your\" and so on are small words that come **after the noun** (the **weak possessive pronouns**). The noun keeps its article: **το** σπίτι **μου**."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Her isim için aynı kelimeler: το σπίτι… (ev)",
+      "en": "The same words for every noun: το σπίτι… (home)"
+     },
+     "head": [
+      "",
+      "",
+      "το σπίτι …"
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "μου",
+       "το σπίτι μου"
+      ],
+      [
+       "εσύ",
+       "σου",
+       "το σπίτι σου"
+      ],
+      [
+       "αυτός",
+       "του",
+       "το σπίτι του"
+      ],
+      [
+       "αυτή",
+       "της",
+       "το σπίτι της"
+      ],
+      [
+       "εμείς",
+       "μας",
+       "το σπίτι μας"
+      ],
+      [
+       "εσείς",
+       "σας",
+       "το σπίτι σας"
+      ],
+      [
+       "αυτοί / αυτές",
+       "τους",
+       "το σπίτι τους"
+      ]
+     ],
+     "note": {
+      "tr": "*σου* samimi, *σας* resmî ya da çoğul. *του* erkeğe, *της* kadına aittir: sahibine bakılır, eşyaya değil.",
+      "en": "*σου* is informal, *σας* formal or plural. *του* is his, *της* is her: it follows the owner, not the thing owned."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Η δουλειά μου είναι στο νοσοκομείο.",
+       "tr": "İşim hastanede.",
+       "en": "My job is at the hospital."
+      },
+      {
+       "el": "Η Ελένη είναι γιατρός. Το νοσοκομείο της είναι στη Θεσσαλονίκη.",
+       "tr": "Eleni doktor. Hastanesi Selanik'te.",
+       "en": "Eleni is a doctor. Her hospital is in Thessaloniki.",
+       "note": {
+        "tr": "*της*: sahibi Eleni, yani bir kadın.",
+        "en": "*της*, because the owner is Eleni, a woman."
+       }
+      },
+      {
+       "el": "Η εταιρεία μας είναι στην Αθήνα.",
+       "tr": "Şirketimiz Atina'da.",
+       "en": "Our company is in Athens."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "İkinci vurgu: το τηλέφωνό μου",
+    "en": "The second accent: το τηλέφωνό μου"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Yunanca bir sözcük, sondan üçüncü heceden daha geriye vurgulanamaz. *Τηλέφωνο* kelimesinin vurgusu zaten sondan üçüncü hecede (*τη-λέ-φω-νο*). Arkasına *μου* gelince vurgu sondan dördüncü heceye düşerdi; buna izin yok. Çözüm: ismin **son hecesine ikinci bir vurgu işareti** koyarsın: **το τηλέφωνό μου**.\n\nKural kısa: isim **sondan üçüncü hecede vurgulanıyorsa**, arkasına gelen *μου, σου, του, της, μας, σας, τους* ile birlikte son hecesine bir vurgu daha alır. Vurgusu başka yerde olan isimlerde **hiçbir şey değişmez**.",
+     "en": "A Greek word cannot be stressed further back than the third syllable from the end. *Τηλέφωνο* is already stressed on the third from last (*τη-λέ-φω-νο*). With *μου* added, the stress would sit on the fourth: not allowed. The fix: put **a second accent on the last syllable of the noun**: **το τηλέφωνό μου**.\n\nThe rule is short: if the noun is **stressed on the third syllable from the end**, it gets a second accent when *μου, σου, του, της, μας, σας, τους* follows. Nouns stressed anywhere else **do not change**."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Ne zaman ikinci vurgu?",
+      "en": "When does the second accent appear?"
+     },
+     "head": [
+      {
+       "tr": "isim",
+       "en": "noun"
+      },
+      {
+       "tr": "vurgu",
+       "en": "stress"
+      },
+      "+ μου / σας"
+     ],
+     "rows": [
+      [
+       "το όνομα",
+       {
+        "tr": "sondan 3.",
+        "en": "3rd from last"
+       },
+       "το όνομά μου"
+      ],
+      [
+       "το επώνυμο",
+       {
+        "tr": "sondan 3.",
+        "en": "3rd from last"
+       },
+       "το επώνυμό σας"
+      ],
+      [
+       "το τηλέφωνο",
+       {
+        "tr": "sondan 3.",
+        "en": "3rd from last"
+       },
+       "το τηλέφωνό σου"
+      ],
+      [
+       "η οικογένεια",
+       {
+        "tr": "sondan 3.",
+        "en": "3rd from last"
+       },
+       "η οικογένειά μας"
+      ],
+      [
+       "η δουλειά",
+       {
+        "tr": "son hece",
+        "en": "last"
+       },
+       "η δουλειά μου"
+      ],
+      [
+       "το σπίτι",
+       {
+        "tr": "sondan 2.",
+        "en": "2nd from last"
+       },
+       "το σπίτι τους"
+      ]
+     ],
+     "note": {
+      "tr": "Alttaki ikisinde vurgu üçüncü hecede değil: ikinci vurgu yok.",
+      "en": "The last two are not stressed on the third from last: no second accent."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Το όνομά μου είναι Μεχμέτ.",
+       "tr": "Adım Mehmet.",
+       "en": "My first name is Mehmet."
+      },
+      {
+       "el": "Το επώνυμό σας, παρακαλώ;",
+       "tr": "Soyadınız, lütfen?",
+       "en": "Your surname, please? (formal)"
+      },
+      {
+       "el": "Η οικογένειά του είναι στην Τουρκία.",
+       "tr": "Ailesi Türkiye'de.",
+       "en": "His family is in Turkey."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Sayılar 200-1000 ve telefon numarası",
+    "en": "The numbers 200-1000 and phone numbers"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Yüzlükler tek kalıpla yapılır: sayının kökü (*δια-*, *τρια-*, *τετρα-*…) + **-κόσια**, vurgu hep *κό* hecesinde. Bu biçimler saymak, telefon numarası ve para (*ευρώ*) için, bir de nötr isimlerle kullanılır. Erkek ve kadın isimlerle sonu değişir (*-κόσιοι*, *-κόσιες*); şimdilik bunları tanıman yeter.",
+     "en": "The hundreds follow one pattern: the number's stem (*δια-*, *τρια-*, *τετρα-*…) + **-κόσια**, always stressed on *κό*. These are the forms for counting, phone numbers and money (*ευρώ*), and for neuter nouns. With masculine and feminine nouns the ending changes (*-κόσιοι*, *-κόσιες*); for now it is enough to recognise them."
+    },
+    {
+     "type": "table",
+     "head": [
+      "200-500",
+      "600-1000"
+     ],
+     "rows": [
+      [
+       "200 διακόσια",
+       "600 εξακόσια"
+      ],
+      [
+       "300 τριακόσια",
+       "700 εφτακόσια (επτακόσια)"
+      ],
+      [
+       "400 τετρακόσια",
+       "800 οχτακόσια (οκτακόσια)"
+      ],
+      [
+       "500 πεντακόσια",
+       "900 εννιακόσια (εννεακόσια)"
+      ],
+      [
+       "",
+       "1000 χίλια"
+      ]
+     ],
+     "note": {
+      "tr": "Parantez içindekiler yazı dilindeki biçim. *Χίλια* da nötrdür.",
+      "en": "The forms in brackets are the written versions. *Χίλια* is also neuter."
+     }
+    },
+    {
+     "type": "prose",
+     "tr": "**Telefon numarası.** Yunanistan'da numaralar 10 hanelidir. Sabit hatlar *2* ile başlar (Atina: *210*), cep telefonları *69* ile. İki türlü okunur:\n**Rakam rakam:** *210* = *δύο, ένα, μηδέν*. Mehmet böyle okuyor.\n**Gruplar hâlinde:** *210* = *διακόσια δέκα*, *34* = *τριάντα τέσσερα*. Sofia böyle tekrar ediyor. Yunanlar çoğu zaman böyle okur; yüzlükler burada işine yarar.\nSen rakam rakam söyleyebilirsin, her zaman anlaşılır. Ama grupları da dinleyip anlaman gerekir.",
+     "en": "**Phone numbers** in Greece have 10 digits. Landlines start with *2* (Athens: *210*), mobiles with *69*. You hear them read two ways:\n**Digit by digit:** *210* = *δύο, ένα, μηδέν*. This is how Mehmet reads his.\n**In groups:** *210* = *διακόσια δέκα*, *34* = *τριάντα τέσσερα*. This is how Sofia repeats it. Greeks often read numbers this way, which is where the hundreds come in.\nYou can say yours digit by digit and always be understood, but you need to follow the groups when you hear them."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Το πλυντήριο είναι τριακόσια ευρώ.",
+       "tr": "Çamaşır makinesi üç yüz avro.",
+       "en": "The washing machine is three hundred euros."
+      },
+      {
+       "el": "Το τηλέφωνό μας είναι διακόσια δέκα, εξακόσια σαράντα, είκοσι πέντε, δεκαοχτώ.",
+       "tr": "Telefonumuz 210 640 25 18.",
+       "en": "Our phone number is 210 640 25 18.",
+       "note": {
+        "tr": "Aynı numara rakam rakam: *δύο, ένα, μηδέν, έξι, τέσσερα, μηδέν, δύο, πέντε, ένα, οχτώ*.",
+        "en": "The same number digit by digit: *δύο, ένα, μηδέν, έξι, τέσσερα, μηδέν, δύο, πέντε, ένα, οχτώ*."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Erkek ya da kadın: παντρεμένος / παντρεμένη",
+    "en": "Man or woman: παντρεμένος / παντρεμένη"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Medeni hâlini söylerken kelime **senin cinsiyetine** uyar: erkek *παντρεμένος*, kadın *παντρεμένη*; *ελεύθερος / ελεύθερη* (bekâr) de öyle. Şimdilik bunları **çift** olarak öğren; sıfatlar Ders 8'de.\nResmî formlarda *Οικογενειακή κατάσταση* (medeni hâl) satırında *έγγαμος* (evli) ve *άγαμος* (bekâr) da görebilirsin; konuşurken pek duyulmaz.",
+     "en": "When you give your marital status, the word matches **your own gender**: a man says *παντρεμένος*, a woman *παντρεμένη*; likewise *ελεύθερος / ελεύθερη* (single). Learn them as **pairs** for now; adjectives come in Lesson 8.\nOn official forms the line *Οικογενειακή κατάσταση* (marital status) may also use *έγγαμος* (married) and *άγαμος* (single); they are rarely heard in conversation."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "erkek",
+       "en": "man"
+      },
+      {
+       "tr": "kadın",
+       "en": "woman"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "evli",
+        "en": "married"
+       },
+       "παντρεμένος",
+       "παντρεμένη"
+      ],
+      [
+       {
+        "tr": "bekâr",
+        "en": "single"
+       },
+       "ελεύθερος",
+       "ελεύθερη"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Είμαι παντρεμένος.",
+       "tr": "Evliyim. (erkek)",
+       "en": "I'm married. (a man speaking)"
+      },
+      {
+       "el": "Είμαι παντρεμένη.",
+       "tr": "Evliyim. (kadın)",
+       "en": "I'm married. (a woman speaking)"
+      },
+      {
+       "el": "Είστε παντρεμένη;",
+       "tr": "Evli misiniz? (kadına)",
+       "en": "Are you married? (asked of a woman)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu dersin kelimeleri: kişisel bilgiler, çalışma yerleri, medeni hâl ve yüzlükler. Bölümü bitirince oturumlarına gelecekler.",
+     "en": "The words of this lesson: personal details, workplaces, marital status and the hundreds. They come into your sessions once you finish the chapter."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/ch04-onoma",
+      "oknos-book/v-eponymo",
+      "oknos-book/ch04-tilefono",
+      "oknos-book/v-kinito-tilefono",
+      "oknos-book/ch04-arithmos",
+      "oknos-book/ch04-parakalo",
+      "oknos-book/ch04-douleia",
+      "oknos-book/v-grafeio",
+      "oknos-book/v-etaireia",
+      "oknos-book/v-nosokomeio",
+      "oknos-book/v-scholeio",
+      "oknos-book/v-panepistimio",
+      "oknos-book/v-spoydazo-verb",
+      "oknos-book/v-oikogeneia",
+      "oknos-book/ch04-pantremenos",
+      "oknos-book/ch04-eleytheros",
+      "oknos-book/ch04-num-200",
+      "oknos-book/ch04-num-300",
+      "oknos-book/ch04-num-400",
+      "oknos-book/ch04-num-500",
+      "oknos-book/ch04-num-600",
+      "oknos-book/ch04-num-700",
+      "oknos-book/ch04-num-800",
+      "oknos-book/ch04-num-900",
+      "oknos-book/ch04-num-1000"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**İkinci vurguyu unutma.** Yazarken *το όνομα μου* değil, *το όνομά μου*; *το τηλέφωνο σας* değil, *το τηλέφωνό σας*. İkinci vurgu yalnızca sondan üçüncü hecede vurgulu isimlerde gelir: *η δουλειά μου* ve *το σπίτι μου* böyle kalır.",
+     "en": "**Do not forget the second accent.** Write *το όνομά μου*, not *το όνομα μου*; *το τηλέφωνό σας*, not *το τηλέφωνο σας*. It appears only on nouns stressed on the third from last: *η δουλειά μου* and *το σπίτι μου* stay as they are."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**İki \"okumak\".** Üniversitede okumak *σπουδάζω*, kitap ya da ders okumak *διαβάζω*.",
+     "en": "**Two ways to study.** *Σπουδάζω* is to study at a university; *διαβάζω* is to read, or to study for a lesson or an exam."
+    },
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**Telefonu açmak.** Türkçedeki «Alo?» yerine Yunanlar çoğunlukla *Ναι;* ya da *Παρακαλώ;* der; *Αλό;* da duyulur. *Παρακαλώ* hem «lütfen», hem «buyurun», hem de «rica ederim» demektir.",
+     "en": "**Answering the phone.** Where English says «Hello?», Greeks usually say *Ναι;* or *Παρακαλώ;*; you also hear *Αλό;*. *Παρακαλώ* means «please», «go ahead» and «you're welcome»."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: sahiplik zamirleri, ikinci vurgu, sayılar ve medeni hâl.",
+     "en": "Now you try: the possessives, the second accent, the numbers, and marital status."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch04-try-mou",
+      "oknos-book/ch04-try-tis",
+      "oknos-book/ch04-try-accent",
+      "oknos-book/ch04-try-hundreds",
+      "oknos-book/ch04-try-married"
+     ]
+    }
+   ]
+  }
+ ]
+}

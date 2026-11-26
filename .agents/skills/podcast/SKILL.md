@@ -11,7 +11,7 @@ A chapter episode is a lesson to listen to on the way to work: the chapter's dia
 
 - Default: the learner's **current lesson** (`uv run oknos report` → `curriculum.current`), or the one they name.
 - **Language:** `podcast.lang` in `profile.json`, else the app's language (`ui_lang`). The maintainer's: Turkish.
-- **Id:** `<source>.<stage>.<lang>`: `book.lesson-03.tr` for the private book, `open.shopping.en` for the open book. The folder is `<learner_dir>/podcasts/<id>/`, the script `script.json` in it.
+- **Id:** `<source>.<stage>.<lang>`: `book.lesson-03.tr` for the Oknos book, `open.shopping.en` for the open book. The folder is `<learner_dir>/podcasts/<id>/`, the script `script.json` in it.
 - If a script already exists, improve it (raise `version`) rather than starting over, unless asked.
 - Once a learner has episodes, `daily-prep` (step 5a) keeps them a lesson ahead with this skill: one episode a run, for the current stage, then the next.
 
@@ -19,7 +19,7 @@ A chapter episode is a lesson to listen to on the way to work: the chapter's dia
 
 In this order, and only as much as the episode needs:
 
-1. **The chapter** of that stage: `content/private/<pack>/lessons/<stage>.json` for the book, `content/open/open-book/lessons/<stage>.json` for the open course. Its dialogues, examples, words (with their meanings in the pack), tables and tips. A coach-written chapter in `learner/generated/` wins over the pack's.
+1. **The chapter** of that stage: `content/open/oknos-book/lessons/<stage>.json` for the Oknos book (a private book's in `content/private/<pack>/lessons/`), `content/open/open-book/lessons/<stage>.json` for the shorter open course. Its dialogues, examples, words (with their meanings in the pack), tables and tips. A coach-written chapter in `learner/generated/` wins over the pack's.
 2. **The open book's chapter** that the book curriculum's `follows` maps to the same stage, or that covers the same theme, where the book's chapter is thin (few examples, one short dialogue). For a learner without the book: the open book, plus their own imported material when it covers the theme.
 3. **Ideas from the web**, only if the episode is still thin: search for how others teach this point to learners (common mistakes, useful set phrases, cultural notes). Take ideas, never text: no sentence, dialogue or explanation copied, translated or re-voiced. Record each source in the script's `sources` (`{"what": "idea", "url": …, "note": what you took}`). Never download audio or video.
 

@@ -24,13 +24,13 @@ Status (2026-11-23): the pilot. The first episode is the book's Lesson 1 in Turk
 {
   "id": "book.lesson-01.tr",
   "kind": "chapter",
-  "curriculum": "greek-helper-book",
+  "curriculum": "oknos-book",
   "stage": "lesson-01",
   "lang": "tr",
   "title": {"tr": "Ders 1: Merhaba, ben …", "en": "Lesson 1: Hello, I'm …"},
   "version": 1,
   "written": "2026-11-23",
-  "sources": [{"what": "chapter", "ref": "greek-helper/lessons/lesson-01"}],
+  "sources": [{"what": "chapter", "ref": "oknos-book/lessons/lesson-01"}],
   "segments": [
     {"part": "Giriş"},
     {"lang": "tr", "say": "Merhaba! Bugün selamlaşmayı öğreniyoruz."},

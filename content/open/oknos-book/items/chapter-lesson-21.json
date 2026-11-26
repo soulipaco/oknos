@@ -1,0 +1,1036 @@
+[
+ {
+  "id": "ch21-kefali",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το κεφάλι",
+  "pos": "noun",
+  "en": "head",
+  "tr": "baş; kafa",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "κεφάλι",
+  "gender": "n",
+  "example": {
+   "el": "Με πονάει το κεφάλι μου.",
+   "en": "My head hurts.",
+   "tr": "Başım ağrıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-stomachi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το στομάχι",
+  "pos": "noun",
+  "en": "stomach",
+  "tr": "mide; karın",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "στομάχι",
+  "gender": "n",
+  "example": {
+   "el": "Σας πονάει το στομάχι;",
+   "en": "Does your stomach hurt?",
+   "tr": "Mideniz ağrıyor mu?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-plati",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η πλάτη",
+  "pos": "noun",
+  "en": "back (of the body)",
+  "tr": "sırt",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "πλάτη",
+  "gender": "f",
+  "example": {
+   "el": "Με πονάει η πλάτη μου.",
+   "en": "My back hurts.",
+   "tr": "Sırtım ağrıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-stoma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το στόμα",
+  "pos": "noun",
+  "en": "mouth",
+  "tr": "ağız",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "στόμα",
+  "gender": "n",
+  "example": {
+   "el": "Ανοίξτε το στόμα σας, παρακαλώ.",
+   "en": "Open your mouth, please.",
+   "tr": "Ağzınızı açın, lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-ponao",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πονάω",
+  "pos": "verb",
+  "en": "hurt; be in pain",
+  "tr": "acımak; ağrımak; acı çekmek",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "πονάω",
+  "example": {
+   "el": "Πού πονάτε;",
+   "en": "Where does it hurt?",
+   "tr": "Neresi ağrıyor?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-vicho",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "βήχω",
+  "pos": "verb",
+  "en": "cough",
+  "tr": "öksürmek",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "βήχω",
+  "example": {
+   "el": "Βήχω πολύ το βράδυ.",
+   "en": "I cough a lot in the evening.",
+   "tr": "Akşamları çok öksürüyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-krylogima",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το κρυολόγημα",
+  "pos": "noun",
+  "en": "a cold (illness)",
+  "tr": "soğuk algınlığı; nezle",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "κρυολόγημα",
+  "gender": "n",
+  "example": {
+   "el": "Έχω κρυολόγημα και βήχω.",
+   "en": "I have a cold and I cough.",
+   "tr": "Nezleyim ve öksürüyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-gripi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η γρίπη",
+  "pos": "noun",
+  "en": "flu",
+  "tr": "grip",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "γρίπη",
+  "gender": "f",
+  "example": {
+   "el": "Έχω γρίπη και δεν πάω στη δουλειά.",
+   "en": "I have the flu and I am not going to work.",
+   "tr": "Gribim ve işe gitmiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-siropi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το σιρόπι",
+  "pos": "noun",
+  "en": "syrup (medicine)",
+  "tr": "şurup",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "σιρόπι",
+  "gender": "n",
+  "example": {
+   "el": "Πάρτε το σιρόπι τρεις φορές τη μέρα.",
+   "en": "Take the syrup three times a day.",
+   "tr": "Şurubu günde üç kez alın."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-kentro-ygeias",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το κέντρο υγείας",
+  "pos": "noun",
+  "en": "health centre",
+  "tr": "sağlık merkezi; sağlık ocağı",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "κέντρο υγείας",
+  "gender": "n",
+  "example": {
+   "el": "Το κέντρο υγείας είναι κοντά στο σπίτι μου.",
+   "en": "The health centre is near my home.",
+   "tr": "Sağlık merkezi evime yakın."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-exetasi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η εξέταση",
+  "pos": "noun",
+  "en": "examination; check-up; (medical) test",
+  "tr": "muayene; tahlil; sınav",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "εξέταση",
+  "gender": "f",
+  "example": {
+   "el": "Αύριο έχω εξέταση στο κέντρο υγείας.",
+   "en": "Tomorrow I have a check-up at the health centre.",
+   "tr": "Yarın sağlık merkezinde muayenem var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-arrostos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "άρρωστος / άρρωστη",
+  "pos": "adj",
+  "en": "ill; sick",
+  "tr": "hasta",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "άρρωστος",
+  "example": {
+   "el": "Η Αϊσέ είναι άρρωστη.",
+   "en": "Ayşe is ill.",
+   "tr": "Ayşe hasta."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-niotho",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "νιώθω",
+  "pos": "verb",
+  "en": "feel",
+  "tr": "hissetmek",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "νιώθω",
+  "example": {
+   "el": "Δε νιώθω καλά σήμερα.",
+   "en": "I don't feel well today.",
+   "tr": "Bugün kendimi iyi hissetmiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-farmakopoios",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "ο φαρμακοποιός / η φαρμακοποιός",
+  "pos": "noun",
+  "en": "pharmacist",
+  "tr": "eczacı",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "φαρμακοποιός",
+  "example": {
+   "el": "Ο φαρμακοποιός είναι στο φαρμακείο.",
+   "en": "The pharmacist is in the pharmacy.",
+   "tr": "Eczacı eczanede."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-arga",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αργά",
+  "pos": "adv",
+  "en": "slowly; late",
+  "tr": "yavaş; geç",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "lemma": "αργά",
+  "example": {
+   "el": "Μιλήστε αργά, παρακαλώ.",
+   "en": "Speak slowly, please.",
+   "tr": "Yavaş konuşun, lütfen."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-q-pharmacy",
+  "type": "mcq",
+  "skill": "reading",
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πόσες φορές τη μέρα παίρνει η Αϊσέ το σιρόπι;",
+   "en": "How many times a day does Ayşe take the syrup?",
+   "tr": "Ayşe şurubu günde kaç kez alıyor?"
+  },
+  "options": [
+   "Μία φορά.",
+   "Δύο φορές.",
+   "Τρεις φορές."
+  ],
+  "answer": 2,
+  "explain": {
+   "en": "The pharmacist says «Πάρτε το τρεις φορές τη μέρα». Twice a day is for the pills.",
+   "tr": "Eczacı «Πάρτε το τρεις φορές τη μέρα» diyor. Günde iki kez hapları alıyor."
+  },
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Αϊσέ έχει πυρετό.",
+    "en": "Ayşe has a fever.",
+    "tr": "Ayşe'nin ateşi var.",
+    "answer": true
+   },
+   {
+    "el": "Η Αϊσέ πηγαίνει αύριο στη δουλειά.",
+    "en": "Ayşe goes to work tomorrow.",
+    "tr": "Ayşe yarın işe gidiyor.",
+    "answer": false
+   },
+   {
+    "el": "Ο γιατρός δίνει στην Αϊσέ μια συνταγή.",
+    "en": "The doctor gives Ayşe a prescription.",
+    "tr": "Doktor Ayşe'ye bir reçete veriyor.",
+    "answer": true
+   },
+   {
+    "el": "Το χάπι της Αϊσέ είναι για το στομάχι.",
+    "en": "Ayşe's pill is for the stomach.",
+    "tr": "Ayşe'nin hapı mide için.",
+    "answer": false
+   }
+  ],
+  "explain": {
+   "en": "She has a fever (both dialogues) and the doctor gives her a prescription. The doctor tells her to stay in bed, not to go to work. The pill she asks for at the pharmacy is «για τον πυρετό», for the fever.",
+   "tr": "Ateşi var (iki diyalogda da) ve doktor ona reçete veriyor. Doktor yatakta kalmasını, işe gitmemesini söylüyor. Eczanede istediği hap «για τον πυρετό», ateş içindir."
+  },
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-try-sg",
+  "ask": {
+   "en": "Ayşe, ___ the syrup, please. (Nikos is speaking to his friend.)",
+   "tr": "Ayşe, ___ şurubu, lütfen. (Nikos arkadaşına söylüyor.)"
+  },
+  "type": "mcq",
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Αϊσέ, … το σιρόπι, σε παρακαλώ.",
+   "en": "Ayşe, ___ the syrup, please. (Nikos is speaking to his friend.)",
+   "tr": "Ayşe, ___ şurubu, lütfen. (Nikos arkadaşına söylüyor.)"
+  },
+  "options": [
+   "πάρε",
+   "πάρτε",
+   "πήρα"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "One friend gets the singular instruction in -ε: πάρε. πάρτε is for several people or a polite «you»; πήρα is the past («I took»).",
+   "tr": "Tek bir arkadaşa -ε ile biten tekil emir verilir: πάρε. πάρτε birkaç kişi ya da nazik «siz» içindir; πήρα geçmiş zamandır («aldım»)."
+  },
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-try-pl",
+  "type": "gap_bank",
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "{1} στο κρεβάτι. {2} το στόμα σας. {3} πολύ νερό.",
+  "bank": [
+   "ξαπλώστε",
+   "ανοίξτε",
+   "πιείτε"
+  ],
+  "answer": {
+   "1": "ξαπλώστε",
+   "2": "ανοίξτε",
+   "3": "πιείτε"
+  },
+  "translation": {
+   "en": "Lie down on the bed. Open your mouth. Drink plenty of water.",
+   "tr": "Yatağa uzanın. Ağzınızı açın. Çok su için."
+  },
+  "explain": {
+   "en": "The doctor speaks politely, so all three are plural forms in -τε / -είτε: ξαπλώνω → ξαπλώστε, ανοίγω → ανοίξτε, πίνω → πιείτε. Only «το στόμα σας» fits «open».",
+   "tr": "Doktor nazik konuşuyor, bu yüzden üçü de çoğul biçim: ξαπλώνω → ξαπλώστε, ανοίγω → ανοίξτε, πίνω → πιείτε. «Το στόμα σας» yalnızca «aç» ile uyuyor."
+  },
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-try-irreg",
+  "type": "match",
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the pairs.",
+   "tr": "Eşleştir."
+  },
+  "left": [
+   "έρχομαι",
+   "βλέπω",
+   "λέω",
+   "τρώω",
+   "μπαίνω"
+  ],
+  "right": [
+   "ελάτε",
+   "δείτε",
+   "πείτε",
+   "φάτε",
+   "μπείτε"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "explain": {
+   "en": "The plural instructions: έρχομαι → ελάτε, βλέπω → δείτε, λέω → πείτε, τρώω → φάτε, μπαίνω → μπείτε. Each verb has its own form.",
+   "tr": "Çoğul emirler: έρχομαι → ελάτε, βλέπω → δείτε, λέω → πείτε, τρώω → φάτε, μπαίνω → μπείτε. Her fiilin kendi biçimi var."
+  },
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-try-pron",
+  "type": "mcq",
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πώς ζητάω ευγενικά το χάπι από τον φαρμακοποιό;",
+   "en": "How do you politely ask the pharmacist to give you the pill?",
+   "tr": "Eczacıdan hapı nazikçe nasıl istersin?"
+  },
+  "options": [
+   "Δώστε μου το χάπι.",
+   "Μου δώστε το χάπι.",
+   "Δώστε με το χάπι."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "In a positive instruction the pronoun comes after the verb: Δώστε μου. «Μου δώστε» puts it in front. «Δώστε με» uses με (me), but «to me» is μου.",
+   "tr": "Olumlu emirde zamir fiilden sonra gelir: Δώστε μου. «Μου δώστε» zamiri öne koyuyor. «Δώστε με» ise με (beni) kullanıyor; «bana» μου demektir."
+  },
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-try-neg",
+  "type": "mcq",
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Αϊσέ, μην … το σιρόπι με καφέ!",
+   "en": "Ayşe, don't ___ the syrup with coffee!",
+   "tr": "Ayşe, şurubu kahveyle ___!"
+  },
+  "options": [
+   "πάρεις",
+   "πάρε",
+   "πήρες"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "After μην comes the 2nd person of the once-only stem, as after να: μην πάρεις. Never μην + the instruction form (πάρε), and the past (πήρες) does not fit an instruction.",
+   "tr": "μην sözcüğünden sonra, να'dan sonraki gibi, bir kerelik kökün 2. kişisi gelir: μην πάρεις. μην + emir biçimi (πάρε) olmaz; geçmiş zaman (πήρες) da bir emre uymaz."
+  },
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-p-sort",
+  "ask": {
+   "en": "Sort each sentence into the right group. The first group is for one friend (εσύ), the second for a polite «you» or several people (εσείς).",
+   "tr": "Her cümleyi doğru gruba koy. İlk grup tek bir arkadaş (εσύ), ikincisi nazik «siz» ya da birkaç kişi (εσείς) içindir."
+  },
+  "type": "categorise",
+  "rubric": {
+   "el": "Βάζω κάθε πρόταση στη σωστή ομάδα.",
+   "en": "Sort each sentence into the right group. The first group is for one friend (εσύ), the second for a polite «you» or several people (εσείς).",
+   "tr": "Her cümleyi doğru gruba koy. İlk grup tek bir arkadaş (εσύ), ikincisi nazik «siz» ya da birkaç kişi (εσείς) içindir."
+  },
+  "categories": [
+   "Σε έναν φίλο (εσύ)",
+   "Ευγενικά ή σε πολλούς (εσείς)"
+  ],
+  "items": [
+   "Διάβασε το μήνυμα.",
+   "Πάρτε το σιρόπι.",
+   "Ελάτε την Πέμπτη.",
+   "Φέρε μου νερό.",
+   "Καθίστε, παρακαλώ.",
+   "Πες μου."
+  ],
+  "answer": [
+   0,
+   1,
+   1,
+   0,
+   1,
+   0
+  ],
+  "explain": {
+   "en": "-ε (and one-syllable πες) is for one friend: διάβασε, φέρε, πες. -τε is for several people or a polite «you»: πάρτε, ελάτε, καθίστε.",
+   "tr": "-ε (ve tek heceli πες) tek bir arkadaş içindir: διάβασε, φέρε, πες. -τε birkaç kişi ya da nazik «siz» içindir: πάρτε, ελάτε, καθίστε."
+  },
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-p-type-pl",
+  "type": "form",
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "μιλάω → θα μιλήσω → (εσείς) {1}, παρακαλώ.",
+  "answer": {
+   "1": [
+    "μιλήστε"
+   ]
+  },
+  "translation": {
+   "en": "μιλάω → θα μιλήσω → (you, polite) speak, please.",
+   "tr": "μιλάω → θα μιλήσω → (siz) konuşun, lütfen."
+  },
+  "explain": {
+   "en": "The stem of θα μιλήσω plus -τε gives μιλήστε, with the stress just before -τε. (The singular is μίλησε.)",
+   "tr": "θα μιλήσω kökü + -τε = μιλήστε; vurgu -τε ekinden hemen önce. (Tekil: μίλησε.)"
+  },
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-p-irreg-form",
+  "type": "form",
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Κύριε Παππά, {1}, παρακαλώ.",
+  "answer": {
+   "1": [
+    "μπείτε"
+   ]
+  },
+  "options": {
+   "1": [
+    "μπείτε",
+    "μπες",
+    "μπω"
+   ]
+  },
+  "translation": {
+   "en": "Mr Pappas, come in, please.",
+   "tr": "Bay Pappas, girin, lütfen."
+  },
+  "explain": {
+   "en": "«Κύριε» is a polite «you», so the plural form: μπαίνω → θα μπω → μπείτε. μπες is for a friend.",
+   "tr": "«Κύριε» nazik «siz» demek, o yüzden çoğul biçim: μπαίνω → θα μπω → μπείτε. μπες bir arkadaş içindir."
+  },
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-p-pron-choice",
+  "type": "form",
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Γιατρέ, πείτε {1}, παρακαλώ: είναι γρίπη;",
+  "answer": {
+   "1": [
+    "μου"
+   ]
+  },
+  "options": {
+   "1": [
+    "μου",
+    "με",
+    "εγώ"
+   ]
+  },
+  "translation": {
+   "en": "Doctor, tell me please: is it the flu?",
+   "tr": "Doktor, söyleyin bana lütfen: grip mi?"
+  },
+  "explain": {
+   "en": "«Tell me» is πείτε μου: the pronoun for «to me» comes after the instruction. με would mean \"me\" as an object («listen to me»), and εγώ is the subject form.",
+   "tr": "«Bana söyleyin», πείτε μου demektir: «bana» zamiri emirden sonra gelir. με «beni» demek olurdu («beni dinleyin»); εγώ ise özne biçimidir."
+  },
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-p-neg-match",
+  "type": "match",
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the pairs.",
+   "tr": "Eşleştir."
+  },
+  "left": [
+   "πάρτε το",
+   "δώσε μου",
+   "πες μου",
+   "φάε το",
+   "κλείσε το"
+  ],
+  "right": [
+   "μην το πάρετε",
+   "μη μου δώσεις",
+   "μη μου πεις",
+   "μην το φας",
+   "μην το κλείσεις"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "explain": {
+   "en": "Positive instruction → μην/μη + 2nd person, with the pronoun back in front of the verb. πάρτε is plural (πάρετε); the others are singular (δώσεις, πεις, φας, κλείσεις).",
+   "tr": "Olumlu emir → μην/μη + 2. kişi; zamir fiilin önüne döner. πάρτε çoğul (πάρετε); öbürleri tekil (δώσεις, πεις, φας, κλείσεις)."
+  },
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-p-neg-mcq",
+  "type": "mcq",
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πώς λέω στη μητέρα μου να μην ανοίξει το παράθυρο;",
+   "en": "How do you tell your mother not to open the window?",
+   "tr": "Annene pencereyi açmamasını nasıl söylersin?"
+  },
+  "options": [
+   "Μην ανοίξεις το παράθυρο.",
+   "Μην άνοιξε το παράθυρο.",
+   "Μην ανοίξτε το παράθυρο."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "To one person you know well: μην + 2nd person singular. «Μην άνοιξε» uses the instruction form and «μην ανοίξτε» the plural instruction; neither is allowed after μην.",
+   "tr": "Yakından tanıdığın tek bir kişiye: μην + 2. tekil kişi. «Μην άνοιξε» emir biçimini, «μην ανοίξτε» çoğul emir biçimini kullanıyor; ikisi de μην'den sonra olmaz."
+  },
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-p-adv-bank",
+  "type": "gap_bank",
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Έχω πυρετό, αλλά {1} δε βήχω. Θέλω να έρθω, αλλά {2} δε νιώθω καλά. Δεν καταλαβαίνω· μιλήστε {3}, παρακαλώ. Το παιδί έχει πυρετό σαράντα! Τηλεφωνήστε {4} στον γιατρό!",
+  "bank": [
+   "ευτυχώς",
+   "δυστυχώς",
+   "αργά",
+   "αμέσως"
+  ],
+  "answer": {
+   "1": "ευτυχώς",
+   "2": "δυστυχώς",
+   "3": "αργά",
+   "4": "αμέσως"
+  },
+  "translation": {
+   "en": "I have a fever, but fortunately I don't cough. I want to come, but unfortunately I don't feel well. I don't understand; speak slowly, please. The child has a fever of forty! Phone the doctor at once!",
+   "tr": "Ateşim var ama neyse ki öksürmüyorum. Gelmek istiyorum ama maalesef kendimi iyi hissetmiyorum. Anlamıyorum; yavaş konuşun, lütfen. Çocuğun ateşi kırk! Doktoru hemen arayın!"
+  },
+  "explain": {
+   "en": "Good news takes ευτυχώς, bad news δυστυχώς. Slow speech needs αργά, and an emergency needs αμέσως.",
+   "tr": "İyi haber ευτυχώς, kötü haber δυστυχώς alır. Yavaş konuşma αργά ister, acil durum αμέσως."
+  },
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-p-adj-match",
+  "type": "match",
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the pairs.",
+   "tr": "Eşleştir."
+  },
+  "left": [
+   "καλός",
+   "γρήγορος",
+   "αργός",
+   "σωστός",
+   "ωραίος"
+  ],
+  "right": [
+   "καλά",
+   "γρήγορα",
+   "αργά",
+   "σωστά",
+   "ωραία"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "explain": {
+   "en": "Adjective in -ος → adverb in -α, with the stress on the same syllable.",
+   "tr": "-ος ile biten sıfat → -α ile biten zarf; vurgu aynı hecede kalır."
+  },
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-p-body-gender",
+  "type": "gap_bank",
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Με πονάει {1} κεφάλι μου. Με πονάει και {2} λαιμός μου, αλλά όχι {3} πλάτη μου.",
+  "bank": [
+   "το",
+   "ο",
+   "η"
+  ],
+  "answer": {
+   "1": "το",
+   "2": "ο",
+   "3": "η"
+  },
+  "translation": {
+   "en": "My head hurts. My throat hurts too, but not my back.",
+   "tr": "Başım ağrıyor. Boğazım da ağrıyor, ama sırtım ağrımıyor."
+  },
+  "explain": {
+   "en": "The article follows the body part: το κεφάλι (neuter), ο λαιμός (masculine), η πλάτη (feminine).",
+   "tr": "Artikel vücut parçasına uyar: το κεφάλι (nötr), ο λαιμός (eril), η πλάτη (dişil)."
+  },
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch21-p-roleplay",
+  "type": "mcq",
+  "skill": "speaking",
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Είστε στο φαρμακείο. Έχετε πυρετό και βήχετε. Τι λέτε στον φαρμακοποιό;",
+   "en": "You are at the pharmacy. You have a fever and you cough. What do you say to the pharmacist?",
+   "tr": "Eczanedesin. Ateşin var ve öksürüyorsun. Eczacıya ne dersin?"
+  },
+  "options": [
+   "Δε νιώθω καλά. Έχω πυρετό και βήχω.",
+   "Πάρτε πυρετό και βήχα.",
+   "Μην έχω πυρετό, παρακαλώ."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "You describe how you feel: δε νιώθω καλά, έχω πυρετό, βήχω. The other two use an instruction or μην where you should simply say what is wrong.",
+   "tr": "Nasıl olduğunu anlatırsın: δε νιώθω καλά, έχω πυρετό, βήχω. Diğer ikisi, derdini söylemen gereken yerde emir ya da μην kullanıyor."
+  },
+  "level": "A2",
+  "topics": [
+   "stage:lesson-21"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-21",
+   "by": "sonnet-draft"
+  }
+ }
+]

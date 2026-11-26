@@ -1,0 +1,871 @@
+{
+ "id": "oknos-book.lesson-14",
+ "curriculum": "oknos-book",
+ "stage": "lesson-14",
+ "level": "A2",
+ "title": {
+  "tr": "Daire arıyorum: ilanlar, çevre ve tarif; υπάρχει, sıra sayıları, δίπλα σε",
+  "en": "Looking for a flat: ads, the neighbourhood and directions; υπάρχει, ordinals, δίπλα σε"
+ },
+ "minutes": 17,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde bir daire ilanını okumayı, emlakçıyla konuşmayı ve çevreyi sormayı öğreneceksin: **yakında süpermarket var mı?**, **durak nerede?**, **metroya nasıl giderim?**\n\nAnahtar nokta: «var» Yunancada **υπάρχει** (tekil) ya da **υπάρχουν** (çoğul) olur. Yer sözcüğü de isimden önce gelir: **δίπλα στο φαρμακείο**, **απέναντι από την τράπεζα**.",
+     "en": "In this chapter you learn to read a flat ad, talk to an estate agent and ask what is nearby: **is there a supermarket near here?**, **where is the stop?**, **how do I get to the metro?**\n\nThe key point: «there is» is **υπάρχει** (singular) or **υπάρχουν** (plural), and a place word goes before the noun: **δίπλα στο φαρμακείο**, **απέναντι από την τράπεζα**."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Daire ilanı ve gezme",
+    "en": "The flat ad and the viewing"
+   },
+   "blocks": [
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ayşe emlakçı Bay Petrou'yu arıyor. Bir ilan sitesinde iki daire görmüş.",
+      "en": "Ayşe phones Mr Petrou, an estate agent. She has seen two flats on an ad site."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα σας. Ψάχνω διαμέρισμα στο κέντρο.",
+       "tr": "Günaydın. Merkezde bir daire arıyorum.",
+       "en": "Good morning. I'm looking for a flat in the centre."
+      },
+      {
+       "who": "Μεσίτης",
+       "el": "Καλημέρα σας. Υπάρχουν δύο διαμερίσματα. Το πρώτο είναι εξήντα πέντε τετραγωνικά και έχει δύο υπνοδωμάτια, σαλόνι και μπαλκόνι.",
+       "tr": "Günaydın. İki daire var. Birincisi altmış beş metrekare; iki yatak odası, salonu ve balkonu var.",
+       "en": "Good morning. There are two flats. The first is sixty-five square metres and has two bedrooms, a living room and a balcony."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Είναι επιπλωμένο;",
+       "tr": "Eşyalı mı?",
+       "en": "Is it furnished?"
+      },
+      {
+       "who": "Μεσίτης",
+       "el": "Ναι, είναι επιπλωμένο. Είναι στον τρίτο όροφο και υπάρχει ασανσέρ.",
+       "tr": "Evet, eşyalı. Üçüncü katta ve asansör var.",
+       "en": "Yes, it's furnished. It's on the third floor and there is a lift."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Πόσο είναι το ενοίκιο;",
+       "tr": "Kira ne kadar?",
+       "en": "How much is the rent?"
+      },
+      {
+       "who": "Μεσίτης",
+       "el": "Πεντακόσια ευρώ τον μήνα.",
+       "tr": "Ayda beş yüz euro.",
+       "en": "Five hundred euros a month."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ωραία. Και το δεύτερο;",
+       "tr": "Güzel. Ya ikincisi?",
+       "en": "Good. And the second one?"
+      },
+      {
+       "who": "Μεσίτης",
+       "el": "Το δεύτερο είναι στον πρώτο όροφο, κοντά στο μετρό. Έχει ένα υπνοδωμάτιο και μπαλκόνι, αλλά δεν υπάρχει ασανσέρ.",
+       "tr": "İkincisi birinci katta, metroya yakın. Bir yatak odası ve balkonu var ama asansör yok.",
+       "en": "The second is on the first floor, near the metro. It has one bedroom and a balcony, but there is no lift."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Θα έρθω αύριο στο πρώτο διαμέρισμα, στις έντεκα.",
+       "tr": "Yarın saat on birde birinci daireye geleceğim.",
+       "en": "I'll come to the first flat tomorrow, at eleven."
+      },
+      {
+       "who": "Μεσίτης",
+       "el": "Ναι. Θα είμαι εκεί στις έντεκα.",
+       "tr": "Tamam. Saat on birde orada olacağım.",
+       "en": "Yes. I'll be there at eleven."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ευχαριστώ πολύ, κύριε Πέτρου. Γεια σας!",
+       "tr": "Çok teşekkürler Bay Petrou. Hoşça kalın!",
+       "en": "Thank you very much, Mr Petrou. Goodbye!"
+      }
+     ]
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ertesi gün. Ayşe daireyi geziyor ve çevreyi soruyor.",
+      "en": "The next day. Ayşe views the flat and asks about the area."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα, κύριε Πέτρου! Ήρθα με το μετρό.",
+       "tr": "Günaydın Bay Petrou! Metroyla geldim.",
+       "en": "Good morning, Mr Petrou! I came by metro."
+      },
+      {
+       "who": "Μεσίτης",
+       "el": "Καλημέρα σας! Ορίστε, αυτό είναι το σαλόνι. Τα υπνοδωμάτια είναι εκεί και η κουζίνα είναι δίπλα στο μπάνιο.",
+       "tr": "Günaydın! Buyurun, burası salon. Yatak odaları orada, mutfak da banyonun yanında.",
+       "en": "Good morning! Here you are, this is the living room. The bedrooms are there and the kitchen is next to the bathroom."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Η θέα είναι πολύ ωραία! Υπάρχει σουπερμάρκετ κοντά;",
+       "tr": "Manzara çok güzel! Yakında süpermarket var mı?",
+       "en": "The view is lovely! Is there a supermarket nearby?"
+      },
+      {
+       "who": "Μεσίτης",
+       "el": "Ναι, υπάρχει ένα απέναντι από το φαρμακείο. Στη γειτονιά υπάρχουν και δύο φούρνοι. Η στάση είναι δίπλα στην τράπεζα.",
+       "tr": "Evet, eczanenin karşısında bir tane var. Mahallede iki de fırın var. Durak bankanın yanında.",
+       "en": "Yes, there is one opposite the pharmacy. There are also two bakeries in the neighbourhood. The stop is next to the bank."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Πώς πάω στο μετρό;",
+       "tr": "Metroya nasıl giderim?",
+       "en": "How do I get to the metro?"
+      },
+      {
+       "who": "Μεσίτης",
+       "el": "Προχωράτε ευθεία και περνάτε την τράπεζα. Στη γωνία στρίβετε αριστερά. Το μετρό είναι μπροστά στην πλατεία.",
+       "tr": "Dümdüz ilerliyorsunuz ve bankayı geçiyorsunuz. Köşede sola dönüyorsunuz. Metro meydanın önünde.",
+       "en": "You go straight on and past the bank. At the corner you turn left. The metro is in front of the square."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ευχαριστώ! Είναι ωραίο διαμέρισμα. Θα έρθω αύριο με την Ελένη.",
+       "tr": "Teşekkürler! Güzel bir daire. Yarın Eleni'yle geleceğim.",
+       "en": "Thank you! It's a nice flat. I'll come tomorrow with Eleni."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloglara göre:",
+     "en": "According to the dialogues:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch14-q-floor",
+      "oknos-book/ch14-q-tf"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Var / yok: υπάρχει ve είναι",
+    "en": "«There is»: υπάρχει and είναι"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Türkçedeki **var / yok** Yunancada **υπάρχει** (tekil) ve **υπάρχουν** (çoğul) olur; olumsuzu **δεν υπάρχει**. Yeni bir şeyin var olduğunu söylersin: *Υπάρχει ένας φούρνος.* Bildiğin bir şeyin yerini söylersen **είναι** kullanırsın: *Ο φούρνος είναι δίπλα στο φαρμακείο.*\n\nİki durumda da isim öznedir, bu yüzden **yalın hâldedir** (ονομαστική): *υπάρχει **ένας** φούρνος*, *έναν* değil.",
+     "en": "Turkish **var / yok** becomes **υπάρχει** (singular) and **υπάρχουν** (plural); the negative is **δεν υπάρχει**. You use it to say that something exists: *Υπάρχει ένας φούρνος.* When you say where a known thing is, you use **είναι**: *Ο φούρνος είναι δίπλα στο φαρμακείο.*\n\nIn both, the noun is the subject, so it is in the **nominative** (ονομαστική): *υπάρχει **ένας** φούρνος*, never *έναν*."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      "υπάρχει / υπάρχουν",
+      "είναι"
+     ],
+     "rows": [
+      [
+       {
+        "tr": "Ne için?",
+        "en": "What for?"
+       },
+       {
+        "tr": "bir şeyin var olduğunu söylemek",
+        "en": "to say something exists"
+       },
+       {
+        "tr": "bilinen şeyin yerini söylemek",
+        "en": "to say where a known thing is"
+       }
+      ],
+      [
+       {
+        "tr": "tekil",
+        "en": "singular"
+       },
+       "Υπάρχει ένας φούρνος.",
+       "Ο φούρνος είναι κοντά."
+      ],
+      [
+       {
+        "tr": "çoğul",
+        "en": "plural"
+       },
+       "Υπάρχουν δύο φούρνοι.",
+       "Οι φούρνοι είναι κοντά."
+      ],
+      [
+       {
+        "tr": "olumsuz",
+        "en": "negative"
+       },
+       "Δεν υπάρχει φούρνος κοντά.",
+       "Ο φούρνος δεν είναι κοντά."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Υπάρχει μια τράπεζα στη γειτονιά.",
+       "tr": "Mahallede bir banka var.",
+       "en": "There is a bank in the neighbourhood."
+      },
+      {
+       "el": "Υπάρχουν δύο στάσεις κοντά.",
+       "tr": "Yakında iki durak var.",
+       "en": "There are two stops nearby."
+      },
+      {
+       "el": "Δεν υπάρχει ασανσέρ.",
+       "tr": "Asansör yok.",
+       "en": "There is no lift."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Gelmek: ήρθα ve θα έρθω",
+    "en": "Coming: ήρθα and θα έρθω"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**έρχομαι** (gelmek) fiilini şimdiye kadar yalnızca şimdiki zamanda gördün: *έρχομαι, έρχεσαι*. Geçmişte kök **ήρθ-**, gelecekte **έρθ-** olur ve ekler sıradan bir fiilinkiler gibidir: *ήρθα* (geldim), *ήρθες* (geldin); *θα έρθω* (geleceğim), *θα έρθεις* (geleceksin). Şimdilik yalnızca «ben» ve «sen» biçimleri.",
+     "en": "So far you have met **έρχομαι** (to come) only in the present: *έρχομαι, έρχεσαι*. The stem becomes **ήρθ-** in the past and **έρθ-** in the future, and the endings are those of an ordinary verb: *ήρθα* (I came), *ήρθες* (you came); *θα έρθω* (I will come), *θα έρθεις* (you will come). Only «I» and «you» for now."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      "έρχομαι: τώρα",
+      {
+       "tr": "geçmiş",
+       "en": "past"
+      },
+      {
+       "tr": "gelecek",
+       "en": "future"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "ben (εγώ)",
+        "en": "I (εγώ)"
+       },
+       "έρχομαι",
+       "ήρθα",
+       "θα έρθω"
+      ],
+      [
+       {
+        "tr": "sen (εσύ)",
+        "en": "you (εσύ)"
+       },
+       "έρχεσαι",
+       "ήρθες",
+       "θα έρθεις"
+      ]
+     ],
+     "note": {
+      "tr": "*θα* ayrı yazılır. Geçmiş *ή-* ile, gelecek *έ-* ile başlar: *ήρθα*, *θα έρθω*.",
+      "en": "*θα* is a separate word. The past starts with *ή-*, the future with *έ-*: *ήρθα*, *θα έρθω*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Ήρθα με το μετρό.",
+       "tr": "Metroyla geldim.",
+       "en": "I came by metro."
+      },
+      {
+       "el": "Αύριο θα έρθω στις έντεκα.",
+       "tr": "Yarın saat on birde geleceğim.",
+       "en": "Tomorrow I will come at eleven."
+      },
+      {
+       "el": "Θα έρθεις με την Ελένη;",
+       "tr": "Eleni'yle mi geleceksin?",
+       "en": "Will you come with Eleni?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "-άμαι ile biten fiiller: θυμάμαι, κοιμάμαι",
+    "en": "Verbs in -άμαι: θυμάμαι, κοιμάμαι"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bir grup fiil **-άμαι** ile biter: **θυμάμαι** (hatırlamak), **κοιμάμαι** (uyumak), **φοβάμαι** (korkmak), [[λυπάμαι]] (üzülmek; «üzgünüm»). *έρχομαι* gibi -μαι ile biterler ama ekleri farklıdır: **-άμαι, -άσαι, -άται, -όμαστε, -άστε, -ούνται**.",
+     "en": "Some verbs end in **-άμαι**: **θυμάμαι** (to remember), **κοιμάμαι** (to sleep), **φοβάμαι** (to be afraid), [[λυπάμαι]] (to be sorry; also «I'm sorry»). Like *έρχομαι* they end in -μαι, but the endings differ: **-άμαι, -άσαι, -άται, -όμαστε, -άστε, -ούνται**."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      "θυμάμαι",
+      "κοιμάμαι"
+     ],
+     "rows": [
+      [
+       {
+        "tr": "εγώ",
+        "en": "εγώ"
+       },
+       "θυμάμαι",
+       "κοιμάμαι"
+      ],
+      [
+       {
+        "tr": "εσύ",
+        "en": "εσύ"
+       },
+       "θυμάσαι",
+       "κοιμάσαι"
+      ],
+      [
+       {
+        "tr": "αυτός / αυτή / αυτό",
+        "en": "αυτός / αυτή / αυτό"
+       },
+       "θυμάται",
+       "κοιμάται"
+      ],
+      [
+       {
+        "tr": "εμείς",
+        "en": "εμείς"
+       },
+       "θυμόμαστε",
+       "κοιμόμαστε"
+      ],
+      [
+       {
+        "tr": "εσείς",
+        "en": "εσείς"
+       },
+       "θυμάστε",
+       "κοιμάστε"
+      ],
+      [
+       {
+        "tr": "αυτοί / αυτές / αυτά",
+        "en": "αυτοί / αυτές / αυτά"
+       },
+       "θυμούνται",
+       "κοιμούνται"
+      ]
+     ],
+     "note": {
+      "tr": "*Φοβάμαι* ve *λυπάμαι* aynı biçimde çekilir: *φοβάσαι, φοβάται, φοβόμαστε, φοβάστε, φοβούνται*. Vurgu *εμείς* biçiminde -ό-, *αυτοί* biçiminde -ού-, öbürlerinde -ά- üzerindedir. *Εσείς* için *θυμόσαστε* da duyulur. *Θυμάμαι* fiilinden sonra nesne -i hâlinde gelir: *θυμάμαι τον αριθμό*.",
+      "en": "*Φοβάμαι* and *λυπάμαι* work the same way: *φοβάσαι, φοβάται, φοβόμαστε, φοβάστε, φοβούνται*. The accent is on -ό- in the *εμείς* form, on -ού- in the *αυτοί* form and on -ά- elsewhere. For *εσείς* you also hear *θυμόσαστε*. After *θυμάμαι* the object is in the accusative: *θυμάμαι τον αριθμό*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Η Ελένη θυμάται τον αριθμό σου.",
+       "tr": "Eleni numaranı hatırlıyor.",
+       "en": "Eleni remembers your number."
+      },
+      {
+       "el": "Φοβάσαι το ασανσέρ;",
+       "tr": "Asansörden korkuyor musun?",
+       "en": "Are you afraid of the lift?"
+      },
+      {
+       "el": "Λυπάμαι, δεν υπάρχει ασανσέρ.",
+       "tr": "Üzgünüm, asansör yok.",
+       "en": "I'm sorry, there is no lift."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Sıra sayıları: ο πρώτος όροφος",
+    "en": "Ordinals: ο πρώτος όροφος"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Sıra sayıları sıfattır ve ismin cinsine uyar: **ο πρώτος όροφος**, **η πρώτη στάση**, **το πρώτο διαμέρισμα**. **Το ισόγειο** zemin kattır; **ο πρώτος όροφος** zeminden sonraki ilk kattır. İlanlarda rakam ve son ek yazılır: *3ος όροφος*, *1η*, *2ο*.",
+     "en": "Ordinals are adjectives: **ο πρώτος όροφος**, **η πρώτη στάση**, **το πρώτο διαμέρισμα**. **Το ισόγειο** is the ground floor, and **ο πρώτος όροφος** is the first floor above it. In ads the number and the ending are written: *3ος όροφος*, *1η*, *2ο*."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "eril (ο όροφος)",
+       "en": "masculine (ο όροφος)"
+      },
+      {
+       "tr": "sayı",
+       "en": "number"
+      }
+     ],
+     "rows": [
+      [
+       "πρώτος",
+       "1ος"
+      ],
+      [
+       "δεύτερος",
+       "2ος"
+      ],
+      [
+       "τρίτος",
+       "3ος"
+      ],
+      [
+       "τέταρτος",
+       "4ος"
+      ],
+      [
+       "πέμπτος",
+       "5ος"
+      ],
+      [
+       "έκτος",
+       "6ος"
+      ],
+      [
+       "έβδομος",
+       "7ος"
+      ],
+      [
+       "όγδοος",
+       "8ος"
+      ],
+      [
+       "ένατος",
+       "9ος"
+      ],
+      [
+       "δέκατος",
+       "10ος"
+      ]
+     ],
+     "note": {
+      "tr": "Dişil *-η*, nötr *-ο* ile biter: *πρώτη, πρώτο*; *όγδοη, όγδοο*; *δέκατη, δέκατο*.",
+      "en": "The feminine ends in *-η* and the neuter in *-ο*: *πρώτη, πρώτο*; *όγδοη, όγδοο*; *δέκατη, δέκατο*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Το γραφείο είναι στον πέμπτο όροφο.",
+       "tr": "Ofis beşinci katta.",
+       "en": "The office is on the fifth floor."
+      },
+      {
+       "el": "Μένω στο ισόγειο.",
+       "tr": "Zemin katta oturuyorum.",
+       "en": "I live on the ground floor."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Yer bildirmek: δίπλα σε, απέναντι από",
+    "en": "Saying where: δίπλα σε, απέναντι από"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Yer sözcüğü isimden **önce** gelir. Ardından **σε** ya da **από** gelir, isim de -i hâlinde (αιτιατική) olur. *Σε* artikelle birleşir: *σε + το = στο*, *σε + την = στην*. *Από* ayrı kalır: *από το, από την*.",
+     "en": "To say where something is, the place word comes **before the noun**, followed by **σε** or **από** and the accusative. *Σε* joins the article: *σε + το = στο*, *σε + την = στην*. *Από* stays separate: *από το, από την*."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "kalıp",
+       "en": "phrase"
+      },
+      {
+       "tr": "anlam",
+       "en": "meaning"
+      },
+      {
+       "tr": "örnek",
+       "en": "example"
+      }
+     ],
+     "rows": [
+      [
+       "δίπλα σε",
+       {
+        "tr": "…-ın yanında",
+        "en": "next to"
+       },
+       "Η κουζίνα είναι δίπλα στο μπάνιο."
+      ],
+      [
+       "κοντά σε",
+       {
+        "tr": "…-a yakın",
+        "en": "near"
+       },
+       "Το διαμέρισμα είναι κοντά στο μετρό."
+      ],
+      [
+       "μακριά από",
+       {
+        "tr": "…-dan uzak",
+        "en": "far from"
+       },
+       "Η τράπεζα είναι μακριά από το σπίτι."
+      ],
+      [
+       "απέναντι από",
+       {
+        "tr": "…-ın karşısında",
+        "en": "opposite"
+       },
+       "Το σουπερμάρκετ είναι απέναντι από το φαρμακείο."
+      ],
+      [
+       "πίσω από",
+       {
+        "tr": "…-ın arkasında",
+        "en": "behind"
+       },
+       "Ο φούρνος είναι πίσω από το σουπερμάρκετ."
+      ],
+      [
+       "μπροστά σε",
+       {
+        "tr": "…-ın önünde",
+        "en": "in front of"
+       },
+       "Το μετρό είναι μπροστά στην πλατεία."
+      ],
+      [
+       "ανάμεσα σε",
+       {
+        "tr": "…-ın arasında",
+        "en": "between"
+       },
+       "Το φαρμακείο είναι ανάμεσα στην τράπεζα και στο σουπερμάρκετ."
+      ]
+     ],
+     "note": {
+      "tr": "*Μπροστά* ile *από* da duyarsın (*μπροστά από το σπίτι*); ikisi de doğrudur.",
+      "en": "With *μπροστά* you also hear *από* (*μπροστά από το σπίτι*); both are correct."
+     }
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Tarif vermek: στρίβω, προχωράω, περνάω",
+    "en": "Giving directions: στρίβω, προχωράω, περνάω"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Tarif verirken, Türkçedeki «dümdüz gidiyorsun» gibi, şimdiki zamanın **ikinci kişisi** kullanılır: *Προχωράς ευθεία και στρίβεις δεξιά.* Tanımadığın birine ya da birkaç kişiye **εσείς** biçimi: *Προχωράτε ευθεία και στρίβετε δεξιά.* Emir kipi Ders 21'de gelecek. Yön sözcükleri: **ευθεία** (dümdüz), **δεξιά** (sağa; sağda), **αριστερά** (sola; solda).",
+     "en": "To give directions you use the present tense in the **second person**: *Προχωράς ευθεία και στρίβεις δεξιά.* To a stranger or to several people you use the **εσείς** form: *Προχωράτε ευθεία και στρίβετε δεξιά.* The imperative comes in Lesson 21. The direction words are **ευθεία** (straight on), **δεξιά** (to the right; on the right) and **αριστερά** (to the left; on the left)."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "sen (εσύ)",
+       "en": "you (εσύ)"
+      },
+      {
+       "tr": "siz (εσείς)",
+       "en": "you (εσείς)"
+      },
+      {
+       "tr": "anlam",
+       "en": "meaning"
+      }
+     ],
+     "rows": [
+      [
+       "στρίβεις",
+       "στρίβετε",
+       {
+        "tr": "dönmek",
+        "en": "to turn"
+       }
+      ],
+      [
+       "προχωράς",
+       "προχωράτε",
+       {
+        "tr": "ilerlemek",
+        "en": "to go on"
+       }
+      ],
+      [
+       "περνάς",
+       "περνάτε",
+       {
+        "tr": "geçmek",
+        "en": "to go past"
+       }
+      ]
+     ],
+     "note": {
+      "tr": "*Προχωράω* ve *περνάω* Ders 5'teki *μιλάω* gibi, *στρίβω* ise Ders 3'teki *γράφω* gibi çekilir. *Περνάω* fiilinden sonra yer -i hâlinde gelir: *περνάς την τράπεζα*.",
+      "en": "*Προχωράω* and *περνάω* follow *μιλάω* from Lesson 5, and *στρίβω* follows *γράφω* from Lesson 3. After *περνάω* the place is in the accusative: *περνάς την τράπεζα*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Προχωράς ευθεία και στρίβεις δεξιά.",
+       "tr": "Dümdüz gidersin ve sağa dönersin.",
+       "en": "You go straight on and turn right."
+      },
+      {
+       "el": "Η τράπεζα είναι αριστερά, δίπλα στο φαρμακείο.",
+       "tr": "Banka solda, eczanenin yanında.",
+       "en": "The bank is on the left, next to the pharmacy."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Özet: yalın hâl ve -i hâli",
+    "en": "Summary: nominative and accusative"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "En çok kullandığın iki hâl **yalın hâl** (ονομαστική) ve **-i hâli** (αιτιατική). Hangisi ne zaman?",
+     "en": "The two cases you use most are the **nominative** (ονομαστική) and the **accusative** (αιτιατική). Which one when?"
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "isim ne iş görür?",
+       "en": "what the noun does"
+      },
+      {
+       "tr": "hâl",
+       "en": "case"
+      },
+      {
+       "tr": "örnek",
+       "en": "example"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "özne",
+        "en": "subject"
+       },
+       {
+        "tr": "yalın",
+        "en": "nominative"
+       },
+       "Ο Νίκος ψάχνει διαμέρισμα."
+      ],
+      [
+       {
+        "tr": "είναι fiilinden sonra",
+        "en": "after είναι"
+       },
+       {
+        "tr": "yalın",
+        "en": "nominative"
+       },
+       "Ο κύριος Πέτρου είναι ο μεσίτης."
+      ],
+      [
+       {
+        "tr": "υπάρχει fiilinden sonra",
+        "en": "after υπάρχει"
+       },
+       {
+        "tr": "yalın",
+        "en": "nominative"
+       },
+       "Υπάρχει ένας φούρνος κοντά."
+      ],
+      [
+       {
+        "tr": "fiilin nesnesi",
+        "en": "object of a verb"
+       },
+       {
+        "tr": "-i hâli",
+        "en": "accusative"
+       },
+       "Ψάχνω τον μεσίτη."
+      ],
+      [
+       {
+        "tr": "edattan sonra (σε, από, για, με…)",
+        "en": "after a preposition (σε, από, για, με…)"
+       },
+       {
+        "tr": "-i hâli",
+        "en": "accusative"
+       },
+       "δίπλα στον φούρνο, απέναντι από τη στάση"
+      ],
+      [
+       {
+        "tr": "zaman",
+        "en": "time"
+       },
+       {
+        "tr": "-i hâli",
+        "en": "accusative"
+       },
+       "τη Δευτέρα, το πρωί, τον μήνα"
+      ]
+     ],
+     "note": {
+      "tr": "Artikel: *ο, η, το, οι, τα* yalın; *τον, την, το, τους, τις, τα* -i hâli. *Ένας* yalın, *έναν* -i hâli. Nötrde iki hâl aynıdır.",
+      "en": "Article: *ο, η, το, οι, τα* nominative; *τον, την, το, τους, τις, τα* accusative. *Ένας* is nominative, *έναν* accusative. In the neuter the two cases are the same."
+     }
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu dersin kelimeleri: dairenin bölümleri ve ilan sözcükleri, sıra sayıları, yer ve yön sözcükleri, *υπάρχω*, *ψάχνω* ve *ήρθα / θα έρθω*. Bölümü bitirince oturumlarına gelecekler.",
+     "en": "The words of this lesson: the parts of a flat and ad words, ordinals, place and direction words, *υπάρχω*, *ψάχνω* and *ήρθα / θα έρθω*. They come into your sessions once you finish the chapter."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/ch14-diamerisma",
+      "oknos-book/ch14-domatio",
+      "oknos-book/ch14-ypnodomatio",
+      "oknos-book/ch14-saloni",
+      "oknos-book/ch14-epiplomenos",
+      "oknos-book/ch14-tetragonika",
+      "oknos-book/ch14-orofos",
+      "oknos-book/ch14-isogeio",
+      "oknos-book/ch14-asanser",
+      "oknos-book/ch14-enoikio",
+      "oknos-book/ch14-mesitis",
+      "oknos-book/ch14-aggelia",
+      "oknos-book/v-yparcho-verb",
+      "oknos-book/ch14-psachno",
+      "oknos-book/ch14-protos",
+      "oknos-book/ch14-deyteros",
+      "oknos-book/ch14-stribo",
+      "oknos-book/ch14-prochorao",
+      "oknos-book/ch14-dexia",
+      "oknos-book/ch14-makria",
+      "oknos-book/ch14-pisw",
+      "oknos-book/ch14-brosta",
+      "oknos-book/ch14-anamesa",
+      "oknos-book/ch14-irtha",
+      "oknos-book/v-dipla-se-prep"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**«Evin yanında» Yunancada ters sırayla söylenir.** *Evin yanında* = **δίπλα στο** σπίτι; *σε* de artikelle birleşir.",
+     "en": "**The place word comes first, as in English.** *Next to the house* = **δίπλα στο** σπίτι, with *σε* joining the article."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**υπάρχει ile «ένας» de, «έναν» değil.** *Υπάρχει ένας φούρνος*, *υπάρχει έναν φούρνο* değil.",
+     "en": "**After υπάρχει say «ένας», not «έναν».** *Υπάρχει ένας φούρνος*, never *υπάρχει έναν φούρνο*."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "tr": "**Sınavda ilan okuma.** *Okuma* bölümünde kısa bir ilan ve «doğru / yanlış» cümleleri çıkabilir (a2ltr.reading.notices_tf). İlan sözcüklerine dikkat et: [[ΕΝΟΙΚΙΑΖΕΤΑΙ]] (kiralık), *τ.μ.* (metrekare), *4ος όροφος* (dördüncü kat), *με ασανσέρ* (asansörlü), *επιπλωμένο* (eşyalı), *τον μήνα* (aylık).",
+     "en": "**Reading ads in the exam.** The reading part can give a short notice and «true / false» statements (a2ltr.reading.notices_tf). Learn the ad words: [[ΕΝΟΙΚΙΑΖΕΤΑΙ]] (for rent), *τ.μ.* (square metres), *4ος όροφος* (fourth floor), *με ασανσέρ* (with a lift), *επιπλωμένο* (furnished), *τον μήνα* (per month).",
+     "exam_task": "a2ltr.reading.notices_tf"
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: υπάρχει ve είναι, ήρθα ve θα έρθω, -άμαι fiilleri, sıra sayıları ve yer sözcükleri.",
+     "en": "Now you try: υπάρχει and είναι, ήρθα and θα έρθω, the -άμαι verbs, ordinals and place words."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch14-try-yparchei",
+      "oknos-book/ch14-try-erchomai",
+      "oknos-book/ch14-try-thymamai",
+      "oknos-book/ch14-try-ordinal",
+      "oknos-book/ch14-try-prep"
+     ]
+    }
+   ]
+  }
+ ]
+}

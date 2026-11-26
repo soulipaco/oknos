@@ -1,0 +1,614 @@
+{
+ "id": "oknos-book.lesson-05",
+ "curriculum": "oknos-book",
+ "stage": "lesson-05",
+ "level": "A1",
+ "title": {
+  "tr": "Balkonda sohbet: diller, uyruklar, aile. μιλάω gibi fiiller",
+  "en": "On the balcony: languages, nationalities, family. Verbs like μιλάω"
+ },
+ "minutes": 13,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde hangi dilleri konuştuğunu, hangi milletten olduğunu ve ailende kimlerin olduğunu anlatmayı öğreneceksin.\n\nAnahtar nokta: *μιλάω* (konuşmak) gibi fiillerde vurgu sonda durur: **μιλάω, μιλάς, μιλάει, μιλάμε, μιλάτε, μιλάνε**. Diller de artikelsiz söylenir: **μιλάω τουρκικά** (Türkçe konuşuyorum).",
+     "en": "In this chapter you learn to say which languages you speak, which nationality you are, and who is in your family.\n\nThe key point: verbs like *μιλάω* (speak) keep the stress on the ending: **μιλάω, μιλάς, μιλάει, μιλάμε, μιλάτε, μιλάνε**. Languages are said without an article: **μιλάω τουρκικά** (I speak Turkish)."
+    }
+   ]
+  },
+  {
+   "kind": "warmup",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Komşunla balkonda sohbet ediyorsun. Kaç dil biliyorsun? Evde hangisini konuşuyorsun? Dinlerken fiillerin sonuna dikkat et: *μιλάω, μιλάς, μιλάει, μιλάμε…*",
+     "en": "You are chatting with a neighbour on the balcony. How many languages do you speak? Which one do you use at home? As you listen, watch the verb endings: *μιλάω, μιλάς, μιλάει, μιλάμε…*"
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Balkonda sohbet",
+    "en": "Chatting on the balcony"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Dinle, sonra oku. *μιλάω, μιλάς, μιλάει, μιλάμε, μιλάτε, μιλάνε* biçimlerini şimdilik olduğu gibi al; açıklaması aşağıda. *Με τη μητέρα μου* (annemle), *με τον πατέρα μου* (babamla) ve *την οικογένειά μου* (ailemi) ifadelerini de şimdilik kalıp say: artikelin neden *τη, τον, την* olduğunu Ders 7'de göreceksin.",
+     "en": "Listen, then read. Take the forms *μιλάω, μιλάς, μιλάει, μιλάμε, μιλάτε, μιλάνε* as they come; the explanation follows below. Take *με τη μητέρα μου* (with my mother), *με τον πατέρα μου* (with my father) and *την οικογένειά μου* (my family) as set phrases for now: why the article is *τη, τον, την* here comes in Lesson 7."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ayşe ve komşusu Eleni balkonda konuşuyor.",
+      "en": "Ayşe and her neighbour Eleni are talking on the balcony."
+     },
+     "lines": [
+      {
+       "who": "Ελένη",
+       "el": "Καλησπέρα, Αϊσέ! Μιλάς ελληνικά πολύ καλά!",
+       "tr": "İyi akşamlar Ayşe! Çok iyi Yunanca konuşuyorsun!",
+       "en": "Good evening, Ayşe! You speak Greek very well!"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ευχαριστώ, Ελένη! Μιλάω ελληνικά και λίγο αγγλικά. Στο σπίτι μιλάμε τουρκικά.",
+       "tr": "Teşekkürler Eleni! Yunanca ve biraz İngilizce konuşuyorum. Evde Türkçe konuşuyoruz.",
+       "en": "Thank you, Eleni! I speak Greek and a little English. At home we speak Turkish."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Εγώ μιλάω ελληνικά και γερμανικά. Η μητέρα μου είναι Γερμανίδα και ο πατέρας μου είναι Έλληνας.",
+       "tr": "Ben Yunanca ve Almanca konuşuyorum. Annem Alman, babam Yunan.",
+       "en": "I speak Greek and German. My mother is German and my father is Greek."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ωραία! Στο σπίτι σας μιλάτε γερμανικά;",
+       "tr": "Ne güzel! Sizin evde Almanca konuşuyor musunuz?",
+       "en": "Nice! Do you speak German at your house?"
+      },
+      {
+       "who": "Ελένη",
+       "el": "Με τη μητέρα μου μιλάω γερμανικά. Με τον πατέρα μου μιλάμε ελληνικά.",
+       "tr": "Annemle Almanca konuşuyorum. Babamla Yunanca konuşuyoruz.",
+       "en": "I speak German with my mother. With my father we speak Greek."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Και ο αδελφός σου; Μιλάει γερμανικά;",
+       "tr": "Ya erkek kardeşin? O Almanca konuşuyor mu?",
+       "en": "And your brother? Does he speak German?"
+      },
+      {
+       "who": "Ελένη",
+       "el": "Ναι, ο αδελφός μου και η αδελφή μου μιλάνε γερμανικά και αγγλικά. Και η οικογένειά σου; Είναι στην Αθήνα;",
+       "tr": "Evet, erkek kardeşim de kız kardeşim de Almanca ve İngilizce konuşuyor. Ya senin ailen? Atina'da mı?",
+       "en": "Yes, my brother and my sister speak German and English. And your family? Are they in Athens?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Όχι, η οικογένειά μου είναι στη Σμύρνη. Ο πατέρας μου είναι γιατρός και η μητέρα μου είναι δασκάλα. Αγαπάω πολύ την οικογένειά μου.",
+       "tr": "Hayır, ailem İzmir'de. Babam doktor, annem öğretmen. Ailemi çok seviyorum.",
+       "en": "No, my family is in Smyrna. My father is a doctor and my mother is a teacher. I love my family very much."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Ωραία οικογένεια!",
+       "tr": "Ne güzel bir aile!",
+       "en": "A lovely family!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloğa göre:",
+     "en": "According to the dialogue:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch05-q-mother",
+      "oknos-book/ch05-q-true-false"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Şimdiki zaman: μιλάω, μιλάς, μιλάει…",
+    "en": "The present: μιλάω, μιλάς, μιλάει…"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ders 3'te *δουλεύω, δουλεύεις, δουλεύει…* gibi fiilleri gördün; orada vurgu hep kökte kalıyordu (*δου-λεύ-ω*). Bir grup fiilde ise vurgu **ekin başındaki -ά-** üzerindedir: *μι-λά-ω* (konuşmak). Dilbilgisi kitapları bu gruba *B1 fiilleri* der (sınav seviyesi B1 ile ilgisi yok). Ekler: **-άω, -άς, -άει, -άμε, -άτε, -άνε**.\nSağ sütunda aynı fiilin kısa biçimleri var: **μιλώ, μιλά, μιλούν**. İkisi de doğru ve ikisini de duyacaksın; anlam aynı. Konuşurken ortadaki sütunu kullan. *μιλάς* ve *μιλάτε* iki sütunda da aynıdır; *μιλάμε* da her yerde kullanılır (*μιλούμε* resmî ve seyrek).",
+     "en": "In Lesson 3 you met verbs like *δουλεύω, δουλεύεις, δουλεύει…*, where the stress stays on the stem (*δου-λεύ-ω*). In another group the stress falls on **the -ά- of the ending**: *μι-λά-ω* (speak). Grammar books call this group *B1 verbs* (nothing to do with the B1 exam level). The endings are **-άω, -άς, -άει, -άμε, -άτε, -άνε**.\nThe right column gives short forms of the same verb: **μιλώ, μιλά, μιλούν**. Both are correct and you will hear both; they mean the same. When you speak, use the middle column. *μιλάς* and *μιλάτε* are the same in both columns, and *μιλάμε* is used everywhere (*μιλούμε* is formal and rare)."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "μιλάω: konuşmak",
+      "en": "μιλάω: to speak"
+     },
+     "head": [
+      "",
+      {
+       "tr": "sık kullanılan",
+       "en": "usual form"
+      },
+      {
+       "tr": "kısa biçim",
+       "en": "short form"
+      }
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "μιλάω",
+       "μιλώ"
+      ],
+      [
+       "εσύ",
+       "μιλάς",
+       "μιλάς"
+      ],
+      [
+       "αυτός / αυτή / αυτό",
+       "μιλάει",
+       "μιλά"
+      ],
+      [
+       "εμείς",
+       "μιλάμε",
+       "μιλάμε"
+      ],
+      [
+       "εσείς",
+       "μιλάτε",
+       "μιλάτε"
+      ],
+      [
+       "αυτοί / αυτές / αυτά",
+       "μιλάνε",
+       "μιλούν(ε)"
+      ]
+     ],
+     "note": {
+      "tr": "İkinci tekil *μιλάς*'tır; *μιλάεις* diye bir biçim yoktur. Üçüncü tekil *-ει* ile yazılır: *μιλάει*. Çoğulda *μιλάνε* yerine kısaca *μιλάν* da denir.",
+      "en": "The second person is *μιλάς*; there is no *μιλάεις*. The third person singular is written with *-ει*: *μιλάει*. In the plural, *μιλάνε* is also shortened to *μιλάν*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Μιλάς ελληνικά;",
+       "tr": "Yunanca konuşuyor musun?",
+       "en": "Do you speak Greek?"
+      },
+      {
+       "el": "Η Ελένη μιλάει γερμανικά.",
+       "tr": "Eleni Almanca konuşuyor.",
+       "en": "Eleni speaks German."
+      },
+      {
+       "el": "Στο σπίτι μιλάμε τουρκικά.",
+       "tr": "Evde Türkçe konuşuyoruz.",
+       "en": "At home we speak Turkish."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Aynı kalıp: ρωτάω, αγαπάω, ξυπνάω",
+    "en": "The same pattern: ρωτάω, αγαπάω, ξυπνάω"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Aynı ekler başka fiillerde de çalışır: *ρωτάω* (sormak), *αγαπάω* (sevmek), *ξυπνάω* (uyanmak). *ρωτάω* ve *αγαπάω*'dan sonra sorduğun ya da sevdiğin kişi gelir: *ρωτάω τη μητέρα μου* (anneme soruyorum), *αγαπάω την οικογένειά μου* (ailemi seviyorum). Bunları şimdilik kalıp olarak öğren; fiilden sonra artikelin neden *τον / την / τη* olduğu Ders 7'nin konusu.",
+     "en": "The same endings work for other verbs: *ρωτάω* (ask), *αγαπάω* (love), *ξυπνάω* (wake up). After *ρωτάω* and *αγαπάω* comes the person you ask or love: *ρωτάω τη μητέρα μου* (I ask my mother), *αγαπάω την οικογένειά μου* (I love my family). Learn these as set patterns for now; why the article becomes *τον / την / τη* after a verb is Lesson 7."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      "ρωτάω",
+      "αγαπάω",
+      "ξυπνάω"
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "ρωτάω",
+       "αγαπάω",
+       "ξυπνάω"
+      ],
+      [
+       "εσύ",
+       "ρωτάς",
+       "αγαπάς",
+       "ξυπνάς"
+      ],
+      [
+       "αυτός / αυτή / αυτό",
+       "ρωτάει",
+       "αγαπάει",
+       "ξυπνάει"
+      ],
+      [
+       "εμείς",
+       "ρωτάμε",
+       "αγαπάμε",
+       "ξυπνάμε"
+      ],
+      [
+       "εσείς",
+       "ρωτάτε",
+       "αγαπάτε",
+       "ξυπνάτε"
+      ],
+      [
+       "αυτοί / αυτές / αυτά",
+       "ρωτάνε",
+       "αγαπάνε",
+       "ξυπνάνε"
+      ]
+     ],
+     "note": {
+      "tr": "Kısa biçimler de aynı kalıpta: *ρωτώ, ρωτά, ρωτούν(ε)*; *αγαπώ, αγαπά, αγαπούν(ε)*; *ξυπνώ, ξυπνά, ξυπνούν(ε)*.",
+      "en": "The short forms follow the same pattern: *ρωτώ, ρωτά, ρωτούν(ε)*; *αγαπώ, αγαπά, αγαπούν(ε)*; *ξυπνώ, ξυπνά, ξυπνούν(ε)*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Ρωτάω τη μητέρα μου.",
+       "tr": "Anneme soruyorum.",
+       "en": "I ask my mother."
+      },
+      {
+       "el": "Η Ελένη αγαπάει τον πατέρα της.",
+       "tr": "Eleni babasını seviyor.",
+       "en": "Eleni loves her father.",
+       "note": {
+        "tr": "*της*: sahibi Eleni, yani bir kadın.",
+        "en": "*της*, because the owner is Eleni, a woman."
+       }
+      },
+      {
+       "el": "Το παιδί μου ξυπνάει νωρίς.",
+       "tr": "Çocuğum erken uyanıyor.",
+       "en": "My child wakes up early."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Diller: μιλάω τουρκικά",
+    "en": "Languages: μιλάω τουρκικά"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "*μιλάω* fiilinden sonra dil **artikelsiz** gelir: *μιλάω τουρκικά, ελληνικά, αγγλικά, γερμανικά*. Türkçedeki *-ce* gibi düşün: *Yunanca konuşuyorum* = *μιλάω ελληνικά*. Dil adları **küçük harfle** yazılır. Bunlar aslında çoğul nötr kelimelerdir (sözlükte *τα ελληνικά*); kuralı sonraki derslerde gelecek, şimdilik *μιλάω* ile kalıp olarak öğren.\n*πολύ καλά* (çok iyi) genelde dilden sonra, *λίγο* (biraz) dilden önce gelir.",
+     "en": "After *μιλάω* the language comes **without an article**: *μιλάω τουρκικά, ελληνικά, αγγλικά, γερμανικά*. Language names are written with a **small letter**. They are really neuter plural words (the dictionary gives *τα ελληνικά*); the rule comes in later lessons, so for now learn them with *μιλάω* as set phrases.\n*πολύ καλά* (very well) usually comes after the language, *λίγο* (a little) before it."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "dil",
+       "en": "language"
+      },
+      "μιλάω …"
+     ],
+     "rows": [
+      [
+       {
+        "tr": "Türkçe",
+        "en": "Turkish"
+       },
+       "μιλάω τουρκικά"
+      ],
+      [
+       {
+        "tr": "Yunanca",
+        "en": "Greek"
+       },
+       "μιλάω ελληνικά"
+      ],
+      [
+       {
+        "tr": "İngilizce",
+        "en": "English"
+       },
+       "μιλάω αγγλικά"
+      ],
+      [
+       {
+        "tr": "Almanca",
+        "en": "German"
+       },
+       "μιλάω γερμανικά"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Μιλάω ελληνικά πολύ καλά.",
+       "tr": "Çok iyi Yunanca konuşuyorum.",
+       "en": "I speak Greek very well."
+      },
+      {
+       "el": "Μιλάω λίγο αγγλικά.",
+       "tr": "Biraz İngilizce konuşuyorum.",
+       "en": "I speak a little English."
+      },
+      {
+       "el": "Η Αϊσέ μιλάει τουρκικά και ελληνικά.",
+       "tr": "Ayşe Türkçe ve Yunanca konuşuyor.",
+       "en": "Ayşe speaks Turkish and Greek."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Uyruk: Τούρκος / Τουρκάλα",
+    "en": "Nationality: Τούρκος / Τουρκάλα"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Türkçede *Türk* hem erkek hem kadın için tek kelimedir. Yunancada erkek ve kadın için **iki ayrı kelime** vardır; ikisini birlikte öğren: **ο Τούρκος / η Τουρκάλα**. Kadın biçimlerinin çoğu **-ίδα** ile biter: *Ελληνίδα, Γερμανίδα*. Kadın kendinden söz ederken kendi biçimini kullanır: *Είμαι Τουρκάλα.* Uyruk adları **büyük harfle** yazılır; dil adları küçük harfle.",
+     "en": "English has one word (*Greek*) for a man or a woman; Greek has **two**. Learn them as a pair: **ο Τούρκος / η Τουρκάλα**. Many women's forms end in **-ίδα**: *Ελληνίδα, Γερμανίδα*. A woman uses her own form: *Είμαι Τουρκάλα.* Nationalities are written with a **capital letter**; languages are written with a small letter."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "erkek",
+       "en": "man"
+      },
+      {
+       "tr": "kadın",
+       "en": "woman"
+      }
+     ],
+     "rows": [
+      [
+       "ο Τούρκος",
+       "η Τουρκάλα"
+      ],
+      [
+       "ο Έλληνας",
+       "η Ελληνίδα"
+      ],
+      [
+       "ο Άγγλος",
+       "η Αγγλίδα"
+      ],
+      [
+       "ο Γερμανός",
+       "η Γερμανίδα"
+      ],
+      [
+       "ο Ιταλός",
+       "η Ιταλίδα"
+      ],
+      [
+       "ο Αμερικανός",
+       "η Αμερικανίδα"
+      ]
+     ],
+     "note": {
+      "tr": "Kadın biçimi ayrı bir kelime gibi öğrenilir; *Τουρκάλα* diğerlerinden farklı biter.",
+      "en": "Learn each woman's form as its own word; *Τουρκάλα* ends differently from the others."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Η Αϊσέ είναι Τουρκάλα.",
+       "tr": "Ayşe Türk.",
+       "en": "Ayşe is Turkish."
+      },
+      {
+       "el": "Ο Νίκος είναι Έλληνας.",
+       "tr": "Nikos Yunan.",
+       "en": "Nikos is Greek."
+      },
+      {
+       "el": "Η μητέρα μου είναι Γερμανίδα.",
+       "tr": "Annem Alman.",
+       "en": "My mother is German."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Aile: η μητέρα μου, ο πατέρας μου",
+    "en": "Family: η μητέρα μου, ο πατέρας μου"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Aile kelimeleri Ders 4'teki sahiplik sözcükleriyle gelir: **η μητέρα μου**, **ο πατέρας σου**. Bu tablodaki kelimelerin hiçbiri sondan üçüncü hecede vurgulu değildir; bu yüzden **ikinci vurgu yok**. Ama Ders 4'ten hatırla: *η οικογένειά μου* ikinci vurgu alır.",
+     "en": "Family words come with the possessives of Lesson 4: **η μητέρα μου**, **ο πατέρας σου**. None of the words in this table is stressed on the third syllable from the end, so there is **no second accent**. But remember from Lesson 4: *η οικογένειά μου* does take one."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "erkek",
+       "en": "male"
+      },
+      {
+       "tr": "kadın",
+       "en": "female"
+      }
+     ],
+     "rows": [
+      [
+       "ο πατέρας",
+       "η μητέρα"
+      ],
+      [
+       "ο αδελφός",
+       "η αδελφή"
+      ],
+      [
+       "ο γιος",
+       "η κόρη"
+      ]
+     ],
+     "note": {
+      "tr": "Ayrıca: *η γιαγιά* (büyükanne) ve *το παιδί* (çocuk, Ders 3). Konuşmada *αδελφός, αδελφή* yerine çok sık *αδερφός, αδερφή* duyarsın; ikisi de doğru.",
+      "en": "Also: *η γιαγιά* (grandmother) and *το παιδί* (child, from Lesson 3). In speech you will very often hear *αδερφός, αδερφή* for *αδελφός, αδελφή*; both are correct."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Ο πατέρας μου είναι γιατρός.",
+       "tr": "Babam doktor.",
+       "en": "My father is a doctor."
+      },
+      {
+       "el": "Η αδελφή της είναι φοιτήτρια.",
+       "tr": "Kız kardeşi üniversite öğrencisi.",
+       "en": "Her sister is a university student.",
+       "note": {
+        "tr": "*της*: sahibi bir kadın.",
+        "en": "*της*: the owner is a woman."
+       }
+      },
+      {
+       "el": "Ο γιος μας σπουδάζει στο πανεπιστήμιο.",
+       "tr": "Oğlumuz üniversitede okuyor.",
+       "en": "Our son studies at the university."
+      },
+      {
+       "el": "Η γιαγιά μου μένει στη Σμύρνη.",
+       "tr": "Büyükannem İzmir'de oturuyor.",
+       "en": "My grandmother lives in Smyrna."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu dersin kelimeleri: diller, uyruklar, aile ve üç yeni fiil. Bölümü bitirince oturumlarına gelecekler.",
+     "en": "The words of this lesson: languages, nationalities, family and three new verbs. They come into your sessions once you finish the chapter."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/v-milao-verb",
+      "oknos-book/v-milo-verb",
+      "oknos-book/ch05-rotao",
+      "oknos-book/ch05-agapao",
+      "oknos-book/ch05-xypnao",
+      "oknos-book/ch05-tourkika",
+      "oknos-book/ch05-ellinika",
+      "oknos-book/ch05-agglika",
+      "oknos-book/ch05-germanika",
+      "oknos-book/v-kala-adj",
+      "oknos-book/ch05-ligo",
+      "oknos-book/v-noris-adv",
+      "oknos-book/ch05-tourkos",
+      "oknos-book/ch05-ellinas",
+      "oknos-book/ch05-agglos",
+      "oknos-book/ch05-germanos",
+      "oknos-book/ch05-italos",
+      "oknos-book/v-amerikanos-adj",
+      "oknos-book/v-mitera",
+      "oknos-book/v-pateras",
+      "oknos-book/ch05-adelfos",
+      "oknos-book/ch05-adelfi",
+      "oknos-book/v-gios",
+      "oknos-book/v-kori",
+      "oknos-book/v-giagia"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Dil ile uyruğu karıştırma.** Dil artikelsiz ve küçük harfle: *μιλάω τουρκικά*. Kişi büyük harfle: *Είμαι Τουρκάλα*.",
+     "en": "**Do not mix up language and nationality.** The language has no article and a small letter: *μιλάω τουρκικά*. The person has a capital: *Είμαι Τουρκάλα*."
+    },
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**Türkçeyle karşılaştır.** Türkçede de dil ile kişi ayrı kelimelerdir: *Türkçe / Türk*. Yunancada da öyle: *ελληνικά* (Yunanca), *Έλληνας* (Yunan). Fark şu: Türkçede *Türk* tek kelime, Yunancada erkek ve kadın ayrı: *Τούρκος, Τουρκάλα*.",
+     "en": "**Compared with English.** English has one word for the person and often one for the language (*Greek*). Greek separates them: *ελληνικά* (the language), *Έλληνας* and *Ελληνίδα* (the people)."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "exam_task": "b1keg.speaking.warmup",
+     "tr": "Sözlü sınavın ısınma kısmında genellikle kendin, ailen ve bildiğin diller hakkında soru sorulur. Kısa ve tam cümlelerle cevap ver: *Είμαι Τουρκάλα* (erkeksen *Τούρκος*). *Μιλάω τουρκικά και ελληνικά. Ο πατέρας μου είναι γιατρός.*",
+     "en": "The warm-up of the speaking test usually asks about you, your family and your languages. Answer in short, full sentences: *Είμαι Τουρκάλα* (a man says *Τούρκος*). *Μιλάω τουρκικά και ελληνικά. Ο πατέρας μου είναι γιατρός.*"
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: fiil biçimleri, diller, uyruk ve aile.",
+     "en": "Now you try: verb forms, languages, nationality and family."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch05-try-milao",
+      "oknos-book/ch05-try-forms",
+      "oknos-book/ch05-try-language",
+      "oknos-book/ch05-try-nat",
+      "oknos-book/ch05-try-family"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -37,12 +37,36 @@ def test_the_open_book_has_no_load_problems(full_catalog):
 
 
 def test_a_fresh_learner_starts_by_reading_the_first_chapter(open_book, full_catalog):
+    # a fresh clone's course is the Oknos book; the shorter open course is one profile line away
     conn = db.open_db()
     packs.sync_items(conn, full_catalog)
+    prog = curriculum.progress(conn, full_catalog)
+    assert prog.curriculum.id == "oknos-book"
+    action = curriculum.next_action(prog, "fresh", 0)
+    assert action["kind"] == "read" and action["stage"] == "intro"
+    (open_book / "profile.json").write_text(json.dumps({"curriculum": "open-a1-b1"}), encoding="utf-8")
     prog = curriculum.progress(conn, full_catalog)
     assert prog.curriculum.id == "open-a1-b1"
     action = curriculum.next_action(prog, "fresh", 0)
     assert action["kind"] == "read" and action["stage"] == "reading"
+
+
+def test_every_stage_of_the_oknos_book_has_a_chapter(full_catalog):
+    cur = curriculum.available(full_catalog)["oknos-book"]
+    assert len(cur.stages) == 26
+    for stage in cur.stages:
+        found = full_catalog.chapters.get((cur.id, stage.id))
+        assert found is not None and found[0].id == "oknos-book", stage.id
+        assert found[1].level == stage.level
+    assert not [p for p in full_catalog.problems if "oknos-book" in p]
+    book = paths.CONTENT_DIR / "open" / "oknos-book"
+    # nothing points back at the private pack it came from or the textbook it once followed
+    # (pack.json names that pack only in `replaces`, which moves the maintainer's history)
+    manifest = json.loads((book / "pack.json").read_text(encoding="utf-8"))
+    manifest.pop("replaces")
+    text = json.dumps(manifest, ensure_ascii=False) + " ".join(f.read_text(encoding="utf-8") for f in book.glob("*/*.json"))
+    for trace in ("greek-helper", "Greek_Helper", "Wordlist", ".pdf", "units.json", "Ders kitab"):
+        assert trace not in text, trace
 
 
 def _book_with_curriculum(tmp_path, follows):

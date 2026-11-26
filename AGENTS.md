@@ -23,12 +23,12 @@ uv run pytest                 # run the tests
 
 ## Current state
 
-Phases 1–5 and 5b are built and committed. Phase 5b is a curriculum the learner progresses through, plus screens to see and choose what to practise. Phase 5c (the book: a chapter to read before each stage's practice) is built. Phase 5d (every tappable word has a meaning; no question hidden behind "Translate") is built. **All 26 stages of the book curriculum have a chapter**: the intro, lessons 1–24 and the B1 bridge. Each was drafted by Sonnet (lessons 1–2 by Opus), reviewed by Opus, and validated. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16.
+Phases 1–5 and 5b are built and committed. Phase 5b is a curriculum the learner progresses through, plus screens to see and choose what to practise. Phase 5c (the book: a chapter to read before each stage's practice) is built. Phase 5d (every tappable word has a meaning; no question hidden behind "Translate") is built. **All 26 stages of the book curriculum have a chapter**: the intro, lessons 1–24 and the B1 bridge. Each was drafted by Sonnet (lessons 1–2 by Opus), reviewed by Opus, and validated. `docs/SPEC.md` is agreed. Its exam strategy is to track Ελληνομάθεια B1 and the A2 + history exam side by side and let readiness decide. Exam facts were re-checked against the official sources on 2026-11-16. **The book is open** (2026-11-26): the 26 chapters, their practice and a word list of our own are tracked as `content/open/oknos-book/` (CC BY-SA 4.0, "Oknos'un kitabı"), and its curriculum `curricula/oknos-book.json` is the default course (see **The Oknos book** below).
 
 What works now:
 - **Stack:** uv, FastAPI and SQLite (`learner/oknos.db`, migrations `0001`–`0006`), with a no-build front end in `web/`. UI in English and Turkish.
 - **Progression (phase 5b, SPEC §5.4).**
-  - A curriculum orders everything: the maintainer's book lessons (`content/private/greek-helper/curriculum.json`: intro/reading, lessons 1–24, B1) or the open course (`curricula/open-a1-b1.json`).
+  - A curriculum orders everything: the Oknos book (`curricula/oknos-book.json`: intro/reading, lessons 1–24, B1; the default whenever its pack is there) or the shorter open course (`curricula/open-a1-b1.json`, chosen with `"curriculum": "open-a1-b1"` in `profile.json`).
   - Daily sessions serve only reached stages, the current one first. A plan of today's that holds cards of a stage not reached (made before the curriculum, or under another one) is replaced, not resumed.
   - A stage is done at 80% learned, or with a passed "test me" check, and stays done.
   - Coach items carry the topic `stage:<id>`.
@@ -52,7 +52,7 @@ What works now:
   - **The look** (2026-11-21, `docs/brand/README.md`): every progress bar is a plaited rope, a stage's ring closes as it is learned, the donkey (the agent) sits by the coach's note, the end of a session and an empty screen, and the icons are one line style (no emoji). An empty practice choice says why and leads back.
   - Navigation: every screen has its own URL (`?book`, `?lesson=<stage>`, `?stage=<id>`, `?practise`, `?words`, `?verbs`, `?exam`, `?writing`, `?submission=<id>`, `?mock=<run id>`, `?films`, `?films=<n>`), so the browser's back and forward work. An app bar on every screen links Home · Book · Practise · Words · Verbs · Exam.
   - The **Book** screen (formerly the course map) is the table of contents. Any chapter can be read, also ahead of the lesson, and the reader links to the previous and next chapters.
-  - Book chapters (private): `content/private/greek-helper/lessons/`. `outline.json` (26 stages) is approved. All 26 chapters exist, each with a review note in `lessons/review/`. The reviews made 170 Greek fixes and 191 teaching fixes in all, about 7 of each per chapter.
+  - Book chapters: `content/open/oknos-book/lessons/` (private until 2026-11-26, in `content/private/greek-helper/`). `outline.json` (26 stages) is approved. All 26 chapters exist, each with a review note in `lessons/review/`. The reviews made 170 Greek fixes and 191 teaching fixes in all, about 7 of each per chapter.
   - **Pilot batch, 2026-11-19:**
     - Sonnet drafting took about 150–190k tokens per chapter, and the Opus review about 140–165k.
     - The review made 4–5 Greek fixes and 5–7 teaching fixes per chapter, against 2–3 Greek fixes in each golden chapter (written by Opus).
@@ -63,8 +63,13 @@ What works now:
     - `first-words` and `everyday-verbs` are the golden chapters (Opus); the other ten were drafted by Sonnet and reviewed by Opus. Each has a review note in `lessons/review/`. The reviews made 14 Greek fixes and 26 teaching fixes in all, about 1 and 2 per chapter.
     - 398 items: 218 vocab, the rest practice and checks. Its `glossary.json` explains every other word it shows (forms, endings in tables, names); a fresh clone has no unexplained open word.
     - A fresh clone's learner now starts by reading the `reading` chapter.
-    - Under a book's curriculum the open book supports it (`curriculum.py`, SPEC §5.4): words the book already has are not served twice, and the rest are extras at the lesson the book curriculum's `follows` maps each open stage to. The maintainer's mapping is in `content/private/greek-helper/curriculum.json`.
-    - Tests leave the open book out by default (`tests/conftest.py`): its chapters gate every stage. Tests of the book use the `open_book` / `full_catalog` fixtures (`tests/test_open_book.py`).
+    - Under a book's curriculum the open book supports it (`curriculum.py`, SPEC §5.4): words the book already has are not served twice, and the rest are extras at the lesson the book curriculum's `follows` maps each open stage to. The mapping is in `curricula/oknos-book.json`.
+    - Tests leave both books (`open-book`, `oknos-book`) out by default (`tests/conftest.py`): their chapters gate every stage. Tests of the book use the `open_book` / `full_catalog` fixtures (`tests/test_open_book.py`).
+  - **The Oknos book** (opened 2026-11-26, `docs/LESSONS.md` §1): the maintainer's 26-chapter book made open, as the step before a public repo.
+    - `content/open/oknos-book/`: the 26 chapters and 729 practice items (same ids as before), `glossary.json`, and `items/words-a1|a2|b1.json`: 1,316 words of our own selection, the words the chapters list plus words common to several A1–B1 word lists (five series of English-teaching books for Greek speakers, three publishers), every English and Turkish meaning written new from the Greek by Sonnet (never the lists' glosses). The words only one list had stay private in `greek-helper`.
+    - The textbook's traces are gone: no title, unit names or pages; "the book's B1 verbs" now reads as the usual grammar names; stage titles and can-do lines are in our own words. An overlap check (6-word runs against the textbook's OCR) finds 44 of 10,341 (0.4%), all pronoun/article paradigms and stock phrases; an independent Opus review of 8 chapters found nothing copied, and the three scenes it found close in structure (lessons 3, 16, 20) were rewritten.
+    - **The maintainer keeps everything** (`src/oknos/moves.py`): `pack.json` says `"replaces": ["greek-helper"]`, so a private item with the same id or the same word is left out of the catalog (never served twice) and its history (attempts, review state, flags, lookups, today's plan) moves to the open item; the curriculum says `"formerly": ["greek-helper-book"]`, so chapter reads, stage checks and chapter flags move too, and a profile or podcast naming the old id still works. It runs on every sync and is a no-op once done (`tests/test_moves.py`). Checked on a copy of the maintainer's database: the same current lesson, the same reads and checks, all 465 answers kept; 196 learned cards became 193 because three words had two cards each.
+    - Still private in `content/private/greek-helper/`: the textbook's OCR (`raw/`), its audio, `units.json`, the review notes, and about 1,350 list words. Its old `lessons/`, `items/chapter-*.json` and `curriculum.json` are now ignored and can be deleted.
 - **Exam blueprints** (tracked facts): `exams/a2ltr.json` and `exams/b1-keg.json`.
   - Each has units, tasks, points, minutes, the real pass rule, exam technique (en/tr), official sources and the pages `watch` checks.
   - B1 also lists what it adds over A2 (`beyond_a2`).
@@ -79,7 +84,7 @@ What works now:
 
     Every exam-format item is tagged with a blueprint task (`exam_task`), and `validate` checks the tags.
   - Private material (gitignored, under `content/private/`):
-    - the maintainer's earlier material in `greek-helper`: 2,648 words, 25 units, and 1,697 raw exercise prompts for the coach to rebuild. All but one of the words now have a Turkish meaning. Those for A2/B1 were drafted by Sonnet on 2026-11-19, unverified; they are in `overlays/tr.json`, so they survive a re-import;
+    - the maintainer's earlier material in `greek-helper`: 2,648 words (those the open book now has are left out of the catalog), 25 units, and 1,697 raw exercise prompts for the coach to rebuild. All but one of the words now have a Turkish meaning. Those for A2/B1 were drafted by Sonnet on 2026-11-19, unverified; they are in `overlays/tr.json`, so they survive a re-import;
     - the official A2-LTR papers, keys and MP3s for 2022, 2024 and 2026A in `official-a2ltr/papers/`.
   - Coach-written packs go in `learner/generated/` (gitignored).
 - **Exercise types:**
@@ -139,12 +144,12 @@ What works now:
 Known limits:
 - The open content alone gives too few A2/B1 exam-format items for readiness to show numbers in the first weeks. The coach's items and mocks are what make them appear.
 - The open verb pack has about 2 forms per tense per verb, so the verb tables are sparse.
-- The book's lessons have few words linked to them (407 of 2,648). The rest open by level. Each stage's chapter places the words it teaches. A chapter can bring a word forward, never push it to a later lesson. The book's other words still open by level, with no chapter sentence for their learn card.
+- The book's words that no chapter lists open by level (A1 from lesson 3, A2 from lesson 13, B1 at the bridge). Each stage's chapter places the words it teaches. A chapter can bring a word forward, never push it to a later lesson. The book's other words still open by level, with no chapter sentence for their learn card.
 - A heavy review day can still leave no room for new words in the daily session. After reading, "Practise this chapter" is the way to the new words.
 - The A2-LTR history pack waits until the plan targets an A2-LTR session with an announced date; none is announced. The syllabus PDF needs the learner's yes.
 - Neither exam publishes its speaking points split, and A2-LTR publishes no writing criteria. Those scores are always labelled estimates.
 - Pictures are of single words, so picture-based speaking parts are still described in words.
-- The glossary meanings (open and book) and the book's A2/B1 Turkish meanings are AI-drafted and spot-checked, not checked by a person. A wrong one is fixed through the ⚑ flag or by editing `glossary.json`.
+- The glossary meanings (open and book) and the book's word meanings are AI-drafted and spot-checked, not checked by a person. A wrong one is fixed through the ⚑ flag or by editing `glossary.json`.
 
 The macOS and Linux shortcuts and schedulers are written but untested.
 

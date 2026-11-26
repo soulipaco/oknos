@@ -1,0 +1,685 @@
+{
+ "id": "oknos-book.lesson-09",
+ "curriculum": "oknos-book",
+ "stage": "lesson-09",
+ "level": "A1",
+ "title": {
+  "tr": "Mağazada ve e-postada: nesne biçimi, ποιον, AB fiilleri",
+  "en": "In the shop and in an e-mail: the object form, ποιον, the AB verbs"
+ },
+ "minutes": 15,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde mağazada bir şey almayı, gününü anlatmayı ve bir şeyi **ne sıklıkta** yaptığını söylemeyi öğreneceksin.\n\nAnahtar nokta: **nesne** olan eril isim değişir: *ο υπολογιστής* ama **αγοράζω τον υπολογιστή**. Dişil ve nötr isimler aynı kalır; dişilde yalnızca artikel değişir (*η → την*).",
+     "en": "In this chapter you learn to buy something in a shop, describe your day and say how often you do things.\n\nThe key point: a **masculine** noun that is the **object** changes: *ο υπολογιστής* but **αγοράζω τον υπολογιστή**. Feminine and neuter nouns stay the same; only the feminine article changes (*η → την*)."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Mağazada, sonra e-postada",
+    "en": "In the shop, then by e-mail"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Dinle, sonra oku. [[σε προσφορά]] (indirimde) ve [[με κάρτα ή με μετρητά]] (kartla mı nakitle mi) şimdilik kalıp. Kurallar aşağıda.",
+     "en": "Listen, then read. [[σε προσφορά]] (on offer) and [[με κάρτα ή με μετρητά]] (by card or in cash) are set phrases for now. The rules follow below."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ayşe bir elektronik mağazasında. Bir buzdolabı ve kardeşi için bir bilgisayar almak istiyor.",
+      "en": "Ayşe is in an electronics shop. She wants a fridge, and a computer for her brother."
+     },
+     "lines": [
+      {
+       "who": "Πωλητής",
+       "el": "Καλημέρα σας! Ορίστε;",
+       "tr": "Günaydın! Buyurun?",
+       "en": "Good morning! Yes, please?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα. Θα ήθελα ένα ψυγείο και έναν υπολογιστή για τον αδελφό μου.",
+       "tr": "Günaydın. Bir buzdolabı ve kardeşim için bir bilgisayar istiyorum.",
+       "en": "Good morning. I'd like a fridge and a computer for my brother."
+      },
+      {
+       "who": "Πωλητής",
+       "el": "Τι ψυγείο θέλετε; Μεγάλο ή μικρό;",
+       "tr": "Nasıl bir buzdolabı istiyorsunuz? Büyük mü, küçük mü?",
+       "en": "What kind of fridge do you want? Big or small?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Μικρό. Η κουζίνα μου είναι μικρή.",
+       "tr": "Küçük. Mutfağım küçük.",
+       "en": "Small. My kitchen is small."
+      },
+      {
+       "who": "Πωλητής",
+       "el": "Αυτό το λευκό ψυγείο είναι σε προσφορά.",
+       "tr": "Şu beyaz buzdolabı indirimde.",
+       "en": "This white fridge is on offer."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Πόσο κάνει;",
+       "tr": "Ne kadar?",
+       "en": "How much is it?"
+      },
+      {
+       "who": "Πωλητής",
+       "el": "Κάνει διακόσια πενήντα ευρώ και έχει εγγύηση.",
+       "tr": "İki yüz elli avro ve garantisi var.",
+       "en": "It's two hundred and fifty euros and it has a guarantee."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Εντάξει, θέλω αυτό. Ο αδελφός μου θέλει έναν φτηνό υπολογιστή.",
+       "tr": "Tamam, bunu istiyorum. Kardeşim ucuz bir bilgisayar istiyor.",
+       "en": "OK, I'll take this one. My brother wants a cheap computer."
+      },
+      {
+       "who": "Πωλητής",
+       "el": "Αυτός ο υπολογιστής είναι καινούργιος και φτηνός. Ο μεγάλος είναι ακριβός. Ποιον θέλετε;",
+       "tr": "Bu bilgisayar yeni ve ucuz. Büyük olan pahalı. Hangisini istersiniz?",
+       "en": "This computer is new and cheap. The big one is expensive. Which one would you like?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Τον φτηνό, ευχαριστώ.",
+       "tr": "Ucuz olanı, teşekkürler.",
+       "en": "The cheap one, thank you."
+      },
+      {
+       "who": "Πωλητής",
+       "el": "Πληρώνετε με κάρτα ή με μετρητά;",
+       "tr": "Kartla mı ödüyorsunuz, nakitle mi?",
+       "en": "Are you paying by card or in cash?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Με κάρτα.",
+       "tr": "Kartla.",
+       "en": "By card."
+      }
+     ]
+    },
+    {
+     "type": "prose",
+     "tr": "Akşam Ayşe arkadaşı Nikos'a bir e-posta ([[το ηλεκτρονικό ταχυδρομείο]]) yazıyor, Nikos cevap veriyor. *Το πρωί* (sabah), *το μεσημέρι* (öğle) ve *το βράδυ* (akşam) şimdilik kalıp; kuralı Ders 10'da.",
+     "en": "In the evening Ayşe e-mails her friend Nikos ([[το ηλεκτρονικό ταχυδρομείο]]), and he replies. *Το πρωί* (in the morning), *το μεσημέρι* (at midday) and *το βράδυ* (in the evening) are set phrases for now; the rule comes in Lesson 10."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ayşe'nin e-postası ve Nikos'un cevabı.",
+      "en": "Ayşe's e-mail and Nikos's reply."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Γεια σου, Νίκο! Ξυπνάω νωρίς και πίνω έναν ελληνικό καφέ, αλλά το πρωί δεν τρώω ποτέ. Το μεσημέρι τρώω σε ένα εστιατόριο κοντά στο γραφείο. Το βράδυ συχνά ακούω ραδιόφωνο. Το Σάββατο διαβάζω στη βιβλιοθήκη. Κι εσύ; Τι τρως το πρωί;",
+       "tr": "Selam Nikos! Erken kalkıyorum ve bir Yunan kahvesi içiyorum, ama sabahları hiçbir şey yemiyorum. Öğleyin ofisin yakınındaki bir lokantada yiyorum. Akşamları sık sık radyo dinliyorum. Cumartesi günü kütüphanede ders çalışıyorum. Ya sen? Sabahları ne yiyorsun?",
+       "en": "Hi Nikos! I wake up early and drink a Greek coffee, but I never eat in the morning. At midday I eat in a restaurant near the office. In the evening I often listen to the radio. On Saturday I study at the library. And you? What do you eat in the morning?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Γεια σου, Αϊσέ! Ευχαριστώ για το μήνυμα. Εγώ δεν πίνω ποτέ καφέ το πρωί. Πίνω τσάι και τρώω ψωμί με γιαούρτι.",
+       "tr": "Selam Ayşe! Mesajın için teşekkürler. Ben sabahları hiç kahve içmem. Çay içerim, yoğurtla ekmek yerim.",
+       "en": "Hi Ayşe! Thanks for the message. I never drink coffee in the morning. I drink tea and eat bread with yoghurt."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Metinlere göre:",
+     "en": "According to the texts:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch09-q-price",
+      "oknos-book/ch09-q-email"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Eril isimler nesne olunca: τον υπολογιστή",
+    "en": "A masculine noun as the object: τον υπολογιστή"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ders 7'de *ο καφές* → *τον καφέ* görmüştün. Aynısı **bütün eril isimler** için geçerli: nesne biçiminde (*αιτιατική*) artikel *ο → τον* olur ve sondaki **-ς düşer**. Dişil ve nötr **isimler değişmez**; dişil artikel *η → την* olur, nötr *το* kalır. Vurgu yerinde kalır.",
+     "en": "As in *ο καφές* → *τον καφέ* (Lesson 7), **every masculine noun** changes: in the object form (*αιτιατική*, the accusative) the article goes *ο → τον* and the final **-ς drops**. Feminine and neuter **nouns do not change**; the feminine article goes *η → την*, neuter *το* stays. The stress stays put."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "sonu",
+       "en": "ending"
+      },
+      "Ονομαστική",
+      "Αιτιατική"
+     ],
+     "rows": [
+      [
+       "-ος",
+       "ο χυμός",
+       "τον χυμό"
+      ],
+      [
+       "-ης",
+       "ο υπολογιστής",
+       "τον υπολογιστή"
+      ],
+      [
+       "-ας",
+       "ο πατέρας",
+       "τον πατέρα"
+      ],
+      [
+       "-ές",
+       "ο καφές",
+       "τον καφέ"
+      ],
+      [
+       {
+        "tr": "dişil",
+        "en": "feminine"
+       },
+       "η τηλεόραση",
+       "την τηλεόραση"
+      ],
+      [
+       {
+        "tr": "nötr",
+        "en": "neuter"
+       },
+       "το ψυγείο",
+       "το ψυγείο"
+      ]
+     ],
+     "note": {
+      "tr": "**-ν kuralı** (Ders 3 ve 7) aynı: *την κουζίνα, την τηλεόραση* ama *τη Μαρία*.",
+      "en": "**The -ν rule** (Lessons 3 and 7) is the same: *την κουζίνα, την τηλεόραση* but *τη Μαρία*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Πίνω έναν χυμό.",
+       "tr": "Bir meyve suyu içiyorum.",
+       "en": "I'm drinking a juice."
+      },
+      {
+       "el": "Αγοράζω την τηλεόραση.",
+       "tr": "Televizyonu alıyorum.",
+       "en": "I'm buying the television."
+      },
+      {
+       "el": "Ρωτάω τον πωλητή για το πλυντήριο.",
+       "tr": "Satıcıya çamaşır makinesini soruyorum.",
+       "en": "I ask the shop assistant about the washing machine."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Nesne biçimi nerede? Fiil, edat, adlar",
+    "en": "Where the object form is used: verbs, prepositions, names"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Nesne biçimi üç yerde kullanılır: **fiilin nesnesi** olarak (*αγοράζω, θέλω, περιμένω, ρωτάω*; Ders 7), **σε, από** (Ders 3) ile **με, για** sonrasında, ve **adlarda**: *με, σε, τον, τη λένε*.\n**Adlar.** *Με λένε Αϊσέ. Τον λένε Γιάννη. Τη λένε Ελένη.* Erkek adları değişir (*ο Νίκος → Νίκο, ο Αντρέας → Αντρέα*), kadın adları değişmez. λ'dan önce -ν düşer: *τη λένε*, *την λένε* değil.\nDikkat: erkek adlarının çoğunda bu biçim, Ders 2'deki seslenme biçimiyle aynıdır (*Νίκο!*, *τον Νίκο*). Sıradan -ος isimlerinde farklıdır: *Φίλε!* ama *τον φίλο*.",
+     "en": "The object form is used in three places: as the **object of a verb** (*αγοράζω, θέλω, περιμένω, ρωτάω*; Lesson 7), after **σε, από** (Lesson 3) and **με, για**, and **with names**: *με, σε, τον, τη λένε*.\n**Names.** *Με λένε Αϊσέ. Τον λένε Γιάννη. Τη λένε Ελένη.* Men's names change (*ο Νίκος → Νίκο, ο Αντρέας → Αντρέα*), women's names do not. Before λ the -ν drops: *τη λένε*, not *την λένε*.\nCareful: for most men's first names this is the same as the form for calling someone (Lesson 2: *Νίκο!*, *τον Νίκο*). Ordinary -ος nouns differ: *Φίλε!* but *τον φίλο*."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Το δώρο είναι για τον αδελφό μου.",
+       "tr": "Hediye kardeşim için.",
+       "en": "The gift is for my brother."
+      },
+      {
+       "el": "— Πώς τον λένε; — Τον λένε Νίκο.",
+       "tr": "— Adı ne? — Adı Nikos.",
+       "en": "— What's his name? — His name is Nikos."
+      },
+      {
+       "el": "Τη λένε Ελένη.",
+       "tr": "Adı Eleni.",
+       "en": "Her name is Eleni."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Sıfat da değişir: έναν καινούργιο υπολογιστή",
+    "en": "The adjective changes too: έναν καινούργιο υπολογιστή"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Sıfat, artikel ve isim **birlikte** değişir. Ders 8'deki sıfatlarda eril **-ος → -ο** olur (vurgulu *-ός* → *-ό*); dişil ve nötr sıfat aynı kalır. *Ένας* da *έναν* olur.",
+     "en": "Adjective, article and noun change **together**. A masculine adjective goes **-ος → -ο** (stressed *-ός* → *-ό*); feminine and neuter stay the same. *Ένας* becomes *έναν*."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "eril",
+       "en": "masculine"
+      },
+      {
+       "tr": "dişil",
+       "en": "feminine"
+      },
+      {
+       "tr": "nötr",
+       "en": "neuter"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "özne",
+        "en": "subject"
+       },
+       "ένας καινούργιος υπολογιστής",
+       "μια μεγάλη τηλεόραση",
+       "ένα φτηνό ψυγείο"
+      ],
+      [
+       {
+        "tr": "nesne",
+        "en": "object"
+       },
+       "έναν καινούργιο υπολογιστή",
+       "μια μεγάλη τηλεόραση",
+       "ένα φτηνό ψυγείο"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Θέλω έναν καινούργιο υπολογιστή.",
+       "tr": "Yeni bir bilgisayar istiyorum.",
+       "en": "I want a new computer."
+      },
+      {
+       "el": "Η Αϊσέ αγοράζει μια μεγάλη τηλεόραση.",
+       "tr": "Ayşe büyük bir televizyon alıyor.",
+       "en": "Ayşe is buying a big television."
+      },
+      {
+       "el": "Περιμένω τον ψηλό πωλητή.",
+       "tr": "Uzun boylu satıcıyı bekliyorum.",
+       "en": "I'm waiting for the tall shop assistant.",
+       "note": {
+        "tr": "*ψηλός* → *ψηλό*: vurgu son hecede kalır.",
+        "en": "*ψηλός* → *ψηλό*: the stress stays on the last syllable."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Kimi? Hangisini? ποιον, ποια, ποιο",
+    "en": "Whom? Which one? ποιον, ποια, ποιο"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ders 8'de *ποιος, ποια, ποιο* öznedeydi (*Ποιος είναι ο Νίκος;*). Nesne olunca yalnızca **eril** değişir: *ποιος* → **ποιον**. *Ποια* ve *ποιο* aynı kalır. *Ποιον* hep -ν ile yazılır.",
+     "en": "In Lesson 8 *ποιος, ποια, ποιο* were subjects (*Ποιος είναι ο Νίκος;*). As an object only the **masculine** changes: *ποιος* → **ποιον**. *Ποια* and *ποιο* stay the same. *Ποιον* always keeps its -ν."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "eril",
+       "en": "masculine"
+      },
+      {
+       "tr": "dişil",
+       "en": "feminine"
+      },
+      {
+       "tr": "nötr",
+       "en": "neuter"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "özne",
+        "en": "subject"
+       },
+       "ποιος",
+       "ποια",
+       "ποιο"
+      ],
+      [
+       {
+        "tr": "nesne",
+        "en": "object"
+       },
+       "ποιον",
+       "ποια",
+       "ποιο"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Ποιον περιμένεις;",
+       "tr": "Kimi bekliyorsun?",
+       "en": "Who are you waiting for?"
+      },
+      {
+       "el": "Με ποιον μιλάς;",
+       "tr": "Kiminle konuşuyorsun?",
+       "en": "Who are you talking to?"
+      },
+      {
+       "el": "Για ποιον είναι ο υπολογιστής;",
+       "tr": "Bilgisayar kimin için?",
+       "en": "Who is the computer for?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "AB fiilleri: ακούω, λέω, τρώω, κλαίω, πάω",
+    "en": "AB verbs: ακούω, λέω, τρώω, κλαίω, πάω"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Kökü ünlüyle biten bazı fiillere (*ακου-, λε-, τρω-, κλαι-, πα-*) bazı dilbilgisi kitapları **AB grubu** der. Vurgu *δουλεύω* (Ders 3) gibi kökte kalır; ekler *μιλάω* fiilinin (Ders 5) ekleri gibidir, ama *-ά-* olmadan: *μιλ-άς → ακού-ς*, *μιλ-άμε → ακού-με*.\nEkler: **-ω, -ς, -ει, -με, -τε, -νε**.",
+     "en": "Some verbs with a stem ending in a vowel (*ακου-, λε-, τρω-, κλαι-, πα-*) are what some grammar books call the **AB group**. The stress stays on the stem, as in *δουλεύω* (Lesson 3); the endings are those of *μιλάω* (Lesson 5) without the *-ά-*: *μιλ-άς → ακού-ς*, *μιλ-άμε → ακού-με*.\nThe endings are **-ω, -ς, -ει, -με, -τε, -νε**."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      "ακούω",
+      "λέω",
+      "τρώω",
+      "κλαίω",
+      "πάω"
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "ακούω",
+       "λέω",
+       "τρώω",
+       "κλαίω",
+       "πάω"
+      ],
+      [
+       "εσύ",
+       "ακούς",
+       "λες",
+       "τρως",
+       "κλαις",
+       "πας"
+      ],
+      [
+       "αυτός / αυτή / αυτό",
+       "ακούει",
+       "λέει",
+       "τρώει",
+       "κλαίει",
+       "πάει"
+      ],
+      [
+       "εμείς",
+       "ακούμε",
+       "λέμε",
+       "τρώμε",
+       "κλαίμε",
+       "πάμε"
+      ],
+      [
+       "εσείς",
+       "ακούτε",
+       "λέτε",
+       "τρώτε",
+       "κλαίτε",
+       "πάτε"
+      ],
+      [
+       "αυτοί / αυτές / αυτά",
+       "ακούν(ε)",
+       "λένε",
+       "τρώνε",
+       "κλαίνε",
+       "πάνε"
+      ]
+     ],
+     "note": {
+      "tr": "*ακούω* dinlemek, duymak; *λέω* söylemek, demek; *τρώω* yemek; *κλαίω* ağlamak; *πάω* gitmek (Ders 7). *Ακούεις, τρώεις* diye biçimler yoktur: *ακούς, τρως*. *Ακούν* da *ακούνε* de doğru. Tek heceli *λες, τρως, κλαις, πας* vurgu işareti almaz.",
+      "en": "*ακούω* listen, hear; *λέω* say; *τρώω* eat; *κλαίω* cry; *πάω* go (Lesson 7). There are no forms *ακούεις, τρώεις*: it is *ακούς, τρως*. Both *ακούν* and *ακούνε* are correct. One-syllable *λες, τρως, κλαις, πας* take no accent mark."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Ακούω ραδιόφωνο.",
+       "tr": "Radyo dinliyorum.",
+       "en": "I listen to the radio."
+      },
+      {
+       "el": "Δεν κλαίω ποτέ.",
+       "tr": "Asla ağlamam.",
+       "en": "I never cry."
+      },
+      {
+       "el": "Ο Νίκος και η Ελένη τρώνε στο εστιατόριο.",
+       "tr": "Nikos ve Eleni lokantada yemek yiyor.",
+       "en": "Nikos and Eleni eat at the restaurant."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Τρώω: έφαγα, θα φάω",
+    "en": "Τρώω: έφαγα, θα φάω"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "*Τρώω* fiilinin geçmişi ve geleceği, Ders 7'deki *πάω* gibi, **hazır biçimler**: geçmişte kök değişir (**έφαγα**), gelecek **θα** + kök *φα-* (**θα φάω**). Şimdilik yalnızca *εγώ* ve *εσύ*.",
+     "en": "Like *πάω* in Lesson 7, *τρώω* has **ready-made** past and future forms: the past changes the stem (**έφαγα**), the future is **θα** + *φα-* (**θα φάω**). Only *I* and *you* for now."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      {
+       "tr": "şimdi",
+       "en": "now"
+      },
+      {
+       "tr": "geçmiş",
+       "en": "past"
+      },
+      {
+       "tr": "gelecek",
+       "en": "future"
+      }
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "τρώω",
+       "έφαγα",
+       "θα φάω"
+      ],
+      [
+       "εσύ",
+       "τρως",
+       "έφαγες",
+       "θα φας"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Χθες έφαγα στο εστιατόριο.",
+       "tr": "Dün lokantada yedim.",
+       "en": "Yesterday I ate at the restaurant."
+      },
+      {
+       "el": "Αύριο θα φάω με τον αδελφό μου.",
+       "tr": "Yarın kardeşimle yiyeceğim.",
+       "en": "Tomorrow I'll eat with my brother."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Ne sıklıkta?",
+    "en": "How often?"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ders 3'ten: **πάντα** (her zaman) · **συνήθως** (genellikle) · **συχνά** (sık sık) · **μερικές φορές** (bazen) · **ποτέ** (hiçbir zaman). Yeni: **σπάνια** (nadiren). Zarf fiilden önce ya da sonra gelir. *Ποτέ* ile fiil *δεν* alır (*Δεν πίνω ποτέ καφέ*, *Ποτέ δεν πίνω καφέ*); *σπάνια* ile almaz (*Σπάνια πίνω καφέ*).",
+     "en": "From Lesson 3: **πάντα** (always) · **συνήθως** (usually) · **συχνά** (often) · **μερικές φορές** (sometimes) · **ποτέ** (never). New: **σπάνια** (rarely). The adverb goes before or after the verb. With *ποτέ* the verb takes *δεν* (*Δεν πίνω ποτέ καφέ*, *Ποτέ δεν πίνω καφέ*); with *σπάνια* it does not (*Σπάνια πίνω καφέ*)."
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ev aletleri, ödeme, AB fiilleri, günün vakitleri. *Τα μετρητά* çoğuldur; şimdilik yalnız *με μετρητά* kalıbında kullan.",
+     "en": "Appliances, paying, the AB verbs, times of day. *Τα μετρητά* is plural; for now use it only in *με μετρητά*."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/ch09-ypologistis",
+      "oknos-book/v-psygeio",
+      "oknos-book/v-koyzina",
+      "oknos-book/v-tileorasi",
+      "oknos-book/ch09-egyisi",
+      "oknos-book/ch09-prosfora",
+      "oknos-book/v-karta",
+      "oknos-book/v-metrita",
+      "oknos-book/v-plirono-verb",
+      "oknos-book/ch09-agorazo",
+      "oknos-book/v-troo-verb",
+      "oknos-book/v-akoyo-verb",
+      "oknos-book/ch09-leo",
+      "oknos-book/ch09-klaio",
+      "oknos-book/ch09-proi",
+      "oknos-book/v-mesimeri",
+      "oknos-book/ch09-vradi",
+      "oknos-book/v-spania-adv",
+      "oknos-book/v-estiatorio",
+      "oknos-book/v-vivliothiki",
+      "oknos-book/v-ilektroniko-tachydromeio",
+      "oknos-book/v-minyma"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**Türkçeden bir köprü.** Türkçede *-ı, -i* eki yalnızca belirli nesneye gelir (*kahveyi*, ama *bir kahve*). Yunancada *τον καφέ* de, *έναν καφέ* de nesne biçiminde.",
+     "en": "**A bridge from English.** English changes only pronouns: *he* waits, I wait for *him*. Greek changes masculine nouns too: *ο Νίκος περιμένει*, but *περιμένω τον Νίκο*."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "***Είμαι* fiilinden sonra nesne biçimi gelmez:** *Ο Νίκος είναι ο πωλητής*, *τον πωλητή* değil.",
+     "en": "**No object form after είμαι:** *Ο Νίκος είναι ο πωλητής*, not *τον πωλητή*."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "tr": "A2-LTR yazma bölümünde arkadaşına kısa bir e-posta yazarsın (40-60 kelime). Günün için bu bölümün fiilleri, sıklık zarfları ve *το πρωί, το βράδυ* yeter. *Γεια σου, Νίκο!* diye başla, *Φιλιά* diye bitir (kalıp).",
+     "en": "In the A2-LTR writing part you write a short e-mail to a friend (40-60 words). For your day, this chapter's verbs, the frequency adverbs and *το πρωί, το βράδυ* are enough. Open with *Γεια σου, Νίκο!* and close with *Φιλιά* (set phrases).",
+     "exam_task": "a2ltr.writing.email_friendly"
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: nesne biçimi, ποιον, AB fiilleri ve τρώω.",
+     "en": "Now you try: the object form, ποιον, the AB verbs and τρώω."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch09-try-noun",
+      "oknos-book/ch09-try-poios",
+      "oknos-book/ch09-try-ab",
+      "oknos-book/ch09-try-efaga"
+     ]
+    }
+   ]
+  }
+ ]
+}

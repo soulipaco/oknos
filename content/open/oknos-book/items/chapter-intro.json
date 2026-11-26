@@ -1,0 +1,508 @@
+[
+ {
+  "id": "ch00-taverna",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η ταβέρνα",
+  "lemma": "ταβέρνα",
+  "pos": "noun",
+  "gender": "f",
+  "en": "taverna; Greek restaurant",
+  "tr": "taverna; Yunan lokantası, meyhane",
+  "topics": [
+   "stage:intro"
+  ],
+  "example": {
+   "el": "Ταβέρνα «Η Σμύρνη»",
+   "en": "\"Smyrna\" Taverna (the name on a sign)",
+   "tr": "«İzmir» Tavernası (bir tabelada)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "intro",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch00-stasi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η στάση",
+  "lemma": "στάση",
+  "pos": "noun",
+  "gender": "f",
+  "en": "(bus) stop",
+  "tr": "durak",
+  "topics": [
+   "stage:intro"
+  ],
+  "example": {
+   "el": "η στάση και το μετρό",
+   "en": "the (bus) stop and the metro",
+   "tr": "durak ve metro"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "intro",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch00-farmakeio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το φαρμακείο",
+  "lemma": "φαρμακείο",
+  "pos": "noun",
+  "gender": "n",
+  "en": "pharmacy",
+  "tr": "eczane",
+  "topics": [
+   "stage:intro"
+  ],
+  "example": {
+   "el": "ΦΑΡΜΑΚΕΙΟ",
+   "en": "the sign over a pharmacy (farmakío)",
+   "tr": "eczane tabelası (farmakío)"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "intro",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch00-q-cinema",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:intro"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Σινεμά;",
+   "en": "Cinema?",
+   "tr": "Sinema?"
+  },
+  "options": [
+   "ΣΙΝΕΜΑ",
+   "ΘΕΑΤΡΟ",
+   "ΠΑΡΚΟ"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "ΣΙΝΕΜΑ is read sinemá. ΘΕΑΤΡΟ (théatro) is the theatre and ΠΑΡΚΟ (párko) the park.",
+   "tr": "ΣΙΝΕΜΑ sinemá diye okunur. ΘΕΑΤΡΟ (théatro) tiyatro, ΠΑΡΚΟ (párko) park."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "intro",
+   "by": "sonnet-draft"
+  },
+  "ask": {
+   "en": "You are looking for the cinema. Which sign do you follow?",
+   "tr": "Sinemayı arıyorsun. Hangi tabelayı izlersin?"
+  }
+ },
+ {
+  "id": "ch00-q-signs",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:intro"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η ΣΤΑΣΗ είναι για το λεωφορείο.",
+    "en": "ΣΤΑΣΗ (the stop) is for the bus.",
+    "tr": "ΣΤΑΣΗ (durak) otobüs içindir.",
+    "answer": true
+   },
+   {
+    "el": "Το ΠΑΡΚΟ είναι ένα φαρμακείο.",
+    "en": "ΠΑΡΚΟ (the park) is a pharmacy.",
+    "tr": "ΠΑΡΚΟ (park) bir eczanedir.",
+    "answer": false
+   },
+   {
+    "el": "Το ΜΕΤΡΟ είναι ένα τρένο.",
+    "en": "ΜΕΤΡΟ (the metro) is a train.",
+    "tr": "ΜΕΤΡΟ (metro) bir trendir.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "ΣΤΑΣΗ is the (bus) stop and ΜΕΤΡΟ the metro. ΠΑΡΚΟ (párko) is the park; the pharmacy sign is ΦΑΡΜΑΚΕΙΟ.",
+   "tr": "ΣΤΑΣΗ (otobüs) durağı, ΜΕΤΡΟ metro. ΠΑΡΚΟ (párko) park demek; eczane tabelası ΦΑΡΜΑΚΕΙΟ."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "intro",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch00-try-ita",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:intro"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "ο μήνας",
+   "en": "the month",
+   "tr": "ay"
+  },
+  "options": [
+   "i",
+   "h",
+   "n"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "η is read i: mínas. It only looks like a Latin H.",
+   "tr": "η, i diye okunur: mínas. Sadece Latin H harfine benzer."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "intro",
+   "by": "sonnet-draft"
+  },
+  "ask": {
+   "en": "How is the letter η read in μήνας?",
+   "tr": "μήνας kelimesindeki η harfi nasıl okunur?"
+  }
+ },
+ {
+  "id": "ch00-try-match",
+  "ask": {
+   "en": "Match each word with how it is read.",
+   "tr": "Her kelimeyi okunuşuyla eşleştir."
+  },
+  "type": "match",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:intro"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each word with how it is read.",
+   "tr": "Her kelimeyi okunuşuyla eşleştir."
+  },
+  "left": [
+   "το τσάι",
+   "το τζάμι",
+   "η σούπα",
+   "ο χαλβάς"
+  ],
+  "right": [
+   "tsái",
+   "dzámi",
+   "soúpa",
+   "halvás"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "explain": {
+   "en": "In τσάι the pair reads ts and in τζάμι dz; ου is oo, and χ is a throaty h.",
+   "tr": "τσάι kelimesinde çift ts, τζάμι kelimesinde dz diye okunur; ου = u, χ = boğazdan h."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "intro",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch00-try-stress",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:intro"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "ΚΑΦΕΣ",
+   "en": "COFFEES (on a sign)",
+   "tr": "KAHVELER (tabelada)"
+  },
+  "options": [
+   "kafés",
+   "káfes"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Capitals carry no mark. The lowercase word is καφές, stressed on the last syllable: kafés.",
+   "tr": "Büyük harflerde işaret yazılmaz. Küçük harfli yazılış καφές, vurgu son hecede: kafés."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "intro",
+   "by": "sonnet-draft"
+  },
+  "ask": {
+   "en": "A sign says ΚΑΦΕΣ, with no accent mark. How is it read?",
+   "tr": "Tabelada ΚΑΦΕΣ yazıyor, vurgu işareti yok. Nasıl okunur?"
+  }
+ },
+ {
+  "id": "ch00-try-final-s",
+  "type": "form",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:intro"
+  ],
+  "grammar": [
+   "spelling"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right letter.",
+   "tr": "Doğru harfi seç."
+  },
+  "text": "ο καφέ{1}",
+  "answer": {
+   "1": [
+    "ς"
+   ]
+  },
+  "options": {
+   "1": [
+    "σ",
+    "ς"
+   ]
+  },
+  "translation": {
+   "en": "the coffee",
+   "tr": "kahve"
+  },
+  "explain": {
+   "en": "At the end of a word you write ς, not σ.",
+   "tr": "Kelimenin sonunda σ değil, ς yazılır."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "intro",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch00-try-ou",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:intro"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "η σούπα",
+   "en": "the soup",
+   "tr": "çorba"
+  },
+  "options": [
+   "u",
+   "o",
+   "o-u"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "ου is one sound, oo as in food: soúpa.",
+   "tr": "ου tek bir ses, Türkçedeki u gibi: soúpa."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "intro",
+   "by": "sonnet-draft"
+  },
+  "ask": {
+   "en": "How is the pair ου read in σούπα?",
+   "tr": "σούπα kelimesindeki ου çifti nasıl okunur?"
+  }
+ },
+ {
+  "id": "ch00-p-af",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:intro"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "το αυτοκίνητο",
+   "en": "the car",
+   "tr": "araba"
+  },
+  "options": [
+   "af",
+   "av",
+   "ao"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Before τ the pair is read af: aftokínito.",
+   "tr": "τ harfinden önce çift af diye okunur: aftokínito."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "intro",
+   "by": "sonnet-draft"
+  },
+  "ask": {
+   "en": "How is αυ read in αυτοκίνητο?",
+   "tr": "αυτοκίνητο kelimesindeki αυ nasıl okunur?"
+  }
+ },
+ {
+  "id": "ch00-p-mp",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:intro"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "ο μπακάλης",
+   "en": "the grocer",
+   "tr": "bakkal"
+  },
+  "options": [
+   "ba…",
+   "mpa…",
+   "ma…"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "At the start of a word μπ is read b: bakális.",
+   "tr": "Kelime başında μπ, b diye okunur: bakális."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "intro",
+   "by": "sonnet-draft"
+  },
+  "ask": {
+   "en": "How does the word μπακάλης start?",
+   "tr": "μπακάλης kelimesi nasıl başlar?"
+  }
+ },
+ {
+  "id": "ch00-p-tsai",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:intro"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "το τσάι",
+   "en": "the tea",
+   "tr": "çay"
+  },
+  "options": [
+   "tsá-i",
+   "tsé"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The mark is on α, the first letter of the pair, so α and ι are read apart: tsá-i. Without it, αι would be e.",
+   "tr": "İşaret çiftin ilk harfi α'nın üstünde, bu yüzden α ve ι ayrı okunur: tsá-i. İşaret olmasaydı αι, e diye okunurdu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "intro",
+   "by": "sonnet-draft"
+  },
+  "ask": {
+   "en": "How is τσάι read? Look at where the accent mark is.",
+   "tr": "τσάι nasıl okunur? İşaretin yerine bak."
+  }
+ },
+ {
+  "id": "ch00-p-pote",
+  "ask": {
+   "en": "How is ποτέ read?",
+   "tr": "ποτέ nasıl okunur?"
+  },
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:intro"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "ποτέ",
+   "en": "How is ποτέ read?",
+   "tr": "ποτέ nasıl okunur?"
+  },
+  "options": [
+   "poté",
+   "póte"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The mark is on the last ε: poté, \"never\". πότε, póte, means \"when\".",
+   "tr": "İşaret son ε'nin üstünde: poté, \"asla\". πότε, póte, \"ne zaman\" demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "intro",
+   "by": "sonnet-draft"
+  }
+ }
+]

@@ -1,0 +1,691 @@
+{
+ "id": "oknos-book.lesson-10",
+ "curriculum": "oknos-book",
+ "stage": "lesson-10",
+ "level": "A1",
+ "title": {
+  "tr": "Pire'ye davet: metro, saat, gün ve hava; με, σε, για, από, μέχρι",
+  "en": "An invitation to Piraeus: metro, time, days and weather; με, σε, για, από, μέχρι"
+ },
+ "minutes": 15,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde bir arkadaşının davetine cevap vermeyi öğreneceksin: oraya **metroyla nasıl gidilir**, **saat kaçta** buluşulur, hava nasıl.\n\nAnahtar nokta: Türkçede *metroyla, Pire'ye, evden* gibi ekler isme yapışır. Yunancada ekin yerine isimden **önce** küçük bir kelime gelir: **με** το μετρό, **στον** Πειραιά, **από** το σπίτι.",
+     "en": "Here you learn to answer a friend's invitation: how to get there by metro, when to meet, and the weather.\n\nThe key point: where Turkish adds an ending, Greek puts a small word **before** the noun: **με** το μετρό, **στον** Πειραιά, **από** το σπίτι."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Cumartesi Pire'de",
+    "en": "Saturday in Piraeus"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Dinle, sonra oku. [[έρχομαι]] ve [[έρχεσαι]] (geliyorum, geliyorsun) şimdilik kalıp; fiilin diğer biçimleri 13. derste. [[Ομόνοια]] (Omonia), Atina'nın merkezinde bir metro istasyonu; 1. hat oradan Pire'ye ([[Πειραιάς]]) kadar gider.",
+     "en": "Listen, then read. [[έρχομαι]] and [[έρχεσαι]] (I come, you come) are set forms for now; the rest of the verb comes in Lesson 13. [[Ομόνοια]] (Omonia) is a metro station in central Athens; line 1 runs from there to Piraeus ([[Πειραιάς]])."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Eleni, Ayşe'yi telefonla Pire'ye çağırıyor.",
+      "en": "Eleni phones Ayşe and invites her to Piraeus."
+     },
+     "lines": [
+      {
+       "who": "Ελένη",
+       "el": "Γεια σου, Αϊσέ! Το Σάββατο πάω στον Πειραιά με τον Νίκο. Έρχεσαι κι εσύ;",
+       "tr": "Merhaba Ayşe! Cumartesi Nikos'la Pire'ye gidiyorum. Sen de geliyor musun?",
+       "en": "Hi, Ayşe! On Saturday I'm going to Piraeus with Nikos. Are you coming too?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ναι, έρχομαι! Πώς πάω;",
+       "tr": "Evet, geliyorum! Nasıl gideceğim?",
+       "en": "Yes, I'm coming! How do I get there?"
+      },
+      {
+       "who": "Ελένη",
+       "el": "Με το μετρό, από την Ομόνοια μέχρι τον Πειραιά.",
+       "tr": "Metroyla, Omonia'dan Pire'ye kadar.",
+       "en": "By metro, from Omonia to Piraeus."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Και τι ώρα;",
+       "tr": "Peki saat kaçta?",
+       "en": "And what time?"
+      },
+      {
+       "who": "Ελένη",
+       "el": "Στις έντεκα και μισή. Κατεβαίνεις στον Πειραιά και θα είμαι στον σταθμό με τον Νίκο.",
+       "tr": "On bir buçukta. Pire'de iniyorsun; ben de Nikos'la istasyonda olacağım.",
+       "en": "At half past eleven. You get off at Piraeus, and I'll be at the station with Nikos."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ωραία! Φεύγω από το σπίτι για την Ομόνοια στις έντεκα παρά τέταρτο.",
+       "tr": "Güzel! Evden Omonia'ya on bire çeyrek kala çıkıyorum.",
+       "en": "Great! I leave home for Omonia at a quarter to eleven."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Σήμερα βρέχει, αλλά το Σάββατο θα κάνει ζέστη.",
+       "tr": "Bugün yağmur yağıyor ama cumartesi hava sıcak olacak.",
+       "en": "Today it's raining, but on Saturday it will be hot."
+      }
+     ]
+    },
+    {
+     "type": "prose",
+     "tr": "Sonra iki kısa mesaj. Arkadaşa yazılan mesaj çoğu zaman [[Φιλιά]] ile biter: kelimesi kelimesine «öpücükler», Türkçedeki «öptüm» gibi.",
+     "en": "Then two short messages. A message to a friend often ends with [[Φιλιά]]: literally «kisses», like «love» in English."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "İki yazılı mesaj: Eleni bir davet gönderiyor, Ayşe cevap yazıyor.",
+      "en": "Two written messages: Eleni sends an invitation and Ayşe replies."
+     },
+     "lines": [
+      {
+       "who": "Ελένη",
+       "el": "Γεια σου, Αϊσέ! Την Κυριακή το πρωί θα είμαι στο πάρκο με τον Νίκο και τη Σοφία. Έρχεσαι κι εσύ; Φιλιά, Ελένη",
+       "tr": "Merhaba Ayşe! Pazar sabahı Nikos ve Sofia'yla parkta olacağım. Sen de gelir misin? Öptüm, Eleni",
+       "en": "Hi, Ayşe! On Sunday morning I will be in the park with Nikos and Sofia. Are you coming too? Love, Eleni"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Γεια σου, Ελένη! Ευχαριστώ πολύ! Το Σάββατο έρχομαι στον Πειραιά, αλλά την Κυριακή δουλεύω, από τις οχτώ μέχρι τις έξι. Χθες είδα τη Σοφία στο μετρό! Φιλιά, Αϊσέ",
+       "tr": "Merhaba Eleni! Çok teşekkürler! Cumartesi Pire'ye geliyorum ama pazar günü sekizden altıya kadar çalışıyorum. Dün Sofia'yı metroda gördüm! Öptüm, Ayşe",
+       "en": "Hi, Eleni! Thanks a lot! On Saturday I'm coming to Piraeus, but on Sunday I work, from eight until six. Yesterday I saw Sofia on the metro! Love, Ayşe"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Metne göre:",
+     "en": "According to the texts:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch10-q-time",
+      "oknos-book/ch10-q-true-false"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Beş edat: με, σε, για, από, μέχρι",
+    "en": "Five prepositions: με, σε, για, από, μέχρι"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu küçük kelimelerin (*πρόθεση*, edat) arkasından genellikle **artikel + isim** gelir ve isim -i hâlindedir (*τον, την, το*; 9. ders). Türkçedeki *-le, -e, -de, -den, -e kadar* eklerinin işini görürler.",
+     "en": "These small words (*πρόθεση*, preposition) are usually followed by **article + noun**, with the noun in the accusative (*τον, την, το*; Lesson 9)."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "edat",
+       "en": "preposition"
+      },
+      {
+       "tr": "anlamı",
+       "en": "meaning"
+      },
+      {
+       "tr": "örnek",
+       "en": "example"
+      }
+     ],
+     "rows": [
+      [
+       "με",
+       {
+        "tr": "-le, ile; (taşıt) -le",
+        "en": "with; by (transport)"
+       },
+       "με τον Νίκο · με το μετρό"
+      ],
+      [
+       "σε (στο, στη, στον, στην)",
+       {
+        "tr": "-e; -de",
+        "en": "to; at, in"
+       },
+       "στον Πειραιά"
+      ],
+      [
+       "για",
+       {
+        "tr": "-e (gitmek üzere); için",
+        "en": "for, bound for"
+       },
+       "το μετρό για τον Πειραιά"
+      ],
+      [
+       "από",
+       {
+        "tr": "-den, -dan",
+        "en": "from"
+       },
+       "από την Ομόνοια"
+      ],
+      [
+       "μέχρι (έως)",
+       {
+        "tr": "-e kadar",
+        "en": "until; as far as"
+       },
+       "μέχρι τον σταθμό · μέχρι τις έξι"
+      ]
+     ],
+     "note": {
+      "tr": "*Έως* da «-e kadar» demektir; daha resmîdir, tarifelerde görürsün. Metro tabelasında yön *προς* ile yazılır: *Προς Πειραιά*.",
+      "en": "*Έως* also means «until, as far as»; it is more formal, and you see it on timetables. Metro signs give the direction with *προς*: *Προς Πειραιά*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Πάω στη δουλειά με το μετρό.",
+       "tr": "İşe metroyla gidiyorum.",
+       "en": "I go to work by metro."
+      },
+      {
+       "el": "Το λεωφορείο για τον Πειραιά φεύγει στις οχτώ.",
+       "tr": "Pire otobüsü saat sekizde kalkıyor.",
+       "en": "The bus to Piraeus leaves at eight."
+      },
+      {
+       "el": "Είμαι στη δουλειά από τις εννιά μέχρι τις πέντε.",
+       "tr": "Dokuzdan beşe kadar işteyim.",
+       "en": "I am at work from nine until five."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Hareket fiilleri: πάω, έρχομαι, φεύγω, κατεβαίνω",
+    "en": "Movement verbs: πάω, έρχομαι, φεύγω, κατεβαίνω"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Hareket fiilleri çoğu zaman bir edatla gelir: **πάω σε** (…-e gitmek), **έρχομαι από** (…-den gelmek), **φεύγω από / για** (…-den ayrılmak / …-e doğru yola çıkmak), **κατεβαίνω σε** (…-de inmek). *Έρχομαι* farklı biter (*-ομαι*): şimdilik yalnızca bu iki biçimi bil, gerisi 13. derste.",
+     "en": "Movement verbs usually take a preposition: **πάω σε** (go to), **έρχομαι από** (come from), **φεύγω από / για** (leave from / for), **κατεβαίνω σε** (get off at). For *έρχομαι* (ending in *-ομαι*), learn only these two forms for now; the rest is Lesson 13."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "anlamı",
+       "en": "meaning"
+      },
+      "εγώ",
+      "εσύ"
+     ],
+     "rows": [
+      [
+       {
+        "tr": "gitmek",
+        "en": "to go"
+       },
+       "πάω",
+       "πας"
+      ],
+      [
+       {
+        "tr": "gelmek",
+        "en": "to come"
+       },
+       "έρχομαι",
+       "έρχεσαι"
+      ],
+      [
+       {
+        "tr": "ayrılmak, çıkmak",
+        "en": "to leave"
+       },
+       "φεύγω",
+       "φεύγεις"
+      ],
+      [
+       {
+        "tr": "(taşıttan) inmek",
+        "en": "to get off"
+       },
+       "κατεβαίνω",
+       "κατεβαίνεις"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Φεύγεις για τον Πειραιά στις έντεκα.",
+       "tr": "Saat on birde Pire'ye doğru yola çıkıyorsun.",
+       "en": "You leave for Piraeus at eleven."
+      },
+      {
+       "el": "Κατεβαίνεις στην Ομόνοια.",
+       "tr": "Omonia'da iniyorsun.",
+       "en": "You get off at Omonia."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Edattan sonra soru kelimesi: με ποιον; για πού;",
+    "en": "A question word after a preposition: με ποιον; για πού;"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Türkçede *kiminle, nereye, nereden* tek kelimedir. Yunancada edat **önce**, soru kelimesi hemen **arkasından** gelir: **με ποιον**, **από πού**, **για πού**. Cevap aynı edatı tekrarlar.",
+     "en": "In Greek the preposition comes **first** and the question word right after it: **με ποιον**, **από πού**, **για πού**. English may end with the preposition («who with?»); Greek never does. The answer repeats it."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "soru",
+       "en": "question"
+      },
+      {
+       "tr": "cevap",
+       "en": "answer"
+      }
+     ],
+     "rows": [
+      [
+       "Με ποιον πας;",
+       "Με τον Νίκο."
+      ],
+      [
+       "Με τι πας;",
+       "Με το λεωφορείο."
+      ],
+      [
+       "Για πού φεύγεις;",
+       "Για τον Πειραιά."
+      ],
+      [
+       "Από πού έρχεσαι;",
+       "Από τη δουλειά."
+      ],
+      [
+       "Μέχρι πού πας;",
+       "Μέχρι τον σταθμό."
+      ]
+     ],
+     "note": {
+      "tr": "Erkek ya da kim olduğu bilinmeyen biri için ποιον, kadın için ποια (9. ders). *Με τι;* = neyle, hangi taşıtla.",
+      "en": "ποιον for a man or someone unknown, ποια for a woman (Lesson 9). *Με τι;* = by what means."
+     }
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Dün ve yarın: βλέπω, φεύγω",
+    "en": "Yesterday and tomorrow: βλέπω, φεύγω"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "*Βλέπω* (görmek) ve *φεύγω* (ayrılmak) geçmişte ve gelecekte kök değiştirir: **είδα, θα δω** ve **έφυγα, θα φύγω**. Bunları şimdilik biçim olarak öğren, 9. dersteki *τρώω → έφαγα, θα φάω* gibi. Geçmişte *θα* yoktur; gelecekte hep *θα* vardır.",
+     "en": "*Βλέπω* (see) and *φεύγω* (leave) change their stem in the past and the future: **είδα, θα δω** and **έφυγα, θα φύγω**. Learn them as forms for now, as with *τρώω → έφαγα, θα φάω* in Lesson 9. The past has no *θα*; the future always has it."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      "εγώ",
+      "εσύ"
+     ],
+     "rows": [
+      [
+       {
+        "tr": "βλέπω: geçmiş",
+        "en": "βλέπω: past"
+       },
+       "είδα",
+       "είδες"
+      ],
+      [
+       {
+        "tr": "βλέπω: gelecek",
+        "en": "βλέπω: future"
+       },
+       "θα δω",
+       "θα δεις"
+      ],
+      [
+       {
+        "tr": "φεύγω: geçmiş",
+        "en": "φεύγω: past"
+       },
+       "έφυγα",
+       "έφυγες"
+      ],
+      [
+       {
+        "tr": "φεύγω: gelecek",
+        "en": "φεύγω: future"
+       },
+       "θα φύγω",
+       "θα φύγεις"
+      ]
+     ],
+     "note": {
+      "tr": "*δω* ve *δεις* tek hecelidir, bu yüzden vurgu işareti almaz.",
+      "en": "*δω* and *δεις* have one syllable, so they carry no accent mark."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Χθες είδα τον Νίκο στο μετρό.",
+       "tr": "Dün metroda Nikos'u gördüm.",
+       "en": "Yesterday I saw Nikos on the metro."
+      },
+      {
+       "el": "Αύριο θα δεις τη Σοφία στο πάρκο.",
+       "tr": "Yarın Sofia'yı parkta göreceksin.",
+       "en": "Tomorrow you will see Sofia in the park."
+      },
+      {
+       "el": "Αύριο θα φύγω από τη δουλειά στις έξι.",
+       "tr": "Yarın altıda işten çıkacağım.",
+       "en": "Tomorrow I will leave work at six."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Saat kaç? Τι ώρα είναι;",
+    "en": "What time is it? Τι ώρα είναι;"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**Τι ώρα είναι;** diye sorarsın, cevap **Είναι …**. «Saat kaçta?» sorusunun cevabı **στις …**: *στις δύο, στις τρεις*. *Η ώρα* dişil olduğu için 1, 3 ve 4 dişil biçimdedir: **μία, τρεις, τέσσερις**. Saat bir tekil olduğu için **στη μία** dersin, *στις* değil. **Και** ekler, **παρά** çıkarır: *πέντε και τέταρτο* = 5:15, *έξι παρά τέταρτο* = 5:45.",
+     "en": "Ask **Τι ώρα είναι;** and answer **Είναι …**. «At what time?» is **στις …**: *στις δύο, στις τρεις*. Because *η ώρα* is feminine, 1, 3 and 4 take their feminine forms: **μία, τρεις, τέσσερις**. One o'clock is singular, so it is **στη μία**. **Και** adds and **παρά** takes away: *πέντε και τέταρτο* = 5:15, *έξι παρά τέταρτο* = 5:45."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      "Τι ώρα είναι;",
+      "Τι ώρα; (στις …)"
+     ],
+     "rows": [
+      [
+       "1:00",
+       "Είναι μία.",
+       "Στη μία."
+      ],
+      [
+       "4:15",
+       "Είναι τέσσερις και τέταρτο.",
+       "Στις τέσσερις και τέταρτο."
+      ],
+      [
+       "5:30",
+       "Είναι πέντε και μισή.",
+       "Στις πέντε και μισή."
+      ],
+      [
+       "5:45",
+       "Είναι έξι παρά τέταρτο.",
+       "Στις έξι παρά τέταρτο."
+      ]
+     ],
+     "note": {
+      "tr": "Dakikalar da böyle: *πέντε και δέκα* (5:10), *έξι παρά πέντε* (5:55). Konuşurken genellikle 12 saatlik sistem kullanılır: *στις εννιά το πρωί* (09:00), *στις εννιά το βράδυ* (21:00). Sayıların cinsiyetle değişmesinin kuralı 11. derste.",
+      "en": "Minutes work the same way: *πέντε και δέκα* (5:10), *έξι παρά πέντε* (5:55). In speech Greeks mostly use the 12-hour clock: *στις εννιά το πρωί* (9 a.m.), *στις εννιά το βράδυ* (9 p.m.). The rule for numbers and gender comes in Lesson 11."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "— Τι ώρα είναι; — Είναι τέσσερις και μισή.",
+       "tr": "— Saat kaç? — Dört buçuk.",
+       "en": "— What time is it? — Half past four."
+      },
+      {
+       "el": "Η ταινία είναι στις εννιά το βράδυ.",
+       "tr": "Film akşam dokuzda.",
+       "en": "The film is at nine in the evening."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "«Ne zaman?» edatsız: τη Δευτέρα, το πρωί",
+    "en": "«When?» with no preposition: τη Δευτέρα, το πρωί"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "3. derste *τη Δευτέρα*, 9. derste *το πρωί* gibi kalıplar gördün. Kuralı şu: gün, gün bölümü, ay ve mevsim için edat gerekmez; **artikel + -i hâli** yeter. Gün ve gün bölümü yan yana gelir: *την Κυριακή το πρωί*.",
+     "en": "Lesson 3 gave you *τη Δευτέρα* and Lesson 9 *το πρωί* as set phrases. The rule: days, parts of the day, months and seasons need no preposition; **article + accusative** is enough. A day and a part of the day go side by side: *την Κυριακή το πρωί*."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "isim",
+       "en": "noun"
+      },
+      {
+       "tr": "«ne zaman?»",
+       "en": "«when?»"
+      }
+     ],
+     "rows": [
+      [
+       "η Δευτέρα",
+       "τη Δευτέρα"
+      ],
+      [
+       "η Κυριακή",
+       "την Κυριακή"
+      ],
+      [
+       "το πρωί",
+       "το πρωί"
+      ],
+      [
+       "ο Μάιος",
+       "τον Μάιο"
+      ],
+      [
+       "ο χειμώνας",
+       "τον χειμώνα"
+      ]
+     ],
+     "note": {
+      "tr": "Diğer günler de böyle (*την Τρίτη, την Παρασκευή*), mevsimler de (*την άνοιξη, το καλοκαίρι, το φθινόπωρο*). *τον* artikelinin ν'si hiç düşmez; *την* ise σ, δ, β gibi harflerden önce *τη* olur (3. ders).",
+      "en": "The other days follow the pattern (*την Τρίτη, την Παρασκευή*), and so do the seasons (*την άνοιξη, το καλοκαίρι, το φθινόπωρο*). The ν of *τον* never drops; *την* becomes *τη* before letters such as σ, δ, β (Lesson 3)."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Τη Δευτέρα το πρωί φεύγω νωρίς από το σπίτι.",
+       "tr": "Pazartesi sabahı evden erken çıkıyorum.",
+       "en": "On Monday morning I leave home early."
+      },
+      {
+       "el": "Τον Αύγουστο βλέπω τη γιαγιά μου στη Σμύρνη.",
+       "tr": "Ağustosta İzmir'de büyükannemi görüyorum.",
+       "en": "In August I see my grandmother in Smyrna (İzmir)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Mevsimler, aylar, hava: ο καιρός",
+    "en": "Seasons, months, weather: ο καιρός"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Havayı sorarsın: **Τι καιρό κάνει;** Cevap: **βρέχει** (yağmur yağıyor), **κάνει ζέστη** (hava sıcak), **κάνει κρύο** (hava soğuk). Bunlar şimdilik kalıp. Yarın için başına *θα* gelir: *Αύριο θα κάνει ζέστη.*",
+     "en": "To ask about the weather: **Τι καιρό κάνει;** Answers: **βρέχει** (it is raining), **κάνει ζέστη** (it is hot), **κάνει κρύο** (it is cold). These are set phrases for now. For tomorrow, put *θα* in front: *Αύριο θα κάνει ζέστη.*"
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "mevsim",
+       "en": "season"
+      },
+      {
+       "tr": "aylar",
+       "en": "months"
+      }
+     ],
+     "rows": [
+      [
+       "η άνοιξη",
+       "Μάρτιος · Απρίλιος · Μάιος"
+      ],
+      [
+       "το καλοκαίρι",
+       "Ιούνιος · Ιούλιος · Αύγουστος"
+      ],
+      [
+       "το φθινόπωρο",
+       "Σεπτέμβριος · Οκτώβριος · Νοέμβριος"
+      ],
+      [
+       "ο χειμώνας",
+       "Δεκέμβριος · Ιανουάριος · Φεβρουάριος"
+      ]
+     ],
+     "note": {
+      "tr": "Konuşmada kısa biçimleri de duyarsın: *Γενάρης, Φλεβάρης, Μάης, Σεπτέμβρης*.",
+      "en": "In speech you also hear short forms: *Γενάρης, Φλεβάρης, Μάης, Σεπτέμβρης*."
+     }
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/v-leoforeio",
+      "oknos-book/ch10-taxi",
+      "oknos-book/v-stathmos",
+      "oknos-book/ch10-ora",
+      "oknos-book/ch10-tetarto",
+      "oknos-book/ch10-misi",
+      "oknos-book/ch10-para",
+      "oknos-book/v-kairos",
+      "oknos-book/ch10-vrechei",
+      "oknos-book/ch10-zesti",
+      "oknos-book/ch10-krio",
+      "oknos-book/v-epochi",
+      "oknos-book/v-anoixi",
+      "oknos-book/v-kalokairi",
+      "oknos-book/ch10-fthinoporo",
+      "oknos-book/v-cheimonas",
+      "oknos-book/v-ioylios",
+      "oknos-book/v-septemvrios",
+      "oknos-book/v-oktovrios",
+      "oknos-book/v-noemvrios",
+      "oknos-book/v-katevaino-phrase",
+      "oknos-book/ch10-feygo",
+      "oknos-book/ch10-erchomai"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**Ek değil, ayrı kelime.** Türkçede *metroyla, Pire'ye, evden, saat beşte* tek kelimedir. Yunancada her biri ayrı kelime ve çoğu **artikelli**: *με το μετρό, στον Πειραιά, στις πέντε*. Gün adlarında Türkçe hiçbir şey eklemez (*pazartesi*); Yunanca artikel koyar: *τη Δευτέρα*.",
+     "en": "**Small words, not endings.** Turkish writes *metroyla, Pire'ye, evden* as one word. Greek uses a separate word, usually with the article that English drops: *με το μετρό* (by metro), *τη Δευτέρα* (on Monday)."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Artikeli unutma.** Saatte artikel şart: *στις πέντε, από τις οχτώ μέχρι τις έξι*. Saat bir tekildir: *στη μία*, *στις μία* değil. Erkek artikel *τον* ν'sini hiç düşürmez: *στον Πειραιά, τον Σεπτέμβριο*.",
+     "en": "**Keep the article.** Times need it: *στις πέντε, από τις οχτώ μέχρι τις έξι*. One o'clock is singular: *στη μία*, not *στις μία*. The ν of masculine *τον* always stays: *στον Πειραιά, τον Σεπτέμβριο*."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "tr": "**Sınavda.** Arkadaşça e-posta (40-60 kelime) çoğu zaman bir davet ya da bir davete cevaptır. İşe yarar: *Έρχεσαι την Κυριακή;*, yer ve saat (*στο πάρκο στις δέκα*), sebep (*αλλά την Κυριακή δουλεύω*), kapanış (*Φιλιά*).",
+     "en": "**In the exam.** The friendly e-mail (40-60 words) is often an invitation or a reply to one. Useful: *Έρχεσαι την Κυριακή;*, a place and time (*στο πάρκο στις δέκα*), a reason (*αλλά την Κυριακή δουλεύω*), *Φιλιά*.",
+     "exam_task": "a2ltr.writing.email_friendly"
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi öğrendiklerini dene:",
+     "en": "Now try what you have learned:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch10-try-me",
+      "oknos-book/ch10-try-clock",
+      "oknos-book/ch10-try-month"
+     ]
+    }
+   ]
+  }
+ ]
+}

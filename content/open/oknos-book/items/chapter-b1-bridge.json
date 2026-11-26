@@ -1,0 +1,1307 @@
+[
+ {
+  "id": "chB1-dimos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "ο δήμος",
+  "pos": "noun",
+  "en": "municipality; town hall",
+  "tr": "belediye",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "lemma": "δήμος",
+  "gender": "m",
+  "example": {
+   "el": "Ο δήμος ανακοίνωσε τις νέες ώρες.",
+   "en": "The municipality announced the new hours.",
+   "tr": "Belediye yeni saatleri duyurdu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-anakoinosi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "η ανακοίνωση",
+  "pos": "noun",
+  "en": "announcement; notice",
+  "tr": "duyuru",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "lemma": "ανακοίνωση",
+  "gender": "f",
+  "example": {
+   "el": "Η ανακοίνωση είναι στον πίνακα της γειτονιάς.",
+   "en": "The notice is on the neighbourhood board.",
+   "tr": "Duyuru mahalledeki panoda."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-apofasi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "η απόφαση",
+  "pos": "noun",
+  "en": "decision",
+  "tr": "karar",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "lemma": "απόφαση",
+  "gender": "f",
+  "example": {
+   "el": "Η απόφαση ανακοινώθηκε χθες.",
+   "en": "The decision was announced yesterday.",
+   "tr": "Karar dün duyuruldu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-katoikos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "ο κάτοικος / η κάτοικος",
+  "pos": "noun",
+  "en": "resident, inhabitant",
+  "tr": "sakin",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "lemma": "κάτοικος",
+  "example": {
+   "el": "Οι κάτοικοι της γειτονιάς δε ρωτήθηκαν.",
+   "en": "The residents of the neighbourhood were not asked.",
+   "tr": "Mahalle sakinlerine sorulmadı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-metafero",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "μεταφέρω",
+  "pos": "verb",
+  "en": "to move, to transfer",
+  "tr": "taşımak; nakletmek",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Η αγορά μεταφέρεται στο πάρκο.",
+   "en": "The market is being moved to the park.",
+   "tr": "Pazar yeri parka taşınıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-ypovallo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "υποβάλλω",
+  "pos": "verb",
+  "en": "to submit (an application)",
+  "tr": "sunmak, vermek (başvuru)",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Οι αιτήσεις υποβάλλονται ηλεκτρονικά.",
+   "en": "Applications are submitted online.",
+   "tr": "Başvurular elektronik olarak yapılır."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-enimerono",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "ενημερώνω",
+  "pos": "verb",
+  "en": "to inform",
+  "tr": "bilgilendirmek",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Θα σας ενημερώσουμε με μήνυμα.",
+   "en": "We will inform you by message.",
+   "tr": "Size mesajla bilgi vereceğiz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-anakoinono",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "ανακοινώνω",
+  "pos": "verb",
+  "en": "to announce",
+  "tr": "duyurmak, açıklamak",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Ο δήμος ανακοινώνει τις ημερομηνίες.",
+   "en": "The municipality announces the dates.",
+   "tr": "Belediye tarihleri duyuruyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-akyrono",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "ακυρώνω",
+  "pos": "verb",
+  "en": "to cancel",
+  "tr": "iptal etmek",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Η κράτηση ακυρώθηκε.",
+   "en": "The booking was cancelled.",
+   "tr": "Rezervasyon iptal edildi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-chtizo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "χτίζω",
+  "pos": "verb",
+  "en": "to build",
+  "tr": "inşa etmek, yapmak (bina)",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Το σχολείο χτίστηκε πριν από σαράντα χρόνια.",
+   "en": "The school was built forty years ago.",
+   "tr": "Okul kırk yıl önce yapıldı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-ilektronika",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "ηλεκτρονικά",
+  "pos": "adv",
+  "en": "electronically, online",
+  "tr": "elektronik olarak",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Συμπληρώνετε την αίτηση ηλεκτρονικά.",
+   "en": "You fill in the application online.",
+   "tr": "Başvuruyu elektronik olarak dolduruyorsunuz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-mechri",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "μέχρι",
+  "pos": "prep",
+  "en": "until, by",
+  "tr": "-e kadar",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Οι αιτήσεις υποβάλλονται μέχρι την Παρασκευή.",
+   "en": "Applications are submitted by Friday.",
+   "tr": "Başvurular cumaya kadar yapılır."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-symfono",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "συμφωνώ",
+  "pos": "verb",
+  "en": "to agree",
+  "tr": "katılmak; aynı fikirde olmak",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Δε συμφωνώ με την απόφαση.",
+   "en": "I do not agree with the decision.",
+   "tr": "Karara katılmıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-proteino",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "προτείνω",
+  "pos": "verb",
+  "en": "to suggest, to propose",
+  "tr": "önermek",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Σας προτείνω μια λύση.",
+   "en": "I suggest a solution to you.",
+   "tr": "Size bir çözüm öneriyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-syntoma",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "σύντομα",
+  "pos": "adv",
+  "en": "soon; briefly",
+  "tr": "yakında; kısaca",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Θα σας απαντήσουμε σύντομα.",
+   "en": "We will answer you soon.",
+   "tr": "Size yakında cevap vereceğiz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-efcharistimenos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "ευχαριστημένος / ευχαριστημένη",
+  "pos": "adj",
+  "en": "pleased, satisfied (man / woman)",
+  "tr": "memnun (erkek / kadın)",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Οι κάτοικοι είναι ευχαριστημένοι.",
+   "en": "The residents are satisfied.",
+   "tr": "Sakinler memnun."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-enw",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "ενώ",
+  "pos": "conj",
+  "en": "while; whereas",
+  "tr": "iken; oysa, -dığı hâlde",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Το πάρκο είναι μακριά, ενώ η οδός είναι κοντά.",
+   "en": "The park is far, whereas the street is near.",
+   "tr": "Park uzak, oysa cadde yakın."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-kathos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "καθώς",
+  "pos": "conj",
+  "en": "as, since (formal); while",
+  "tr": "çünkü, -dığı için (resmî); -ken",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Καθώς το πάρκο είναι μακριά, λίγοι θα έρθουν.",
+   "en": "As the park is far, few will come.",
+   "tr": "Park uzak olduğu için az kişi gelecek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-epomenos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "επομένως",
+  "pos": "adv",
+  "en": "therefore, consequently",
+  "tr": "bu nedenle, dolayısıyla",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Επομένως, δεν μπορώ να έρθω.",
+   "en": "Therefore, I cannot come.",
+   "tr": "Bu nedenle gelemiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-gi-afto",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "γι' αυτό",
+  "pos": "phrase",
+  "en": "that is why, so",
+  "tr": "bu yüzden",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Δεν έχω αυτοκίνητο· γι' αυτό παίρνω το λεωφορείο.",
+   "en": "I have no car; that is why I take the bus.",
+   "tr": "Arabam yok; bu yüzden otobüse biniyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-epiplewn",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "επιπλέον",
+  "pos": "adv",
+  "en": "moreover, in addition",
+  "tr": "ayrıca, bunun yanında",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Επιπλέον, η στάση είναι μακριά.",
+   "en": "Moreover, the stop is far.",
+   "tr": "Ayrıca durak uzak."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-telos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "τέλος",
+  "pos": "adv",
+  "en": "finally, lastly",
+  "tr": "son olarak",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Τέλος, σας ευχαριστώ για τον χρόνο σας.",
+   "en": "Finally, thank you for your time.",
+   "tr": "Son olarak, ayırdığınız zaman için teşekkür ederim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-eite",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "B1",
+  "el": "είτε … είτε",
+  "pos": "phrase",
+  "en": "either … or; whether … or",
+  "tr": "ya … ya da; ister … ister",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "example": {
+   "el": "Μπορείτε να πληρώσετε είτε με κάρτα είτε με μετρητά.",
+   "en": "You can pay either by card or in cash.",
+   "tr": "Ya kartla ya da nakit ödeyebilirsiniz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-q-notice",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πού μεταφέρεται η λαϊκή αγορά;",
+   "en": "Where is the market being moved to?",
+   "tr": "Pazar yeri nereye taşınıyor?"
+  },
+  "options": [
+   "Στο πάρκο της γειτονιάς.",
+   "Στην οδό Αθηνάς.",
+   "Στο μετρό."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«η λαϊκή αγορά … μεταφέρεται από την οδό Αθηνάς στο πάρκο της γειτονιάς»: it leaves the street and goes to the park.",
+   "tr": "«η λαϊκή αγορά … μεταφέρεται από την οδό Αθηνάς στο πάρκο της γειτονιάς»: pazar caddeden ayrılıp parka gidiyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-q-reply",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Ελένη δε συμφωνεί με την απόφαση.",
+    "en": "Eleni does not agree with the decision.",
+    "tr": "Eleni karara katılmıyor.",
+    "answer": true
+   },
+   {
+    "el": "Η Ελένη έχει αυτοκίνητο.",
+    "en": "Eleni has a car.",
+    "tr": "Eleni'nin arabası var.",
+    "answer": false
+   },
+   {
+    "el": "Το πάρκο είναι κοντά στο μετρό.",
+    "en": "The park is near the metro.",
+    "tr": "Park metroya yakın.",
+    "answer": false
+   },
+   {
+    "el": "Οι κάτοικοι δε ρωτήθηκαν πριν από την απόφαση.",
+    "en": "The residents were not asked before the decision.",
+    "tr": "Karardan önce sakinlere sorulmadı.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "She writes «Αν είχα αυτοκίνητο… αλλά δεν έχω» (she has none), «είναι μακριά από το μετρό» (about the park), and «οι κάτοικοι δε ρωτήθηκαν».",
+   "tr": "«Αν είχα αυτοκίνητο… αλλά δεν έχω» diye yazıyor (arabası yok), park için «είναι μακριά από το μετρό» diyor ve «οι κάτοικοι δε ρωτήθηκαν» yazıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-try-pass",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.passive"
+  ],
+  "text": "Η αίτηση {1} ηλεκτρονικά. Η απόφαση {2} χθες. Οι πωλητές θα {3} με μήνυμα.",
+  "answer": {
+   "1": [
+    "υποβάλλεται"
+   ],
+   "2": [
+    "ανακοινώθηκε"
+   ],
+   "3": [
+    "ενημερωθούν"
+   ]
+  },
+  "options": {
+   "1": [
+    "υποβάλλεται",
+    "υποβάλλονται",
+    "υποβάλλει"
+   ],
+   "2": [
+    "ανακοινώθηκε",
+    "ανακοινώνεται",
+    "ανακοινωθεί"
+   ],
+   "3": [
+    "ενημερωθούν",
+    "ενημερωθεί",
+    "ενημερώθηκαν"
+   ]
+  },
+  "translation": {
+   "en": "The application is submitted online. The decision was announced yesterday. The sellers will be informed by message.",
+   "tr": "Başvuru elektronik olarak yapılır. Karar dün duyuruldu. Satıcılara mesajla bilgi verilecek."
+  },
+  "explain": {
+   "en": "1: one application, and it receives the action: υποβάλλεται (υποβάλλονται is plural; υποβάλλει would mean the application submits something). 2: χθες, singular: past ανακοινώθηκε. 3: plural subject after θα: θα ενημερωθούν.",
+   "tr": "1: tek başvuru ve eylem ona yapılıyor: υποβάλλεται (υποβάλλονται çoğul; υποβάλλει başvurunun bir şey sunduğu anlamına gelir). 2: χθες, tekil: geçmiş ανακοινώθηκε. 3: θα ve çoğul özne: θα ενημερωθούν."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-try-reported",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω τα κενά. Μία λέξη περισσεύει.",
+   "en": "Fill the gaps. One word is not needed.",
+   "tr": "Boşlukları doldur. Bir kelime fazla."
+  },
+  "text": "Ο υπάλληλος μου είπε {1} η αίτηση είναι έτοιμη. Τον ρώτησα {2} το γραφείο ανοίγει το Σάββατο. Μου είπε {3} έρθω αύριο.",
+  "bank": [
+   "ότι",
+   "αν",
+   "να",
+   "επομένως"
+  ],
+  "answer": {
+   "1": "ότι",
+   "2": "αν",
+   "3": "να"
+  },
+  "translation": {
+   "en": "The clerk told me that the application is ready. I asked him whether the office opens on Saturday. He told me to come tomorrow.",
+   "tr": "Memur bana başvurunun hazır olduğunu söyledi. Ona ofisin cumartesi açılıp açılmadığını sordum. Bana yarın gelmemi söyledi."
+  },
+  "explain": {
+   "en": "A statement: ότι. A yes/no question: αν. An instruction: να + the once-only form (να έρθω).",
+   "tr": "Bildirim: ότι. Evet/hayır sorusu: αν. Emir: να + tek seferlik biçim (να έρθω)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-try-unreal",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "syntax.conditional"
+  ],
+  "text": "Αν {1} αυτοκίνητο, θα {2} στο πάρκο.",
+  "answer": {
+   "1": [
+    "είχα"
+   ],
+   "2": [
+    "πήγαινα"
+   ]
+  },
+  "options": {
+   "1": [
+    "είχα",
+    "έχω",
+    "θα έχω"
+   ],
+   "2": [
+    "πήγαινα",
+    "πάω",
+    "πήγα"
+   ]
+  },
+  "translation": {
+   "en": "If I had a car, I would go to the park.",
+   "tr": "Arabam olsa parka giderdim."
+  },
+  "explain": {
+   "en": "Not true now: αν + imperfect (είχα), θα + imperfect (πήγαινα). πήγα is the one-time past and does not go here.",
+   "tr": "Şu an doğru değil: αν + είχα, θα + πήγαινα (ikisi de sürekli geçmiş). πήγα bir kez olan geçmiştir, burada olmaz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-try-link",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge",
+   "linking"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω τα κενά. Μία λέξη περισσεύει.",
+   "en": "Fill the gaps. One word is not needed.",
+   "tr": "Boşlukları doldur. Bir kelime fazla."
+  },
+  "text": "Το πάρκο είναι μακριά από το μετρό, {1} η οδός Αθηνάς είναι κοντά. Πολλοί κάτοικοι δε θα πάνε στο πάρκο, {2} η στάση είναι μακριά. Δεν υπάρχει λεωφορείο. {3}, οι συνταξιούχοι δε θα μπορούν να πάνε.",
+  "bank": [
+   "ενώ",
+   "καθώς",
+   "επομένως",
+   "είτε"
+  ],
+  "answer": {
+   "1": "ενώ",
+   "2": "καθώς",
+   "3": "επομένως"
+  },
+  "translation": {
+   "en": "The park is far from the metro, whereas Athinas Street is near. Many residents will not go to the park, as the stop is far. There is no bus. Therefore, the pensioners will not be able to go.",
+   "tr": "Park metrodan uzak, oysa Athinas Caddesi yakın. Durak uzak olduğu için birçok sakin parka gitmeyecek. Otobüs yok. Bu nedenle emekliler gidemeyecek."
+  },
+  "explain": {
+   "en": "1: contrast, ενώ. 2: reason, καθώς. 3: result, επομένως. είτε needs a second είτε.",
+   "tr": "1: karşıtlık, ενώ. 2: neden, καθώς. 3: sonuç, επομένως. είτε'nin ikinci bir είτε'si olmalı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-p-which-passive",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ποια πρόταση είναι στην παθητική φωνή;",
+   "en": "Which sentence is passive?",
+   "tr": "Hangi cümle edilgen?"
+  },
+  "options": [
+   "Η αίτηση υποβάλλεται ηλεκτρονικά.",
+   "Ο πελάτης στέλνει την αίτηση.",
+   "Το γραφείο κλείνει στις τρεις."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "υποβάλλεται is passive: the application is submitted. στέλνει is active (the client sends). κλείνει is active too: the office closes by itself.",
+   "tr": "υποβάλλεται edilgen: başvuru yapılır. στέλνει etken (müşteri gönderir). κλείνει de etken: ofis kendiliğinden kapanır."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-p-match-pass",
+  "type": "match",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω το ενεργητικό με το παθητικό.",
+   "en": "Match each active past form with its passive form.",
+   "tr": "Her etken geçmiş biçimi edilgen karşılığıyla eşleştir."
+  },
+  "left": [
+   "ανακοίνωσε",
+   "πλήρωσε",
+   "ακύρωσε",
+   "έχτισε"
+  ],
+  "right": [
+   "πληρώθηκε",
+   "χτίστηκε",
+   "ανακοινώθηκε",
+   "ακυρώθηκε"
+  ],
+  "answer": [
+   2,
+   0,
+   3,
+   1
+  ],
+  "explain": {
+   "en": "-ώνω verbs give -ώθηκε (ανακοινώθηκε, πληρώθηκε, ακυρώθηκε). χτίζω gives χτίστηκε.",
+   "tr": "-ώνω fiilleri -ώθηκε verir (ανακοινώθηκε, πληρώθηκε, ακυρώθηκε). χτίζω → χτίστηκε."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-p-chtistikan",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.passive.aorist"
+  ],
+  "text": "Τα σχολεία της γειτονιάς {1} πριν από σαράντα χρόνια.",
+  "answer": {
+   "1": [
+    "χτίστηκαν"
+   ]
+  },
+  "options": {
+   "1": [
+    "χτίστηκαν",
+    "χτίστηκε",
+    "χτίζονται",
+    "θα χτιστούν"
+   ]
+  },
+  "translation": {
+   "en": "The schools of the neighbourhood were built forty years ago.",
+   "tr": "Mahallenin okulları kırk yıl önce yapıldı."
+  },
+  "explain": {
+   "en": "The subject is plural (τα σχολεία) and the time is past (πριν από σαράντα χρόνια): χτίστηκαν.",
+   "tr": "Özne çoğul (τα σχολεία), zaman geçmiş (πριν από σαράντα χρόνια): χτίστηκαν."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-p-akyrothike",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.passive.future"
+  ],
+  "text": "Αν δεν πληρώσετε, η κάρτα σας {1}.",
+  "answer": {
+   "1": [
+    "θα ακυρωθεί"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα ακυρωθεί",
+    "ακυρώθηκε",
+    "θα ακυρώσει",
+    "ακυρώνω"
+   ]
+  },
+  "translation": {
+   "en": "If you do not pay, your card will be cancelled.",
+   "tr": "Ödemezseniz kartınız iptal edilecek."
+  },
+  "explain": {
+   "en": "The card does not cancel; it is cancelled, in the future: θα ακυρωθεί. θα ακυρώσει would mean the card cancels something.",
+   "tr": "Kart iptal etmez, iptal edilir; gelecekte: θα ακυρωθεί. θα ακυρώσει kartın bir şeyi iptal edeceği anlamına gelirdi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-p-cat-tense",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε ρήμα στη σωστή ομάδα.",
+   "en": "Sort each passive form by time: now, past, future.",
+   "tr": "Her edilgen biçimi zamanına göre ayır: şimdi, geçmiş, gelecek."
+  },
+  "categories": [
+   "σήμερα",
+   "χθες",
+   "αύριο"
+  ],
+  "items": [
+   "πληρώνεται",
+   "ακυρώθηκε",
+   "θα χτιστεί",
+   "ανακοινώνονται",
+   "υποβλήθηκαν",
+   "θα ενημερωθούν"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   0,
+   1,
+   2
+  ],
+  "explain": {
+   "en": "πληρώνεται and ανακοινώνονται are the present, ακυρώθηκε and υποβλήθηκαν the past, θα χτιστεί and θα ενημερωθούν the future.",
+   "tr": "πληρώνεται ve ανακοινώνονται şimdiki zaman, ακυρώθηκε ve υποβλήθηκαν geçmiş, θα χτιστεί ve θα ενημερωθούν gelecek zamandır."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-p-reported-pres",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Η Μαρία λέει: «Είμαι κουρασμένη.» Πώς το λέω σε άλλον;",
+   "en": "Maria says: «Είμαι κουρασμένη.» How do I report it?",
+   "tr": "Maria «Είμαι κουρασμένη.» diyor. Bunu başkasına nasıl aktarırım?"
+  },
+  "options": [
+   "Η Μαρία λέει ότι είναι κουρασμένη.",
+   "Η Μαρία λέει ότι είμαι κουρασμένη.",
+   "Η Μαρία λέει ότι ήταν κουρασμένη."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The present stays the present, and the person changes: είμαι (Maria) becomes είναι. ήταν would mean she was tired earlier.",
+   "tr": "Şimdiki zaman şimdiki zaman kalır, kişi değişir: είμαι (Maria) → είναι. ήταν daha önce yorgun olduğu anlamına gelirdi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-p-reported-q",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ο Νίκος με ρώτησε: «Θέλεις καφέ;» Πώς το λέω σε άλλον;",
+   "en": "Nikos asked me: «Θέλεις καφέ;» How do I report it?",
+   "tr": "Nikos bana «Θέλεις καφέ;» diye sordu. Bunu başkasına nasıl aktarırım?"
+  },
+  "options": [
+   "Με ρώτησε αν θέλω καφέ.",
+   "Με ρώτησε ότι θέλω καφέ.",
+   "Με ρώτησε να θέλω καφέ."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "A yes/no question is reported with αν. ότι reports a statement, να an instruction.",
+   "tr": "Evet/hayır sorusu αν ile aktarılır. ότι bildirimi, να emri aktarır."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-p-reported-wh",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "grammar": [
+   "syntax.reported"
+  ],
+  "text": "Η υπάλληλος με ρώτησε: «Πού μένετε;» Με ρώτησε {1} {2}.",
+  "answer": {
+   "1": [
+    "πού"
+   ],
+   "2": [
+    "μένω"
+   ]
+  },
+  "options": {
+   "1": [
+    "πού",
+    "αν",
+    "ότι"
+   ],
+   "2": [
+    "μένω",
+    "μένετε",
+    "μένει"
+   ]
+  },
+  "translation": {
+   "en": "The clerk asked me: «Where do you live?» She asked me where I live.",
+   "tr": "Memur bana «Nerede oturuyorsunuz?» diye sordu. Bana nerede oturduğumu sordu."
+  },
+  "explain": {
+   "en": "A question word stays as it is: πού. The person changes to the speaker's own: μένετε (you) becomes μένω (I). The tense stays present.",
+   "tr": "Soru kelimesi aynı kalır: πού. Kişi, aktaranın kendisine döner: μένετε (siz) → μένω (ben). Zaman şimdiki kalır."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "opus-review"
+  }
+ },
+ {
+  "id": "chB1-p-which-unreal",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ποια πρόταση μιλά για κάτι που δεν ισχύει τώρα;",
+   "en": "Which sentence is about something that is not true now?",
+   "tr": "Hangi cümle şu an geçerli olmayan bir şeyden söz ediyor?"
+  },
+  "options": [
+   "Αν είχα αυτοκίνητο, θα πήγαινα στο πάρκο.",
+   "Αν έρθεις αύριο, θα πάμε στο πάρκο.",
+   "Αν έχεις χρόνο, έλα."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Only the first has the imperfect in both parts (είχα, πήγαινα): I have no car. The others are real possibilities.",
+   "tr": "Yalnızca birincisinde iki tarafta da sürekli geçmiş var (είχα, πήγαινα): arabam yok. Diğerleri gerçek olasılıklar."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-p-unreal-gap",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "syntax.conditional"
+  ],
+  "text": "Αν η στάση {1} κοντά, θα {2} το λεωφορείο.",
+  "answer": {
+   "1": [
+    "ήταν"
+   ],
+   "2": [
+    "έπαιρνα"
+   ]
+  },
+  "options": {
+   "1": [
+    "ήταν",
+    "είναι",
+    "θα είναι"
+   ],
+   "2": [
+    "έπαιρνα",
+    "παίρνω",
+    "πήρα"
+   ]
+  },
+  "translation": {
+   "en": "If the stop were near, I would take the bus.",
+   "tr": "Durak yakın olsa otobüse binerdim."
+  },
+  "explain": {
+   "en": "Unreal: αν + ήταν (imperfect of είμαι), θα + έπαιρνα (imperfect of παίρνω). πήρα is the one-time past.",
+   "tr": "Gerçek dışı: αν + ήταν (είμαι fiilinin sürekli geçmişi), θα + έπαιρνα (παίρνω fiilinin). πήρα bir kez olan geçmiştir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-p-result-word",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge",
+   "linking"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ποια λέξη δείχνει αποτέλεσμα;",
+   "en": "Which word shows a result?",
+   "tr": "Hangi kelime sonuç bildirir?"
+  },
+  "options": [
+   "επομένως",
+   "ενώ",
+   "επιπλέον"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "επομένως means «therefore». ενώ opens a contrast, επιπλέον adds a point.",
+   "tr": "επομένως «bu nedenle» demektir. ενώ karşıtlık, επιπλέον ek bir nokta açar."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "chB1-p-eite",
+  "type": "form",
+  "skill": "grammar",
+  "level": "B1",
+  "topics": [
+   "stage:b1-bridge"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "syntax.linking"
+  ],
+  "text": "Μπορείτε να πληρώσετε {1} με κάρτα {2} με μετρητά.",
+  "answer": {
+   "1": [
+    "είτε"
+   ],
+   "2": [
+    "είτε"
+   ]
+  },
+  "options": {
+   "1": [
+    "είτε",
+    "ενώ",
+    "αλλά"
+   ],
+   "2": [
+    "είτε",
+    "ενώ",
+    "αλλά"
+   ]
+  },
+  "translation": {
+   "en": "You can pay either by card or in cash.",
+   "tr": "Ya kartla ya da nakit ödeyebilirsiniz."
+  },
+  "explain": {
+   "en": "«either … or» is είτε … είτε: the word comes twice.",
+   "tr": "«ya … ya da» είτε … είτε'dir: kelime iki kez gelir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "b1-bridge",
+   "by": "sonnet-draft"
+  }
+ }
+]

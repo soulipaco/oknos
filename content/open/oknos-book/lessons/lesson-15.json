@@ -1,0 +1,860 @@
+{
+ "id": "oknos-book.lesson-15",
+ "curriculum": "oknos-book",
+ "stage": "lesson-15",
+ "level": "A2",
+ "title": {
+  "tr": "Telefonla sipariş, tavernada masa: basit gelecek zaman (θα + fiil)",
+  "en": "Ordering by phone, a table at the taverna: the simple future (θα + verb)"
+ },
+ "minutes": 16,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde telefonla sipariş verecek, tavernada masa ayırtıp yemek söyleyecek ve planlarından söz edeceksin.\n\nAnahtar nokta: Yunancada gelecek zaman, hiç değişmeyen **θα** + fiildir (Türkçedeki *yaz-acağ-ım* gibi, ama *θα* fiilin önünde): **θα γράψω**. Fiilin kökü çoğu zaman değişir; bu bölüm bunu bir sisteme bağlıyor.",
+     "en": "In this chapter you order by phone, book a taverna table, order at the table and talk about your plans.\n\nThe key point: the Greek future is the unchanging **θα** + the verb: **θα γράψω** (I will write). The verb's stem often changes, and this chapter turns that into a system."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Telefonla sipariş",
+    "en": "An order by phone"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Önce dinle, sonra oku. Kalıp olarak al: [[Θα ήθελα να παραγγείλω]] (sipariş vermek istiyorum; *να* sonra gelecek), [[Εντάξει]] (tamam), [[με γύρο]] (dönerli) ve [[σε πίτα ή σε μερίδα]] (pidede mi, tabakta mı). Her *θα …* biçimine dikkat et: kuralı aşağıda göreceksin.",
+     "en": "Listen first, then read. Take these as set phrases: [[Θα ήθελα να παραγγείλω]] (I would like to order; the *να* comes later), [[Εντάξει]] (all right), [[με γύρο]] (with gyros) and [[σε πίτα ή σε μερίδα]] (wrapped in pita, or on a plate). Notice every *θα …* form: the rule follows below."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Cuma akşamı. Nikos sık sık sipariş verdiği suvlaki dükkânını arıyor; adresini biliyorlar.",
+      "en": "Friday evening. Nikos phones the souvlaki shop he often orders from; they know his address."
+     },
+     "lines": [
+      {
+       "who": "Υπάλληλος",
+       "el": "Ναι, παρακαλώ;",
+       "tr": "Buyurun?",
+       "en": "Hello?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Καλησπέρα σας. Θα ήθελα να παραγγείλω σουβλάκια.",
+       "tr": "İyi akşamlar. Suvlaki sipariş etmek istiyorum.",
+       "en": "Good evening. I would like to order souvlaki."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Τι θα πάρετε;",
+       "tr": "Ne alacaksınız?",
+       "en": "What will you have?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Είμαστε τέσσερα άτομα. Θα πάρω τέσσερα σουβλάκια με γύρο και μία μερίδα τζατζίκι.",
+       "tr": "Dört kişiyiz. Dört döner suvlaki ve bir porsiyon tzatziki alacağım.",
+       "en": "There are four of us. I'll have four souvlaki with gyros and a portion of tzatziki."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Σε πίτα ή σε μερίδα;",
+       "tr": "Pidede mi, tabakta mı?",
+       "en": "In pita, or on a plate?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Σε πίτα, χωρίς κρεμμύδι. Και μία χωριάτικη σαλάτα.",
+       "tr": "Pidede, soğansız. Bir de köy salatası.",
+       "en": "In pita, without onion. And a village salad."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Εντάξει. Τα σουβλάκια θα έρθουν σε μισή ώρα. Όλα μαζί είκοσι οχτώ ευρώ.",
+       "tr": "Tamam. Suvlakiler yarım saat sonra gelecek. Hepsi yirmi sekiz euro.",
+       "en": "All right. The souvlaki will be there in half an hour. Twenty-eight euros altogether."
+      },
+      {
+       "who": "Νίκος",
+       "el": "Ωραία. Θα πληρώσω με μετρητά.",
+       "tr": "Güzel. Nakit ödeyeceğim.",
+       "en": "Fine. I'll pay in cash."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Hafta sonu için masa",
+    "en": "A table for the weekend"
+   },
+   "blocks": [
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ayşe, cumartesi akşamı için bir taverna arıyor.",
+      "en": "Ayşe phones a taverna for Saturday evening."
+     },
+     "lines": [
+      {
+       "who": "Σερβιτόρος",
+       "el": "Ταβέρνα «Η Σμύρνη», παρακαλώ.",
+       "tr": "«İzmir» Tavernası, buyurun.",
+       "en": "Taverna «Smyrna», hello."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Καλησπέρα. Θα ήθελα ένα τραπέζι για το Σάββατο το βράδυ.",
+       "tr": "İyi akşamlar. Cumartesi akşamı için bir masa istiyorum.",
+       "en": "Good evening. I would like a table for Saturday evening."
+      },
+      {
+       "who": "Σερβιτόρος",
+       "el": "Πόσα άτομα θα είστε;",
+       "tr": "Kaç kişi olacaksınız?",
+       "en": "How many people will you be?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Θα είμαστε έξι άτομα.",
+       "tr": "Altı kişi olacağız.",
+       "en": "There will be six of us."
+      },
+      {
+       "who": "Σερβιτόρος",
+       "el": "Και τι ώρα θα έρθετε;",
+       "tr": "Ve saat kaçta geleceksiniz?",
+       "en": "And what time will you come?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Θα έρθουμε στις εννιά.",
+       "tr": "Dokuzda geleceğiz.",
+       "en": "We'll come at nine."
+      },
+      {
+       "who": "Σερβιτόρος",
+       "el": "Εντάξει. Σάββατο, στις εννιά, έξι άτομα. Το όνομά σας, παρακαλώ;",
+       "tr": "Tamam. Cumartesi, saat dokuz, altı kişi. Adınız, lütfen?",
+       "en": "All right. Saturday, at nine, six people. Your name, please?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Αϊσέ Γιλμάζ.",
+       "tr": "Ayşe Yılmaz.",
+       "en": "Ayşe Yılmaz."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Tavernada",
+    "en": "At the taverna"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Cumartesi akşamı tavernadasın. Tavernada ev şarabı sürahiyle gelir ve *μισό κιλό* (yaklaşık yarım litre) ya da *ένα κιλό* diye söylenir.",
+     "en": "It is Saturday evening at the taverna. In a taverna the house wine comes in a carafe and is ordered as *μισό κιλό* (roughly half a litre) or *ένα κιλό*."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Cumartesi akşamı, saat dokuz. Nikos, Ayşe ve arkadaşları masada.",
+      "en": "Saturday evening, nine o'clock. Nikos, Ayşe and their friends at the table."
+     },
+     "lines": [
+      {
+       "who": "Σερβιτόρος",
+       "el": "Ορίστε το μενού. Τι θα πάρετε;",
+       "tr": "Buyurun menü. Ne alacaksınız?",
+       "en": "Here is the menu. What will you have?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Θα πάρουμε μία χωριάτικη σαλάτα και ψωμί.",
+       "tr": "Bir köy salatası ve ekmek alacağız.",
+       "en": "We'll have a village salad and bread."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Εγώ θα φάω αρνί με πατάτες.",
+       "tr": "Ben patatesli kuzu yiyeceğim.",
+       "en": "I'll have lamb with potatoes."
+      },
+      {
+       "who": "Νίκος",
+       "el": "Εγώ θα φάω κοτόπουλο και η Ελένη θα φάει ζυμαρικά.",
+       "tr": "Ben tavuk yiyeceğim, Eleni de makarna yiyecek.",
+       "en": "I'll have chicken and Eleni will have pasta."
+      },
+      {
+       "who": "Σερβιτόρος",
+       "el": "Θα πιείτε κάτι;",
+       "tr": "Bir şey içecek misiniz?",
+       "en": "Will you drink something?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Θα πιούμε νερό και μισό κιλό κρασί.",
+       "tr": "Su ve yarım kilo şarap içeceğiz.",
+       "en": "We'll drink water and half a kilo of wine."
+      },
+      {
+       "who": "Σερβιτόρος",
+       "el": "Εντάξει. Καλή όρεξη!",
+       "tr": "Tamam. Afiyet olsun!",
+       "en": "All right. Enjoy your meal!"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Τον λογαριασμό, παρακαλώ.",
+       "tr": "(Sonra) Hesap, lütfen.",
+       "en": "(Later) The bill, please."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloglara göre:",
+     "en": "According to the dialogues:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch15-q-delivery",
+      "oknos-book/ch15-q-table"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Gelecek zaman: θα + fiil",
+    "en": "The future: θα + verb"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloglarda *θα* ile başlayan çok biçim gördün: *θα πάρω*, *θα πιούμε*, *θα έρθουν*. Gelecek zaman: **θα** + fiilin **bir kerelik kökü** + kişi eki. Fiilin iki kökü vardır: şimdiki kök (*γράφ-*, süren iş) ve bir kerelik kök (*γράψ-*, yapılıp biten iş); gelecek ikincisiyle kurulur. Ders 11'de de gördün: *έδωσα* ve *θα δώσω* aynı kökü (*δώσ-*) kullanır. *γράφω* gibi fiillerde ekler şimdiki zamandakilerle aynı. (*θα γράφω* da vardır: süren ya da tekrarlanan bir gelecek iş.)",
+     "en": "In the dialogues you saw many forms with *θα*: *θα πάρω*, *θα πιούμε*, *θα έρθουν*. The future is **θα** + the verb's **once-only stem** + the personal ending. A verb has two stems: the present stem (*γράφ-*, an action that goes on) and the once-only stem (*γράψ-*, an action that is done and finished); the future uses the second. You met it in Lesson 11: *έδωσα* and *θα δώσω* share one stem (*δώσ-*). For verbs like *γράφω* the endings are the same as in the present. (*θα γράφω* also exists: an ongoing or repeated future action.)"
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "γράφω → θα γράψω",
+      "en": "γράφω → θα γράψω"
+     },
+     "head": [
+      "",
+      {
+       "tr": "Şimdiki zaman",
+       "en": "Present"
+      },
+      {
+       "tr": "Gelecek",
+       "en": "Future"
+      }
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "γράφω",
+       "θα γράψω"
+      ],
+      [
+       "εσύ",
+       "γράφεις",
+       "θα γράψεις"
+      ],
+      [
+       "αυτός / αυτή / αυτό",
+       "γράφει",
+       "θα γράψει"
+      ],
+      [
+       "εμείς",
+       "γράφουμε",
+       "θα γράψουμε"
+      ],
+      [
+       "εσείς",
+       "γράφετε",
+       "θα γράψετε"
+      ],
+      [
+       "αυτοί / αυτές / αυτά",
+       "γράφουν(ε)",
+       "θα γράψουν(ε)"
+      ]
+     ],
+     "note": {
+      "tr": "Ekler aynı, yalnızca kök *γράφ-* → *γράψ-* oldu. Olumsuz için *δε θα* denir (bkz. İpuçları).",
+      "en": "The endings stay; only the stem changes, *γράφ-* → *γράψ-*. The negative is *δε θα* (see the tips)."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Αύριο θα γράψω ένα μήνυμα στη Σοφία.",
+       "tr": "Yarın Sofia'ya bir mesaj yazacağım.",
+       "en": "Tomorrow I will write Sofia a message."
+      },
+      {
+       "el": "Ο Νίκος θα διαβάσει την εφημερίδα.",
+       "tr": "Nikos gazeteyi okuyacak.",
+       "en": "Nikos will read the newspaper."
+      },
+      {
+       "el": "Εσείς θα δουλέψετε το Σάββατο;",
+       "tr": "Siz cumartesi çalışacak mısınız?",
+       "en": "Will you work on Saturday?"
+      },
+      {
+       "el": "Τα παιδιά θα μείνουν στο σπίτι.",
+       "tr": "Çocuklar evde kalacak.",
+       "en": "The children will stay at home."
+      },
+      {
+       "el": "Αύριο δε θα δουλέψω.",
+       "tr": "Yarın çalışmayacağım.",
+       "en": "Tomorrow I will not work."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Bir kerelik kök nasıl bulunur: A grubu fiiller",
+    "en": "How to find the stem: A verbs"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "A grubu fiillerde kök değişimi son harflere bakar. Aşağıdaki tablo bu bölümdeki fiillerin hepsini kapsıyor. Vurgu aynı hecede kalır; *ευ* → *εψ* olunca işaret *ε*'nin üstüne geçer (*δουλεύω* → *δουλέψω*).",
+     "en": "With A verbs the change of stem depends on the last letters. The table below covers every verb of this chapter. The stress stays on the same syllable; when *ευ* becomes *εψ*, the mark moves onto the *ε* (*δουλεύω* → *δουλέψω*)."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Şimdiki zamandan gelecek köküne",
+      "en": "From the present to the future stem"
+     },
+     "head": [
+      {
+       "tr": "Değişim",
+       "en": "Change"
+      },
+      {
+       "tr": "Şimdiki zaman",
+       "en": "Present"
+      },
+      {
+       "tr": "Gelecek (ben)",
+       "en": "Future (I)"
+      }
+     ],
+     "rows": [
+      [
+       "ζ → σ",
+       "διαβάζω · αγοράζω",
+       "θα διαβάσω · θα αγοράσω"
+      ],
+      [
+       "φ → ψ",
+       "γράφω",
+       "θα γράψω"
+      ],
+      [
+       "ευ → εψ",
+       "δουλεύω · ταξιδεύω",
+       "θα δουλέψω · θα ταξιδέψω"
+      ],
+      [
+       "ν → σ",
+       "πληρώνω · κλείνω",
+       "θα πληρώσω · θα κλείσω"
+      ],
+      [
+       "χν → ξ",
+       "φτιάχνω",
+       "θα φτιάξω"
+      ],
+      [
+       {
+        "tr": "ζ → ξ (birkaç fiil)",
+        "en": "ζ → ξ (a few verbs)"
+       },
+       "αλλάζω · παίζω",
+       "θα αλλάξω · θα παίξω"
+      ],
+      [
+       {
+        "tr": "kural dışı",
+        "en": "irregular"
+       },
+       "μένω",
+       "θα μείνω"
+      ]
+     ],
+     "note": {
+      "tr": "Son iki satır kural değil. *-ζω* fiillerinin çoğu *-σω* olur, ama birkaçı (*αλλάζω*, *παίζω*) *-ξω* alır; *μένω* → *μείνω* ise tek başına. Her *-νω* fiili de *-σω* olmaz: *δίνω, παίρνω, φέρνω, μπαίνω, βγαίνω* aşağıdaki kuralsızlar tablosunda. Yeni bir fiili gelecek biçimiyle birlikte öğren.",
+      "en": "The last two rows are not rules. Most *-ζω* verbs take *-σω*, but a few (*αλλάζω*, *παίζω*) take *-ξω*; *μένω* → *μείνω* stands alone. Not every *-νω* verb takes *-σω* either: *δίνω, παίρνω, φέρνω, μπαίνω, βγαίνω* are in the irregular table below. Learn each new verb together with its future."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Αύριο θα αγοράσω ψωμί.",
+       "tr": "Yarın ekmek alacağım.",
+       "en": "Tomorrow I will buy bread."
+      },
+      {
+       "el": "Θα κλείσω τραπέζι για το Σάββατο.",
+       "tr": "Cumartesi için masa ayırtacağım.",
+       "en": "I will book a table for Saturday."
+      },
+      {
+       "el": "Την άλλη εβδομάδα η Ελένη θα ταξιδέψει με το πλοίο.",
+       "tr": "Gelecek hafta Eleni gemiyle yolculuk edecek.",
+       "en": "Next week Eleni will travel by boat."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Kuralsız fiiller: kökü bambaşka olanlar",
+    "en": "Irregular verbs: stems of their own"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bazı çok sık fiillerin gelecek kökü şimdiki kökten tahmin edilemez. Bunların bir kısmını önceki derslerde tek tek gördün (*θα πάω*, *θα φάω*, *θα δω*, *θα δώσω*, *θα έρθω*). Şimdi hepsi bir arada.",
+     "en": "The future stem of some very common verbs cannot be guessed from the present. You met several of them one by one in earlier lessons (*θα πάω*, *θα φάω*, *θα δω*, *θα δώσω*, *θα έρθω*). Here they are together."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Şimdiki zaman → θα + ben",
+      "en": "Present → θα + I"
+     },
+     "head": [
+      {
+       "tr": "Şimdiki zaman",
+       "en": "Present"
+      },
+      {
+       "tr": "Gelecek (ben)",
+       "en": "Future (I)"
+      },
+      {
+       "tr": "Anlamı",
+       "en": "Meaning"
+      }
+     ],
+     "rows": [
+      [
+       "πάω",
+       "θα πάω",
+       {
+        "tr": "gitmek",
+        "en": "go"
+       }
+      ],
+      [
+       "έρχομαι",
+       "θα έρθω",
+       {
+        "tr": "gelmek",
+        "en": "come"
+       }
+      ],
+      [
+       "τρώω",
+       "θα φάω",
+       {
+        "tr": "yemek",
+        "en": "eat"
+       }
+      ],
+      [
+       "πίνω",
+       "θα πιω",
+       {
+        "tr": "içmek",
+        "en": "drink"
+       }
+      ],
+      [
+       "βλέπω",
+       "θα δω",
+       {
+        "tr": "görmek",
+        "en": "see"
+       }
+      ],
+      [
+       "λέω",
+       "θα πω",
+       {
+        "tr": "söylemek",
+        "en": "say"
+       }
+      ],
+      [
+       "βρίσκω",
+       "θα βρω",
+       {
+        "tr": "bulmak",
+        "en": "find"
+       }
+      ],
+      [
+       "μπαίνω · βγαίνω",
+       "θα μπω · θα βγω",
+       {
+        "tr": "girmek · çıkmak",
+        "en": "go in · go out"
+       }
+      ],
+      [
+       "δίνω",
+       "θα δώσω",
+       {
+        "tr": "vermek",
+        "en": "give"
+       }
+      ],
+      [
+       "παίρνω",
+       "θα πάρω",
+       {
+        "tr": "almak",
+        "en": "take, get"
+       }
+      ],
+      [
+       "φέρνω",
+       "θα φέρω",
+       {
+        "tr": "getirmek",
+        "en": "bring"
+       }
+      ],
+      [
+       "κάνω · έχω · είμαι",
+       "θα κάνω · θα έχω · θα είμαι",
+       {
+        "tr": "yapmak · sahip olmak · olmak",
+        "en": "do · have · be"
+       }
+      ]
+     ],
+     "note": {
+      "tr": "*κάνω*, *έχω* ve *είμαι* için kök değişmez: *θα* + bildiğin biçim.",
+      "en": "For *κάνω*, *έχω* and *είμαι* nothing changes: *θα* + the form you know."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Την άλλη εβδομάδα θα δω την Ελένη.",
+       "tr": "Gelecek hafta Eleni'yi göreceğim.",
+       "en": "Next week I will see Eleni."
+      },
+      {
+       "el": "Τι θα κάνεις το Σαββατοκύριακο;",
+       "tr": "Hafta sonu ne yapacaksın?",
+       "en": "What will you do at the weekend?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Kuralsız fiillerin ekleri",
+    "en": "The endings of the irregular verbs"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "*δώσω*, *πάρω*, *φέρω*, *κάνω*, *έχω* ve *έρθω* ([[θα έρθουμε]] biz geleceğiz, [[θα έρθουν]] onlar gelecek) normal ekleri alır (*θα γράψω* tablosu gibi). *πάω* ve *φάω* şimdiki zamandaki *πάω* gibi çekilir. *πιω*, *δω*, *πω*, *βρω*, *μπω*, *βγω* ise ortak bir örnek izler.",
+     "en": "*δώσω*, *πάρω*, *φέρω*, *κάνω*, *έχω* and *έρθω* ([[θα έρθουμε]] we will come, [[θα έρθουν]] they will come) take the normal endings (like the *θα γράψω* table). *πάω* and *φάω* are conjugated like the present *πάω*. *πιω*, *δω*, *πω*, *βρω*, *μπω* and *βγω* follow one shared pattern."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Ekler farklı olan dört fiil",
+      "en": "Four verbs with their own endings"
+     },
+     "head": [
+      "θα +",
+      "πάω",
+      "φάω",
+      "πιω",
+      "δω"
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "πάω",
+       "φάω",
+       "πιω",
+       "δω"
+      ],
+      [
+       "εσύ",
+       "πας",
+       "φας",
+       "πιεις",
+       "δεις"
+      ],
+      [
+       "αυτός / αυτή / αυτό",
+       "πάει",
+       "φάει",
+       "πιει",
+       "δει"
+      ],
+      [
+       "εμείς",
+       "πάμε",
+       "φάμε",
+       "πιούμε",
+       "δούμε"
+      ],
+      [
+       "εσείς",
+       "πάτε",
+       "φάτε",
+       "πιείτε",
+       "δείτε"
+      ],
+      [
+       "αυτοί / αυτές / αυτά",
+       "πάνε",
+       "φάνε",
+       "πιουν(ε)",
+       "δουν(ε)"
+      ]
+     ],
+     "note": {
+      "tr": "*θα πω*, *θα βρω*, *θα μπω*, *θα βγω* de *θα δω* gibi çekilir: -ω, -εις, -ει, -ούμε, -είτε, -ουν(ε) (*θα βγούμε*, *θα πείτε*). Tek heceli biçimler vurgu işareti almaz (*θα πιεις*, *θα δεις*, *θα πουν*); iki heceliler alır (*θα πιούμε*, *θα δείτε*).",
+      "en": "*θα πω*, *θα βρω*, *θα μπω* and *θα βγω* follow *θα δω*: -ω, -εις, -ει, -ούμε, -είτε, -ουν(ε) (*θα βγούμε*, *θα πείτε*). One-syllable forms carry no accent mark (*θα πιεις*, *θα δεις*, *θα πουν*); two-syllable forms do (*θα πιούμε*, *θα δείτε*)."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Το Σάββατο θα φάμε στην ταβέρνα.",
+       "tr": "Cumartesi tavernada yemek yiyeceğiz.",
+       "en": "On Saturday we will eat at the taverna."
+      },
+      {
+       "el": "Εσύ τι θα πιεις;",
+       "tr": "Sen ne içeceksin?",
+       "en": "What will you drink?"
+      },
+      {
+       "el": "Αύριο θα βγω από το γραφείο στις έξι.",
+       "tr": "Yarın ofisten altıda çıkacağım.",
+       "en": "Tomorrow I will leave the office at six."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Gelecek için zaman sözcükleri",
+    "en": "Time words for the future"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Gelecekten söz ederken bu sözcükler *θα* ile birlikte gelir. *άλλος* \"başka, öbür\" demektir; *την άλλη εβδομάδα* \"gelecek hafta\" olur.",
+     "en": "These words go with *θα* when you talk about the future. *άλλος* means \"other\"; *την άλλη εβδομάδα* is \"next week\"."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Gelecek zaman sözcükleri",
+      "en": "Future time words"
+     },
+     "head": [
+      "",
+      {
+       "tr": "Anlamı",
+       "en": "Meaning"
+      }
+     ],
+     "rows": [
+      [
+       "αύριο",
+       {
+        "tr": "yarın",
+        "en": "tomorrow"
+       }
+      ],
+      [
+       "μεθαύριο",
+       {
+        "tr": "öbür gün",
+        "en": "the day after tomorrow"
+       }
+      ],
+      [
+       "το Σαββατοκύριακο",
+       {
+        "tr": "hafta sonu",
+        "en": "at the weekend"
+       }
+      ],
+      [
+       "την άλλη εβδομάδα",
+       {
+        "tr": "gelecek hafta",
+        "en": "next week"
+       }
+      ],
+      [
+       "τον άλλο μήνα",
+       {
+        "tr": "gelecek ay",
+        "en": "next month"
+       }
+      ],
+      [
+       "του χρόνου",
+       {
+        "tr": "seneye (kalıp; kuralı Ders 22'de)",
+        "en": "next year (a set phrase; the rule comes in Lesson 22)"
+       }
+      ],
+      [
+       "σε μισή ώρα",
+       {
+        "tr": "yarım saat sonra",
+        "en": "in half an hour"
+       }
+      ]
+     ],
+     "note": {
+      "tr": "Günler de aynı işi görür: *τη Δευτέρα θα πάω* \"pazartesi gideceğim\".",
+      "en": "Days work the same way: *τη Δευτέρα θα πάω* \"on Monday I will go\"."
+     }
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Kelimeler: suvlaki dükkânı, taverna menüsü, sipariş fiilleri ve gelecek sözcükleri. Sipariş için üç kalıp yeter: *Θα ήθελα …* (nazik; dükkânda *… alayım*), *Θα πάρω …* (… alacağım) ve *Τον λογαριασμό, παρακαλώ.* (hesap, lütfen; *το λογαριασμό* da görülür, ama standart yazım *τον*). Yemekte de [[Καλή όρεξη!]] (afiyet olsun) dersin.",
+     "en": "The words: the souvlaki shop, the taverna menu, ordering verbs and future words. Three phrases are enough to order: *Θα ήθελα …* (I would like …, polite), *Θα πάρω …* (I'll have …) and *Τον λογαριασμό, παρακαλώ.* (the bill, please; *το λογαριασμό* is also seen, but the standard is *τον*). At the table you say [[Καλή όρεξη!]] (enjoy your meal)."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/ch15-souvlaki",
+      "oknos-book/ch15-gyros",
+      "oknos-book/ch15-pita",
+      "oknos-book/ch15-choriatiki",
+      "oknos-book/ch15-tzatziki",
+      "oknos-book/ch15-merida",
+      "oknos-book/v-logariasmos",
+      "oknos-book/v-trapezi",
+      "oknos-book/v-menoy",
+      "oknos-book/v-arni",
+      "oknos-book/v-zymarika",
+      "oknos-book/ch15-krasi",
+      "oknos-book/ch15-paraggelno",
+      "oknos-book/ch15-kleino",
+      "oknos-book/ch15-pairno",
+      "oknos-book/v-ferno-verb",
+      "oknos-book/ch15-atomo",
+      "oknos-book/v-choris-adj",
+      "oknos-book/ch15-methavrio",
+      "oknos-book/ch15-tou-chronou",
+      "oknos-book/v-taxideyo-verb",
+      "oknos-book/v-allazo-verb",
+      "oknos-book/v-mellon"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**Türkçedeki -ecek, Yunancada θα.** Türkçe gelecek zamanı fiile ek yapıştırarak kurar (*yaz-acağ-ım*), Yunanca fiilin önüne bir kelime koyar: *θα γράψω*. İkisinde de kişi fiilde görünür; *θα* hiç değişmez.",
+     "en": "**Turkish -ecek, Greek θα.** Turkish builds the future by gluing a suffix to the verb (*yaz-acağ-ım*); Greek puts a word in front of it: *θα γράψω*. In both, the person shows on the verb, and *θα* never changes."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Olumsuz: δε θα, θα δε değil.** Olumsuzluk *θα*'dan önce gelir: *δε θα πάω*. (*θ*'dan önce *δεν* son -ν'sini atar; ama *δεν θα* da çok yaygındır, konuşmada da yazıda da: ikisini de görürsün.) Kök değişimini tahmin etme: *τρώω* ama *θα φάω*.",
+     "en": "**The negative: δε θα, not θα δε.** The negative comes before *θα*: *δε θα πάω*. (Before *θ*, *δεν* drops its final -ν; but *δεν θα* is also very common, in speech and in writing, so you will see both.) Do not guess stem changes: *τρώω* but *θα φάω*."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "tr": "**Sınavda.** Dinlemede diyalog iki kez çalınır, sorular çoktan seçmelidir. Sipariş ve rezervasyonda çoğu zaman kaç kişi, hangi gün, saat kaç ve ne kadar sorulur. İlkinde not al, ikincide kontrol et. Tuzaklar: *έξι* / *εφτά*, *μισή* / *τέταρτο*, *Σάββατο* / *Κυριακή*.",
+     "en": "**In the exam.** In the listening part the dialogue is played twice and the questions are multiple choice. For orders and bookings they usually ask how many people, which day, what time and how much. Note these the first time and check the second. Traps: *έξι* / *εφτά*, *μισή* / *τέταρτο*, *Σάββατο* / *Κυριακή*.",
+     "exam_task": "a2ltr.listening.mcq"
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: kök değişimi, kuralsız fiiller ve kişi ekleri.",
+     "en": "Now you try: stem changes, irregular verbs and person endings."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch15-try-stem",
+      "oknos-book/ch15-try-irregular",
+      "oknos-book/ch15-try-bank"
+     ]
+    }
+   ]
+  }
+ ]
+}

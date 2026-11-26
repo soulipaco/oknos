@@ -1,0 +1,741 @@
+{
+ "id": "oknos-book.lesson-08",
+ "curriculum": "oknos-book",
+ "stage": "lesson-08",
+ "level": "A1",
+ "title": {
+  "tr": "Kayıp çanta: tarif etmek, «hangisi?» diye sormak, sıfatlar ve büyük sayılar",
+  "en": "A lost bag: describing things, asking «which one?», adjectives and big numbers"
+ },
+ "minutes": 15,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde insanları ve eşyaları tarif etmeyi (*ψηλός, μικρή, καινούργιο*) ve «hangisi?» diye sormayı öğreneceksin. Ayrıca «dün oradaydım», «yarın burada olacağım» demeyi ve 1.000 ile 3.000.000 arası sayıları öğreneceksin.\n\nAnahtar nokta: Türkçede sıfat hiç değişmez (*küçük çanta*, *küçük ev*). Yunancada sıfat, tarif ettiği ismin **cinsiyetine** uyar: **μικρή** τσάντα, **μικρό** σπίτι.",
+     "en": "In this chapter you learn to describe people and things (*ψηλός, μικρή, καινούργιο*) and to ask «which one?». You also learn «I was», «I will be» and the numbers from 1,000 to 3,000,000.\n\nThe key point: the adjective matches the **gender** of its noun: **μικρή** τσάντα, **μικρό** σπίτι."
+    }
+   ]
+  },
+  {
+   "kind": "warmup",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bir şey kaybettin ve onu tarif etmen gerekiyor: büyük mü, ne renk, yeni mi? Dinlerken sıfatların sonlarına dikkat et.",
+     "en": "You have lost something and must describe it: size, colour, new or old? Listen for the adjective endings."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Kayıp çanta",
+    "en": "The lost bag"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Dinle, sonra oku. Yeni sözcükler: [[εδώ]] (burada), [[Τι έχει μέσα;]] (İçinde ne var?), [[Εντάξει]] (tamam). Kurallar aşağıda.",
+     "en": "Listen, then read. New words: [[εδώ]] (here), [[Τι έχει μέσα;]] (What is in it?), [[Εντάξει]] (OK). The rules follow below."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ayşe metroda çantasını kaybetti. Karakola gidiyor; memur çantayı tarif etmesini istiyor.",
+      "en": "Ayşe has lost her bag on the metro. She goes to the police station, and the officer asks her to describe it."
+     },
+     "lines": [
+      {
+       "who": "Αστυνομικός",
+       "el": "Καλημέρα σας. Παρακαλώ;",
+       "tr": "İyi günler. Buyurun?",
+       "en": "Good morning. How can I help?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα. Χθες ήμουν στο μετρό και τώρα δεν έχω την τσάντα μου.",
+       "tr": "İyi günler. Dün metrodaydım ve şimdi çantam yok.",
+       "en": "Good morning. Yesterday I was on the metro, and now I don't have my bag."
+      },
+      {
+       "who": "Αστυνομικός",
+       "el": "Πώς είναι η τσάντα σας; Μεγάλη ή μικρή;",
+       "tr": "Çantanız nasıl? Büyük mü, küçük mü?",
+       "en": "What is your bag like? Big or small?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Είναι μικρή και μαύρη.",
+       "tr": "Küçük ve siyah.",
+       "en": "It is small and black."
+      },
+      {
+       "who": "Αστυνομικός",
+       "el": "Καινούργια ή παλιά;",
+       "tr": "Yeni mi, eski mi?",
+       "en": "New or old?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Παλιά, αλλά είναι πολύ ωραία.",
+       "tr": "Eski ama çok güzel.",
+       "en": "Old, but it is very nice."
+      },
+      {
+       "who": "Αστυνομικός",
+       "el": "Τι έχει μέσα;",
+       "tr": "İçinde ne var?",
+       "en": "What is in it?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ένα βιβλίο κι ένα κινητό. Το κινητό είναι καινούργιο.",
+       "tr": "Bir kitap ve bir cep telefonu. Telefon yeni.",
+       "en": "A book and a mobile phone. The phone is new."
+      },
+      {
+       "who": "Αστυνομικός",
+       "el": "Είναι ακριβό;",
+       "tr": "Pahalı mı?",
+       "en": "Is it expensive?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ναι, χίλια διακόσια ευρώ.",
+       "tr": "Evet, bin iki yüz euro.",
+       "en": "Yes, one thousand two hundred euros."
+      },
+      {
+       "who": "Αστυνομικός",
+       "el": "Εντάξει. Αύριο θα είμαι εδώ.",
+       "tr": "Tamam. Yarın burada olacağım.",
+       "en": "OK. I will be here tomorrow."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ευχαριστώ πολύ. Θα είμαι κι εγώ εδώ.",
+       "tr": "Çok teşekkürler. Ben de burada olacağım.",
+       "en": "Thank you very much. I will be here too."
+      }
+     ]
+    },
+    {
+     "type": "prose",
+     "tr": "Sonra Ayşe bir arkadaşıyla bir fotoğrafa bakıyor (*fotoğraf*: [[η φωτογραφία]]). Kim kim?",
+     "en": "Afterwards Ayşe looks at a photo with a friend ([[η φωτογραφία]], the photo). Who is who?"
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Eleni ve Ayşe bir partiden kalma bir fotoğrafa bakıyor.",
+      "en": "Eleni and Ayşe look at a photo from a party."
+     },
+     "lines": [
+      {
+       "who": "Ελένη",
+       "el": "Ποιος είναι ο κύριος που είναι με τη Μαρία στη φωτογραφία;",
+       "tr": "Fotoğrafta Maria'yla birlikte olan bey kim?",
+       "en": "Who is the man who is with Maria in the photo?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Είναι ο Νίκος, ο φίλος της.",
+       "tr": "Nikos, arkadaşı.",
+       "en": "That is Nikos, her friend."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Ποιος; Ο ψηλός;",
+       "tr": "Hangisi? Uzun olan mı?",
+       "en": "Which one? The tall one?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Όχι, ο κοντός. Ο ψηλός είναι ο Κώστας.",
+       "tr": "Hayır, kısa olan. Uzun olan Kostas.",
+       "en": "No, the short one. The tall one is Kostas."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Και ποια είναι η κοπέλα που είναι στο μπαρ;",
+       "tr": "Peki barda olan genç kadın kim?",
+       "en": "And who is the young woman who is at the bar?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Είναι η Σοφία. Είναι νέα και πολύ όμορφη.",
+       "tr": "Sofia. Genç ve çok güzel.",
+       "en": "That is Sofia. She is young and very pretty."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloglara göre:",
+     "en": "According to the dialogues:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch08-q-bag",
+      "oknos-book/ch08-q-true-false"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Sıfat isme uyar: καλός, καλή, καλό",
+    "en": "The adjective matches the noun: καλός, καλή, καλό"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Sıfat (*επίθετο*) eril isimle **-ος**, dişil isimle **-η**, nötr isimle **-ο** alır. Bu birinci gruptur. Vurgu yerinden oynamaz: *ψηλός, ψηλή, ψηλό*.\nBiçim, *είναι*'den sonra da artikel ile isim arasında da aynıdır.",
+     "en": "The adjective (*επίθετο*) takes **-ος** with a masculine noun, **-η** with a feminine one and **-ο** with a neuter one. This is group 1. The stress does not move: *ψηλός, ψηλή, ψηλό*.\nThe form is the same after *είναι* and between the article and the noun."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Birinci grup: -ος, -η, -ο",
+      "en": "Group 1: -ος, -η, -ο"
+     },
+     "head": [
+      {
+       "tr": "eril",
+       "en": "masculine"
+      },
+      {
+       "tr": "dişil",
+       "en": "feminine"
+      },
+      {
+       "tr": "nötr",
+       "en": "neuter"
+      }
+     ],
+     "rows": [
+      [
+       "καλός",
+       "καλή",
+       "καλό"
+      ],
+      [
+       "μεγάλος",
+       "μεγάλη",
+       "μεγάλο"
+      ],
+      [
+       "μικρός",
+       "μικρή",
+       "μικρό"
+      ],
+      [
+       "ψηλός",
+       "ψηλή",
+       "ψηλό"
+      ],
+      [
+       "ακριβός",
+       "ακριβή",
+       "ακριβό"
+      ],
+      [
+       "μαύρος",
+       "μαύρη",
+       "μαύρο"
+      ],
+      [
+       "κόκκινος",
+       "κόκκινη",
+       "κόκκινο"
+      ]
+     ],
+     "note": {
+      "tr": "Renkler de sıfattır: μαύρος, κόκκινος… Sözlükte çoğu kez nötr biçimle görürsün (μαύρο, κόκκινο).",
+      "en": "Colours are adjectives too: μαύρος, κόκκινος… In word lists you often see them in the neuter form (μαύρο, κόκκινο)."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Ο φίλος μου είναι ψηλός.",
+       "tr": "Arkadaşım uzun boylu. (erkek)",
+       "en": "My friend is tall. (a man)"
+      },
+      {
+       "el": "Η φίλη μου είναι ψηλή.",
+       "tr": "Arkadaşım uzun boylu. (kadın)",
+       "en": "My friend is tall. (a woman)"
+      },
+      {
+       "el": "Το κόκκινο φόρεμα είναι φτηνό.",
+       "tr": "Kırmızı elbise ucuz.",
+       "en": "The red dress is cheap.",
+       "note": {
+        "tr": "Artikel ile isim arasında: το **κόκκινο** φόρεμα.",
+        "en": "Between the article and the noun: το **κόκκινο** φόρεμα."
+       }
+      },
+      {
+       "el": "Η μαύρη τσάντα είναι ακριβή.",
+       "tr": "Siyah çanta pahalı.",
+       "en": "The black bag is expensive."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "İkinci grup: παλιός, παλιά, παλιό",
+    "en": "Group 2: παλιός, παλιά, παλιό"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "İkinci grupta dişil **-α** ile biter. *-ος*'un önünde bir **ünlü** (ι, ε, υ) varsa dişil **-α** olur: παλι**ός** → παλι**ά**, νέ**ος** → νέ**α**, ωραί**ος** → ωραί**α**. Önünde ünsüz varsa dişil genellikle **-η** olur (*ψηλή, μικρή*).\nİstisna: birkaç sıfat ünsüzden sonra da **-ια** alır. İkisini bil: *γλυκός → γλυκιά* (7. dersteki kahveden) ve *φρέσκος → φρέσκια*. Her sıfatı üç biçimiyle öğren.",
+     "en": "In the second group the feminine ends in **-α**. After a **vowel** (ι, ε, υ) before *-ος*, the feminine is **-α**: παλι**ός** → παλι**ά**, νέ**ος** → νέ**α**, ωραί**ος** → ωραί**α**. After a consonant it is usually **-η** (*ψηλή, μικρή*).\nThe exception: a few adjectives take **-ια** after a consonant. Know these two: *γλυκός → γλυκιά* (the coffee word from Lesson 7) and *φρέσκος → φρέσκια*. Learn each adjective with all three forms."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "İkinci grup: -ος, -α, -ο",
+      "en": "Group 2: -ος, -α, -ο"
+     },
+     "head": [
+      {
+       "tr": "eril",
+       "en": "masculine"
+      },
+      {
+       "tr": "dişil",
+       "en": "feminine"
+      },
+      {
+       "tr": "nötr",
+       "en": "neuter"
+      }
+     ],
+     "rows": [
+      [
+       "καινούργιος",
+       "καινούργια",
+       "καινούργιο"
+      ],
+      [
+       "νέος",
+       "νέα",
+       "νέο"
+      ],
+      [
+       "παλιός",
+       "παλιά",
+       "παλιό"
+      ],
+      [
+       "πλούσιος",
+       "πλούσια",
+       "πλούσιο"
+      ],
+      [
+       "ωραίος",
+       "ωραία",
+       "ωραίο"
+      ],
+      [
+       "κρύος",
+       "κρύα",
+       "κρύο"
+      ],
+      [
+       "γλυκός",
+       "γλυκιά",
+       "γλυκό"
+      ],
+      [
+       "φρέσκος",
+       "φρέσκια",
+       "φρέσκο"
+      ]
+     ],
+     "note": {
+      "tr": "Son iki satır istisna: ünsüzden sonra -ια. *Νέος* hem «genç» hem «yeni» demektir; eşya için «yeni» çoğu zaman *καινούργιος*'tur.",
+      "en": "The last two rows are the exceptions: -ια after a consonant. *Νέος* means both «young» and «new»; for things, «new» is usually *καινούργιος*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Ο Νίκος είναι νέος και πλούσιος.",
+       "tr": "Nikos genç ve zengin.",
+       "en": "Nikos is young and rich."
+      },
+      {
+       "el": "Η Σοφία είναι νέα και πλούσια.",
+       "tr": "Sofia genç ve zengin.",
+       "en": "Sofia is young and rich."
+      },
+      {
+       "el": "Ο καφές είναι κρύος.",
+       "tr": "Kahve soğuk.",
+       "en": "The coffee is cold."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "«Hangisi?», «kim?»: ποιος, ποια, ποιο",
+    "en": "«Which?», «who?»: ποιος, ποια, ποιο"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "*Ποιος* hem «kim?» hem «hangi?» demektir ve isme uyar: **ποιος, ποια, ποιο** (okunuşu *pyos, pya, pyo*). Tek başına da durur, isimden önce de.\nBurada özneyi soruyor; başka biçimleri sonra gelecek.",
+     "en": "*Ποιος* means both «who?» and «which?», and it matches the noun: **ποιος, ποια, ποιο** (read *pyos, pya, pyo*). It stands alone or before a noun.\nHere it asks about the subject; other forms come later."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "eril",
+       "en": "masculine"
+      },
+      {
+       "tr": "dişil",
+       "en": "feminine"
+      },
+      {
+       "tr": "nötr",
+       "en": "neuter"
+      }
+     ],
+     "rows": [
+      [
+       "ποιος",
+       "ποια",
+       "ποιο"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "— Ποιος είναι ο Κώστας; — Ο ψηλός.",
+       "tr": "— Kostas hangisi? — Uzun olan.",
+       "en": "— Which one is Kostas? — The tall one."
+      },
+      {
+       "el": "— Ποια είναι η Σοφία; — Η νέα.",
+       "tr": "— Sofia hangisi? — Genç olan.",
+       "en": "— Which one is Sofia? — The young one."
+      },
+      {
+       "el": "— Ποιο φόρεμα είναι ακριβό; — Το κόκκινο.",
+       "tr": "— Hangi elbise pahalı? — Kırmızı olan.",
+       "en": "— Which dress is expensive? — The red one.",
+       "note": {
+        "tr": "İsimle birlikte: ποιο **φόρεμα**. Cevapta artikel + sıfat yeter.",
+        "en": "With a noun: ποιο **φόρεμα**. In the answer, article + adjective is enough."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Dün ve yarın: ήμουν, θα είμαι",
+    "en": "Yesterday and tomorrow: ήμουν, θα είμαι"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "*Είμαι*'nin geçmişi **ήμουν** («idim»), geleceği **θα είμαι** («olacağım»): *θα* + bildiğin biçim. Şimdilik yalnızca **ben** ve **sen** (tekil). Konuşmada *ήμουνα, ήσουνα* da duyarsın.\nSıfat yine uyar: bir kadın *Ήμουν πολύ νέα* der.",
+     "en": "The past of *είμαι* is **ήμουν** («I was»), the future **θα είμαι** («I will be»): *θα* + the form you know. For now only **I** and **you** (singular). In speech you also hear *ήμουνα, ήσουνα*.\nThe adjective still matches: a woman says *Ήμουν πολύ νέα*."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      "είμαι",
+      {
+       "tr": "geçmiş",
+       "en": "past"
+      },
+      {
+       "tr": "gelecek",
+       "en": "future"
+      }
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "είμαι",
+       "ήμουν",
+       "θα είμαι"
+      ],
+      [
+       "εσύ",
+       "είσαι",
+       "ήσουν",
+       "θα είσαι"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Χθες ήμουν στο μετρό.",
+       "tr": "Dün metrodaydım.",
+       "en": "Yesterday I was on the metro."
+      },
+      {
+       "el": "Χθες ήσουν στο μπαρ;",
+       "tr": "Dün barda mıydın?",
+       "en": "Were you at the bar yesterday?"
+      },
+      {
+       "el": "Αύριο θα είμαι στο γραφείο.",
+       "tr": "Yarın ofiste olacağım.",
+       "en": "Tomorrow I will be at the office."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "«-en/-an» yerine που",
+    "en": "που instead of «-en/-an»"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Türkçede *Atina'da oturan arkadaşım* dersin: yan cümle isimden **önce** gelir. Yunancada isimden **sonra** küçük bir kelime gelir: **που**. Hiç değişmez; cinsiyet ya da sayı almaz. İki cümleyi birleştirir.\nDikkat: *που* (aksansız) «ki / olan», *πού* (aksanlı) «nerede» demektir.",
+     "en": "Turkish puts the clause **before** the noun (*Atina'da oturan arkadaşım*). Greek puts **που** («who, that») **after** it. It never changes. It joins two sentences.\nCareful: *που* (no accent) is «who/that»; *πού* (accent) is «where»."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "iki cümle",
+       "en": "two sentences"
+      },
+      {
+       "tr": "tek cümle",
+       "en": "one sentence"
+      }
+     ],
+     "rows": [
+      [
+       "Ο φίλος μου μένει εδώ. Ο φίλος μου είναι μηχανικός.",
+       "Ο φίλος μου που μένει εδώ είναι μηχανικός."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Ο φίλος που μένει εδώ είναι ψηλός.",
+       "tr": "Burada oturan arkadaş uzun boylu.",
+       "en": "The friend who lives here is tall."
+      },
+      {
+       "el": "Η κοπέλα που δουλεύει στο μετρό είναι από την Κρήτη.",
+       "tr": "Metroda çalışan genç kadın Giritli.",
+       "en": "The young woman who works on the metro is from Crete."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "1.000 – 3.000.000 ve para",
+    "en": "1,000 – 3,000,000, and money"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**1.000** tek başına *χίλια*'dır. **2.000**'den itibaren *χιλιάδες* («binler») gelir. Bu kelime **dişildir**, bu yüzden önündeki sayı da dişil olur: **τρεις**, **τέσσερις**, **δεκατρείς** χιλιάδες, **διακόσιες** χιλιάδες. *Δύο, πέντε, έξι*… değişmez. Ardından yüzlükler 4. dersteki gibi gelir: **δύο χιλιάδες τετρακόσια** ευρώ (2.400).\n**Milyon** nötrdür: *ένα εκατομμύριο, δύο εκατομμύρια*.\nPara: *το ευρώ* hiç değişmez (*χίλια ευρώ*). *Το δολάριο* ve *η λίρα* (Türk lirası ya da sterlin) çoğulda değişir: [[δύο δολάρια]], [[δύο λίρες]]. *Λίρα* dişil olduğu için *χίλιες λίρες* denir. Çoğul sonra gelecek; şimdilik tanıman yeter.",
+     "en": "**1,000** on its own is *χίλια*. From **2,000** you use *χιλιάδες* («thousands»). This word is **feminine**, so the number before it is feminine too: **τρεις**, **τέσσερις**, **δεκατρείς** χιλιάδες, **διακόσιες** χιλιάδες. *Δύο, πέντε, έξι*… never change. Then the hundreds come as in Lesson 4: **δύο χιλιάδες τετρακόσια** ευρώ (2,400).\nA **million** is neuter: *ένα εκατομμύριο, δύο εκατομμύρια*.\nMoney: *το ευρώ* never changes (*χίλια ευρώ*). *Το δολάριο* and *η λίρα* (the Turkish lira, or the pound) change in the plural: [[δύο δολάρια]], [[δύο λίρες]]. *Λίρα* is feminine, so it is *χίλιες λίρες*. Plurals come later; for now just recognise them."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "sayı",
+       "en": "number"
+      },
+      {
+       "tr": "Yunanca",
+       "en": "Greek"
+      }
+     ],
+     "rows": [
+      [
+       "1.000",
+       "χίλια"
+      ],
+      [
+       "2.000",
+       "δύο χιλιάδες"
+      ],
+      [
+       "3.000",
+       "τρεις χιλιάδες"
+      ],
+      [
+       "13.000",
+       "δεκατρείς χιλιάδες"
+      ],
+      [
+       "200.000",
+       "διακόσιες χιλιάδες"
+      ],
+      [
+       "1.000.000",
+       "ένα εκατομμύριο"
+      ],
+      [
+       "2.000.000",
+       "δύο εκατομμύρια"
+      ],
+      [
+       "3.000.000",
+       "τρία εκατομμύρια"
+      ]
+     ],
+     "note": {
+      "tr": "Kalıp: sayı + χιλιάδες + yüzlük: 2.400 = δύο χιλιάδες τετρακόσια. 1.000 ise tek kelime: 1.200 = χίλια διακόσια.",
+      "en": "The pattern: number + χιλιάδες + hundreds: 2,400 = δύο χιλιάδες τετρακόσια. 1,000 is one word: 1,200 = χίλια διακόσια."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Το κινητό κάνει χίλια διακόσια ευρώ.",
+       "tr": "Telefon bin iki yüz euro.",
+       "en": "The phone costs 1,200 euros."
+      },
+      {
+       "el": "Το παλιό αυτοκίνητο κάνει δύο χιλιάδες τετρακόσια ευρώ.",
+       "tr": "Eski araba iki bin dört yüz euro.",
+       "en": "The old car costs 2,400 euros."
+      },
+      {
+       "el": "Στη Σμύρνη το κινητό κάνει πενήντα χιλιάδες λίρες.",
+       "tr": "İzmir'de telefon elli bin lira.",
+       "en": "In Izmir the phone costs fifty thousand lira.",
+       "note": {
+        "tr": "*Λίρες* çoğul: yalnızca tanı.",
+        "en": "*Λίρες* is the plural: just recognise it."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu dersin kelimeleri. Bölümü bitirince oturumlarına gelecekler.",
+     "en": "The words of this lesson. They come into your sessions once you finish the chapter."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/v-psilos-adj",
+      "oknos-book/ch08-kontos",
+      "oknos-book/v-megalos-adj",
+      "oknos-book/v-mikros-adj",
+      "oknos-book/v-oraios-adj",
+      "oknos-book/v-omorfos-adj",
+      "oknos-book/ch08-kainourgios",
+      "oknos-book/v-neos-adj",
+      "oknos-book/v-palios-adj",
+      "oknos-book/v-akrivos-adj",
+      "oknos-book/v-ftinos-adj",
+      "oknos-book/v-mayro-adj",
+      "oknos-book/v-kokkino-adj",
+      "oknos-book/v-forema",
+      "oknos-book/v-tsanta",
+      "oknos-book/ch08-kopela",
+      "oknos-book/ch08-poios",
+      "oknos-book/ch08-imoun",
+      "oknos-book/ch08-tha-imai",
+      "oknos-book/ch07-avrio",
+      "oknos-book/ch07-chthes",
+      "oknos-book/ch08-chiliada",
+      "oknos-book/ch08-ekatommyrio",
+      "oknos-book/v-dolario",
+      "oknos-book/v-lira"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**Sıfat artık değişiyor.** Türkçede *küçük çanta* ile *küçük ev* aynıdır. Yunancada *μικρή τσάντα* ama *μικρό σπίτι*. Önce ismin cinsiyetine bak (artikel söyler: *η*, *το*), sonra sıfatı ona uydur.",
+     "en": "**The adjective now changes**, like French *petite / petit*: *μικρή τσάντα* but *μικρό σπίτι*. Check the noun's gender first (the article tells you), then match the adjective."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Cinsiyet uyumsuzluğu.** *Η τσάντα είναι μικρό* yanlış; *η τσάντα* dişil, o yüzden *μικρή*. Eşyalarda cinsiyet doğaya göre değil kelimeye göredir.",
+     "en": "**Mismatch.** *Η τσάντα είναι μικρό* is wrong: *η τσάντα* is feminine, so *μικρή*. For things, the gender belongs to the word, not to the thing."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: sıfat uyumu, ikinci grup, ποιος, ήμουν / θα είμαι ve που.",
+     "en": "Now you try: adjective agreement, group 2, ποιος, ήμουν / θα είμαι and που."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch08-try-agree",
+      "oknos-book/ch08-try-group2",
+      "oknos-book/ch08-try-poios",
+      "oknos-book/ch08-try-eimai",
+      "oknos-book/ch08-try-pou"
+     ]
+    }
+   ]
+  }
+ ]
+}

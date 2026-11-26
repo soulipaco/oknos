@@ -1,0 +1,864 @@
+{
+ "id": "oknos-book.lesson-16",
+ "curriculum": "oknos-book",
+ "stage": "lesson-16",
+ "level": "A2",
+ "title": {
+  "tr": "Nafplio'da bir hafta sonu: otel ayırtmak, gelecek zaman (B1, B2, G fiilleri) ve nesne zamirleri",
+  "en": "A weekend in Nafplio: booking a hotel, the future (B1, B2, G verbs) and object pronouns"
+ },
+ "minutes": 18,
+ "version": 2,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde telefonla otel odası ayırtmayı ve resepsiyonda giriş yapmayı öğreneceksin. Gelecek zamanı B1, B2 ve G fiillerine genişletiyorsun (Ders 15'te A fiilleri vardı) ve «beni, seni, onu…» gibi nesne zamirlerini öğreniyorsun.\n\nAnahtar nokta: bu zamirler fiilin hemen **önüne** gelir, Türkçedeki gibi: **Σε περιμένω** (seni bekliyorum).",
+     "en": "You learn to book a hotel room by phone and to check in. You extend the future to B1, B2 and G verbs (Lesson 15 had the A verbs) and learn the object pronouns \"me, you, him…\".\n\nThe key point: these pronouns stand right **before** the verb: **Σε περιμένω** (I am waiting for you)."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Telefonla otel ayırtmak",
+    "en": "Booking a hotel by phone"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ayşe ve Nikos cuma otobüsle Nafplio'ya gidecek. Ayşe «[[Μπούρτζι]]» otelini arıyor (limandaki küçük kale-adanın adı). [[Έχετε]] = resmî «sizin var». Üç kalıbı şimdilik olduğu gibi al: [[Θα ήθελα να κάνω κράτηση]] (rezervasyon yaptırmak istiyorum; *να* Ders 17'de), [[Θα σας πάρω τηλέφωνο]] (sizi arayacağım; *παίρνω τηλέφωνο* = telefonla aramak) ve [[Καλό ταξίδι!]] (iyi yolculuklar). Her *θα …* biçimine ve *με, σε, σας* gibi küçük kelimelere dikkat et.",
+     "en": "Ayşe and Nikos take the bus to Nafplio on Friday. Ayşe phones the hotel «[[Μπούρτζι]]» (named after the harbour's island fort). [[Έχετε]] = formal «you have». Take three phrases as they are for now: [[Θα ήθελα να κάνω κράτηση]] (I would like to make a booking; *να* comes in Lesson 17), [[Θα σας πάρω τηλέφωνο]] (I will phone you; *παίρνω τηλέφωνο* = to phone someone) and [[Καλό ταξίδι!]] (have a good trip). Notice every *θα …* form and the small words *με, σε, σας*."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ayşe, Nafplio'daki «Μπούρτζι» oteline telefon ediyor.",
+      "en": "Ayşe phones the hotel «Μπούρτζι» in Nafplio."
+     },
+     "lines": [
+      {
+       "who": "Υπάλληλος",
+       "el": "Ναι, παρακαλώ;",
+       "tr": "Evet, buyurun?",
+       "en": "Yes, hello?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα. Έχετε ένα δίκλινο για την Παρασκευή και το Σάββατο;",
+       "tr": "Günaydın. Cuma ve cumartesi için iki kişilik bir odanız var mı?",
+       "en": "Good morning. Do you have a double for Friday and Saturday?"
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Ναι, έχουμε. Δύο νύχτες, σωστά;",
+       "tr": "Evet, var. İki gece, değil mi?",
+       "en": "Yes, we do. Two nights, right?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Σωστά. Το δωμάτιο έχει μπαλκόνι;",
+       "tr": "Doğru. Odanın balkonu var mı?",
+       "en": "That's right. Does the room have a balcony?"
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Ναι, όλα τα δωμάτια έχουν μπαλκόνι. Πισίνα δεν έχουμε, αλλά η θάλασσα είναι πολύ κοντά.",
+       "tr": "Evet, bütün odaların balkonu var. Havuzumuz yok, ama deniz çok yakın.",
+       "en": "Yes, all the rooms have a balcony. We have no pool, but the sea is very close."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ωραία. Πόσο κάνει η διανυκτέρευση;",
+       "tr": "Güzel. Bir gecelik konaklama ne kadar?",
+       "en": "Good. How much is a night's stay?"
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Εβδομήντα ευρώ χωρίς πρωινό, ογδόντα πέντε με πρωινό.",
+       "tr": "Kahvaltısız yetmiş euro, kahvaltılı seksen beş.",
+       "en": "Seventy euros without breakfast, eighty-five with breakfast."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Θα ήθελα να κάνω κράτηση, με πρωινό. Θα έρθουμε την Παρασκευή το βράδυ με το λεωφορείο.",
+       "tr": "Kahvaltılı bir rezervasyon yaptırmak istiyorum. Cuma akşamı otobüsle geleceğiz.",
+       "en": "I would like to make a booking, with breakfast. We will come on Friday evening by bus."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Θα σας περιμένουμε. Καλό ταξίδι!",
+       "tr": "Sizi bekleyeceğiz. İyi yolculuklar!",
+       "en": "We will expect you. Have a good trip!"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ευχαριστώ. Θα σας πάρω τηλέφωνο από το λεωφορείο. Γεια σας!",
+       "tr": "Teşekkürler. Otobüsten sizi arayacağım. Hoşça kalın!",
+       "en": "Thank you. I will phone you from the bus. Goodbye!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Otobüs durağında",
+    "en": "At the bus stop"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Cuma akşamı, Nafplio. Eleni onları otobüs durağında bekliyor.",
+     "en": "Friday evening in Nafplio: Eleni waits at the bus stop."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Nikos, Eleni'yi telefonla arıyor.",
+      "en": "Nikos phones Eleni."
+     },
+     "lines": [
+      {
+       "who": "Νίκος",
+       "el": "Ελένη, καλησπέρα! Είμαστε στο Ναύπλιο. Με ακούς;",
+       "tr": "Eleni, iyi akşamlar! Nafplio'dayız. Beni duyuyor musun?",
+       "en": "Eleni, good evening! We are in Nafplio. Can you hear me?"
+      },
+      {
+       "who": "Ελένη",
+       "el": "Ναι, σε ακούω καλά. Πού είστε;",
+       "tr": "Evet, seni iyi duyuyorum. Neredesiniz?",
+       "en": "Yes, I can hear you well. Where are you?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Μπροστά στο λεωφορείο. Εσύ πού είσαι; Δε σε βλέπω.",
+       "tr": "Otobüsün önünde. Sen neredesin? Seni görmüyorum.",
+       "en": "In front of the bus. Where are you? I can't see you."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Σας βλέπω! Είμαι δίπλα στο ταξί.",
+       "tr": "Sizi görüyorum! Taksinin yanındayım.",
+       "en": "I can see you! I am next to the taxi."
+      },
+      {
+       "who": "Νίκος",
+       "el": "Α, ναι, τώρα σε βλέπω!",
+       "tr": "Ha, evet, şimdi seni görüyorum!",
+       "en": "Oh yes, now I can see you!"
+      },
+      {
+       "who": "Ελένη",
+       "el": "Θα περάσουμε από το ξενοδοχείο και θα φάμε σε μια ταβέρνα στο λιμάνι. Εσύ θα καθίσεις μπροστά, Νίκο, και εμείς πίσω.",
+       "tr": "Otele uğrayacağız, sonra limanda bir tavernada yemek yiyeceğiz. Nikos, sen öne oturacaksın, biz arkaya.",
+       "en": "We will stop at the hotel and eat at a taverna by the harbour. You will sit in front, Nikos, and we in the back."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Resepsiyonda",
+    "en": "At the reception"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "[[Καλώς ήρθατε!]] «hoş geldiniz» demek (hazır kalıp).",
+     "en": "[[Καλώς ήρθατε!]] means \"welcome\" (a set phrase)."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Cuma gecesi, otelin resepsiyonu.",
+      "en": "Friday night, the hotel reception."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Καλησπέρα σας. Έχουμε κράτηση, στο όνομα Γιλμάζ.",
+       "tr": "İyi akşamlar. Yılmaz adına rezervasyonumuz var.",
+       "en": "Good evening. We have a booking, in the name of Yilmaz."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Καλώς ήρθατε! Ένα δίκλινο για δύο νύχτες, για δύο άτομα;",
+       "tr": "Hoş geldiniz! İki gece için iki kişilik bir oda, iki kişi mi?",
+       "en": "Welcome! A double for two nights, for two people?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ναι, η κράτηση είναι για εμένα και τον Νίκο.",
+       "tr": "Evet, rezervasyon benim ve Nikos için.",
+       "en": "Yes, the booking is for me and Nikos."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Ορίστε το κλειδί: δωμάτιο δώδεκα, στον δεύτερο όροφο. Το ασανσέρ είναι δίπλα στη ρεσεψιόν.",
+       "tr": "Buyurun anahtar: on iki numaralı oda, ikinci katta. Asansör resepsiyonun yanında.",
+       "en": "Here is the key: room twelve, on the second floor. The lift is next to the reception."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Ευχαριστώ. Αύριο θα ξυπνήσουμε νωρίς. Θα χρειαστούμε ένα ταξί στις οχτώ.",
+       "tr": "Teşekkürler. Yarın erken kalkacağız. Saat sekizde bir taksiye ihtiyacımız olacak.",
+       "en": "Thank you. Tomorrow we will get up early. We will need a taxi at eight."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Εντάξει, θα τηλεφωνήσω εγώ για το ταξί. Καληνύχτα σας! Θα σας δω το πρωί.",
+       "tr": "Tamam, taksi için ben telefon edeceğim. İyi geceler! Sabah görüşürüz.",
+       "en": "All right, I will phone for the taxi myself. Good night! I will see you in the morning."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloglara göre:",
+     "en": "According to the dialogues:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch16-q-nights",
+      "oknos-book/ch16-q-checkin"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "B1 fiilleri: μιλάω → θα μιλήσω",
+    "en": "B1 verbs: μιλάω → θα μιλήσω"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Ders 5'teki fiiller (**μιλάω, ρωτάω, αγαπάω, ξυπνάω**) dilbilgisi kitaplarının «B1 fiilleri»dir. Gelecekte çoğunda -άω gider, yerine **-ήσω** gelir: μιλ-**ήσω**. Ekler Ders 15'teki gibi: θα μιλήσω, θα μιλήσεις … θα μιλήσουν(ε).\n\nBirkaç fiil **-άσω** alır; bu bölümde ikisi var: **περνάω** ve [[ξεχνάω]] (ξεχνώ da denir). ν de düşer: θα περάσω, θα ξεχάσω.",
+     "en": "The verbs from Lesson 5 (**μιλάω, ρωτάω, αγαπάω, ξυπνάω**) are the \"B1 verbs\" of the grammar books. In the future most of them change -άω to **-ήσω**: μιλ-**ήσω**. The endings are those of Lesson 15: θα μιλήσω, θα μιλήσεις … θα μιλήσουν(ε).\n\nA few take **-άσω**; this chapter has two, **περνάω** and [[ξεχνάω]] (also ξεχνώ), and the ν drops: θα περάσω, θα ξεχάσω."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Şimdiki zaman (ben)",
+       "en": "Present (I)"
+      },
+      {
+       "tr": "Gelecek (ben)",
+       "en": "Future (I)"
+      }
+     ],
+     "rows": [
+      [
+       "μιλάω",
+       "θα μιλήσω"
+      ],
+      [
+       "ρωτάω",
+       "θα ρωτήσω"
+      ],
+      [
+       "αγαπάω",
+       "θα αγαπήσω"
+      ],
+      [
+       "ξυπνάω",
+       "θα ξυπνήσω"
+      ],
+      [
+       "περνάω",
+       "θα περάσω"
+      ],
+      [
+       "ξεχνάω",
+       "θα ξεχάσω"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Θα μιλήσουμε ελληνικά στη ρεσεψιόν.",
+       "tr": "Resepsiyonda Yunanca konuşacağız.",
+       "en": "We will speak Greek at the reception."
+      },
+      {
+       "el": "Θα περάσουμε το Σαββατοκύριακο στο Ναύπλιο.",
+       "tr": "Hafta sonunu Nafplio'da geçireceğiz.",
+       "en": "We will spend the weekend in Nafplio.",
+       "note": {
+        "tr": "περνάω: «geçirmek» ve «uğramak» (θα περάσουμε από το ξενοδοχείο).",
+        "en": "περνάω means \"spend (time)\" and \"stop by\" (θα περάσουμε από το ξενοδοχείο)."
+       }
+      },
+      {
+       "el": "Δε θα ξεχάσω τη βαλίτσα μου.",
+       "tr": "Bavulumu unutmayacağım.",
+       "en": "I will not forget my suitcase."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "B2 fiilleri: τηλεφωνώ, ζω, μπορώ",
+    "en": "B2 verbs: τηλεφωνώ, ζω, μπορώ"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Dilbilgisi kitaplarının «B2 fiilleri» -ώ, -είς, -εί diye çekilir: **τηλεφωνώ** (τηλεφωνείς), **μπορώ** (μπορείς); **ζω** (ζεις) ve ευχαριστώ de bu yolu izler. Çoğu **-ήσω** alır, ekler aynı: θα τηλεφωνήσω. Bu bölümde farklı olan **μπορώ**: θα **μπορέσω**.",
+     "en": "The \"B2 verbs\" of the grammar books go -ώ, -είς, -εί: **τηλεφωνώ** (τηλεφωνείς), **μπορώ** (μπορείς); **ζω** (ζεις) and ευχαριστώ go the same way. Most take **-ήσω**, with the same endings: θα τηλεφωνήσω. In this chapter **μπορώ** is different: θα **μπορέσω**."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Şimdiki zaman (ben)",
+       "en": "Present (I)"
+      },
+      {
+       "tr": "Gelecek (ben)",
+       "en": "Future (I)"
+      },
+      {
+       "tr": "Gelecek (sen)",
+       "en": "Future (you, sg)"
+      }
+     ],
+     "rows": [
+      [
+       "τηλεφωνώ",
+       "θα τηλεφωνήσω",
+       "θα τηλεφωνήσεις"
+      ],
+      [
+       "ζω",
+       "θα ζήσω",
+       "θα ζήσεις"
+      ],
+      [
+       "μπορώ",
+       "θα μπορέσω",
+       "θα μπορέσεις"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Θα τηλεφωνήσω στο ξενοδοχείο αύριο το πρωί.",
+       "tr": "Yarın sabah otele telefon edeceğim.",
+       "en": "I will phone the hotel tomorrow morning."
+      },
+      {
+       "el": "Θα ζήσω έναν χρόνο στην Αθήνα.",
+       "tr": "Bir yıl Atina'da yaşayacağım.",
+       "en": "I will live in Athens for a year."
+      },
+      {
+       "el": "Την Κυριακή θα μπορέσω να έρθω.",
+       "tr": "Pazar günü gelebileceğim.",
+       "en": "On Sunday I will be able to come.",
+       "note": {
+        "tr": "μπορώ να + fiil: kuralı Ders 17'de; şimdilik hazır kalıp.",
+        "en": "μπορώ να + verb: the rule comes in Lesson 17; a set pattern for now."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "G fiilleri: έρχομαι → θα έρθω",
+    "en": "G verbs: έρχομαι → θα έρθω"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "-μαι ile biten fiiller (**έρχομαι, κάθομαι, χρειάζομαι, θυμάμαι, κοιμάμαι**) şimdiki zamanda -μαι alır, ama gelecekte **-μαι yoktur**: θα έρθω, θα καθίσω.\n\n• **έρθ-** ve **καθίσ-** normal ekleri alır, tıpkı θα γράψω gibi: θα έρθω, θα έρθεις … θα έρθουν. Günlük konuşmada θα καθίσω yerine sık sık θα κάτσω duyarsın.\n• **-στ-** ve **-θ-** kökleri (χρειαστ-, θυμηθ-, κοιμηθ-) şu ekleri alır: **-ώ, -είς, -εί, -ούμε, -είτε, -ούν(ε)**.",
+     "en": "Verbs ending in -μαι (**έρχομαι, κάθομαι, χρειάζομαι, θυμάμαι, κοιμάμαι**) have -μαι in the present, but the future has **no -μαι**: θα έρθω, θα καθίσω.\n\n• **έρθ-** and **καθίσ-** take the normal endings, just like θα γράψω: θα έρθω, θα έρθεις … θα έρθουν. In everyday speech you often hear θα κάτσω instead of θα καθίσω.\n• The **-στ-** and **-θ-** stems (χρειαστ-, θυμηθ-, κοιμηθ-) take these endings: **-ώ, -είς, -εί, -ούμε, -είτε, -ούν(ε)**."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Şimdiki zaman (ben)",
+       "en": "Present (I)"
+      },
+      {
+       "tr": "Gelecek (ben)",
+       "en": "Future (I)"
+      },
+      {
+       "tr": "Gelecek (sen)",
+       "en": "Future (you, sg)"
+      },
+      {
+       "tr": "Gelecek (biz)",
+       "en": "Future (we)"
+      }
+     ],
+     "rows": [
+      [
+       "έρχομαι",
+       "θα έρθω",
+       "θα έρθεις",
+       "θα έρθουμε"
+      ],
+      [
+       "κάθομαι",
+       "θα καθίσω",
+       "θα καθίσεις",
+       "θα καθίσουμε"
+      ],
+      [
+       "χρειάζομαι",
+       "θα χρειαστώ",
+       "θα χρειαστείς",
+       "θα χρειαστούμε"
+      ],
+      [
+       "θυμάμαι",
+       "θα θυμηθώ",
+       "θα θυμηθείς",
+       "θα θυμηθούμε"
+      ],
+      [
+       "κοιμάμαι",
+       "θα κοιμηθώ",
+       "θα κοιμηθείς",
+       "θα κοιμηθούμε"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Θα έρθεις στο ξενοδοχείο το βράδυ;",
+       "tr": "Akşam otele gelecek misin?",
+       "en": "Will you come to the hotel in the evening?"
+      },
+      {
+       "el": "Θα χρειαστώ ένα ταξί.",
+       "tr": "Bir taksiye ihtiyacım olacak.",
+       "en": "I will need a taxi."
+      },
+      {
+       "el": "Θα θυμηθείς τον αριθμό μου;",
+       "tr": "Numaramı hatırlayacak mısın?",
+       "en": "Will you remember my number?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "«Beni, seni, onu»: zayıf zamirler",
+    "en": "\"Me, you, him\": the weak pronouns"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Nesne için **zayıf zamirler** kullanılır. Fiilin hemen **önüne**, θα varsa θα'dan sonra gelirler: θα σας δω; olumsuz δεν önlerinde durur: δε σε βλέπω (-ν kuralı aşağıda).\n\n«Onu» için cinsiyet önemli: **τον** (eril), **την** (dişil), **το** (nötr). Sondaki -ν kuralı geçerli: τον hep -ν'li; την ünlüden ve κ, π, τ, ξ, ψ, μπ, ντ, γκ, τσ, τζ önünde -ν'li, başka yerde -ν'siz: την περιμένω, ama τη βλέπω.",
+     "en": "The **weak pronouns** are the object forms. They stand right **before** the verb, after θα: θα σας δω; the negative δεν comes before them: δε σε βλέπω (the -ν rule is below).\n\nFor \"him, her, it\" gender matters: **τον** (m), **την** (f), **το** (n). The final -ν rule applies: τον always keeps its -ν; την keeps it before a vowel and κ, π, τ, ξ, ψ, μπ, ντ, γκ, τσ, τζ, and drops it elsewhere: την περιμένω, but τη βλέπω."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Kim?",
+       "en": "Who?"
+      },
+      {
+       "tr": "Zayıf zamir",
+       "en": "Weak pronoun"
+      },
+      {
+       "tr": "Nesne olarak",
+       "en": "As object"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "ben",
+        "en": "I"
+       },
+       "με",
+       {
+        "tr": "beni",
+        "en": "me"
+       }
+      ],
+      [
+       {
+        "tr": "sen",
+        "en": "you (sg)"
+       },
+       "σε",
+       {
+        "tr": "seni",
+        "en": "you"
+       }
+      ],
+      [
+       {
+        "tr": "o (erkek)",
+        "en": "he"
+       },
+       "τον",
+       {
+        "tr": "onu",
+        "en": "him"
+       }
+      ],
+      [
+       {
+        "tr": "o (kadın)",
+        "en": "she"
+       },
+       "την",
+       {
+        "tr": "onu",
+        "en": "her"
+       }
+      ],
+      [
+       {
+        "tr": "o (nötr)",
+        "en": "it"
+       },
+       "το",
+       {
+        "tr": "onu",
+        "en": "it"
+       }
+      ],
+      [
+       {
+        "tr": "biz",
+        "en": "we"
+       },
+       "μας",
+       {
+        "tr": "bizi",
+        "en": "us"
+       }
+      ],
+      [
+       {
+        "tr": "siz",
+        "en": "you (pl, formal)"
+       },
+       "σας",
+       {
+        "tr": "sizi",
+        "en": "you"
+       }
+      ],
+      [
+       {
+        "tr": "onlar (erkek)",
+        "en": "they (m)"
+       },
+       "τους",
+       {
+        "tr": "onları",
+        "en": "them"
+       }
+      ],
+      [
+       {
+        "tr": "onlar (kadın)",
+        "en": "they (f)"
+       },
+       "τις",
+       {
+        "tr": "onları",
+        "en": "them"
+       }
+      ],
+      [
+       {
+        "tr": "onlar (nötr)",
+        "en": "they (n)"
+       },
+       "τα",
+       {
+        "tr": "onları",
+        "en": "them"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Σε περιμένω στο λιμάνι.",
+       "tr": "Seni limanda bekliyorum.",
+       "en": "I am waiting for you at the harbour."
+      },
+      {
+       "el": "Θα σας δω στο πρωινό.",
+       "tr": "Sizi kahvaltıda göreceğim.",
+       "en": "I will see you at breakfast."
+      },
+      {
+       "el": "Δε σε βλέπω.",
+       "tr": "Seni görmüyorum.",
+       "en": "I can't see you.",
+       "note": {
+        "tr": "δεν + σ: σ listede yok, -ν düşer.",
+        "en": "δεν + σ: σ is not on the list, so the -ν drops."
+       }
+      },
+      {
+       "el": "Τη βλέπω δίπλα στο ταξί.",
+       "tr": "Onu taksinin yanında görüyorum.",
+       "en": "I see her next to the taxi.",
+       "note": {
+        "tr": "την + β: -ν düşer.",
+        "en": "την + β: the -ν drops."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Güçlü zamirler: εμένα, εσένα, αυτόν",
+    "en": "The strong pronouns: εμένα, εσένα, αυτόν"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Her zayıf zamirin bir **güçlü** biçimi var. Şu yerlerde kullanılır:\n1. **Edattan sonra** (για, με, σε, από…): **για εμένα**, asla «για με».\n2. **Vurgu için**, zayıf zamirle birlikte: **Εσένα** σε περιμένω, όχι τον Νίκο.\n3. **Kısa cevapta:** — Ποιον περιμένεις; — Εσένα.\nEdattan sonra kısa biçimler de çok yaygın: για μένα, για σένα, για μας, για σας (εμάς, εσάς'ın kısası). «Για σε» ise hep yanlış.",
+     "en": "Every weak pronoun has a **strong** form. It is used:\n1. **After a preposition** (για, με, σε, από…): **για εμένα**, never \"για με\".\n2. **For emphasis**, together with the weak pronoun: **Εσένα** σε περιμένω, όχι τον Νίκο.\n3. **As a short answer:** — Ποιον περιμένεις; — Εσένα.\nAfter a preposition short forms are common too: για μένα, για σένα, για μας, για σας (short for εμάς, εσάς). \"Για σε\" is always wrong."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Kim?",
+       "en": "Who?"
+      },
+      {
+       "tr": "Zayıf",
+       "en": "Weak"
+      },
+      {
+       "tr": "Güçlü",
+       "en": "Strong"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "ben",
+        "en": "I"
+       },
+       "με",
+       "εμένα"
+      ],
+      [
+       {
+        "tr": "sen",
+        "en": "you (sg)"
+       },
+       "σε",
+       "εσένα"
+      ],
+      [
+       {
+        "tr": "o (erkek)",
+        "en": "he"
+       },
+       "τον",
+       "αυτόν"
+      ],
+      [
+       {
+        "tr": "o (kadın)",
+        "en": "she"
+       },
+       "την",
+       "αυτήν"
+      ],
+      [
+       {
+        "tr": "o (nötr)",
+        "en": "it"
+       },
+       "το",
+       "αυτό"
+      ],
+      [
+       {
+        "tr": "biz",
+        "en": "we"
+       },
+       "μας",
+       "εμάς"
+      ],
+      [
+       {
+        "tr": "siz",
+        "en": "you (pl, formal)"
+       },
+       "σας",
+       "εσάς"
+      ],
+      [
+       {
+        "tr": "onlar (erkek)",
+        "en": "they (m)"
+       },
+       "τους",
+       "αυτούς"
+      ],
+      [
+       {
+        "tr": "onlar (kadın)",
+        "en": "they (f)"
+       },
+       "τις",
+       "αυτές"
+      ],
+      [
+       {
+        "tr": "onlar (nötr)",
+        "en": "they (n)"
+       },
+       "τα",
+       "αυτά"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Η κράτηση είναι για εμένα και τον Νίκο.",
+       "tr": "Rezervasyon benim ve Nikos için.",
+       "en": "The booking is for me and Nikos."
+      },
+      {
+       "el": "Το δωμάτιο είναι για εσάς, κυρία Γιλμάζ.",
+       "tr": "Oda sizin için, Bayan Yılmaz.",
+       "en": "The room is for you, Ms Yilmaz.",
+       "note": {
+        "tr": "Resmî «siz» = εσάς, tek kişiye de.",
+        "en": "The formal \"you\" is εσάς, also for one person."
+       }
+      },
+      {
+       "el": "Εσένα σε περιμένω, όχι τον Νίκο.",
+       "tr": "Seni bekliyorum, Nikos'u değil.",
+       "en": "I am waiting for you, not for Nikos."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Fiyatı söylerken **με πρωινό** (kahvaltılı) ya da **χωρίς πρωινό** (kahvaltısız) dersin.",
+     "en": "For the price of a room you say **με πρωινό** (with breakfast) or **χωρίς πρωινό** (without breakfast)."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/ch16-monoklino",
+      "oknos-book/ch16-diklino",
+      "oknos-book/ch16-kratisi",
+      "oknos-book/ch16-resepsion",
+      "oknos-book/ch16-diany",
+      "oknos-book/v-kleidi",
+      "oknos-book/v-nychta",
+      "oknos-book/v-taxidi",
+      "oknos-book/v-valitsa",
+      "oknos-book/v-limani",
+      "oknos-book/v-pisina",
+      "oknos-book/ch16-mporo",
+      "oknos-book/ch16-tilefono-verb",
+      "oknos-book/v-zo-verb",
+      "oknos-book/v-xechno-verb"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "**Türkçe «beni, seni», Yunanca με, σε.** Türkçede ek zamire yapışır (ben → beni), Yunancada ayrı küçük bir kelime vardır. «Onu» için cinsiyete göre τον, την ya da το seçersin.",
+     "en": "**Turkish *beni, seni*, Greek με, σε.** Turkish glues an ending to the pronoun (ben → beni); Greek uses a separate small word. For \"him, her, it\" you choose τον, την or το by gender."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Sıra.** Zayıf zamir fiilden sonra gelmez (emir kipi başka, Ders 21): *Σε περιμένω*, «Περιμένω σε» değil. Dikkat: *τηλεφωνώ* «σε» ile kurulur (*τηλεφωνώ στο ξενοδοχείο*); «seni arayacağım» için şimdilik *θα σε πάρω τηλέφωνο* de, «σε τηλεφωνώ» değil (*σου τηλεφωνώ*, Ders 20).",
+     "en": "**Word order.** A weak pronoun never follows the verb (commands differ, Lesson 21): *Σε περιμένω*, not \"Περιμένω σε\". Careful: *τηλεφωνώ* takes σε (*τηλεφωνώ στο ξενοδοχείο*); for \"I'll call you\" say *θα σε πάρω τηλέφωνο* for now, not \"σε τηλεφωνώ\" (*σου τηλεφωνώ*, Lesson 20)."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "exam_task": "a2ltr.speaking.roleplay",
+     "tr": "**Sınavda.** Konuşma sınavının 3. bölümü öbür adayla bir canlandırmadır (a2ltr.speaking.roleplay), örneğin otelde oda ayırtmak. İşe yarayan kalıplar: *Έχετε ένα δίκλινο;*, *Το δωμάτιο έχει μπαλκόνι;*, *Πόσο κάνει η διανυκτέρευση;*, *Θα έρθουμε την Παρασκευή*.",
+     "en": "**In the exam.** Part 3 of the speaking test is a role-play with the other candidate (a2ltr.speaking.roleplay), such as booking a hotel room. Useful phrases: *Έχετε ένα δίκλινο;*, *Το δωμάτιο έχει μπαλκόνι;*, *Πόσο κάνει η διανυκτέρευση;*, *Θα έρθουμε την Παρασκευή*."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene.",
+     "en": "Now you try."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch16-try-b1",
+      "oknos-book/ch16-try-g",
+      "oknos-book/ch16-try-pron",
+      "oknos-book/ch16-try-strong"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,359 @@
+{
+ "id": "oknos-book.lesson-01",
+ "curriculum": "oknos-book",
+ "stage": "lesson-01",
+ "level": "A1",
+ "title": {
+  "tr": "Merhaba, ben …: selamlaşmak ve tanışmak",
+  "en": "Hello, I'm …: greeting and meeting people"
+ },
+ "minutes": 10,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde Yunancada **selamlaşmayı**, **kendini tanıtmayı** ve birine **adını ve nereli olduğunu** sormayı öğreneceksin.\n\nEn önemli nokta şu: Yunancada bir arkadaşla ve tanımadığın bir yetişkinle aynı biçimde konuşmazsın. Bu, Türkçedeki *sen* ve *siz* farkının ta kendisi. Yani sana yabancı bir kural değil.",
+     "en": "In this chapter you learn to **greet people**, **introduce yourself**, and ask someone's **name and where they are from**.\n\nThe key point: in Greek you do not speak to a friend and to a stranger in the same way. It is exactly the difference between Turkish *sen* and *siz* (like French *tu* and *vous*)."
+    }
+   ]
+  },
+  {
+   "kind": "warmup",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Dil kursunun ilk günü, yanına biri oturuyor. Ona ne dersin? Peki ertesi sabah belediyedeki memura?\n\nTürkçede ikisine de \"merhaba\" diyebilirsin; ama \"adın ne?\" ile \"adınız ne?\" arasında hep bir seçim yaparsın. Yunancada da tam olarak bu seçimi yapacaksın.",
+     "en": "First day of a language course: someone sits down next to you. What do you say? And the next morning, to the clerk at the town hall?\n\nIn Turkish you could say \"merhaba\" to both, but you would still choose between \"adın ne?\" and \"adınız ne?\". In Greek you make exactly that choice."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "İki tanışma",
+    "en": "Two introductions"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Önce iki diyaloğu dinle (▶ Hepsini dinle), sonra oku. Bir kelimenin anlamını görmek için üstüne dokun. Çeviriyi en sonda aç.",
+     "en": "Listen to both dialogues first (▶ Play all), then read them. Tap a word to see what it means. Open the translation last."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Dil kursunun ilk günü. Eleni ile Mehmet yan yana oturuyor.",
+      "en": "First day of a language course. Eleni and Mehmet sit next to each other."
+     },
+     "lines": [
+      {
+       "who": "Ελένη",
+       "el": "Γεια σου! Με λένε Ελένη. Εσένα;",
+       "tr": "Merhaba! Benim adım Eleni. Seninki?",
+       "en": "Hi! My name is Eleni. And yours?"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Γεια σου, Ελένη. Με λένε Μεχμέτ.",
+       "tr": "Merhaba Eleni. Benim adım Mehmet.",
+       "en": "Hi, Eleni. My name is Mehmet."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Χαίρω πολύ, Μεχμέτ. Από πού είσαι;",
+       "tr": "Memnun oldum Mehmet. Nerelisin?",
+       "en": "Nice to meet you, Mehmet. Where are you from?"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Είμαι από την Τουρκία. Εσύ;",
+       "tr": "Türkiye'denim. Ya sen?",
+       "en": "I'm from Turkey. And you?"
+      },
+      {
+       "who": "Ελένη",
+       "el": "Είμαι από την Ελλάδα.",
+       "tr": "Ben Yunanistan'danım.",
+       "en": "I'm from Greece."
+      }
+     ]
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Sabah, belediyede bir ofis. Memur, Ayşe Yılmaz'ı karşılıyor.",
+      "en": "Morning, an office at the town hall. A clerk greets Ayşe Yılmaz."
+     },
+     "lines": [
+      {
+       "who": "Υπάλληλος",
+       "el": "Καλημέρα σας. Πώς σας λένε;",
+       "tr": "Günaydın. Adınız ne?",
+       "en": "Good morning. What is your name?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα. Με λένε Αϊσέ Γιλμάζ.",
+       "tr": "Günaydın. Adım Ayşe Yılmaz.",
+       "en": "Good morning. My name is Ayşe Yılmaz."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Χαίρω πολύ, κυρία Γιλμάζ. Από πού είστε;",
+       "tr": "Memnun oldum Yılmaz Hanım. Nerelisiniz?",
+       "en": "Nice to meet you, Mrs Yılmaz. Where are you from?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Είμαι από την Τουρκία, από τη Σμύρνη.",
+       "tr": "Türkiye'denim, İzmir'den.",
+       "en": "I'm from Turkey, from Izmir."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Ευχαριστώ, κυρία Γιλμάζ. Γεια σας.",
+       "tr": "Teşekkür ederim Yılmaz Hanım. İyi günler.",
+       "en": "Thank you, Mrs Yılmaz. Goodbye."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Γεια σας!",
+       "tr": "Hoşça kalın!",
+       "en": "Goodbye!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloglara göre iki kısa soru.",
+     "en": "Two short questions about the dialogues."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch01-q-mehmet-from",
+      "oknos-book/ch01-q-clerk-asks"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Sen mi, siz mi?",
+    "en": "Informal or formal?"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Yunancada iki hitap biçimi var:\n\n**Samimi** (Türkçedeki *sen*): arkadaşlar, aile, çocuklar, yaşıtın olan gençler. Eleni ile Mehmet böyle konuşuyor.\n\n**Resmî** (Türkçedeki *siz*): tanımadığın yetişkinler, memurlar, doktorlar, öğretmenin. Memur Ayşe Hanım'la böyle konuşuyor. Resmî biçim, birden çok kişiye konuşurken de kullanılır; tıpkı Türkçede bir gruba \"siz\" demen gibi.",
+     "en": "Greek has two ways of addressing someone:\n\n**Informal** (Turkish *sen*): friends, family, children, young people your age. Eleni and Mehmet talk like this.\n\n**Formal** (Turkish *siz*): adults you do not know, clerks, doctors, your teacher. The clerk talks to Ayşe like this. The formal form is also what you use for several people at once, just like Turkish \"siz\" to a group."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Aynı cümle, iki biçim",
+      "en": "The same sentence, two ways"
+     },
+     "head": [
+      "εσύ · samimi / informal",
+      "εσείς · resmî / formal"
+     ],
+     "rows": [
+      [
+       "Γεια σου!",
+       "Γεια σας!"
+      ],
+      [
+       "Πώς σε λένε;",
+       "Πώς σας λένε;"
+      ],
+      [
+       "Από πού είσαι;",
+       "Από πού είστε;"
+      ],
+      [
+       "Εσύ;",
+       "Εσείς;"
+      ],
+      [
+       "Εσένα;",
+       "Εσάς;"
+      ]
+     ],
+     "note": {
+      "tr": "*Πώς σε λένε;* kelimesi kelimesine \"Sana nasıl diyorlar?\" demek. Yunanlar adı böyle sorar; cevap da *Με λένε …*: \"Bana … diyorlar\".",
+      "en": "*Πώς σε λένε;* is literally \"How do they call you?\". That is how Greeks ask for a name, and the answer is *Με λένε …*: \"They call me …\"."
+     }
+    },
+    {
+     "type": "prose",
+     "tr": "*Εσύ;* ve *Εσένα;* ikisi de \"ya sen?\" demek, ama yerleri farklı:\n\n**Με λένε Ελένη. Εσένα;**: ad sorarken (*με λένε* \"bana diyorlar\" ile kurulduğu için).\n\n**Είμαι από την Ελλάδα. Εσύ;**: nereli olduğunu sorarken (*είμαι* \"(ben) …-im\" ile kurulduğu için).\n\nŞimdilik ikisini de kalıp olarak öğren; nedeni ileriki derslerde gelecek.",
+     "en": "*Εσύ;* and *Εσένα;* both mean \"and you?\", but they go in different places:\n\n**Με λένε Ελένη. Εσένα;**: when asking a name (because *με λένε* means \"they call me\").\n\n**Είμαι από την Ελλάδα. Εσύ;**: when asking where someone is from (because *είμαι* means \"I am\").\n\nFor now, learn both as set phrases; the reason comes in later lessons."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Καλησπέρα σας!",
+       "tr": "İyi akşamlar! (resmî ya da birden çok kişiye)",
+       "en": "Good evening! (formal, or to several people)"
+      },
+      {
+       "el": "Γεια σου, Μαρία!",
+       "tr": "Merhaba Maria! (samimi)",
+       "en": "Hi, Maria! (informal)"
+      },
+      {
+       "el": "Πώς σας λένε, κυρία μου;",
+       "tr": "Adınız ne, hanımefendi?",
+       "en": "What is your name, madam?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Nerelisin? Είμαι από …",
+    "en": "Where are you from? Είμαι από …"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Nereli olduğunu söylemek için **Είμαι από** (\"…'denim\") ve ülkenin adı.\n\nÜlke adının önünde küçük bir kelime göreceksin: *την*, *τη*, *τον* ya da *το*. Bunlar **artikel**; Türkçede yok. Şimdilik ülke adıyla birlikte ezberle, kuralını Ders 3'te göreceksin.",
+     "en": "To say where you are from: **Είμαι από** (\"I am from\") plus the country.\n\nYou will see a small word before the country: *την*, *τη*, *τον* or *το*. These are **articles**; Turkish has none. For now, learn each one together with the country; the rule comes in Lesson 3."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Είμαι από την Τουρκία.",
+       "tr": "Türkiye'denim.",
+       "en": "I'm from Turkey."
+      },
+      {
+       "el": "Είμαι από την Ελλάδα.",
+       "tr": "Yunanistan'danım.",
+       "en": "I'm from Greece."
+      },
+      {
+       "el": "Είμαι από τη Σμύρνη.",
+       "tr": "İzmir'denim.",
+       "en": "I'm from Izmir.",
+       "note": {
+        "tr": "Yunanca İzmir: *η Σμύρνη*. İstanbul: *η Κωνσταντινούπολη*, kısaca *η Πόλη*.",
+        "en": "Izmir in Greek: *η Σμύρνη*. Istanbul: *η Κωνσταντινούπολη*, or just *η Πόλη*."
+       }
+      },
+      {
+       "el": "Είμαι από τον Καναδά.",
+       "tr": "Kanada'danım.",
+       "en": "I'm from Canada."
+      },
+      {
+       "el": "Είμαι από το Βέλγιο.",
+       "tr": "Belçika'danım.",
+       "en": "I'm from Belgium."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu dersin kelimeleri. ▶ ile dinle. Bölümü bitirince oturumlarına gelecekler ve her biri sana sorulmadan önce bir kez gösterilecek.",
+     "en": "The words of this lesson. Listen with ▶. Once you finish the chapter they come into your sessions, and each one is shown to you once before you are asked it."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/ch01-geia-sou",
+      "oknos-book/ch01-geia-sas",
+      "oknos-book/ch01-kalimera",
+      "oknos-book/ch01-kalispera",
+      "oknos-book/v-kalinychta",
+      "oknos-book/ch01-chairete",
+      "oknos-book/v-antio",
+      "oknos-book/ch01-me-lene",
+      "oknos-book/ch01-pos-se-lene",
+      "oknos-book/ch01-pos-sas-lene",
+      "oknos-book/ch01-chairo-poly",
+      "oknos-book/ch01-apo-pou-eisai",
+      "oknos-book/ch01-apo-pou-eiste",
+      "oknos-book/ch01-eimai-apo",
+      "oknos-book/ch01-esy",
+      "oknos-book/ch01-eseis",
+      "oknos-book/ch01-esena",
+      "oknos-book/ch01-esas",
+      "oknos-book/ch01-kyria",
+      "oknos-book/ch01-efcharisto",
+      "oknos-book/ch01-ellada",
+      "oknos-book/ch01-tourkia"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "[[Γεια]] aslında \"sağlık\" demek. *Γεια σου*, yani \"sağlığına\". Bu yüzden kadeh kaldırırken de [[Γεια μας!]] (\"sağlığımıza\", şerefe) denir.",
+     "en": "[[Γεια]] really means \"health\": *Γεια σου* is \"(to) your health\". That is also why Greeks say [[Γεια μας!]] (\"to our health\", cheers) when they raise a glass."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Hanım'ın yeri.** Türkçede *Ayşe Hanım* dersin; ad önce gelir. Yunancada *κυρία* önce gelir: resmî yerlerde **soyadıyla** ([[κυρία Γιλμάζ]]), günlük hayatta adla da ([[κυρία Αϊσέ]], tam *Ayşe Hanım* gibi). Samimiysen yalnızca adıyla seslenirsin: [[Αϊσέ]].",
+     "en": "**Where \"Mrs\" goes.** In Turkish you say *Ayşe Hanım*, first name first. In Greek *κυρία* comes first: with the **surname** in offices ([[κυρία Γιλμάζ]]), and in everyday life often with the first name ([[κυρία Αϊσέ]], just like Turkish *Ayşe Hanım*). If you are on informal terms, you just use the first name: [[Αϊσέ]]."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Soru işareti.** Yunancada soru işareti noktalı virgüle benzer: [[Από πού είσαι;]] Yazarken sen de onu kullan.",
+     "en": "**The question mark.** The Greek question mark looks like a semicolon: [[Από πού είσαι;]] Use it when you write, too."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "exam_task": "b1keg.speaking.warmup",
+     "tr": "Sınavın sözlü bölümü genellikle böyle başlar: görevli seninle resmî konuşur (*Πώς σας λένε; Από πού είστε;*). Kısa ama tam cümleyle cevap ver: **Με λένε … Είμαι από την Τουρκία.**",
+     "en": "The speaking part of the exam usually starts like this: the examiner speaks to you formally (*Πώς σας λένε; Από πού είστε;*). Answer briefly, but in full sentences: **Με λένε … Είμαι από την Τουρκία.**"
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene. Yanlış yaparsan sorun değil; bunlar sınav hazırlığı hesabına girmez.",
+     "en": "Now you try. Mistakes are fine here: these do not count towards your exam readiness."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch01-try-formal-greet",
+      "oknos-book/ch01-try-informal-name",
+      "oknos-book/ch01-try-esy",
+      "oknos-book/ch01-try-match"
+     ]
+    }
+   ]
+  }
+ ]
+}

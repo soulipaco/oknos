@@ -1,0 +1,876 @@
+[
+ {
+  "id": "ch08-kontos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "κοντός",
+  "pos": "adj",
+  "en": "short (not tall)",
+  "tr": "kısa boylu; kısa",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "lemma": "κοντός",
+  "example": {
+   "el": "Ο Νίκος είναι κοντός.",
+   "en": "Nikos is short.",
+   "tr": "Nikos kısa boylu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-kainourgios",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "καινούργιος",
+  "pos": "adj",
+  "en": "new (not used before)",
+  "tr": "yeni",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "lemma": "καινούργιος",
+  "example": {
+   "el": "Το αυτοκίνητό μου είναι καινούργιο.",
+   "en": "My car is new.",
+   "tr": "Arabam yeni."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-kopela",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η κοπέλα",
+  "pos": "noun",
+  "en": "young woman; girl",
+  "tr": "genç kadın; kız",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "lemma": "κοπέλα",
+  "gender": "f",
+  "example": {
+   "el": "Η κοπέλα που μένει εδώ είναι ψηλή.",
+   "en": "The young woman who lives here is tall.",
+   "tr": "Burada oturan genç kadın uzun boylu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-poios",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ποιος / ποια / ποιο",
+  "pos": "phrase",
+  "en": "who; which (masculine / feminine / neuter)",
+  "tr": "kim; hangi (eril / dişil / nötr)",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "example": {
+   "el": "Ποια είναι η Σοφία;",
+   "en": "Which one is Sofia?",
+   "tr": "Sofia hangisi?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-imoun",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ήμουν / ήσουν",
+  "pos": "phrase",
+  "en": "I was / you were",
+  "tr": "(ben) idim, -dim / (sen) idin, -din",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "example": {
+   "el": "Χθες ήμουν στο μετρό.",
+   "en": "Yesterday I was on the metro.",
+   "tr": "Dün metrodaydım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-tha-imai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "θα είμαι / θα είσαι",
+  "pos": "phrase",
+  "en": "I will be / you will be",
+  "tr": "(ben) olacağım / (sen) olacaksın",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "example": {
+   "el": "Αύριο θα είμαι εδώ.",
+   "en": "Tomorrow I will be here.",
+   "tr": "Yarın burada olacağım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-chiliada",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η χιλιάδα",
+  "pos": "noun",
+  "en": "thousand (from 2,000: δύο χιλιάδες)",
+  "tr": "bin (2.000'den sonra: δύο χιλιάδες)",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "lemma": "χιλιάδα",
+  "gender": "f",
+  "example": {
+   "el": "Το σπίτι κάνει διακόσιες χιλιάδες ευρώ.",
+   "en": "The house costs 200,000 euros.",
+   "tr": "Ev iki yüz bin euro."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-ekatommyrio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το εκατομμύριο",
+  "pos": "noun",
+  "en": "million",
+  "tr": "milyon",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "lemma": "εκατομμύριο",
+  "gender": "n",
+  "example": {
+   "el": "Το σπίτι κάνει ένα εκατομμύριο ευρώ.",
+   "en": "The house costs a million euros.",
+   "tr": "Ev bir milyon euro."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-q-bag",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πώς είναι η τσάντα;",
+   "en": "What is the bag like?",
+   "tr": "Çanta nasıl?"
+  },
+  "options": [
+   "Μικρή, μαύρη και παλιά.",
+   "Μεγάλη, κόκκινη και καινούργια.",
+   "Μικρή, μαύρη και καινούργια."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "She says «Είναι μικρή και μαύρη» and «Παλιά, αλλά είναι πολύ ωραία». The new item is the phone, not the bag.",
+   "tr": "«Είναι μικρή και μαύρη» ve «Παλιά, αλλά είναι πολύ ωραία» diyor. Yeni olan çanta değil, telefon."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-q-true-false",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Το κινητό είναι ακριβό.",
+    "en": "The phone is expensive.",
+    "tr": "Telefon pahalı.",
+    "answer": true
+   },
+   {
+    "el": "Ο Νίκος είναι ο ψηλός.",
+    "en": "Nikos is the tall one.",
+    "tr": "Nikos uzun olan.",
+    "answer": false
+   },
+   {
+    "el": "Η Σοφία είναι νέα και όμορφη.",
+    "en": "Sofia is young and pretty.",
+    "tr": "Sofia genç ve güzel.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "Ayşe says the phone is expensive: «Ναι, χίλια διακόσια ευρώ». Nikos is «ο κοντός»; the tall one is Kostas. Sofia is «νέα και πολύ όμορφη».",
+   "tr": "Ayşe telefonun pahalı olduğunu söylüyor: «Ναι, χίλια διακόσια ευρώ». Nikos «ο κοντός»; uzun olan Kostas. Sofia «νέα και πολύ όμορφη»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-try-agree",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Η τσάντα μου είναι πολύ {1}.",
+  "answer": {
+   "1": [
+    "μικρή"
+   ]
+  },
+  "options": {
+   "1": [
+    "μικρή",
+    "μικρός",
+    "μικρό"
+   ]
+  },
+  "translation": {
+   "en": "My bag is very small.",
+   "tr": "Çantam çok küçük."
+  },
+  "explain": {
+   "en": "Η τσάντα is feminine, so the adjective ends in -η: μικρή.",
+   "tr": "Η τσάντα dişil, bu yüzden sıfat -η ile biter: μικρή."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-try-group2",
+  "ask": {
+   "en": "Sofia is very young. Which form is right?",
+   "tr": "Sofia çok genç. Hangi biçim doğru?"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Η Σοφία είναι πολύ …",
+   "en": "Sofia is very young. Which form is right?",
+   "tr": "Sofia çok genç. Hangi biçim doğru?"
+  },
+  "options": [
+   "νέα",
+   "νέη",
+   "νέο"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Νέος has a vowel (ε) before -ος, so the feminine ends in -α: νέα. Νέο is neuter, and νέη does not exist.",
+   "tr": "Νέος'ta -ος'tan önce ünlü (ε) var, dişil -α ile biter: νέα. Νέο nötr; νέη diye bir biçim yok."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-try-poios",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "{1} είναι η φίλη σου; — Η Μαρία.",
+  "answer": {
+   "1": [
+    "Ποια"
+   ]
+  },
+  "options": {
+   "1": [
+    "Ποια",
+    "Ποιος",
+    "Ποιο"
+   ]
+  },
+  "translation": {
+   "en": "Which one is your friend? — Maria.",
+   "tr": "Arkadaşın hangisi? — Maria."
+  },
+  "explain": {
+   "en": "Η φίλη is feminine: ποια.",
+   "tr": "Η φίλη dişil: ποια."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-try-eimai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Χθες (εγώ) {1} στο μετρό. Αύριο (εγώ) {2} στο γραφείο.",
+  "answer": {
+   "1": [
+    "ήμουν"
+   ],
+   "2": [
+    "θα είμαι"
+   ]
+  },
+  "options": {
+   "1": [
+    "ήμουν",
+    "ήσουν",
+    "θα είμαι"
+   ],
+   "2": [
+    "θα είμαι",
+    "ήμουν",
+    "θα είσαι"
+   ]
+  },
+  "translation": {
+   "en": "Yesterday I was on the metro. Tomorrow I will be at the office.",
+   "tr": "Dün metrodaydım. Yarın ofiste olacağım."
+  },
+  "explain": {
+   "en": "Χθες is the past, with εγώ: ήμουν. Αύριο is the future, with εγώ: θα είμαι. Ήσουν and θα είσαι are for εσύ.",
+   "tr": "Χθες geçmiş, εγώ ile: ήμουν. Αύριο gelecek, εγώ ile: θα είμαι. Ήσουν ve θα είσαι εσύ içindir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-try-pou",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Η κοπέλα {1} μένει εδώ είναι ψηλή.",
+  "bank": [
+   "που",
+   "ποια",
+   "ποιο"
+  ],
+  "answer": {
+   "1": "που"
+  },
+  "translation": {
+   "en": "The young woman who lives here is tall.",
+   "tr": "Burada oturan genç kadın uzun boylu."
+  },
+  "explain": {
+   "en": "Που joins the two sentences and never changes. Ποια and ποιο ask a question («which?»).",
+   "tr": "Που iki cümleyi birleştirir ve değişmez. Ποια ve ποιο soru sorar («hangi?»)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-p-match-adj",
+  "type": "match",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω το αρσενικό με το θηλυκό.",
+   "en": "Match each masculine form with its feminine.",
+   "tr": "Eril biçimi dişil biçimle eşleştir."
+  },
+  "left": [
+   "ψηλός",
+   "καινούργιος",
+   "παλιός",
+   "μικρός"
+  ],
+  "right": [
+   "ψηλή",
+   "καινούργια",
+   "παλιά",
+   "μικρή"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "Consonant before -ος: -η (ψηλή, μικρή). Vowel before -ος: -α (καινούργια, παλιά).",
+   "tr": "-ος'un önünde ünsüz: -η (ψηλή, μικρή). Önünde ünlü: -α (καινούργια, παλιά)."
+  }
+ },
+ {
+  "id": "ch08-p-categorise",
+  "ask": {
+   "en": "Sort the adjectives by the ending of their feminine form: «-η» or «-α».",
+   "tr": "Sıfatları dişil biçimlerinin sonuna göre ayır: «-η» ya da «-α»."
+  },
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε επίθετο στη σωστή ομάδα.",
+   "en": "Sort the adjectives by the ending of their feminine form: «-η» or «-α».",
+   "tr": "Sıfatları dişil biçimlerinin sonuna göre ayır: «-η» ya da «-α»."
+  },
+  "categories": [
+   "-η",
+   "-α"
+  ],
+  "items": [
+   "καλός",
+   "νέος",
+   "φτηνός",
+   "παλιός",
+   "ακριβός",
+   "ωραίος"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "explain": {
+   "en": "Consonant before -ος: -η (καλή, φτηνή, ακριβή). Vowel before -ος: -α (νέα, παλιά, ωραία).",
+   "tr": "-ος'tan önce ünsüz: -η (καλή, φτηνή, ακριβή). -ος'tan önce ünlü: -α (νέα, παλιά, ωραία)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-p-form-adj",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Η τσάντα είναι {1}, αλλά το φόρεμα είναι {2}.",
+  "answer": {
+   "1": [
+    "ακριβή"
+   ],
+   "2": [
+    "φτηνό"
+   ]
+  },
+  "options": {
+   "1": [
+    "ακριβή",
+    "ακριβός",
+    "ακριβό"
+   ],
+   "2": [
+    "φτηνό",
+    "φτηνός",
+    "φτηνή"
+   ]
+  },
+  "translation": {
+   "en": "The bag is expensive, but the dress is cheap.",
+   "tr": "Çanta pahalı ama elbise ucuz."
+  },
+  "explain": {
+   "en": "Η τσάντα is feminine: ακριβή. Το φόρεμα is neuter: φτηνό.",
+   "tr": "Η τσάντα dişil: ακριβή. Το φόρεμα nötr: φτηνό."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-p-gap-adj",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Ο Νίκος είναι {1}. Η Μαρία είναι {2}. Το παιδί είναι {3}.",
+  "bank": [
+   "ψηλός",
+   "νέα",
+   "μικρό"
+  ],
+  "answer": {
+   "1": "ψηλός",
+   "2": "νέα",
+   "3": "μικρό"
+  },
+  "translation": {
+   "en": "Nikos is tall. Maria is young. The child is small.",
+   "tr": "Nikos uzun boylu. Maria genç. Çocuk küçük."
+  },
+  "explain": {
+   "en": "Ο Νίκος is masculine: ψηλός. Η Μαρία is feminine: νέα. Το παιδί is neuter: μικρό.",
+   "tr": "Ο Νίκος eril: ψηλός. Η Μαρία dişil: νέα. Το παιδί nötr: μικρό."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-p-poios",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "— {1} είναι ο Νίκος; — Ο κοντός. — {2} είναι η Σοφία; — Η νέα. — {3} φόρεμα είναι ακριβό; — Το κόκκινο.",
+  "bank": [
+   "Ποιος",
+   "Ποια",
+   "Ποιο"
+  ],
+  "answer": {
+   "1": "Ποιος",
+   "2": "Ποια",
+   "3": "Ποιο"
+  },
+  "translation": {
+   "en": "— Which one is Nikos? — The short one. — Which one is Sofia? — The young one. — Which dress is expensive? — The red one.",
+   "tr": "— Nikos hangisi? — Kısa olan. — Sofia hangisi? — Genç olan. — Hangi elbise pahalı? — Kırmızı olan."
+  },
+  "explain": {
+   "en": "Ποιος goes with ο Νίκος (masculine), ποια with η Σοφία (feminine), ποιο with το φόρεμα (neuter).",
+   "tr": "Ποιος ο Νίκος ile (eril), ποια η Σοφία ile (dişil), ποιο το φόρεμα ile (nötr) gelir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-p-eimai-match",
+  "ask": {
+   "en": "Match each time and person with the right form.",
+   "tr": "Her zamanı ve kişiyi doğru biçimle eşleştir."
+  },
+  "type": "match",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each time and person with the right form.",
+   "tr": "Her zamanı ve kişiyi doğru biçimle eşleştir."
+  },
+  "left": [
+   "χθες (εγώ)",
+   "αύριο (εγώ)",
+   "χθες (εσύ)",
+   "αύριο (εσύ)"
+  ],
+  "right": [
+   "ήμουν",
+   "θα είμαι",
+   "ήσουν",
+   "θα είσαι"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-p-pou",
+  "ask": {
+   "en": "The dress that is in the photo is pretty. Which sentence is right?",
+   "tr": "Fotoğraftaki elbise güzel. Hangi cümle doğru?"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ποια πρόταση είναι σωστή;",
+   "en": "The dress that is in the photo is pretty. Which sentence is right?",
+   "tr": "Fotoğraftaki elbise güzel. Hangi cümle doğru?"
+  },
+  "options": [
+   "Το φόρεμα που είναι στη φωτογραφία είναι όμορφο.",
+   "Το φόρεμα που είναι στη φωτογραφία είναι όμορφος.",
+   "Το φόρεμα που είναι στη φωτογραφία είναι όμορφη."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Το φόρεμα is neuter, so the adjective is όμορφο. Που does not change.",
+   "tr": "Το φόρεμα nötr, sıfat όμορφο olur. Που değişmez."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-p-thousands",
+  "type": "match",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω τους αριθμούς.",
+   "en": "Match the numbers.",
+   "tr": "Sayıları eşleştir."
+  },
+  "left": [
+   "1.000",
+   "2.000",
+   "3.000",
+   "13.000"
+  ],
+  "right": [
+   "χίλια",
+   "δύο χιλιάδες",
+   "τρεις χιλιάδες",
+   "δεκατρείς χιλιάδες"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-p-millions",
+  "type": "match",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω τους αριθμούς.",
+   "en": "Match the numbers.",
+   "tr": "Sayıları eşleştir."
+  },
+  "left": [
+   "1.000.000",
+   "2.000.000",
+   "3.000.000",
+   "300.000"
+  ],
+  "right": [
+   "ένα εκατομμύριο",
+   "δύο εκατομμύρια",
+   "τρία εκατομμύρια",
+   "τριακόσιες χιλιάδες"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch08-p-price",
+  "ask": {
+   "en": "How much is the car? It costs 2,500 euros. Which is right?",
+   "tr": "Araba ne kadar? 2.500 euro. Hangisi doğru?"
+  },
+  "type": "mcq",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-08"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πόσο κάνει το αυτοκίνητο;",
+   "en": "How much is the car? It costs 2,500 euros. Which is right?",
+   "tr": "Araba ne kadar? 2.500 euro. Hangisi doğru?"
+  },
+  "options": [
+   "Δύο χιλιάδες πεντακόσια ευρώ.",
+   "Δύο εκατομμύρια πεντακόσια ευρώ.",
+   "Χίλια πεντακόσια ευρώ."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "2,500 = δύο χιλιάδες + πεντακόσια. Χίλια is 1,000, and εκατομμύρια is millions.",
+   "tr": "2.500 = δύο χιλιάδες + πεντακόσια. Χίλια 1.000'dir, εκατομμύρια milyonlar."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-08",
+   "by": "sonnet-draft"
+  }
+ }
+]

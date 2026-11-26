@@ -1,0 +1,831 @@
+{
+ "id": "oknos-book.lesson-18",
+ "curriculum": "oknos-book",
+ "stage": "lesson-18",
+ "level": "A2",
+ "title": {
+  "tr": "Tekrar: 13-17. dersler, Atina'ya bir ziyaret",
+  "en": "Review: lessons 13-17 in a visit to Athens"
+ },
+ "minutes": 18,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde **yeni hiçbir şey yok**: 13-17. dersler bir arkadaşın Atina ziyaretinde ve altı kısa tabloda.\n\nAnahtar nokta: sıfatın **cinsi ve sayısı**, fiilin **grubu** ve fiilin **önündeki** küçük kelime (*μου, σε, να, μην*).",
+     "en": "Nothing here is **new**: lessons 13-17 come back in a friend's visit to Athens and six short tables.\n\nThe key point: the adjective's gender and number, the verb's group, and the small word (*μου, σε, να, μην*) **before** the verb."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Sofia geliyor",
+    "en": "Sofia comes to Athens"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Önce dinle, sonra oku. Ayşe'nin arkadaşı Sofia Atina'ya geliyor.",
+     "en": "Listen first, then read. Ayşe's friend Sofia is coming to Athens."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Perşembe akşamı, telefonda.",
+      "en": "Thursday evening, on the phone."
+     },
+     "lines": [
+      {
+       "who": "Σοφία",
+       "el": "Γεια σου, Αϊσέ! Θα έρθω την Παρασκευή. Πού θα μείνω;",
+       "tr": "Merhaba Ayşe! Cuma günü geleceğim. Nerede kalacağım?",
+       "en": "Hi, Ayşe! I'll come on Friday. Where will I stay?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Θα μείνεις στο σπίτι μου! Το διαμέρισμα είναι στον τρίτο όροφο και υπάρχει ασανσέρ.",
+       "tr": "Benim evimde kalacaksın! Daire üçüncü katta ve asansör var.",
+       "en": "You'll stay at my place! The flat is on the third floor and there is a lift."
+      },
+      {
+       "who": "Σοφία",
+       "el": "Τι θα κάνουμε το Σαββατοκύριακο;",
+       "tr": "Hafta sonu ne yapacağız?",
+       "en": "What will we do at the weekend?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Το Σάββατο θα κάνουμε ψώνια στην Ερμού. Το βράδυ θέλεις να δούμε μια παράσταση;",
+       "tr": "Cumartesi Ermou'da alışveriş yapacağız. Akşam bir gösteri izlemek ister misin?",
+       "en": "On Saturday we'll go shopping on Ermou Street. Would you like us to see a show in the evening?"
+      },
+      {
+       "who": "Σοφία",
+       "el": "Ναι! Τι ρούχα να φέρω; Κάνει ζέστη;",
+       "tr": "Evet! Hangi giysileri getireyim? Hava sıcak mı?",
+       "en": "Yes! What clothes should I bring? Is it hot?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Το πρωί κάνει ζέστη, αλλά το βράδυ κάνει κρύο. Να φέρεις ένα καπέλο και ένα μακρύ παντελόνι. Μην ξεχάσεις τα γυαλιά!",
+       "tr": "Sabah hava sıcak, ama akşam soğuk. Bir şapka ve uzun bir pantolon getir. Gözlüğünü unutma!",
+       "en": "In the morning it's hot, but in the evening it's cold. Bring a hat and a pair of long trousers. Don't forget your glasses!"
+      }
+     ]
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Cuma öğlen: meydanda ve evde.",
+      "en": "Friday midday: in the square and at home."
+     },
+     "lines": [
+      {
+       "who": "Σοφία",
+       "el": "Αϊσέ, δε σε βλέπω! Πού είσαι;",
+       "tr": "Ayşe, seni görmüyorum! Neredesin?",
+       "en": "Ayşe, I can't see you! Where are you?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Απέναντι από την τράπεζα. Με βλέπεις τώρα;",
+       "tr": "Bankanın karşısında. Şimdi beni görüyor musun?",
+       "en": "Opposite the bank. Can you see me now?"
+      },
+      {
+       "who": "Σοφία",
+       "el": "Ναι, σε βλέπω! Στο αεροπλάνο κουράζομαι πολύ. Χρειάζομαι έναν καφέ!",
+       "tr": "Evet, seni görüyorum! Uçakta çok yoruluyorum. Bir kahveye ihtiyacım var!",
+       "en": "Yes, I can see you! I get very tired on planes. I need a coffee!"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Αυτό είναι το δωμάτιό σου, δίπλα στο σαλόνι. Εγώ κοιμάμαι δίπλα στην κουζίνα.",
+       "tr": "(Evde) Bu senin odan, salonun yanında. Ben mutfağın yanında yatıyorum.",
+       "en": "(At home) This is your room, next to the living room. I sleep next to the kitchen."
+      },
+      {
+       "who": "Σοφία",
+       "el": "Θυμάσαι τι ώρα αρχίζει η παράσταση;",
+       "tr": "Gösterinin kaçta başladığını hatırlıyor musun?",
+       "en": "Do you remember what time the show starts?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Αύριο στις εννιά το βράδυ.",
+       "tr": "Yarın akşam dokuzda.",
+       "en": "Tomorrow at nine in the evening."
+      }
+     ]
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Cumartesi: Ermou'da bir dükkân, sonra gişe.",
+      "en": "Saturday: a shop on Ermou Street, then the box office."
+     },
+     "lines": [
+      {
+       "who": "Σοφία",
+       "el": "Καλημέρα! Μου αρέσουν αυτά τα ροζ φορέματα.",
+       "tr": "Günaydın! Bu pembe elbiseler hoşuma gidiyor.",
+       "en": "Good morning! I like these pink dresses."
+      },
+      {
+       "who": "Πωλήτρια",
+       "el": "Τι νούμερο φοράτε;",
+       "tr": "Kaç beden giyiyorsunuz?",
+       "en": "What size do you wear?"
+      },
+      {
+       "who": "Σοφία",
+       "el": "Φοράω το σαράντα.",
+       "tr": "Kırk giyiyorum.",
+       "en": "I wear a forty."
+      },
+      {
+       "who": "Πωλήτρια",
+       "el": "Ορίστε το σαράντα.",
+       "tr": "Buyurun, kırk beden.",
+       "en": "Here is the forty."
+      },
+      {
+       "who": "Σοφία",
+       "el": "Μου κάνει, αλλά είναι λίγο μακρύ. Μου πάει, Αϊσέ;",
+       "tr": "(Sonra) Oluyor, ama biraz uzun. Bana yakışıyor mu, Ayşe?",
+       "en": "(Later) It fits, but it's a little long. Does it suit me, Ayşe?"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Σου πάει πολύ!",
+       "tr": "Çok yakışıyor!",
+       "en": "It really suits you!"
+      },
+      {
+       "who": "Σοφία",
+       "el": "Ωραία, θα το πάρω.",
+       "tr": "Güzel, bunu alacağım.",
+       "en": "Good, I'll take it."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Καλησπέρα. Θα ήθελα δύο εισιτήρια για την παράσταση.",
+       "tr": "(Gişede) İyi akşamlar. Gösteri için iki bilet rica ediyorum.",
+       "en": "(At the box office) Good evening. I'd like two tickets for the show."
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Τριάντα ευρώ, παρακαλώ.",
+       "tr": "Otuz avro, lütfen.",
+       "en": "Thirty euros, please."
+      },
+      {
+       "who": "Σοφία",
+       "el": "Όχι, Αϊσέ, πληρώνω εγώ!",
+       "tr": "Hayır Ayşe, ben ödüyorum!",
+       "en": "No, Ayşe, I'm paying!"
+      },
+      {
+       "who": "Υπάλληλος",
+       "el": "Η παράσταση αρχίζει στις εννιά. Μην αργήσετε!",
+       "tr": "Gösteri dokuzda başlıyor. Geç kalmayın!",
+       "en": "The show starts at nine. Don't be late!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Metne göre:",
+     "en": "According to the text:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch18-q-stay",
+      "oknos-book/ch18-q-tf"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Çoğul sıfatlar ve uyum (13)",
+    "en": "Plural adjectives and agreement (13)"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "13. ders. Sıfat ismin **cinsine, sayısına ve hâline** uyar. Çoğul ekleri: eril *-οι*, dişil *-ες*, nötr *-α*; nesne olarak yalnızca eril değişir (*-ους*). *μπλε, γκρι, ροζ, καφέ* hiç değişmez.",
+     "en": "Lesson 13. The adjective agrees with the noun in **gender, number and case**. Plural endings: masculine *-οι*, feminine *-ες*, neuter *-α*; as an object only the masculine changes (*-ους*). *μπλε, γκρι, ροζ, καφέ* never change."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Sıfat çoğulda",
+      "en": "The adjective in the plural"
+     },
+     "head": [
+      {
+       "tr": "tür",
+       "en": "type"
+      },
+      {
+       "tr": "tekil: eril · dişil · nötr",
+       "en": "singular: m · f · n"
+      },
+      {
+       "tr": "çoğul: eril · dişil · nötr",
+       "en": "plural: m · f · n"
+      }
+     ],
+     "rows": [
+      [
+       "-ος, -η, -ο",
+       "ο καλός · η καλή · το καλό",
+       "οι καλοί · οι καλές · τα καλά"
+      ],
+      [
+       "-ύς, -ιά, -ύ",
+       "ο φαρδύς · η φαρδιά · το φαρδύ",
+       "οι φαρδιοί · οι φαρδιές · τα φαρδιά"
+      ],
+      [
+       {
+        "tr": "değişmez",
+        "en": "never changes"
+       },
+       "το μπλε παντελόνι · η μπλε φούστα",
+       "τα μπλε παντελόνια · οι μπλε φούστες"
+      ]
+     ],
+     "note": {
+      "tr": "Nesne çoğul: *τους καλούς πελάτες*; dişil ve nötr özne gibi kalır: *τις καλές κυρίες, τα καλά παπούτσια*.",
+      "en": "Object plural: *τους καλούς πελάτες*; feminine and neuter stay as in the subject: *τις καλές κυρίες, τα καλά παπούτσια*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Τα ροζ φορέματα είναι μακριά, αλλά οι φούστες είναι κοντές.",
+       "tr": "Pembe elbiseler uzun, ama etekler kısa.",
+       "en": "The pink dresses are long, but the skirts are short."
+      },
+      {
+       "el": "Υπάρχουν δύο ωραία διαμερίσματα κοντά στο μετρό.",
+       "tr": "Metroya yakın iki güzel daire var.",
+       "en": "There are two nice flats near the metro."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "«Hoşuma gidiyor»: μου αρέσει, μου πάει, μου κάνει (13)",
+    "en": "«I like it»: μου αρέσει, μου πάει, μου κάνει (13)"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "13. ders. «Beğeniyorum» = «bana hoş geliyor»: **şey öznedir**, fiil ona uyar: *αρέσει* / *αρέσουν*. Kişi küçük kelimedir: *μου, σου, του, της, μας, σας, τους*. *Πάει* görünüşle (yakışır), *κάνει* bedenle (olur) ilgilidir.",
+     "en": "Lesson 13. «I like it» = «it pleases me»: **the thing is the subject**, so *αρέσει* / *αρέσουν*. The person is a small word: *μου, σου, του, της, μας, σας, τους*. *Πάει* is about looks, *κάνει* about size."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Bir şey, çok şey",
+      "en": "One thing, several things"
+     },
+     "head": [
+      {
+       "tr": "bir şey",
+       "en": "one thing"
+      },
+      {
+       "tr": "birkaç şey",
+       "en": "several things"
+      },
+      {
+       "tr": "anlamı",
+       "en": "meaning"
+      }
+     ],
+     "rows": [
+      [
+       "μου αρέσει το καπέλο",
+       "μου αρέσουν τα γυαλιά",
+       {
+        "tr": "hoşuma gidiyor",
+        "en": "I like it, I like them"
+       }
+      ],
+      [
+       "σου πάει το φόρεμα",
+       "σου πάνε τα παπούτσια",
+       {
+        "tr": "sana yakışıyor",
+        "en": "it suits you"
+       }
+      ],
+      [
+       "δε μου κάνει το παντελόνι",
+       "δε μου κάνουν τα παπούτσια",
+       {
+        "tr": "bana olmuyor (beden)",
+        "en": "it does not fit me"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Μου αρέσουν τα ροζ φορέματα, αλλά δε μου κάνουν.",
+       "tr": "Pembe elbiseleri seviyorum, ama bana olmuyorlar.",
+       "en": "I like the pink dresses, but they don't fit me."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "-ομαι ve -άμαι fiilleri, şimdiki zaman (13, 14)",
+    "en": "Verbs in -ομαι and -άμαι, present (13, 14)"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "13. ve 14. dersler. İki grup da *-μαι* ile biter, ama ekleri farklıdır: *έρχομαι* grubunda **-ομαι, -εσαι, -εται, -όμαστε, -εστε, -ονται**; *θυμάμαι* grubunda **-άμαι, -άσαι, -άται, -όμαστε, -άστε, -ούνται**.",
+     "en": "Lessons 13 and 14. Both groups end in *-μαι*, but their endings differ: the *έρχομαι* group has **-ομαι, -εσαι, -εται, -όμαστε, -εστε, -ονται**; the *θυμάμαι* group has **-άμαι, -άσαι, -άται, -όμαστε, -άστε, -ούνται**."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Üç fiil, şimdiki zaman",
+      "en": "Three verbs, present"
+     },
+     "head": [
+      "",
+      "έρχομαι",
+      "θυμάμαι",
+      "κοιμάμαι"
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "έρχομαι",
+       "θυμάμαι",
+       "κοιμάμαι"
+      ],
+      [
+       "εσύ",
+       "έρχεσαι",
+       "θυμάσαι",
+       "κοιμάσαι"
+      ],
+      [
+       "αυτός",
+       "έρχεται",
+       "θυμάται",
+       "κοιμάται"
+      ],
+      [
+       "εμείς",
+       "ερχόμαστε",
+       "θυμόμαστε",
+       "κοιμόμαστε"
+      ],
+      [
+       "εσείς",
+       "έρχεστε",
+       "θυμάστε",
+       "κοιμάστε"
+      ],
+      [
+       "αυτοί",
+       "έρχονται",
+       "θυμούνται",
+       "κοιμούνται"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Η Σοφία κουράζεται στο αεροπλάνο και χρειάζεται έναν καφέ.",
+       "tr": "Sofia uçakta yoruluyor ve bir kahveye ihtiyacı var.",
+       "en": "Sofia gets tired on planes and needs a coffee."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Basit gelecek: θα ve να yan yana (15, 16, 17)",
+    "en": "The simple future: θα and να side by side (15, 16, 17)"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "15-17. dersler. Gelecek: **θα** + «bir kerelik» kök + kişi eki. **Να** biçimi aynıdır; yalnızca *θα* yerine *να* gelir. Ekler bildiğin ekler: *θα γράψω, -εις, -ει…*; *θα κοιμηθώ, -είς, -εί…* (16. ders). Olumsuz: *δε θα πάω*, *να μην πάω*.",
+     "en": "Lessons 15-17. Future: **θα** + the once-only stem + the ending. The **να** form is the same; only *θα* becomes *να*. The endings are those you know: *θα γράψω, -εις, -ει…*; *θα κοιμηθώ, -είς, -εί…* (Lesson 16). Negative: *δε θα πάω*, *να μην πάω*."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Şimdiki zaman, gelecek ve να (ben)",
+      "en": "Present, future and να (I)"
+     },
+     "head": [
+      {
+       "tr": "grup",
+       "en": "group"
+      },
+      {
+       "tr": "şimdiki",
+       "en": "present"
+      },
+      "θα",
+      "να"
+     ],
+     "rows": [
+      [
+       {
+        "tr": "A (15)",
+        "en": "A (15)"
+       },
+       "γράφω",
+       "θα γράψω",
+       "να γράψω"
+      ],
+      [
+       {
+        "tr": "B1 (16)",
+        "en": "B1 (16)"
+       },
+       "μιλάω",
+       "θα μιλήσω",
+       "να μιλήσω"
+      ],
+      [
+       {
+        "tr": "G (16)",
+        "en": "G (16)"
+       },
+       "έρχομαι",
+       "θα έρθω",
+       "να έρθω"
+      ],
+      [
+       {
+        "tr": "G (16)",
+        "en": "G (16)"
+       },
+       "κοιμάμαι",
+       "θα κοιμηθώ",
+       "να κοιμηθώ"
+      ],
+      [
+       {
+        "tr": "düzensiz (15)",
+        "en": "irregular (15)"
+       },
+       "τρώω",
+       "θα φάω",
+       "να φάω"
+      ]
+     ],
+     "note": {
+      "tr": "Gelecek *-μαι* ile bitmez: *θα έρθω*, *θα θυμηθώ*. Kökü tahmin etme, öğren: *τρώω* ama *θα φάω*.",
+      "en": "The future has no *-μαι*: *θα έρθω*, *θα θυμηθώ*. Do not guess the stem, learn it: *τρώω* but *θα φάω*."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Το Σάββατο θα κάνουμε ψώνια και θα πιούμε καφέ στην Ερμού.",
+       "tr": "Cumartesi alışveriş yapacağız ve Ermou'da kahve içeceğiz.",
+       "en": "On Saturday we will go shopping and have a coffee on Ermou Street."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Zayıf ve güçlü nesne zamirleri (16)",
+    "en": "Weak and strong object pronouns (16)"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "16. ders. **Zayıf** zamir fiilin hemen **önüne** gelir: *σε βλέπω, θα το πάρω, να με πάρεις*. **Güçlü** zamir edattan sonra gelir (*για εμένα*, «*για με*» yanlış) ya da vurgu katar: *Εσένα σε περιμένω*.\n-ν kuralı (3. ders): **τον** onu hep korur; **την, δεν, μην** onu yalnızca ünlüden ve κ, π, τ, ξ, ψ, μπ, ντ, γκ, τσ, τζ harflerinden önce korur: *δεν πρέπει, μην αργήσεις*, ama *τη βλέπω, δε σε βλέπω, μη φύγεις*.",
+     "en": "Lesson 16. The **weak** pronoun goes right **before** the verb: *σε βλέπω, θα το πάρω, να με πάρεις*. The **strong** one follows a preposition (*για εμένα*, never «*για με*») or adds emphasis: *Εσένα σε περιμένω*.\nThe -ν rule (Lesson 3): **τον** always keeps it; **την, δεν, μην** keep it only before a vowel and κ, π, τ, ξ, ψ, μπ, ντ, γκ, τσ, τζ: *δεν πρέπει, μην αργήσεις*, but *τη βλέπω, δε σε βλέπω, μη φύγεις*."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Zayıf ve güçlü",
+      "en": "Weak and strong"
+     },
+     "head": [
+      {
+       "tr": "kim?",
+       "en": "who?"
+      },
+      {
+       "tr": "zayıf (fiilin önünde)",
+       "en": "weak (before the verb)"
+      },
+      {
+       "tr": "güçlü (edattan sonra, vurgu)",
+       "en": "strong (after a preposition, emphasis)"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "ben",
+        "en": "I"
+       },
+       "με",
+       "εμένα"
+      ],
+      [
+       {
+        "tr": "sen",
+        "en": "you (sg)"
+       },
+       "σε",
+       "εσένα"
+      ],
+      [
+       {
+        "tr": "o (eril)",
+        "en": "he"
+       },
+       "τον",
+       "αυτόν"
+      ],
+      [
+       {
+        "tr": "o (dişil)",
+        "en": "she"
+       },
+       "την",
+       "αυτήν"
+      ],
+      [
+       {
+        "tr": "o (nötr)",
+        "en": "it"
+       },
+       "το",
+       "αυτό"
+      ],
+      [
+       {
+        "tr": "biz",
+        "en": "we"
+       },
+       "μας",
+       "εμάς"
+      ],
+      [
+       {
+        "tr": "siz",
+        "en": "you (pl, formal)"
+       },
+       "σας",
+       "εσάς"
+      ],
+      [
+       {
+        "tr": "onlar (eril)",
+        "en": "they (m)"
+       },
+       "τους",
+       "αυτούς"
+      ],
+      [
+       {
+        "tr": "onlar (dişil)",
+        "en": "they (f)"
+       },
+       "τις",
+       "αυτές"
+      ],
+      [
+       {
+        "tr": "onlar (nötr)",
+        "en": "they (n)"
+       },
+       "τα",
+       "αυτά"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Δε σε βλέπω! Με βλέπεις τώρα;",
+       "tr": "Seni görmüyorum! Şimdi beni görüyor musun?",
+       "en": "I can't see you! Can you see me now?"
+      },
+      {
+       "el": "Αυτό το φόρεμα; Θα το πάρω.",
+       "tr": "Bu elbise mi? Alacağım.",
+       "en": "This dress? I'll take it."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "θέλω, μπορώ, πρέπει + να; ve μην (17)",
+    "en": "Να after θέλω, μπορώ, πρέπει; and μην (17)"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "17. ders. Mastar yok: *θέλω, μπορώ, πρέπει* + **να** + çekimli fiil, başka özneyle de (*θέλω να έρθεις*).\n**Hangi kök?** Tek bir sefer (bu akşam, cuma günü): «bir kerelik» kök, *πρέπει να φύγω στις εννιά*. Alışkanlık: şimdiki zaman kökü, *κάθε μέρα πρέπει να ξυπνάω στις επτά*; *ξέρω* ve *αρχίζω* fiillerinden sonra da: *ξέρω να οδηγώ*.\nOlumsuz: *θέλω, μπορώ, πρέπει* önünde **δεν**; rica ve uyarıda **(να) μην**.",
+     "en": "Lesson 17. No infinitive: *θέλω, μπορώ, πρέπει* + **να** + a conjugated verb, even with another subject (*θέλω να έρθεις*).\n**Which stem?** One occasion (tonight, on Friday): the once-only stem, *πρέπει να φύγω στις εννιά*. A habit: the present stem, *κάθε μέρα πρέπει να ξυπνάω στις επτά*; also after *ξέρω* and *αρχίζω*: *ξέρω να οδηγώ*.\nNegative: **δεν** before *θέλω, μπορώ, πρέπει*; **(να) μην** for requests and warnings."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Olumlu ve olumsuz",
+      "en": "Positive and negative"
+     },
+     "head": [
+      "",
+      {
+       "tr": "olumlu",
+       "en": "positive"
+      },
+      {
+       "tr": "olumsuz",
+       "en": "negative"
+      }
+     ],
+     "rows": [
+      [
+       "θέλω / μπορώ / πρέπει",
+       "Πρέπει να φύγουμε.",
+       "Δεν πρέπει να φύγουμε."
+      ],
+      [
+       {
+        "tr": "başkası yapsın",
+        "en": "someone else does it"
+       },
+       "Θέλω να με πάρεις.",
+       "Δε θέλω να με πάρεις."
+      ],
+      [
+       {
+        "tr": "rica",
+        "en": "a request"
+       },
+       "Να φέρεις ένα καπέλο.",
+       "Να μην αργήσεις."
+      ],
+      [
+       {
+        "tr": "kısa uyarı",
+        "en": "a short warning"
+       },
+       "—",
+       "Μην ξεχάσεις τα γυαλιά!"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Μπορείς να με πάρεις από το σπίτι;",
+       "tr": "Beni evden alabilir misin?",
+       "en": "Can you pick me up from home?"
+      },
+      {
+       "el": "Αύριο πρέπει να ξυπνήσω στις έξι. Θα κοιμηθώ νωρίς.",
+       "tr": "Yarın altıda uyanmam lazım. Erken yatacağım.",
+       "en": "Tomorrow I have to wake up at six. I'll go to bed early.",
+       "note": {
+        "tr": "Tek bir sefer (yarın): *ξυπνήσω*, «bir kerelik» kök.",
+        "en": "One occasion (tomorrow): *ξυπνήσω*, the once-only stem."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Yeni kelime yok.",
+     "en": "No new words."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/v-kapelo",
+      "oknos-book/v-gyalia",
+      "oknos-book/ch13-aresei",
+      "oknos-book/ch13-chreiazomai",
+      "oknos-book/ch13-kourazomai",
+      "oknos-book/ch14-asanser",
+      "oknos-book/ch14-saloni",
+      "oknos-book/v-dipla-se-prep",
+      "oknos-book/ch14-irtha",
+      "oknos-book/v-ferno-verb",
+      "oknos-book/v-xechno-verb",
+      "oknos-book/ch16-mporo",
+      "oknos-book/ch16-kratisi",
+      "oknos-book/v-valitsa",
+      "oknos-book/ch17-prepei",
+      "oknos-book/ch17-argo",
+      "oknos-book/v-parastasi",
+      "oknos-book/ch14-diamerisma"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Hangi küçük kelime?** *αρέσει, πάει, κάνει* ile *μου, σου* (13. ders): *Σου πάει*. *βλέπω, περιμένω* ile *με, σε* (16. ders): *Σε βλέπω*. «*Σου βλέπω*» yanlış.",
+     "en": "**Which little word?** *αρέσει, πάει, κάνει* take *μου, σου* (Lesson 13): *Σου πάει*. *βλέπω, περιμένω* take *με, σε* (Lesson 16): *Σε βλέπω*. Never «*Σου βλέπω*»."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Fiil şeye uyar.** *Μου αρέσουν τα γυαλιά*, «*Μου αρέσει τα γυαλιά*» değil.",
+     "en": "**The verb agrees with the thing.** *Μου αρέσουν τα γυαλιά*, not «*Μου αρέσει τα γυαλιά*»."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**να ile δεν olmaz, mastar da yok.** *Να μην αργήσεις*, «*να δεν αργήσεις*» değil; *θέλω να πάω*, «*θέλω πάω*» değil.",
+     "en": "**No δεν after να, and no infinitive.** *Να μην αργήσεις*, not «*να δεν αργήσεις*»; *θέλω να πάω*, not «*θέλω πάω*»."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "exam_task": "a2ltr.speaking.roleplay",
+     "tr": "A2 konuşma sınavında rol yapma: örneğin bir arkadaşın ziyarete geliyor. Nerede kalacağını ve ne yapacağınızı söyle: *Θα μείνεις στο σπίτι μου*, *Θέλεις να δούμε …;*, *Μην ξεχάσεις …*.",
+     "en": "A2 speaking role-play: say, a friend is visiting. Tell them where they will stay and what you will do: *Θα μείνεις στο σπίτι μου*, *Θέλεις να δούμε …;*, *Μην ξεχάσεις …*."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene.",
+     "en": "Now you try."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch18-try-adj",
+      "oknos-book/ch18-try-aresei",
+      "oknos-book/ch18-try-mai",
+      "oknos-book/ch18-try-future",
+      "oknos-book/ch18-try-pron"
+     ]
+    }
+   ]
+  }
+ ]
+}

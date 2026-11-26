@@ -42,7 +42,8 @@ def _strings(value):
 
 @pytest.mark.parametrize("pack_dir", OPEN_PACKS, ids=lambda p: p.name)
 def test_greek_text_is_nfc_monotonic_with_final_sigma(pack_dir):
-    medial_sigma_at_end = re.compile(r"σ(?![Ͱ-Ͽἀ-῿])")
+    # a word that ends in σ; the letter on its own («ζ → σ», «ends in ς, not σ») is the letter, not a word
+    medial_sigma_at_end = re.compile(r"(?<=[Ͱ-Ͽἀ-῿])σ(?![Ͱ-Ͽἀ-῿])")
     polytonic = re.compile(r"[ἀ-῿]")
     for file in [pack_dir / "pack.json", *sorted((pack_dir / "items").glob("*.json"))]:
         data = json.loads(file.read_text(encoding="utf-8"))

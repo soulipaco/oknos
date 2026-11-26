@@ -1,0 +1,766 @@
+{
+ "id": "oknos-book.lesson-22",
+ "curriculum": "oknos-book",
+ "stage": "lesson-22",
+ "level": "A2",
+ "title": {
+  "tr": "Komşunun isim günü ve Paskalya: «-in» hâli, αν ve όταν",
+  "en": "A neighbour's name day and Easter: the genitive, αν and όταν"
+ },
+ "minutes": 18,
+ "version": 1,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde komşunun isim gününe gidecek, Paskalya'yı dinleyecek ve bayram dileklerini öğreneceksin.\n\nAnahtar nokta: «kimin?» sorusunun cevabı, isimde yeni bir **son ek** ve yeni bir artikelle gelir: **το σπίτι της Μαρίας** (Maria'nın evi). Buna *tamlayan hâli* (genitif) denir. Ayrıca **αν** (eğer) ve **όταν, μόλις, πριν** ile kurulan cümleleri de öğreneceksin.",
+     "en": "In this chapter you go to a neighbour's name day, hear about Easter and learn the holiday wishes.\n\nThe key point: the answer to «whose?» comes as a **new ending** on the noun and a **new article**: **το σπίτι της Μαρίας** (Maria's house). This is the *genitive*. You also learn clauses with **αν** (if) and with **όταν, μόλις, πριν** (when, as soon as, before)."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Komşunun isim günü",
+    "en": "A neighbour's name day"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Komşun Maria Hanım'ın isim günü (η γιορτή) var: azizin gününde o adı taşıyan herkes kutlanır. Yeni: [[ο γείτονας / η γειτόνισσα]] (komşu), [[της Παναγίας]] (Meryem Ana'nın günü; Mariaların isim günü), [[Θα σε κεράσω γλυκό]] (sana tatlı ikram edeceğim), [[Να τα εκατοστίσεις!]] (doğum günü dileği).",
+     "en": "Your neighbour Mrs Maria has her name day (η γιορτή): on the saint's day everyone with that name celebrates. New: [[ο γείτονας / η γειτόνισσα]] (neighbour), [[της Παναγίας]] (the Virgin Mary's day, when every Maria celebrates), [[Θα σε κεράσω γλυκό]] (I will treat you to a sweet) and [[Να τα εκατοστίσεις!]] (a birthday wish)."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Ayşe, komşusunun kapısında.",
+      "en": "Ayşe, at her neighbour's door."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Καλημέρα, κυρία Μαρία! Χρόνια πολλά!",
+       "tr": "Günaydın Maria Hanım! Nice senelere!",
+       "en": "Good morning, Mrs Maria! Happy name day!"
+      },
+      {
+       "who": "Μαρία",
+       "el": "Ευχαριστώ, Αϊσέ μου! Και του χρόνου! Έλα μέσα.",
+       "tr": "Sağ ol Ayşe'ciğim! Seneye de! Gel, içeri gir.",
+       "en": "Thank you, dear Ayşe! And next year too! Come in."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Δεκαπέντε Αυγούστου, της Παναγίας: η γιορτή σας! Ορίστε ένα μικρό δώρο.",
+       "tr": "15 Ağustos, Meryem Ana'nın günü: sizin isim gününüz! Buyurun, küçük bir hediye.",
+       "en": "15 August, the Virgin Mary's day: your name day! Here is a small gift."
+      },
+      {
+       "who": "Μαρία",
+       "el": "Τι ωραίο! Το βράδυ θα έρθουν τα παιδιά μου. Όταν έρθουν, θα φάμε μαζί. Έλα κι εσύ!",
+       "tr": "Ne güzel! Akşam çocuklarım gelecek. Geldiklerinde birlikte yiyeceğiz. Sen de gel!",
+       "en": "How lovely! My children are coming this evening. When they arrive, we will eat together. You come too!"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Αν δεν αργήσω στη δουλειά, θα έρθω.",
+       "tr": "İşte geç kalmazsam gelirim.",
+       "en": "If I am not late at work, I will come."
+      },
+      {
+       "who": "Μαρία",
+       "el": "Ωραία! Μόλις έρθεις, θα σε κεράσω γλυκό.",
+       "tr": "Güzel! Gelir gelmez sana tatlı ikram ederim.",
+       "en": "Lovely! As soon as you arrive, I will treat you to a sweet."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Εγώ δεν έχω γιορτή, αλλά έχω γενέθλια στις τρεις Μαΐου.",
+       "tr": "Benim isim günüm yok, ama 3 Mayıs'ta doğum günüm var.",
+       "en": "I do not have a name day, but my birthday is on 3 May."
+      },
+      {
+       "who": "Μαρία",
+       "el": "Στις τρεις Μαΐου θα σου πω: «Να τα εκατοστίσεις!»",
+       "tr": "3 Mayıs'ta sana «Nice yaşlara!» diyeceğim.",
+       "en": "On 3 May I will say to you: «May you reach a hundred!»"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Paskalya",
+    "en": "Easter"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Paskalya (το Πάσχα) büyük bayramdır; tarihi her yıl değişir. Yeni: [[βάφουμε]] (boyarız; *βάφω* fiilinden), [[η λαμπάδα]] (Paskalya mumu), [[η εκκλησία]] (kilise), [[τσουγκρίζω]] (yumurta tokuşturmak).",
+     "en": "Easter (το Πάσχα) is the big holiday; its date changes every year. New: [[βάφουμε]] (we dye; from *βάφω*), [[η λαμπάδα]] (the Easter candle), [[η εκκλησία]] (church) and [[τσουγκρίζω]] (to knock eggs together)."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Paskalya'dan birkaç gün önce, merdivende.",
+      "en": "A few days before Easter, on the stairs."
+     },
+     "lines": [
+      {
+       "who": "Αϊσέ",
+       "el": "Κυρία Μαρία, τι κάνετε το Πάσχα;",
+       "tr": "Maria Hanım, Paskalya'da ne yaparsınız?",
+       "en": "Mrs Maria, what do you do at Easter?"
+      },
+      {
+       "who": "Μαρία",
+       "el": "Τη Μεγάλη Πέμπτη βάφουμε αυγά. Τα βάφουμε κόκκινα. Το κόκκινο είναι το χρώμα του Πάσχα.",
+       "tr": "Büyük Perşembe yumurta boyarız. Kırmızıya boyarız. Kırmızı, Paskalya'nın rengidir.",
+       "en": "On Holy Thursday we dye eggs. We dye them red. Red is the colour of Easter."
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Και το βράδυ του Σαββάτου;",
+       "tr": "Peki Cumartesi akşamı?",
+       "en": "And on Saturday night?"
+      },
+      {
+       "who": "Μαρία",
+       "el": "Πάμε στην εκκλησία. Τα μεσάνυχτα ανάβουμε τις λαμπάδες και λέμε: «Χριστός Ανέστη!»",
+       "tr": "Kiliseye gideriz. Gece yarısı mumları yakar ve «Mesih dirildi!» deriz.",
+       "en": "We go to church. At midnight we light the candles and say: «Christ is risen!»"
+      },
+      {
+       "who": "Αϊσέ",
+       "el": "Και τι λέω εγώ;",
+       "tr": "Peki ben ne derim?",
+       "en": "And what do I say?"
+      },
+      {
+       "who": "Μαρία",
+       "el": "«Αληθώς Ανέστη!» Μετά τσουγκρίζουμε τα κόκκινα αυγά. Την Κυριακή του Πάσχα τρώμε αρνί.",
+       "tr": "«Gerçekten dirildi!» Sonra kırmızı yumurtaları tokuştururuz. Paskalya Pazarı kuzu yeriz.",
+       "en": "«Truly he is risen!» Then we knock the red eggs together. On Easter Sunday we eat lamb."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Dilekler ve gelenekler",
+    "en": "Wishes and customs"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Dilekler kalıptır. **Χρόνια πολλά** her kutlamada söylenir: doğum günü, isim günü, Noel, yılbaşı, Paskalya. **Να τα εκατοστίσεις** («yüz yaşına gel») yalnızca doğum gününde; *εκατοστήσεις* diye de yazılır. **Χριστός Ανέστη** Paskalya gecesinden sonra 40 gün söylenir; cevap hep **Αληθώς Ανέστη**.",
+     "en": "The wishes are set phrases. **Χρόνια πολλά** fits every celebration: a birthday, a name day, Christmas, New Year, Easter. **Να τα εκατοστίσεις** («may you reach a hundred») is only for a birthday; it is also spelt *εκατοστήσεις*. **Χριστός Ανέστη** is said for 40 days after the Easter midnight service; the answer is always **Αληθώς Ανέστη**."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Ne zaman?",
+       "en": "When?"
+      },
+      {
+       "tr": "Sen dersin",
+       "en": "You say"
+      },
+      {
+       "tr": "Cevap",
+       "en": "The answer"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "Doğum günü",
+        "en": "Birthday"
+       },
+       "Χρόνια πολλά! Να τα εκατοστίσεις!",
+       "Ευχαριστώ!"
+      ],
+      [
+       {
+        "tr": "İsim günü",
+        "en": "Name day"
+       },
+       "Χρόνια πολλά!",
+       "Ευχαριστώ! Και του χρόνου!"
+      ],
+      [
+       {
+        "tr": "Noel",
+        "en": "Christmas"
+       },
+       "Καλά Χριστούγεννα!",
+       "Και σε σένα!"
+      ],
+      [
+       {
+        "tr": "Yılbaşı",
+        "en": "New Year"
+       },
+       "Καλή χρονιά!",
+       "Και σε σένα!"
+      ],
+      [
+       {
+        "tr": "Paskalya'dan önce",
+        "en": "Before Easter"
+       },
+       "Καλό Πάσχα!",
+       "Και σε σένα!"
+      ],
+      [
+       {
+        "tr": "Paskalya gecesinden sonra",
+        "en": "From the Easter midnight on"
+       },
+       "Χριστός Ανέστη!",
+       "Αληθώς Ανέστη!"
+      ]
+     ],
+     "note": {
+      "tr": "Καλός bayramın cinsiyetine uyar: *καλό Πάσχα* (nötr), *καλή χρονιά* (dişil), *καλά Χριστούγεννα* (nötr çoğul). Sık eklenir: *Υγεία και ευτυχία!*",
+      "en": "Καλός agrees with the holiday: *καλό Πάσχα* (neuter), *καλή χρονιά* (feminine), *καλά Χριστούγεννα* (neuter plural). Often added: *Υγεία και ευτυχία!*"
+     }
+    },
+    {
+     "type": "prose",
+     "tr": "**Gelenekler.** Geleneksel olarak isim gününe davet beklenmeden gidilir; ev sahibi ikram eder. Günü azizin günü belirler: Νίκος 6 Aralık, Ελένη 21 Mayıs, Γιάννης 7 Ocak. Yılbaşında [[κόβουμε]] (keseriz) βασιλόπιτα; içinden [[το φλουρί]] (sikke) çıkana yıl boyunca şans gelir.",
+     "en": "**Customs.** Traditionally you visit on a name day without waiting for an invitation; the host treats you. The saint's day sets the date: Νίκος 6 December, Ελένη 21 May, Γιάννης 7 January. At New Year we [[κόβουμε]] (cut) the βασιλόπιτα; whoever finds [[το φλουρί]] (the coin) in it is said to have luck all year."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Τα Χριστούγεννα έχουμε δέντρο στο σπίτι.",
+       "tr": "Noel'de evde ağaç olur.",
+       "en": "At Christmas we have a tree at home."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloglara göre:",
+     "en": "According to the dialogues:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch22-q-nameday",
+      "oknos-book/ch22-q-easter"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Kimin? Tamlayan hâli, tekil",
+    "en": "Whose? The genitive, singular"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Türkçede «Maria'**nın** evi» dersin. Yunancada sahip, sahip olunan şeyden **sonra** gelir; sahibin artikeli ve sonu değişir: **το σπίτι της Μαρίας**. Artikel: **ο → του, η → της, το → του**. Sözlükteki biçime *yalın hâl*, bu biçime *tamlayan hâli* denir.",
+     "en": "In Turkish you say «Maria'**nın** evi». In Greek the owner comes **after** the thing owned, and the owner's article and ending change: **το σπίτι της Μαρίας**. The article: **ο → του, η → της, το → του**. The dictionary form is the *nominative*; this form is the *genitive*."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Biter",
+       "en": "Ending"
+      },
+      {
+       "tr": "Sözlük biçimi",
+       "en": "Dictionary form"
+      },
+      {
+       "tr": "Tamlayan",
+       "en": "Genitive"
+      }
+     ],
+     "rows": [
+      [
+       "-ος → -ου",
+       "ο φίλος",
+       "του φίλου"
+      ],
+      [
+       "-ας → -α",
+       "ο πατέρας",
+       "του πατέρα"
+      ],
+      [
+       "-ης → -η",
+       "ο πελάτης",
+       "του πελάτη"
+      ],
+      [
+       "-α → -ας",
+       "η μητέρα",
+       "της μητέρας"
+      ],
+      [
+       "-η → -ης",
+       "η Ελένη",
+       "της Ελένης"
+      ],
+      [
+       "-ο → -ου",
+       "το δώρο",
+       "του δώρου"
+      ],
+      [
+       "-ι → -ιού",
+       "το παιδί",
+       "του παιδιού"
+      ],
+      [
+       "-μα → -μα + τος",
+       "το πρόβλημα",
+       "του προβλήματος"
+      ]
+     ],
+     "note": {
+      "tr": "Vurgu çoğunlukla aynı hecede kalır. Üç durumda kayar: -ι ile biten isimlerde sona geçer (σπίτι → σπιτιού); sondan üçüncü hecede vurgulu -ος ve -ο isimlerinde bir hece sağa kayar (δάσκαλος → δασκάλου, Σάββατο → Σαββάτου); -μα isimleri uzayınca da öyle (πρόβλημα → προβλήματος). Dişil -α ve -η isimlerinde tekilde kaymaz: η γειτόνισσα → της γειτόνισσας. Yabancı isimler değişmez: της Αϊσέ.",
+      "en": "The stress mostly stays on the same syllable. It moves in three cases: nouns in -ι put it on the ending (σπίτι → σπιτιού); -ος and -ο nouns stressed on the third syllable from the end move it one syllable right (δάσκαλος → δασκάλου, Σάββατο → Σαββάτου); so do -μα nouns as they grow longer (πρόβλημα → προβλήματος). Feminine -α and -η nouns keep it in the singular: η γειτόνισσα → της γειτόνισσας. Foreign names do not change: της Αϊσέ."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Το δώρο του Νίκου είναι εδώ.",
+       "tr": "Nikos'un hediyesi burada.",
+       "en": "Nikos's gift is here."
+      },
+      {
+       "el": "Η γιορτή της γειτόνισσάς μου είναι σήμερα.",
+       "tr": "Komşumun isim günü bugün.",
+       "en": "My neighbour's name day is today.",
+       "note": {
+        "tr": "γειτόνισσάς μου: ikinci vurgu, Ders 4.",
+        "en": "γειτόνισσάς μου: the second accent, Lesson 4."
+       }
+      },
+      {
+       "el": "Η μητέρα της Αϊσέ είναι στη Σμύρνη.",
+       "tr": "Ayşe'nin annesi İzmir'de.",
+       "en": "Ayşe's mother is in Smyrna."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Kimlerin? Çoğulda hep -ων",
+    "en": "Whose, plural: always -ων"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Çoğulda artikel üç cinsiyette de **των**, son da hep **-ων**. Standart dilde vurgu sondan üçüncü hecede kalmaz, bu yüzden oradan kayar: ο άνθρωπος → των ανθρώπων, ο δάσκαλος → των δασκάλων. Dişil -α ve -η isimlerinin çoğu, -ι ile biten nötrler ve -της ile biten isimler vurguyu sona alır: των γυναικών, των ωρών, των παιδιών, των πελατών. İstisnalar var (η μητέρα → των μητέρων), vurguyu kelimeyle öğren.",
+     "en": "In the plural all three genders take **των**, and the ending is always **-ων**. In standard Greek the stress does not stay on the third syllable from the end, so it moves from there: ο άνθρωπος → των ανθρώπων, ο δάσκαλος → των δασκάλων. Most feminines in -α and -η, neuters in -ι and nouns in -της stress the ending: των γυναικών, των ωρών, των παιδιών, των πελατών. Exceptions exist (η μητέρα → των μητέρων): learn the stress with the word."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Yalın hâl",
+       "en": "Nominative"
+      },
+      {
+       "tr": "Tamlayan tekil",
+       "en": "Genitive singular"
+      },
+      {
+       "tr": "Tamlayan çoğul",
+       "en": "Genitive plural"
+      }
+     ],
+     "rows": [
+      [
+       "ο φίλος",
+       "του φίλου",
+       "των φίλων"
+      ],
+      [
+       "ο δάσκαλος",
+       "του δασκάλου",
+       "των δασκάλων"
+      ],
+      [
+       "η γυναίκα",
+       "της γυναίκας",
+       "των γυναικών"
+      ],
+      [
+       "το παιδί",
+       "του παιδιού",
+       "των παιδιών"
+      ],
+      [
+       "το πρόβλημα",
+       "του προβλήματος",
+       "των προβλημάτων"
+      ],
+      [
+       "η ώρα",
+       "της ώρας",
+       "των ωρών"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Το δώρο των παιδιών είναι δίπλα στο δέντρο.",
+       "tr": "Çocukların hediyesi ağacın yanında.",
+       "en": "The children's gift is next to the tree."
+      },
+      {
+       "el": "Το σπίτι των γειτόνων μου είναι δίπλα.",
+       "tr": "Komşularımın evi hemen yanda.",
+       "en": "My neighbours' house is next door.",
+       "note": {
+        "tr": "ο γείτονας → των γειτόνων: vurgu sondan ikinci heceye kayar.",
+        "en": "ο γείτονας → των γειτόνων: the stress moves to the second-to-last syllable."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Tamlayan ne için kullanılır? Beş iş",
+    "en": "What the genitive is for: five uses"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "**Kimin?** için *ποιανού;* (sahip kadınsa: *ποιανής;*): *Ποιανού είναι το δώρο; — Του Νίκου.* Yaşı sorarken: [[Πόσων χρονών;]]",
+     "en": "For **whose?** ask *ποιανού;* (if the owner is a woman: *ποιανής;*): *Ποιανού είναι το δώρο; — Του Νίκου.* To ask age: [[Πόσων χρονών;]]"
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Ne için?",
+       "en": "What for?"
+      },
+      {
+       "tr": "Örnek",
+       "en": "Example"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "Sahiplik",
+        "en": "Possession"
+       },
+       "το σπίτι της Μαρίας"
+      ],
+      [
+       {
+        "tr": "Cadde, meydan adı",
+        "en": "Street and square names"
+       },
+       "οδός Ερμού · οδός Σταδίου · πλατεία Συντάγματος"
+      ],
+      [
+       {
+        "tr": "Yaş: είμαι + sayı + χρονών",
+        "en": "Age: είμαι + number + χρονών"
+       },
+       "Είμαι τριάντα χρονών."
+      ],
+      [
+       {
+        "tr": "Tarih: στις + sayı + ay",
+        "en": "Date: στις + number + month"
+       },
+       "στις 25 Μαρτίου"
+      ],
+      [
+       {
+        "tr": "Köken: ürün + yer",
+        "en": "Origin: product + place"
+       },
+       "τυρί Νάξου · κρασί Σαντορίνης"
+      ]
+     ],
+     "note": {
+      "tr": "Aylar da -ος isimleridir: Μάρτιος → Μαρτίου, Δεκέμβριος → Δεκεμβρίου, Μάιος → Μαΐου; Ιούλιος → Ιουλίου, Αύγουστος → Αυγούστου. Yaşta 3 ve 4 değişir: τριών, τεσσάρων χρονών; resmî dilde ετών. Cadde adları tamlayandır: οδός Σταδίου (το Στάδιο), πλατεία Συντάγματος (το Σύνταγμα). Ερμού ise Ερμής (Hermes) adının eski bir tamlayanıdır.",
+      "en": "Months are -ος nouns too: Μάρτιος → Μαρτίου, Δεκέμβριος → Δεκεμβρίου, Μάιος → Μαΐου; Ιούλιος → Ιουλίου, Αύγουστος → Αυγούστου. In ages 3 and 4 change: τριών, τεσσάρων χρονών; the formal word is ετών. Street names are genitives: οδός Σταδίου (το Στάδιο), πλατεία Συντάγματος (το Σύνταγμα). Ερμού is an old genitive of ο Ερμής (Hermes)."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Πόσων χρονών είσαι; — Είμαι είκοσι οχτώ χρονών.",
+       "tr": "Kaç yaşındasın? — Yirmi sekiz yaşındayım.",
+       "en": "How old are you? — I am twenty-eight."
+      },
+      {
+       "el": "Η γιορτή του Νίκου είναι στις έξι Δεκεμβρίου.",
+       "tr": "Nikos'un isim günü 6 Aralık'ta.",
+       "en": "Nikos's name day is on 6 December."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "«Eğer»: αν",
+    "en": "«If»: αν"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Türkçede ek (*-sa/-se*), Yunancada **αν** cümleyi açar. Bir **durum** için (έχω, θέλω, είμαι) şimdiki zaman: *αν έχεις χρόνο*. **Tek bir olay** için Ders 15 ve 17'deki bir kerelik kök, **να ve θα olmadan**: *αν έρθεις*. Ana cümlede θα + gelecek ya da bir emir (*έλα*, Ders 21). «Eğer» anlamındaki **αν** ile θα kullanılmaz (*δεν ξέρω αν θα έρθει* «gelip gelmeyeceğini bilmiyorum» başka bir kullanımdır). Olumsuz: **αν δε(ν)**.",
+     "en": "Turkish uses an ending (*-sa/-se*); Greek opens the clause with **αν**. For a **state** (έχω, θέλω, είμαι) use the present: *αν έχεις χρόνο*. For **one event** use the once-only stem (Lessons 15, 17) **without να or θα**: *αν έρθεις*. The main clause has θα + the future, or an instruction (*έλα*, Lesson 21). **No** θα after **αν** meaning «if» (*δεν ξέρω αν θα έρθει* «I don't know whether he will come» is another use). Negative: **αν δε(ν)**."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Fiil",
+       "en": "Verb"
+      },
+      {
+       "tr": "Örnek",
+       "en": "Example"
+      },
+      {
+       "tr": "Anlamı",
+       "en": "Meaning"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "tr": "durum: şimdiki",
+        "en": "a state: present"
+       },
+       "Αν έχεις χρόνο, έλα.",
+       {
+        "tr": "Zamanın varsa gel.",
+        "en": "If you have time, come."
+       }
+      ],
+      [
+       {
+        "tr": "olay: bir kerelik",
+        "en": "an event: once-only"
+       },
+       "Αν έρθεις, θα φάμε.",
+       {
+        "tr": "Gelirsen yeriz.",
+        "en": "If you come, we will eat."
+       }
+      ],
+      [
+       {
+        "tr": "olumsuz",
+        "en": "negative"
+       },
+       "Αν δεν αργήσω, θα έρθω.",
+       {
+        "tr": "Geç kalmazsam gelirim.",
+        "en": "If I am not late, I will come."
+       }
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Αν θέλεις, θα πάμε μαζί στη γιορτή.",
+       "tr": "İstersen birlikte isim gününe gideriz.",
+       "en": "If you want, we will go to the name day together."
+      },
+      {
+       "el": "Αν δε δω την Ελένη, θα της τηλεφωνήσω.",
+       "tr": "Eleni'yi görmezsem ona telefon ederim.",
+       "en": "If I do not see Eleni, I will phone her."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "«Ne zaman?»: όταν, μόλις, πριν",
+    "en": "«When?»: όταν, μόλις, πριν"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Zaman cümleleri **αν** gibi çalışır: **όταν** (…dığında), **μόλις** (…ır …maz), **πριν** (…meden önce). Alışkanlık ya da genel doğru için şimdiki zaman; gelecek için bir kerelik kök, **θα olmadan**. İsimle: **πριν από** + isim (Ders 19).",
+     "en": "Time clauses work like **αν**: **όταν** (when), **μόλις** (as soon as), **πριν** (before). For a habit or a general truth use the present; for the future the once-only stem, **without θα**. With a noun: **πριν από** + noun (Lesson 19)."
+    },
+    {
+     "type": "table",
+     "head": [
+      {
+       "tr": "Kelime",
+       "en": "Word"
+      },
+      {
+       "tr": "Fiil",
+       "en": "Verb"
+      },
+      {
+       "tr": "Örnek",
+       "en": "Example"
+      }
+     ],
+     "rows": [
+      [
+       "όταν",
+       {
+        "tr": "alışkanlık: şimdiki",
+        "en": "a habit: present"
+       },
+       "Όταν κάνει ζέστη, πάμε στη θάλασσα."
+      ],
+      [
+       "όταν",
+       {
+        "tr": "gelecek: bir kerelik",
+        "en": "the future: once-only"
+       },
+       "Όταν έρθει ο Νίκος, θα φάμε."
+      ],
+      [
+       "μόλις",
+       {
+        "tr": "gelecek: bir kerelik",
+        "en": "the future: once-only"
+       },
+       "Μόλις φτάσω, θα σου τηλεφωνήσω."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Μόλις φύγω από τη δουλειά, θα πάω στη γιορτή.",
+       "tr": "İşten çıkar çıkmaz isim gününe gideceğim.",
+       "en": "As soon as I leave work, I will go to the name day."
+      },
+      {
+       "el": "Πριν πάω στη γιορτή, θα αγοράσω ένα δώρο.",
+       "tr": "İsim gününe gitmeden önce bir hediye alacağım.",
+       "en": "Before I go to the name day, I will buy a gift."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bayram, dilek ve bağlaç kelimeleri.",
+     "en": "Holiday, wish and conjunction words."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/v-giorti",
+      "oknos-book/v-eytychia",
+      "oknos-book/v-anavo-phrase",
+      "oknos-book/v-dentro",
+      "oknos-book/v-kovo-verb",
+      "oknos-book/v-stadio",
+      "oknos-book/ch11-tyri",
+      "oknos-book/ch22-efchi",
+      "oknos-book/ch22-christougenna",
+      "oknos-book/ch22-pascha",
+      "oknos-book/ch22-protochronia",
+      "oknos-book/ch22-chronia",
+      "oknos-book/ch22-vasilopita",
+      "oknos-book/ch22-flouri",
+      "oknos-book/ch22-lampada",
+      "oknos-book/ch22-ekklisia",
+      "oknos-book/ch22-geitonas",
+      "oknos-book/ch22-glyko",
+      "oknos-book/ch22-kernao",
+      "oknos-book/ch22-vafo",
+      "oknos-book/ch22-tsougrizo",
+      "oknos-book/ch22-odos",
+      "oknos-book/ch22-an",
+      "oknos-book/ch22-otan",
+      "oknos-book/ch22-molis"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**İki hata.** (1) Hem artikel hem isim değişir: *του Νίκου*, «του Νίκος» değil. (2) «Eğer» anlamındaki αν ile θα kullanılmaz: *Αν έρθεις*, «Αν θα έρθεις» değil. όταν, μόλις, πριν ile de θα koyma: *Όταν έρθει*.",
+     "en": "**Two mistakes.** (1) Both the article and the noun change: *του Νίκου*, not «του Νίκος». (2) No θα after αν meaning «if»: *Αν έρθεις*, not «Αν θα έρθεις». Leave θα out after όταν, μόλις, πριν too: *Όταν έρθει*."
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "exam_task": "a2ltr.history.mcq",
+     "tr": "**Sınavda.** Tarih bölümünde (a2ltr.history.mcq) 10 çoktan seçmeli soru Yunan tarihi ve kültürü üzerinedir. İki ulusal bayram: *στις 25 Μαρτίου* (1821 ayaklanmasının başlangıcı) ve *στις 28 Οκτωβρίου* (1940'taki «Όχι»).",
+     "en": "**In the exam.** The history part (a2ltr.history.mcq) has 10 multiple-choice questions on Greek history and culture. Two national holidays: *στις 25 Μαρτίου* (the start of the 1821 revolution) and *στις 28 Οκτωβρίου* (the «Όχι» of 1940)."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: tamlayan (tekil, çoğul) ve αν.",
+     "en": "Now you try: the genitive (singular, plural) and αν."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch22-try-gen-sg",
+      "oknos-book/ch22-try-gen-pl",
+      "oknos-book/ch22-try-ean"
+     ]
+    }
+   ]
+  }
+ ]
+}

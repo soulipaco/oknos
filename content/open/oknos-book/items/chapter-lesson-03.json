@@ -1,0 +1,962 @@
+[
+ {
+  "id": "ch03-douleyo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "δουλεύω",
+  "pos": "verb",
+  "en": "to work",
+  "tr": "çalışmak",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "example": {
+   "el": "Δουλεύω στον Πειραιά.",
+   "en": "I work in Piraeus.",
+   "tr": "Pire'de çalışıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-athina",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η Αθήνα",
+  "pos": "noun",
+  "en": "Athens",
+  "tr": "Atina",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "lemma": "Αθήνα",
+  "gender": "f",
+  "example": {
+   "el": "Μένω στην Αθήνα.",
+   "en": "I live in Athens.",
+   "tr": "Atina'da oturuyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-panta",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πάντα",
+  "pos": "adv",
+  "en": "always",
+  "tr": "her zaman",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "example": {
+   "el": "Πάντα πίνω καφέ.",
+   "en": "I always drink coffee.",
+   "tr": "Her zaman kahve içerim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-merikes-fores",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "μερικές φορές",
+  "pos": "adv",
+  "en": "sometimes",
+  "tr": "bazen",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "example": {
+   "el": "Μερικές φορές πίνω τσάι.",
+   "en": "Sometimes I drink tea.",
+   "tr": "Bazen çay içerim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-pote",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ποτέ",
+  "pos": "adv",
+  "en": "never (with δεν)",
+  "tr": "hiçbir zaman (δεν ile)",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "example": {
+   "el": "Δεν πίνω ποτέ καφέ.",
+   "en": "I never drink coffee.",
+   "tr": "Hiç kahve içmem."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-num-11",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "έντεκα",
+  "pos": "num",
+  "en": "eleven (11)",
+  "tr": "on bir (11)",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-num-12",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "δώδεκα",
+  "pos": "num",
+  "en": "twelve (12)",
+  "tr": "on iki (12)",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-num-20",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "είκοσι",
+  "pos": "num",
+  "en": "twenty (20)",
+  "tr": "yirmi (20)",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-num-30",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "τριάντα",
+  "pos": "num",
+  "en": "thirty (30)",
+  "tr": "otuz (30)",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-num-40",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "σαράντα",
+  "pos": "num",
+  "en": "forty (40)",
+  "tr": "kırk (40)",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-num-50",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "πενήντα",
+  "pos": "num",
+  "en": "fifty (50)",
+  "tr": "elli (50)",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-num-60",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εξήντα",
+  "pos": "num",
+  "en": "sixty (60)",
+  "tr": "altmış (60)",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-num-70",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εβδομήντα",
+  "pos": "num",
+  "en": "seventy (70)",
+  "tr": "yetmiş (70)",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-num-80",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ογδόντα",
+  "pos": "num",
+  "en": "eighty (80)",
+  "tr": "seksen (80)",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-num-90",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "ενενήντα",
+  "pos": "num",
+  "en": "ninety (90)",
+  "tr": "doksan (90)",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-num-100",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "εκατό",
+  "pos": "num",
+  "en": "one hundred, 100 (εκατόν before another number)",
+  "tr": "yüz, 100 (arkasından sayı gelince εκατόν)",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-q-where-live",
+  "type": "mcq",
+  "skill": "reading",
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πού μένει η Αϊσέ;",
+   "en": "Where does Ayşe live?",
+   "tr": "Ayşe nerede oturuyor?"
+  },
+  "options": [
+   "Στην Καλλιθέα.",
+   "Στο Μαρούσι.",
+   "Στον Πειραιά."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Μένω στην Καλλιθέα», she says. She works in Piraeus (Πειραιάς); Nikos lives in Marousi.",
+   "tr": "«Μένω στην Καλλιθέα» diyor. Pire'de çalışıyor; Marusi'de oturan ise Nikos."
+  },
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-q-true-false",
+  "type": "true_false",
+  "skill": "reading",
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Ο Νίκος μένει στο Μαρούσι.",
+    "en": "Nikos lives in Marousi.",
+    "tr": "Nikos Marusi'de oturuyor.",
+    "answer": true
+   },
+   {
+    "el": "Η Αϊσέ δουλεύει Σάββατο και Κυριακή.",
+    "en": "Ayşe works on Saturday and Sunday.",
+    "tr": "Ayşe cumartesi ve pazar çalışıyor.",
+    "answer": false
+   },
+   {
+    "el": "Ο Νίκος δεν πίνει ποτέ καφέ.",
+    "en": "Nikos never drinks coffee.",
+    "tr": "Nikos hiç kahve içmiyor.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "Nikos says «Εγώ μένω εδώ, στο Μαρούσι» and «Εγώ δεν πίνω ποτέ καφέ». Ayşe answers «Όχι»: she works Monday, Tuesday and Thursday.",
+   "tr": "Nikos «Εγώ μένω εδώ, στο Μαρούσι» ve «Εγώ δεν πίνω ποτέ καφέ» diyor. Ayşe «Όχι» diye cevap veriyor: pazartesi, salı ve perşembe çalışıyor."
+  },
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-try-meno",
+  "type": "form",
+  "skill": "grammar",
+  "grammar": [
+   "verb.present"
+  ],
+  "cue": {
+   "lemma": "μένω",
+   "tense": "present",
+   "person": "1pl"
+  },
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "text": "Ο Νίκος κι εγώ {1} στην Αθήνα.",
+  "answer": {
+   "1": [
+    "μένουμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "μένουμε",
+    "μένουν",
+    "μένετε"
+   ]
+  },
+  "translation": {
+   "en": "Nikos and I live in Athens.",
+   "tr": "Nikos ve ben Atina'da oturuyoruz."
+  },
+  "explain": {
+   "en": "«Nikos and I» = we: μένουμε.",
+   "tr": "«Nikos ve ben» = biz: μένουμε."
+  },
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-try-prep",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "rubric": {
+   "el": "Συμπληρώνω τα κενά. Μία λέξη περισσεύει.",
+   "en": "Fill the gaps. One word is not needed.",
+   "tr": "Boşlukları doldur. Bir kelime fazla."
+  },
+  "text": "Μένω {1} Αθήνα. Δουλεύω {2} Πειραιά. Είμαι {3} θέατρο.",
+  "bank": [
+   "στην",
+   "στον",
+   "στο",
+   "από"
+  ],
+  "answer": {
+   "1": "στην",
+   "2": "στον",
+   "3": "στο"
+  },
+  "translation": {
+   "en": "I live in Athens. I work in Piraeus. I am at the theatre.",
+   "tr": "Atina'da oturuyorum. Pire'de çalışıyorum. Tiyatrodayım."
+  },
+  "explain": {
+   "en": "η Αθήνα → στην; ο Πειραιάς → στον; το θέατρο → στο.",
+   "tr": "η Αθήνα → στην; ο Πειραιάς → στον; το θέατρο → στο."
+  },
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-try-gender",
+  "type": "categorise",
+  "skill": "grammar",
+  "rubric": {
+   "el": "Βάζω «ο», «η» ή «το».",
+   "en": "Put ο, η or το with each word.",
+   "tr": "Her kelimeye ο, η veya το koy."
+  },
+  "categories": [
+   "ο",
+   "η",
+   "το"
+  ],
+  "items": [
+   "Πειραιάς",
+   "Κρήτη",
+   "μάθημα",
+   "μαθητής",
+   "Τουρκία",
+   "παιδί"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   0,
+   1,
+   2
+  ],
+  "explain": {
+   "en": "Πειραιάς (-ας), μαθητής (-ης) → ο; Κρήτη (-η), Τουρκία (-α) → η; μάθημα (-μα), παιδί (-ι) → το.",
+   "tr": "Πειραιάς (-ας), μαθητής (-ης) → ο; Κρήτη (-η), Τουρκία (-α) → η; μάθημα (-μα), παιδί (-ι) → το."
+  },
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-p-numbers",
+  "type": "match",
+  "skill": "vocab",
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the numbers.",
+   "tr": "Sayıları eşleştir."
+  },
+  "left": [
+   "13",
+   "20",
+   "40",
+   "100"
+  ],
+  "right": [
+   "δεκατρία",
+   "είκοσι",
+   "σαράντα",
+   "εκατό"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "13 = δέκα + τρία, in one word: δεκατρία.",
+   "tr": "13 = δέκα + τρία, tek kelime: δεκατρία."
+  }
+ },
+ {
+  "id": "ch03-try-never",
+  "type": "mcq",
+  "skill": "grammar",
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Νίκος: «…»",
+   "en": "Nikos: «…»",
+   "tr": "Nikos: «…»"
+  },
+  "options": [
+   "Δεν πίνω ποτέ καφέ.",
+   "Πίνω ποτέ καφέ.",
+   "Πίνω πάντα καφέ.",
+   "Δεν πίνω πάντα καφέ."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "ποτέ needs δεν: «Δεν πίνω ποτέ καφέ». «Δεν πίνω πάντα καφέ» means «I do not always drink coffee».",
+   "tr": "ποτέ ile δεν de gelir: «Δεν πίνω ποτέ καφέ». «Δεν πίνω πάντα καφέ» ise «Her zaman kahve içmem» demek."
+  },
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  },
+  "ask": {
+   "en": "Nikos never drinks coffee. What does he say?",
+   "tr": "Nikos hiç kahve içmiyor. Ne der?"
+  }
+ },
+ {
+  "id": "ch03-p-days",
+  "ask": {
+   "en": "Match each day with the day after it.",
+   "tr": "Her günü ertesi günle eşleştir."
+  },
+  "type": "match",
+  "skill": "vocab",
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match each day with the day after it.",
+   "tr": "Her günü ertesi günle eşleştir."
+  },
+  "left": [
+   "Δευτέρα",
+   "Τετάρτη",
+   "Παρασκευή"
+  ],
+  "right": [
+   "Τρίτη",
+   "Πέμπτη",
+   "Σάββατο"
+  ],
+  "answer": [
+   0,
+   1,
+   2
+  ],
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "Monday → Tuesday, Wednesday → Thursday, Friday → Saturday.",
+   "tr": "Pazartesi → salı, çarşamba → perşembe, cuma → cumartesi."
+  }
+ },
+ {
+  "id": "ch03-p-douleyeis",
+  "type": "form",
+  "skill": "grammar",
+  "grammar": [
+   "verb.present"
+  ],
+  "cue": {
+   "lemma": "δουλεύω",
+   "tense": "present",
+   "person": "2sg"
+  },
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Νίκο, πού {1};",
+  "answer": {
+   "1": [
+    "δουλεύεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "δουλεύεις",
+    "δουλεύω",
+    "δουλεύει"
+   ]
+  },
+  "translation": {
+   "en": "Nikos, where do you work?",
+   "tr": "Nikos, nerede çalışıyorsun?"
+  },
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "You are talking to Nikos = you (εσύ): δουλεύεις.",
+   "tr": "Nikos'la konuşuyorsun = sen (εσύ): δουλεύεις."
+  }
+ },
+ {
+  "id": "ch03-p-douleyoun",
+  "type": "form",
+  "skill": "grammar",
+  "grammar": [
+   "verb.present"
+  ],
+  "cue": {
+   "lemma": "δουλεύω",
+   "tense": "present",
+   "person": "3pl"
+  },
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Ο Νίκος και η Ελένη {1} στο θέατρο.",
+  "answer": {
+   "1": [
+    "δουλεύουν",
+    "δουλεύουνε"
+   ]
+  },
+  "options": {
+   "1": [
+    "δουλεύουν",
+    "δουλεύει",
+    "δουλεύετε"
+   ]
+  },
+  "translation": {
+   "en": "Nikos and Eleni work at the theatre.",
+   "tr": "Nikos ve Eleni tiyatroda çalışıyor."
+  },
+  "explain": {
+   "en": "Two people = they: δουλεύουν(ε).",
+   "tr": "İki kişi = onlar: δουλεύουν(ε)."
+  },
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-p-diavazete",
+  "type": "form",
+  "skill": "grammar",
+  "grammar": [
+   "verb.present"
+  ],
+  "cue": {
+   "lemma": "διαβάζω",
+   "tense": "present",
+   "person": "2pl"
+  },
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Εσείς {1} ένα βιβλίο;",
+  "answer": {
+   "1": [
+    "διαβάζετε"
+   ]
+  },
+  "options": {
+   "1": [
+    "διαβάζετε",
+    "διαβάζεις",
+    "διαβάζουν"
+   ]
+  },
+  "translation": {
+   "en": "Are you reading a book?",
+   "tr": "Siz bir kitap mı okuyorsunuz?"
+  },
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "Εσείς = you (formal or plural): διαβάζετε.",
+   "tr": "Εσείς = siz: διαβάζετε."
+  }
+ },
+ {
+  "id": "ch03-p-apo",
+  "type": "mcq",
+  "skill": "grammar",
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "prompt": {
+   "el": "Ο Νίκος είναι από … Θεσσαλονίκη.",
+   "en": "Nikos is from Thessaloniki.",
+   "tr": "Nikos Selanikli."
+  },
+  "options": [
+   "τη",
+   "τον",
+   "το"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "η Θεσσαλονίκη is feminine, and the -ν of την drops before θ: από τη Θεσσαλονίκη.",
+   "tr": "η Θεσσαλονίκη dişil; θ listede olmadığı için την'in -ν'si düşer: από τη Θεσσαλονίκη."
+  },
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-p-number-150",
+  "ask": {
+   "en": "Which number is this?",
+   "tr": "Bu hangi sayı?"
+  },
+  "type": "mcq",
+  "skill": "vocab",
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right number.",
+   "tr": "Doğru sayıyı seç."
+  },
+  "prompt": {
+   "el": "εκατόν πενήντα",
+   "en": "Which number is this?",
+   "tr": "Bu hangi sayı?"
+  },
+  "options": [
+   "150",
+   "105",
+   "510"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "εκατόν = 100, πενήντα = 50.",
+   "tr": "εκατόν = 100, πενήντα = 50."
+  },
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-p-answer-where",
+  "type": "mcq",
+  "skill": "reading",
+  "rubric": {
+   "el": "Διαλέγω την απάντηση.",
+   "en": "Choose the answer.",
+   "tr": "Cevabı seç."
+  },
+  "prompt": {
+   "el": "Πού μένεις;",
+   "en": "Where do you live?",
+   "tr": "Nerede oturuyorsun?"
+  },
+  "options": [
+   "Μένω στην Καλλιθέα.",
+   "Είμαι από την Τουρκία.",
+   "Με λένε Μαρία."
+  ],
+  "answer": 0,
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch03-p-nu-patra",
+  "type": "mcq",
+  "skill": "grammar",
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "prompt": {
+   "el": "Η Ελένη μένει … Πάτρα.",
+   "en": "Eleni lives in Patras.",
+   "tr": "Eleni Patra'da oturuyor."
+  },
+  "options": [
+   "στην",
+   "στη",
+   "στον"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "η Πάτρα is feminine, and π is one of the letters that keep the -ν: στην Πάτρα.",
+   "tr": "η Πάτρα dişil ve π'den önce -ν kalır: στην Πάτρα."
+  },
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "opus-review"
+  }
+ },
+ {
+  "id": "ch03-p-day-article",
+  "type": "mcq",
+  "skill": "grammar",
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right form.",
+   "tr": "Doğru biçimi seç."
+  },
+  "prompt": {
+   "el": "… Παρασκευή διαβάζω στο σπίτι.",
+   "en": "On Friday I study at home.",
+   "tr": "Cuma günü evde ders çalışıyorum."
+  },
+  "options": [
+   "Την",
+   "Τη",
+   "Το"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "η Παρασκευή is feminine, so «on Friday» is την Παρασκευή; π keeps the -ν.",
+   "tr": "η Παρασκευή dişil, «cuma günü» την Παρασκευή olur; π'den önce -ν kalır."
+  },
+  "level": "A1",
+  "topics": [
+   "stage:lesson-03"
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-03",
+   "by": "opus-review"
+  }
+ }
+]

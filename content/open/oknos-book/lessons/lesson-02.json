@@ -1,0 +1,499 @@
+{
+ "id": "oknos-book.lesson-02",
+ "curriculum": "oknos-book",
+ "stage": "lesson-02",
+ "level": "A1",
+ "title": {
+  "tr": "Ne iş yapıyorsun? είμαι fiili ve tanıştırmak",
+  "en": "What do you do? The verb είμαι, and introducing people"
+ },
+ "minutes": 12,
+ "version": 2,
+ "sections": [
+  {
+   "kind": "intro",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu bölümde birine **ne iş yaptığını** sormayı, kendi işini söylemeyi ve **birini başka birine tanıştırmayı** öğreneceksin.\n\nBunun için Yunancanın en önemli fiilini tamamen öğreneceksin: **είμαι** (olmak). Ders 1'de üç biçimini zaten gördün: *είμαι*, *είσαι* ve *είστε*. Bir de birine seslenirken erkek isimlerinin nasıl değiştiğini (*Νίκος → Νίκο!*) ve 0'dan 10'a kadar sayıları göreceksin.",
+     "en": "In this chapter you learn to ask someone **what they do**, say what you do, and **introduce one person to another**.\n\nFor that you learn the most important Greek verb in full: **είμαι** (to be). You already met three of its forms in Lesson 1: *είμαι*, *είσαι* and *είστε*. You will also see how men's names change when you call someone (*Νίκος → Νίκο!*), and the numbers from 0 to 10."
+    }
+   ]
+  },
+  {
+   "kind": "warmup",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bir partide iki arkadaşını tanıştırıyorsun. Türkçede ne dersin? \"Nikos, bu Mehmet. Mehmet mühendis.\" Dikkat et: Türkçede *mühendis* kelimesi hiçbir ek almadan da \"o mühendis\" diyebilirsin. Yunancada ise her zaman bir fiil gerekir: *είναι*. Şimdi bunun nasıl yapıldığına bakalım.",
+     "en": "At a party you introduce two friends. In English: \"Nikos, this is Mehmet. Mehmet is an engineer.\" Greek, like English, always needs the verb here: *είναι* (is). Let's see how it works."
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "title": {
+    "tr": "Bir doğum günü partisinde",
+    "en": "At a birthday party"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Önce dinle, sonra oku. Kişi adlarının sonuna dikkat et: biri Nikos'a seslenirken *Νίκο* diyor.",
+     "en": "Listen first, then read. Watch the ends of the names: when someone calls Nikos, they say *Νίκο*."
+    },
+    {
+     "type": "dialogue",
+     "setting": {
+      "tr": "Eleni, arkadaşı Mehmet'i Nikos'la tanıştırıyor. Sonra Nikos'un babası Bay Pappas geliyor.",
+      "en": "Eleni introduces her friend Mehmet to Nikos. Then Nikos's father, Mr Pappas, joins them."
+     },
+     "lines": [
+      {
+       "who": "Ελένη",
+       "el": "Νίκο, από δω ο Μεχμέτ.",
+       "tr": "Nikos, bu Mehmet.",
+       "en": "Nikos, this is Mehmet."
+      },
+      {
+       "who": "Νίκος",
+       "el": "Γεια σου, Μεχμέτ! Χαίρω πολύ.",
+       "tr": "Merhaba Mehmet! Memnun oldum.",
+       "en": "Hi, Mehmet! Nice to meet you."
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Χαίρω πολύ, Νίκο.",
+       "tr": "Memnun oldum Nikos.",
+       "en": "Nice to meet you, Nikos."
+      },
+      {
+       "who": "Νίκος",
+       "el": "Τι δουλειά κάνεις;",
+       "tr": "Ne iş yapıyorsun?",
+       "en": "What do you do?"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Είμαι μηχανικός. Εσύ;",
+       "tr": "Mühendisim. Ya sen?",
+       "en": "I'm an engineer. And you?"
+      },
+      {
+       "who": "Νίκος",
+       "el": "Εγώ είμαι φοιτητής. Η Ελένη είναι γιατρός.",
+       "tr": "Ben öğrenciyim. Eleni doktor.",
+       "en": "I'm a student. Eleni is a doctor."
+      },
+      {
+       "who": "Ελένη",
+       "el": "Καλησπέρα, κύριε Παππά! Από δω ο Μεχμέτ.",
+       "tr": "İyi akşamlar Bay Pappas! Bu Mehmet.",
+       "en": "Good evening, Mr Pappas! This is Mehmet."
+      },
+      {
+       "who": "κ. Παππάς",
+       "el": "Χαίρω πολύ, Μεχμέτ. Είσαι κι εσύ φοιτητής;",
+       "tr": "Memnun oldum Mehmet. Sen de öğrenci misin?",
+       "en": "Nice to meet you, Mehmet. Are you a student too?"
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Όχι, είμαι μηχανικός. Εσείς τι δουλειά κάνετε, κύριε Παππά;",
+       "tr": "Hayır, mühendisim. Siz ne iş yapıyorsunuz Bay Pappas?",
+       "en": "No, I'm an engineer. What do you do, Mr Pappas?"
+      },
+      {
+       "who": "κ. Παππάς",
+       "el": "Είμαι λογιστής. Ο Νίκος κι εγώ είμαστε από τη Θεσσαλονίκη.",
+       "tr": "Muhasebeciyim. Nikos ve ben Selanikliyiz.",
+       "en": "I'm an accountant. Nikos and I are from Thessaloniki."
+      },
+      {
+       "who": "Μεχμέτ",
+       "el": "Α, ωραία!",
+       "tr": "Aa, ne güzel!",
+       "en": "Oh, nice!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "comprehension",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Diyaloğa göre:",
+     "en": "According to the dialogue:"
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch02-q-mehmet-job",
+      "oknos-book/ch02-q-true-false"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "είμαι: olmak",
+    "en": "είμαι: to be"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Türkçede \"olmak\" çoğu zaman bir ektir: *mühendis**im***, *öğrenci**sin***. Yunancada ise ayrı bir kelimedir ve kişiye göre değişir:",
+     "en": "In English, \"to be\" changes with the person (I am, you are, he is). Greek does the same, with six forms:"
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "είμαι, şimdiki zaman",
+      "en": "είμαι, present tense"
+     },
+     "head": [
+      "",
+      "είμαι",
+      {
+       "tr": "Türkçe",
+       "en": "English"
+      }
+     ],
+     "rows": [
+      [
+       "εγώ",
+       "είμαι",
+       {
+        "tr": "(ben) …-im",
+        "en": "I am"
+       }
+      ],
+      [
+       "εσύ",
+       "είσαι",
+       {
+        "tr": "(sen) …-sin",
+        "en": "you are"
+       }
+      ],
+      [
+       "αυτός / αυτή / αυτό",
+       "είναι",
+       {
+        "tr": "(o) …",
+        "en": "he / she / it is"
+       }
+      ],
+      [
+       "εμείς",
+       "είμαστε",
+       {
+        "tr": "(biz) …-iz",
+        "en": "we are"
+       }
+      ],
+      [
+       "εσείς",
+       "είστε",
+       {
+        "tr": "(siz) …-siniz",
+        "en": "you are (formal or plural)"
+       }
+      ],
+      [
+       "αυτοί / αυτές / αυτά",
+       "είναι",
+       {
+        "tr": "(onlar) …",
+        "en": "they are"
+       }
+      ]
+     ],
+     "note": {
+      "tr": "*είναι* hem \"o\" hem \"onlar\" için kullanılır; kimin kastedildiğini cümle gösterir.",
+      "en": "*είναι* is both \"he/she/it is\" and \"they are\"; the sentence shows which."
+     }
+    },
+    {
+     "type": "prose",
+     "tr": "Soldaki kelimeler **kişi zamirleri**: *εγώ* (ben), *εσύ* (sen), *αυτός* (o, erkek), *αυτή* (o, kadın), *αυτό* (o, nesne ya da çocuk), *εμείς* (biz), *εσείς* (siz), *αυτοί / αυτές / αυτά* (onlar).\n\nTürkçede olduğu gibi zamir genellikle **söylenmez**; fiil kimin kastedildiğini zaten gösterir: *Είμαι μηχανικός* = *Mühendisim*. Zamiri ancak vurgu için kullanırsın: *Εγώ είμαι φοιτητής* = *Ben öğrenciyim* (ya sen?).",
+     "en": "The words on the left are the **personal pronouns**: *εγώ* (I), *εσύ* (you), *αυτός* (he), *αυτή* (she), *αυτό* (it, also for a child), *εμείς* (we), *εσείς* (you, formal or plural), *αυτοί / αυτές / αυτά* (they).\n\nUnlike English, Greek usually **leaves the pronoun out**, because the verb already shows the person: *Είμαι μηχανικός* = *I'm an engineer*. You add it only for emphasis: *Εγώ είμαι φοιτητής* = *I am a student* (and you?)."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Είμαι λογιστής.",
+       "tr": "Muhasebeciyim.",
+       "en": "I'm an accountant."
+      },
+      {
+       "el": "Είσαι κι εσύ φοιτητής;",
+       "tr": "Sen de öğrenci misin?",
+       "en": "Are you a student too?",
+       "note": {
+        "tr": "*κι* bir yazım hatası değil: *και* (ve, de) bir ünlüden önce *κι* olur: *κι εσύ* = sen de.",
+        "en": "*κι* is not a typo: *και* (and, too) becomes *κι* before a vowel: *κι εσύ* = you too."
+       }
+      },
+      {
+       "el": "Η Ελένη είναι γιατρός.",
+       "tr": "Eleni doktor.",
+       "en": "Eleni is a doctor.",
+       "note": {
+        "tr": "Türkçede \"doktor\" demek yeter; Yunancada *είναι* şart.",
+        "en": "Greek needs *είναι* here, just like English needs \"is\"."
+       }
+      },
+      {
+       "el": "Ο Νίκος κι εγώ είμαστε από τη Θεσσαλονίκη.",
+       "tr": "Nikos ve ben Selanikliyiz.",
+       "en": "Nikos and I are from Thessaloniki.",
+       "note": {
+        "tr": "Yine *κι* = *και*, çünkü ardından ünlüyle başlayan *εγώ* geliyor.",
+        "en": "*κι* = *και* again, because *εγώ* starts with a vowel."
+       }
+      },
+      {
+       "el": "Κύριε Παππά, εσείς είστε λογιστής;",
+       "tr": "Bay Pappas, siz muhasebeci misiniz?",
+       "en": "Mr Pappas, are you an accountant?",
+       "note": {
+        "tr": "Tek bir kişiye resmî konuşurken fiil çoğuldur, tıpkı Türkçedeki *siz … misiniz* gibi.",
+        "en": "Speaking formally to one person, the verb is still plural (εσείς είστε)."
+       }
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**κι mi, και mi?** İkisi aynı kelime: \"ve\", \"de/da\". Ardından ünlüyle başlayan bir kelime gelirse çoğu zaman kısalıp *κι* olur: *κι εσύ* (sen de), *κι εγώ* (ben de), *ο Νίκος κι εγώ* (Nikos ve ben). Ünsüzden önce hep *και*: *ο Νίκος και ο Μεχμέτ*. İkisi de doğru yazımdır; okurken *ki* diye okunur.",
+     "en": "**κι or και?** They are the same word: \"and\", \"too\". Before a word that starts with a vowel it usually shortens to *κι*: *κι εσύ* (you too), *κι εγώ* (me too), *ο Νίκος κι εγώ* (Nikos and I). Before a consonant it is always *και*: *ο Νίκος και ο Μεχμέτ*. Both spellings are correct; *κι* is read *ki*."
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "Birine seslenmek: Νίκος → Νίκο!",
+    "en": "Calling someone: Νίκος → Νίκο!"
+   },
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Birine **seslenirken** erkek isimlerinin sonu değişir ve önündeki *ο* düşer. Buna **hitap hâli** denir.\n\nAdlarda: **-ος → -ο** (*Νίκο, Γιώργο*), **-ας → -α**, **-ης → -η**. Ad olmayan -ος kelimeleri ise çoğunlukla **-ε** alır: **κύριε**, *φίλε*, *γιατρέ*.\n\nKadın isimleri değişmez; yalnızca *η* düşer. Yabancı isimler de değişmez: *Μεχμέτ*, *Αϊσέ*.",
+     "en": "When you **call** someone, the end of a man's name changes and the *ο* in front of it drops. This is the **vocative**.\n\nIn first names: **-ος → -ο** (*Νίκο, Γιώργο*), **-ας → -α**, **-ης → -η**. Ordinary -ος words mostly take **-ε** instead: **κύριε**, *φίλε*, *γιατρέ*.\n\nWomen's names do not change; only the *η* drops. Foreign names do not change either: *Μεχμέτ*, *Αϊσέ*."
+    },
+    {
+     "type": "table",
+     "caption": {
+      "tr": "Söz ederken → seslenirken",
+      "en": "Talking about someone → calling them"
+     },
+     "head": [
+      "ο / η …",
+      "…!"
+     ],
+     "rows": [
+      [
+       "ο Νίκος",
+       "Νίκο!"
+      ],
+      [
+       "ο Γιώργος",
+       "Γιώργο!"
+      ],
+      [
+       "ο Κώστας",
+       "Κώστα!"
+      ],
+      [
+       "ο Γιάννης",
+       "Γιάννη!"
+      ],
+      [
+       "ο κύριος Παππάς",
+       "κύριε Παππά!"
+      ],
+      [
+       "η Ελένη",
+       "Ελένη!"
+      ],
+      [
+       "η κυρία Γιλμάζ",
+       "κυρία Γιλμάζ!"
+      ]
+     ],
+     "note": {
+      "tr": "Bazı uzun isimler -ε alır (*Αλέξανδρος → Αλέξανδρε*); bunları karşına çıktıkça öğren.",
+      "en": "Some longer names take -ε (*Αλέξανδρος → Αλέξανδρε*); learn those as you meet them."
+     }
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "el": "Γεια σου, Γιάννη!",
+       "tr": "Merhaba Yannis!",
+       "en": "Hi, Giannis!"
+      },
+      {
+       "el": "Κώστα, από δω η Μαρία.",
+       "tr": "Kostas, bu Maria.",
+       "en": "Kostas, this is Maria."
+      },
+      {
+       "el": "Ο Κώστας είναι λογιστής.",
+       "tr": "Kostas muhasebeci.",
+       "en": "Kostas is an accountant.",
+       "note": {
+        "tr": "Burada Kostas'a seslenmiyoruz, ondan söz ediyoruz; bu yüzden *ο Κώστας*.",
+        "en": "Here we talk about Kostas, we do not call him, so: *ο Κώστας*."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "grammar",
+   "title": {
+    "tr": "0'dan 10'a",
+    "en": "From 0 to 10"
+   },
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "0–5",
+      "6–10"
+     ],
+     "rows": [
+      [
+       "0 μηδέν",
+       "6 έξι"
+      ],
+      [
+       "1 ένα",
+       "7 εφτά (επτά)"
+      ],
+      [
+       "2 δύο",
+       "8 οχτώ (οκτώ)"
+      ],
+      [
+       "3 τρία",
+       "9 εννιά (εννέα)"
+      ],
+      [
+       "4 τέσσερα",
+       "10 δέκα"
+      ],
+      [
+       "5 πέντε",
+       ""
+      ]
+     ],
+     "note": {
+      "tr": "Parantez içindekiler aynı sayının resmî ya da yazı dilindeki biçimi; ikisi de doğru. Konuşurken çoğu kişi *εφτά, οχτώ, εννιά* der.",
+      "en": "The forms in brackets are the formal or written versions of the same number; both are correct. In speech most people say *εφτά, οχτώ, εννιά*."
+     }
+    }
+   ]
+  },
+  {
+   "kind": "words",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Bu dersin kelimeleri: meslekler, tanıştırma kalıpları ve sayılar. Bölümü bitirince oturumlarına gelecekler.",
+     "en": "The words of this lesson: jobs, phrases for introducing people, and numbers. They come into your sessions once you finish the chapter."
+    },
+    {
+     "type": "words",
+     "items": [
+      "oknos-book/ch02-eimai",
+      "oknos-book/ch02-ti-douleia",
+      "oknos-book/ch02-ti-douleia-formal",
+      "oknos-book/ch02-apo-do",
+      "oknos-book/ch02-kyrios",
+      "oknos-book/ch02-filos",
+      "oknos-book/ch02-oraia",
+      "oknos-book/ch02-foititis",
+      "oknos-book/v-michanikos",
+      "oknos-book/v-giatros",
+      "oknos-book/v-logistis",
+      "oknos-book/v-daskalos",
+      "oknos-book/v-dikigoros",
+      "oknos-book/v-servitoros",
+      "oknos-book/ch02-ypallilos",
+      "oknos-book/ch02-num-0",
+      "oknos-book/ch02-num-1",
+      "oknos-book/ch02-num-2",
+      "oknos-book/ch02-num-3",
+      "oknos-book/ch02-num-4",
+      "oknos-book/ch02-num-5",
+      "oknos-book/ch02-num-6",
+      "oknos-book/ch02-num-7",
+      "oknos-book/ch02-num-8",
+      "oknos-book/ch02-num-9",
+      "oknos-book/ch02-num-10"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tips",
+   "blocks": [
+    {
+     "type": "tip",
+     "kind": "tr_bridge",
+     "tr": "Türkçe gibi Yunanca da zamiri atar: *Mühendisim* = *Είμαι μηχανικός*. İngilizce konuşanlar burada zorlanır, sen zorlanmazsın. *Εγώ*'yu yalnızca vurgu istediğinde ekle.",
+     "en": "Greek drops the pronoun, like Turkish and unlike English: *Είμαι μηχανικός* is a complete sentence. Add *Εγώ* only when you want to stress \"I\"."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Öğrenci ama hangisi?** *φοιτητής / φοιτήτρια* üniversite öğrencisi demek. Okul öğrencisi [[μαθητής]] / [[μαθήτρια]]. Türkçedeki tek \"öğrenci\" kelimesi Yunancada ikiye ayrılır.",
+     "en": "**Which kind of student?** *φοιτητής / φοιτήτρια* is a university student. A school pupil is [[μαθητής]] / [[μαθήτρια]]."
+    },
+    {
+     "type": "tip",
+     "kind": "mistake",
+     "tr": "**Seslenirken artikel yok.** *Ο Νίκο!* yanlış; doğrusu *Νίκο!* Ondan söz ederken ise artikel gelir: *Ο Νίκος είναι φοιτητής.*",
+     "en": "**No article when calling someone.** Not *Ο Νίκο!* but *Νίκο!* When you talk about him, the article comes back: *Ο Νίκος είναι φοιτητής.*"
+    },
+    {
+     "type": "tip",
+     "kind": "exam",
+     "exam_task": "b1keg.speaking.warmup",
+     "tr": "Sözlü sınavın ısınma sorularında neredeyse her zaman *Τι δουλειά κάνετε;* sorulur. Hazır bir cevabın olsun: **Είμαι …** (işin). Çalışmıyorsan: [[Αυτή τη στιγμή δε δουλεύω]] (\"Şu an çalışmıyorum\").",
+     "en": "In the speaking warm-up you will almost always hear *Τι δουλειά κάνετε;*. Have your answer ready: **Είμαι …** (your job). If you are not working: [[Αυτή τη στιγμή δε δουλεύω]] (\"I'm not working at the moment\")."
+    }
+   ]
+  },
+  {
+   "kind": "try",
+   "blocks": [
+    {
+     "type": "prose",
+     "tr": "Şimdi sen dene: bir *είμαι* biçimi, iki hitap ve sayılar.",
+     "en": "Now you try: one form of *είμαι*, two people to call, and the numbers."
+    },
+    {
+     "type": "check",
+     "items": [
+      "oknos-book/ch02-try-eimaste",
+      "oknos-book/ch02-try-vocative",
+      "oknos-book/ch02-try-kyrie",
+      "oknos-book/ch02-try-numbers"
+     ]
+    }
+   ]
+  }
+ ]
+}

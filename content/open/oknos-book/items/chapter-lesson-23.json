@@ -1,0 +1,960 @@
+[
+ {
+  "id": "ch23-ptychio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το πτυχίο",
+  "lemma": "πτυχίο",
+  "pos": "noun",
+  "en": "degree; diploma",
+  "tr": "diploma; üniversite diploması",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "gender": "n",
+  "example": {
+   "el": "Έχω πτυχίο από το πανεπιστήμιο.",
+   "en": "I have a degree from the university.",
+   "tr": "Üniversiteden diplomam var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-seminario",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το σεμινάριο",
+  "lemma": "σεμινάριο",
+  "pos": "noun",
+  "en": "seminar; short course",
+  "tr": "seminer; kısa kurs",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "gender": "n",
+  "example": {
+   "el": "Το σεμινάριο αρχίζει τη Δευτέρα.",
+   "en": "The seminar starts on Monday.",
+   "tr": "Seminer Pazartesi başlıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-orario",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το ωράριο",
+  "lemma": "ωράριο",
+  "pos": "noun",
+  "en": "working hours; timetable",
+  "tr": "çalışma saatleri; saat çizelgesi",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "gender": "n",
+  "example": {
+   "el": "Το ωράριο είναι οκτώ ώρες τη μέρα.",
+   "en": "The working hours are eight hours a day.",
+   "tr": "Çalışma saatleri günde sekiz saat."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-spoudes",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "οι σπουδές",
+  "lemma": "σπουδές",
+  "pos": "noun",
+  "en": "studies; education (plural)",
+  "tr": "öğrenim; tahsil (çoğul)",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "gender": "f",
+  "example": {
+   "el": "Μετά τις σπουδές θα ψάξω δουλειά.",
+   "en": "After my studies I will look for a job.",
+   "tr": "Öğrenimimden sonra iş arayacağım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-synthikes",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "οι συνθήκες",
+  "lemma": "συνθήκες",
+  "pos": "noun",
+  "en": "conditions (οι συνθήκες εργασίας: working conditions)",
+  "tr": "koşullar (οι συνθήκες εργασίας: çalışma koşulları)",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "gender": "f",
+  "example": {
+   "el": "Οι συνθήκες στο γραφείο είναι καλές.",
+   "en": "The conditions in the office are good.",
+   "tr": "Ofisteki koşullar iyi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-teleiono",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τελειώνω",
+  "lemma": "τελειώνω",
+  "pos": "verb",
+  "en": "finish; end",
+  "tr": "bitirmek; bitmek",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "example": {
+   "el": "Τελειώνω τη δουλειά στις πέντε.",
+   "en": "I finish work at five.",
+   "tr": "İşi beşte bitiriyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-kalyteros",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "καλύτερος / καλύτερη / καλύτερο",
+  "lemma": "καλύτερος",
+  "pos": "adj",
+  "en": "better; the best (with the article)",
+  "tr": "daha iyi; en iyi (artikelle)",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "example": {
+   "el": "Το ωράριο είναι καλύτερο στη δεύτερη δουλειά.",
+   "en": "The hours are better in the second job.",
+   "tr": "Saatler ikinci işte daha iyi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-megalyteros",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μεγαλύτερος / μεγαλύτερη / μεγαλύτερο",
+  "lemma": "μεγαλύτερος",
+  "pos": "adj",
+  "en": "bigger; older (of people)",
+  "tr": "daha büyük; yaşça büyük",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "example": {
+   "el": "Ο αδελφός μου είναι μεγαλύτερος από την αδελφή μου.",
+   "en": "My brother is older than my sister.",
+   "tr": "Erkek kardeşim kız kardeşimden büyük."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-mikroteros",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μικρότερος / μικρότερη / μικρότερο",
+  "lemma": "μικρότερος",
+  "pos": "adj",
+  "en": "smaller; younger (of people)",
+  "tr": "daha küçük; yaşça küçük",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "example": {
+   "el": "Η αδελφή μου είναι μικρότερη από τον αδελφό μου.",
+   "en": "My sister is younger than my brother.",
+   "tr": "Kız kardeşim erkek kardeşimden küçük."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-gia-na",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "για να",
+  "lemma": "για να",
+  "pos": "conj",
+  "en": "in order to",
+  "tr": "-mek için",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "example": {
+   "el": "Δουλεύω για να ζήσω.",
+   "en": "I work in order to live.",
+   "tr": "Yaşamak için çalışıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-giati",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "γιατί",
+  "lemma": "γιατί",
+  "pos": "conj",
+  "en": "because; why",
+  "tr": "çünkü; neden",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "example": {
+   "el": "Δεν έρχομαι, γιατί έχω δουλειά.",
+   "en": "I am not coming, because I have work.",
+   "tr": "Gelmiyorum, çünkü işim var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-epeidi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "επειδή",
+  "lemma": "επειδή",
+  "pos": "conj",
+  "en": "because",
+  "tr": "çünkü",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "example": {
+   "el": "Επειδή αργώ, παίρνω ταξί.",
+   "en": "Because I am late, I take a taxi.",
+   "tr": "Geç kaldığım için taksiye biniyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-an-kai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "αν και",
+  "lemma": "αν και",
+  "pos": "conj",
+  "en": "although",
+  "tr": "-e rağmen",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "example": {
+   "el": "Αν και κάνει κρύο, πάμε στη θάλασσα.",
+   "en": "Although it is cold, we go to the sea.",
+   "tr": "Hava soğuk olmasına rağmen denize gidiyoruz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-parolo-pou",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "παρόλο που",
+  "lemma": "παρόλο που",
+  "pos": "conj",
+  "en": "even though; despite the fact that",
+  "tr": "-diği hâlde; -mesine rağmen",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "example": {
+   "el": "Παρόλο που η δουλειά είναι μακριά, ο μισθός είναι καλός.",
+   "en": "Even though the job is far away, the salary is good.",
+   "tr": "İş uzak olmasına rağmen maaş iyi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-pio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πιο",
+  "lemma": "πιο",
+  "pos": "adv",
+  "en": "more (πιο … = -er; ο πιο … = the most)",
+  "tr": "daha (πιο … = daha …; ο πιο … = en …)",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "example": {
+   "el": "Το γραφείο είναι πιο κοντά.",
+   "en": "The office is closer.",
+   "tr": "Ofis daha yakın."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-q-why",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Γιατί θα πάρει η Αϊσέ τη δεύτερη δουλειά;",
+   "en": "Why will Ayşe take the second job?",
+   "tr": "Ayşe neden ikinci işi alacak?"
+  },
+  "options": [
+   "Επειδή είναι κοντά στο σπίτι και το ωράριο είναι καλύτερο.",
+   "Επειδή ο μισθός είναι καλύτερος.",
+   "Επειδή η εταιρεία είναι μεγάλη."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Τη δεύτερη, επειδή είναι κοντά στο σπίτι και το ωράριο είναι καλύτερο.» The salary of the second job is actually worse.",
+   "tr": "«Τη δεύτερη, επειδή είναι κοντά στο σπίτι και το ωράριο είναι καλύτερο.» İkinci işin maaşı aslında daha kötü."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η πρώτη εταιρεία έχει καλύτερο μισθό.",
+    "en": "The first company has the better salary.",
+    "tr": "Birinci şirketin maaşı daha iyi.",
+    "answer": true
+   },
+   {
+    "el": "Η δεύτερη δουλειά έχει εννιά ώρες τη μέρα.",
+    "en": "The second job has nine hours a day.",
+    "tr": "İkinci işte günde dokuz saat var.",
+    "answer": false
+   },
+   {
+    "el": "Η Αϊσέ έχει ρεπό τα Σαββατοκύριακα στη δεύτερη δουλειά.",
+    "en": "In the second job Ayşe has weekends off.",
+    "tr": "İkinci işte Ayşe hafta sonları izinli.",
+    "answer": true
+   },
+   {
+    "el": "Η δεύτερη δουλειά έχει είκοσι πέντε μέρες άδεια.",
+    "en": "The second job has twenty-five days of leave.",
+    "tr": "İkinci işte yirmi beş gün izin var.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "The first company pays better, but its day is nine hours. The second has eight hours, weekends off and twenty-five days of leave.",
+   "tr": "Birinci şirket daha iyi öder ama günü dokuz saat. İkincisinde sekiz saat, hafta sonları izin ve yirmi beş gün yıllık izin var."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-try-gia-na",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "grammar": [
+   "clause.purpose"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Μαθαίνω ελληνικά {1} βρω δουλειά.",
+  "answer": {
+   "1": [
+    "για να"
+   ]
+  },
+  "options": {
+   "1": [
+    "για να",
+    "γιατί",
+    "επειδή"
+   ]
+  },
+  "translation": {
+   "en": "I learn Greek to find a job.",
+   "tr": "Bir iş bulmak için Yunanca öğreniyorum."
+  },
+  "explain": {
+   "en": "A goal takes για να and the once-only form βρω. γιατί and επειδή give a reason and need an ordinary verb (βρίσκω), not βρω.",
+   "tr": "Amaç için για να ve bir kerelik biçim βρω gelir. γιατί ve επειδή neden bildirir ve sıradan bir fiil ister (βρίσκω), βρω değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-try-because",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "rubric": {
+   "el": "Διαλέγω τη σωστή λέξη.",
+   "en": "Choose the right word.",
+   "tr": "Doğru kelimeyi seç."
+  },
+  "prompt": {
+   "el": "— ___ θα πάρεις τη δεύτερη δουλειά; — Επειδή είναι πιο κοντά.",
+   "en": "— ___ will you take the second job? — Because it is closer.",
+   "tr": "— İkinci işi ___ alacaksın? — Çünkü daha yakın."
+  },
+  "options": [
+   "Γιατί",
+   "Επειδή",
+   "Για να"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The question word is Γιατί («why?»). The answer begins with Επειδή («because»). Για να would give a purpose.",
+   "tr": "Soru kelimesi Γιατί («neden?»). Cevap Επειδή («çünkü») ile başlar. Για να amaç bildirirdi."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-try-concession",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "grammar": [
+   "clause.concessive"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "{1} ο μισθός είναι καλύτερος, δε θέλω την πρώτη δουλειά.",
+  "answer": {
+   "1": [
+    "Αν και"
+   ]
+  },
+  "options": {
+   "1": [
+    "Αν και",
+    "Γιατί",
+    "Για να"
+   ]
+  },
+  "translation": {
+   "en": "Although the salary is better, I do not want the first job.",
+   "tr": "Maaş daha iyi olmasına rağmen birinci işi istemiyorum."
+  },
+  "explain": {
+   "en": "The two parts go against each other, so Αν και («although») fits. Γιατί would make the better salary the reason for not wanting the job, and Για να gives a purpose and needs the form used after να.",
+   "tr": "İki parça birbirine ters düşüyor, bu yüzden Αν και («-e rağmen») uyar. Γιατί iyi maaşı işi istememenin nedeni yapardı; Για να ise bir amaç söyler ve να ile kullanılan biçimi ister."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-try-compare",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "grammar": [
+   "adj.comparative",
+   "adv.comparative"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gaps.",
+   "tr": "Boşlukları doldur."
+  },
+  "text": "Ο μισθός στην πρώτη εταιρεία είναι {1} από τον μισθό στη δεύτερη. Το μετρό πάει {2} από το λεωφορείο.",
+  "answer": {
+   "1": [
+    "καλύτερος"
+   ],
+   "2": [
+    "πιο γρήγορα"
+   ]
+  },
+  "options": {
+   "1": [
+    "καλύτερος",
+    "πιο καλύτερος",
+    "καλύτερα"
+   ],
+   "2": [
+    "πιο γρήγορα",
+    "πιο γρήγορος",
+    "γρήγορα"
+   ]
+  },
+  "translation": {
+   "en": "The salary at the first company is better than the salary at the second. The metro goes faster than the bus.",
+   "tr": "Birinci şirketteki maaş ikincisindekinden daha iyi. Metro otobüsten daha hızlı gidiyor."
+  },
+  "explain": {
+   "en": "1: ο μισθός is masculine and comes after είναι, so the adjective καλύτερος. καλύτερα is the adverb, and «πιο καλύτερος» says «more» twice. 2: πάει is a verb, and how something goes is said with an adverb: πιο γρήγορα. πιο γρήγορος is an adjective (it goes with είναι: Το μετρό είναι πιο γρήγορο), and γρήγορα alone does not compare.",
+   "tr": "1: ο μισθός eril ve είναι fiilinden sonra geliyor, bu yüzden sıfat: καλύτερος. καλύτερα zarftır; «πιο καλύτερος» ise «daha»yı iki kez söyler. 2: πάει bir fiil; nasıl gittiğini zarf söyler: πιο γρήγορα. πιο γρήγορος bir sıfattır (είναι ile kullanılır: Το μετρό είναι πιο γρήγορο); tek başına γρήγορα ise karşılaştırma yapmaz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-try-super",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω τα κενά με τον σωστό τύπο.",
+   "en": "Fill the gaps with the right article.",
+   "tr": "Boşlukları doğru artikelle doldur."
+  },
+  "text": "Στην Αθήνα, αυτός είναι {1} πιο ακριβός δρόμος, αυτή είναι {2} πιο ακριβή περιοχή και αυτό είναι {3} πιο ακριβό μαγαζί.",
+  "bank": [
+   "ο",
+   "η",
+   "το"
+  ],
+  "answer": {
+   "1": "ο",
+   "2": "η",
+   "3": "το"
+  },
+  "translation": {
+   "en": "In Athens, this is the most expensive street, this is the most expensive area and this is the most expensive shop.",
+   "tr": "Atina'da bu en pahalı cadde, bu en pahalı semt ve bu en pahalı dükkân."
+  },
+  "explain": {
+   "en": "The superlative has the article, and it agrees with the noun: ο δρόμος (m), η περιοχή (f), το μαγαζί (n).",
+   "tr": "En üstünlükte artikel var ve isimle uyar: ο δρόμος (eril), η περιοχή (dişil), το μαγαζί (nötr)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-p-purpose",
+  "ask": {
+   "en": "Which sentence is correct? (I work in order to live.)",
+   "tr": "Hangi cümle doğru? (Yaşamak için çalışıyorum.)"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "rubric": {
+   "el": "Διαλέγω τη σωστή πρόταση.",
+   "en": "Choose the correct sentence.",
+   "tr": "Doğru cümleyi seç."
+  },
+  "prompt": {
+   "el": "Ποια πρόταση είναι σωστή;",
+   "en": "Which sentence is correct? (I work in order to live.)",
+   "tr": "Hangi cümle doğru? (Yaşamak için çalışıyorum.)"
+  },
+  "options": [
+   "Δουλεύω για να ζήσω.",
+   "Δουλεύω για ζήσω.",
+   "Δουλεύω να για ζήσω."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The purpose needs the two words together, για να, before the verb.",
+   "tr": "Amaç için iki kelime birlikte gelir, για να, fiilden önce."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-p-reason",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "rubric": {
+   "el": "Διαλέγω τη σωστή λέξη.",
+   "en": "Choose the right word.",
+   "tr": "Doğru kelimeyi seç."
+  },
+  "prompt": {
+   "el": "— Γιατί δεν έρχεσαι στη γιορτή; — ___ έχω δουλειά.",
+   "en": "— Why aren't you coming to the celebration? — ___ I have work.",
+   "tr": "— Neden kutlamaya gelmiyorsun? — ___ işim var."
+  },
+  "options": [
+   "Επειδή",
+   "Για να",
+   "Αν και"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The answer to «why?» gives a reason: Επειδή. Για να gives a purpose («in order to have work»), and Αν και («although») is the opposite of a reason.",
+   "tr": "«Neden?» sorusunun cevabı bir nedendir: Επειδή. Για να bir amaç söyler («iş sahibi olmak için»), Αν και («-e rağmen») ise nedenin tersidir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-p-concession",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω τα κενά. Μία λέξη περισσεύει.",
+   "en": "Fill the gaps. One word is not needed.",
+   "tr": "Boşlukları doldur. Bir kelime fazla."
+  },
+  "text": "Η δουλειά είναι κοντά στο σπίτι, {1} ο μισθός είναι χειρότερος. {2} ο μισθός είναι χειρότερος, θα την πάρω.",
+  "bank": [
+   "αλλά",
+   "Αν και",
+   "Επειδή"
+  ],
+  "answer": {
+   "1": "αλλά",
+   "2": "Αν και"
+  },
+  "translation": {
+   "en": "The job is near home, but the salary is worse. Although the salary is worse, I will take it.",
+   "tr": "İş eve yakın, ama maaş daha kötü. Maaş daha kötü olmasına rağmen alacağım."
+  },
+  "explain": {
+   "en": "Gap 1 joins two main clauses: αλλά. Gap 2 opens a clause in front of the main one, and its fact goes against the decision: Αν και. Επειδή would make the worse salary the reason for taking the job.",
+   "tr": "1. boşluk iki ana cümleyi bağlar: αλλά. 2. boşluk ana cümleden önce gelen bir yan cümle açar ve bu bilgi karara ters düşer: Αν και. Επειδή, kötü maaşı işi almanın nedeni yapardı."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-p-adverb",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "rubric": {
+   "el": "Διαλέγω τη σωστή λέξη.",
+   "en": "Choose the right word.",
+   "tr": "Doğru kelimeyi seç."
+  },
+  "prompt": {
+   "el": "Η Ελένη γράφει ___ από τον αδελφό της.",
+   "en": "Eleni writes ___ than her brother.",
+   "tr": "Eleni erkek kardeşinden ___ yazıyor."
+  },
+  "options": [
+   "καλύτερα",
+   "καλύτερη",
+   "πιο καλύτερα"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "γράφει is a verb, so it takes the adverb καλύτερα (from καλά). καλύτερη is the feminine adjective: Eleni is a woman, but nothing here is described by an adjective. πιο καλύτερα says «more» twice.",
+   "tr": "γράφει bir fiil, bu yüzden zarf gelir: καλύτερα (καλά kelimesinden). καλύτερη dişil sıfattır: Eleni kadın, ama burada sıfatla anlatılan bir şey yok. πιο καλύτερα ise «daha»yı iki kez söyler."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-p-super",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "rubric": {
+   "el": "Διαλέγω τη σωστή λέξη.",
+   "en": "Choose the right words.",
+   "tr": "Doğru kelimeleri seç."
+  },
+  "prompt": {
+   "el": "Η Αθήνα είναι ___ πόλη της Ελλάδας.",
+   "en": "Athens is ___ city in Greece.",
+   "tr": "Atina Yunanistan'ın ___ şehri."
+  },
+  "options": [
+   "η πιο μεγάλη",
+   "πιο μεγάλη",
+   "η πιο μεγάλος"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "The superlative needs the article, and it agrees with η πόλη (f): η πιο μεγάλη. Without the article, πιο μεγάλη means «bigger» and would need από.",
+   "tr": "En üstünlükte artikel gerekir ve η πόλη (dişil) ile uyar: η πιο μεγάλη. Artikelsiz πιο μεγάλη «daha büyük» demektir ve από ister."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-p-cat",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε λέξη στη σωστή ομάδα.",
+   "en": "Sort each comparative: πιο + a word, or one word.",
+   "tr": "Her karşılaştırmayı ayır: πιο + kelime ya da tek kelime."
+  },
+  "categories": [
+   "πιο + …",
+   "μία λέξη"
+  ],
+  "items": [
+   "πιο ακριβός",
+   "καλύτερος",
+   "πιο κοντά",
+   "χειρότερος",
+   "πιο γρήγορα",
+   "μεγαλύτερος"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "explain": {
+   "en": "πιο + an adjective or adverb works with almost every word. Four common adjectives also have a one-word form to learn as a word: καλύτερος, χειρότερος, μεγαλύτερος, μικρότερος.",
+   "tr": "πιο + sıfat ya da zarf neredeyse her kelimeyle olur. Dört sık sıfatın ayrıca kelime olarak öğrenilecek tek kelimelik biçimi var: καλύτερος, χειρότερος, μεγαλύτερος, μικρότερος."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-p-match-adj",
+  "type": "match",
+  "skill": "vocab",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω με τον συγκριτικό.",
+   "en": "Match each adjective with its comparative.",
+   "tr": "Her sıfatı karşılaştırma biçimiyle eşleştir."
+  },
+  "left": [
+   "καλός",
+   "κακός",
+   "μεγάλος",
+   "μικρός"
+  ],
+  "right": [
+   "μικρότερος",
+   "καλύτερος",
+   "μεγαλύτερος",
+   "χειρότερος"
+  ],
+  "answer": [
+   1,
+   3,
+   2,
+   0
+  ],
+  "explain": {
+   "en": "καλός → καλύτερος, κακός → χειρότερος, μεγάλος → μεγαλύτερος, μικρός → μικρότερος.",
+   "tr": "καλός → καλύτερος, κακός → χειρότερος, μεγάλος → μεγαλύτερος, μικρός → μικρότερος."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch23-p-vocab-gap",
+  "type": "gap_bank",
+  "skill": "vocab",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-23"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω τα κενά. Μία λέξη περισσεύει.",
+   "en": "Fill the gaps. One word is not needed.",
+   "tr": "Boşlukları doldur. Bir kelime fazla."
+  },
+  "text": "Στη δουλειά μου παίρνω καλό {1}, αλλά το {2} είναι μεγάλο: εννιά ώρες τη μέρα. Τον Αύγουστο παίρνω είκοσι μέρες {3}.",
+  "bank": [
+   "μισθό",
+   "ωράριο",
+   "άδεια",
+   "συνάδελφο"
+  ],
+  "answer": {
+   "1": "μισθό",
+   "2": "ωράριο",
+   "3": "άδεια"
+  },
+  "translation": {
+   "en": "At my job I get a good salary, but the hours are long: nine hours a day. In August I take twenty days of leave.",
+   "tr": "İşimde iyi maaş alıyorum, ama çalışma saatleri uzun: günde dokuz saat. Ağustosta yirmi gün izin alıyorum."
+  },
+  "explain": {
+   "en": "καλό μισθό (a good salary: what you get at work), το ωράριο (the hours: the only neuter word), μέρες άδεια (days of leave). συνάδελφο, «colleague», fits none of the gaps.",
+   "tr": "καλό μισθό (iyi maaş: işte alınan şey), το ωράριο (saatler: tek nötr kelime), μέρες άδεια (izin günleri). συνάδελφο, «iş arkadaşı», hiçbir boşluğa uymaz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-23",
+   "by": "sonnet-draft"
+  }
+ }
+]

@@ -1,0 +1,976 @@
+[
+ {
+  "id": "ch10-taxi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το ταξί",
+  "pos": "noun",
+  "en": "taxi",
+  "tr": "taksi",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "lemma": "ταξί",
+  "gender": "n",
+  "example": {
+   "el": "Πάω στον σταθμό με το ταξί.",
+   "en": "I go to the station by taxi.",
+   "tr": "İstasyona taksiyle gidiyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-ora",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "η ώρα",
+  "pos": "noun",
+  "en": "hour; time (of day)",
+  "tr": "saat; vakit",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "lemma": "ώρα",
+  "gender": "f",
+  "example": {
+   "el": "Τι ώρα είναι;",
+   "en": "What time is it?",
+   "tr": "Saat kaç?"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-tetarto",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το τέταρτο",
+  "pos": "noun",
+  "en": "quarter (of an hour)",
+  "tr": "çeyrek",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "lemma": "τέταρτο",
+  "gender": "n",
+  "example": {
+   "el": "Είναι πέντε και τέταρτο.",
+   "en": "It is a quarter past five.",
+   "tr": "Saat beşi çeyrek geçiyor (5:15)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-misi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "και μισή",
+  "pos": "phrase",
+  "en": "half past (lit. «and a half»)",
+  "tr": "buçuk",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "example": {
+   "el": "Είναι έξι και μισή.",
+   "en": "It is half past six.",
+   "tr": "Saat altı buçuk."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-para",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "παρά τέταρτο",
+  "pos": "phrase",
+  "en": "a quarter to (lit. «minus a quarter»)",
+  "tr": "(saat) …-e çeyrek var",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "example": {
+   "el": "Είναι εφτά παρά τέταρτο.",
+   "en": "It is a quarter to seven (6:45).",
+   "tr": "Yediye çeyrek var (6:45)."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-fthinoporo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "το φθινόπωρο",
+  "pos": "noun",
+  "en": "autumn",
+  "tr": "sonbahar",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "lemma": "φθινόπωρο",
+  "gender": "n",
+  "example": {
+   "el": "Το φθινόπωρο βρέχει.",
+   "en": "In autumn it rains.",
+   "tr": "Sonbaharda yağmur yağar."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-vrechei",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "βρέχει",
+  "pos": "verb",
+  "en": "it rains; it is raining",
+  "tr": "yağmur yağıyor",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "example": {
+   "el": "Σήμερα βρέχει στην Αθήνα.",
+   "en": "Today it is raining in Athens.",
+   "tr": "Bugün Atina'da yağmur yağıyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-zesti",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "κάνει ζέστη",
+  "pos": "phrase",
+  "en": "it is hot (weather)",
+  "tr": "hava sıcak",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "example": {
+   "el": "Το καλοκαίρι κάνει ζέστη.",
+   "en": "In summer it is hot.",
+   "tr": "Yazın hava sıcak olur."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-krio",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "κάνει κρύο",
+  "pos": "phrase",
+  "en": "it is cold (weather)",
+  "tr": "hava soğuk",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "example": {
+   "el": "Τον Ιανουάριο κάνει κρύο.",
+   "en": "In January it is cold.",
+   "tr": "Ocakta hava soğuk olur."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-feygo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "φεύγω",
+  "pos": "verb",
+  "en": "leave; go away",
+  "tr": "ayrılmak; çıkıp gitmek",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "lemma": "φεύγω",
+  "example": {
+   "el": "Φεύγω από το σπίτι στις οχτώ.",
+   "en": "I leave the house at eight.",
+   "tr": "Saat sekizde evden çıkıyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-erchomai",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A1",
+  "el": "έρχομαι / έρχεσαι",
+  "pos": "phrase",
+  "en": "I come / you come",
+  "tr": "(ben) geliyorum / (sen) geliyorsun",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "example": {
+   "el": "Έρχομαι από τη δουλειά.",
+   "en": "I am coming from work.",
+   "tr": "İşten geliyorum."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-q-time",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Η Αϊσέ: Φεύγω από το σπίτι για την Ομόνοια …",
+   "en": "Finish Ayşe's sentence from the phone call.",
+   "tr": "Ayşe'nin telefon konuşmasındaki cümlesini tamamla."
+  },
+  "options": [
+   "στις έντεκα παρά τέταρτο.",
+   "στις έντεκα και μισή.",
+   "στις έντεκα και τέταρτο."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "She leaves at «έντεκα παρά τέταρτο» (10:45). «Έντεκα και μισή» (11:30) is when she gets to Piraeus; «έντεκα και τέταρτο» would be 11:15.",
+   "tr": "«Έντεκα παρά τέταρτο» (10:45) diyor. «Έντεκα και μισή» (11:30) Pire'ye vardığı saat; «έντεκα και τέταρτο» 11:15 olurdu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-q-true-false",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Η Αϊσέ: Το Σάββατο έρχομαι στον Πειραιά.",
+    "en": "Ayşe: On Saturday I am coming to Piraeus.",
+    "tr": "Ayşe: Cumartesi Pire'ye geliyorum.",
+    "answer": true
+   },
+   {
+    "el": "Η Ελένη: Σήμερα κάνει ζέστη.",
+    "en": "Eleni: Today it is hot.",
+    "tr": "Eleni: Bugün hava sıcak.",
+    "answer": false
+   },
+   {
+    "el": "Η Αϊσέ: Την Κυριακή είμαι στο πάρκο.",
+    "en": "Ayşe: On Sunday I am in the park.",
+    "tr": "Ayşe: Pazar günü parktayım.",
+    "answer": false
+   }
+  ],
+  "explain": {
+   "en": "Ayşe writes «Το Σάββατο έρχομαι στον Πειραιά». Eleni says «Σήμερα βρέχει»: the heat is for Saturday. On Sunday Ayşe works from eight until six, so she is not in the park.",
+   "tr": "Ayşe «Το Σάββατο έρχομαι στον Πειραιά» diye yazıyor. Eleni «Σήμερα βρέχει» diyor: sıcak hava cumartesi için. Pazar günü Ayşe sekizden altıya kadar çalışıyor, yani parkta değil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-try-me",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Πάω στον Πειραιά {1} το μετρό.",
+  "bank": [
+   "με",
+   "από",
+   "για"
+  ],
+  "answer": {
+   "1": "με"
+  },
+  "translation": {
+   "en": "I go to Piraeus by metro.",
+   "tr": "Pire'ye metroyla gidiyorum."
+  },
+  "explain": {
+   "en": "«Με» gives the means of transport: με το μετρό. «Από» is «from» and «για» is «for, bound for», so neither fits.",
+   "tr": "«Με» taşıtı söyler: με το μετρό. «Από» «-den», «για» «-e (gitmek üzere)» demek; ikisi de burada uymaz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-try-clock",
+  "ask": {
+   "en": "The film is at 8:45. Which is right?",
+   "tr": "Film 8:45'te. Hangisi doğru?"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Η ταινία είναι … (8:45)",
+   "en": "The film is at 8:45. Which is right?",
+   "tr": "Film 8:45'te. Hangisi doğru?"
+  },
+  "options": [
+   "στις οχτώ και τέταρτο.",
+   "στις εννιά παρά τέταρτο.",
+   "στις εννιά και τέταρτο."
+  ],
+  "answer": 1,
+  "explain": {
+   "en": "8:45 is a quarter to nine: «εννιά παρά τέταρτο». «Οχτώ και τέταρτο» is 8:15 and «εννιά και τέταρτο» is 9:15.",
+   "tr": "8:45 dokuza çeyrek var demektir: «εννιά παρά τέταρτο». «Οχτώ και τέταρτο» 8:15, «εννιά και τέταρτο» 9:15."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-try-eida",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Χθες (εγώ) {1} τον Νίκο στο μετρό.",
+  "answer": {
+   "1": [
+    "είδα"
+   ]
+  },
+  "options": {
+   "1": [
+    "είδα",
+    "είδες",
+    "θα δω"
+   ]
+  },
+  "translation": {
+   "en": "Yesterday I saw Nikos on the metro.",
+   "tr": "Dün metroda Nikos'u gördüm."
+  },
+  "explain": {
+   "en": "«Χθες» = past, «εγώ» = first person: είδα. «Είδες» is «you saw» and «θα δω» is future.",
+   "tr": "«Χθες» geçmiş, «εγώ» birinci kişi: είδα. «Είδες» «sen gördün», «θα δω» gelecek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-try-fygeis",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Αύριο (εσύ) {1} από το σπίτι στις εφτά.",
+  "answer": {
+   "1": [
+    "θα φύγεις"
+   ]
+  },
+  "options": {
+   "1": [
+    "θα φύγεις",
+    "έφυγες",
+    "θα φύγω"
+   ]
+  },
+  "translation": {
+   "en": "Tomorrow you will leave the house at seven.",
+   "tr": "Yarın saat yedide evden çıkacaksın."
+  },
+  "explain": {
+   "en": "«Αύριο» = future, «εσύ» = second person: θα φύγεις. «Έφυγες» is past and «θα φύγω» is «I».",
+   "tr": "«Αύριο» gelecek, «εσύ» ikinci kişi: θα φύγεις. «Έφυγες» geçmiş, «θα φύγω» «ben»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-try-kyriaki",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Την Κυριακή {1} πρωί πάω στο πάρκο.",
+  "bank": [
+   "το",
+   "τον",
+   "την"
+  ],
+  "answer": {
+   "1": "το"
+  },
+  "translation": {
+   "en": "On Sunday morning I go to the park.",
+   "tr": "Pazar sabahı parka gidiyorum."
+  },
+  "explain": {
+   "en": "Το πρωί is neuter, and a neuter word does not change in the accusative: την Κυριακή το πρωί. No preposition is needed.",
+   "tr": "Το πρωί nötr; nötr kelime -i hâlinde değişmez: την Κυριακή το πρωί. Edat gerekmez."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-try-month",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "… Αύγουστο πάω στη Σμύρνη.",
+   "en": "In August I go to Smyrna (İzmir).",
+   "tr": "Ağustosta İzmir'e gidiyorum."
+  },
+  "options": [
+   "Τον",
+   "Το",
+   "Την"
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "Ο Αύγουστος is masculine, so «in August» is τον Αύγουστο, with no preposition. The ν of τον never drops, and την is feminine.",
+   "tr": "Ο Αύγουστος eril; «ağustosta» τον Αύγουστο olur, edatsız. τον artikelinin ν'si hiç düşmez; την ise dişil."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-p-qa",
+  "type": "match",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω την ερώτηση με την απάντηση.",
+   "en": "Match each question with its answer.",
+   "tr": "Soruyu cevabıyla eşleştir."
+  },
+  "left": [
+   "Από πού έρχεσαι;",
+   "Με ποιον πας;",
+   "Για πού φεύγεις;",
+   "Με τι πας;"
+  ],
+  "right": [
+   "Από τη δουλειά.",
+   "Με τον Νίκο.",
+   "Για τον Πειραιά.",
+   "Με το λεωφορείο."
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  },
+  "explain": {
+   "en": "Each answer repeats the preposition of its question: από πού → από τη δουλειά, με ποιον → με τον Νίκο, για πού → για τον Πειραιά, με τι → με το λεωφορείο (a person with ποιον, a means with τι).",
+   "tr": "Her cevap sorunun edatını tekrarlar: από πού → από τη δουλειά, με ποιον → με τον Νίκο, για πού → για τον Πειραιά, με τι → με το λεωφορείο (kişi için ποιον, araç için τι)."
+  }
+ },
+ {
+  "id": "ch10-p-time-630",
+  "ask": {
+   "en": "It is 6:30. What do you say?",
+   "tr": "Saat 6:30. Ne dersin?"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Τι ώρα είναι;",
+   "en": "It is 6:30. What do you say?",
+   "tr": "Saat 6:30. Ne dersin?"
+  },
+  "options": [
+   "Είναι έξι και μισή.",
+   "Είναι έξι παρά τέταρτο.",
+   "Είναι εφτά και μισή."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "«Και μισή» adds half an hour: 6:30. «Έξι παρά τέταρτο» is 5:45, and «εφτά και μισή» is 7:30.",
+   "tr": "«Και μισή» yarım saat ekler: 6:30. «Έξι παρά τέταρτο» 5:45, «εφτά και μισή» 7:30."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-p-time-one",
+  "ask": {
+   "en": "The film is at 1:15. Which is right?",
+   "tr": "Film 1:15'te. Hangisi doğru?"
+  },
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Η ταινία είναι …",
+   "en": "The film is at 1:15. Which is right?",
+   "tr": "Film 1:15'te. Hangisi doğru?"
+  },
+  "options": [
+   "στη μία και τέταρτο.",
+   "στις μία και τέταρτο.",
+   "στο μία και τέταρτο."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "One o'clock is singular: «στη μία» (η ώρα is feminine, so στη, not στο). From two o'clock on it is «στις»: στις δύο, στις τρεις.",
+   "tr": "Saat bir tekildir: «στη μία» (η ώρα dişil, bu yüzden στο değil στη). İkiden itibaren «στις»: στις δύο, στις τρεις."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-p-tenses",
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε τύπο στη σωστή ομάδα: «Χθες» ή «Αύριο».",
+   "en": "Sort each form: «Χθες» (yesterday, past) or «Αύριο» (tomorrow, future).",
+   "tr": "Her biçimi ayır: «Χθες» (dün, geçmiş) ya da «Αύριο» (yarın, gelecek)."
+  },
+  "categories": [
+   "Χθες",
+   "Αύριο"
+  ],
+  "items": [
+   "είδα",
+   "θα δω",
+   "έφυγα",
+   "θα φύγω",
+   "είδες",
+   "θα δεις"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "explain": {
+   "en": "The past forms (είδα, έφυγα, είδες) have no «θα». The future forms all begin with «θα».",
+   "tr": "Geçmiş biçimlerde (είδα, έφυγα, είδες) «θα» yok. Gelecek biçimlerin hepsi «θα» ile başlar."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-p-seasons",
+  "ask": {
+   "en": "Put each month in its season: «το καλοκαίρι» (summer) or «ο χειμώνας» (winter).",
+   "tr": "Her ayı mevsimine koy: «το καλοκαίρι» (yaz) ya da «ο χειμώνας» (kış)."
+  },
+  "type": "categorise",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε μήνα στην εποχή του.",
+   "en": "Put each month in its season: «το καλοκαίρι» (summer) or «ο χειμώνας» (winter).",
+   "tr": "Her ayı mevsimine koy: «το καλοκαίρι» (yaz) ya da «ο χειμώνας» (kış)."
+  },
+  "categories": [
+   "το καλοκαίρι",
+   "ο χειμώνας"
+  ],
+  "items": [
+   "Ιούνιος",
+   "Ιανουάριος",
+   "Αύγουστος",
+   "Δεκέμβριος",
+   "Ιούλιος",
+   "Φεβρουάριος"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "explain": {
+   "en": "Summer: June, July, August. Winter: December, January, February.",
+   "tr": "Yaz: Haziran, Temmuz, Ağustos. Kış: Aralık, Ocak, Şubat."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-p-mechri",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Το μάθημα είναι από τις έξι {1} τις οχτώ.",
+  "bank": [
+   "μέχρι",
+   "με",
+   "για"
+  ],
+  "answer": {
+   "1": "μέχρι"
+  },
+  "translation": {
+   "en": "The lesson is from six until eight.",
+   "tr": "Ders altıdan sekize kadar."
+  },
+  "explain": {
+   "en": "«Από … μέχρι …» is «from … until …». «Με» and «για» do not give an end point.",
+   "tr": "«Από … μέχρι …» «…-den … -e kadar» demektir. «Με» ve «για» bitiş noktası vermez."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-p-gia",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "— Για πού φεύγεις; — {1} τον Πειραιά.",
+  "bank": [
+   "Για",
+   "Με",
+   "Από"
+  ],
+  "answer": {
+   "1": "Για"
+  },
+  "translation": {
+   "en": "— Where are you leaving for? — For Piraeus.",
+   "tr": "— Nereye gidiyorsun? — Pire'ye."
+  },
+  "explain": {
+   "en": "The answer repeats the preposition of the question: για πού; → για τον Πειραιά.",
+   "tr": "Cevap sorudaki edatı tekrarlar: για πού; → για τον Πειραιά."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-p-erchesai",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "— Από πού {1}; — Από τη δουλειά.",
+  "answer": {
+   "1": [
+    "έρχεσαι"
+   ]
+  },
+  "options": {
+   "1": [
+    "έρχεσαι",
+    "έρχομαι",
+    "πάω"
+   ]
+  },
+  "translation": {
+   "en": "— Where are you coming from? — From work.",
+   "tr": "— Nereden geliyorsun? — İşten."
+  },
+  "explain": {
+   "en": "The question is about «you», so «έρχεσαι». «Έρχομαι» is «I come».",
+   "tr": "Soru «sen» ile ilgili, bu yüzden «έρχεσαι». «Έρχομαι» «ben geliyorum» demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch10-p-clock-tf",
+  "type": "true_false",
+  "skill": "grammar",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Διαβάζω. Σωστό ή λάθος;",
+   "en": "Read, then answer: true or false?",
+   "tr": "Oku, sonra cevapla: doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Ένα μετρό φεύγει στις πέντε παρά τέταρτο.",
+    "en": "A train leaves at a quarter to five.",
+    "tr": "Bir metro beşe çeyrek kala kalkıyor.",
+    "answer": true
+   },
+   {
+    "el": "Ένα μετρό φεύγει στις έξι και τέταρτο.",
+    "en": "A train leaves at a quarter past six.",
+    "tr": "Bir metro altıyı çeyrek geçe kalkıyor.",
+    "answer": false
+   },
+   {
+    "el": "Ένα μετρό φεύγει στις τρεις και τέταρτο.",
+    "en": "A train leaves at a quarter past three.",
+    "tr": "Bir metro üçü çeyrek geçe kalkıyor.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "«Πέντε παρά τέταρτο» is 4:45 and «τρεις και τέταρτο» is 3:15: both are on the timetable. «Έξι και τέταρτο» is 6:15; the train is at 6:30, «έξι και μισή».",
+   "tr": "«Πέντε παρά τέταρτο» 4:45, «τρεις και τέταρτο» 3:15: ikisi de tarifede var. «Έξι και τέταρτο» 6:15; metro 6:30'da, yani «έξι και μισή»."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  },
+  "stimulus": {
+   "text": "Ομόνοια → Πειραιάς: 3:15 · 4:45 · 6:30"
+  }
+ },
+ {
+  "id": "ch10-p-weather",
+  "type": "true_false",
+  "skill": "vocab",
+  "level": "A1",
+  "topics": [
+   "stage:lesson-10"
+  ],
+  "rubric": {
+   "el": "Διαβάζω. Σωστό ή λάθος;",
+   "en": "Read, then answer: true or false?",
+   "tr": "Oku, sonra cevapla: doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Σήμερα βρέχει.",
+    "en": "Today it is raining.",
+    "tr": "Bugün yağmur yağıyor.",
+    "answer": true
+   },
+   {
+    "el": "Σήμερα κάνει ζέστη.",
+    "en": "Today it is hot.",
+    "tr": "Bugün hava sıcak.",
+    "answer": false
+   },
+   {
+    "el": "Αύριο θα κάνει ζέστη.",
+    "en": "Tomorrow it will be hot.",
+    "tr": "Yarın hava sıcak olacak.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "Today it rains and it is cold (κάνει κρύο), not hot. «Θα κάνει ζέστη» is tomorrow.",
+   "tr": "Bugün yağmur yağıyor ve hava soğuk (κάνει κρύο), sıcak değil. «Θα κάνει ζέστη» yarın için."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-10",
+   "by": "sonnet-draft"
+  },
+  "stimulus": {
+   "text": "Σήμερα στην Αθήνα βρέχει και κάνει κρύο. Αύριο θα κάνει ζέστη."
+  }
+ }
+]

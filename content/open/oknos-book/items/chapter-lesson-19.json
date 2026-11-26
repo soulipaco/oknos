@@ -1,0 +1,1028 @@
+[
+ {
+  "id": "ch19-prochthes",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "προχθές",
+  "pos": "adv",
+  "en": "the day before yesterday",
+  "tr": "evvelsi gün; dünden önceki gün",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "example": {
+   "el": "Προχθές γύρισα από την Πάρο.",
+   "en": "The day before yesterday I came back from Paros.",
+   "tr": "Evvelsi gün Paros'tan döndüm."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-persi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "πέρσι",
+  "pos": "adv",
+  "en": "last year",
+  "tr": "geçen yıl; geçen sene",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "example": {
+   "el": "Πέρσι πήγα στην Κρήτη.",
+   "en": "Last year I went to Crete.",
+   "tr": "Geçen yıl Girit'e gittim."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-perasmenos",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "περασμένος",
+  "pos": "adj",
+  "en": "last; past (την περασμένη εβδομάδα = last week)",
+  "tr": "geçen; geçmiş (την περασμένη εβδομάδα = geçen hafta)",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "lemma": "περασμένος",
+  "example": {
+   "el": "Την περασμένη εβδομάδα έμεινα στην Αθήνα.",
+   "en": "Last week I stayed in Athens.",
+   "tr": "Geçen hafta Atina'da kaldım."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-paralia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η παραλία",
+  "pos": "noun",
+  "en": "beach",
+  "tr": "plaj; kumsal",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "lemma": "παραλία",
+  "gender": "f",
+  "example": {
+   "el": "Πήγαμε στην παραλία.",
+   "en": "We went to the beach.",
+   "tr": "Plaja gittik."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-kolymbi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "το κολύμπι",
+  "pos": "noun",
+  "en": "swimming; a swim",
+  "tr": "yüzme; yüzüş",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "lemma": "κολύμπι",
+  "gender": "n",
+  "example": {
+   "el": "Το πρωί κάναμε κολύμπι στη θάλασσα.",
+   "en": "In the morning we went for a swim in the sea.",
+   "tr": "Sabah denizde yüzdük."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-gyrizo",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "γυρίζω",
+  "pos": "verb",
+  "en": "come back; return; turn (γύρισα)",
+  "tr": "dönmek; geri gelmek (γύρισα)",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "lemma": "γυρίζω",
+  "example": {
+   "el": "Γύρισα χθες από την Πάρο.",
+   "en": "I came back from Paros yesterday.",
+   "tr": "Dün Paros'tan döndüm."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-ftano",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "φτάνω",
+  "pos": "verb",
+  "en": "arrive; reach (έφτασα)",
+  "tr": "varmak; ulaşmak (έφτασα)",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "lemma": "φτάνω",
+  "example": {
+   "el": "Φτάσαμε το μεσημέρι.",
+   "en": "We arrived at midday.",
+   "tr": "Öğlen vardık."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-mazi",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μαζί",
+  "pos": "adv",
+  "en": "together",
+  "tr": "birlikte; beraber",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "example": {
+   "el": "Μείναμε μαζί στο ξενοδοχείο.",
+   "en": "We stayed together at the hotel.",
+   "tr": "Otelde birlikte kaldık."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-meta",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "μετά",
+  "pos": "adv",
+  "en": "afterwards; then",
+  "tr": "sonra; ardından",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "example": {
+   "el": "Φάγαμε και μετά πήγαμε στην παραλία.",
+   "en": "We ate and then we went to the beach.",
+   "tr": "Yemek yedik, sonra plaja gittik."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-mera",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "η μέρα",
+  "pos": "noun",
+  "en": "day",
+  "tr": "gün",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "lemma": "μέρα",
+  "gender": "f",
+  "example": {
+   "el": "Την πρώτη μέρα πήγαμε στην παραλία.",
+   "en": "On the first day we went to the beach.",
+   "tr": "İlk gün plaja gittik."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-teleia",
+  "type": "vocab",
+  "skill": "vocab",
+  "level": "A2",
+  "el": "τέλεια",
+  "pos": "adv",
+  "en": "great; perfectly",
+  "tr": "harika; mükemmel",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "example": {
+   "el": "Πέρασα τέλεια στο νησί!",
+   "en": "I had a great time on the island!",
+   "tr": "Adada harika vakit geçirdim!"
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-q-how",
+  "type": "mcq",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Πώς πήγαν η Αϊσέ και η Ζέινεπ στην Πάρο;",
+   "en": "How did Ayşe and Zeynep get to Paros?",
+   "tr": "Ayşe ile Zeynep Paros'a nasıl gitti?"
+  },
+  "options": [
+   "Με το αεροπλάνο.",
+   "Με το πλοίο.",
+   "Με το τρένο."
+  ],
+  "answer": 1,
+  "explain": {
+   "en": "«Όχι, πήραμε το πλοίο από τον Πειραιά.» Eleni asks about the plane, and Ayşe says no.",
+   "tr": "«Όχι, πήραμε το πλοίο από τον Πειραιά.» Eleni uçağı soruyor, Ayşe hayır diyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-q-tf",
+  "type": "true_false",
+  "skill": "reading",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Σωστό ή λάθος;",
+   "en": "True or false?",
+   "tr": "Doğru mu, yanlış mı?"
+  },
+  "statements": [
+   {
+    "el": "Την Τετάρτη έβρεξε στο νησί.",
+    "en": "On Wednesday it rained on the island.",
+    "tr": "Çarşamba günü adada yağmur yağdı.",
+    "answer": true
+   },
+   {
+    "el": "Η Ελένη πήγε στην Πάρο.",
+    "en": "Eleni went to Paros.",
+    "tr": "Eleni Paros'a gitti.",
+    "answer": false
+   },
+   {
+    "el": "Η Αϊσέ αγόρασε ένα δώρο για τη Μαρία.",
+    "en": "Ayşe bought a present for Maria.",
+    "tr": "Ayşe Maria için bir hediye aldı.",
+    "answer": true
+   }
+  ],
+  "explain": {
+   "en": "Ayşe says «την Τετάρτη έβρεξε» and writes «Αγόρασα ένα καπέλο και ένα δώρο για εσένα». Eleni says «Εγώ έμεινα στην Αθήνα».",
+   "tr": "Ayşe «την Τετάρτη έβρεξε» diyor ve «Αγόρασα ένα καπέλο και ένα δώρο για εσένα» yazıyor. Eleni «Εγώ έμεινα στην Αθήνα» diyor."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-try-write",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.aorist.simple"
+  ],
+  "text": "Χθες το βράδυ εγώ {1} ένα μήνυμα στη Μαρία.",
+  "answer": {
+   "1": [
+    "έγραψα"
+   ]
+  },
+  "options": {
+   "1": [
+    "έγραψα",
+    "γράψα",
+    "έγραψες"
+   ]
+  },
+  "translation": {
+   "en": "Yesterday evening I wrote a message to Maria.",
+   "tr": "Dün akşam Maria'ya bir mesaj yazdım."
+  },
+  "explain": {
+   "en": "γράφω → θα γράψω → έγραψα: with εγώ the ending is -α, and the short form gets έ-. γράψα is not a form. έγραψες is «you wrote».",
+   "tr": "γράφω → θα γράψω → έγραψα: εγώ ile ek -α, kısa biçim έ- alır. γράψα diye bir biçim yok. έγραψες «sen yazdın» demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-try-irreg",
+  "ask": {
+   "en": "Match the verb with its past form (I).",
+   "tr": "Fiili geçmiş biçimiyle (ben) eşleştir."
+  },
+  "type": "match",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the verb with its past form (I).",
+   "tr": "Fiili geçmiş biçimiyle (ben) eşleştir."
+  },
+  "left": [
+   "πάω",
+   "βλέπω",
+   "λέω",
+   "παίρνω",
+   "βρίσκω"
+  ],
+  "right": [
+   "πήγα",
+   "είδα",
+   "είπα",
+   "πήρα",
+   "βρήκα"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "explain": {
+   "en": "These five have stems of their own, so learn the εγώ form: πήγα, είδα, είπα, πήρα, βρήκα.",
+   "tr": "Bu beş fiilin kendi kökü var; εγώ biçimini öğren: πήγα, είδα, είπα, πήρα, βρήκα."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-try-b1",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.aorist.simple"
+  ],
+  "text": "Η Ελένη {1} με τη Ζέινεπ στο τηλέφωνο.",
+  "answer": {
+   "1": [
+    "μίλησε"
+   ]
+  },
+  "options": {
+   "1": [
+    "μίλησε",
+    "μίλησα",
+    "μιλήσαμε"
+   ]
+  },
+  "translation": {
+   "en": "Eleni spoke to Zeynep on the phone.",
+   "tr": "Eleni telefonda Zeynep'le konuştu."
+  },
+  "explain": {
+   "en": "«Η Ελένη» is third person singular: μιλάω → μίλησε, with -ε. μίλησα is «I spoke» and μιλήσαμε is «we spoke».",
+   "tr": "«Η Ελένη» üçüncü tekil kişi: μιλάω → μίλησε, ek -ε. μίλησα «ben konuştum», μιλήσαμε «biz konuştuk» demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-try-time",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.aorist.simple"
+  ],
+  "text": "{1} πήγα στην παραλία.",
+  "answer": {
+   "1": [
+    "Χθες"
+   ]
+  },
+  "options": {
+   "1": [
+    "Χθες",
+    "Αύριο",
+    "Μεθαύριο"
+   ]
+  },
+  "translation": {
+   "en": "Yesterday I went to the beach.",
+   "tr": "Dün plaja gittim."
+  },
+  "explain": {
+   "en": "πήγα is the past, so it needs a past time word: χθες. αύριο and μεθαύριο are the future and go with θα.",
+   "tr": "πήγα geçmiş zaman, geçmiş bir zaman sözcüğü ister: χθες. αύριο ve μεθαύριο gelecektir, θα ile gelir."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-try-we",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.aorist.irregular"
+  ],
+  "text": "Χθες εμείς {1} ψάρι στην ταβέρνα.",
+  "answer": {
+   "1": [
+    "φάγαμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "φάγαμε",
+    "φάγατε",
+    "έφαγαν"
+   ]
+  },
+  "translation": {
+   "en": "Yesterday we ate fish at the taverna.",
+   "tr": "Dün tavernada biz balık yedik."
+  },
+  "explain": {
+   "en": "With εμείς you need φάγαμε (three syllables, so no έ-). φάγατε is «you (pl.) ate» and έφαγαν is «they ate».",
+   "tr": "εμείς ile φάγαμε gerekir (üç hece, έ- yok). φάγατε «siz yediniz», έφαγαν «onlar yediler» demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-p-augment",
+  "ask": {
+   "en": "Sort the verbs by their past form (I): «με έ-» like έγραψα, or «χωρίς έ-» like μίλησα.",
+   "tr": "Fiilleri geçmiş biçimine (ben) göre ayır: έγραψα gibi «με έ-», μίλησα gibi «χωρίς έ-»."
+  },
+  "type": "categorise",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Βάζω κάθε ρήμα στη σωστή ομάδα.",
+   "en": "Sort the verbs by their past form (I): «με έ-» like έγραψα, or «χωρίς έ-» like μίλησα.",
+   "tr": "Fiilleri geçmiş biçimine (ben) göre ayır: έγραψα gibi «με έ-», μίλησα gibi «χωρίς έ-»."
+  },
+  "categories": [
+   "με έ-",
+   "χωρίς έ-"
+  ],
+  "items": [
+   "γράφω",
+   "μιλάω",
+   "κλείνω",
+   "τηλεφωνώ",
+   "φεύγω",
+   "αγοράζω"
+  ],
+  "answer": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "explain": {
+   "en": "The stress needs three syllables: έ-γρα-ψα, έ-κλει-σα and έ-φυ-γα get έ- to reach three; μί-λη-σα, τη-λε-φώ-νη-σα and α-γό-ρα-σα already have three or more.",
+   "tr": "Vurgu üç hece ister: έ-γρα-ψα, έ-κλει-σα ve έ-φυ-γα üçe tamamlamak için έ- alır; μί-λη-σα, τη-λε-φώ-νη-σα ve α-γό-ρα-σα zaten üç ya da daha çok heceli."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-p-stem",
+  "ask": {
+   "en": "Match the verb with its past form (I).",
+   "tr": "Fiili geçmiş biçimiyle (ben) eşleştir."
+  },
+  "type": "match",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Αντιστοιχίζω.",
+   "en": "Match the verb with its past form (I).",
+   "tr": "Fiili geçmiş biçimiyle (ben) eşleştir."
+  },
+  "left": [
+   "δουλεύω",
+   "πληρώνω",
+   "αγοράζω",
+   "κλείνω",
+   "φτάνω"
+  ],
+  "right": [
+   "δούλεψα",
+   "πλήρωσα",
+   "αγόρασα",
+   "έκλεισα",
+   "έφτασα"
+  ],
+  "answer": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "explain": {
+   "en": "ευ → εψ, ν → σ and ζ → σ, as in the future (Lesson 15), plus the past endings and stress.",
+   "tr": "ευ → εψ, ν → σ ve ζ → σ, gelecekteki gibi (Ders 15); üstüne geçmişin ekleri ve vurgusu."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-p-be",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.imperfect.irregular"
+  ],
+  "text": "Χθες εμείς {1} στο σπίτι.",
+  "answer": {
+   "1": [
+    "ήμασταν"
+   ]
+  },
+  "options": {
+   "1": [
+    "ήμασταν",
+    "ήμουν",
+    "ήταν"
+   ]
+  },
+  "translation": {
+   "en": "Yesterday we were at home.",
+   "tr": "Dün biz evdeydik."
+  },
+  "explain": {
+   "en": "The past of είμαι with εμείς is ήμασταν. ήμουν is «I was» and ήταν is «he/she/it was».",
+   "tr": "είμαι'nin εμείς ile geçmişi ήμασταν. ήμουν «ben idim», ήταν «o idi» demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-p-had",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.imperfect.irregular"
+  ],
+  "text": "Πέρσι εγώ {1} ένα μικρό διαμέρισμα στην Αθήνα.",
+  "answer": {
+   "1": [
+    "είχα"
+   ]
+  },
+  "options": {
+   "1": [
+    "είχα",
+    "είχες",
+    "έχω"
+   ]
+  },
+  "translation": {
+   "en": "Last year I had a small flat in Athens.",
+   "tr": "Geçen yıl Atina'da küçük bir dairem vardı."
+  },
+  "explain": {
+   "en": "πέρσι needs the past, and with εγώ the past of έχω is είχα. έχω is the present and είχες is «you had».",
+   "tr": "πέρσι geçmiş ister; εγώ ile έχω'nun geçmişi είχα. έχω şimdiki zaman, είχες «sende vardı» demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-p-came",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.aorist.irregular"
+  ],
+  "text": "Χθες η Μαρία {1} στο γραφείο στις εννιά.",
+  "answer": {
+   "1": [
+    "ήρθε"
+   ]
+  },
+  "options": {
+   "1": [
+    "ήρθε",
+    "ήρθα",
+    "ήρθαν"
+   ]
+  },
+  "translation": {
+   "en": "Yesterday Maria came to the office at nine.",
+   "tr": "Dün Maria ofise dokuzda geldi."
+  },
+  "explain": {
+   "en": "«Η Μαρία» is third person singular: ήρθε. ήρθα is «I came» and ήρθαν is «they came».",
+   "tr": "«Η Μαρία» üçüncü tekil kişi: ήρθε. ήρθα «ben geldim», ήρθαν «onlar geldiler» demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-p-they",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.aorist.irregular"
+  ],
+  "text": "Τα παιδιά {1} στην παραλία.",
+  "answer": {
+   "1": [
+    "πήγαν"
+   ]
+  },
+  "options": {
+   "1": [
+    "πήγαν",
+    "πήγα",
+    "πήγε"
+   ]
+  },
+  "translation": {
+   "en": "The children went to the beach.",
+   "tr": "Çocuklar plaja gitti."
+  },
+  "explain": {
+   "en": "«Τα παιδιά» is plural, so the verb takes -αν: πήγαν. πήγα is «I went» and πήγε is «he went».",
+   "tr": "«Τα παιδιά» çoğul, fiil -αν alır: πήγαν. πήγα «ben gittim», πήγε «o gitti» demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-p-see",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.aorist.irregular"
+  ],
+  "text": "Την περασμένη εβδομάδα εσύ {1} τη Ζέινεπ;",
+  "answer": {
+   "1": [
+    "είδες"
+   ]
+  },
+  "options": {
+   "1": [
+    "είδες",
+    "είδα",
+    "είδε"
+   ]
+  },
+  "translation": {
+   "en": "Did you see Zeynep last week?",
+   "tr": "Geçen hafta sen Zeynep'i gördün mü?"
+  },
+  "explain": {
+   "en": "With εσύ the ending is -ες: είδες. είδα is «I saw» and είδε is «he saw».",
+   "tr": "εσύ ile ek -ες: είδες. είδα «ben gördüm», είδε «o gördü» demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-p-b2",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.aorist.simple"
+  ],
+  "text": "Χθες εγώ {1} στη μητέρα μου.",
+  "answer": {
+   "1": [
+    "τηλεφώνησα"
+   ]
+  },
+  "options": {
+   "1": [
+    "τηλεφώνησα",
+    "τηλεφωνώ",
+    "έτηλεφώνησα"
+   ]
+  },
+  "translation": {
+   "en": "Yesterday I phoned my mother.",
+   "tr": "Dün annemi aradım."
+  },
+  "explain": {
+   "en": "B2 verbs work like μιλάω → μίλησα: τηλεφωνώ → τηλεφώνησα. The form already has five syllables, so it gets no έ-, and έτηλεφώνησα is not a form. τηλεφωνώ is the present, which does not go with χθες.",
+   "tr": "B2 fiilleri μιλάω → μίλησα gibi çalışır: τηλεφωνώ → τηλεφώνησα. Biçim zaten beş heceli, έ- almaz; έτηλεφώνησα diye bir biçim yok. τηλεφωνώ şimdiki zaman, χθες ile kullanılmaz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-p-took",
+  "type": "form",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "grammar": [
+   "verb.aorist.irregular"
+  ],
+  "text": "Εμείς {1} το πλοίο από τον Πειραιά.",
+  "answer": {
+   "1": [
+    "πήραμε"
+   ]
+  },
+  "options": {
+   "1": [
+    "πήραμε",
+    "πήρα",
+    "πήρατε"
+   ]
+  },
+  "translation": {
+   "en": "We took the boat from Piraeus.",
+   "tr": "Biz Pire'den gemiye bindik."
+  },
+  "explain": {
+   "en": "With εμείς you need πήραμε. πήρα is «I took» and πήρατε is «you (pl.) took».",
+   "tr": "εμείς ile πήραμε gerekir. πήρα «ben aldım», πήρατε «siz aldınız» demek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-p-gapbank",
+  "type": "gap_bank",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Συμπληρώνω.",
+   "en": "Fill in the gap.",
+   "tr": "Boşluğu doldur."
+  },
+  "text": "Χθες εγώ {1} στην παραλία. Εσύ πού {2};",
+  "bank": [
+   "πήγα",
+   "πήγες",
+   "πήγε"
+  ],
+  "answer": {
+   "1": "πήγα",
+   "2": "πήγες"
+  },
+  "translation": {
+   "en": "Yesterday I went to the beach. Where did you go?",
+   "tr": "Dün ben plaja gittim. Sen nereye gittin?"
+  },
+  "explain": {
+   "en": "«Εγώ» takes πήγα and «εσύ» takes πήγες. πήγε is «he/she went» and fits neither gap.",
+   "tr": "«Εγώ» ile πήγα, «εσύ» ile πήγες gelir. πήγε «o gitti» demek ve hiçbir boşluğa uymaz."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ },
+ {
+  "id": "ch19-p-mcq-time",
+  "type": "mcq",
+  "skill": "grammar",
+  "level": "A2",
+  "topics": [
+   "stage:lesson-19"
+  ],
+  "rubric": {
+   "el": "Διαλέγω το σωστό.",
+   "en": "Choose the right answer.",
+   "tr": "Doğru cevabı seç."
+  },
+  "prompt": {
+   "el": "Ποια πρόταση είναι για το παρελθόν;",
+   "en": "Which sentence is about the past?",
+   "tr": "Hangi cümle geçmişle ilgili?"
+  },
+  "options": [
+   "Πέρσι πήγα στην Κρήτη.",
+   "Αύριο θα πάω στην Κρήτη.",
+   "Μεθαύριο θα πάω στην Κρήτη."
+  ],
+  "answer": 0,
+  "explain": {
+   "en": "πέρσι (last year) and πήγα (past form) belong together. The other two have αύριο and μεθαύριο with θα: the future.",
+   "tr": "πέρσι (geçen yıl) ve πήγα (geçmiş biçim) birlikte gider. Diğer ikisinde αύριο ve μεθαύριο ile θα var: gelecek."
+  },
+  "source": {
+   "doc": "chapter",
+   "stage": "lesson-19",
+   "by": "sonnet-draft"
+  }
+ }
+]
