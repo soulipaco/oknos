@@ -11,8 +11,8 @@
  "version": 2,
  "written": "2026-11-26",
  "date": null,
- "rendered": "2026-11-26T13:54:06",
- "seconds": 849.6,
+ "rendered": "2026-11-28T11:01:05",
+ "seconds": 829.3,
  "script": "ef6868212759",
  "parts": [
   {
@@ -20,47 +20,47 @@
    "title": "Açılış"
   },
   {
-   "t": 48.59,
+   "t": 44.09,
    "title": "Hoş geldin"
   },
   {
-   "t": 87.76,
+   "t": 80.64,
    "title": "Kafede iki teklif"
   },
   {
-   "t": 231.22,
+   "t": 222.68,
    "title": "Çünkü mü, için mi?"
   },
   {
-   "t": 334.38,
+   "t": 320.0,
    "title": "Olsa da"
   },
   {
-   "t": 424.95,
+   "t": 408.94,
    "title": "Daha iyi, en iyi"
   },
   {
-   "t": 514.95,
+   "t": 505.7,
    "title": "Sıra sende"
   },
   {
-   "t": 604.83,
+   "t": 598.92,
    "title": "Mert'in hatası"
   },
   {
-   "t": 650.76,
+   "t": 640.11,
    "title": "Oyun: neden mi, amaç mı?"
   },
   {
-   "t": 710.04,
+   "t": 697.12,
    "title": "Kelime köşesi: katlanmış kâğıt"
   },
   {
-   "t": 745.96,
+   "t": 730.36,
    "title": "Gelecek bölüm"
   },
   {
-   "t": 787.38,
+   "t": 768.12,
    "title": "Katerina anlatıyor"
   }
  ],
@@ -72,743 +72,743 @@
    "who": "eleni"
   },
   {
-   "t": 5.41,
+   "t": 4.63,
    "lang": "el",
    "say": "Τη δεύτερη, επειδή είναι κοντά στο σπίτι και το ωράριο είναι καλύτερο. Αν δουλεύω εννιά ώρες τη μέρα, δε θα έχω χρόνο για το σεμινάριο.",
    "who": "ayse"
   },
   {
-   "t": 15.3,
+   "t": 13.11,
    "lang": "el",
    "say": "Αν και ο μισθός είναι χειρότερος;",
    "who": "eleni"
   },
   {
-   "t": 17.42,
+   "t": 15.18,
    "lang": "el",
    "say": "Ναι. Παρόλο που ο μισθός είναι χειρότερος, είναι η καλύτερη λύση για μένα.",
    "who": "ayse"
   },
   {
-   "t": 22.22,
+   "t": 20.43,
    "lang": "tr",
    "say": "Ayşe iki iş arasında seçim yaptı. Eleni de ona bir soru sordu: αν και ο μισθός είναι χειρότερος;",
    "who": "ada"
   },
   {
-   "t": 29.84,
+   "t": 28.25,
    "lang": "tr",
    "say": "Αν eğer demekti. Και de ve. Eğer ve maaş daha kötü? Bu ne demek şimdi?",
    "who": "mert"
   },
   {
-   "t": 38.4,
+   "t": 33.96,
    "lang": "tr",
    "say": "Eğer hiç değil. Bugün bu küçük kelimelerin sırrını çözeceğiz. Bir ipucu: Türkçede de aynı numara var.",
    "who": "ada"
   },
   {
-   "t": 48.59,
+   "t": 44.09,
    "lang": "tr",
    "say": "Merhaba, ben Ada. Oknos'un podcast'ine hoş geldin. Bu, yirmi üçüncü bölüm.",
    "who": "ada"
   },
   {
-   "t": 54.86,
+   "t": 49.47,
    "lang": "tr",
    "say": "Ben de Mert. Ada anlatıyor, ben deniyorum. Bazen de yanlış yapıyorum.",
    "who": "mert"
   },
   {
-   "t": 60.15,
+   "t": 54.48,
    "lang": "tr",
    "say": "Bugün iki şeyi karşılaştıracaksın, bir karar verecek ve nedenini söyleyeceksin. Ne için yaptığını, neden yaptığını, bir de neye rağmen yaptığını.",
    "who": "ada"
   },
   {
-   "t": 69.84,
+   "t": 65.0,
    "lang": "el",
    "say": "Μερτ, εσύ δουλεύεις πολλές ώρες;",
    "who": "ada"
   },
   {
-   "t": 72.72,
+   "t": 67.33,
    "lang": "el",
    "say": "Όχι πολλές. Μου αρέσουν τα ρεπό!",
    "who": "mert"
   },
   {
-   "t": 76.04,
+   "t": 69.65,
    "lang": "tr",
    "say": "Ρεπό, izin günü. Mert bu kelimeyi şimdiden sevdi. Stüdyoda Katerina da var.",
    "who": "ada"
   },
   {
-   "t": 82.72,
+   "t": 75.69,
    "lang": "el",
    "say": "Γεια σας! Σήμερα μιλάμε για δουλειά.",
    "who": "katerina"
   },
   {
-   "t": 87.76,
+   "t": 80.64,
    "lang": "tr",
    "say": "Sahne. Ayşe, arkadaşı Eleni'yle bir kafede. Önünde iki iş teklifi var. Bir şeye kulak ver: hangi işte daha çok izin var?",
    "who": "ada"
   },
   {
-   "t": 97.13,
+   "t": 90.22,
    "lang": "el",
    "say": "Καλημέρα, Αϊσέ! Τι νέα;",
    "who": "eleni"
   },
   {
-   "t": 100.37,
+   "t": 92.36,
    "lang": "el",
    "say": "Καλημέρα! Τη Δευτέρα αρχίζω ένα σεμινάριο στο πανεπιστήμιο, για να μάθω καλύτερα ελληνικά.",
    "who": "ayse"
   },
   {
-   "t": 105.9,
+   "t": 98.63,
    "lang": "el",
    "say": "Ωραία! Και δουλειά; Βρήκες;",
    "who": "eleni"
   },
   {
-   "t": 109.2,
+   "t": 100.51,
    "lang": "el",
    "say": "Έχω δύο προτάσεις, αλλά δεν ξέρω ποια να πάρω. Η πρώτη εταιρεία είναι στο κέντρο. Ο μισθός είναι καλός, αλλά το ωράριο είναι μεγάλο: εννιά ώρες τη μέρα.",
    "who": "ayse"
   },
   {
-   "t": 119.12,
+   "t": 111.1,
    "lang": "el",
    "say": "Και η δεύτερη;",
    "who": "eleni"
   },
   {
-   "t": 120.51,
+   "t": 112.08,
    "lang": "el",
    "say": "Είναι ένα μικρό γραφείο κοντά στο σπίτι μου, με καλές συνθήκες. Ο μισθός είναι χειρότερος, αλλά το ωράριο είναι καλύτερο: οκτώ ώρες, και ρεπό τα Σαββατοκύριακα.",
    "who": "ayse"
   },
   {
-   "t": 132.48,
+   "t": 123.23,
    "lang": "el",
    "say": "Και άδεια; Πόσες μέρες;",
    "who": "eleni"
   },
   {
-   "t": 134.8,
+   "t": 124.83,
    "lang": "el",
    "say": "Η πρώτη είκοσι, η δεύτερη είκοσι πέντε.",
    "who": "ayse"
   },
   {
-   "t": 138.35,
+   "t": 127.55,
    "lang": "el",
    "say": "Ποια θα πάρεις; Και γιατί;",
    "who": "eleni"
   },
   {
-   "t": 140.76,
+   "t": 129.36,
    "lang": "el",
    "say": "Τη δεύτερη, επειδή είναι κοντά στο σπίτι και το ωράριο είναι καλύτερο. Αν δουλεύω εννιά ώρες τη μέρα, δε θα έχω χρόνο για το σεμινάριο.",
    "who": "ayse"
   },
   {
-   "t": 150.65,
+   "t": 138.77,
    "lang": "el",
    "say": "Αν και ο μισθός είναι χειρότερος;",
    "who": "eleni"
   },
   {
-   "t": 152.78,
+   "t": 141.07,
    "lang": "el",
    "say": "Ναι. Παρόλο που ο μισθός είναι χειρότερος, είναι η καλύτερη λύση για μένα.",
    "who": "ayse"
   },
   {
-   "t": 157.27,
+   "t": 146.22,
    "lang": "el",
    "say": "Αυτή είναι η δουλειά που χρειάζεσαι! Και όταν τελειώσεις το σεμινάριο, θα βρεις πιο εύκολα καλύτερη δουλειά.",
    "who": "eleni"
   },
   {
-   "t": 163.98,
+   "t": 153.75,
    "lang": "el",
    "say": "Σωστά! Ευχαριστώ, Ελένη!",
    "who": "ayse"
   },
   {
-   "t": 166.97,
+   "t": 156.02,
    "lang": "tr",
    "say": "Hangi işte daha çok izin var? Sen de söyle.",
    "who": "ada"
   },
   {
-   "t": 173.84,
+   "t": 163.02,
    "lang": "tr",
    "say": "Birincisinde. Merkezdeki büyük şirket, izni de büyüktür herhalde.",
    "who": "mert"
   },
   {
-   "t": 178.69,
+   "t": 168.22,
    "lang": "tr",
    "say": "Tersi. Birincide yirmi gün, ikincide yirmi beş: η πρώτη είκοσι, η δεύτερη είκοσι πέντε. Küçük ofis maaş dışında her şeyde daha iyi.",
    "who": "ada"
   },
   {
-   "t": 188.72,
+   "t": 178.71,
    "lang": "tr",
    "say": "Şimdi Ayşe'nin iki teklifi anlattığı yer, biraz yavaş. Ayşe seminere ne için başlıyor?",
    "who": "ada"
   },
   {
-   "t": 196.15,
+   "t": 186.19,
    "lang": "el",
    "say": "Καλημέρα! Τη Δευτέρα αρχίζω ένα σεμινάριο στο πανεπιστήμιο, για να μάθω καλύτερα ελληνικά.",
    "who": "ayse",
    "speed": 0.85
   },
   {
-   "t": 202.59,
+   "t": 193.88,
    "lang": "el",
    "say": "Ωραία! Και δουλειά; Βρήκες;",
    "who": "eleni",
    "speed": 0.85
   },
   {
-   "t": 206.41,
+   "t": 196.19,
    "lang": "el",
    "say": "Έχω δύο προτάσεις, αλλά δεν ξέρω ποια να πάρω. Η πρώτη εταιρεία είναι στο κέντρο. Ο μισθός είναι καλός, αλλά το ωράριο είναι μεγάλο: εννιά ώρες τη μέρα.",
    "who": "ayse",
    "speed": 0.85
   },
   {
-   "t": 218.3,
+   "t": 209.77,
    "lang": "tr",
    "say": "Ayşe seminere ne için başlıyor? Sen de söyle.",
    "who": "ada"
   },
   {
-   "t": 225.6,
+   "t": 216.6,
    "lang": "tr",
    "say": "Yunancayı daha iyi öğrenmek için. Για να μάθω καλύτερα ελληνικά.",
    "who": "mert"
   },
   {
-   "t": 231.22,
+   "t": 222.68,
    "lang": "tr",
    "say": "Bir şey kafamı karıştırdı. Eleni γιατί diye sordu, Ayşe για να dedi. İkisi de aynı sesle başlıyor. Aynı kelime mi?",
    "who": "mert"
   },
   {
-   "t": 241.71,
+   "t": 231.39,
    "lang": "tr",
    "say": "Kulağa benziyorlar, ama işleri ayrı. Γιατί, neden ya da çünkü. Για να ise -mek için.",
    "who": "ada"
   },
   {
-   "t": 250.15,
+   "t": 237.81,
    "lang": "tr",
    "say": "Ama Türkçede ikisi de için değil mi? Geldiğim için, gelmek için.",
    "who": "mert"
   },
   {
-   "t": 254.14,
+   "t": 242.71,
    "lang": "tr",
    "say": "İşte en güzel yer burası. Türkçede için iki iş görür. Yunanistan'da oturduğum için: bu bir neden. İş bulmak için: bu bir amaç. Yunanca bu ikisini ayırır. Katerina, önce neden:",
    "who": "ada"
   },
   {
-   "t": 268.4,
+   "t": 256.68,
    "lang": "el",
    "say": "Μαθαίνω ελληνικά γιατί μένω στην Ελλάδα.",
    "who": "katerina"
   },
   {
-   "t": 274.45,
+   "t": 263.78,
    "lang": "tr",
    "say": "Şimdi amaç:",
    "who": "ada"
   },
   {
-   "t": 276.11,
+   "t": 264.78,
    "lang": "el",
    "say": "Μαθαίνω ελληνικά για να βρω δουλειά.",
    "who": "katerina"
   },
   {
-   "t": 281.67,
+   "t": 272.97,
    "lang": "tr",
    "say": "Fiile de dikkat. Γιατί ve επειδή kelimelerinden sonra normal bir fiil gelir: μένω. Για να kalıbından sonra ise on yedinci dersteki bir kerelik kök: βρίσκω, ama για να βρω.",
    "who": "ada"
   },
   {
-   "t": 299.65,
+   "t": 287.19,
    "lang": "el",
    "say": "Μερτ, γιατί μαθαίνεις ελληνικά;",
    "who": "ada"
   },
   {
-   "t": 302.64,
+   "t": 289.77,
    "lang": "el",
    "say": "Γιατί μου αρέσει η Ελλάδα. Και για να μιλάω με την Κατερίνα!",
    "who": "mert"
   },
   {
-   "t": 307.27,
+   "t": 294.76,
    "lang": "tr",
    "say": "Bir neden, bir amaç. Ve μιλάω dedin, şimdiki kök, çünkü Katerina'yla her hafta konuşuyorsun. Tekrar eden bir şey için şimdiki kök gelir.",
    "who": "ada"
   },
   {
-   "t": 320.22,
+   "t": 306.07,
    "lang": "tr",
    "say": "Peki olumsuzu? Geç kalmamak için?",
    "who": "mert"
   },
   {
-   "t": 322.75,
+   "t": 308.82,
    "lang": "tr",
    "say": "Araya μην girer: για να μην.",
    "who": "ada"
   },
   {
-   "t": 327.06,
+   "t": 311.75,
    "lang": "el",
    "say": "Φεύγω νωρίς για να μην αργήσω.",
    "who": "katerina"
   },
   {
-   "t": 334.38,
+   "t": 320.0,
    "lang": "tr",
    "say": "Şimdi açılıştaki soru. Eleni αν και dedi. Mert, sen eğer ve diye çevirdin.",
    "who": "ada"
   },
   {
-   "t": 343.24,
+   "t": 327.08,
    "lang": "tr",
    "say": "Evet. Αν eğer, και ve. Basit matematik.",
    "who": "mert"
   },
   {
-   "t": 347.7,
+   "t": 330.82,
    "lang": "tr",
    "say": "Matematik doğru, sonuç yanlış. Türkçede Ayşe şöyle der: maaş daha kötü olsa da, en iyi çözüm bu. Şimdi olsa da kelimesini parçala.",
    "who": "ada"
   },
   {
-   "t": 357.85,
+   "t": 343.28,
    "lang": "tr",
    "say": "Olsa, yani eğer olursa. Da, yani ve. Dur! Olsa da da eğer ve demek!",
    "who": "mert"
   },
   {
-   "t": 365.87,
+   "t": 349.69,
    "lang": "tr",
    "say": "İşte. Türkçede eğer ile de bir araya gelince rağmen çıkar. Yunancada da tam böyle: αν και, -e rağmen. Tek bir birim. Katerina:",
    "who": "ada"
   },
   {
-   "t": 379.26,
+   "t": 362.37,
    "lang": "el",
    "say": "Αν και η δουλειά είναι μακριά, ο μισθός είναι καλός.",
    "who": "katerina"
   },
   {
-   "t": 386.5,
+   "t": 370.47,
    "lang": "tr",
    "say": "Ayşe ise başka bir şey dedi: παρόλο που. Bu daha mı güçlü?",
    "who": "mert"
   },
   {
-   "t": 390.4,
+   "t": 374.71,
    "lang": "tr",
    "say": "Hayır, anlamı aynı. İkisini de kullanabilirsin. Katerina, aynı cümle iki türlü:",
    "who": "ada"
   },
   {
-   "t": 397.08,
+   "t": 381.07,
    "lang": "el",
    "say": "Αν και κάνει κρύο, πάμε στη θάλασσα. Παρόλο που κάνει κρύο, πάμε στη θάλασσα.",
    "who": "katerina"
   },
   {
-   "t": 408.9,
+   "t": 393.86,
    "lang": "tr",
    "say": "Soğuk olmasına rağmen denize gidiyoruz. Ama ile de olur: κάνει κρύο, αλλά πάμε. Αλλά iki cümleyi bağlar; αν και ise rağmen kısmını kendi cümlesine koyar, çoğu zaman başa.",
    "who": "ada"
   },
   {
-   "t": 424.95,
+   "t": 408.94,
    "lang": "tr",
    "say": "Ayşe'nin son cümlesinde χειρότερος daha kötü, καλύτερη daha iyi. Ama η καλύτερη λύση en iyi çözüm diye çevrildi. Nasıl hem daha hem en?",
    "who": "mert"
   },
   {
-   "t": 435.45,
+   "t": 420.96,
    "lang": "tr",
    "say": "Artikel yüzünden. Türkçede en ayrı bir kelime; Yunancada karşılaştırmanın önüne artikel gelir. Καλύτερη, daha iyi. Η καλύτερη, en iyi.",
    "who": "ada"
   },
   {
-   "t": 446.77,
+   "t": 433.5,
    "lang": "el",
    "say": "Είναι η καλύτερη λύση για μένα.",
    "who": "katerina"
   },
   {
-   "t": 451.82,
+   "t": 438.72,
    "lang": "tr",
    "say": "Çoğu sıfatta daha için πιο gelir: πιο ακριβός, daha pahalı. Ο πιο ακριβός, en pahalı. Πιο hiç değişmez, sıfat ismine uyar.",
    "who": "ada"
   },
   {
-   "t": 465.74,
+   "t": 450.26,
    "lang": "el",
    "say": "Η Αθήνα είναι η πιο μεγάλη πόλη της Ελλάδας.",
    "who": "katerina"
   },
   {
-   "t": 472.59,
+   "t": 460.42,
    "lang": "tr",
    "say": "Peki -den? Otobüsten daha hızlı nasıl olur?",
    "who": "mert"
   },
   {
-   "t": 475.78,
+   "t": 464.16,
    "lang": "tr",
    "say": "-den ekinin yerine ismin önüne από gelir, isim de -i hâlinde: από τον μισθό.",
    "who": "ada"
   },
   {
-   "t": 483.94,
+   "t": 471.35,
    "lang": "el",
    "say": "Το μετρό πάει πιο γρήγορα από το λεωφορείο.",
    "who": "katerina"
   },
   {
-   "t": 487.07,
+   "t": 475.62,
    "lang": "tr",
    "say": "Dört sık sıfatın tek kelimelik biçimini kelime gibi öğren: iyi, kötü, büyük, küçük. Katerina, yavaşça:",
    "who": "ada"
   },
   {
-   "t": 495.96,
+   "t": 485.76,
    "lang": "el",
    "say": "καλός, καλύτερος. κακός, χειρότερος. μεγάλος, μεγαλύτερος. μικρός, μικρότερος.",
    "who": "katerina",
    "speed": 0.85
   },
   {
-   "t": 514.95,
+   "t": 505.7,
    "lang": "tr",
    "say": "Şimdi sıra sende. Ben Türkçe söyleyeceğim, sen Yunancasını yüksek sesle söyle. Sonra Mert, en son Katerina. Birincisi: diploma almak için üniversitede okuyorum.",
    "who": "ada"
   },
   {
-   "t": 531.39,
+   "t": 522.17,
    "lang": "el",
    "say": "Σπουδάζω στο πανεπιστήμιο για να πάρω πτυχίο.",
    "who": "mert"
   },
   {
-   "t": 534.23,
+   "t": 525.73,
    "lang": "el",
    "say": "Σπουδάζω στο πανεπιστήμιο για να πάρω πτυχίο.",
    "who": "katerina"
   },
   {
-   "t": 541.76,
+   "t": 534.56,
    "lang": "tr",
    "say": "Gelmiyorum, çünkü işim var.",
    "who": "ada"
   },
   {
-   "t": 548.01,
+   "t": 540.41,
    "lang": "el",
    "say": "Δεν έρχομαι, γιατί έχω δουλειά.",
    "who": "mert"
   },
   {
-   "t": 550.23,
+   "t": 543.21,
    "lang": "el",
    "say": "Δεν έρχομαι, γιατί έχω δουλειά.",
    "who": "katerina"
   },
   {
-   "t": 555.13,
+   "t": 550.64,
    "lang": "tr",
    "say": "Soğuk olmasına rağmen denize gidiyoruz.",
    "who": "ada"
   },
   {
-   "t": 563.12,
+   "t": 558.42,
    "lang": "el",
    "say": "Αν κάνει κρύο, πάμε στη θάλασσα.",
    "who": "mert"
   },
   {
-   "t": 566.02,
+   "t": 560.84,
    "lang": "tr",
    "say": "Dur Mert. Bu, soğuksa denize gidiyoruz oldu. Bir kelime eksik.",
    "who": "ada"
   },
   {
-   "t": 570.87,
+   "t": 565.52,
    "lang": "tr",
    "say": "Και! Olsa da.",
    "who": "mert"
   },
   {
-   "t": 572.71,
+   "t": 567.1,
    "lang": "el",
    "say": "Αν και κάνει κρύο, πάμε στη θάλασσα.",
    "who": "katerina"
   },
   {
-   "t": 579.66,
+   "t": 574.84,
    "lang": "tr",
    "say": "Son olarak: bu, bildiğim en iyi şirket.",
    "who": "ada"
   },
   {
-   "t": 588.0,
+   "t": 583.55,
    "lang": "el",
    "say": "Αυτή είναι η καλύτερη εταιρεία που ξέρω.",
    "who": "mert"
   },
   {
-   "t": 590.79,
+   "t": 586.32,
    "lang": "tr",
    "say": "Mükemmel. Η καλύτερη, arkasından da που ile bir cümle.",
    "who": "ada"
   },
   {
-   "t": 597.03,
+   "t": 590.68,
    "lang": "el",
    "say": "Αυτή είναι η καλύτερη εταιρεία που ξέρω.",
    "who": "katerina"
   },
   {
-   "t": 604.83,
+   "t": 598.92,
    "lang": "tr",
    "say": "Mert, şimdi hızlı ol. Düşünmeden söyle: ikinci iş daha iyi.",
    "who": "ada"
   },
   {
-   "t": 610.0,
+   "t": 603.43,
    "lang": "el",
    "say": "Η δεύτερη δουλειά είναι πιο καλύτερη.",
    "who": "mert"
   },
   {
-   "t": 612.45,
+   "t": 606.26,
    "lang": "tr",
    "say": "Bir daha fazla oldu.",
    "who": "ada"
   },
   {
-   "t": 614.11,
+   "t": 607.79,
    "lang": "tr",
    "say": "Ne fazla? Daha iyi dedim: πιο daha, καλύτερη iyi.",
    "who": "mert"
   },
   {
-   "t": 618.98,
+   "t": 611.55,
    "lang": "tr",
    "say": "Hata tam orada. Καλύτερη zaten daha iyi demek. Önüne πιο koyunca daha daha iyi olur. Türkçede daha hep ayrı bir kelime, o yüzden Türkçe konuşanlar bunu sık yapar. Ya καλύτερη, ya πιο καλή. Katerina:",
    "who": "ada"
   },
   {
-   "t": 639.03,
+   "t": 627.3,
    "lang": "el",
    "say": "Η δεύτερη δουλειά είναι καλύτερη. Η δεύτερη δουλειά είναι πιο καλή.",
    "who": "katerina"
   },
   {
-   "t": 650.76,
+   "t": 640.11,
    "lang": "tr",
    "say": "Küçük bir oyun. İçinde için olan bir cümle söyleyeceğim. Sen karar ver: neden mi, amaç mı? Birincisi: erken varmak için metroya biniyorum.",
    "who": "ada"
   },
   {
-   "t": 666.87,
+   "t": 655.09,
    "lang": "tr",
    "say": "Amaç! Για να.",
    "who": "mert"
   },
   {
-   "t": 668.87,
+   "t": 656.52,
    "lang": "el",
    "say": "Παίρνω το μετρό για να φτάσω νωρίς.",
    "who": "katerina"
   },
   {
-   "t": 674.83,
+   "t": 666.03,
    "lang": "tr",
    "say": "İkincisi biraz tuzaklı. Geç kaldığım için taksiye biniyorum. Ama Yunancada neden kısmıyla başla.",
    "who": "ada"
   },
   {
-   "t": 685.38,
+   "t": 677.59,
    "lang": "el",
    "say": "Γιατί αργώ, παίρνω ταξί.",
    "who": "mert"
   },
   {
-   "t": 687.67,
+   "t": 679.23,
    "lang": "tr",
    "say": "Bunu duyan biri soru sanar: neden geç kalıyorum? Cümlenin en başındaki γιατί soru gibi duyulur. Neden kısmı başa gelecekse επειδή kullan.",
    "who": "ada"
   },
   {
-   "t": 701.04,
+   "t": 689.21,
    "lang": "el",
    "say": "Επειδή αργώ, παίρνω ταξί.",
    "who": "katerina"
   },
   {
-   "t": 710.04,
+   "t": 697.12,
    "lang": "tr",
    "say": "Kelime köşesi. Diploma kelimesi nereden geliyor, biliyor musun?",
    "who": "ada"
   },
   {
-   "t": 714.34,
+   "t": 701.98,
    "lang": "tr",
    "say": "Fransızcadan?",
    "who": "mert"
   },
   {
-   "t": 715.69,
+   "t": 702.99,
    "lang": "tr",
    "say": "Türkçeye Fransızcadan geldi, ama aslı Yunanca: δίπλωμα, ikiye katlanmış belge. Bugün Yunanlar üniversite diploması için το πτυχίο der. O da bir kıvrım kelimesinden geliyor: η πτυχή.",
    "who": "ada"
   },
   {
-   "t": 731.81,
+   "t": 716.96,
    "lang": "tr",
    "say": "Peki ρεπό? O da Yunanca mı?",
    "who": "mert"
   },
   {
-   "t": 734.59,
+   "t": 719.04,
    "lang": "tr",
    "say": "O ters yoldan geldi: Fransızca repos, dinlenme. Yunanca onu çalışmadığın gün için almış.",
    "who": "ada"
   },
   {
-   "t": 741.91,
+   "t": 725.83,
    "lang": "tr",
    "say": "En sevdiğim Fransızca kelime oldu.",
    "who": "mert"
   },
   {
-   "t": 745.96,
+   "t": 730.36,
    "lang": "tr",
    "say": "Gelecek bölüm bir tekrar bölümü. Bir yıl geçmiş. Ayşe, Eleni'ye uzun bir e-posta yazıyor: Naksos'ta bir tatil, doktor, banka, bir de Paskalya.",
    "who": "ada"
   },
   {
-   "t": 756.86,
+   "t": 741.08,
    "lang": "tr",
    "say": "Ya iş? Hâlâ küçük ofiste mi?",
    "who": "mert"
   },
   {
-   "t": 760.51,
+   "t": 743.19,
    "lang": "tr",
    "say": "Sürpriz: yine yeni bir iş teklifi var. Bu sefer maaş daha iyi, ama şirket daha uzak. Bakalım Ayşe ne seçecek, ve neden.",
    "who": "ada"
   },
   {
-   "t": 769.29,
+   "t": 752.18,
    "lang": "tr",
    "say": "Επειδή… dinleyince öğreniriz.",
    "who": "mert"
   },
   {
-   "t": 772.05,
+   "t": 754.37,
    "lang": "tr",
    "say": "Bu arada bölümü uygulamada oku, sonra alıştırmaları yap. Şimdi son söz Katerina'nın: Ayşe'nin kararı, sadece Yunanca. Sadece dinle. Görüşmek üzere!",
    "who": "ada"
   },
   {
-   "t": 784.73,
+   "t": 765.47,
    "lang": "tr",
    "say": "Görüşürüz!",
    "who": "mert"
   },
   {
-   "t": 787.38,
+   "t": 768.12,
    "lang": "el",
    "say": "Είναι πρωί. Η Αϊσέ πίνει καφέ με τη φίλη της, την Ελένη.",
    "who": "katerina"
   },
   {
-   "t": 791.93,
+   "t": 771.86,
    "lang": "el",
    "say": "Τη Δευτέρα η Αϊσέ αρχίζει ένα σεμινάριο στο πανεπιστήμιο, για να μάθει καλύτερα ελληνικά. Χρειάζεται και δουλειά, και έχει δύο προτάσεις.",
    "who": "katerina"
   },
   {
-   "t": 800.33,
+   "t": 781.0,
    "lang": "el",
    "say": "Η πρώτη εταιρεία είναι στο κέντρο. Ο μισθός είναι καλός, αλλά το ωράριο είναι μεγάλο: εννιά ώρες τη μέρα.",
    "who": "katerina"
   },
   {
-   "t": 808.1,
+   "t": 788.01,
    "lang": "el",
    "say": "Η δεύτερη είναι ένα μικρό γραφείο, κοντά στο σπίτι της.",
    "who": "katerina"
   },
   {
-   "t": 811.73,
+   "t": 791.68,
    "lang": "el",
    "say": "Εκεί ο μισθός είναι χειρότερος, αλλά το ωράριο είναι καλύτερο: οκτώ ώρες, και ρεπό τα Σαββατοκύριακα.",
    "who": "katerina"
   },
   {
-   "t": 818.81,
+   "t": 798.42,
    "lang": "el",
    "say": "Η Αϊσέ θα πάρει τη δεύτερη, επειδή είναι πιο κοντά στο σπίτι της και το ωράριο είναι καλύτερο.",
    "who": "katerina"
   },
   {
-   "t": 824.69,
+   "t": 804.69,
    "lang": "el",
    "say": "Παρόλο που ο μισθός είναι χειρότερος, για την Αϊσέ είναι η καλύτερη λύση.",
    "who": "katerina"
   },
   {
-   "t": 828.97,
+   "t": 809.57,
    "lang": "el",
    "say": "Η Ελένη λέει: «Αυτή είναι η δουλειά που χρειάζεσαι!»",
    "who": "katerina"
   },
   {
-   "t": 832.86,
+   "t": 813.04,
    "lang": "el",
    "say": "Το απόγευμα η Αϊσέ τηλεφωνεί στο μικρό γραφείο: «Καλησπέρα! Θα πάρω τη δουλειά!»",
    "who": "katerina"
   },
   {
-   "t": 838.34,
+   "t": 818.37,
    "lang": "el",
    "say": "Τη Δευτέρα το σεμινάριο, την Τρίτη η καινούρια δουλειά.",
    "who": "katerina"
   },
   {
-   "t": 842.43,
+   "t": 822.05,
    "lang": "el",
    "say": "Για την Αϊσέ, αυτή είναι η πιο ωραία εβδομάδα!",
    "who": "katerina"
   },
   {
-   "t": 845.34,
+   "t": 825.11,
    "lang": "el",
    "say": "Γεια σας!",
    "who": "katerina"

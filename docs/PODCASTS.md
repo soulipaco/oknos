@@ -168,7 +168,7 @@ uv run python scripts/ship_podcasts.py --provider gemini <ids>      # with Gemin
 
 The script takes the chapter scripts from `learner/podcasts/` (never a personal one), sets the open book's curriculum and refs and drops pointers into `learner/`, renders them in `learner/podcasts-ship/` with that one service (the learner's own episodes are never touched; the clip cache in `learner/voice/podcast/` is shared, so a line already made with the same service and voice costs nothing), and copies the result. An episode is made again when its script changed or another service made it.
 
-Chirp 3 HD reads one language a request. A Turkish line with Greek inside ("yani Ναι dediğimde") is made in pieces, one language each, in the same voice (Chirp's voices have the same name in every language), and joined with a short gap; the timeline keeps it as one line (`split_mixed`, `Provider.splits`). Gemini and ElevenLabs say such a line in one breath. The maintainer's choice (2026-11-26): Chirp now, replaced with Gemini as its quota allows.
+Chirp 3 HD reads one language a request. A Turkish line with Greek inside ("yani Ναι dediğimde") is made in pieces, one language each, in the same voice (Chirp's voices have the same name in every language), and joined with a short gap; the timeline keeps it as one line (`split_mixed`, `Provider.splits`). Gemini and ElevenLabs say such a line in one breath. The maintainer's choice (2026-11-26): Chirp first, replaced with Gemini as its quota allowed; on 2026-11-28, with 5 of the 26 in Gemini's voice (lessons 2, 3, 18, 23 and the B1 bridge), the replacement stopped: Gemini is paid, and Chirp is good enough.
 
 ## Personal episodes (built 2026-11-24)
 

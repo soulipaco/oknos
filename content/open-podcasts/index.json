@@ -1,14 +1,14 @@
 {
  "about": "Podcast lessons of the Oknos book, shipped with the open content (docs/PODCASTS.md). Each is <id>/episode.mp3 with its script.json and episode.json; p is the service that voiced it.",
  "licence": "CC-BY-SA-4.0",
- "made_with": "Google Gemini TTS: 1 episodes; Google Cloud Text-to-Speech, Chirp 3 HD: 25 episodes",
+ "made_with": "Google Gemini TTS: 5 episodes; Google Cloud Text-to-Speech, Chirp 3 HD: 21 episodes",
  "mp3": "mono, 32 kb/s",
- "updated": "2026-11-26",
+ "updated": "2026-11-28",
  "episodes": {
   "book.b1-bridge.tr": {
-   "p": "google",
-   "rendered": "2026-11-26",
-   "seconds": 827.8,
+   "p": "gemini",
+   "rendered": "2026-11-28",
+   "seconds": 835.6,
    "version": 3
   },
   "book.intro.tr": {
@@ -30,9 +30,9 @@
    "version": 2
   },
   "book.lesson-03.tr": {
-   "p": "google",
-   "rendered": "2026-11-26",
-   "seconds": 878.4,
+   "p": "gemini",
+   "rendered": "2026-11-28",
+   "seconds": 891.6,
    "version": 4
   },
   "book.lesson-04.tr": {
@@ -120,9 +120,9 @@
    "version": 3
   },
   "book.lesson-18.tr": {
-   "p": "google",
-   "rendered": "2026-11-26",
-   "seconds": 898.9,
+   "p": "gemini",
+   "rendered": "2026-11-28",
+   "seconds": 882.7,
    "version": 2
   },
   "book.lesson-19.tr": {
@@ -150,9 +150,9 @@
    "version": 3
   },
   "book.lesson-23.tr": {
-   "p": "google",
-   "rendered": "2026-11-26",
-   "seconds": 849.6,
+   "p": "gemini",
+   "rendered": "2026-11-28",
+   "seconds": 829.3,
    "version": 2
   },
   "book.lesson-24.tr": {
