@@ -552,6 +552,10 @@ const ICONS = {  // one line style: a 24 grid, 2 px, round ends
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
   film: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9.5v5l4.5-2.5z"/>',
+  play: '<path d="M7 4.5v15l12.5-7.5z"/>',
+  pause: '<path d="M8 5v14M16 5v14"/>',
+  lines: '<path d="M4 6h16M4 12h16M4 18h10"/>',
+  close: '<path d="M6 6l12 12M18 6 6 18"/>',
 };
 
 function icon(name) {
@@ -2748,7 +2752,8 @@ function podListenLink(id, cls = "tile-link") {
 }
 
 function podCard(ep, current, stage = null) {
-  // A chapter's episode says which lesson it belongs to; a personal one says its day.
+  // A chapter's episode says which lesson it belongs to; a personal one says its day. The card opens
+  // the episode's page; its buttons play it right here (in the dock) and unfold its text.
   const kind = stage ? stageName(stage) : ep.kind === "chapter" ? t("pod_kind_chapter") : t(`pod_kind_${ep.kind}`);
   const minutes = t("pod_minutes", { n: Math.max(1, Math.round((ep.seconds || 0) / 60)) });
   const line = stage ? [minutes, stage.id === state.podHere ? t("bk_here") : null]
@@ -2758,9 +2763,163 @@ function podCard(ep, current, stage = null) {
     h("strong", {}, podTitle(ep)),
     h("span", { class: "small muted" }, line.filter(Boolean).join(" · "))];
   const here = stage && stage.id === state.podHere;
-  const a = navLink("podcast", inner, ep.id, `pod-card${current ? " here" : ""}${here ? " pod-now" : ""}`);
-  if (current) a.setAttribute("aria-current", "page");
-  return a;
+  const link = navLink("podcast", inner, ep.id, "pod-card-link");
+  if (current) link.setAttribute("aria-current", "page");
+  const play = h("button", { type: "button", class: "pod-act pod-play", "data-pod": ep.id, "aria-pressed": "false",
+    onclick: () => podPlay(ep) }, icon("play"), t("pod_play"));
+  const panel = h("div", { class: "pod-text", "data-pod": ep.id });
+  panel.hidden = true;
+  const card = h("div", { class: `pod-card${current ? " here" : ""}${here ? " pod-now" : ""}` });
+  const show = h("button", { type: "button", class: "pod-act", "aria-expanded": "false",
+    onclick: () => podToggleText(ep, card, panel, show) }, icon("lines"), t("pod_show_text"));
+  card.append(link, h("div", { class: "pod-card-actions" }, play, show), panel);
+  return card;
+}
+
+// ---------- playing an episode from its card: one dock at the bottom of the window ----------
+// Any <audio data-pod> (the episode page's player or the dock) keeps the cards' Play buttons and the
+// open texts in step; starting one pauses the others.
+
+const podDock = { el: null, audio: null, title: null, ep: null };
+const podTexts = new Map();  // episode id -> its lines, fetched once
+
+function podAudioFor(id) {
+  return [...document.querySelectorAll("audio[data-pod]")].find(a => a.dataset.pod === id) || null;
+}
+
+function podSyncButtons() {
+  for (const b of document.querySelectorAll(".pod-play[data-pod]")) {
+    const a = podAudioFor(b.dataset.pod);
+    const on = !!a && !a.paused;
+    if (b.getAttribute("aria-pressed") === String(on) && b.firstChild) continue;
+    b.classList.toggle("on", on);
+    b.setAttribute("aria-pressed", String(on));
+    b.replaceChildren(icon(on ? "pause" : "play"), t(on ? "pod_pause" : "pod_play"));
+  }
+}
+
+function podFollowText(audio) {
+  // Mark the line being spoken in an open text of this episode, and keep it in view inside the text.
+  for (const panel of document.querySelectorAll(".pod-text[data-pod]")) {
+    if (panel.dataset.pod !== audio.dataset.pod || panel.hidden) continue;
+    const rows = panel.querySelectorAll("li[data-t]");
+    let cur = null;
+    for (const li of rows) if (Number(li.dataset.t) <= audio.currentTime + 0.1) cur = li;
+    if (cur && !cur.classList.contains("now")) {
+      for (const li of rows) li.classList.toggle("now", li === cur);
+      if (!audio.paused) panel.scrollTo({ top: Math.max(0, cur.offsetTop - panel.clientHeight / 3), behavior: "smooth" });
+    }
+  }
+}
+
+for (const type of ["play", "pause", "ended", "timeupdate"]) {
+  // Media events do not bubble, but the capture phase on the document sees them all.
+  document.addEventListener(type, (e) => {
+    const a = e.target;
+    if (!(a instanceof HTMLAudioElement) || !a.dataset.pod) return;
+    if (type === "play") for (const other of document.querySelectorAll("audio")) if (other !== a) other.pause();
+    if (type === "timeupdate") podFollowText(a);
+    else podSyncButtons();
+  }, true);
+}
+
+function podDockClose() {
+  if (!podDock.el) return;
+  podDock.audio.pause();
+  podDock.audio.removeAttribute("src");
+  podDock.audio.removeAttribute("data-pod");
+  podDock.audio.load();
+  podDock.el.hidden = true;
+  podDock.ep = null;
+  document.body.classList.remove("pod-docked");
+  podSyncButtons();
+}
+
+function podDockLoad(ep) {
+  if (!podDock.el) {
+    const audio = h("audio", { controls: "", preload: "metadata" });
+    let lastSave = 0;
+    const save = () => podDock.ep && podStore(podDock.ep.id, { t: audio.currentTime, rendered: podDock.ep.rendered });
+    audio.addEventListener("loadedmetadata", () => {
+      const ep = podDock.ep;
+      const rate = Number(podStore("rate")) || 1;
+      audio.playbackRate = POD_RATES.includes(rate) ? rate : 1;
+      // Start where the learner stopped, unless a line of the text asked for another place.
+      const saved = ep && podStore(ep.id);
+      if (audio.currentTime < 1 && saved && saved.rendered === ep.rendered && saved.t > 5 && saved.t < audio.duration - 10) {
+        audio.currentTime = saved.t;
+      }
+    });
+    audio.addEventListener("timeupdate", () => {
+      if (Math.abs(audio.currentTime - lastSave) > 5) { lastSave = audio.currentTime; save(); }
+    });
+    audio.addEventListener("pause", save);
+    audio.addEventListener("ended", () => podDock.ep && podStore(podDock.ep.id, { t: 0, rendered: podDock.ep.rendered }));
+    podDock.title = h("div", { class: "pod-dock-title" });
+    podDock.el = h("div", { class: "pod-dock", role: "region", "aria-label": t("pod_title") },
+      h("div", { class: "pod-dock-in" }, podDock.title,
+        h("button", { type: "button", class: "pod-dock-close", "aria-label": t("pod_close"), title: t("pod_close"), onclick: podDockClose },
+          icon("close")),
+        audio));
+    podDock.audio = audio;
+    document.body.append(podDock.el);
+  }
+  if (podDock.ep?.id !== ep.id) {
+    podDock.audio.pause();
+    podDock.ep = ep;
+    podDock.audio.dataset.pod = ep.id;
+    podDock.audio.src = `/podcasts/${encodeURIComponent(ep.id)}.mp3`;
+    podDock.title.replaceChildren(icon("headphones"), navLink("podcast", podTitle(ep), ep.id));
+    if ("mediaSession" in navigator && "MediaMetadata" in window) {
+      navigator.mediaSession.metadata = new MediaMetadata({ title: podTitle(ep), artist: "Oknos", album: t("pod_title") });
+    }
+  }
+  podDock.el.hidden = false;
+  document.body.classList.add("pod-docked");
+  return podDock.audio;
+}
+
+function podPlay(ep, at = null) {
+  // Play or pause this episode where it already is (the page's player or the dock), else in the dock;
+  // with `at`, play from that second.
+  const a = podAudioFor(ep.id) || podDockLoad(ep);
+  if (at !== null) {
+    a.currentTime = Math.max(0, at);
+    a.play().catch(() => {});
+  } else if (a.paused) a.play().catch(() => {});
+  else a.pause();
+}
+
+function podLineItems(lines, jump) {
+  return (lines || []).map(l => {
+    const row = h("li", { class: `pod-line lang-${l.lang}` },
+      h("button", { type: "button", class: "pod-time link-button", onclick: () => jump(l.t), "aria-label": t("pod_play_from", { time: podTime(l.t) }) }, podTime(l.t)),
+      h("span", { lang: l.lang }, l.who ? h("span", { class: "pod-who" }, `${l.who}: `) : null, l.say,
+        l.speed ? h("span", { class: "small muted" }, ` (${t("pod_slow")})`) : null));
+    row.dataset.t = l.t;
+    return row;
+  });
+}
+
+async function podToggleText(ep, card, panel, btn) {
+  // Unfold the episode's text under its card (the card takes the full width); a line's time plays from there.
+  const open = panel.hidden;
+  panel.hidden = !open;
+  card.classList.toggle("open", open);
+  btn.setAttribute("aria-expanded", String(open));
+  btn.replaceChildren(icon("lines"), t(open ? "pod_hide_text" : "pod_show_text"));
+  if (!open || panel.dataset.loaded) return;
+  panel.replaceChildren(h("p", { class: "small muted" }, "…"));
+  try {
+    if (!podTexts.has(ep.id)) podTexts.set(ep.id, (await api(`/api/podcasts/${encodeURIComponent(ep.id)}`)).lines || []);
+  } catch {
+    panel.replaceChildren(h("p", { class: "small warn" }, t("pod_text_error")));
+    return;
+  }
+  panel.dataset.loaded = "1";
+  panel.replaceChildren(h("ol", {}, podLineItems(podTexts.get(ep.id), (secs) => podPlay(ep, secs))));
+  const a = podAudioFor(ep.id);
+  if (a) podFollowText(a);
 }
 
 function podSections(all, cur, playing) {
@@ -2828,17 +2987,21 @@ async function renderPodcast(id) {
       h("h1", {}, ep ? podTitle(ep) : t("pod_title")),
       h("p", { class: "muted" }, ep ? [t("pod_minutes", { n: Math.max(1, Math.round(ep.seconds / 60)) }), t(`pod_lang_${ep.lang}`)].join(" · ")
         : t("pod_lede"))));
-  const player = ep ? podPlayer(ep) : null;
+  // Opening the page of the episode the dock is playing carries on here, from the same place.
+  const carryOn = !!ep && podDock.ep?.id === ep.id && !podDock.audio.paused;
+  if (ep && podDock.ep?.id === ep.id) podDockClose();
+  const player = ep ? podPlayer(ep, carryOn) : null;
   const { sections, next } = podSections(all, cur, ep);
   const after = ep ? h("div", { class: "tile-actions pod-after" },
     epStage?.chapter ? navLink("lesson", [icon("book"), t("pod_read_chapter")], epStage.id, "secondary-link") : null,
     next ? navLink("podcast", [icon("headphones"), t("pod_next", { lesson: stageName(next[0]) })], next[1].id, "secondary-link") : null) : null;
   app.replaceChildren(...[...appBar("podcast"), crumb(ep ? "podcast" : "home", ep ? t("pod_title") : t("nav_home")), head, player, after,
     ep ? h("h2", { class: "films-more" }, t("pod_all")) : null, ...sections].filter(Boolean));
+  podSyncButtons();
 }
 
-function podPlayer(ep) {
-  const audio = h("audio", { class: "pod-audio", src: `/podcasts/${encodeURIComponent(ep.id)}.mp3`, preload: "metadata", controls: "" });
+function podPlayer(ep, autoplay = false) {
+  const audio = h("audio", { class: "pod-audio", "data-pod": ep.id, src: `/podcasts/${encodeURIComponent(ep.id)}.mp3`, preload: "metadata", controls: "" });
   const saved = podStore(ep.id);
   let rate = Number(podStore("rate")) || 1;
   if (!POD_RATES.includes(rate)) rate = 1;
@@ -2846,6 +3009,7 @@ function podPlayer(ep) {
     audio.playbackRate = rate;
     // Start where the learner stopped (unless it was the very end or the episode was made again since).
     if (saved && saved.rendered === ep.rendered && saved.t > 5 && saved.t < audio.duration - 10) audio.currentTime = saved.t;
+    if (autoplay) audio.play().catch(() => {});
   });
   let lastSave = 0;
   const save = () => podStore(ep.id, { t: audio.currentTime, rendered: ep.rendered });
@@ -2881,14 +3045,7 @@ function podPlayer(ep) {
   });
   const partList = h("ol", { class: "pod-parts" }, parts);
 
-  const lines = (ep.lines || []).map(l => {
-    const row = h("li", { class: `pod-line lang-${l.lang}` },
-      h("button", { type: "button", class: "pod-time link-button", onclick: () => jump(l.t), "aria-label": t("pod_play_from", { time: podTime(l.t) }) }, podTime(l.t)),
-      h("span", { lang: l.lang }, l.who ? h("span", { class: "pod-who" }, `${l.who}: `) : null, l.say,
-        l.speed ? h("span", { class: "small muted" }, ` (${t("pod_slow")})`) : null));
-    row.dataset.t = l.t;
-    return row;
-  });
+  const lines = podLineItems(ep.lines, jump);
   const script = h("details", { class: "pod-script" }, h("summary", {}, t("pod_script")), h("ol", {}, lines));
 
   // Follow the playback: the current part and line are marked; the position is kept every few seconds.

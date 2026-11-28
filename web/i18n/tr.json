@@ -517,5 +517,11 @@
   "pod_listen_short": "Dinle",
   "pod_link_today": "Bugünün podcast'i ({n} dk)",
   "pod_link_week": "Bu haftanın podcast'i ({n} dk)",
-  "pod_link_home": "Podcast dersleri ({n})"
+  "pod_link_home": "Podcast dersleri ({n})",
+  "pod_play": "Dinle",
+  "pod_pause": "Duraklat",
+  "pod_show_text": "Metni göster",
+  "pod_hide_text": "Metni gizle",
+  "pod_close": "Kapat",
+  "pod_text_error": "Metin açılamadı; sayfayı yenilemeyi dene."
 }

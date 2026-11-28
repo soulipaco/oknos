@@ -517,5 +517,11 @@
   "pod_listen_short": "Listen",
   "pod_link_today": "Today's episode ({n} min)",
   "pod_link_week": "This week's episode ({n} min)",
-  "pod_link_home": "Podcast lessons ({n})"
+  "pod_link_home": "Podcast lessons ({n})",
+  "pod_play": "Play",
+  "pod_pause": "Pause",
+  "pod_show_text": "Show the text",
+  "pod_hide_text": "Hide the text",
+  "pod_close": "Close",
+  "pod_text_error": "The text could not be opened; try reloading the page."
 }

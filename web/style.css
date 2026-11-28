@@ -971,9 +971,31 @@ main:has(.pod-player), main:has(.pod-grid) { max-width: 760px; }
 .pod-line.now { background: var(--accent-soft, rgba(31, 95, 139, .1)); }
 .pod-who { color: var(--muted); }
 .pod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr)); gap: 12px; }
-.pod-card { display: grid; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 12px 14px 14px; color: var(--ink); text-decoration: none; box-shadow: var(--shadow); }
-a.pod-card:hover { border-color: var(--accent); }
+.pod-card { display: grid; gap: 4px; align-content: start; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 12px 14px 12px; color: var(--ink); box-shadow: var(--shadow); min-width: 0; }
+.pod-card:has(> .pod-card-link:hover) { border-color: var(--accent); }
+.pod-card-link { display: grid; gap: 4px; color: inherit; text-decoration: none; }
+.pod-card.open { grid-column: 1 / -1; }
+.pod-card-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.pod-act { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+  border-radius: 999px; padding: 5px 13px 5px 10px; font: inherit; font-size: 14px; cursor: pointer; }
+.pod-act .icon { width: 15px; height: 15px; }
+.pod-act:hover { border-color: var(--accent); }
+.pod-act.on { border-color: var(--accent); background: var(--accent); color: var(--accent-ink); }
+.pod-text { position: relative; max-height: 340px; overflow: auto; margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--line); }
+.pod-text ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
+.pod-dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; background: var(--surface); border-top: 1px solid var(--line);
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, .14);
+  padding: 8px max(16px, env(safe-area-inset-right, 0px)) calc(8px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+.pod-dock-in { max-width: 760px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 10px; align-items: center; }
+.pod-dock-title { display: flex; align-items: center; gap: 8px; min-width: 0; font-weight: 600; }
+.pod-dock-title .icon { flex: 0 0 auto; color: var(--accent); }
+.pod-dock-title a { color: var(--ink); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pod-dock-title a:hover { color: var(--accent); }
+.pod-dock audio { grid-column: 1 / -1; width: 100%; height: 40px; }
+.pod-dock-close { background: none; border: 0; color: var(--muted); cursor: pointer; padding: 4px; border-radius: 8px; }
+.pod-dock-close:hover { color: var(--ink); }
+body.pod-docked { padding-bottom: 110px; }
 .pod-card.here { border: 1.5px solid var(--accent); }
 .pod-card.pod-now { border-color: var(--accent); background: var(--accent-soft, var(--surface)); }
 .pod-card .eyebrow { white-space: normal; }
